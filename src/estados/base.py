@@ -1,0 +1,151 @@
+"""
+Clase abstracta que define la interfaz de un adaptador de estado.
+
+Cada estado implementa:
+  - download()               → Descarga PDFs del Periódico Oficial
+  - build_master()           → Construye el master (municipio, año) → PDF, páginas
+  - extract_predial_sections() → Localiza sección predial, genera TXT + PDF recortados
+
+Los pasos compartidos (OCR, LLM, validación) están implementados aquí
+y usan la lógica de src/core/.
+
+Convención de directorios:
+  data/{estado}/
+  ├── pdf_raw/{año}/{PREFIJO}_RAW_{año}_{slug}[_extra].pdf
+  ├── pdf_ocr/{año}/{PREFIJO}_RAW_{año}_{slug}_ocr.pdf        ← OCR skip
+  │            {año}/{PREFIJO}_RAW_{año}_{slug}_forceocr.pdf   ← OCR force
+  ├── focus_predial/{año}/{PREFIJO}_PREDIAL_{año}_{slug}.txt
+  │                 {año}/{PREFIJO}_PREDIAL_{año}_{slug}.pdf
+  ├── json_predial/{año}/{PREFIJO}_PREDIAL_{año}_{slug}.json
+  ├── meta/          ← CSVs de bitácora, índice, batch IDs
+  └── qa/            ← Reportes de validación
+
+Reglas:
+  - pdf_raw/ solo contiene originales descargados (nunca OCR)
+  - pdf_ocr/ es SOLO para estados con needs_ocr=True
+  - Los nombres SIEMPRE siguen {PREFIJO}_{tipo}_{año}_{slug}[_sufijo].ext
+  - El slug se genera con src.core.text_utils.slugify()
+  - La estructura por año es plana (no anidada por municipio)
+"""
+
+from abc import ABC, abstractmethod
+from pathlib import Path
+
+from src.core.constants import EJERCICIO_INI, EJERCICIO_FIN
+
+
+class EstadoAdapter(ABC):
+
+    # ── Propiedades abstractas (cada estado las define) ──
+
+    @property
+    @abstractmethod
+    def slug(self) -> str:
+        """Identificador del estado. Ej: 'coahuila'"""
+
+    @property
+    @abstractmethod
+    def prefijo(self) -> str:
+        """Prefijo para nombres de archivo. Ej: 'COAH'"""
+
+    @property
+    def estado_nombre(self) -> str:
+        """Nombre legible del estado. Default: slug capitalizado."""
+        return self.slug.capitalize()
+
+    # ── Propiedades con defaults (override si es necesario) ──
+
+    @property
+    def ejercicio_range(self) -> range:
+        """Rango de ejercicios fiscales. Override si un estado tiene rango distinto."""
+        return range(EJERCICIO_INI, EJERCICIO_FIN + 1)
+
+    @property
+    def needs_ocr(self) -> bool:
+        """True si el estado tiene PDFs escaneados que requieren OCR."""
+        return False
+
+    # ── Rutas derivadas (consistentes para todos los estados) ──
+
+    @property
+    def data_dir(self) -> Path:
+        return Path(f"data/{self.slug}")
+
+    @property
+    def pdf_raw_dir(self) -> Path:
+        return self.data_dir / "pdf_raw"
+
+    @property
+    def pdf_ocr_dir(self) -> Path:
+        return self.data_dir / "pdf_ocr"
+
+    @property
+    def meta_dir(self) -> Path:
+        return self.data_dir / "meta"
+
+    @property
+    def focus_dir(self) -> Path:
+        return self.data_dir / "focus_predial"
+
+    @property
+    def json_dir(self) -> Path:
+        return self.data_dir / "json_predial"
+
+    @property
+    def qa_dir(self) -> Path:
+        return self.data_dir / "qa"
+
+    # ── Métodos abstractos (específicos por estado) ──
+
+    @abstractmethod
+    def download(self) -> Path:
+        """
+        Descarga PDFs del Periódico Oficial.
+        Retorna: ruta al CSV índice de leyes descargadas.
+        """
+
+    @abstractmethod
+    def build_master(self) -> Path:
+        """
+        Construye master CSV: (municipio, año) → PDF, páginas de la ley.
+        Retorna: ruta al master CSV.
+        """
+
+    @abstractmethod
+    def extract_predial_sections(self) -> Path:
+        """
+        Localiza sección de predial en cada ley, genera TXT y PDF recortados.
+        Retorna: ruta al CSV bitácora de secciones.
+        """
+
+    # ── Métodos concretos (compartidos, usan core/) ──
+
+    def run_ocr(self):
+        """Aplica OCR a PDFs escaneados. Solo si needs_ocr=True."""
+        if not self.needs_ocr:
+            print(f"  [{self.slug}] OCR no requerido, saltando.")
+            return
+        from src.core.ocr import process_directory
+        process_directory(self.pdf_raw_dir, self.pdf_ocr_dir)
+
+    def run_llm_extraction(self, batch_mode: bool = False):
+            """Llama al LLM para cada TXT de sección predial."""
+            from src.core.llm_extract import extract_all
+            extract_all(
+                txt_dir=self.focus_dir,
+                json_dir=self.json_dir,
+                prefijo=self.prefijo,
+                estado_nombre=self.estado_nombre,
+                batch_mode=batch_mode,
+                adapter=self if self.needs_ocr else None,
+                pdf_fallback=self.needs_ocr,
+            )
+
+    def run_validation(self):
+        """Valida JSONs y genera reporte de calidad."""
+        from src.core.validation import validate_all
+        validate_all(
+            json_dir=self.json_dir,
+            prefijo=self.prefijo,
+            out_csv=self.meta_dir / f"{self.slug}_predial_summary.csv",
+        )

@@ -1,0 +1,38 @@
+# ── PDFs (pesados, regenerables) ──
+data/*/pdf_raw/
+data/*/pdf_ocr/
+data/*/focus_predial/
+data/*/json/
+data/*/json_predial/
+data/*/indices/
+
+# ── Meta temporales pesados ──
+data/*/meta/batch_*.jsonl
+
+# ── Python ──
+__pycache__/
+*.pyc
+*.pyo
+.venv/
+*.egg-info/
+dist/
+build/
+
+# ── OS ──
+.DS_Store
+Thumbs.db
+
+# ── API keys y secretos ──
+.env
+
+# ── IDE ──
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# ── Debug HTML (temporales de scraping) ──
+data/*/debug_html/
+
+# ── Caché de texto extraído de PDFs ──
+.text_cache/

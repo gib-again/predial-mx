@@ -1,0 +1,69 @@
+{
+  "predial": {
+    "tipo_esquema": "mixto",
+    "esquema_valido": true,
+    "comentarios": "Predios urbanos: tabla de cuotas fijas por rango de valor catastral y tipo de predio (rangos 1-3), con tasa al millar para valores altos (rango 4). Predios rústicos: 4 al millar anual.",
+    "minimo_predial": {
+      "monto": 17.00,
+      "periodicidad": "bimestral"
+    },
+    "tabla_tarifa_millar": [
+      {
+        "grupo": "rustico",
+        "clave": "rusticos",
+        "descripcion": "Predios rústicos, 4 al millar anual sobre valor catastral",
+        "tasa_millar": 4.0,
+        "periodicidad": "anual"
+      }
+    ],
+    "tabla_progresiva": [],
+    "tabla_tasa_unica": [],
+    "tabla_cuota_fija": [],
+    "tabla_mixta_rango": [
+      {
+        "n_rango": "1",
+        "inferior": "0.00",
+        "superior": "60,000.00",
+        "columnas": {
+          "habitacional": {"valor": 102.00, "tipo": "cuota_fija"},
+          "no_habitacional": {"valor": 134.64, "tipo": "cuota_fija"},
+          "con_barda": {"valor": 120.00, "tipo": "cuota_fija"},
+          "sin_barda": {"valor": 189.00, "tipo": "cuota_fija"}
+        }
+      },
+      {
+        "n_rango": "2",
+        "inferior": "60,000.01",
+        "superior": "90,000.00",
+        "columnas": {
+          "habitacional": {"valor": 142.20, "tipo": "cuota_fija"},
+          "no_habitacional": {"valor": 189.00, "tipo": "cuota_fija"},
+          "con_barda": {"valor": 180.00, "tipo": "cuota_fija"},
+          "sin_barda": {"valor": 283.50, "tipo": "cuota_fija"}
+        }
+      },
+      {
+        "n_rango": "3",
+        "inferior": "90,000.01",
+        "superior": "135,000.00",
+        "columnas": {
+          "habitacional": {"valor": 213.30, "tipo": "cuota_fija"},
+          "no_habitacional": {"valor": 283.50, "tipo": "cuota_fija"},
+          "con_barda": {"valor": 270.00, "tipo": "cuota_fija"},
+          "sin_barda": {"valor": 425.25, "tipo": "cuota_fija"}
+        }
+      },
+      {
+        "n_rango": "4",
+        "inferior": "135,000.01",
+        "superior": "En Adelante",
+        "columnas": {
+          "habitacional": {"valor": 1.58, "tipo": "tasa_millar"},
+          "no_habitacional": {"valor": 2.10, "tipo": "tasa_millar"},
+          "con_barda": {"valor": 2.10, "tipo": "tasa_millar"},
+          "sin_barda": {"valor": 3.15, "tipo": "tasa_millar"}
+        }
+      }
+    ]
+  }
+}

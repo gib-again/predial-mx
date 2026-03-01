@@ -1,0 +1,250 @@
+﻿municipio_slug,municipio_nombre,anio,tipo_esquema,esquema_valido,n_tarifa_rows,n_prog_rows,n_tasa_unica_rows,n_cuota_fija_rows,n_mixta_rows,anomalias,json_path
+acatic,Acatic,2010,tarifa_millar,True,5,0,0,0,0,,data\jalisco\json_predial\2010\JAL_PREDIAL_2010_acatic.json
+acatic,Acatic,2011,tarifa_millar,True,4,0,0,0,0,,data\jalisco\json_predial\2011\JAL_PREDIAL_2011_acatic.json
+acatlan_de_juarez,Acatlan De Juarez,2010,tarifa_millar,True,4,0,0,0,0,,data\jalisco\json_predial\2010\JAL_PREDIAL_2010_acatlan_de_juarez.json
+acatlan_de_juarez,Acatlan De Juarez,2011,tarifa_millar,True,4,0,0,0,0,,data\jalisco\json_predial\2011\JAL_PREDIAL_2011_acatlan_de_juarez.json
+ahualulco_de_mercado,Ahualulco De Mercado,2010,tarifa_millar,True,4,0,0,0,0,,data\jalisco\json_predial\2010\JAL_PREDIAL_2010_ahualulco_de_mercado.json
+ahualulco_de_mercado,Ahualulco De Mercado,2011,tarifa_millar,True,4,0,0,0,0,,data\jalisco\json_predial\2011\JAL_PREDIAL_2011_ahualulco_de_mercado.json
+amacueca,Amacueca,2010,mixto,True,4,0,0,2,0,,data\jalisco\json_predial\2010\JAL_PREDIAL_2010_amacueca.json
+amacueca,Amacueca,2011,tarifa_millar,True,4,0,0,0,0,cambio_esquema_mixto_a_tarifa_millar_desde_2010,data\jalisco\json_predial\2011\JAL_PREDIAL_2011_amacueca.json
+amatitan,Amatitan,2010,tarifa_millar,True,4,0,0,0,0,,data\jalisco\json_predial\2010\JAL_PREDIAL_2010_amatitan.json
+amatitan,Amatitan,2011,tarifa_millar,True,4,0,0,0,0,,data\jalisco\json_predial\2011\JAL_PREDIAL_2011_amatitan.json
+ameca,Ameca,2010,tarifa_millar,True,4,0,0,0,0,,data\jalisco\json_predial\2010\JAL_PREDIAL_2010_ameca.json
+ameca,Ameca,2011,tarifa_millar,True,4,0,0,0,0,,data\jalisco\json_predial\2011\JAL_PREDIAL_2011_ameca.json
+arandas,Arandas,2010,tarifa_millar,True,12,0,0,0,0,,data\jalisco\json_predial\2010\JAL_PREDIAL_2010_arandas.json
+arandas,Arandas,2011,tarifa_millar,True,3,0,0,0,0,cambio_brusco_n_filas_12_a_3,data\jalisco\json_predial\2011\JAL_PREDIAL_2011_arandas.json
+atemajac_de_brizuela,Atemajac De Brizuela,2010,tarifa_millar,True,5,0,0,0,0,,data\jalisco\json_predial\2010\JAL_PREDIAL_2010_atemajac_de_brizuela.json
+atemajac_de_brizuela,Atemajac De Brizuela,2011,tarifa_millar,True,5,0,0,0,0,,data\jalisco\json_predial\2011\JAL_PREDIAL_2011_atemajac_de_brizuela.json
+atengo,Atengo,2010,tarifa_millar,True,4,0,0,0,0,,data\jalisco\json_predial\2010\JAL_PREDIAL_2010_atengo.json
+atengo,Atengo,2011,tarifa_millar,True,4,0,0,0,0,,data\jalisco\json_predial\2011\JAL_PREDIAL_2011_atengo.json
+atenguillo,Atenguillo,2010,tarifa_millar,True,12,0,0,0,0,,data\jalisco\json_predial\2010\JAL_PREDIAL_2010_atenguillo.json
+atenguillo,Atenguillo,2011,tarifa_millar,True,12,0,0,0,0,,data\jalisco\json_predial\2011\JAL_PREDIAL_2011_atenguillo.json
+atotonilco_el_alto,Atotonilco El Alto,2010,tarifa_millar,True,3,0,0,0,0,,data\jalisco\json_predial\2010\JAL_PREDIAL_2010_atotonilco_el_alto.json
+atotonilco_el_alto,Atotonilco El Alto,2011,mixto,True,3,0,0,1,0,cambio_esquema_tarifa_millar_a_mixto_desde_2010,data\jalisco\json_predial\2011\JAL_PREDIAL_2011_atotonilco_el_alto.json
+atoyac,Atoyac,2010,tarifa_millar,True,12,0,0,0,0,,data\jalisco\json_predial\2010\JAL_PREDIAL_2010_atoyac.json
+atoyac,Atoyac,2011,tarifa_millar,True,12,0,0,0,0,,data\jalisco\json_predial\2011\JAL_PREDIAL_2011_atoyac.json
+autlan_de_navarro,Autlan De Navarro,2010,tarifa_millar,True,5,0,0,0,0,,data\jalisco\json_predial\2010\JAL_PREDIAL_2010_autlan_de_navarro.json
+autlan_de_navarro,Autlan De Navarro,2011,tarifa_millar,True,5,0,0,0,0,,data\jalisco\json_predial\2011\JAL_PREDIAL_2011_autlan_de_navarro.json
+ayotlan,Ayotlan,2010,tarifa_millar,True,4,0,0,0,0,,data\jalisco\json_predial\2010\JAL_PREDIAL_2010_ayotlan.json
+ayotlan,Ayotlan,2011,tarifa_millar,True,4,0,0,0,0,,data\jalisco\json_predial\2011\JAL_PREDIAL_2011_ayotlan.json
+ayutla,Ayutla,2010,tarifa_millar,True,12,0,0,0,0,,data\jalisco\json_predial\2010\JAL_PREDIAL_2010_ayutla.json
+ayutla,Ayutla,2011,tarifa_millar,True,12,0,0,0,0,,data\jalisco\json_predial\2011\JAL_PREDIAL_2011_ayutla.json
+bolanos,Bolanos,2010,tarifa_millar,True,4,0,0,0,0,,data\jalisco\json_predial\2010\JAL_PREDIAL_2010_bolanos.json
+bolanos,Bolanos,2011,tarifa_millar,True,4,0,0,0,0,,data\jalisco\json_predial\2011\JAL_PREDIAL_2011_bolanos.json
+cabo_corrientes,Cabo Corrientes,2010,tarifa_millar,True,6,0,0,0,0,,data\jalisco\json_predial\2010\JAL_PREDIAL_2010_cabo_corrientes.json
+cabo_corrientes,Cabo Corrientes,2011,tarifa_millar,True,3,0,0,0,0,,data\jalisco\json_predial\2011\JAL_PREDIAL_2011_cabo_corrientes.json
+canadas_de_obregon,Canadas De Obregon,2010,tarifa_millar,True,4,0,0,0,0,,data\jalisco\json_predial\2010\JAL_PREDIAL_2010_canadas_de_obregon.json
+canadas_de_obregon,Canadas De Obregon,2011,tarifa_millar,True,4,0,0,0,0,,data\jalisco\json_predial\2011\JAL_PREDIAL_2011_canadas_de_obregon.json
+casimiro_castillo,Casimiro Castillo,2010,tarifa_millar,True,3,0,0,0,0,,data\jalisco\json_predial\2010\JAL_PREDIAL_2010_casimiro_castillo.json
+casimiro_castillo,Casimiro Castillo,2011,tarifa_millar,True,3,0,0,0,0,,data\jalisco\json_predial\2011\JAL_PREDIAL_2011_casimiro_castillo.json
+chapala,Chapala,2010,tarifa_millar,True,12,0,0,0,0,,data\jalisco\json_predial\2010\JAL_PREDIAL_2010_chapala.json
+chapala,Chapala,2011,tarifa_millar,True,12,0,0,0,0,,data\jalisco\json_predial\2011\JAL_PREDIAL_2011_chapala.json
+chimaltitan,Chimaltitan,2010,tarifa_millar,True,11,0,0,0,0,,data\jalisco\json_predial\2010\JAL_PREDIAL_2010_chimaltitan.json
+chimaltitan,Chimaltitan,2011,tarifa_millar,True,12,0,0,0,0,,data\jalisco\json_predial\2011\JAL_PREDIAL_2011_chimaltitan.json
+chiquilistlan,Chiquilistlan,2010,tarifa_millar,True,4,0,0,0,0,,data\jalisco\json_predial\2010\JAL_PREDIAL_2010_chiquilistlan.json
+chiquilistlan,Chiquilistlan,2011,tarifa_millar,True,4,0,0,0,0,,data\jalisco\json_predial\2011\JAL_PREDIAL_2011_chiquilistlan.json
+cihuatlan,Cihuatlan,2010,tarifa_millar,True,12,0,0,0,0,,data\jalisco\json_predial\2010\JAL_PREDIAL_2010_cihuatlan.json
+cihuatlan,Cihuatlan,2011,tarifa_millar,True,12,0,0,0,0,,data\jalisco\json_predial\2011\JAL_PREDIAL_2011_cihuatlan.json
+cocula,Cocula,2010,tarifa_millar,True,11,0,0,0,0,,data\jalisco\json_predial\2010\JAL_PREDIAL_2010_cocula.json
+cocula,Cocula,2011,tarifa_millar,True,4,0,0,0,0,cambio_brusco_n_filas_11_a_4,data\jalisco\json_predial\2011\JAL_PREDIAL_2011_cocula.json
+colotlan,Colotlan,2010,tarifa_millar,True,4,0,0,0,0,,data\jalisco\json_predial\2010\JAL_PREDIAL_2010_colotlan.json
+colotlan,Colotlan,2011,tarifa_millar,True,4,0,0,0,0,,data\jalisco\json_predial\2011\JAL_PREDIAL_2011_colotlan.json
+concepcion_de_buenos_aires,Concepcion De Buenos Aires,2010,tarifa_millar,True,4,0,0,0,0,,data\jalisco\json_predial\2010\JAL_PREDIAL_2010_concepcion_de_buenos_aires.json
+concepcion_de_buenos_aires,Concepcion De Buenos Aires,2011,tarifa_millar,True,4,0,0,0,0,,data\jalisco\json_predial\2011\JAL_PREDIAL_2011_concepcion_de_buenos_aires.json
+cuautitlan_de_garcia_barragan,Cuautitlan De Garcia Barragan,2010,tarifa_millar,True,3,0,0,0,0,,data\jalisco\json_predial\2010\JAL_PREDIAL_2010_cuautitlan_de_garcia_barragan.json
+cuautitlan_de_garcia_barragan,Cuautitlan De Garcia Barragan,2011,tarifa_millar,True,3,0,0,0,0,,data\jalisco\json_predial\2011\JAL_PREDIAL_2011_cuautitlan_de_garcia_barragan.json
+cuautla,Cuautla,2010,tarifa_millar,True,4,0,0,0,0,,data\jalisco\json_predial\2010\JAL_PREDIAL_2010_cuautla.json
+cuautla,Cuautla,2011,tarifa_millar,True,4,0,0,0,0,,data\jalisco\json_predial\2011\JAL_PREDIAL_2011_cuautla.json
+cuquio,Cuquio,2010,tarifa_millar,True,12,0,0,0,0,,data\jalisco\json_predial\2010\JAL_PREDIAL_2010_cuquio.json
+cuquio,Cuquio,2011,tarifa_millar,True,12,0,0,0,0,,data\jalisco\json_predial\2011\JAL_PREDIAL_2011_cuquio.json
+degollado,Degollado,2010,tarifa_millar,True,3,0,0,0,0,,data\jalisco\json_predial\2010\JAL_PREDIAL_2010_degollado.json
+degollado,Degollado,2011,tarifa_millar,True,3,0,0,0,0,,data\jalisco\json_predial\2011\JAL_PREDIAL_2011_degollado.json
+ejutla,Ejutla,2010,tarifa_millar,True,4,0,0,0,0,,data\jalisco\json_predial\2010\JAL_PREDIAL_2010_ejutla.json
+ejutla,Ejutla,2011,tarifa_millar,True,4,0,0,0,0,,data\jalisco\json_predial\2011\JAL_PREDIAL_2011_ejutla.json
+el_arenal,El Arenal,2010,tarifa_millar,True,4,0,0,0,0,,data\jalisco\json_predial\2010\JAL_PREDIAL_2010_el_arenal.json
+el_arenal,El Arenal,2011,tarifa_millar,True,4,0,0,0,0,,data\jalisco\json_predial\2011\JAL_PREDIAL_2011_el_arenal.json
+el_grullo,El Grullo,2010,tarifa_millar,True,4,0,0,0,0,,data\jalisco\json_predial\2010\JAL_PREDIAL_2010_el_grullo.json
+el_grullo,El Grullo,2011,tarifa_millar,True,4,0,0,0,0,,data\jalisco\json_predial\2011\JAL_PREDIAL_2011_el_grullo.json
+el_limon,El Limon,2010,tarifa_millar,True,12,0,0,0,0,,data\jalisco\json_predial\2010\JAL_PREDIAL_2010_el_limon.json
+el_limon,El Limon,2011,tarifa_millar,True,12,0,0,0,0,,data\jalisco\json_predial\2011\JAL_PREDIAL_2011_el_limon.json
+el_salto,El Salto,2010,tarifa_millar,True,4,0,0,0,0,,data\jalisco\json_predial\2010\JAL_PREDIAL_2010_el_salto.json
+el_salto,El Salto,2011,tarifa_millar,True,4,0,0,0,0,,data\jalisco\json_predial\2011\JAL_PREDIAL_2011_el_salto.json
+encarnacion_de_diaz,Encarnacion De Diaz,2010,tarifa_millar,True,4,0,0,0,0,,data\jalisco\json_predial\2010\JAL_PREDIAL_2010_encarnacion_de_diaz.json
+encarnacion_de_diaz,Encarnacion De Diaz,2011,tarifa_millar,True,4,0,0,0,0,,data\jalisco\json_predial\2011\JAL_PREDIAL_2011_encarnacion_de_diaz.json
+etzatlan,Etzatlan,2010,tarifa_millar,True,4,0,0,0,0,,data\jalisco\json_predial\2010\JAL_PREDIAL_2010_etzatlan.json
+etzatlan,Etzatlan,2011,tarifa_millar,True,4,0,0,0,0,,data\jalisco\json_predial\2011\JAL_PREDIAL_2011_etzatlan.json
+gomez_farias,Gomez Farias,2010,tarifa_millar,True,4,0,0,0,0,,data\jalisco\json_predial\2010\JAL_PREDIAL_2010_gomez_farias.json
+gomez_farias,Gomez Farias,2011,tarifa_millar,True,4,0,0,0,0,,data\jalisco\json_predial\2011\JAL_PREDIAL_2011_gomez_farias.json
+guachinango,Guachinango,2010,tarifa_millar,True,3,0,0,0,0,,data\jalisco\json_predial\2010\JAL_PREDIAL_2010_guachinango.json
+guachinango,Guachinango,2011,tarifa_millar,True,3,0,0,0,0,,data\jalisco\json_predial\2011\JAL_PREDIAL_2011_guachinango.json
+guadalajara,Guadalajara,2010,tarifa_millar,True,3,0,0,0,0,,data\jalisco\json_predial\2010\JAL_PREDIAL_2010_guadalajara.json
+guadalajara,Guadalajara,2011,tarifa_millar,True,3,0,0,0,0,,data\jalisco\json_predial\2011\JAL_PREDIAL_2011_guadalajara.json
+hostotipaquillo,Hostotipaquillo,2010,tarifa_millar,True,4,0,0,0,0,,data\jalisco\json_predial\2010\JAL_PREDIAL_2010_hostotipaquillo.json
+hostotipaquillo,Hostotipaquillo,2011,tarifa_millar,True,4,0,0,0,0,,data\jalisco\json_predial\2011\JAL_PREDIAL_2011_hostotipaquillo.json
+huejucar,Huejucar,2010,tarifa_millar,True,12,0,0,0,0,,data\jalisco\json_predial\2010\JAL_PREDIAL_2010_huejucar.json
+huejucar,Huejucar,2011,tarifa_millar,True,12,0,0,0,0,,data\jalisco\json_predial\2011\JAL_PREDIAL_2011_huejucar.json
+huejuquilla_el_alto,Huejuquilla El Alto,2010,tarifa_millar,True,12,0,0,0,0,,data\jalisco\json_predial\2010\JAL_PREDIAL_2010_huejuquilla_el_alto.json
+huejuquilla_el_alto,Huejuquilla El Alto,2011,tarifa_millar,True,12,0,0,0,0,,data\jalisco\json_predial\2011\JAL_PREDIAL_2011_huejuquilla_el_alto.json
+ixtlahuacan_de_los_membrillos,Ixtlahuacan De Los Membrillos,2010,tarifa_millar,True,10,0,0,0,0,,data\jalisco\json_predial\2010\JAL_PREDIAL_2010_ixtlahuacan_de_los_membrillos.json
+ixtlahuacan_de_los_membrillos,Ixtlahuacan De Los Membrillos,2011,tarifa_millar,True,10,0,0,0,0,,data\jalisco\json_predial\2011\JAL_PREDIAL_2011_ixtlahuacan_de_los_membrillos.json
+ixtlahuacan_del_rio,Ixtlahuacan Del Rio,2010,tarifa_millar,True,3,0,0,0,0,,data\jalisco\json_predial\2010\JAL_PREDIAL_2010_ixtlahuacan_del_rio.json
+ixtlahuacan_del_rio,Ixtlahuacan Del Rio,2011,tarifa_millar,True,3,0,0,0,0,,data\jalisco\json_predial\2011\JAL_PREDIAL_2011_ixtlahuacan_del_rio.json
+jalostotitlan,Jalostotitlan,2010,mixto,True,3,0,0,2,0,,data\jalisco\json_predial\2010\JAL_PREDIAL_2010_jalostotitlan.json
+jalostotitlan,Jalostotitlan,2011,tarifa_millar,True,3,0,0,0,0,cambio_esquema_mixto_a_tarifa_millar_desde_2010,data\jalisco\json_predial\2011\JAL_PREDIAL_2011_jalostotitlan.json
+jamay,Jamay,2010,tarifa_millar,True,4,0,0,0,0,,data\jalisco\json_predial\2010\JAL_PREDIAL_2010_jamay.json
+jamay,Jamay,2011,tarifa_millar,True,4,0,0,0,0,,data\jalisco\json_predial\2011\JAL_PREDIAL_2011_jamay.json
+jesus_maria,Jesus Maria,2010,tarifa_millar,True,11,0,0,0,0,,data\jalisco\json_predial\2010\JAL_PREDIAL_2010_jesus_maria.json
+jesus_maria,Jesus Maria,2011,tarifa_millar,True,11,0,0,0,0,,data\jalisco\json_predial\2011\JAL_PREDIAL_2011_jesus_maria.json
+jilotlan_de_los_dolores,Jilotlan De Los Dolores,2010,tarifa_millar,True,12,0,0,0,0,,data\jalisco\json_predial\2010\JAL_PREDIAL_2010_jilotlan_de_los_dolores.json
+jilotlan_de_los_dolores,Jilotlan De Los Dolores,2011,tarifa_millar,True,12,0,0,0,0,,data\jalisco\json_predial\2011\JAL_PREDIAL_2011_jilotlan_de_los_dolores.json
+jocotepec,Jocotepec,2010,tarifa_millar,True,8,0,0,0,0,,data\jalisco\json_predial\2010\JAL_PREDIAL_2010_jocotepec.json
+jocotepec,Jocotepec,2011,tarifa_millar,True,8,0,0,0,0,,data\jalisco\json_predial\2011\JAL_PREDIAL_2011_jocotepec.json
+juanacatlan,Juanacatlan,2010,tarifa_millar,True,12,0,0,0,0,,data\jalisco\json_predial\2010\JAL_PREDIAL_2010_juanacatlan.json
+juanacatlan,Juanacatlan,2011,tarifa_millar,True,4,0,0,0,0,cambio_brusco_n_filas_12_a_4,data\jalisco\json_predial\2011\JAL_PREDIAL_2011_juanacatlan.json
+juchitlan,Juchitlan,2010,tarifa_millar,True,4,0,0,0,0,,data\jalisco\json_predial\2010\JAL_PREDIAL_2010_juchitlan.json
+juchitlan,Juchitlan,2011,tarifa_millar,True,4,0,0,0,0,,data\jalisco\json_predial\2011\JAL_PREDIAL_2011_juchitlan.json
+la_barca,La Barca,2010,tarifa_millar,True,3,0,0,0,0,,data\jalisco\json_predial\2010\JAL_PREDIAL_2010_la_barca.json
+la_barca,La Barca,2011,tarifa_millar,True,3,0,0,0,0,,data\jalisco\json_predial\2011\JAL_PREDIAL_2011_la_barca.json
+la_huerta,La Huerta,2010,tarifa_millar,True,5,0,0,0,0,,data\jalisco\json_predial\2010\JAL_PREDIAL_2010_la_huerta.json
+la_huerta,La Huerta,2011,tarifa_millar,True,4,0,0,0,0,,data\jalisco\json_predial\2011\JAL_PREDIAL_2011_la_huerta.json
+la_manzanilla_de_la_paz,La Manzanilla De La Paz,2010,tarifa_millar,True,12,0,0,0,0,,data\jalisco\json_predial\2010\JAL_PREDIAL_2010_la_manzanilla_de_la_paz.json
+la_manzanilla_de_la_paz,La Manzanilla De La Paz,2011,tarifa_millar,True,12,0,0,0,0,,data\jalisco\json_predial\2011\JAL_PREDIAL_2011_la_manzanilla_de_la_paz.json
+lagos_de_moreno,Lagos De Moreno,2010,tarifa_millar,True,8,0,0,0,0,,data\jalisco\json_predial\2010\JAL_PREDIAL_2010_lagos_de_moreno.json
+lagos_de_moreno,Lagos De Moreno,2011,tarifa_millar,True,8,0,0,0,0,,data\jalisco\json_predial\2011\JAL_PREDIAL_2011_lagos_de_moreno.json
+magdalena,Magdalena,2010,tarifa_millar,True,3,0,0,0,0,,data\jalisco\json_predial\2010\JAL_PREDIAL_2010_magdalena.json
+magdalena,Magdalena,2011,mixto,True,3,0,0,2,0,cambio_esquema_tarifa_millar_a_mixto_desde_2010,data\jalisco\json_predial\2011\JAL_PREDIAL_2011_magdalena.json
+mascota,Mascota,2010,tarifa_millar,True,12,0,0,0,0,,data\jalisco\json_predial\2010\JAL_PREDIAL_2010_mascota.json
+mascota,Mascota,2011,tarifa_millar,True,12,0,0,0,0,,data\jalisco\json_predial\2011\JAL_PREDIAL_2011_mascota.json
+mazamitla,Mazamitla,2010,tarifa_millar,True,4,0,0,0,0,,data\jalisco\json_predial\2010\JAL_PREDIAL_2010_mazamitla.json
+mazamitla,Mazamitla,2011,tarifa_millar,True,4,0,0,0,0,,data\jalisco\json_predial\2011\JAL_PREDIAL_2011_mazamitla.json
+mexticacan,Mexticacan,2010,tarifa_millar,True,4,0,0,0,0,,data\jalisco\json_predial\2010\JAL_PREDIAL_2010_mexticacan.json
+mexticacan,Mexticacan,2011,tarifa_millar,True,4,0,0,0,0,,data\jalisco\json_predial\2011\JAL_PREDIAL_2011_mexticacan.json
+mezquitic,Mezquitic,2010,tarifa_millar,True,4,0,0,0,0,,data\jalisco\json_predial\2010\JAL_PREDIAL_2010_mezquitic.json
+mezquitic,Mezquitic,2011,tarifa_millar,True,4,0,0,0,0,,data\jalisco\json_predial\2011\JAL_PREDIAL_2011_mezquitic.json
+mixtlan,Mixtlan,2010,tarifa_millar,True,4,0,0,0,0,,data\jalisco\json_predial\2010\JAL_PREDIAL_2010_mixtlan.json
+mixtlan,Mixtlan,2011,tarifa_millar,True,4,0,0,0,0,,data\jalisco\json_predial\2011\JAL_PREDIAL_2011_mixtlan.json
+ocotlan,Ocotlan,2010,tarifa_millar,True,3,0,0,0,0,,data\jalisco\json_predial\2010\JAL_PREDIAL_2010_ocotlan.json
+ocotlan,Ocotlan,2011,tarifa_millar,True,3,0,0,0,0,,data\jalisco\json_predial\2011\JAL_PREDIAL_2011_ocotlan.json
+ojuelos_de_jalisco,Ojuelos De Jalisco,2010,tarifa_millar,True,4,0,0,0,0,,data\jalisco\json_predial\2010\JAL_PREDIAL_2010_ojuelos_de_jalisco.json
+ojuelos_de_jalisco,Ojuelos De Jalisco,2011,tarifa_millar,True,4,0,0,0,0,,data\jalisco\json_predial\2011\JAL_PREDIAL_2011_ojuelos_de_jalisco.json
+pihuamo,Pihuamo,2010,tarifa_millar,True,4,0,0,0,0,,data\jalisco\json_predial\2010\JAL_PREDIAL_2010_pihuamo.json
+pihuamo,Pihuamo,2011,tarifa_millar,True,4,0,0,0,0,,data\jalisco\json_predial\2011\JAL_PREDIAL_2011_pihuamo.json
+poncitlan,Poncitlan,2010,tarifa_millar,True,3,0,0,0,0,,data\jalisco\json_predial\2010\JAL_PREDIAL_2010_poncitlan.json
+poncitlan,Poncitlan,2011,tarifa_millar,True,3,0,0,0,0,,data\jalisco\json_predial\2011\JAL_PREDIAL_2011_poncitlan.json
+puerto_vallarta,Puerto Vallarta,2011,tarifa_millar,True,4,0,0,0,0,,data\jalisco\json_predial\2011\JAL_PREDIAL_2011_puerto_vallarta.json
+quitupan,Quitupan,2010,tarifa_millar,True,3,0,0,0,0,,data\jalisco\json_predial\2010\JAL_PREDIAL_2010_quitupan.json
+quitupan,Quitupan,2011,tarifa_millar,True,3,0,0,0,0,,data\jalisco\json_predial\2011\JAL_PREDIAL_2011_quitupan.json
+san_cristobal_de_la_barranca,San Cristobal De La Barranca,2010,tarifa_millar,True,6,0,0,0,0,,data\jalisco\json_predial\2010\JAL_PREDIAL_2010_san_cristobal_de_la_barranca.json
+san_cristobal_de_la_barranca,San Cristobal De La Barranca,2011,tarifa_millar,True,6,0,0,0,0,,data\jalisco\json_predial\2011\JAL_PREDIAL_2011_san_cristobal_de_la_barranca.json
+san_diego_de_alejandria,San Diego De Alejandria,2010,tarifa_millar,True,5,0,0,0,0,,data\jalisco\json_predial\2010\JAL_PREDIAL_2010_san_diego_de_alejandria.json
+san_diego_de_alejandria,San Diego De Alejandria,2011,tarifa_millar,True,5,0,0,0,0,,data\jalisco\json_predial\2011\JAL_PREDIAL_2011_san_diego_de_alejandria.json
+san_gabriel,San Gabriel,2010,tarifa_millar,True,12,0,0,0,0,,data\jalisco\json_predial\2010\JAL_PREDIAL_2010_san_gabriel.json
+san_gabriel,San Gabriel,2011,tarifa_millar,True,12,0,0,0,0,,data\jalisco\json_predial\2011\JAL_PREDIAL_2011_san_gabriel.json
+san_ignacio_cerro_gordo,San Ignacio Cerro Gordo,2010,tarifa_millar,True,3,0,0,0,0,,data\jalisco\json_predial\2010\JAL_PREDIAL_2010_san_ignacio_cerro_gordo.json
+san_ignacio_cerro_gordo,San Ignacio Cerro Gordo,2011,tarifa_millar,True,3,0,0,0,0,,data\jalisco\json_predial\2011\JAL_PREDIAL_2011_san_ignacio_cerro_gordo.json
+san_juan_de_los_lagos,San Juan De Los Lagos,2010,tarifa_millar,True,3,0,0,0,0,,data\jalisco\json_predial\2010\JAL_PREDIAL_2010_san_juan_de_los_lagos.json
+san_juan_de_los_lagos,San Juan De Los Lagos,2011,tarifa_millar,True,3,0,0,0,0,,data\jalisco\json_predial\2011\JAL_PREDIAL_2011_san_juan_de_los_lagos.json
+san_juanito_de_escobedo,San Juanito De Escobedo,2010,tarifa_millar,True,12,0,0,0,0,,data\jalisco\json_predial\2010\JAL_PREDIAL_2010_san_juanito_de_escobedo.json
+san_juanito_de_escobedo,San Juanito De Escobedo,2011,tarifa_millar,True,12,0,0,0,0,,data\jalisco\json_predial\2011\JAL_PREDIAL_2011_san_juanito_de_escobedo.json
+san_julian,San Julian,2010,tarifa_millar,True,4,0,0,0,0,,data\jalisco\json_predial\2010\JAL_PREDIAL_2010_san_julian.json
+san_julian,San Julian,2011,tarifa_millar,True,4,0,0,0,0,,data\jalisco\json_predial\2011\JAL_PREDIAL_2011_san_julian.json
+san_marcos,San Marcos,2010,tarifa_millar,True,12,0,0,0,0,,data\jalisco\json_predial\2010\JAL_PREDIAL_2010_san_marcos.json
+san_marcos,San Marcos,2011,tarifa_millar,True,12,0,0,0,0,,data\jalisco\json_predial\2011\JAL_PREDIAL_2011_san_marcos.json
+san_martin_de_bolanos,San Martin De Bolanos,2010,tarifa_millar,True,4,0,0,0,0,,data\jalisco\json_predial\2010\JAL_PREDIAL_2010_san_martin_de_bolanos.json
+san_martin_de_bolanos,San Martin De Bolanos,2011,tarifa_millar,True,4,0,0,0,0,,data\jalisco\json_predial\2011\JAL_PREDIAL_2011_san_martin_de_bolanos.json
+san_martin_hidalgo,San Martin Hidalgo,2010,tarifa_millar,True,3,0,0,0,0,,data\jalisco\json_predial\2010\JAL_PREDIAL_2010_san_martin_hidalgo.json
+san_martin_hidalgo,San Martin Hidalgo,2011,tarifa_millar,True,3,0,0,0,0,,data\jalisco\json_predial\2011\JAL_PREDIAL_2011_san_martin_hidalgo.json
+san_miguel_el_alto,San Miguel El Alto,2010,tarifa_millar,True,4,0,0,0,0,,data\jalisco\json_predial\2010\JAL_PREDIAL_2010_san_miguel_el_alto.json
+san_miguel_el_alto,San Miguel El Alto,2011,tarifa_millar,True,4,0,0,0,0,,data\jalisco\json_predial\2011\JAL_PREDIAL_2011_san_miguel_el_alto.json
+san_pedro_tlaquepaque,San Pedro Tlaquepaque,2010,tarifa_millar,True,3,0,0,0,0,,data\jalisco\json_predial\2010\JAL_PREDIAL_2010_san_pedro_tlaquepaque.json
+san_pedro_tlaquepaque,San Pedro Tlaquepaque,2011,tarifa_millar,True,3,0,0,0,0,,data\jalisco\json_predial\2011\JAL_PREDIAL_2011_san_pedro_tlaquepaque.json
+san_sebastian_del_oeste,San Sebastian Del Oeste,2010,tarifa_millar,True,4,0,0,0,0,,data\jalisco\json_predial\2010\JAL_PREDIAL_2010_san_sebastian_del_oeste.json
+san_sebastian_del_oeste,San Sebastian Del Oeste,2011,tarifa_millar,True,4,0,0,0,0,,data\jalisco\json_predial\2011\JAL_PREDIAL_2011_san_sebastian_del_oeste.json
+santa_maria_de_los_angeles,Santa Maria De Los Angeles,2010,tarifa_millar,True,4,0,0,0,0,,data\jalisco\json_predial\2010\JAL_PREDIAL_2010_santa_maria_de_los_angeles.json
+santa_maria_de_los_angeles,Santa Maria De Los Angeles,2011,tarifa_millar,True,4,0,0,0,0,,data\jalisco\json_predial\2011\JAL_PREDIAL_2011_santa_maria_de_los_angeles.json
+santa_maria_del_oro,Santa Maria Del Oro,2010,tarifa_millar,True,12,0,0,0,0,,data\jalisco\json_predial\2010\JAL_PREDIAL_2010_santa_maria_del_oro.json
+santa_maria_del_oro,Santa Maria Del Oro,2011,tarifa_millar,True,12,0,0,0,0,,data\jalisco\json_predial\2011\JAL_PREDIAL_2011_santa_maria_del_oro.json
+sayula,Sayula,2010,tarifa_millar,True,12,0,0,0,0,,data\jalisco\json_predial\2010\JAL_PREDIAL_2010_sayula.json
+sayula,Sayula,2011,tarifa_millar,True,12,0,0,0,0,,data\jalisco\json_predial\2011\JAL_PREDIAL_2011_sayula.json
+tala,Tala,2010,tarifa_millar,True,4,0,0,0,0,,data\jalisco\json_predial\2010\JAL_PREDIAL_2010_tala.json
+tala,Tala,2011,tarifa_millar,True,4,0,0,0,0,,data\jalisco\json_predial\2011\JAL_PREDIAL_2011_tala.json
+talpa_de_allende,Talpa De Allende,2010,tarifa_millar,True,4,0,0,0,0,,data\jalisco\json_predial\2010\JAL_PREDIAL_2010_talpa_de_allende.json
+talpa_de_allende,Talpa De Allende,2011,tarifa_millar,True,4,0,0,0,0,,data\jalisco\json_predial\2011\JAL_PREDIAL_2011_talpa_de_allende.json
+tamazula_de_gordiano,Tamazula De Gordiano,2010,tarifa_millar,True,12,0,0,0,0,,data\jalisco\json_predial\2010\JAL_PREDIAL_2010_tamazula_de_gordiano.json
+tamazula_de_gordiano,Tamazula De Gordiano,2011,tarifa_millar,True,12,0,0,0,0,,data\jalisco\json_predial\2011\JAL_PREDIAL_2011_tamazula_de_gordiano.json
+tapalpa,Tapalpa,2010,tarifa_millar,True,12,0,0,0,0,,data\jalisco\json_predial\2010\JAL_PREDIAL_2010_tapalpa.json
+tapalpa,Tapalpa,2011,tarifa_millar,True,12,0,0,0,0,,data\jalisco\json_predial\2011\JAL_PREDIAL_2011_tapalpa.json
+tecalitlan,Tecalitlan,2010,tarifa_millar,True,4,0,0,0,0,,data\jalisco\json_predial\2010\JAL_PREDIAL_2010_tecalitlan.json
+tecalitlan,Tecalitlan,2011,tarifa_millar,True,4,0,0,0,0,,data\jalisco\json_predial\2011\JAL_PREDIAL_2011_tecalitlan.json
+techaluta_de_montenegro,Techaluta De Montenegro,2010,tarifa_millar,True,4,0,0,0,0,,data\jalisco\json_predial\2010\JAL_PREDIAL_2010_techaluta_de_montenegro.json
+techaluta_de_montenegro,Techaluta De Montenegro,2011,tarifa_millar,True,4,0,0,0,0,,data\jalisco\json_predial\2011\JAL_PREDIAL_2011_techaluta_de_montenegro.json
+tecolotlan,Tecolotlan,2010,tarifa_millar,True,3,0,0,0,0,,data\jalisco\json_predial\2010\JAL_PREDIAL_2010_tecolotlan.json
+tecolotlan,Tecolotlan,2011,tarifa_millar,True,3,0,0,0,0,,data\jalisco\json_predial\2011\JAL_PREDIAL_2011_tecolotlan.json
+tenamaxtlan,Tenamaxtlan,2010,tarifa_millar,True,3,0,0,0,0,,data\jalisco\json_predial\2010\JAL_PREDIAL_2010_tenamaxtlan.json
+tenamaxtlan,Tenamaxtlan,2011,tarifa_millar,True,3,0,0,0,0,,data\jalisco\json_predial\2011\JAL_PREDIAL_2011_tenamaxtlan.json
+teocaltiche,Teocaltiche,2010,tarifa_millar,True,4,0,0,0,0,,data\jalisco\json_predial\2010\JAL_PREDIAL_2010_teocaltiche.json
+teocaltiche,Teocaltiche,2011,tarifa_millar,True,4,0,0,0,0,,data\jalisco\json_predial\2011\JAL_PREDIAL_2011_teocaltiche.json
+teocuitatlan_de_corona,Teocuitatlan De Corona,2010,tarifa_millar,True,4,0,0,0,0,,data\jalisco\json_predial\2010\JAL_PREDIAL_2010_teocuitatlan_de_corona.json
+teocuitatlan_de_corona,Teocuitatlan De Corona,2011,tarifa_millar,True,4,0,0,0,0,,data\jalisco\json_predial\2011\JAL_PREDIAL_2011_teocuitatlan_de_corona.json
+tepatitlan_de_morelos,Tepatitlan De Morelos,2010,tarifa_millar,True,5,0,0,0,0,,data\jalisco\json_predial\2010\JAL_PREDIAL_2010_tepatitlan_de_morelos.json
+tepatitlan_de_morelos,Tepatitlan De Morelos,2011,tarifa_millar,True,5,0,0,0,0,,data\jalisco\json_predial\2011\JAL_PREDIAL_2011_tepatitlan_de_morelos.json
+tequila,Tequila,2010,tarifa_millar,True,3,0,0,0,0,,data\jalisco\json_predial\2010\JAL_PREDIAL_2010_tequila.json
+tequila,Tequila,2011,tarifa_millar,True,4,0,0,0,0,,data\jalisco\json_predial\2011\JAL_PREDIAL_2011_tequila.json
+teuchitlan,Teuchitlan,2010,tarifa_millar,True,3,0,0,0,0,,data\jalisco\json_predial\2010\JAL_PREDIAL_2010_teuchitlan.json
+teuchitlan,Teuchitlan,2011,mixto,True,3,0,0,2,0,cambio_esquema_tarifa_millar_a_mixto_desde_2010,data\jalisco\json_predial\2011\JAL_PREDIAL_2011_teuchitlan.json
+tizapan_el_alto,Tizapan El Alto,2010,tarifa_millar,True,10,0,0,0,0,,data\jalisco\json_predial\2010\JAL_PREDIAL_2010_tizapan_el_alto.json
+tizapan_el_alto,Tizapan El Alto,2011,tarifa_millar,True,10,0,0,0,0,,data\jalisco\json_predial\2011\JAL_PREDIAL_2011_tizapan_el_alto.json
+tlajomulco_de_zuniga,Tlajomulco De Zuniga,2010,tarifa_millar,True,3,0,0,0,0,,data\jalisco\json_predial\2010\JAL_PREDIAL_2010_tlajomulco_de_zuniga.json
+tlajomulco_de_zuniga,Tlajomulco De Zuniga,2011,tarifa_millar,True,3,0,0,0,0,,data\jalisco\json_predial\2011\JAL_PREDIAL_2011_tlajomulco_de_zuniga.json
+toliman,Toliman,2010,tarifa_millar,True,12,0,0,0,0,,data\jalisco\json_predial\2010\JAL_PREDIAL_2010_toliman.json
+toliman,Toliman,2011,tarifa_millar,True,12,0,0,0,0,,data\jalisco\json_predial\2011\JAL_PREDIAL_2011_toliman.json
+tomatlan,Tomatlan,2010,tarifa_millar,True,3,0,0,0,0,,data\jalisco\json_predial\2010\JAL_PREDIAL_2010_tomatlan.json
+tomatlan,Tomatlan,2011,tarifa_millar,True,3,0,0,0,0,,data\jalisco\json_predial\2011\JAL_PREDIAL_2011_tomatlan.json
+tonala,Tonala,2010,tarifa_millar,True,3,0,0,0,0,,data\jalisco\json_predial\2010\JAL_PREDIAL_2010_tonala.json
+tonala,Tonala,2011,tarifa_millar,True,3,0,0,0,0,,data\jalisco\json_predial\2011\JAL_PREDIAL_2011_tonala.json
+tonaya,Tonaya,2010,tarifa_millar,True,4,0,0,0,0,,data\jalisco\json_predial\2010\JAL_PREDIAL_2010_tonaya.json
+tonaya,Tonaya,2011,tarifa_millar,True,4,0,0,0,0,,data\jalisco\json_predial\2011\JAL_PREDIAL_2011_tonaya.json
+tonila,Tonila,2010,tarifa_millar,True,12,0,0,0,0,,data\jalisco\json_predial\2010\JAL_PREDIAL_2010_tonila.json
+tonila,Tonila,2011,tarifa_millar,True,12,0,0,0,0,,data\jalisco\json_predial\2011\JAL_PREDIAL_2011_tonila.json
+totatiche,Totatiche,2010,tarifa_millar,True,4,0,0,0,0,,data\jalisco\json_predial\2010\JAL_PREDIAL_2010_totatiche.json
+totatiche,Totatiche,2011,tarifa_millar,True,4,0,0,0,0,,data\jalisco\json_predial\2011\JAL_PREDIAL_2011_totatiche.json
+tototlan,Tototlan,2010,tarifa_millar,True,3,0,0,0,0,,data\jalisco\json_predial\2010\JAL_PREDIAL_2010_tototlan.json
+tototlan,Tototlan,2011,tarifa_millar,True,3,0,0,0,0,,data\jalisco\json_predial\2011\JAL_PREDIAL_2011_tototlan.json
+tuxcacuesco,Tuxcacuesco,2010,tarifa_millar,True,4,0,0,0,0,,data\jalisco\json_predial\2010\JAL_PREDIAL_2010_tuxcacuesco.json
+tuxcacuesco,Tuxcacuesco,2011,tarifa_millar,True,4,0,0,0,0,,data\jalisco\json_predial\2011\JAL_PREDIAL_2011_tuxcacuesco.json
+tuxcueca,Tuxcueca,2010,tarifa_millar,True,12,0,0,0,0,,data\jalisco\json_predial\2010\JAL_PREDIAL_2010_tuxcueca.json
+tuxcueca,Tuxcueca,2011,tarifa_millar,True,12,0,0,0,0,,data\jalisco\json_predial\2011\JAL_PREDIAL_2011_tuxcueca.json
+tuxpan,Tuxpan,2010,tarifa_millar,True,3,0,0,0,0,,data\jalisco\json_predial\2010\JAL_PREDIAL_2010_tuxpan.json
+tuxpan,Tuxpan,2011,tarifa_millar,True,3,0,0,0,0,,data\jalisco\json_predial\2011\JAL_PREDIAL_2011_tuxpan.json
+union_de_san_antonio,Union De San Antonio,2010,tarifa_millar,True,4,0,0,0,0,,data\jalisco\json_predial\2010\JAL_PREDIAL_2010_union_de_san_antonio.json
+union_de_san_antonio,Union De San Antonio,2011,tarifa_millar,True,4,0,0,0,0,,data\jalisco\json_predial\2011\JAL_PREDIAL_2011_union_de_san_antonio.json
+union_de_tula,Union De Tula,2010,tarifa_millar,True,12,0,0,0,0,,data\jalisco\json_predial\2010\JAL_PREDIAL_2010_union_de_tula.json
+union_de_tula,Union De Tula,2011,tarifa_millar,True,11,0,0,0,0,,data\jalisco\json_predial\2011\JAL_PREDIAL_2011_union_de_tula.json
+valle_de_guadalupe,Valle De Guadalupe,2010,tarifa_millar,True,4,0,0,0,0,,data\jalisco\json_predial\2010\JAL_PREDIAL_2010_valle_de_guadalupe.json
+valle_de_guadalupe,Valle De Guadalupe,2011,tarifa_millar,True,4,0,0,0,0,,data\jalisco\json_predial\2011\JAL_PREDIAL_2011_valle_de_guadalupe.json
+valle_de_juarez,Valle De Juarez,2010,tarifa_millar,True,12,0,0,0,0,,data\jalisco\json_predial\2010\JAL_PREDIAL_2010_valle_de_juarez.json
+valle_de_juarez,Valle De Juarez,2011,tarifa_millar,True,12,0,0,0,0,,data\jalisco\json_predial\2011\JAL_PREDIAL_2011_valle_de_juarez.json
+villa_corona,Villa Corona,2010,tarifa_millar,True,3,0,0,0,0,,data\jalisco\json_predial\2010\JAL_PREDIAL_2010_villa_corona.json
+villa_corona,Villa Corona,2011,tarifa_millar,True,3,0,0,0,0,,data\jalisco\json_predial\2011\JAL_PREDIAL_2011_villa_corona.json
+villa_guerrero,Villa Guerrero,2010,tarifa_millar,True,4,0,0,0,0,,data\jalisco\json_predial\2010\JAL_PREDIAL_2010_villa_guerrero.json
+villa_guerrero,Villa Guerrero,2011,tarifa_millar,True,4,0,0,0,0,,data\jalisco\json_predial\2011\JAL_PREDIAL_2011_villa_guerrero.json
+villa_hidalgo,Villa Hidalgo,2010,tarifa_millar,True,4,0,0,0,0,,data\jalisco\json_predial\2010\JAL_PREDIAL_2010_villa_hidalgo.json
+villa_hidalgo,Villa Hidalgo,2011,tarifa_millar,True,5,0,0,0,0,,data\jalisco\json_predial\2011\JAL_PREDIAL_2011_villa_hidalgo.json
+villa_purificacion,Villa Purificacion,2010,tarifa_millar,True,3,0,0,0,0,,data\jalisco\json_predial\2010\JAL_PREDIAL_2010_villa_purificacion.json
+villa_purificacion,Villa Purificacion,2011,tarifa_millar,True,3,0,0,0,0,,data\jalisco\json_predial\2011\JAL_PREDIAL_2011_villa_purificacion.json
+yahualica_de_gonzalez_gallo,Yahualica De Gonzalez Gallo,2010,tarifa_millar,True,4,0,0,0,0,,data\jalisco\json_predial\2010\JAL_PREDIAL_2010_yahualica_de_gonzalez_gallo.json
+yahualica_de_gonzalez_gallo,Yahualica De Gonzalez Gallo,2011,tarifa_millar,True,4,0,0,0,0,,data\jalisco\json_predial\2011\JAL_PREDIAL_2011_yahualica_de_gonzalez_gallo.json
+zacoalco_de_torres,Zacoalco De Torres,2010,tarifa_millar,True,4,0,0,0,0,,data\jalisco\json_predial\2010\JAL_PREDIAL_2010_zacoalco_de_torres.json
+zacoalco_de_torres,Zacoalco De Torres,2011,tarifa_millar,True,4,0,0,0,0,,data\jalisco\json_predial\2011\JAL_PREDIAL_2011_zacoalco_de_torres.json
+zapopan,Zapopan,2010,tarifa_millar,True,4,0,0,0,0,,data\jalisco\json_predial\2010\JAL_PREDIAL_2010_zapopan.json
+zapopan,Zapopan,2011,tarifa_millar,True,4,0,0,0,0,,data\jalisco\json_predial\2011\JAL_PREDIAL_2011_zapopan.json
+zapotiltic,Zapotiltic,2010,tarifa_millar,True,4,0,0,0,0,,data\jalisco\json_predial\2010\JAL_PREDIAL_2010_zapotiltic.json
+zapotiltic,Zapotiltic,2011,tarifa_millar,True,4,0,0,0,0,,data\jalisco\json_predial\2011\JAL_PREDIAL_2011_zapotiltic.json
+zapotitlan_de_vadillo,Zapotitlan De Vadillo,2010,tarifa_millar,True,4,0,0,0,0,,data\jalisco\json_predial\2010\JAL_PREDIAL_2010_zapotitlan_de_vadillo.json
+zapotitlan_de_vadillo,Zapotitlan De Vadillo,2011,tarifa_millar,True,4,0,0,0,0,,data\jalisco\json_predial\2011\JAL_PREDIAL_2011_zapotitlan_de_vadillo.json
+zapotlan_del_rey,Zapotlan Del Rey,2010,tarifa_millar,True,3,0,0,0,0,,data\jalisco\json_predial\2010\JAL_PREDIAL_2010_zapotlan_del_rey.json
+zapotlan_del_rey,Zapotlan Del Rey,2011,tarifa_millar,True,3,0,0,0,0,,data\jalisco\json_predial\2011\JAL_PREDIAL_2011_zapotlan_del_rey.json
+zapotlan_el_grande,Zapotlan El Grande,2010,tarifa_millar,True,7,0,0,0,0,,data\jalisco\json_predial\2010\JAL_PREDIAL_2010_zapotlan_el_grande.json
+zapotlan_el_grande,Zapotlan El Grande,2011,tarifa_millar,True,7,0,0,0,0,,data\jalisco\json_predial\2011\JAL_PREDIAL_2011_zapotlan_el_grande.json
+zapotlanejo,Zapotlanejo,2010,tarifa_millar,True,4,0,0,0,0,,data\jalisco\json_predial\2010\JAL_PREDIAL_2010_zapotlanejo.json
+zapotlanejo,Zapotlanejo,2011,tarifa_millar,True,4,0,0,0,0,,data\jalisco\json_predial\2011\JAL_PREDIAL_2011_zapotlanejo.json

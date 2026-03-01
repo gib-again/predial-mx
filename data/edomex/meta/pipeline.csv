@@ -1,0 +1,2001 @@
+﻿ejercicio,cve_mun,municipio,slug,json_file,metodo
+2010,001,Acambay de Ruíz Castañeda,acambay,2010/MEX_2010_acambay.json,hardcoded_codigo_financiero
+2010,002,Acolman,acolman,2010/MEX_2010_acolman.json,hardcoded_codigo_financiero
+2010,003,Aculco,aculco,2010/MEX_2010_aculco.json,hardcoded_codigo_financiero
+2010,004,Almoloya de Alquisiras,almoloya_de_alquisiras,2010/MEX_2010_almoloya_de_alquisiras.json,hardcoded_codigo_financiero
+2010,005,Almoloya de Juárez,almoloya_de_juarez,2010/MEX_2010_almoloya_de_juarez.json,hardcoded_codigo_financiero
+2010,006,Almoloya del Río,almoloya_del_rio,2010/MEX_2010_almoloya_del_rio.json,hardcoded_codigo_financiero
+2010,007,Amanalco,amanalco,2010/MEX_2010_amanalco.json,hardcoded_codigo_financiero
+2010,008,Amatepec,amatepec,2010/MEX_2010_amatepec.json,hardcoded_codigo_financiero
+2010,009,Amecameca,amecameca,2010/MEX_2010_amecameca.json,hardcoded_codigo_financiero
+2010,010,Apaxco,apaxco,2010/MEX_2010_apaxco.json,hardcoded_codigo_financiero
+2010,011,Atenco,atenco,2010/MEX_2010_atenco.json,hardcoded_codigo_financiero
+2010,012,Atizapán,atizapan,2010/MEX_2010_atizapan.json,hardcoded_codigo_financiero
+2010,013,Atizapán de Zaragoza,atizapan_de_zaragoza,2010/MEX_2010_atizapan_de_zaragoza.json,hardcoded_codigo_financiero
+2010,014,Atlacomulco,atlacomulco,2010/MEX_2010_atlacomulco.json,hardcoded_codigo_financiero
+2010,015,Atlautla,atlautla,2010/MEX_2010_atlautla.json,hardcoded_codigo_financiero
+2010,016,Axapusco,axapusco,2010/MEX_2010_axapusco.json,hardcoded_codigo_financiero
+2010,017,Ayapango,ayapango,2010/MEX_2010_ayapango.json,hardcoded_codigo_financiero
+2010,018,Calimaya,calimaya,2010/MEX_2010_calimaya.json,hardcoded_codigo_financiero
+2010,019,Capulhuac,capulhuac,2010/MEX_2010_capulhuac.json,hardcoded_codigo_financiero
+2010,020,Coacalco de Berriozábal,coacalco,2010/MEX_2010_coacalco.json,hardcoded_codigo_financiero
+2010,021,Coatepec Harinas,coatepec_harinas,2010/MEX_2010_coatepec_harinas.json,hardcoded_codigo_financiero
+2010,022,Cocotitlán,cocotitlan,2010/MEX_2010_cocotitlan.json,hardcoded_codigo_financiero
+2010,023,Coyotepec,coyotepec,2010/MEX_2010_coyotepec.json,hardcoded_codigo_financiero
+2010,024,Cuautitlán,cuautitlan,2010/MEX_2010_cuautitlan.json,hardcoded_codigo_financiero
+2010,025,Chalco,chalco,2010/MEX_2010_chalco.json,hardcoded_codigo_financiero
+2010,026,Chapa de Mota,chapa_de_mota,2010/MEX_2010_chapa_de_mota.json,hardcoded_codigo_financiero
+2010,027,Chapultepec,chapultepec,2010/MEX_2010_chapultepec.json,hardcoded_codigo_financiero
+2010,028,Chiautla,chiautla,2010/MEX_2010_chiautla.json,hardcoded_codigo_financiero
+2010,029,Chicoloapan,chicoloapan,2010/MEX_2010_chicoloapan.json,hardcoded_codigo_financiero
+2010,030,Chiconcuac,chiconcuac,2010/MEX_2010_chiconcuac.json,hardcoded_codigo_financiero
+2010,031,Chimalhuacán,chimalhuacan,2010/MEX_2010_chimalhuacan.json,hardcoded_codigo_financiero
+2010,032,Donato Guerra,donato_guerra,2010/MEX_2010_donato_guerra.json,hardcoded_codigo_financiero
+2010,033,Ecatepec de Morelos,ecatepec,2010/MEX_2010_ecatepec.json,hardcoded_codigo_financiero
+2010,034,Ecatzingo,ecatzingo,2010/MEX_2010_ecatzingo.json,hardcoded_codigo_financiero
+2010,035,Huehuetoca,huehuetoca,2010/MEX_2010_huehuetoca.json,hardcoded_codigo_financiero
+2010,036,Hueypoxtla,hueypoxtla,2010/MEX_2010_hueypoxtla.json,hardcoded_codigo_financiero
+2010,037,Huixquilucan,huixquilucan,2010/MEX_2010_huixquilucan.json,hardcoded_codigo_financiero
+2010,038,Isidro Fabela,isidro_fabela,2010/MEX_2010_isidro_fabela.json,hardcoded_codigo_financiero
+2010,039,Ixtapaluca,ixtapaluca,2010/MEX_2010_ixtapaluca.json,hardcoded_codigo_financiero
+2010,040,Ixtapan de la Sal,ixtapan_de_la_sal,2010/MEX_2010_ixtapan_de_la_sal.json,hardcoded_codigo_financiero
+2010,041,Ixtapan del Oro,ixtapan_del_oro,2010/MEX_2010_ixtapan_del_oro.json,hardcoded_codigo_financiero
+2010,042,Ixtlahuaca,ixtlahuaca,2010/MEX_2010_ixtlahuaca.json,hardcoded_codigo_financiero
+2010,043,Xalatlaco,xalatlaco,2010/MEX_2010_xalatlaco.json,hardcoded_codigo_financiero
+2010,044,Jaltenco,jaltenco,2010/MEX_2010_jaltenco.json,hardcoded_codigo_financiero
+2010,045,Jilotepec,jilotepec,2010/MEX_2010_jilotepec.json,hardcoded_codigo_financiero
+2010,046,Jilotzingo,jilotzingo,2010/MEX_2010_jilotzingo.json,hardcoded_codigo_financiero
+2010,047,Jiquipilco,jiquipilco,2010/MEX_2010_jiquipilco.json,hardcoded_codigo_financiero
+2010,048,Jocotitlán,jocotitlan,2010/MEX_2010_jocotitlan.json,hardcoded_codigo_financiero
+2010,049,Joquicingo,joquicingo,2010/MEX_2010_joquicingo.json,hardcoded_codigo_financiero
+2010,050,Juchitepec,juchitepec,2010/MEX_2010_juchitepec.json,hardcoded_codigo_financiero
+2010,051,Lerma,lerma,2010/MEX_2010_lerma.json,hardcoded_codigo_financiero
+2010,052,Malinalco,malinalco,2010/MEX_2010_malinalco.json,hardcoded_codigo_financiero
+2010,053,Melchor Ocampo,melchor_ocampo,2010/MEX_2010_melchor_ocampo.json,hardcoded_codigo_financiero
+2010,054,Metepec,metepec,2010/MEX_2010_metepec.json,hardcoded_codigo_financiero
+2010,055,Mexicaltzingo,mexicaltzingo,2010/MEX_2010_mexicaltzingo.json,hardcoded_codigo_financiero
+2010,056,Morelos,morelos,2010/MEX_2010_morelos.json,hardcoded_codigo_financiero
+2010,057,Naucalpan de Juárez,naucalpan,2010/MEX_2010_naucalpan.json,hardcoded_codigo_financiero
+2010,058,Nezahualcóyotl,nezahualcoyotl,2010/MEX_2010_nezahualcoyotl.json,hardcoded_codigo_financiero
+2010,059,Nextlalpan,nextlalpan,2010/MEX_2010_nextlalpan.json,hardcoded_codigo_financiero
+2010,060,Nicolás Romero,nicolas_romero,2010/MEX_2010_nicolas_romero.json,hardcoded_codigo_financiero
+2010,061,Nopaltepec,nopaltepec,2010/MEX_2010_nopaltepec.json,hardcoded_codigo_financiero
+2010,062,Ocoyoacac,ocoyoacac,2010/MEX_2010_ocoyoacac.json,hardcoded_codigo_financiero
+2010,063,Ocuilan,ocuilan,2010/MEX_2010_ocuilan.json,hardcoded_codigo_financiero
+2010,064,El Oro,el_oro,2010/MEX_2010_el_oro.json,hardcoded_codigo_financiero
+2010,065,Otumba,otumba,2010/MEX_2010_otumba.json,hardcoded_codigo_financiero
+2010,066,Otzoloapan,otzoloapan,2010/MEX_2010_otzoloapan.json,hardcoded_codigo_financiero
+2010,067,Otzolotepec,otzolotepec,2010/MEX_2010_otzolotepec.json,hardcoded_codigo_financiero
+2010,068,Ozumba,ozumba,2010/MEX_2010_ozumba.json,hardcoded_codigo_financiero
+2010,069,Papalotla,papalotla,2010/MEX_2010_papalotla.json,hardcoded_codigo_financiero
+2010,070,La Paz,la_paz,2010/MEX_2010_la_paz.json,hardcoded_codigo_financiero
+2010,071,Polotitlán,polotitlan,2010/MEX_2010_polotitlan.json,hardcoded_codigo_financiero
+2010,072,Rayón,rayon,2010/MEX_2010_rayon.json,hardcoded_codigo_financiero
+2010,073,San Antonio la Isla,san_antonio_la_isla,2010/MEX_2010_san_antonio_la_isla.json,hardcoded_codigo_financiero
+2010,074,San Felipe del Progreso,san_felipe_del_progreso,2010/MEX_2010_san_felipe_del_progreso.json,hardcoded_codigo_financiero
+2010,075,San Martín de las Pirámides,san_martin_de_las_piramides,2010/MEX_2010_san_martin_de_las_piramides.json,hardcoded_codigo_financiero
+2010,076,San Mateo Atenco,san_mateo_atenco,2010/MEX_2010_san_mateo_atenco.json,hardcoded_codigo_financiero
+2010,077,San Simón de Guerrero,san_simon_de_guerrero,2010/MEX_2010_san_simon_de_guerrero.json,hardcoded_codigo_financiero
+2010,078,Santo Tomás,santo_tomas,2010/MEX_2010_santo_tomas.json,hardcoded_codigo_financiero
+2010,079,Soyaniquilpan de Juárez,soyaniquilpan,2010/MEX_2010_soyaniquilpan.json,hardcoded_codigo_financiero
+2010,080,Sultepec,sultepec,2010/MEX_2010_sultepec.json,hardcoded_codigo_financiero
+2010,081,Tecámac,tecamac,2010/MEX_2010_tecamac.json,hardcoded_codigo_financiero
+2010,082,Tejupilco,tejupilco,2010/MEX_2010_tejupilco.json,hardcoded_codigo_financiero
+2010,083,Temamatla,temamatla,2010/MEX_2010_temamatla.json,hardcoded_codigo_financiero
+2010,084,Temascalapa,temascalapa,2010/MEX_2010_temascalapa.json,hardcoded_codigo_financiero
+2010,085,Temascalcingo,temascalcingo,2010/MEX_2010_temascalcingo.json,hardcoded_codigo_financiero
+2010,086,Temascaltepec,temascaltepec,2010/MEX_2010_temascaltepec.json,hardcoded_codigo_financiero
+2010,087,Temoaya,temoaya,2010/MEX_2010_temoaya.json,hardcoded_codigo_financiero
+2010,088,Tenancingo,tenancingo,2010/MEX_2010_tenancingo.json,hardcoded_codigo_financiero
+2010,089,Tenango del Aire,tenango_del_aire,2010/MEX_2010_tenango_del_aire.json,hardcoded_codigo_financiero
+2010,090,Tenango del Valle,tenango_del_valle,2010/MEX_2010_tenango_del_valle.json,hardcoded_codigo_financiero
+2010,091,Teoloyucan,teoloyucan,2010/MEX_2010_teoloyucan.json,hardcoded_codigo_financiero
+2010,092,Teotihuacán,teotihuacan,2010/MEX_2010_teotihuacan.json,hardcoded_codigo_financiero
+2010,093,Tepetlaoxtoc,tepetlaoxtoc,2010/MEX_2010_tepetlaoxtoc.json,hardcoded_codigo_financiero
+2010,094,Tepetlixpa,tepetlixpa,2010/MEX_2010_tepetlixpa.json,hardcoded_codigo_financiero
+2010,095,Tepotzotlán,tepotzotlan,2010/MEX_2010_tepotzotlan.json,hardcoded_codigo_financiero
+2010,096,Tequixquiac,tequixquiac,2010/MEX_2010_tequixquiac.json,hardcoded_codigo_financiero
+2010,097,Texcaltitlán,texcaltitlan,2010/MEX_2010_texcaltitlan.json,hardcoded_codigo_financiero
+2010,098,Texcalyacac,texcalyacac,2010/MEX_2010_texcalyacac.json,hardcoded_codigo_financiero
+2010,099,Texcoco,texcoco,2010/MEX_2010_texcoco.json,hardcoded_codigo_financiero
+2010,100,Tezoyuca,tezoyuca,2010/MEX_2010_tezoyuca.json,hardcoded_codigo_financiero
+2010,101,Tianguistenco,tianguistenco,2010/MEX_2010_tianguistenco.json,hardcoded_codigo_financiero
+2010,102,Timilpan,timilpan,2010/MEX_2010_timilpan.json,hardcoded_codigo_financiero
+2010,103,Tlalmanalco,tlalmanalco,2010/MEX_2010_tlalmanalco.json,hardcoded_codigo_financiero
+2010,104,Tlalnepantla de Baz,tlalnepantla,2010/MEX_2010_tlalnepantla.json,hardcoded_codigo_financiero
+2010,105,Tlatlaya,tlatlaya,2010/MEX_2010_tlatlaya.json,hardcoded_codigo_financiero
+2010,106,Toluca,toluca,2010/MEX_2010_toluca.json,hardcoded_codigo_financiero
+2010,107,Tonatico,tonatico,2010/MEX_2010_tonatico.json,hardcoded_codigo_financiero
+2010,108,Tultepec,tultepec,2010/MEX_2010_tultepec.json,hardcoded_codigo_financiero
+2010,109,Tultitlán,tultitlan,2010/MEX_2010_tultitlan.json,hardcoded_codigo_financiero
+2010,110,Valle de Bravo,valle_de_bravo,2010/MEX_2010_valle_de_bravo.json,hardcoded_codigo_financiero
+2010,111,Villa de Allende,villa_de_allende,2010/MEX_2010_villa_de_allende.json,hardcoded_codigo_financiero
+2010,112,Villa del Carbón,villa_del_carbon,2010/MEX_2010_villa_del_carbon.json,hardcoded_codigo_financiero
+2010,113,Villa Guerrero,villa_guerrero,2010/MEX_2010_villa_guerrero.json,hardcoded_codigo_financiero
+2010,114,Villa Victoria,villa_victoria,2010/MEX_2010_villa_victoria.json,hardcoded_codigo_financiero
+2010,115,Xonacatlán,xonacatlan,2010/MEX_2010_xonacatlan.json,hardcoded_codigo_financiero
+2010,116,Zacazonapan,zacazonapan,2010/MEX_2010_zacazonapan.json,hardcoded_codigo_financiero
+2010,117,Zacualpan,zacualpan,2010/MEX_2010_zacualpan.json,hardcoded_codigo_financiero
+2010,118,Zinacantepec,zinacantepec,2010/MEX_2010_zinacantepec.json,hardcoded_codigo_financiero
+2010,119,Zumpahuacán,zumpahuacan,2010/MEX_2010_zumpahuacan.json,hardcoded_codigo_financiero
+2010,120,Zumpango,zumpango,2010/MEX_2010_zumpango.json,hardcoded_codigo_financiero
+2010,121,Cuautitlán Izcalli,cuautitlan_izcalli,2010/MEX_2010_cuautitlan_izcalli.json,hardcoded_codigo_financiero
+2010,122,Valle de Chalco Solidaridad,valle_de_chalco,2010/MEX_2010_valle_de_chalco.json,hardcoded_codigo_financiero
+2010,123,Luvianos,luvianos,2010/MEX_2010_luvianos.json,hardcoded_codigo_financiero
+2010,124,San José del Rincón,san_jose_del_rincon,2010/MEX_2010_san_jose_del_rincon.json,hardcoded_codigo_financiero
+2010,125,Tonanitla,tonanitla,2010/MEX_2010_tonanitla.json,hardcoded_codigo_financiero
+2011,001,Acambay de Ruíz Castañeda,acambay,2011/MEX_2011_acambay.json,hardcoded_codigo_financiero
+2011,002,Acolman,acolman,2011/MEX_2011_acolman.json,hardcoded_codigo_financiero
+2011,003,Aculco,aculco,2011/MEX_2011_aculco.json,hardcoded_codigo_financiero
+2011,004,Almoloya de Alquisiras,almoloya_de_alquisiras,2011/MEX_2011_almoloya_de_alquisiras.json,hardcoded_codigo_financiero
+2011,005,Almoloya de Juárez,almoloya_de_juarez,2011/MEX_2011_almoloya_de_juarez.json,hardcoded_codigo_financiero
+2011,006,Almoloya del Río,almoloya_del_rio,2011/MEX_2011_almoloya_del_rio.json,hardcoded_codigo_financiero
+2011,007,Amanalco,amanalco,2011/MEX_2011_amanalco.json,hardcoded_codigo_financiero
+2011,008,Amatepec,amatepec,2011/MEX_2011_amatepec.json,hardcoded_codigo_financiero
+2011,009,Amecameca,amecameca,2011/MEX_2011_amecameca.json,hardcoded_codigo_financiero
+2011,010,Apaxco,apaxco,2011/MEX_2011_apaxco.json,hardcoded_codigo_financiero
+2011,011,Atenco,atenco,2011/MEX_2011_atenco.json,hardcoded_codigo_financiero
+2011,012,Atizapán,atizapan,2011/MEX_2011_atizapan.json,hardcoded_codigo_financiero
+2011,013,Atizapán de Zaragoza,atizapan_de_zaragoza,2011/MEX_2011_atizapan_de_zaragoza.json,hardcoded_codigo_financiero
+2011,014,Atlacomulco,atlacomulco,2011/MEX_2011_atlacomulco.json,hardcoded_codigo_financiero
+2011,015,Atlautla,atlautla,2011/MEX_2011_atlautla.json,hardcoded_codigo_financiero
+2011,016,Axapusco,axapusco,2011/MEX_2011_axapusco.json,hardcoded_codigo_financiero
+2011,017,Ayapango,ayapango,2011/MEX_2011_ayapango.json,hardcoded_codigo_financiero
+2011,018,Calimaya,calimaya,2011/MEX_2011_calimaya.json,hardcoded_codigo_financiero
+2011,019,Capulhuac,capulhuac,2011/MEX_2011_capulhuac.json,hardcoded_codigo_financiero
+2011,020,Coacalco de Berriozábal,coacalco,2011/MEX_2011_coacalco.json,hardcoded_codigo_financiero
+2011,021,Coatepec Harinas,coatepec_harinas,2011/MEX_2011_coatepec_harinas.json,hardcoded_codigo_financiero
+2011,022,Cocotitlán,cocotitlan,2011/MEX_2011_cocotitlan.json,hardcoded_codigo_financiero
+2011,023,Coyotepec,coyotepec,2011/MEX_2011_coyotepec.json,hardcoded_codigo_financiero
+2011,024,Cuautitlán,cuautitlan,2011/MEX_2011_cuautitlan.json,hardcoded_codigo_financiero
+2011,025,Chalco,chalco,2011/MEX_2011_chalco.json,hardcoded_codigo_financiero
+2011,026,Chapa de Mota,chapa_de_mota,2011/MEX_2011_chapa_de_mota.json,hardcoded_codigo_financiero
+2011,027,Chapultepec,chapultepec,2011/MEX_2011_chapultepec.json,hardcoded_codigo_financiero
+2011,028,Chiautla,chiautla,2011/MEX_2011_chiautla.json,hardcoded_codigo_financiero
+2011,029,Chicoloapan,chicoloapan,2011/MEX_2011_chicoloapan.json,hardcoded_codigo_financiero
+2011,030,Chiconcuac,chiconcuac,2011/MEX_2011_chiconcuac.json,hardcoded_codigo_financiero
+2011,031,Chimalhuacán,chimalhuacan,2011/MEX_2011_chimalhuacan.json,hardcoded_codigo_financiero
+2011,032,Donato Guerra,donato_guerra,2011/MEX_2011_donato_guerra.json,hardcoded_codigo_financiero
+2011,033,Ecatepec de Morelos,ecatepec,2011/MEX_2011_ecatepec.json,hardcoded_codigo_financiero
+2011,034,Ecatzingo,ecatzingo,2011/MEX_2011_ecatzingo.json,hardcoded_codigo_financiero
+2011,035,Huehuetoca,huehuetoca,2011/MEX_2011_huehuetoca.json,hardcoded_codigo_financiero
+2011,036,Hueypoxtla,hueypoxtla,2011/MEX_2011_hueypoxtla.json,hardcoded_codigo_financiero
+2011,037,Huixquilucan,huixquilucan,2011/MEX_2011_huixquilucan.json,hardcoded_codigo_financiero
+2011,038,Isidro Fabela,isidro_fabela,2011/MEX_2011_isidro_fabela.json,hardcoded_codigo_financiero
+2011,039,Ixtapaluca,ixtapaluca,2011/MEX_2011_ixtapaluca.json,hardcoded_codigo_financiero
+2011,040,Ixtapan de la Sal,ixtapan_de_la_sal,2011/MEX_2011_ixtapan_de_la_sal.json,hardcoded_codigo_financiero
+2011,041,Ixtapan del Oro,ixtapan_del_oro,2011/MEX_2011_ixtapan_del_oro.json,hardcoded_codigo_financiero
+2011,042,Ixtlahuaca,ixtlahuaca,2011/MEX_2011_ixtlahuaca.json,hardcoded_codigo_financiero
+2011,043,Xalatlaco,xalatlaco,2011/MEX_2011_xalatlaco.json,hardcoded_codigo_financiero
+2011,044,Jaltenco,jaltenco,2011/MEX_2011_jaltenco.json,hardcoded_codigo_financiero
+2011,045,Jilotepec,jilotepec,2011/MEX_2011_jilotepec.json,hardcoded_codigo_financiero
+2011,046,Jilotzingo,jilotzingo,2011/MEX_2011_jilotzingo.json,hardcoded_codigo_financiero
+2011,047,Jiquipilco,jiquipilco,2011/MEX_2011_jiquipilco.json,hardcoded_codigo_financiero
+2011,048,Jocotitlán,jocotitlan,2011/MEX_2011_jocotitlan.json,hardcoded_codigo_financiero
+2011,049,Joquicingo,joquicingo,2011/MEX_2011_joquicingo.json,hardcoded_codigo_financiero
+2011,050,Juchitepec,juchitepec,2011/MEX_2011_juchitepec.json,hardcoded_codigo_financiero
+2011,051,Lerma,lerma,2011/MEX_2011_lerma.json,hardcoded_codigo_financiero
+2011,052,Malinalco,malinalco,2011/MEX_2011_malinalco.json,hardcoded_codigo_financiero
+2011,053,Melchor Ocampo,melchor_ocampo,2011/MEX_2011_melchor_ocampo.json,hardcoded_codigo_financiero
+2011,054,Metepec,metepec,2011/MEX_2011_metepec.json,hardcoded_codigo_financiero
+2011,055,Mexicaltzingo,mexicaltzingo,2011/MEX_2011_mexicaltzingo.json,hardcoded_codigo_financiero
+2011,056,Morelos,morelos,2011/MEX_2011_morelos.json,hardcoded_codigo_financiero
+2011,057,Naucalpan de Juárez,naucalpan,2011/MEX_2011_naucalpan.json,hardcoded_codigo_financiero
+2011,058,Nezahualcóyotl,nezahualcoyotl,2011/MEX_2011_nezahualcoyotl.json,hardcoded_codigo_financiero
+2011,059,Nextlalpan,nextlalpan,2011/MEX_2011_nextlalpan.json,hardcoded_codigo_financiero
+2011,060,Nicolás Romero,nicolas_romero,2011/MEX_2011_nicolas_romero.json,hardcoded_codigo_financiero
+2011,061,Nopaltepec,nopaltepec,2011/MEX_2011_nopaltepec.json,hardcoded_codigo_financiero
+2011,062,Ocoyoacac,ocoyoacac,2011/MEX_2011_ocoyoacac.json,hardcoded_codigo_financiero
+2011,063,Ocuilan,ocuilan,2011/MEX_2011_ocuilan.json,hardcoded_codigo_financiero
+2011,064,El Oro,el_oro,2011/MEX_2011_el_oro.json,hardcoded_codigo_financiero
+2011,065,Otumba,otumba,2011/MEX_2011_otumba.json,hardcoded_codigo_financiero
+2011,066,Otzoloapan,otzoloapan,2011/MEX_2011_otzoloapan.json,hardcoded_codigo_financiero
+2011,067,Otzolotepec,otzolotepec,2011/MEX_2011_otzolotepec.json,hardcoded_codigo_financiero
+2011,068,Ozumba,ozumba,2011/MEX_2011_ozumba.json,hardcoded_codigo_financiero
+2011,069,Papalotla,papalotla,2011/MEX_2011_papalotla.json,hardcoded_codigo_financiero
+2011,070,La Paz,la_paz,2011/MEX_2011_la_paz.json,hardcoded_codigo_financiero
+2011,071,Polotitlán,polotitlan,2011/MEX_2011_polotitlan.json,hardcoded_codigo_financiero
+2011,072,Rayón,rayon,2011/MEX_2011_rayon.json,hardcoded_codigo_financiero
+2011,073,San Antonio la Isla,san_antonio_la_isla,2011/MEX_2011_san_antonio_la_isla.json,hardcoded_codigo_financiero
+2011,074,San Felipe del Progreso,san_felipe_del_progreso,2011/MEX_2011_san_felipe_del_progreso.json,hardcoded_codigo_financiero
+2011,075,San Martín de las Pirámides,san_martin_de_las_piramides,2011/MEX_2011_san_martin_de_las_piramides.json,hardcoded_codigo_financiero
+2011,076,San Mateo Atenco,san_mateo_atenco,2011/MEX_2011_san_mateo_atenco.json,hardcoded_codigo_financiero
+2011,077,San Simón de Guerrero,san_simon_de_guerrero,2011/MEX_2011_san_simon_de_guerrero.json,hardcoded_codigo_financiero
+2011,078,Santo Tomás,santo_tomas,2011/MEX_2011_santo_tomas.json,hardcoded_codigo_financiero
+2011,079,Soyaniquilpan de Juárez,soyaniquilpan,2011/MEX_2011_soyaniquilpan.json,hardcoded_codigo_financiero
+2011,080,Sultepec,sultepec,2011/MEX_2011_sultepec.json,hardcoded_codigo_financiero
+2011,081,Tecámac,tecamac,2011/MEX_2011_tecamac.json,hardcoded_codigo_financiero
+2011,082,Tejupilco,tejupilco,2011/MEX_2011_tejupilco.json,hardcoded_codigo_financiero
+2011,083,Temamatla,temamatla,2011/MEX_2011_temamatla.json,hardcoded_codigo_financiero
+2011,084,Temascalapa,temascalapa,2011/MEX_2011_temascalapa.json,hardcoded_codigo_financiero
+2011,085,Temascalcingo,temascalcingo,2011/MEX_2011_temascalcingo.json,hardcoded_codigo_financiero
+2011,086,Temascaltepec,temascaltepec,2011/MEX_2011_temascaltepec.json,hardcoded_codigo_financiero
+2011,087,Temoaya,temoaya,2011/MEX_2011_temoaya.json,hardcoded_codigo_financiero
+2011,088,Tenancingo,tenancingo,2011/MEX_2011_tenancingo.json,hardcoded_codigo_financiero
+2011,089,Tenango del Aire,tenango_del_aire,2011/MEX_2011_tenango_del_aire.json,hardcoded_codigo_financiero
+2011,090,Tenango del Valle,tenango_del_valle,2011/MEX_2011_tenango_del_valle.json,hardcoded_codigo_financiero
+2011,091,Teoloyucan,teoloyucan,2011/MEX_2011_teoloyucan.json,hardcoded_codigo_financiero
+2011,092,Teotihuacán,teotihuacan,2011/MEX_2011_teotihuacan.json,hardcoded_codigo_financiero
+2011,093,Tepetlaoxtoc,tepetlaoxtoc,2011/MEX_2011_tepetlaoxtoc.json,hardcoded_codigo_financiero
+2011,094,Tepetlixpa,tepetlixpa,2011/MEX_2011_tepetlixpa.json,hardcoded_codigo_financiero
+2011,095,Tepotzotlán,tepotzotlan,2011/MEX_2011_tepotzotlan.json,hardcoded_codigo_financiero
+2011,096,Tequixquiac,tequixquiac,2011/MEX_2011_tequixquiac.json,hardcoded_codigo_financiero
+2011,097,Texcaltitlán,texcaltitlan,2011/MEX_2011_texcaltitlan.json,hardcoded_codigo_financiero
+2011,098,Texcalyacac,texcalyacac,2011/MEX_2011_texcalyacac.json,hardcoded_codigo_financiero
+2011,099,Texcoco,texcoco,2011/MEX_2011_texcoco.json,hardcoded_codigo_financiero
+2011,100,Tezoyuca,tezoyuca,2011/MEX_2011_tezoyuca.json,hardcoded_codigo_financiero
+2011,101,Tianguistenco,tianguistenco,2011/MEX_2011_tianguistenco.json,hardcoded_codigo_financiero
+2011,102,Timilpan,timilpan,2011/MEX_2011_timilpan.json,hardcoded_codigo_financiero
+2011,103,Tlalmanalco,tlalmanalco,2011/MEX_2011_tlalmanalco.json,hardcoded_codigo_financiero
+2011,104,Tlalnepantla de Baz,tlalnepantla,2011/MEX_2011_tlalnepantla.json,hardcoded_codigo_financiero
+2011,105,Tlatlaya,tlatlaya,2011/MEX_2011_tlatlaya.json,hardcoded_codigo_financiero
+2011,106,Toluca,toluca,2011/MEX_2011_toluca.json,hardcoded_codigo_financiero
+2011,107,Tonatico,tonatico,2011/MEX_2011_tonatico.json,hardcoded_codigo_financiero
+2011,108,Tultepec,tultepec,2011/MEX_2011_tultepec.json,hardcoded_codigo_financiero
+2011,109,Tultitlán,tultitlan,2011/MEX_2011_tultitlan.json,hardcoded_codigo_financiero
+2011,110,Valle de Bravo,valle_de_bravo,2011/MEX_2011_valle_de_bravo.json,hardcoded_codigo_financiero
+2011,111,Villa de Allende,villa_de_allende,2011/MEX_2011_villa_de_allende.json,hardcoded_codigo_financiero
+2011,112,Villa del Carbón,villa_del_carbon,2011/MEX_2011_villa_del_carbon.json,hardcoded_codigo_financiero
+2011,113,Villa Guerrero,villa_guerrero,2011/MEX_2011_villa_guerrero.json,hardcoded_codigo_financiero
+2011,114,Villa Victoria,villa_victoria,2011/MEX_2011_villa_victoria.json,hardcoded_codigo_financiero
+2011,115,Xonacatlán,xonacatlan,2011/MEX_2011_xonacatlan.json,hardcoded_codigo_financiero
+2011,116,Zacazonapan,zacazonapan,2011/MEX_2011_zacazonapan.json,hardcoded_codigo_financiero
+2011,117,Zacualpan,zacualpan,2011/MEX_2011_zacualpan.json,hardcoded_codigo_financiero
+2011,118,Zinacantepec,zinacantepec,2011/MEX_2011_zinacantepec.json,hardcoded_codigo_financiero
+2011,119,Zumpahuacán,zumpahuacan,2011/MEX_2011_zumpahuacan.json,hardcoded_codigo_financiero
+2011,120,Zumpango,zumpango,2011/MEX_2011_zumpango.json,hardcoded_codigo_financiero
+2011,121,Cuautitlán Izcalli,cuautitlan_izcalli,2011/MEX_2011_cuautitlan_izcalli.json,hardcoded_codigo_financiero
+2011,122,Valle de Chalco Solidaridad,valle_de_chalco,2011/MEX_2011_valle_de_chalco.json,hardcoded_codigo_financiero
+2011,123,Luvianos,luvianos,2011/MEX_2011_luvianos.json,hardcoded_codigo_financiero
+2011,124,San José del Rincón,san_jose_del_rincon,2011/MEX_2011_san_jose_del_rincon.json,hardcoded_codigo_financiero
+2011,125,Tonanitla,tonanitla,2011/MEX_2011_tonanitla.json,hardcoded_codigo_financiero
+2012,001,Acambay de Ruíz Castañeda,acambay,2012/MEX_2012_acambay.json,hardcoded_codigo_financiero
+2012,002,Acolman,acolman,2012/MEX_2012_acolman.json,hardcoded_codigo_financiero
+2012,003,Aculco,aculco,2012/MEX_2012_aculco.json,hardcoded_codigo_financiero
+2012,004,Almoloya de Alquisiras,almoloya_de_alquisiras,2012/MEX_2012_almoloya_de_alquisiras.json,hardcoded_codigo_financiero
+2012,005,Almoloya de Juárez,almoloya_de_juarez,2012/MEX_2012_almoloya_de_juarez.json,hardcoded_codigo_financiero
+2012,006,Almoloya del Río,almoloya_del_rio,2012/MEX_2012_almoloya_del_rio.json,hardcoded_codigo_financiero
+2012,007,Amanalco,amanalco,2012/MEX_2012_amanalco.json,hardcoded_codigo_financiero
+2012,008,Amatepec,amatepec,2012/MEX_2012_amatepec.json,hardcoded_codigo_financiero
+2012,009,Amecameca,amecameca,2012/MEX_2012_amecameca.json,hardcoded_codigo_financiero
+2012,010,Apaxco,apaxco,2012/MEX_2012_apaxco.json,hardcoded_codigo_financiero
+2012,011,Atenco,atenco,2012/MEX_2012_atenco.json,hardcoded_codigo_financiero
+2012,012,Atizapán,atizapan,2012/MEX_2012_atizapan.json,hardcoded_codigo_financiero
+2012,013,Atizapán de Zaragoza,atizapan_de_zaragoza,2012/MEX_2012_atizapan_de_zaragoza.json,hardcoded_codigo_financiero
+2012,014,Atlacomulco,atlacomulco,2012/MEX_2012_atlacomulco.json,hardcoded_codigo_financiero
+2012,015,Atlautla,atlautla,2012/MEX_2012_atlautla.json,hardcoded_codigo_financiero
+2012,016,Axapusco,axapusco,2012/MEX_2012_axapusco.json,hardcoded_codigo_financiero
+2012,017,Ayapango,ayapango,2012/MEX_2012_ayapango.json,hardcoded_codigo_financiero
+2012,018,Calimaya,calimaya,2012/MEX_2012_calimaya.json,hardcoded_codigo_financiero
+2012,019,Capulhuac,capulhuac,2012/MEX_2012_capulhuac.json,hardcoded_codigo_financiero
+2012,020,Coacalco de Berriozábal,coacalco,2012/MEX_2012_coacalco.json,hardcoded_codigo_financiero
+2012,021,Coatepec Harinas,coatepec_harinas,2012/MEX_2012_coatepec_harinas.json,hardcoded_codigo_financiero
+2012,022,Cocotitlán,cocotitlan,2012/MEX_2012_cocotitlan.json,hardcoded_codigo_financiero
+2012,023,Coyotepec,coyotepec,2012/MEX_2012_coyotepec.json,hardcoded_codigo_financiero
+2012,024,Cuautitlán,cuautitlan,2012/MEX_2012_cuautitlan.json,hardcoded_codigo_financiero
+2012,025,Chalco,chalco,2012/MEX_2012_chalco.json,hardcoded_codigo_financiero
+2012,026,Chapa de Mota,chapa_de_mota,2012/MEX_2012_chapa_de_mota.json,hardcoded_codigo_financiero
+2012,027,Chapultepec,chapultepec,2012/MEX_2012_chapultepec.json,hardcoded_codigo_financiero
+2012,028,Chiautla,chiautla,2012/MEX_2012_chiautla.json,hardcoded_codigo_financiero
+2012,029,Chicoloapan,chicoloapan,2012/MEX_2012_chicoloapan.json,hardcoded_codigo_financiero
+2012,030,Chiconcuac,chiconcuac,2012/MEX_2012_chiconcuac.json,hardcoded_codigo_financiero
+2012,031,Chimalhuacán,chimalhuacan,2012/MEX_2012_chimalhuacan.json,hardcoded_codigo_financiero
+2012,032,Donato Guerra,donato_guerra,2012/MEX_2012_donato_guerra.json,hardcoded_codigo_financiero
+2012,033,Ecatepec de Morelos,ecatepec,2012/MEX_2012_ecatepec.json,hardcoded_codigo_financiero
+2012,034,Ecatzingo,ecatzingo,2012/MEX_2012_ecatzingo.json,hardcoded_codigo_financiero
+2012,035,Huehuetoca,huehuetoca,2012/MEX_2012_huehuetoca.json,hardcoded_codigo_financiero
+2012,036,Hueypoxtla,hueypoxtla,2012/MEX_2012_hueypoxtla.json,hardcoded_codigo_financiero
+2012,037,Huixquilucan,huixquilucan,2012/MEX_2012_huixquilucan.json,hardcoded_codigo_financiero
+2012,038,Isidro Fabela,isidro_fabela,2012/MEX_2012_isidro_fabela.json,hardcoded_codigo_financiero
+2012,039,Ixtapaluca,ixtapaluca,2012/MEX_2012_ixtapaluca.json,hardcoded_codigo_financiero
+2012,040,Ixtapan de la Sal,ixtapan_de_la_sal,2012/MEX_2012_ixtapan_de_la_sal.json,hardcoded_codigo_financiero
+2012,041,Ixtapan del Oro,ixtapan_del_oro,2012/MEX_2012_ixtapan_del_oro.json,hardcoded_codigo_financiero
+2012,042,Ixtlahuaca,ixtlahuaca,2012/MEX_2012_ixtlahuaca.json,hardcoded_codigo_financiero
+2012,043,Xalatlaco,xalatlaco,2012/MEX_2012_xalatlaco.json,hardcoded_codigo_financiero
+2012,044,Jaltenco,jaltenco,2012/MEX_2012_jaltenco.json,hardcoded_codigo_financiero
+2012,045,Jilotepec,jilotepec,2012/MEX_2012_jilotepec.json,hardcoded_codigo_financiero
+2012,046,Jilotzingo,jilotzingo,2012/MEX_2012_jilotzingo.json,hardcoded_codigo_financiero
+2012,047,Jiquipilco,jiquipilco,2012/MEX_2012_jiquipilco.json,hardcoded_codigo_financiero
+2012,048,Jocotitlán,jocotitlan,2012/MEX_2012_jocotitlan.json,hardcoded_codigo_financiero
+2012,049,Joquicingo,joquicingo,2012/MEX_2012_joquicingo.json,hardcoded_codigo_financiero
+2012,050,Juchitepec,juchitepec,2012/MEX_2012_juchitepec.json,hardcoded_codigo_financiero
+2012,051,Lerma,lerma,2012/MEX_2012_lerma.json,hardcoded_codigo_financiero
+2012,052,Malinalco,malinalco,2012/MEX_2012_malinalco.json,hardcoded_codigo_financiero
+2012,053,Melchor Ocampo,melchor_ocampo,2012/MEX_2012_melchor_ocampo.json,hardcoded_codigo_financiero
+2012,054,Metepec,metepec,2012/MEX_2012_metepec.json,hardcoded_codigo_financiero
+2012,055,Mexicaltzingo,mexicaltzingo,2012/MEX_2012_mexicaltzingo.json,hardcoded_codigo_financiero
+2012,056,Morelos,morelos,2012/MEX_2012_morelos.json,hardcoded_codigo_financiero
+2012,057,Naucalpan de Juárez,naucalpan,2012/MEX_2012_naucalpan.json,hardcoded_codigo_financiero
+2012,058,Nezahualcóyotl,nezahualcoyotl,2012/MEX_2012_nezahualcoyotl.json,hardcoded_codigo_financiero
+2012,059,Nextlalpan,nextlalpan,2012/MEX_2012_nextlalpan.json,hardcoded_codigo_financiero
+2012,060,Nicolás Romero,nicolas_romero,2012/MEX_2012_nicolas_romero.json,hardcoded_codigo_financiero
+2012,061,Nopaltepec,nopaltepec,2012/MEX_2012_nopaltepec.json,hardcoded_codigo_financiero
+2012,062,Ocoyoacac,ocoyoacac,2012/MEX_2012_ocoyoacac.json,hardcoded_codigo_financiero
+2012,063,Ocuilan,ocuilan,2012/MEX_2012_ocuilan.json,hardcoded_codigo_financiero
+2012,064,El Oro,el_oro,2012/MEX_2012_el_oro.json,hardcoded_codigo_financiero
+2012,065,Otumba,otumba,2012/MEX_2012_otumba.json,hardcoded_codigo_financiero
+2012,066,Otzoloapan,otzoloapan,2012/MEX_2012_otzoloapan.json,hardcoded_codigo_financiero
+2012,067,Otzolotepec,otzolotepec,2012/MEX_2012_otzolotepec.json,hardcoded_codigo_financiero
+2012,068,Ozumba,ozumba,2012/MEX_2012_ozumba.json,hardcoded_codigo_financiero
+2012,069,Papalotla,papalotla,2012/MEX_2012_papalotla.json,hardcoded_codigo_financiero
+2012,070,La Paz,la_paz,2012/MEX_2012_la_paz.json,hardcoded_codigo_financiero
+2012,071,Polotitlán,polotitlan,2012/MEX_2012_polotitlan.json,hardcoded_codigo_financiero
+2012,072,Rayón,rayon,2012/MEX_2012_rayon.json,hardcoded_codigo_financiero
+2012,073,San Antonio la Isla,san_antonio_la_isla,2012/MEX_2012_san_antonio_la_isla.json,hardcoded_codigo_financiero
+2012,074,San Felipe del Progreso,san_felipe_del_progreso,2012/MEX_2012_san_felipe_del_progreso.json,hardcoded_codigo_financiero
+2012,075,San Martín de las Pirámides,san_martin_de_las_piramides,2012/MEX_2012_san_martin_de_las_piramides.json,hardcoded_codigo_financiero
+2012,076,San Mateo Atenco,san_mateo_atenco,2012/MEX_2012_san_mateo_atenco.json,hardcoded_codigo_financiero
+2012,077,San Simón de Guerrero,san_simon_de_guerrero,2012/MEX_2012_san_simon_de_guerrero.json,hardcoded_codigo_financiero
+2012,078,Santo Tomás,santo_tomas,2012/MEX_2012_santo_tomas.json,hardcoded_codigo_financiero
+2012,079,Soyaniquilpan de Juárez,soyaniquilpan,2012/MEX_2012_soyaniquilpan.json,hardcoded_codigo_financiero
+2012,080,Sultepec,sultepec,2012/MEX_2012_sultepec.json,hardcoded_codigo_financiero
+2012,081,Tecámac,tecamac,2012/MEX_2012_tecamac.json,hardcoded_codigo_financiero
+2012,082,Tejupilco,tejupilco,2012/MEX_2012_tejupilco.json,hardcoded_codigo_financiero
+2012,083,Temamatla,temamatla,2012/MEX_2012_temamatla.json,hardcoded_codigo_financiero
+2012,084,Temascalapa,temascalapa,2012/MEX_2012_temascalapa.json,hardcoded_codigo_financiero
+2012,085,Temascalcingo,temascalcingo,2012/MEX_2012_temascalcingo.json,hardcoded_codigo_financiero
+2012,086,Temascaltepec,temascaltepec,2012/MEX_2012_temascaltepec.json,hardcoded_codigo_financiero
+2012,087,Temoaya,temoaya,2012/MEX_2012_temoaya.json,hardcoded_codigo_financiero
+2012,088,Tenancingo,tenancingo,2012/MEX_2012_tenancingo.json,hardcoded_codigo_financiero
+2012,089,Tenango del Aire,tenango_del_aire,2012/MEX_2012_tenango_del_aire.json,hardcoded_codigo_financiero
+2012,090,Tenango del Valle,tenango_del_valle,2012/MEX_2012_tenango_del_valle.json,hardcoded_codigo_financiero
+2012,091,Teoloyucan,teoloyucan,2012/MEX_2012_teoloyucan.json,hardcoded_codigo_financiero
+2012,092,Teotihuacán,teotihuacan,2012/MEX_2012_teotihuacan.json,hardcoded_codigo_financiero
+2012,093,Tepetlaoxtoc,tepetlaoxtoc,2012/MEX_2012_tepetlaoxtoc.json,hardcoded_codigo_financiero
+2012,094,Tepetlixpa,tepetlixpa,2012/MEX_2012_tepetlixpa.json,hardcoded_codigo_financiero
+2012,095,Tepotzotlán,tepotzotlan,2012/MEX_2012_tepotzotlan.json,hardcoded_codigo_financiero
+2012,096,Tequixquiac,tequixquiac,2012/MEX_2012_tequixquiac.json,hardcoded_codigo_financiero
+2012,097,Texcaltitlán,texcaltitlan,2012/MEX_2012_texcaltitlan.json,hardcoded_codigo_financiero
+2012,098,Texcalyacac,texcalyacac,2012/MEX_2012_texcalyacac.json,hardcoded_codigo_financiero
+2012,099,Texcoco,texcoco,2012/MEX_2012_texcoco.json,hardcoded_codigo_financiero
+2012,100,Tezoyuca,tezoyuca,2012/MEX_2012_tezoyuca.json,hardcoded_codigo_financiero
+2012,101,Tianguistenco,tianguistenco,2012/MEX_2012_tianguistenco.json,hardcoded_codigo_financiero
+2012,102,Timilpan,timilpan,2012/MEX_2012_timilpan.json,hardcoded_codigo_financiero
+2012,103,Tlalmanalco,tlalmanalco,2012/MEX_2012_tlalmanalco.json,hardcoded_codigo_financiero
+2012,104,Tlalnepantla de Baz,tlalnepantla,2012/MEX_2012_tlalnepantla.json,hardcoded_codigo_financiero
+2012,105,Tlatlaya,tlatlaya,2012/MEX_2012_tlatlaya.json,hardcoded_codigo_financiero
+2012,106,Toluca,toluca,2012/MEX_2012_toluca.json,hardcoded_codigo_financiero
+2012,107,Tonatico,tonatico,2012/MEX_2012_tonatico.json,hardcoded_codigo_financiero
+2012,108,Tultepec,tultepec,2012/MEX_2012_tultepec.json,hardcoded_codigo_financiero
+2012,109,Tultitlán,tultitlan,2012/MEX_2012_tultitlan.json,hardcoded_codigo_financiero
+2012,110,Valle de Bravo,valle_de_bravo,2012/MEX_2012_valle_de_bravo.json,hardcoded_codigo_financiero
+2012,111,Villa de Allende,villa_de_allende,2012/MEX_2012_villa_de_allende.json,hardcoded_codigo_financiero
+2012,112,Villa del Carbón,villa_del_carbon,2012/MEX_2012_villa_del_carbon.json,hardcoded_codigo_financiero
+2012,113,Villa Guerrero,villa_guerrero,2012/MEX_2012_villa_guerrero.json,hardcoded_codigo_financiero
+2012,114,Villa Victoria,villa_victoria,2012/MEX_2012_villa_victoria.json,hardcoded_codigo_financiero
+2012,115,Xonacatlán,xonacatlan,2012/MEX_2012_xonacatlan.json,hardcoded_codigo_financiero
+2012,116,Zacazonapan,zacazonapan,2012/MEX_2012_zacazonapan.json,hardcoded_codigo_financiero
+2012,117,Zacualpan,zacualpan,2012/MEX_2012_zacualpan.json,hardcoded_codigo_financiero
+2012,118,Zinacantepec,zinacantepec,2012/MEX_2012_zinacantepec.json,hardcoded_codigo_financiero
+2012,119,Zumpahuacán,zumpahuacan,2012/MEX_2012_zumpahuacan.json,hardcoded_codigo_financiero
+2012,120,Zumpango,zumpango,2012/MEX_2012_zumpango.json,hardcoded_codigo_financiero
+2012,121,Cuautitlán Izcalli,cuautitlan_izcalli,2012/MEX_2012_cuautitlan_izcalli.json,hardcoded_codigo_financiero
+2012,122,Valle de Chalco Solidaridad,valle_de_chalco,2012/MEX_2012_valle_de_chalco.json,hardcoded_codigo_financiero
+2012,123,Luvianos,luvianos,2012/MEX_2012_luvianos.json,hardcoded_codigo_financiero
+2012,124,San José del Rincón,san_jose_del_rincon,2012/MEX_2012_san_jose_del_rincon.json,hardcoded_codigo_financiero
+2012,125,Tonanitla,tonanitla,2012/MEX_2012_tonanitla.json,hardcoded_codigo_financiero
+2013,001,Acambay de Ruíz Castañeda,acambay,2013/MEX_2013_acambay.json,hardcoded_codigo_financiero
+2013,002,Acolman,acolman,2013/MEX_2013_acolman.json,hardcoded_codigo_financiero
+2013,003,Aculco,aculco,2013/MEX_2013_aculco.json,hardcoded_codigo_financiero
+2013,004,Almoloya de Alquisiras,almoloya_de_alquisiras,2013/MEX_2013_almoloya_de_alquisiras.json,hardcoded_codigo_financiero
+2013,005,Almoloya de Juárez,almoloya_de_juarez,2013/MEX_2013_almoloya_de_juarez.json,hardcoded_codigo_financiero
+2013,006,Almoloya del Río,almoloya_del_rio,2013/MEX_2013_almoloya_del_rio.json,hardcoded_codigo_financiero
+2013,007,Amanalco,amanalco,2013/MEX_2013_amanalco.json,hardcoded_codigo_financiero
+2013,008,Amatepec,amatepec,2013/MEX_2013_amatepec.json,hardcoded_codigo_financiero
+2013,009,Amecameca,amecameca,2013/MEX_2013_amecameca.json,hardcoded_codigo_financiero
+2013,010,Apaxco,apaxco,2013/MEX_2013_apaxco.json,hardcoded_codigo_financiero
+2013,011,Atenco,atenco,2013/MEX_2013_atenco.json,hardcoded_codigo_financiero
+2013,012,Atizapán,atizapan,2013/MEX_2013_atizapan.json,hardcoded_codigo_financiero
+2013,013,Atizapán de Zaragoza,atizapan_de_zaragoza,2013/MEX_2013_atizapan_de_zaragoza.json,hardcoded_codigo_financiero
+2013,014,Atlacomulco,atlacomulco,2013/MEX_2013_atlacomulco.json,hardcoded_codigo_financiero
+2013,015,Atlautla,atlautla,2013/MEX_2013_atlautla.json,hardcoded_codigo_financiero
+2013,016,Axapusco,axapusco,2013/MEX_2013_axapusco.json,hardcoded_codigo_financiero
+2013,017,Ayapango,ayapango,2013/MEX_2013_ayapango.json,hardcoded_codigo_financiero
+2013,018,Calimaya,calimaya,2013/MEX_2013_calimaya.json,hardcoded_codigo_financiero
+2013,019,Capulhuac,capulhuac,2013/MEX_2013_capulhuac.json,hardcoded_codigo_financiero
+2013,020,Coacalco de Berriozábal,coacalco,2013/MEX_2013_coacalco.json,hardcoded_codigo_financiero
+2013,021,Coatepec Harinas,coatepec_harinas,2013/MEX_2013_coatepec_harinas.json,hardcoded_codigo_financiero
+2013,022,Cocotitlán,cocotitlan,2013/MEX_2013_cocotitlan.json,hardcoded_codigo_financiero
+2013,023,Coyotepec,coyotepec,2013/MEX_2013_coyotepec.json,hardcoded_codigo_financiero
+2013,024,Cuautitlán,cuautitlan,2013/MEX_2013_cuautitlan.json,hardcoded_codigo_financiero
+2013,025,Chalco,chalco,2013/MEX_2013_chalco.json,hardcoded_codigo_financiero
+2013,026,Chapa de Mota,chapa_de_mota,2013/MEX_2013_chapa_de_mota.json,hardcoded_codigo_financiero
+2013,027,Chapultepec,chapultepec,2013/MEX_2013_chapultepec.json,hardcoded_codigo_financiero
+2013,028,Chiautla,chiautla,2013/MEX_2013_chiautla.json,hardcoded_codigo_financiero
+2013,029,Chicoloapan,chicoloapan,2013/MEX_2013_chicoloapan.json,hardcoded_codigo_financiero
+2013,030,Chiconcuac,chiconcuac,2013/MEX_2013_chiconcuac.json,hardcoded_codigo_financiero
+2013,031,Chimalhuacán,chimalhuacan,2013/MEX_2013_chimalhuacan.json,hardcoded_codigo_financiero
+2013,032,Donato Guerra,donato_guerra,2013/MEX_2013_donato_guerra.json,hardcoded_codigo_financiero
+2013,033,Ecatepec de Morelos,ecatepec,2013/MEX_2013_ecatepec.json,hardcoded_codigo_financiero
+2013,034,Ecatzingo,ecatzingo,2013/MEX_2013_ecatzingo.json,hardcoded_codigo_financiero
+2013,035,Huehuetoca,huehuetoca,2013/MEX_2013_huehuetoca.json,hardcoded_codigo_financiero
+2013,036,Hueypoxtla,hueypoxtla,2013/MEX_2013_hueypoxtla.json,hardcoded_codigo_financiero
+2013,037,Huixquilucan,huixquilucan,2013/MEX_2013_huixquilucan.json,hardcoded_codigo_financiero
+2013,038,Isidro Fabela,isidro_fabela,2013/MEX_2013_isidro_fabela.json,hardcoded_codigo_financiero
+2013,039,Ixtapaluca,ixtapaluca,2013/MEX_2013_ixtapaluca.json,hardcoded_codigo_financiero
+2013,040,Ixtapan de la Sal,ixtapan_de_la_sal,2013/MEX_2013_ixtapan_de_la_sal.json,hardcoded_codigo_financiero
+2013,041,Ixtapan del Oro,ixtapan_del_oro,2013/MEX_2013_ixtapan_del_oro.json,hardcoded_codigo_financiero
+2013,042,Ixtlahuaca,ixtlahuaca,2013/MEX_2013_ixtlahuaca.json,hardcoded_codigo_financiero
+2013,043,Xalatlaco,xalatlaco,2013/MEX_2013_xalatlaco.json,hardcoded_codigo_financiero
+2013,044,Jaltenco,jaltenco,2013/MEX_2013_jaltenco.json,hardcoded_codigo_financiero
+2013,045,Jilotepec,jilotepec,2013/MEX_2013_jilotepec.json,hardcoded_codigo_financiero
+2013,046,Jilotzingo,jilotzingo,2013/MEX_2013_jilotzingo.json,hardcoded_codigo_financiero
+2013,047,Jiquipilco,jiquipilco,2013/MEX_2013_jiquipilco.json,hardcoded_codigo_financiero
+2013,048,Jocotitlán,jocotitlan,2013/MEX_2013_jocotitlan.json,hardcoded_codigo_financiero
+2013,049,Joquicingo,joquicingo,2013/MEX_2013_joquicingo.json,hardcoded_codigo_financiero
+2013,050,Juchitepec,juchitepec,2013/MEX_2013_juchitepec.json,hardcoded_codigo_financiero
+2013,051,Lerma,lerma,2013/MEX_2013_lerma.json,hardcoded_codigo_financiero
+2013,052,Malinalco,malinalco,2013/MEX_2013_malinalco.json,hardcoded_codigo_financiero
+2013,053,Melchor Ocampo,melchor_ocampo,2013/MEX_2013_melchor_ocampo.json,hardcoded_codigo_financiero
+2013,054,Metepec,metepec,2013/MEX_2013_metepec.json,hardcoded_codigo_financiero
+2013,055,Mexicaltzingo,mexicaltzingo,2013/MEX_2013_mexicaltzingo.json,hardcoded_codigo_financiero
+2013,056,Morelos,morelos,2013/MEX_2013_morelos.json,hardcoded_codigo_financiero
+2013,057,Naucalpan de Juárez,naucalpan,2013/MEX_2013_naucalpan.json,hardcoded_codigo_financiero
+2013,058,Nezahualcóyotl,nezahualcoyotl,2013/MEX_2013_nezahualcoyotl.json,hardcoded_codigo_financiero
+2013,059,Nextlalpan,nextlalpan,2013/MEX_2013_nextlalpan.json,hardcoded_codigo_financiero
+2013,060,Nicolás Romero,nicolas_romero,2013/MEX_2013_nicolas_romero.json,hardcoded_codigo_financiero
+2013,061,Nopaltepec,nopaltepec,2013/MEX_2013_nopaltepec.json,hardcoded_codigo_financiero
+2013,062,Ocoyoacac,ocoyoacac,2013/MEX_2013_ocoyoacac.json,hardcoded_codigo_financiero
+2013,063,Ocuilan,ocuilan,2013/MEX_2013_ocuilan.json,hardcoded_codigo_financiero
+2013,064,El Oro,el_oro,2013/MEX_2013_el_oro.json,hardcoded_codigo_financiero
+2013,065,Otumba,otumba,2013/MEX_2013_otumba.json,hardcoded_codigo_financiero
+2013,066,Otzoloapan,otzoloapan,2013/MEX_2013_otzoloapan.json,hardcoded_codigo_financiero
+2013,067,Otzolotepec,otzolotepec,2013/MEX_2013_otzolotepec.json,hardcoded_codigo_financiero
+2013,068,Ozumba,ozumba,2013/MEX_2013_ozumba.json,hardcoded_codigo_financiero
+2013,069,Papalotla,papalotla,2013/MEX_2013_papalotla.json,hardcoded_codigo_financiero
+2013,070,La Paz,la_paz,2013/MEX_2013_la_paz.json,hardcoded_codigo_financiero
+2013,071,Polotitlán,polotitlan,2013/MEX_2013_polotitlan.json,hardcoded_codigo_financiero
+2013,072,Rayón,rayon,2013/MEX_2013_rayon.json,hardcoded_codigo_financiero
+2013,073,San Antonio la Isla,san_antonio_la_isla,2013/MEX_2013_san_antonio_la_isla.json,hardcoded_codigo_financiero
+2013,074,San Felipe del Progreso,san_felipe_del_progreso,2013/MEX_2013_san_felipe_del_progreso.json,hardcoded_codigo_financiero
+2013,075,San Martín de las Pirámides,san_martin_de_las_piramides,2013/MEX_2013_san_martin_de_las_piramides.json,hardcoded_codigo_financiero
+2013,076,San Mateo Atenco,san_mateo_atenco,2013/MEX_2013_san_mateo_atenco.json,hardcoded_codigo_financiero
+2013,077,San Simón de Guerrero,san_simon_de_guerrero,2013/MEX_2013_san_simon_de_guerrero.json,hardcoded_codigo_financiero
+2013,078,Santo Tomás,santo_tomas,2013/MEX_2013_santo_tomas.json,hardcoded_codigo_financiero
+2013,079,Soyaniquilpan de Juárez,soyaniquilpan,2013/MEX_2013_soyaniquilpan.json,hardcoded_codigo_financiero
+2013,080,Sultepec,sultepec,2013/MEX_2013_sultepec.json,hardcoded_codigo_financiero
+2013,081,Tecámac,tecamac,2013/MEX_2013_tecamac.json,hardcoded_codigo_financiero
+2013,082,Tejupilco,tejupilco,2013/MEX_2013_tejupilco.json,hardcoded_codigo_financiero
+2013,083,Temamatla,temamatla,2013/MEX_2013_temamatla.json,hardcoded_codigo_financiero
+2013,084,Temascalapa,temascalapa,2013/MEX_2013_temascalapa.json,hardcoded_codigo_financiero
+2013,085,Temascalcingo,temascalcingo,2013/MEX_2013_temascalcingo.json,hardcoded_codigo_financiero
+2013,086,Temascaltepec,temascaltepec,2013/MEX_2013_temascaltepec.json,hardcoded_codigo_financiero
+2013,087,Temoaya,temoaya,2013/MEX_2013_temoaya.json,hardcoded_codigo_financiero
+2013,088,Tenancingo,tenancingo,2013/MEX_2013_tenancingo.json,hardcoded_codigo_financiero
+2013,089,Tenango del Aire,tenango_del_aire,2013/MEX_2013_tenango_del_aire.json,hardcoded_codigo_financiero
+2013,090,Tenango del Valle,tenango_del_valle,2013/MEX_2013_tenango_del_valle.json,hardcoded_codigo_financiero
+2013,091,Teoloyucan,teoloyucan,2013/MEX_2013_teoloyucan.json,hardcoded_codigo_financiero
+2013,092,Teotihuacán,teotihuacan,2013/MEX_2013_teotihuacan.json,hardcoded_codigo_financiero
+2013,093,Tepetlaoxtoc,tepetlaoxtoc,2013/MEX_2013_tepetlaoxtoc.json,hardcoded_codigo_financiero
+2013,094,Tepetlixpa,tepetlixpa,2013/MEX_2013_tepetlixpa.json,hardcoded_codigo_financiero
+2013,095,Tepotzotlán,tepotzotlan,2013/MEX_2013_tepotzotlan.json,hardcoded_codigo_financiero
+2013,096,Tequixquiac,tequixquiac,2013/MEX_2013_tequixquiac.json,hardcoded_codigo_financiero
+2013,097,Texcaltitlán,texcaltitlan,2013/MEX_2013_texcaltitlan.json,hardcoded_codigo_financiero
+2013,098,Texcalyacac,texcalyacac,2013/MEX_2013_texcalyacac.json,hardcoded_codigo_financiero
+2013,099,Texcoco,texcoco,2013/MEX_2013_texcoco.json,hardcoded_codigo_financiero
+2013,100,Tezoyuca,tezoyuca,2013/MEX_2013_tezoyuca.json,hardcoded_codigo_financiero
+2013,101,Tianguistenco,tianguistenco,2013/MEX_2013_tianguistenco.json,hardcoded_codigo_financiero
+2013,102,Timilpan,timilpan,2013/MEX_2013_timilpan.json,hardcoded_codigo_financiero
+2013,103,Tlalmanalco,tlalmanalco,2013/MEX_2013_tlalmanalco.json,hardcoded_codigo_financiero
+2013,104,Tlalnepantla de Baz,tlalnepantla,2013/MEX_2013_tlalnepantla.json,hardcoded_codigo_financiero
+2013,105,Tlatlaya,tlatlaya,2013/MEX_2013_tlatlaya.json,hardcoded_codigo_financiero
+2013,106,Toluca,toluca,2013/MEX_2013_toluca.json,hardcoded_codigo_financiero
+2013,107,Tonatico,tonatico,2013/MEX_2013_tonatico.json,hardcoded_codigo_financiero
+2013,108,Tultepec,tultepec,2013/MEX_2013_tultepec.json,hardcoded_codigo_financiero
+2013,109,Tultitlán,tultitlan,2013/MEX_2013_tultitlan.json,hardcoded_codigo_financiero
+2013,110,Valle de Bravo,valle_de_bravo,2013/MEX_2013_valle_de_bravo.json,hardcoded_codigo_financiero
+2013,111,Villa de Allende,villa_de_allende,2013/MEX_2013_villa_de_allende.json,hardcoded_codigo_financiero
+2013,112,Villa del Carbón,villa_del_carbon,2013/MEX_2013_villa_del_carbon.json,hardcoded_codigo_financiero
+2013,113,Villa Guerrero,villa_guerrero,2013/MEX_2013_villa_guerrero.json,hardcoded_codigo_financiero
+2013,114,Villa Victoria,villa_victoria,2013/MEX_2013_villa_victoria.json,hardcoded_codigo_financiero
+2013,115,Xonacatlán,xonacatlan,2013/MEX_2013_xonacatlan.json,hardcoded_codigo_financiero
+2013,116,Zacazonapan,zacazonapan,2013/MEX_2013_zacazonapan.json,hardcoded_codigo_financiero
+2013,117,Zacualpan,zacualpan,2013/MEX_2013_zacualpan.json,hardcoded_codigo_financiero
+2013,118,Zinacantepec,zinacantepec,2013/MEX_2013_zinacantepec.json,hardcoded_codigo_financiero
+2013,119,Zumpahuacán,zumpahuacan,2013/MEX_2013_zumpahuacan.json,hardcoded_codigo_financiero
+2013,120,Zumpango,zumpango,2013/MEX_2013_zumpango.json,hardcoded_codigo_financiero
+2013,121,Cuautitlán Izcalli,cuautitlan_izcalli,2013/MEX_2013_cuautitlan_izcalli.json,hardcoded_codigo_financiero
+2013,122,Valle de Chalco Solidaridad,valle_de_chalco,2013/MEX_2013_valle_de_chalco.json,hardcoded_codigo_financiero
+2013,123,Luvianos,luvianos,2013/MEX_2013_luvianos.json,hardcoded_codigo_financiero
+2013,124,San José del Rincón,san_jose_del_rincon,2013/MEX_2013_san_jose_del_rincon.json,hardcoded_codigo_financiero
+2013,125,Tonanitla,tonanitla,2013/MEX_2013_tonanitla.json,hardcoded_codigo_financiero
+2014,001,Acambay de Ruíz Castañeda,acambay,2014/MEX_2014_acambay.json,hardcoded_codigo_financiero
+2014,002,Acolman,acolman,2014/MEX_2014_acolman.json,hardcoded_codigo_financiero
+2014,003,Aculco,aculco,2014/MEX_2014_aculco.json,hardcoded_codigo_financiero
+2014,004,Almoloya de Alquisiras,almoloya_de_alquisiras,2014/MEX_2014_almoloya_de_alquisiras.json,hardcoded_codigo_financiero
+2014,005,Almoloya de Juárez,almoloya_de_juarez,2014/MEX_2014_almoloya_de_juarez.json,hardcoded_codigo_financiero
+2014,006,Almoloya del Río,almoloya_del_rio,2014/MEX_2014_almoloya_del_rio.json,hardcoded_codigo_financiero
+2014,007,Amanalco,amanalco,2014/MEX_2014_amanalco.json,hardcoded_codigo_financiero
+2014,008,Amatepec,amatepec,2014/MEX_2014_amatepec.json,hardcoded_codigo_financiero
+2014,009,Amecameca,amecameca,2014/MEX_2014_amecameca.json,hardcoded_codigo_financiero
+2014,010,Apaxco,apaxco,2014/MEX_2014_apaxco.json,hardcoded_codigo_financiero
+2014,011,Atenco,atenco,2014/MEX_2014_atenco.json,hardcoded_codigo_financiero
+2014,012,Atizapán,atizapan,2014/MEX_2014_atizapan.json,hardcoded_codigo_financiero
+2014,013,Atizapán de Zaragoza,atizapan_de_zaragoza,2014/MEX_2014_atizapan_de_zaragoza.json,hardcoded_codigo_financiero
+2014,014,Atlacomulco,atlacomulco,2014/MEX_2014_atlacomulco.json,hardcoded_codigo_financiero
+2014,015,Atlautla,atlautla,2014/MEX_2014_atlautla.json,hardcoded_codigo_financiero
+2014,016,Axapusco,axapusco,2014/MEX_2014_axapusco.json,hardcoded_codigo_financiero
+2014,017,Ayapango,ayapango,2014/MEX_2014_ayapango.json,hardcoded_codigo_financiero
+2014,018,Calimaya,calimaya,2014/MEX_2014_calimaya.json,hardcoded_codigo_financiero
+2014,019,Capulhuac,capulhuac,2014/MEX_2014_capulhuac.json,hardcoded_codigo_financiero
+2014,020,Coacalco de Berriozábal,coacalco,2014/MEX_2014_coacalco.json,hardcoded_codigo_financiero
+2014,021,Coatepec Harinas,coatepec_harinas,2014/MEX_2014_coatepec_harinas.json,hardcoded_codigo_financiero
+2014,022,Cocotitlán,cocotitlan,2014/MEX_2014_cocotitlan.json,hardcoded_codigo_financiero
+2014,023,Coyotepec,coyotepec,2014/MEX_2014_coyotepec.json,hardcoded_codigo_financiero
+2014,024,Cuautitlán,cuautitlan,2014/MEX_2014_cuautitlan.json,hardcoded_codigo_financiero
+2014,025,Chalco,chalco,2014/MEX_2014_chalco.json,hardcoded_codigo_financiero
+2014,026,Chapa de Mota,chapa_de_mota,2014/MEX_2014_chapa_de_mota.json,hardcoded_codigo_financiero
+2014,027,Chapultepec,chapultepec,2014/MEX_2014_chapultepec.json,hardcoded_codigo_financiero
+2014,028,Chiautla,chiautla,2014/MEX_2014_chiautla.json,hardcoded_codigo_financiero
+2014,029,Chicoloapan,chicoloapan,2014/MEX_2014_chicoloapan.json,hardcoded_codigo_financiero
+2014,030,Chiconcuac,chiconcuac,2014/MEX_2014_chiconcuac.json,hardcoded_codigo_financiero
+2014,031,Chimalhuacán,chimalhuacan,2014/MEX_2014_chimalhuacan.json,hardcoded_codigo_financiero
+2014,032,Donato Guerra,donato_guerra,2014/MEX_2014_donato_guerra.json,hardcoded_codigo_financiero
+2014,033,Ecatepec de Morelos,ecatepec,2014/MEX_2014_ecatepec.json,hardcoded_codigo_financiero
+2014,034,Ecatzingo,ecatzingo,2014/MEX_2014_ecatzingo.json,hardcoded_codigo_financiero
+2014,035,Huehuetoca,huehuetoca,2014/MEX_2014_huehuetoca.json,hardcoded_codigo_financiero
+2014,036,Hueypoxtla,hueypoxtla,2014/MEX_2014_hueypoxtla.json,hardcoded_codigo_financiero
+2014,037,Huixquilucan,huixquilucan,2014/MEX_2014_huixquilucan.json,hardcoded_codigo_financiero
+2014,038,Isidro Fabela,isidro_fabela,2014/MEX_2014_isidro_fabela.json,hardcoded_codigo_financiero
+2014,039,Ixtapaluca,ixtapaluca,2014/MEX_2014_ixtapaluca.json,hardcoded_codigo_financiero
+2014,040,Ixtapan de la Sal,ixtapan_de_la_sal,2014/MEX_2014_ixtapan_de_la_sal.json,hardcoded_codigo_financiero
+2014,041,Ixtapan del Oro,ixtapan_del_oro,2014/MEX_2014_ixtapan_del_oro.json,hardcoded_codigo_financiero
+2014,042,Ixtlahuaca,ixtlahuaca,2014/MEX_2014_ixtlahuaca.json,hardcoded_codigo_financiero
+2014,043,Xalatlaco,xalatlaco,2014/MEX_2014_xalatlaco.json,hardcoded_codigo_financiero
+2014,044,Jaltenco,jaltenco,2014/MEX_2014_jaltenco.json,hardcoded_codigo_financiero
+2014,045,Jilotepec,jilotepec,2014/MEX_2014_jilotepec.json,hardcoded_codigo_financiero
+2014,046,Jilotzingo,jilotzingo,2014/MEX_2014_jilotzingo.json,hardcoded_codigo_financiero
+2014,047,Jiquipilco,jiquipilco,2014/MEX_2014_jiquipilco.json,hardcoded_codigo_financiero
+2014,048,Jocotitlán,jocotitlan,2014/MEX_2014_jocotitlan.json,hardcoded_codigo_financiero
+2014,049,Joquicingo,joquicingo,2014/MEX_2014_joquicingo.json,hardcoded_codigo_financiero
+2014,050,Juchitepec,juchitepec,2014/MEX_2014_juchitepec.json,hardcoded_codigo_financiero
+2014,051,Lerma,lerma,2014/MEX_2014_lerma.json,hardcoded_codigo_financiero
+2014,052,Malinalco,malinalco,2014/MEX_2014_malinalco.json,hardcoded_codigo_financiero
+2014,053,Melchor Ocampo,melchor_ocampo,2014/MEX_2014_melchor_ocampo.json,hardcoded_codigo_financiero
+2014,054,Metepec,metepec,2014/MEX_2014_metepec.json,hardcoded_codigo_financiero
+2014,055,Mexicaltzingo,mexicaltzingo,2014/MEX_2014_mexicaltzingo.json,hardcoded_codigo_financiero
+2014,056,Morelos,morelos,2014/MEX_2014_morelos.json,hardcoded_codigo_financiero
+2014,057,Naucalpan de Juárez,naucalpan,2014/MEX_2014_naucalpan.json,hardcoded_codigo_financiero
+2014,058,Nezahualcóyotl,nezahualcoyotl,2014/MEX_2014_nezahualcoyotl.json,hardcoded_codigo_financiero
+2014,059,Nextlalpan,nextlalpan,2014/MEX_2014_nextlalpan.json,hardcoded_codigo_financiero
+2014,060,Nicolás Romero,nicolas_romero,2014/MEX_2014_nicolas_romero.json,hardcoded_codigo_financiero
+2014,061,Nopaltepec,nopaltepec,2014/MEX_2014_nopaltepec.json,hardcoded_codigo_financiero
+2014,062,Ocoyoacac,ocoyoacac,2014/MEX_2014_ocoyoacac.json,hardcoded_codigo_financiero
+2014,063,Ocuilan,ocuilan,2014/MEX_2014_ocuilan.json,hardcoded_codigo_financiero
+2014,064,El Oro,el_oro,2014/MEX_2014_el_oro.json,hardcoded_codigo_financiero
+2014,065,Otumba,otumba,2014/MEX_2014_otumba.json,hardcoded_codigo_financiero
+2014,066,Otzoloapan,otzoloapan,2014/MEX_2014_otzoloapan.json,hardcoded_codigo_financiero
+2014,067,Otzolotepec,otzolotepec,2014/MEX_2014_otzolotepec.json,hardcoded_codigo_financiero
+2014,068,Ozumba,ozumba,2014/MEX_2014_ozumba.json,hardcoded_codigo_financiero
+2014,069,Papalotla,papalotla,2014/MEX_2014_papalotla.json,hardcoded_codigo_financiero
+2014,070,La Paz,la_paz,2014/MEX_2014_la_paz.json,hardcoded_codigo_financiero
+2014,071,Polotitlán,polotitlan,2014/MEX_2014_polotitlan.json,hardcoded_codigo_financiero
+2014,072,Rayón,rayon,2014/MEX_2014_rayon.json,hardcoded_codigo_financiero
+2014,073,San Antonio la Isla,san_antonio_la_isla,2014/MEX_2014_san_antonio_la_isla.json,hardcoded_codigo_financiero
+2014,074,San Felipe del Progreso,san_felipe_del_progreso,2014/MEX_2014_san_felipe_del_progreso.json,hardcoded_codigo_financiero
+2014,075,San Martín de las Pirámides,san_martin_de_las_piramides,2014/MEX_2014_san_martin_de_las_piramides.json,hardcoded_codigo_financiero
+2014,076,San Mateo Atenco,san_mateo_atenco,2014/MEX_2014_san_mateo_atenco.json,hardcoded_codigo_financiero
+2014,077,San Simón de Guerrero,san_simon_de_guerrero,2014/MEX_2014_san_simon_de_guerrero.json,hardcoded_codigo_financiero
+2014,078,Santo Tomás,santo_tomas,2014/MEX_2014_santo_tomas.json,hardcoded_codigo_financiero
+2014,079,Soyaniquilpan de Juárez,soyaniquilpan,2014/MEX_2014_soyaniquilpan.json,hardcoded_codigo_financiero
+2014,080,Sultepec,sultepec,2014/MEX_2014_sultepec.json,hardcoded_codigo_financiero
+2014,081,Tecámac,tecamac,2014/MEX_2014_tecamac.json,hardcoded_codigo_financiero
+2014,082,Tejupilco,tejupilco,2014/MEX_2014_tejupilco.json,hardcoded_codigo_financiero
+2014,083,Temamatla,temamatla,2014/MEX_2014_temamatla.json,hardcoded_codigo_financiero
+2014,084,Temascalapa,temascalapa,2014/MEX_2014_temascalapa.json,hardcoded_codigo_financiero
+2014,085,Temascalcingo,temascalcingo,2014/MEX_2014_temascalcingo.json,hardcoded_codigo_financiero
+2014,086,Temascaltepec,temascaltepec,2014/MEX_2014_temascaltepec.json,hardcoded_codigo_financiero
+2014,087,Temoaya,temoaya,2014/MEX_2014_temoaya.json,hardcoded_codigo_financiero
+2014,088,Tenancingo,tenancingo,2014/MEX_2014_tenancingo.json,hardcoded_codigo_financiero
+2014,089,Tenango del Aire,tenango_del_aire,2014/MEX_2014_tenango_del_aire.json,hardcoded_codigo_financiero
+2014,090,Tenango del Valle,tenango_del_valle,2014/MEX_2014_tenango_del_valle.json,hardcoded_codigo_financiero
+2014,091,Teoloyucan,teoloyucan,2014/MEX_2014_teoloyucan.json,hardcoded_codigo_financiero
+2014,092,Teotihuacán,teotihuacan,2014/MEX_2014_teotihuacan.json,hardcoded_codigo_financiero
+2014,093,Tepetlaoxtoc,tepetlaoxtoc,2014/MEX_2014_tepetlaoxtoc.json,hardcoded_codigo_financiero
+2014,094,Tepetlixpa,tepetlixpa,2014/MEX_2014_tepetlixpa.json,hardcoded_codigo_financiero
+2014,095,Tepotzotlán,tepotzotlan,2014/MEX_2014_tepotzotlan.json,hardcoded_codigo_financiero
+2014,096,Tequixquiac,tequixquiac,2014/MEX_2014_tequixquiac.json,hardcoded_codigo_financiero
+2014,097,Texcaltitlán,texcaltitlan,2014/MEX_2014_texcaltitlan.json,hardcoded_codigo_financiero
+2014,098,Texcalyacac,texcalyacac,2014/MEX_2014_texcalyacac.json,hardcoded_codigo_financiero
+2014,099,Texcoco,texcoco,2014/MEX_2014_texcoco.json,hardcoded_codigo_financiero
+2014,100,Tezoyuca,tezoyuca,2014/MEX_2014_tezoyuca.json,hardcoded_codigo_financiero
+2014,101,Tianguistenco,tianguistenco,2014/MEX_2014_tianguistenco.json,hardcoded_codigo_financiero
+2014,102,Timilpan,timilpan,2014/MEX_2014_timilpan.json,hardcoded_codigo_financiero
+2014,103,Tlalmanalco,tlalmanalco,2014/MEX_2014_tlalmanalco.json,hardcoded_codigo_financiero
+2014,104,Tlalnepantla de Baz,tlalnepantla,2014/MEX_2014_tlalnepantla.json,hardcoded_codigo_financiero
+2014,105,Tlatlaya,tlatlaya,2014/MEX_2014_tlatlaya.json,hardcoded_codigo_financiero
+2014,106,Toluca,toluca,2014/MEX_2014_toluca.json,hardcoded_codigo_financiero
+2014,107,Tonatico,tonatico,2014/MEX_2014_tonatico.json,hardcoded_codigo_financiero
+2014,108,Tultepec,tultepec,2014/MEX_2014_tultepec.json,hardcoded_codigo_financiero
+2014,109,Tultitlán,tultitlan,2014/MEX_2014_tultitlan.json,hardcoded_codigo_financiero
+2014,110,Valle de Bravo,valle_de_bravo,2014/MEX_2014_valle_de_bravo.json,hardcoded_codigo_financiero
+2014,111,Villa de Allende,villa_de_allende,2014/MEX_2014_villa_de_allende.json,hardcoded_codigo_financiero
+2014,112,Villa del Carbón,villa_del_carbon,2014/MEX_2014_villa_del_carbon.json,hardcoded_codigo_financiero
+2014,113,Villa Guerrero,villa_guerrero,2014/MEX_2014_villa_guerrero.json,hardcoded_codigo_financiero
+2014,114,Villa Victoria,villa_victoria,2014/MEX_2014_villa_victoria.json,hardcoded_codigo_financiero
+2014,115,Xonacatlán,xonacatlan,2014/MEX_2014_xonacatlan.json,hardcoded_codigo_financiero
+2014,116,Zacazonapan,zacazonapan,2014/MEX_2014_zacazonapan.json,hardcoded_codigo_financiero
+2014,117,Zacualpan,zacualpan,2014/MEX_2014_zacualpan.json,hardcoded_codigo_financiero
+2014,118,Zinacantepec,zinacantepec,2014/MEX_2014_zinacantepec.json,hardcoded_codigo_financiero
+2014,119,Zumpahuacán,zumpahuacan,2014/MEX_2014_zumpahuacan.json,hardcoded_codigo_financiero
+2014,120,Zumpango,zumpango,2014/MEX_2014_zumpango.json,hardcoded_codigo_financiero
+2014,121,Cuautitlán Izcalli,cuautitlan_izcalli,2014/MEX_2014_cuautitlan_izcalli.json,hardcoded_codigo_financiero
+2014,122,Valle de Chalco Solidaridad,valle_de_chalco,2014/MEX_2014_valle_de_chalco.json,hardcoded_codigo_financiero
+2014,123,Luvianos,luvianos,2014/MEX_2014_luvianos.json,hardcoded_codigo_financiero
+2014,124,San José del Rincón,san_jose_del_rincon,2014/MEX_2014_san_jose_del_rincon.json,hardcoded_codigo_financiero
+2014,125,Tonanitla,tonanitla,2014/MEX_2014_tonanitla.json,hardcoded_codigo_financiero
+2015,001,Acambay de Ruíz Castañeda,acambay,2015/MEX_2015_acambay.json,hardcoded_codigo_financiero
+2015,002,Acolman,acolman,2015/MEX_2015_acolman.json,hardcoded_codigo_financiero
+2015,003,Aculco,aculco,2015/MEX_2015_aculco.json,hardcoded_codigo_financiero
+2015,004,Almoloya de Alquisiras,almoloya_de_alquisiras,2015/MEX_2015_almoloya_de_alquisiras.json,hardcoded_codigo_financiero
+2015,005,Almoloya de Juárez,almoloya_de_juarez,2015/MEX_2015_almoloya_de_juarez.json,hardcoded_codigo_financiero
+2015,006,Almoloya del Río,almoloya_del_rio,2015/MEX_2015_almoloya_del_rio.json,hardcoded_codigo_financiero
+2015,007,Amanalco,amanalco,2015/MEX_2015_amanalco.json,hardcoded_codigo_financiero
+2015,008,Amatepec,amatepec,2015/MEX_2015_amatepec.json,hardcoded_codigo_financiero
+2015,009,Amecameca,amecameca,2015/MEX_2015_amecameca.json,hardcoded_codigo_financiero
+2015,010,Apaxco,apaxco,2015/MEX_2015_apaxco.json,hardcoded_codigo_financiero
+2015,011,Atenco,atenco,2015/MEX_2015_atenco.json,hardcoded_codigo_financiero
+2015,012,Atizapán,atizapan,2015/MEX_2015_atizapan.json,hardcoded_codigo_financiero
+2015,013,Atizapán de Zaragoza,atizapan_de_zaragoza,2015/MEX_2015_atizapan_de_zaragoza.json,hardcoded_codigo_financiero
+2015,014,Atlacomulco,atlacomulco,2015/MEX_2015_atlacomulco.json,hardcoded_codigo_financiero
+2015,015,Atlautla,atlautla,2015/MEX_2015_atlautla.json,hardcoded_codigo_financiero
+2015,016,Axapusco,axapusco,2015/MEX_2015_axapusco.json,hardcoded_codigo_financiero
+2015,017,Ayapango,ayapango,2015/MEX_2015_ayapango.json,hardcoded_codigo_financiero
+2015,018,Calimaya,calimaya,2015/MEX_2015_calimaya.json,hardcoded_codigo_financiero
+2015,019,Capulhuac,capulhuac,2015/MEX_2015_capulhuac.json,hardcoded_codigo_financiero
+2015,020,Coacalco de Berriozábal,coacalco,2015/MEX_2015_coacalco.json,hardcoded_codigo_financiero
+2015,021,Coatepec Harinas,coatepec_harinas,2015/MEX_2015_coatepec_harinas.json,hardcoded_codigo_financiero
+2015,022,Cocotitlán,cocotitlan,2015/MEX_2015_cocotitlan.json,hardcoded_codigo_financiero
+2015,023,Coyotepec,coyotepec,2015/MEX_2015_coyotepec.json,hardcoded_codigo_financiero
+2015,024,Cuautitlán,cuautitlan,2015/MEX_2015_cuautitlan.json,hardcoded_codigo_financiero
+2015,025,Chalco,chalco,2015/MEX_2015_chalco.json,hardcoded_codigo_financiero
+2015,026,Chapa de Mota,chapa_de_mota,2015/MEX_2015_chapa_de_mota.json,hardcoded_codigo_financiero
+2015,027,Chapultepec,chapultepec,2015/MEX_2015_chapultepec.json,hardcoded_codigo_financiero
+2015,028,Chiautla,chiautla,2015/MEX_2015_chiautla.json,hardcoded_codigo_financiero
+2015,029,Chicoloapan,chicoloapan,2015/MEX_2015_chicoloapan.json,hardcoded_codigo_financiero
+2015,030,Chiconcuac,chiconcuac,2015/MEX_2015_chiconcuac.json,hardcoded_codigo_financiero
+2015,031,Chimalhuacán,chimalhuacan,2015/MEX_2015_chimalhuacan.json,hardcoded_codigo_financiero
+2015,032,Donato Guerra,donato_guerra,2015/MEX_2015_donato_guerra.json,hardcoded_codigo_financiero
+2015,033,Ecatepec de Morelos,ecatepec,2015/MEX_2015_ecatepec.json,hardcoded_codigo_financiero
+2015,034,Ecatzingo,ecatzingo,2015/MEX_2015_ecatzingo.json,hardcoded_codigo_financiero
+2015,035,Huehuetoca,huehuetoca,2015/MEX_2015_huehuetoca.json,hardcoded_codigo_financiero
+2015,036,Hueypoxtla,hueypoxtla,2015/MEX_2015_hueypoxtla.json,hardcoded_codigo_financiero
+2015,037,Huixquilucan,huixquilucan,2015/MEX_2015_huixquilucan.json,hardcoded_codigo_financiero
+2015,038,Isidro Fabela,isidro_fabela,2015/MEX_2015_isidro_fabela.json,hardcoded_codigo_financiero
+2015,039,Ixtapaluca,ixtapaluca,2015/MEX_2015_ixtapaluca.json,hardcoded_codigo_financiero
+2015,040,Ixtapan de la Sal,ixtapan_de_la_sal,2015/MEX_2015_ixtapan_de_la_sal.json,hardcoded_codigo_financiero
+2015,041,Ixtapan del Oro,ixtapan_del_oro,2015/MEX_2015_ixtapan_del_oro.json,hardcoded_codigo_financiero
+2015,042,Ixtlahuaca,ixtlahuaca,2015/MEX_2015_ixtlahuaca.json,hardcoded_codigo_financiero
+2015,043,Xalatlaco,xalatlaco,2015/MEX_2015_xalatlaco.json,hardcoded_codigo_financiero
+2015,044,Jaltenco,jaltenco,2015/MEX_2015_jaltenco.json,hardcoded_codigo_financiero
+2015,045,Jilotepec,jilotepec,2015/MEX_2015_jilotepec.json,hardcoded_codigo_financiero
+2015,046,Jilotzingo,jilotzingo,2015/MEX_2015_jilotzingo.json,hardcoded_codigo_financiero
+2015,047,Jiquipilco,jiquipilco,2015/MEX_2015_jiquipilco.json,hardcoded_codigo_financiero
+2015,048,Jocotitlán,jocotitlan,2015/MEX_2015_jocotitlan.json,hardcoded_codigo_financiero
+2015,049,Joquicingo,joquicingo,2015/MEX_2015_joquicingo.json,hardcoded_codigo_financiero
+2015,050,Juchitepec,juchitepec,2015/MEX_2015_juchitepec.json,hardcoded_codigo_financiero
+2015,051,Lerma,lerma,2015/MEX_2015_lerma.json,hardcoded_codigo_financiero
+2015,052,Malinalco,malinalco,2015/MEX_2015_malinalco.json,hardcoded_codigo_financiero
+2015,053,Melchor Ocampo,melchor_ocampo,2015/MEX_2015_melchor_ocampo.json,hardcoded_codigo_financiero
+2015,054,Metepec,metepec,2015/MEX_2015_metepec.json,hardcoded_codigo_financiero
+2015,055,Mexicaltzingo,mexicaltzingo,2015/MEX_2015_mexicaltzingo.json,hardcoded_codigo_financiero
+2015,056,Morelos,morelos,2015/MEX_2015_morelos.json,hardcoded_codigo_financiero
+2015,057,Naucalpan de Juárez,naucalpan,2015/MEX_2015_naucalpan.json,hardcoded_codigo_financiero
+2015,058,Nezahualcóyotl,nezahualcoyotl,2015/MEX_2015_nezahualcoyotl.json,hardcoded_codigo_financiero
+2015,059,Nextlalpan,nextlalpan,2015/MEX_2015_nextlalpan.json,hardcoded_codigo_financiero
+2015,060,Nicolás Romero,nicolas_romero,2015/MEX_2015_nicolas_romero.json,hardcoded_codigo_financiero
+2015,061,Nopaltepec,nopaltepec,2015/MEX_2015_nopaltepec.json,hardcoded_codigo_financiero
+2015,062,Ocoyoacac,ocoyoacac,2015/MEX_2015_ocoyoacac.json,hardcoded_codigo_financiero
+2015,063,Ocuilan,ocuilan,2015/MEX_2015_ocuilan.json,hardcoded_codigo_financiero
+2015,064,El Oro,el_oro,2015/MEX_2015_el_oro.json,hardcoded_codigo_financiero
+2015,065,Otumba,otumba,2015/MEX_2015_otumba.json,hardcoded_codigo_financiero
+2015,066,Otzoloapan,otzoloapan,2015/MEX_2015_otzoloapan.json,hardcoded_codigo_financiero
+2015,067,Otzolotepec,otzolotepec,2015/MEX_2015_otzolotepec.json,hardcoded_codigo_financiero
+2015,068,Ozumba,ozumba,2015/MEX_2015_ozumba.json,hardcoded_codigo_financiero
+2015,069,Papalotla,papalotla,2015/MEX_2015_papalotla.json,hardcoded_codigo_financiero
+2015,070,La Paz,la_paz,2015/MEX_2015_la_paz.json,hardcoded_codigo_financiero
+2015,071,Polotitlán,polotitlan,2015/MEX_2015_polotitlan.json,hardcoded_codigo_financiero
+2015,072,Rayón,rayon,2015/MEX_2015_rayon.json,hardcoded_codigo_financiero
+2015,073,San Antonio la Isla,san_antonio_la_isla,2015/MEX_2015_san_antonio_la_isla.json,hardcoded_codigo_financiero
+2015,074,San Felipe del Progreso,san_felipe_del_progreso,2015/MEX_2015_san_felipe_del_progreso.json,hardcoded_codigo_financiero
+2015,075,San Martín de las Pirámides,san_martin_de_las_piramides,2015/MEX_2015_san_martin_de_las_piramides.json,hardcoded_codigo_financiero
+2015,076,San Mateo Atenco,san_mateo_atenco,2015/MEX_2015_san_mateo_atenco.json,hardcoded_codigo_financiero
+2015,077,San Simón de Guerrero,san_simon_de_guerrero,2015/MEX_2015_san_simon_de_guerrero.json,hardcoded_codigo_financiero
+2015,078,Santo Tomás,santo_tomas,2015/MEX_2015_santo_tomas.json,hardcoded_codigo_financiero
+2015,079,Soyaniquilpan de Juárez,soyaniquilpan,2015/MEX_2015_soyaniquilpan.json,hardcoded_codigo_financiero
+2015,080,Sultepec,sultepec,2015/MEX_2015_sultepec.json,hardcoded_codigo_financiero
+2015,081,Tecámac,tecamac,2015/MEX_2015_tecamac.json,hardcoded_codigo_financiero
+2015,082,Tejupilco,tejupilco,2015/MEX_2015_tejupilco.json,hardcoded_codigo_financiero
+2015,083,Temamatla,temamatla,2015/MEX_2015_temamatla.json,hardcoded_codigo_financiero
+2015,084,Temascalapa,temascalapa,2015/MEX_2015_temascalapa.json,hardcoded_codigo_financiero
+2015,085,Temascalcingo,temascalcingo,2015/MEX_2015_temascalcingo.json,hardcoded_codigo_financiero
+2015,086,Temascaltepec,temascaltepec,2015/MEX_2015_temascaltepec.json,hardcoded_codigo_financiero
+2015,087,Temoaya,temoaya,2015/MEX_2015_temoaya.json,hardcoded_codigo_financiero
+2015,088,Tenancingo,tenancingo,2015/MEX_2015_tenancingo.json,hardcoded_codigo_financiero
+2015,089,Tenango del Aire,tenango_del_aire,2015/MEX_2015_tenango_del_aire.json,hardcoded_codigo_financiero
+2015,090,Tenango del Valle,tenango_del_valle,2015/MEX_2015_tenango_del_valle.json,hardcoded_codigo_financiero
+2015,091,Teoloyucan,teoloyucan,2015/MEX_2015_teoloyucan.json,hardcoded_codigo_financiero
+2015,092,Teotihuacán,teotihuacan,2015/MEX_2015_teotihuacan.json,hardcoded_codigo_financiero
+2015,093,Tepetlaoxtoc,tepetlaoxtoc,2015/MEX_2015_tepetlaoxtoc.json,hardcoded_codigo_financiero
+2015,094,Tepetlixpa,tepetlixpa,2015/MEX_2015_tepetlixpa.json,hardcoded_codigo_financiero
+2015,095,Tepotzotlán,tepotzotlan,2015/MEX_2015_tepotzotlan.json,hardcoded_codigo_financiero
+2015,096,Tequixquiac,tequixquiac,2015/MEX_2015_tequixquiac.json,hardcoded_codigo_financiero
+2015,097,Texcaltitlán,texcaltitlan,2015/MEX_2015_texcaltitlan.json,hardcoded_codigo_financiero
+2015,098,Texcalyacac,texcalyacac,2015/MEX_2015_texcalyacac.json,hardcoded_codigo_financiero
+2015,099,Texcoco,texcoco,2015/MEX_2015_texcoco.json,hardcoded_codigo_financiero
+2015,100,Tezoyuca,tezoyuca,2015/MEX_2015_tezoyuca.json,hardcoded_codigo_financiero
+2015,101,Tianguistenco,tianguistenco,2015/MEX_2015_tianguistenco.json,hardcoded_codigo_financiero
+2015,102,Timilpan,timilpan,2015/MEX_2015_timilpan.json,hardcoded_codigo_financiero
+2015,103,Tlalmanalco,tlalmanalco,2015/MEX_2015_tlalmanalco.json,hardcoded_codigo_financiero
+2015,104,Tlalnepantla de Baz,tlalnepantla,2015/MEX_2015_tlalnepantla.json,hardcoded_codigo_financiero
+2015,105,Tlatlaya,tlatlaya,2015/MEX_2015_tlatlaya.json,hardcoded_codigo_financiero
+2015,106,Toluca,toluca,2015/MEX_2015_toluca.json,hardcoded_codigo_financiero
+2015,107,Tonatico,tonatico,2015/MEX_2015_tonatico.json,hardcoded_codigo_financiero
+2015,108,Tultepec,tultepec,2015/MEX_2015_tultepec.json,hardcoded_codigo_financiero
+2015,109,Tultitlán,tultitlan,2015/MEX_2015_tultitlan.json,hardcoded_codigo_financiero
+2015,110,Valle de Bravo,valle_de_bravo,2015/MEX_2015_valle_de_bravo.json,hardcoded_codigo_financiero
+2015,111,Villa de Allende,villa_de_allende,2015/MEX_2015_villa_de_allende.json,hardcoded_codigo_financiero
+2015,112,Villa del Carbón,villa_del_carbon,2015/MEX_2015_villa_del_carbon.json,hardcoded_codigo_financiero
+2015,113,Villa Guerrero,villa_guerrero,2015/MEX_2015_villa_guerrero.json,hardcoded_codigo_financiero
+2015,114,Villa Victoria,villa_victoria,2015/MEX_2015_villa_victoria.json,hardcoded_codigo_financiero
+2015,115,Xonacatlán,xonacatlan,2015/MEX_2015_xonacatlan.json,hardcoded_codigo_financiero
+2015,116,Zacazonapan,zacazonapan,2015/MEX_2015_zacazonapan.json,hardcoded_codigo_financiero
+2015,117,Zacualpan,zacualpan,2015/MEX_2015_zacualpan.json,hardcoded_codigo_financiero
+2015,118,Zinacantepec,zinacantepec,2015/MEX_2015_zinacantepec.json,hardcoded_codigo_financiero
+2015,119,Zumpahuacán,zumpahuacan,2015/MEX_2015_zumpahuacan.json,hardcoded_codigo_financiero
+2015,120,Zumpango,zumpango,2015/MEX_2015_zumpango.json,hardcoded_codigo_financiero
+2015,121,Cuautitlán Izcalli,cuautitlan_izcalli,2015/MEX_2015_cuautitlan_izcalli.json,hardcoded_codigo_financiero
+2015,122,Valle de Chalco Solidaridad,valle_de_chalco,2015/MEX_2015_valle_de_chalco.json,hardcoded_codigo_financiero
+2015,123,Luvianos,luvianos,2015/MEX_2015_luvianos.json,hardcoded_codigo_financiero
+2015,124,San José del Rincón,san_jose_del_rincon,2015/MEX_2015_san_jose_del_rincon.json,hardcoded_codigo_financiero
+2015,125,Tonanitla,tonanitla,2015/MEX_2015_tonanitla.json,hardcoded_codigo_financiero
+2016,001,Acambay de Ruíz Castañeda,acambay,2016/MEX_2016_acambay.json,hardcoded_codigo_financiero
+2016,002,Acolman,acolman,2016/MEX_2016_acolman.json,hardcoded_codigo_financiero
+2016,003,Aculco,aculco,2016/MEX_2016_aculco.json,hardcoded_codigo_financiero
+2016,004,Almoloya de Alquisiras,almoloya_de_alquisiras,2016/MEX_2016_almoloya_de_alquisiras.json,hardcoded_codigo_financiero
+2016,005,Almoloya de Juárez,almoloya_de_juarez,2016/MEX_2016_almoloya_de_juarez.json,hardcoded_codigo_financiero
+2016,006,Almoloya del Río,almoloya_del_rio,2016/MEX_2016_almoloya_del_rio.json,hardcoded_codigo_financiero
+2016,007,Amanalco,amanalco,2016/MEX_2016_amanalco.json,hardcoded_codigo_financiero
+2016,008,Amatepec,amatepec,2016/MEX_2016_amatepec.json,hardcoded_codigo_financiero
+2016,009,Amecameca,amecameca,2016/MEX_2016_amecameca.json,hardcoded_codigo_financiero
+2016,010,Apaxco,apaxco,2016/MEX_2016_apaxco.json,hardcoded_codigo_financiero
+2016,011,Atenco,atenco,2016/MEX_2016_atenco.json,hardcoded_codigo_financiero
+2016,012,Atizapán,atizapan,2016/MEX_2016_atizapan.json,hardcoded_codigo_financiero
+2016,013,Atizapán de Zaragoza,atizapan_de_zaragoza,2016/MEX_2016_atizapan_de_zaragoza.json,hardcoded_codigo_financiero
+2016,014,Atlacomulco,atlacomulco,2016/MEX_2016_atlacomulco.json,hardcoded_codigo_financiero
+2016,015,Atlautla,atlautla,2016/MEX_2016_atlautla.json,hardcoded_codigo_financiero
+2016,016,Axapusco,axapusco,2016/MEX_2016_axapusco.json,hardcoded_codigo_financiero
+2016,017,Ayapango,ayapango,2016/MEX_2016_ayapango.json,hardcoded_codigo_financiero
+2016,018,Calimaya,calimaya,2016/MEX_2016_calimaya.json,hardcoded_codigo_financiero
+2016,019,Capulhuac,capulhuac,2016/MEX_2016_capulhuac.json,hardcoded_codigo_financiero
+2016,020,Coacalco de Berriozábal,coacalco,2016/MEX_2016_coacalco.json,hardcoded_codigo_financiero
+2016,021,Coatepec Harinas,coatepec_harinas,2016/MEX_2016_coatepec_harinas.json,hardcoded_codigo_financiero
+2016,022,Cocotitlán,cocotitlan,2016/MEX_2016_cocotitlan.json,hardcoded_codigo_financiero
+2016,023,Coyotepec,coyotepec,2016/MEX_2016_coyotepec.json,hardcoded_codigo_financiero
+2016,024,Cuautitlán,cuautitlan,2016/MEX_2016_cuautitlan.json,hardcoded_codigo_financiero
+2016,025,Chalco,chalco,2016/MEX_2016_chalco.json,hardcoded_codigo_financiero
+2016,026,Chapa de Mota,chapa_de_mota,2016/MEX_2016_chapa_de_mota.json,hardcoded_codigo_financiero
+2016,027,Chapultepec,chapultepec,2016/MEX_2016_chapultepec.json,hardcoded_codigo_financiero
+2016,028,Chiautla,chiautla,2016/MEX_2016_chiautla.json,hardcoded_codigo_financiero
+2016,029,Chicoloapan,chicoloapan,2016/MEX_2016_chicoloapan.json,hardcoded_codigo_financiero
+2016,030,Chiconcuac,chiconcuac,2016/MEX_2016_chiconcuac.json,hardcoded_codigo_financiero
+2016,031,Chimalhuacán,chimalhuacan,2016/MEX_2016_chimalhuacan.json,hardcoded_codigo_financiero
+2016,032,Donato Guerra,donato_guerra,2016/MEX_2016_donato_guerra.json,hardcoded_codigo_financiero
+2016,033,Ecatepec de Morelos,ecatepec,2016/MEX_2016_ecatepec.json,hardcoded_codigo_financiero
+2016,034,Ecatzingo,ecatzingo,2016/MEX_2016_ecatzingo.json,hardcoded_codigo_financiero
+2016,035,Huehuetoca,huehuetoca,2016/MEX_2016_huehuetoca.json,hardcoded_codigo_financiero
+2016,036,Hueypoxtla,hueypoxtla,2016/MEX_2016_hueypoxtla.json,hardcoded_codigo_financiero
+2016,037,Huixquilucan,huixquilucan,2016/MEX_2016_huixquilucan.json,hardcoded_codigo_financiero
+2016,038,Isidro Fabela,isidro_fabela,2016/MEX_2016_isidro_fabela.json,hardcoded_codigo_financiero
+2016,039,Ixtapaluca,ixtapaluca,2016/MEX_2016_ixtapaluca.json,hardcoded_codigo_financiero
+2016,040,Ixtapan de la Sal,ixtapan_de_la_sal,2016/MEX_2016_ixtapan_de_la_sal.json,hardcoded_codigo_financiero
+2016,041,Ixtapan del Oro,ixtapan_del_oro,2016/MEX_2016_ixtapan_del_oro.json,hardcoded_codigo_financiero
+2016,042,Ixtlahuaca,ixtlahuaca,2016/MEX_2016_ixtlahuaca.json,hardcoded_codigo_financiero
+2016,043,Xalatlaco,xalatlaco,2016/MEX_2016_xalatlaco.json,hardcoded_codigo_financiero
+2016,044,Jaltenco,jaltenco,2016/MEX_2016_jaltenco.json,hardcoded_codigo_financiero
+2016,045,Jilotepec,jilotepec,2016/MEX_2016_jilotepec.json,hardcoded_codigo_financiero
+2016,046,Jilotzingo,jilotzingo,2016/MEX_2016_jilotzingo.json,hardcoded_codigo_financiero
+2016,047,Jiquipilco,jiquipilco,2016/MEX_2016_jiquipilco.json,hardcoded_codigo_financiero
+2016,048,Jocotitlán,jocotitlan,2016/MEX_2016_jocotitlan.json,hardcoded_codigo_financiero
+2016,049,Joquicingo,joquicingo,2016/MEX_2016_joquicingo.json,hardcoded_codigo_financiero
+2016,050,Juchitepec,juchitepec,2016/MEX_2016_juchitepec.json,hardcoded_codigo_financiero
+2016,051,Lerma,lerma,2016/MEX_2016_lerma.json,hardcoded_codigo_financiero
+2016,052,Malinalco,malinalco,2016/MEX_2016_malinalco.json,hardcoded_codigo_financiero
+2016,053,Melchor Ocampo,melchor_ocampo,2016/MEX_2016_melchor_ocampo.json,hardcoded_codigo_financiero
+2016,054,Metepec,metepec,2016/MEX_2016_metepec.json,hardcoded_codigo_financiero
+2016,055,Mexicaltzingo,mexicaltzingo,2016/MEX_2016_mexicaltzingo.json,hardcoded_codigo_financiero
+2016,056,Morelos,morelos,2016/MEX_2016_morelos.json,hardcoded_codigo_financiero
+2016,057,Naucalpan de Juárez,naucalpan,2016/MEX_2016_naucalpan.json,hardcoded_codigo_financiero
+2016,058,Nezahualcóyotl,nezahualcoyotl,2016/MEX_2016_nezahualcoyotl.json,hardcoded_codigo_financiero
+2016,059,Nextlalpan,nextlalpan,2016/MEX_2016_nextlalpan.json,hardcoded_codigo_financiero
+2016,060,Nicolás Romero,nicolas_romero,2016/MEX_2016_nicolas_romero.json,hardcoded_codigo_financiero
+2016,061,Nopaltepec,nopaltepec,2016/MEX_2016_nopaltepec.json,hardcoded_codigo_financiero
+2016,062,Ocoyoacac,ocoyoacac,2016/MEX_2016_ocoyoacac.json,hardcoded_codigo_financiero
+2016,063,Ocuilan,ocuilan,2016/MEX_2016_ocuilan.json,hardcoded_codigo_financiero
+2016,064,El Oro,el_oro,2016/MEX_2016_el_oro.json,hardcoded_codigo_financiero
+2016,065,Otumba,otumba,2016/MEX_2016_otumba.json,hardcoded_codigo_financiero
+2016,066,Otzoloapan,otzoloapan,2016/MEX_2016_otzoloapan.json,hardcoded_codigo_financiero
+2016,067,Otzolotepec,otzolotepec,2016/MEX_2016_otzolotepec.json,hardcoded_codigo_financiero
+2016,068,Ozumba,ozumba,2016/MEX_2016_ozumba.json,hardcoded_codigo_financiero
+2016,069,Papalotla,papalotla,2016/MEX_2016_papalotla.json,hardcoded_codigo_financiero
+2016,070,La Paz,la_paz,2016/MEX_2016_la_paz.json,hardcoded_codigo_financiero
+2016,071,Polotitlán,polotitlan,2016/MEX_2016_polotitlan.json,hardcoded_codigo_financiero
+2016,072,Rayón,rayon,2016/MEX_2016_rayon.json,hardcoded_codigo_financiero
+2016,073,San Antonio la Isla,san_antonio_la_isla,2016/MEX_2016_san_antonio_la_isla.json,hardcoded_codigo_financiero
+2016,074,San Felipe del Progreso,san_felipe_del_progreso,2016/MEX_2016_san_felipe_del_progreso.json,hardcoded_codigo_financiero
+2016,075,San Martín de las Pirámides,san_martin_de_las_piramides,2016/MEX_2016_san_martin_de_las_piramides.json,hardcoded_codigo_financiero
+2016,076,San Mateo Atenco,san_mateo_atenco,2016/MEX_2016_san_mateo_atenco.json,hardcoded_codigo_financiero
+2016,077,San Simón de Guerrero,san_simon_de_guerrero,2016/MEX_2016_san_simon_de_guerrero.json,hardcoded_codigo_financiero
+2016,078,Santo Tomás,santo_tomas,2016/MEX_2016_santo_tomas.json,hardcoded_codigo_financiero
+2016,079,Soyaniquilpan de Juárez,soyaniquilpan,2016/MEX_2016_soyaniquilpan.json,hardcoded_codigo_financiero
+2016,080,Sultepec,sultepec,2016/MEX_2016_sultepec.json,hardcoded_codigo_financiero
+2016,081,Tecámac,tecamac,2016/MEX_2016_tecamac.json,hardcoded_codigo_financiero
+2016,082,Tejupilco,tejupilco,2016/MEX_2016_tejupilco.json,hardcoded_codigo_financiero
+2016,083,Temamatla,temamatla,2016/MEX_2016_temamatla.json,hardcoded_codigo_financiero
+2016,084,Temascalapa,temascalapa,2016/MEX_2016_temascalapa.json,hardcoded_codigo_financiero
+2016,085,Temascalcingo,temascalcingo,2016/MEX_2016_temascalcingo.json,hardcoded_codigo_financiero
+2016,086,Temascaltepec,temascaltepec,2016/MEX_2016_temascaltepec.json,hardcoded_codigo_financiero
+2016,087,Temoaya,temoaya,2016/MEX_2016_temoaya.json,hardcoded_codigo_financiero
+2016,088,Tenancingo,tenancingo,2016/MEX_2016_tenancingo.json,hardcoded_codigo_financiero
+2016,089,Tenango del Aire,tenango_del_aire,2016/MEX_2016_tenango_del_aire.json,hardcoded_codigo_financiero
+2016,090,Tenango del Valle,tenango_del_valle,2016/MEX_2016_tenango_del_valle.json,hardcoded_codigo_financiero
+2016,091,Teoloyucan,teoloyucan,2016/MEX_2016_teoloyucan.json,hardcoded_codigo_financiero
+2016,092,Teotihuacán,teotihuacan,2016/MEX_2016_teotihuacan.json,hardcoded_codigo_financiero
+2016,093,Tepetlaoxtoc,tepetlaoxtoc,2016/MEX_2016_tepetlaoxtoc.json,hardcoded_codigo_financiero
+2016,094,Tepetlixpa,tepetlixpa,2016/MEX_2016_tepetlixpa.json,hardcoded_codigo_financiero
+2016,095,Tepotzotlán,tepotzotlan,2016/MEX_2016_tepotzotlan.json,hardcoded_codigo_financiero
+2016,096,Tequixquiac,tequixquiac,2016/MEX_2016_tequixquiac.json,hardcoded_codigo_financiero
+2016,097,Texcaltitlán,texcaltitlan,2016/MEX_2016_texcaltitlan.json,hardcoded_codigo_financiero
+2016,098,Texcalyacac,texcalyacac,2016/MEX_2016_texcalyacac.json,hardcoded_codigo_financiero
+2016,099,Texcoco,texcoco,2016/MEX_2016_texcoco.json,hardcoded_codigo_financiero
+2016,100,Tezoyuca,tezoyuca,2016/MEX_2016_tezoyuca.json,hardcoded_codigo_financiero
+2016,101,Tianguistenco,tianguistenco,2016/MEX_2016_tianguistenco.json,hardcoded_codigo_financiero
+2016,102,Timilpan,timilpan,2016/MEX_2016_timilpan.json,hardcoded_codigo_financiero
+2016,103,Tlalmanalco,tlalmanalco,2016/MEX_2016_tlalmanalco.json,hardcoded_codigo_financiero
+2016,104,Tlalnepantla de Baz,tlalnepantla,2016/MEX_2016_tlalnepantla.json,hardcoded_codigo_financiero
+2016,105,Tlatlaya,tlatlaya,2016/MEX_2016_tlatlaya.json,hardcoded_codigo_financiero
+2016,106,Toluca,toluca,2016/MEX_2016_toluca.json,hardcoded_codigo_financiero
+2016,107,Tonatico,tonatico,2016/MEX_2016_tonatico.json,hardcoded_codigo_financiero
+2016,108,Tultepec,tultepec,2016/MEX_2016_tultepec.json,hardcoded_codigo_financiero
+2016,109,Tultitlán,tultitlan,2016/MEX_2016_tultitlan.json,hardcoded_codigo_financiero
+2016,110,Valle de Bravo,valle_de_bravo,2016/MEX_2016_valle_de_bravo.json,hardcoded_codigo_financiero
+2016,111,Villa de Allende,villa_de_allende,2016/MEX_2016_villa_de_allende.json,hardcoded_codigo_financiero
+2016,112,Villa del Carbón,villa_del_carbon,2016/MEX_2016_villa_del_carbon.json,hardcoded_codigo_financiero
+2016,113,Villa Guerrero,villa_guerrero,2016/MEX_2016_villa_guerrero.json,hardcoded_codigo_financiero
+2016,114,Villa Victoria,villa_victoria,2016/MEX_2016_villa_victoria.json,hardcoded_codigo_financiero
+2016,115,Xonacatlán,xonacatlan,2016/MEX_2016_xonacatlan.json,hardcoded_codigo_financiero
+2016,116,Zacazonapan,zacazonapan,2016/MEX_2016_zacazonapan.json,hardcoded_codigo_financiero
+2016,117,Zacualpan,zacualpan,2016/MEX_2016_zacualpan.json,hardcoded_codigo_financiero
+2016,118,Zinacantepec,zinacantepec,2016/MEX_2016_zinacantepec.json,hardcoded_codigo_financiero
+2016,119,Zumpahuacán,zumpahuacan,2016/MEX_2016_zumpahuacan.json,hardcoded_codigo_financiero
+2016,120,Zumpango,zumpango,2016/MEX_2016_zumpango.json,hardcoded_codigo_financiero
+2016,121,Cuautitlán Izcalli,cuautitlan_izcalli,2016/MEX_2016_cuautitlan_izcalli.json,hardcoded_codigo_financiero
+2016,122,Valle de Chalco Solidaridad,valle_de_chalco,2016/MEX_2016_valle_de_chalco.json,hardcoded_codigo_financiero
+2016,123,Luvianos,luvianos,2016/MEX_2016_luvianos.json,hardcoded_codigo_financiero
+2016,124,San José del Rincón,san_jose_del_rincon,2016/MEX_2016_san_jose_del_rincon.json,hardcoded_codigo_financiero
+2016,125,Tonanitla,tonanitla,2016/MEX_2016_tonanitla.json,hardcoded_codigo_financiero
+2017,001,Acambay de Ruíz Castañeda,acambay,2017/MEX_2017_acambay.json,hardcoded_codigo_financiero
+2017,002,Acolman,acolman,2017/MEX_2017_acolman.json,hardcoded_codigo_financiero
+2017,003,Aculco,aculco,2017/MEX_2017_aculco.json,hardcoded_codigo_financiero
+2017,004,Almoloya de Alquisiras,almoloya_de_alquisiras,2017/MEX_2017_almoloya_de_alquisiras.json,hardcoded_codigo_financiero
+2017,005,Almoloya de Juárez,almoloya_de_juarez,2017/MEX_2017_almoloya_de_juarez.json,hardcoded_codigo_financiero
+2017,006,Almoloya del Río,almoloya_del_rio,2017/MEX_2017_almoloya_del_rio.json,hardcoded_codigo_financiero
+2017,007,Amanalco,amanalco,2017/MEX_2017_amanalco.json,hardcoded_codigo_financiero
+2017,008,Amatepec,amatepec,2017/MEX_2017_amatepec.json,hardcoded_codigo_financiero
+2017,009,Amecameca,amecameca,2017/MEX_2017_amecameca.json,hardcoded_codigo_financiero
+2017,010,Apaxco,apaxco,2017/MEX_2017_apaxco.json,hardcoded_codigo_financiero
+2017,011,Atenco,atenco,2017/MEX_2017_atenco.json,hardcoded_codigo_financiero
+2017,012,Atizapán,atizapan,2017/MEX_2017_atizapan.json,hardcoded_codigo_financiero
+2017,013,Atizapán de Zaragoza,atizapan_de_zaragoza,2017/MEX_2017_atizapan_de_zaragoza.json,hardcoded_codigo_financiero
+2017,014,Atlacomulco,atlacomulco,2017/MEX_2017_atlacomulco.json,hardcoded_codigo_financiero
+2017,015,Atlautla,atlautla,2017/MEX_2017_atlautla.json,hardcoded_codigo_financiero
+2017,016,Axapusco,axapusco,2017/MEX_2017_axapusco.json,hardcoded_codigo_financiero
+2017,017,Ayapango,ayapango,2017/MEX_2017_ayapango.json,hardcoded_codigo_financiero
+2017,018,Calimaya,calimaya,2017/MEX_2017_calimaya.json,hardcoded_codigo_financiero
+2017,019,Capulhuac,capulhuac,2017/MEX_2017_capulhuac.json,hardcoded_codigo_financiero
+2017,020,Coacalco de Berriozábal,coacalco,2017/MEX_2017_coacalco.json,hardcoded_codigo_financiero
+2017,021,Coatepec Harinas,coatepec_harinas,2017/MEX_2017_coatepec_harinas.json,hardcoded_codigo_financiero
+2017,022,Cocotitlán,cocotitlan,2017/MEX_2017_cocotitlan.json,hardcoded_codigo_financiero
+2017,023,Coyotepec,coyotepec,2017/MEX_2017_coyotepec.json,hardcoded_codigo_financiero
+2017,024,Cuautitlán,cuautitlan,2017/MEX_2017_cuautitlan.json,hardcoded_codigo_financiero
+2017,025,Chalco,chalco,2017/MEX_2017_chalco.json,hardcoded_codigo_financiero
+2017,026,Chapa de Mota,chapa_de_mota,2017/MEX_2017_chapa_de_mota.json,hardcoded_codigo_financiero
+2017,027,Chapultepec,chapultepec,2017/MEX_2017_chapultepec.json,hardcoded_codigo_financiero
+2017,028,Chiautla,chiautla,2017/MEX_2017_chiautla.json,hardcoded_codigo_financiero
+2017,029,Chicoloapan,chicoloapan,2017/MEX_2017_chicoloapan.json,hardcoded_codigo_financiero
+2017,030,Chiconcuac,chiconcuac,2017/MEX_2017_chiconcuac.json,hardcoded_codigo_financiero
+2017,031,Chimalhuacán,chimalhuacan,2017/MEX_2017_chimalhuacan.json,hardcoded_codigo_financiero
+2017,032,Donato Guerra,donato_guerra,2017/MEX_2017_donato_guerra.json,hardcoded_codigo_financiero
+2017,033,Ecatepec de Morelos,ecatepec,2017/MEX_2017_ecatepec.json,hardcoded_codigo_financiero
+2017,034,Ecatzingo,ecatzingo,2017/MEX_2017_ecatzingo.json,hardcoded_codigo_financiero
+2017,035,Huehuetoca,huehuetoca,2017/MEX_2017_huehuetoca.json,hardcoded_codigo_financiero
+2017,036,Hueypoxtla,hueypoxtla,2017/MEX_2017_hueypoxtla.json,hardcoded_codigo_financiero
+2017,037,Huixquilucan,huixquilucan,2017/MEX_2017_huixquilucan.json,hardcoded_codigo_financiero
+2017,038,Isidro Fabela,isidro_fabela,2017/MEX_2017_isidro_fabela.json,hardcoded_codigo_financiero
+2017,039,Ixtapaluca,ixtapaluca,2017/MEX_2017_ixtapaluca.json,hardcoded_codigo_financiero
+2017,040,Ixtapan de la Sal,ixtapan_de_la_sal,2017/MEX_2017_ixtapan_de_la_sal.json,hardcoded_codigo_financiero
+2017,041,Ixtapan del Oro,ixtapan_del_oro,2017/MEX_2017_ixtapan_del_oro.json,hardcoded_codigo_financiero
+2017,042,Ixtlahuaca,ixtlahuaca,2017/MEX_2017_ixtlahuaca.json,hardcoded_codigo_financiero
+2017,043,Xalatlaco,xalatlaco,2017/MEX_2017_xalatlaco.json,hardcoded_codigo_financiero
+2017,044,Jaltenco,jaltenco,2017/MEX_2017_jaltenco.json,hardcoded_codigo_financiero
+2017,045,Jilotepec,jilotepec,2017/MEX_2017_jilotepec.json,hardcoded_codigo_financiero
+2017,046,Jilotzingo,jilotzingo,2017/MEX_2017_jilotzingo.json,hardcoded_codigo_financiero
+2017,047,Jiquipilco,jiquipilco,2017/MEX_2017_jiquipilco.json,hardcoded_codigo_financiero
+2017,048,Jocotitlán,jocotitlan,2017/MEX_2017_jocotitlan.json,hardcoded_codigo_financiero
+2017,049,Joquicingo,joquicingo,2017/MEX_2017_joquicingo.json,hardcoded_codigo_financiero
+2017,050,Juchitepec,juchitepec,2017/MEX_2017_juchitepec.json,hardcoded_codigo_financiero
+2017,051,Lerma,lerma,2017/MEX_2017_lerma.json,hardcoded_codigo_financiero
+2017,052,Malinalco,malinalco,2017/MEX_2017_malinalco.json,hardcoded_codigo_financiero
+2017,053,Melchor Ocampo,melchor_ocampo,2017/MEX_2017_melchor_ocampo.json,hardcoded_codigo_financiero
+2017,054,Metepec,metepec,2017/MEX_2017_metepec.json,hardcoded_codigo_financiero
+2017,055,Mexicaltzingo,mexicaltzingo,2017/MEX_2017_mexicaltzingo.json,hardcoded_codigo_financiero
+2017,056,Morelos,morelos,2017/MEX_2017_morelos.json,hardcoded_codigo_financiero
+2017,057,Naucalpan de Juárez,naucalpan,2017/MEX_2017_naucalpan.json,hardcoded_codigo_financiero
+2017,058,Nezahualcóyotl,nezahualcoyotl,2017/MEX_2017_nezahualcoyotl.json,hardcoded_codigo_financiero
+2017,059,Nextlalpan,nextlalpan,2017/MEX_2017_nextlalpan.json,hardcoded_codigo_financiero
+2017,060,Nicolás Romero,nicolas_romero,2017/MEX_2017_nicolas_romero.json,hardcoded_codigo_financiero
+2017,061,Nopaltepec,nopaltepec,2017/MEX_2017_nopaltepec.json,hardcoded_codigo_financiero
+2017,062,Ocoyoacac,ocoyoacac,2017/MEX_2017_ocoyoacac.json,hardcoded_codigo_financiero
+2017,063,Ocuilan,ocuilan,2017/MEX_2017_ocuilan.json,hardcoded_codigo_financiero
+2017,064,El Oro,el_oro,2017/MEX_2017_el_oro.json,hardcoded_codigo_financiero
+2017,065,Otumba,otumba,2017/MEX_2017_otumba.json,hardcoded_codigo_financiero
+2017,066,Otzoloapan,otzoloapan,2017/MEX_2017_otzoloapan.json,hardcoded_codigo_financiero
+2017,067,Otzolotepec,otzolotepec,2017/MEX_2017_otzolotepec.json,hardcoded_codigo_financiero
+2017,068,Ozumba,ozumba,2017/MEX_2017_ozumba.json,hardcoded_codigo_financiero
+2017,069,Papalotla,papalotla,2017/MEX_2017_papalotla.json,hardcoded_codigo_financiero
+2017,070,La Paz,la_paz,2017/MEX_2017_la_paz.json,hardcoded_codigo_financiero
+2017,071,Polotitlán,polotitlan,2017/MEX_2017_polotitlan.json,hardcoded_codigo_financiero
+2017,072,Rayón,rayon,2017/MEX_2017_rayon.json,hardcoded_codigo_financiero
+2017,073,San Antonio la Isla,san_antonio_la_isla,2017/MEX_2017_san_antonio_la_isla.json,hardcoded_codigo_financiero
+2017,074,San Felipe del Progreso,san_felipe_del_progreso,2017/MEX_2017_san_felipe_del_progreso.json,hardcoded_codigo_financiero
+2017,075,San Martín de las Pirámides,san_martin_de_las_piramides,2017/MEX_2017_san_martin_de_las_piramides.json,hardcoded_codigo_financiero
+2017,076,San Mateo Atenco,san_mateo_atenco,2017/MEX_2017_san_mateo_atenco.json,hardcoded_codigo_financiero
+2017,077,San Simón de Guerrero,san_simon_de_guerrero,2017/MEX_2017_san_simon_de_guerrero.json,hardcoded_codigo_financiero
+2017,078,Santo Tomás,santo_tomas,2017/MEX_2017_santo_tomas.json,hardcoded_codigo_financiero
+2017,079,Soyaniquilpan de Juárez,soyaniquilpan,2017/MEX_2017_soyaniquilpan.json,hardcoded_codigo_financiero
+2017,080,Sultepec,sultepec,2017/MEX_2017_sultepec.json,hardcoded_codigo_financiero
+2017,081,Tecámac,tecamac,2017/MEX_2017_tecamac.json,hardcoded_codigo_financiero
+2017,082,Tejupilco,tejupilco,2017/MEX_2017_tejupilco.json,hardcoded_codigo_financiero
+2017,083,Temamatla,temamatla,2017/MEX_2017_temamatla.json,hardcoded_codigo_financiero
+2017,084,Temascalapa,temascalapa,2017/MEX_2017_temascalapa.json,hardcoded_codigo_financiero
+2017,085,Temascalcingo,temascalcingo,2017/MEX_2017_temascalcingo.json,hardcoded_codigo_financiero
+2017,086,Temascaltepec,temascaltepec,2017/MEX_2017_temascaltepec.json,hardcoded_codigo_financiero
+2017,087,Temoaya,temoaya,2017/MEX_2017_temoaya.json,hardcoded_codigo_financiero
+2017,088,Tenancingo,tenancingo,2017/MEX_2017_tenancingo.json,hardcoded_codigo_financiero
+2017,089,Tenango del Aire,tenango_del_aire,2017/MEX_2017_tenango_del_aire.json,hardcoded_codigo_financiero
+2017,090,Tenango del Valle,tenango_del_valle,2017/MEX_2017_tenango_del_valle.json,hardcoded_codigo_financiero
+2017,091,Teoloyucan,teoloyucan,2017/MEX_2017_teoloyucan.json,hardcoded_codigo_financiero
+2017,092,Teotihuacán,teotihuacan,2017/MEX_2017_teotihuacan.json,hardcoded_codigo_financiero
+2017,093,Tepetlaoxtoc,tepetlaoxtoc,2017/MEX_2017_tepetlaoxtoc.json,hardcoded_codigo_financiero
+2017,094,Tepetlixpa,tepetlixpa,2017/MEX_2017_tepetlixpa.json,hardcoded_codigo_financiero
+2017,095,Tepotzotlán,tepotzotlan,2017/MEX_2017_tepotzotlan.json,hardcoded_codigo_financiero
+2017,096,Tequixquiac,tequixquiac,2017/MEX_2017_tequixquiac.json,hardcoded_codigo_financiero
+2017,097,Texcaltitlán,texcaltitlan,2017/MEX_2017_texcaltitlan.json,hardcoded_codigo_financiero
+2017,098,Texcalyacac,texcalyacac,2017/MEX_2017_texcalyacac.json,hardcoded_codigo_financiero
+2017,099,Texcoco,texcoco,2017/MEX_2017_texcoco.json,hardcoded_codigo_financiero
+2017,100,Tezoyuca,tezoyuca,2017/MEX_2017_tezoyuca.json,hardcoded_codigo_financiero
+2017,101,Tianguistenco,tianguistenco,2017/MEX_2017_tianguistenco.json,hardcoded_codigo_financiero
+2017,102,Timilpan,timilpan,2017/MEX_2017_timilpan.json,hardcoded_codigo_financiero
+2017,103,Tlalmanalco,tlalmanalco,2017/MEX_2017_tlalmanalco.json,hardcoded_codigo_financiero
+2017,104,Tlalnepantla de Baz,tlalnepantla,2017/MEX_2017_tlalnepantla.json,hardcoded_codigo_financiero
+2017,105,Tlatlaya,tlatlaya,2017/MEX_2017_tlatlaya.json,hardcoded_codigo_financiero
+2017,106,Toluca,toluca,2017/MEX_2017_toluca.json,hardcoded_codigo_financiero
+2017,107,Tonatico,tonatico,2017/MEX_2017_tonatico.json,hardcoded_codigo_financiero
+2017,108,Tultepec,tultepec,2017/MEX_2017_tultepec.json,hardcoded_codigo_financiero
+2017,109,Tultitlán,tultitlan,2017/MEX_2017_tultitlan.json,hardcoded_codigo_financiero
+2017,110,Valle de Bravo,valle_de_bravo,2017/MEX_2017_valle_de_bravo.json,hardcoded_codigo_financiero
+2017,111,Villa de Allende,villa_de_allende,2017/MEX_2017_villa_de_allende.json,hardcoded_codigo_financiero
+2017,112,Villa del Carbón,villa_del_carbon,2017/MEX_2017_villa_del_carbon.json,hardcoded_codigo_financiero
+2017,113,Villa Guerrero,villa_guerrero,2017/MEX_2017_villa_guerrero.json,hardcoded_codigo_financiero
+2017,114,Villa Victoria,villa_victoria,2017/MEX_2017_villa_victoria.json,hardcoded_codigo_financiero
+2017,115,Xonacatlán,xonacatlan,2017/MEX_2017_xonacatlan.json,hardcoded_codigo_financiero
+2017,116,Zacazonapan,zacazonapan,2017/MEX_2017_zacazonapan.json,hardcoded_codigo_financiero
+2017,117,Zacualpan,zacualpan,2017/MEX_2017_zacualpan.json,hardcoded_codigo_financiero
+2017,118,Zinacantepec,zinacantepec,2017/MEX_2017_zinacantepec.json,hardcoded_codigo_financiero
+2017,119,Zumpahuacán,zumpahuacan,2017/MEX_2017_zumpahuacan.json,hardcoded_codigo_financiero
+2017,120,Zumpango,zumpango,2017/MEX_2017_zumpango.json,hardcoded_codigo_financiero
+2017,121,Cuautitlán Izcalli,cuautitlan_izcalli,2017/MEX_2017_cuautitlan_izcalli.json,hardcoded_codigo_financiero
+2017,122,Valle de Chalco Solidaridad,valle_de_chalco,2017/MEX_2017_valle_de_chalco.json,hardcoded_codigo_financiero
+2017,123,Luvianos,luvianos,2017/MEX_2017_luvianos.json,hardcoded_codigo_financiero
+2017,124,San José del Rincón,san_jose_del_rincon,2017/MEX_2017_san_jose_del_rincon.json,hardcoded_codigo_financiero
+2017,125,Tonanitla,tonanitla,2017/MEX_2017_tonanitla.json,hardcoded_codigo_financiero
+2018,001,Acambay de Ruíz Castañeda,acambay,2018/MEX_2018_acambay.json,hardcoded_codigo_financiero
+2018,002,Acolman,acolman,2018/MEX_2018_acolman.json,hardcoded_codigo_financiero
+2018,003,Aculco,aculco,2018/MEX_2018_aculco.json,hardcoded_codigo_financiero
+2018,004,Almoloya de Alquisiras,almoloya_de_alquisiras,2018/MEX_2018_almoloya_de_alquisiras.json,hardcoded_codigo_financiero
+2018,005,Almoloya de Juárez,almoloya_de_juarez,2018/MEX_2018_almoloya_de_juarez.json,hardcoded_codigo_financiero
+2018,006,Almoloya del Río,almoloya_del_rio,2018/MEX_2018_almoloya_del_rio.json,hardcoded_codigo_financiero
+2018,007,Amanalco,amanalco,2018/MEX_2018_amanalco.json,hardcoded_codigo_financiero
+2018,008,Amatepec,amatepec,2018/MEX_2018_amatepec.json,hardcoded_codigo_financiero
+2018,009,Amecameca,amecameca,2018/MEX_2018_amecameca.json,hardcoded_codigo_financiero
+2018,010,Apaxco,apaxco,2018/MEX_2018_apaxco.json,hardcoded_codigo_financiero
+2018,011,Atenco,atenco,2018/MEX_2018_atenco.json,hardcoded_codigo_financiero
+2018,012,Atizapán,atizapan,2018/MEX_2018_atizapan.json,hardcoded_codigo_financiero
+2018,013,Atizapán de Zaragoza,atizapan_de_zaragoza,2018/MEX_2018_atizapan_de_zaragoza.json,hardcoded_codigo_financiero
+2018,014,Atlacomulco,atlacomulco,2018/MEX_2018_atlacomulco.json,hardcoded_codigo_financiero
+2018,015,Atlautla,atlautla,2018/MEX_2018_atlautla.json,hardcoded_codigo_financiero
+2018,016,Axapusco,axapusco,2018/MEX_2018_axapusco.json,hardcoded_codigo_financiero
+2018,017,Ayapango,ayapango,2018/MEX_2018_ayapango.json,hardcoded_codigo_financiero
+2018,018,Calimaya,calimaya,2018/MEX_2018_calimaya.json,hardcoded_codigo_financiero
+2018,019,Capulhuac,capulhuac,2018/MEX_2018_capulhuac.json,hardcoded_codigo_financiero
+2018,020,Coacalco de Berriozábal,coacalco,2018/MEX_2018_coacalco.json,hardcoded_codigo_financiero
+2018,021,Coatepec Harinas,coatepec_harinas,2018/MEX_2018_coatepec_harinas.json,hardcoded_codigo_financiero
+2018,022,Cocotitlán,cocotitlan,2018/MEX_2018_cocotitlan.json,hardcoded_codigo_financiero
+2018,023,Coyotepec,coyotepec,2018/MEX_2018_coyotepec.json,hardcoded_codigo_financiero
+2018,024,Cuautitlán,cuautitlan,2018/MEX_2018_cuautitlan.json,hardcoded_codigo_financiero
+2018,025,Chalco,chalco,2018/MEX_2018_chalco.json,hardcoded_codigo_financiero
+2018,026,Chapa de Mota,chapa_de_mota,2018/MEX_2018_chapa_de_mota.json,hardcoded_codigo_financiero
+2018,027,Chapultepec,chapultepec,2018/MEX_2018_chapultepec.json,hardcoded_codigo_financiero
+2018,028,Chiautla,chiautla,2018/MEX_2018_chiautla.json,hardcoded_codigo_financiero
+2018,029,Chicoloapan,chicoloapan,2018/MEX_2018_chicoloapan.json,hardcoded_codigo_financiero
+2018,030,Chiconcuac,chiconcuac,2018/MEX_2018_chiconcuac.json,hardcoded_codigo_financiero
+2018,031,Chimalhuacán,chimalhuacan,2018/MEX_2018_chimalhuacan.json,hardcoded_codigo_financiero
+2018,032,Donato Guerra,donato_guerra,2018/MEX_2018_donato_guerra.json,hardcoded_codigo_financiero
+2018,033,Ecatepec de Morelos,ecatepec,2018/MEX_2018_ecatepec.json,hardcoded_codigo_financiero
+2018,034,Ecatzingo,ecatzingo,2018/MEX_2018_ecatzingo.json,hardcoded_codigo_financiero
+2018,035,Huehuetoca,huehuetoca,2018/MEX_2018_huehuetoca.json,hardcoded_codigo_financiero
+2018,036,Hueypoxtla,hueypoxtla,2018/MEX_2018_hueypoxtla.json,hardcoded_codigo_financiero
+2018,037,Huixquilucan,huixquilucan,2018/MEX_2018_huixquilucan.json,hardcoded_codigo_financiero
+2018,038,Isidro Fabela,isidro_fabela,2018/MEX_2018_isidro_fabela.json,hardcoded_codigo_financiero
+2018,039,Ixtapaluca,ixtapaluca,2018/MEX_2018_ixtapaluca.json,hardcoded_codigo_financiero
+2018,040,Ixtapan de la Sal,ixtapan_de_la_sal,2018/MEX_2018_ixtapan_de_la_sal.json,hardcoded_codigo_financiero
+2018,041,Ixtapan del Oro,ixtapan_del_oro,2018/MEX_2018_ixtapan_del_oro.json,hardcoded_codigo_financiero
+2018,042,Ixtlahuaca,ixtlahuaca,2018/MEX_2018_ixtlahuaca.json,hardcoded_codigo_financiero
+2018,043,Xalatlaco,xalatlaco,2018/MEX_2018_xalatlaco.json,hardcoded_codigo_financiero
+2018,044,Jaltenco,jaltenco,2018/MEX_2018_jaltenco.json,hardcoded_codigo_financiero
+2018,045,Jilotepec,jilotepec,2018/MEX_2018_jilotepec.json,hardcoded_codigo_financiero
+2018,046,Jilotzingo,jilotzingo,2018/MEX_2018_jilotzingo.json,hardcoded_codigo_financiero
+2018,047,Jiquipilco,jiquipilco,2018/MEX_2018_jiquipilco.json,hardcoded_codigo_financiero
+2018,048,Jocotitlán,jocotitlan,2018/MEX_2018_jocotitlan.json,hardcoded_codigo_financiero
+2018,049,Joquicingo,joquicingo,2018/MEX_2018_joquicingo.json,hardcoded_codigo_financiero
+2018,050,Juchitepec,juchitepec,2018/MEX_2018_juchitepec.json,hardcoded_codigo_financiero
+2018,051,Lerma,lerma,2018/MEX_2018_lerma.json,hardcoded_codigo_financiero
+2018,052,Malinalco,malinalco,2018/MEX_2018_malinalco.json,hardcoded_codigo_financiero
+2018,053,Melchor Ocampo,melchor_ocampo,2018/MEX_2018_melchor_ocampo.json,hardcoded_codigo_financiero
+2018,054,Metepec,metepec,2018/MEX_2018_metepec.json,hardcoded_codigo_financiero
+2018,055,Mexicaltzingo,mexicaltzingo,2018/MEX_2018_mexicaltzingo.json,hardcoded_codigo_financiero
+2018,056,Morelos,morelos,2018/MEX_2018_morelos.json,hardcoded_codigo_financiero
+2018,057,Naucalpan de Juárez,naucalpan,2018/MEX_2018_naucalpan.json,hardcoded_codigo_financiero
+2018,058,Nezahualcóyotl,nezahualcoyotl,2018/MEX_2018_nezahualcoyotl.json,hardcoded_codigo_financiero
+2018,059,Nextlalpan,nextlalpan,2018/MEX_2018_nextlalpan.json,hardcoded_codigo_financiero
+2018,060,Nicolás Romero,nicolas_romero,2018/MEX_2018_nicolas_romero.json,hardcoded_codigo_financiero
+2018,061,Nopaltepec,nopaltepec,2018/MEX_2018_nopaltepec.json,hardcoded_codigo_financiero
+2018,062,Ocoyoacac,ocoyoacac,2018/MEX_2018_ocoyoacac.json,hardcoded_codigo_financiero
+2018,063,Ocuilan,ocuilan,2018/MEX_2018_ocuilan.json,hardcoded_codigo_financiero
+2018,064,El Oro,el_oro,2018/MEX_2018_el_oro.json,hardcoded_codigo_financiero
+2018,065,Otumba,otumba,2018/MEX_2018_otumba.json,hardcoded_codigo_financiero
+2018,066,Otzoloapan,otzoloapan,2018/MEX_2018_otzoloapan.json,hardcoded_codigo_financiero
+2018,067,Otzolotepec,otzolotepec,2018/MEX_2018_otzolotepec.json,hardcoded_codigo_financiero
+2018,068,Ozumba,ozumba,2018/MEX_2018_ozumba.json,hardcoded_codigo_financiero
+2018,069,Papalotla,papalotla,2018/MEX_2018_papalotla.json,hardcoded_codigo_financiero
+2018,070,La Paz,la_paz,2018/MEX_2018_la_paz.json,hardcoded_codigo_financiero
+2018,071,Polotitlán,polotitlan,2018/MEX_2018_polotitlan.json,hardcoded_codigo_financiero
+2018,072,Rayón,rayon,2018/MEX_2018_rayon.json,hardcoded_codigo_financiero
+2018,073,San Antonio la Isla,san_antonio_la_isla,2018/MEX_2018_san_antonio_la_isla.json,hardcoded_codigo_financiero
+2018,074,San Felipe del Progreso,san_felipe_del_progreso,2018/MEX_2018_san_felipe_del_progreso.json,hardcoded_codigo_financiero
+2018,075,San Martín de las Pirámides,san_martin_de_las_piramides,2018/MEX_2018_san_martin_de_las_piramides.json,hardcoded_codigo_financiero
+2018,076,San Mateo Atenco,san_mateo_atenco,2018/MEX_2018_san_mateo_atenco.json,hardcoded_codigo_financiero
+2018,077,San Simón de Guerrero,san_simon_de_guerrero,2018/MEX_2018_san_simon_de_guerrero.json,hardcoded_codigo_financiero
+2018,078,Santo Tomás,santo_tomas,2018/MEX_2018_santo_tomas.json,hardcoded_codigo_financiero
+2018,079,Soyaniquilpan de Juárez,soyaniquilpan,2018/MEX_2018_soyaniquilpan.json,hardcoded_codigo_financiero
+2018,080,Sultepec,sultepec,2018/MEX_2018_sultepec.json,hardcoded_codigo_financiero
+2018,081,Tecámac,tecamac,2018/MEX_2018_tecamac.json,hardcoded_codigo_financiero
+2018,082,Tejupilco,tejupilco,2018/MEX_2018_tejupilco.json,hardcoded_codigo_financiero
+2018,083,Temamatla,temamatla,2018/MEX_2018_temamatla.json,hardcoded_codigo_financiero
+2018,084,Temascalapa,temascalapa,2018/MEX_2018_temascalapa.json,hardcoded_codigo_financiero
+2018,085,Temascalcingo,temascalcingo,2018/MEX_2018_temascalcingo.json,hardcoded_codigo_financiero
+2018,086,Temascaltepec,temascaltepec,2018/MEX_2018_temascaltepec.json,hardcoded_codigo_financiero
+2018,087,Temoaya,temoaya,2018/MEX_2018_temoaya.json,hardcoded_codigo_financiero
+2018,088,Tenancingo,tenancingo,2018/MEX_2018_tenancingo.json,hardcoded_codigo_financiero
+2018,089,Tenango del Aire,tenango_del_aire,2018/MEX_2018_tenango_del_aire.json,hardcoded_codigo_financiero
+2018,090,Tenango del Valle,tenango_del_valle,2018/MEX_2018_tenango_del_valle.json,hardcoded_codigo_financiero
+2018,091,Teoloyucan,teoloyucan,2018/MEX_2018_teoloyucan.json,hardcoded_codigo_financiero
+2018,092,Teotihuacán,teotihuacan,2018/MEX_2018_teotihuacan.json,hardcoded_codigo_financiero
+2018,093,Tepetlaoxtoc,tepetlaoxtoc,2018/MEX_2018_tepetlaoxtoc.json,hardcoded_codigo_financiero
+2018,094,Tepetlixpa,tepetlixpa,2018/MEX_2018_tepetlixpa.json,hardcoded_codigo_financiero
+2018,095,Tepotzotlán,tepotzotlan,2018/MEX_2018_tepotzotlan.json,hardcoded_codigo_financiero
+2018,096,Tequixquiac,tequixquiac,2018/MEX_2018_tequixquiac.json,hardcoded_codigo_financiero
+2018,097,Texcaltitlán,texcaltitlan,2018/MEX_2018_texcaltitlan.json,hardcoded_codigo_financiero
+2018,098,Texcalyacac,texcalyacac,2018/MEX_2018_texcalyacac.json,hardcoded_codigo_financiero
+2018,099,Texcoco,texcoco,2018/MEX_2018_texcoco.json,hardcoded_codigo_financiero
+2018,100,Tezoyuca,tezoyuca,2018/MEX_2018_tezoyuca.json,hardcoded_codigo_financiero
+2018,101,Tianguistenco,tianguistenco,2018/MEX_2018_tianguistenco.json,hardcoded_codigo_financiero
+2018,102,Timilpan,timilpan,2018/MEX_2018_timilpan.json,hardcoded_codigo_financiero
+2018,103,Tlalmanalco,tlalmanalco,2018/MEX_2018_tlalmanalco.json,hardcoded_codigo_financiero
+2018,104,Tlalnepantla de Baz,tlalnepantla,2018/MEX_2018_tlalnepantla.json,hardcoded_codigo_financiero
+2018,105,Tlatlaya,tlatlaya,2018/MEX_2018_tlatlaya.json,hardcoded_codigo_financiero
+2018,106,Toluca,toluca,2018/MEX_2018_toluca.json,hardcoded_codigo_financiero
+2018,107,Tonatico,tonatico,2018/MEX_2018_tonatico.json,hardcoded_codigo_financiero
+2018,108,Tultepec,tultepec,2018/MEX_2018_tultepec.json,hardcoded_codigo_financiero
+2018,109,Tultitlán,tultitlan,2018/MEX_2018_tultitlan.json,hardcoded_codigo_financiero
+2018,110,Valle de Bravo,valle_de_bravo,2018/MEX_2018_valle_de_bravo.json,hardcoded_codigo_financiero
+2018,111,Villa de Allende,villa_de_allende,2018/MEX_2018_villa_de_allende.json,hardcoded_codigo_financiero
+2018,112,Villa del Carbón,villa_del_carbon,2018/MEX_2018_villa_del_carbon.json,hardcoded_codigo_financiero
+2018,113,Villa Guerrero,villa_guerrero,2018/MEX_2018_villa_guerrero.json,hardcoded_codigo_financiero
+2018,114,Villa Victoria,villa_victoria,2018/MEX_2018_villa_victoria.json,hardcoded_codigo_financiero
+2018,115,Xonacatlán,xonacatlan,2018/MEX_2018_xonacatlan.json,hardcoded_codigo_financiero
+2018,116,Zacazonapan,zacazonapan,2018/MEX_2018_zacazonapan.json,hardcoded_codigo_financiero
+2018,117,Zacualpan,zacualpan,2018/MEX_2018_zacualpan.json,hardcoded_codigo_financiero
+2018,118,Zinacantepec,zinacantepec,2018/MEX_2018_zinacantepec.json,hardcoded_codigo_financiero
+2018,119,Zumpahuacán,zumpahuacan,2018/MEX_2018_zumpahuacan.json,hardcoded_codigo_financiero
+2018,120,Zumpango,zumpango,2018/MEX_2018_zumpango.json,hardcoded_codigo_financiero
+2018,121,Cuautitlán Izcalli,cuautitlan_izcalli,2018/MEX_2018_cuautitlan_izcalli.json,hardcoded_codigo_financiero
+2018,122,Valle de Chalco Solidaridad,valle_de_chalco,2018/MEX_2018_valle_de_chalco.json,hardcoded_codigo_financiero
+2018,123,Luvianos,luvianos,2018/MEX_2018_luvianos.json,hardcoded_codigo_financiero
+2018,124,San José del Rincón,san_jose_del_rincon,2018/MEX_2018_san_jose_del_rincon.json,hardcoded_codigo_financiero
+2018,125,Tonanitla,tonanitla,2018/MEX_2018_tonanitla.json,hardcoded_codigo_financiero
+2019,001,Acambay de Ruíz Castañeda,acambay,2019/MEX_2019_acambay.json,hardcoded_codigo_financiero
+2019,002,Acolman,acolman,2019/MEX_2019_acolman.json,hardcoded_codigo_financiero
+2019,003,Aculco,aculco,2019/MEX_2019_aculco.json,hardcoded_codigo_financiero
+2019,004,Almoloya de Alquisiras,almoloya_de_alquisiras,2019/MEX_2019_almoloya_de_alquisiras.json,hardcoded_codigo_financiero
+2019,005,Almoloya de Juárez,almoloya_de_juarez,2019/MEX_2019_almoloya_de_juarez.json,hardcoded_codigo_financiero
+2019,006,Almoloya del Río,almoloya_del_rio,2019/MEX_2019_almoloya_del_rio.json,hardcoded_codigo_financiero
+2019,007,Amanalco,amanalco,2019/MEX_2019_amanalco.json,hardcoded_codigo_financiero
+2019,008,Amatepec,amatepec,2019/MEX_2019_amatepec.json,hardcoded_codigo_financiero
+2019,009,Amecameca,amecameca,2019/MEX_2019_amecameca.json,hardcoded_codigo_financiero
+2019,010,Apaxco,apaxco,2019/MEX_2019_apaxco.json,hardcoded_codigo_financiero
+2019,011,Atenco,atenco,2019/MEX_2019_atenco.json,hardcoded_codigo_financiero
+2019,012,Atizapán,atizapan,2019/MEX_2019_atizapan.json,hardcoded_codigo_financiero
+2019,013,Atizapán de Zaragoza,atizapan_de_zaragoza,2019/MEX_2019_atizapan_de_zaragoza.json,hardcoded_codigo_financiero
+2019,014,Atlacomulco,atlacomulco,2019/MEX_2019_atlacomulco.json,hardcoded_codigo_financiero
+2019,015,Atlautla,atlautla,2019/MEX_2019_atlautla.json,hardcoded_codigo_financiero
+2019,016,Axapusco,axapusco,2019/MEX_2019_axapusco.json,hardcoded_codigo_financiero
+2019,017,Ayapango,ayapango,2019/MEX_2019_ayapango.json,hardcoded_codigo_financiero
+2019,018,Calimaya,calimaya,2019/MEX_2019_calimaya.json,hardcoded_codigo_financiero
+2019,019,Capulhuac,capulhuac,2019/MEX_2019_capulhuac.json,hardcoded_codigo_financiero
+2019,020,Coacalco de Berriozábal,coacalco,2019/MEX_2019_coacalco.json,hardcoded_codigo_financiero
+2019,021,Coatepec Harinas,coatepec_harinas,2019/MEX_2019_coatepec_harinas.json,hardcoded_codigo_financiero
+2019,022,Cocotitlán,cocotitlan,2019/MEX_2019_cocotitlan.json,hardcoded_codigo_financiero
+2019,023,Coyotepec,coyotepec,2019/MEX_2019_coyotepec.json,hardcoded_codigo_financiero
+2019,024,Cuautitlán,cuautitlan,2019/MEX_2019_cuautitlan.json,hardcoded_codigo_financiero
+2019,025,Chalco,chalco,2019/MEX_2019_chalco.json,hardcoded_codigo_financiero
+2019,026,Chapa de Mota,chapa_de_mota,2019/MEX_2019_chapa_de_mota.json,hardcoded_codigo_financiero
+2019,027,Chapultepec,chapultepec,2019/MEX_2019_chapultepec.json,hardcoded_codigo_financiero
+2019,028,Chiautla,chiautla,2019/MEX_2019_chiautla.json,hardcoded_codigo_financiero
+2019,029,Chicoloapan,chicoloapan,2019/MEX_2019_chicoloapan.json,hardcoded_codigo_financiero
+2019,030,Chiconcuac,chiconcuac,2019/MEX_2019_chiconcuac.json,hardcoded_codigo_financiero
+2019,031,Chimalhuacán,chimalhuacan,2019/MEX_2019_chimalhuacan.json,hardcoded_codigo_financiero
+2019,032,Donato Guerra,donato_guerra,2019/MEX_2019_donato_guerra.json,hardcoded_codigo_financiero
+2019,033,Ecatepec de Morelos,ecatepec,2019/MEX_2019_ecatepec.json,hardcoded_codigo_financiero
+2019,034,Ecatzingo,ecatzingo,2019/MEX_2019_ecatzingo.json,hardcoded_codigo_financiero
+2019,035,Huehuetoca,huehuetoca,2019/MEX_2019_huehuetoca.json,hardcoded_codigo_financiero
+2019,036,Hueypoxtla,hueypoxtla,2019/MEX_2019_hueypoxtla.json,hardcoded_codigo_financiero
+2019,037,Huixquilucan,huixquilucan,2019/MEX_2019_huixquilucan.json,hardcoded_codigo_financiero
+2019,038,Isidro Fabela,isidro_fabela,2019/MEX_2019_isidro_fabela.json,hardcoded_codigo_financiero
+2019,039,Ixtapaluca,ixtapaluca,2019/MEX_2019_ixtapaluca.json,hardcoded_codigo_financiero
+2019,040,Ixtapan de la Sal,ixtapan_de_la_sal,2019/MEX_2019_ixtapan_de_la_sal.json,hardcoded_codigo_financiero
+2019,041,Ixtapan del Oro,ixtapan_del_oro,2019/MEX_2019_ixtapan_del_oro.json,hardcoded_codigo_financiero
+2019,042,Ixtlahuaca,ixtlahuaca,2019/MEX_2019_ixtlahuaca.json,hardcoded_codigo_financiero
+2019,043,Xalatlaco,xalatlaco,2019/MEX_2019_xalatlaco.json,hardcoded_codigo_financiero
+2019,044,Jaltenco,jaltenco,2019/MEX_2019_jaltenco.json,hardcoded_codigo_financiero
+2019,045,Jilotepec,jilotepec,2019/MEX_2019_jilotepec.json,hardcoded_codigo_financiero
+2019,046,Jilotzingo,jilotzingo,2019/MEX_2019_jilotzingo.json,hardcoded_codigo_financiero
+2019,047,Jiquipilco,jiquipilco,2019/MEX_2019_jiquipilco.json,hardcoded_codigo_financiero
+2019,048,Jocotitlán,jocotitlan,2019/MEX_2019_jocotitlan.json,hardcoded_codigo_financiero
+2019,049,Joquicingo,joquicingo,2019/MEX_2019_joquicingo.json,hardcoded_codigo_financiero
+2019,050,Juchitepec,juchitepec,2019/MEX_2019_juchitepec.json,hardcoded_codigo_financiero
+2019,051,Lerma,lerma,2019/MEX_2019_lerma.json,hardcoded_codigo_financiero
+2019,052,Malinalco,malinalco,2019/MEX_2019_malinalco.json,hardcoded_codigo_financiero
+2019,053,Melchor Ocampo,melchor_ocampo,2019/MEX_2019_melchor_ocampo.json,hardcoded_codigo_financiero
+2019,054,Metepec,metepec,2019/MEX_2019_metepec.json,hardcoded_codigo_financiero
+2019,055,Mexicaltzingo,mexicaltzingo,2019/MEX_2019_mexicaltzingo.json,hardcoded_codigo_financiero
+2019,056,Morelos,morelos,2019/MEX_2019_morelos.json,hardcoded_codigo_financiero
+2019,057,Naucalpan de Juárez,naucalpan,2019/MEX_2019_naucalpan.json,hardcoded_codigo_financiero
+2019,058,Nezahualcóyotl,nezahualcoyotl,2019/MEX_2019_nezahualcoyotl.json,hardcoded_codigo_financiero
+2019,059,Nextlalpan,nextlalpan,2019/MEX_2019_nextlalpan.json,hardcoded_codigo_financiero
+2019,060,Nicolás Romero,nicolas_romero,2019/MEX_2019_nicolas_romero.json,hardcoded_codigo_financiero
+2019,061,Nopaltepec,nopaltepec,2019/MEX_2019_nopaltepec.json,hardcoded_codigo_financiero
+2019,062,Ocoyoacac,ocoyoacac,2019/MEX_2019_ocoyoacac.json,hardcoded_codigo_financiero
+2019,063,Ocuilan,ocuilan,2019/MEX_2019_ocuilan.json,hardcoded_codigo_financiero
+2019,064,El Oro,el_oro,2019/MEX_2019_el_oro.json,hardcoded_codigo_financiero
+2019,065,Otumba,otumba,2019/MEX_2019_otumba.json,hardcoded_codigo_financiero
+2019,066,Otzoloapan,otzoloapan,2019/MEX_2019_otzoloapan.json,hardcoded_codigo_financiero
+2019,067,Otzolotepec,otzolotepec,2019/MEX_2019_otzolotepec.json,hardcoded_codigo_financiero
+2019,068,Ozumba,ozumba,2019/MEX_2019_ozumba.json,hardcoded_codigo_financiero
+2019,069,Papalotla,papalotla,2019/MEX_2019_papalotla.json,hardcoded_codigo_financiero
+2019,070,La Paz,la_paz,2019/MEX_2019_la_paz.json,hardcoded_codigo_financiero
+2019,071,Polotitlán,polotitlan,2019/MEX_2019_polotitlan.json,hardcoded_codigo_financiero
+2019,072,Rayón,rayon,2019/MEX_2019_rayon.json,hardcoded_codigo_financiero
+2019,073,San Antonio la Isla,san_antonio_la_isla,2019/MEX_2019_san_antonio_la_isla.json,hardcoded_codigo_financiero
+2019,074,San Felipe del Progreso,san_felipe_del_progreso,2019/MEX_2019_san_felipe_del_progreso.json,hardcoded_codigo_financiero
+2019,075,San Martín de las Pirámides,san_martin_de_las_piramides,2019/MEX_2019_san_martin_de_las_piramides.json,hardcoded_codigo_financiero
+2019,076,San Mateo Atenco,san_mateo_atenco,2019/MEX_2019_san_mateo_atenco.json,hardcoded_codigo_financiero
+2019,077,San Simón de Guerrero,san_simon_de_guerrero,2019/MEX_2019_san_simon_de_guerrero.json,hardcoded_codigo_financiero
+2019,078,Santo Tomás,santo_tomas,2019/MEX_2019_santo_tomas.json,hardcoded_codigo_financiero
+2019,079,Soyaniquilpan de Juárez,soyaniquilpan,2019/MEX_2019_soyaniquilpan.json,hardcoded_codigo_financiero
+2019,080,Sultepec,sultepec,2019/MEX_2019_sultepec.json,hardcoded_codigo_financiero
+2019,081,Tecámac,tecamac,2019/MEX_2019_tecamac.json,hardcoded_codigo_financiero
+2019,082,Tejupilco,tejupilco,2019/MEX_2019_tejupilco.json,hardcoded_codigo_financiero
+2019,083,Temamatla,temamatla,2019/MEX_2019_temamatla.json,hardcoded_codigo_financiero
+2019,084,Temascalapa,temascalapa,2019/MEX_2019_temascalapa.json,hardcoded_codigo_financiero
+2019,085,Temascalcingo,temascalcingo,2019/MEX_2019_temascalcingo.json,hardcoded_codigo_financiero
+2019,086,Temascaltepec,temascaltepec,2019/MEX_2019_temascaltepec.json,hardcoded_codigo_financiero
+2019,087,Temoaya,temoaya,2019/MEX_2019_temoaya.json,hardcoded_codigo_financiero
+2019,088,Tenancingo,tenancingo,2019/MEX_2019_tenancingo.json,hardcoded_codigo_financiero
+2019,089,Tenango del Aire,tenango_del_aire,2019/MEX_2019_tenango_del_aire.json,hardcoded_codigo_financiero
+2019,090,Tenango del Valle,tenango_del_valle,2019/MEX_2019_tenango_del_valle.json,hardcoded_codigo_financiero
+2019,091,Teoloyucan,teoloyucan,2019/MEX_2019_teoloyucan.json,hardcoded_codigo_financiero
+2019,092,Teotihuacán,teotihuacan,2019/MEX_2019_teotihuacan.json,hardcoded_codigo_financiero
+2019,093,Tepetlaoxtoc,tepetlaoxtoc,2019/MEX_2019_tepetlaoxtoc.json,hardcoded_codigo_financiero
+2019,094,Tepetlixpa,tepetlixpa,2019/MEX_2019_tepetlixpa.json,hardcoded_codigo_financiero
+2019,095,Tepotzotlán,tepotzotlan,2019/MEX_2019_tepotzotlan.json,hardcoded_codigo_financiero
+2019,096,Tequixquiac,tequixquiac,2019/MEX_2019_tequixquiac.json,hardcoded_codigo_financiero
+2019,097,Texcaltitlán,texcaltitlan,2019/MEX_2019_texcaltitlan.json,hardcoded_codigo_financiero
+2019,098,Texcalyacac,texcalyacac,2019/MEX_2019_texcalyacac.json,hardcoded_codigo_financiero
+2019,099,Texcoco,texcoco,2019/MEX_2019_texcoco.json,hardcoded_codigo_financiero
+2019,100,Tezoyuca,tezoyuca,2019/MEX_2019_tezoyuca.json,hardcoded_codigo_financiero
+2019,101,Tianguistenco,tianguistenco,2019/MEX_2019_tianguistenco.json,hardcoded_codigo_financiero
+2019,102,Timilpan,timilpan,2019/MEX_2019_timilpan.json,hardcoded_codigo_financiero
+2019,103,Tlalmanalco,tlalmanalco,2019/MEX_2019_tlalmanalco.json,hardcoded_codigo_financiero
+2019,104,Tlalnepantla de Baz,tlalnepantla,2019/MEX_2019_tlalnepantla.json,hardcoded_codigo_financiero
+2019,105,Tlatlaya,tlatlaya,2019/MEX_2019_tlatlaya.json,hardcoded_codigo_financiero
+2019,106,Toluca,toluca,2019/MEX_2019_toluca.json,hardcoded_codigo_financiero
+2019,107,Tonatico,tonatico,2019/MEX_2019_tonatico.json,hardcoded_codigo_financiero
+2019,108,Tultepec,tultepec,2019/MEX_2019_tultepec.json,hardcoded_codigo_financiero
+2019,109,Tultitlán,tultitlan,2019/MEX_2019_tultitlan.json,hardcoded_codigo_financiero
+2019,110,Valle de Bravo,valle_de_bravo,2019/MEX_2019_valle_de_bravo.json,hardcoded_codigo_financiero
+2019,111,Villa de Allende,villa_de_allende,2019/MEX_2019_villa_de_allende.json,hardcoded_codigo_financiero
+2019,112,Villa del Carbón,villa_del_carbon,2019/MEX_2019_villa_del_carbon.json,hardcoded_codigo_financiero
+2019,113,Villa Guerrero,villa_guerrero,2019/MEX_2019_villa_guerrero.json,hardcoded_codigo_financiero
+2019,114,Villa Victoria,villa_victoria,2019/MEX_2019_villa_victoria.json,hardcoded_codigo_financiero
+2019,115,Xonacatlán,xonacatlan,2019/MEX_2019_xonacatlan.json,hardcoded_codigo_financiero
+2019,116,Zacazonapan,zacazonapan,2019/MEX_2019_zacazonapan.json,hardcoded_codigo_financiero
+2019,117,Zacualpan,zacualpan,2019/MEX_2019_zacualpan.json,hardcoded_codigo_financiero
+2019,118,Zinacantepec,zinacantepec,2019/MEX_2019_zinacantepec.json,hardcoded_codigo_financiero
+2019,119,Zumpahuacán,zumpahuacan,2019/MEX_2019_zumpahuacan.json,hardcoded_codigo_financiero
+2019,120,Zumpango,zumpango,2019/MEX_2019_zumpango.json,hardcoded_codigo_financiero
+2019,121,Cuautitlán Izcalli,cuautitlan_izcalli,2019/MEX_2019_cuautitlan_izcalli.json,hardcoded_codigo_financiero
+2019,122,Valle de Chalco Solidaridad,valle_de_chalco,2019/MEX_2019_valle_de_chalco.json,hardcoded_codigo_financiero
+2019,123,Luvianos,luvianos,2019/MEX_2019_luvianos.json,hardcoded_codigo_financiero
+2019,124,San José del Rincón,san_jose_del_rincon,2019/MEX_2019_san_jose_del_rincon.json,hardcoded_codigo_financiero
+2019,125,Tonanitla,tonanitla,2019/MEX_2019_tonanitla.json,hardcoded_codigo_financiero
+2020,001,Acambay de Ruíz Castañeda,acambay,2020/MEX_2020_acambay.json,hardcoded_codigo_financiero
+2020,002,Acolman,acolman,2020/MEX_2020_acolman.json,hardcoded_codigo_financiero
+2020,003,Aculco,aculco,2020/MEX_2020_aculco.json,hardcoded_codigo_financiero
+2020,004,Almoloya de Alquisiras,almoloya_de_alquisiras,2020/MEX_2020_almoloya_de_alquisiras.json,hardcoded_codigo_financiero
+2020,005,Almoloya de Juárez,almoloya_de_juarez,2020/MEX_2020_almoloya_de_juarez.json,hardcoded_codigo_financiero
+2020,006,Almoloya del Río,almoloya_del_rio,2020/MEX_2020_almoloya_del_rio.json,hardcoded_codigo_financiero
+2020,007,Amanalco,amanalco,2020/MEX_2020_amanalco.json,hardcoded_codigo_financiero
+2020,008,Amatepec,amatepec,2020/MEX_2020_amatepec.json,hardcoded_codigo_financiero
+2020,009,Amecameca,amecameca,2020/MEX_2020_amecameca.json,hardcoded_codigo_financiero
+2020,010,Apaxco,apaxco,2020/MEX_2020_apaxco.json,hardcoded_codigo_financiero
+2020,011,Atenco,atenco,2020/MEX_2020_atenco.json,hardcoded_codigo_financiero
+2020,012,Atizapán,atizapan,2020/MEX_2020_atizapan.json,hardcoded_codigo_financiero
+2020,013,Atizapán de Zaragoza,atizapan_de_zaragoza,2020/MEX_2020_atizapan_de_zaragoza.json,hardcoded_codigo_financiero
+2020,014,Atlacomulco,atlacomulco,2020/MEX_2020_atlacomulco.json,hardcoded_codigo_financiero
+2020,015,Atlautla,atlautla,2020/MEX_2020_atlautla.json,hardcoded_codigo_financiero
+2020,016,Axapusco,axapusco,2020/MEX_2020_axapusco.json,hardcoded_codigo_financiero
+2020,017,Ayapango,ayapango,2020/MEX_2020_ayapango.json,hardcoded_codigo_financiero
+2020,018,Calimaya,calimaya,2020/MEX_2020_calimaya.json,hardcoded_codigo_financiero
+2020,019,Capulhuac,capulhuac,2020/MEX_2020_capulhuac.json,hardcoded_codigo_financiero
+2020,020,Coacalco de Berriozábal,coacalco,2020/MEX_2020_coacalco.json,hardcoded_codigo_financiero
+2020,021,Coatepec Harinas,coatepec_harinas,2020/MEX_2020_coatepec_harinas.json,hardcoded_codigo_financiero
+2020,022,Cocotitlán,cocotitlan,2020/MEX_2020_cocotitlan.json,hardcoded_codigo_financiero
+2020,023,Coyotepec,coyotepec,2020/MEX_2020_coyotepec.json,hardcoded_codigo_financiero
+2020,024,Cuautitlán,cuautitlan,2020/MEX_2020_cuautitlan.json,hardcoded_codigo_financiero
+2020,025,Chalco,chalco,2020/MEX_2020_chalco.json,hardcoded_codigo_financiero
+2020,026,Chapa de Mota,chapa_de_mota,2020/MEX_2020_chapa_de_mota.json,hardcoded_codigo_financiero
+2020,027,Chapultepec,chapultepec,2020/MEX_2020_chapultepec.json,hardcoded_codigo_financiero
+2020,028,Chiautla,chiautla,2020/MEX_2020_chiautla.json,hardcoded_codigo_financiero
+2020,029,Chicoloapan,chicoloapan,2020/MEX_2020_chicoloapan.json,hardcoded_codigo_financiero
+2020,030,Chiconcuac,chiconcuac,2020/MEX_2020_chiconcuac.json,hardcoded_codigo_financiero
+2020,031,Chimalhuacán,chimalhuacan,2020/MEX_2020_chimalhuacan.json,hardcoded_codigo_financiero
+2020,032,Donato Guerra,donato_guerra,2020/MEX_2020_donato_guerra.json,hardcoded_codigo_financiero
+2020,033,Ecatepec de Morelos,ecatepec,2020/MEX_2020_ecatepec.json,hardcoded_codigo_financiero
+2020,034,Ecatzingo,ecatzingo,2020/MEX_2020_ecatzingo.json,hardcoded_codigo_financiero
+2020,035,Huehuetoca,huehuetoca,2020/MEX_2020_huehuetoca.json,hardcoded_codigo_financiero
+2020,036,Hueypoxtla,hueypoxtla,2020/MEX_2020_hueypoxtla.json,hardcoded_codigo_financiero
+2020,037,Huixquilucan,huixquilucan,2020/MEX_2020_huixquilucan.json,hardcoded_codigo_financiero
+2020,038,Isidro Fabela,isidro_fabela,2020/MEX_2020_isidro_fabela.json,hardcoded_codigo_financiero
+2020,039,Ixtapaluca,ixtapaluca,2020/MEX_2020_ixtapaluca.json,hardcoded_codigo_financiero
+2020,040,Ixtapan de la Sal,ixtapan_de_la_sal,2020/MEX_2020_ixtapan_de_la_sal.json,hardcoded_codigo_financiero
+2020,041,Ixtapan del Oro,ixtapan_del_oro,2020/MEX_2020_ixtapan_del_oro.json,hardcoded_codigo_financiero
+2020,042,Ixtlahuaca,ixtlahuaca,2020/MEX_2020_ixtlahuaca.json,hardcoded_codigo_financiero
+2020,043,Xalatlaco,xalatlaco,2020/MEX_2020_xalatlaco.json,hardcoded_codigo_financiero
+2020,044,Jaltenco,jaltenco,2020/MEX_2020_jaltenco.json,hardcoded_codigo_financiero
+2020,045,Jilotepec,jilotepec,2020/MEX_2020_jilotepec.json,hardcoded_codigo_financiero
+2020,046,Jilotzingo,jilotzingo,2020/MEX_2020_jilotzingo.json,hardcoded_codigo_financiero
+2020,047,Jiquipilco,jiquipilco,2020/MEX_2020_jiquipilco.json,hardcoded_codigo_financiero
+2020,048,Jocotitlán,jocotitlan,2020/MEX_2020_jocotitlan.json,hardcoded_codigo_financiero
+2020,049,Joquicingo,joquicingo,2020/MEX_2020_joquicingo.json,hardcoded_codigo_financiero
+2020,050,Juchitepec,juchitepec,2020/MEX_2020_juchitepec.json,hardcoded_codigo_financiero
+2020,051,Lerma,lerma,2020/MEX_2020_lerma.json,hardcoded_codigo_financiero
+2020,052,Malinalco,malinalco,2020/MEX_2020_malinalco.json,hardcoded_codigo_financiero
+2020,053,Melchor Ocampo,melchor_ocampo,2020/MEX_2020_melchor_ocampo.json,hardcoded_codigo_financiero
+2020,054,Metepec,metepec,2020/MEX_2020_metepec.json,hardcoded_codigo_financiero
+2020,055,Mexicaltzingo,mexicaltzingo,2020/MEX_2020_mexicaltzingo.json,hardcoded_codigo_financiero
+2020,056,Morelos,morelos,2020/MEX_2020_morelos.json,hardcoded_codigo_financiero
+2020,057,Naucalpan de Juárez,naucalpan,2020/MEX_2020_naucalpan.json,hardcoded_codigo_financiero
+2020,058,Nezahualcóyotl,nezahualcoyotl,2020/MEX_2020_nezahualcoyotl.json,hardcoded_codigo_financiero
+2020,059,Nextlalpan,nextlalpan,2020/MEX_2020_nextlalpan.json,hardcoded_codigo_financiero
+2020,060,Nicolás Romero,nicolas_romero,2020/MEX_2020_nicolas_romero.json,hardcoded_codigo_financiero
+2020,061,Nopaltepec,nopaltepec,2020/MEX_2020_nopaltepec.json,hardcoded_codigo_financiero
+2020,062,Ocoyoacac,ocoyoacac,2020/MEX_2020_ocoyoacac.json,hardcoded_codigo_financiero
+2020,063,Ocuilan,ocuilan,2020/MEX_2020_ocuilan.json,hardcoded_codigo_financiero
+2020,064,El Oro,el_oro,2020/MEX_2020_el_oro.json,hardcoded_codigo_financiero
+2020,065,Otumba,otumba,2020/MEX_2020_otumba.json,hardcoded_codigo_financiero
+2020,066,Otzoloapan,otzoloapan,2020/MEX_2020_otzoloapan.json,hardcoded_codigo_financiero
+2020,067,Otzolotepec,otzolotepec,2020/MEX_2020_otzolotepec.json,hardcoded_codigo_financiero
+2020,068,Ozumba,ozumba,2020/MEX_2020_ozumba.json,hardcoded_codigo_financiero
+2020,069,Papalotla,papalotla,2020/MEX_2020_papalotla.json,hardcoded_codigo_financiero
+2020,070,La Paz,la_paz,2020/MEX_2020_la_paz.json,hardcoded_codigo_financiero
+2020,071,Polotitlán,polotitlan,2020/MEX_2020_polotitlan.json,hardcoded_codigo_financiero
+2020,072,Rayón,rayon,2020/MEX_2020_rayon.json,hardcoded_codigo_financiero
+2020,073,San Antonio la Isla,san_antonio_la_isla,2020/MEX_2020_san_antonio_la_isla.json,hardcoded_codigo_financiero
+2020,074,San Felipe del Progreso,san_felipe_del_progreso,2020/MEX_2020_san_felipe_del_progreso.json,hardcoded_codigo_financiero
+2020,075,San Martín de las Pirámides,san_martin_de_las_piramides,2020/MEX_2020_san_martin_de_las_piramides.json,hardcoded_codigo_financiero
+2020,076,San Mateo Atenco,san_mateo_atenco,2020/MEX_2020_san_mateo_atenco.json,hardcoded_codigo_financiero
+2020,077,San Simón de Guerrero,san_simon_de_guerrero,2020/MEX_2020_san_simon_de_guerrero.json,hardcoded_codigo_financiero
+2020,078,Santo Tomás,santo_tomas,2020/MEX_2020_santo_tomas.json,hardcoded_codigo_financiero
+2020,079,Soyaniquilpan de Juárez,soyaniquilpan,2020/MEX_2020_soyaniquilpan.json,hardcoded_codigo_financiero
+2020,080,Sultepec,sultepec,2020/MEX_2020_sultepec.json,hardcoded_codigo_financiero
+2020,081,Tecámac,tecamac,2020/MEX_2020_tecamac.json,hardcoded_codigo_financiero
+2020,082,Tejupilco,tejupilco,2020/MEX_2020_tejupilco.json,hardcoded_codigo_financiero
+2020,083,Temamatla,temamatla,2020/MEX_2020_temamatla.json,hardcoded_codigo_financiero
+2020,084,Temascalapa,temascalapa,2020/MEX_2020_temascalapa.json,hardcoded_codigo_financiero
+2020,085,Temascalcingo,temascalcingo,2020/MEX_2020_temascalcingo.json,hardcoded_codigo_financiero
+2020,086,Temascaltepec,temascaltepec,2020/MEX_2020_temascaltepec.json,hardcoded_codigo_financiero
+2020,087,Temoaya,temoaya,2020/MEX_2020_temoaya.json,hardcoded_codigo_financiero
+2020,088,Tenancingo,tenancingo,2020/MEX_2020_tenancingo.json,hardcoded_codigo_financiero
+2020,089,Tenango del Aire,tenango_del_aire,2020/MEX_2020_tenango_del_aire.json,hardcoded_codigo_financiero
+2020,090,Tenango del Valle,tenango_del_valle,2020/MEX_2020_tenango_del_valle.json,hardcoded_codigo_financiero
+2020,091,Teoloyucan,teoloyucan,2020/MEX_2020_teoloyucan.json,hardcoded_codigo_financiero
+2020,092,Teotihuacán,teotihuacan,2020/MEX_2020_teotihuacan.json,hardcoded_codigo_financiero
+2020,093,Tepetlaoxtoc,tepetlaoxtoc,2020/MEX_2020_tepetlaoxtoc.json,hardcoded_codigo_financiero
+2020,094,Tepetlixpa,tepetlixpa,2020/MEX_2020_tepetlixpa.json,hardcoded_codigo_financiero
+2020,095,Tepotzotlán,tepotzotlan,2020/MEX_2020_tepotzotlan.json,hardcoded_codigo_financiero
+2020,096,Tequixquiac,tequixquiac,2020/MEX_2020_tequixquiac.json,hardcoded_codigo_financiero
+2020,097,Texcaltitlán,texcaltitlan,2020/MEX_2020_texcaltitlan.json,hardcoded_codigo_financiero
+2020,098,Texcalyacac,texcalyacac,2020/MEX_2020_texcalyacac.json,hardcoded_codigo_financiero
+2020,099,Texcoco,texcoco,2020/MEX_2020_texcoco.json,hardcoded_codigo_financiero
+2020,100,Tezoyuca,tezoyuca,2020/MEX_2020_tezoyuca.json,hardcoded_codigo_financiero
+2020,101,Tianguistenco,tianguistenco,2020/MEX_2020_tianguistenco.json,hardcoded_codigo_financiero
+2020,102,Timilpan,timilpan,2020/MEX_2020_timilpan.json,hardcoded_codigo_financiero
+2020,103,Tlalmanalco,tlalmanalco,2020/MEX_2020_tlalmanalco.json,hardcoded_codigo_financiero
+2020,104,Tlalnepantla de Baz,tlalnepantla,2020/MEX_2020_tlalnepantla.json,hardcoded_codigo_financiero
+2020,105,Tlatlaya,tlatlaya,2020/MEX_2020_tlatlaya.json,hardcoded_codigo_financiero
+2020,106,Toluca,toluca,2020/MEX_2020_toluca.json,hardcoded_codigo_financiero
+2020,107,Tonatico,tonatico,2020/MEX_2020_tonatico.json,hardcoded_codigo_financiero
+2020,108,Tultepec,tultepec,2020/MEX_2020_tultepec.json,hardcoded_codigo_financiero
+2020,109,Tultitlán,tultitlan,2020/MEX_2020_tultitlan.json,hardcoded_codigo_financiero
+2020,110,Valle de Bravo,valle_de_bravo,2020/MEX_2020_valle_de_bravo.json,hardcoded_codigo_financiero
+2020,111,Villa de Allende,villa_de_allende,2020/MEX_2020_villa_de_allende.json,hardcoded_codigo_financiero
+2020,112,Villa del Carbón,villa_del_carbon,2020/MEX_2020_villa_del_carbon.json,hardcoded_codigo_financiero
+2020,113,Villa Guerrero,villa_guerrero,2020/MEX_2020_villa_guerrero.json,hardcoded_codigo_financiero
+2020,114,Villa Victoria,villa_victoria,2020/MEX_2020_villa_victoria.json,hardcoded_codigo_financiero
+2020,115,Xonacatlán,xonacatlan,2020/MEX_2020_xonacatlan.json,hardcoded_codigo_financiero
+2020,116,Zacazonapan,zacazonapan,2020/MEX_2020_zacazonapan.json,hardcoded_codigo_financiero
+2020,117,Zacualpan,zacualpan,2020/MEX_2020_zacualpan.json,hardcoded_codigo_financiero
+2020,118,Zinacantepec,zinacantepec,2020/MEX_2020_zinacantepec.json,hardcoded_codigo_financiero
+2020,119,Zumpahuacán,zumpahuacan,2020/MEX_2020_zumpahuacan.json,hardcoded_codigo_financiero
+2020,120,Zumpango,zumpango,2020/MEX_2020_zumpango.json,hardcoded_codigo_financiero
+2020,121,Cuautitlán Izcalli,cuautitlan_izcalli,2020/MEX_2020_cuautitlan_izcalli.json,hardcoded_codigo_financiero
+2020,122,Valle de Chalco Solidaridad,valle_de_chalco,2020/MEX_2020_valle_de_chalco.json,hardcoded_codigo_financiero
+2020,123,Luvianos,luvianos,2020/MEX_2020_luvianos.json,hardcoded_codigo_financiero
+2020,124,San José del Rincón,san_jose_del_rincon,2020/MEX_2020_san_jose_del_rincon.json,hardcoded_codigo_financiero
+2020,125,Tonanitla,tonanitla,2020/MEX_2020_tonanitla.json,hardcoded_codigo_financiero
+2021,001,Acambay de Ruíz Castañeda,acambay,2021/MEX_2021_acambay.json,hardcoded_codigo_financiero
+2021,002,Acolman,acolman,2021/MEX_2021_acolman.json,hardcoded_codigo_financiero
+2021,003,Aculco,aculco,2021/MEX_2021_aculco.json,hardcoded_codigo_financiero
+2021,004,Almoloya de Alquisiras,almoloya_de_alquisiras,2021/MEX_2021_almoloya_de_alquisiras.json,hardcoded_codigo_financiero
+2021,005,Almoloya de Juárez,almoloya_de_juarez,2021/MEX_2021_almoloya_de_juarez.json,hardcoded_codigo_financiero
+2021,006,Almoloya del Río,almoloya_del_rio,2021/MEX_2021_almoloya_del_rio.json,hardcoded_codigo_financiero
+2021,007,Amanalco,amanalco,2021/MEX_2021_amanalco.json,hardcoded_codigo_financiero
+2021,008,Amatepec,amatepec,2021/MEX_2021_amatepec.json,hardcoded_codigo_financiero
+2021,009,Amecameca,amecameca,2021/MEX_2021_amecameca.json,hardcoded_codigo_financiero
+2021,010,Apaxco,apaxco,2021/MEX_2021_apaxco.json,hardcoded_codigo_financiero
+2021,011,Atenco,atenco,2021/MEX_2021_atenco.json,hardcoded_codigo_financiero
+2021,012,Atizapán,atizapan,2021/MEX_2021_atizapan.json,hardcoded_codigo_financiero
+2021,013,Atizapán de Zaragoza,atizapan_de_zaragoza,2021/MEX_2021_atizapan_de_zaragoza.json,hardcoded_codigo_financiero
+2021,014,Atlacomulco,atlacomulco,2021/MEX_2021_atlacomulco.json,hardcoded_codigo_financiero
+2021,015,Atlautla,atlautla,2021/MEX_2021_atlautla.json,hardcoded_codigo_financiero
+2021,016,Axapusco,axapusco,2021/MEX_2021_axapusco.json,hardcoded_codigo_financiero
+2021,017,Ayapango,ayapango,2021/MEX_2021_ayapango.json,hardcoded_codigo_financiero
+2021,018,Calimaya,calimaya,2021/MEX_2021_calimaya.json,hardcoded_codigo_financiero
+2021,019,Capulhuac,capulhuac,2021/MEX_2021_capulhuac.json,hardcoded_codigo_financiero
+2021,020,Coacalco de Berriozábal,coacalco,2021/MEX_2021_coacalco.json,hardcoded_codigo_financiero
+2021,021,Coatepec Harinas,coatepec_harinas,2021/MEX_2021_coatepec_harinas.json,hardcoded_codigo_financiero
+2021,022,Cocotitlán,cocotitlan,2021/MEX_2021_cocotitlan.json,hardcoded_codigo_financiero
+2021,023,Coyotepec,coyotepec,2021/MEX_2021_coyotepec.json,hardcoded_codigo_financiero
+2021,024,Cuautitlán,cuautitlan,2021/MEX_2021_cuautitlan.json,hardcoded_codigo_financiero
+2021,025,Chalco,chalco,2021/MEX_2021_chalco.json,hardcoded_codigo_financiero
+2021,026,Chapa de Mota,chapa_de_mota,2021/MEX_2021_chapa_de_mota.json,hardcoded_codigo_financiero
+2021,027,Chapultepec,chapultepec,2021/MEX_2021_chapultepec.json,hardcoded_codigo_financiero
+2021,028,Chiautla,chiautla,2021/MEX_2021_chiautla.json,hardcoded_codigo_financiero
+2021,029,Chicoloapan,chicoloapan,2021/MEX_2021_chicoloapan.json,hardcoded_codigo_financiero
+2021,030,Chiconcuac,chiconcuac,2021/MEX_2021_chiconcuac.json,hardcoded_codigo_financiero
+2021,031,Chimalhuacán,chimalhuacan,2021/MEX_2021_chimalhuacan.json,hardcoded_codigo_financiero
+2021,032,Donato Guerra,donato_guerra,2021/MEX_2021_donato_guerra.json,hardcoded_codigo_financiero
+2021,033,Ecatepec de Morelos,ecatepec,2021/MEX_2021_ecatepec.json,hardcoded_codigo_financiero
+2021,034,Ecatzingo,ecatzingo,2021/MEX_2021_ecatzingo.json,hardcoded_codigo_financiero
+2021,035,Huehuetoca,huehuetoca,2021/MEX_2021_huehuetoca.json,hardcoded_codigo_financiero
+2021,036,Hueypoxtla,hueypoxtla,2021/MEX_2021_hueypoxtla.json,hardcoded_codigo_financiero
+2021,037,Huixquilucan,huixquilucan,2021/MEX_2021_huixquilucan.json,hardcoded_codigo_financiero
+2021,038,Isidro Fabela,isidro_fabela,2021/MEX_2021_isidro_fabela.json,hardcoded_codigo_financiero
+2021,039,Ixtapaluca,ixtapaluca,2021/MEX_2021_ixtapaluca.json,hardcoded_codigo_financiero
+2021,040,Ixtapan de la Sal,ixtapan_de_la_sal,2021/MEX_2021_ixtapan_de_la_sal.json,hardcoded_codigo_financiero
+2021,041,Ixtapan del Oro,ixtapan_del_oro,2021/MEX_2021_ixtapan_del_oro.json,hardcoded_codigo_financiero
+2021,042,Ixtlahuaca,ixtlahuaca,2021/MEX_2021_ixtlahuaca.json,hardcoded_codigo_financiero
+2021,043,Xalatlaco,xalatlaco,2021/MEX_2021_xalatlaco.json,hardcoded_codigo_financiero
+2021,044,Jaltenco,jaltenco,2021/MEX_2021_jaltenco.json,hardcoded_codigo_financiero
+2021,045,Jilotepec,jilotepec,2021/MEX_2021_jilotepec.json,hardcoded_codigo_financiero
+2021,046,Jilotzingo,jilotzingo,2021/MEX_2021_jilotzingo.json,hardcoded_codigo_financiero
+2021,047,Jiquipilco,jiquipilco,2021/MEX_2021_jiquipilco.json,hardcoded_codigo_financiero
+2021,048,Jocotitlán,jocotitlan,2021/MEX_2021_jocotitlan.json,hardcoded_codigo_financiero
+2021,049,Joquicingo,joquicingo,2021/MEX_2021_joquicingo.json,hardcoded_codigo_financiero
+2021,050,Juchitepec,juchitepec,2021/MEX_2021_juchitepec.json,hardcoded_codigo_financiero
+2021,051,Lerma,lerma,2021/MEX_2021_lerma.json,hardcoded_codigo_financiero
+2021,052,Malinalco,malinalco,2021/MEX_2021_malinalco.json,hardcoded_codigo_financiero
+2021,053,Melchor Ocampo,melchor_ocampo,2021/MEX_2021_melchor_ocampo.json,hardcoded_codigo_financiero
+2021,054,Metepec,metepec,2021/MEX_2021_metepec.json,hardcoded_codigo_financiero
+2021,055,Mexicaltzingo,mexicaltzingo,2021/MEX_2021_mexicaltzingo.json,hardcoded_codigo_financiero
+2021,056,Morelos,morelos,2021/MEX_2021_morelos.json,hardcoded_codigo_financiero
+2021,057,Naucalpan de Juárez,naucalpan,2021/MEX_2021_naucalpan.json,hardcoded_codigo_financiero
+2021,058,Nezahualcóyotl,nezahualcoyotl,2021/MEX_2021_nezahualcoyotl.json,hardcoded_codigo_financiero
+2021,059,Nextlalpan,nextlalpan,2021/MEX_2021_nextlalpan.json,hardcoded_codigo_financiero
+2021,060,Nicolás Romero,nicolas_romero,2021/MEX_2021_nicolas_romero.json,hardcoded_codigo_financiero
+2021,061,Nopaltepec,nopaltepec,2021/MEX_2021_nopaltepec.json,hardcoded_codigo_financiero
+2021,062,Ocoyoacac,ocoyoacac,2021/MEX_2021_ocoyoacac.json,hardcoded_codigo_financiero
+2021,063,Ocuilan,ocuilan,2021/MEX_2021_ocuilan.json,hardcoded_codigo_financiero
+2021,064,El Oro,el_oro,2021/MEX_2021_el_oro.json,hardcoded_codigo_financiero
+2021,065,Otumba,otumba,2021/MEX_2021_otumba.json,hardcoded_codigo_financiero
+2021,066,Otzoloapan,otzoloapan,2021/MEX_2021_otzoloapan.json,hardcoded_codigo_financiero
+2021,067,Otzolotepec,otzolotepec,2021/MEX_2021_otzolotepec.json,hardcoded_codigo_financiero
+2021,068,Ozumba,ozumba,2021/MEX_2021_ozumba.json,hardcoded_codigo_financiero
+2021,069,Papalotla,papalotla,2021/MEX_2021_papalotla.json,hardcoded_codigo_financiero
+2021,070,La Paz,la_paz,2021/MEX_2021_la_paz.json,hardcoded_codigo_financiero
+2021,071,Polotitlán,polotitlan,2021/MEX_2021_polotitlan.json,hardcoded_codigo_financiero
+2021,072,Rayón,rayon,2021/MEX_2021_rayon.json,hardcoded_codigo_financiero
+2021,073,San Antonio la Isla,san_antonio_la_isla,2021/MEX_2021_san_antonio_la_isla.json,hardcoded_codigo_financiero
+2021,074,San Felipe del Progreso,san_felipe_del_progreso,2021/MEX_2021_san_felipe_del_progreso.json,hardcoded_codigo_financiero
+2021,075,San Martín de las Pirámides,san_martin_de_las_piramides,2021/MEX_2021_san_martin_de_las_piramides.json,hardcoded_codigo_financiero
+2021,076,San Mateo Atenco,san_mateo_atenco,2021/MEX_2021_san_mateo_atenco.json,hardcoded_codigo_financiero
+2021,077,San Simón de Guerrero,san_simon_de_guerrero,2021/MEX_2021_san_simon_de_guerrero.json,hardcoded_codigo_financiero
+2021,078,Santo Tomás,santo_tomas,2021/MEX_2021_santo_tomas.json,hardcoded_codigo_financiero
+2021,079,Soyaniquilpan de Juárez,soyaniquilpan,2021/MEX_2021_soyaniquilpan.json,hardcoded_codigo_financiero
+2021,080,Sultepec,sultepec,2021/MEX_2021_sultepec.json,hardcoded_codigo_financiero
+2021,081,Tecámac,tecamac,2021/MEX_2021_tecamac.json,hardcoded_codigo_financiero
+2021,082,Tejupilco,tejupilco,2021/MEX_2021_tejupilco.json,hardcoded_codigo_financiero
+2021,083,Temamatla,temamatla,2021/MEX_2021_temamatla.json,hardcoded_codigo_financiero
+2021,084,Temascalapa,temascalapa,2021/MEX_2021_temascalapa.json,hardcoded_codigo_financiero
+2021,085,Temascalcingo,temascalcingo,2021/MEX_2021_temascalcingo.json,hardcoded_codigo_financiero
+2021,086,Temascaltepec,temascaltepec,2021/MEX_2021_temascaltepec.json,hardcoded_codigo_financiero
+2021,087,Temoaya,temoaya,2021/MEX_2021_temoaya.json,hardcoded_codigo_financiero
+2021,088,Tenancingo,tenancingo,2021/MEX_2021_tenancingo.json,hardcoded_codigo_financiero
+2021,089,Tenango del Aire,tenango_del_aire,2021/MEX_2021_tenango_del_aire.json,hardcoded_codigo_financiero
+2021,090,Tenango del Valle,tenango_del_valle,2021/MEX_2021_tenango_del_valle.json,hardcoded_codigo_financiero
+2021,091,Teoloyucan,teoloyucan,2021/MEX_2021_teoloyucan.json,hardcoded_codigo_financiero
+2021,092,Teotihuacán,teotihuacan,2021/MEX_2021_teotihuacan.json,hardcoded_codigo_financiero
+2021,093,Tepetlaoxtoc,tepetlaoxtoc,2021/MEX_2021_tepetlaoxtoc.json,hardcoded_codigo_financiero
+2021,094,Tepetlixpa,tepetlixpa,2021/MEX_2021_tepetlixpa.json,hardcoded_codigo_financiero
+2021,095,Tepotzotlán,tepotzotlan,2021/MEX_2021_tepotzotlan.json,hardcoded_codigo_financiero
+2021,096,Tequixquiac,tequixquiac,2021/MEX_2021_tequixquiac.json,hardcoded_codigo_financiero
+2021,097,Texcaltitlán,texcaltitlan,2021/MEX_2021_texcaltitlan.json,hardcoded_codigo_financiero
+2021,098,Texcalyacac,texcalyacac,2021/MEX_2021_texcalyacac.json,hardcoded_codigo_financiero
+2021,099,Texcoco,texcoco,2021/MEX_2021_texcoco.json,hardcoded_codigo_financiero
+2021,100,Tezoyuca,tezoyuca,2021/MEX_2021_tezoyuca.json,hardcoded_codigo_financiero
+2021,101,Tianguistenco,tianguistenco,2021/MEX_2021_tianguistenco.json,hardcoded_codigo_financiero
+2021,102,Timilpan,timilpan,2021/MEX_2021_timilpan.json,hardcoded_codigo_financiero
+2021,103,Tlalmanalco,tlalmanalco,2021/MEX_2021_tlalmanalco.json,hardcoded_codigo_financiero
+2021,104,Tlalnepantla de Baz,tlalnepantla,2021/MEX_2021_tlalnepantla.json,hardcoded_codigo_financiero
+2021,105,Tlatlaya,tlatlaya,2021/MEX_2021_tlatlaya.json,hardcoded_codigo_financiero
+2021,106,Toluca,toluca,2021/MEX_2021_toluca.json,hardcoded_codigo_financiero
+2021,107,Tonatico,tonatico,2021/MEX_2021_tonatico.json,hardcoded_codigo_financiero
+2021,108,Tultepec,tultepec,2021/MEX_2021_tultepec.json,hardcoded_codigo_financiero
+2021,109,Tultitlán,tultitlan,2021/MEX_2021_tultitlan.json,hardcoded_codigo_financiero
+2021,110,Valle de Bravo,valle_de_bravo,2021/MEX_2021_valle_de_bravo.json,hardcoded_codigo_financiero
+2021,111,Villa de Allende,villa_de_allende,2021/MEX_2021_villa_de_allende.json,hardcoded_codigo_financiero
+2021,112,Villa del Carbón,villa_del_carbon,2021/MEX_2021_villa_del_carbon.json,hardcoded_codigo_financiero
+2021,113,Villa Guerrero,villa_guerrero,2021/MEX_2021_villa_guerrero.json,hardcoded_codigo_financiero
+2021,114,Villa Victoria,villa_victoria,2021/MEX_2021_villa_victoria.json,hardcoded_codigo_financiero
+2021,115,Xonacatlán,xonacatlan,2021/MEX_2021_xonacatlan.json,hardcoded_codigo_financiero
+2021,116,Zacazonapan,zacazonapan,2021/MEX_2021_zacazonapan.json,hardcoded_codigo_financiero
+2021,117,Zacualpan,zacualpan,2021/MEX_2021_zacualpan.json,hardcoded_codigo_financiero
+2021,118,Zinacantepec,zinacantepec,2021/MEX_2021_zinacantepec.json,hardcoded_codigo_financiero
+2021,119,Zumpahuacán,zumpahuacan,2021/MEX_2021_zumpahuacan.json,hardcoded_codigo_financiero
+2021,120,Zumpango,zumpango,2021/MEX_2021_zumpango.json,hardcoded_codigo_financiero
+2021,121,Cuautitlán Izcalli,cuautitlan_izcalli,2021/MEX_2021_cuautitlan_izcalli.json,hardcoded_codigo_financiero
+2021,122,Valle de Chalco Solidaridad,valle_de_chalco,2021/MEX_2021_valle_de_chalco.json,hardcoded_codigo_financiero
+2021,123,Luvianos,luvianos,2021/MEX_2021_luvianos.json,hardcoded_codigo_financiero
+2021,124,San José del Rincón,san_jose_del_rincon,2021/MEX_2021_san_jose_del_rincon.json,hardcoded_codigo_financiero
+2021,125,Tonanitla,tonanitla,2021/MEX_2021_tonanitla.json,hardcoded_codigo_financiero
+2022,001,Acambay de Ruíz Castañeda,acambay,2022/MEX_2022_acambay.json,hardcoded_codigo_financiero
+2022,002,Acolman,acolman,2022/MEX_2022_acolman.json,hardcoded_codigo_financiero
+2022,003,Aculco,aculco,2022/MEX_2022_aculco.json,hardcoded_codigo_financiero
+2022,004,Almoloya de Alquisiras,almoloya_de_alquisiras,2022/MEX_2022_almoloya_de_alquisiras.json,hardcoded_codigo_financiero
+2022,005,Almoloya de Juárez,almoloya_de_juarez,2022/MEX_2022_almoloya_de_juarez.json,hardcoded_codigo_financiero
+2022,006,Almoloya del Río,almoloya_del_rio,2022/MEX_2022_almoloya_del_rio.json,hardcoded_codigo_financiero
+2022,007,Amanalco,amanalco,2022/MEX_2022_amanalco.json,hardcoded_codigo_financiero
+2022,008,Amatepec,amatepec,2022/MEX_2022_amatepec.json,hardcoded_codigo_financiero
+2022,009,Amecameca,amecameca,2022/MEX_2022_amecameca.json,hardcoded_codigo_financiero
+2022,010,Apaxco,apaxco,2022/MEX_2022_apaxco.json,hardcoded_codigo_financiero
+2022,011,Atenco,atenco,2022/MEX_2022_atenco.json,hardcoded_codigo_financiero
+2022,012,Atizapán,atizapan,2022/MEX_2022_atizapan.json,hardcoded_codigo_financiero
+2022,013,Atizapán de Zaragoza,atizapan_de_zaragoza,2022/MEX_2022_atizapan_de_zaragoza.json,hardcoded_codigo_financiero
+2022,014,Atlacomulco,atlacomulco,2022/MEX_2022_atlacomulco.json,hardcoded_codigo_financiero
+2022,015,Atlautla,atlautla,2022/MEX_2022_atlautla.json,hardcoded_codigo_financiero
+2022,016,Axapusco,axapusco,2022/MEX_2022_axapusco.json,hardcoded_codigo_financiero
+2022,017,Ayapango,ayapango,2022/MEX_2022_ayapango.json,hardcoded_codigo_financiero
+2022,018,Calimaya,calimaya,2022/MEX_2022_calimaya.json,hardcoded_codigo_financiero
+2022,019,Capulhuac,capulhuac,2022/MEX_2022_capulhuac.json,hardcoded_codigo_financiero
+2022,020,Coacalco de Berriozábal,coacalco,2022/MEX_2022_coacalco.json,hardcoded_codigo_financiero
+2022,021,Coatepec Harinas,coatepec_harinas,2022/MEX_2022_coatepec_harinas.json,hardcoded_codigo_financiero
+2022,022,Cocotitlán,cocotitlan,2022/MEX_2022_cocotitlan.json,hardcoded_codigo_financiero
+2022,023,Coyotepec,coyotepec,2022/MEX_2022_coyotepec.json,hardcoded_codigo_financiero
+2022,024,Cuautitlán,cuautitlan,2022/MEX_2022_cuautitlan.json,hardcoded_codigo_financiero
+2022,025,Chalco,chalco,2022/MEX_2022_chalco.json,hardcoded_codigo_financiero
+2022,026,Chapa de Mota,chapa_de_mota,2022/MEX_2022_chapa_de_mota.json,hardcoded_codigo_financiero
+2022,027,Chapultepec,chapultepec,2022/MEX_2022_chapultepec.json,hardcoded_codigo_financiero
+2022,028,Chiautla,chiautla,2022/MEX_2022_chiautla.json,hardcoded_codigo_financiero
+2022,029,Chicoloapan,chicoloapan,2022/MEX_2022_chicoloapan.json,hardcoded_codigo_financiero
+2022,030,Chiconcuac,chiconcuac,2022/MEX_2022_chiconcuac.json,hardcoded_codigo_financiero
+2022,031,Chimalhuacán,chimalhuacan,2022/MEX_2022_chimalhuacan.json,hardcoded_codigo_financiero
+2022,032,Donato Guerra,donato_guerra,2022/MEX_2022_donato_guerra.json,hardcoded_codigo_financiero
+2022,033,Ecatepec de Morelos,ecatepec,2022/MEX_2022_ecatepec.json,hardcoded_codigo_financiero
+2022,034,Ecatzingo,ecatzingo,2022/MEX_2022_ecatzingo.json,hardcoded_codigo_financiero
+2022,035,Huehuetoca,huehuetoca,2022/MEX_2022_huehuetoca.json,hardcoded_codigo_financiero
+2022,036,Hueypoxtla,hueypoxtla,2022/MEX_2022_hueypoxtla.json,hardcoded_codigo_financiero
+2022,037,Huixquilucan,huixquilucan,2022/MEX_2022_huixquilucan.json,hardcoded_codigo_financiero
+2022,038,Isidro Fabela,isidro_fabela,2022/MEX_2022_isidro_fabela.json,hardcoded_codigo_financiero
+2022,039,Ixtapaluca,ixtapaluca,2022/MEX_2022_ixtapaluca.json,hardcoded_codigo_financiero
+2022,040,Ixtapan de la Sal,ixtapan_de_la_sal,2022/MEX_2022_ixtapan_de_la_sal.json,hardcoded_codigo_financiero
+2022,041,Ixtapan del Oro,ixtapan_del_oro,2022/MEX_2022_ixtapan_del_oro.json,hardcoded_codigo_financiero
+2022,042,Ixtlahuaca,ixtlahuaca,2022/MEX_2022_ixtlahuaca.json,hardcoded_codigo_financiero
+2022,043,Xalatlaco,xalatlaco,2022/MEX_2022_xalatlaco.json,hardcoded_codigo_financiero
+2022,044,Jaltenco,jaltenco,2022/MEX_2022_jaltenco.json,hardcoded_codigo_financiero
+2022,045,Jilotepec,jilotepec,2022/MEX_2022_jilotepec.json,hardcoded_codigo_financiero
+2022,046,Jilotzingo,jilotzingo,2022/MEX_2022_jilotzingo.json,hardcoded_codigo_financiero
+2022,047,Jiquipilco,jiquipilco,2022/MEX_2022_jiquipilco.json,hardcoded_codigo_financiero
+2022,048,Jocotitlán,jocotitlan,2022/MEX_2022_jocotitlan.json,hardcoded_codigo_financiero
+2022,049,Joquicingo,joquicingo,2022/MEX_2022_joquicingo.json,hardcoded_codigo_financiero
+2022,050,Juchitepec,juchitepec,2022/MEX_2022_juchitepec.json,hardcoded_codigo_financiero
+2022,051,Lerma,lerma,2022/MEX_2022_lerma.json,hardcoded_codigo_financiero
+2022,052,Malinalco,malinalco,2022/MEX_2022_malinalco.json,hardcoded_codigo_financiero
+2022,053,Melchor Ocampo,melchor_ocampo,2022/MEX_2022_melchor_ocampo.json,hardcoded_codigo_financiero
+2022,054,Metepec,metepec,2022/MEX_2022_metepec.json,hardcoded_codigo_financiero
+2022,055,Mexicaltzingo,mexicaltzingo,2022/MEX_2022_mexicaltzingo.json,hardcoded_codigo_financiero
+2022,056,Morelos,morelos,2022/MEX_2022_morelos.json,hardcoded_codigo_financiero
+2022,057,Naucalpan de Juárez,naucalpan,2022/MEX_2022_naucalpan.json,hardcoded_codigo_financiero
+2022,058,Nezahualcóyotl,nezahualcoyotl,2022/MEX_2022_nezahualcoyotl.json,hardcoded_codigo_financiero
+2022,059,Nextlalpan,nextlalpan,2022/MEX_2022_nextlalpan.json,hardcoded_codigo_financiero
+2022,060,Nicolás Romero,nicolas_romero,2022/MEX_2022_nicolas_romero.json,hardcoded_codigo_financiero
+2022,061,Nopaltepec,nopaltepec,2022/MEX_2022_nopaltepec.json,hardcoded_codigo_financiero
+2022,062,Ocoyoacac,ocoyoacac,2022/MEX_2022_ocoyoacac.json,hardcoded_codigo_financiero
+2022,063,Ocuilan,ocuilan,2022/MEX_2022_ocuilan.json,hardcoded_codigo_financiero
+2022,064,El Oro,el_oro,2022/MEX_2022_el_oro.json,hardcoded_codigo_financiero
+2022,065,Otumba,otumba,2022/MEX_2022_otumba.json,hardcoded_codigo_financiero
+2022,066,Otzoloapan,otzoloapan,2022/MEX_2022_otzoloapan.json,hardcoded_codigo_financiero
+2022,067,Otzolotepec,otzolotepec,2022/MEX_2022_otzolotepec.json,hardcoded_codigo_financiero
+2022,068,Ozumba,ozumba,2022/MEX_2022_ozumba.json,hardcoded_codigo_financiero
+2022,069,Papalotla,papalotla,2022/MEX_2022_papalotla.json,hardcoded_codigo_financiero
+2022,070,La Paz,la_paz,2022/MEX_2022_la_paz.json,hardcoded_codigo_financiero
+2022,071,Polotitlán,polotitlan,2022/MEX_2022_polotitlan.json,hardcoded_codigo_financiero
+2022,072,Rayón,rayon,2022/MEX_2022_rayon.json,hardcoded_codigo_financiero
+2022,073,San Antonio la Isla,san_antonio_la_isla,2022/MEX_2022_san_antonio_la_isla.json,hardcoded_codigo_financiero
+2022,074,San Felipe del Progreso,san_felipe_del_progreso,2022/MEX_2022_san_felipe_del_progreso.json,hardcoded_codigo_financiero
+2022,075,San Martín de las Pirámides,san_martin_de_las_piramides,2022/MEX_2022_san_martin_de_las_piramides.json,hardcoded_codigo_financiero
+2022,076,San Mateo Atenco,san_mateo_atenco,2022/MEX_2022_san_mateo_atenco.json,hardcoded_codigo_financiero
+2022,077,San Simón de Guerrero,san_simon_de_guerrero,2022/MEX_2022_san_simon_de_guerrero.json,hardcoded_codigo_financiero
+2022,078,Santo Tomás,santo_tomas,2022/MEX_2022_santo_tomas.json,hardcoded_codigo_financiero
+2022,079,Soyaniquilpan de Juárez,soyaniquilpan,2022/MEX_2022_soyaniquilpan.json,hardcoded_codigo_financiero
+2022,080,Sultepec,sultepec,2022/MEX_2022_sultepec.json,hardcoded_codigo_financiero
+2022,081,Tecámac,tecamac,2022/MEX_2022_tecamac.json,hardcoded_codigo_financiero
+2022,082,Tejupilco,tejupilco,2022/MEX_2022_tejupilco.json,hardcoded_codigo_financiero
+2022,083,Temamatla,temamatla,2022/MEX_2022_temamatla.json,hardcoded_codigo_financiero
+2022,084,Temascalapa,temascalapa,2022/MEX_2022_temascalapa.json,hardcoded_codigo_financiero
+2022,085,Temascalcingo,temascalcingo,2022/MEX_2022_temascalcingo.json,hardcoded_codigo_financiero
+2022,086,Temascaltepec,temascaltepec,2022/MEX_2022_temascaltepec.json,hardcoded_codigo_financiero
+2022,087,Temoaya,temoaya,2022/MEX_2022_temoaya.json,hardcoded_codigo_financiero
+2022,088,Tenancingo,tenancingo,2022/MEX_2022_tenancingo.json,hardcoded_codigo_financiero
+2022,089,Tenango del Aire,tenango_del_aire,2022/MEX_2022_tenango_del_aire.json,hardcoded_codigo_financiero
+2022,090,Tenango del Valle,tenango_del_valle,2022/MEX_2022_tenango_del_valle.json,hardcoded_codigo_financiero
+2022,091,Teoloyucan,teoloyucan,2022/MEX_2022_teoloyucan.json,hardcoded_codigo_financiero
+2022,092,Teotihuacán,teotihuacan,2022/MEX_2022_teotihuacan.json,hardcoded_codigo_financiero
+2022,093,Tepetlaoxtoc,tepetlaoxtoc,2022/MEX_2022_tepetlaoxtoc.json,hardcoded_codigo_financiero
+2022,094,Tepetlixpa,tepetlixpa,2022/MEX_2022_tepetlixpa.json,hardcoded_codigo_financiero
+2022,095,Tepotzotlán,tepotzotlan,2022/MEX_2022_tepotzotlan.json,hardcoded_codigo_financiero
+2022,096,Tequixquiac,tequixquiac,2022/MEX_2022_tequixquiac.json,hardcoded_codigo_financiero
+2022,097,Texcaltitlán,texcaltitlan,2022/MEX_2022_texcaltitlan.json,hardcoded_codigo_financiero
+2022,098,Texcalyacac,texcalyacac,2022/MEX_2022_texcalyacac.json,hardcoded_codigo_financiero
+2022,099,Texcoco,texcoco,2022/MEX_2022_texcoco.json,hardcoded_codigo_financiero
+2022,100,Tezoyuca,tezoyuca,2022/MEX_2022_tezoyuca.json,hardcoded_codigo_financiero
+2022,101,Tianguistenco,tianguistenco,2022/MEX_2022_tianguistenco.json,hardcoded_codigo_financiero
+2022,102,Timilpan,timilpan,2022/MEX_2022_timilpan.json,hardcoded_codigo_financiero
+2022,103,Tlalmanalco,tlalmanalco,2022/MEX_2022_tlalmanalco.json,hardcoded_codigo_financiero
+2022,104,Tlalnepantla de Baz,tlalnepantla,2022/MEX_2022_tlalnepantla.json,hardcoded_codigo_financiero
+2022,105,Tlatlaya,tlatlaya,2022/MEX_2022_tlatlaya.json,hardcoded_codigo_financiero
+2022,106,Toluca,toluca,2022/MEX_2022_toluca.json,hardcoded_codigo_financiero
+2022,107,Tonatico,tonatico,2022/MEX_2022_tonatico.json,hardcoded_codigo_financiero
+2022,108,Tultepec,tultepec,2022/MEX_2022_tultepec.json,hardcoded_codigo_financiero
+2022,109,Tultitlán,tultitlan,2022/MEX_2022_tultitlan.json,hardcoded_codigo_financiero
+2022,110,Valle de Bravo,valle_de_bravo,2022/MEX_2022_valle_de_bravo.json,hardcoded_codigo_financiero
+2022,111,Villa de Allende,villa_de_allende,2022/MEX_2022_villa_de_allende.json,hardcoded_codigo_financiero
+2022,112,Villa del Carbón,villa_del_carbon,2022/MEX_2022_villa_del_carbon.json,hardcoded_codigo_financiero
+2022,113,Villa Guerrero,villa_guerrero,2022/MEX_2022_villa_guerrero.json,hardcoded_codigo_financiero
+2022,114,Villa Victoria,villa_victoria,2022/MEX_2022_villa_victoria.json,hardcoded_codigo_financiero
+2022,115,Xonacatlán,xonacatlan,2022/MEX_2022_xonacatlan.json,hardcoded_codigo_financiero
+2022,116,Zacazonapan,zacazonapan,2022/MEX_2022_zacazonapan.json,hardcoded_codigo_financiero
+2022,117,Zacualpan,zacualpan,2022/MEX_2022_zacualpan.json,hardcoded_codigo_financiero
+2022,118,Zinacantepec,zinacantepec,2022/MEX_2022_zinacantepec.json,hardcoded_codigo_financiero
+2022,119,Zumpahuacán,zumpahuacan,2022/MEX_2022_zumpahuacan.json,hardcoded_codigo_financiero
+2022,120,Zumpango,zumpango,2022/MEX_2022_zumpango.json,hardcoded_codigo_financiero
+2022,121,Cuautitlán Izcalli,cuautitlan_izcalli,2022/MEX_2022_cuautitlan_izcalli.json,hardcoded_codigo_financiero
+2022,122,Valle de Chalco Solidaridad,valle_de_chalco,2022/MEX_2022_valle_de_chalco.json,hardcoded_codigo_financiero
+2022,123,Luvianos,luvianos,2022/MEX_2022_luvianos.json,hardcoded_codigo_financiero
+2022,124,San José del Rincón,san_jose_del_rincon,2022/MEX_2022_san_jose_del_rincon.json,hardcoded_codigo_financiero
+2022,125,Tonanitla,tonanitla,2022/MEX_2022_tonanitla.json,hardcoded_codigo_financiero
+2023,001,Acambay de Ruíz Castañeda,acambay,2023/MEX_2023_acambay.json,hardcoded_codigo_financiero
+2023,002,Acolman,acolman,2023/MEX_2023_acolman.json,hardcoded_codigo_financiero
+2023,003,Aculco,aculco,2023/MEX_2023_aculco.json,hardcoded_codigo_financiero
+2023,004,Almoloya de Alquisiras,almoloya_de_alquisiras,2023/MEX_2023_almoloya_de_alquisiras.json,hardcoded_codigo_financiero
+2023,005,Almoloya de Juárez,almoloya_de_juarez,2023/MEX_2023_almoloya_de_juarez.json,hardcoded_codigo_financiero
+2023,006,Almoloya del Río,almoloya_del_rio,2023/MEX_2023_almoloya_del_rio.json,hardcoded_codigo_financiero
+2023,007,Amanalco,amanalco,2023/MEX_2023_amanalco.json,hardcoded_codigo_financiero
+2023,008,Amatepec,amatepec,2023/MEX_2023_amatepec.json,hardcoded_codigo_financiero
+2023,009,Amecameca,amecameca,2023/MEX_2023_amecameca.json,hardcoded_codigo_financiero
+2023,010,Apaxco,apaxco,2023/MEX_2023_apaxco.json,hardcoded_codigo_financiero
+2023,011,Atenco,atenco,2023/MEX_2023_atenco.json,hardcoded_codigo_financiero
+2023,012,Atizapán,atizapan,2023/MEX_2023_atizapan.json,hardcoded_codigo_financiero
+2023,013,Atizapán de Zaragoza,atizapan_de_zaragoza,2023/MEX_2023_atizapan_de_zaragoza.json,hardcoded_codigo_financiero
+2023,014,Atlacomulco,atlacomulco,2023/MEX_2023_atlacomulco.json,hardcoded_codigo_financiero
+2023,015,Atlautla,atlautla,2023/MEX_2023_atlautla.json,hardcoded_codigo_financiero
+2023,016,Axapusco,axapusco,2023/MEX_2023_axapusco.json,hardcoded_codigo_financiero
+2023,017,Ayapango,ayapango,2023/MEX_2023_ayapango.json,hardcoded_codigo_financiero
+2023,018,Calimaya,calimaya,2023/MEX_2023_calimaya.json,hardcoded_codigo_financiero
+2023,019,Capulhuac,capulhuac,2023/MEX_2023_capulhuac.json,hardcoded_codigo_financiero
+2023,020,Coacalco de Berriozábal,coacalco,2023/MEX_2023_coacalco.json,hardcoded_codigo_financiero
+2023,021,Coatepec Harinas,coatepec_harinas,2023/MEX_2023_coatepec_harinas.json,hardcoded_codigo_financiero
+2023,022,Cocotitlán,cocotitlan,2023/MEX_2023_cocotitlan.json,hardcoded_codigo_financiero
+2023,023,Coyotepec,coyotepec,2023/MEX_2023_coyotepec.json,hardcoded_codigo_financiero
+2023,024,Cuautitlán,cuautitlan,2023/MEX_2023_cuautitlan.json,hardcoded_codigo_financiero
+2023,025,Chalco,chalco,2023/MEX_2023_chalco.json,hardcoded_codigo_financiero
+2023,026,Chapa de Mota,chapa_de_mota,2023/MEX_2023_chapa_de_mota.json,hardcoded_codigo_financiero
+2023,027,Chapultepec,chapultepec,2023/MEX_2023_chapultepec.json,hardcoded_codigo_financiero
+2023,028,Chiautla,chiautla,2023/MEX_2023_chiautla.json,hardcoded_codigo_financiero
+2023,029,Chicoloapan,chicoloapan,2023/MEX_2023_chicoloapan.json,hardcoded_codigo_financiero
+2023,030,Chiconcuac,chiconcuac,2023/MEX_2023_chiconcuac.json,hardcoded_codigo_financiero
+2023,031,Chimalhuacán,chimalhuacan,2023/MEX_2023_chimalhuacan.json,hardcoded_codigo_financiero
+2023,032,Donato Guerra,donato_guerra,2023/MEX_2023_donato_guerra.json,hardcoded_codigo_financiero
+2023,033,Ecatepec de Morelos,ecatepec,2023/MEX_2023_ecatepec.json,hardcoded_codigo_financiero
+2023,034,Ecatzingo,ecatzingo,2023/MEX_2023_ecatzingo.json,hardcoded_codigo_financiero
+2023,035,Huehuetoca,huehuetoca,2023/MEX_2023_huehuetoca.json,hardcoded_codigo_financiero
+2023,036,Hueypoxtla,hueypoxtla,2023/MEX_2023_hueypoxtla.json,hardcoded_codigo_financiero
+2023,037,Huixquilucan,huixquilucan,2023/MEX_2023_huixquilucan.json,hardcoded_codigo_financiero
+2023,038,Isidro Fabela,isidro_fabela,2023/MEX_2023_isidro_fabela.json,hardcoded_codigo_financiero
+2023,039,Ixtapaluca,ixtapaluca,2023/MEX_2023_ixtapaluca.json,hardcoded_codigo_financiero
+2023,040,Ixtapan de la Sal,ixtapan_de_la_sal,2023/MEX_2023_ixtapan_de_la_sal.json,hardcoded_codigo_financiero
+2023,041,Ixtapan del Oro,ixtapan_del_oro,2023/MEX_2023_ixtapan_del_oro.json,hardcoded_codigo_financiero
+2023,042,Ixtlahuaca,ixtlahuaca,2023/MEX_2023_ixtlahuaca.json,hardcoded_codigo_financiero
+2023,043,Xalatlaco,xalatlaco,2023/MEX_2023_xalatlaco.json,hardcoded_codigo_financiero
+2023,044,Jaltenco,jaltenco,2023/MEX_2023_jaltenco.json,hardcoded_codigo_financiero
+2023,045,Jilotepec,jilotepec,2023/MEX_2023_jilotepec.json,hardcoded_codigo_financiero
+2023,046,Jilotzingo,jilotzingo,2023/MEX_2023_jilotzingo.json,hardcoded_codigo_financiero
+2023,047,Jiquipilco,jiquipilco,2023/MEX_2023_jiquipilco.json,hardcoded_codigo_financiero
+2023,048,Jocotitlán,jocotitlan,2023/MEX_2023_jocotitlan.json,hardcoded_codigo_financiero
+2023,049,Joquicingo,joquicingo,2023/MEX_2023_joquicingo.json,hardcoded_codigo_financiero
+2023,050,Juchitepec,juchitepec,2023/MEX_2023_juchitepec.json,hardcoded_codigo_financiero
+2023,051,Lerma,lerma,2023/MEX_2023_lerma.json,hardcoded_codigo_financiero
+2023,052,Malinalco,malinalco,2023/MEX_2023_malinalco.json,hardcoded_codigo_financiero
+2023,053,Melchor Ocampo,melchor_ocampo,2023/MEX_2023_melchor_ocampo.json,hardcoded_codigo_financiero
+2023,054,Metepec,metepec,2023/MEX_2023_metepec.json,hardcoded_codigo_financiero
+2023,055,Mexicaltzingo,mexicaltzingo,2023/MEX_2023_mexicaltzingo.json,hardcoded_codigo_financiero
+2023,056,Morelos,morelos,2023/MEX_2023_morelos.json,hardcoded_codigo_financiero
+2023,057,Naucalpan de Juárez,naucalpan,2023/MEX_2023_naucalpan.json,hardcoded_codigo_financiero
+2023,058,Nezahualcóyotl,nezahualcoyotl,2023/MEX_2023_nezahualcoyotl.json,hardcoded_codigo_financiero
+2023,059,Nextlalpan,nextlalpan,2023/MEX_2023_nextlalpan.json,hardcoded_codigo_financiero
+2023,060,Nicolás Romero,nicolas_romero,2023/MEX_2023_nicolas_romero.json,hardcoded_codigo_financiero
+2023,061,Nopaltepec,nopaltepec,2023/MEX_2023_nopaltepec.json,hardcoded_codigo_financiero
+2023,062,Ocoyoacac,ocoyoacac,2023/MEX_2023_ocoyoacac.json,hardcoded_codigo_financiero
+2023,063,Ocuilan,ocuilan,2023/MEX_2023_ocuilan.json,hardcoded_codigo_financiero
+2023,064,El Oro,el_oro,2023/MEX_2023_el_oro.json,hardcoded_codigo_financiero
+2023,065,Otumba,otumba,2023/MEX_2023_otumba.json,hardcoded_codigo_financiero
+2023,066,Otzoloapan,otzoloapan,2023/MEX_2023_otzoloapan.json,hardcoded_codigo_financiero
+2023,067,Otzolotepec,otzolotepec,2023/MEX_2023_otzolotepec.json,hardcoded_codigo_financiero
+2023,068,Ozumba,ozumba,2023/MEX_2023_ozumba.json,hardcoded_codigo_financiero
+2023,069,Papalotla,papalotla,2023/MEX_2023_papalotla.json,hardcoded_codigo_financiero
+2023,070,La Paz,la_paz,2023/MEX_2023_la_paz.json,hardcoded_codigo_financiero
+2023,071,Polotitlán,polotitlan,2023/MEX_2023_polotitlan.json,hardcoded_codigo_financiero
+2023,072,Rayón,rayon,2023/MEX_2023_rayon.json,hardcoded_codigo_financiero
+2023,073,San Antonio la Isla,san_antonio_la_isla,2023/MEX_2023_san_antonio_la_isla.json,hardcoded_codigo_financiero
+2023,074,San Felipe del Progreso,san_felipe_del_progreso,2023/MEX_2023_san_felipe_del_progreso.json,hardcoded_codigo_financiero
+2023,075,San Martín de las Pirámides,san_martin_de_las_piramides,2023/MEX_2023_san_martin_de_las_piramides.json,hardcoded_codigo_financiero
+2023,076,San Mateo Atenco,san_mateo_atenco,2023/MEX_2023_san_mateo_atenco.json,hardcoded_codigo_financiero
+2023,077,San Simón de Guerrero,san_simon_de_guerrero,2023/MEX_2023_san_simon_de_guerrero.json,hardcoded_codigo_financiero
+2023,078,Santo Tomás,santo_tomas,2023/MEX_2023_santo_tomas.json,hardcoded_codigo_financiero
+2023,079,Soyaniquilpan de Juárez,soyaniquilpan,2023/MEX_2023_soyaniquilpan.json,hardcoded_codigo_financiero
+2023,080,Sultepec,sultepec,2023/MEX_2023_sultepec.json,hardcoded_codigo_financiero
+2023,081,Tecámac,tecamac,2023/MEX_2023_tecamac.json,hardcoded_codigo_financiero
+2023,082,Tejupilco,tejupilco,2023/MEX_2023_tejupilco.json,hardcoded_codigo_financiero
+2023,083,Temamatla,temamatla,2023/MEX_2023_temamatla.json,hardcoded_codigo_financiero
+2023,084,Temascalapa,temascalapa,2023/MEX_2023_temascalapa.json,hardcoded_codigo_financiero
+2023,085,Temascalcingo,temascalcingo,2023/MEX_2023_temascalcingo.json,hardcoded_codigo_financiero
+2023,086,Temascaltepec,temascaltepec,2023/MEX_2023_temascaltepec.json,hardcoded_codigo_financiero
+2023,087,Temoaya,temoaya,2023/MEX_2023_temoaya.json,hardcoded_codigo_financiero
+2023,088,Tenancingo,tenancingo,2023/MEX_2023_tenancingo.json,hardcoded_codigo_financiero
+2023,089,Tenango del Aire,tenango_del_aire,2023/MEX_2023_tenango_del_aire.json,hardcoded_codigo_financiero
+2023,090,Tenango del Valle,tenango_del_valle,2023/MEX_2023_tenango_del_valle.json,hardcoded_codigo_financiero
+2023,091,Teoloyucan,teoloyucan,2023/MEX_2023_teoloyucan.json,hardcoded_codigo_financiero
+2023,092,Teotihuacán,teotihuacan,2023/MEX_2023_teotihuacan.json,hardcoded_codigo_financiero
+2023,093,Tepetlaoxtoc,tepetlaoxtoc,2023/MEX_2023_tepetlaoxtoc.json,hardcoded_codigo_financiero
+2023,094,Tepetlixpa,tepetlixpa,2023/MEX_2023_tepetlixpa.json,hardcoded_codigo_financiero
+2023,095,Tepotzotlán,tepotzotlan,2023/MEX_2023_tepotzotlan.json,hardcoded_codigo_financiero
+2023,096,Tequixquiac,tequixquiac,2023/MEX_2023_tequixquiac.json,hardcoded_codigo_financiero
+2023,097,Texcaltitlán,texcaltitlan,2023/MEX_2023_texcaltitlan.json,hardcoded_codigo_financiero
+2023,098,Texcalyacac,texcalyacac,2023/MEX_2023_texcalyacac.json,hardcoded_codigo_financiero
+2023,099,Texcoco,texcoco,2023/MEX_2023_texcoco.json,hardcoded_codigo_financiero
+2023,100,Tezoyuca,tezoyuca,2023/MEX_2023_tezoyuca.json,hardcoded_codigo_financiero
+2023,101,Tianguistenco,tianguistenco,2023/MEX_2023_tianguistenco.json,hardcoded_codigo_financiero
+2023,102,Timilpan,timilpan,2023/MEX_2023_timilpan.json,hardcoded_codigo_financiero
+2023,103,Tlalmanalco,tlalmanalco,2023/MEX_2023_tlalmanalco.json,hardcoded_codigo_financiero
+2023,104,Tlalnepantla de Baz,tlalnepantla,2023/MEX_2023_tlalnepantla.json,hardcoded_codigo_financiero
+2023,105,Tlatlaya,tlatlaya,2023/MEX_2023_tlatlaya.json,hardcoded_codigo_financiero
+2023,106,Toluca,toluca,2023/MEX_2023_toluca.json,hardcoded_codigo_financiero
+2023,107,Tonatico,tonatico,2023/MEX_2023_tonatico.json,hardcoded_codigo_financiero
+2023,108,Tultepec,tultepec,2023/MEX_2023_tultepec.json,hardcoded_codigo_financiero
+2023,109,Tultitlán,tultitlan,2023/MEX_2023_tultitlan.json,hardcoded_codigo_financiero
+2023,110,Valle de Bravo,valle_de_bravo,2023/MEX_2023_valle_de_bravo.json,hardcoded_codigo_financiero
+2023,111,Villa de Allende,villa_de_allende,2023/MEX_2023_villa_de_allende.json,hardcoded_codigo_financiero
+2023,112,Villa del Carbón,villa_del_carbon,2023/MEX_2023_villa_del_carbon.json,hardcoded_codigo_financiero
+2023,113,Villa Guerrero,villa_guerrero,2023/MEX_2023_villa_guerrero.json,hardcoded_codigo_financiero
+2023,114,Villa Victoria,villa_victoria,2023/MEX_2023_villa_victoria.json,hardcoded_codigo_financiero
+2023,115,Xonacatlán,xonacatlan,2023/MEX_2023_xonacatlan.json,hardcoded_codigo_financiero
+2023,116,Zacazonapan,zacazonapan,2023/MEX_2023_zacazonapan.json,hardcoded_codigo_financiero
+2023,117,Zacualpan,zacualpan,2023/MEX_2023_zacualpan.json,hardcoded_codigo_financiero
+2023,118,Zinacantepec,zinacantepec,2023/MEX_2023_zinacantepec.json,hardcoded_codigo_financiero
+2023,119,Zumpahuacán,zumpahuacan,2023/MEX_2023_zumpahuacan.json,hardcoded_codigo_financiero
+2023,120,Zumpango,zumpango,2023/MEX_2023_zumpango.json,hardcoded_codigo_financiero
+2023,121,Cuautitlán Izcalli,cuautitlan_izcalli,2023/MEX_2023_cuautitlan_izcalli.json,hardcoded_codigo_financiero
+2023,122,Valle de Chalco Solidaridad,valle_de_chalco,2023/MEX_2023_valle_de_chalco.json,hardcoded_codigo_financiero
+2023,123,Luvianos,luvianos,2023/MEX_2023_luvianos.json,hardcoded_codigo_financiero
+2023,124,San José del Rincón,san_jose_del_rincon,2023/MEX_2023_san_jose_del_rincon.json,hardcoded_codigo_financiero
+2023,125,Tonanitla,tonanitla,2023/MEX_2023_tonanitla.json,hardcoded_codigo_financiero
+2024,001,Acambay de Ruíz Castañeda,acambay,2024/MEX_2024_acambay.json,hardcoded_codigo_financiero
+2024,002,Acolman,acolman,2024/MEX_2024_acolman.json,hardcoded_codigo_financiero
+2024,003,Aculco,aculco,2024/MEX_2024_aculco.json,hardcoded_codigo_financiero
+2024,004,Almoloya de Alquisiras,almoloya_de_alquisiras,2024/MEX_2024_almoloya_de_alquisiras.json,hardcoded_codigo_financiero
+2024,005,Almoloya de Juárez,almoloya_de_juarez,2024/MEX_2024_almoloya_de_juarez.json,hardcoded_codigo_financiero
+2024,006,Almoloya del Río,almoloya_del_rio,2024/MEX_2024_almoloya_del_rio.json,hardcoded_codigo_financiero
+2024,007,Amanalco,amanalco,2024/MEX_2024_amanalco.json,hardcoded_codigo_financiero
+2024,008,Amatepec,amatepec,2024/MEX_2024_amatepec.json,hardcoded_codigo_financiero
+2024,009,Amecameca,amecameca,2024/MEX_2024_amecameca.json,hardcoded_codigo_financiero
+2024,010,Apaxco,apaxco,2024/MEX_2024_apaxco.json,hardcoded_codigo_financiero
+2024,011,Atenco,atenco,2024/MEX_2024_atenco.json,hardcoded_codigo_financiero
+2024,012,Atizapán,atizapan,2024/MEX_2024_atizapan.json,hardcoded_codigo_financiero
+2024,013,Atizapán de Zaragoza,atizapan_de_zaragoza,2024/MEX_2024_atizapan_de_zaragoza.json,hardcoded_codigo_financiero
+2024,014,Atlacomulco,atlacomulco,2024/MEX_2024_atlacomulco.json,hardcoded_codigo_financiero
+2024,015,Atlautla,atlautla,2024/MEX_2024_atlautla.json,hardcoded_codigo_financiero
+2024,016,Axapusco,axapusco,2024/MEX_2024_axapusco.json,hardcoded_codigo_financiero
+2024,017,Ayapango,ayapango,2024/MEX_2024_ayapango.json,hardcoded_codigo_financiero
+2024,018,Calimaya,calimaya,2024/MEX_2024_calimaya.json,hardcoded_codigo_financiero
+2024,019,Capulhuac,capulhuac,2024/MEX_2024_capulhuac.json,hardcoded_codigo_financiero
+2024,020,Coacalco de Berriozábal,coacalco,2024/MEX_2024_coacalco.json,hardcoded_codigo_financiero
+2024,021,Coatepec Harinas,coatepec_harinas,2024/MEX_2024_coatepec_harinas.json,hardcoded_codigo_financiero
+2024,022,Cocotitlán,cocotitlan,2024/MEX_2024_cocotitlan.json,hardcoded_codigo_financiero
+2024,023,Coyotepec,coyotepec,2024/MEX_2024_coyotepec.json,hardcoded_codigo_financiero
+2024,024,Cuautitlán,cuautitlan,2024/MEX_2024_cuautitlan.json,hardcoded_codigo_financiero
+2024,025,Chalco,chalco,2024/MEX_2024_chalco.json,hardcoded_codigo_financiero
+2024,026,Chapa de Mota,chapa_de_mota,2024/MEX_2024_chapa_de_mota.json,hardcoded_codigo_financiero
+2024,027,Chapultepec,chapultepec,2024/MEX_2024_chapultepec.json,hardcoded_codigo_financiero
+2024,028,Chiautla,chiautla,2024/MEX_2024_chiautla.json,hardcoded_codigo_financiero
+2024,029,Chicoloapan,chicoloapan,2024/MEX_2024_chicoloapan.json,hardcoded_codigo_financiero
+2024,030,Chiconcuac,chiconcuac,2024/MEX_2024_chiconcuac.json,hardcoded_codigo_financiero
+2024,031,Chimalhuacán,chimalhuacan,2024/MEX_2024_chimalhuacan.json,hardcoded_codigo_financiero
+2024,032,Donato Guerra,donato_guerra,2024/MEX_2024_donato_guerra.json,hardcoded_codigo_financiero
+2024,033,Ecatepec de Morelos,ecatepec,2024/MEX_2024_ecatepec.json,hardcoded_codigo_financiero
+2024,034,Ecatzingo,ecatzingo,2024/MEX_2024_ecatzingo.json,hardcoded_codigo_financiero
+2024,035,Huehuetoca,huehuetoca,2024/MEX_2024_huehuetoca.json,hardcoded_codigo_financiero
+2024,036,Hueypoxtla,hueypoxtla,2024/MEX_2024_hueypoxtla.json,hardcoded_codigo_financiero
+2024,037,Huixquilucan,huixquilucan,2024/MEX_2024_huixquilucan.json,hardcoded_codigo_financiero
+2024,038,Isidro Fabela,isidro_fabela,2024/MEX_2024_isidro_fabela.json,hardcoded_codigo_financiero
+2024,039,Ixtapaluca,ixtapaluca,2024/MEX_2024_ixtapaluca.json,hardcoded_codigo_financiero
+2024,040,Ixtapan de la Sal,ixtapan_de_la_sal,2024/MEX_2024_ixtapan_de_la_sal.json,hardcoded_codigo_financiero
+2024,041,Ixtapan del Oro,ixtapan_del_oro,2024/MEX_2024_ixtapan_del_oro.json,hardcoded_codigo_financiero
+2024,042,Ixtlahuaca,ixtlahuaca,2024/MEX_2024_ixtlahuaca.json,hardcoded_codigo_financiero
+2024,043,Xalatlaco,xalatlaco,2024/MEX_2024_xalatlaco.json,hardcoded_codigo_financiero
+2024,044,Jaltenco,jaltenco,2024/MEX_2024_jaltenco.json,hardcoded_codigo_financiero
+2024,045,Jilotepec,jilotepec,2024/MEX_2024_jilotepec.json,hardcoded_codigo_financiero
+2024,046,Jilotzingo,jilotzingo,2024/MEX_2024_jilotzingo.json,hardcoded_codigo_financiero
+2024,047,Jiquipilco,jiquipilco,2024/MEX_2024_jiquipilco.json,hardcoded_codigo_financiero
+2024,048,Jocotitlán,jocotitlan,2024/MEX_2024_jocotitlan.json,hardcoded_codigo_financiero
+2024,049,Joquicingo,joquicingo,2024/MEX_2024_joquicingo.json,hardcoded_codigo_financiero
+2024,050,Juchitepec,juchitepec,2024/MEX_2024_juchitepec.json,hardcoded_codigo_financiero
+2024,051,Lerma,lerma,2024/MEX_2024_lerma.json,hardcoded_codigo_financiero
+2024,052,Malinalco,malinalco,2024/MEX_2024_malinalco.json,hardcoded_codigo_financiero
+2024,053,Melchor Ocampo,melchor_ocampo,2024/MEX_2024_melchor_ocampo.json,hardcoded_codigo_financiero
+2024,054,Metepec,metepec,2024/MEX_2024_metepec.json,hardcoded_codigo_financiero
+2024,055,Mexicaltzingo,mexicaltzingo,2024/MEX_2024_mexicaltzingo.json,hardcoded_codigo_financiero
+2024,056,Morelos,morelos,2024/MEX_2024_morelos.json,hardcoded_codigo_financiero
+2024,057,Naucalpan de Juárez,naucalpan,2024/MEX_2024_naucalpan.json,hardcoded_codigo_financiero
+2024,058,Nezahualcóyotl,nezahualcoyotl,2024/MEX_2024_nezahualcoyotl.json,hardcoded_codigo_financiero
+2024,059,Nextlalpan,nextlalpan,2024/MEX_2024_nextlalpan.json,hardcoded_codigo_financiero
+2024,060,Nicolás Romero,nicolas_romero,2024/MEX_2024_nicolas_romero.json,hardcoded_codigo_financiero
+2024,061,Nopaltepec,nopaltepec,2024/MEX_2024_nopaltepec.json,hardcoded_codigo_financiero
+2024,062,Ocoyoacac,ocoyoacac,2024/MEX_2024_ocoyoacac.json,hardcoded_codigo_financiero
+2024,063,Ocuilan,ocuilan,2024/MEX_2024_ocuilan.json,hardcoded_codigo_financiero
+2024,064,El Oro,el_oro,2024/MEX_2024_el_oro.json,hardcoded_codigo_financiero
+2024,065,Otumba,otumba,2024/MEX_2024_otumba.json,hardcoded_codigo_financiero
+2024,066,Otzoloapan,otzoloapan,2024/MEX_2024_otzoloapan.json,hardcoded_codigo_financiero
+2024,067,Otzolotepec,otzolotepec,2024/MEX_2024_otzolotepec.json,hardcoded_codigo_financiero
+2024,068,Ozumba,ozumba,2024/MEX_2024_ozumba.json,hardcoded_codigo_financiero
+2024,069,Papalotla,papalotla,2024/MEX_2024_papalotla.json,hardcoded_codigo_financiero
+2024,070,La Paz,la_paz,2024/MEX_2024_la_paz.json,hardcoded_codigo_financiero
+2024,071,Polotitlán,polotitlan,2024/MEX_2024_polotitlan.json,hardcoded_codigo_financiero
+2024,072,Rayón,rayon,2024/MEX_2024_rayon.json,hardcoded_codigo_financiero
+2024,073,San Antonio la Isla,san_antonio_la_isla,2024/MEX_2024_san_antonio_la_isla.json,hardcoded_codigo_financiero
+2024,074,San Felipe del Progreso,san_felipe_del_progreso,2024/MEX_2024_san_felipe_del_progreso.json,hardcoded_codigo_financiero
+2024,075,San Martín de las Pirámides,san_martin_de_las_piramides,2024/MEX_2024_san_martin_de_las_piramides.json,hardcoded_codigo_financiero
+2024,076,San Mateo Atenco,san_mateo_atenco,2024/MEX_2024_san_mateo_atenco.json,hardcoded_codigo_financiero
+2024,077,San Simón de Guerrero,san_simon_de_guerrero,2024/MEX_2024_san_simon_de_guerrero.json,hardcoded_codigo_financiero
+2024,078,Santo Tomás,santo_tomas,2024/MEX_2024_santo_tomas.json,hardcoded_codigo_financiero
+2024,079,Soyaniquilpan de Juárez,soyaniquilpan,2024/MEX_2024_soyaniquilpan.json,hardcoded_codigo_financiero
+2024,080,Sultepec,sultepec,2024/MEX_2024_sultepec.json,hardcoded_codigo_financiero
+2024,081,Tecámac,tecamac,2024/MEX_2024_tecamac.json,hardcoded_codigo_financiero
+2024,082,Tejupilco,tejupilco,2024/MEX_2024_tejupilco.json,hardcoded_codigo_financiero
+2024,083,Temamatla,temamatla,2024/MEX_2024_temamatla.json,hardcoded_codigo_financiero
+2024,084,Temascalapa,temascalapa,2024/MEX_2024_temascalapa.json,hardcoded_codigo_financiero
+2024,085,Temascalcingo,temascalcingo,2024/MEX_2024_temascalcingo.json,hardcoded_codigo_financiero
+2024,086,Temascaltepec,temascaltepec,2024/MEX_2024_temascaltepec.json,hardcoded_codigo_financiero
+2024,087,Temoaya,temoaya,2024/MEX_2024_temoaya.json,hardcoded_codigo_financiero
+2024,088,Tenancingo,tenancingo,2024/MEX_2024_tenancingo.json,hardcoded_codigo_financiero
+2024,089,Tenango del Aire,tenango_del_aire,2024/MEX_2024_tenango_del_aire.json,hardcoded_codigo_financiero
+2024,090,Tenango del Valle,tenango_del_valle,2024/MEX_2024_tenango_del_valle.json,hardcoded_codigo_financiero
+2024,091,Teoloyucan,teoloyucan,2024/MEX_2024_teoloyucan.json,hardcoded_codigo_financiero
+2024,092,Teotihuacán,teotihuacan,2024/MEX_2024_teotihuacan.json,hardcoded_codigo_financiero
+2024,093,Tepetlaoxtoc,tepetlaoxtoc,2024/MEX_2024_tepetlaoxtoc.json,hardcoded_codigo_financiero
+2024,094,Tepetlixpa,tepetlixpa,2024/MEX_2024_tepetlixpa.json,hardcoded_codigo_financiero
+2024,095,Tepotzotlán,tepotzotlan,2024/MEX_2024_tepotzotlan.json,hardcoded_codigo_financiero
+2024,096,Tequixquiac,tequixquiac,2024/MEX_2024_tequixquiac.json,hardcoded_codigo_financiero
+2024,097,Texcaltitlán,texcaltitlan,2024/MEX_2024_texcaltitlan.json,hardcoded_codigo_financiero
+2024,098,Texcalyacac,texcalyacac,2024/MEX_2024_texcalyacac.json,hardcoded_codigo_financiero
+2024,099,Texcoco,texcoco,2024/MEX_2024_texcoco.json,hardcoded_codigo_financiero
+2024,100,Tezoyuca,tezoyuca,2024/MEX_2024_tezoyuca.json,hardcoded_codigo_financiero
+2024,101,Tianguistenco,tianguistenco,2024/MEX_2024_tianguistenco.json,hardcoded_codigo_financiero
+2024,102,Timilpan,timilpan,2024/MEX_2024_timilpan.json,hardcoded_codigo_financiero
+2024,103,Tlalmanalco,tlalmanalco,2024/MEX_2024_tlalmanalco.json,hardcoded_codigo_financiero
+2024,104,Tlalnepantla de Baz,tlalnepantla,2024/MEX_2024_tlalnepantla.json,hardcoded_codigo_financiero
+2024,105,Tlatlaya,tlatlaya,2024/MEX_2024_tlatlaya.json,hardcoded_codigo_financiero
+2024,106,Toluca,toluca,2024/MEX_2024_toluca.json,hardcoded_codigo_financiero
+2024,107,Tonatico,tonatico,2024/MEX_2024_tonatico.json,hardcoded_codigo_financiero
+2024,108,Tultepec,tultepec,2024/MEX_2024_tultepec.json,hardcoded_codigo_financiero
+2024,109,Tultitlán,tultitlan,2024/MEX_2024_tultitlan.json,hardcoded_codigo_financiero
+2024,110,Valle de Bravo,valle_de_bravo,2024/MEX_2024_valle_de_bravo.json,hardcoded_codigo_financiero
+2024,111,Villa de Allende,villa_de_allende,2024/MEX_2024_villa_de_allende.json,hardcoded_codigo_financiero
+2024,112,Villa del Carbón,villa_del_carbon,2024/MEX_2024_villa_del_carbon.json,hardcoded_codigo_financiero
+2024,113,Villa Guerrero,villa_guerrero,2024/MEX_2024_villa_guerrero.json,hardcoded_codigo_financiero
+2024,114,Villa Victoria,villa_victoria,2024/MEX_2024_villa_victoria.json,hardcoded_codigo_financiero
+2024,115,Xonacatlán,xonacatlan,2024/MEX_2024_xonacatlan.json,hardcoded_codigo_financiero
+2024,116,Zacazonapan,zacazonapan,2024/MEX_2024_zacazonapan.json,hardcoded_codigo_financiero
+2024,117,Zacualpan,zacualpan,2024/MEX_2024_zacualpan.json,hardcoded_codigo_financiero
+2024,118,Zinacantepec,zinacantepec,2024/MEX_2024_zinacantepec.json,hardcoded_codigo_financiero
+2024,119,Zumpahuacán,zumpahuacan,2024/MEX_2024_zumpahuacan.json,hardcoded_codigo_financiero
+2024,120,Zumpango,zumpango,2024/MEX_2024_zumpango.json,hardcoded_codigo_financiero
+2024,121,Cuautitlán Izcalli,cuautitlan_izcalli,2024/MEX_2024_cuautitlan_izcalli.json,hardcoded_codigo_financiero
+2024,122,Valle de Chalco Solidaridad,valle_de_chalco,2024/MEX_2024_valle_de_chalco.json,hardcoded_codigo_financiero
+2024,123,Luvianos,luvianos,2024/MEX_2024_luvianos.json,hardcoded_codigo_financiero
+2024,124,San José del Rincón,san_jose_del_rincon,2024/MEX_2024_san_jose_del_rincon.json,hardcoded_codigo_financiero
+2024,125,Tonanitla,tonanitla,2024/MEX_2024_tonanitla.json,hardcoded_codigo_financiero
+2025,001,Acambay de Ruíz Castañeda,acambay,2025/MEX_2025_acambay.json,hardcoded_codigo_financiero
+2025,002,Acolman,acolman,2025/MEX_2025_acolman.json,hardcoded_codigo_financiero
+2025,003,Aculco,aculco,2025/MEX_2025_aculco.json,hardcoded_codigo_financiero
+2025,004,Almoloya de Alquisiras,almoloya_de_alquisiras,2025/MEX_2025_almoloya_de_alquisiras.json,hardcoded_codigo_financiero
+2025,005,Almoloya de Juárez,almoloya_de_juarez,2025/MEX_2025_almoloya_de_juarez.json,hardcoded_codigo_financiero
+2025,006,Almoloya del Río,almoloya_del_rio,2025/MEX_2025_almoloya_del_rio.json,hardcoded_codigo_financiero
+2025,007,Amanalco,amanalco,2025/MEX_2025_amanalco.json,hardcoded_codigo_financiero
+2025,008,Amatepec,amatepec,2025/MEX_2025_amatepec.json,hardcoded_codigo_financiero
+2025,009,Amecameca,amecameca,2025/MEX_2025_amecameca.json,hardcoded_codigo_financiero
+2025,010,Apaxco,apaxco,2025/MEX_2025_apaxco.json,hardcoded_codigo_financiero
+2025,011,Atenco,atenco,2025/MEX_2025_atenco.json,hardcoded_codigo_financiero
+2025,012,Atizapán,atizapan,2025/MEX_2025_atizapan.json,hardcoded_codigo_financiero
+2025,013,Atizapán de Zaragoza,atizapan_de_zaragoza,2025/MEX_2025_atizapan_de_zaragoza.json,hardcoded_codigo_financiero
+2025,014,Atlacomulco,atlacomulco,2025/MEX_2025_atlacomulco.json,hardcoded_codigo_financiero
+2025,015,Atlautla,atlautla,2025/MEX_2025_atlautla.json,hardcoded_codigo_financiero
+2025,016,Axapusco,axapusco,2025/MEX_2025_axapusco.json,hardcoded_codigo_financiero
+2025,017,Ayapango,ayapango,2025/MEX_2025_ayapango.json,hardcoded_codigo_financiero
+2025,018,Calimaya,calimaya,2025/MEX_2025_calimaya.json,hardcoded_codigo_financiero
+2025,019,Capulhuac,capulhuac,2025/MEX_2025_capulhuac.json,hardcoded_codigo_financiero
+2025,020,Coacalco de Berriozábal,coacalco,2025/MEX_2025_coacalco.json,hardcoded_codigo_financiero
+2025,021,Coatepec Harinas,coatepec_harinas,2025/MEX_2025_coatepec_harinas.json,hardcoded_codigo_financiero
+2025,022,Cocotitlán,cocotitlan,2025/MEX_2025_cocotitlan.json,hardcoded_codigo_financiero
+2025,023,Coyotepec,coyotepec,2025/MEX_2025_coyotepec.json,hardcoded_codigo_financiero
+2025,024,Cuautitlán,cuautitlan,2025/MEX_2025_cuautitlan.json,hardcoded_codigo_financiero
+2025,025,Chalco,chalco,2025/MEX_2025_chalco.json,hardcoded_codigo_financiero
+2025,026,Chapa de Mota,chapa_de_mota,2025/MEX_2025_chapa_de_mota.json,hardcoded_codigo_financiero
+2025,027,Chapultepec,chapultepec,2025/MEX_2025_chapultepec.json,hardcoded_codigo_financiero
+2025,028,Chiautla,chiautla,2025/MEX_2025_chiautla.json,hardcoded_codigo_financiero
+2025,029,Chicoloapan,chicoloapan,2025/MEX_2025_chicoloapan.json,hardcoded_codigo_financiero
+2025,030,Chiconcuac,chiconcuac,2025/MEX_2025_chiconcuac.json,hardcoded_codigo_financiero
+2025,031,Chimalhuacán,chimalhuacan,2025/MEX_2025_chimalhuacan.json,hardcoded_codigo_financiero
+2025,032,Donato Guerra,donato_guerra,2025/MEX_2025_donato_guerra.json,hardcoded_codigo_financiero
+2025,033,Ecatepec de Morelos,ecatepec,2025/MEX_2025_ecatepec.json,hardcoded_codigo_financiero
+2025,034,Ecatzingo,ecatzingo,2025/MEX_2025_ecatzingo.json,hardcoded_codigo_financiero
+2025,035,Huehuetoca,huehuetoca,2025/MEX_2025_huehuetoca.json,hardcoded_codigo_financiero
+2025,036,Hueypoxtla,hueypoxtla,2025/MEX_2025_hueypoxtla.json,hardcoded_codigo_financiero
+2025,037,Huixquilucan,huixquilucan,2025/MEX_2025_huixquilucan.json,hardcoded_codigo_financiero
+2025,038,Isidro Fabela,isidro_fabela,2025/MEX_2025_isidro_fabela.json,hardcoded_codigo_financiero
+2025,039,Ixtapaluca,ixtapaluca,2025/MEX_2025_ixtapaluca.json,hardcoded_codigo_financiero
+2025,040,Ixtapan de la Sal,ixtapan_de_la_sal,2025/MEX_2025_ixtapan_de_la_sal.json,hardcoded_codigo_financiero
+2025,041,Ixtapan del Oro,ixtapan_del_oro,2025/MEX_2025_ixtapan_del_oro.json,hardcoded_codigo_financiero
+2025,042,Ixtlahuaca,ixtlahuaca,2025/MEX_2025_ixtlahuaca.json,hardcoded_codigo_financiero
+2025,043,Xalatlaco,xalatlaco,2025/MEX_2025_xalatlaco.json,hardcoded_codigo_financiero
+2025,044,Jaltenco,jaltenco,2025/MEX_2025_jaltenco.json,hardcoded_codigo_financiero
+2025,045,Jilotepec,jilotepec,2025/MEX_2025_jilotepec.json,hardcoded_codigo_financiero
+2025,046,Jilotzingo,jilotzingo,2025/MEX_2025_jilotzingo.json,hardcoded_codigo_financiero
+2025,047,Jiquipilco,jiquipilco,2025/MEX_2025_jiquipilco.json,hardcoded_codigo_financiero
+2025,048,Jocotitlán,jocotitlan,2025/MEX_2025_jocotitlan.json,hardcoded_codigo_financiero
+2025,049,Joquicingo,joquicingo,2025/MEX_2025_joquicingo.json,hardcoded_codigo_financiero
+2025,050,Juchitepec,juchitepec,2025/MEX_2025_juchitepec.json,hardcoded_codigo_financiero
+2025,051,Lerma,lerma,2025/MEX_2025_lerma.json,hardcoded_codigo_financiero
+2025,052,Malinalco,malinalco,2025/MEX_2025_malinalco.json,hardcoded_codigo_financiero
+2025,053,Melchor Ocampo,melchor_ocampo,2025/MEX_2025_melchor_ocampo.json,hardcoded_codigo_financiero
+2025,054,Metepec,metepec,2025/MEX_2025_metepec.json,hardcoded_codigo_financiero
+2025,055,Mexicaltzingo,mexicaltzingo,2025/MEX_2025_mexicaltzingo.json,hardcoded_codigo_financiero
+2025,056,Morelos,morelos,2025/MEX_2025_morelos.json,hardcoded_codigo_financiero
+2025,057,Naucalpan de Juárez,naucalpan,2025/MEX_2025_naucalpan.json,hardcoded_codigo_financiero
+2025,058,Nezahualcóyotl,nezahualcoyotl,2025/MEX_2025_nezahualcoyotl.json,hardcoded_codigo_financiero
+2025,059,Nextlalpan,nextlalpan,2025/MEX_2025_nextlalpan.json,hardcoded_codigo_financiero
+2025,060,Nicolás Romero,nicolas_romero,2025/MEX_2025_nicolas_romero.json,hardcoded_codigo_financiero
+2025,061,Nopaltepec,nopaltepec,2025/MEX_2025_nopaltepec.json,hardcoded_codigo_financiero
+2025,062,Ocoyoacac,ocoyoacac,2025/MEX_2025_ocoyoacac.json,hardcoded_codigo_financiero
+2025,063,Ocuilan,ocuilan,2025/MEX_2025_ocuilan.json,hardcoded_codigo_financiero
+2025,064,El Oro,el_oro,2025/MEX_2025_el_oro.json,hardcoded_codigo_financiero
+2025,065,Otumba,otumba,2025/MEX_2025_otumba.json,hardcoded_codigo_financiero
+2025,066,Otzoloapan,otzoloapan,2025/MEX_2025_otzoloapan.json,hardcoded_codigo_financiero
+2025,067,Otzolotepec,otzolotepec,2025/MEX_2025_otzolotepec.json,hardcoded_codigo_financiero
+2025,068,Ozumba,ozumba,2025/MEX_2025_ozumba.json,hardcoded_codigo_financiero
+2025,069,Papalotla,papalotla,2025/MEX_2025_papalotla.json,hardcoded_codigo_financiero
+2025,070,La Paz,la_paz,2025/MEX_2025_la_paz.json,hardcoded_codigo_financiero
+2025,071,Polotitlán,polotitlan,2025/MEX_2025_polotitlan.json,hardcoded_codigo_financiero
+2025,072,Rayón,rayon,2025/MEX_2025_rayon.json,hardcoded_codigo_financiero
+2025,073,San Antonio la Isla,san_antonio_la_isla,2025/MEX_2025_san_antonio_la_isla.json,hardcoded_codigo_financiero
+2025,074,San Felipe del Progreso,san_felipe_del_progreso,2025/MEX_2025_san_felipe_del_progreso.json,hardcoded_codigo_financiero
+2025,075,San Martín de las Pirámides,san_martin_de_las_piramides,2025/MEX_2025_san_martin_de_las_piramides.json,hardcoded_codigo_financiero
+2025,076,San Mateo Atenco,san_mateo_atenco,2025/MEX_2025_san_mateo_atenco.json,hardcoded_codigo_financiero
+2025,077,San Simón de Guerrero,san_simon_de_guerrero,2025/MEX_2025_san_simon_de_guerrero.json,hardcoded_codigo_financiero
+2025,078,Santo Tomás,santo_tomas,2025/MEX_2025_santo_tomas.json,hardcoded_codigo_financiero
+2025,079,Soyaniquilpan de Juárez,soyaniquilpan,2025/MEX_2025_soyaniquilpan.json,hardcoded_codigo_financiero
+2025,080,Sultepec,sultepec,2025/MEX_2025_sultepec.json,hardcoded_codigo_financiero
+2025,081,Tecámac,tecamac,2025/MEX_2025_tecamac.json,hardcoded_codigo_financiero
+2025,082,Tejupilco,tejupilco,2025/MEX_2025_tejupilco.json,hardcoded_codigo_financiero
+2025,083,Temamatla,temamatla,2025/MEX_2025_temamatla.json,hardcoded_codigo_financiero
+2025,084,Temascalapa,temascalapa,2025/MEX_2025_temascalapa.json,hardcoded_codigo_financiero
+2025,085,Temascalcingo,temascalcingo,2025/MEX_2025_temascalcingo.json,hardcoded_codigo_financiero
+2025,086,Temascaltepec,temascaltepec,2025/MEX_2025_temascaltepec.json,hardcoded_codigo_financiero
+2025,087,Temoaya,temoaya,2025/MEX_2025_temoaya.json,hardcoded_codigo_financiero
+2025,088,Tenancingo,tenancingo,2025/MEX_2025_tenancingo.json,hardcoded_codigo_financiero
+2025,089,Tenango del Aire,tenango_del_aire,2025/MEX_2025_tenango_del_aire.json,hardcoded_codigo_financiero
+2025,090,Tenango del Valle,tenango_del_valle,2025/MEX_2025_tenango_del_valle.json,hardcoded_codigo_financiero
+2025,091,Teoloyucan,teoloyucan,2025/MEX_2025_teoloyucan.json,hardcoded_codigo_financiero
+2025,092,Teotihuacán,teotihuacan,2025/MEX_2025_teotihuacan.json,hardcoded_codigo_financiero
+2025,093,Tepetlaoxtoc,tepetlaoxtoc,2025/MEX_2025_tepetlaoxtoc.json,hardcoded_codigo_financiero
+2025,094,Tepetlixpa,tepetlixpa,2025/MEX_2025_tepetlixpa.json,hardcoded_codigo_financiero
+2025,095,Tepotzotlán,tepotzotlan,2025/MEX_2025_tepotzotlan.json,hardcoded_codigo_financiero
+2025,096,Tequixquiac,tequixquiac,2025/MEX_2025_tequixquiac.json,hardcoded_codigo_financiero
+2025,097,Texcaltitlán,texcaltitlan,2025/MEX_2025_texcaltitlan.json,hardcoded_codigo_financiero
+2025,098,Texcalyacac,texcalyacac,2025/MEX_2025_texcalyacac.json,hardcoded_codigo_financiero
+2025,099,Texcoco,texcoco,2025/MEX_2025_texcoco.json,hardcoded_codigo_financiero
+2025,100,Tezoyuca,tezoyuca,2025/MEX_2025_tezoyuca.json,hardcoded_codigo_financiero
+2025,101,Tianguistenco,tianguistenco,2025/MEX_2025_tianguistenco.json,hardcoded_codigo_financiero
+2025,102,Timilpan,timilpan,2025/MEX_2025_timilpan.json,hardcoded_codigo_financiero
+2025,103,Tlalmanalco,tlalmanalco,2025/MEX_2025_tlalmanalco.json,hardcoded_codigo_financiero
+2025,104,Tlalnepantla de Baz,tlalnepantla,2025/MEX_2025_tlalnepantla.json,hardcoded_codigo_financiero
+2025,105,Tlatlaya,tlatlaya,2025/MEX_2025_tlatlaya.json,hardcoded_codigo_financiero
+2025,106,Toluca,toluca,2025/MEX_2025_toluca.json,hardcoded_codigo_financiero
+2025,107,Tonatico,tonatico,2025/MEX_2025_tonatico.json,hardcoded_codigo_financiero
+2025,108,Tultepec,tultepec,2025/MEX_2025_tultepec.json,hardcoded_codigo_financiero
+2025,109,Tultitlán,tultitlan,2025/MEX_2025_tultitlan.json,hardcoded_codigo_financiero
+2025,110,Valle de Bravo,valle_de_bravo,2025/MEX_2025_valle_de_bravo.json,hardcoded_codigo_financiero
+2025,111,Villa de Allende,villa_de_allende,2025/MEX_2025_villa_de_allende.json,hardcoded_codigo_financiero
+2025,112,Villa del Carbón,villa_del_carbon,2025/MEX_2025_villa_del_carbon.json,hardcoded_codigo_financiero
+2025,113,Villa Guerrero,villa_guerrero,2025/MEX_2025_villa_guerrero.json,hardcoded_codigo_financiero
+2025,114,Villa Victoria,villa_victoria,2025/MEX_2025_villa_victoria.json,hardcoded_codigo_financiero
+2025,115,Xonacatlán,xonacatlan,2025/MEX_2025_xonacatlan.json,hardcoded_codigo_financiero
+2025,116,Zacazonapan,zacazonapan,2025/MEX_2025_zacazonapan.json,hardcoded_codigo_financiero
+2025,117,Zacualpan,zacualpan,2025/MEX_2025_zacualpan.json,hardcoded_codigo_financiero
+2025,118,Zinacantepec,zinacantepec,2025/MEX_2025_zinacantepec.json,hardcoded_codigo_financiero
+2025,119,Zumpahuacán,zumpahuacan,2025/MEX_2025_zumpahuacan.json,hardcoded_codigo_financiero
+2025,120,Zumpango,zumpango,2025/MEX_2025_zumpango.json,hardcoded_codigo_financiero
+2025,121,Cuautitlán Izcalli,cuautitlan_izcalli,2025/MEX_2025_cuautitlan_izcalli.json,hardcoded_codigo_financiero
+2025,122,Valle de Chalco Solidaridad,valle_de_chalco,2025/MEX_2025_valle_de_chalco.json,hardcoded_codigo_financiero
+2025,123,Luvianos,luvianos,2025/MEX_2025_luvianos.json,hardcoded_codigo_financiero
+2025,124,San José del Rincón,san_jose_del_rincon,2025/MEX_2025_san_jose_del_rincon.json,hardcoded_codigo_financiero
+2025,125,Tonanitla,tonanitla,2025/MEX_2025_tonanitla.json,hardcoded_codigo_financiero

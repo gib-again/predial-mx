@@ -1,0 +1,106 @@
+## 2. Estructura de directorio
+
+```
+predial-mx/
+│
+├── pyproject.toml                  # Dependencias (un solo env para todo)
+├── README.md                       # Documentación del proyecto
+├── .gitignore
+│
+├── catalogs/                       # Catálogos de referencia (INEGI, etc.)
+│   ├── municipios_inegi.csv        # Catálogo completo de municipios
+│   └── estados_target.csv          # Lista de estados a procesar con metadata
+│
+├── src/
+│   ├── __init__.py
+│   │
+│   ├── core/                       # Lógica compartida — NO varía por estado
+│   │   ├── __init__.py
+│   │   ├── pdf_utils.py            # Lectura de PDFs, offsets, recorte
+│   │   ├── text_utils.py           # Normalización, slugify, parseo de montos
+│   │   ├── ocr.py                  # Wrapper Tesseract + detección de escaneado
+│   │   ├── llm_extract.py          # Llamadas a OpenAI, prompts, retry logic
+│   │   ├── validation.py           # Validación estructural + interanual
+│   │   ├── schemas.py              # Modelos Pydantic del JSON de salida
+│   │   ├── consolidate.py          # Generación del CSV panel
+│   │   └── constants.py            # Constantes globales (EJERCICIO_INI, EJERCICIO_FIN, etc.)
+│   │
+│   └── estados/                    # Un módulo por estado
+│       ├── __init__.py             # Registry de adaptadores
+│       ├── base.py                 # Clase abstracta EstadoAdapter
+│       │
+│       ├── coahuila/
+│       │   ├── __init__.py
+│       │   ├── config.py           # URLs, prefijo de archivos, flags (needs_ocr, etc.)
+│       │   ├── download.py         # Scraping del PO de Coahuila (hoy: 01_coah_*)
+│       │   └── segment.py          # Master + sección predial (hoy: 03, 04, 05, 10)
+│       │
+│       ├── jalisco/
+│       │   ├── __init__.py
+│       │   ├── config.py
+│       │   ├── download.py
+│       │   └── segment.py
+│       │
+│       ├── queretaro/
+│       │   └── ...
+│       │
+│       └── yucatan/
+│           └── ...
+│
+├── data/                           # Datos por estado (estructura idéntica)
+│   ├── coahuila/
+│   │   ├── pdf_raw/                # PDFs descargados del PO
+│   │   │   └── {ejercicio}/        # Subdirectorio por año
+│   │   ├── pdf_ocr/                # PDFs post-OCR (solo si needs_ocr=True)
+│   │   │   └── {ejercicio}/
+│   │   ├── meta/                   # CSVs de índice y bitácora
+│   │   │   ├── ley_ingresos_index.csv
+│   │   │   ├── predial_master.csv
+│   │   │   └── predial_sections.csv
+│   │   ├── focus_predial/          # Texto y PDF recortados de sección predial
+│   │   │   └── {ejercicio}/
+│   │   │       ├── {ESTADO}_PREDIAL_{ejercicio}_{muni_slug}.txt
+│   │   │       └── {ESTADO}_PREDIAL_{ejercicio}_{muni_slug}.pdf
+│   │   └── json_predial/           # Salida del LLM
+│   │       └── {ejercicio}/
+│   │           └── {ESTADO}_PREDIAL_{ejercicio}_{muni_slug}.json
+│   │
+│   ├── jalisco/
+│   │   └── ...  (misma estructura)
+│   └── ...
+│
+├── output/                         # Productos finales consolidados
+│   ├── predial_panel.csv           # Panel: 1 fila por (estado, municipio, año)
+│   ├── quality_report.csv          # Anomalías, cobertura, flags
+│   └── schema_summary.csv          # Distribución de tipos de esquema
+│
+├── scripts/                        # Puntos de entrada CLI
+│   ├── run_pipeline.py             # Orquestador principal
+│   └── consolidate_panel.py        # Genera el CSV panel desde todos los JSONs
+│
+├── docs/                           # Documentación de decisiones
+│   ├── esquemas_predial.md         # Catálogo de tipos de esquema encontrados
+│   └── notas_por_estado.md         # Particularidades de cada PO
+│
+└── tests/
+    ├── test_text_utils.py
+    ├── test_validation.py
+    └── fixtures/                   # JSONs de ejemplo para tests
+```
+
+### Notas sobre la estructura de `data/`
+
+**Convención de nombres de archivo unificada**:
+```
+{PREFIJO_ESTADO}_PREDIAL_{ejercicio}_{muni_slug}.{ext}
+```
+
+Donde `PREFIJO_ESTADO` es un código corto por estado:
+
+| Estado | Prefijo | Ejemplo de archivo |
+|--------|---------|-------------------|
+| Coahuila | `COAH` | `COAH_PREDIAL_2018_saltillo.json` |
+| Jalisco | `JAL` | `JAL_PREDIAL_2020_guadalajara.json` |
+| Querétaro | `QRO` | `QRO_PREDIAL_2015_queretaro.json` |
+| Yucatán | `YUC` | `YUC_PREDIAL_2022_merida.json` |
+
