@@ -718,7 +718,9 @@ def call_llm_vision(
 
 def get_extended_pdf(focus_pdf: Path, adapter=None) -> Path:
     """
-    Genera un PDF extendido con +1 página adicional del source PDF.
+    Genera un PDF extendido con ±1 página adicional del source PDF.
+    Agrega 1 página ANTES del inicio y 1 página DESPUÉS del final del recorte
+    original, para dar más contexto al LLM en el fallback de visión.
     Busca el source en segment.csv del adapter. Si no puede extender,
     retorna el PDF original.
     """
@@ -741,6 +743,7 @@ def get_extended_pdf(focus_pdf: Path, adapter=None) -> Path:
                 txt_base = row.get("txt_file", "").replace(".txt", "")
                 if txt_base == target_name:
                     source_pdf_name = row.get("source_pdf", "")
+                    pred_start = int(row.get("predial_page_start", 0))
                     pred_end = int(row.get("predial_page_end", 0))
                     ejercicio = row.get("ejercicio", "")
 
@@ -754,15 +757,33 @@ def get_extended_pdf(focus_pdf: Path, adapter=None) -> Path:
                         return focus_pdf
 
                     with fitz.open(str(source)) as doc:
-                        if pred_end < len(doc):
-                            ext_path = focus_pdf.with_name(focus_pdf.stem + "_ext.pdf")
-                            ext_doc = fitz.open()
-                            with fitz.open(str(focus_pdf)) as orig:
-                                ext_doc.insert_pdf(orig)
-                            ext_doc.insert_pdf(doc, from_page=pred_end, to_page=pred_end)
-                            ext_doc.save(str(ext_path))
-                            ext_doc.close()
-                            return ext_path
+                        n_pages = len(doc)
+                        # Calcular páginas extra disponibles
+                        # pred_start/pred_end son 0-based page indices
+                        page_before = pred_start - 1 if pred_start > 0 else None
+                        page_after = pred_end if pred_end < n_pages else None
+
+                        if page_before is None and page_after is None:
+                            return focus_pdf
+
+                        ext_path = focus_pdf.with_name(focus_pdf.stem + "_ext.pdf")
+                        ext_doc = fitz.open()
+
+                        # +1 página ANTES del recorte
+                        if page_before is not None:
+                            ext_doc.insert_pdf(doc, from_page=page_before, to_page=page_before)
+
+                        # Recorte original
+                        with fitz.open(str(focus_pdf)) as orig:
+                            ext_doc.insert_pdf(orig)
+
+                        # +1 página DESPUÉS del recorte
+                        if page_after is not None:
+                            ext_doc.insert_pdf(doc, from_page=page_after, to_page=page_after)
+
+                        ext_doc.save(str(ext_path))
+                        ext_doc.close()
+                        return ext_path
                     break
     except Exception:
         pass
@@ -1160,7 +1181,7 @@ def extract_all(
             if pdf_path.exists():
                 try:
                     ext_pdf = get_extended_pdf(pdf_path, adapter)
-                    n_extra = " (+1pp)" if ext_pdf != pdf_path else ""
+                    n_extra = " (±1pp)" if ext_pdf != pdf_path else ""
                     print(f"    [2/2] PDF visión{n_extra}...")
 
                     data_pdf = call_llm_vision(ext_pdf, anio, nombre_mpio, estado_nombre)
