@@ -30,8 +30,8 @@ CVE_ENT = "20"
 NEEDS_OCR = True  # PDFs con marca de agua + scanned elements
 
 # ── Años ──
-YEAR_MIN = 2012
-YEAR_MAX = 2025
+YEAR_MIN = 2010
+YEAR_MAX = 2016
 
 # ── Periódico Oficial ──
 BASE_URL = "https://periodicooficial.oaxaca.gob.mx/"

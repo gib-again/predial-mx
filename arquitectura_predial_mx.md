@@ -994,7 +994,7 @@ git push -u origin main
 git push
 ```
 
-Esto te da respaldo automático y puedes acceder desde cualquier máquina.
+Da respaldo automático y acceso desde cualquier máquina.
 
 ---
 
@@ -1006,7 +1006,7 @@ Esto te da respaldo automático y puedes acceder desde cualquier máquina.
 3. Crear el virtualenv único
 4. `git init` + primer commit
 
-### Fase 2: Código compartido (2–3 horas)
+### Fase 2: Código compartido (4–6 horas)
 5. Crear `core/pdf_utils.py` consolidando las funciones duplicadas
 6. Crear `core/text_utils.py` con `norm()`, `slugify()`, `parse_monto_to_float()`
 7. Crear `core/schemas.py` con los modelos Pydantic
@@ -1014,7 +1014,7 @@ Esto te da respaldo automático y puedes acceder desde cualquier máquina.
 9. Crear `estados/base.py` con la clase abstracta
 10. Commit: "Agrego módulos core y clase base de adaptador"
 
-### Fase 3: Migrar Coahuila como piloto (3–4 horas)
+### Fase 3: Migrar Coahuila como piloto (6–8 horas)
 11. Mover datos existentes a `data/coahuila/` con la nueva estructura
 12. Crear `estados/coahuila/` con `config.py`, `download.py`, `segment.py`
 13. Refactorizar scripts 01, 03, 04, 05, 10 usando imports de `core/`
@@ -1023,24 +1023,24 @@ Esto te da respaldo automático y puedes acceder desde cualquier máquina.
 16. **Verificar**: los JSONs generados deben ser idénticos a los actuales
 17. Commit: "Migro Coahuila como primer adaptador completo"
 
-### Fase 4: Migrar los 3 estados restantes (1–2 horas por estado)
+### Fase 4: Migrar los 3 estados restantes (2–4 horas por estado)
 18. Jalisco → `estados/jalisco/`
 19. Querétaro → `estados/queretaro/`
 20. Yucatán → `estados/yucatan/`
 21. Verificar cada uno contra su salida anterior
 
-### Fase 5: Expandir esquema JSON (2–3 horas)
+### Fase 5: Expandir esquema JSON (4–6 horas)
 22. Actualizar `core/schemas.py` con los tipos nuevos
 23. Actualizar el system prompt en `core/llm_extract.py`
 24. Actualizar `core/validation.py` con las reglas nuevas
 25. Re-procesar los municipios que habían quedado como `desconocido`
 
-### Fase 6: Consolidación (1–2 horas)
+### Fase 6: Consolidación (2–4 horas)
 26. Crear `scripts/consolidate_panel.py`
 27. Generar `output/predial_panel.csv`
 28. Generar `output/quality_report.csv`
 
-**Tiempo estimado total**: 15–20 horas de trabajo, distribuidas como prefieras.
+**Tiempo estimado total**: 15–20 horas de trabajo.
 
 ---
 

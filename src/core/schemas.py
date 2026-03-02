@@ -39,9 +39,9 @@ class TipoEsquema(str, Enum):
 
 class MinimoPredial(BaseModel):
     """Monto mínimo del impuesto predial (independiente del esquema)."""
-    monto: float = Field(description="Monto mínimo en pesos")
+    monto: float = Field(description="Monto mínimo (en la unidad indicada)")
     periodicidad: str = Field("bimestral", description="anual | bimestral | mensual")
-
+    unidad: str = Field("pesos", description="pesos | uma | vsm | dias_sm")
 
 class CuotaFijaAdicional(BaseModel):
     """
@@ -85,7 +85,7 @@ class FilaProgresiva(BaseModel):
     superior: Optional[str] = Field(None, description="Límite superior, copiado literal. null si rango abierto")
     cuota_fija: Optional[str] = Field(None, description="Cuota fija, copiada literal del texto")
     tasa_marginal: Optional[str] = Field(None, description="Tasa marginal, solo número decimal como string")
-
+    unidad_cuota_fija: str = Field("pesos", description="unidad de la cuota fija: pesos | uma | vsm | dias_sm")
 
 class FilaTasaUnica(BaseModel):
     """Para municipios con una sola tasa aplicable a todos los predios."""
@@ -98,8 +98,9 @@ class FilaTasaUnica(BaseModel):
 class FilaCuotaFija(BaseModel):
     """Para municipios con monto fijo por predio sin referencia a valor catastral."""
     descripcion: str = Field(description="Texto descriptivo corto")
-    monto: float = Field(description="Monto fijo en pesos")
+    monto: float = Field(description="Monto fijo (en la unidad indicada)")
     periodicidad: str = Field("anual", description="anual | bimestral | mensual")
+    unidad: str = Field("pesos", description="pesos | uma | vsm | dias_sm")
 
 
 class ColumnaValor(BaseModel):

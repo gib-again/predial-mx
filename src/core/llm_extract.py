@@ -17,9 +17,17 @@ Tres modos de operación:
      Activar con: export OPENAI_STRUCTURED_OUTPUT=0
 
 Uso desde CLI:
-  python scripts/run_pipeline.py coahuila --steps extract           # síncrono
-  python scripts/run_pipeline.py jalisco  --steps extract --batch   # batch
-  python scripts/run_pipeline.py guanajuato --steps extract         # síncrono con fallback PDF
+    # 1. Enviar batches
+     python -m scripts.run_pipeline guanajuato --steps extract --batch
+
+    # 2. Esperar (hasta 24h) y verificar estado
+     python -c "from src.core.llm_extract import check_all_batches; check_all_batches(['batch_id_aquí'])"
+
+    # 3. Descargar resultados del batch
+     python scripts/batch_download.py guanajuato
+
+    # 4. Síncrono para fallback PDF de los que quedaron inválidos
+     python -m scripts.run_pipeline guanajuato --steps extract
 """
 
 import json
@@ -91,8 +99,9 @@ PREDIAL_JSON_SCHEMA = {
                                 "properties": {
                                     "monto": {"type": "number"},
                                     "periodicidad": {"type": "string"},
+                                    "unidad": {"type": "string"},
                                 },
-                                "required": ["monto", "periodicidad"],
+                                "required": ["monto", "periodicidad", "unidad"],
                                 "additionalProperties": False,
                             },
                             {"type": "null"},
@@ -142,10 +151,11 @@ PREDIAL_JSON_SCHEMA = {
                                 "superior": {"type": "string"},
                                 "cuota_fija": {"type": "string"},
                                 "tasa_marginal": {"type": "string"},
+                                "unidad_cuota_fija": {"type": "string"},
                             },
                             "required": [
                                 "n_rango", "inferior", "superior",
-                                "cuota_fija", "tasa_marginal",
+                                "cuota_fija", "tasa_marginal", "unidad_cuota_fija",
                             ],
                             "additionalProperties": False,
                         },
@@ -175,9 +185,10 @@ PREDIAL_JSON_SCHEMA = {
                                 "descripcion": {"type": "string"},
                                 "monto": {"type": "number"},
                                 "periodicidad": {"type": "string"},
+                                "unidad": {"type": "string"},
                             },
                             "required": [
-                                "descripcion", "monto", "periodicidad",
+                                "descripcion", "monto", "periodicidad", "unidad",
                             ],
                             "additionalProperties": False,
                         },
@@ -326,7 +337,13 @@ NO aplanes la tabla en filas progresivas consecutivas (una por columna).
 Casi todas las leyes establecen un monto mínimo ("en ningún caso será inferior a $X").
 Captúralo así:
 
-  "minimo_predial": {"monto": 42.00, "periodicidad": "bimestral"}
+  "minimo_predial": {"monto": 42.00, "periodicidad": "bimestral", "unidad": "pesos"}
+
+Valores posibles de "unidad": "pesos" | "uma" | "vsm" | "dias_sm"
+  - Si dice "$42.00" o un monto en pesos → "pesos"
+  - Si dice "2 UMA" o "dos veces la UMA" → "uma" (monto = 2)
+  - Si dice "2 salarios mínimos" o "2 VSM" → "vsm" (monto = 2)
+  - Si dice "X días de salario mínimo" → "dias_sm" (monto = X)
 
 Si no existe mínimo, usa null. Este campo es INDEPENDIENTE del tipo de esquema.
 
@@ -354,11 +371,14 @@ tabla_progresiva (si tipo_esquema = "progresivo"):
     "inferior": "$0.01",
     "superior": "$620,100.00",
     "cuota_fija": "$142.63",
-    "tasa_marginal": "0.00023"
+    "tasa_marginal": "0.00023",
+    "unidad_cuota_fija": "pesos"
   }
   - inferior/superior: copia literal (incluyendo $, comas).
   - Último rango abierto: "En adelante" en superior.
   - tasa_marginal: solo número decimal.
+  - unidad_cuota_fija: "pesos" | "uma" | "vsm" | "dias_sm"
+    La mayoría son "pesos". Colima usa "uma" (pre-2017: "vsm").
 
 tabla_tasa_unica (si tipo_esquema = "tasa_unica"):
   {
@@ -372,8 +392,11 @@ tabla_cuota_fija (si tipo_esquema = "cuota_fija"):
   {
     "descripcion": "texto corto",
     "monto": 350.00,
-    "periodicidad": "anual | bimestral | mensual"
+    "periodicidad": "anual | bimestral | mensual",
+    "unidad": "pesos"
   }
+  - unidad: "pesos" | "uma" | "vsm" | "dias_sm". Default "pesos" si el texto
+    muestra montos en $ sin mención de UMA/VSM.
 
 tabla_mixta_rango (si tipo_esquema = "mixto" con tabla multi-columna):
   Ver sección PATRÓN ESPECIAL arriba.
