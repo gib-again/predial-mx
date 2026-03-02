@@ -47,3 +47,4 @@ import src.estados.edomex    # noqa: F401, E402
 import src.estados.sinaloa   # noqa: F401, E402
 import src.estados.tabasco   # noqa: F401, E402
 import src.estados.guanajuato # noqa: F401, E402
+import src.estados.oaxaca     # noqa: F401, E402
