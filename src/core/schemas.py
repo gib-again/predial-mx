@@ -30,6 +30,27 @@ class TipoEsquema(str, Enum):
 
 
 # ── Filas de cada tipo de tabla ──
+class CuotaFijaAdicional(BaseModel):
+    """Cuota fija que se cobra además de la tasa al millar."""
+    monto: float = Field(description="Monto de la cuota fija adicional")
+    periodicidad: str = Field("anual", description="anual | bimestral | mensual")
+    unidad: str = Field("pesos", description="pesos | uma | vsm | dias_sm")
+
+
+class FilaTarifaMillar(BaseModel):
+    """Una fila en la tabla de tasas al millar (por tipo de predio)."""
+    grupo: str = Field(description="general | rustico | urbano | otro")
+    clave: str = Field(description="identificador_corto_en_snake_case")
+    descripcion: str = Field(description="Texto descriptivo corto de la ley")
+    tasa_millar: Optional[float] = Field(None, description="Tasa al millar (número decimal)")
+    periodicidad: str = Field("anual", description="anual | bimestral")
+    cuota_fija_adicional: Optional[CuotaFijaAdicional] = Field(
+        None,
+        description=(
+            "Cuota fija adicional que se cobra junto con la tasa al millar. "
+            "Ej: '$150 más 3.5 al millar'. null si no aplica."
+        ),
+    )
 
 class FilaTarifaMillar(BaseModel):
     """Una fila en la tabla de tasas al millar (por tipo de predio)."""
