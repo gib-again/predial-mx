@@ -5,12 +5,18 @@ Beneficios sobre la validación manual del script 25 original:
   1. Tipado fuerte — errores se detectan al instanciar
   2. Serialización/deserialización automática (JSON ↔ objeto Python)
   3. Documentación viva — el esquema ES el código
-  4. Compatible con OpenAI Structured Outputs si se decide usar después
+  4. Compatible con OpenAI Structured Outputs (json_schema en response_format)
 
 El esquema expandido incluye tipos nuevos respecto al original:
   - tasa_unica:  una sola tasa para todos los predios
   - cuota_fija:  monto fijo por predio
   - mixto:       combinación de los anteriores
+
+Changelog:
+  - v1: Schema inicial con tarifa_millar, progresivo, tasa_unica, cuota_fija, mixto
+  - v2: Agregar minimo_predial, tabla_mixta_rango, ColumnaValor
+  - v3: Agregar cuota_fija_adicional a FilaTarifaMillar (tarifa millar + cuota fija)
+        Agregar MetaExtraccion para tracking de fuente (txt vs pdf_vision)
 """
 
 from enum import Enum
@@ -29,13 +35,32 @@ class TipoEsquema(str, Enum):
     DESCONOCIDO   = "desconocido"
 
 
-# ── Filas de cada tipo de tabla ──
+# ── Submodelos ──
+
+class MinimoPredial(BaseModel):
+    """Monto mínimo del impuesto predial (independiente del esquema)."""
+    monto: float = Field(description="Monto mínimo en pesos")
+    periodicidad: str = Field("bimestral", description="anual | bimestral | mensual")
+
+
 class CuotaFijaAdicional(BaseModel):
-    """Cuota fija que se cobra además de la tasa al millar."""
+    """
+    Cuota fija que se cobra ADEMÁS de la tasa al millar.
+    Ej: "$150 más 3.5 al millar sobre el valor catastral".
+    Encontrado en: Guanajuato (varios municipios).
+    """
     monto: float = Field(description="Monto de la cuota fija adicional")
     periodicidad: str = Field("anual", description="anual | bimestral | mensual")
     unidad: str = Field("pesos", description="pesos | uma | vsm | dias_sm")
 
+
+class MetaExtraccion(BaseModel):
+    """Metadata de la extracción LLM. Incluida en cada JSON de salida."""
+    fuente: str = Field(description="txt | pdf_vision — fuente usada para la extracción")
+    modelo: str = Field(description="Modelo LLM usado (ej: gpt-5.2)")
+
+
+# ── Filas de cada tipo de tabla ──
 
 class FilaTarifaMillar(BaseModel):
     """Una fila en la tabla de tasas al millar (por tipo de predio)."""
@@ -51,20 +76,6 @@ class FilaTarifaMillar(BaseModel):
             "Ej: '$150 más 3.5 al millar'. null si no aplica."
         ),
     )
-
-class FilaTarifaMillar(BaseModel):
-    """Una fila en la tabla de tasas al millar (por tipo de predio)."""
-    grupo: str = Field(description="general | rustico | urbano | otro")
-    clave: str = Field(description="identificador_corto_en_snake_case")
-    descripcion: str = Field(description="Texto descriptivo corto de la ley")
-    tasa_millar: Optional[float] = Field(None, description="Tasa al millar (número decimal)")
-    periodicidad: str = Field("anual", description="anual | bimestral")
-
-
-class MinimoPredial(BaseModel):
-    """Monto mínimo del impuesto predial (independiente del esquema)."""
-    monto: float = Field(description="Monto mínimo en pesos")
-    periodicidad: str = Field("bimestral", description="anual | bimestral | mensual")
 
 
 class FilaProgresiva(BaseModel):
@@ -142,3 +153,8 @@ class PredialSchema(BaseModel):
 class PredialOutput(BaseModel):
     """Wrapper raíz: el JSON siempre tiene clave 'predial' en la raíz."""
     predial: PredialSchema
+    _meta: Optional[MetaExtraccion] = Field(
+        None,
+        alias="_meta",
+        description="Metadata de extracción (fuente, modelo). Presente en JSONs generados con llm_extract v2+.",
+    )

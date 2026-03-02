@@ -18,10 +18,11 @@ Particularidades del marco legal, fuente de datos, procesamiento y pipeline de c
 | 8 | Edo. México | 15 | 125 | No | Tarifa estatal uniforme (Código Financiero) → hardcoded → expansión | 2,000 |
 | 9 | Sinaloa | 25 | 18 | No | Tarifa estatal uniforme (Ley de Hacienda) + actualización INPC → expansión | 288 |
 | 10 | Tabasco | 27 | 17 | No | Tarifa estatal uniforme (Ley de Hacienda) → hardcoded → expansión | 272 |
+| 11 | Guanajuato | 11 | 46 | Sí | Ley de ingresos por municipio (PO) → OCR → segmentación 2 niveles → LLM | ~736 |
 
 \* Yucatán: PDFs digitales en su mayoría; algunas tablas de tarifa son imágenes embebidas que requieren OCR selectivo.
 
-**Próximos:** Guanajuato (OCR), Oaxaca (OCR) — ambos publican Ley de Ingresos por municipio con tarifas individuales.
+**Próximos:** Oaxaca (OCR, 570 municipios) — publica Ley de Ingresos por municipio con tarifas individuales.
 
 ---
 
@@ -91,6 +92,29 @@ Particularidades del marco legal, fuente de datos, procesamiento y pipeline de c
   - Skip de páginas variable al inicio de cada PO (índice, contenido administrativo)
   - Patrón regex: `LEY DE INGRESOS (DEL|) MUNICIPIO DE {NOMBRE}`
   - Meta CSV único consolidado (corrección de bug de múltiples CSVs por año)
+
+### Guanajuato
+- **CVE_ENT**: 11 | **Municipios**: 46 | **Periodo**: 2012-2025
+- **Fuente**: Periódico Oficial del Gobierno del Estado de Guanajuato
+- **URL del PO**: API REST en backperiodico.guanajuato.gob.mx (búsqueda + descarga)
+- **OCR necesario**: Sí (PDFs híbridos: texto legal digital + tablas de tarifas escaneadas)
+- **Marco legal**: Ley de Ingresos por municipio, publicada en PO (dic del año anterior + ene del ejercicio)
+- **Segmentación**: Dos niveles:
+  1. Localizar leyes municipales dentro de cada PDF del PO (múltiples leyes por PDF)
+  2. Extraer sección predial dentro de cada ley
+- **Extracción LLM**: Structured output (JSON Schema enforced) + fallback PDF visión
+- **Particularidades**:
+  - Múltiples PDFs por año (10-15 partes del mismo número del PO)
+  - PDFs híbridos: texto legal buscable, pero tablas de tarifas son imágenes escaneadas
+  - OCR con `ocrmypdf --force-ocr` (sin --remove-background ni --clean por compatibilidad Windows)
+  - Descarga vía API REST con paginación; filtros para excluir reformas, empréstitos, ley estatal
+  - Municipio extraído del campo "asunto" del API (regex) para parchar campo "NO APLICA"
+  - 46 municipios con aliases extensos para tolerancia a ruido OCR
+    (dolores_hidalgo, san_miguel_allende, silao, etc.)
+  - Fallback PDF visión: si OCR produce esquema inválido, se envía el PDF recortado
+    como imagen al LLM con +1 página extra por si faltaba contenido
+  - Primer estado en usar structured output; la funcionalidad quedó en src/core/llm_extract.py
+    para beneficio de todos los estados
 
 ---
 
