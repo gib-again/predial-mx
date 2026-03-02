@@ -1179,27 +1179,41 @@ def extract_all(
 
             pdf_path = txt_path.with_suffix(".pdf")
             if pdf_path.exists():
+                # Verificar que el PDF no sea demasiado grande
+                import fitz
                 try:
-                    ext_pdf = get_extended_pdf(pdf_path, adapter)
-                    n_extra = " (±1pp)" if ext_pdf != pdf_path else ""
-                    print(f"    [2/2] PDF visión{n_extra}...")
+                    with fitz.open(str(pdf_path)) as check_doc:
+                        n_pages = len(check_doc)
+                except Exception:
+                    n_pages = 0
 
-                    data_pdf = call_llm_vision(ext_pdf, anio, nombre_mpio, estado_nombre)
+                if n_pages > 15:
+                    print(f"    [2/2] PDF tiene {n_pages} páginas — demasiado grande, skip")
+                    print(f"    [REVISAR] Segmentación posiblemente falló para este municipio")
+                elif n_pages > 0:
+                    try:
+                        ext_pdf = get_extended_pdf(pdf_path, adapter)
+                        n_extra = " (±1pp)" if ext_pdf != pdf_path else ""
+                        print(f"    [2/2] PDF visión ({n_pages}pp{n_extra})...")
 
-                    if _is_valid_extraction(data_pdf):
-                        data = data_pdf
-                        used_pdf = True
-                        print(f"    [2/2] PDF → válido ✓")
-                    else:
-                        print(f"    [2/2] PDF → también inválido")
-                        if data is None:
+                        data_pdf = call_llm_vision(ext_pdf, anio, nombre_mpio, estado_nombre)
+
+                        if _is_valid_extraction(data_pdf):
                             data = data_pdf
+                            used_pdf = True
+                            print(f"    [2/2] PDF → válido ✓")
+                        else:
+                            print(f"    [2/2] PDF → también inválido")
+                            if data is None:
+                                data = data_pdf
 
-                    if ext_pdf != pdf_path and ext_pdf.exists():
-                        ext_pdf.unlink()
+                        if ext_pdf != pdf_path and ext_pdf.exists():
+                            ext_pdf.unlink()
 
-                except Exception as e:
-                    print(f"    [ERROR] Vision PDF: {e}")
+                    except Exception as e:
+                        print(f"    [ERROR] Vision PDF: {e}")
+                else:
+                    print(f"    [2/2] PDF vacío o ilegible")
             else:
                 print(f"    [2/2] No hay PDF para fallback")
 
