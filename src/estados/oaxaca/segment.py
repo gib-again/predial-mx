@@ -52,6 +52,9 @@ from src.estados.oaxaca import config
 
 
 FALLBACK_PAGES = 6
+# Máximo de caracteres para el fallback de ley completa.
+# ~30k chars ≈ 8-10k tokens, cabe holgado en contexto de gpt-5.2.
+FALLBACK_MAX_CHARS = 30_000
 
 
 # ═══════════════════════════════════════════════════
@@ -396,20 +399,16 @@ def extract_predial_section(
     start_pos, method = _find_predial_start(full_text)
 
     if start_pos is None:
-        # FALLBACK: primeras N páginas de la ley
-        fb_end = min(ley.page_start + FALLBACK_PAGES, ley.page_end)
-        fb_text_parts = []
-        for p in range(ley.page_start, fb_end):
-            t = doc[p].get_text("text")
-            if t:
-                fb_text_parts.append(t)
-        fb_text = "\n".join(fb_text_parts).strip()
+        # FALLBACK: enviar la ley completa (truncada a FALLBACK_MAX_CHARS).
+        # En Oaxaca muchos municipios (usos y costumbres) no cobran predial;
+        # necesitamos que el LLM vea toda la ley para confirmar "no_aplica".
+        fb_text = full_text[:FALLBACK_MAX_CHARS].strip()
         return SeccionPredial(
             found=True,
             text=fb_text,
             page_start=ley.page_start,
-            page_end=fb_end,
-            method=f"fallback_{FALLBACK_PAGES}pp",
+            page_end=ley.page_end,
+            method="fallback_ley_completa",
         )
 
     # ── Buscar fin ──

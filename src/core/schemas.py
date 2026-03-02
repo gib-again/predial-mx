@@ -32,6 +32,7 @@ class TipoEsquema(str, Enum):
     TASA_UNICA    = "tasa_unica"
     CUOTA_FIJA    = "cuota_fija"
     MIXTO         = "mixto"
+    NO_APLICA      = "no_aplica"
     DESCONOCIDO   = "desconocido"
 
 
@@ -85,7 +86,7 @@ class FilaProgresiva(BaseModel):
     superior: Optional[str] = Field(None, description="Límite superior, copiado literal. null si rango abierto")
     cuota_fija: Optional[str] = Field(None, description="Cuota fija, copiada literal del texto")
     tasa_marginal: Optional[str] = Field(None, description="Tasa marginal, solo número decimal como string")
-    unidad_cuota_fija: str = Field("pesos", description="unidad de la cuota fija: pesos | uma | vsm | dias_sm")
+    unidad_cuota_fija: str = Field("pesos", description="pesos | uma | vsm | dias_sm")
 
 class FilaTasaUnica(BaseModel):
     """Para municipios con una sola tasa aplicable a todos los predios."""
@@ -105,6 +106,7 @@ class FilaCuotaFija(BaseModel):
 
 class ColumnaValor(BaseModel):
     """Valor de una celda en tabla mixta por rango × tipo de predio."""
+    nombre: str = Field(description="Tipo de predio en snake_case (ej: urbano, rustico)")
     valor: float = Field(description="Monto en pesos (cuota fija) o tasa al millar")
     tipo: str = Field(description="cuota_fija | tasa_millar")
     unidad: str = Field(
@@ -123,10 +125,9 @@ class FilaMixtaRango(BaseModel):
     n_rango: str = Field(description="Número de rango como string")
     inferior: str = Field(description="Límite inferior")
     superior: str = Field(description="Límite superior o 'En Adelante'")
-    columnas: dict[str, ColumnaValor] = Field(
-        description="Clave = tipo de predio (snake_case), valor = ColumnaValor"
+    columnas: list[ColumnaValor] = Field(
+        description="Lista de valores por tipo de predio"
     )
-
 
 # ── Schema principal ──
 

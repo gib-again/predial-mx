@@ -24,7 +24,7 @@ Uso desde CLI:
      python -c "from src.core.llm_extract import check_all_batches; check_all_batches(['batch_id_aquí'])"
 
     # 3. Descargar resultados del batch
-     python scripts/batch_download.py guanajuato
+     python -m scripts.batch_download yucatan
 
     # 4. Síncrono para fallback PDF de los que quedaron inválidos
      python -m scripts.run_pipeline guanajuato --steps extract
@@ -87,7 +87,7 @@ PREDIAL_JSON_SCHEMA = {
                         "type": "string",
                         "enum": [
                             "tarifa_millar", "progresivo", "tasa_unica",
-                            "cuota_fija", "mixto", "desconocido",
+                            "cuota_fija", "mixto", "no_aplica", "desconocido",
                         ],
                     },
                     "esquema_valido": {"type": "boolean"},
@@ -155,7 +155,8 @@ PREDIAL_JSON_SCHEMA = {
                             },
                             "required": [
                                 "n_rango", "inferior", "superior",
-                                "cuota_fija", "tasa_marginal", "unidad_cuota_fija",
+                                "cuota_fija", "tasa_marginal",
+                                "unidad_cuota_fija",
                             ],
                             "additionalProperties": False,
                         },
@@ -188,7 +189,8 @@ PREDIAL_JSON_SCHEMA = {
                                 "unidad": {"type": "string"},
                             },
                             "required": [
-                                "descripcion", "monto", "periodicidad", "unidad",
+                                "descripcion", "monto", "periodicidad",
+                                "unidad",
                             ],
                             "additionalProperties": False,
                         },
@@ -202,15 +204,16 @@ PREDIAL_JSON_SCHEMA = {
                                 "inferior": {"type": "string"},
                                 "superior": {"type": "string"},
                                 "columnas": {
-                                    "type": "object",
-                                    "additionalProperties": {
+                                    "type": "array",
+                                    "items": {
                                         "type": "object",
                                         "properties": {
+                                            "nombre": {"type": "string"},
                                             "valor": {"type": "number"},
                                             "tipo": {"type": "string"},
                                             "unidad": {"type": "string"},
                                         },
-                                        "required": ["valor", "tipo"],
+                                        "required": ["nombre", "valor", "tipo", "unidad"],
                                         "additionalProperties": False,
                                     },
                                 },
@@ -288,6 +291,13 @@ ESTRUCTURA EXACTA DEL JSON (no agregues claves fuera de esto):
   b) Rangos bajos pagan cuota fija y a partir de cierto valor pagan al millar.
   c) Tabla con MÚLTIPLES COLUMNAS de valores según tipo de predio para los mismos rangos.
   NO marques como "mixto" solo porque hay un mínimo o un solo tipo adicional (rústico con tasa única).
+
+"no_aplica": El municipio NO cobra impuesto predial. La ley de ingresos no incluye
+  apartado de impuestos sobre el patrimonio, o explícitamente indica que no se cobra
+  impuesto predial. Común en municipios pequeños de Oaxaca.
+  Usar esquema_valido = true, tablas vacías, y en comentarios explicar brevemente por qué
+  se concluye que no aplica (ej: "La ley de ingresos no contiene capítulo de impuestos"
+  o "Solo contempla derechos y aprovechamientos").
 
 "desconocido": El texto es insuficiente, truncado, o no contiene la mecánica de cálculo.
 
@@ -397,9 +407,6 @@ tabla_cuota_fija (si tipo_esquema = "cuota_fija"):
   }
   - unidad: "pesos" | "uma" | "vsm" | "dias_sm". Default "pesos" si el texto
     muestra montos en $ sin mención de UMA/VSM.
-
-tabla_mixta_rango (si tipo_esquema = "mixto" con tabla multi-columna):
-  Ver sección PATRÓN ESPECIAL arriba.
 
 ═══ REGLAS CLAVE ═══
 
@@ -567,6 +574,8 @@ def _is_valid_extraction(data: dict) -> bool:
         return False
     if predial.get("tipo_esquema") == "desconocido":
         return False
+    if predial.get("tipo_esquema") == "no_aplica":
+        return True  # es un resultado válido, no retry
 
     tipo = predial.get("tipo_esquema", "")
     if tipo == "tarifa_millar" and not predial.get("tabla_tarifa_millar"):
@@ -577,6 +586,7 @@ def _is_valid_extraction(data: dict) -> bool:
         return False
     if tipo == "mixto" and not predial.get("tabla_mixta_rango"):
         return False
+    
 
     return True
 
@@ -1187,7 +1197,7 @@ def extract_all(
                 except Exception:
                     n_pages = 0
 
-                if n_pages > 15:
+                if n_pages > 50:
                     print(f"    [2/2] PDF tiene {n_pages} páginas — demasiado grande, skip")
                     print(f"    [REVISAR] Segmentación posiblemente falló para este municipio")
                 elif n_pages > 0:
