@@ -1,0 +1,15 @@
+{
+  "prefijo": "JAL",
+  "model": "gpt-5.2",
+  "structured_output": true,
+  "batch_ids": [
+    "batch_69a6e8a4c904819082b2bfebb627f94b",
+    "batch_69a6e8a878c08190bbac16436d30c41f",
+    "batch_69a6e8aa37cc81909a6383a04b7d2ece"
+  ],
+  "jsonl_files": [
+    "data\\jalisco\\meta\\batch_JAL_001.jsonl",
+    "data\\jalisco\\meta\\batch_JAL_002.jsonl",
+    "data\\jalisco\\meta\\batch_JAL_003.jsonl"
+  ]
+}

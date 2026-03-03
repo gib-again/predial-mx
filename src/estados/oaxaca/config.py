@@ -14,6 +14,10 @@ CVE_ENT = 20 (INEGI).
 Esquema predial dominante: tasa_unica (0.5% anual sobre valor catastral)
 con mínimos en UMA por tipo de suelo (urbano/rústico) y cuota por m²
 para fraccionamiento por tipo habitacional.
+
+Es común que algunos municipios pequeños no cobren el impuesto predial,
+pero sí publiquen su ley de ingresos municipal en el Periódico Oficial.
+
 """
 
 from __future__ import annotations

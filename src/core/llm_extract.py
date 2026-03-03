@@ -87,7 +87,7 @@ PREDIAL_JSON_SCHEMA = {
                         "type": "string",
                         "enum": [
                             "tarifa_millar", "progresivo", "tasa_unica",
-                            "cuota_fija", "mixto", "no_aplica", "desconocido",
+                            "cuota_fija", "mixto", "desconocido",
                         ],
                     },
                     "esquema_valido": {"type": "boolean"},
@@ -277,6 +277,13 @@ ESTRUCTURA EXACTA DEL JSON (no agregues claves fuera de esto):
   IMPORTANTE: A veces, ADEMÁS de la tasa al millar, se cobra una CUOTA FIJA ADICIONAL por predio
   (ej: "$150 más 3.5 al millar sobre el valor catastral"). Esto sigue siendo "tarifa_millar";
   la cuota fija adicional se captura en el campo "cuota_fija_adicional" de cada fila.
+  Casos especiales detectados:
+        - Si la tasa dice ser al millar, pero se entrega un valor muy alto acompañado de un signo de "%"
+        se calcula el valor porcentual de la tarifa al millar, es decir se divide entre 100, ejemplo 20% 
+        al millar con un 20% escrito en la ley, se interpreta como 0.2 al millar y se marca como "al_millar".
+      - Factores decimales pequeños (0.001, 0.00025) → "factor_decimal", se identifican por ser <0.01 y
+        se odentificó que en algunos casos habrá un signo "%" que es incorrecto en la ley, el valor es 
+        un factor decimal.
 
 "progresivo": El impuesto usa una tabla de rangos de valor catastral con columnas:
   límite inferior, límite superior, cuota fija, tasa marginal sobre el excedente.
@@ -291,13 +298,6 @@ ESTRUCTURA EXACTA DEL JSON (no agregues claves fuera de esto):
   b) Rangos bajos pagan cuota fija y a partir de cierto valor pagan al millar.
   c) Tabla con MÚLTIPLES COLUMNAS de valores según tipo de predio para los mismos rangos.
   NO marques como "mixto" solo porque hay un mínimo o un solo tipo adicional (rústico con tasa única).
-
-"no_aplica": El municipio NO cobra impuesto predial. La ley de ingresos no incluye
-  apartado de impuestos sobre el patrimonio, o explícitamente indica que no se cobra
-  impuesto predial. Común en municipios pequeños de Oaxaca.
-  Usar esquema_valido = true, tablas vacías, y en comentarios explicar brevemente por qué
-  se concluye que no aplica (ej: "La ley de ingresos no contiene capítulo de impuestos"
-  o "Solo contempla derechos y aprovechamientos").
 
 "desconocido": El texto es insuficiente, truncado, o no contiene la mecánica de cálculo.
 
@@ -458,7 +458,6 @@ Las unidades son IMPLÍCITAS y fijas para la mayoría de los esquemas:
       - Texto dice "salario mínimo" o "VSM" → "vsm"
       - Tasas escritas como "X al millar" → "al_millar"
       - Tasas escritas como "X%" → "porcentaje"
-      - Factores decimales pequeños (0.001, 0.00025) → "factor_decimal"
 
 Devuelve SIEMPRE un único objeto JSON válido con la clave "predial" en la raíz, sin texto adicional.
 """
@@ -574,8 +573,6 @@ def _is_valid_extraction(data: dict) -> bool:
         return False
     if predial.get("tipo_esquema") == "desconocido":
         return False
-    if predial.get("tipo_esquema") == "no_aplica":
-        return True  # es un resultado válido, no retry
 
     tipo = predial.get("tipo_esquema", "")
     if tipo == "tarifa_millar" and not predial.get("tabla_tarifa_millar"):
@@ -586,7 +583,10 @@ def _is_valid_extraction(data: dict) -> bool:
         return False
     if tipo == "mixto" and not predial.get("tabla_mixta_rango"):
         return False
-    
+
+    # Sanity check: detectar valores claramente erróneos (ej: tasa al millar de 200)
+    if not _sanity_check_extraction(data):
+        return False
 
     return True
 
@@ -696,7 +696,7 @@ def call_llm_vision(
     kwargs: dict[str, Any] = {
         "model": OPENAI_VISION_MODEL,
         "messages": messages,
-        "max_tokens": 4096,
+        "max_completion_tokens": 4096,
     }
 
     if USE_STRUCTURED_OUTPUT:
@@ -720,6 +720,164 @@ def call_llm_vision(
             last_error = e
 
     raise last_error  # type: ignore
+
+
+# Extensión de TXT (+5pp antes, +2pp después) para fallback intermedio
+# ══════════════════════════════════════════════════════════════
+
+# Páginas de contexto para TXT extendido
+TXT_EXT_PAGES_BEFORE = 5
+TXT_EXT_PAGES_AFTER = 2
+
+
+def _diagnose_extraction(data: dict | None) -> str:
+    """
+    Genera un diagnóstico legible de por qué la extracción falló o es sospechosa.
+    Retorna un string con el resumen del problema.
+    """
+    if data is None:
+        return "sin_respuesta: el LLM no devolvió datos"
+
+    predial = data.get("predial", {})
+    tipo = predial.get("tipo_esquema", "?")
+    valido = predial.get("esquema_valido", False)
+    comentarios = predial.get("comentarios", "")
+
+    parts = [f"tipo={tipo}, valido={valido}"]
+
+    if tipo == "desconocido":
+        parts.append("diagnóstico=texto_insuficiente_o_truncado")
+        if comentarios:
+            parts.append(f"comentario_llm={comentarios[:120]}")
+        return " | ".join(parts)
+
+    # Revisar tablas vacías cuando se esperaban llenas
+    tablas_map = {
+        "tarifa_millar": "tabla_tarifa_millar",
+        "progresivo": "tabla_progresiva",
+        "tasa_unica": "tabla_tasa_unica",
+        "cuota_fija": "tabla_cuota_fija",
+        "mixto": "tabla_mixta_rango",
+    }
+    tabla_key = tablas_map.get(tipo)
+    if tabla_key and not predial.get(tabla_key):
+        parts.append(f"diagnóstico=tabla_{tipo}_vacía")
+        return " | ".join(parts)
+
+    # Revisar filas individuales con problemas
+    if tipo == "tarifa_millar":
+        for i, fila in enumerate(predial.get("tabla_tarifa_millar", [])):
+            tasa = fila.get("tasa_millar")
+            if tasa is not None and tasa > 50:
+                parts.append(
+                    f"diagnóstico=tasa_sospechosa_fila_{i} "
+                    f"(grupo={fila.get('grupo')}, tasa_millar={tasa})"
+                )
+
+    if not valido and comentarios:
+        parts.append(f"comentario_llm={comentarios[:120]}")
+
+    return " | ".join(parts)
+
+
+def _sanity_check_extraction(data: dict) -> bool:
+    """
+    Verificación post-extracción para detectar valores claramente erróneos.
+    Retorna True si pasa el sanity check, False si hay problemas.
+
+    Ej: Una tasa al millar > 50 es casi seguramente un error de interpretación
+    (100 al millar = 10% del valor catastral por bimestre → implausible).
+    """
+    predial = data.get("predial", {})
+    tipo = predial.get("tipo_esquema", "")
+
+    if tipo == "tarifa_millar":
+        for fila in predial.get("tabla_tarifa_millar", []):
+            tasa = fila.get("tasa_millar")
+            if tasa is not None and tasa > 50:
+                return False
+
+    if tipo == "tasa_unica":
+        for fila in predial.get("tabla_tasa_unica", []):
+            tasa = fila.get("tasa")
+            unidad = fila.get("unidad", "")
+            # >10% anual sobre valor catastral es implausible
+            if unidad == "porcentaje" and tasa is not None and tasa > 10:
+                return False
+            if unidad == "al_millar" and tasa is not None and tasa > 50:
+                return False
+
+    return True
+
+
+def get_extended_txt(focus_txt: Path, adapter=None) -> str | None:
+    """
+    Genera texto extendido: N páginas de contexto antes y después del recorte,
+    extraídas del source PDF vía segment.csv.
+
+    Retorna el texto extendido, o None si no puede extender.
+    """
+    if adapter is None:
+        return None
+
+    import fitz
+    import csv
+
+    meta_csv = adapter.meta_dir / "segment.csv"
+    if not meta_csv.exists():
+        return None
+
+    target_name = focus_txt.stem
+
+    try:
+        with meta_csv.open(encoding="utf-8-sig") as f:
+            reader = csv.DictReader(f)
+            for row in reader:
+                txt_base = row.get("txt_file", "").replace(".txt", "")
+                if txt_base == target_name:
+                    source_pdf_name = row.get("source_pdf", "")
+                    pred_start = int(row.get("predial_page_start", 0)) - 1  # 1-based → 0-based
+                    pred_end = int(row.get("predial_page_end", 0))          # exclusive
+                    ejercicio = row.get("ejercicio", "")
+
+                    if not source_pdf_name or pred_end <= 0:
+                        return None
+
+                    # Buscar source PDF (OCR primero, luego raw)
+                    source = None
+                    for base_dir in [adapter.pdf_ocr_dir, adapter.pdf_raw_dir]:
+                        candidate = base_dir / ejercicio / source_pdf_name
+                        if candidate.exists():
+                            source = candidate
+                            break
+                    if source is None:
+                        return None
+
+                    with fitz.open(str(source)) as doc:
+                        n_pages = len(doc)
+                        ext_start = max(0, pred_start - TXT_EXT_PAGES_BEFORE)
+                        ext_end = min(n_pages, pred_end + TXT_EXT_PAGES_AFTER)
+
+                        # Si no hay extensión real, no vale la pena
+                        if ext_start >= pred_start and ext_end <= pred_end:
+                            return None
+
+                        parts = []
+                        for p in range(ext_start, ext_end):
+                            text = doc[p].get_text("text")
+                            if text and text.strip():
+                                parts.append(text)
+
+                        if not parts:
+                            return None
+
+                        return "\n\n".join(parts)
+
+    except Exception:
+        return None
+
+    return None
+
 
 
 # ══════════════════════════════════════════════════════════════
@@ -1157,7 +1315,7 @@ def extract_all(
         else:
             print(f"\n  >>> {nombre_mpio} {anio}")
 
-        # ── Paso 1: TXT ──
+        # ── Paso 1: TXT (recorte original) ──
         try:
             texto = txt_path.read_text(encoding="utf-8", errors="ignore")
         except Exception as e:
@@ -1172,24 +1330,42 @@ def extract_all(
 
         data = None
         used_pdf = False
+        used_ext_txt = False
 
         try:
-            print(f"    [1/2] TXT ({len(texto)} chars)...")
+            print(f"    [1/3] TXT ({len(texto)} chars)...")
             data = call_llm(texto, anio, nombre_mpio, estado_nombre)
         except Exception as e:
             print(f"    [ERROR] LLM TXT: {e}")
 
-        # ── Paso 2: Si TXT falló o esquema inválido → PDF visión ──
+        # ── Paso 2: Si TXT falló → TXT extendido (+5pp antes, +2pp después) ──
         if pdf_fallback and (data is None or not _is_valid_extraction(data)):
-            reason = "sin respuesta" if data is None else (
-                f"tipo={data.get('predial', {}).get('tipo_esquema', '?')}, "
-                f"valido={data.get('predial', {}).get('esquema_valido', '?')}"
-            )
-            print(f"    [1/2] TXT → inválido ({reason})")
+            diag = _diagnose_extraction(data)
+            print(f"    [1/3] TXT → inválido ({diag})")
 
+            ext_texto = get_extended_txt(txt_path, adapter)
+            if ext_texto and len(ext_texto) > len(texto) + 500:
+                try:
+                    print(f"    [2/3] TXT extendido ({len(ext_texto)} chars, +{TXT_EXT_PAGES_BEFORE}pp/-{TXT_EXT_PAGES_AFTER}pp)...")
+                    data_ext = call_llm(ext_texto, anio, nombre_mpio, estado_nombre)
+                    if _is_valid_extraction(data_ext):
+                        data = data_ext
+                        used_ext_txt = True
+                        print(f"    [2/3] TXT ext → válido ✓")
+                    else:
+                        diag2 = _diagnose_extraction(data_ext)
+                        print(f"    [2/3] TXT ext → también inválido ({diag2})")
+                        if data is None:
+                            data = data_ext
+                except Exception as e:
+                    print(f"    [ERROR] LLM TXT extendido: {e}")
+            else:
+                print(f"    [2/3] Sin contexto adicional disponible, skip TXT extendido")
+
+        # ── Paso 3: Si TXT extendido también falló → PDF visión ──
+        if pdf_fallback and not used_ext_txt and (data is None or not _is_valid_extraction(data)):
             pdf_path = txt_path.with_suffix(".pdf")
             if pdf_path.exists():
-                # Verificar que el PDF no sea demasiado grande
                 import fitz
                 try:
                     with fitz.open(str(pdf_path)) as check_doc:
@@ -1197,23 +1373,24 @@ def extract_all(
                 except Exception:
                     n_pages = 0
 
-                if n_pages > 50:
-                    print(f"    [2/2] PDF tiene {n_pages} páginas — demasiado grande, skip")
+                if n_pages > 20:
+                    print(f"    [3/3] PDF tiene {n_pages} páginas — demasiado grande, skip")
                     print(f"    [REVISAR] Segmentación posiblemente falló para este municipio")
                 elif n_pages > 0:
                     try:
                         ext_pdf = get_extended_pdf(pdf_path, adapter)
                         n_extra = " (±1pp)" if ext_pdf != pdf_path else ""
-                        print(f"    [2/2] PDF visión ({n_pages}pp{n_extra})...")
+                        print(f"    [3/3] PDF visión ({n_pages}pp{n_extra})...")
 
                         data_pdf = call_llm_vision(ext_pdf, anio, nombre_mpio, estado_nombre)
 
                         if _is_valid_extraction(data_pdf):
                             data = data_pdf
                             used_pdf = True
-                            print(f"    [2/2] PDF → válido ✓")
+                            print(f"    [3/3] PDF → válido ✓")
                         else:
-                            print(f"    [2/2] PDF → también inválido")
+                            diag3 = _diagnose_extraction(data_pdf)
+                            print(f"    [3/3] PDF → también inválido ({diag3})")
                             if data is None:
                                 data = data_pdf
 
@@ -1223,9 +1400,9 @@ def extract_all(
                     except Exception as e:
                         print(f"    [ERROR] Vision PDF: {e}")
                 else:
-                    print(f"    [2/2] PDF vacío o ilegible")
+                    print(f"    [3/3] PDF vacío o ilegible")
             else:
-                print(f"    [2/2] No hay PDF para fallback")
+                print(f"    [3/3] No hay PDF para fallback")
 
         if data is None:
             stats["errors"] += 1
@@ -1233,7 +1410,7 @@ def extract_all(
 
         # Agregar metadata
         data["_meta"] = {
-            "fuente": "pdf_vision" if used_pdf else "txt",
+            "fuente": "pdf_vision" if used_pdf else ("txt_extendido" if used_ext_txt else "txt"),
             "modelo": OPENAI_VISION_MODEL if used_pdf else OPENAI_MODEL,
         }
 
@@ -1244,6 +1421,9 @@ def extract_all(
             if used_pdf:
                 stats["ok_pdf"] += 1
                 print(f"    [OK] → {out_path.name} (vía PDF)")
+            elif used_ext_txt:
+                stats["ok_ext_txt"] = stats.get("ok_ext_txt", 0) + 1
+                print(f"    [OK] → {out_path.name} (vía TXT extendido)")
             else:
                 stats["ok_txt"] += 1
                 print(f"    [OK] → {out_path.name}")
@@ -1255,6 +1435,8 @@ def extract_all(
     print(f"  TXT encontrados    : {stats['total']}")
     print(f"  JSON vía TXT       : {stats['ok_txt']}")
     if pdf_fallback:
+        if stats.get("ok_ext_txt", 0):
+            print(f"  JSON vía TXT extend: {stats['ok_ext_txt']}")
         print(f"  JSON vía PDF visión: {stats['ok_pdf']}")
     print(f"  Saltados (existían): {stats['skipped']}")
     print(f"  Errores            : {stats['errors']}")
