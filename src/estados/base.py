@@ -137,8 +137,8 @@ class EstadoAdapter(ABC):
                 prefijo=self.prefijo,
                 estado_nombre=self.estado_nombre,
                 batch_mode=batch_mode,
-                adapter=self if self.needs_ocr else None,
-                pdf_fallback=self.needs_ocr,
+                adapter=self,
+                pdf_fallback=True,
             )
 
     def run_validation(self):

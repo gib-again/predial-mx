@@ -375,7 +375,7 @@ def extract_predial_section(
 # ══════════════════════════════════════════════════════════════
 
 _META_FIELDS = [
-    "ejercicio", "municipio", "slug", "cve_mun", "decreto",
+    "ejercicio", "municipio", "slug", "cve_mun", "decreto", "source_pdf",
     "ley_page_start", "ley_page_end",
     "predial_found", "predial_method",
     "predial_page_start", "predial_page_end",
@@ -460,18 +460,35 @@ def segment_all(
 
             if txt_path.exists() and not force:
                 stats["skipped"] += 1
+                # Intentar recuperar páginas de predial del header del TXT existente
+                _skip_pred_start = ""
+                _skip_pred_end = ""
+                _skip_method = ""
+                try:
+                    _hdr = txt_path.read_text(encoding="utf-8", errors="ignore")[:500]
+                    import re as _re
+                    _m_pages = _re.search(r"P.ginas predial: (\d+)-(\d+)", _hdr)
+                    _m_method = _re.search(r"M.todo detecci.n: (\S+)", _hdr)
+                    if _m_pages:
+                        _skip_pred_start = _m_pages.group(1)
+                        _skip_pred_end = _m_pages.group(2)
+                    if _m_method:
+                        _skip_method = _m_method.group(1)
+                except Exception:
+                    pass
                 all_meta_rows.append({
                     "ejercicio": ejercicio,
                     "municipio": ley.municipio,
                     "slug": ley.slug,
                     "cve_mun": ley.cve_mun,
                     "decreto": ley.decreto,
+                    "source_pdf": pdf_path.name,
                     "ley_page_start": ley.page_start + 1,
                     "ley_page_end": ley.page_end,
                     "predial_found": "skipped",
-                    "predial_method": "",
-                    "predial_page_start": "",
-                    "predial_page_end": "",
+                    "predial_method": _skip_method,
+                    "predial_page_start": _skip_pred_start,
+                    "predial_page_end": _skip_pred_end,
                     "txt_file": txt_path.name,
                     "txt_chars": txt_path.stat().st_size if txt_path.exists() else 0,
                 })
@@ -518,6 +535,7 @@ def segment_all(
                 "slug": ley.slug,
                 "cve_mun": ley.cve_mun,
                 "decreto": ley.decreto,
+                "source_pdf": pdf_path.name,
                 "ley_page_start": ley.page_start + 1,
                 "ley_page_end": ley.page_end,
                 "predial_found": "true" if seccion.method != "fallback_5pp" else "fallback",

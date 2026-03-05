@@ -15,9 +15,9 @@ abasolo,Abasolo,2022,tarifa_millar,True,4,0,0,0,0,,data\tamaulipas\json_predial\
 abasolo,Abasolo,2023,tarifa_millar,True,4,0,0,0,0,,data\tamaulipas\json_predial\2023\TAMPS_PREDIAL_2023_abasolo.json
 abasolo,Abasolo,2024,tarifa_millar,True,4,0,0,0,0,,data\tamaulipas\json_predial\2024\TAMPS_PREDIAL_2024_abasolo.json
 abasolo,Abasolo,2025,tarifa_millar,True,4,0,0,0,0,,data\tamaulipas\json_predial\2025\TAMPS_PREDIAL_2025_abasolo.json
-aldama,Aldama,2010,desconocido,False,0,0,0,0,0,,data\tamaulipas\json_predial\2010\TAMPS_PREDIAL_2010_aldama.json
-aldama,Aldama,2011,desconocido,False,0,0,0,0,0,,data\tamaulipas\json_predial\2011\TAMPS_PREDIAL_2011_aldama.json
-aldama,Aldama,2012,desconocido,False,0,0,0,0,0,,data\tamaulipas\json_predial\2012\TAMPS_PREDIAL_2012_aldama.json
+aldama,Aldama,2010,tarifa_millar,True,4,0,0,0,0,,data\tamaulipas\json_predial\2010\TAMPS_PREDIAL_2010_aldama.json
+aldama,Aldama,2011,tarifa_millar,True,4,0,0,0,0,,data\tamaulipas\json_predial\2011\TAMPS_PREDIAL_2011_aldama.json
+aldama,Aldama,2012,tarifa_millar,True,4,0,0,0,0,,data\tamaulipas\json_predial\2012\TAMPS_PREDIAL_2012_aldama.json
 aldama,Aldama,2013,tarifa_millar,True,4,0,0,0,0,,data\tamaulipas\json_predial\2013\TAMPS_PREDIAL_2013_aldama.json
 aldama,Aldama,2014,tarifa_millar,True,5,0,0,0,0,,data\tamaulipas\json_predial\2014\TAMPS_PREDIAL_2014_aldama.json
 aldama,Aldama,2015,tarifa_millar,True,5,0,0,0,0,,data\tamaulipas\json_predial\2015\TAMPS_PREDIAL_2015_aldama.json
@@ -31,25 +31,25 @@ aldama,Aldama,2022,tarifa_millar,True,5,0,0,0,0,,data\tamaulipas\json_predial\20
 aldama,Aldama,2023,tarifa_millar,True,5,0,0,0,0,,data\tamaulipas\json_predial\2023\TAMPS_PREDIAL_2023_aldama.json
 aldama,Aldama,2024,tarifa_millar,True,5,0,0,0,0,,data\tamaulipas\json_predial\2024\TAMPS_PREDIAL_2024_aldama.json
 aldama,Aldama,2025,tarifa_millar,True,5,0,0,0,0,,data\tamaulipas\json_predial\2025\TAMPS_PREDIAL_2025_aldama.json
-altamira,Altamira,2010,desconocido,False,0,0,0,0,0,,data\tamaulipas\json_predial\2010\TAMPS_PREDIAL_2010_altamira.json
-altamira,Altamira,2011,desconocido,False,0,0,0,0,0,,data\tamaulipas\json_predial\2011\TAMPS_PREDIAL_2011_altamira.json
-altamira,Altamira,2012,desconocido,False,0,0,0,0,0,,data\tamaulipas\json_predial\2012\TAMPS_PREDIAL_2012_altamira.json
-altamira,Altamira,2013,progresivo,True,1,9,0,0,0,tipo_progresivo_con_tabla_tarifa_no_vacia,data\tamaulipas\json_predial\2013\TAMPS_PREDIAL_2013_altamira.json
+altamira,Altamira,2010,progresivo,True,1,9,0,0,0,tipo_progresivo_con_tabla_tarifa_no_vacia,data\tamaulipas\json_predial\2010\TAMPS_PREDIAL_2010_altamira.json
+altamira,Altamira,2011,progresivo,True,1,9,0,0,0,tipo_progresivo_con_tabla_tarifa_no_vacia,data\tamaulipas\json_predial\2011\TAMPS_PREDIAL_2011_altamira.json
+altamira,Altamira,2012,mixto,True,1,0,0,0,9,cambio_brusco_n_filas_10_a_1|cambio_esquema_progresivo_a_mixto_desde_2011|mixta_row1_columnas_vacias|mixta_row2_columnas_vacias|mixta_row3_columnas_vacias|mixta_row4_columnas_vacias|mixta_row5_columnas_vacias|mixta_row6_columnas_vacias|mixta_row7_columnas_vacias|mixta_row8_columnas_vacias|mixta_row9_columnas_vacias,data\tamaulipas\json_predial\2012\TAMPS_PREDIAL_2012_altamira.json
+altamira,Altamira,2013,progresivo,True,1,9,0,0,0,cambio_brusco_n_filas_1_a_10|cambio_esquema_mixto_a_progresivo_desde_2012|tipo_progresivo_con_tabla_tarifa_no_vacia,data\tamaulipas\json_predial\2013\TAMPS_PREDIAL_2013_altamira.json
 altamira,Altamira,2014,mixto,True,1,0,0,0,9,cambio_brusco_n_filas_10_a_1|cambio_esquema_progresivo_a_mixto_desde_2013|mixta_row1_columnas_vacias|mixta_row2_columnas_vacias|mixta_row3_columnas_vacias|mixta_row4_columnas_vacias|mixta_row5_columnas_vacias|mixta_row6_columnas_vacias|mixta_row7_columnas_vacias|mixta_row8_columnas_vacias|mixta_row9_columnas_vacias,data\tamaulipas\json_predial\2014\TAMPS_PREDIAL_2014_altamira.json
 altamira,Altamira,2015,mixto,True,1,0,0,0,9,mixta_row1_columnas_vacias|mixta_row2_columnas_vacias|mixta_row3_columnas_vacias|mixta_row4_columnas_vacias|mixta_row5_columnas_vacias|mixta_row6_columnas_vacias|mixta_row7_columnas_vacias|mixta_row8_columnas_vacias|mixta_row9_columnas_vacias,data\tamaulipas\json_predial\2015\TAMPS_PREDIAL_2015_altamira.json
 altamira,Altamira,2016,mixto,True,1,0,0,0,9,mixta_row1_columnas_vacias|mixta_row2_columnas_vacias|mixta_row3_columnas_vacias|mixta_row4_columnas_vacias|mixta_row5_columnas_vacias|mixta_row6_columnas_vacias|mixta_row7_columnas_vacias|mixta_row8_columnas_vacias|mixta_row9_columnas_vacias,data\tamaulipas\json_predial\2016\TAMPS_PREDIAL_2016_altamira.json
 altamira,Altamira,2017,progresivo,True,1,9,0,0,0,cambio_brusco_n_filas_1_a_10|cambio_esquema_mixto_a_progresivo_desde_2016|tipo_progresivo_con_tabla_tarifa_no_vacia,data\tamaulipas\json_predial\2017\TAMPS_PREDIAL_2017_altamira.json
-altamira,Altamira,2018,mixto,True,1,9,0,0,0,cambio_esquema_progresivo_a_mixto_desde_2017,data\tamaulipas\json_predial\2018\TAMPS_PREDIAL_2018_altamira.json
-altamira,Altamira,2019,mixto,True,1,9,0,0,0,,data\tamaulipas\json_predial\2019\TAMPS_PREDIAL_2019_altamira.json
-altamira,Altamira,2020,mixto,True,1,0,0,0,9,cambio_brusco_n_filas_10_a_1|mixta_row1_columnas_vacias|mixta_row2_columnas_vacias|mixta_row3_columnas_vacias|mixta_row4_columnas_vacias|mixta_row5_columnas_vacias|mixta_row6_columnas_vacias|mixta_row7_columnas_vacias|mixta_row8_columnas_vacias|mixta_row9_columnas_vacias,data\tamaulipas\json_predial\2020\TAMPS_PREDIAL_2020_altamira.json
+altamira,Altamira,2018,mixto,True,1,0,0,0,9,cambio_brusco_n_filas_10_a_1|cambio_esquema_progresivo_a_mixto_desde_2017|mixta_row1_columnas_vacias|mixta_row2_columnas_vacias|mixta_row3_columnas_vacias|mixta_row4_columnas_vacias|mixta_row5_columnas_vacias|mixta_row6_columnas_vacias|mixta_row7_columnas_vacias|mixta_row8_columnas_vacias|mixta_row9_columnas_vacias,data\tamaulipas\json_predial\2018\TAMPS_PREDIAL_2018_altamira.json
+altamira,Altamira,2019,progresivo,True,1,9,0,0,0,cambio_brusco_n_filas_1_a_10|cambio_esquema_mixto_a_progresivo_desde_2018|tipo_progresivo_con_tabla_tarifa_no_vacia,data\tamaulipas\json_predial\2019\TAMPS_PREDIAL_2019_altamira.json
+altamira,Altamira,2020,mixto,True,1,0,0,0,9,cambio_brusco_n_filas_10_a_1|cambio_esquema_progresivo_a_mixto_desde_2019|mixta_row1_columnas_vacias|mixta_row2_columnas_vacias|mixta_row3_columnas_vacias|mixta_row4_columnas_vacias|mixta_row5_columnas_vacias|mixta_row6_columnas_vacias|mixta_row7_columnas_vacias|mixta_row8_columnas_vacias|mixta_row9_columnas_vacias,data\tamaulipas\json_predial\2020\TAMPS_PREDIAL_2020_altamira.json
 altamira,Altamira,2021,progresivo,True,1,9,0,0,0,cambio_brusco_n_filas_1_a_10|cambio_esquema_mixto_a_progresivo_desde_2020|tipo_progresivo_con_tabla_tarifa_no_vacia,data\tamaulipas\json_predial\2021\TAMPS_PREDIAL_2021_altamira.json
 altamira,Altamira,2022,mixto,True,1,0,0,0,9,cambio_brusco_n_filas_10_a_1|cambio_esquema_progresivo_a_mixto_desde_2021|mixta_row1_columnas_vacias|mixta_row2_columnas_vacias|mixta_row3_columnas_vacias|mixta_row4_columnas_vacias|mixta_row5_columnas_vacias|mixta_row6_columnas_vacias|mixta_row7_columnas_vacias|mixta_row8_columnas_vacias|mixta_row9_columnas_vacias,data\tamaulipas\json_predial\2022\TAMPS_PREDIAL_2022_altamira.json
 altamira,Altamira,2023,progresivo,True,1,9,0,0,0,cambio_brusco_n_filas_1_a_10|cambio_esquema_mixto_a_progresivo_desde_2022|tipo_progresivo_con_tabla_tarifa_no_vacia,data\tamaulipas\json_predial\2023\TAMPS_PREDIAL_2023_altamira.json
 altamira,Altamira,2024,mixto,True,1,0,0,0,9,cambio_brusco_n_filas_10_a_1|cambio_esquema_progresivo_a_mixto_desde_2023|mixta_row1_columnas_vacias|mixta_row2_columnas_vacias|mixta_row3_columnas_vacias|mixta_row4_columnas_vacias|mixta_row5_columnas_vacias|mixta_row6_columnas_vacias|mixta_row7_columnas_vacias|mixta_row8_columnas_vacias|mixta_row9_columnas_vacias,data\tamaulipas\json_predial\2024\TAMPS_PREDIAL_2024_altamira.json
-altamira,Altamira,2025,mixto,True,1,9,0,0,0,cambio_brusco_n_filas_1_a_10,data\tamaulipas\json_predial\2025\TAMPS_PREDIAL_2025_altamira.json
+altamira,Altamira,2025,mixto,True,1,0,0,0,9,mixta_row1_columnas_vacias|mixta_row2_columnas_vacias|mixta_row3_columnas_vacias|mixta_row4_columnas_vacias|mixta_row5_columnas_vacias|mixta_row6_columnas_vacias|mixta_row7_columnas_vacias|mixta_row8_columnas_vacias|mixta_row9_columnas_vacias,data\tamaulipas\json_predial\2025\TAMPS_PREDIAL_2025_altamira.json
 antiguo_morelos,Antiguo Morelos,2010,tarifa_millar,True,2,0,0,0,0,,data\tamaulipas\json_predial\2010\TAMPS_PREDIAL_2010_antiguo_morelos.json
 antiguo_morelos,Antiguo Morelos,2011,tarifa_millar,True,2,0,0,0,0,,data\tamaulipas\json_predial\2011\TAMPS_PREDIAL_2011_antiguo_morelos.json
-antiguo_morelos,Antiguo Morelos,2012,desconocido,False,0,0,0,0,0,,data\tamaulipas\json_predial\2012\TAMPS_PREDIAL_2012_antiguo_morelos.json
+antiguo_morelos,Antiguo Morelos,2012,tarifa_millar,True,4,0,0,0,0,,data\tamaulipas\json_predial\2012\TAMPS_PREDIAL_2012_antiguo_morelos.json
 antiguo_morelos,Antiguo Morelos,2013,tarifa_millar,True,2,0,0,0,0,,data\tamaulipas\json_predial\2013\TAMPS_PREDIAL_2013_antiguo_morelos.json
 antiguo_morelos,Antiguo Morelos,2014,tarifa_millar,True,2,0,0,0,0,,data\tamaulipas\json_predial\2014\TAMPS_PREDIAL_2014_antiguo_morelos.json
 antiguo_morelos,Antiguo Morelos,2015,tarifa_millar,True,2,0,0,0,0,,data\tamaulipas\json_predial\2015\TAMPS_PREDIAL_2015_antiguo_morelos.json
@@ -78,8 +78,8 @@ burgos,Burgos,2022,tarifa_millar,True,5,0,0,0,0,,data\tamaulipas\json_predial\20
 burgos,Burgos,2023,tarifa_millar,True,5,0,0,0,0,,data\tamaulipas\json_predial\2023\TAMPS_PREDIAL_2023_burgos.json
 burgos,Burgos,2024,tarifa_millar,True,5,0,0,0,0,,data\tamaulipas\json_predial\2024\TAMPS_PREDIAL_2024_burgos.json
 burgos,Burgos,2025,tarifa_millar,True,5,0,0,0,0,,data\tamaulipas\json_predial\2025\TAMPS_PREDIAL_2025_burgos.json
-bustamante,Bustamante,2010,desconocido,False,0,0,0,0,0,,data\tamaulipas\json_predial\2010\TAMPS_PREDIAL_2010_bustamante.json
-bustamante,Bustamante,2011,desconocido,False,0,0,0,0,0,,data\tamaulipas\json_predial\2011\TAMPS_PREDIAL_2011_bustamante.json
+bustamante,Bustamante,2010,tarifa_millar,True,4,0,0,0,0,,data\tamaulipas\json_predial\2010\TAMPS_PREDIAL_2010_bustamante.json
+bustamante,Bustamante,2011,tarifa_millar,True,4,0,0,0,0,,data\tamaulipas\json_predial\2011\TAMPS_PREDIAL_2011_bustamante.json
 bustamante,Bustamante,2012,tarifa_millar,True,4,0,0,0,0,,data\tamaulipas\json_predial\2012\TAMPS_PREDIAL_2012_bustamante.json
 bustamante,Bustamante,2013,tarifa_millar,True,4,0,0,0,0,,data\tamaulipas\json_predial\2013\TAMPS_PREDIAL_2013_bustamante.json
 bustamante,Bustamante,2014,tarifa_millar,True,4,0,0,0,0,,data\tamaulipas\json_predial\2014\TAMPS_PREDIAL_2014_bustamante.json
@@ -126,26 +126,26 @@ casas,Casas,2022,tarifa_millar,True,5,0,0,0,0,,data\tamaulipas\json_predial\2022
 casas,Casas,2023,tarifa_millar,True,5,0,0,0,0,,data\tamaulipas\json_predial\2023\TAMPS_PREDIAL_2023_casas.json
 casas,Casas,2024,tarifa_millar,True,5,0,0,0,0,,data\tamaulipas\json_predial\2024\TAMPS_PREDIAL_2024_casas.json
 casas,Casas,2025,tarifa_millar,True,5,0,0,0,0,,data\tamaulipas\json_predial\2025\TAMPS_PREDIAL_2025_casas.json
-ciudad_madero,Ciudad Madero,2010,desconocido,False,0,0,0,0,0,,data\tamaulipas\json_predial\2010\TAMPS_PREDIAL_2010_ciudad_madero.json
-ciudad_madero,Ciudad Madero,2011,desconocido,False,0,0,0,0,0,,data\tamaulipas\json_predial\2011\TAMPS_PREDIAL_2011_ciudad_madero.json
-ciudad_madero,Ciudad Madero,2012,desconocido,False,0,0,0,0,0,,data\tamaulipas\json_predial\2012\TAMPS_PREDIAL_2012_ciudad_madero.json
+ciudad_madero,Ciudad Madero,2010,progresivo,True,0,7,0,0,0,,data\tamaulipas\json_predial\2010\TAMPS_PREDIAL_2010_ciudad_madero.json
+ciudad_madero,Ciudad Madero,2011,progresivo,True,0,7,0,0,0,,data\tamaulipas\json_predial\2011\TAMPS_PREDIAL_2011_ciudad_madero.json
+ciudad_madero,Ciudad Madero,2012,progresivo,True,0,7,0,0,0,,data\tamaulipas\json_predial\2012\TAMPS_PREDIAL_2012_ciudad_madero.json
 ciudad_madero,Ciudad Madero,2013,desconocido,False,0,0,0,0,0,,data\tamaulipas\json_predial\2013\TAMPS_PREDIAL_2013_ciudad_madero.json
 ciudad_madero,Ciudad Madero,2014,desconocido,False,0,0,0,0,0,,data\tamaulipas\json_predial\2014\TAMPS_PREDIAL_2014_ciudad_madero.json
 ciudad_madero,Ciudad Madero,2015,progresivo,True,0,7,0,0,0,,data\tamaulipas\json_predial\2015\TAMPS_PREDIAL_2015_ciudad_madero.json
 ciudad_madero,Ciudad Madero,2016,progresivo,True,0,7,0,0,0,,data\tamaulipas\json_predial\2016\TAMPS_PREDIAL_2016_ciudad_madero.json
-ciudad_madero,Ciudad Madero,2017,desconocido,False,0,0,0,0,0,,data\tamaulipas\json_predial\2017\TAMPS_PREDIAL_2017_ciudad_madero.json
-ciudad_madero,Ciudad Madero,2018,desconocido,False,0,0,0,0,0,,data\tamaulipas\json_predial\2018\TAMPS_PREDIAL_2018_ciudad_madero.json
+ciudad_madero,Ciudad Madero,2017,progresivo,True,0,7,0,0,0,,data\tamaulipas\json_predial\2017\TAMPS_PREDIAL_2017_ciudad_madero.json
+ciudad_madero,Ciudad Madero,2018,progresivo,True,0,7,0,0,0,,data\tamaulipas\json_predial\2018\TAMPS_PREDIAL_2018_ciudad_madero.json
 ciudad_madero,Ciudad Madero,2019,desconocido,False,0,0,0,0,0,,data\tamaulipas\json_predial\2019\TAMPS_PREDIAL_2019_ciudad_madero.json
 ciudad_madero,Ciudad Madero,2020,desconocido,False,0,0,0,0,0,,data\tamaulipas\json_predial\2020\TAMPS_PREDIAL_2020_ciudad_madero.json
-ciudad_madero,Ciudad Madero,2021,desconocido,False,0,0,0,0,0,,data\tamaulipas\json_predial\2021\TAMPS_PREDIAL_2021_ciudad_madero.json
-ciudad_madero,Ciudad Madero,2022,desconocido,False,0,0,0,0,0,,data\tamaulipas\json_predial\2022\TAMPS_PREDIAL_2022_ciudad_madero.json
-ciudad_madero,Ciudad Madero,2023,desconocido,False,0,0,0,0,0,,data\tamaulipas\json_predial\2023\TAMPS_PREDIAL_2023_ciudad_madero.json
+ciudad_madero,Ciudad Madero,2021,progresivo,True,0,7,0,0,0,,data\tamaulipas\json_predial\2021\TAMPS_PREDIAL_2021_ciudad_madero.json
+ciudad_madero,Ciudad Madero,2022,progresivo,True,0,7,0,0,0,,data\tamaulipas\json_predial\2022\TAMPS_PREDIAL_2022_ciudad_madero.json
+ciudad_madero,Ciudad Madero,2023,progresivo,True,0,7,0,0,0,,data\tamaulipas\json_predial\2023\TAMPS_PREDIAL_2023_ciudad_madero.json
 ciudad_madero,Ciudad Madero,2024,desconocido,False,0,0,0,0,0,,data\tamaulipas\json_predial\2024\TAMPS_PREDIAL_2024_ciudad_madero.json
 ciudad_madero,Ciudad Madero,2025,desconocido,False,0,0,0,0,0,,data\tamaulipas\json_predial\2025\TAMPS_PREDIAL_2025_ciudad_madero.json
 cruillas,Cruillas,2010,tasa_unica,True,0,0,1,0,0,,data\tamaulipas\json_predial\2010\TAMPS_PREDIAL_2010_cruillas.json
-cruillas,Cruillas,2011,desconocido,False,0,0,0,0,0,,data\tamaulipas\json_predial\2011\TAMPS_PREDIAL_2011_cruillas.json
-cruillas,Cruillas,2012,desconocido,False,0,0,0,0,0,,data\tamaulipas\json_predial\2012\TAMPS_PREDIAL_2012_cruillas.json
-cruillas,Cruillas,2013,desconocido,False,0,0,0,0,0,,data\tamaulipas\json_predial\2013\TAMPS_PREDIAL_2013_cruillas.json
+cruillas,Cruillas,2011,tarifa_millar,True,1,0,0,0,0,cambio_esquema_tasa_unica_a_tarifa_millar_desde_2010,data\tamaulipas\json_predial\2011\TAMPS_PREDIAL_2011_cruillas.json
+cruillas,Cruillas,2012,tasa_unica,True,0,0,1,0,0,cambio_esquema_tarifa_millar_a_tasa_unica_desde_2011,data\tamaulipas\json_predial\2012\TAMPS_PREDIAL_2012_cruillas.json
+cruillas,Cruillas,2013,tarifa_millar,True,1,0,0,0,0,cambio_esquema_tasa_unica_a_tarifa_millar_desde_2012,data\tamaulipas\json_predial\2013\TAMPS_PREDIAL_2013_cruillas.json
 cruillas,Cruillas,2014,tarifa_millar,True,2,0,0,0,0,,data\tamaulipas\json_predial\2014\TAMPS_PREDIAL_2014_cruillas.json
 cruillas,Cruillas,2015,tasa_unica,True,0,0,2,0,0,cambio_esquema_tarifa_millar_a_tasa_unica_desde_2014,data\tamaulipas\json_predial\2015\TAMPS_PREDIAL_2015_cruillas.json
 cruillas,Cruillas,2016,tasa_unica,True,0,0,1,0,0,,data\tamaulipas\json_predial\2016\TAMPS_PREDIAL_2016_cruillas.json
@@ -206,8 +206,8 @@ gonzalez,Gonzalez,2022,tasa_unica,True,0,0,1,0,0,cambio_esquema_tarifa_millar_a_
 gonzalez,Gonzalez,2023,tarifa_millar,True,2,0,0,0,0,cambio_esquema_tasa_unica_a_tarifa_millar_desde_2022,data\tamaulipas\json_predial\2023\TAMPS_PREDIAL_2023_gonzalez.json
 gonzalez,Gonzalez,2024,tasa_unica,True,0,0,1,0,0,cambio_esquema_tarifa_millar_a_tasa_unica_desde_2023,data\tamaulipas\json_predial\2024\TAMPS_PREDIAL_2024_gonzalez.json
 gonzalez,Gonzalez,2025,tarifa_millar,True,1,0,0,0,0,cambio_esquema_tasa_unica_a_tarifa_millar_desde_2024,data\tamaulipas\json_predial\2025\TAMPS_PREDIAL_2025_gonzalez.json
-guemez,Guemez,2010,desconocido,False,0,0,0,0,0,,data\tamaulipas\json_predial\2010\TAMPS_PREDIAL_2010_guemez.json
-guemez,Guemez,2011,desconocido,False,0,0,0,0,0,,data\tamaulipas\json_predial\2011\TAMPS_PREDIAL_2011_guemez.json
+guemez,Guemez,2010,tarifa_millar,True,4,0,0,0,0,,data\tamaulipas\json_predial\2010\TAMPS_PREDIAL_2010_guemez.json
+guemez,Guemez,2011,tarifa_millar,True,4,0,0,0,0,,data\tamaulipas\json_predial\2011\TAMPS_PREDIAL_2011_guemez.json
 guemez,Guemez,2012,tarifa_millar,True,4,0,0,0,0,,data\tamaulipas\json_predial\2012\TAMPS_PREDIAL_2012_guemez.json
 guemez,Guemez,2013,tarifa_millar,True,4,0,0,0,0,,data\tamaulipas\json_predial\2013\TAMPS_PREDIAL_2013_guemez.json
 guemez,Guemez,2014,tarifa_millar,True,4,0,0,0,0,,data\tamaulipas\json_predial\2014\TAMPS_PREDIAL_2014_guemez.json
@@ -237,24 +237,24 @@ guerrero,Guerrero,2022,tarifa_millar,True,1,0,0,0,0,,data\tamaulipas\json_predia
 guerrero,Guerrero,2023,tasa_unica,True,0,0,1,0,0,cambio_esquema_tarifa_millar_a_tasa_unica_desde_2022,data\tamaulipas\json_predial\2023\TAMPS_PREDIAL_2023_guerrero.json
 guerrero,Guerrero,2024,tarifa_millar,True,1,0,0,0,0,cambio_esquema_tasa_unica_a_tarifa_millar_desde_2023,data\tamaulipas\json_predial\2024\TAMPS_PREDIAL_2024_guerrero.json
 guerrero,Guerrero,2025,tarifa_millar,True,1,0,0,0,0,,data\tamaulipas\json_predial\2025\TAMPS_PREDIAL_2025_guerrero.json
-gustavo_diaz_ordaz,Gustavo Diaz Ordaz,2010,desconocido,False,0,0,0,0,0,,data\tamaulipas\json_predial\2010\TAMPS_PREDIAL_2010_gustavo_diaz_ordaz.json
-gustavo_diaz_ordaz,Gustavo Diaz Ordaz,2011,desconocido,False,0,0,0,0,0,,data\tamaulipas\json_predial\2011\TAMPS_PREDIAL_2011_gustavo_diaz_ordaz.json
-gustavo_diaz_ordaz,Gustavo Diaz Ordaz,2012,desconocido,False,0,0,0,0,0,,data\tamaulipas\json_predial\2012\TAMPS_PREDIAL_2012_gustavo_diaz_ordaz.json
+gustavo_diaz_ordaz,Gustavo Diaz Ordaz,2010,tarifa_millar,True,4,0,0,0,0,,data\tamaulipas\json_predial\2010\TAMPS_PREDIAL_2010_gustavo_diaz_ordaz.json
+gustavo_diaz_ordaz,Gustavo Diaz Ordaz,2011,tarifa_millar,True,4,0,0,0,0,,data\tamaulipas\json_predial\2011\TAMPS_PREDIAL_2011_gustavo_diaz_ordaz.json
+gustavo_diaz_ordaz,Gustavo Diaz Ordaz,2012,tarifa_millar,True,4,0,0,0,0,,data\tamaulipas\json_predial\2012\TAMPS_PREDIAL_2012_gustavo_diaz_ordaz.json
 gustavo_diaz_ordaz,Gustavo Diaz Ordaz,2013,tarifa_millar,True,4,0,0,0,0,,data\tamaulipas\json_predial\2013\TAMPS_PREDIAL_2013_gustavo_diaz_ordaz.json
 gustavo_diaz_ordaz,Gustavo Diaz Ordaz,2014,tarifa_millar,True,4,0,0,0,0,,data\tamaulipas\json_predial\2014\TAMPS_PREDIAL_2014_gustavo_diaz_ordaz.json
 gustavo_diaz_ordaz,Gustavo Diaz Ordaz,2015,tarifa_millar,True,4,0,0,0,0,,data\tamaulipas\json_predial\2015\TAMPS_PREDIAL_2015_gustavo_diaz_ordaz.json
 gustavo_diaz_ordaz,Gustavo Diaz Ordaz,2016,tarifa_millar,True,4,0,0,0,0,,data\tamaulipas\json_predial\2016\TAMPS_PREDIAL_2016_gustavo_diaz_ordaz.json
 gustavo_diaz_ordaz,Gustavo Diaz Ordaz,2017,tarifa_millar,True,4,0,0,0,0,,data\tamaulipas\json_predial\2017\TAMPS_PREDIAL_2017_gustavo_diaz_ordaz.json
 gustavo_diaz_ordaz,Gustavo Diaz Ordaz,2018,tarifa_millar,True,4,0,0,0,0,,data\tamaulipas\json_predial\2018\TAMPS_PREDIAL_2018_gustavo_diaz_ordaz.json
-gustavo_diaz_ordaz,Gustavo Diaz Ordaz,2019,tarifa_millar,False,4,0,0,0,0,,data\tamaulipas\json_predial\2019\TAMPS_PREDIAL_2019_gustavo_diaz_ordaz.json
+gustavo_diaz_ordaz,Gustavo Diaz Ordaz,2019,tarifa_millar,True,4,0,0,0,0,,data\tamaulipas\json_predial\2019\TAMPS_PREDIAL_2019_gustavo_diaz_ordaz.json
 gustavo_diaz_ordaz,Gustavo Diaz Ordaz,2020,tarifa_millar,True,4,0,0,0,0,,data\tamaulipas\json_predial\2020\TAMPS_PREDIAL_2020_gustavo_diaz_ordaz.json
 gustavo_diaz_ordaz,Gustavo Diaz Ordaz,2021,tarifa_millar,True,4,0,0,0,0,,data\tamaulipas\json_predial\2021\TAMPS_PREDIAL_2021_gustavo_diaz_ordaz.json
 gustavo_diaz_ordaz,Gustavo Diaz Ordaz,2022,tarifa_millar,True,4,0,0,0,0,,data\tamaulipas\json_predial\2022\TAMPS_PREDIAL_2022_gustavo_diaz_ordaz.json
 gustavo_diaz_ordaz,Gustavo Diaz Ordaz,2023,tarifa_millar,True,4,0,0,0,0,,data\tamaulipas\json_predial\2023\TAMPS_PREDIAL_2023_gustavo_diaz_ordaz.json
 gustavo_diaz_ordaz,Gustavo Diaz Ordaz,2024,tarifa_millar,True,4,0,0,0,0,,data\tamaulipas\json_predial\2024\TAMPS_PREDIAL_2024_gustavo_diaz_ordaz.json
 gustavo_diaz_ordaz,Gustavo Diaz Ordaz,2025,tarifa_millar,True,4,0,0,0,0,,data\tamaulipas\json_predial\2025\TAMPS_PREDIAL_2025_gustavo_diaz_ordaz.json
-hidalgo,Hidalgo,2010,desconocido,False,0,0,0,0,0,,data\tamaulipas\json_predial\2010\TAMPS_PREDIAL_2010_hidalgo.json
-hidalgo,Hidalgo,2011,desconocido,False,0,0,0,0,0,,data\tamaulipas\json_predial\2011\TAMPS_PREDIAL_2011_hidalgo.json
+hidalgo,Hidalgo,2010,tarifa_millar,True,4,0,0,0,0,,data\tamaulipas\json_predial\2010\TAMPS_PREDIAL_2010_hidalgo.json
+hidalgo,Hidalgo,2011,tarifa_millar,True,4,0,0,0,0,,data\tamaulipas\json_predial\2011\TAMPS_PREDIAL_2011_hidalgo.json
 hidalgo,Hidalgo,2012,tarifa_millar,True,4,0,0,0,0,,data\tamaulipas\json_predial\2012\TAMPS_PREDIAL_2012_hidalgo.json
 hidalgo,Hidalgo,2013,tarifa_millar,True,4,0,0,0,0,,data\tamaulipas\json_predial\2013\TAMPS_PREDIAL_2013_hidalgo.json
 hidalgo,Hidalgo,2014,tarifa_millar,True,5,0,0,0,0,,data\tamaulipas\json_predial\2014\TAMPS_PREDIAL_2014_hidalgo.json
@@ -304,9 +304,9 @@ jimenez,Jimenez,2025,tarifa_millar,True,5,0,0,0,0,,data\tamaulipas\json_predial\
 llera,Llera,2010,tarifa_millar,True,3,0,0,0,0,,data\tamaulipas\json_predial\2010\TAMPS_PREDIAL_2010_llera.json
 llera,Llera,2011,tarifa_millar,True,3,0,0,0,0,,data\tamaulipas\json_predial\2011\TAMPS_PREDIAL_2011_llera.json
 llera,Llera,2012,tarifa_millar,True,3,0,0,0,0,,data\tamaulipas\json_predial\2012\TAMPS_PREDIAL_2012_llera.json
-llera,Llera,2013,desconocido,False,0,0,0,0,0,,data\tamaulipas\json_predial\2013\TAMPS_PREDIAL_2013_llera.json
-llera,Llera,2014,desconocido,False,0,0,0,0,0,,data\tamaulipas\json_predial\2014\TAMPS_PREDIAL_2014_llera.json
-llera,Llera,2015,desconocido,False,0,0,0,0,0,,data\tamaulipas\json_predial\2015\TAMPS_PREDIAL_2015_llera.json
+llera,Llera,2013,tarifa_millar,True,3,0,0,0,0,,data\tamaulipas\json_predial\2013\TAMPS_PREDIAL_2013_llera.json
+llera,Llera,2014,tarifa_millar,True,3,0,0,0,0,,data\tamaulipas\json_predial\2014\TAMPS_PREDIAL_2014_llera.json
+llera,Llera,2015,tarifa_millar,True,3,0,0,0,0,,data\tamaulipas\json_predial\2015\TAMPS_PREDIAL_2015_llera.json
 llera,Llera,2016,tarifa_millar,True,3,0,0,0,0,,data\tamaulipas\json_predial\2016\TAMPS_PREDIAL_2016_llera.json
 llera,Llera,2017,tarifa_millar,True,3,0,0,0,0,,data\tamaulipas\json_predial\2017\TAMPS_PREDIAL_2017_llera.json
 llera,Llera,2018,tarifa_millar,True,3,0,0,0,0,,data\tamaulipas\json_predial\2018\TAMPS_PREDIAL_2018_llera.json
@@ -347,10 +347,10 @@ matamoros,Matamoros,2020,tarifa_millar,True,3,0,0,0,0,,data\tamaulipas\json_pred
 matamoros,Matamoros,2021,tarifa_millar,True,3,0,0,0,0,,data\tamaulipas\json_predial\2021\TAMPS_PREDIAL_2021_matamoros.json
 matamoros,Matamoros,2022,tarifa_millar,True,3,0,0,0,0,,data\tamaulipas\json_predial\2022\TAMPS_PREDIAL_2022_matamoros.json
 matamoros,Matamoros,2023,tarifa_millar,True,3,0,0,0,0,,data\tamaulipas\json_predial\2023\TAMPS_PREDIAL_2023_matamoros.json
-matamoros,Matamoros,2024,desconocido,False,0,0,0,0,0,,data\tamaulipas\json_predial\2024\TAMPS_PREDIAL_2024_matamoros.json
+matamoros,Matamoros,2024,tarifa_millar,True,3,0,0,0,0,,data\tamaulipas\json_predial\2024\TAMPS_PREDIAL_2024_matamoros.json
 matamoros,Matamoros,2025,tarifa_millar,True,3,0,0,0,0,,data\tamaulipas\json_predial\2025\TAMPS_PREDIAL_2025_matamoros.json
-mendez,Mendez,2010,desconocido,False,0,0,0,0,0,,data\tamaulipas\json_predial\2010\TAMPS_PREDIAL_2010_mendez.json
-mendez,Mendez,2011,desconocido,False,0,0,0,0,0,,data\tamaulipas\json_predial\2011\TAMPS_PREDIAL_2011_mendez.json
+mendez,Mendez,2010,tarifa_millar,True,3,0,0,0,0,,data\tamaulipas\json_predial\2010\TAMPS_PREDIAL_2010_mendez.json
+mendez,Mendez,2011,tarifa_millar,True,3,0,0,0,0,,data\tamaulipas\json_predial\2011\TAMPS_PREDIAL_2011_mendez.json
 mendez,Mendez,2012,tarifa_millar,True,3,0,0,0,0,,data\tamaulipas\json_predial\2012\TAMPS_PREDIAL_2012_mendez.json
 mendez,Mendez,2013,tasa_unica,True,0,0,1,0,0,cambio_esquema_tarifa_millar_a_tasa_unica_desde_2012,data\tamaulipas\json_predial\2013\TAMPS_PREDIAL_2013_mendez.json
 mendez,Mendez,2014,tarifa_millar,True,5,0,0,0,0,cambio_esquema_tasa_unica_a_tarifa_millar_desde_2013,data\tamaulipas\json_predial\2014\TAMPS_PREDIAL_2014_mendez.json
@@ -413,10 +413,10 @@ miquihuana,Miquihuana,2022,tarifa_millar,True,2,0,0,0,0,,data\tamaulipas\json_pr
 miquihuana,Miquihuana,2023,tarifa_millar,True,2,0,0,0,0,,data\tamaulipas\json_predial\2023\TAMPS_PREDIAL_2023_miquihuana.json
 miquihuana,Miquihuana,2024,tarifa_millar,True,2,0,0,0,0,,data\tamaulipas\json_predial\2024\TAMPS_PREDIAL_2024_miquihuana.json
 miquihuana,Miquihuana,2025,tarifa_millar,True,2,0,0,0,0,,data\tamaulipas\json_predial\2025\TAMPS_PREDIAL_2025_miquihuana.json
-nuevo_laredo,Nuevo Laredo,2010,desconocido,False,0,0,0,0,0,,data\tamaulipas\json_predial\2010\TAMPS_PREDIAL_2010_nuevo_laredo.json
-nuevo_laredo,Nuevo Laredo,2011,desconocido,False,0,0,0,0,0,,data\tamaulipas\json_predial\2011\TAMPS_PREDIAL_2011_nuevo_laredo.json
-nuevo_laredo,Nuevo Laredo,2012,desconocido,False,0,0,0,0,0,,data\tamaulipas\json_predial\2012\TAMPS_PREDIAL_2012_nuevo_laredo.json
-nuevo_laredo,Nuevo Laredo,2013,desconocido,False,0,0,0,0,0,,data\tamaulipas\json_predial\2013\TAMPS_PREDIAL_2013_nuevo_laredo.json
+nuevo_laredo,Nuevo Laredo,2010,tarifa_millar,True,5,0,0,0,0,,data\tamaulipas\json_predial\2010\TAMPS_PREDIAL_2010_nuevo_laredo.json
+nuevo_laredo,Nuevo Laredo,2011,tarifa_millar,True,5,0,0,0,0,,data\tamaulipas\json_predial\2011\TAMPS_PREDIAL_2011_nuevo_laredo.json
+nuevo_laredo,Nuevo Laredo,2012,tarifa_millar,True,5,0,0,0,0,,data\tamaulipas\json_predial\2012\TAMPS_PREDIAL_2012_nuevo_laredo.json
+nuevo_laredo,Nuevo Laredo,2013,tarifa_millar,True,5,0,0,0,0,,data\tamaulipas\json_predial\2013\TAMPS_PREDIAL_2013_nuevo_laredo.json
 nuevo_laredo,Nuevo Laredo,2014,tarifa_millar,True,5,0,0,0,0,,data\tamaulipas\json_predial\2014\TAMPS_PREDIAL_2014_nuevo_laredo.json
 nuevo_laredo,Nuevo Laredo,2015,tarifa_millar,True,5,0,0,0,0,,data\tamaulipas\json_predial\2015\TAMPS_PREDIAL_2015_nuevo_laredo.json
 nuevo_laredo,Nuevo Laredo,2016,tarifa_millar,True,5,0,0,0,0,,data\tamaulipas\json_predial\2016\TAMPS_PREDIAL_2016_nuevo_laredo.json
@@ -427,7 +427,7 @@ nuevo_laredo,Nuevo Laredo,2020,tarifa_millar,True,5,0,0,0,0,,data\tamaulipas\jso
 nuevo_laredo,Nuevo Laredo,2021,tarifa_millar,True,5,0,0,0,0,,data\tamaulipas\json_predial\2021\TAMPS_PREDIAL_2021_nuevo_laredo.json
 nuevo_laredo,Nuevo Laredo,2022,tarifa_millar,True,5,0,0,0,0,,data\tamaulipas\json_predial\2022\TAMPS_PREDIAL_2022_nuevo_laredo.json
 nuevo_laredo,Nuevo Laredo,2023,tarifa_millar,True,5,0,0,0,0,,data\tamaulipas\json_predial\2023\TAMPS_PREDIAL_2023_nuevo_laredo.json
-nuevo_laredo,Nuevo Laredo,2024,desconocido,False,0,0,0,0,0,,data\tamaulipas\json_predial\2024\TAMPS_PREDIAL_2024_nuevo_laredo.json
+nuevo_laredo,Nuevo Laredo,2024,tarifa_millar,True,5,0,0,0,0,,data\tamaulipas\json_predial\2024\TAMPS_PREDIAL_2024_nuevo_laredo.json
 nuevo_laredo,Nuevo Laredo,2025,tarifa_millar,True,5,0,0,0,0,,data\tamaulipas\json_predial\2025\TAMPS_PREDIAL_2025_nuevo_laredo.json
 nuevo_morelos,Nuevo Morelos,2010,tarifa_millar,True,2,0,0,0,0,,data\tamaulipas\json_predial\2010\TAMPS_PREDIAL_2010_nuevo_morelos.json
 nuevo_morelos,Nuevo Morelos,2011,tarifa_millar,True,2,0,0,0,0,,data\tamaulipas\json_predial\2011\TAMPS_PREDIAL_2011_nuevo_morelos.json
@@ -455,15 +455,15 @@ ocampo,Ocampo,2016,tarifa_millar,True,2,0,0,0,0,,data\tamaulipas\json_predial\20
 ocampo,Ocampo,2017,tarifa_millar,True,2,0,0,0,0,,data\tamaulipas\json_predial\2017\TAMPS_PREDIAL_2017_ocampo.json
 ocampo,Ocampo,2018,tarifa_millar,True,2,0,0,0,0,,data\tamaulipas\json_predial\2018\TAMPS_PREDIAL_2018_ocampo.json
 ocampo,Ocampo,2019,tarifa_millar,True,2,0,0,0,0,,data\tamaulipas\json_predial\2019\TAMPS_PREDIAL_2019_ocampo.json
-ocampo,Ocampo,2020,tarifa_millar,False,1,0,0,0,0,,data\tamaulipas\json_predial\2020\TAMPS_PREDIAL_2020_ocampo.json
-ocampo,Ocampo,2021,desconocido,False,1,0,0,0,0,tipo_desconocido_con_tablas_no_vacias,data\tamaulipas\json_predial\2021\TAMPS_PREDIAL_2021_ocampo.json
+ocampo,Ocampo,2020,tarifa_millar,True,1,0,0,0,0,,data\tamaulipas\json_predial\2020\TAMPS_PREDIAL_2020_ocampo.json
+ocampo,Ocampo,2021,tarifa_millar,False,1,0,0,0,0,,data\tamaulipas\json_predial\2021\TAMPS_PREDIAL_2021_ocampo.json
 ocampo,Ocampo,2022,tarifa_millar,True,1,0,0,0,0,,data\tamaulipas\json_predial\2022\TAMPS_PREDIAL_2022_ocampo.json
 ocampo,Ocampo,2023,tarifa_millar,False,1,0,0,0,0,,data\tamaulipas\json_predial\2023\TAMPS_PREDIAL_2023_ocampo.json
 ocampo,Ocampo,2024,tarifa_millar,False,1,0,0,0,0,,data\tamaulipas\json_predial\2024\TAMPS_PREDIAL_2024_ocampo.json
 ocampo,Ocampo,2025,tasa_unica,True,0,0,1,0,0,,data\tamaulipas\json_predial\2025\TAMPS_PREDIAL_2025_ocampo.json
-padilla,Padilla,2010,desconocido,False,0,0,0,0,0,,data\tamaulipas\json_predial\2010\TAMPS_PREDIAL_2010_padilla.json
-padilla,Padilla,2011,desconocido,False,0,0,0,0,0,,data\tamaulipas\json_predial\2011\TAMPS_PREDIAL_2011_padilla.json
-padilla,Padilla,2012,desconocido,False,0,0,0,0,0,,data\tamaulipas\json_predial\2012\TAMPS_PREDIAL_2012_padilla.json
+padilla,Padilla,2010,tarifa_millar,True,4,0,0,0,0,,data\tamaulipas\json_predial\2010\TAMPS_PREDIAL_2010_padilla.json
+padilla,Padilla,2011,tarifa_millar,True,4,0,0,0,0,,data\tamaulipas\json_predial\2011\TAMPS_PREDIAL_2011_padilla.json
+padilla,Padilla,2012,tarifa_millar,True,4,0,0,0,0,,data\tamaulipas\json_predial\2012\TAMPS_PREDIAL_2012_padilla.json
 padilla,Padilla,2013,tarifa_millar,True,4,0,0,0,0,,data\tamaulipas\json_predial\2013\TAMPS_PREDIAL_2013_padilla.json
 padilla,Padilla,2014,tarifa_millar,True,4,0,0,0,0,,data\tamaulipas\json_predial\2014\TAMPS_PREDIAL_2014_padilla.json
 padilla,Padilla,2015,tarifa_millar,True,4,0,0,0,0,,data\tamaulipas\json_predial\2015\TAMPS_PREDIAL_2015_padilla.json
@@ -477,10 +477,10 @@ padilla,Padilla,2022,tarifa_millar,True,4,0,0,0,0,,data\tamaulipas\json_predial\
 padilla,Padilla,2023,tarifa_millar,True,4,0,0,0,0,,data\tamaulipas\json_predial\2023\TAMPS_PREDIAL_2023_padilla.json
 padilla,Padilla,2024,tarifa_millar,True,4,0,0,0,0,,data\tamaulipas\json_predial\2024\TAMPS_PREDIAL_2024_padilla.json
 padilla,Padilla,2025,tarifa_millar,True,4,0,0,0,0,,data\tamaulipas\json_predial\2025\TAMPS_PREDIAL_2025_padilla.json
-palmillas,Palmillas,2010,desconocido,False,0,0,0,0,0,,data\tamaulipas\json_predial\2010\TAMPS_PREDIAL_2010_palmillas.json
-palmillas,Palmillas,2011,desconocido,False,0,0,0,0,0,,data\tamaulipas\json_predial\2011\TAMPS_PREDIAL_2011_palmillas.json
-palmillas,Palmillas,2012,desconocido,False,0,0,0,0,0,,data\tamaulipas\json_predial\2012\TAMPS_PREDIAL_2012_palmillas.json
-palmillas,Palmillas,2013,desconocido,False,0,0,0,0,0,,data\tamaulipas\json_predial\2013\TAMPS_PREDIAL_2013_palmillas.json
+palmillas,Palmillas,2010,tarifa_millar,True,4,0,0,0,0,,data\tamaulipas\json_predial\2010\TAMPS_PREDIAL_2010_palmillas.json
+palmillas,Palmillas,2011,tarifa_millar,True,4,0,0,0,0,,data\tamaulipas\json_predial\2011\TAMPS_PREDIAL_2011_palmillas.json
+palmillas,Palmillas,2012,tarifa_millar,True,4,0,0,0,0,,data\tamaulipas\json_predial\2012\TAMPS_PREDIAL_2012_palmillas.json
+palmillas,Palmillas,2013,tarifa_millar,True,4,0,0,0,0,,data\tamaulipas\json_predial\2013\TAMPS_PREDIAL_2013_palmillas.json
 palmillas,Palmillas,2014,tarifa_millar,True,4,0,0,0,0,,data\tamaulipas\json_predial\2014\TAMPS_PREDIAL_2014_palmillas.json
 palmillas,Palmillas,2015,tarifa_millar,True,4,0,0,0,0,,data\tamaulipas\json_predial\2015\TAMPS_PREDIAL_2015_palmillas.json
 palmillas,Palmillas,2016,tarifa_millar,True,4,0,0,0,0,,data\tamaulipas\json_predial\2016\TAMPS_PREDIAL_2016_palmillas.json
@@ -493,8 +493,8 @@ palmillas,Palmillas,2022,tarifa_millar,True,4,0,0,0,0,,data\tamaulipas\json_pred
 palmillas,Palmillas,2023,tarifa_millar,True,4,0,0,0,0,,data\tamaulipas\json_predial\2023\TAMPS_PREDIAL_2023_palmillas.json
 palmillas,Palmillas,2024,tarifa_millar,True,4,0,0,0,0,,data\tamaulipas\json_predial\2024\TAMPS_PREDIAL_2024_palmillas.json
 palmillas,Palmillas,2025,tarifa_millar,True,4,0,0,0,0,,data\tamaulipas\json_predial\2025\TAMPS_PREDIAL_2025_palmillas.json
-reynosa,Reynosa,2010,desconocido,False,0,0,0,0,0,,data\tamaulipas\json_predial\2010\TAMPS_PREDIAL_2010_reynosa.json
-reynosa,Reynosa,2011,desconocido,False,0,0,0,0,0,,data\tamaulipas\json_predial\2011\TAMPS_PREDIAL_2011_reynosa.json
+reynosa,Reynosa,2010,tarifa_millar,True,9,0,0,0,0,,data\tamaulipas\json_predial\2010\TAMPS_PREDIAL_2010_reynosa.json
+reynosa,Reynosa,2011,tarifa_millar,True,9,0,0,0,0,,data\tamaulipas\json_predial\2011\TAMPS_PREDIAL_2011_reynosa.json
 reynosa,Reynosa,2012,tarifa_millar,True,9,0,0,0,0,,data\tamaulipas\json_predial\2012\TAMPS_PREDIAL_2012_reynosa.json
 reynosa,Reynosa,2013,tarifa_millar,True,10,0,0,0,0,,data\tamaulipas\json_predial\2013\TAMPS_PREDIAL_2013_reynosa.json
 reynosa,Reynosa,2014,tarifa_millar,True,10,0,0,0,0,,data\tamaulipas\json_predial\2014\TAMPS_PREDIAL_2014_reynosa.json
@@ -509,9 +509,9 @@ reynosa,Reynosa,2022,tarifa_millar,True,10,0,0,0,0,,data\tamaulipas\json_predial
 reynosa,Reynosa,2023,tarifa_millar,True,10,0,0,0,0,,data\tamaulipas\json_predial\2023\TAMPS_PREDIAL_2023_reynosa.json
 reynosa,Reynosa,2024,tarifa_millar,True,10,0,0,0,0,,data\tamaulipas\json_predial\2024\TAMPS_PREDIAL_2024_reynosa.json
 reynosa,Reynosa,2025,tarifa_millar,True,10,0,0,0,0,,data\tamaulipas\json_predial\2025\TAMPS_PREDIAL_2025_reynosa.json
-rio_bravo,Rio Bravo,2010,desconocido,False,0,0,0,0,0,,data\tamaulipas\json_predial\2010\TAMPS_PREDIAL_2010_rio_bravo.json
-rio_bravo,Rio Bravo,2011,desconocido,False,0,0,0,0,0,,data\tamaulipas\json_predial\2011\TAMPS_PREDIAL_2011_rio_bravo.json
-rio_bravo,Rio Bravo,2012,desconocido,False,0,0,0,0,0,,data\tamaulipas\json_predial\2012\TAMPS_PREDIAL_2012_rio_bravo.json
+rio_bravo,Rio Bravo,2010,tarifa_millar,True,4,0,0,0,0,,data\tamaulipas\json_predial\2010\TAMPS_PREDIAL_2010_rio_bravo.json
+rio_bravo,Rio Bravo,2011,tarifa_millar,True,4,0,0,0,0,,data\tamaulipas\json_predial\2011\TAMPS_PREDIAL_2011_rio_bravo.json
+rio_bravo,Rio Bravo,2012,tarifa_millar,True,5,0,0,0,0,,data\tamaulipas\json_predial\2012\TAMPS_PREDIAL_2012_rio_bravo.json
 rio_bravo,Rio Bravo,2013,tarifa_millar,True,5,0,0,0,0,,data\tamaulipas\json_predial\2013\TAMPS_PREDIAL_2013_rio_bravo.json
 rio_bravo,Rio Bravo,2014,tarifa_millar,True,5,0,0,0,0,,data\tamaulipas\json_predial\2014\TAMPS_PREDIAL_2014_rio_bravo.json
 rio_bravo,Rio Bravo,2015,tarifa_millar,True,5,0,0,0,0,,data\tamaulipas\json_predial\2015\TAMPS_PREDIAL_2015_rio_bravo.json
@@ -525,11 +525,11 @@ rio_bravo,Rio Bravo,2022,tarifa_millar,True,6,0,0,0,0,,data\tamaulipas\json_pred
 rio_bravo,Rio Bravo,2023,tarifa_millar,True,6,0,0,0,0,,data\tamaulipas\json_predial\2023\TAMPS_PREDIAL_2023_rio_bravo.json
 rio_bravo,Rio Bravo,2024,tarifa_millar,True,6,0,0,0,0,,data\tamaulipas\json_predial\2024\TAMPS_PREDIAL_2024_rio_bravo.json
 rio_bravo,Rio Bravo,2025,tarifa_millar,True,6,0,0,0,0,,data\tamaulipas\json_predial\2025\TAMPS_PREDIAL_2025_rio_bravo.json
-san_carlos,San Carlos,2010,desconocido,False,0,0,0,0,0,,data\tamaulipas\json_predial\2010\TAMPS_PREDIAL_2010_san_carlos.json
-san_carlos,San Carlos,2011,desconocido,False,0,0,0,0,0,,data\tamaulipas\json_predial\2011\TAMPS_PREDIAL_2011_san_carlos.json
-san_carlos,San Carlos,2012,desconocido,False,0,0,0,0,0,,data\tamaulipas\json_predial\2012\TAMPS_PREDIAL_2012_san_carlos.json
-san_carlos,San Carlos,2013,desconocido,False,0,0,0,0,0,,data\tamaulipas\json_predial\2013\TAMPS_PREDIAL_2013_san_carlos.json
-san_carlos,San Carlos,2014,tarifa_millar,True,5,0,0,0,0,,data\tamaulipas\json_predial\2014\TAMPS_PREDIAL_2014_san_carlos.json
+san_carlos,San Carlos,2010,tarifa_millar,True,2,0,0,0,0,,data\tamaulipas\json_predial\2010\TAMPS_PREDIAL_2010_san_carlos.json
+san_carlos,San Carlos,2011,tarifa_millar,True,2,0,0,0,0,,data\tamaulipas\json_predial\2011\TAMPS_PREDIAL_2011_san_carlos.json
+san_carlos,San Carlos,2012,tarifa_millar,True,2,0,0,0,0,,data\tamaulipas\json_predial\2012\TAMPS_PREDIAL_2012_san_carlos.json
+san_carlos,San Carlos,2013,tarifa_millar,True,2,0,0,0,0,,data\tamaulipas\json_predial\2013\TAMPS_PREDIAL_2013_san_carlos.json
+san_carlos,San Carlos,2014,tarifa_millar,True,5,0,0,0,0,cambio_brusco_n_filas_2_a_5,data\tamaulipas\json_predial\2014\TAMPS_PREDIAL_2014_san_carlos.json
 san_carlos,San Carlos,2015,tarifa_millar,True,5,0,0,0,0,,data\tamaulipas\json_predial\2015\TAMPS_PREDIAL_2015_san_carlos.json
 san_carlos,San Carlos,2016,tarifa_millar,True,5,0,0,0,0,,data\tamaulipas\json_predial\2016\TAMPS_PREDIAL_2016_san_carlos.json
 san_carlos,San Carlos,2017,tarifa_millar,True,5,0,0,0,0,,data\tamaulipas\json_predial\2017\TAMPS_PREDIAL_2017_san_carlos.json
@@ -554,7 +554,7 @@ san_fernando,San Fernando,2019,tarifa_millar,True,5,0,0,0,0,,data\tamaulipas\jso
 san_fernando,San Fernando,2020,tarifa_millar,True,5,0,0,0,0,,data\tamaulipas\json_predial\2020\TAMPS_PREDIAL_2020_san_fernando.json
 san_fernando,San Fernando,2021,tarifa_millar,True,5,0,0,0,0,,data\tamaulipas\json_predial\2021\TAMPS_PREDIAL_2021_san_fernando.json
 san_fernando,San Fernando,2022,tarifa_millar,True,5,0,0,0,0,,data\tamaulipas\json_predial\2022\TAMPS_PREDIAL_2022_san_fernando.json
-san_fernando,San Fernando,2023,desconocido,False,0,0,0,0,0,,data\tamaulipas\json_predial\2023\TAMPS_PREDIAL_2023_san_fernando.json
+san_fernando,San Fernando,2023,tarifa_millar,True,5,0,0,0,0,,data\tamaulipas\json_predial\2023\TAMPS_PREDIAL_2023_san_fernando.json
 san_fernando,San Fernando,2024,tarifa_millar,True,5,0,0,0,0,,data\tamaulipas\json_predial\2024\TAMPS_PREDIAL_2024_san_fernando.json
 san_fernando,San Fernando,2025,tarifa_millar,True,5,0,0,0,0,,data\tamaulipas\json_predial\2025\TAMPS_PREDIAL_2025_san_fernando.json
 san_nicolas,San Nicolas,2010,tarifa_millar,True,2,0,0,0,0,,data\tamaulipas\json_predial\2010\TAMPS_PREDIAL_2010_san_nicolas.json
@@ -590,21 +590,21 @@ soto_la_marina,Soto La Marina,2023,tarifa_millar,True,5,0,0,0,0,,data\tamaulipas
 soto_la_marina,Soto La Marina,2024,tarifa_millar,True,5,0,0,0,0,,data\tamaulipas\json_predial\2024\TAMPS_PREDIAL_2024_soto_la_marina.json
 soto_la_marina,Soto La Marina,2025,tarifa_millar,True,5,0,0,0,0,,data\tamaulipas\json_predial\2025\TAMPS_PREDIAL_2025_soto_la_marina.json
 tampico,Tampico,2010,desconocido,False,0,0,0,0,0,,data\tamaulipas\json_predial\2010\TAMPS_PREDIAL_2010_tampico.json
-tampico,Tampico,2011,desconocido,False,0,0,0,0,0,,data\tamaulipas\json_predial\2011\TAMPS_PREDIAL_2011_tampico.json
-tampico,Tampico,2012,desconocido,False,0,0,0,0,0,,data\tamaulipas\json_predial\2012\TAMPS_PREDIAL_2012_tampico.json
+tampico,Tampico,2011,mixto,True,0,0,0,0,10,mixta_row1_columnas_vacias|mixta_row2_columnas_vacias|mixta_row3_columnas_vacias|mixta_row4_columnas_vacias|mixta_row5_columnas_vacias|mixta_row6_columnas_vacias|mixta_row7_columnas_vacias|mixta_row8_columnas_vacias|mixta_row9_columnas_vacias|mixta_row10_columnas_vacias,data\tamaulipas\json_predial\2011\TAMPS_PREDIAL_2011_tampico.json
+tampico,Tampico,2012,progresivo,True,1,10,0,0,0,cambio_esquema_mixto_a_progresivo_desde_2011|tipo_progresivo_con_tabla_tarifa_no_vacia,data\tamaulipas\json_predial\2012\TAMPS_PREDIAL_2012_tampico.json
 tampico,Tampico,2013,desconocido,False,0,0,0,0,0,,data\tamaulipas\json_predial\2013\TAMPS_PREDIAL_2013_tampico.json
-tampico,Tampico,2014,mixto,True,1,10,0,0,0,,data\tamaulipas\json_predial\2014\TAMPS_PREDIAL_2014_tampico.json
-tampico,Tampico,2015,mixto,True,1,10,0,0,0,,data\tamaulipas\json_predial\2015\TAMPS_PREDIAL_2015_tampico.json
-tampico,Tampico,2016,progresivo,True,1,10,0,0,0,cambio_esquema_mixto_a_progresivo_desde_2015|tipo_progresivo_con_tabla_tarifa_no_vacia,data\tamaulipas\json_predial\2016\TAMPS_PREDIAL_2016_tampico.json
+tampico,Tampico,2014,progresivo,True,1,10,0,0,0,tipo_progresivo_con_tabla_tarifa_no_vacia,data\tamaulipas\json_predial\2014\TAMPS_PREDIAL_2014_tampico.json
+tampico,Tampico,2015,mixto,True,1,0,0,0,10,cambio_brusco_n_filas_11_a_1|cambio_esquema_progresivo_a_mixto_desde_2014|mixta_row10_columnas_vacias|mixta_row1_columnas_vacias|mixta_row2_columnas_vacias|mixta_row3_columnas_vacias|mixta_row4_columnas_vacias|mixta_row5_columnas_vacias|mixta_row6_columnas_vacias|mixta_row7_columnas_vacias|mixta_row8_columnas_vacias|mixta_row9_columnas_vacias,data\tamaulipas\json_predial\2015\TAMPS_PREDIAL_2015_tampico.json
+tampico,Tampico,2016,progresivo,True,1,10,0,0,0,cambio_brusco_n_filas_1_a_11|cambio_esquema_mixto_a_progresivo_desde_2015|tipo_progresivo_con_tabla_tarifa_no_vacia,data\tamaulipas\json_predial\2016\TAMPS_PREDIAL_2016_tampico.json
 tampico,Tampico,2017,progresivo,True,1,10,0,0,0,tipo_progresivo_con_tabla_tarifa_no_vacia,data\tamaulipas\json_predial\2017\TAMPS_PREDIAL_2017_tampico.json
 tampico,Tampico,2018,mixto,True,1,0,0,0,10,cambio_brusco_n_filas_11_a_1|cambio_esquema_progresivo_a_mixto_desde_2017|mixta_row10_columnas_vacias|mixta_row1_columnas_vacias|mixta_row2_columnas_vacias|mixta_row3_columnas_vacias|mixta_row4_columnas_vacias|mixta_row5_columnas_vacias|mixta_row6_columnas_vacias|mixta_row7_columnas_vacias|mixta_row8_columnas_vacias|mixta_row9_columnas_vacias,data\tamaulipas\json_predial\2018\TAMPS_PREDIAL_2018_tampico.json
 tampico,Tampico,2019,mixto,True,1,10,0,0,0,cambio_brusco_n_filas_1_a_11,data\tamaulipas\json_predial\2019\TAMPS_PREDIAL_2019_tampico.json
-tampico,Tampico,2020,mixto,True,1,10,0,0,0,,data\tamaulipas\json_predial\2020\TAMPS_PREDIAL_2020_tampico.json
-tampico,Tampico,2021,mixto,True,1,0,0,0,10,cambio_brusco_n_filas_11_a_1|mixta_row10_columnas_vacias|mixta_row1_columnas_vacias|mixta_row2_columnas_vacias|mixta_row3_columnas_vacias|mixta_row4_columnas_vacias|mixta_row5_columnas_vacias|mixta_row6_columnas_vacias|mixta_row7_columnas_vacias|mixta_row8_columnas_vacias|mixta_row9_columnas_vacias,data\tamaulipas\json_predial\2021\TAMPS_PREDIAL_2021_tampico.json
+tampico,Tampico,2020,mixto,True,1,0,0,0,10,cambio_brusco_n_filas_11_a_1|mixta_row10_columnas_vacias|mixta_row1_columnas_vacias|mixta_row2_columnas_vacias|mixta_row3_columnas_vacias|mixta_row4_columnas_vacias|mixta_row5_columnas_vacias|mixta_row6_columnas_vacias|mixta_row7_columnas_vacias|mixta_row8_columnas_vacias|mixta_row9_columnas_vacias,data\tamaulipas\json_predial\2020\TAMPS_PREDIAL_2020_tampico.json
+tampico,Tampico,2021,mixto,True,1,0,0,0,10,mixta_row1_columnas_vacias|mixta_row2_columnas_vacias|mixta_row3_columnas_vacias|mixta_row4_columnas_vacias|mixta_row5_columnas_vacias|mixta_row6_columnas_vacias|mixta_row7_columnas_vacias|mixta_row8_columnas_vacias|mixta_row9_columnas_vacias|mixta_row10_columnas_vacias,data\tamaulipas\json_predial\2021\TAMPS_PREDIAL_2021_tampico.json
 tampico,Tampico,2022,mixto,True,1,0,0,0,10,mixta_row1_columnas_vacias|mixta_row2_columnas_vacias|mixta_row3_columnas_vacias|mixta_row4_columnas_vacias|mixta_row5_columnas_vacias|mixta_row6_columnas_vacias|mixta_row7_columnas_vacias|mixta_row8_columnas_vacias|mixta_row9_columnas_vacias|mixta_row10_columnas_vacias,data\tamaulipas\json_predial\2022\TAMPS_PREDIAL_2022_tampico.json
-tampico,Tampico,2023,mixto,True,1,10,0,0,0,cambio_brusco_n_filas_1_a_11,data\tamaulipas\json_predial\2023\TAMPS_PREDIAL_2023_tampico.json
-tampico,Tampico,2024,progresivo,True,1,10,0,0,0,cambio_esquema_mixto_a_progresivo_desde_2023|tipo_progresivo_con_tabla_tarifa_no_vacia,data\tamaulipas\json_predial\2024\TAMPS_PREDIAL_2024_tampico.json
-tampico,Tampico,2025,mixto,True,1,10,0,0,0,cambio_esquema_progresivo_a_mixto_desde_2024,data\tamaulipas\json_predial\2025\TAMPS_PREDIAL_2025_tampico.json
+tampico,Tampico,2023,mixto,True,1,0,0,0,10,mixta_row1_columnas_vacias|mixta_row2_columnas_vacias|mixta_row3_columnas_vacias|mixta_row4_columnas_vacias|mixta_row5_columnas_vacias|mixta_row6_columnas_vacias|mixta_row7_columnas_vacias|mixta_row8_columnas_vacias|mixta_row9_columnas_vacias|mixta_row10_columnas_vacias,data\tamaulipas\json_predial\2023\TAMPS_PREDIAL_2023_tampico.json
+tampico,Tampico,2024,progresivo,True,1,10,0,0,0,cambio_brusco_n_filas_1_a_11|cambio_esquema_mixto_a_progresivo_desde_2023|tipo_progresivo_con_tabla_tarifa_no_vacia,data\tamaulipas\json_predial\2024\TAMPS_PREDIAL_2024_tampico.json
+tampico,Tampico,2025,mixto,True,1,0,0,0,10,cambio_brusco_n_filas_11_a_1|cambio_esquema_progresivo_a_mixto_desde_2024|mixta_row10_columnas_vacias|mixta_row1_columnas_vacias|mixta_row2_columnas_vacias|mixta_row3_columnas_vacias|mixta_row4_columnas_vacias|mixta_row5_columnas_vacias|mixta_row6_columnas_vacias|mixta_row7_columnas_vacias|mixta_row8_columnas_vacias|mixta_row9_columnas_vacias,data\tamaulipas\json_predial\2025\TAMPS_PREDIAL_2025_tampico.json
 tula,Tula,2010,tarifa_millar,True,4,0,0,0,0,,data\tamaulipas\json_predial\2010\TAMPS_PREDIAL_2010_tula.json
 tula,Tula,2011,tarifa_millar,True,4,0,0,0,0,,data\tamaulipas\json_predial\2011\TAMPS_PREDIAL_2011_tula.json
 tula,Tula,2012,tarifa_millar,True,4,0,0,0,0,,data\tamaulipas\json_predial\2012\TAMPS_PREDIAL_2012_tula.json
@@ -624,8 +624,8 @@ tula,Tula,2025,tarifa_millar,True,4,0,0,0,0,,data\tamaulipas\json_predial\2025\T
 valle_hermoso,Valle Hermoso,2010,progresivo,True,1,10,0,0,0,tipo_progresivo_con_tabla_tarifa_no_vacia,data\tamaulipas\json_predial\2010\TAMPS_PREDIAL_2010_valle_hermoso.json
 valle_hermoso,Valle Hermoso,2011,progresivo,True,1,10,0,0,0,tipo_progresivo_con_tabla_tarifa_no_vacia|prog_row3_superior_null_no_ultimo|prog_row4_hueco_con_anterior,data\tamaulipas\json_predial\2011\TAMPS_PREDIAL_2011_valle_hermoso.json
 valle_hermoso,Valle Hermoso,2012,desconocido,False,0,0,0,0,0,,data\tamaulipas\json_predial\2012\TAMPS_PREDIAL_2012_valle_hermoso.json
-valle_hermoso,Valle Hermoso,2013,desconocido,False,0,0,0,0,0,,data\tamaulipas\json_predial\2013\TAMPS_PREDIAL_2013_valle_hermoso.json
-valle_hermoso,Valle Hermoso,2014,progresivo,True,1,10,0,0,0,tipo_progresivo_con_tabla_tarifa_no_vacia,data\tamaulipas\json_predial\2014\TAMPS_PREDIAL_2014_valle_hermoso.json
+valle_hermoso,Valle Hermoso,2013,mixto,True,1,0,0,0,10,mixta_row1_columnas_vacias|mixta_row2_columnas_vacias|mixta_row3_columnas_vacias|mixta_row4_columnas_vacias|mixta_row5_columnas_vacias|mixta_row6_columnas_vacias|mixta_row7_columnas_vacias|mixta_row8_columnas_vacias|mixta_row9_columnas_vacias|mixta_row10_columnas_vacias,data\tamaulipas\json_predial\2013\TAMPS_PREDIAL_2013_valle_hermoso.json
+valle_hermoso,Valle Hermoso,2014,progresivo,True,1,10,0,0,0,cambio_brusco_n_filas_1_a_11|cambio_esquema_mixto_a_progresivo_desde_2013|tipo_progresivo_con_tabla_tarifa_no_vacia,data\tamaulipas\json_predial\2014\TAMPS_PREDIAL_2014_valle_hermoso.json
 valle_hermoso,Valle Hermoso,2015,progresivo,True,1,10,0,0,0,tipo_progresivo_con_tabla_tarifa_no_vacia,data\tamaulipas\json_predial\2015\TAMPS_PREDIAL_2015_valle_hermoso.json
 valle_hermoso,Valle Hermoso,2016,mixto,True,1,0,0,0,10,cambio_brusco_n_filas_11_a_1|cambio_esquema_progresivo_a_mixto_desde_2015|mixta_row10_columnas_vacias|mixta_row1_columnas_vacias|mixta_row2_columnas_vacias|mixta_row3_columnas_vacias|mixta_row4_columnas_vacias|mixta_row5_columnas_vacias|mixta_row6_columnas_vacias|mixta_row7_columnas_vacias|mixta_row8_columnas_vacias|mixta_row9_columnas_vacias,data\tamaulipas\json_predial\2016\TAMPS_PREDIAL_2016_valle_hermoso.json
 valle_hermoso,Valle Hermoso,2017,progresivo,True,1,10,0,0,0,cambio_brusco_n_filas_1_a_11|cambio_esquema_mixto_a_progresivo_desde_2016|prog_row3_superior_null_no_ultimo|prog_row4_hueco_con_anterior|tipo_progresivo_con_tabla_tarifa_no_vacia,data\tamaulipas\json_predial\2017\TAMPS_PREDIAL_2017_valle_hermoso.json
@@ -638,20 +638,20 @@ valle_hermoso,Valle Hermoso,2024,mixto,True,1,0,0,0,10,mixta_row1_columnas_vacia
 valle_hermoso,Valle Hermoso,2025,progresivo,True,1,10,0,0,0,cambio_brusco_n_filas_1_a_11|cambio_esquema_mixto_a_progresivo_desde_2024|prog_row3_superior_null_no_ultimo|prog_row4_hueco_con_anterior|tipo_progresivo_con_tabla_tarifa_no_vacia,data\tamaulipas\json_predial\2025\TAMPS_PREDIAL_2025_valle_hermoso.json
 victoria,Victoria,2010,desconocido,False,0,0,0,0,0,,data\tamaulipas\json_predial\2010\TAMPS_PREDIAL_2010_victoria.json
 victoria,Victoria,2011,desconocido,False,0,0,0,0,0,,data\tamaulipas\json_predial\2011\TAMPS_PREDIAL_2011_victoria.json
-victoria,Victoria,2012,mixto,True,1,9,0,0,0,,data\tamaulipas\json_predial\2012\TAMPS_PREDIAL_2012_victoria.json
-victoria,Victoria,2013,mixto,True,1,0,0,0,9,cambio_brusco_n_filas_10_a_1|mixta_row1_columnas_vacias|mixta_row2_columnas_vacias|mixta_row3_columnas_vacias|mixta_row4_columnas_vacias|mixta_row5_columnas_vacias|mixta_row6_columnas_vacias|mixta_row7_columnas_vacias|mixta_row8_columnas_vacias|mixta_row9_columnas_vacias,data\tamaulipas\json_predial\2013\TAMPS_PREDIAL_2013_victoria.json
-victoria,Victoria,2014,mixto,True,1,9,0,0,0,cambio_brusco_n_filas_1_a_10,data\tamaulipas\json_predial\2014\TAMPS_PREDIAL_2014_victoria.json
-victoria,Victoria,2015,mixto,True,1,9,0,0,0,,data\tamaulipas\json_predial\2015\TAMPS_PREDIAL_2015_victoria.json
-victoria,Victoria,2016,mixto,True,1,9,0,0,0,,data\tamaulipas\json_predial\2016\TAMPS_PREDIAL_2016_victoria.json
-victoria,Victoria,2017,mixto,True,1,9,0,0,0,,data\tamaulipas\json_predial\2017\TAMPS_PREDIAL_2017_victoria.json
-victoria,Victoria,2018,mixto,True,1,9,0,0,0,,data\tamaulipas\json_predial\2018\TAMPS_PREDIAL_2018_victoria.json
-victoria,Victoria,2019,mixto,True,1,9,0,0,0,,data\tamaulipas\json_predial\2019\TAMPS_PREDIAL_2019_victoria.json
-victoria,Victoria,2020,mixto,True,1,0,0,0,9,cambio_brusco_n_filas_10_a_1|mixta_row1_columnas_vacias|mixta_row2_columnas_vacias|mixta_row3_columnas_vacias|mixta_row4_columnas_vacias|mixta_row5_columnas_vacias|mixta_row6_columnas_vacias|mixta_row7_columnas_vacias|mixta_row8_columnas_vacias|mixta_row9_columnas_vacias,data\tamaulipas\json_predial\2020\TAMPS_PREDIAL_2020_victoria.json
-victoria,Victoria,2021,mixto,True,1,9,0,0,0,cambio_brusco_n_filas_1_a_10,data\tamaulipas\json_predial\2021\TAMPS_PREDIAL_2021_victoria.json
-victoria,Victoria,2022,mixto,True,1,0,0,0,9,cambio_brusco_n_filas_10_a_1|mixta_row1_columnas_vacias|mixta_row2_columnas_vacias|mixta_row3_columnas_vacias|mixta_row4_columnas_vacias|mixta_row5_columnas_vacias|mixta_row6_columnas_vacias|mixta_row7_columnas_vacias|mixta_row8_columnas_vacias|mixta_row9_columnas_vacias,data\tamaulipas\json_predial\2022\TAMPS_PREDIAL_2022_victoria.json
+victoria,Victoria,2012,mixto,True,1,0,0,0,9,mixta_row1_columnas_vacias|mixta_row2_columnas_vacias|mixta_row3_columnas_vacias|mixta_row4_columnas_vacias|mixta_row5_columnas_vacias|mixta_row6_columnas_vacias|mixta_row7_columnas_vacias|mixta_row8_columnas_vacias|mixta_row9_columnas_vacias,data\tamaulipas\json_predial\2012\TAMPS_PREDIAL_2012_victoria.json
+victoria,Victoria,2013,mixto,True,1,0,0,0,9,mixta_row1_columnas_vacias|mixta_row2_columnas_vacias|mixta_row3_columnas_vacias|mixta_row4_columnas_vacias|mixta_row5_columnas_vacias|mixta_row6_columnas_vacias|mixta_row7_columnas_vacias|mixta_row8_columnas_vacias|mixta_row9_columnas_vacias,data\tamaulipas\json_predial\2013\TAMPS_PREDIAL_2013_victoria.json
+victoria,Victoria,2014,progresivo,True,1,9,0,0,0,cambio_brusco_n_filas_1_a_10|cambio_esquema_mixto_a_progresivo_desde_2013|tipo_progresivo_con_tabla_tarifa_no_vacia,data\tamaulipas\json_predial\2014\TAMPS_PREDIAL_2014_victoria.json
+victoria,Victoria,2015,progresivo,True,1,9,0,0,0,tipo_progresivo_con_tabla_tarifa_no_vacia,data\tamaulipas\json_predial\2015\TAMPS_PREDIAL_2015_victoria.json
+victoria,Victoria,2016,progresivo,True,1,9,0,0,0,tipo_progresivo_con_tabla_tarifa_no_vacia,data\tamaulipas\json_predial\2016\TAMPS_PREDIAL_2016_victoria.json
+victoria,Victoria,2017,progresivo,True,1,9,0,0,0,tipo_progresivo_con_tabla_tarifa_no_vacia,data\tamaulipas\json_predial\2017\TAMPS_PREDIAL_2017_victoria.json
+victoria,Victoria,2018,mixto,True,1,9,0,0,0,cambio_esquema_progresivo_a_mixto_desde_2017,data\tamaulipas\json_predial\2018\TAMPS_PREDIAL_2018_victoria.json
+victoria,Victoria,2019,progresivo,True,1,9,0,0,0,cambio_esquema_mixto_a_progresivo_desde_2018|tipo_progresivo_con_tabla_tarifa_no_vacia,data\tamaulipas\json_predial\2019\TAMPS_PREDIAL_2019_victoria.json
+victoria,Victoria,2020,mixto,True,1,0,0,0,9,cambio_brusco_n_filas_10_a_1|cambio_esquema_progresivo_a_mixto_desde_2019|mixta_row1_columnas_vacias|mixta_row2_columnas_vacias|mixta_row3_columnas_vacias|mixta_row4_columnas_vacias|mixta_row5_columnas_vacias|mixta_row6_columnas_vacias|mixta_row7_columnas_vacias|mixta_row8_columnas_vacias|mixta_row9_columnas_vacias,data\tamaulipas\json_predial\2020\TAMPS_PREDIAL_2020_victoria.json
+victoria,Victoria,2021,progresivo,True,1,9,0,0,0,cambio_brusco_n_filas_1_a_10|cambio_esquema_mixto_a_progresivo_desde_2020|tipo_progresivo_con_tabla_tarifa_no_vacia,data\tamaulipas\json_predial\2021\TAMPS_PREDIAL_2021_victoria.json
+victoria,Victoria,2022,mixto,True,1,0,0,0,9,cambio_brusco_n_filas_10_a_1|cambio_esquema_progresivo_a_mixto_desde_2021|mixta_row1_columnas_vacias|mixta_row2_columnas_vacias|mixta_row3_columnas_vacias|mixta_row4_columnas_vacias|mixta_row5_columnas_vacias|mixta_row6_columnas_vacias|mixta_row7_columnas_vacias|mixta_row8_columnas_vacias|mixta_row9_columnas_vacias,data\tamaulipas\json_predial\2022\TAMPS_PREDIAL_2022_victoria.json
 victoria,Victoria,2023,mixto,True,1,0,0,0,9,mixta_row1_columnas_vacias|mixta_row2_columnas_vacias|mixta_row3_columnas_vacias|mixta_row4_columnas_vacias|mixta_row5_columnas_vacias|mixta_row6_columnas_vacias|mixta_row7_columnas_vacias|mixta_row8_columnas_vacias|mixta_row9_columnas_vacias,data\tamaulipas\json_predial\2023\TAMPS_PREDIAL_2023_victoria.json
 victoria,Victoria,2024,mixto,True,1,0,0,0,9,mixta_row1_columnas_vacias|mixta_row2_columnas_vacias|mixta_row3_columnas_vacias|mixta_row4_columnas_vacias|mixta_row5_columnas_vacias|mixta_row6_columnas_vacias|mixta_row7_columnas_vacias|mixta_row8_columnas_vacias|mixta_row9_columnas_vacias,data\tamaulipas\json_predial\2024\TAMPS_PREDIAL_2024_victoria.json
-victoria,Victoria,2025,mixto,True,1,9,0,0,0,cambio_brusco_n_filas_1_a_10,data\tamaulipas\json_predial\2025\TAMPS_PREDIAL_2025_victoria.json
+victoria,Victoria,2025,progresivo,True,1,9,0,0,0,cambio_brusco_n_filas_1_a_10|cambio_esquema_mixto_a_progresivo_desde_2024|tipo_progresivo_con_tabla_tarifa_no_vacia,data\tamaulipas\json_predial\2025\TAMPS_PREDIAL_2025_victoria.json
 villagran,Villagran,2010,tarifa_millar,True,2,0,0,0,0,,data\tamaulipas\json_predial\2010\TAMPS_PREDIAL_2010_villagran.json
 villagran,Villagran,2011,tarifa_millar,True,2,0,0,0,0,,data\tamaulipas\json_predial\2011\TAMPS_PREDIAL_2011_villagran.json
 villagran,Villagran,2012,tarifa_millar,True,2,0,0,0,0,,data\tamaulipas\json_predial\2012\TAMPS_PREDIAL_2012_villagran.json
@@ -668,8 +668,8 @@ villagran,Villagran,2022,tarifa_millar,True,5,0,0,0,0,,data\tamaulipas\json_pred
 villagran,Villagran,2023,tarifa_millar,True,5,0,0,0,0,,data\tamaulipas\json_predial\2023\TAMPS_PREDIAL_2023_villagran.json
 villagran,Villagran,2024,tarifa_millar,True,5,0,0,0,0,,data\tamaulipas\json_predial\2024\TAMPS_PREDIAL_2024_villagran.json
 villagran,Villagran,2025,tarifa_millar,True,5,0,0,0,0,,data\tamaulipas\json_predial\2025\TAMPS_PREDIAL_2025_villagran.json
-xicotencatl,Xicotencatl,2010,desconocido,False,0,0,0,0,0,,data\tamaulipas\json_predial\2010\TAMPS_PREDIAL_2010_xicotencatl.json
-xicotencatl,Xicotencatl,2011,desconocido,False,0,0,0,0,0,,data\tamaulipas\json_predial\2011\TAMPS_PREDIAL_2011_xicotencatl.json
+xicotencatl,Xicotencatl,2010,tarifa_millar,True,4,0,0,0,0,,data\tamaulipas\json_predial\2010\TAMPS_PREDIAL_2010_xicotencatl.json
+xicotencatl,Xicotencatl,2011,tarifa_millar,True,4,0,0,0,0,,data\tamaulipas\json_predial\2011\TAMPS_PREDIAL_2011_xicotencatl.json
 xicotencatl,Xicotencatl,2012,tarifa_millar,True,4,0,0,0,0,,data\tamaulipas\json_predial\2012\TAMPS_PREDIAL_2012_xicotencatl.json
 xicotencatl,Xicotencatl,2013,tarifa_millar,True,4,0,0,0,0,,data\tamaulipas\json_predial\2013\TAMPS_PREDIAL_2013_xicotencatl.json
 xicotencatl,Xicotencatl,2014,tarifa_millar,True,4,0,0,0,0,,data\tamaulipas\json_predial\2014\TAMPS_PREDIAL_2014_xicotencatl.json

@@ -50,7 +50,7 @@ OPENAI_VISION_MODEL = os.environ.get("OPENAI_VISION_MODEL", OPENAI_MODEL)
 USE_STRUCTURED_OUTPUT = os.environ.get("OPENAI_STRUCTURED_OUTPUT", "1") == "1"
 
 # Límite de tokens por sub-batch
-BATCH_TOKEN_LIMIT = int(os.environ.get("BATCH_TOKEN_LIMIT", "850000"))
+BATCH_TOKEN_LIMIT = int(os.environ.get("BATCH_TOKEN_LIMIT", "900000"))
 BATCH_MAX_REQUESTS = int(os.environ.get("BATCH_MAX_REQUESTS", "40000"))
 
 # Cliente lazy
@@ -897,10 +897,10 @@ def get_extended_txt(focus_txt: Path, adapter=None) -> str | None:
                         source = pdf_used
 
                 if source is None and has_txt_file:
-                    # Oaxaca/Guanajuato: buscar por source_pdf + ejercicio
                     source_pdf_name = row.get("source_pdf", "")
                     ejercicio = row.get("ejercicio", "")
                     if source_pdf_name:
+                        # Oaxaca/Guanajuato: source_pdf explícito en el CSV
                         for base_dir in [adapter.pdf_ocr_dir, adapter.pdf_raw_dir]:
                             for sub in [ejercicio, ""]:
                                 candidate = base_dir / sub / source_pdf_name if sub else base_dir / source_pdf_name
@@ -909,6 +909,56 @@ def get_extended_txt(focus_txt: Path, adapter=None) -> str | None:
                                     break
                             if source:
                                 break
+                    elif ejercicio:
+                        # Tamaulipas y otros: sin source_pdf, buscar por decreto o glob
+                        decreto = row.get("decreto", "")
+                        if decreto:
+                            # Buscar PDF que contenga el decreto en el nombre
+                            for base_dir in [adapter.pdf_ocr_dir, adapter.pdf_raw_dir]:
+                                for sub in [ejercicio, ""]:
+                                    search_dir = base_dir / sub if sub else base_dir
+                                    if search_dir.exists():
+                                        for pdf_file in search_dir.glob("*.pdf"):
+                                            if decreto.replace(" ", "_").lower() in pdf_file.stem.lower() or decreto.lower() in pdf_file.stem.lower():
+                                                source = pdf_file
+                                                break
+                                    if source:
+                                        break
+                        if source is None:
+                            # Último recurso: buscar cualquier PDF del ejercicio que contenga el slug
+                            slug = row.get("slug", "")
+                            if slug:
+                                for base_dir in [adapter.pdf_ocr_dir, adapter.pdf_raw_dir]:
+                                    search_dir = base_dir / ejercicio
+                                    if search_dir.exists():
+                                        matches = [p for p in search_dir.glob("*.pdf") if slug in p.stem.lower()]
+                                        if len(matches) == 1:
+                                            source = matches[0]
+                                            break
+
+                if source is None and ejercicio:
+                    # Fallback: buscar en pdf_raw/ejercicio/ un PDF que contenga
+                    # las páginas indicadas (tomo consolidado)
+                    for base_dir in [adapter.pdf_raw_dir, adapter.pdf_ocr_dir]:
+                        search_dir = base_dir / ejercicio
+                        if search_dir.exists():
+                            pdfs = sorted(search_dir.glob("*.pdf"))
+                            if len(pdfs) == 1:
+                                source = pdfs[0]
+                                break
+                            # Si hay varios, intentar match por slug o decreto
+                            slug = row.get("slug", "")
+                            decreto = row.get("decreto", "")
+                            for pdf_file in pdfs:
+                                stem_lower = pdf_file.stem.lower()
+                                if slug and slug in stem_lower:
+                                    source = pdf_file
+                                    break
+                                if decreto and decreto.lower().replace(" ", "_") in stem_lower:
+                                    source = pdf_file
+                                    break
+                        if source:
+                            break
 
                 if source is None:
                     print(f"      [ext_txt] Source PDF no encontrado para {target_name}")
@@ -1364,17 +1414,14 @@ def extract_all(
         out_dir.mkdir(parents=True, exist_ok=True)
         out_path = out_dir / f"{prefijo}_PREDIAL_{anio}_{slug}.json"
 
-        # Si ya existe, verificar si necesita re-intentar con PDF
+        # Si ya existe y es válido, skip; si inválido, re-intentar con fallbacks
         if out_path.exists():
             try:
                 existing = json.loads(out_path.read_text(encoding="utf-8"))
                 if _is_valid_extraction(existing):
                     stats["skipped"] += 1
                     continue
-                if existing.get("_meta", {}).get("fuente") == "pdf_vision":
-                    stats["skipped"] += 1
-                    continue
-                print(f"\n  >>> {nombre_mpio} {anio} (re-intento con PDF)")
+                print(f"\n  >>> {nombre_mpio} {anio} (re-intento, esquema inválido)")
             except Exception:
                 stats["skipped"] += 1
                 continue

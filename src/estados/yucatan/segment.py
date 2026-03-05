@@ -389,6 +389,7 @@ def run_extract_sections(adapter) -> Path:
         by_file.setdefault(s["file"], []).append(s)
 
     log_rows = []
+    segment_rows = []
 
     for fname, group in by_file.items():
         pdf_path = pdf_raw_dir / fname
@@ -411,11 +412,22 @@ def run_extract_sections(adapter) -> Path:
                     parts.append("\n")
                 full_text = "".join(parts)
 
+                # Construir mapa de página → offset para este doc
+                import bisect
+                page_char_starts = []
+                _cursor = 0
+                for _pi in range(doc.page_count):
+                    page_char_starts.append(_cursor)
+                    _t = doc[_pi].get_text("text") or ""
+                    _cursor += len(_t) + 1  # +1 por el "\n" del join
+
                 for s in group:
                     muni = s["municipio"]
                     fy = str(s["fiscal_year"])
                     char_start = s["char_start"]
                     char_end = s["char_end"]
+                    ley_start_page = s.get("start_page", 0)
+                    ley_end_page = s.get("end_page", 0)
 
                     law_text = full_text[char_start:char_end]
 
@@ -424,12 +436,25 @@ def run_extract_sections(adapter) -> Path:
 
                     predial_text = _extract_predial_text(law_text)
 
+                    muni_slug = slugify(muni)
+                    txt_name = f"{prefijo}_PREDIAL_{fy}_{muni_slug}.txt"
+
                     if not predial_text:
                         log_rows.append({
                             "municipio": muni, "ejercicio": fy,
                             "file": fname, "predial_chars": 0,
                             "predial_tipo": "none",
                             "status": "no_predial_found",
+                        })
+                        # Escribir row para segment.csv (sin predial)
+                        segment_rows.append({
+                            "ejercicio": fy, "municipio": muni, "slug": muni_slug,
+                            "source_pdf": fname,
+                            "ley_page_start": ley_start_page,
+                            "ley_page_end": ley_end_page,
+                            "predial_found": "false", "predial_method": "none",
+                            "predial_page_start": "", "predial_page_end": "",
+                            "txt_file": txt_name, "txt_chars": 0,
                         })
                         continue
 
@@ -439,9 +464,18 @@ def run_extract_sections(adapter) -> Path:
                     else:
                         predial_tipo = "capitulo_i"
 
+                    # Calcular páginas de predial a partir de offsets
+                    predial_offset_in_full = full_text.find(predial_text, char_start)
+                    if predial_offset_in_full < 0:
+                        predial_offset_in_full = char_start
+                    pred_page_start = bisect.bisect_right(page_char_starts, predial_offset_in_full)
+                    pred_page_end = bisect.bisect_right(
+                        page_char_starts,
+                        max(predial_offset_in_full, predial_offset_in_full + len(predial_text) - 1)
+                    )
+
                     # Guardar TXT
-                    muni_slug = slugify(muni)
-                    txt_path = focus_dir / fy / f"{prefijo}_PREDIAL_{fy}_{muni_slug}.txt"
+                    txt_path = focus_dir / fy / txt_name
                     txt_path.parent.mkdir(parents=True, exist_ok=True)
                     txt_path.write_text(predial_text, encoding="utf-8")
 
@@ -451,6 +485,16 @@ def run_extract_sections(adapter) -> Path:
                         "predial_tipo": predial_tipo,
                         "status": "ok",
                     })
+                    segment_rows.append({
+                        "ejercicio": fy, "municipio": muni, "slug": muni_slug,
+                        "source_pdf": fname,
+                        "ley_page_start": ley_start_page,
+                        "ley_page_end": ley_end_page,
+                        "predial_found": "true", "predial_method": predial_tipo,
+                        "predial_page_start": pred_page_start,
+                        "predial_page_end": pred_page_end,
+                        "txt_file": txt_name, "txt_chars": len(predial_text),
+                    })
 
         except Exception as e:
             print(f"    [ERROR] {fname}: {e}")
@@ -459,13 +503,28 @@ def run_extract_sections(adapter) -> Path:
     merida_rows = _process_merida(pdf_raw_dir, focus_dir, prefijo)
     log_rows.extend(merida_rows)
 
-    # Bitácora
+    # Bitácora (formato legacy)
     sections_csv = meta_dir / "predial_sections.csv"
     fieldnames = ["municipio", "ejercicio", "file", "predial_chars", "predial_tipo", "status"]
     with sections_csv.open("w", newline="", encoding="utf-8") as f:
         writer = csv.DictWriter(f, fieldnames=fieldnames)
         writer.writeheader()
         writer.writerows(log_rows)
+
+    # segment.csv (formato estándar compatible con llm_extract fallbacks)
+    _seg_fields = [
+        "ejercicio", "municipio", "slug", "source_pdf",
+        "ley_page_start", "ley_page_end",
+        "predial_found", "predial_method",
+        "predial_page_start", "predial_page_end",
+        "txt_file", "txt_chars",
+    ]
+    seg_csv = meta_dir / "segment.csv"
+    with seg_csv.open("w", newline="", encoding="utf-8") as f:
+        writer = csv.DictWriter(f, fieldnames=_seg_fields)
+        writer.writeheader()
+        writer.writerows(segment_rows)
+    print(f"  segment.csv: {len(segment_rows)} filas → {seg_csv}")
 
     ok_count = sum(1 for r in log_rows if r["status"] == "ok")
     no_pred = sum(1 for r in log_rows if r["status"] == "no_predial_found")
