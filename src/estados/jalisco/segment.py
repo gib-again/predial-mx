@@ -183,12 +183,12 @@ def _analyze_pdf_for_predial(pdf_path: Path) -> dict:
 
     n_pages = len(pages_lines)
     if n_pages == 0:
-        return {"n_pages": 0, "page_start_predial": None, "page_end_predial": None,
+        return {"n_pages": 0, "predial_page_start": None, "predial_page_end": None,
                 "page_start_next_tax": None, "next_tax_label": None, "forced_end": False}
 
     page_core = _find_predial_core_page(pages_lines)
     if page_core is None:
-        return {"n_pages": n_pages, "page_start_predial": None, "page_end_predial": None,
+        return {"n_pages": n_pages, "predial_page_start": None, "predial_page_end": None,
                 "page_start_next_tax": None, "next_tax_label": None, "forced_end": False}
 
     # Buscar fin: siguiente impuesto
@@ -210,8 +210,8 @@ def _analyze_pdf_for_predial(pdf_path: Path) -> dict:
 
     return {
         "n_pages": n_pages,
-        "page_start_predial": page_core + 1,       # 1-based
-        "page_end_predial": page_end + 1,           # 1-based
+        "predial_page_start": page_core + 1,       # 1-based
+        "predial_page_end": page_end + 1,           # 1-based
         "page_start_next_tax": (page_start_next_tax + 1) if page_start_next_tax is not None else None,
         "next_tax_label": next_tax_label,
         "forced_end": forced_end,
@@ -229,7 +229,7 @@ def run_locate_sections(adapter) -> Path:
     meta_dir = adapter.meta_dir
     pdf_ocr_dir = adapter.pdf_ocr_dir
     downloads_csv = meta_dir / "ingresos_downloads.csv"
-    sections_csv = meta_dir / "predial_sections.csv"
+    sections_csv = meta_dir / "segment.csv"
 
     if not downloads_csv.exists():
         raise FileNotFoundError(f"No existe {downloads_csv}")
@@ -252,8 +252,8 @@ def run_locate_sections(adapter) -> Path:
         candidates = _page_candidate_paths(raw_path, pdf_ocr_dir)
         if not candidates:
             rows_out.append({"municipio": municipio, "anio": anio, "pdf_used": "",
-                             "n_pages": 0, "page_start_predial": None,
-                             "page_end_predial": None, "page_start_next_tax": None,
+                             "n_pages": 0, "predial_page_start": None,
+                             "predial_page_end": None, "page_start_next_tax": None,
                              "next_tax_label": None, "forced_end": False})
             continue
 
@@ -262,20 +262,20 @@ def run_locate_sections(adapter) -> Path:
             info = _analyze_pdf_for_predial(pdf_used)
         except Exception as e:
             print(f"    [ERROR] {municipio} {anio}: {e}")
-            info = {"n_pages": 0, "page_start_predial": None, "page_end_predial": None,
+            info = {"n_pages": 0, "predial_page_start": None, "predial_page_end": None,
                     "page_start_next_tax": None, "next_tax_label": None, "forced_end": False}
 
         rows_out.append({"municipio": municipio, "anio": anio, "pdf_used": str(pdf_used), **info})
 
     fieldnames = ["municipio", "anio", "pdf_used", "n_pages",
-                  "page_start_predial", "page_end_predial",
+                  "predial_page_start", "predial_page_end",
                   "page_start_next_tax", "next_tax_label", "forced_end"]
     with sections_csv.open("w", newline="", encoding="utf-8") as f:
         writer = csv.DictWriter(f, fieldnames=fieldnames)
         writer.writeheader()
         writer.writerows(rows_out)
 
-    found = sum(1 for r in rows_out if r["page_start_predial"] is not None)
+    found = sum(1 for r in rows_out if r["predial_page_start"] is not None)
     print(f"  Secciones localizadas: {found}/{len(rows_out)} → {sections_csv}")
     return sections_csv
 
@@ -319,13 +319,13 @@ def run_extract_sections(adapter) -> Path:
     focus_dir = adapter.focus_dir
     prefijo = adapter.prefijo
 
-    sections_csv = meta_dir / "predial_sections.csv"
+    sections_csv = meta_dir / "segment.csv"
     if not sections_csv.exists():
         raise FileNotFoundError(f"No existe {sections_csv}. Ejecuta 'master' primero.")
 
     with sections_csv.open(encoding="utf-8") as f:
         reader = csv.DictReader(f)
-        rows = [r for r in reader if r.get("page_start_predial")]
+        rows = [r for r in reader if r.get("predial_page_start")]
 
     print(f"  {len(rows)} secciones para extraer.")
 
@@ -334,12 +334,12 @@ def run_extract_sections(adapter) -> Path:
         municipio = row["municipio"]
         anio = int(row["anio"])
         pdf_used = Path(row["pdf_used"])
-        start = int(float(row["page_start_predial"]))
-        end = int(float(row["page_end_predial"]))
+        start = int(float(row["predial_page_start"]))
+        end = int(float(row["predial_page_end"]))
         forced_end = str(row.get("forced_end", "")).strip().lower() in ("true", "1", "yes")
 
         # Heurística: si el rango es muy estrecho (≤2 páginas) o forced_end,
-        # es probable que page_start_predial esté adelantado respecto al inicio
+        # es probable que predial_page_start esté adelantado respecto al inicio
         # real de la sección. Incorporamos 5 páginas extra hacia atrás y dejamos
         # que el LLM interprete el contenido relevante.
         page_span = end - start + 1

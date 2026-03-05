@@ -50,7 +50,7 @@ OPENAI_VISION_MODEL = os.environ.get("OPENAI_VISION_MODEL", OPENAI_MODEL)
 USE_STRUCTURED_OUTPUT = os.environ.get("OPENAI_STRUCTURED_OUTPUT", "1") == "1"
 
 # Límite de tokens por sub-batch
-BATCH_TOKEN_LIMIT = int(os.environ.get("BATCH_TOKEN_LIMIT", "1100000"))
+BATCH_TOKEN_LIMIT = int(os.environ.get("BATCH_TOKEN_LIMIT", "850000"))
 BATCH_MAX_REQUESTS = int(os.environ.get("BATCH_MAX_REQUESTS", "40000"))
 
 # Cliente lazy
@@ -277,13 +277,6 @@ ESTRUCTURA EXACTA DEL JSON (no agregues claves fuera de esto):
   IMPORTANTE: A veces, ADEMÁS de la tasa al millar, se cobra una CUOTA FIJA ADICIONAL por predio
   (ej: "$150 más 3.5 al millar sobre el valor catastral"). Esto sigue siendo "tarifa_millar";
   la cuota fija adicional se captura en el campo "cuota_fija_adicional" de cada fila.
-  Casos especiales detectados:
-        - Si la tasa dice ser al millar, pero se entrega un valor muy alto acompañado de un signo de "%"
-        se calcula el valor porcentual de la tarifa al millar, es decir se divide entre 100, ejemplo 20% 
-        al millar con un 20% escrito en la ley, se interpreta como 0.2 al millar y se marca como "al_millar".
-      - Factores decimales pequeños (0.001, 0.00025) → "factor_decimal", se identifican por ser <0.01 y
-        se odentificó que en algunos casos habrá un signo "%" que es incorrecto en la ley, el valor es 
-        un factor decimal.
 
 "progresivo": El impuesto usa una tabla de rangos de valor catastral con columnas:
   límite inferior, límite superior, cuota fija, tasa marginal sobre el excedente.
@@ -418,6 +411,20 @@ tabla_cuota_fija (si tipo_esquema = "cuota_fija"):
 6. Tabla de rangos con VARIAS COLUMNAS por tipo de predio → "mixto" + tabla_mixta_rango.
 7. "esquema_valido" = true cuando TODOS los valores necesarios están presentes.
 
+8.  REGLA CRÍTICA — Conversión de "%" en tasas al millar:
+    En Jalisco y otros estados, las tasas bimestrales al millar se expresan 
+    frecuentemente con signo "%". Esto NO es un porcentaje real sino la 
+    representación local de la tasa al millar. 
+    SIEMPRE divide entre 100 para obtener el valor al millar correcto:
+    - "20%" → tasa_millar = 0.20
+    - "23%" → tasa_millar = 0.23  
+    - "35%" → tasa_millar = 0.35
+    - "10%" → tasa_millar = 0.10
+    Esto NO es inventar valores. Es la conversión correcta y obligatoria.
+    Si el encabezado dice "tasa bimestral al millar" y los valores tienen "%",
+    APLICA esta conversión y marca esquema_valido = true.
+    NO dejes tasa_millar en 0 por esta ambigüedad.
+
 ═══ CASOS ESPECIALES A IGNORAR ═══
 
 IGNORA completamente los siguientes casos que exceden el alcance de esta base de datos:
@@ -458,6 +465,7 @@ Las unidades son IMPLÍCITAS y fijas para la mayoría de los esquemas:
       - Texto dice "salario mínimo" o "VSM" → "vsm"
       - Tasas escritas como "X al millar" → "al_millar"
       - Tasas escritas como "X%" → "porcentaje"
+      - Factores decimales pequeños (0.001, 0.00025) → "factor_decimal"
 
 Devuelve SIEMPRE un único objeto JSON válido con la clave "predial" en la raíz, sin texto adicional.
 """
@@ -815,9 +823,14 @@ def get_extended_txt(focus_txt: Path, adapter=None) -> str | None:
     Genera texto extendido: N páginas de contexto antes y después del recorte,
     extraídas del source PDF vía segment.csv.
 
+    Soporta dos formatos de segment.csv:
+      - Oaxaca/Guanajuato: columnas txt_file, source_pdf, ejercicio, predial_page_start/end
+      - Jalisco: columnas municipio, anio, pdf_used, predial_page_start/end
+
     Retorna el texto extendido, o None si no puede extender.
     """
     if adapter is None:
+        print("      [ext_txt] adapter es None")
         return None
 
     import fitz
@@ -825,58 +838,111 @@ def get_extended_txt(focus_txt: Path, adapter=None) -> str | None:
 
     meta_csv = adapter.meta_dir / "segment.csv"
     if not meta_csv.exists():
+        print(f"      [ext_txt] No existe {meta_csv}")
         return None
 
-    target_name = focus_txt.stem
+    target_name = focus_txt.stem  # ej: JAL_PREDIAL_2012_san_juan_de_los_lagos
 
     try:
         with meta_csv.open(encoding="utf-8-sig") as f:
             reader = csv.DictReader(f)
+            headers = reader.fieldnames or []
+
+            # Detectar formato del CSV
+            has_txt_file = "txt_file" in headers      # Oaxaca/Guanajuato
+            has_pdf_used = "pdf_used" in headers       # Jalisco
+
             for row in reader:
-                txt_base = row.get("txt_file", "").replace(".txt", "")
-                if txt_base == target_name:
+                # ── Matching: encontrar la fila que corresponde a este TXT ──
+                matched = False
+                if has_txt_file:
+                    txt_base = row.get("txt_file", "").replace(".txt", "")
+                    if txt_base == target_name:
+                        matched = True
+                elif has_pdf_used:
+                    # Jalisco: reconstruir el nombre del TXT desde municipio + anio
+                    mun = row.get("municipio", "")
+                    anio = row.get("anio", "")
+                    if mun and anio:
+                        from src.core.text_utils import slugify
+                        expected = f"{adapter.prefijo}_PREDIAL_{anio}_{slugify(mun)}"
+                        if expected == target_name:
+                            matched = True
+
+                if not matched:
+                    continue
+
+                # ── Extraer datos de la fila ──
+                pred_start_raw = row.get("predial_page_start", "0")
+                pred_end_raw = row.get("predial_page_end", "0")
+
+                try:
+                    pred_start = int(float(pred_start_raw)) - 1   # 1-based → 0-based
+                    pred_end = int(float(pred_end_raw))            # 1-based inclusive → 0-based exclusive
+                except (ValueError, TypeError):
+                    print(f"      [ext_txt] Páginas no numéricas: start={pred_start_raw}, end={pred_end_raw}")
+                    return None
+
+                if pred_end <= 0:
+                    print(f"      [ext_txt] pred_end inválido: {pred_end}")
+                    return None
+
+                # ── Localizar el source PDF ──
+                source = None
+
+                if has_pdf_used:
+                    # Jalisco: pdf_used es la ruta completa
+                    pdf_used = Path(row.get("pdf_used", ""))
+                    if pdf_used.exists():
+                        source = pdf_used
+
+                if source is None and has_txt_file:
+                    # Oaxaca/Guanajuato: buscar por source_pdf + ejercicio
                     source_pdf_name = row.get("source_pdf", "")
-                    pred_start = int(row.get("predial_page_start", 0)) - 1  # 1-based → 0-based
-                    pred_end = int(row.get("predial_page_end", 0))          # exclusive
                     ejercicio = row.get("ejercicio", "")
+                    if source_pdf_name:
+                        for base_dir in [adapter.pdf_ocr_dir, adapter.pdf_raw_dir]:
+                            for sub in [ejercicio, ""]:
+                                candidate = base_dir / sub / source_pdf_name if sub else base_dir / source_pdf_name
+                                if candidate.exists():
+                                    source = candidate
+                                    break
+                            if source:
+                                break
 
-                    if not source_pdf_name or pred_end <= 0:
+                if source is None:
+                    print(f"      [ext_txt] Source PDF no encontrado para {target_name}")
+                    return None
+
+                # ── Extraer texto extendido ──
+                with fitz.open(str(source)) as doc:
+                    n_pages = len(doc)
+                    ext_start = max(0, pred_start - TXT_EXT_PAGES_BEFORE)
+                    ext_end = min(n_pages, pred_end + TXT_EXT_PAGES_AFTER)
+
+                    if ext_start >= pred_start and ext_end <= pred_end:
+                        print(f"      [ext_txt] Sin margen: pages={pred_start}-{pred_end} de {n_pages}")
                         return None
 
-                    # Buscar source PDF (OCR primero, luego raw)
-                    source = None
-                    for base_dir in [adapter.pdf_ocr_dir, adapter.pdf_raw_dir]:
-                        candidate = base_dir / ejercicio / source_pdf_name
-                        if candidate.exists():
-                            source = candidate
-                            break
-                    if source is None:
+                    parts = []
+                    for p in range(ext_start, ext_end):
+                        text = doc[p].get_text("text")
+                        if text and text.strip():
+                            parts.append(text)
+
+                    if not parts:
+                        print(f"      [ext_txt] Páginas extendidas sin texto")
                         return None
 
-                    with fitz.open(str(source)) as doc:
-                        n_pages = len(doc)
-                        ext_start = max(0, pred_start - TXT_EXT_PAGES_BEFORE)
-                        ext_end = min(n_pages, pred_end + TXT_EXT_PAGES_AFTER)
+                    return "\n\n".join(parts)
 
-                        # Si no hay extensión real, no vale la pena
-                        if ext_start >= pred_start and ext_end <= pred_end:
-                            return None
-
-                        parts = []
-                        for p in range(ext_start, ext_end):
-                            text = doc[p].get_text("text")
-                            if text and text.strip():
-                                parts.append(text)
-
-                        if not parts:
-                            return None
-
-                        return "\n\n".join(parts)
-
-    except Exception:
+        print(f"      [ext_txt] {target_name} no encontrado en segment.csv")
         return None
 
-    return None
+    except Exception as e:
+        print(f"      [ext_txt] Error: {e}")
+        return None
+
 
 
 
@@ -1360,7 +1426,8 @@ def extract_all(
                 except Exception as e:
                     print(f"    [ERROR] LLM TXT extendido: {e}")
             else:
-                print(f"    [2/3] Sin contexto adicional disponible, skip TXT extendido")
+                reason = "ext_texto=None" if ext_texto is None else f"ext_texto={len(ext_texto)} chars vs original={len(texto)} chars (diff<500)"
+                print(f"    [2/3] Sin contexto adicional ({reason}), skip TXT extendido")
 
         # ── Paso 3: Si TXT extendido también falló → PDF visión ──
         if pdf_fallback and not used_ext_txt and (data is None or not _is_valid_extraction(data)):

@@ -1,5 +1,5 @@
 municipio,anio,tipo_esquema,esquema_valido
-amealco_de_bonfil,2010,tarifa_millar,False
+amealco_de_bonfil,2010,tarifa_millar,True
 amealco_de_bonfil,2011,tarifa_millar,True
 amealco_de_bonfil,2012,tarifa_millar,True
 amealco_de_bonfil,2013,tarifa_millar,True
@@ -33,12 +33,12 @@ arroyo_seco,2023,tarifa_millar,True
 arroyo_seco,2024,tarifa_millar,True
 arroyo_seco,2025,tarifa_millar,True
 arroyo_seco,2026,tarifa_millar,True
-cadereyta,2015,tarifa_millar,True
 cadereyta_de_montes,2010,tarifa_millar,True
 cadereyta_de_montes,2011,tarifa_millar,True
 cadereyta_de_montes,2012,tarifa_millar,True
 cadereyta_de_montes,2013,tarifa_millar,True
 cadereyta_de_montes,2014,tarifa_millar,True
+cadereyta_de_montes,2015,tarifa_millar,True
 cadereyta_de_montes,2016,tarifa_millar,True
 cadereyta_de_montes,2017,tarifa_millar,True
 cadereyta_de_montes,2018,tarifa_millar,True
@@ -50,14 +50,13 @@ cadereyta_de_montes,2023,tarifa_millar,True
 cadereyta_de_montes,2024,tarifa_millar,True
 cadereyta_de_montes,2025,tarifa_millar,True
 cadereyta_de_montes,2026,tarifa_millar,True
-cadereyta_de_montes__dup1,2017,progresivo,True
-cadereyta_de_montes__dup24,2016,tarifa_millar,True
 colon,2010,tarifa_millar,True
 colon,2011,tarifa_millar,True
 colon,2012,tarifa_millar,True
 colon,2013,tarifa_millar,True
 colon,2014,tarifa_millar,True
 colon,2015,tarifa_millar,True
+colon,2016,tarifa_millar,True
 colon,2017,progresivo,True
 colon,2018,progresivo,True
 colon,2019,progresivo,True
@@ -175,6 +174,7 @@ pedro_escobedo,2014,tarifa_millar,True
 pedro_escobedo,2015,tarifa_millar,True
 pedro_escobedo,2016,tarifa_millar,True
 pedro_escobedo,2017,progresivo,True
+pedro_escobedo,2018,progresivo,True
 pedro_escobedo,2019,progresivo,True
 pedro_escobedo,2020,progresivo,True
 pedro_escobedo,2021,progresivo,True
@@ -183,7 +183,6 @@ pedro_escobedo,2023,progresivo,True
 pedro_escobedo,2024,progresivo,True
 pedro_escobedo,2025,progresivo,True
 pedro_escobedo,2026,progresivo,True
-pedro_escobedo_queretaro,2018,progresivo,True
 penamiller,2010,tarifa_millar,True
 penamiller,2011,tarifa_millar,True
 penamiller,2012,tarifa_millar,True
@@ -257,6 +256,7 @@ san_juan_del_rio,2012,tarifa_millar,True
 san_juan_del_rio,2013,tarifa_millar,True
 san_juan_del_rio,2014,tarifa_millar,True
 san_juan_del_rio,2015,tarifa_millar,True
+san_juan_del_rio,2016,tarifa_millar,True
 san_juan_del_rio,2017,progresivo,True
 san_juan_del_rio,2018,progresivo,True
 san_juan_del_rio,2019,progresivo,True
@@ -267,7 +267,6 @@ san_juan_del_rio,2023,progresivo,True
 san_juan_del_rio,2024,progresivo,True
 san_juan_del_rio,2025,progresivo,True
 san_juan_del_rio,2026,progresivo,True
-san_juan_del_rio_queretaro,2016,tarifa_millar,True
 tequisquiapan,2010,tarifa_millar,True
 tequisquiapan,2011,tarifa_millar,True
 tequisquiapan,2012,tarifa_millar,True

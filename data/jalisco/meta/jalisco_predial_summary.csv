@@ -40,13 +40,13 @@ ahualulco_de_mercado,Ahualulco De Mercado,2015,tarifa_millar,True,4,0,0,0,0,,dat
 ahualulco_de_mercado,Ahualulco De Mercado,2016,tarifa_millar,True,4,0,0,0,0,,data\jalisco\json_predial\2016\JAL_PREDIAL_2016_ahualulco_de_mercado.json
 ahualulco_de_mercado,Ahualulco De Mercado,2017,tarifa_millar,True,4,0,0,0,0,,data\jalisco\json_predial\2017\JAL_PREDIAL_2017_ahualulco_de_mercado.json
 ahualulco_de_mercado,Ahualulco De Mercado,2018,tarifa_millar,True,4,0,0,0,0,,data\jalisco\json_predial\2018\JAL_PREDIAL_2018_ahualulco_de_mercado.json
-ahualulco_de_mercado,Ahualulco De Mercado,2019,tarifa_millar,True,4,0,0,0,0,,data\jalisco\json_predial\2019\JAL_PREDIAL_2019_ahualulco_de_mercado.json
-ahualulco_de_mercado,Ahualulco De Mercado,2020,tarifa_millar,True,4,0,0,0,0,,data\jalisco\json_predial\2020\JAL_PREDIAL_2020_ahualulco_de_mercado.json
-ahualulco_de_mercado,Ahualulco De Mercado,2021,tarifa_millar,False,1,0,0,0,0,cambio_brusco_n_filas_4_a_1,data\jalisco\json_predial\2021\JAL_PREDIAL_2021_ahualulco_de_mercado.json
-ahualulco_de_mercado,Ahualulco De Mercado,2022,tarifa_millar,True,4,0,0,0,0,cambio_brusco_n_filas_1_a_4,data\jalisco\json_predial\2022\JAL_PREDIAL_2022_ahualulco_de_mercado.json
+ahualulco_de_mercado,Ahualulco De Mercado,2019,tarifa_millar,True,1,0,3,0,0,cambio_brusco_n_filas_4_a_1|tipo_tarifa_millar_con_tabla_tasa_unica_no_vacia,data\jalisco\json_predial\2019\JAL_PREDIAL_2019_ahualulco_de_mercado.json
+ahualulco_de_mercado,Ahualulco De Mercado,2020,tarifa_millar,True,4,0,0,0,0,cambio_brusco_n_filas_1_a_4,data\jalisco\json_predial\2020\JAL_PREDIAL_2020_ahualulco_de_mercado.json
+ahualulco_de_mercado,Ahualulco De Mercado,2021,tarifa_millar,True,4,0,0,0,0,,data\jalisco\json_predial\2021\JAL_PREDIAL_2021_ahualulco_de_mercado.json
+ahualulco_de_mercado,Ahualulco De Mercado,2022,tarifa_millar,True,4,0,0,0,0,,data\jalisco\json_predial\2022\JAL_PREDIAL_2022_ahualulco_de_mercado.json
 ahualulco_de_mercado,Ahualulco De Mercado,2023,tarifa_millar,False,4,0,0,0,0,,data\jalisco\json_predial\2023\JAL_PREDIAL_2023_ahualulco_de_mercado.json
-ahualulco_de_mercado,Ahualulco De Mercado,2024,tarifa_millar,False,4,0,0,0,0,,data\jalisco\json_predial\2024\JAL_PREDIAL_2024_ahualulco_de_mercado.json
-ahualulco_de_mercado,Ahualulco De Mercado,2025,tarifa_millar,False,4,0,0,0,0,,data\jalisco\json_predial\2025\JAL_PREDIAL_2025_ahualulco_de_mercado.json
+ahualulco_de_mercado,Ahualulco De Mercado,2024,tarifa_millar,True,4,0,0,0,0,,data\jalisco\json_predial\2024\JAL_PREDIAL_2024_ahualulco_de_mercado.json
+ahualulco_de_mercado,Ahualulco De Mercado,2025,tarifa_millar,True,4,0,0,0,0,,data\jalisco\json_predial\2025\JAL_PREDIAL_2025_ahualulco_de_mercado.json
 amacueca,Amacueca,2010,tarifa_millar,True,4,0,0,0,0,,data\jalisco\json_predial\2010\JAL_PREDIAL_2010_amacueca.json
 amacueca,Amacueca,2011,tarifa_millar,True,4,0,0,0,0,,data\jalisco\json_predial\2011\JAL_PREDIAL_2011_amacueca.json
 amacueca,Amacueca,2012,tarifa_millar,True,4,0,0,0,0,,data\jalisco\json_predial\2012\JAL_PREDIAL_2012_amacueca.json
@@ -251,8 +251,8 @@ bolanos,Bolanos,2020,tarifa_millar,True,4,0,0,0,0,,data\jalisco\json_predial\202
 bolanos,Bolanos,2021,tarifa_millar,True,4,0,0,0,0,,data\jalisco\json_predial\2021\JAL_PREDIAL_2021_bolanos.json
 bolanos,Bolanos,2022,tarifa_millar,True,4,0,0,0,0,,data\jalisco\json_predial\2022\JAL_PREDIAL_2022_bolanos.json
 bolanos,Bolanos,2023,tarifa_millar,True,4,0,0,0,0,,data\jalisco\json_predial\2023\JAL_PREDIAL_2023_bolanos.json
-bolanos,Bolanos,2024,tasa_unica,True,0,0,4,0,0,cambio_esquema_tarifa_millar_a_tasa_unica_desde_2023,data\jalisco\json_predial\2024\JAL_PREDIAL_2024_bolanos.json
-bolanos,Bolanos,2025,tarifa_millar,True,4,0,0,0,0,cambio_esquema_tasa_unica_a_tarifa_millar_desde_2024,data\jalisco\json_predial\2025\JAL_PREDIAL_2025_bolanos.json
+bolanos,Bolanos,2024,tarifa_millar,True,4,0,0,0,0,,data\jalisco\json_predial\2024\JAL_PREDIAL_2024_bolanos.json
+bolanos,Bolanos,2025,tarifa_millar,True,4,0,0,0,0,,data\jalisco\json_predial\2025\JAL_PREDIAL_2025_bolanos.json
 cabo_corrientes,Cabo Corrientes,2010,tarifa_millar,True,6,0,0,0,0,,data\jalisco\json_predial\2010\JAL_PREDIAL_2010_cabo_corrientes.json
 cabo_corrientes,Cabo Corrientes,2011,tarifa_millar,True,3,0,0,0,0,,data\jalisco\json_predial\2011\JAL_PREDIAL_2011_cabo_corrientes.json
 cabo_corrientes,Cabo Corrientes,2012,tarifa_millar,True,3,0,0,0,0,,data\jalisco\json_predial\2012\JAL_PREDIAL_2012_cabo_corrientes.json
@@ -261,8 +261,8 @@ cabo_corrientes,Cabo Corrientes,2014,tarifa_millar,True,3,0,0,0,0,,data\jalisco\
 cabo_corrientes,Cabo Corrientes,2015,tarifa_millar,True,3,0,0,0,0,,data\jalisco\json_predial\2015\JAL_PREDIAL_2015_cabo_corrientes.json
 cabo_corrientes,Cabo Corrientes,2016,tarifa_millar,True,3,0,0,0,0,,data\jalisco\json_predial\2016\JAL_PREDIAL_2016_cabo_corrientes.json
 cabo_corrientes,Cabo Corrientes,2017,tarifa_millar,True,3,0,0,0,0,,data\jalisco\json_predial\2017\JAL_PREDIAL_2017_cabo_corrientes.json
-cabo_corrientes,Cabo Corrientes,2018,tasa_unica,True,0,0,3,0,0,cambio_esquema_tarifa_millar_a_tasa_unica_desde_2017|tasa_unica_row1_unidad_no_reconocida|tasa_unica_row2_unidad_no_reconocida|tasa_unica_row3_unidad_no_reconocida,data\jalisco\json_predial\2018\JAL_PREDIAL_2018_cabo_corrientes.json
-cabo_corrientes,Cabo Corrientes,2019,tarifa_millar,True,3,0,0,0,0,cambio_esquema_tasa_unica_a_tarifa_millar_desde_2018,data\jalisco\json_predial\2019\JAL_PREDIAL_2019_cabo_corrientes.json
+cabo_corrientes,Cabo Corrientes,2018,tarifa_millar,True,3,0,0,0,0,,data\jalisco\json_predial\2018\JAL_PREDIAL_2018_cabo_corrientes.json
+cabo_corrientes,Cabo Corrientes,2019,tarifa_millar,True,3,0,0,0,0,,data\jalisco\json_predial\2019\JAL_PREDIAL_2019_cabo_corrientes.json
 cabo_corrientes,Cabo Corrientes,2020,tarifa_millar,True,3,0,0,0,0,,data\jalisco\json_predial\2020\JAL_PREDIAL_2020_cabo_corrientes.json
 cabo_corrientes,Cabo Corrientes,2021,tarifa_millar,True,3,0,0,0,0,,data\jalisco\json_predial\2021\JAL_PREDIAL_2021_cabo_corrientes.json
 cabo_corrientes,Cabo Corrientes,2022,tarifa_millar,True,3,0,0,0,0,,data\jalisco\json_predial\2022\JAL_PREDIAL_2022_cabo_corrientes.json
@@ -313,8 +313,8 @@ chapala,Chapala,2019,tarifa_millar,True,3,0,0,0,0,,data\jalisco\json_predial\201
 chapala,Chapala,2020,tarifa_millar,True,3,0,0,0,0,,data\jalisco\json_predial\2020\JAL_PREDIAL_2020_chapala.json
 chapala,Chapala,2021,tarifa_millar,True,3,0,0,0,0,,data\jalisco\json_predial\2021\JAL_PREDIAL_2021_chapala.json
 chapala,Chapala,2023,tarifa_millar,True,3,0,0,0,0,,data\jalisco\json_predial\2023\JAL_PREDIAL_2023_chapala.json
-chapala,Chapala,2024,tasa_unica,True,0,0,3,0,0,cambio_esquema_tarifa_millar_a_tasa_unica_desde_2023,data\jalisco\json_predial\2024\JAL_PREDIAL_2024_chapala.json
-chapala,Chapala,2025,tarifa_millar,True,3,0,0,0,0,cambio_esquema_tasa_unica_a_tarifa_millar_desde_2024,data\jalisco\json_predial\2025\JAL_PREDIAL_2025_chapala.json
+chapala,Chapala,2024,tarifa_millar,True,3,0,0,0,0,,data\jalisco\json_predial\2024\JAL_PREDIAL_2024_chapala.json
+chapala,Chapala,2025,tarifa_millar,True,3,0,0,0,0,,data\jalisco\json_predial\2025\JAL_PREDIAL_2025_chapala.json
 chimaltitan,Chimaltitan,2010,tarifa_millar,True,12,0,0,0,0,,data\jalisco\json_predial\2010\JAL_PREDIAL_2010_chimaltitan.json
 chimaltitan,Chimaltitan,2011,tarifa_millar,True,12,0,0,0,0,,data\jalisco\json_predial\2011\JAL_PREDIAL_2011_chimaltitan.json
 chimaltitan,Chimaltitan,2012,tarifa_millar,True,12,0,0,0,0,,data\jalisco\json_predial\2012\JAL_PREDIAL_2012_chimaltitan.json
@@ -376,8 +376,8 @@ cocula,Cocula,2020,tarifa_millar,True,4,0,0,0,0,,data\jalisco\json_predial\2020\
 cocula,Cocula,2021,tarifa_millar,True,4,0,0,0,0,,data\jalisco\json_predial\2021\JAL_PREDIAL_2021_cocula.json
 cocula,Cocula,2022,tarifa_millar,True,4,0,0,0,0,,data\jalisco\json_predial\2022\JAL_PREDIAL_2022_cocula.json
 cocula,Cocula,2023,tasa_unica,True,0,0,4,0,0,cambio_esquema_tarifa_millar_a_tasa_unica_desde_2022,data\jalisco\json_predial\2023\JAL_PREDIAL_2023_cocula.json
-cocula,Cocula,2024,mixto,True,0,0,0,0,3,cambio_esquema_tasa_unica_a_mixto_desde_2023|mixta_row1_columnas_vacias|mixta_row2_columnas_vacias|mixta_row3_columnas_vacias,data\jalisco\json_predial\2024\JAL_PREDIAL_2024_cocula.json
-cocula,Cocula,2025,tarifa_millar,True,4,0,0,0,0,cambio_esquema_mixto_a_tarifa_millar_desde_2024,data\jalisco\json_predial\2025\JAL_PREDIAL_2025_cocula.json
+cocula,Cocula,2024,tasa_unica,True,0,0,4,0,0,,data\jalisco\json_predial\2024\JAL_PREDIAL_2024_cocula.json
+cocula,Cocula,2025,tasa_unica,True,0,0,4,3,0,tipo_tasa_unica_con_otras_tablas_no_vacias,data\jalisco\json_predial\2025\JAL_PREDIAL_2025_cocula.json
 colotlan,Colotlan,2010,tarifa_millar,True,4,0,0,0,0,,data\jalisco\json_predial\2010\JAL_PREDIAL_2010_colotlan.json
 colotlan,Colotlan,2011,tarifa_millar,True,4,0,0,0,0,,data\jalisco\json_predial\2011\JAL_PREDIAL_2011_colotlan.json
 colotlan,Colotlan,2012,tarifa_millar,True,4,0,0,0,0,,data\jalisco\json_predial\2012\JAL_PREDIAL_2012_colotlan.json
@@ -404,7 +404,7 @@ concepcion_de_buenos_aires,Concepcion De Buenos Aires,2016,tarifa_millar,True,4,
 concepcion_de_buenos_aires,Concepcion De Buenos Aires,2017,tarifa_millar,True,4,0,0,0,0,,data\jalisco\json_predial\2017\JAL_PREDIAL_2017_concepcion_de_buenos_aires.json
 concepcion_de_buenos_aires,Concepcion De Buenos Aires,2018,tarifa_millar,True,4,0,0,0,0,,data\jalisco\json_predial\2018\JAL_PREDIAL_2018_concepcion_de_buenos_aires.json
 concepcion_de_buenos_aires,Concepcion De Buenos Aires,2019,tarifa_millar,True,4,0,0,0,0,,data\jalisco\json_predial\2019\JAL_PREDIAL_2019_concepcion_de_buenos_aires.json
-concepcion_de_buenos_aires,Concepcion De Buenos Aires,2020,tarifa_millar,False,4,0,0,0,0,,data\jalisco\json_predial\2020\JAL_PREDIAL_2020_concepcion_de_buenos_aires.json
+concepcion_de_buenos_aires,Concepcion De Buenos Aires,2020,tarifa_millar,True,4,0,0,0,0,,data\jalisco\json_predial\2020\JAL_PREDIAL_2020_concepcion_de_buenos_aires.json
 concepcion_de_buenos_aires,Concepcion De Buenos Aires,2021,tarifa_millar,True,4,0,0,0,0,,data\jalisco\json_predial\2021\JAL_PREDIAL_2021_concepcion_de_buenos_aires.json
 concepcion_de_buenos_aires,Concepcion De Buenos Aires,2022,tarifa_millar,True,4,0,0,0,0,,data\jalisco\json_predial\2022\JAL_PREDIAL_2022_concepcion_de_buenos_aires.json
 concepcion_de_buenos_aires,Concepcion De Buenos Aires,2023,progresivo,True,0,10,0,0,0,cambio_brusco_n_filas_4_a_10|cambio_esquema_tarifa_millar_a_progresivo_desde_2022,data\jalisco\json_predial\2023\JAL_PREDIAL_2023_concepcion_de_buenos_aires.json
@@ -437,8 +437,8 @@ cuautla,Cuautla,2017,tarifa_millar,True,4,0,0,0,0,,data\jalisco\json_predial\201
 cuautla,Cuautla,2018,tarifa_millar,True,4,0,0,0,0,,data\jalisco\json_predial\2018\JAL_PREDIAL_2018_cuautla.json
 cuautla,Cuautla,2019,tarifa_millar,True,4,0,0,0,0,,data\jalisco\json_predial\2019\JAL_PREDIAL_2019_cuautla.json
 cuautla,Cuautla,2020,tarifa_millar,True,4,0,0,0,0,,data\jalisco\json_predial\2020\JAL_PREDIAL_2020_cuautla.json
-cuautla,Cuautla,2021,tasa_unica,True,0,0,4,0,0,cambio_esquema_tarifa_millar_a_tasa_unica_desde_2020|tasa_unica_row1_unidad_no_reconocida|tasa_unica_row2_unidad_no_reconocida|tasa_unica_row3_unidad_no_reconocida|tasa_unica_row4_unidad_no_reconocida,data\jalisco\json_predial\2021\JAL_PREDIAL_2021_cuautla.json
-cuautla,Cuautla,2022,tarifa_millar,True,4,0,0,0,0,cambio_esquema_tasa_unica_a_tarifa_millar_desde_2021,data\jalisco\json_predial\2022\JAL_PREDIAL_2022_cuautla.json
+cuautla,Cuautla,2021,tarifa_millar,True,4,0,0,0,0,,data\jalisco\json_predial\2021\JAL_PREDIAL_2021_cuautla.json
+cuautla,Cuautla,2022,tarifa_millar,True,4,0,0,0,0,,data\jalisco\json_predial\2022\JAL_PREDIAL_2022_cuautla.json
 cuautla,Cuautla,2023,tarifa_millar,True,4,0,0,0,0,,data\jalisco\json_predial\2023\JAL_PREDIAL_2023_cuautla.json
 cuautla,Cuautla,2024,tarifa_millar,True,4,0,0,0,0,,data\jalisco\json_predial\2024\JAL_PREDIAL_2024_cuautla.json
 cuautla,Cuautla,2025,tarifa_millar,True,4,0,0,0,0,,data\jalisco\json_predial\2025\JAL_PREDIAL_2025_cuautla.json
@@ -471,8 +471,8 @@ degollado,Degollado,2019,tarifa_millar,True,3,0,0,0,0,,data\jalisco\json_predial
 degollado,Degollado,2020,tarifa_millar,True,3,0,0,0,0,,data\jalisco\json_predial\2020\JAL_PREDIAL_2020_degollado.json
 degollado,Degollado,2021,tarifa_millar,True,3,0,0,0,0,,data\jalisco\json_predial\2021\JAL_PREDIAL_2021_degollado.json
 degollado,Degollado,2022,tarifa_millar,True,3,0,0,0,0,,data\jalisco\json_predial\2022\JAL_PREDIAL_2022_degollado.json
-degollado,Degollado,2023,tasa_unica,True,0,0,3,0,0,cambio_esquema_tarifa_millar_a_tasa_unica_desde_2022,data\jalisco\json_predial\2023\JAL_PREDIAL_2023_degollado.json
-degollado,Degollado,2024,tarifa_millar,True,3,0,0,0,0,cambio_esquema_tasa_unica_a_tarifa_millar_desde_2023,data\jalisco\json_predial\2024\JAL_PREDIAL_2024_degollado.json
+degollado,Degollado,2023,tarifa_millar,True,3,0,0,0,0,,data\jalisco\json_predial\2023\JAL_PREDIAL_2023_degollado.json
+degollado,Degollado,2024,tarifa_millar,True,3,0,0,0,0,,data\jalisco\json_predial\2024\JAL_PREDIAL_2024_degollado.json
 ejutla,Ejutla,2010,tarifa_millar,True,4,0,0,0,0,,data\jalisco\json_predial\2010\JAL_PREDIAL_2010_ejutla.json
 ejutla,Ejutla,2011,tarifa_millar,True,4,0,0,0,0,,data\jalisco\json_predial\2011\JAL_PREDIAL_2011_ejutla.json
 ejutla,Ejutla,2012,tarifa_millar,True,4,0,0,0,0,,data\jalisco\json_predial\2012\JAL_PREDIAL_2012_ejutla.json
@@ -508,8 +508,8 @@ el_grullo,El Grullo,2010,tarifa_millar,True,4,0,0,0,0,,data\jalisco\json_predial
 el_grullo,El Grullo,2011,tarifa_millar,True,4,0,0,0,0,,data\jalisco\json_predial\2011\JAL_PREDIAL_2011_el_grullo.json
 el_grullo,El Grullo,2012,tarifa_millar,True,4,0,0,0,0,,data\jalisco\json_predial\2012\JAL_PREDIAL_2012_el_grullo.json
 el_grullo,El Grullo,2013,tarifa_millar,True,4,0,0,0,0,,data\jalisco\json_predial\2013\JAL_PREDIAL_2013_el_grullo.json
-el_grullo,El Grullo,2014,tasa_unica,True,0,0,4,2,0,cambio_esquema_tarifa_millar_a_tasa_unica_desde_2013|tasa_unica_row1_unidad_no_reconocida|tasa_unica_row2_unidad_no_reconocida|tasa_unica_row3_unidad_no_reconocida|tasa_unica_row4_unidad_no_reconocida|tipo_tasa_unica_con_otras_tablas_no_vacias,data\jalisco\json_predial\2014\JAL_PREDIAL_2014_el_grullo.json
-el_grullo,El Grullo,2015,tarifa_millar,True,4,0,0,0,0,cambio_esquema_tasa_unica_a_tarifa_millar_desde_2014,data\jalisco\json_predial\2015\JAL_PREDIAL_2015_el_grullo.json
+el_grullo,El Grullo,2014,tarifa_millar,True,4,0,0,0,0,,data\jalisco\json_predial\2014\JAL_PREDIAL_2014_el_grullo.json
+el_grullo,El Grullo,2015,tarifa_millar,True,4,0,0,0,0,,data\jalisco\json_predial\2015\JAL_PREDIAL_2015_el_grullo.json
 el_grullo,El Grullo,2016,tarifa_millar,True,4,0,0,0,0,,data\jalisco\json_predial\2016\JAL_PREDIAL_2016_el_grullo.json
 el_grullo,El Grullo,2017,tarifa_millar,True,4,0,0,0,0,,data\jalisco\json_predial\2017\JAL_PREDIAL_2017_el_grullo.json
 el_grullo,El Grullo,2018,tarifa_millar,True,4,0,0,0,0,,data\jalisco\json_predial\2018\JAL_PREDIAL_2018_el_grullo.json
@@ -535,7 +535,7 @@ el_limon,El Limon,2021,tarifa_millar,True,9,0,0,0,0,,data\jalisco\json_predial\2
 el_limon,El Limon,2022,tarifa_millar,True,9,0,0,0,0,,data\jalisco\json_predial\2022\JAL_PREDIAL_2022_el_limon.json
 el_limon,El Limon,2023,tarifa_millar,True,9,0,0,0,0,,data\jalisco\json_predial\2023\JAL_PREDIAL_2023_el_limon.json
 el_limon,El Limon,2024,tarifa_millar,True,9,0,0,0,0,,data\jalisco\json_predial\2024\JAL_PREDIAL_2024_el_limon.json
-el_limon,El Limon,2025,desconocido,False,0,0,0,0,0,,data\jalisco\json_predial\2025\JAL_PREDIAL_2025_el_limon.json
+el_limon,El Limon,2025,tarifa_millar,True,9,0,0,0,0,,data\jalisco\json_predial\2025\JAL_PREDIAL_2025_el_limon.json
 el_salto,El Salto,2010,tarifa_millar,True,5,0,0,0,0,,data\jalisco\json_predial\2010\JAL_PREDIAL_2010_el_salto.json
 el_salto,El Salto,2011,tarifa_millar,True,5,0,0,0,0,,data\jalisco\json_predial\2011\JAL_PREDIAL_2011_el_salto.json
 el_salto,El Salto,2012,tarifa_millar,True,5,0,0,0,0,,data\jalisco\json_predial\2012\JAL_PREDIAL_2012_el_salto.json
@@ -692,7 +692,7 @@ ixtlahuacan_de_los_membrillos,Ixtlahuacan De Los Membrillos,2018,tarifa_millar,T
 ixtlahuacan_de_los_membrillos,Ixtlahuacan De Los Membrillos,2019,tarifa_millar,True,9,0,0,0,0,,data\jalisco\json_predial\2019\JAL_PREDIAL_2019_ixtlahuacan_de_los_membrillos.json
 ixtlahuacan_de_los_membrillos,Ixtlahuacan De Los Membrillos,2020,tarifa_millar,True,10,0,0,0,0,,data\jalisco\json_predial\2020\JAL_PREDIAL_2020_ixtlahuacan_de_los_membrillos.json
 ixtlahuacan_de_los_membrillos,Ixtlahuacan De Los Membrillos,2021,tarifa_millar,True,10,0,0,0,0,,data\jalisco\json_predial\2021\JAL_PREDIAL_2021_ixtlahuacan_de_los_membrillos.json
-ixtlahuacan_de_los_membrillos,Ixtlahuacan De Los Membrillos,2022,tarifa_millar,False,10,0,0,0,0,,data\jalisco\json_predial\2022\JAL_PREDIAL_2022_ixtlahuacan_de_los_membrillos.json
+ixtlahuacan_de_los_membrillos,Ixtlahuacan De Los Membrillos,2022,tarifa_millar,True,10,0,0,0,0,,data\jalisco\json_predial\2022\JAL_PREDIAL_2022_ixtlahuacan_de_los_membrillos.json
 ixtlahuacan_de_los_membrillos,Ixtlahuacan De Los Membrillos,2023,tarifa_millar,True,10,0,0,0,0,,data\jalisco\json_predial\2023\JAL_PREDIAL_2023_ixtlahuacan_de_los_membrillos.json
 ixtlahuacan_de_los_membrillos,Ixtlahuacan De Los Membrillos,2024,tarifa_millar,True,10,0,0,0,0,,data\jalisco\json_predial\2024\JAL_PREDIAL_2024_ixtlahuacan_de_los_membrillos.json
 ixtlahuacan_de_los_membrillos,Ixtlahuacan De Los Membrillos,2025,progresivo,True,0,10,0,0,0,cambio_esquema_tarifa_millar_a_progresivo_desde_2024|prog_row5_hueco_con_anterior,data\jalisco\json_predial\2025\JAL_PREDIAL_2025_ixtlahuacan_de_los_membrillos.json
@@ -735,14 +735,14 @@ jamay,Jamay,2014,tarifa_millar,True,4,0,0,0,0,,data\jalisco\json_predial\2014\JA
 jamay,Jamay,2015,tarifa_millar,True,4,0,0,0,0,,data\jalisco\json_predial\2015\JAL_PREDIAL_2015_jamay.json
 jamay,Jamay,2016,tarifa_millar,True,4,0,0,0,0,,data\jalisco\json_predial\2016\JAL_PREDIAL_2016_jamay.json
 jamay,Jamay,2017,tarifa_millar,True,4,0,0,0,0,,data\jalisco\json_predial\2017\JAL_PREDIAL_2017_jamay.json
-jamay,Jamay,2018,tasa_unica,True,0,0,4,0,0,cambio_esquema_tarifa_millar_a_tasa_unica_desde_2017,data\jalisco\json_predial\2018\JAL_PREDIAL_2018_jamay.json
-jamay,Jamay,2019,tarifa_millar,True,4,0,0,0,0,cambio_esquema_tasa_unica_a_tarifa_millar_desde_2018,data\jalisco\json_predial\2019\JAL_PREDIAL_2019_jamay.json
+jamay,Jamay,2018,tarifa_millar,True,4,0,0,0,0,,data\jalisco\json_predial\2018\JAL_PREDIAL_2018_jamay.json
+jamay,Jamay,2019,tarifa_millar,True,4,0,0,0,0,,data\jalisco\json_predial\2019\JAL_PREDIAL_2019_jamay.json
 jamay,Jamay,2020,tarifa_millar,True,4,0,0,0,0,,data\jalisco\json_predial\2020\JAL_PREDIAL_2020_jamay.json
 jamay,Jamay,2021,tarifa_millar,True,4,0,0,0,0,,data\jalisco\json_predial\2021\JAL_PREDIAL_2021_jamay.json
 jamay,Jamay,2022,tarifa_millar,True,4,0,0,0,0,,data\jalisco\json_predial\2022\JAL_PREDIAL_2022_jamay.json
-jamay,Jamay,2023,mixto,True,0,0,0,0,4,cambio_esquema_tarifa_millar_a_mixto_desde_2022|mixta_row1_columnas_vacias|mixta_row2_columnas_vacias|mixta_row3_columnas_vacias|mixta_row4_columnas_vacias,data\jalisco\json_predial\2023\JAL_PREDIAL_2023_jamay.json
-jamay,Jamay,2024,tasa_unica,True,0,0,4,3,0,cambio_esquema_mixto_a_tasa_unica_desde_2023|tipo_tasa_unica_con_otras_tablas_no_vacias,data\jalisco\json_predial\2024\JAL_PREDIAL_2024_jamay.json
-jamay,Jamay,2025,tasa_unica,True,0,0,4,0,0,,data\jalisco\json_predial\2025\JAL_PREDIAL_2025_jamay.json
+jamay,Jamay,2023,tasa_unica,True,0,0,4,3,0,cambio_esquema_tarifa_millar_a_tasa_unica_desde_2022|tasa_unica_row3_unidad_no_reconocida|tasa_unica_row4_unidad_no_reconocida|tipo_tasa_unica_con_otras_tablas_no_vacias,data\jalisco\json_predial\2023\JAL_PREDIAL_2023_jamay.json
+jamay,Jamay,2024,tarifa_millar,True,4,0,0,0,0,cambio_esquema_tasa_unica_a_tarifa_millar_desde_2023,data\jalisco\json_predial\2024\JAL_PREDIAL_2024_jamay.json
+jamay,Jamay,2025,tarifa_millar,True,4,0,0,0,0,,data\jalisco\json_predial\2025\JAL_PREDIAL_2025_jamay.json
 jesus_maria,Jesus Maria,2010,tarifa_millar,True,11,0,0,0,0,,data\jalisco\json_predial\2010\JAL_PREDIAL_2010_jesus_maria.json
 jesus_maria,Jesus Maria,2011,tarifa_millar,True,11,0,0,0,0,,data\jalisco\json_predial\2011\JAL_PREDIAL_2011_jesus_maria.json
 jesus_maria,Jesus Maria,2012,tarifa_millar,True,11,0,0,0,0,,data\jalisco\json_predial\2012\JAL_PREDIAL_2012_jesus_maria.json
@@ -770,7 +770,7 @@ jilotlan_de_los_dolores,Jilotlan De Los Dolores,2018,tarifa_millar,True,12,0,0,0
 jilotlan_de_los_dolores,Jilotlan De Los Dolores,2019,tarifa_millar,True,12,0,0,0,0,,data\jalisco\json_predial\2019\JAL_PREDIAL_2019_jilotlan_de_los_dolores.json
 jilotlan_de_los_dolores,Jilotlan De Los Dolores,2020,tarifa_millar,True,12,0,0,0,0,,data\jalisco\json_predial\2020\JAL_PREDIAL_2020_jilotlan_de_los_dolores.json
 jilotlan_de_los_dolores,Jilotlan De Los Dolores,2021,tarifa_millar,True,13,0,0,0,0,,data\jalisco\json_predial\2021\JAL_PREDIAL_2021_jilotlan_de_los_dolores.json
-jilotlan_de_los_dolores,Jilotlan De Los Dolores,2022,tarifa_millar,True,12,0,0,0,0,,data\jalisco\json_predial\2022\JAL_PREDIAL_2022_jilotlan_de_los_dolores.json
+jilotlan_de_los_dolores,Jilotlan De Los Dolores,2022,tarifa_millar,True,11,0,0,0,0,,data\jalisco\json_predial\2022\JAL_PREDIAL_2022_jilotlan_de_los_dolores.json
 jilotlan_de_los_dolores,Jilotlan De Los Dolores,2023,tarifa_millar,True,12,0,0,0,0,,data\jalisco\json_predial\2023\JAL_PREDIAL_2023_jilotlan_de_los_dolores.json
 jilotlan_de_los_dolores,Jilotlan De Los Dolores,2024,tarifa_millar,True,12,0,0,0,0,,data\jalisco\json_predial\2024\JAL_PREDIAL_2024_jilotlan_de_los_dolores.json
 jilotlan_de_los_dolores,Jilotlan De Los Dolores,2025,tarifa_millar,True,12,0,0,0,0,,data\jalisco\json_predial\2025\JAL_PREDIAL_2025_jilotlan_de_los_dolores.json
@@ -782,7 +782,7 @@ jocotepec,Jocotepec,2014,tarifa_millar,True,8,0,0,0,0,,data\jalisco\json_predial
 jocotepec,Jocotepec,2015,tarifa_millar,True,8,0,0,0,0,,data\jalisco\json_predial\2015\JAL_PREDIAL_2015_jocotepec.json
 jocotepec,Jocotepec,2016,tarifa_millar,True,8,0,0,0,0,,data\jalisco\json_predial\2016\JAL_PREDIAL_2016_jocotepec.json
 jocotepec,Jocotepec,2017,tarifa_millar,True,8,0,0,0,0,,data\jalisco\json_predial\2017\JAL_PREDIAL_2017_jocotepec.json
-jocotepec,Jocotepec,2018,tarifa_millar,False,7,0,0,0,0,,data\jalisco\json_predial\2018\JAL_PREDIAL_2018_jocotepec.json
+jocotepec,Jocotepec,2018,tarifa_millar,True,7,0,0,0,0,,data\jalisco\json_predial\2018\JAL_PREDIAL_2018_jocotepec.json
 jocotepec,Jocotepec,2019,tarifa_millar,True,8,0,0,0,0,,data\jalisco\json_predial\2019\JAL_PREDIAL_2019_jocotepec.json
 jocotepec,Jocotepec,2020,tarifa_millar,True,8,0,0,0,0,,data\jalisco\json_predial\2020\JAL_PREDIAL_2020_jocotepec.json
 jocotepec,Jocotepec,2021,tarifa_millar,True,8,0,0,0,0,,data\jalisco\json_predial\2021\JAL_PREDIAL_2021_jocotepec.json
@@ -876,8 +876,8 @@ lagos_de_moreno,Lagos De Moreno,2013,tarifa_millar,True,8,0,0,0,0,,data\jalisco\
 lagos_de_moreno,Lagos De Moreno,2014,tarifa_millar,True,8,0,0,0,0,,data\jalisco\json_predial\2014\JAL_PREDIAL_2014_lagos_de_moreno.json
 lagos_de_moreno,Lagos De Moreno,2015,tarifa_millar,True,8,0,0,0,0,,data\jalisco\json_predial\2015\JAL_PREDIAL_2015_lagos_de_moreno.json
 lagos_de_moreno,Lagos De Moreno,2016,tarifa_millar,True,8,0,0,0,0,,data\jalisco\json_predial\2016\JAL_PREDIAL_2016_lagos_de_moreno.json
-lagos_de_moreno,Lagos De Moreno,2017,tarifa_millar,True,6,0,2,0,0,tipo_tarifa_millar_con_tabla_tasa_unica_no_vacia,data\jalisco\json_predial\2017\JAL_PREDIAL_2017_lagos_de_moreno.json
-lagos_de_moreno,Lagos De Moreno,2018,tarifa_millar,True,6,0,2,0,0,tipo_tarifa_millar_con_tabla_tasa_unica_no_vacia,data\jalisco\json_predial\2018\JAL_PREDIAL_2018_lagos_de_moreno.json
+lagos_de_moreno,Lagos De Moreno,2017,tarifa_millar,True,6,0,0,0,0,,data\jalisco\json_predial\2017\JAL_PREDIAL_2017_lagos_de_moreno.json
+lagos_de_moreno,Lagos De Moreno,2018,tarifa_millar,True,8,0,0,0,0,,data\jalisco\json_predial\2018\JAL_PREDIAL_2018_lagos_de_moreno.json
 lagos_de_moreno,Lagos De Moreno,2019,tarifa_millar,True,8,0,0,0,0,,data\jalisco\json_predial\2019\JAL_PREDIAL_2019_lagos_de_moreno.json
 lagos_de_moreno,Lagos De Moreno,2020,tarifa_millar,True,6,0,0,0,0,,data\jalisco\json_predial\2020\JAL_PREDIAL_2020_lagos_de_moreno.json
 lagos_de_moreno,Lagos De Moreno,2021,tarifa_millar,True,8,0,0,0,0,,data\jalisco\json_predial\2021\JAL_PREDIAL_2021_lagos_de_moreno.json
@@ -1028,7 +1028,7 @@ pihuamo,Pihuamo,2021,tarifa_millar,True,4,0,0,0,0,,data\jalisco\json_predial\202
 pihuamo,Pihuamo,2022,tarifa_millar,True,4,0,0,0,0,,data\jalisco\json_predial\2022\JAL_PREDIAL_2022_pihuamo.json
 pihuamo,Pihuamo,2023,tarifa_millar,True,4,0,0,0,0,,data\jalisco\json_predial\2023\JAL_PREDIAL_2023_pihuamo.json
 pihuamo,Pihuamo,2024,tarifa_millar,True,4,0,0,0,0,,data\jalisco\json_predial\2024\JAL_PREDIAL_2024_pihuamo.json
-pihuamo,Pihuamo,2025,desconocido,False,0,0,0,0,0,,data\jalisco\json_predial\2025\JAL_PREDIAL_2025_pihuamo.json
+pihuamo,Pihuamo,2025,tarifa_millar,True,4,0,0,0,0,,data\jalisco\json_predial\2025\JAL_PREDIAL_2025_pihuamo.json
 poncitlan,Poncitlan,2010,tarifa_millar,True,3,0,0,0,0,,data\jalisco\json_predial\2010\JAL_PREDIAL_2010_poncitlan.json
 poncitlan,Poncitlan,2011,tarifa_millar,True,3,0,0,0,0,,data\jalisco\json_predial\2011\JAL_PREDIAL_2011_poncitlan.json
 poncitlan,Poncitlan,2012,tarifa_millar,True,3,0,0,0,0,,data\jalisco\json_predial\2012\JAL_PREDIAL_2012_poncitlan.json
@@ -1056,8 +1056,8 @@ puerto_vallarta,Puerto Vallarta,2018,tarifa_millar,True,5,0,0,0,0,,data\jalisco\
 puerto_vallarta,Puerto Vallarta,2019,tarifa_millar,True,5,0,0,0,0,,data\jalisco\json_predial\2019\JAL_PREDIAL_2019_puerto_vallarta.json
 puerto_vallarta,Puerto Vallarta,2020,mixto,True,4,0,0,0,10,cambio_esquema_tarifa_millar_a_mixto_desde_2019|mixta_row10_columnas_vacias|mixta_row1_columnas_vacias|mixta_row2_columnas_vacias|mixta_row3_columnas_vacias|mixta_row4_columnas_vacias|mixta_row5_columnas_vacias|mixta_row6_columnas_vacias|mixta_row7_columnas_vacias|mixta_row8_columnas_vacias|mixta_row9_columnas_vacias,data\jalisco\json_predial\2020\JAL_PREDIAL_2020_puerto_vallarta.json
 puerto_vallarta,Puerto Vallarta,2021,mixto,True,4,0,0,0,10,mixta_row1_columnas_vacias|mixta_row2_columnas_vacias|mixta_row3_columnas_vacias|mixta_row4_columnas_vacias|mixta_row5_columnas_vacias|mixta_row6_columnas_vacias|mixta_row7_columnas_vacias|mixta_row8_columnas_vacias|mixta_row9_columnas_vacias|mixta_row10_columnas_vacias,data\jalisco\json_predial\2021\JAL_PREDIAL_2021_puerto_vallarta.json
-puerto_vallarta,Puerto Vallarta,2022,mixto,True,4,10,0,0,0,cambio_brusco_n_filas_4_a_14,data\jalisco\json_predial\2022\JAL_PREDIAL_2022_puerto_vallarta.json
-puerto_vallarta,Puerto Vallarta,2023,mixto,True,4,0,0,0,10,cambio_brusco_n_filas_14_a_4|mixta_row10_columnas_vacias|mixta_row1_columnas_vacias|mixta_row2_columnas_vacias|mixta_row3_columnas_vacias|mixta_row4_columnas_vacias|mixta_row5_columnas_vacias|mixta_row6_columnas_vacias|mixta_row7_columnas_vacias|mixta_row8_columnas_vacias|mixta_row9_columnas_vacias,data\jalisco\json_predial\2023\JAL_PREDIAL_2023_puerto_vallarta.json
+puerto_vallarta,Puerto Vallarta,2022,mixto,True,4,0,0,0,10,mixta_row1_columnas_vacias|mixta_row2_columnas_vacias|mixta_row3_columnas_vacias|mixta_row4_columnas_vacias|mixta_row5_columnas_vacias|mixta_row6_columnas_vacias|mixta_row7_columnas_vacias|mixta_row8_columnas_vacias|mixta_row9_columnas_vacias|mixta_row10_columnas_vacias,data\jalisco\json_predial\2022\JAL_PREDIAL_2022_puerto_vallarta.json
+puerto_vallarta,Puerto Vallarta,2023,mixto,True,4,0,0,0,10,mixta_row1_columnas_vacias|mixta_row2_columnas_vacias|mixta_row3_columnas_vacias|mixta_row4_columnas_vacias|mixta_row5_columnas_vacias|mixta_row6_columnas_vacias|mixta_row7_columnas_vacias|mixta_row8_columnas_vacias|mixta_row9_columnas_vacias|mixta_row10_columnas_vacias,data\jalisco\json_predial\2023\JAL_PREDIAL_2023_puerto_vallarta.json
 puerto_vallarta,Puerto Vallarta,2024,mixto,True,4,0,0,0,10,mixta_row1_columnas_vacias|mixta_row2_columnas_vacias|mixta_row3_columnas_vacias|mixta_row4_columnas_vacias|mixta_row5_columnas_vacias|mixta_row6_columnas_vacias|mixta_row7_columnas_vacias|mixta_row8_columnas_vacias|mixta_row9_columnas_vacias|mixta_row10_columnas_vacias,data\jalisco\json_predial\2024\JAL_PREDIAL_2024_puerto_vallarta.json
 puerto_vallarta,Puerto Vallarta,2025,mixto,True,4,0,0,0,10,mixta_row1_columnas_vacias|mixta_row2_columnas_vacias|mixta_row3_columnas_vacias|mixta_row4_columnas_vacias|mixta_row5_columnas_vacias|mixta_row6_columnas_vacias|mixta_row7_columnas_vacias|mixta_row8_columnas_vacias|mixta_row9_columnas_vacias|mixta_row10_columnas_vacias,data\jalisco\json_predial\2025\JAL_PREDIAL_2025_puerto_vallarta.json
 quitupan,Quitupan,2010,tarifa_millar,True,3,0,0,0,0,,data\jalisco\json_predial\2010\JAL_PREDIAL_2010_quitupan.json
@@ -1114,8 +1114,8 @@ san_gabriel,San Gabriel,2013,tarifa_millar,True,12,0,0,0,0,,data\jalisco\json_pr
 san_gabriel,San Gabriel,2014,tarifa_millar,True,3,0,0,0,0,cambio_brusco_n_filas_12_a_3,data\jalisco\json_predial\2014\JAL_PREDIAL_2014_san_gabriel.json
 san_gabriel,San Gabriel,2015,tarifa_millar,True,3,0,0,0,0,,data\jalisco\json_predial\2015\JAL_PREDIAL_2015_san_gabriel.json
 san_gabriel,San Gabriel,2016,tarifa_millar,True,3,0,0,0,0,,data\jalisco\json_predial\2016\JAL_PREDIAL_2016_san_gabriel.json
-san_gabriel,San Gabriel,2017,tasa_unica,True,0,0,3,0,0,cambio_esquema_tarifa_millar_a_tasa_unica_desde_2016|tasa_unica_row1_unidad_no_reconocida|tasa_unica_row2_unidad_no_reconocida|tasa_unica_row3_unidad_no_reconocida,data\jalisco\json_predial\2017\JAL_PREDIAL_2017_san_gabriel.json
-san_gabriel,San Gabriel,2018,tarifa_millar,True,3,0,0,0,0,cambio_esquema_tasa_unica_a_tarifa_millar_desde_2017,data\jalisco\json_predial\2018\JAL_PREDIAL_2018_san_gabriel.json
+san_gabriel,San Gabriel,2017,tarifa_millar,True,3,0,0,0,0,,data\jalisco\json_predial\2017\JAL_PREDIAL_2017_san_gabriel.json
+san_gabriel,San Gabriel,2018,tarifa_millar,True,3,0,0,0,0,,data\jalisco\json_predial\2018\JAL_PREDIAL_2018_san_gabriel.json
 san_gabriel,San Gabriel,2019,tarifa_millar,True,3,0,0,0,0,,data\jalisco\json_predial\2019\JAL_PREDIAL_2019_san_gabriel.json
 san_gabriel,San Gabriel,2020,tarifa_millar,True,3,0,0,0,0,,data\jalisco\json_predial\2020\JAL_PREDIAL_2020_san_gabriel.json
 san_gabriel,San Gabriel,2021,tarifa_millar,True,3,0,0,0,0,,data\jalisco\json_predial\2021\JAL_PREDIAL_2021_san_gabriel.json
@@ -1166,9 +1166,9 @@ san_juanito_de_escobedo,San Juanito De Escobedo,2017,tarifa_millar,True,10,0,0,0
 san_juanito_de_escobedo,San Juanito De Escobedo,2018,tarifa_millar,True,12,0,0,0,0,,data\jalisco\json_predial\2018\JAL_PREDIAL_2018_san_juanito_de_escobedo.json
 san_juanito_de_escobedo,San Juanito De Escobedo,2019,tarifa_millar,True,12,0,0,0,0,,data\jalisco\json_predial\2019\JAL_PREDIAL_2019_san_juanito_de_escobedo.json
 san_juanito_de_escobedo,San Juanito De Escobedo,2020,tarifa_millar,True,10,0,0,0,0,,data\jalisco\json_predial\2020\JAL_PREDIAL_2020_san_juanito_de_escobedo.json
-san_juanito_de_escobedo,San Juanito De Escobedo,2021,tarifa_millar,False,11,0,0,0,0,,data\jalisco\json_predial\2021\JAL_PREDIAL_2021_san_juanito_de_escobedo.json
-san_juanito_de_escobedo,San Juanito De Escobedo,2022,tarifa_millar,False,12,0,0,0,0,,data\jalisco\json_predial\2022\JAL_PREDIAL_2022_san_juanito_de_escobedo.json
-san_juanito_de_escobedo,San Juanito De Escobedo,2023,tarifa_millar,False,10,0,0,0,0,,data\jalisco\json_predial\2023\JAL_PREDIAL_2023_san_juanito_de_escobedo.json
+san_juanito_de_escobedo,San Juanito De Escobedo,2021,tarifa_millar,False,12,0,0,0,0,,data\jalisco\json_predial\2021\JAL_PREDIAL_2021_san_juanito_de_escobedo.json
+san_juanito_de_escobedo,San Juanito De Escobedo,2022,tarifa_millar,True,11,0,0,0,0,,data\jalisco\json_predial\2022\JAL_PREDIAL_2022_san_juanito_de_escobedo.json
+san_juanito_de_escobedo,San Juanito De Escobedo,2023,tarifa_millar,True,11,0,0,0,0,,data\jalisco\json_predial\2023\JAL_PREDIAL_2023_san_juanito_de_escobedo.json
 san_juanito_de_escobedo,San Juanito De Escobedo,2024,tarifa_millar,True,11,0,0,0,0,,data\jalisco\json_predial\2024\JAL_PREDIAL_2024_san_juanito_de_escobedo.json
 san_juanito_de_escobedo,San Juanito De Escobedo,2025,tarifa_millar,True,12,0,0,0,0,,data\jalisco\json_predial\2025\JAL_PREDIAL_2025_san_juanito_de_escobedo.json
 san_julian,San Julian,2010,tarifa_millar,True,4,0,0,0,0,,data\jalisco\json_predial\2010\JAL_PREDIAL_2010_san_julian.json
@@ -1208,7 +1208,7 @@ san_martin_de_bolanos,San Martin De Bolanos,2011,tarifa_millar,True,4,0,0,0,0,,d
 san_martin_de_bolanos,San Martin De Bolanos,2012,tarifa_millar,True,4,0,0,0,0,,data\jalisco\json_predial\2012\JAL_PREDIAL_2012_san_martin_de_bolanos.json
 san_martin_de_bolanos,San Martin De Bolanos,2013,tarifa_millar,True,4,0,0,0,0,,data\jalisco\json_predial\2013\JAL_PREDIAL_2013_san_martin_de_bolanos.json
 san_martin_de_bolanos,San Martin De Bolanos,2014,tarifa_millar,True,3,0,0,0,0,,data\jalisco\json_predial\2014\JAL_PREDIAL_2014_san_martin_de_bolanos.json
-san_martin_de_bolanos,San Martin De Bolanos,2015,tarifa_millar,False,3,0,0,0,0,,data\jalisco\json_predial\2015\JAL_PREDIAL_2015_san_martin_de_bolanos.json
+san_martin_de_bolanos,San Martin De Bolanos,2015,desconocido,False,0,0,0,0,0,,data\jalisco\json_predial\2015\JAL_PREDIAL_2015_san_martin_de_bolanos.json
 san_martin_de_bolanos,San Martin De Bolanos,2017,desconocido,False,0,0,0,0,0,,data\jalisco\json_predial\2017\JAL_PREDIAL_2017_san_martin_de_bolanos.json
 san_martin_de_bolanos,San Martin De Bolanos,2018,tarifa_millar,False,3,0,0,0,0,,data\jalisco\json_predial\2018\JAL_PREDIAL_2018_san_martin_de_bolanos.json
 san_martin_de_bolanos,San Martin De Bolanos,2019,tarifa_millar,False,3,0,0,0,0,,data\jalisco\json_predial\2019\JAL_PREDIAL_2019_san_martin_de_bolanos.json
@@ -1326,9 +1326,9 @@ sayula,Sayula,2019,tarifa_millar,True,12,0,0,0,0,,data\jalisco\json_predial\2019
 sayula,Sayula,2020,tarifa_millar,True,12,0,0,0,0,,data\jalisco\json_predial\2020\JAL_PREDIAL_2020_sayula.json
 sayula,Sayula,2021,tarifa_millar,True,12,0,0,0,0,,data\jalisco\json_predial\2021\JAL_PREDIAL_2021_sayula.json
 sayula,Sayula,2022,progresivo,True,0,10,0,0,0,cambio_esquema_tarifa_millar_a_progresivo_desde_2021,data\jalisco\json_predial\2022\JAL_PREDIAL_2022_sayula.json
-sayula,Sayula,2023,mixto,True,0,0,1,0,10,cambio_esquema_progresivo_a_mixto_desde_2022|mixta_row10_columnas_vacias|mixta_row1_columnas_vacias|mixta_row2_columnas_vacias|mixta_row3_columnas_vacias|mixta_row4_columnas_vacias|mixta_row5_columnas_vacias|mixta_row6_columnas_vacias|mixta_row7_columnas_vacias|mixta_row8_columnas_vacias|mixta_row9_columnas_vacias|tasa_unica_row1_unidad_no_reconocida,data\jalisco\json_predial\2023\JAL_PREDIAL_2023_sayula.json
-sayula,Sayula,2024,progresivo,True,0,10,0,0,0,cambio_esquema_mixto_a_progresivo_desde_2023,data\jalisco\json_predial\2024\JAL_PREDIAL_2024_sayula.json
-sayula,Sayula,2025,mixto,True,0,0,1,0,10,cambio_esquema_progresivo_a_mixto_desde_2024|mixta_row10_columnas_vacias|mixta_row1_columnas_vacias|mixta_row2_columnas_vacias|mixta_row3_columnas_vacias|mixta_row4_columnas_vacias|mixta_row5_columnas_vacias|mixta_row6_columnas_vacias|mixta_row7_columnas_vacias|mixta_row8_columnas_vacias|mixta_row9_columnas_vacias|tasa_unica_row1_unidad_no_reconocida,data\jalisco\json_predial\2025\JAL_PREDIAL_2025_sayula.json
+sayula,Sayula,2023,progresivo,True,0,10,0,0,0,,data\jalisco\json_predial\2023\JAL_PREDIAL_2023_sayula.json
+sayula,Sayula,2024,progresivo,True,0,10,0,0,0,,data\jalisco\json_predial\2024\JAL_PREDIAL_2024_sayula.json
+sayula,Sayula,2025,mixto,True,0,10,0,0,1,cambio_esquema_progresivo_a_mixto_desde_2024|mixta_row1_columnas_vacias,data\jalisco\json_predial\2025\JAL_PREDIAL_2025_sayula.json
 tala,Tala,2010,tarifa_millar,True,4,0,0,0,0,,data\jalisco\json_predial\2010\JAL_PREDIAL_2010_tala.json
 tala,Tala,2011,tarifa_millar,True,4,0,0,0,0,,data\jalisco\json_predial\2011\JAL_PREDIAL_2011_tala.json
 tala,Tala,2012,tarifa_millar,True,4,0,0,0,0,,data\jalisco\json_predial\2012\JAL_PREDIAL_2012_tala.json
@@ -1370,18 +1370,18 @@ tamazula_de_gordiano,Tamazula De Gordiano,2015,tarifa_millar,True,12,0,0,0,0,,da
 tamazula_de_gordiano,Tamazula De Gordiano,2016,tarifa_millar,True,11,0,0,0,0,,data\jalisco\json_predial\2016\JAL_PREDIAL_2016_tamazula_de_gordiano.json
 tamazula_de_gordiano,Tamazula De Gordiano,2017,tarifa_millar,True,11,0,0,0,0,,data\jalisco\json_predial\2017\JAL_PREDIAL_2017_tamazula_de_gordiano.json
 tamazula_de_gordiano,Tamazula De Gordiano,2018,tarifa_millar,True,12,0,0,0,0,,data\jalisco\json_predial\2018\JAL_PREDIAL_2018_tamazula_de_gordiano.json
-tamazula_de_gordiano,Tamazula De Gordiano,2019,tarifa_millar,False,11,0,0,0,0,,data\jalisco\json_predial\2019\JAL_PREDIAL_2019_tamazula_de_gordiano.json
+tamazula_de_gordiano,Tamazula De Gordiano,2019,tarifa_millar,True,12,0,0,0,0,,data\jalisco\json_predial\2019\JAL_PREDIAL_2019_tamazula_de_gordiano.json
 tamazula_de_gordiano,Tamazula De Gordiano,2020,tarifa_millar,True,12,0,0,0,0,,data\jalisco\json_predial\2020\JAL_PREDIAL_2020_tamazula_de_gordiano.json
-tamazula_de_gordiano,Tamazula De Gordiano,2021,tarifa_millar,False,5,0,0,0,0,cambio_brusco_n_filas_12_a_5,data\jalisco\json_predial\2021\JAL_PREDIAL_2021_tamazula_de_gordiano.json
-tamazula_de_gordiano,Tamazula De Gordiano,2022,tarifa_millar,False,12,0,0,0,0,cambio_brusco_n_filas_5_a_12,data\jalisco\json_predial\2022\JAL_PREDIAL_2022_tamazula_de_gordiano.json
-tamazula_de_gordiano,Tamazula De Gordiano,2023,progresivo,True,0,10,0,0,0,,data\jalisco\json_predial\2023\JAL_PREDIAL_2023_tamazula_de_gordiano.json
+tamazula_de_gordiano,Tamazula De Gordiano,2021,tarifa_millar,False,1,0,0,0,0,cambio_brusco_n_filas_12_a_1,data\jalisco\json_predial\2021\JAL_PREDIAL_2021_tamazula_de_gordiano.json
+tamazula_de_gordiano,Tamazula De Gordiano,2022,tarifa_millar,True,11,0,0,0,0,cambio_brusco_n_filas_1_a_11,data\jalisco\json_predial\2022\JAL_PREDIAL_2022_tamazula_de_gordiano.json
+tamazula_de_gordiano,Tamazula De Gordiano,2023,progresivo,True,0,10,0,0,0,cambio_esquema_tarifa_millar_a_progresivo_desde_2022,data\jalisco\json_predial\2023\JAL_PREDIAL_2023_tamazula_de_gordiano.json
 tamazula_de_gordiano,Tamazula De Gordiano,2024,progresivo,True,0,10,0,0,0,,data\jalisco\json_predial\2024\JAL_PREDIAL_2024_tamazula_de_gordiano.json
 tamazula_de_gordiano,Tamazula De Gordiano,2025,progresivo,True,0,10,0,0,0,,data\jalisco\json_predial\2025\JAL_PREDIAL_2025_tamazula_de_gordiano.json
 tapalpa,Tapalpa,2010,tarifa_millar,True,12,0,0,0,0,,data\jalisco\json_predial\2010\JAL_PREDIAL_2010_tapalpa.json
 tapalpa,Tapalpa,2011,tarifa_millar,True,12,0,0,0,0,,data\jalisco\json_predial\2011\JAL_PREDIAL_2011_tapalpa.json
 tapalpa,Tapalpa,2012,tarifa_millar,True,12,0,0,0,0,,data\jalisco\json_predial\2012\JAL_PREDIAL_2012_tapalpa.json
-tapalpa,Tapalpa,2013,tarifa_millar,False,10,0,0,0,0,,data\jalisco\json_predial\2013\JAL_PREDIAL_2013_tapalpa.json
-tapalpa,Tapalpa,2014,tarifa_millar,False,11,0,0,0,0,,data\jalisco\json_predial\2014\JAL_PREDIAL_2014_tapalpa.json
+tapalpa,Tapalpa,2013,tarifa_millar,True,11,0,0,0,0,,data\jalisco\json_predial\2013\JAL_PREDIAL_2013_tapalpa.json
+tapalpa,Tapalpa,2014,tarifa_millar,True,12,0,0,0,0,,data\jalisco\json_predial\2014\JAL_PREDIAL_2014_tapalpa.json
 tapalpa,Tapalpa,2015,tarifa_millar,True,12,0,0,0,0,,data\jalisco\json_predial\2015\JAL_PREDIAL_2015_tapalpa.json
 tapalpa,Tapalpa,2016,tarifa_millar,True,12,0,0,0,0,,data\jalisco\json_predial\2016\JAL_PREDIAL_2016_tapalpa.json
 tapalpa,Tapalpa,2017,tarifa_millar,True,11,0,0,0,0,,data\jalisco\json_predial\2017\JAL_PREDIAL_2017_tapalpa.json
@@ -1439,7 +1439,7 @@ tecolotlan,Tecolotlan,2020,tasa_unica,True,0,0,3,0,0,cambio_esquema_tarifa_milla
 tecolotlan,Tecolotlan,2021,tarifa_millar,True,3,0,0,0,0,cambio_esquema_tasa_unica_a_tarifa_millar_desde_2020,data\jalisco\json_predial\2021\JAL_PREDIAL_2021_tecolotlan.json
 tecolotlan,Tecolotlan,2022,tarifa_millar,True,3,0,0,0,0,,data\jalisco\json_predial\2022\JAL_PREDIAL_2022_tecolotlan.json
 tecolotlan,Tecolotlan,2023,tarifa_millar,True,3,0,0,0,0,,data\jalisco\json_predial\2023\JAL_PREDIAL_2023_tecolotlan.json
-tecolotlan,Tecolotlan,2025,tasa_unica,True,0,0,3,2,0,cambio_esquema_tarifa_millar_a_tasa_unica_desde_2023|tasa_unica_row1_unidad_no_reconocida|tasa_unica_row2_unidad_no_reconocida|tasa_unica_row3_unidad_no_reconocida|tipo_tasa_unica_con_otras_tablas_no_vacias,data\jalisco\json_predial\2025\JAL_PREDIAL_2025_tecolotlan.json
+tecolotlan,Tecolotlan,2025,tarifa_millar,True,3,0,0,0,0,,data\jalisco\json_predial\2025\JAL_PREDIAL_2025_tecolotlan.json
 tenamaxtlan,Tenamaxtlan,2010,tarifa_millar,True,3,0,0,0,0,,data\jalisco\json_predial\2010\JAL_PREDIAL_2010_tenamaxtlan.json
 tenamaxtlan,Tenamaxtlan,2011,tarifa_millar,True,3,0,0,0,0,,data\jalisco\json_predial\2011\JAL_PREDIAL_2011_tenamaxtlan.json
 tenamaxtlan,Tenamaxtlan,2012,tarifa_millar,True,3,0,0,0,0,,data\jalisco\json_predial\2012\JAL_PREDIAL_2012_tenamaxtlan.json
@@ -1476,13 +1476,13 @@ teocuitatlan_de_corona,Teocuitatlan De Corona,2011,tarifa_millar,True,4,0,0,0,0,
 teocuitatlan_de_corona,Teocuitatlan De Corona,2013,tarifa_millar,True,5,0,0,0,0,,data\jalisco\json_predial\2013\JAL_PREDIAL_2013_teocuitatlan_de_corona.json
 teocuitatlan_de_corona,Teocuitatlan De Corona,2014,tarifa_millar,True,5,0,0,0,0,,data\jalisco\json_predial\2014\JAL_PREDIAL_2014_teocuitatlan_de_corona.json
 teocuitatlan_de_corona,Teocuitatlan De Corona,2015,tarifa_millar,True,5,0,0,0,0,,data\jalisco\json_predial\2015\JAL_PREDIAL_2015_teocuitatlan_de_corona.json
-teocuitatlan_de_corona,Teocuitatlan De Corona,2016,desconocido,False,0,0,0,0,0,,data\jalisco\json_predial\2016\JAL_PREDIAL_2016_teocuitatlan_de_corona.json
-teocuitatlan_de_corona,Teocuitatlan De Corona,2017,desconocido,False,0,0,0,0,0,,data\jalisco\json_predial\2017\JAL_PREDIAL_2017_teocuitatlan_de_corona.json
+teocuitatlan_de_corona,Teocuitatlan De Corona,2016,tarifa_millar,False,5,0,0,0,0,,data\jalisco\json_predial\2016\JAL_PREDIAL_2016_teocuitatlan_de_corona.json
+teocuitatlan_de_corona,Teocuitatlan De Corona,2017,tarifa_millar,True,5,0,0,0,0,,data\jalisco\json_predial\2017\JAL_PREDIAL_2017_teocuitatlan_de_corona.json
 teocuitatlan_de_corona,Teocuitatlan De Corona,2018,tarifa_millar,False,5,0,0,0,0,,data\jalisco\json_predial\2018\JAL_PREDIAL_2018_teocuitatlan_de_corona.json
-teocuitatlan_de_corona,Teocuitatlan De Corona,2019,tasa_unica,True,0,0,4,0,0,tasa_unica_row1_unidad_no_reconocida|tasa_unica_row2_unidad_no_reconocida|tasa_unica_row3_unidad_no_reconocida|tasa_unica_row4_unidad_no_reconocida,data\jalisco\json_predial\2019\JAL_PREDIAL_2019_teocuitatlan_de_corona.json
-teocuitatlan_de_corona,Teocuitatlan De Corona,2020,tasa_unica,False,0,0,0,0,0,tipo_tasa_unica_sin_filas,data\jalisco\json_predial\2020\JAL_PREDIAL_2020_teocuitatlan_de_corona.json
+teocuitatlan_de_corona,Teocuitatlan De Corona,2019,tarifa_millar,False,5,0,0,0,0,,data\jalisco\json_predial\2019\JAL_PREDIAL_2019_teocuitatlan_de_corona.json
+teocuitatlan_de_corona,Teocuitatlan De Corona,2020,tarifa_millar,True,5,0,0,0,0,,data\jalisco\json_predial\2020\JAL_PREDIAL_2020_teocuitatlan_de_corona.json
 teocuitatlan_de_corona,Teocuitatlan De Corona,2021,tarifa_millar,False,5,0,0,0,0,,data\jalisco\json_predial\2021\JAL_PREDIAL_2021_teocuitatlan_de_corona.json
-teocuitatlan_de_corona,Teocuitatlan De Corona,2022,desconocido,False,0,0,0,0,0,,data\jalisco\json_predial\2022\JAL_PREDIAL_2022_teocuitatlan_de_corona.json
+teocuitatlan_de_corona,Teocuitatlan De Corona,2022,tarifa_millar,False,5,0,0,0,0,,data\jalisco\json_predial\2022\JAL_PREDIAL_2022_teocuitatlan_de_corona.json
 teocuitatlan_de_corona,Teocuitatlan De Corona,2023,tarifa_millar,True,5,0,0,0,0,,data\jalisco\json_predial\2023\JAL_PREDIAL_2023_teocuitatlan_de_corona.json
 teocuitatlan_de_corona,Teocuitatlan De Corona,2024,tarifa_millar,True,5,0,0,0,0,,data\jalisco\json_predial\2024\JAL_PREDIAL_2024_teocuitatlan_de_corona.json
 teocuitatlan_de_corona,Teocuitatlan De Corona,2025,tarifa_millar,True,5,0,0,0,0,,data\jalisco\json_predial\2025\JAL_PREDIAL_2025_teocuitatlan_de_corona.json
@@ -1562,10 +1562,10 @@ tlajomulco_de_zuniga,Tlajomulco De Zuniga,2018,tarifa_millar,True,3,0,0,0,0,,dat
 tlajomulco_de_zuniga,Tlajomulco De Zuniga,2019,tarifa_millar,True,3,0,0,0,0,,data\jalisco\json_predial\2019\JAL_PREDIAL_2019_tlajomulco_de_zuniga.json
 tlajomulco_de_zuniga,Tlajomulco De Zuniga,2020,tarifa_millar,True,3,0,0,0,0,,data\jalisco\json_predial\2020\JAL_PREDIAL_2020_tlajomulco_de_zuniga.json
 tlajomulco_de_zuniga,Tlajomulco De Zuniga,2021,tarifa_millar,True,3,0,0,0,0,,data\jalisco\json_predial\2021\JAL_PREDIAL_2021_tlajomulco_de_zuniga.json
-tlajomulco_de_zuniga,Tlajomulco De Zuniga,2022,mixto,True,1,0,0,0,10,cambio_brusco_n_filas_3_a_1|cambio_esquema_tarifa_millar_a_mixto_desde_2021|mixta_row10_columnas_vacias|mixta_row1_columnas_vacias|mixta_row2_columnas_vacias|mixta_row3_columnas_vacias|mixta_row4_columnas_vacias|mixta_row5_columnas_vacias|mixta_row6_columnas_vacias|mixta_row7_columnas_vacias|mixta_row8_columnas_vacias|mixta_row9_columnas_vacias,data\jalisco\json_predial\2022\JAL_PREDIAL_2022_tlajomulco_de_zuniga.json
-tlajomulco_de_zuniga,Tlajomulco De Zuniga,2023,progresivo,True,1,10,0,0,0,cambio_brusco_n_filas_1_a_11|cambio_esquema_mixto_a_progresivo_desde_2022|tipo_progresivo_con_tabla_tarifa_no_vacia,data\jalisco\json_predial\2023\JAL_PREDIAL_2023_tlajomulco_de_zuniga.json
+tlajomulco_de_zuniga,Tlajomulco De Zuniga,2022,progresivo,True,1,10,0,0,0,cambio_brusco_n_filas_3_a_11|cambio_esquema_tarifa_millar_a_progresivo_desde_2021|tipo_progresivo_con_tabla_tarifa_no_vacia,data\jalisco\json_predial\2022\JAL_PREDIAL_2022_tlajomulco_de_zuniga.json
+tlajomulco_de_zuniga,Tlajomulco De Zuniga,2023,progresivo,True,1,10,0,0,0,tipo_progresivo_con_tabla_tarifa_no_vacia,data\jalisco\json_predial\2023\JAL_PREDIAL_2023_tlajomulco_de_zuniga.json
 tlajomulco_de_zuniga,Tlajomulco De Zuniga,2024,progresivo,True,1,10,0,0,0,tipo_progresivo_con_tabla_tarifa_no_vacia,data\jalisco\json_predial\2024\JAL_PREDIAL_2024_tlajomulco_de_zuniga.json
-tlajomulco_de_zuniga,Tlajomulco De Zuniga,2025,mixto,True,1,0,0,0,10,cambio_brusco_n_filas_11_a_1|cambio_esquema_progresivo_a_mixto_desde_2024|mixta_row10_columnas_vacias|mixta_row1_columnas_vacias|mixta_row2_columnas_vacias|mixta_row3_columnas_vacias|mixta_row4_columnas_vacias|mixta_row5_columnas_vacias|mixta_row6_columnas_vacias|mixta_row7_columnas_vacias|mixta_row8_columnas_vacias|mixta_row9_columnas_vacias,data\jalisco\json_predial\2025\JAL_PREDIAL_2025_tlajomulco_de_zuniga.json
+tlajomulco_de_zuniga,Tlajomulco De Zuniga,2025,progresivo,True,1,10,0,0,0,tipo_progresivo_con_tabla_tarifa_no_vacia,data\jalisco\json_predial\2025\JAL_PREDIAL_2025_tlajomulco_de_zuniga.json
 toliman,Toliman,2010,tarifa_millar,True,12,0,0,0,0,,data\jalisco\json_predial\2010\JAL_PREDIAL_2010_toliman.json
 toliman,Toliman,2011,tarifa_millar,True,12,0,0,0,0,,data\jalisco\json_predial\2011\JAL_PREDIAL_2011_toliman.json
 toliman,Toliman,2012,tarifa_millar,True,12,0,0,0,0,,data\jalisco\json_predial\2012\JAL_PREDIAL_2012_toliman.json
@@ -1593,24 +1593,24 @@ tomatlan,Tomatlan,2018,tarifa_millar,True,3,0,0,0,0,,data\jalisco\json_predial\2
 tomatlan,Tomatlan,2019,tarifa_millar,True,3,0,0,0,0,,data\jalisco\json_predial\2019\JAL_PREDIAL_2019_tomatlan.json
 tomatlan,Tomatlan,2020,tarifa_millar,True,3,0,0,0,0,,data\jalisco\json_predial\2020\JAL_PREDIAL_2020_tomatlan.json
 tomatlan,Tomatlan,2021,tarifa_millar,True,3,0,0,0,0,,data\jalisco\json_predial\2021\JAL_PREDIAL_2021_tomatlan.json
-tomatlan,Tomatlan,2022,tasa_unica,True,0,0,3,0,0,cambio_esquema_tarifa_millar_a_tasa_unica_desde_2021|tasa_unica_row1_unidad_no_reconocida|tasa_unica_row2_unidad_no_reconocida|tasa_unica_row3_unidad_no_reconocida,data\jalisco\json_predial\2022\JAL_PREDIAL_2022_tomatlan.json
-tomatlan,Tomatlan,2023,tasa_unica,True,0,0,3,2,0,tipo_tasa_unica_con_otras_tablas_no_vacias,data\jalisco\json_predial\2023\JAL_PREDIAL_2023_tomatlan.json
-tomatlan,Tomatlan,2024,tasa_unica,True,0,0,3,0,0,,data\jalisco\json_predial\2024\JAL_PREDIAL_2024_tomatlan.json
+tomatlan,Tomatlan,2022,tarifa_millar,True,3,0,0,0,0,,data\jalisco\json_predial\2022\JAL_PREDIAL_2022_tomatlan.json
+tomatlan,Tomatlan,2023,tarifa_millar,True,3,0,0,0,0,,data\jalisco\json_predial\2023\JAL_PREDIAL_2023_tomatlan.json
+tomatlan,Tomatlan,2024,tarifa_millar,True,3,0,0,0,0,,data\jalisco\json_predial\2024\JAL_PREDIAL_2024_tomatlan.json
 tonala,Tonala,2010,tarifa_millar,True,3,0,0,0,0,,data\jalisco\json_predial\2010\JAL_PREDIAL_2010_tonala.json
-tonala,Tonala,2011,tasa_unica,True,0,0,3,0,0,cambio_esquema_tarifa_millar_a_tasa_unica_desde_2010|tasa_unica_row1_unidad_no_reconocida|tasa_unica_row2_unidad_no_reconocida|tasa_unica_row3_unidad_no_reconocida,data\jalisco\json_predial\2011\JAL_PREDIAL_2011_tonala.json
-tonala,Tonala,2012,tarifa_millar,True,3,0,0,0,0,cambio_esquema_tasa_unica_a_tarifa_millar_desde_2011,data\jalisco\json_predial\2012\JAL_PREDIAL_2012_tonala.json
-tonala,Tonala,2013,tasa_unica,True,0,0,3,2,0,cambio_esquema_tarifa_millar_a_tasa_unica_desde_2012|tasa_unica_row1_unidad_no_reconocida|tasa_unica_row2_unidad_no_reconocida|tasa_unica_row3_unidad_no_reconocida|tipo_tasa_unica_con_otras_tablas_no_vacias,data\jalisco\json_predial\2013\JAL_PREDIAL_2013_tonala.json
-tonala,Tonala,2014,tarifa_millar,True,3,0,0,0,0,cambio_esquema_tasa_unica_a_tarifa_millar_desde_2013,data\jalisco\json_predial\2014\JAL_PREDIAL_2014_tonala.json
+tonala,Tonala,2011,tarifa_millar,True,3,0,0,0,0,,data\jalisco\json_predial\2011\JAL_PREDIAL_2011_tonala.json
+tonala,Tonala,2012,tarifa_millar,True,3,0,0,0,0,,data\jalisco\json_predial\2012\JAL_PREDIAL_2012_tonala.json
+tonala,Tonala,2013,tarifa_millar,True,3,0,0,0,0,,data\jalisco\json_predial\2013\JAL_PREDIAL_2013_tonala.json
+tonala,Tonala,2014,tarifa_millar,True,3,0,0,0,0,,data\jalisco\json_predial\2014\JAL_PREDIAL_2014_tonala.json
 tonala,Tonala,2015,tarifa_millar,True,3,0,0,0,0,,data\jalisco\json_predial\2015\JAL_PREDIAL_2015_tonala.json
 tonala,Tonala,2016,tarifa_millar,True,3,0,0,0,0,,data\jalisco\json_predial\2016\JAL_PREDIAL_2016_tonala.json
 tonala,Tonala,2017,tarifa_millar,True,3,0,0,0,0,,data\jalisco\json_predial\2017\JAL_PREDIAL_2017_tonala.json
-tonala,Tonala,2018,tasa_unica,True,0,0,3,0,0,cambio_esquema_tarifa_millar_a_tasa_unica_desde_2017,data\jalisco\json_predial\2018\JAL_PREDIAL_2018_tonala.json
-tonala,Tonala,2019,tarifa_millar,True,3,0,0,0,0,cambio_esquema_tasa_unica_a_tarifa_millar_desde_2018,data\jalisco\json_predial\2019\JAL_PREDIAL_2019_tonala.json
-tonala,Tonala,2020,mixto,True,0,0,0,0,1,cambio_esquema_tarifa_millar_a_mixto_desde_2019|mixta_row1_columnas_vacias,data\jalisco\json_predial\2020\JAL_PREDIAL_2020_tonala.json
-tonala,Tonala,2021,tasa_unica,True,0,0,3,0,0,cambio_esquema_mixto_a_tasa_unica_desde_2020|tasa_unica_row1_unidad_no_reconocida|tasa_unica_row2_unidad_no_reconocida|tasa_unica_row3_unidad_no_reconocida,data\jalisco\json_predial\2021\JAL_PREDIAL_2021_tonala.json
-tonala,Tonala,2022,mixto,True,0,10,0,0,1,cambio_esquema_tasa_unica_a_mixto_desde_2021|mixta_row1_columnas_vacias|mixta_row1_inferior_vacio,data\jalisco\json_predial\2022\JAL_PREDIAL_2022_tonala.json
-tonala,Tonala,2024,mixto,True,0,11,0,0,0,,data\jalisco\json_predial\2024\JAL_PREDIAL_2024_tonala.json
-tonala,Tonala,2025,mixto,True,0,0,0,0,12,mixta_row1_columnas_vacias|mixta_row2_columnas_vacias|mixta_row3_columnas_vacias|mixta_row4_columnas_vacias|mixta_row5_columnas_vacias|mixta_row6_columnas_vacias|mixta_row7_columnas_vacias|mixta_row8_columnas_vacias|mixta_row9_columnas_vacias|mixta_row10_columnas_vacias|mixta_row11_columnas_vacias|mixta_row12_columnas_vacias,data\jalisco\json_predial\2025\JAL_PREDIAL_2025_tonala.json
+tonala,Tonala,2018,tarifa_millar,True,3,0,0,0,0,,data\jalisco\json_predial\2018\JAL_PREDIAL_2018_tonala.json
+tonala,Tonala,2019,tarifa_millar,True,3,0,0,0,0,,data\jalisco\json_predial\2019\JAL_PREDIAL_2019_tonala.json
+tonala,Tonala,2020,tarifa_millar,True,3,0,0,0,0,,data\jalisco\json_predial\2020\JAL_PREDIAL_2020_tonala.json
+tonala,Tonala,2021,tarifa_millar,True,3,0,0,0,0,,data\jalisco\json_predial\2021\JAL_PREDIAL_2021_tonala.json
+tonala,Tonala,2022,mixto,True,0,0,0,0,11,cambio_esquema_tarifa_millar_a_mixto_desde_2021|mixta_row10_columnas_vacias|mixta_row11_columnas_vacias|mixta_row1_columnas_vacias|mixta_row2_columnas_vacias|mixta_row3_columnas_vacias|mixta_row4_columnas_vacias|mixta_row5_columnas_vacias|mixta_row6_columnas_vacias|mixta_row7_columnas_vacias|mixta_row8_columnas_vacias|mixta_row9_columnas_vacias,data\jalisco\json_predial\2022\JAL_PREDIAL_2022_tonala.json
+tonala,Tonala,2024,mixto,True,0,0,0,0,12,mixta_row1_columnas_vacias|mixta_row2_columnas_vacias|mixta_row3_columnas_vacias|mixta_row4_columnas_vacias|mixta_row5_columnas_vacias|mixta_row6_columnas_vacias|mixta_row7_columnas_vacias|mixta_row8_columnas_vacias|mixta_row9_columnas_vacias|mixta_row10_columnas_vacias|mixta_row11_columnas_vacias|mixta_row12_columnas_vacias,data\jalisco\json_predial\2024\JAL_PREDIAL_2024_tonala.json
+tonala,Tonala,2025,mixto,True,0,11,0,0,0,,data\jalisco\json_predial\2025\JAL_PREDIAL_2025_tonala.json
 tonaya,Tonaya,2010,tarifa_millar,True,4,0,0,0,0,,data\jalisco\json_predial\2010\JAL_PREDIAL_2010_tonaya.json
 tonaya,Tonaya,2011,tarifa_millar,True,4,0,0,0,0,,data\jalisco\json_predial\2011\JAL_PREDIAL_2011_tonaya.json
 tonaya,Tonaya,2012,tarifa_millar,True,4,0,0,0,0,,data\jalisco\json_predial\2012\JAL_PREDIAL_2012_tonaya.json
@@ -1718,8 +1718,8 @@ tuxpan,Tuxpan,2017,tarifa_millar,True,3,0,0,0,0,,data\jalisco\json_predial\2017\
 tuxpan,Tuxpan,2018,tarifa_millar,True,3,0,0,0,0,,data\jalisco\json_predial\2018\JAL_PREDIAL_2018_tuxpan.json
 tuxpan,Tuxpan,2019,tarifa_millar,True,3,0,0,0,0,,data\jalisco\json_predial\2019\JAL_PREDIAL_2019_tuxpan.json
 tuxpan,Tuxpan,2020,tarifa_millar,True,3,0,0,0,0,,data\jalisco\json_predial\2020\JAL_PREDIAL_2020_tuxpan.json
-tuxpan,Tuxpan,2021,tasa_unica,True,0,0,3,0,0,cambio_esquema_tarifa_millar_a_tasa_unica_desde_2020|tasa_unica_row1_unidad_no_reconocida|tasa_unica_row2_unidad_no_reconocida|tasa_unica_row3_unidad_no_reconocida,data\jalisco\json_predial\2021\JAL_PREDIAL_2021_tuxpan.json
-tuxpan,Tuxpan,2022,tarifa_millar,True,3,0,0,0,0,cambio_esquema_tasa_unica_a_tarifa_millar_desde_2021,data\jalisco\json_predial\2022\JAL_PREDIAL_2022_tuxpan.json
+tuxpan,Tuxpan,2021,tarifa_millar,True,3,0,0,0,0,,data\jalisco\json_predial\2021\JAL_PREDIAL_2021_tuxpan.json
+tuxpan,Tuxpan,2022,tarifa_millar,True,3,0,0,0,0,,data\jalisco\json_predial\2022\JAL_PREDIAL_2022_tuxpan.json
 tuxpan,Tuxpan,2023,tarifa_millar,True,3,0,0,0,0,,data\jalisco\json_predial\2023\JAL_PREDIAL_2023_tuxpan.json
 tuxpan,Tuxpan,2024,tarifa_millar,True,3,0,0,0,0,,data\jalisco\json_predial\2024\JAL_PREDIAL_2024_tuxpan.json
 tuxpan,Tuxpan,2025,tarifa_millar,True,3,0,0,0,0,,data\jalisco\json_predial\2025\JAL_PREDIAL_2025_tuxpan.json
@@ -1780,8 +1780,8 @@ valle_de_juarez,Valle De Juarez,2016,tarifa_millar,True,12,0,0,0,0,,data\jalisco
 valle_de_juarez,Valle De Juarez,2017,tarifa_millar,True,12,0,0,0,0,,data\jalisco\json_predial\2017\JAL_PREDIAL_2017_valle_de_juarez.json
 valle_de_juarez,Valle De Juarez,2018,tarifa_millar,True,12,0,0,0,0,,data\jalisco\json_predial\2018\JAL_PREDIAL_2018_valle_de_juarez.json
 valle_de_juarez,Valle De Juarez,2019,tarifa_millar,True,11,0,0,0,0,,data\jalisco\json_predial\2019\JAL_PREDIAL_2019_valle_de_juarez.json
-valle_de_juarez,Valle De Juarez,2020,tarifa_millar,False,12,0,0,0,0,,data\jalisco\json_predial\2020\JAL_PREDIAL_2020_valle_de_juarez.json
-valle_de_juarez,Valle De Juarez,2021,progresivo,True,0,10,0,0,0,,data\jalisco\json_predial\2021\JAL_PREDIAL_2021_valle_de_juarez.json
+valle_de_juarez,Valle De Juarez,2020,tarifa_millar,True,12,0,0,0,0,,data\jalisco\json_predial\2020\JAL_PREDIAL_2020_valle_de_juarez.json
+valle_de_juarez,Valle De Juarez,2021,progresivo,True,0,10,0,0,0,cambio_esquema_tarifa_millar_a_progresivo_desde_2020,data\jalisco\json_predial\2021\JAL_PREDIAL_2021_valle_de_juarez.json
 valle_de_juarez,Valle De Juarez,2022,progresivo,True,0,10,0,0,0,,data\jalisco\json_predial\2022\JAL_PREDIAL_2022_valle_de_juarez.json
 valle_de_juarez,Valle De Juarez,2023,progresivo,True,0,10,0,0,0,,data\jalisco\json_predial\2023\JAL_PREDIAL_2023_valle_de_juarez.json
 valle_de_juarez,Valle De Juarez,2024,progresivo,True,0,10,0,0,0,,data\jalisco\json_predial\2024\JAL_PREDIAL_2024_valle_de_juarez.json
@@ -1843,7 +1843,7 @@ villa_purificacion,Villa Purificacion,2019,tarifa_millar,True,3,0,0,0,0,,data\ja
 villa_purificacion,Villa Purificacion,2020,tarifa_millar,True,3,0,0,0,0,,data\jalisco\json_predial\2020\JAL_PREDIAL_2020_villa_purificacion.json
 villa_purificacion,Villa Purificacion,2021,tarifa_millar,True,3,0,0,0,0,,data\jalisco\json_predial\2021\JAL_PREDIAL_2021_villa_purificacion.json
 villa_purificacion,Villa Purificacion,2022,tarifa_millar,True,3,0,0,0,0,,data\jalisco\json_predial\2022\JAL_PREDIAL_2022_villa_purificacion.json
-villa_purificacion,Villa Purificacion,2023,desconocido,False,0,0,0,0,0,,data\jalisco\json_predial\2023\JAL_PREDIAL_2023_villa_purificacion.json
+villa_purificacion,Villa Purificacion,2023,progresivo,True,0,10,0,0,0,cambio_brusco_n_filas_3_a_10|cambio_esquema_tarifa_millar_a_progresivo_desde_2022,data\jalisco\json_predial\2023\JAL_PREDIAL_2023_villa_purificacion.json
 villa_purificacion,Villa Purificacion,2024,progresivo,True,0,10,0,0,0,,data\jalisco\json_predial\2024\JAL_PREDIAL_2024_villa_purificacion.json
 villa_purificacion,Villa Purificacion,2025,progresivo,True,0,10,0,0,0,,data\jalisco\json_predial\2025\JAL_PREDIAL_2025_villa_purificacion.json
 yahualica_de_gonzalez_gallo,Yahualica De Gonzalez Gallo,2010,tarifa_millar,True,4,0,0,0,0,,data\jalisco\json_predial\2010\JAL_PREDIAL_2010_yahualica_de_gonzalez_gallo.json
@@ -1872,7 +1872,7 @@ zacoalco_de_torres,Zacoalco De Torres,2016,tarifa_millar,True,4,0,0,0,0,,data\ja
 zacoalco_de_torres,Zacoalco De Torres,2017,tarifa_millar,True,4,0,0,0,0,,data\jalisco\json_predial\2017\JAL_PREDIAL_2017_zacoalco_de_torres.json
 zacoalco_de_torres,Zacoalco De Torres,2018,tarifa_millar,True,4,0,0,0,0,,data\jalisco\json_predial\2018\JAL_PREDIAL_2018_zacoalco_de_torres.json
 zacoalco_de_torres,Zacoalco De Torres,2019,tarifa_millar,True,4,0,0,0,0,,data\jalisco\json_predial\2019\JAL_PREDIAL_2019_zacoalco_de_torres.json
-zacoalco_de_torres,Zacoalco De Torres,2020,desconocido,False,0,0,0,0,0,,data\jalisco\json_predial\2020\JAL_PREDIAL_2020_zacoalco_de_torres.json
+zacoalco_de_torres,Zacoalco De Torres,2020,tarifa_millar,True,4,0,0,0,0,,data\jalisco\json_predial\2020\JAL_PREDIAL_2020_zacoalco_de_torres.json
 zacoalco_de_torres,Zacoalco De Torres,2021,tarifa_millar,True,4,0,0,0,0,,data\jalisco\json_predial\2021\JAL_PREDIAL_2021_zacoalco_de_torres.json
 zacoalco_de_torres,Zacoalco De Torres,2022,tarifa_millar,True,4,0,0,0,0,,data\jalisco\json_predial\2022\JAL_PREDIAL_2022_zacoalco_de_torres.json
 zacoalco_de_torres,Zacoalco De Torres,2023,progresivo,True,0,10,0,0,0,cambio_brusco_n_filas_4_a_10|cambio_esquema_tarifa_millar_a_progresivo_desde_2022,data\jalisco\json_predial\2023\JAL_PREDIAL_2023_zacoalco_de_torres.json
@@ -1947,8 +1947,8 @@ zapotlan_el_grande,Zapotlan El Grande,2011,tarifa_millar,True,7,0,0,0,0,,data\ja
 zapotlan_el_grande,Zapotlan El Grande,2012,tarifa_millar,True,7,0,0,0,0,,data\jalisco\json_predial\2012\JAL_PREDIAL_2012_zapotlan_el_grande.json
 zapotlan_el_grande,Zapotlan El Grande,2013,tarifa_millar,True,7,0,0,0,0,,data\jalisco\json_predial\2013\JAL_PREDIAL_2013_zapotlan_el_grande.json
 zapotlan_el_grande,Zapotlan El Grande,2014,tarifa_millar,True,6,0,0,0,0,,data\jalisco\json_predial\2014\JAL_PREDIAL_2014_zapotlan_el_grande.json
-zapotlan_el_grande,Zapotlan El Grande,2015,tarifa_millar,False,4,0,0,0,0,,data\jalisco\json_predial\2015\JAL_PREDIAL_2015_zapotlan_el_grande.json
-zapotlan_el_grande,Zapotlan El Grande,2016,tarifa_millar,True,7,0,0,0,0,,data\jalisco\json_predial\2016\JAL_PREDIAL_2016_zapotlan_el_grande.json
+zapotlan_el_grande,Zapotlan El Grande,2015,tarifa_millar,True,3,0,0,0,0,,data\jalisco\json_predial\2015\JAL_PREDIAL_2015_zapotlan_el_grande.json
+zapotlan_el_grande,Zapotlan El Grande,2016,tarifa_millar,True,7,0,0,0,0,cambio_brusco_n_filas_3_a_7,data\jalisco\json_predial\2016\JAL_PREDIAL_2016_zapotlan_el_grande.json
 zapotlan_el_grande,Zapotlan El Grande,2017,tarifa_millar,True,7,0,0,0,0,,data\jalisco\json_predial\2017\JAL_PREDIAL_2017_zapotlan_el_grande.json
 zapotlan_el_grande,Zapotlan El Grande,2018,tarifa_millar,True,6,0,0,0,0,,data\jalisco\json_predial\2018\JAL_PREDIAL_2018_zapotlan_el_grande.json
 zapotlan_el_grande,Zapotlan El Grande,2019,tarifa_millar,True,7,0,0,0,0,,data\jalisco\json_predial\2019\JAL_PREDIAL_2019_zapotlan_el_grande.json

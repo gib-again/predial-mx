@@ -1,5 +1,5 @@
 ﻿municipio_slug,municipio_nombre,anio,tipo_esquema,esquema_valido,n_tarifa_rows,n_prog_rows,n_tasa_unica_rows,n_cuota_fija_rows,n_mixta_rows,anomalias,json_path
-amealco_de_bonfil,Amealco De Bonfil,2010,tarifa_millar,False,5,0,0,0,0,,data\queretaro\json_predial\2010\QRO_PREDIAL_2010_amealco_de_bonfil.json
+amealco_de_bonfil,Amealco De Bonfil,2010,tarifa_millar,True,5,0,0,0,0,,data\queretaro\json_predial\2010\QRO_PREDIAL_2010_amealco_de_bonfil.json
 amealco_de_bonfil,Amealco De Bonfil,2011,tarifa_millar,True,6,0,0,0,0,,data\queretaro\json_predial\2011\QRO_PREDIAL_2011_amealco_de_bonfil.json
 amealco_de_bonfil,Amealco De Bonfil,2012,tarifa_millar,True,6,0,0,0,0,,data\queretaro\json_predial\2012\QRO_PREDIAL_2012_amealco_de_bonfil.json
 amealco_de_bonfil,Amealco De Bonfil,2013,tarifa_millar,True,6,0,0,0,0,,data\queretaro\json_predial\2013\QRO_PREDIAL_2013_amealco_de_bonfil.json
@@ -9,7 +9,7 @@ amealco_de_bonfil,Amealco De Bonfil,2016,tarifa_millar,True,6,0,0,0,0,,data\quer
 amealco_de_bonfil,Amealco De Bonfil,2017,tarifa_millar,True,6,0,0,0,0,,data\queretaro\json_predial\2017\QRO_PREDIAL_2017_amealco_de_bonfil.json
 amealco_de_bonfil,Amealco De Bonfil,2018,tarifa_millar,True,6,0,0,0,0,,data\queretaro\json_predial\2018\QRO_PREDIAL_2018_amealco_de_bonfil.json
 amealco_de_bonfil,Amealco De Bonfil,2019,tarifa_millar,True,6,0,0,0,0,,data\queretaro\json_predial\2019\QRO_PREDIAL_2019_amealco_de_bonfil.json
-amealco_de_bonfil,Amealco De Bonfil,2020,tarifa_millar,True,6,0,0,0,0,,data\queretaro\json_predial\2020\QRO_PREDIAL_2020_amealco_de_bonfil.json
+amealco_de_bonfil,Amealco De Bonfil,2020,tarifa_millar,True,5,0,0,0,0,,data\queretaro\json_predial\2020\QRO_PREDIAL_2020_amealco_de_bonfil.json
 amealco_de_bonfil,Amealco De Bonfil,2021,tarifa_millar,True,6,0,0,0,0,,data\queretaro\json_predial\2021\QRO_PREDIAL_2021_amealco_de_bonfil.json
 amealco_de_bonfil,Amealco De Bonfil,2022,tarifa_millar,True,6,0,0,0,0,,data\queretaro\json_predial\2022\QRO_PREDIAL_2022_amealco_de_bonfil.json
 amealco_de_bonfil,Amealco De Bonfil,2023,tarifa_millar,True,6,0,0,0,0,,data\queretaro\json_predial\2023\QRO_PREDIAL_2023_amealco_de_bonfil.json
@@ -33,12 +33,12 @@ arroyo_seco,Arroyo Seco,2023,tarifa_millar,True,6,0,0,0,0,,data\queretaro\json_p
 arroyo_seco,Arroyo Seco,2024,tarifa_millar,True,6,0,0,0,0,,data\queretaro\json_predial\2024\QRO_PREDIAL_2024_arroyo_seco.json
 arroyo_seco,Arroyo Seco,2025,tarifa_millar,True,6,0,0,0,0,,data\queretaro\json_predial\2025\QRO_PREDIAL_2025_arroyo_seco.json
 arroyo_seco,Arroyo Seco,2026,tarifa_millar,True,6,0,0,0,0,,data\queretaro\json_predial\2026\QRO_PREDIAL_2026_arroyo_seco.json
-cadereyta,Cadereyta,2015,tarifa_millar,True,6,0,0,0,0,,data\queretaro\json_predial\2015\QRO_PREDIAL_2015_cadereyta.json
 cadereyta_de_montes,Cadereyta De Montes,2010,tarifa_millar,True,6,0,0,0,0,,data\queretaro\json_predial\2010\QRO_PREDIAL_2010_cadereyta_de_montes.json
 cadereyta_de_montes,Cadereyta De Montes,2011,tarifa_millar,True,6,0,0,0,0,,data\queretaro\json_predial\2011\QRO_PREDIAL_2011_cadereyta_de_montes.json
 cadereyta_de_montes,Cadereyta De Montes,2012,tarifa_millar,True,6,0,0,0,0,,data\queretaro\json_predial\2012\QRO_PREDIAL_2012_cadereyta_de_montes.json
 cadereyta_de_montes,Cadereyta De Montes,2013,tarifa_millar,True,6,0,0,0,0,,data\queretaro\json_predial\2013\QRO_PREDIAL_2013_cadereyta_de_montes.json
 cadereyta_de_montes,Cadereyta De Montes,2014,tarifa_millar,True,6,0,0,0,0,,data\queretaro\json_predial\2014\QRO_PREDIAL_2014_cadereyta_de_montes.json
+cadereyta_de_montes,Cadereyta De Montes,2015,tarifa_millar,True,6,0,0,0,0,,data\queretaro\json_predial\2015\QRO_PREDIAL_2015_cadereyta_de_montes.json
 cadereyta_de_montes,Cadereyta De Montes,2016,tarifa_millar,True,6,0,0,0,0,,data\queretaro\json_predial\2016\QRO_PREDIAL_2016_cadereyta_de_montes.json
 cadereyta_de_montes,Cadereyta De Montes,2017,tarifa_millar,True,6,0,0,0,0,,data\queretaro\json_predial\2017\QRO_PREDIAL_2017_cadereyta_de_montes.json
 cadereyta_de_montes,Cadereyta De Montes,2018,tarifa_millar,True,6,0,0,0,0,,data\queretaro\json_predial\2018\QRO_PREDIAL_2018_cadereyta_de_montes.json
@@ -50,21 +50,20 @@ cadereyta_de_montes,Cadereyta De Montes,2023,tarifa_millar,True,6,0,0,0,0,,data\
 cadereyta_de_montes,Cadereyta De Montes,2024,tarifa_millar,True,6,0,0,0,0,,data\queretaro\json_predial\2024\QRO_PREDIAL_2024_cadereyta_de_montes.json
 cadereyta_de_montes,Cadereyta De Montes,2025,tarifa_millar,True,6,0,0,0,0,,data\queretaro\json_predial\2025\QRO_PREDIAL_2025_cadereyta_de_montes.json
 cadereyta_de_montes,Cadereyta De Montes,2026,tarifa_millar,True,6,0,0,0,0,,data\queretaro\json_predial\2026\QRO_PREDIAL_2026_cadereyta_de_montes.json
-cadereyta_de_montes__dup1,Cadereyta De Montes  Dup1,2017,progresivo,True,0,25,0,0,0,,data\queretaro\json_predial\2017\QRO_PREDIAL_2017_cadereyta_de_montes__dup1.json
-cadereyta_de_montes__dup24,Cadereyta De Montes  Dup24,2016,tarifa_millar,True,7,0,0,0,0,,data\queretaro\json_predial\2016\QRO_PREDIAL_2016_cadereyta_de_montes__dup24.json
 colon,Colon,2010,tarifa_millar,True,6,0,0,0,0,,data\queretaro\json_predial\2010\QRO_PREDIAL_2010_colon.json
 colon,Colon,2011,tarifa_millar,True,6,0,0,0,0,,data\queretaro\json_predial\2011\QRO_PREDIAL_2011_colon.json
 colon,Colon,2012,tarifa_millar,True,6,0,0,0,0,,data\queretaro\json_predial\2012\QRO_PREDIAL_2012_colon.json
 colon,Colon,2013,tarifa_millar,True,6,0,0,0,0,,data\queretaro\json_predial\2013\QRO_PREDIAL_2013_colon.json
 colon,Colon,2014,tarifa_millar,True,6,0,0,0,0,,data\queretaro\json_predial\2014\QRO_PREDIAL_2014_colon.json
-colon,Colon,2015,tarifa_millar,True,7,0,0,0,0,,data\queretaro\json_predial\2015\QRO_PREDIAL_2015_colon.json
-colon,Colon,2017,progresivo,True,0,25,0,0,0,cambio_brusco_n_filas_7_a_25|cambio_esquema_tarifa_millar_a_progresivo_desde_2015,data\queretaro\json_predial\2017\QRO_PREDIAL_2017_colon.json
+colon,Colon,2015,tarifa_millar,True,8,0,0,0,0,,data\queretaro\json_predial\2015\QRO_PREDIAL_2015_colon.json
+colon,Colon,2016,tarifa_millar,True,7,0,0,0,0,,data\queretaro\json_predial\2016\QRO_PREDIAL_2016_colon.json
+colon,Colon,2017,progresivo,True,1,25,0,0,0,cambio_brusco_n_filas_7_a_26|cambio_esquema_tarifa_millar_a_progresivo_desde_2016|tipo_progresivo_con_tabla_tarifa_no_vacia,data\queretaro\json_predial\2017\QRO_PREDIAL_2017_colon.json
 colon,Colon,2018,progresivo,True,0,25,0,0,0,,data\queretaro\json_predial\2018\QRO_PREDIAL_2018_colon.json
 colon,Colon,2019,progresivo,True,0,25,0,0,0,,data\queretaro\json_predial\2019\QRO_PREDIAL_2019_colon.json
 colon,Colon,2020,progresivo,True,0,25,0,0,0,,data\queretaro\json_predial\2020\QRO_PREDIAL_2020_colon.json
 colon,Colon,2021,progresivo,True,0,25,0,0,0,,data\queretaro\json_predial\2021\QRO_PREDIAL_2021_colon.json
 colon,Colon,2022,progresivo,True,0,25,0,0,0,,data\queretaro\json_predial\2022\QRO_PREDIAL_2022_colon.json
-colon,Colon,2023,progresivo,True,0,25,0,0,0,,data\queretaro\json_predial\2023\QRO_PREDIAL_2023_colon.json
+colon,Colon,2023,progresivo,True,1,25,0,0,0,tipo_progresivo_con_tabla_tarifa_no_vacia,data\queretaro\json_predial\2023\QRO_PREDIAL_2023_colon.json
 colon,Colon,2024,progresivo,True,0,25,0,0,0,,data\queretaro\json_predial\2024\QRO_PREDIAL_2024_colon.json
 colon,Colon,2025,progresivo,True,0,25,0,0,0,,data\queretaro\json_predial\2025\QRO_PREDIAL_2025_colon.json
 colon,Colon,2026,progresivo,True,0,25,0,0,0,,data\queretaro\json_predial\2026\QRO_PREDIAL_2026_colon.json
@@ -175,6 +174,7 @@ pedro_escobedo,Pedro Escobedo,2014,tarifa_millar,True,6,0,0,0,0,,data\queretaro\
 pedro_escobedo,Pedro Escobedo,2015,tarifa_millar,True,6,0,0,0,0,,data\queretaro\json_predial\2015\QRO_PREDIAL_2015_pedro_escobedo.json
 pedro_escobedo,Pedro Escobedo,2016,tarifa_millar,True,6,0,0,0,0,,data\queretaro\json_predial\2016\QRO_PREDIAL_2016_pedro_escobedo.json
 pedro_escobedo,Pedro Escobedo,2017,progresivo,True,0,25,0,0,0,cambio_brusco_n_filas_6_a_25|cambio_esquema_tarifa_millar_a_progresivo_desde_2016,data\queretaro\json_predial\2017\QRO_PREDIAL_2017_pedro_escobedo.json
+pedro_escobedo,Pedro Escobedo,2018,progresivo,True,0,25,0,0,0,,data\queretaro\json_predial\2018\QRO_PREDIAL_2018_pedro_escobedo.json
 pedro_escobedo,Pedro Escobedo,2019,progresivo,True,0,25,0,0,0,,data\queretaro\json_predial\2019\QRO_PREDIAL_2019_pedro_escobedo.json
 pedro_escobedo,Pedro Escobedo,2020,progresivo,True,0,25,0,0,0,,data\queretaro\json_predial\2020\QRO_PREDIAL_2020_pedro_escobedo.json
 pedro_escobedo,Pedro Escobedo,2021,progresivo,True,0,25,0,0,0,,data\queretaro\json_predial\2021\QRO_PREDIAL_2021_pedro_escobedo.json
@@ -183,7 +183,6 @@ pedro_escobedo,Pedro Escobedo,2023,progresivo,True,0,25,0,0,0,,data\queretaro\js
 pedro_escobedo,Pedro Escobedo,2024,progresivo,True,0,25,0,0,0,,data\queretaro\json_predial\2024\QRO_PREDIAL_2024_pedro_escobedo.json
 pedro_escobedo,Pedro Escobedo,2025,progresivo,True,0,25,0,0,0,,data\queretaro\json_predial\2025\QRO_PREDIAL_2025_pedro_escobedo.json
 pedro_escobedo,Pedro Escobedo,2026,progresivo,True,0,25,0,0,0,,data\queretaro\json_predial\2026\QRO_PREDIAL_2026_pedro_escobedo.json
-pedro_escobedo_queretaro,Pedro Escobedo Queretaro,2018,progresivo,True,0,25,0,0,0,,data\queretaro\json_predial\2018\QRO_PREDIAL_2018_pedro_escobedo_queretaro.json
 penamiller,Penamiller,2010,tarifa_millar,True,6,0,0,0,0,,data\queretaro\json_predial\2010\QRO_PREDIAL_2010_penamiller.json
 penamiller,Penamiller,2011,tarifa_millar,True,6,0,0,0,0,,data\queretaro\json_predial\2011\QRO_PREDIAL_2011_penamiller.json
 penamiller,Penamiller,2012,tarifa_millar,True,6,0,0,0,0,,data\queretaro\json_predial\2012\QRO_PREDIAL_2012_penamiller.json
@@ -203,7 +202,7 @@ penamiller,Penamiller,2025,tarifa_millar,True,6,0,0,0,0,,data\queretaro\json_pre
 penamiller,Penamiller,2026,tarifa_millar,True,6,0,0,0,0,,data\queretaro\json_predial\2026\QRO_PREDIAL_2026_penamiller.json
 pinal_de_amoles,Pinal De Amoles,2010,tarifa_millar,True,6,0,0,0,0,,data\queretaro\json_predial\2010\QRO_PREDIAL_2010_pinal_de_amoles.json
 pinal_de_amoles,Pinal De Amoles,2011,tarifa_millar,True,6,0,0,0,0,,data\queretaro\json_predial\2011\QRO_PREDIAL_2011_pinal_de_amoles.json
-pinal_de_amoles,Pinal De Amoles,2012,tarifa_millar,True,6,0,0,0,0,,data\queretaro\json_predial\2012\QRO_PREDIAL_2012_pinal_de_amoles.json
+pinal_de_amoles,Pinal De Amoles,2012,tarifa_millar,True,5,0,0,0,0,,data\queretaro\json_predial\2012\QRO_PREDIAL_2012_pinal_de_amoles.json
 pinal_de_amoles,Pinal De Amoles,2013,tarifa_millar,True,6,0,0,0,0,,data\queretaro\json_predial\2013\QRO_PREDIAL_2013_pinal_de_amoles.json
 pinal_de_amoles,Pinal De Amoles,2014,tarifa_millar,True,6,0,0,0,0,,data\queretaro\json_predial\2014\QRO_PREDIAL_2014_pinal_de_amoles.json
 pinal_de_amoles,Pinal De Amoles,2015,tarifa_millar,True,6,0,0,0,0,,data\queretaro\json_predial\2015\QRO_PREDIAL_2015_pinal_de_amoles.json
@@ -228,7 +227,7 @@ queretaro,Queretaro,2016,progresivo,True,0,25,0,0,0,cambio_brusco_n_filas_6_a_25
 queretaro,Queretaro,2017,progresivo,True,0,25,0,0,0,,data\queretaro\json_predial\2017\QRO_PREDIAL_2017_queretaro.json
 queretaro,Queretaro,2018,progresivo,True,0,25,0,0,0,,data\queretaro\json_predial\2018\QRO_PREDIAL_2018_queretaro.json
 queretaro,Queretaro,2019,progresivo,True,0,25,0,0,0,,data\queretaro\json_predial\2019\QRO_PREDIAL_2019_queretaro.json
-queretaro,Queretaro,2020,progresivo,True,0,25,0,0,0,minimo_predial_monto_no_numerico,data\queretaro\json_predial\2020\QRO_PREDIAL_2020_queretaro.json
+queretaro,Queretaro,2020,progresivo,True,0,25,0,0,0,,data\queretaro\json_predial\2020\QRO_PREDIAL_2020_queretaro.json
 queretaro,Queretaro,2021,progresivo,True,0,25,0,0,0,,data\queretaro\json_predial\2021\QRO_PREDIAL_2021_queretaro.json
 queretaro,Queretaro,2022,progresivo,True,0,25,0,0,0,,data\queretaro\json_predial\2022\QRO_PREDIAL_2022_queretaro.json
 queretaro,Queretaro,2023,progresivo,True,0,25,0,0,0,,data\queretaro\json_predial\2023\QRO_PREDIAL_2023_queretaro.json
@@ -238,7 +237,7 @@ queretaro,Queretaro,2026,progresivo,True,0,25,0,0,0,,data\queretaro\json_predial
 san_joaquin,San Joaquin,2010,tarifa_millar,True,6,0,0,0,0,,data\queretaro\json_predial\2010\QRO_PREDIAL_2010_san_joaquin.json
 san_joaquin,San Joaquin,2011,tarifa_millar,True,6,0,0,0,0,,data\queretaro\json_predial\2011\QRO_PREDIAL_2011_san_joaquin.json
 san_joaquin,San Joaquin,2012,tarifa_millar,True,6,0,0,0,0,,data\queretaro\json_predial\2012\QRO_PREDIAL_2012_san_joaquin.json
-san_joaquin,San Joaquin,2013,tarifa_millar,True,6,0,0,0,0,,data\queretaro\json_predial\2013\QRO_PREDIAL_2013_san_joaquin.json
+san_joaquin,San Joaquin,2013,tarifa_millar,True,5,0,0,0,0,,data\queretaro\json_predial\2013\QRO_PREDIAL_2013_san_joaquin.json
 san_joaquin,San Joaquin,2014,tarifa_millar,True,6,0,0,0,0,,data\queretaro\json_predial\2014\QRO_PREDIAL_2014_san_joaquin.json
 san_joaquin,San Joaquin,2015,tarifa_millar,True,6,0,0,0,0,,data\queretaro\json_predial\2015\QRO_PREDIAL_2015_san_joaquin.json
 san_joaquin,San Joaquin,2016,tarifa_millar,True,6,0,0,0,0,,data\queretaro\json_predial\2016\QRO_PREDIAL_2016_san_joaquin.json
@@ -257,7 +256,8 @@ san_juan_del_rio,San Juan Del Rio,2012,tarifa_millar,True,6,0,0,0,0,,data\queret
 san_juan_del_rio,San Juan Del Rio,2013,tarifa_millar,True,6,0,0,0,0,,data\queretaro\json_predial\2013\QRO_PREDIAL_2013_san_juan_del_rio.json
 san_juan_del_rio,San Juan Del Rio,2014,tarifa_millar,True,6,0,0,0,0,,data\queretaro\json_predial\2014\QRO_PREDIAL_2014_san_juan_del_rio.json
 san_juan_del_rio,San Juan Del Rio,2015,tarifa_millar,True,6,0,0,0,0,,data\queretaro\json_predial\2015\QRO_PREDIAL_2015_san_juan_del_rio.json
-san_juan_del_rio,San Juan Del Rio,2017,progresivo,True,0,25,0,0,0,cambio_brusco_n_filas_6_a_25|cambio_esquema_tarifa_millar_a_progresivo_desde_2015,data\queretaro\json_predial\2017\QRO_PREDIAL_2017_san_juan_del_rio.json
+san_juan_del_rio,San Juan Del Rio,2016,tarifa_millar,True,6,0,0,0,0,,data\queretaro\json_predial\2016\QRO_PREDIAL_2016_san_juan_del_rio.json
+san_juan_del_rio,San Juan Del Rio,2017,progresivo,True,0,25,0,0,0,cambio_brusco_n_filas_6_a_25|cambio_esquema_tarifa_millar_a_progresivo_desde_2016,data\queretaro\json_predial\2017\QRO_PREDIAL_2017_san_juan_del_rio.json
 san_juan_del_rio,San Juan Del Rio,2018,progresivo,True,0,25,0,0,0,,data\queretaro\json_predial\2018\QRO_PREDIAL_2018_san_juan_del_rio.json
 san_juan_del_rio,San Juan Del Rio,2019,progresivo,True,0,25,0,0,0,,data\queretaro\json_predial\2019\QRO_PREDIAL_2019_san_juan_del_rio.json
 san_juan_del_rio,San Juan Del Rio,2020,progresivo,True,0,25,0,0,0,,data\queretaro\json_predial\2020\QRO_PREDIAL_2020_san_juan_del_rio.json
@@ -267,8 +267,7 @@ san_juan_del_rio,San Juan Del Rio,2023,progresivo,True,0,35,0,0,0,,data\queretar
 san_juan_del_rio,San Juan Del Rio,2024,progresivo,True,0,35,0,0,0,,data\queretaro\json_predial\2024\QRO_PREDIAL_2024_san_juan_del_rio.json
 san_juan_del_rio,San Juan Del Rio,2025,progresivo,True,0,35,0,0,0,,data\queretaro\json_predial\2025\QRO_PREDIAL_2025_san_juan_del_rio.json
 san_juan_del_rio,San Juan Del Rio,2026,progresivo,True,0,35,0,0,0,,data\queretaro\json_predial\2026\QRO_PREDIAL_2026_san_juan_del_rio.json
-san_juan_del_rio_queretaro,San Juan Del Rio Queretaro,2016,tarifa_millar,True,6,0,0,0,0,,data\queretaro\json_predial\2016\QRO_PREDIAL_2016_san_juan_del_rio_queretaro.json
-tequisquiapan,Tequisquiapan,2010,tarifa_millar,True,6,0,0,0,0,,data\queretaro\json_predial\2010\QRO_PREDIAL_2010_tequisquiapan.json
+tequisquiapan,Tequisquiapan,2010,tarifa_millar,True,5,0,0,0,0,,data\queretaro\json_predial\2010\QRO_PREDIAL_2010_tequisquiapan.json
 tequisquiapan,Tequisquiapan,2011,tarifa_millar,True,6,0,0,0,0,,data\queretaro\json_predial\2011\QRO_PREDIAL_2011_tequisquiapan.json
 tequisquiapan,Tequisquiapan,2012,tarifa_millar,True,6,0,0,0,0,,data\queretaro\json_predial\2012\QRO_PREDIAL_2012_tequisquiapan.json
 tequisquiapan,Tequisquiapan,2013,tarifa_millar,True,6,0,0,0,0,,data\queretaro\json_predial\2013\QRO_PREDIAL_2013_tequisquiapan.json
@@ -296,7 +295,7 @@ toliman,Toliman,2017,tarifa_millar,True,6,0,0,0,0,,data\queretaro\json_predial\2
 toliman,Toliman,2018,tarifa_millar,True,6,0,0,0,0,,data\queretaro\json_predial\2018\QRO_PREDIAL_2018_toliman.json
 toliman,Toliman,2019,tarifa_millar,True,6,0,0,0,0,,data\queretaro\json_predial\2019\QRO_PREDIAL_2019_toliman.json
 toliman,Toliman,2020,tarifa_millar,True,6,0,0,0,0,,data\queretaro\json_predial\2020\QRO_PREDIAL_2020_toliman.json
-toliman,Toliman,2021,tarifa_millar,True,6,0,0,0,0,,data\queretaro\json_predial\2021\QRO_PREDIAL_2021_toliman.json
+toliman,Toliman,2021,tarifa_millar,True,5,0,0,0,0,,data\queretaro\json_predial\2021\QRO_PREDIAL_2021_toliman.json
 toliman,Toliman,2022,tarifa_millar,True,6,0,0,0,0,,data\queretaro\json_predial\2022\QRO_PREDIAL_2022_toliman.json
 toliman,Toliman,2023,tarifa_millar,True,6,0,0,0,0,,data\queretaro\json_predial\2023\QRO_PREDIAL_2023_toliman.json
 toliman,Toliman,2024,tarifa_millar,True,6,0,0,0,0,,data\queretaro\json_predial\2024\QRO_PREDIAL_2024_toliman.json

@@ -1,15 +1,19 @@
 """
 Elimina archivos .json dentro de data/jalisco (recursivamente) si:
-  - Algún campo 'tasa_millar' o 'tarifa_millar' es estrictamente mayor a 15, O
-  - Algún campo 'tipo_esquema' tiene el valor 'desconocido'.
+  - Algún campo 'tasa_millar' o 'tarifa_millar' es estrictamente mayor a 19, O
+  - Algún campo 'tipo_esquema' tiene el valor 'desconocido', O
+  - Algún campo 'tipo_esquema' tiene el valor 'tasa_unica'.
 """
 
 import json
 import os
 from pathlib import Path
 
+# Valores de tipo_esquema que provocan eliminación
+ESQUEMAS_INVALIDOS = {"desconocido", "tasa_unica", "mixto"}
 
-def contiene_tasa_mayor_a_15(data, umbral: float = 15.0) -> bool:
+
+def contiene_tasa_mayor_a_19(data, umbral: float = 19.0) -> bool:
     """
     Recorre recursivamente un objeto JSON y retorna True si encuentra
     algún valor de 'tasa_millar' o 'tarifa_millar' estrictamente mayor al umbral.
@@ -20,67 +24,48 @@ def contiene_tasa_mayor_a_15(data, umbral: float = 15.0) -> bool:
                 if isinstance(value, (int, float)) and value > umbral:
                     return True
             if isinstance(value, (dict, list)):
-                if contiene_tasa_mayor_a_15(value, umbral):
+                if contiene_tasa_mayor_a_19(value, umbral):
                     return True
     elif isinstance(data, list):
         for item in data:
-            if contiene_tasa_mayor_a_15(item, umbral):
+            if contiene_tasa_mayor_a_19(item, umbral):
                 return True
     return False
 
 
-def es_esquema_desconocido(data) -> bool:
+def esquema_invalido(data) -> str | None:
     """
-    Recorre recursivamente un objeto JSON y retorna True si encuentra
-    algún campo 'tipo_esquema' con el valor 'desconocido'.
+    Recorre recursivamente un objeto JSON y retorna el valor de 'tipo_esquema'
+    si es uno de los esquemas inválidos, o None si no se encuentra ninguno.
     """
     if isinstance(data, dict):
         for key, value in data.items():
-            if key == "tipo_esquema" and value == "desconocido":
-                return True
+            if key == "tipo_esquema" and value in ESQUEMAS_INVALIDOS:
+                return value
             if isinstance(value, (dict, list)):
-                if es_esquema_desconocido(value):
-                    return True
+                result = esquema_invalido(value)
+                if result is not None:
+                    return result
     elif isinstance(data, list):
         for item in data:
-            if es_esquema_desconocido(item):
-                return True
-    return False
-
-#Tambien eliminamos si el esquema no es valido, es decir esquema_valido == false
-
-def es_esquema_no_valido(data) -> bool:
-    """
-    Recorre recursivamente un objeto JSON y retorna True si encuentra
-    algún campo 'esquema_valido' con el valor False.
-    """
-    if isinstance(data, dict):
-        for key, value in data.items():
-            if key == "esquema_valido" and value is False:
-                return True
-            if isinstance(value, (dict, list)):
-                if es_esquema_no_valido(value):
-                    return True
-    elif isinstance(data, list):
-        for item in data:
-            if es_esquema_no_valido(item):
-                return True
-    return False
+            result = esquema_invalido(item)
+            if result is not None:
+                return result
+    return None
 
 
-def motivo_eliminacion(data, umbral: float = 15.0):
+def motivo_eliminacion(data, umbral: float = 19.0) -> str | None:
     """Retorna el motivo de eliminación, o None si el archivo debe conservarse."""
     razones = []
-    if contiene_tasa_mayor_a_15(data, umbral):
+    if contiene_tasa_mayor_a_19(data, umbral):
         razones.append(f"tasa_millar/tarifa_millar > {umbral}")
-    if es_esquema_desconocido(data):
-        razones.append('tipo_esquema = "desconocido"')
-    if es_esquema_no_valido(data):
-        razones.append('esquema_valido = false')
+    esquema = esquema_invalido(data)
+    if esquema:
+        razones.append(f'tipo_esquema = "{esquema}"')
     return " | ".join(razones) if razones else None
 
 
-def procesar_directorio(base_dir: str, umbral: float = 15.0, dry_run: bool = False):
+def procesar_directorio(base_dir: str, umbral: float = 19.0, dry_run: bool = False):
     base_path = Path(base_dir)
     if not base_path.exists():
         print(f"[ERROR] El directorio '{base_dir}' no existe.")
@@ -126,7 +111,9 @@ if __name__ == "__main__":
         description=(
             "Elimina .json en data/jalisco donde:\n"
             "  - tasa_millar o tarifa_millar > umbral, O\n"
-            '  - tipo_esquema == "desconocido"'
+            '  - tipo_esquema == "desconocido", O\n'
+            '  - tipo_esquema == "tasa_unica"'
+            '  - tipo_esquema == "mixto"'
         ),
         formatter_class=argparse.RawTextHelpFormatter,
     )
@@ -138,8 +125,8 @@ if __name__ == "__main__":
     parser.add_argument(
         "--umbral",
         type=float,
-        default=15.0,
-        help="Umbral estricto para tasas (default: 15).",
+        default=19.0,
+        help="Umbral estricto para tasas (default: 19).",
     )
     parser.add_argument(
         "--dry-run",
@@ -150,6 +137,7 @@ if __name__ == "__main__":
 
     print(f"Directorio : {args.dir}")
     print(f"Umbral     : > {args.umbral}")
+    print(f"Esquemas inválidos : {sorted(ESQUEMAS_INVALIDOS)}")
     print(f"Modo       : {'DRY-RUN' if args.dry_run else 'ELIMINACIÓN REAL'}")
     print("=" * 60)
 
