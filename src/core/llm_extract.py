@@ -50,7 +50,7 @@ OPENAI_VISION_MODEL = os.environ.get("OPENAI_VISION_MODEL", OPENAI_MODEL)
 USE_STRUCTURED_OUTPUT = os.environ.get("OPENAI_STRUCTURED_OUTPUT", "1") == "1"
 
 # Límite de tokens por sub-batch
-BATCH_TOKEN_LIMIT = int(os.environ.get("BATCH_TOKEN_LIMIT", "900000"))
+BATCH_TOKEN_LIMIT = int(os.environ.get("BATCH_TOKEN_LIMIT", "1100000"))
 BATCH_MAX_REQUESTS = int(os.environ.get("BATCH_MAX_REQUESTS", "40000"))
 
 # Cliente lazy
@@ -279,18 +279,32 @@ ESTRUCTURA EXACTA DEL JSON (no agregues claves fuera de esto):
   la cuota fija adicional se captura en el campo "cuota_fija_adicional" de cada fila.
 
 "progresivo": El impuesto usa una tabla de rangos de valor catastral con columnas:
-  límite inferior, límite superior, cuota fija, tasa marginal sobre el excedente.
-  IMPORTANTE: solo aplica cuando hay UNA SOLA columna de cuotas/tasas para todos los predios.
+  límite inferior, límite superior, cuota fija, tasa/factor marginal sobre el excedente.
+  IMPORTANTE: clasifica como "progresivo" cuando la tabla principal tiene UNA SOLA columna
+  de cuotas/tasas aplicable a todos los predios urbanos.
+  Si ADEMÁS de la tabla progresiva existen componentes secundarios para otros tipos de predio
+  (ej: "10 al millar para agropecuarios", cuotas fijas por hectárea para rústicos), el esquema
+  sigue siendo "progresivo" — NO "mixto". Los componentes secundarios se capturan así:
+    • Tasas al millar adicionales → tabla_tarifa_millar (grupo="rustico" o "otro")
+    • Cuotas fijas por predio/hectárea → tabla_cuota_fija
+  La tabla progresiva principal va en tabla_progresiva.
+  Esto es común en Yucatán y otros estados del sureste.
 
 "tasa_unica": UNA SOLA tasa (porcentaje o al millar) idéntica para todos los predios sin distinción.
 
 "cuota_fija": Monto fijo por predio, sin referencia al valor catastral.
 
-"mixto": Cuando la ley establece MECANISMOS DISTINTOS que requieren más de una tabla. Casos comunes:
-  a) Tabla de cuotas fijas por rango y tipo de predio (urbano) + tasa al millar (rústico).
-  b) Rangos bajos pagan cuota fija y a partir de cierto valor pagan al millar.
-  c) Tabla con MÚLTIPLES COLUMNAS de valores según tipo de predio para los mismos rangos.
-  NO marques como "mixto" solo porque hay un mínimo o un solo tipo adicional (rústico con tasa única).
+"mixto": SOLO cuando la tabla principal tiene MÚLTIPLES COLUMNAS de valores para los mismos
+  rangos según tipo de predio (ej: urbano edificado, no edificado, rústico en columnas separadas).
+  Usa tabla_mixta_rango para capturar estas tablas multi-columna.
+  Casos que NO son "mixto":
+    • Tabla progresiva + tasa al millar para rústicos → "progresivo" (componentes en tarifa_millar)
+    • Tabla progresiva + cuotas por hectárea → "progresivo" (componentes en cuota_fija)
+    • Tarifa al millar con cuota fija adicional → "tarifa_millar" (usar cuota_fija_adicional)
+    • Cualquier esquema + mínimo predial → NO cambia el tipo (usar minimo_predial)
+  REGLA: si el mecanismo PRINCIPAL (aplicable a la mayoría de los predios urbanos) es UNA tabla
+  progresiva o UNA tarifa al millar, clasifica como "progresivo" o "tarifa_millar" respectivamente,
+  y captura los componentes secundarios en las tablas auxiliares.
 
 "desconocido": El texto es insuficiente, truncado, o no contiene la mecánica de cálculo.
 
@@ -403,27 +417,19 @@ tabla_cuota_fija (si tipo_esquema = "cuota_fija"):
 
 ═══ REGLAS CLAVE ═══
 
-1. Solo UNA tabla principal por esquema, excepto "mixto" que puede tener varias.
+1. Solo UNA tabla principal por esquema. "mixto" es RARO — solo para tablas multi-columna.
 2. "minimo_predial" es INDEPENDIENTE — NO debe causar "mixto".
 3. NUNCA inventes valores. Si falta algo esencial → null y esquema_valido = false.
 4. Texto truncado o solo encabezados → "desconocido", esquema_valido = false.
 5. Múltiples tasas al millar por tipo de predio SIN tabla de rangos → "tarifa_millar".
 6. Tabla de rangos con VARIAS COLUMNAS por tipo de predio → "mixto" + tabla_mixta_rango.
 7. "esquema_valido" = true cuando TODOS los valores necesarios están presentes.
-
-8.  REGLA CRÍTICA — Conversión de "%" en tasas al millar:
-    En Jalisco y otros estados, las tasas bimestrales al millar se expresan 
-    frecuentemente con signo "%". Esto NO es un porcentaje real sino la 
-    representación local de la tasa al millar. 
-    SIEMPRE divide entre 100 para obtener el valor al millar correcto:
-    - "20%" → tasa_millar = 0.20
-    - "23%" → tasa_millar = 0.23  
-    - "35%" → tasa_millar = 0.35
-    - "10%" → tasa_millar = 0.10
-    Esto NO es inventar valores. Es la conversión correcta y obligatoria.
-    Si el encabezado dice "tasa bimestral al millar" y los valores tienen "%",
-    APLICA esta conversión y marca esquema_valido = true.
-    NO dejes tasa_millar en 0 por esta ambigüedad.
+8. CONVERSIÓN OBLIGATORIA de "%" en tasas al millar: Si el encabezado dice "tasa al millar"
+   y los valores tienen signo "%", divide entre 100 para obtener la tasa al millar real.
+   Ej: "20%" al millar → tasa_millar = 0.20. Esto NO es inventar valores (regla 3).
+   NO dejes tasa_millar en 0 ni marques esquema_valido = false por esta ambigüedad.
+9. Tabla progresiva + componentes secundarios (tasa al millar para rústicos, cuotas por
+   hectárea) → "progresivo", NO "mixto". Captura componentes en tarifa_millar/cuota_fija.
 
 ═══ CASOS ESPECIALES A IGNORAR ═══
 
@@ -489,9 +495,13 @@ Recuerda:
 - Si el impuesto se calcula como: valor_catastral × factor (ej: 0.00025, 0.001, 0.0015),
   clasifica como "tasa_unica" con la tasa expresada como el factor decimal.
 - Si hay una tabla progresiva (límite inferior, superior, cuota fija, factor sobre excedente),
-  clasifica como "progresivo" aunque TAMBIÉN haya valores catastrales en el mismo texto.
-- Los predios rústicos con cuota por hectárea o "10 al millar" son un componente adicional
-  de tarifa_millar; agrégalo como un grupo "rustico" en tabla_tarifa_millar.
+  clasifica como "progresivo" aunque TAMBIÉN haya valores catastrales o componentes secundarios.
+- Tabla progresiva + "10 al millar para agropecuarios" + cuotas por hectárea = "progresivo"
+  (la tabla va en tabla_progresiva; lo demás en tarifa_millar y cuota_fija). NO es "mixto".
+- Los predios rústicos con cuota por hectárea o "X al millar" van como grupo "rustico"
+  en tabla_tarifa_millar o en tabla_cuota_fija según corresponda.
+- Si las tasas tienen "%" pero el encabezado dice "al millar", divide entre 100:
+  "20%" al millar → tasa_millar = 0.20. NO dejes tasa_millar en 0.
 - Los "frutos civiles" (rentas) son un impuesto SEPARADO. IGNÓRALOS.
 - Predios de extracción ejidal con base en producción → IGNORAR (fuera de alcance).
 
@@ -816,6 +826,95 @@ def _sanity_check_extraction(data: dict) -> bool:
                 return False
 
     return True
+
+
+def _generate_focus_pdf_from_segment(focus_txt: Path, adapter) -> Path | None:
+    """
+    Genera un PDF recortado temporal a partir del source PDF y las páginas
+    en segment.csv. Para estados que solo generan TXT (ej: Yucatán).
+    Retorna la ruta al PDF temporal, o None si no puede generarlo.
+    """
+    import fitz
+    import csv
+
+    meta_csv = adapter.meta_dir / "segment.csv"
+    if not meta_csv.exists():
+        return None
+
+    target_name = focus_txt.stem
+
+    try:
+        with meta_csv.open(encoding="utf-8-sig") as f:
+            reader = csv.DictReader(f)
+            headers = reader.fieldnames or []
+            has_txt_file = "txt_file" in headers
+
+            for row in reader:
+                matched = False
+                if has_txt_file:
+                    txt_base = row.get("txt_file", "").replace(".txt", "")
+                    if txt_base == target_name:
+                        matched = True
+                if not matched:
+                    continue
+
+                pred_start_raw = row.get("predial_page_start", "")
+                pred_end_raw = row.get("predial_page_end", "")
+                if not pred_start_raw or not pred_end_raw:
+                    return None
+
+                pred_start = int(float(pred_start_raw)) - 1  # 1-based → 0-based
+                pred_end = int(float(pred_end_raw))           # inclusive → exclusive
+
+                # Localizar source PDF (misma lógica que get_extended_txt)
+                source = None
+                source_pdf_name = row.get("source_pdf", "")
+                ejercicio = row.get("ejercicio", "")
+
+                if source_pdf_name:
+                    for base_dir in [adapter.pdf_ocr_dir, adapter.pdf_raw_dir]:
+                        for sub in [ejercicio, ""]:
+                            candidate = base_dir / sub / source_pdf_name if sub else base_dir / source_pdf_name
+                            if candidate.exists():
+                                source = candidate
+                                break
+                        if source:
+                            break
+
+                if source is None and ejercicio:
+                    for base_dir in [adapter.pdf_raw_dir, adapter.pdf_ocr_dir]:
+                        search_dir = base_dir / ejercicio
+                        if search_dir.exists():
+                            pdfs = sorted(search_dir.glob("*.pdf"))
+                            if len(pdfs) == 1:
+                                source = pdfs[0]
+                                break
+
+                if source is None:
+                    return None
+
+                # Generar PDF recortado temporal
+                out_pdf = focus_txt.with_suffix(".pdf")
+                with fitz.open(str(source)) as doc:
+                    n_pages = len(doc)
+                    start = max(0, pred_start)
+                    end = min(n_pages, pred_end)
+                    if start >= end:
+                        return None
+
+                    new_doc = fitz.open()
+                    new_doc.insert_pdf(doc, from_page=start, to_page=end - 1)
+                    new_doc.save(str(out_pdf))
+                    new_doc.close()
+
+                print(f"      [gen_pdf] Generado {out_pdf.name} ({end - start}pp) desde {source.name}")
+                return out_pdf
+
+    except Exception as e:
+        print(f"      [gen_pdf] Error: {e}")
+        return None
+
+    return None
 
 
 def get_extended_txt(focus_txt: Path, adapter=None) -> str | None:
@@ -1479,7 +1578,12 @@ def extract_all(
         # ── Paso 3: Si TXT extendido también falló → PDF visión ──
         if pdf_fallback and not used_ext_txt and (data is None or not _is_valid_extraction(data)):
             pdf_path = txt_path.with_suffix(".pdf")
-            if pdf_path.exists():
+
+            # Si no hay PDF recortado (ej: Yucatán), generar uno temporal desde el tomo
+            if not pdf_path.exists() and adapter is not None:
+                pdf_path = _generate_focus_pdf_from_segment(txt_path, adapter)
+
+            if pdf_path is not None and pdf_path.exists():
                 import fitz
                 try:
                     with fitz.open(str(pdf_path)) as check_doc:
