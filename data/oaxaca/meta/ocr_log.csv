@@ -386,7 +386,7 @@ ejercicio,input_pdf,ocr_pdf,status
 2013,data\oaxaca\pdf_raw\2013\10\SEC41-03RA-2013-10-12.pdf,data\oaxaca\pdf_ocr\2013\10\SEC41-03RA-2013-10-12_ocr.pdf,already_exists
 2013,data\oaxaca\pdf_raw\2013\12\EXT-DEC13-2013-12-31.pdf,data\oaxaca\pdf_ocr\2013\12\EXT-DEC13-2013-12-31_ocr.pdf,already_exists
 2013,data\oaxaca\pdf_raw\2013\12\EXT-DEC20AL23-2013-12-31.pdf,data\oaxaca\pdf_ocr\2013\12\EXT-DEC20AL23-2013-12-31_ocr.pdf,already_exists
-2013,data\oaxaca\pdf_raw\2013\12\EXT-DEC26-2013-12-31.pdf,data\oaxaca\pdf_ocr\2013\12\EXT-DEC26-2013-12-31_ocr.pdf,ok
+2013,data\oaxaca\pdf_raw\2013\12\EXT-DEC26-2013-12-31.pdf,data\oaxaca\pdf_ocr\2013\12\EXT-DEC26-2013-12-31_ocr.pdf,already_exists
 2014,data\oaxaca\pdf_raw\2014\02\SEC05-07MA-2014-02-01.pdf,data\oaxaca\pdf_ocr\2014\02\SEC05-07MA-2014-02-01_ocr.pdf,already_exists
 2014,data\oaxaca\pdf_raw\2014\02\SEC05-08VA-2014-02-01.pdf,data\oaxaca\pdf_ocr\2014\02\SEC05-08VA-2014-02-01_ocr.pdf,already_exists
 2014,data\oaxaca\pdf_raw\2014\02\SEC05-09NA-2014-02-01.pdf,data\oaxaca\pdf_ocr\2014\02\SEC05-09NA-2014-02-01_ocr.pdf,already_exists
@@ -2282,8 +2282,8 @@ ejercicio,input_pdf,ocr_pdf,status
 2025,data\oaxaca\pdf_raw\2025\02\SEC08-06TA-2025-02-22.pdf,data\oaxaca\pdf_ocr\2025\02\SEC08-06TA-2025-02-22_ocr.pdf,already_exists
 2025,data\oaxaca\pdf_raw\2025\02\SEC08-07MA-2025-02-22.pdf,data\oaxaca\pdf_ocr\2025\02\SEC08-07MA-2025-02-22_ocr.pdf,already_exists
 2025,data\oaxaca\pdf_raw\2025\02\SEC08-08VA-2025-02-22.pdf,data\oaxaca\pdf_ocr\2025\02\SEC08-08VA-2025-02-22_ocr.pdf,"error:rc2:Input file is not a PDF, checking if it is an image...
-cannot identify image file 'C:\\Users\\gibra\\AppData\\Local\\Temp\\ocrmypdf.io.uf66b75s\\origin'
-Input file is a file: C:\Users\gibra\AppData\Local\Temp\ocrmypdf.io.uf66b75s\origin
+cannot identify image file 'C:\\Users\\gibra\\AppData\\Local\\Temp\\ocrmypdf.io.xg_j0m7k\\origin'
+Input file is a file: C:\Users\gibra\AppData\Local\Temp\ocrmypdf.io.xg_j0m7k\origin
 Input file is empty: C:\Users\gibra\AppData\Local\Temp\ocrmypdf"
 2025,data\oaxaca\pdf_raw\2025\02\SEC08-09NA-2025-02-22.pdf,data\oaxaca\pdf_ocr\2025\02\SEC08-09NA-2025-02-22_ocr.pdf,already_exists
 2025,data\oaxaca\pdf_raw\2025\02\SEC08-10MA-2025-02-22.pdf,data\oaxaca\pdf_ocr\2025\02\SEC08-10MA-2025-02-22_ocr.pdf,already_exists

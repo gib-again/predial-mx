@@ -1,27 +1,27 @@
 ﻿municipio_slug,municipio_nombre,anio,tipo_esquema,esquema_valido,n_tarifa_rows,n_prog_rows,n_tasa_unica_rows,n_cuota_fija_rows,n_mixta_rows,anomalias,json_path
-abasolo,Abasolo,2008,desconocido,False,0,0,0,0,0,,data\guanajuato\json_predial\2008\GTO_PREDIAL_2008_abasolo.json
-abasolo,Abasolo,2010,desconocido,False,0,0,0,0,0,,data\guanajuato\json_predial\2010\GTO_PREDIAL_2010_abasolo.json
-abasolo,Abasolo,2011,desconocido,False,0,0,0,0,0,,data\guanajuato\json_predial\2011\GTO_PREDIAL_2011_abasolo.json
-abasolo,Abasolo,2012,desconocido,False,0,0,0,0,0,,data\guanajuato\json_predial\2012\GTO_PREDIAL_2012_abasolo.json
+abasolo,Abasolo,2010,tarifa_millar,True,11,0,0,0,0,,data\guanajuato\json_predial\2010\GTO_PREDIAL_2010_abasolo.json
+abasolo,Abasolo,2011,tarifa_millar,True,10,0,0,0,0,,data\guanajuato\json_predial\2011\GTO_PREDIAL_2011_abasolo.json
+abasolo,Abasolo,2012,tarifa_millar,True,11,0,0,0,0,,data\guanajuato\json_predial\2012\GTO_PREDIAL_2012_abasolo.json
 abasolo,Abasolo,2014,tarifa_millar,True,11,0,0,0,0,,data\guanajuato\json_predial\2014\GTO_PREDIAL_2014_abasolo.json
 abasolo,Abasolo,2015,tarifa_millar,True,9,0,0,0,0,,data\guanajuato\json_predial\2015\GTO_PREDIAL_2015_abasolo.json
 abasolo,Abasolo,2017,tarifa_millar,True,11,0,0,0,0,,data\guanajuato\json_predial\2017\GTO_PREDIAL_2017_abasolo.json
 abasolo,Abasolo,2018,tarifa_millar,True,11,0,0,0,0,,data\guanajuato\json_predial\2018\GTO_PREDIAL_2018_abasolo.json
 abasolo,Abasolo,2019,tarifa_millar,True,11,0,0,0,0,,data\guanajuato\json_predial\2019\GTO_PREDIAL_2019_abasolo.json
 abasolo,Abasolo,2020,progresivo,True,8,15,0,0,0,cambio_brusco_n_filas_11_a_23|cambio_esquema_tarifa_millar_a_progresivo_desde_2019|prog_row10_superior_null_no_ultimo|prog_row11_hueco_con_anterior|tipo_progresivo_con_tabla_tarifa_no_vacia,data\guanajuato\json_predial\2020\GTO_PREDIAL_2020_abasolo.json
+abasolo,Abasolo,2021,progresivo,True,4,15,0,0,0,tipo_progresivo_con_tabla_tarifa_no_vacia,data\guanajuato\json_predial\2021\GTO_PREDIAL_2021_abasolo.json
 abasolo,Abasolo,2022,progresivo,True,8,15,0,0,0,tipo_progresivo_con_tabla_tarifa_no_vacia,data\guanajuato\json_predial\2022\GTO_PREDIAL_2022_abasolo.json
 abasolo,Abasolo,2023,progresivo,True,8,15,0,0,0,tipo_progresivo_con_tabla_tarifa_no_vacia,data\guanajuato\json_predial\2023\GTO_PREDIAL_2023_abasolo.json
 abasolo,Abasolo,2024,progresivo,True,8,15,0,0,0,tipo_progresivo_con_tabla_tarifa_no_vacia,data\guanajuato\json_predial\2024\GTO_PREDIAL_2024_abasolo.json
-abasolo,Abasolo,2025,progresivo,False,8,15,0,0,0,tipo_progresivo_con_tabla_tarifa_no_vacia,data\guanajuato\json_predial\2025\GTO_PREDIAL_2025_abasolo.json
-abasolo,Abasolo,2026,desconocido,False,0,0,0,0,0,,data\guanajuato\json_predial\2026\GTO_PREDIAL_2026_abasolo.json
+abasolo,Abasolo,2025,progresivo,True,8,15,0,0,0,tipo_progresivo_con_tabla_tarifa_no_vacia,data\guanajuato\json_predial\2025\GTO_PREDIAL_2025_abasolo.json
+abasolo,Abasolo,2026,cuota_fija,True,0,0,0,16,0,cambio_esquema_progresivo_a_cuota_fija_desde_2025,data\guanajuato\json_predial\2026\GTO_PREDIAL_2026_abasolo.json
 acambaro,Acambaro,2011,tarifa_millar,True,11,0,0,0,0,,data\guanajuato\json_predial\2011\GTO_PREDIAL_2011_acambaro.json
 acambaro,Acambaro,2012,tarifa_millar,True,11,0,0,0,0,,data\guanajuato\json_predial\2012\GTO_PREDIAL_2012_acambaro.json
 acambaro,Acambaro,2014,tarifa_millar,True,11,0,0,0,0,,data\guanajuato\json_predial\2014\GTO_PREDIAL_2014_acambaro.json
 acambaro,Acambaro,2015,tarifa_millar,True,11,0,0,0,0,,data\guanajuato\json_predial\2015\GTO_PREDIAL_2015_acambaro.json
 acambaro,Acambaro,2017,tarifa_millar,True,11,0,0,0,0,,data\guanajuato\json_predial\2017\GTO_PREDIAL_2017_acambaro.json
 acambaro,Acambaro,2018,tarifa_millar,True,8,0,0,0,0,,data\guanajuato\json_predial\2018\GTO_PREDIAL_2018_acambaro.json
-acambaro,Acambaro,2019,mixto,True,2,0,0,0,3,cambio_brusco_n_filas_8_a_2|cambio_esquema_tarifa_millar_a_mixto_desde_2018|mixta_row1_columnas_vacias|mixta_row2_columnas_vacias|mixta_row3_columnas_vacias,data\guanajuato\json_predial\2019\GTO_PREDIAL_2019_acambaro.json
-acambaro,Acambaro,2020,tarifa_millar,True,11,0,0,0,0,cambio_brusco_n_filas_2_a_11|cambio_esquema_mixto_a_tarifa_millar_desde_2019,data\guanajuato\json_predial\2020\GTO_PREDIAL_2020_acambaro.json
+acambaro,Acambaro,2020,tarifa_millar,True,11,0,0,0,0,,data\guanajuato\json_predial\2020\GTO_PREDIAL_2020_acambaro.json
+acambaro,Acambaro,2021,tarifa_millar,True,11,0,0,0,0,,data\guanajuato\json_predial\2021\GTO_PREDIAL_2021_acambaro.json
 acambaro,Acambaro,2022,tarifa_millar,True,12,0,0,0,0,,data\guanajuato\json_predial\2022\GTO_PREDIAL_2022_acambaro.json
 acambaro,Acambaro,2023,tarifa_millar,True,12,0,0,0,0,,data\guanajuato\json_predial\2023\GTO_PREDIAL_2023_acambaro.json
 acambaro,Acambaro,2024,tarifa_millar,True,12,0,0,0,0,,data\guanajuato\json_predial\2024\GTO_PREDIAL_2024_acambaro.json
@@ -30,26 +30,27 @@ acambaro,Acambaro,2026,tarifa_millar,True,9,0,0,0,0,,data\guanajuato\json_predia
 apaseo_el_alto,Apaseo El Alto,2010,tarifa_millar,True,12,0,0,0,0,,data\guanajuato\json_predial\2010\GTO_PREDIAL_2010_apaseo_el_alto.json
 apaseo_el_alto,Apaseo El Alto,2011,tarifa_millar,True,12,0,0,0,0,,data\guanajuato\json_predial\2011\GTO_PREDIAL_2011_apaseo_el_alto.json
 apaseo_el_alto,Apaseo El Alto,2012,tarifa_millar,True,12,0,0,0,0,,data\guanajuato\json_predial\2012\GTO_PREDIAL_2012_apaseo_el_alto.json
-apaseo_el_alto,Apaseo El Alto,2014,tarifa_millar,False,3,0,0,0,0,cambio_brusco_n_filas_12_a_3,data\guanajuato\json_predial\2014\GTO_PREDIAL_2014_apaseo_el_alto.json
-apaseo_el_alto,Apaseo El Alto,2015,tarifa_millar,True,11,0,0,0,0,cambio_brusco_n_filas_3_a_11,data\guanajuato\json_predial\2015\GTO_PREDIAL_2015_apaseo_el_alto.json
+apaseo_el_alto,Apaseo El Alto,2014,tarifa_millar,True,12,0,0,0,0,,data\guanajuato\json_predial\2014\GTO_PREDIAL_2014_apaseo_el_alto.json
+apaseo_el_alto,Apaseo El Alto,2015,tarifa_millar,True,11,0,0,0,0,,data\guanajuato\json_predial\2015\GTO_PREDIAL_2015_apaseo_el_alto.json
 apaseo_el_alto,Apaseo El Alto,2017,tarifa_millar,True,11,0,0,0,0,,data\guanajuato\json_predial\2017\GTO_PREDIAL_2017_apaseo_el_alto.json
 apaseo_el_alto,Apaseo El Alto,2018,tarifa_millar,True,11,0,0,0,0,,data\guanajuato\json_predial\2018\GTO_PREDIAL_2018_apaseo_el_alto.json
 apaseo_el_alto,Apaseo El Alto,2019,tarifa_millar,True,3,0,0,0,0,cambio_brusco_n_filas_11_a_3,data\guanajuato\json_predial\2019\GTO_PREDIAL_2019_apaseo_el_alto.json
 apaseo_el_alto,Apaseo El Alto,2020,tarifa_millar,True,3,0,0,0,0,,data\guanajuato\json_predial\2020\GTO_PREDIAL_2020_apaseo_el_alto.json
-apaseo_el_alto,Apaseo El Alto,2022,tarifa_millar,True,11,0,0,0,0,cambio_brusco_n_filas_3_a_11,data\guanajuato\json_predial\2022\GTO_PREDIAL_2022_apaseo_el_alto.json
+apaseo_el_alto,Apaseo El Alto,2021,tarifa_millar,True,11,0,0,0,0,cambio_brusco_n_filas_3_a_11,data\guanajuato\json_predial\2021\GTO_PREDIAL_2021_apaseo_el_alto.json
+apaseo_el_alto,Apaseo El Alto,2022,tarifa_millar,True,11,0,0,0,0,,data\guanajuato\json_predial\2022\GTO_PREDIAL_2022_apaseo_el_alto.json
 apaseo_el_alto,Apaseo El Alto,2023,tarifa_millar,True,3,0,0,0,0,cambio_brusco_n_filas_11_a_3,data\guanajuato\json_predial\2023\GTO_PREDIAL_2023_apaseo_el_alto.json
 apaseo_el_alto,Apaseo El Alto,2024,tarifa_millar,True,9,0,0,0,0,cambio_brusco_n_filas_3_a_9,data\guanajuato\json_predial\2024\GTO_PREDIAL_2024_apaseo_el_alto.json
 apaseo_el_alto,Apaseo El Alto,2025,tarifa_millar,True,11,0,0,0,0,,data\guanajuato\json_predial\2025\GTO_PREDIAL_2025_apaseo_el_alto.json
 apaseo_el_alto,Apaseo El Alto,2026,tarifa_millar,True,11,0,0,0,0,,data\guanajuato\json_predial\2026\GTO_PREDIAL_2026_apaseo_el_alto.json
 apaseo_el_grande,Apaseo El Grande,2010,tarifa_millar,True,11,0,0,0,0,,data\guanajuato\json_predial\2010\GTO_PREDIAL_2010_apaseo_el_grande.json
-apaseo_el_grande,Apaseo El Grande,2011,desconocido,False,0,0,0,0,0,,data\guanajuato\json_predial\2011\GTO_PREDIAL_2011_apaseo_el_grande.json
+apaseo_el_grande,Apaseo El Grande,2011,tarifa_millar,True,11,0,0,0,0,,data\guanajuato\json_predial\2011\GTO_PREDIAL_2011_apaseo_el_grande.json
 apaseo_el_grande,Apaseo El Grande,2012,tarifa_millar,True,11,0,0,0,0,,data\guanajuato\json_predial\2012\GTO_PREDIAL_2012_apaseo_el_grande.json
 apaseo_el_grande,Apaseo El Grande,2014,tarifa_millar,True,8,0,0,0,0,,data\guanajuato\json_predial\2014\GTO_PREDIAL_2014_apaseo_el_grande.json
 apaseo_el_grande,Apaseo El Grande,2015,tarifa_millar,True,11,0,0,0,0,,data\guanajuato\json_predial\2015\GTO_PREDIAL_2015_apaseo_el_grande.json
 apaseo_el_grande,Apaseo El Grande,2017,tarifa_millar,True,3,0,0,0,0,cambio_brusco_n_filas_11_a_3,data\guanajuato\json_predial\2017\GTO_PREDIAL_2017_apaseo_el_grande.json
 apaseo_el_grande,Apaseo El Grande,2018,tarifa_millar,True,11,0,0,0,0,cambio_brusco_n_filas_3_a_11,data\guanajuato\json_predial\2018\GTO_PREDIAL_2018_apaseo_el_grande.json
-apaseo_el_grande,Apaseo El Grande,2019,desconocido,False,0,0,0,0,0,,data\guanajuato\json_predial\2019\GTO_PREDIAL_2019_apaseo_el_grande.json
 apaseo_el_grande,Apaseo El Grande,2020,tarifa_millar,True,11,0,0,0,0,,data\guanajuato\json_predial\2020\GTO_PREDIAL_2020_apaseo_el_grande.json
+apaseo_el_grande,Apaseo El Grande,2021,tarifa_millar,True,10,0,0,0,0,,data\guanajuato\json_predial\2021\GTO_PREDIAL_2021_apaseo_el_grande.json
 apaseo_el_grande,Apaseo El Grande,2022,tarifa_millar,True,12,0,0,0,0,,data\guanajuato\json_predial\2022\GTO_PREDIAL_2022_apaseo_el_grande.json
 apaseo_el_grande,Apaseo El Grande,2023,tarifa_millar,True,12,0,0,0,0,,data\guanajuato\json_predial\2023\GTO_PREDIAL_2023_apaseo_el_grande.json
 apaseo_el_grande,Apaseo El Grande,2024,tarifa_millar,True,12,0,0,0,0,,data\guanajuato\json_predial\2024\GTO_PREDIAL_2024_apaseo_el_grande.json
@@ -64,6 +65,7 @@ atarjea,Atarjea,2017,tarifa_millar,True,9,0,0,0,0,cambio_esquema_cuota_fija_a_ta
 atarjea,Atarjea,2018,tarifa_millar,True,11,0,0,0,0,,data\guanajuato\json_predial\2018\GTO_PREDIAL_2018_atarjea.json
 atarjea,Atarjea,2019,tarifa_millar,True,11,0,0,0,0,,data\guanajuato\json_predial\2019\GTO_PREDIAL_2019_atarjea.json
 atarjea,Atarjea,2020,tarifa_millar,True,11,0,0,0,0,,data\guanajuato\json_predial\2020\GTO_PREDIAL_2020_atarjea.json
+atarjea,Atarjea,2021,tarifa_millar,True,12,0,0,0,0,,data\guanajuato\json_predial\2021\GTO_PREDIAL_2021_atarjea.json
 atarjea,Atarjea,2022,tarifa_millar,True,12,0,0,0,0,,data\guanajuato\json_predial\2022\GTO_PREDIAL_2022_atarjea.json
 atarjea,Atarjea,2023,tarifa_millar,True,12,0,0,0,0,,data\guanajuato\json_predial\2023\GTO_PREDIAL_2023_atarjea.json
 atarjea,Atarjea,2024,tarifa_millar,True,9,0,0,0,0,,data\guanajuato\json_predial\2024\GTO_PREDIAL_2024_atarjea.json
@@ -76,10 +78,11 @@ celaya,Celaya,2015,tarifa_millar,True,11,0,0,0,0,,data\guanajuato\json_predial\2
 celaya,Celaya,2017,tarifa_millar,True,11,0,0,0,0,,data\guanajuato\json_predial\2017\GTO_PREDIAL_2017_celaya.json
 celaya,Celaya,2018,tarifa_millar,True,11,0,0,0,0,,data\guanajuato\json_predial\2018\GTO_PREDIAL_2018_celaya.json
 celaya,Celaya,2020,progresivo,True,13,7,0,0,0,cambio_esquema_tarifa_millar_a_progresivo_desde_2018|tipo_progresivo_con_tabla_tarifa_no_vacia,data\guanajuato\json_predial\2020\GTO_PREDIAL_2020_celaya.json
-celaya,Celaya,2022,progresivo,False,5,0,0,0,0,cambio_brusco_n_filas_20_a_5|tipo_progresivo_con_tabla_tarifa_no_vacia|tipo_progresivo_sin_filas,data\guanajuato\json_predial\2022\GTO_PREDIAL_2022_celaya.json
-celaya,Celaya,2023,desconocido,False,0,0,0,0,0,,data\guanajuato\json_predial\2023\GTO_PREDIAL_2023_celaya.json
-celaya,Celaya,2024,progresivo,False,0,26,0,0,0,prog_row1_inferior_vacio|prog_row11_inferior_vacio|prog_row14_inferior_vacio|prog_row16_inferior_vacio|prog_row18_inferior_vacio|prog_row19_inferior_vacio|prog_row21_inferior_vacio|prog_row24_inferior_vacio|prog_row13_superior_null_no_ultimo,data\guanajuato\json_predial\2024\GTO_PREDIAL_2024_celaya.json
-celaya,Celaya,2026,mixto,True,0,0,0,0,13,mixta_row1_columnas_vacias|mixta_row2_columnas_vacias|mixta_row3_columnas_vacias|mixta_row4_columnas_vacias|mixta_row5_columnas_vacias|mixta_row6_columnas_vacias|mixta_row7_columnas_vacias|mixta_row8_columnas_vacias|mixta_row9_columnas_vacias|mixta_row10_columnas_vacias|mixta_row11_columnas_vacias|mixta_row12_columnas_vacias|mixta_row13_columnas_vacias,data\guanajuato\json_predial\2026\GTO_PREDIAL_2026_celaya.json
+celaya,Celaya,2021,progresivo,True,13,7,0,0,0,tipo_progresivo_con_tabla_tarifa_no_vacia,data\guanajuato\json_predial\2021\GTO_PREDIAL_2021_celaya.json
+celaya,Celaya,2022,progresivo,True,5,0,0,0,0,cambio_brusco_n_filas_20_a_5|tipo_progresivo_con_tabla_tarifa_no_vacia|tipo_progresivo_sin_filas,data\guanajuato\json_predial\2022\GTO_PREDIAL_2022_celaya.json
+celaya,Celaya,2023,progresivo,True,0,26,0,0,0,cambio_brusco_n_filas_5_a_26|prog_row10_n_rango_no_int|prog_row11_n_rango_no_int|prog_row12_n_rango_no_int|prog_row13_n_rango_no_int|prog_row14_n_rango_no_int|prog_row15_n_rango_no_int|prog_row16_n_rango_no_int|prog_row17_n_rango_no_int|prog_row18_n_rango_no_int|prog_row19_n_rango_no_int|prog_row1_n_rango_no_int|prog_row20_n_rango_no_int|prog_row21_n_rango_no_int|prog_row22_n_rango_no_int|prog_row23_n_rango_no_int|prog_row24_n_rango_no_int|prog_row25_n_rango_no_int|prog_row26_n_rango_no_int|prog_row2_n_rango_no_int|prog_row3_n_rango_no_int|prog_row4_n_rango_no_int|prog_row5_n_rango_no_int|prog_row6_n_rango_no_int|prog_row7_n_rango_no_int|prog_row8_n_rango_no_int|prog_row9_n_rango_no_int,data\guanajuato\json_predial\2023\GTO_PREDIAL_2023_celaya.json
+celaya,Celaya,2024,progresivo,True,0,26,0,0,0,prog_row13_superior_null_no_ultimo|prog_row14_solape_con_anterior,data\guanajuato\json_predial\2024\GTO_PREDIAL_2024_celaya.json
+celaya,Celaya,2026,mixto,True,0,0,0,0,13,cambio_esquema_progresivo_a_mixto_desde_2024|mixta_row10_columnas_vacias|mixta_row11_columnas_vacias|mixta_row12_columnas_vacias|mixta_row13_columnas_vacias|mixta_row1_columnas_vacias|mixta_row2_columnas_vacias|mixta_row3_columnas_vacias|mixta_row4_columnas_vacias|mixta_row5_columnas_vacias|mixta_row6_columnas_vacias|mixta_row7_columnas_vacias|mixta_row8_columnas_vacias|mixta_row9_columnas_vacias,data\guanajuato\json_predial\2026\GTO_PREDIAL_2026_celaya.json
 comonfort,Comonfort,2010,tarifa_millar,True,10,0,0,0,0,,data\guanajuato\json_predial\2010\GTO_PREDIAL_2010_comonfort.json
 comonfort,Comonfort,2011,cuota_fija,True,0,0,0,1,0,cambio_esquema_tarifa_millar_a_cuota_fija_desde_2010,data\guanajuato\json_predial\2011\GTO_PREDIAL_2011_comonfort.json
 comonfort,Comonfort,2012,tarifa_millar,True,11,0,0,0,0,cambio_esquema_cuota_fija_a_tarifa_millar_desde_2011,data\guanajuato\json_predial\2012\GTO_PREDIAL_2012_comonfort.json
@@ -89,21 +92,22 @@ comonfort,Comonfort,2017,tarifa_millar,True,8,0,0,0,0,,data\guanajuato\json_pred
 comonfort,Comonfort,2018,tarifa_millar,True,11,0,0,0,0,,data\guanajuato\json_predial\2018\GTO_PREDIAL_2018_comonfort.json
 comonfort,Comonfort,2019,tarifa_millar,True,11,0,0,0,0,,data\guanajuato\json_predial\2019\GTO_PREDIAL_2019_comonfort.json
 comonfort,Comonfort,2020,tarifa_millar,True,11,0,0,0,0,,data\guanajuato\json_predial\2020\GTO_PREDIAL_2020_comonfort.json
+comonfort,Comonfort,2021,tarifa_millar,True,12,0,0,0,0,,data\guanajuato\json_predial\2021\GTO_PREDIAL_2021_comonfort.json
 comonfort,Comonfort,2022,tarifa_millar,True,12,0,0,0,0,,data\guanajuato\json_predial\2022\GTO_PREDIAL_2022_comonfort.json
 comonfort,Comonfort,2023,tarifa_millar,True,12,0,0,0,0,,data\guanajuato\json_predial\2023\GTO_PREDIAL_2023_comonfort.json
 comonfort,Comonfort,2024,tarifa_millar,True,12,0,0,0,0,,data\guanajuato\json_predial\2024\GTO_PREDIAL_2024_comonfort.json
 comonfort,Comonfort,2025,tarifa_millar,True,11,0,0,0,0,,data\guanajuato\json_predial\2025\GTO_PREDIAL_2025_comonfort.json
 comonfort,Comonfort,2026,tarifa_millar,True,12,0,0,0,0,,data\guanajuato\json_predial\2026\GTO_PREDIAL_2026_comonfort.json
-coroneo,Coroneo,2010,desconocido,False,0,0,0,0,0,,data\guanajuato\json_predial\2010\GTO_PREDIAL_2010_coroneo.json
+coroneo,Coroneo,2010,tarifa_millar,True,11,0,0,0,0,,data\guanajuato\json_predial\2010\GTO_PREDIAL_2010_coroneo.json
 coroneo,Coroneo,2011,tarifa_millar,True,9,0,0,0,0,,data\guanajuato\json_predial\2011\GTO_PREDIAL_2011_coroneo.json
-coroneo,Coroneo,2012,tarifa_millar,False,0,0,0,0,0,tipo_tarifa_millar_sin_filas,data\guanajuato\json_predial\2012\GTO_PREDIAL_2012_coroneo.json
+coroneo,Coroneo,2012,tarifa_millar,True,11,0,0,0,0,,data\guanajuato\json_predial\2012\GTO_PREDIAL_2012_coroneo.json
 coroneo,Coroneo,2014,tarifa_millar,True,11,0,0,0,0,,data\guanajuato\json_predial\2014\GTO_PREDIAL_2014_coroneo.json
 coroneo,Coroneo,2015,tarifa_millar,True,11,0,0,0,0,,data\guanajuato\json_predial\2015\GTO_PREDIAL_2015_coroneo.json
 coroneo,Coroneo,2017,tarifa_millar,True,10,0,0,0,0,,data\guanajuato\json_predial\2017\GTO_PREDIAL_2017_coroneo.json
 coroneo,Coroneo,2019,desconocido,False,0,0,0,0,0,,data\guanajuato\json_predial\2019\GTO_PREDIAL_2019_coroneo.json
 coroneo,Coroneo,2020,tarifa_millar,True,11,0,0,0,0,,data\guanajuato\json_predial\2020\GTO_PREDIAL_2020_coroneo.json
 coroneo,Coroneo,2022,tarifa_millar,True,12,0,0,0,0,,data\guanajuato\json_predial\2022\GTO_PREDIAL_2022_coroneo.json
-coroneo,Coroneo,2024,desconocido,False,0,0,0,0,0,,data\guanajuato\json_predial\2024\GTO_PREDIAL_2024_coroneo.json
+coroneo,Coroneo,2024,tarifa_millar,True,12,0,0,0,0,,data\guanajuato\json_predial\2024\GTO_PREDIAL_2024_coroneo.json
 cortazar,Cortazar,2010,tarifa_millar,True,9,0,0,0,0,,data\guanajuato\json_predial\2010\GTO_PREDIAL_2010_cortazar.json
 cortazar,Cortazar,2011,tarifa_millar,True,11,0,0,0,0,,data\guanajuato\json_predial\2011\GTO_PREDIAL_2011_cortazar.json
 cortazar,Cortazar,2012,tarifa_millar,True,11,0,0,0,0,,data\guanajuato\json_predial\2012\GTO_PREDIAL_2012_cortazar.json
@@ -113,19 +117,21 @@ cortazar,Cortazar,2017,tarifa_millar,True,11,0,0,0,0,,data\guanajuato\json_predi
 cortazar,Cortazar,2018,tarifa_millar,True,11,0,0,0,0,,data\guanajuato\json_predial\2018\GTO_PREDIAL_2018_cortazar.json
 cortazar,Cortazar,2019,tarifa_millar,True,11,0,0,0,0,,data\guanajuato\json_predial\2019\GTO_PREDIAL_2019_cortazar.json
 cortazar,Cortazar,2020,tarifa_millar,True,11,0,0,0,0,,data\guanajuato\json_predial\2020\GTO_PREDIAL_2020_cortazar.json
-cortazar,Cortazar,2022,tarifa_millar,True,11,0,0,0,0,,data\guanajuato\json_predial\2022\GTO_PREDIAL_2022_cortazar.json
+cortazar,Cortazar,2021,cuota_fija,True,0,0,0,37,0,cambio_esquema_tarifa_millar_a_cuota_fija_desde_2020,data\guanajuato\json_predial\2021\GTO_PREDIAL_2021_cortazar.json
+cortazar,Cortazar,2022,tarifa_millar,True,11,0,0,0,0,cambio_esquema_cuota_fija_a_tarifa_millar_desde_2021,data\guanajuato\json_predial\2022\GTO_PREDIAL_2022_cortazar.json
 cortazar,Cortazar,2023,tarifa_millar,True,11,0,0,0,0,,data\guanajuato\json_predial\2023\GTO_PREDIAL_2023_cortazar.json
 cortazar,Cortazar,2024,tarifa_millar,True,11,0,0,0,0,,data\guanajuato\json_predial\2024\GTO_PREDIAL_2024_cortazar.json
 cortazar,Cortazar,2025,tarifa_millar,True,11,0,0,0,0,,data\guanajuato\json_predial\2025\GTO_PREDIAL_2025_cortazar.json
 cortazar,Cortazar,2026,tarifa_millar,True,11,0,0,0,0,,data\guanajuato\json_predial\2026\GTO_PREDIAL_2026_cortazar.json
 cueramaro,Cueramaro,2010,tarifa_millar,True,9,0,0,0,0,,data\guanajuato\json_predial\2010\GTO_PREDIAL_2010_cueramaro.json
 cueramaro,Cueramaro,2011,tarifa_millar,True,11,0,0,0,0,,data\guanajuato\json_predial\2011\GTO_PREDIAL_2011_cueramaro.json
-cueramaro,Cueramaro,2012,desconocido,False,0,0,0,0,0,,data\guanajuato\json_predial\2012\GTO_PREDIAL_2012_cueramaro.json
+cueramaro,Cueramaro,2012,tarifa_millar,True,11,0,0,0,0,,data\guanajuato\json_predial\2012\GTO_PREDIAL_2012_cueramaro.json
 cueramaro,Cueramaro,2014,tarifa_millar,True,11,0,0,0,0,,data\guanajuato\json_predial\2014\GTO_PREDIAL_2014_cueramaro.json
 cueramaro,Cueramaro,2015,tarifa_millar,True,11,0,0,0,0,,data\guanajuato\json_predial\2015\GTO_PREDIAL_2015_cueramaro.json
 cueramaro,Cueramaro,2017,tarifa_millar,True,9,0,0,0,0,,data\guanajuato\json_predial\2017\GTO_PREDIAL_2017_cueramaro.json
 cueramaro,Cueramaro,2018,tarifa_millar,True,11,0,0,0,0,,data\guanajuato\json_predial\2018\GTO_PREDIAL_2018_cueramaro.json
 cueramaro,Cueramaro,2020,tarifa_millar,True,11,0,0,0,0,,data\guanajuato\json_predial\2020\GTO_PREDIAL_2020_cueramaro.json
+cueramaro,Cueramaro,2021,tarifa_millar,True,12,0,0,0,0,,data\guanajuato\json_predial\2021\GTO_PREDIAL_2021_cueramaro.json
 cueramaro,Cueramaro,2022,tarifa_millar,True,12,0,0,0,0,,data\guanajuato\json_predial\2022\GTO_PREDIAL_2022_cueramaro.json
 cueramaro,Cueramaro,2023,tarifa_millar,True,12,0,0,0,0,,data\guanajuato\json_predial\2023\GTO_PREDIAL_2023_cueramaro.json
 cueramaro,Cueramaro,2024,tarifa_millar,True,12,0,0,0,0,,data\guanajuato\json_predial\2024\GTO_PREDIAL_2024_cueramaro.json
@@ -164,8 +170,8 @@ guanajuato,Guanajuato,2017,tarifa_millar,True,9,0,0,0,0,,data\guanajuato\json_pr
 guanajuato,Guanajuato,2018,tarifa_millar,True,6,0,0,0,0,,data\guanajuato\json_predial\2018\GTO_PREDIAL_2018_guanajuato.json
 guanajuato,Guanajuato,2019,desconocido,False,0,0,0,0,0,,data\guanajuato\json_predial\2019\GTO_PREDIAL_2019_guanajuato.json
 guanajuato,Guanajuato,2020,tarifa_millar,True,6,0,0,0,0,,data\guanajuato\json_predial\2020\GTO_PREDIAL_2020_guanajuato.json
-guanajuato,Guanajuato,2024,progresivo,False,0,21,0,0,0,cambio_brusco_n_filas_6_a_21|prog_row10_n_rango_no_int|prog_row11_n_rango_no_int|prog_row12_n_rango_no_int|prog_row13_n_rango_no_int|prog_row14_n_rango_no_int|prog_row15_n_rango_no_int|prog_row16_n_rango_no_int|prog_row17_n_rango_no_int|prog_row18_n_rango_no_int|prog_row19_n_rango_no_int|prog_row1_n_rango_no_int|prog_row20_n_rango_no_int|prog_row21_n_rango_no_int|prog_row2_n_rango_no_int|prog_row3_n_rango_no_int|prog_row4_n_rango_no_int|prog_row5_n_rango_no_int|prog_row6_n_rango_no_int|prog_row7_n_rango_no_int|prog_row8_n_rango_no_int|prog_row9_n_rango_no_int,data\guanajuato\json_predial\2024\GTO_PREDIAL_2024_guanajuato.json
-guanajuato,Guanajuato,2025,progresivo,False,0,21,0,0,0,prog_row7_superior_null_no_ultimo|prog_row8_solape_con_anterior|prog_row14_superior_null_no_ultimo|prog_row15_solape_con_anterior,data\guanajuato\json_predial\2025\GTO_PREDIAL_2025_guanajuato.json
+guanajuato,Guanajuato,2024,progresivo,True,0,21,0,0,0,cambio_brusco_n_filas_6_a_21|cambio_esquema_tarifa_millar_a_progresivo_desde_2020|prog_row10_n_rango_no_int|prog_row11_n_rango_no_int|prog_row12_n_rango_no_int|prog_row13_n_rango_no_int|prog_row14_n_rango_no_int|prog_row15_n_rango_no_int|prog_row16_n_rango_no_int|prog_row17_n_rango_no_int|prog_row18_n_rango_no_int|prog_row19_n_rango_no_int|prog_row1_n_rango_no_int|prog_row20_n_rango_no_int|prog_row21_n_rango_no_int|prog_row2_n_rango_no_int|prog_row3_n_rango_no_int|prog_row4_n_rango_no_int|prog_row5_n_rango_no_int|prog_row6_n_rango_no_int|prog_row7_n_rango_no_int|prog_row8_n_rango_no_int|prog_row9_n_rango_no_int,data\guanajuato\json_predial\2024\GTO_PREDIAL_2024_guanajuato.json
+guanajuato,Guanajuato,2025,mixto,True,0,0,0,0,21,cambio_esquema_progresivo_a_mixto_desde_2024|mixta_row10_columnas_vacias|mixta_row11_columnas_vacias|mixta_row12_columnas_vacias|mixta_row13_columnas_vacias|mixta_row14_columnas_vacias|mixta_row15_columnas_vacias|mixta_row16_columnas_vacias|mixta_row17_columnas_vacias|mixta_row18_columnas_vacias|mixta_row19_columnas_vacias|mixta_row1_columnas_vacias|mixta_row20_columnas_vacias|mixta_row21_columnas_vacias|mixta_row2_columnas_vacias|mixta_row3_columnas_vacias|mixta_row4_columnas_vacias|mixta_row5_columnas_vacias|mixta_row6_columnas_vacias|mixta_row7_columnas_vacias|mixta_row8_columnas_vacias|mixta_row9_columnas_vacias,data\guanajuato\json_predial\2025\GTO_PREDIAL_2025_guanajuato.json
 guanajuato,Guanajuato,2026,mixto,True,0,0,0,0,21,mixta_row1_columnas_vacias|mixta_row2_columnas_vacias|mixta_row3_columnas_vacias|mixta_row4_columnas_vacias|mixta_row5_columnas_vacias|mixta_row6_columnas_vacias|mixta_row7_columnas_vacias|mixta_row8_columnas_vacias|mixta_row9_columnas_vacias|mixta_row10_columnas_vacias|mixta_row11_columnas_vacias|mixta_row12_columnas_vacias|mixta_row13_columnas_vacias|mixta_row14_columnas_vacias|mixta_row15_columnas_vacias|mixta_row16_columnas_vacias|mixta_row17_columnas_vacias|mixta_row18_columnas_vacias|mixta_row19_columnas_vacias|mixta_row20_columnas_vacias|mixta_row21_columnas_vacias,data\guanajuato\json_predial\2026\GTO_PREDIAL_2026_guanajuato.json
 huanimaro,Huanimaro,2010,tarifa_millar,True,11,0,0,0,0,,data\guanajuato\json_predial\2010\GTO_PREDIAL_2010_huanimaro.json
 huanimaro,Huanimaro,2011,tarifa_millar,True,11,0,0,0,0,,data\guanajuato\json_predial\2011\GTO_PREDIAL_2011_huanimaro.json
@@ -183,17 +189,17 @@ huanimaro,Huanimaro,2025,tarifa_millar,True,3,0,0,0,0,cambio_brusco_n_filas_12_a
 huanimaro,Huanimaro,2026,tarifa_millar,True,12,0,0,0,0,cambio_brusco_n_filas_3_a_12,data\guanajuato\json_predial\2026\GTO_PREDIAL_2026_huanimaro.json
 irapuato,Irapuato,2011,tarifa_millar,True,15,0,0,0,0,,data\guanajuato\json_predial\2011\GTO_PREDIAL_2011_irapuato.json
 irapuato,Irapuato,2012,tarifa_millar,True,15,0,0,0,0,,data\guanajuato\json_predial\2012\GTO_PREDIAL_2012_irapuato.json
-irapuato,Irapuato,2014,desconocido,False,0,0,0,0,0,,data\guanajuato\json_predial\2014\GTO_PREDIAL_2014_irapuato.json
-irapuato,Irapuato,2015,tarifa_millar,True,15,0,0,0,0,,data\guanajuato\json_predial\2015\GTO_PREDIAL_2015_irapuato.json
+irapuato,Irapuato,2014,cuota_fija,True,0,0,0,47,0,cambio_esquema_tarifa_millar_a_cuota_fija_desde_2012,data\guanajuato\json_predial\2014\GTO_PREDIAL_2014_irapuato.json
+irapuato,Irapuato,2015,tarifa_millar,True,15,0,0,0,0,cambio_esquema_cuota_fija_a_tarifa_millar_desde_2014,data\guanajuato\json_predial\2015\GTO_PREDIAL_2015_irapuato.json
 irapuato,Irapuato,2017,tarifa_millar,True,15,0,0,0,0,,data\guanajuato\json_predial\2017\GTO_PREDIAL_2017_irapuato.json
 irapuato,Irapuato,2018,tarifa_millar,True,15,0,0,0,0,,data\guanajuato\json_predial\2018\GTO_PREDIAL_2018_irapuato.json
 irapuato,Irapuato,2019,tarifa_millar,True,15,0,0,0,0,,data\guanajuato\json_predial\2019\GTO_PREDIAL_2019_irapuato.json
 irapuato,Irapuato,2020,progresivo,True,5,24,0,0,0,cambio_esquema_tarifa_millar_a_progresivo_desde_2019|tipo_progresivo_con_tabla_tarifa_no_vacia,data\guanajuato\json_predial\2020\GTO_PREDIAL_2020_irapuato.json
-irapuato,Irapuato,2022,desconocido,False,0,0,0,0,0,,data\guanajuato\json_predial\2022\GTO_PREDIAL_2022_irapuato.json
+irapuato,Irapuato,2022,progresivo,True,5,24,0,0,0,tipo_progresivo_con_tabla_tarifa_no_vacia,data\guanajuato\json_predial\2022\GTO_PREDIAL_2022_irapuato.json
 irapuato,Irapuato,2023,progresivo,True,3,24,0,0,0,tipo_progresivo_con_tabla_tarifa_no_vacia,data\guanajuato\json_predial\2023\GTO_PREDIAL_2023_irapuato.json
-irapuato,Irapuato,2024,progresivo,False,2,58,0,0,0,cambio_brusco_n_filas_27_a_60|prog_row24_superior_null_no_ultimo|prog_row25_solape_con_anterior|prog_row48_superior_null_no_ultimo|prog_row49_solape_con_anterior|tipo_progresivo_con_tabla_tarifa_no_vacia,data\guanajuato\json_predial\2024\GTO_PREDIAL_2024_irapuato.json
-irapuato,Irapuato,2025,mixto,False,2,0,0,0,0,cambio_brusco_n_filas_60_a_2,data\guanajuato\json_predial\2025\GTO_PREDIAL_2025_irapuato.json
-irapuato,Irapuato,2026,progresivo,False,3,48,0,0,0,cambio_brusco_n_filas_2_a_51|prog_row24_superior_null_no_ultimo|prog_row25_solape_con_anterior|tipo_progresivo_con_tabla_tarifa_no_vacia,data\guanajuato\json_predial\2026\GTO_PREDIAL_2026_irapuato.json
+irapuato,Irapuato,2024,progresivo,True,3,24,0,0,0,tipo_progresivo_con_tabla_tarifa_no_vacia,data\guanajuato\json_predial\2024\GTO_PREDIAL_2024_irapuato.json
+irapuato,Irapuato,2025,progresivo,True,3,24,0,0,0,tipo_progresivo_con_tabla_tarifa_no_vacia,data\guanajuato\json_predial\2025\GTO_PREDIAL_2025_irapuato.json
+irapuato,Irapuato,2026,progresivo,False,3,23,0,0,0,tipo_progresivo_con_tabla_tarifa_no_vacia|prog_row9_hueco_con_anterior,data\guanajuato\json_predial\2026\GTO_PREDIAL_2026_irapuato.json
 jaral_del_progreso,Jaral Del Progreso,2011,tarifa_millar,True,11,0,0,0,0,,data\guanajuato\json_predial\2011\GTO_PREDIAL_2011_jaral_del_progreso.json
 jaral_del_progreso,Jaral Del Progreso,2012,tarifa_millar,True,9,0,0,0,0,,data\guanajuato\json_predial\2012\GTO_PREDIAL_2012_jaral_del_progreso.json
 jaral_del_progreso,Jaral Del Progreso,2014,tarifa_millar,True,9,0,0,0,0,,data\guanajuato\json_predial\2014\GTO_PREDIAL_2014_jaral_del_progreso.json
@@ -202,6 +208,7 @@ jaral_del_progreso,Jaral Del Progreso,2017,tarifa_millar,True,12,0,0,0,0,,data\g
 jaral_del_progreso,Jaral Del Progreso,2018,tarifa_millar,True,3,0,0,0,0,cambio_brusco_n_filas_12_a_3,data\guanajuato\json_predial\2018\GTO_PREDIAL_2018_jaral_del_progreso.json
 jaral_del_progreso,Jaral Del Progreso,2019,tarifa_millar,True,12,0,0,0,0,cambio_brusco_n_filas_3_a_12,data\guanajuato\json_predial\2019\GTO_PREDIAL_2019_jaral_del_progreso.json
 jaral_del_progreso,Jaral Del Progreso,2020,tarifa_millar,True,12,0,0,0,0,,data\guanajuato\json_predial\2020\GTO_PREDIAL_2020_jaral_del_progreso.json
+jaral_del_progreso,Jaral Del Progreso,2021,tarifa_millar,True,12,0,0,0,0,,data\guanajuato\json_predial\2021\GTO_PREDIAL_2021_jaral_del_progreso.json
 jaral_del_progreso,Jaral Del Progreso,2022,tarifa_millar,True,12,0,0,0,0,,data\guanajuato\json_predial\2022\GTO_PREDIAL_2022_jaral_del_progreso.json
 jaral_del_progreso,Jaral Del Progreso,2023,tarifa_millar,True,12,0,0,0,0,,data\guanajuato\json_predial\2023\GTO_PREDIAL_2023_jaral_del_progreso.json
 jaral_del_progreso,Jaral Del Progreso,2024,tarifa_millar,True,12,0,0,0,0,,data\guanajuato\json_predial\2024\GTO_PREDIAL_2024_jaral_del_progreso.json
@@ -216,25 +223,27 @@ jerecuaro,Jerecuaro,2017,tarifa_millar,True,11,0,0,0,0,,data\guanajuato\json_pre
 jerecuaro,Jerecuaro,2018,tarifa_millar,True,12,0,0,0,0,,data\guanajuato\json_predial\2018\GTO_PREDIAL_2018_jerecuaro.json
 jerecuaro,Jerecuaro,2019,tarifa_millar,True,11,0,0,0,0,,data\guanajuato\json_predial\2019\GTO_PREDIAL_2019_jerecuaro.json
 jerecuaro,Jerecuaro,2020,tarifa_millar,True,11,0,0,0,0,,data\guanajuato\json_predial\2020\GTO_PREDIAL_2020_jerecuaro.json
+jerecuaro,Jerecuaro,2021,tarifa_millar,True,12,0,0,0,0,,data\guanajuato\json_predial\2021\GTO_PREDIAL_2021_jerecuaro.json
 jerecuaro,Jerecuaro,2022,tarifa_millar,True,12,0,0,0,0,,data\guanajuato\json_predial\2022\GTO_PREDIAL_2022_jerecuaro.json
 jerecuaro,Jerecuaro,2023,tarifa_millar,True,9,0,0,0,0,,data\guanajuato\json_predial\2023\GTO_PREDIAL_2023_jerecuaro.json
 jerecuaro,Jerecuaro,2024,tarifa_millar,True,12,0,0,0,0,,data\guanajuato\json_predial\2024\GTO_PREDIAL_2024_jerecuaro.json
 jerecuaro,Jerecuaro,2025,tarifa_millar,True,9,0,0,0,0,,data\guanajuato\json_predial\2025\GTO_PREDIAL_2025_jerecuaro.json
 jerecuaro,Jerecuaro,2026,tarifa_millar,True,12,0,0,0,0,,data\guanajuato\json_predial\2026\GTO_PREDIAL_2026_jerecuaro.json
 leon,Leon,2011,tarifa_millar,True,5,0,0,0,0,,data\guanajuato\json_predial\2011\GTO_PREDIAL_2011_leon.json
-leon,Leon,2012,desconocido,False,0,0,0,0,0,,data\guanajuato\json_predial\2012\GTO_PREDIAL_2012_leon.json
+leon,Leon,2012,mixto,True,6,0,0,0,14,cambio_esquema_tarifa_millar_a_mixto_desde_2011|mixta_row10_columnas_vacias|mixta_row11_columnas_vacias|mixta_row12_columnas_vacias|mixta_row13_columnas_vacias|mixta_row14_columnas_vacias|mixta_row1_columnas_vacias|mixta_row2_columnas_vacias|mixta_row3_columnas_vacias|mixta_row4_columnas_vacias|mixta_row5_columnas_vacias|mixta_row6_columnas_vacias|mixta_row7_columnas_vacias|mixta_row8_columnas_vacias|mixta_row9_columnas_vacias,data\guanajuato\json_predial\2012\GTO_PREDIAL_2012_leon.json
 leon,Leon,2014,mixto,True,6,0,0,0,21,mixta_row1_columnas_vacias|mixta_row2_columnas_vacias|mixta_row3_columnas_vacias|mixta_row4_columnas_vacias|mixta_row5_columnas_vacias|mixta_row6_columnas_vacias|mixta_row7_columnas_vacias|mixta_row8_columnas_vacias|mixta_row9_columnas_vacias|mixta_row10_columnas_vacias|mixta_row11_columnas_vacias|mixta_row12_columnas_vacias|mixta_row13_columnas_vacias|mixta_row14_columnas_vacias|mixta_row15_columnas_vacias|mixta_row16_columnas_vacias|mixta_row17_columnas_vacias|mixta_row18_columnas_vacias|mixta_row19_columnas_vacias|mixta_row20_columnas_vacias|mixta_row21_columnas_vacias,data\guanajuato\json_predial\2014\GTO_PREDIAL_2014_leon.json
 leon,Leon,2015,tarifa_millar,True,27,0,0,0,0,cambio_brusco_n_filas_6_a_27|cambio_esquema_mixto_a_tarifa_millar_desde_2014,data\guanajuato\json_predial\2015\GTO_PREDIAL_2015_leon.json
-leon,Leon,2017,desconocido,False,0,0,0,0,0,,data\guanajuato\json_predial\2017\GTO_PREDIAL_2017_leon.json
-leon,Leon,2018,tarifa_millar,True,6,0,0,0,0,,data\guanajuato\json_predial\2018\GTO_PREDIAL_2018_leon.json
-leon,Leon,2019,desconocido,False,0,0,0,0,0,,data\guanajuato\json_predial\2019\GTO_PREDIAL_2019_leon.json
-leon,Leon,2020,desconocido,False,0,0,0,0,0,,data\guanajuato\json_predial\2020\GTO_PREDIAL_2020_leon.json
-leon,Leon,2022,mixto,False,0,12,0,0,0,prog_row1_n_rango_no_int|prog_row2_n_rango_no_int|prog_row3_n_rango_no_int|prog_row4_n_rango_no_int|prog_row5_n_rango_no_int|prog_row6_n_rango_no_int|prog_row7_n_rango_no_int|prog_row8_n_rango_no_int|prog_row9_n_rango_no_int|prog_row10_n_rango_no_int|prog_row11_n_rango_no_int|prog_row12_n_rango_no_int,data\guanajuato\json_predial\2022\GTO_PREDIAL_2022_leon.json
-leon,Leon,2023,progresivo,False,0,12,0,0,0,prog_row1_n_rango_no_int|prog_row2_n_rango_no_int|prog_row3_n_rango_no_int|prog_row4_n_rango_no_int|prog_row5_n_rango_no_int|prog_row6_n_rango_no_int|prog_row7_n_rango_no_int|prog_row8_n_rango_no_int|prog_row9_n_rango_no_int|prog_row10_n_rango_no_int|prog_row11_n_rango_no_int|prog_row12_n_rango_no_int,data\guanajuato\json_predial\2023\GTO_PREDIAL_2023_leon.json
-leon,Leon,2024,desconocido,False,0,0,0,0,0,,data\guanajuato\json_predial\2024\GTO_PREDIAL_2024_leon.json
-leon,Leon,2025,progresivo,False,0,18,0,0,0,prog_row1_n_rango_no_int|prog_row2_n_rango_no_int|prog_row3_n_rango_no_int|prog_row4_n_rango_no_int|prog_row5_n_rango_no_int|prog_row6_n_rango_no_int|prog_row7_n_rango_no_int|prog_row8_n_rango_no_int|prog_row9_n_rango_no_int|prog_row10_n_rango_no_int|prog_row11_n_rango_no_int|prog_row12_n_rango_no_int|prog_row13_n_rango_no_int|prog_row14_n_rango_no_int|prog_row15_n_rango_no_int|prog_row16_n_rango_no_int|prog_row17_n_rango_no_int|prog_row18_n_rango_no_int,data\guanajuato\json_predial\2025\GTO_PREDIAL_2025_leon.json
-leon,Leon,2026,mixto,False,0,24,0,0,0,prog_row12_superior_null_no_ultimo|prog_row13_solape_con_anterior,data\guanajuato\json_predial\2026\GTO_PREDIAL_2026_leon.json
-lrapuato,Lrapuato,2019,desconocido,False,0,0,0,0,0,,data\guanajuato\json_predial\2019\GTO_PREDIAL_2019_lrapuato.json
+leon,Leon,2017,tasa_unica,True,0,0,2,0,0,cambio_esquema_tarifa_millar_a_tasa_unica_desde_2015,data\guanajuato\json_predial\2017\GTO_PREDIAL_2017_leon.json
+leon,Leon,2018,tarifa_millar,True,6,0,0,0,0,cambio_esquema_tasa_unica_a_tarifa_millar_desde_2017,data\guanajuato\json_predial\2018\GTO_PREDIAL_2018_leon.json
+leon,Leon,2019,progresivo,True,0,0,0,0,0,cambio_esquema_tarifa_millar_a_progresivo_desde_2018|tipo_progresivo_sin_filas,data\guanajuato\json_predial\2019\GTO_PREDIAL_2019_leon.json
+leon,Leon,2020,progresivo,True,0,0,0,0,0,tipo_progresivo_sin_filas,data\guanajuato\json_predial\2020\GTO_PREDIAL_2020_leon.json
+leon,Leon,2021,progresivo,True,0,6,0,0,0,,data\guanajuato\json_predial\2021\GTO_PREDIAL_2021_leon.json
+leon,Leon,2022,progresivo,True,0,12,0,0,0,prog_row6_superior_null_no_ultimo|prog_row7_solape_con_anterior,data\guanajuato\json_predial\2022\GTO_PREDIAL_2022_leon.json
+leon,Leon,2023,mixto,True,0,0,0,0,34,cambio_esquema_progresivo_a_mixto_desde_2022|mixta_row10_columnas_vacias|mixta_row11_columnas_vacias|mixta_row12_columnas_vacias|mixta_row13_columnas_vacias|mixta_row14_columnas_vacias|mixta_row15_columnas_vacias|mixta_row16_columnas_vacias|mixta_row17_columnas_vacias|mixta_row18_columnas_vacias|mixta_row19_columnas_vacias|mixta_row1_columnas_vacias|mixta_row20_columnas_vacias|mixta_row21_columnas_vacias|mixta_row22_columnas_vacias|mixta_row23_columnas_vacias|mixta_row24_columnas_vacias|mixta_row25_columnas_vacias|mixta_row26_columnas_vacias|mixta_row27_columnas_vacias|mixta_row28_columnas_vacias|mixta_row29_columnas_vacias|mixta_row2_columnas_vacias|mixta_row30_columnas_vacias|mixta_row31_columnas_vacias|mixta_row32_columnas_vacias|mixta_row33_columnas_vacias|mixta_row34_columnas_vacias|mixta_row3_columnas_vacias|mixta_row4_columnas_vacias|mixta_row5_columnas_vacias|mixta_row6_columnas_vacias|mixta_row7_columnas_vacias|mixta_row8_columnas_vacias|mixta_row9_columnas_vacias,data\guanajuato\json_predial\2023\GTO_PREDIAL_2023_leon.json
+leon,Leon,2024,progresivo,True,0,6,0,0,0,cambio_esquema_mixto_a_progresivo_desde_2023,data\guanajuato\json_predial\2024\GTO_PREDIAL_2024_leon.json
+leon,Leon,2025,progresivo,True,0,18,0,0,0,cambio_brusco_n_filas_6_a_18|prog_row10_n_rango_no_int|prog_row11_n_rango_no_int|prog_row12_n_rango_no_int|prog_row13_n_rango_no_int|prog_row14_n_rango_no_int|prog_row15_n_rango_no_int|prog_row16_n_rango_no_int|prog_row17_n_rango_no_int|prog_row18_n_rango_no_int|prog_row1_n_rango_no_int|prog_row2_n_rango_no_int|prog_row3_n_rango_no_int|prog_row4_n_rango_no_int|prog_row5_n_rango_no_int|prog_row6_n_rango_no_int|prog_row7_n_rango_no_int|prog_row8_n_rango_no_int|prog_row9_n_rango_no_int,data\guanajuato\json_predial\2025\GTO_PREDIAL_2025_leon.json
+leon,Leon,2026,progresivo,True,0,24,0,0,0,prog_row1_n_rango_no_int|prog_row2_n_rango_no_int|prog_row3_n_rango_no_int|prog_row4_n_rango_no_int|prog_row5_n_rango_no_int|prog_row6_n_rango_no_int|prog_row7_n_rango_no_int|prog_row8_n_rango_no_int|prog_row9_n_rango_no_int|prog_row10_n_rango_no_int|prog_row11_n_rango_no_int|prog_row12_n_rango_no_int|prog_row13_n_rango_no_int|prog_row14_n_rango_no_int|prog_row15_n_rango_no_int|prog_row16_n_rango_no_int|prog_row17_n_rango_no_int|prog_row18_n_rango_no_int|prog_row19_n_rango_no_int|prog_row20_n_rango_no_int|prog_row21_n_rango_no_int|prog_row22_n_rango_no_int|prog_row23_n_rango_no_int|prog_row24_n_rango_no_int,data\guanajuato\json_predial\2026\GTO_PREDIAL_2026_leon.json
+lrapuato,Lrapuato,2019,tarifa_millar,True,14,0,0,0,0,,data\guanajuato\json_predial\2019\GTO_PREDIAL_2019_lrapuato.json
 manuel_doblado,Manuel Doblado,2010,tarifa_millar,True,11,0,0,0,0,,data\guanajuato\json_predial\2010\GTO_PREDIAL_2010_manuel_doblado.json
 manuel_doblado,Manuel Doblado,2014,tarifa_millar,True,11,0,0,0,0,,data\guanajuato\json_predial\2014\GTO_PREDIAL_2014_manuel_doblado.json
 manuel_doblado,Manuel Doblado,2015,tarifa_millar,True,10,0,0,0,0,,data\guanajuato\json_predial\2015\GTO_PREDIAL_2015_manuel_doblado.json
@@ -242,6 +251,7 @@ manuel_doblado,Manuel Doblado,2017,tarifa_millar,True,11,0,0,0,0,,data\guanajuat
 manuel_doblado,Manuel Doblado,2018,tarifa_millar,True,12,0,0,0,0,,data\guanajuato\json_predial\2018\GTO_PREDIAL_2018_manuel_doblado.json
 manuel_doblado,Manuel Doblado,2019,tarifa_millar,True,11,0,0,0,0,,data\guanajuato\json_predial\2019\GTO_PREDIAL_2019_manuel_doblado.json
 manuel_doblado,Manuel Doblado,2020,tarifa_millar,True,11,0,0,0,0,,data\guanajuato\json_predial\2020\GTO_PREDIAL_2020_manuel_doblado.json
+manuel_doblado,Manuel Doblado,2021,tarifa_millar,True,11,0,0,0,0,,data\guanajuato\json_predial\2021\GTO_PREDIAL_2021_manuel_doblado.json
 manuel_doblado,Manuel Doblado,2022,tarifa_millar,True,12,0,0,0,0,,data\guanajuato\json_predial\2022\GTO_PREDIAL_2022_manuel_doblado.json
 manuel_doblado,Manuel Doblado,2023,tarifa_millar,True,12,0,0,0,0,,data\guanajuato\json_predial\2023\GTO_PREDIAL_2023_manuel_doblado.json
 manuel_doblado,Manuel Doblado,2024,tarifa_millar,True,12,0,0,0,0,,data\guanajuato\json_predial\2024\GTO_PREDIAL_2024_manuel_doblado.json
@@ -251,15 +261,16 @@ moroleon,Moroleon,2010,tarifa_millar,True,11,0,0,0,0,,data\guanajuato\json_predi
 moroleon,Moroleon,2011,tarifa_millar,True,11,0,0,0,0,,data\guanajuato\json_predial\2011\GTO_PREDIAL_2011_moroleon.json
 moroleon,Moroleon,2012,tarifa_millar,True,11,0,0,0,0,,data\guanajuato\json_predial\2012\GTO_PREDIAL_2012_moroleon.json
 moroleon,Moroleon,2014,tarifa_millar,True,9,0,0,0,0,,data\guanajuato\json_predial\2014\GTO_PREDIAL_2014_moroleon.json
-moroleon,Moroleon,2015,tarifa_millar,False,9,0,0,0,0,,data\guanajuato\json_predial\2015\GTO_PREDIAL_2015_moroleon.json
+moroleon,Moroleon,2015,tarifa_millar,True,11,0,0,0,0,,data\guanajuato\json_predial\2015\GTO_PREDIAL_2015_moroleon.json
 moroleon,Moroleon,2017,tarifa_millar,True,11,0,0,0,0,,data\guanajuato\json_predial\2017\GTO_PREDIAL_2017_moroleon.json
 moroleon,Moroleon,2018,tarifa_millar,True,11,0,0,0,0,,data\guanajuato\json_predial\2018\GTO_PREDIAL_2018_moroleon.json
 moroleon,Moroleon,2019,tarifa_millar,True,8,0,0,0,0,,data\guanajuato\json_predial\2019\GTO_PREDIAL_2019_moroleon.json
 moroleon,Moroleon,2020,mixto,True,5,0,0,0,18,cambio_esquema_tarifa_millar_a_mixto_desde_2019|mixta_row10_columnas_vacias|mixta_row11_columnas_vacias|mixta_row12_columnas_vacias|mixta_row13_columnas_vacias|mixta_row14_columnas_vacias|mixta_row15_columnas_vacias|mixta_row16_columnas_vacias|mixta_row17_columnas_vacias|mixta_row18_columnas_vacias|mixta_row1_columnas_vacias|mixta_row2_columnas_vacias|mixta_row3_columnas_vacias|mixta_row4_columnas_vacias|mixta_row5_columnas_vacias|mixta_row6_columnas_vacias|mixta_row7_columnas_vacias|mixta_row8_columnas_vacias|mixta_row9_columnas_vacias,data\guanajuato\json_predial\2020\GTO_PREDIAL_2020_moroleon.json
-moroleon,Moroleon,2022,progresivo,True,5,18,0,0,0,cambio_brusco_n_filas_5_a_23|cambio_esquema_mixto_a_progresivo_desde_2020|prog_row12_superior_null_no_ultimo|prog_row13_solape_con_anterior|prog_row6_superior_null_no_ultimo|prog_row7_solape_con_anterior|tipo_progresivo_con_tabla_tarifa_no_vacia,data\guanajuato\json_predial\2022\GTO_PREDIAL_2022_moroleon.json
+moroleon,Moroleon,2021,mixto,True,5,0,0,0,18,mixta_row1_columnas_vacias|mixta_row2_columnas_vacias|mixta_row3_columnas_vacias|mixta_row4_columnas_vacias|mixta_row5_columnas_vacias|mixta_row6_columnas_vacias|mixta_row7_columnas_vacias|mixta_row8_columnas_vacias|mixta_row9_columnas_vacias|mixta_row10_columnas_vacias|mixta_row11_columnas_vacias|mixta_row12_columnas_vacias|mixta_row13_columnas_vacias|mixta_row14_columnas_vacias|mixta_row15_columnas_vacias|mixta_row16_columnas_vacias|mixta_row17_columnas_vacias|mixta_row18_columnas_vacias,data\guanajuato\json_predial\2021\GTO_PREDIAL_2021_moroleon.json
+moroleon,Moroleon,2022,progresivo,True,5,18,0,0,0,cambio_brusco_n_filas_5_a_23|cambio_esquema_mixto_a_progresivo_desde_2021|prog_row12_superior_null_no_ultimo|prog_row13_solape_con_anterior|prog_row6_superior_null_no_ultimo|prog_row7_solape_con_anterior|tipo_progresivo_con_tabla_tarifa_no_vacia,data\guanajuato\json_predial\2022\GTO_PREDIAL_2022_moroleon.json
 moroleon,Moroleon,2023,progresivo,True,5,18,0,0,0,tipo_progresivo_con_tabla_tarifa_no_vacia|prog_row6_superior_null_no_ultimo|prog_row7_solape_con_anterior|prog_row12_superior_null_no_ultimo|prog_row13_solape_con_anterior,data\guanajuato\json_predial\2023\GTO_PREDIAL_2023_moroleon.json
-moroleon,Moroleon,2024,progresivo,False,3,18,0,0,0,tipo_progresivo_con_tabla_tarifa_no_vacia|prog_row1_n_rango_no_int|prog_row2_n_rango_no_int|prog_row3_n_rango_no_int|prog_row4_n_rango_no_int|prog_row5_n_rango_no_int|prog_row6_n_rango_no_int|prog_row7_n_rango_no_int|prog_row8_n_rango_no_int|prog_row9_n_rango_no_int|prog_row10_n_rango_no_int|prog_row11_n_rango_no_int|prog_row12_n_rango_no_int|prog_row13_n_rango_no_int|prog_row14_n_rango_no_int|prog_row15_n_rango_no_int|prog_row16_n_rango_no_int|prog_row17_n_rango_no_int|prog_row18_n_rango_no_int,data\guanajuato\json_predial\2024\GTO_PREDIAL_2024_moroleon.json
-moroleon,Moroleon,2025,mixto,True,5,0,0,0,18,cambio_brusco_n_filas_21_a_5|mixta_row10_columnas_vacias|mixta_row11_columnas_vacias|mixta_row12_columnas_vacias|mixta_row13_columnas_vacias|mixta_row14_columnas_vacias|mixta_row15_columnas_vacias|mixta_row16_columnas_vacias|mixta_row17_columnas_vacias|mixta_row18_columnas_vacias|mixta_row1_columnas_vacias|mixta_row2_columnas_vacias|mixta_row3_columnas_vacias|mixta_row4_columnas_vacias|mixta_row5_columnas_vacias|mixta_row6_columnas_vacias|mixta_row7_columnas_vacias|mixta_row8_columnas_vacias|mixta_row9_columnas_vacias,data\guanajuato\json_predial\2025\GTO_PREDIAL_2025_moroleon.json
+moroleon,Moroleon,2024,progresivo,True,5,18,0,0,0,tipo_progresivo_con_tabla_tarifa_no_vacia|prog_row1_n_rango_no_int|prog_row2_n_rango_no_int|prog_row3_n_rango_no_int|prog_row4_n_rango_no_int|prog_row5_n_rango_no_int|prog_row6_n_rango_no_int|prog_row7_n_rango_no_int|prog_row8_n_rango_no_int|prog_row9_n_rango_no_int|prog_row10_n_rango_no_int|prog_row11_n_rango_no_int|prog_row12_n_rango_no_int|prog_row13_n_rango_no_int|prog_row14_n_rango_no_int|prog_row15_n_rango_no_int|prog_row16_n_rango_no_int|prog_row17_n_rango_no_int|prog_row18_n_rango_no_int,data\guanajuato\json_predial\2024\GTO_PREDIAL_2024_moroleon.json
+moroleon,Moroleon,2025,mixto,True,5,0,0,0,18,cambio_brusco_n_filas_23_a_5|cambio_esquema_progresivo_a_mixto_desde_2024|mixta_row10_columnas_vacias|mixta_row11_columnas_vacias|mixta_row12_columnas_vacias|mixta_row13_columnas_vacias|mixta_row14_columnas_vacias|mixta_row15_columnas_vacias|mixta_row16_columnas_vacias|mixta_row17_columnas_vacias|mixta_row18_columnas_vacias|mixta_row1_columnas_vacias|mixta_row2_columnas_vacias|mixta_row3_columnas_vacias|mixta_row4_columnas_vacias|mixta_row5_columnas_vacias|mixta_row6_columnas_vacias|mixta_row7_columnas_vacias|mixta_row8_columnas_vacias|mixta_row9_columnas_vacias,data\guanajuato\json_predial\2025\GTO_PREDIAL_2025_moroleon.json
 moroleon,Moroleon,2026,mixto,True,3,0,0,0,18,mixta_row1_columnas_vacias|mixta_row2_columnas_vacias|mixta_row3_columnas_vacias|mixta_row4_columnas_vacias|mixta_row5_columnas_vacias|mixta_row6_columnas_vacias|mixta_row7_columnas_vacias|mixta_row8_columnas_vacias|mixta_row9_columnas_vacias|mixta_row10_columnas_vacias|mixta_row11_columnas_vacias|mixta_row12_columnas_vacias|mixta_row13_columnas_vacias|mixta_row14_columnas_vacias|mixta_row15_columnas_vacias|mixta_row16_columnas_vacias|mixta_row17_columnas_vacias|mixta_row18_columnas_vacias,data\guanajuato\json_predial\2026\GTO_PREDIAL_2026_moroleon.json
 ocampo,Ocampo,2010,tarifa_millar,True,11,0,0,0,0,,data\guanajuato\json_predial\2010\GTO_PREDIAL_2010_ocampo.json
 ocampo,Ocampo,2011,tarifa_millar,True,11,0,0,0,0,,data\guanajuato\json_predial\2011\GTO_PREDIAL_2011_ocampo.json
@@ -270,11 +281,13 @@ ocampo,Ocampo,2017,tarifa_millar,True,3,0,0,0,0,cambio_brusco_n_filas_9_a_3,data
 ocampo,Ocampo,2018,tarifa_millar,True,11,0,0,0,0,cambio_brusco_n_filas_3_a_11,data\guanajuato\json_predial\2018\GTO_PREDIAL_2018_ocampo.json
 ocampo,Ocampo,2019,tarifa_millar,True,10,0,0,0,0,,data\guanajuato\json_predial\2019\GTO_PREDIAL_2019_ocampo.json
 ocampo,Ocampo,2020,tarifa_millar,True,11,0,0,0,0,,data\guanajuato\json_predial\2020\GTO_PREDIAL_2020_ocampo.json
-ocampo,Ocampo,2022,tarifa_millar,True,12,0,0,0,0,,data\guanajuato\json_predial\2022\GTO_PREDIAL_2022_ocampo.json
+ocampo,Ocampo,2021,cuota_fija,True,0,0,0,27,0,cambio_esquema_tarifa_millar_a_cuota_fija_desde_2020,data\guanajuato\json_predial\2021\GTO_PREDIAL_2021_ocampo.json
+ocampo,Ocampo,2022,tarifa_millar,True,12,0,0,0,0,cambio_esquema_cuota_fija_a_tarifa_millar_desde_2021,data\guanajuato\json_predial\2022\GTO_PREDIAL_2022_ocampo.json
 ocampo,Ocampo,2023,tarifa_millar,True,12,0,0,0,0,,data\guanajuato\json_predial\2023\GTO_PREDIAL_2023_ocampo.json
 ocampo,Ocampo,2024,tarifa_millar,True,12,0,0,0,0,,data\guanajuato\json_predial\2024\GTO_PREDIAL_2024_ocampo.json
 ocampo,Ocampo,2025,tarifa_millar,True,12,0,0,0,0,,data\guanajuato\json_predial\2025\GTO_PREDIAL_2025_ocampo.json
 ocampo,Ocampo,2026,tarifa_millar,True,8,0,0,0,0,,data\guanajuato\json_predial\2026\GTO_PREDIAL_2026_ocampo.json
+penjamo,Penjamo,2010,tarifa_millar,True,12,0,0,0,0,,data\guanajuato\json_predial\2010\GTO_PREDIAL_2010_penjamo.json
 penjamo,Penjamo,2011,tarifa_millar,True,11,0,0,0,0,,data\guanajuato\json_predial\2011\GTO_PREDIAL_2011_penjamo.json
 penjamo,Penjamo,2012,tarifa_millar,True,11,0,0,0,0,,data\guanajuato\json_predial\2012\GTO_PREDIAL_2012_penjamo.json
 penjamo,Penjamo,2014,tarifa_millar,True,11,0,0,0,0,,data\guanajuato\json_predial\2014\GTO_PREDIAL_2014_penjamo.json
@@ -283,12 +296,12 @@ penjamo,Penjamo,2017,tarifa_millar,True,11,0,0,0,0,,data\guanajuato\json_predial
 penjamo,Penjamo,2018,tarifa_millar,True,9,0,0,0,0,,data\guanajuato\json_predial\2018\GTO_PREDIAL_2018_penjamo.json
 penjamo,Penjamo,2019,tarifa_millar,True,11,0,0,0,0,,data\guanajuato\json_predial\2019\GTO_PREDIAL_2019_penjamo.json
 penjamo,Penjamo,2020,progresivo,True,8,10,0,0,0,cambio_esquema_tarifa_millar_a_progresivo_desde_2019|prog_row2_superior_null_no_ultimo|prog_row3_hueco_con_anterior|prog_row7_superior_null_no_ultimo|prog_row8_hueco_con_anterior|tipo_progresivo_con_tabla_tarifa_no_vacia,data\guanajuato\json_predial\2020\GTO_PREDIAL_2020_penjamo.json
+penjamo,Penjamo,2021,progresivo,True,8,10,0,0,0,tipo_progresivo_con_tabla_tarifa_no_vacia,data\guanajuato\json_predial\2021\GTO_PREDIAL_2021_penjamo.json
 penjamo,Penjamo,2022,progresivo,True,8,10,0,0,0,tipo_progresivo_con_tabla_tarifa_no_vacia|prog_row3_superior_null_no_ultimo|prog_row9_superior_null_no_ultimo,data\guanajuato\json_predial\2022\GTO_PREDIAL_2022_penjamo.json
 penjamo,Penjamo,2023,progresivo,True,8,10,0,0,0,tipo_progresivo_con_tabla_tarifa_no_vacia,data\guanajuato\json_predial\2023\GTO_PREDIAL_2023_penjamo.json
 penjamo,Penjamo,2024,progresivo,True,8,10,0,0,0,tipo_progresivo_con_tabla_tarifa_no_vacia,data\guanajuato\json_predial\2024\GTO_PREDIAL_2024_penjamo.json
 penjamo,Penjamo,2025,progresivo,True,8,10,0,0,0,tipo_progresivo_con_tabla_tarifa_no_vacia,data\guanajuato\json_predial\2025\GTO_PREDIAL_2025_penjamo.json
 penjamo,Penjamo,2026,progresivo,True,8,10,0,0,0,tipo_progresivo_con_tabla_tarifa_no_vacia,data\guanajuato\json_predial\2026\GTO_PREDIAL_2026_penjamo.json
-penjiamo_guanaj_jato,Penjiamo Guanaj Jato,2010,tarifa_millar,True,12,0,0,0,0,,data\guanajuato\json_predial\2010\GTO_PREDIAL_2010_penjiamo_guanaj_jato.json
 pueblo_nuevo,Pueblo Nuevo,2011,tarifa_millar,True,11,0,0,0,0,,data\guanajuato\json_predial\2011\GTO_PREDIAL_2011_pueblo_nuevo.json
 pueblo_nuevo,Pueblo Nuevo,2012,tarifa_millar,True,11,0,0,0,0,,data\guanajuato\json_predial\2012\GTO_PREDIAL_2012_pueblo_nuevo.json
 pueblo_nuevo,Pueblo Nuevo,2014,tarifa_millar,True,11,0,0,0,0,,data\guanajuato\json_predial\2014\GTO_PREDIAL_2014_pueblo_nuevo.json
@@ -297,6 +310,7 @@ pueblo_nuevo,Pueblo Nuevo,2017,tarifa_millar,True,9,0,0,0,0,,data\guanajuato\jso
 pueblo_nuevo,Pueblo Nuevo,2018,tarifa_millar,True,11,0,0,0,0,,data\guanajuato\json_predial\2018\GTO_PREDIAL_2018_pueblo_nuevo.json
 pueblo_nuevo,Pueblo Nuevo,2019,tarifa_millar,True,11,0,0,0,0,,data\guanajuato\json_predial\2019\GTO_PREDIAL_2019_pueblo_nuevo.json
 pueblo_nuevo,Pueblo Nuevo,2020,tarifa_millar,True,11,0,0,0,0,,data\guanajuato\json_predial\2020\GTO_PREDIAL_2020_pueblo_nuevo.json
+pueblo_nuevo,Pueblo Nuevo,2021,tarifa_millar,True,11,0,0,0,0,,data\guanajuato\json_predial\2021\GTO_PREDIAL_2021_pueblo_nuevo.json
 pueblo_nuevo,Pueblo Nuevo,2022,tarifa_millar,True,12,0,0,0,0,,data\guanajuato\json_predial\2022\GTO_PREDIAL_2022_pueblo_nuevo.json
 pueblo_nuevo,Pueblo Nuevo,2023,tarifa_millar,True,12,0,0,0,0,,data\guanajuato\json_predial\2023\GTO_PREDIAL_2023_pueblo_nuevo.json
 pueblo_nuevo,Pueblo Nuevo,2024,tarifa_millar,True,12,0,0,0,0,,data\guanajuato\json_predial\2024\GTO_PREDIAL_2024_pueblo_nuevo.json
@@ -310,7 +324,7 @@ purisima_del_rincon,Purisima Del Rincon,2017,tarifa_millar,True,11,0,0,0,0,,data
 purisima_del_rincon,Purisima Del Rincon,2018,tarifa_millar,True,11,0,0,0,0,,data\guanajuato\json_predial\2018\GTO_PREDIAL_2018_purisima_del_rincon.json
 purisima_del_rincon,Purisima Del Rincon,2019,tarifa_millar,True,10,0,0,0,0,,data\guanajuato\json_predial\2019\GTO_PREDIAL_2019_purisima_del_rincon.json
 purisima_del_rincon,Purisima Del Rincon,2020,tarifa_millar,True,12,0,0,0,0,,data\guanajuato\json_predial\2020\GTO_PREDIAL_2020_purisima_del_rincon.json
-purisima_del_rincon,Purisima Del Rincon,2021,desconocido,False,0,0,0,0,0,,data\guanajuato\json_predial\2021\GTO_PREDIAL_2021_purisima_del_rincon.json
+purisima_del_rincon,Purisima Del Rincon,2021,tarifa_millar,True,12,0,0,0,0,,data\guanajuato\json_predial\2021\GTO_PREDIAL_2021_purisima_del_rincon.json
 purisima_del_rincon,Purisima Del Rincon,2022,tarifa_millar,True,12,0,0,0,0,,data\guanajuato\json_predial\2022\GTO_PREDIAL_2022_purisima_del_rincon.json
 purisima_del_rincon,Purisima Del Rincon,2023,tarifa_millar,True,12,0,0,0,0,,data\guanajuato\json_predial\2023\GTO_PREDIAL_2023_purisima_del_rincon.json
 purisima_del_rincon,Purisima Del Rincon,2024,tarifa_millar,True,12,0,0,0,0,,data\guanajuato\json_predial\2024\GTO_PREDIAL_2024_purisima_del_rincon.json
@@ -324,10 +338,11 @@ romita,Romita,2015,tarifa_millar,True,11,0,0,0,0,,data\guanajuato\json_predial\2
 romita,Romita,2017,tarifa_millar,True,11,0,0,0,0,,data\guanajuato\json_predial\2017\GTO_PREDIAL_2017_romita.json
 romita,Romita,2019,tarifa_millar,True,11,0,0,0,0,,data\guanajuato\json_predial\2019\GTO_PREDIAL_2019_romita.json
 romita,Romita,2020,progresivo,True,8,13,0,0,0,cambio_esquema_tarifa_millar_a_progresivo_desde_2019|tipo_progresivo_con_tabla_tarifa_no_vacia,data\guanajuato\json_predial\2020\GTO_PREDIAL_2020_romita.json
+romita,Romita,2021,progresivo,True,8,13,0,0,0,tipo_progresivo_con_tabla_tarifa_no_vacia|prog_row3_superior_null_no_ultimo|prog_row4_superior_null_no_ultimo|prog_row5_hueco_con_anterior|prog_row6_superior_null_no_ultimo|prog_row7_hueco_con_anterior|prog_row9_superior_null_no_ultimo|prog_row10_hueco_con_anterior|prog_row12_superior_null_no_ultimo,data\guanajuato\json_predial\2021\GTO_PREDIAL_2021_romita.json
 romita,Romita,2022,progresivo,True,8,13,0,0,0,tipo_progresivo_con_tabla_tarifa_no_vacia,data\guanajuato\json_predial\2022\GTO_PREDIAL_2022_romita.json
 romita,Romita,2023,progresivo,True,8,13,0,0,0,tipo_progresivo_con_tabla_tarifa_no_vacia,data\guanajuato\json_predial\2023\GTO_PREDIAL_2023_romita.json
-romita,Romita,2024,progresivo,False,8,13,0,0,0,tipo_progresivo_con_tabla_tarifa_no_vacia|prog_row5_inferior_vacio|prog_row6_inferior_vacio|prog_row10_inferior_vacio|prog_row12_inferior_vacio,data\guanajuato\json_predial\2024\GTO_PREDIAL_2024_romita.json
-romita,Romita,2025,progresivo,True,8,13,0,0,0,tipo_progresivo_con_tabla_tarifa_no_vacia,data\guanajuato\json_predial\2025\GTO_PREDIAL_2025_romita.json
+romita,Romita,2024,mixto,True,0,0,0,1,6,cambio_esquema_progresivo_a_mixto_desde_2023|mixta_row1_columnas_vacias|mixta_row2_columnas_vacias|mixta_row3_columnas_vacias|mixta_row4_columnas_vacias|mixta_row5_columnas_vacias|mixta_row6_columnas_vacias,data\guanajuato\json_predial\2024\GTO_PREDIAL_2024_romita.json
+romita,Romita,2025,progresivo,True,8,13,0,0,0,cambio_esquema_mixto_a_progresivo_desde_2024|tipo_progresivo_con_tabla_tarifa_no_vacia,data\guanajuato\json_predial\2025\GTO_PREDIAL_2025_romita.json
 romita,Romita,2026,progresivo,True,8,13,0,0,0,tipo_progresivo_con_tabla_tarifa_no_vacia,data\guanajuato\json_predial\2026\GTO_PREDIAL_2026_romita.json
 salamanca,Salamanca,2010,tarifa_millar,True,11,0,0,0,0,,data\guanajuato\json_predial\2010\GTO_PREDIAL_2010_salamanca.json
 salamanca,Salamanca,2011,tarifa_millar,True,11,0,0,0,0,,data\guanajuato\json_predial\2011\GTO_PREDIAL_2011_salamanca.json
@@ -338,6 +353,7 @@ salamanca,Salamanca,2017,tarifa_millar,True,11,0,0,0,0,,data\guanajuato\json_pre
 salamanca,Salamanca,2018,tarifa_millar,True,9,0,0,0,0,,data\guanajuato\json_predial\2018\GTO_PREDIAL_2018_salamanca.json
 salamanca,Salamanca,2019,tarifa_millar,True,11,0,0,0,0,,data\guanajuato\json_predial\2019\GTO_PREDIAL_2019_salamanca.json
 salamanca,Salamanca,2020,tarifa_millar,True,11,0,0,0,0,,data\guanajuato\json_predial\2020\GTO_PREDIAL_2020_salamanca.json
+salamanca,Salamanca,2021,tarifa_millar,True,11,0,0,0,0,,data\guanajuato\json_predial\2021\GTO_PREDIAL_2021_salamanca.json
 salamanca,Salamanca,2022,tarifa_millar,True,11,0,0,0,0,,data\guanajuato\json_predial\2022\GTO_PREDIAL_2022_salamanca.json
 salamanca,Salamanca,2023,tarifa_millar,True,12,0,0,0,0,,data\guanajuato\json_predial\2023\GTO_PREDIAL_2023_salamanca.json
 salamanca,Salamanca,2024,tarifa_millar,True,12,0,0,0,0,,data\guanajuato\json_predial\2024\GTO_PREDIAL_2024_salamanca.json
@@ -351,7 +367,8 @@ salvatierra,Salvatierra,2017,tarifa_millar,True,9,0,0,0,0,cambio_brusco_n_filas_
 salvatierra,Salvatierra,2018,tarifa_millar,True,11,0,0,0,0,,data\guanajuato\json_predial\2018\GTO_PREDIAL_2018_salvatierra.json
 salvatierra,Salvatierra,2019,tarifa_millar,True,11,0,0,0,0,,data\guanajuato\json_predial\2019\GTO_PREDIAL_2019_salvatierra.json
 salvatierra,Salvatierra,2020,tarifa_millar,True,9,0,0,0,0,,data\guanajuato\json_predial\2020\GTO_PREDIAL_2020_salvatierra.json
-salvatierra,Salvatierra,2022,tarifa_millar,True,12,0,0,0,0,,data\guanajuato\json_predial\2022\GTO_PREDIAL_2022_salvatierra.json
+salvatierra,Salvatierra,2021,tarifa_millar,True,3,0,0,0,0,cambio_brusco_n_filas_9_a_3,data\guanajuato\json_predial\2021\GTO_PREDIAL_2021_salvatierra.json
+salvatierra,Salvatierra,2022,tarifa_millar,True,12,0,0,0,0,cambio_brusco_n_filas_3_a_12,data\guanajuato\json_predial\2022\GTO_PREDIAL_2022_salvatierra.json
 salvatierra,Salvatierra,2023,progresivo,True,12,5,0,0,0,cambio_esquema_tarifa_millar_a_progresivo_desde_2022|tipo_progresivo_con_tabla_tarifa_no_vacia,data\guanajuato\json_predial\2023\GTO_PREDIAL_2023_salvatierra.json
 salvatierra,Salvatierra,2024,progresivo,True,12,5,0,0,0,tipo_progresivo_con_tabla_tarifa_no_vacia,data\guanajuato\json_predial\2024\GTO_PREDIAL_2024_salvatierra.json
 salvatierra,Salvatierra,2025,progresivo,True,12,5,0,0,0,tipo_progresivo_con_tabla_tarifa_no_vacia,data\guanajuato\json_predial\2025\GTO_PREDIAL_2025_salvatierra.json
@@ -365,6 +382,7 @@ san_diego_de_la_union,San Diego De La Union,2017,tarifa_millar,True,11,0,0,0,0,,
 san_diego_de_la_union,San Diego De La Union,2018,tarifa_millar,True,11,0,0,0,0,,data\guanajuato\json_predial\2018\GTO_PREDIAL_2018_san_diego_de_la_union.json
 san_diego_de_la_union,San Diego De La Union,2019,tarifa_millar,True,9,0,0,0,0,,data\guanajuato\json_predial\2019\GTO_PREDIAL_2019_san_diego_de_la_union.json
 san_diego_de_la_union,San Diego De La Union,2020,tarifa_millar,True,11,0,0,0,0,,data\guanajuato\json_predial\2020\GTO_PREDIAL_2020_san_diego_de_la_union.json
+san_diego_de_la_union,San Diego De La Union,2021,tarifa_millar,True,12,0,0,0,0,,data\guanajuato\json_predial\2021\GTO_PREDIAL_2021_san_diego_de_la_union.json
 san_diego_de_la_union,San Diego De La Union,2022,tarifa_millar,True,12,0,0,0,0,,data\guanajuato\json_predial\2022\GTO_PREDIAL_2022_san_diego_de_la_union.json
 san_diego_de_la_union,San Diego De La Union,2023,tarifa_millar,True,12,0,0,0,0,,data\guanajuato\json_predial\2023\GTO_PREDIAL_2023_san_diego_de_la_union.json
 san_diego_de_la_union,San Diego De La Union,2025,tarifa_millar,True,12,0,0,0,0,,data\guanajuato\json_predial\2025\GTO_PREDIAL_2025_san_diego_de_la_union.json
@@ -374,13 +392,14 @@ san_felipe,San Felipe,2011,tarifa_millar,True,11,0,0,0,0,,data\guanajuato\json_p
 san_felipe,San Felipe,2012,tarifa_millar,True,9,0,0,0,0,,data\guanajuato\json_predial\2012\GTO_PREDIAL_2012_san_felipe.json
 san_felipe,San Felipe,2014,tarifa_millar,True,11,0,0,0,0,,data\guanajuato\json_predial\2014\GTO_PREDIAL_2014_san_felipe.json
 san_felipe,San Felipe,2015,tarifa_millar,True,11,0,0,0,0,,data\guanajuato\json_predial\2015\GTO_PREDIAL_2015_san_felipe.json
-san_felipe,San Felipe,2017,desconocido,False,0,0,0,0,0,,data\guanajuato\json_predial\2017\GTO_PREDIAL_2017_san_felipe.json
+san_felipe,San Felipe,2017,tarifa_millar,True,11,0,0,0,0,,data\guanajuato\json_predial\2017\GTO_PREDIAL_2017_san_felipe.json
 san_felipe,San Felipe,2019,tarifa_millar,True,11,0,0,0,0,,data\guanajuato\json_predial\2019\GTO_PREDIAL_2019_san_felipe.json
 san_felipe,San Felipe,2020,tarifa_millar,True,11,0,0,0,0,,data\guanajuato\json_predial\2020\GTO_PREDIAL_2020_san_felipe.json
-san_felipe,San Felipe,2022,tarifa_millar,True,12,0,0,0,0,,data\guanajuato\json_predial\2022\GTO_PREDIAL_2022_san_felipe.json
+san_felipe,San Felipe,2021,cuota_fija,True,0,0,0,56,0,cambio_esquema_tarifa_millar_a_cuota_fija_desde_2020,data\guanajuato\json_predial\2021\GTO_PREDIAL_2021_san_felipe.json
+san_felipe,San Felipe,2022,tarifa_millar,True,12,0,0,0,0,cambio_esquema_cuota_fija_a_tarifa_millar_desde_2021,data\guanajuato\json_predial\2022\GTO_PREDIAL_2022_san_felipe.json
 san_felipe,San Felipe,2023,tarifa_millar,True,12,0,0,0,0,,data\guanajuato\json_predial\2023\GTO_PREDIAL_2023_san_felipe.json
 san_felipe,San Felipe,2025,tarifa_millar,True,12,0,0,0,0,,data\guanajuato\json_predial\2025\GTO_PREDIAL_2025_san_felipe.json
-san_felipe,San Felipe,2026,desconocido,False,0,0,0,0,0,,data\guanajuato\json_predial\2026\GTO_PREDIAL_2026_san_felipe.json
+san_felipe,San Felipe,2026,tarifa_millar,True,9,0,0,0,0,,data\guanajuato\json_predial\2026\GTO_PREDIAL_2026_san_felipe.json
 san_francisco_del_rincon,San Francisco Del Rincon,2011,tarifa_millar,True,12,0,0,0,0,,data\guanajuato\json_predial\2011\GTO_PREDIAL_2011_san_francisco_del_rincon.json
 san_francisco_del_rincon,San Francisco Del Rincon,2012,tarifa_millar,True,12,0,0,0,0,,data\guanajuato\json_predial\2012\GTO_PREDIAL_2012_san_francisco_del_rincon.json
 san_francisco_del_rincon,San Francisco Del Rincon,2014,tarifa_millar,True,12,0,0,0,0,,data\guanajuato\json_predial\2014\GTO_PREDIAL_2014_san_francisco_del_rincon.json
@@ -389,7 +408,7 @@ san_francisco_del_rincon,San Francisco Del Rincon,2017,tarifa_millar,True,12,0,0
 san_francisco_del_rincon,San Francisco Del Rincon,2018,tarifa_millar,True,12,0,0,0,0,,data\guanajuato\json_predial\2018\GTO_PREDIAL_2018_san_francisco_del_rincon.json
 san_francisco_del_rincon,San Francisco Del Rincon,2019,tarifa_millar,True,12,0,0,0,0,,data\guanajuato\json_predial\2019\GTO_PREDIAL_2019_san_francisco_del_rincon.json
 san_francisco_del_rincon,San Francisco Del Rincon,2020,mixto,True,0,0,0,0,10,cambio_esquema_tarifa_millar_a_mixto_desde_2019|mixta_row10_columnas_vacias|mixta_row1_columnas_vacias|mixta_row2_columnas_vacias|mixta_row3_columnas_vacias|mixta_row4_columnas_vacias|mixta_row5_columnas_vacias|mixta_row6_columnas_vacias|mixta_row7_columnas_vacias|mixta_row8_columnas_vacias|mixta_row9_columnas_vacias,data\guanajuato\json_predial\2020\GTO_PREDIAL_2020_san_francisco_del_rincon.json
-san_francisco_del_rincon,San Francisco Del Rincon,2021,desconocido,False,0,0,0,0,0,,data\guanajuato\json_predial\2021\GTO_PREDIAL_2021_san_francisco_del_rincon.json
+san_francisco_del_rincon,San Francisco Del Rincon,2021,progresivo,True,0,10,0,0,0,cambio_esquema_mixto_a_progresivo_desde_2020,data\guanajuato\json_predial\2021\GTO_PREDIAL_2021_san_francisco_del_rincon.json
 san_jose_iturbide,San Jose Iturbide,2010,tarifa_millar,True,11,0,0,0,0,,data\guanajuato\json_predial\2010\GTO_PREDIAL_2010_san_jose_iturbide.json
 san_jose_iturbide,San Jose Iturbide,2011,tarifa_millar,True,11,0,0,0,0,,data\guanajuato\json_predial\2011\GTO_PREDIAL_2011_san_jose_iturbide.json
 san_jose_iturbide,San Jose Iturbide,2012,tarifa_millar,True,11,0,0,0,0,,data\guanajuato\json_predial\2012\GTO_PREDIAL_2012_san_jose_iturbide.json
@@ -398,21 +417,23 @@ san_jose_iturbide,San Jose Iturbide,2015,tarifa_millar,True,11,0,0,0,0,,data\gua
 san_jose_iturbide,San Jose Iturbide,2018,tarifa_millar,True,6,0,0,0,0,,data\guanajuato\json_predial\2018\GTO_PREDIAL_2018_san_jose_iturbide.json
 san_jose_iturbide,San Jose Iturbide,2019,tarifa_millar,True,12,0,0,0,0,,data\guanajuato\json_predial\2019\GTO_PREDIAL_2019_san_jose_iturbide.json
 san_jose_iturbide,San Jose Iturbide,2020,tarifa_millar,True,11,0,0,0,0,,data\guanajuato\json_predial\2020\GTO_PREDIAL_2020_san_jose_iturbide.json
+san_jose_iturbide,San Jose Iturbide,2021,tarifa_millar,True,11,0,0,0,0,,data\guanajuato\json_predial\2021\GTO_PREDIAL_2021_san_jose_iturbide.json
 san_jose_iturbide,San Jose Iturbide,2022,tarifa_millar,True,11,0,0,0,0,,data\guanajuato\json_predial\2022\GTO_PREDIAL_2022_san_jose_iturbide.json
 san_jose_iturbide,San Jose Iturbide,2023,progresivo,True,0,11,1,0,0,cambio_esquema_tarifa_millar_a_progresivo_desde_2022|prog_row10_n_rango_no_int|prog_row11_n_rango_no_int|prog_row1_n_rango_no_int|prog_row2_n_rango_no_int|prog_row3_n_rango_no_int|prog_row4_n_rango_no_int|prog_row5_n_rango_no_int|prog_row6_n_rango_no_int|prog_row7_n_rango_no_int|prog_row8_n_rango_no_int|prog_row9_n_rango_no_int|tasa_unica_row1_unidad_no_reconocida|tipo_progresivo_con_tabla_tasa_unica_no_vacia,data\guanajuato\json_predial\2023\GTO_PREDIAL_2023_san_jose_iturbide.json
-san_jose_iturbide,San Jose Iturbide,2024,desconocido,False,0,0,0,0,0,,data\guanajuato\json_predial\2024\GTO_PREDIAL_2024_san_jose_iturbide.json
+san_jose_iturbide,San Jose Iturbide,2024,progresivo,True,0,7,0,0,0,,data\guanajuato\json_predial\2024\GTO_PREDIAL_2024_san_jose_iturbide.json
 san_luis_de_la_paz,San Luis De La Paz,2010,tarifa_millar,True,12,0,0,0,0,,data\guanajuato\json_predial\2010\GTO_PREDIAL_2010_san_luis_de_la_paz.json
-san_luis_de_la_paz,San Luis De La Paz,2011,desconocido,False,0,0,0,0,0,,data\guanajuato\json_predial\2011\GTO_PREDIAL_2011_san_luis_de_la_paz.json
+san_luis_de_la_paz,San Luis De La Paz,2011,tarifa_millar,True,12,0,0,0,0,,data\guanajuato\json_predial\2011\GTO_PREDIAL_2011_san_luis_de_la_paz.json
 san_luis_de_la_paz,San Luis De La Paz,2012,tarifa_millar,True,12,0,0,0,0,,data\guanajuato\json_predial\2012\GTO_PREDIAL_2012_san_luis_de_la_paz.json
 san_luis_de_la_paz,San Luis De La Paz,2015,tarifa_millar,True,11,0,0,0,0,,data\guanajuato\json_predial\2015\GTO_PREDIAL_2015_san_luis_de_la_paz.json
 san_luis_de_la_paz,San Luis De La Paz,2017,tarifa_millar,True,11,0,0,0,0,,data\guanajuato\json_predial\2017\GTO_PREDIAL_2017_san_luis_de_la_paz.json
 san_luis_de_la_paz,San Luis De La Paz,2018,tarifa_millar,True,11,0,0,0,0,,data\guanajuato\json_predial\2018\GTO_PREDIAL_2018_san_luis_de_la_paz.json
 san_luis_de_la_paz,San Luis De La Paz,2019,tarifa_millar,True,12,0,0,0,0,,data\guanajuato\json_predial\2019\GTO_PREDIAL_2019_san_luis_de_la_paz.json
 san_luis_de_la_paz,San Luis De La Paz,2020,tarifa_millar,True,11,0,0,0,0,,data\guanajuato\json_predial\2020\GTO_PREDIAL_2020_san_luis_de_la_paz.json
+san_luis_de_la_paz,San Luis De La Paz,2021,tarifa_millar,True,11,0,0,0,0,,data\guanajuato\json_predial\2021\GTO_PREDIAL_2021_san_luis_de_la_paz.json
 san_luis_de_la_paz,San Luis De La Paz,2022,tarifa_millar,True,11,0,0,0,0,,data\guanajuato\json_predial\2022\GTO_PREDIAL_2022_san_luis_de_la_paz.json
 san_luis_de_la_paz,San Luis De La Paz,2023,tarifa_millar,True,12,0,0,0,0,,data\guanajuato\json_predial\2023\GTO_PREDIAL_2023_san_luis_de_la_paz.json
 san_luis_de_la_paz,San Luis De La Paz,2025,progresivo,True,7,18,0,0,0,cambio_brusco_n_filas_12_a_25|cambio_esquema_tarifa_millar_a_progresivo_desde_2023|prog_row10_solape_con_anterior|prog_row9_superior_null_no_ultimo|tipo_progresivo_con_tabla_tarifa_no_vacia,data\guanajuato\json_predial\2025\GTO_PREDIAL_2025_san_luis_de_la_paz.json
-san_luis_de_la_paz,San Luis De La Paz,2026,progresivo,False,6,18,0,0,0,tipo_progresivo_con_tabla_tarifa_no_vacia|prog_row1_n_rango_no_int|prog_row2_n_rango_no_int|prog_row3_n_rango_no_int|prog_row4_n_rango_no_int|prog_row5_n_rango_no_int|prog_row6_n_rango_no_int|prog_row7_n_rango_no_int|prog_row8_n_rango_no_int|prog_row9_n_rango_no_int|prog_row10_n_rango_no_int|prog_row11_n_rango_no_int|prog_row12_n_rango_no_int|prog_row13_n_rango_no_int|prog_row14_n_rango_no_int|prog_row15_n_rango_no_int|prog_row16_n_rango_no_int|prog_row17_n_rango_no_int|prog_row18_n_rango_no_int,data\guanajuato\json_predial\2026\GTO_PREDIAL_2026_san_luis_de_la_paz.json
+san_luis_de_la_paz,San Luis De La Paz,2026,progresivo,True,7,18,0,0,0,tipo_progresivo_con_tabla_tarifa_no_vacia|prog_row9_superior_null_no_ultimo|prog_row10_solape_con_anterior,data\guanajuato\json_predial\2026\GTO_PREDIAL_2026_san_luis_de_la_paz.json
 san_miguel_de_allende,San Miguel De Allende,2010,tarifa_millar,True,15,0,0,0,0,,data\guanajuato\json_predial\2010\GTO_PREDIAL_2010_san_miguel_de_allende.json
 san_miguel_de_allende,San Miguel De Allende,2011,tarifa_millar,True,14,0,0,0,0,,data\guanajuato\json_predial\2011\GTO_PREDIAL_2011_san_miguel_de_allende.json
 san_miguel_de_allende,San Miguel De Allende,2012,tarifa_millar,True,12,0,0,0,0,,data\guanajuato\json_predial\2012\GTO_PREDIAL_2012_san_miguel_de_allende.json
@@ -422,11 +443,12 @@ san_miguel_de_allende,San Miguel De Allende,2017,tarifa_millar,True,9,0,0,0,0,ca
 san_miguel_de_allende,San Miguel De Allende,2018,tarifa_millar,True,9,0,0,0,0,,data\guanajuato\json_predial\2018\GTO_PREDIAL_2018_san_miguel_de_allende.json
 san_miguel_de_allende,San Miguel De Allende,2019,tarifa_millar,True,5,0,0,0,0,,data\guanajuato\json_predial\2019\GTO_PREDIAL_2019_san_miguel_de_allende.json
 san_miguel_de_allende,San Miguel De Allende,2020,progresivo,True,0,7,2,0,0,cambio_esquema_tarifa_millar_a_progresivo_desde_2019|prog_row2_superior_null_no_ultimo|prog_row3_hueco_con_anterior|tasa_unica_row1_unidad_no_reconocida|tasa_unica_row2_unidad_no_reconocida|tipo_progresivo_con_tabla_tasa_unica_no_vacia,data\guanajuato\json_predial\2020\GTO_PREDIAL_2020_san_miguel_de_allende.json
-san_miguel_de_allende,San Miguel De Allende,2022,progresivo,True,2,7,0,0,0,tipo_progresivo_con_tabla_tarifa_no_vacia,data\guanajuato\json_predial\2022\GTO_PREDIAL_2022_san_miguel_de_allende.json
+san_miguel_de_allende,San Miguel De Allende,2021,cuota_fija,True,0,0,0,59,0,cambio_esquema_progresivo_a_cuota_fija_desde_2020,data\guanajuato\json_predial\2021\GTO_PREDIAL_2021_san_miguel_de_allende.json
+san_miguel_de_allende,San Miguel De Allende,2022,progresivo,True,2,7,0,0,0,cambio_esquema_cuota_fija_a_progresivo_desde_2021|tipo_progresivo_con_tabla_tarifa_no_vacia,data\guanajuato\json_predial\2022\GTO_PREDIAL_2022_san_miguel_de_allende.json
 san_miguel_de_allende,San Miguel De Allende,2023,progresivo,True,0,7,2,0,0,tipo_progresivo_con_tabla_tasa_unica_no_vacia|prog_row6_superior_null_no_ultimo|tasa_unica_row1_unidad_no_reconocida|tasa_unica_row2_unidad_no_reconocida,data\guanajuato\json_predial\2023\GTO_PREDIAL_2023_san_miguel_de_allende.json
 san_miguel_de_allende,San Miguel De Allende,2024,progresivo,True,8,7,0,0,0,cambio_brusco_n_filas_7_a_15|tipo_progresivo_con_tabla_tarifa_no_vacia,data\guanajuato\json_predial\2024\GTO_PREDIAL_2024_san_miguel_de_allende.json
 san_miguel_de_allende,San Miguel De Allende,2025,progresivo,True,0,7,2,0,0,cambio_brusco_n_filas_15_a_7|tasa_unica_row1_unidad_no_reconocida|tasa_unica_row2_unidad_no_reconocida|tipo_progresivo_con_tabla_tasa_unica_no_vacia,data\guanajuato\json_predial\2025\GTO_PREDIAL_2025_san_miguel_de_allende.json
-san_miguel_de_allende,San Miguel De Allende,2026,progresivo,False,0,7,2,0,0,tipo_progresivo_con_tabla_tasa_unica_no_vacia|tasa_unica_row1_unidad_no_reconocida|tasa_unica_row2_unidad_no_reconocida,data\guanajuato\json_predial\2026\GTO_PREDIAL_2026_san_miguel_de_allende.json
+san_miguel_de_allende,San Miguel De Allende,2026,progresivo,True,0,7,2,0,0,tipo_progresivo_con_tabla_tasa_unica_no_vacia|prog_row2_superior_null_no_ultimo|prog_row3_hueco_con_anterior|prog_row4_superior_null_no_ultimo|prog_row5_hueco_con_anterior|prog_row6_superior_null_no_ultimo|tasa_unica_row1_unidad_no_reconocida|tasa_unica_row2_unidad_no_reconocida,data\guanajuato\json_predial\2026\GTO_PREDIAL_2026_san_miguel_de_allende.json
 santa_catarina,Santa Catarina,2010,tarifa_millar,True,11,0,0,0,0,,data\guanajuato\json_predial\2010\GTO_PREDIAL_2010_santa_catarina.json
 santa_catarina,Santa Catarina,2011,tarifa_millar,True,12,0,0,0,0,,data\guanajuato\json_predial\2011\GTO_PREDIAL_2011_santa_catarina.json
 santa_catarina,Santa Catarina,2012,tarifa_millar,True,11,0,0,0,0,,data\guanajuato\json_predial\2012\GTO_PREDIAL_2012_santa_catarina.json
@@ -435,9 +457,10 @@ santa_catarina,Santa Catarina,2015,tarifa_millar,True,11,0,0,0,0,,data\guanajuat
 santa_catarina,Santa Catarina,2017,tarifa_millar,True,11,0,0,0,0,,data\guanajuato\json_predial\2017\GTO_PREDIAL_2017_santa_catarina.json
 santa_catarina,Santa Catarina,2018,tarifa_millar,True,11,0,0,0,0,,data\guanajuato\json_predial\2018\GTO_PREDIAL_2018_santa_catarina.json
 santa_catarina,Santa Catarina,2020,tarifa_millar,True,11,0,0,0,0,,data\guanajuato\json_predial\2020\GTO_PREDIAL_2020_santa_catarina.json
+santa_catarina,Santa Catarina,2021,tarifa_millar,True,12,0,0,0,0,,data\guanajuato\json_predial\2021\GTO_PREDIAL_2021_santa_catarina.json
 santa_catarina,Santa Catarina,2022,tarifa_millar,True,12,0,0,0,0,,data\guanajuato\json_predial\2022\GTO_PREDIAL_2022_santa_catarina.json
 santa_catarina,Santa Catarina,2023,tarifa_millar,True,12,0,0,0,0,,data\guanajuato\json_predial\2023\GTO_PREDIAL_2023_santa_catarina.json
-santa_catarina,Santa Catarina,2024,desconocido,False,0,0,0,0,0,,data\guanajuato\json_predial\2024\GTO_PREDIAL_2024_santa_catarina.json
+santa_catarina,Santa Catarina,2024,tarifa_millar,True,12,0,0,0,0,,data\guanajuato\json_predial\2024\GTO_PREDIAL_2024_santa_catarina.json
 santa_catarina,Santa Catarina,2025,tarifa_millar,True,12,0,0,0,0,,data\guanajuato\json_predial\2025\GTO_PREDIAL_2025_santa_catarina.json
 santa_catarina,Santa Catarina,2026,tarifa_millar,True,12,0,0,0,0,,data\guanajuato\json_predial\2026\GTO_PREDIAL_2026_santa_catarina.json
 santa_cruz_de_juventino_rosas,Santa Cruz De Juventino Rosas,2010,tarifa_millar,True,9,0,0,0,0,,data\guanajuato\json_predial\2010\GTO_PREDIAL_2010_santa_cruz_de_juventino_rosas.json
@@ -449,14 +472,13 @@ santa_cruz_de_juventino_rosas,Santa Cruz De Juventino Rosas,2017,tarifa_millar,T
 santa_cruz_de_juventino_rosas,Santa Cruz De Juventino Rosas,2018,tarifa_millar,True,10,0,0,0,0,,data\guanajuato\json_predial\2018\GTO_PREDIAL_2018_santa_cruz_de_juventino_rosas.json
 santa_cruz_de_juventino_rosas,Santa Cruz De Juventino Rosas,2019,tarifa_millar,True,11,0,0,0,0,,data\guanajuato\json_predial\2019\GTO_PREDIAL_2019_santa_cruz_de_juventino_rosas.json
 santa_cruz_de_juventino_rosas,Santa Cruz De Juventino Rosas,2020,tarifa_millar,True,11,0,0,0,0,,data\guanajuato\json_predial\2020\GTO_PREDIAL_2020_santa_cruz_de_juventino_rosas.json
-santa_cruz_de_juventino_rosas,Santa Cruz De Juventino Rosas,2021,desconocido,False,0,0,0,0,0,,data\guanajuato\json_predial\2021\GTO_PREDIAL_2021_santa_cruz_de_juventino_rosas.json
-santa_cruz_de_juventino_rosas,Santa Cruz De Juventino Rosas,2022,tarifa_millar,True,11,0,0,0,0,,data\guanajuato\json_predial\2022\GTO_PREDIAL_2022_santa_cruz_de_juventino_rosas.json
+santa_cruz_de_juventino_rosas,Santa Cruz De Juventino Rosas,2021,tarifa_millar,True,3,0,0,0,0,cambio_brusco_n_filas_11_a_3,data\guanajuato\json_predial\2021\GTO_PREDIAL_2021_santa_cruz_de_juventino_rosas.json
+santa_cruz_de_juventino_rosas,Santa Cruz De Juventino Rosas,2022,tarifa_millar,True,11,0,0,0,0,cambio_brusco_n_filas_3_a_11,data\guanajuato\json_predial\2022\GTO_PREDIAL_2022_santa_cruz_de_juventino_rosas.json
 santa_cruz_de_juventino_rosas,Santa Cruz De Juventino Rosas,2023,progresivo,True,6,11,0,0,0,cambio_esquema_tarifa_millar_a_progresivo_desde_2022|tipo_progresivo_con_tabla_tarifa_no_vacia,data\guanajuato\json_predial\2023\GTO_PREDIAL_2023_santa_cruz_de_juventino_rosas.json
 santa_cruz_de_juventino_rosas,Santa Cruz De Juventino Rosas,2024,progresivo,True,6,11,0,0,0,tipo_progresivo_con_tabla_tarifa_no_vacia,data\guanajuato\json_predial\2024\GTO_PREDIAL_2024_santa_cruz_de_juventino_rosas.json
 santa_cruz_de_juventino_rosas,Santa Cruz De Juventino Rosas,2025,progresivo,True,9,11,0,0,0,tipo_progresivo_con_tabla_tarifa_no_vacia,data\guanajuato\json_predial\2025\GTO_PREDIAL_2025_santa_cruz_de_juventino_rosas.json
 santa_cruz_de_juventino_rosas,Santa Cruz De Juventino Rosas,2026,progresivo,True,9,11,0,0,0,tipo_progresivo_con_tabla_tarifa_no_vacia,data\guanajuato\json_predial\2026\GTO_PREDIAL_2026_santa_cruz_de_juventino_rosas.json
 santiago_maravatio,Santiago Maravatio,2010,tarifa_millar,True,11,0,0,0,0,,data\guanajuato\json_predial\2010\GTO_PREDIAL_2010_santiago_maravatio.json
-santiago_maravatio,Santiago Maravatio,2011,tarifa_millar,False,9,0,0,0,0,,data\guanajuato\json_predial\2011\GTO_PREDIAL_2011_santiago_maravatio.json
 santiago_maravatio,Santiago Maravatio,2012,tarifa_millar,True,11,0,0,0,0,,data\guanajuato\json_predial\2012\GTO_PREDIAL_2012_santiago_maravatio.json
 santiago_maravatio,Santiago Maravatio,2014,tarifa_millar,True,11,0,0,0,0,,data\guanajuato\json_predial\2014\GTO_PREDIAL_2014_santiago_maravatio.json
 santiago_maravatio,Santiago Maravatio,2015,tarifa_millar,True,9,0,0,0,0,,data\guanajuato\json_predial\2015\GTO_PREDIAL_2015_santiago_maravatio.json
@@ -464,6 +486,7 @@ santiago_maravatio,Santiago Maravatio,2017,tarifa_millar,True,11,0,0,0,0,,data\g
 santiago_maravatio,Santiago Maravatio,2018,tarifa_millar,True,9,0,0,0,0,,data\guanajuato\json_predial\2018\GTO_PREDIAL_2018_santiago_maravatio.json
 santiago_maravatio,Santiago Maravatio,2019,tarifa_millar,True,11,0,0,0,0,,data\guanajuato\json_predial\2019\GTO_PREDIAL_2019_santiago_maravatio.json
 santiago_maravatio,Santiago Maravatio,2020,tarifa_millar,True,10,0,0,0,0,,data\guanajuato\json_predial\2020\GTO_PREDIAL_2020_santiago_maravatio.json
+santiago_maravatio,Santiago Maravatio,2021,tarifa_millar,True,9,0,0,0,0,,data\guanajuato\json_predial\2021\GTO_PREDIAL_2021_santiago_maravatio.json
 santiago_maravatio,Santiago Maravatio,2022,tarifa_millar,True,11,0,0,0,0,,data\guanajuato\json_predial\2022\GTO_PREDIAL_2022_santiago_maravatio.json
 santiago_maravatio,Santiago Maravatio,2023,tarifa_millar,True,12,0,0,0,0,,data\guanajuato\json_predial\2023\GTO_PREDIAL_2023_santiago_maravatio.json
 santiago_maravatio,Santiago Maravatio,2025,tarifa_millar,True,12,0,0,0,0,,data\guanajuato\json_predial\2025\GTO_PREDIAL_2025_santiago_maravatio.json
@@ -477,6 +500,7 @@ silao_de_la_victoria,Silao De La Victoria,2017,tarifa_millar,True,12,0,0,0,0,,da
 silao_de_la_victoria,Silao De La Victoria,2018,tarifa_millar,True,12,0,0,0,0,,data\guanajuato\json_predial\2018\GTO_PREDIAL_2018_silao_de_la_victoria.json
 silao_de_la_victoria,Silao De La Victoria,2019,tarifa_millar,True,12,0,0,0,0,,data\guanajuato\json_predial\2019\GTO_PREDIAL_2019_silao_de_la_victoria.json
 silao_de_la_victoria,Silao De La Victoria,2020,tarifa_millar,True,12,0,0,0,0,,data\guanajuato\json_predial\2020\GTO_PREDIAL_2020_silao_de_la_victoria.json
+silao_de_la_victoria,Silao De La Victoria,2021,tarifa_millar,True,12,0,0,0,0,,data\guanajuato\json_predial\2021\GTO_PREDIAL_2021_silao_de_la_victoria.json
 silao_de_la_victoria,Silao De La Victoria,2022,tarifa_millar,True,12,0,0,0,0,,data\guanajuato\json_predial\2022\GTO_PREDIAL_2022_silao_de_la_victoria.json
 silao_de_la_victoria,Silao De La Victoria,2026,progresivo,True,1,14,0,0,0,cambio_esquema_tarifa_millar_a_progresivo_desde_2022|prog_row7_superior_null_no_ultimo|prog_row8_solape_con_anterior|tipo_progresivo_con_tabla_tarifa_no_vacia,data\guanajuato\json_predial\2026\GTO_PREDIAL_2026_silao_de_la_victoria.json
 tarandacuao,Tarandacuao,2010,tarifa_millar,True,9,0,0,0,0,,data\guanajuato\json_predial\2010\GTO_PREDIAL_2010_tarandacuao.json
@@ -488,7 +512,8 @@ tarandacuao,Tarandacuao,2017,tarifa_millar,True,11,0,0,0,0,,data\guanajuato\json
 tarandacuao,Tarandacuao,2018,tarifa_millar,True,9,0,0,0,0,,data\guanajuato\json_predial\2018\GTO_PREDIAL_2018_tarandacuao.json
 tarandacuao,Tarandacuao,2019,tarifa_millar,True,11,0,0,0,0,,data\guanajuato\json_predial\2019\GTO_PREDIAL_2019_tarandacuao.json
 tarandacuao,Tarandacuao,2020,tarifa_millar,True,3,0,0,0,0,cambio_brusco_n_filas_11_a_3,data\guanajuato\json_predial\2020\GTO_PREDIAL_2020_tarandacuao.json
-tarandacuao,Tarandacuao,2022,tarifa_millar,True,12,0,0,0,0,cambio_brusco_n_filas_3_a_12,data\guanajuato\json_predial\2022\GTO_PREDIAL_2022_tarandacuao.json
+tarandacuao,Tarandacuao,2021,tarifa_millar,True,12,0,0,0,0,cambio_brusco_n_filas_3_a_12,data\guanajuato\json_predial\2021\GTO_PREDIAL_2021_tarandacuao.json
+tarandacuao,Tarandacuao,2022,tarifa_millar,True,12,0,0,0,0,,data\guanajuato\json_predial\2022\GTO_PREDIAL_2022_tarandacuao.json
 tarandacuao,Tarandacuao,2023,tarifa_millar,True,3,0,0,0,0,cambio_brusco_n_filas_12_a_3,data\guanajuato\json_predial\2023\GTO_PREDIAL_2023_tarandacuao.json
 tarandacuao,Tarandacuao,2024,tarifa_millar,True,12,0,0,0,0,cambio_brusco_n_filas_3_a_12,data\guanajuato\json_predial\2024\GTO_PREDIAL_2024_tarandacuao.json
 tarandacuao,Tarandacuao,2025,tarifa_millar,True,12,0,0,0,0,,data\guanajuato\json_predial\2025\GTO_PREDIAL_2025_tarandacuao.json
@@ -506,7 +531,8 @@ tarimoro,Tarimoro,2022,tarifa_millar,True,12,0,0,0,0,,data\guanajuato\json_predi
 tarimoro,Tarimoro,2023,tarifa_millar,True,12,0,0,0,0,,data\guanajuato\json_predial\2023\GTO_PREDIAL_2023_tarimoro.json
 tarimoro,Tarimoro,2024,tarifa_millar,True,3,0,0,0,0,cambio_brusco_n_filas_12_a_3,data\guanajuato\json_predial\2024\GTO_PREDIAL_2024_tarimoro.json
 tarimoro,Tarimoro,2025,tarifa_millar,True,12,0,0,0,0,cambio_brusco_n_filas_3_a_12,data\guanajuato\json_predial\2025\GTO_PREDIAL_2025_tarimoro.json
-tierra_blanca,Tierra Blanca,2011,tarifa_millar,False,10,0,0,0,0,,data\guanajuato\json_predial\2011\GTO_PREDIAL_2011_tierra_blanca.json
+tierra_blanca,Tierra Blanca,2010,tarifa_millar,True,11,0,0,0,0,,data\guanajuato\json_predial\2010\GTO_PREDIAL_2010_tierra_blanca.json
+tierra_blanca,Tierra Blanca,2011,tarifa_millar,True,11,0,0,0,0,,data\guanajuato\json_predial\2011\GTO_PREDIAL_2011_tierra_blanca.json
 tierra_blanca,Tierra Blanca,2012,tarifa_millar,True,11,0,0,0,0,,data\guanajuato\json_predial\2012\GTO_PREDIAL_2012_tierra_blanca.json
 tierra_blanca,Tierra Blanca,2014,tarifa_millar,True,11,0,0,0,0,,data\guanajuato\json_predial\2014\GTO_PREDIAL_2014_tierra_blanca.json
 tierra_blanca,Tierra Blanca,2015,tarifa_millar,True,11,0,0,0,0,,data\guanajuato\json_predial\2015\GTO_PREDIAL_2015_tierra_blanca.json
@@ -516,19 +542,18 @@ tierra_blanca,Tierra Blanca,2019,tarifa_millar,True,11,0,0,0,0,,data\guanajuato\
 tierra_blanca,Tierra Blanca,2020,tarifa_millar,True,11,0,0,0,0,,data\guanajuato\json_predial\2020\GTO_PREDIAL_2020_tierra_blanca.json
 tierra_blanca,Tierra Blanca,2022,tarifa_millar,True,12,0,0,0,0,,data\guanajuato\json_predial\2022\GTO_PREDIAL_2022_tierra_blanca.json
 tierra_blanca,Tierra Blanca,2023,tarifa_millar,True,12,0,0,0,0,,data\guanajuato\json_predial\2023\GTO_PREDIAL_2023_tierra_blanca.json
-tierra_blanca,Tierra Blanca,2024,desconocido,False,0,0,0,0,0,,data\guanajuato\json_predial\2024\GTO_PREDIAL_2024_tierra_blanca.json
-tierra_blanca,Tierra Blanca,2025,desconocido,False,0,0,0,0,0,,data\guanajuato\json_predial\2025\GTO_PREDIAL_2025_tierra_blanca.json
-tierra_blanca,Tierra Blanca,2040,tarifa_millar,True,11,0,0,0,0,,data\guanajuato\json_predial\2040\GTO_PREDIAL_2040_tierra_blanca.json
-uriangato,Uriangato,2010,desconocido,False,0,0,0,0,0,,data\guanajuato\json_predial\2010\GTO_PREDIAL_2010_uriangato.json
-uriangato,Uriangato,2011,desconocido,False,0,0,0,0,0,,data\guanajuato\json_predial\2011\GTO_PREDIAL_2011_uriangato.json
-uriangato,Uriangato,2012,desconocido,False,0,0,0,0,0,,data\guanajuato\json_predial\2012\GTO_PREDIAL_2012_uriangato.json
-uriangato,Uriangato,2014,desconocido,False,0,0,0,0,0,,data\guanajuato\json_predial\2014\GTO_PREDIAL_2014_uriangato.json
-uriangato,Uriangato,2015,desconocido,False,0,0,0,0,0,,data\guanajuato\json_predial\2015\GTO_PREDIAL_2015_uriangato.json
-uriangato,Uriangato,2017,desconocido,False,0,0,0,0,0,,data\guanajuato\json_predial\2017\GTO_PREDIAL_2017_uriangato.json
-uriangato,Uriangato,2018,desconocido,False,0,0,0,0,0,,data\guanajuato\json_predial\2018\GTO_PREDIAL_2018_uriangato.json
-uriangato,Uriangato,2019,desconocido,False,0,0,0,0,0,,data\guanajuato\json_predial\2019\GTO_PREDIAL_2019_uriangato.json
-uriangato,Uriangato,2020,desconocido,False,0,0,0,0,0,,data\guanajuato\json_predial\2020\GTO_PREDIAL_2020_uriangato.json
-uriangato,Uriangato,2022,tarifa_millar,True,3,0,0,0,0,,data\guanajuato\json_predial\2022\GTO_PREDIAL_2022_uriangato.json
+tierra_blanca,Tierra Blanca,2024,tarifa_millar,True,8,0,0,0,0,,data\guanajuato\json_predial\2024\GTO_PREDIAL_2024_tierra_blanca.json
+tierra_blanca,Tierra Blanca,2025,tarifa_millar,True,10,0,0,0,0,,data\guanajuato\json_predial\2025\GTO_PREDIAL_2025_tierra_blanca.json
+uriangato,Uriangato,2010,tarifa_millar,True,11,0,0,0,0,,data\guanajuato\json_predial\2010\GTO_PREDIAL_2010_uriangato.json
+uriangato,Uriangato,2011,tarifa_millar,True,8,0,0,0,0,,data\guanajuato\json_predial\2011\GTO_PREDIAL_2011_uriangato.json
+uriangato,Uriangato,2012,tarifa_millar,True,11,0,0,0,0,,data\guanajuato\json_predial\2012\GTO_PREDIAL_2012_uriangato.json
+uriangato,Uriangato,2014,cuota_fija,True,0,0,0,29,0,cambio_esquema_tarifa_millar_a_cuota_fija_desde_2012,data\guanajuato\json_predial\2014\GTO_PREDIAL_2014_uriangato.json
+uriangato,Uriangato,2015,cuota_fija,True,0,0,0,29,0,,data\guanajuato\json_predial\2015\GTO_PREDIAL_2015_uriangato.json
+uriangato,Uriangato,2017,mixto,True,0,0,0,0,1,cambio_esquema_cuota_fija_a_mixto_desde_2015|mixta_row1_columnas_vacias,data\guanajuato\json_predial\2017\GTO_PREDIAL_2017_uriangato.json
+uriangato,Uriangato,2018,mixto,True,0,0,0,0,4,mixta_row1_columnas_vacias|mixta_row2_columnas_vacias|mixta_row3_columnas_vacias|mixta_row4_columnas_vacias,data\guanajuato\json_predial\2018\GTO_PREDIAL_2018_uriangato.json
+uriangato,Uriangato,2019,cuota_fija,True,0,0,0,1,0,cambio_esquema_mixto_a_cuota_fija_desde_2018,data\guanajuato\json_predial\2019\GTO_PREDIAL_2019_uriangato.json
+uriangato,Uriangato,2020,mixto,True,0,0,0,0,4,cambio_esquema_cuota_fija_a_mixto_desde_2019|mixta_row1_columnas_vacias|mixta_row2_columnas_vacias|mixta_row3_columnas_vacias|mixta_row4_columnas_vacias,data\guanajuato\json_predial\2020\GTO_PREDIAL_2020_uriangato.json
+uriangato,Uriangato,2022,tarifa_millar,True,3,0,0,0,0,cambio_esquema_mixto_a_tarifa_millar_desde_2020,data\guanajuato\json_predial\2022\GTO_PREDIAL_2022_uriangato.json
 uriangato,Uriangato,2023,mixto,True,0,0,0,0,4,cambio_esquema_tarifa_millar_a_mixto_desde_2022|mixta_row1_columnas_vacias|mixta_row2_columnas_vacias|mixta_row3_columnas_vacias|mixta_row4_columnas_vacias,data\guanajuato\json_predial\2023\GTO_PREDIAL_2023_uriangato.json
 uriangato,Uriangato,2024,tarifa_millar,True,8,0,0,0,0,cambio_esquema_mixto_a_tarifa_millar_desde_2023,data\guanajuato\json_predial\2024\GTO_PREDIAL_2024_uriangato.json
 uriangato,Uriangato,2025,tarifa_millar,True,8,0,0,0,0,,data\guanajuato\json_predial\2025\GTO_PREDIAL_2025_uriangato.json
@@ -542,11 +567,11 @@ valle_de_santiago,Valle De Santiago,2017,tarifa_millar,True,9,0,0,0,0,,data\guan
 valle_de_santiago,Valle De Santiago,2018,tarifa_millar,True,9,0,0,0,0,,data\guanajuato\json_predial\2018\GTO_PREDIAL_2018_valle_de_santiago.json
 valle_de_santiago,Valle De Santiago,2019,tarifa_millar,True,9,0,0,0,0,,data\guanajuato\json_predial\2019\GTO_PREDIAL_2019_valle_de_santiago.json
 valle_de_santiago,Valle De Santiago,2020,progresivo,True,0,42,0,0,0,cambio_brusco_n_filas_9_a_42|cambio_esquema_tarifa_millar_a_progresivo_desde_2019|prog_row10_n_rango_no_int|prog_row11_n_rango_no_int|prog_row12_n_rango_no_int|prog_row13_n_rango_no_int|prog_row14_n_rango_no_int|prog_row15_n_rango_no_int|prog_row16_n_rango_no_int|prog_row17_n_rango_no_int|prog_row18_n_rango_no_int|prog_row19_n_rango_no_int|prog_row1_n_rango_no_int|prog_row20_n_rango_no_int|prog_row21_n_rango_no_int|prog_row22_n_rango_no_int|prog_row23_n_rango_no_int|prog_row24_n_rango_no_int|prog_row25_n_rango_no_int|prog_row26_n_rango_no_int|prog_row27_n_rango_no_int|prog_row28_n_rango_no_int|prog_row29_n_rango_no_int|prog_row2_n_rango_no_int|prog_row30_n_rango_no_int|prog_row31_n_rango_no_int|prog_row32_n_rango_no_int|prog_row33_n_rango_no_int|prog_row34_n_rango_no_int|prog_row35_n_rango_no_int|prog_row36_n_rango_no_int|prog_row37_n_rango_no_int|prog_row38_n_rango_no_int|prog_row39_n_rango_no_int|prog_row3_n_rango_no_int|prog_row40_n_rango_no_int|prog_row41_n_rango_no_int|prog_row42_n_rango_no_int|prog_row4_n_rango_no_int|prog_row5_n_rango_no_int|prog_row6_n_rango_no_int|prog_row7_n_rango_no_int|prog_row8_n_rango_no_int|prog_row9_n_rango_no_int,data\guanajuato\json_predial\2020\GTO_PREDIAL_2020_valle_de_santiago.json
-valle_de_santiago,Valle De Santiago,2021,desconocido,False,0,0,0,0,0,,data\guanajuato\json_predial\2021\GTO_PREDIAL_2021_valle_de_santiago.json
-valle_de_santiago,Valle De Santiago,2022,progresivo,True,0,42,0,0,0,prog_row3_hueco_con_anterior|prog_row7_superior_null_no_ultimo|prog_row8_solape_con_anterior|prog_row14_superior_null_no_ultimo|prog_row15_solape_con_anterior|prog_row21_superior_null_no_ultimo|prog_row22_solape_con_anterior|prog_row28_superior_null_no_ultimo|prog_row29_solape_con_anterior|prog_row35_superior_null_no_ultimo|prog_row36_solape_con_anterior,data\guanajuato\json_predial\2022\GTO_PREDIAL_2022_valle_de_santiago.json
-valle_de_santiago,Valle De Santiago,2023,progresivo,False,0,42,0,0,0,prog_row7_superior_null_no_ultimo|prog_row8_solape_con_anterior|prog_row14_superior_null_no_ultimo|prog_row15_solape_con_anterior|prog_row21_superior_null_no_ultimo|prog_row22_solape_con_anterior|prog_row26_superior_null_no_ultimo|prog_row27_hueco_con_anterior|prog_row28_superior_null_no_ultimo|prog_row29_solape_con_anterior|prog_row35_superior_null_no_ultimo|prog_row36_solape_con_anterior,data\guanajuato\json_predial\2023\GTO_PREDIAL_2023_valle_de_santiago.json
-valle_de_santiago,Valle De Santiago,2024,progresivo,False,0,42,0,0,0,prog_row3_solape_con_anterior|prog_row5_superior_null_no_ultimo|prog_row6_hueco_con_anterior|prog_row7_superior_null_no_ultimo|prog_row8_solape_con_anterior|prog_row14_superior_null_no_ultimo|prog_row15_solape_con_anterior|prog_row16_hueco_con_anterior|prog_row21_superior_null_no_ultimo|prog_row22_solape_con_anterior|prog_row23_solape_con_anterior|prog_row28_superior_null_no_ultimo|prog_row29_solape_con_anterior|prog_row35_superior_null_no_ultimo|prog_row36_solape_con_anterior,data\guanajuato\json_predial\2024\GTO_PREDIAL_2024_valle_de_santiago.json
-valle_de_santiago,Valle De Santiago,2025,desconocido,False,0,0,0,0,0,,data\guanajuato\json_predial\2025\GTO_PREDIAL_2025_valle_de_santiago.json
+valle_de_santiago,Valle De Santiago,2021,mixto,True,0,0,0,0,42,cambio_esquema_progresivo_a_mixto_desde_2020|mixta_row10_columnas_vacias|mixta_row11_columnas_vacias|mixta_row12_columnas_vacias|mixta_row13_columnas_vacias|mixta_row14_columnas_vacias|mixta_row15_columnas_vacias|mixta_row16_columnas_vacias|mixta_row17_columnas_vacias|mixta_row18_columnas_vacias|mixta_row19_columnas_vacias|mixta_row1_columnas_vacias|mixta_row20_columnas_vacias|mixta_row21_columnas_vacias|mixta_row22_columnas_vacias|mixta_row23_columnas_vacias|mixta_row24_columnas_vacias|mixta_row25_columnas_vacias|mixta_row26_columnas_vacias|mixta_row27_columnas_vacias|mixta_row28_columnas_vacias|mixta_row29_columnas_vacias|mixta_row2_columnas_vacias|mixta_row30_columnas_vacias|mixta_row31_columnas_vacias|mixta_row32_columnas_vacias|mixta_row33_columnas_vacias|mixta_row34_columnas_vacias|mixta_row35_columnas_vacias|mixta_row36_columnas_vacias|mixta_row37_columnas_vacias|mixta_row38_columnas_vacias|mixta_row39_columnas_vacias|mixta_row3_columnas_vacias|mixta_row40_columnas_vacias|mixta_row41_columnas_vacias|mixta_row42_columnas_vacias|mixta_row4_columnas_vacias|mixta_row5_columnas_vacias|mixta_row6_columnas_vacias|mixta_row7_columnas_vacias|mixta_row8_columnas_vacias|mixta_row9_columnas_vacias,data\guanajuato\json_predial\2021\GTO_PREDIAL_2021_valle_de_santiago.json
+valle_de_santiago,Valle De Santiago,2022,progresivo,True,0,42,0,0,0,cambio_esquema_mixto_a_progresivo_desde_2021|prog_row14_superior_null_no_ultimo|prog_row15_solape_con_anterior|prog_row21_superior_null_no_ultimo|prog_row22_solape_con_anterior|prog_row28_superior_null_no_ultimo|prog_row29_solape_con_anterior|prog_row35_superior_null_no_ultimo|prog_row36_solape_con_anterior|prog_row3_hueco_con_anterior|prog_row7_superior_null_no_ultimo|prog_row8_solape_con_anterior,data\guanajuato\json_predial\2022\GTO_PREDIAL_2022_valle_de_santiago.json
+valle_de_santiago,Valle De Santiago,2023,progresivo,True,0,42,0,0,0,prog_row7_superior_null_no_ultimo|prog_row8_solape_con_anterior|prog_row14_superior_null_no_ultimo|prog_row15_solape_con_anterior|prog_row21_superior_null_no_ultimo|prog_row22_solape_con_anterior|prog_row26_superior_null_no_ultimo|prog_row27_hueco_con_anterior|prog_row28_superior_null_no_ultimo|prog_row29_solape_con_anterior|prog_row35_superior_null_no_ultimo|prog_row36_solape_con_anterior,data\guanajuato\json_predial\2023\GTO_PREDIAL_2023_valle_de_santiago.json
+valle_de_santiago,Valle De Santiago,2024,progresivo,True,0,42,0,0,0,prog_row7_superior_null_no_ultimo|prog_row8_solape_con_anterior|prog_row14_superior_null_no_ultimo|prog_row15_solape_con_anterior|prog_row21_superior_null_no_ultimo|prog_row22_solape_con_anterior|prog_row28_superior_null_no_ultimo|prog_row29_solape_con_anterior|prog_row35_superior_null_no_ultimo|prog_row36_solape_con_anterior,data\guanajuato\json_predial\2024\GTO_PREDIAL_2024_valle_de_santiago.json
+valle_de_santiago,Valle De Santiago,2025,progresivo,True,0,7,0,0,0,cambio_brusco_n_filas_42_a_7,data\guanajuato\json_predial\2025\GTO_PREDIAL_2025_valle_de_santiago.json
 victoria,Victoria,2010,tarifa_millar,True,12,0,0,0,0,,data\guanajuato\json_predial\2010\GTO_PREDIAL_2010_victoria.json
 victoria,Victoria,2012,tarifa_millar,True,12,0,0,0,0,,data\guanajuato\json_predial\2012\GTO_PREDIAL_2012_victoria.json
 victoria,Victoria,2014,tarifa_millar,True,12,0,0,0,0,,data\guanajuato\json_predial\2014\GTO_PREDIAL_2014_victoria.json
@@ -555,7 +580,7 @@ victoria,Victoria,2017,tarifa_millar,True,12,0,0,0,0,,data\guanajuato\json_predi
 victoria,Victoria,2018,tarifa_millar,True,12,0,0,0,0,,data\guanajuato\json_predial\2018\GTO_PREDIAL_2018_victoria.json
 victoria,Victoria,2019,tarifa_millar,True,12,0,0,0,0,,data\guanajuato\json_predial\2019\GTO_PREDIAL_2019_victoria.json
 victoria,Victoria,2020,tarifa_millar,True,12,0,0,0,0,,data\guanajuato\json_predial\2020\GTO_PREDIAL_2020_victoria.json
-victoria,Victoria,2021,desconocido,False,0,0,0,0,0,,data\guanajuato\json_predial\2021\GTO_PREDIAL_2021_victoria.json
+victoria,Victoria,2021,tarifa_millar,True,12,0,0,0,0,,data\guanajuato\json_predial\2021\GTO_PREDIAL_2021_victoria.json
 victoria,Victoria,2022,tarifa_millar,True,12,0,0,0,0,,data\guanajuato\json_predial\2022\GTO_PREDIAL_2022_victoria.json
 victoria,Victoria,2023,tarifa_millar,True,9,0,0,0,0,,data\guanajuato\json_predial\2023\GTO_PREDIAL_2023_victoria.json
 victoria,Victoria,2024,tarifa_millar,True,12,0,0,0,0,,data\guanajuato\json_predial\2024\GTO_PREDIAL_2024_victoria.json
@@ -563,14 +588,13 @@ victoria,Victoria,2025,tarifa_millar,True,10,0,0,0,0,,data\guanajuato\json_predi
 victoria,Victoria,2026,tarifa_millar,True,9,0,0,0,0,,data\guanajuato\json_predial\2026\GTO_PREDIAL_2026_victoria.json
 villagran,Villagran,2010,tarifa_millar,True,11,0,0,0,0,,data\guanajuato\json_predial\2010\GTO_PREDIAL_2010_villagran.json
 villagran,Villagran,2012,tarifa_millar,True,11,0,0,0,0,,data\guanajuato\json_predial\2012\GTO_PREDIAL_2012_villagran.json
-villagran,Villagran,2014,tarifa_millar,False,9,0,0,0,0,,data\guanajuato\json_predial\2014\GTO_PREDIAL_2014_villagran.json
+villagran,Villagran,2014,tarifa_millar,True,9,0,0,0,0,,data\guanajuato\json_predial\2014\GTO_PREDIAL_2014_villagran.json
 villagran,Villagran,2015,tarifa_millar,True,11,0,0,0,0,,data\guanajuato\json_predial\2015\GTO_PREDIAL_2015_villagran.json
 villagran,Villagran,2017,tarifa_millar,True,11,0,0,0,0,,data\guanajuato\json_predial\2017\GTO_PREDIAL_2017_villagran.json
-villagran,Villagran,2018,tarifa_millar,True,11,0,0,0,0,,data\guanajuato\json_predial\2018\GTO_PREDIAL_2018_villagran.json
 villagran,Villagran,2019,tarifa_millar,True,9,0,0,0,0,,data\guanajuato\json_predial\2019\GTO_PREDIAL_2019_villagran.json
 villagran,Villagran,2020,tarifa_millar,True,11,0,0,0,0,,data\guanajuato\json_predial\2020\GTO_PREDIAL_2020_villagran.json
-villagran,Villagran,2021,desconocido,False,0,0,0,0,0,,data\guanajuato\json_predial\2021\GTO_PREDIAL_2021_villagran.json
-villagran,Villagran,2022,tarifa_millar,True,9,0,0,0,0,,data\guanajuato\json_predial\2022\GTO_PREDIAL_2022_villagran.json
+villagran,Villagran,2021,cuota_fija,True,0,0,0,53,0,cambio_esquema_tarifa_millar_a_cuota_fija_desde_2020,data\guanajuato\json_predial\2021\GTO_PREDIAL_2021_villagran.json
+villagran,Villagran,2022,tarifa_millar,True,9,0,0,0,0,cambio_esquema_cuota_fija_a_tarifa_millar_desde_2021,data\guanajuato\json_predial\2022\GTO_PREDIAL_2022_villagran.json
 villagran,Villagran,2023,tarifa_millar,True,12,0,0,0,0,,data\guanajuato\json_predial\2023\GTO_PREDIAL_2023_villagran.json
 villagran,Villagran,2024,tarifa_millar,True,12,0,0,0,0,,data\guanajuato\json_predial\2024\GTO_PREDIAL_2024_villagran.json
 villagran,Villagran,2025,tarifa_millar,True,12,0,0,0,0,,data\guanajuato\json_predial\2025\GTO_PREDIAL_2025_villagran.json
@@ -578,11 +602,12 @@ villagran,Villagran,2026,tarifa_millar,True,12,0,0,0,0,,data\guanajuato\json_pre
 xichu,Xichu,2010,tarifa_millar,True,8,0,0,0,0,,data\guanajuato\json_predial\2010\GTO_PREDIAL_2010_xichu.json
 xichu,Xichu,2011,tarifa_millar,True,11,0,0,0,0,,data\guanajuato\json_predial\2011\GTO_PREDIAL_2011_xichu.json
 xichu,Xichu,2012,tarifa_millar,True,11,0,0,0,0,,data\guanajuato\json_predial\2012\GTO_PREDIAL_2012_xichu.json
-xichu,Xichu,2014,desconocido,False,0,0,0,0,0,,data\guanajuato\json_predial\2014\GTO_PREDIAL_2014_xichu.json
+xichu,Xichu,2014,tarifa_millar,True,11,0,0,0,0,,data\guanajuato\json_predial\2014\GTO_PREDIAL_2014_xichu.json
 xichu,Xichu,2015,tarifa_millar,True,11,0,0,0,0,,data\guanajuato\json_predial\2015\GTO_PREDIAL_2015_xichu.json
 xichu,Xichu,2017,tarifa_millar,True,11,0,0,0,0,,data\guanajuato\json_predial\2017\GTO_PREDIAL_2017_xichu.json
 xichu,Xichu,2019,tarifa_millar,True,8,0,0,0,0,,data\guanajuato\json_predial\2019\GTO_PREDIAL_2019_xichu.json
 xichu,Xichu,2020,tarifa_millar,True,9,0,0,0,0,,data\guanajuato\json_predial\2020\GTO_PREDIAL_2020_xichu.json
+xichu,Xichu,2021,tarifa_millar,True,9,0,0,0,0,,data\guanajuato\json_predial\2021\GTO_PREDIAL_2021_xichu.json
 xichu,Xichu,2022,tarifa_millar,True,3,0,0,0,0,cambio_brusco_n_filas_9_a_3,data\guanajuato\json_predial\2022\GTO_PREDIAL_2022_xichu.json
 xichu,Xichu,2023,tarifa_millar,True,11,0,0,0,0,cambio_brusco_n_filas_3_a_11,data\guanajuato\json_predial\2023\GTO_PREDIAL_2023_xichu.json
 xichu,Xichu,2024,tarifa_millar,True,9,0,0,0,0,,data\guanajuato\json_predial\2024\GTO_PREDIAL_2024_xichu.json
@@ -592,11 +617,12 @@ yuriria,Yuriria,2010,tarifa_millar,True,11,0,0,0,0,,data\guanajuato\json_predial
 yuriria,Yuriria,2012,tarifa_millar,True,11,0,0,0,0,,data\guanajuato\json_predial\2012\GTO_PREDIAL_2012_yuriria.json
 yuriria,Yuriria,2015,tarifa_millar,True,11,0,0,0,0,,data\guanajuato\json_predial\2015\GTO_PREDIAL_2015_yuriria.json
 yuriria,Yuriria,2017,tarifa_millar,True,11,0,0,0,0,,data\guanajuato\json_predial\2017\GTO_PREDIAL_2017_yuriria.json
-yuriria,Yuriria,2018,desconocido,False,0,0,0,0,0,,data\guanajuato\json_predial\2018\GTO_PREDIAL_2018_yuriria.json
+yuriria,Yuriria,2018,tarifa_millar,True,11,0,0,0,0,,data\guanajuato\json_predial\2018\GTO_PREDIAL_2018_yuriria.json
 yuriria,Yuriria,2019,tarifa_millar,True,11,0,0,0,0,,data\guanajuato\json_predial\2019\GTO_PREDIAL_2019_yuriria.json
 yuriria,Yuriria,2020,cuota_fija,True,0,0,0,1,0,cambio_esquema_tarifa_millar_a_cuota_fija_desde_2019,data\guanajuato\json_predial\2020\GTO_PREDIAL_2020_yuriria.json
-yuriria,Yuriria,2022,tarifa_millar,True,9,0,0,0,0,cambio_esquema_cuota_fija_a_tarifa_millar_desde_2020,data\guanajuato\json_predial\2022\GTO_PREDIAL_2022_yuriria.json
+yuriria,Yuriria,2021,tarifa_millar,True,9,0,0,0,0,cambio_esquema_cuota_fija_a_tarifa_millar_desde_2020,data\guanajuato\json_predial\2021\GTO_PREDIAL_2021_yuriria.json
+yuriria,Yuriria,2022,tarifa_millar,True,9,0,0,0,0,,data\guanajuato\json_predial\2022\GTO_PREDIAL_2022_yuriria.json
 yuriria,Yuriria,2023,tarifa_millar,True,8,0,0,0,0,,data\guanajuato\json_predial\2023\GTO_PREDIAL_2023_yuriria.json
 yuriria,Yuriria,2024,tarifa_millar,True,12,0,0,0,0,,data\guanajuato\json_predial\2024\GTO_PREDIAL_2024_yuriria.json
 yuriria,Yuriria,2025,tarifa_millar,True,12,0,0,0,0,,data\guanajuato\json_predial\2025\GTO_PREDIAL_2025_yuriria.json
-yuriria,Yuriria,2026,desconocido,False,0,0,0,0,0,,data\guanajuato\json_predial\2026\GTO_PREDIAL_2026_yuriria.json
+yuriria,Yuriria,2026,tarifa_millar,True,12,0,0,0,0,,data\guanajuato\json_predial\2026\GTO_PREDIAL_2026_yuriria.json

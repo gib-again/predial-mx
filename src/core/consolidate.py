@@ -46,8 +46,10 @@ _INEGI_MAP: dict[tuple[str, str], dict] | None = None
 
 _ESTADO_CVE = {
     "coahuila": "05",
+    "guanajuato": "11",
     "jalisco": "14",
     "queretaro": "22",
+    "tamaulipas": "28",
     "yucatan": "31",
 }
 
@@ -188,10 +190,12 @@ def _tasa_from_tasa_unica(tabla: list) -> Optional[float]:
     return None
 
 
-def _median_tasa_marginal(rows: list) -> Optional[float]:
+def _tasa_from_progresivo(tabla: list) -> Optional[float]:
     """Tasa marginal del rango mediano como proxy de vivienda media."""
+    if not isinstance(tabla, list) or not tabla:
+        return None
     tasas = []
-    for row in rows:
+    for row in tabla:
         if not isinstance(row, dict):
             continue
         tm = row.get("tasa_marginal")
@@ -204,24 +208,6 @@ def _median_tasa_marginal(rows: list) -> Optional[float]:
         return None
     tasas.sort()
     return tasas[len(tasas) // 2]
-
-
-def _tasa_from_progresivo(tabla: list) -> Optional[float]:
-    """Tasa marginal del rango mediano, priorizando grupo urbano."""
-    if not isinstance(tabla, list) or not tabla:
-        return None
-
-    # Prioridad: urbano_edificado > urbano > construido > general
-    for target in ["urbano_edificado", "urbano", "construido", "general"]:
-        subset = [
-            r for r in tabla
-            if isinstance(r, dict) and (r.get("grupo") or "general") == target
-        ]
-        if subset:
-            return _median_tasa_marginal(subset)
-
-    # Fallback: todas las filas (backward compat con JSONs sin grupo)
-    return _median_tasa_marginal(tabla)
 
 
 # ══════════════════════════════════════════════════════════════

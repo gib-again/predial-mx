@@ -1,0 +1,36 @@
+﻿ejercicio,slug,tipo_esquema,esquema_valido,fuente,prompt_hash,segment_method,issues,auditado,notas
+2011,santiago_maravatio,tarifa_millar,False,txt,,seccion_predial,esquema_invalido,ok,
+2014,apaseo_el_alto,tarifa_millar,False,txt,,seccion_predial,esquema_invalido,ok,
+2015,huanimaro,tarifa_millar,True,txt,,fallback_18pp,segment_fallback:fallback_18pp,excluir,
+2018,jerecuaro,tarifa_millar,True,txt,,seccion_predial,tasa_cero_fila_10,ok,
+2018,silao_de_la_victoria,tarifa_millar,True,txt,,seccion_predial,tasa_cero_fila_6,ok,
+2018,yuriria,desconocido,False,txt,,fallback_18pp,esquema_invalido; tipo_desconocido; segment_fallback:fallback_18pp,ok,
+2019,apaseo_el_grande,desconocido,False,txt,,fallback_18pp,esquema_invalido; tipo_desconocido; segment_fallback:fallback_18pp,ok,
+2019,coroneo,desconocido,False,txt,,,esquema_invalido; tipo_desconocido,excluir,
+2019,guanajuato,desconocido,False,txt,,,esquema_invalido; tipo_desconocido,excluir,
+2019,leon,mixto,False,txt,,seccion_predial,esquema_invalido; tabla_mixta_vacia,ok,El esquema no es soportado en esta versión del Structured_output
+2019,lrapuato,desconocido,False,txt,,,esquema_invalido; tipo_desconocido,ok,
+2019,san_jose_iturbide,tarifa_millar,True,txt,,seccion_predial,tasa_cero_fila_10,ok,
+2020,leon,mixto,False,txt,,seccion_predial,esquema_invalido; tabla_mixta_vacia,ok,El esquema no es soportado en esta versión del Structured_output
+2021,leon,mixto,False,txt,,seccion_predial,esquema_invalido; tabla_mixta_vacia,ok,El esquema no es soportado en esta versión del Structured_output
+2021,purisima_del_rincon,tarifa_millar,True,txt,,fallback_18pp,segment_fallback:fallback_18pp,ok,
+2021,san_diego_de_la_union,tarifa_millar,False,txt,,seccion_predial,esquema_invalido,ok,
+2021,san_francisco_del_rincon,desconocido,False,txt,,fallback_18pp,esquema_invalido; tipo_desconocido; segment_fallback:fallback_18pp,ok,El esquema no es soportado en esta versión del Structured_output
+2022,celaya,progresivo,False,txt,,seccion_predial,esquema_invalido; tabla_progresiva_vacia,ok,El esquema no es soportado en esta versión del Structured_output
+2022,irapuato,progresivo,False,txt,,seccion_predial,esquema_invalido,ok,El esquema no es soportado en esta versión del Structured_output
+2022,leon,progresivo,False,txt,,seccion_predial,esquema_invalido,ok,El esquema no es soportado en esta versión del Structured_output
+2022,pueblo_nuevo,tarifa_millar,True,txt,,seccion_predial,tasa_cero_fila_4,ok,
+2023,celaya,progresivo,False,txt,,seccion_predial,esquema_invalido,ok,El esquema no es soportado en esta versión del Structured_output
+2024,coroneo,desconocido,False,txt,,,esquema_invalido; tipo_desconocido,ok,
+2024,guanajuato,progresivo,False,txt,,seccion_predial,esquema_invalido,ok,El esquema no es soportado en esta versión del Structured_output
+2024,irapuato,progresivo,False,txt,,seccion_predial,esquema_invalido,ok,El esquema no es soportado en esta versión del Structured_output
+2024,leon,desconocido,False,txt,,,esquema_invalido; tipo_desconocido,ok,El esquema no es soportado en esta versión del Structured_output
+2024,moroleon,progresivo,False,txt,,seccion_predial,esquema_invalido,ok,El esquema no es soportado en esta versión del Structured_output
+2024,san_jose_iturbide,desconocido,False,txt,,,esquema_invalido; tipo_desconocido,ok,El esquema no es soportado en esta versión del Structured_output
+2024,tierra_blanca,desconocido,False,txt,,impuesto_predial,esquema_invalido; tipo_desconocido,ok,
+2025,irapuato,progresivo,False,txt,,seccion_predial,esquema_invalido,ok,El esquema no es soportado en esta versión del Structured_output
+2025,leon,progresivo,False,txt,,seccion_predial,esquema_invalido,ok,El esquema no es soportado en esta versión del Structured_output
+2025,tierra_blanca,desconocido,False,txt,,fallback_18pp,esquema_invalido; tipo_desconocido; segment_fallback:fallback_18pp,ok,
+2025,valle_de_santiago,desconocido,False,txt,,fallback_18pp,esquema_invalido; tipo_desconocido; segment_fallback:fallback_18pp,ok,El esquema no es soportado en esta versión del Structured_output
+2026,irapuato,progresivo,False,txt,,seccion_predial,esquema_invalido,excluir,
+2026,purisima_del_rincon,tarifa_millar,False,txt,,seccion_predial,esquema_invalido,excluir,

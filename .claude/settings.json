@@ -1,0 +1,13 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(python -m scripts.*)",
+      "Bash(python -m pytest*)",
+      "Bash(pip install*)",
+      "Bash(ruff*)",
+      "Bash(git status*)",
+      "Bash(git diff*)",
+      "Bash(git log*)"
+    ]
+  }
+}

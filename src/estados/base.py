@@ -149,3 +149,13 @@ class EstadoAdapter(ABC):
             prefijo=self.prefijo,
             out_csv=self.meta_dir / f"{self.slug}_predial_summary.csv",
         )
+
+    def run_audit(self):
+        """Auditoría pre-consolidación: identifica JSONs que requieren revisión manual."""
+        from src.core.audit import run_audit
+        run_audit(
+            json_dir=self.json_dir,
+            prefijo=self.prefijo,
+            qa_dir=self.qa_dir,
+            meta_dir=self.meta_dir,
+        )

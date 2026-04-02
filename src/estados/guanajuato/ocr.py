@@ -65,6 +65,7 @@ def _ocr_single(input_pdf: Path, output_pdf: Path) -> str:
         "ocrmypdf",
         "--language", config.OCR_LANG,
         "--force-ocr",
+        "--invalidate-digital-signatures",
         "--deskew",
         "--rotate-pages",
         "--optimize", "0",

@@ -14,7 +14,7 @@ La segmentación tiene dos niveles:
   Nivel 2: Dentro de cada ley, extraer la sección de predial.
     Inicio (en orden de prioridad):
       1) "SECCIÓN PRIMERA" + "DEL IMPUESTO PREDIAL"
-      2) "CAPÍTULO TERCERO ... IMPUESTO PREDIAL"
+      2) "CAPÍTULO" + ordinal + "IMPUESTO PREDIAL"
       3) "DEL IMPUESTO PREDIAL" standalone (con filtro de contexto)
     Fin:
       1) "SECCIÓN SEGUNDA" / "IMPUESTO SOBRE TRASLACIÓN"
@@ -40,7 +40,7 @@ from src.core.text_utils import slugify
 from src.estados.guanajuato import config
 
 
-FALLBACK_PAGES = 8
+FALLBACK_PAGES = 18
 
 
 # ═══════════════════════════════════════════════════
@@ -67,7 +67,7 @@ class SeccionPredial:
     text: str = ""
     page_start: int = -1
     page_end: int = -1
-    method: str = ""        # "seccion_predial" | "capitulo_predial" | "impuesto_predial" | "fallback_8pp"
+    method: str = ""        # "seccion_predial" | "capitulo_predial" | "impuesto_predial" | "fallback_18pp"
 
 
 # ═══════════════════════════════════════════════════
@@ -225,29 +225,48 @@ def find_leyes_in_pdf(
 # Nivel 2: Extraer sección predial
 # ═══════════════════════════════════════════════════
 
-# Inicio de sección predial — ORDEN DE PRIORIDAD:
+# Inicio de sección predial — ESTRATEGIA:
 #
-# 1) "SECCIÓN PRIMERA" + "DEL IMPUESTO PREDIAL"
-_RE_PREDIAL_START_PRIMARY = re.compile(
-    r"SECCI[OÓ]N\s+PRIMERA[.\s\-]*\s*(?:DEL\s+)?IMPUESTO\s+PREDIAL",
+# Buscar todas las ocurrencias de "IMPUESTO PREDIAL" en el texto,
+# y para cada una verificar el contexto circundante para determinar
+# si es el inicio real de la sección (no facilidades/estímulos/índice).
+#
+# Contexto positivo (dentro de ~300 chars antes):
+#   - "SECCIÓN PRIMERA/ÚNICA" → método "seccion_predial"
+#   - "CAPÍTULO" + ordinal → método "capitulo_predial"
+#   - Ninguno de los anteriores pero tiene "Artículo" después → "impuesto_predial"
+#
+# Contexto negativo (dentro de ~500 chars antes):
+#   - FACILIDADES ADMINISTRATIVAS / ESTÍMULOS FISCALES
+#   - ESTIMACIÓN / CLASIFICADOR / CONCEPTO (tabla presupuestal)
+#   - DISPOSICIONES GENERALES
+
+_RE_IMPUESTO_PREDIAL = re.compile(
+    r"(?:DEL\s+)?IMPUESTO\s+PREDIAL",
     re.IGNORECASE,
 )
 
-# 2) "CAPÍTULO TERCERO" ... "IMPUESTO PREDIAL"
-_RE_PREDIAL_START_CAPITULO = re.compile(
-    r"CAP[IÍ]TULO\s+TERCERO[.\s\-]*\s*(?:DEL\s+)?IMPUESTO\s+PREDIAL",
+_RE_CONTEXT_SECCION = re.compile(
+    r"SECCI[OÓ]N\s+(?:PRIMERA|ÚNICA|UNICA)",
     re.IGNORECASE,
 )
 
-# 3) "DEL IMPUESTO PREDIAL" standalone
-_RE_PREDIAL_START_STANDALONE = re.compile(
-    r"DEL\s+IMPUESTO\s+PREDIAL",
+_RE_CONTEXT_CAPITULO = re.compile(
+    r"CAP[IÍ]TULO\s+(?:PRIMERO|SEGUNDO|TERCERO|CUARTO|QUINTO|SEXTO|"
+    r"S[EÉ]PTIMO|OCTAVO|NOVENO|D[EÉ]CIMO|[IVX]+|\d+)",
     re.IGNORECASE,
 )
 
-# Contextos que NO son inicio de predial (tabla de estimación, índice, etc.)
+_RE_CONTEXT_ARTICULO = re.compile(
+    r"ART[IÍ]CULO\s+\d+",
+    re.IGNORECASE,
+)
+
+# Contextos que NO son inicio de predial
 _RE_FALSE_POSITIVE = re.compile(
-    r"(?:1210|CONCEPTO|ESTIMACI[OÓ]N|CLASIFICADOR|DISPOSICIONES\s+GENERALES)",
+    r"(?:1210\b|CLASIFICADOR|DISPOSICIONES\s+GENERALES|"
+    r"FACILIDADES\s+ADMINISTRATIVAS|EST[IÍ]MULOS\s+FISCALES|"
+    r"REDUCCI[OÓ]N\s+(?:DEL|EN\s+EL)\s+(?:PAGO|IMPUESTO))",
     re.IGNORECASE,
 )
 
@@ -271,23 +290,49 @@ _RE_PREDIAL_END_ADQUISICION = re.compile(
 
 
 def _find_predial_start(text: str) -> tuple[int | None, str]:
-    """Busca inicio de sección predial. Retorna (posición, método) o (None, "")."""
-    # 1) SECCIÓN PRIMERA ... IMPUESTO PREDIAL
-    m = _RE_PREDIAL_START_PRIMARY.search(text)
-    if m:
-        return m.start(), "seccion_predial"
+    """Busca inicio de sección predial. Retorna (posición, método) o (None, "").
 
-    # 2) CAPÍTULO TERCERO ... IMPUESTO PREDIAL
-    m = _RE_PREDIAL_START_CAPITULO.search(text)
-    if m:
-        return m.start(), "capitulo_predial"
+    Filtros de falsos positivos:
+      a) Descarta si en los 800 chars anteriores hay FACILIDADES/ESTÍMULOS.
+      b) Descarta si está después de la mitad del texto de la ley.
+      c) Descarta si "IMPUESTO PREDIAL" está en minúsculas/mixtas (mención
+         dentro de párrafo, no encabezado). Solo acepta MAYÚSCULAS.
+    """
+    half = len(text) // 2
 
-    # 3) "DEL IMPUESTO PREDIAL" standalone (con filtro de contexto)
-    for m in _RE_PREDIAL_START_STANDALONE.finditer(text):
-        # Revisar contexto: 200 chars antes para descartar falsos positivos
-        context_before = text[max(0, m.start() - 200): m.start()]
-        if not _RE_FALSE_POSITIVE.search(context_before):
-            return m.start(), "impuesto_predial"
+    for m in _RE_IMPUESTO_PREDIAL.finditer(text):
+        pos = m.start()
+
+        # Filtro (c): solo aceptar si el match está en MAYÚSCULAS (encabezado)
+        if m.group(0) != m.group(0).upper():
+            continue
+
+        # Filtro (b): descartar si está en la segunda mitad de la ley
+        if pos > half:
+            continue
+
+        # Filtro (a): descartar facilidades/estímulos/índice (800 chars atrás)
+        context_far = text[max(0, pos - 800): pos]
+        if _RE_FALSE_POSITIVE.search(context_far):
+            continue
+
+        # Contexto positivo: determinar método
+        context_near = text[max(0, pos - 300): pos]
+
+        if _RE_CONTEXT_SECCION.search(context_near):
+            sec_m = _RE_CONTEXT_SECCION.search(context_near)
+            offset = max(0, pos - 300) + sec_m.start()
+            return offset, "seccion_predial"
+
+        if _RE_CONTEXT_CAPITULO.search(context_near):
+            cap_m = _RE_CONTEXT_CAPITULO.search(context_near)
+            offset = max(0, pos - 300) + cap_m.start()
+            return offset, "capitulo_predial"
+
+        # Sin SECCIÓN ni CAPÍTULO, pero verificar que tenga "Artículo" después
+        context_after = text[m.end(): min(len(text), m.end() + 300)]
+        if _RE_CONTEXT_ARTICULO.search(context_after):
+            return pos, "impuesto_predial"
 
     return None, ""
 
@@ -458,7 +503,7 @@ def run_segment(adapter, force: bool = False) -> Path:
         if not year_raw_dir.exists():
             continue
 
-        pdf_files = sorted(year_raw_dir.glob("*.pdf")) + sorted(year_raw_dir.glob("*.PDF"))
+        pdf_files = sorted({p for p in year_raw_dir.iterdir() if p.suffix.lower() == ".pdf"})
         if not pdf_files:
             continue
 

@@ -16,6 +16,7 @@ Pasos disponibles (en orden):
     segment   → Extracción de sección predial (TXT + PDF recortado)
     extract   → Extracción LLM (GPT-5.2)
     validate  → Validación estructural + interanual
+    audit     → Auditoría pre-consolidación (revisión manual de inválidos)
 """
 
 import argparse
@@ -24,7 +25,7 @@ import time
 
 from src.estados import get_adapter, list_estados
 
-STEPS_ORDERED = ["download", "ocr", "master", "segment", "extract", "validate"]
+STEPS_ORDERED = ["download", "ocr", "master", "segment", "extract", "validate", "audit"]
 
 STEP_METHODS = {
     "download": lambda a, **kw: a.download(),
@@ -33,6 +34,7 @@ STEP_METHODS = {
     "segment":  lambda a, **kw: a.extract_predial_sections(),
     "extract":  lambda a, **kw: a.run_llm_extraction(batch_mode=kw.get("batch", False)),
     "validate": lambda a, **kw: a.run_validation(),
+    "audit":    lambda a, **kw: a.run_audit(),
 }
 
 

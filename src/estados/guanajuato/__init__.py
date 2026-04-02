@@ -66,3 +66,9 @@ class GuanajuatoAdapter(EstadoAdapter):
         """Segmentación en 2 niveles: localizar leyes → extraer predial."""
         from src.estados.guanajuato.segment import run_segment
         return run_segment(self)
+        
+    def audit_pre_consolidation(self):
+        """Auditoría pre-consolidación: identifica JSONs que requieren revisión manual."""
+        from src.core.audit import run_audit
+        run_audit(self.json_dir, self.prefijo, self.qa_dir, self.meta_dir)
+        

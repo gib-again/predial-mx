@@ -12,7 +12,7 @@ Reglas de imputación (en orden de aplicación):
      en T+1..T+k.  Máximo gap: 4 años.
      Etiqueta: "confirmed_fill"
 
-  2. AGGRESSIVE FILL (gap ≤ 2 años):
+  2. AGGRESSIVE FILL (gap ≤ 2 años): --- IGNORE ---
      Si en año T existe tasa X, en T+1..T+k no hay dato, y en T+k+1
      la tasa es DIFERENTE Y → mantener tasa X del año T en los huecos.
      Máximo gap: 2 años.
@@ -98,7 +98,7 @@ _IMPUTE_FIELDS = [
 _ID_FIELDS = ["cve_ent", "cve_mun", "municipio", "estado"]
 
 MAX_GAP_CONFIRMED = 4
-MAX_GAP_AGGRESSIVE = 2
+MAX_GAP_AGGRESSIVE = 1
 MAX_GAP_FFILL = 4
 MAX_GAP_BFILL = 4
 
@@ -202,14 +202,6 @@ def _impute_municipality(
                 result.append(_make_imputed_row(by_year[prev_year], y, "confirmed_fill", prev_year))
                 continue
 
-        # ── Regla 2: AGGRESSIVE FILL ──
-        if prev_year is not None and next_year is not None:
-            total_gap = next_year - prev_year - 1
-            if total_gap <= MAX_GAP_AGGRESSIVE:
-                # Tasa diferente en next, but gap small → keep prev tasa
-                result.append(_make_imputed_row(by_year[prev_year], y, "aggressive_fill", prev_year))
-                continue
-
         # ── Regla 3: FORWARD FILL ──
         if prev_year is not None and (y - prev_year) <= MAX_GAP_FFILL:
             # No hay dato posterior para confirmar (o está muy lejos)
@@ -284,7 +276,7 @@ def impute_panel(
 
     # Imputar
     all_rows: list[dict] = []
-    stats = {"confirmed_fill": 0, "aggressive_fill": 0, "ffill": 0, "bfill": 0, "raw": 0}
+    stats = {"confirmed_fill": 0, "ffill": 0, "bfill": 0, "raw": 0}
 
     for (estado, cve_ent, cve_mun), obs in sorted(by_muni.items()):
         obs.sort(key=lambda r: int(r["ejercicio"]))
@@ -329,7 +321,6 @@ def impute_panel(
     print(f"  Datos crudos:      {stats['raw']}")
     print(f"  Imputados:         {total_imputed}")
     print(f"    confirmed_fill:  {stats['confirmed_fill']}")
-    print(f"    aggressive_fill: {stats['aggressive_fill']}")
     print(f"    ffill:           {stats['ffill']}")
     print(f"    bfill:           {stats['bfill']}")
     gaps = ideal - total

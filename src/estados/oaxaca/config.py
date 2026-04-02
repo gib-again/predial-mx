@@ -35,7 +35,7 @@ NEEDS_OCR = True  # PDFs con marca de agua + scanned elements
 
 # ── Años ──
 YEAR_MIN = 2010
-YEAR_MAX = 2016
+YEAR_MAX = 2025
 
 # ── Periódico Oficial ──
 BASE_URL = "https://periodicooficial.oaxaca.gob.mx/"

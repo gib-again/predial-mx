@@ -11,4 +11,5 @@ PREFIJOS_ESTADO = {
     "yucatan":   "YUC",
     "tamaulipas": "TAMPS",
     "chihuahua": "CHIH",
+    "guanajuato": "GTO",
 }
