@@ -81,6 +81,13 @@ class FilaTarifaMillar(BaseModel):
 
 class FilaProgresiva(BaseModel):
     """Una fila en la tabla progresiva por rangos de valor catastral."""
+    grupo: str = Field(
+        "general",
+        description=(
+            "Tipo de predio al que aplica este rango. "
+            "general | urbano | urbano_edificado | rustico | construido | baldio"
+        ),
+    )
     n_rango: str = Field(description="Número de rango como string ('1', '2', ...)")
     inferior: Optional[str] = Field(None, description="Límite inferior, copiado literal del texto")
     superior: Optional[str] = Field(None, description="Límite superior, copiado literal. null si rango abierto")

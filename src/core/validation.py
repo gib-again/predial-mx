@@ -200,15 +200,38 @@ def _check_tarifa_table(tabla: list) -> list:
 
 
 def _check_prog_table(tabla: list) -> list:
-    """Validaciones detalladas para tabla_progresiva (rangos, solapes, huecos)."""
+    """Validaciones detalladas para tabla_progresiva (rangos, solapes, huecos).
+
+    Agrupa por campo 'grupo' para validar cada sub-tabla por separado,
+    ya que los rangos se reinician por grupo (ej: urbano 1-7, rústico 1-9).
+    """
+    anomalias = []
+
+    # Agrupar filas por grupo
+    by_grupo: dict[str, list[tuple[int, dict]]] = {}
+    for idx, row in enumerate(tabla, start=1):
+        if not isinstance(row, dict):
+            anomalias.append(f"prog_row{idx}_no_dict")
+            continue
+        grupo = row.get("grupo") or "general"
+        by_grupo.setdefault(grupo, []).append((idx, row))
+
+    for grupo, indexed_rows in by_grupo.items():
+        anomalias.extend(_check_prog_ranges(indexed_rows, grupo))
+
+    return anomalias
+
+
+def _check_prog_ranges(
+    indexed_rows: list[tuple[int, dict]],
+    grupo: str,
+) -> list[str]:
+    """Valida continuidad de rangos para un grupo específico."""
     anomalias = []
     prog_rows = []
 
-    for idx, row in enumerate(tabla, start=1):
+    for idx, row in indexed_rows:
         prefix = f"prog_row{idx}_"
-        if not isinstance(row, dict):
-            anomalias.append(prefix + "no_dict")
-            continue
 
         n_rango = row.get("n_rango")
         inferior = row.get("inferior")
@@ -219,7 +242,13 @@ def _check_prog_table(tabla: list) -> list:
             try:
                 n_rango_int = int(str(n_rango))
             except (ValueError, TypeError):
-                anomalias.append(prefix + "n_rango_no_int")
+                # Prefixed n_rango (e.g. "I-1", "a-1") — try extracting trailing int
+                import re
+                m = re.search(r"(\d+)$", str(n_rango))
+                if m:
+                    n_rango_int = int(m.group(1))
+                else:
+                    anomalias.append(prefix + "n_rango_no_int")
 
         if not inferior:
             anomalias.append(prefix + "inferior_vacio")
@@ -234,7 +263,7 @@ def _check_prog_table(tabla: list) -> list:
             "superior_val": sup_val,
         })
 
-    # Revisar continuidad de rangos
+    # Revisar continuidad de rangos dentro del grupo
     if prog_rows:
         all_have_n = all(r["n_rango_int"] is not None for r in prog_rows)
         if all_have_n:

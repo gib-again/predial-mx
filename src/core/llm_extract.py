@@ -146,6 +146,7 @@ PREDIAL_JSON_SCHEMA = {
                         "items": {
                             "type": "object",
                             "properties": {
+                                "grupo": {"type": "string"},
                                 "n_rango": {"type": "string"},
                                 "inferior": {"type": "string"},
                                 "superior": {"type": "string"},
@@ -154,7 +155,7 @@ PREDIAL_JSON_SCHEMA = {
                                 "unidad_cuota_fija": {"type": "string"},
                             },
                             "required": [
-                                "n_rango", "inferior", "superior",
+                                "grupo", "n_rango", "inferior", "superior",
                                 "cuota_fija", "tasa_marginal",
                                 "unidad_cuota_fija",
                             ],
@@ -384,6 +385,7 @@ tabla_tarifa_millar (si tipo_esquema = "tarifa_millar" o componente millar en "m
 
 tabla_progresiva (si tipo_esquema = "progresivo"):
   {
+    "grupo": "general",
     "n_rango": "1",
     "inferior": "$0.01",
     "superior": "$620,100.00",
@@ -391,6 +393,13 @@ tabla_progresiva (si tipo_esquema = "progresivo"):
     "tasa_marginal": "0.00023",
     "unidad_cuota_fija": "pesos"
   }
+  - grupo: tipo de predio al que aplican estos rangos.
+    Valores: "general" (tabla única para todos), "urbano_edificado", "urbano",
+    "rustico", "construido", "baldio".
+    Si hay UNA sola tabla para todos los predios urbanos → "general".
+    Si hay tablas SEPARADAS por tipo de predio (ej: una para urbanos con edificación,
+    otra para urbanos sin edificación, otra para rústicos), usa el grupo correspondiente.
+    Numera n_rango desde "1" dentro de CADA grupo.
   - inferior/superior: copia literal (incluyendo $, comas).
   - Último rango abierto: "En adelante" en superior.
   - tasa_marginal: solo número decimal.
@@ -428,8 +437,10 @@ tabla_cuota_fija (si tipo_esquema = "cuota_fija"):
    y los valores tienen signo "%", divide entre 100 para obtener la tasa al millar real.
    Ej: "20%" al millar → tasa_millar = 0.20. Esto NO es inventar valores (regla 3).
    NO dejes tasa_millar en 0 ni marques esquema_valido = false por esta ambigüedad.
-9. Tabla progresiva + componentes secundarios (tasa al millar para rústicos, cuotas por
-   hectárea) → "progresivo", NO "mixto". Captura componentes en tarifa_millar/cuota_fija.
+9. Tabla progresiva + componentes secundarios → "progresivo", NO "mixto".
+   a) Si los rústicos/baldíos también tienen tabla progresiva propia → ambas tablas van en
+      tabla_progresiva con grupo diferente (ej: grupo="urbano_edificado" y grupo="rustico").
+   b) Si los componentes secundarios son tasa plana o cuota fija → tarifa_millar/cuota_fija.
 
 ═══ CASOS ESPECIALES A IGNORAR ═══
 
