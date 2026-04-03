@@ -30,6 +30,7 @@ Uso desde CLI:
      python -m scripts.run_pipeline guanajuato --steps extract
 """
 
+import csv
 import json
 import os
 import time
@@ -1497,6 +1498,21 @@ def extract_all(
     print(f"  Modo: síncrono ({mode_desc})")
     print(f"  Modelo: {OPENAI_MODEL}")
 
+    # Cargar segment.csv para detectar fallbacks y agregar hint al prompt
+    segment_methods: dict[str, str] = {}
+    if adapter is not None:
+        seg_csv = adapter.meta_dir / "segment.csv"
+        if seg_csv.exists():
+            try:
+                with seg_csv.open(encoding="utf-8-sig") as _f:
+                    for _row in csv.DictReader(_f):
+                        _key = _row.get("txt_file", "").replace(".txt", "")
+                        _method = _row.get("predial_method", _row.get("method", ""))
+                        if _key:
+                            segment_methods[_key] = _method
+            except Exception:
+                pass
+
     stats = {"total": 0, "ok_txt": 0, "ok_pdf": 0, "skipped": 0, "errors": 0}
 
     for txt_path in txt_files:
@@ -1540,13 +1556,29 @@ def extract_all(
             stats["errors"] += 1
             continue
 
+        # Detectar si este TXT vino de segmentación fallback
+        seg_method = segment_methods.get(txt_path.stem, "")
+        is_fallback = "fallback" in seg_method.lower() if seg_method else False
+
         data = None
         used_pdf = False
         used_ext_txt = False
 
+        # Si es fallback, agregar hint para que el LLM filtre ruido
+        texto_llm = texto
+        if is_fallback:
+            hint = (
+                "NOTA: La sección de predial no fue localizada con precisión en el PDF. "
+                "El siguiente texto puede contener la ley de ingresos completa u otras "
+                "secciones. Enfócate EXCLUSIVAMENTE en el impuesto predial/sobre la "
+                "propiedad. IGNORA completamente secciones de otros impuestos.\n\n"
+            )
+            texto_llm = hint + texto
+            print(f"    [hint] Segmentación fallback ({seg_method}) — prompt con hint")
+
         try:
             print(f"    [1/3] TXT ({len(texto)} chars)...")
-            data = call_llm(texto, anio, nombre_mpio, estado_nombre)
+            data = call_llm(texto_llm, anio, nombre_mpio, estado_nombre)
         except Exception as e:
             print(f"    [ERROR] LLM TXT: {e}")
 

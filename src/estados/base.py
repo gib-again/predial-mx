@@ -159,3 +159,12 @@ class EstadoAdapter(ABC):
             qa_dir=self.qa_dir,
             meta_dir=self.meta_dir,
         )
+
+    def run_segment_audit(self):
+        """Genera CSV de cobertura cruzando INEGI × segment.csv."""
+        from src.core.segment_validator import generate_segment_coverage
+        generate_segment_coverage(
+            estado_slug=self.slug,
+            meta_dir=self.meta_dir,
+            ejercicio_range=self.ejercicio_range,
+        )

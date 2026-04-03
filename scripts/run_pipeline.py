@@ -25,16 +25,20 @@ import time
 
 from src.estados import get_adapter, list_estados
 
-STEPS_ORDERED = ["download", "ocr", "master", "segment", "extract", "validate", "audit"]
+STEPS_ORDERED = [
+    "download", "ocr", "master", "segment", "segment-audit",
+    "extract", "validate", "audit",
+]
 
 STEP_METHODS = {
-    "download": lambda a, **kw: a.download(),
-    "ocr":      lambda a, **kw: a.run_ocr(),
-    "master":   lambda a, **kw: a.build_master(),
-    "segment":  lambda a, **kw: a.extract_predial_sections(),
-    "extract":  lambda a, **kw: a.run_llm_extraction(batch_mode=kw.get("batch", False)),
-    "validate": lambda a, **kw: a.run_validation(),
-    "audit":    lambda a, **kw: a.run_audit(),
+    "download":      lambda a, **kw: a.download(),
+    "ocr":           lambda a, **kw: a.run_ocr(),
+    "master":        lambda a, **kw: a.build_master(),
+    "segment":       lambda a, **kw: a.extract_predial_sections(),
+    "segment-audit": lambda a, **kw: a.run_segment_audit(),
+    "extract":       lambda a, **kw: a.run_llm_extraction(batch_mode=kw.get("batch", False)),
+    "validate":      lambda a, **kw: a.run_validation(),
+    "audit":         lambda a, **kw: a.run_audit(),
 }
 
 

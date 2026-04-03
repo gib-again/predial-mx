@@ -30,7 +30,6 @@ from __future__ import annotations
 import csv
 import json
 from pathlib import Path
-from typing import Any
 
 
 def _load_existing_audit(audit_csv: Path) -> dict[str, dict]:
@@ -73,6 +72,79 @@ def _sanity_check(data: dict) -> list[str]:
         issues.append("tabla_mixta_vacia")
 
     return issues
+
+
+def classify_error(
+    issues: list[str],
+    segment_method: str,
+    tipo_esquema: str,
+    esquema_valido: bool,
+) -> tuple[str, str, str, str]:
+    """
+    Clasifica el error y recomienda acción correctiva.
+
+    Returns:
+        (error_class, error_detail, action, action_detail)
+    """
+    # 1. Error de segmentación
+    if "fallback" in segment_method.lower():
+        return (
+            "segment",
+            f"Segmentacion fallback: {segment_method}",
+            "re_segment",
+            "Re-segmentar con regex mejorados o LLM localizador",
+        )
+
+    # 2. Schema inválido / desconocido
+    if tipo_esquema == "desconocido" or not esquema_valido:
+        return (
+            "schema",
+            f"Esquema {tipo_esquema}, valido={esquema_valido}",
+            "re_extract",
+            "Re-extraer: intentar TXT extendido o PDF vision",
+        )
+
+    # 3. Valores inconsistentes (tasas)
+    value_flags = [i for i in issues if "tasa" in i or "monto" in i or "cero" in i]
+    if value_flags:
+        return (
+            "value",
+            f"Valores sospechosos: {'; '.join(value_flags)}",
+            "review",
+            "Verificar valores contra PDF original",
+        )
+
+    # 4. Tablas vacías
+    empty_flags = [i for i in issues if "vacia" in i]
+    if empty_flags:
+        return (
+            "schema",
+            f"Tabla esperada vacia: {'; '.join(empty_flags)}",
+            "re_extract",
+            "Re-extraer: posible truncamiento de texto",
+        )
+
+    # 5. Inconsistencia interanual
+    inter_flags = [i for i in issues if "cambio" in i or "brusco" in i]
+    if inter_flags:
+        return (
+            "interanual",
+            f"Cambio interanual: {'; '.join(inter_flags)}",
+            "review",
+            "Comparar con anio anterior/posterior en PDF",
+        )
+
+    # 6. Otros issues
+    if issues:
+        return (
+            "other",
+            "; ".join(issues),
+            "review",
+            "Revisar manualmente",
+        )
+
+    # 7. Sin errores
+    return ("none", "", "ok", "")
 
 
 def run_audit(
@@ -164,6 +236,13 @@ def run_audit(
         if is_fallback:
             issues.append(f"segment_fallback:{seg_method}")
 
+        # Clasificar error y acción recomendada
+        tipo = predial.get("tipo_esquema", "")
+        valido = predial.get("esquema_valido", False)
+        error_class, error_detail, action, action_detail = classify_error(
+            issues, seg_method, tipo, valido,
+        )
+
         # Determinar estado de auditoría
         prev = existing.get(key, {})
         if issues:
@@ -178,12 +257,16 @@ def run_audit(
         rows.append({
             "ejercicio": anio,
             "slug": slug,
-            "tipo_esquema": predial.get("tipo_esquema", ""),
-            "esquema_valido": predial.get("esquema_valido", ""),
+            "tipo_esquema": tipo,
+            "esquema_valido": valido,
             "fuente": meta.get("fuente", ""),
             "prompt_hash": meta.get("prompt_hash", prompt_info.get(key, "")),
             "segment_method": seg_method,
+            "error_class": error_class,
+            "error_detail": error_detail,
             "issues": "; ".join(issues) if issues else "",
+            "action": action,
+            "action_detail": action_detail,
             "auditado": auditado,
             "notas": prev.get("notas", ""),
         })
@@ -195,7 +278,9 @@ def run_audit(
     fieldnames = [
         "ejercicio", "slug", "tipo_esquema", "esquema_valido",
         "fuente", "prompt_hash", "segment_method",
-        "issues", "auditado", "notas",
+        "error_class", "error_detail", "issues",
+        "action", "action_detail",
+        "auditado", "notas",
     ]
     with audit_csv.open("w", newline="", encoding="utf-8") as f:
         writer = csv.DictWriter(f, fieldnames=fieldnames)
@@ -222,7 +307,7 @@ def run_audit(
                     base = iss.split("_fila_")[0] if "_fila_" in iss else iss
                     base = base.split(":")[0] if ":" in base else base
                     issue_counts[base] += 1
-        print(f"\n  Desglose de issues:")
+        print("\n  Desglose de issues:")
         for iss, count in issue_counts.most_common():
             print(f"    {iss}: {count}")
 
@@ -230,8 +315,8 @@ def run_audit(
     pending = sum(1 for r in rows if r["issues"] and r["auditado"] == "pendiente")
     if pending > 0:
         print(f"\n  ⚠ {pending} municipio-año pendientes de revisar.")
-        print(f"  Consolidación bloqueada hasta que se auditen.")
+        print("  Consolidación bloqueada hasta que se auditen.")
     else:
-        print(f"\n  ✓ Todos los issues han sido auditados. Consolidación habilitada.")
+        print("\n  ✓ Todos los issues han sido auditados. Consolidación habilitada.")
 
     return audit_csv
