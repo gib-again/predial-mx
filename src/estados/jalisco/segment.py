@@ -20,14 +20,15 @@ from pathlib import Path
 import fitz  # PyMuPDF — ~5-10x faster than pdfplumber for text extraction
 from unidecode import unidecode
 
-from src.core.text_utils import slugify
+from src.core.muni_matcher import MuniMatcher
 from src.estados.jalisco.config import (
-    PREFIJO,
-    NEXT_TAX_PATTERNS,
     BLACKLIST_HEADER_PATTERNS,
-    MARGIN_BEFORE_PAGES,
-    MARGIN_AFTER_PAGES,
+    CVE_ENT,
+    NEXT_TAX_PATTERNS,
 )
+
+# Matcher unificado de municipios INEGI
+_matcher = MuniMatcher(cve_ent=CVE_ENT)
 
 
 # ══════════════════════════════════════════════════════════════
@@ -346,7 +347,7 @@ def run_extract_sections(adapter) -> Path:
         if forced_end or page_span <= 2:
             start = max(1, start - 5)
 
-        mun_slug = slugify(municipio)
+        mun_slug = _matcher.match(municipio).slug
         out_pdf = focus_dir / str(anio) / f"{prefijo}_PREDIAL_{anio}_{mun_slug}.pdf"
         out_txt = focus_dir / str(anio) / f"{prefijo}_PREDIAL_{anio}_{mun_slug}.txt"
 

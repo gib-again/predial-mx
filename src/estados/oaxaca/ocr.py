@@ -147,7 +147,7 @@ def run_ocr(adapter) -> Path:
         print("  No se encontraron PDFs en pdf_raw/")
         return ocr_log_csv
 
-    print(f"═══ Oaxaca: OCR ═══")
+    print("═══ Oaxaca: OCR ═══")
     print(f"  {len(pdf_files)} PDFs para procesar con OCR.")
 
     log_rows: list[dict] = []

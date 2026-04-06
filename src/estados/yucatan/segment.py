@@ -61,8 +61,11 @@ from typing import Optional
 
 import fitz  # PyMuPDF
 
-from src.core.text_utils import slugify
-from src.estados.yucatan.config import PREFIJO, KEEP_MONTHS, MERIDA_URLS, MERIDA_REPLICA_YEARS
+from src.core.muni_matcher import MuniMatcher
+from src.core.segment_utils import PatternSpec, find_predial_section
+from src.estados.yucatan.config import (
+    CVE_ENT, KEEP_MONTHS, MERIDA_REPLICA_YEARS, MERIDA_URLS,
+)
 
 
 # ══════════════════════════════════════════════════════════════
@@ -246,122 +249,38 @@ def run_build_master(adapter) -> Path:
 # SEGMENT: Extraer sección de predial de cada ley
 # ══════════════════════════════════════════════════════════════
 
-# ── Predial Start ──
+# Matcher unificado de municipios INEGI
+_matcher = MuniMatcher(cve_ent=CVE_ENT)
 
-# TIPO B (preferido): "Sección Primera Impuesto Predial" en TÍTULO SEXTO
-# Note: PDF text extraction often produces "Secci" (truncated) instead of "Sección"
-_RE_SECCION_PRIMERA_PREDIAL = re.compile(
-    r"Secci[oó]?n?\s+[Pp]rimera\s+(?:(?:del?\s+)?Imp[uú]esto\s+[Pp]redial)",
-    re.IGNORECASE,
-)
+# ── PatternSpecs (prioridad: TIPO B > TIPO A) ──
+_YUC_START_SPECS = [
+    # TIPO B (preferido): "Sección Primera Impuesto Predial" en TÍTULO SEXTO
+    PatternSpec(re.compile(
+        r"Secci[oó]?n?\s+[Pp]rimera\s+(?:(?:del?\s+)?Imp[uú]esto\s+[Pp]redial)",
+        re.IGNORECASE,
+    ), "seccion_predial"),
+    # TIPO A (fallback): "CAPÍTULO I Impuesto Predial" en TÍTULO SEGUNDO
+    PatternSpec(re.compile(
+        r"CAP[IÍ]TULO\s+(?:I|1|PRIMERO)\s+(?:(?:del?\s+)?Imp[uú]esto\s+[Pp]redial)",
+        re.IGNORECASE,
+    ), "capitulo_predial"),
+]
 
-# TIPO A (fallback): "CAPÍTULO I Impuesto Predial" en TÍTULO SEGUNDO
-_RE_CAPITULO_I_PREDIAL = re.compile(
-    r"CAP[IÍ]TULO\s+(?:I|1|PRIMERO)\s+(?:(?:del?\s+)?Imp[uú]esto\s+[Pp]redial)",
-    re.IGNORECASE,
-)
-
-# ── Predial End ──
-
-# TIPO B end: "Sección Segunda" (Del Impuesto Sobre Adquisición / cualquier siguiente sección)
-_RE_SECCION_SEGUNDA = re.compile(
-    r"Secci[oó]?n?\s+Segunda\s+",
-    re.IGNORECASE,
-)
-
-# TIPO A end: "CAPÍTULO II" (Impuesto Sobre Adquisición)
-_RE_CAPITULO_II = re.compile(
-    r"CAP[IÍ]TULO\s+(?:II|ll|2|SEGUNDO)\s+",
-    re.IGNORECASE,
-)
-
-# Fallback end: "CAPÍTULO III Derechos" or "TÍTULO TERCERO"
-_RE_TITULO_III = re.compile(
-    r"(?:CAP[IÍ]TULO\s+(?:III|3|TERCERO)\s+Derechos|T[IÍ]TULO\s+TERCERO)",
-    re.IGNORECASE,
-)
-
-
-def _extract_predial_text(law_text: str) -> Optional[str]:
-    """
-    Extrae la sección de predial del texto de una ley individual.
-
-    DOS PATRONES:
-
-    TIPO B (PREFERIDO): Busca "Sección Primera Impuesto Predial" (en TÍTULO SEXTO)
-      → Contiene la tarifa progresiva/tasa real + valores catastrales + frutos civiles
-      → Fin: "Sección Segunda"
-      → PREFERIDO porque tiene la tarifa limpia y separada
-
-    TIPO A (FALLBACK): Busca "CAPÍTULO I Impuesto Predial" (en TÍTULO SEGUNDO)
-      → Contiene valores catastrales + tarifa/factor + rústicos + frutos civiles
-      → Fin: "CAPÍTULO II"
-
-    FILTRADO DE VALORES CATASTRALES:
-      No filtramos aquí — el prompt del LLM se encarga de distinguir
-      tarifa (lo que calcula el impuesto) de valores catastrales (catastro).
-      Esto es más robusto que intentar separar con regex.
-
-    Returns:
-        Texto de la sección predial, o None si no se encuentra.
-    """
-    # Estrategia: TIPO B primero, TIPO A como fallback
-    predial_text = _try_tipo_b(law_text)
-    if predial_text:
-        return predial_text
-
-    predial_text = _try_tipo_a(law_text)
-    if predial_text:
-        return predial_text
-
-    return None
-
-
-def _try_tipo_b(law_text: str) -> Optional[str]:
-    """Intenta extraer predial con patrón Sección Primera."""
-    m_start = _RE_SECCION_PRIMERA_PREDIAL.search(law_text)
-    if not m_start:
-        return None
-
-    predial_start = m_start.start()
-
-    # Buscar fin: Sección Segunda
-    m_end = _RE_SECCION_SEGUNDA.search(law_text, predial_start + 20)
-    if m_end:
-        predial_end = m_end.start()
-    else:
-        # Fallback: CAPÍTULO III o TÍTULO III
-        m_end2 = _RE_TITULO_III.search(law_text, predial_start + 20)
-        if m_end2:
-            predial_end = m_end2.start()
-        else:
-            predial_end = min(predial_start + 10000, len(law_text))
-
-    result = law_text[predial_start:predial_end].strip()
-    return result if len(result) > 50 else None
-
-
-def _try_tipo_a(law_text: str) -> Optional[str]:
-    """Intenta extraer predial con patrón CAPÍTULO I."""
-    m_start = _RE_CAPITULO_I_PREDIAL.search(law_text)
-    if not m_start:
-        return None
-
-    predial_start = m_start.start()
-
-    # Buscar fin: CAPÍTULO II
-    m_end = _RE_CAPITULO_II.search(law_text, predial_start + 20)
-    if m_end:
-        predial_end = m_end.start()
-    else:
-        m_end2 = _RE_TITULO_III.search(law_text, predial_start + 20)
-        if m_end2:
-            predial_end = m_end2.start()
-        else:
-            predial_end = min(predial_start + 10000, len(law_text))
-
-    result = law_text[predial_start:predial_end].strip()
-    return result if len(result) > 50 else None
+_YUC_END_SPECS = [
+    # Sección Segunda (fin natural TIPO B)
+    PatternSpec(re.compile(
+        r"Secci[oó]?n?\s+Segunda\s+", re.IGNORECASE,
+    ), "seccion_segunda"),
+    # CAPÍTULO II (fin natural TIPO A)
+    PatternSpec(re.compile(
+        r"CAP[IÍ]TULO\s+(?:II|ll|2|SEGUNDO)\s+", re.IGNORECASE,
+    ), "capitulo_ii"),
+    # Fallback: CAPÍTULO III Derechos o TÍTULO TERCERO
+    PatternSpec(re.compile(
+        r"(?:CAP[IÍ]TULO\s+(?:III|3|TERCERO)\s+Derechos|T[IÍ]TULO\s+TERCERO)",
+        re.IGNORECASE,
+    ), "titulo_iii"),
+]
 
 
 def run_extract_sections(adapter) -> Path:
@@ -431,13 +350,26 @@ def run_extract_sections(adapter) -> Path:
 
                     law_text = full_text[char_start:char_end]
 
-                    # Detect which tipo was used
-                    has_seccion = bool(_RE_SECCION_PRIMERA_PREDIAL.search(law_text))
+                    # Localizar sección predial con find_predial_section
+                    result = find_predial_section(
+                        law_text,
+                        _YUC_START_SPECS,
+                        _YUC_END_SPECS,
+                        max_chars=10_000,
+                        min_chars=50,
+                    )
 
-                    predial_text = _extract_predial_text(law_text)
-
-                    muni_slug = slugify(muni)
+                    muni_slug = _matcher.match(muni).slug
                     txt_name = f"{prefijo}_PREDIAL_{fy}_{muni_slug}.txt"
+
+                    if not result.found:
+                        predial_text = None
+                    else:
+                        predial_text = law_text[
+                            result.start_char:result.end_char
+                        ].strip()
+                        if len(predial_text) < 50:
+                            predial_text = None
 
                     if not predial_text:
                         log_rows.append({
@@ -446,7 +378,6 @@ def run_extract_sections(adapter) -> Path:
                             "predial_tipo": "none",
                             "status": "no_predial_found",
                         })
-                        # Escribir row para segment.csv (sin predial)
                         segment_rows.append({
                             "ejercicio": fy, "municipio": muni, "slug": muni_slug,
                             "source_pdf": fname,
@@ -458,14 +389,15 @@ def run_extract_sections(adapter) -> Path:
                         })
                         continue
 
-                    # Detect tipo
-                    if has_seccion and predial_text.lower().startswith("secci"):
-                        predial_tipo = "seccion_primera"
-                    else:
-                        predial_tipo = "capitulo_i"
+                    # Tipo de patrón usado
+                    predial_tipo = (
+                        "seccion_primera"
+                        if result.method == "seccion_predial"
+                        else "capitulo_i"
+                    )
 
                     # Calcular páginas de predial a partir de offsets
-                    predial_offset_in_full = full_text.find(predial_text, char_start)
+                    predial_offset_in_full = char_start + result.start_char
                     if predial_offset_in_full < 0:
                         predial_offset_in_full = char_start
                     pred_page_start = bisect.bisect_right(page_char_starts, predial_offset_in_full)

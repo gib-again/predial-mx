@@ -51,7 +51,9 @@ from pathlib import Path
 
 import fitz  # PyMuPDF
 
-from src.core.text_utils import slugify
+from src.core.muni_matcher import MuniMatcher
+from src.core.segment_utils import PatternSpec, find_predial_section
+
 from src.estados.oaxaca import config
 
 
@@ -106,39 +108,15 @@ class IndexLey:
 # ═══════════════════════════════════════════════════
 
 
-def _normalize_municipio_name(raw: str) -> str:
-    """
-    Normaliza nombre de municipio al slug canónico.
+_matcher = MuniMatcher(cve_ent=config.CVE_ENT, aliases=config.ALIASES)
 
-    Oaxaca tiene nombres largos como:
-      "SANTO DOMINGO YANHUITLÁN"
-      "SAN PEDRO MÁRTIR YUCUXACO"
-      "SANTIAGO IHUITLÁN PLUMAS"
-    """
+
+def _normalize_municipio_name(raw: str) -> str:
+    """Normaliza nombre de municipio del PDF al slug canónico."""
     name = raw.strip().rstrip(",").strip()
     name = re.sub(r"\s+", " ", name, flags=re.UNICODE)
-
-    slug = slugify(name)
-    slug = re.sub(r"[^a-z0-9_]+", "_", slug)
-    slug = re.sub(r"_+", "_", slug).strip("_")
-
-    # Aliases
-    if slug in config.ALIASES:
-        return config.ALIASES[slug]
-
-    # Match directo en catálogo cargado
-    slug_to_cve = config.get_slug_to_cve()
-    if slug in slug_to_cve:
-        return slug
-
-    # Match por nombre oficial
-    name_to_slug = config.get_name_to_slug()
-    upper = name.upper().strip()
-    if upper in name_to_slug:
-        return name_to_slug[upper]
-
-    # Si no está en catálogo, retornar el slug tal cual
-    return slug
+    result = _matcher.match(name)
+    return result.slug
 
 
 # Reverse map solo para distritos faltantes cuando municipio ya quedó limpio.
@@ -486,109 +464,68 @@ def find_leyes_in_pdf(
 # Nivel 2: Extraer sección predial
 # ═══════════════════════════════════════════════════
 
-# Inicio de sección predial — ORDEN DE PRIORIDAD:
-#
-# 1) "Sección Primera. Predial" o "Sección Única. Predial"
-_RE_PREDIAL_START_SECCION = re.compile(
-    r"SECCI[OÓ]N\s+(?:PRIMERA|[UÚ]NICA)[.\s\-:]*\s*(?:DEL\s+)?(?:IMPUESTO\s+)?PREDIAL",
-    re.IGNORECASE,
-)
+# ── Patrones de sección predial (usa segment_utils compartido) ──
 
-# 2) "CAPÍTULO I/II ... IMPUESTOS SOBRE EL PATRIMONIO" seguido de predial
-_RE_PREDIAL_START_CAPITULO = re.compile(
-    r"CAP[IÍ]TULO\s+(?:I{1,3}|PRIMERO|SEGUNDO)\s*[.\s\-:]*\s*"
-    r"IMPUESTOS\s+SOBRE\s+EL\s+PATRIMONIO",
-    re.IGNORECASE,
-)
+_OAX_START_SPECS = [
+    # 1) "Sección Primera/Única. Predial"
+    PatternSpec(re.compile(
+        r"SECCI[OÓ]N\s+(?:PRIMERA|[UÚ]NICA)[.\s\-:]*\s*(?:DEL\s+)?(?:IMPUESTO\s+)?PREDIAL",
+        re.IGNORECASE,
+    ), "seccion_predial"),
+    # 2) "Capítulo I/II ... Impuestos Sobre el Patrimonio" (con validación PREDIAL)
+    PatternSpec(re.compile(
+        r"CAP[IÍ]TULO\s+(?:I{1,3}|PRIMERO|SEGUNDO)\s*[.\s\-:]*\s*"
+        r"IMPUESTOS\s+SOBRE\s+EL\s+PATRIMONIO",
+        re.IGNORECASE,
+    ), "capitulo_patrimonio"),
+    # 3) "DEL IMPUESTO PREDIAL" standalone
+    PatternSpec(re.compile(
+        r"(?:DEL\s+)?IMPUESTO\s+PREDIAL",
+        re.IGNORECASE,
+    ), "impuesto_predial"),
+    # 4) Artículo que menciona "impuesto predial"
+    PatternSpec(re.compile(
+        r"ART[IÍ]CULO\s+\d+[.\s]+.*?(?:impuesto\s+)?predial\s+(?:se\s+determinar[aá]|"
+        r"la\s+contribuci[oó]n|percibe\s+el\s+Municipio)",
+        re.IGNORECASE,
+    ), "articulo_predial"),
+]
 
-# 3) "DEL IMPUESTO PREDIAL" o "Artículo N ... predial"
-_RE_PREDIAL_START_STANDALONE = re.compile(
-    r"(?:DEL\s+)?IMPUESTO\s+PREDIAL",
-    re.IGNORECASE,
-)
+_OAX_END_SPECS = [
+    PatternSpec(re.compile(
+        r"SECCI[OÓ]N\s+SEGUNDA[.\s\-:]*\s*(?:FRACCIONAMIENTO|FUSI[OÓ]N|TRASLACI[OÓ]N)",
+        re.IGNORECASE,
+    ), "seccion_segunda"),
+    PatternSpec(re.compile(
+        r"CAP[IÍ]TULO\s+(?:II|III|SEGUNDO|TERCERO)\s*[.\s\-:]*\s*"
+        r"(?:IMPUESTOS\s+SOBRE\s+(?:LA\s+PRODUCCI[OÓ]N|EL\s+CONSUMO|TRASLACI[OÓ]N))",
+        re.IGNORECASE,
+    ), "capitulo_produccion"),
+    PatternSpec(re.compile(
+        r"(?:DEL\s+)?IMPUESTO\s+(?:SOBRE\s+)?TRASLACI[OÓ]N\s+DE\s+DOMINIO",
+        re.IGNORECASE,
+    ), "traslacion"),
+]
 
-# 4) Artículo que menciona "impuesto predial"
-_RE_PREDIAL_START_ARTICULO = re.compile(
-    r"ART[IÍ]CULO\s+\d+[.\s]+.*?(?:impuesto\s+)?predial\s+(?:se\s+determinar[aá]|"
-    r"la\s+contribuci[oó]n|percibe\s+el\s+Municipio)",
-    re.IGNORECASE,
-)
+_OAX_BLACKLIST = [
+    re.compile(
+        r"(?:CONCEPTO|ESTIMACI[OÓ]N|CLASIFICADOR|DISPOSICIONES\s+GENERALES|"
+        r"SUMARIO|INGRESOS\s+ESTIMADOS|IMPUESTOS\s+SOBRE\s+EL\s+PATRIMONIO\s+\d)",
+        re.IGNORECASE,
+    ),
+]
 
-# Contextos que NO son inicio de predial (tabla de estimación, índice, sumario)
-_RE_FALSE_POSITIVE = re.compile(
-    r"(?:CONCEPTO|ESTIMACI[OÓ]N|CLASIFICADOR|DISPOSICIONES\s+GENERALES|"
-    r"SUMARIO|INGRESOS\s+ESTIMADOS|IMPUESTOS\s+SOBRE\s+EL\s+PATRIMONIO\s+\d)",
-    re.IGNORECASE,
-)
-
-# Fin de sección predial
-_RE_PREDIAL_END_SECCION = re.compile(
-    r"SECCI[OÓ]N\s+SEGUNDA[.\s\-:]*\s*(?:FRACCIONAMIENTO|FUSI[OÓ]N|TRASLACI[OÓ]N)",
-    re.IGNORECASE,
-)
-
-_RE_PREDIAL_END_CAPITULO = re.compile(
-    r"CAP[IÍ]TULO\s+(?:II|III|SEGUNDO|TERCERO)\s*[.\s\-:]*\s*"
-    r"(?:IMPUESTOS\s+SOBRE\s+(?:LA\s+PRODUCCI[OÓ]N|EL\s+CONSUMO|TRASLACI[OÓ]N))",
-    re.IGNORECASE,
-)
-
-_RE_PREDIAL_END_TRASLACION = re.compile(
-    r"(?:DEL\s+)?IMPUESTO\s+(?:SOBRE\s+)?TRASLACI[OÓ]N\s+DE\s+DOMINIO",
-    re.IGNORECASE,
-)
-
-_RE_PREDIAL_END_FRACCIONAMIENTO = re.compile(
-    r"SECCI[OÓ]N\s+SEGUNDA[.\s\-:]*\s*FRACCIONAMIENTO",
-    re.IGNORECASE,
-)
+_RE_PREDIAL_CHECK = re.compile(r"PREDIAL", re.IGNORECASE)
 
 
-def _find_predial_start(text: str) -> tuple[int | None, str]:
-    """Busca inicio de sección predial. Retorna (posición, método) o (None, "")."""
-
-    # 1) Sección Primera/Única. Predial
-    m = _RE_PREDIAL_START_SECCION.search(text)
-    if m:
-        return m.start(), "seccion_predial"
-
-    # 2) Capítulo N ... Impuestos Sobre el Patrimonio
-    m = _RE_PREDIAL_START_CAPITULO.search(text)
-    if m:
-        after = text[m.start():m.start() + 3000]
-        if re.search(r"PREDIAL", after, re.IGNORECASE):
-            return m.start(), "capitulo_patrimonio"
-
-    # 3) "DEL IMPUESTO PREDIAL" standalone (con filtro de falsos positivos)
-    for m in _RE_PREDIAL_START_STANDALONE.finditer(text):
-        context_before = text[max(0, m.start() - 200): m.start()]
-        if not _RE_FALSE_POSITIVE.search(context_before):
-            return m.start(), "impuesto_predial"
-
-    # 4) Artículo que menciona predial
-    m = _RE_PREDIAL_START_ARTICULO.search(text)
-    if m:
-        return m.start(), "articulo_predial"
-
-    return None, ""
-
-
-def _find_predial_end(text: str, start_pos: int) -> int | None:
-    """Busca fin de sección predial DESPUÉS de start_pos."""
-    remaining = text[start_pos:]
-    candidates: list[int] = []
-
-    for pattern in [
-        _RE_PREDIAL_END_SECCION,
-        _RE_PREDIAL_END_CAPITULO,
-        _RE_PREDIAL_END_TRASLACION,
-        _RE_PREDIAL_END_FRACCIONAMIENTO,
-    ]:
-        m = pattern.search(remaining)
-        if m and m.start() > 200:  # Ignorar matches muy cerca del inicio
-            candidates.append(start_pos + m.start())
-
-    return min(candidates) if candidates else None
+def _oax_context_validator(text: str, match: re.Match, method: str) -> bool:
+    """Validación específica de Oaxaca."""
+    # capitulo_patrimonio: requiere que "PREDIAL" aparezca dentro de 3000 chars
+    if method == "capitulo_patrimonio":
+        after = text[match.start():match.start() + 3000]
+        if not _RE_PREDIAL_CHECK.search(after):
+            return False
+    return True
 
 
 def extract_predial_section(
@@ -616,10 +553,18 @@ def extract_predial_section(
 
     full_text = "\n".join(t for _, t in pages_text)
 
-    # ── Buscar inicio ──
-    start_pos, method = _find_predial_start(full_text)
+    # ── Usar localizador compartido ──
+    result = find_predial_section(
+        text=full_text,
+        start_specs=_OAX_START_SPECS,
+        end_specs=_OAX_END_SPECS,
+        blacklist_patterns=_OAX_BLACKLIST,
+        context_validator=_oax_context_validator,
+        max_chars=12_000,
+        fallback_chars=0,  # manejamos fallback con páginas abajo
+    )
 
-    if start_pos is None:
+    if not result.found:
         fb_text = full_text[:FALLBACK_MAX_CHARS].strip()
         p_start, p_end = _sanitize_page_range(
             ley.page_start,
@@ -635,12 +580,8 @@ def extract_predial_section(
             method="fallback_ley_completa",
         )
 
-    # ── Buscar fin ──
-    end_pos = _find_predial_end(full_text, start_pos)
-
-    if end_pos is None:
-        end_pos = min(start_pos + 12000, len(full_text))
-
+    start_pos = result.start_char
+    end_pos = result.end_char
     section_text = full_text[start_pos:end_pos].strip()
 
     # Determinar páginas que cubre esta sección
@@ -668,7 +609,7 @@ def extract_predial_section(
         text=section_text,
         page_start=p_start,
         page_end=p_end,
-        method=method,
+        method=result.method,
     )
 
 

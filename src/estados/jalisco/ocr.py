@@ -17,7 +17,6 @@ La prioridad de PDFs para la segmentación es: _forceocr > _ocr > original.
 import csv
 from pathlib import Path
 
-from src.core.text_utils import slugify
 
 
 def _check_ocrmypdf_available():

@@ -42,3 +42,11 @@ PATRON_FIN_PREDIAL = (
     r"CAPITULO\s+SEGUNDO\s+DEL\s+IMPUESTO\s+SOBRE\s+ADQUISICION\s+DE\s+INMUEBLES"
     r"|CAPITULO\s+SEGUNDO\s+DEL\s+IMPUESTO\s+AL\s+TRASLADO\s+DE\s+DOMINIO"
 )
+
+CVE_ENT = "05"
+ALIASES: dict[str, str] = {
+    # NOM_CAB → slug de NOM_MUN donde difieren
+    "ciudad_acuna": "acuna",
+    "nueva_rosita": "san_juan_de_sabinas",
+    "piedras_negras": "piedras_negras",
+}
