@@ -144,8 +144,14 @@ def execute_re_extract(rows: list[dict], adapter, dry_run: bool = True):
     print("  Listo. Corre audit de nuevo para actualizar el reporte.")
 
 
-def execute_re_segment(rows: list[dict], adapter, dry_run: bool = True):
-    """Borra TXT/PDF de focus y re-ejecuta segmentación para las filas indicadas."""
+def execute_re_segment(
+    rows: list[dict], adapter, dry_run: bool = True, use_llm: bool = False,
+):
+    """Borra TXT/PDF de focus y re-ejecuta segmentación para las filas indicadas.
+
+    Si use_llm=True, intenta localizar la sección predial con el LLM locator
+    (gpt-4.1-mini) en vez de re-correr el pipeline de regex completo.
+    """
     prefijo = adapter.prefijo
     focus_dir = adapter.focus_dir
     json_dir = adapter.json_dir
@@ -160,7 +166,8 @@ def execute_re_segment(rows: list[dict], adapter, dry_run: bool = True):
         json_path = json_dir / anio / f"{base}.json"
         targets.append((anio, slug, txt_path, pdf_path, json_path))
 
-    print(f"\n  Archivos a re-segmentar: {len(targets)}")
+    label = "re-segmentar (LLM locator)" if use_llm else "re-segmentar"
+    print(f"\n  Archivos a {label}: {len(targets)}")
     for anio, slug, txt, pdf, js in targets:
         parts = []
         if txt.exists():
@@ -173,23 +180,79 @@ def execute_re_segment(rows: list[dict], adapter, dry_run: bool = True):
         print(f"    {anio} {slug:30s} ({files})")
 
     if dry_run:
-        print("\n  [DRY RUN] Usa --execute para borrar y re-segmentar.")
+        print(f"\n  [DRY RUN] Usa --execute para borrar y {label}.")
         print("  Esto borrara TXT + PDF de focus_predial Y el JSON correspondiente.")
         return
 
-    deleted = 0
-    for anio, slug, txt, pdf, js in targets:
-        for p in (txt, pdf, js):
-            if p.exists():
-                p.unlink()
-                deleted += 1
-    print(f"\n  Borrados: {deleted} archivos")
+    if use_llm:
+        _re_segment_with_llm(targets, adapter)
+    else:
+        deleted = 0
+        for _anio, _slug, txt, pdf, js in targets:
+            for p in (txt, pdf, js):
+                if p.exists():
+                    p.unlink()
+                    deleted += 1
+        print(f"\n  Borrados: {deleted} archivos")
 
-    print("  Re-ejecutando segmentacion...")
-    adapter.extract_predial_sections()
+        print("  Re-ejecutando segmentacion...")
+        adapter.extract_predial_sections()
+
     print("  Re-ejecutando extraccion LLM...")
     adapter.run_llm_extraction(batch_mode=False)
     print("  Listo. Corre audit de nuevo para actualizar el reporte.")
+
+
+def _re_segment_with_llm(targets: list, adapter):
+    """Usa el LLM locator para re-localizar la sección predial."""
+    from src.core.llm_locator import locate_predial_llm
+
+    estado_slug = adapter.slug
+    log_dir = adapter.meta_dir
+    ok = 0
+    fail = 0
+
+    for anio, slug, txt_path, pdf_path, json_path in targets:
+        # Leer texto completo actual
+        if not txt_path.exists():
+            print(f"    {anio}/{slug}: TXT no existe, skip")
+            fail += 1
+            continue
+
+        texto = txt_path.read_text(encoding="utf-8", errors="ignore")
+        if not texto.strip():
+            print(f"    {anio}/{slug}: TXT vacio, skip")
+            fail += 1
+            continue
+
+        loc = locate_predial_llm(
+            text=texto,
+            municipio=slug,
+            ejercicio=int(anio),
+            estado=estado_slug,
+            log_dir=log_dir,
+        )
+
+        if loc.found and loc.confidence >= 0.6:
+            # Reescribir TXT con sección localizada
+            section = texto[loc.start_char:loc.end_char]
+            txt_path.write_text(section, encoding="utf-8")
+            # Borrar JSON para forzar re-extracción
+            if json_path.exists():
+                json_path.unlink()
+            ok += 1
+            print(
+                f"    {anio}/{slug}: LLM locator OK "
+                f"({loc.confidence:.0%}, {len(section)} chars)"
+            )
+        else:
+            fail += 1
+            print(
+                f"    {anio}/{slug}: LLM locator no encontro seccion "
+                f"(conf={loc.confidence:.0%})"
+            )
+
+    print(f"\n  LLM locator: {ok} OK, {fail} fallidos")
 
 
 def show_for_manual_capture(rows: list[dict], adapter):
@@ -247,6 +310,8 @@ def main():
                         help="Incluir filas ya auditadas (no solo pendientes)")
     parser.add_argument("--execute", action="store_true",
                         help="Ejecutar la correccion (borrar + re-procesar)")
+    parser.add_argument("--llm-locator", action="store_true",
+                        help="Usar LLM locator (gpt-4.1-mini) para re-segmentar")
 
     args = parser.parse_args()
     adapter = get_adapter(args.estado)
@@ -292,7 +357,9 @@ def main():
     if action == "re_extract":
         execute_re_extract(filtered, adapter, dry_run=False)
     elif action == "re_segment":
-        execute_re_segment(filtered, adapter, dry_run=False)
+        execute_re_segment(
+            filtered, adapter, dry_run=False, use_llm=args.llm_locator,
+        )
     elif action == "manual_capture":
         show_for_manual_capture(filtered, adapter)
     elif action == "review":

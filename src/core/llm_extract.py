@@ -1564,17 +1564,46 @@ def extract_all(
         used_pdf = False
         used_ext_txt = False
 
-        # Si es fallback, agregar hint para que el LLM filtre ruido
+        # Si es fallback, intentar localización LLM; si no, agregar hint
         texto_llm = texto
         if is_fallback:
-            hint = (
-                "NOTA: La sección de predial no fue localizada con precisión en el PDF. "
-                "El siguiente texto puede contener la ley de ingresos completa u otras "
-                "secciones. Enfócate EXCLUSIVAMENTE en el impuesto predial/sobre la "
-                "propiedad. IGNORA completamente secciones de otros impuestos.\n\n"
-            )
-            texto_llm = hint + texto
-            print(f"    [hint] Segmentación fallback ({seg_method}) — prompt con hint")
+            locator_ok = False
+            if adapter is not None:
+                try:
+                    from src.core.llm_locator import locate_predial_llm
+
+                    estado_slug = getattr(adapter, "slug", "")
+                    log_dir = getattr(adapter, "meta_dir", None)
+                    loc = locate_predial_llm(
+                        text=texto,
+                        municipio=nombre_mpio,
+                        ejercicio=anio,
+                        estado=estado_slug,
+                        log_dir=log_dir,
+                    )
+                    if loc.found and loc.confidence >= 0.6:
+                        texto_llm = texto[loc.start_char:loc.end_char]
+                        locator_ok = True
+                        print(
+                            f"    [locator] LLM found predial "
+                            f"({loc.confidence:.0%}), {len(texto_llm)} chars"
+                        )
+                except Exception as e:
+                    print(f"    [locator] Error: {e}")
+
+            if not locator_ok:
+                hint = (
+                    "NOTA: La sección de predial no fue localizada con "
+                    "precisión en el PDF. El siguiente texto puede contener "
+                    "la ley de ingresos completa u otras secciones. Enfócate "
+                    "EXCLUSIVAMENTE en el impuesto predial/sobre la propiedad."
+                    " IGNORA completamente secciones de otros impuestos.\n\n"
+                )
+                texto_llm = hint + texto
+                print(
+                    f"    [hint] Segmentación fallback ({seg_method})"
+                    " — prompt con hint"
+                )
 
         try:
             print(f"    [1/3] TXT ({len(texto)} chars)...")

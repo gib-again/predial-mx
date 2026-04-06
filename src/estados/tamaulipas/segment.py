@@ -43,7 +43,8 @@ from pathlib import Path
 
 import fitz  # PyMuPDF
 
-from src.core.text_utils import slugify
+from src.core.muni_matcher import MuniMatcher
+from src.core.segment_utils import PatternSpec, find_predial_section
 from src.estados.tamaulipas import config
 
 
@@ -82,50 +83,22 @@ class SeccionPredial:
     text: str = ""
     page_start: int = -1
     page_end: int = -1
-    method: str = ""        # "propiedad_urbana" | "patrimonio_fallback" | "fallback_5pp"
+    method: str = ""        # "propiedad_urbana" | "patrimonio_fallback" | "fallback_Npp"
 
 
 # ══════════════════════════════════════════════════════════════
 # Normalización de nombres de municipio
 # ══════════════════════════════════════════════════════════════
 
+_matcher = MuniMatcher(cve_ent=config.CVE_ENT, aliases=config.ALIASES)
+
+
 def _normalize_municipio_name(raw: str) -> str:
     """Normaliza nombre de municipio del PDF al slug canónico."""
-    # Limpiar y normalizar whitespace (incluye saltos de línea del PDF)
     name = raw.strip().rstrip(",").strip()
     name = re.sub(r"\s+", " ", name, flags=re.UNICODE)
-
-    # Generar slug y sanear
-    slug = slugify(name)
-    slug = re.sub(r"[^a-z0-9_]+", "_", slug)
-    slug = re.sub(r"_+", "_", slug).strip("_")
-
-    # Intentar match directo
-    if slug in config.SLUG_TO_CVE:
-        return slug
-
-    # Intentar alias
-    if slug in config.ALIASES:
-        return config.ALIASES[slug]
-
-    # Intentar match por nombre oficial (case-insensitive)
-    upper = name.upper().strip()
-    if upper in config.NAME_TO_SLUG:
-        return config.NAME_TO_SLUG[upper]
-
-    # Fuzzy: quitar sufijos comunes "de", "del", "la"
-    for suffix in ["_de", "_del", "_la"]:
-        if slug.endswith(suffix):
-            candidate = slug[:-len(suffix)]
-            if candidate in config.SLUG_TO_CVE:
-                return candidate
-
-    # Last resort: substring match
-    for canonical_slug in config.SLUG_TO_CVE:
-        if canonical_slug in slug or slug in canonical_slug:
-            return canonical_slug
-
-    return slug  # Devolver como está; consolidate.py lo flaggeará
+    result = _matcher.match(name)
+    return result.slug
 
 
 # ══════════════════════════════════════════════════════════════
@@ -209,94 +182,46 @@ def find_leyes_municipales(
 
 
 # ══════════════════════════════════════════════════════════════
-# Nivel 2: Extraer sección predial
+# Nivel 2: Extraer sección predial (usa segment_utils compartido)
 # ══════════════════════════════════════════════════════════════
 
-# Inicio de sección predial — ORDEN DE PRIORIDAD:
-#
-# 1) "(DEL )?IMPUESTO SOBRE LA PROPIEDAD URBANA,? SUBURBANA"
-#    Cubre tanto "DEL IMPUESTO SOBRE..." como "IMPUESTO SOBRE..."
-#    El ", SUBURBANA" evita falsos positivos de la tabla de estimación
-#    (que solo dice "1210 IMPUESTO SOBRE LA PROPIEDAD URBANA").
-#
-# 2) "SECCIÓN ... DEL IMPUESTO SOBRE LA PROPIEDAD"
-#    Ej: "SECCIÓN PRIMERA DEL IMPUESTO SOBRE LA PROPIEDAD URBANA..."
-#
-# 3) Fallback: "IMPUESTOS? SOBRE EL PATRIMONIO"
-
-_RE_PREDIAL_START_PRIMARY = re.compile(
-    r"(?:DEL\s+)?IMPUESTO\s+SOBRE\s+LA\s+PROPIEDAD\s+URBANA"
-    r"[,\s]+SUBURBANA",
-    re.IGNORECASE,
-)
-
-_RE_PREDIAL_START_ALT = re.compile(
-    r"SECCI[OÓ]N\s+\w+\s+(?:DEL\s+)?IMPUESTO\s+SOBRE\s+LA\s+PROPIEDAD\s+"
-    r"(?:URBANA|INMOBILIARIA|RA[IÍ]Z)",
-    re.IGNORECASE,
-)
-
-_RE_PREDIAL_START_FALLBACK = re.compile(
-    r"IMPUESTOS?\s+SOBRE\s+EL\s+PATRIMONIO",
-    re.IGNORECASE,
-)
-
-# Fin de sección predial — el header de "ADQUISICIÓN DE INMUEBLES"
-# como título de sección (no como mención inline en artículos).
-# Matchea: "IMPUESTO SOBRE ADQUISICIÓN DE INMUEBLES"
-#           "DEL IMPUESTO SOBRE ADQUISICIÓN DE INMUEBLES"
-#           "SOBRE ADQUISICIÓN DE INMUEBLES"
-_RE_PREDIAL_END = re.compile(
-    r"(?:DEL\s+)?IMPUESTO\s+SOBRE\s+ADQUISICI[OÓ]N\s+DE\s+INMUEBLES",
-    re.IGNORECASE,
-)
-_RE_PREDIAL_END_FALLBACK = re.compile(
-    r"SECCI[OÓ]N\s+TERCERA",
-    re.IGNORECASE,
-)
-
-
-def _find_predial_start(text: str) -> tuple[int | None, str]:
-    """
-    Busca el inicio de la sección predial en el texto de una ley.
-    Retorna (posición, método) o (None, "").
-    """
-    # 1) Primary: "IMPUESTO SOBRE LA PROPIEDAD URBANA, SUBURBANA"
-    m = _RE_PREDIAL_START_PRIMARY.search(text)
-    if m:
-        return m.start(), "propiedad_urbana"
-
-    # 2) Alt: "SECCIÓN X DEL IMPUESTO SOBRE LA PROPIEDAD..."
-    m = _RE_PREDIAL_START_ALT.search(text)
-    if m:
-        return m.start(), "seccion_propiedad"
-
+# Patrones de inicio — TAMAULIPAS usa "PROPIEDAD URBANA, SUBURBANA" no "PREDIAL"
+_TAMPS_START_SPECS = [
+    # 1) "(DEL) IMPUESTO SOBRE LA PROPIEDAD URBANA, SUBURBANA"
+    #    El ", SUBURBANA" evita falsos positivos de la tabla de estimación
+    PatternSpec(re.compile(
+        r"(?:DEL\s+)?IMPUESTO\s+SOBRE\s+LA\s+PROPIEDAD\s+URBANA"
+        r"[,\s]+SUBURBANA",
+        re.IGNORECASE,
+    ), "propiedad_urbana"),
+    # 2) "SECCIÓN X DEL IMPUESTO SOBRE LA PROPIEDAD..."
+    PatternSpec(re.compile(
+        r"SECCI[OÓ]N\s+\w+\s+(?:DEL\s+)?IMPUESTO\s+SOBRE\s+LA\s+PROPIEDAD\s+"
+        r"(?:URBANA|INMOBILIARIA|RA[IÍ]Z)",
+        re.IGNORECASE,
+    ), "seccion_propiedad"),
     # 3) Fallback: "IMPUESTOS SOBRE EL PATRIMONIO"
-    m = _RE_PREDIAL_START_FALLBACK.search(text)
-    if m:
-        return m.start(), "patrimonio_fallback"
+    PatternSpec(re.compile(
+        r"IMPUESTOS?\s+SOBRE\s+EL\s+PATRIMONIO",
+        re.IGNORECASE,
+    ), "patrimonio_fallback"),
+]
 
-    return None, ""
+_TAMPS_END_SPECS = [
+    PatternSpec(re.compile(
+        r"(?:DEL\s+)?IMPUESTO\s+SOBRE\s+ADQUISICI[OÓ]N\s+DE\s+INMUEBLES",
+        re.IGNORECASE,
+    ), "adquisicion"),
+    PatternSpec(re.compile(
+        r"SECCI[OÓ]N\s+TERCERA",
+        re.IGNORECASE,
+    ), "seccion_tercera"),
+]
 
-
-def _find_predial_end(text: str, start_pos: int) -> int | None:
-    """
-    Busca el fin de la sección predial en el texto DESPUÉS de start_pos.
-    Retorna posición absoluta o None.
-    """
-    remaining = text[start_pos:]
-
-    # Primary: "IMPUESTO SOBRE ADQUISICIÓN DE INMUEBLES"
-    m = _RE_PREDIAL_END.search(remaining)
-    if m:
-        return start_pos + m.start()
-
-    # Fallback: "SECCIÓN TERCERA"
-    m = _RE_PREDIAL_END_FALLBACK.search(remaining)
-    if m:
-        return start_pos + m.start()
-
-    return None
+# Blacklist: tabla de estimación "1210 IMPUESTO SOBRE LA PROPIEDAD URBANA" (sin SUBURBANA)
+_TAMPS_BLACKLIST = [
+    re.compile(r"(?:1210\b|ESTIMACI[OÓ]N|CLASIFICADOR)", re.IGNORECASE),
+]
 
 
 def extract_predial_section(
@@ -307,7 +232,6 @@ def extract_predial_section(
     Extrae la sección de predial de una ley municipal.
     Si no se encuentra, devuelve las primeras FALLBACK_PAGES páginas de la ley.
     """
-    # Extraer todo el texto de la ley
     pages_text: list[tuple[int, str]] = []
     for p in range(ley.page_start, ley.page_end):
         text = doc[p].get_text("text")
@@ -319,11 +243,18 @@ def extract_predial_section(
 
     full_text = "\n".join(t for _, t in pages_text)
 
-    # ── Buscar inicio ──
-    start_pos, method = _find_predial_start(full_text)
+    # ── Usar localizador compartido ──
+    result = find_predial_section(
+        text=full_text,
+        start_specs=_TAMPS_START_SPECS,
+        end_specs=_TAMPS_END_SPECS,
+        blacklist_patterns=_TAMPS_BLACKLIST,
+        max_chars=15_000,
+        fallback_chars=0,  # manejamos fallback con páginas abajo
+    )
 
-    if start_pos is None:
-        # ── FALLBACK: primeras 5 páginas de la ley ──
+    if not result.found:
+        # ── FALLBACK: primeras N páginas de la ley ──
         fb_end = min(ley.page_start + FALLBACK_PAGES, ley.page_end)
         fb_text_parts = []
         for p in range(ley.page_start, fb_end):
@@ -332,31 +263,24 @@ def extract_predial_section(
                 fb_text_parts.append(t)
         fb_text = "\n".join(fb_text_parts).strip()
         return SeccionPredial(
-            found=True,  # marcamos found para que el LLM intente
+            found=True,
             text=fb_text,
             page_start=ley.page_start,
             page_end=fb_end,
-            method="fallback_5pp",
+            method=f"fallback_{FALLBACK_PAGES}pp",
         )
 
-    # ── Buscar fin ──
-    end_pos = _find_predial_end(full_text, start_pos)
-
-    if end_pos is None:
-        # Sin delimitador de fin: usar máximo 15000 chars desde inicio
-        end_pos = min(start_pos + 15000, len(full_text))
-
-    section_text = full_text[start_pos:end_pos].strip()
+    section_text = full_text[result.start_char:result.end_char].strip()
 
     # Determinar páginas que cubre esta sección
     char_count = 0
     p_start = pages_text[0][0]
     p_end = pages_text[-1][0] + 1
     for page_idx, page_text in pages_text:
-        page_end_char = char_count + len(page_text) + 1  # +1 for \n
-        if char_count <= start_pos < page_end_char:
+        page_end_char = char_count + len(page_text) + 1
+        if char_count <= result.start_char < page_end_char:
             p_start = page_idx
-        if char_count <= end_pos < page_end_char:
+        if char_count <= result.end_char < page_end_char:
             p_end = page_idx + 1
             break
         char_count = page_end_char
@@ -366,7 +290,7 @@ def extract_predial_section(
         text=section_text,
         page_start=p_start,
         page_end=p_end,
-        method=method,
+        method=result.method,
     )
 
 
@@ -417,7 +341,7 @@ def segment_all(
     focus_dir = data_dir / "focus_predial"
     meta_dir = data_dir / "meta"
 
-    print(f"═══ Tamaulipas: Segmentación ═══")
+    print("═══ Tamaulipas: Segmentación ═══")
 
     stats = {
         "total": 0, "found_exact": 0, "found_fallback": 0,
@@ -497,8 +421,8 @@ def segment_all(
             # Nivel 2: extraer predial (con fallback a primeras 5 páginas)
             seccion = extract_predial_section(doc, ley)
 
-            if seccion.method == "fallback_5pp":
-                print(f"    {ley.slug}: predial no detectada → fallback 5pp")
+            if seccion.method.startswith("fallback"):
+                print(f"    {ley.slug}: predial no detectada → {seccion.method}")
                 stats["found_fallback"] += 1
             else:
                 stats["found_exact"] += 1
@@ -538,7 +462,7 @@ def segment_all(
                 "source_pdf": pdf_path.name,
                 "ley_page_start": ley.page_start + 1,
                 "ley_page_end": ley.page_end,
-                "predial_found": "true" if seccion.method != "fallback_5pp" else "fallback",
+                "predial_found": "true" if not seccion.method.startswith("fallback") else "fallback",
                 "predial_method": seccion.method,
                 "predial_page_start": seccion.page_start + 1,
                 "predial_page_end": seccion.page_end,
@@ -553,9 +477,9 @@ def segment_all(
         csv_path = _write_meta_csv(meta_dir, all_meta_rows)
         print(f"\n  Meta: {csv_path.name} ({len(all_meta_rows)} filas)")
 
-    print(f"\n  ── Resumen ──")
+    print("\n  ── Resumen ──")
     print(f"  Total: {stats['total']}")
     print(f"  Predial exacta: {stats['found_exact']}")
-    print(f"  Predial fallback (5pp): {stats['found_fallback']}")
+    print(f"  Predial fallback: {stats['found_fallback']}")
     print(f"  Ya existían: {stats['skipped']}")
     print(f"  Errores: {stats['errors']}")
