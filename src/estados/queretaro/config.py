@@ -10,6 +10,10 @@ ESTADO_SLUG = "queretaro"
 PREFIJO = "QRO"
 ESTADO_NOMBRE = "Querétaro"
 NEEDS_OCR = False  # PDFs digitales
+CVE_ENT = "22"
+ALIASES: dict[str, str] = {
+    "santiago_de_queretaro": "queretaro",
+}
 
 # ── URLs ──────────────────────────────────────────────────────
 # Template para diarios del PO

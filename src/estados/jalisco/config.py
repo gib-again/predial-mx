@@ -8,6 +8,7 @@ ESTADO_SLUG = "jalisco"
 PREFIJO = "JAL"
 ESTADO_NOMBRE = "Jalisco"
 NEEDS_OCR = True  # PDFs del PO de Jalisco son frecuentemente escaneados
+CVE_ENT = "14"
 
 # ── API del Periódico Oficial ──
 BASE_PORTAL = "https://periodicooficial.jalisco.gob.mx"

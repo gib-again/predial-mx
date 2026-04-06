@@ -29,89 +29,19 @@ from __future__ import annotations
 import csv
 import re
 import unicodedata
-from difflib import SequenceMatcher
 from pathlib import Path
 from typing import Optional
 
 import fitz  # PyMuPDF
 
-from src.core.text_utils import slugify
+from src.core.muni_matcher import MuniMatcher
+from src.estados.queretaro import config
 
 # ──────────────────────────────────────────────────────────────
-# Catálogo INEGI (canonización de municipios)
+# Matcher unificado de municipios INEGI
 # ──────────────────────────────────────────────────────────────
 
-def _muni_key(s: str) -> str:
-    s = (s or "").strip().lower()
-    s = unicodedata.normalize("NFD", s)
-    s = "".join(c for c in s if unicodedata.category(c) != "Mn")
-    s = re.sub(r"[^a-z0-9\s]", " ", s)
-    s = re.sub(r"\s+", " ", s).strip()
-    s = re.sub(r"^(municipio|mun)\s+de\s+", "", s).strip()
-    s = re.sub(r"\bqro\b$", "", s).strip()
-    return s
-
-
-def _find_catalog_path() -> Path:
-    here = Path(__file__).resolve()
-    for p in [here] + list(here.parents):
-        cand = p / "catalogs" / "municipios_inegi.csv"
-        if cand.exists():
-            return cand
-    return Path("catalogs/municipios_inegi.csv")
-
-
-_MUNI_CATALOG: Optional[dict[str, str]] = None
-
-
-def _load_inegi_munis_qro() -> dict[str, str]:
-    global _MUNI_CATALOG
-    if _MUNI_CATALOG is not None:
-        return _MUNI_CATALOG
-
-    path = _find_catalog_path()
-    d: dict[str, str] = {}
-    with path.open("r", encoding="utf-8-sig", newline="") as f:
-        reader = csv.DictReader(f)
-        for r in reader:
-            if (r.get("CVE_ENT") or "").strip() != "22":
-                continue
-            nom = (r.get("NOM_MUN") or "").strip()
-            if not nom:
-                continue
-            d[_muni_key(nom)] = nom
-
-    # Aliases
-    d[_muni_key("Santiago de Queretaro")] = "Querétaro"
-    d[_muni_key("Santiago de Querétaro")] = "Querétaro"
-    d[_muni_key("Queretaro")] = "Querétaro"
-    d[_muni_key("El Marques")] = "El Marqués"
-
-    _MUNI_CATALOG = d
-    return d
-
-
-def _map_municipio_to_inegi(raw_name: str, min_score: float = 0.86) -> tuple[str, float, str]:
-    cat = _load_inegi_munis_qro()
-    k = _muni_key(raw_name)
-
-    if k in cat:
-        canon = cat[k]
-        method = "alias" if _muni_key(canon) != k else "exact"
-        return canon, 1.0, method
-
-    best = raw_name.strip()
-    best_score = 0.0
-    for kk, canon in cat.items():
-        sc = SequenceMatcher(None, k, kk).ratio()
-        if sc > best_score:
-            best_score = sc
-            best = canon
-
-    if best_score >= min_score:
-        return best, best_score, "fuzzy"
-
-    return raw_name.strip(), best_score, "fallback"
+_matcher = MuniMatcher(cve_ent=config.CVE_ENT, aliases=config.ALIASES)
 
 
 def _clean_muni_name(raw: str) -> str:
@@ -273,9 +203,11 @@ def _detect_laws_in_lines(all_lines: list[str]) -> list[dict]:
         if _RE_EXPIDO_PROMULGO.search(prev):
             continue
 
-        muni_canon, score, method = _map_municipio_to_inegi(muni_raw)
+        mr = _matcher.match(muni_raw)
+        muni_canon = muni_raw  # keep cleaned name for display
+        muni_slug = mr.slug
 
-        key = (muni_canon, ejercicio)
+        key = (muni_slug, ejercicio)
         if key in last_seen and results and (i - results[-1]["start_line"] < 25):
             continue
         last_seen.add(key)
@@ -283,8 +215,9 @@ def _detect_laws_in_lines(all_lines: list[str]) -> list[dict]:
         results.append({
             "municipio_raw": muni_raw,
             "municipio": muni_canon,
-            "match_score": f"{score:.3f}",
-            "match_method": method,
+            "slug": muni_slug,
+            "match_score": f"{mr.score:.3f}",
+            "match_method": mr.method,
             "ejercicio": ejercicio,
             "start_line": i,
         })
@@ -335,6 +268,7 @@ def run_build_master(adapter) -> Path:
                     "parts": ";".join(str(p.relative_to(pdf_raw_dir)).replace("\\", "/") for p in parts),
                     "municipio_raw": law["municipio_raw"],
                     "municipio": law["municipio"],
+                    "slug": law["slug"],
                     "match_score": law["match_score"],
                     "match_method": law["match_method"],
                     "ejercicio": law["ejercicio"] or "",
@@ -349,7 +283,7 @@ def run_build_master(adapter) -> Path:
     muni_starts_csv = meta_dir / "muni_starts.csv"
     fieldnames = [
         "doc_id", "parts",
-        "municipio_raw", "municipio", "match_score", "match_method",
+        "municipio_raw", "municipio", "slug", "match_score", "match_method",
         "ejercicio",
         "start_part", "start_page", "start_line",
     ]
@@ -530,10 +464,12 @@ def run_extract_sections(adapter) -> Path:
 
                     s_line, e_line, n_art = _find_predial_range_in_lines(all_lines, start_line, end_line)
 
+                    muni_slug = row.get("slug") or _matcher.match(muni).slug
+
                     if s_line is None or e_line is None:
                         log_rows.append({
                             "municipio": muni,
-                            "municipio_slug": slugify(muni),
+                            "municipio_slug": muni_slug,
                             "ejercicio": ejercicio,
                             "doc_id": doc_id,
                             "ley_lines": f"{start_line}-{end_line}",
@@ -547,7 +483,7 @@ def run_extract_sections(adapter) -> Path:
                     if not predial_text:
                         log_rows.append({
                             "municipio": muni,
-                            "municipio_slug": slugify(muni),
+                            "municipio_slug": muni_slug,
                             "ejercicio": ejercicio,
                             "doc_id": doc_id,
                             "ley_lines": f"{start_line}-{end_line}",
@@ -556,8 +492,6 @@ def run_extract_sections(adapter) -> Path:
                             "status": "predial_empty",
                         })
                         continue
-
-                    muni_slug = slugify(muni)
 
                     # Hardcoded fixes puntuales (slug/nombre basados en texto real)
                     muni, muni_slug, action = _hardcoded_postfix_muni_fix(

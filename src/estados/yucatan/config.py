@@ -14,6 +14,7 @@ ESTADO_SLUG = "yucatan"
 PREFIJO = "YUC"
 ESTADO_NOMBRE = "Yucatán"
 NEEDS_OCR = False  # PDFs del DO de Yucatán son digitales
+CVE_ENT = "31"
 
 # ── URLs del Diario Oficial ──
 BASE_INDEX_URL = "https://www.yucatan.gob.mx/docs/diario_oficial/indices/{year}.pdf"

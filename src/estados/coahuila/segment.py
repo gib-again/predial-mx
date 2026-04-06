@@ -14,10 +14,12 @@ import csv
 import re
 from pathlib import Path
 
+from src.core.muni_matcher import MuniMatcher
 from src.core.pdf_utils import build_text_and_offsets, idx_to_page, save_pdf_slice
-from src.core.text_utils import norm, slugify
+from src.core.segment_utils import PatternSpec, find_predial_section
+from src.core.text_utils import norm
+from src.estados.coahuila import config
 from src.estados.coahuila.config import (
-    PREFIJO,
     DIR_MUN_CSV,
     PATRON_LEY_HEADER,
     PATRON_FIN_PREDIAL,
@@ -138,6 +140,31 @@ def find_ley_span(raw_text: str, municipio: str):
     return law_start, law_end
 
 
+# ── Patrones de inicio predial (prioridad descendente) ──
+# El backtrack del código original (buscar TITULO SEGUNDO o CAPITULO PRIMERO
+# antes de "DEL IMPUESTO PREDIAL") se captura con patrones combinados.
+_COAH_START_SPECS = [
+    PatternSpec(re.compile(
+        r"TITULO\s+SEGUNDO[\s\S]{0,2000}?DEL\s+IMPUESTO\s+PREDIAL",
+        re.IGNORECASE,
+    ), "titulo_predial"),
+    PatternSpec(re.compile(
+        r"CAPITULO\s+PRIMERO[\s\S]{0,500}?DEL\s+IMPUESTO\s+PREDIAL",
+        re.IGNORECASE,
+    ), "capitulo_predial"),
+    PatternSpec(re.compile(
+        r"DEL\s+IMPUESTO\s+PREDIAL",
+        re.IGNORECASE,
+    ), "impuesto_predial"),
+]
+
+_COAH_END_SPECS = [
+    PatternSpec(re.compile(PATRON_FIN_PREDIAL, re.IGNORECASE), "adquisicion_traslado"),
+]
+
+_matcher = MuniMatcher(cve_ent=config.CVE_ENT, aliases=config.ALIASES)
+
+
 def find_predial_in_window(norm_text: str, law_start: int, law_end: int):
     """
     Busca la sección de impuesto predial dentro de [law_start, law_end].
@@ -150,38 +177,18 @@ def find_predial_in_window(norm_text: str, law_start: int, law_end: int):
 
     sub = norm_text[law_start:law_end]
 
-    # Intento 1: encabezado completo del capítulo
-    m_cap_pred = re.search(r"CAPITULO\s+PRIMERO\s+DEL\s+IMPUESTO\s+PREDIAL", sub)
-    if m_cap_pred:
-        predial_start = law_start + m_cap_pred.start()
-    else:
-        # Intento 2: "DEL IMPUESTO PREDIAL"
-        m_pred = re.search(r"DEL\s+IMPUESTO\s+PREDIAL", sub)
-        if not m_pred:
-            return None
+    result = find_predial_section(
+        text=sub,
+        start_specs=_COAH_START_SPECS,
+        end_specs=_COAH_END_SPECS,
+        max_chars=len(sub),  # sin cap, la ley ya está delimitada
+    )
 
-        predial_core_start = law_start + m_pred.start()
+    if not result.found:
+        return None
 
-        window_before = norm_text[law_start:predial_core_start]
-        m_title_all = list(re.finditer(r"TITULO\s+SEGUNDO", window_before))
-        if m_title_all:
-            predial_start = law_start + m_title_all[-1].start()
-        else:
-            m_cap1 = re.search(r"CAPITULO\s+PRIMERO", window_before)
-            predial_start = (
-                law_start + m_cap1.start() if m_cap1 else predial_core_start
-            )
-
-    # Final: siguiente capítulo de adquisición/traslado
-    sub2 = norm_text[predial_start:law_end]
-    m_end = re.search(PATRON_FIN_PREDIAL, sub2)
-    if m_end:
-        predial_end = predial_start + m_end.start()
-    else:
-        predial_end = law_end
-
-    predial_start = max(predial_start, law_start)
-    predial_end = min(predial_end, law_end)
+    predial_start = law_start + result.start_char
+    predial_end = law_start + result.end_char
 
     if predial_end <= predial_start:
         return None
@@ -516,7 +523,7 @@ def run_extract_sections(adapter) -> Path:
         p_end_pred = idx_to_page(end_idx - 1, page_starts)
 
         # Guardar TXT y PDF recortado
-        muni_slug = slugify(municipio)
+        muni_slug = _matcher.match(municipio).slug
         year_str = str(ejercicio)
         txt_path = focus_dir / year_str / f"{prefijo}_PREDIAL_{year_str}_{muni_slug}.txt"
         pdf_out_path = focus_dir / year_str / f"{prefijo}_PREDIAL_{year_str}_{muni_slug}.pdf"
