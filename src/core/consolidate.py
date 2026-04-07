@@ -214,9 +214,38 @@ def _tasa_from_progresivo(tabla: list) -> Optional[float]:
 # Lectura de JSONs de todos los estados
 # ══════════════════════════════════════════════════════════════
 
+def _load_audit_exclusions(data_root: Path) -> set[tuple[str, str, str]]:
+    """
+    Lee los audit CSVs y devuelve set de (estado, ejercicio, slug) a excluir.
+
+    Solo excluye filas donde auditado = "excluir".
+    """
+    exclusions: set[tuple[str, str, str]] = set()
+    for estado_slug, prefijo in PREFIJOS_ESTADO.items():
+        audit_csv = data_root / estado_slug / "qa" / f"audit_{prefijo}.csv"
+        if not audit_csv.exists():
+            continue
+        try:
+            with audit_csv.open(encoding="utf-8-sig") as f:
+                for row in csv.DictReader(f):
+                    if row.get("auditado") == "excluir":
+                        ej = row.get("ejercicio", "")
+                        slug = row.get("slug", "")
+                        if ej and slug:
+                            exclusions.add((estado_slug, ej, slug))
+        except Exception:
+            continue
+    return exclusions
+
+
 def _load_all_jsons(data_root: Path) -> list[dict]:
     """Lee todos los JSONs de json_predial/ y extrae campos relevantes."""
     records = []
+
+    # Cargar exclusiones de audit
+    exclusions = _load_audit_exclusions(data_root)
+    if exclusions:
+        print(f"  Audit exclusions: {len(exclusions)} municipio-año marcados 'excluir'")
 
     for estado_slug, prefijo in sorted(PREFIJOS_ESTADO.items()):
         json_dir = data_root / estado_slug / "json_predial"
@@ -227,6 +256,10 @@ def _load_all_jsons(data_root: Path) -> list[dict]:
             try:
                 anio, slug, nombre = parse_predial_filename(json_path, prefijo)
             except ValueError:
+                continue
+
+            # Skip if excluded by audit
+            if (estado_slug, str(anio), slug) in exclusions:
                 continue
 
             try:

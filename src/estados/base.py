@@ -151,14 +151,9 @@ class EstadoAdapter(ABC):
         )
 
     def run_audit(self):
-        """Auditoría pre-consolidación: identifica JSONs que requieren revisión manual."""
+        """Auditoría pre-consolidación: grid exhaustivo INEGI × años."""
         from src.core.audit import run_audit
-        run_audit(
-            json_dir=self.json_dir,
-            prefijo=self.prefijo,
-            qa_dir=self.qa_dir,
-            meta_dir=self.meta_dir,
-        )
+        run_audit(adapter=self)
 
     def run_segment_audit(self):
         """Genera CSV de cobertura cruzando INEGI × segment.csv."""
