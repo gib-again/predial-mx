@@ -46,11 +46,23 @@ def _filter_rows(
     filtered = []
     for r in rows:
         if only_pending and r.get("auditado") not in ("pendiente", ""):
-            continue
+            # Para re_run: también incluir filas con auditado=re_run
+            if action == "re_run" and r.get("auditado") == "re_run":
+                pass  # incluir
+            else:
+                continue
         if error_class and r.get("error_class") != error_class:
             continue
-        if action and r.get("action") != action:
-            continue
+        # action filter: check both 'action' column (legacy) and 'auditado' column
+        if action:
+            row_action = r.get("action", "")
+            row_auditado = r.get("auditado", "")
+            if action == "re_run":
+                # re_run is in auditado column, not action
+                if row_auditado != "re_run":
+                    continue
+            elif row_action != action:
+                continue
         if slug and r.get("slug") != slug:
             continue
         if year and r.get("ejercicio") != str(year):
@@ -255,6 +267,176 @@ def _re_segment_with_llm(targets: list, adapter):
     print(f"\n  LLM locator: {ok} OK, {fail} fallidos")
 
 
+def execute_re_run(rows: list[dict], adapter, dry_run: bool = True):
+    """
+    Para filas con auditado=re_run: extrae las páginas indicadas del PDF original
+    a focus_predial/, borra JSON existente, y re-ejecuta extracción LLM.
+
+    El asistente debe haber anotado:
+      - paginas_pdf: rango de páginas (ej: "5-8", "12-15")
+      - pdf_override (opcional): ruta a un PDF alternativo
+    """
+    import fitz
+
+    prefijo = adapter.prefijo
+    focus_dir = adapter.focus_dir
+    json_dir = adapter.json_dir
+
+    targets = []
+    skipped = 0
+    for r in rows:
+        anio = r["ejercicio"]
+        slug = r["slug"]
+        paginas = r.get("paginas_pdf", "").strip()
+        pdf_over = r.get("pdf_override", "").strip()
+        source = r.get("source_pdf", "").strip()
+
+        if not paginas:
+            print(f"    {anio}/{slug}: sin paginas_pdf, omitido")
+            skipped += 1
+            continue
+
+        # Resolver PDF fuente
+        pdf_path_str = pdf_over or source
+        if not pdf_path_str:
+            print(f"    {anio}/{slug}: sin source_pdf ni pdf_override, omitido")
+            skipped += 1
+            continue
+
+        pdf_path = Path(pdf_path_str)
+        # Si es nombre de archivo relativo, buscar en pdf_raw/ o pdf_ocr/
+        if not pdf_path.is_absolute() or not pdf_path.exists():
+            for search_dir in [adapter.pdf_ocr_dir, adapter.pdf_raw_dir]:
+                candidate = search_dir / str(anio) / pdf_path.name
+                if candidate.exists():
+                    pdf_path = candidate
+                    break
+                # Buscar recursivamente
+                found = list(search_dir.rglob(pdf_path.name))
+                if found:
+                    pdf_path = found[0]
+                    break
+
+        if not pdf_path.exists():
+            print(f"    {anio}/{slug}: PDF no encontrado: {pdf_path_str}")
+            skipped += 1
+            continue
+
+        # Parsear páginas (1-based)
+        page_start, page_end = _parse_page_range(paginas)
+        if page_start is None:
+            print(f"    {anio}/{slug}: formato de paginas_pdf inválido: '{paginas}'")
+            skipped += 1
+            continue
+
+        base = f"{prefijo}_PREDIAL_{anio}_{slug}"
+        out_txt = focus_dir / str(anio) / f"{base}.txt"
+        out_pdf = focus_dir / str(anio) / f"{base}.pdf"
+        json_path = json_dir / str(anio) / f"{base}.json"
+
+        targets.append({
+            "anio": anio, "slug": slug,
+            "pdf_path": pdf_path,
+            "page_start": page_start, "page_end": page_end,
+            "out_txt": out_txt, "out_pdf": out_pdf, "json_path": json_path,
+        })
+
+    print(f"\n  Archivos para re_run: {len(targets)} ({skipped} omitidos)")
+    for t in targets:
+        exists_parts = []
+        if t["out_txt"].exists():
+            exists_parts.append("TXT")
+        if t["out_pdf"].exists():
+            exists_parts.append("PDF")
+        if t["json_path"].exists():
+            exists_parts.append("JSON")
+        files = ", ".join(exists_parts) if exists_parts else "ninguno"
+        print(
+            f"    {t['anio']}/{t['slug']}: pp.{t['page_start']}-{t['page_end']} "
+            f"de {t['pdf_path'].name} ({files})"
+        )
+
+    if dry_run:
+        print("\n  [DRY RUN] Usa --execute para re-segmentar y re-extraer.")
+        return
+
+    # Ejecutar
+    ok = 0
+    for t in targets:
+        try:
+            t["out_txt"].parent.mkdir(parents=True, exist_ok=True)
+            t["out_pdf"].parent.mkdir(parents=True, exist_ok=True)
+
+            with fitz.open(str(t["pdf_path"])) as doc:
+                n_pages = doc.page_count
+                start_idx = max(0, t["page_start"] - 1)
+                end_idx = min(t["page_end"] - 1, n_pages - 1)
+                if start_idx > end_idx:
+                    start_idx = end_idx
+
+                # Generar PDF recortado
+                new_doc = fitz.open()
+                new_doc.insert_pdf(doc, from_page=start_idx, to_page=end_idx)
+                new_doc.save(str(t["out_pdf"]), deflate=True)
+                new_doc.close()
+
+                # Generar TXT
+                texts = [
+                    doc[i].get_text("text") or ""
+                    for i in range(start_idx, end_idx + 1)
+                ]
+
+            full_text = "\n\n" + ("\n\n" + "-" * 40 + "\n\n").join(texts) + "\n\n"
+            t["out_txt"].write_text(full_text, encoding="utf-8")
+
+            # Borrar JSON para forzar re-extracción
+            if t["json_path"].exists():
+                t["json_path"].unlink()
+
+            ok += 1
+            print(f"    {t['anio']}/{t['slug']}: OK")
+
+        except Exception as e:
+            print(f"    {t['anio']}/{t['slug']}: ERROR: {e}")
+
+    print(f"\n  Re-segmentados: {ok}/{len(targets)}")
+
+    if ok > 0:
+        print("  Re-ejecutando extraccion LLM...")
+        adapter.run_llm_extraction(batch_mode=False)
+        print("  Listo. Corre audit de nuevo para actualizar el reporte.")
+
+
+def _parse_page_range(s: str) -> tuple[int | None, int | None]:
+    """
+    Parsea un rango de páginas: "5-8" → (5, 8), "12" → (12, 12).
+    Soporta "5,7,12" → (5, 12) como rango mínimo-máximo.
+    """
+    s = s.strip()
+    if not s:
+        return None, None
+
+    import re
+    # Rango: "5-8"
+    m = re.match(r"^(\d+)\s*[-–]\s*(\d+)$", s)
+    if m:
+        return int(m.group(1)), int(m.group(2))
+
+    # Página única: "12"
+    m = re.match(r"^(\d+)$", s)
+    if m:
+        n = int(m.group(1))
+        return n, n
+
+    # Lista: "5,7,12"
+    parts = re.findall(r"\d+", s)
+    if parts:
+        nums = [int(p) for p in parts]
+        return min(nums), max(nums)
+
+    return None, None
+
+
 def show_for_manual_capture(rows: list[dict], adapter):
     """Muestra info para captura manual: ruta al PDF, plantilla JSON."""
     prefijo = adapter.prefijo
@@ -302,7 +484,8 @@ def main():
                         choices=["segment", "schema", "value", "interanual", "other"],
                         help="Filtrar por tipo de error")
     parser.add_argument("--action",
-                        choices=["re_segment", "re_extract", "manual_capture", "review", "ok"],
+                        choices=["re_segment", "re_extract", "re_run",
+                                 "manual_capture", "review", "ok"],
                         help="Filtrar por accion recomendada")
     parser.add_argument("--slug", help="Filtrar por slug de municipio")
     parser.add_argument("--year", type=int, help="Filtrar por ejercicio fiscal")
@@ -360,6 +543,8 @@ def main():
         execute_re_segment(
             filtered, adapter, dry_run=False, use_llm=args.llm_locator,
         )
+    elif action == "re_run":
+        execute_re_run(filtered, adapter, dry_run=False)
     elif action == "manual_capture":
         show_for_manual_capture(filtered, adapter)
     elif action == "review":
