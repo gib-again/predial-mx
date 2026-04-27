@@ -1,0 +1,82 @@
+{
+  "predial": {
+    "tipo_esquema": "progresivo",
+    "esquema_valido": true,
+    "comentarios": "Se extrajo la tabla de rangos por valor catastral (cuota fija por rango). Se ignoró el esquema sobre rentas o frutos civiles (art. 6) por ser un impuesto fuera de alcance/no basado en valor catastral.",
+    "minimo_predial": null,
+    "tabla_tarifa_millar": [],
+    "tabla_progresiva": [
+      {
+        "n_rango": "1",
+        "inferior": "0.01",
+        "superior": "10,000.00",
+        "cuota_fija": "$100.00",
+        "tasa_marginal": "0",
+        "unidad_cuota_fija": "pesos"
+      },
+      {
+        "n_rango": "2",
+        "inferior": "10,000.01",
+        "superior": "20,000.00",
+        "cuota_fija": "$200.00",
+        "tasa_marginal": "0",
+        "unidad_cuota_fija": "pesos"
+      },
+      {
+        "n_rango": "3",
+        "inferior": "20,000.01",
+        "superior": "50,000.00",
+        "cuota_fija": "$250.00",
+        "tasa_marginal": "0",
+        "unidad_cuota_fija": "pesos"
+      },
+      {
+        "n_rango": "4",
+        "inferior": "50,000.01",
+        "superior": "80,000.00",
+        "cuota_fija": "$300.00",
+        "tasa_marginal": "0",
+        "unidad_cuota_fija": "pesos"
+      },
+      {
+        "n_rango": "5",
+        "inferior": "80,000.01",
+        "superior": "100,000.00",
+        "cuota_fija": "$350.00",
+        "tasa_marginal": "0",
+        "unidad_cuota_fija": "pesos"
+      },
+      {
+        "n_rango": "6",
+        "inferior": "100,000.01",
+        "superior": "500,000.00",
+        "cuota_fija": "$400.00",
+        "tasa_marginal": "0",
+        "unidad_cuota_fija": "pesos"
+      },
+      {
+        "n_rango": "7",
+        "inferior": "500,000.01",
+        "superior": "1’000,000.00",
+        "cuota_fija": "$500.00",
+        "tasa_marginal": "0",
+        "unidad_cuota_fija": "pesos"
+      },
+      {
+        "n_rango": "8",
+        "inferior": "1’000,000.01",
+        "superior": "En adelante",
+        "cuota_fija": "$800.00",
+        "tasa_marginal": "0",
+        "unidad_cuota_fija": "pesos"
+      }
+    ],
+    "tabla_tasa_unica": [],
+    "tabla_cuota_fija": [],
+    "tabla_mixta_rango": []
+  },
+  "_meta": {
+    "fuente": "txt",
+    "modelo": "gpt-5.2"
+  }
+}

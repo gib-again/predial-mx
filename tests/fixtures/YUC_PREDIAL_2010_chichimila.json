@@ -1,0 +1,90 @@
+{
+  "predial": {
+    "tipo_esquema": "progresivo",
+    "esquema_valido": true,
+    "comentarios": "Se extrajo la tabla progresiva del Art. 4 (valor catastral). Se ignoran tablas de valores unitarios (Art. 5) por ser catastrales. Se ignora el Art. 6 (rentas o frutos civiles) por ser un esquema fuera de alcance del predial basado en valor catastral. La ley indica que el resultado anual se divide entre 12 para obtener el impuesto mensual; la tabla se captura tal como está (cuota + factor marginal).",
+    "minimo_predial": null,
+    "tabla_tarifa_millar": [],
+    "tabla_progresiva": [
+      {
+        "n_rango": "1",
+        "inferior": "$           0.01",
+        "superior": "$    5,000.00",
+        "cuota_fija": "$    4.00",
+        "tasa_marginal": "0.001",
+        "unidad_cuota_fija": "pesos"
+      },
+      {
+        "n_rango": "2",
+        "inferior": "$    5,000.01",
+        "superior": "$    7,500.00",
+        "cuota_fija": "$    7.00",
+        "tasa_marginal": "0.001",
+        "unidad_cuota_fija": "pesos"
+      },
+      {
+        "n_rango": "3",
+        "inferior": "$    7,500.01",
+        "superior": "$  10,000.00",
+        "cuota_fija": "$   10.00",
+        "tasa_marginal": "0.001",
+        "unidad_cuota_fija": "pesos"
+      },
+      {
+        "n_rango": "4",
+        "inferior": "$  10,000.01",
+        "superior": "$  12,500.00",
+        "cuota_fija": "$   13.00",
+        "tasa_marginal": "0.001",
+        "unidad_cuota_fija": "pesos"
+      },
+      {
+        "n_rango": "5",
+        "inferior": "$  12,500.01",
+        "superior": "$  15,000.00",
+        "cuota_fija": "$   16.00",
+        "tasa_marginal": "0.001",
+        "unidad_cuota_fija": "pesos"
+      },
+      {
+        "n_rango": "6",
+        "inferior": "$  15,000.01",
+        "superior": "$  17,500.00",
+        "cuota_fija": "$   19.00",
+        "tasa_marginal": "0.001",
+        "unidad_cuota_fija": "pesos"
+      },
+      {
+        "n_rango": "7",
+        "inferior": "$  17,500.01",
+        "superior": "$  20,000.00",
+        "cuota_fija": "$   22.00",
+        "tasa_marginal": "0.001",
+        "unidad_cuota_fija": "pesos"
+      },
+      {
+        "n_rango": "8",
+        "inferior": "$  20,000.01",
+        "superior": "$  22,500.00",
+        "cuota_fija": "$   25.00",
+        "tasa_marginal": "0.001",
+        "unidad_cuota_fija": "pesos"
+      },
+      {
+        "n_rango": "9",
+        "inferior": "$  22,500.01",
+        "superior": "En Adelante",
+        "cuota_fija": "$   28.00",
+        "tasa_marginal": "0.001",
+        "unidad_cuota_fija": "pesos"
+      }
+    ],
+    "tabla_tasa_unica": [],
+    "tabla_cuota_fija": [],
+    "tabla_mixta_rango": []
+  },
+  "_meta": {
+    "fuente": "txt",
+    "modelo": "gpt-5.2"
+  }
+}

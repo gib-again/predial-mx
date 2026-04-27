@@ -1,406 +1,454 @@
-"""
-Validación estructural e interanual de JSONs de predial.
+"""Validación de JSONs de predial vía schema_v2 (discriminated union).
 
-Generaliza 25_json_consistency.py:
-  - Acepta prefijo como parámetro (ya no hardcoded a "COAH")
-  - Soporta los tipos de esquema nuevos (tasa_unica, cuota_fija, mixto)
-  - Agrega reglas interanuales más robustas:
-    * Continuidad de tipo_esquema (no solo progresivo)
-    * Cambio brusco en número de rangos/filas
+Reemplaza las reglas heurísticas previas (chequeos manuales por tabla, conteos
+cruzados) por validación Pydantic contra cada variante del discriminated union.
+La función `reclasificar()` intenta cada variante y cae a `otro_no_clasificado`
+si ninguna valida — capturando la tabla cruda y la razón.
+
+Firmas públicas preservadas:
+  - check_predial_structure(predial) -> dict
+  - apply_interanual_rules(rows) -> None
+  - validate_all(json_dir, prefijo, out_csv) -> None
+
+Nueva:
+  - reclasificar(predial_dict) -> variante de schema_v2
 """
+
+from __future__ import annotations
 
 import csv
 import json
+import re
 from pathlib import Path
+from typing import Callable, Union
 
-from src.core.text_utils import parse_predial_filename, parse_monto_to_float
+from pydantic import BaseModel, ValidationError
 
-# ── Constantes para validación de rangos progresivos ──
+from src.core.text_utils import parse_predial_filename
+from src.extraction.schema_v2 import (
+    CuotaFijaEscalonadaSchema,
+    CuotaFijaSimpleSchema,
+    MixtoSchema,
+    OtroNoClasificadoSchema,
+    ProgresivoSchema,
+    TarifaMillarSchema,
+    TasaUnicaSchema,
+)
 
-STEP = 0.01   # tamaño esperado entre rangos (lo = prev_sup + STEP)
-EPS  = 1e-4   # tolerancia numérica
+PredialV2Variant = Union[
+    TarifaMillarSchema,
+    ProgresivoSchema,
+    TasaUnicaSchema,
+    CuotaFijaSimpleSchema,
+    CuotaFijaEscalonadaSchema,
+    MixtoSchema,
+    OtroNoClasificadoSchema,
+]
 
-# Tipos de esquema válidos (expandidos)
+
+# Tipos válidos en v2 (incluye el escape hatch).
 ALLOWED_TIPOS = {
-    "tarifa_millar", "progresivo", "tasa_unica",
-    "cuota_fija", "mixto", "desconocido",
+    "tarifa_millar",
+    "progresivo",
+    "tasa_unica",
+    "cuota_fija_simple",
+    "cuota_fija_escalonada",
+    "mixto",
+    "otro_no_clasificado",
 }
 
+# Snap de huecos pequeños entre brackets (cent-gap convención mexicana).
+_BRACKET_SNAP_TOLERANCE = 1.0
 
-# ── Verificación estructural de un JSON ──
+
+# ── Helpers de coerción ──
+
+def _to_float(v):
+    """Coerce string/int/float monetario a float. None → None.
+
+    Robusta a `$`, `,`, espacios, comillas tipográficas (U+2019) y la palabra
+    'adelante' (que se traduce a None).
+    """
+    if v is None or isinstance(v, (int, float)):
+        return v
+    s = (
+        str(v)
+        .strip()
+        .replace("$", "")
+        .replace(",", "")
+        .replace("\u2019", "")
+        .replace("'", "")
+        .replace(" ", "")
+    )
+    if not s or "adelante" in s.lower():
+        return None
+    try:
+        return float(s)
+    except ValueError:
+        return None
+
+
+def _superior_v2(s):
+    """v1 'En Adelante'/'En adelante' → None; resto vía _to_float."""
+    if isinstance(s, str) and "adelante" in s.lower():
+        return None
+    return _to_float(s)
+
+
+def _n_rango_int(v) -> int:
+    """v1 n_rango (str '1', 'I-1', 'a-1' o int) → int. Fallback 0 si no parseable."""
+    if isinstance(v, int):
+        return v
+    if v is None:
+        return 0
+    try:
+        return int(str(v))
+    except ValueError:
+        m = re.search(r"(\d+)$", str(v))
+        return int(m.group(1)) if m else 0
+
+
+def _snap_brackets(rows: list[dict]) -> None:
+    """Cierra cent-gaps in-place: si |inf_next - sup| ≤ 1 peso, snapea inf_next = sup.
+
+    Gaps grandes y solapes (gap negativo grande) se preservan para que el validador
+    de schema_v2 los reporte.
+    """
+    for i in range(len(rows) - 1):
+        sup = rows[i].get("superior")
+        inf_next = rows[i + 1].get("inferior")
+        if sup is None or inf_next is None:
+            continue
+        if abs(inf_next - sup) <= _BRACKET_SNAP_TOLERANCE:
+            rows[i + 1]["inferior"] = sup
+
+
+# ── Mappers v1 → v2 (uno por variante) ──
+
+def _to_v2_tarifa_millar(p: dict) -> dict:
+    return {
+        "tipo_esquema": "tarifa_millar",
+        "tabla": [
+            {
+                "grupo": r.get("grupo", "general"),
+                "clave": r.get("clave", ""),
+                "descripcion": r.get("descripcion", ""),
+                "tasa_millar": _to_float(r.get("tasa_millar")),
+                "periodicidad": r.get("periodicidad", "anual"),
+                "cuota_fija_adicional": r.get("cuota_fija_adicional"),
+            }
+            for r in (p.get("tabla_tarifa_millar") or [])
+            if isinstance(r, dict)
+        ],
+        "minimo_predial": p.get("minimo_predial"),
+        "comentarios": p.get("comentarios", "") or "",
+    }
+
+
+def _to_v2_progresivo(p: dict) -> dict:
+    rows: list[dict] = []
+    for r in p.get("tabla_progresiva") or []:
+        if not isinstance(r, dict):
+            continue
+        rows.append(
+            {
+                "n_rango": _n_rango_int(r.get("n_rango")),
+                "inferior": _to_float(r.get("inferior")),
+                "superior": _superior_v2(r.get("superior")),
+                "cuota_fija": _to_float(r.get("cuota_fija")) or 0.0,
+                "tasa_marginal": _to_float(r.get("tasa_marginal")) or 0.0,
+            }
+        )
+    _snap_brackets(rows)
+    return {
+        "tipo_esquema": "progresivo",
+        "tabla": rows,
+        "minimo_predial": p.get("minimo_predial"),
+        "comentarios": p.get("comentarios", "") or "",
+    }
+
+
+def _to_v2_tasa_unica(p: dict) -> dict:
+    return {
+        "tipo_esquema": "tasa_unica",
+        "tabla": [
+            {
+                "descripcion": r.get("descripcion", ""),
+                "tasa": _to_float(r.get("tasa")),
+                "base_calculo": r.get("base_calculo", "valor_catastral"),
+                "unidad": r.get("unidad", "al_millar"),
+            }
+            for r in (p.get("tabla_tasa_unica") or [])
+            if isinstance(r, dict)
+        ],
+        "minimo_predial": p.get("minimo_predial"),
+        "comentarios": p.get("comentarios", "") or "",
+    }
+
+
+def _to_v2_cuota_fija_simple(p: dict) -> dict:
+    return {
+        "tipo_esquema": "cuota_fija_simple",
+        "tabla": [
+            {
+                "descripcion": r.get("descripcion", ""),
+                "monto": _to_float(r.get("monto")),
+                "periodicidad": r.get("periodicidad", "anual"),
+                "unidad": r.get("unidad", "pesos"),
+            }
+            for r in (p.get("tabla_cuota_fija") or [])
+            if isinstance(r, dict)
+        ],
+        "minimo_predial": p.get("minimo_predial"),
+        "comentarios": p.get("comentarios", "") or "",
+    }
+
+
+def _to_v2_cuota_fija_escalonada(p: dict) -> dict:
+    """Captura el bug `tipo_esquema='progresivo'` con `tasa_marginal=0` en todos
+    los rows: usa `tabla_progresiva` mapeando `cuota_fija` → `monto`.
+
+    Para v1 declared='cuota_fija' con múltiples entradas (rangos codificados en
+    descripción), `tabla_progresiva` está vacía y este mapper devuelve tabla=[],
+    haciendo fallar la variante. Ese caso cae a `otro_no_clasificado`.
+    """
+    rows: list[dict] = []
+    for r in p.get("tabla_progresiva") or []:
+        if not isinstance(r, dict):
+            continue
+        rows.append(
+            {
+                "n_rango": _n_rango_int(r.get("n_rango")),
+                "inferior": _to_float(r.get("inferior")),
+                "superior": _superior_v2(r.get("superior")),
+                "monto": _to_float(r.get("cuota_fija")) or 0.0,
+            }
+        )
+    _snap_brackets(rows)
+    return {
+        "tipo_esquema": "cuota_fija_escalonada",
+        "tabla": rows,
+        "minimo_predial": p.get("minimo_predial"),
+        "comentarios": p.get("comentarios", "") or "",
+    }
+
+
+def _to_v2_mixto(p: dict) -> dict:
+    rows: list[dict] = []
+    for r in p.get("tabla_mixta_rango") or []:
+        if not isinstance(r, dict):
+            continue
+        cols_v1 = r.get("columnas")
+        if isinstance(cols_v1, dict):
+            cols_v2 = [
+                {
+                    "nombre": k,
+                    "valor": _to_float((v or {}).get("valor")) or 0.0,
+                    "tipo": (v or {}).get("tipo", "tasa_millar"),
+                    "unidad": (v or {}).get("unidad", "pesos"),
+                }
+                for k, v in cols_v1.items()
+            ]
+        elif isinstance(cols_v1, list):
+            cols_v2 = [
+                {
+                    "nombre": c.get("nombre", ""),
+                    "valor": _to_float(c.get("valor")) or 0.0,
+                    "tipo": c.get("tipo", "tasa_millar"),
+                    "unidad": c.get("unidad", "pesos"),
+                }
+                for c in cols_v1
+                if isinstance(c, dict)
+            ]
+        else:
+            cols_v2 = []
+        rows.append(
+            {
+                "n_rango": _n_rango_int(r.get("n_rango")),
+                "inferior": _to_float(r.get("inferior")),
+                "superior": _superior_v2(r.get("superior")),
+                "columnas": cols_v2,
+            }
+        )
+    _snap_brackets(rows)
+    return {
+        "tipo_esquema": "mixto",
+        "tabla": rows,
+        "minimo_predial": p.get("minimo_predial"),
+        "comentarios": p.get("comentarios", "") or "",
+    }
+
+
+# ── reclasificar ──
+
+# Variantes "reales" (no escape hatch). Orden = prioridad de fallback cuando
+# `declared` no coincide con ningún match. La preferencia primaria es la
+# variante que coincide con el `tipo_esquema` declarado.
+_VARIANT_ATTEMPTS: list[tuple[str, type[BaseModel], Callable[[dict], dict]]] = [
+    ("tarifa_millar", TarifaMillarSchema, _to_v2_tarifa_millar),
+    ("progresivo", ProgresivoSchema, _to_v2_progresivo),
+    ("tasa_unica", TasaUnicaSchema, _to_v2_tasa_unica),
+    ("cuota_fija_simple", CuotaFijaSimpleSchema, _to_v2_cuota_fija_simple),
+    ("cuota_fija_escalonada", CuotaFijaEscalonadaSchema, _to_v2_cuota_fija_escalonada),
+    ("mixto", MixtoSchema, _to_v2_mixto),
+]
+
+
+def _capture_tabla_cruda(p: dict) -> list[dict]:
+    """Vuelca todas las tablas v1 no vacías como `tabla_cruda` para el escape hatch."""
+    out = []
+    for k in (
+        "tabla_tarifa_millar",
+        "tabla_progresiva",
+        "tabla_tasa_unica",
+        "tabla_cuota_fija",
+        "tabla_mixta_rango",
+    ):
+        for row in p.get(k) or []:
+            if isinstance(row, dict):
+                out.append({"_tabla": k, **row})
+            else:
+                out.append({"_tabla": k, "_raw": str(row)})
+    return out
+
+
+def _infer_categoria(p: dict) -> str:
+    """Heurística mínima para escoger la categoría del escape hatch."""
+    has_any_table = any(
+        len(p.get(k) or []) > 0
+        for k in (
+            "tabla_tarifa_millar",
+            "tabla_progresiva",
+            "tabla_tasa_unica",
+            "tabla_cuota_fija",
+            "tabla_mixta_rango",
+        )
+    )
+    return "estructura_no_estandar" if has_any_table else "segmento_vacio"
+
+
+def reclasificar(predial_dict: dict) -> PredialV2Variant:
+    """Intenta validar `predial_dict` (formato v1) contra cada variante de schema_v2.
+
+    Estrategia:
+      1. Para cada variante, mapear v1→v2 y `model_validate`.
+      2. Si una o más validan → preferir la que coincide con `tipo_esquema`
+         declarado; si ninguna coincide, retornar la primera en orden de
+         `_VARIANT_ATTEMPTS`.
+      3. Si ninguna valida → retornar `OtroNoClasificadoSchema` con `categoria`,
+         `descripcion_estructural` (razones) y `tabla_cruda` (volcado v1).
+    """
+    declared = predial_dict.get("tipo_esquema")
+    matches: list[tuple[str, BaseModel]] = []
+    errors: list[tuple[str, str]] = []
+
+    for tipo, Variant, mapper in _VARIANT_ATTEMPTS:
+        try:
+            v2_dict = mapper(predial_dict)
+        except Exception as e:
+            errors.append((tipo, f"mapeo: {e}"))
+            continue
+        try:
+            instance = Variant.model_validate(v2_dict)
+            matches.append((tipo, instance))
+        except ValidationError as e:
+            errs = e.errors()
+            msg = errs[0].get("msg", str(e))[:200] if errs else str(e)[:200]
+            errors.append((tipo, msg))
+
+    if matches:
+        for tipo, inst in matches:
+            if tipo == declared:
+                return inst
+        return matches[0][1]
+
+    razon = "; ".join(f"{t}: {e}" for t, e in errors)
+    return OtroNoClasificadoSchema(
+        tipo_esquema="otro_no_clasificado",
+        categoria=_infer_categoria(predial_dict),
+        descripcion_estructural=(
+            f"Ninguna variante validó (declared={declared!r}). Razones: {razon}"
+        )[:2000],
+        tabla_cruda=_capture_tabla_cruda(predial_dict),
+        minimo_predial=predial_dict.get("minimo_predial"),
+        comentarios=predial_dict.get("comentarios", "") or "",
+    )
+
+
+# ── check_predial_structure (firma v1, semántica v2) ──
 
 def check_predial_structure(predial: dict) -> dict:
+    """Valida un dict 'predial' usando schema_v2 vía `reclasificar`.
+
+    Retorna el mismo shape que la versión v1 (preservando keys para downstream):
+      tipo_esquema, esquema_valido, n_tarifa_rows, n_prog_rows, n_tasa_unica_rows,
+      n_cuota_fija_rows (suma de simple + escalonada), n_mixta_rows, anomalias.
+
+    Anomalías emitidas:
+      - `reclasificado_de_X_a_Y`: el `tipo_esquema` declarado difiere del que
+        realmente validó (típicamente captura el bug progresivo→cuota_fija_escalonada).
+      - `otro_no_clasificado_<categoria>`: ninguna variante validó.
     """
-    Revisa un dict 'predial' y devuelve un dict con:
-      - tipo_esquema
-      - esquema_valido
-      - n_tarifa_rows, n_prog_rows, n_tasa_unica_rows, n_cuota_fija_rows
-      - anomalias (lista de strings)
+    instance = reclasificar(predial)
+    declared = predial.get("tipo_esquema")
+    actual = instance.tipo_esquema
 
-    No revisa reglas interanuales (eso se hace después).
-    """
-    anomalias = []
+    anomalias: list[str] = []
+    if isinstance(instance, OtroNoClasificadoSchema):
+        anomalias.append(f"otro_no_clasificado_{instance.categoria}")
+    elif declared and declared != actual:
+        anomalias.append(f"reclasificado_de_{declared}_a_{actual}")
 
-    tipo = predial.get("tipo_esquema")
-    esquema_valido = predial.get("esquema_valido")
-
-    if tipo not in ALLOWED_TIPOS:
-        anomalias.append("tipo_esquema_invalido")
-
-    if not isinstance(esquema_valido, bool):
-        anomalias.append("esquema_valido_no_bool")
-
-    # Extraer tablas con validación de tipo
-    tabla_tarifa = predial.get("tabla_tarifa_millar", [])
-    tabla_prog = predial.get("tabla_progresiva", [])
-    tabla_tasa_u = predial.get("tabla_tasa_unica", [])
-    tabla_cuota_f = predial.get("tabla_cuota_fija", [])
-    tabla_mixta = predial.get("tabla_mixta_rango", [])
-
-    for nombre, tabla in [
-        ("tabla_tarifa_millar", tabla_tarifa),
-        ("tabla_progresiva", tabla_prog),
-        ("tabla_tasa_unica", tabla_tasa_u),
-        ("tabla_cuota_fija", tabla_cuota_f),
-        ("tabla_mixta_rango", tabla_mixta),
-    ]:
-        if not isinstance(tabla, list):
-            anomalias.append(f"{nombre}_no_lista")
-
-    # Forzar a lista para conteos seguros
-    if not isinstance(tabla_tarifa, list):
-        tabla_tarifa = []
-    if not isinstance(tabla_prog, list):
-        tabla_prog = []
-    if not isinstance(tabla_tasa_u, list):
-        tabla_tasa_u = []
-    if not isinstance(tabla_cuota_f, list):
-        tabla_cuota_f = []
-    if not isinstance(tabla_mixta, list):
-        tabla_mixta = []
-
-    n_tarifa = len(tabla_tarifa)
-    n_prog = len(tabla_prog)
-    n_tasa_u = len(tabla_tasa_u)
-    n_cuota_f = len(tabla_cuota_f)
-    n_mixta = len(tabla_mixta)
-
-    # ── Coherencia tipo_esquema vs tablas ──
-    if tipo == "tarifa_millar":
-        if n_tarifa == 0:
-            anomalias.append("tipo_tarifa_millar_sin_filas")
-        if n_prog > 0:
-            anomalias.append("tipo_tarifa_millar_con_tabla_progresiva_no_vacia")
-        if n_tasa_u > 0:
-            anomalias.append("tipo_tarifa_millar_con_tabla_tasa_unica_no_vacia")
-        if n_cuota_f > 0:
-            anomalias.append("tipo_tarifa_millar_con_tabla_cuota_fija_no_vacia")
-            # Dentro de check_predial_structure, en el bloque tipo == "tarifa_millar":
-        for fila in tabla_tarifa:
-            cfa = fila.get("cuota_fija_adicional")
-            if cfa is not None:
-                if not isinstance(cfa, dict):
-                    anomalias.append("cuota_fija_adicional_no_dict")
-                elif "monto" not in cfa:
-                    anomalias.append("cuota_fija_adicional_sin_monto")
-
-    elif tipo == "progresivo":
-        if n_prog == 0:
-            anomalias.append("tipo_progresivo_sin_filas")
-        if n_tarifa > 0:
-            anomalias.append("tipo_progresivo_con_tabla_tarifa_no_vacia")
-        if n_tasa_u > 0:
-            anomalias.append("tipo_progresivo_con_tabla_tasa_unica_no_vacia")
-        if n_cuota_f > 0:
-            anomalias.append("tipo_progresivo_con_tabla_cuota_fija_no_vacia")
-
-    elif tipo == "tasa_unica":
-        if n_tasa_u == 0:
-            anomalias.append("tipo_tasa_unica_sin_filas")
-        if n_tarifa > 0 or n_prog > 0 or n_cuota_f > 0:
-            anomalias.append("tipo_tasa_unica_con_otras_tablas_no_vacias")
-
-    elif tipo == "cuota_fija":
-        if n_cuota_f == 0:
-            anomalias.append("tipo_cuota_fija_sin_filas")
-        if n_tarifa > 0 or n_prog > 0 or n_tasa_u > 0:
-            anomalias.append("tipo_cuota_fija_con_otras_tablas_no_vacias")
-
-    elif tipo == "mixto":
-        total_filas = n_tarifa + n_prog + n_tasa_u + n_cuota_f + n_mixta
-        if total_filas == 0:
-            anomalias.append("tipo_mixto_sin_tablas")
-        if not predial.get("comentarios", "").strip():
-            anomalias.append("tipo_mixto_sin_comentarios")
-
-    elif tipo == "desconocido":
-        total_filas = n_tarifa + n_prog + n_tasa_u + n_cuota_f + n_mixta
-        if total_filas > 0:
-            anomalias.append("tipo_desconocido_con_tablas_no_vacias")
-
-    # ── Validaciones detalladas por tabla ──
-    anomalias.extend(_check_tarifa_table(tabla_tarifa))
-    anomalias.extend(_check_prog_table(tabla_prog))
-    anomalias.extend(_check_tasa_unica_table(tabla_tasa_u))
-    anomalias.extend(_check_cuota_fija_table(tabla_cuota_f))
-    anomalias.extend(_check_mixta_rango_table(tabla_mixta))
-
-    # ── minimo_predial (nuevo campo, opcional) ──
-    minimo = predial.get("minimo_predial")
-    has_minimo = False
-    if minimo is not None:
-        if isinstance(minimo, dict):
-            monto = minimo.get("monto")
-            if monto is not None:
-                try:
-                    float(monto)
-                    has_minimo = True
-                except (ValueError, TypeError):
-                    anomalias.append("minimo_predial_monto_no_numerico")
-        else:
-            anomalias.append("minimo_predial_no_dict")
+    n_tarifa = len(instance.tabla) if isinstance(instance, TarifaMillarSchema) else 0
+    n_prog = len(instance.tabla) if isinstance(instance, ProgresivoSchema) else 0
+    n_tasa_u = len(instance.tabla) if isinstance(instance, TasaUnicaSchema) else 0
+    n_cuota_simple = len(instance.tabla) if isinstance(instance, CuotaFijaSimpleSchema) else 0
+    n_cuota_esc = len(instance.tabla) if isinstance(instance, CuotaFijaEscalonadaSchema) else 0
+    n_mixta = len(instance.tabla) if isinstance(instance, MixtoSchema) else 0
 
     return {
-        "tipo_esquema": tipo,
-        "esquema_valido": esquema_valido,
+        "tipo_esquema": actual,
+        "esquema_valido": not isinstance(instance, OtroNoClasificadoSchema),
         "n_tarifa_rows": n_tarifa,
         "n_prog_rows": n_prog,
         "n_tasa_unica_rows": n_tasa_u,
-        "n_cuota_fija_rows": n_cuota_f,
+        "n_cuota_fija_rows": n_cuota_simple + n_cuota_esc,
         "n_mixta_rows": n_mixta,
         "anomalias": anomalias,
     }
 
 
-def _check_tarifa_table(tabla: list) -> list:
-    """Validaciones detalladas para tabla_tarifa_millar."""
-    anomalias = []
-    for idx, row in enumerate(tabla, start=1):
-        prefix = f"tarifa_row{idx}_"
-        if not isinstance(row, dict):
-            anomalias.append(prefix + "no_dict")
-            continue
-
-        tasa = row.get("tasa_millar")
-        cuota = row.get("cuota_fija")
-
-        if tasa is not None:
-            try:
-                float(tasa)
-            except (ValueError, TypeError):
-                anomalias.append(prefix + "tasa_millar_no_numerica")
-
-        if cuota is not None:
-            try:
-                float(cuota)
-            except (ValueError, TypeError):
-                anomalias.append(prefix + "cuota_fija_no_numerica")
-
-    return anomalias
-
-
-def _check_prog_table(tabla: list) -> list:
-    """Validaciones detalladas para tabla_progresiva (rangos, solapes, huecos).
-
-    Agrupa por campo 'grupo' para validar cada sub-tabla por separado,
-    ya que los rangos se reinician por grupo (ej: urbano 1-7, rústico 1-9).
-    """
-    anomalias = []
-
-    # Agrupar filas por grupo
-    by_grupo: dict[str, list[tuple[int, dict]]] = {}
-    for idx, row in enumerate(tabla, start=1):
-        if not isinstance(row, dict):
-            anomalias.append(f"prog_row{idx}_no_dict")
-            continue
-        grupo = row.get("grupo") or "general"
-        by_grupo.setdefault(grupo, []).append((idx, row))
-
-    for grupo, indexed_rows in by_grupo.items():
-        anomalias.extend(_check_prog_ranges(indexed_rows, grupo))
-
-    return anomalias
-
-
-def _check_prog_ranges(
-    indexed_rows: list[tuple[int, dict]],
-    grupo: str,
-) -> list[str]:
-    """Valida continuidad de rangos para un grupo específico."""
-    anomalias = []
-    prog_rows = []
-
-    for idx, row in indexed_rows:
-        prefix = f"prog_row{idx}_"
-
-        n_rango = row.get("n_rango")
-        inferior = row.get("inferior")
-        superior = row.get("superior")
-
-        n_rango_int = None
-        if n_rango is not None:
-            try:
-                n_rango_int = int(str(n_rango))
-            except (ValueError, TypeError):
-                # Prefixed n_rango (e.g. "I-1", "a-1") — try extracting trailing int
-                import re
-                m = re.search(r"(\d+)$", str(n_rango))
-                if m:
-                    n_rango_int = int(m.group(1))
-                else:
-                    anomalias.append(prefix + "n_rango_no_int")
-
-        if not inferior:
-            anomalias.append(prefix + "inferior_vacio")
-
-        inf_val = parse_monto_to_float(inferior)
-        sup_val = parse_monto_to_float(superior)
-
-        prog_rows.append({
-            "idx": idx,
-            "n_rango_int": n_rango_int,
-            "inferior_val": inf_val,
-            "superior_val": sup_val,
-        })
-
-    # Revisar continuidad de rangos dentro del grupo
-    if prog_rows:
-        all_have_n = all(r["n_rango_int"] is not None for r in prog_rows)
-        if all_have_n:
-            prog_rows_sorted = sorted(prog_rows, key=lambda r: r["n_rango_int"])
-
-            prev_sup = None
-            for r in prog_rows_sorted:
-                lo = r["inferior_val"]
-                hi = r["superior_val"]
-                idx_label = r["idx"]
-
-                # superior null solo aceptable en último rango
-                if hi is None and r != prog_rows_sorted[-1]:
-                    anomalias.append(f"prog_row{idx_label}_superior_null_no_ultimo")
-
-                if prev_sup is not None and lo is not None and hi is not None:
-                    delta = lo - prev_sup
-                    if delta < -STEP - EPS:
-                        anomalias.append(f"prog_row{idx_label}_solape_con_anterior")
-                    elif delta > STEP + EPS:
-                        anomalias.append(f"prog_row{idx_label}_hueco_con_anterior")
-
-                if hi is not None:
-                    prev_sup = hi
-
-    return anomalias
-
-
-def _check_tasa_unica_table(tabla: list) -> list:
-    """Validaciones para tabla_tasa_unica."""
-    anomalias = []
-    for idx, row in enumerate(tabla, start=1):
-        prefix = f"tasa_unica_row{idx}_"
-        if not isinstance(row, dict):
-            anomalias.append(prefix + "no_dict")
-            continue
-
-        tasa = row.get("tasa")
-        if tasa is not None:
-            try:
-                float(tasa)
-            except (ValueError, TypeError):
-                anomalias.append(prefix + "tasa_no_numerica")
-
-        unidad = row.get("unidad", "")
-        if unidad not in ("porcentaje", "al_millar", "al_millar_bimestral", ""):
-            anomalias.append(prefix + "unidad_no_reconocida")
-
-    return anomalias
-
-
-def _check_cuota_fija_table(tabla: list) -> list:
-    """Validaciones para tabla_cuota_fija."""
-    anomalias = []
-    for idx, row in enumerate(tabla, start=1):
-        prefix = f"cuota_fija_row{idx}_"
-        if not isinstance(row, dict):
-            anomalias.append(prefix + "no_dict")
-            continue
-
-        monto = row.get("monto")
-        if monto is not None:
-            try:
-                float(monto)
-            except (ValueError, TypeError):
-                anomalias.append(prefix + "monto_no_numerico")
-
-    return anomalias
-
-
-def _check_mixta_rango_table(tabla: list) -> list:
-    """Validaciones para tabla_mixta_rango (multi-columna por tipo de predio)."""
-    anomalias = []
-    for idx, row in enumerate(tabla, start=1):
-        prefix = f"mixta_row{idx}_"
-        if not isinstance(row, dict):
-            anomalias.append(prefix + "no_dict")
-            continue
-
-        if not row.get("inferior"):
-            anomalias.append(prefix + "inferior_vacio")
-        if not row.get("superior") and not row.get("n_rango"):
-            anomalias.append(prefix + "superior_vacio")
-
-        columnas = row.get("columnas")
-        if not isinstance(columnas, dict) or not columnas:
-            anomalias.append(prefix + "columnas_vacias")
-            continue
-
-        for col_name, col_val in columnas.items():
-            if not isinstance(col_val, dict):
-                anomalias.append(prefix + f"col_{col_name}_no_dict")
-                continue
-            valor = col_val.get("valor")
-            tipo = col_val.get("tipo")
-            if valor is not None:
-                try:
-                    float(valor)
-                except (ValueError, TypeError):
-                    anomalias.append(prefix + f"col_{col_name}_valor_no_numerico")
-            if tipo not in ("cuota_fija", "tasa_millar", None):
-                anomalias.append(prefix + f"col_{col_name}_tipo_invalido")
-
-    return anomalias
-
-
 # ── Reglas interanuales ──
 
 def apply_interanual_rules(rows: list[dict]):
-    """
-    Aplica reglas interanuales a la lista de filas ya validadas.
+    """Aplica reglas interanuales a la lista de filas ya validadas.
+
     Modifica las anomalías in-place.
 
     Reglas:
-    1. Continuidad de tipo_esquema: si T tiene tipo X válido, T+1 debería tener X.
-    2. Cambio brusco en número de filas (ratio > 2x o < 0.5x).
+      1. Continuidad de tipo_esquema entre años consecutivos del mismo municipio.
+         Se omite cuando alguno de los lados es `otro_no_clasificado` (no hay
+         clasificación confiable que comparar).
+      2. Cambio brusco en número de filas (ratio > 2x o < 0.5x).
     """
-    # Agrupar por municipio
     by_muni: dict[str, list[dict]] = {}
     for row in rows:
         slug = row["municipio_slug"]
         by_muni.setdefault(slug, []).append(row)
 
-    for slug, lst in by_muni.items():
+    for _slug, lst in by_muni.items():
         lst.sort(key=lambda r: r["anio"])
 
         for i in range(len(lst) - 1):
             cur = lst[i]
             nxt = lst[i + 1]
 
-            # Regla 1: continuidad de esquema
             if (
                 cur["esquema_valido"] is True
                 and nxt["esquema_valido"] is True
                 and cur["tipo_esquema"] != nxt["tipo_esquema"]
-                and cur["tipo_esquema"] != "desconocido"
-                and nxt["tipo_esquema"] != "desconocido"
+                and cur["tipo_esquema"] != "otro_no_clasificado"
+                and nxt["tipo_esquema"] != "otro_no_clasificado"
             ):
                 anomalias = set(nxt.get("anomalias") or [])
                 anomalias.add(
@@ -408,7 +456,6 @@ def apply_interanual_rules(rows: list[dict]):
                 )
                 nxt["anomalias"] = sorted(anomalias)
 
-            # Regla 2: cambio brusco en número de filas
             n_cur = (cur.get("n_prog_rows") or 0) + (cur.get("n_tarifa_rows") or 0)
             n_nxt = (nxt.get("n_prog_rows") or 0) + (nxt.get("n_tarifa_rows") or 0)
             if n_cur > 0 and n_nxt > 0:
@@ -421,13 +468,8 @@ def apply_interanual_rules(rows: list[dict]):
 
 # ── Función principal ──
 
-def validate_all(
-    json_dir: Path,
-    prefijo: str,
-    out_csv: Path,
-):
-    """
-    Valida todos los JSONs en json_dir y genera un CSV resumen.
+def validate_all(json_dir: Path, prefijo: str, out_csv: Path):
+    """Valida todos los JSONs en `json_dir` y genera un CSV resumen.
 
     Args:
         json_dir: Directorio con JSONs de salida del LLM.
@@ -489,10 +531,8 @@ def validate_all(
             "json_path": str(json_path),
         })
 
-    # Aplicar reglas interanuales
     apply_interanual_rules(rows)
 
-    # Escribir CSV
     out_csv.parent.mkdir(parents=True, exist_ok=True)
 
     fieldnames = [
@@ -512,43 +552,39 @@ def validate_all(
                 row_out["anomalias"] = "|".join(anoms)
             writer.writerow(row_out)
 
-    # Resumen por consola
     total = len(rows)
     n_ok = sum(1 for r in rows if not r["anomalias"])
     n_anom = total - n_ok
 
-    print(f"\n  ── Resumen validación ──")
+    print("\n  ── Resumen validación ──")
     print(f"  Filas totales   : {total}")
     print(f"  Sin anomalías   : {n_ok}")
     print(f"  Con anomalías   : {n_anom}")
     print(f"  Errores lectura : {errores}")
     print(f"  CSV guardado en : {out_csv}")
 
-    # Resumen por tipo de esquema
     counts: dict[str, int] = {}
     for r in rows:
         t = r.get("tipo_esquema", "?")
         counts[t] = counts.get(t, 0) + 1
-    print(f"\n  Distribución de esquemas:")
+    print("\n  Distribución de esquemas:")
     for k in sorted(counts.keys()):
         print(f"    {k}: {counts[k]}")
-
-    # ── QA adicional (inspirado en 77_consistency_check de Querétaro) ──
 
     qa_dir = out_csv.parent
     _write_qa_reports(rows, qa_dir, prefijo)
 
 
 def _write_qa_reports(rows: list[dict], qa_dir: Path, prefijo: str):
-    """
-    Genera reportes QA detallados:
+    """Genera reportes QA detallados.
+
+    Outputs (en `qa_dir`):
       - anomalies.csv         : una fila por anomalía
-      - schema_timeline.csv   : (municipio, año, esquema) para análisis visual
+      - schema_timeline.csv   : (municipio, año, esquema)
       - schema_switches.csv   : cambios de esquema interanuales
       - coverage_by_muni.csv  : cobertura temporal por municipio
       - stability_flags.csv   : cambios bruscos en rangos entre años consecutivos
     """
-    # ── Anomalías detalladas ──
     anom_rows = []
     for r in rows:
         anoms = r.get("anomalias") or []
@@ -570,7 +606,6 @@ def _write_qa_reports(rows: list[dict], qa_dir: Path, prefijo: str):
             w.writerows(anom_rows)
         print(f"  Anomalías detalladas: {len(anom_rows)} → {anom_csv}")
 
-    # ── Schema timeline ──
     tl_csv = qa_dir / "schema_timeline.csv"
     with tl_csv.open("w", newline="", encoding="utf-8") as f:
         w = csv.DictWriter(f, fieldnames=["municipio", "anio", "tipo_esquema", "esquema_valido"])
@@ -583,7 +618,6 @@ def _write_qa_reports(rows: list[dict], qa_dir: Path, prefijo: str):
                 "esquema_valido": r["esquema_valido"],
             })
 
-    # ── Schema switches (cambios de esquema) ──
     by_muni: dict[str, list[dict]] = {}
     for r in rows:
         by_muni.setdefault(r["municipio_slug"], []).append(r)
@@ -594,10 +628,12 @@ def _write_qa_reports(rows: list[dict], qa_dir: Path, prefijo: str):
         prev = None
         for r in lst:
             cur = r["tipo_esquema"]
-            if (prev is not None
-                    and cur != prev
-                    and cur != "desconocido"
-                    and prev != "desconocido"):
+            if (
+                prev is not None
+                and cur != prev
+                and cur != "otro_no_clasificado"
+                and prev != "otro_no_clasificado"
+            ):
                 switches.append({
                     "municipio": slug,
                     "anio": r["anio"],
@@ -614,8 +650,6 @@ def _write_qa_reports(rows: list[dict], qa_dir: Path, prefijo: str):
             w.writerows(switches)
         print(f"  Cambios de esquema: {len(switches)} → {sw_csv}")
 
-    # ── Cobertura por municipio ──
-    # Infiere rango de años del dataset
     all_years = sorted(set(r["anio"] for r in rows))
     if all_years:
         year_min, year_max = all_years[0], all_years[-1]
@@ -646,13 +680,11 @@ def _write_qa_reports(rows: list[dict], qa_dir: Path, prefijo: str):
         print(f"  Cobertura: {full_cov}/{total_munis} municipios con todos los años")
         print(f"  → {cov_csv}")
 
-    # ── Stability flags (Querétaro-style) ──
     stability = []
     for slug, lst in by_muni.items():
         lst.sort(key=lambda r: r["anio"])
         for i in range(len(lst) - 1):
             cur, nxt = lst[i], lst[i + 1]
-            # Progresiva: comparar número de rangos
             if cur["tipo_esquema"] == "progresivo" == nxt["tipo_esquema"]:
                 nc = cur.get("n_prog_rows", 0)
                 nn = nxt.get("n_prog_rows", 0)
@@ -662,7 +694,6 @@ def _write_qa_reports(rows: list[dict], qa_dir: Path, prefijo: str):
                         "anio": nxt["anio"],
                         "flag": f"prog_rowcount_jump_{nc}_to_{nn}",
                     })
-            # Millar: comparar número de filas
             if cur["tipo_esquema"] == "tarifa_millar" == nxt["tipo_esquema"]:
                 nc = cur.get("n_tarifa_rows", 0)
                 nn = nxt.get("n_tarifa_rows", 0)

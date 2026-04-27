@@ -76,3 +76,9 @@ Coahuila (COAH), Jalisco (JAL), Querétaro (QRO), Yucatán (YUC), Tamaulipas (TA
 ## Pipeline (6 pasos)
 
 download → ocr (si aplica) → master → segment → extract (LLM) → validate → [consolidate] → [impute]
+
+## Advertencia sobre tipo_esquema
+Se identificó un error sistemático en el codigo: el LLM clasifica como tabla_progresiva con tasa_marginal=0 cuando la estructura real es cuota fija escalonada. A continuación de hará una corrección vía discriminated union con escape hatch (otro_no_clasificado). Tamaulipas y Querétaro funcionan como regression tests. Evitar leer tipo_esquema crudo del JSON; esperar a pasar por la capa de validación.
+
+## API 
+La API key vive en .env (no commiteado). Nunca incluir la key en código, prompts, logs o commits. Si necesitas verificar que está configurada, usa os.environ.get("OPENAI_API_KEY") is not None, no imprimas el valor.

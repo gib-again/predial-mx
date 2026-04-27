@@ -1,0 +1,66 @@
+{
+  "predial": {
+    "tipo_esquema": "cuota_fija",
+    "esquema_valido": true,
+    "comentarios": "Se ignora el Art. 6 (rentas o frutos civiles) por ser un esquema fuera de alcance y distinto del predial basado en valor catastral. Art. 5 solo refiere a valores unitarios catastrales (base), no a la tarifa.",
+    "minimo_predial": null,
+    "tabla_tarifa_millar": [],
+    "tabla_progresiva": [],
+    "tabla_tasa_unica": [],
+    "tabla_cuota_fija": [
+      {
+        "descripcion": "Valor catastral de los predios rústicos y urbanos, con o sin construcción: cuota fija para valores catastrales de 0.01 a 10,000.00",
+        "monto": 100.0,
+        "periodicidad": "anual",
+        "unidad": "pesos"
+      },
+      {
+        "descripcion": "Valor catastral de los predios rústicos y urbanos, con o sin construcción: cuota fija para valores catastrales de 10,000.01 a 20,000.00",
+        "monto": 200.0,
+        "periodicidad": "anual",
+        "unidad": "pesos"
+      },
+      {
+        "descripcion": "Valor catastral de los predios rústicos y urbanos, con o sin construcción: cuota fija para valores catastrales de 20,000.01 a 50,000.00",
+        "monto": 250.0,
+        "periodicidad": "anual",
+        "unidad": "pesos"
+      },
+      {
+        "descripcion": "Valor catastral de los predios rústicos y urbanos, con o sin construcción: cuota fija para valores catastrales de 50,000.01 a 80,000.00",
+        "monto": 300.0,
+        "periodicidad": "anual",
+        "unidad": "pesos"
+      },
+      {
+        "descripcion": "Valor catastral de los predios rústicos y urbanos, con o sin construcción: cuota fija para valores catastrales de 80,000.01 a 100,000.00",
+        "monto": 400.0,
+        "periodicidad": "anual",
+        "unidad": "pesos"
+      },
+      {
+        "descripcion": "Valor catastral de los predios rústicos y urbanos, con o sin construcción: cuota fija para valores catastrales de 100,000.01 a 500,000.00",
+        "monto": 500.0,
+        "periodicidad": "anual",
+        "unidad": "pesos"
+      },
+      {
+        "descripcion": "Valor catastral de los predios rústicos y urbanos, con o sin construcción: cuota fija para valores catastrales de 500,000.01 a 1,000,000.00",
+        "monto": 600.0,
+        "periodicidad": "anual",
+        "unidad": "pesos"
+      },
+      {
+        "descripcion": "Valor catastral de los predios rústicos y urbanos, con o sin construcción: cuota fija para valores catastrales de 1,000,000.01 en adelante",
+        "monto": 800.0,
+        "periodicidad": "anual",
+        "unidad": "pesos"
+      }
+    ],
+    "tabla_mixta_rango": []
+  },
+  "_meta": {
+    "fuente": "txt",
+    "modelo": "gpt-5.2"
+  }
+}
