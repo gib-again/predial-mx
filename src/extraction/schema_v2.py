@@ -197,6 +197,7 @@ def _validate_brackets(rows: list) -> None:
                 f"bracket {row.n_rango}: superior=None solo permitido en el último rango"
             )
 
+    BRACKET_GAP_TOLERANCE = 1.0
     for i in range(n - 1):
         cur, nxt = rows[i], rows[i + 1]
         if cur.inferior >= nxt.inferior:
@@ -204,7 +205,7 @@ def _validate_brackets(rows: list) -> None:
                 f"brackets {cur.n_rango}→{nxt.n_rango}: inferior debe ser estrictamente "
                 f"creciente ({cur.inferior} >= {nxt.inferior})"
             )
-        if cur.superior != nxt.inferior:
+        if cur.superior is None or abs(cur.superior - nxt.inferior) > BRACKET_GAP_TOLERANCE:
             raise ValueError(
                 f"brackets {cur.n_rango}→{nxt.n_rango}: hueco detectado "
                 f"(superior={cur.superior}, siguiente inferior={nxt.inferior})"

@@ -44,7 +44,7 @@ from src.core.text_utils import parse_predial_filename
 
 # ── Configuración del modelo ──
 
-OPENAI_MODEL = os.environ.get("OPENAI_MODEL", "gpt-5.2")
+OPENAI_MODEL = os.environ.get("OPENAI_MODEL", "gpt-5.4-mini")
 OPENAI_VISION_MODEL = os.environ.get("OPENAI_VISION_MODEL", OPENAI_MODEL)
 
 # Activar/desactivar structured output (default: activado)
