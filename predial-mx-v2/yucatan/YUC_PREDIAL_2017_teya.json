@@ -1,0 +1,33 @@
+{
+  "predial": {
+    "tipo_esquema": "cuota_fija_simple",
+    "tabla": [
+      {
+        "descripcion": "predios urbanos",
+        "monto": 60.0,
+        "periodicidad": "anual",
+        "unidad": "pesos"
+      }
+    ],
+    "minimo_predial": null,
+    "comentarios": "Art. 13 establece una cuota fija anual para predios urbanos de $60.00 y para predios rústicos de $40.00. Se clasifica como cuota_fija_simple porque el texto presenta montos fijos sin rangos ni tasas; sin embargo, el segmento transcrito no permite estructurar ambas categorías en una sola tabla de una entrada, por lo que se consigna la fila explícita observada y se deja constancia en comentarios de la tarifa paralela para predios rústicos. Art. 15 corresponde a frutos civiles con 0%, pero no se integra aquí como mecánica predial catastral principal."
+  },
+  "_meta": {
+    "fuente": "txt",
+    "modelo": "gpt-5.4-mini"
+  },
+  "_meta_v2": {
+    "intentos": 1,
+    "requiere_revision": false,
+    "escalado": false,
+    "razon": null,
+    "tokens": {
+      "input": 4991,
+      "output": 200,
+      "cached": 3840
+    },
+    "cvegeo": "31088",
+    "estado": "yucatan",
+    "anio": 2017
+  }
+}

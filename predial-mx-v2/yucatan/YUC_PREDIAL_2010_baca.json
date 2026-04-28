@@ -1,0 +1,33 @@
+{
+  "predial": {
+    "tipo_esquema": "tasa_unica",
+    "tabla": [
+      {
+        "descripcion": "Impuesto predial sobre valor catastral",
+        "tasa": 0.0015,
+        "base_calculo": "valor_catastral",
+        "unidad": "porcentaje"
+      }
+    ],
+    "minimo_predial": null,
+    "comentarios": "Art. 13 establece una tasa única del 0.15% sobre el valor catastral. La sección de valores unitarios de terreno y construcciones es catastro/base de cálculo, no la mecánica tarifaria del impuesto. Art. 15 regula un supuesto distinto sobre rentas o frutos civiles y no se incluye en la mecánica principal del predial sobre valor catastral."
+  },
+  "_meta": {
+    "fuente": "txt",
+    "modelo": "gpt-5.4-mini"
+  },
+  "_meta_v2": {
+    "intentos": 1,
+    "requiere_revision": false,
+    "escalado": false,
+    "razon": null,
+    "tokens": {
+      "input": 5882,
+      "output": 164,
+      "cached": 3840
+    },
+    "cvegeo": "31004",
+    "estado": "yucatan",
+    "anio": 2010
+  }
+}

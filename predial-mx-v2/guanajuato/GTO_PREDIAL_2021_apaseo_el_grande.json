@@ -1,0 +1,51 @@
+{
+  "predial": {
+    "tipo_esquema": "tarifa_millar",
+    "tabla": [
+      {
+        "grupo": "urbano",
+        "clave": "inmuebles_urbanos_y_suburbanos_con_edificaciones",
+        "descripcion": "Inmuebles urbanos y suburbanos con edificaciones",
+        "tasa_millar": 0.0024,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "urbano",
+        "clave": "inmuebles_urbanos_y_suburbanos_sin_edificaciones",
+        "descripcion": "Inmuebles urbanos y suburbanos sin edificaciones",
+        "tasa_millar": 0.0045,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "urbano",
+        "clave": "inmuebles_urbanos_y_suburbanos_mixto",
+        "descripcion": "Inmuebles urbanos y suburbanos modificado",
+        "tasa_millar": 0.0018,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      }
+    ],
+    "minimo_predial": null,
+    "comentarios": "Art. 4 establece tasas al millar anuales para inmuebles urbanos y suburbanos según condición de edificación y la fecha de construcción/modificación. Además, el artículo contiene tarifas paralelas para inmuebles rústicos (no integradas en la tabla principal por ser una tarifa distinta): 4.5 al millar para predios de riego, 4.5 al millar para temporal/agostadero/cerril según el texto OCR no presenta claramente una tasa única adicional; la mecánica rústica se basa en valores unitarios de valuación del Art. 5 y no en brackets del predial. Se omiten tablas de valores unitarios porque corresponden a catastro, no a la mecánica del impuesto."
+  },
+  "_meta": {
+    "fuente": "txt",
+    "modelo": "gpt-5.4-mini"
+  },
+  "_meta_v2": {
+    "intentos": 1,
+    "requiere_revision": false,
+    "escalado": false,
+    "razon": null,
+    "tokens": {
+      "input": 7462,
+      "output": 376,
+      "cached": 3840
+    },
+    "cvegeo": "11005",
+    "estado": "guanajuato",
+    "anio": 2021
+  }
+}

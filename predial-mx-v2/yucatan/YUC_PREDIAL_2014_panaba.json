@@ -1,0 +1,118 @@
+{
+  "predial": {
+    "tipo_esquema": "mixto",
+    "tabla": [
+      {
+        "n_rango": 1,
+        "inferior": 0.01,
+        "superior": 4000.0,
+        "columnas": [
+          {
+            "nombre": "general",
+            "valor": 15.0,
+            "tipo": "cuota_fija",
+            "unidad": "pesos"
+          }
+        ]
+      },
+      {
+        "n_rango": 2,
+        "inferior": 4000.01,
+        "superior": 5500.0,
+        "columnas": [
+          {
+            "nombre": "general",
+            "valor": 28.0,
+            "tipo": "cuota_fija",
+            "unidad": "pesos"
+          }
+        ]
+      },
+      {
+        "n_rango": 3,
+        "inferior": 5500.01,
+        "superior": 6500.0,
+        "columnas": [
+          {
+            "nombre": "general",
+            "valor": 41.0,
+            "tipo": "cuota_fija",
+            "unidad": "pesos"
+          }
+        ]
+      },
+      {
+        "n_rango": 4,
+        "inferior": 6500.01,
+        "superior": 7500.0,
+        "columnas": [
+          {
+            "nombre": "general",
+            "valor": 61.0,
+            "tipo": "cuota_fija",
+            "unidad": "pesos"
+          }
+        ]
+      },
+      {
+        "n_rango": 5,
+        "inferior": 7500.01,
+        "superior": 8500.0,
+        "columnas": [
+          {
+            "nombre": "general",
+            "valor": 71.0,
+            "tipo": "cuota_fija",
+            "unidad": "pesos"
+          }
+        ]
+      },
+      {
+        "n_rango": 6,
+        "inferior": 8500.01,
+        "superior": 10000.0,
+        "columnas": [
+          {
+            "nombre": "general",
+            "valor": 81.0,
+            "tipo": "cuota_fija",
+            "unidad": "pesos"
+          }
+        ]
+      },
+      {
+        "n_rango": 7,
+        "inferior": 10000.01,
+        "superior": null,
+        "columnas": [
+          {
+            "nombre": "general",
+            "valor": 101.0,
+            "tipo": "cuota_fija",
+            "unidad": "pesos"
+          }
+        ]
+      }
+    ],
+    "minimo_predial": null,
+    "comentarios": "Art. 12, fracción I: tarifa por rangos de valor catastral con cuota anual en pesos y un 'factor para aplicar al límite inferior' expresado en porcentaje muy pequeño; se transcribe como estructura mixta porque la tarifa combina cuotas fijas por rango con un factor/tasa indicado en la misma tabla. Art. 12, fracción II: para predios rústicos con o sin construcción se establecen cuotas paralelas ($23.00 de 0 a 35 hectáreas; $1.95 por cada hectárea de más de 35) y además una tarifa de 10 al millar para predios destinados a la producción agropecuaria; no se integra en la tabla principal por ser tarifa paralela."
+  },
+  "_meta": {
+    "fuente": "txt",
+    "modelo": "gpt-5.4-mini"
+  },
+  "_meta_v2": {
+    "intentos": 1,
+    "requiere_revision": false,
+    "escalado": false,
+    "razon": null,
+    "tokens": {
+      "input": 5975,
+      "output": 517,
+      "cached": 3840
+    },
+    "cvegeo": "31057",
+    "estado": "yucatan",
+    "anio": 2014
+  }
+}

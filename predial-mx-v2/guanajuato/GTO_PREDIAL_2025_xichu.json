@@ -1,0 +1,75 @@
+{
+  "predial": {
+    "tipo_esquema": "tarifa_millar",
+    "tabla": [
+      {
+        "grupo": "general",
+        "clave": "urbano_suburbano_con_edificaciones",
+        "descripcion": "Inmuebles urbanos y suburbanos con edificaciones, con contribuciones del ejercicio en vigor",
+        "tasa_millar": 2.4,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "general",
+        "clave": "urbano_suburbano_sin_edificaciones",
+        "descripcion": "Inmuebles urbanos y suburbanos sin edificaciones, con contribuciones del ejercicio en vigor",
+        "tasa_millar": 1.8,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "general",
+        "clave": "rustico_contribuciones_ejercicio_en_vigor",
+        "descripcion": "Inmuebles rústicos con contribuciones del ejercicio en vigor",
+        "tasa_millar": 2.4,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "general",
+        "clave": "urbano_suburbano_contribuciones_anteriores",
+        "descripcion": "Inmuebles urbanos y suburbanos con contribuciones de ejercicios anteriores al año de 2025",
+        "tasa_millar": 1.3,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "general",
+        "clave": "urbano_suburbano_sin_edificaciones_contribuciones_anteriores",
+        "descripcion": "Inmuebles urbanos y suburbanos sin edificaciones con contribuciones de ejercicios anteriores al año de 2025",
+        "tasa_millar": 1.2,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "general",
+        "clave": "rustico_contribuciones_anteriores",
+        "descripcion": "Inmuebles rústicos con contribuciones de ejercicios anteriores al año de 2025",
+        "tasa_millar": 1.8,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      }
+    ],
+    "minimo_predial": null,
+    "comentarios": "Artículo 4 establece tasas al millar para inmuebles urbanos, suburbanos y rústicos, diferenciando por existencia de edificaciones y por el origen temporal de las contribuciones (ejercicio en vigor vs. años anteriores). Se ignoran los artículos 5 y 6 por referirse a valores unitarios para avalúo/catastro, no a la mecánica de cálculo del impuesto."
+  },
+  "_meta": {
+    "fuente": "txt",
+    "modelo": "gpt-5.4-mini"
+  },
+  "_meta_v2": {
+    "intentos": 1,
+    "requiere_revision": false,
+    "escalado": false,
+    "razon": null,
+    "tokens": {
+      "input": 6758,
+      "output": 502,
+      "cached": 3840
+    },
+    "cvegeo": "11045",
+    "estado": "guanajuato",
+    "anio": 2025
+  }
+}

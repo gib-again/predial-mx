@@ -1,0 +1,71 @@
+{
+  "predial": {
+    "tipo_esquema": "tarifa_millar",
+    "tabla": [
+      {
+        "grupo": "urbano",
+        "clave": "urbano_con_edificaciones",
+        "descripcion": "Predios urbanos con edificaciones",
+        "tasa_millar": 0.001,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "urbano",
+        "clave": "suburbano_con_edificaciones",
+        "descripcion": "Predios suburbanos con edificaciones",
+        "tasa_millar": 0.001,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "rustico",
+        "clave": "rustico",
+        "descripcion": "Predios rústicos",
+        "tasa_millar": 0.0015,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "urbano",
+        "clave": "urbano_suburbano_sin_edificaciones",
+        "descripcion": "Predios urbanos y suburbanos sin edificaciones (baldíos)",
+        "tasa_millar": 0.0015,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "urbano",
+        "clave": "urbano_industrial",
+        "descripcion": "Predios urbanos de uso industrial",
+        "tasa_millar": 0.0015,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      }
+    ],
+    "minimo_predial": {
+      "monto": 3.0,
+      "periodicidad": "anual",
+      "unidad": "uma"
+    },
+    "comentarios": "Art. 10: tasas anuales sobre valor catastral para predios urbanos, suburbanos, rústicos, baldíos e industriales. Fracc. VI excluye a fraccionamientos autorizados del supuesto de baldíos; fraccs. VII y VIII prevén aumentos del 100% para ciertos casos, pero se omiten por ser incrementos/recargos y no la mecánica base solicitada. Mínimo predial anual: 3 UMA en zona urbana y suburbana de la cabecera municipal; 2.5 UMA para predios rústicos; 2 UMA para localidades ejidales."
+  },
+  "_meta": {
+    "fuente": "txt",
+    "modelo": "gpt-5.4-mini"
+  },
+  "_meta_v2": {
+    "intentos": 1,
+    "requiere_revision": false,
+    "escalado": false,
+    "razon": null,
+    "tokens": {
+      "input": 5449,
+      "output": 437,
+      "cached": 3840
+    },
+    "cvegeo": "28018",
+    "estado": "tamaulipas",
+    "anio": 2019
+  }
+}

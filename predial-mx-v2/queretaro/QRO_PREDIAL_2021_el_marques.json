@@ -1,0 +1,201 @@
+{
+  "predial": {
+    "tipo_esquema": "progresivo",
+    "tabla": [
+      {
+        "n_rango": 1,
+        "inferior": 0.0,
+        "superior": 89975.06,
+        "cuota_fija": 132.6,
+        "tasa_marginal": 0.00035
+      },
+      {
+        "n_rango": 2,
+        "inferior": 89975.06,
+        "superior": 108099.92,
+        "cuota_fija": 164.61,
+        "tasa_marginal": 0.00219
+      },
+      {
+        "n_rango": 3,
+        "inferior": 108099.92,
+        "superior": 129875.9,
+        "cuota_fija": 204.35,
+        "tasa_marginal": 0.00226
+      },
+      {
+        "n_rango": 4,
+        "inferior": 129875.9,
+        "superior": 156038.51,
+        "cuota_fija": 253.68,
+        "tasa_marginal": 0.00234
+      },
+      {
+        "n_rango": 5,
+        "inferior": 156038.51,
+        "superior": 187471.39,
+        "cuota_fija": 314.92,
+        "tasa_marginal": 0.00241
+      },
+      {
+        "n_rango": 6,
+        "inferior": 187471.39,
+        "superior": 225236.21,
+        "cuota_fija": 390.95,
+        "tasa_marginal": 0.00249
+      },
+      {
+        "n_rango": 7,
+        "inferior": 225236.21,
+        "superior": 270608.49,
+        "cuota_fija": 485.34,
+        "tasa_marginal": 0.00258
+      },
+      {
+        "n_rango": 8,
+        "inferior": 270608.49,
+        "superior": 325120.71,
+        "cuota_fija": 602.52,
+        "tasa_marginal": 0.00266
+      },
+      {
+        "n_rango": 9,
+        "inferior": 325120.71,
+        "superior": 390614.03,
+        "cuota_fija": 747.99,
+        "tasa_marginal": 0.00275
+      },
+      {
+        "n_rango": 10,
+        "inferior": 390614.03,
+        "superior": 469300.53,
+        "cuota_fija": 928.58,
+        "tasa_marginal": 0.00284
+      },
+      {
+        "n_rango": 11,
+        "inferior": 469300.53,
+        "superior": 563837.89,
+        "cuota_fija": 1152.77,
+        "tasa_marginal": 0.00294
+      },
+      {
+        "n_rango": 12,
+        "inferior": 563837.89,
+        "superior": 677419.14,
+        "cuota_fija": 1431.09,
+        "tasa_marginal": 0.00304
+      },
+      {
+        "n_rango": 13,
+        "inferior": 677419.14,
+        "superior": 813880.56,
+        "cuota_fija": 1776.61,
+        "tasa_marginal": 0.00314
+      },
+      {
+        "n_rango": 14,
+        "inferior": 813880.56,
+        "superior": 977831.18,
+        "cuota_fija": 2205.56,
+        "tasa_marginal": 0.00324
+      },
+      {
+        "n_rango": 15,
+        "inferior": 977831.18,
+        "superior": 1174808.53,
+        "cuota_fija": 2738.07,
+        "tasa_marginal": 0.00335
+      },
+      {
+        "n_rango": 16,
+        "inferior": 1174808.53,
+        "superior": 1411465.6,
+        "cuota_fija": 3399.15,
+        "tasa_marginal": 0.00346
+      },
+      {
+        "n_rango": 17,
+        "inferior": 1411465.6,
+        "superior": 1695795.61,
+        "cuota_fija": 4219.85,
+        "tasa_marginal": 0.00358
+      },
+      {
+        "n_rango": 18,
+        "inferior": 1695795.61,
+        "superior": 2037401.94,
+        "cuota_fija": 5238.7,
+        "tasa_marginal": 0.0037
+      },
+      {
+        "n_rango": 19,
+        "inferior": 2037401.94,
+        "superior": 2447822.51,
+        "cuota_fija": 6503.54,
+        "tasa_marginal": 0.00382
+      },
+      {
+        "n_rango": 20,
+        "inferior": 2447822.51,
+        "superior": 2940919.47,
+        "cuota_fija": 8073.77,
+        "tasa_marginal": 0.00395
+      },
+      {
+        "n_rango": 21,
+        "inferior": 2940919.47,
+        "superior": 3533347.41,
+        "cuota_fija": 10023.12,
+        "tasa_marginal": 0.00408
+      },
+      {
+        "n_rango": 22,
+        "inferior": 3533347.41,
+        "superior": 4245115.87,
+        "cuota_fija": 12443.13,
+        "tasa_marginal": 0.00422
+      },
+      {
+        "n_rango": 23,
+        "inferior": 4245115.87,
+        "superior": 5100265.17,
+        "cuota_fija": 15447.43,
+        "tasa_marginal": 0.00436
+      },
+      {
+        "n_rango": 24,
+        "inferior": 5100265.17,
+        "superior": 6127678.41,
+        "cuota_fija": 19177.1,
+        "tasa_marginal": 0.0045
+      },
+      {
+        "n_rango": 25,
+        "inferior": 6127678.41,
+        "superior": null,
+        "cuota_fija": 23807.27,
+        "tasa_marginal": 0.00464
+      }
+    ],
+    "minimo_predial": null,
+    "comentarios": "Se normalizaron los rangos para evitar huecos entre límites consecutivos: el texto original usa límites con centavos (p. ej. 0.01–89,975.06; 89,975.07–108,099.92), por lo que se ajustaron a límites contiguos 0–89,975.06; 89,975.06–108,099.92; etc. El artículo establece tarifa progresiva con cuota fija más cifra para aplicar al excedente del límite inferior por bimestre."
+  },
+  "_meta": {
+    "fuente": "txt",
+    "modelo": "gpt-5.4-mini"
+  },
+  "_meta_v2": {
+    "intentos": 2,
+    "requiere_revision": false,
+    "razon": null,
+    "tokens": {
+      "input": 12973,
+      "output": 2406,
+      "cached": 11776
+    },
+    "cvegeo": "22011",
+    "estado": "queretaro",
+    "anio": 2021
+  }
+}

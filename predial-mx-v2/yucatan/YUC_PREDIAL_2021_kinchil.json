@@ -1,0 +1,35 @@
+{
+  "predial": {
+    "tipo_esquema": "tarifa_millar",
+    "tabla": [
+      {
+        "grupo": "general",
+        "clave": "predio_agropecuario",
+        "descripcion": "Todo predio destinado a la producción agropecuaria",
+        "tasa_millar": 0.01,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      }
+    ],
+    "minimo_predial": null,
+    "comentarios": "Art. 13: la mecánica del impuesto predial no se presenta como una tabla de cobro por rangos ni como una tasa uniforme general; el único dato expreso de cálculo del predial en el texto extraído es una tarifa paralela para predios destinados a la producción agropecuaria de 10 al millar anual sobre el valor registrado o catastral. El resto del artículo reproduce tablas de valores catastrales de suelo y construcción, que son base valuatoria y no se transcriben como mecánica de cobro. No se detecta en el segmento una tabla completa de tasas del predial para todos los tipos de predio."
+  },
+  "_meta": {
+    "fuente": "txt",
+    "modelo": "gpt-5.4-mini"
+  },
+  "_meta_v2": {
+    "intentos": 1,
+    "requiere_revision": false,
+    "escalado": false,
+    "razon": null,
+    "tokens": {
+      "input": 6698,
+      "output": 238,
+      "cached": 3840
+    },
+    "cvegeo": "31044",
+    "estado": "yucatan",
+    "anio": 2021
+  }
+}

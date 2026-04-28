@@ -1,0 +1,59 @@
+{
+  "predial": {
+    "tipo_esquema": "tarifa_millar",
+    "tabla": [
+      {
+        "grupo": "general",
+        "clave": "entrada_en_vigor",
+        "descripcion": "A la entrada en vigor de la presente ley",
+        "tasa_millar": 0.0024,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "general",
+        "clave": "anios_2002_a_2017",
+        "descripcion": "Durante los años 2002 y hasta 2017 inclusive",
+        "tasa_millar": 0.0024,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "general",
+        "clave": "anterior_a_2002_y_hasta_1993",
+        "descripcion": "Con anterioridad al año 2002 y hasta 1993 inclusive",
+        "tasa_millar": 0.008,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "general",
+        "clave": "anterior_a_1993",
+        "descripcion": "Con anterioridad al año de 1993",
+        "tasa_millar": 0.001,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      }
+    ],
+    "minimo_predial": null,
+    "comentarios": "Art. 4 establece tasas al millar por año/antigüedad del valor determinado o modificado. La tabla transcrita en el texto presenta tres columnas de tasas: para inmuebles urbanos y suburbanos con y sin edificaciones, y para inmuebles rústicos. Se deja como tarifa_millar principal con las tasas visibles del segmento. Art. 5 contiene valores unitarios de terreno y construcción (catastro) y no se clasifica como mecánica del impuesto; no se extrae como tarifa. No se observan descuentos ni mínimos prediales en el segmento proporcionado."
+  },
+  "_meta": {
+    "fuente": "txt",
+    "modelo": "gpt-5.4-mini"
+  },
+  "_meta_v2": {
+    "intentos": 1,
+    "requiere_revision": false,
+    "escalado": false,
+    "razon": null,
+    "tokens": {
+      "input": 7483,
+      "output": 382,
+      "cached": 3840
+    },
+    "cvegeo": "11001",
+    "estado": "guanajuato",
+    "anio": 2018
+  }
+}

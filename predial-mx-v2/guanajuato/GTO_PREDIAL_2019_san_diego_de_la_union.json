@@ -1,0 +1,59 @@
+{
+  "predial": {
+    "tipo_esquema": "tarifa_millar",
+    "tabla": [
+      {
+        "grupo": "urbano",
+        "clave": "presentes_ley",
+        "descripcion": "Inmuebles urbanos/suburbanos/edificados/baldíos con valor modificado determinado por la presente ley",
+        "tasa_millar": 0.0024,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "otro",
+        "clave": "años_2002_a_2018_inclusive",
+        "descripcion": "Inmuebles urbanos/suburbanos/edificados/baldíos con valor modificado determinado durante los años 2002 a 2018 inclusive",
+        "tasa_millar": 0.0024,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "otro",
+        "clave": "anterior_a_2002",
+        "descripcion": "Inmuebles urbanos/suburbanos/edificados/baldíos con valor modificado con anterioridad al año 2002",
+        "tasa_millar": 0.008,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "rustico",
+        "clave": "rusticos",
+        "descripcion": "Predios rústicos",
+        "tasa_millar": 0.0045,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      }
+    ],
+    "minimo_predial": null,
+    "comentarios": "Art. 4 establece tasas al millar para inmuebles urbanos/suburbanos/edificados y para rústicos, con diferencias según el periodo de valor modificado (presente Ley; 2002 a 2018 inclusive; anterior a 2002). Se transcribe la mecánica tarifaria como catálogo de tasas al millar. No se incluye Art. 5 ni 6 porque corresponden a valores unitarios y criterios de avalúo, no a la mecánica de cálculo del impuesto."
+  },
+  "_meta": {
+    "fuente": "txt",
+    "modelo": "gpt-5.4-mini"
+  },
+  "_meta_v2": {
+    "intentos": 1,
+    "requiere_revision": false,
+    "escalado": false,
+    "razon": null,
+    "tokens": {
+      "input": 7410,
+      "output": 396,
+      "cached": 3840
+    },
+    "cvegeo": "11029",
+    "estado": "guanajuato",
+    "anio": 2019
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "predial": {
+    "tipo_esquema": "otro_no_clasificado",
+    "categoria": "error_segmentacion",
+    "descripcion_estructural": "El texto menciona que el impuesto se determinará con una tabla y describe una mecánica de diferencia entre valor catastral, límite inferior, factor aplicable y cuota fija, lo que sugiere una tarifa progresiva o escalonada. Sin embargo, la tabla del impuesto predial no aparece en el segmento: sólo se incluyen valores unitarios de terreno y construcción catastral, que no son la tarifa del impuesto.",
+    "tabla_cruda": [],
+    "minimo_predial": null,
+    "comentarios": "Artículo 14 Bis indica una fórmula con límite inferior, factor aplicable y cuota fija, pero faltan los renglones de la tabla tarifaria. También establece una tarifa paralela para predios rústicos con actividad agropecuaria de 20.00 pesos por hectárea, la cual no se integra por no contar con la tabla principal y porque además corresponde a una base distinta."
+  },
+  "_meta": {
+    "fuente": "txt",
+    "modelo": "gpt-5.4"
+  },
+  "_meta_v2": {
+    "intentos": 3,
+    "requiere_revision": true,
+    "escalado": true,
+    "razon": "clasificado_como_otro_no_clasificado_tras_escalacion",
+    "tokens": {
+      "input": 19307,
+      "output": 749,
+      "cached": 11520
+    },
+    "cvegeo": "31097",
+    "estado": "yucatan",
+    "anio": 2023
+  }
+}

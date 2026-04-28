@@ -1,0 +1,51 @@
+{
+  "predial": {
+    "tipo_esquema": "tarifa_millar",
+    "tabla": [
+      {
+        "grupo": "urbano",
+        "clave": "con_edificaciones",
+        "descripcion": "Inmuebles urbanos y suburbanos con edificaciones",
+        "tasa_millar": 0.0024,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "urbano",
+        "clave": "sin_edificaciones",
+        "descripcion": "Inmuebles urbanos y suburbanos sin edificaciones",
+        "tasa_millar": 0.0045,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "rustico",
+        "clave": "rusticos",
+        "descripcion": "Inmuebles rústicos",
+        "tasa_millar": 0.0018,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      }
+    ],
+    "minimo_predial": null,
+    "comentarios": "Art. 4: tabla de tasas anuales al millar por categoría de inmueble. Se transcriben las tasas visibles para 'Inmuebles Urbanos y Suburbanos' con y sin edificaciones, y 'Inmuebles Rústicos'. La fila IV del texto está truncada/incompleta en el OCR ('Con anterioridad a 1993 ... 13 al millar 12 al millar') y no se incorpora como estructura separada por no estar completa. Los artículos 5 y 6 contienen valores unitarios y criterios de avalúo, no la mecánica tarifaria del impuesto predial."
+  },
+  "_meta": {
+    "fuente": "txt",
+    "modelo": "gpt-5.4-mini"
+  },
+  "_meta_v2": {
+    "intentos": 1,
+    "requiere_revision": false,
+    "escalado": false,
+    "razon": null,
+    "tokens": {
+      "input": 7382,
+      "output": 317,
+      "cached": 3840
+    },
+    "cvegeo": "11021",
+    "estado": "guanajuato",
+    "anio": 2010
+  }
+}

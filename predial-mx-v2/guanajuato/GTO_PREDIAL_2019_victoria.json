@@ -1,0 +1,51 @@
+{
+  "predial": {
+    "tipo_esquema": "tarifa_millar",
+    "tabla": [
+      {
+        "grupo": "urbano",
+        "clave": "inmuebles_urbanos_y_suburbanos_con_edificacion",
+        "descripcion": "Inmuebles urbanos y suburbanos con edificación",
+        "tasa_millar": 0.0024,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "urbano",
+        "clave": "inmuebles_urbanos_y_suburbanos_sin_edificacion",
+        "descripcion": "Inmuebles urbanos y suburbanos sin edificación",
+        "tasa_millar": 0.0045,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "rustico",
+        "clave": "inmuebles_rusticos",
+        "descripcion": "Inmuebles rústicos",
+        "tasa_millar": 0.0018,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      }
+    ],
+    "minimo_predial": null,
+    "comentarios": "Art. 4 establece tasas anuales al millar por tipo de inmueble y condición (urbanos y suburbanos con edificación; urbanos y suburbanos sin edificación; rústicos). No se transcriben los cuadros de valores unitarios de los artículos 5 y 6 por tratarse de catastro/avalúo, no de mecánica tarifaria. Las tasas históricas previas mencionadas en el mismo artículo (años anteriores a 2002/1993) no se usan como esquema principal para 2019."
+  },
+  "_meta": {
+    "fuente": "txt",
+    "modelo": "gpt-5.4-mini"
+  },
+  "_meta_v2": {
+    "intentos": 1,
+    "requiere_revision": false,
+    "escalado": false,
+    "razon": null,
+    "tokens": {
+      "input": 7314,
+      "output": 330,
+      "cached": 3840
+    },
+    "cvegeo": "11043",
+    "estado": "guanajuato",
+    "anio": 2019
+  }
+}

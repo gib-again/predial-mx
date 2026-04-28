@@ -1,0 +1,33 @@
+{
+  "predial": {
+    "tipo_esquema": "tasa_unica",
+    "tabla": [
+      {
+        "descripcion": "Impuesto predial = 10% del valor catastral actualizado (C=(A+B)(.10)/100).",
+        "tasa": 0.1,
+        "base_calculo": "valor_catastral",
+        "unidad": "porcentaje"
+      }
+    ],
+    "minimo_predial": null,
+    "comentarios": "Art. 13: la mecánica indica una sola tasa uniforme del 10% sobre el valor catastral actualizado, calculado como suma de valor unitario del terreno (A) más valor de construcción (B). No se usan tablas por rangos ni categorías tarifarias separadas; los descuentos del Art. 14 se ignoran conforme a la instrucción."
+  },
+  "_meta": {
+    "fuente": "txt",
+    "modelo": "gpt-5.4-mini"
+  },
+  "_meta_v2": {
+    "intentos": 1,
+    "requiere_revision": false,
+    "escalado": false,
+    "razon": null,
+    "tokens": {
+      "input": 6532,
+      "output": 168,
+      "cached": 3840
+    },
+    "cvegeo": "31087",
+    "estado": "yucatan",
+    "anio": 2021
+  }
+}

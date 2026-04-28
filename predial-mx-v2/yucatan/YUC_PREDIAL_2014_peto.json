@@ -1,0 +1,33 @@
+{
+  "predial": {
+    "tipo_esquema": "tasa_unica",
+    "tabla": [
+      {
+        "descripcion": "Impuesto predial general sobre valor catastral",
+        "tasa": 0.02,
+        "base_calculo": "valor_catastral",
+        "unidad": "porcentaje"
+      }
+    ],
+    "minimo_predial": null,
+    "comentarios": "Art. 4: el impuesto predial se determina aplicando una tasa del 2% sobre el valor catastral. Art. 6 establece una mecánica distinta sobre rentas o frutos civiles mensuales (3% casas habitación, 5% predios comerciales), pero corresponde a frutos civiles y se ignora por instrucción. Art. 5 es descuento y se omite."
+  },
+  "_meta": {
+    "fuente": "txt",
+    "modelo": "gpt-5.4-mini"
+  },
+  "_meta_v2": {
+    "intentos": 1,
+    "requiere_revision": false,
+    "escalado": false,
+    "razon": null,
+    "tokens": {
+      "input": 4970,
+      "output": 158,
+      "cached": 3840
+    },
+    "cvegeo": "31058",
+    "estado": "yucatan",
+    "anio": 2014
+  }
+}

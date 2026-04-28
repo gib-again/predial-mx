@@ -1,0 +1,35 @@
+{
+  "predial": {
+    "tipo_esquema": "tarifa_millar",
+    "tabla": [
+      {
+        "grupo": "general",
+        "clave": "general",
+        "descripcion": "Impuesto predial general sobre el valor catastral",
+        "tasa_millar": 0.001,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      }
+    ],
+    "minimo_predial": null,
+    "comentarios": "Artículo 13: el impuesto predial se causará aplicando el factor de 0.001 al importe del valor catastral que se determine. El mismo artículo establece una tarifa paralela para predios destinados a la producción agropecuaria de 10 al millar anual sobre el valor registrado o catastral, con el límite indicado por la legislación agraria federal para terrenos ejidales; no se incluye en la tabla principal por ser tarifa separada para un grupo distinto. Se ignoraron las tablas de valores unitarios de terreno y construcción por corresponder a catastro y no a la tarifa del impuesto."
+  },
+  "_meta": {
+    "fuente": "txt",
+    "modelo": "gpt-5.4"
+  },
+  "_meta_v2": {
+    "intentos": 3,
+    "requiere_revision": false,
+    "escalado": true,
+    "razon": "escalado_a_gpt-5.4_tras_2x_mini_fallido",
+    "tokens": {
+      "input": 18716,
+      "output": 717,
+      "cached": 13568
+    },
+    "cvegeo": "31085",
+    "estado": "yucatan",
+    "anio": 2014
+  }
+}

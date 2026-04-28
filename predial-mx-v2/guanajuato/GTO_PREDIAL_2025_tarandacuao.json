@@ -1,0 +1,32 @@
+{
+  "predial": {
+    "tipo_esquema": "otro_no_clasificado",
+    "categoria": "segmento_vacio",
+    "descripcion_estructural": "El texto proporcionado no contiene la mecánica tarifaria del impuesto predial (tasas, cuotas o brackets). La sección visible sólo muestra referencias generales, páginas en blanco/omitidas y una cuota mínima anual en el artículo de facilidades administrativas, pero no la tabla base de cálculo del predial. Por ello no es posible clasificar la estructura con las variantes tarifarias solicitadas.",
+    "tabla_cruda": [],
+    "minimo_predial": {
+      "monto": 317.2,
+      "periodicidad": "anual",
+      "unidad": "pesos"
+    },
+    "comentarios": "Se omitieron descuentos y recargos conforme a la instrucción. La cuota mínima anual aparece en el Artículo 36 como estímulo/facilidad administrativa, no como mecánica tarifaria base."
+  },
+  "_meta": {
+    "fuente": "txt",
+    "modelo": "gpt-5.4-mini"
+  },
+  "_meta_v2": {
+    "intentos": 1,
+    "requiere_revision": true,
+    "escalado": false,
+    "razon": "clasificado_como_otro_no_clasificado",
+    "tokens": {
+      "input": 8498,
+      "output": 194,
+      "cached": 3840
+    },
+    "cvegeo": "11038",
+    "estado": "guanajuato",
+    "anio": 2025
+  }
+}

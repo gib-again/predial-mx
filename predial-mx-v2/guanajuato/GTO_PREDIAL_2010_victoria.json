@@ -1,0 +1,59 @@
+{
+  "predial": {
+    "tipo_esquema": "tarifa_millar",
+    "tabla": [
+      {
+        "grupo": "urbano",
+        "clave": "valor_determinado_con_edificaciones",
+        "descripcion": "Inmuebles que cuenten con un valor determinado o modificado: con edificaciones",
+        "tasa_millar": 0.0024,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "urbano",
+        "clave": "valor_determinado_sin_edificaciones",
+        "descripcion": "Inmuebles que cuenten con un valor determinado o modificado: sin edificaciones",
+        "tasa_millar": 0.0045,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "rustico",
+        "clave": "valor_determinado_con_edificaciones",
+        "descripcion": "Inmuebles rústicos: con edificaciones",
+        "tasa_millar": 0.0018,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "rustico",
+        "clave": "valor_determinado_sin_edificaciones",
+        "descripcion": "Inmuebles rústicos: sin edificaciones",
+        "tasa_millar": 0.0018,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      }
+    ],
+    "minimo_predial": null,
+    "comentarios": "Art. 4 establece tasas anuales al millar por categoría y condición del inmueble. La ley también contiene en los arts. 5 y 6 tablas de valores unitarios y criterios de valuación catastral, pero no constituyen la mecánica de cálculo del impuesto sino la determinación de la base. No se transcriben descuentos, recargos ni bonificaciones. La misma sección incluye tasas históricas para años anteriores a 2010; se conserva sólo la mecánica vigente para el ejercicio fiscal 2010 al inicio de vigencia de la ley."
+  },
+  "_meta": {
+    "fuente": "txt",
+    "modelo": "gpt-5.4-mini"
+  },
+  "_meta_v2": {
+    "intentos": 1,
+    "requiere_revision": false,
+    "escalado": false,
+    "razon": null,
+    "tokens": {
+      "input": 7240,
+      "output": 397,
+      "cached": 3840
+    },
+    "cvegeo": "11043",
+    "estado": "guanajuato",
+    "anio": 2010
+  }
+}

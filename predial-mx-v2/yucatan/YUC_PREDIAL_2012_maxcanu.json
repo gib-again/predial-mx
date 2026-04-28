@@ -1,0 +1,69 @@
+{
+  "predial": {
+    "tipo_esquema": "cuota_fija_escalonada",
+    "tabla": [
+      {
+        "n_rango": 1,
+        "inferior": 0.01,
+        "superior": 60000.0,
+        "monto": 56.0
+      },
+      {
+        "n_rango": 2,
+        "inferior": 60000.01,
+        "superior": 120000.0,
+        "monto": 76.0
+      },
+      {
+        "n_rango": 3,
+        "inferior": 120000.01,
+        "superior": 200000.0,
+        "monto": 125.0
+      },
+      {
+        "n_rango": 4,
+        "inferior": 200000.01,
+        "superior": 400000.0,
+        "monto": 209.0
+      },
+      {
+        "n_rango": 5,
+        "inferior": 400000.01,
+        "superior": 600000.0,
+        "monto": 431.0
+      },
+      {
+        "n_rango": 6,
+        "inferior": 600000.01,
+        "superior": 800000.0,
+        "monto": 682.0
+      },
+      {
+        "n_rango": 7,
+        "inferior": 800000.01,
+        "superior": null,
+        "monto": 1252.0
+      }
+    ],
+    "minimo_predial": null,
+    "comentarios": "Art. 13 establece una tarifa por rangos de valor catastral con cuota fija anual en pesos para cada bracket; no se observan tasas marginales. Las tablas de valores catastrales por zonas (Centro, Segundo Cuadro, Tercer Cuadro, Fraccionamientos, Industrias y Rústicos) son valores unitarios/catastro, no la mecánica del impuesto, y se ignoran. Art. 15 regula el impuesto sobre rentas o frutos civiles, no la mecánica del predial sobre valor catastral, por lo que no se incluye. Art. 14 contiene un descuento, que se ignora."
+  },
+  "_meta": {
+    "fuente": "txt",
+    "modelo": "gpt-5.4-mini"
+  },
+  "_meta_v2": {
+    "intentos": 1,
+    "requiere_revision": false,
+    "escalado": false,
+    "razon": null,
+    "tokens": {
+      "input": 6711,
+      "output": 361,
+      "cached": 3840
+    },
+    "cvegeo": "31048",
+    "estado": "yucatan",
+    "anio": 2012
+  }
+}

@@ -1,0 +1,118 @@
+{
+  "predial": {
+    "tipo_esquema": "mixto",
+    "tabla": [
+      {
+        "n_rango": 1,
+        "inferior": 0.0,
+        "superior": 4000.0,
+        "columnas": [
+          {
+            "nombre": "general",
+            "valor": 4.0,
+            "tipo": "cuota_fija",
+            "unidad": "pesos"
+          }
+        ]
+      },
+      {
+        "n_rango": 2,
+        "inferior": 4000.01,
+        "superior": 5500.0,
+        "columnas": [
+          {
+            "nombre": "general",
+            "valor": 7.0,
+            "tipo": "cuota_fija",
+            "unidad": "pesos"
+          }
+        ]
+      },
+      {
+        "n_rango": 3,
+        "inferior": 5500.01,
+        "superior": 6500.0,
+        "columnas": [
+          {
+            "nombre": "general",
+            "valor": 10.0,
+            "tipo": "cuota_fija",
+            "unidad": "pesos"
+          }
+        ]
+      },
+      {
+        "n_rango": 4,
+        "inferior": 6500.01,
+        "superior": 7500.0,
+        "columnas": [
+          {
+            "nombre": "general",
+            "valor": 13.0,
+            "tipo": "cuota_fija",
+            "unidad": "pesos"
+          }
+        ]
+      },
+      {
+        "n_rango": 5,
+        "inferior": 7500.01,
+        "superior": 8500.0,
+        "columnas": [
+          {
+            "nombre": "general",
+            "valor": 16.0,
+            "tipo": "cuota_fija",
+            "unidad": "pesos"
+          }
+        ]
+      },
+      {
+        "n_rango": 6,
+        "inferior": 8500.01,
+        "superior": 10000.0,
+        "columnas": [
+          {
+            "nombre": "general",
+            "valor": 20.0,
+            "tipo": "cuota_fija",
+            "unidad": "pesos"
+          }
+        ]
+      },
+      {
+        "n_rango": 7,
+        "inferior": 10000.01,
+        "superior": null,
+        "columnas": [
+          {
+            "nombre": "general",
+            "valor": 24.0,
+            "tipo": "cuota_fija",
+            "unidad": "pesos"
+          }
+        ]
+      }
+    ],
+    "minimo_predial": null,
+    "comentarios": "Artículo 13 contiene una tarifa escalonada por valor catastral con cuota fija anual por rango y un factor para aplicar al excedente. Sin embargo, el propio texto indica además una tarifa paralela para predios destinados a la producción agropecuaria: 10 al millar anual sobre el valor registrado o catastral. Esa tarifa secundaria no se mezcla en la tabla principal. Se ignoraron las tablas de valores unitarios de terreno y construcciones porque son catastro, no mecánica del impuesto."
+  },
+  "_meta": {
+    "fuente": "txt",
+    "modelo": "gpt-5.4-mini"
+  },
+  "_meta_v2": {
+    "intentos": 1,
+    "requiere_revision": false,
+    "escalado": false,
+    "razon": null,
+    "tokens": {
+      "input": 6404,
+      "output": 463,
+      "cached": 3840
+    },
+    "cvegeo": "31103",
+    "estado": "yucatan",
+    "anio": 2019
+  }
+}

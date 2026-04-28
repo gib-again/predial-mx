@@ -1,0 +1,71 @@
+{
+  "predial": {
+    "tipo_esquema": "tarifa_millar",
+    "tabla": [
+      {
+        "grupo": "urbano",
+        "clave": "predios_urbanos_con_edificaciones",
+        "descripcion": "Predios urbanos con edificaciones",
+        "tasa_millar": 0.0016,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "urbano",
+        "clave": "predios_suburbanos_con_edificaciones",
+        "descripcion": "Predios suburbanos con edificaciones",
+        "tasa_millar": 0.0016,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "rustico",
+        "clave": "predios_rusticos",
+        "descripcion": "Predios rústicos",
+        "tasa_millar": 0.0015,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "urbano",
+        "clave": "predios_urbanos_y_suburbanos_sin_edificacion_baldios",
+        "descripcion": "Predios urbanos y suburbanos sin edificaciones (baldíos)",
+        "tasa_millar": 0.0016,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "urbano",
+        "clave": "predios_urbanos_uso_industrial",
+        "descripcion": "Predios urbanos de uso industrial",
+        "tasa_millar": 0.0016,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      }
+    ],
+    "minimo_predial": {
+      "monto": 3.0,
+      "periodicidad": "anual",
+      "unidad": "vsm"
+    },
+    "comentarios": "Art. 10: tasas anuales sobre valor catastral para predios urbanos con edificaciones (1.6 al millar), suburbanos con edificaciones (1.6 al millar), rústicos (1.5 al millar), urbanos y suburbanos sin edificaciones/baldíos (1.6 al millar) y urbanos de uso industrial (1.6 al millar). Las fracciones VI y VII establecen aumentos de 100% y 50% para ciertos predios urbanos; no se estructuran como tarifa separada en la tabla principal. Mínimo anual: no podrá ser inferior a 3 salarios mínimos en zonas urbanas 6, 7 y 8 y en predios rústicos de hasta 16 hectáreas, ni a 5 salarios mínimos en zonas urbanas 1 a 5 y en predios rústicos mayores de 16-01 hectáreas."
+  },
+  "_meta": {
+    "fuente": "txt",
+    "modelo": "gpt-5.4-mini"
+  },
+  "_meta_v2": {
+    "intentos": 1,
+    "requiere_revision": false,
+    "escalado": false,
+    "razon": null,
+    "tokens": {
+      "input": 5411,
+      "output": 523,
+      "cached": 3840
+    },
+    "cvegeo": "28035",
+    "estado": "tamaulipas",
+    "anio": 2015
+  }
+}

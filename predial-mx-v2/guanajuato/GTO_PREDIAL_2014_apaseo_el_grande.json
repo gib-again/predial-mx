@@ -1,0 +1,51 @@
+{
+  "predial": {
+    "tipo_esquema": "tarifa_millar",
+    "tabla": [
+      {
+        "grupo": "urbano",
+        "clave": "edificaciones",
+        "descripcion": "Inmuebles urbanos y suburbanos con edificaciones",
+        "tasa_millar": 0.0024,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "urbano",
+        "clave": "sin_edificaciones",
+        "descripcion": "Inmuebles urbanos y suburbanos con inmuebles sin edificaciones",
+        "tasa_millar": 0.0045,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "rustico",
+        "clave": "rustico",
+        "descripcion": "Inmuebles rústicos",
+        "tasa_millar": 0.0018,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      }
+    ],
+    "minimo_predial": null,
+    "comentarios": "Art. 4: el impuesto predial se causa y liquida anualmente con tasas al millar por categoría de inmueble. Se transcribe la tarifa principal de la tabla: urbanos y suburbanos con edificaciones 2.4 al millar; urbanos y suburbanos sin edificaciones 4.5 al millar; rústicos 1.8 al millar. En el texto aparecen también tasas históricas por periodos anteriores a 2002, pero no se incorporan como tarifa vigente del ejercicio 2014. El Art. 5 contiene valores unitarios catastrales para avalúo, no la mecánica del impuesto."
+  },
+  "_meta": {
+    "fuente": "txt",
+    "modelo": "gpt-5.4-mini"
+  },
+  "_meta_v2": {
+    "intentos": 1,
+    "requiere_revision": false,
+    "escalado": false,
+    "razon": null,
+    "tokens": {
+      "input": 7268,
+      "output": 324,
+      "cached": 3840
+    },
+    "cvegeo": "11005",
+    "estado": "guanajuato",
+    "anio": 2014
+  }
+}

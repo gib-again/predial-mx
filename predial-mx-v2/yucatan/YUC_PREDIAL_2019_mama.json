@@ -1,0 +1,33 @@
+{
+  "predial": {
+    "tipo_esquema": "cuota_fija_simple",
+    "tabla": [
+      {
+        "descripcion": "Impuesto predial anual",
+        "monto": 50.0,
+        "periodicidad": "anual",
+        "unidad": "pesos"
+      }
+    ],
+    "minimo_predial": null,
+    "comentarios": "Art. 13 establece una cuota fija de $50.00. El bloque posterior 'RÚSTICOS / $ POR BRECHA / $110.00 / CAMINO BLANCO / $215.00 / CARRETERA / $355.00' se transcribe como tarifa paralela para predios rústicos, pero el segmento no aporta una mecánica de cálculo por rangos ni una tabla completa de categorías con estructura suficiente para reclasificarla sin interpretar; por ello no se integra en la tabla principal."
+  },
+  "_meta": {
+    "fuente": "txt",
+    "modelo": "gpt-5.4-mini"
+  },
+  "_meta_v2": {
+    "intentos": 1,
+    "requiere_revision": false,
+    "escalado": false,
+    "razon": null,
+    "tokens": {
+      "input": 4901,
+      "output": 178,
+      "cached": 3840
+    },
+    "cvegeo": "31046",
+    "estado": "yucatan",
+    "anio": 2019
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "predial": {
+    "tipo_esquema": "tarifa_millar",
+    "tabla": [
+      {
+        "grupo": "otro",
+        "clave": "habitacional",
+        "descripcion": "Habitacional",
+        "tasa_millar": 70.0,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "otro",
+        "clave": "comercial",
+        "descripcion": "Comercial",
+        "tasa_millar": 220.0,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      }
+    ],
+    "minimo_predial": null,
+    "comentarios": "Art. 13 establece dos cuotas planas por categoría: Habitacional $70.00 y Comercial $220.00. El texto también señala una tarifa paralela para predios destinados a la producción agropecuaria y/o pecuaria de 10 al millar anual sobre el valor registrado o catastral, pero añade 'se le cobrará $3.00 por mecate', por lo que esa disposición es heterogénea y no se incorpora en la tabla principal. Art. 15 corresponde al impuesto predial con base en rentas o frutos civiles y se ignora conforme a instrucciones."
+  },
+  "_meta": {
+    "fuente": "txt",
+    "modelo": "gpt-5.4"
+  },
+  "_meta_v2": {
+    "intentos": 3,
+    "requiere_revision": false,
+    "escalado": true,
+    "razon": "escalado_a_gpt-5.4_tras_2x_mini_fallido",
+    "tokens": {
+      "input": 16249,
+      "output": 945,
+      "cached": 13568
+    },
+    "cvegeo": "31028",
+    "estado": "yucatan",
+    "anio": 2014
+  }
+}

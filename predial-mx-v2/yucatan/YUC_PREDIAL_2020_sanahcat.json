@@ -1,0 +1,37 @@
+{
+  "predial": {
+    "tipo_esquema": "otro_no_clasificado",
+    "categoria": "estructura_no_estandar",
+    "descripcion_estructural": "El texto establece dos mecánicas paralelas para el impuesto predial: una cuota por superficie de 20 centavos por m2 para el predio causante y, por separado, una tasa de 10 al millar anual sobre el valor registrado o catastral para predios destinados a la producción agropecuaria. La base principal es superficie, no valor catastral por rangos ni una sola tasa uniforme sobre la misma base, por lo que no encaja en las seis variantes tipadas.",
+    "tabla_cruda": [
+      {
+        "descripcion": "Predio causante",
+        "valores": "20 centavos por m2 que tenga la extensión de predio causante; anual"
+      },
+      {
+        "descripcion": "Predio destinado a la producción agropecuaria",
+        "valores": "10 al millar anual sobre el valor registrado o catastral; sin que la cantidad a pagar resultante exceda a lo establecido por la legislación agraria federal para terrenos ejidales"
+      }
+    ],
+    "minimo_predial": null,
+    "comentarios": "Se ignora el descuento del 20 % por pago en el primer bimestre previsto en el artículo 14, por ser beneficio fiscal y no mecánica base del impuesto."
+  },
+  "_meta": {
+    "fuente": "txt",
+    "modelo": "gpt-5.4"
+  },
+  "_meta_v2": {
+    "intentos": 3,
+    "requiere_revision": true,
+    "escalado": true,
+    "razon": "clasificado_como_otro_no_clasificado_tras_escalacion",
+    "tokens": {
+      "input": 16052,
+      "output": 834,
+      "cached": 13568
+    },
+    "cvegeo": "31064",
+    "estado": "yucatan",
+    "anio": 2020
+  }
+}

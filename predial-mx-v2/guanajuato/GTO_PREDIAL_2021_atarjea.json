@@ -1,0 +1,51 @@
+{
+  "predial": {
+    "tipo_esquema": "tarifa_millar",
+    "tabla": [
+      {
+        "grupo": "urbano",
+        "clave": "inmuebles_urbanos_y_suburbanos_con_edificaciones",
+        "descripcion": "A la entrada en vigor de la presente Ley; inmuebles urbanos y suburbanos con edificaciones",
+        "tasa_millar": 0.0024,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "urbano",
+        "clave": "inmuebles_urbanos_y_suburbanos_sin_edificaciones",
+        "descripcion": "A la entrada en vigor de la presente Ley; inmuebles urbanos y suburbanos sin edificaciones",
+        "tasa_millar": 0.0045,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "rustico",
+        "clave": "inmuebles_rusticos",
+        "descripcion": "A la entrada en vigor de la presente Ley; inmuebles rústicos",
+        "tasa_millar": 0.0018,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      }
+    ],
+    "minimo_predial": null,
+    "comentarios": "Art. 4 establece tasas anuales al millar por categoría de inmueble y por condición de edificación, sin rangos de valor catastral. Se transcribe sólo la mecánica del artículo 4. Los artículos 5 y 6 contienen valores unitarios y criterios de avalúo/catastro, no se incluyen como mecánica tarifaria."
+  },
+  "_meta": {
+    "fuente": "txt",
+    "modelo": "gpt-5.4-mini"
+  },
+  "_meta_v2": {
+    "intentos": 1,
+    "requiere_revision": false,
+    "escalado": false,
+    "razon": null,
+    "tokens": {
+      "input": 6888,
+      "output": 314,
+      "cached": 3840
+    },
+    "cvegeo": "11006",
+    "estado": "guanajuato",
+    "anio": 2021
+  }
+}

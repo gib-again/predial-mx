@@ -1,0 +1,51 @@
+{
+  "predial": {
+    "tipo_esquema": "tarifa_millar",
+    "tabla": [
+      {
+        "grupo": "urbano",
+        "clave": "inmuebles_urbanos_y_suburbanos_con_edificaciones",
+        "descripcion": "Inmuebles urbanos y suburbanos con edificaciones; artículo 4, fracción I, tasa según antigüedad del inmueble.",
+        "tasa_millar": 0.0024,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "urbano",
+        "clave": "inmuebles_urbanos_y_suburbanos_sin_edificaciones",
+        "descripcion": "Inmuebles urbanos y suburbanos sin edificaciones; artículo 4, fracción I, tasa según antigüedad del inmueble.",
+        "tasa_millar": 0.00375,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "rustico",
+        "clave": "inmuebles_rusticos",
+        "descripcion": "Inmuebles rústicos; artículo 4, fracción I, tasa según antigüedad del inmueble.",
+        "tasa_millar": 0.0018,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      }
+    ],
+    "minimo_predial": null,
+    "comentarios": "Artículo 4 establece tres tasas anuales al millar para la base predial según tipo de inmueble (urbanos y suburbanos con edificaciones, urbanos y suburbanos sin edificaciones, y rústicos), diferenciadas además por antigüedad del inmueble. Se transcribe sólo la mecánica de cálculo. No se incorpora Art. 5 ni Art. 6 porque contienen valores unitarios y criterios de avalúo, no la tarifa del impuesto. También aparecen tasas históricas para inmuebles construidos antes de ciertos años; se omiten como estructura secundaria no predominante dentro del texto transcrito."
+  },
+  "_meta": {
+    "fuente": "txt",
+    "modelo": "gpt-5.4-mini"
+  },
+  "_meta_v2": {
+    "intentos": 1,
+    "requiere_revision": false,
+    "escalado": false,
+    "razon": null,
+    "tokens": {
+      "input": 7492,
+      "output": 385,
+      "cached": 3840
+    },
+    "cvegeo": "11032",
+    "estado": "guanajuato",
+    "anio": 2018
+  }
+}

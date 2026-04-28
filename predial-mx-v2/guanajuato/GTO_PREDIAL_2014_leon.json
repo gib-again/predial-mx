@@ -1,0 +1,118 @@
+{
+  "predial": {
+    "tipo_esquema": "mixto",
+    "tabla": [
+      {
+        "n_rango": 1,
+        "inferior": 0.0,
+        "superior": 1000.0,
+        "columnas": [
+          {
+            "nombre": "general",
+            "valor": 0.0023,
+            "tipo": "tasa_porcentual",
+            "unidad": "porcentaje"
+          }
+        ]
+      },
+      {
+        "n_rango": 2,
+        "inferior": 1000.0,
+        "superior": 3000.0,
+        "columnas": [
+          {
+            "nombre": "general",
+            "valor": 0.0033,
+            "tipo": "tasa_porcentual",
+            "unidad": "porcentaje"
+          }
+        ]
+      },
+      {
+        "n_rango": 3,
+        "inferior": 3000.0,
+        "superior": 5000.0,
+        "columnas": [
+          {
+            "nombre": "general",
+            "valor": 0.00439,
+            "tipo": "tasa_porcentual",
+            "unidad": "porcentaje"
+          }
+        ]
+      },
+      {
+        "n_rango": 4,
+        "inferior": 5000.0,
+        "superior": 7000.0,
+        "columnas": [
+          {
+            "nombre": "general",
+            "valor": 0.00548,
+            "tipo": "tasa_porcentual",
+            "unidad": "porcentaje"
+          }
+        ]
+      },
+      {
+        "n_rango": 5,
+        "inferior": 7000.0,
+        "superior": 9000.0,
+        "columnas": [
+          {
+            "nombre": "general",
+            "valor": 0.00639,
+            "tipo": "tasa_porcentual",
+            "unidad": "porcentaje"
+          }
+        ]
+      },
+      {
+        "n_rango": 6,
+        "inferior": 9000.0,
+        "superior": 11000.0,
+        "columnas": [
+          {
+            "nombre": "general",
+            "valor": 0.008,
+            "tipo": "tasa_porcentual",
+            "unidad": "porcentaje"
+          }
+        ]
+      },
+      {
+        "n_rango": 7,
+        "inferior": 11000.0,
+        "superior": null,
+        "columnas": [
+          {
+            "nombre": "general",
+            "valor": 0.01,
+            "tipo": "tasa_porcentual",
+            "unidad": "porcentaje"
+          }
+        ]
+      }
+    ],
+    "minimo_predial": null,
+    "comentarios": "Art. 5, fracc. I, inciso b) (urbanos y suburbanos sin edificaciones, para inmuebles cuyo valor se determinó o modificó a partir del 1 de enero de 2006 y hasta el 31 de diciembre de 2010): la tabla aparece en el texto como tasas progresivas por rangos de valor catastral; se transcribe como mixto por la presencia de rangos y la lectura OCR de porcentajes. Art. 5 también contiene tasas paralelas por grupo y periodo de valuación: 0.234% para urbanos y suburbanos con edificaciones (fracc. I, inciso a), 0.0416% para rústicos (fracc. I, inciso c), 0.681% para urbanos y suburbanos con edificaciones valuados hasta 31/12/2005 (fracc. III, inciso a), 0.661% para rústicos valuados hasta 31/12/2005 (fracc. III, inciso c) y otras tablas para sin edificación; no se integran todas en la tabla principal por ser tarifas paralelas y porque el texto OCR presenta varios bloques heterogéneos. Art. 6 a 7 son tablas de valores unitarios de catastro, no mecánica de impuesto, y se ignoran."
+  },
+  "_meta": {
+    "fuente": "txt",
+    "modelo": "gpt-5.4-mini"
+  },
+  "_meta_v2": {
+    "intentos": 1,
+    "requiere_revision": false,
+    "escalado": false,
+    "razon": null,
+    "tokens": {
+      "input": 10799,
+      "output": 650,
+      "cached": 3840
+    },
+    "cvegeo": "11020",
+    "estado": "guanajuato",
+    "anio": 2014
+  }
+}

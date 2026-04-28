@@ -1,0 +1,28 @@
+{
+  "predial": {
+    "tipo_esquema": "otro_no_clasificado",
+    "categoria": "municipio_sin_impuesto",
+    "descripcion_estructural": "El texto proporcionado no contiene una mecánica del Impuesto Predial. La única tasa visible corresponde al Impuesto Sobre Adquisición de Inmuebles (3%), por lo que no es posible extraer una tabla de predial sin inventar información.",
+    "tabla_cruda": [],
+    "minimo_predial": null,
+    "comentarios": "Segmento solicitado como 'Del Impuesto Predial', pero el extracto recibido trata de otro impuesto."
+  },
+  "_meta": {
+    "fuente": "txt",
+    "modelo": "gpt-5.4-mini"
+  },
+  "_meta_v2": {
+    "intentos": 1,
+    "requiere_revision": true,
+    "escalado": false,
+    "razon": "clasificado_como_otro_no_clasificado",
+    "tokens": {
+      "input": 5089,
+      "output": 133,
+      "cached": 3840
+    },
+    "cvegeo": "05021",
+    "estado": "coahuila",
+    "anio": 2010
+  }
+}

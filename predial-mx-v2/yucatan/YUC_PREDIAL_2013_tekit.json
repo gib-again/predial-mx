@@ -1,0 +1,33 @@
+{
+  "predial": {
+    "tipo_esquema": "tasa_unica",
+    "tabla": [
+      {
+        "descripcion": "Cuota fija de 50.00 más tasa de 0.15% sobre el valor catastral",
+        "tasa": 0.0015,
+        "base_calculo": "valor_catastral",
+        "unidad": "porcentaje"
+      }
+    ],
+    "minimo_predial": null,
+    "comentarios": "Artículo 13 establece que el impuesto predial se determinará con una cuota fija de 50.00 aplicando la tasa del 0.15% sobre el valor catastral. La cuota fija adicional no puede modelarse en `tasa_unica` según el esquema disponible. Se ignoraron las tablas de valores catastrales de terreno y construcción por ser tablas catastrales, no tarifas del impuesto predial. También se ignoraron descuentos del artículo 14 y el impuesto sobre rentas o frutos civiles del artículo 15 por no corresponder a la mecánica principal del predial sobre valor catastral."
+  },
+  "_meta": {
+    "fuente": "txt",
+    "modelo": "gpt-5.4"
+  },
+  "_meta_v2": {
+    "intentos": 3,
+    "requiere_revision": false,
+    "escalado": true,
+    "razon": "escalado_a_gpt-5.4_tras_2x_mini_fallido",
+    "tokens": {
+      "input": 19024,
+      "output": 790,
+      "cached": 13568
+    },
+    "cvegeo": "31080",
+    "estado": "yucatan",
+    "anio": 2013
+  }
+}

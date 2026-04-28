@@ -1,0 +1,118 @@
+{
+  "predial": {
+    "tipo_esquema": "mixto",
+    "tabla": [
+      {
+        "n_rango": 1,
+        "inferior": 0.01,
+        "superior": 4000.0,
+        "columnas": [
+          {
+            "nombre": "general",
+            "valor": 15.0,
+            "tipo": "cuota_fija",
+            "unidad": "pesos"
+          }
+        ]
+      },
+      {
+        "n_rango": 2,
+        "inferior": 4000.01,
+        "superior": 5500.0,
+        "columnas": [
+          {
+            "nombre": "general",
+            "valor": 28.0,
+            "tipo": "cuota_fija",
+            "unidad": "pesos"
+          }
+        ]
+      },
+      {
+        "n_rango": 3,
+        "inferior": 5500.01,
+        "superior": 6500.0,
+        "columnas": [
+          {
+            "nombre": "general",
+            "valor": 41.0,
+            "tipo": "cuota_fija",
+            "unidad": "pesos"
+          }
+        ]
+      },
+      {
+        "n_rango": 4,
+        "inferior": 6500.01,
+        "superior": 7500.0,
+        "columnas": [
+          {
+            "nombre": "general",
+            "valor": 61.0,
+            "tipo": "cuota_fija",
+            "unidad": "pesos"
+          }
+        ]
+      },
+      {
+        "n_rango": 5,
+        "inferior": 7500.01,
+        "superior": 8500.0,
+        "columnas": [
+          {
+            "nombre": "general",
+            "valor": 71.0,
+            "tipo": "cuota_fija",
+            "unidad": "pesos"
+          }
+        ]
+      },
+      {
+        "n_rango": 6,
+        "inferior": 8500.01,
+        "superior": 10000.0,
+        "columnas": [
+          {
+            "nombre": "general",
+            "valor": 81.0,
+            "tipo": "cuota_fija",
+            "unidad": "pesos"
+          }
+        ]
+      },
+      {
+        "n_rango": 7,
+        "inferior": 10000.01,
+        "superior": null,
+        "columnas": [
+          {
+            "nombre": "general",
+            "valor": 101.0,
+            "tipo": "cuota_fija",
+            "unidad": "pesos"
+          }
+        ]
+      }
+    ],
+    "minimo_predial": null,
+    "comentarios": "Art. 13, fracción I: tabla escalonada de cuota anual en pesos con factor marginal indicado en porcentajes muy pequeños (0.000% a 0.002%), por lo que se clasifica como mixto y no como progresivo o cuota fija escalonada. Art. 13, fracción II: predios rústicos con o sin construcción pagan $23.00 de 0 a 35 hectáreas y $1.95 por cada hectárea excedente; todo predio destinado a la producción agropecuaria paga 10 al millar anual sobre el valor registrado o catastral, sin exceder la legislación agraria federal. Se transcribe sólo la mecánica principal en tabla y se dejan las tarifas paralelas en comentarios."
+  },
+  "_meta": {
+    "fuente": "txt",
+    "modelo": "gpt-5.4-mini"
+  },
+  "_meta_v2": {
+    "intentos": 1,
+    "requiere_revision": false,
+    "escalado": false,
+    "razon": null,
+    "tokens": {
+      "input": 6099,
+      "output": 521,
+      "cached": 3840
+    },
+    "cvegeo": "31057",
+    "estado": "yucatan",
+    "anio": 2015
+  }
+}

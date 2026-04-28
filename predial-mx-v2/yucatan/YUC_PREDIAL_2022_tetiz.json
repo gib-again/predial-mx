@@ -1,0 +1,53 @@
+{
+  "predial": {
+    "tipo_esquema": "mixto",
+    "tabla": [
+      {
+        "n_rango": 1,
+        "inferior": 0.0,
+        "superior": 200000.0,
+        "columnas": [
+          {
+            "nombre": "general",
+            "valor": 100.0,
+            "tipo": "cuota_fija",
+            "unidad": "pesos"
+          }
+        ]
+      },
+      {
+        "n_rango": 2,
+        "inferior": 200000.0,
+        "superior": null,
+        "columnas": [
+          {
+            "nombre": "general",
+            "valor": 0.001,
+            "tipo": "tasa_porcentual",
+            "unidad": "porcentaje"
+          }
+        ]
+      }
+    ],
+    "minimo_predial": null,
+    "comentarios": "Art. 13: el impuesto predial se calcula sobre el valor catastral actualizado. Para predios con valor catastral igual o menor a $200,000.00 se paga una cuota fija de $100.00; para el excedente se indica una tarifa del 0.10% del valor catastral. La estructura es híbrida por rangos con cambio de unidad (cuota fija en el primer tramo y porcentaje en el segundo), por lo que no encaja como cuota fija escalonada ni como tasa única."
+  },
+  "_meta": {
+    "fuente": "txt",
+    "modelo": "gpt-5.4-mini"
+  },
+  "_meta_v2": {
+    "intentos": 1,
+    "requiere_revision": false,
+    "escalado": false,
+    "razon": null,
+    "tokens": {
+      "input": 6457,
+      "output": 241,
+      "cached": 3840
+    },
+    "cvegeo": "31087",
+    "estado": "yucatan",
+    "anio": 2022
+  }
+}

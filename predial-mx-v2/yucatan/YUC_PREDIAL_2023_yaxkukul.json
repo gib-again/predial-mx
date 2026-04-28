@@ -1,0 +1,35 @@
+{
+  "predial": {
+    "tipo_esquema": "tarifa_millar",
+    "tabla": [
+      {
+        "grupo": "general",
+        "clave": "agropecuario",
+        "descripcion": "Predios destinados a la producción agropecuaria",
+        "tasa_millar": 0.01,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      }
+    ],
+    "minimo_predial": null,
+    "comentarios": "Art. 14: los predios destinados a la producción agropecuaria pagan 10 al millar anual sobre el valor registrado o catastral. La tabla de valores unitarios de terreno y construcción (Arts. 13 y tablas A/B) corresponde a catastro y no se transcribe como mecánica del impuesto. También se menciona en el mismo artículo un impuesto sobre rentas o frutos civiles mensuales para predios habitación y comerciales de 5%, pero esa mecánica es de frutos/rentas y no se integra en la tabla principal de predial sobre valor catastral."
+  },
+  "_meta": {
+    "fuente": "txt",
+    "modelo": "gpt-5.4-mini"
+  },
+  "_meta_v2": {
+    "intentos": 1,
+    "requiere_revision": false,
+    "escalado": false,
+    "razon": null,
+    "tokens": {
+      "input": 6209,
+      "output": 220,
+      "cached": 3840
+    },
+    "cvegeo": "31105",
+    "estado": "yucatan",
+    "anio": 2023
+  }
+}

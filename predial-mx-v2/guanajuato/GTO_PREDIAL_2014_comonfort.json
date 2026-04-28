@@ -1,0 +1,67 @@
+{
+  "predial": {
+    "tipo_esquema": "tarifa_millar",
+    "tabla": [
+      {
+        "grupo": "urbano",
+        "clave": "urbanos_con_edificaciones",
+        "descripcion": "Inmuebles urbanos y suburbanos con edificaciones; tasa según antigüedad del valor determinado o modificado.",
+        "tasa_millar": 0.0018,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "urbano",
+        "clave": "urbanos_sin_edificaciones",
+        "descripcion": "Inmuebles urbanos y suburbanos sin edificaciones; tasa según antigüedad del valor determinado o modificado.",
+        "tasa_millar": 0.0045,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "urbano",
+        "clave": "urbanos_ant_2002_hasta_1993",
+        "descripcion": "Inmuebles urbanos y suburbanos con anterioridad al año 2002 y hasta 1993 inclusive.",
+        "tasa_millar": 0.006,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "urbano",
+        "clave": "urbanos_ant_1993",
+        "descripcion": "Inmuebles urbanos y suburbanos con anterioridad al año 1993.",
+        "tasa_millar": 0.013,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "rustico",
+        "clave": "rusticos_general",
+        "descripcion": "Predios rústicos.",
+        "tasa_millar": 0.006,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      }
+    ],
+    "minimo_predial": null,
+    "comentarios": "Art. 4 establece tasas anuales por antigüedad para inmuebles urbanos y suburbanos con valor determinado o modificado: 1.8 al millar para inmuebles con edificaciones a la entrada en vigor; 4.5 al millar para inmuebles sin edificaciones a la entrada en vigor y para los años 2002 a 2013 inclusive; 6 al millar para años anteriores a 2002 y hasta 1993 inclusive; 13 al millar para anteriores a 1993. Para inmuebles rústicos se establece 6 al millar anual. Art. 5 contiene valores catastrales y factores de valuación, no mecánica de cálculo del impuesto."
+  },
+  "_meta": {
+    "fuente": "txt",
+    "modelo": "gpt-5.4-mini"
+  },
+  "_meta_v2": {
+    "intentos": 1,
+    "requiere_revision": false,
+    "escalado": false,
+    "razon": null,
+    "tokens": {
+      "input": 7472,
+      "output": 488,
+      "cached": 3840
+    },
+    "cvegeo": "11009",
+    "estado": "guanajuato",
+    "anio": 2014
+  }
+}

@@ -1,0 +1,57 @@
+{
+  "predial": {
+    "tipo_esquema": "mixto",
+    "tabla": [
+      {
+        "n_rango": 1,
+        "inferior": 0.0,
+        "superior": 200000.0,
+        "columnas": [
+          {
+            "nombre": "general",
+            "valor": 1.0,
+            "tipo": "cuota_fija",
+            "unidad": "uma"
+          }
+        ]
+      },
+      {
+        "n_rango": 2,
+        "inferior": 200000.01,
+        "superior": null,
+        "columnas": [
+          {
+            "nombre": "general",
+            "valor": 0.00025,
+            "tipo": "tasa_marginal",
+            "unidad": "porcentaje"
+          }
+        ]
+      }
+    ],
+    "minimo_predial": {
+      "monto": 1.0,
+      "periodicidad": "anual",
+      "unidad": "uma"
+    },
+    "comentarios": "Art. 4 establece una mecánica híbrida: para predios con valor catastral igual o menor a $200,000.00 se paga cuota fija de 1 UMA anual; para valores catastrales superiores se aplica la fórmula C=(Tabla A + Tabla B) x 0.00025, es decir una tasa sobre el valor catastral actualizado. Además, el mismo artículo prevé una tarifa paralela para predios rústicos por superficie (2.23, 3.34 y 4.46 UMA) y otra cuota fija anual de 1 UMA cuando no pueda determinarse el pago con base en valor catastral; estas se describen aquí como mecánicas paralelas no integradas en la tabla principal. Se ignoran descuentos del art. 6 y la renta/frutos civiles del art. 7 por tratarse de otra base de cálculo."
+  },
+  "_meta": {
+    "fuente": "txt",
+    "modelo": "gpt-5.4-mini"
+  },
+  "_meta_v2": {
+    "intentos": 1,
+    "requiere_revision": false,
+    "escalado": false,
+    "razon": null,
+    "tokens": {
+      "input": 5913,
+      "output": 331,
+      "cached": 3840
+    },
+    "cvegeo": "31009",
+    "estado": "yucatan",
+    "anio": 2024
+  }
+}

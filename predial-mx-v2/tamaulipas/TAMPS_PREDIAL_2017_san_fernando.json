@@ -1,0 +1,71 @@
+{
+  "predial": {
+    "tipo_esquema": "tarifa_millar",
+    "tabla": [
+      {
+        "grupo": "urbano",
+        "clave": "predios_urbanos_con_edificaciones",
+        "descripcion": "Predios urbanos con edificaciones",
+        "tasa_millar": 0.0016,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "urbano",
+        "clave": "predios_suburbanos_con_edificaciones",
+        "descripcion": "Predios suburbanos con edificaciones",
+        "tasa_millar": 0.0016,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "rustico",
+        "clave": "predios_rusticos",
+        "descripcion": "Predios rústicos",
+        "tasa_millar": 0.0016,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "urbano",
+        "clave": "predios_urbanos_y_suburbanos_sin_edificaciones_baldios",
+        "descripcion": "Predios urbanos y suburbanos sin edificaciones (baldíos)",
+        "tasa_millar": 0.0016,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "urbano",
+        "clave": "predios_urbanos_de_uso_industrial",
+        "descripcion": "Predios urbanos de uso industrial",
+        "tasa_millar": 0.0016,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      }
+    ],
+    "minimo_predial": {
+      "monto": 3.0,
+      "periodicidad": "anual",
+      "unidad": "uma"
+    },
+    "comentarios": "Art. 10: todas las tasas base son 1.6 al millar sobre valor catastral para predios urbanos con edificaciones, suburbanos con edificaciones, rústicos, urbanos/suburbanos sin edificaciones (baldíos) y urbanos de uso industrial. El texto agrega aumentos de 100% para predios urbanos no edificados y de 50% para predios urbanos con edificación cuyo valor sea inferior a la quinta parte del valor del terreno; se consignan como disposiciones complementarias, no como filas separadas. Mínimo predial: no podrá ser inferior a 3 UMA en zonas urbanas 6, 7 y 8 y en predios rústicos de hasta 16 hectáreas; y 5 UMA en zonas urbanas 1 a 5 y en predios rústicos mayores de 16-01 hectáreas."
+  },
+  "_meta": {
+    "fuente": "txt",
+    "modelo": "gpt-5.4-mini"
+  },
+  "_meta_v2": {
+    "intentos": 1,
+    "requiere_revision": false,
+    "escalado": false,
+    "razon": null,
+    "tokens": {
+      "input": 5397,
+      "output": 515,
+      "cached": 3840
+    },
+    "cvegeo": "28035",
+    "estado": "tamaulipas",
+    "anio": 2017
+  }
+}

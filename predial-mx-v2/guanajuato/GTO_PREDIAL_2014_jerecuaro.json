@@ -1,0 +1,59 @@
+{
+  "predial": {
+    "tipo_esquema": "tarifa_millar",
+    "tabla": [
+      {
+        "grupo": "general",
+        "clave": "entrada_en_vigor",
+        "descripcion": "Inmuebles urbanos y suburbanos con edificaciones / sin edificaciones / rústicos: a la entrada en vigor de la ley",
+        "tasa_millar": 0.0024,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "general",
+        "clave": "anios_2002_a_2013",
+        "descripcion": "Inmuebles urbanos y suburbanos con edificaciones / sin edificaciones / rústicos: durante los años 2002 y hasta 2013 inclusive",
+        "tasa_millar": 0.0024,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "general",
+        "clave": "anteriores_2002_hasta_1993",
+        "descripcion": "Inmuebles urbanos y suburbanos con edificaciones / sin edificaciones / rústicos: con anterioridad al año 2002 y hasta 1993",
+        "tasa_millar": 0.008,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "general",
+        "clave": "anteriores_1993",
+        "descripcion": "Inmuebles urbanos y suburbanos con edificaciones / sin edificaciones / rústicos: con anterioridad al año de 1993",
+        "tasa_millar": 0.013,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      }
+    ],
+    "minimo_predial": null,
+    "comentarios": "Art. 4 contiene una tabla de tasas al millar por antigüedad del valor determinado o modificado, con columnas para inmuebles urbanos y suburbanos con edificaciones, sin edificaciones y rústicos. Se transcribe sólo la mecánica del impuesto predial; Art. 5 y 6 tratan valores unitarios y avalúos, no la tasa del impuesto. Aunque el texto presenta tasas diferenciadas por tipo de inmueble en los primeros tres renglones, la estructura es categórica por tipo de inmueble y antigüedad; no se usan rangos de valor catastral."
+  },
+  "_meta": {
+    "fuente": "txt",
+    "modelo": "gpt-5.4-mini"
+  },
+  "_meta_v2": {
+    "intentos": 1,
+    "requiere_revision": false,
+    "escalado": false,
+    "razon": null,
+    "tokens": {
+      "input": 7247,
+      "output": 455,
+      "cached": 3840
+    },
+    "cvegeo": "11019",
+    "estado": "guanajuato",
+    "anio": 2014
+  }
+}

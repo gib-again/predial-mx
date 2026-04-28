@@ -1,0 +1,47 @@
+{
+  "predial": {
+    "tipo_esquema": "tarifa_millar",
+    "tabla": [
+      {
+        "grupo": "urbano",
+        "clave": "predios_urbanos_y_suburbanos",
+        "descripcion": "Predios urbanos y suburbanos",
+        "tasa_millar": 0.0016,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "rústico",
+        "clave": "predios_rusticos",
+        "descripcion": "Predios rústicos",
+        "tasa_millar": 0.0015,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      }
+    ],
+    "minimo_predial": {
+      "monto": 3.0,
+      "periodicidad": "anual",
+      "unidad": "vsm"
+    },
+    "comentarios": "Art. 6: predios urbanos y suburbanos pagan 1.6 al millar anual sobre valor catastral. Art. 7: predios rústicos pagan 1.5 al millar anual sobre valor catastral. Art. 6 fraccs. I-IV establecen aumentos para ciertos predios urbanos (no edificados, con edificación inferior a la quinta parte del terreno, etc.), pero no se transcriben como filas separadas por tratarse de ajustes sobre la tasa base. Art. 8 fija un mínimo anual de 3 salarios mínimos en zonas urbanas 6, 7 y 8 y en predios rústicos de hasta 16 hectáreas, y de 5 salarios mínimos en zonas urbanas 1 a 5 y en predios rústicos mayores de 16-01 hectáreas."
+  },
+  "_meta": {
+    "fuente": "txt",
+    "modelo": "gpt-5.4-mini"
+  },
+  "_meta_v2": {
+    "intentos": 1,
+    "requiere_revision": false,
+    "escalado": false,
+    "razon": null,
+    "tokens": {
+      "input": 5372,
+      "output": 340,
+      "cached": 3840
+    },
+    "cvegeo": "28035",
+    "estado": "tamaulipas",
+    "anio": 2012
+  }
+}

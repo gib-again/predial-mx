@@ -1,0 +1,79 @@
+{
+  "predial": {
+    "tipo_esquema": "tarifa_millar",
+    "tabla": [
+      {
+        "grupo": "urbano",
+        "clave": "predios_urbanos",
+        "descripcion": "Sobre los predios urbanos",
+        "tasa_millar": 0.003,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "rustico",
+        "clave": "predios_rusticos",
+        "descripcion": "Sobre los predios rústicos",
+        "tasa_millar": 0.003,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "otro",
+        "clave": "predios_suburbanos",
+        "descripcion": "Sobre los predios suburbanos",
+        "tasa_millar": 0.004,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "otro",
+        "clave": "predios_industriales",
+        "descripcion": "Sobre los predios industriales",
+        "tasa_millar": 0.005,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "otro",
+        "clave": "predios_parcelarios",
+        "descripcion": "Sobre los predios parcelarios",
+        "tasa_millar": 0.001,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "rustico",
+        "clave": "predios_rusticos_industriales_energia_renovable",
+        "descripcion": "Sobre los predios rústicos industriales con explotación de energía renovable en ejecución, desarrollo o proyecto",
+        "tasa_millar": 0.003,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      }
+    ],
+    "minimo_predial": {
+      "monto": 33.0,
+      "periodicidad": "bimestral",
+      "unidad": "pesos"
+    },
+    "comentarios": "Art. 2 fraccs. I, II, III, IV, VI y IX establecen tasas al millar anuales por categoría de predio. Se deja fuera de la tabla principal la fracc. VII y VIII porque gravan producción anual comercializada al 3% para predios de extracción ejidal y establecimientos metalúrgicos/mineros, no sobre valor catastral; además no encajan en la mecánica del predial ordinario. La fracc. V fija un mínimo predial de $33.00 por bimestre. Se ignoran incentivos y bonificaciones. La última oración asimila como predial urbano toda propiedad dentro del Plan Director de Desarrollo Urbano."
+  },
+  "_meta": {
+    "fuente": "txt",
+    "modelo": "gpt-5.4-mini"
+  },
+  "_meta_v2": {
+    "intentos": 1,
+    "requiere_revision": false,
+    "escalado": false,
+    "razon": null,
+    "tokens": {
+      "input": 6140,
+      "output": 504,
+      "cached": 3840
+    },
+    "cvegeo": "05017",
+    "estado": "coahuila",
+    "anio": 2023
+  }
+}

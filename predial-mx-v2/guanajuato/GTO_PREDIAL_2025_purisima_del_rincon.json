@@ -1,0 +1,59 @@
+{
+  "predial": {
+    "tipo_esquema": "tarifa_millar",
+    "tabla": [
+      {
+        "grupo": "general",
+        "clave": "urbanos_suburbanos_con_edificaciones",
+        "descripcion": "Inmuebles urbanos y suburbanos con edificaciones; primer supuesto de la tabla del artículo 4.",
+        "tasa_millar": 0.0024,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "general",
+        "clave": "urbanos_suburbanos_sin_edificaciones",
+        "descripcion": "Inmuebles urbanos y suburbanos sin edificaciones; primer supuesto de la tabla del artículo 4.",
+        "tasa_millar": 0.0045,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "general",
+        "clave": "rusticos_con_edificaciones",
+        "descripcion": "Inmuebles rústicos con edificaciones; primer supuesto de la tabla del artículo 4.",
+        "tasa_millar": 0.0018,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "general",
+        "clave": "rusticos_sin_edificaciones",
+        "descripcion": "Inmuebles rústicos sin edificaciones; primer supuesto de la tabla del artículo 4.",
+        "tasa_millar": 0.0045,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      }
+    ],
+    "minimo_predial": null,
+    "comentarios": "Artículo 4 establece tasas anuales al millar por tipo de inmueble y condición de edificación. La tabla es categórica, sin rangos de valor catastral. No se incluyen los artículos 5 y 6 porque corresponden a valores unitarios para avalúo/catastro, no a la mecánica del impuesto. No se detectan tarifas paralelas adicionales aplicables en el mismo artículo para otras poblaciones dentro del segmento extraído."
+  },
+  "_meta": {
+    "fuente": "txt",
+    "modelo": "gpt-5.4-mini"
+  },
+  "_meta_v2": {
+    "intentos": 1,
+    "requiere_revision": false,
+    "escalado": false,
+    "razon": null,
+    "tokens": {
+      "input": 7569,
+      "output": 386,
+      "cached": 3840
+    },
+    "cvegeo": "11025",
+    "estado": "guanajuato",
+    "anio": 2025
+  }
+}

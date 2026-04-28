@@ -1,0 +1,28 @@
+{
+  "predial": {
+    "tipo_esquema": "otro_no_clasificado",
+    "categoria": "estructura_no_estandar",
+    "descripcion_estructural": "El texto no presenta una tarifa predial clasificable en las variantes solicitadas. La mecánica principal remite a tablas de valores unitarios de terreno y construcción por zona y tipo de material, que son insumo catastral y no una tarifa de cálculo del impuesto en las variantes dadas. Además, el Art. 15 establece el impuesto sobre rentas o frutos civiles, que debe ignorarse según la consigna.",
+    "tabla_cruda": [],
+    "minimo_predial": null,
+    "comentarios": "Art. 13 remite a valores unitarios de terreno y construcción; Art. 15 regula rentas/frutos civiles y se ignora. No se detecta una tabla de predial en cuotas o tasas sobre valor catastral apta para clasificación en las 6 variantes."
+  },
+  "_meta": {
+    "fuente": "txt",
+    "modelo": "gpt-5.4-mini"
+  },
+  "_meta_v2": {
+    "intentos": 1,
+    "requiere_revision": true,
+    "escalado": false,
+    "razon": "clasificado_como_otro_no_clasificado",
+    "tokens": {
+      "input": 6352,
+      "output": 201,
+      "cached": 3840
+    },
+    "cvegeo": "31078",
+    "estado": "yucatan",
+    "anio": 2010
+  }
+}

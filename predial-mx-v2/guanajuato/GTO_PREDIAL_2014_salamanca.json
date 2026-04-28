@@ -1,0 +1,51 @@
+{
+  "predial": {
+    "tipo_esquema": "tarifa_millar",
+    "tabla": [
+      {
+        "grupo": "urbano",
+        "clave": "urbano_con_construccion",
+        "descripcion": "Inmuebles urbanos y suburbanos con construcción, a la entrada en vigor de la presente Ley",
+        "tasa_millar": 0.0025,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "urbano",
+        "clave": "urbano_sin_construccion",
+        "descripcion": "Inmuebles urbanos y suburbanos sin construcción, a la entrada en vigor de la presente Ley",
+        "tasa_millar": 0.0046,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "rustico",
+        "clave": "rustico",
+        "descripcion": "Predios rústicos, a la entrada en vigor de la presente Ley",
+        "tasa_millar": 0.0026,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      }
+    ],
+    "minimo_predial": null,
+    "comentarios": "Art. 4 establece tasas anuales al millar por tipo de inmueble: urbano/suburbano con construcción 2.5 al millar, urbano/suburbano sin construcción 4.6 al millar y rústicos 2.6 al millar. También aparecen tasas para periodos anteriores (2002-2013, antes de 2002 y hasta 1993, y antes de 1993), pero la mecánica anual vigente para 2014 se toma de la primera fila del artículo. No se transcriben tablas de valores unitarios de los artículos 5 y 6 porque son catastro/avaluó, no mecánica del impuesto."
+  },
+  "_meta": {
+    "fuente": "txt",
+    "modelo": "gpt-5.4-mini"
+  },
+  "_meta_v2": {
+    "intentos": 1,
+    "requiere_revision": false,
+    "escalado": false,
+    "razon": null,
+    "tokens": {
+      "input": 7455,
+      "output": 361,
+      "cached": 3840
+    },
+    "cvegeo": "11027",
+    "estado": "guanajuato",
+    "anio": 2014
+  }
+}

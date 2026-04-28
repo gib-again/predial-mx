@@ -1,0 +1,67 @@
+{
+  "predial": {
+    "tipo_esquema": "tarifa_millar",
+    "tabla": [
+      {
+        "grupo": "urbano",
+        "clave": "predios_urbanos_con_edificaciones",
+        "descripcion": "Predios urbanos con edificaciones",
+        "tasa_millar": 0.0015,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "urbano",
+        "clave": "predios_suburbanos_con_edificaciones",
+        "descripcion": "Predios suburbanos con edificaciones",
+        "tasa_millar": 0.0015,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "rustico",
+        "clave": "predios_rusticos",
+        "descripcion": "Predios rústicos",
+        "tasa_millar": 0.0018,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "urbano",
+        "clave": "predios_urbanos_y_suburbanos_sin_edificaciones_baldios",
+        "descripcion": "Predios urbanos y suburbanos sin edificaciones (baldíos)",
+        "tasa_millar": 0.002,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "urbano",
+        "clave": "predios_urbanos_uso_industrial",
+        "descripcion": "Predios urbanos de uso industrial",
+        "tasa_millar": 0.002,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      }
+    ],
+    "minimo_predial": null,
+    "comentarios": "Art. 10 establece tasas al millar diferenciadas por tipo de predio sobre el valor catastral anual. No se identifican rangos de valor catastral ni cuota fija. Fracciones VII y VIII prevén un aumento del 100% para ciertos predios de fraccionamientos si no construyen o no se venden en plazo; se ignoran por tratarse de recargos/condiciones especiales y no de la mecánica base del cálculo. La fracción VI excluye a ciertos fraccionamientos autorizados de la tasa de baldíos, pero no configura una tarifa paralela estructural en la tabla principal."
+  },
+  "_meta": {
+    "fuente": "txt",
+    "modelo": "gpt-5.4-mini"
+  },
+  "_meta_v2": {
+    "intentos": 1,
+    "requiere_revision": false,
+    "escalado": false,
+    "razon": null,
+    "tokens": {
+      "input": 5352,
+      "output": 440,
+      "cached": 3840
+    },
+    "cvegeo": "28002",
+    "estado": "tamaulipas",
+    "anio": 2024
+  }
+}

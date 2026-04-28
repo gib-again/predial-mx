@@ -1,0 +1,51 @@
+{
+  "predial": {
+    "tipo_esquema": "tarifa_millar",
+    "tabla": [
+      {
+        "grupo": "urbano",
+        "clave": "con_edificacion",
+        "descripcion": "Inmuebles urbanos y suburbanos con edificaciones",
+        "tasa_millar": 0.0024,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "urbano",
+        "clave": "sin_edificacion",
+        "descripcion": "Inmuebles urbanos y suburbanos sin edificaciones",
+        "tasa_millar": 0.0045,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "rustico",
+        "clave": "general",
+        "descripcion": "Inmuebles rústicos",
+        "tasa_millar": 0.0018,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      }
+    ],
+    "minimo_predial": null,
+    "comentarios": "Art. 4: mecánica anual por tasas al millar según categoría de inmueble. Se transcriben las tasas visibles para inmuebles urbanos y suburbanos con edificaciones (2.4 al millar), sin edificaciones (4.5 al millar) e inmuebles rústicos (1.8 al millar). El texto OCR muestra otras referencias históricas en el mismo artículo, pero la estructura principal extraída es un catálogo categórico de tasas al millar. No se incorpora la tabla de valores unitarios de los artículos 5 y 6 porque corresponde a catastro/avalúos, no a la mecánica del impuesto."
+  },
+  "_meta": {
+    "fuente": "txt",
+    "modelo": "gpt-5.4-mini"
+  },
+  "_meta_v2": {
+    "intentos": 1,
+    "requiere_revision": false,
+    "escalado": false,
+    "razon": null,
+    "tokens": {
+      "input": 7258,
+      "output": 327,
+      "cached": 3840
+    },
+    "cvegeo": "11040",
+    "estado": "guanajuato",
+    "anio": 2014
+  }
+}

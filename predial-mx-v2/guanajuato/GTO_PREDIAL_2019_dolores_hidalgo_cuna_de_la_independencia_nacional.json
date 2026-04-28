@@ -1,0 +1,59 @@
+{
+  "predial": {
+    "tipo_esquema": "tarifa_millar",
+    "tabla": [
+      {
+        "grupo": "general",
+        "clave": "entrada_vigor",
+        "descripcion": "Inmuebles que cuenten con un valor determinado o modificado a la entrada en vigor de la presente ley",
+        "tasa_millar": 0.0024,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "general",
+        "clave": "entre_2002_y_2018",
+        "descripcion": "Inmuebles que cuenten con un valor determinado o modificado durante los años 2002 y hasta 2018, inclusive",
+        "tasa_millar": 0.0024,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "general",
+        "clave": "entre_1993_y_2001",
+        "descripcion": "Inmuebles que cuenten con un valor determinado o modificado con anterioridad al año 2002 y hasta 1993, inclusive",
+        "tasa_millar": 0.008,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "general",
+        "clave": "anterior_a_1993",
+        "descripcion": "Inmuebles que cuenten con un valor determinado o modificado con anterioridad al año 1993",
+        "tasa_millar": 0.013,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      }
+    ],
+    "minimo_predial": null,
+    "comentarios": "Art. 4: tasas anuales según antigüedad del valor catastral. El texto presenta además tarifas paralelas por tipo de inmueble: urbanos y suburbanos edificados 4.5 al millar (entrada en vigor y 2002-2018), 1.5 al millar (1993-2001) y 12 al millar (anterior a 1993); rústicos 1.8 al millar, 6 al millar, etc. No se integran en la tabla principal por coexistir como grupo tarifario paralelo dentro del mismo artículo. Se ignoran las tablas de valores unitarios de los artículos 5 y 6 por ser valuación catastral, no mecánica de cálculo."
+  },
+  "_meta": {
+    "fuente": "txt",
+    "modelo": "gpt-5.4-mini"
+  },
+  "_meta_v2": {
+    "intentos": 1,
+    "requiere_revision": false,
+    "escalado": false,
+    "razon": null,
+    "tokens": {
+      "input": 7428,
+      "output": 462,
+      "cached": 3840
+    },
+    "cvegeo": "11014",
+    "estado": "guanajuato",
+    "anio": 2019
+  }
+}

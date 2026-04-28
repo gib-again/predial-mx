@@ -1,0 +1,28 @@
+{
+  "predial": {
+    "tipo_esquema": "otro_no_clasificado",
+    "categoria": "segmento_vacio",
+    "descripcion_estructural": "El texto proporcionado no contiene la mecánica del impuesto predial; sólo aparece el encabezado del municipio, el monto estimado de ingreso por concepto de impuesto predial y páginas en blanco o sin contenido tarifario visible. No hay tablas, cuotas, tasas ni brackets para transcribir.",
+    "tabla_cruda": [],
+    "minimo_predial": null,
+    "comentarios": "No se detectó estructura tarifaria del predial en el segmento entregado."
+  },
+  "_meta": {
+    "fuente": "txt",
+    "modelo": "gpt-5.4-mini"
+  },
+  "_meta_v2": {
+    "intentos": 1,
+    "requiere_revision": true,
+    "escalado": false,
+    "razon": "clasificado_como_otro_no_clasificado",
+    "tokens": {
+      "input": 5941,
+      "output": 132,
+      "cached": 3840
+    },
+    "cvegeo": "11018",
+    "estado": "guanajuato",
+    "anio": 2024
+  }
+}

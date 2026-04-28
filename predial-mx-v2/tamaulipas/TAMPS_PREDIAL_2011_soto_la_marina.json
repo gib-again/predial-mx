@@ -1,0 +1,59 @@
+{
+  "predial": {
+    "tipo_esquema": "tarifa_millar",
+    "tabla": [
+      {
+        "grupo": "urbano",
+        "clave": "predios_urbanos_y_suburbanos",
+        "descripcion": "Predios urbanos y suburbanos",
+        "tasa_millar": 0.00225,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "urbano",
+        "clave": "predios_urbanos_no_edificados",
+        "descripcion": "Predios urbanos no edificados",
+        "tasa_millar": 0.00225,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "urbano",
+        "clave": "predios_urbanos_edificacion_inferior_a_quinta_parte",
+        "descripcion": "Predios urbanos cuya edificación tenga un valor inferior a la quinta parte del valor del terreno",
+        "tasa_millar": 0.00225,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "rustico",
+        "clave": "predios_rusticos",
+        "descripcion": "Predios rústicos sobre el valor catastral",
+        "tasa_millar": 0.001,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      }
+    ],
+    "minimo_predial": null,
+    "comentarios": "Art. 9: la mecánica es un catálogo de tasas al millar por tipo de predio. Para predios urbanos no edificados, la ley indica un aumento del 100% sobre la tasa del 2.25 al millar; para predios urbanos cuya edificación tenga un valor inferior a la quinta parte del valor del terreno, indica un aumento del 50%. Se transcriben como tarifas paralelas dentro del mismo catálogo sin incorporar el aumento como tasa separada. No se consideran descuentos, recargos ni bonificaciones."
+  },
+  "_meta": {
+    "fuente": "txt",
+    "modelo": "gpt-5.4-mini"
+  },
+  "_meta_v2": {
+    "intentos": 1,
+    "requiere_revision": false,
+    "escalado": false,
+    "razon": null,
+    "tokens": {
+      "input": 5285,
+      "output": 379,
+      "cached": 3840
+    },
+    "cvegeo": "28037",
+    "estado": "tamaulipas",
+    "anio": 2011
+  }
+}

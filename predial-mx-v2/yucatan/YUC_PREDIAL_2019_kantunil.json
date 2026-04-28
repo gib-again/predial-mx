@@ -1,0 +1,53 @@
+{
+  "predial": {
+    "tipo_esquema": "mixto",
+    "tabla": [
+      {
+        "n_rango": 1,
+        "inferior": 0.0,
+        "superior": 999999999.0,
+        "columnas": [
+          {
+            "nombre": "general",
+            "valor": 100.0,
+            "tipo": "cuota_fija",
+            "unidad": "pesos"
+          }
+        ]
+      },
+      {
+        "n_rango": 2,
+        "inferior": 1000000000.0,
+        "superior": null,
+        "columnas": [
+          {
+            "nombre": "general",
+            "valor": 50.0,
+            "tipo": "cuota_fija",
+            "unidad": "pesos"
+          }
+        ]
+      }
+    ],
+    "minimo_predial": null,
+    "comentarios": "Art. 13 contiene tarifas paralelas y heterogéneas: (1) cuota fija anual para predios urbanos ($100) y rústicos ($50), (2) tablas de valores unitarios de terrenos y construcciones, (3) tasa sobre valor catastral por secciones de 0.25%, y (4) predios agropecuarios a 10 al millar anual. Como el texto no presenta una tabla de predial con brackets contiguos válidos sino reglas separadas por base y tipo de predio, se clasifica como mixto/heterogéneo. No se transcriben las tablas de valores unitarios de catastro ni el impuesto sobre rentas/frutos civiles por estar fuera del predial sobre valor catastral."
+  },
+  "_meta": {
+    "fuente": "txt",
+    "modelo": "gpt-5.4-mini"
+  },
+  "_meta_v2": {
+    "intentos": 2,
+    "requiere_revision": false,
+    "escalado": false,
+    "razon": null,
+    "tokens": {
+      "input": 12668,
+      "output": 573,
+      "cached": 8704
+    },
+    "cvegeo": "31042",
+    "estado": "yucatan",
+    "anio": 2019
+  }
+}

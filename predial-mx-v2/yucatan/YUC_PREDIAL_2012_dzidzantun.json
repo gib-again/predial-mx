@@ -1,0 +1,28 @@
+{
+  "predial": {
+    "tipo_esquema": "otro_no_clasificado",
+    "categoria": "estructura_no_estandar",
+    "descripcion_estructural": "El texto no presenta una mecánica tarifaria estándar del impuesto predial clasificable en una de las seis variantes principales. La \"tabla\" visible corresponde a una tabla de valores de terreno por ubicación y una tabla de valores unitarios de construcción, es decir, insumos catastrales, no una tarifa de cálculo del impuesto. Aunque aparece una frase sobre aplicar un factor y sumar cuota fija anual, el segmento no proporciona una tabla completa de brackets o tasas del predial aprovechable sin inferencia.",
+    "tabla_cruda": [],
+    "minimo_predial": null,
+    "comentarios": "Se ignoraron descuentos y recargos. No hay una tabla tarifaria completa del impuesto predial en el texto proporcionado; lo observable es catastro (valores unitarios) y una referencia genérica a factor/cuota fija sin desglose."
+  },
+  "_meta": {
+    "fuente": "txt",
+    "modelo": "gpt-5.4-mini"
+  },
+  "_meta_v2": {
+    "intentos": 2,
+    "requiere_revision": true,
+    "escalado": false,
+    "razon": "clasificado_como_otro_no_clasificado",
+    "tokens": {
+      "input": 12137,
+      "output": 523,
+      "cached": 7680
+    },
+    "cvegeo": "31027",
+    "estado": "yucatan",
+    "anio": 2012
+  }
+}

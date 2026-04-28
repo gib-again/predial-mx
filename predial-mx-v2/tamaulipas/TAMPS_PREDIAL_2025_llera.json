@@ -1,0 +1,55 @@
+{
+  "predial": {
+    "tipo_esquema": "tarifa_millar",
+    "tabla": [
+      {
+        "grupo": "urbano",
+        "clave": "predios_urbanos_y_suburbanos",
+        "descripcion": "Predios urbanos y suburbanos",
+        "tasa_millar": 0.0015,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "urbano",
+        "clave": "predios_urbanos_con_edificacion_inferior_a_quinta_parte_del_terreno",
+        "descripcion": "Predios urbanos cuya edificación tenga un valor inferior a la quinta parte del valor del terreno; la tasa señalada se aumenta en 50%",
+        "tasa_millar": 0.00225,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "rustico",
+        "clave": "predios_rusticos",
+        "descripcion": "Predios rústicos sobre el valor catastral",
+        "tasa_millar": 0.0015,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      }
+    ],
+    "minimo_predial": {
+      "monto": 3.0,
+      "periodicidad": "anual",
+      "unidad": "uma"
+    },
+    "comentarios": "Art. 10: tarifa principal al millar sobre valor catastral para predios urbanos, suburbanos y rústicos. La fracción I establece un tratamiento específico para predios urbanos con edificación menor a la quinta parte del valor del terreno: la tasa del artículo se aumenta en 50% (1.5 al millar -> 2.25 al millar). La fracción III fija un mínimo anual de 3 UMA para predios urbanos y rústicos. No se transcriben descuentos ni bonificaciones."
+  },
+  "_meta": {
+    "fuente": "txt",
+    "modelo": "gpt-5.4-mini"
+  },
+  "_meta_v2": {
+    "intentos": 1,
+    "requiere_revision": false,
+    "escalado": false,
+    "razon": null,
+    "tokens": {
+      "input": 5193,
+      "output": 359,
+      "cached": 3840
+    },
+    "cvegeo": "28019",
+    "estado": "tamaulipas",
+    "anio": 2025
+  }
+}

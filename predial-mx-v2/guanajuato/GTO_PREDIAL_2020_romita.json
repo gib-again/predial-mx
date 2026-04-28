@@ -1,0 +1,274 @@
+{
+  "predial": {
+    "tipo_esquema": "mixto",
+    "tabla": [
+      {
+        "n_rango": 1,
+        "inferior": 0.01,
+        "superior": 100000.0,
+        "columnas": [
+          {
+            "nombre": "habitacional_con_edificaciones",
+            "valor": 280.49,
+            "tipo": "cuota_fija",
+            "unidad": "pesos"
+          },
+          {
+            "nombre": "general",
+            "valor": 0.00019,
+            "tipo": "tasa_porcentual",
+            "unidad": "porcentaje"
+          }
+        ]
+      },
+      {
+        "n_rango": 2,
+        "inferior": 100000.01,
+        "superior": 200000.0,
+        "columnas": [
+          {
+            "nombre": "habitacional_con_edificaciones",
+            "valor": 299.49,
+            "tipo": "cuota_fija",
+            "unidad": "pesos"
+          },
+          {
+            "nombre": "general",
+            "valor": 0.0024,
+            "tipo": "tasa_porcentual",
+            "unidad": "porcentaje"
+          }
+        ]
+      },
+      {
+        "n_rango": 3,
+        "inferior": 200000.01,
+        "superior": 350000.0,
+        "columnas": [
+          {
+            "nombre": "habitacional_con_edificaciones",
+            "valor": 539.49,
+            "tipo": "cuota_fija",
+            "unidad": "pesos"
+          },
+          {
+            "nombre": "general",
+            "valor": 0.00265,
+            "tipo": "tasa_porcentual",
+            "unidad": "porcentaje"
+          }
+        ]
+      },
+      {
+        "n_rango": 4,
+        "inferior": 350000.01,
+        "superior": 500000.0,
+        "columnas": [
+          {
+            "nombre": "habitacional_con_edificaciones",
+            "valor": 936.99,
+            "tipo": "cuota_fija",
+            "unidad": "pesos"
+          },
+          {
+            "nombre": "general",
+            "valor": 0.0029,
+            "tipo": "tasa_porcentual",
+            "unidad": "porcentaje"
+          }
+        ]
+      },
+      {
+        "n_rango": 5,
+        "inferior": 500000.01,
+        "superior": 700000.0,
+        "columnas": [
+          {
+            "nombre": "habitacional_con_edificaciones",
+            "valor": 1371.99,
+            "tipo": "cuota_fija",
+            "unidad": "pesos"
+          },
+          {
+            "nombre": "general",
+            "valor": 0.003,
+            "tipo": "tasa_porcentual",
+            "unidad": "porcentaje"
+          }
+        ]
+      },
+      {
+        "n_rango": 6,
+        "inferior": 700000.01,
+        "superior": 900000.0,
+        "columnas": [
+          {
+            "nombre": "habitacional_con_edificaciones",
+            "valor": 1971.99,
+            "tipo": "cuota_fija",
+            "unidad": "pesos"
+          },
+          {
+            "nombre": "general",
+            "valor": 0.00305,
+            "tipo": "tasa_porcentual",
+            "unidad": "porcentaje"
+          }
+        ]
+      },
+      {
+        "n_rango": 7,
+        "inferior": 900000.01,
+        "superior": 1200000.0,
+        "columnas": [
+          {
+            "nombre": "habitacional_con_edificaciones",
+            "valor": 2581.99,
+            "tipo": "cuota_fija",
+            "unidad": "pesos"
+          },
+          {
+            "nombre": "general",
+            "valor": 0.0031,
+            "tipo": "tasa_porcentual",
+            "unidad": "porcentaje"
+          }
+        ]
+      },
+      {
+        "n_rango": 8,
+        "inferior": 1200000.01,
+        "superior": 1500000.0,
+        "columnas": [
+          {
+            "nombre": "habitacional_con_edificaciones",
+            "valor": 3511.99,
+            "tipo": "cuota_fija",
+            "unidad": "pesos"
+          },
+          {
+            "nombre": "general",
+            "valor": 0.0031,
+            "tipo": "tasa_porcentual",
+            "unidad": "porcentaje"
+          }
+        ]
+      },
+      {
+        "n_rango": 9,
+        "inferior": 1500000.01,
+        "superior": 1800000.0,
+        "columnas": [
+          {
+            "nombre": "habitacional_con_edificaciones",
+            "valor": 4441.99,
+            "tipo": "cuota_fija",
+            "unidad": "pesos"
+          },
+          {
+            "nombre": "general",
+            "valor": 0.0031,
+            "tipo": "tasa_porcentual",
+            "unidad": "porcentaje"
+          }
+        ]
+      },
+      {
+        "n_rango": 10,
+        "inferior": 1800000.01,
+        "superior": 2100000.0,
+        "columnas": [
+          {
+            "nombre": "habitacional_con_edificaciones",
+            "valor": 5371.99,
+            "tipo": "cuota_fija",
+            "unidad": "pesos"
+          },
+          {
+            "nombre": "general",
+            "valor": 0.0031,
+            "tipo": "tasa_porcentual",
+            "unidad": "porcentaje"
+          }
+        ]
+      },
+      {
+        "n_rango": 11,
+        "inferior": 2100000.01,
+        "superior": 2500000.0,
+        "columnas": [
+          {
+            "nombre": "habitacional_con_edificaciones",
+            "valor": 6301.99,
+            "tipo": "cuota_fija",
+            "unidad": "pesos"
+          },
+          {
+            "nombre": "general",
+            "valor": 0.0031,
+            "tipo": "tasa_porcentual",
+            "unidad": "porcentaje"
+          }
+        ]
+      },
+      {
+        "n_rango": 12,
+        "inferior": 2500000.01,
+        "superior": 3000000.0,
+        "columnas": [
+          {
+            "nombre": "habitacional_con_edificaciones",
+            "valor": 7541.99,
+            "tipo": "cuota_fija",
+            "unidad": "pesos"
+          },
+          {
+            "nombre": "general",
+            "valor": 0.0031,
+            "tipo": "tasa_porcentual",
+            "unidad": "porcentaje"
+          }
+        ]
+      },
+      {
+        "n_rango": 13,
+        "inferior": 3000000.01,
+        "superior": null,
+        "columnas": [
+          {
+            "nombre": "habitacional_con_edificaciones",
+            "valor": 9091.99,
+            "tipo": "cuota_fija",
+            "unidad": "pesos"
+          },
+          {
+            "nombre": "general",
+            "valor": 0.0031,
+            "tipo": "tasa_porcentual",
+            "unidad": "porcentaje"
+          }
+        ]
+      }
+    ],
+    "minimo_predial": null,
+    "comentarios": "Art. 4, fracción I, inciso a) (inmuebles urbanos y suburbanos con edificaciones): tabla por rangos de valor fiscal con cuota fija en pesos y porcentaje sobre el excedente; es mixta porque combina cuota fija y tasa porcentual en cada bracket. Art. 4, fracción I, inciso b) y fracción II: para inmuebles urbanos y suburbanos sin edificaciones y para inmuebles rústicos la ley establece tarifas paralelas en al millar (4.5/15/13 al millar para urbanos-suburbanos; 1.8/6/12 al millar para rústicos), no integradas en la tabla principal por tratarse de estructuras paralelas por tipo de inmueble. Se omiten valores unitarios de catastro de los arts. 5 y 6 por no ser mecánica de cálculo del impuesto."
+  },
+  "_meta": {
+    "fuente": "txt",
+    "modelo": "gpt-5.4-mini"
+  },
+  "_meta_v2": {
+    "intentos": 1,
+    "requiere_revision": false,
+    "escalado": false,
+    "razon": null,
+    "tokens": {
+      "input": 7793,
+      "output": 1229,
+      "cached": 3840
+    },
+    "cvegeo": "11026",
+    "estado": "guanajuato",
+    "anio": 2020
+  }
+}

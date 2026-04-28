@@ -1,0 +1,255 @@
+{
+  "predial": {
+    "tipo_esquema": "mixto",
+    "tabla": [
+      {
+        "n_rango": 1,
+        "inferior": 500.0,
+        "superior": 10000.0,
+        "columnas": [
+          {
+            "nombre": "general",
+            "valor": 150.0,
+            "tipo": "cuota_fija",
+            "unidad": "pesos"
+          },
+          {
+            "nombre": "general",
+            "valor": 0.01064,
+            "tipo": "tasa_marginal",
+            "unidad": "porcentaje"
+          }
+        ]
+      },
+      {
+        "n_rango": 2,
+        "inferior": 10001.0,
+        "superior": 50000.0,
+        "columnas": [
+          {
+            "nombre": "general",
+            "valor": 155.0,
+            "tipo": "cuota_fija",
+            "unidad": "pesos"
+          },
+          {
+            "nombre": "general",
+            "valor": 0.00285,
+            "tipo": "tasa_marginal",
+            "unidad": "porcentaje"
+          }
+        ]
+      },
+      {
+        "n_rango": 3,
+        "inferior": 50001.0,
+        "superior": 100000.0,
+        "columnas": [
+          {
+            "nombre": "general",
+            "valor": 158.0,
+            "tipo": "cuota_fija",
+            "unidad": "pesos"
+          },
+          {
+            "nombre": "general",
+            "valor": 0.00251,
+            "tipo": "tasa_marginal",
+            "unidad": "porcentaje"
+          }
+        ]
+      },
+      {
+        "n_rango": 4,
+        "inferior": 100001.0,
+        "superior": 150000.0,
+        "columnas": [
+          {
+            "nombre": "general",
+            "valor": 162.0,
+            "tipo": "cuota_fija",
+            "unidad": "pesos"
+          },
+          {
+            "nombre": "general",
+            "valor": 0.00244,
+            "tipo": "tasa_marginal",
+            "unidad": "porcentaje"
+          }
+        ]
+      },
+      {
+        "n_rango": 5,
+        "inferior": 150001.0,
+        "superior": 200000.0,
+        "columnas": [
+          {
+            "nombre": "general",
+            "valor": 157.0,
+            "tipo": "cuota_fija",
+            "unidad": "pesos"
+          },
+          {
+            "nombre": "general",
+            "valor": 0.00335,
+            "tipo": "tasa_marginal",
+            "unidad": "porcentaje"
+          }
+        ]
+      },
+      {
+        "n_rango": 6,
+        "inferior": 200001.0,
+        "superior": 250000.0,
+        "columnas": [
+          {
+            "nombre": "general",
+            "valor": 182.0,
+            "tipo": "cuota_fija",
+            "unidad": "pesos"
+          },
+          {
+            "nombre": "general",
+            "valor": 0.00292,
+            "tipo": "tasa_marginal",
+            "unidad": "porcentaje"
+          }
+        ]
+      },
+      {
+        "n_rango": 7,
+        "inferior": 250001.0,
+        "superior": 300000.0,
+        "columnas": [
+          {
+            "nombre": "general",
+            "valor": 155.0,
+            "tipo": "cuota_fija",
+            "unidad": "pesos"
+          },
+          {
+            "nombre": "general",
+            "valor": 0.00349,
+            "tipo": "tasa_marginal",
+            "unidad": "porcentaje"
+          }
+        ]
+      },
+      {
+        "n_rango": 8,
+        "inferior": 300001.0,
+        "superior": 500000.0,
+        "columnas": [
+          {
+            "nombre": "general",
+            "valor": 160.0,
+            "tipo": "cuota_fija",
+            "unidad": "pesos"
+          },
+          {
+            "nombre": "general",
+            "valor": 0.00091,
+            "tipo": "tasa_marginal",
+            "unidad": "porcentaje"
+          }
+        ]
+      },
+      {
+        "n_rango": 9,
+        "inferior": 500001.0,
+        "superior": 750000.0,
+        "columnas": [
+          {
+            "nombre": "general",
+            "valor": 172.0,
+            "tipo": "cuota_fija",
+            "unidad": "pesos"
+          },
+          {
+            "nombre": "general",
+            "valor": 0.00069,
+            "tipo": "tasa_marginal",
+            "unidad": "porcentaje"
+          }
+        ]
+      },
+      {
+        "n_rango": 10,
+        "inferior": 750001.0,
+        "superior": 1000000.0,
+        "columnas": [
+          {
+            "nombre": "general",
+            "valor": 170.0,
+            "tipo": "cuota_fija",
+            "unidad": "pesos"
+          },
+          {
+            "nombre": "general",
+            "valor": 0.00072,
+            "tipo": "tasa_marginal",
+            "unidad": "porcentaje"
+          }
+        ]
+      },
+      {
+        "n_rango": 11,
+        "inferior": 1000001.0,
+        "superior": 2000000.0,
+        "columnas": [
+          {
+            "nombre": "general",
+            "valor": 190.0,
+            "tipo": "cuota_fija",
+            "unidad": "pesos"
+          },
+          {
+            "nombre": "general",
+            "valor": 0.00016,
+            "tipo": "tasa_marginal",
+            "unidad": "porcentaje"
+          }
+        ]
+      },
+      {
+        "n_rango": 12,
+        "inferior": 2000001.0,
+        "superior": null,
+        "columnas": [
+          {
+            "nombre": "general",
+            "valor": 300.0,
+            "tipo": "cuota_fija",
+            "unidad": "pesos"
+          },
+          {
+            "nombre": "general",
+            "valor": 0.00018,
+            "tipo": "tasa_marginal",
+            "unidad": "porcentaje"
+          }
+        ]
+      }
+    ],
+    "minimo_predial": null,
+    "comentarios": "Art. 4 establece una tasa del 2% sobre el valor catastral como impuesto patrimonial/base distinta; Art. 9 establece tasas sobre rentas o frutos civiles: 3% casa-habitación y 5% predios comerciales, se omiten por ser una base distinta al predial sobre valor catastral. La tabla del Art. 10 es mixta porque cada bracket combina cuota fija anual en pesos y factor/tasa sobre el excedente del límite inferior; se transcribe como mezcla de cuota fija + tasa marginal por rango. Se ignoran descuentos, recargos y bonificaciones."
+  },
+  "_meta": {
+    "fuente": "txt",
+    "modelo": "gpt-5.4-mini"
+  },
+  "_meta_v2": {
+    "intentos": 1,
+    "requiere_revision": false,
+    "escalado": false,
+    "razon": null,
+    "tokens": {
+      "input": 7523,
+      "output": 990,
+      "cached": 3840
+    },
+    "cvegeo": "31058",
+    "estado": "yucatan",
+    "anio": 2018
+  }
+}

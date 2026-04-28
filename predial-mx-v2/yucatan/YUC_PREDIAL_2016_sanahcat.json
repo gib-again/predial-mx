@@ -1,0 +1,28 @@
+{
+  "predial": {
+    "tipo_esquema": "otro_no_clasificado",
+    "categoria": "municipio_sin_impuesto",
+    "descripcion_estructural": "El texto no presenta una tabla tarifaria por rangos ni un esquema clasificable en las variantes esperadas. Sólo se lee una regla general: '15 centavos por m2' y, para predios destinados a producción agropecuaria, '10 al millar anual sobre el valor registrado o catastral'. No hay estructura de brackets, categorías tarifarias comparables ni una tabla desarrollable en cuota fija/progresiva/tasa única.",
+    "tabla_cruda": [],
+    "minimo_predial": null,
+    "comentarios": "Se omitió el descuento del artículo 14 por instrucción. La referencia a predios agropecuarios constituye una tarifa paralela sobre un grupo distinto, pero el fragmento no aporta una tabla estructurada para clasificarla en las seis variantes principales."
+  },
+  "_meta": {
+    "fuente": "txt",
+    "modelo": "gpt-5.4-mini"
+  },
+  "_meta_v2": {
+    "intentos": 2,
+    "requiere_revision": true,
+    "escalado": false,
+    "razon": "clasificado_como_otro_no_clasificado",
+    "tokens": {
+      "input": 10796,
+      "output": 497,
+      "cached": 8704
+    },
+    "cvegeo": "31064",
+    "estado": "yucatan",
+    "anio": 2016
+  }
+}

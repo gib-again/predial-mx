@@ -1,0 +1,47 @@
+{
+  "predial": {
+    "tipo_esquema": "tarifa_millar",
+    "tabla": [
+      {
+        "grupo": "urbano",
+        "clave": "predios_urbanos",
+        "descripcion": "Sobre los predios urbanos",
+        "tasa_millar": 0.005,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "rustico",
+        "clave": "predios_rusticos",
+        "descripcion": "Sobre los predios rústicos",
+        "tasa_millar": 0.003,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      }
+    ],
+    "minimo_predial": {
+      "monto": 104.0,
+      "periodicidad": "anual",
+      "unidad": "pesos"
+    },
+    "comentarios": "Art. 2: tarifa predial por categoría de predio con tasas al millar anuales: predios urbanos 5% al millar y predios rústicos 3% al millar. Además establece un mínimo anual de $104.00. Se ignoran incentivos, descuentos y exenciones por no formar parte de la mecánica de cálculo base."
+  },
+  "_meta": {
+    "fuente": "txt",
+    "modelo": "gpt-5.4-mini"
+  },
+  "_meta_v2": {
+    "intentos": 1,
+    "requiere_revision": false,
+    "escalado": false,
+    "razon": null,
+    "tokens": {
+      "input": 5431,
+      "output": 230,
+      "cached": 3840
+    },
+    "cvegeo": "05029",
+    "estado": "coahuila",
+    "anio": 2016
+  }
+}

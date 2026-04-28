@@ -1,0 +1,55 @@
+{
+  "predial": {
+    "tipo_esquema": "tarifa_millar",
+    "tabla": [
+      {
+        "grupo": "urbano",
+        "clave": "tekax",
+        "descripcion": "Predios urbanos ubicados en Tekax",
+        "tasa_millar": 0.0005,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "urbano",
+        "clave": "comisarias",
+        "descripcion": "Predios urbanos ubicados en Comisarías",
+        "tasa_millar": 0.00045,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "rustico",
+        "clave": "rustico",
+        "descripcion": "Predios rústicos",
+        "tasa_millar": 0.0004,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      }
+    ],
+    "minimo_predial": {
+      "monto": 30.0,
+      "periodicidad": "anual",
+      "unidad": "pesos"
+    },
+    "comentarios": "Art. 14: tarifa anual sobre valor catastral para predios urbanos en Tekax (0.00050), urbanos en Comisarías (0.00045) y rústicos (0.00040). Art. 16 establece una tarifa paralela sobre rentas o frutos civiles mensuales (3.5% casas habitación, 5.0% predios comerciales), por lo que no se integra en la tabla principal. La tabla de valores unitarios de terreno y construcción se omite por ser catastro, no tarifa del impuesto."
+  },
+  "_meta": {
+    "fuente": "txt",
+    "modelo": "gpt-5.4-mini"
+  },
+  "_meta_v2": {
+    "intentos": 2,
+    "requiere_revision": false,
+    "escalado": false,
+    "razon": null,
+    "tokens": {
+      "input": 11663,
+      "output": 676,
+      "cached": 8704
+    },
+    "cvegeo": "31079",
+    "estado": "yucatan",
+    "anio": 2010
+  }
+}

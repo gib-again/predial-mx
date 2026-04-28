@@ -1,0 +1,59 @@
+{
+  "predial": {
+    "tipo_esquema": "tarifa_millar",
+    "tabla": [
+      {
+        "grupo": "urbano",
+        "clave": "predios_urbanos_suburbanos_comerciales_industriales_servicios",
+        "descripcion": "Predios urbanos y suburbanos con edificaciones comerciales, industriales o de servicios",
+        "tasa_millar": 0.003,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "urbano",
+        "clave": "predios_urbanos_habitacionales",
+        "descripcion": "Predios urbanos con edificaciones habitacionales",
+        "tasa_millar": 0.002,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "rustico",
+        "clave": "predios_rusticos",
+        "descripcion": "Predios rústicos",
+        "tasa_millar": 0.0007,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "otro",
+        "clave": "instituciones_asociaciones_sociales",
+        "descripcion": "Predios de instituciones o asociaciones sociales constituidas para la atención de grupos vulnerables, de personas en extrema pobreza, en rehabilitación y similares",
+        "tasa_millar": 0.0,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      }
+    ],
+    "minimo_predial": null,
+    "comentarios": "Art. 9 fracciones I, II, III y IV: tasas anuales al millar sobre valor catastral para distintas clases de predio. Fracción V repite 3.0 al millar para predios urbanos sin edificaciones (baldíos), pero no se incorpora como fila separada porque ya existe tarifa principal por categoría; fracciones VIII, IX, X y XI establecen aumentos del 100% o 50% sobre la tasa de la fracción II para ciertos supuestos de baldíos o baja construcción, y XII ordena aplicar la tarifa de la fracción I en casos de variaciones detectadas en el valor catastral. Se omiten descuentos, recargos y bonificaciones."
+  },
+  "_meta": {
+    "fuente": "txt",
+    "modelo": "gpt-5.4-mini"
+  },
+  "_meta_v2": {
+    "intentos": 1,
+    "requiere_revision": false,
+    "escalado": false,
+    "razon": null,
+    "tokens": {
+      "input": 5897,
+      "output": 427,
+      "cached": 3840
+    },
+    "cvegeo": "28033",
+    "estado": "tamaulipas",
+    "anio": 2020
+  }
+}

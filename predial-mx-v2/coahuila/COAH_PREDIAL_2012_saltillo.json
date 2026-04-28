@@ -1,0 +1,63 @@
+{
+  "predial": {
+    "tipo_esquema": "tarifa_millar",
+    "tabla": [
+      {
+        "grupo": "urbano",
+        "clave": "predios_urbanos_con_edificacion",
+        "descripcion": "Predios urbanos con edificación (no se considera edificación las bardas, cercas o casetas)",
+        "tasa_millar": 1.5,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "urbano",
+        "clave": "predios_urbanos_sin_edificacion",
+        "descripcion": "Predios urbanos sin edificaciones (no se considera edificación las bardas, cercas o casetas)",
+        "tasa_millar": 1.8,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "urbano",
+        "clave": "predios_urbanos_sin_edificacion_contiguos_a_bulevares_avenidas_principales_fuera_de_uso_habitacional",
+        "descripcion": "Predios urbanos sin edificaciones contiguos a los bulevares, avenidas principales, fuera de uso habitacional",
+        "tasa_millar": 2.1,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "rustico",
+        "clave": "predios_rusticos_y_extraccion_ejidal_titulados",
+        "descripcion": "Predios rústicos y predios de extracción ejidal ya titulados",
+        "tasa_millar": 5.0,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      }
+    ],
+    "minimo_predial": {
+      "monto": 21.0,
+      "periodicidad": "bimestral",
+      "unidad": "pesos"
+    },
+    "comentarios": "Art. 2: la base es el valor catastral. Se establecen tarifas paralelas por tipo de predio: predios urbanos con edificación 1.5 al millar; urbanos sin edificación 1.8 al millar; urbanos sin edificación contiguos a bulevares/avenidas principales y fuera de uso habitacional 2.1 al millar; rústicos y de extracción ejidal ya titulados 5 al millar. Se ignoran estímulos, descuentos y bonificaciones. El mínimo predial es de $21.00 por bimestre ($126.00 anual)."
+  },
+  "_meta": {
+    "fuente": "txt",
+    "modelo": "gpt-5.4-mini"
+  },
+  "_meta_v2": {
+    "intentos": 1,
+    "requiere_revision": false,
+    "escalado": false,
+    "razon": null,
+    "tokens": {
+      "input": 5685,
+      "output": 478,
+      "cached": 3840
+    },
+    "cvegeo": "05030",
+    "estado": "coahuila",
+    "anio": 2012
+  }
+}

@@ -1,0 +1,47 @@
+{
+  "predial": {
+    "tipo_esquema": "tarifa_millar",
+    "tabla": [
+      {
+        "grupo": "urbano",
+        "clave": "predios_urbanos",
+        "descripcion": "Sobre los predios urbanos",
+        "tasa_millar": 0.005,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "rustico",
+        "clave": "predios_rusticos",
+        "descripcion": "Sobre los predios rústicos",
+        "tasa_millar": 0.003,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      }
+    ],
+    "minimo_predial": {
+      "monto": 45.45,
+      "periodicidad": "bimestral",
+      "unidad": "pesos"
+    },
+    "comentarios": "Art. 2 fraccs. I y II: predios urbanos pagan 5 al millar anual sobre valor catastral; predios rústicos 3 al millar anual sobre valor catastral. Art. 2 fracc. III establece un mínimo predial de $45.45 por bimestre. Se ignoran los incentivos y bonificaciones de las fracciones IV, V, VI, VII y VIII por indicación expresa de la tarea."
+  },
+  "_meta": {
+    "fuente": "txt",
+    "modelo": "gpt-5.4-mini"
+  },
+  "_meta_v2": {
+    "intentos": 1,
+    "requiere_revision": false,
+    "escalado": false,
+    "razon": null,
+    "tokens": {
+      "input": 5611,
+      "output": 254,
+      "cached": 3840
+    },
+    "cvegeo": "05021",
+    "estado": "coahuila",
+    "anio": 2023
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "predial": {
+    "tipo_esquema": "otro_no_clasificado",
+    "categoria": "estructura_no_estandar",
+    "descripcion_estructural": "El texto no presenta una tabla tarifaria única del predial en forma de tarifa_millar, progresivo, tasa_unica, cuota_fija_simple, cuota_fija_escalonada o mixto. La mecánica principal es una fórmula general: valor catastral por 0.00025, con una cuota fija de $50.00 si el valor catastral es menor o igual a $200,000.00; además, el artículo 14 introduce topes de incremento respecto del ejercicio anterior. La mecánica de cálculo queda combinada con una regla de cuota fija por umbral y un factor general, pero no se estructura como un esquema estándar de brackets o tarifas categóricas.",
+    "tabla_cruda": [
+      {
+        "descripcion": "Valor catastral general",
+        "valores": "monto = valor_catastral * 0.00025"
+      },
+      {
+        "descripcion": "Cuota fija si el valor catastral es menor o igual a 200,000.00",
+        "valores": "cuota = 50.00"
+      },
+      {
+        "descripcion": "Tope de incremento para predios con valor catastral <= 200,000.00",
+        "valores": "no podrá exceder 6% del impuesto del ejercicio inmediato anterior"
+      },
+      {
+        "descripcion": "Tope de incremento para predios con valor catastral >= 200,000.01",
+        "valores": "no podrá exceder 10% del impuesto del ejercicio inmediato anterior"
+      }
+    ],
+    "minimo_predial": null,
+    "comentarios": "La tabla incluida en el texto corresponde a valores unitarios de terreno y construcción (catastro), no a una tarifa del impuesto. Por eso no se clasifica en las variantes estándar de mecánica tarifaria."
+  },
+  "_meta": {
+    "fuente": "txt",
+    "modelo": "gpt-5.4-mini"
+  },
+  "_meta_v2": {
+    "intentos": 1,
+    "requiere_revision": true,
+    "escalado": false,
+    "razon": "clasificado_como_otro_no_clasificado",
+    "tokens": {
+      "input": 6215,
+      "output": 381,
+      "cached": 3840
+    },
+    "cvegeo": "31043",
+    "estado": "yucatan",
+    "anio": 2023
+  }
+}

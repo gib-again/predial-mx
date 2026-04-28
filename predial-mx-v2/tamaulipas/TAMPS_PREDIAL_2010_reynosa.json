@@ -1,0 +1,111 @@
+{
+  "predial": {
+    "tipo_esquema": "tarifa_millar",
+    "tabla": [
+      {
+        "grupo": "urbano",
+        "clave": "habitacional_residencial",
+        "descripcion": "Habitacional Residencial",
+        "tasa_millar": 0.0017,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "urbano",
+        "clave": "comercio_y_oficinas",
+        "descripcion": "Comercio y Oficinas",
+        "tasa_millar": 0.002,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "urbano",
+        "clave": "espectaculos_y_entretenimiento",
+        "descripcion": "Dedicados al Servicio de Espectáculos y Entretenimiento",
+        "tasa_millar": 0.002,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "urbano",
+        "clave": "hoteles_moteles_hospitales",
+        "descripcion": "Hoteles, Moteles y Hospitales",
+        "tasa_millar": 0.002,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "urbano",
+        "clave": "escuelas_templos_gubernamentales",
+        "descripcion": "Escuelas, Templos Religiosos, Edificios u Oficinas Gubernamentales",
+        "tasa_millar": 0.002,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "urbano",
+        "clave": "predios_urbanos_sin_edificaciones_contiguos_bulevares_avenidas_principales",
+        "descripcion": "Predios urbanos sin edificaciones contiguos a los bulevares y avenidas principales",
+        "tasa_millar": 0.002,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "otro",
+        "clave": "industrial_y_otros",
+        "descripcion": "Industrial y otros",
+        "tasa_millar": 0.0029,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "rustico",
+        "clave": "predio_rustico",
+        "descripcion": "Predios rústico",
+        "tasa_millar": 0.0015,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "otro",
+        "clave": "casas_hogar_o_predios_filantropicos",
+        "descripcion": "Las casas hogar o predios con fines filantrópicos, dedicados a la atención de la orfandad",
+        "tasa_millar": 0.00025,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "urbano",
+        "clave": "predios_no_edificados_habitacional_residencial",
+        "descripcion": "Predios no edificados, cuyo destino de uso de suelo sea habitacional residencial (aumentado en 100%)",
+        "tasa_millar": 0.0034,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      }
+    ],
+    "minimo_predial": {
+      "monto": 3.0,
+      "periodicidad": "anual",
+      "unidad": "vsm"
+    },
+    "comentarios": "Art. 9: impuesto predial sobre valor catastral con tarifas diferenciadas por destino de uso de suelo. Se transcribe la mecánica como tarifa_millar porque son categorías sin rangos de valor catastral. La fracción X establece que los predios no edificados de uso habitacional residencial causan el impuesto aumentado en 100%, por lo que se registra la tasa duplicada (1.7 al millar -> 3.4 al millar). Mínimo predial: no podrá ser inferior en ningún caso a 3 salarios mínimos. La frase '3 millar' en Comercio y Oficinas se normaliza a 2.0 al millar por contexto del artículo."
+  },
+  "_meta": {
+    "fuente": "txt",
+    "modelo": "gpt-5.4-mini"
+  },
+  "_meta_v2": {
+    "intentos": 1,
+    "requiere_revision": false,
+    "escalado": false,
+    "razon": null,
+    "tokens": {
+      "input": 6480,
+      "output": 783,
+      "cached": 3840
+    },
+    "cvegeo": "28032",
+    "estado": "tamaulipas",
+    "anio": 2010
+  }
+}

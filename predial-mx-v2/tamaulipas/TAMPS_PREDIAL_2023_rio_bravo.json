@@ -1,0 +1,67 @@
+{
+  "predial": {
+    "tipo_esquema": "tarifa_millar",
+    "tabla": [
+      {
+        "grupo": "urbano",
+        "clave": "urbano_comercial_industrial_servicios",
+        "descripcion": "Predios urbanos y suburbanos con edificaciones comerciales, industriales o de servicios",
+        "tasa_millar": 0.003,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "urbano",
+        "clave": "urbano_habitacional",
+        "descripcion": "Predios urbanos con edificaciones habitacionales",
+        "tasa_millar": 0.002,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "rustico",
+        "clave": "rustico",
+        "descripcion": "Predios rústicos",
+        "tasa_millar": 0.0007,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "otro",
+        "clave": "instituciones_asociaciones_sociales",
+        "descripcion": "Predios de instituciones o asociaciones sociales para atención de grupos vulnerables, personas en extrema pobreza, en rehabilitación y similares",
+        "tasa_millar": 0.0,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "urbano",
+        "clave": "urbano_baldio",
+        "descripcion": "Predios urbanos sin edificaciones (baldíos)",
+        "tasa_millar": 0.003,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      }
+    ],
+    "minimo_predial": null,
+    "comentarios": "Art. 9 establece tasas anuales sobre valor catastral por tipo de inmueble: I) urbanos/suburbanos comerciales, industriales o de servicios 3.0 al millar; II) urbanos habitacionales 2.0 al millar; III) rústicos 0.7 al millar; IV) instituciones o asociaciones sociales 0.0 al millar; V) baldíos 3.0 al millar. Las fracciones VI a XII describen reglas de incremento sobre la tasa de la fracción II para ciertos supuestos (baldíos, construcciones menores a 20%, fraccionamientos, variaciones catastrales), sin presentarse como una tabla separada en el texto proporcionado. No se incluyen descuentos, recargos ni bonificaciones."
+  },
+  "_meta": {
+    "fuente": "txt",
+    "modelo": "gpt-5.4-mini"
+  },
+  "_meta_v2": {
+    "intentos": 1,
+    "requiere_revision": false,
+    "escalado": false,
+    "razon": null,
+    "tokens": {
+      "input": 5881,
+      "output": 475,
+      "cached": 3840
+    },
+    "cvegeo": "28033",
+    "estado": "tamaulipas",
+    "anio": 2023
+  }
+}

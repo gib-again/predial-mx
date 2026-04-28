@@ -1,0 +1,33 @@
+{
+  "predial": {
+    "tipo_esquema": "tasa_unica",
+    "tabla": [
+      {
+        "descripcion": "Impuesto predial sobre el valor catastral",
+        "tasa": 0.002,
+        "base_calculo": "valor_catastral",
+        "unidad": "porcentaje"
+      }
+    ],
+    "minimo_predial": null,
+    "comentarios": "Artículo 13 establece una tasa del 0.20 % sobre el valor catastral. El mismo artículo señala que cuando no se pudiera determinar el valor catastral se cobrará cuota fija: predio urbano 50.00 pesos y predio rústico 30.00 pesos; esas cuotas no se incluyen en la tabla principal por ser supletorias cuando no se pueda determinar la base. Artículo 15 establece una tarifa paralela para predios destinados a la producción agropecuaria de 10 al millar anual sobre el valor registrado o catastral; no se incluye en la tabla principal por ser tarifa separada para un grupo específico. Se ignoran las tablas de valores unitarios de terreno y construcción del artículo 14 y el impuesto sobre rentas o frutos civiles."
+  },
+  "_meta": {
+    "fuente": "txt",
+    "modelo": "gpt-5.4"
+  },
+  "_meta_v2": {
+    "intentos": 3,
+    "requiere_revision": false,
+    "escalado": true,
+    "razon": "escalado_a_gpt-5.4_tras_2x_mini_fallido",
+    "tokens": {
+      "input": 19182,
+      "output": 832,
+      "cached": 13568
+    },
+    "cvegeo": "31105",
+    "estado": "yucatan",
+    "anio": 2019
+  }
+}

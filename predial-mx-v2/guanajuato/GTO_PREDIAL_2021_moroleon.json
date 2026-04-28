@@ -1,0 +1,69 @@
+{
+  "predial": {
+    "tipo_esquema": "progresivo",
+    "tabla": [
+      {
+        "n_rango": 1,
+        "inferior": 0.01,
+        "superior": 139981.64,
+        "cuota_fija": 0.0,
+        "tasa_marginal": 0.0024
+      },
+      {
+        "n_rango": 2,
+        "inferior": 139981.65,
+        "superior": 300000.0,
+        "cuota_fija": 335.95,
+        "tasa_marginal": 0.00255
+      },
+      {
+        "n_rango": 3,
+        "inferior": 300000.01,
+        "superior": 600000.0,
+        "cuota_fija": 692.9,
+        "tasa_marginal": 0.0027
+      },
+      {
+        "n_rango": 4,
+        "inferior": 600000.01,
+        "superior": 1200000.0,
+        "cuota_fija": 1502.9,
+        "tasa_marginal": 0.00285
+      },
+      {
+        "n_rango": 5,
+        "inferior": 1200000.01,
+        "superior": 2400000.0,
+        "cuota_fija": 3212.9,
+        "tasa_marginal": 0.003
+      },
+      {
+        "n_rango": 6,
+        "inferior": 2400000.01,
+        "superior": null,
+        "cuota_fija": 6812.9,
+        "tasa_marginal": 0.00315
+      }
+    ],
+    "minimo_predial": null,
+    "comentarios": "Art. 4, fracción IV: para inmuebles urbanos y suburbanos con edificaciones, y de forma paralela para urbanos y suburbanos sin edificaciones y para rústicos, la ley establece tablas de valor fiscal con cuota fija más tasa marginal. Se transcriben como tarifa principal por brackets. Tarifas paralelas no incluidas en la tabla principal: (a) urbanos/suburbanos sin edificaciones: 0.00450, 0.00465, 0.00480, 0.00495, 0.00510, 0.00525; (b) rústicos: 0.00180, 0.00195, 0.00210, 0.00225, 0.00240, 0.00255. Art. 4 fracción IV también menciona supuestos históricos con tasas al millar (8, 15, 6, 13, 12) para inmuebles con valores anteriores a 2002/1993, tratados como tarifa paralela y no mezclados en la tabla principal."
+  },
+  "_meta": {
+    "fuente": "txt",
+    "modelo": "gpt-5.4-mini"
+  },
+  "_meta_v2": {
+    "intentos": 1,
+    "requiere_revision": false,
+    "escalado": false,
+    "razon": null,
+    "tokens": {
+      "input": 8160,
+      "output": 513,
+      "cached": 3840
+    },
+    "cvegeo": "11021",
+    "estado": "guanajuato",
+    "anio": 2021
+  }
+}

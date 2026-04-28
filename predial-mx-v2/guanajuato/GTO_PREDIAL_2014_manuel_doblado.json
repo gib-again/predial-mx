@@ -1,0 +1,59 @@
+{
+  "predial": {
+    "tipo_esquema": "tarifa_millar",
+    "tabla": [
+      {
+        "grupo": "general",
+        "clave": "entrada_en_vigor",
+        "descripcion": "A la entrada en vigor de la presente ley",
+        "tasa_millar": 0.00167,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "general",
+        "clave": "anios_2002_a_2013",
+        "descripcion": "Durante los años 2002 y hasta 2013 inclusive",
+        "tasa_millar": 0.00167,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "general",
+        "clave": "anterior_1993_hasta_1993",
+        "descripcion": "Con anterioridad al año 2002 y hasta 1993 inclusive",
+        "tasa_millar": 0.006,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "general",
+        "clave": "anterior_1993",
+        "descripcion": "Con anterioridad al año de 1993",
+        "tasa_millar": 0.012,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      }
+    ],
+    "minimo_predial": null,
+    "comentarios": "Art. 4: se transcribe la mecánica por fechas de valuación con tres grupos de inmuebles en paralelo: urbanos/suburbanos con y sin edificaciones, y rústicos. Para inmuebles urbanos y suburbanos: con edificaciones pagan 1.67 al millar en los supuestos de las dos primeras filas y 6 al millar / 12 al millar en las dos últimas; sin edificaciones pagan 2.23 al millar en las dos primeras filas y 8 al millar / 13 al millar en las dos últimas; rústicos pagan 4.18 al millar en las dos primeras filas y 15 al millar / 12 al millar en las dos últimas. No se incluyen los valores unitarios de los artículos 5 y 6 porque son tablas de catastro, no de cálculo del impuesto."
+  },
+  "_meta": {
+    "fuente": "txt",
+    "modelo": "gpt-5.4-mini"
+  },
+  "_meta_v2": {
+    "intentos": 1,
+    "requiere_revision": false,
+    "escalado": false,
+    "razon": null,
+    "tokens": {
+      "input": 7348,
+      "output": 437,
+      "cached": 3840
+    },
+    "cvegeo": "11008",
+    "estado": "guanajuato",
+    "anio": 2014
+  }
+}

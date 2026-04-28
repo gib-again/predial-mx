@@ -1,0 +1,47 @@
+{
+  "predial": {
+    "tipo_esquema": "tarifa_millar",
+    "tabla": [
+      {
+        "grupo": "urbano",
+        "clave": "urbano_con_o_sin_edificacion",
+        "descripcion": "Predios urbanos, con o sin edificación",
+        "tasa_millar": 0.004,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "rustico",
+        "clave": "rustico_y_ejidal_titulado",
+        "descripcion": "Predios rústicos y predios de extracción ejidal ya titulados, con o sin edificación",
+        "tasa_millar": 0.004,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      }
+    ],
+    "minimo_predial": {
+      "monto": 279.0,
+      "periodicidad": "anual",
+      "unidad": "pesos"
+    },
+    "comentarios": "Art. 2.A.I-II: el impuesto se determina multiplicando el valor catastral actualizado por una tasa de 4 al millar anual para predios urbanos (con o sin edificación) y para predios rústicos y de extracción ejidal ya titulados (con o sin edificación). Art. 2.A.III: mínimo de $46.50 bimestrales o $279.00 anuales. Se ignoraron estímulos fiscales y bonificaciones del inciso B por instrucción."
+  },
+  "_meta": {
+    "fuente": "txt",
+    "modelo": "gpt-5.4-mini"
+  },
+  "_meta_v2": {
+    "intentos": 1,
+    "requiere_revision": false,
+    "escalado": false,
+    "razon": null,
+    "tokens": {
+      "input": 6227,
+      "output": 284,
+      "cached": 3840
+    },
+    "cvegeo": "05004",
+    "estado": "coahuila",
+    "anio": 2020
+  }
+}

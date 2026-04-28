@@ -1,0 +1,76 @@
+{
+  "predial": {
+    "tipo_esquema": "progresivo",
+    "tabla": [
+      {
+        "n_rango": 1,
+        "inferior": 0.01,
+        "superior": 4000.0,
+        "cuota_fija": 14.0,
+        "tasa_marginal": 0.0025
+      },
+      {
+        "n_rango": 2,
+        "inferior": 4000.01,
+        "superior": 5500.0,
+        "cuota_fija": 27.0,
+        "tasa_marginal": 0.0025
+      },
+      {
+        "n_rango": 3,
+        "inferior": 5500.01,
+        "superior": 6500.0,
+        "cuota_fija": 40.0,
+        "tasa_marginal": 0.0025
+      },
+      {
+        "n_rango": 4,
+        "inferior": 6500.01,
+        "superior": 7500.0,
+        "cuota_fija": 60.0,
+        "tasa_marginal": 0.0025
+      },
+      {
+        "n_rango": 5,
+        "inferior": 7500.01,
+        "superior": 8500.0,
+        "cuota_fija": 70.0,
+        "tasa_marginal": 0.0025
+      },
+      {
+        "n_rango": 6,
+        "inferior": 8500.01,
+        "superior": 10000.0,
+        "cuota_fija": 80.0,
+        "tasa_marginal": 0.0025
+      },
+      {
+        "n_rango": 7,
+        "inferior": 10000.01,
+        "superior": null,
+        "cuota_fija": 100.0,
+        "tasa_marginal": 0.0025
+      }
+    ],
+    "minimo_predial": null,
+    "comentarios": "Art. 13: la mecánica principal del impuesto predial es una tarifa progresiva por valor catastral con cuota fija anual y factor porcentual sobre el excedente del límite inferior. El texto también incluye valores unitarios de terreno y construcción por zonas, pero eso corresponde a catastro y no se transcribe como tarifa. Art. 15 establece una tarifa separada del 2% sobre rentas o frutos civiles mensuales; se omite de la tabla principal por ser una mecánica distinta aplicada a frutos civiles. Art. 14 contiene descuentos, no se consideran."
+  },
+  "_meta": {
+    "fuente": "txt",
+    "modelo": "gpt-5.4-mini"
+  },
+  "_meta_v2": {
+    "intentos": 1,
+    "requiere_revision": false,
+    "escalado": false,
+    "razon": null,
+    "tokens": {
+      "input": 5715,
+      "output": 425,
+      "cached": 3840
+    },
+    "cvegeo": "31065",
+    "estado": "yucatan",
+    "anio": 2016
+  }
+}

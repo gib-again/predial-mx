@@ -1,0 +1,79 @@
+{
+  "predial": {
+    "tipo_esquema": "tarifa_millar",
+    "tabla": [
+      {
+        "grupo": "urbano",
+        "clave": "urbano_industrial",
+        "descripcion": "predios urbanos industriales con o sin edificación",
+        "tasa_millar": 0.005,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "urbano",
+        "clave": "urbano_comercial_con_edificacion",
+        "descripcion": "predios urbanos comerciales con edificación",
+        "tasa_millar": 0.005,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "urbano",
+        "clave": "urbano_comercial_sin_edificacion",
+        "descripcion": "predios urbanos comerciales sin edificación",
+        "tasa_millar": 0.00665,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "urbano",
+        "clave": "urbano_residencial_interes_social_popular_con_edificacion",
+        "descripcion": "predios urbanos residenciales, de interés social y populares con edificación",
+        "tasa_millar": 0.005,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "urbano",
+        "clave": "urbano_residencial_interes_social_popular_sin_edificacion",
+        "descripcion": "predios urbanos residenciales, de interés social y populares sin edificación",
+        "tasa_millar": 0.00665,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "rustico",
+        "clave": "rustico",
+        "descripcion": "predios rústicos",
+        "tasa_millar": 0.003,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      }
+    ],
+    "minimo_predial": {
+      "monto": 101.0,
+      "periodicidad": "anual",
+      "unidad": "pesos"
+    },
+    "comentarios": "Art. 2: se establece tasa al millar por categoría de predio sobre valor catastral. Predios urbanos comerciales y residenciales sin edificación pagan 1.33 veces la tasa de los predios con edificación; por ello se transcribe como 0.00665 al millar equivalente. Se ignoran incentivos/bonificaciones de los arts. 2, 3 y 4 por instrucción. No se integran al esquema las reglas de estímulos fiscales porque no son mecánica base de cálculo."
+  },
+  "_meta": {
+    "fuente": "txt",
+    "modelo": "gpt-5.4-mini"
+  },
+  "_meta_v2": {
+    "intentos": 1,
+    "requiere_revision": false,
+    "escalado": false,
+    "razon": null,
+    "tokens": {
+      "input": 5968,
+      "output": 492,
+      "cached": 3840
+    },
+    "cvegeo": "05027",
+    "estado": "coahuila",
+    "anio": 2012
+  }
+}

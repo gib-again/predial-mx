@@ -1,0 +1,51 @@
+{
+  "predial": {
+    "tipo_esquema": "tarifa_millar",
+    "tabla": [
+      {
+        "grupo": "urbano",
+        "clave": "urbano_con_edificaciones",
+        "descripcion": "Inmuebles urbanos y suburbanos con edificaciones",
+        "tasa_millar": 0.0024,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "urbano",
+        "clave": "urbano_sin_edificaciones",
+        "descripcion": "Inmuebles urbanos y suburbanos sin edificaciones",
+        "tasa_millar": 0.0045,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "rural",
+        "clave": "rustico",
+        "descripcion": "Inmuebles rústicos",
+        "tasa_millar": 0.0018,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      }
+    ],
+    "minimo_predial": null,
+    "comentarios": "Art. 4 establece tasas anuales al millar por tipo de inmueble. Se observa una tarifa paralela por antigüedad del valor determinado o modificado: a la entrada en vigor de la ley, durante 2002 a 2021 inclusive, con anterioridad a 2002 y hasta 1993 inclusive, y con anterioridad a 1903, aplicando 2.4/4.5/1.8 al millar, 2.4/4.5/1.8 al millar, 8/15/6 al millar y 13/13/12 al millar según el caso. Esa estructura paralela no se incorpora en la tabla principal por coexistir con los renglones categóricos; la mecánica dominante y más clara es la de tarifa al millar por categoría de predio. Art. 4 también prevé tasas para rústicos dentro del mismo esquema."
+  },
+  "_meta": {
+    "fuente": "txt",
+    "modelo": "gpt-5.4-mini"
+  },
+  "_meta_v2": {
+    "intentos": 1,
+    "requiere_revision": false,
+    "escalado": false,
+    "razon": null,
+    "tokens": {
+      "input": 7537,
+      "output": 385,
+      "cached": 3840
+    },
+    "cvegeo": "11030",
+    "estado": "guanajuato",
+    "anio": 2022
+  }
+}

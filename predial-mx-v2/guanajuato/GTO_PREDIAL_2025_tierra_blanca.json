@@ -1,0 +1,28 @@
+{
+  "predial": {
+    "tipo_esquema": "otro_no_clasificado",
+    "categoria": "segmento_vacio",
+    "descripcion_estructural": "El texto proporcionado no contiene el artículo ni la tabla específica de la mecánica del Impuesto Predial. Solo aparecen disposiciones de ajustes, recurso de revisión y referencias indirectas al artículo 21 de otra sección, pero no la tarifa o estructura de cálculo del predial. No es posible clasificar la mecánica sin inventarla.",
+    "tabla_cruda": [],
+    "minimo_predial": null,
+    "comentarios": "Sección de predial incompleta o ausente en el fragmento suministrado."
+  },
+  "_meta": {
+    "fuente": "txt",
+    "modelo": "gpt-5.4-mini"
+  },
+  "_meta_v2": {
+    "intentos": 1,
+    "requiere_revision": true,
+    "escalado": false,
+    "razon": "clasificado_como_otro_no_clasificado",
+    "tokens": {
+      "input": 6378,
+      "output": 144,
+      "cached": 3840
+    },
+    "cvegeo": "11040",
+    "estado": "guanajuato",
+    "anio": 2025
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "predial": {
+    "tipo_esquema": "tarifa_millar",
+    "tabla": [
+      {
+        "grupo": "urbano",
+        "clave": "urbano_general",
+        "descripcion": "Predios urbanos sobre valor catastral; los urbanos no edificados aumentan 100% y los urbanos con edificación inferior a la quinta parte del valor del terreno aumentan 50%",
+        "tasa_millar": 0.0015,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "rustico",
+        "clave": "rustico_general",
+        "descripcion": "Predios rústicos sobre valor catastral",
+        "tasa_millar": 0.0015,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      }
+    ],
+    "minimo_predial": null,
+    "comentarios": "Art. 8 establece para la propiedad urbana, suburbana y rústica una mecánica sobre valor catastral con tasa señalada en el artículo; el texto no consigna una tasa específica distinta para urbana en el extracto proporcionado, pero sí menciona aumentos del 100% para predios urbanos no edificados y del 50% para predios urbanos con edificación inferior a la quinta parte del valor del terreno. Art. 9 establece tasa de 1.5 al millar anual para predios rústicos sobre valor catastral. Se transcribe sólo la mecánica detectable del segmento proporcionado; no se extraen descuentos, recargos ni bonificaciones."
+  },
+  "_meta": {
+    "fuente": "txt",
+    "modelo": "gpt-5.4-mini"
+  },
+  "_meta_v2": {
+    "intentos": 1,
+    "requiere_revision": false,
+    "escalado": false,
+    "razon": null,
+    "tokens": {
+      "input": 5263,
+      "output": 321,
+      "cached": 3840
+    },
+    "cvegeo": "28029",
+    "estado": "tamaulipas",
+    "anio": 2022
+  }
+}

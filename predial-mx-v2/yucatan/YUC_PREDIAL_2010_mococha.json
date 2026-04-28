@@ -1,0 +1,33 @@
+{
+  "predial": {
+    "tipo_esquema": "otro_no_clasificado",
+    "categoria": "error_segmentacion",
+    "descripcion_estructural": "El segmento contiene principalmente tablas de valores unitarios de terreno y construcción (catastro), pero no incluye la tabla tarifaria del impuesto predial por rangos o cuotas a la que alude la frase 'A la cantidad que se exceda del límite inferior...'. Sólo es visible una tarifa paralela para predios destinados a la producción agropecuaria de 10 al millar anual sobre el valor registrado o catastral, por lo que no hay información suficiente para reconstruir la tabla principal sin inventar rangos o montos.",
+    "tabla_cruda": [
+      {
+        "descripcion": "Predio destinado a la producción agropecuaria",
+        "valores": "10 al millar anual sobre el valor registrado o catastral"
+      }
+    ],
+    "minimo_predial": null,
+    "comentarios": "Se ignoraron las tablas de valores unitarios de terreno y construcción por ser catastro y no tarifa del impuesto. El texto parece truncado o mal segmentado: menciona una tarifa con límite inferior, factor y cuota fija anual, pero esa tabla no aparece en el segmento."
+  },
+  "_meta": {
+    "fuente": "txt",
+    "modelo": "gpt-5.4"
+  },
+  "_meta_v2": {
+    "intentos": 3,
+    "requiere_revision": true,
+    "escalado": true,
+    "razon": "clasificado_como_otro_no_clasificado_tras_escalacion",
+    "tokens": {
+      "input": 18926,
+      "output": 1003,
+      "cached": 13568
+    },
+    "cvegeo": "31051",
+    "estado": "yucatan",
+    "anio": 2010
+  }
+}

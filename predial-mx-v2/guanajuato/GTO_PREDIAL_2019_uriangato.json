@@ -1,0 +1,33 @@
+{
+  "predial": {
+    "tipo_esquema": "tasa_unica",
+    "tabla": [
+      {
+        "descripcion": "Impuesto predial anual sobre el valor catastral para inmuebles urbanos y suburbanos con valor determinado o modificado, y para inmuebles rústicos, según la tabla del Artículo 4.",
+        "tasa": 0.002,
+        "base_calculo": "valor_catastral",
+        "unidad": "porcentaje"
+      }
+    ],
+    "minimo_predial": null,
+    "comentarios": "Artículo 4 establece tasas porcentuales uniformes sobre el valor catastral. Se observa una tabla con tasas distintas por tipo de inmueble y periodo: para urbanos y suburbanos con edificaciones y sin edificaciones, y para rústicos. No se trata de tarifa_millar porque la unidad está expresada en porcentaje, no al millar. Se transcribe la mecánica principal del artículo 4; se ignoran valores unitarios de los artículos 5 y 6 por ser catastro/valuación, no mecánica del impuesto."
+  },
+  "_meta": {
+    "fuente": "txt",
+    "modelo": "gpt-5.4-mini"
+  },
+  "_meta_v2": {
+    "intentos": 1,
+    "requiere_revision": false,
+    "escalado": false,
+    "razon": null,
+    "tokens": {
+      "input": 7489,
+      "output": 219,
+      "cached": 3840
+    },
+    "cvegeo": "11041",
+    "estado": "guanajuato",
+    "anio": 2019
+  }
+}

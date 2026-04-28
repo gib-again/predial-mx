@@ -1,0 +1,47 @@
+{
+  "predial": {
+    "tipo_esquema": "tarifa_millar",
+    "tabla": [
+      {
+        "grupo": "urbano",
+        "clave": "urbano_y_suburbano",
+        "descripcion": "Predios urbanos y suburbanos",
+        "tasa_millar": 0.002,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "rustico",
+        "clave": "rustico",
+        "descripcion": "Predios rústicos",
+        "tasa_millar": 0.0015,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      }
+    ],
+    "minimo_predial": {
+      "monto": 2.5,
+      "periodicidad": "anual",
+      "unidad": "uma"
+    },
+    "comentarios": "Art. 10: tasa general del 2 al millar para predios urbanos y suburbanos sobre valor catastral; tasa paralela de 1.5 al millar anual para predios rústicos. Se ignoran los incrementos por baldíos y edificación inferior a la quinta parte del valor del terreno por ser recargos/ajustes sobre la misma mecánica general. El impuesto anual no podrá ser menor a 2.5 UMA."
+  },
+  "_meta": {
+    "fuente": "txt",
+    "modelo": "gpt-5.4-mini"
+  },
+  "_meta_v2": {
+    "intentos": 1,
+    "requiere_revision": false,
+    "escalado": false,
+    "razon": null,
+    "tokens": {
+      "input": 5605,
+      "output": 247,
+      "cached": 3840
+    },
+    "cvegeo": "28011",
+    "estado": "tamaulipas",
+    "anio": 2025
+  }
+}

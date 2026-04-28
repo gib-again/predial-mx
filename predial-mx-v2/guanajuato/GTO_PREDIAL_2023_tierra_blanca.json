@@ -1,0 +1,51 @@
+{
+  "predial": {
+    "tipo_esquema": "tarifa_millar",
+    "tabla": [
+      {
+        "grupo": "urbano",
+        "clave": "inmuebles_urbanos_y_suburbanos_con_edificaciones",
+        "descripcion": "Inmuebles urbanos y suburbanos con edificaciones",
+        "tasa_millar": 0.0024,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "urbano",
+        "clave": "inmuebles_urbanos_y_suburbanos_sin_edificaciones",
+        "descripcion": "Inmuebles urbanos y suburbanos sin edificaciones",
+        "tasa_millar": 0.0045,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "rustico",
+        "clave": "inmuebles_rusticos_con_edificaciones",
+        "descripcion": "Inmuebles rústicos con edificaciones",
+        "tasa_millar": 0.0018,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      }
+    ],
+    "minimo_predial": null,
+    "comentarios": "Art. 4 establece una tarifa paralela para inmuebles con valor determinado o modificado según antigüedad del valor catastral: (1) a la entrada en vigor de la ley: 2.4 al millar (urbanos/suburbanos con edificaciones), 4.5 al millar (urbanos/suburbanos sin edificaciones), 1.8 al millar (rústicos con edificaciones); (2) años 2002 a 2022: mismas tasas; (3) anterior a 2002 y hasta 1993: 8, 15 y 6 al millar; (4) con anterioridad a 1993: 13, 13 y 12 al millar. La extracción principal se presenta como tarifa_millar y no se mezclan las demás filas por ser tarifas paralelas por antigüedad/condición. Los artículos 5 y 6 son tablas de valores unitarios para avalúo/catastro, no mecánica de cálculo del impuesto."
+  },
+  "_meta": {
+    "fuente": "txt",
+    "modelo": "gpt-5.4-mini"
+  },
+  "_meta_v2": {
+    "intentos": 1,
+    "requiere_revision": false,
+    "escalado": false,
+    "razon": null,
+    "tokens": {
+      "input": 7713,
+      "output": 432,
+      "cached": 3840
+    },
+    "cvegeo": "11040",
+    "estado": "guanajuato",
+    "anio": 2023
+  }
+}

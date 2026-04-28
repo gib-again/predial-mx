@@ -1,0 +1,33 @@
+{
+  "predial": {
+    "tipo_esquema": "cuota_fija_simple",
+    "tabla": [
+      {
+        "descripcion": "Predios urbanos",
+        "monto": 100.0,
+        "periodicidad": "anual",
+        "unidad": "pesos"
+      }
+    ],
+    "minimo_predial": null,
+    "comentarios": "Artículo 13 establece cuotas fijas separadas: predios urbanos $100.00 y predios rústicos $50.00. Se toma como tabla principal la primera cuota fija visible. Tarifa paralela no incluida en la tabla principal: predios rústicos pagan $50.00 anuales. El texto posterior sobre valores unitarios de terreno y construcción se ignora por ser catastro, no tarifa. También aparece un esquema alterno cuando la base sea el valor catastral: secciones 1 a 6 con tasa 0.25% y, por separado, predios destinados a producción agropecuaria 10 al millar anual sobre valor catastral; se describen aquí como tarifas paralelas no integradas en la tabla principal para no mezclar estructuras distintas."
+  },
+  "_meta": {
+    "fuente": "txt",
+    "modelo": "gpt-5.4"
+  },
+  "_meta_v2": {
+    "intentos": 3,
+    "requiere_revision": false,
+    "escalado": true,
+    "razon": "escalado_a_gpt-5.4_tras_2x_mini_fallido",
+    "tokens": {
+      "input": 19268,
+      "output": 772,
+      "cached": 12544
+    },
+    "cvegeo": "31042",
+    "estado": "yucatan",
+    "anio": 2016
+  }
+}

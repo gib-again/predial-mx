@@ -1,0 +1,160 @@
+{
+  "predial": {
+    "tipo_esquema": "mixto",
+    "tabla": [
+      {
+        "n_rango": 1,
+        "inferior": 0.01,
+        "superior": 4000.0,
+        "columnas": [
+          {
+            "nombre": "general",
+            "valor": 14.0,
+            "tipo": "cuota_fija",
+            "unidad": "pesos"
+          },
+          {
+            "nombre": "general",
+            "valor": 0.001,
+            "tipo": "tasa_porcentual",
+            "unidad": "porcentaje"
+          }
+        ]
+      },
+      {
+        "n_rango": 2,
+        "inferior": 4000.01,
+        "superior": 5500.0,
+        "columnas": [
+          {
+            "nombre": "general",
+            "valor": 27.0,
+            "tipo": "cuota_fija",
+            "unidad": "pesos"
+          },
+          {
+            "nombre": "general",
+            "valor": 0.0015,
+            "tipo": "tasa_porcentual",
+            "unidad": "porcentaje"
+          }
+        ]
+      },
+      {
+        "n_rango": 3,
+        "inferior": 5500.01,
+        "superior": 6500.0,
+        "columnas": [
+          {
+            "nombre": "general",
+            "valor": 40.0,
+            "tipo": "cuota_fija",
+            "unidad": "pesos"
+          },
+          {
+            "nombre": "general",
+            "valor": 0.0018,
+            "tipo": "tasa_porcentual",
+            "unidad": "porcentaje"
+          }
+        ]
+      },
+      {
+        "n_rango": 4,
+        "inferior": 6500.01,
+        "superior": 7500.0,
+        "columnas": [
+          {
+            "nombre": "general",
+            "valor": 60.0,
+            "tipo": "cuota_fija",
+            "unidad": "pesos"
+          },
+          {
+            "nombre": "general",
+            "valor": 0.002,
+            "tipo": "tasa_porcentual",
+            "unidad": "porcentaje"
+          }
+        ]
+      },
+      {
+        "n_rango": 5,
+        "inferior": 7500.01,
+        "superior": 8500.0,
+        "columnas": [
+          {
+            "nombre": "general",
+            "valor": 70.0,
+            "tipo": "cuota_fija",
+            "unidad": "pesos"
+          },
+          {
+            "nombre": "general",
+            "valor": 0.0021,
+            "tipo": "tasa_porcentual",
+            "unidad": "porcentaje"
+          }
+        ]
+      },
+      {
+        "n_rango": 6,
+        "inferior": 8500.01,
+        "superior": 10000.0,
+        "columnas": [
+          {
+            "nombre": "general",
+            "valor": 80.0,
+            "tipo": "cuota_fija",
+            "unidad": "pesos"
+          },
+          {
+            "nombre": "general",
+            "valor": 0.0023,
+            "tipo": "tasa_porcentual",
+            "unidad": "porcentaje"
+          }
+        ]
+      },
+      {
+        "n_rango": 7,
+        "inferior": 10000.01,
+        "superior": null,
+        "columnas": [
+          {
+            "nombre": "general",
+            "valor": 100.0,
+            "tipo": "cuota_fija",
+            "unidad": "pesos"
+          },
+          {
+            "nombre": "general",
+            "valor": 0.0025,
+            "tipo": "tasa_porcentual",
+            "unidad": "porcentaje"
+          }
+        ]
+      }
+    ],
+    "minimo_predial": null,
+    "comentarios": "Art. 13: la mecánica principal del impuesto predial por valor catastral combina cuota fija anual y factor porcentual sobre el excedente en cada bracket, por lo que se clasifica como mixto. Además, el artículo contiene tarifas paralelas no incorporadas en la tabla principal: predios sin valor catastral pagan cuota fija urbana $80.00, rústica $65.00 y comisarías $65.00; también se menciona una cuota de $5,000.00 por metro lineal para predios colindantes con la Zona Federal Marítimo-Terrestre. Se ignoran descuentos del Art. 14."
+  },
+  "_meta": {
+    "fuente": "txt",
+    "modelo": "gpt-5.4-mini"
+  },
+  "_meta_v2": {
+    "intentos": 1,
+    "requiere_revision": false,
+    "escalado": false,
+    "razon": null,
+    "tokens": {
+      "input": 5749,
+      "output": 670,
+      "cached": 3840
+    },
+    "cvegeo": "31061",
+    "estado": "yucatan",
+    "anio": 2013
+  }
+}

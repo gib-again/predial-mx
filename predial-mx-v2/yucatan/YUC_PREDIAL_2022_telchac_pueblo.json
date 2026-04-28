@@ -1,0 +1,76 @@
+{
+  "predial": {
+    "tipo_esquema": "progresivo",
+    "tabla": [
+      {
+        "n_rango": 1,
+        "inferior": 1.0,
+        "superior": 20000.0,
+        "cuota_fija": 80.0,
+        "tasa_marginal": 0.0025
+      },
+      {
+        "n_rango": 2,
+        "inferior": 20000.0,
+        "superior": 50000.0,
+        "cuota_fija": 100.0,
+        "tasa_marginal": 0.0025
+      },
+      {
+        "n_rango": 3,
+        "inferior": 50000.0,
+        "superior": 80000.0,
+        "cuota_fija": 130.0,
+        "tasa_marginal": 0.0025
+      },
+      {
+        "n_rango": 4,
+        "inferior": 80000.0,
+        "superior": 110000.0,
+        "cuota_fija": 150.0,
+        "tasa_marginal": 0.002
+      },
+      {
+        "n_rango": 5,
+        "inferior": 110000.0,
+        "superior": 500000.0,
+        "cuota_fija": 200.0,
+        "tasa_marginal": 0.002
+      },
+      {
+        "n_rango": 6,
+        "inferior": 500000.0,
+        "superior": 1000000.0,
+        "cuota_fija": 250.0,
+        "tasa_marginal": 0.0015
+      },
+      {
+        "n_rango": 7,
+        "inferior": 1000000.0,
+        "superior": null,
+        "cuota_fija": 300.0,
+        "tasa_marginal": 0.0015
+      }
+    ],
+    "minimo_predial": null,
+    "comentarios": "Se toma como tabla principal la tarifa progresiva del Artículo 13, normalizando los rangos centavados a límites contiguos: 20,001–50,000 a 20,000–50,000; 50,001–80,000 a 50,000–80,000; 80,001–110,000 a 80,000–110,000; 110,501–500,000 se normaliza a 110,000–500,000 conforme la instrucción de no dejar huecos, aunque el texto muestra 110,501. La misma tarifa se aplicará a los terrenos ejidales. Tarifa paralela no incluida en la tabla principal: 'Todo predio destinado a la producción agropecuaria 10 al millar anual sobre el valor registrado o catastral', por ser una tarifa separada para otro grupo de predios."
+  },
+  "_meta": {
+    "fuente": "txt",
+    "modelo": "gpt-5.4"
+  },
+  "_meta_v2": {
+    "intentos": 3,
+    "requiere_revision": false,
+    "escalado": true,
+    "razon": "escalado_a_gpt-5.4_tras_2x_mini_fallido",
+    "tokens": {
+      "input": 21015,
+      "output": 1491,
+      "cached": 11520
+    },
+    "cvegeo": "31082",
+    "estado": "yucatan",
+    "anio": 2022
+  }
+}

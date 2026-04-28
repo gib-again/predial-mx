@@ -1,0 +1,51 @@
+{
+  "predial": {
+    "tipo_esquema": "tarifa_millar",
+    "tabla": [
+      {
+        "grupo": "urbano",
+        "clave": "urbanos_y_suburbanos",
+        "descripcion": "Predios urbanos y suburbanos",
+        "tasa_millar": 0.0015,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "rustico",
+        "clave": "rusticos",
+        "descripcion": "Predios rústicos",
+        "tasa_millar": 0.0015,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "urbano",
+        "clave": "urbanos_baldios",
+        "descripcion": "Predios urbanos baldíos",
+        "tasa_millar": 0.003,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      }
+    ],
+    "minimo_predial": null,
+    "comentarios": "Art. 10: impuesto predial sobre el valor catastral. Tarifa paralela con tres tasas categóricas: 1.5 al millar anual para predios urbanos y suburbanos; 1.5 al millar anual para predios rústicos; 3.00 al millar para predios urbanos baldíos. No se trata de rangos por valor catastral."
+  },
+  "_meta": {
+    "fuente": "txt",
+    "modelo": "gpt-5.4-mini"
+  },
+  "_meta_v2": {
+    "intentos": 1,
+    "requiere_revision": false,
+    "escalado": false,
+    "razon": null,
+    "tokens": {
+      "input": 5114,
+      "output": 266,
+      "cached": 3840
+    },
+    "cvegeo": "28025",
+    "estado": "tamaulipas",
+    "anio": 2021
+  }
+}

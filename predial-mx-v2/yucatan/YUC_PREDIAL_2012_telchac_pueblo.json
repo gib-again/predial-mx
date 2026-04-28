@@ -1,0 +1,33 @@
+{
+  "predial": {
+    "tipo_esquema": "cuota_fija_simple",
+    "tabla": [
+      {
+        "descripcion": "Predios urbanos y rústicos con tarifa fija cuando no está actualizado el padrón catastral",
+        "monto": 65.0,
+        "periodicidad": "anual",
+        "unidad": "pesos"
+      }
+    ],
+    "minimo_predial": null,
+    "comentarios": "Artículo 13: se menciona como regla general la determinación multiplicando el valor catastral por 0.015 por ciento del salario mínimo vigente para el Estado de Yucatán, pero el texto también establece que cuando no está actualizado el padrón catastral se aplicará tarifa fija para urbanos de $65.00 pesos y predios rústicos de $40.00 pesos anuales. El segmento no presenta una tabla estructurada con filas separadas para ambas tarifas, por lo que se transcribe sólo la cuota fija visible en el texto base. Artículo 14 contiene descuento y se ignora. Se deja la estructura mínima detectada sin interpretar la mecánica completa."
+  },
+  "_meta": {
+    "fuente": "txt",
+    "modelo": "gpt-5.4-mini"
+  },
+  "_meta_v2": {
+    "intentos": 2,
+    "requiere_revision": false,
+    "escalado": false,
+    "razon": null,
+    "tokens": {
+      "input": 10535,
+      "output": 485,
+      "cached": 8704
+    },
+    "cvegeo": "31082",
+    "estado": "yucatan",
+    "anio": 2012
+  }
+}

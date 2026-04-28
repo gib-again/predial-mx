@@ -1,0 +1,75 @@
+{
+  "predial": {
+    "tipo_esquema": "tarifa_millar",
+    "tabla": [
+      {
+        "grupo": "general",
+        "clave": "inmuebles_con_valor_determinado_o_modificado",
+        "descripcion": "Inmuebles que cuenten con un valor determinado o modificado; vigencia desde la entrada en vigor de la ley",
+        "tasa_millar": 0.0024,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "general",
+        "clave": "inmuebles_con_valor_determinado_o_modificado",
+        "descripcion": "Inmuebles que cuenten con un valor determinado o modificado; durante los años 2002 hasta 2018, inclusive",
+        "tasa_millar": 0.0024,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "general",
+        "clave": "inmuebles_con_valor_determinado_o_modificado",
+        "descripcion": "Inmuebles que cuenten con un valor determinado o modificado; con anterioridad al año 2002 y hasta 1993 inclusive",
+        "tasa_millar": 0.008,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "urbano",
+        "clave": "urbanos_y_suburbanos_con_edificaciones",
+        "descripcion": "Inmuebles urbanos y suburbanos con edificaciones",
+        "tasa_millar": 0.013,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "urbano",
+        "clave": "urbanos_y_suburbanos_sin_edificaciones",
+        "descripcion": "Inmuebles urbanos y suburbanos sin edificaciones",
+        "tasa_millar": 0.012,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "rustico",
+        "clave": "rusticos",
+        "descripcion": "Inmuebles rústicos",
+        "tasa_millar": 0.012,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      }
+    ],
+    "minimo_predial": null,
+    "comentarios": "Art. 4 establece tasas anuales al millar por tipo de inmueble y periodo/condición. Se transcribe la mecánica tarifaria principal como tarifa_millar. La ley también contiene en el Art. 5 tablas de valores unitarios para avalúo (terrenos y construcciones), que no son tarifa del impuesto y se ignoran aquí. Texto OCR presenta un renglón adicional ambiguo al final de la tabla de tasas; no se integra por inconsistencia de lectura. _meta = null."
+  },
+  "_meta": {
+    "fuente": "txt",
+    "modelo": "gpt-5.4-mini"
+  },
+  "_meta_v2": {
+    "intentos": 1,
+    "requiere_revision": false,
+    "escalado": false,
+    "razon": null,
+    "tokens": {
+      "input": 7421,
+      "output": 526,
+      "cached": 3840
+    },
+    "cvegeo": "11044",
+    "estado": "guanajuato",
+    "anio": 2019
+  }
+}

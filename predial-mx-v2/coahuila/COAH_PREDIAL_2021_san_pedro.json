@@ -1,0 +1,71 @@
+{
+  "predial": {
+    "tipo_esquema": "tarifa_millar",
+    "tabla": [
+      {
+        "grupo": "urbano",
+        "clave": "industrial",
+        "descripcion": "Predios urbanos industriales",
+        "tasa_millar": 0.0027,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "urbano",
+        "clave": "comercial",
+        "descripcion": "Predios urbanos comerciales",
+        "tasa_millar": 0.0026,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "urbano",
+        "clave": "habitacional",
+        "descripcion": "Predios urbanos habitacionales",
+        "tasa_millar": 0.0025,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "rustico",
+        "clave": "rustico",
+        "descripcion": "Predios rústicos",
+        "tasa_millar": 0.003,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "otro",
+        "clave": "sub_urbano_habitacional_o_solares_en_congregaciones_ejidos",
+        "descripcion": "Predios sub urbano habitacional o solares, enclavados en congregaciones, ejidos",
+        "tasa_millar": 36.15,
+        "periodicidad": "bimestral",
+        "cuota_fija_adicional": null
+      }
+    ],
+    "minimo_predial": {
+      "monto": 36.15,
+      "periodicidad": "bimestral",
+      "unidad": "pesos"
+    },
+    "comentarios": "Art. 2 establece tasas al millar para predios urbanos por categoría (industrial 2.7 al millar anual, comercial 2.6 al millar anual, habitacional 2.5 al millar anual) y para predios rústicos 3 al millar anual. Los predios urbanos sin edificación pagan 1.33 veces lo fijado para predios con edificación; podrá eximirse del pago extraordinario del 0.33 al millar cuando estén cercados y limpios. También se establece una tarifa paralela de cuota fija para predios sub urbano habitacional o solares, enclavados en congregaciones y ejidos, de 36.15 pesos por bimestre, la cual se conserva como fila categórica por estar dentro del mismo artículo aunque no está expresada al millar. Se ignoran incentivos, condonaciones y reglas para predios de extracción ejidal o establecimientos mineros basados en producción, por no formar parte de la tarifa general del impuesto predial catastral."
+  },
+  "_meta": {
+    "fuente": "txt",
+    "modelo": "gpt-5.4"
+  },
+  "_meta_v2": {
+    "intentos": 3,
+    "requiere_revision": false,
+    "escalado": true,
+    "razon": "escalado_a_gpt-5.4_tras_2x_mini_fallido",
+    "tokens": {
+      "input": 20908,
+      "output": 1435,
+      "cached": 7680
+    },
+    "cvegeo": "05033",
+    "estado": "coahuila",
+    "anio": 2021
+  }
+}

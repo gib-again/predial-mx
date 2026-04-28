@@ -1,0 +1,33 @@
+{
+  "predial": {
+    "tipo_esquema": "tasa_unica",
+    "tabla": [
+      {
+        "descripcion": "Tasa 0.25 sobre el valor catastral para secciones 1 a 6",
+        "tasa": 0.25,
+        "base_calculo": "valor_catastral",
+        "unidad": "al_millar"
+      }
+    ],
+    "minimo_predial": null,
+    "comentarios": "Artículo 15 establece para SECCION 1, 2, 3, 4, 5 y 6 la misma 'TASA 0.25', por lo que se transcribe como una sola tasa uniforme sobre el valor catastral. Artículo 15 también establece una tarifa paralela para predios destinados a la producción agropecuaria de 10 al millar anual sobre el valor registrado o catastral; no se incluye en la tabla principal por ser tarifa separada aplicable a otro grupo de predios. El Artículo 14 contiene valores catastrales/unitarios de terreno y construcción, no la tarifa del impuesto predial."
+  },
+  "_meta": {
+    "fuente": "txt",
+    "modelo": "gpt-5.4"
+  },
+  "_meta_v2": {
+    "intentos": 3,
+    "requiere_revision": false,
+    "escalado": true,
+    "razon": "escalado_a_gpt-5.4_tras_2x_mini_fallido",
+    "tokens": {
+      "input": 18364,
+      "output": 958,
+      "cached": 13568
+    },
+    "cvegeo": "31100",
+    "estado": "yucatan",
+    "anio": 2014
+  }
+}

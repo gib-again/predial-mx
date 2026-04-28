@@ -1,0 +1,76 @@
+{
+  "predial": {
+    "tipo_esquema": "progresivo",
+    "tabla": [
+      {
+        "n_rango": 1,
+        "inferior": 0.0,
+        "superior": 20000.0,
+        "cuota_fija": 12.0,
+        "tasa_marginal": 0.0009
+      },
+      {
+        "n_rango": 2,
+        "inferior": 20000.0,
+        "superior": 40000.0,
+        "cuota_fija": 22.0,
+        "tasa_marginal": 0.0009
+      },
+      {
+        "n_rango": 3,
+        "inferior": 40000.0,
+        "superior": 60000.0,
+        "cuota_fija": 32.0,
+        "tasa_marginal": 0.0009
+      },
+      {
+        "n_rango": 4,
+        "inferior": 60000.0,
+        "superior": 80000.0,
+        "cuota_fija": 43.0,
+        "tasa_marginal": 0.0009
+      },
+      {
+        "n_rango": 5,
+        "inferior": 80000.0,
+        "superior": 100000.0,
+        "cuota_fija": 53.0,
+        "tasa_marginal": 0.0009
+      },
+      {
+        "n_rango": 6,
+        "inferior": 100000.0,
+        "superior": 120000.0,
+        "cuota_fija": 63.0,
+        "tasa_marginal": 0.0009
+      },
+      {
+        "n_rango": 7,
+        "inferior": 120000.0,
+        "superior": null,
+        "cuota_fija": 74.0,
+        "tasa_marginal": 0.003
+      }
+    ],
+    "minimo_predial": null,
+    "comentarios": "Art. 13: tabla principal del impuesto predial sobre valor catastral con cuotas fijas bimestrales implícitas por dividirse entre seis; se transcribe la mecánica anual de la tarifa. Tarifa paralela no incluida en la tabla principal: predios destinados a la producción agropecuaria pagan 10 al millar anual sobre el valor registrado o catastral. Art. 14 regula frutos civiles (habitacional 3% mensual y comercial 5% mensual) y se ignora por no ser mecánica del predial sobre valor catastral."
+  },
+  "_meta": {
+    "fuente": "txt",
+    "modelo": "gpt-5.4-mini"
+  },
+  "_meta_v2": {
+    "intentos": 1,
+    "requiere_revision": false,
+    "escalado": false,
+    "razon": null,
+    "tokens": {
+      "input": 6550,
+      "output": 412,
+      "cached": 3840
+    },
+    "cvegeo": "31076",
+    "estado": "yucatan",
+    "anio": 2014
+  }
+}

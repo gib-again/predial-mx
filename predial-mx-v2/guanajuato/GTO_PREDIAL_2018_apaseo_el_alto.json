@@ -1,0 +1,99 @@
+{
+  "predial": {
+    "tipo_esquema": "tarifa_millar",
+    "tabla": [
+      {
+        "grupo": "urbano",
+        "clave": "predios_urbanos_y_suburbanos_con_edificaciones",
+        "descripcion": "Inmuebles urbanos y suburbanos con edificaciones; a la entrada en vigor de la ley",
+        "tasa_millar": 0.0024,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "urbano",
+        "clave": "predios_urbanos_y_suburbanos_sin_edificaciones",
+        "descripcion": "Inmuebles urbanos y suburbanos sin edificaciones; a la entrada en vigor de la ley",
+        "tasa_millar": 0.0045,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "rustico",
+        "clave": "inmuebles_rusticos",
+        "descripcion": "Inmuebles rústicos; a la entrada en vigor de la ley",
+        "tasa_millar": 0.0018,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "urbano",
+        "clave": "predios_urbanos_y_suburbanos_con_edificaciones_anteriores_2002_hasta_1993",
+        "descripcion": "Inmuebles urbanos y suburbanos con edificaciones; con anterioridad al año 2002 y hasta 1993, inclusive",
+        "tasa_millar": 0.0024,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "urbano",
+        "clave": "predios_urbanos_y_suburbanos_sin_edificaciones_anteriores_2002_hasta_1993",
+        "descripcion": "Inmuebles urbanos y suburbanos sin edificaciones; con anterioridad al año 2002 y hasta 1993, inclusive",
+        "tasa_millar": 0.0045,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "rustico",
+        "clave": "inmuebles_rusticos_anteriores_2002_hasta_1993",
+        "descripcion": "Inmuebles rústicos; con anterioridad al año 2002 y hasta 1993, inclusive",
+        "tasa_millar": 0.0018,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "urbano",
+        "clave": "predios_urbanos_y_suburbanos_con_edificaciones_anteriores_1993",
+        "descripcion": "Inmuebles urbanos y suburbanos con edificaciones; con anterioridad al año 1993",
+        "tasa_millar": 0.0013,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "urbano",
+        "clave": "predios_urbanos_y_suburbanos_sin_edificaciones_anteriores_1993",
+        "descripcion": "Inmuebles urbanos y suburbanos sin edificaciones; con anterioridad al año 1993",
+        "tasa_millar": 0.0012,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "rustico",
+        "clave": "inmuebles_rusticos_anteriores_1993",
+        "descripcion": "Inmuebles rústicos; con anterioridad al año 1993",
+        "tasa_millar": 0.0008,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      }
+    ],
+    "minimo_predial": null,
+    "comentarios": "Artículo 4 establece tarifas anuales al millar por tipo de inmueble y por antigüedad/condición (urbanos y suburbanos con/sin edificaciones, y rústicos). El texto mostrado no contiene brackets por valor catastral para el cálculo del impuesto predial, sino una tabla de tasas categóricas. Se ignora el Artículo 5 porque contiene tablas de valores unitarios de terreno y construcción (catastro), no la mecánica del impuesto. Los inmuebles suburbanos con superficie mayor a 5,000 m² se valuarán con clasificaciones y valores del Artículo 5, fracción II, inciso b), pero eso corresponde a valuación/catastro, no a la tarifa del predial."
+  },
+  "_meta": {
+    "fuente": "txt",
+    "modelo": "gpt-5.4-mini"
+  },
+  "_meta_v2": {
+    "intentos": 1,
+    "requiere_revision": false,
+    "escalado": false,
+    "razon": null,
+    "tokens": {
+      "input": 7483,
+      "output": 858,
+      "cached": 3840
+    },
+    "cvegeo": "11004",
+    "estado": "guanajuato",
+    "anio": 2018
+  }
+}

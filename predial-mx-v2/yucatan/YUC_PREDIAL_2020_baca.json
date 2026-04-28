@@ -1,0 +1,76 @@
+{
+  "predial": {
+    "tipo_esquema": "progresivo",
+    "tabla": [
+      {
+        "n_rango": 1,
+        "inferior": 0.01,
+        "superior": 60000.0,
+        "cuota_fija": 50.0,
+        "tasa_marginal": 0.001
+      },
+      {
+        "n_rango": 2,
+        "inferior": 60000.01,
+        "superior": 120000.0,
+        "cuota_fija": 50.0,
+        "tasa_marginal": 0.001
+      },
+      {
+        "n_rango": 3,
+        "inferior": 120000.01,
+        "superior": 200000.0,
+        "cuota_fija": 55.0,
+        "tasa_marginal": 0.001
+      },
+      {
+        "n_rango": 4,
+        "inferior": 200000.01,
+        "superior": 400000.0,
+        "cuota_fija": 60.0,
+        "tasa_marginal": 0.001
+      },
+      {
+        "n_rango": 5,
+        "inferior": 400000.01,
+        "superior": 600000.0,
+        "cuota_fija": 65.0,
+        "tasa_marginal": 0.001
+      },
+      {
+        "n_rango": 6,
+        "inferior": 600000.01,
+        "superior": 800000.0,
+        "cuota_fija": 75.0,
+        "tasa_marginal": 0.001
+      },
+      {
+        "n_rango": 7,
+        "inferior": 800000.01,
+        "superior": null,
+        "cuota_fija": 100.0,
+        "tasa_marginal": 0.001
+      }
+    ],
+    "minimo_predial": null,
+    "comentarios": "Art. 4: el impuesto predial se calcula con base en el valor catastral aplicando cuota fija anual más factor marginal sobre el excedente del límite inferior. La tabla transcrita contiene 7 rangos con cuota fija y factor 0.0010. Las tablas posteriores de valores unitarios de terreno y construcción son valores catastrales y no forman parte de la mecánica del impuesto."
+  },
+  "_meta": {
+    "fuente": "txt",
+    "modelo": "gpt-5.4-mini"
+  },
+  "_meta_v2": {
+    "intentos": 1,
+    "requiere_revision": false,
+    "escalado": false,
+    "razon": null,
+    "tokens": {
+      "input": 6072,
+      "output": 384,
+      "cached": 3840
+    },
+    "cvegeo": "31004",
+    "estado": "yucatan",
+    "anio": 2020
+  }
+}

@@ -1,0 +1,51 @@
+{
+  "predial": {
+    "tipo_esquema": "tarifa_millar",
+    "tabla": [
+      {
+        "grupo": "urbano",
+        "clave": "urbanos_suburbanos_con_edificaciones",
+        "descripcion": "Inmuebles urbanos y suburbanos con edificaciones, valor determinado o modificado",
+        "tasa_millar": 0.0024,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "urbano",
+        "clave": "urbanos_suburbanos_sin_edificaciones",
+        "descripcion": "Inmuebles urbanos y suburbanos sin edificaciones, valor determinado o modificado",
+        "tasa_millar": 0.0045,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "rustico",
+        "clave": "rusticos",
+        "descripcion": "Inmuebles rústicos",
+        "tasa_millar": 0.0018,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      }
+    ],
+    "minimo_predial": null,
+    "comentarios": "Artículo 4 establece tasas anuales al millar por categoría de inmueble, sin rangos de valor catastral. Se transcribe la mecánica principal del predial. No se incluye el artículo 5 porque contiene valores unitarios de catastro y avalúo, no la tarifa del impuesto. La fracción 4 del Art. 4 muestra un renglón adicional para inmuebles con anterioridad al año de 1993: 13 al millar para urbanos/suburbanos con edificaciones y 12 al millar para urbanos/suburbanos sin edificaciones; el texto OCR está cortado y no permite separar con certeza el renglón completo, por lo que no se incorpora como tabla principal."
+  },
+  "_meta": {
+    "fuente": "txt",
+    "modelo": "gpt-5.4-mini"
+  },
+  "_meta_v2": {
+    "intentos": 1,
+    "requiere_revision": false,
+    "escalado": false,
+    "razon": null,
+    "tokens": {
+      "input": 7271,
+      "output": 358,
+      "cached": 3840
+    },
+    "cvegeo": "11019",
+    "estado": "guanajuato",
+    "anio": 2017
+  }
+}

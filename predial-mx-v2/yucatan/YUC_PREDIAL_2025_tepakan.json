@@ -1,0 +1,28 @@
+{
+  "predial": {
+    "tipo_esquema": "otro_no_clasificado",
+    "categoria": "estructura_no_estandar",
+    "descripcion_estructural": "El texto no presenta una tarifa del impuesto predial clasificable en una de las variantes permitidas. En el Artículo 12 sólo se indica una cuota fija de $10.00 más el resultado de un factor sobre el valor catastral, junto con un procedimiento de valuación del inmueble y tablas de valores unitarios de terreno y construcción; esas tablas son de catastro/valuación, no una tabla tarifaria de predial. No hay brackets, tasa uniforme explícita, ni catálogo de tasas por categoría que permita estructurar la mecánica como tarifa_millar, progresivo, cuota fija escalonada o mixto.",
+    "tabla_cruda": [],
+    "minimo_predial": null,
+    "comentarios": "Se ignoran descuentos del Artículo 13. La mecánica de cálculo remite a una ley de hacienda externa y no desglosa la tasa/factor en la propia disposición transcrita."
+  },
+  "_meta": {
+    "fuente": "txt",
+    "modelo": "gpt-5.4-mini"
+  },
+  "_meta_v2": {
+    "intentos": 1,
+    "requiere_revision": true,
+    "escalado": false,
+    "razon": "clasificado_como_otro_no_clasificado",
+    "tokens": {
+      "input": 6008,
+      "output": 227,
+      "cached": 3840
+    },
+    "cvegeo": "31086",
+    "estado": "yucatan",
+    "anio": 2025
+  }
+}

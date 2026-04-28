@@ -1,0 +1,103 @@
+{
+  "predial": {
+    "tipo_esquema": "tarifa_millar",
+    "tabla": [
+      {
+        "grupo": "urbano",
+        "clave": "industrial",
+        "descripcion": "predios urbanos industriales con o sin edificación",
+        "tasa_millar": 5.0,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "urbano",
+        "clave": "comercial_con_edificacion",
+        "descripcion": "predios urbanos comerciales con edificación",
+        "tasa_millar": 5.0,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "urbano",
+        "clave": "comercial_sin_edificacion",
+        "descripcion": "predios urbanos comerciales sin edificación",
+        "tasa_millar": 6.0,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "urbano",
+        "clave": "residencial_con_edificacion",
+        "descripcion": "predios urbanos residenciales, de interés social y populares con edificación",
+        "tasa_millar": 5.0,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "urbano",
+        "clave": "residencial_sin_edificacion",
+        "descripcion": "predios urbanos residenciales, de interés social y populares sin edificación",
+        "tasa_millar": 6.0,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "rustico",
+        "clave": "general_rustico",
+        "descripcion": "predios rústicos",
+        "tasa_millar": 3.0,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "rustico",
+        "clave": "industrial_eolica_en_ejecucion",
+        "descripcion": "predios rústicos industriales con explotación de energía renovable (eólica) en ejecución",
+        "tasa_millar": 5.0,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "rustico",
+        "clave": "industrial_eolica_en_desarrollo",
+        "descripcion": "predios rústicos industriales con explotación de energía renovable (eólica) en desarrollo",
+        "tasa_millar": 5.0,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "rustico",
+        "clave": "industrial_eolica_en_proyecto",
+        "descripcion": "predios rústicos industriales con explotación de energía renovable (eólica) en proyecto",
+        "tasa_millar": 5.0,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      }
+    ],
+    "minimo_predial": {
+      "monto": 53.53,
+      "periodicidad": "bimestral",
+      "unidad": "pesos"
+    },
+    "comentarios": "Art. 2 establece tasas al millar por tipo de predio. Se ignoran los incentivos/bonificaciones del mismo artículo y del Art. 3 por ser descuentos. También se menciona una tasa especial de 1 al millar para predios de instituciones educativas no públicas, pero se trata de un incentivo condicionado; no se incorpora en la tabla principal."
+  },
+  "_meta": {
+    "fuente": "txt",
+    "modelo": "gpt-5.4-mini"
+  },
+  "_meta_v2": {
+    "intentos": 1,
+    "requiere_revision": false,
+    "escalado": false,
+    "razon": null,
+    "tokens": {
+      "input": 6147,
+      "output": 602,
+      "cached": 3840
+    },
+    "cvegeo": "05027",
+    "estado": "coahuila",
+    "anio": 2022
+  }
+}

@@ -1,0 +1,51 @@
+{
+  "predial": {
+    "tipo_esquema": "tarifa_millar",
+    "tabla": [
+      {
+        "grupo": "urbano",
+        "clave": "con_edificaciones",
+        "descripcion": "Inmuebles urbanos y suburbanos con edificaciones; tasa anual sobre el valor catastral.",
+        "tasa_millar": 0.0024,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "urbano",
+        "clave": "sin_edificaciones",
+        "descripcion": "Inmuebles urbanos y suburbanos sin edificaciones; tasa anual sobre el valor catastral.",
+        "tasa_millar": 0.0045,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "rustico",
+        "clave": "rustico",
+        "descripcion": "Inmuebles rústicos; tasa anual sobre el valor catastral.",
+        "tasa_millar": 0.0018,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      }
+    ],
+    "minimo_predial": null,
+    "comentarios": "Artículo 4 establece tasas anuales al millar por categoría de inmueble. Para inmuebles urbanos y suburbanos, la tabla distingue con edificaciones y sin edificaciones, con tasas variables según la antigüedad del valor determinado o modificado: entrada en vigor 2.4/4.5/1.8 al millar; años 2002 a 2020 inclusive 2.4/4.5/1.8 al millar; de 1993 al 2001 inclusive 8/15/6 al millar; con anterioridad a 1993 13/12 al millar (el texto OCR no muestra completo el tercer valor de esa fila). Se transcribe la mecánica predominante del párrafo inicial visible y se deja constancia textual de la tarifa paralela por antigüedad. Artículos 5 y 6 contienen valores unitarios y criterios de valuación, no mecánica tarifaria."
+  },
+  "_meta": {
+    "fuente": "txt",
+    "modelo": "gpt-5.4-mini"
+  },
+  "_meta_v2": {
+    "intentos": 1,
+    "requiere_revision": false,
+    "escalado": false,
+    "razon": null,
+    "tokens": {
+      "input": 7340,
+      "output": 408,
+      "cached": 3840
+    },
+    "cvegeo": "11002",
+    "estado": "guanajuato",
+    "anio": 2021
+  }
+}

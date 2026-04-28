@@ -1,0 +1,33 @@
+{
+  "predial": {
+    "tipo_esquema": "tasa_unica",
+    "tabla": [
+      {
+        "descripcion": "Impuesto predial general sobre valor catastral",
+        "tasa": 0.005,
+        "base_calculo": "valor_catastral",
+        "unidad": "porcentaje"
+      }
+    ],
+    "minimo_predial": null,
+    "comentarios": "Art. 13: el impuesto predial general se calcula aplicando el factor de 0.005 al valor catastral determinado. Se ignoran las tablas de valores unitarios de terreno y construcción por ser insumos catastrales, no la mecánica del impuesto. Art. 13 también prevé un tratamiento separado para predios destinados a la producción agropecuaria: 10 al millar anual sobre el valor registrado o catastral; se reporta sólo la mecánica general principal en la tabla y la tarifa paralela se deja en comentarios. Art. 14 contiene un descuento por pronto pago, ignorado conforme a la instrucción."
+  },
+  "_meta": {
+    "fuente": "txt",
+    "modelo": "gpt-5.4-mini"
+  },
+  "_meta_v2": {
+    "intentos": 1,
+    "requiere_revision": false,
+    "escalado": false,
+    "razon": null,
+    "tokens": {
+      "input": 6101,
+      "output": 219,
+      "cached": 3840
+    },
+    "cvegeo": "31030",
+    "estado": "yucatan",
+    "anio": 2012
+  }
+}

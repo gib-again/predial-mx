@@ -1,0 +1,67 @@
+{
+  "predial": {
+    "tipo_esquema": "tarifa_millar",
+    "tabla": [
+      {
+        "grupo": "general",
+        "clave": "urbano_suburbano_1",
+        "descripcion": "Inmuebles urbanos y suburbanos a la entrada en vigor de la ley",
+        "tasa_millar": 0.0024,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "general",
+        "clave": "urbano_suburbano_2",
+        "descripcion": "Inmuebles urbanos y suburbanos durante los años 2002 a 2021 inclusive",
+        "tasa_millar": 0.0024,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "general",
+        "clave": "urbano_suburbano_3",
+        "descripcion": "Inmuebles urbanos y suburbanos con anterioridad al año 2002 y hasta el año 1993",
+        "tasa_millar": 0.008,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "general",
+        "clave": "urbano_suburbano_4",
+        "descripcion": "Inmuebles urbanos y suburbanos con anterioridad al año 1993",
+        "tasa_millar": 0.013,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "rustico",
+        "clave": "rustico_1",
+        "descripcion": "Inmuebles rústicos",
+        "tasa_millar": 0.0018,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      }
+    ],
+    "minimo_predial": null,
+    "comentarios": "Art. 4 establece tasas anuales al millar por antigüedad para inmuebles urbanos y suburbanos, y una tasa anual al millar para inmuebles rústicos. Se transcribe sólo la mecánica de cálculo; los artículos 5 y 6 contienen valores unitarios y criterios de avalúo, no la tarifa del impuesto. No se incluyen descuentos ni bonificaciones. Las cifras del texto aparecen como '2.4 al millar', '1.8 al millar', '8 al millar', '13 al millar' y se normalizan a decimales al millar."
+  },
+  "_meta": {
+    "fuente": "txt",
+    "modelo": "gpt-5.4-mini"
+  },
+  "_meta_v2": {
+    "intentos": 1,
+    "requiere_revision": false,
+    "escalado": false,
+    "razon": null,
+    "tokens": {
+      "input": 7559,
+      "output": 456,
+      "cached": 3840
+    },
+    "cvegeo": "11029",
+    "estado": "guanajuato",
+    "anio": 2022
+  }
+}

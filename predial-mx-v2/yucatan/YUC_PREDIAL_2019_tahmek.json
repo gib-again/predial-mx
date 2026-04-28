@@ -1,0 +1,222 @@
+{
+  "predial": {
+    "tipo_esquema": "mixto",
+    "tabla": [
+      {
+        "n_rango": 1,
+        "inferior": 0.01,
+        "superior": 10000.0,
+        "columnas": [
+          {
+            "nombre": "general",
+            "valor": 50.0,
+            "tipo": "cuota_fija",
+            "unidad": "pesos"
+          }
+        ]
+      },
+      {
+        "n_rango": 2,
+        "inferior": 10000.01,
+        "superior": 15000.0,
+        "columnas": [
+          {
+            "nombre": "general",
+            "valor": 55.0,
+            "tipo": "cuota_fija",
+            "unidad": "pesos"
+          }
+        ]
+      },
+      {
+        "n_rango": 3,
+        "inferior": 15000.01,
+        "superior": 20000.0,
+        "columnas": [
+          {
+            "nombre": "general",
+            "valor": 60.0,
+            "tipo": "cuota_fija",
+            "unidad": "pesos"
+          }
+        ]
+      },
+      {
+        "n_rango": 4,
+        "inferior": 20000.01,
+        "superior": 25000.0,
+        "columnas": [
+          {
+            "nombre": "general",
+            "valor": 65.0,
+            "tipo": "cuota_fija",
+            "unidad": "pesos"
+          }
+        ]
+      },
+      {
+        "n_rango": 5,
+        "inferior": 25000.01,
+        "superior": 30000.0,
+        "columnas": [
+          {
+            "nombre": "general",
+            "valor": 70.0,
+            "tipo": "cuota_fija",
+            "unidad": "pesos"
+          }
+        ]
+      },
+      {
+        "n_rango": 6,
+        "inferior": 30000.01,
+        "superior": 35000.0,
+        "columnas": [
+          {
+            "nombre": "general",
+            "valor": 80.0,
+            "tipo": "cuota_fija",
+            "unidad": "pesos"
+          }
+        ]
+      },
+      {
+        "n_rango": 7,
+        "inferior": 35000.01,
+        "superior": 40000.0,
+        "columnas": [
+          {
+            "nombre": "general",
+            "valor": 85.0,
+            "tipo": "cuota_fija",
+            "unidad": "pesos"
+          }
+        ]
+      },
+      {
+        "n_rango": 8,
+        "inferior": 40000.01,
+        "superior": 45000.0,
+        "columnas": [
+          {
+            "nombre": "general",
+            "valor": 90.0,
+            "tipo": "cuota_fija",
+            "unidad": "pesos"
+          }
+        ]
+      },
+      {
+        "n_rango": 9,
+        "inferior": 45000.01,
+        "superior": 50000.0,
+        "columnas": [
+          {
+            "nombre": "general",
+            "valor": 105.0,
+            "tipo": "cuota_fija",
+            "unidad": "pesos"
+          }
+        ]
+      },
+      {
+        "n_rango": 10,
+        "inferior": 50000.01,
+        "superior": 60000.0,
+        "columnas": [
+          {
+            "nombre": "general",
+            "valor": 110.0,
+            "tipo": "cuota_fija",
+            "unidad": "pesos"
+          }
+        ]
+      },
+      {
+        "n_rango": 11,
+        "inferior": 60000.01,
+        "superior": 70000.0,
+        "columnas": [
+          {
+            "nombre": "general",
+            "valor": 115.0,
+            "tipo": "cuota_fija",
+            "unidad": "pesos"
+          }
+        ]
+      },
+      {
+        "n_rango": 12,
+        "inferior": 70000.01,
+        "superior": 80000.0,
+        "columnas": [
+          {
+            "nombre": "general",
+            "valor": 120.0,
+            "tipo": "cuota_fija",
+            "unidad": "pesos"
+          }
+        ]
+      },
+      {
+        "n_rango": 13,
+        "inferior": 80000.01,
+        "superior": 90000.0,
+        "columnas": [
+          {
+            "nombre": "general",
+            "valor": 125.0,
+            "tipo": "cuota_fija",
+            "unidad": "pesos"
+          }
+        ]
+      },
+      {
+        "n_rango": 14,
+        "inferior": 90000.01,
+        "superior": 100000.0,
+        "columnas": [
+          {
+            "nombre": "general",
+            "valor": 130.0,
+            "tipo": "cuota_fija",
+            "unidad": "pesos"
+          }
+        ]
+      },
+      {
+        "n_rango": 15,
+        "inferior": 100000.01,
+        "superior": null,
+        "columnas": [
+          {
+            "nombre": "general",
+            "valor": 0.2,
+            "tipo": "tasa_porcentual",
+            "unidad": "porcentaje"
+          }
+        ]
+      }
+    ],
+    "minimo_predial": null,
+    "comentarios": "Artículo 11: tabla principal de predial por rangos de valor catastral con cuota fija anual. El último rango (100,000.01 en adelante) cambia de unidad y cobra 0.20% del valor catastral, por lo que la estructura es mixta. Además, el texto incluye un apartado separado para RÚSTICOS: $ por hectárea (Camino Blanco 476.00; Carretera 716.00), que se describe como tarifa paralela y no se incorpora en la tabla principal."
+  },
+  "_meta": {
+    "fuente": "txt",
+    "modelo": "gpt-5.4-mini"
+  },
+  "_meta_v2": {
+    "intentos": 2,
+    "requiere_revision": false,
+    "escalado": false,
+    "razon": null,
+    "tokens": {
+      "input": 11029,
+      "output": 1780,
+      "cached": 7680
+    },
+    "cvegeo": "31074",
+    "estado": "yucatan",
+    "anio": 2019
+  }
+}

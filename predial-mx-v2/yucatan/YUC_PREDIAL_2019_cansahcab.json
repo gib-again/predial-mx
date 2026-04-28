@@ -1,0 +1,76 @@
+{
+  "predial": {
+    "tipo_esquema": "progresivo",
+    "tabla": [
+      {
+        "n_rango": 1,
+        "inferior": 0.01,
+        "superior": 4000.0,
+        "cuota_fija": 4.0,
+        "tasa_marginal": 0.00075
+      },
+      {
+        "n_rango": 2,
+        "inferior": 4001.0,
+        "superior": 5500.0,
+        "cuota_fija": 7.0,
+        "tasa_marginal": 0.002
+      },
+      {
+        "n_rango": 3,
+        "inferior": 5501.0,
+        "superior": 6500.0,
+        "cuota_fija": 10.0,
+        "tasa_marginal": 0.003
+      },
+      {
+        "n_rango": 4,
+        "inferior": 6501.0,
+        "superior": 7500.0,
+        "cuota_fija": 13.0,
+        "tasa_marginal": 0.003
+      },
+      {
+        "n_rango": 5,
+        "inferior": 7501.0,
+        "superior": 8500.0,
+        "cuota_fija": 16.0,
+        "tasa_marginal": 0.004
+      },
+      {
+        "n_rango": 6,
+        "inferior": 8501.0,
+        "superior": 10000.0,
+        "cuota_fija": 20.0,
+        "tasa_marginal": 0.00133
+      },
+      {
+        "n_rango": 7,
+        "inferior": 10001.0,
+        "superior": null,
+        "cuota_fija": 22.0,
+        "tasa_marginal": 0.0025
+      }
+    ],
+    "minimo_predial": null,
+    "comentarios": "Art. 4: tarifa principal por valor catastral con cuota fija + factor (tasa marginal) por rango. Tarifa paralela para predios rústicos: $200 de 1 a 20 m2, $300 de 21 a 40 m2 y $400 de 41 m2 en adelante; no se incluye en la tabla principal por ser una mecánica distinta. También se establece una cuota fija anual de $70.00 por predio cuando el impuesto predial se determine con base en el valor catastral de los inmuebles en ese supuesto; se deja fuera por estar en el mismo artículo como regla específica no estructurada en brackets."
+  },
+  "_meta": {
+    "fuente": "txt",
+    "modelo": "gpt-5.4-mini"
+  },
+  "_meta_v2": {
+    "intentos": 1,
+    "requiere_revision": false,
+    "escalado": false,
+    "razon": null,
+    "tokens": {
+      "input": 6290,
+      "output": 429,
+      "cached": 3840
+    },
+    "cvegeo": "31009",
+    "estado": "yucatan",
+    "anio": 2019
+  }
+}

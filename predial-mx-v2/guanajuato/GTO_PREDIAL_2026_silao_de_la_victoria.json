@@ -1,0 +1,32 @@
+{
+  "predial": {
+    "tipo_esquema": "otro_no_clasificado",
+    "categoria": "municipio_sin_impuesto",
+    "descripcion_estructural": "El segmento proporcionado sólo establece una cuota mínima anual del impuesto predial y una disposición de descuento por pronto pago. No contiene una mecánica de cálculo del impuesto (tarifa, rangos, tasa única o cuotas escalonadas) para determinar la base del predial.",
+    "tabla_cruda": [],
+    "minimo_predial": {
+      "monto": 429.71,
+      "periodicidad": "anual",
+      "unidad": "pesos"
+    },
+    "comentarios": "Se transcribe únicamente la cuota mínima anual del Art. 42; el Art. 43 contiene descuentos y se ignora conforme a la instrucción."
+  },
+  "_meta": {
+    "fuente": "txt",
+    "modelo": "gpt-5.4-mini"
+  },
+  "_meta_v2": {
+    "intentos": 1,
+    "requiere_revision": true,
+    "escalado": false,
+    "razon": "clasificado_como_otro_no_clasificado",
+    "tokens": {
+      "input": 5143,
+      "output": 164,
+      "cached": 3840
+    },
+    "cvegeo": "11037",
+    "estado": "guanajuato",
+    "anio": 2026
+  }
+}

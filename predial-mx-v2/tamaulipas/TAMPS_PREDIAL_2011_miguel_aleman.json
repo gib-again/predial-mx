@@ -1,0 +1,37 @@
+{
+  "predial": {
+    "tipo_esquema": "cuota_fija_simple",
+    "tabla": [
+      {
+        "descripcion": "Cuota mínima anual del impuesto predial",
+        "monto": 3.0,
+        "periodicidad": "anual",
+        "unidad": "vsm"
+      }
+    ],
+    "minimo_predial": {
+      "monto": 3.0,
+      "periodicidad": "anual",
+      "unidad": "vsm"
+    },
+    "comentarios": "Art. 38 establece una cuota mínima anual de tres salarios mínimos para el impuesto sobre la propiedad urbana, suburbana y rústica (predial). El texto proporcionado no contiene tabla de tasas, rangos catastrales ni categorías diferenciadas; las bonificaciones de los artículos 39 y 40 se ignoran por instrucción."
+  },
+  "_meta": {
+    "fuente": "txt",
+    "modelo": "gpt-5.4-mini"
+  },
+  "_meta_v2": {
+    "intentos": 1,
+    "requiere_revision": false,
+    "escalado": false,
+    "razon": null,
+    "tokens": {
+      "input": 5245,
+      "output": 159,
+      "cached": 3840
+    },
+    "cvegeo": "28025",
+    "estado": "tamaulipas",
+    "anio": 2011
+  }
+}

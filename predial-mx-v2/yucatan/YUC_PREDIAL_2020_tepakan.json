@@ -1,0 +1,37 @@
+{
+  "predial": {
+    "tipo_esquema": "tasa_unica",
+    "tabla": [
+      {
+        "descripcion": "Impuesto predial general sobre el valor catastral",
+        "tasa": 0.0025,
+        "base_calculo": "valor_catastral",
+        "unidad": "porcentaje"
+      }
+    ],
+    "minimo_predial": {
+      "monto": 10.0,
+      "periodicidad": "anual",
+      "unidad": "pesos"
+    },
+    "comentarios": "Art. 13: el texto indica una cuota fija de $10.00 más el resultado del factor de 0.001 sobre el valor catastral, y además señala que la tarifa del impuesto predial (c) se propone el 0.25% del valor catastral actualizado. Se transcribe la mecánica como tasa única sobre valor catastral por ser la formulación tarifaria explícita y uniforme. Art. 14 contiene un descuento por pronto pago y se ignora."
+  },
+  "_meta": {
+    "fuente": "txt",
+    "modelo": "gpt-5.4-mini"
+  },
+  "_meta_v2": {
+    "intentos": 1,
+    "requiere_revision": false,
+    "escalado": false,
+    "razon": null,
+    "tokens": {
+      "input": 6399,
+      "output": 198,
+      "cached": 3840
+    },
+    "cvegeo": "31086",
+    "estado": "yucatan",
+    "anio": 2020
+  }
+}

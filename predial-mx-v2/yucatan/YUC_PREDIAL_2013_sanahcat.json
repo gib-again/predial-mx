@@ -1,0 +1,43 @@
+{
+  "predial": {
+    "tipo_esquema": "tarifa_millar",
+    "tabla": [
+      {
+        "grupo": "general",
+        "clave": "predio_causante_por_m2",
+        "descripcion": "El impuesto predial se causará anualmente en razón de 15 centavos por m2 que tenga la extensión de predio causante.",
+        "tasa_millar": 0.0,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "rústico",
+        "clave": "produccion_agropecuaria",
+        "descripcion": "Todo predio destinado a la producción agropecuaria.",
+        "tasa_millar": 10.0,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      }
+    ],
+    "minimo_predial": null,
+    "comentarios": "Art. 13 establece dos tarifas paralelas sobre bases distintas: (1) 15 centavos por m2 de la extensión del predio causante; (2) predios destinados a la producción agropecuaria pagan 10 al millar anual sobre el valor registrado o catastral. Se transcribe la estructura tarifaria sin interpretar equivalencias entre m2 y valor catastral. Art. 14 contiene un descuento por pronto pago, ignorado conforme a instrucciones."
+  },
+  "_meta": {
+    "fuente": "txt",
+    "modelo": "gpt-5.4-mini"
+  },
+  "_meta_v2": {
+    "intentos": 2,
+    "requiere_revision": false,
+    "escalado": false,
+    "razon": null,
+    "tokens": {
+      "input": 10428,
+      "output": 524,
+      "cached": 8704
+    },
+    "cvegeo": "31064",
+    "estado": "yucatan",
+    "anio": 2013
+  }
+}

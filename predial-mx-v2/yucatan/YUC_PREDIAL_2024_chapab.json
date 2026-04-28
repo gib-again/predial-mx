@@ -1,0 +1,69 @@
+{
+  "predial": {
+    "tipo_esquema": "progresivo",
+    "tabla": [
+      {
+        "n_rango": 1,
+        "inferior": 0.01,
+        "superior": 100.0,
+        "cuota_fija": 35.0,
+        "tasa_marginal": 0.0
+      },
+      {
+        "n_rango": 2,
+        "inferior": 100.0,
+        "superior": 1000.0,
+        "cuota_fija": 40.0,
+        "tasa_marginal": 3e-05
+      },
+      {
+        "n_rango": 3,
+        "inferior": 1000.0,
+        "superior": 7500.0,
+        "cuota_fija": 50.0,
+        "tasa_marginal": 5e-05
+      },
+      {
+        "n_rango": 4,
+        "inferior": 7500.0,
+        "superior": 10000.0,
+        "cuota_fija": 55.0,
+        "tasa_marginal": 0.00012
+      },
+      {
+        "n_rango": 5,
+        "inferior": 10000.0,
+        "superior": 50000.0,
+        "cuota_fija": 70.0,
+        "tasa_marginal": 0.00025
+      },
+      {
+        "n_rango": 6,
+        "inferior": 50000.0,
+        "superior": null,
+        "cuota_fija": 80.0,
+        "tasa_marginal": 0.00035
+      }
+    ],
+    "minimo_predial": null,
+    "comentarios": "Artículo 13: se transcribe la tarifa por rangos de valor catastral con cuota fija anual y factor para aplicar al excedente del límite inferior. Se normalizan los rangos a límites contiguos para evitar huecos de validación: 0.01–100, 100–1000, 1000–7500, 7500–10000, 10000–50000, 50000 en adelante. Las tablas de valores unitarios de terreno y construcción no forman parte del impuesto. La línea 'Todo predio destinado a la producción agropecuaria pagará 10 al millar anual' corresponde a tarifa paralela y no se integra en la tabla principal. La tabla de rentas o frutos civiles también es tarifa distinta y se omite por ser impuesto sobre rentas, no predial sobre valor catastral."
+  },
+  "_meta": {
+    "fuente": "txt",
+    "modelo": "gpt-5.4-mini"
+  },
+  "_meta_v2": {
+    "intentos": 2,
+    "requiere_revision": false,
+    "escalado": false,
+    "razon": null,
+    "tokens": {
+      "input": 12365,
+      "output": 808,
+      "cached": 8704
+    },
+    "cvegeo": "31018",
+    "estado": "yucatan",
+    "anio": 2024
+  }
+}

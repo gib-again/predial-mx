@@ -1,0 +1,122 @@
+{
+  "predial": {
+    "tipo_esquema": "progresivo",
+    "tabla": [
+      {
+        "n_rango": 1,
+        "inferior": 0.01,
+        "superior": 100000.0,
+        "cuota_fija": 280.49,
+        "tasa_marginal": 0.00019
+      },
+      {
+        "n_rango": 2,
+        "inferior": 100000.01,
+        "superior": 200000.0,
+        "cuota_fija": 299.49,
+        "tasa_marginal": 0.0024
+      },
+      {
+        "n_rango": 3,
+        "inferior": 200000.01,
+        "superior": 350000.0,
+        "cuota_fija": 539.49,
+        "tasa_marginal": 0.00265
+      },
+      {
+        "n_rango": 4,
+        "inferior": 350000.01,
+        "superior": 500000.0,
+        "cuota_fija": 936.99,
+        "tasa_marginal": 0.0029
+      },
+      {
+        "n_rango": 5,
+        "inferior": 500000.01,
+        "superior": 700000.0,
+        "cuota_fija": 1371.99,
+        "tasa_marginal": 0.003
+      },
+      {
+        "n_rango": 6,
+        "inferior": 700000.01,
+        "superior": 900000.0,
+        "cuota_fija": 1971.99,
+        "tasa_marginal": 0.00305
+      },
+      {
+        "n_rango": 7,
+        "inferior": 900000.01,
+        "superior": 1200000.0,
+        "cuota_fija": 2581.99,
+        "tasa_marginal": 0.0031
+      },
+      {
+        "n_rango": 8,
+        "inferior": 1200000.01,
+        "superior": 1500000.0,
+        "cuota_fija": 3511.99,
+        "tasa_marginal": 0.0031
+      },
+      {
+        "n_rango": 9,
+        "inferior": 1500000.01,
+        "superior": 1800000.0,
+        "cuota_fija": 4441.99,
+        "tasa_marginal": 0.0031
+      },
+      {
+        "n_rango": 10,
+        "inferior": 1800000.01,
+        "superior": 2100000.0,
+        "cuota_fija": 5371.99,
+        "tasa_marginal": 0.0031
+      },
+      {
+        "n_rango": 11,
+        "inferior": 2100000.01,
+        "superior": 2500000.0,
+        "cuota_fija": 6301.99,
+        "tasa_marginal": 0.0031
+      },
+      {
+        "n_rango": 12,
+        "inferior": 2500000.01,
+        "superior": 3000000.0,
+        "cuota_fija": 7541.99,
+        "tasa_marginal": 0.0031
+      },
+      {
+        "n_rango": 13,
+        "inferior": 3000000.01,
+        "superior": null,
+        "cuota_fija": 9091.99,
+        "tasa_marginal": 0.0031
+      }
+    ],
+    "minimo_predial": {
+      "monto": 0.0,
+      "periodicidad": "anual",
+      "unidad": "pesos"
+    },
+    "comentarios": "Art. 4, fracción I, inciso a): para inmuebles urbanos y suburbanos con edificaciones se establecen brackets por valor fiscal con cuota fija y tasa marginal. Art. 4, fracción I, inciso b): para inmuebles sin edificaciones y para inmuebles rústicos hay tarifas paralelas al millar (4.5, 15, 13 al millar; y 1.8, 6, 12 al millar según antigüedad), no incluidas en la tabla principal por ser tarifas separadas. Si el impuesto resulta inferior a la cuota mínima del art. 41, se paga dicha cuota mínima."
+  },
+  "_meta": {
+    "fuente": "txt",
+    "modelo": "gpt-5.4-mini"
+  },
+  "_meta_v2": {
+    "intentos": 1,
+    "requiere_revision": false,
+    "escalado": false,
+    "razon": null,
+    "tokens": {
+      "input": 8090,
+      "output": 732,
+      "cached": 3840
+    },
+    "cvegeo": "11026",
+    "estado": "guanajuato",
+    "anio": 2026
+  }
+}

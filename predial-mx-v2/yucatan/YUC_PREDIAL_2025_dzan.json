@@ -1,0 +1,33 @@
+{
+  "predial": {
+    "tipo_esquema": "tasa_unica",
+    "tabla": [
+      {
+        "descripcion": "Predio general sobre valor catastral actualizado",
+        "tasa": 0.0002,
+        "base_calculo": "valor_catastral",
+        "unidad": "porcentaje"
+      }
+    ],
+    "minimo_predial": null,
+    "comentarios": "Art. 13: el impuesto predial se calcula con un factor único de 0.00020 del valor catastral actualizado (C = (A+B)(0.00020)). Se excluyen las tablas de valores unitarios de terreno/construcción y las disposiciones sobre rentas o frutos civiles por no formar parte de la mecánica del impuesto predial sobre valor catastral. También se menciona una tarifa paralela para predios agropecuarios de 10 al millar anual, pero la mecánica principal del artículo es una tasa única."
+  },
+  "_meta": {
+    "fuente": "txt",
+    "modelo": "gpt-5.4-mini"
+  },
+  "_meta_v2": {
+    "intentos": 2,
+    "requiere_revision": false,
+    "escalado": false,
+    "razon": null,
+    "tokens": {
+      "input": 14605,
+      "output": 444,
+      "cached": 8704
+    },
+    "cvegeo": "31025",
+    "estado": "yucatan",
+    "anio": 2025
+  }
+}

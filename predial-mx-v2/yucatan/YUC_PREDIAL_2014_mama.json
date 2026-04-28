@@ -1,0 +1,33 @@
+{
+  "predial": {
+    "tipo_esquema": "tasa_unica",
+    "tabla": [
+      {
+        "descripcion": "Cuota fija de 25.00 y tasa del 0.05% sobre el valor catastral",
+        "tasa": 0.0005,
+        "base_calculo": "valor_catastral",
+        "unidad": "porcentaje"
+      }
+    ],
+    "minimo_predial": null,
+    "comentarios": "Artículo 12 establece una cuota fija de 25.00 pesos y además aplica una tasa del 0.05% sobre el valor catastral. La salida se clasifica como tasa_unica porque sólo hay una tasa uniforme; la cuota fija adicional no tiene campo propio en este esquema. Se ignoraron las tablas de valores catastrales y de construcción por no ser la tarifa del impuesto predial."
+  },
+  "_meta": {
+    "fuente": "txt",
+    "modelo": "gpt-5.4"
+  },
+  "_meta_v2": {
+    "intentos": 3,
+    "requiere_revision": false,
+    "escalado": true,
+    "razon": "escalado_a_gpt-5.4_tras_2x_mini_fallido",
+    "tokens": {
+      "input": 17088,
+      "output": 678,
+      "cached": 13568
+    },
+    "cvegeo": "31046",
+    "estado": "yucatan",
+    "anio": 2014
+  }
+}

@@ -1,0 +1,51 @@
+{
+  "predial": {
+    "tipo_esquema": "tarifa_millar",
+    "tabla": [
+      {
+        "grupo": "urbano",
+        "clave": "inmuebles_urbanos_y_suburbanos_con_edificacion",
+        "descripcion": "Inmuebles urbanos y suburbanos con edificación; para inmuebles con valor determinado o modificado.",
+        "tasa_millar": 0.0024,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "urbano",
+        "clave": "inmuebles_urbanos_y_suburbanos_sin_edificacion",
+        "descripcion": "Inmuebles urbanos y suburbanos sin edificación; para inmuebles con valor determinado o modificado.",
+        "tasa_millar": 0.0045,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "rustico",
+        "clave": "inmuebles_rusticos",
+        "descripcion": "Inmuebles rústicos; para inmuebles con valor determinado o modificado.",
+        "tasa_millar": 0.0018,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      }
+    ],
+    "minimo_predial": null,
+    "comentarios": "Art. 4: para inmuebles que cuenten con un valor determinado o modificado, la tasa se aplica según categoría. Además, el mismo artículo contiene tarifas paralelas por antigüedad del valor catastral: a la entrada en vigor y durante 2002-2016 inclusive, urbano/suburbano con edificación 2.4 al millar, sin edificación 4.5 al millar y rústicos 1.8 al millar; con anterioridad a 2002 y hasta 1993 inclusive, urbano/suburbano con edificación 8 al millar, sin edificación 15 al millar y rústicos 6 al millar; con anterioridad a 1993, urbano/suburbano con edificación 8 al millar, sin edificación 8 al millar y rústicos 6 al millar. Se transcribe la estructura predominante y las tarifas paralelas se dejan descritas textualmente. Art. 5 regula valores unitarios para avalúo y no se incluye por no ser mecánica de cálculo del impuesto."
+  },
+  "_meta": {
+    "fuente": "txt",
+    "modelo": "gpt-5.4-mini"
+  },
+  "_meta_v2": {
+    "intentos": 1,
+    "requiere_revision": false,
+    "escalado": false,
+    "razon": null,
+    "tokens": {
+      "input": 7503,
+      "output": 470,
+      "cached": 3840
+    },
+    "cvegeo": "11043",
+    "estado": "guanajuato",
+    "anio": 2017
+  }
+}

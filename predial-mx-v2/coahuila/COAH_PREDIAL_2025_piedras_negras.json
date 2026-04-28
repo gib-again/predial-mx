@@ -1,0 +1,71 @@
+{
+  "predial": {
+    "tipo_esquema": "tarifa_millar",
+    "tabla": [
+      {
+        "grupo": "urbano",
+        "clave": "predios_urbanos",
+        "descripcion": "Sobre los predios urbanos",
+        "tasa_millar": 0.005,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "rustico",
+        "clave": "predios_rusticos",
+        "descripcion": "Sobre los predios rústicos",
+        "tasa_millar": 0.003,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "rustico",
+        "clave": "predios_rusticos_industriales_eolica_en_ejecucion",
+        "descripcion": "Sobre los predios rústicos industriales con explotación de energía renovable (eólica) en ejecución",
+        "tasa_millar": 0.005,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "rustico",
+        "clave": "predios_rusticos_industriales_eolica_en_desarrollo",
+        "descripcion": "Sobre los predios rústicos industriales con explotación de energía renovable (eólica) en desarrollo",
+        "tasa_millar": 0.005,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "rustico",
+        "clave": "predios_rusticos_industriales_eolica_en_proyecto",
+        "descripcion": "Sobre los predios rústicos industriales con explotación de energía renovable (eólica) en proyecto",
+        "tasa_millar": 0.005,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      }
+    ],
+    "minimo_predial": {
+      "monto": 33.5,
+      "periodicidad": "bimestral",
+      "unidad": "pesos"
+    },
+    "comentarios": "Art. 2: tasas anuales al millar para predios urbanos (5), rústicos (3) y predios rústicos industriales con explotación de energía renovable (eólica) en ejecución, desarrollo y proyecto (5). El texto también establece un mínimo predial de $33.50 bimestral. Los incentivos, descuentos y bonificaciones se ignoran conforme a la instrucción."
+  },
+  "_meta": {
+    "fuente": "txt",
+    "modelo": "gpt-5.4-mini"
+  },
+  "_meta_v2": {
+    "intentos": 1,
+    "requiere_revision": false,
+    "escalado": false,
+    "razon": null,
+    "tokens": {
+      "input": 6002,
+      "output": 449,
+      "cached": 3840
+    },
+    "cvegeo": "05025",
+    "estado": "coahuila",
+    "anio": 2025
+  }
+}

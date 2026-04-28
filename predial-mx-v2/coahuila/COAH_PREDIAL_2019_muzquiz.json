@@ -1,0 +1,55 @@
+{
+  "predial": {
+    "tipo_esquema": "tarifa_millar",
+    "tabla": [
+      {
+        "grupo": "urbano",
+        "clave": "predios_urbanos",
+        "descripcion": "Predios urbanos",
+        "tasa_millar": 5.0,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "rustico",
+        "clave": "predios_rusticos",
+        "descripcion": "Predios rústicos",
+        "tasa_millar": 3.0,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "otro",
+        "clave": "lotes_baldios_con_maleza",
+        "descripcion": "Lotes baldíos con maleza",
+        "tasa_millar": 7.0,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      }
+    ],
+    "minimo_predial": {
+      "monto": 19.64,
+      "periodicidad": "bimestral",
+      "unidad": "pesos"
+    },
+    "comentarios": "Art. 2: establece tasas al millar anuales diferenciadas por tipo de predio: urbano 5 al millar, rústico 3 al millar y lotes baldíos con maleza 7 al millar. Se indica un mínimo predial de $19.64 por bimestre. Se ignoran incentivos y descuentos por pago anticipado o por condición del contribuyente."
+  },
+  "_meta": {
+    "fuente": "txt",
+    "modelo": "gpt-5.4-mini"
+  },
+  "_meta_v2": {
+    "intentos": 1,
+    "requiere_revision": false,
+    "escalado": false,
+    "razon": null,
+    "tokens": {
+      "input": 5136,
+      "output": 279,
+      "cached": 3840
+    },
+    "cvegeo": "05020",
+    "estado": "coahuila",
+    "anio": 2019
+  }
+}

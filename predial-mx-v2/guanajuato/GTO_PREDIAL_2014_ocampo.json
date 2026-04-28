@@ -1,0 +1,51 @@
+{
+  "predial": {
+    "tipo_esquema": "tarifa_millar",
+    "tabla": [
+      {
+        "grupo": "urbano",
+        "clave": "inmuebles_urbanos_con_edificaciones",
+        "descripcion": "Inmuebles urbanos y suburbanos con edificaciones, según el valor del inmueble determinado o modificado",
+        "tasa_millar": 0.004,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "urbano",
+        "clave": "inmuebles_urbanos_sin_edificaciones",
+        "descripcion": "Inmuebles urbanos y suburbanos sin edificaciones, según el valor del inmueble determinado o modificado",
+        "tasa_millar": 0.0045,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "rustico",
+        "clave": "inmuebles_rusticos",
+        "descripcion": "Inmuebles rústicos, según el valor del inmueble determinado o modificado",
+        "tasa_millar": 0.0018,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      }
+    ],
+    "minimo_predial": null,
+    "comentarios": "Art. 4 establece tasas anuales al millar por categoría de predio (inmuebles urbanos y suburbanos con edificaciones, sin edificaciones, y rústicos). No se transcribe Art. 5 (valores unitarios catastrales) ni descuentos/bonificaciones. En el texto aparece también una fila histórica con tasas para inmuebles con valor determinado o modificado en años previos, pero el esquema aplicable al ejercicio 2014 queda expresado como catálogo de tasas por tipo de inmueble; no se modela como rangos por valor catastral."
+  },
+  "_meta": {
+    "fuente": "txt",
+    "modelo": "gpt-5.4-mini"
+  },
+  "_meta_v2": {
+    "intentos": 1,
+    "requiere_revision": false,
+    "escalado": false,
+    "razon": null,
+    "tokens": {
+      "input": 7400,
+      "output": 355,
+      "cached": 3840
+    },
+    "cvegeo": "11022",
+    "estado": "guanajuato",
+    "anio": 2014
+  }
+}

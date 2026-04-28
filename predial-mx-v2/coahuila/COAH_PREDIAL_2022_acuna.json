@@ -1,0 +1,79 @@
+{
+  "predial": {
+    "tipo_esquema": "tarifa_millar",
+    "tabla": [
+      {
+        "grupo": "urbano",
+        "clave": "predios_urbanos",
+        "descripcion": "Predios urbanos",
+        "tasa_millar": 3.0,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "rustico",
+        "clave": "predios_rusticos",
+        "descripcion": "Predios rústicos",
+        "tasa_millar": 3.0,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "rustico",
+        "clave": "rusticos_industriales_eolica_en_ejecucion",
+        "descripcion": "Predios rústicos industriales con explotación de energía renovable (eólica) en ejecución",
+        "tasa_millar": 5.0,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "rustico",
+        "clave": "rusticos_industriales_eolica_en_desarrollo",
+        "descripcion": "Predios rústicos industriales con explotación de energía renovable (eólica) en desarrollo",
+        "tasa_millar": 5.0,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "rustico",
+        "clave": "rusticos_industriales_eolica_en_proyecto",
+        "descripcion": "Predios rústicos industriales con explotación de energía renovable (eólica) en proyecto",
+        "tasa_millar": 5.0,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "urbano",
+        "clave": "predios_urbanos_no_edificados_sin_barda",
+        "descripcion": "Predios urbanos no edificados sin barda",
+        "tasa_millar": 3.0,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      }
+    ],
+    "minimo_predial": {
+      "monto": 58.0,
+      "periodicidad": "bimestral",
+      "unidad": "pesos"
+    },
+    "comentarios": "Art. 2: el impuesto predial se calcula sobre el valor catastral. Se transcriben las tasas por categoría: predios urbanos 3 al millar anual; predios rústicos 3 al millar anual; predios rústicos industriales con explotación de energía renovable (eólica) en ejecución/desarrollo/proyecto 5 al millar anual; predios urbanos no edificados sin barda 3 al millar anual. Mínimo predial: urbano $58.00 bimestral y rústico $47.00 bimestral. Se ignoran incentivos, descuentos, la cuota para Cruz Roja (2% con mínimo $3.58 bimestral) y gastos de notificación por no ser mecánica base del impuesto."
+  },
+  "_meta": {
+    "fuente": "txt",
+    "modelo": "gpt-5.4-mini"
+  },
+  "_meta_v2": {
+    "intentos": 1,
+    "requiere_revision": false,
+    "escalado": false,
+    "razon": null,
+    "tokens": {
+      "input": 6152,
+      "output": 549,
+      "cached": 3840
+    },
+    "cvegeo": "05002",
+    "estado": "coahuila",
+    "anio": 2022
+  }
+}

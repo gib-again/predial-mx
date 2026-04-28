@@ -1,0 +1,33 @@
+{
+  "predial": {
+    "tipo_esquema": "tasa_unica",
+    "tabla": [
+      {
+        "descripcion": "Tarifa del impuesto predial sobre valor catastral actualizado",
+        "tasa": 0.001,
+        "base_calculo": "valor_catastral",
+        "unidad": "porcentaje"
+      }
+    ],
+    "minimo_predial": null,
+    "comentarios": "Art. 13 fr. IV establece una tasa única del 0.10% sobre el valor catastral actualizado. Art. 13 también remite a anexos de valores catastrales para el cálculo del valor actualizado (no se transcriben porque son catastro). Art. 13 último párrafo: predios destinados a la producción agropecuaria pagan 10 al millar anual sobre el valor registrado o catastral; se trata de una tarifa paralela secundaria y no se integra en la tabla principal. Art. 15 menciona que las zonas residenciales se cobran con base al valor catastral actualizado del Gobierno del Estado, sin alterar la tasa general aquí transcrita."
+  },
+  "_meta": {
+    "fuente": "txt",
+    "modelo": "gpt-5.4-mini"
+  },
+  "_meta_v2": {
+    "intentos": 1,
+    "requiere_revision": false,
+    "escalado": false,
+    "razon": null,
+    "tokens": {
+      "input": 6541,
+      "output": 225,
+      "cached": 3840
+    },
+    "cvegeo": "31020",
+    "estado": "yucatan",
+    "anio": 2020
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "predial": {
+    "tipo_esquema": "tasa_unica",
+    "tabla": [
+      {
+        "descripcion": "Impuesto predial general: cuota fija más tasa sobre valor catastral",
+        "tasa": 0.002,
+        "base_calculo": "valor_catastral",
+        "unidad": "porcentaje"
+      }
+    ],
+    "minimo_predial": null,
+    "comentarios": "Art. 13: el impuesto predial se determina con una cuota fija de $60.00 y aplicando la tasa de 0.20% del valor catastral vigente. Art. 16 establece un esquema separado sobre rentas o frutos civiles mensuales (2% casas habitación y 2% actividades comerciales), que no se incluye en la mecánica principal del predial sobre valor catastral. Se ignora la tabla de valores unitarios de terreno y construcción porque es catastro/base de cálculo, no tarifa del impuesto."
+  },
+  "_meta": {
+    "fuente": "txt",
+    "modelo": "gpt-5.4-mini"
+  },
+  "_meta_v2": {
+    "intentos": 1,
+    "requiere_revision": false,
+    "escalado": false,
+    "razon": null,
+    "tokens": {
+      "input": 6155,
+      "output": 199,
+      "cached": 3840
+    },
+    "cvegeo": "31026",
+    "estado": "yucatan",
+    "anio": 2011
+  }
+}

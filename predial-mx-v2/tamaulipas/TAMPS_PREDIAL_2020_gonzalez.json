@@ -1,0 +1,47 @@
+{
+  "predial": {
+    "tipo_esquema": "tarifa_millar",
+    "tabla": [
+      {
+        "grupo": "rustico",
+        "clave": "predios_rusticos",
+        "descripcion": "Predios rústicos sobre el valor catastral",
+        "tasa_millar": 0.0015,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "urbano",
+        "clave": "predios_urbanos_suburbanos_y_rusticos",
+        "descripcion": "Predios urbanos, suburbanos y rústicos para el año 2020 sobre el valor catastral",
+        "tasa_millar": 0.0015,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      }
+    ],
+    "minimo_predial": {
+      "monto": 3.5,
+      "periodicidad": "anual",
+      "unidad": "uma"
+    },
+    "comentarios": "Art. 11 establece 1.5 al millar anual para predios rústicos sobre valor catastral. Art. 12 establece 1.5 al millar para predios urbanos, suburbanos y rústicos para 2020. Se ignora Art. 13 por corresponder a avalúos catastrales y no a la mecánica del impuesto predial. El texto además indica un mínimo anual de 3.5 veces el valor diario de la UMA."
+  },
+  "_meta": {
+    "fuente": "txt",
+    "modelo": "gpt-5.4-mini"
+  },
+  "_meta_v2": {
+    "intentos": 1,
+    "requiere_revision": false,
+    "escalado": false,
+    "razon": null,
+    "tokens": {
+      "input": 5299,
+      "output": 287,
+      "cached": 3840
+    },
+    "cvegeo": "28012",
+    "estado": "tamaulipas",
+    "anio": 2020
+  }
+}

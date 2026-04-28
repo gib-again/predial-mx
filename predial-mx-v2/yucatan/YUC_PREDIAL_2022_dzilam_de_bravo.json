@@ -1,0 +1,33 @@
+{
+  "predial": {
+    "tipo_esquema": "tasa_unica",
+    "tabla": [
+      {
+        "descripcion": "Tasa general anual sobre el valor catastral actualizado",
+        "tasa": 0.0025,
+        "base_calculo": "valor_catastral",
+        "unidad": "porcentaje"
+      }
+    ],
+    "minimo_predial": null,
+    "comentarios": "Art. 13, fracción IV: tarifa general del impuesto predial de 0.25% del valor catastral actualizado. Se ignoran las tablas de valores catastrales porque son insumos de valuación, no la mecánica del impuesto. También aparece una tarifa paralela para predios sin valor catastral determinable (habitacional $170.00, comercial $550.00) y agropecuarios $20.00 por hectárea, pero no se integra en la tabla principal porque el esquema dominante del artículo es una tasa única sobre valor catastral."
+  },
+  "_meta": {
+    "fuente": "txt",
+    "modelo": "gpt-5.4-mini"
+  },
+  "_meta_v2": {
+    "intentos": 1,
+    "requiere_revision": false,
+    "escalado": false,
+    "razon": null,
+    "tokens": {
+      "input": 6365,
+      "output": 202,
+      "cached": 3840
+    },
+    "cvegeo": "31028",
+    "estado": "yucatan",
+    "anio": 2022
+  }
+}

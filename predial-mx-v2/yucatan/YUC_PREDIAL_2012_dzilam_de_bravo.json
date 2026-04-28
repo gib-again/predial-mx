@@ -1,0 +1,33 @@
+{
+  "predial": {
+    "tipo_esquema": "cuota_fija_simple",
+    "tabla": [
+      {
+        "descripcion": "Habitacional",
+        "monto": 60.0,
+        "periodicidad": "anual",
+        "unidad": "pesos"
+      }
+    ],
+    "minimo_predial": null,
+    "comentarios": "Artículo 13 establece dos tarifas paralelas por categoría: Habitacional $60.00 y Comercial $150.00. Se elige como tabla principal la tarifa simple de Habitacional por no ser posible mezclar ambas categorías en una sola tabla de cuota_fija_simple. Tarifa secundaria no incluida en la tabla principal: Comercial $150.00 anual (Art. 13). También el Art. 13 prevé una tarifa separada para predios destinados a la producción agropecuaria de 10 al millar anual sobre el valor registrado o catastral, además de un cobro de $2.00 por mecate; no se incluye en la tabla principal por ser tarifa paralela y estructura distinta. Se ignora el impuesto sobre rentas o frutos civiles del Art. 15 por no corresponder al impuesto predial tarifado sobre el inmueble."
+  },
+  "_meta": {
+    "fuente": "txt",
+    "modelo": "gpt-5.4"
+  },
+  "_meta_v2": {
+    "intentos": 3,
+    "requiere_revision": false,
+    "escalado": true,
+    "razon": "escalado_a_gpt-5.4_tras_2x_mini_fallido",
+    "tokens": {
+      "input": 16120,
+      "output": 898,
+      "cached": 13568
+    },
+    "cvegeo": "31028",
+    "estado": "yucatan",
+    "anio": 2012
+  }
+}

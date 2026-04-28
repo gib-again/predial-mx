@@ -1,0 +1,53 @@
+{
+  "predial": {
+    "tipo_esquema": "otro_no_clasificado",
+    "categoria": "error_segmentacion",
+    "descripcion_estructural": "El texto del impuesto predial contiene tablas progresivas para predios sin edificaciones, pero la OCR está severamente fragmentada y no permite reconstruir con certeza todos los brackets, límites y tasas marginales sin inventar datos. Además, el segmento incluye extensamente tablas catastrales de valores unitarios (artículos 6 y 7), que no son la tarifa del impuesto y contaminan la extracción.",
+    "tabla_cruda": [
+      {
+        "descripcion": "Fracción I.a) Urbanos, suburbanos y rústicos con edificaciones",
+        "valores": "0.234%"
+      },
+      {
+        "descripcion": "Fracción I.b) Urbanos, suburbanos y rústicos sin edificaciones",
+        "valores": "Superficie de terreno en metros cuadrados; límites observables: 0.01-1000.00, 1000.01-3000.00, 3000.01-5000.00, 5000.01-7000.00, 7000.01-9000.00, 9000.01-11000.00, 11000.01 en adelante; tasas observables en OCR: 0.439%, 0.460%, 0.481%, 0.501%, 0.650%, 0.800%, 1%"
+      },
+      {
+        "descripcion": "Fracción II.a) Urbanos, suburbanos y rústicos con edificaciones",
+        "valores": "0.271%"
+      },
+      {
+        "descripcion": "Fracción II.b) Urbanos, suburbanos y rústicos sin edificaciones",
+        "valores": "Superficie de terreno en metros cuadrados; límites observables: 0.01-1000.00, 1000.01-3000.00, 3000.01-5000.00, 5000.01-7000.00, 7000.01-9000.00, 9000.01-11000.00, 11000.01 en adelante; tasas observables en OCR: 0.548%, 0.574%, 0.601%, 0.626%, 0.812%, 1%, 1.249%"
+      },
+      {
+        "descripcion": "Fracción III.a) Urbanos, suburbanos y rústicos con edificaciones",
+        "valores": "0.681%"
+      },
+      {
+        "descripcion": "Fracción III.b) Urbanos, suburbanos y rústicos sin edificaciones",
+        "valores": "Superficie de terreno en metros cuadrados; límites observables: 0.01-1000.00, 1000.01-3000.00, 3000.01-5000.00, 5000.01-7000.00, 7000.01-9000.00, 9000.01-11000.00, 11000.01 en adelante; tasas observables en OCR: 1.35%, 1.42%, 1.48%, 1.54%, 1.60%, 1.65%, 1.70%"
+      }
+    ],
+    "minimo_predial": null,
+    "comentarios": "Se observa una estructura mixta en el artículo 5: para inmuebles con edificaciones hay tasas únicas por antigüedad de valuación; para inmuebles sin edificaciones hay tablas progresivas aparentes por superficie/valor del metro cuadrado del terreno, pero la OCR no preserva de manera confiable la disposición matricial necesaria para calcular cuota fija y tasa marginal por rango. No se transcriben los artículos 6 y 7 porque corresponden a valores catastrales y reglas de valuación, no a la tarifa del impuesto predial."
+  },
+  "_meta": {
+    "fuente": "txt",
+    "modelo": "gpt-5.4"
+  },
+  "_meta_v2": {
+    "intentos": 3,
+    "requiere_revision": true,
+    "escalado": true,
+    "razon": "clasificado_como_otro_no_clasificado_tras_escalacion",
+    "tokens": {
+      "input": 186261,
+      "output": 3632,
+      "cached": 8704
+    },
+    "cvegeo": "11020",
+    "estado": "guanajuato",
+    "anio": 2019
+  }
+}

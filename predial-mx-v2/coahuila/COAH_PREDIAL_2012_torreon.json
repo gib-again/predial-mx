@@ -1,0 +1,55 @@
+{
+  "predial": {
+    "tipo_esquema": "progresivo",
+    "tabla": [
+      {
+        "n_rango": 1,
+        "inferior": 0.01,
+        "superior": 40000.0,
+        "cuota_fija": 75.18,
+        "tasa_marginal": 0.0005
+      },
+      {
+        "n_rango": 2,
+        "inferior": 40000.01,
+        "superior": 80000.0,
+        "cuota_fija": 95.92,
+        "tasa_marginal": 0.001
+      },
+      {
+        "n_rango": 3,
+        "inferior": 80000.01,
+        "superior": 120000.0,
+        "cuota_fija": 137.4,
+        "tasa_marginal": 0.0015
+      },
+      {
+        "n_rango": 4,
+        "inferior": 120000.01,
+        "superior": null,
+        "cuota_fija": 199.62,
+        "tasa_marginal": 0.00225
+      }
+    ],
+    "minimo_predial": null,
+    "comentarios": "Art. 2 fracción I: tabla general del impuesto predial por valor catastral con cuota fija y tasa marginal sobre el excedente. Art. 2 fracción III: predios propiedad de instituciones educativas no públicas pagan 1 al millar del valor catastral; se trata de una tarifa paralela y no se incorpora en la tabla principal. Se ignoran los incentivos/bonificaciones de las fracciones II, IV, V, VI y los artículos 3 y 4 por no formar parte de la mecánica base de cálculo."
+  },
+  "_meta": {
+    "fuente": "txt",
+    "modelo": "gpt-5.4-mini"
+  },
+  "_meta_v2": {
+    "intentos": 1,
+    "requiere_revision": false,
+    "escalado": false,
+    "razon": null,
+    "tokens": {
+      "input": 6561,
+      "output": 320,
+      "cached": 3840
+    },
+    "cvegeo": "05035",
+    "estado": "coahuila",
+    "anio": 2012
+  }
+}

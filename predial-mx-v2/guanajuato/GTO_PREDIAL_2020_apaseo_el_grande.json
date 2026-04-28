@@ -1,0 +1,67 @@
+{
+  "predial": {
+    "tipo_esquema": "tarifa_millar",
+    "tabla": [
+      {
+        "grupo": "urbano",
+        "clave": "edificado_urbano_suburbano",
+        "descripcion": "Inmuebles urbanos y suburbanos con valor determinado o modificado: edificaciones",
+        "tasa_millar": 0.0024,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "urbano",
+        "clave": "urbano_suburbano_sin_edificaciones",
+        "descripcion": "Inmuebles urbanos y suburbanos sin edificaciones",
+        "tasa_millar": 0.0045,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "rustico",
+        "clave": "rustico",
+        "descripcion": "Inmuebles rústicos",
+        "tasa_millar": 0.0018,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "urbano",
+        "clave": "edificado_anteriores_1993",
+        "descripcion": "Con anterioridad al año de 1993",
+        "tasa_millar": 0.013,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "urbano",
+        "clave": "suburbano_anteriores_1993",
+        "descripcion": "Con anterioridad al año de 1993",
+        "tasa_millar": 0.012,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      }
+    ],
+    "minimo_predial": null,
+    "comentarios": "Art. 4 establece tasas anuales por grupo y antigüedad del inmueble. Se transcriben las tasas al millar para inmuebles urbanos/suburbanos con valor determinado o modificado: edificaciones (2.4 al millar), inmuebles urbanos y suburbanos sin edificaciones (4.5 al millar), inmuebles rústicos (1.8 al millar). También aparecen tasas diferenciadas para inmuebles con anterioridad al año 1993: 13 al millar y 12 al millar, tal como se leen en el texto, sin reinterpretar su distribución exacta más allá de la fuente. El artículo 5 reproduce valores unitarios de catastro, no se incluyen por no ser mecánica de cálculo del impuesto."
+  },
+  "_meta": {
+    "fuente": "txt",
+    "modelo": "gpt-5.4-mini"
+  },
+  "_meta_v2": {
+    "intentos": 1,
+    "requiere_revision": false,
+    "escalado": false,
+    "razon": null,
+    "tokens": {
+      "input": 7363,
+      "output": 468,
+      "cached": 3840
+    },
+    "cvegeo": "11005",
+    "estado": "guanajuato",
+    "anio": 2020
+  }
+}

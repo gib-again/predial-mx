@@ -1,0 +1,155 @@
+{
+  "predial": {
+    "tipo_esquema": "mixto",
+    "tabla": [
+      {
+        "n_rango": 1,
+        "inferior": 0.0,
+        "superior": 60000.0,
+        "columnas": [
+          {
+            "nombre": "habitacional_edificado",
+            "valor": 94.8,
+            "tipo": "cuota_fija",
+            "unidad": "pesos"
+          },
+          {
+            "nombre": "no_habitacional_edificado",
+            "valor": 126.0,
+            "tipo": "cuota_fija",
+            "unidad": "pesos"
+          },
+          {
+            "nombre": "sin_barda",
+            "valor": 120.0,
+            "tipo": "cuota_fija",
+            "unidad": "pesos"
+          },
+          {
+            "nombre": "con_barda",
+            "valor": 189.0,
+            "tipo": "cuota_fija",
+            "unidad": "pesos"
+          }
+        ]
+      },
+      {
+        "n_rango": 2,
+        "inferior": 60000.01,
+        "superior": 90000.0,
+        "columnas": [
+          {
+            "nombre": "habitacional_edificado",
+            "valor": 142.2,
+            "tipo": "cuota_fija",
+            "unidad": "pesos"
+          },
+          {
+            "nombre": "no_habitacional_edificado",
+            "valor": 189.0,
+            "tipo": "cuota_fija",
+            "unidad": "pesos"
+          },
+          {
+            "nombre": "sin_barda",
+            "valor": 180.0,
+            "tipo": "cuota_fija",
+            "unidad": "pesos"
+          },
+          {
+            "nombre": "con_barda",
+            "valor": 283.5,
+            "tipo": "cuota_fija",
+            "unidad": "pesos"
+          }
+        ]
+      },
+      {
+        "n_rango": 3,
+        "inferior": 90000.01,
+        "superior": 135000.0,
+        "columnas": [
+          {
+            "nombre": "habitacional_edificado",
+            "valor": 213.3,
+            "tipo": "cuota_fija",
+            "unidad": "pesos"
+          },
+          {
+            "nombre": "no_habitacional_edificado",
+            "valor": 283.5,
+            "tipo": "cuota_fija",
+            "unidad": "pesos"
+          },
+          {
+            "nombre": "sin_barda",
+            "valor": 270.0,
+            "tipo": "cuota_fija",
+            "unidad": "pesos"
+          },
+          {
+            "nombre": "con_barda",
+            "valor": 425.25,
+            "tipo": "cuota_fija",
+            "unidad": "pesos"
+          }
+        ]
+      },
+      {
+        "n_rango": 4,
+        "inferior": 135000.01,
+        "superior": null,
+        "columnas": [
+          {
+            "nombre": "habitacional_edificado",
+            "valor": 1.58,
+            "tipo": "tasa_millar",
+            "unidad": "al_millar"
+          },
+          {
+            "nombre": "no_habitacional_edificado",
+            "valor": 2.1,
+            "tipo": "tasa_millar",
+            "unidad": "al_millar"
+          },
+          {
+            "nombre": "sin_barda",
+            "valor": 2.1,
+            "tipo": "tasa_millar",
+            "unidad": "al_millar"
+          },
+          {
+            "nombre": "con_barda",
+            "valor": 3.15,
+            "tipo": "tasa_millar",
+            "unidad": "al_millar"
+          }
+        ]
+      }
+    ],
+    "minimo_predial": {
+      "monto": 17.0,
+      "periodicidad": "bimestral",
+      "unidad": "pesos"
+    },
+    "comentarios": "Art. 3, fracción I: predios urbanos usan tabla por rangos de valor catastral con cuotas fijas en pesos en los tres primeros brackets y tasas al millar en el último bracket abierto (heterogeneidad de unidades), por lo que se clasifica como mixto. La fracción IV establece tarifa paralela para predios rústicos: 4 al millar anual sobre valor catastral; se reporta sólo en comentarios por ser un grupo separado. Se ignoran incentivos y descuentos de las fracciones II, III, V, VI y VII."
+  },
+  "_meta": {
+    "fuente": "txt",
+    "modelo": "gpt-5.4-mini"
+  },
+  "_meta_v2": {
+    "intentos": 1,
+    "requiere_revision": false,
+    "escalado": false,
+    "razon": null,
+    "tokens": {
+      "input": 6067,
+      "output": 670,
+      "cached": 3840
+    },
+    "cvegeo": "05025",
+    "estado": "coahuila",
+    "anio": 2013
+  }
+}

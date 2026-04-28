@@ -1,0 +1,51 @@
+{
+  "predial": {
+    "tipo_esquema": "tarifa_millar",
+    "tabla": [
+      {
+        "grupo": "urbano",
+        "clave": "inmuebles_urbanos_y_suburbanos_con_edificaciones",
+        "descripcion": "A la entrada en vigor de la presente Ley; inmuebles urbanos y suburbanos con edificaciones",
+        "tasa_millar": 0.0024,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "urbano",
+        "clave": "inmuebles_urbanos_y_suburbanos_sin_edificaciones",
+        "descripcion": "A la entrada en vigor de la presente Ley; inmuebles urbanos y suburbanos sin edificaciones",
+        "tasa_millar": 0.0045,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "rustico",
+        "clave": "inmuebles_rusticos",
+        "descripcion": "A la entrada en vigor de la presente Ley; inmuebles rústicos",
+        "tasa_millar": 0.0018,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      }
+    ],
+    "minimo_predial": null,
+    "comentarios": "Art. 4 establece tasas anuales al millar por categoría de inmueble, sin rangos de valor catastral. Se transcriben las tasas predominantes vigentes; el artículo muestra además tasas históricas por antigüedad del inmueble. Art. 4 también contiene tasas paralelas históricas para inmuebles urbanos/suburbanos con y sin edificaciones y para rústicos: 2.4 al millar, 4.5 al millar, 1.8 al millar; 8, 15 y 6 al millar; 13, 13 y 12 al millar, según antigüedad."
+  },
+  "_meta": {
+    "fuente": "txt",
+    "modelo": "gpt-5.4-mini"
+  },
+  "_meta_v2": {
+    "intentos": 1,
+    "requiere_revision": false,
+    "escalado": false,
+    "razon": null,
+    "tokens": {
+      "input": 7472,
+      "output": 373,
+      "cached": 3840
+    },
+    "cvegeo": "11018",
+    "estado": "guanajuato",
+    "anio": 2020
+  }
+}

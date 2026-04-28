@@ -1,0 +1,51 @@
+{
+  "predial": {
+    "tipo_esquema": "tarifa_millar",
+    "tabla": [
+      {
+        "grupo": "urbano",
+        "clave": "urbano_con_edificacion",
+        "descripcion": "Inmuebles urbanos y suburbanos con edificación, según antigüedad del valor determinado o modificada",
+        "tasa_millar": 0.0024,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "urbano",
+        "clave": "urbano_sin_edificacion",
+        "descripcion": "Inmuebles urbanos y suburbanos sin edificación, según antigüedad del valor determinado o modificada",
+        "tasa_millar": 0.0045,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "rustico",
+        "clave": "rustico_con_edificacion",
+        "descripcion": "Inmuebles rústicos con edificación, según antigüedad del valor determinado o modificada",
+        "tasa_millar": 0.0018,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      }
+    ],
+    "minimo_predial": null,
+    "comentarios": "Art. 4: se transcribe la tarifa de predial como catálogo de tasas al millar por tipo de inmueble y condición de edificación/antigüedad. La tabla visible en el texto distingue inmuebles urbanos y suburbanos con edificación, urbanos y suburbanos sin edificación, y rústicos con edificación, con tasas diferenciadas por cuatro periodos de antigüedad (entrada en vigor de la ley; 2002-2019; anterior a 2002 hasta 1993; anterior a 1993). Se toma la tasa mostrada en el primer bloque visible para cada categoría porque el texto OCR presenta una tabla multirrenglón sin rangos de valor catastral. Art. 4 también contiene tasas paralelas por grupo/antigüedad; no se mezclan en una sola estructura de brackets. Art. 5 y 6 contienen valores unitarios y criterios de avalúo, no se incorporan como mecánica de cálculo del impuesto."
+  },
+  "_meta": {
+    "fuente": "txt",
+    "modelo": "gpt-5.4-mini"
+  },
+  "_meta_v2": {
+    "intentos": 1,
+    "requiere_revision": false,
+    "escalado": false,
+    "razon": null,
+    "tokens": {
+      "input": 7403,
+      "output": 436,
+      "cached": 3840
+    },
+    "cvegeo": "11043",
+    "estado": "guanajuato",
+    "anio": 2020
+  }
+}

@@ -1,0 +1,183 @@
+{
+  "predial": {
+    "tipo_esquema": "mixto",
+    "tabla": [
+      {
+        "n_rango": 1,
+        "inferior": 0.01,
+        "superior": 2000.0,
+        "columnas": [
+          {
+            "nombre": "general",
+            "valor": 1.0,
+            "tipo": "cuota_fija",
+            "unidad": "pesos"
+          }
+        ]
+      },
+      {
+        "n_rango": 2,
+        "inferior": 2000.01,
+        "superior": 4000.0,
+        "columnas": [
+          {
+            "nombre": "general",
+            "valor": 1.2,
+            "tipo": "cuota_fija",
+            "unidad": "pesos"
+          }
+        ]
+      },
+      {
+        "n_rango": 3,
+        "inferior": 4000.01,
+        "superior": 6000.0,
+        "columnas": [
+          {
+            "nombre": "general",
+            "valor": 1.4,
+            "tipo": "cuota_fija",
+            "unidad": "pesos"
+          }
+        ]
+      },
+      {
+        "n_rango": 4,
+        "inferior": 6000.01,
+        "superior": 8000.0,
+        "columnas": [
+          {
+            "nombre": "general",
+            "valor": 1.6,
+            "tipo": "cuota_fija",
+            "unidad": "pesos"
+          }
+        ]
+      },
+      {
+        "n_rango": 5,
+        "inferior": 8000.01,
+        "superior": 10000.0,
+        "columnas": [
+          {
+            "nombre": "general",
+            "valor": 1.8,
+            "tipo": "cuota_fija",
+            "unidad": "pesos"
+          }
+        ]
+      },
+      {
+        "n_rango": 6,
+        "inferior": 10000.01,
+        "superior": 15000.0,
+        "columnas": [
+          {
+            "nombre": "general",
+            "valor": 2.0,
+            "tipo": "cuota_fija",
+            "unidad": "pesos"
+          }
+        ]
+      },
+      {
+        "n_rango": 7,
+        "inferior": 15000.01,
+        "superior": 20000.0,
+        "columnas": [
+          {
+            "nombre": "general",
+            "valor": 2.2,
+            "tipo": "cuota_fija",
+            "unidad": "pesos"
+          }
+        ]
+      },
+      {
+        "n_rango": 8,
+        "inferior": 20000.01,
+        "superior": 30000.0,
+        "columnas": [
+          {
+            "nombre": "general",
+            "valor": 3.0,
+            "tipo": "cuota_fija",
+            "unidad": "pesos"
+          }
+        ]
+      },
+      {
+        "n_rango": 9,
+        "inferior": 30000.01,
+        "superior": 40000.0,
+        "columnas": [
+          {
+            "nombre": "general",
+            "valor": 3.6,
+            "tipo": "cuota_fija",
+            "unidad": "pesos"
+          }
+        ]
+      },
+      {
+        "n_rango": 10,
+        "inferior": 40000.01,
+        "superior": 50000.0,
+        "columnas": [
+          {
+            "nombre": "general",
+            "valor": 4.0,
+            "tipo": "cuota_fija",
+            "unidad": "pesos"
+          }
+        ]
+      },
+      {
+        "n_rango": 11,
+        "inferior": 50000.01,
+        "superior": 100000.0,
+        "columnas": [
+          {
+            "nombre": "general",
+            "valor": 6.0,
+            "tipo": "cuota_fija",
+            "unidad": "pesos"
+          }
+        ]
+      },
+      {
+        "n_rango": 12,
+        "inferior": 100000.01,
+        "superior": null,
+        "columnas": [
+          {
+            "nombre": "general",
+            "valor": 0.003,
+            "tipo": "tasa_millar",
+            "unidad": "al_millar"
+          }
+        ]
+      }
+    ],
+    "minimo_predial": null,
+    "comentarios": "Art. 12: el predio urbano y rústico con o sin construcción usa una tabla por rangos de valor catastral con cuotas fijas en pesos en los primeros 11 brackets y un último bracket abierto con tasa al millar (0.003). Eso lo clasifica como mixto, patrón B (escalonada con outlier final). Además, el texto incluye tarifas paralelas no integradas en la tabla principal: predio rústico $3.00 por hectárea, y predio destinado a producción agropecuaria 10 al millar anual sobre valor registrado o catastral; se consignan sólo como referencia estructural. Se ignoraron recargos y descuentos."
+  },
+  "_meta": {
+    "fuente": "txt",
+    "modelo": "gpt-5.4-mini"
+  },
+  "_meta_v2": {
+    "intentos": 1,
+    "requiere_revision": false,
+    "escalado": false,
+    "razon": null,
+    "tokens": {
+      "input": 5643,
+      "output": 758,
+      "cached": 3840
+    },
+    "cvegeo": "31012",
+    "estado": "yucatan",
+    "anio": 2013
+  }
+}

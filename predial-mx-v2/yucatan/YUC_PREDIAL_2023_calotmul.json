@@ -1,0 +1,33 @@
+{
+  "predial": {
+    "tipo_esquema": "tasa_unica",
+    "tabla": [
+      {
+        "descripcion": "Impuesto predial sobre el valor catastral actualizado",
+        "tasa": 0.001,
+        "base_calculo": "valor_catastral",
+        "unidad": "porcentaje"
+      }
+    ],
+    "minimo_predial": null,
+    "comentarios": "Art. 4 señala que la tarifa del impuesto predial (C) se propone sea el 0.10% del valor catastral actualizado, con fórmula C=(A+B)(.10)/100. El texto mostrado no aporta otra tabla tarifaria aplicable en el segmento transcrito; los artículos 5 y 6 no detallan mecánica adicional de cálculo en este extracto."
+  },
+  "_meta": {
+    "fuente": "txt",
+    "modelo": "gpt-5.4-mini"
+  },
+  "_meta_v2": {
+    "intentos": 1,
+    "requiere_revision": false,
+    "escalado": false,
+    "razon": null,
+    "tokens": {
+      "input": 5850,
+      "output": 159,
+      "cached": 3840
+    },
+    "cvegeo": "31008",
+    "estado": "yucatan",
+    "anio": 2023
+  }
+}

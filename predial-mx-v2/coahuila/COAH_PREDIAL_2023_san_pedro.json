@@ -1,0 +1,63 @@
+{
+  "predial": {
+    "tipo_esquema": "tarifa_millar",
+    "tabla": [
+      {
+        "grupo": "urbano",
+        "clave": "industrial",
+        "descripcion": "Predios urbanos industriales",
+        "tasa_millar": 0.0027,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "urbano",
+        "clave": "comercial",
+        "descripcion": "Predios urbanos comerciales",
+        "tasa_millar": 0.0026,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "urbano",
+        "clave": "habitacional",
+        "descripcion": "Predios urbanos habitacionales",
+        "tasa_millar": 0.0025,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "rustico",
+        "clave": "rustico",
+        "descripcion": "Predios rústicos",
+        "tasa_millar": 0.003,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      }
+    ],
+    "minimo_predial": {
+      "monto": 39.0,
+      "periodicidad": "bimestral",
+      "unidad": "pesos"
+    },
+    "comentarios": "Art. 2: para predios urbanos la ley fija tasas diferenciadas al millar anual por tipo de uso (industrial 2.7, comercial 2.6, habitacional 2.5). También establece que los predios urbanos sin edificación pagarán 1.33 veces lo fijado para predios con edificación, pero no se incorpora como fila separada para no mezclar una regla de ajuste con la tarifa principal. Art. 2 fracc. II: predios rústicos 3 al millar anual. Art. 2 fracc. III: predios suburbanos habitacionales o solares enclavados en congregaciones/ejidos pagan $39.00 por bimestre; se consigna como mínimo predial por existir además la fracción IV que señala que el monto del impuesto no será inferior a $39.00 por bimestre. Art. 2 también contiene supuestos ajenos a la tarifa principal: predios ejidales con actividad agrícola y establecimientos metalúrgicos o mineros con extracción pagan 3% sobre producción anual comercializada, lo que constituye una tarifa paralela no integrada a la tabla principal. Se ignoran incentivos, condonaciones y bonificaciones conforme a la instrucción."
+  },
+  "_meta": {
+    "fuente": "txt",
+    "modelo": "gpt-5.4-mini"
+  },
+  "_meta_v2": {
+    "intentos": 1,
+    "requiere_revision": false,
+    "escalado": false,
+    "razon": null,
+    "tokens": {
+      "input": 6659,
+      "output": 489,
+      "cached": 3840
+    },
+    "cvegeo": "05033",
+    "estado": "coahuila",
+    "anio": 2023
+  }
+}

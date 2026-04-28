@@ -1,0 +1,51 @@
+{
+  "predial": {
+    "tipo_esquema": "tarifa_millar",
+    "tabla": [
+      {
+        "grupo": "urbano",
+        "clave": "inmuebles_urbanos_y_suburbanos_con_edificaciones",
+        "descripcion": "Inmuebles urbanos y suburbanos con edificaciones, con valor determinado o modificado a la entrada en vigor de la ley",
+        "tasa_millar": 0.024,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "urbano",
+        "clave": "inmuebles_urbanos_y_suburbanos_sin_edificaciones",
+        "descripcion": "Inmuebles urbanos y suburbanos sin edificaciones, con valor determinado o modificado a la entrada en vigor de la ley",
+        "tasa_millar": 0.045,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "rustico",
+        "clave": "inmuebles_rusticos",
+        "descripcion": "Inmuebles rústicos, con valor determinado o modificado a la entrada en vigor de la ley",
+        "tasa_millar": 0.018,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      }
+    ],
+    "minimo_predial": null,
+    "comentarios": "Art. 4 establece tasas al millar anuales por grupo de inmuebles: urbanos y suburbanos con edificaciones (24 al millar), urbanos y suburbanos sin edificaciones (4.5 al millar) e inmuebles rústicos (1.8 al millar) al inicio de la ley. Se omiten las tasas históricas por años anteriores por corresponder a ejercicios/antigüedad y no a una mecánica progresiva por rangos. El resto del articulado transcrito corresponde a valores unitarios y criterios de valuación (Arts. 5 y 6), no a la mecánica tarifaria del predial."
+  },
+  "_meta": {
+    "fuente": "txt",
+    "modelo": "gpt-5.4-mini"
+  },
+  "_meta_v2": {
+    "intentos": 1,
+    "requiere_revision": false,
+    "escalado": false,
+    "razon": null,
+    "tokens": {
+      "input": 7645,
+      "output": 390,
+      "cached": 3840
+    },
+    "cvegeo": "11016",
+    "estado": "guanajuato",
+    "anio": 2025
+  }
+}

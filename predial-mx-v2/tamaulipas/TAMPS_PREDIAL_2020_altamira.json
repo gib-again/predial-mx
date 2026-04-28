@@ -1,0 +1,90 @@
+{
+  "predial": {
+    "tipo_esquema": "progresivo",
+    "tabla": [
+      {
+        "n_rango": 1,
+        "inferior": 0.01,
+        "superior": 85000.0,
+        "cuota_fija": 0.0,
+        "tasa_marginal": 0.0015
+      },
+      {
+        "n_rango": 2,
+        "inferior": 85000.01,
+        "superior": 100000.0,
+        "cuota_fija": 242.0,
+        "tasa_marginal": 0.0016
+      },
+      {
+        "n_rango": 3,
+        "inferior": 100000.01,
+        "superior": 200000.0,
+        "cuota_fija": 266.0,
+        "tasa_marginal": 0.0017
+      },
+      {
+        "n_rango": 4,
+        "inferior": 200000.01,
+        "superior": 300000.0,
+        "cuota_fija": 436.0,
+        "tasa_marginal": 0.0018
+      },
+      {
+        "n_rango": 5,
+        "inferior": 300000.01,
+        "superior": 400000.0,
+        "cuota_fija": 616.0,
+        "tasa_marginal": 0.002
+      },
+      {
+        "n_rango": 6,
+        "inferior": 400000.01,
+        "superior": 500000.0,
+        "cuota_fija": 816.0,
+        "tasa_marginal": 0.0022
+      },
+      {
+        "n_rango": 7,
+        "inferior": 500000.01,
+        "superior": 600000.0,
+        "cuota_fija": 1036.0,
+        "tasa_marginal": 0.0024
+      },
+      {
+        "n_rango": 8,
+        "inferior": 600000.01,
+        "superior": 700000.0,
+        "cuota_fija": 1276.0,
+        "tasa_marginal": 0.0026
+      },
+      {
+        "n_rango": 9,
+        "inferior": 700000.01,
+        "superior": null,
+        "cuota_fija": 1536.0,
+        "tasa_marginal": 0.0028
+      }
+    ],
+    "minimo_predial": null,
+    "comentarios": "Art. 10 fracc. I: tarifa progresiva para predios con construcción, urbanos y suburbanos, con cuota fija y tasa anual aplicable sobre el excedente del límite inferior. Art. 10 fracc. II: predios rústicos pagan 1.5 al millar anual sobre el valor catastral; se trata de tarifa paralela y no se incorpora en la tabla principal. Fraccs. III, IV y V-VI describen incrementos sobre la tasa de la fracc. II para baldíos o ciertos supuestos, pero no se transcriben como mecánica principal de la tabla."
+  },
+  "_meta": {
+    "fuente": "txt",
+    "modelo": "gpt-5.4-mini"
+  },
+  "_meta_v2": {
+    "intentos": 1,
+    "requiere_revision": false,
+    "escalado": false,
+    "razon": null,
+    "tokens": {
+      "input": 5985,
+      "output": 515,
+      "cached": 3840
+    },
+    "cvegeo": "28003",
+    "estado": "tamaulipas",
+    "anio": 2020
+  }
+}

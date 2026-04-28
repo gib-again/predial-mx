@@ -1,0 +1,51 @@
+{
+  "predial": {
+    "tipo_esquema": "tarifa_millar",
+    "tabla": [
+      {
+        "grupo": "urbano",
+        "clave": "urbano_con_edificaciones",
+        "descripcion": "Inmuebles urbanos y suburbanos con edificaciones, para inmuebles con valor determinado o modificado: a la entrada en vigor de la presente ley y durante 2002 hasta 2014, inclusive.",
+        "tasa_millar": 0.0024,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "urbano",
+        "clave": "urbano_sin_edificaciones",
+        "descripcion": "Inmuebles urbanos y suburbanos sin edificaciones, para inmuebles con valor determinado o modificado: a la entrada en vigor de la presente ley y durante 2002 hasta 2014, inclusive.",
+        "tasa_millar": 0.0045,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "rustico",
+        "clave": "rustico_general",
+        "descripcion": "Inmuebles rústicos, para inmuebles con valor determinado o modificado: a la entrada en vigor de la presente ley y durante 2002 hasta 2014, inclusive.",
+        "tasa_millar": 0.0018,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      }
+    ],
+    "minimo_predial": null,
+    "comentarios": "Art. 4 establece tasas anuales al millar por categoría de predio para inmuebles con valor determinado o modificado. Se omiten las tablas de valores unitarios de los artículos 5 y 6 por ser materia de catastro/avalúo, no mecánica del impuesto. El texto también muestra tasas históricas para otros periodos (con anterioridad a 2002 y antes de 1993), pero la mecánica vigente para 2015 se transcribe con la tasa aplicable del artículo 4; no se integran como tarifa paralela porque no constituyen una estructura acumulable sino supuestos temporales alternativos."
+  },
+  "_meta": {
+    "fuente": "txt",
+    "modelo": "gpt-5.4-mini"
+  },
+  "_meta_v2": {
+    "intentos": 1,
+    "requiere_revision": false,
+    "escalado": false,
+    "razon": null,
+    "tokens": {
+      "input": 6688,
+      "output": 420,
+      "cached": 3840
+    },
+    "cvegeo": "11006",
+    "estado": "guanajuato",
+    "anio": 2015
+  }
+}

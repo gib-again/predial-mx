@@ -1,0 +1,67 @@
+{
+  "predial": {
+    "tipo_esquema": "tarifa_millar",
+    "tabla": [
+      {
+        "grupo": "urbano",
+        "clave": "urbanos_con_edificaciones",
+        "descripcion": "Predios urbanos con edificaciones",
+        "tasa_millar": 0.00125,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "urbano",
+        "clave": "suburbanos_con_edificaciones",
+        "descripcion": "Predios suburbanos con edificaciones",
+        "tasa_millar": 0.00125,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "rustico",
+        "clave": "rusticos",
+        "descripcion": "Predios rústicos",
+        "tasa_millar": 0.0015,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "urbano",
+        "clave": "urbanos_y_suburbanos_baldios",
+        "descripcion": "Predios urbanos y suburbanos sin edificaciones (baldíos)",
+        "tasa_millar": 0.002,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "urbano",
+        "clave": "urbanos_y_suburbanos_edificacion_inferior_a_quinta_parte_del_terreno",
+        "descripcion": "Predios urbanos y suburbanos cuya edificación tenga un valor inferior a la quinta parte del valor del terreno",
+        "tasa_millar": 0.0015,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      }
+    ],
+    "minimo_predial": null,
+    "comentarios": "Art. 10: tasa anual sobre valor catastral para predios urbanos, suburbanos y rústicos. Se transcriben cinco tasas categóricas sin rangos de valor catastral. La base del impuesto es el valor catastral determinado conforme a la tabla de valores unitarios de terreno y construcción. No se identifican tarifas paralelas adicionales fuera de estas tasas."
+  },
+  "_meta": {
+    "fuente": "txt",
+    "modelo": "gpt-5.4-mini"
+  },
+  "_meta_v2": {
+    "intentos": 1,
+    "requiere_revision": false,
+    "escalado": false,
+    "razon": null,
+    "tokens": {
+      "input": 5255,
+      "output": 402,
+      "cached": 3840
+    },
+    "cvegeo": "28024",
+    "estado": "tamaulipas",
+    "anio": 2014
+  }
+}

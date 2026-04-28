@@ -1,0 +1,63 @@
+{
+  "predial": {
+    "tipo_esquema": "tarifa_millar",
+    "tabla": [
+      {
+        "grupo": "urbano",
+        "clave": "urbanos_comerciales_industriales_servicios",
+        "descripcion": "Predios urbanos y suburbanos con edificaciones comerciales, industriales o de servicios",
+        "tasa_millar": 0.003,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "urbano",
+        "clave": "urbanos_habitacionales",
+        "descripcion": "Predios urbanos con edificaciones habitacionales",
+        "tasa_millar": 0.002,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "rustico",
+        "clave": "rusticos",
+        "descripcion": "Predios rústicos",
+        "tasa_millar": 0.0007,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "otro",
+        "clave": "instituciones_asociaciones_sociales_vulnerables",
+        "descripcion": "Predios de instituciones o asociaciones sociales constituidas para la atención de grupos vulnerables, de personas en extrema pobreza, en rehabilitación y similares",
+        "tasa_millar": 0.0,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      }
+    ],
+    "minimo_predial": {
+      "monto": 6.0,
+      "periodicidad": "anual",
+      "unidad": "vsm"
+    },
+    "comentarios": "Art. 9: tasa anual sobre valor catastral para predios urbanos y suburbanos con edificaciones comerciales, industriales o de servicios (3.0 al millar), urbanos con edificaciones habitacionales (2.0 al millar), rústicos (0.7 al millar) y predios de instituciones o asociaciones sociales de atención a grupos vulnerables (0.0 al millar). Art. 10: cuota mínima anual equivalente a 6 salarios mínimos."
+  },
+  "_meta": {
+    "fuente": "txt",
+    "modelo": "gpt-5.4-mini"
+  },
+  "_meta_v2": {
+    "intentos": 1,
+    "requiere_revision": false,
+    "escalado": false,
+    "razon": null,
+    "tokens": {
+      "input": 6395,
+      "output": 383,
+      "cached": 3840
+    },
+    "cvegeo": "28033",
+    "estado": "tamaulipas",
+    "anio": 2010
+  }
+}

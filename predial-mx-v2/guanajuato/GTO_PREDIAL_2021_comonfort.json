@@ -1,0 +1,51 @@
+{
+  "predial": {
+    "tipo_esquema": "tarifa_millar",
+    "tabla": [
+      {
+        "grupo": "urbano",
+        "clave": "inmuebles_urbanos_y_suburbanos_con_edificaciones",
+        "descripcion": "Inmuebles urbanos y suburbanos, con edificaciones; a la entrada en vigor de la presente ley / durante los años 2002 a 2020 inclusive / con anterioridad al año 2002 y hasta 1993 inclusive / con anterioridad a 1993",
+        "tasa_millar": 0.013,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "urbano",
+        "clave": "inmuebles_urbanos_y_suburbanos_sin_edificaciones",
+        "descripcion": "Inmuebles urbanos y suburbanos, sin edificaciones; a la entrada en vigor de la presente ley / durante los años 2002 a 2020 inclusive / con anterioridad al año 2002 y hasta 1993 inclusive / con anterioridad a 1993",
+        "tasa_millar": 0.013,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "rustico",
+        "clave": "inmuebles_rusticos",
+        "descripcion": "Inmuebles rústicos; a la entrada en vigor de la presente ley / durante los años 2002 a 2020 inclusive / con anterioridad al año 2002 y hasta 1993 inclusive / con anterioridad a 1993",
+        "tasa_millar": 0.012,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      }
+    ],
+    "minimo_predial": null,
+    "comentarios": "Artículo 4 establece tarifas anuales por categoría de inmueble y por periodo de valuación. Se transcriben como catálogo de tasas al millar. La ley muestra cuatro periodos históricos con tasas distintas para inmuebles urbanos y suburbanos (con edificaciones / sin edificaciones) y para inmuebles rústicos: 1) 2.4 al millar, 4.5 al millar, 1.8 al millar; 2) 2.4 al millar, 4.5 al millar, 1.8 al millar; 3) 8 al millar, 15 al millar, 6 al millar; 4) 13 al millar, 13 al millar, 12 al millar. No se incluye el artículo 5 porque contiene tablas de valores unitarios de catastro, no la mecánica del impuesto."
+  },
+  "_meta": {
+    "fuente": "txt",
+    "modelo": "gpt-5.4-mini"
+  },
+  "_meta_v2": {
+    "intentos": 1,
+    "requiere_revision": false,
+    "escalado": false,
+    "razon": null,
+    "tokens": {
+      "input": 7619,
+      "output": 539,
+      "cached": 3840
+    },
+    "cvegeo": "11009",
+    "estado": "guanajuato",
+    "anio": 2021
+  }
+}

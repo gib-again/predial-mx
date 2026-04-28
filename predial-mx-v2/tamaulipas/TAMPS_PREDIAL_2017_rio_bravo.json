@@ -1,0 +1,67 @@
+{
+  "predial": {
+    "tipo_esquema": "tarifa_millar",
+    "tabla": [
+      {
+        "grupo": "urbano",
+        "clave": "urbano_suburbano_comercial_industrial_servicios",
+        "descripcion": "Predios urbanos y suburbanos con edificaciones comerciales, industriales o de servicios",
+        "tasa_millar": 0.003,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "urbano",
+        "clave": "urbano_habitacional",
+        "descripcion": "Predios urbanos con edificaciones habitacionales",
+        "tasa_millar": 0.002,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "rustico",
+        "clave": "predios_rusticos",
+        "descripcion": "Predios rústicos",
+        "tasa_millar": 0.0007,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "otro",
+        "clave": "instituciones_asociaciones_sociales",
+        "descripcion": "Predios de instituciones o asociaciones sociales constituidas para la atención de grupos vulnerables, personas en extrema pobreza, en rehabilitación y similares",
+        "tasa_millar": 0.0,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "urbano",
+        "clave": "baldios",
+        "descripcion": "Predios urbanos sin edificaciones (baldíos)",
+        "tasa_millar": 0.003,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      }
+    ],
+    "minimo_predial": null,
+    "comentarios": "Art. 10: el impuesto se determina sobre el valor catastral y se aplica anualmente según tasas al millar por tipo de inmueble. Frac. VI excluye a predios urbanos no edificados propiedad de fraccionamientos autorizados de la tasa de baldíos. Fracs. VII y VIII establecen un 100% de aumento para lotes no construidos por adquirientes y para predios no vendidos de fraccionamientos autorizados; se omiten de la tabla principal por ser aumento/recargo no estructural de la mecánica base. `_meta` se establece en null conforme a instrucciones."
+  },
+  "_meta": {
+    "fuente": "txt",
+    "modelo": "gpt-5.4-mini"
+  },
+  "_meta_v2": {
+    "intentos": 1,
+    "requiere_revision": false,
+    "escalado": false,
+    "razon": null,
+    "tokens": {
+      "input": 5386,
+      "output": 446,
+      "cached": 3840
+    },
+    "cvegeo": "28033",
+    "estado": "tamaulipas",
+    "anio": 2017
+  }
+}

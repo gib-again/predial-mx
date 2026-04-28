@@ -1,0 +1,28 @@
+{
+  "predial": {
+    "tipo_esquema": "otro_no_clasificado",
+    "categoria": "segmento_vacio",
+    "descripcion_estructural": "El texto proporcionado no contiene la sección ni una tabla o mecánica tarifaria del Impuesto Predial. Sólo aparece el encabezado general de la ley y páginas en blanco/omisas para el tramo predial, sin renglones, rangos, tasas o cuotas aplicables.",
+    "tabla_cruda": [],
+    "minimo_predial": null,
+    "comentarios": "No fue posible extraer la mecánica del impuesto predial porque el segmento recibido está vacío respecto de esa materia."
+  },
+  "_meta": {
+    "fuente": "txt",
+    "modelo": "gpt-5.4-mini"
+  },
+  "_meta_v2": {
+    "intentos": 1,
+    "requiere_revision": true,
+    "escalado": false,
+    "razon": "clasificado_como_otro_no_clasificado",
+    "tokens": {
+      "input": 5881,
+      "output": 139,
+      "cached": 3840
+    },
+    "cvegeo": "11033",
+    "estado": "guanajuato",
+    "anio": 2026
+  }
+}

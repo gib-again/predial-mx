@@ -1,0 +1,33 @@
+{
+  "predial": {
+    "tipo_esquema": "tasa_unica",
+    "tabla": [
+      {
+        "descripcion": "0.10% del valor catastral actualizado",
+        "tasa": 0.001,
+        "base_calculo": "valor_catastral",
+        "unidad": "porcentaje"
+      }
+    ],
+    "minimo_predial": null,
+    "comentarios": "Artículo 13, numeral 4: la tarifa del impuesto predial será 0.10% del valor catastral actualizado. Las tablas y valores por m2 de terreno y construcción corresponden a la determinación del valor catastral, no a una tarifa del impuesto predial por rangos. El texto posterior sobre 'A la cantidad que exceda del límite inferior...' aparece sin tabla tarifaria de límites inferior/superior en el segmento provisto, por lo que no se usa para estructurar brackets. Tarifa paralela no incluida en la tabla principal: 'Todo predio destinado a la producción agropecuaria 10 al millar anual sobre el valor registrado o catastral' (Artículo 13). Se ignora el impuesto predial sobre frutos civiles del Artículo 15 por instrucción."
+  },
+  "_meta": {
+    "fuente": "txt",
+    "modelo": "gpt-5.4"
+  },
+  "_meta_v2": {
+    "intentos": 3,
+    "requiere_revision": false,
+    "escalado": true,
+    "razon": "escalado_a_gpt-5.4_tras_2x_mini_fallido",
+    "tokens": {
+      "input": 19876,
+      "output": 1950,
+      "cached": 13568
+    },
+    "cvegeo": "31069",
+    "estado": "yucatan",
+    "anio": 2020
+  }
+}

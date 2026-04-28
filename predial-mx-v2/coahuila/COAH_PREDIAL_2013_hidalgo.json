@@ -1,0 +1,21 @@
+{
+  "predial": null,
+  "_meta": {
+    "fuente": "txt",
+    "modelo": "gpt-5.4"
+  },
+  "_meta_v2": {
+    "intentos": 3,
+    "requiere_revision": true,
+    "escalado": true,
+    "razon": "valido_3x_fallido | mini_e1=api_error: APIConnectionError: Connection error. | mini_e2=api_error: APIConnectionError: Connection error. | full_e3=api_error: APIConnectionError: Connection error.",
+    "tokens": {
+      "input": 0,
+      "output": 0,
+      "cached": 0
+    },
+    "cvegeo": "05013",
+    "estado": "coahuila",
+    "anio": 2013
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "predial": {
+    "tipo_esquema": "otro_no_clasificado",
+    "categoria": "estructura_no_estandar",
+    "descripcion_estructural": "El texto no presenta una mecánica única de cálculo del impuesto predial. Incluye una tabla de valores unitarios de terreno para determinar valor catastral, una tabla de licencias de construcción por m2 y metro lineal que no corresponde al predial, una tarifa paralela para predios agropecuarios de 10 al millar anual, y además un impuesto sobre rentas o frutos civiles con tarifas porcentuales mensuales. No es posible reducirlo limpiamente a una sola de las variantes tarifarias solicitadas sin mezclar figuras distintas.",
+    "tabla_cruda": [],
+    "minimo_predial": null,
+    "comentarios": "Se ignoró el descuento por pronto pago del artículo 15. La parte relevante del Art. 14 sí contiene una tarifa paralela de 10 al millar para predios destinados a la producción agropecuaria, pero el segmento global está estructuralmente heterogéneo y no encaja en una sola mecánica de predial."
+  },
+  "_meta": {
+    "fuente": "txt",
+    "modelo": "gpt-5.4-mini"
+  },
+  "_meta_v2": {
+    "intentos": 1,
+    "requiere_revision": true,
+    "escalado": false,
+    "razon": "clasificado_como_otro_no_clasificado",
+    "tokens": {
+      "input": 5697,
+      "output": 246,
+      "cached": 3840
+    },
+    "cvegeo": "31105",
+    "estado": "yucatan",
+    "anio": 2022
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "predial": {
+    "tipo_esquema": "tasa_unica",
+    "tabla": [
+      {
+        "descripcion": "Impuesto predial calculado aplicando el factor de 0.005 al valor catastral",
+        "tasa": 0.005,
+        "base_calculo": "valor_catastral",
+        "unidad": "porcentaje"
+      }
+    ],
+    "minimo_predial": null,
+    "comentarios": "El texto contiene principalmente tablas de valores catastrales de terreno por metro cuadrado, valores rústicos por hectárea y valores unitarios de construcción, que sirven para determinar el valor catastral y no constituyen la tarifa del impuesto predial. La tarifa principal del impuesto aparece expresamente como: 'El impuesto predial se calculará aplicando el factor de 0.005 al importe del Valor Catastral que se determine'. Además, se establece una tarifa paralela para predios destinados a la producción agropecuaria: '10 al millar anual sobre el valor registrado o catastral'; no se incluye en la tabla principal por ser una tarifa separada para un grupo distinto."
+  },
+  "_meta": {
+    "fuente": "txt",
+    "modelo": "gpt-5.4"
+  },
+  "_meta_v2": {
+    "intentos": 3,
+    "requiere_revision": false,
+    "escalado": true,
+    "razon": "escalado_a_gpt-5.4_tras_2x_mini_fallido",
+    "tokens": {
+      "input": 19144,
+      "output": 782,
+      "cached": 13568
+    },
+    "cvegeo": "31030",
+    "estado": "yucatan",
+    "anio": 2020
+  }
+}

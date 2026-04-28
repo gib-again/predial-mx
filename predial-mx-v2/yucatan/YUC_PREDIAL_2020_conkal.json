@@ -1,0 +1,43 @@
+{
+  "predial": {
+    "tipo_esquema": "tarifa_millar",
+    "tabla": [
+      {
+        "grupo": "otro",
+        "clave": "habitacional",
+        "descripcion": "Habitacional",
+        "tasa_millar": 0.02,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "otro",
+        "clave": "comercial",
+        "descripcion": "Comercial",
+        "tasa_millar": 0.03,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      }
+    ],
+    "minimo_predial": null,
+    "comentarios": "Se toma como tarifa principal el Artículo 15, que establece dos tasas porcentuales/categóricas sobre la base catastral: habitacional 2 % y comercial 3 %. El texto previo de los artículos 13 y subsecuentes contiene valores unitarios de terreno y construcciones y fórmulas para determinar el valor catastral, pero no aporta una tabla tarifaria del impuesto predial transcribible en brackets. Además, el texto indica una tarifa paralela para predios destinados a la producción agropecuaria de 10 al millar anual sobre el valor registrado o catastral; no se incluye en la tabla principal por ser una tarifa separada para otro grupo de predios."
+  },
+  "_meta": {
+    "fuente": "txt",
+    "modelo": "gpt-5.4"
+  },
+  "_meta_v2": {
+    "intentos": 3,
+    "requiere_revision": false,
+    "escalado": true,
+    "razon": "escalado_a_gpt-5.4_tras_2x_mini_fallido",
+    "tokens": {
+      "input": 20272,
+      "output": 886,
+      "cached": 13568
+    },
+    "cvegeo": "31013",
+    "estado": "yucatan",
+    "anio": 2020
+  }
+}

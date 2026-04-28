@@ -1,0 +1,51 @@
+{
+  "predial": {
+    "tipo_esquema": "tarifa_millar",
+    "tabla": [
+      {
+        "grupo": "urbano",
+        "clave": "inmuebles_urbanos_y_suburbanos_con_edificaciones",
+        "descripcion": "Inmuebles urbanos y suburbanos con edificaciones",
+        "tasa_millar": 0.0024,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "urbano",
+        "clave": "inmuebles_urbanos_y_suburbanos_sin_edificaciones",
+        "descripcion": "Inmuebles urbanos y suburbanos sin edificaciones",
+        "tasa_millar": 0.0045,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "rustico",
+        "clave": "inmuebles_rusticos",
+        "descripcion": "Inmuebles rústicos",
+        "tasa_millar": 0.0012,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      }
+    ],
+    "minimo_predial": null,
+    "comentarios": "Artículo 4 establece tasas anuales al millar por tipo de inmueble. Se transcribe la tarifa principal para la entrada en vigor de la ley: urbanos/suburbanos con edificaciones 2.4 al millar, urbanos/suburbanos sin edificaciones 4.5 al millar, y rústicos 1.2 al millar. El artículo también contiene tasas diferidas por año de adquisición/valor modificado (2.4, 4.5, 1.8; 8, 15, 6; 13, 12 al millar según supuestos históricos), pero la estructura básica del impuesto es una tarifa categórica al millar; no se incorpora información de valores unitarios de catastro del Art. 5 porque no es mecánica de cálculo del impuesto."
+  },
+  "_meta": {
+    "fuente": "txt",
+    "modelo": "gpt-5.4-mini"
+  },
+  "_meta_v2": {
+    "intentos": 1,
+    "requiere_revision": false,
+    "escalado": false,
+    "razon": null,
+    "tokens": {
+      "input": 7391,
+      "output": 379,
+      "cached": 3840
+    },
+    "cvegeo": "11038",
+    "estado": "guanajuato",
+    "anio": 2018
+  }
+}

@@ -1,0 +1,51 @@
+{
+  "predial": {
+    "tipo_esquema": "tarifa_millar",
+    "tabla": [
+      {
+        "grupo": "general",
+        "clave": "inmuebles_urbanos_y_suburbanos_con_edificaciones",
+        "descripcion": "Inmuebles urbanos y suburbanos con edificaciones, según antigüedad de la edificación",
+        "tasa_millar": 0.0024,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "general",
+        "clave": "inmuebles_urbanos_y_suburbanos_sin_edificaciones",
+        "descripcion": "Inmuebles urbanos y suburbanos sin edificaciones, según antigüedad de la edificación",
+        "tasa_millar": 0.0045,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "general",
+        "clave": "inmuebles_rusticos",
+        "descripcion": "Inmuebles rústicos, según antigüedad de la edificación",
+        "tasa_millar": 0.0018,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      }
+    ],
+    "minimo_predial": null,
+    "comentarios": "Artículo 4 establece tasas anuales al millar por tipo de inmueble y antigüedad. Se transcriben sólo las tasas de la sección tarifaria. Las tablas de valores unitarios de terreno y construcción de los artículos 5 y 6 son tablas catastrales de valuación, no mecánica del impuesto, y se ignoran. No se advierte en el texto una estructura de rangos por valor catastral para el cálculo del predial, sino tasas categóricas por tipo de inmueble."
+  },
+  "_meta": {
+    "fuente": "txt",
+    "modelo": "gpt-5.4-mini"
+  },
+  "_meta_v2": {
+    "intentos": 1,
+    "requiere_revision": false,
+    "escalado": false,
+    "razon": null,
+    "tokens": {
+      "input": 7366,
+      "output": 343,
+      "cached": 3840
+    },
+    "cvegeo": "11021",
+    "estado": "guanajuato",
+    "anio": 2019
+  }
+}

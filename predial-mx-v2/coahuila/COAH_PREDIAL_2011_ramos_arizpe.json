@@ -1,0 +1,63 @@
+{
+  "predial": {
+    "tipo_esquema": "tarifa_millar",
+    "tabla": [
+      {
+        "grupo": "urbano",
+        "clave": "industrial",
+        "descripcion": "Predios urbanos industriales con o sin edificación",
+        "tasa_millar": 0.005,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "urbano",
+        "clave": "comercial_con_edificacion",
+        "descripcion": "Predios urbanos comerciales con edificación",
+        "tasa_millar": 0.005,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "urbano",
+        "clave": "residencial_interes_social_popular_con_edificacion",
+        "descripcion": "Predios urbanos residenciales, de interés social y populares con edificación",
+        "tasa_millar": 0.005,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "rustico",
+        "clave": "rustico",
+        "descripcion": "Predios rústicos",
+        "tasa_millar": 0.003,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      }
+    ],
+    "minimo_predial": {
+      "monto": 32.0,
+      "periodicidad": "bimestral",
+      "unidad": "pesos"
+    },
+    "comentarios": "Art. 2 establece tasas al millar por categoría de predio sobre valor catastral. Se transcribe solo la mecánica principal. Las frases '1.33 veces lo fijado' para predios comerciales sin edificación y residenciales sin edificación remiten a una relación derivada respecto de la tasa de la fila con edificación, pero no se presentan como filas tarifarias independientes en el texto. Art. 2 también fija un mínimo predial de $32.00 por bimestre. Se omiten incentivos, condonaciones y bonificaciones de los arts. 2, 3 y 4 por instrucción."
+  },
+  "_meta": {
+    "fuente": "txt",
+    "modelo": "gpt-5.4-mini"
+  },
+  "_meta_v2": {
+    "intentos": 1,
+    "requiere_revision": false,
+    "escalado": false,
+    "razon": null,
+    "tokens": {
+      "input": 5983,
+      "output": 396,
+      "cached": 4352
+    },
+    "cvegeo": "05027",
+    "estado": "coahuila",
+    "anio": 2011
+  }
+}

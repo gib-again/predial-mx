@@ -1,0 +1,28 @@
+{
+  "predial": {
+    "tipo_esquema": "otro_no_clasificado",
+    "categoria": "municipio_sin_impuesto",
+    "descripcion_estructural": "El segmento proporcionado contiene tablas de valores unitarios de terreno y construcción para avalúo catastral, pero no presenta una mecánica de cálculo del impuesto predial con cuotas, tasas al millar, brackets de valor catastral ni tarifa aplicable. No se observa artículo o tabla de determinación del impuesto predial propiamente dicho dentro del texto entregado.",
+    "tabla_cruda": [],
+    "minimo_predial": null,
+    "comentarios": "Se omitieron los valores unitarios de catastro por no ser la tarifa del impuesto predial. La sección visible parece referirse a valuación, no a la mecánica tributaria."
+  },
+  "_meta": {
+    "fuente": "txt",
+    "modelo": "gpt-5.4-mini"
+  },
+  "_meta_v2": {
+    "intentos": 1,
+    "requiere_revision": true,
+    "escalado": false,
+    "razon": "clasificado_como_otro_no_clasificado",
+    "tokens": {
+      "input": 7113,
+      "output": 173,
+      "cached": 3840
+    },
+    "cvegeo": "11040",
+    "estado": "guanajuato",
+    "anio": 2018
+  }
+}

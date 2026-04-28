@@ -1,0 +1,37 @@
+{
+  "predial": {
+    "tipo_esquema": "tasa_unica",
+    "tabla": [
+      {
+        "descripcion": "Impuesto predial general sobre valor catastral de las secciones I a IV",
+        "tasa": 0.001,
+        "base_calculo": "valor_catastral",
+        "unidad": "porcentaje"
+      }
+    ],
+    "minimo_predial": {
+      "monto": 60.0,
+      "periodicidad": "anual",
+      "unidad": "pesos"
+    },
+    "comentarios": "Art. 13: la mecánica principal es una tasa uniforme de 0.10% sobre el valor catastral de las secciones I a IV. La zona costera tiene una tasa distinta de 0.50% sobre valor catastral, pero se trata como tarifa paralela y no se incorpora a la tabla principal. El texto también incluye tablas de valores unitarios de terreno y construcción, que son insumos catastrales y no la mecánica del impuesto. Cuando no pueda determinarse el valor catastral, se cobra una cuota fija de $60.00."
+  },
+  "_meta": {
+    "fuente": "txt",
+    "modelo": "gpt-5.4-mini"
+  },
+  "_meta_v2": {
+    "intentos": 1,
+    "requiere_revision": false,
+    "escalado": false,
+    "razon": null,
+    "tokens": {
+      "input": 6192,
+      "output": 228,
+      "cached": 3840
+    },
+    "cvegeo": "31039",
+    "estado": "yucatan",
+    "anio": 2013
+  }
+}

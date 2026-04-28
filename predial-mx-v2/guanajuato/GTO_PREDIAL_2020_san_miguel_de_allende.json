@@ -1,0 +1,160 @@
+{
+  "predial": {
+    "tipo_esquema": "mixto",
+    "tabla": [
+      {
+        "n_rango": 1,
+        "inferior": 0.01,
+        "superior": 500000.0,
+        "columnas": [
+          {
+            "nombre": "general",
+            "valor": 150.0,
+            "tipo": "cuota_fija",
+            "unidad": "pesos"
+          },
+          {
+            "nombre": "general",
+            "valor": 0.00234,
+            "tipo": "tasa_marginal",
+            "unidad": "porcentaje"
+          }
+        ]
+      },
+      {
+        "n_rango": 2,
+        "inferior": 500000.01,
+        "superior": 650000.0,
+        "columnas": [
+          {
+            "nombre": "general",
+            "valor": 1170.0,
+            "tipo": "cuota_fija",
+            "unidad": "pesos"
+          },
+          {
+            "nombre": "general",
+            "valor": 0.00254,
+            "tipo": "tasa_marginal",
+            "unidad": "porcentaje"
+          }
+        ]
+      },
+      {
+        "n_rango": 3,
+        "inferior": 650000.01,
+        "superior": 800000.0,
+        "columnas": [
+          {
+            "nombre": "general",
+            "valor": 1551.0,
+            "tipo": "cuota_fija",
+            "unidad": "pesos"
+          },
+          {
+            "nombre": "general",
+            "valor": 0.0024,
+            "tipo": "tasa_marginal",
+            "unidad": "porcentaje"
+          }
+        ]
+      },
+      {
+        "n_rango": 4,
+        "inferior": 800000.01,
+        "superior": 1000000.0,
+        "columnas": [
+          {
+            "nombre": "general",
+            "valor": 1962.0,
+            "tipo": "cuota_fija",
+            "unidad": "pesos"
+          },
+          {
+            "nombre": "general",
+            "valor": 0.00294,
+            "tipo": "tasa_marginal",
+            "unidad": "porcentaje"
+          }
+        ]
+      },
+      {
+        "n_rango": 5,
+        "inferior": 1000000.01,
+        "superior": 1200000.0,
+        "columnas": [
+          {
+            "nombre": "general",
+            "valor": 2550.0,
+            "tipo": "cuota_fija",
+            "unidad": "pesos"
+          },
+          {
+            "nombre": "general",
+            "valor": 0.00314,
+            "tipo": "tasa_marginal",
+            "unidad": "porcentaje"
+          }
+        ]
+      },
+      {
+        "n_rango": 6,
+        "inferior": 1200000.01,
+        "superior": 1500000.0,
+        "columnas": [
+          {
+            "nombre": "general",
+            "valor": 3178.0,
+            "tipo": "cuota_fija",
+            "unidad": "pesos"
+          },
+          {
+            "nombre": "general",
+            "valor": 0.00334,
+            "tipo": "tasa_marginal",
+            "unidad": "porcentaje"
+          }
+        ]
+      },
+      {
+        "n_rango": 7,
+        "inferior": 1500000.01,
+        "superior": null,
+        "columnas": [
+          {
+            "nombre": "general",
+            "valor": 4180.0,
+            "tipo": "cuota_fija",
+            "unidad": "pesos"
+          },
+          {
+            "nombre": "general",
+            "valor": 0.00354,
+            "tipo": "tasa_marginal",
+            "unidad": "porcentaje"
+          }
+        ]
+      }
+    ],
+    "minimo_predial": null,
+    "comentarios": "Art. 4 fracción I: tarifa progresiva para inmuebles urbanos con edificaciones; se transcriben cuota fija y tasa marginal por bracket. Art. 4 fracción II: inmuebles suburbanos con edificaciones pagan tasa del 0.207% sobre valor catastral. Art. 4 fracción III: inmuebles urbanos y suburbanos sin edificaciones tienen tabla progresiva propia con tasas de 0.438% a 0.705% según valor de m² de área. Art. 4 fracción IV: inmuebles rústicos pagan 0.18%.\nArt. 5 contiene valores unitarios de terreno, construcción y rústicos para avalúo, no mecánica de cálculo del impuesto; no se extrae como tabla de predial."
+  },
+  "_meta": {
+    "fuente": "txt",
+    "modelo": "gpt-5.4-mini"
+  },
+  "_meta_v2": {
+    "intentos": 1,
+    "requiere_revision": false,
+    "escalado": false,
+    "razon": null,
+    "tokens": {
+      "input": 7720,
+      "output": 711,
+      "cached": 3840
+    },
+    "cvegeo": "11003",
+    "estado": "guanajuato",
+    "anio": 2020
+  }
+}

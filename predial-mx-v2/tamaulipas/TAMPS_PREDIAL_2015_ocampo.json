@@ -1,0 +1,63 @@
+{
+  "predial": {
+    "tipo_esquema": "tarifa_millar",
+    "tabla": [
+      {
+        "grupo": "urbano",
+        "clave": "predios_urbanos_y_suburbanos",
+        "descripcion": "Predios urbanos y suburbanos",
+        "tasa_millar": 0.0015,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "urbano",
+        "clave": "predios_urbanos_no_edificados",
+        "descripcion": "Predios urbanos no edificados: aumento del 100% sobre la tasa del artículo 7",
+        "tasa_millar": 0.003,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "urbano",
+        "clave": "predios_urbanos_con_edificacion_inferior_a_la_quinta_parte_del_terreno",
+        "descripcion": "Predios urbanos cuya edificación tenga un valor inferior a la quinta parte del valor del terreno: aumento del 50% sobre la tasa del artículo 7",
+        "tasa_millar": 0.00225,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "rustico",
+        "clave": "predios_rusticos",
+        "descripcion": "Predios rústicos sobre el valor catastral",
+        "tasa_millar": 0.0015,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      }
+    ],
+    "minimo_predial": {
+      "monto": 2.0,
+      "periodicidad": "anual",
+      "unidad": "vsm"
+    },
+    "comentarios": "Art. 7: predios urbanos y suburbanos pagan 1.5 al millar anual sobre valor catastral. Art. 7 fraccs. I, II y III establecen ajustes para predios urbanos no edificados (+100%) y con edificación inferior a la quinta parte del valor del terreno (+50%), y excepción para fraccionamientos autorizados no edificados. Art. 8: predios rústicos pagan 1.5 al millar anual sobre valor catastral. Art. 9: el impuesto anual no podrá ser inferior a dos salarios. No se transcribe la mecánica de fracción IV por ser una condición temporal/operativa de aplicación de la tasa."
+  },
+  "_meta": {
+    "fuente": "txt",
+    "modelo": "gpt-5.4-mini"
+  },
+  "_meta_v2": {
+    "intentos": 1,
+    "requiere_revision": false,
+    "escalado": false,
+    "razon": null,
+    "tokens": {
+      "input": 5325,
+      "output": 464,
+      "cached": 3840
+    },
+    "cvegeo": "28029",
+    "estado": "tamaulipas",
+    "anio": 2015
+  }
+}

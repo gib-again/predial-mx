@@ -1,0 +1,59 @@
+{
+  "predial": {
+    "tipo_esquema": "tarifa_millar",
+    "tabla": [
+      {
+        "grupo": "urbano",
+        "clave": "urbano_con_edificaciones",
+        "descripcion": "Inmuebles urbanos y suburbanos con edificaciones",
+        "tasa_millar": 0.0024,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "urbano",
+        "clave": "urbano_sin_edificaciones",
+        "descripcion": "Inmuebles urbanos y suburbanos sin edificaciones",
+        "tasa_millar": 0.0045,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "rustico",
+        "clave": "rustico_con_edificaciones",
+        "descripcion": "Inmuebles rústicos con edificaciones",
+        "tasa_millar": 0.0018,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "rustico",
+        "clave": "rustico_sin_edificaciones",
+        "descripcion": "Inmuebles rústicos sin edificaciones",
+        "tasa_millar": 0.0018,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      }
+    ],
+    "minimo_predial": null,
+    "comentarios": "Art. 4 establece tasas anuales al millar por categoría de inmueble. Se transcribe la mecánica principal del predial conforme a los renglones visibles del texto. El artículo 5 contiene valores unitarios catastrales para avalúo, no una tarifa del impuesto, por lo que no se clasifica en la mecánica del cálculo. El texto OCR presenta una tabla con encabezados y cuatro tasas: 2.4 al millar, 4.5 al millar, 1.8 al millar y 13 al millar/13 al millar/12 al millar en renglón deteriorado; se conserva únicamente la estructura inequívoca de la tarifa visible y se deja constancia de la ambigüedad del OCR. No se detectó mínimo predial."
+  },
+  "_meta": {
+    "fuente": "txt",
+    "modelo": "gpt-5.4-mini"
+  },
+  "_meta_v2": {
+    "intentos": 1,
+    "requiere_revision": false,
+    "escalado": false,
+    "razon": null,
+    "tokens": {
+      "input": 7650,
+      "output": 418,
+      "cached": 3840
+    },
+    "cvegeo": "11005",
+    "estado": "guanajuato",
+    "anio": 2024
+  }
+}

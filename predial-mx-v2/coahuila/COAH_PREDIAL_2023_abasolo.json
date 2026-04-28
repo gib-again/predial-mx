@@ -1,0 +1,47 @@
+{
+  "predial": {
+    "tipo_esquema": "tarifa_millar",
+    "tabla": [
+      {
+        "grupo": "urbano",
+        "clave": "predios_urbanos",
+        "descripcion": "Sobre Predios Urbanos",
+        "tasa_millar": 0.005,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "rústico",
+        "clave": "predios_rusticos",
+        "descripcion": "Sobre Predios Rústicos",
+        "tasa_millar": 0.003,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      }
+    ],
+    "minimo_predial": {
+      "monto": 15.15,
+      "periodicidad": "bimestral",
+      "unidad": "pesos"
+    },
+    "comentarios": "Art. 2: tarifa paralela para predios ejidales, rústicos, comunales, federales, estatales o municipales destinados a agricultura, explotación forestal, ganadería, minería y afines: 3% de su valor, calculado sobre la producción anual comercializada. Se excluye de la tabla principal por ser un supuesto distinto a los predios urbanos y rústicos tasados al millar. Se ignoran incentivos y bonificaciones."
+  },
+  "_meta": {
+    "fuente": "txt",
+    "modelo": "gpt-5.4-mini"
+  },
+  "_meta_v2": {
+    "intentos": 1,
+    "requiere_revision": false,
+    "escalado": false,
+    "razon": null,
+    "tokens": {
+      "input": 5169,
+      "output": 254,
+      "cached": 3840
+    },
+    "cvegeo": "05001",
+    "estado": "coahuila",
+    "anio": 2023
+  }
+}

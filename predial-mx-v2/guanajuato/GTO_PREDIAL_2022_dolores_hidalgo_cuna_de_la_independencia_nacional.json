@@ -1,0 +1,157 @@
+{
+  "predial": {
+    "tipo_esquema": "mixto",
+    "tabla": [
+      {
+        "n_rango": 1,
+        "inferior": 0.01,
+        "superior": 500000.0,
+        "columnas": [
+          {
+            "nombre": "general",
+            "valor": 0.0025,
+            "tipo": "tasa_marginal",
+            "unidad": "porcentaje"
+          }
+        ]
+      },
+      {
+        "n_rango": 2,
+        "inferior": 500000.01,
+        "superior": 800000.0,
+        "columnas": [
+          {
+            "nombre": "general",
+            "valor": 0.0026,
+            "tipo": "tasa_marginal",
+            "unidad": "porcentaje"
+          }
+        ]
+      },
+      {
+        "n_rango": 3,
+        "inferior": 800000.01,
+        "superior": 1100000.0,
+        "columnas": [
+          {
+            "nombre": "general",
+            "valor": 0.0027,
+            "tipo": "tasa_marginal",
+            "unidad": "porcentaje"
+          }
+        ]
+      },
+      {
+        "n_rango": 4,
+        "inferior": 1100000.01,
+        "superior": 1400000.0,
+        "columnas": [
+          {
+            "nombre": "general",
+            "valor": 0.0028,
+            "tipo": "tasa_marginal",
+            "unidad": "porcentaje"
+          }
+        ]
+      },
+      {
+        "n_rango": 5,
+        "inferior": 1400000.01,
+        "superior": 1700000.0,
+        "columnas": [
+          {
+            "nombre": "general",
+            "valor": 0.0029,
+            "tipo": "tasa_marginal",
+            "unidad": "porcentaje"
+          }
+        ]
+      },
+      {
+        "n_rango": 6,
+        "inferior": 1700000.01,
+        "superior": 2000000.0,
+        "columnas": [
+          {
+            "nombre": "general",
+            "valor": 0.003,
+            "tipo": "tasa_marginal",
+            "unidad": "porcentaje"
+          }
+        ]
+      },
+      {
+        "n_rango": 7,
+        "inferior": 2000000.01,
+        "superior": 2300000.0,
+        "columnas": [
+          {
+            "nombre": "general",
+            "valor": 0.0031,
+            "tipo": "tasa_marginal",
+            "unidad": "porcentaje"
+          }
+        ]
+      },
+      {
+        "n_rango": 8,
+        "inferior": 2300000.01,
+        "superior": 2600000.0,
+        "columnas": [
+          {
+            "nombre": "general",
+            "valor": 0.0032,
+            "tipo": "tasa_marginal",
+            "unidad": "porcentaje"
+          }
+        ]
+      },
+      {
+        "n_rango": 9,
+        "inferior": 2600000.01,
+        "superior": 2900000.0,
+        "columnas": [
+          {
+            "nombre": "general",
+            "valor": 0.0033,
+            "tipo": "tasa_marginal",
+            "unidad": "porcentaje"
+          }
+        ]
+      },
+      {
+        "n_rango": 10,
+        "inferior": 2900000.01,
+        "superior": null,
+        "columnas": [
+          {
+            "nombre": "general",
+            "valor": 0.0034,
+            "tipo": "tasa_marginal",
+            "unidad": "porcentaje"
+          }
+        ]
+      }
+    ],
+    "minimo_predial": null,
+    "comentarios": "Art. 4 fracc. I y II establecen tasas al millar para inmuebles urbanos/suburbanos sin edificación (4.50 al millar) y rústicos (1.8 al millar) con valor determinado o modificado en 2022; esas son tarifas paralelas no incluidas en la tabla principal. La estructura principal es la tabla 2 del Art. 4 para inmuebles urbanos y suburbanos con edificación, con brackets de valor catastral, cuota fija y tasa marginal; se transcribe como esquema mixto porque combina cuota fija y tasa marginal por rango."
+  },
+  "_meta": {
+    "fuente": "txt",
+    "modelo": "gpt-5.4-mini"
+  },
+  "_meta_v2": {
+    "intentos": 1,
+    "requiere_revision": false,
+    "escalado": false,
+    "razon": null,
+    "tokens": {
+      "input": 8206,
+      "output": 677,
+      "cached": 3840
+    },
+    "cvegeo": "11014",
+    "estado": "guanajuato",
+    "anio": 2022
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "predial": {
+    "tipo_esquema": "otro_no_clasificado",
+    "categoria": "error_segmentacion",
+    "descripcion_estructural": "El texto describe expresamente una mecánica progresiva del impuesto predial con valor fiscal, límite inferior, tasa marginal y cuota fija, pero la tabla de TASAS no aparece en el segmento proporcionado. El contenido entre las páginas referidas está ausente o sustituido por encabezados de página y después cambia a otros conceptos distintos al predial, por lo que no es posible reconstruir válidamente los rangos ni las tasas.",
+    "tabla_cruda": [],
+    "minimo_predial": {
+      "monto": 369.81,
+      "periodicidad": "anual",
+      "unidad": "pesos"
+    },
+    "comentarios": "Se identifica fórmula de impuesto predial progresivo: ((VF-LI)*T)+CF. Sin embargo, la tabla tarifaria anunciada para inmuebles urbanos, suburbanos y rústicos con valor determinado o modificado durante 2022 o anteriores no fue extraíble del texto. Sólo se pudo recuperar la cuota mínima anual del Artículo 37 por 369.81 pesos."
+  },
+  "_meta": {
+    "fuente": "txt",
+    "modelo": "gpt-5.4"
+  },
+  "_meta_v2": {
+    "intentos": 3,
+    "requiere_revision": true,
+    "escalado": true,
+    "razon": "clasificado_como_otro_no_clasificado_tras_escalacion",
+    "tokens": {
+      "input": 26718,
+      "output": 755,
+      "cached": 11520
+    },
+    "cvegeo": "11035",
+    "estado": "guanajuato",
+    "anio": 2025
+  }
+}

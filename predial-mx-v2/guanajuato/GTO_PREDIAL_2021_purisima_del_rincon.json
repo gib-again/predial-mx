@@ -1,0 +1,28 @@
+{
+  "predial": {
+    "tipo_esquema": "otro_no_clasificado",
+    "categoria": "segmento_vacio",
+    "descripcion_estructural": "El texto proporcionado no contiene la sección del Impuesto Predial ni una tabla o mecánica de cálculo municipal. Sólo aparecen avisos, transitorios y tarifas del Periódico Oficial, sin datos tarifarios de predial para Purísima del Rincón.",
+    "tabla_cruda": [],
+    "minimo_predial": null,
+    "comentarios": "No se detectó contenido tarifario de predial en el segmento aportado."
+  },
+  "_meta": {
+    "fuente": "txt",
+    "modelo": "gpt-5.4-mini"
+  },
+  "_meta_v2": {
+    "intentos": 1,
+    "requiere_revision": true,
+    "escalado": false,
+    "razon": "clasificado_como_otro_no_clasificado",
+    "tokens": {
+      "input": 6178,
+      "output": 127,
+      "cached": 3840
+    },
+    "cvegeo": "11025",
+    "estado": "guanajuato",
+    "anio": 2021
+  }
+}

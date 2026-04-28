@@ -1,0 +1,69 @@
+{
+  "predial": {
+    "tipo_esquema": "progresivo",
+    "tabla": [
+      {
+        "n_rango": 1,
+        "inferior": 0.01,
+        "superior": 4000.0,
+        "cuota_fija": 45.0,
+        "tasa_marginal": 0.0015
+      },
+      {
+        "n_rango": 2,
+        "inferior": 4000.01,
+        "superior": 6000.0,
+        "cuota_fija": 50.0,
+        "tasa_marginal": 0.002
+      },
+      {
+        "n_rango": 3,
+        "inferior": 6000.01,
+        "superior": 10000.0,
+        "cuota_fija": 60.0,
+        "tasa_marginal": 0.0025
+      },
+      {
+        "n_rango": 4,
+        "inferior": 10000.01,
+        "superior": 12000.0,
+        "cuota_fija": 65.0,
+        "tasa_marginal": 0.003
+      },
+      {
+        "n_rango": 5,
+        "inferior": 12000.01,
+        "superior": 15000.0,
+        "cuota_fija": 70.0,
+        "tasa_marginal": 0.0035
+      },
+      {
+        "n_rango": 6,
+        "inferior": 15000.01,
+        "superior": null,
+        "cuota_fija": 75.0,
+        "tasa_marginal": 0.004
+      }
+    ],
+    "minimo_predial": null,
+    "comentarios": "Artículo 13: predio urbano y rústico con o sin construcción se causa con tarifa progresiva por valor catastral. La mecánica indicada es cuota fija anual más factor aplicado al excedente del límite inferior. Se ignora el descuento del Artículo 14 por ser bonificación."
+  },
+  "_meta": {
+    "fuente": "txt",
+    "modelo": "gpt-5.4-mini"
+  },
+  "_meta_v2": {
+    "intentos": 1,
+    "requiere_revision": false,
+    "escalado": false,
+    "razon": null,
+    "tokens": {
+      "input": 5318,
+      "output": 336,
+      "cached": 3840
+    },
+    "cvegeo": "31055",
+    "estado": "yucatan",
+    "anio": 2017
+  }
+}

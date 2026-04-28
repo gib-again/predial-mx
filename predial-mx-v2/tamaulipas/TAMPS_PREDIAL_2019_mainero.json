@@ -1,0 +1,63 @@
+{
+  "predial": {
+    "tipo_esquema": "tarifa_millar",
+    "tabla": [
+      {
+        "grupo": "urbano",
+        "clave": "predios_urbanos_y_suburbanos",
+        "descripcion": "Predios urbanos y suburbanos",
+        "tasa_millar": 0.0015,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "urbano",
+        "clave": "predios_urbanos_no_edificados",
+        "descripcion": "Predios urbanos no edificados; la tasa del artículo se aumenta en 100%",
+        "tasa_millar": 0.003,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "urbano",
+        "clave": "predios_urbanos_con_edificacion_inferior_a_quinta_parte_del_terreno",
+        "descripcion": "Predios urbanos cuya edificación tenga un valor inferior a la quinta parte del valor del terreno; la tasa del artículo se aumenta en 50%",
+        "tasa_millar": 0.00225,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "rustico",
+        "clave": "predios_rusticos",
+        "descripcion": "Predios rústicos sobre el valor catastral",
+        "tasa_millar": 0.0015,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      }
+    ],
+    "minimo_predial": {
+      "monto": 2.0,
+      "periodicidad": "anual",
+      "unidad": "uma"
+    },
+    "comentarios": "Art. 10: tasa del 1.5 al millar anual para predios urbanos y suburbanos. Art. 10 fraccs. I y II: para predios urbanos no edificados la tasa se aumenta en 100% (3.0 al millar) y para predios urbanos con edificación inferior a la quinta parte del valor del terreno se aumenta en 50% (2.25 al millar). Art. 11: tasa del 1.5 al millar anual para predios rústicos sobre el valor catastral. Art. 12: el impuesto anual no podrá ser inferior a 2 veces el valor diario de la UMA."
+  },
+  "_meta": {
+    "fuente": "txt",
+    "modelo": "gpt-5.4-mini"
+  },
+  "_meta_v2": {
+    "intentos": 1,
+    "requiere_revision": false,
+    "escalado": false,
+    "razon": null,
+    "tokens": {
+      "input": 5344,
+      "output": 452,
+      "cached": 3840
+    },
+    "cvegeo": "28020",
+    "estado": "tamaulipas",
+    "anio": 2019
+  }
+}

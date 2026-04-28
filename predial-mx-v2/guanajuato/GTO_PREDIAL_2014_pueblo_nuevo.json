@@ -1,0 +1,67 @@
+{
+  "predial": {
+    "tipo_esquema": "tarifa_millar",
+    "tabla": [
+      {
+        "grupo": "general",
+        "clave": "inmuebles_urbanos_suburbanos",
+        "descripcion": "A la entrada en vigor de la presente Ley; inmuebles urbanos y suburbanos con y sin edificaciones",
+        "tasa_millar": 0.0024,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "general",
+        "clave": "inmuebles_urbanos_suburbanos",
+        "descripcion": "Durante los años 2002 y hasta el año 2013, inclusive; inmuebles urbanos y suburbanos con y sin edificaciones",
+        "tasa_millar": 0.0024,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "general",
+        "clave": "inmuebles_urbanos_suburbanos",
+        "descripcion": "Con anterioridad al año 2002 y hasta el año 1993, inclusive; inmuebles urbanos y suburbanos con y sin edificaciones",
+        "tasa_millar": 0.008,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "general",
+        "clave": "inmuebles_urbanos_suburbanos",
+        "descripcion": "Con anterioridad al año de 1993; inmuebles urbanos y suburbanos con y sin edificaciones",
+        "tasa_millar": 0.013,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "rustico",
+        "clave": "inmuebles_rusticos",
+        "descripcion": "Tratándose de inmuebles rústicos",
+        "tasa_millar": 0.0018,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      }
+    ],
+    "minimo_predial": null,
+    "comentarios": "Art. 4 establece tasas anuales al millar por antigüedad y por tipo de inmueble. Para inmuebles urbanos y suburbanos hay cuatro supuestos de tasa; para inmuebles rústicos existe una tasa paralela de 1.8 al millar anual sobre valor catastral. No se incluye la tabla de valores unitarios del Art. 5 porque corresponde a valuación/catastro, no a mecánica de cálculo del impuesto. Se ignoran descuentos y bonificaciones."
+  },
+  "_meta": {
+    "fuente": "txt",
+    "modelo": "gpt-5.4-mini"
+  },
+  "_meta_v2": {
+    "intentos": 1,
+    "requiere_revision": false,
+    "escalado": false,
+    "razon": null,
+    "tokens": {
+      "input": 7239,
+      "output": 472,
+      "cached": 3840
+    },
+    "cvegeo": "11024",
+    "estado": "guanajuato",
+    "anio": 2014
+  }
+}

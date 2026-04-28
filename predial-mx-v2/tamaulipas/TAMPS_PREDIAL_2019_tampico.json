@@ -1,0 +1,161 @@
+{
+  "predial": {
+    "tipo_esquema": "mixto",
+    "tabla": [
+      {
+        "n_rango": 1,
+        "inferior": 0.01,
+        "superior": 242307.69,
+        "columnas": [
+          {
+            "nombre": "general",
+            "valor": 0.5406,
+            "tipo": "tasa_marginal",
+            "unidad": "al_millar"
+          }
+        ]
+      },
+      {
+        "n_rango": 2,
+        "inferior": 242307.7,
+        "superior": 500000.0,
+        "columnas": [
+          {
+            "nombre": "general",
+            "valor": 0.58,
+            "tipo": "tasa_marginal",
+            "unidad": "al_millar"
+          }
+        ]
+      },
+      {
+        "n_rango": 3,
+        "inferior": 500000.01,
+        "superior": 750000.0,
+        "columnas": [
+          {
+            "nombre": "general",
+            "valor": 0.65,
+            "tipo": "tasa_marginal",
+            "unidad": "al_millar"
+          }
+        ]
+      },
+      {
+        "n_rango": 4,
+        "inferior": 750000.01,
+        "superior": 1000000.0,
+        "columnas": [
+          {
+            "nombre": "general",
+            "valor": 0.73,
+            "tipo": "tasa_marginal",
+            "unidad": "al_millar"
+          }
+        ]
+      },
+      {
+        "n_rango": 5,
+        "inferior": 1000000.01,
+        "superior": 1250000.0,
+        "columnas": [
+          {
+            "nombre": "general",
+            "valor": 0.81,
+            "tipo": "tasa_marginal",
+            "unidad": "al_millar"
+          }
+        ]
+      },
+      {
+        "n_rango": 6,
+        "inferior": 1250000.01,
+        "superior": 1500000.0,
+        "columnas": [
+          {
+            "nombre": "general",
+            "valor": 0.89,
+            "tipo": "tasa_marginal",
+            "unidad": "al_millar"
+          }
+        ]
+      },
+      {
+        "n_rango": 7,
+        "inferior": 1500000.01,
+        "superior": 1750000.0,
+        "columnas": [
+          {
+            "nombre": "general",
+            "valor": 0.98,
+            "tipo": "tasa_marginal",
+            "unidad": "al_millar"
+          }
+        ]
+      },
+      {
+        "n_rango": 8,
+        "inferior": 1750000.01,
+        "superior": 2000000.0,
+        "columnas": [
+          {
+            "nombre": "general",
+            "valor": 1.07,
+            "tipo": "tasa_marginal",
+            "unidad": "al_millar"
+          }
+        ]
+      },
+      {
+        "n_rango": 9,
+        "inferior": 2000000.01,
+        "superior": 2250000.0,
+        "columnas": [
+          {
+            "nombre": "general",
+            "valor": 1.16,
+            "tipo": "tasa_marginal",
+            "unidad": "al_millar"
+          }
+        ]
+      },
+      {
+        "n_rango": 10,
+        "inferior": 2250000.01,
+        "superior": null,
+        "columnas": [
+          {
+            "nombre": "general",
+            "valor": 1.25,
+            "tipo": "tasa_marginal",
+            "unidad": "al_millar"
+          }
+        ]
+      }
+    ],
+    "minimo_predial": {
+      "monto": 3.0,
+      "periodicidad": "anual",
+      "unidad": "uma"
+    },
+    "comentarios": "Art. 10 fracc. I presenta una tabla de rangos de valor catastral con cuota anual sobre el límite inferior y tasa anual al millar sobre el excedente; además, el Art. 10 fracc. II establece para predios rústicos una tasa anual de 1.5 al millar sobre el valor catastral, y la fracc. III indica que predios urbanos y suburbanos sin edificación pagan la tasa del artículo aumentada en 100%. Estas tarifas secundarias/paralelas no se desdoblan en la tabla principal. Art. 11 fija cuota mínima anual de 3 UMA."
+  },
+  "_meta": {
+    "fuente": "txt",
+    "modelo": "gpt-5.4-mini"
+  },
+  "_meta_v2": {
+    "intentos": 1,
+    "requiere_revision": false,
+    "escalado": false,
+    "razon": null,
+    "tokens": {
+      "input": 5770,
+      "output": 700,
+      "cached": 3840
+    },
+    "cvegeo": "28038",
+    "estado": "tamaulipas",
+    "anio": 2019
+  }
+}

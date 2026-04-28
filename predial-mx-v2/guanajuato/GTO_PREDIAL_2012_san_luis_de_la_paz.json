@@ -1,0 +1,51 @@
+{
+  "predial": {
+    "tipo_esquema": "tarifa_millar",
+    "tabla": [
+      {
+        "grupo": "urbano",
+        "clave": "urbanos_con_edificaciones",
+        "descripcion": "Inmuebles urbanos y suburbanos con edificaciones, para la entrada en vigor de la ley, durante los años 2002 al 2011, con anterioridad al año 2002 y hasta 1993 inclusive, y con anterioridad al año 1993.",
+        "tasa_millar": 0.013,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "urbano",
+        "clave": "urbanos_sin_edificaciones",
+        "descripcion": "Inmuebles urbanos y suburbanos sin edificaciones, para la entrada en vigor de la ley, durante los años 2002 al 2011, con anterioridad al año 2002 y hasta 1993 inclusive, y con anterioridad al año 1993.",
+        "tasa_millar": 0.013,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "rustico",
+        "clave": "rusticos",
+        "descripcion": "Inmuebles rústicos.",
+        "tasa_millar": 0.006,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      }
+    ],
+    "minimo_predial": null,
+    "comentarios": "Art. 4 establece tasas anuales al millar por tipo de inmueble. Se observan tarifas paralelas por grupo: inmuebles urbanos y suburbanos con edificaciones/sin edificaciones, y rústicos. En el texto OCR hay una tabla con columnas 'Inmuebles urbanos y suburbanos' y 'Inmuebles rústicos', con tasas distintas. Art. 5 y 6 corresponden a valores unitarios y criterios de avalúo, no a la mecánica tarifaria del impuesto."
+  },
+  "_meta": {
+    "fuente": "txt",
+    "modelo": "gpt-5.4-mini"
+  },
+  "_meta_v2": {
+    "intentos": 1,
+    "requiere_revision": false,
+    "escalado": false,
+    "razon": null,
+    "tokens": {
+      "input": 7351,
+      "output": 386,
+      "cached": 3840
+    },
+    "cvegeo": "11033",
+    "estado": "guanajuato",
+    "anio": 2012
+  }
+}

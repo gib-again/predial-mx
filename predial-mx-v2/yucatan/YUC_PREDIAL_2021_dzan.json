@@ -1,0 +1,33 @@
+{
+  "predial": {
+    "tipo_esquema": "tasa_unica",
+    "tabla": [
+      {
+        "descripcion": "Tasa general del impuesto predial sobre el valor catastral actualizado",
+        "tasa": 0.001,
+        "base_calculo": "valor_catastral",
+        "unidad": "porcentaje"
+      }
+    ],
+    "minimo_predial": null,
+    "comentarios": "Art. 13: la mecánica principal establece una sola tasa uniforme de 0.10% del valor catastral actualizado (C=(A+B)(0.10)/100). Se ignoran tablas de valores unitarios de terreno y construcción por ser catastro, no tarifa. También se menciona una tarifa paralela para predios agropecuarios de 10 al millar anual sobre valor registrado o catastral, y otra sobre rentas o frutos civiles (2%), pero no se integran a la tabla principal porque son supuestos distintos al predial general sobre valor catastral."
+  },
+  "_meta": {
+    "fuente": "txt",
+    "modelo": "gpt-5.4-mini"
+  },
+  "_meta_v2": {
+    "intentos": 1,
+    "requiere_revision": false,
+    "escalado": false,
+    "razon": null,
+    "tokens": {
+      "input": 7369,
+      "output": 205,
+      "cached": 3840
+    },
+    "cvegeo": "31025",
+    "estado": "yucatan",
+    "anio": 2021
+  }
+}

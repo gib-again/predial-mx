@@ -1,0 +1,39 @@
+{
+  "predial": {
+    "tipo_esquema": "tarifa_millar",
+    "tabla": [
+      {
+        "grupo": "general",
+        "clave": "predios_urbanos_suburbanos_rusticos",
+        "descripcion": "Tasa general anual para predios urbanos, suburbanos y rústicos",
+        "tasa_millar": 0.002,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      }
+    ],
+    "minimo_predial": {
+      "monto": 150.0,
+      "periodicidad": "anual",
+      "unidad": "pesos"
+    },
+    "comentarios": "Art. 10: aplica una tasa general de 2 al millar anual sobre el valor catastral para predios urbanos, suburbanos y rústicos. El texto también prevé aumentos porcentuales para predios urbanos no edificados, predios urbanos con edificación inferior a la quinta parte del valor del terreno, fraccionamientos autorizados y adquirientes de lotes; esos supuestos son reglas de incremento sobre la tasa general, no se estructuran como tabla separada en el segmento."
+  },
+  "_meta": {
+    "fuente": "txt",
+    "modelo": "gpt-5.4-mini"
+  },
+  "_meta_v2": {
+    "intentos": 1,
+    "requiere_revision": false,
+    "escalado": false,
+    "razon": null,
+    "tokens": {
+      "input": 5299,
+      "output": 230,
+      "cached": 3840
+    },
+    "cvegeo": "28014",
+    "estado": "tamaulipas",
+    "anio": 2021
+  }
+}

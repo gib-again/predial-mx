@@ -1,0 +1,75 @@
+{
+  "predial": {
+    "tipo_esquema": "tarifa_millar",
+    "tabla": [
+      {
+        "grupo": "general",
+        "clave": "urbano_suburbano_2002_en_adelante",
+        "descripcion": "Inmuebles urbanos y suburbanos con valor determinado o modificado: a la entrada en vigor de la Ley; durante 2002 y hasta 2023 inclusive",
+        "tasa_millar": 0.0024,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "general",
+        "clave": "rustico_2002_en_adelante",
+        "descripcion": "Inmuebles rústicos con valor determinado o modificado: a la entrada en vigor de la Ley; durante 2002 y hasta 2023 inclusive",
+        "tasa_millar": 0.0045,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "general",
+        "clave": "urbano_suburbano_1993_2001",
+        "descripcion": "Inmuebles urbanos y suburbanos con valor determinado o modificado: con anterioridad al año 2002 y hasta 1993 inclusive",
+        "tasa_millar": 0.008,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "general",
+        "clave": "rustico_1993_2001",
+        "descripcion": "Inmuebles rústicos con valor determinado o modificado: con anterioridad al año 2002 y hasta 1993 inclusive",
+        "tasa_millar": 0.015,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "general",
+        "clave": "urbano_suburbano_pre_1993",
+        "descripcion": "Inmuebles urbanos y suburbanos con valor determinado o modificado: con anterioridad al año 1993",
+        "tasa_millar": 0.013,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "general",
+        "clave": "rustico_pre_1993",
+        "descripcion": "Inmuebles rústicos con valor determinado o modificado: con anterioridad al año 1993",
+        "tasa_millar": 0.012,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      }
+    ],
+    "minimo_predial": null,
+    "comentarios": "Artículo 4: se establecen tarifas paralelas por tipo de inmueble (urbano/suburbano y rústico) y por antigüedad del valor determinado o modificado, expresadas como tasas al millar. Se omiten las tablas de valores unitarios de los artículos 5 y 6 porque son tablas catastrales de valuación, no la mecánica del impuesto predial. La tasa para inmuebles urbanos/suburbanos y la de rústicos se transcriben separadas como filas del mismo catálogo porque el artículo presenta el mismo esquema tarifario por grupo y periodo."
+  },
+  "_meta": {
+    "fuente": "txt",
+    "modelo": "gpt-5.4-mini"
+  },
+  "_meta_v2": {
+    "intentos": 1,
+    "requiere_revision": false,
+    "escalado": false,
+    "razon": null,
+    "tokens": {
+      "input": 7671,
+      "output": 596,
+      "cached": 3840
+    },
+    "cvegeo": "11046",
+    "estado": "guanajuato",
+    "anio": 2024
+  }
+}

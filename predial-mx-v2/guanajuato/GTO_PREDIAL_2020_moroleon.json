@@ -1,0 +1,105 @@
+{
+  "predial": {
+    "tipo_esquema": "mixto",
+    "tabla": [
+      {
+        "n_rango": 1,
+        "inferior": 0.01,
+        "superior": 139981.64,
+        "columnas": [
+          {
+            "nombre": "urbano_suburbano_con_edificaciones",
+            "valor": 0.0024,
+            "tipo": "tasa_marginal",
+            "unidad": "porcentaje"
+          }
+        ]
+      },
+      {
+        "n_rango": 2,
+        "inferior": 139981.65,
+        "superior": 300000.0,
+        "columnas": [
+          {
+            "nombre": "urbano_suburbano_con_edificaciones",
+            "valor": 0.00255,
+            "tipo": "tasa_marginal",
+            "unidad": "porcentaje"
+          }
+        ]
+      },
+      {
+        "n_rango": 3,
+        "inferior": 300000.01,
+        "superior": 600000.0,
+        "columnas": [
+          {
+            "nombre": "urbano_suburbano_con_edificaciones",
+            "valor": 0.0027,
+            "tipo": "tasa_marginal",
+            "unidad": "porcentaje"
+          }
+        ]
+      },
+      {
+        "n_rango": 4,
+        "inferior": 600000.01,
+        "superior": 1200000.0,
+        "columnas": [
+          {
+            "nombre": "urbano_suburbano_con_edificaciones",
+            "valor": 0.00285,
+            "tipo": "tasa_marginal",
+            "unidad": "porcentaje"
+          }
+        ]
+      },
+      {
+        "n_rango": 5,
+        "inferior": 1200000.01,
+        "superior": 2400000.0,
+        "columnas": [
+          {
+            "nombre": "urbano_suburbano_con_edificaciones",
+            "valor": 0.003,
+            "tipo": "tasa_marginal",
+            "unidad": "porcentaje"
+          }
+        ]
+      },
+      {
+        "n_rango": 6,
+        "inferior": 2400000.01,
+        "superior": null,
+        "columnas": [
+          {
+            "nombre": "urbano_suburbano_con_edificaciones",
+            "valor": 0.00315,
+            "tipo": "tasa_marginal",
+            "unidad": "porcentaje"
+          }
+        ]
+      }
+    ],
+    "minimo_predial": null,
+    "comentarios": "Art. 4 fracción I, inciso a: tabla de inmuebles urbanos y suburbanos con edificaciones determinada por rangos de valor fiscal; la ley describe cuota fija + impuesto marginal, por lo que la estructura es progresiva. Además, el Art. 4 fracción IV establece tarifas paralelas para inmuebles con valores anteriores a 2002 y hasta 1993 inclusive (8/15/6 al millar y 13/12 al millar según urbano/suburbano/rústico), pero no se incorporan en la tabla principal por ser un régimen separado. También existe una fracción IV con tarifas paralelas, no acumulables, para inmuebles urbanos y suburbanos sin edificaciones y rústicos con valores determinados o modificados durante años específicos."
+  },
+  "_meta": {
+    "fuente": "txt",
+    "modelo": "gpt-5.4-mini"
+  },
+  "_meta_v2": {
+    "intentos": 1,
+    "requiere_revision": false,
+    "escalado": false,
+    "razon": null,
+    "tokens": {
+      "input": 8176,
+      "output": 544,
+      "cached": 3840
+    },
+    "cvegeo": "11021",
+    "estado": "guanajuato",
+    "anio": 2020
+  }
+}

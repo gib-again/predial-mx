@@ -1,0 +1,63 @@
+{
+  "predial": {
+    "tipo_esquema": "tarifa_millar",
+    "tabla": [
+      {
+        "grupo": "urbano",
+        "clave": "predios_urbanos_con_edificacion",
+        "descripcion": "Predios urbanos con edificación (no se considera edificación bardas y cercas)",
+        "tasa_millar": 0.005,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "otro",
+        "clave": "lotes_baldios_desmontados",
+        "descripcion": "Lotes baldíos, desmontados",
+        "tasa_millar": 0.005,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "otro",
+        "clave": "lotes_baldios_con_maleza",
+        "descripcion": "Lotes baldíos, con maleza",
+        "tasa_millar": 0.007,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "rustico",
+        "clave": "predios_rusticos_y_extraccion_ejidal_titulados",
+        "descripcion": "Predios rústicos y predios de extracción ejidal ya titulados",
+        "tasa_millar": 0.005,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      }
+    ],
+    "minimo_predial": {
+      "monto": 156.0,
+      "periodicidad": "anual",
+      "unidad": "pesos"
+    },
+    "comentarios": "Art. 2: tarifa principal por categorías de predio con tasas al millar anuales. Se ignoran incentivos/bonificaciones por pago anticipado, discapacidad, beneficencia y estímulos a empresas porque no forman parte de la mecánica base solicitada. El mínimo predial es de $26.00 por bimestre ($156.00 anual)."
+  },
+  "_meta": {
+    "fuente": "txt",
+    "modelo": "gpt-5.4-mini"
+  },
+  "_meta_v2": {
+    "intentos": 1,
+    "requiere_revision": false,
+    "escalado": false,
+    "razon": null,
+    "tokens": {
+      "input": 6122,
+      "output": 364,
+      "cached": 3840
+    },
+    "cvegeo": "05032",
+    "estado": "coahuila",
+    "anio": 2024
+  }
+}

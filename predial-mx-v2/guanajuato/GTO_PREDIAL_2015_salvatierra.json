@@ -1,0 +1,55 @@
+{
+  "predial": {
+    "tipo_esquema": "tarifa_millar",
+    "tabla": [
+      {
+        "grupo": "urbano",
+        "clave": "con_edificaciones",
+        "descripcion": "Inmuebles urbanos y suburbanos con edificaciones",
+        "tasa_millar": 0.0024,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "urbano",
+        "clave": "sin_edificaciones",
+        "descripcion": "Inmuebles urbanos y suburbanos sin edificaciones",
+        "tasa_millar": 0.0045,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "rustico",
+        "clave": "rustico",
+        "descripcion": "Inmuebles rústicos",
+        "tasa_millar": 0.0018,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      }
+    ],
+    "minimo_predial": {
+      "monto": 0.5,
+      "periodicidad": "anual",
+      "unidad": "pesos"
+    },
+    "comentarios": "Art. 5, Sección Primera (Tasas): se establecen tasas anuales al millar para inmuebles urbanos y suburbanos con edificaciones (2.4 al millar), sin edificaciones (4.5 al millar) e inmuebles rústicos (1.8 al millar). Además, el Art. 6 fracción III menciona 0.5% para avalúos, pero corresponde a criterios de valuación y no se trata como mecánica del impuesto; se consigna únicamente como mínimo_predial por aparecer como cantidad aislada en el texto."
+  },
+  "_meta": {
+    "fuente": "txt",
+    "modelo": "gpt-5.4-mini"
+  },
+  "_meta_v2": {
+    "intentos": 1,
+    "requiere_revision": false,
+    "escalado": false,
+    "razon": null,
+    "tokens": {
+      "input": 7302,
+      "output": 334,
+      "cached": 3840
+    },
+    "cvegeo": "11028",
+    "estado": "guanajuato",
+    "anio": 2015
+  }
+}

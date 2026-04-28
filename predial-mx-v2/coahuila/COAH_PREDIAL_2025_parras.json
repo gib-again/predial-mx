@@ -1,0 +1,71 @@
+{
+  "predial": {
+    "tipo_esquema": "tarifa_millar",
+    "tabla": [
+      {
+        "grupo": "urbano",
+        "clave": "predios_urbanos",
+        "descripcion": "Predios urbanos",
+        "tasa_millar": 5.0,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "rustico",
+        "clave": "predios_rusticos",
+        "descripcion": "Predios rústicos",
+        "tasa_millar": 3.0,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "rustico",
+        "clave": "rusticos_industriales_eolica_ejecucion",
+        "descripcion": "Predios rústicos industriales con explotación de energía renovable (eólica) en ejecución",
+        "tasa_millar": 5.0,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "rustico",
+        "clave": "rusticos_industriales_eolica_desarrollo",
+        "descripcion": "Predios rústicos industriales con explotación de energía renovable (eólica) en desarrollo",
+        "tasa_millar": 5.0,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "rustico",
+        "clave": "rusticos_industriales_eolica_proyecto",
+        "descripcion": "Predios rústicos industriales con explotación de energía renovable (eólica) en proyecto",
+        "tasa_millar": 5.0,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      }
+    ],
+    "minimo_predial": {
+      "monto": 33.5,
+      "periodicidad": "bimestral",
+      "unidad": "pesos"
+    },
+    "comentarios": "Art. 2: tasas anuales al millar para predios urbanos (5), rústicos (3) y predios rústicos industriales con explotación de energía renovable (eólica) en ejecución, desarrollo y proyecto (5 cada uno). El texto también establece un mínimo predial de $33.50 bimestral. Los incentivos y bonificaciones subsecuentes se ignoran por instrucción."
+  },
+  "_meta": {
+    "fuente": "txt",
+    "modelo": "gpt-5.4-mini"
+  },
+  "_meta_v2": {
+    "intentos": 1,
+    "requiere_revision": false,
+    "escalado": false,
+    "razon": null,
+    "tokens": {
+      "input": 6000,
+      "output": 418,
+      "cached": 3840
+    },
+    "cvegeo": "05024",
+    "estado": "coahuila",
+    "anio": 2025
+  }
+}

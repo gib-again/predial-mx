@@ -1,0 +1,33 @@
+{
+  "predial": {
+    "tipo_esquema": "tasa_unica",
+    "tabla": [
+      {
+        "descripcion": "Impuesto predial general: cuota fija más tasa sobre valor catastral",
+        "tasa": 0.002,
+        "base_calculo": "valor_catastral",
+        "unidad": "porcentaje"
+      }
+    ],
+    "minimo_predial": null,
+    "comentarios": "Art. 13 establece una mecánica general única para el impuesto predial: cuota fija de $60.00 más la aplicación de una tasa de 0.20% sobre el valor catastral vigente. Los artículos 14 a 16 contienen valores unitarios de terreno/construcción, descuentos y el impuesto sobre rentas o frutos civiles; no se transcriben como parte de la mecánica tarifaria principal."
+  },
+  "_meta": {
+    "fuente": "txt",
+    "modelo": "gpt-5.4-mini"
+  },
+  "_meta_v2": {
+    "intentos": 1,
+    "requiere_revision": false,
+    "escalado": false,
+    "razon": null,
+    "tokens": {
+      "input": 6513,
+      "output": 169,
+      "cached": 3840
+    },
+    "cvegeo": "31026",
+    "estado": "yucatan",
+    "anio": 2021
+  }
+}

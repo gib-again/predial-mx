@@ -1,0 +1,74 @@
+{
+  "predial": {
+    "tipo_esquema": "tarifa_millar",
+    "tabla": [
+      {
+        "grupo": "urbano",
+        "clave": "predio_urbano_edificado",
+        "descripcion": "Predio Urbano edificado",
+        "tasa_millar": 1.6,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "urbano",
+        "clave": "predio_urbano_baldio",
+        "descripcion": "Predio Urbano baldío",
+        "tasa_millar": 8.0,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "rustico",
+        "clave": "predio_rustico",
+        "descripcion": "Predio rústico",
+        "tasa_millar": 1.2,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "urbano",
+        "clave": "fraccionamiento_en_proceso_de_ejecucion",
+        "descripcion": "Predio de fraccionamiento en proceso de ejecución",
+        "tasa_millar": 1.6,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "urbano",
+        "clave": "reserva_urbana",
+        "descripcion": "Predio de reserva urbana",
+        "tasa_millar": 1.4,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "rustico",
+        "clave": "produccion_agricola_dominio_pleno_proveniente_de_ejido",
+        "descripcion": "Predio de producción agrícola, con dominio pleno que provenga de ejido",
+        "tasa_millar": 0.2,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      }
+    ],
+    "minimo_predial": null,
+    "comentarios": ""
+  },
+  "_meta": {
+    "fuente": "txt",
+    "modelo": "gpt-5.4-mini"
+  },
+  "_meta_v2": {
+    "intentos": 1,
+    "requiere_revision": false,
+    "razon": null,
+    "tokens": {
+      "input": 4410,
+      "output": 357,
+      "cached": 3840
+    },
+    "cvegeo": "22007",
+    "estado": "queretaro",
+    "anio": 2015
+  }
+}

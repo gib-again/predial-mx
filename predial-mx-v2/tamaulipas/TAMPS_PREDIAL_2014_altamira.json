@@ -1,0 +1,90 @@
+{
+  "predial": {
+    "tipo_esquema": "progresivo",
+    "tabla": [
+      {
+        "n_rango": 1,
+        "inferior": 0.01,
+        "superior": 85000.0,
+        "cuota_fija": 0.0,
+        "tasa_marginal": 0.0015
+      },
+      {
+        "n_rango": 2,
+        "inferior": 85000.01,
+        "superior": 100000.0,
+        "cuota_fija": 195.0,
+        "tasa_marginal": 0.0016
+      },
+      {
+        "n_rango": 3,
+        "inferior": 100000.01,
+        "superior": 200000.0,
+        "cuota_fija": 219.0,
+        "tasa_marginal": 0.0017
+      },
+      {
+        "n_rango": 4,
+        "inferior": 200000.01,
+        "superior": 300000.0,
+        "cuota_fija": 389.0,
+        "tasa_marginal": 0.0018
+      },
+      {
+        "n_rango": 5,
+        "inferior": 300000.01,
+        "superior": 400000.0,
+        "cuota_fija": 569.0,
+        "tasa_marginal": 0.002
+      },
+      {
+        "n_rango": 6,
+        "inferior": 400000.01,
+        "superior": 500000.0,
+        "cuota_fija": 769.0,
+        "tasa_marginal": 0.0022
+      },
+      {
+        "n_rango": 7,
+        "inferior": 500000.01,
+        "superior": 600000.0,
+        "cuota_fija": 989.0,
+        "tasa_marginal": 0.0024
+      },
+      {
+        "n_rango": 8,
+        "inferior": 600000.01,
+        "superior": 700000.0,
+        "cuota_fija": 1229.0,
+        "tasa_marginal": 0.0026
+      },
+      {
+        "n_rango": 9,
+        "inferior": 700000.01,
+        "superior": null,
+        "cuota_fija": 1489.0,
+        "tasa_marginal": 0.0028
+      }
+    ],
+    "minimo_predial": null,
+    "comentarios": "Art. 10 fracc. I establece tarifa progresiva para predios urbanos y suburbanos con valor catastral: cuotas fijas y tasa anual aplicable sobre el excedente del límite inferior al millar. Art. 10 fracc. II establece tarifa paralela de 1.5 al millar anual para predios rústicos sobre el valor catastral. Fraccs. III, IV, V y VI son incrementos sobre la tasa de la fracc. II para supuestos de baldíos, baja edificación y fraccionamientos; se describen como tarifa paralela acumulable pero no se integran a la tabla principal."
+  },
+  "_meta": {
+    "fuente": "txt",
+    "modelo": "gpt-5.4-mini"
+  },
+  "_meta_v2": {
+    "intentos": 1,
+    "requiere_revision": false,
+    "escalado": false,
+    "razon": null,
+    "tokens": {
+      "input": 5983,
+      "output": 519,
+      "cached": 3840
+    },
+    "cvegeo": "28003",
+    "estado": "tamaulipas",
+    "anio": 2014
+  }
+}

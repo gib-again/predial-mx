@@ -1,0 +1,51 @@
+{
+  "predial": {
+    "tipo_esquema": "tarifa_millar",
+    "tabla": [
+      {
+        "grupo": "urbano",
+        "clave": "inmuebles_urbanos_y_suburbanos_con_edificaciones",
+        "descripcion": "Inmuebles urbanos y suburbanos con edificaciones; tasa anual conforme al año de adquisición/antigüedad indicada en el artículo 4.",
+        "tasa_millar": 0.024,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "urbano",
+        "clave": "inmuebles_urbanos_y_suburbanos_sin_edificaciones",
+        "descripcion": "Inmuebles urbanos y suburbanos sin edificaciones; tasa anual conforme al año de adquisición/antigüedad indicada en el artículo 4.",
+        "tasa_millar": 0.045,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "rustico",
+        "clave": "inmuebles_rusticos",
+        "descripcion": "Inmuebles rústicos; tasa anual indicada en el artículo 4.",
+        "tasa_millar": 0.018,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      }
+    ],
+    "minimo_predial": null,
+    "comentarios": "Artículo 4 establece tasas al millar por tipo de inmueble y condición (urbano/suburbano con edificaciones, urbano/suburbano sin edificaciones, rústico). El texto OCR muestra más de una línea temporal para la tasa, pero la mecánica estructural es una tarifa por categoría; no se incorporan tablas de valores unitarios de los artículos 5 y 6 porque son catastro/valuación, no mecánica de cálculo del impuesto. Nota: en el extracto aparecen también tasas históricas para periodos anteriores, pero se transcriben solo las filas legibles del artículo 4."
+  },
+  "_meta": {
+    "fuente": "txt",
+    "modelo": "gpt-5.4-mini"
+  },
+  "_meta_v2": {
+    "intentos": 1,
+    "requiere_revision": false,
+    "escalado": false,
+    "razon": null,
+    "tokens": {
+      "input": 7470,
+      "output": 389,
+      "cached": 3840
+    },
+    "cvegeo": "11002",
+    "estado": "guanajuato",
+    "anio": 2022
+  }
+}

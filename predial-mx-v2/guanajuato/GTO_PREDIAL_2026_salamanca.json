@@ -1,0 +1,51 @@
+{
+  "predial": {
+    "tipo_esquema": "tarifa_millar",
+    "tabla": [
+      {
+        "grupo": "urbano",
+        "clave": "con_edificaciones",
+        "descripcion": "Inmuebles urbanos y suburbanos con edificaciones, fracción I a la entrada en vigor de la presente Ley",
+        "tasa_millar": 5.0,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "urbano",
+        "clave": "sin_edificaciones",
+        "descripcion": "Inmuebles urbanos y suburbanos sin edificaciones, fracción I a la entrada en vigor de la presente Ley",
+        "tasa_millar": 4.6,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "rustico",
+        "clave": "rusticos",
+        "descripcion": "Inmuebles rústicos, fracción I a la entrada en vigor de la presente Ley",
+        "tasa_millar": 2.6,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      }
+    ],
+    "minimo_predial": null,
+    "comentarios": "Art. 4 establece una tarifa anual por categorías de inmueble con tasas al millar. Se transcribe sólo la fracción I porque el texto proporcionado tiene corrupción de OCR en las demás fracciones, pero la mecánica identificable es de tarifa_millar, no de rangos catastrales. Art. 4 también contiene tarifas paralelas históricas (fracciones II, III y IV) para inmuebles urbanos/suburbanos con tasas distintas según antigüedad del inmueble: II) durante 2002 a 2025: 5 al millar con edificaciones, 4.6 al millar sin edificaciones y 2.6 al millar rústicos; III) anteriores a 2002 y hasta 1993: 9 al millar con edificaciones, 15 al millar sin edificaciones y 6 al millar rústicos; IV) anteriores a 1993: 13 al millar con edificaciones, 13 al millar sin edificaciones y 12 al millar rústicos. No se incluye en la tabla principal porque el texto OCR no permite distinguir con certeza la estructura completa de esas fracciones, pero sí se advierte su existencia como tarifas paralelas."
+  },
+  "_meta": {
+    "fuente": "txt",
+    "modelo": "gpt-5.4-mini"
+  },
+  "_meta_v2": {
+    "intentos": 1,
+    "requiere_revision": false,
+    "escalado": false,
+    "razon": null,
+    "tokens": {
+      "input": 7681,
+      "output": 483,
+      "cached": 3840
+    },
+    "cvegeo": "11027",
+    "estado": "guanajuato",
+    "anio": 2026
+  }
+}

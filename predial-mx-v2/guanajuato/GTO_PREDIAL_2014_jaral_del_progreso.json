@@ -1,0 +1,59 @@
+{
+  "predial": {
+    "tipo_esquema": "tarifa_millar",
+    "tabla": [
+      {
+        "grupo": "general",
+        "clave": "entrada_en_vigor",
+        "descripcion": "Inmuebles urbanos y suburbanos con valor determinado o modificado, con edificaciones, a la entrada en vigor de la ley",
+        "tasa_millar": 0.0024,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "general",
+        "clave": "2002_a_2013",
+        "descripcion": "Inmuebles urbanos y suburbanos con valor determinado o modificado, con edificaciones, durante los años 2002 y hasta 2013 inclusive",
+        "tasa_millar": 0.0024,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "general",
+        "clave": "anterior_2002_hasta_1993",
+        "descripcion": "Inmuebles urbanos y suburbanos con valor determinado o modificado, con edificaciones, con anterioridad al año 2002 y hasta 1993 inclusive",
+        "tasa_millar": 0.008,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "general",
+        "clave": "anterior_1993",
+        "descripcion": "Inmuebles urbanos y suburbanos con valor determinado o modificado, con edificaciones, con anterioridad al año de 1993",
+        "tasa_millar": 0.013,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      }
+    ],
+    "minimo_predial": null,
+    "comentarios": "Art. 4: se transcribe la mecánica de tasas anuales al millar para inmuebles urbanos y suburbanos rústicos con las categorías temporales mostradas en el texto. El segmento también menciona valores unitarios de terreno y construcción (Arts. 5 y 6), pero eso corresponde a valuación catastral y no se incluye como mecánica de cálculo del impuesto. La tarifa para inmuebles rústicos aparece paralela en el texto (4.5 al millar, 1.8 al millar, 15 al millar, 6 al millar, 12 al millar según la redacción visible); se deja fuera de la tabla principal por estar el fragmento OCR ambiguo en su disposición, aunque sí forma parte del artículo."
+  },
+  "_meta": {
+    "fuente": "txt",
+    "modelo": "gpt-5.4-mini"
+  },
+  "_meta_v2": {
+    "intentos": 1,
+    "requiere_revision": false,
+    "escalado": false,
+    "razon": null,
+    "tokens": {
+      "input": 7428,
+      "output": 492,
+      "cached": 3840
+    },
+    "cvegeo": "11018",
+    "estado": "guanajuato",
+    "anio": 2014
+  }
+}

@@ -1,0 +1,57 @@
+{
+  "predial": {
+    "tipo_esquema": "mixto",
+    "tabla": [
+      {
+        "n_rango": 1,
+        "inferior": 0.0,
+        "superior": 200000.0,
+        "columnas": [
+          {
+            "nombre": "general",
+            "valor": 0.003,
+            "tipo": "tasa_porcentual",
+            "unidad": "porcentaje"
+          }
+        ]
+      },
+      {
+        "n_rango": 2,
+        "inferior": 200000.0,
+        "superior": null,
+        "columnas": [
+          {
+            "nombre": "general",
+            "valor": 0.003,
+            "tipo": "tasa_porcentual",
+            "unidad": "porcentaje"
+          }
+        ]
+      }
+    ],
+    "minimo_predial": {
+      "monto": 100.0,
+      "periodicidad": "anual",
+      "unidad": "pesos"
+    },
+    "comentarios": "El artículo 19 establece una tasa de 0.30% sobre el valor catastral y además un factor base consistente en 20.00 pesos para predios tipo casa-habitación, sean rústicos o urbanos. Se modela como mixto porque combina una tasa porcentual con un componente fijo adicional no tabulado por rango. Los dos renglones se usan sólo para reflejar la distinción textual del tope de incremento anual: hasta 200000.00 el impuesto no podrá exceder de 6% del ejercicio inmediato anterior y desde 200000.00 en adelante no podrá exceder de 10%; esos topes comparativos no forman parte de la tarifa principal. El texto también señala impuesto mínimo a pagar de 100.00 pesos en predios urbanos y de 150.00 pesos en predios rústicos y tablajes catastrales; por existir mínimos paralelos por tipo de predio, en minimo_predial se consigna el mínimo urbano y el mínimo rústico se deja referido aquí. Asimismo, cuando un inmueble se otorgue en uso, goce o arrendamiento, el impuesto se causa sobre base de rentas: habitacional 4% mensual y comercial 5% mensual sobre la contraprestación; no se incluye en la tabla principal por tratarse de una mecánica paralela sobre otra base."
+  },
+  "_meta": {
+    "fuente": "txt",
+    "modelo": "gpt-5.4"
+  },
+  "_meta_v2": {
+    "intentos": 3,
+    "requiere_revision": false,
+    "escalado": true,
+    "razon": "escalado_a_gpt-5.4_tras_2x_mini_fallido",
+    "tokens": {
+      "input": 39688,
+      "output": 1005,
+      "cached": 13568
+    },
+    "cvegeo": "31101",
+    "estado": "yucatan",
+    "anio": 2022
+  }
+}

@@ -1,0 +1,63 @@
+{
+  "predial": {
+    "tipo_esquema": "tarifa_millar",
+    "tabla": [
+      {
+        "grupo": "urbano",
+        "clave": "predios_urbanos_con_edificacion",
+        "descripcion": "Predios urbanos con edificación",
+        "tasa_millar": 0.005,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "otro",
+        "clave": "lotes_baldios_desmontados",
+        "descripcion": "Lotes baldíos, desmontados",
+        "tasa_millar": 0.005,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "otro",
+        "clave": "lotes_baldios_con_maleza",
+        "descripcion": "Lotes baldíos, con maleza",
+        "tasa_millar": 0.007,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "rustico",
+        "clave": "predios_rusticos_y_extraccion_ejidal_titulados",
+        "descripcion": "Predios rústicos y predios de extracción ejidal ya titulados",
+        "tasa_millar": 0.005,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      }
+    ],
+    "minimo_predial": {
+      "monto": 21.5,
+      "periodicidad": "bimestral",
+      "unidad": "pesos"
+    },
+    "comentarios": "Art. 2 fraccs. I-IV: tasa anual al millar por categoría de predio. Fracc. V establece un mínimo predial de $21.50 por bimestre ($129.00 anual). Se omiten descuentos/bonificaciones de las fraccs. VI-XI por ser estímulos fiscales y no mecánica base del cálculo."
+  },
+  "_meta": {
+    "fuente": "txt",
+    "modelo": "gpt-5.4-mini"
+  },
+  "_meta_v2": {
+    "intentos": 1,
+    "requiere_revision": false,
+    "escalado": false,
+    "razon": null,
+    "tokens": {
+      "input": 6098,
+      "output": 354,
+      "cached": 3840
+    },
+    "cvegeo": "05033",
+    "estado": "coahuila",
+    "anio": 2020
+  }
+}

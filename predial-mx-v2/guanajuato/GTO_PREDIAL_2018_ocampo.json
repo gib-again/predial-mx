@@ -1,0 +1,51 @@
+{
+  "predial": {
+    "tipo_esquema": "tarifa_millar",
+    "tabla": [
+      {
+        "grupo": "urbano",
+        "clave": "con_edificaciones",
+        "descripcion": "Inmuebles urbanos y suburbanos con edificaciones; para los inmuebles con valor determinado o modificado a la entrada en vigor de la ley: 2.4 al millar; durante 2002 a 2017 inclusive: 2.4 al millar; anteriores a 2002 y hasta 1993 inclusive: 8 al millar; anteriores a 1993: 13 al millar.",
+        "tasa_millar": 0.0024,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "urbano",
+        "clave": "sin_edificaciones",
+        "descripcion": "Inmuebles urbanos y suburbanos sin edificaciones; para los inmuebles con valor determinado o modificado a la entrada en vigor de la ley: 4.5 al millar; durante 2002 a 2017 inclusive: 4.5 al millar; anteriores a 2002 y hasta 1993 inclusive: 15 al millar; anteriores a 1993: 12 al millar.",
+        "tasa_millar": 0.0045,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "rustico",
+        "clave": "general",
+        "descripcion": "Inmuebles rústicos; para los inmuebles con valor determinado o modificado a la entrada en vigor de la ley: 1.8 al millar; durante 2002 a 2017 inclusive: 1.3 al millar; anteriores a 2002 y hasta 1993 inclusive: 6 al millar; anteriores a 1993: 12 al millar.",
+        "tasa_millar": 0.0018,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      }
+    ],
+    "minimo_predial": null,
+    "comentarios": "Artículo 4 establece tarifas anuales al millar por categoría de predio (urbano con edificaciones, urbano/suburbano sin edificaciones y rústico). Se transcribe sólo la mecánica principal de cálculo; las tasas históricas por antigüedad del valor también están contenidas en el mismo artículo. Artículos 5 y 6 describen valores unitarios y criterios de avalúo, no la mecánica de determinación de la tasa."
+  },
+  "_meta": {
+    "fuente": "txt",
+    "modelo": "gpt-5.4-mini"
+  },
+  "_meta_v2": {
+    "intentos": 1,
+    "requiere_revision": false,
+    "escalado": false,
+    "razon": null,
+    "tokens": {
+      "input": 7085,
+      "output": 513,
+      "cached": 3840
+    },
+    "cvegeo": "11022",
+    "estado": "guanajuato",
+    "anio": 2018
+  }
+}

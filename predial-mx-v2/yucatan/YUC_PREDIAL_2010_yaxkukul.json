@@ -1,0 +1,33 @@
+{
+  "predial": {
+    "tipo_esquema": "cuota_fija_simple",
+    "tabla": [
+      {
+        "descripcion": "Predio urbano",
+        "monto": 10.0,
+        "periodicidad": "anual",
+        "unidad": "pesos"
+      }
+    ],
+    "minimo_predial": null,
+    "comentarios": "Art. 13 establece importes fijos para el impuesto predial: Predio Urbano $10.00 y Predio Rústico $5.00. El Art. 14 contiene sólo un descuento y se ignora. El Art. 15 regula impuesto con base en rentas o frutos civiles, que se excluye por no ser predial sobre valor catastral; por ello no se clasifica como tarifa paralela del predial. Texto estructuralmente sólo deja una cuota fija anual detectada para predial."
+  },
+  "_meta": {
+    "fuente": "txt",
+    "modelo": "gpt-5.4-mini"
+  },
+  "_meta_v2": {
+    "intentos": 2,
+    "requiere_revision": false,
+    "escalado": false,
+    "razon": null,
+    "tokens": {
+      "input": 5507,
+      "output": 177,
+      "cached": 4864
+    },
+    "cvegeo": "31105",
+    "estado": "yucatan",
+    "anio": 2010
+  }
+}

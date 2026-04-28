@@ -1,0 +1,33 @@
+{
+  "predial": {
+    "tipo_esquema": "tasa_unica",
+    "tabla": [
+      {
+        "descripcion": "Impuesto predial general calculado sobre el valor catastral actualizado",
+        "tasa": 0.0005,
+        "base_calculo": "valor_catastral",
+        "unidad": "porcentaje"
+      }
+    ],
+    "minimo_predial": null,
+    "comentarios": "Artículo 14, inciso d): la tarifa del impuesto predial es 0.05% del valor catastral actualizado. Las tablas previas corresponden a valores unitarios para determinar el valor catastral del terreno y la construcción, no a una tarifa del impuesto predial. Para zona costera, el texto establece una tarifa paralela de 0.003% del valor catastral para predios de playa colindantes con el Golfo de México y su zona federal marítimo terrestre; no se incluye en la tabla principal por ser tarifa separada. La sección 'Comisaría Las Coloradas' contiene valores unitarios y cuotas fijas para terrenos sin construcción y materiales de construcción, pero se presenta bajo 'valores unitarios' y no como la tarifa principal del impuesto predial general."
+  },
+  "_meta": {
+    "fuente": "txt",
+    "modelo": "gpt-5.4"
+  },
+  "_meta_v2": {
+    "intentos": 3,
+    "requiere_revision": false,
+    "escalado": true,
+    "razon": "escalado_a_gpt-5.4_tras_2x_mini_fallido",
+    "tokens": {
+      "input": 18800,
+      "output": 779,
+      "cached": 13568
+    },
+    "cvegeo": "31061",
+    "estado": "yucatan",
+    "anio": 2020
+  }
+}

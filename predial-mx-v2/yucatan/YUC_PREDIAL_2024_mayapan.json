@@ -1,0 +1,57 @@
+{
+  "predial": {
+    "tipo_esquema": "mixto",
+    "tabla": [
+      {
+        "n_rango": 1,
+        "inferior": 0.0,
+        "superior": 200000.0,
+        "columnas": [
+          {
+            "nombre": "general",
+            "valor": 0.00025,
+            "tipo": "tasa_millar",
+            "unidad": "al_millar"
+          }
+        ]
+      },
+      {
+        "n_rango": 2,
+        "inferior": 200000.01,
+        "superior": null,
+        "columnas": [
+          {
+            "nombre": "general",
+            "valor": 0.00025,
+            "tipo": "tasa_millar",
+            "unidad": "al_millar"
+          }
+        ]
+      }
+    ],
+    "minimo_predial": {
+      "monto": 50.0,
+      "periodicidad": "anual",
+      "unidad": "pesos"
+    },
+    "comentarios": "Art. 6 establece el predial con base en valor catastral: factor 0.00025 del valor catastral actualizado. También dispone que, si el valor catastral es igual o menor a $200,000.00, se pagará cuota fija anual de $50.00. Además, el Art. 8 regula una tasa mensual sobre rentas o frutos civiles (Habitacional 2% y Comercial 5%), que constituye una base distinta y paralela; no se integra en la tabla principal por no corresponder al cálculo sobre valor catastral. Se ignoran descuentos del Art. 7."
+  },
+  "_meta": {
+    "fuente": "txt",
+    "modelo": "gpt-5.4-mini"
+  },
+  "_meta_v2": {
+    "intentos": 1,
+    "requiere_revision": false,
+    "escalado": false,
+    "razon": null,
+    "tokens": {
+      "input": 6252,
+      "output": 282,
+      "cached": 3840
+    },
+    "cvegeo": "31049",
+    "estado": "yucatan",
+    "anio": 2024
+  }
+}

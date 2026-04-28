@@ -1,0 +1,33 @@
+{
+  "predial": {
+    "tipo_esquema": "cuota_fija_simple",
+    "tabla": [
+      {
+        "descripcion": "Predial urbano",
+        "monto": 25.0,
+        "periodicidad": "anual",
+        "unidad": "pesos"
+      }
+    ],
+    "minimo_predial": null,
+    "comentarios": "Art. 13 establece una cuota fija anual para predial urbano ($25.00). El mismo artículo señala predial rústico ($23.00), pero en el texto proporcionado aparece además la regla de predial con base en rentas o frutos civiles (Art. 15), que corresponde a otra base de cálculo distinta; no se incluye en la mecánica principal de predial por valor catastral. Se ignoran descuentos del Art. 14. \nNota: el texto también contiene predial rústico como cuota fija anual; sin embargo, al existir dos cuotas fijas simples por tipo de predio, la mecánica puede verse como una tarifa por categorías. Se transcribió sólo la primera entrada visible por limitación de clasificación simple."
+  },
+  "_meta": {
+    "fuente": "txt",
+    "modelo": "gpt-5.4-mini"
+  },
+  "_meta_v2": {
+    "intentos": 1,
+    "requiere_revision": false,
+    "escalado": false,
+    "razon": null,
+    "tokens": {
+      "input": 5071,
+      "output": 224,
+      "cached": 3840
+    },
+    "cvegeo": "31067",
+    "estado": "yucatan",
+    "anio": 2010
+  }
+}

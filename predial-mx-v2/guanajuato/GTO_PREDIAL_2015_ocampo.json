@@ -1,0 +1,59 @@
+{
+  "predial": {
+    "tipo_esquema": "tarifa_millar",
+    "tabla": [
+      {
+        "grupo": "urbano",
+        "clave": "urbanos_y_suburbanos_con_edificaciones",
+        "descripcion": "Inmuebles urbanos y suburbanos con edificaciones",
+        "tasa_millar": 0.0024,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "urbano",
+        "clave": "urbanos_y_suburbanos_sin_edificaciones",
+        "descripcion": "Inmuebles urbanos y suburbanos sin edificaciones",
+        "tasa_millar": 0.0045,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "rustico",
+        "clave": "rusticos_con_antiguedad_1994_a_2001",
+        "descripcion": "Inmuebles rústicos con valor determinado o modificado con anterioridad al año 2002 y hasta 1993, inclusive",
+        "tasa_millar": 0.006,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "rustico",
+        "clave": "rusticos_con_antiguedad_anterior_a_1993",
+        "descripcion": "Inmuebles rústicos con valor determinado o modificado con anterioridad al año de 1993",
+        "tasa_millar": 0.013,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      }
+    ],
+    "minimo_predial": null,
+    "comentarios": "Art. 4 establece tasas al millar por categoría y antigüedad del valor determinado o modificado. Se transcribe como tarifa_millar por tratarse de filas categóricas sin rangos de valor catastral. Los valores unitarios de los arts. 5 y 6 son tablas de catastro/avalúo y no forman parte de la mecánica de cálculo del impuesto. Nota: la tabla del Art. 4 en el texto presenta renglones por periodo de determinación del valor; se conservan sólo las tasas aplicables visibles en el extracto. La mención de 'durante el año 2002, y hasta el año 2014, o inclusive' muestra la misma tasa que el renglón anterior en el OCR, sin alterar la estructura tarifaria."
+  },
+  "_meta": {
+    "fuente": "txt",
+    "modelo": "gpt-5.4-mini"
+  },
+  "_meta_v2": {
+    "intentos": 1,
+    "requiere_revision": false,
+    "escalado": false,
+    "razon": null,
+    "tokens": {
+      "input": 7293,
+      "output": 468,
+      "cached": 3840
+    },
+    "cvegeo": "11022",
+    "estado": "guanajuato",
+    "anio": 2015
+  }
+}

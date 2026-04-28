@@ -1,0 +1,55 @@
+{
+  "predial": {
+    "tipo_esquema": "tarifa_millar",
+    "tabla": [
+      {
+        "grupo": "urbano",
+        "clave": "predios_urbanos",
+        "descripcion": "Sobre los predios urbanos",
+        "tasa_millar": 0.003,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "rustico",
+        "clave": "predios_rusticos",
+        "descripcion": "Sobre los predios rústicos",
+        "tasa_millar": 0.003,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "otro",
+        "clave": "predios_parcelarios",
+        "descripcion": "Sobre los predios parcelarios",
+        "tasa_millar": 0.001,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      }
+    ],
+    "minimo_predial": {
+      "monto": 17.0,
+      "periodicidad": "bimestral",
+      "unidad": "pesos"
+    },
+    "comentarios": "Art. 2: además de la tarifa principal por valor catastral, el texto establece tarifas paralelas para predios de extracción ejidal y establecimientos metalúrgicos o mineros con extracción: 3% sobre el valor de su producción anual comercializada. No se incluyen en la tabla principal por aplicar a bases distintas al valor catastral. También indica que toda propiedad dentro del Plan Director de Desarrollo Urbano se cobrará como predial urbano aunque la escritura señale propiedad rústica. Se ignoran incentivos, descuentos y bonificaciones por no formar parte de la mecánica de cálculo."
+  },
+  "_meta": {
+    "fuente": "txt",
+    "modelo": "gpt-5.4-mini"
+  },
+  "_meta_v2": {
+    "intentos": 1,
+    "requiere_revision": false,
+    "escalado": false,
+    "razon": null,
+    "tokens": {
+      "input": 5797,
+      "output": 323,
+      "cached": 3840
+    },
+    "cvegeo": "05017",
+    "estado": "coahuila",
+    "anio": 2012
+  }
+}

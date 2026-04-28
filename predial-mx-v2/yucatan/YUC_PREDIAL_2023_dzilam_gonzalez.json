@@ -1,0 +1,76 @@
+{
+  "predial": {
+    "tipo_esquema": "progresivo",
+    "tabla": [
+      {
+        "n_rango": 1,
+        "inferior": 1.0,
+        "superior": 20000.0,
+        "cuota_fija": 80.0,
+        "tasa_marginal": 0.0025
+      },
+      {
+        "n_rango": 2,
+        "inferior": 20000.0,
+        "superior": 50000.0,
+        "cuota_fija": 100.0,
+        "tasa_marginal": 0.0025
+      },
+      {
+        "n_rango": 3,
+        "inferior": 50000.0,
+        "superior": 80000.0,
+        "cuota_fija": 130.0,
+        "tasa_marginal": 0.0025
+      },
+      {
+        "n_rango": 4,
+        "inferior": 80000.0,
+        "superior": 110000.0,
+        "cuota_fija": 150.0,
+        "tasa_marginal": 0.002
+      },
+      {
+        "n_rango": 5,
+        "inferior": 110000.0,
+        "superior": 500000.0,
+        "cuota_fija": 200.0,
+        "tasa_marginal": 0.002
+      },
+      {
+        "n_rango": 6,
+        "inferior": 500000.0,
+        "superior": 1000000.0,
+        "cuota_fija": 250.0,
+        "tasa_marginal": 0.0015
+      },
+      {
+        "n_rango": 7,
+        "inferior": 1000000.0,
+        "superior": null,
+        "cuota_fija": 300.0,
+        "tasa_marginal": 0.0015
+      }
+    ],
+    "minimo_predial": null,
+    "comentarios": "Se toma como tabla principal la tarifa de predios urbanos del Artículo 13, normalizando los rangos centavados a límites contiguos: 1.00–20,000.00; 20,001.00–50,000.00; 50,001.00–80,000.00; 80,001.00–110,000.00; 110,501.00–500,000.00; 500,001.00–1,000,000.00; 1,000,001.00 en adelante, a 1–20,000; 20,000–50,000; 50,000–80,000; 80,000–110,000; 110,000–500,000; 500,000–1,000,000; 1,000,000 en adelante, conforme a la instrucción de normalización sin huecos. Tarifa paralela no incluida en la tabla principal: predios rústicos con la misma estructura de brackets pero cuotas fijas de 100, 300, 320, 350, 400, 450 y 500 pesos y tasas marginales de 0.25%, 0.25%, 0.25%, 0.20%, 0.20%, 0.15% y 0.15%, respectivamente. La ley también señala que la misma tarifa de rústicos se aplicará a terrenos ejidales. Además, todo predio destinado a la producción agropecuaria pagará 10 al millar anual sobre el valor registrado o catastral; se describe aquí como tarifa paralela y no se mezcla en la tabla principal."
+  },
+  "_meta": {
+    "fuente": "txt",
+    "modelo": "gpt-5.4"
+  },
+  "_meta_v2": {
+    "intentos": 3,
+    "requiere_revision": false,
+    "escalado": true,
+    "razon": "escalado_a_gpt-5.4_tras_2x_mini_fallido",
+    "tokens": {
+      "input": 21761,
+      "output": 1566,
+      "cached": 11520
+    },
+    "cvegeo": "31029",
+    "estado": "yucatan",
+    "anio": 2023
+  }
+}

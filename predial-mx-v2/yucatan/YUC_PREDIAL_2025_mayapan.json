@@ -1,0 +1,37 @@
+{
+  "predial": {
+    "tipo_esquema": "otro_no_clasificado",
+    "categoria": "estructura_no_estandar",
+    "descripcion_estructural": "El texto no presenta una sola mecánica estándar de cálculo de predial. Para predial base valor catastral, el artículo indica un factor de 0.00025 sobre el valor catastral actualizado y además una cuota fija de $150.00 para predios con valor catastral igual o menor a $200,000.00; sin embargo, también incluye una tarifa distinta sobre rentas o frutos civiles en el Art. 8 (2% habitacional y 5% comercial), que corresponde a otra base de cálculo. Por ello no encaja limpiamente en una sola de las variantes tarifarias solicitadas.",
+    "tabla_cruda": [
+      {
+        "descripcion": "Predial base valor catastral",
+        "valores": "factor=0.00025 sobre valor catastral actualizado; cuota fija si valor catastral <= 200000.00: 150.00"
+      },
+      {
+        "descripcion": "Predial sobre rentas o frutos civiles",
+        "valores": "habitacional=2% sobre contraprestación mensual; comercial=5% sobre contraprestación mensual"
+      }
+    ],
+    "minimo_predial": null,
+    "comentarios": "Se ignoran descuentos y comparativos del ejercicio anterior. La tabla de valores unitarios de terreno y construcción no se transcribe porque es catastro, no tarifa."
+  },
+  "_meta": {
+    "fuente": "txt",
+    "modelo": "gpt-5.4-mini"
+  },
+  "_meta_v2": {
+    "intentos": 1,
+    "requiere_revision": true,
+    "escalado": false,
+    "razon": "clasificado_como_otro_no_clasificado",
+    "tokens": {
+      "input": 6242,
+      "output": 300,
+      "cached": 3840
+    },
+    "cvegeo": "31049",
+    "estado": "yucatan",
+    "anio": 2025
+  }
+}

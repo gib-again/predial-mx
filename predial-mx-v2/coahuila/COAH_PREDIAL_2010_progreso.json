@@ -1,0 +1,28 @@
+{
+  "predial": {
+    "tipo_esquema": "otro_no_clasificado",
+    "categoria": "segmento_vacio",
+    "descripcion_estructural": "El texto proporcionado no incluye la mecánica del Impuesto Predial; sólo aparecen disposiciones de incentivos para ciertos contribuyentes y luego inicia el Capítulo Segundo del Impuesto sobre Adquisición de Inmuebles. No hay tabla, tasa, cuota o brackets del predial para transcribir.",
+    "tabla_cruda": [],
+    "minimo_predial": null,
+    "comentarios": "No se detectó estructura tarifaria del impuesto predial en el fragmento entregado."
+  },
+  "_meta": {
+    "fuente": "txt",
+    "modelo": "gpt-5.4-mini"
+  },
+  "_meta_v2": {
+    "intentos": 1,
+    "requiere_revision": true,
+    "escalado": false,
+    "razon": "clasificado_como_otro_no_clasificado",
+    "tokens": {
+      "input": 5564,
+      "output": 138,
+      "cached": 3840
+    },
+    "cvegeo": "05026",
+    "estado": "coahuila",
+    "anio": 2010
+  }
+}

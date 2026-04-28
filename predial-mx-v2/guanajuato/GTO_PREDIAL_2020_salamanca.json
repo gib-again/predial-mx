@@ -1,0 +1,51 @@
+{
+  "predial": {
+    "tipo_esquema": "tarifa_millar",
+    "tabla": [
+      {
+        "grupo": "urbano",
+        "clave": "inmuebles_urbanos_y_suburbanos_con_edificaciones",
+        "descripcion": "Inmuebles urbanos y suburbanos con edificaciones; tasa anual según antigüedad del valor determinado o modificado",
+        "tasa_millar": 0.0025,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "urbano",
+        "clave": "inmuebles_urbanos_y_suburbanos_sin_edificaciones",
+        "descripcion": "Inmuebles urbanos y suburbanos sin edificaciones; tasa anual según antigüedad del valor determinado o modificado",
+        "tasa_millar": 0.0046,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "rustico",
+        "clave": "inmuebles_rusticos",
+        "descripcion": "Inmuebles rústicos; tasa anual según antigüedad del valor determinado o modificado",
+        "tasa_millar": 0.0026,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      }
+    ],
+    "minimo_predial": null,
+    "comentarios": "Art. 4: la mecánica del impuesto predial es una tarifa al millar anual por tipo de inmueble y por antigüedad del valor determinado o modificado. Se transcriben las tasas aplicables para la entrada en vigor de la ley; las demás filas del artículo muestran tasas históricas para años anteriores (2002-2019, 1993 y anteriores), no una estructura por rangos. Art. 4 también menciona una tasa de 12 al millar para la fracción IV en la columna de inmuebles urbanos y suburbanos sin edificaciones, pero el texto OCR está fragmentado; no se corrige. Se ignoran valores unitarios de catastro de los arts. 5 y 6 por no ser mecánica de cálculo del impuesto."
+  },
+  "_meta": {
+    "fuente": "txt",
+    "modelo": "gpt-5.4-mini"
+  },
+  "_meta_v2": {
+    "intentos": 1,
+    "requiere_revision": false,
+    "escalado": false,
+    "razon": null,
+    "tokens": {
+      "input": 7515,
+      "output": 412,
+      "cached": 3840
+    },
+    "cvegeo": "11027",
+    "estado": "guanajuato",
+    "anio": 2020
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "predial": {
+    "tipo_esquema": "otro_no_clasificado",
+    "categoria": "segmento_vacio",
+    "descripcion_estructural": "El segmento proporcionado sólo contiene encabezados del título, capítulo y sección del Impuesto Predial, pero no incluye ninguna tabla, tasa, rango o cuota de cálculo. No es posible identificar la mecánica del impuesto con el texto disponible.",
+    "tabla_cruda": [],
+    "minimo_predial": null,
+    "comentarios": "No se encontró contenido tarifario en el fragmento."
+  },
+  "_meta": {
+    "fuente": "txt",
+    "modelo": "gpt-5.4-mini"
+  },
+  "_meta_v2": {
+    "intentos": 1,
+    "requiere_revision": true,
+    "escalado": false,
+    "razon": "clasificado_como_otro_no_clasificado",
+    "tokens": {
+      "input": 4859,
+      "output": 117,
+      "cached": 3840
+    },
+    "cvegeo": "05025",
+    "estado": "coahuila",
+    "anio": 2010
+  }
+}

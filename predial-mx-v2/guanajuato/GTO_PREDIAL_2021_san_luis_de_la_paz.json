@@ -1,0 +1,51 @@
+{
+  "predial": {
+    "tipo_esquema": "tarifa_millar",
+    "tabla": [
+      {
+        "grupo": "urbano",
+        "clave": "con_edificaciones",
+        "descripcion": "Inmuebles urbanos y suburbanos con edificaciones; tasas por antigüedad del valor determinado o modificado",
+        "tasa_millar": 0.0024,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "urbano",
+        "clave": "sin_edificaciones",
+        "descripcion": "Inmuebles urbanos y suburbanos sin edificaciones; tasas por antigüedad del valor determinado o modificado",
+        "tasa_millar": 0.0045,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "rustico",
+        "clave": "general",
+        "descripcion": "Inmuebles rústicos; tasa anual sobre valor catastral según antigüedad/condición indicada en la tabla",
+        "tasa_millar": 0.0018,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      }
+    ],
+    "minimo_predial": null,
+    "comentarios": "Art. 4 establece tasas anuales al millar por categoría de predio/condición, sin rangos de valor catastral. Se transcribe la tarifa predominante de la sección. La ley también contiene tablas de valores unitarios para avalúo (Arts. 5 y 6), que no se extraen como mecánica del impuesto. En el texto aparecen tasas históricas diferenciadas por antigüedad del inmueble (p. ej. 2.4, 4.5 y 1.8 al millar; además otras tasas para periodos anteriores), pero la estructura tarifaria base es de catálogo de tasas al millar por tipo de inmueble."
+  },
+  "_meta": {
+    "fuente": "txt",
+    "modelo": "gpt-5.4-mini"
+  },
+  "_meta_v2": {
+    "intentos": 1,
+    "requiere_revision": false,
+    "escalado": false,
+    "razon": null,
+    "tokens": {
+      "input": 7411,
+      "output": 369,
+      "cached": 3840
+    },
+    "cvegeo": "11033",
+    "estado": "guanajuato",
+    "anio": 2021
+  }
+}

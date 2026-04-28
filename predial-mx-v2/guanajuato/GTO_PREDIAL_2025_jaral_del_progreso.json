@@ -1,0 +1,51 @@
+{
+  "predial": {
+    "tipo_esquema": "tarifa_millar",
+    "tabla": [
+      {
+        "grupo": "urbano",
+        "clave": "urbano_y_suburbano_con_edificaciones",
+        "descripcion": "Inmuebles urbanos y suburbanos con edificaciones; tasa anual",
+        "tasa_millar": 0.0024,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "urbano",
+        "clave": "urbano_y_suburbano_sin_edificaciones",
+        "descripcion": "Inmuebles urbanos y suburbanos sin edificaciones; tasa anual",
+        "tasa_millar": 0.0045,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "rustico",
+        "clave": "rustico",
+        "descripcion": "Inmuebles rústicos; tasa anual",
+        "tasa_millar": 0.0018,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      }
+    ],
+    "minimo_predial": null,
+    "comentarios": "Art. 4 establece tasas anuales al millar para tres grupos: inmuebles urbanos y suburbanos con edificaciones (2.4000 al millar), sin edificaciones (4.5000 al millar) e inmuebles rústicos (1.8000 al millar). Se transcribe sólo la mecánica de cálculo; los valores unitarios de los artículos 5 y 6 son tablas de catastro/avalúo y no se incluyen como tarifa."
+  },
+  "_meta": {
+    "fuente": "txt",
+    "modelo": "gpt-5.4-mini"
+  },
+  "_meta_v2": {
+    "intentos": 1,
+    "requiere_revision": false,
+    "escalado": false,
+    "razon": null,
+    "tokens": {
+      "input": 7442,
+      "output": 315,
+      "cached": 3840
+    },
+    "cvegeo": "11018",
+    "estado": "guanajuato",
+    "anio": 2025
+  }
+}

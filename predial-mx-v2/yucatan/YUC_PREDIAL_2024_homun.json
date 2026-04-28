@@ -1,0 +1,53 @@
+{
+  "predial": {
+    "tipo_esquema": "mixto",
+    "tabla": [
+      {
+        "n_rango": 1,
+        "inferior": 0.0,
+        "superior": 200000.0,
+        "columnas": [
+          {
+            "nombre": "general",
+            "valor": 50.0,
+            "tipo": "cuota_fija",
+            "unidad": "pesos"
+          }
+        ]
+      },
+      {
+        "n_rango": 2,
+        "inferior": 200000.0,
+        "superior": null,
+        "columnas": [
+          {
+            "nombre": "general",
+            "valor": 0.00025,
+            "tipo": "tasa_marginal",
+            "unidad": "porcentaje"
+          }
+        ]
+      }
+    ],
+    "minimo_predial": null,
+    "comentarios": "Art. 13 establece una mecánica híbrida: para predios con valor catastral actualizado igual o menor a $200,000.00 se paga cuota fija de $50.00; para valores superiores se aplica la tasa de 0.00025 sobre el valor catastral actualizado. El texto también contiene Tablas A y B de valores unitarios de terreno y construcción, que son insumos catastrales para calcular el valor del inmueble, no tarifas del impuesto. Se ignoran descuentos del Art. 14."
+  },
+  "_meta": {
+    "fuente": "txt",
+    "modelo": "gpt-5.4-mini"
+  },
+  "_meta_v2": {
+    "intentos": 1,
+    "requiere_revision": false,
+    "escalado": false,
+    "razon": null,
+    "tokens": {
+      "input": 6043,
+      "output": 240,
+      "cached": 3840
+    },
+    "cvegeo": "31036",
+    "estado": "yucatan",
+    "anio": 2024
+  }
+}

@@ -1,0 +1,51 @@
+{
+  "predial": {
+    "tipo_esquema": "tarifa_millar",
+    "tabla": [
+      {
+        "grupo": "urbano",
+        "clave": "predios_urbanos",
+        "descripcion": "Predios urbanos",
+        "tasa_millar": 0.0,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": {
+          "monto": 100.0,
+          "periodicidad": "anual",
+          "unidad": "pesos"
+        }
+      },
+      {
+        "grupo": "rustico",
+        "clave": "predios_rusticos",
+        "descripcion": "Predios rústicos",
+        "tasa_millar": 0.0,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": {
+          "monto": 50.0,
+          "periodicidad": "anual",
+          "unidad": "pesos"
+        }
+      }
+    ],
+    "minimo_predial": null,
+    "comentarios": "Art. 13 establece una tarifa fija anual para predios urbanos ($100) y rústicos ($50). Además, el mismo artículo contiene una tabla separada de valores unitarios de terreno y construcción, y posteriormente una tabla de tasa 0.25% por sección cuando la base sea el valor catastral; sin embargo, esa tabla corresponde a una mecánica alternativa por valor catastral. También se prevé para predios agropecuarios 10 al millar anual sobre valor catastral como tarifa paralela. Se omiten descuentos, recargos y el artículo sobre rentas/frutos civiles por no corresponder a la mecánica principal de cálculo de predial sobre inmuebles."
+  },
+  "_meta": {
+    "fuente": "txt",
+    "modelo": "gpt-5.4-mini"
+  },
+  "_meta_v2": {
+    "intentos": 1,
+    "requiere_revision": false,
+    "escalado": false,
+    "razon": null,
+    "tokens": {
+      "input": 6110,
+      "output": 304,
+      "cached": 3840
+    },
+    "cvegeo": "31042",
+    "estado": "yucatan",
+    "anio": 2017
+  }
+}

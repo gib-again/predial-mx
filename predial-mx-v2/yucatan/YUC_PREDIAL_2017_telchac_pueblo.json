@@ -1,0 +1,47 @@
+{
+  "predial": {
+    "tipo_esquema": "tarifa_millar",
+    "tabla": [
+      {
+        "grupo": "urbano",
+        "clave": "predio_urbano",
+        "descripcion": "Impuesto predial sobre valor catastral actualizado",
+        "tasa_millar": 0.001,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "rustico",
+        "clave": "predio_rustico",
+        "descripcion": "Tarifa fija cuando no se encuentre actualizado en el padrón catastral",
+        "tasa_millar": 0.0,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": {
+          "monto": 75.0,
+          "periodicidad": "anual",
+          "unidad": "pesos"
+        }
+      }
+    ],
+    "minimo_predial": null,
+    "comentarios": "Art. 13: el impuesto se determina multiplicando el valor catastral por el factor del 0.10 por ciento. Para predios urbanos/rústicos, si no se encuentra actualizado en el padrón catastral, se aplica tarifa fija anual: $150.00 para predios urbanos y $75.00 para predios rústicos (entendidos como predios sin construcción). Art. 14 contiene descuentos y se ignora."
+  },
+  "_meta": {
+    "fuente": "txt",
+    "modelo": "gpt-5.4-mini"
+  },
+  "_meta_v2": {
+    "intentos": 1,
+    "requiere_revision": false,
+    "escalado": false,
+    "razon": null,
+    "tokens": {
+      "input": 5014,
+      "output": 257,
+      "cached": 3840
+    },
+    "cvegeo": "31082",
+    "estado": "yucatan",
+    "anio": 2017
+  }
+}

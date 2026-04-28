@@ -1,0 +1,37 @@
+{
+  "predial": {
+    "tipo_esquema": "otro_no_clasificado",
+    "categoria": "estructura_no_estandar",
+    "descripcion_estructural": "El texto establece dos mecánicas distintas para el impuesto predial: una cuota por superficie de 20 centavos por m2 del predio causante y, por separado, una tasa de 10 al millar anual sobre el valor registrado o catastral para predios destinados a la producción agropecuaria. No encaja en las variantes tipadas porque la regla general no usa valor catastral sino superficie, y además existe una tarifa paralela por valor catastral para un grupo específico.",
+    "tabla_cruda": [
+      {
+        "descripcion": "Regla general del impuesto predial",
+        "valores": "20 centavos por m2 que tenga la extensión de predio causante"
+      },
+      {
+        "descripcion": "Predios destinados a la producción agropecuaria",
+        "valores": "10 al millar anual sobre el valor registrado o catastral; sin que la cantidad a pagar resultante exceda a lo establecido por la legislación agraria federal para terrenos ejidales"
+      }
+    ],
+    "minimo_predial": null,
+    "comentarios": "Artículo 13. Se omite el descuento del artículo 14 por instrucción expresa de ignorar descuentos. La estructura principal observada es por superficie (m2), que no corresponde a tasa_unica sobre valor catastral, tarifa_millar categórica general, progresivo, cuota fija simple, cuota fija escalonada ni mixto por brackets."
+  },
+  "_meta": {
+    "fuente": "txt",
+    "modelo": "gpt-5.4"
+  },
+  "_meta_v2": {
+    "intentos": 3,
+    "requiere_revision": true,
+    "escalado": true,
+    "razon": "clasificado_como_otro_no_clasificado_tras_escalacion",
+    "tokens": {
+      "input": 16058,
+      "output": 888,
+      "cached": 13568
+    },
+    "cvegeo": "31064",
+    "estado": "yucatan",
+    "anio": 2022
+  }
+}

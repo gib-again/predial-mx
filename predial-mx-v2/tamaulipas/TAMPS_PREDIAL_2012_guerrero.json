@@ -1,0 +1,39 @@
+{
+  "predial": {
+    "tipo_esquema": "tarifa_millar",
+    "tabla": [
+      {
+        "grupo": "urbano",
+        "clave": "predios_urbanos_suburbanos_rusticos",
+        "descripcion": "Predios urbanos, suburbanos y rústicos",
+        "tasa_millar": 0.002,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      }
+    ],
+    "minimo_predial": {
+      "monto": 2.5,
+      "periodicidad": "anual",
+      "unidad": "vsm"
+    },
+    "comentarios": "Art. 8: tasa general del 2 al millar para predios urbanos, suburbanos y rústicos, con tope mínimo de 2.5 salarios mínimos. Las fracciones I a VI establecen incrementos, exenciones parciales o reglas especiales para predios urbanos no edificados, edificados con valor inferior a la quinta parte del terreno, fraccionamientos autorizados y predios en ejidos/comunidades en regularización; se describen como ajustes/reglas especiales y no como tabla separada de brackets."
+  },
+  "_meta": {
+    "fuente": "txt",
+    "modelo": "gpt-5.4-mini"
+  },
+  "_meta_v2": {
+    "intentos": 1,
+    "requiere_revision": false,
+    "escalado": false,
+    "razon": null,
+    "tokens": {
+      "input": 5402,
+      "output": 229,
+      "cached": 3840
+    },
+    "cvegeo": "28014",
+    "estado": "tamaulipas",
+    "anio": 2012
+  }
+}

@@ -1,0 +1,83 @@
+{
+  "predial": {
+    "tipo_esquema": "tarifa_millar",
+    "tabla": [
+      {
+        "grupo": "urbano",
+        "clave": "urbanos_y_suburbanos_edificaciones_a_la_entrada_en_vigor_de_la_ley",
+        "descripcion": "Inmuebles urbanos y suburbanos con valor determinado o modificado: edificaciones a la entrada en vigor de la ley",
+        "tasa_millar": 0.0024,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "urbano",
+        "clave": "urbanos_y_suburbanos_anteriores_hasta_2014",
+        "descripcion": "Inmuebles urbanos y suburbanos con valor determinado o modificado: edificaciones durante el año 2002 y hasta 2014 inclusive",
+        "tasa_millar": 0.0024,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "urbano",
+        "clave": "urbanos_y_suburbanos_anteriores_1993_1993",
+        "descripcion": "Inmuebles urbanos y suburbanos con valor determinado o modificado: edificaciones con anterioridad al año 2002 y hasta 1993 inclusive",
+        "tasa_millar": 0.008,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "urbano",
+        "clave": "urbanos_y_suburbanos_anteriores_1993",
+        "descripcion": "Inmuebles urbanos y suburbanos con valor determinado o modificado: edificaciones con anterioridad a 1993",
+        "tasa_millar": 0.013,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "urbano",
+        "clave": "urbanos_y_suburbanos_anteriores_1993_segunda_tasa",
+        "descripcion": "Inmuebles urbanos y suburbanos con valor determinado o modificado: edificaciones con anterioridad a 1993",
+        "tasa_millar": 0.012,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "urbano",
+        "clave": "urbanos_y_suburbanos_urbanos",
+        "descripcion": "Inmuebles urbanos y suburbanos: urbanos",
+        "tasa_millar": 0.0045,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "urbano",
+        "clave": "urbanos_y_suburbanos_suburbanos",
+        "descripcion": "Inmuebles urbanos y suburbanos: suburbanos",
+        "tasa_millar": 0.0018,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      }
+    ],
+    "minimo_predial": null,
+    "comentarios": "Artículo 4 establece tasas anuales al millar para inmuebles urbanos y suburbanos según el tipo de inmueble/edificación y antigüedad. El texto OCR está deformado, pero la mecánica visible es un catálogo de tasas al millar por categorías, no por rangos catastrales. Se ignoran los valores unitarios de los artículos 5 y 6 por ser tablas catastrales, no la mecánica del impuesto. No se detecta tarifa paralela adicional claramente estructurada para integrar en la tabla principal."
+  },
+  "_meta": {
+    "fuente": "txt",
+    "modelo": "gpt-5.4-mini"
+  },
+  "_meta_v2": {
+    "intentos": 1,
+    "requiere_revision": false,
+    "escalado": false,
+    "razon": null,
+    "tokens": {
+      "input": 7394,
+      "output": 657,
+      "cached": 3840
+    },
+    "cvegeo": "11030",
+    "estado": "guanajuato",
+    "anio": 2015
+  }
+}

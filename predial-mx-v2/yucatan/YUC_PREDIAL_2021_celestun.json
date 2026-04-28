@@ -1,0 +1,33 @@
+{
+  "predial": {
+    "tipo_esquema": "tasa_unica",
+    "tabla": [
+      {
+        "descripcion": "Impuesto predial general calculado sobre el valor catastral actualizado",
+        "tasa": 0.001,
+        "base_calculo": "valor_catastral",
+        "unidad": "porcentaje"
+      }
+    ],
+    "minimo_predial": null,
+    "comentarios": "Artículo 13, fracción IV: la tarifa del impuesto predial será de 0.10% del valor catastral actualizado. El texto también establece tarifas paralelas que no se incorporan en la tabla principal: para predios en la zona costera rústica colindante con el Golfo de México y zona federal marítimo terrestre, el impuesto predial a pagar será de 0.83% del valor catastral; la misma tarifa se aplicará a terrenos ejidales y casas habitación construidas en los mismos. Asimismo, todo predio destinado a la producción agropecuaria paga 10 al millar anual sobre el valor registrado o catastral. Se omitieron descuentos, recargos y el impuesto basado en frutos civiles conforme a las instrucciones."
+  },
+  "_meta": {
+    "fuente": "txt",
+    "modelo": "gpt-5.4"
+  },
+  "_meta_v2": {
+    "intentos": 3,
+    "requiere_revision": false,
+    "escalado": true,
+    "razon": "escalado_a_gpt-5.4_tras_2x_mini_fallido",
+    "tokens": {
+      "input": 22070,
+      "output": 824,
+      "cached": 12544
+    },
+    "cvegeo": "31011",
+    "estado": "yucatan",
+    "anio": 2021
+  }
+}

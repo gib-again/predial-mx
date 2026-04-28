@@ -1,0 +1,76 @@
+{
+  "predial": {
+    "tipo_esquema": "progresivo",
+    "tabla": [
+      {
+        "n_rango": 1,
+        "inferior": 0.01,
+        "superior": 5000.0,
+        "cuota_fija": 30.0,
+        "tasa_marginal": 0.0
+      },
+      {
+        "n_rango": 2,
+        "inferior": 5000.01,
+        "superior": 7500.0,
+        "cuota_fija": 40.0,
+        "tasa_marginal": 0.0001
+      },
+      {
+        "n_rango": 3,
+        "inferior": 7500.01,
+        "superior": 10000.0,
+        "cuota_fija": 50.0,
+        "tasa_marginal": 0.00015
+      },
+      {
+        "n_rango": 4,
+        "inferior": 10000.01,
+        "superior": 12500.0,
+        "cuota_fija": 60.0,
+        "tasa_marginal": 0.0002
+      },
+      {
+        "n_rango": 5,
+        "inferior": 12500.01,
+        "superior": 15000.0,
+        "cuota_fija": 75.0,
+        "tasa_marginal": 0.00025
+      },
+      {
+        "n_rango": 6,
+        "inferior": 15000.01,
+        "superior": 20000.0,
+        "cuota_fija": 85.0,
+        "tasa_marginal": 0.0003
+      },
+      {
+        "n_rango": 7,
+        "inferior": 20000.01,
+        "superior": null,
+        "cuota_fija": 90.0,
+        "tasa_marginal": 0.0004
+      }
+    ],
+    "minimo_predial": null,
+    "comentarios": "Art. 13: el impuesto predial para predios urbanos y turísticos con o sin construcción se determina con tarifa progresiva por valores catastrales, aplicando a la cantidad que excede del límite inferior el factor indicado y sumando la cuota fija anual respectiva. Tarifa paralela secundaria: todo predio destinado a la producción agropecuaria paga 10 al millar anual sobre el valor registrado o catastral; se excluye de la tabla principal por ser una tarifa separada. Se ignoran descuentos del Art. 14."
+  },
+  "_meta": {
+    "fuente": "txt",
+    "modelo": "gpt-5.4-mini"
+  },
+  "_meta_v2": {
+    "intentos": 1,
+    "requiere_revision": false,
+    "escalado": false,
+    "razon": null,
+    "tokens": {
+      "input": 5736,
+      "output": 417,
+      "cached": 3840
+    },
+    "cvegeo": "31014",
+    "estado": "yucatan",
+    "anio": 2025
+  }
+}

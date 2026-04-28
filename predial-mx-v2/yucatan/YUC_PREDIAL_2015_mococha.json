@@ -1,0 +1,33 @@
+{
+  "predial": {
+    "tipo_esquema": "tasa_unica",
+    "tabla": [
+      {
+        "descripcion": "Tasa general por secciones 1, 2, 3, 4 y 5 sobre el valor catastral del inmueble",
+        "tasa": 0.25,
+        "base_calculo": "valor_catastral",
+        "unidad": "porcentaje"
+      }
+    ],
+    "minimo_predial": null,
+    "comentarios": "Artículo 13: la base del impuesto predial es el valor catastral del inmueble y se determina aplicando una tasa de 0.25% en las secciones 1, 2, 3, 4 y 5. Las tablas de valores unitarios de terreno y construcción son de catastro y no forman parte de la tarifa del impuesto. El mismo artículo señala, de forma paralela, que cuando no pueda determinarse el valor catastral se cobrará una cuota fija de 80 pesos para terrenos con construcción y 50 pesos para terrenos sin construcción; también establece una tarifa paralela para predios destinados a la producción agropecuaria de 10 al millar anual sobre el valor registrado o catastral. Estas tarifas paralelas no se incluyen en la tabla principal por no corresponder a la misma estructura uniforme."
+  },
+  "_meta": {
+    "fuente": "txt",
+    "modelo": "gpt-5.4"
+  },
+  "_meta_v2": {
+    "intentos": 3,
+    "requiere_revision": false,
+    "escalado": true,
+    "razon": "escalado_a_gpt-5.4_tras_2x_mini_fallido",
+    "tokens": {
+      "input": 19049,
+      "output": 872,
+      "cached": 13568
+    },
+    "cvegeo": "31051",
+    "estado": "yucatan",
+    "anio": 2015
+  }
+}

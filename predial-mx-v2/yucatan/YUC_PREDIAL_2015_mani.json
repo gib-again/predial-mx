@@ -1,0 +1,21 @@
+{
+  "predial": null,
+  "_meta": {
+    "fuente": "txt",
+    "modelo": "gpt-5.4"
+  },
+  "_meta_v2": {
+    "intentos": 3,
+    "requiere_revision": true,
+    "escalado": true,
+    "razon": "valido_3x_fallido | mini_e1=  • predial.mixto: Value error, bracket 1: superior=None solo permitido en el último rango | mini_e2=  • predial.mixto: Value error, bracket 1: superior=None solo permitido en el último rango | full_e3=  • predial.mixto: Value error, bracket 1: superior=None solo permitido en el último rango",
+    "tokens": {
+      "input": 18066,
+      "output": 990,
+      "cached": 13568
+    },
+    "cvegeo": "31047",
+    "estado": "yucatan",
+    "anio": 2015
+  }
+}

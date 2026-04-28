@@ -1,0 +1,115 @@
+{
+  "predial": {
+    "tipo_esquema": "tarifa_millar",
+    "tabla": [
+      {
+        "grupo": "urbano",
+        "clave": "urbano_con_edificaciones",
+        "descripcion": "Inmuebles urbanos y suburbanos con edificaciones, valor determinado o modificado a la entrada en vigor de la ley",
+        "tasa_millar": 0.0024,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "urbano",
+        "clave": "urbano_sin_edificaciones",
+        "descripcion": "Inmuebles urbanos y suburbanos sin edificaciones, valor determinado o modificado a la entrada en vigor de la ley",
+        "tasa_millar": 0.0045,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "rustico",
+        "clave": "rustico_general",
+        "descripcion": "Inmuebles rústicos, valor determinado o modificado a la entrada en vigor de la ley",
+        "tasa_millar": 0.0018,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "urbano",
+        "clave": "urbano_con_edificaciones_2002_2014",
+        "descripcion": "Inmuebles urbanos y suburbanos con edificaciones, durante los años 2002 y hasta 2014 inclusive",
+        "tasa_millar": 0.0024,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "urbano",
+        "clave": "urbano_sin_edificaciones_2002_2014",
+        "descripcion": "Inmuebles urbanos y suburbanos sin edificaciones, durante los años 2002 y hasta 2014 inclusive",
+        "tasa_millar": 0.0045,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "rustico",
+        "clave": "rustico_general_2002_2014",
+        "descripcion": "Inmuebles rústicos, durante los años 2002 y hasta 2014 inclusive",
+        "tasa_millar": 0.0018,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "urbano",
+        "clave": "urbano_con_edificaciones_1993_2001",
+        "descripcion": "Inmuebles urbanos y suburbanos con edificaciones, con anterioridad al año 2002 y hasta 1993 inclusive",
+        "tasa_millar": 0.008,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "urbano",
+        "clave": "urbano_sin_edificaciones_1993_2001",
+        "descripcion": "Inmuebles urbanos y suburbanos sin edificaciones, con anterioridad al año 2002 y hasta 1993 inclusive",
+        "tasa_millar": 0.015,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "rustico",
+        "clave": "rustico_general_1993_2001",
+        "descripcion": "Inmuebles rústicos, con anterioridad al año 2002 y hasta 1993 inclusive",
+        "tasa_millar": 0.006,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "urbano",
+        "clave": "urbano_con_edificaciones_pre1993",
+        "descripcion": "Inmuebles urbanos y suburbanos con edificaciones, con anterioridad al año 1993",
+        "tasa_millar": 0.013,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "urbano",
+        "clave": "urbano_sin_edificaciones_pre1993",
+        "descripcion": "Inmuebles urbanos y suburbanos sin edificaciones, con anterioridad al año 1993",
+        "tasa_millar": 0.012,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      }
+    ],
+    "minimo_predial": null,
+    "comentarios": "Artículo 4 contiene una tabla de tasas al millar por tipo de inmueble y antigüedad del valor determinado o modificado. Se transcriben las filas visibles del texto. Artículo 5 y 6 sólo contienen valores unitarios y criterios de avalúo, no mecánica de cálculo del impuesto. En el texto aparece un renglón final sin encabezado completo ('4 al millar 13 al millar 12 al millar'); se conserva como tarifa urbana con edificaciones/sin edificaciones para la fila de anterioridad al año 1993, según la estructura visible. No se detectan cuotas fijas adicionales ni mínimo predial."
+  },
+  "_meta": {
+    "fuente": "txt",
+    "modelo": "gpt-5.4-mini"
+  },
+  "_meta_v2": {
+    "intentos": 1,
+    "requiere_revision": false,
+    "escalado": false,
+    "razon": null,
+    "tokens": {
+      "input": 7350,
+      "output": 917,
+      "cached": 3840
+    },
+    "cvegeo": "11033",
+    "estado": "guanajuato",
+    "anio": 2015
+  }
+}

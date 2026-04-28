@@ -1,0 +1,79 @@
+{
+  "predial": {
+    "tipo_esquema": "tarifa_millar",
+    "tabla": [
+      {
+        "grupo": "urbano",
+        "clave": "predios_urbanos",
+        "descripcion": "Sobre los predios urbanos",
+        "tasa_millar": 0.003,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "rustico",
+        "clave": "predios_rusticos",
+        "descripcion": "Sobre los predios rústicos",
+        "tasa_millar": 0.003,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "otro",
+        "clave": "predios_suburbanos",
+        "descripcion": "Sobre los predios suburbanos",
+        "tasa_millar": 0.004,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "otro",
+        "clave": "predios_industriales",
+        "descripcion": "Sobre los predios industriales",
+        "tasa_millar": 0.005,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "otro",
+        "clave": "predios_parcelarios",
+        "descripcion": "Sobre los predios parcelarios",
+        "tasa_millar": 0.001,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "otro",
+        "clave": "predios_rusticos_industriales_con_explotacion_de_energia_renovable_en_ejecucion_desarrollo_o_proyecto",
+        "descripcion": "Sobre los predios rústicos industriales con explotación de energía renovable en ejecución, desarrollo o proyecto",
+        "tasa_millar": 0.003,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      }
+    ],
+    "minimo_predial": {
+      "monto": 35.0,
+      "periodicidad": "bimestral",
+      "unidad": "pesos"
+    },
+    "comentarios": "Art. 2: se establecen tasas categóricas al millar para predios urbanos (3), rústicos (3), suburbanos (4), industriales (5), parcelarios (1) y predios rústicos industriales con explotación de energía renovable en ejecución, desarrollo o proyecto (3). También se indica un mínimo predial de $35.00 por bimestre. Los incentivos y condonaciones se ignoraron conforme a instrucción. La referencia a predios dentro del Plan Director de Desarrollo Urbano se consigna como criterio de aplicación, pero no modifica la tasa base."
+  },
+  "_meta": {
+    "fuente": "txt",
+    "modelo": "gpt-5.4-mini"
+  },
+  "_meta_v2": {
+    "intentos": 1,
+    "requiere_revision": false,
+    "escalado": false,
+    "razon": null,
+    "tokens": {
+      "input": 6125,
+      "output": 497,
+      "cached": 3840
+    },
+    "cvegeo": "05017",
+    "estado": "coahuila",
+    "anio": 2024
+  }
+}

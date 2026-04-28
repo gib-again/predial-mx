@@ -1,0 +1,43 @@
+{
+  "predial": {
+    "tipo_esquema": "tarifa_millar",
+    "tabla": [
+      {
+        "grupo": "urbano",
+        "clave": "predio_urbano",
+        "descripcion": "Predio urbano",
+        "tasa_millar": 50.0,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "rustico",
+        "clave": "predio_rustico_por_hectarea",
+        "descripcion": "Predio rústico por hectárea",
+        "tasa_millar": 450.0,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      }
+    ],
+    "minimo_predial": null,
+    "comentarios": "Se transcribe literalmente el Artículo 13, que establece: 'Predio Urbano $50.00' y 'Predio rústico $450.00 por hectárea'. No hay rangos de valor catastral. El Artículo 14 contiene tablas de valores unitarios de terreno y otros conceptos catastrales/constructivos, por lo que se ignora para la tarifa del impuesto predial. Artículo 15 establece una tarifa paralela separada para predios destinados a producción agropecuaria de 10 al millar anual sobre el valor registrado o catastral; no se incluye en la tabla principal por ser tarifa paralela distinta."
+  },
+  "_meta": {
+    "fuente": "txt",
+    "modelo": "gpt-5.4"
+  },
+  "_meta_v2": {
+    "intentos": 3,
+    "requiere_revision": false,
+    "escalado": true,
+    "razon": "escalado_a_gpt-5.4_tras_2x_mini_fallido",
+    "tokens": {
+      "input": 19068,
+      "output": 808,
+      "cached": 13568
+    },
+    "cvegeo": "31105",
+    "estado": "yucatan",
+    "anio": 2020
+  }
+}

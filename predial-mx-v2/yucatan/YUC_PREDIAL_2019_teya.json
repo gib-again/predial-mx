@@ -1,0 +1,43 @@
+{
+  "predial": {
+    "tipo_esquema": "tarifa_millar",
+    "tabla": [
+      {
+        "grupo": "urbano",
+        "clave": "predios_urbanos",
+        "descripcion": "Predios urbanos",
+        "tasa_millar": 60.0,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "rustico",
+        "clave": "predios_rusticos",
+        "descripcion": "Predios rústicos",
+        "tasa_millar": 40.0,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      }
+    ],
+    "minimo_predial": null,
+    "comentarios": "Art. 13: tarifa para predios urbanos ($60.00) y rústicos ($40.00). Art. 15 establece un impuesto distinto sobre rentas o frutos civiles (4% casas habitación y 4% actividades), que no corresponde al predial sobre valor catastral y se ignora para esta extracción. Art. 14 sólo contiene un descuento por pronto pago, ignorado."
+  },
+  "_meta": {
+    "fuente": "txt",
+    "modelo": "gpt-5.4-mini"
+  },
+  "_meta_v2": {
+    "intentos": 2,
+    "requiere_revision": false,
+    "escalado": false,
+    "razon": null,
+    "tokens": {
+      "input": 5496,
+      "output": 213,
+      "cached": 4864
+    },
+    "cvegeo": "31088",
+    "estado": "yucatan",
+    "anio": 2019
+  }
+}

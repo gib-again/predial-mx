@@ -1,0 +1,51 @@
+{
+  "predial": {
+    "tipo_esquema": "tarifa_millar",
+    "tabla": [
+      {
+        "grupo": "urbano",
+        "clave": "urbanos_y_suburbanos_con_edificaciones",
+        "descripcion": "Inmuebles urbanos y suburbanos con edificaciones, para el año 2010 y para inmuebles con valor determinado o modificado a partir de la entrada en vigor de la ley y también durante 2002 a 2009 inclusive",
+        "tasa_millar": 0.0024,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "urbano",
+        "clave": "urbanos_y_suburbanos_sin_edificaciones",
+        "descripcion": "Inmuebles urbanos y suburbanos sin edificaciones, para el año 2010 y para inmuebles con valor determinado o modificado a partir de la entrada en vigor de la ley y también durante 2002 a 2009 inclusive",
+        "tasa_millar": 0.0045,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "rustico",
+        "clave": "rusticos",
+        "descripcion": "Inmuebles rústicos, para el año 2010 y para inmuebles con valor determinado o modificado a partir de la entrada en vigor de la ley y también durante 2002 a 2009 inclusive",
+        "tasa_millar": 0.0018,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      }
+    ],
+    "minimo_predial": null,
+    "comentarios": "Art. 4 establece tasas anuales al millar por categoría de inmueble. Se transcribe sólo la mecánica de cálculo: urbanos y suburbanos con edificaciones 2.4 al millar, sin edificaciones 4.5 al millar, rústicos 1.8 al millar. Las filas del mismo artículo para períodos 1993-2001 (8, 15 y 6 al millar) y anterior a 1993 (13, 12 y sin tasa visible en el texto) no se usan como tarifa principal porque el esquema detectado es categórico por tipo de inmueble; además, el texto incluye tablas de valores unitarios de catastro (Arts. 5 y 6) que no forman parte de la mecánica tarifaria."
+  },
+  "_meta": {
+    "fuente": "txt",
+    "modelo": "gpt-5.4-mini"
+  },
+  "_meta_v2": {
+    "intentos": 1,
+    "requiere_revision": false,
+    "escalado": false,
+    "razon": null,
+    "tokens": {
+      "input": 7313,
+      "output": 481,
+      "cached": 3840
+    },
+    "cvegeo": "11035",
+    "estado": "guanajuato",
+    "anio": 2010
+  }
+}

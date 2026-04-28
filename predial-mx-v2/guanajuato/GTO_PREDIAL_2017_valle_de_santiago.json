@@ -1,0 +1,99 @@
+{
+  "predial": {
+    "tipo_esquema": "tarifa_millar",
+    "tabla": [
+      {
+        "grupo": "urbano",
+        "clave": "entrada_en_vigor",
+        "descripcion": "A la entrada en vigor de la presente Ley: inmuebles urbanos y suburbanos con edificaciones",
+        "tasa_millar": 0.0024,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "urbano",
+        "clave": "entrada_en_vigor_sin_edificaciones",
+        "descripcion": "A la entrada en vigor de la presente Ley: inmuebles urbanos y suburbanos sin edificaciones",
+        "tasa_millar": 0.0045,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "rustico",
+        "clave": "entrada_en_vigor",
+        "descripcion": "A la entrada en vigor de la presente Ley: inmuebles rústicos",
+        "tasa_millar": 0.0018,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "urbano",
+        "clave": "periodo_2002_2016_con_edificaciones",
+        "descripcion": "Durante los años 2002 y hasta 2016, inclusive: inmuebles urbanos y suburbanos con edificaciones",
+        "tasa_millar": 0.0024,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "urbano",
+        "clave": "periodo_2002_2016_sin_edificaciones",
+        "descripcion": "Durante los años 2002 y hasta 2016, inclusive: inmuebles urbanos y suburbanos sin edificaciones",
+        "tasa_millar": 0.0045,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "rustico",
+        "clave": "periodo_2002_2016",
+        "descripcion": "Durante los años 2002 y hasta 2016, inclusive: inmuebles rústicos",
+        "tasa_millar": 0.0018,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "urbano",
+        "clave": "antes_2002_1993_con_edificaciones",
+        "descripcion": "Con anterioridad al año 2002 y hasta 1993, inclusive: inmuebles urbanos y suburbanos con edificaciones",
+        "tasa_millar": 0.008,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "urbano",
+        "clave": "antes_2002_1993_sin_edificaciones",
+        "descripcion": "Con anterioridad al año 2002 y hasta 1993, inclusive: inmuebles urbanos y suburbanos sin edificaciones",
+        "tasa_millar": 0.015,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "rustico",
+        "clave": "antes_2002_1993",
+        "descripcion": "Con anterioridad al año 2002 y hasta 1993, inclusive: inmuebles rústicos",
+        "tasa_millar": 0.006,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      }
+    ],
+    "minimo_predial": null,
+    "comentarios": "Artículo 4 establece tarifas separadas por antigüedad del inmueble y por tipo (urbanos/suburbanos con edificaciones, sin edificaciones, y rústicos), todas expresadas como tasas al millar. Se transcribe la mecánica tarifaria principal. El Artículo 5 contiene valores unitarios de catastro para avalúo, no la tasa del impuesto, por lo que no se incluye."
+  },
+  "_meta": {
+    "fuente": "txt",
+    "modelo": "gpt-5.4-mini"
+  },
+  "_meta_v2": {
+    "intentos": 1,
+    "requiere_revision": false,
+    "escalado": false,
+    "razon": null,
+    "tokens": {
+      "input": 7470,
+      "output": 722,
+      "cached": 3840
+    },
+    "cvegeo": "11042",
+    "estado": "guanajuato",
+    "anio": 2017
+  }
+}

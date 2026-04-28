@@ -1,0 +1,47 @@
+{
+  "predial": {
+    "tipo_esquema": "tarifa_millar",
+    "tabla": [
+      {
+        "grupo": "urbano",
+        "clave": "predios_urbanos",
+        "descripcion": "Predios urbanos",
+        "tasa_millar": 3.0,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "rustico",
+        "clave": "predios_rusticos",
+        "descripcion": "Predios rústicos",
+        "tasa_millar": 3.0,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      }
+    ],
+    "minimo_predial": {
+      "monto": 30.0,
+      "periodicidad": "bimestral",
+      "unidad": "pesos"
+    },
+    "comentarios": "Art. 2 fracc. I: predios urbanos pagan 3 al millar anual. Fracc. II: predios rústicos pagan 3 al millar anual. Fracc. II también menciona que en predios ejidales el 3% sobre el valor de la producción anual comercializada, pero esa regla corresponde a una base distinta al predial sobre valor catastral y no se incorpora en la tabla principal. Fracc. III establece un monto mínimo del impuesto predial de $30.00 por bimestre. Se ignoran incentivos y bonificaciones por instrucción."
+  },
+  "_meta": {
+    "fuente": "txt",
+    "modelo": "gpt-5.4-mini"
+  },
+  "_meta_v2": {
+    "intentos": 1,
+    "requiere_revision": false,
+    "escalado": false,
+    "razon": null,
+    "tokens": {
+      "input": 5351,
+      "output": 271,
+      "cached": 3840
+    },
+    "cvegeo": "05003",
+    "estado": "coahuila",
+    "anio": 2010
+  }
+}

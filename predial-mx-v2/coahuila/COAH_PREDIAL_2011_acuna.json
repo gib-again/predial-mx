@@ -1,0 +1,55 @@
+{
+  "predial": {
+    "tipo_esquema": "tarifa_millar",
+    "tabla": [
+      {
+        "grupo": "urbano",
+        "clave": "predios_urbanos",
+        "descripcion": "Predios urbanos",
+        "tasa_millar": 0.003,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "rustico",
+        "clave": "predios_rusticos",
+        "descripcion": "Predios rústicos",
+        "tasa_millar": 0.003,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "urbano",
+        "clave": "predios_urbanos_no_edificados_sin_barda",
+        "descripcion": "Predios urbanos no edificados sin barda",
+        "tasa_millar": 0.005,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      }
+    ],
+    "minimo_predial": {
+      "monto": 34.5,
+      "periodicidad": "bimestral",
+      "unidad": "pesos"
+    },
+    "comentarios": "Art. 2 fraccs. I, II y IV: tasas sobre valor catastral. Se deja como tarifa_millar porque son categorías de predio con tasas al millar, sin rangos de valor catastral. El texto también establece mínimos bimestrales: urbano $34.50 y rústico $28.50. Además, para servicios de bomberos y Cruz Roja se paga 2% del impuesto predial con mínimo de $2.00 por bimestre, pero se ignora por ser concepto accesorio/otro destino y no mecánica principal del predial. Los incentivos por pronto pago y para grupos específicos se ignoran."
+  },
+  "_meta": {
+    "fuente": "txt",
+    "modelo": "gpt-5.4-mini"
+  },
+  "_meta_v2": {
+    "intentos": 1,
+    "requiere_revision": false,
+    "escalado": false,
+    "razon": null,
+    "tokens": {
+      "input": 5846,
+      "output": 347,
+      "cached": 3840
+    },
+    "cvegeo": "05002",
+    "estado": "coahuila",
+    "anio": 2011
+  }
+}

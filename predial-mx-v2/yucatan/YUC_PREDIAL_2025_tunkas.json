@@ -1,0 +1,28 @@
+{
+  "predial": {
+    "tipo_esquema": "otro_no_clasificado",
+    "categoria": "error_segmentacion",
+    "descripcion_estructural": "El texto sí menciona que el impuesto se determinará con una tabla y que se calcula con diferencia contra límite inferior, factor aplicable y cuota fija, lo que sugiere una tarifa progresiva o escalonada; sin embargo, la tabla tarifaria del impuesto predial no aparece en el segmento. El contenido visible corresponde a valores unitarios catastrales de terreno y construcción, que no son la tarifa del impuesto, por lo que no es posible reconstruir válidamente los rangos, cuotas fijas o factores aplicables.",
+    "tabla_cruda": [],
+    "minimo_predial": null,
+    "comentarios": "Artículos 13, 14 y 15 remiten a una tabla para calcular el impuesto predial, pero en el texto proporcionado dicha tabla no está presente. Sólo se observan tablas de valores unitarios de terreno (Tabla A) y construcción (Tabla B), además de la regla narrativa de cálculo y una tarifa separada para predios rústicos con actividad agropecuaria de 20 pesos por hectárea, la cual debe ignorarse por corresponder a predios ejidales/agropecuarios sobre producción y no sustituye la tabla principal del predial."
+  },
+  "_meta": {
+    "fuente": "txt",
+    "modelo": "gpt-5.4"
+  },
+  "_meta_v2": {
+    "intentos": 3,
+    "requiere_revision": true,
+    "escalado": true,
+    "razon": "clasificado_como_otro_no_clasificado_tras_escalacion",
+    "tokens": {
+      "input": 19412,
+      "output": 716,
+      "cached": 13568
+    },
+    "cvegeo": "31097",
+    "estado": "yucatan",
+    "anio": 2025
+  }
+}

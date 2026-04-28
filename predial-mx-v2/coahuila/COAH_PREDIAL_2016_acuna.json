@@ -1,0 +1,55 @@
+{
+  "predial": {
+    "tipo_esquema": "tarifa_millar",
+    "tabla": [
+      {
+        "grupo": "urbano",
+        "clave": "predios_urbanos",
+        "descripcion": "Predios urbanos",
+        "tasa_millar": 0.003,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "rustico",
+        "clave": "predios_rusticos",
+        "descripcion": "Predios rústicos",
+        "tasa_millar": 0.003,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "urbano",
+        "clave": "predios_urbanos_no_edificados_sin_barda",
+        "descripcion": "Predios urbanos no edificados sin barda",
+        "tasa_millar": 0.005,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      }
+    ],
+    "minimo_predial": {
+      "monto": 45.0,
+      "periodicidad": "bimestral",
+      "unidad": "pesos"
+    },
+    "comentarios": "Art. 2 fracc. I-II: predios urbanos y rústicos pagan 3 al millar anual sobre valor catastral. Fracc. IV: predios urbanos no edificados sin barda pagan 5 al millar anual. Fracc. III establece mínimos de $45.00 por bimestre para predio urbano y $36.00 por bimestre para rústico; se captura sólo como mínimo predial. La referencia a servicios de Cruz Roja y los incentivos por pago anticipado no se incluyen por ser descuentos/beneficios. Los gastos de notificación tampoco se incluyen en la mecánica del predial."
+  },
+  "_meta": {
+    "fuente": "txt",
+    "modelo": "gpt-5.4-mini"
+  },
+  "_meta_v2": {
+    "intentos": 1,
+    "requiere_revision": false,
+    "escalado": false,
+    "razon": null,
+    "tokens": {
+      "input": 6071,
+      "output": 340,
+      "cached": 3840
+    },
+    "cvegeo": "05002",
+    "estado": "coahuila",
+    "anio": 2016
+  }
+}

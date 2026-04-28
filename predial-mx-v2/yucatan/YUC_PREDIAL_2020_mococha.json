@@ -1,0 +1,33 @@
+{
+  "predial": {
+    "tipo_esquema": "tasa_unica",
+    "tabla": [
+      {
+        "descripcion": "Impuesto predial general por secciones 1 a 5",
+        "tasa": 0.25,
+        "base_calculo": "valor_catastral",
+        "unidad": "porcentaje"
+      }
+    ],
+    "minimo_predial": null,
+    "comentarios": "El texto establece para las secciones 1 a 5 la misma tasa de 0.25% sobre el valor catastral. Se elige como tabla principal por ser la tarifa general del impuesto predial. Tarifas paralelas no incluidas en la tabla principal: para terrenos iguales o superiores a una hectárea se cobra cuota fija de 190.00 por hectárea, y para terrenos rústicos con giro comercial cuota fija de 300.00 por hectárea; cuando no pueda determinarse el valor catastral se cobra cuota fija de 100.00 para terrenos con construcción y 80.00 para terrenos sin construcción; todo predio destinado a la producción agropecuaria paga 10 al millar anual sobre el valor registrado o catastral. No se incluyen por corresponder a supuestos específicos y tarifas paralelas al esquema general."
+  },
+  "_meta": {
+    "fuente": "txt",
+    "modelo": "gpt-5.4"
+  },
+  "_meta_v2": {
+    "intentos": 3,
+    "requiere_revision": false,
+    "escalado": true,
+    "razon": "escalado_a_gpt-5.4_tras_2x_mini_fallido",
+    "tokens": {
+      "input": 19475,
+      "output": 1529,
+      "cached": 13568
+    },
+    "cvegeo": "31051",
+    "estado": "yucatan",
+    "anio": 2020
+  }
+}

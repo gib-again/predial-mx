@@ -1,0 +1,28 @@
+{
+  "predial": {
+    "tipo_esquema": "otro_no_clasificado",
+    "categoria": "estructura_no_estandar",
+    "descripcion_estructural": "El texto proporcionado sólo contiene la base jurídica del impuesto predial y reglas especiales de aplicación/recargos para predios urbanos no edificados y fraccionamientos, pero no incluye ninguna tabla o catálogo de tasas/cuotas del impuesto. No es posible extraer una mecánica de cálculo completa de las variantes tarifarias solicitadas.",
+    "tabla_cruda": [],
+    "minimo_predial": null,
+    "comentarios": "Se ignoraron las disposiciones de aumento del 100% por ser recargos/ajustes especiales, no la mecánica base de cálculo. El segmento no muestra tasas, cuotas ni brackets aplicables."
+  },
+  "_meta": {
+    "fuente": "txt",
+    "modelo": "gpt-5.4-mini"
+  },
+  "_meta_v2": {
+    "intentos": 1,
+    "requiere_revision": true,
+    "escalado": false,
+    "razon": "clasificado_como_otro_no_clasificado",
+    "tokens": {
+      "input": 5189,
+      "output": 165,
+      "cached": 3840
+    },
+    "cvegeo": "28027",
+    "estado": "tamaulipas",
+    "anio": 2024
+  }
+}

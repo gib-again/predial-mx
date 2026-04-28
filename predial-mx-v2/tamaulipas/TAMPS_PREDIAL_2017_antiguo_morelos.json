@@ -1,0 +1,47 @@
+{
+  "predial": {
+    "tipo_esquema": "tarifa_millar",
+    "tabla": [
+      {
+        "grupo": "urbano",
+        "clave": "urbano_y_suburbano",
+        "descripcion": "Predios urbanos y suburbanos",
+        "tasa_millar": 0.0015,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "rústico",
+        "clave": "rustico",
+        "descripcion": "Predios rústicos sobre valor catastral",
+        "tasa_millar": 0.0015,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      }
+    ],
+    "minimo_predial": {
+      "monto": 2.0,
+      "periodicidad": "anual",
+      "unidad": "uma"
+    },
+    "comentarios": "Art. 8: predios urbanos y suburbanos causan 1.5 al millar anual sobre valor catastral. Art. 8 fracc. I y II establecen aumentos del 100% y 50% para supuestos específicos de predios urbanos no edificados o con edificación inferior a la quinta parte del valor del terreno; se transcriben como parte de la mecánica del grupo urbano en comentarios, pero no se desagregan como filas separadas. Art. 9: predios rústicos pagan 1.5 al millar anual sobre valor catastral. Art. 10: mínimo anual de dos veces el valor diario de la UMA."
+  },
+  "_meta": {
+    "fuente": "txt",
+    "modelo": "gpt-5.4-mini"
+  },
+  "_meta_v2": {
+    "intentos": 1,
+    "requiere_revision": false,
+    "escalado": false,
+    "razon": null,
+    "tokens": {
+      "input": 5312,
+      "output": 302,
+      "cached": 3840
+    },
+    "cvegeo": "28004",
+    "estado": "tamaulipas",
+    "anio": 2017
+  }
+}

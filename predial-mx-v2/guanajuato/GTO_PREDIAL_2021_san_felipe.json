@@ -1,0 +1,51 @@
+{
+  "predial": {
+    "tipo_esquema": "tarifa_millar",
+    "tabla": [
+      {
+        "grupo": "urbano",
+        "clave": "urbanos_con_edificaciones",
+        "descripcion": "Inmuebles urbanos y suburbanos con edificaciones",
+        "tasa_millar": 0.0024,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "urbano",
+        "clave": "urbanos_sin_edificaciones",
+        "descripcion": "Inmuebles urbanos y suburbanos sin edificaciones",
+        "tasa_millar": 0.0045,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "rustico",
+        "clave": "rusticos_con_edificaciones",
+        "descripcion": "Inmuebles rústicos con edificaciones",
+        "tasa_millar": 0.0018,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      }
+    ],
+    "minimo_predial": null,
+    "comentarios": "Art. 4 establece tasas al millar anuales por categoría de predio. Se transcribe la tarifa principal para inmuebles urbanos, suburbanos y rústicos. La tabla presenta también un renglón histórico 'Con anterioridad al año de 1093' con 13 al millar para las tres columnas; se conserva como aparece en el texto fuente dentro de la estructura tarifaria general, aunque la unidad/fecha parece errática en OCR. No se extraen valores unitarios de catastro de los arts. 5 y 6 porque son tablas de avalúo, no mecánica del impuesto. No se reportan descuentos, recargos ni bonificaciones."
+  },
+  "_meta": {
+    "fuente": "txt",
+    "modelo": "gpt-5.4-mini"
+  },
+  "_meta_v2": {
+    "intentos": 1,
+    "requiere_revision": false,
+    "escalado": false,
+    "razon": null,
+    "tokens": {
+      "input": 7533,
+      "output": 338,
+      "cached": 3840
+    },
+    "cvegeo": "11030",
+    "estado": "guanajuato",
+    "anio": 2021
+  }
+}

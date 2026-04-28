@@ -1,0 +1,59 @@
+{
+  "predial": {
+    "tipo_esquema": "tarifa_millar",
+    "tabla": [
+      {
+        "grupo": "urbano",
+        "clave": "secciones_1_a_4",
+        "descripcion": "Predios urbanos en secciones 1 a 4: tasa sobre valor catastral",
+        "tasa_millar": 0.002,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "rustico",
+        "clave": "predio_rustico",
+        "descripcion": "Predio rústico cuando no se pudiera determinar el valor catastral: cuota fija",
+        "tasa_millar": 0.0,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": {
+          "monto": 65.0,
+          "periodicidad": "anual",
+          "unidad": "pesos"
+        }
+      },
+      {
+        "grupo": "urbano",
+        "clave": "predio_urbano_sin_determinacion",
+        "descripcion": "Predio urbano cuando no se pudiera determinar el valor catastral: cuota fija",
+        "tasa_millar": 0.0,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": {
+          "monto": 80.0,
+          "periodicidad": "anual",
+          "unidad": "pesos"
+        }
+      }
+    ],
+    "minimo_predial": null,
+    "comentarios": "Art. 13: el impuesto predial se determina aplicando la tasa del 0.20% sobre el valor catastral de la sección 1 a la sección 4. Cuando no se pudiera determinar, se cobra cuota fija de $80.00 para predio urbano y $65.00 para predio rústico. Se ignoran los artículos 14 (descuento) y 15 (rentas o frutos civiles) por no ser mecánica base del predial sobre valor catastral. No se transcriben las tablas de valores unitarios de terreno/construcción porque son catastro, no tarifa."
+  },
+  "_meta": {
+    "fuente": "txt",
+    "modelo": "gpt-5.4-mini"
+  },
+  "_meta_v2": {
+    "intentos": 1,
+    "requiere_revision": false,
+    "escalado": false,
+    "razon": null,
+    "tokens": {
+      "input": 6131,
+      "output": 388,
+      "cached": 3840
+    },
+    "cvegeo": "31029",
+    "estado": "yucatan",
+    "anio": 2017
+  }
+}

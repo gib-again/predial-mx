@@ -1,0 +1,69 @@
+{
+  "predial": {
+    "tipo_esquema": "progresivo",
+    "tabla": [
+      {
+        "n_rango": 1,
+        "inferior": 0.01,
+        "superior": 5000.0,
+        "cuota_fija": 15.0,
+        "tasa_marginal": 0.0006
+      },
+      {
+        "n_rango": 2,
+        "inferior": 5000.01,
+        "superior": 7500.0,
+        "cuota_fija": 18.0,
+        "tasa_marginal": 0.001
+      },
+      {
+        "n_rango": 3,
+        "inferior": 7500.01,
+        "superior": 10500.0,
+        "cuota_fija": 21.0,
+        "tasa_marginal": 0.0012
+      },
+      {
+        "n_rango": 4,
+        "inferior": 10500.01,
+        "superior": 12500.0,
+        "cuota_fija": 24.0,
+        "tasa_marginal": 0.0013
+      },
+      {
+        "n_rango": 5,
+        "inferior": 12500.01,
+        "superior": 15500.0,
+        "cuota_fija": 27.0,
+        "tasa_marginal": 0.0015
+      },
+      {
+        "n_rango": 6,
+        "inferior": 15500.01,
+        "superior": null,
+        "cuota_fija": 30.0,
+        "tasa_marginal": 0.0025
+      }
+    ],
+    "minimo_predial": null,
+    "comentarios": "Art. 13: tabla de predial por rangos de valor catastral con cuota fija anual y factor sobre el excedente del límite inferior. Se transcribe la mecánica de cálculo indicada en el texto. Tarifa paralela: todo predio destinado a la producción agropecuaria paga 10 al millar anual sobre el valor registrado o catastral; no se incluye en la tabla principal por ser una tarifa separada. Se ignoran descuentos del Art. 14."
+  },
+  "_meta": {
+    "fuente": "txt",
+    "modelo": "gpt-5.4-mini"
+  },
+  "_meta_v2": {
+    "intentos": 1,
+    "requiere_revision": false,
+    "escalado": false,
+    "razon": null,
+    "tokens": {
+      "input": 6106,
+      "output": 368,
+      "cached": 3840
+    },
+    "cvegeo": "31095",
+    "estado": "yucatan",
+    "anio": 2019
+  }
+}

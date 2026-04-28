@@ -1,0 +1,59 @@
+{
+  "predial": {
+    "tipo_esquema": "mixto",
+    "tabla": [
+      {
+        "n_rango": 1,
+        "inferior": 0.0,
+        "superior": 200000.0,
+        "columnas": [
+          {
+            "nombre": "general",
+            "valor": 0.00025,
+            "tipo": "tasa_millar",
+            "unidad": "porcentaje"
+          },
+          {
+            "nombre": "general",
+            "valor": 50.0,
+            "tipo": "cuota_fija",
+            "unidad": "pesos"
+          }
+        ]
+      },
+      {
+        "n_rango": 2,
+        "inferior": 200000.01,
+        "superior": null,
+        "columnas": [
+          {
+            "nombre": "general",
+            "valor": 0.00025,
+            "tipo": "tasa_millar",
+            "unidad": "porcentaje"
+          }
+        ]
+      }
+    ],
+    "minimo_predial": null,
+    "comentarios": "Art. 13: el impuesto predial se calcula con una tasa del 0.00025 sobre el valor catastral actualizado. Además, para predios con valor catastral actualizado igual o menor a $200,000.00 se establece una cuota fija de $50.00. La mecánica es heterogénea porque coexisten una tasa porcentual sobre valor catastral y una cuota fija condicionada por el valor, por lo que se clasifica como mixto. Las Tablas A y B son insumos para determinar el valor catastral (valores unitarios de terreno y construcción), no una tarifa separada."
+  },
+  "_meta": {
+    "fuente": "txt",
+    "modelo": "gpt-5.4-mini"
+  },
+  "_meta_v2": {
+    "intentos": 1,
+    "requiere_revision": false,
+    "escalado": false,
+    "razon": null,
+    "tokens": {
+      "input": 5909,
+      "output": 288,
+      "cached": 3840
+    },
+    "cvegeo": "31036",
+    "estado": "yucatan",
+    "anio": 2023
+  }
+}

@@ -1,0 +1,51 @@
+{
+  "predial": {
+    "tipo_esquema": "tarifa_millar",
+    "tabla": [
+      {
+        "grupo": "general",
+        "clave": "inmuebles_urbanos_y_suburbanos_con_edificaciones",
+        "descripcion": "Inmuebles urbanos y suburbanos con edificaciones; tasa anual",
+        "tasa_millar": 0.0024,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "general",
+        "clave": "inmuebles_urbanos_y_suburbanos_sin_edificaciones",
+        "descripcion": "Inmuebles urbanos y suburbanos sin edificaciones; tasa anual",
+        "tasa_millar": 0.0045,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "rustico",
+        "clave": "inmuebles_rusticos",
+        "descripcion": "Inmuebles rústicos; tasa anual",
+        "tasa_millar": 0.0018,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      }
+    ],
+    "minimo_predial": null,
+    "comentarios": "Art. 4 establece tasas anuales al millar por tipo de inmueble. Se transcribe la mecánica vigente para 2011 como catálogo de tarifas: urbanos y suburbanos con edificaciones 2.4 al millar, urbanos y suburbanos sin edificaciones 4.5 al millar, y rústicos 1.8 al millar. Las tasas históricas por antigüedad del inmueble (fracciones 1 a 4) aparecen en el texto, pero no se integran como tabla principal porque la sección visible mezcla criterios de valuación y antigüedad, sin una estructura de brackets única de predial para esta extracción."
+  },
+  "_meta": {
+    "fuente": "txt",
+    "modelo": "gpt-5.4-mini"
+  },
+  "_meta_v2": {
+    "intentos": 1,
+    "requiere_revision": false,
+    "escalado": false,
+    "razon": null,
+    "tokens": {
+      "input": 7231,
+      "output": 354,
+      "cached": 3840
+    },
+    "cvegeo": "11019",
+    "estado": "guanajuato",
+    "anio": 2011
+  }
+}

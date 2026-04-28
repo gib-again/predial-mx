@@ -1,0 +1,20 @@
+{
+  "predial": null,
+  "_meta": {
+    "fuente": "txt",
+    "modelo": "gpt-5.4-mini"
+  },
+  "_meta_v2": {
+    "intentos": 2,
+    "requiere_revision": true,
+    "razon": "valido_2x_fallido | error1=  • predial.progresivo: Value error, brackets 1→2: hueco detectado (superior=129875.9, siguiente inferior=129875.91) | error2=  • predial.progresivo: Value error, brackets 1→2: hueco detectado (superior=129875.9, siguiente inferior=129875.91)",
+    "tokens": {
+      "input": 13915,
+      "output": 2785,
+      "cached": 12800
+    },
+    "cvegeo": "22011",
+    "estado": "queretaro",
+    "anio": 2025
+  }
+}

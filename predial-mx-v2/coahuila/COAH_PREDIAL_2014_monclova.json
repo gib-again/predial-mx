@@ -1,0 +1,47 @@
+{
+  "predial": {
+    "tipo_esquema": "tarifa_millar",
+    "tabla": [
+      {
+        "grupo": "urbano",
+        "clave": "urbano",
+        "descripcion": "Predios urbanos",
+        "tasa_millar": 1.0,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "rustico",
+        "clave": "rustico",
+        "descripcion": "Predios rústicos",
+        "tasa_millar": 1.0,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      }
+    ],
+    "minimo_predial": {
+      "monto": 105.0,
+      "periodicidad": "anual",
+      "unidad": "pesos"
+    },
+    "comentarios": "Art. 2: impuesto predial anual con tasa de 1 al millar para predios urbanos y 1 al millar para predios rústicos. El monto anual no podrá ser inferior a $105.00. Los incentivos por pronto pago y por pensionados/jubilados/adultos mayores/personas con discapacidad se ignoran por instrucción. Art. 3 establece incentivos para empresas de nueva creación, no una mecánica general del cálculo del impuesto; se omite de la tabla principal."
+  },
+  "_meta": {
+    "fuente": "txt",
+    "modelo": "gpt-5.4-mini"
+  },
+  "_meta_v2": {
+    "intentos": 1,
+    "requiere_revision": false,
+    "escalado": false,
+    "razon": null,
+    "tokens": {
+      "input": 5412,
+      "output": 246,
+      "cached": 3840
+    },
+    "cvegeo": "05018",
+    "estado": "coahuila",
+    "anio": 2014
+  }
+}

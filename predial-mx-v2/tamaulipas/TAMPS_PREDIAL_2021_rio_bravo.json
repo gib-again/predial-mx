@@ -1,0 +1,67 @@
+{
+  "predial": {
+    "tipo_esquema": "tarifa_millar",
+    "tabla": [
+      {
+        "grupo": "urbano",
+        "clave": "predios_urbanos_y_suburbanos_comerciales_industriales_o_de_servicios",
+        "descripcion": "Predios urbanos y suburbanos con edificaciones comerciales, industriales o de servicios",
+        "tasa_millar": 0.003,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "urbano",
+        "clave": "predios_urbanos_habitacionales",
+        "descripcion": "Predios urbanos con edificaciones habitacionales",
+        "tasa_millar": 0.002,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "rustico",
+        "clave": "predios_rusticos",
+        "descripcion": "Predios rústicos",
+        "tasa_millar": 0.0007,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "otro",
+        "clave": "predios_instituciones_asociaciones_sociales_grupos_vulnerables",
+        "descripcion": "Predios de instituciones o asociaciones sociales constituidas para la atención de grupos vulnerables, de personas en extrema pobreza, en rehabilitación y similares",
+        "tasa_millar": 0.0,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "urbano",
+        "clave": "predios_urbanos_sin_edificaciones_baldios",
+        "descripcion": "Predios urbanos sin edificaciones (baldíos)",
+        "tasa_millar": 0.003,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      }
+    ],
+    "minimo_predial": null,
+    "comentarios": "Art. 9: la mecánica principal es un catálogo de tasas al millar por tipo de inmueble. Las fracciones VIII y IX mencionan incrementos de 100% y 50% para ciertos predios urbanos/baldíos según porcentaje de construcción, y las fracciones X y XI incrementan en 100% en supuestos de fraccionamientos; se consignan como texto complementario porque operan como reglas especiales sobre la tasa de la fracción II. La fracción XII remite a aplicar la tarifa de la fracción I para variaciones catastrales detectadas; no se modela como bracket separado."
+  },
+  "_meta": {
+    "fuente": "txt",
+    "modelo": "gpt-5.4-mini"
+  },
+  "_meta_v2": {
+    "intentos": 1,
+    "requiere_revision": false,
+    "escalado": false,
+    "razon": null,
+    "tokens": {
+      "input": 5953,
+      "output": 477,
+      "cached": 3840
+    },
+    "cvegeo": "28033",
+    "estado": "tamaulipas",
+    "anio": 2021
+  }
+}

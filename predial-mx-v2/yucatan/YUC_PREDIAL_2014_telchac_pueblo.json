@@ -1,0 +1,33 @@
+{
+  "predial": {
+    "tipo_esquema": "tasa_unica",
+    "tabla": [
+      {
+        "descripcion": "Impuesto predial general sobre valor catastral",
+        "tasa": 0.1,
+        "base_calculo": "valor_catastral",
+        "unidad": "porcentaje"
+      }
+    ],
+    "minimo_predial": null,
+    "comentarios": "Art. 13: el impuesto predial se determina multiplicando el valor catastral por el factor del 0.10 por ciento. Si no se encuentra actualizado en el padrón catastral, se aplica tarifa fija anual de $150.00 para predios urbanos y $75.00 para predios rústicos (predios sin construcción); esta tarifa fija se describe en el texto como alternativa para padrón no actualizado. Se ignoran descuentos del Art. 14 y beneficios a jubilados. Las tasas/ cuotas secundarias se consignan sólo en comentarios por tratarse de una alternativa paralela a la tasa general."
+  },
+  "_meta": {
+    "fuente": "txt",
+    "modelo": "gpt-5.4-mini"
+  },
+  "_meta_v2": {
+    "intentos": 1,
+    "requiere_revision": false,
+    "escalado": false,
+    "razon": null,
+    "tokens": {
+      "input": 5020,
+      "output": 207,
+      "cached": 3840
+    },
+    "cvegeo": "31082",
+    "estado": "yucatan",
+    "anio": 2014
+  }
+}

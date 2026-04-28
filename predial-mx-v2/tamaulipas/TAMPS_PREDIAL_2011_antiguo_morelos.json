@@ -1,0 +1,79 @@
+{
+  "predial": {
+    "tipo_esquema": "tarifa_millar",
+    "tabla": [
+      {
+        "grupo": "urbano",
+        "clave": "urbano_suburbano_general",
+        "descripcion": "Predios urbanos y suburbanos",
+        "tasa_millar": 0.0015,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "urbano",
+        "clave": "urbano_no_edificado",
+        "descripcion": "Predios urbanos no edificados; la tasa se aumenta en 100%",
+        "tasa_millar": 0.003,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "urbano",
+        "clave": "urbano_edificacion_inferior_quinta_parte",
+        "descripcion": "Predios urbanos cuya edificación tenga un valor inferior a la quinta parte del valor del terreno; la tasa se aumenta en 50%",
+        "tasa_millar": 0.00225,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "urbano",
+        "clave": "urbano_no_edificado_fraccionamientos_autorizados",
+        "descripcion": "Predios urbanos no edificados propiedad de fraccionamientos autorizados; no se aplica el aumento del 100%",
+        "tasa_millar": 0.0015,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "urbano",
+        "clave": "lotes_fraccionamientos_sin_construccion_dos_anos",
+        "descripcion": "Adquirentes de lotes provenientes de fraccionamientos que no construyan en un plazo de dos años; pagan sobre la tasa del 100% al término de ese tiempo",
+        "tasa_millar": 0.003,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "rustico",
+        "clave": "rustico",
+        "descripcion": "Predios rústicos sobre el valor catastral",
+        "tasa_millar": 0.0015,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      }
+    ],
+    "minimo_predial": {
+      "monto": 2.0,
+      "periodicidad": "anual",
+      "unidad": "salarios"
+    },
+    "comentarios": "Art. 6: predios urbanos y suburbanos pagan 1.5 al millar anual sobre valor catastral. Art. 6 fraccs. I-V: se prevén incrementos para predios urbanos no edificados (+100%), con edificación inferior a la quinta parte del valor del terreno (+50%), no edificados de fraccionamientos autorizados (sin aumento), y lotes de fraccionamientos sin construcción en dos años (+100%). Art. 7: predios rústicos pagan 1.5 al millar anual sobre valor catastral. Art. 8: el impuesto anual no podrá ser inferior a dos salarios. Se transcriben las variantes tarifarias paralelas como filas separadas dentro de tarifa_millar por corresponder a tasas sobre valor catastral."
+  },
+  "_meta": {
+    "fuente": "txt",
+    "modelo": "gpt-5.4-mini"
+  },
+  "_meta_v2": {
+    "intentos": 1,
+    "requiere_revision": false,
+    "escalado": false,
+    "razon": null,
+    "tokens": {
+      "input": 5303,
+      "output": 612,
+      "cached": 3840
+    },
+    "cvegeo": "28004",
+    "estado": "tamaulipas",
+    "anio": 2011
+  }
+}

@@ -1,0 +1,75 @@
+{
+  "predial": {
+    "tipo_esquema": "tarifa_millar",
+    "tabla": [
+      {
+        "grupo": "urbano",
+        "clave": "con_edificaciones",
+        "descripcion": "Inmuebles urbanos y suburbanos con edificaciones; aplica a valores determinados o modificados, según el periodo indicado en la ley.",
+        "tasa_millar": 0.0024,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "urbano",
+        "clave": "sin_edificaciones",
+        "descripcion": "Inmuebles urbanos y suburbanos sin edificaciones; aplica a valores determinados o modificados, según el periodo indicado en la ley.",
+        "tasa_millar": 0.0045,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "urbano",
+        "clave": "edificaciones",
+        "descripcion": "Edificaciones; aplica a valores determinados o modificados, según el periodo indicado en la ley.",
+        "tasa_millar": 0.0018,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "urbano",
+        "clave": "periodo_1993_a_2001",
+        "descripcion": "Inmuebles urbanos y suburbanos con anterioridad al año 2002 y hasta 1993 inclusive.",
+        "tasa_millar": 0.008,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "urbano",
+        "clave": "periodo_anterior_a_1993",
+        "descripcion": "Inmuebles urbanos y suburbanos con anterioridad a 1993.",
+        "tasa_millar": 0.013,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "rustico",
+        "clave": "general",
+        "descripcion": "Predios rústicos. Artículo 4 remite a tasas específicas y el Artículo 5 regula únicamente valores unitarios para el avalúo; no se identifica una tabla paralela de rangos para predial en el texto proporcionado.",
+        "tasa_millar": 0.0,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      }
+    ],
+    "minimo_predial": null,
+    "comentarios": "Artículo 4 establece tasas anuales al millar para inmuebles urbanos y suburbanos según el periodo y la condición de edificaciones/sin edificaciones. La fracción II del Artículo 4 y los Artículos 5 y 6 contienen tablas de valores unitarios y criterios de valuación para inmuebles rústicos y urbanos, no una mecánica adicional de cálculo del impuesto; por ello no se incorporan como otra modalidad tarifaria. El texto no muestra rangos de valor catastral con cuotas fijas ni tasa marginal."
+  },
+  "_meta": {
+    "fuente": "txt",
+    "modelo": "gpt-5.4-mini"
+  },
+  "_meta_v2": {
+    "intentos": 1,
+    "requiere_revision": false,
+    "escalado": false,
+    "razon": null,
+    "tokens": {
+      "input": 7333,
+      "output": 553,
+      "cached": 3840
+    },
+    "cvegeo": "11021",
+    "estado": "guanajuato",
+    "anio": 2017
+  }
+}

@@ -1,0 +1,63 @@
+{
+  "predial": {
+    "tipo_esquema": "tarifa_millar",
+    "tabla": [
+      {
+        "grupo": "urbano",
+        "clave": "predios_urbanos_y_suburbanos",
+        "descripcion": "Predios urbanos y suburbanos; tasa general anual sobre valor catastral",
+        "tasa_millar": 0.0015,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "urbano",
+        "clave": "predios_urbanos_no_edificados",
+        "descripcion": "Predios urbanos no edificados; aumento del 100% sobre la tasa del artículo",
+        "tasa_millar": 0.003,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "urbano",
+        "clave": "predios_urbanos_con_edificacion_inferior_a_un_quinto_del_terreno",
+        "descripcion": "Predios urbanos cuya edificación tenga un valor inferior a la quinta parte del valor del terreno; aumento del 50% sobre la tasa del artículo",
+        "tasa_millar": 0.00225,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "rustico",
+        "clave": "predios_rusticos",
+        "descripcion": "Predios rústicos sobre valor catastral",
+        "tasa_millar": 0.0015,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      }
+    ],
+    "minimo_predial": {
+      "monto": 2.0,
+      "periodicidad": "anual",
+      "unidad": "uma"
+    },
+    "comentarios": "Art. 10 establece tasa general de 1.5 al millar para predios urbanos y suburbanos; fracción I aumenta 100% para predios urbanos no edificados; fracción II aumenta 50% para predios urbanos con edificación menor a la quinta parte del valor del terreno; fracción III excluye el aumento del 100% para predios urbanos no edificados de fraccionamientos autorizados; fracción IV prevé aumento del 100% al término de dos años para adquirentes de lotes que no construyan. Art. 11 establece 1.5 al millar anual para predios rústicos. Art. 12 fija mínimo anual de 2 UMA. Se transcriben como tarifas paralelas/categóricas; las exenciones de aumentos se consignan en comentarios y no modifican la tabla principal."
+  },
+  "_meta": {
+    "fuente": "txt",
+    "modelo": "gpt-5.4-mini"
+  },
+  "_meta_v2": {
+    "intentos": 1,
+    "requiere_revision": false,
+    "escalado": false,
+    "razon": null,
+    "tokens": {
+      "input": 5295,
+      "output": 502,
+      "cached": 3840
+    },
+    "cvegeo": "28020",
+    "estado": "tamaulipas",
+    "anio": 2017
+  }
+}

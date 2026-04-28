@@ -1,0 +1,59 @@
+{
+  "predial": {
+    "tipo_esquema": "tarifa_millar",
+    "tabla": [
+      {
+        "grupo": "urbano",
+        "clave": "urbano_con_edificaciones",
+        "descripcion": "Inmuebles urbanos y suburbanos con edificaciones, a la entrada en vigor de la ley",
+        "tasa_millar": 2.4,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "urbano",
+        "clave": "urbano_sin_edificaciones",
+        "descripcion": "Inmuebles urbanos y suburbanos sin edificaciones, a la entrada en vigor de la ley",
+        "tasa_millar": 4.5,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "rustico",
+        "clave": "rustico_con_edificaciones",
+        "descripcion": "Inmuebles rústicos con edificaciones, a la entrada en vigor de la ley",
+        "tasa_millar": 1.3,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "rustico",
+        "clave": "rustico_sin_edificaciones",
+        "descripcion": "Inmuebles rústicos sin edificaciones, a la entrada en vigor de la ley",
+        "tasa_millar": 1.3,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      }
+    ],
+    "minimo_predial": null,
+    "comentarios": "Artículo 4 establece tasas anuales al millar para inmuebles urbanos y rústicos, diferenciando con y sin edificaciones. El texto OCR está parcialmente deteriorado; se conserva la mecánica tarifaria explícita. Los artículos 5 y 6 tratan valores unitarios y criterios de avalúo, no la tarifa del impuesto."
+  },
+  "_meta": {
+    "fuente": "txt",
+    "modelo": "gpt-5.4-mini"
+  },
+  "_meta_v2": {
+    "intentos": 1,
+    "requiere_revision": false,
+    "escalado": false,
+    "razon": null,
+    "tokens": {
+      "input": 7341,
+      "output": 362,
+      "cached": 3840
+    },
+    "cvegeo": "11004",
+    "estado": "guanajuato",
+    "anio": 2014
+  }
+}

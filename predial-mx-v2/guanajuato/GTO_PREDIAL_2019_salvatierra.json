@@ -1,0 +1,51 @@
+{
+  "predial": {
+    "tipo_esquema": "tarifa_millar",
+    "tabla": [
+      {
+        "grupo": "urbano",
+        "clave": "urbano_con_edificaciones",
+        "descripcion": "Inmuebles urbanos y suburbanos con edificaciones",
+        "tasa_millar": 0.0024,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "urbano",
+        "clave": "urbano_sin_edificaciones",
+        "descripcion": "Inmuebles urbanos y suburbanos sin edificaciones",
+        "tasa_millar": 0.0045,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "rustico",
+        "clave": "rustico_general",
+        "descripcion": "Inmuebles rústicos",
+        "tasa_millar": 0.0018,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      }
+    ],
+    "minimo_predial": null,
+    "comentarios": "Art. 4 establece tasas anuales al millar por categoría de inmueble y periodo de valuación: 2.4 al millar para inmuebles urbanos y suburbanos con edificaciones, 4.5 al millar para urbanos y suburbanos sin edificaciones, y 1.8 al millar para inmuebles rústicos en los supuestos de la fracción I (entrada en vigor y año 2002 a 2018 inclusive). También aparecen tasas históricas para valores determinados o modificados con anterioridad al año 2002 y hasta 1993 inclusive, y con anterioridad a 1993, pero se transcriben sólo como parte de la tarifa del artículo. Art. 4 indica además 8 al millar y 13/12 al millar para periodos anteriores, pero la estructura principal es de tarifa por categorías sin rangos catastrales. Art. 5 contiene valores unitarios de terreno y construcción; no se trata de mecánica de cálculo del impuesto y no se usa como tarifa."
+  },
+  "_meta": {
+    "fuente": "txt",
+    "modelo": "gpt-5.4-mini"
+  },
+  "_meta_v2": {
+    "intentos": 1,
+    "requiere_revision": false,
+    "escalado": false,
+    "razon": null,
+    "tokens": {
+      "input": 7310,
+      "output": 408,
+      "cached": 3840
+    },
+    "cvegeo": "11028",
+    "estado": "guanajuato",
+    "anio": 2019
+  }
+}

@@ -1,0 +1,75 @@
+{
+  "predial": {
+    "tipo_esquema": "tarifa_millar",
+    "tabla": [
+      {
+        "grupo": "general",
+        "clave": "urbano_con_edificaciones",
+        "descripcion": "Inmuebles urbanos y suburbanos con edificaciones, vigente a la entrada en vigor de la Ley y durante 2002 a 2018 inclusive",
+        "tasa_millar": 0.0024,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "general",
+        "clave": "urbano_sin_edificaciones",
+        "descripcion": "Inmuebles urbanos y suburbanos sin edificaciones, vigente a la entrada en vigor de la Ley y durante 2002 a 2018 inclusive",
+        "tasa_millar": 0.0045,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "general",
+        "clave": "otro_construido_1993_2002",
+        "descripcion": "Inmuebles con valor determinado o modificado, con anterioridad al año 2002 y hasta 1993 inclusive, con edificaciones",
+        "tasa_millar": 0.008,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "general",
+        "clave": "otro_sin_construccion_1993_2002",
+        "descripcion": "Inmuebles con valor determinado o modificado, con anterioridad al año 2002 y hasta 1993 inclusive, sin edificaciones",
+        "tasa_millar": 0.015,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "general",
+        "clave": "otro_construido_anteriores_1993",
+        "descripcion": "Inmuebles con valor determinado o modificado, con anterioridad al año de 1993, con edificaciones",
+        "tasa_millar": 0.013,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "general",
+        "clave": "otro_sin_construccion_anteriores_1993",
+        "descripcion": "Inmuebles con valor determinado o modificado, con anterioridad al año de 1993, sin edificaciones",
+        "tasa_millar": 0.012,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      }
+    ],
+    "minimo_predial": null,
+    "comentarios": "Artículo 4 establece tasas anuales al millar por categoría/antigüedad y por existencia o no de edificaciones. No se incluye la tabla de valores unitarios de los artículos 5 y 6 porque es valuación catastral, no mecánica del impuesto. No se detectan brackets por valor catastral ni cuota fija adicional."
+  },
+  "_meta": {
+    "fuente": "txt",
+    "modelo": "gpt-5.4-mini"
+  },
+  "_meta_v2": {
+    "intentos": 1,
+    "requiere_revision": false,
+    "escalado": false,
+    "razon": null,
+    "tokens": {
+      "input": 7332,
+      "output": 551,
+      "cached": 3840
+    },
+    "cvegeo": "11036",
+    "estado": "guanajuato",
+    "anio": 2019
+  }
+}

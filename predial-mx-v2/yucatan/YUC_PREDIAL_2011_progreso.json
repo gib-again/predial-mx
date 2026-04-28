@@ -1,0 +1,28 @@
+{
+  "predial": {
+    "tipo_esquema": "otro_no_clasificado",
+    "categoria": "segmento_vacio",
+    "descripcion_estructural": "El texto proporcionado sólo contiene el encabezado del Capítulo I y el inicio del Artículo 13, pero no incluye la mecánica de cálculo del impuesto predial ni tablas, cuotas o tasas. Con este segmento no es posible clasificar el esquema tarifario.",
+    "tabla_cruda": [],
+    "minimo_predial": null,
+    "comentarios": "Segmento truncado antes de la parte dispositiva del impuesto predial."
+  },
+  "_meta": {
+    "fuente": "txt",
+    "modelo": "gpt-5.4-mini"
+  },
+  "_meta_v2": {
+    "intentos": 1,
+    "requiere_revision": true,
+    "escalado": false,
+    "razon": "clasificado_como_otro_no_clasificado",
+    "tokens": {
+      "input": 4892,
+      "output": 127,
+      "cached": 3840
+    },
+    "cvegeo": "31059",
+    "estado": "yucatan",
+    "anio": 2011
+  }
+}

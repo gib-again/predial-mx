@@ -1,0 +1,115 @@
+{
+  "predial": {
+    "tipo_esquema": "tarifa_millar",
+    "tabla": [
+      {
+        "grupo": "general",
+        "clave": "entrada_en_vigor",
+        "descripcion": "Inmuebles con valor determinado o modificado, a la entrada en vigor de la ley: inmuebles urbanos y suburbanos con edificaciones",
+        "tasa_millar": 0.0024,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "general",
+        "clave": "entrada_en_vigor_rustico",
+        "descripcion": "Inmuebles con valor determinado o modificado, a la entrada en vigor de la ley: inmuebles rústicos",
+        "tasa_millar": 0.0045,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "general",
+        "clave": "entrada_en_vigor_sin_edificacion",
+        "descripcion": "Inmuebles con valor determinado o modificado, a la entrada en vigor de la ley: inmuebles urbanos y suburbanos sin edificaciones",
+        "tasa_millar": 0.0018,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "general",
+        "clave": "2002_2009_urbanos_suburbanos_edificados",
+        "descripcion": "Durante los años 2002 y hasta 2009, inclusive: inmuebles urbanos y suburbanos con edificaciones",
+        "tasa_millar": 0.0024,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "general",
+        "clave": "2002_2009_rusticos",
+        "descripcion": "Durante los años 2002 y hasta 2009, inclusive: inmuebles rústicos",
+        "tasa_millar": 0.0045,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "general",
+        "clave": "2002_2009_urbanos_suburbanos_sin_edificacion",
+        "descripcion": "Durante los años 2002 y hasta 2009, inclusive: inmuebles urbanos y suburbanos sin edificaciones",
+        "tasa_millar": 0.0018,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "general",
+        "clave": "anteriores_2002_urbanos_suburbanos_edificados",
+        "descripcion": "Inmuebles con anterioridad al año 2002 y hasta 1993, inclusive: inmuebles urbanos y suburbanos con edificaciones",
+        "tasa_millar": 0.008,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "general",
+        "clave": "anteriores_2002_rusticos",
+        "descripcion": "Inmuebles con anterioridad al año 2002 y hasta 1993, inclusive: inmuebles rústicos",
+        "tasa_millar": 0.0015,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "general",
+        "clave": "anteriores_2002_urbanos_suburbanos_sin_edificacion",
+        "descripcion": "Inmuebles con anterioridad al año 2002 y hasta 1993, inclusive: inmuebles urbanos y suburbanos sin edificaciones",
+        "tasa_millar": 0.006,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "general",
+        "clave": "anteriores_1993_urbanos_suburbanos_edificados",
+        "descripcion": "Inmuebles con anterioridad al año de 1993: inmuebles urbanos y suburbanos con edificaciones",
+        "tasa_millar": 0.013,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "general",
+        "clave": "anteriores_1993_urbanos_suburbanos_sin_edificacion",
+        "descripcion": "Inmuebles con anterioridad al año de 1993: inmuebles urbanos y suburbanos sin edificaciones",
+        "tasa_millar": 0.012,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      }
+    ],
+    "minimo_predial": null,
+    "comentarios": "Artículo 4 establece tasas anuales al millar diferenciadas por antigüedad del valor determinado o modificado y por tipo de inmueble. Se transcriben sólo las tasas del predial; las tablas de valores unitarios de los artículos 5 y 6 son catastro/avalúo y no se usan como mecánica de cálculo. La parte rústica tiene tasa paralela específica dentro del mismo artículo, por eso se incluye en la tabla principal como fila categórica."
+  },
+  "_meta": {
+    "fuente": "txt",
+    "modelo": "gpt-5.4-mini"
+  },
+  "_meta_v2": {
+    "intentos": 1,
+    "requiere_revision": false,
+    "escalado": false,
+    "razon": null,
+    "tokens": {
+      "input": 7379,
+      "output": 928,
+      "cached": 3840
+    },
+    "cvegeo": "11014",
+    "estado": "guanajuato",
+    "anio": 2010
+  }
+}

@@ -1,0 +1,57 @@
+{
+  "predial": {
+    "tipo_esquema": "mixto",
+    "tabla": [
+      {
+        "n_rango": 1,
+        "inferior": 0.0,
+        "superior": 200000.0,
+        "columnas": [
+          {
+            "nombre": "general",
+            "valor": 0.003,
+            "tipo": "tasa_millar",
+            "unidad": "al_millar"
+          }
+        ]
+      },
+      {
+        "n_rango": 2,
+        "inferior": 200000.01,
+        "superior": null,
+        "columnas": [
+          {
+            "nombre": "general",
+            "valor": 0.003,
+            "tipo": "tasa_millar",
+            "unidad": "al_millar"
+          }
+        ]
+      }
+    ],
+    "minimo_predial": {
+      "monto": 100.0,
+      "periodicidad": "anual",
+      "unidad": "pesos"
+    },
+    "comentarios": "Artículo 19: el impuesto predial se determina aplicando la tasa de 0.30% sobre el valor catastral, con un factor base de $20.00 para predios tipo casa-habitación; además se indica un impuesto mínimo de $100.00 en predios urbanos y $150.00 en predios rústicos y tablajes catastrales. La estructura principal del predial base valor catastral no se presenta como tabla de brackets con cuotas o tasas marginales, sino como una tasa única, y en el texto aparecen tarifas paralelas/condiciones especiales (rentas/frutos civiles con 4% y 6% mensual, y múltiples tablas de valores unitarios de terreno y construcción que son catastro, no tarifa predial). Se captura sólo la mecánica principal visible del predial sobre valor catastral; las tarifas sobre rentas/frutos civiles y las tablas catastrales anexas se excluyen por no ser la mecánica principal de predial."
+  },
+  "_meta": {
+    "fuente": "txt",
+    "modelo": "gpt-5.4-mini"
+  },
+  "_meta_v2": {
+    "intentos": 2,
+    "requiere_revision": false,
+    "escalado": false,
+    "razon": null,
+    "tokens": {
+      "input": 25985,
+      "output": 775,
+      "cached": 8704
+    },
+    "cvegeo": "31101",
+    "estado": "yucatan",
+    "anio": 2024
+  }
+}

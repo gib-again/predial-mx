@@ -1,0 +1,37 @@
+{
+  "predial": {
+    "tipo_esquema": "cuota_fija_simple",
+    "tabla": [
+      {
+        "descripcion": "Cuota mínima anual del impuesto predial",
+        "monto": 395.61,
+        "periodicidad": "anual",
+        "unidad": "pesos"
+      }
+    ],
+    "minimo_predial": {
+      "monto": 395.61,
+      "periodicidad": "anual",
+      "unidad": "pesos"
+    },
+    "comentarios": "Art. 39 establece una cuota mínima anual única de $395.61 pagadera dentro del primer bimestre. No se advierte tabla de tasas, rangos de valor catastral ni mecánica adicional de cálculo del impuesto predial en el texto proporcionado; el Art. 40 regula supuestos de aplicación de la cuota mínima para ciertas casas-habitación y no agrega una tarifa distinta."
+  },
+  "_meta": {
+    "fuente": "txt",
+    "modelo": "gpt-5.4-mini"
+  },
+  "_meta_v2": {
+    "intentos": 1,
+    "requiere_revision": false,
+    "escalado": false,
+    "razon": null,
+    "tokens": {
+      "input": 5454,
+      "output": 174,
+      "cached": 3840
+    },
+    "cvegeo": "11041",
+    "estado": "guanajuato",
+    "anio": 2025
+  }
+}

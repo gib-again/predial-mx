@@ -1,0 +1,37 @@
+{
+  "predial": {
+    "tipo_esquema": "otro_no_clasificado",
+    "categoria": "error_segmentacion",
+    "descripcion_estructural": "El texto describe la mecánica de un esquema progresivo ('límites inferior y superior', 'cuota fija' y aplicación de un 'factor' al excedente), pero la tabla tarifaria con los rangos y factores no aparece en el segmento proporcionado. Sólo se observan tablas catastrales de valores unitarios y una tarifa paralela para predios destinados a la producción agropecuaria de 10 al millar anual.",
+    "tabla_cruda": [
+      {
+        "descripcion": "Mecánica del cálculo mencionada en el texto",
+        "valores": "Se situará el valor entre límites inferior y superior; en cada rango se aplicará la cuota fija; al excedente del límite inferior se aplicará el factor señalado al rango; finalmente se sumará a la cuota fija la cantidad resultante."
+      },
+      {
+        "descripcion": "Tarifa paralela para predios destinados a la producción agropecuaria",
+        "valores": "10 al millar anual sobre el valor registrado o catastral; con tope conforme a la legislación agraria federal para terrenos ejidales."
+      }
+    ],
+    "minimo_predial": null,
+    "comentarios": "Artículo 4 anuncia 'las siguientes tasas', pero el segmento sólo contiene valores unitarios de terreno y construcción, que deben ignorarse por ser tablas catastrales y no la tarifa del impuesto. Artículo 7 sí establece una tasa específica de 10 al millar para predios destinados a la producción agropecuaria, pero se trata de una tarifa paralela y no sustituye la tabla principal faltante."
+  },
+  "_meta": {
+    "fuente": "txt",
+    "modelo": "gpt-5.4"
+  },
+  "_meta_v2": {
+    "intentos": 3,
+    "requiere_revision": true,
+    "escalado": true,
+    "razon": "clasificado_como_otro_no_clasificado_tras_escalacion",
+    "tokens": {
+      "input": 20074,
+      "output": 922,
+      "cached": 8704
+    },
+    "cvegeo": "31003",
+    "estado": "yucatan",
+    "anio": 2023
+  }
+}

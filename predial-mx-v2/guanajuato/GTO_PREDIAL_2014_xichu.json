@@ -1,0 +1,123 @@
+{
+  "predial": {
+    "tipo_esquema": "tarifa_millar",
+    "tabla": [
+      {
+        "grupo": "urbano",
+        "clave": "entrada_vigor_ley",
+        "descripcion": "A la entrada en vigor de la presente ley",
+        "tasa_millar": 0.0024,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "urbano",
+        "clave": "anio_2002_a_2013",
+        "descripcion": "Durante los años 2002 y hasta el año 2013, inclusive",
+        "tasa_millar": 0.0024,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "urbano",
+        "clave": "anterior_a_2002_hasta_1993",
+        "descripcion": "Con anterioridad al año 2002 y hasta el año 1993",
+        "tasa_millar": 0.008,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "urbano",
+        "clave": "anterior_a_1993",
+        "descripcion": "Con anterioridad al año 1993",
+        "tasa_millar": 0.013,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "rustico",
+        "clave": "entrada_vigor_ley",
+        "descripcion": "A la entrada en vigor de la presente ley",
+        "tasa_millar": 0.0045,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "rustico",
+        "clave": "anio_2002_a_2013",
+        "descripcion": "Durante los años 2002 y hasta el año 2013, inclusive",
+        "tasa_millar": 0.0045,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "rustico",
+        "clave": "anterior_a_2002_hasta_1993",
+        "descripcion": "Con anterioridad al año 2002 y hasta el año 1993",
+        "tasa_millar": 0.015,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "rustico",
+        "clave": "anterior_a_1993",
+        "descripcion": "Con anterioridad al año 1993",
+        "tasa_millar": 0.012,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "otro",
+        "clave": "entrada_vigor_ley",
+        "descripcion": "A la entrada en vigor de la presente ley",
+        "tasa_millar": 0.0018,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "otro",
+        "clave": "anio_2002_a_2013",
+        "descripcion": "Durante los años 2002 y hasta el año 2013, inclusive",
+        "tasa_millar": 0.0018,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "otro",
+        "clave": "anterior_a_2002_hasta_1993",
+        "descripcion": "Con anterioridad al año 2002 y hasta el año 1993",
+        "tasa_millar": 0.006,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "otro",
+        "clave": "anterior_a_1993",
+        "descripcion": "Con anterioridad al año 1993",
+        "tasa_millar": 0.012,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      }
+    ],
+    "minimo_predial": null,
+    "comentarios": "Artículo 4 establece tasas anuales al millar por antigüedad del inmueble, con tres grupos/tarifas paralelas en la tabla: columnas para inmueble urbano, rústico y un tercer grupo no rotulado claramente en el OCR. Se transcriben como tarifa_millar porque son categorías sin rangos de valor catastral. No se incluyen los Artículos 5 y 6 porque corresponden a valores unitarios y factores de avalúo, no a la mecánica del impuesto. Artículo 4 también contiene una fila adicional para inmuebles con anterioridad al año 1993 con tasas distintas por grupo."
+  },
+  "_meta": {
+    "fuente": "txt",
+    "modelo": "gpt-5.4-mini"
+  },
+  "_meta_v2": {
+    "intentos": 1,
+    "requiere_revision": false,
+    "escalado": false,
+    "razon": null,
+    "tokens": {
+      "input": 6817,
+      "output": 844,
+      "cached": 3840
+    },
+    "cvegeo": "11045",
+    "estado": "guanajuato",
+    "anio": 2014
+  }
+}

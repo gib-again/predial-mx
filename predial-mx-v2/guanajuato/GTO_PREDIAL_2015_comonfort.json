@@ -1,0 +1,51 @@
+{
+  "predial": {
+    "tipo_esquema": "tarifa_millar",
+    "tabla": [
+      {
+        "grupo": "urbano",
+        "clave": "urbanos_y_suburbanos_con_edificaciones",
+        "descripcion": "Inmuebles urbanos y suburbanos con edificaciones; tasa anual conforme a la antigüedad del valor determinado o modificado",
+        "tasa_millar": 0.0045,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "urbano",
+        "clave": "urbanos_y_suburbanos_sin_edificaciones",
+        "descripcion": "Inmuebles urbanos y suburbanos sin edificaciones; tasa anual conforme a la antigüedad del valor determinado o modificado",
+        "tasa_millar": 0.0045,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "rustico",
+        "clave": "inmuebles_rusticos",
+        "descripcion": "Inmuebles rústicos; tasa anual conforme a la antigüedad del valor determinado o modificado",
+        "tasa_millar": 0.0018,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      }
+    ],
+    "minimo_predial": null,
+    "comentarios": "Art. 4 establece tasas anuales al millar por categoría de inmueble y por antigüedad del valor determinado o modificado. Para inmuebles urbanos y suburbanos con y sin edificaciones, el texto OCR muestra 4.5 al millar para la entrada en vigor de la ley y durante 2002-2014, 8/15/13 al millar en periodos anteriores; para inmuebles rústicos muestra 1.8 al millar en la entrada en vigor y durante 2002-2014, 6 al millar en 1993-2001 y 12 al millar con anterioridad a 1993. Se transcribe solo la mecánica estructural principal del impuesto predial; las tablas de valores unitarios de los artículos 5 y 6 corresponden a valuación catastral y no a la tarifa."
+  },
+  "_meta": {
+    "fuente": "txt",
+    "modelo": "gpt-5.4-mini"
+  },
+  "_meta_v2": {
+    "intentos": 1,
+    "requiere_revision": false,
+    "escalado": false,
+    "razon": null,
+    "tokens": {
+      "input": 7476,
+      "output": 430,
+      "cached": 3840
+    },
+    "cvegeo": "11009",
+    "estado": "guanajuato",
+    "anio": 2015
+  }
+}

@@ -1,0 +1,51 @@
+{
+  "predial": {
+    "tipo_esquema": "tarifa_millar",
+    "tabla": [
+      {
+        "grupo": "urbano",
+        "clave": "urbano_con_edificaciones",
+        "descripcion": "Inmuebles urbanos y suburbanos con edificaciones; Art. 4, fracciones I a IV (tabla de tasas por antigüedad).",
+        "tasa_millar": 0.0024,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "urbano",
+        "clave": "urbano_sin_edificaciones",
+        "descripcion": "Inmuebles urbanos y suburbanos sin edificaciones; Art. 4, fracciones I a IV (tabla de tasas por antigüedad).",
+        "tasa_millar": 0.0045,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "rustico",
+        "clave": "predios_rusticos",
+        "descripcion": "Predios rústicos; Art. 4 remite a valuación rústica del Art. 5, pero no se localiza una tasa predial rústica separada en el texto proporcionado.",
+        "tasa_millar": 0.0,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      }
+    ],
+    "minimo_predial": null,
+    "comentarios": "Artículo 4 contiene una tabla de tasas al millar para inmuebles urbanos y suburbanos, diferenciada por con edificaciones y sin edificaciones, con cuatro periodos de antigüedad. Se transcribe la estructura predominante como tarifa_millar. El texto también incluye valuación catastral (Art. 5 y 6) y tablas de valores unitarios, que se ignoran por no ser mecánica de cálculo del impuesto. No se identificó una tarifa rústica distinta y completa en el segmento transcrito."
+  },
+  "_meta": {
+    "fuente": "txt",
+    "modelo": "gpt-5.4-mini"
+  },
+  "_meta_v2": {
+    "intentos": 1,
+    "requiere_revision": false,
+    "escalado": false,
+    "razon": null,
+    "tokens": {
+      "input": 7482,
+      "output": 379,
+      "cached": 3840
+    },
+    "cvegeo": "11046",
+    "estado": "guanajuato",
+    "anio": 2023
+  }
+}

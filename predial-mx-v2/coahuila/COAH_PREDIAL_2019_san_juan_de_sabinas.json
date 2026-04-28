@@ -1,0 +1,63 @@
+{
+  "predial": {
+    "tipo_esquema": "tarifa_millar",
+    "tabla": [
+      {
+        "grupo": "urbano",
+        "clave": "predios_urbanos_con_edificacion",
+        "descripcion": "Predios urbanos con edificación (no se considera edificación bardas y cercas)",
+        "tasa_millar": 0.005,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "urbano",
+        "clave": "lotes_baldios_desmontados",
+        "descripcion": "Lotes baldíos desmontados",
+        "tasa_millar": 0.005,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "urbano",
+        "clave": "lotes_baldios_con_maleza",
+        "descripcion": "Lotes baldíos con maleza",
+        "tasa_millar": 0.007,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "rustico",
+        "clave": "predios_rusticos_y_extraccion_ejidal_titulados",
+        "descripcion": "Predios rústicos y predios de extracción ejidal ya titulados",
+        "tasa_millar": 0.005,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      }
+    ],
+    "minimo_predial": {
+      "monto": 20.58,
+      "periodicidad": "bimestral",
+      "unidad": "pesos"
+    },
+    "comentarios": "Art. 2: se establecen tasas al millar anuales por categoría de predio: urbanos con edificación 5 al millar, lotes baldíos desmontados 5 al millar, lotes baldíos con maleza 7 al millar y predios rústicos / extracción ejidal ya titulados 5 al millar. También se prevé un mínimo predial de $20.58 por bimestre ($123.48 anual). Los estímulos, bonificaciones y exenciones de las fracciones VI a XI se ignoran por instrucción."
+  },
+  "_meta": {
+    "fuente": "txt",
+    "modelo": "gpt-5.4-mini"
+  },
+  "_meta_v2": {
+    "intentos": 1,
+    "requiere_revision": false,
+    "escalado": false,
+    "razon": null,
+    "tokens": {
+      "input": 6100,
+      "output": 410,
+      "cached": 3840
+    },
+    "cvegeo": "05032",
+    "estado": "coahuila",
+    "anio": 2019
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "predial": {
+    "tipo_esquema": "tarifa_millar",
+    "tabla": [
+      {
+        "grupo": "general",
+        "clave": "secciones_1_a_5",
+        "descripcion": "Predios de las secciones 1, 2, 3, 4 y 5",
+        "tasa_millar": 0.0025,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      }
+    ],
+    "minimo_predial": null,
+    "comentarios": "La tarifa principal del impuesto predial es una tasa uniforme de 0.25% anual sobre el valor catastral para las secciones 1, 2, 3, 4 y 5. El texto también establece tarifas paralelas que no se integran en la tabla principal: cuando no pueda determinarse el valor catastral, se cobrará una cuota fija de 80.00 pesos para terrenos con construcción y 50.00 pesos para terrenos sin construcción; además, todo predio destinado a la producción agropecuaria pagará 10 al millar anual sobre el valor registrado o catastral. Se ignoran las tablas de valores unitarios de terreno y construcción por ser de catastro, no la tarifa del impuesto."
+  },
+  "_meta": {
+    "fuente": "txt",
+    "modelo": "gpt-5.4"
+  },
+  "_meta_v2": {
+    "intentos": 3,
+    "requiere_revision": false,
+    "escalado": true,
+    "razon": "escalado_a_gpt-5.4_tras_2x_mini_fallido",
+    "tokens": {
+      "input": 19145,
+      "output": 833,
+      "cached": 13568
+    },
+    "cvegeo": "31051",
+    "estado": "yucatan",
+    "anio": 2013
+  }
+}

@@ -1,0 +1,96 @@
+{
+  "predial": {
+    "tipo_esquema": "mixto",
+    "tabla": [
+      {
+        "n_rango": 1,
+        "inferior": 0.01,
+        "superior": 10000.0,
+        "columnas": [
+          {
+            "nombre": "general",
+            "valor": 120.0,
+            "tipo": "cuota_fija",
+            "unidad": "pesos"
+          }
+        ]
+      },
+      {
+        "n_rango": 2,
+        "inferior": 10000.01,
+        "superior": 30000.0,
+        "columnas": [
+          {
+            "nombre": "general",
+            "valor": 138.0,
+            "tipo": "cuota_fija",
+            "unidad": "pesos"
+          }
+        ]
+      },
+      {
+        "n_rango": 3,
+        "inferior": 30000.01,
+        "superior": 50000.0,
+        "columnas": [
+          {
+            "nombre": "general",
+            "valor": 162.0,
+            "tipo": "cuota_fija",
+            "unidad": "pesos"
+          }
+        ]
+      },
+      {
+        "n_rango": 4,
+        "inferior": 50000.01,
+        "superior": 70000.0,
+        "columnas": [
+          {
+            "nombre": "general",
+            "valor": 168.0,
+            "tipo": "cuota_fija",
+            "unidad": "pesos"
+          }
+        ]
+      },
+      {
+        "n_rango": 5,
+        "inferior": 70000.01,
+        "superior": null,
+        "columnas": [
+          {
+            "nombre": "general",
+            "valor": 174.0,
+            "tipo": "cuota_fija",
+            "unidad": "pesos"
+          }
+        ]
+      }
+    ],
+    "minimo_predial": {
+      "monto": 100.0,
+      "periodicidad": "anual",
+      "unidad": "pesos"
+    },
+    "comentarios": "Art. 19 establece una tasa general de 0.30% sobre el valor catastral, pero también fija factor base de $20.00 para casa-habitación y un impuesto mínimo de $100.00 en predios urbanos y $150.00 en predios rústicos y tablajes catastrales. Además, para inmuebles en uso, goce, arrendamiento, subarrendamiento o similares, el impuesto se causa mensualmente sobre la contraprestación con tasa de 4% habitacional y 6% comercial; esto es una tarifa paralela y no se integra a la tabla principal. Las tablas de zonas 6, 7, 8 y 9 para rústicos/tablajes catastrales son heterogéneas: cada rango combina cuota fija en pesos más un factor sobre el valor catastral, por lo que se codifican como mixto. Se transcribió la tabla principal de la zona de rústicos sobre la carretera Mérida-Umán (Art. 20, numeral 6), que es la más estructurada del segmento; las demás tablas zonales muestran valores unitarios de catastro y no se usan como mecánica del impuesto."
+  },
+  "_meta": {
+    "fuente": "txt",
+    "modelo": "gpt-5.4-mini"
+  },
+  "_meta_v2": {
+    "intentos": 1,
+    "requiere_revision": false,
+    "escalado": false,
+    "razon": null,
+    "tokens": {
+      "input": 9707,
+      "output": 538,
+      "cached": 3840
+    },
+    "cvegeo": "31101",
+    "estado": "yucatan",
+    "anio": 2020
+  }
+}

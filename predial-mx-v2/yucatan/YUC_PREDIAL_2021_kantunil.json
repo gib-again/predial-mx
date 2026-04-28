@@ -1,0 +1,75 @@
+{
+  "predial": {
+    "tipo_esquema": "tarifa_millar",
+    "tabla": [
+      {
+        "grupo": "general",
+        "clave": "seccion_1",
+        "descripcion": "Sección 1",
+        "tasa_millar": 0.0025,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "general",
+        "clave": "seccion_2",
+        "descripcion": "Sección 2",
+        "tasa_millar": 0.0025,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "general",
+        "clave": "seccion_3",
+        "descripcion": "Sección 3",
+        "tasa_millar": 0.0025,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "general",
+        "clave": "seccion_4",
+        "descripcion": "Sección 4",
+        "tasa_millar": 0.0025,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "general",
+        "clave": "seccion_5",
+        "descripcion": "Sección 5",
+        "tasa_millar": 0.0025,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "general",
+        "clave": "seccion_6",
+        "descripcion": "Sección 6",
+        "tasa_millar": 0.0025,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      }
+    ],
+    "minimo_predial": null,
+    "comentarios": "Art. 13: además de la tabla principal por secciones al 0.25% (0.0025) anual sobre valor catastral, el texto contiene tarifas paralelas para predios agropecuarios (10 al millar anual sobre valor catastral, con tope por legislación agraria federal) y también una tabla de rentas/frutos civiles (Art. 15: 2% mensual para casas habitación y 2% mensual para actividades comerciales), pero no se integran en la tabla principal por ser bases/grupos distintos. Se ignoraron descuentos del Art. 14 y las tablas de valores unitarios de terrenos y construcción por no ser mecánica de cálculo del impuesto."
+  },
+  "_meta": {
+    "fuente": "txt",
+    "modelo": "gpt-5.4-mini"
+  },
+  "_meta_v2": {
+    "intentos": 1,
+    "requiere_revision": false,
+    "escalado": false,
+    "razon": null,
+    "tokens": {
+      "input": 6074,
+      "output": 452,
+      "cached": 3840
+    },
+    "cvegeo": "31042",
+    "estado": "yucatan",
+    "anio": 2021
+  }
+}

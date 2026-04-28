@@ -1,0 +1,33 @@
+{
+  "predial": {
+    "tipo_esquema": "tasa_unica",
+    "tabla": [
+      {
+        "descripcion": "Impuesto predial sobre valor catastral",
+        "tasa": 0.02,
+        "base_calculo": "valor_catastral",
+        "unidad": "porcentaje"
+      }
+    ],
+    "minimo_predial": null,
+    "comentarios": "Art. 4 establece una tasa única del 2% sobre el valor catastral. Art. 6 regula un impuesto distinto con base en rentas o frutos civiles (3% casas habitación, 5% predios comerciales), el cual se excluye por no ser predial sobre valor catastral. Se ignoran descuentos del Art. 5."
+  },
+  "_meta": {
+    "fuente": "txt",
+    "modelo": "gpt-5.4-mini"
+  },
+  "_meta_v2": {
+    "intentos": 1,
+    "requiere_revision": false,
+    "escalado": false,
+    "razon": null,
+    "tokens": {
+      "input": 4968,
+      "output": 151,
+      "cached": 3840
+    },
+    "cvegeo": "31058",
+    "estado": "yucatan",
+    "anio": 2011
+  }
+}

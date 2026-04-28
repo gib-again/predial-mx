@@ -1,0 +1,53 @@
+{
+  "predial": {
+    "tipo_esquema": "mixto",
+    "tabla": [
+      {
+        "n_rango": 1,
+        "inferior": 0.0,
+        "superior": 200000.0,
+        "columnas": [
+          {
+            "nombre": "general",
+            "valor": 50.0,
+            "tipo": "cuota_fija",
+            "unidad": "pesos"
+          }
+        ]
+      },
+      {
+        "n_rango": 2,
+        "inferior": 200000.0,
+        "superior": null,
+        "columnas": [
+          {
+            "nombre": "general",
+            "valor": 0.00025,
+            "tipo": "tasa_marginal",
+            "unidad": "porcentaje"
+          }
+        ]
+      }
+    ],
+    "minimo_predial": null,
+    "comentarios": "Art. 14, fraccs. IV y V: para el predial sobre valor catastral se establecen dos mecánicas distintas en función del valor catastral. Hasta $200,000.00 la ley fija una cuota fija de $50.00; para valores superiores indica el factor 0.00025 del valor catastral actualizado. Además, Art. 14 prevé una tarifa paralela para predios destinados a la producción agropecuaria: 10 al millar anual sobre el valor catastral, sin que se incluya en la tabla principal por ser una tarifa separada. Art. 16 regula rentas o frutos civiles (2%) y no se integra a la mecánica principal del predial sobre valor catastral."
+  },
+  "_meta": {
+    "fuente": "txt",
+    "modelo": "gpt-5.4-mini"
+  },
+  "_meta_v2": {
+    "intentos": 1,
+    "requiere_revision": false,
+    "escalado": false,
+    "razon": null,
+    "tokens": {
+      "input": 6284,
+      "output": 296,
+      "cached": 3840
+    },
+    "cvegeo": "31042",
+    "estado": "yucatan",
+    "anio": 2024
+  }
+}

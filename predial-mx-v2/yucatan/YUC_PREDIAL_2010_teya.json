@@ -1,0 +1,43 @@
+{
+  "predial": {
+    "tipo_esquema": "tarifa_millar",
+    "tabla": [
+      {
+        "grupo": "urbano",
+        "clave": "predios_urbanos",
+        "descripcion": "Predios urbanos",
+        "tasa_millar": 60.0,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "rustico",
+        "clave": "predios_rusticos",
+        "descripcion": "Predios rústicos",
+        "tasa_millar": 40.0,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      }
+    ],
+    "minimo_predial": null,
+    "comentarios": "Art. 13 establece una tarifa fija diferenciada por tipo de predio: predios urbanos $60.00 y predios rústicos $40.00. Art. 15 regula impuestos sobre rentas o frutos civiles (casas habitación y actividades comerciales, 2% mensual), lo cual no corresponde al impuesto predial y se ignora para esta extracción."
+  },
+  "_meta": {
+    "fuente": "txt",
+    "modelo": "gpt-5.4-mini"
+  },
+  "_meta_v2": {
+    "intentos": 2,
+    "requiere_revision": false,
+    "escalado": false,
+    "razon": null,
+    "tokens": {
+      "input": 5504,
+      "output": 205,
+      "cached": 4864
+    },
+    "cvegeo": "31088",
+    "estado": "yucatan",
+    "anio": 2010
+  }
+}

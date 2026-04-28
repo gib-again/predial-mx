@@ -1,0 +1,117 @@
+{
+  "predial": {
+    "tipo_esquema": "cuota_fija_escalonada",
+    "tabla": [
+      {
+        "n_rango": 1,
+        "inferior": 0.01,
+        "superior": 8000.0,
+        "monto": 30.0
+      },
+      {
+        "n_rango": 2,
+        "inferior": 8000.0,
+        "superior": 12000.0,
+        "monto": 60.0
+      },
+      {
+        "n_rango": 3,
+        "inferior": 12000.0,
+        "superior": 16000.0,
+        "monto": 90.0
+      },
+      {
+        "n_rango": 4,
+        "inferior": 16000.0,
+        "superior": 20000.0,
+        "monto": 128.0
+      },
+      {
+        "n_rango": 5,
+        "inferior": 20000.0,
+        "superior": 24000.0,
+        "monto": 150.0
+      },
+      {
+        "n_rango": 6,
+        "inferior": 24000.0,
+        "superior": 28000.0,
+        "monto": 170.0
+      },
+      {
+        "n_rango": 7,
+        "inferior": 28000.0,
+        "superior": 32000.0,
+        "monto": 212.0
+      },
+      {
+        "n_rango": 8,
+        "inferior": 32000.0,
+        "superior": 36000.0,
+        "monto": 252.0
+      },
+      {
+        "n_rango": 9,
+        "inferior": 36000.0,
+        "superior": 40000.0,
+        "monto": 352.0
+      },
+      {
+        "n_rango": 10,
+        "inferior": 40000.0,
+        "superior": 50000.0,
+        "monto": 452.0
+      },
+      {
+        "n_rango": 11,
+        "inferior": 50000.0,
+        "superior": 60000.0,
+        "monto": 552.0
+      },
+      {
+        "n_rango": 12,
+        "inferior": 60000.0,
+        "superior": 70000.0,
+        "monto": 652.0
+      },
+      {
+        "n_rango": 13,
+        "inferior": 70000.0,
+        "superior": 80000.0,
+        "monto": 752.0
+      },
+      {
+        "n_rango": 14,
+        "inferior": 80000.0,
+        "superior": 90000.0,
+        "monto": 852.0
+      },
+      {
+        "n_rango": 15,
+        "inferior": 90000.0,
+        "superior": null,
+        "monto": 952.0
+      }
+    ],
+    "minimo_predial": null,
+    "comentarios": "Artículo 4 establece una tabla por rangos de valor catastral con cuota fija aplicable en pesos y un factor aplicable al excedente del límite inferior. Sin embargo, los factores son 0 en los dos primeros rangos y 0.002 en los rangos posteriores; dado que la mecánica solicitada para clasificación exclusiva no encaja limpiamente en progresivo por la presencia de montos fijos por rango y la tabla mostrada combina cuota fija con un factor uniforme sin desglosar base, se transcribe como cuota fija escalonada según la mecánica textual principal. Artículo 6 establece una tasa separada por rentas o frutos civiles (3% habitacional, 5% comercial), pero corresponde a otra base y no se integra en la tabla principal."
+  },
+  "_meta": {
+    "fuente": "txt",
+    "modelo": "gpt-5.4-mini"
+  },
+  "_meta_v2": {
+    "intentos": 1,
+    "requiere_revision": false,
+    "escalado": false,
+    "razon": null,
+    "tokens": {
+      "input": 8309,
+      "output": 554,
+      "cached": 3840
+    },
+    "cvegeo": "31096",
+    "estado": "yucatan",
+    "anio": 2025
+  }
+}

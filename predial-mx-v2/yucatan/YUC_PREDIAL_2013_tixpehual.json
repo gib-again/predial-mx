@@ -1,0 +1,105 @@
+{
+  "predial": {
+    "tipo_esquema": "mixto",
+    "tabla": [
+      {
+        "n_rango": 1,
+        "inferior": 0.01,
+        "superior": 5500.0,
+        "columnas": [
+          {
+            "nombre": "general",
+            "valor": 15.0,
+            "tipo": "cuota_fija",
+            "unidad": "pesos"
+          }
+        ]
+      },
+      {
+        "n_rango": 2,
+        "inferior": 5500.01,
+        "superior": 7500.0,
+        "columnas": [
+          {
+            "nombre": "general",
+            "valor": 18.0,
+            "tipo": "cuota_fija",
+            "unidad": "pesos"
+          }
+        ]
+      },
+      {
+        "n_rango": 3,
+        "inferior": 7500.01,
+        "superior": 10500.0,
+        "columnas": [
+          {
+            "nombre": "general",
+            "valor": 21.0,
+            "tipo": "cuota_fija",
+            "unidad": "pesos"
+          }
+        ]
+      },
+      {
+        "n_rango": 4,
+        "inferior": 10500.01,
+        "superior": 12500.0,
+        "columnas": [
+          {
+            "nombre": "general",
+            "valor": 24.0,
+            "tipo": "cuota_fija",
+            "unidad": "pesos"
+          }
+        ]
+      },
+      {
+        "n_rango": 5,
+        "inferior": 12500.01,
+        "superior": 15500.0,
+        "columnas": [
+          {
+            "nombre": "general",
+            "valor": 27.0,
+            "tipo": "cuota_fija",
+            "unidad": "pesos"
+          }
+        ]
+      },
+      {
+        "n_rango": 6,
+        "inferior": 15500.01,
+        "superior": null,
+        "columnas": [
+          {
+            "nombre": "general",
+            "valor": 30.0,
+            "tipo": "tasa_marginal",
+            "unidad": "al_millar"
+          }
+        ]
+      }
+    ],
+    "minimo_predial": null,
+    "comentarios": "Art. 14: la tabla principal de predial para predios urbanos está estructurada por rangos de valor catastral con cuota fija anual y factor aplicado al excedente del límite inferior; los primeros 5 renglones son cuotas fijas en pesos y el último renglón ('En adelante') usa factor 0.0025, por lo que la estructura es heterogénea y se clasifica como mixto. Tarifa paralela no incorporada en la tabla principal: predios destinados a producción agropecuaria pagan 10 al millar anual sobre el valor registrado o catastral. También aparecen valores unitarios de terreno y construcción, pero son insumos catastrales y no se transcriben como mecánica del impuesto."
+  },
+  "_meta": {
+    "fuente": "txt",
+    "modelo": "gpt-5.4-mini"
+  },
+  "_meta_v2": {
+    "intentos": 1,
+    "requiere_revision": false,
+    "escalado": false,
+    "razon": null,
+    "tokens": {
+      "input": 5992,
+      "output": 479,
+      "cached": 3840
+    },
+    "cvegeo": "31095",
+    "estado": "yucatan",
+    "anio": 2013
+  }
+}

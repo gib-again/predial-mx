@@ -1,0 +1,122 @@
+{
+  "predial": {
+    "tipo_esquema": "mixto",
+    "tabla": [
+      {
+        "n_rango": 1,
+        "inferior": 0.0,
+        "superior": 500000.0,
+        "columnas": [
+          {
+            "nombre": "urbano_con_edificacion",
+            "valor": 0.00234,
+            "tipo": "tasa_marginal",
+            "unidad": "porcentaje"
+          }
+        ]
+      },
+      {
+        "n_rango": 2,
+        "inferior": 500000.01,
+        "superior": 650000.0,
+        "columnas": [
+          {
+            "nombre": "urbano_con_edificacion",
+            "valor": 0.00254,
+            "tipo": "tasa_marginal",
+            "unidad": "porcentaje"
+          }
+        ]
+      },
+      {
+        "n_rango": 3,
+        "inferior": 650000.01,
+        "superior": 800000.0,
+        "columnas": [
+          {
+            "nombre": "urbano_con_edificacion",
+            "valor": 0.00274,
+            "tipo": "tasa_marginal",
+            "unidad": "porcentaje"
+          }
+        ]
+      },
+      {
+        "n_rango": 4,
+        "inferior": 800000.01,
+        "superior": 1000000.0,
+        "columnas": [
+          {
+            "nombre": "urbano_con_edificacion",
+            "valor": 0.00294,
+            "tipo": "tasa_marginal",
+            "unidad": "porcentaje"
+          }
+        ]
+      },
+      {
+        "n_rango": 5,
+        "inferior": 1000000.01,
+        "superior": 1200000.0,
+        "columnas": [
+          {
+            "nombre": "urbano_con_edificacion",
+            "valor": 0.00314,
+            "tipo": "tasa_marginal",
+            "unidad": "porcentaje"
+          }
+        ]
+      },
+      {
+        "n_rango": 6,
+        "inferior": 1200000.01,
+        "superior": 1500000.0,
+        "columnas": [
+          {
+            "nombre": "urbano_con_edificacion",
+            "valor": 0.00334,
+            "tipo": "tasa_marginal",
+            "unidad": "porcentaje"
+          }
+        ]
+      },
+      {
+        "n_rango": 7,
+        "inferior": 1500000.01,
+        "superior": null,
+        "columnas": [
+          {
+            "nombre": "urbano_con_edificacion",
+            "valor": 0.00354,
+            "tipo": "tasa_marginal",
+            "unidad": "porcentaje"
+          }
+        ]
+      }
+    ],
+    "minimo_predial": {
+      "monto": 0.0,
+      "periodicidad": "anual",
+      "unidad": "pesos"
+    },
+    "comentarios": "Art. 4 fracc. I: inmuebles urbanos con edificaciones tienen tarifa progresiva por valor fiscal con cuota fija y tasa marginal; la tabla oficial mezcla cuotas fijas en pesos con tasas porcentuales por rango, por eso se clasifica como mixto y no como progresivo puro. La fracc. II (inmuebles suburbanos con edificaciones) establece tasa única de 0.207% anual sobre valor fiscal y se menciona como tarifa paralela; la fracc. III (urbanos y suburbanos sin edificación) establece otra tabla de tasas por superficie de terreno y la fracc. IV (rústicos) una tasa de 0.18% sobre valor fiscal; esas tarifas secundarias no se integran en la tabla principal. El texto también señala que si el impuesto resulta inferior a la cuota mínima del artículo 48, se pagará dicha cuota mínima."
+  },
+  "_meta": {
+    "fuente": "txt",
+    "modelo": "gpt-5.4-mini"
+  },
+  "_meta_v2": {
+    "intentos": 1,
+    "requiere_revision": false,
+    "escalado": false,
+    "razon": null,
+    "tokens": {
+      "input": 8699,
+      "output": 626,
+      "cached": 3840
+    },
+    "cvegeo": "11003",
+    "estado": "guanajuato",
+    "anio": 2025
+  }
+}

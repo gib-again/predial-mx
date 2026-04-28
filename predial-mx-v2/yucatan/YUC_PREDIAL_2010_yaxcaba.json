@@ -1,0 +1,41 @@
+{
+  "predial": {
+    "tipo_esquema": "otro_no_clasificado",
+    "categoria": "estructura_no_estandar",
+    "descripcion_estructural": "El segmento de predial sólo indica en el Artículo 4 que el cobro se realizará conforme a cuotas, pero no incluye la tabla o mecánica correspondiente. El único detalle tarifario visible está en el Artículo 5 y corresponde a predial causado sobre la base de rentas o frutos civiles, con tasas mensuales sobre la contraprestación, lo cual no encaja en las variantes estándar solicitadas para impuesto predial sobre valor catastral.",
+    "tabla_cruda": [
+      {
+        "descripcion": "Artículo 4",
+        "valores": "El cobro del impuesto predial se realizará de conformidad con las siguientes cuotas; tabla no visible en el segmento."
+      },
+      {
+        "descripcion": "Artículo 5, predio habitacional",
+        "valores": "2 % sobre el monto de la contraprestación, mensual, base=rentas o frutos civiles"
+      },
+      {
+        "descripcion": "Artículo 5, predio comercial",
+        "valores": "5 % sobre el monto de la contraprestación, mensual, base=rentas o frutos civiles"
+      }
+    ],
+    "minimo_predial": null,
+    "comentarios": "Se omite clasificar como tasa_unica o tarifa_millar porque el texto no proporciona la tarifa predial general del Artículo 4. El Artículo 5 regula un supuesto especial sobre rentas o frutos civiles y no una mecánica estándar sobre valor catastral."
+  },
+  "_meta": {
+    "fuente": "txt",
+    "modelo": "gpt-5.4"
+  },
+  "_meta_v2": {
+    "intentos": 3,
+    "requiere_revision": true,
+    "escalado": true,
+    "razon": "clasificado_como_otro_no_clasificado_tras_escalacion",
+    "tokens": {
+      "input": 5553,
+      "output": 309,
+      "cached": 4864
+    },
+    "cvegeo": "31104",
+    "estado": "yucatan",
+    "anio": 2010
+  }
+}

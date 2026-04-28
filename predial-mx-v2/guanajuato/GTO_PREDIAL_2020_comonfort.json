@@ -1,0 +1,51 @@
+{
+  "predial": {
+    "tipo_esquema": "tarifa_millar",
+    "tabla": [
+      {
+        "grupo": "urbano",
+        "clave": "urbanos_y_suburbanos_con_valor_determinado_o_modificado",
+        "descripcion": "Inmuebles urbanos y suburbanos con un valor determinado o modificado, con edificaciones",
+        "tasa_millar": 0.0018,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "urbano",
+        "clave": "urbanos_y_suburbanos_con_valor_determinado_o_modificado_sin_edificaciones",
+        "descripcion": "Inmuebles urbanos y suburbanos con un valor determinado o modificado, sin edificaciones",
+        "tasa_millar": 0.0024,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "rustico",
+        "clave": "rusticos_con_valor_determinado_o_modificado",
+        "descripcion": "Inmuebles rústicos con un valor determinado o modificado",
+        "tasa_millar": 0.0018,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      }
+    ],
+    "minimo_predial": null,
+    "comentarios": "Art. 4 establece tasas anuales al millar para predios urbanos y suburbanos con valor determinado o modificado: 1.8 al millar con edificaciones y 2.4 al millar sin edificaciones; para inmuebles rústicos con valor determinado o modificado, 1.8 al millar. El resto del texto son tablas de valores unitarios de catastro (terreno/construcción) y criterios de valuación, no mecánica tarifaria adicional."
+  },
+  "_meta": {
+    "fuente": "txt",
+    "modelo": "gpt-5.4-mini"
+  },
+  "_meta_v2": {
+    "intentos": 1,
+    "requiere_revision": false,
+    "escalado": false,
+    "razon": null,
+    "tokens": {
+      "input": 7589,
+      "output": 350,
+      "cached": 3840
+    },
+    "cvegeo": "11009",
+    "estado": "guanajuato",
+    "anio": 2020
+  }
+}

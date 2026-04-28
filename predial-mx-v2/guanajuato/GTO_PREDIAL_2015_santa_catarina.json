@@ -1,0 +1,59 @@
+{
+  "predial": {
+    "tipo_esquema": "tarifa_millar",
+    "tabla": [
+      {
+        "grupo": "general",
+        "clave": "entrada_en_vigor",
+        "descripcion": "A la entrada en vigor de la presente ley",
+        "tasa_millar": 0.0024,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "general",
+        "clave": "anio_2002_a_2014",
+        "descripcion": "Durante el año 2002 y hasta el 2014, inclusive",
+        "tasa_millar": 0.0024,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "general",
+        "clave": "anterior_a_2002_hasta_1993",
+        "descripcion": "Con anterioridad al año 2002 y hasta 1993 inclusive",
+        "tasa_millar": 0.008,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "general",
+        "clave": "anterior_a_1993",
+        "descripcion": "Con anterioridad a 1993",
+        "tasa_millar": 0.013,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      }
+    ],
+    "minimo_predial": null,
+    "comentarios": "Art. 4 establece tasas anuales al millar sobre el valor catastral por antigüedad del inmueble. Tarifa paralela: Art. 4 también muestra tasas diferenciadas para inmuebles urbanos y suburbanos con/sin edificaciones y rústicos (2.4, 4.5, 1.8; 8, 15, 6; 13, 12 al millar), pero el texto está fragmentado/ambiguous en la captura; se transcribe sólo la mecánica principal visible de las tasas por antigüedad. Art. 5 y 6 contienen valores unitarios y criterios de avalúo, no tarifa del impuesto."
+  },
+  "_meta": {
+    "fuente": "txt",
+    "modelo": "gpt-5.4-mini"
+  },
+  "_meta_v2": {
+    "intentos": 1,
+    "requiere_revision": false,
+    "escalado": false,
+    "razon": null,
+    "tokens": {
+      "input": 7277,
+      "output": 399,
+      "cached": 3840
+    },
+    "cvegeo": "11034",
+    "estado": "guanajuato",
+    "anio": 2015
+  }
+}

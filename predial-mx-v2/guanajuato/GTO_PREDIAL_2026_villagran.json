@@ -1,0 +1,59 @@
+{
+  "predial": {
+    "tipo_esquema": "tarifa_millar",
+    "tabla": [
+      {
+        "grupo": "general",
+        "clave": "suburbano_modificado_1",
+        "descripcion": "Inmuebles con valor determinado o modificado, de la entrada en vigor de la ley al año 2002 inclusive",
+        "tasa_millar": 0.0045,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "general",
+        "clave": "suburbano_modificado_2",
+        "descripcion": "Inmuebles con valor determinado o modificado, durante los años 2002 al 2025 inclusive",
+        "tasa_millar": 0.0045,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "general",
+        "clave": "suburbano_modificado_3",
+        "descripcion": "Inmuebles con valor determinado o modificado, con anterioridad al año 2002 y hasta 1993 inclusive",
+        "tasa_millar": 0.015,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "general",
+        "clave": "suburbano_modificado_4",
+        "descripcion": "Inmuebles con valor determinado o modificado, con anterioridad al año 1993",
+        "tasa_millar": 0.013,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      }
+    ],
+    "minimo_predial": null,
+    "comentarios": "Artículo 4 establece tasas por antigüedad para inmuebles suburbanos/inmuebles con valor determinado o modificado: 4.5 al millar (dos primeros supuestos), 15 al millar (anterioridad a 2002 y hasta 1993 inclusive) y 13 al millar (anterioridad a 1993). La sección contiene también valuación catastral (Art. 5 y 6), que no se extrae como mecánica de cálculo del impuesto."
+  },
+  "_meta": {
+    "fuente": "txt",
+    "modelo": "gpt-5.4-mini"
+  },
+  "_meta_v2": {
+    "intentos": 1,
+    "requiere_revision": false,
+    "escalado": false,
+    "razon": null,
+    "tokens": {
+      "input": 7517,
+      "output": 404,
+      "cached": 3840
+    },
+    "cvegeo": "11044",
+    "estado": "guanajuato",
+    "anio": 2026
+  }
+}

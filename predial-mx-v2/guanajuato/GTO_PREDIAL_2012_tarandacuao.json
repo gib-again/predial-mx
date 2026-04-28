@@ -1,0 +1,67 @@
+{
+  "predial": {
+    "tipo_esquema": "tarifa_millar",
+    "tabla": [
+      {
+        "grupo": "general",
+        "clave": "inmuebles_urbanos_y_suburbanos_con_valor_determinado_o_modificado",
+        "descripcion": "Inmuebles urbanos y suburbanos con valor determinado o modificado; entrada en vigor de la presente Ley",
+        "tasa_millar": 0.0024,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "general",
+        "clave": "inmuebles_urbanos_y_suburbanos_con_valor_determinado_o_modificado_2002_2011",
+        "descripcion": "Inmuebles urbanos y suburbanos con valor determinado o modificado; durante los años 2002 a 2011 inclusive",
+        "tasa_millar": 0.0024,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "general",
+        "clave": "inmuebles_urbanos_y_suburbanos_con_valor_determinado_o_modificado_antes_2002_despues_1993",
+        "descripcion": "Inmuebles urbanos y suburbanos con valor determinado o modificado; con anterioridad al año 2002 y después de 1993",
+        "tasa_millar": 0.0015,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "general",
+        "clave": "inmuebles_urbanos_y_suburbanos_con_valor_determinado_o_modificado_antes_1993",
+        "descripcion": "Inmuebles urbanos y suburbanos con valor determinado o modificado; con anterioridad al año de 1993",
+        "tasa_millar": 0.0013,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "rustico",
+        "clave": "inmuebles_rusticos",
+        "descripcion": "Inmuebles rústicos",
+        "tasa_millar": 0.004,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      }
+    ],
+    "minimo_predial": null,
+    "comentarios": "Art. 4 establece tasas al millar por categoría de predio, sin rangos de valor catastral. Se transcribe la tarifa principal. Art. 5 y 6 contienen valores unitarios y criterios de avalúo/catastro, no una mecánica tarifaria adicional. No se detectan cuotas fijas adicionales en el texto proporcionado."
+  },
+  "_meta": {
+    "fuente": "txt",
+    "modelo": "gpt-5.4-mini"
+  },
+  "_meta_v2": {
+    "intentos": 1,
+    "requiere_revision": false,
+    "escalado": false,
+    "razon": null,
+    "tokens": {
+      "input": 7260,
+      "output": 505,
+      "cached": 3840
+    },
+    "cvegeo": "11038",
+    "estado": "guanajuato",
+    "anio": 2012
+  }
+}

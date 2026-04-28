@@ -1,0 +1,51 @@
+{
+  "predial": {
+    "tipo_esquema": "tarifa_millar",
+    "tabla": [
+      {
+        "grupo": "urbano",
+        "clave": "inmuebles_urbanos_y_suburbanos_con_edificaciones",
+        "descripcion": "Inmuebles urbanos y suburbanos con edificaciones: a la entrada en vigor de la presente Ley; durante 2002 y hasta 2021 inclusive; con anterioridad a 2002 y hasta 1993 inclusive; con anterioridad a 1993.",
+        "tasa_millar": 0.0024,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "urbano",
+        "clave": "inmuebles_urbanos_y_suburbanos_sin_edificaciones",
+        "descripcion": "Inmuebles urbanos y suburbanos sin edificaciones: a la entrada en vigor de la presente Ley; durante 2002 y hasta 2021 inclusive; con anterioridad a 2002 y hasta 1993 inclusive; con anterioridad a 1993.",
+        "tasa_millar": 0.0045,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "rustico",
+        "clave": "inmuebles_rusticos",
+        "descripcion": "Inmuebles rústicos: a la entrada en vigor de la presente Ley; durante 2002 y hasta 2021 inclusive; con anterioridad a 2002 y hasta 1993 inclusive; con anterioridad a 1993.",
+        "tasa_millar": 0.0018,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      }
+    ],
+    "minimo_predial": null,
+    "comentarios": "Artículo 4 establece una tarifa anual al millar por tipo de inmueble y condición de edificación. El texto muestra cuatro momentos temporales con las mismas tasas para los dos primeros periodos y tasas distintas para los periodos históricos, pero la mecánica es un catálogo de tasas por categoría; no se transcriben valores unitarios de los artículos 5 y 6 por ser catastro/avalúo, no mecánica de impuesto. No se detectan cuotas fijas adicionales."
+  },
+  "_meta": {
+    "fuente": "txt",
+    "modelo": "gpt-5.4-mini"
+  },
+  "_meta_v2": {
+    "intentos": 1,
+    "requiere_revision": false,
+    "escalado": false,
+    "razon": null,
+    "tokens": {
+      "input": 7379,
+      "output": 441,
+      "cached": 3840
+    },
+    "cvegeo": "11028",
+    "estado": "guanajuato",
+    "anio": 2022
+  }
+}

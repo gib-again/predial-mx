@@ -1,0 +1,47 @@
+{
+  "predial": {
+    "tipo_esquema": "tarifa_millar",
+    "tabla": [
+      {
+        "grupo": "urbano",
+        "clave": "predios_urbanos",
+        "descripcion": "Sobre los predios urbanos",
+        "tasa_millar": 0.003,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "rustico",
+        "clave": "predios_rusticos",
+        "descripcion": "Sobre los predios rústicos",
+        "tasa_millar": 0.003,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      }
+    ],
+    "minimo_predial": {
+      "monto": 24.31,
+      "periodicidad": "bimestral",
+      "unidad": "pesos"
+    },
+    "comentarios": "Art. 2 fraccs. I y II: predios urbanos y rústicos pagan 3 al millar anual. Art. 2 fracc. III establece un mínimo predial de $24.31 por bimestre y cuota mínima anual de $146.00; se registra el mínimo bimestral. Art. 2 fracc. IV prevé que los predios rústicos dedicados a agricultura y ganadería cubran el 50% del impuesto sólo en enero y febrero; se trata como incentivo/bonificación y no se integra a la mecánica base. Fraccs. V a VIII contienen incentivos, no mecánica base del cálculo."
+  },
+  "_meta": {
+    "fuente": "txt",
+    "modelo": "gpt-5.4-mini"
+  },
+  "_meta_v2": {
+    "intentos": 1,
+    "requiere_revision": false,
+    "escalado": false,
+    "razon": null,
+    "tokens": {
+      "input": 5626,
+      "output": 296,
+      "cached": 3840
+    },
+    "cvegeo": "05022",
+    "estado": "coahuila",
+    "anio": 2020
+  }
+}

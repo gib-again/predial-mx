@@ -1,0 +1,80 @@
+{
+  "predial": {
+    "tipo_esquema": "progresivo",
+    "tabla": [
+      {
+        "n_rango": 1,
+        "inferior": 0.01,
+        "superior": 4000.0,
+        "cuota_fija": 4.0,
+        "tasa_marginal": 0.00075
+      },
+      {
+        "n_rango": 2,
+        "inferior": 4001.0,
+        "superior": 5500.0,
+        "cuota_fija": 7.0,
+        "tasa_marginal": 0.002
+      },
+      {
+        "n_rango": 3,
+        "inferior": 5501.0,
+        "superior": 6500.0,
+        "cuota_fija": 10.0,
+        "tasa_marginal": 0.003
+      },
+      {
+        "n_rango": 4,
+        "inferior": 6501.0,
+        "superior": 7500.0,
+        "cuota_fija": 13.0,
+        "tasa_marginal": 0.003
+      },
+      {
+        "n_rango": 5,
+        "inferior": 7501.0,
+        "superior": 8500.0,
+        "cuota_fija": 16.0,
+        "tasa_marginal": 0.004
+      },
+      {
+        "n_rango": 6,
+        "inferior": 8501.0,
+        "superior": 10000.0,
+        "cuota_fija": 20.0,
+        "tasa_marginal": 0.00133
+      },
+      {
+        "n_rango": 7,
+        "inferior": 10001.0,
+        "superior": null,
+        "cuota_fija": 22.0,
+        "tasa_marginal": 0.0025
+      }
+    ],
+    "minimo_predial": {
+      "monto": 70.0,
+      "periodicidad": "anual",
+      "unidad": "pesos"
+    },
+    "comentarios": "Art. 4: tarifa progresiva por valor catastral con cuota fija + factor (tasa marginal) sobre el excedente. Se omiten descuentos (Art. 6) y la base por rentas/frutos civiles (Art. 7) por ser mecánica distinta al predial sobre valor catastral. La sección de predios rústicos aparece sin contenido tarifario legible en el texto proporcionado; no se integra a la tabla principal. Art. 4 también establece una cuota fija anual de $70.00 cuando no se pueda determinar el impuesto con base en el valor catastral."
+  },
+  "_meta": {
+    "fuente": "txt",
+    "modelo": "gpt-5.4-mini"
+  },
+  "_meta_v2": {
+    "intentos": 1,
+    "requiere_revision": false,
+    "escalado": false,
+    "razon": null,
+    "tokens": {
+      "input": 6296,
+      "output": 434,
+      "cached": 3840
+    },
+    "cvegeo": "31009",
+    "estado": "yucatan",
+    "anio": 2015
+  }
+}

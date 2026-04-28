@@ -1,0 +1,69 @@
+{
+  "predial": {
+    "tipo_esquema": "progresivo",
+    "tabla": [
+      {
+        "n_rango": 1,
+        "inferior": 0.01,
+        "superior": 5000.0,
+        "cuota_fija": 25.0,
+        "tasa_marginal": 0.0002
+      },
+      {
+        "n_rango": 2,
+        "inferior": 5000.0,
+        "superior": 7500.0,
+        "cuota_fija": 30.0,
+        "tasa_marginal": 0.0002
+      },
+      {
+        "n_rango": 3,
+        "inferior": 7500.0,
+        "superior": 10500.0,
+        "cuota_fija": 40.0,
+        "tasa_marginal": 0.0003
+      },
+      {
+        "n_rango": 4,
+        "inferior": 10500.0,
+        "superior": 12500.0,
+        "cuota_fija": 45.0,
+        "tasa_marginal": 0.0003
+      },
+      {
+        "n_rango": 5,
+        "inferior": 12500.0,
+        "superior": 15500.0,
+        "cuota_fija": 50.0,
+        "tasa_marginal": 0.0004
+      },
+      {
+        "n_rango": 6,
+        "inferior": 15500.0,
+        "superior": null,
+        "cuota_fija": 60.0,
+        "tasa_marginal": 0.0004
+      }
+    ],
+    "minimo_predial": null,
+    "comentarios": "Art. 4: tarifa progresiva por valor catastral con cuota fija anual y factor para aplicar al excedente del límite inferior. Tarifa paralela no incluida en la tabla principal: predios destinados a la actividad agropecuaria pagan 10 al millar anual sobre el valor registrado o catastral; también se menciona impuesto con base en frutos civiles (Art. 6): habitacional 3% mensual y comercial 5% mensual sobre la contraprestación, pero ese supuesto corresponde a frutos civiles, no a la mecánica principal de predial sobre valor catastral."
+  },
+  "_meta": {
+    "fuente": "txt",
+    "modelo": "gpt-5.4-mini"
+  },
+  "_meta_v2": {
+    "intentos": 1,
+    "requiere_revision": false,
+    "escalado": false,
+    "razon": null,
+    "tokens": {
+      "input": 6345,
+      "output": 381,
+      "cached": 3840
+    },
+    "cvegeo": "31075",
+    "estado": "yucatan",
+    "anio": 2023
+  }
+}

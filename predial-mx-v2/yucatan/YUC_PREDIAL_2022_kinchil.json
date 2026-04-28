@@ -1,0 +1,35 @@
+{
+  "predial": {
+    "tipo_esquema": "tarifa_millar",
+    "tabla": [
+      {
+        "grupo": "general",
+        "clave": "predio_agropecuario",
+        "descripcion": "Todo predio destinado a la producción agropecuaria",
+        "tasa_millar": 0.01,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      }
+    ],
+    "minimo_predial": null,
+    "comentarios": "Art. 13: el texto no consigna una tabla tarifaria del impuesto predial por rangos o categorías de predio; sólo se identifica una tarifa paralela para predios destinados a la producción agropecuaria de 10 al millar anual sobre el valor registrado o catastral. Las tablas mostradas corresponden a valores catastrales de suelo y construcción, no a la mecánica de cobro del impuesto. Por ello se transcribe únicamente la tarifa expresa detectada y se omite el resto por no ser una tabla fiscal de predial."
+  },
+  "_meta": {
+    "fuente": "txt",
+    "modelo": "gpt-5.4-mini"
+  },
+  "_meta_v2": {
+    "intentos": 2,
+    "requiere_revision": false,
+    "escalado": false,
+    "razon": null,
+    "tokens": {
+      "input": 13383,
+      "output": 484,
+      "cached": 8704
+    },
+    "cvegeo": "31044",
+    "estado": "yucatan",
+    "anio": 2022
+  }
+}

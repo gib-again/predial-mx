@@ -1,0 +1,43 @@
+{
+  "predial": {
+    "tipo_esquema": "tarifa_millar",
+    "tabla": [
+      {
+        "grupo": "general",
+        "clave": "predios_urbanos_suburbanos_rusticos",
+        "descripcion": "Tasa general del impuesto predial para predios urbanos, suburbanos y rústicos",
+        "tasa_millar": 0.002,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": {
+          "monto": 150.0,
+          "periodicidad": "anual",
+          "unidad": "pesos"
+        }
+      }
+    ],
+    "minimo_predial": {
+      "monto": 150.0,
+      "periodicidad": "anual",
+      "unidad": "pesos"
+    },
+    "comentarios": "Art. 10: aplica una tasa general de 2 al millar anual para predios urbanos, suburbanos y rústicos, con tope mínimo de $150.00 anual. El propio artículo agrega incrementos del 100% para predios urbanos no edificados, 50% para predios urbanos con edificación inferior a la quinta parte del valor del terreno, y reglas especiales para fraccionamientos autorizados y lotes no construidos; esas variantes no se desglosan en tabla principal porque el texto base presenta una tasa general y menciona aumentos condicionados, no una tabla separada completa."
+  },
+  "_meta": {
+    "fuente": "txt",
+    "modelo": "gpt-5.4-mini"
+  },
+  "_meta_v2": {
+    "intentos": 1,
+    "requiere_revision": false,
+    "escalado": false,
+    "razon": null,
+    "tokens": {
+      "input": 5319,
+      "output": 271,
+      "cached": 3840
+    },
+    "cvegeo": "28014",
+    "estado": "tamaulipas",
+    "anio": 2016
+  }
+}

@@ -1,0 +1,95 @@
+{
+  "predial": {
+    "tipo_esquema": "tarifa_millar",
+    "tabla": [
+      {
+        "grupo": "urbano",
+        "clave": "urbano_con_edificacion",
+        "descripcion": "Predios urbanos con edificación",
+        "tasa_millar": 1.6,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "urbano",
+        "clave": "urbano_sin_edificacion",
+        "descripcion": "Predios urbanos sin edificaciones",
+        "tasa_millar": 1.9,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "urbano",
+        "clave": "urbano_sin_edificacion_contiguos_bulevares_avenidas_principales_fuera_de_uso_habitacional",
+        "descripcion": "Predios urbanos sin edificaciones contiguos a bulevares o avenidas principales, fuera de uso habitacional",
+        "tasa_millar": 2.2,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "rustico",
+        "clave": "rustico_y_extraccion_ejidal_titulado",
+        "descripcion": "Predios rústicos y predios de extracción ejidal ya titulados",
+        "tasa_millar": 5.0,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "otro",
+        "clave": "industrial_con_edificacion",
+        "descripcion": "Predios industriales con edificación",
+        "tasa_millar": 1.6,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "otro",
+        "clave": "industrial_sin_edificacion",
+        "descripcion": "Predios industriales sin edificaciones",
+        "tasa_millar": 1.9,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "otro",
+        "clave": "comercial_con_edificacion",
+        "descripcion": "Predios comerciales con edificación",
+        "tasa_millar": 1.6,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "otro",
+        "clave": "comercial_sin_edificacion",
+        "descripcion": "Predios comerciales sin edificaciones",
+        "tasa_millar": 1.9,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      }
+    ],
+    "minimo_predial": {
+      "monto": 156.0,
+      "periodicidad": "anual",
+      "unidad": "pesos"
+    },
+    "comentarios": "Art. 2 fracción I: impuesto predial anual calculado multiplicando el valor catastral actualizado por la tasa al millar aplicable según tipo de predio. Se transcriben las tasas para urbanos, rústicos/extracción ejidal, industriales y comerciales. El párrafo de pago bimestral indica que el importe anual calculado se divide entre seis. Los estímulos fiscales de la fracción II se ignoran por instrucción. No se detectan rangos de valor catastral ni tabla progresiva."
+  },
+  "_meta": {
+    "fuente": "txt",
+    "modelo": "gpt-5.4-mini"
+  },
+  "_meta_v2": {
+    "intentos": 1,
+    "requiere_revision": false,
+    "escalado": false,
+    "razon": null,
+    "tokens": {
+      "input": 6884,
+      "output": 596,
+      "cached": 3840
+    },
+    "cvegeo": "05030",
+    "estado": "coahuila",
+    "anio": 2017
+  }
+}

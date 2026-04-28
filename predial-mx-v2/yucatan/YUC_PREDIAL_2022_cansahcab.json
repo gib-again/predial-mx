@@ -1,0 +1,57 @@
+{
+  "predial": {
+    "tipo_esquema": "mixto",
+    "tabla": [
+      {
+        "n_rango": 1,
+        "inferior": 0.0,
+        "superior": 200000.0,
+        "columnas": [
+          {
+            "nombre": "general",
+            "valor": 1.0,
+            "tipo": "cuota_fija",
+            "unidad": "uma"
+          }
+        ]
+      },
+      {
+        "n_rango": 2,
+        "inferior": 200000.0,
+        "superior": null,
+        "columnas": [
+          {
+            "nombre": "general",
+            "valor": 0.00025,
+            "tipo": "tasa_marginal",
+            "unidad": "porcentaje"
+          }
+        ]
+      }
+    ],
+    "minimo_predial": {
+      "monto": 1.0,
+      "periodicidad": "anual",
+      "unidad": "uma"
+    },
+    "comentarios": "Artículo 4 establece una estructura heterogénea para predios determinados con base en valor catastral: para valor catastral igual o menor a 200,000.00 se paga cuota fija de 1 UMA; para la tarifa general del impuesto predial se aplica el factor 0.00025 al valor catastral actualizado. Se clasifica como mixto porque combina una cuota fija y una tasa sobre el valor catastral en brackets. Además, el mismo artículo prevé una tarifa paralela para predios rústicos por superficie: de 1 a 20 metros cuadrados, 2.23 UMA; de 21 a 40 metros cuadrados, 3.34 UMA; de 41 metros cuadrados en adelante, 4.46 UMA, la cual no se incluye en la tabla principal por ser tarifa separada. También señala que cuando no se pueda determinar el pago con base en el valor catastral, se aplicará una cuota fija anual de 1 UMA por predio."
+  },
+  "_meta": {
+    "fuente": "txt",
+    "modelo": "gpt-5.4"
+  },
+  "_meta_v2": {
+    "intentos": 3,
+    "requiere_revision": false,
+    "escalado": true,
+    "razon": "escalado_a_gpt-5.4_tras_2x_mini_fallido",
+    "tokens": {
+      "input": 18759,
+      "output": 1314,
+      "cached": 11520
+    },
+    "cvegeo": "31009",
+    "estado": "yucatan",
+    "anio": 2022
+  }
+}

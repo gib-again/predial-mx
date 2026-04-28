@@ -1,0 +1,79 @@
+{
+  "predial": {
+    "tipo_esquema": "tarifa_millar",
+    "tabla": [
+      {
+        "grupo": "urbano",
+        "clave": "predios_urbanos",
+        "descripcion": "Predios urbanos",
+        "tasa_millar": 0.003,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "rustico",
+        "clave": "predios_rusticos",
+        "descripcion": "Predios rústicos",
+        "tasa_millar": 0.003,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "rustico",
+        "clave": "rusticos_industriales_eolica_ejecucion",
+        "descripcion": "Predios rústicos industriales con explotación de energía renovable (eólica) en ejecución",
+        "tasa_millar": 0.005,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "rustico",
+        "clave": "rusticos_industriales_eolica_desarrollo",
+        "descripcion": "Predios rústicos industriales con explotación de energía renovable (eólica) en desarrollo",
+        "tasa_millar": 0.005,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "rustico",
+        "clave": "rusticos_industriales_eolica_proyecto",
+        "descripcion": "Predios rústicos industriales con explotación de energía renovable (eólica) en proyecto",
+        "tasa_millar": 0.005,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "urbano",
+        "clave": "urbanos_no_edificados_sin_barda",
+        "descripcion": "Predios urbanos no edificados sin barda",
+        "tasa_millar": 0.003,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      }
+    ],
+    "minimo_predial": {
+      "monto": 63.0,
+      "periodicidad": "bimestral",
+      "unidad": "pesos"
+    },
+    "comentarios": "Art. 2: tarifa principal sobre valor catastral con tasas al millar por tipo de predio. Se transcribe además el mínimo predial urbano de $63.00 bimestral y el rústico de $51.00 bimestral como mínimo aplicable; el texto no lo formula como una tabla separada. La Cruz Roja paga 2% del impuesto predial con mínimo de $3.87 por bimestre, pero se trata de un gravamen/afectación adicional no integrado a la mecánica principal del predial, por lo que no se incorpora en la tabla. Los incentivos por pronto pago, discapacidad, beneficencia y empleo, así como gastos de notificación, se ignoran conforme a instrucción."
+  },
+  "_meta": {
+    "fuente": "txt",
+    "modelo": "gpt-5.4-mini"
+  },
+  "_meta_v2": {
+    "intentos": 1,
+    "requiere_revision": false,
+    "escalado": false,
+    "razon": null,
+    "tokens": {
+      "input": 6154,
+      "output": 549,
+      "cached": 3840
+    },
+    "cvegeo": "05006",
+    "estado": "coahuila",
+    "anio": 2023
+  }
+}

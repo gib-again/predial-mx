@@ -1,0 +1,51 @@
+{
+  "predial": {
+    "tipo_esquema": "tarifa_millar",
+    "tabla": [
+      {
+        "grupo": "general",
+        "clave": "urbano_suburbano_edificado",
+        "descripcion": "Inmuebles urbanos y suburbanos con edificaciones, según la antigüedad del valor determinado o modificado",
+        "tasa_millar": 0.0024,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "general",
+        "clave": "urbano_suburbano_sin_edificaciones",
+        "descripcion": "Inmuebles urbanos y suburbanos sin edificaciones, según la antigüedad del valor determinado o modificado",
+        "tasa_millar": 0.0045,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "general",
+        "clave": "rustico",
+        "descripcion": "Inmuebles rústicos, según la antigüedad del valor determinado o modificado",
+        "tasa_millar": 0.0018,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      }
+    ],
+    "minimo_predial": null,
+    "comentarios": "Artículo 4 establece una tarifa por antigüedad del valor catastral con tres grupos: inmuebles urbanos y suburbanos con edificaciones, urbanos y suburbanos sin edificaciones, e inmuebles rústicos. Se transcribe solo la mecánica del impuesto predial; las tablas de valores unitarios de terrenos y construcciones de los artículos 5 y 6 no forman parte de la tasa del impuesto."
+  },
+  "_meta": {
+    "fuente": "txt",
+    "modelo": "gpt-5.4-mini"
+  },
+  "_meta_v2": {
+    "intentos": 1,
+    "requiere_revision": false,
+    "escalado": false,
+    "razon": null,
+    "tokens": {
+      "input": 7427,
+      "output": 316,
+      "cached": 3840
+    },
+    "cvegeo": "11018",
+    "estado": "guanajuato",
+    "anio": 2019
+  }
+}

@@ -1,0 +1,90 @@
+{
+  "predial": {
+    "tipo_esquema": "progresivo",
+    "tabla": [
+      {
+        "n_rango": 1,
+        "inferior": 0.0,
+        "superior": 150000.0,
+        "cuota_fija": 0.0,
+        "tasa_marginal": 0.0024
+      },
+      {
+        "n_rango": 2,
+        "inferior": 150000.0,
+        "superior": 300000.0,
+        "cuota_fija": 360.0,
+        "tasa_marginal": 0.0026
+      },
+      {
+        "n_rango": 3,
+        "inferior": 300000.0,
+        "superior": 450000.0,
+        "cuota_fija": 750.0,
+        "tasa_marginal": 0.0028
+      },
+      {
+        "n_rango": 4,
+        "inferior": 450000.0,
+        "superior": 600000.0,
+        "cuota_fija": 1170.0,
+        "tasa_marginal": 0.003
+      },
+      {
+        "n_rango": 5,
+        "inferior": 600000.0,
+        "superior": 750000.0,
+        "cuota_fija": 1620.0,
+        "tasa_marginal": 0.0032
+      },
+      {
+        "n_rango": 6,
+        "inferior": 750000.0,
+        "superior": 900000.0,
+        "cuota_fija": 2100.0,
+        "tasa_marginal": 0.0034
+      },
+      {
+        "n_rango": 7,
+        "inferior": 900000.0,
+        "superior": 1050000.0,
+        "cuota_fija": 2610.0,
+        "tasa_marginal": 0.0036
+      },
+      {
+        "n_rango": 8,
+        "inferior": 1050000.0,
+        "superior": 1200000.0,
+        "cuota_fija": 3150.0,
+        "tasa_marginal": 0.0038
+      },
+      {
+        "n_rango": 9,
+        "inferior": 1200000.0,
+        "superior": null,
+        "cuota_fija": 3720.0,
+        "tasa_marginal": 0.004
+      }
+    ],
+    "minimo_predial": null,
+    "comentarios": "Tabla principal tomada de la fracción I del Artículo 4: inmuebles urbanos y suburbanos con edificación, con valores determinados o modificados a partir de la entrada en vigor de la ley y hasta el año 2002 inclusive. Se normalizaron los límites contiguos: 0–150000, 150000–300000, etc., dejando superior=null sólo en el último rango. Tarifas paralelas no incluidas en la tabla principal: fracción II del Artículo 4 establece otra tabla progresiva para inmuebles urbanos y suburbanos sin edificaciones, con rangos 0–150000 (cuota fija 0, tasa 0.0045), 150000–300000 (875, 0.0046), 300000–450000 (1365, 0.0047), 450000–600000 (2070, 0.0048), 600000–750000 (2790, 0.0049), 750000–900000 (3525, 0.0050), 900000–1050000 (4275, 0.0051), 1050000–1200000 (5040, 0.0052), y 1200000 en adelante (5820, 0.0053). Fracción III: inmuebles rústicos con o sin edificaciones, fuera de centro de población con aptitud agrícola, ganadera o forestal, pagan tasa fija de 1.8 al millar. Fracción IV: para inmuebles con valores determinados o modificados con anterioridad al año 2002, se establecen tasas paralelas por antigüedad/categoría: urbanos y suburbanos con edificaciones 8 al millar y 13 al millar; urbanos y suburbanos sin edificaciones 15 al millar y 13 al millar; rústicos 6 al millar y 12 al millar, según el periodo indicado en la ley."
+  },
+  "_meta": {
+    "fuente": "txt",
+    "modelo": "gpt-5.4"
+  },
+  "_meta_v2": {
+    "intentos": 3,
+    "requiere_revision": false,
+    "escalado": true,
+    "razon": "escalado_a_gpt-5.4_tras_2x_mini_fallido",
+    "tokens": {
+      "input": 26604,
+      "output": 3519,
+      "cached": 11520
+    },
+    "cvegeo": "11033",
+    "estado": "guanajuato",
+    "anio": 2025
+  }
+}

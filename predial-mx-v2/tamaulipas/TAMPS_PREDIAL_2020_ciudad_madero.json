@@ -1,0 +1,32 @@
+{
+  "predial": {
+    "tipo_esquema": "otro_no_clasificado",
+    "categoria": "segmento_vacio",
+    "descripcion_estructural": "El texto proporcionado no incluye la tabla de tarifas del Artículo 9; únicamente aparece la frase introductoria 'Se aplicará la siguiente tarifa para predios urbanos del municipio' y luego continúa con reglas de incrementos y mínimos. Sin la tabla de cuotas/tasas no es posible clasificar la mecánica de cálculo en una de las variantes tarifarias.",
+    "tabla_cruda": [],
+    "minimo_predial": {
+      "monto": 3.0,
+      "periodicidad": "anual",
+      "unidad": "uma"
+    },
+    "comentarios": "Se detectan mínimos prediales de 3 UMA en zonas precarias o de extrema pobreza y 4 UMA en cualquier otra zona (Artículo 10). La información tarifaria principal del predial urbano está truncada/no visible en el segmento."
+  },
+  "_meta": {
+    "fuente": "txt",
+    "modelo": "gpt-5.4-mini"
+  },
+  "_meta_v2": {
+    "intentos": 1,
+    "requiere_revision": true,
+    "escalado": false,
+    "razon": "clasificado_como_otro_no_clasificado",
+    "tokens": {
+      "input": 5973,
+      "output": 200,
+      "cached": 3840
+    },
+    "cvegeo": "28009",
+    "estado": "tamaulipas",
+    "anio": 2020
+  }
+}

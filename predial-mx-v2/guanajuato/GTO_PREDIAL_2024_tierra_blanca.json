@@ -1,0 +1,37 @@
+{
+  "predial": {
+    "tipo_esquema": "otro_no_clasificado",
+    "categoria": "municipio_sin_impuesto",
+    "descripcion_estructural": "En el segmento proporcionado no aparece una mecánica de cálculo del impuesto predial: sólo se observa un artículo de recurso de revisión para predios sin edificar y un artículo de ajustes tarifarios. No se incluyen tasas, cuotas, brackets ni tabla aplicable al predial.",
+    "tabla_cruda": [
+      {
+        "descripcion": "Artículo 44. Recurso de revisión para inmuebles sin edificar",
+        "valores": "sin tabla de impuesto; referencia a tasa general de inmuebles urbanos y suburbanos"
+      },
+      {
+        "descripcion": "Artículo 45. Ajustes tarifarios",
+        "valores": "desde 0.01 hasta 0.50 -> a la unidad de peso inmediato inferior; desde 0.51 hasta 0.99 -> a la unidad de peso inmediato superior"
+      }
+    ],
+    "minimo_predial": null,
+    "comentarios": "No se detectó la tasa o cuota del impuesto predial en el texto aportado."
+  },
+  "_meta": {
+    "fuente": "txt",
+    "modelo": "gpt-5.4-mini"
+  },
+  "_meta_v2": {
+    "intentos": 1,
+    "requiere_revision": true,
+    "escalado": false,
+    "razon": "clasificado_como_otro_no_clasificado",
+    "tokens": {
+      "input": 5583,
+      "output": 224,
+      "cached": 3840
+    },
+    "cvegeo": "11040",
+    "estado": "guanajuato",
+    "anio": 2024
+  }
+}

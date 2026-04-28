@@ -1,0 +1,51 @@
+{
+  "predial": {
+    "tipo_esquema": "tarifa_millar",
+    "tabla": [
+      {
+        "grupo": "urbano",
+        "clave": "urbano_con_edificaciones",
+        "descripcion": "Inmuebles urbanos y suburbanos con edificaciones",
+        "tasa_millar": 0.0024,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "urbano",
+        "clave": "urbano_sin_edificaciones",
+        "descripcion": "Inmuebles urbanos y suburbanos sin edificaciones",
+        "tasa_millar": 0.00375,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "rustico",
+        "clave": "rustico",
+        "descripcion": "Inmuebles rústicos",
+        "tasa_millar": 0.0018,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      }
+    ],
+    "minimo_predial": null,
+    "comentarios": "Art. 4 contiene una tarifa paralela por antigüedad de construcción para inmuebles con edificaciones: a la entrada en vigor y durante 2002-2019, 2.4 al millar (urbano/suburbano con edificaciones), 3.75 al millar (urbano/suburbano sin edificaciones) y 1.8 al millar (rústicos); para predios con anterioridad a 2002 y hasta 1993, 8 al millar, 15 al millar y 6 al millar; y con anterioridad a 1993, 13 al millar y 12 al millar. No se incorpora esa tarifa paralela en la tabla principal porque el texto OCR está fragmentado y mezcla grupos/columnas, pero sí se transcribe la mecánica dominante anual al millar. Art. 5 y 6 son tablas de valores unitarios y criterios de avalúo, no mecánica tarifaria."
+  },
+  "_meta": {
+    "fuente": "txt",
+    "modelo": "gpt-5.4-mini"
+  },
+  "_meta_v2": {
+    "intentos": 1,
+    "requiere_revision": false,
+    "escalado": false,
+    "razon": null,
+    "tokens": {
+      "input": 7356,
+      "output": 404,
+      "cached": 3840
+    },
+    "cvegeo": "11032",
+    "estado": "guanajuato",
+    "anio": 2020
+  }
+}

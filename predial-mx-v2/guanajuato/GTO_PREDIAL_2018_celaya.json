@@ -1,0 +1,59 @@
+{
+  "predial": {
+    "tipo_esquema": "tarifa_millar",
+    "tabla": [
+      {
+        "grupo": "rustico",
+        "clave": "rusticos_sin_edificaciones_antiguos",
+        "descripcion": "Inmuebles rústicos sin edificaciones: con anterioridad al año de 1993",
+        "tasa_millar": 0.0,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "rustico",
+        "clave": "rusticos_sin_edificaciones_1993_a_2001",
+        "descripcion": "Inmuebles rústicos sin edificaciones: del año 1993 al 2001 inclusive",
+        "tasa_millar": 0.0,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "rustico",
+        "clave": "rusticos_sin_edificaciones_2002_a_2012",
+        "descripcion": "Inmuebles rústicos sin edificaciones: durante los años 2002 y hasta 2012 inclusive",
+        "tasa_millar": 0.0,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "rustico",
+        "clave": "rusticos_sin_edificaciones_posteriores",
+        "descripcion": "Inmuebles rústicos sin edificaciones: posteriores a 2012",
+        "tasa_millar": 0.0,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      }
+    ],
+    "minimo_predial": null,
+    "comentarios": "Artículo 4 del texto proporcionado muestra el encabezado de 'TASAS' para inmuebles rústicos sin edificaciones, pero el OCR está muy deteriorado y no permite leer con certeza los valores numéricos de cada renglón. Se transcribe únicamente la estructura visible como tarifa por categoría de predio; no se incorporan valores no legibles. El resto del texto corresponde a valores unitarios catastrales (Arts. 5 y 6), que se ignoran por ser catastro y no mecánica de cálculo del impuesto."
+  },
+  "_meta": {
+    "fuente": "txt",
+    "modelo": "gpt-5.4-mini"
+  },
+  "_meta_v2": {
+    "intentos": 1,
+    "requiere_revision": false,
+    "escalado": false,
+    "razon": null,
+    "tokens": {
+      "input": 6685,
+      "output": 428,
+      "cached": 3840
+    },
+    "cvegeo": "11007",
+    "estado": "guanajuato",
+    "anio": 2018
+  }
+}

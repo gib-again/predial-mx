@@ -1,0 +1,215 @@
+{
+  "predial": {
+    "tipo_esquema": "mixto",
+    "tabla": [
+      {
+        "n_rango": 1,
+        "inferior": 0.01,
+        "superior": 242307.69,
+        "columnas": [
+          {
+            "nombre": "general",
+            "valor": 0.5406,
+            "tipo": "tasa_millar",
+            "unidad": "al_millar"
+          }
+        ]
+      },
+      {
+        "n_rango": 2,
+        "inferior": 242307.7,
+        "superior": 500000.0,
+        "columnas": [
+          {
+            "nombre": "general",
+            "valor": 200.0,
+            "tipo": "cuota_fija",
+            "unidad": "pesos"
+          },
+          {
+            "nombre": "general",
+            "valor": 0.58,
+            "tipo": "tasa_marginal",
+            "unidad": "al_millar"
+          }
+        ]
+      },
+      {
+        "n_rango": 3,
+        "inferior": 500000.01,
+        "superior": 750000.0,
+        "columnas": [
+          {
+            "nombre": "general",
+            "valor": 387.0,
+            "tipo": "cuota_fija",
+            "unidad": "pesos"
+          },
+          {
+            "nombre": "general",
+            "valor": 0.65,
+            "tipo": "tasa_marginal",
+            "unidad": "al_millar"
+          }
+        ]
+      },
+      {
+        "n_rango": 4,
+        "inferior": 750000.01,
+        "superior": 1000000.0,
+        "columnas": [
+          {
+            "nombre": "general",
+            "valor": 597.0,
+            "tipo": "cuota_fija",
+            "unidad": "pesos"
+          },
+          {
+            "nombre": "general",
+            "valor": 0.73,
+            "tipo": "tasa_marginal",
+            "unidad": "al_millar"
+          }
+        ]
+      },
+      {
+        "n_rango": 5,
+        "inferior": 1000000.01,
+        "superior": 1250000.0,
+        "columnas": [
+          {
+            "nombre": "general",
+            "valor": 829.0,
+            "tipo": "cuota_fija",
+            "unidad": "pesos"
+          },
+          {
+            "nombre": "general",
+            "valor": 0.81,
+            "tipo": "tasa_marginal",
+            "unidad": "al_millar"
+          }
+        ]
+      },
+      {
+        "n_rango": 6,
+        "inferior": 1250000.01,
+        "superior": 1500000.0,
+        "columnas": [
+          {
+            "nombre": "general",
+            "valor": 1086.0,
+            "tipo": "cuota_fija",
+            "unidad": "pesos"
+          },
+          {
+            "nombre": "general",
+            "valor": 0.89,
+            "tipo": "tasa_marginal",
+            "unidad": "al_millar"
+          }
+        ]
+      },
+      {
+        "n_rango": 7,
+        "inferior": 1500000.01,
+        "superior": 1750000.0,
+        "columnas": [
+          {
+            "nombre": "general",
+            "valor": 1367.0,
+            "tipo": "cuota_fija",
+            "unidad": "pesos"
+          },
+          {
+            "nombre": "general",
+            "valor": 0.98,
+            "tipo": "tasa_marginal",
+            "unidad": "al_millar"
+          }
+        ]
+      },
+      {
+        "n_rango": 8,
+        "inferior": 1750000.01,
+        "superior": 2000000.0,
+        "columnas": [
+          {
+            "nombre": "general",
+            "valor": 1675.0,
+            "tipo": "cuota_fija",
+            "unidad": "pesos"
+          },
+          {
+            "nombre": "general",
+            "valor": 1.07,
+            "tipo": "tasa_marginal",
+            "unidad": "al_millar"
+          }
+        ]
+      },
+      {
+        "n_rango": 9,
+        "inferior": 2000000.01,
+        "superior": 2250000.0,
+        "columnas": [
+          {
+            "nombre": "general",
+            "valor": 2008.0,
+            "tipo": "cuota_fija",
+            "unidad": "pesos"
+          },
+          {
+            "nombre": "general",
+            "valor": 1.16,
+            "tipo": "tasa_marginal",
+            "unidad": "al_millar"
+          }
+        ]
+      },
+      {
+        "n_rango": 10,
+        "inferior": 2250000.01,
+        "superior": null,
+        "columnas": [
+          {
+            "nombre": "general",
+            "valor": 2368.0,
+            "tipo": "cuota_fija",
+            "unidad": "pesos"
+          },
+          {
+            "nombre": "general",
+            "valor": 1.25,
+            "tipo": "tasa_marginal",
+            "unidad": "al_millar"
+          }
+        ]
+      }
+    ],
+    "minimo_predial": {
+      "monto": 3.0,
+      "periodicidad": "anual",
+      "unidad": "uma"
+    },
+    "comentarios": "Art. 10 fracc. I establece una tarifa progresiva por valor catastral para inmuebles urbanos y suburbanos con construcciones permanentes y rústicos con y sin construcción, con cuota fija anual y tasa anual sobre el excedente del límite inferior en cada bracket. Art. 10 fracc. II dispone para predios rústicos una tasa anual de 1.5 al millar sobre el valor catastral, como tarifa paralela no incorporada en la tabla principal. Art. 10 fracc. III señala que predios urbanos y suburbanos sin edificaciones pagan la tarifa del artículo aumentada en 100%. Art. 11 establece cuota mínima anual de 3 UMA."
+  },
+  "_meta": {
+    "fuente": "txt",
+    "modelo": "gpt-5.4-mini"
+  },
+  "_meta_v2": {
+    "intentos": 1,
+    "requiere_revision": false,
+    "escalado": false,
+    "razon": null,
+    "tokens": {
+      "input": 5803,
+      "output": 898,
+      "cached": 3840
+    },
+    "cvegeo": "28038",
+    "estado": "tamaulipas",
+    "anio": 2022
+  }
+}

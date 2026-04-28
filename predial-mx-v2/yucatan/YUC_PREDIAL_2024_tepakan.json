@@ -1,0 +1,33 @@
+{
+  "predial": {
+    "tipo_esquema": "tasa_unica",
+    "tabla": [
+      {
+        "descripcion": "Cuota fija de 10.00 pesos más factor de 0.001 sobre el valor catastral",
+        "tasa": 0.001,
+        "base_calculo": "valor_catastral",
+        "unidad": "al_millar"
+      }
+    ],
+    "minimo_predial": null,
+    "comentarios": "Artículo 12: el impuesto predial tendrá una cuota fija de $10.00 más el resultado del factor de 0.001 por el importe del valor catastral que se determine. Se toma como esquema principal la tasa uniforme sobre valor catastral. La cuota fija adicional no puede modelarse en `tasa_unica` según el esquema disponible. Las tablas posteriores de 2012 y 2013 describen valores unitarios de terreno y construcción para determinar el valor catastral, no una tarifa progresiva del impuesto predial."
+  },
+  "_meta": {
+    "fuente": "txt",
+    "modelo": "gpt-5.4"
+  },
+  "_meta_v2": {
+    "intentos": 3,
+    "requiere_revision": false,
+    "escalado": true,
+    "razon": "escalado_a_gpt-5.4_tras_2x_mini_fallido",
+    "tokens": {
+      "input": 20028,
+      "output": 830,
+      "cached": 12544
+    },
+    "cvegeo": "31086",
+    "estado": "yucatan",
+    "anio": 2024
+  }
+}

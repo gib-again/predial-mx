@@ -1,0 +1,21 @@
+{
+  "predial": null,
+  "_meta": {
+    "fuente": "txt",
+    "modelo": "gpt-5.4"
+  },
+  "_meta_v2": {
+    "intentos": 3,
+    "requiere_revision": true,
+    "escalado": true,
+    "razon": "valido_3x_fallido | mini_e1=  • predial.mixto: Value error, brackets 5→6: hueco detectado (superior=15000.0, siguiente inferior=15500.01) | mini_e2=  • predial.mixto: Value error, brackets 5→6: hueco detectado (superior=15000.0, siguiente inferior=15500.01) | full_e3=  • predial.progresivo: Value error, brackets 5→6: hueco detectado (superior=15000.0, siguiente inferior=15500.01)",
+    "tokens": {
+      "input": 17038,
+      "output": 1411,
+      "cached": 12544
+    },
+    "cvegeo": "31019",
+    "estado": "yucatan",
+    "anio": 2022
+  }
+}

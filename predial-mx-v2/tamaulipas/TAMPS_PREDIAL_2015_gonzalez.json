@@ -1,0 +1,47 @@
+{
+  "predial": {
+    "tipo_esquema": "tarifa_millar",
+    "tabla": [
+      {
+        "grupo": "rustico",
+        "clave": "predios_rusticos",
+        "descripcion": "Predios rústicos sobre valor catastral",
+        "tasa_millar": 0.0015,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "urbano",
+        "clave": "predios_urbanos_suburbanos_rusticos",
+        "descripcion": "Predios urbanos, suburbanos y rústicos para el año 2015",
+        "tasa_millar": 0.0015,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      }
+    ],
+    "minimo_predial": {
+      "monto": 3.5,
+      "periodicidad": "anual",
+      "unidad": "vsm"
+    },
+    "comentarios": "Art. 11 establece 1.5 al millar anual para predios rústicos sobre el valor catastral. Art. 12 establece para 2015 una tasa de 1.5 al millar para predios urbanos, suburbanos y rústicos. Art. 10 señala un mínimo anual de 3.5 salarios mínimos; se transcribe como mínimo predial. Se ignora el Art. 13 porque corresponde a avalúos catastrales y no a la mecánica general del impuesto predial."
+  },
+  "_meta": {
+    "fuente": "txt",
+    "modelo": "gpt-5.4-mini"
+  },
+  "_meta_v2": {
+    "intentos": 1,
+    "requiere_revision": false,
+    "escalado": false,
+    "razon": null,
+    "tokens": {
+      "input": 5253,
+      "output": 295,
+      "cached": 3840
+    },
+    "cvegeo": "28012",
+    "estado": "tamaulipas",
+    "anio": 2015
+  }
+}

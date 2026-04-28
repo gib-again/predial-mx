@@ -1,0 +1,55 @@
+{
+  "predial": {
+    "tipo_esquema": "tarifa_millar",
+    "tabla": [
+      {
+        "grupo": "urbano",
+        "clave": "predios_urbanos",
+        "descripcion": "Sobre los predios urbanos",
+        "tasa_millar": 0.005,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "rustico",
+        "clave": "predios_rusticos",
+        "descripcion": "Sobre predios rústicos",
+        "tasa_millar": 0.003,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "otro",
+        "clave": "lotes_baldios_con_maleza",
+        "descripcion": "Sobre Lotes Baldíos con maleza",
+        "tasa_millar": 0.007,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      }
+    ],
+    "minimo_predial": {
+      "monto": 20.52,
+      "periodicidad": "bimestral",
+      "unidad": "pesos"
+    },
+    "comentarios": "Art. 2 establece tarifas separadas al millar para predios urbanos (5 al millar anual), predios rústicos (3 al millar anual) y lotes baldíos con maleza (7 al millar). Se ignoran incentivos/bonificaciones por pago anticipado y descuentos a pensionados/jubilados/adultos mayores/personas con discapacidad por instrucción de extracción."
+  },
+  "_meta": {
+    "fuente": "txt",
+    "modelo": "gpt-5.4-mini"
+  },
+  "_meta_v2": {
+    "intentos": 1,
+    "requiere_revision": false,
+    "escalado": false,
+    "razon": null,
+    "tokens": {
+      "input": 5136,
+      "output": 289,
+      "cached": 3840
+    },
+    "cvegeo": "05020",
+    "estado": "coahuila",
+    "anio": 2021
+  }
+}

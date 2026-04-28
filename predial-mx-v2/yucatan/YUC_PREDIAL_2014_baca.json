@@ -1,0 +1,33 @@
+{
+  "predial": {
+    "tipo_esquema": "tasa_unica",
+    "tabla": [
+      {
+        "descripcion": "Impuesto predial general sobre valor catastral",
+        "tasa": 0.0015,
+        "base_calculo": "valor_catastral",
+        "unidad": "porcentaje"
+      }
+    ],
+    "minimo_predial": null,
+    "comentarios": "Art. 13 establece una tasa única del 0.15% sobre el valor catastral. El texto incluye tablas de valores unitarios de terreno y construcciones, pero son insumos catastrales de base de cálculo, no una mecánica tarifaria separada. Art. 15 contiene un impuesto sobre rentas o frutos civiles (2% habitacional y 2% comercial), que se omite por tratarse de otra base distinta y no de la mecánica del predial sobre valor catastral."
+  },
+  "_meta": {
+    "fuente": "txt",
+    "modelo": "gpt-5.4-mini"
+  },
+  "_meta_v2": {
+    "intentos": 1,
+    "requiere_revision": false,
+    "escalado": false,
+    "razon": null,
+    "tokens": {
+      "input": 6104,
+      "output": 192,
+      "cached": 3840
+    },
+    "cvegeo": "31004",
+    "estado": "yucatan",
+    "anio": 2014
+  }
+}

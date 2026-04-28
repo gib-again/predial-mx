@@ -1,0 +1,37 @@
+{
+  "predial": {
+    "tipo_esquema": "otro_no_clasificado",
+    "categoria": "estructura_no_estandar",
+    "descripcion_estructural": "El texto establece dos mecánicas paralelas para el impuesto predial con bases distintas: una cuota de 15 centavos por metro cuadrado de extensión del predio y, por separado, una tasa de 10 al millar anual sobre el valor registrado o catastral para predios destinados a la producción agropecuaria. No encaja en las variantes disponibles porque la mecánica principal usa base de cálculo por superficie, no una tasa única sobre valor catastral ni una cuota fija simple.",
+    "tabla_cruda": [
+      {
+        "descripcion": "Impuesto predial general",
+        "valores": "15 centavos por m2 que tenga la extensión del predio causante"
+      },
+      {
+        "descripcion": "Predio destinado a la producción agropecuaria",
+        "valores": "10 al millar anual sobre el valor registrado o catastral; sin que la cantidad a pagar resultante exceda a lo establecido por la Legislación Agraria Federal para terrenos ejidales"
+      }
+    ],
+    "minimo_predial": null,
+    "comentarios": "Art. 13 establece una cuota por superficie para el predial general y una tarifa paralela especial para predios destinados a la producción agropecuaria. Se ignora el descuento del Art. 14 por no formar parte de la mecánica base del impuesto."
+  },
+  "_meta": {
+    "fuente": "txt",
+    "modelo": "gpt-5.4"
+  },
+  "_meta_v2": {
+    "intentos": 3,
+    "requiere_revision": true,
+    "escalado": true,
+    "razon": "clasificado_como_otro_no_clasificado_tras_escalacion",
+    "tokens": {
+      "input": 15902,
+      "output": 767,
+      "cached": 13568
+    },
+    "cvegeo": "31064",
+    "estado": "yucatan",
+    "anio": 2010
+  }
+}

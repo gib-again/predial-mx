@@ -1,0 +1,39 @@
+{
+  "predial": {
+    "tipo_esquema": "tarifa_millar",
+    "tabla": [
+      {
+        "grupo": "general",
+        "clave": "general",
+        "descripcion": "Impuesto predial: cuota fija de $10.00 más el factor de 0.001 sobre el valor catastral",
+        "tasa_millar": 0.001,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": {
+          "monto": 10.0,
+          "periodicidad": "anual",
+          "unidad": "pesos"
+        }
+      }
+    ],
+    "minimo_predial": null,
+    "comentarios": "Art. 13 establece una mecánica general única: cuota fija de $10.00 más el resultado del factor de 0.001 aplicado al valor catastral. La tabla de valores unitarios de terreno y construcción se ignora por ser catastro, no tarifa. Art. 14 contiene solo un descuento por pronto pago, que se ignora."
+  },
+  "_meta": {
+    "fuente": "txt",
+    "modelo": "gpt-5.4-mini"
+  },
+  "_meta_v2": {
+    "intentos": 1,
+    "requiere_revision": false,
+    "escalado": false,
+    "razon": null,
+    "tokens": {
+      "input": 5773,
+      "output": 194,
+      "cached": 3840
+    },
+    "cvegeo": "31086",
+    "estado": "yucatan",
+    "anio": 2017
+  }
+}

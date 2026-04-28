@@ -1,0 +1,99 @@
+{
+  "predial": {
+    "tipo_esquema": "cuota_fija_escalonada",
+    "tabla": [
+      {
+        "n_rango": 1,
+        "inferior": 0.0,
+        "superior": 2000.0,
+        "monto": 110.24
+      },
+      {
+        "n_rango": 2,
+        "inferior": 2000.0,
+        "superior": 4000.0,
+        "monto": 132.29
+      },
+      {
+        "n_rango": 3,
+        "inferior": 4000.0,
+        "superior": 6000.0,
+        "monto": 154.34
+      },
+      {
+        "n_rango": 4,
+        "inferior": 6000.0,
+        "superior": 8000.0,
+        "monto": 176.38
+      },
+      {
+        "n_rango": 5,
+        "inferior": 8000.0,
+        "superior": 10000.0,
+        "monto": 198.43
+      },
+      {
+        "n_rango": 6,
+        "inferior": 10000.0,
+        "superior": 15000.0,
+        "monto": 220.48
+      },
+      {
+        "n_rango": 7,
+        "inferior": 15000.0,
+        "superior": 20000.0,
+        "monto": 242.53
+      },
+      {
+        "n_rango": 8,
+        "inferior": 20000.0,
+        "superior": 30000.0,
+        "monto": 330.72
+      },
+      {
+        "n_rango": 9,
+        "inferior": 30000.0,
+        "superior": 40000.0,
+        "monto": 396.86
+      },
+      {
+        "n_rango": 10,
+        "inferior": 40000.0,
+        "superior": 50000.0,
+        "monto": 440.96
+      },
+      {
+        "n_rango": 11,
+        "inferior": 50000.0,
+        "superior": 100000.0,
+        "monto": 661.44
+      },
+      {
+        "n_rango": 12,
+        "inferior": 100000.0,
+        "superior": null,
+        "monto": 992.16
+      }
+    ],
+    "minimo_predial": null,
+    "comentarios": "La tabla principal del Artículo 13 para predios urbanos y rústicos con o sin construcción presenta rangos de valor catastral con cuota fija anual expresada como porcentaje de 1.06 UMA vigente y un factor al excedente igual a 0 en todos los rangos; por ello se clasifica como cuota_fija_escalonada y se transcribe el monto como cuota fija. Se normalizaron los límites de 0.01–2,000.00; 2,000.01–4,000.00; etc., a rangos contiguos 0–2000; 2000–4000; etc. Tarifas paralelas no incluidas en la tabla principal: 'Impuesto predial rústico $4.00 por hectárea' y 'Todo predio destinado a la producción agropecuaria pagará 10 al millar anual sobre el valor registrado o catastral'."
+  },
+  "_meta": {
+    "fuente": "txt",
+    "modelo": "gpt-5.4"
+  },
+  "_meta_v2": {
+    "intentos": 3,
+    "requiere_revision": false,
+    "escalado": true,
+    "razon": "escalado_a_gpt-5.4_tras_2x_mini_fallido",
+    "tokens": {
+      "input": 18431,
+      "output": 1787,
+      "cached": 12544
+    },
+    "cvegeo": "31012",
+    "estado": "yucatan",
+    "anio": 2023
+  }
+}

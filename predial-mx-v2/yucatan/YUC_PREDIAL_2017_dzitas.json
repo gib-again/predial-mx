@@ -1,0 +1,33 @@
+{
+  "predial": {
+    "tipo_esquema": "tasa_unica",
+    "tabla": [
+      {
+        "descripcion": "Impuesto predial general sobre el valor catastral",
+        "tasa": 0.005,
+        "base_calculo": "valor_catastral",
+        "unidad": "al_millar"
+      }
+    ],
+    "minimo_predial": null,
+    "comentarios": "Art. 13: el impuesto predial general se calcula aplicando el factor 0.005 al importe del valor catastral. Se omiten los valores unitarios de terreno y construcción porque son tablas catastrales, no la mecánica del impuesto. Tarifa paralela: todo predio destinado a la producción agropecuaria paga 10 al millar anual sobre el valor registrado o catastral; se describe aquí como secundaria por ser un grupo especial no estructurado por brackets."
+  },
+  "_meta": {
+    "fuente": "txt",
+    "modelo": "gpt-5.4-mini"
+  },
+  "_meta_v2": {
+    "intentos": 1,
+    "requiere_revision": false,
+    "escalado": false,
+    "razon": null,
+    "tokens": {
+      "input": 5996,
+      "output": 182,
+      "cached": 3840
+    },
+    "cvegeo": "31030",
+    "estado": "yucatan",
+    "anio": 2017
+  }
+}

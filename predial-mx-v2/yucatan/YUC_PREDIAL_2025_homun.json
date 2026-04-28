@@ -1,0 +1,37 @@
+{
+  "predial": {
+    "tipo_esquema": "tasa_unica",
+    "tabla": [
+      {
+        "descripcion": "Impuesto predial sobre valor catastral actualizado",
+        "tasa": 0.00025,
+        "base_calculo": "valor_catastral",
+        "unidad": "al_millar"
+      }
+    ],
+    "minimo_predial": {
+      "monto": 50.0,
+      "periodicidad": "anual",
+      "unidad": "pesos"
+    },
+    "comentarios": "Art. 13 numeral 4 establece una tasa única de 0.00025 sobre el valor catastral actualizado (C=(Tabla A + Tabla B)(0.00025)). La tabla A y la tabla B son valores unitarios catastrales de terreno y construcción, no tarifas del impuesto. Art. 13 numeral 5 fija una cuota mínima anual de $50.00 para predios con valor catastral actualizado igual o menor a $200,000.00. Se ignoran descuentos del Art. 14."
+  },
+  "_meta": {
+    "fuente": "txt",
+    "modelo": "gpt-5.4-mini"
+  },
+  "_meta_v2": {
+    "intentos": 1,
+    "requiere_revision": false,
+    "escalado": false,
+    "razon": null,
+    "tokens": {
+      "input": 5915,
+      "output": 206,
+      "cached": 3840
+    },
+    "cvegeo": "31036",
+    "estado": "yucatan",
+    "anio": 2025
+  }
+}

@@ -1,0 +1,201 @@
+{
+  "predial": {
+    "tipo_esquema": "progresivo",
+    "tabla": [
+      {
+        "n_rango": 1,
+        "inferior": 0.0,
+        "superior": 85069.86,
+        "cuota_fija": 105.39,
+        "tasa_marginal": 0.00029
+      },
+      {
+        "n_rango": 2,
+        "inferior": 85069.86,
+        "superior": 104119.54,
+        "cuota_fija": 130.71,
+        "tasa_marginal": 0.00164
+      },
+      {
+        "n_rango": 3,
+        "inferior": 104119.54,
+        "superior": 127435.0,
+        "cuota_fija": 162.12,
+        "tasa_marginal": 0.00167
+      },
+      {
+        "n_rango": 4,
+        "inferior": 127435.0,
+        "superior": 155971.49,
+        "cuota_fija": 201.08,
+        "tasa_marginal": 0.00169
+      },
+      {
+        "n_rango": 5,
+        "inferior": 155971.49,
+        "superior": 190898.14,
+        "cuota_fija": 249.4,
+        "tasa_marginal": 0.00171
+      },
+      {
+        "n_rango": 6,
+        "inferior": 190898.14,
+        "superior": 233645.92,
+        "cuota_fija": 309.33,
+        "tasa_marginal": 0.00173
+      },
+      {
+        "n_rango": 7,
+        "inferior": 233645.92,
+        "superior": 285966.19,
+        "cuota_fija": 383.67,
+        "tasa_marginal": 0.00176
+      },
+      {
+        "n_rango": 8,
+        "inferior": 285966.19,
+        "superior": 350002.52,
+        "cuota_fija": 475.87,
+        "tasa_marginal": 0.00178
+      },
+      {
+        "n_rango": 9,
+        "inferior": 350002.52,
+        "superior": 428378.5,
+        "cuota_fija": 590.23,
+        "tasa_marginal": 0.0018
+      },
+      {
+        "n_rango": 10,
+        "inferior": 428378.5,
+        "superior": 524305.18,
+        "cuota_fija": 732.07,
+        "tasa_marginal": 0.00183
+      },
+      {
+        "n_rango": 11,
+        "inferior": 524305.18,
+        "superior": 641712.71,
+        "cuota_fija": 908.0,
+        "tasa_marginal": 0.00185
+      },
+      {
+        "n_rango": 12,
+        "inferior": 641712.71,
+        "superior": 785411.27,
+        "cuota_fija": 1126.21,
+        "tasa_marginal": 0.00188
+      },
+      {
+        "n_rango": 13,
+        "inferior": 785411.27,
+        "superior": 961288.21,
+        "cuota_fija": 1396.87,
+        "tasa_marginal": 0.0019
+      },
+      {
+        "n_rango": 14,
+        "inferior": 961288.21,
+        "superior": 1176549.23,
+        "cuota_fija": 1732.57,
+        "tasa_marginal": 0.00193
+      },
+      {
+        "n_rango": 15,
+        "inferior": 1176549.23,
+        "superior": 1440013.59,
+        "cuota_fija": 2148.95,
+        "tasa_marginal": 0.00196
+      },
+      {
+        "n_rango": 16,
+        "inferior": 1440013.59,
+        "superior": 1762475.46,
+        "cuota_fija": 2665.4,
+        "tasa_marginal": 0.00198
+      },
+      {
+        "n_rango": 17,
+        "inferior": 1762475.46,
+        "superior": 2157146.13,
+        "cuota_fija": 3305.97,
+        "tasa_marginal": 0.00201
+      },
+      {
+        "n_rango": 18,
+        "inferior": 2157146.13,
+        "superior": 2640195.3,
+        "cuota_fija": 4100.49,
+        "tasa_marginal": 0.00204
+      },
+      {
+        "n_rango": 19,
+        "inferior": 2640195.3,
+        "superior": 3231413.55,
+        "cuota_fija": 5085.96,
+        "tasa_marginal": 0.00206
+      },
+      {
+        "n_rango": 20,
+        "inferior": 3231413.55,
+        "superior": 3955023.14,
+        "cuota_fija": 6308.26,
+        "tasa_marginal": 0.00209
+      },
+      {
+        "n_rango": 21,
+        "inferior": 3955023.14,
+        "superior": 4840670.44,
+        "cuota_fija": 7824.32,
+        "tasa_marginal": 0.00212
+      },
+      {
+        "n_rango": 22,
+        "inferior": 4840670.44,
+        "superior": 5924640.51,
+        "cuota_fija": 9704.73,
+        "tasa_marginal": 0.00215
+      },
+      {
+        "n_rango": 23,
+        "inferior": 5924640.51,
+        "superior": 7251343.72,
+        "cuota_fija": 12037.06,
+        "tasa_marginal": 0.00218
+      },
+      {
+        "n_rango": 24,
+        "inferior": 7251343.72,
+        "superior": 8875135.23,
+        "cuota_fija": 14929.92,
+        "tasa_marginal": 0.0022
+      },
+      {
+        "n_rango": 25,
+        "inferior": 8875135.23,
+        "superior": 999999999.0,
+        "cuota_fija": 18518.02,
+        "tasa_marginal": 0.00222
+      }
+    ],
+    "minimo_predial": null,
+    "comentarios": "Tarifa progresiva por valor catastral. Se normalizaron los límites para hacerlos contiguos (sin huecos): cada inferior inicia en el superior del rango anterior; el primer rango inicia en 0 y el último se deja abierto como rango final equivalente a 999,999,999.00 según el texto original."
+  },
+  "_meta": {
+    "fuente": "txt",
+    "modelo": "gpt-5.4-mini"
+  },
+  "_meta_v2": {
+    "intentos": 2,
+    "requiere_revision": false,
+    "razon": null,
+    "tokens": {
+      "input": 11202,
+      "output": 2367,
+      "cached": 9728
+    },
+    "cvegeo": "22008",
+    "estado": "queretaro",
+    "anio": 2018
+  }
+}

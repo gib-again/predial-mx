@@ -1,0 +1,339 @@
+{
+  "predial": {
+    "tipo_esquema": "mixto",
+    "tabla": [
+      {
+        "n_rango": 1,
+        "inferior": 0.01,
+        "superior": 350000.0,
+        "columnas": [
+          {
+            "nombre": "general",
+            "valor": 0.002,
+            "tipo": "tasa_marginal",
+            "unidad": "al_millar"
+          }
+        ]
+      },
+      {
+        "n_rango": 2,
+        "inferior": 350000.01,
+        "superior": 750000.0,
+        "columnas": [
+          {
+            "nombre": "general",
+            "valor": 0.0021,
+            "tipo": "tasa_marginal",
+            "unidad": "al_millar"
+          }
+        ]
+      },
+      {
+        "n_rango": 3,
+        "inferior": 750000.01,
+        "superior": 1150000.0,
+        "columnas": [
+          {
+            "nombre": "general",
+            "valor": 0.0022,
+            "tipo": "tasa_marginal",
+            "unidad": "al_millar"
+          }
+        ]
+      },
+      {
+        "n_rango": 4,
+        "inferior": 1150000.01,
+        "superior": 1550000.0,
+        "columnas": [
+          {
+            "nombre": "general",
+            "valor": 0.0023,
+            "tipo": "tasa_marginal",
+            "unidad": "al_millar"
+          }
+        ]
+      },
+      {
+        "n_rango": 5,
+        "inferior": 1550000.01,
+        "superior": 1950000.0,
+        "columnas": [
+          {
+            "nombre": "general",
+            "valor": 0.0024,
+            "tipo": "tasa_marginal",
+            "unidad": "al_millar"
+          }
+        ]
+      },
+      {
+        "n_rango": 6,
+        "inferior": 1950000.01,
+        "superior": 2350000.0,
+        "columnas": [
+          {
+            "nombre": "general",
+            "valor": 0.0025,
+            "tipo": "tasa_marginal",
+            "unidad": "al_millar"
+          }
+        ]
+      },
+      {
+        "n_rango": 7,
+        "inferior": 2350000.01,
+        "superior": 2750000.0,
+        "columnas": [
+          {
+            "nombre": "general",
+            "valor": 0.00251,
+            "tipo": "tasa_marginal",
+            "unidad": "al_millar"
+          }
+        ]
+      },
+      {
+        "n_rango": 8,
+        "inferior": 2750000.01,
+        "superior": 3150000.0,
+        "columnas": [
+          {
+            "nombre": "general",
+            "valor": 0.002511,
+            "tipo": "tasa_marginal",
+            "unidad": "al_millar"
+          }
+        ]
+      },
+      {
+        "n_rango": 9,
+        "inferior": 3150000.01,
+        "superior": 3550000.0,
+        "columnas": [
+          {
+            "nombre": "general",
+            "valor": 0.002512,
+            "tipo": "tasa_marginal",
+            "unidad": "al_millar"
+          }
+        ]
+      },
+      {
+        "n_rango": 10,
+        "inferior": 3550000.01,
+        "superior": 4050000.0,
+        "columnas": [
+          {
+            "nombre": "general",
+            "valor": 0.002513,
+            "tipo": "tasa_marginal",
+            "unidad": "al_millar"
+          }
+        ]
+      },
+      {
+        "n_rango": 11,
+        "inferior": 4050000.01,
+        "superior": 4700000.0,
+        "columnas": [
+          {
+            "nombre": "general",
+            "valor": 0.002514,
+            "tipo": "tasa_marginal",
+            "unidad": "al_millar"
+          }
+        ]
+      },
+      {
+        "n_rango": 12,
+        "inferior": 4700000.01,
+        "superior": 5400000.0,
+        "columnas": [
+          {
+            "nombre": "general",
+            "valor": 0.002515,
+            "tipo": "tasa_marginal",
+            "unidad": "al_millar"
+          }
+        ]
+      },
+      {
+        "n_rango": 13,
+        "inferior": 5400000.01,
+        "superior": 6100000.0,
+        "columnas": [
+          {
+            "nombre": "general",
+            "valor": 0.002516,
+            "tipo": "tasa_marginal",
+            "unidad": "al_millar"
+          }
+        ]
+      },
+      {
+        "n_rango": 14,
+        "inferior": 6100000.01,
+        "superior": 6800000.0,
+        "columnas": [
+          {
+            "nombre": "general",
+            "valor": 0.002517,
+            "tipo": "tasa_marginal",
+            "unidad": "al_millar"
+          }
+        ]
+      },
+      {
+        "n_rango": 15,
+        "inferior": 6800000.01,
+        "superior": 7500000.0,
+        "columnas": [
+          {
+            "nombre": "general",
+            "valor": 0.002518,
+            "tipo": "tasa_marginal",
+            "unidad": "al_millar"
+          }
+        ]
+      },
+      {
+        "n_rango": 16,
+        "inferior": 7500000.01,
+        "superior": 8200000.0,
+        "columnas": [
+          {
+            "nombre": "general",
+            "valor": 0.002519,
+            "tipo": "tasa_marginal",
+            "unidad": "al_millar"
+          }
+        ]
+      },
+      {
+        "n_rango": 17,
+        "inferior": 8200000.01,
+        "superior": 8900000.0,
+        "columnas": [
+          {
+            "nombre": "general",
+            "valor": 0.00252,
+            "tipo": "tasa_marginal",
+            "unidad": "al_millar"
+          }
+        ]
+      },
+      {
+        "n_rango": 18,
+        "inferior": 8900000.01,
+        "superior": 9600000.0,
+        "columnas": [
+          {
+            "nombre": "general",
+            "valor": 0.002521,
+            "tipo": "tasa_marginal",
+            "unidad": "al_millar"
+          }
+        ]
+      },
+      {
+        "n_rango": 19,
+        "inferior": 9600000.01,
+        "superior": 10300000.0,
+        "columnas": [
+          {
+            "nombre": "general",
+            "valor": 0.002522,
+            "tipo": "tasa_marginal",
+            "unidad": "al_millar"
+          }
+        ]
+      },
+      {
+        "n_rango": 20,
+        "inferior": 10300000.01,
+        "superior": 12000000.0,
+        "columnas": [
+          {
+            "nombre": "general",
+            "valor": 0.0025221,
+            "tipo": "tasa_marginal",
+            "unidad": "al_millar"
+          }
+        ]
+      },
+      {
+        "n_rango": 21,
+        "inferior": 12000000.01,
+        "superior": 14000000.0,
+        "columnas": [
+          {
+            "nombre": "general",
+            "valor": 0.00252211,
+            "tipo": "tasa_marginal",
+            "unidad": "al_millar"
+          }
+        ]
+      },
+      {
+        "n_rango": 22,
+        "inferior": 14000000.01,
+        "superior": 18000000.0,
+        "columnas": [
+          {
+            "nombre": "general",
+            "valor": 0.00252212,
+            "tipo": "tasa_marginal",
+            "unidad": "al_millar"
+          }
+        ]
+      },
+      {
+        "n_rango": 23,
+        "inferior": 18000000.01,
+        "superior": 22000000.0,
+        "columnas": [
+          {
+            "nombre": "general",
+            "valor": 0.00252213,
+            "tipo": "tasa_marginal",
+            "unidad": "al_millar"
+          }
+        ]
+      },
+      {
+        "n_rango": 24,
+        "inferior": 22000000.01,
+        "superior": null,
+        "columnas": [
+          {
+            "nombre": "general",
+            "valor": 0.00252214,
+            "tipo": "tasa_marginal",
+            "unidad": "al_millar"
+          }
+        ]
+      }
+    ],
+    "minimo_predial": null,
+    "comentarios": "Se transcribe sólo la mecánica principal de la fracción I.a (urbanos y suburbanos con edificaciones) como estructura de brackets con cuota fija + tasa marginal. El texto incluye tarifas paralelas por superficie para urbanos/suburbanos sin edificaciones y una tasa paralela para rústicos (2 al millar; en otras secciones aparece 0.40 al millar), además de otras fracciones por año de valuación; no se mezclan en la tabla principal por ser tarifas paralelas/heterogéneas. La tabla visible del texto está OCR-corrupta en algunos límites y cuotas, pero conserva la secuencia de rangos y tasas marginales."
+  },
+  "_meta": {
+    "fuente": "txt",
+    "modelo": "gpt-5.4-mini"
+  },
+  "_meta_v2": {
+    "intentos": 1,
+    "requiere_revision": false,
+    "escalado": false,
+    "razon": null,
+    "tokens": {
+      "input": 11606,
+      "output": 1447,
+      "cached": 3840
+    },
+    "cvegeo": "11017",
+    "estado": "guanajuato",
+    "anio": 2024
+  }
+}

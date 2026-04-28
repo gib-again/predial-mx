@@ -1,0 +1,37 @@
+{
+  "predial": {
+    "tipo_esquema": "tasa_unica",
+    "tabla": [
+      {
+        "descripcion": "Impuesto predial general sobre valor catastral para las secciones I a IV",
+        "tasa": 0.001,
+        "base_calculo": "valor_catastral",
+        "unidad": "al_millar"
+      }
+    ],
+    "minimo_predial": {
+      "monto": 60.0,
+      "periodicidad": "anual",
+      "unidad": "pesos"
+    },
+    "comentarios": "Art. 13: el impuesto predial se determina multiplicando por 0.001 sobre el valor catastral de la sección I a la sección IV. Además, cuando no se pudiera determinar, se cobra cuota fija de $60.00 anual. La referencia a zona costera (0.010 sobre valor catastral) aparece como tarifa paralela y no se integra en la tabla principal; Art. 15 corresponde a frutos/rentas civiles y se ignora por instrucción al no ser mecánica de predial sobre valor catastral."
+  },
+  "_meta": {
+    "fuente": "txt",
+    "modelo": "gpt-5.4-mini"
+  },
+  "_meta_v2": {
+    "intentos": 1,
+    "requiere_revision": false,
+    "escalado": false,
+    "razon": null,
+    "tokens": {
+      "input": 6261,
+      "output": 215,
+      "cached": 3840
+    },
+    "cvegeo": "31039",
+    "estado": "yucatan",
+    "anio": 2014
+  }
+}

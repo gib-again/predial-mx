@@ -1,0 +1,115 @@
+{
+  "predial": {
+    "tipo_esquema": "tarifa_millar",
+    "tabla": [
+      {
+        "grupo": "urbano",
+        "clave": "urbano_con_edificacion",
+        "descripcion": "Inmuebles urbanos y suburbanos con edificaciones, valor determinado o modificado; a la entrada en vigor de la ley",
+        "tasa_millar": 0.0024,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "urbano",
+        "clave": "urbano_sin_edificacion",
+        "descripcion": "Inmuebles urbanos y suburbanos sin edificaciones; a la entrada en vigor de la ley",
+        "tasa_millar": 0.0045,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "rustico",
+        "clave": "rustico_general",
+        "descripcion": "Inmuebles rústicos; a la entrada en vigor de la ley",
+        "tasa_millar": 0.0018,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "urbano",
+        "clave": "urbano_con_edificacion_2002_2017",
+        "descripcion": "Inmuebles urbanos y suburbanos con edificaciones, durante los años 2002 y hasta el 2017, inclusive",
+        "tasa_millar": 0.0024,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "urbano",
+        "clave": "urbano_sin_edificacion_2002_2017",
+        "descripcion": "Inmuebles urbanos y suburbanos sin edificaciones, durante los años 2002 y hasta el 2017, inclusive",
+        "tasa_millar": 0.0045,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "rustico",
+        "clave": "rustico_2002_2017",
+        "descripcion": "Inmuebles rústicos, durante los años 2002 y hasta el 2017, inclusive",
+        "tasa_millar": 0.0018,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "urbano",
+        "clave": "urbano_con_edificacion_1993_2002",
+        "descripcion": "Inmuebles urbanos y suburbanos con edificaciones, con anterioridad al año 2002 y hasta 1993, inclusive",
+        "tasa_millar": 0.008,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "urbano",
+        "clave": "urbano_sin_edificacion_1993_2002",
+        "descripcion": "Inmuebles urbanos y suburbanos sin edificaciones, con anterioridad al año 2002 y hasta 1993, inclusive",
+        "tasa_millar": 0.015,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "rustico",
+        "clave": "rustico_1993_2002",
+        "descripcion": "Inmuebles rústicos, con anterioridad al año 2002 y hasta 1993, inclusive",
+        "tasa_millar": 0.006,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "urbano",
+        "clave": "urbano_con_edificacion_anterior_1993",
+        "descripcion": "Inmuebles urbanos y suburbanos con edificaciones, con anterioridad al año 1993",
+        "tasa_millar": 0.004,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "urbano",
+        "clave": "urbano_sin_edificacion_anterior_1993",
+        "descripcion": "Inmuebles urbanos y suburbanos sin edificaciones, con anterioridad al año 1993",
+        "tasa_millar": 0.012,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      }
+    ],
+    "minimo_predial": null,
+    "comentarios": "Art. 4: el impuesto predial se calcula anualmente con tasas al millar diferenciadas por tipo de inmueble (urbanos/suburbanos con o sin edificaciones, y rústicos) y por antigüedad del valor determinado o modificado. No se observan rangos de valor catastral, por lo que corresponde a tarifa_millar. Art. 5 contiene valores unitarios de suelo y construcción para avalúo/catastro, no la mecánica del impuesto; se ignora. No se identifican cuotas fijas adicionales ni mínimo predial."
+  },
+  "_meta": {
+    "fuente": "txt",
+    "modelo": "gpt-5.4-mini"
+  },
+  "_meta_v2": {
+    "intentos": 1,
+    "requiere_revision": false,
+    "escalado": false,
+    "razon": null,
+    "tokens": {
+      "input": 7397,
+      "output": 903,
+      "cached": 3840
+    },
+    "cvegeo": "11016",
+    "estado": "guanajuato",
+    "anio": 2018
+  }
+}

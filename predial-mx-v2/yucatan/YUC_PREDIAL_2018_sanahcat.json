@@ -1,0 +1,37 @@
+{
+  "predial": {
+    "tipo_esquema": "otro_no_clasificado",
+    "categoria": "estructura_no_estandar",
+    "descripcion_estructural": "El artículo establece dos mecánicas distintas de impuesto predial sobre bases de cálculo diferentes: una cuota de 15 centavos por m2 de extensión del predio causante y, separadamente, una tasa de 10 al millar anual sobre el valor registrado o catastral para predios destinados a la producción agropecuaria. Esto no encaja en las siete variantes tipadas, porque la mecánica principal no usa valor catastral ni una cuota fija simple anual, sino una tasa por superficie.",
+    "tabla_cruda": [
+      {
+        "descripcion": "Predio causante",
+        "valores": "15 centavos por m2 que tenga la extensión de predio causante"
+      },
+      {
+        "descripcion": "Predio destinado a la producción agropecuaria",
+        "valores": "10 al millar anual sobre el valor registrado o catastral"
+      }
+    ],
+    "minimo_predial": null,
+    "comentarios": "Artículo 13. Se ignora el descuento del 20 % del artículo 14 por ser beneficio de pago anticipado y no formar parte de la mecánica base del impuesto."
+  },
+  "_meta": {
+    "fuente": "txt",
+    "modelo": "gpt-5.4"
+  },
+  "_meta_v2": {
+    "intentos": 3,
+    "requiere_revision": true,
+    "escalado": true,
+    "razon": "clasificado_como_otro_no_clasificado_tras_escalacion",
+    "tokens": {
+      "input": 16040,
+      "output": 734,
+      "cached": 13568
+    },
+    "cvegeo": "31064",
+    "estado": "yucatan",
+    "anio": 2018
+  }
+}

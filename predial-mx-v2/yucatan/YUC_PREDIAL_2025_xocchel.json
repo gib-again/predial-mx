@@ -1,0 +1,37 @@
+{
+  "predial": {
+    "tipo_esquema": "otro_no_clasificado",
+    "categoria": "estructura_no_estandar",
+    "descripcion_estructural": "El texto no contiene una tabla del impuesto predial sobre valor catastral con brackets aplicables; la sección mostrada corresponde principalmente a valores unitarios de terreno y construcción (catastro), que deben ignorarse. Lo único tarifario detectable es el Art. 5 sobre rentas o frutos civiles, con tasas mensuales de 2% y 5% por tipo de predio, pero eso no es la mecánica estándar de predial sobre valor catastral solicitada por el esquema.",
+    "tabla_cruda": [
+      {
+        "descripcion": "Art. 5 Habitacional",
+        "valores": "tasa=2%; base=montos de contraprestación; periodicidad=mensual"
+      },
+      {
+        "descripcion": "Art. 5 Comercial",
+        "valores": "tasa=5%; base=montos de contraprestación; periodicidad=mensual"
+      }
+    ],
+    "minimo_predial": null,
+    "comentarios": "Se ignoraron las tablas de valores unitarios de terreno y construcción. No se encontró una tabla de predial catastral clasificable en las seis variantes restantes."
+  },
+  "_meta": {
+    "fuente": "txt",
+    "modelo": "gpt-5.4-mini"
+  },
+  "_meta_v2": {
+    "intentos": 2,
+    "requiere_revision": true,
+    "escalado": false,
+    "razon": "clasificado_como_otro_no_clasificado",
+    "tokens": {
+      "input": 11671,
+      "output": 508,
+      "cached": 8704
+    },
+    "cvegeo": "31103",
+    "estado": "yucatan",
+    "anio": 2025
+  }
+}

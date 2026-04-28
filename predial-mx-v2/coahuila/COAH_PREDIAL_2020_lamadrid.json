@@ -1,0 +1,47 @@
+{
+  "predial": {
+    "tipo_esquema": "tarifa_millar",
+    "tabla": [
+      {
+        "grupo": "urbano",
+        "clave": "predios_urbanos",
+        "descripcion": "Predios urbanos",
+        "tasa_millar": 5.0,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "rustico",
+        "clave": "predios_rusticos",
+        "descripcion": "Predios rústicos",
+        "tasa_millar": 5.0,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      }
+    ],
+    "minimo_predial": {
+      "monto": 15.6,
+      "periodicidad": "bimestral",
+      "unidad": "pesos"
+    },
+    "comentarios": "Art. 2: el impuesto predial se paga con tasa de 5 al millar anual para predios urbanos y 5 al millar anual para predios rústicos. Además, se establece un mínimo de $15.60 por bimestre. Los incentivos por pago anual anticipado y los beneficios para pensionados/jubilados/adultos mayores/personas con discapacidad e instituciones de beneficencia/educativas no se incluyen por ser bonificaciones, no mecánica de cálculo."
+  },
+  "_meta": {
+    "fuente": "txt",
+    "modelo": "gpt-5.4-mini"
+  },
+  "_meta_v2": {
+    "intentos": 1,
+    "requiere_revision": false,
+    "escalado": false,
+    "razon": null,
+    "tokens": {
+      "input": 20622,
+      "output": 250,
+      "cached": 3840
+    },
+    "cvegeo": "05016",
+    "estado": "coahuila",
+    "anio": 2020
+  }
+}

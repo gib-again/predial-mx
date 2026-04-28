@@ -1,0 +1,63 @@
+{
+  "predial": {
+    "tipo_esquema": "tarifa_millar",
+    "tabla": [
+      {
+        "grupo": "urbano",
+        "clave": "predios_urbanos",
+        "descripcion": "Predios urbanos",
+        "tasa_millar": 1.65,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "urbano",
+        "clave": "lotes_baldios_desmontados",
+        "descripcion": "Predios urbanos, lotes baldíos desmontados",
+        "tasa_millar": 1.65,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "urbano",
+        "clave": "lotes_baldios_con_maleza",
+        "descripcion": "Predios urbanos, lotes baldíos con maleza",
+        "tasa_millar": 3.3,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "rustico",
+        "clave": "predios_rusticos_agostaderos",
+        "descripcion": "Predios rústicos, agostaderos",
+        "tasa_millar": 1.65,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      }
+    ],
+    "minimo_predial": {
+      "monto": 19.61,
+      "periodicidad": "bimestral",
+      "unidad": "pesos"
+    },
+    "comentarios": "Art. 2: la mecánica del impuesto predial se establece como tasa al millar por categoría de predio: urbanos 1.65 al millar anual; urbanos, lotes baldíos desmontados 1.65 al millar anual; urbanos, lotes baldíos con maleza 3.30 al millar anual; rústicos agostaderos 1.65 al millar anual. El texto también prevé que el impuesto no será inferior a $19.61 por bimestre. Los incentivos por pago anual, pensionados/jubilados y generación de empleos se ignoran por instrucción, al ser bonificaciones/estímulos y no parte de la mecánica de cálculo."
+  },
+  "_meta": {
+    "fuente": "txt",
+    "modelo": "gpt-5.4-mini"
+  },
+  "_meta_v2": {
+    "intentos": 1,
+    "requiere_revision": false,
+    "escalado": false,
+    "razon": null,
+    "tokens": {
+      "input": 5680,
+      "output": 416,
+      "cached": 3840
+    },
+    "cvegeo": "05028",
+    "estado": "coahuila",
+    "anio": 2025
+  }
+}

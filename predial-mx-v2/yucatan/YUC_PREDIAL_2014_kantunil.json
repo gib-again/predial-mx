@@ -1,0 +1,35 @@
+{
+  "predial": {
+    "tipo_esquema": "tarifa_millar",
+    "tabla": [
+      {
+        "grupo": "general",
+        "clave": "secciones_1_a_6",
+        "descripcion": "Cuando la base del impuesto predial sea el valor catastral del inmueble, se aplicará a las Secciones 1 a 6 una tasa de 0.25%",
+        "tasa_millar": 0.25,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      }
+    ],
+    "minimo_predial": null,
+    "comentarios": "Art. 13 también establece cuotas fijas separadas: predios urbanos $100.00 y predios rústicos $50.00. No se incluyen en la tabla principal porque el mismo texto posteriormente dispone una tarifa sobre valor catastral de 0.25% para las Secciones 1 a 6, que se toma como la tarifa principal. Además, el texto prevé una tarifa paralela para predios destinados a la producción agropecuaria de 10 al millar anual sobre el valor catastral; tampoco se integra en la tabla principal por ser una tarifa separada para un grupo distinto. Se ignoraron las tablas de valores unitarios de terreno y construcción, así como el impuesto con base en rentas o frutos civiles, por no formar parte de la mecánica principal solicitada."
+  },
+  "_meta": {
+    "fuente": "txt",
+    "modelo": "gpt-5.4"
+  },
+  "_meta_v2": {
+    "intentos": 3,
+    "requiere_revision": false,
+    "escalado": true,
+    "razon": "escalado_a_gpt-5.4_tras_2x_mini_fallido",
+    "tokens": {
+      "input": 19343,
+      "output": 1190,
+      "cached": 13568
+    },
+    "cvegeo": "31042",
+    "estado": "yucatan",
+    "anio": 2014
+  }
+}

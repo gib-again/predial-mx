@@ -1,0 +1,47 @@
+{
+  "predial": {
+    "tipo_esquema": "tarifa_millar",
+    "tabla": [
+      {
+        "grupo": "urbano",
+        "clave": "predios_urbanos_y_suburbanos",
+        "descripcion": "Predios urbanos y suburbanos, tasa anual sobre valor catastral",
+        "tasa_millar": 0.0015,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "rustico",
+        "clave": "predios_rusticos",
+        "descripcion": "Predios rústicos, tasa anual sobre valor catastral",
+        "tasa_millar": 0.0015,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      }
+    ],
+    "minimo_predial": {
+      "monto": 2.0,
+      "periodicidad": "anual",
+      "unidad": "salarios"
+    },
+    "comentarios": "Art. 7: predios urbanos y suburbanos pagan 1.5 al millar anual sobre valor catastral; los predios urbanos no edificados, los urbanos con edificación inferior a la quinta parte del valor del terreno y los lotes de fraccionamientos autorizados tienen incrementos o no aplican aumentos, pero no se presenta una tabla de brackets separada. Art. 8: predios rústicos pagan 1.5 al millar anual sobre valor catastral. Art. 9: el impuesto anual no podrá ser inferior en ningún caso a dos salarios."
+  },
+  "_meta": {
+    "fuente": "txt",
+    "modelo": "gpt-5.4-mini"
+  },
+  "_meta_v2": {
+    "intentos": 2,
+    "requiere_revision": false,
+    "escalado": false,
+    "razon": null,
+    "tokens": {
+      "input": 11036,
+      "output": 677,
+      "cached": 8704
+    },
+    "cvegeo": "28004",
+    "estado": "tamaulipas",
+    "anio": 2016
+  }
+}

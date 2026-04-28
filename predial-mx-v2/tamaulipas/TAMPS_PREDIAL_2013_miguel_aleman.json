@@ -1,0 +1,37 @@
+{
+  "predial": {
+    "tipo_esquema": "otro_no_clasificado",
+    "categoria": "municipio_sin_impuesto",
+    "descripcion_estructural": "El texto sólo establece una cuota mínima anual de tres salarios mínimos para el impuesto predial, pero no contiene tabla, rangos, tasa al millar ni fórmula de cálculo adicional para determinar la base del impuesto. La sección transcrita se limita a bonificaciones y a una cuota mínima, sin mecánica estructural completa del gravamen.",
+    "tabla_cruda": [
+      {
+        "descripcion": "Cuota mínima anual del impuesto predial",
+        "valores": "3 salarios mínimos"
+      }
+    ],
+    "minimo_predial": {
+      "monto": 3.0,
+      "periodicidad": "anual",
+      "unidad": "vsm"
+    },
+    "comentarios": "Se ignoraron las bonificaciones del artículo 39 y 40 conforme a la instrucción. No hay mecánica tarifaria más allá de la cuota mínima anual."
+  },
+  "_meta": {
+    "fuente": "txt",
+    "modelo": "gpt-5.4-mini"
+  },
+  "_meta_v2": {
+    "intentos": 1,
+    "requiere_revision": true,
+    "escalado": false,
+    "razon": "clasificado_como_otro_no_clasificado",
+    "tokens": {
+      "input": 5218,
+      "output": 196,
+      "cached": 3840
+    },
+    "cvegeo": "28025",
+    "estado": "tamaulipas",
+    "anio": 2013
+  }
+}

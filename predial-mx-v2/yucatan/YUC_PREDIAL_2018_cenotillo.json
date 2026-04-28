@@ -1,0 +1,183 @@
+{
+  "predial": {
+    "tipo_esquema": "mixto",
+    "tabla": [
+      {
+        "n_rango": 1,
+        "inferior": 0.01,
+        "superior": 2000.0,
+        "columnas": [
+          {
+            "nombre": "general",
+            "valor": 1.06,
+            "tipo": "tasa_marginal",
+            "unidad": "porcentaje"
+          }
+        ]
+      },
+      {
+        "n_rango": 2,
+        "inferior": 2000.01,
+        "superior": 4000.0,
+        "columnas": [
+          {
+            "nombre": "general",
+            "valor": 1.272,
+            "tipo": "tasa_marginal",
+            "unidad": "porcentaje"
+          }
+        ]
+      },
+      {
+        "n_rango": 3,
+        "inferior": 4000.01,
+        "superior": 6000.0,
+        "columnas": [
+          {
+            "nombre": "general",
+            "valor": 1.484,
+            "tipo": "tasa_marginal",
+            "unidad": "porcentaje"
+          }
+        ]
+      },
+      {
+        "n_rango": 4,
+        "inferior": 6000.01,
+        "superior": 8000.0,
+        "columnas": [
+          {
+            "nombre": "general",
+            "valor": 1.696,
+            "tipo": "tasa_marginal",
+            "unidad": "porcentaje"
+          }
+        ]
+      },
+      {
+        "n_rango": 5,
+        "inferior": 8000.01,
+        "superior": 10000.0,
+        "columnas": [
+          {
+            "nombre": "general",
+            "valor": 1.908,
+            "tipo": "tasa_marginal",
+            "unidad": "porcentaje"
+          }
+        ]
+      },
+      {
+        "n_rango": 6,
+        "inferior": 10000.01,
+        "superior": 15000.0,
+        "columnas": [
+          {
+            "nombre": "general",
+            "valor": 2.12,
+            "tipo": "tasa_marginal",
+            "unidad": "porcentaje"
+          }
+        ]
+      },
+      {
+        "n_rango": 7,
+        "inferior": 15000.01,
+        "superior": 20000.0,
+        "columnas": [
+          {
+            "nombre": "general",
+            "valor": 2.332,
+            "tipo": "tasa_marginal",
+            "unidad": "porcentaje"
+          }
+        ]
+      },
+      {
+        "n_rango": 8,
+        "inferior": 20000.01,
+        "superior": 30000.0,
+        "columnas": [
+          {
+            "nombre": "general",
+            "valor": 3.18,
+            "tipo": "tasa_marginal",
+            "unidad": "porcentaje"
+          }
+        ]
+      },
+      {
+        "n_rango": 9,
+        "inferior": 30000.01,
+        "superior": 40000.0,
+        "columnas": [
+          {
+            "nombre": "general",
+            "valor": 3.816,
+            "tipo": "tasa_marginal",
+            "unidad": "porcentaje"
+          }
+        ]
+      },
+      {
+        "n_rango": 10,
+        "inferior": 40000.01,
+        "superior": 50000.0,
+        "columnas": [
+          {
+            "nombre": "general",
+            "valor": 4.24,
+            "tipo": "tasa_marginal",
+            "unidad": "porcentaje"
+          }
+        ]
+      },
+      {
+        "n_rango": 11,
+        "inferior": 50000.01,
+        "superior": 100000.0,
+        "columnas": [
+          {
+            "nombre": "general",
+            "valor": 6.36,
+            "tipo": "tasa_marginal",
+            "unidad": "porcentaje"
+          }
+        ]
+      },
+      {
+        "n_rango": 12,
+        "inferior": 100000.01,
+        "superior": null,
+        "columnas": [
+          {
+            "nombre": "general",
+            "valor": 9.54,
+            "tipo": "tasa_marginal",
+            "unidad": "porcentaje"
+          }
+        ]
+      }
+    ],
+    "minimo_predial": null,
+    "comentarios": "Art. 13: la tabla principal para predios urbanos y rústicos con o sin construcción presenta rangos de valor catastral con un factor/porcentaje sobre el excedente y además indica que el resultado se incrementará con una cuota fija anual respectiva, pero esa cuota no se desglosa en el texto proporcionado. Se deja fuera de la tabla principal la tarifa paralela de predios rústicos: 'Impuesto predial rústico $3.00 por hectárea'. También se excluye la regla paralela para predios destinados a la producción agropecuaria: 10 al millar anual sobre el valor registrado o catastral, con límite agrario federal."
+  },
+  "_meta": {
+    "fuente": "txt",
+    "modelo": "gpt-5.4-mini"
+  },
+  "_meta_v2": {
+    "intentos": 1,
+    "requiere_revision": false,
+    "escalado": false,
+    "razon": null,
+    "tokens": {
+      "input": 5728,
+      "output": 772,
+      "cached": 3840
+    },
+    "cvegeo": "31012",
+    "estado": "yucatan",
+    "anio": 2018
+  }
+}

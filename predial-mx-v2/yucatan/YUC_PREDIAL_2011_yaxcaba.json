@@ -1,0 +1,28 @@
+{
+  "predial": {
+    "tipo_esquema": "otro_no_clasificado",
+    "categoria": "segmento_vacio",
+    "descripcion_estructural": "El texto proporcionado no contiene la tabla o mecánica de cuotas del Artículo 4; sólo aparece el encabezado y luego una tasa para predios causados sobre rentas o frutos civiles en el Artículo 5, que no corresponde a la mecánica general del impuesto predial. No se puede estructurar la tabla principal sin inventar información.",
+    "tabla_cruda": [],
+    "minimo_predial": null,
+    "comentarios": "Se ignoró el Artículo 5 por tratarse de rentas o frutos civiles, fuera de la mecánica general del predial solicitada."
+  },
+  "_meta": {
+    "fuente": "txt",
+    "modelo": "gpt-5.4-mini"
+  },
+  "_meta_v2": {
+    "intentos": 1,
+    "requiere_revision": true,
+    "escalado": false,
+    "razon": "clasificado_como_otro_no_clasificado",
+    "tokens": {
+      "input": 4946,
+      "output": 160,
+      "cached": 3840
+    },
+    "cvegeo": "31104",
+    "estado": "yucatan",
+    "anio": 2011
+  }
+}

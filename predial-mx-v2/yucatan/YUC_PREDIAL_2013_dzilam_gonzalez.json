@@ -1,0 +1,33 @@
+{
+  "predial": {
+    "tipo_esquema": "cuota_fija_simple",
+    "tabla": [
+      {
+        "descripcion": "Predio urbano",
+        "monto": 80.0,
+        "periodicidad": "anual",
+        "unidad": "pesos"
+      }
+    ],
+    "minimo_predial": null,
+    "comentarios": "Artículo 13 establece una cuota fija anual para predio urbano ($80.00) y otra para predio rústico ($65.00), además de un cobro de $2.00 por hectárea para predios destinados a la producción agropecuaria; también aparece un régimen por rentas o frutos civiles (Artículo 15) que no forma parte de la mecánica del impuesto predial sobre valor/categoría principal y se deja fuera de la tabla principal por ser una tarifa paralela sobre rentas. El segmento contiene varias mecánicas distintas, pero la instrucción exige una sola variante; no se clasifica como tarifa_millar/progresivo/tasa_unica/cuota_fija_escalonada porque no hay tabla por rangos ni tasa uniforme sobre valor catastral."
+  },
+  "_meta": {
+    "fuente": "txt",
+    "modelo": "gpt-5.4-mini"
+  },
+  "_meta_v2": {
+    "intentos": 1,
+    "requiere_revision": false,
+    "escalado": false,
+    "razon": null,
+    "tokens": {
+      "input": 5102,
+      "output": 233,
+      "cached": 3840
+    },
+    "cvegeo": "31029",
+    "estado": "yucatan",
+    "anio": 2013
+  }
+}

@@ -1,0 +1,47 @@
+{
+  "predial": {
+    "tipo_esquema": "tarifa_millar",
+    "tabla": [
+      {
+        "grupo": "urbano",
+        "clave": "predios_urbanos",
+        "descripcion": "Predios urbanos, con o sin edificación",
+        "tasa_millar": 0.004,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "rustico",
+        "clave": "predios_rusticos",
+        "descripcion": "Predios rústicos y predios de extracción ejidal ya titulados, con o sin edificación",
+        "tasa_millar": 0.004,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      }
+    ],
+    "minimo_predial": {
+      "monto": 41.0,
+      "periodicidad": "bimestral",
+      "unidad": "pesos"
+    },
+    "comentarios": "Art. 2 fraccs. I y II: tarifa de 4 al millar anual para predios urbanos y para predios rústicos/predios de extracción ejidal ya titulados. Art. 2 fracc. III: monto mínimo del impuesto predial de $41.00 pesos por bimestre. Art. 2 fracc. IV: para congregaciones, cuota mínima de $244.50 pesos anuales en propiedades de hasta 2,000.00 m2. Las fraccs. V a IX contienen estímulos/incentivos y no se transcriben como mecánica de cálculo."
+  },
+  "_meta": {
+    "fuente": "txt",
+    "modelo": "gpt-5.4-mini"
+  },
+  "_meta_v2": {
+    "intentos": 1,
+    "requiere_revision": false,
+    "escalado": false,
+    "razon": null,
+    "tokens": {
+      "input": 5914,
+      "output": 302,
+      "cached": 3840
+    },
+    "cvegeo": "05004",
+    "estado": "coahuila",
+    "anio": 2017
+  }
+}

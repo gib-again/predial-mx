@@ -1,0 +1,28 @@
+{
+  "predial": {
+    "tipo_esquema": "otro_no_clasificado",
+    "categoria": "municipio_sin_impuesto",
+    "descripcion_estructural": "El texto proporcionado no contiene una tabla o mecánica tarifaria del impuesto predial para San Francisco del Rincón. Únicamente aparecen disposiciones administrativas sobre la tramitación y conservación de la cuota mínima para contribuyentes ya registrados, sin exponer tasas, rangos, cuotas o fórmula de cálculo del predial.",
+    "tabla_cruda": [],
+    "minimo_predial": null,
+    "comentarios": "No se detectó estructura de cálculo del impuesto predial en el segmento aportado; sólo reglas administrativas de aplicación de cuota mínima."
+  },
+  "_meta": {
+    "fuente": "txt",
+    "modelo": "gpt-5.4-mini"
+  },
+  "_meta_v2": {
+    "intentos": 1,
+    "requiere_revision": true,
+    "escalado": false,
+    "razon": "clasificado_como_otro_no_clasificado",
+    "tokens": {
+      "input": 6705,
+      "output": 153,
+      "cached": 3840
+    },
+    "cvegeo": "11031",
+    "estado": "guanajuato",
+    "anio": 2021
+  }
+}

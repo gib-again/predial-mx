@@ -1,0 +1,53 @@
+{
+  "predial": {
+    "tipo_esquema": "mixto",
+    "tabla": [
+      {
+        "n_rango": 1,
+        "inferior": 0.0,
+        "superior": 200000.0,
+        "columnas": [
+          {
+            "nombre": "general",
+            "valor": 50.0,
+            "tipo": "cuota_fija",
+            "unidad": "pesos"
+          }
+        ]
+      },
+      {
+        "n_rango": 2,
+        "inferior": 200000.0,
+        "superior": null,
+        "columnas": [
+          {
+            "nombre": "general",
+            "valor": 0.00025,
+            "tipo": "tasa_marginal",
+            "unidad": "porcentaje"
+          }
+        ]
+      }
+    ],
+    "minimo_predial": null,
+    "comentarios": "Art. 13: Para predios cuyo valor catastral sea igual o menor a $200,000.00 se paga cuota fija de $50.00; para el resto del valor catastral se aplica el factor 0.00025 sobre el importe del valor catastral actualizado. Además, el texto establece una tarifa paralela para predios destinados a la producción agropecuaria: 10 al millar anual sobre el valor registrado o catastral, sin exceder lo permitido por la legislación agraria federal; no se integra en la tabla principal por ser una tarifa separada."
+  },
+  "_meta": {
+    "fuente": "txt",
+    "modelo": "gpt-5.4-mini"
+  },
+  "_meta_v2": {
+    "intentos": 1,
+    "requiere_revision": false,
+    "escalado": false,
+    "razon": null,
+    "tokens": {
+      "input": 7285,
+      "output": 260,
+      "cached": 3840
+    },
+    "cvegeo": "31093",
+    "estado": "yucatan",
+    "anio": 2024
+  }
+}

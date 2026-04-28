@@ -1,0 +1,115 @@
+{
+  "predial": {
+    "tipo_esquema": "progresivo",
+    "tabla": [
+      {
+        "n_rango": 1,
+        "inferior": 0.01,
+        "superior": 1552285.8,
+        "cuota_fija": 0.0,
+        "tasa_marginal": 0.00234
+      },
+      {
+        "n_rango": 2,
+        "inferior": 1552285.81,
+        "superior": 3104571.6,
+        "cuota_fija": 3777.64,
+        "tasa_marginal": 0.00267
+      },
+      {
+        "n_rango": 3,
+        "inferior": 3104571.61,
+        "superior": 6209143.2,
+        "cuota_fija": 7926.59,
+        "tasa_marginal": 0.00292
+      },
+      {
+        "n_rango": 4,
+        "inferior": 6209143.21,
+        "superior": 12418286.4,
+        "cuota_fija": 16999.39,
+        "tasa_marginal": 0.00316
+      },
+      {
+        "n_rango": 5,
+        "inferior": 12418286.41,
+        "superior": 24836572.8,
+        "cuota_fija": 36630.22,
+        "tasa_marginal": 0.00341
+      },
+      {
+        "n_rango": 6,
+        "inferior": 24836572.81,
+        "superior": 49673145.6,
+        "cuota_fija": 78991.48,
+        "tasa_marginal": 0.00365
+      },
+      {
+        "n_rango": 7,
+        "inferior": 49673145.61,
+        "superior": 99346291.2,
+        "cuota_fija": 169654.9,
+        "tasa_marginal": 0.00389
+      },
+      {
+        "n_rango": 8,
+        "inferior": 99346291.21,
+        "superior": 198692582.4,
+        "cuota_fija": 362863.57,
+        "tasa_marginal": 0.00414
+      },
+      {
+        "n_rango": 9,
+        "inferior": 198692582.41,
+        "superior": 397385164.8,
+        "cuota_fija": 774077.74,
+        "tasa_marginal": 0.00438
+      },
+      {
+        "n_rango": 10,
+        "inferior": 397385164.81,
+        "superior": 794770329.6,
+        "cuota_fija": 1644033.34,
+        "tasa_marginal": 0.00462
+      },
+      {
+        "n_rango": 11,
+        "inferior": 794770329.61,
+        "superior": 1589540659.2,
+        "cuota_fija": 3480652.2,
+        "tasa_marginal": 0.00487
+      },
+      {
+        "n_rango": 12,
+        "inferior": 1589540659.21,
+        "superior": null,
+        "cuota_fija": 7347305.23,
+        "tasa_marginal": 0.00511
+      }
+    ],
+    "minimo_predial": {
+      "monto": 0.0,
+      "periodicidad": "anual",
+      "unidad": "pesos"
+    },
+    "comentarios": "Art. 5, fracción I, inciso a) (urbanos, suburbanos y rústicos con edificaciones) y fracción II, inciso a) (misma estructura para 2016-2020): tabla de brackets de valor fiscal con cuota fija + tasa marginal sobre excedente, por lo que se clasifica como progresivo. Se omiten los incisos b) de fracciones I, II y III porque son tarifas paralelas con superficie de terreno y múltiples tasas/categorías; además el propio texto refiere su cálculo como tasas progresivas. El texto también indica una cuota mínima anual del artículo 43, pero no se proporciona en el segmento transcrito."
+  },
+  "_meta": {
+    "fuente": "txt",
+    "modelo": "gpt-5.4-mini"
+  },
+  "_meta_v2": {
+    "intentos": 1,
+    "requiere_revision": false,
+    "escalado": false,
+    "razon": null,
+    "tokens": {
+      "input": 10465,
+      "output": 734,
+      "cached": 3840
+    },
+    "cvegeo": "11020",
+    "estado": "guanajuato",
+    "anio": 2026
+  }
+}

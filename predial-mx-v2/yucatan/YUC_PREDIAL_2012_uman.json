@@ -1,0 +1,182 @@
+{
+  "predial": {
+    "tipo_esquema": "mixto",
+    "tabla": [
+      {
+        "n_rango": 1,
+        "inferior": 0.0,
+        "superior": 10000.0,
+        "columnas": [
+          {
+            "nombre": "zona_6",
+            "valor": 100.0,
+            "tipo": "cuota_fija",
+            "unidad": "pesos"
+          },
+          {
+            "nombre": "zona_7",
+            "valor": 70.0,
+            "tipo": "cuota_fija",
+            "unidad": "pesos"
+          },
+          {
+            "nombre": "zona_8",
+            "valor": 60.0,
+            "tipo": "cuota_fija",
+            "unidad": "pesos"
+          },
+          {
+            "nombre": "zona_9",
+            "valor": 50.0,
+            "tipo": "cuota_fija",
+            "unidad": "pesos"
+          }
+        ]
+      },
+      {
+        "n_rango": 2,
+        "inferior": 10000.0,
+        "superior": 30000.0,
+        "columnas": [
+          {
+            "nombre": "zona_6",
+            "valor": 115.0,
+            "tipo": "cuota_fija",
+            "unidad": "pesos"
+          },
+          {
+            "nombre": "zona_7",
+            "valor": 85.0,
+            "tipo": "cuota_fija",
+            "unidad": "pesos"
+          },
+          {
+            "nombre": "zona_8",
+            "valor": 75.0,
+            "tipo": "cuota_fija",
+            "unidad": "pesos"
+          },
+          {
+            "nombre": "zona_9",
+            "valor": 55.0,
+            "tipo": "cuota_fija",
+            "unidad": "pesos"
+          }
+        ]
+      },
+      {
+        "n_rango": 3,
+        "inferior": 30000.0,
+        "superior": 50000.0,
+        "columnas": [
+          {
+            "nombre": "zona_6",
+            "valor": 135.0,
+            "tipo": "cuota_fija",
+            "unidad": "pesos"
+          },
+          {
+            "nombre": "zona_7",
+            "valor": 90.0,
+            "tipo": "cuota_fija",
+            "unidad": "pesos"
+          },
+          {
+            "nombre": "zona_8",
+            "valor": 80.0,
+            "tipo": "cuota_fija",
+            "unidad": "pesos"
+          },
+          {
+            "nombre": "zona_9",
+            "valor": 60.0,
+            "tipo": "cuota_fija",
+            "unidad": "pesos"
+          }
+        ]
+      },
+      {
+        "n_rango": 4,
+        "inferior": 50000.0,
+        "superior": 70000.0,
+        "columnas": [
+          {
+            "nombre": "zona_6",
+            "valor": 140.0,
+            "tipo": "cuota_fija",
+            "unidad": "pesos"
+          },
+          {
+            "nombre": "zona_7",
+            "valor": 100.0,
+            "tipo": "cuota_fija",
+            "unidad": "pesos"
+          },
+          {
+            "nombre": "zona_8",
+            "valor": 90.0,
+            "tipo": "cuota_fija",
+            "unidad": "pesos"
+          },
+          {
+            "nombre": "zona_9",
+            "valor": 80.0,
+            "tipo": "cuota_fija",
+            "unidad": "pesos"
+          }
+        ]
+      },
+      {
+        "n_rango": 5,
+        "inferior": 70000.0,
+        "superior": null,
+        "columnas": [
+          {
+            "nombre": "zona_6",
+            "valor": 145.0,
+            "tipo": "cuota_fija",
+            "unidad": "pesos"
+          },
+          {
+            "nombre": "zona_7",
+            "valor": 110.0,
+            "tipo": "cuota_fija",
+            "unidad": "pesos"
+          },
+          {
+            "nombre": "zona_8",
+            "valor": 100.0,
+            "tipo": "cuota_fija",
+            "unidad": "pesos"
+          },
+          {
+            "nombre": "zona_9",
+            "valor": 90.0,
+            "tipo": "cuota_fija",
+            "unidad": "pesos"
+          }
+        ]
+      }
+    ],
+    "minimo_predial": null,
+    "comentarios": "Art. 13 establece una tasa general del 0.20% sobre el valor catastral; sin embargo, para los predios ubicados en las zonas 6, 7, 8 y 9 se aplican tablas anexas con estructura de brackets por superficie y fórmula heterogénea 'cuota fija + (VC x factor)'. Se transcribe como mixto porque en cada zona hay rangos por superficie con cuota fija en pesos y un factor/tasa marginal sobre el valor catastral, y además existen varias zonas paralelas (6, 7, 8 y 9). La tabla principal captura los brackets comunes de esas zonas; la tasa general del 0.20% queda como regla secundaria para los predios no ubicados en dichas zonas. Art. 15 (rentas o frutos civiles) se ignora por no corresponder al impuesto predial."
+  },
+  "_meta": {
+    "fuente": "txt",
+    "modelo": "gpt-5.4-mini"
+  },
+  "_meta_v2": {
+    "intentos": 1,
+    "requiere_revision": false,
+    "escalado": false,
+    "razon": null,
+    "tokens": {
+      "input": 9461,
+      "output": 782,
+      "cached": 3840
+    },
+    "cvegeo": "31101",
+    "estado": "yucatan",
+    "anio": 2012
+  }
+}

@@ -1,0 +1,63 @@
+{
+  "predial": {
+    "tipo_esquema": "tarifa_millar",
+    "tabla": [
+      {
+        "grupo": "urbano",
+        "clave": "industrial",
+        "descripcion": "Predios urbanos industriales",
+        "tasa_millar": 2.7,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "urbano",
+        "clave": "comercial",
+        "descripcion": "Predios urbanos comerciales",
+        "tasa_millar": 2.6,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "urbano",
+        "clave": "habitacional",
+        "descripcion": "Predios urbanos habitacionales",
+        "tasa_millar": 2.5,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "rustico",
+        "clave": "rustico",
+        "descripcion": "Predios rústicos",
+        "tasa_millar": 3.0,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      }
+    ],
+    "minimo_predial": {
+      "monto": 41.0,
+      "periodicidad": "bimestral",
+      "unidad": "pesos"
+    },
+    "comentarios": "Art. 2: los predios urbanos pagan 2.7 al millar (industrial), 2.6 al millar (comercial) y 2.5 al millar (habitacional) anual; predios rústicos pagan 3 al millar anual. También se establece que los predios sub urbano habitacional o solares enclavados en congregaciones/ejidos pagan $41.00 por bimestre y que el monto del impuesto predial no será inferior a $41.00 por bimestre; se captura como mínimo predial. Los incentivos del Art. 3 y Art. 4 se ignoran por no formar parte de la mecánica base del impuesto."
+  },
+  "_meta": {
+    "fuente": "txt",
+    "modelo": "gpt-5.4-mini"
+  },
+  "_meta_v2": {
+    "intentos": 2,
+    "requiere_revision": false,
+    "escalado": false,
+    "razon": null,
+    "tokens": {
+      "input": 13753,
+      "output": 859,
+      "cached": 8704
+    },
+    "cvegeo": "05033",
+    "estado": "coahuila",
+    "anio": 2024
+  }
+}

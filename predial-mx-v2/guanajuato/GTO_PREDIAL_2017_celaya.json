@@ -1,0 +1,75 @@
+{
+  "predial": {
+    "tipo_esquema": "tarifa_millar",
+    "tabla": [
+      {
+        "grupo": "general",
+        "clave": "urbano_suburbano_general",
+        "descripcion": "Inmuebles urbanos y suburbanos",
+        "tasa_millar": 0.003,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "rustico",
+        "clave": "rustico_sin_edificaciones",
+        "descripcion": "Rústicos sin edificaciones",
+        "tasa_millar": 0.0002,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "general",
+        "clave": "construcciones_ant_2017",
+        "descripcion": "Inmuebles urbanos y suburbanos: construcciones durante los años 2013 a 2017 inclusive",
+        "tasa_millar": 0.000398,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "general",
+        "clave": "construcciones_2002_2012",
+        "descripcion": "Inmuebles urbanos y suburbanos: construcciones durante los años 2002 a 2012",
+        "tasa_millar": 0.005,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "general",
+        "clave": "construcciones_1993_2001",
+        "descripcion": "Inmuebles urbanos y suburbanos: construcciones con anterioridad a 2002 y hasta 1993 inclusive",
+        "tasa_millar": 0.008,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "general",
+        "clave": "construcciones_anteriores_1993",
+        "descripcion": "Inmuebles urbanos y suburbanos: construcciones anteriores a 1993",
+        "tasa_millar": 0.013,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      }
+    ],
+    "minimo_predial": null,
+    "comentarios": "Artículo 4 contiene tarifas paralelas por tipo y antigüedad: para inmuebles urbanos y suburbanos se establecen tasas al millar diferenciadas según la antigüedad de la construcción; para rústicos sin edificaciones se fija 0.20 al millar. También se transcribieron las tasas que aparecen en el texto OCR para los distintos periodos de antigüedad de construcciones urbanas y suburbanas. Se ignoran valores unitarios de catastro del artículo 5 y 6 por no ser mecánica de cálculo del impuesto."
+  },
+  "_meta": {
+    "fuente": "txt",
+    "modelo": "gpt-5.4-mini"
+  },
+  "_meta_v2": {
+    "intentos": 1,
+    "requiere_revision": false,
+    "escalado": false,
+    "razon": null,
+    "tokens": {
+      "input": 8039,
+      "output": 508,
+      "cached": 3840
+    },
+    "cvegeo": "11007",
+    "estado": "guanajuato",
+    "anio": 2017
+  }
+}

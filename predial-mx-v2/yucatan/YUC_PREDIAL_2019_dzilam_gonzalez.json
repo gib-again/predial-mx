@@ -1,0 +1,59 @@
+{
+  "predial": {
+    "tipo_esquema": "tarifa_millar",
+    "tabla": [
+      {
+        "grupo": "urbano",
+        "clave": "secciones_1_a_4",
+        "descripcion": "Secciones 1 a 4: impuesto predial sobre valor catastral",
+        "tasa_millar": 0.002,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "urbano",
+        "clave": "predio_urbano_sin_valor_catastral",
+        "descripcion": "Cuota fija cuando no se pudiera determinar el valor catastral",
+        "tasa_millar": 0.0,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": {
+          "monto": 80.0,
+          "periodicidad": "anual",
+          "unidad": "pesos"
+        }
+      },
+      {
+        "grupo": "rustico",
+        "clave": "predio_rustico_sin_valor_catastral",
+        "descripcion": "Cuota fija cuando no se pudiera determinar el valor catastral",
+        "tasa_millar": 0.0,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": {
+          "monto": 65.0,
+          "periodicidad": "anual",
+          "unidad": "pesos"
+        }
+      }
+    ],
+    "minimo_predial": null,
+    "comentarios": "Art. 13: el impuesto predial se determina aplicando la tasa de 0.20% sobre el valor catastral de las secciones 1 a 4. Cuando no se pueda determinar el valor, se cobra cuota fija de $80.00 para predio urbano y $65.00 para predio rústico. Se ignoran la tabla de valores unitarios, descuentos del Art. 14 y el impuesto sobre rentas/frutos civiles del Art. 15."
+  },
+  "_meta": {
+    "fuente": "txt",
+    "modelo": "gpt-5.4-mini"
+  },
+  "_meta_v2": {
+    "intentos": 1,
+    "requiere_revision": false,
+    "escalado": false,
+    "razon": null,
+    "tokens": {
+      "input": 6221,
+      "output": 359,
+      "cached": 3840
+    },
+    "cvegeo": "31029",
+    "estado": "yucatan",
+    "anio": 2019
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "predial": {
+    "tipo_esquema": "otro_no_clasificado",
+    "categoria": "municipio_sin_impuesto",
+    "descripcion_estructural": "El segmento proporcionado sólo muestra renglones de recaudación/partidas presupuestales (propiedad urbana, suburbana y rústica) con montos agregados, pero no contiene la mecánica de determinación del impuesto predial: no hay tasas, cuotas, rangos de valor catastral ni tablas aplicables. No es posible transcribir una fórmula de cálculo a partir de este fragmento.",
+    "tabla_cruda": [
+      {
+        "descripcion": "IMPUESTO SOBRE LA PROPIEDAD URBANA, SUBURBANA Y RUSTICA",
+        "valores": "100.962.220,06"
+      },
+      {
+        "descripcion": "IMPUESTOS SOBRE LA PROPIEDAD URBANA",
+        "valores": "94.279.384,72"
+      },
+      {
+        "descripcion": "IMPUESTO SOBRE LA PROPIEDAD RUSTICA",
+        "valores": "6.682.835,34"
+      }
+    ],
+    "minimo_predial": null,
+    "comentarios": "Segmento sin mecánica tarifaria detectable; sólo contiene importes globales por concepto."
+  },
+  "_meta": {
+    "fuente": "txt",
+    "modelo": "gpt-5.4-mini"
+  },
+  "_meta_v2": {
+    "intentos": 1,
+    "requiere_revision": true,
+    "escalado": false,
+    "razon": "clasificado_como_otro_no_clasificado",
+    "tokens": {
+      "input": 5007,
+      "output": 251,
+      "cached": 3840
+    },
+    "cvegeo": "28027",
+    "estado": "tamaulipas",
+    "anio": 2013
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "predial": {
+    "tipo_esquema": "tarifa_millar",
+    "tabla": [
+      {
+        "grupo": "urbano",
+        "clave": "predios_urbanos",
+        "descripcion": "Predios urbanos, suburbanos y rústicos: tasa general urbana sobre valor catastral; los supuestos de predios urbanos no edificados y de edificación inferior a la quinta parte del valor del terreno se tratan como incrementos sobre esta tasa en el texto.",
+        "tasa_millar": 0.0,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "rustico",
+        "clave": "predios_rusticos",
+        "descripcion": "Predios rústicos sobre el valor catastral.",
+        "tasa_millar": 0.0015,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      }
+    ],
+    "minimo_predial": null,
+    "comentarios": "Art. 9 establece una tasa para predios urbanos/suburbanos/rústicos con aumentos del 100% y 50% en ciertos supuestos urbanos, pero el texto transcrito no consigna un porcentaje/tasa base numérica para la parte urbana; sólo aparece explícitamente en Art. 10 la tasa de 1.5 al millar anual para predios rústicos. Se deja la tarifa urbana como referencia textual sin inventar valor. Los supuestos de aumento para predios urbanos no edificados y con edificación inferior a la quinta parte del valor del terreno se mencionan en el artículo, pero no se cuantifican aquí."
+  },
+  "_meta": {
+    "fuente": "txt",
+    "modelo": "gpt-5.4-mini"
+  },
+  "_meta_v2": {
+    "intentos": 1,
+    "requiere_revision": false,
+    "escalado": false,
+    "razon": null,
+    "tokens": {
+      "input": 5259,
+      "output": 331,
+      "cached": 3840
+    },
+    "cvegeo": "28029",
+    "estado": "tamaulipas",
+    "anio": 2020
+  }
+}

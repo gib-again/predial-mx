@@ -1,0 +1,360 @@
+{
+  "predial": {
+    "tipo_esquema": "mixto",
+    "tabla": [
+      {
+        "n_rango": 1,
+        "inferior": 0.01,
+        "superior": 85000.0,
+        "columnas": [
+          {
+            "nombre": "urbano_suburbano_edificado",
+            "valor": 1.5,
+            "tipo": "tasa_millar",
+            "unidad": "al_millar"
+          },
+          {
+            "nombre": "urbano_suburbano_baldio",
+            "valor": 3.0,
+            "tipo": "tasa_millar",
+            "unidad": "al_millar"
+          },
+          {
+            "nombre": "urbano_suburbano_con_edificacion_inferior_20_por_ciento",
+            "valor": 2.25,
+            "tipo": "tasa_millar",
+            "unidad": "al_millar"
+          },
+          {
+            "nombre": "predios_sin_construccion_en_fraccionamiento_autorizado_primero_2_anos",
+            "valor": 1.5,
+            "tipo": "tasa_millar",
+            "unidad": "al_millar"
+          },
+          {
+            "nombre": "adquirientes_de_lotes_sin_construccion_en_fraccionamiento_2_anos",
+            "valor": 3.0,
+            "tipo": "tasa_millar",
+            "unidad": "al_millar"
+          }
+        ]
+      },
+      {
+        "n_rango": 2,
+        "inferior": 85000.01,
+        "superior": 100000.0,
+        "columnas": [
+          {
+            "nombre": "urbano_suburbano_edificado",
+            "valor": 1.6,
+            "tipo": "tasa_millar",
+            "unidad": "al_millar"
+          },
+          {
+            "nombre": "urbano_suburbano_baldio",
+            "valor": 3.2,
+            "tipo": "tasa_millar",
+            "unidad": "al_millar"
+          },
+          {
+            "nombre": "urbano_suburbano_con_edificacion_inferior_20_por_ciento",
+            "valor": 2.4,
+            "tipo": "tasa_millar",
+            "unidad": "al_millar"
+          },
+          {
+            "nombre": "predios_sin_construccion_en_fraccionamiento_autorizado_primero_2_anos",
+            "valor": 1.5,
+            "tipo": "tasa_millar",
+            "unidad": "al_millar"
+          },
+          {
+            "nombre": "adquirientes_de_lotes_sin_construccion_en_fraccionamiento_2_anos",
+            "valor": 3.2,
+            "tipo": "tasa_millar",
+            "unidad": "al_millar"
+          }
+        ]
+      },
+      {
+        "n_rango": 3,
+        "inferior": 100000.01,
+        "superior": 200000.0,
+        "columnas": [
+          {
+            "nombre": "urbano_suburbano_edificado",
+            "valor": 1.7,
+            "tipo": "tasa_millar",
+            "unidad": "al_millar"
+          },
+          {
+            "nombre": "urbano_suburbano_baldio",
+            "valor": 3.4,
+            "tipo": "tasa_millar",
+            "unidad": "al_millar"
+          },
+          {
+            "nombre": "urbano_suburbano_con_edificacion_inferior_20_por_ciento",
+            "valor": 2.55,
+            "tipo": "tasa_millar",
+            "unidad": "al_millar"
+          },
+          {
+            "nombre": "predios_sin_construccion_en_fraccionamiento_autorizado_primero_2_anos",
+            "valor": 1.5,
+            "tipo": "tasa_millar",
+            "unidad": "al_millar"
+          },
+          {
+            "nombre": "adquirientes_de_lotes_sin_construccion_en_fraccionamiento_2_anos",
+            "valor": 3.4,
+            "tipo": "tasa_millar",
+            "unidad": "al_millar"
+          }
+        ]
+      },
+      {
+        "n_rango": 4,
+        "inferior": 200000.01,
+        "superior": 300000.0,
+        "columnas": [
+          {
+            "nombre": "urbano_suburbano_edificado",
+            "valor": 1.8,
+            "tipo": "tasa_millar",
+            "unidad": "al_millar"
+          },
+          {
+            "nombre": "urbano_suburbano_baldio",
+            "valor": 3.6,
+            "tipo": "tasa_millar",
+            "unidad": "al_millar"
+          },
+          {
+            "nombre": "urbano_suburbano_con_edificacion_inferior_20_por_ciento",
+            "valor": 2.7,
+            "tipo": "tasa_millar",
+            "unidad": "al_millar"
+          },
+          {
+            "nombre": "predios_sin_construccion_en_fraccionamiento_autorizado_primero_2_anos",
+            "valor": 1.5,
+            "tipo": "tasa_millar",
+            "unidad": "al_millar"
+          },
+          {
+            "nombre": "adquirientes_de_lotes_sin_construccion_en_fraccionamiento_2_anos",
+            "valor": 3.6,
+            "tipo": "tasa_millar",
+            "unidad": "al_millar"
+          }
+        ]
+      },
+      {
+        "n_rango": 5,
+        "inferior": 300000.01,
+        "superior": 400000.0,
+        "columnas": [
+          {
+            "nombre": "urbano_suburbano_edificado",
+            "valor": 2.0,
+            "tipo": "tasa_millar",
+            "unidad": "al_millar"
+          },
+          {
+            "nombre": "urbano_suburbano_baldio",
+            "valor": 4.0,
+            "tipo": "tasa_millar",
+            "unidad": "al_millar"
+          },
+          {
+            "nombre": "urbano_suburbano_con_edificacion_inferior_20_por_ciento",
+            "valor": 3.0,
+            "tipo": "tasa_millar",
+            "unidad": "al_millar"
+          },
+          {
+            "nombre": "predios_sin_construccion_en_fraccionamiento_autorizado_primero_2_anos",
+            "valor": 1.5,
+            "tipo": "tasa_millar",
+            "unidad": "al_millar"
+          },
+          {
+            "nombre": "adquirientes_de_lotes_sin_construccion_en_fraccionamiento_2_anos",
+            "valor": 4.0,
+            "tipo": "tasa_millar",
+            "unidad": "al_millar"
+          }
+        ]
+      },
+      {
+        "n_rango": 6,
+        "inferior": 400000.01,
+        "superior": 500000.0,
+        "columnas": [
+          {
+            "nombre": "urbano_suburbano_edificado",
+            "valor": 2.2,
+            "tipo": "tasa_millar",
+            "unidad": "al_millar"
+          },
+          {
+            "nombre": "urbano_suburbano_baldio",
+            "valor": 4.4,
+            "tipo": "tasa_millar",
+            "unidad": "al_millar"
+          },
+          {
+            "nombre": "urbano_suburbano_con_edificacion_inferior_20_por_ciento",
+            "valor": 3.3,
+            "tipo": "tasa_millar",
+            "unidad": "al_millar"
+          },
+          {
+            "nombre": "predios_sin_construccion_en_fraccionamiento_autorizado_primero_2_anos",
+            "valor": 1.5,
+            "tipo": "tasa_millar",
+            "unidad": "al_millar"
+          },
+          {
+            "nombre": "adquirientes_de_lotes_sin_construccion_en_fraccionamiento_2_anos",
+            "valor": 4.4,
+            "tipo": "tasa_millar",
+            "unidad": "al_millar"
+          }
+        ]
+      },
+      {
+        "n_rango": 7,
+        "inferior": 500000.01,
+        "superior": 600000.0,
+        "columnas": [
+          {
+            "nombre": "urbano_suburbano_edificado",
+            "valor": 2.4,
+            "tipo": "tasa_millar",
+            "unidad": "al_millar"
+          },
+          {
+            "nombre": "urbano_suburbano_baldio",
+            "valor": 4.8,
+            "tipo": "tasa_millar",
+            "unidad": "al_millar"
+          },
+          {
+            "nombre": "urbano_suburbano_con_edificacion_inferior_20_por_ciento",
+            "valor": 3.6,
+            "tipo": "tasa_millar",
+            "unidad": "al_millar"
+          },
+          {
+            "nombre": "predios_sin_construccion_en_fraccionamiento_autorizado_primero_2_anos",
+            "valor": 1.5,
+            "tipo": "tasa_millar",
+            "unidad": "al_millar"
+          },
+          {
+            "nombre": "adquirientes_de_lotes_sin_construccion_en_fraccionamiento_2_anos",
+            "valor": 4.8,
+            "tipo": "tasa_millar",
+            "unidad": "al_millar"
+          }
+        ]
+      },
+      {
+        "n_rango": 8,
+        "inferior": 600000.01,
+        "superior": 700000.0,
+        "columnas": [
+          {
+            "nombre": "urbano_suburbano_edificado",
+            "valor": 2.6,
+            "tipo": "tasa_millar",
+            "unidad": "al_millar"
+          },
+          {
+            "nombre": "urbano_suburbano_baldio",
+            "valor": 5.2,
+            "tipo": "tasa_millar",
+            "unidad": "al_millar"
+          },
+          {
+            "nombre": "urbano_suburbano_con_edificacion_inferior_20_por_ciento",
+            "valor": 3.9,
+            "tipo": "tasa_millar",
+            "unidad": "al_millar"
+          },
+          {
+            "nombre": "predios_sin_construccion_en_fraccionamiento_autorizado_primero_2_anos",
+            "valor": 1.5,
+            "tipo": "tasa_millar",
+            "unidad": "al_millar"
+          },
+          {
+            "nombre": "adquirientes_de_lotes_sin_construccion_en_fraccionamiento_2_anos",
+            "valor": 5.2,
+            "tipo": "tasa_millar",
+            "unidad": "al_millar"
+          }
+        ]
+      },
+      {
+        "n_rango": 9,
+        "inferior": 700000.01,
+        "superior": null,
+        "columnas": [
+          {
+            "nombre": "urbano_suburbano_edificado",
+            "valor": 2.8,
+            "tipo": "tasa_millar",
+            "unidad": "al_millar"
+          },
+          {
+            "nombre": "urbano_suburbano_baldio",
+            "valor": 5.6,
+            "tipo": "tasa_millar",
+            "unidad": "al_millar"
+          },
+          {
+            "nombre": "urbano_suburbano_con_edificacion_inferior_20_por_ciento",
+            "valor": 4.2,
+            "tipo": "tasa_millar",
+            "unidad": "al_millar"
+          },
+          {
+            "nombre": "predios_sin_construccion_en_fraccionamiento_autorizado_primero_2_anos",
+            "valor": 1.5,
+            "tipo": "tasa_millar",
+            "unidad": "al_millar"
+          },
+          {
+            "nombre": "adquirientes_de_lotes_sin_construccion_en_fraccionamiento_2_anos",
+            "valor": 5.6,
+            "tipo": "tasa_millar",
+            "unidad": "al_millar"
+          }
+        ]
+      }
+    ],
+    "minimo_predial": null,
+    "comentarios": "Art. 10 fracc. I contiene una tabla progresiva para predios urbanos y suburbanos con cuota fija y tasa anual sobre el excedente. Art. 10 fracc. II establece tarifa paralela de 1.5 al millar anual para predios rústicos sobre el valor catastral; la fracc. III aplica esa misma tasa con aumento de 100% para baldíos; la fracc. IV con aumento de 50% para predios con edificación inferior al 20%; fraccs. V y VI también remiten a la tasa de la fracc. II con aumento de 100% en supuestos de fraccionamientos. Se integran en una estructura mixta por coexistencia de grupos con reglas de tasa distintas sobre la misma base catastral."
+  },
+  "_meta": {
+    "fuente": "txt",
+    "modelo": "gpt-5.4-mini"
+  },
+  "_meta_v2": {
+    "intentos": 1,
+    "requiere_revision": false,
+    "escalado": false,
+    "razon": null,
+    "tokens": {
+      "input": 6002,
+      "output": 2055,
+      "cached": 3840
+    },
+    "cvegeo": "28003",
+    "estado": "tamaulipas",
+    "anio": 2015
+  }
+}

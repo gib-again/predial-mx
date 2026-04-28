@@ -1,0 +1,61 @@
+{
+  "predial": {
+    "tipo_esquema": "otro_no_clasificado",
+    "categoria": "estructura_no_estandar",
+    "descripcion_estructural": "El texto contiene varias mecánicas distintas del impuesto predial: una fórmula general con factor 0.00025 sobre valor catastral, una cuota fija de 1 UMA para predios con valor catastral igual o menor a 200,000, una tabla de cuotas en UMA para predios rústicos por superficie, y además una tabla aparte para predial sobre rentas o frutos civiles. No existe una sola tabla homogénea que encaje limpiamente en tarifa_millar, progresivo, cuota fija escalonada o mixto sin mezclar bases de cálculo distintas.",
+    "tabla_cruda": [
+      {
+        "descripcion": "Factor general sobre valor catastral",
+        "valores": "C = (Tabla A + Tabla B) x 0.00025"
+      },
+      {
+        "descripcion": "Cuota fija para predios con valor catastral <= 200,000",
+        "valores": "1 unidad de medida y actualización"
+      },
+      {
+        "descripcion": "Predios rústicos por superficie 1 a 20 m2",
+        "valores": "2.23 UMA"
+      },
+      {
+        "descripcion": "Predios rústicos por superficie 21 a 40 m2",
+        "valores": "3.34 UMA"
+      },
+      {
+        "descripcion": "Predios rústicos por superficie 41 m2 en adelante",
+        "valores": "4.46 UMA"
+      },
+      {
+        "descripcion": "Cuando no se pueda determinar el pago con base en valor catastral",
+        "valores": "1 UMA anual por predio"
+      },
+      {
+        "descripcion": "Predial sobre rentas o frutos civiles, habitacional",
+        "valores": "4% sobre el monto de la contraprestación"
+      },
+      {
+        "descripcion": "Predial sobre rentas o frutos civiles, comercial",
+        "valores": "5% sobre el monto de la contraprestación"
+      }
+    ],
+    "minimo_predial": null,
+    "comentarios": "Se dejó fuera la tabla de valores unitarios de terreno y construcción porque es catastro, no tarifa. Hay tarifas paralelas y bases de cálculo heterogéneas (valor catastral, superficie, rentas/frutos civiles, cuota fija en UMA), por lo que no se fuerza una clasificación única."
+  },
+  "_meta": {
+    "fuente": "txt",
+    "modelo": "gpt-5.4-mini"
+  },
+  "_meta_v2": {
+    "intentos": 2,
+    "requiere_revision": true,
+    "escalado": false,
+    "razon": "clasificado_como_otro_no_clasificado",
+    "tokens": {
+      "input": 12257,
+      "output": 932,
+      "cached": 7680
+    },
+    "cvegeo": "31009",
+    "estado": "yucatan",
+    "anio": 2023
+  }
+}

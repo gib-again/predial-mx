@@ -1,0 +1,28 @@
+{
+  "predial": {
+    "tipo_esquema": "otro_no_clasificado",
+    "categoria": "municipio_sin_impuesto",
+    "descripcion_estructural": "En el texto proporcionado sólo aparece la estimación global del rubro 'Impuesto predial' dentro del artículo 1, pero no se incluye la sección normativa o tabla de cálculo del impuesto predial. El segmento está vacío respecto de la mecánica tarifaria, por lo que no es posible clasificarlo en una de las seis variantes estructurales.",
+    "tabla_cruda": [],
+    "minimo_predial": null,
+    "comentarios": "No se detectó mecánica de cálculo del predial en el fragmento proporcionado."
+  },
+  "_meta": {
+    "fuente": "txt",
+    "modelo": "gpt-5.4-mini"
+  },
+  "_meta_v2": {
+    "intentos": 1,
+    "requiere_revision": true,
+    "escalado": false,
+    "razon": "clasificado_como_otro_no_clasificado",
+    "tokens": {
+      "input": 6241,
+      "output": 151,
+      "cached": 3840
+    },
+    "cvegeo": "11028",
+    "estado": "guanajuato",
+    "anio": 2026
+  }
+}

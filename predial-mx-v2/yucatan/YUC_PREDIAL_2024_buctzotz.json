@@ -1,0 +1,33 @@
+{
+  "predial": {
+    "tipo_esquema": "tasa_unica",
+    "tabla": [
+      {
+        "descripcion": "Impuesto predial general sobre el valor catastral",
+        "tasa": 0.0016,
+        "base_calculo": "valor_catastral",
+        "unidad": "porcentaje"
+      }
+    ],
+    "minimo_predial": null,
+    "comentarios": "Art. 4 establece una tasa única del 0.16% sobre el valor catastral para el cálculo del impuesto predial general. Art. 5 contiene una tarifa paralela para predios destinados a la producción agropecuaria: 10 al millar anual sobre el valor registrado o catastral; no se incluye en la tabla principal por ser un supuesto específico distinto. Se ignoran descuentos del Art. 6."
+  },
+  "_meta": {
+    "fuente": "txt",
+    "modelo": "gpt-5.4-mini"
+  },
+  "_meta_v2": {
+    "intentos": 1,
+    "requiere_revision": false,
+    "escalado": false,
+    "razon": null,
+    "tokens": {
+      "input": 6200,
+      "output": 169,
+      "cached": 3840
+    },
+    "cvegeo": "31006",
+    "estado": "yucatan",
+    "anio": 2024
+  }
+}

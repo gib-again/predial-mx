@@ -1,0 +1,69 @@
+{
+  "predial": {
+    "tipo_esquema": "cuota_fija_escalonada",
+    "tabla": [
+      {
+        "n_rango": 1,
+        "inferior": 0.0,
+        "superior": 4000.0,
+        "monto": 4.0
+      },
+      {
+        "n_rango": 2,
+        "inferior": 4000.0,
+        "superior": 5500.0,
+        "monto": 7.0
+      },
+      {
+        "n_rango": 3,
+        "inferior": 5500.0,
+        "superior": 6500.0,
+        "monto": 10.0
+      },
+      {
+        "n_rango": 4,
+        "inferior": 6500.0,
+        "superior": 7500.0,
+        "monto": 13.0
+      },
+      {
+        "n_rango": 5,
+        "inferior": 7500.0,
+        "superior": 8500.0,
+        "monto": 16.0
+      },
+      {
+        "n_rango": 6,
+        "inferior": 8500.0,
+        "superior": 10000.0,
+        "monto": 20.0
+      },
+      {
+        "n_rango": 7,
+        "inferior": 10000.0,
+        "superior": null,
+        "monto": 22.0
+      }
+    ],
+    "minimo_predial": null,
+    "comentarios": "Artículo 13: la mecánica del impuesto predial para la base catastral se presenta en una tabla por rangos de valor catastral con una cuota fija anual por tramo. Aunque el último renglón muestra un 'factor para aplicar el excedente del límite inferior' de 0.003, los demás tramos tienen factor 0; además el texto no estructura una tasa marginal positiva por brackets, por lo que se transcribe como cuota_fija_escalonada. No se incluye la tabla de valores unitarios de terreno/construcción porque es catastro, no tarifa. Artículo 15 establece una tarifa paralela de 2% sobre rentas o frutos civiles mensuales para casas habitación y actividades comerciales; no se integra en la tabla principal por ser una base distinta."
+  },
+  "_meta": {
+    "fuente": "txt",
+    "modelo": "gpt-5.4-mini"
+  },
+  "_meta_v2": {
+    "intentos": 1,
+    "requiere_revision": false,
+    "escalado": false,
+    "razon": null,
+    "tokens": {
+      "input": 6525,
+      "output": 369,
+      "cached": 3840
+    },
+    "cvegeo": "31078",
+    "estado": "yucatan",
+    "anio": 2012
+  }
+}

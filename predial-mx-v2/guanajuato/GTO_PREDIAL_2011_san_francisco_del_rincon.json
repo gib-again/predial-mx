@@ -1,0 +1,51 @@
+{
+  "predial": {
+    "tipo_esquema": "tarifa_millar",
+    "tabla": [
+      {
+        "grupo": "urbano",
+        "clave": "urbanos_suburbanos_con_edificaciones",
+        "descripcion": "Inmuebles urbanos y suburbanos con edificaciones; valor determinado o modificado: a la entrada en vigor de la presente Ley, durante 2002-2010 inclusive, con anterioridad a 2002 y hasta 1993 inclusive, y con anterioridad a 1993.",
+        "tasa_millar": 0.00375,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "urbano",
+        "clave": "urbanos_suburbanos_sin_edificaciones",
+        "descripcion": "Inmuebles urbanos y suburbanos sin edificaciones; valor determinado o modificado: a la entrada en vigor de la presente Ley, durante 2002-2010 inclusive, con anterioridad a 2002 y hasta 1993 inclusive, y con anterioridad a 1993.",
+        "tasa_millar": 0.00375,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "rustico",
+        "clave": "rusticos",
+        "descripcion": "Inmuebles rústicos; valor determinado o modificado: a la entrada en vigor de la presente Ley, durante 2002-2010 inclusive, con anterioridad a 2002 y hasta 1993 inclusive, y con anterioridad a 1993.",
+        "tasa_millar": 0.0015,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      }
+    ],
+    "minimo_predial": null,
+    "comentarios": "Artículo 4 establece tarifas al millar diferenciadas por tipo de inmueble y por momento de determinación/modificación del valor catastral. Para la mecánica principal se transcriben las tasas vigentes; además, el propio artículo incluye tasas históricas para valuaciones anteriores: 8 al millar (urbanos/suburbanos con edificaciones), 15 al millar (urbanos/suburbanos sin edificaciones) y 6 al millar (rústicos) para anteriores a 2002 y hasta 1993; y 13 al millar / 13 al millar / 12 al millar para anteriores a 1993. No se incluye la tabla de valores unitarios de los artículos 5 y 6 porque corresponde a catastro/avalúos, no a la mecánica tarifaria del impuesto."
+  },
+  "_meta": {
+    "fuente": "txt",
+    "modelo": "gpt-5.4-mini"
+  },
+  "_meta_v2": {
+    "intentos": 1,
+    "requiere_revision": false,
+    "escalado": false,
+    "razon": null,
+    "tokens": {
+      "input": 7421,
+      "output": 521,
+      "cached": 3840
+    },
+    "cvegeo": "11031",
+    "estado": "guanajuato",
+    "anio": 2011
+  }
+}

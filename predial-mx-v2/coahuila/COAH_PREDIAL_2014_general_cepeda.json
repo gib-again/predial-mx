@@ -1,0 +1,63 @@
+{
+  "predial": {
+    "tipo_esquema": "tarifa_millar",
+    "tabla": [
+      {
+        "grupo": "urbano",
+        "clave": "predios_urbanos_no_baldios",
+        "descripcion": "Predios urbanos no baldíos",
+        "tasa_millar": 0.005,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "urbano",
+        "clave": "predios_urbanos_baldios",
+        "descripcion": "Predios baldíos",
+        "tasa_millar": 0.00133,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "urbano",
+        "clave": "predios_urbanos_baldios_centro",
+        "descripcion": "Predios baldíos en el centro",
+        "tasa_millar": 0.0015,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "rustico",
+        "clave": "predios_rusticos",
+        "descripcion": "Predios rústicos",
+        "tasa_millar": 0.003,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      }
+    ],
+    "minimo_predial": {
+      "monto": 42.0,
+      "periodicidad": "bimestral",
+      "unidad": "pesos"
+    },
+    "comentarios": "Art. 2, fraccs. I y II: tasas al millar anuales para predios urbanos no baldíos (hasta 5 al millar), baldíos (1.33 al millar), baldíos en el centro (1.5 al millar) y rústicos (3 al millar). Fracc. III establece un mínimo predial de $42.00 por bimestre. Fracc. IV prevé una regla separada para predios ejidales: 3% sobre el valor de su producción anual comercializada; se describe como tarifa paralela no incluida en la tabla principal. Se ignoran incentivos/bonificaciones de las fraccs. V y VI."
+  },
+  "_meta": {
+    "fuente": "txt",
+    "modelo": "gpt-5.4-mini"
+  },
+  "_meta_v2": {
+    "intentos": 1,
+    "requiere_revision": false,
+    "escalado": false,
+    "razon": null,
+    "tokens": {
+      "input": 5266,
+      "output": 413,
+      "cached": 3840
+    },
+    "cvegeo": "05011",
+    "estado": "coahuila",
+    "anio": 2014
+  }
+}

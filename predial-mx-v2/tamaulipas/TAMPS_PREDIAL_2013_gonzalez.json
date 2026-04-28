@@ -1,0 +1,47 @@
+{
+  "predial": {
+    "tipo_esquema": "tarifa_millar",
+    "tabla": [
+      {
+        "grupo": "rustico",
+        "clave": "predios_rusticos",
+        "descripcion": "Predios rústicos sobre el valor catastral",
+        "tasa_millar": 0.0015,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "urbano",
+        "clave": "predios_urbanos_suburbanos_y_rusticos",
+        "descripcion": "Predios urbanos, suburbanos y rústicos para el año 2013",
+        "tasa_millar": 0.0015,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      }
+    ],
+    "minimo_predial": {
+      "monto": 3.5,
+      "periodicidad": "anual",
+      "unidad": "vsm"
+    },
+    "comentarios": "Art. 11: predios rústicos pagan 1.5 al millar anual sobre valor catastral. Art. 12: para 2013 la tasa es de 1.5 al millar para predios urbanos, suburbanos y rústicos. Art. 10 establece que el impuesto anual no podrá ser inferior a 3.5 salarios mínimos. Se ignora el Art. 13 (avalúos catastrales) por no ser mecánica del impuesto predial."
+  },
+  "_meta": {
+    "fuente": "txt",
+    "modelo": "gpt-5.4-mini"
+  },
+  "_meta_v2": {
+    "intentos": 1,
+    "requiere_revision": false,
+    "escalado": false,
+    "razon": null,
+    "tokens": {
+      "input": 6071,
+      "output": 286,
+      "cached": 3840
+    },
+    "cvegeo": "28012",
+    "estado": "tamaulipas",
+    "anio": 2013
+  }
+}

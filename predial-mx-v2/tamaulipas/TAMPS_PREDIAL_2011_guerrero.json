@@ -1,0 +1,39 @@
+{
+  "predial": {
+    "tipo_esquema": "tarifa_millar",
+    "tabla": [
+      {
+        "grupo": "urbano",
+        "clave": "predios_urbanos_suburbanos_y_rusticos",
+        "descripcion": "Tasa general sobre valor catastral para predios urbanos, suburbanos y rústicos",
+        "tasa_millar": 0.002,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      }
+    ],
+    "minimo_predial": {
+      "monto": 150.0,
+      "periodicidad": "anual",
+      "unidad": "pesos"
+    },
+    "comentarios": "Art. 8: impuesto anual sobre el valor catastral de inmuebles urbanos, suburbanos y rústicos con tasa de 2 al millar. Se establece un mínimo de $150.00. Las reglas de aumento para predios urbanos no edificados, edificación inferior a la quinta parte del terreno, fraccionamientos autorizados y lotes no construidos son ajustes/bonificaciones sobre la tasa general y no se desglosan como tarifas separadas. Art. 9 corresponde a impuesto sobre adquisiciones inmuebles y no se incluye."
+  },
+  "_meta": {
+    "fuente": "txt",
+    "modelo": "gpt-5.4-mini"
+  },
+  "_meta_v2": {
+    "intentos": 1,
+    "requiere_revision": false,
+    "escalado": false,
+    "razon": null,
+    "tokens": {
+      "input": 5413,
+      "output": 240,
+      "cached": 3840
+    },
+    "cvegeo": "28014",
+    "estado": "tamaulipas",
+    "anio": 2011
+  }
+}

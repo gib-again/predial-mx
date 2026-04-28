@@ -1,0 +1,76 @@
+{
+  "predial": {
+    "tipo_esquema": "progresivo",
+    "tabla": [
+      {
+        "n_rango": 1,
+        "inferior": 0.01,
+        "superior": 500000.0,
+        "cuota_fija": 0.0,
+        "tasa_marginal": 0.00234
+      },
+      {
+        "n_rango": 2,
+        "inferior": 500000.01,
+        "superior": 650000.0,
+        "cuota_fija": 1170.0,
+        "tasa_marginal": 0.00254
+      },
+      {
+        "n_rango": 3,
+        "inferior": 650000.01,
+        "superior": 800000.0,
+        "cuota_fija": 1551.0,
+        "tasa_marginal": 0.00274
+      },
+      {
+        "n_rango": 4,
+        "inferior": 800000.01,
+        "superior": 1000000.0,
+        "cuota_fija": 1962.0,
+        "tasa_marginal": 0.00294
+      },
+      {
+        "n_rango": 5,
+        "inferior": 1000000.01,
+        "superior": 1200000.0,
+        "cuota_fija": 2550.0,
+        "tasa_marginal": 0.00314
+      },
+      {
+        "n_rango": 6,
+        "inferior": 1200000.01,
+        "superior": 1500000.0,
+        "cuota_fija": 3178.0,
+        "tasa_marginal": 0.00334
+      },
+      {
+        "n_rango": 7,
+        "inferior": 1500000.01,
+        "superior": null,
+        "cuota_fija": 4180.0,
+        "tasa_marginal": 0.00354
+      }
+    ],
+    "minimo_predial": null,
+    "comentarios": "Art. 4, fracción I: inmuebles urbanos con edificaciones. Art. 4, fracción II: inmuebles suburbanos con edificaciones pagan tasa del 0.207% sobre el valor fiscal (predial bimestral = Vf*t/6; anual = IPB*6). Art. 4, fracción III: inmuebles urbanos y suburbanos sin edificaciones usan la tabla de tasas indicada en el texto (bimestral = Vf*t/6; anual = IPB*6). Art. 4, fracción IV: inmuebles rústicos pagan tasa del 0.18% sobre el valor fiscal (bimestral = Vf*t/6; anual = IPB*6). Se omiten tablas de valores unitarios de los artículos 5 y 6 por ser valuación catastral, no mecánica del impuesto."
+  },
+  "_meta": {
+    "fuente": "txt",
+    "modelo": "gpt-5.4-mini"
+  },
+  "_meta_v2": {
+    "intentos": 1,
+    "requiere_revision": false,
+    "escalado": false,
+    "razon": null,
+    "tokens": {
+      "input": 8562,
+      "output": 499,
+      "cached": 3840
+    },
+    "cvegeo": "11003",
+    "estado": "guanajuato",
+    "anio": 2023
+  }
+}
