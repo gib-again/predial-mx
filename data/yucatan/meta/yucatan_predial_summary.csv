@@ -39,9 +39,9 @@ akil,Akil,2019,progresivo,True,1,7,0,0,0,tipo_progresivo_con_tabla_tarifa_no_vac
 akil,Akil,2020,progresivo,True,1,7,0,0,0,tipo_progresivo_con_tabla_tarifa_no_vacia,data\yucatan\json_predial\2020\YUC_PREDIAL_2020_akil.json
 akil,Akil,2021,progresivo,True,1,7,0,0,0,tipo_progresivo_con_tabla_tarifa_no_vacia,data\yucatan\json_predial\2021\YUC_PREDIAL_2021_akil.json
 akil,Akil,2022,progresivo,True,0,7,0,0,0,,data\yucatan\json_predial\2022\YUC_PREDIAL_2022_akil.json
-akil,Akil,2023,progresivo,False,1,0,0,0,0,cambio_brusco_n_filas_7_a_1|tipo_progresivo_con_tabla_tarifa_no_vacia|tipo_progresivo_sin_filas,data\yucatan\json_predial\2023\YUC_PREDIAL_2023_akil.json
-akil,Akil,2024,progresivo,False,1,0,0,0,0,tipo_progresivo_sin_filas|tipo_progresivo_con_tabla_tarifa_no_vacia,data\yucatan\json_predial\2024\YUC_PREDIAL_2024_akil.json
-akil,Akil,2025,desconocido,False,1,0,0,0,0,tipo_desconocido_con_tablas_no_vacias,data\yucatan\json_predial\2025\YUC_PREDIAL_2025_akil.json
+akil,Akil,2023,tarifa_millar,True,1,0,0,0,0,cambio_brusco_n_filas_7_a_1|cambio_esquema_progresivo_a_tarifa_millar_desde_2022,data\yucatan\json_predial\2023\YUC_PREDIAL_2023_akil.json
+akil,Akil,2024,tarifa_millar,True,1,0,0,0,0,,data\yucatan\json_predial\2024\YUC_PREDIAL_2024_akil.json
+akil,Akil,2025,tarifa_millar,True,1,0,0,0,0,,data\yucatan\json_predial\2025\YUC_PREDIAL_2025_akil.json
 baca,Baca,2010,tasa_unica,True,0,0,1,0,0,tasa_unica_row1_unidad_no_reconocida,data\yucatan\json_predial\2010\YUC_PREDIAL_2010_baca.json
 baca,Baca,2011,tasa_unica,True,0,0,1,0,0,,data\yucatan\json_predial\2011\YUC_PREDIAL_2011_baca.json
 baca,Baca,2013,tasa_unica,True,0,0,1,0,0,,data\yucatan\json_predial\2013\YUC_PREDIAL_2013_baca.json
@@ -168,7 +168,7 @@ cenotillo,Cenotillo,2012,progresivo,True,1,12,0,1,0,tipo_progresivo_con_tabla_ta
 cenotillo,Cenotillo,2013,progresivo,True,1,12,0,1,0,tipo_progresivo_con_tabla_tarifa_no_vacia|tipo_progresivo_con_tabla_cuota_fija_no_vacia,data\yucatan\json_predial\2013\YUC_PREDIAL_2013_cenotillo.json
 cenotillo,Cenotillo,2014,mixto,True,1,0,0,0,12,cambio_brusco_n_filas_13_a_1|cambio_esquema_progresivo_a_mixto_desde_2013|mixta_row10_columnas_vacias|mixta_row11_columnas_vacias|mixta_row12_columnas_vacias|mixta_row1_columnas_vacias|mixta_row2_columnas_vacias|mixta_row3_columnas_vacias|mixta_row4_columnas_vacias|mixta_row5_columnas_vacias|mixta_row6_columnas_vacias|mixta_row7_columnas_vacias|mixta_row8_columnas_vacias|mixta_row9_columnas_vacias,data\yucatan\json_predial\2014\YUC_PREDIAL_2014_cenotillo.json
 cenotillo,Cenotillo,2015,progresivo,True,1,12,0,0,0,cambio_brusco_n_filas_1_a_13|cambio_esquema_mixto_a_progresivo_desde_2014|tipo_progresivo_con_tabla_tarifa_no_vacia,data\yucatan\json_predial\2015\YUC_PREDIAL_2015_cenotillo.json
-cenotillo,Cenotillo,2016,progresivo,False,1,12,0,1,0,tipo_progresivo_con_tabla_tarifa_no_vacia|tipo_progresivo_con_tabla_cuota_fija_no_vacia,data\yucatan\json_predial\2016\YUC_PREDIAL_2016_cenotillo.json
+cenotillo,Cenotillo,2016,progresivo,True,1,12,0,1,0,tipo_progresivo_con_tabla_tarifa_no_vacia|tipo_progresivo_con_tabla_cuota_fija_no_vacia,data\yucatan\json_predial\2016\YUC_PREDIAL_2016_cenotillo.json
 cenotillo,Cenotillo,2017,progresivo,True,1,12,0,1,0,tipo_progresivo_con_tabla_tarifa_no_vacia|tipo_progresivo_con_tabla_cuota_fija_no_vacia,data\yucatan\json_predial\2017\YUC_PREDIAL_2017_cenotillo.json
 cenotillo,Cenotillo,2018,mixto,True,1,0,0,1,12,cambio_brusco_n_filas_13_a_1|cambio_esquema_progresivo_a_mixto_desde_2017|mixta_row10_columnas_vacias|mixta_row11_columnas_vacias|mixta_row12_columnas_vacias|mixta_row1_columnas_vacias|mixta_row2_columnas_vacias|mixta_row3_columnas_vacias|mixta_row4_columnas_vacias|mixta_row5_columnas_vacias|mixta_row6_columnas_vacias|mixta_row7_columnas_vacias|mixta_row8_columnas_vacias|mixta_row9_columnas_vacias,data\yucatan\json_predial\2018\YUC_PREDIAL_2018_cenotillo.json
 cenotillo,Cenotillo,2019,progresivo,True,1,12,0,1,0,cambio_brusco_n_filas_1_a_13|cambio_esquema_mixto_a_progresivo_desde_2018|tipo_progresivo_con_tabla_cuota_fija_no_vacia|tipo_progresivo_con_tabla_tarifa_no_vacia,data\yucatan\json_predial\2019\YUC_PREDIAL_2019_cenotillo.json
@@ -176,7 +176,7 @@ cenotillo,Cenotillo,2020,mixto,True,1,0,0,1,12,cambio_brusco_n_filas_13_a_1|camb
 cenotillo,Cenotillo,2021,progresivo,True,1,12,0,1,0,cambio_brusco_n_filas_1_a_13|cambio_esquema_mixto_a_progresivo_desde_2020|tipo_progresivo_con_tabla_cuota_fija_no_vacia|tipo_progresivo_con_tabla_tarifa_no_vacia,data\yucatan\json_predial\2021\YUC_PREDIAL_2021_cenotillo.json
 cenotillo,Cenotillo,2022,mixto,True,0,0,0,0,2,cambio_esquema_progresivo_a_mixto_desde_2021|mixta_row1_columnas_vacias|mixta_row2_columnas_vacias,data\yucatan\json_predial\2022\YUC_PREDIAL_2022_cenotillo.json
 cenotillo,Cenotillo,2023,progresivo,True,1,12,0,1,0,cambio_esquema_mixto_a_progresivo_desde_2022|tipo_progresivo_con_tabla_cuota_fija_no_vacia|tipo_progresivo_con_tabla_tarifa_no_vacia,data\yucatan\json_predial\2023\YUC_PREDIAL_2023_cenotillo.json
-cenotillo,Cenotillo,2024,progresivo,False,1,12,0,1,0,tipo_progresivo_con_tabla_tarifa_no_vacia|tipo_progresivo_con_tabla_cuota_fija_no_vacia,data\yucatan\json_predial\2024\YUC_PREDIAL_2024_cenotillo.json
+cenotillo,Cenotillo,2024,progresivo,True,2,12,0,0,0,tipo_progresivo_con_tabla_tarifa_no_vacia,data\yucatan\json_predial\2024\YUC_PREDIAL_2024_cenotillo.json
 cenotillo,Cenotillo,2025,progresivo,True,1,12,0,0,0,tipo_progresivo_con_tabla_tarifa_no_vacia,data\yucatan\json_predial\2025\YUC_PREDIAL_2025_cenotillo.json
 chacsinkin,Chacsinkin,2010,progresivo,True,1,7,0,0,0,tipo_progresivo_con_tabla_tarifa_no_vacia,data\yucatan\json_predial\2010\YUC_PREDIAL_2010_chacsinkin.json
 chacsinkin,Chacsinkin,2011,progresivo,True,1,6,0,0,0,tipo_progresivo_con_tabla_tarifa_no_vacia,data\yucatan\json_predial\2011\YUC_PREDIAL_2011_chacsinkin.json
@@ -373,10 +373,10 @@ dzemul,Dzemul,2022,tarifa_millar,True,1,0,0,0,0,,data\yucatan\json_predial\2022\
 dzemul,Dzemul,2023,tarifa_millar,True,1,0,0,0,0,,data\yucatan\json_predial\2023\YUC_PREDIAL_2023_dzemul.json
 dzemul,Dzemul,2024,tarifa_millar,True,1,0,0,0,0,,data\yucatan\json_predial\2024\YUC_PREDIAL_2024_dzemul.json
 dzemul,Dzemul,2025,tarifa_millar,True,1,0,0,0,0,,data\yucatan\json_predial\2025\YUC_PREDIAL_2025_dzemul.json
-dzidzantun,Dzidzantun,2010,desconocido,False,0,0,0,1,0,tipo_desconocido_con_tablas_no_vacias,data\yucatan\json_predial\2010\YUC_PREDIAL_2010_dzidzantun.json
-dzidzantun,Dzidzantun,2011,tasa_unica,True,0,0,1,0,0,,data\yucatan\json_predial\2011\YUC_PREDIAL_2011_dzidzantun.json
-dzidzantun,Dzidzantun,2012,desconocido,False,0,0,0,1,0,tipo_desconocido_con_tablas_no_vacias,data\yucatan\json_predial\2012\YUC_PREDIAL_2012_dzidzantun.json
-dzidzantun,Dzidzantun,2013,progresivo,True,0,8,0,0,0,,data\yucatan\json_predial\2013\YUC_PREDIAL_2013_dzidzantun.json
+dzidzantun,Dzidzantun,2010,progresivo,True,0,3,0,0,0,,data\yucatan\json_predial\2010\YUC_PREDIAL_2010_dzidzantun.json
+dzidzantun,Dzidzantun,2011,tasa_unica,True,0,0,1,0,0,cambio_esquema_progresivo_a_tasa_unica_desde_2010,data\yucatan\json_predial\2011\YUC_PREDIAL_2011_dzidzantun.json
+dzidzantun,Dzidzantun,2012,progresivo,True,1,2,1,0,0,cambio_esquema_tasa_unica_a_progresivo_desde_2011|tipo_progresivo_con_tabla_tarifa_no_vacia|tipo_progresivo_con_tabla_tasa_unica_no_vacia,data\yucatan\json_predial\2012\YUC_PREDIAL_2012_dzidzantun.json
+dzidzantun,Dzidzantun,2013,progresivo,True,0,8,0,0,0,cambio_brusco_n_filas_3_a_8,data\yucatan\json_predial\2013\YUC_PREDIAL_2013_dzidzantun.json
 dzilam_de_bravo,Dzilam De Bravo,2010,cuota_fija,True,1,0,0,2,0,tipo_cuota_fija_con_otras_tablas_no_vacias,data\yucatan\json_predial\2010\YUC_PREDIAL_2010_dzilam_de_bravo.json
 dzilam_de_bravo,Dzilam De Bravo,2011,cuota_fija,True,1,0,0,2,0,tipo_cuota_fija_con_otras_tablas_no_vacias,data\yucatan\json_predial\2011\YUC_PREDIAL_2011_dzilam_de_bravo.json
 dzilam_de_bravo,Dzilam De Bravo,2012,cuota_fija,True,1,0,0,3,0,tipo_cuota_fija_con_otras_tablas_no_vacias,data\yucatan\json_predial\2012\YUC_PREDIAL_2012_dzilam_de_bravo.json
@@ -402,7 +402,7 @@ dzilam_gonzalez,Dzilam Gonzalez,2021,tasa_unica,True,0,0,1,2,0,tipo_tasa_unica_c
 dzilam_gonzalez,Dzilam Gonzalez,2022,tasa_unica,True,0,0,1,2,0,tipo_tasa_unica_con_otras_tablas_no_vacias,data\yucatan\json_predial\2022\YUC_PREDIAL_2022_dzilam_gonzalez.json
 dzilam_gonzalez,Dzilam Gonzalez,2023,mixto,True,1,0,0,0,7,cambio_esquema_tasa_unica_a_mixto_desde_2022|mixta_row1_columnas_vacias|mixta_row2_columnas_vacias|mixta_row3_columnas_vacias|mixta_row4_columnas_vacias|mixta_row5_columnas_vacias|mixta_row6_columnas_vacias|mixta_row7_columnas_vacias,data\yucatan\json_predial\2023\YUC_PREDIAL_2023_dzilam_gonzalez.json
 dzilam_gonzalez,Dzilam Gonzalez,2024,mixto,True,1,0,0,0,7,mixta_row1_columnas_vacias|mixta_row2_columnas_vacias|mixta_row3_columnas_vacias|mixta_row4_columnas_vacias|mixta_row5_columnas_vacias|mixta_row6_columnas_vacias|mixta_row7_columnas_vacias,data\yucatan\json_predial\2024\YUC_PREDIAL_2024_dzilam_gonzalez.json
-dzilam_gonzalez,Dzilam Gonzalez,2025,progresivo,True,1,14,0,0,0,cambio_brusco_n_filas_1_a_15|cambio_esquema_mixto_a_progresivo_desde_2024|prog_row10_n_rango_no_int|prog_row11_n_rango_no_int|prog_row12_n_rango_no_int|prog_row13_n_rango_no_int|prog_row14_n_rango_no_int|prog_row1_n_rango_no_int|prog_row2_n_rango_no_int|prog_row3_n_rango_no_int|prog_row4_n_rango_no_int|prog_row5_n_rango_no_int|prog_row6_n_rango_no_int|prog_row7_n_rango_no_int|prog_row8_n_rango_no_int|prog_row9_n_rango_no_int|tipo_progresivo_con_tabla_tarifa_no_vacia,data\yucatan\json_predial\2025\YUC_PREDIAL_2025_dzilam_gonzalez.json
+dzilam_gonzalez,Dzilam Gonzalez,2025,progresivo,True,4,14,0,0,0,cambio_brusco_n_filas_1_a_18|cambio_esquema_mixto_a_progresivo_desde_2024|prog_row10_hueco_con_anterior|prog_row11_hueco_con_anterior|prog_row12_hueco_con_anterior|prog_row13_hueco_con_anterior|prog_row2_hueco_con_anterior|prog_row3_hueco_con_anterior|prog_row4_hueco_con_anterior|prog_row5_hueco_con_anterior|prog_row6_hueco_con_anterior|prog_row9_hueco_con_anterior|tipo_progresivo_con_tabla_tarifa_no_vacia,data\yucatan\json_predial\2025\YUC_PREDIAL_2025_dzilam_gonzalez.json
 dzitas,Dzitas,2010,tasa_unica,True,1,0,1,0,0,tipo_tasa_unica_con_otras_tablas_no_vacias|tasa_unica_row1_unidad_no_reconocida,data\yucatan\json_predial\2010\YUC_PREDIAL_2010_dzitas.json
 dzitas,Dzitas,2011,tasa_unica,True,1,0,1,0,0,tipo_tasa_unica_con_otras_tablas_no_vacias|tasa_unica_row1_unidad_no_reconocida,data\yucatan\json_predial\2011\YUC_PREDIAL_2011_dzitas.json
 dzitas,Dzitas,2012,tasa_unica,True,1,0,1,0,0,tipo_tasa_unica_con_otras_tablas_no_vacias|tasa_unica_row1_unidad_no_reconocida,data\yucatan\json_predial\2012\YUC_PREDIAL_2012_dzitas.json
@@ -426,6 +426,7 @@ dzoncauich,Dzoncauich,2013,tasa_unica,True,1,0,1,0,0,tipo_tasa_unica_con_otras_t
 dzoncauich,Dzoncauich,2014,tasa_unica,True,1,0,1,0,0,tipo_tasa_unica_con_otras_tablas_no_vacias|tasa_unica_row1_unidad_no_reconocida,data\yucatan\json_predial\2014\YUC_PREDIAL_2014_dzoncauich.json
 dzoncauich,Dzoncauich,2015,tasa_unica,True,1,0,1,0,0,tipo_tasa_unica_con_otras_tablas_no_vacias|tasa_unica_row1_unidad_no_reconocida,data\yucatan\json_predial\2015\YUC_PREDIAL_2015_dzoncauich.json
 dzoncauich,Dzoncauich,2016,tasa_unica,True,1,0,1,0,0,tipo_tasa_unica_con_otras_tablas_no_vacias|tasa_unica_row1_unidad_no_reconocida,data\yucatan\json_predial\2016\YUC_PREDIAL_2016_dzoncauich.json
+dzoncauich,Dzoncauich,2017,tasa_unica,True,2,0,1,0,0,tipo_tasa_unica_con_otras_tablas_no_vacias|tasa_unica_row1_unidad_no_reconocida,data\yucatan\json_predial\2017\YUC_PREDIAL_2017_dzoncauich.json
 dzoncauich,Dzoncauich,2018,tasa_unica,True,1,0,1,0,0,tipo_tasa_unica_con_otras_tablas_no_vacias|tasa_unica_row1_unidad_no_reconocida,data\yucatan\json_predial\2018\YUC_PREDIAL_2018_dzoncauich.json
 dzoncauich,Dzoncauich,2019,tasa_unica,True,1,0,1,0,0,tipo_tasa_unica_con_otras_tablas_no_vacias|tasa_unica_row1_unidad_no_reconocida,data\yucatan\json_predial\2019\YUC_PREDIAL_2019_dzoncauich.json
 dzoncauich,Dzoncauich,2020,tasa_unica,True,0,0,1,0,0,tasa_unica_row1_unidad_no_reconocida,data\yucatan\json_predial\2020\YUC_PREDIAL_2020_dzoncauich.json
@@ -504,7 +505,7 @@ huhi,Huhi,2021,progresivo,True,0,7,0,0,0,,data\yucatan\json_predial\2021\YUC_PRE
 huhi,Huhi,2022,progresivo,True,0,7,0,0,0,,data\yucatan\json_predial\2022\YUC_PREDIAL_2022_huhi.json
 huhi,Huhi,2023,progresivo,True,0,7,0,0,0,,data\yucatan\json_predial\2023\YUC_PREDIAL_2023_huhi.json
 huhi,Huhi,2024,progresivo,True,0,7,0,0,0,,data\yucatan\json_predial\2024\YUC_PREDIAL_2024_huhi.json
-huhi,Huhi,2025,progresivo,False,0,25,0,0,0,cambio_brusco_n_filas_7_a_25,data\yucatan\json_predial\2025\YUC_PREDIAL_2025_huhi.json
+huhi,Huhi,2025,progresivo,True,0,25,0,0,0,cambio_brusco_n_filas_7_a_25,data\yucatan\json_predial\2025\YUC_PREDIAL_2025_huhi.json
 hunucma,Hunucma,2010,tasa_unica,True,1,0,1,0,0,tipo_tasa_unica_con_otras_tablas_no_vacias,data\yucatan\json_predial\2010\YUC_PREDIAL_2010_hunucma.json
 hunucma,Hunucma,2011,tasa_unica,True,1,0,1,0,0,tipo_tasa_unica_con_otras_tablas_no_vacias,data\yucatan\json_predial\2011\YUC_PREDIAL_2011_hunucma.json
 hunucma,Hunucma,2012,tasa_unica,True,1,0,1,0,0,tipo_tasa_unica_con_otras_tablas_no_vacias,data\yucatan\json_predial\2012\YUC_PREDIAL_2012_hunucma.json
@@ -673,13 +674,13 @@ mayapan,Mayapan,2025,tasa_unica,True,0,0,1,0,0,cambio_esquema_mixto_a_tasa_unica
 merida,Merida,2010,progresivo,True,0,10,0,0,0,,data\yucatan\json_predial\2010\YUC_PREDIAL_2010_merida.json
 merida,Merida,2011,progresivo,True,0,10,0,0,0,,data\yucatan\json_predial\2011\YUC_PREDIAL_2011_merida.json
 merida,Merida,2012,progresivo,True,0,10,0,0,0,prog_row2_solape_con_anterior,data\yucatan\json_predial\2012\YUC_PREDIAL_2012_merida.json
-merida,Merida,2013,progresivo,False,0,10,0,0,0,,data\yucatan\json_predial\2013\YUC_PREDIAL_2013_merida.json
+merida,Merida,2013,progresivo,True,0,10,0,0,0,,data\yucatan\json_predial\2013\YUC_PREDIAL_2013_merida.json
 merida,Merida,2014,progresivo,True,0,16,0,0,0,,data\yucatan\json_predial\2014\YUC_PREDIAL_2014_merida.json
-merida,Merida,2015,progresivo,False,0,16,0,0,0,,data\yucatan\json_predial\2015\YUC_PREDIAL_2015_merida.json
-merida,Merida,2016,progresivo,False,0,16,0,0,0,prog_row1_superior_null_no_ultimo|prog_row3_superior_null_no_ultimo|prog_row7_solape_con_anterior|prog_row10_solape_con_anterior|prog_row11_solape_con_anterior|prog_row12_solape_con_anterior|prog_row13_superior_null_no_ultimo|prog_row14_superior_null_no_ultimo,data\yucatan\json_predial\2016\YUC_PREDIAL_2016_merida.json
-merida,Merida,2017,progresivo,False,0,16,0,0,0,prog_row1_superior_null_no_ultimo|prog_row5_solape_con_anterior|prog_row7_solape_con_anterior|prog_row9_solape_con_anterior|prog_row12_solape_con_anterior|prog_row13_superior_null_no_ultimo|prog_row14_superior_null_no_ultimo,data\yucatan\json_predial\2017\YUC_PREDIAL_2017_merida.json
-merida,Merida,2018,progresivo,False,0,16,0,0,0,prog_row1_inferior_vacio|prog_row2_inferior_vacio|prog_row3_inferior_vacio|prog_row4_inferior_vacio|prog_row5_inferior_vacio|prog_row7_inferior_vacio|prog_row8_inferior_vacio|prog_row9_inferior_vacio|prog_row10_inferior_vacio|prog_row11_inferior_vacio|prog_row12_inferior_vacio|prog_row1_superior_null_no_ultimo|prog_row2_superior_null_no_ultimo|prog_row3_superior_null_no_ultimo|prog_row4_superior_null_no_ultimo|prog_row7_superior_null_no_ultimo|prog_row8_superior_null_no_ultimo|prog_row9_superior_null_no_ultimo|prog_row10_superior_null_no_ultimo|prog_row11_superior_null_no_ultimo|prog_row12_superior_null_no_ultimo|prog_row13_hueco_con_anterior,data\yucatan\json_predial\2018\YUC_PREDIAL_2018_merida.json
-merida,Merida,2019,progresivo,False,0,16,0,0,0,prog_row1_inferior_vacio|prog_row2_inferior_vacio|prog_row3_inferior_vacio|prog_row4_inferior_vacio|prog_row5_inferior_vacio|prog_row7_inferior_vacio|prog_row8_inferior_vacio|prog_row9_inferior_vacio|prog_row10_inferior_vacio|prog_row11_inferior_vacio|prog_row12_inferior_vacio|prog_row1_superior_null_no_ultimo|prog_row2_superior_null_no_ultimo|prog_row3_superior_null_no_ultimo|prog_row4_superior_null_no_ultimo|prog_row7_superior_null_no_ultimo|prog_row8_superior_null_no_ultimo|prog_row9_superior_null_no_ultimo|prog_row10_superior_null_no_ultimo|prog_row11_superior_null_no_ultimo|prog_row12_superior_null_no_ultimo|prog_row13_superior_null_no_ultimo|prog_row14_superior_null_no_ultimo,data\yucatan\json_predial\2019\YUC_PREDIAL_2019_merida.json
+merida,Merida,2015,progresivo,True,0,16,0,0,0,,data\yucatan\json_predial\2015\YUC_PREDIAL_2015_merida.json
+merida,Merida,2016,progresivo,True,0,16,0,0,0,,data\yucatan\json_predial\2016\YUC_PREDIAL_2016_merida.json
+merida,Merida,2017,progresivo,True,0,16,0,0,0,,data\yucatan\json_predial\2017\YUC_PREDIAL_2017_merida.json
+merida,Merida,2018,progresivo,True,0,16,0,0,0,,data\yucatan\json_predial\2018\YUC_PREDIAL_2018_merida.json
+merida,Merida,2019,progresivo,True,0,16,0,0,0,,data\yucatan\json_predial\2019\YUC_PREDIAL_2019_merida.json
 merida,Merida,2020,progresivo,True,0,16,0,0,0,,data\yucatan\json_predial\2020\YUC_PREDIAL_2020_merida.json
 merida,Merida,2021,progresivo,True,0,16,0,0,0,,data\yucatan\json_predial\2021\YUC_PREDIAL_2021_merida.json
 merida,Merida,2022,progresivo,True,0,21,0,0,0,,data\yucatan\json_predial\2022\YUC_PREDIAL_2022_merida.json
@@ -849,22 +850,22 @@ san_felipe,San Felipe,2017,mixto,True,0,0,0,3,7,cambio_esquema_progresivo_a_mixt
 san_felipe,San Felipe,2018,progresivo,True,0,7,0,3,0,cambio_esquema_mixto_a_progresivo_desde_2017|tipo_progresivo_con_tabla_cuota_fija_no_vacia,data\yucatan\json_predial\2018\YUC_PREDIAL_2018_san_felipe.json
 san_felipe,San Felipe,2019,progresivo,True,0,7,0,3,0,tipo_progresivo_con_tabla_cuota_fija_no_vacia,data\yucatan\json_predial\2019\YUC_PREDIAL_2019_san_felipe.json
 san_felipe,San Felipe,2020,progresivo,True,0,7,0,1,0,tipo_progresivo_con_tabla_cuota_fija_no_vacia,data\yucatan\json_predial\2020\YUC_PREDIAL_2020_san_felipe.json
-san_felipe,San Felipe,2022,desconocido,False,0,0,0,0,0,,data\yucatan\json_predial\2022\YUC_PREDIAL_2022_san_felipe.json
-san_felipe,San Felipe,2023,tasa_unica,True,0,0,1,0,0,tasa_unica_row1_unidad_no_reconocida,data\yucatan\json_predial\2023\YUC_PREDIAL_2023_san_felipe.json
+san_felipe,San Felipe,2022,cuota_fija,True,0,0,0,1,0,cambio_esquema_progresivo_a_cuota_fija_desde_2020,data\yucatan\json_predial\2022\YUC_PREDIAL_2022_san_felipe.json
+san_felipe,San Felipe,2023,tasa_unica,True,0,0,1,0,0,cambio_esquema_cuota_fija_a_tasa_unica_desde_2022|tasa_unica_row1_unidad_no_reconocida,data\yucatan\json_predial\2023\YUC_PREDIAL_2023_san_felipe.json
 san_felipe,San Felipe,2024,tasa_unica,True,0,0,1,0,0,tasa_unica_row1_unidad_no_reconocida,data\yucatan\json_predial\2024\YUC_PREDIAL_2024_san_felipe.json
 san_felipe,San Felipe,2025,tasa_unica,True,0,0,1,0,0,tasa_unica_row1_unidad_no_reconocida,data\yucatan\json_predial\2025\YUC_PREDIAL_2025_san_felipe.json
 sanahcat,Sanahcat,2010,cuota_fija,True,1,0,0,1,0,tipo_cuota_fija_con_otras_tablas_no_vacias,data\yucatan\json_predial\2010\YUC_PREDIAL_2010_sanahcat.json
 sanahcat,Sanahcat,2011,mixto,True,1,0,0,0,1,cambio_esquema_cuota_fija_a_mixto_desde_2010|mixta_row1_columnas_vacias,data\yucatan\json_predial\2011\YUC_PREDIAL_2011_sanahcat.json
-sanahcat,Sanahcat,2012,desconocido,False,1,0,0,0,0,tipo_desconocido_con_tablas_no_vacias,data\yucatan\json_predial\2012\YUC_PREDIAL_2012_sanahcat.json
-sanahcat,Sanahcat,2013,cuota_fija,True,1,0,0,1,0,tipo_cuota_fija_con_otras_tablas_no_vacias,data\yucatan\json_predial\2013\YUC_PREDIAL_2013_sanahcat.json
+sanahcat,Sanahcat,2012,tarifa_millar,True,2,0,0,0,0,cambio_esquema_mixto_a_tarifa_millar_desde_2011,data\yucatan\json_predial\2012\YUC_PREDIAL_2012_sanahcat.json
+sanahcat,Sanahcat,2013,cuota_fija,True,1,0,0,1,0,cambio_esquema_tarifa_millar_a_cuota_fija_desde_2012|tipo_cuota_fija_con_otras_tablas_no_vacias,data\yucatan\json_predial\2013\YUC_PREDIAL_2013_sanahcat.json
 sanahcat,Sanahcat,2014,tarifa_millar,True,1,0,0,1,0,cambio_esquema_cuota_fija_a_tarifa_millar_desde_2013|tipo_tarifa_millar_con_tabla_cuota_fija_no_vacia,data\yucatan\json_predial\2014\YUC_PREDIAL_2014_sanahcat.json
 sanahcat,Sanahcat,2015,mixto,True,1,0,0,0,1,cambio_esquema_tarifa_millar_a_mixto_desde_2014|mixta_row1_columnas_vacias,data\yucatan\json_predial\2015\YUC_PREDIAL_2015_sanahcat.json
-sanahcat,Sanahcat,2016,mixto,True,1,0,0,1,0,,data\yucatan\json_predial\2016\YUC_PREDIAL_2016_sanahcat.json
-sanahcat,Sanahcat,2017,desconocido,False,1,0,0,0,0,tipo_desconocido_con_tablas_no_vacias,data\yucatan\json_predial\2017\YUC_PREDIAL_2017_sanahcat.json
-sanahcat,Sanahcat,2018,cuota_fija,True,1,0,0,0,0,tipo_cuota_fija_sin_filas|tipo_cuota_fija_con_otras_tablas_no_vacias,data\yucatan\json_predial\2018\YUC_PREDIAL_2018_sanahcat.json
-sanahcat,Sanahcat,2019,mixto,True,1,0,0,1,0,cambio_esquema_cuota_fija_a_mixto_desde_2018,data\yucatan\json_predial\2019\YUC_PREDIAL_2019_sanahcat.json
-sanahcat,Sanahcat,2020,desconocido,False,1,0,0,0,0,tipo_desconocido_con_tablas_no_vacias,data\yucatan\json_predial\2020\YUC_PREDIAL_2020_sanahcat.json
-sanahcat,Sanahcat,2022,mixto,True,1,0,0,0,1,mixta_row1_columnas_vacias,data\yucatan\json_predial\2022\YUC_PREDIAL_2022_sanahcat.json
+sanahcat,Sanahcat,2016,tarifa_millar,True,1,0,0,1,0,cambio_esquema_mixto_a_tarifa_millar_desde_2015|tipo_tarifa_millar_con_tabla_cuota_fija_no_vacia,data\yucatan\json_predial\2016\YUC_PREDIAL_2016_sanahcat.json
+sanahcat,Sanahcat,2017,tarifa_millar,True,2,0,0,0,0,,data\yucatan\json_predial\2017\YUC_PREDIAL_2017_sanahcat.json
+sanahcat,Sanahcat,2018,cuota_fija,True,1,0,0,0,0,cambio_esquema_tarifa_millar_a_cuota_fija_desde_2017|tipo_cuota_fija_con_otras_tablas_no_vacias|tipo_cuota_fija_sin_filas,data\yucatan\json_predial\2018\YUC_PREDIAL_2018_sanahcat.json
+sanahcat,Sanahcat,2019,tarifa_millar,True,1,0,0,1,0,cambio_esquema_cuota_fija_a_tarifa_millar_desde_2018|tipo_tarifa_millar_con_tabla_cuota_fija_no_vacia,data\yucatan\json_predial\2019\YUC_PREDIAL_2019_sanahcat.json
+sanahcat,Sanahcat,2020,tarifa_millar,True,2,0,0,0,0,,data\yucatan\json_predial\2020\YUC_PREDIAL_2020_sanahcat.json
+sanahcat,Sanahcat,2022,mixto,True,1,0,0,0,1,cambio_esquema_tarifa_millar_a_mixto_desde_2020|mixta_row1_columnas_vacias,data\yucatan\json_predial\2022\YUC_PREDIAL_2022_sanahcat.json
 sanahcat,Sanahcat,2023,mixto,True,0,0,0,1,2,mixta_row1_columnas_vacias|mixta_row2_columnas_vacias,data\yucatan\json_predial\2023\YUC_PREDIAL_2023_sanahcat.json
 sanahcat,Sanahcat,2024,mixto,True,0,0,0,0,2,mixta_row1_columnas_vacias|mixta_row2_columnas_vacias,data\yucatan\json_predial\2024\YUC_PREDIAL_2024_sanahcat.json
 sanahcat,Sanahcat,2025,progresivo,True,0,11,0,0,0,cambio_esquema_mixto_a_progresivo_desde_2024,data\yucatan\json_predial\2025\YUC_PREDIAL_2025_sanahcat.json
@@ -1006,8 +1007,8 @@ tecoh,Tecoh,2020,progresivo,True,1,7,0,0,0,tipo_progresivo_con_tabla_tarifa_no_v
 tecoh,Tecoh,2021,progresivo,True,1,7,0,0,0,tipo_progresivo_con_tabla_tarifa_no_vacia,data\yucatan\json_predial\2021\YUC_PREDIAL_2021_tecoh.json
 tecoh,Tecoh,2022,progresivo,True,1,7,0,0,0,tipo_progresivo_con_tabla_tarifa_no_vacia,data\yucatan\json_predial\2022\YUC_PREDIAL_2022_tecoh.json
 tecoh,Tecoh,2023,progresivo,True,1,7,0,0,0,tipo_progresivo_con_tabla_tarifa_no_vacia,data\yucatan\json_predial\2023\YUC_PREDIAL_2023_tecoh.json
-tekanto,Tekanto,2010,desconocido,False,0,0,0,0,0,,data\yucatan\json_predial\2010\YUC_PREDIAL_2010_tekanto.json
-tekanto,Tekanto,2011,progresivo,True,1,7,0,0,0,tipo_progresivo_con_tabla_tarifa_no_vacia,data\yucatan\json_predial\2011\YUC_PREDIAL_2011_tekanto.json
+tekanto,Tekanto,2010,tarifa_millar,True,3,0,0,0,0,,data\yucatan\json_predial\2010\YUC_PREDIAL_2010_tekanto.json
+tekanto,Tekanto,2011,progresivo,True,1,7,0,0,0,cambio_brusco_n_filas_3_a_8|cambio_esquema_tarifa_millar_a_progresivo_desde_2010|tipo_progresivo_con_tabla_tarifa_no_vacia,data\yucatan\json_predial\2011\YUC_PREDIAL_2011_tekanto.json
 tekanto,Tekanto,2012,progresivo,True,0,7,0,0,0,,data\yucatan\json_predial\2012\YUC_PREDIAL_2012_tekanto.json
 tekanto,Tekanto,2013,progresivo,True,0,7,0,0,0,,data\yucatan\json_predial\2013\YUC_PREDIAL_2013_tekanto.json
 tekanto,Tekanto,2014,progresivo,True,0,7,0,0,0,,data\yucatan\json_predial\2014\YUC_PREDIAL_2014_tekanto.json
@@ -1054,8 +1055,8 @@ tekom,Tekom,2021,tasa_unica,True,0,0,1,0,0,cambio_esquema_progresivo_a_tasa_unic
 tekom,Tekom,2024,tarifa_millar,True,2,0,0,0,0,cambio_esquema_tasa_unica_a_tarifa_millar_desde_2021,data\yucatan\json_predial\2024\YUC_PREDIAL_2024_tekom.json
 telchac_pueblo,Telchac Pueblo,2010,tasa_unica,True,0,0,1,0,0,tasa_unica_row1_unidad_no_reconocida,data\yucatan\json_predial\2010\YUC_PREDIAL_2010_telchac_pueblo.json
 telchac_pueblo,Telchac Pueblo,2011,tasa_unica,True,0,0,1,2,0,tipo_tasa_unica_con_otras_tablas_no_vacias|tasa_unica_row1_unidad_no_reconocida,data\yucatan\json_predial\2011\YUC_PREDIAL_2011_telchac_pueblo.json
-telchac_pueblo,Telchac Pueblo,2012,tasa_unica,False,0,0,0,2,0,tipo_tasa_unica_sin_filas|tipo_tasa_unica_con_otras_tablas_no_vacias,data\yucatan\json_predial\2012\YUC_PREDIAL_2012_telchac_pueblo.json
-telchac_pueblo,Telchac Pueblo,2013,tasa_unica,True,0,0,1,0,0,tasa_unica_row1_unidad_no_reconocida,data\yucatan\json_predial\2013\YUC_PREDIAL_2013_telchac_pueblo.json
+telchac_pueblo,Telchac Pueblo,2012,mixto,True,0,0,0,0,1,cambio_esquema_tasa_unica_a_mixto_desde_2011|mixta_row1_columnas_vacias|tipo_mixto_sin_comentarios,data\yucatan\json_predial\2012\YUC_PREDIAL_2012_telchac_pueblo.json
+telchac_pueblo,Telchac Pueblo,2013,tasa_unica,True,0,0,1,0,0,cambio_esquema_mixto_a_tasa_unica_desde_2012|tasa_unica_row1_unidad_no_reconocida,data\yucatan\json_predial\2013\YUC_PREDIAL_2013_telchac_pueblo.json
 telchac_pueblo,Telchac Pueblo,2014,tasa_unica,True,0,0,1,0,0,tasa_unica_row1_unidad_no_reconocida,data\yucatan\json_predial\2014\YUC_PREDIAL_2014_telchac_pueblo.json
 telchac_pueblo,Telchac Pueblo,2015,tasa_unica,True,0,0,1,0,0,,data\yucatan\json_predial\2015\YUC_PREDIAL_2015_telchac_pueblo.json
 telchac_pueblo,Telchac Pueblo,2016,tasa_unica,True,0,0,1,0,0,tasa_unica_row1_unidad_no_reconocida,data\yucatan\json_predial\2016\YUC_PREDIAL_2016_telchac_pueblo.json
@@ -1226,6 +1227,16 @@ tixmehuac,Tixmehuac,2022,progresivo,True,0,11,0,0,0,cambio_esquema_mixto_a_progr
 tixmehuac,Tixmehuac,2023,tasa_unica,True,0,0,1,1,0,cambio_esquema_progresivo_a_tasa_unica_desde_2022|tasa_unica_row1_unidad_no_reconocida|tipo_tasa_unica_con_otras_tablas_no_vacias,data\yucatan\json_predial\2023\YUC_PREDIAL_2023_tixmehuac.json
 tixmehuac,Tixmehuac,2024,mixto,True,0,0,0,1,2,cambio_esquema_tasa_unica_a_mixto_desde_2023|mixta_row1_columnas_vacias|mixta_row2_columnas_vacias,data\yucatan\json_predial\2024\YUC_PREDIAL_2024_tixmehuac.json
 tixmehuac,Tixmehuac,2025,mixto,True,0,0,0,0,2,mixta_row1_columnas_vacias|mixta_row2_columnas_vacias,data\yucatan\json_predial\2025\YUC_PREDIAL_2025_tixmehuac.json
+tixpehual,Tixpehual,2010,progresivo,True,1,13,0,0,0,tipo_progresivo_con_tabla_tarifa_no_vacia,data\yucatan\json_predial\2010\YUC_PREDIAL_2010_tixpehual.json
+tixpehual,Tixpehual,2011,progresivo,True,1,13,0,0,0,tipo_progresivo_con_tabla_tarifa_no_vacia,data\yucatan\json_predial\2011\YUC_PREDIAL_2011_tixpehual.json
+tixpehual,Tixpehual,2012,progresivo,True,1,6,0,0,0,tipo_progresivo_con_tabla_tarifa_no_vacia,data\yucatan\json_predial\2012\YUC_PREDIAL_2012_tixpehual.json
+tixpehual,Tixpehual,2013,progresivo,True,1,6,0,0,0,tipo_progresivo_con_tabla_tarifa_no_vacia|prog_row2_solape_con_anterior,data\yucatan\json_predial\2013\YUC_PREDIAL_2013_tixpehual.json
+tixpehual,Tixpehual,2014,progresivo,True,1,6,0,0,0,tipo_progresivo_con_tabla_tarifa_no_vacia,data\yucatan\json_predial\2014\YUC_PREDIAL_2014_tixpehual.json
+tixpehual,Tixpehual,2015,progresivo,True,1,6,0,0,0,tipo_progresivo_con_tabla_tarifa_no_vacia,data\yucatan\json_predial\2015\YUC_PREDIAL_2015_tixpehual.json
+tixpehual,Tixpehual,2017,progresivo,True,1,6,0,0,0,tipo_progresivo_con_tabla_tarifa_no_vacia,data\yucatan\json_predial\2017\YUC_PREDIAL_2017_tixpehual.json
+tixpehual,Tixpehual,2018,progresivo,True,1,6,0,0,0,tipo_progresivo_con_tabla_tarifa_no_vacia,data\yucatan\json_predial\2018\YUC_PREDIAL_2018_tixpehual.json
+tixpehual,Tixpehual,2019,progresivo,True,1,6,0,0,0,tipo_progresivo_con_tabla_tarifa_no_vacia,data\yucatan\json_predial\2019\YUC_PREDIAL_2019_tixpehual.json
+tixpehual,Tixpehual,2020,progresivo,True,1,6,0,0,0,tipo_progresivo_con_tabla_tarifa_no_vacia,data\yucatan\json_predial\2020\YUC_PREDIAL_2020_tixpehual.json
 tixpeual,Tixpeual,2010,mixto,True,1,0,0,0,13,mixta_row1_columnas_vacias|mixta_row2_columnas_vacias|mixta_row3_columnas_vacias|mixta_row4_columnas_vacias|mixta_row5_columnas_vacias|mixta_row6_columnas_vacias|mixta_row7_columnas_vacias|mixta_row8_columnas_vacias|mixta_row9_columnas_vacias|mixta_row10_columnas_vacias|mixta_row11_columnas_vacias|mixta_row12_columnas_vacias|mixta_row13_columnas_vacias,data\yucatan\json_predial\2010\YUC_PREDIAL_2010_tixpeual.json
 tixpeual,Tixpeual,2011,progresivo,True,1,13,0,0,0,cambio_brusco_n_filas_1_a_14|cambio_esquema_mixto_a_progresivo_desde_2010|tipo_progresivo_con_tabla_tarifa_no_vacia,data\yucatan\json_predial\2011\YUC_PREDIAL_2011_tixpeual.json
 tixpeual,Tixpeual,2012,progresivo,True,1,6,0,0,0,tipo_progresivo_con_tabla_tarifa_no_vacia,data\yucatan\json_predial\2012\YUC_PREDIAL_2012_tixpeual.json
@@ -1263,9 +1274,9 @@ tunkas,Tunkas,2019,mixto,True,0,0,0,1,7,cambio_esquema_progresivo_a_mixto_desde_
 tunkas,Tunkas,2020,progresivo,True,0,7,0,1,0,cambio_esquema_mixto_a_progresivo_desde_2019|prog_row6_hueco_con_anterior|tipo_progresivo_con_tabla_cuota_fija_no_vacia,data\yucatan\json_predial\2020\YUC_PREDIAL_2020_tunkas.json
 tunkas,Tunkas,2021,progresivo,True,0,7,0,1,0,tipo_progresivo_con_tabla_cuota_fija_no_vacia|prog_row6_hueco_con_anterior,data\yucatan\json_predial\2021\YUC_PREDIAL_2021_tunkas.json
 tunkas,Tunkas,2022,progresivo,True,0,7,0,0,0,prog_row6_hueco_con_anterior,data\yucatan\json_predial\2022\YUC_PREDIAL_2022_tunkas.json
-tunkas,Tunkas,2023,progresivo,False,0,0,0,1,0,tipo_progresivo_sin_filas|tipo_progresivo_con_tabla_cuota_fija_no_vacia,data\yucatan\json_predial\2023\YUC_PREDIAL_2023_tunkas.json
-tunkas,Tunkas,2024,progresivo,False,0,0,0,1,0,tipo_progresivo_sin_filas|tipo_progresivo_con_tabla_cuota_fija_no_vacia,data\yucatan\json_predial\2024\YUC_PREDIAL_2024_tunkas.json
-tunkas,Tunkas,2025,progresivo,False,0,0,0,1,0,tipo_progresivo_sin_filas|tipo_progresivo_con_tabla_cuota_fija_no_vacia,data\yucatan\json_predial\2025\YUC_PREDIAL_2025_tunkas.json
+tunkas,Tunkas,2023,progresivo,True,0,2,0,1,0,cambio_brusco_n_filas_7_a_2|tipo_progresivo_con_tabla_cuota_fija_no_vacia,data\yucatan\json_predial\2023\YUC_PREDIAL_2023_tunkas.json
+tunkas,Tunkas,2024,progresivo,True,0,1,0,1,0,tipo_progresivo_con_tabla_cuota_fija_no_vacia,data\yucatan\json_predial\2024\YUC_PREDIAL_2024_tunkas.json
+tunkas,Tunkas,2025,progresivo,True,0,3,0,1,0,cambio_brusco_n_filas_1_a_3|tipo_progresivo_con_tabla_cuota_fija_no_vacia,data\yucatan\json_predial\2025\YUC_PREDIAL_2025_tunkas.json
 tzucacab,Tzucacab,2010,progresivo,True,0,7,0,3,0,tipo_progresivo_con_tabla_cuota_fija_no_vacia|prog_row2_hueco_con_anterior|prog_row3_hueco_con_anterior|prog_row4_hueco_con_anterior|prog_row5_hueco_con_anterior|prog_row6_hueco_con_anterior,data\yucatan\json_predial\2010\YUC_PREDIAL_2010_tzucacab.json
 tzucacab,Tzucacab,2011,mixto,True,0,0,0,3,7,cambio_esquema_progresivo_a_mixto_desde_2010|mixta_row1_columnas_vacias|mixta_row2_columnas_vacias|mixta_row3_columnas_vacias|mixta_row4_columnas_vacias|mixta_row5_columnas_vacias|mixta_row6_columnas_vacias|mixta_row7_columnas_vacias,data\yucatan\json_predial\2011\YUC_PREDIAL_2011_tzucacab.json
 tzucacab,Tzucacab,2013,progresivo,True,0,7,0,3,0,cambio_esquema_mixto_a_progresivo_desde_2011|tipo_progresivo_con_tabla_cuota_fija_no_vacia,data\yucatan\json_predial\2013\YUC_PREDIAL_2013_tzucacab.json

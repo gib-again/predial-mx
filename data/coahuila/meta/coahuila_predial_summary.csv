@@ -46,8 +46,8 @@ allende,Allende,2023,tarifa_millar,True,2,0,0,0,0,,data\coahuila\json_predial\20
 allende,Allende,2024,tarifa_millar,True,2,0,0,0,0,,data\coahuila\json_predial\2024\COAH_PREDIAL_2024_allende.json
 allende,Allende,2025,tarifa_millar,True,2,0,0,0,0,,data\coahuila\json_predial\2025\COAH_PREDIAL_2025_allende.json
 arteaga,Arteaga,2010,tarifa_millar,True,4,0,0,0,0,,data\coahuila\json_predial\2010\COAH_PREDIAL_2010_arteaga.json
-arteaga,Arteaga,2011,tarifa_millar,False,2,0,0,0,0,,data\coahuila\json_predial\2011\COAH_PREDIAL_2011_arteaga.json
-arteaga,Arteaga,2012,tarifa_millar,False,2,0,0,0,0,,data\coahuila\json_predial\2012\COAH_PREDIAL_2012_arteaga.json
+arteaga,Arteaga,2011,tarifa_millar,True,2,0,0,0,0,,data\coahuila\json_predial\2011\COAH_PREDIAL_2011_arteaga.json
+arteaga,Arteaga,2012,tarifa_millar,True,2,0,0,0,0,,data\coahuila\json_predial\2012\COAH_PREDIAL_2012_arteaga.json
 arteaga,Arteaga,2013,tarifa_millar,True,2,0,0,1,0,tipo_tarifa_millar_con_tabla_cuota_fija_no_vacia,data\coahuila\json_predial\2013\COAH_PREDIAL_2013_arteaga.json
 arteaga,Arteaga,2014,tarifa_millar,True,2,0,0,0,0,,data\coahuila\json_predial\2014\COAH_PREDIAL_2014_arteaga.json
 arteaga,Arteaga,2015,tarifa_millar,True,2,0,0,0,0,,data\coahuila\json_predial\2015\COAH_PREDIAL_2015_arteaga.json
@@ -121,22 +121,22 @@ escobedo,Escobedo,2022,tarifa_millar,True,2,0,0,0,0,,data\coahuila\json_predial\
 escobedo,Escobedo,2023,tarifa_millar,True,2,0,0,0,0,,data\coahuila\json_predial\2023\COAH_PREDIAL_2023_escobedo.json
 escobedo,Escobedo,2024,tarifa_millar,True,2,0,0,0,0,,data\coahuila\json_predial\2024\COAH_PREDIAL_2024_escobedo.json
 escobedo,Escobedo,2025,tarifa_millar,True,2,0,0,0,0,,data\coahuila\json_predial\2025\COAH_PREDIAL_2025_escobedo.json
-francisco_i_madero,Francisco I Madero,2010,mixto,True,2,0,0,1,0,,data\coahuila\json_predial\2010\COAH_PREDIAL_2010_francisco_i_madero.json
-francisco_i_madero,Francisco I Madero,2011,tarifa_millar,True,2,0,0,0,0,cambio_esquema_mixto_a_tarifa_millar_desde_2010,data\coahuila\json_predial\2011\COAH_PREDIAL_2011_francisco_i_madero.json
-francisco_i_madero,Francisco I Madero,2012,mixto,True,2,0,0,1,0,cambio_esquema_tarifa_millar_a_mixto_desde_2011,data\coahuila\json_predial\2012\COAH_PREDIAL_2012_francisco_i_madero.json
-francisco_i_madero,Francisco I Madero,2013,mixto,True,2,0,0,1,0,,data\coahuila\json_predial\2013\COAH_PREDIAL_2013_francisco_i_madero.json
-francisco_i_madero,Francisco I Madero,2014,mixto,True,2,0,0,1,0,,data\coahuila\json_predial\2014\COAH_PREDIAL_2014_francisco_i_madero.json
-francisco_i_madero,Francisco I Madero,2015,tarifa_millar,True,2,0,0,0,0,cambio_esquema_mixto_a_tarifa_millar_desde_2014,data\coahuila\json_predial\2015\COAH_PREDIAL_2015_francisco_i_madero.json
-francisco_i_madero,Francisco I Madero,2016,mixto,True,2,0,0,1,0,cambio_esquema_tarifa_millar_a_mixto_desde_2015,data\coahuila\json_predial\2016\COAH_PREDIAL_2016_francisco_i_madero.json
-francisco_i_madero,Francisco I Madero,2017,mixto,True,2,0,0,1,0,,data\coahuila\json_predial\2017\COAH_PREDIAL_2017_francisco_i_madero.json
-francisco_i_madero,Francisco I Madero,2018,mixto,True,2,0,0,1,0,,data\coahuila\json_predial\2018\COAH_PREDIAL_2018_francisco_i_madero.json
-francisco_i_madero,Francisco I Madero,2019,tarifa_millar,True,2,0,0,1,0,cambio_esquema_mixto_a_tarifa_millar_desde_2018|tipo_tarifa_millar_con_tabla_cuota_fija_no_vacia,data\coahuila\json_predial\2019\COAH_PREDIAL_2019_francisco_i_madero.json
-francisco_i_madero,Francisco I Madero,2020,mixto,True,2,0,0,1,0,cambio_esquema_tarifa_millar_a_mixto_desde_2019,data\coahuila\json_predial\2020\COAH_PREDIAL_2020_francisco_i_madero.json
-francisco_i_madero,Francisco I Madero,2021,mixto,True,2,0,0,1,0,,data\coahuila\json_predial\2021\COAH_PREDIAL_2021_francisco_i_madero.json
-francisco_i_madero,Francisco I Madero,2022,mixto,True,2,0,0,1,0,,data\coahuila\json_predial\2022\COAH_PREDIAL_2022_francisco_i_madero.json
-francisco_i_madero,Francisco I Madero,2023,mixto,True,2,0,0,1,0,,data\coahuila\json_predial\2023\COAH_PREDIAL_2023_francisco_i_madero.json
-francisco_i_madero,Francisco I Madero,2024,mixto,True,2,0,0,1,0,,data\coahuila\json_predial\2024\COAH_PREDIAL_2024_francisco_i_madero.json
-francisco_i_madero,Francisco I Madero,2025,mixto,True,2,0,0,1,0,,data\coahuila\json_predial\2025\COAH_PREDIAL_2025_francisco_i_madero.json
+francisco_i_madero,Francisco I Madero,2010,tarifa_millar,True,2,0,0,1,0,tipo_tarifa_millar_con_tabla_cuota_fija_no_vacia,data\coahuila\json_predial\2010\COAH_PREDIAL_2010_francisco_i_madero.json
+francisco_i_madero,Francisco I Madero,2011,tarifa_millar,True,2,0,0,0,0,,data\coahuila\json_predial\2011\COAH_PREDIAL_2011_francisco_i_madero.json
+francisco_i_madero,Francisco I Madero,2012,tarifa_millar,True,2,0,0,1,0,tipo_tarifa_millar_con_tabla_cuota_fija_no_vacia,data\coahuila\json_predial\2012\COAH_PREDIAL_2012_francisco_i_madero.json
+francisco_i_madero,Francisco I Madero,2013,tarifa_millar,True,2,0,0,1,0,tipo_tarifa_millar_con_tabla_cuota_fija_no_vacia,data\coahuila\json_predial\2013\COAH_PREDIAL_2013_francisco_i_madero.json
+francisco_i_madero,Francisco I Madero,2014,tarifa_millar,True,2,0,0,1,0,tipo_tarifa_millar_con_tabla_cuota_fija_no_vacia,data\coahuila\json_predial\2014\COAH_PREDIAL_2014_francisco_i_madero.json
+francisco_i_madero,Francisco I Madero,2015,tarifa_millar,True,2,0,0,0,0,,data\coahuila\json_predial\2015\COAH_PREDIAL_2015_francisco_i_madero.json
+francisco_i_madero,Francisco I Madero,2016,tarifa_millar,True,2,0,0,1,0,tipo_tarifa_millar_con_tabla_cuota_fija_no_vacia,data\coahuila\json_predial\2016\COAH_PREDIAL_2016_francisco_i_madero.json
+francisco_i_madero,Francisco I Madero,2017,tarifa_millar,True,2,0,0,1,0,tipo_tarifa_millar_con_tabla_cuota_fija_no_vacia,data\coahuila\json_predial\2017\COAH_PREDIAL_2017_francisco_i_madero.json
+francisco_i_madero,Francisco I Madero,2018,tarifa_millar,True,2,0,0,1,0,tipo_tarifa_millar_con_tabla_cuota_fija_no_vacia,data\coahuila\json_predial\2018\COAH_PREDIAL_2018_francisco_i_madero.json
+francisco_i_madero,Francisco I Madero,2019,tarifa_millar,True,2,0,0,1,0,tipo_tarifa_millar_con_tabla_cuota_fija_no_vacia,data\coahuila\json_predial\2019\COAH_PREDIAL_2019_francisco_i_madero.json
+francisco_i_madero,Francisco I Madero,2020,tarifa_millar,True,2,0,0,1,0,tipo_tarifa_millar_con_tabla_cuota_fija_no_vacia,data\coahuila\json_predial\2020\COAH_PREDIAL_2020_francisco_i_madero.json
+francisco_i_madero,Francisco I Madero,2021,tarifa_millar,True,2,0,0,1,0,tipo_tarifa_millar_con_tabla_cuota_fija_no_vacia,data\coahuila\json_predial\2021\COAH_PREDIAL_2021_francisco_i_madero.json
+francisco_i_madero,Francisco I Madero,2022,tarifa_millar,True,2,0,0,1,0,tipo_tarifa_millar_con_tabla_cuota_fija_no_vacia,data\coahuila\json_predial\2022\COAH_PREDIAL_2022_francisco_i_madero.json
+francisco_i_madero,Francisco I Madero,2023,tarifa_millar,True,2,0,0,1,0,tipo_tarifa_millar_con_tabla_cuota_fija_no_vacia,data\coahuila\json_predial\2023\COAH_PREDIAL_2023_francisco_i_madero.json
+francisco_i_madero,Francisco I Madero,2024,tarifa_millar,True,2,0,0,1,0,tipo_tarifa_millar_con_tabla_cuota_fija_no_vacia,data\coahuila\json_predial\2024\COAH_PREDIAL_2024_francisco_i_madero.json
+francisco_i_madero,Francisco I Madero,2025,tarifa_millar,True,2,0,0,1,0,tipo_tarifa_millar_con_tabla_cuota_fija_no_vacia,data\coahuila\json_predial\2025\COAH_PREDIAL_2025_francisco_i_madero.json
 frontera,Frontera,2010,tarifa_millar,True,2,0,0,0,0,,data\coahuila\json_predial\2010\COAH_PREDIAL_2010_frontera.json
 frontera,Frontera,2011,tarifa_millar,True,2,0,0,0,0,,data\coahuila\json_predial\2011\COAH_PREDIAL_2011_frontera.json
 frontera,Frontera,2012,tarifa_millar,True,2,0,0,0,0,,data\coahuila\json_predial\2012\COAH_PREDIAL_2012_frontera.json
@@ -203,8 +203,8 @@ hidalgo,Hidalgo,2025,tarifa_millar,True,2,0,0,0,0,,data\coahuila\json_predial\20
 jimenez,Jimenez,2010,tarifa_millar,True,2,0,0,0,0,,data\coahuila\json_predial\2010\COAH_PREDIAL_2010_jimenez.json
 jimenez,Jimenez,2011,tarifa_millar,True,2,0,0,0,0,,data\coahuila\json_predial\2011\COAH_PREDIAL_2011_jimenez.json
 jimenez,Jimenez,2012,tarifa_millar,True,2,0,0,0,0,,data\coahuila\json_predial\2012\COAH_PREDIAL_2012_jimenez.json
-jimenez,Jimenez,2013,mixto,True,2,0,0,1,0,cambio_esquema_tarifa_millar_a_mixto_desde_2012,data\coahuila\json_predial\2013\COAH_PREDIAL_2013_jimenez.json
-jimenez,Jimenez,2014,tarifa_millar,True,2,0,0,0,0,cambio_esquema_mixto_a_tarifa_millar_desde_2013,data\coahuila\json_predial\2014\COAH_PREDIAL_2014_jimenez.json
+jimenez,Jimenez,2013,tarifa_millar,True,2,0,0,1,0,tipo_tarifa_millar_con_tabla_cuota_fija_no_vacia,data\coahuila\json_predial\2013\COAH_PREDIAL_2013_jimenez.json
+jimenez,Jimenez,2014,tarifa_millar,True,2,0,0,0,0,,data\coahuila\json_predial\2014\COAH_PREDIAL_2014_jimenez.json
 jimenez,Jimenez,2015,tarifa_millar,True,2,0,0,0,0,,data\coahuila\json_predial\2015\COAH_PREDIAL_2015_jimenez.json
 jimenez,Jimenez,2016,tarifa_millar,True,2,0,0,0,0,,data\coahuila\json_predial\2016\COAH_PREDIAL_2016_jimenez.json
 jimenez,Jimenez,2017,tarifa_millar,True,2,0,0,0,0,,data\coahuila\json_predial\2017\COAH_PREDIAL_2017_jimenez.json
@@ -220,8 +220,8 @@ juarez,Juarez,2010,tarifa_millar,True,2,0,0,0,0,,data\coahuila\json_predial\2010
 juarez,Juarez,2011,tarifa_millar,True,2,0,0,0,0,,data\coahuila\json_predial\2011\COAH_PREDIAL_2011_juarez.json
 juarez,Juarez,2012,tarifa_millar,True,2,0,0,0,0,,data\coahuila\json_predial\2012\COAH_PREDIAL_2012_juarez.json
 juarez,Juarez,2013,tarifa_millar,True,2,0,0,0,0,,data\coahuila\json_predial\2013\COAH_PREDIAL_2013_juarez.json
-juarez,Juarez,2014,mixto,True,2,0,0,1,0,cambio_esquema_tarifa_millar_a_mixto_desde_2013,data\coahuila\json_predial\2014\COAH_PREDIAL_2014_juarez.json
-juarez,Juarez,2015,tarifa_millar,True,2,0,0,0,0,cambio_esquema_mixto_a_tarifa_millar_desde_2014,data\coahuila\json_predial\2015\COAH_PREDIAL_2015_juarez.json
+juarez,Juarez,2014,tarifa_millar,True,2,0,0,1,0,tipo_tarifa_millar_con_tabla_cuota_fija_no_vacia,data\coahuila\json_predial\2014\COAH_PREDIAL_2014_juarez.json
+juarez,Juarez,2015,tarifa_millar,True,2,0,0,0,0,,data\coahuila\json_predial\2015\COAH_PREDIAL_2015_juarez.json
 juarez,Juarez,2016,tarifa_millar,True,2,0,0,0,0,,data\coahuila\json_predial\2016\COAH_PREDIAL_2016_juarez.json
 juarez,Juarez,2017,tarifa_millar,True,2,0,0,0,0,,data\coahuila\json_predial\2017\COAH_PREDIAL_2017_juarez.json
 juarez,Juarez,2018,tarifa_millar,True,2,0,0,0,0,,data\coahuila\json_predial\2018\COAH_PREDIAL_2018_juarez.json
@@ -304,7 +304,7 @@ muzquiz,Muzquiz,2021,tarifa_millar,True,3,0,0,0,0,,data\coahuila\json_predial\20
 muzquiz,Muzquiz,2022,tarifa_millar,True,3,0,0,0,0,,data\coahuila\json_predial\2022\COAH_PREDIAL_2022_muzquiz.json
 muzquiz,Muzquiz,2023,tarifa_millar,True,3,0,0,0,0,,data\coahuila\json_predial\2023\COAH_PREDIAL_2023_muzquiz.json
 muzquiz,Muzquiz,2024,tarifa_millar,True,3,0,0,0,0,,data\coahuila\json_predial\2024\COAH_PREDIAL_2024_muzquiz.json
-nadadores,Nadadores,2010,desconocido,False,0,0,0,0,0,,data\coahuila\json_predial\2010\COAH_PREDIAL_2010_nadadores.json
+nadadores,Nadadores,2010,tarifa_millar,True,2,0,0,0,0,,data\coahuila\json_predial\2010\COAH_PREDIAL_2010_nadadores.json
 nadadores,Nadadores,2011,tarifa_millar,True,2,0,0,0,0,,data\coahuila\json_predial\2011\COAH_PREDIAL_2011_nadadores.json
 nadadores,Nadadores,2012,tarifa_millar,True,2,0,0,0,0,,data\coahuila\json_predial\2012\COAH_PREDIAL_2012_nadadores.json
 nadadores,Nadadores,2013,tarifa_millar,True,2,0,0,0,0,,data\coahuila\json_predial\2013\COAH_PREDIAL_2013_nadadores.json
@@ -346,7 +346,7 @@ ocampo,Ocampo,2021,tarifa_millar,True,2,0,0,0,0,,data\coahuila\json_predial\2021
 ocampo,Ocampo,2022,tarifa_millar,True,2,0,0,0,0,,data\coahuila\json_predial\2022\COAH_PREDIAL_2022_ocampo.json
 ocampo,Ocampo,2023,tarifa_millar,True,2,0,0,0,0,,data\coahuila\json_predial\2023\COAH_PREDIAL_2023_ocampo.json
 ocampo,Ocampo,2024,tarifa_millar,True,2,0,0,0,0,,data\coahuila\json_predial\2024\COAH_PREDIAL_2024_ocampo.json
-parras,Parras,2010,desconocido,False,0,0,0,0,0,,data\coahuila\json_predial\2010\COAH_PREDIAL_2010_parras.json
+parras,Parras,2010,tarifa_millar,True,2,0,0,0,0,,data\coahuila\json_predial\2010\COAH_PREDIAL_2010_parras.json
 parras,Parras,2011,tarifa_millar,True,2,0,0,0,0,,data\coahuila\json_predial\2011\COAH_PREDIAL_2011_parras.json
 parras,Parras,2012,tarifa_millar,True,2,0,0,0,0,,data\coahuila\json_predial\2012\COAH_PREDIAL_2012_parras.json
 parras,Parras,2013,tarifa_millar,True,2,0,0,0,0,,data\coahuila\json_predial\2013\COAH_PREDIAL_2013_parras.json
@@ -490,8 +490,8 @@ san_pedro,San Pedro,2013,tarifa_millar,True,2,0,0,0,0,,data\coahuila\json_predia
 san_pedro,San Pedro,2014,tarifa_millar,True,2,0,0,0,0,,data\coahuila\json_predial\2014\COAH_PREDIAL_2014_san_pedro.json
 san_pedro,San Pedro,2015,tarifa_millar,True,2,0,0,0,0,,data\coahuila\json_predial\2015\COAH_PREDIAL_2015_san_pedro.json
 san_pedro,San Pedro,2016,tarifa_millar,True,2,0,0,1,0,tipo_tarifa_millar_con_tabla_cuota_fija_no_vacia,data\coahuila\json_predial\2016\COAH_PREDIAL_2016_san_pedro.json
-san_pedro,San Pedro,2018,mixto,True,2,0,0,1,0,cambio_esquema_tarifa_millar_a_mixto_desde_2016,data\coahuila\json_predial\2018\COAH_PREDIAL_2018_san_pedro.json
-san_pedro,San Pedro,2019,tarifa_millar,True,2,0,0,1,0,cambio_esquema_mixto_a_tarifa_millar_desde_2018|tipo_tarifa_millar_con_tabla_cuota_fija_no_vacia,data\coahuila\json_predial\2019\COAH_PREDIAL_2019_san_pedro.json
+san_pedro,San Pedro,2018,tarifa_millar,True,2,0,0,1,0,tipo_tarifa_millar_con_tabla_cuota_fija_no_vacia,data\coahuila\json_predial\2018\COAH_PREDIAL_2018_san_pedro.json
+san_pedro,San Pedro,2019,tarifa_millar,True,2,0,0,1,0,tipo_tarifa_millar_con_tabla_cuota_fija_no_vacia,data\coahuila\json_predial\2019\COAH_PREDIAL_2019_san_pedro.json
 san_pedro,San Pedro,2020,tarifa_millar,True,4,0,0,0,0,,data\coahuila\json_predial\2020\COAH_PREDIAL_2020_san_pedro.json
 san_pedro,San Pedro,2021,tarifa_millar,True,7,0,0,1,0,tipo_tarifa_millar_con_tabla_cuota_fija_no_vacia,data\coahuila\json_predial\2021\COAH_PREDIAL_2021_san_pedro.json
 san_pedro,San Pedro,2022,tarifa_millar,True,6,0,0,0,0,,data\coahuila\json_predial\2022\COAH_PREDIAL_2022_san_pedro.json

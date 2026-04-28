@@ -6,6 +6,7 @@ abala,2020,mixto,progresivo
 abala,2023,progresivo,mixto
 abala,2024,mixto,progresivo
 abala,2025,progresivo,tasa_unica
+akil,2023,progresivo,tarifa_millar
 baca,2017,tasa_unica,cuota_fija
 baca,2018,cuota_fija,progresivo
 bokoba,2011,mixto,progresivo
@@ -65,6 +66,8 @@ dzemul,2016,tarifa_millar,tasa_unica
 dzemul,2017,tasa_unica,mixto
 dzemul,2018,mixto,progresivo
 dzemul,2020,progresivo,tarifa_millar
+dzidzantun,2011,progresivo,tasa_unica
+dzidzantun,2012,tasa_unica,progresivo
 dzilam_de_bravo,2016,cuota_fija,tarifa_millar
 dzilam_de_bravo,2022,tarifa_millar,tasa_unica
 dzitas,2015,tasa_unica,tarifa_millar
@@ -143,10 +146,17 @@ rio_lagartos,2020,progresivo,tasa_unica
 rio_lagartos,2024,tasa_unica,tarifa_millar
 san_felipe,2017,progresivo,mixto
 san_felipe,2018,mixto,progresivo
+san_felipe,2022,progresivo,cuota_fija
+san_felipe,2023,cuota_fija,tasa_unica
 sanahcat,2011,cuota_fija,mixto
+sanahcat,2012,mixto,tarifa_millar
+sanahcat,2013,tarifa_millar,cuota_fija
 sanahcat,2014,cuota_fija,tarifa_millar
 sanahcat,2015,tarifa_millar,mixto
-sanahcat,2019,cuota_fija,mixto
+sanahcat,2016,mixto,tarifa_millar
+sanahcat,2018,tarifa_millar,cuota_fija
+sanahcat,2019,cuota_fija,tarifa_millar
+sanahcat,2022,tarifa_millar,mixto
 sanahcat,2025,mixto,progresivo
 santa_elena,2021,progresivo,mixto
 seye,2013,cuota_fija,progresivo
@@ -169,6 +179,7 @@ tahmek,2011,progresivo,mixto
 tahmek,2012,mixto,progresivo
 tahmek,2013,progresivo,mixto
 tahmek,2018,mixto,progresivo
+tekanto,2011,tarifa_millar,progresivo
 tekax,2020,tarifa_millar,tasa_unica
 tekit,2011,tarifa_millar,tasa_unica
 tekit,2012,tasa_unica,tarifa_millar
@@ -180,6 +191,8 @@ tekom,2013,progresivo,mixto
 tekom,2014,mixto,progresivo
 tekom,2021,progresivo,tasa_unica
 tekom,2024,tasa_unica,tarifa_millar
+telchac_pueblo,2012,tasa_unica,mixto
+telchac_pueblo,2013,mixto,tasa_unica
 telchac_pueblo,2021,tasa_unica,progresivo
 telchac_pueblo,2024,progresivo,mixto
 telchac_puerto,2014,progresivo,mixto

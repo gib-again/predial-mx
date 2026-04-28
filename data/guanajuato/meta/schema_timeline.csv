@@ -170,6 +170,7 @@ guanajuato,2017,tarifa_millar,True
 guanajuato,2018,tarifa_millar,True
 guanajuato,2019,desconocido,False
 guanajuato,2020,tarifa_millar,True
+guanajuato,2023,progresivo,True
 guanajuato,2024,progresivo,True
 guanajuato,2025,mixto,True
 guanajuato,2026,mixto,True
@@ -199,7 +200,7 @@ irapuato,2022,progresivo,True
 irapuato,2023,progresivo,True
 irapuato,2024,progresivo,True
 irapuato,2025,progresivo,True
-irapuato,2026,progresivo,False
+irapuato,2026,progresivo,True
 jaral_del_progreso,2011,tarifa_millar,True
 jaral_del_progreso,2012,tarifa_millar,True
 jaral_del_progreso,2014,tarifa_millar,True
@@ -235,7 +236,7 @@ leon,2014,mixto,True
 leon,2015,tarifa_millar,True
 leon,2017,tasa_unica,True
 leon,2018,tarifa_millar,True
-leon,2019,progresivo,True
+leon,2019,tarifa_millar,True
 leon,2020,progresivo,True
 leon,2021,progresivo,True
 leon,2022,progresivo,True
@@ -243,7 +244,6 @@ leon,2023,mixto,True
 leon,2024,progresivo,True
 leon,2025,progresivo,True
 leon,2026,progresivo,True
-lrapuato,2019,tarifa_millar,True
 manuel_doblado,2010,tarifa_millar,True
 manuel_doblado,2014,tarifa_millar,True
 manuel_doblado,2015,tarifa_millar,True
@@ -302,6 +302,7 @@ penjamo,2023,progresivo,True
 penjamo,2024,progresivo,True
 penjamo,2025,progresivo,True
 penjamo,2026,progresivo,True
+penjiamo_guanaj_jato,2010,tarifa_millar,True
 pueblo_nuevo,2011,tarifa_millar,True
 pueblo_nuevo,2012,tarifa_millar,True
 pueblo_nuevo,2014,tarifa_millar,True
@@ -329,7 +330,7 @@ purisima_del_rincon,2022,tarifa_millar,True
 purisima_del_rincon,2023,tarifa_millar,True
 purisima_del_rincon,2024,tarifa_millar,True
 purisima_del_rincon,2025,tarifa_millar,True
-purisima_del_rincon,2026,tarifa_millar,False
+purisima_del_rincon,2026,tarifa_millar,True
 romita,2010,tarifa_millar,True
 romita,2011,tarifa_millar,True
 romita,2012,tarifa_millar,True
@@ -385,6 +386,7 @@ san_diego_de_la_union,2020,tarifa_millar,True
 san_diego_de_la_union,2021,tarifa_millar,True
 san_diego_de_la_union,2022,tarifa_millar,True
 san_diego_de_la_union,2023,tarifa_millar,True
+san_diego_de_la_union,2024,desconocido,False
 san_diego_de_la_union,2025,tarifa_millar,True
 san_diego_de_la_union,2026,tarifa_millar,True
 san_felipe,2010,tarifa_millar,True
@@ -409,6 +411,7 @@ san_francisco_del_rincon,2018,tarifa_millar,True
 san_francisco_del_rincon,2019,tarifa_millar,True
 san_francisco_del_rincon,2020,mixto,True
 san_francisco_del_rincon,2021,progresivo,True
+san_jose_de_iturbide,2023,progresivo,True
 san_jose_iturbide,2010,tarifa_millar,True
 san_jose_iturbide,2011,tarifa_millar,True
 san_jose_iturbide,2012,tarifa_millar,True
