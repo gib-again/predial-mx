@@ -39,8 +39,6 @@ data/*/debug_html/
 # ── Caché de texto extraído de PDFs ──
 .text_cache/
 
-# ── Salidas de extracción v2 (regenerables) ──
-predial-mx-v2/
-
-# ── Artefactos de regression / investigación ──
+# ── Artefactos de regression / investigación (logs verbosos) ──
 output/regression_*
+output/reextract_v2*.log

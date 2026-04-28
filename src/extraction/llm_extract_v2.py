@@ -561,13 +561,22 @@ def _save_result(result: ExtractionResult) -> Path:
 
 # ── Función pública ──
 
-def extraer_municipio(estado: str, cvegeo: str, anios: Iterable[int]) -> list[ExtractionResult]:
+def extraer_municipio(
+    estado: str,
+    cvegeo: str,
+    anios: Iterable[int],
+    slug_override: str | None = None,
+) -> list[ExtractionResult]:
     """Extrae predial v2 para un municipio en los años indicados.
 
     Args:
         estado: Slug del estado (ej: "yucatan", "coahuila", "tamaulipas").
         cvegeo: Clave INEGI de 5 dígitos (ej: "31021" para Chichimilá, Yucatán).
         anios: Iterable de años (ej: [2010, 2022, 2023] o range(2010, 2026)).
+        slug_override: Slug explícito a usar para localizar el TXT y nombrar el
+            JSON de salida. Útil cuando el slug del filename difiere del slug
+            que arroja el catálogo INEGI (ej. "suma_de_hidalgo" vs catálogo
+            "suma"). Si es None, se resuelve vía catálogo.
 
     Returns:
         Lista de ExtractionResult, uno por año procesado. JSONs guardados en
@@ -583,7 +592,8 @@ def extraer_municipio(estado: str, cvegeo: str, anios: Iterable[int]) -> list[Ex
     prefijo = PREFIJOS_ESTADO[estado]
     estado_pretty = estado.capitalize()
 
-    slug, municipio_pretty = _resolve_cvegeo(cvegeo)
+    slug_catalog, municipio_pretty = _resolve_cvegeo(cvegeo)
+    slug = slug_override or slug_catalog
 
     results: list[ExtractionResult] = []
     print(f"[v2] {estado.upper()} cvegeo={cvegeo} ({municipio_pretty})  modelo={OPENAI_MODEL}")
