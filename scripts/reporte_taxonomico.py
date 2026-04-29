@@ -77,6 +77,7 @@ def _semantic_tag(text: str | None) -> str:
 def main() -> int:
     rows: list[dict] = []
     invalid: list[dict] = []
+    n_synthetic = 0
 
     for estado in ESTADOS:
         d = V2_ROOT / estado
@@ -96,6 +97,9 @@ def main() -> int:
             razon = meta_v2.get("razon", "") or ""
             escalado = bool(meta_v2.get("escalado", False))
             modelo = (data.get("_meta") or {}).get("modelo", "")
+            sintetico = modelo == "synthesized_short_form"
+            if sintetico:
+                n_synthetic += 1
 
             predial = data.get("predial")
             if not isinstance(predial, dict):
@@ -105,7 +109,8 @@ def main() -> int:
                     "es_otro": False, "categoria": None, "descripcion": None,
                     "comentarios": "", "requiere_revision": requiere_revision,
                     "razon": razon, "escalado": escalado, "modelo": modelo,
-                    "valido": False, "json_path": str(jp.relative_to(ROOT)),
+                    "valido": False, "sintetico": sintetico,
+                    "json_path": str(jp.relative_to(ROOT)),
                 })
                 continue
 
@@ -127,7 +132,8 @@ def main() -> int:
                     "comentarios": comentarios,
                     "requiere_revision": requiere_revision,
                     "razon": razon, "escalado": escalado, "modelo": modelo,
-                    "valido": True, "json_path": str(jp.relative_to(ROOT)),
+                    "valido": True, "sintetico": sintetico,
+                    "json_path": str(jp.relative_to(ROOT)),
                 })
             except Exception as e:
                 invalid.append({"path": str(jp), "error": f"validation: {e!s}"[:300]})
@@ -139,7 +145,8 @@ def main() -> int:
                     "requiere_revision": True,
                     "razon": f"validation_error: {e}"[:200],
                     "escalado": escalado, "modelo": modelo,
-                    "valido": False, "json_path": str(jp.relative_to(ROOT)),
+                    "valido": False, "sintetico": sintetico,
+                    "json_path": str(jp.relative_to(ROOT)),
                 })
 
     # (1) Conteos
@@ -169,6 +176,14 @@ def main() -> int:
             f"Fuente: `predial-mx-v2/`  ·  Estados: {', '.join(ESTADOS)}  ·  "
             f"Total JSONs: **{len(rows)}**\n\n"
         )
+        if n_synthetic:
+            n_llm = len(rows) - n_synthetic
+            f.write(
+                f"De los {len(rows)} JSONs: **{n_llm}** vienen del LLM y "
+                f"**{n_synthetic}** son sintéticos (`modelo='synthesized_short_form'`, "
+                f"markers deterministas del fallback `_extract_short_form_predial` "
+                f"del segmentador de Yucatán para leyes en formato corto).\n\n"
+            )
         if invalid:
             f.write(f"⚠️ **{len(invalid)} archivo(s) fallaron lectura/validación.**\n\n")
             for inv in invalid[:10]:

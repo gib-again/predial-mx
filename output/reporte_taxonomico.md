@@ -1,6 +1,8 @@
 # Reporte taxonómico — extracciones predial v2
 
-Fuente: `predial-mx-v2/`  ·  Estados: coahuila, guanajuato, tamaulipas, yucatan  ·  Total JSONs: **3248**
+Fuente: `predial-mx-v2/`  ·  Estados: coahuila, guanajuato, tamaulipas, yucatan  ·  Total JSONs: **3370**
+
+De los 3370 JSONs: **3248** vienen del LLM y **122** son sintéticos (`modelo='synthesized_short_form'`, markers deterministas del fallback `_extract_short_form_predial` del segmentador de Yucatán para leyes en formato corto).
 
 ## 1. Distribución por `tipo_corregido`
 
@@ -8,30 +10,176 @@ Fuente: `predial-mx-v2/`  ·  Estados: coahuila, guanajuato, tamaulipas, yucatan
 
 | Tipo | Casos | % |
 |---|---:|---:|
-| `tarifa_millar` | 1689 | 52.0% |
-| `progresivo` | 859 | 26.4% |
-| `mixto` | 343 | 10.6% |
-| `tasa_unica` | 170 | 5.2% |
-| `otro_no_clasificado` | 104 | 3.2% |
-| `cuota_fija_simple` | 42 | 1.3% |
+| `tarifa_millar` | 1689 | 50.1% |
+| `progresivo` | 859 | 25.5% |
+| `mixto` | 343 | 10.2% |
+| `otro_no_clasificado` | 226 | 6.7% |
+| `tasa_unica` | 170 | 5.0% |
+| `cuota_fija_simple` | 42 | 1.2% |
 | `FALTA_PREDIAL` | 21 | 0.6% |
 | `cuota_fija_escalonada` | 20 | 0.6% |
-| **Total** | **3248** | 100.0% |
+| **Total** | **3370** | 100.0% |
 
 ### Por estado
 
-| Estado | `tarifa_millar` | `progresivo` | `mixto` | `tasa_unica` | `otro_no_clasificado` | `cuota_fija_simple` | `FALTA_PREDIAL` | `cuota_fija_escalonada` | Total |
+| Estado | `tarifa_millar` | `progresivo` | `mixto` | `otro_no_clasificado` | `tasa_unica` | `cuota_fija_simple` | `FALTA_PREDIAL` | `cuota_fija_escalonada` | Total |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| coahuila | 535 | 18 | 17 | 0 | 8 | 0 | 1 | 0 | **579** |
-| guanajuato | 487 | 50 | 24 | 3 | 58 | 5 | 0 | 0 | **627** |
-| tamaulipas | 600 | 60 | 18 | 0 | 6 | 1 | 0 | 0 | **685** |
-| yucatan | 67 | 731 | 284 | 167 | 32 | 36 | 20 | 20 | **1357** |
+| coahuila | 535 | 18 | 17 | 8 | 0 | 0 | 1 | 0 | **579** |
+| guanajuato | 487 | 50 | 24 | 58 | 3 | 5 | 0 | 0 | **627** |
+| tamaulipas | 600 | 60 | 18 | 6 | 0 | 1 | 0 | 0 | **685** |
+| yucatan | 67 | 731 | 284 | 154 | 167 | 36 | 20 | 20 | **1479** |
 
 ## 2. Casos `otro_no_clasificado` agrupados por similitud
 
-Total casos: **104**  ·  Grupos distintos: **20**  ·  Criterio: `(categoria, tag_semántico)` — el tag se asigna por keywords-regex sobre `descripcion_estructural`. Una descripción que matchea el primer patrón gana ese tag (early-match-wins).
+Total casos: **226**  ·  Grupos distintos: **20**  ·  Criterio: `(categoria, tag_semántico)` — el tag se asigna por keywords-regex sobre `descripcion_estructural`. Una descripción que matchea el primer patrón gana ese tag (early-match-wins).
 
-### Grupo #1 — 37 caso(s)  ·  `solo_encabezado`
+### Grupo #1 — 129 caso(s)  ·  `otro_patron`
+
+- **categoria**: `municipio_sin_impuesto`
+- **tag**: `otro_patron`
+- **estados**: coahuila(1), guanajuato(4), tamaulipas(2), yucatan(122)
+- **rango años**: 2010–2103 (18 años distintos)
+- **muni-años afectados**: 129
+
+**descripcion_estructural (ejemplar)**:
+
+> Ley de ingresos en formato corto: contiene únicamente pronóstico presupuestal por concepto (línea 'Impuesto Predial $X' o 'I.- Predial $X') sin secciones que detallen tarifas, tasas, montos al millar ni rangos. Las contribuciones se rigen por la Ley General de Hacienda Municipal del Estado de Yucatán (referenciada típicamente en Art. 13-15 del articulado).
+
+<details><summary>Lista completa (129 casos)</summary>
+
+- `coahuila` · nadadores (2010) — cvegeo 05021
+- `guanajuato` · salvatierra (2026) — cvegeo 11028
+- `guanajuato` · san_francisco_del_rincon (2021) — cvegeo 11031
+- `guanajuato` · silao_de_la_victoria (2026) — cvegeo 11037
+- `guanajuato` · tierra_blanca (2024) — cvegeo 11040
+- `tamaulipas` · miguel_aleman (2012) — cvegeo 28025
+- `tamaulipas` · miguel_aleman (2013) — cvegeo 28025
+- `yucatan` · acanceh (2010) — cvegeo 31002
+- `yucatan` · acanceh (2011) — cvegeo 31002
+- `yucatan` · acanceh (2012) — cvegeo 31002
+- `yucatan` · chochola (2010) — cvegeo 31023
+- `yucatan` · chochola (2012) — cvegeo 31023
+- `yucatan` · chochola (2019) — cvegeo 31023
+- `yucatan` · chochola (2020) — cvegeo 31023
+- `yucatan` · chochola (2021) — cvegeo 31023
+- `yucatan` · conkal (2022) — cvegeo 31013
+- `yucatan` · conkal (2023) — cvegeo 31013
+- `yucatan` · conkal (2024) — cvegeo 31013
+- `yucatan` · conkal (2025) — cvegeo 31013
+- `yucatan` · dzidzantun (2014) — cvegeo 31027
+- `yucatan` · dzidzantun (2019) — cvegeo 31027
+- `yucatan` · dzidzantun (2020) — cvegeo 31027
+- `yucatan` · dzidzantun (2022) — cvegeo 31027
+- `yucatan` · dzidzantun (2023) — cvegeo 31027
+- `yucatan` · dzidzantun (2024) — cvegeo 31027
+- `yucatan` · dzidzantun (2025) — cvegeo 31027
+- `yucatan` · hocaba (2010) — cvegeo 31034
+- `yucatan` · hocaba (2011) — cvegeo 31034
+- `yucatan` · hocaba (2012) — cvegeo 31034
+- `yucatan` · hocaba (2014) — cvegeo 31034
+- `yucatan` · hoctun (2025) — cvegeo 31035
+- `yucatan` · kanasin (2022) — cvegeo 31041
+- `yucatan` · kanasin (2023) — cvegeo 31041
+- `yucatan` · kanasin (2024) — cvegeo 31041
+- `yucatan` · kanasin (2025) — cvegeo 31041
+- `yucatan` · kaua (2025) — cvegeo 31043
+- `yucatan` · motul (2010) — cvegeo 31052
+- `yucatan` · motul (2011) — cvegeo 31052
+- `yucatan` · motul (2012) — cvegeo 31052
+- `yucatan` · motul (2013) — cvegeo 31052
+- `yucatan` · motul (2014) — cvegeo 31052
+- `yucatan` · motul (2016) — cvegeo 31052
+- `yucatan` · motul (2017) — cvegeo 31052
+- `yucatan` · motul (2018) — cvegeo 31052
+- `yucatan` · motul (2019) — cvegeo 31052
+- `yucatan` · motul (2020) — cvegeo 31052
+- `yucatan` · motul (2022) — cvegeo 31052
+- `yucatan` · motul (2023) — cvegeo 31052
+- `yucatan` · motul (2024) — cvegeo 31052
+- `yucatan` · muna (2010) — cvegeo 31053
+- `yucatan` · muna (2011) — cvegeo 31053
+- `yucatan` · muna (2012) — cvegeo 31053
+- `yucatan` · muna (2013) — cvegeo 31053
+- `yucatan` · muna (2014) — cvegeo 31053
+- `yucatan` · muna (2015) — cvegeo 31053
+- `yucatan` · muna (2017) — cvegeo 31053
+- `yucatan` · muna (2018) — cvegeo 31053
+- `yucatan` · muna (2019) — cvegeo 31053
+- `yucatan` · sacalum (2010) — cvegeo 31062
+- `yucatan` · sacalum (2011) — cvegeo 31062
+- `yucatan` · sacalum (2012) — cvegeo 31062
+- `yucatan` · sacalum (2013) — cvegeo 31062
+- `yucatan` · sacalum (2014) — cvegeo 31062
+- `yucatan` · sacalum (2017) — cvegeo 31062
+- `yucatan` · sacalum (2018) — cvegeo 31062
+- `yucatan` · sacalum (2019) — cvegeo 31062
+- `yucatan` · sacalum (2020) — cvegeo 31062
+- `yucatan` · sacalum (2021) — cvegeo 31062
+- `yucatan` · sacalum (2022) — cvegeo 31062
+- `yucatan` · sacalum (2023) — cvegeo 31062
+- `yucatan` · sacalum (2024) — cvegeo 31062
+- `yucatan` · sacalum (2025) — cvegeo 31062
+- `yucatan` · sotuta (2010) — cvegeo 31069
+- `yucatan` · sotuta (2013) — cvegeo 31069
+- `yucatan` · sotuta (2014) — cvegeo 31069
+- `yucatan` · sotuta (2015) — cvegeo 31069
+- `yucatan` · tahdziu (2010) — cvegeo 31073
+- `yucatan` · tahdziu (2011) — cvegeo 31073
+- `yucatan` · tahdziu (2012) — cvegeo 31073
+- `yucatan` · tahdziu (2013) — cvegeo 31073
+- `yucatan` · tahdziu (2014) — cvegeo 31073
+- `yucatan` · tahdziu (2016) — cvegeo 31073
+- `yucatan` · tekal_de_venegas (2010) — cvegeo 31077
+- `yucatan` · tekal_de_venegas (2011) — cvegeo 31077
+- `yucatan` · tekal_de_venegas (2012) — cvegeo 31077
+- `yucatan` · tekal_de_venegas (2013) — cvegeo 31077
+- `yucatan` · tekal_de_venegas (2014) — cvegeo 31077
+- `yucatan` · tekal_de_venegas (2015) — cvegeo 31077
+- `yucatan` · tekal_de_venegas (2016) — cvegeo 31077
+- `yucatan` · tekal_de_venegas (2017) — cvegeo 31077
+- `yucatan` · tekal_de_venegas (2018) — cvegeo 31077
+- `yucatan` · tekal_de_venegas (2019) — cvegeo 31077
+- `yucatan` · tekal_de_venegas (2020) — cvegeo 31077
+- `yucatan` · tekal_de_venegas (2021) — cvegeo 31077
+- `yucatan` · tekal_de_venegas (2022) — cvegeo 31077
+- `yucatan` · tekal_de_venegas (2023) — cvegeo 31077
+- `yucatan` · tekal_de_venegas (2024) — cvegeo 31077
+- `yucatan` · tekal_de_venegas (2025) — cvegeo 31077
+- `yucatan` · tekax (2019) — cvegeo 31079
+- `yucatan` · temax (2010) — cvegeo 31084
+- `yucatan` · temax (2012) — cvegeo 31084
+- `yucatan` · temax (2014) — cvegeo 31084
+- `yucatan` · temax (2015) — cvegeo 31084
+- `yucatan` · temax (2016) — cvegeo 31084
+- `yucatan` · temax (2017) — cvegeo 31084
+- `yucatan` · temax (2018) — cvegeo 31084
+- `yucatan` · temax (2019) — cvegeo 31084
+- `yucatan` · temax (2020) — cvegeo 31084
+- `yucatan` · temax (2021) — cvegeo 31084
+- `yucatan` · temax (2022) — cvegeo 31084
+- `yucatan` · temax (2023) — cvegeo 31084
+- `yucatan` · temax (2103) — cvegeo 31084
+- `yucatan` · tixpehual (2022) — cvegeo 31095
+- `yucatan` · tixpehual (2023) — cvegeo 31095
+- `yucatan` · tixpehual (2024) — cvegeo 31095
+- `yucatan` · tixpehual (2025) — cvegeo 31095
+- `yucatan` · tzucacab (2019) — cvegeo 31098
+- `yucatan` · tzucacab (2020) — cvegeo 31098
+- `yucatan` · tzucacab (2021) — cvegeo 31098
+- `yucatan` · uayma (2010) — cvegeo 31099
+- `yucatan` · uayma (2011) — cvegeo 31099
+- `yucatan` · uayma (2014) — cvegeo 31099
+- `yucatan` · uayma (2021) — cvegeo 31099
+- `yucatan` · uayma (2022) — cvegeo 31099
+- `yucatan` · uayma (2023) — cvegeo 31099
+- `yucatan` · uayma (2024) — cvegeo 31099
+- `yucatan` · valladolid (2010) — cvegeo 31102
+- `yucatan` · valladolid (2011) — cvegeo 31102
+- `yucatan` · valladolid (2012) — cvegeo 31102
+
+</details>
+
+### Grupo #2 — 37 caso(s)  ·  `solo_encabezado`
 
 - **categoria**: `segmento_vacio`
 - **tag**: `solo_encabezado`
@@ -85,7 +233,7 @@ Total casos: **104**  ·  Grupos distintos: **20**  ·  Criterio: `(categoria, t
 
 </details>
 
-### Grupo #2 — 12 caso(s)  ·  `dos_tarifas_paralelas`
+### Grupo #3 — 12 caso(s)  ·  `dos_tarifas_paralelas`
 
 - **categoria**: `estructura_no_estandar`
 - **tag**: `dos_tarifas_paralelas`
@@ -114,7 +262,7 @@ Total casos: **104**  ·  Grupos distintos: **20**  ·  Criterio: `(categoria, t
 
 </details>
 
-### Grupo #3 — 12 caso(s)  ·  `seccion_ausente`
+### Grupo #4 — 12 caso(s)  ·  `seccion_ausente`
 
 - **categoria**: `segmento_vacio`
 - **tag**: `seccion_ausente`
@@ -140,30 +288,6 @@ Total casos: **104**  ·  Grupos distintos: **20**  ·  Criterio: `(categoria, t
 - `guanajuato` · santa_catarina (2026) — cvegeo 11034
 - `guanajuato` · santa_cruz_de_juventino_rosas (2026) — cvegeo 11035
 - `guanajuato` · valle_de_santiago (2025) — cvegeo 11042
-
-</details>
-
-### Grupo #4 — 7 caso(s)  ·  `otro_patron`
-
-- **categoria**: `municipio_sin_impuesto`
-- **tag**: `otro_patron`
-- **estados**: coahuila(1), guanajuato(4), tamaulipas(2)
-- **rango años**: 2010–2026 (6 años distintos)
-- **muni-años afectados**: 7
-
-**descripcion_estructural (ejemplar)**:
-
-> El texto sólo establece una cuota mínima anual de tres salarios mínimos para el impuesto predial, pero no contiene tabla, rangos, tasa al millar ni fórmula de cálculo adicional para determinar la base del impuesto. La sección transcrita se limita a bonificaciones y a una cuota mínima, sin mecánica estructural completa del gravamen.
-
-<details><summary>Lista completa (7 casos)</summary>
-
-- `coahuila` · nadadores (2010) — cvegeo 05021
-- `guanajuato` · salvatierra (2026) — cvegeo 11028
-- `guanajuato` · san_francisco_del_rincon (2021) — cvegeo 11031
-- `guanajuato` · silao_de_la_victoria (2026) — cvegeo 11037
-- `guanajuato` · tierra_blanca (2024) — cvegeo 11040
-- `tamaulipas` · miguel_aleman (2012) — cvegeo 28025
-- `tamaulipas` · miguel_aleman (2013) — cvegeo 28025
 
 </details>
 
@@ -505,8 +629,8 @@ Total: **21**
 
 ## 4. Métricas resumen
 
-- Total JSONs: **3248**
-- Schema-validados (load + Pydantic v2): **3227** (99.4%)
-- `otro_no_clasificado`: **104** (3.2%) en 20 grupos
-- `requiere_revision` total: **125** (3.8%)
-- Escalados a fallback (`gpt-5.4`): **152** (4.7%)
+- Total JSONs: **3370**
+- Schema-validados (load + Pydantic v2): **3349** (99.4%)
+- `otro_no_clasificado`: **226** (6.7%) en 20 grupos
+- `requiere_revision` total: **125** (3.7%)
+- Escalados a fallback (`gpt-5.4`): **152** (4.5%)
