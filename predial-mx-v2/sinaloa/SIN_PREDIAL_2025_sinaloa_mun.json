@@ -1,0 +1,104 @@
+{
+  "predial": {
+    "tipo_esquema": "progresivo",
+    "tabla": [
+      {
+        "n_rango": 1,
+        "inferior": 0.01,
+        "superior": 61684.24,
+        "cuota_fija": 0.0,
+        "tasa_marginal": 0.0025
+      },
+      {
+        "n_rango": 2,
+        "inferior": 61684.26,
+        "superior": 137603.28,
+        "cuota_fija": 154.23,
+        "tasa_marginal": 0.0025499999999999997
+      },
+      {
+        "n_rango": 3,
+        "inferior": 137603.29,
+        "superior": 294186.34,
+        "cuota_fija": 347.81,
+        "tasa_marginal": 0.00264
+      },
+      {
+        "n_rango": 4,
+        "inferior": 294186.35,
+        "superior": 389085.11,
+        "cuota_fija": 761.22,
+        "tasa_marginal": 0.00277
+      },
+      {
+        "n_rango": 5,
+        "inferior": 389085.14,
+        "superior": 483983.95,
+        "cuota_fija": 1024.13,
+        "tasa_marginal": 0.0029500000000000004
+      },
+      {
+        "n_rango": 6,
+        "inferior": 483983.96,
+        "superior": 721230.95,
+        "cuota_fija": 1304.1,
+        "tasa_marginal": 0.00331
+      },
+      {
+        "n_rango": 7,
+        "inferior": 721230.97,
+        "superior": 1376032.75,
+        "cuota_fija": 2089.43,
+        "tasa_marginal": 0.00382
+      },
+      {
+        "n_rango": 8,
+        "inferior": 1376032.77,
+        "superior": 2088170.98,
+        "cuota_fija": 4592.0,
+        "tasa_marginal": 0.00428
+      },
+      {
+        "n_rango": 9,
+        "inferior": 2088171.0,
+        "superior": 3701885.14,
+        "cuota_fija": 7639.94,
+        "tasa_marginal": 0.00498
+      },
+      {
+        "n_rango": 10,
+        "inferior": 3701885.15,
+        "superior": 7593912.81,
+        "cuota_fija": 15674.06,
+        "tasa_marginal": 0.00537
+      },
+      {
+        "n_rango": 11,
+        "inferior": 7593912.82,
+        "superior": null,
+        "cuota_fija": 36570.77,
+        "tasa_marginal": 0.00657
+      }
+    ],
+    "minimo_predial": null,
+    "comentarios": "Hardcoded → v2 desde Ley de Hacienda Municipal de Sinaloa (Art. 35-36, columna construido). Se descarta columna baldio para mantener un esquema por archivo."
+  },
+  "_meta": {
+    "fuente": "txt",
+    "modelo": "hardcoded"
+  },
+  "_meta_v2": {
+    "intentos": 0,
+    "requiere_revision": false,
+    "razon": null,
+    "tokens": {
+      "input": 0,
+      "output": 0,
+      "cached": 0
+    },
+    "cvegeo": "25017",
+    "estado": "sinaloa",
+    "anio": 2025,
+    "fuente_url": "https://www.congresosinaloa.gob.mx/leyes/"
+  }
+}

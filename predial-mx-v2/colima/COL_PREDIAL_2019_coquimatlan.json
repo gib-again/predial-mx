@@ -1,0 +1,209 @@
+{
+  "predial": {
+    "tipo_esquema": "progresivo",
+    "tabla": [
+      {
+        "n_rango": 1,
+        "inferior": 0.0,
+        "superior": 40400.0,
+        "cuota_fija": 168.98,
+        "tasa_marginal": 0.0
+      },
+      {
+        "n_rango": 2,
+        "inferior": 40401.0,
+        "superior": 48400.0,
+        "cuota_fija": 168.98,
+        "tasa_marginal": 0.0005525
+      },
+      {
+        "n_rango": 3,
+        "inferior": 48401.0,
+        "superior": 58400.0,
+        "cuota_fija": 215.44949999999997,
+        "tasa_marginal": 0.000585
+      },
+      {
+        "n_rango": 4,
+        "inferior": 58401.0,
+        "superior": 68400.0,
+        "cuota_fija": 274.5925,
+        "tasa_marginal": 0.0006175
+      },
+      {
+        "n_rango": 5,
+        "inferior": 68401.0,
+        "superior": 72000.0,
+        "cuota_fija": 337.96,
+        "tasa_marginal": 0.00065
+      },
+      {
+        "n_rango": 6,
+        "inferior": 72001.0,
+        "superior": 122000.0,
+        "cuota_fija": 374.29069999999996,
+        "tasa_marginal": 0.0006825
+      },
+      {
+        "n_rango": 7,
+        "inferior": 122001.0,
+        "superior": 172000.0,
+        "cuota_fija": 663.2465,
+        "tasa_marginal": 0.000715
+      },
+      {
+        "n_rango": 8,
+        "inferior": 172001.0,
+        "superior": 222000.0,
+        "cuota_fija": 977.5493,
+        "tasa_marginal": 0.0007475
+      },
+      {
+        "n_rango": 9,
+        "inferior": 222001.0,
+        "superior": 288000.0,
+        "cuota_fija": 1299.4562,
+        "tasa_marginal": 0.00078
+      },
+      {
+        "n_rango": 10,
+        "inferior": 288001.0,
+        "superior": 338000.0,
+        "cuota_fija": 1779.3593999999998,
+        "tasa_marginal": 0.0008125
+      },
+      {
+        "n_rango": 11,
+        "inferior": 338001.0,
+        "superior": 388000.0,
+        "cuota_fija": 2171.393,
+        "tasa_marginal": 0.000845
+      },
+      {
+        "n_rango": 12,
+        "inferior": 388001.0,
+        "superior": 438000.0,
+        "cuota_fija": 2588.7736,
+        "tasa_marginal": 0.0008775
+      },
+      {
+        "n_rango": 13,
+        "inferior": 438001.0,
+        "superior": 480000.0,
+        "cuota_fija": 3029.8113999999996,
+        "tasa_marginal": 0.00091
+      },
+      {
+        "n_rango": 14,
+        "inferior": 480001.0,
+        "superior": 560000.0,
+        "cuota_fija": 3414.2408999999993,
+        "tasa_marginal": 0.0009425
+      },
+      {
+        "n_rango": 15,
+        "inferior": 560001.0,
+        "superior": 640000.0,
+        "cuota_fija": 4150.9937,
+        "tasa_marginal": 0.000975
+      },
+      {
+        "n_rango": 16,
+        "inferior": 640001.0,
+        "superior": 720000.0,
+        "cuota_fija": 4902.1098,
+        "tasa_marginal": 0.0010075
+      },
+      {
+        "n_rango": 17,
+        "inferior": 720001.0,
+        "superior": 800000.0,
+        "cuota_fija": 5692.0913,
+        "tasa_marginal": 0.00104
+      },
+      {
+        "n_rango": 18,
+        "inferior": 800001.0,
+        "superior": 880000.0,
+        "cuota_fija": 6525.1627,
+        "tasa_marginal": 0.0010725
+      },
+      {
+        "n_rango": 19,
+        "inferior": 880001.0,
+        "superior": 960000.0,
+        "cuota_fija": 7395.409699999999,
+        "tasa_marginal": 0.001105
+      },
+      {
+        "n_rango": 20,
+        "inferior": 960001.0,
+        "superior": 1040000.0,
+        "cuota_fija": 8304.5221,
+        "tasa_marginal": 0.0011375
+      },
+      {
+        "n_rango": 21,
+        "inferior": 1040001.0,
+        "superior": 1120000.0,
+        "cuota_fija": 9253.344799999999,
+        "tasa_marginal": 0.00117
+      },
+      {
+        "n_rango": 22,
+        "inferior": 1120001.0,
+        "superior": 1200000.0,
+        "cuota_fija": 10241.032899999998,
+        "tasa_marginal": 0.0012025
+      },
+      {
+        "n_rango": 23,
+        "inferior": 1200001.0,
+        "superior": 1280000.0,
+        "cuota_fija": 11269.276199999998,
+        "tasa_marginal": 0.001235
+      },
+      {
+        "n_rango": 24,
+        "inferior": 1280001.0,
+        "superior": 1360000.0,
+        "cuota_fija": 12336.3849,
+        "tasa_marginal": 0.0012675
+      },
+      {
+        "n_rango": 25,
+        "inferior": 1360001.0,
+        "superior": 1440000.0,
+        "cuota_fija": 13443.2039,
+        "tasa_marginal": 0.0013
+      },
+      {
+        "n_rango": 26,
+        "inferior": 1440001.0,
+        "superior": null,
+        "cuota_fija": 14616.769999999999,
+        "tasa_marginal": 0.002001
+      }
+    ],
+    "minimo_predial": null,
+    "comentarios": "Hardcoded → v2 desde Ley de Hacienda Municipal de Colima (urbano_edificado). Cuota fija convertida de SM_diario a pesos con factor 84.49."
+  },
+  "_meta": {
+    "fuente": "txt",
+    "modelo": "hardcoded"
+  },
+  "_meta_v2": {
+    "intentos": 0,
+    "requiere_revision": false,
+    "razon": null,
+    "tokens": {
+      "input": 0,
+      "output": 0,
+      "cached": 0
+    },
+    "cvegeo": "06004",
+    "estado": "colima",
+    "anio": 2019,
+    "fuente_url": "https://congresocol.gob.mx/web/www/leyes/index.php"
+  }
+}
