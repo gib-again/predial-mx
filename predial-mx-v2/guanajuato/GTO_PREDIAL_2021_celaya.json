@@ -20,26 +20,26 @@
         "n_rango": 3,
         "inferior": 1452621.34,
         "superior": 10526340.0,
-        "cuota_fija": 3222.08,
+        "cuota_fija": 3222.18,
         "tasa_marginal": 0.003
       },
       {
         "n_rango": 4,
         "inferior": 10526340.0,
         "superior": 18335436.7,
-        "cuota_fija": 30543.75,
-        "tasa_marginal": 0.0029
+        "cuota_fija": 30443.33,
+        "tasa_marginal": 0.0027
       },
       {
         "n_rango": 5,
         "inferior": 18335436.7,
         "superior": null,
-        "cuota_fija": 24701.93,
+        "cuota_fija": 54701.93,
         "tasa_marginal": 0.0027
       }
     ],
     "minimo_predial": null,
-    "comentarios": "Tabla principal tomada de la fracción I del artículo 4 para inmuebles urbanos y suburbanos con edificación con valor determinado o modificado en 2021 y 2020 inclusive. Los rangos fueron normalizados a límites contiguos. El OCR del cuadro es deficiente; la reconstrucción se apoya en los valores legibles '0.002', '0.0027', '0.0030', '1,000,000.01', '1,452,621.34', '10,526,340.00', '10,526,340.01', '18,335,436.70' y '24,701.93 0.0027'. Tarifas paralelas no incluidas en la tabla principal: fracción II, inmuebles urbanos y suburbanos sin edificación, 3.00 al millar sobre la base gravable; fracción III, inmuebles rústicos con valor determinado o modificado en 2021 y 2020 inclusive, 0.20 al millar; fracción IV, inmuebles urbanos, suburbanos y rústicos con valor determinado o modificado en 2019 y anteriores, conforme a tasas al millar por antigüedad del valor."
+    "comentarios": "Tabla principal tomada de la fracción I del artículo 4 para inmuebles urbanos y suburbanos con edificación con valor determinado o modificado en 2021 y 2020 inclusive. El OCR está degradado y la tabla aparece incompleta/desalineada; se reconstruyen los límites visibles normalizando continuidad de rangos. La ley indica expresamente que a la base gravable se le disminuye el límite inferior, a la diferencia se aplica el factor sobre el excedente y se suma la cuota fija, dividiéndose entre seis para obtener el impuesto bimestral. Tarifas paralelas no incluidas en la tabla principal: fracción II, inmuebles urbanos y suburbanos sin edificación, 3.00 al millar sobre la base gravable; fracción III, inmuebles rústicos, 0.20 al millar; fracción IV, inmuebles urbanos, suburbanos y rústicos con valor determinado o modificado en 2019 y anteriores, conforme a tasas al millar diferenciadas por antigüedad del valor."
   },
   "_meta": {
     "fuente": "txt",
@@ -53,8 +53,8 @@
     "usado_reocr": false,
     "usado_vision": false,
     "tokens": {
-      "input": 31231,
-      "output": 1660,
+      "input": 31233,
+      "output": 1491,
       "cached": 13568
     },
     "cvegeo": "11007",

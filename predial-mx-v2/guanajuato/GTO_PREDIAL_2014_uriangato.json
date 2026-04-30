@@ -4,7 +4,7 @@
     "tabla": [
       {
         "grupo": "urbano",
-        "clave": "inmuebles_urbanos_y_suburbanos_con_edificaciones",
+        "clave": "urbano_con_edificacion",
         "descripcion": "Inmuebles urbanos y suburbanos con edificaciones",
         "tasa_millar": 0.002,
         "periodicidad": "anual",
@@ -12,7 +12,7 @@
       },
       {
         "grupo": "urbano",
-        "clave": "inmuebles_urbanos_y_suburbanos_sin_edificaciones",
+        "clave": "urbano_sin_edificacion",
         "descripcion": "Inmuebles urbanos y suburbanos sin edificaciones",
         "tasa_millar": 0.003,
         "periodicidad": "anual",
@@ -20,15 +20,23 @@
       },
       {
         "grupo": "rustico",
-        "clave": "inmuebles_rusticos_con_edificaciones",
+        "clave": "rustico_con_edificacion",
         "descripcion": "Inmuebles rústicos con edificaciones",
+        "tasa_millar": 0.00032,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "rustico",
+        "clave": "rustico_sin_edificacion",
+        "descripcion": "Inmuebles rústicos sin edificaciones",
         "tasa_millar": 0.00032,
         "periodicidad": "anual",
         "cuota_fija_adicional": null
       }
     ],
     "minimo_predial": null,
-    "comentarios": "Art. 4 establece tasas anuales sobre el valor catastral para inmuebles urbanos y suburbanos con edificación (0.20%), sin edificación (0.30%) y rústicos con edificación (0.032%). También aparecen tasas históricas por antigüedad del inmueble: 0.20%/0.30%/0.032% a la entrada en vigor y durante 2002-2013; 0.80%/1.50%/0.60% con anterioridad a 2002 y hasta 1993 inclusive; 0.13%/0.12% con anterioridad a 1993. Se documenta solo la mecánica principal del artículo 4 como catálogo de tasas al millar/porcentaje sobre valor catastral. Las tablas del artículo 5 corresponden a valores unitarios y factores de valuación, no a la tarifa del impuesto."
+    "comentarios": "Artículo 4 establece tasas anuales sobre valor catastral para inmuebles urbanos y suburbanos, diferenciando con/sin edificaciones, y una tasa para inmuebles rústicos. Se transcriben las tasas tal como aparecen en el texto. El artículo 5 y siguientes contienen valores unitarios y factores de valuación, no mecánica del impuesto."
   },
   "_meta": {
     "fuente": "txt",
@@ -43,7 +51,7 @@
     "usado_vision": false,
     "tokens": {
       "input": 9542,
-      "output": 408,
+      "output": 323,
       "cached": 5888
     },
     "cvegeo": "11041",

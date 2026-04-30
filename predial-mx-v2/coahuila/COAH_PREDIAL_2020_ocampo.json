@@ -6,7 +6,7 @@
         "grupo": "urbano",
         "clave": "predios_urbanos",
         "descripcion": "Predios urbanos",
-        "tasa_millar": 0.005,
+        "tasa_millar": 5.0,
         "periodicidad": "anual",
         "cuota_fija_adicional": null
       },
@@ -14,7 +14,7 @@
         "grupo": "rustico",
         "clave": "predios_rusticos",
         "descripcion": "Predios rústicos",
-        "tasa_millar": 0.003,
+        "tasa_millar": 3.0,
         "periodicidad": "anual",
         "cuota_fija_adicional": null
       }
@@ -24,7 +24,7 @@
       "periodicidad": "bimestral",
       "unidad": "pesos"
     },
-    "comentarios": "Art. 2 fracc. I y II: predios urbanos pagan 5 al millar anual y predios rústicos 3 al millar anual. Fracc. III: mínimo de $28.00 por bimestre. Fraccs. IV, VI y VII contienen incentivos/bonificaciones y no se documentan. Fracc. V señala que predios ejidales con título del Registro Agrario Nacional deberán pagar predial con base en el valor catastral asignado, pero no se incorpora como tarifa separada porque no se proporciona una mecánica/tasa específica en el texto proporcionado."
+    "comentarios": "Art. 2 fracc. V: los predios ejidales con títulos del Registro Agrario Nacional deberán pagar predial en base al valor catastral asignado a su predio; se menciona como regla especial, pero no se transcribe como tarifa separada. Se ignoran incentivos, descuentos y bonificaciones de las fraccs. IV, VI y VII."
   },
   "_meta": {
     "fuente": "txt",
@@ -39,7 +39,7 @@
     "usado_vision": false,
     "tokens": {
       "input": 6474,
-      "output": 278,
+      "output": 226,
       "cached": 5888
     },
     "cvegeo": "05023",

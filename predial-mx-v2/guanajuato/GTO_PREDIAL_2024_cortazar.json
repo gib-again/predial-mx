@@ -21,7 +21,7 @@
       {
         "grupo": "general",
         "clave": "general_3",
-        "descripcion": "Con anterioridad al año 2002 y hasta el 1993, inclusive",
+        "descripcion": "Con anterioridad al año 2002 y hasta el año 1993 inclusive",
         "tasa_millar": 0.015,
         "periodicidad": "anual",
         "cuota_fija_adicional": null
@@ -36,7 +36,7 @@
       }
     ],
     "minimo_predial": null,
-    "comentarios": "Art. 4 establece tasas anuales al millar sobre el valor catastral con cuatro supuestos temporales; se transcribe la mecánica tal como aparece. El texto proporcionado no muestra una tabla de cuotas por rangos para el impuesto predial principal. Art. 5 y 6 contienen valores unitarios y criterios de valuación de inmuebles, no la tarifa del impuesto."
+    "comentarios": "Art. 4 establece cuatro tasas anuales al millar aplicables conforme a la antigüedad del inmueble. No se documenta la mecánica de avalúo/valores unitarios del Art. 5 porque corresponde a catastro (valores unitarios de terreno y construcción), no a la tarifa del impuesto predial."
   },
   "_meta": {
     "fuente": "txt",
@@ -51,7 +51,7 @@
     "usado_vision": false,
     "tokens": {
       "input": 8193,
-      "output": 322,
+      "output": 310,
       "cached": 5888
     },
     "cvegeo": "11011",

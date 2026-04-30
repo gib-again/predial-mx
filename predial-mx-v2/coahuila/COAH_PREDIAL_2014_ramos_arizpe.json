@@ -3,50 +3,50 @@
     "tipo_esquema": "tarifa_millar",
     "tabla": [
       {
-        "grupo": "urbano",
-        "clave": "industrial",
+        "grupo": "general",
+        "clave": "predios_urbanos_industriales",
         "descripcion": "Predios urbanos industriales con o sin edificación",
-        "tasa_millar": 5.0,
+        "tasa_millar": 0.005,
         "periodicidad": "anual",
         "cuota_fija_adicional": null
       },
       {
-        "grupo": "urbano",
-        "clave": "comercial_con_edificacion",
+        "grupo": "general",
+        "clave": "predios_urbanos_comerciales_con_edificacion",
         "descripcion": "Predios urbanos comerciales con edificación",
-        "tasa_millar": 5.0,
+        "tasa_millar": 0.005,
         "periodicidad": "anual",
         "cuota_fija_adicional": null
       },
       {
-        "grupo": "urbano",
-        "clave": "comercial_sin_edificacion",
-        "descripcion": "Predios urbanos comerciales sin edificación",
-        "tasa_millar": 6.65,
+        "grupo": "general",
+        "clave": "predios_urbanos_comerciales_sin_edificacion",
+        "descripcion": "Predios urbanos comerciales sin edificación; 1.33 veces lo fijado para con edificación",
+        "tasa_millar": 0.00665,
         "periodicidad": "anual",
         "cuota_fija_adicional": null
       },
       {
-        "grupo": "urbano",
-        "clave": "residencial_interes_social_popular_con_edificacion",
+        "grupo": "general",
+        "clave": "predios_urbanos_residenciales_interes_social_populares_con_edificacion",
         "descripcion": "Predios urbanos residenciales, de interés social y populares con edificación",
-        "tasa_millar": 5.0,
+        "tasa_millar": 0.005,
         "periodicidad": "anual",
         "cuota_fija_adicional": null
       },
       {
-        "grupo": "urbano",
-        "clave": "residencial_interes_social_popular_sin_edificacion",
-        "descripcion": "Predios urbanos residenciales, de interés social y populares sin edificación",
-        "tasa_millar": 6.65,
+        "grupo": "general",
+        "clave": "predios_urbanos_residenciales_interes_social_populares_sin_edificacion",
+        "descripcion": "Predios urbanos residenciales, de interés social y populares sin edificación; 1.33 veces lo fijado para con edificación",
+        "tasa_millar": 0.00665,
         "periodicidad": "anual",
         "cuota_fija_adicional": null
       },
       {
-        "grupo": "rustico",
-        "clave": "rustico",
+        "grupo": "general",
+        "clave": "predios_rusticos",
         "descripcion": "Predios rústicos",
-        "tasa_millar": 3.0,
+        "tasa_millar": 0.003,
         "periodicidad": "anual",
         "cuota_fija_adicional": null
       }
@@ -56,7 +56,7 @@
       "periodicidad": "bimestral",
       "unidad": "pesos"
     },
-    "comentarios": "Art. 2: predios urbanos comerciales sin edificación y predios urbanos residenciales, de interés social y populares sin edificación pagan 1.33 veces la tasa de los predios con edificación; se transcribe como 6.65 al millar. El texto también menciona incentivos/bonificaciones (pagos en enero-febrero-marzo, pensionados, instituciones educativas, fraccionamientos, empresas y personas con discapacidad), pero se ignoran por instrucción. Para predios urbanos industriales se indica 5 al millar anual y para rústicos 3 al millar anual. El mínimo predial es de $38.00 bimestrales, o $19.00 bimestrales para ciertos contribuyentes."
+    "comentarios": "Art. 2: además de las tasas principales, el texto establece cobros/incentivos especiales que no se integran a la tabla principal: predios urbanos y rústicos prestados al Municipio para actividad deportiva o social cubren 10% de la cuota; predios de instituciones educativas no públicas pagan 1 al millar anual; predios con licencia de fraccionamiento en vías de desarrollo pagan 20% del impuesto predial correspondiente al valor considerando como predio ya fraccionado y desarrollado. Art. 3: empresas nuevas o existentes con predios para nuevos centros de trabajo tienen incentivos sobre el impuesto, según empleos directos creados (10%, 15% o 20%), y personas con discapacidad (3% o 5%); se documenta como incentivo, no como mecánica principal."
   },
   "_meta": {
     "fuente": "txt",
@@ -71,7 +71,7 @@
     "usado_vision": false,
     "tokens": {
       "input": 7097,
-      "output": 523,
+      "output": 593,
       "cached": 5888
     },
     "cvegeo": "05027",

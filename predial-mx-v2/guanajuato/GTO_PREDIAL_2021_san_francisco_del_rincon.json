@@ -2,10 +2,10 @@
   "predial": {
     "tipo_esquema": "otro_no_clasificado",
     "categoria": "segmento_vacio",
-    "descripcion_estructural": "El texto proporcionado no contiene mecánica de cálculo del impuesto predial; sólo aparecen encabezados de fecha, página y periódico oficial. No hay tabla, cuotas, tasas ni rangos extraíbles para clasificar en otra variante.",
+    "descripcion_estructural": "El texto proporcionado sólo contiene encabezado y pie de página del periódico oficial, sin contenido tarifario ni articulado del Impuesto Predial. No es posible extraer mecánica de cálculo.",
     "tabla_cruda": [],
     "minimo_predial": null,
-    "comentarios": "Segmento sin contenido tarifario del artículo solicitado."
+    "comentarios": ""
   },
   "_meta": {
     "fuente": "txt",
@@ -20,7 +20,7 @@
     "usado_vision": true,
     "tokens": {
       "input": 13790,
-      "output": 354,
+      "output": 266,
       "cached": 11776
     },
     "cvegeo": "11031",

@@ -28,7 +28,7 @@
       },
       {
         "grupo": "urbano",
-        "clave": "predios_urbanos_y_suburbanos_sin_edificaciones_baldios",
+        "clave": "predios_urbanos_y_suburbanos_sin_edificacion_baldios",
         "descripcion": "Predios urbanos y suburbanos sin edificaciones (baldíos)",
         "tasa_millar": 0.003,
         "periodicidad": "anual",
@@ -44,7 +44,7 @@
       }
     ],
     "minimo_predial": null,
-    "comentarios": "Art. 10: La base es el valor catastral anual. Se transcribe la tarifa por categorías de predio: 1.5 al millar para predios urbanos con edificaciones y suburbanos con edificaciones; 3.0 al millar para predios rústicos, urbanos y suburbanos sin edificaciones (baldíos) y urbanos de uso industrial. Las fracciones VI a VIII establecen reglas/recargos especiales (fraccionamientos autorizados, adquirientes y fraccionadores) que no se incorporan a la mecánica principal."
+    "comentarios": "Art. 10: la base es el valor catastral anual. Fracciones I-V establecen tarifas al millar por categoría de predio: urbanos con edificaciones 1.5 al millar, suburbanos con edificaciones 1.5 al millar, rústicos 3.0 al millar, urbanos y suburbanos sin edificaciones (baldíos) 3.0 al millar, y urbanos de uso industrial 3.0 al millar. Fracción VI indica que a predios urbanos no edificados propiedad de fraccionamientos autorizados no se les aplica la tasa de la fracción IV. Fracciones VII y VIII prevén aumentos del 100% por incumplimiento o por predios no vendidos; se documentan como disposiciones accesorias, no como mecánica base."
   },
   "_meta": {
     "fuente": "txt",
@@ -59,7 +59,7 @@
     "usado_vision": false,
     "tokens": {
       "input": 6529,
-      "output": 429,
+      "output": 482,
       "cached": 5888
     },
     "cvegeo": "28027",

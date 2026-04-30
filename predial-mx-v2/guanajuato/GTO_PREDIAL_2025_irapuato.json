@@ -2,10 +2,10 @@
   "predial": {
     "tipo_esquema": "otro_no_clasificado",
     "categoria": "segmento_vacio",
-    "descripcion_estructural": "El texto proporcionado no incluye el contenido tarifario del Impuesto Predial; sólo aparecen páginas de portada/índice y páginas en blanco o sin OCR útil entre las páginas 3 a 20. No es posible extraer una mecánica de cálculo sin una tabla o artículo visible.",
+    "descripcion_estructural": "El texto proporcionado no incluye el contenido tarifario del impuesto predial; sólo aparecen encabezados, sumarios de ingresos y páginas en blanco o sin transcripción legible de la sección correspondiente. No es posible extraer una mecánica de cálculo sin inventar la tabla o el artículo aplicable.",
     "tabla_cruda": [],
     "minimo_predial": null,
-    "comentarios": "Se recibió un segmento sin estructura tarifaria legible para predial. No se transcribe ninguna mecánica porque no aparece en el texto suministrado."
+    "comentarios": "Sección 'Del Impuesto Predial' no visible en el texto suministrado."
   },
   "_meta": {
     "fuente": "txt",
@@ -20,7 +20,7 @@
     "usado_vision": true,
     "tokens": {
       "input": 33968,
-      "output": 460,
+      "output": 459,
       "cached": 17664
     },
     "cvegeo": "11017",

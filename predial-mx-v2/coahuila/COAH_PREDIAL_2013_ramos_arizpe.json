@@ -3,48 +3,48 @@
     "tipo_esquema": "tarifa_millar",
     "tabla": [
       {
-        "grupo": "urbano",
-        "clave": "industrial",
+        "grupo": "general",
+        "clave": "industrial_urbano",
         "descripcion": "Predios urbanos industriales con o sin edificación",
         "tasa_millar": 0.005,
         "periodicidad": "anual",
         "cuota_fija_adicional": null
       },
       {
-        "grupo": "urbano",
-        "clave": "comercial_con_edificacion",
+        "grupo": "general",
+        "clave": "comercial_urbano_con_edificacion",
         "descripcion": "Predios urbanos comerciales con edificación",
         "tasa_millar": 0.005,
         "periodicidad": "anual",
         "cuota_fija_adicional": null
       },
       {
-        "grupo": "urbano",
-        "clave": "comercial_sin_edificacion",
-        "descripcion": "Predios urbanos comerciales sin edificación; 1.33 veces lo fijado para los predios con edificación",
+        "grupo": "general",
+        "clave": "comercial_urbano_sin_edificacion",
+        "descripcion": "Predios urbanos comerciales sin edificación",
         "tasa_millar": 0.00665,
         "periodicidad": "anual",
         "cuota_fija_adicional": null
       },
       {
-        "grupo": "urbano",
-        "clave": "residencial_con_edificacion",
+        "grupo": "general",
+        "clave": "residencial_interes_social_popular_con_edificacion",
         "descripcion": "Predios urbanos residenciales, de interés social y populares con edificación",
         "tasa_millar": 0.005,
         "periodicidad": "anual",
         "cuota_fija_adicional": null
       },
       {
-        "grupo": "urbano",
-        "clave": "residencial_sin_edificacion",
-        "descripcion": "Predios urbanos residenciales, de interés social y populares sin edificación; 1.33 veces lo fijado para los predios con edificación",
+        "grupo": "general",
+        "clave": "residencial_interes_social_popular_sin_edificacion",
+        "descripcion": "Predios urbanos residenciales, de interés social y populares sin edificación",
         "tasa_millar": 0.00665,
         "periodicidad": "anual",
         "cuota_fija_adicional": null
       },
       {
-        "grupo": "rustico",
-        "clave": "rustico_general",
+        "grupo": "general",
+        "clave": "rustico",
         "descripcion": "Predios rústicos",
         "tasa_millar": 0.003,
         "periodicidad": "anual",
@@ -56,7 +56,7 @@
       "periodicidad": "bimestral",
       "unidad": "pesos"
     },
-    "comentarios": "Art. 2: la base es el valor catastral de cada inmueble. Se documentan únicamente las tasas principales; los incentivos/bonificaciones del mismo artículo se ignoran por instrucción. El texto también establece una tasa de 1 al millar anual para predios de instituciones educativas no públicas y un beneficio para predios con licencia de fraccionamiento autorizada; se omiten como incentivos/beneficios no estructurales de la mecánica principal. Para los predios urbanos comerciales y residenciales sin edificación, la ley indica 1.33 veces lo fijado para los predios con edificación."
+    "comentarios": "Art. 2: las tasas se aplican sobre el valor catastral de cada inmueble. Para predios urbanos comerciales sin edificación y predios urbanos residenciales/de interés social/populares sin edificación, la ley indica 1.33 veces lo fijado para los predios con edificación; se transcribe como 0.00665 al millar. No se incluyen descuentos, incentivos ni bonificaciones. Art. 3 contiene incentivos fiscales para empresas y personas con discapacidad, pero no modifica la mecánica base del predial."
   },
   "_meta": {
     "fuente": "txt",
@@ -71,7 +71,7 @@
     "usado_vision": false,
     "tokens": {
       "input": 7124,
-      "output": 523,
+      "output": 493,
       "cached": 5888
     },
     "cvegeo": "05027",

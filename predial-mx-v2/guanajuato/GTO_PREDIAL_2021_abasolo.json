@@ -109,7 +109,7 @@
       }
     ],
     "minimo_predial": null,
-    "comentarios": "Art. 4, fracción I, inciso a): inmuebles urbanos y suburbanos con edificaciones. La mecánica es una tabla de brackets con cuota fija + tasa marginal sobre el excedente. Art. 4, fracción I, inciso b): inmuebles urbanos y suburbanos sin edificaciones pagan tasas al millar diferenciadas por antigüedad (4.5, 15 y 13 al millar). Art. 4, fracción II: inmuebles rústicos pagan tasas al millar diferenciadas por antigüedad (1.8, 6 y 12 al millar). Esas tarifas paralelas no se integran a la tabla principal porque corresponden a grupos distintos y no a la misma estructura de brackets."
+    "comentarios": "Art. 4, fracción I, inciso a): para inmuebles urbanos y suburbanos con edificaciones, la ley establece una tarifa anual progresiva por valor fiscal del inmueble con cuota fija y tasa marginal sobre el excedente. Art. 4, fracción I, inciso b) (sin edificaciones) y fracción II (rústicos) contienen tarifas paralelas al millar por tipo/año, pero no se incluyen en la tabla principal por ser mecánicas separadas."
   },
   "_meta": {
     "fuente": "txt",
@@ -124,7 +124,7 @@
     "usado_vision": false,
     "tokens": {
       "input": 9232,
-      "output": 780,
+      "output": 727,
       "cached": 5888
     },
     "cvegeo": "11001",

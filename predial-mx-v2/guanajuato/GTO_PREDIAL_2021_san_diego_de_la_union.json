@@ -3,40 +3,32 @@
     "tipo_esquema": "tarifa_millar",
     "tabla": [
       {
-        "grupo": "general",
-        "clave": "urbanos_y_suburbanos_con_edificacion",
-        "descripcion": "Inmuebles urbanos y suburbanos con valor determinado modificados, con edificaciones",
+        "grupo": "urbano",
+        "clave": "inmuebles_urbanos_y_suburbanos_con_edificaciones",
+        "descripcion": "Inmuebles urbanos y suburbanos con edificaciones",
         "tasa_millar": 0.0024,
         "periodicidad": "anual",
         "cuota_fija_adicional": null
       },
       {
-        "grupo": "general",
-        "clave": "urbanos_y_suburbanos_sin_edificacion",
-        "descripcion": "Inmuebles urbanos y suburbanos con valor determinado modificados, sin edificaciones",
+        "grupo": "urbano",
+        "clave": "inmuebles_urbanos_y_suburbanos_sin_edificaciones",
+        "descripcion": "Inmuebles urbanos y suburbanos sin edificaciones",
         "tasa_millar": 0.0045,
         "periodicidad": "anual",
         "cuota_fija_adicional": null
       },
       {
         "grupo": "rustico",
-        "clave": "rusticos_con_edificacion",
-        "descripcion": "Inmuebles rústicos con valor determinado modificados, con edificaciones",
-        "tasa_millar": 0.0018,
-        "periodicidad": "anual",
-        "cuota_fija_adicional": null
-      },
-      {
-        "grupo": "rustico",
-        "clave": "rusticos_sin_edificacion",
-        "descripcion": "Inmuebles rústicos con valor determinado modificados, sin edificaciones",
+        "clave": "inmuebles_rusticos",
+        "descripcion": "Inmuebles rústicos",
         "tasa_millar": 0.0018,
         "periodicidad": "anual",
         "cuota_fija_adicional": null
       }
     ],
     "minimo_predial": null,
-    "comentarios": "Art. 4: la tasa del impuesto predial es categórica por tipo de inmueble y condición de edificación. Se transcribe la tabla como aparece en la ley; se observa un renglón para inmuebles urbanos y suburbanos con/sin edificaciones, y otro para inmuebles rústicos con/sin edificios. El Art. 5 contiene valores unitarios catastrales para avalúo, no la mecánica tarifaria del impuesto."
+    "comentarios": "Art. 4: la mecánica principal es una tarifa anual al millar por categoría de inmueble, sin rangos de valor catastral. Se observan tasas diferenciadas para inmuebles urbanos y suburbanos con edificaciones (2.4 al millar), sin edificaciones (4.5 al millar) e inmuebles rústicos (1.8 al millar). También aparece una fracción IV con tasas 13 al millar y 12 al millar, pero el texto OCR está incompleto y no permite identificar con certeza las categorías; no se transcribe como fila separada para no inventar la mecánica."
   },
   "_meta": {
     "fuente": "txt",
@@ -51,7 +43,7 @@
     "usado_vision": false,
     "tokens": {
       "input": 8702,
-      "output": 376,
+      "output": 345,
       "cached": 5888
     },
     "cvegeo": "11029",

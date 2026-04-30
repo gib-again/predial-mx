@@ -4,7 +4,7 @@
     "tabla": [
       {
         "grupo": "urbano",
-        "clave": "con_edificaciones",
+        "clave": "urbano_con_edificaciones",
         "descripcion": "Inmuebles urbanos y suburbanos con edificaciones",
         "tasa_millar": 0.0024,
         "periodicidad": "anual",
@@ -12,7 +12,7 @@
       },
       {
         "grupo": "urbano",
-        "clave": "sin_edificaciones",
+        "clave": "urbano_sin_edificaciones",
         "descripcion": "Inmuebles urbanos y suburbanos sin edificaciones",
         "tasa_millar": 0.0045,
         "periodicidad": "anual",
@@ -20,7 +20,7 @@
       },
       {
         "grupo": "rustico",
-        "clave": "rustico",
+        "clave": "rustico_general",
         "descripcion": "Inmuebles rústicos",
         "tasa_millar": 0.018,
         "periodicidad": "anual",
@@ -28,7 +28,7 @@
       }
     ],
     "minimo_predial": null,
-    "comentarios": "Art. 4 establece tasas anuales sobre valor catastral para inmuebles urbanos y suburbanos con y sin edificaciones, y para inmuebles rústicos. Se transcribe la tarifa principal vigente para 2017; las referencias a años anteriores (2002-2016, anterior a 2002, anterior a 1993) corresponden a tarifas históricas no aplicables al ejercicio 2017. Art. 5 y 6 contienen valores unitarios y criterios de avalúo/catastro, no la mecánica de cálculo del impuesto."
+    "comentarios": "Artículo 4: se transcriben las tasas anuales aplicables a inmuebles urbanos/suburbanos con y sin edificaciones, y a inmuebles rústicos. El texto también contiene valores unitarios de suelo y construcción para la valuación (arts. 5 y 6), pero no forman parte de la mecánica tarifaria del impuesto predial."
   },
   "_meta": {
     "fuente": "txt",
@@ -43,7 +43,7 @@
     "usado_vision": false,
     "tokens": {
       "input": 8448,
-      "output": 303,
+      "output": 268,
       "cached": 5888
     },
     "cvegeo": "11002",

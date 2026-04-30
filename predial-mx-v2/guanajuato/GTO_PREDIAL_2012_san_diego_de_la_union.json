@@ -3,32 +3,32 @@
     "tipo_esquema": "tarifa_millar",
     "tabla": [
       {
-        "grupo": "urbano",
-        "clave": "urbanos_con_edificaciones",
-        "descripcion": "Inmuebles urbanos y suburbanos con edificaciones. A la entrada en vigor de la Ley.",
+        "grupo": "general",
+        "clave": "urbano_suburbano_con_edificaciones",
+        "descripcion": "Inmuebles urbanos y suburbanos con edificaciones, a la entrada en vigor de la ley",
         "tasa_millar": 0.0024,
         "periodicidad": "anual",
         "cuota_fija_adicional": null
       },
       {
-        "grupo": "urbano",
-        "clave": "urbanos_sin_edificaciones",
-        "descripcion": "Inmuebles urbanos y suburbanos sin edificaciones. A la entrada en vigor de la Ley.",
+        "grupo": "general",
+        "clave": "urbano_suburbano_sin_edificaciones",
+        "descripcion": "Inmuebles urbanos y suburbanos sin edificaciones, a la entrada en vigor de la ley",
         "tasa_millar": 0.0045,
         "periodicidad": "anual",
         "cuota_fija_adicional": null
       },
       {
-        "grupo": "rustico",
-        "clave": "rusticos",
-        "descripcion": "Inmuebles rústicos. A la entrada en vigor de la Ley.",
+        "grupo": "general",
+        "clave": "rustico",
+        "descripcion": "Inmuebles rústicos, a la entrada en vigor de la ley",
         "tasa_millar": 0.0018,
         "periodicidad": "anual",
         "cuota_fija_adicional": null
       }
     ],
     "minimo_predial": null,
-    "comentarios": "Art. 4 establece tasas anuales al millar sobre el valor catastral para inmuebles urbanos y suburbanos con/sin edificaciones y para rústicos. El texto también contiene tasas para periodos históricos anteriores (II, III, IV), pero la mecánica vigente del ejercicio 2012 queda transcrita en la fracción I. Art. 5 regula valores unitarios catastrales y Art. 6 criterios de avalúo; no se transcriben como mecánica del impuesto."
+    "comentarios": "Art. 4 establece tasas al millar anuales sobre valor catastral para tres grupos: inmuebles urbanos y suburbanos con edificaciones (2.4 al millar), urbanos y suburbanos sin edificaciones (4.5 al millar) e inmuebles rústicos (1.8 al millar) a la entrada en vigor de la ley. Se observan además tasas históricas para periodos anteriores (II, III, IV), pero la mecánica principal del ejercicio 2012 es la tabla de tasas del Art. 4. El Art. 5 contiene valores unitarios catastrales y no se toma como tarifa."
   },
   "_meta": {
     "fuente": "txt",
@@ -43,7 +43,7 @@
     "usado_vision": false,
     "tokens": {
       "input": 8543,
-      "output": 327,
+      "output": 358,
       "cached": 5888
     },
     "cvegeo": "11029",

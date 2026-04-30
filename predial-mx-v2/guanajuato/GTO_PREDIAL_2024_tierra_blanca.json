@@ -3,56 +3,40 @@
     "tipo_esquema": "tarifa_millar",
     "tabla": [
       {
-        "grupo": "urbano",
-        "clave": "inmuebles_urbanos_y_suburbanos_con_edificaciones",
+        "grupo": "general",
+        "clave": "urbano_y_suburbano_con_edificaciones",
         "descripcion": "Inmuebles urbanos y suburbanos con edificaciones",
         "tasa_millar": 0.0045,
         "periodicidad": "anual",
         "cuota_fija_adicional": null
       },
       {
-        "grupo": "urbano",
-        "clave": "inmuebles_urbanos_y_suburbanos_sin_edificaciones",
+        "grupo": "general",
+        "clave": "urbano_y_suburbano_sin_edificaciones",
         "descripcion": "Inmuebles urbanos y suburbanos sin edificaciones",
-        "tasa_millar": 0.0018,
-        "periodicidad": "anual",
-        "cuota_fija_adicional": null
-      },
-      {
-        "grupo": "rustico",
-        "clave": "inmuebles_rusticos",
-        "descripcion": "Inmuebles rústicos",
-        "tasa_millar": 0.0045,
-        "periodicidad": "anual",
-        "cuota_fija_adicional": null
-      },
-      {
-        "grupo": "otro",
-        "clave": "con_anterioridad_al_anio_2023",
-        "descripcion": "Con anterioridad al año 2023, inclusive",
         "tasa_millar": 0.0024,
         "periodicidad": "anual",
         "cuota_fija_adicional": null
       },
       {
-        "grupo": "otro",
-        "clave": "con_anterioridad_al_anio_2023_sin_edificaciones",
-        "descripcion": "Con anterioridad al año 2023, inclusive, sin edificaciones",
-        "tasa_millar": 0.0002,
+        "grupo": "general",
+        "clave": "rustico_2023_inclusive",
+        "descripcion": "Inmuebles rústicos año 2023 inclusive",
+        "tasa_millar": 0.0018,
         "periodicidad": "anual",
         "cuota_fija_adicional": null
       },
       {
-        "grupo": "otro",
-        "clave": "con_anterioridad_al_anio_2002_y_hasta_1993",
+        "grupo": "general",
+        "clave": "rustico_anterior_2002_hasta_1993",
         "descripcion": "Con anterioridad al año 2002 y hasta el año 1993",
         "tasa_millar": 0.0015,
         "periodicidad": "anual",
         "cuota_fija_adicional": null
       },
       {
-        "grupo": "otro",
-        "clave": "con_anterioridad_al_anio_1993",
+        "grupo": "general",
+        "clave": "rustico_anterior_1993",
         "descripcion": "Con anterioridad al año de 1993",
         "tasa_millar": 0.0013,
         "periodicidad": "anual",
@@ -60,7 +44,7 @@
       }
     ],
     "minimo_predial": null,
-    "comentarios": "La sección muestra una tabla de tasas al millar por tipo/circunstancia del inmueble, sin rangos de valor catastral. El texto OCR es fragmentario en algunos renglones, pero la mecánica identificable es tarifa_millar. Se observan tasas para inmuebles urbanos y suburbanos con y sin edificaciones, inmuebles rústicos, y renglones por antigüedad ('con anterioridad al año 2023, inclusive'; 'con anterioridad al año 2002 y hasta el año 1993'; 'con anterioridad al año de 1993'). No se transcriben valores unitarios de catastro ni bonificaciones."
+    "comentarios": "Art. 4 contiene una tarifa categórica al millar para el impuesto predial, con tratamiento diferenciado por tipo de inmueble y/o antigüedad: inmuebles urbanos y suburbanos con edificaciones 4.5 al millar; sin edificaciones 2.4 al millar; inmuebles rústicos 1.8 al millar para 2023 inclusive; 1.5 al millar para anterioridad al año 2002 y hasta 1993; 1.3 al millar para anterioridad a 1993. No se extrae Art. 5 porque corresponde a valores unitarios catastrales, no a la mecánica tarifaria."
   },
   "_meta": {
     "fuente": "txt",
@@ -75,7 +59,7 @@
     "usado_vision": false,
     "tokens": {
       "input": 6519,
-      "output": 593,
+      "output": 465,
       "cached": 5888
     },
     "cvegeo": "11040",

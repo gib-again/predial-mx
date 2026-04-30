@@ -1,27 +1,46 @@
 {
   "predial": {
-    "tipo_esquema": "otro_no_clasificado",
-    "categoria": "municipio_sin_impuesto",
-    "descripcion_estructural": "El texto proporcionado no contiene la mecánica del Impuesto Predial. El contenido visible corresponde al Impuesto sobre Adquisición de Inmuebles y a reglas de diferimiento/pago de ese impuesto, no a una tabla o tarifa de predial.",
-    "tabla_cruda": [],
-    "minimo_predial": null,
-    "comentarios": "Sección enviada no corresponde al predial; no se extrae mecánica de cálculo."
+    "tipo_esquema": "tarifa_millar",
+    "tabla": [
+      {
+        "grupo": "urbano",
+        "clave": "predios_urbanos",
+        "descripcion": "Sobre los predios urbanos",
+        "tasa_millar": 0.005,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "rustico",
+        "clave": "predios_rusticos",
+        "descripcion": "Sobre los predios rústicos",
+        "tasa_millar": 0.003,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      }
+    ],
+    "minimo_predial": {
+      "monto": 15.0,
+      "periodicidad": "bimestral",
+      "unidad": "pesos"
+    },
+    "comentarios": "Art. 2: predios urbanos pagan 5 al millar anual sobre valor catastral; predios rústicos pagan 3 al millar anual. Se establece un mínimo de $15.00 por bimestre. Se omiten descuentos/bonificaciones por pago anticipado y por grupos específicos porque no forman parte de la mecánica de cálculo principal."
   },
   "_meta": {
-    "fuente": "txt",
+    "fuente": "pdf_reocr",
     "modelo": "gpt-5.4-mini"
   },
   "_meta_v2": {
-    "intentos": 1,
-    "requiere_revision": true,
+    "intentos": 2,
+    "requiere_revision": false,
     "escalado": false,
-    "razon": "clasificado_como_otro_no_clasificado",
-    "usado_reocr": false,
+    "razon": "rescate_via_reocr",
+    "usado_reocr": true,
     "usado_vision": false,
     "tokens": {
-      "input": 6306,
-      "output": 130,
-      "cached": 5888
+      "input": 13258,
+      "output": 357,
+      "cached": 11776
     },
     "cvegeo": "05021",
     "estado": "coahuila",

@@ -1,27 +1,79 @@
 {
   "predial": {
-    "tipo_esquema": "otro_no_clasificado",
-    "categoria": "segmento_vacio",
-    "descripcion_estructural": "El texto proporcionado no contiene el articulado ni una tabla tarifaria del Impuesto Predial; sólo aparecen páginas de portada/índice y saltos de página sin mecánica de cálculo extraíble. No es posible identificar tasas, cuotas, rangos o categorías del predial con este fragmento.",
-    "tabla_cruda": [],
-    "minimo_predial": null,
-    "comentarios": "Se recibió un segmento sin contenido tarifario del impuesto predial."
+    "tipo_esquema": "progresivo",
+    "tabla": [
+      {
+        "n_rango": 1,
+        "inferior": 0.0,
+        "superior": 161825.0,
+        "cuota_fija": 0.0,
+        "tasa_marginal": 0.0024
+      },
+      {
+        "n_rango": 2,
+        "inferior": 161825.01,
+        "superior": 600000.0,
+        "cuota_fija": 388.38,
+        "tasa_marginal": 0.0026
+      },
+      {
+        "n_rango": 3,
+        "inferior": 600000.01,
+        "superior": 1200000.0,
+        "cuota_fija": 1527.63,
+        "tasa_marginal": 0.002625
+      },
+      {
+        "n_rango": 4,
+        "inferior": 1200000.01,
+        "superior": 2400000.0,
+        "cuota_fija": 3102.63,
+        "tasa_marginal": 0.00265
+      },
+      {
+        "n_rango": 5,
+        "inferior": 2400000.01,
+        "superior": 4800000.0,
+        "cuota_fija": 6282.63,
+        "tasa_marginal": 0.002675
+      },
+      {
+        "n_rango": 6,
+        "inferior": 4800000.01,
+        "superior": 9600000.0,
+        "cuota_fija": 12702.63,
+        "tasa_marginal": 0.0027
+      },
+      {
+        "n_rango": 7,
+        "inferior": 9600000.01,
+        "superior": null,
+        "cuota_fija": 25662.63,
+        "tasa_marginal": 0.002725
+      }
+    ],
+    "minimo_predial": {
+      "monto": 0.0,
+      "periodicidad": "anual",
+      "unidad": "pesos"
+    },
+    "comentarios": "Artículo 4: se transcribe la mecánica principal por valor fiscal con cuota fija y tasa marginal en tres fracciones (urbanos/suburbanos con edificaciones; urbanos/suburbanos sin edificaciones; rústicos). La fracción III queda documentada como tarifa paralela en comentarios por tratarse de una tabla separada: predios rústicos con brackets y tasas marginales de 0.00180000 a 0.00212500. El artículo indica además que, si el cálculo resultara inferior a la cuota mínima anual del artículo 41, se paga esa cuota mínima."
   },
   "_meta": {
     "fuente": "txt",
     "modelo": "gpt-5.4-mini"
   },
   "_meta_v2": {
-    "intentos": 1,
-    "requiere_revision": true,
+    "intentos": 2,
+    "requiere_revision": false,
     "escalado": false,
-    "razon": "clasificado_como_otro_no_clasificado",
-    "usado_reocr": true,
-    "usado_vision": true,
+    "razon": null,
+    "usado_reocr": false,
+    "usado_vision": false,
     "tokens": {
-      "input": 32154,
-      "output": 461,
-      "cached": 17664
+      "input": 24862,
+      "output": 1546,
+      "cached": 11776
     },
     "cvegeo": "11015",
     "estado": "guanajuato",

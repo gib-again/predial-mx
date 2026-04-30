@@ -63,73 +63,36 @@ campos automáticamente y propongo fixes basados en los patrones acumulados.
 > Acumula aquí los hallazgos transversales que afectan a múltiples casos.
 > Cada `P-XX` representa un cambio de código pendiente.
 
-### P-00: 
-- **casos**:
-- **diagnostico**: La seccion no contiene información sobre tasas predial, solo menciona una cuota fija y excedente 
-- **fix_propuesto**: dejar en blanco, esperar recuperación por imputación
-- **prioridad**: baja
-- **estado**: pending 
+### P-00: ejemplo (borra al agregar el primero)
 
-### P-01
-
-- **casos**: 
-- **diagnostico**: Error puro de segmentación, la sección mostrada no contiene esquema de cobro
-- **fix_propuesto**: mejorar segment.py y volver a realizar segmentación
-- **prioridad**: media
-- **estado**: pending
-
-### P-02
-
-- **casos**: 
-- **diagnostico**: Error de segmentación causado por mal OCR, la sección mostrada no contiene esquema de cobro pero se encontró que el OCR deja de funcionar en las primeras paginas
-- **fix_propuesto**:volver a ejecutar OCR y volver a realizar segmentación
-- **prioridad**: alta
-- **estado**: pending
-
-### P-03
-- **casos**: 
-- **diagnostico**: La segmentación parece ser correcta, pero omite la tabla progresiva asociada. Está disponible en el recorte de PDF
-- **fix_propuesto**:usar modelo de vision
-- **prioridad**: media
-- **estado**: pending
-
-### P-04
-
-- **casos**: 
-- **diagnostico**: 
-- **fix_propuesto**:usar modelo gpt-5.4
-- **prioridad**: media
-- **estado**: pending
+- **casos**: estado/slug/anio, …
+- **diagnostico**: descripción del patrón
+- **fix_propuesto**: qué cambiar (prompt, schema, segment, etc.)
+- **prioridad**: alta · media · baja
+- **estado**: pending · in_progress · done
 
 ---
 
 
 ## Tabla de contenidos
 
-- [Grupo G-01: `segmento_vacio` / `solo_encabezado` (30 casos)](#grupo-g-01-segmento-vacio-solo-encabezado)
-- [Grupo G-02: `estructura_no_estandar` / `solo_valores_unitarios` (8 casos)](#grupo-g-02-estructura-no-estandar-solo-valores-unitarios)
-- [Grupo G-03: `municipio_sin_impuesto` / `otro_patron` (8 casos)](#grupo-g-03-municipio-sin-impuesto-otro-patron)
-- [Grupo G-04: `segmento_vacio` / `articulado_ausente` (6 casos)](#grupo-g-04-segmento-vacio-articulado-ausente)
-- [Grupo G-05: `estructura_no_estandar` / `dos_tarifas_paralelas` (4 casos)](#grupo-g-05-estructura-no-estandar-dos-tarifas-paralelas)
-- [Grupo G-06: `error_segmentacion` / `solo_valores_unitarios` (3 casos)](#grupo-g-06-error-segmentacion-solo-valores-unitarios)
-- [Grupo G-07: `segmento_vacio` / `mecanica_ausente` (3 casos)](#grupo-g-07-segmento-vacio-mecanica-ausente)
-- [Grupo G-08: `estructura_no_estandar` / `otro_patron` (2 casos)](#grupo-g-08-estructura-no-estandar-otro-patron)
-- [Grupo G-09: `municipio_sin_impuesto` / `solo_valores_unitarios` (2 casos)](#grupo-g-09-municipio-sin-impuesto-solo-valores-unitarios)
-- [Grupo G-10: `segmento_vacio` / `otro_patron` (2 casos)](#grupo-g-10-segmento-vacio-otro-patron)
-- [Grupo G-11: `segmento_vacio` / `seccion_ausente` (2 casos)](#grupo-g-11-segmento-vacio-seccion-ausente)
-- [Grupo G-12: `estructura_no_estandar` / `mecanica_ausente` (1 casos)](#grupo-g-12-estructura-no-estandar-mecanica-ausente)
-- [Grupo G-13: `estructura_no_estandar` / `ocr_ilegible` (1 casos)](#grupo-g-13-estructura-no-estandar-ocr-ilegible)
-- [Grupo G-14: `municipio_sin_impuesto` / `dos_tarifas_paralelas` (1 casos)](#grupo-g-14-municipio-sin-impuesto-dos-tarifas-paralelas)
-- [Grupo G-15: `municipio_sin_impuesto` / `mecanica_ausente` (1 casos)](#grupo-g-15-municipio-sin-impuesto-mecanica-ausente)
-- [Grupo G-16: `segmento_vacio` / `ocr_ilegible` (1 casos)](#grupo-g-16-segmento-vacio-ocr-ilegible)
-- [Grupo G-17: `segmento_vacio` / `texto_truncado` (1 casos)](#grupo-g-17-segmento-vacio-texto-truncado)
-- [Casos `requiere_revision` (5 casos)](#casos-requiere_revision-excluyendo-otro_no_clasificado)
+- [Grupo G-01: `segmento_vacio` / `solo_encabezado` (9 casos)](#grupo-g-01-segmento-vacio-solo-encabezado)
+- [Grupo G-02: `error_segmentacion` / `solo_valores_unitarios` (3 casos)](#grupo-g-02-error-segmentacion-solo-valores-unitarios)
+- [Grupo G-03: `estructura_no_estandar` / `dos_tarifas_paralelas` (3 casos)](#grupo-g-03-estructura-no-estandar-dos-tarifas-paralelas)
+- [Grupo G-04: `estructura_no_estandar` / `solo_valores_unitarios` (3 casos)](#grupo-g-04-estructura-no-estandar-solo-valores-unitarios)
+- [Grupo G-05: `municipio_sin_impuesto` / `otro_patron` (3 casos)](#grupo-g-05-municipio-sin-impuesto-otro-patron)
+- [Grupo G-06: `municipio_sin_impuesto` / `mecanica_ausente` (2 casos)](#grupo-g-06-municipio-sin-impuesto-mecanica-ausente)
+- [Grupo G-07: `estructura_no_estandar` / `solo_valores_catastro` (1 casos)](#grupo-g-07-estructura-no-estandar-solo-valores-catastro)
+- [Grupo G-08: `municipio_sin_impuesto` / `seccion_ausente` (1 casos)](#grupo-g-08-municipio-sin-impuesto-seccion-ausente)
+- [Grupo G-09: `segmento_vacio` / `ocr_ilegible` (1 casos)](#grupo-g-09-segmento-vacio-ocr-ilegible)
+- [Grupo G-10: `segmento_vacio` / `seccion_ausente` (1 casos)](#grupo-g-10-segmento-vacio-seccion-ausente)
+- [Casos `requiere_revision` (3 casos)](#casos-requiere_revision-excluyendo-otro_no_clasificado)
 
 > ℹ️ Se excluyeron **117 JSONs sintéticos** (`_meta.modelo == 'synthesized_short_form'`) que no requieren HITL.
 
-## Casos `otro_no_clasificado` (76 casos en 17 grupos)
+## Casos `otro_no_clasificado` (27 casos en 10 grupos)
 
-## Grupo G-01: `segmento_vacio` / `solo_encabezado` (30 casos)
+## Grupo G-01: `segmento_vacio` / `solo_encabezado` (9 casos)
 
 ### `coahuila/ocampo/2010` (cvegeo 05023)
 
@@ -137,18 +100,18 @@ campos automáticamente y propongo fixes basados en los patrones acumulados.
 - **tipo actual** (LLM): `otro_no_clasificado`
 - **categoria**: `segmento_vacio`  ·  **tag**: `solo_encabezado`
 - **descripcion_estructural**:
-  > El segmento proporcionado sólo contiene el encabezado de la sección "Del Impuesto Predial" y no incluye artículo, tabla, rangos, tasas ni cuota aplicable. No es posible transcribir la mecánica de cálculo con el contenido recibido.
+  > El segmento proporcionado sólo contiene el encabezado 'DEL IMPUESTO PREDIAL' sin texto tarifario, tablas, cuotas, tasas ni rangos de cálculo. No es posible extraer la mecánica del impuesto predial con este contenido.
 - **razon**: `clasificado_como_otro_no_clasificado`
 
 **Revisión**:
 
-- [ x] revisado
-- veredicto:invalido 
-- tipo_correcto: n/a 
-- causa_raiz: segmentacion
-- patron: P-01
-- notas: El recorte corresponde a un segmento del municipio Morelos
-- accion: volver a segmentar, mejorar segment.py
+- [ ] revisado
+- veredicto: 
+- tipo_correcto: 
+- causa_raiz: 
+- patron: 
+- notas: 
+- accion: 
 
 ---
 
@@ -158,18 +121,18 @@ campos automáticamente y propongo fixes basados en los patrones acumulados.
 - **tipo actual** (LLM): `otro_no_clasificado`
 - **categoria**: `segmento_vacio`  ·  **tag**: `solo_encabezado`
 - **descripcion_estructural**:
-  > El texto proporcionado sólo contiene el encabezado del capítulo 'Del Impuesto Predial' y no incluye ningún artículo, tabla o mecánica de cálculo. No es posible extraer una tarifa sin contenido tarifario.
+  > El segmento proporcionado sólo contiene el encabezado de la sección 'Del Impuesto Predial' y no incluye texto tarifario, tablas, rangos ni tasas para extraer la mecánica de cálculo.
 - **razon**: `clasificado_como_otro_no_clasificado`
 
 **Revisión**:
 
-- [ x] revisado
-- veredicto:invalido 
-- tipo_correcto: n/a 
-- causa_raiz: segmentacion
-- patron: P-01
-- notas: El recorte corresponde a un segmento del municipio Morelos
-- accion: volver a segmentar, mejorar segment.py
+- [ ] revisado
+- veredicto: 
+- tipo_correcto: 
+- causa_raiz: 
+- patron: 
+- notas: 
+- accion: 
 
 ---
 
@@ -179,333 +142,60 @@ campos automáticamente y propongo fixes basados en los patrones acumulados.
 - **tipo actual** (LLM): `otro_no_clasificado`
 - **categoria**: `segmento_vacio`  ·  **tag**: `solo_encabezado`
 - **descripcion_estructural**:
-  > El texto proporcionado sólo contiene el encabezado del capítulo "Del Impuesto Predial" y no incluye artículos, tablas, tarifas ni mecánica de cálculo. No es posible extraer una estructura tarifaria sin inventarla.
+  > El segmento proporcionado sólo contiene el encabezado del capítulo 'Del Impuesto Predial' y no incluye texto tarifario, tablas, cuotas, tasas ni brackets. No es posible extraer una mecánica de cálculo sin contenido normativo adicional.
 - **razon**: `clasificado_como_otro_no_clasificado`
 
 **Revisión**:
 
-- [ x] revisado
-- veredicto:invalido 
-- tipo_correcto: n/a 
-- causa_raiz: segmentacion
-- patron: P-01
-- notas: El recorte corresponde a un segmento del municipio Morelos
-- accion: volver a segmentar, mejorar segment.py
+- [ ] revisado
+- veredicto: 
+- tipo_correcto: 
+- causa_raiz: 
+- patron: 
+- notas: 
+- accion: 
 
 ---
 
-### `guanajuato/abasolo/2025` (cvegeo 11001)
+### `guanajuato/cortazar/2023` (cvegeo 11011)
 
-- **JSON**: [`predial-mx-v2/guanajuato/GTO_PREDIAL_2025_abasolo.json`](predial-mx-v2/guanajuato/GTO_PREDIAL_2025_abasolo.json)
+- **JSON**: [`predial-mx-v2/guanajuato/GTO_PREDIAL_2023_cortazar.json`](predial-mx-v2/guanajuato/GTO_PREDIAL_2023_cortazar.json)
 - **tipo actual** (LLM): `otro_no_clasificado`
 - **categoria**: `segmento_vacio`  ·  **tag**: `solo_encabezado`
 - **descripcion_estructural**:
-  > El texto proporcionado no contiene el apartado tarifario del Impuesto Predial ni tablas, cuotas o tasas aplicables. Sólo aparecen encabezados y páginas en blanco/omitidas entre las páginas 3 y 20, sin mecánica de cálculo extraíble.
+  > El texto proporcionado para la sección de impuesto predial no contiene la mecánica tarifaria ni tablas de cálculo; sólo aparecen portadas, encabezados y páginas en blanco o sin contenido extraíble entre las páginas 162 y 179. No es posible transcribir una tarifa sin inventarla.
 - **razon**: `clasificado_como_otro_no_clasificado`
 
 **Revisión**:
 
-- [ x] revisado
-- veredicto: invalido 
-- tipo_correcto: n/a
-- causa_raiz: ocr, segmentacion
-- patron: P-02
-- notas: solo primeras paginas aptas para busqueda por text, segmentación incorrecta. Problema similar otro ya corregido con HITL previo. 
-- accion: implementar re-ocr + segmentacion 
+- [ ] revisado
+- veredicto: 
+- tipo_correcto: 
+- causa_raiz: 
+- patron: 
+- notas: 
+- accion: 
 
 ---
 
-### `guanajuato/acambaro/2024` (cvegeo 11002)
+### `guanajuato/irapuato/2025` (cvegeo 11017)
 
-- **JSON**: [`predial-mx-v2/guanajuato/GTO_PREDIAL_2024_acambaro.json`](predial-mx-v2/guanajuato/GTO_PREDIAL_2024_acambaro.json)
+- **JSON**: [`predial-mx-v2/guanajuato/GTO_PREDIAL_2025_irapuato.json`](predial-mx-v2/guanajuato/GTO_PREDIAL_2025_irapuato.json)
 - **tipo actual** (LLM): `otro_no_clasificado`
 - **categoria**: `segmento_vacio`  ·  **tag**: `solo_encabezado`
 - **descripcion_estructural**:
-  > El texto proporcionado no contiene la sección tarifaria del impuesto predial ni tablas de cálculo; sólo aparecen páginas del índice y páginas en blanco/encabezados sin mecánica extraíble. No hay rangos, tasas, cuotas ni artículo tarifario visible para transcribir la mecánica.
+  > El texto proporcionado no incluye el contenido tarifario del impuesto predial; sólo aparecen encabezados, sumarios de ingresos y páginas en blanco o sin transcripción legible de la sección correspondiente. No es posible extraer una mecánica de cálculo sin inventar la tabla o el artículo aplicable.
 - **razon**: `clasificado_como_otro_no_clasificado`
 
 **Revisión**:
 
-- [ x] revisado
-- veredicto: invalido 
-- tipo_correcto: n/a
-- causa_raiz: ocr, segmentacion
-- patron: P-02
-- notas: solo primeras paginas aptas para busqueda por text, segmentación incorrecta. Problema similar otro ya corregido con HITL previo. 
-- accion: implementar re-ocr + segmentacion 
-
----
-
-### `guanajuato/apaseo_el_grande/2025` (cvegeo 11005)
-
-- **JSON**: [`predial-mx-v2/guanajuato/GTO_PREDIAL_2025_apaseo_el_grande.json`](predial-mx-v2/guanajuato/GTO_PREDIAL_2025_apaseo_el_grande.json)
-- **tipo actual** (LLM): `otro_no_clasificado`
-- **categoria**: `segmento_vacio`  ·  **tag**: `solo_encabezado`
-- **descripcion_estructural**:
-  > El texto proporcionado no contiene la sección tarifaria del impuesto predial ni tablas o artículos con la mecánica de cálculo; sólo aparecen encabezados y páginas en blanco/omitidas dentro del rango señalado. No es posible extraer una tarifa sin inventarla.
-- **razon**: `clasificado_como_otro_no_clasificado`
-
-**Revisión**:
-
-- [ x] revisado
-- veredicto: invalido 
-- tipo_correcto: n/a
-- causa_raiz: ocr, segmentacion
-- patron: P-02
-- notas: solo primeras paginas aptas para busqueda por text, segmentación incorrecta. Problema similar otro ya corregido con HITL previo. 
-- accion: implementar re-ocr + segmentacion 
-
----
-
-### `guanajuato/comonfort/2025` (cvegeo 11009)
-
-- **JSON**: [`predial-mx-v2/guanajuato/GTO_PREDIAL_2025_comonfort.json`](predial-mx-v2/guanajuato/GTO_PREDIAL_2025_comonfort.json)
-- **tipo actual** (LLM): `otro_no_clasificado`
-- **categoria**: `segmento_vacio`  ·  **tag**: `solo_encabezado`
-- **descripcion_estructural**:
-  > El texto proporcionado no contiene el artículo o tabla del Impuesto Predial; sólo aparecen encabezados y páginas en blanco/omisiones entre las páginas 3-20. No hay mecánica tarifaria extraíble para clasificar en alguna de las variantes.
-- **razon**: `clasificado_como_otro_no_clasificado`
-
-**Revisión**:
-
-- [ x] revisado
-- veredicto: invalido 
-- tipo_correcto: n/a
-- causa_raiz: ocr, segmentacion
-- patron: P-02
-- notas: solo primeras paginas aptas para busqueda por text, segmentación incorrecta. Problema similar otro ya corregido con HITL previo. 
-- accion: implementar re-ocr + segmentacion 
-
----
-
-### `guanajuato/cortazar/2025` (cvegeo 11011)
-
-- **JSON**: [`predial-mx-v2/guanajuato/GTO_PREDIAL_2025_cortazar.json`](predial-mx-v2/guanajuato/GTO_PREDIAL_2025_cortazar.json)
-- **tipo actual** (LLM): `otro_no_clasificado`
-- **categoria**: `segmento_vacio`  ·  **tag**: `solo_encabezado`
-- **descripcion_estructural**:
-  > El texto proporcionado no incluye el contenido tarifario del Impuesto Predial; sólo aparecen encabezados, paginación y el inicio del documento sin la sección con tablas o mecánica de cálculo. No es posible extraer una estructura de predial a partir de este segmento.
-- **razon**: `clasificado_como_otro_no_clasificado`
-
-**Revisión**:
-
-- [ x] revisado
-- veredicto: invalido 
-- tipo_correcto: n/a
-- causa_raiz: ocr, segmentacion
-- patron: P-02
-- notas: solo primeras paginas aptas para busqueda por text, segmentación incorrecta. Problema similar otro ya corregido con HITL previo. 
-- accion: implementar re-ocr + segmentacion 
-
----
-
-### `guanajuato/cortazar/2026` (cvegeo 11011)
-
-- **JSON**: [`predial-mx-v2/guanajuato/GTO_PREDIAL_2026_cortazar.json`](predial-mx-v2/guanajuato/GTO_PREDIAL_2026_cortazar.json)
-- **tipo actual** (LLM): `otro_no_clasificado`
-- **categoria**: `segmento_vacio`  ·  **tag**: `solo_encabezado`
-- **descripcion_estructural**:
-  > El texto proporcionado para la sección de impuesto predial no contiene la mecánica tarifaria; las páginas mostradas están vacías o sólo incluyen encabezados y no aparece tabla, cuota, tasa ni artículo aplicable del predial. No es posible extraer un esquema de cálculo sin inventar información.
-- **razon**: `clasificado_como_otro_no_clasificado`
-
-**Revisión**:
-
-- [ x] revisado
-- veredicto: invalido 
-- tipo_correcto: n/a
-- causa_raiz: ocr, segmentacion
-- patron: P-02
-- notas: solo primeras paginas aptas para busqueda por text, segmentación incorrecta. Problema similar otro ya corregido con HITL previo. 
-- accion: implementar re-ocr + segmentacion 
-
----
-
-### `guanajuato/cueramaro/2025` (cvegeo 11012)
-
-- **JSON**: [`predial-mx-v2/guanajuato/GTO_PREDIAL_2025_cueramaro.json`](predial-mx-v2/guanajuato/GTO_PREDIAL_2025_cueramaro.json)
-- **tipo actual** (LLM): `otro_no_clasificado`
-- **categoria**: `segmento_vacio`  ·  **tag**: `solo_encabezado`
-- **descripcion_estructural**:
-  > El texto proporcionado no contiene el articulado ni tablas del apartado de Impuesto Predial; sólo aparecen encabezados de páginas y metadatos del documento. No es posible extraer una mecánica de cálculo sin contenido tarifario.
-- **razon**: `clasificado_como_otro_no_clasificado`
-
-**Revisión**:
-
-- [ x] revisado
-- veredicto: invalido 
-- tipo_correcto: n/a
-- causa_raiz: ocr, segmentacion
-- patron: P-02
-- notas: solo primeras paginas aptas para busqueda por text, segmentación incorrecta. Problema similar otro ya corregido con HITL previo. 
-- accion: implementar re-ocr + segmentacion 
-
----
-
-### `guanajuato/dolores_hidalgo_cuna_de_la_independencia_nacional/2025` (cvegeo 11014)
-
-- **JSON**: [`predial-mx-v2/guanajuato/GTO_PREDIAL_2025_dolores_hidalgo_cuna_de_la_independencia_nacional.json`](predial-mx-v2/guanajuato/GTO_PREDIAL_2025_dolores_hidalgo_cuna_de_la_independencia_nacional.json)
-- **tipo actual** (LLM): `otro_no_clasificado`
-- **categoria**: `segmento_vacio`  ·  **tag**: `solo_encabezado`
-- **descripcion_estructural**:
-  > El texto proporcionado para la sección de impuesto predial no contiene la mecánica tarifaria ni tablas de cálculo; únicamente aparece el encabezado presupuestal con el monto estimado del impuesto predial y páginas en blanco/sin contenido legible de la sección. No es posible extraer una tarifa, cuota o esquema de cálculo sin inventarlo.
-- **razon**: `clasificado_como_otro_no_clasificado`
-
-**Revisión**:
-
-- [ x] revisado
-- veredicto: invalido 
-- tipo_correcto: n/a
-- causa_raiz: ocr, segmentacion
-- patron: P-02
-- notas: solo primeras paginas aptas para busqueda por text, segmentación incorrecta. Problema similar otro ya corregido con HITL previo. 
-- accion: implementar re-ocr + segmentacion 
-
----
-
-### `guanajuato/irapuato/2026` (cvegeo 11017)
-
-- **JSON**: [`predial-mx-v2/guanajuato/GTO_PREDIAL_2026_irapuato.json`](predial-mx-v2/guanajuato/GTO_PREDIAL_2026_irapuato.json)
-- **tipo actual** (LLM): `otro_no_clasificado`
-- **categoria**: `segmento_vacio`  ·  **tag**: `solo_encabezado`
-- **descripcion_estructural**:
-  > El texto proporcionado no contiene el articulado ni la tabla del Impuesto Predial; sólo aparecen portadas, encabezados y páginas en blanco/omisas para las páginas señaladas. No es posible extraer la mecánica de cálculo porque el segmento tarifario no está presente en el material recibido.
-- **razon**: `clasificado_como_otro_no_clasificado`
-
-**Revisión**:
-
-- [ x] revisado
-- veredicto: invalido 
-- tipo_correcto: n/a
-- causa_raiz: ocr, segmentacion
-- patron: P-02
-- notas: solo primeras paginas aptas para busqueda por text, segmentación incorrecta. Problema similar otro ya corregido con HITL previo. 
-- accion: implementar re-ocr + segmentacion 
-
----
-
-### `guanajuato/jaral_del_progreso/2024` (cvegeo 11018)
-
-- **JSON**: [`predial-mx-v2/guanajuato/GTO_PREDIAL_2024_jaral_del_progreso.json`](predial-mx-v2/guanajuato/GTO_PREDIAL_2024_jaral_del_progreso.json)
-- **tipo actual** (LLM): `otro_no_clasificado`
-- **categoria**: `segmento_vacio`  ·  **tag**: `solo_encabezado`
-- **descripcion_estructural**:
-  > El fragmento proporcionado no contiene la sección tarifaria del impuesto predial; sólo aparece el encabezado del municipio, la estimación de ingresos y páginas en blanco/omitidas para las páginas 4 a 20. No hay tabla, cuotas, tasas ni brackets extraíbles para estructurar la mecánica de cálculo.
-- **razon**: `clasificado_como_otro_no_clasificado`
-
-**Revisión**:
-
-- [ x] revisado
-- veredicto: invalido 
-- tipo_correcto: n/a
-- causa_raiz: ocr, segmentacion
-- patron: P-02
-- notas: solo primeras paginas aptas para busqueda por text, segmentación incorrecta. Problema similar otro ya corregido con HITL previo. 
-- accion: implementar re-ocr + segmentacion 
-
----
-
-### `guanajuato/jerecuaro/2023` (cvegeo 11019)
-
-- **JSON**: [`predial-mx-v2/guanajuato/GTO_PREDIAL_2023_jerecuaro.json`](predial-mx-v2/guanajuato/GTO_PREDIAL_2023_jerecuaro.json)
-- **tipo actual** (LLM): `otro_no_clasificado`
-- **categoria**: `segmento_vacio`  ·  **tag**: `solo_encabezado`
-- **descripcion_estructural**:
-  > El texto proporcionado no contiene el articulado ni tabla del Impuesto Predial; sólo aparecen portadas y páginas en blanco/encabezados de la ley. No es posible extraer mecánica de cálculo porque el segmento tarifario no viene incluido en el texto recibido.
-- **razon**: `clasificado_como_otro_no_clasificado`
-
-**Revisión**:
-
-- [ x] revisado
-- veredicto: invalido 
-- tipo_correcto: n/a
-- causa_raiz: ocr, segmentacion
-- patron: P-02
-- notas: solo primeras paginas aptas para busqueda por text, segmentación incorrecta. Problema similar otro ya corregido con HITL previo. 
-- accion: implementar re-ocr + segmentacion 
-
----
-
-### `guanajuato/purisima_del_rincon/2026` (cvegeo 11025)
-
-- **JSON**: [`predial-mx-v2/guanajuato/GTO_PREDIAL_2026_purisima_del_rincon.json`](predial-mx-v2/guanajuato/GTO_PREDIAL_2026_purisima_del_rincon.json)
-- **tipo actual** (LLM): `otro_no_clasificado`
-- **categoria**: `segmento_vacio`  ·  **tag**: `solo_encabezado`
-- **descripcion_estructural**:
-  > El texto proporcionado para la sección de impuesto predial no contiene la mecánica tarifaria ni tablas de cálculo; únicamente aparecen encabezados de páginas y datos editoriales del periódico oficial. No es posible extraer una estructura de predial sin contenido tarifario.
-- **razon**: `clasificado_como_otro_no_clasificado`
-
-**Revisión**:
-
-- [ x] revisado
-- veredicto: invalido 
-- tipo_correcto: n/a
-- causa_raiz: ocr, segmentacion
-- patron: P-02
-- notas: solo primeras paginas aptas para busqueda por text, segmentación incorrecta. Problema similar otro ya corregido con HITL previo. 
-- accion: implementar re-ocr + segmentacion 
-
----
-
-### `guanajuato/salamanca/2024` (cvegeo 11027)
-
-- **JSON**: [`predial-mx-v2/guanajuato/GTO_PREDIAL_2024_salamanca.json`](predial-mx-v2/guanajuato/GTO_PREDIAL_2024_salamanca.json)
-- **tipo actual** (LLM): `otro_no_clasificado`
-- **categoria**: `segmento_vacio`  ·  **tag**: `solo_encabezado`
-- **descripcion_estructural**:
-  > El texto proporcionado para la sección de Impuesto Predial no contiene tablas ni artículos tarifarios del predial; sólo aparecen páginas de portada/índice y encabezados de la ley, sin mecánica de cálculo extraíble. No es posible identificar tarifa, cuotas, rangos o tasas del impuesto predial en este fragmento.
-- **razon**: `clasificado_como_otro_no_clasificado`
-
-**Revisión**:
-
-- [ x] revisado
-- veredicto: invalido 
-- tipo_correcto: n/a
-- causa_raiz: ocr, segmentacion
-- patron: P-02
-- notas: solo primeras paginas aptas para busqueda por text, segmentación incorrecta. Problema similar otro ya corregido con HITL previo. 
-- accion: implementar re-ocr + segmentacion 
-
----
-
-### `guanajuato/salvatierra/2024` (cvegeo 11028)
-
-- **JSON**: [`predial-mx-v2/guanajuato/GTO_PREDIAL_2024_salvatierra.json`](predial-mx-v2/guanajuato/GTO_PREDIAL_2024_salvatierra.json)
-- **tipo actual** (LLM): `otro_no_clasificado`
-- **categoria**: `segmento_vacio`  ·  **tag**: `solo_encabezado`
-- **descripcion_estructural**:
-  > El texto proporcionado sólo contiene el encabezado de la Ley de Ingresos y la estimación global del impuesto predial, pero no incluye tablas, tarifas ni mecánica de cálculo del predial en las páginas mostradas. No es posible extraer la estructura tarifaria sin inventarla.
-- **razon**: `clasificado_como_otro_no_clasificado`
-
-**Revisión**:
-
-- [ x] revisado
-- veredicto: invalido 
-- tipo_correcto: n/a
-- causa_raiz: ocr, segmentacion
-- patron: P-02
-- notas: solo primeras paginas aptas para busqueda por text, segmentación incorrecta. Problema similar otro ya corregido con HITL previo. 
-- accion: implementar re-ocr + segmentacion 
-
----
-
-### `guanajuato/salvatierra/2026` (cvegeo 11028)
-
-- **JSON**: [`predial-mx-v2/guanajuato/GTO_PREDIAL_2026_salvatierra.json`](predial-mx-v2/guanajuato/GTO_PREDIAL_2026_salvatierra.json)
-- **tipo actual** (LLM): `otro_no_clasificado`
-- **categoria**: `segmento_vacio`  ·  **tag**: `solo_encabezado`
-- **descripcion_estructural**:
-  > El texto proporcionado sólo muestra el encabezado de la Ley de Ingresos y el monto estimado del impuesto predial, pero no incluye la sección tarifaria ni tablas o artículos con la mecánica de cálculo del predial. No hay datos extraíbles de cuotas, tasas o rangos.
-- **razon**: `clasificado_como_otro_no_clasificado`
-
-**Revisión**:
-
-- [ x] revisado
-- veredicto: invalido 
-- tipo_correcto: n/a
-- causa_raiz: ocr, segmentacion
-- patron: P-02
-- notas: solo primeras paginas aptas para busqueda por text, segmentación incorrecta. Problema similar otro ya corregido con HITL previo. 
-- accion: implementar re-ocr + segmentacion 
+- [ ] revisado
+- veredicto: 
+- tipo_correcto: 
+- causa_raiz: 
+- patron: 
+- notas: 
+- accion: 
 
 ---
 
@@ -515,60 +205,18 @@ campos automáticamente y propongo fixes basados en los patrones acumulados.
 - **tipo actual** (LLM): `otro_no_clasificado`
 - **categoria**: `segmento_vacio`  ·  **tag**: `solo_encabezado`
 - **descripcion_estructural**:
-  > El texto proporcionado no incluye contenido tarifario del Impuesto Predial; las páginas mostradas sólo contienen portada, encabezados y numeración, sin tablas, cuotas, tasas, rangos o artículos con mecánica de cálculo. No es posible extraer la mecánica sin inventarla.
+  > El texto proporcionado no contiene la sección tarifaria del impuesto predial ni tablas o artículos con mecánica de cálculo; sólo aparecen encabezados generales y páginas en blanco/omitidas dentro del bloque de predial. No es posible extraer una estructura de cálculo sin inventar datos.
 - **razon**: `clasificado_como_otro_no_clasificado`
 
 **Revisión**:
 
-- [ x] revisado
-- veredicto: invalido 
-- tipo_correcto: n/a
-- causa_raiz: ocr, segmentacion
-- patron: P-02
-- notas: solo primeras paginas aptas para busqueda por text, segmentación incorrecta. Problema similar otro ya corregido con HITL previo. 
-- accion: implementar re-ocr + segmentacion 
-
----
-
-### `guanajuato/san_diego_de_la_union/2025` (cvegeo 11029)
-
-- **JSON**: [`predial-mx-v2/guanajuato/GTO_PREDIAL_2025_san_diego_de_la_union.json`](predial-mx-v2/guanajuato/GTO_PREDIAL_2025_san_diego_de_la_union.json)
-- **tipo actual** (LLM): `otro_no_clasificado`
-- **categoria**: `segmento_vacio`  ·  **tag**: `solo_encabezado`
-- **descripcion_estructural**:
-  > El texto proporcionado no contiene el artículo ni la tabla del Impuesto Predial; sólo aparecen encabezados generales y páginas en blanco/omisas entre las páginas 3 y 20. No es posible extraer mecánica de cálculo sin el contenido tarifario.
-- **razon**: `clasificado_como_otro_no_clasificado`
-
-**Revisión**:
-
-- [ x] revisado
-- veredicto: invalido 
-- tipo_correcto: n/a
-- causa_raiz: ocr, segmentacion
-- patron: P-02
-- notas: solo primeras paginas aptas para busqueda por text, segmentación incorrecta. Problema similar otro ya corregido con HITL previo. 
-- accion: implementar re-ocr + segmentacion 
-
----
-
-### `guanajuato/san_felipe/2025` (cvegeo 11030)
-
-- **JSON**: [`predial-mx-v2/guanajuato/GTO_PREDIAL_2025_san_felipe.json`](predial-mx-v2/guanajuato/GTO_PREDIAL_2025_san_felipe.json)
-- **tipo actual** (LLM): `otro_no_clasificado`
-- **categoria**: `segmento_vacio`  ·  **tag**: `solo_encabezado`
-- **descripcion_estructural**:
-  > El texto proporcionado no contiene el articulado ni tablas del apartado 'Del Impuesto Predial'; sólo aparece el encabezado general del decreto y páginas en blanco o sin contenido tarifario extraíble para predial. No es posible transcribir una mecánica de cálculo sin inventarla.
-- **razon**: `clasificado_como_otro_no_clasificado`
-
-**Revisión**:
-
-- [ x] revisado
-- veredicto: invalido 
-- tipo_correcto: n/a
-- causa_raiz: ocr, segmentacion
-- patron: P-02
-- notas: solo primeras paginas aptas para busqueda por text, segmentación incorrecta. Problema similar otro ya corregido con HITL previo. 
-- accion: implementar re-ocr + segmentacion 
+- [ ] revisado
+- veredicto: 
+- tipo_correcto: 
+- causa_raiz: 
+- patron: 
+- notas: 
+- accion: 
 
 ---
 
@@ -578,123 +226,39 @@ campos automáticamente y propongo fixes basados en los patrones acumulados.
 - **tipo actual** (LLM): `otro_no_clasificado`
 - **categoria**: `segmento_vacio`  ·  **tag**: `solo_encabezado`
 - **descripcion_estructural**:
-  > El texto proporcionado no contiene mecánica de cálculo del impuesto predial; sólo aparecen encabezados de fecha, página y periódico oficial. No hay tabla, cuotas, tasas ni rangos extraíbles para clasificar en otra variante.
+  > El texto proporcionado sólo contiene encabezado y pie de página del periódico oficial, sin contenido tarifario ni articulado del Impuesto Predial. No es posible extraer mecánica de cálculo.
 - **razon**: `clasificado_como_otro_no_clasificado`
 
 **Revisión**:
 
-- [ x] revisado
-- veredicto: invalido 
-- tipo_correcto: n/a
-- causa_raiz: ocr, segmentacion
-- patron: P-02
-- notas: solo primeras paginas aptas para busqueda por text, segmentación incorrecta. Problema similar otro ya corregido con HITL previo. 
-- accion: implementar re-ocr + segmentacion 
+- [ ] revisado
+- veredicto: 
+- tipo_correcto: 
+- causa_raiz: 
+- patron: 
+- notas: 
+- accion: 
 
 ---
 
-### `guanajuato/san_luis_de_la_paz/2026` (cvegeo 11033)
+### `guanajuato/valle_de_santiago/2025` (cvegeo 11042)
 
-- **JSON**: [`predial-mx-v2/guanajuato/GTO_PREDIAL_2026_san_luis_de_la_paz.json`](predial-mx-v2/guanajuato/GTO_PREDIAL_2026_san_luis_de_la_paz.json)
+- **JSON**: [`predial-mx-v2/guanajuato/GTO_PREDIAL_2025_valle_de_santiago.json`](predial-mx-v2/guanajuato/GTO_PREDIAL_2025_valle_de_santiago.json)
 - **tipo actual** (LLM): `otro_no_clasificado`
 - **categoria**: `segmento_vacio`  ·  **tag**: `solo_encabezado`
 - **descripcion_estructural**:
-  > El texto proporcionado no contiene la sección tarifaria del impuesto predial ni una tabla o mecánica de cálculo extraíble. Sólo aparecen encabezados generales y páginas en blanco/omisas respecto al predial.
+  > El texto proporcionado sólo muestra el encabezado presupuestal '1201 impuesto predial' con su estimado de recaudación, pero no incluye el artículo o tabla que describa la mecánica de cálculo del impuesto. No hay rangos, tasas, cuotas ni categorías extraíbles para estructurar el predial.
 - **razon**: `clasificado_como_otro_no_clasificado`
 
 **Revisión**:
 
-- [ x] revisado
-- veredicto: invalido 
-- tipo_correcto: n/a
-- causa_raiz: ocr, segmentacion
-- patron: P-02
-- notas: solo primeras paginas aptas para busqueda por text, segmentación incorrecta. Problema similar otro ya corregido con HITL previo. 
-- accion: implementar re-ocr + segmentacion 
-
----
-
-### `guanajuato/santa_catarina/2026` (cvegeo 11034)
-
-- **JSON**: [`predial-mx-v2/guanajuato/GTO_PREDIAL_2026_santa_catarina.json`](predial-mx-v2/guanajuato/GTO_PREDIAL_2026_santa_catarina.json)
-- **tipo actual** (LLM): `otro_no_clasificado`
-- **categoria**: `segmento_vacio`  ·  **tag**: `solo_encabezado`
-- **descripcion_estructural**:
-  > El texto proporcionado para la sección de Impuesto Predial no contiene la mecánica de cálculo ni tablas tarifarias; únicamente aparece el encabezado del impuesto en el cuadro de ingresos estimados y luego páginas vacías respecto al predial. No es posible extraer una tarifa sin inventarla.
-- **razon**: `clasificado_como_otro_no_clasificado`
-
-**Revisión**:
-
-- [ x] revisado
-- veredicto: invalido 
-- tipo_correcto: n/a
-- causa_raiz: ocr, segmentacion
-- patron: P-02
-- notas: solo primeras paginas aptas para busqueda por text, segmentación incorrecta. Problema similar otro ya corregido con HITL previo. 
-- accion: implementar re-ocr + segmentacion 
-
----
-
-### `guanajuato/santiago_maravatio/2025` (cvegeo 11036)
-
-- **JSON**: [`predial-mx-v2/guanajuato/GTO_PREDIAL_2025_santiago_maravatio.json`](predial-mx-v2/guanajuato/GTO_PREDIAL_2025_santiago_maravatio.json)
-- **tipo actual** (LLM): `otro_no_clasificado`
-- **categoria**: `segmento_vacio`  ·  **tag**: `solo_encabezado`
-- **descripcion_estructural**:
-  > El texto proporcionado no contiene el apartado tarifario del Impuesto Predial ni tablas o artículos con la mecánica de cálculo; sólo aparecen encabezados y numeración de páginas. No es posible extraer una tasa, cuota o esquema de cobro sin inventar información.
-- **razon**: `clasificado_como_otro_no_clasificado`
-
-**Revisión**:
-
-- [ x] revisado
-- veredicto: invalido 
-- tipo_correcto: n/a
-- causa_raiz: ocr, segmentacion
-- patron: P-02
-- notas: solo primeras paginas aptas para busqueda por text, segmentación incorrecta. Problema similar otro ya corregido con HITL previo. 
-- accion: implementar re-ocr + segmentacion 
-
----
-
-### `guanajuato/uriangato/2020` (cvegeo 11041)
-
-- **JSON**: [`predial-mx-v2/guanajuato/GTO_PREDIAL_2020_uriangato.json`](predial-mx-v2/guanajuato/GTO_PREDIAL_2020_uriangato.json)
-- **tipo actual** (LLM): `otro_no_clasificado`
-- **categoria**: `segmento_vacio`  ·  **tag**: `solo_encabezado`
-- **descripcion_estructural**:
-  > El texto proporcionado no contiene el articulado ni una tabla tarifaria de la sección del Impuesto Predial; sólo aparecen páginas de encabezado y sumario con el monto estimado del impuesto predial, sin mecánica de cálculo extraíble. No es posible transcribir tasas, brackets o cuotas sin inventar contenido.
-- **razon**: `clasificado_como_otro_no_clasificado`
-
-**Revisión**:
-
-- [ x] revisado
-- veredicto: invalido 
-- tipo_correcto: n/a
-- causa_raiz: ocr, segmentacion
-- patron: P-02
-- notas: solo primeras paginas aptas para busqueda por text, segmentación incorrecta. Problema similar otro ya corregido con HITL previo. 
-- accion: implementar re-ocr + segmentacion 
-
----
-
-### `guanajuato/victoria/2021` (cvegeo 11043)
-
-- **JSON**: [`predial-mx-v2/guanajuato/GTO_PREDIAL_2021_victoria.json`](predial-mx-v2/guanajuato/GTO_PREDIAL_2021_victoria.json)
-- **tipo actual** (LLM): `otro_no_clasificado`
-- **categoria**: `segmento_vacio`  ·  **tag**: `solo_encabezado`
-- **descripcion_estructural**:
-  > El texto proporcionado incluye únicamente encabezados y páginas en blanco/omisas para la sección de predial; no aparece tabla, artículo ni mecánica de cálculo del impuesto predial en el segmento recibido. No es posible extraer la estructura tarifaria sin inventarla.
-- **razon**: `clasificado_como_otro_no_clasificado`
-
-**Revisión**:
-
-- [ x] revisado
-- veredicto: invalido 
-- tipo_correcto: n/a
-- causa_raiz: ocr, segmentacion
-- patron: P-02
-- notas: solo primeras paginas aptas para busqueda por text, segmentación incorrecta. Problema similar otro ya corregido con HITL previo. 
-- accion: implementar re-ocr + segmentacion 
+- [ ] revisado
+- veredicto: 
+- tipo_correcto: 
+- causa_raiz: 
+- patron: 
+- notas: 
+- accion: 
 
 ---
 
@@ -704,620 +268,22 @@ campos automáticamente y propongo fixes basados en los patrones acumulados.
 - **tipo actual** (LLM): `otro_no_clasificado`
 - **categoria**: `segmento_vacio`  ·  **tag**: `solo_encabezado`
 - **descripcion_estructural**:
-  > El texto proporcionado no contiene la sección tarifaria del impuesto predial ni tablas de cuotas o tasas; sólo aparecen encabezados, metadatos del documento y numeración de páginas. No es posible extraer la mecánica de cálculo sin contenido tarifario.
+  > El texto proporcionado no contiene la sección del Impuesto Predial ni ninguna tabla, cuota o tasa aplicable; sólo aparece el encabezado del decreto y referencia al periódico oficial. No es posible extraer la mecánica de cálculo.
 - **razon**: `clasificado_como_otro_no_clasificado`
 
 **Revisión**:
 
-- [ x] revisado
-- veredicto: invalido 
-- tipo_correcto: n/a
-- causa_raiz: ocr, segmentacion
-- patron: P-02
-- notas: solo primeras paginas aptas para busqueda por text, segmentación incorrecta. Problema similar otro ya corregido con HITL previo. 
-- accion: implementar re-ocr + segmentacion 
+- [ ] revisado
+- veredicto: 
+- tipo_correcto: 
+- causa_raiz: 
+- patron: 
+- notas: 
+- accion: 
 
 ---
 
-### `yucatan/progreso/2010` (cvegeo 31059)
-
-- **JSON**: [`predial-mx-v2/yucatan/YUC_PREDIAL_2010_progreso.json`](predial-mx-v2/yucatan/YUC_PREDIAL_2010_progreso.json)
-- **tipo actual** (LLM): `otro_no_clasificado`
-- **categoria**: `segmento_vacio`  ·  **tag**: `solo_encabezado`
-- **descripcion_estructural**:
-  > El segmento proporcionado está truncado y sólo contiene el encabezado del Capítulo I y la definición general de impuestos; no aparece la mecánica de cálculo del impuesto predial ni tabla, rangos, tasas o cuotas aplicables. Con este contenido no es posible extraer una tarifa predial estructurada sin inventar información.
-- **razon**: `clasificado_como_otro_no_clasificado`
-
-**Revisión**:
-
-- [ x] revisado
-- veredicto: invalido 
-- tipo_correcto: progresivo
-- causa_raiz: segment
-- patron: P-01
-- notas: error puro de segmentación, tarifas en pagina 155 de 2009-12-29_suplemento.pdf
-- accion: re-segment, mejorar segment.py
-
----
-
-### `yucatan/progreso/2011` (cvegeo 31059)
-
-- **JSON**: [`predial-mx-v2/yucatan/YUC_PREDIAL_2011_progreso.json`](predial-mx-v2/yucatan/YUC_PREDIAL_2011_progreso.json)
-- **tipo actual** (LLM): `otro_no_clasificado`
-- **categoria**: `segmento_vacio`  ·  **tag**: `solo_encabezado`
-- **descripcion_estructural**:
-  > El fragmento proporcionado sólo contiene el encabezado del Capítulo I y el inicio del artículo 13, pero no incluye la mecánica tarifaria del impuesto predial ni tablas, cuotas o tasas. No es posible extraer una estructura de cálculo a partir de este segmento truncado.
-- **razon**: `clasificado_como_otro_no_clasificado`
-
-**Revisión**:
-
-- [ x] revisado
-- veredicto: invalido 
-- tipo_correcto: progresivo
-- causa_raiz: segment
-- patron: P-01
-- notas: error puro de segmentación, tarifas en pagina 402 de 2010-12-29_suplemento.pdf
-- accion: re-segment, mejorar segment.py
-
----
-
-## Grupo G-02: `estructura_no_estandar` / `solo_valores_unitarios` (8 casos)
-
-### `guanajuato/celaya/2018` (cvegeo 11007)
-
-- **JSON**: [`predial-mx-v2/guanajuato/GTO_PREDIAL_2018_celaya.json`](predial-mx-v2/guanajuato/GTO_PREDIAL_2018_celaya.json)
-- **tipo actual** (LLM): `otro_no_clasificado`
-- **categoria**: `estructura_no_estandar`  ·  **tag**: `solo_valores_unitarios`
-- **descripcion_estructural**:
-  > El texto proporcionado no contiene una mecánica tarifaria de cobro del impuesto predial extraíble como tabla de tasas, cuotas fijas o brackets. Lo visible corresponde principalmente a tablas de valores unitarios de terreno y construcción, factores agrológicos y criterios de valuación para avalúos, que son insumos catastrales y no la tarifa del impuesto. La única referencia al impuesto predial en el artículo 4 aparece truncada e incompleta, sin permitir reconstruir la tasa o cuota aplicable.
-- **razon**: `clasificado_como_otro_no_clasificado`
-
-**Revisión**:
-
-- [ x] revisado
-- veredicto: incorrecto 
-- tipo_correcto: tarifa_millar
-- causa_raiz: ocr
-- patron: P-03
-- notas: el OCR es deficiente, la segmentación es correcta. 
-- accion: re-ocr con retry a modelo vision 
-
----
-
-### `guanajuato/uriangato/2018` (cvegeo 11041)
-
-- **JSON**: [`predial-mx-v2/guanajuato/GTO_PREDIAL_2018_uriangato.json`](predial-mx-v2/guanajuato/GTO_PREDIAL_2018_uriangato.json)
-- **tipo actual** (LLM): `otro_no_clasificado`
-- **categoria**: `estructura_no_estandar`  ·  **tag**: `solo_valores_unitarios`
-- **descripcion_estructural**:
-  > El segmento proporcionado no contiene la mecánica de liquidación del impuesto predial en forma extraíble. El texto visible corresponde principalmente a tablas y factores para valuación catastral (valores unitarios de terreno y construcción, factores de forma, superficie, fondo, topografía y pavimento), pero no muestra una tabla tarifaria aplicable del predial ni una cuota fija/tasa sobre base de cálculo que pueda transcribirse sin inferencia. Por ello no encaja de manera segura en tarifa_millar, progresivo, tasa_unica, cuota_fija_simple, cuota_fija_escalonada o mixto.
-- **razon**: `clasificado_como_otro_no_clasificado`
-
-**Revisión**:
-
-- [ x] revisado
-- veredicto: incorrecto 
-- tipo_correcto: tarifa_millar
-- causa_raiz: ocr
-- patron: P-03
-- notas: el OCR es deficiente, la segmentación es correcta. 
-- accion: re-ocr con retry a modelo vision 
-
----
-
-### `guanajuato/uriangato/2026` (cvegeo 11041)
-
-- **JSON**: [`predial-mx-v2/guanajuato/GTO_PREDIAL_2026_uriangato.json`](predial-mx-v2/guanajuato/GTO_PREDIAL_2026_uriangato.json)
-- **tipo actual** (LLM): `otro_no_clasificado`
-- **categoria**: `estructura_no_estandar`  ·  **tag**: `solo_valores_unitarios`
-- **descripcion_estructural**:
-  > El texto proporcionado corresponde a la sección de valuación catastral y tablas de valores unitarios de terreno y construcción (Artículos 5 y 6), no a una mecánica de tasa/cuota del impuesto predial extraíble en alguna de las variantes tipificadas. No se observa una tabla tarifaria del predial con brackets, cuotas, tasas al millar o cuota fija anual; por tanto no es posible estructurar la mecánica de cálculo sin inventar.
-- **razon**: `clasificado_como_otro_no_clasificado`
-
-**Revisión**:
-
-- [ x] revisado
-- veredicto: incorrecto 
-- tipo_correcto: tarifa_millar
-- causa_raiz: ocr
-- patron: P-03
-- notas: el OCR es deficiente, la segmentación es correcta. 
-- accion: re-ocr con retry a modelo vision 
-
----
-
-### `yucatan/dzidzantun/2010` (cvegeo 31027)
-
-- **JSON**: [`predial-mx-v2/yucatan/YUC_PREDIAL_2010_dzidzantun.json`](predial-mx-v2/yucatan/YUC_PREDIAL_2010_dzidzantun.json)
-- **tipo actual** (LLM): `otro_no_clasificado`
-- **categoria**: `estructura_no_estandar`  ·  **tag**: `solo_valores_unitarios`
-- **descripcion_estructural**:
-  > El segmento no contiene una tabla tarifaria operable del impuesto predial por rangos, tasas al millar o cuota fija, sino tablas de valores catastrales de terreno por calle y valores unitarios de construcción por material/zona. Aunque aparece la frase 'A la cantidad que se exceda del límite inferior...', no se muestran los rangos, límites ni factores de la tarifa correspondiente, por lo que la mecánica del impuesto quedó truncada o ausente.
-- **razon**: `clasificado_como_otro_no_clasificado_tras_escalacion`
-- **escalado**: sí (gpt-5.4)
-
-**Revisión**:
-
-- [ x] revisado
-- veredicto: correcto 
-- tipo_correcto: n/a
-- causa_raiz: documento_ambiguo
-- patron: P-00
-- notas: La seccion no contiene información sobre tasas predial, solo menciona una cuota fija y excedente 
-- accion: dejar en blanco, esperar recuperación por imputación
-
----
-
-### `yucatan/tekanto/2010` (cvegeo 31078)
-
-- **JSON**: [`predial-mx-v2/yucatan/YUC_PREDIAL_2010_tekanto.json`](predial-mx-v2/yucatan/YUC_PREDIAL_2010_tekanto.json)
-- **tipo actual** (LLM): `otro_no_clasificado`
-- **categoria**: `estructura_no_estandar`  ·  **tag**: `solo_valores_unitarios`
-- **descripcion_estructural**:
-  > El texto no presenta una tarifa predial clasificable en las variantes solicitadas. La mecánica principal remite a tablas de valores unitarios de terreno y construcción por zona y tipo de material, que son insumo catastral y no una tarifa de cálculo del impuesto en las variantes dadas. Además, el Art. 15 establece el impuesto sobre rentas o frutos civiles, que debe ignorarse según la consigna.
-- **razon**: `clasificado_como_otro_no_clasificado`
-
-**Revisión**:
-
-- [ x] revisado
-- veredicto: correcto 
-- tipo_correcto: n/a
-- causa_raiz: documento_ambiguo
-- patron: P-00
-- notas: La seccion no contiene información sobre tasas predial, solo menciona una cuota fija y excedente 
-- accion: dejar en blanco, esperar recuperación por imputación
-
----
-
-### `yucatan/tepakan/2025` (cvegeo 31086)
-
-- **JSON**: [`predial-mx-v2/yucatan/YUC_PREDIAL_2025_tepakan.json`](predial-mx-v2/yucatan/YUC_PREDIAL_2025_tepakan.json)
-- **tipo actual** (LLM): `otro_no_clasificado`
-- **categoria**: `estructura_no_estandar`  ·  **tag**: `solo_valores_unitarios`
-- **descripcion_estructural**:
-  > El texto no presenta una tarifa del impuesto predial clasificable en una de las variantes permitidas. En el Artículo 12 sólo se indica una cuota fija de $10.00 más el resultado de un factor sobre el valor catastral, junto con un procedimiento de valuación del inmueble y tablas de valores unitarios de terreno y construcción; esas tablas son de catastro/valuación, no una tabla tarifaria de predial. No hay brackets, tasa uniforme explícita, ni catálogo de tasas por categoría que permita estructurar la mecánica como tarifa_millar, progresivo, cuota fija escalonada o mixto.
-- **razon**: `clasificado_como_otro_no_clasificado`
-
-**Revisión**:
-
-- [ x] revisado
-- veredicto: incorrecto 
-- tipo_correcto: tasa_unica
-- causa_raiz: api_error 
-- patron: P-04
-- notas: En la ley dice: la tarifa del impuesto predial (C) se multiplicará por el factor del 0.25 del valor catastral 
-actualizado y se dividirá entre 100
-- accion: volver a enviar a gpt-5.4
-
----
-
-### `yucatan/xocchel/2025` (cvegeo 31103)
-
-- **JSON**: [`predial-mx-v2/yucatan/YUC_PREDIAL_2025_xocchel.json`](predial-mx-v2/yucatan/YUC_PREDIAL_2025_xocchel.json)
-- **tipo actual** (LLM): `otro_no_clasificado`
-- **categoria**: `estructura_no_estandar`  ·  **tag**: `solo_valores_unitarios`
-- **descripcion_estructural**:
-  > El texto no contiene una tabla del impuesto predial sobre valor catastral con brackets aplicables; la sección mostrada corresponde principalmente a valores unitarios de terreno y construcción (catastro), que deben ignorarse. Lo único tarifario detectable es el Art. 5 sobre rentas o frutos civiles, con tasas mensuales de 2% y 5% por tipo de predio, pero eso no es la mecánica estándar de predial sobre valor catastral solicitada por el esquema.
-- **razon**: `clasificado_como_otro_no_clasificado`
-
-**Revisión**:
-
-- [ x] revisado
-- veredicto: incorrecto 
-- tipo_correcto: progresivo
-- causa_raiz: segment , api_error
-- patron: P-03
-- notas: La segmentación parece ser correcta, pero omite la tabla progresiva asociada. Está disponible en el recorte de PDF
-- accion: usar modelo de vision
-
----
-
-### `yucatan/yaxkukul/2023` (cvegeo 31105)
-
-- **JSON**: [`predial-mx-v2/yucatan/YUC_PREDIAL_2023_yaxkukul.json`](predial-mx-v2/yucatan/YUC_PREDIAL_2023_yaxkukul.json)
-- **tipo actual** (LLM): `otro_no_clasificado`
-- **categoria**: `estructura_no_estandar`  ·  **tag**: `solo_valores_unitarios`
-- **descripcion_estructural**:
-  > El texto no presenta una tarifa predial directamente calculable como tabla de cobro del impuesto principal. El Artículo 13 contiene valores unitarios de terreno y construcción para integrar el valor catastral; el Artículo 14 establece una tasa al millar para predios agropecuarios y una tabla de rentas/frutos civiles, pero la mecánica principal del predial base valor catastral no queda estructurada en rangos o cuotas extraíbles sin una norma complementaria de cálculo. Por ello no encaja limpiamente en las variantes tarifarias previstas.
-- **razon**: `clasificado_como_otro_no_clasificado`
-
-**Revisión**:
-- [ x] revisado
-- veredicto: incorrecto 
-- tipo_correcto: progresivo
-- causa_raiz: segment , api_error
-- patron: P-03
-- notas: La segmentación parece ser correcta, pero omite la tabla progresiva asociada. Está disponible en el recorte de PDF
-- accion: usar modelo de vision
-
----
-
-## Grupo G-03: `municipio_sin_impuesto` / `otro_patron` (8 casos)
-
-### `guanajuato/acambaro/2025` (cvegeo 11002)
-
-- **JSON**: [`predial-mx-v2/guanajuato/GTO_PREDIAL_2025_acambaro.json`](predial-mx-v2/guanajuato/GTO_PREDIAL_2025_acambaro.json)
-- **tipo actual** (LLM): `otro_no_clasificado`
-- **categoria**: `municipio_sin_impuesto`  ·  **tag**: `otro_patron`
-- **descripcion_estructural**:
-  > En el texto proporcionado no aparece una sección tarifaria del Impuesto Predial con mecánica de cálculo. Sólo se observa el listado de ingresos estimados donde se menciona el rubro 1201 Impuesto predial, pero no se incluyen tablas, rangos, tasas o cuotas para su determinación dentro del segmento enviado.
-- **razon**: `clasificado_como_otro_no_clasificado`
-
-**Revisión**:
-
-- [ x] revisado
-- veredicto: invalido 
-- tipo_correcto: n/a
-- causa_raiz: ocr, segmentacion
-- patron: P-02
-- notas: solo primeras paginas aptas para busqueda por text, segmentación incorrecta. Problema similar otro ya corregido con HITL previo. 
-- accion: implementar re-ocr + segmentacion 
-
----
-
-### `guanajuato/tierra_blanca/2025` (cvegeo 11040)
-
-- **JSON**: [`predial-mx-v2/guanajuato/GTO_PREDIAL_2025_tierra_blanca.json`](predial-mx-v2/guanajuato/GTO_PREDIAL_2025_tierra_blanca.json)
-- **tipo actual** (LLM): `otro_no_clasificado`
-- **categoria**: `municipio_sin_impuesto`  ·  **tag**: `otro_patron`
-- **descripcion_estructural**:
-  > En el texto proporcionado no aparece la mecánica tarifaria del impuesto predial (tabla, cuotas, tasas o brackets). El segmento visible sólo contiene un recurso de revisión para inmuebles sin edificar que permite aplicar la tasa general de inmuebles urbanos y suburbanos, pero no transcribe esa tasa ni la base de cálculo del predial. Por ello no es posible extraer una mecánica estructural del impuesto predial desde este fragmento.
-- **razon**: `clasificado_como_otro_no_clasificado`
-
-**Revisión**:
-
-- [ x] revisado
-- veredicto: invalido 
-- tipo_correcto: tarifa_millar
-- causa_raiz: segment
-- patron: P-02
-- notas: error de segmentación, quizá asociado a ocr deficiente, seccion predial en pagina 84 de 2024_17215_Periódico_Número_261_Vigésima_Cuarta_Parte_ocr.pdf
-- accion: re ocr , mejorar segment.py
-
----
-
-### `guanajuato/valle_de_santiago/2025` (cvegeo 11042)
-
-- **JSON**: [`predial-mx-v2/guanajuato/GTO_PREDIAL_2025_valle_de_santiago.json`](predial-mx-v2/guanajuato/GTO_PREDIAL_2025_valle_de_santiago.json)
-- **tipo actual** (LLM): `otro_no_clasificado`
-- **categoria**: `municipio_sin_impuesto`  ·  **tag**: `otro_patron`
-- **descripcion_estructural**:
-  > En el texto proporcionado sólo aparece la previsión recaudatoria del rubro 'Impuesto predial' en el clasificador de ingresos, pero no se incluye ningún artículo, tabla o mecánica de cálculo del impuesto. No hay rangos, tasas, cuotas ni reglas aplicables extraíbles dentro del segmento enviado.
-- **razon**: `clasificado_como_otro_no_clasificado`
-
-**Revisión**:
-
-- [ x] revisado
-- veredicto: invalido 
-- tipo_correcto: n/a
-- causa_raiz: ocr, segmentacion
-- patron: P-02
-- notas: solo primeras paginas aptas para busqueda por text, segmentación incorrecta. Problema similar otro ya corregido con HITL previo. 
-- accion: implementar re-ocr + segmentacion 
-
----
-
-### `yucatan/conkal/2022` (cvegeo 31013)
-
-- **JSON**: [`predial-mx-v2/yucatan/YUC_PREDIAL_2022_conkal.json`](predial-mx-v2/yucatan/YUC_PREDIAL_2022_conkal.json)
-- **tipo actual** (LLM): `otro_no_clasificado`
-- **categoria**: `municipio_sin_impuesto`  ·  **tag**: `otro_patron`
-- **descripcion_estructural**:
-  > El segmento no contiene una mecánica de cálculo del impuesto predial. Solo aparece el pronóstico de ingresos del Artículo 5 con el renglón 'Impuesto predial' como monto presupuestal, y la propia nota del segmentador indica que la ley no incluye tarifas, tasas, montos al millar ni rangos para predial. Se remite a la Ley General de Hacienda Municipal del Estado de Yucatán, por lo que no es posible extraer una tabla tarifaria municipal desde este texto.
-- **razon**: `clasificado_como_otro_no_clasificado`
-
-**Revisión**:
-
-- [ x] revisado
-- veredicto: invalido 
-- tipo_correcto: progresivo
-- causa_raiz: segment
-- patron: P-01
-- notas: error de segmentación, tarifas en pagina 402 de 2010-12-29_suplemento.pdf
-- accion: re-segment, mejorar segment.py
-
----
-
-### `yucatan/conkal/2023` (cvegeo 31013)
-
-- **JSON**: [`predial-mx-v2/yucatan/YUC_PREDIAL_2023_conkal.json`](predial-mx-v2/yucatan/YUC_PREDIAL_2023_conkal.json)
-- **tipo actual** (LLM): `otro_no_clasificado`
-- **categoria**: `municipio_sin_impuesto`  ·  **tag**: `otro_patron`
-- **descripcion_estructural**:
-  > El segmento sólo contiene el pronóstico presupuestal del concepto "Impuesto predial" dentro del artículo de ingresos, pero no incluye tarifas, tasas, rangos, cuotas ni mecánica de cálculo. La propia nota del segmentador indica que las contribuciones se rigen por la Ley General de Hacienda Municipal del Estado de Yucatán, por lo que no hay estructura tarifaria municipal extraíble en este texto.
-- **razon**: `clasificado_como_otro_no_clasificado`
-
-**Revisión**:
-
-- [ x] revisado
-- veredicto: correcto 
-- tipo_correcto: n/a
-- causa_raiz: documento_ambiguo
-- patron: P-00
-- notas: No existe información sobre tasas predial
-- accion: dejar en blanco, esperar recuperación por imputación
-
----
-
-### `yucatan/conkal/2024` (cvegeo 31013)
-
-- **JSON**: [`predial-mx-v2/yucatan/YUC_PREDIAL_2024_conkal.json`](predial-mx-v2/yucatan/YUC_PREDIAL_2024_conkal.json)
-- **tipo actual** (LLM): `otro_no_clasificado`
-- **categoria**: `municipio_sin_impuesto`  ·  **tag**: `otro_patron`
-- **descripcion_estructural**:
-  > El segmento proporcionado solo contiene el pronóstico de ingresos para 'Impuesto predial' dentro del artículo de clasificación de impuestos, pero no incluye tarifas, tasas, rangos, cuota fija ni mecánica de cálculo. Además, la nota del segmentador indica expresamente que las contribuciones se rigen por la Ley General de Hacienda Municipal del Estado de Yucatán y que no hay sección tarifaria en esta ley de ingresos corta.
-- **razon**: `clasificado_como_otro_no_clasificado`
-
-**Revisión**:
-
-- [ x] revisado
-- veredicto: correcto 
-- tipo_correcto: n/a
-- causa_raiz: documento_ambiguo
-- patron: P-00
-- notas: No existe información sobre tasas predial
-- accion: dejar en blanco, esperar recuperación por imputación
-
----
-
-### `yucatan/conkal/2025` (cvegeo 31013)
-
-- **JSON**: [`predial-mx-v2/yucatan/YUC_PREDIAL_2025_conkal.json`](predial-mx-v2/yucatan/YUC_PREDIAL_2025_conkal.json)
-- **tipo actual** (LLM): `otro_no_clasificado`
-- **categoria**: `municipio_sin_impuesto`  ·  **tag**: `otro_patron`
-- **descripcion_estructural**:
-  > El segmento sólo muestra el pronóstico presupuestal del concepto 'Impuesto predial' dentro del Artículo 5, pero no contiene tarifas, tasas, rangos, cuotas ni mecánica de cálculo. El propio texto indica que las contribuciones se rigen por la Ley General de Hacienda Municipal del Estado de Yucatán, por lo que no es posible extraer una estructura tarifaria del segmento proporcionado.
-- **razon**: `clasificado_como_otro_no_clasificado`
-
-**Revisión**:
-
-- [ x] revisado
-- veredicto: correcto 
-- tipo_correcto: n/a
-- causa_raiz: documento_ambiguo
-- patron: P-00
-- notas: No existe información sobre tasas predial
-- accion: dejar en blanco, esperar recuperación por imputación
-
----
-
-### `yucatan/kaua/2025` (cvegeo 31043)
-
-- **JSON**: [`predial-mx-v2/yucatan/YUC_PREDIAL_2025_kaua.json`](predial-mx-v2/yucatan/YUC_PREDIAL_2025_kaua.json)
-- **tipo actual** (LLM): `otro_no_clasificado`
-- **categoria**: `municipio_sin_impuesto`  ·  **tag**: `otro_patron`
-- **descripcion_estructural**:
-  > El segmento sólo muestra el pronóstico de ingresos para "Impuesto predial" en el artículo de clasificación de ingresos, con un monto estimado de $80,456.00, pero no contiene reglas, tasas, rangos, cuotas o bases de cálculo. La propia nota del segmentador indica que las contribuciones se rigen por la Ley General de Hacienda Municipal del Estado de Yucatán y no por una mecánica tarifaria en esta ley de ingresos.
-- **razon**: `clasificado_como_otro_no_clasificado`
-
-**Revisión**:
-
-- [ x] revisado
-- veredicto: incorrecto 
-- tipo_correcto: tasa_unica
-- causa_raiz: api_error
-- patron: P-04
-- notas: En el recorte dice: una vez  
-teniendo el valor catastral se multiplica por el factor 0.00025 y el resultado será el monto a pagar.; dejar como comentario que :en caso de predios cuyo valor catastral sea igual o menor a $ 200,000.00 el contribuyente pagará como  cuota fija para el impuesto predial la cantidad de $ 50.00. 
-- accion: volver a enviar a api con modelo gpt-5.4
-
----
-
-## Grupo G-04: `segmento_vacio` / `articulado_ausente` (6 casos)
-
-### `guanajuato/apaseo_el_alto/2025` (cvegeo 11004)
-
-- **JSON**: [`predial-mx-v2/guanajuato/GTO_PREDIAL_2025_apaseo_el_alto.json`](predial-mx-v2/guanajuato/GTO_PREDIAL_2025_apaseo_el_alto.json)
-- **tipo actual** (LLM): `otro_no_clasificado`
-- **categoria**: `segmento_vacio`  ·  **tag**: `articulado_ausente`
-- **descripcion_estructural**:
-  > El texto proporcionado no contiene el articulado ni una tabla tarifaria visible del Impuesto Predial para Apaseo el Alto; sólo aparecen páginas de índice/ingresos estimados y no la mecánica de cálculo. No es posible extraer una tarifa sin inventarla.
-- **razon**: `clasificado_como_otro_no_clasificado`
-
-**Revisión**:
-
-- [ x] revisado
-- veredicto: invalido 
-- tipo_correcto: n/a
-- causa_raiz: ocr, segmentacion
-- patron: P-02
-- notas: solo primeras paginas aptas para busqueda por text, segmentación incorrecta. Problema similar otro ya corregido con HITL previo. 
-- accion: implementar re-ocr + segmentacion 
----
-
-### `guanajuato/comonfort/2023` (cvegeo 11009)
-
-- **JSON**: [`predial-mx-v2/guanajuato/GTO_PREDIAL_2023_comonfort.json`](predial-mx-v2/guanajuato/GTO_PREDIAL_2023_comonfort.json)
-- **tipo actual** (LLM): `otro_no_clasificado`
-- **categoria**: `segmento_vacio`  ·  **tag**: `articulado_ausente`
-- **descripcion_estructural**:
-  > El texto proporcionado no contiene el articulado ni tabla tarifaria del Impuesto Predial del municipio. Solo aparecen páginas con estimaciones de ingreso y no se incluye la mecánica de cálculo, por lo que no es posible extraer una estructura tarifaria.
-- **razon**: `clasificado_como_otro_no_clasificado`
-
-**Revisión**:
-
-- [ x] revisado
-- veredicto: invalido 
-- tipo_correcto: n/a
-- causa_raiz: ocr, segmentacion
-- patron: P-02
-- notas: solo primeras paginas aptas para busqueda por text, segmentación incorrecta. Problema similar otro ya corregido con HITL previo. 
-- accion: implementar re-ocr + segmentacion 
-
----
-
-### `guanajuato/dolores_hidalgo_cuna_de_la_independencia_nacional/2026` (cvegeo 11014)
-
-- **JSON**: [`predial-mx-v2/guanajuato/GTO_PREDIAL_2026_dolores_hidalgo_cuna_de_la_independencia_nacional.json`](predial-mx-v2/guanajuato/GTO_PREDIAL_2026_dolores_hidalgo_cuna_de_la_independencia_nacional.json)
-- **tipo actual** (LLM): `otro_no_clasificado`
-- **categoria**: `segmento_vacio`  ·  **tag**: `articulado_ausente`
-- **descripcion_estructural**:
-  > El texto proporcionado no contiene el articulado ni tablas del Impuesto Predial; sólo aparecen páginas de portada/índice y saltos de página dentro del rango 129-146, sin mecánica tarifaria extraíble. No es posible identificar cuotas, tasas o brackets del predial a partir del fragmento.
-- **razon**: `clasificado_como_otro_no_clasificado`
-
-**Revisión**:
-
-- [ x] revisado
-- veredicto: invalido 
-- tipo_correcto: n/a
-- causa_raiz: ocr, segmentacion
-- patron: P-02
-- notas: solo primeras paginas aptas para busqueda por text, segmentación incorrecta. Problema similar otro ya corregido con HITL previo. 
-- accion: implementar re-ocr + segmentacion 
-
----
-
-### `guanajuato/guanajuato/2026` (cvegeo 11015)
-
-- **JSON**: [`predial-mx-v2/guanajuato/GTO_PREDIAL_2026_guanajuato.json`](predial-mx-v2/guanajuato/GTO_PREDIAL_2026_guanajuato.json)
-- **tipo actual** (LLM): `otro_no_clasificado`
-- **categoria**: `segmento_vacio`  ·  **tag**: `articulado_ausente`
-- **descripcion_estructural**:
-  > El texto proporcionado no contiene el articulado ni una tabla tarifaria del Impuesto Predial; sólo aparecen páginas de portada/índice y saltos de página sin mecánica de cálculo extraíble. No es posible identificar tasas, cuotas, rangos o categorías del predial con este fragmento.
-- **razon**: `clasificado_como_otro_no_clasificado`
-
-**Revisión**:
-
-- [ x] revisado
-- veredicto: invalido 
-- tipo_correcto: n/a
-- causa_raiz: ocr, segmentacion
-- patron: P-02
-- notas: solo primeras paginas aptas para busqueda por text, segmentación incorrecta. Problema similar otro ya corregido con HITL previo. 
-- accion: implementar re-ocr + segmentacion 
-
----
-
-### `guanajuato/purisima_del_rincon/2024` (cvegeo 11025)
-
-- **JSON**: [`predial-mx-v2/guanajuato/GTO_PREDIAL_2024_purisima_del_rincon.json`](predial-mx-v2/guanajuato/GTO_PREDIAL_2024_purisima_del_rincon.json)
-- **tipo actual** (LLM): `otro_no_clasificado`
-- **categoria**: `segmento_vacio`  ·  **tag**: `articulado_ausente`
-- **descripcion_estructural**:
-  > El texto proporcionado no contiene el articulado ni tablas del apartado de impuesto predial; solo aparecen páginas iniciales del periódico y una referencia general al capítulo de ingresos. No hay mecánica tarifaria extraíble sobre valor catastral, superficies, cuotas o rangos.
-- **razon**: `clasificado_como_otro_no_clasificado`
-
-**Revisión**:
-
-- [ x] revisado
-- veredicto: invalido 
-- tipo_correcto: n/a
-- causa_raiz: ocr, segmentacion
-- patron: P-02
-- notas: solo primeras paginas aptas para busqueda por text, segmentación incorrecta. Problema similar otro ya corregido con HITL previo. 
-- accion: implementar re-ocr + segmentacion 
-
----
-
-### `guanajuato/santa_cruz_de_juventino_rosas/2026` (cvegeo 11035)
-
-- **JSON**: [`predial-mx-v2/guanajuato/GTO_PREDIAL_2026_santa_cruz_de_juventino_rosas.json`](predial-mx-v2/guanajuato/GTO_PREDIAL_2026_santa_cruz_de_juventino_rosas.json)
-- **tipo actual** (LLM): `otro_no_clasificado`
-- **categoria**: `segmento_vacio`  ·  **tag**: `articulado_ausente`
-- **descripcion_estructural**:
-  > El texto proporcionado no contiene el articulado ni tablas de cálculo del Impuesto Predial; las páginas indicadas aparecen vacías o sin contenido tarifario legible sobre predial. No es posible extraer una mecánica de cálculo sin inventar información.
-- **razon**: `clasificado_como_otro_no_clasificado`
-
-**Revisión**:
-
-- [ x] revisado
-- veredicto: invalido 
-- tipo_correcto: n/a
-- causa_raiz: ocr, segmentacion
-- patron: P-02
-- notas: solo primeras paginas aptas para busqueda por text, segmentación incorrecta. Problema similar otro ya corregido con HITL previo. 
-- accion: implementar re-ocr + segmentacion 
-
----
-
-## Grupo G-05: `estructura_no_estandar` / `dos_tarifas_paralelas` (4 casos)
-
-### `yucatan/akil/2025` (cvegeo 31003)
-
-- **JSON**: [`predial-mx-v2/yucatan/YUC_PREDIAL_2025_akil.json`](predial-mx-v2/yucatan/YUC_PREDIAL_2025_akil.json)
-- **tipo actual** (LLM): `otro_no_clasificado`
-- **categoria**: `estructura_no_estandar`  ·  **tag**: `dos_tarifas_paralelas`
-- **descripcion_estructural**:
-  > El artículo 4 describe una mecánica progresiva por rangos de valor catastral con cuota fija y factor sobre el excedente, pero en el texto proporcionado no aparecen los límites inferior/superior ni la tabla de rangos y tasas; además se incluyen tablas de valores unitarios de terreno y construcción que son catastro, no la tarifa del impuesto. El artículo 6 sí establece una tasa paralela para predios agropecuarios (12 al millar anual), pero no viene estructurada como tabla completa de predial. Por ello no es posible clasificar con precisión en las variantes tarifarias solicitadas sin inventar los brackets faltantes.
-- **razon**: `clasificado_como_otro_no_clasificado`
-
-**Revisión**:
-
-- [ x] revisado
-- veredicto: correcto 
-- tipo_correcto: n/a
-- causa_raiz: documento_ambiguo
-- patron: P-00
-- notas: No existe información sobre tasas predial
-- accion: dejar en blanco, esperar recuperación por imputación
-
----
-
-### `yucatan/dzidzantun/2012` (cvegeo 31027)
-
-- **JSON**: [`predial-mx-v2/yucatan/YUC_PREDIAL_2012_dzidzantun.json`](predial-mx-v2/yucatan/YUC_PREDIAL_2012_dzidzantun.json)
-- **tipo actual** (LLM): `otro_no_clasificado`
-- **categoria**: `estructura_no_estandar`  ·  **tag**: `dos_tarifas_paralelas`
-- **descripcion_estructural**:
-  > El artículo 14 mezcla una tabla de valores unitarios de terreno (insumo catastral) con una mecánica de cálculo que sólo indica que al excedente del límite inferior se le aplica un factor de la tarifa y se suma una cuota fija anual, pero en el texto proporcionado no aparecen los brackets completos ni los valores de la tasa/cuota fija anual respectiva. Además contiene una tarifa paralela para predios agropecuarios de $2.00 por hectárea, separada de la mecánica principal.
-- **razon**: `clasificado_como_otro_no_clasificado`
-
-**Revisión**:
-
-- [ x] revisado
-- veredicto: correcto 
-- tipo_correcto: n/a
-- causa_raiz: documento_ambiguo
-- patron: P-00
-- notas: No existe información sobre tasas predial
-- accion: dejar en blanco, esperar recuperación por imputación
----
-
-### `yucatan/kinchil/2024` (cvegeo 31044)
-
-- **JSON**: [`predial-mx-v2/yucatan/YUC_PREDIAL_2024_kinchil.json`](predial-mx-v2/yucatan/YUC_PREDIAL_2024_kinchil.json)
-- **tipo actual** (LLM): `otro_no_clasificado`
-- **categoria**: `estructura_no_estandar`  ·  **tag**: `dos_tarifas_paralelas`
-- **descripcion_estructural**:
-  > El texto transcrito no contiene una tarifa del impuesto predial en alguna de las siete variantes, sino una tabla de valores catastrales/unitarios de suelo y construcción para determinar la base gravable. Solo aparece de forma tarifaria una disposición paralela para predios destinados a la producción agropecuaria de 10 al millar anual sobre el valor registrado o catastral, pero no se presenta la mecánica principal del impuesto en forma extraíble.
-- **razon**: `clasificado_como_otro_no_clasificado`
-- **escalado**: sí (gpt-5.4)
-
-**Revisión**:
-
-- [ x] revisado
-- veredicto: correcto 
-- tipo_correcto: n/a
-- causa_raiz: documento_ambiguo
-- patron: P-00
-- notas: No existe información sobre tasas predial
-- accion: dejar en blanco, esperar recuperación por imputación
-
----
-
-### `yucatan/yaxkukul/2022` (cvegeo 31105)
-
-- **JSON**: [`predial-mx-v2/yucatan/YUC_PREDIAL_2022_yaxkukul.json`](predial-mx-v2/yucatan/YUC_PREDIAL_2022_yaxkukul.json)
-- **tipo actual** (LLM): `otro_no_clasificado`
-- **categoria**: `estructura_no_estandar`  ·  **tag**: `dos_tarifas_paralelas`
-- **descripcion_estructural**:
-  > El texto no contiene una tarifa estructural del impuesto predial sobre valor catastral por rangos o categorías inmobiliarias, sino tablas de valores unitarios catastrales ($ por sección, metro lineal y $ por m2) para calcular el valor catastral. Además, sólo establece de forma paralela una tasa de 10 al millar anual para predios destinados a la producción agropecuaria y un impuesto sobre rentas o frutos civiles mensuales del 5%, sin una mecánica principal extraíble de predial general para inmuebles urbanos.
-- **razon**: `clasificado_como_otro_no_clasificado`
-- **escalado**: sí (gpt-5.4)
-
-**Revisión**:
-
-- [ x] revisado
-- veredicto: incorrecto 
-- tipo_correcto: progresivo
-- causa_raiz: segment , api_error
-- patron: P-03
-- notas: La segmentación parece ser correcta, pero omite la tabla progresiva asociada. Está disponible en el recorte de PDF
-- accion: usar modelo de vision
-
----
-
-## Grupo G-06: `error_segmentacion` / `solo_valores_unitarios` (3 casos)
+## Grupo G-02: `error_segmentacion` / `solo_valores_unitarios` (3 casos)
 
 ### `yucatan/akil/2023` (cvegeo 31003)
 
@@ -1331,13 +297,13 @@ teniendo el valor catastral se multiplica por el factor 0.00025 y el resultado s
 
 **Revisión**:
 
-- [ x] revisado
-- veredicto: correcto 
-- tipo_correcto: n/a
-- causa_raiz: documento_ambiguo
-- patron: P-00
-- notas: No existe información sobre tasas predial
-- accion: dejar en blanco, esperar recuperación por imputación
+- [ ] revisado
+- veredicto: 
+- tipo_correcto: 
+- causa_raiz: 
+- patron: 
+- notas: 
+- accion: 
 
 ---
 
@@ -1353,13 +319,13 @@ teniendo el valor catastral se multiplica por el factor 0.00025 y el resultado s
 
 **Revisión**:
 
-- [ x] revisado
-- veredicto: correcto 
-- tipo_correcto: n/a
-- causa_raiz: documento_ambiguo
-- patron: P-00
-- notas: No existe información sobre tasas predial
-- accion: dejar en blanco, esperar recuperación por imputación
+- [ ] revisado
+- veredicto: 
+- tipo_correcto: 
+- causa_raiz: 
+- patron: 
+- notas: 
+- accion: 
 
 ---
 
@@ -1375,398 +341,353 @@ teniendo el valor catastral se multiplica por el factor 0.00025 y el resultado s
 
 **Revisión**:
 
-- [ x] revisado
-- veredicto: correcto 
-- tipo_correcto: n/a
-- causa_raiz: documento_ambiguo
-- patron: P-00
-- notas: No existe información sobre tasas predial
-- accion: dejar en blanco, esperar recuperación por imputación
+- [ ] revisado
+- veredicto: 
+- tipo_correcto: 
+- causa_raiz: 
+- patron: 
+- notas: 
+- accion: 
 
 ---
 
-## Grupo G-07: `segmento_vacio` / `mecanica_ausente` (3 casos)
+## Grupo G-03: `estructura_no_estandar` / `dos_tarifas_paralelas` (3 casos)
 
-### `coahuila/nava/2010` (cvegeo 05022)
+### `yucatan/akil/2025` (cvegeo 31003)
 
-- **JSON**: [`predial-mx-v2/coahuila/COAH_PREDIAL_2010_nava.json`](predial-mx-v2/coahuila/COAH_PREDIAL_2010_nava.json)
+- **JSON**: [`predial-mx-v2/yucatan/YUC_PREDIAL_2025_akil.json`](predial-mx-v2/yucatan/YUC_PREDIAL_2025_akil.json)
 - **tipo actual** (LLM): `otro_no_clasificado`
-- **categoria**: `segmento_vacio`  ·  **tag**: `mecanica_ausente`
+- **categoria**: `estructura_no_estandar`  ·  **tag**: `dos_tarifas_paralelas`
 - **descripcion_estructural**:
-  > El texto proporcionado del apartado "Del Impuesto Predial" no contiene la mecánica de cálculo del predial; sólo aparecen incentivos, condiciones de aplicación y después inicia el capítulo de otro impuesto. No hay tabla, cuota fija, tasa, rangos ni categorías del impuesto predial extraíbles en el fragmento.
+  > El artículo 4 describe una mecánica progresiva por rangos de valor catastral con cuota fija y factor sobre el excedente, pero en el texto proporcionado no aparecen los límites inferior/superior ni la tabla de rangos y tasas; además se incluyen tablas de valores unitarios de terreno y construcción que son catastro, no la tarifa del impuesto. El artículo 6 sí establece una tasa paralela para predios agropecuarios (12 al millar anual), pero no viene estructurada como tabla completa de predial. Por ello no es posible clasificar con precisión en las variantes tarifarias solicitadas sin inventar los brackets faltantes.
 - **razon**: `clasificado_como_otro_no_clasificado`
 
 **Revisión**:
 
-- [ x] revisado
-- veredicto: invalido 
-- tipo_correcto: progresivo
-- causa_raiz: segment
-- patron: P-01
-- notas: error puro de segmentación, tarifas en pagina anterior al recorte
-- accion: re-segment, mejorar segment.py
+- [ ] revisado
+- veredicto: 
+- tipo_correcto: 
+- causa_raiz: 
+- patron: 
+- notas: 
+- accion: 
 
 ---
 
-### `guanajuato/purisima_del_rincon/2021` (cvegeo 11025)
+### `yucatan/dzidzantun/2012` (cvegeo 31027)
 
-- **JSON**: [`predial-mx-v2/guanajuato/GTO_PREDIAL_2021_purisima_del_rincon.json`](predial-mx-v2/guanajuato/GTO_PREDIAL_2021_purisima_del_rincon.json)
+- **JSON**: [`predial-mx-v2/yucatan/YUC_PREDIAL_2012_dzidzantun.json`](predial-mx-v2/yucatan/YUC_PREDIAL_2012_dzidzantun.json)
 - **tipo actual** (LLM): `otro_no_clasificado`
-- **categoria**: `segmento_vacio`  ·  **tag**: `mecanica_ausente`
+- **categoria**: `estructura_no_estandar`  ·  **tag**: `dos_tarifas_paralelas`
 - **descripcion_estructural**:
-  > El texto proporcionado no contiene la mecánica del impuesto predial. Sólo aparecen disposiciones de ajuste de cantidades, avisos del Periódico Oficial y tarifas editoriales, sin tabla ni regla de cálculo del predial.
+  > El artículo 14 mezcla una tabla de valores unitarios de terreno (insumo catastral) con una mecánica de cálculo que sólo indica que al excedente del límite inferior se le aplica un factor de la tarifa y se suma una cuota fija anual, pero en el texto proporcionado no aparecen los brackets completos ni los valores de la tasa/cuota fija anual respectiva. Además contiene una tarifa paralela para predios agropecuarios de $2.00 por hectárea, separada de la mecánica principal.
 - **razon**: `clasificado_como_otro_no_clasificado`
 
 **Revisión**:
 
-- [ x] revisado
-- veredicto: incorrecto 
-- tipo_correcto: tarifa_millar
-- causa_raiz: api_error
-- patron: P-04
-- notas: En el recorte se indican las tarifas al millar correspondientes  
-- accion: volver a enviar a api con modelo gpt-5.4
+- [ ] revisado
+- veredicto: 
+- tipo_correcto: 
+- causa_raiz: 
+- patron: 
+- notas: 
+- accion: 
 
 ---
 
-### `tamaulipas/nuevo_laredo/2013` (cvegeo 28027)
+### `yucatan/yaxkukul/2022` (cvegeo 31105)
 
-- **JSON**: [`predial-mx-v2/tamaulipas/TAMPS_PREDIAL_2013_nuevo_laredo.json`](predial-mx-v2/tamaulipas/TAMPS_PREDIAL_2013_nuevo_laredo.json)
+- **JSON**: [`predial-mx-v2/yucatan/YUC_PREDIAL_2022_yaxkukul.json`](predial-mx-v2/yucatan/YUC_PREDIAL_2022_yaxkukul.json)
 - **tipo actual** (LLM): `otro_no_clasificado`
-- **categoria**: `segmento_vacio`  ·  **tag**: `mecanica_ausente`
+- **categoria**: `estructura_no_estandar`  ·  **tag**: `dos_tarifas_paralelas`
 - **descripcion_estructural**:
-  > El texto proporcionado no contiene la mecánica de cálculo del impuesto predial. Solo aparecen rubros presupuestales de recaudación/ingresos ('Impuesto sobre la propiedad urbana, suburbana y rústica', 'Impuesto sobre la propiedad urbana', 'Impuesto sobre la propiedad rústica') con montos agregados, pero no tablas, cuotas, tasas ni rangos aplicables al cálculo.
+  > El texto no presenta una mecánica única de predial sobre valor catastral clasificable en una sola tabla. Primero aparece una tabla de valores unitarios de terreno y de construcción para el cálculo del valor catastral, pero no una tarifa de impuesto predial. Después, el Artículo 14 establece dos mecánicas paralelas: predios agropecuarios al 10 al millar anual sobre valor catastral, y predios con base en rentas o frutos civiles al 5% mensual para habitación y comercial. La estructura tarifaria principal del impuesto predial no queda extraíble en una sola de las variantes cerradas sin mezclar mecánicas heterogéneas.
 - **razon**: `clasificado_como_otro_no_clasificado`
 
 **Revisión**:
 
-- [ x] revisado
-- veredicto: invalido 
-- tipo_correcto: tarifa_millar
-- causa_raiz: seggment
-- patron: P-01
-- notas: La sección predial esta en pagina 431 de TAMPS_RAW_2013_consolidado.pdf
-- accion: re-segmentar, mejorar segment.py
+- [ ] revisado
+- veredicto: 
+- tipo_correcto: 
+- causa_raiz: 
+- patron: 
+- notas: 
+- accion: 
 
 ---
 
-## Grupo G-08: `estructura_no_estandar` / `otro_patron` (2 casos)
+## Grupo G-04: `estructura_no_estandar` / `solo_valores_unitarios` (3 casos)
 
-### `tamaulipas/nuevo_laredo/2024` (cvegeo 28027)
+### `yucatan/dzidzantun/2010` (cvegeo 31027)
 
-- **JSON**: [`predial-mx-v2/tamaulipas/TAMPS_PREDIAL_2024_nuevo_laredo.json`](predial-mx-v2/tamaulipas/TAMPS_PREDIAL_2024_nuevo_laredo.json)
+- **JSON**: [`predial-mx-v2/yucatan/YUC_PREDIAL_2010_dzidzantun.json`](predial-mx-v2/yucatan/YUC_PREDIAL_2010_dzidzantun.json)
 - **tipo actual** (LLM): `otro_no_clasificado`
-- **categoria**: `estructura_no_estandar`  ·  **tag**: `otro_patron`
+- **categoria**: `estructura_no_estandar`  ·  **tag**: `solo_valores_unitarios`
 - **descripcion_estructural**:
-  > El texto proporcionado sólo establece que el impuesto se causa sobre el valor catastral de los bienes raíces y remite a las fracciones del artículo 10, pero en el segmento enviado no aparecen las tarifas o tablas de cálculo aplicables. Las fracciones visibles contienen exclusiones y aumentos por incumplimiento, no la mecánica tarifaria principal extraíble.
+  > El segmento no contiene una tabla tarifaria operable del impuesto predial por rangos, tasas al millar o cuota fija, sino tablas de valores catastrales de terreno por calle y valores unitarios de construcción por material/zona. Aunque aparece la frase 'A la cantidad que se exceda del límite inferior...', no se muestran los rangos, límites ni factores de la tarifa correspondiente, por lo que la mecánica del impuesto quedó truncada o ausente.
+- **razon**: `clasificado_como_otro_no_clasificado_tras_escalacion`
+- **escalado**: sí (gpt-5.4)
+
+**Revisión**:
+
+- [ ] revisado
+- veredicto: 
+- tipo_correcto: 
+- causa_raiz: 
+- patron: 
+- notas: 
+- accion: 
+
+---
+
+### `yucatan/tekanto/2010` (cvegeo 31078)
+
+- **JSON**: [`predial-mx-v2/yucatan/YUC_PREDIAL_2010_tekanto.json`](predial-mx-v2/yucatan/YUC_PREDIAL_2010_tekanto.json)
+- **tipo actual** (LLM): `otro_no_clasificado`
+- **categoria**: `estructura_no_estandar`  ·  **tag**: `solo_valores_unitarios`
+- **descripcion_estructural**:
+  > El texto no presenta una tarifa predial clasificable en las variantes solicitadas. La mecánica principal remite a tablas de valores unitarios de terreno y construcción por zona y tipo de material, que son insumo catastral y no una tarifa de cálculo del impuesto en las variantes dadas. Además, el Art. 15 establece el impuesto sobre rentas o frutos civiles, que debe ignorarse según la consigna.
 - **razon**: `clasificado_como_otro_no_clasificado`
 
 **Revisión**:
 
-- [ x] revisado
-- veredicto: invalido 
-- tipo_correcto: tarifa_millar
-- causa_raiz: seggment
-- patron: P-01
-- notas: La sección predial esta en pagina 846 de TAMPS_RAW_2024_consolidado.pdf
-- accion: re-segmentar, mejorar segment.py
+- [ ] revisado
+- veredicto: 
+- tipo_correcto: 
+- causa_raiz: 
+- patron: 
+- notas: 
+- accion: 
 
 ---
 
-### `tamaulipas/san_fernando/2023` (cvegeo 28035)
+### `yucatan/yaxkukul/2024` (cvegeo 31105)
 
-- **JSON**: [`predial-mx-v2/tamaulipas/TAMPS_PREDIAL_2023_san_fernando.json`](predial-mx-v2/tamaulipas/TAMPS_PREDIAL_2023_san_fernando.json)
+- **JSON**: [`predial-mx-v2/yucatan/YUC_PREDIAL_2024_yaxkukul.json`](predial-mx-v2/yucatan/YUC_PREDIAL_2024_yaxkukul.json)
 - **tipo actual** (LLM): `otro_no_clasificado`
-- **categoria**: `estructura_no_estandar`  ·  **tag**: `otro_patron`
+- **categoria**: `estructura_no_estandar`  ·  **tag**: `solo_valores_unitarios`
 - **descripcion_estructural**:
-  > El texto no presenta una tabla tarifaria extraíble de impuesto predial con rangos o categorías de tasa. Sólo indica que la base es el valor catastral y remite a una tasa señalada en el artículo, pero en el fragmento proporcionado no aparece dicha tasa. Sí aparecen reglas de incremento para predios urbanos no edificados y con edificación inferior a la quinta parte del terreno, además de mínimos en UMA, pero no la mecánica completa de cálculo.
+  > El texto no presenta una mecánica tarifaria del impuesto predial directamente sobre la base imponible. El artículo 13 establece valores unitarios de terreno y construcción para integrar el valor catastral, y el artículo 14 añade una tarifa para predios agropecuarios (10 al millar) y otra sobre rentas o frutos civiles (5% mensual) para predios habitación y comerciales. No hay una tabla única del predial sobre valor catastral que encaje de forma limpia en una de las seis estructuras estándar sin mezclar mecánicas distintas.
 - **razon**: `clasificado_como_otro_no_clasificado`
 
 **Revisión**:
 
-- [ x] revisado
-- veredicto: invalido 
-- tipo_correcto: tarifa_millar
-- causa_raiz: seggment
-- patron: P-01
-- notas: La sección predial esta en pagina 446 de TAMPS_RAW_2023_consolidado.pdf
-- accion: re-segmentar, mejorar segment.py 
+- [ ] revisado
+- veredicto: 
+- tipo_correcto: 
+- causa_raiz: 
+- patron: 
+- notas: 
+- accion: 
 
 ---
 
-## Grupo G-09: `municipio_sin_impuesto` / `solo_valores_unitarios` (2 casos)
+## Grupo G-05: `municipio_sin_impuesto` / `otro_patron` (3 casos)
 
-### `guanajuato/tierra_blanca/2018` (cvegeo 11040)
+### `guanajuato/tierra_blanca/2025` (cvegeo 11040)
 
-- **JSON**: [`predial-mx-v2/guanajuato/GTO_PREDIAL_2018_tierra_blanca.json`](predial-mx-v2/guanajuato/GTO_PREDIAL_2018_tierra_blanca.json)
+- **JSON**: [`predial-mx-v2/guanajuato/GTO_PREDIAL_2025_tierra_blanca.json`](predial-mx-v2/guanajuato/GTO_PREDIAL_2025_tierra_blanca.json)
 - **tipo actual** (LLM): `otro_no_clasificado`
-- **categoria**: `municipio_sin_impuesto`  ·  **tag**: `solo_valores_unitarios`
+- **categoria**: `municipio_sin_impuesto`  ·  **tag**: `otro_patron`
 - **descripcion_estructural**:
-  > El texto proporcionado contiene únicamente tablas de valores unitarios de terreno y construcción para la valuación catastral (urbanos, suburbanos y rústicos), así como criterios de avalúo. No aparece una mecánica de cálculo del impuesto predial con tasas, cuotas, brackets o tarifa aplicable para determinar el impuesto.
+  > El texto proporcionado no contiene una mecánica de cálculo del impuesto predial. El fragmento visible corresponde a descuentos de servicios de agua, servicios catastrales, medios de defensa y ajustes tarifarios, pero no aparece una tarifa, tabla o tasa del impuesto predial para Tierra Blanca, Guanajuato.
 - **razon**: `clasificado_como_otro_no_clasificado`
 
 **Revisión**:
 
-- [ x] revisado
-- veredicto: incorrecto 
-- tipo_correcto: progresivo
-- causa_raiz: segment , api_error
-- patron: P-03
-- notas: La segmentación parece ser correcta, pero omite la tabla progresiva asociada. Está disponible en el recorte de PDF
-- accion: usar modelo de vision
+- [ ] revisado
+- veredicto: 
+- tipo_correcto: 
+- causa_raiz: 
+- patron: 
+- notas: 
+- accion: 
 
 ---
 
-### `guanajuato/valle_de_santiago/2021` (cvegeo 11042)
+### `yucatan/conkal/2023` (cvegeo 31013)
 
-- **JSON**: [`predial-mx-v2/guanajuato/GTO_PREDIAL_2021_valle_de_santiago.json`](predial-mx-v2/guanajuato/GTO_PREDIAL_2021_valle_de_santiago.json)
+- **JSON**: [`predial-mx-v2/yucatan/YUC_PREDIAL_2023_conkal.json`](predial-mx-v2/yucatan/YUC_PREDIAL_2023_conkal.json)
 - **tipo actual** (LLM): `otro_no_clasificado`
-- **categoria**: `municipio_sin_impuesto`  ·  **tag**: `solo_valores_unitarios`
+- **categoria**: `municipio_sin_impuesto`  ·  **tag**: `otro_patron`
 - **descripcion_estructural**:
-  > El texto proporcionado incluye valores unitarios de terreno y construcción para avalúo catastral, pero no aparece la mecánica tarifaria del impuesto predial (tabla de cuotas, tasas al millar, progresividad o cuota fija) dentro del segmento entregado. Por ello no es posible extraer la liquidación del predial sin inventar reglas no visibles.
+  > El segmento no contiene una mecánica de cálculo del impuesto predial. Sólo incluye el pronóstico de ingreso ('Impuesto predial $8,884,740.00') dentro del artículo de clasificaciones de ingresos, y la nota del segmentador indica expresamente que la ley de ingresos corta no trae tarifas, tasas, montos al millar ni rangos, remitiendo a la Ley General de Hacienda Municipal del Estado de Yucatán.
 - **razon**: `clasificado_como_otro_no_clasificado`
 
 **Revisión**:
 
-- [ x] revisado
-- veredicto: incorrecto 
-- tipo_correcto: progresivo
-- causa_raiz: segment , api_error
-- patron: P-03
-- notas: La segmentación parece ser correcta, pero omite la tabla progresiva asociada. Está disponible en el recorte de PDF
-- accion: usar modelo de vision
+- [ ] revisado
+- veredicto: 
+- tipo_correcto: 
+- causa_raiz: 
+- patron: 
+- notas: 
+- accion: 
 
 ---
 
-## Grupo G-10: `segmento_vacio` / `otro_patron` (2 casos)
+### `yucatan/conkal/2024` (cvegeo 31013)
 
-### `guanajuato/cortazar/2023` (cvegeo 11011)
-
-- **JSON**: [`predial-mx-v2/guanajuato/GTO_PREDIAL_2023_cortazar.json`](predial-mx-v2/guanajuato/GTO_PREDIAL_2023_cortazar.json)
+- **JSON**: [`predial-mx-v2/yucatan/YUC_PREDIAL_2024_conkal.json`](predial-mx-v2/yucatan/YUC_PREDIAL_2024_conkal.json)
 - **tipo actual** (LLM): `otro_no_clasificado`
-- **categoria**: `segmento_vacio`  ·  **tag**: `otro_patron`
+- **categoria**: `municipio_sin_impuesto`  ·  **tag**: `otro_patron`
 - **descripcion_estructural**:
-  > El texto proporcionado incluye únicamente la portada y páginas en blanco o sin contenido tarifario visible para la sección de impuesto predial. No se observa tabla, cuotas, tasas ni mecánica de cálculo extraíble en el segmento enviado.
+  > El segmento sólo contiene el pronóstico presupuestal del rubro 'Impuesto predial' en el Artículo 5, pero no incluye tarifas, tasas, rangos, cuotas ni mecánica de cálculo. La propia nota del segmentador indica que la ley corta remite a la Ley General de Hacienda Municipal del Estado de Yucatán para la regulación aplicable.
 - **razon**: `clasificado_como_otro_no_clasificado`
 
 **Revisión**:
 
-- [ x] revisado
-- veredicto: incorrecto 
-- tipo_correcto: progresivo
-- causa_raiz: segment , api_error
-- patron: P-03
-- notas: La segmentación parece ser correcta, pero omite la tabla progresiva asociada. Está disponible en el recorte de PDF
-- accion: usar modelo de vision
+- [ ] revisado
+- veredicto: 
+- tipo_correcto: 
+- causa_raiz: 
+- patron: 
+- notas: 
+- accion: 
 
 ---
 
-### `guanajuato/moroleon/2026` (cvegeo 11021)
+## Grupo G-06: `municipio_sin_impuesto` / `mecanica_ausente` (2 casos)
 
-- **JSON**: [`predial-mx-v2/guanajuato/GTO_PREDIAL_2026_moroleon.json`](predial-mx-v2/guanajuato/GTO_PREDIAL_2026_moroleon.json)
+### `yucatan/conkal/2025` (cvegeo 31013)
+
+- **JSON**: [`predial-mx-v2/yucatan/YUC_PREDIAL_2025_conkal.json`](predial-mx-v2/yucatan/YUC_PREDIAL_2025_conkal.json)
 - **tipo actual** (LLM): `otro_no_clasificado`
-- **categoria**: `segmento_vacio`  ·  **tag**: `otro_patron`
+- **categoria**: `municipio_sin_impuesto`  ·  **tag**: `mecanica_ausente`
 - **descripcion_estructural**:
-  > El insumo proporcionado no contiene el texto tarifario de la sección de impuesto predial; sólo aparecen páginas iniciales y numeración, sin tablas, rangos, tasas ni cuotas aplicables. No es posible extraer la mecánica de cálculo a partir de este segmento.
+  > El segmento no contiene la mecánica de cálculo del impuesto predial. Únicamente aparece el pronóstico presupuestal del artículo 5 con el concepto 'Impuesto predial' por $19,143,850.00, sin tarifas, tasas, rangos, cuotas o remisión articulada a la Ley General de Hacienda Municipal del Estado de Yucatán dentro del texto proporcionado.
 - **razon**: `clasificado_como_otro_no_clasificado`
 
 **Revisión**:
 
-- [ x] revisado
-- veredicto: invalido 
-- tipo_correcto: n/a
-- causa_raiz: ocr, segmentacion
-- patron: P-02
-- notas: solo primeras paginas aptas para busqueda por text, segmentación incorrecta. Problema similar otro ya corregido con HITL previo. 
-- accion: implementar re-ocr + segmentacion 
+- [ ] revisado
+- veredicto: 
+- tipo_correcto: 
+- causa_raiz: 
+- patron: 
+- notas: 
+- accion: 
 
 ---
 
-## Grupo G-11: `segmento_vacio` / `seccion_ausente` (2 casos)
+### `yucatan/kaua/2025` (cvegeo 31043)
 
-### `guanajuato/celaya/2024` (cvegeo 11007)
-
-- **JSON**: [`predial-mx-v2/guanajuato/GTO_PREDIAL_2024_celaya.json`](predial-mx-v2/guanajuato/GTO_PREDIAL_2024_celaya.json)
+- **JSON**: [`predial-mx-v2/yucatan/YUC_PREDIAL_2025_kaua.json`](predial-mx-v2/yucatan/YUC_PREDIAL_2025_kaua.json)
 - **tipo actual** (LLM): `otro_no_clasificado`
-- **categoria**: `segmento_vacio`  ·  **tag**: `seccion_ausente`
+- **categoria**: `municipio_sin_impuesto`  ·  **tag**: `mecanica_ausente`
 - **descripcion_estructural**:
-  > El texto proporcionado no contiene la sección tarifaria del impuesto predial de Celaya, Guanajuato, para 2024. Solo aparecen páginas de índices y montos globales de ingresos, sin tablas, brackets ni tasas del predial extraíbles.
-- **razon**: `clasificado_como_otro_no_clasificado`
-
-**Revisión**:
-
-- [ x] revisado
-- veredicto: invalido 
-- tipo_correcto: n/a
-- causa_raiz: ocr, segmentacion
-- patron: P-02
-- notas: solo primeras paginas aptas para busqueda por text, segmentación incorrecta. Problema similar otro ya corregido con HITL previo. 
-- accion: implementar re-ocr + segmentacion 
-
-
----
-
-### `guanajuato/salamanca/2025` (cvegeo 11027)
-
-- **JSON**: [`predial-mx-v2/guanajuato/GTO_PREDIAL_2025_salamanca.json`](predial-mx-v2/guanajuato/GTO_PREDIAL_2025_salamanca.json)
-- **tipo actual** (LLM): `otro_no_clasificado`
-- **categoria**: `segmento_vacio`  ·  **tag**: `seccion_ausente`
-- **descripcion_estructural**:
-  > En el texto proporcionado no aparece la sección tarifaria del impuesto predial ni artículos con mecánica de cálculo; sólo se observa el clasificador de ingresos con el monto estimado de la recaudación por impuesto predial. No hay tabla, rangos, tasas ni cuota fija extraíbles para transcribir la mecánica.
-- **razon**: `clasificado_como_otro_no_clasificado`
-
-**Revisión**:
-
-- [ x] revisado
-- veredicto: invalido 
-- tipo_correcto: n/a
-- causa_raiz: ocr, segmentacion
-- patron: P-02
-- notas: solo primeras paginas aptas para busqueda por text, segmentación incorrecta. Problema similar otro ya corregido con HITL previo. 
-- accion: implementar re-ocr + segmentacion 
-
-
----
-
-## Grupo G-12: `estructura_no_estandar` / `mecanica_ausente` (1 casos)
-
-### `coahuila/progreso/2010` (cvegeo 05026)
-
-- **JSON**: [`predial-mx-v2/coahuila/COAH_PREDIAL_2010_progreso.json`](predial-mx-v2/coahuila/COAH_PREDIAL_2010_progreso.json)
-- **tipo actual** (LLM): `otro_no_clasificado`
-- **categoria**: `estructura_no_estandar`  ·  **tag**: `mecanica_ausente`
-- **descripcion_estructural**:
-  > El texto proporcionado no contiene la mecánica tarifaria del impuesto predial. Sólo aparecen incentivos/bonificaciones para ciertos contribuyentes (pensionados, instituciones, empresas) y luego inicia el capítulo de otro impuesto (adquisición de inmuebles). No hay tabla, tasa, cuota o rangos aplicables al predial extraíbles en este fragmento.
-- **razon**: `clasificado_como_otro_no_clasificado`
-
-**Revisión**:
-- [ x] revisado
-- veredicto:invalido 
-- tipo_correcto: n/a 
-- causa_raiz: segmentacion
-- patron: P-01
-- notas: La sección predial está en la pagina inmediata anterior
-- accion: volver a segmentar, mejorar segment.py
-
----
-
-## Grupo G-13: `estructura_no_estandar` / `ocr_ilegible` (1 casos)
-
-### `guanajuato/yuriria/2025` (cvegeo 11046)
-
-- **JSON**: [`predial-mx-v2/guanajuato/GTO_PREDIAL_2025_yuriria.json`](predial-mx-v2/guanajuato/GTO_PREDIAL_2025_yuriria.json)
-- **tipo actual** (LLM): `otro_no_clasificado`
-- **categoria**: `estructura_no_estandar`  ·  **tag**: `ocr_ilegible`
-- **descripcion_estructural**:
-  > El texto sí contiene tasas del impuesto predial, pero la mecánica principal no es una sola tabla homogénea: para inmuebles urbanos y suburbanos hay una tabla por antigüedad/estado de edificación con tres columnas ('con edificaciones', 'sin edificaciones' y una columna de tasa con texto deteriorado/OCR), y para inmuebles rústicos aparece además una base de valores por hectárea y por m² con factores agrológicos. El fragmento OCR está seriamente corrompido en los renglones de tasas, por lo que no es posible transcribir con seguridad una estructura tarifaria consistente sin inventar datos.
-- **razon**: `clasificado_como_otro_no_clasificado`
-
-**Revisión**:
-
-- [ x] revisado
-- veredicto: incorrecto 
-- tipo_correcto: progresivo
-- causa_raiz: segment , api_error
-- patron: P-03
-- notas: La segmentación parece ser correcta, pero omite la tabla progresiva asociada. Está disponible en el recorte de PDF
-- accion: usar modelo de vision
-
----
-
-## Grupo G-14: `municipio_sin_impuesto` / `dos_tarifas_paralelas` (1 casos)
-
-### `yucatan/kinchil/2021` (cvegeo 31044)
-
-- **JSON**: [`predial-mx-v2/yucatan/YUC_PREDIAL_2021_kinchil.json`](predial-mx-v2/yucatan/YUC_PREDIAL_2021_kinchil.json)
-- **tipo actual** (LLM): `otro_no_clasificado`
-- **categoria**: `municipio_sin_impuesto`  ·  **tag**: `dos_tarifas_paralelas`
-- **descripcion_estructural**:
-  > El texto del capítulo de predial no contiene una tarifa del impuesto predial extraíble; únicamente remite a la Ley de Hacienda del Municipio de Kinchil, Yucatán, para el pago del impuesto, y luego inserta tablas de valores catastrales/unitarios de suelo y construcción. La única tasa expresa observada es una tarifa paralela para predios destinados a la producción agropecuaria de 10 al millar anual sobre el valor registrado o catastral, pero no se proporciona la mecánica principal del impuesto predial para los demás predios.
+  > El segmento sólo contiene el pronóstico presupuestal de ingresos por concepto, incluyendo una cifra global de 'Impuesto predial', pero no establece tarifa, tasa, cuota fija, monto al millar ni rangos de valor catastral. La nota del segmentador indica además que la mecánica del impuesto se rige por la Ley General de Hacienda Municipal del Estado de Yucatán, por lo que esta ley municipal no contiene la mecánica de cálculo del predial.
 - **razon**: `clasificado_como_otro_no_clasificado`
 - **escalado**: sí (gpt-5.4)
 
 **Revisión**:
 
-- [ x] revisado
-- veredicto: correcto 
-- tipo_correcto: n/a
-- causa_raiz: documento_ambiguo
-- patron: P-00
-- notas: No existe información sobre tasas predial
-- accion: dejar en blanco, esperar recuperación por imputación 
+- [ ] revisado
+- veredicto: 
+- tipo_correcto: 
+- causa_raiz: 
+- patron: 
+- notas: 
+- accion: 
 
 ---
 
-## Grupo G-15: `municipio_sin_impuesto` / `mecanica_ausente` (1 casos)
+## Grupo G-07: `estructura_no_estandar` / `solo_valores_catastro` (1 casos)
 
-### `coahuila/nadadores/2010` (cvegeo 05021)
+### `yucatan/kinchil/2024` (cvegeo 31044)
 
-- **JSON**: [`predial-mx-v2/coahuila/COAH_PREDIAL_2010_nadadores.json`](predial-mx-v2/coahuila/COAH_PREDIAL_2010_nadadores.json)
+- **JSON**: [`predial-mx-v2/yucatan/YUC_PREDIAL_2024_kinchil.json`](predial-mx-v2/yucatan/YUC_PREDIAL_2024_kinchil.json)
 - **tipo actual** (LLM): `otro_no_clasificado`
-- **categoria**: `municipio_sin_impuesto`  ·  **tag**: `mecanica_ausente`
+- **categoria**: `estructura_no_estandar`  ·  **tag**: `solo_valores_catastro`
 - **descripcion_estructural**:
-  > El texto proporcionado no contiene la mecánica del Impuesto Predial. El contenido visible corresponde al Impuesto sobre Adquisición de Inmuebles y a reglas de diferimiento/pago de ese impuesto, no a una tabla o tarifa de predial.
+  > El texto transcrito no contiene una tarifa del impuesto predial en forma de cuotas, rangos o tasas por valor catastral; contiene principalmente una tabla de valores catastrales/unitarios de terreno y construcción para determinar la base gravable. Solo aparece de forma separada una tarifa identificable para predios destinados a la producción agropecuaria de 10 al millar anual sobre el valor registrado o catastral, pero no se observa en el segmento la mecánica principal completa del impuesto predial para los demás predios.
+- **razon**: `clasificado_como_otro_no_clasificado`
+- **escalado**: sí (gpt-5.4)
+
+**Revisión**:
+
+- [ ] revisado
+- veredicto: 
+- tipo_correcto: 
+- causa_raiz: 
+- patron: 
+- notas: 
+- accion: 
+
+---
+
+## Grupo G-08: `municipio_sin_impuesto` / `seccion_ausente` (1 casos)
+
+### `yucatan/conkal/2022` (cvegeo 31013)
+
+- **JSON**: [`predial-mx-v2/yucatan/YUC_PREDIAL_2022_conkal.json`](predial-mx-v2/yucatan/YUC_PREDIAL_2022_conkal.json)
+- **tipo actual** (LLM): `otro_no_clasificado`
+- **categoria**: `municipio_sin_impuesto`  ·  **tag**: `seccion_ausente`
+- **descripcion_estructural**:
+  > El segmento no contiene mecánica de cálculo del impuesto predial. Solo aparece el artículo de pronóstico presupuestal con el monto global de 'Impuesto predial' dentro del rubro de impuestos sobre el patrimonio, sin tarifas, tasas, rangos, bases de cálculo ni remisión expresa a una tabla aplicable dentro del texto proporcionado. La nota del segmentador indica además que la ley corta no incluye la sección tarifaria y que las contribuciones se rigen por la Ley General de Hacienda Municipal del Estado de Yucatán.
 - **razon**: `clasificado_como_otro_no_clasificado`
 
 **Revisión**:
 
-- [ x] revisado
-- veredicto: incorrecto 
-- tipo_correcto: progresivo
-- causa_raiz: segment , api_error
-- patron: P-03
-- notas: La segmentación pdf es correcta, pero el txt  omite las tarifas. Está disponible en el recorte de PDF
-- accion: usar modelo de vision
+- [ ] revisado
+- veredicto: 
+- tipo_correcto: 
+- causa_raiz: 
+- patron: 
+- notas: 
+- accion: 
 
 ---
 
-## Grupo G-16: `segmento_vacio` / `ocr_ilegible` (1 casos)
+## Grupo G-09: `segmento_vacio` / `ocr_ilegible` (1 casos)
 
-### `guanajuato/irapuato/2025` (cvegeo 11017)
+### `guanajuato/acambaro/2025` (cvegeo 11002)
 
-- **JSON**: [`predial-mx-v2/guanajuato/GTO_PREDIAL_2025_irapuato.json`](predial-mx-v2/guanajuato/GTO_PREDIAL_2025_irapuato.json)
+- **JSON**: [`predial-mx-v2/guanajuato/GTO_PREDIAL_2025_acambaro.json`](predial-mx-v2/guanajuato/GTO_PREDIAL_2025_acambaro.json)
 - **tipo actual** (LLM): `otro_no_clasificado`
 - **categoria**: `segmento_vacio`  ·  **tag**: `ocr_ilegible`
 - **descripcion_estructural**:
-  > El texto proporcionado no incluye el contenido tarifario del Impuesto Predial; sólo aparecen páginas de portada/índice y páginas en blanco o sin OCR útil entre las páginas 3 a 20. No es posible extraer una mecánica de cálculo sin una tabla o artículo visible.
+  > El texto proporcionado no contiene la sección tarifaria legible del Impuesto Predial para Acámbaro 2025. Las páginas incluidas muestran principalmente encabezados, listados de ingresos y ruido/OCR, pero no una tabla o mecánica de cálculo extraíble del predial.
 - **razon**: `clasificado_como_otro_no_clasificado`
 
 **Revisión**:
 
-- [ x] revisado
-- veredicto: incorrecto 
-- tipo_correcto: progresivo
-- causa_raiz: segment , api_error
-- patron: P-03
-- notas: La segmentación parece ser correcta, pero omite la tabla progresiva asociada. Está disponible en el recorte de PDF
-- accion: usar modelo de vision
+- [ ] revisado
+- veredicto: 
+- tipo_correcto: 
+- causa_raiz: 
+- patron: 
+- notas: 
+- accion: 
 
 ---
 
-## Grupo G-17: `segmento_vacio` / `texto_truncado` (1 casos)
+## Grupo G-10: `segmento_vacio` / `seccion_ausente` (1 casos)
 
-### `coahuila/muzquiz/2010` (cvegeo 05020)
+### `guanajuato/purisima_del_rincon/2021` (cvegeo 11025)
 
-- **JSON**: [`predial-mx-v2/coahuila/COAH_PREDIAL_2010_muzquiz.json`](predial-mx-v2/coahuila/COAH_PREDIAL_2010_muzquiz.json)
+- **JSON**: [`predial-mx-v2/guanajuato/GTO_PREDIAL_2021_purisima_del_rincon.json`](predial-mx-v2/guanajuato/GTO_PREDIAL_2021_purisima_del_rincon.json)
 - **tipo actual** (LLM): `otro_no_clasificado`
-- **categoria**: `segmento_vacio`  ·  **tag**: `texto_truncado`
+- **categoria**: `segmento_vacio`  ·  **tag**: `seccion_ausente`
 - **descripcion_estructural**:
-  > El texto proporcionado no contiene la mecánica de cálculo del impuesto predial; sólo aparecen disposiciones sobre diferimiento del pago y una referencia incompleta a adquisiciones de inmuebles. No hay tabla, cuota, tasa ni brackets extraíbles para estructurar el predial.
+  > El texto proporcionado no contiene la sección tarifaria del Impuesto Predial del municipio; sólo incluye avisos del Periódico Oficial y un artículo de ajuste de cantidades. No hay tabla, tasa, cuota ni mecánica de cálculo del predial extraíble en este segmento.
 - **razon**: `clasificado_como_otro_no_clasificado`
+- **escalado**: sí (gpt-5.4)
 
 **Revisión**:
-- [ x] revisado
-- veredicto:invalido 
-- tipo_correcto: n/a 
-- causa_raiz: segmentacion
-- patron: P-01
-- notas: La sección predial está en la pagina inmediata anterior
-- accion: volver a segmentar, mejorar segment.py
+
+- [ ] revisado
+- veredicto: 
+- tipo_correcto: 
+- causa_raiz: 
+- patron: 
+- notas: 
+- accion: 
 
 ---
 
 
-## Casos `requiere_revision` excluyendo `otro_no_clasificado` (5 casos)
+## Casos `requiere_revision` excluyendo `otro_no_clasificado` (3 casos)
 
 ### `guanajuato/victoria/2011` (cvegeo 11043)
 
@@ -1776,87 +697,50 @@ teniendo el valor catastral se multiplica por el factor 0.00025 y el resultado s
 
 **Revisión**:
 
-- [ x] revisado
-- veredicto: correcto 
-- tipo_correcto: n/a
-- causa_raiz: otro
-- patron: P-00
-- notas: No se pudo identificar Ley de Ingresos, esperar recuperación por imputación 
+- [ ] revisado
+- veredicto: 
+- tipo_correcto: 
+- causa_raiz: 
+- patron: 
+- notas: 
+- accion: 
 
 ---
 
-### `yucatan/chemax/2024` (cvegeo 31019)
+### `yucatan/chemax/2022` (cvegeo 31019)
 
-- **JSON**: [`predial-mx-v2/yucatan/YUC_PREDIAL_2024_chemax.json`](predial-mx-v2/yucatan/YUC_PREDIAL_2024_chemax.json)
+- **JSON**: [`predial-mx-v2/yucatan/YUC_PREDIAL_2022_chemax.json`](predial-mx-v2/yucatan/YUC_PREDIAL_2022_chemax.json)
 - **tipo actual** (LLM): `FALTA_PREDIAL`
-- **razon**: `valido_3x_fallido | mini_e1=  • predial.progresivo: Value error, brackets 5→6: hueco detectado (superior=15000.0, siguiente inferior=15500.01) | mini_e2=  • predial.mixto: Value error, brackets 5→6: hueco detectado (superior=15000.0, siguie`
+- **razon**: `valido_3x_fallido | e1=  • predial.progresivo: Value error, brackets 5→6: hueco detectado (superior=15000.0, siguiente inferior=15500.01) | e2=  • predial.progresivo: Value error, brackets 5→6: hueco detectado (superior=15000.0, siguiente i`
 - **escalado**: sí (gpt-5.4)
 
 **Revisión**:
 
-- [ x] revisado
-- veredicto: incorrecto 
-- tipo_correcto: progresivo
-- causa_raiz: segment, api_error
-- patron: P-03
-- notas: El recorte parece ser correcto, pero no se incluyen tarifas en txt
-- accion: usar modelo de vision sobre las paginas del recorte asociado
+- [ ] revisado
+- veredicto: 
+- tipo_correcto: 
+- causa_raiz: 
+- patron: 
+- notas: 
+- accion: 
 
 ---
 
-### `yucatan/kinchil/2012` (cvegeo 31044)
+### `yucatan/kinchil/2010` (cvegeo 31044)
 
-- **JSON**: [`predial-mx-v2/yucatan/YUC_PREDIAL_2012_kinchil.json`](predial-mx-v2/yucatan/YUC_PREDIAL_2012_kinchil.json)
+- **JSON**: [`predial-mx-v2/yucatan/YUC_PREDIAL_2010_kinchil.json`](predial-mx-v2/yucatan/YUC_PREDIAL_2010_kinchil.json)
 - **tipo actual** (LLM): `FALTA_PREDIAL`
-- **razon**: `valido_3x_fallido | mini_e1=  • predial.mixto: Value error, brackets 6→7: hueco detectado (superior=60000.0, siguiente inferior=70000.01) | mini_e2=  • predial.mixto: Value error, brackets 6→7: hueco detectado (superior=60000.0, siguiente i`
+- **razon**: `valido_3x_fallido | e1=  • predial.mixto: Value error, brackets 6→7: hueco detectado (superior=60000.0, siguiente inferior=70000.01) | e2=  • predial.mixto: Value error, brackets 6→7: hueco detectado (superior=60000.0, siguiente inferior=70`
 - **escalado**: sí (gpt-5.4)
 
 **Revisión**:
 
-- [ x] revisado
-- veredicto: incorrecto 
-- tipo_correcto: progresivo
-- causa_raiz: segment, api_error
-- patron: P-03
-- notas: El recorte parece ser correcto, pero no se incluyen tarifas en txt
-- accion: usar modelo de vision sobre las paginas del recorte asociado 
-
----
-
-### `yucatan/kinchil/2013` (cvegeo 31044)
-
-- **JSON**: [`predial-mx-v2/yucatan/YUC_PREDIAL_2013_kinchil.json`](predial-mx-v2/yucatan/YUC_PREDIAL_2013_kinchil.json)
-- **tipo actual** (LLM): `FALTA_PREDIAL`
-- **razon**: `valido_3x_fallido | mini_e1=  • predial.mixto: Value error, brackets 6→7: hueco detectado (superior=60000.0, siguiente inferior=70000.0) | mini_e2=  • predial.mixto: Value error, brackets 6→7: hueco detectado (superior=60000.0, siguiente in`
-- **escalado**: sí (gpt-5.4)
-
-**Revisión**:
-
-- [ x] revisado
-- veredicto: incorrecto 
-- tipo_correcto: progresivo
-- causa_raiz: segment, api_error
-- patron: P-03
-- notas: El recorte parece ser correcto, pero no se incluyen tarifas en txt
-- accion: usar modelo de vision sobre las paginas del recorte asociado
-
----
-
-### `yucatan/kinchil/2015` (cvegeo 31044)
-
-- **JSON**: [`predial-mx-v2/yucatan/YUC_PREDIAL_2015_kinchil.json`](predial-mx-v2/yucatan/YUC_PREDIAL_2015_kinchil.json)
-- **tipo actual** (LLM): `FALTA_PREDIAL`
-- **razon**: `valido_3x_fallido | mini_e1=  • predial.mixto: Value error, brackets 6→7: hueco detectado (superior=60000.0, siguiente inferior=70000.01) | mini_e2=  • predial.mixto: Value error, brackets 6→7: hueco detectado (superior=60000.0, siguiente i`
-- **escalado**: sí (gpt-5.4)
-
-**Revisión**:
-
-- [ x] revisado
-- veredicto: incorrecto 
-- tipo_correcto: progresivo
-- causa_raiz: segment, api_error
-- patron: P-03
-- notas: El recorte parece ser correcto, pero no se incluyen tarifas en txt
-- accion: usar modelo de vision sobre las paginas del recorte asociado
+- [ ] revisado
+- veredicto: 
+- tipo_correcto: 
+- causa_raiz: 
+- patron: 
+- notas: 
+- accion: 
 
 ---

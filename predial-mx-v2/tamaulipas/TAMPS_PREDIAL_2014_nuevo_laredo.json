@@ -36,7 +36,7 @@
       },
       {
         "grupo": "urbano",
-        "clave": "predios_urbanos_de_uso_industrial",
+        "clave": "predios_urbanos_uso_industrial",
         "descripcion": "Predios urbanos de uso industrial",
         "tasa_millar": 0.003,
         "periodicidad": "anual",
@@ -44,7 +44,7 @@
       }
     ],
     "minimo_predial": null,
-    "comentarios": "Art. 10: la base es el valor catastral anual. Fracción VI excluye a predios urbanos no edificados propiedad de fraccionamientos autorizados de la tasa de baldíos. Fracciones VII y VIII establecen un aumento del 100% para adquirientes de lotes de fraccionamientos que no construyan en 3 años y para fraccionadores autorizados por predios no vendidos en 3 años; se documenta como disposición secundaria y no se incorpora como tarifa base."
+    "comentarios": "Art. 10: la base es el valor catastral anual. Tasas paralelas: fracc. VII, los adquirientes de lotes provenientes de fraccionamientos que no construyan en tres años pagan un 100% más del impuesto; fracc. VIII, los fraccionadores autorizados pagan un 100% de aumento por los predios no vendidos en un plazo de tres años. No se incorpora como cuota fija adicional porque es un recargo/aumento y no parte de la tasa base."
   },
   "_meta": {
     "fuente": "txt",
@@ -59,7 +59,7 @@
     "usado_vision": false,
     "tokens": {
       "input": 6561,
-      "output": 415,
+      "output": 416,
       "cached": 5888
     },
     "cvegeo": "28027",

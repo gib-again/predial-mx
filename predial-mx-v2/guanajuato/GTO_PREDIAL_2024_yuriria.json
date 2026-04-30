@@ -3,56 +3,56 @@
     "tipo_esquema": "tarifa_millar",
     "tabla": [
       {
-        "grupo": "urbano",
-        "clave": "inmuebles_urbanos_y_suburbanos_con_edificaciones",
-        "descripcion": "Inmuebles urbanos y suburbanos con edificaciones",
+        "grupo": "general",
+        "clave": "urbanos_y_suburbanos_con_edificaciones",
+        "descripcion": "Inmuebles urbanos y suburbanos con edificaciones; valor determinado o modificado.",
         "tasa_millar": 0.0024,
         "periodicidad": "anual",
         "cuota_fija_adicional": null
       },
       {
-        "grupo": "urbano",
-        "clave": "inmuebles_urbanos_y_suburbanos_sin_edificaciones",
-        "descripcion": "Inmuebles urbanos y suburbanos sin edificaciones",
+        "grupo": "general",
+        "clave": "urbanos_y_suburbanos_sin_edificaciones",
+        "descripcion": "Inmuebles urbanos y suburbanos sin edificaciones; valor determinado o modificado.",
         "tasa_millar": 0.0045,
         "periodicidad": "anual",
         "cuota_fija_adicional": null
       },
       {
-        "grupo": "rustico",
-        "clave": "inmuebles_rusticos_con_edificaciones",
-        "descripcion": "Inmuebles rústicos con edificaciones",
+        "grupo": "general",
+        "clave": "rusticos_con_edificaciones",
+        "descripcion": "Inmuebles rústicos con edificaciones; valor determinado o modificado.",
         "tasa_millar": 0.0018,
         "periodicidad": "anual",
         "cuota_fija_adicional": null
       },
       {
-        "grupo": "rustico",
-        "clave": "inmuebles_rusticos_sin_edificaciones",
-        "descripcion": "Inmuebles rústicos sin edificaciones",
-        "tasa_millar": 0.0045,
+        "grupo": "general",
+        "clave": "rusticos_sin_edificaciones",
+        "descripcion": "Inmuebles rústicos sin edificaciones; valor determinado o modificado.",
+        "tasa_millar": 0.013,
         "periodicidad": "anual",
         "cuota_fija_adicional": null
       }
     ],
     "minimo_predial": null,
-    "comentarios": "Artículo 4 establece tarifas anuales al millar por categoría de predio y por presencia/ausencia de edificaciones, con variantes históricas según el año de determinación/modificación del valor catastral (entrada en vigor de la ley, durante 2002-2023, anterioridad a 2002 y hasta 1993, anterioridad a 1993). Para 2024 el texto también remite a los valores unitarios del Artículo 5, pero eso corresponde a catastro/avalúos y no a la mecánica de cálculo del impuesto. No se transcriben los otros tramos históricos porque la ley presenta un esquema categórico principal y no una tabla de brackets por valor catastral."
+    "comentarios": "Artículo 4: se transcriben las tasas anuales por tipo de inmueble y condición de edificación. La tabla principal es categórica y no usa rangos de valor catastral. Se observan además tasas históricas por años anteriores (2002-2023, 1993 y anteriores), pero no se incluyen como esquema vigente 2024."
   },
   "_meta": {
     "fuente": "txt",
     "modelo": "gpt-5.4-mini"
   },
   "_meta_v2": {
-    "intentos": 1,
+    "intentos": 2,
     "requiere_revision": false,
     "escalado": false,
     "razon": null,
     "usado_reocr": false,
     "usado_vision": false,
     "tokens": {
-      "input": 8888,
-      "output": 425,
-      "cached": 5888
+      "input": 18432,
+      "output": 926,
+      "cached": 11776
     },
     "cvegeo": "11046",
     "estado": "guanajuato",

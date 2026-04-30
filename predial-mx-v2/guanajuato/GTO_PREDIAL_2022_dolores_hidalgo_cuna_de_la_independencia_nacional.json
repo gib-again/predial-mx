@@ -8,10 +8,22 @@
         "superior": 500000.0,
         "columnas": [
           {
-            "nombre": "general",
-            "valor": 0.0025,
-            "tipo": "tasa_marginal",
-            "unidad": "porcentaje"
+            "nombre": "urbanos_y_suburbanos_sin_edificacion",
+            "valor": 0.0045,
+            "tipo": "tasa_millar",
+            "unidad": "al_millar"
+          },
+          {
+            "nombre": "rusticos",
+            "valor": 0.0018,
+            "tipo": "tasa_millar",
+            "unidad": "al_millar"
+          },
+          {
+            "nombre": "urbanos_suburbanos_y_rusticos_2021_y_anteriores",
+            "valor": 0.0024,
+            "tipo": "tasa_millar",
+            "unidad": "al_millar"
           }
         ]
       },
@@ -21,10 +33,22 @@
         "superior": 800000.0,
         "columnas": [
           {
-            "nombre": "general",
-            "valor": 0.0026,
-            "tipo": "tasa_marginal",
-            "unidad": "porcentaje"
+            "nombre": "urbanos_y_suburbanos_sin_edificacion",
+            "valor": 0.0045,
+            "tipo": "tasa_millar",
+            "unidad": "al_millar"
+          },
+          {
+            "nombre": "rusticos",
+            "valor": 0.0018,
+            "tipo": "tasa_millar",
+            "unidad": "al_millar"
+          },
+          {
+            "nombre": "urbanos_suburbanos_y_rusticos_2021_y_anteriores",
+            "valor": 0.0045,
+            "tipo": "tasa_millar",
+            "unidad": "al_millar"
           }
         ]
       },
@@ -34,10 +58,22 @@
         "superior": 1100000.0,
         "columnas": [
           {
-            "nombre": "general",
-            "valor": 0.0027,
-            "tipo": "tasa_marginal",
-            "unidad": "porcentaje"
+            "nombre": "urbanos_y_suburbanos_sin_edificacion",
+            "valor": 0.0045,
+            "tipo": "tasa_millar",
+            "unidad": "al_millar"
+          },
+          {
+            "nombre": "rusticos",
+            "valor": 0.0018,
+            "tipo": "tasa_millar",
+            "unidad": "al_millar"
+          },
+          {
+            "nombre": "urbanos_suburbanos_y_rusticos_2021_y_anteriores",
+            "valor": 0.008,
+            "tipo": "tasa_millar",
+            "unidad": "al_millar"
           }
         ]
       },
@@ -47,10 +83,22 @@
         "superior": 1400000.0,
         "columnas": [
           {
-            "nombre": "general",
-            "valor": 0.0028,
-            "tipo": "tasa_marginal",
-            "unidad": "porcentaje"
+            "nombre": "urbanos_y_suburbanos_sin_edificacion",
+            "valor": 0.0045,
+            "tipo": "tasa_millar",
+            "unidad": "al_millar"
+          },
+          {
+            "nombre": "rusticos",
+            "valor": 0.0018,
+            "tipo": "tasa_millar",
+            "unidad": "al_millar"
+          },
+          {
+            "nombre": "urbanos_suburbanos_y_rusticos_2021_y_anteriores",
+            "valor": 0.013,
+            "tipo": "tasa_millar",
+            "unidad": "al_millar"
           }
         ]
       },
@@ -60,10 +108,22 @@
         "superior": 1700000.0,
         "columnas": [
           {
-            "nombre": "general",
-            "valor": 0.0029,
-            "tipo": "tasa_marginal",
-            "unidad": "porcentaje"
+            "nombre": "urbanos_y_suburbanos_sin_edificacion",
+            "valor": 0.0045,
+            "tipo": "tasa_millar",
+            "unidad": "al_millar"
+          },
+          {
+            "nombre": "rusticos",
+            "valor": 0.0018,
+            "tipo": "tasa_millar",
+            "unidad": "al_millar"
+          },
+          {
+            "nombre": "urbanos_suburbanos_y_rusticos_2021_y_anteriores",
+            "valor": 0.015,
+            "tipo": "tasa_millar",
+            "unidad": "al_millar"
           }
         ]
       },
@@ -73,10 +133,22 @@
         "superior": 2000000.0,
         "columnas": [
           {
-            "nombre": "general",
-            "valor": 0.003,
-            "tipo": "tasa_marginal",
-            "unidad": "porcentaje"
+            "nombre": "urbanos_y_suburbanos_sin_edificacion",
+            "valor": 0.0045,
+            "tipo": "tasa_millar",
+            "unidad": "al_millar"
+          },
+          {
+            "nombre": "rusticos",
+            "valor": 0.0018,
+            "tipo": "tasa_millar",
+            "unidad": "al_millar"
+          },
+          {
+            "nombre": "urbanos_suburbanos_y_rusticos_2021_y_anteriores",
+            "valor": 0.018,
+            "tipo": "tasa_millar",
+            "unidad": "al_millar"
           }
         ]
       },
@@ -86,10 +158,22 @@
         "superior": 2300000.0,
         "columnas": [
           {
-            "nombre": "general",
-            "valor": 0.0031,
-            "tipo": "tasa_marginal",
-            "unidad": "porcentaje"
+            "nombre": "urbanos_y_suburbanos_sin_edificacion",
+            "valor": 0.0045,
+            "tipo": "tasa_millar",
+            "unidad": "al_millar"
+          },
+          {
+            "nombre": "rusticos",
+            "valor": 0.0018,
+            "tipo": "tasa_millar",
+            "unidad": "al_millar"
+          },
+          {
+            "nombre": "urbanos_suburbanos_y_rusticos_2021_y_anteriores",
+            "valor": 0.021,
+            "tipo": "tasa_millar",
+            "unidad": "al_millar"
           }
         ]
       },
@@ -99,10 +183,22 @@
         "superior": 2600000.0,
         "columnas": [
           {
-            "nombre": "general",
-            "valor": 0.0032,
-            "tipo": "tasa_marginal",
-            "unidad": "porcentaje"
+            "nombre": "urbanos_y_suburbanos_sin_edificacion",
+            "valor": 0.0045,
+            "tipo": "tasa_millar",
+            "unidad": "al_millar"
+          },
+          {
+            "nombre": "rusticos",
+            "valor": 0.0018,
+            "tipo": "tasa_millar",
+            "unidad": "al_millar"
+          },
+          {
+            "nombre": "urbanos_suburbanos_y_rusticos_2021_y_anteriores",
+            "valor": 0.024,
+            "tipo": "tasa_millar",
+            "unidad": "al_millar"
           }
         ]
       },
@@ -112,10 +208,22 @@
         "superior": 2900000.0,
         "columnas": [
           {
-            "nombre": "general",
-            "valor": 0.0033,
-            "tipo": "tasa_marginal",
-            "unidad": "porcentaje"
+            "nombre": "urbanos_y_suburbanos_sin_edificacion",
+            "valor": 0.0045,
+            "tipo": "tasa_millar",
+            "unidad": "al_millar"
+          },
+          {
+            "nombre": "rusticos",
+            "valor": 0.0018,
+            "tipo": "tasa_millar",
+            "unidad": "al_millar"
+          },
+          {
+            "nombre": "urbanos_suburbanos_y_rusticos_2021_y_anteriores",
+            "valor": 0.026,
+            "tipo": "tasa_millar",
+            "unidad": "al_millar"
           }
         ]
       },
@@ -125,16 +233,28 @@
         "superior": null,
         "columnas": [
           {
-            "nombre": "general",
-            "valor": 0.0034,
-            "tipo": "tasa_marginal",
-            "unidad": "porcentaje"
+            "nombre": "urbanos_y_suburbanos_sin_edificacion",
+            "valor": 0.0045,
+            "tipo": "tasa_millar",
+            "unidad": "al_millar"
+          },
+          {
+            "nombre": "rusticos",
+            "valor": 0.0018,
+            "tipo": "tasa_millar",
+            "unidad": "al_millar"
+          },
+          {
+            "nombre": "urbanos_suburbanos_y_rusticos_2021_y_anteriores",
+            "valor": 0.027,
+            "tipo": "tasa_millar",
+            "unidad": "al_millar"
           }
         ]
       }
     ],
     "minimo_predial": null,
-    "comentarios": "Art. 4: mecánica principal mixta. Para inmuebles urbanos y suburbanos con edificación que cuenten con valor determinado o modificado en 2022 se aplica la TABLA 2 por rangos de valor catastral con cuota fija y tasa marginal sobre el excedente; la tabla combina cuota fija en pesos con tasa marginal porcentual, por lo que no es progresivo ni cuota fija escalonada. Art. 4 fraccs. I y II: inmuebles urbanos/suburbanos sin edificación pagan 4.50 al millar y los rústicos 1.8 al millar; Art. 4 fracc. III remite a la TABLA 1 para valores 2021 y anteriores, con tasas al millar por antigüedad y tipo de inmueble (urbano/suburbano con o sin edificación y rústico). Estas tarifas paralelas no se mezclan en la tabla principal por ser regímenes separados. Se ignoran Art. 5 y 6 por tratarse de valores unitarios y criterios de avalúo, no de cálculo del impuesto."
+    "comentarios": "Art. 4: tarifas paralelas por tipo de inmueble y ejercicio de valor. I) Inmuebles urbanos y suburbanos sin edificación con valor determinado o modificado en 2022: 4.50 al millar anual sobre la base gravable. II) Inmuebles rústicos con valor determinado o modificado en 2022: 1.8 al millar anual. III) Inmuebles urbanos, suburbanos y rústicos con valor determinado o modificado en 2021 y anteriores: tabla 1 con tasas al millar categóricas (2.4, 4.5, 1.8; luego 8, 1.5, 6; luego 13, 13, 12 al millar según el periodo y tipo). IV) Inmuebles urbanos y suburbanos con edificación con valor 2022: tabla 2 progresiva con tasa marginal y cuota fija bimestral. No se mezclan en una sola tabla las tarifas paralelas; la tabla principal preserva la estructura por rangos de la tabla 2 y las demás tarifas se documentan textualmente."
   },
   "_meta": {
     "fuente": "txt",
@@ -149,7 +269,7 @@
     "usado_vision": false,
     "tokens": {
       "input": 9423,
-      "output": 783,
+      "output": 1510,
       "cached": 5888
     },
     "cvegeo": "11014",

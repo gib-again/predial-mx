@@ -53,7 +53,7 @@
       }
     ],
     "minimo_predial": null,
-    "comentarios": "Art. 13: tarifa del impuesto predial con base en el valor catastral. Se transcribe la tabla progresiva de 7 rangos con cuota fija anual y factor sobre el excedente del límite inferior. También existe una tarifa paralela para predios destinados a la producción agropecuaria: 10 al millar anual sobre el valor registrado o catastral, sin exceder lo establecido por la legislación agraria federal para terrenos ejidales; se deja fuera de la tabla principal por ser una tarifa separada. Los artículos 14 y 15 sobre descuento y predial por rentas o frutos civiles se ignoran por instrucción."
+    "comentarios": "Art. 13: la mecánica principal del impuesto predial con base en valor catastral es una tarifa progresiva con cuota fija anual y factor sobre el excedente del límite inferior. Tarifa paralela secundaria: predios destinados a la producción agropecuaria pagan 10 al millar anual sobre el valor registrado o catastral, con tope conforme a la legislación agraria federal para terrenos ejidales; y el Art. 15 establece predial sobre rentas o frutos civiles (2.5% casas habitación, 5% actividades comerciales), documentados sólo como tarifas secundarias porque no constituyen la mecánica principal del predial por valor catastral."
   },
   "_meta": {
     "fuente": "txt",
@@ -64,10 +64,12 @@
     "requiere_revision": false,
     "escalado": false,
     "razon": null,
+    "usado_reocr": false,
+    "usado_vision": false,
     "tokens": {
-      "input": 6494,
-      "output": 438,
-      "cached": 3840
+      "input": 7711,
+      "output": 450,
+      "cached": 5888
     },
     "cvegeo": "31103",
     "estado": "yucatan",

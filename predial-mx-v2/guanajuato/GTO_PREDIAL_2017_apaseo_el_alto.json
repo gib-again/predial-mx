@@ -4,31 +4,31 @@
     "tabla": [
       {
         "grupo": "general",
-        "clave": "inmuebles_urbanos_y_suburbanos_con_edificaciones",
-        "descripcion": "Inmuebles urbanos y suburbanos con edificaciones; tasa anual sobre el valor catastral.",
+        "clave": "inmuebles_con_edificaciones",
+        "descripcion": "Inmuebles urbanos y suburbanos con edificaciones",
         "tasa_millar": 0.0024,
         "periodicidad": "anual",
         "cuota_fija_adicional": null
       },
       {
         "grupo": "general",
-        "clave": "inmuebles_urbanos_y_suburbanos_sin_edificaciones",
-        "descripcion": "Inmuebles urbanos y suburbanos sin edificaciones; tasa anual sobre el valor catastral.",
+        "clave": "inmuebles_sin_edificaciones",
+        "descripcion": "Inmuebles urbanos y suburbanos sin edificaciones",
         "tasa_millar": 0.0045,
         "periodicidad": "anual",
         "cuota_fija_adicional": null
       },
       {
-        "grupo": "general",
+        "grupo": "rustico",
         "clave": "inmuebles_rusticos",
-        "descripcion": "Inmuebles rústicos; tasa anual sobre el valor catastral.",
+        "descripcion": "Inmuebles rústicos",
         "tasa_millar": 0.0018,
         "periodicidad": "anual",
         "cuota_fija_adicional": null
       }
     ],
     "minimo_predial": null,
-    "comentarios": "Art. 4: el impuesto predial se causará y liquidará anualmente conforme a tasas al millar según tipo de inmueble. La tabla principal transcribe las tasas para inmuebles urbanos y suburbanos con edificaciones, urbanos y suburbanos sin edificaciones, e inmuebles rústicos. El mismo artículo contiene tasas históricas por periodo (fracciones II, III y IV), pero la mecánica aplicable al ejercicio 2017 se presenta en la fracción I. Art. 5 regula valores unitarios para avalúo/catastro y no constituye mecánica de cálculo del impuesto."
+    "comentarios": "Art. 4 establece tasas anuales al millar sobre el valor catastral para tres grupos: urbanos y suburbanos con edificaciones (2.4 al millar), urbanos y suburbanos sin edificaciones (4.5 al millar) e inmuebles rústicos (1.8 al millar). Se omiten los artículos 5 y 6 porque son tablas de valores unitarios y criterios de avalúo, no la mecánica tarifaria del impuesto predial."
   },
   "_meta": {
     "fuente": "txt",
@@ -43,7 +43,7 @@
     "usado_vision": false,
     "tokens": {
       "input": 8696,
-      "output": 361,
+      "output": 298,
       "cached": 5888
     },
     "cvegeo": "11004",

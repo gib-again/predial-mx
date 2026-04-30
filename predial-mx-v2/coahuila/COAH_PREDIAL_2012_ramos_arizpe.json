@@ -3,42 +3,42 @@
     "tipo_esquema": "tarifa_millar",
     "tabla": [
       {
-        "grupo": "urbano",
-        "clave": "industrial",
+        "grupo": "general",
+        "clave": "industrial_urbano",
         "descripcion": "Predios urbanos industriales con o sin edificación",
         "tasa_millar": 0.005,
         "periodicidad": "anual",
         "cuota_fija_adicional": null
       },
       {
-        "grupo": "urbano",
-        "clave": "comercial_con_edificacion",
+        "grupo": "general",
+        "clave": "comercial_urbano_con_edificacion",
         "descripcion": "Predios urbanos comerciales con edificación",
         "tasa_millar": 0.005,
         "periodicidad": "anual",
         "cuota_fija_adicional": null
       },
       {
-        "grupo": "urbano",
-        "clave": "comercial_sin_edificacion",
+        "grupo": "general",
+        "clave": "comercial_urbano_sin_edificacion",
         "descripcion": "Predios urbanos comerciales sin edificación",
-        "tasa_millar": 0.006649999999999999,
+        "tasa_millar": 0.00665,
         "periodicidad": "anual",
         "cuota_fija_adicional": null
       },
       {
-        "grupo": "urbano",
-        "clave": "residencial_con_edificacion",
+        "grupo": "general",
+        "clave": "residencial_interes_social_popular_con_edificacion",
         "descripcion": "Predios urbanos residenciales, de interés social y populares con edificación",
         "tasa_millar": 0.005,
         "periodicidad": "anual",
         "cuota_fija_adicional": null
       },
       {
-        "grupo": "urbano",
-        "clave": "residencial_sin_edificacion",
+        "grupo": "general",
+        "clave": "residencial_interes_social_popular_sin_edificacion",
         "descripcion": "Predios urbanos residenciales, de interés social y populares sin edificación",
-        "tasa_millar": 0.006649999999999999,
+        "tasa_millar": 0.00665,
         "periodicidad": "anual",
         "cuota_fija_adicional": null
       },
@@ -56,7 +56,7 @@
       "periodicidad": "anual",
       "unidad": "pesos"
     },
-    "comentarios": "Art. 2: la base es el valor catastral de cada inmueble. Las tarifas secundarias/incentivos mencionados en el texto (pagos anticipados, casa habitación, industria, pensionados/jubilados/adultos mayores/personas con discapacidad, predios prestados al municipio, instituciones educativas no públicas, fraccionamientos en vías de desarrollo, incentivos por empleo y centro histórico) son bonificaciones/incentivos y se ignoran para la mecánica de cálculo. Para comerciales y residenciales sin edificación se transcribe 1.33 veces la tarifa de los predios con edificación; esto equivale a 0.00665 al millar anual si la tasa base es 0.005."
+    "comentarios": "Art. 2: la mecánica principal es un catálogo de tasas al millar sobre valor catastral por tipo de predio. Las tasas de predios sin edificación se fijan como 1.33 veces la tasa de los predios con edificación; se transcribieron como 0.00665 al millar. Art. 2 también establece incentivos/bonificaciones y un tratamiento especial para instituciones educativas no públicas (1 al millar) y predios con licencia de fraccionamiento (20% del impuesto), así como apoyos para centros de trabajo; esos incentivos no se incorporan como mecánica principal. Art. 2-V fija un mínimo predial anual de $101.00."
   },
   "_meta": {
     "fuente": "txt",
@@ -71,7 +71,7 @@
     "usado_vision": false,
     "tokens": {
       "input": 7185,
-      "output": 517,
+      "output": 529,
       "cached": 5888
     },
     "cvegeo": "05027",

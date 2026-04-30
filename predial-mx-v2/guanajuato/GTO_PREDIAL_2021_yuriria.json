@@ -4,15 +4,15 @@
     "tabla": [
       {
         "grupo": "urbano",
-        "clave": "urbano_con_edificaciones",
+        "clave": "inmuebles_urbanos_y_suburbanos_con_edificaciones",
         "descripcion": "Inmuebles urbanos y suburbanos con edificaciones",
-        "tasa_millar": 0.0018,
+        "tasa_millar": 0.0024,
         "periodicidad": "anual",
         "cuota_fija_adicional": null
       },
       {
         "grupo": "urbano",
-        "clave": "urbano_sin_edificaciones",
+        "clave": "inmuebles_urbanos_y_suburbanos_sin_edificaciones",
         "descripcion": "Inmuebles urbanos y suburbanos sin edificaciones",
         "tasa_millar": 0.0045,
         "periodicidad": "anual",
@@ -20,15 +20,15 @@
       },
       {
         "grupo": "rustico",
-        "clave": "rustico",
+        "clave": "inmuebles_rusticos",
         "descripcion": "Inmuebles rústicos",
-        "tasa_millar": 0.0024,
+        "tasa_millar": 0.0018,
         "periodicidad": "anual",
         "cuota_fija_adicional": null
       }
     ],
     "minimo_predial": null,
-    "comentarios": "Art. 4: la mecánica principal del impuesto predial es una tarifa al millar anual por tipo de inmueble. Se transcribe la tarifa vigente para 2021 conforme al texto proporcionado: inmuebles urbanos y suburbanos con edificaciones 1.8 al millar; sin edificaciones 4.5 al millar; inmuebles rústicos 2.4 al millar. El artículo también contiene referencias históricas por periodos anteriores y valores catastrales para avalúo (arts. 5 y 6), pero no forman parte de la mecánica de cálculo del impuesto y se ignoran."
+    "comentarios": "Artículo 4 establece tasas anuales al millar por categoría de predio y condición de edificación para 2021. Tarifas diferenciadas: urbanos y suburbanos con edificaciones 2.4 al millar; urbanos y suburbanos sin edificaciones 4.5 al millar; rústicos 1.8 al millar. También se menciona una tasa histórica de 8/15/6/13 al millar para predios anteriores a 2002 y 1993, pero corresponde a un supuesto transitorio ya no aplicable al ejercicio 2021; por eso no se incluye en la tabla principal."
   },
   "_meta": {
     "fuente": "txt",
@@ -43,7 +43,7 @@
     "usado_vision": false,
     "tokens": {
       "input": 8773,
-      "output": 329,
+      "output": 344,
       "cached": 5888
     },
     "cvegeo": "11046",

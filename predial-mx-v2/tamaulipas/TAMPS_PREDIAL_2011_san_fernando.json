@@ -4,16 +4,32 @@
     "tabla": [
       {
         "grupo": "urbano",
-        "clave": "predios_urbanos_suburbanos",
-        "descripcion": "Predios urbanos y suburbanos",
+        "clave": "predios_urbanos_y_suburbanos",
+        "descripcion": "Predios urbanos y suburbanos, tasa general anual sobre valor catastral.",
         "tasa_millar": 0.0016,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "urbano",
+        "clave": "predios_urbanos_no_edificados",
+        "descripcion": "Predios urbanos no edificados: aumento del 100% sobre la tasa del artículo 6, equivalente a 3.2 al millar anual.",
+        "tasa_millar": 0.0032,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "urbano",
+        "clave": "predios_urbanos_con_edificacion_inferior_a_quinta_parte_del_terreno",
+        "descripcion": "Predios urbanos cuya edificación tenga un valor inferior a la quinta parte del valor del terreno: aumento del 50% sobre la tasa general del artículo 6, equivalente a 2.4 al millar anual.",
+        "tasa_millar": 0.0024,
         "periodicidad": "anual",
         "cuota_fija_adicional": null
       },
       {
         "grupo": "rustico",
         "clave": "agostadero_primera_segunda_tercera",
-        "descripcion": "Predios rústicos uso agostadero de primera, segunda y tercera",
+        "descripcion": "Predios rústicos uso agostadero de primera, segunda y tercera.",
         "tasa_millar": 0.0016,
         "periodicidad": "anual",
         "cuota_fija_adicional": null
@@ -21,7 +37,7 @@
       {
         "grupo": "rustico",
         "clave": "riego_temporal_pastizal",
-        "descripcion": "Predios rústicos uso de riego, temporal y pastizal",
+        "descripcion": "Predios rústicos de uso de riego, uso de temporal y uso de pastizal.",
         "tasa_millar": 0.0007,
         "periodicidad": "anual",
         "cuota_fija_adicional": null
@@ -32,7 +48,7 @@
       "periodicidad": "anual",
       "unidad": "salarios"
     },
-    "comentarios": "Artículo 6: para predios urbanos y suburbanos la tasa general es 1.6 al millar anual sobre valor catastral. En predios urbanos no edificados la tasa se aumenta en 100%; en predios urbanos con edificación cuyo valor sea inferior a la quinta parte del valor del terreno, la tasa se aumenta en 50%; y en predios urbanos no edificados propiedad de fraccionamientos autorizados no se aplica el aumento del 100%. El artículo 7 establece tarifas paralelas para predios rústicos: 1.6 al millar anual para agostadero de primera, segunda y tercera; y 0.7 al millar anual para riego, temporal y pastizal. Se conserva la tabla principal como tarifa_millar por tratarse de tarifas categóricas sobre valor catastral. Artículo 8: el impuesto anual no podrá ser inferior a tres salarios."
+    "comentarios": "Art. 6: predios urbanos y suburbanos pagan 1.6 al millar anual sobre valor catastral; predios urbanos no edificados aumentan 100% (3.2 al millar) y predios urbanos con edificación inferior a la quinta parte del valor del terreno aumentan 50% (2.4 al millar). Art. 7: predios rústicos uso agostadero de primera, segunda y tercera pagan 1.6 al millar anual; usos de riego, temporal y pastizal pagan 0.7 al millar anual sobre valor catastral. Art. 8: el impuesto anual no podrá ser inferior a tres salarios."
   },
   "_meta": {
     "fuente": "txt",
@@ -47,7 +63,7 @@
     "usado_vision": false,
     "tokens": {
       "input": 6567,
-      "output": 423,
+      "output": 570,
       "cached": 5888
     },
     "cvegeo": "28035",

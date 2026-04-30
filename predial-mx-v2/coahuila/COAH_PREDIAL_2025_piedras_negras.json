@@ -20,7 +20,7 @@
       },
       {
         "grupo": "rustico",
-        "clave": "predios_rusticos_industriales_eolica_ejecucion",
+        "clave": "rusticos_industriales_eolica_ejecucion",
         "descripcion": "Predios rústicos industriales con explotación de energía renovable (eólica) en ejecución",
         "tasa_millar": 0.005,
         "periodicidad": "anual",
@@ -28,7 +28,7 @@
       },
       {
         "grupo": "rustico",
-        "clave": "predios_rusticos_industriales_eolica_desarrollo",
+        "clave": "rusticos_industriales_eolica_desarrollo",
         "descripcion": "Predios rústicos industriales con explotación de energía renovable (eólica) en desarrollo",
         "tasa_millar": 0.005,
         "periodicidad": "anual",
@@ -36,7 +36,7 @@
       },
       {
         "grupo": "rustico",
-        "clave": "predios_rusticos_industriales_eolica_proyecto",
+        "clave": "rusticos_industriales_eolica_proyecto",
         "descripcion": "Predios rústicos industriales con explotación de energía renovable (eólica) en proyecto",
         "tasa_millar": 0.005,
         "periodicidad": "anual",
@@ -48,7 +48,7 @@
       "periodicidad": "bimestral",
       "unidad": "pesos"
     },
-    "comentarios": "Art. 2: tasa al millar anual por categoría de predio. Se documenta el mínimo predial de $33.50 bimestral. Los incentivos y bonificaciones posteriores se ignoran por instrucción. La fracción IV de instituciones educativas no públicas establece 1 al millar anual, pero aparece como incentivo/tasa especial para un grupo específico y no como mecánica principal; se deja fuera de la tabla principal para no mezclar regímenes paralelos."
+    "comentarios": "Art. 2: se establecen tasas al millar sobre valor catastral para predios urbanos, rústicos y rústicos industriales con explotación de energía renovable (eólica) en ejecución, desarrollo y proyecto. También prevé un mínimo predial de $33.50 bimestral. Los incentivos y bonificaciones posteriores se ignoran por instrucción."
   },
   "_meta": {
     "fuente": "txt",
@@ -63,7 +63,7 @@
     "usado_vision": false,
     "tokens": {
       "input": 7219,
-      "output": 450,
+      "output": 420,
       "cached": 5888
     },
     "cvegeo": "05025",

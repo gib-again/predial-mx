@@ -8,7 +8,7 @@
         "superior": 100000.0,
         "columnas": [
           {
-            "nombre": "habitacional_y_urbano_suburbano_con_edificaciones",
+            "nombre": "general",
             "valor": 0.0024,
             "tipo": "tasa_marginal",
             "unidad": "al_millar"
@@ -17,11 +17,11 @@
       },
       {
         "n_rango": 2,
-        "inferior": 100000.01,
+        "inferior": 100000.0,
         "superior": 200000.0,
         "columnas": [
           {
-            "nombre": "habitacional_y_urbano_suburbano_con_edificaciones",
+            "nombre": "general",
             "valor": 0.00252,
             "tipo": "tasa_marginal",
             "unidad": "al_millar"
@@ -30,11 +30,11 @@
       },
       {
         "n_rango": 3,
-        "inferior": 200000.01,
+        "inferior": 200000.0,
         "superior": 300000.0,
         "columnas": [
           {
-            "nombre": "habitacional_y_urbano_suburbano_con_edificaciones",
+            "nombre": "general",
             "valor": 0.002646,
             "tipo": "tasa_marginal",
             "unidad": "al_millar"
@@ -43,11 +43,11 @@
       },
       {
         "n_rango": 4,
-        "inferior": 300000.01,
+        "inferior": 300000.0,
         "superior": 400000.0,
         "columnas": [
           {
-            "nombre": "habitacional_y_urbano_suburbano_con_edificaciones",
+            "nombre": "general",
             "valor": 0.002778,
             "tipo": "tasa_marginal",
             "unidad": "al_millar"
@@ -56,11 +56,11 @@
       },
       {
         "n_rango": 5,
-        "inferior": 400000.01,
+        "inferior": 400000.0,
         "superior": 500000.0,
         "columnas": [
           {
-            "nombre": "habitacional_y_urbano_suburbano_con_edificaciones",
+            "nombre": "general",
             "valor": 0.002917,
             "tipo": "tasa_marginal",
             "unidad": "al_millar"
@@ -69,11 +69,11 @@
       },
       {
         "n_rango": 6,
-        "inferior": 500000.01,
+        "inferior": 500000.0,
         "superior": 600000.0,
         "columnas": [
           {
-            "nombre": "habitacional_y_urbano_suburbano_con_edificaciones",
+            "nombre": "general",
             "valor": 0.003063,
             "tipo": "tasa_marginal",
             "unidad": "al_millar"
@@ -82,11 +82,11 @@
       },
       {
         "n_rango": 7,
-        "inferior": 600000.01,
+        "inferior": 600000.0,
         "superior": 700000.0,
         "columnas": [
           {
-            "nombre": "habitacional_y_urbano_suburbano_con_edificaciones",
+            "nombre": "general",
             "valor": 0.003216,
             "tipo": "tasa_marginal",
             "unidad": "al_millar"
@@ -95,11 +95,11 @@
       },
       {
         "n_rango": 8,
-        "inferior": 700000.01,
+        "inferior": 700000.0,
         "superior": 800000.0,
         "columnas": [
           {
-            "nombre": "habitacional_y_urbano_suburbano_con_edificaciones",
+            "nombre": "general",
             "valor": 0.003377,
             "tipo": "tasa_marginal",
             "unidad": "al_millar"
@@ -108,11 +108,11 @@
       },
       {
         "n_rango": 9,
-        "inferior": 800000.01,
+        "inferior": 800000.0,
         "superior": 900000.0,
         "columnas": [
           {
-            "nombre": "habitacional_y_urbano_suburbano_con_edificaciones",
+            "nombre": "general",
             "valor": 0.003546,
             "tipo": "tasa_marginal",
             "unidad": "al_millar"
@@ -121,11 +121,11 @@
       },
       {
         "n_rango": 10,
-        "inferior": 900000.01,
+        "inferior": 900000.0,
         "superior": 1000000.0,
         "columnas": [
           {
-            "nombre": "habitacional_y_urbano_suburbano_con_edificaciones",
+            "nombre": "general",
             "valor": 0.003723,
             "tipo": "tasa_marginal",
             "unidad": "al_millar"
@@ -134,11 +134,11 @@
       },
       {
         "n_rango": 11,
-        "inferior": 1000000.01,
+        "inferior": 1000000.0,
         "superior": 1100000.0,
         "columnas": [
           {
-            "nombre": "habitacional_y_urbano_suburbano_con_edificaciones",
+            "nombre": "general",
             "valor": 0.003909,
             "tipo": "tasa_marginal",
             "unidad": "al_millar"
@@ -147,11 +147,11 @@
       },
       {
         "n_rango": 12,
-        "inferior": 1100000.01,
+        "inferior": 1100000.0,
         "superior": 1200000.0,
         "columnas": [
           {
-            "nombre": "habitacional_y_urbano_suburbano_con_edificaciones",
+            "nombre": "general",
             "valor": 0.004105,
             "tipo": "tasa_marginal",
             "unidad": "al_millar"
@@ -160,11 +160,11 @@
       },
       {
         "n_rango": 13,
-        "inferior": 1200000.01,
+        "inferior": 1200000.0,
         "superior": 1300000.0,
         "columnas": [
           {
-            "nombre": "habitacional_y_urbano_suburbano_con_edificaciones",
+            "nombre": "general",
             "valor": 0.00431,
             "tipo": "tasa_marginal",
             "unidad": "al_millar"
@@ -173,11 +173,11 @@
       },
       {
         "n_rango": 14,
-        "inferior": 1300000.01,
+        "inferior": 1300000.0,
         "superior": 1400000.0,
         "columnas": [
           {
-            "nombre": "habitacional_y_urbano_suburbano_con_edificaciones",
+            "nombre": "general",
             "valor": 0.004526,
             "tipo": "tasa_marginal",
             "unidad": "al_millar"
@@ -186,11 +186,11 @@
       },
       {
         "n_rango": 15,
-        "inferior": 1400000.01,
+        "inferior": 1400000.0,
         "superior": null,
         "columnas": [
           {
-            "nombre": "habitacional_y_urbano_suburbano_con_edificaciones",
+            "nombre": "general",
             "valor": 0.004752,
             "tipo": "tasa_marginal",
             "unidad": "al_millar"
@@ -199,7 +199,7 @@
       }
     ],
     "minimo_predial": null,
-    "comentarios": "Art. 4, fracc. I, inciso a): para inmuebles urbanos y suburbanos con edificaciones se establece una tabla de valor fiscal con cuota fija y tasa marginal por rangos. Se codifica como mixto porque los rangos son de valor catastral y la mecánica publicada combina cuota fija en pesos con tasa marginal al millar; la tarifa es heterogénea por tramo. Art. 4, fracc. I, inciso b): inmuebles urbanos y suburbanos sin edificaciones pagan 4.5 al millar; si el valor se determinó o modificó antes de 2002 y hasta 1993 inclusive, 15 al millar; con anterioridad a 1993, 13 al millar. Art. 4, fracc. II: inmuebles rústicos pagan 1.8 al millar; para periodos anteriores se señalan 6 al millar y 12 al millar según antigüedad. Estas tarifas paralelas no se incorporan a la tabla principal por ser grupos separados."
+    "comentarios": "Art. 4, fracción I, inciso a): para inmuebles urbanos y suburbanos con edificaciones se establece una tabla por valor fiscal del inmueble con cuotas fijas y tasas marginales sobre el excedente; en el último renglón aparece 'En adelante'. Art. 4, fracción I, inciso b): inmuebles urbanos y suburbanos sin edificaciones pagan 4.5 al millar; si el valor fue determinado o modificado, además hay tarifas de 15 al millar o 13 al millar según antigüedad. Art. 4, fracción II: inmuebles rústicos pagan 1.8 al millar; si el valor fue determinado o modificado, además hay tarifas de 6 al millar o 12 al millar según antigüedad. Se clasifica como mixto porque coexiste una tabla progresiva con tarifas paralelas categóricas en unidades homogéneas, no reducibles a una sola variante simple."
   },
   "_meta": {
     "fuente": "txt",
@@ -214,7 +214,7 @@
     "usado_vision": false,
     "tokens": {
       "input": 9556,
-      "output": 1196,
+      "output": 986,
       "cached": 5888
     },
     "cvegeo": "11001",

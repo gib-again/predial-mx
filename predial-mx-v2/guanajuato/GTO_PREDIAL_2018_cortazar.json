@@ -4,7 +4,7 @@
     "tabla": [
       {
         "grupo": "urbano",
-        "clave": "urbano_con_edificaciones",
+        "clave": "urbano_suburbano_con_edificaciones",
         "descripcion": "Inmuebles urbanos y suburbanos con edificaciones",
         "tasa_millar": 0.0024,
         "periodicidad": "anual",
@@ -12,7 +12,7 @@
       },
       {
         "grupo": "urbano",
-        "clave": "urbano_sin_edificaciones",
+        "clave": "urbano_suburbano_sin_edificaciones",
         "descripcion": "Inmuebles urbanos y suburbanos sin edificaciones",
         "tasa_millar": 0.004,
         "periodicidad": "anual",
@@ -20,7 +20,7 @@
       },
       {
         "grupo": "rustico",
-        "clave": "rustico",
+        "clave": "rustico_general",
         "descripcion": "Inmuebles rústicos",
         "tasa_millar": 0.0018,
         "periodicidad": "anual",
@@ -28,7 +28,7 @@
       }
     ],
     "minimo_predial": null,
-    "comentarios": "Art. 4: además de las tasas generales, el texto incluye tasas diferenciadas para inmuebles 'que cuenten con un valor determinado o modificado' según el año de referencia (entrada en vigor; 2002-2017; anteriores a 2002 hasta 1993; anteriores a 1993), expresadas como tasas al millar. El OCR está deteriorado en ese apartado y no permite reconstruir con certeza cada renglón; no se transcribe como tabla principal adicional porque el fragmento presenta ambigüedad textual. Art. 5 y 6 contienen tablas de valores unitarios y criterios de avalúo, no la mecánica de cálculo del impuesto."
+    "comentarios": "Artículo 4 establece tasas anuales al millar por categoría de inmueble: urbanos y suburbanos con edificaciones 2.4 al millar; urbanos y suburbanos sin edificaciones 4 al millar; rústicos 1.8 al millar. El texto también contiene referencias a inmuebles con valor determinado o modificado y tablas de valores unitarios/coeficientes para avalúo (arts. 5 y 6), pero esas tablas son de catastro y no se transcriben como mecánica del impuesto."
   },
   "_meta": {
     "fuente": "txt",
@@ -43,7 +43,7 @@
     "usado_vision": false,
     "tokens": {
       "input": 7727,
-      "output": 334,
+      "output": 310,
       "cached": 5888
     },
     "cvegeo": "11011",

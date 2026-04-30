@@ -1,79 +1,165 @@
 {
   "predial": {
-    "tipo_esquema": "progresivo",
+    "tipo_esquema": "mixto",
     "tabla": [
       {
         "n_rango": 1,
         "inferior": 0.0,
         "superior": 161825.0,
-        "cuota_fija": 0.0,
-        "tasa_marginal": 0.0024
+        "columnas": [
+          {
+            "nombre": "urbano_suburbano_con_edificaciones",
+            "valor": 0.0024,
+            "tipo": "tasa_marginal",
+            "unidad": "porcentaje"
+          },
+          {
+            "nombre": "urbano_suburbano_sin_edificaciones",
+            "valor": 0.0045,
+            "tipo": "tasa_marginal",
+            "unidad": "porcentaje"
+          },
+          {
+            "nombre": "rustico",
+            "valor": 0.0018,
+            "tipo": "tasa_marginal",
+            "unidad": "porcentaje"
+          }
+        ]
       },
       {
         "n_rango": 2,
-        "inferior": 161825.01,
+        "inferior": 161825.0,
         "superior": 600000.0,
-        "cuota_fija": 388.38,
-        "tasa_marginal": 0.0026
+        "columnas": [
+          {
+            "nombre": "urbano_suburbano_con_edificaciones",
+            "valor": 388.38,
+            "tipo": "cuota_fija",
+            "unidad": "pesos"
+          },
+          {
+            "nombre": "urbano_suburbano_con_edificaciones",
+            "valor": 0.0026,
+            "tipo": "tasa_marginal",
+            "unidad": "porcentaje"
+          }
+        ]
       },
       {
         "n_rango": 3,
-        "inferior": 600000.01,
+        "inferior": 600000.0,
         "superior": 1200000.0,
-        "cuota_fija": 527.63,
-        "tasa_marginal": 0.002625
+        "columnas": [
+          {
+            "nombre": "urbano_suburbano_con_edificaciones",
+            "valor": 527.63,
+            "tipo": "cuota_fija",
+            "unidad": "pesos"
+          },
+          {
+            "nombre": "urbano_suburbano_con_edificaciones",
+            "valor": 0.002625,
+            "tipo": "tasa_marginal",
+            "unidad": "porcentaje"
+          }
+        ]
       },
       {
         "n_rango": 4,
-        "inferior": 1200000.01,
+        "inferior": 1200000.0,
         "superior": 2400000.0,
-        "cuota_fija": 3102.63,
-        "tasa_marginal": 0.00265
+        "columnas": [
+          {
+            "nombre": "urbano_suburbano_con_edificaciones",
+            "valor": 3102.63,
+            "tipo": "cuota_fija",
+            "unidad": "pesos"
+          },
+          {
+            "nombre": "urbano_suburbano_con_edificaciones",
+            "valor": 0.00265,
+            "tipo": "tasa_marginal",
+            "unidad": "porcentaje"
+          }
+        ]
       },
       {
         "n_rango": 5,
-        "inferior": 2400000.01,
+        "inferior": 2400000.0,
         "superior": 4800000.0,
-        "cuota_fija": 8282.63,
-        "tasa_marginal": 0.002675
+        "columnas": [
+          {
+            "nombre": "urbano_suburbano_con_edificaciones",
+            "valor": 8282.63,
+            "tipo": "cuota_fija",
+            "unidad": "pesos"
+          },
+          {
+            "nombre": "urbano_suburbano_con_edificaciones",
+            "valor": 0.002675,
+            "tipo": "tasa_marginal",
+            "unidad": "porcentaje"
+          }
+        ]
       },
       {
         "n_rango": 6,
-        "inferior": 4800000.01,
+        "inferior": 4800000.0,
         "superior": 9600000.0,
-        "cuota_fija": 12702.63,
-        "tasa_marginal": 0.0027
+        "columnas": [
+          {
+            "nombre": "urbano_suburbano_con_edificaciones",
+            "valor": 12702.63,
+            "tipo": "cuota_fija",
+            "unidad": "pesos"
+          },
+          {
+            "nombre": "urbano_suburbano_con_edificaciones",
+            "valor": 0.0027,
+            "tipo": "tasa_marginal",
+            "unidad": "porcentaje"
+          }
+        ]
       },
       {
         "n_rango": 7,
-        "inferior": 9600000.01,
+        "inferior": 9600000.0,
         "superior": null,
-        "cuota_fija": 25662.63,
-        "tasa_marginal": 0.002725
+        "columnas": [
+          {
+            "nombre": "urbano_suburbano_con_edificaciones",
+            "valor": 25662.63,
+            "tipo": "cuota_fija",
+            "unidad": "pesos"
+          },
+          {
+            "nombre": "urbano_suburbano_con_edificaciones",
+            "valor": 0.002725,
+            "tipo": "tasa_marginal",
+            "unidad": "porcentaje"
+          }
+        ]
       }
     ],
-    "minimo_predial": {
-      "monto": 0.0,
-      "periodicidad": "anual",
-      "unidad": "pesos"
-    },
-    "comentarios": "Art. 4: se transcribe la fracción I (urbanos y suburbanos con edificaciones) como tabla principal progresiva. El texto también contiene tarifas paralelas para: fracción II urbanos y suburbanos sin edificaciones; fracción III inmuebles rústicos. No se incluyen en la tabla principal para evitar mezclar tarifas paralelas con brackets distintos."
+    "minimo_predial": null,
+    "comentarios": "Se toma como tabla principal la fracción I para inmuebles urbanos y suburbanos con edificaciones, que contiene brackets de valor fiscal con cuota fija en pesos más tasa marginal. Se clasifica como mixto porque la tabla principal combina dos unidades dentro de cada bracket (pesos y porcentaje), conforme al esquema de FilaMixta. Tarifas paralelas no incluidas en la tabla principal: fracción II para inmuebles urbanos y suburbanos sin edificaciones: 0-86306.67 tasa 0.00450000 y de 86306.67 a 400000 cuota fija 388.38 + tasa 0.00490000; 400000-800000 cuota 1925.47 + tasa 0.00495000; 800000-1600000 cuota 3905.47 + tasa 0.00500000; 1600000-3200000 cuota 7905.47 + tasa 0.00505000; 3200000-6400000 cuota 15985.47 + tasa 0.00510000; 6400000 en adelante cuota 32305.47 + tasa 0.00515000. Fracción III para inmuebles rústicos: 0-215766.67 tasa 0.00180000 y de 215766.67 a 500000 cuota fija 388.38 + tasa 0.00200000; 500000-1000000 cuota 956.84 + tasa 0.00202500; 1000000-2000000 cuota 1969.34 + tasa 0.00205000; 2000000-4000000 cuota 4019.34 + tasa 0.00207500; 4000000-8000000 cuota 8169.34 + tasa 0.00210000; 8000000 en adelante cuota 16569.34 + tasa 0.00212500. Los límites se normalizaron a contiguos sin centavos de separación."
   },
   "_meta": {
     "fuente": "txt",
-    "modelo": "gpt-5.4-mini"
+    "modelo": "gpt-5.4"
   },
   "_meta_v2": {
-    "intentos": 2,
+    "intentos": 3,
     "requiere_revision": false,
-    "escalado": false,
-    "razon": null,
+    "escalado": true,
+    "razon": "escalado_a_gpt-5.4_tras_2x_mini_fallido",
     "usado_reocr": false,
     "usado_vision": false,
     "tokens": {
-      "input": 24966,
-      "output": 1537,
-      "cached": 11776
+      "input": 37819,
+      "output": 3217,
+      "cached": 17664
     },
     "cvegeo": "11015",
     "estado": "guanajuato",

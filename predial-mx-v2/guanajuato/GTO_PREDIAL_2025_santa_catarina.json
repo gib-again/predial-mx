@@ -3,7 +3,7 @@
     "tipo_esquema": "cuota_fija_simple",
     "tabla": [
       {
-        "descripcion": "cuota mínima anual del impuesto predial",
+        "descripcion": "Cuota mínima anual del impuesto predial 2025",
         "monto": 294.51,
         "periodicidad": "anual",
         "unidad": "pesos"
@@ -15,7 +15,7 @@
       "periodicidad": "anual",
       "unidad": "pesos"
     },
-    "comentarios": "Artículo 32 establece únicamente una cuota mínima anual del impuesto predial para 2025. En el texto proporcionado no aparece tabla de tarifas, tasas al millar, rangos de valor catastral ni otra mecánica principal de cálculo; por ello se captura como cuota fija simple."
+    "comentarios": "Artículo 32 establece únicamente la cuota mínima anual del impuesto predial para 2025. En el texto proporcionado no aparece tabla de tasas o brackets de cálculo del predial; sólo se observa la cuota mínima."
   },
   "_meta": {
     "fuente": "txt",
@@ -30,7 +30,7 @@
     "usado_vision": false,
     "tokens": {
       "input": 7175,
-      "output": 160,
+      "output": 148,
       "cached": 5888
     },
     "cvegeo": "11034",

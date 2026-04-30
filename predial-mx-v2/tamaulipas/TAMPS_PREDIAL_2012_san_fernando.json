@@ -5,16 +5,16 @@
       {
         "grupo": "urbano",
         "clave": "predios_urbanos_y_suburbanos",
-        "descripcion": "Predios urbanos y suburbanos sobre valor catastral",
-        "tasa_millar": 0.0016,
+        "descripcion": "Predios urbanos y suburbanos sobre valor catastral; la ley prevé aumentos específicos para supuestos de no edificado o edificación menor a la quinta parte del terreno.",
+        "tasa_millar": 1.6,
         "periodicidad": "anual",
         "cuota_fija_adicional": null
       },
       {
-        "grupo": "rústico",
+        "grupo": "rustico",
         "clave": "predios_rusticos",
-        "descripcion": "Predios rústicos sobre valor catastral",
-        "tasa_millar": 0.0015,
+        "descripcion": "Predios rústicos sobre valor catastral.",
+        "tasa_millar": 1.5,
         "periodicidad": "anual",
         "cuota_fija_adicional": null
       }
@@ -22,9 +22,9 @@
     "minimo_predial": {
       "monto": 3.0,
       "periodicidad": "anual",
-      "unidad": "salarios"
+      "unidad": "vsm"
     },
-    "comentarios": "Art. 6: para predios urbanos y suburbanos se aplica 1.6 al millar anual sobre valor catastral. Art. 7: predios rústicos pagan 1.5 al millar anual sobre valor catastral. Art. 8 establece un mínimo anual de 3 salarios en zonas urbanas 6, 7 y 8 y en predios rústicos de hasta 16 hectáreas; y de 5 salarios mínimos en zonas urbanas 1 a 5 y en predios rústicos mayores de 16-01 hectáreas."
+    "comentarios": "Art. 6: para predios urbanos no edificados la tasa del artículo se aumenta en 100%; para predios urbanos con edificación inferior a la quinta parte del valor del terreno se aumenta en 50%; para predios urbanos no edificados de fraccionamientos autorizados no se aplica el aumento del 100%; y los adquirentes de lotes provenientes de fraccionamientos que no construyan en dos años pagan sobre la tasa del 100% al término de ese tiempo. Art. 8: el impuesto anual no podrá ser inferior a tres salarios mínimos en zonas urbanas 6, 7 y 8 y en predios rústicos de hasta 16 hectáreas, y no menos de cinco salarios mínimos en zonas urbanas 1 a 5 y en predios rústicos mayores de 16-01 hectáreas."
   },
   "_meta": {
     "fuente": "txt",
@@ -39,8 +39,8 @@
     "usado_vision": false,
     "tokens": {
       "input": 6589,
-      "output": 300,
-      "cached": 5888
+      "output": 367,
+      "cached": 0
     },
     "cvegeo": "28035",
     "estado": "tamaulipas",

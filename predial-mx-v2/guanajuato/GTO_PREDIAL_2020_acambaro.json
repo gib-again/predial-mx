@@ -3,16 +3,16 @@
     "tipo_esquema": "tarifa_millar",
     "tabla": [
       {
-        "grupo": "urbano",
-        "clave": "urbano_con_edificaciones",
+        "grupo": "general",
+        "clave": "inmuebles_urbanos_y_suburbanos_con_edificaciones",
         "descripcion": "Inmuebles urbanos y suburbanos con edificaciones",
         "tasa_millar": 0.0024,
         "periodicidad": "anual",
         "cuota_fija_adicional": null
       },
       {
-        "grupo": "urbano",
-        "clave": "urbano_sin_edificaciones",
+        "grupo": "general",
+        "clave": "inmuebles_urbanos_y_suburbanos_sin_edificaciones",
         "descripcion": "Inmuebles urbanos y suburbanos sin edificaciones",
         "tasa_millar": 0.0045,
         "periodicidad": "anual",
@@ -20,7 +20,7 @@
       },
       {
         "grupo": "rustico",
-        "clave": "rustico",
+        "clave": "inmuebles_rusticos",
         "descripcion": "Inmuebles rústicos",
         "tasa_millar": 0.0018,
         "periodicidad": "anual",
@@ -28,7 +28,7 @@
       }
     ],
     "minimo_predial": null,
-    "comentarios": "Art. 4: la mecánica del predial para 2020 es una tasa al millar anual sobre el valor determinado o modificado del inmueble, con tarifas diferenciadas por tipo de inmueble. El texto muestra también tasas históricas para periodos anteriores (2002-2019, anterior a 2002 y hasta 1993, anterior a 1993), pero se transcribe sólo la tarifa vigente para 2020. Art. 5 y 6 contienen tablas de valores unitarios y criterios de avalúo, no la mecánica tarifaria del impuesto."
+    "comentarios": "Art. 4. Se transcriben las tasas anuales aplicables a inmuebles con valor determinado o modificado: urbanos y suburbanos con edificaciones 2.4 al millar, urbanos y suburbanos sin edificaciones 4.5 al millar, e inmuebles rústicos 1.8 al millar. El texto también contiene tasas históricas para inmuebles valuados con anterioridad a 2002 y a 1993, pero se omiten por tratarse de tarifas alternativas no vigentes para el ejercicio 2020 dentro del apartado principal transcrito. Art. 5 desarrolla valores unitarios catastrales y avalúos, sin constituir mecánica de cálculo del impuesto predial."
   },
   "_meta": {
     "fuente": "txt",
@@ -43,7 +43,7 @@
     "usado_vision": false,
     "tokens": {
       "input": 8550,
-      "output": 312,
+      "output": 361,
       "cached": 5888
     },
     "cvegeo": "11002",

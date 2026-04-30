@@ -4,17 +4,17 @@
     "tabla": [
       {
         "grupo": "urbano",
-        "clave": "urbano_con_edificaciones",
+        "clave": "con_edificaciones",
         "descripcion": "Inmuebles urbanos y suburbanos con edificaciones",
-        "tasa_millar": 0.0024,
+        "tasa_millar": 2.4,
         "periodicidad": "anual",
         "cuota_fija_adicional": null
       },
       {
         "grupo": "urbano",
-        "clave": "urbano_sin_edificaciones",
+        "clave": "sin_edificaciones",
         "descripcion": "Inmuebles urbanos y suburbanos sin edificaciones",
-        "tasa_millar": 0.0045,
+        "tasa_millar": 4.5,
         "periodicidad": "anual",
         "cuota_fija_adicional": null
       },
@@ -22,13 +22,13 @@
         "grupo": "rustico",
         "clave": "rustico",
         "descripcion": "Inmuebles rústicos",
-        "tasa_millar": 0.0018,
+        "tasa_millar": 1.8,
         "periodicidad": "anual",
         "cuota_fija_adicional": null
       }
     ],
     "minimo_predial": null,
-    "comentarios": "Art. 4: el impuesto predial se causa y liquida anualmente con tasas diferenciadas por tipo de inmueble y condición de edificación. Se transcriben solo las tasas aplicables para 2019: inmuebles urbanos y suburbanos con edificaciones 2.4 al millar; sin edificaciones 4.5 al millar; inmuebles rústicos 1.8 al millar. El texto mostrado también contiene tasas históricas para años anteriores, que no se incluyen."
+    "comentarios": "Artículo 4 establece tasas anuales al millar por categoría de predio y por momento de entrada en vigor de la ley / años 2002-2018 / anterior a 2002 hasta 1993. Se transcribe la tarifa principal vigente en el texto proporcionado como catálogo categórico de tasas al millar. El texto recibido contiene además referencias a otros artículos y a un municipio distinto en el encabezado, pero la mecánica predial extraíble aquí es la tabla de tasas por tipo de inmueble y estado de edificación."
   },
   "_meta": {
     "fuente": "pdf_reocr",
@@ -43,7 +43,7 @@
     "usado_vision": false,
     "tokens": {
       "input": 16822,
-      "output": 409,
+      "output": 429,
       "cached": 11776
     },
     "cvegeo": "11005",

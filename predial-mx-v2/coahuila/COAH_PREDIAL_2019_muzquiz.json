@@ -32,7 +32,7 @@
       "periodicidad": "bimestral",
       "unidad": "pesos"
     },
-    "comentarios": "Art. 2: tasas diferenciadas por tipo de predio sobre la base gravable del Código Financiero; predios urbanos 5 al millar anual, predios rústicos 3 al millar anual y lotes baldíos con maleza 7 al millar. Se ignoran incentivos por pago anticipado y reducciones por edad/discapacidad por no formar parte de la mecánica base del impuesto."
+    "comentarios": "Art. 2: tasa al millar anual por categoría de predio: urbanos 5 al millar, rústicos 3 al millar y lotes baldíos con maleza 7 al millar. Se documenta el mínimo predial de $19.64 por bimestre. Se ignoran incentivos, descuentos y bonificaciones por pago anticipado."
   },
   "_meta": {
     "fuente": "txt",
@@ -47,7 +47,7 @@
     "usado_vision": false,
     "tokens": {
       "input": 6353,
-      "output": 294,
+      "output": 283,
       "cached": 5888
     },
     "cvegeo": "05020",

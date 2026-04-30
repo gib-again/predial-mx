@@ -3,80 +3,32 @@
     "tipo_esquema": "tarifa_millar",
     "tabla": [
       {
-        "grupo": "urbano",
-        "clave": "urbanos_y_suburbanos_con_edificaciones",
-        "descripcion": "Inmuebles urbanos y suburbanos con edificaciones, a la entrada en vigor de la ley",
-        "tasa_millar": 0.0015,
-        "periodicidad": "anual",
-        "cuota_fija_adicional": null
-      },
-      {
-        "grupo": "urbano",
-        "clave": "urbanos_y_suburbanos_con_edificaciones_2002_2013",
-        "descripcion": "Inmuebles urbanos y suburbanos con edificaciones, durante los años 2002 y hasta 2013 inclusive",
+        "grupo": "general",
+        "clave": "urbanos_suburbanos_con_edificaciones",
+        "descripcion": "Inmuebles urbanos y suburbanos con edificaciones; tasa por año de valuación de la construcción/terreno.",
         "tasa_millar": 0.0045,
         "periodicidad": "anual",
         "cuota_fija_adicional": null
       },
       {
-        "grupo": "urbano",
-        "clave": "urbanos_y_suburbanos_con_edificaciones_1993_2001",
-        "descripcion": "Inmuebles urbanos y suburbanos con edificaciones, con anterioridad al año 2002 y hasta 1993 inclusive",
-        "tasa_millar": 0.015,
-        "periodicidad": "anual",
-        "cuota_fija_adicional": null
-      },
-      {
-        "grupo": "urbano",
-        "clave": "urbanos_y_suburbanos_con_edificaciones_anterior_1993",
-        "descripcion": "Inmuebles urbanos y suburbanos con edificaciones, con anterioridad al año 1993",
-        "tasa_millar": 0.013,
-        "periodicidad": "anual",
-        "cuota_fija_adicional": null
-      },
-      {
-        "grupo": "urbano",
-        "clave": "urbanos_y_suburbanos_sin_edificaciones",
-        "descripcion": "Inmuebles urbanos y suburbanos sin edificaciones, a la entrada en vigor de la ley",
+        "grupo": "general",
+        "clave": "urbanos_suburbanos_sin_edificaciones",
+        "descripcion": "Inmuebles urbanos y suburbanos sin edificaciones; tasa por año de valuación de la construcción/terreno.",
         "tasa_millar": 0.0045,
         "periodicidad": "anual",
         "cuota_fija_adicional": null
       },
       {
-        "grupo": "urbano",
-        "clave": "urbanos_y_suburbanos_sin_edificaciones_2002_2013",
-        "descripcion": "Inmuebles urbanos y suburbanos sin edificaciones, durante los años 2002 y hasta 2013 inclusive",
-        "tasa_millar": 0.0045,
-        "periodicidad": "anual",
-        "cuota_fija_adicional": null
-      },
-      {
-        "grupo": "urbano",
-        "clave": "urbanos_y_suburbanos_sin_edificaciones_1993_2001",
-        "descripcion": "Inmuebles urbanos y suburbanos sin edificaciones, con anterioridad al año 2002 y hasta 1993 inclusive",
-        "tasa_millar": 0.006,
-        "periodicidad": "anual",
-        "cuota_fija_adicional": null
-      },
-      {
-        "grupo": "urbano",
-        "clave": "urbanos_y_suburbanos_sin_edificaciones_anterior_1993",
-        "descripcion": "Inmuebles urbanos y suburbanos sin edificaciones, con anterioridad al año 1993",
-        "tasa_millar": 0.012,
-        "periodicidad": "anual",
-        "cuota_fija_adicional": null
-      },
-      {
-        "grupo": "rustico",
+        "grupo": "general",
         "clave": "rusticos",
-        "descripcion": "Inmuebles rústicos",
+        "descripcion": "Inmuebles rústicos; tasa anual sobre valor catastral.",
         "tasa_millar": 0.0018,
         "periodicidad": "anual",
         "cuota_fija_adicional": null
       }
     ],
     "minimo_predial": null,
-    "comentarios": "Art. 4 establece tasas al millar diferenciadas por categoría y antigüedad/condición de edificación para inmuebles urbanos y suburbanos, así como una tasa al millar para inmuebles rústicos. Art. 5 y 6 contienen valores unitarios y criterios de valuación, no la mecánica de cálculo de la tasa del impuesto."
+    "comentarios": "Art. 4 establece tasas anuales diferenciadas por antigüedad del inmueble para inmuebles urbanos y suburbanos: 1) a la entrada en vigor de la Ley: 4.5 al millar con edificaciones / 4.5 al millar sin edificaciones; 2) durante 2002 a 2013 inclusive: 4.5 al millar con edificaciones / 4.5 al millar sin edificaciones; 3) con anterioridad a 2002 y hasta 1993 inclusive: 1.5 al millar con edificaciones / 6 al millar sin edificaciones; 4) con anterioridad a 1993: 13 al millar con edificaciones / 12 al millar sin edificaciones. Además, para inmuebles rústicos la tasa es 1.8 al millar anual. Se toma como tabla principal la tarifa por categorías y se documentan las tasas paralelas por antigüedad en comentarios por tratarse de variantes adicionales dentro del artículo."
   },
   "_meta": {
     "fuente": "txt",
@@ -91,7 +43,7 @@
     "usado_vision": false,
     "tokens": {
       "input": 8689,
-      "output": 737,
+      "output": 444,
       "cached": 5888
     },
     "cvegeo": "11009",

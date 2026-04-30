@@ -4,39 +4,39 @@
     "tabla": [
       {
         "grupo": "urbano",
-        "clave": "urbanos_suburbanos_con_edificaciones",
-        "descripcion": "Inmuebles urbanos y suburbanos con edificaciones, según antigüedad del valor inmueble determinado o modificado",
-        "tasa_millar": 0.0024,
+        "clave": "urbano_suburbano_con_edificaciones",
+        "descripcion": "Inmuebles urbanos y suburbanos con edificaciones, según antigüedad del valor determinado o modificado.",
+        "tasa_millar": 0.0018,
         "periodicidad": "anual",
         "cuota_fija_adicional": null
       },
       {
         "grupo": "urbano",
-        "clave": "urbanos_suburbanos_sin_edificaciones",
-        "descripcion": "Inmuebles urbanos y suburbanos sin edificaciones, según antigüedad del valor inmueble determinado o modificado",
-        "tasa_millar": 0.0045,
+        "clave": "urbano_suburbano_sin_edificaciones",
+        "descripcion": "Inmuebles urbanos y suburbanos sin edificaciones, según antigüedad del valor determinado o modificado.",
+        "tasa_millar": 0.0024,
         "periodicidad": "anual",
         "cuota_fija_adicional": null
       },
       {
         "grupo": "rustico",
-        "clave": "rusticos_con_edificaciones",
-        "descripcion": "Inmuebles rústicos con edificaciones, según antigüedad del valor inmueble determinado o modificado",
-        "tasa_millar": 0.0018,
+        "clave": "rustico_con_edificaciones",
+        "descripcion": "Inmuebles rústicos con edificaciones, según antigüedad del valor determinado o modificado.",
+        "tasa_millar": 0.006,
         "periodicidad": "anual",
         "cuota_fija_adicional": null
       },
       {
         "grupo": "rustico",
-        "clave": "rusticos_sin_edificaciones",
-        "descripcion": "Inmuebles rústicos sin edificaciones, según antigüedad del valor inmueble determinado o modificado",
-        "tasa_millar": 0.0018,
+        "clave": "rustico_sin_edificaciones",
+        "descripcion": "Inmuebles rústicos sin edificaciones, según antigüedad del valor determinado o modificado.",
+        "tasa_millar": 0.015,
         "periodicidad": "anual",
         "cuota_fija_adicional": null
       }
     ],
     "minimo_predial": null,
-    "comentarios": "Art. 4: esquema de tasas al millar por tipo de inmueble y antigüedad del valor inmueble determinado o modificado. Tarifas paralelas: para inmuebles urbanos y suburbanos con edificación y sin edificación, y para inmuebles rústicos con/sin edificaciones. No se incorporan valores unitarios de catastro del Art. 5 porque no forman parte de la mecánica de cálculo del impuesto."
+    "comentarios": "Art. 4 establece tasas anuales al millar por antigüedad del valor catastral/modificado. Las tarifas son paralelas por tipo de inmueble: urbanos y suburbanos con/sin edificaciones, y rústicos con/sin edificaciones. Se transcribe únicamente la mecánica del impuesto predial; Art. 5 y 6 contienen valores unitarios para avalúo/catastro, no la tarifa del impuesto."
   },
   "_meta": {
     "fuente": "txt",
@@ -51,7 +51,7 @@
     "usado_vision": false,
     "tokens": {
       "input": 8434,
-      "output": 394,
+      "output": 396,
       "cached": 5888
     },
     "cvegeo": "11001",

@@ -3,32 +3,32 @@
     "tipo_esquema": "tarifa_millar",
     "tabla": [
       {
-        "grupo": "urbano",
-        "clave": "urbano_con_edificacion",
-        "descripcion": "Inmuebles urbanos y suburbanos con edificación, conforme a la ley",
-        "tasa_millar": 0.0024,
+        "grupo": "general",
+        "clave": "inmuebles_urbanos_y_suburbanos_con_edificacion",
+        "descripcion": "Inmuebles urbanos y suburbanos con edificación",
+        "tasa_millar": 2.4,
         "periodicidad": "anual",
         "cuota_fija_adicional": null
       },
       {
-        "grupo": "urbano",
-        "clave": "urbano_sin_edificacion",
-        "descripcion": "Inmuebles urbanos y suburbanos sin edificaciones, conforme a la ley",
-        "tasa_millar": 0.0045,
+        "grupo": "general",
+        "clave": "inmuebles_urbanos_y_suburbanos_sin_edificacion",
+        "descripcion": "Inmuebles urbanos y suburbanos sin edificaciones",
+        "tasa_millar": 4.5,
         "periodicidad": "anual",
         "cuota_fija_adicional": null
       },
       {
         "grupo": "rustico",
-        "clave": "rustico",
-        "descripcion": "Inmuebles rústicos, conforme a la ley",
-        "tasa_millar": 0.0018,
+        "clave": "inmuebles_rusticos",
+        "descripcion": "Inmuebles rústicos",
+        "tasa_millar": 1.8,
         "periodicidad": "anual",
         "cuota_fija_adicional": null
       }
     ],
     "minimo_predial": null,
-    "comentarios": "Artículo 4 establece tasas anuales al millar por tipo de inmueble, con mecánica principal por categorías. El texto OCR muestra filas para inmuebles urbanos y suburbanos con edificación (2.4 al millar), sin edificaciones (4.5 al millar) e inmuebles rústicos (1.8 al millar). También aparece una referencia histórica/por antigüedad con tasas 15, 6, 13 y 12 al millar, pero el texto está fragmentado y no se integra como tabla principal por falta de estructura confiable."
+    "comentarios": "Artículo 4 establece el impuesto predial anual con tarifas al millar por tipo de inmueble: urbanos y suburbanos con edificación 2.4 al millar, urbanos y suburbanos sin edificaciones 4.5 al millar, y rústicos 1.8 al millar. El texto OCR del artículo 4 está fragmentado, pero la mecánica tarifaria principal es categórica por tipo de predio y tasa al millar; no se observan rangos de valor catastral en la mecánica del impuesto. Las tablas de valores unitarios de terrenos y construcciones de los artículos 5 y 6 son valuación catastral y no integran la tarifa del predial."
   },
   "_meta": {
     "fuente": "txt",
@@ -43,7 +43,7 @@
     "usado_vision": false,
     "tokens": {
       "input": 8464,
-      "output": 326,
+      "output": 361,
       "cached": 5888
     },
     "cvegeo": "11040",

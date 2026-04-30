@@ -3,7 +3,7 @@
     "tipo_esquema": "tarifa_millar",
     "tabla": [
       {
-        "grupo": "general",
+        "grupo": "urbano",
         "clave": "predios_urbanos_con_edificaciones",
         "descripcion": "Predios urbanos con edificaciones",
         "tasa_millar": 0.0016,
@@ -11,7 +11,7 @@
         "cuota_fija_adicional": null
       },
       {
-        "grupo": "general",
+        "grupo": "urbano",
         "clave": "predios_suburbanos_con_edificaciones",
         "descripcion": "Predios suburbanos con edificaciones",
         "tasa_millar": 0.0016,
@@ -19,7 +19,7 @@
         "cuota_fija_adicional": null
       },
       {
-        "grupo": "general",
+        "grupo": "rustico",
         "clave": "predios_rusticos",
         "descripcion": "Predios rústicos",
         "tasa_millar": 0.0016,
@@ -27,15 +27,15 @@
         "cuota_fija_adicional": null
       },
       {
-        "grupo": "general",
-        "clave": "predios_urbanos_y_suburbanos_sin_edificacion_baldios",
+        "grupo": "urbano",
+        "clave": "predios_urbanos_y_suburbanos_sin_edificaciones_baldios",
         "descripcion": "Predios urbanos y suburbanos sin edificaciones (baldíos)",
         "tasa_millar": 0.0016,
         "periodicidad": "anual",
         "cuota_fija_adicional": null
       },
       {
-        "grupo": "industrial",
+        "grupo": "otro",
         "clave": "predios_urbanos_de_uso_industrial",
         "descripcion": "Predios urbanos de uso industrial",
         "tasa_millar": 0.0016,
@@ -48,7 +48,7 @@
       "periodicidad": "anual",
       "unidad": "uma"
     },
-    "comentarios": "Art. 10: la mecánica principal es una tarifa al millar sobre valor catastral con 5 categorías, todas a 1.6 al millar anual. El texto añade reglas de aumento: predios urbanos no edificados aumentan la tasa en 100% y predios urbanos con edificación cuyo valor sea inferior a la quinta parte del valor del terreno aumentan la tasa en 50%; se transcriben como comentarios por no venir como tabla separada. Mínimo predial: no menos de 3 UMA en zonas urbanas 6, 7 y 8 y en predios rústicos de hasta 16 ha; no menos de 5 UMA en zonas urbanas 1 a 5 y en predios rústicos mayores de 16-01 ha."
+    "comentarios": "Art. 10: todas las categorías listadas causan 1.6 al millar anual sobre valor catastral. El texto también indica aumentos de 100% para predios urbanos no edificados y de 50% para predios urbanos con edificación inferior a la quinta parte del valor del terreno; se transcriben como disposiciones textuales porque no vienen estructuradas en una tabla separada. Mínimo anual: 3 UMA en zonas urbanas 6, 7 y 8 y en predios rústicos de hasta 16 hectáreas; 5 UMA en zonas urbanas 1, 2, 3, 4 y 5 y en predios rústicos mayores de 16-01 hectáreas."
   },
   "_meta": {
     "fuente": "txt",
@@ -63,7 +63,7 @@
     "usado_vision": false,
     "tokens": {
       "input": 6624,
-      "output": 490,
+      "output": 488,
       "cached": 5888
     },
     "cvegeo": "28035",

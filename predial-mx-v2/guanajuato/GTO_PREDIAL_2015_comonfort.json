@@ -5,30 +5,30 @@
       {
         "grupo": "urbano",
         "clave": "con_edificaciones",
-        "descripcion": "Inmuebles urbanos y suburbanos con edificaciones; tasa anual según antigüedad del valor determinado o modificado.",
-        "tasa_millar": 0.0045,
+        "descripcion": "Inmuebles urbanos y suburbanos con edificaciones; tasa anual por antigüedad del valor determinado o modificado.",
+        "tasa_millar": 0.0054,
         "periodicidad": "anual",
         "cuota_fija_adicional": null
       },
       {
         "grupo": "urbano",
         "clave": "sin_edificaciones",
-        "descripcion": "Inmuebles urbanos y suburbanos sin edificaciones; tasa anual según antigüedad del valor determinado o modificado.",
-        "tasa_millar": 0.0035,
+        "descripcion": "Inmuebles urbanos y suburbanos sin edificaciones; tasa anual por antigüedad del valor determinado o modificado.",
+        "tasa_millar": 0.0045,
         "periodicidad": "anual",
         "cuota_fija_adicional": null
       },
       {
         "grupo": "rustico",
         "clave": "general",
-        "descripcion": "Inmuebles rústicos; tasa anual según antigüedad del valor determinado o modificado.",
+        "descripcion": "Inmuebles rústicos; tasa anual.",
         "tasa_millar": 0.0018,
         "periodicidad": "anual",
         "cuota_fija_adicional": null
       }
     ],
     "minimo_predial": null,
-    "comentarios": "Art. 4 establece tasas anuales por grupo y antigüedad del valor catastral/modificado: para inmuebles urbanos y suburbanos con edificaciones, 4.5 al millar; sin edificaciones, 3.5 al millar; y para inmuebles rústicos, 1.8 al millar. La tabla del artículo es categórica por tipo de inmueble y no presenta rangos de valor catastral, por lo que se clasifica como tarifa_millar. Los artículos 5 y 6 sólo contienen valores unitarios y criterios de valuación, no la mecánica de cálculo del impuesto."
+    "comentarios": "Artículo 4 contiene una tabla de tasas al millar diferenciadas por grupo de predio y por antigüedad del valor (a la entrada en vigor, 2002-2014, anterior a 2002 y anterior a 1993). La mecánica principal se transcribe como tarifa_millar porque son categorías con tasa al millar, no rangos de valor catastral. Artículo 5 y 6 sólo establecen valores unitarios y criterios de valuación para determinar la base, no una tarifa distinta."
   },
   "_meta": {
     "fuente": "txt",
@@ -43,7 +43,7 @@
     "usado_vision": false,
     "tokens": {
       "input": 8693,
-      "output": 356,
+      "output": 325,
       "cached": 5888
     },
     "cvegeo": "11009",

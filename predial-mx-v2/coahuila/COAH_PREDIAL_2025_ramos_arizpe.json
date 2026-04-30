@@ -4,7 +4,7 @@
     "tabla": [
       {
         "grupo": "urbano",
-        "clave": "industrial_con_o_sin_edificacion",
+        "clave": "industrial",
         "descripcion": "Predios urbanos industriales con o sin edificación",
         "tasa_millar": 0.005,
         "periodicidad": "anual",
@@ -13,7 +13,7 @@
       {
         "grupo": "urbano",
         "clave": "comercial_con_edificacion",
-        "descripcion": "Predios urbanos comerciales con edificación",
+        "descripcion": "Predios urbanos comerciales con edificación (no se consideran edificaciones las cercas)",
         "tasa_millar": 0.005,
         "periodicidad": "anual",
         "cuota_fija_adicional": null
@@ -29,7 +29,7 @@
       {
         "grupo": "urbano",
         "clave": "residencial_interes_social_popular_con_edificacion",
-        "descripcion": "Predios urbanos residenciales, de interés social y populares con edificación",
+        "descripcion": "Predios urbanos residenciales, de interés social y populares con edificación (no se consideran edificaciones las cercas)",
         "tasa_millar": 0.005,
         "periodicidad": "anual",
         "cuota_fija_adicional": null
@@ -80,7 +80,7 @@
       "periodicidad": "anual",
       "unidad": "pesos"
     },
-    "comentarios": "Art. 2: tarifa al millar por categorías de predio (urbano/rústico y con/sin edificación). Se documenta el mínimo predial de $390 anual y el mínimo bimestral de $65, pero los incentivos/bonificaciones del artículo 2 fracción IX y el artículo 3 no se consideran parte de la mecánica base de cálculo. No se integra la tasa preferencial de 1 al millar para instituciones educativas no públicas ni los incentivos por empleo/discapacidad por tratarse de beneficios fiscales, no de la tarifa base."
+    "comentarios": "Art. 2 fraccs. I-VII: tarifa principal categórica al millar sobre valor catastral, con diferencias por uso y condición de edificación. Art. 2 fracc. VIII establece mínimo predial de $390 anual y $65 bimestral. Art. 2 fracc. IX contiene incentivos/bonificaciones por pronto pago, pensionados, predios prestados al municipio, instituciones educativas privadas y fraccionamientos en desarrollo; no se incorporan a la mecánica de cálculo. Art. 3 establece incentivos fiscales por generación de empleos y por discapacidad, aplicables mediante convenio; se omiten por ser beneficios y no tarifa base."
   },
   "_meta": {
     "fuente": "txt",
@@ -95,7 +95,7 @@
     "usado_vision": false,
     "tokens": {
       "input": 7617,
-      "output": 695,
+      "output": 730,
       "cached": 5888
     },
     "cvegeo": "05027",

@@ -3,32 +3,32 @@
     "tipo_esquema": "tarifa_millar",
     "tabla": [
       {
-        "grupo": "urbano",
-        "clave": "inmuebles_urbanos_con_edificaciones",
-        "descripcion": "Inmuebles urbanos y suburbanos con edificaciones",
+        "grupo": "general",
+        "clave": "urbanos_suburbanos_con_edificaciones",
+        "descripcion": "Inmuebles urbanos y suburbanos con edificaciones a la entrada en vigor de la ley; años 2002 a 2023 inclusive; y con anterioridad al año 2002 y hasta 1993 inclusive.",
         "tasa_millar": 0.0024,
         "periodicidad": "anual",
         "cuota_fija_adicional": null
       },
       {
-        "grupo": "urbano",
-        "clave": "inmuebles_urbanos_sin_edificaciones",
-        "descripcion": "Inmuebles urbanos y suburbanos sin edificaciones",
+        "grupo": "general",
+        "clave": "urbanos_suburbanos_sin_edificaciones",
+        "descripcion": "Inmuebles urbanos y suburbanos sin edificaciones a la entrada en vigor de la ley; años 2002 a 2023 inclusive; y con anterioridad al año 2002 y hasta 1993 inclusive.",
         "tasa_millar": 0.0045,
         "periodicidad": "anual",
         "cuota_fija_adicional": null
       },
       {
         "grupo": "rustico",
-        "clave": "inmuebles_rusticos",
-        "descripcion": "Inmuebles rústicos",
+        "clave": "rusticos",
+        "descripcion": "Inmuebles rústicos a la entrada en vigor de la ley; años 2002 a 2023 inclusive; y con anterioridad al año 2002 y hasta 1993 inclusive.",
         "tasa_millar": 0.0018,
         "periodicidad": "anual",
         "cuota_fija_adicional": null
       }
     ],
     "minimo_predial": null,
-    "comentarios": "Artículo 4 establece tasas anuales al millar sobre el valor catastral para tres grupos: inmuebles urbanos y suburbanos con edificaciones (2.4 al millar), urbanos y suburbanos sin edificaciones (4.5 al millar) e inmuebles rústicos (1.8 al millar). El texto también muestra una tabla histórica de tasas por antigüedad/construcción, pero en el extracto proporcionado no se desarrolla como mecánica independiente para 2024; se conserva solo la tarifa categórica principal del artículo 4. Los artículos 5 a 6 contienen valores unitarios y criterios de valuación catastral, no mecánica tarifaria del impuesto."
+    "comentarios": "Art. 4 establece tasas anuales al millar por categoría de inmueble. Se transcriben las tasas vigentes para 2024 como las aplicables al ejercicio. No se estructuran en tabla de valores catastrales porque el artículo 4 usa categorías (urbanos/suburbanos con o sin edificaciones, y rústicos) con tasas distintas. El resto del texto son valores unitarios de suelo y construcción para avalúo (Arts. 5 y 6), no mecánica tarifaria del impuesto."
   },
   "_meta": {
     "fuente": "txt",
@@ -43,7 +43,7 @@
     "usado_vision": false,
     "tokens": {
       "input": 8893,
-      "output": 355,
+      "output": 414,
       "cached": 5888
     },
     "cvegeo": "11009",

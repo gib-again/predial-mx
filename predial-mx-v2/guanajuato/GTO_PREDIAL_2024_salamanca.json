@@ -1,26 +1,49 @@
 {
   "predial": {
-    "tipo_esquema": "otro_no_clasificado",
-    "categoria": "segmento_vacio",
-    "descripcion_estructural": "El texto proporcionado para la sección de Impuesto Predial no contiene tablas ni artículos tarifarios del predial; sólo aparecen páginas de portada/índice y encabezados de la ley, sin mecánica de cálculo extraíble. No es posible identificar tarifa, cuotas, rangos o tasas del impuesto predial en este fragmento.",
-    "tabla_cruda": [],
+    "tipo_esquema": "tarifa_millar",
+    "tabla": [
+      {
+        "grupo": "urbano",
+        "clave": "urbanos_y_suburbanos_con_edificaciones",
+        "descripcion": "Inmuebles urbanos y suburbanos con edificaciones",
+        "tasa_millar": 0.0025,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "urbano",
+        "clave": "urbanos_y_suburbanos_sin_edificaciones",
+        "descripcion": "Inmuebles urbanos y suburbanos sin edificaciones",
+        "tasa_millar": 0.0046,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "rustico",
+        "clave": "rusticos",
+        "descripcion": "Inmuebles rústicos",
+        "tasa_millar": 0.0026,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      }
+    ],
     "minimo_predial": null,
-    "comentarios": "Se recibió un segmento sin contenido tarifario utilizable para predial."
+    "comentarios": "El texto legible del apartado 'IMPUESTO PREDIAL — TASAS' muestra un catálogo de tasas al millar por categoría de inmueble: urbanos y suburbanos con edificaciones, urbanos y suburbanos sin edificaciones, y rústicos. Las páginas siguientes contienen valores unitarios de terreno y construcción para catastro, no una tabla adicional de tarifa del impuesto predial. Existen renglones OCRados con cifras como '8 al millar', '15 al millar', '5 al millar' y '13 al millar', pero aparecen sin encabezados ni estructura tarifaria verificable, por lo que no se integran a la tabla principal."
   },
   "_meta": {
     "fuente": "txt",
-    "modelo": "gpt-5.4-mini"
+    "modelo": "gpt-5.4"
   },
   "_meta_v2": {
-    "intentos": 1,
-    "requiere_revision": true,
-    "escalado": false,
-    "razon": "clasificado_como_otro_no_clasificado",
-    "usado_reocr": true,
-    "usado_vision": true,
+    "intentos": 3,
+    "requiere_revision": false,
+    "escalado": true,
+    "razon": "escalado_a_gpt-5.4_tras_2x_mini_fallido",
+    "usado_reocr": false,
+    "usado_vision": false,
     "tokens": {
-      "input": 33454,
-      "output": 477,
+      "input": 24596,
+      "output": 1468,
       "cached": 17664
     },
     "cvegeo": "11027",

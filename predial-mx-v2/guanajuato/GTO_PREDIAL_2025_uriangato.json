@@ -15,7 +15,7 @@
       "periodicidad": "anual",
       "unidad": "pesos"
     },
-    "comentarios": "Art. 39: establece una cuota mínima anual de $395.61 para el impuesto predial. Art. 40 regula el beneficio de tributar bajo cuota mínima para ciertos contribuyentes y señala que, si el valor del inmueble excede 40 UMA/año, sobre el excedente se aplicará la tasa que corresponda al pago normal; no se detalla en el texto una tabla adicional de cálculo del impuesto predial. Se ignoran bonificaciones y demás estímulos."
+    "comentarios": "Art. 39: se establece una cuota mínima anual de $395.61 pagadera dentro del primer bimestre. Art. 40 regula quiénes tributan bajo la cuota mínima para casas-habitación y señala un límite de valor fiscal (40 UMA al año) para ese beneficio; no se extrae como mecánica tarifaria principal. También se menciona una bonificación por pago anticipado, la cual se ignora conforme a la instrucción."
   },
   "_meta": {
     "fuente": "txt",
@@ -30,7 +30,7 @@
     "usado_vision": false,
     "tokens": {
       "input": 6671,
-      "output": 201,
+      "output": 195,
       "cached": 5888
     },
     "cvegeo": "11041",

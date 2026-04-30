@@ -3,40 +3,32 @@
     "tipo_esquema": "tarifa_millar",
     "tabla": [
       {
-        "grupo": "urbano",
-        "clave": "con_edificaciones",
-        "descripcion": "Inmuebles urbanos y suburbanos con edificaciones",
+        "grupo": "general",
+        "clave": "urbano_suburbano_con_edificaciones",
+        "descripcion": "Inmuebles urbanos y suburbanos con edificaciones, a la entrada en vigor de la ley; aplica anual sobre valor catastral.",
         "tasa_millar": 0.0024,
         "periodicidad": "anual",
         "cuota_fija_adicional": null
       },
       {
-        "grupo": "urbano",
-        "clave": "sin_edificaciones",
-        "descripcion": "Inmuebles urbanos y suburbanos sin edificaciones",
+        "grupo": "general",
+        "clave": "urbano_suburbano_sin_edificaciones",
+        "descripcion": "Inmuebles urbanos y suburbanos sin edificaciones, a la entrada en vigor de la ley; aplica anual sobre valor catastral.",
         "tasa_millar": 0.0045,
         "periodicidad": "anual",
         "cuota_fija_adicional": null
       },
       {
         "grupo": "rustico",
-        "clave": "con_edificaciones",
-        "descripcion": "Inmuebles rústicos con edificaciones",
-        "tasa_millar": 0.0018,
-        "periodicidad": "anual",
-        "cuota_fija_adicional": null
-      },
-      {
-        "grupo": "rustico",
-        "clave": "sin_edificaciones",
-        "descripcion": "Inmuebles rústicos sin edificaciones",
+        "clave": "rustico_con_edificaciones",
+        "descripcion": "Inmuebles rústicos con edificaciones, a la entrada en vigor de la ley; aplica anual sobre valor catastral.",
         "tasa_millar": 0.0018,
         "periodicidad": "anual",
         "cuota_fija_adicional": null
       }
     ],
     "minimo_predial": null,
-    "comentarios": "Art. 4 establece tasas anuales al millar sobre el valor catastral según antigüedad del inmueble y si el predio urbano/suburbano o rústico cuenta o no con edificaciones. Para inmuebles urbanos y suburbanos: con edificaciones 2.4 al millar; sin edificaciones 4.5 al millar; para inmuebles rústicos: con edificaciones 1.8 al millar; sin edificaciones 1.8 al millar. El Art. 5 contiene tablas de valores unitarios de terreno y construcción para avalúo, no la mecánica de cálculo del impuesto."
+    "comentarios": "Artículo 4 establece una tarifa anual por categorías de inmueble. Se transcribe la tasa vigente a la entrada en vigor de la ley, que es la mecánica principal aplicable para 2024. El mismo artículo contiene tasas históricas para inmuebles con valores determinados o modificados en años anteriores (2002-2023, con anterioridad a 2002 y hasta 1993 inclusive, y con anterioridad a 1903), pero no se integran en la tabla principal por tratarse de supuestos paralelos por antigüedad del valor catastral. La ley también incluye tablas de valores unitarios de terreno y construcción en los artículos 5 y 6, pero esas son valuación catastral, no mecánica del impuesto."
   },
   "_meta": {
     "fuente": "txt",
@@ -51,7 +43,7 @@
     "usado_vision": false,
     "tokens": {
       "input": 8743,
-      "output": 379,
+      "output": 414,
       "cached": 5888
     },
     "cvegeo": "11043",

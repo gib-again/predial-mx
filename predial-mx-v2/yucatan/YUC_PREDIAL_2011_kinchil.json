@@ -8,13 +8,13 @@
         "superior": 10000.0,
         "columnas": [
           {
-            "nombre": "urbano",
+            "nombre": "general",
             "valor": 7.0,
             "tipo": "cuota_fija",
             "unidad": "pesos"
           },
           {
-            "nombre": "urbano",
+            "nombre": "general",
             "valor": 0.0025,
             "tipo": "tasa_porcentual",
             "unidad": "porcentaje"
@@ -27,13 +27,13 @@
         "superior": 20000.0,
         "columnas": [
           {
-            "nombre": "urbano",
+            "nombre": "general",
             "valor": 13.0,
             "tipo": "cuota_fija",
             "unidad": "pesos"
           },
           {
-            "nombre": "urbano",
+            "nombre": "general",
             "valor": 0.0025,
             "tipo": "tasa_porcentual",
             "unidad": "porcentaje"
@@ -46,13 +46,13 @@
         "superior": 30000.0,
         "columnas": [
           {
-            "nombre": "urbano",
+            "nombre": "general",
             "valor": 14.0,
             "tipo": "cuota_fija",
             "unidad": "pesos"
           },
           {
-            "nombre": "urbano",
+            "nombre": "general",
             "valor": 0.0025,
             "tipo": "tasa_porcentual",
             "unidad": "porcentaje"
@@ -65,13 +65,13 @@
         "superior": 40000.0,
         "columnas": [
           {
-            "nombre": "urbano",
+            "nombre": "general",
             "valor": 25.0,
             "tipo": "cuota_fija",
             "unidad": "pesos"
           },
           {
-            "nombre": "urbano",
+            "nombre": "general",
             "valor": 0.0025,
             "tipo": "tasa_porcentual",
             "unidad": "porcentaje"
@@ -84,13 +84,13 @@
         "superior": 50000.0,
         "columnas": [
           {
-            "nombre": "urbano",
+            "nombre": "general",
             "valor": 32.0,
             "tipo": "cuota_fija",
             "unidad": "pesos"
           },
           {
-            "nombre": "urbano",
+            "nombre": "general",
             "valor": 0.0025,
             "tipo": "tasa_porcentual",
             "unidad": "porcentaje"
@@ -103,13 +103,13 @@
         "superior": 60000.0,
         "columnas": [
           {
-            "nombre": "urbano",
+            "nombre": "general",
             "valor": 38.0,
             "tipo": "cuota_fija",
             "unidad": "pesos"
           },
           {
-            "nombre": "urbano",
+            "nombre": "general",
             "valor": 0.0025,
             "tipo": "tasa_porcentual",
             "unidad": "porcentaje"
@@ -122,13 +122,13 @@
         "superior": null,
         "columnas": [
           {
-            "nombre": "urbano",
+            "nombre": "general",
             "valor": 44.0,
             "tipo": "cuota_fija",
             "unidad": "pesos"
           },
           {
-            "nombre": "urbano",
+            "nombre": "general",
             "valor": 0.0025,
             "tipo": "tasa_porcentual",
             "unidad": "porcentaje"
@@ -137,7 +137,7 @@
       }
     ],
     "minimo_predial": null,
-    "comentarios": "Art. 12(a): predios urbanos con o sin construcción usan tabla por rangos de valor catastral con cuota fija al límite inferior más 0.25% sobre el excedente, por eso se clasifica como mixto. Art. 12(b): predios rústicos con o sin construcción pagan $14.00 por hectárea; es una tarifa paralela de base superficial y no se integra en la tabla principal. Art. 13 menciona descuento por pago anual en el primer bimestre, ignorado conforme a instrucción."
+    "comentarios": "Art. 12: Predios urbanos con o sin construcción se gravan con tarifa por rangos de valor catastral que combina cuota fija anual al límite inferior más 0.25% sobre el excedente. Predios rústicos con o sin construcción tienen tarifa paralela independiente de $14.00 por hectárea anual; se documenta como tarifa secundaria/parallel y no se integra en la tabla principal. Art. 13 contiene descuento por pronto pago y se ignora."
   },
   "_meta": {
     "fuente": "txt",
@@ -152,7 +152,7 @@
     "usado_vision": false,
     "tokens": {
       "input": 6542,
-      "output": 657,
+      "output": 629,
       "cached": 5888
     },
     "cvegeo": "31044",

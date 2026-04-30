@@ -46,17 +46,17 @@
       }
     ],
     "minimo_predial": null,
-    "comentarios": "Art. 13: además de la tabla progresiva por valor catastral, el texto establece una tarifa paralela para 'todo predio destinado a la producción agropecuaria' de 10 al millar anual sobre el valor registrado o catastral; se documenta aquí como comentario por ser una tarifa secundaria/paralela. Las tablas de valores unitarios de terreno y construcción se ignoran por ser catastro, no mecánica del impuesto."
+    "comentarios": "Tarifa principal por rangos de valor catastral con cuota fija anual más factor aplicable al excedente del límite inferior, conforme al Artículo 13. El texto también establece una tarifa paralela para predios destinados a la producción agropecuaria de 10 al millar anual sobre el valor registrado o catastral, con tope conforme a la legislación agraria federal; no se incluye en la tabla principal por ser tarifa separada."
   },
   "_meta": {
     "fuente": "txt",
-    "modelo": "gpt-5.4-mini"
+    "modelo": "gpt-5.4"
   },
   "_meta_v2": {
     "intentos": 1,
     "requiere_revision": false,
-    "escalado": false,
-    "razon": null,
+    "escalado": true,
+    "razon": "escalado_a_gpt-5.4_tras_2x_mini_fallido",
     "usado_reocr": false,
     "usado_vision": false,
     "tokens": {

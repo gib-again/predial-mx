@@ -4,55 +4,47 @@
     "tabla": [
       {
         "grupo": "urbano",
-        "clave": "inmuebles_urbanos_y_suburbanos_con_edificaciones",
-        "descripcion": "Inmuebles urbanos y suburbanos con edificaciones; valor determinado o modificado.",
-        "tasa_millar": 0.018,
+        "clave": "con_edificaciones",
+        "descripcion": "Inmuebles urbanos y suburbanos con edificaciones",
+        "tasa_millar": 0.0024,
         "periodicidad": "anual",
         "cuota_fija_adicional": null
       },
       {
         "grupo": "urbano",
-        "clave": "inmuebles_urbanos_y_suburbanos_sin_edificaciones",
-        "descripcion": "Inmuebles urbanos y suburbanos sin edificaciones; valor determinado o modificado.",
-        "tasa_millar": 0.045,
+        "clave": "sin_edificaciones",
+        "descripcion": "Inmuebles urbanos y suburbanos sin edificaciones",
+        "tasa_millar": 0.0045,
         "periodicidad": "anual",
         "cuota_fija_adicional": null
       },
       {
         "grupo": "rustico",
-        "clave": "inmuebles_rusticos_con_edificaciones",
-        "descripcion": "Inmuebles rústicos con edificaciones.",
-        "tasa_millar": 0.018,
-        "periodicidad": "anual",
-        "cuota_fija_adicional": null
-      },
-      {
-        "grupo": "rustico",
-        "clave": "inmuebles_rusticos_sin_edificaciones",
-        "descripcion": "Inmuebles rústicos sin edificaciones.",
-        "tasa_millar": 0.024,
+        "clave": "general",
+        "descripcion": "Inmuebles rústicos",
+        "tasa_millar": 0.0,
         "periodicidad": "anual",
         "cuota_fija_adicional": null
       }
     ],
     "minimo_predial": null,
-    "comentarios": "Artículo 4 establece tasas anuales al millar diferenciadas por tipo de inmueble y por existencia de edificaciones. Se transcribe la mecánica principal como catálogo categórico; no se incorporan las tablas de valores unitarios de los artículos 5 y 6 porque corresponden a valuación/catastro, no a tarifa del impuesto. La lectura OCR presenta una fila adicional truncada/borrosa al final del cuadro de tasas; no se usa para evitar inventar una tarifa no legible. No se observan cuotas fijas adicionales ni mínimo predial en el segmento proporcionado."
+    "comentarios": "Artículo 4 establece tasas anuales por categoría. Para inmuebles urbanos y suburbanos: con edificaciones 2.4 al millar; sin edificaciones 4.5 al millar. El texto también contiene una fila para inmuebles rústicos, pero en el OCR aparece con valores ambiguos/corruptos ('1.8 al millar' y otras lecturas); se deja fuera de la tabla principal por inconsistencia textual y porque el bloque principal es categórico urbano/suburbano. Artículo 5-6 contiene valores unitarios de catastro, no mecánica del impuesto."
   },
   "_meta": {
     "fuente": "txt",
     "modelo": "gpt-5.4-mini"
   },
   "_meta_v2": {
-    "intentos": 1,
+    "intentos": 2,
     "requiere_revision": false,
     "escalado": false,
     "razon": null,
     "usado_reocr": false,
     "usado_vision": false,
     "tokens": {
-      "input": 8657,
-      "output": 403,
-      "cached": 5888
+      "input": 17968,
+      "output": 793,
+      "cached": 11776
     },
     "cvegeo": "11036",
     "estado": "guanajuato",

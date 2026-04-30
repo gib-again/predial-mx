@@ -4,7 +4,7 @@
     "tabla": [
       {
         "n_rango": 1,
-        "inferior": 0.01,
+        "inferior": 0.0,
         "superior": 139981.64,
         "cuota_fija": 0.0,
         "tasa_marginal": 0.0024
@@ -46,22 +46,22 @@
       }
     ],
     "minimo_predial": null,
-    "comentarios": "Art. 4 fracción IV establece tarifas paralelas para inmuebles con valores determinados o modificados: urbanos y suburbanos con edificaciones (8 al millar), urbanos y suburbanos sin edificaciones (15 al millar) e inmuebles rústicos (6 al millar) para supuestos con anterioridad al año 2002 y hasta 1993 inclusive; y 13 al millar / 12 al millar para anterioridad a 1993, según columna correspondiente. Se documenta sólo la estructura principal por brackets de valor fiscal de la fracción III, que es la mecánica predominante y estructurada. Las tarifas de la fracción IV son paralelas y se consignan en texto, no en la tabla principal."
+    "comentarios": "Art. 4 fracción III, inciso a: inmuebles urbanos y suburbanos con edificaciones, valores determinados o modificados durante el año 2002 y hasta 2023 inclusive. Art. 4 fracción III, inciso b: inmuebles urbanos y suburbanos sin edificaciones con tarifas progresivas similares; Art. 4 fracción III, inciso c: inmuebles rústicos con tarifas progresivas similares. Art. 4 fracción IV establece tarifas paralelas al millar para inmuebles con valor determinado o modificado con anterioridad a 2002 (8, 15, 6 y 13 al millar según grupo); se documentan aquí como tarifas paralelas y no se mezclan en la tabla principal."
   },
   "_meta": {
     "fuente": "txt",
     "modelo": "gpt-5.4-mini"
   },
   "_meta_v2": {
-    "intentos": 1,
+    "intentos": 2,
     "requiere_revision": false,
     "escalado": false,
     "razon": null,
     "usado_reocr": false,
     "usado_vision": false,
     "tokens": {
-      "input": 12356,
-      "output": 440,
+      "input": 13074,
+      "output": 437,
       "cached": 5888
     },
     "cvegeo": "11021",

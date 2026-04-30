@@ -4,62 +4,118 @@
     "tabla": [
       {
         "grupo": "urbano",
-        "clave": "inmuebles_urbanos_y_suburbanos",
-        "descripcion": "Inmuebles urbanos y suburbanos con valor determinado o no modificado: a la entrada en vigor de la presente Ley.",
+        "clave": "urbanos_y_suburbanos_sin_edificacion",
+        "descripcion": "Inmuebles urbanos y suburbanos sin edificaciones, con valor determinado a la entrada en vigor de la presente Ley",
         "tasa_millar": 0.0024,
         "periodicidad": "anual",
         "cuota_fija_adicional": null
       },
       {
         "grupo": "urbano",
-        "clave": "inmuebles_urbanos_y_suburbanos_2002_2019",
-        "descripcion": "Inmuebles urbanos y suburbanos con valor determinado o no modificado: durante el año 2002 y hasta el año 2019, inclusive.",
-        "tasa_millar": 0.0024,
-        "periodicidad": "anual",
-        "cuota_fija_adicional": null
-      },
-      {
-        "grupo": "urbano",
-        "clave": "inmuebles_urbanos_y_suburbanos_1993_2002",
-        "descripcion": "Inmuebles urbanos y suburbanos con valor determinado o no modificado: con anterioridad al año 2002 y hasta el año 1993, inclusive.",
-        "tasa_millar": 0.0024,
-        "periodicidad": "anual",
-        "cuota_fija_adicional": null
-      },
-      {
-        "grupo": "urbano",
-        "clave": "inmuebles_urbanos_y_suburbanos_anterior_1993",
-        "descripcion": "Inmuebles urbanos y suburbanos con valor determinado o no modificado: con anterioridad al año 1993.",
-        "tasa_millar": 0.008,
+        "clave": "urbanos_y_suburbanos_con_edificacion",
+        "descripcion": "Inmuebles urbanos y suburbanos con edificaciones, con valor determinado a la entrada en vigor de la presente Ley",
+        "tasa_millar": 0.0025,
         "periodicidad": "anual",
         "cuota_fija_adicional": null
       },
       {
         "grupo": "rustico",
-        "clave": "inmuebles_rusticos",
-        "descripcion": "Inmuebles rústicos.",
-        "tasa_millar": 0.025,
+        "clave": "rusticos_con_edificacion",
+        "descripcion": "Inmuebles rústicos con edificaciones, con valor determinado a la entrada en vigor de la presente Ley",
+        "tasa_millar": 0.002,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "urbano",
+        "clave": "urbanos_y_suburbanos_sin_edificacion_2002_2019",
+        "descripcion": "Inmuebles urbanos y suburbanos sin edificaciones, cuyo valor fue determinado durante el año 2002 y hasta el año 2019, inclusive",
+        "tasa_millar": 0.0024,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "urbano",
+        "clave": "urbanos_y_suburbanos_con_edificacion_2002_2019",
+        "descripcion": "Inmuebles urbanos y suburbanos con edificaciones, cuyo valor fue determinado durante el año 2002 y hasta el año 2019, inclusive",
+        "tasa_millar": 0.0025,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "rustico",
+        "clave": "rusticos_con_edificacion_2002_2019",
+        "descripcion": "Inmuebles rústicos con edificaciones, cuyo valor fue determinado durante el año 2002 y hasta el año 2019, inclusive",
+        "tasa_millar": 0.0018,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "urbano",
+        "clave": "urbanos_y_suburbanos_sin_edificacion_1993_2001",
+        "descripcion": "Inmuebles urbanos y suburbanos sin edificaciones, cuyo valor fue determinado con anterioridad al año 2002 y hasta el año 1993, inclusive",
+        "tasa_millar": 0.008,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "urbano",
+        "clave": "urbanos_y_suburbanos_con_edificacion_1993_2001",
+        "descripcion": "Inmuebles urbanos y suburbanos con edificaciones, cuyo valor fue determinado con anterioridad al año 2002 y hasta el año 1993, inclusive",
+        "tasa_millar": 0.0045,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "rustico",
+        "clave": "rusticos_con_edificacion_1993_2001",
+        "descripcion": "Inmuebles rústicos con edificaciones, cuyo valor fue determinado con anterioridad al año 2002 y hasta el año 1993, inclusive",
+        "tasa_millar": 0.006,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "urbano",
+        "clave": "urbanos_y_suburbanos_sin_edificacion_antes_1993",
+        "descripcion": "Inmuebles urbanos y suburbanos sin edificaciones, cuyo valor fue determinado con anterioridad al año 1993",
+        "tasa_millar": 0.008,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "urbano",
+        "clave": "urbanos_y_suburbanos_con_edificacion_antes_1993",
+        "descripcion": "Inmuebles urbanos y suburbanos con edificaciones, cuyo valor fue determinado con anterioridad al año 1993",
+        "tasa_millar": 0.0045,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "rustico",
+        "clave": "rusticos_con_edificacion_antes_1993",
+        "descripcion": "Inmuebles rústicos con edificaciones, cuyo valor fue determinado con anterioridad al año 1993",
+        "tasa_millar": 0.012,
         "periodicidad": "anual",
         "cuota_fija_adicional": null
       }
     ],
     "minimo_predial": null,
-    "comentarios": "Artículo 4 establece tasas al millar anuales. Para inmuebles urbanos y suburbanos, el texto presenta una tabla con cuatro periodos: a la entrada en vigor de la ley, 2002-2019, 1993-2002 y anteriores a 1993. Para inmuebles rústicos aparece una tasa paralela de 25 al millar anual. Se transcribe como tarifa_millar porque no hay rangos de valor catastral; las tasas son categóricas por tipo de inmueble y antigüedad/condición del valor."
+    "comentarios": "Artículo 4 establece tasas al millar anuales por categoría de inmueble y por antigüedad de determinación del valor. Los artículos 5 y 6 contienen tablas de valores unitarios y criterios de avalúo para determinar el valor catastral, no la tarifa del impuesto predial."
   },
   "_meta": {
     "fuente": "txt",
-    "modelo": "gpt-5.4-mini"
+    "modelo": "gpt-5.4"
   },
   "_meta_v2": {
     "intentos": 1,
     "requiere_revision": false,
-    "escalado": false,
-    "razon": null,
+    "escalado": true,
+    "razon": "escalado_a_gpt-5.4_tras_2x_mini_fallido",
     "usado_reocr": false,
     "usado_vision": false,
     "tokens": {
       "input": 8678,
-      "output": 520,
+      "output": 1010,
       "cached": 5888
     },
     "cvegeo": "11025",

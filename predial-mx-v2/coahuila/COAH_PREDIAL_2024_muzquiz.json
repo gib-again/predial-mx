@@ -32,7 +32,7 @@
       "periodicidad": "bimestral",
       "unidad": "pesos"
     },
-    "comentarios": "Art. 2: tasa anual de 5 al millar para predios urbanos, 3 al millar para predios rústicos y 7 al millar para lotes baldíos con maleza. Se ignoran incentivos por pago anticipado y descuentos para pensionados/jubilados/adultos mayores/personas con discapacidad por ser bonificaciones."
+    "comentarios": "Art. 2: tarifa principal por categoría de predio con tasas al millar anuales: predios urbanos 5 al millar, predios rústicos 3 al millar y lotes baldíos con maleza 7 al millar. Se establece además un mínimo de $24.10 por bimestre. Los incentivos por pago anticipado y las bonificaciones a pensionados/jubilados/adultos mayores/personas con discapacidad se ignoran por instrucción."
   },
   "_meta": {
     "fuente": "txt",
@@ -47,7 +47,7 @@
     "usado_vision": false,
     "tokens": {
       "input": 6369,
-      "output": 281,
+      "output": 306,
       "cached": 5888
     },
     "cvegeo": "05020",

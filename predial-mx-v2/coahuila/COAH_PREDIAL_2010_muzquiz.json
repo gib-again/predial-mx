@@ -1,11 +1,30 @@
 {
   "predial": {
-    "tipo_esquema": "otro_no_clasificado",
-    "categoria": "segmento_vacio",
-    "descripcion_estructural": "El texto proporcionado no contiene la mecánica de cálculo del impuesto predial; sólo aparecen disposiciones sobre diferimiento del pago y una referencia incompleta a adquisiciones de inmuebles. No hay tabla, cuota, tasa ni brackets extraíbles para estructurar el predial.",
-    "tabla_cruda": [],
-    "minimo_predial": null,
-    "comentarios": "Segmento truncado/incompleto; no se observa tarifa del impuesto predial."
+    "tipo_esquema": "tarifa_millar",
+    "tabla": [
+      {
+        "grupo": "urbano",
+        "clave": "predios_urbanos",
+        "descripcion": "Sobre los predios urbanos",
+        "tasa_millar": 0.005,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "rustico",
+        "clave": "predios_rusticos",
+        "descripcion": "Sobre predios rústicos",
+        "tasa_millar": 0.003,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      }
+    ],
+    "minimo_predial": {
+      "monto": 7.5,
+      "periodicidad": "bimestral",
+      "unidad": "pesos"
+    },
+    "comentarios": "Art. 2: la base para el cálculo es el valor catastral de los inmuebles. Tasa anual de 5 al millar para predios urbanos y 3 al millar para predios rústicos. El texto también establece un mínimo predial de $7.50 por bimestre."
   },
   "_meta": {
     "fuente": "txt",
@@ -13,15 +32,15 @@
   },
   "_meta_v2": {
     "intentos": 1,
-    "requiere_revision": true,
+    "requiere_revision": false,
     "escalado": false,
-    "razon": "clasificado_como_otro_no_clasificado",
-    "usado_reocr": true,
-    "usado_vision": true,
+    "razon": null,
+    "usado_reocr": false,
+    "usado_vision": false,
     "tokens": {
-      "input": 21811,
-      "output": 470,
-      "cached": 11776
+      "input": 8775,
+      "output": 220,
+      "cached": 0
     },
     "cvegeo": "05020",
     "estado": "coahuila",

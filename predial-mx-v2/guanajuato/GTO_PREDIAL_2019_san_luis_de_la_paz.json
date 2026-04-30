@@ -4,47 +4,31 @@
     "tabla": [
       {
         "grupo": "general",
-        "clave": "inmuebles_urbanos_y_suburbanos_entrada_en_vigor_a_2018",
-        "descripcion": "Inmuebles urbanos y suburbanos: de la entrada en vigor de la ley a 2018 inclusive",
-        "tasa_millar": 2.4,
+        "clave": "urbano_suburbano_construido",
+        "descripcion": "Inmuebles urbanos y suburbanos construidos o edificados; para el año 2019 en la tabla de tasas.",
+        "tasa_millar": 0.0024,
         "periodicidad": "anual",
         "cuota_fija_adicional": null
       },
       {
         "grupo": "general",
-        "clave": "inmuebles_urbanos_y_suburbanos_anteriores_a_2002_hasta_1993",
-        "descripcion": "Inmuebles urbanos y suburbanos: con anterioridad al año 2002 y hasta el año 1993",
-        "tasa_millar": 8.0,
-        "periodicidad": "anual",
-        "cuota_fija_adicional": null
-      },
-      {
-        "grupo": "general",
-        "clave": "inmuebles_urbanos_y_suburbanos_anterior_a_1993",
-        "descripcion": "Inmuebles urbanos y suburbanos: con anterioridad al año 1993",
-        "tasa_millar": 12.0,
+        "clave": "urbano_suburbano_sin_edificar",
+        "descripcion": "Inmuebles urbanos y suburbanos sin edificar; para el año 2019 en la tabla de tasas.",
+        "tasa_millar": 0.0045,
         "periodicidad": "anual",
         "cuota_fija_adicional": null
       },
       {
         "grupo": "rustico",
-        "clave": "inmuebles_rusticos_entrada_en_vigor_a_2018",
-        "descripcion": "Inmuebles rústicos: de la entrada en vigor de la ley a 2018 inclusive",
-        "tasa_millar": 1.8,
-        "periodicidad": "anual",
-        "cuota_fija_adicional": null
-      },
-      {
-        "grupo": "rustico",
-        "clave": "inmuebles_rusticos_anteriores_a_2002_hasta_1993",
-        "descripcion": "Inmuebles rústicos: con anterioridad al año 2002 y hasta el año 1993",
-        "tasa_millar": 6.0,
+        "clave": "rustico",
+        "descripcion": "Inmuebles rústicos; para el año 2019 en la tabla de tasas.",
+        "tasa_millar": 0.0018,
         "periodicidad": "anual",
         "cuota_fija_adicional": null
       }
     ],
     "minimo_predial": null,
-    "comentarios": "Artículo 4 contiene una tabla de tasas al millar por antigüedad del inmueble y por tipo general/rústico. El texto OCR está fragmentado, pero se distinguen tasas diferenciadas para inmuebles urbanos y suburbanos, y para inmuebles rústicos. También aparece una columna adicional para inmuebles edificado/edificaciones con tasas 1.8, 4.5, 6 y 15 al millar; se transcribe sólo la mecánica principal detectada en la tabla, sin interpretar cruces adicionales que el OCR no deja inequívocos."
+    "comentarios": "Artículo 4 (tabla de tasas): para la entrada en vigor de la ley, inmuebles urbanos y suburbanos construidos pagan 2.4 al millar; urbanos y suburbanos no edificados pagan 4.5 al millar; inmuebles rústicos pagan 1.8 al millar. Se ignoran los valores catastrales unitarios de los artículos 5 y 6 porque son tablas de valuación, no mecánica del impuesto."
   },
   "_meta": {
     "fuente": "txt",
@@ -59,7 +43,7 @@
     "usado_vision": false,
     "tokens": {
       "input": 8568,
-      "output": 524,
+      "output": 332,
       "cached": 5888
     },
     "cvegeo": "11033",

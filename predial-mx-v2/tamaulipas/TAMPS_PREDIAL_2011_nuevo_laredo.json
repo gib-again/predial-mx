@@ -36,7 +36,7 @@
       },
       {
         "grupo": "urbano",
-        "clave": "predios_urbanos_uso_industrial",
+        "clave": "predios_urbanos_de_uso_industrial",
         "descripcion": "Predios urbanos de uso industrial",
         "tasa_millar": 0.003,
         "periodicidad": "anual",
@@ -44,7 +44,7 @@
       }
     ],
     "minimo_predial": null,
-    "comentarios": "Art. 9: base de cálculo = valor catastral de los inmuebles. Las fracciones VI, VII y VIII establecen reglas especiales: fracc. VI indica que a predios urbanos no edificados propiedad de fraccionamientos autorizados no se les aplica la tasa de la fracc. IV; fracc. VII prevé un aumento del 100% para adquirientes de lotes de fraccionamientos que no construyan en tres años; fracc. VIII prevé un aumento del 100% para propietarios de fraccionamientos autorizados por predios no vendidos en tres años. Estas reglas se documentan sólo como comentarios porque no alteran la mecánica básica de la tarifa principal."
+    "comentarios": "Art. 9: impuesto predial anual sobre valor catastral. Tasa única por categoría de predio: urbanos con edificaciones 1.50 al millar; suburbanos con edificaciones 1.50 al millar; rústicos 3.0 al millar; urbanos y suburbanos sin edificaciones (baldíos) 3.0 al millar; urbanos de uso industrial 3.0 al millar. Las fracciones VI-VIII regulan exenciones/aumentos por fraccionamientos y no se incorporan como mecánica base."
   },
   "_meta": {
     "fuente": "txt",
@@ -59,7 +59,7 @@
     "usado_vision": false,
     "tokens": {
       "input": 7563,
-      "output": 455,
+      "output": 431,
       "cached": 5888
     },
     "cvegeo": "28027",

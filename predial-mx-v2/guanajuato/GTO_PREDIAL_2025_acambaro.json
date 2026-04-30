@@ -1,11 +1,11 @@
 {
   "predial": {
     "tipo_esquema": "otro_no_clasificado",
-    "categoria": "municipio_sin_impuesto",
-    "descripcion_estructural": "En el texto proporcionado no aparece una sección tarifaria del Impuesto Predial con mecánica de cálculo. Sólo se observa el listado de ingresos estimados donde se menciona el rubro 1201 Impuesto predial, pero no se incluyen tablas, rangos, tasas o cuotas para su determinación dentro del segmento enviado.",
+    "categoria": "segmento_vacio",
+    "descripcion_estructural": "El texto proporcionado no contiene la sección tarifaria legible del Impuesto Predial para Acámbaro 2025. Las páginas incluidas muestran principalmente encabezados, listados de ingresos y ruido/OCR, pero no una tabla o mecánica de cálculo extraíble del predial.",
     "tabla_cruda": [],
     "minimo_predial": null,
-    "comentarios": "No se detectó estructura extraíble del impuesto predial en las páginas compartidas."
+    "comentarios": "No fue posible identificar límites, cuotas, tasas o categorías aplicables al impuesto predial en el segmento suministrado."
   },
   "_meta": {
     "fuente": "txt",
@@ -16,12 +16,12 @@
     "requiere_revision": true,
     "escalado": false,
     "razon": "clasificado_como_otro_no_clasificado",
-    "usado_reocr": false,
-    "usado_vision": false,
+    "usado_reocr": true,
+    "usado_vision": true,
     "tokens": {
-      "input": 10540,
-      "output": 144,
-      "cached": 5888
+      "input": 48385,
+      "output": 464,
+      "cached": 17664
     },
     "cvegeo": "11002",
     "estado": "guanajuato",

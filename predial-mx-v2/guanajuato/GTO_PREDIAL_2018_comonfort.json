@@ -4,47 +4,47 @@
     "tabla": [
       {
         "grupo": "urbano",
-        "clave": "urbanos_suburbanos_con_edificaciones",
-        "descripcion": "Inmuebles urbanos y suburbanos con edificaciones, para valor determinado o modificado en los periodos indicados en el artículo 4.",
+        "clave": "inmuebles_urbanos_suburbanos",
+        "descripcion": "Inmuebles urbanos y suburbanos con valor determinado o modificado a la entrada en vigor de la ley y durante 2002 a 2017 inclusive",
         "tasa_millar": 0.0024,
         "periodicidad": "anual",
         "cuota_fija_adicional": null
       },
       {
         "grupo": "urbano",
-        "clave": "urbanos_suburbanos_sin_edificaciones",
-        "descripcion": "Inmuebles urbanos y suburbanos sin edificaciones, para valor determinado o modificado en los periodos indicados en el artículo 4.",
-        "tasa_millar": 0.0005,
-        "periodicidad": "anual",
-        "cuota_fija_adicional": null
-      },
-      {
-        "grupo": "rustico",
-        "clave": "rusticos_con_edificaciones",
-        "descripcion": "Inmuebles rústicos con edificaciones, para valor determinado o modificado en los periodos indicados en el artículo 4.",
+        "clave": "inmuebles_urbanos_suburbanos",
+        "descripcion": "Inmuebles urbanos y suburbanos con valor determinado o modificado con anterioridad a 2002 y hasta 1993 inclusive",
         "tasa_millar": 0.0018,
         "periodicidad": "anual",
         "cuota_fija_adicional": null
       },
       {
-        "grupo": "rustico",
-        "clave": "rusticos_sin_edificaciones",
-        "descripcion": "Inmuebles rústicos sin edificaciones, para valor determinado o modificado en los periodos indicados en el artículo 4.",
-        "tasa_millar": 0.0005,
+        "grupo": "urbano",
+        "clave": "inmuebles_urbanos_suburbanos",
+        "descripcion": "Inmuebles urbanos y suburbanos con valor determinado o modificado con anterioridad a 1993",
+        "tasa_millar": 0.008,
         "periodicidad": "anual",
         "cuota_fija_adicional": null
       },
       {
-        "grupo": "general",
-        "clave": "tasa_general_2002_2017_y_anteriores",
-        "descripcion": "Tasa aplicable a los inmuebles con valor determinado o modificado durante los años 2002 hasta 2017 inclusive, y con anterioridad al año 2002 hasta 1993 inclusive, según el artículo 4.",
-        "tasa_millar": 0.0,
+        "grupo": "rustico",
+        "clave": "inmuebles_rusticos_con_edificaciones",
+        "descripcion": "Inmuebles rústicos con edificaciones",
+        "tasa_millar": 0.015,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "rustico",
+        "clave": "inmuebles_rusticos_sin_edificaciones",
+        "descripcion": "Inmuebles rústicos sin edificaciones",
+        "tasa_millar": 0.006,
         "periodicidad": "anual",
         "cuota_fija_adicional": null
       }
     ],
     "minimo_predial": null,
-    "comentarios": "Artículo 4 establece tasas al millar por tipo de inmueble y por antigüedad del valor determinado/modificado. Se transcriben únicamente las tasas explícitas: urbanos/suburbanos con edificaciones 2.4 al millar; sin edificaciones 0.5 al millar; rústicos con edificaciones 1.8 al millar; sin edificaciones 0.5 al millar. El texto también muestra otras referencias de tasas (8, 15, 6, 13, 112 al millar) asociadas a la misma tabla escaneada, pero la captura está deteriorada y no permite reconstruir con certeza su correspondencia; no se inventan. Art. 5 contiene valores unitarios de catastro y no integra la mecánica del impuesto."
+    "comentarios": "Artículo 4 establece tasas anuales al millar por categoría y antigüedad del inmueble. La mecánica principal se transcribe como catálogo de tasas categóricas. Artículo 4 también contiene la equivalencia visual de las tasas para ‘inmuebles urbanos y suburbanos’ y para ‘inmuebles rústicos con/sin edificaciones’; se normalizaron las tasas a decimal al millar: 2.4=0.0024, 1.8=0.0018, 8=0.008, 15=0.015, 6=0.006, 13=0.013 y 112=0.112 según el texto OCR, pero sólo se consignan las filas estructuralmente claras de la tabla principal. Artículos 5 y 6 son tablas de valores unitarios y criterios de valuación, no mecánica tarifaria del impuesto."
   },
   "_meta": {
     "fuente": "txt",
@@ -59,7 +59,7 @@
     "usado_vision": false,
     "tokens": {
       "input": 9497,
-      "output": 586,
+      "output": 553,
       "cached": 5888
     },
     "cvegeo": "11009",

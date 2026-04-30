@@ -32,7 +32,7 @@
       }
     ],
     "minimo_predial": null,
-    "comentarios": "Art. 19: impuesto predial calculado con base en el valor catastral de los predios mediante tabla progresiva de cuota fija + factor aplicable al excedente del límite inferior. Art. 21 establece una tarifa secundaria sobre rentas o frutos civiles mensuales: 5% para casa habitación y 5% para actividades comerciales e industriales; se documenta aparte por ser una mecánica paralela no predominante."
+    "comentarios": "Art. 19: impuesto predial calculado con base en el valor catastral mediante tarifa por rangos con cuota fija y factor aplicable al excedente del límite inferior. Art. 21 establece tarifa separada para rentas o frutos civiles (5% mensual para casa habitación y 5% para actividades comerciales e industriales); se documenta solo como tarifa secundaria, no en la tabla principal. Los artículos 20 y tablas de valores unitarios corresponden a catastro/valores unitarios y no a la mecánica de cálculo del impuesto."
   },
   "_meta": {
     "fuente": "txt",
@@ -47,7 +47,7 @@
     "usado_vision": false,
     "tokens": {
       "input": 15717,
-      "output": 290,
+      "output": 315,
       "cached": 5888
     },
     "cvegeo": "31059",

@@ -3,24 +3,24 @@
     "tipo_esquema": "tarifa_millar",
     "tabla": [
       {
-        "grupo": "general",
-        "clave": "inmuebles_urbanos_suburbanos_con_edificaciones",
-        "descripcion": "Inmuebles urbanos y suburbanos con edificaciones, valor determinado modificado: durante la vigencia de la ley",
+        "grupo": "urbano",
+        "clave": "urbanos_con_edificaciones",
+        "descripcion": "Inmuebles urbanos y suburbanos con edificaciones",
         "tasa_millar": 0.0024,
         "periodicidad": "anual",
         "cuota_fija_adicional": null
       },
       {
-        "grupo": "general",
-        "clave": "inmuebles_urbanos_suburbanos_sin_edificaciones",
-        "descripcion": "Inmuebles urbanos y suburbanos sin edificaciones, valor determinado modificado: durante la vigencia de la ley",
+        "grupo": "urbano",
+        "clave": "urbanos_sin_edificaciones",
+        "descripcion": "Inmuebles urbanos y suburbanos sin edificaciones",
         "tasa_millar": 0.0045,
         "periodicidad": "anual",
         "cuota_fija_adicional": null
       },
       {
         "grupo": "rustico",
-        "clave": "inmuebles_rusticos",
+        "clave": "rusticos",
         "descripcion": "Inmuebles rústicos",
         "tasa_millar": 0.0018,
         "periodicidad": "anual",
@@ -28,7 +28,7 @@
       }
     ],
     "minimo_predial": null,
-    "comentarios": "Artículo 4 establece tasas anuales al millar por categoría de inmueble. Tarifa principal: inmuebles urbanos y suburbanos con edificaciones 2.4 al millar; sin edificaciones 4.5 al millar; inmuebles rústicos 1.8 al millar. No se incorporan las tablas de valores del Art. 5 porque corresponden a catastro/valuación, no a la mecánica de cálculo del impuesto."
+    "comentarios": "Artículo 4: tarifa anual por valor catastral. Se transcribe la mecánica principal en tres categorías: inmuebles urbanos y suburbanos con edificaciones 2.4 al millar, urbanos y suburbanos sin edificaciones 4.5 al millar, e inmuebles rústicos 1.8 al millar. El texto también contiene referencias históricas por año de construcción (anterioridad a 2002, a 1993, etc.) que aparecen junto a la tabla, pero el fragmento es OCR confuso y no se usa para reclasificar la mecánica principal. Las tablas de valores unitarios de los artículos 5 y 6 corresponden a catastro/avalúo y se ignoran."
   },
   "_meta": {
     "fuente": "txt",
@@ -43,7 +43,7 @@
     "usado_vision": false,
     "tokens": {
       "input": 8599,
-      "output": 329,
+      "output": 346,
       "cached": 5888
     },
     "cvegeo": "11034",

@@ -5,7 +5,7 @@
       {
         "grupo": "urbano",
         "clave": "inmuebles_urbanos_y_suburbanos_con_valor_determinado_o_modificado_con_edificaciones",
-        "descripcion": "A la entrada en vigor de la presente Ley; inmuebles urbanos y suburbanos con valor determinado o modificado, con edificaciones",
+        "descripcion": "Inmuebles urbanos y suburbanos con valor determinado o modificado, con edificaciones, a la entrada en vigor de la ley",
         "tasa_millar": 0.0024,
         "periodicidad": "anual",
         "cuota_fija_adicional": null
@@ -13,22 +13,22 @@
       {
         "grupo": "urbano",
         "clave": "inmuebles_urbanos_y_suburbanos_con_valor_determinado_o_modificado_sin_edificaciones",
-        "descripcion": "A la entrada en vigor de la presente Ley; inmuebles urbanos y suburbanos con valor determinado o modificado, sin edificaciones",
+        "descripcion": "Inmuebles urbanos y suburbanos con valor determinado o modificado, sin edificaciones, a la entrada en vigor de la ley",
         "tasa_millar": 0.0045,
         "periodicidad": "anual",
         "cuota_fija_adicional": null
       },
       {
         "grupo": "rustico",
-        "clave": "inmuebles_rusticos",
-        "descripcion": "A la entrada en vigor de la presente Ley; inmuebles rústicos",
+        "clave": "inmuebles_rusticos_con_valor_determinado_o_modificado",
+        "descripcion": "Inmuebles rústicos con valor determinado o modificado, a la entrada en vigor de la ley",
         "tasa_millar": 0.018,
         "periodicidad": "anual",
         "cuota_fija_adicional": null
       }
     ],
     "minimo_predial": null,
-    "comentarios": "Artículo 4 establece una tasa anual al millar por tipo de inmueble. Se documenta la tarifa principal de la fracción 21 (a la entrada en vigor de la presente Ley). Texto adicional del mismo artículo muestra tarifas históricas por periodos anteriores (2002-2009, hasta 1993, y anterior a 1993), pero no se transcriben como mecánica principal del ejercicio 2010. Artículo 5 contiene valores unitarios catastrales para avalúo de inmuebles urbanos/suburbanos y rústicos, no la mecánica del impuesto; se ignoran para la clasificación."
+    "comentarios": "Artículo 4 establece tasas al millar por categoría de inmueble, sin rangos de valor catastral. La ley también contiene tasas históricas para años anteriores (2002-2009, 1993 y anteriores), pero la mecánica del ejercicio 2010 se toma de la fila 'A la entrada en vigor de la presente Ley'. Artículos 5 y 6 describen valores unitarios y criterios de avalúo, no la tarifa del impuesto. No se documentan descuentos, recargos ni bonificaciones."
   },
   "_meta": {
     "fuente": "txt",
@@ -43,7 +43,7 @@
     "usado_vision": false,
     "tokens": {
       "input": 8624,
-      "output": 400,
+      "output": 394,
       "cached": 5888
     },
     "cvegeo": "11011",

@@ -134,7 +134,7 @@
       }
     ],
     "minimo_predial": null,
-    "comentarios": "Art. 4 fracc. I: inmuebles urbanos y suburbanos sin edificación pagan 4.50 al millar anual sobre la base gravable. Art. 4 fracc. II: inmuebles rústicos sin edificación pagan 1.8 al millar anual sobre la base gravable. Art. 4 fracc. III: inmuebles urbanos, suburbanos y rústicos con edificación usan tabla por rangos de valor fiscal con tasa marginal y cuota fija; la última fila es abierta ('en adelante'). Se transcribe como mixto porque coexisten tarifas paralelas (tasas al millar para sin edificación) y una tabla progresiva con cuota fija y tasa marginal para con edificación."
+    "comentarios": "Art. 4 fracc. I: inmuebles urbanos y suburbanos sin edificación pagan 4.50 al millar sobre la base gravable. Art. 4 fracc. II: inmuebles rústicos sin edificación pagan 1.8 al millar sobre la base gravable. Art. 4 fracc. III: inmuebles urbanos, suburbanos y rústicos con edificación se calculan con una tabla de valor fiscal con cuota fija y tasa marginal; la tabla original mezcla cuotas fijas en pesos y tasa marginal sobre el excedente. Se transcribe como mixto para conservar la heterogeneidad y las referencias paralelas a sin edificación."
   },
   "_meta": {
     "fuente": "txt",
@@ -149,7 +149,7 @@
     "usado_vision": false,
     "tokens": {
       "input": 9259,
-      "output": 701,
+      "output": 690,
       "cached": 5888
     },
     "cvegeo": "11014",

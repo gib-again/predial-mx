@@ -4,71 +4,39 @@
     "tabla": [
       {
         "grupo": "general",
-        "clave": "inmuebles_urbanos_suburbanos_edificados",
-        "descripcion": "Inmuebles urbanos y suburbanos con edificaciones",
+        "clave": "valor_determinado_modificado_entrada_vigor",
+        "descripcion": "Inmuebles con valor determinado o modificado: a la entrada en vigor de la ley",
         "tasa_millar": 0.0024,
         "periodicidad": "anual",
         "cuota_fija_adicional": null
       },
       {
         "grupo": "general",
-        "clave": "inmuebles_urbanos_suburbanos_sin_edificaciones",
-        "descripcion": "Inmuebles urbanos y suburbanos sin edificaciones",
-        "tasa_millar": 0.0045,
-        "periodicidad": "anual",
-        "cuota_fija_adicional": null
-      },
-      {
-        "grupo": "rustico",
-        "clave": "inmuebles_rusticos_edificados",
-        "descripcion": "Inmuebles rústicos con edificaciones",
-        "tasa_millar": 0.018,
-        "periodicidad": "anual",
-        "cuota_fija_adicional": null
-      },
-      {
-        "grupo": "rustico",
-        "clave": "inmuebles_rusticos_sin_edificaciones",
-        "descripcion": "Inmuebles rústicos sin edificaciones",
-        "tasa_millar": 0.0118,
+        "clave": "valor_determinado_modificado_2002_2017",
+        "descripcion": "Inmuebles con valor determinado o modificado: durante los años 2002 hasta 2017 inclusive",
+        "tasa_millar": 0.0024,
         "periodicidad": "anual",
         "cuota_fija_adicional": null
       },
       {
         "grupo": "general",
-        "clave": "inmuebles_anteriores_a_2002_edificados",
-        "descripcion": "Con anterioridad al año 2002 y hasta 1993 inclusive, inmuebles urbanos y suburbanos con edificaciones",
+        "clave": "valor_determinado_modificado_pre_2002_hasta_1993",
+        "descripcion": "Inmuebles con valor determinado o modificado: con anterioridad al año 2002 y hasta 1993 inclusive",
         "tasa_millar": 0.008,
         "periodicidad": "anual",
         "cuota_fija_adicional": null
       },
       {
         "grupo": "general",
-        "clave": "inmuebles_anteriores_a_2002_sin_edificaciones",
-        "descripcion": "Con anterioridad al año 2002 y hasta 1993 inclusive, inmuebles urbanos y suburbanos sin edificaciones",
-        "tasa_millar": 0.015,
-        "periodicidad": "anual",
-        "cuota_fija_adicional": null
-      },
-      {
-        "grupo": "rustico",
-        "clave": "inmuebles_anteriores_a_2002_rusticos_edificados",
-        "descripcion": "Con anterioridad al año 2002 y hasta 1993 inclusive, inmuebles rústicos con edificaciones",
-        "tasa_millar": 0.006,
-        "periodicidad": "anual",
-        "cuota_fija_adicional": null
-      },
-      {
-        "grupo": "rustico",
-        "clave": "inmuebles_anteriores_a_2002_rusticos_sin_edificaciones",
-        "descripcion": "Con anterioridad al año 2002 y hasta 1993 inclusive, inmuebles rústicos sin edificaciones",
-        "tasa_millar": 0.012,
+        "clave": "valor_determinado_modificado_anterior_1993",
+        "descripcion": "Inmuebles con valor determinado o modificado: con anterioridad al año 1993",
+        "tasa_millar": 0.01,
         "periodicidad": "anual",
         "cuota_fija_adicional": null
       }
     ],
     "minimo_predial": null,
-    "comentarios": "Art. 4 establece una tabla de tasas anuales al millar por tipo de inmueble y condición de edificación/antigüedad. Se transcriben los renglones visibles del texto; la tabla original presenta OCR deteriorado en algunas celdas, pero la mecánica es de tarifa por categoría, no por rangos de valor catastral. Art. 5-6 contienen valores unitarios y criterios de valuación catastral; no forman parte de la mecánica tarifaria del impuesto predial."
+    "comentarios": "Art. 4: la mecánica principal es un catálogo de tasas al millar por antigüedad/valor determinado o modificado. El texto presenta columnas heterogéneas para inmuebles urbanos y suburbanos-rústicos, pero la parte estructural principal extraíble corresponde a tasas categóricas al millar. Art. 4 también contiene tasas paralelas para inmuebles urbanos y suburbanos/rústicos con edificación, pero el OCR es irregular; se consigna sólo la tarifa principal transcrita. Art. 5 y 6 contienen tablas de valores unitarios catastrales y criterios de valuación, no forman parte de la mecánica del impuesto predial."
   },
   "_meta": {
     "fuente": "txt",
@@ -83,7 +51,7 @@
     "usado_vision": false,
     "tokens": {
       "input": 8700,
-      "output": 670,
+      "output": 455,
       "cached": 5888
     },
     "cvegeo": "11001",

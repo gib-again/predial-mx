@@ -1,11 +1,50 @@
 {
   "predial": {
-    "tipo_esquema": "otro_no_clasificado",
-    "categoria": "segmento_vacio",
-    "descripcion_estructural": "El texto proporcionado no contiene la mecánica de cálculo del impuesto predial. Solo aparecen rubros presupuestales de recaudación/ingresos ('Impuesto sobre la propiedad urbana, suburbana y rústica', 'Impuesto sobre la propiedad urbana', 'Impuesto sobre la propiedad rústica') con montos agregados, pero no tablas, cuotas, tasas ni rangos aplicables al cálculo.",
-    "tabla_cruda": [],
+    "tipo_esquema": "tarifa_millar",
+    "tabla": [
+      {
+        "grupo": "urbano",
+        "clave": "predios_urbanos_con_edificaciones",
+        "descripcion": "Predios urbanos con edificaciones",
+        "tasa_millar": 0.0015,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "urbano",
+        "clave": "predios_suburbanos_con_edificaciones",
+        "descripcion": "Predios suburbanos con edificaciones",
+        "tasa_millar": 0.0015,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "rustico",
+        "clave": "predios_rusticos",
+        "descripcion": "Predios rústicos",
+        "tasa_millar": 0.003,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "urbano",
+        "clave": "predios_urbanos_y_suburbanos_sin_edificaciones_baldios",
+        "descripcion": "Predios urbanos y suburbanos sin edificaciones (baldíos)",
+        "tasa_millar": 0.003,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "urbano",
+        "clave": "predios_urbanos_uso_industrial",
+        "descripcion": "Predios urbanos de uso industrial",
+        "tasa_millar": 0.003,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      }
+    ],
     "minimo_predial": null,
-    "comentarios": "No es posible extraer la mecánica tarifaria a partir de este segmento."
+    "comentarios": "Artículo 9, Sección Segunda: base de cálculo = valor catastral de los inmuebles. Tasas anuales categóricas por tipo de predio: urbanos con edificaciones 1.5 al millar; suburbanos con edificaciones 1.5 al millar; rústicos 3.0 al millar; urbanos y suburbanos sin edificaciones (baldíos) 3.0 al millar; urbanos de uso industrial 3.0 al millar. Se menciona que los lotes de fraccionamientos autorizados que no construyan en tres años pagan 100% más del impuesto, y que los propietarios de fraccionamientos autorizados pagan 100% de aumento por predios no vendidos; se documenta como mención accesoria, no como mecánica principal."
   },
   "_meta": {
     "fuente": "txt",
@@ -13,15 +52,15 @@
   },
   "_meta_v2": {
     "intentos": 1,
-    "requiere_revision": true,
+    "requiere_revision": false,
     "escalado": false,
-    "razon": "clasificado_como_otro_no_clasificado",
-    "usado_reocr": true,
-    "usado_vision": true,
+    "razon": null,
+    "usado_reocr": false,
+    "usado_vision": false,
     "tokens": {
-      "input": 21756,
-      "output": 536,
-      "cached": 17664
+      "input": 8965,
+      "output": 478,
+      "cached": 5888
     },
     "cvegeo": "28027",
     "estado": "tamaulipas",

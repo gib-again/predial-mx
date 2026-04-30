@@ -4,31 +4,79 @@
     "tabla": [
       {
         "grupo": "urbano",
-        "clave": "urbano_con_edificaciones",
-        "descripcion": "Inmuebles urbanos y suburbanos con edificaciones; a la entrada en vigor de la presente y durante 2002 a 2020, inclusive",
+        "clave": "urbanos_y_suburbanos_con_edificaciones",
+        "descripcion": "Inmuebles urbanos y suburbanos con edificaciones; tasa anual según antigüedad del valor determinado o modificado.",
         "tasa_millar": 0.0024,
         "periodicidad": "anual",
         "cuota_fija_adicional": null
       },
       {
         "grupo": "urbano",
-        "clave": "urbano_sin_edificaciones",
-        "descripcion": "Inmuebles urbanos y suburbanos sin edificaciones; a la entrada en vigor de la presente y durante 2002 a 2020, inclusive",
+        "clave": "urbanos_y_suburbanos_sin_edificaciones",
+        "descripcion": "Inmuebles urbanos y suburbanos sin edificaciones; tasa anual según antigüedad del valor determinado o modificado.",
         "tasa_millar": 0.0045,
         "periodicidad": "anual",
         "cuota_fija_adicional": null
       },
       {
         "grupo": "rustico",
-        "clave": "rustico",
-        "descripcion": "Inmuebles rústicos; a la entrada en vigor de la presente y durante 2002 a 2020, inclusive",
+        "clave": "rusticos_con_edificaciones",
+        "descripcion": "Inmuebles rústicos con edificaciones; tasa anual según antigüedad del valor determinado o modificado.",
         "tasa_millar": 0.0018,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "urbano",
+        "clave": "urbanos_y_suburbanos_con_edificaciones_anterior_2002_hasta_1993",
+        "descripcion": "Con anterioridad al año 2002 y hasta el año 1993, inclusive.",
+        "tasa_millar": 0.008,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "urbano",
+        "clave": "urbanos_y_suburbanos_sin_edificaciones_anterior_2002_hasta_1993",
+        "descripcion": "Con anterioridad al año 2002 y hasta el año 1993, inclusive.",
+        "tasa_millar": 0.015,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "rustico",
+        "clave": "rusticos_anterior_2002_hasta_1993",
+        "descripcion": "Con anterioridad al año 2002 y hasta el año 1993, inclusive.",
+        "tasa_millar": 0.006,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "urbano",
+        "clave": "urbanos_y_suburbanos_con_edificaciones_anterior_1993",
+        "descripcion": "Con anterioridad al año de 1993.",
+        "tasa_millar": 0.013,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "urbano",
+        "clave": "urbanos_y_suburbanos_sin_edificaciones_anterior_1993",
+        "descripcion": "Con anterioridad al año de 1993.",
+        "tasa_millar": 0.013,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "rustico",
+        "clave": "rusticos_anterior_1993",
+        "descripcion": "Con anterioridad al año de 1993.",
+        "tasa_millar": 0.012,
         "periodicidad": "anual",
         "cuota_fija_adicional": null
       }
     ],
     "minimo_predial": null,
-    "comentarios": "Art. 4 establece tasas anuales al millar sobre el valor determinado o modificado del inmueble para inmuebles urbanos y suburbanos con edificación (2.4 al millar), urbanos y suburbanos sin edificación (4.5 al millar) e inmuebles rústicos (1.8 al millar). Aunque el texto trae renglones históricos por años de antigüedad, la mecánica principal extraíble es un catálogo categórico de tasas por tipo de inmueble; las tablas de valores unitarios de los arts. 5 y 6 son valuación catastral, no tarifa predial. Se omiten descuentos, recargos y bonificaciones."
+    "comentarios": "Art. 4: tasas anuales al millar para inmuebles urbanos y suburbanos (con edificación / sin edificación) y para inmuebles rústicos, con tres tramos de antigüedad del valor determinado o modificado. El texto también contiene Art. 5 sobre valores unitarios de suelo y construcción, que es catastro/avalúo y no se transcribe como mecánica del impuesto."
   },
   "_meta": {
     "fuente": "txt",
@@ -43,7 +91,7 @@
     "usado_vision": false,
     "tokens": {
       "input": 8759,
-      "output": 392,
+      "output": 714,
       "cached": 5888
     },
     "cvegeo": "11019",

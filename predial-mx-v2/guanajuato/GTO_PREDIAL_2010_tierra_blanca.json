@@ -4,31 +4,31 @@
     "tabla": [
       {
         "grupo": "urbano",
-        "clave": "con_edificaciones",
-        "descripcion": "Inmuebles urbanos y suburbanos con edificaciones, para el año 2010; aplica tasa anual sobre valor catastral determinado o modificado.",
+        "clave": "urbanos_con_edificaciones",
+        "descripcion": "Inmuebles urbanos y suburbanos con edificaciones (a la entrada en vigor de la ley).",
         "tasa_millar": 0.0024,
         "periodicidad": "anual",
         "cuota_fija_adicional": null
       },
       {
         "grupo": "urbano",
-        "clave": "sin_edificaciones",
-        "descripcion": "Inmuebles urbanos y suburbanos sin edificaciones, para el año 2010; aplica tasa anual sobre valor catastral determinado o modificado.",
+        "clave": "urbanos_sin_edificaciones",
+        "descripcion": "Inmuebles urbanos y suburbanos sin edificaciones (a la entrada en vigor de la ley).",
         "tasa_millar": 0.0045,
         "periodicidad": "anual",
         "cuota_fija_adicional": null
       },
       {
         "grupo": "rustico",
-        "clave": "general",
-        "descripcion": "Inmuebles rústicos, para el año 2010; aplica tasa anual sobre valor catastral determinado o modificado.",
+        "clave": "rusticos",
+        "descripcion": "Inmuebles rústicos.",
         "tasa_millar": 0.0018,
         "periodicidad": "anual",
         "cuota_fija_adicional": null
       }
     ],
     "minimo_predial": null,
-    "comentarios": "Art. 4: la mecánica principal es una tarifa categórica al millar por tipo de inmueble y condición. Se observa además una serie histórica en el propio artículo para años 2002-2009 y anteriores, pero para 2010 se extraen las tasas vigentes del cuadro de la fracción correspondiente. No se incluyen valores unitarios de terreno/construcción de los arts. 5-6 porque son tablas catastrales, no tarifa del impuesto."
+    "comentarios": "Art. 4: la tasa principal del predial es un catálogo categórico de tasas al millar sobre valor catastral, sin rangos de valor catastral. El texto muestra tres grupos principales: inmuebles urbanos y suburbanos con edificaciones, urbanos y suburbanos sin edificaciones, e inmuebles rústicos. Además aparecen tasas históricas para años 2002-2009 y anteriores (2.4, 4.5, 1.8; 3, 15, 6; 13 y 12 al millar), pero se conserva como mecánica principal la tabla vigente inicial del artículo."
   },
   "_meta": {
     "fuente": "txt",
@@ -43,7 +43,7 @@
     "usado_vision": false,
     "tokens": {
       "input": 8520,
-      "output": 345,
+      "output": 344,
       "cached": 5888
     },
     "cvegeo": "11040",

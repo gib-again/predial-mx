@@ -11,57 +11,57 @@
       },
       {
         "n_rango": 2,
-        "inferior": 5000.01,
+        "inferior": 5000.0,
         "superior": 7500.0,
         "cuota_fija": 45.0,
         "tasa_marginal": 0.003
       },
       {
         "n_rango": 3,
-        "inferior": 7500.01,
+        "inferior": 7500.0,
         "superior": 10500.0,
         "cuota_fija": 53.0,
         "tasa_marginal": 0.0045
       },
       {
         "n_rango": 4,
-        "inferior": 10500.01,
+        "inferior": 10500.0,
         "superior": 12500.0,
         "cuota_fija": 55.0,
         "tasa_marginal": 0.006
       },
       {
         "n_rango": 5,
-        "inferior": 12500.01,
+        "inferior": 12500.0,
         "superior": 15500.0,
         "cuota_fija": 58.0,
         "tasa_marginal": 0.0075
       },
       {
         "n_rango": 6,
-        "inferior": 15500.01,
+        "inferior": 15500.0,
         "superior": null,
         "cuota_fija": 67.0,
         "tasa_marginal": 0.009
       }
     ],
     "minimo_predial": null,
-    "comentarios": "Art. 13: tarifa progresiva anual por valor catastral con cuota fija + factor sobre el excedente del límite inferior. Tarifa paralela: predios destinados a la producción agropecuaria pagan 10 al millar anual sobre el valor registrado o catastral; se documenta sólo como tarifa secundaria porque no integra la mecánica principal de la tabla. Se omiten valores unitarios de terreno y construcción por ser catastro, no tarifa. Art. 14 contiene descuentos y se ignora."
+    "comentarios": "Artículo 13: el impuesto se calcula sobre el valor catastral; la diferencia entre el valor catastral y el límite inferior se multiplica por el factor aplicable y el resultado se suma a la cuota fija anual respectiva. Tarifa paralela no incluida en la tabla principal: todo predio destinado a la producción agropecuaria paga 10 al millar anual sobre el valor registrado o catastral, con el tope indicado por la legislación agraria federal para terrenos ejidales."
   },
   "_meta": {
     "fuente": "txt",
-    "modelo": "gpt-5.4-mini"
+    "modelo": "gpt-5.4"
   },
   "_meta_v2": {
     "intentos": 1,
     "requiere_revision": false,
-    "escalado": false,
-    "razon": null,
+    "escalado": true,
+    "razon": "escalado_a_gpt-5.4_tras_2x_mini_fallido",
     "usado_reocr": false,
     "usado_vision": false,
     "tokens": {
       "input": 7437,
-      "output": 371,
+      "output": 359,
       "cached": 5888
     },
     "cvegeo": "31043",

@@ -4,15 +4,15 @@
     "tabla": [
       {
         "grupo": "urbano",
-        "clave": "urbano_y_suburbano",
-        "descripcion": "Predios urbanos y suburbanos sobre valor catastral",
+        "clave": "predios_urbanos_y_suburbanos",
+        "descripcion": "Predios urbanos y suburbanos",
         "tasa_millar": 0.0016,
         "periodicidad": "anual",
         "cuota_fija_adicional": null
       },
       {
         "grupo": "urbano",
-        "clave": "urbano_no_edificado",
+        "clave": "predios_urbanos_no_edificados",
         "descripcion": "Predios urbanos no edificados: aumento del 100% sobre la tasa del artículo 6",
         "tasa_millar": 0.0032,
         "periodicidad": "anual",
@@ -20,7 +20,7 @@
       },
       {
         "grupo": "urbano",
-        "clave": "urbano_edificacion_menor_a_quinta_parte",
+        "clave": "predios_urbanos_con_edificacion_inferior_a_quinta_parte_del_terreno",
         "descripcion": "Predios urbanos cuya edificación tenga un valor inferior a la quinta parte del valor del terreno: aumento del 50% sobre la tasa del artículo 6",
         "tasa_millar": 0.0024,
         "periodicidad": "anual",
@@ -28,8 +28,8 @@
       },
       {
         "grupo": "rustico",
-        "clave": "rustico",
-        "descripcion": "Predios rústicos sobre valor catastral",
+        "clave": "predios_rusticos",
+        "descripcion": "Predios rústicos sobre el valor catastral",
         "tasa_millar": 0.0015,
         "periodicidad": "anual",
         "cuota_fija_adicional": null
@@ -38,9 +38,9 @@
     "minimo_predial": {
       "monto": 3.0,
       "periodicidad": "anual",
-      "unidad": "salarios_minimos"
+      "unidad": "salarios"
     },
-    "comentarios": "Art. 6: tasa general de 1.6 al millar para predios urbanos y suburbanos; para predios urbanos no edificados se aumenta 100% y para predios urbanos con edificación inferior a la quinta parte del valor del terreno se aumenta 50%. Art. 7: predios rústicos pagan 1.5 al millar anual sobre valor catastral. Art. 8 establece mínimo anual de 3 salarios mínimos en zonas urbanas 6, 7 y 8 y en predios rústicos de hasta 16 hectáreas, y de 5 salarios mínimos en zonas urbanas 1 a 5 y en predios rústicos mayores de 16-01 hectáreas."
+    "comentarios": "Art. 6: tasa general de 1.6 al millar para predios urbanos y suburbanos; fracc. I aumenta 100% para predios urbanos no edificados (3.2 al millar); fracc. II aumenta 50% para predios urbanos con edificación inferior a la quinta parte del valor del terreno (2.4 al millar). Art. 7: predios rústicos pagan 1.5 al millar anual sobre valor catastral. Art. 8 establece mínimo predial de 3 salarios mínimos en zonas urbanas 6, 7 y 8 y en predios rústicos de hasta 16 hectáreas; 5 salarios mínimos en zonas urbanas 1 a 5 y en predios rústicos mayores de 16-01 hectáreas."
   },
   "_meta": {
     "fuente": "txt",
@@ -55,7 +55,7 @@
     "usado_vision": false,
     "tokens": {
       "input": 6622,
-      "output": 459,
+      "output": 490,
       "cached": 5888
     },
     "cvegeo": "28035",

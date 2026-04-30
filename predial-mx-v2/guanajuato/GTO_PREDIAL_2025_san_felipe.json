@@ -1,11 +1,42 @@
 {
   "predial": {
-    "tipo_esquema": "otro_no_clasificado",
-    "categoria": "segmento_vacio",
-    "descripcion_estructural": "El texto proporcionado no contiene el articulado ni tablas del apartado 'Del Impuesto Predial'; sólo aparece el encabezado general del decreto y páginas en blanco o sin contenido tarifario extraíble para predial. No es posible transcribir una mecánica de cálculo sin inventarla.",
-    "tabla_cruda": [],
+    "tipo_esquema": "tarifa_millar",
+    "tabla": [
+      {
+        "grupo": "general",
+        "clave": "general_urbano_con_edificaciones",
+        "descripcion": "Inmuebles urbanos y suburbanos con edificaciones",
+        "tasa_millar": 0.0024,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "general",
+        "clave": "general_urbano_sin_edificaciones",
+        "descripcion": "Inmuebles urbanos y suburbanos sin edificaciones",
+        "tasa_millar": 0.005,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "general",
+        "clave": "general_rustico_con_edificaciones",
+        "descripcion": "Inmuebles rústicos con edificaciones",
+        "tasa_millar": 0.0018,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "general",
+        "clave": "general_rustico_sin_edificaciones",
+        "descripcion": "Inmuebles rústicos sin edificaciones",
+        "tasa_millar": 0.013,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      }
+    ],
     "minimo_predial": null,
-    "comentarios": "No se detectó contenido tarifario del impuesto predial en el segmento aportado."
+    "comentarios": "Art. 5: tasas anuales del impuesto predial para 2025. La tabla del texto aparece como un cuadro de cuatro tasas para inmuebles urbanos y suburbanos con/sin edificaciones, y para inmuebles rústicos con/sin edificaciones. Se omiten valores unitarios de terreno y construcción porque corresponden a catastro/valuación, no a la mecánica del impuesto. En la imagen OCR hay renglones con caracteres corruptos, pero la secuencia visible es 2.4 al millar, 5 al millar, 1.8 al millar y 13 al millar; se transcribe la estructura tarifaria principal como catálogo de tasas al millar."
   },
   "_meta": {
     "fuente": "txt",
@@ -13,15 +44,15 @@
   },
   "_meta_v2": {
     "intentos": 1,
-    "requiere_revision": true,
+    "requiere_revision": false,
     "escalado": false,
-    "razon": "clasificado_como_otro_no_clasificado",
-    "usado_reocr": true,
-    "usado_vision": true,
+    "razon": null,
+    "usado_reocr": false,
+    "usado_vision": false,
     "tokens": {
-      "input": 31828,
-      "output": 427,
-      "cached": 17664
+      "input": 7674,
+      "output": 399,
+      "cached": 5888
     },
     "cvegeo": "11030",
     "estado": "guanajuato",

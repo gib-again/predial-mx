@@ -3,16 +3,16 @@
     "tipo_esquema": "tarifa_millar",
     "tabla": [
       {
-        "grupo": "urbano",
-        "clave": "inmuebles_urbanos_suburbanos_con_edificaciones",
+        "grupo": "general",
+        "clave": "urbano_con_edificaciones",
         "descripcion": "Inmuebles urbanos y suburbanos con edificaciones",
         "tasa_millar": 0.0024,
         "periodicidad": "anual",
         "cuota_fija_adicional": null
       },
       {
-        "grupo": "urbano",
-        "clave": "inmuebles_urbanos_suburbanos_sin_edificaciones",
+        "grupo": "general",
+        "clave": "urbano_sin_edificaciones",
         "descripcion": "Inmuebles urbanos y suburbanos sin edificaciones",
         "tasa_millar": 0.0045,
         "periodicidad": "anual",
@@ -20,7 +20,7 @@
       },
       {
         "grupo": "rustico",
-        "clave": "inmuebles_rusticos",
+        "clave": "rustico",
         "descripcion": "Inmuebles rústicos",
         "tasa_millar": 0.0018,
         "periodicidad": "anual",
@@ -28,7 +28,7 @@
       }
     ],
     "minimo_predial": null,
-    "comentarios": "Art. 4: tasa anual según tipo de inmueble y existencia de edificaciones. Los inmuebles urbanos y suburbanos con un valor determinado o modificado pagan 2.4 al millar con edificaciones y 4.5 al millar sin edificaciones; los inmuebles rústicos pagan 1.8 al millar. El texto también menciona tasas históricas para inmuebles con valor determinado o modificado con anterioridad a años específicos, pero la mecánica principal del ejercicio 2021 es la tabla de tasas vigente. Los artículos 5 y 6 contienen valores unitarios y criterios de valuación catastral, no una tarifa adicional del impuesto."
+    "comentarios": "Artículo 4: tasas anuales al millar sobre el valor catastral. Se transcribe la tarifa principal por tipo de inmueble. No se incluye la tabla de valores unitarios de terreno y construcción de los artículos 5 y 6 porque corresponde a valuación catastral, no a la mecánica de cálculo del impuesto. No se advierten brackets por valor catastral ni cuota fija adicional."
   },
   "_meta": {
     "fuente": "txt",
@@ -43,7 +43,7 @@
     "usado_vision": false,
     "tokens": {
       "input": 8628,
-      "output": 349,
+      "output": 275,
       "cached": 5888
     },
     "cvegeo": "11033",

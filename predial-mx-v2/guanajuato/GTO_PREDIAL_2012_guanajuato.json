@@ -28,7 +28,7 @@
       }
     ],
     "minimo_predial": null,
-    "comentarios": "Artículo 4: tasa anual sobre el valor catastral. Se transcriben las tasas para inmuebles con valor determinado o modificado a la entrada en vigor de la ley y para los determinados o modificados durante 2002 a 2011; también se prevén tasas distintas para inmuebles con valor determinado o modificado con anterioridad a 2002 y hasta 1993 inclusive: urbanos y suburbanos con edificaciones 8 al millar, urbanos y suburbanos sin edificaciones 15 al millar, rústicos 6 al millar. Se documenta solo la tarifa principal predominante; la ley contiene una tarifa paralela por antigüedad del valor catastral, sin brackets de valor ni mezcla de unidades. Artículos 5 y 6 corresponden a valores unitarios y criterios de avalúo, no a la mecánica del impuesto."
+    "comentarios": "Artículo 4. Mecánica principal del impuesto predial anual por tasa al millar sobre el valor catastral, con tres categorías: inmuebles urbanos y suburbanos con edificaciones 2.4 al millar; urbanos y suburbanos sin edificaciones 4.5 al millar; rústicos 1.8 al millar. El texto repite las tasas para inmuebles con valor determinado o modificado en distintos periodos; se transcriben como una sola tarifa por categoría porque la mecánica tarifaria es categórica y no por rangos."
   },
   "_meta": {
     "fuente": "txt",
@@ -43,7 +43,7 @@
     "usado_vision": false,
     "tokens": {
       "input": 8942,
-      "output": 374,
+      "output": 310,
       "cached": 5888
     },
     "cvegeo": "11015",

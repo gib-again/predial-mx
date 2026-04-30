@@ -32,7 +32,7 @@
       }
     ],
     "minimo_predial": null,
-    "comentarios": "Artículo 19: impuesto predial determinado con base en el valor catastral de los predios mediante tarifa por rangos con cuota fija y factor sobre el excedente. Artículo 21 establece una tarifa secundaria para predios con rentas o frutos civiles: 5% sobre la renta o frutos civiles mensuales por casas y 5% sobre la renta o frutos civiles mensuales por actividades; se documenta sólo como referencia secundaria porque no es la mecánica predominante del predial en el artículo principal."
+    "comentarios": "Art. 19: tarifa por valor catastral con cuota fija + factor para aplicar al excedente del límite inferior, expresada en brackets progresivos. Art. 21 establece una tarifa secundaria sobre rentas o frutos civiles mensuales (5% sobre casas y 5% sobre actividades), documentada fuera de la tabla principal por ser una mecánica paralela no predominante."
   },
   "_meta": {
     "fuente": "txt",
@@ -47,7 +47,7 @@
     "usado_vision": false,
     "tokens": {
       "input": 16163,
-      "output": 312,
+      "output": 280,
       "cached": 5888
     },
     "cvegeo": "31059",

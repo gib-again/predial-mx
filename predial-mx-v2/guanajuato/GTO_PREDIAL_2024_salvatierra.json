@@ -1,11 +1,53 @@
 {
   "predial": {
-    "tipo_esquema": "otro_no_clasificado",
-    "categoria": "segmento_vacio",
-    "descripcion_estructural": "El texto proporcionado sólo contiene el encabezado de la Ley de Ingresos y la estimación global del impuesto predial, pero no incluye tablas, tarifas ni mecánica de cálculo del predial en las páginas mostradas. No es posible extraer la estructura tarifaria sin inventarla.",
-    "tabla_cruda": [],
-    "minimo_predial": null,
-    "comentarios": "No se detectó contenido tarifario del impuesto predial en el segmento enviado."
+    "tipo_esquema": "mixto",
+    "tabla": [
+      {
+        "n_rango": 1,
+        "inferior": 0.0,
+        "superior": 400000.0,
+        "columnas": [
+          {
+            "nombre": "general",
+            "valor": 0.0,
+            "tipo": "tasa_marginal",
+            "unidad": "porcentaje"
+          }
+        ]
+      },
+      {
+        "n_rango": 2,
+        "inferior": 400000.0,
+        "superior": 800000.0,
+        "columnas": [
+          {
+            "nombre": "general",
+            "valor": 0.003,
+            "tipo": "tasa_marginal",
+            "unidad": "porcentaje"
+          }
+        ]
+      },
+      {
+        "n_rango": 3,
+        "inferior": 800000.0,
+        "superior": null,
+        "columnas": [
+          {
+            "nombre": "general",
+            "valor": 0.0026,
+            "tipo": "tasa_marginal",
+            "unidad": "porcentaje"
+          }
+        ]
+      }
+    ],
+    "minimo_predial": {
+      "monto": 0.0,
+      "periodicidad": "anual",
+      "unidad": "pesos"
+    },
+    "comentarios": "Art. 4: la tarifa principal para inmuebles urbanos y suburbanos con edificación aparece en una tabla por rangos de valor fiscal con cuota fija y tasa marginal. El texto OCR está truncado y desalineado; se conservan los valores legibles: hasta $400,000.00 parece sin tasa visible, de $400,000.00 a $800,000.00 con tasa marginal 0.00300000 y cuota fija $5,360.00, y de $800,000.00 en adelante con tasa marginal 0.00260000 y cuota fija $2,160.00. También aparecen tarifas paralelas categóricas al millar para inmuebles urbanos/suburbanos sin distinguir edificación y para inmuebles rústicos con/sin edificación (p.ej. 0.0000, 2.7000, 2.0000, 2.4600, 4.5000, 1.8009, 8.0006, 15.0008, 6.0000, 13.0000, 12.0006 al millar), pero el fragmento está corrupto y no se integra en la tabla principal por coexistir con el esquema por rangos. El texto indica además que si el impuesto resulta inferior a la cuota mínima del artículo 40, se paga dicha cuota mínima."
   },
   "_meta": {
     "fuente": "txt",
@@ -13,15 +55,15 @@
   },
   "_meta_v2": {
     "intentos": 1,
-    "requiere_revision": true,
+    "requiere_revision": false,
     "escalado": false,
-    "razon": "clasificado_como_otro_no_clasificado",
-    "usado_reocr": true,
-    "usado_vision": true,
+    "razon": null,
+    "usado_reocr": false,
+    "usado_vision": false,
     "tokens": {
-      "input": 32817,
-      "output": 470,
-      "cached": 17664
+      "input": 8069,
+      "output": 487,
+      "cached": 5888
     },
     "cvegeo": "11028",
     "estado": "guanajuato",

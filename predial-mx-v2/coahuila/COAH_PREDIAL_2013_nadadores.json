@@ -24,7 +24,7 @@
       "periodicidad": "bimestral",
       "unidad": "pesos"
     },
-    "comentarios": "Art. 2: tasas paralelas por tipo de predio: urbanos 5 al millar anual y rústicos 3 al millar anual. El artículo también establece un mínimo predial de $21.60 por bimestre. Se ignoran descuentos/bonificaciones por pronto pago y para pensionados, jubilados, adultos mayores y personas con discapacidad."
+    "comentarios": "Art. 2: predios urbanos pagan 5 al millar anual sobre valor catastral; predios rústicos pagan 3 al millar anual sobre valor catastral. El texto fija un mínimo de $21.60 por bimestre. Se ignoran descuentos, bonificaciones e incentivos de pago anticipado y de pensionados/jubilados/adultos mayores/personas con discapacidad por instrucción."
   },
   "_meta": {
     "fuente": "txt",
@@ -39,7 +39,7 @@
     "usado_vision": false,
     "tokens": {
       "input": 6340,
-      "output": 227,
+      "output": 239,
       "cached": 5888
     },
     "cvegeo": "05021",

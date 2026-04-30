@@ -1,28 +1,50 @@
 {
   "predial": {
-    "tipo_esquema": "otro_no_clasificado",
-    "categoria": "estructura_no_estandar",
-    "descripcion_estructural": "El texto proporcionado sólo establece que el impuesto se causa sobre el valor catastral de los bienes raíces y remite a las fracciones del artículo 10, pero en el segmento enviado no aparecen las tarifas o tablas de cálculo aplicables. Las fracciones visibles contienen exclusiones y aumentos por incumplimiento, no la mecánica tarifaria principal extraíble.",
-    "tabla_cruda": [
+    "tipo_esquema": "tarifa_millar",
+    "tabla": [
       {
-        "descripcion": "Artículo 10: base del impuesto",
-        "valores": "base=valor_catastral; se causa y liquida anualmente sobre inmuebles cuyo valor se determine o modifique a partir de la entrada en vigor de la ley"
+        "grupo": "urbano",
+        "clave": "predios_urbanos_con_edificaciones",
+        "descripcion": "Predios urbanos con edificaciones",
+        "tasa_millar": 0.0015,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
       },
       {
-        "descripcion": "Fracción VI",
-        "valores": "predios urbanos no edificados de fraccionamientos autorizados: no se aplica la tasa prevista en la fracción IV"
+        "grupo": "urbano",
+        "clave": "predios_suburbanos_con_edificaciones",
+        "descripcion": "Predios suburbanos con edificaciones",
+        "tasa_millar": 0.0015,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
       },
       {
-        "descripcion": "Fracción VII",
-        "valores": "adquirientes de lotes de fraccionamientos que no construyan en 3 años: pagarán 100% más del impuesto al término de ese tiempo"
+        "grupo": "rustico",
+        "clave": "predios_rusticos",
+        "descripcion": "Predios rústicos",
+        "tasa_millar": 0.003,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
       },
       {
-        "descripcion": "Fracción VIII",
-        "valores": "fraccionadores autorizados: pagarán 100% de aumento al impuesto por predios no vendidos en 3 años a partir de la autorización oficial de la venta"
+        "grupo": "urbano",
+        "clave": "predios_urbanos_y_suburbanos_sin_edificaciones_baldios",
+        "descripcion": "Predios urbanos y suburbanos sin edificaciones (baldíos)",
+        "tasa_millar": 0.003,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "industrial",
+        "clave": "predios_urbanos_de_uso_industrial",
+        "descripcion": "Predios urbanos de uso industrial",
+        "tasa_millar": 0.003,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
       }
     ],
     "minimo_predial": null,
-    "comentarios": "No se transcribe una tarifa principal porque el fragmento no incluye la fracción IV ni la tabla correspondiente. Las disposiciones visibles son reglas especiales, exclusiones y recargos/aumentos, que se ignoran para la mecánica base."
+    "comentarios": "Artículo 13: tabla de tasas anuales al millar sobre el valor catastral para la propiedad urbana, suburbana y rústica. No se observan rangos de valor catastral. Las fracciones VII y VIII prevén aumentos del 100% para ciertos predios/fraccionadores si no construyen o no venden en plazo; se documentan sólo como disposición accesoria y no alteran la mecánica base."
   },
   "_meta": {
     "fuente": "txt",
@@ -30,14 +52,14 @@
   },
   "_meta_v2": {
     "intentos": 1,
-    "requiere_revision": true,
+    "requiere_revision": false,
     "escalado": false,
-    "razon": "clasificado_como_otro_no_clasificado",
+    "razon": null,
     "usado_reocr": false,
     "usado_vision": false,
     "tokens": {
-      "input": 6406,
-      "output": 355,
+      "input": 8876,
+      "output": 401,
       "cached": 5888
     },
     "cvegeo": "28027",

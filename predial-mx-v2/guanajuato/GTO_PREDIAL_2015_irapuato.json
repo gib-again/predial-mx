@@ -4,7 +4,7 @@
     "tabla": [
       {
         "grupo": "urbano",
-        "clave": "con_edificaciones",
+        "clave": "urbano_con_edificaciones",
         "descripcion": "Inmuebles urbanos y suburbanos con edificaciones",
         "tasa_millar": 0.00339,
         "periodicidad": "anual",
@@ -12,7 +12,7 @@
       },
       {
         "grupo": "urbano",
-        "clave": "sin_edificaciones",
+        "clave": "urbano_sin_edificaciones",
         "descripcion": "Inmuebles urbanos y suburbanos sin edificaciones",
         "tasa_millar": 0.00565,
         "periodicidad": "anual",
@@ -28,7 +28,7 @@
       }
     ],
     "minimo_predial": null,
-    "comentarios": "Art. 4 establece tasas anuales al millar por categoría de inmueble. Para urbanos y suburbanos hay dos tasas según cuenten con edificaciones o no; para rústicos se fija una tasa paralela de 0.40 al millar. La tabla principal recoge el esquema tarifario del artículo 4; los artículos 5 y 6 contienen valores unitarios y criterios de valuación, no la mecánica del impuesto."
+    "comentarios": "Artículo 4 establece tasas anuales al millar por categoría de inmueble y por condición de edificación. La tabla del artículo 4 contiene dos tasas para urbanos/suburbanos (con y sin edificaciones) y una tasa para inmuebles rústicos. Las filas posteriores del artículo 5 son valores unitarios catastrales para avalúo y no forman parte de la mecánica del impuesto predial."
   },
   "_meta": {
     "fuente": "txt",
@@ -43,7 +43,7 @@
     "usado_vision": false,
     "tokens": {
       "input": 10786,
-      "output": 278,
+      "output": 284,
       "cached": 5888
     },
     "cvegeo": "11017",

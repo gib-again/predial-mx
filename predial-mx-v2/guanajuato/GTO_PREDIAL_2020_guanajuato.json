@@ -4,7 +4,7 @@
     "tabla": [
       {
         "grupo": "urbano",
-        "clave": "urbano_con_edificaciones",
+        "clave": "urbanos_y_suburbanos_con_edificaciones",
         "descripcion": "Inmuebles urbanos y suburbanos con edificaciones",
         "tasa_millar": 0.0024,
         "periodicidad": "anual",
@@ -12,7 +12,7 @@
       },
       {
         "grupo": "urbano",
-        "clave": "urbano_sin_edificaciones",
+        "clave": "urbanos_y_suburbanos_sin_edificaciones",
         "descripcion": "Inmuebles urbanos y suburbanos sin edificaciones",
         "tasa_millar": 0.0045,
         "periodicidad": "anual",
@@ -20,15 +20,39 @@
       },
       {
         "grupo": "rustico",
-        "clave": "rustico",
+        "clave": "rusticos",
         "descripcion": "Inmuebles rústicos",
+        "tasa_millar": 0.0018,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "urbano",
+        "clave": "urbanos_y_suburbanos_con_edificaciones_historico_2002_2019",
+        "descripcion": "Inmuebles urbanos y suburbanos con edificaciones, valores determinados o modificados durante 2002 a 2019",
+        "tasa_millar": 0.0024,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "urbano",
+        "clave": "urbanos_y_suburbanos_sin_edificaciones_historico_2002_2019",
+        "descripcion": "Inmuebles urbanos y suburbanos sin edificaciones, valores determinados o modificados durante 2002 a 2019",
+        "tasa_millar": 0.0045,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "rustico",
+        "clave": "rusticos_historico_2002_2019",
+        "descripcion": "Inmuebles rústicos, valores determinados o modificados durante 2002 a 2019",
         "tasa_millar": 0.0018,
         "periodicidad": "anual",
         "cuota_fija_adicional": null
       }
     ],
     "minimo_predial": null,
-    "comentarios": "Art. 4: tasas anuales sobre el valor catastral según tipo de inmueble. Se transcriben dos bloques equivalentes de tasas: fracción I (valor determinado o modificado a la entrada en vigor) y fracción II (valor determinado o modificado durante 2002-2019), con las mismas tasas: urbanos y suburbanos con edificaciones 2.4 al millar; urbanos y suburbanos sin edificaciones 4.5 al millar; rústicos 1.8 al millar. La mecánica principal es un catálogo categórico de tasas al millar; los Artículos 5 y 6 contienen valores unitarios/criterios de avalúo, no la tarifa del impuesto."
+    "comentarios": "Artículo 4 establece tasas anuales al millar sobre valor catastral para dos supuestos temporales (valores determinados/modificados a la entrada en vigor y valores determinados/modificados durante 2002-2019), con las mismas tasas por tipo de inmueble: urbanos y suburbanos con edificaciones 2.4 al millar, urbanos y suburbanos sin edificaciones 4.5 al millar, rústicos 1.8 al millar. Las tablas de valores unitarios de los artículos 5 y 6 son valores catastrales de avalúo, no mecánica de cálculo del predial; no se transcriben como tarifa. No se advierten cuotas fijas ni progresividad."
   },
   "_meta": {
     "fuente": "txt",
@@ -43,7 +67,7 @@
     "usado_vision": false,
     "tokens": {
       "input": 9011,
-      "output": 344,
+      "output": 577,
       "cached": 5888
     },
     "cvegeo": "11015",

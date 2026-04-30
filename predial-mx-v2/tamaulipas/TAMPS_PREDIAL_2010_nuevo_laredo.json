@@ -4,7 +4,7 @@
     "tabla": [
       {
         "grupo": "urbano",
-        "clave": "predios_urbanos_con_edificaciones",
+        "clave": "urbanos_con_edificaciones",
         "descripcion": "Predios urbanos con edificaciones",
         "tasa_millar": 1.46,
         "periodicidad": "anual",
@@ -12,7 +12,7 @@
       },
       {
         "grupo": "urbano",
-        "clave": "predios_suburbanos_con_edificaciones",
+        "clave": "suburbanos_con_edificaciones",
         "descripcion": "Predios suburbanos con edificaciones",
         "tasa_millar": 1.46,
         "periodicidad": "anual",
@@ -20,7 +20,7 @@
       },
       {
         "grupo": "rustico",
-        "clave": "predios_rusticos",
+        "clave": "rusticos",
         "descripcion": "Predios rústicos",
         "tasa_millar": 2.5,
         "periodicidad": "anual",
@@ -28,7 +28,7 @@
       },
       {
         "grupo": "urbano",
-        "clave": "predios_urbanos_y_suburbanos_sin_edificaciones_baldios",
+        "clave": "urbanos_y_suburbanos_sin_edificaciones_baldios",
         "descripcion": "Predios urbanos y suburbanos sin edificaciones (baldíos)",
         "tasa_millar": 2.92,
         "periodicidad": "anual",
@@ -36,7 +36,7 @@
       },
       {
         "grupo": "urbano",
-        "clave": "predios_urbanos_de_uso_industrial",
+        "clave": "urbanos_de_uso_industrial",
         "descripcion": "Predios urbanos de uso industrial",
         "tasa_millar": 2.92,
         "periodicidad": "anual",
@@ -44,7 +44,7 @@
       }
     ],
     "minimo_predial": null,
-    "comentarios": "Art. 9: impuesto sobre la propiedad urbana, suburbana y rústica determinado sobre el valor catastral. Las fracciones VI, VII y VIII establecen exenciones/recargos por fraccionamientos y no modifican la mecánica base de cálculo. La tasa es anual sobre valor catastral por categoría de predio."
+    "comentarios": "Art. 9: la mecánica principal es una tarifa al millar sobre valor catastral con categorías de predio. Las fracciones VI-VIII establecen reglas especiales de aumento del 100% para ciertos predios/propietarios de fraccionamientos y la no aplicación de la tasa de baldíos a predios urbanos no edificados propiedad de fraccionamientos autorizados; se documentan como disposiciones especiales no incorporadas a la tabla principal. Art. 10 corresponde al impuesto sobre adquisición de inmuebles, no al predial."
   },
   "_meta": {
     "fuente": "txt",
@@ -59,7 +59,7 @@
     "usado_vision": false,
     "tokens": {
       "input": 7563,
-      "output": 380,
+      "output": 408,
       "cached": 5888
     },
     "cvegeo": "28027",

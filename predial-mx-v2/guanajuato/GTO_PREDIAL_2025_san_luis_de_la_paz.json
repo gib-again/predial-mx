@@ -20,7 +20,7 @@
         "n_rango": 3,
         "inferior": 300000.01,
         "superior": 450000.0,
-        "cuota_fija": 875.0,
+        "cuota_fija": 750.0,
         "tasa_marginal": 0.0028
       },
       {
@@ -66,28 +66,24 @@
         "tasa_marginal": 0.004
       }
     ],
-    "minimo_predial": {
-      "monto": 360.0,
-      "periodicidad": "anual",
-      "unidad": "pesos"
-    },
-    "comentarios": "Artículo 4, fracción I: inmuebles urbanos y suburbanos con edificación con valores determinados o modificados a partir de la entrada en vigor de la Ley y hasta el año 2002 inclusive. Se transcriben los brackets como progresivo; la cuota fija del último rango se deriva del renglón '$1,200,000.01 En adelante 0.00400000 153,720.00', pero ese valor no puede conservarse literalmente porque el bracket válido debe ser el último con superior=null."
+    "minimo_predial": null,
+    "comentarios": "Art. 4 fracc. I: inmuebles urbanos y suburbanos con edificación, valores determinados o modificados a partir de la entrada en vigor de la Ley y hasta 2002 inclusive. Art. 4 fracc. II: inmuebles urbanos y suburbanos sin edificación, mismos periodos, con progresión análoga de cuotas fijas y tasas marginales. Art. 4 fracc. III: inmuebles rústicos con o sin edificación, ubicados fuera de centros de población, con valor determinado o modificado a partir de la entrada en vigor de la Ley y hasta 2002 inclusive, pagan tasa fija de 1.8 al millar sobre valor catastral; tarifa paralela no incluida en la tabla principal. Art. 4 fracc. IV: para inmuebles con valores determinados o modificados con anterioridad a 2002, aplica otra tarifa paralela (urbanos/suburbanos con edificación 8 al millar y 13 al millar según antigüedad; sin edificación 15 al millar y 13 al millar; rústicos 6 al millar y 12 al millar según antigüedad)."
   },
   "_meta": {
     "fuente": "txt",
     "modelo": "gpt-5.4-mini"
   },
   "_meta_v2": {
-    "intentos": 2,
+    "intentos": 1,
     "requiere_revision": false,
     "escalado": false,
     "razon": null,
     "usado_reocr": false,
     "usado_vision": false,
     "tokens": {
-      "input": 20206,
-      "output": 1535,
-      "cached": 11776
+      "input": 9776,
+      "output": 643,
+      "cached": 5888
     },
     "cvegeo": "11033",
     "estado": "guanajuato",

@@ -2,10 +2,10 @@
   "predial": {
     "tipo_esquema": "otro_no_clasificado",
     "categoria": "municipio_sin_impuesto",
-    "descripcion_estructural": "El segmento sólo contiene el pronóstico presupuestal del concepto \"Impuesto predial\" dentro del artículo de ingresos, pero no incluye tarifas, tasas, rangos, cuotas ni mecánica de cálculo. La propia nota del segmentador indica que las contribuciones se rigen por la Ley General de Hacienda Municipal del Estado de Yucatán, por lo que no hay estructura tarifaria municipal extraíble en este texto.",
+    "descripcion_estructural": "El segmento no contiene una mecánica de cálculo del impuesto predial. Sólo incluye el pronóstico de ingreso ('Impuesto predial $8,884,740.00') dentro del artículo de clasificaciones de ingresos, y la nota del segmentador indica expresamente que la ley de ingresos corta no trae tarifas, tasas, montos al millar ni rangos, remitiendo a la Ley General de Hacienda Municipal del Estado de Yucatán.",
     "tabla_cruda": [],
     "minimo_predial": null,
-    "comentarios": "Se documenta únicamente la existencia del rubro presupuestal por $8,884,740.00; no se extrae mecánica porque el texto no la contiene."
+    "comentarios": "No hay base tarifaria extraíble en el texto proporcionado."
   },
   "_meta": {
     "fuente": "txt",
@@ -20,7 +20,7 @@
     "usado_vision": false,
     "tokens": {
       "input": 7149,
-      "output": 179,
+      "output": 164,
       "cached": 5888
     },
     "cvegeo": "31013",

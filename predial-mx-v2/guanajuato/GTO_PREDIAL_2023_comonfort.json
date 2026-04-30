@@ -1,11 +1,34 @@
 {
   "predial": {
-    "tipo_esquema": "otro_no_clasificado",
-    "categoria": "segmento_vacio",
-    "descripcion_estructural": "El texto proporcionado no contiene el articulado ni tabla tarifaria del Impuesto Predial del municipio. Solo aparecen páginas con estimaciones de ingreso y no se incluye la mecánica de cálculo, por lo que no es posible extraer una estructura tarifaria.",
-    "tabla_cruda": [],
+    "tipo_esquema": "tarifa_millar",
+    "tabla": [
+      {
+        "grupo": "urbano",
+        "clave": "urbano_con_edificaciones",
+        "descripcion": "Inmuebles urbanos y suburbanos con edificaciones",
+        "tasa_millar": 0.0024,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "urbano",
+        "clave": "urbano_sin_edificaciones",
+        "descripcion": "Inmuebles urbanos y suburbanos sin edificaciones",
+        "tasa_millar": 0.0045,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "rustico",
+        "clave": "rustico",
+        "descripcion": "Inmuebles rústicos",
+        "tasa_millar": 0.0018,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      }
+    ],
     "minimo_predial": null,
-    "comentarios": ""
+    "comentarios": "Art. 3: para 2023 el impuesto predial se causa y liquida anualmente con tasas al millar diferenciadas por tipo de inmueble: urbanos y suburbanos con edificaciones 2.4 al millar; urbanos y suburbanos sin edificaciones 4.5 al millar; rústicos 1.8 al millar. El texto también contiene valores unitarios de terreno y construcción, pero eso corresponde a catastro/avalúo, no a la mecánica tarifaria del predial."
   },
   "_meta": {
     "fuente": "txt",
@@ -13,15 +36,15 @@
   },
   "_meta_v2": {
     "intentos": 1,
-    "requiere_revision": true,
+    "requiere_revision": false,
     "escalado": false,
-    "razon": "clasificado_como_otro_no_clasificado",
+    "razon": null,
     "usado_reocr": false,
-    "usado_vision": true,
+    "usado_vision": false,
     "tokens": {
-      "input": 25798,
-      "output": 291,
-      "cached": 11776
+      "input": 7837,
+      "output": 301,
+      "cached": 5888
     },
     "cvegeo": "11009",
     "estado": "guanajuato",

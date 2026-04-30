@@ -1,59 +1,143 @@
 {
   "predial": {
-    "tipo_esquema": "progresivo",
+    "tipo_esquema": "mixto",
     "tabla": [
       {
         "n_rango": 1,
         "inferior": 0.01,
         "superior": 5000.0,
-        "cuota_fija": 80.0,
-        "tasa_marginal": 1e-05
+        "columnas": [
+          {
+            "nombre": "general",
+            "valor": 80.0,
+            "tipo": "cuota_fija",
+            "unidad": "pesos"
+          },
+          {
+            "nombre": "general",
+            "valor": 1e-05,
+            "tipo": "tasa_marginal",
+            "unidad": "porcentaje"
+          }
+        ]
       },
       {
         "n_rango": 2,
         "inferior": 5000.01,
         "superior": 7500.0,
-        "cuota_fija": 110.0,
-        "tasa_marginal": 1e-05
+        "columnas": [
+          {
+            "nombre": "general",
+            "valor": 110.0,
+            "tipo": "cuota_fija",
+            "unidad": "pesos"
+          },
+          {
+            "nombre": "general",
+            "valor": 1e-05,
+            "tipo": "tasa_marginal",
+            "unidad": "porcentaje"
+          }
+        ]
       },
       {
         "n_rango": 3,
         "inferior": 7500.01,
         "superior": 10500.0,
-        "cuota_fija": 140.0,
-        "tasa_marginal": 1e-05
+        "columnas": [
+          {
+            "nombre": "general",
+            "valor": 140.0,
+            "tipo": "cuota_fija",
+            "unidad": "pesos"
+          },
+          {
+            "nombre": "general",
+            "valor": 1e-05,
+            "tipo": "tasa_marginal",
+            "unidad": "porcentaje"
+          }
+        ]
       },
       {
         "n_rango": 4,
         "inferior": 10500.01,
         "superior": 12500.0,
-        "cuota_fija": 170.0,
-        "tasa_marginal": 1e-05
+        "columnas": [
+          {
+            "nombre": "general",
+            "valor": 170.0,
+            "tipo": "cuota_fija",
+            "unidad": "pesos"
+          },
+          {
+            "nombre": "general",
+            "valor": 1e-05,
+            "tipo": "tasa_marginal",
+            "unidad": "porcentaje"
+          }
+        ]
       },
       {
         "n_rango": 5,
         "inferior": 12500.01,
         "superior": 15000.0,
-        "cuota_fija": 200.0,
-        "tasa_marginal": 1e-05
+        "columnas": [
+          {
+            "nombre": "general",
+            "valor": 200.0,
+            "tipo": "cuota_fija",
+            "unidad": "pesos"
+          },
+          {
+            "nombre": "general",
+            "valor": 1e-05,
+            "tipo": "tasa_marginal",
+            "unidad": "porcentaje"
+          }
+        ]
       },
       {
         "n_rango": 6,
         "inferior": 15000.01,
         "superior": 20000.0,
-        "cuota_fija": 240.0,
-        "tasa_marginal": 1e-05
+        "columnas": [
+          {
+            "nombre": "general",
+            "valor": 240.0,
+            "tipo": "cuota_fija",
+            "unidad": "pesos"
+          },
+          {
+            "nombre": "general",
+            "valor": 1e-05,
+            "tipo": "tasa_marginal",
+            "unidad": "porcentaje"
+          }
+        ]
       },
       {
         "n_rango": 7,
         "inferior": 20000.01,
         "superior": null,
-        "cuota_fija": 280.0,
-        "tasa_marginal": 1e-05
+        "columnas": [
+          {
+            "nombre": "general",
+            "valor": 280.0,
+            "tipo": "cuota_fija",
+            "unidad": "pesos"
+          },
+          {
+            "nombre": "general",
+            "valor": 1e-05,
+            "tipo": "tasa_marginal",
+            "unidad": "porcentaje"
+          }
+        ]
       }
     ],
     "minimo_predial": null,
-    "comentarios": "Art. 13: cuando la base del impuesto predial sea el valor catastral del inmueble, se aplica una tarifa por rangos con cuota fija anual y factor para aplicar al excedente del límite inferior. El texto también establece una tarifa paralela para predios destinados a la producción agropecuaria de 10 al millar anual sobre el valor registrado o catastral; se documenta sólo en comentarios por ser una tarifa secundaria/paralela. Las tablas de valores unitarios de terreno y construcción no se transcriben porque son catastro, no mecánica del impuesto. Art. 14 contiene un descuento por pronto pago y se ignora."
+    "comentarios": "Art. 13: mecánica principal por rangos de valor catastral con cuota fija anual + factor para aplicar al excedente del límite. La tabla transcrita usa 0.001 % en todos los brackets, que se registra como tasa marginal en la columna general. Tarifa paralela: predio destinado a la producción agropecuaria paga 10 al millar anual sobre el valor registrado o catastral; se documenta aquí como tarifa secundaria porque no forma parte de la tabla principal. También se mencionan tablas de valores unitarios de terreno y construcción, pero son catastro y no tarifa del predial."
   },
   "_meta": {
     "fuente": "txt",
@@ -68,7 +152,7 @@
     "usado_vision": false,
     "tokens": {
       "input": 7402,
-      "output": 446,
+      "output": 658,
       "cached": 5888
     },
     "cvegeo": "31019",

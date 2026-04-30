@@ -3,32 +3,32 @@
     "tipo_esquema": "tarifa_millar",
     "tabla": [
       {
-        "grupo": "urbano",
-        "clave": "con_edificaciones",
-        "descripcion": "Inmuebles urbanos y suburbanos con edificaciones; inmuebles que cuenten con un valor determinado o modificado, a la entrada en vigor de la ley, durante los años 2002 al 2020, inclusive, y con anterioridad al año 2002 y hasta 1993, inclusive, según la tabla del artículo 4.",
+        "grupo": "general",
+        "clave": "urbano_suburbano_con_edificaciones",
+        "descripcion": "Inmuebles urbanos y suburbanos con edificaciones; entrada en vigor de la ley y años 2002 a 2020 inclusive",
+        "tasa_millar": 0.0024,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "general",
+        "clave": "urbano_suburbano_sin_edificaciones",
+        "descripcion": "Inmuebles urbanos y suburbanos sin edificaciones; entrada en vigor de la ley y años 2002 a 2020 inclusive",
         "tasa_millar": 0.0045,
         "periodicidad": "anual",
         "cuota_fija_adicional": null
       },
       {
-        "grupo": "urbano",
-        "clave": "sin_edificaciones",
-        "descripcion": "Inmuebles urbanos y suburbanos sin edificaciones; inmuebles que cuenten con un valor determinado o modificado, a la entrada en vigor de la ley, durante los años 2002 al 2020, inclusive, y con anterioridad al año 2002 y hasta 1993, inclusive, según la tabla del artículo 4.",
-        "tasa_millar": 0.0018,
-        "periodicidad": "anual",
-        "cuota_fija_adicional": null
-      },
-      {
         "grupo": "rustico",
-        "clave": "general",
-        "descripcion": "Inmuebles rústicos; inmuebles que cuenten con un valor determinado o modificado, a la entrada en vigor de la ley, durante los años 2002 al 2020, inclusive, y con anterioridad al año 2002 y hasta 1993, inclusive, según la tabla del artículo 4.",
+        "clave": "rustico",
+        "descripcion": "Inmuebles rústicos; entrada en vigor de la ley y años 2002 a 2020 inclusive",
         "tasa_millar": 0.0018,
         "periodicidad": "anual",
         "cuota_fija_adicional": null
       }
     ],
     "minimo_predial": null,
-    "comentarios": "Art. 4 establece tasas al millar diferenciadas por antigüedad del valor catastral y por tipo de inmueble. La tabla principal se transcribe con la mecánica predominante anual; la ley muestra cuatro periodos históricos con tasas: a la entrada en vigor y durante 2002-2020, 2.4 al millar para urbanos/suburbanos con edificaciones, 4.5 al millar para urbanos/suburbanos sin edificaciones y 1.8 al millar para rústicos; con anterioridad a 2002 y hasta 1993, 8/15/6 al millar; y con anterioridad a 1903, 13/13/12 al millar. Como hay varias tarifas paralelas por antigüedad, se conserva la clasificación de tarifa_millar y se documentan las demás en comentarios. Art. 5 contiene valores catastrales (terreno y construcción), no mecánica de cálculo."
+    "comentarios": "Art. 4 establece tasas anuales al millar por tipo de inmueble. Se transcribe la tarifa aplicable a partir de la entrada en vigor de la ley y durante los años 2002 a 2020 inclusive, que es la mecánica vigente para 2021 en el texto proporcionado. También aparecen tasas históricas para periodos anteriores (8 al millar, 15 al millar, 6 al millar; y 13 al millar, 13 al millar, 12 al millar), pero se omiten por no corresponder al ejercicio 2021. El resto del texto contiene tablas de valores catastrales unitarios para avalúo, no la mecánica de cálculo del impuesto."
   },
   "_meta": {
     "fuente": "txt",
@@ -43,7 +43,7 @@
     "usado_vision": false,
     "tokens": {
       "input": 8739,
-      "output": 568,
+      "output": 399,
       "cached": 5888
     },
     "cvegeo": "11034",

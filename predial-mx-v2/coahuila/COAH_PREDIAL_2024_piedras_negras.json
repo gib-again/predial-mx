@@ -24,6 +24,12 @@
             "valor": 200.34,
             "tipo": "cuota_fija",
             "unidad": "pesos"
+          },
+          {
+            "nombre": "habitacional",
+            "valor": 315.53,
+            "tipo": "cuota_fija",
+            "unidad": "pesos"
           }
         ]
       },
@@ -51,7 +57,7 @@
             "unidad": "pesos"
           },
           {
-            "nombre": "habitacional_no_edificado",
+            "nombre": "habitacional",
             "valor": 473.31,
             "tipo": "cuota_fija",
             "unidad": "pesos"
@@ -82,7 +88,7 @@
             "unidad": "al_millar"
           },
           {
-            "nombre": "habitacional_no_edificado",
+            "nombre": "habitacional",
             "valor": 0.00335,
             "tipo": "tasa_millar",
             "unidad": "al_millar"
@@ -95,7 +101,7 @@
       "periodicidad": "bimestral",
       "unidad": "pesos"
     },
-    "comentarios": "Art. 2, fracc. I: predios urbanos con tabla por valor catastral y columnas heterogéneas (habitacional edificado, no edificado con barda, no edificado sin barda y habitacional no edificado). Los dos primeros rangos cobran cuotas fijas en pesos y el último rango cobra tasas al millar, por lo que no encaja en tarifa_millar, cuota_fija_escalonada ni progresivo. Art. 3: predios rústicos pagan 4 al millar anual sobre valor catastral; se documenta como tarifa paralela en comentarios por no compartir la misma estructura de tabla. Los incentivos, descuentos y bonificaciones se ignoraron conforme a la instrucción."
+    "comentarios": "Art. 3: los predios rústicos cubren el impuesto predial al cuatro al millar anual sobre el valor catastral; se documenta como tarifa paralela y no se integra en la tabla principal. En el Art. 2, la mecánica principal para predios urbanos es híbrida: dos brackets de cuota fija en pesos (0-90,000 y 90,000.01-135,000) y un último bracket abierto con tasas al millar distintas por tipo de predio (habitacional, no edificado con barda, no edificado sin barda)."
   },
   "_meta": {
     "fuente": "txt",
@@ -110,7 +116,7 @@
     "usado_vision": false,
     "tokens": {
       "input": 7377,
-      "output": 587,
+      "output": 576,
       "cached": 5888
     },
     "cvegeo": "05025",

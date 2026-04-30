@@ -1,32 +1,18 @@
 {
   "predial": {
-    "tipo_esquema": "otro_no_clasificado",
-    "categoria": "estructura_no_estandar",
-    "descripcion_estructural": "El texto no presenta una tarifa predial directamente calculable como tabla de cobro del impuesto principal. El Artículo 13 contiene valores unitarios de terreno y construcción para integrar el valor catastral; el Artículo 14 establece una tasa al millar para predios agropecuarios y una tabla de rentas/frutos civiles, pero la mecánica principal del predial base valor catastral no queda estructurada en rangos o cuotas extraíbles sin una norma complementaria de cálculo. Por ello no encaja limpiamente en las variantes tarifarias previstas.",
-    "tabla_cruda": [
+    "tipo_esquema": "tarifa_millar",
+    "tabla": [
       {
-        "descripcion": "Artículo 13: valores unitarios de terreno por sección/manzana y tipo de área.",
-        "valores": "Centro/Media/Periferia y comisarías; valores por m2: 357, 179, 98; rústicos por brecha/ml 750, camino blanco/ml 1600, carretera/ml 2100"
-      },
-      {
-        "descripcion": "Artículo 13: valores unitarios de construcción por tipo y zona.",
-        "valores": "Concreto 4320/2916/1620; hierro y rollizos 3240/1620/1080; zinc/asbesto/teja 1080/540/378; cartón y paja 432/324/216"
-      },
-      {
-        "descripcion": "Artículo 14: predios agropecuarios.",
-        "valores": "10 al millar anual sobre valor registrado o catastral"
-      },
-      {
-        "descripcion": "Artículo 14: rentas o frutos civiles mensuales predios habitación.",
-        "valores": "5%"
-      },
-      {
-        "descripcion": "Artículo 14: rentas o frutos civiles mensuales predios comerciales.",
-        "valores": "5%"
+        "grupo": "general",
+        "clave": "agropecuario",
+        "descripcion": "Predio destinado a la producción agropecuaria",
+        "tasa_millar": 0.01,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
       }
     ],
     "minimo_predial": null,
-    "comentarios": "Se omitieron descuentos y topes del Artículo 15 por instrucción. El texto transcrito corresponde principalmente a valores catastrales y a tarifas secundarias/paralelas, no a una mecánica tarifaria principal estructurada del predial sobre la que pueda elegirse con seguridad otra variante."
+    "comentarios": "Art. 13 regula tablas de valores unitarios de terreno y construcción para integrar el valor catastral; no establece la mecánica de cobro del impuesto. Art. 14 fija una tarifa paralela para predios agropecuarios: 10 al millar anual sobre el valor registrado o catastral. También establece una tarifa separada sobre rentas o frutos civiles (5% mensual para predios habitación y 5% mensual para predios comerciales), la cual no se incluye en la tabla principal por ser una mecánica distinta y secundaria respecto del predial base valor catastral. Art. 15 contiene descuento anual y topes de incremento, que se ignoran por instrucción."
   },
   "_meta": {
     "fuente": "txt",
@@ -34,14 +20,14 @@
   },
   "_meta_v2": {
     "intentos": 1,
-    "requiere_revision": true,
+    "requiere_revision": false,
     "escalado": false,
-    "razon": "clasificado_como_otro_no_clasificado",
+    "razon": null,
     "usado_reocr": false,
     "usado_vision": false,
     "tokens": {
       "input": 7426,
-      "output": 454,
+      "output": 242,
       "cached": 5888
     },
     "cvegeo": "31105",

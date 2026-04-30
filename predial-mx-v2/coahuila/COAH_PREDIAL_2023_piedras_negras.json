@@ -8,13 +8,13 @@
         "superior": 90000.0,
         "columnas": [
           {
-            "nombre": "habitacional",
+            "nombre": "habitacional_edificado",
             "valor": 150.72,
             "tipo": "cuota_fija",
             "unidad": "pesos"
           },
           {
-            "nombre": "no_habitacional",
+            "nombre": "no_habitacional_edificado",
             "valor": 200.32,
             "tipo": "cuota_fija",
             "unidad": "pesos"
@@ -39,13 +39,13 @@
         "superior": 135000.0,
         "columnas": [
           {
-            "nombre": "habitacional",
+            "nombre": "habitacional_edificado",
             "valor": 226.1,
             "tipo": "cuota_fija",
             "unidad": "pesos"
           },
           {
-            "nombre": "no_habitacional",
+            "nombre": "no_habitacional_edificado",
             "valor": 300.5,
             "tipo": "cuota_fija",
             "unidad": "pesos"
@@ -70,13 +70,13 @@
         "superior": null,
         "columnas": [
           {
-            "nombre": "habitacional",
+            "nombre": "habitacional_edificado",
             "valor": 0.00158,
             "tipo": "tasa_millar",
             "unidad": "al_millar"
           },
           {
-            "nombre": "no_habitacional",
+            "nombre": "no_habitacional_edificado",
             "valor": 0.0021,
             "tipo": "tasa_millar",
             "unidad": "al_millar"
@@ -101,7 +101,7 @@
       "periodicidad": "bimestral",
       "unidad": "pesos"
     },
-    "comentarios": "Art. 2, fracción I: predios urbanos con tabla por valor catastral y categorías heterogéneas (habitacional, no habitacional, no edificado con barda, no edificado sin barda). Los dos primeros rangos cobran cuota fija en pesos; el último rango abierto cambia a tasa al millar, por eso se clasifica como mixto. Art. 3: predios rústicos pagan cuatro al millar anual sobre valor catastral; se documenta como tarifa paralela y no se incluye en la tabla principal."
+    "comentarios": "Art. 2 fracc. I: predios urbanos con tabla por valor catastral y categorías heterogéneas (edificados habitacional/no habitacional y no edificados con/sin barda). Los dos primeros brackets son cuotas fijas en pesos; el último bracket abierto cambia a tasas al millar, por lo que se clasifica como mixto. Art. 3: predios rústicos pagan 4 al millar anual sobre valor catastral como tarifa paralela; no se incluye en la tabla principal. Se ignoran incentivos y bonificaciones por ser mecánica no tarifaria."
   },
   "_meta": {
     "fuente": "txt",
@@ -116,7 +116,7 @@
     "usado_vision": false,
     "tokens": {
       "input": 7393,
-      "output": 567,
+      "output": 589,
       "cached": 5888
     },
     "cvegeo": "05025",

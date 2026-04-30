@@ -20,11 +20,11 @@
       }
     ],
     "minimo_predial": {
-      "monto": 21.0,
-      "periodicidad": "bimestral",
+      "monto": 125.0,
+      "periodicidad": "anual",
       "unidad": "pesos"
     },
-    "comentarios": "Art. 2 fraccs. I y II: tasa de 3 al millar anual para predios urbanos y rústicos. Art. 2 fracc. III: mínimo de $21.00 por bimestre y cuota mínima anual de $125.00. Art. 2 fracc. IV: predios rústicos dedicados a agricultura y ganadería cubren 50% del monto del impuesto. Los incentivos de las fraccs. V, VI, VII y VIII se ignoran por instrucción; no forman parte de la mecánica base."
+    "comentarios": "Art. 2 fraccs. I y II: predios urbanos y rústicos pagan 3 al millar anual. Art. 2 fracc. III: el impuesto no será inferior a $21.00 por bimestre y con una cuota mínima anual de $125.00; se registra el mínimo anual en `minimo_predial`. Art. 2 fracc. IV: predios rústicos dedicados a agricultura y ganadería cubren el 50% del monto del impuesto. Los incentivos por pago anual, pensionados/jubilados, instituciones de beneficencia/educativas y empresas de nueva creación se ignoran por ser descuentos/bonificaciones."
   },
   "_meta": {
     "fuente": "txt",
@@ -39,7 +39,7 @@
     "usado_vision": false,
     "tokens": {
       "input": 6755,
-      "output": 275,
+      "output": 295,
       "cached": 5888
     },
     "cvegeo": "05022",

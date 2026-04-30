@@ -1,11 +1,86 @@
 {
   "predial": {
-    "tipo_esquema": "otro_no_clasificado",
-    "categoria": "segmento_vacio",
-    "descripcion_estructural": "El texto proporcionado no contiene la sección tarifaria del impuesto predial ni tablas o artículos con la mecánica de cálculo; sólo aparecen encabezados y páginas en blanco/omitidas dentro del rango señalado. No es posible extraer una tarifa sin inventarla.",
-    "tabla_cruda": [],
-    "minimo_predial": null,
-    "comentarios": "No se observó contenido normativo del predial en el segmento pegado."
+    "tipo_esquema": "tarifa_millar",
+    "tabla": [
+      {
+        "grupo": "urbano",
+        "clave": "con_edificaciones",
+        "descripcion": "Inmuebles urbanos y suburbanos con edificaciones; artículo 4, tasas por año de adquisición o por antigüedad del inmueble.",
+        "tasa_millar": 0.0045,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "urbano",
+        "clave": "sin_edificaciones",
+        "descripcion": "Inmuebles urbanos y suburbanos sin edificaciones; artículo 4, tasas por año de adquisición o por antigüedad del inmueble.",
+        "tasa_millar": 0.0024,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "urbano",
+        "clave": "antiguedad_2002_2024_con_edificaciones",
+        "descripcion": "Durante los años 2002 a 2024 inclusive, inmuebles urbanos y suburbanos con edificaciones.",
+        "tasa_millar": 0.004534,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "urbano",
+        "clave": "antiguedad_2002_2024_sin_edificaciones",
+        "descripcion": "Durante los años 2002 a 2024 inclusive, inmuebles urbanos y suburbanos sin edificaciones.",
+        "tasa_millar": 0.0024,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "urbano",
+        "clave": "anteriores_1993_2002_con_edificaciones",
+        "descripcion": "Con anterioridad al año 2002 y hasta 1993, inclusive, inmuebles urbanos y suburbanos con edificaciones.",
+        "tasa_millar": 0.003,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "urbano",
+        "clave": "anteriores_1993_2002_sin_edificaciones",
+        "descripcion": "Con anterioridad al año 2002 y hasta 1993, inclusive, inmuebles urbanos y suburbanos sin edificaciones.",
+        "tasa_millar": 0.005,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "rustico",
+        "clave": "rustico_con_edificaciones",
+        "descripcion": "Inmuebles rústicos con edificaciones; artículo 4.",
+        "tasa_millar": 0.013,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "rustico",
+        "clave": "rustico_sin_edificaciones",
+        "descripcion": "Inmuebles rústicos sin edificaciones; artículo 4.",
+        "tasa_millar": 0.013,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "rustico",
+        "clave": "rustico_otro",
+        "descripcion": "Inmuebles rústicos (renglón visible en la tabla del artículo 4; OCR con texto fragmentado).",
+        "tasa_millar": 0.012,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      }
+    ],
+    "minimo_predial": {
+      "monto": 75.43,
+      "periodicidad": "anual",
+      "unidad": "pesos"
+    },
+    "comentarios": "Artículo 4 contiene una tarifa categórica de tasas al millar para predios urbanos/suburbanos y rústicos; además aparecen tablas de valores catastrales y valores unitarios de construcción que no son mecánica del predial y se ignoran. El texto OCR está fragmentado en algunos renglones, pero la estructura predominante corresponde a tarifa_millar. Se documenta mínimo predial de $75.43 anual. No se incluyen artículos sobre adquisición de bienes inmuebles, división/lotificación, fraccionamientos ni agua."
   },
   "_meta": {
     "fuente": "txt",
@@ -13,15 +88,15 @@
   },
   "_meta_v2": {
     "intentos": 1,
-    "requiere_revision": true,
+    "requiere_revision": false,
     "escalado": false,
-    "razon": "clasificado_como_otro_no_clasificado",
-    "usado_reocr": true,
-    "usado_vision": true,
+    "razon": null,
+    "usado_reocr": false,
+    "usado_vision": false,
     "tokens": {
-      "input": 32801,
-      "output": 451,
-      "cached": 17664
+      "input": 34531,
+      "output": 769,
+      "cached": 5888
     },
     "cvegeo": "11005",
     "estado": "guanajuato",

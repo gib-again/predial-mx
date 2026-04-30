@@ -74,7 +74,7 @@
       }
     ],
     "minimo_predial": null,
-    "comentarios": "Art. 4 fracc. II: para inmuebles urbanos y rústicos con edificaciones se aplica tabla progresiva sobre valor fiscal. La mecánica es de cuota fija + tasa marginal sobre el excedente. En el texto también aparece una tabla separada para inmuebles urbanos y rústicos sin edificaciones con la misma estructura progresiva; se omite en la tabla principal por ser una tarifa paralela análoga. Art. 4 también remite a tablas/valores para avalúo en artículos 5 y 6, pero no forman parte de la mecánica del impuesto."
+    "comentarios": "Artículo 4, fracción II: inmuebles urbanos y rústicos con edificaciones. Se transcribe la mecánica de cuota fija + tasa marginal sobre el excedente del límite inferior. No se incorporan valores unitarios del Art. 5 por ser catastro/valuación y no tarifa del impuesto. La tabla para inmuebles urbanos y rústicos sin edificaciones también sigue un esquema progresivo equivalente: 0.003750%, 0.003750%, 0.004125%, 0.004500%, 0.004875%, 0.005250%, 0.005625%, 0.006000%, 0.006375%, 0.006750% con las cuotas fijas indicadas; al ser una tarifa paralela, no se incluye en la tabla principal."
   },
   "_meta": {
     "fuente": "txt",
@@ -89,7 +89,7 @@
     "usado_vision": false,
     "tokens": {
       "input": 9117,
-      "output": 569,
+      "output": 614,
       "cached": 5888
     },
     "cvegeo": "11031",

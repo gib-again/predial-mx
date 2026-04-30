@@ -1,11 +1,42 @@
 {
   "predial": {
-    "tipo_esquema": "otro_no_clasificado",
-    "categoria": "segmento_vacio",
-    "descripcion_estructural": "El texto proporcionado no contiene el artículo o tabla del Impuesto Predial; sólo aparecen encabezados y páginas en blanco/omisiones entre las páginas 3-20. No hay mecánica tarifaria extraíble para clasificar en alguna de las variantes.",
-    "tabla_cruda": [],
+    "tipo_esquema": "tarifa_millar",
+    "tabla": [
+      {
+        "grupo": "urbano",
+        "clave": "urbano_sin_edificacion_2025",
+        "descripcion": "Inmuebles urbanos y suburbanos con valor determinado o modificado, sin edificaciones, para el año 2025",
+        "tasa_millar": 0.008,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "urbano",
+        "clave": "urbano_con_edificacion_2025",
+        "descripcion": "Inmuebles urbanos y suburbanos con valor determinado o modificado, con edificaciones, para el año 2025",
+        "tasa_millar": 0.015,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "rustico",
+        "clave": "rustico_2025",
+        "descripcion": "Inmuebles rústicos para el año 2025",
+        "tasa_millar": 0.006,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "general",
+        "clave": "predios_anteriores_2024",
+        "descripcion": "Tasas aplicables a inmuebles urbanos y suburbanos del periodo previo al 2025 (sección histórica en el texto)",
+        "tasa_millar": 0.0024,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      }
+    ],
     "minimo_predial": null,
-    "comentarios": "No se detectó contenido tarifario del predial en el segmento recibido."
+    "comentarios": "Art. 4. La mecánica principal para 2025 es un catálogo de tasas al millar por tipo de inmueble (urbanos/suburbanos sin edificaciones, urbanos/suburbanos con edificaciones y rústicos). El texto también incluye una tabla histórica previa con tasas de 2.4 al millar para años anteriores (2002 a 2024), que se transcribe como referencia textual. El resto del documento mostrado corresponde a valores unitarios catastrales, factores de valuación y cuotas por metro cuadrado/ha para catastro, no a la tarifa del impuesto predial."
   },
   "_meta": {
     "fuente": "txt",
@@ -13,15 +44,15 @@
   },
   "_meta_v2": {
     "intentos": 1,
-    "requiere_revision": true,
+    "requiere_revision": false,
     "escalado": false,
-    "razon": "clasificado_como_otro_no_clasificado",
-    "usado_reocr": true,
-    "usado_vision": true,
+    "razon": null,
+    "usado_reocr": false,
+    "usado_vision": false,
     "tokens": {
-      "input": 32076,
-      "output": 405,
-      "cached": 17664
+      "input": 7966,
+      "output": 428,
+      "cached": 5888
     },
     "cvegeo": "11009",
     "estado": "guanajuato",

@@ -1,88 +1,52 @@
 {
   "predial": {
-    "tipo_esquema": "mixto",
+    "tipo_esquema": "progresivo",
     "tabla": [
       {
         "n_rango": 1,
         "inferior": 0.01,
         "superior": 139981.64,
-        "columnas": [
-          {
-            "nombre": "urbano_o_suburbano_con_edificaciones",
-            "valor": 0.0024,
-            "tipo": "tasa_marginal",
-            "unidad": "al_millar"
-          }
-        ]
+        "cuota_fija": 0.0,
+        "tasa_marginal": 0.0024
       },
       {
         "n_rango": 2,
         "inferior": 139981.65,
         "superior": 300000.0,
-        "columnas": [
-          {
-            "nombre": "urbano_o_suburbano_con_edificaciones",
-            "valor": 0.00255,
-            "tipo": "tasa_marginal",
-            "unidad": "al_millar"
-          }
-        ]
+        "cuota_fija": 335.95,
+        "tasa_marginal": 0.00255
       },
       {
         "n_rango": 3,
         "inferior": 300000.01,
         "superior": 600000.0,
-        "columnas": [
-          {
-            "nombre": "urbano_o_suburbano_con_edificaciones",
-            "valor": 0.0027,
-            "tipo": "tasa_marginal",
-            "unidad": "al_millar"
-          }
-        ]
+        "cuota_fija": 692.9,
+        "tasa_marginal": 0.0027
       },
       {
         "n_rango": 4,
         "inferior": 600000.01,
         "superior": 1200000.0,
-        "columnas": [
-          {
-            "nombre": "urbano_o_suburbano_con_edificaciones",
-            "valor": 0.00285,
-            "tipo": "tasa_marginal",
-            "unidad": "al_millar"
-          }
-        ]
+        "cuota_fija": 1502.9,
+        "tasa_marginal": 0.00285
       },
       {
         "n_rango": 5,
         "inferior": 1200000.01,
         "superior": 2400000.0,
-        "columnas": [
-          {
-            "nombre": "urbano_o_suburbano_con_edificaciones",
-            "valor": 0.003,
-            "tipo": "tasa_marginal",
-            "unidad": "al_millar"
-          }
-        ]
+        "cuota_fija": 3212.9,
+        "tasa_marginal": 0.003
       },
       {
         "n_rango": 6,
         "inferior": 2400000.01,
         "superior": null,
-        "columnas": [
-          {
-            "nombre": "urbano_o_suburbano_con_edificaciones",
-            "valor": 0.00315,
-            "tipo": "tasa_marginal",
-            "unidad": "al_millar"
-          }
-        ]
+        "cuota_fija": 6812.9,
+        "tasa_marginal": 0.00315
       }
     ],
     "minimo_predial": null,
-    "comentarios": "Art. 4, fracc. I y tabla a): inmuebles urbanos y suburbanos con edificaciones, régimen por rangos de valor fiscal con cuota fija + tasa marginal. Art. 4, fracc. I y tabla b): inmuebles urbanos y suburbanos sin edificaciones, régimen paralelo por rangos de valor fiscal con cuota fija + tasa marginal. Art. 4, fracc. I y tabla c): inmuebles rústicos, régimen paralelo por rangos de valor fiscal con cuota fija + tasa marginal. Art. 4, fracc. IV: para inmuebles con valores determinados o modificados con anterioridad al año 2002 y hasta 1993 inclusive, y con anterioridad a 1993, existen tasas al millar distintas por tipo de inmueble (urbanos/suburbanos con y sin edificaciones, y rústicos), pero no se integra a la tabla principal por ser una tarifa paralela categórica adicional. La mecánica principal extraída es la de brackets con cuota fija e impuesto marginal sobre excedente."
+    "comentarios": "Artículo 4, fracción I: inmuebles urbanos y suburbanos con edificaciones (valores determinados o modificados durante 2002 a 2021 inclusive). La tabla principal es progresiva con cuota fija + tasa marginal sobre el excedente. Artículo 4, fracción IV establece tarifas paralelas para inmuebles con valores determinados o modificados con anterioridad al año 2002: urbanos y suburbanos con edificaciones 8 al millar; urbanos y suburbanos sin edificaciones 15 al millar (con anterioridad a 1993: 13 al millar y 12 al millar, respectivamente); rústicos 6 al millar (con anterioridad a 1993: 12 al millar). No se integran en la tabla principal por ser tarifas paralelas categóricas. Los valores unitarios de los artículos 5 y 6 no forman parte de la mecánica de cálculo del impuesto."
   },
   "_meta": {
     "fuente": "txt",
@@ -97,7 +61,7 @@
     "usado_vision": false,
     "tokens": {
       "input": 9377,
-      "output": 615,
+      "output": 480,
       "cached": 5888
     },
     "cvegeo": "11021",

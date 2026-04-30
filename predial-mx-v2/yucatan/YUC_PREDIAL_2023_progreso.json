@@ -1,80 +1,140 @@
 {
   "predial": {
-    "tipo_esquema": "progresivo",
+    "tipo_esquema": "mixto",
     "tabla": [
       {
         "n_rango": 1,
         "inferior": 0.01,
         "superior": 32000.0,
-        "cuota_fija": 224.45,
-        "tasa_marginal": 0.00612157
+        "columnas": [
+          {
+            "nombre": "general",
+            "valor": 224.45,
+            "tipo": "cuota_fija",
+            "unidad": "pesos"
+          }
+        ]
       },
       {
         "n_rango": 2,
         "inferior": 32000.01,
         "superior": 50000.0,
-        "cuota_fija": 453.68,
-        "tasa_marginal": 0.00548208
+        "columnas": [
+          {
+            "nombre": "general",
+            "valor": 453.68,
+            "tipo": "cuota_fija",
+            "unidad": "pesos"
+          }
+        ]
       },
       {
         "n_rango": 3,
         "inferior": 50000.01,
         "superior": 100000.0,
-        "cuota_fija": 552.36,
-        "tasa_marginal": 0.00139968
+        "columnas": [
+          {
+            "nombre": "general",
+            "valor": 552.36,
+            "tipo": "cuota_fija",
+            "unidad": "pesos"
+          }
+        ]
       },
       {
         "n_rango": 4,
         "inferior": 100000.01,
         "superior": 150000.0,
-        "cuota_fija": 620.8,
-        "tasa_marginal": 0.00150695
+        "columnas": [
+          {
+            "nombre": "general",
+            "valor": 620.8,
+            "tipo": "cuota_fija",
+            "unidad": "pesos"
+          }
+        ]
       },
       {
         "n_rango": 5,
         "inferior": 150000.01,
         "superior": 300000.0,
-        "cuota_fija": 759.25,
-        "tasa_marginal": 0.00328967
+        "columnas": [
+          {
+            "nombre": "general",
+            "valor": 759.25,
+            "tipo": "cuota_fija",
+            "unidad": "pesos"
+          }
+        ]
       },
       {
         "n_rango": 6,
         "inferior": 300000.01,
         "superior": 400000.0,
-        "cuota_fija": 1320.6,
-        "tasa_marginal": 0.00331992
+        "columnas": [
+          {
+            "nombre": "general",
+            "valor": 1320.6,
+            "tipo": "cuota_fija",
+            "unidad": "pesos"
+          }
+        ]
       },
       {
         "n_rango": 7,
         "inferior": 400000.01,
         "superior": 500000.0,
-        "cuota_fija": 2219.26,
-        "tasa_marginal": 0.00297648
+        "columnas": [
+          {
+            "nombre": "general",
+            "valor": 2219.26,
+            "tipo": "cuota_fija",
+            "unidad": "pesos"
+          }
+        ]
       },
       {
         "n_rango": 8,
         "inferior": 500000.01,
         "superior": 700000.0,
-        "cuota_fija": 2831.48,
-        "tasa_marginal": 0.00330281
+        "columnas": [
+          {
+            "nombre": "general",
+            "valor": 2831.48,
+            "tipo": "cuota_fija",
+            "unidad": "pesos"
+          }
+        ]
       },
       {
         "n_rango": 9,
         "inferior": 700000.01,
         "superior": 1400000.0,
-        "cuota_fija": 3477.61,
-        "tasa_marginal": 0.002847
+        "columnas": [
+          {
+            "nombre": "general",
+            "valor": 3477.61,
+            "tipo": "cuota_fija",
+            "unidad": "pesos"
+          }
+        ]
       },
       {
         "n_rango": 10,
         "inferior": 1400000.01,
         "superior": null,
-        "cuota_fija": 5486.9,
-        "tasa_marginal": 0.00291631
+        "columnas": [
+          {
+            "nombre": "general",
+            "valor": 5486.9,
+            "tipo": "cuota_fija",
+            "unidad": "pesos"
+          }
+        ]
       }
     ],
     "minimo_predial": null,
-    "comentarios": "Art. 19: impuesto predial sobre valor catastral con tabla progresiva por rangos y fórmula de cuota fija + factor/tasa sobre el excedente del límite inferior. Art. 21 establece tarifa paralela para rentas o frutos civiles: 5% mensual sobre la renta de casa habitación y 5% mensual sobre la renta de actividades comerciales e industriales; se documenta como tarifa secundaria fuera de la tabla principal."
+    "comentarios": "Art. 19: mecánica principal por rangos de valor catastral con cuota fija por rango y factor/tasa para el excedente. Aunque el texto llama a la columna 'tasa', los renglones no son una tarifa al millar homogénea por categoría sino una tabla escalonada con límites inferior/superior y montos fijos para cada rango, por lo que se estructura como mixto con cuota fija por bracket. Art. 21: predial sobre rentas o frutos civiles mensuales: 5% para casa habitación y 5% para actividades comerciales e industrias; se documenta como tarifa secundaria paralela porque no es la mecánica principal de la tabla por valor catastral."
   },
   "_meta": {
     "fuente": "txt",
@@ -89,8 +149,8 @@
     "usado_vision": false,
     "tokens": {
       "input": 17040,
-      "output": 545,
-      "cached": 5888
+      "output": 680,
+      "cached": 0
     },
     "cvegeo": "31059",
     "estado": "yucatan",

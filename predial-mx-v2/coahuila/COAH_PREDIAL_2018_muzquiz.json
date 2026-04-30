@@ -5,7 +5,7 @@
       {
         "grupo": "urbano",
         "clave": "predios_urbanos",
-        "descripcion": "Sobre los predios urbanos",
+        "descripcion": "Predios urbanos",
         "tasa_millar": 0.005,
         "periodicidad": "anual",
         "cuota_fija_adicional": null
@@ -13,7 +13,7 @@
       {
         "grupo": "rustico",
         "clave": "predios_rusticos",
-        "descripcion": "Sobre predios rústicos",
+        "descripcion": "Predios rústicos",
         "tasa_millar": 0.003,
         "periodicidad": "anual",
         "cuota_fija_adicional": null
@@ -21,7 +21,7 @@
       {
         "grupo": "otro",
         "clave": "lotes_baldios_con_maleza",
-        "descripcion": "Sobre Lotes Baldíos con maleza",
+        "descripcion": "Lotes baldíos con maleza",
         "tasa_millar": 0.007,
         "periodicidad": "anual",
         "cuota_fija_adicional": null
@@ -32,7 +32,7 @@
       "periodicidad": "bimestral",
       "unidad": "pesos"
     },
-    "comentarios": "Art. 2: predios urbanos 5 al millar anual; predios rústicos 3 al millar anual; lotes baldíos con maleza 7 al millar. Se documenta también el mínimo predial de $18.80 por bimestre. Se ignoraron incentivos/bonificaciones por pago anticipado por instrucción."
+    "comentarios": "Art. 2: tarifa principal por categoría de predio con tasas al millar anuales: urbanos 5 al millar, rústicos 3 al millar y lotes baldíos con maleza 7 al millar. Se documenta el mínimo predial de $18.80 por bimestre. Incentivos por pago anticipado y reducción para pensionados/jubilados/personas con discapacidad no se consideran por instrucción."
   },
   "_meta": {
     "fuente": "txt",
@@ -47,7 +47,7 @@
     "usado_vision": false,
     "tokens": {
       "input": 6318,
-      "output": 280,
+      "output": 293,
       "cached": 5888
     },
     "cvegeo": "05020",

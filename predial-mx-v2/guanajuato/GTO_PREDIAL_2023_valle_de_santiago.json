@@ -57,23 +57,23 @@
       "periodicidad": "anual",
       "unidad": "pesos"
     },
-    "comentarios": "Artículo 4 establece la mecánica general como cuota fija por rango de valor fiscal más impuesto marginal sobre el excedente. Se transcribe la Tabla 1 (inmuebles urbanos y suburbanos con edificaciones, valor determinado o modificado durante 2002 y hasta la entrada en vigor de la ley). El texto también contiene Tablas 2 a 6 para otros supuestos (urbanos/suburbanos sin edificaciones, y predios rústicos con distintos periodos de determinación), con la misma estructura de progresión por valor fiscal; no se agregan aquí para no mezclar múltiples tablas en una sola tabla principal. El artículo 4 prevé cuota mínima anual si el cálculo resulta inferior a la del artículo 38."
+    "comentarios": "Artículo 4, Tabla 1. Se transcribe únicamente la tabla principal de inmuebles urbanos y suburbanos con edificaciones, que usa brackets de valor fiscal con cuota fija + tasa marginal. El texto también contiene tablas paralelas para inmuebles con valor determinado/modificado antes de 2002, sin edificaciones, y para inmuebles rústicos; no se mezclan en la tabla principal por tratarse de tarifas paralelas del mismo artículo. Art. 4 además remite a una cuota mínima anual si el cálculo resulta inferior; no se cuantifica aquí porque el texto remitido no proporciona el monto del artículo 38."
   },
   "_meta": {
     "fuente": "txt",
     "modelo": "gpt-5.4-mini"
   },
   "_meta_v2": {
-    "intentos": 1,
+    "intentos": 2,
     "requiere_revision": false,
     "escalado": false,
     "razon": null,
     "usado_reocr": false,
     "usado_vision": false,
     "tokens": {
-      "input": 10857,
-      "output": 508,
-      "cached": 5888
+      "input": 22370,
+      "output": 2517,
+      "cached": 11776
     },
     "cvegeo": "11042",
     "estado": "guanajuato",

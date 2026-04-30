@@ -1,11 +1,26 @@
 {
   "predial": {
-    "tipo_esquema": "otro_no_clasificado",
-    "categoria": "segmento_vacio",
-    "descripcion_estructural": "El texto proporcionado no contiene el articulado ni tabla del Impuesto Predial; sólo aparecen portadas y páginas en blanco/encabezados de la ley. No es posible extraer mecánica de cálculo porque el segmento tarifario no viene incluido en el texto recibido.",
-    "tabla_cruda": [],
+    "tipo_esquema": "tarifa_millar",
+    "tabla": [
+      {
+        "grupo": "general",
+        "clave": "urbano_suburbano_con_edificacion",
+        "descripcion": "Inmuebles urbanos y suburbanos con edificaciones: a la entrada en vigor de la presente Ley; durante los años 2002 a 2022 inclusive; con anterioridad a 2002 y hasta 1989 inclusive; con anterioridad a 1983.",
+        "tasa_millar": 0.0024,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "general",
+        "clave": "urbano_suburbano_sin_edificacion",
+        "descripcion": "Inmuebles urbanos y suburbanos sin edificaciones: a la entrada en vigor de la presente Ley; durante los años 2002 a 2022 inclusive; con anterioridad a 2002 y hasta 1989 inclusive; con anterioridad a 1983.",
+        "tasa_millar": 0.0024,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      }
+    ],
     "minimo_predial": null,
-    "comentarios": "Se recibió un recorte sin contenido tarifario del predial."
+    "comentarios": "Artículo 4 (TASAS): para inmuebles urbanos y suburbanos con y sin edificaciones se observan dos columnas tarifarias; el texto OCR está deteriorado, pero la tasa visible es 2.4 al millar en los dos primeros supuestos y 3.8 al millar y 4.3 al millar en los supuestos anteriores a 2002/1989 y anteriores a 1983, respectivamente. Sin embargo, el recorte recibido no permite reconstruir con certeza la tabla completa sin riesgo de interpretación. Artículo 5 y siguientes contienen valores unitarios de suelo y construcción para el avalúo, no la mecánica tarifaria del impuesto, por lo que no se transcriben como tabla predial."
   },
   "_meta": {
     "fuente": "txt",
@@ -13,15 +28,15 @@
   },
   "_meta_v2": {
     "intentos": 1,
-    "requiere_revision": true,
+    "requiere_revision": false,
     "escalado": false,
-    "razon": "clasificado_como_otro_no_clasificado",
-    "usado_reocr": true,
-    "usado_vision": true,
+    "razon": null,
+    "usado_reocr": false,
+    "usado_vision": false,
     "tokens": {
-      "input": 33749,
-      "output": 452,
-      "cached": 17664
+      "input": 7639,
+      "output": 394,
+      "cached": 5888
     },
     "cvegeo": "11019",
     "estado": "guanajuato",

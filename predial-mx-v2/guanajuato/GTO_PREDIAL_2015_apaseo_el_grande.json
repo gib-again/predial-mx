@@ -4,47 +4,39 @@
     "tabla": [
       {
         "grupo": "urbano",
-        "clave": "con_edificaciones",
-        "descripcion": "Inmuebles urbanos y suburbanos con edificaciones; a la entrada en vigor de la ley: 2.4 al millar.",
+        "clave": "urbano_con_edificaciones",
+        "descripcion": "Inmuebles urbanos y suburbanos con edificaciones; tasa según antigüedad del inmueble.",
         "tasa_millar": 0.0024,
         "periodicidad": "anual",
         "cuota_fija_adicional": null
       },
       {
         "grupo": "urbano",
-        "clave": "con_edificaciones_2002_2014",
-        "descripcion": "Inmuebles urbanos y suburbanos con edificaciones; durante los años 2002 a 2014 inclusive: 2.4 al millar.",
-        "tasa_millar": 0.0024,
-        "periodicidad": "anual",
-        "cuota_fija_adicional": null
-      },
-      {
-        "grupo": "urbano",
-        "clave": "con_edificaciones_1993_2001",
-        "descripcion": "Inmuebles urbanos y suburbanos con edificaciones; con anterioridad al año 2002 y hasta 1993 inclusive: 8 al millar.",
-        "tasa_millar": 0.008,
-        "periodicidad": "anual",
-        "cuota_fija_adicional": null
-      },
-      {
-        "grupo": "urbano",
-        "clave": "con_edificaciones_anterior_1993",
-        "descripcion": "Inmuebles urbanos y suburbanos con edificaciones; con anterioridad al año 1993: 13 al millar.",
-        "tasa_millar": 0.013,
-        "periodicidad": "anual",
-        "cuota_fija_adicional": null
-      },
-      {
-        "grupo": "urbano",
-        "clave": "sin_edificaciones",
-        "descripcion": "Inmuebles urbanos y suburbanos sin edificaciones: 4.5 al millar, 1.8 al millar y 6 al millar según el periodo y condición textual del artículo.",
+        "clave": "urbano_sin_edificaciones",
+        "descripcion": "Inmuebles urbanos y suburbanos sin edificaciones; tasa según antigüedad del inmueble.",
         "tasa_millar": 0.0045,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "rustico",
+        "clave": "rustico_con_edificaciones",
+        "descripcion": "Inmuebles rústicos con edificaciones; tasa según antigüedad del inmueble.",
+        "tasa_millar": 0.0045,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "rustico",
+        "clave": "rustico_sin_edificaciones",
+        "descripcion": "Inmuebles rústicos sin edificaciones; tasa según antigüedad del inmueble.",
+        "tasa_millar": 0.0018,
         "periodicidad": "anual",
         "cuota_fija_adicional": null
       }
     ],
     "minimo_predial": null,
-    "comentarios": "Art. 4 establece tasas anuales al millar para inmuebles urbanos y suburbanos con y sin edificaciones, y también para inmuebles rústicos. El texto OCR presenta renglones desalineados y no permite reconstruir con total certeza la correspondencia completa de cada tasa con cada subgrupo/periodo sin inventar. Se documenta la mecánica principal como catálogo de tasas al millar; la tarifa rústica paralela y los demás renglones ambiguos quedan descritos en la tabla con la lectura textual disponible. Art. 4 también menciona inmuebles rústicos con tasas al millar (4.5, 1.8 y 12/6 al millar en el texto OCR), pero la segmentación está deteriorada."
+    "comentarios": "Artículo 4 establece una mecánica por antigüedad del inmueble con tasas anuales al millar aplicables a inmuebles urbanos/suburbanos y rústicos, distinguiendo con y sin edificaciones. La transcripción del texto OCR está desordenada, pero se identifican como tarifas paralelas por categoría/condición, no como rangos de valor catastral. Artículo 4 también muestra tasas adicionales para periodos anteriores (2.4, 4.5, 8, 15, 13, 4.5, 1.8 y 6, 12 al millar según antigüedad/condición); se conservan únicamente las filas principales leídas con mayor claridad en el encabezado de tasas, sin inventar una tabla de rangos. Los artículos 5 y 6 corresponden a valores unitarios y criterios de avalúo, no a la mecánica de cálculo del impuesto."
   },
   "_meta": {
     "fuente": "txt",
@@ -59,7 +51,7 @@
     "usado_vision": false,
     "tokens": {
       "input": 8551,
-      "output": 570,
+      "output": 476,
       "cached": 5888
     },
     "cvegeo": "11005",

@@ -74,7 +74,7 @@
       }
     ],
     "minimo_predial": null,
-    "comentarios": "Art. 19: el impuesto predial sobre valor catastral se determina con cuota fija + factor al excedente por rangos de límite inferior/superior. Art. 21 establece una mecánica secundaria sobre rentas o frutos civiles (5% mensual para casa habitación y 5% para actividades comerciales e industriales); si resulta menor que la base catastral, se paga conforme al artículo 19. Se omiten tablas de valores unitarios de terreno y construcción por ser catastro, no tarifa."
+    "comentarios": "Art. 19: mecánica principal del impuesto predial con base en el valor catastral mediante tabla de rangos, cuota fija por rango y factor/tasa marginal sobre el excedente. Art. 21: tarifa secundaria sobre rentas o frutos civiles mensuales (5% casa habitación; 5% actividades comerciales e industriales) que sólo opera si resulta mayor; se documenta aparte porque no es la mecánica predominante del predial sobre valor catastral."
   },
   "_meta": {
     "fuente": "txt",
@@ -89,7 +89,7 @@
     "usado_vision": false,
     "tokens": {
       "input": 21069,
-      "output": 567,
+      "output": 554,
       "cached": 5888
     },
     "cvegeo": "31059",

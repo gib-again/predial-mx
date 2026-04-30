@@ -32,7 +32,7 @@
       }
     ],
     "minimo_predial": null,
-    "comentarios": "Artículo 19: tarifa progresiva sobre valor catastral. Artículo 21 establece una tarifa secundaria separada de 5% mensual sobre rentas o frutos civiles para casa habitación y 5% mensual para actividades comerciales e industriales; se documenta sólo como referencia secundaria y no forma parte de la tabla principal. El texto también incluye comparativos y topes del ejercicio 2022, pero no modifican la mecánica tarifaria principal aquí transcrita."
+    "comentarios": "Artículo 19: impuesto predial calculado con base en el valor catastral mediante tarifa progresiva por rangos; la actualización por falta de pago, recargos y el tope anual de incremento no se consideran por ser accesorios/ajustes y no parte de la mecánica principal. Artículo 21 establece una tarifa secundaria separada sobre rentas o frutos civiles mensuales (5% casa habitación; 5% comerciales e industriales), que no se integra a la tabla principal por ser una mecánica paralela y no predominante del predial base valor catastral."
   },
   "_meta": {
     "fuente": "txt",
@@ -47,7 +47,7 @@
     "usado_vision": false,
     "tokens": {
       "input": 16833,
-      "output": 296,
+      "output": 326,
       "cached": 5888
     },
     "cvegeo": "31059",

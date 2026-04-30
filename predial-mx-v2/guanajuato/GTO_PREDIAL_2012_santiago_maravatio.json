@@ -4,16 +4,16 @@
     "tabla": [
       {
         "grupo": "urbano",
-        "clave": "urbano_con_edificaciones",
-        "descripcion": "Inmuebles urbanos y suburbanos con edificaciones; tasa anual según antigüedad del valor determinado o modificado.",
+        "clave": "con_edificaciones",
+        "descripcion": "Inmuebles urbanos y suburbanos con edificaciones",
         "tasa_millar": 0.0024,
         "periodicidad": "anual",
         "cuota_fija_adicional": null
       },
       {
         "grupo": "urbano",
-        "clave": "urbano_sin_edificaciones",
-        "descripcion": "Inmuebles urbanos y suburbanos sin edificaciones; tasa anual según antigüedad del valor determinado o modificado.",
+        "clave": "sin_edificaciones",
+        "descripcion": "Inmuebles urbanos y suburbanos sin edificaciones",
         "tasa_millar": 0.0045,
         "periodicidad": "anual",
         "cuota_fija_adicional": null
@@ -21,14 +21,14 @@
       {
         "grupo": "rustico",
         "clave": "rustico",
-        "descripcion": "Inmuebles rústicos; tasa anual según antigüedad del valor determinado o modificado.",
+        "descripcion": "Inmuebles rústicos",
         "tasa_millar": 0.0018,
         "periodicidad": "anual",
         "cuota_fija_adicional": null
       }
     ],
     "minimo_predial": null,
-    "comentarios": "Art. 4 establece una tabla de tasas al millar por tipo de inmueble y antigüedad del valor catastral. Se transcriben sólo las tasas principales. Las tablas de valores unitarios de terrenos y construcciones de los artículos 5 y 6 son de catastro/avalúo y no forman parte de la mecánica del impuesto."
+    "comentarios": "Art. 4 establece tasas anuales al millar por tipo de inmueble: urbanos y suburbanos con edificaciones 2.4 al millar, urbanos y suburbanos sin edificaciones 4.5 al millar, e inmuebles rústicos 1.8 al millar. El texto muestra además una frase fragmentada de un renglón adicional ('con anterioridad al año de 1993: 13 al millar 12 al millar') pero está incompleta/truncada y no se integra por no poder reconstruirla con certeza. Los artículos 5 y 6 sólo contienen valores unitarios y criterios de avalúo, no la mecánica de cálculo del impuesto."
   },
   "_meta": {
     "fuente": "txt",
@@ -43,7 +43,7 @@
     "usado_vision": false,
     "tokens": {
       "input": 8606,
-      "output": 306,
+      "output": 333,
       "cached": 5888
     },
     "cvegeo": "11036",

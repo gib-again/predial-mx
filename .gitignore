@@ -1,8 +1,10 @@
 # ── PDFs (pesados, regenerables) ──
 data/*/pdf_raw/
 data/*/pdf_ocr/
+data/*/pdf_ocr_full/
 data/*/pdf_cleaned/
 data/*/focus_predial/
+data/*/focus_predial_backup_pre_reocr/
 data/*/json/
 data/*/json_predial/
 data/*/indices/

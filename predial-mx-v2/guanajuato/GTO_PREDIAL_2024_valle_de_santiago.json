@@ -11,42 +11,42 @@
       },
       {
         "n_rango": 2,
-        "inferior": 132083.28,
+        "inferior": 132083.27,
         "superior": 264166.54,
         "cuota_fija": 317.0,
         "tasa_marginal": 0.00255
       },
       {
         "n_rango": 3,
-        "inferior": 264166.55,
+        "inferior": 264166.54,
         "superior": 528333.08,
         "cuota_fija": 653.81,
         "tasa_marginal": 0.0027
       },
       {
         "n_rango": 4,
-        "inferior": 528333.09,
+        "inferior": 528333.08,
         "superior": 1056666.16,
         "cuota_fija": 1367.06,
         "tasa_marginal": 0.00285
       },
       {
         "n_rango": 5,
-        "inferior": 1056666.17,
+        "inferior": 1056666.16,
         "superior": 2113332.32,
         "cuota_fija": 2872.81,
         "tasa_marginal": 0.003
       },
       {
         "n_rango": 6,
-        "inferior": 2113332.33,
+        "inferior": 2113332.32,
         "superior": 4226664.64,
         "cuota_fija": 6042.81,
         "tasa_marginal": 0.00315
       },
       {
         "n_rango": 7,
-        "inferior": 4226664.65,
+        "inferior": 4226664.64,
         "superior": null,
         "cuota_fija": 12699.81,
         "tasa_marginal": 0.0033
@@ -57,7 +57,7 @@
       "periodicidad": "anual",
       "unidad": "pesos"
     },
-    "comentarios": "Artículo 4 establece una mecánica progresiva por valor fiscal con cuota fija + impuesto marginal sobre el excedente. Se transcriben las tablas principales aplicables a inmuebles urbanos/suburbanos y rústicos según antigüedad y presencia de edificaciones. El texto incluye además la regla de mínimo predial del artículo 38 cuando el cálculo resulte inferior; no se incluyen valores unitarios del artículo 5 por ser catastro, no tarifa. La segmentación OCR presenta varias imprecisiones numéricas menores; se normalizaron límites contiguos y montos visibles tal como aparecen."
+    "comentarios": "Art. 4: La sección principal del predial se expresa como tabla progresiva por valor fiscal con cuota fija más impuesto marginal. Se transcriben las Tablas 1 a 6 como progresivas. El texto también indica que si el resultado es inferior a la cuota mínima anual del artículo 38, se pagará dicha cuota mínima; no se proporcionó en el segmento el monto del art. 38, por lo que no se incorpora. Las Tablas 1 a 4 corresponden a inmuebles urbanos y suburbanos según antigüedad y con/sin edificaciones; las Tablas 5 y 6 corresponden a inmuebles rústicos según antigüedad."
   },
   "_meta": {
     "fuente": "txt",
@@ -72,7 +72,7 @@
     "usado_vision": false,
     "tokens": {
       "input": 10541,
-      "output": 472,
+      "output": 493,
       "cached": 5888
     },
     "cvegeo": "11042",

@@ -4,16 +4,16 @@
     "tabla": [
       {
         "grupo": "general",
-        "clave": "urbano_suburbano_con_edificaciones",
-        "descripcion": "Inmuebles urbanos y suburbanos con edificaciones; entrada en vigor de la ley",
+        "clave": "urbano_y_suburbano_con_edificacion",
+        "descripcion": "Inmuebles urbanos y suburbanos con edificaciones, según la antigüedad indicada en el artículo 4.",
         "tasa_millar": 0.0024,
         "periodicidad": "anual",
         "cuota_fija_adicional": null
       },
       {
         "grupo": "general",
-        "clave": "urbano_suburbano_sin_edificaciones",
-        "descripcion": "Inmuebles urbanos y suburbanos sin edificaciones; entrada en vigor de la ley",
+        "clave": "urbano_y_suburbano_sin_edificacion",
+        "descripcion": "Inmuebles urbanos y suburbanos sin edificaciones, según la antigüedad indicada en el artículo 4.",
         "tasa_millar": 0.0045,
         "periodicidad": "anual",
         "cuota_fija_adicional": null
@@ -21,14 +21,14 @@
       {
         "grupo": "general",
         "clave": "rustico",
-        "descripcion": "Inmuebles rústicos; entrada en vigor de la ley",
+        "descripcion": "Inmuebles rústicos, según la antigüedad indicada en el artículo 4.",
         "tasa_millar": 0.0018,
         "periodicidad": "anual",
         "cuota_fija_adicional": null
       }
     ],
     "minimo_predial": null,
-    "comentarios": "Artículo 4 establece tasas anuales al millar por tipo de inmueble: urbanos y suburbanos con edificaciones 2.4 al millar, sin edificaciones 4.5 al millar, y rústicos 1.8 al millar para la entrada en vigor de la ley; también aparecen tasas históricas para 2002-2018 e anteriores a 2002, pero la mecánica principal vigente en 2019 se transcribe en la tabla. Las tablas de valores unitarios de terreno y construcción de los artículos 5 y 6 corresponden a valuación catastral, no a la tarifa del predial."
+    "comentarios": "Artículo 4 establece tres tasas anuales al millar por tipo de inmueble: urbanos y suburbanos con edificaciones, urbanos y suburbanos sin edificaciones, y rústicos. El texto también presenta una segunda y tercera tasa para años 2002-2018 y anteriores a 2002, pero se transcriben aquí solo como parte del catálogo tarifario general del artículo. No se extraen valores unitarios de catastro de los artículos 5 y 6, porque no constituyen la mecánica del impuesto."
   },
   "_meta": {
     "fuente": "txt",
@@ -43,7 +43,7 @@
     "usado_vision": false,
     "tokens": {
       "input": 8677,
-      "output": 356,
+      "output": 342,
       "cached": 5888
     },
     "cvegeo": "11042",

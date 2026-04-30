@@ -4,16 +4,16 @@
     "tabla": [
       {
         "grupo": "urbano",
-        "clave": "inmuebles_urbanos_y_suburbanos_con_valor_determinado_o_modificado_con_edificaciones",
-        "descripcion": "Inmuebles urbanos y suburbanos con valor determinado o modificado, con edificaciones",
+        "clave": "inmuebles_urbanos_y_suburbanos_con_edificaciones",
+        "descripcion": "Inmuebles urbanos y suburbanos con edificaciones. Aplicable según antigüedad del inmueble.",
         "tasa_millar": 0.0024,
         "periodicidad": "anual",
         "cuota_fija_adicional": null
       },
       {
         "grupo": "urbano",
-        "clave": "inmuebles_urbanos_y_suburbanos_con_valor_determinado_o_modificado_sin_edificaciones",
-        "descripcion": "Inmuebles urbanos y suburbanos con valor determinado o modificado, sin edificaciones",
+        "clave": "inmuebles_urbanos_y_suburbanos_sin_edificaciones",
+        "descripcion": "Inmuebles urbanos y suburbanos sin edificaciones. Aplicable según antigüedad del inmueble.",
         "tasa_millar": 0.0045,
         "periodicidad": "anual",
         "cuota_fija_adicional": null
@@ -21,14 +21,54 @@
       {
         "grupo": "rustico",
         "clave": "inmuebles_rusticos",
-        "descripcion": "Inmuebles rústicos",
+        "descripcion": "Inmuebles rústicos. Aplicable según antigüedad del inmueble.",
         "tasa_millar": 0.0018,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "urbano",
+        "clave": "inmuebles_urbanos_y_suburbanos_con_edificaciones_ant_2002_1993",
+        "descripcion": "Inmuebles urbanos y suburbanos con edificaciones, con anterioridad al año 2002 y hasta 1993 inclusive.",
+        "tasa_millar": 0.008,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "urbano",
+        "clave": "inmuebles_urbanos_y_suburbanos_sin_edificaciones_ant_2002_1993",
+        "descripcion": "Inmuebles urbanos y suburbanos sin edificaciones, con anterioridad al año 2002 y hasta 1993 inclusive.",
+        "tasa_millar": 0.015,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "rustico",
+        "clave": "inmuebles_rusticos_ant_2002_1993",
+        "descripcion": "Inmuebles rústicos, con anterioridad al año 2002 y hasta 1993 inclusive.",
+        "tasa_millar": 0.006,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "urbano",
+        "clave": "inmuebles_urbanos_y_suburbanos_con_edificaciones_ant_1993",
+        "descripcion": "Inmuebles urbanos y suburbanos con edificaciones, con anterioridad al año 1993.",
+        "tasa_millar": 0.013,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "urbano",
+        "clave": "inmuebles_urbanos_y_suburbanos_sin_edificaciones_ant_1993",
+        "descripcion": "Inmuebles urbanos y suburbanos sin edificaciones, con anterioridad al año 1993.",
+        "tasa_millar": 0.012,
         "periodicidad": "anual",
         "cuota_fija_adicional": null
       }
     ],
     "minimo_predial": null,
-    "comentarios": "Art. 4 establece tasas anuales al millar por categoría de inmueble. Se transcribe solo la mecánica del impuesto predial. La tabla contenía también una fila para inmuebles con valores anteriores a 2002/1993, pero el texto está truncado en la columna de tasas para los inmuebles urbanos/suburbanos con/sin edificaciones; aun así la mecánica principal es de tarifa al millar por categoría. Art. 5 y 6 describen valores unitarios catastrales para avalúo, no una mecánica distinta del predial. No se documentan descuentos, recargos ni bonificaciones."
+    "comentarios": "Art. 4 establece tasas anuales al millar por categoría de inmueble y por antigüedad. Se transcribe como tarifa_millar porque no hay rangos de valor catastral en la mecánica del impuesto. Art. 5 contiene valores unitarios de catastro para avalúo y no forma parte de la tarifa del predial. La tabla del artículo 4 presenta renglones diferenciados para inmuebles urbanos y suburbanos con/sin edificaciones y para inmuebles rústicos; además distingue tres periodos de antigüedad del inmueble."
   },
   "_meta": {
     "fuente": "txt",
@@ -43,7 +83,7 @@
     "usado_vision": false,
     "tokens": {
       "input": 8592,
-      "output": 377,
+      "output": 740,
       "cached": 5888
     },
     "cvegeo": "11030",

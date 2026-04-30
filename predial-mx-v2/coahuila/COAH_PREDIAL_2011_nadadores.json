@@ -5,7 +5,7 @@
       {
         "grupo": "urbano",
         "clave": "predios_urbanos",
-        "descripcion": "Predios urbanos",
+        "descripcion": "Sobre los predios urbanos",
         "tasa_millar": 0.005,
         "periodicidad": "anual",
         "cuota_fija_adicional": null
@@ -13,7 +13,7 @@
       {
         "grupo": "rustico",
         "clave": "predios_rusticos",
-        "descripcion": "Predios rústicos",
+        "descripcion": "Sobre los predios rústicos",
         "tasa_millar": 0.003,
         "periodicidad": "anual",
         "cuota_fija_adicional": null
@@ -24,7 +24,7 @@
       "periodicidad": "bimestral",
       "unidad": "pesos"
     },
-    "comentarios": "Art. 2: el impuesto predial se paga con 5 al millar anual para predios urbanos y 3 al millar anual para predios rústicos. El artículo también establece un mínimo de $15.00 por bimestre. No se documentan descuentos, recargos ni bonificaciones."
+    "comentarios": "Art. 2: El impuesto predial se paga con tasas al millar anuales de 5 al millar para predios urbanos y 3 al millar para predios rústicos. Se establece un mínimo de $15.00 por bimestre. Se ignoran incentivos, descuentos y reducciones para pensionados/jubilados/adultos mayores/personas con discapacidad por no formar parte de la mecánica base."
   },
   "_meta": {
     "fuente": "txt",
@@ -39,7 +39,7 @@
     "usado_vision": false,
     "tokens": {
       "input": 6348,
-      "output": 214,
+      "output": 243,
       "cached": 5888
     },
     "cvegeo": "05021",

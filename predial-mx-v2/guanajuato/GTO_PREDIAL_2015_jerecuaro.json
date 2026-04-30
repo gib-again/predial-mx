@@ -4,39 +4,31 @@
     "tabla": [
       {
         "grupo": "general",
-        "clave": "entrada_en_vigor",
-        "descripcion": "Inmuebles que cuenten con un valor determinado o modificado a la entrada en vigor de la ley",
+        "clave": "urbano_suburbano_edificado",
+        "descripcion": "Inmuebles urbanos y suburbanos con edificaciones, valor determinado o modificado; aplica la tasa anual indicada en el Art. 4.",
         "tasa_millar": 0.0024,
         "periodicidad": "anual",
         "cuota_fija_adicional": null
       },
       {
         "grupo": "general",
-        "clave": "anios_2002_a_2014",
-        "descripcion": "Inmuebles con valor determinado o modificado durante los años 2002 hasta 2014, inclusive",
-        "tasa_millar": 0.0024,
+        "clave": "urbano_suburbano_sin_edificacion",
+        "descripcion": "Inmuebles urbanos y suburbanos sin edificaciones, valor determinado o modificado; aplica la tasa anual indicada en el Art. 4.",
+        "tasa_millar": 0.0045,
         "periodicidad": "anual",
         "cuota_fija_adicional": null
       },
       {
-        "grupo": "general",
-        "clave": "anteriores_2002_hasta_1993",
-        "descripcion": "Inmuebles con valor determinado o modificado con anterioridad al año 2002 y hasta el año 1993",
-        "tasa_millar": 0.008,
-        "periodicidad": "anual",
-        "cuota_fija_adicional": null
-      },
-      {
-        "grupo": "general",
-        "clave": "anteriores_1993",
-        "descripcion": "Inmuebles con valor determinado o modificado con anterioridad al año de 1993",
-        "tasa_millar": 0.013,
+        "grupo": "rustico",
+        "clave": "rustico",
+        "descripcion": "Inmuebles rústicos; aplica la tasa anual indicada en el Art. 4.",
+        "tasa_millar": 0.0018,
         "periodicidad": "anual",
         "cuota_fija_adicional": null
       }
     ],
     "minimo_predial": null,
-    "comentarios": "Artículo 4 establece tasas al millar anuales diferenciadas por antigüedad/valor determinado o modificado. También señala tasas distintas para inmuebles urbanos y suburbanos con edificaciones, sin edificaciones y rústicos; sin embargo, el texto extraído presenta la estructura en columnas parcialmente deformada, por lo que se transcriben las tasas visibles del cuadro. Artículos 5 y 6 contienen valores unitarios catastrales y criterios de valuación, no la mecánica del impuesto."
+    "comentarios": "Art. 4 establece tasas anuales al millar por tipo de inmueble: 2.4 al millar para inmuebles urbanos y suburbanos con edificaciones o con valor determinado/modificado; 4.5 al millar para inmuebles urbanos y suburbanos sin edificaciones; 1.8 al millar para inmuebles rústicos. El resto del texto corresponde a valores catastrales y criterios de valuación (Arts. 5 y 6), no a la mecánica del impuesto."
   },
   "_meta": {
     "fuente": "txt",
@@ -51,7 +43,7 @@
     "usado_vision": false,
     "tokens": {
       "input": 8473,
-      "output": 401,
+      "output": 350,
       "cached": 5888
     },
     "cvegeo": "11019",

@@ -6,25 +6,32 @@
         "descripcion": "Cuota fija de 10.00 más factor de 0.001 sobre el valor catastral",
         "tasa": 0.001,
         "base_calculo": "valor_catastral",
-        "unidad": "al_millar"
+        "unidad": "al_millar",
+        "cuota_fija_adicional": {
+          "monto": 10.0,
+          "periodicidad": "anual",
+          "unidad": "pesos"
+        }
       }
     ],
     "minimo_predial": null,
-    "comentarios": "Artículo 13 establece: 'El impuesto predial tendrá una cuota fija de $10.00 más el resultado del factor de .001 por el importe del Valor Catastral que se determine'. La tabla posterior corresponde a valores unitarios de terreno y construcción para determinar el valor catastral, no a una tarifa adicional del impuesto predial. La cuota fija adicional de $10.00 no puede codificarse en `tasa_unica` según el esquema disponible."
+    "comentarios": "El artículo establece una mecánica uniforme: cuota fija de $10.00 más el resultado de aplicar el factor 0.001 al importe del valor catastral. Las tablas de valores unitarios de terreno, rústicos por hectárea y construcción sirven para determinar el valor catastral y no forman parte de la tarifa del impuesto predial."
   },
   "_meta": {
     "fuente": "txt",
     "modelo": "gpt-5.4"
   },
   "_meta_v2": {
-    "intentos": 3,
+    "intentos": 1,
     "requiere_revision": false,
     "escalado": true,
     "razon": "escalado_a_gpt-5.4_tras_2x_mini_fallido",
+    "usado_reocr": false,
+    "usado_vision": false,
     "tokens": {
-      "input": 18406,
-      "output": 797,
-      "cached": 13568
+      "input": 7042,
+      "output": 186,
+      "cached": 5888
     },
     "cvegeo": "31086",
     "estado": "yucatan",

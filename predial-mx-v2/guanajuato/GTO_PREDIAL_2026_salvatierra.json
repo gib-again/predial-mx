@@ -1,11 +1,49 @@
 {
   "predial": {
-    "tipo_esquema": "otro_no_clasificado",
-    "categoria": "segmento_vacio",
-    "descripcion_estructural": "El texto proporcionado sólo muestra el encabezado de la Ley de Ingresos y el monto estimado del impuesto predial, pero no incluye la sección tarifaria ni tablas o artículos con la mecánica de cálculo del predial. No hay datos extraíbles de cuotas, tasas o rangos.",
-    "tabla_cruda": [],
-    "minimo_predial": null,
-    "comentarios": "No se detectó contenido tarifario del impuesto predial en el fragmento remitido."
+    "tipo_esquema": "progresivo",
+    "tabla": [
+      {
+        "n_rango": 1,
+        "inferior": 0.0,
+        "superior": 400000.0,
+        "cuota_fija": 0.0,
+        "tasa_marginal": 0.0024
+      },
+      {
+        "n_rango": 2,
+        "inferior": 400000.0,
+        "superior": 800000.0,
+        "cuota_fija": 960.0,
+        "tasa_marginal": 0.003
+      },
+      {
+        "n_rango": 3,
+        "inferior": 800000.0,
+        "superior": 1200000.0,
+        "cuota_fija": 2160.0,
+        "tasa_marginal": 0.0036
+      },
+      {
+        "n_rango": 4,
+        "inferior": 1200000.0,
+        "superior": 1800000.0,
+        "cuota_fija": 3600.0,
+        "tasa_marginal": 0.0042
+      },
+      {
+        "n_rango": 5,
+        "inferior": 1800000.0,
+        "superior": null,
+        "cuota_fija": 6120.0,
+        "tasa_marginal": 0.0048
+      }
+    ],
+    "minimo_predial": {
+      "monto": 0.0,
+      "periodicidad": "anual",
+      "unidad": "pesos"
+    },
+    "comentarios": "Art. 4 fracción I: tabla progresiva para inmuebles urbanos y suburbanos con edificación, aplicable a valores determinados o modificados en el ejercicio fiscal vigente y hasta 2023 inclusive. Art. 4 fracción II establece tarifas paralelas para otros inmuebles (urbanos, suburbanos y rústicos) con tasas al millar según antigüedad y presencia/ausencia de edificaciones, pero se documentan sólo en comentarios por tratarse de tarifas paralelas no predominantes. También se prevé cuota mínima del artículo 41 si el impuesto resultara inferior, pero no se transcribe su monto porque no aparece en el texto proporcionado."
   },
   "_meta": {
     "fuente": "txt",
@@ -13,15 +51,15 @@
   },
   "_meta_v2": {
     "intentos": 1,
-    "requiere_revision": true,
+    "requiere_revision": false,
     "escalado": false,
-    "razon": "clasificado_como_otro_no_clasificado",
-    "usado_reocr": true,
-    "usado_vision": true,
+    "razon": null,
+    "usado_reocr": false,
+    "usado_vision": false,
     "tokens": {
-      "input": 33453,
-      "output": 1189,
-      "cached": 17664
+      "input": 9060,
+      "output": 380,
+      "cached": 5888
     },
     "cvegeo": "11028",
     "estado": "guanajuato",

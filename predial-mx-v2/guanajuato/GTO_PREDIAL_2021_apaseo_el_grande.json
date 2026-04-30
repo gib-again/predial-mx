@@ -4,31 +4,103 @@
     "tabla": [
       {
         "grupo": "general",
-        "clave": "inmuebles_urbanos_suburbanos_con_edificaciones",
-        "descripcion": "A la entrada en vigor de la presente Ley",
+        "clave": "inmuebles_urbanos_y_suburbanos_con_edificaciones",
+        "descripcion": "Artículo 4, fracción I: inmuebles urbanos y suburbanos con edificaciones.",
         "tasa_millar": 0.0024,
         "periodicidad": "anual",
         "cuota_fija_adicional": null
       },
       {
         "grupo": "general",
-        "clave": "inmuebles_urbanos_suburbanos_sin_edificaciones",
-        "descripcion": "A la entrada en vigor de la presente Ley",
+        "clave": "inmuebles_urbanos_y_suburbanos_sin_edificaciones",
+        "descripcion": "Artículo 4, fracción I: inmuebles urbanos y suburbanos sin edificaciones.",
         "tasa_millar": 0.0045,
         "periodicidad": "anual",
         "cuota_fija_adicional": null
       },
       {
         "grupo": "general",
-        "clave": "inmuebles_urbanos_suburbanos_otros",
-        "descripcion": "A la entrada en vigor de la presente Ley",
+        "clave": "inmuebles_urbanos_y_suburbanos_modificados_con_edificaciones",
+        "descripcion": "Artículo 4, fracción I: inmuebles urbanos y suburbanos modificados con edificaciones.",
         "tasa_millar": 0.0018,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "general",
+        "clave": "inmuebles_urbanos_y_suburbanos_con_edificaciones_2002_2020",
+        "descripcion": "Artículo 4, fracción II: durante los años 2002 hasta 2020, inclusive, inmuebles urbanos y suburbanos con edificaciones.",
+        "tasa_millar": 0.0024,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "general",
+        "clave": "inmuebles_urbanos_y_suburbanos_sin_edificaciones_2002_2020",
+        "descripcion": "Artículo 4, fracción II: durante los años 2002 hasta 2020, inclusive, inmuebles urbanos y suburbanos sin edificaciones.",
+        "tasa_millar": 0.0045,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "general",
+        "clave": "inmuebles_urbanos_y_suburbanos_modificados_con_edificaciones_2002_2020",
+        "descripcion": "Artículo 4, fracción II: durante los años 2002 hasta 2020, inclusive, inmuebles urbanos y suburbanos modificados con edificaciones.",
+        "tasa_millar": 0.0018,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "general",
+        "clave": "inmuebles_urbanos_y_suburbanos_con_edificaciones_1993_2001",
+        "descripcion": "Artículo 4, fracción III: con anterioridad al año 2002 y hasta 1993, inclusive, inmuebles urbanos y suburbanos con edificaciones.",
+        "tasa_millar": 0.008,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "general",
+        "clave": "inmuebles_urbanos_y_suburbanos_sin_edificaciones_1993_2001",
+        "descripcion": "Artículo 4, fracción III: con anterioridad al año 2002 y hasta 1993, inclusive, inmuebles urbanos y suburbanos sin edificaciones.",
+        "tasa_millar": 0.015,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "general",
+        "clave": "inmuebles_urbanos_y_suburbanos_modificados_con_edificaciones_1993_2001",
+        "descripcion": "Artículo 4, fracción III: con anterioridad al año 2002 y hasta 1993, inclusive, inmuebles urbanos y suburbanos modificados con edificaciones.",
+        "tasa_millar": 0.006,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "general",
+        "clave": "inmuebles_urbanos_y_suburbanos_con_edificaciones_anterior_1993",
+        "descripcion": "Artículo 4, fracción IV: anterioridad al año de 1993, inmuebles urbanos y suburbanos con edificaciones.",
+        "tasa_millar": 0.023,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "general",
+        "clave": "inmuebles_urbanos_y_suburbanos_sin_edificaciones_anterior_1993",
+        "descripcion": "Artículo 4, fracción IV: anterioridad al año de 1993, inmuebles urbanos y suburbanos sin edificaciones.",
+        "tasa_millar": 0.013,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "general",
+        "clave": "inmuebles_urbanos_y_suburbanos_modificados_con_edificaciones_anterior_1993",
+        "descripcion": "Artículo 4, fracción IV: anterioridad al año de 1993, inmuebles urbanos y suburbanos modificados con edificaciones.",
+        "tasa_millar": 0.012,
         "periodicidad": "anual",
         "cuota_fija_adicional": null
       }
     ],
     "minimo_predial": null,
-    "comentarios": "Art. 4 establece tasas al millar anuales para inmuebles urbanos y suburbanos con valor determinado o modificado, diferenciando tres condiciones: con edificaciones (2.4 al millar), sin edificaciones (4.5 al millar) y una tercera columna capturada como 'otros' en el texto OCR (1.8 al millar). El artículo también contiene tasas históricas para años anteriores, pero la mecánica vigente para 2021 es la de la primera fila del cuadro. No se incorpora el resto del artículo 4 por ser referencia temporal y no mecánica principal vigente."
+    "comentarios": "Artículo 4 establece una tabla categórica de tasas al millar para inmuebles urbanos y suburbanos, diferenciada por antigüedad y por condición de edificados / sin edificaciones / modificados con edificaciones. Artículo 5 contiene valores catastrales de referencia (terrenos y construcciones) y criterios de valuación, no la mecánica de cálculo del impuesto. Los inmuebles rústicos se describen en valuación del Artículo 5, pero no se aprecia en el texto transcrito una tarifa predial separada aplicable al cálculo del impuesto."
   },
   "_meta": {
     "fuente": "txt",
@@ -43,7 +115,7 @@
     "usado_vision": false,
     "tokens": {
       "input": 8679,
-      "output": 338,
+      "output": 1134,
       "cached": 5888
     },
     "cvegeo": "11005",

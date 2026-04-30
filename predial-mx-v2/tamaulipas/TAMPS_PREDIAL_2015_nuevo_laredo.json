@@ -44,7 +44,7 @@
       }
     ],
     "minimo_predial": null,
-    "comentarios": "Art. 10: la base de cálculo es el valor catastral de los inmuebles. Fracc. VI indica que para predios urbanos no edificados propiedad de fraccionamientos autorizados no se aplica la tasa de la fracción IV. Fraccs. VII y VIII prevén un aumento del 100% al impuesto para adquirientes de lotes de fraccionamientos que no construyan en tres años y para fraccionadores autorizados por predios no vendidos; se documenta como disposición adicional/penal, no como mecánica principal."
+    "comentarios": "Art. 10: la base es el valor catastral anual. Fracciones VI-VIII establecen excepciones y aumentos del 100% para ciertos predios/fraccionadores; se omiten como descuentos/recargos/bonificaciones y no alteran la tabla principal de tasas."
   },
   "_meta": {
     "fuente": "txt",
@@ -59,7 +59,7 @@
     "usado_vision": false,
     "tokens": {
       "input": 6597,
-      "output": 426,
+      "output": 372,
       "cached": 5888
     },
     "cvegeo": "28027",

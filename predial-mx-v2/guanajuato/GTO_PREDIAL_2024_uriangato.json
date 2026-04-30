@@ -4,7 +4,7 @@
     "tabla": [
       {
         "grupo": "general",
-        "clave": "general_2002_a_2023",
+        "clave": "general_2002_2023",
         "descripcion": "Durante los años 2002 y hasta el 2023 inclusive",
         "tasa_millar": 0.002,
         "periodicidad": "anual",
@@ -12,7 +12,7 @@
       },
       {
         "grupo": "general",
-        "clave": "general_anteriores_1993_a_2001",
+        "clave": "general_1993_2001",
         "descripcion": "Con anterioridad al año 2002 y hasta 1993 inclusive",
         "tasa_millar": 0.008,
         "periodicidad": "anual",
@@ -20,7 +20,7 @@
       },
       {
         "grupo": "general",
-        "clave": "general_anteriores_1993",
+        "clave": "general_anterior_1993",
         "descripcion": "Con anterioridad al año de 1993",
         "tasa_millar": 0.0013,
         "periodicidad": "anual",
@@ -28,7 +28,7 @@
       }
     ],
     "minimo_predial": null,
-    "comentarios": "Artículo 4 presenta una tabla de tasas por año de construcción/antigüedad para inmuebles urbanos, suburbanos y rústicos. El extracto OCR está deteriorado en el primer renglón, pero sí permite identificar las tasas de los renglones 2 a 4: 0.20%, 0.80% y 0.13%. En el texto también aparecen tasas diferenciadas para categorías urbanas/suburbanas y rústicas, pero la segmentación no permite recuperar con fiabilidad todas las celdas. No se documenta la valuación de inmuebles (Art. 5 y 6) porque no es mecánica de cálculo del predial, sino bases catastrales."
+    "comentarios": "Art. 4 contiene tasas anuales sobre valor catastral para inmuebles urbanos/suburbanos con valor determinado y para inmuebles rústicos. El texto OCR está fragmentado y no permite reconstruir con certeza todas las columnas/categorías; se transcriben únicamente los renglones legibles de tasa. Art. 5 desarrolla valores unitarios y factores de valuación, pero no es la mecánica de cálculo del impuesto en sí."
   },
   "_meta": {
     "fuente": "txt",
@@ -43,7 +43,7 @@
     "usado_vision": false,
     "tokens": {
       "input": 9277,
-      "output": 361,
+      "output": 298,
       "cached": 5888
     },
     "cvegeo": "11041",

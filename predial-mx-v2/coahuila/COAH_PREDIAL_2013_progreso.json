@@ -5,16 +5,16 @@
       {
         "grupo": "urbano",
         "clave": "predios_urbanos",
-        "descripcion": "Predios urbanos",
-        "tasa_millar": 5.0,
+        "descripcion": "Sobre los predios urbanos",
+        "tasa_millar": 0.005,
         "periodicidad": "anual",
         "cuota_fija_adicional": null
       },
       {
         "grupo": "rustico",
         "clave": "predios_rusticos",
-        "descripcion": "Predios rústicos",
-        "tasa_millar": 5.0,
+        "descripcion": "Sobre los predios rústicos",
+        "tasa_millar": 0.005,
         "periodicidad": "anual",
         "cuota_fija_adicional": null
       }
@@ -24,7 +24,7 @@
       "periodicidad": "bimestral",
       "unidad": "pesos"
     },
-    "comentarios": "Art. 2: predios urbanos 5 al millar anual; predios rústicos 5 al millar anual. El texto también establece un mínimo de $30.00 por bimestre. Los incentivos por pago anual, por condición de pensionados/jubilados/adultos mayores/personas con discapacidad, por instituciones de beneficencia/educativas y por generación de empleos directos se ignoran por ser bonificaciones/incentivos, no mecánica de cálculo."
+    "comentarios": "Art. 2 fraccs. I y II: predios urbanos y rústicos pagan 5 al millar anual. Art. 2 fracc. III: mínimo predial de $30.00 por bimestre. Los incentivos de pago anual anticipado, pensionados/jubilados/adultos mayores/personas con discapacidad, instituciones de beneficencia/educativas y empresas con generación de empleos directos se ignoran por tratarse de descuentos/bonificaciones."
   },
   "_meta": {
     "fuente": "txt",
@@ -39,7 +39,7 @@
     "usado_vision": false,
     "tokens": {
       "input": 6786,
-      "output": 247,
+      "output": 255,
       "cached": 5888
     },
     "cvegeo": "05026",

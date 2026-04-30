@@ -3,47 +3,47 @@
     "tipo_esquema": "tarifa_millar",
     "tabla": [
       {
-        "grupo": "general",
-        "clave": "inmuebles_urbanos_y_suburbanos_con_edificaciones",
-        "descripcion": "Inmuebles urbanos y suburbanos con edificaciones: tasa anual por el valor determinado o modificado.",
+        "grupo": "urbano",
+        "clave": "urbano_y_suburbano_con_edificaciones",
+        "descripcion": "Inmuebles urbanos y suburbanos con edificaciones",
         "tasa_millar": 0.0024,
         "periodicidad": "anual",
         "cuota_fija_adicional": null
       },
       {
-        "grupo": "general",
-        "clave": "inmuebles_urbanos_y_suburbanos_sin_edificaciones",
-        "descripcion": "Inmuebles urbanos y suburbanos sin edificaciones: tasa anual por el valor determinado o modificado.",
+        "grupo": "urbano",
+        "clave": "urbano_y_suburbano_sin_edificaciones",
+        "descripcion": "Inmuebles urbanos y suburbanos sin edificaciones",
         "tasa_millar": 0.0045,
         "periodicidad": "anual",
         "cuota_fija_adicional": null
       },
       {
         "grupo": "rustico",
-        "clave": "inmuebles_rusticos",
-        "descripcion": "Inmuebles rústicos: tasa anual sobre el valor determinado o modificado.",
+        "clave": "rusticos",
+        "descripcion": "Inmuebles rústicos",
         "tasa_millar": 0.0018,
         "periodicidad": "anual",
         "cuota_fija_adicional": null
       }
     ],
     "minimo_predial": null,
-    "comentarios": "Art. 4: la mecánica principal es una tarifa al millar por categoría de inmueble. La fracción I aplica a la entrada en vigor de la ley y la fracción II durante 2002-2013, pero el texto proporcionado corresponde al ejercicio 2014 y sólo se transcriben las tasas vigentes en el artículo. La fracción IV aparece truncada en el texto (no se integra como fila por incompleta). Art. 5 y 6 contienen valores unitarios y criterios de avalúo, no la tarifa del impuesto."
+    "comentarios": "Artículo 4 establece la mecánica del impuesto predial mediante tasas al millar por categoría de predio para inmuebles que cuenten con valor determinado o modificado a la entrada en vigor de la presente Ley: 2.4 al millar para urbanos y suburbanos con edificaciones, 4.5 al millar para urbanos y suburbanos sin edificaciones y 1.8 al millar para rústicos. El mismo artículo también menciona tasas históricas para valores determinados o modificados en periodos anteriores (durante 2002-2013 inclusive: 2.4, 4.5 y 1.8 al millar; con anterioridad al año 2002 y hasta 1993 inclusive: 8, 15 y 6 al millar; y con anterioridad a 1993: 13 y 12 al millar en el OCR visible), pero se toma como tabla principal la tarifa vigente a la entrada en vigor de la ley del ejercicio 2014. Los artículos 5 y 6 contienen tablas y criterios de valuación catastral, no la tarifa del impuesto."
   },
   "_meta": {
     "fuente": "txt",
-    "modelo": "gpt-5.4-mini"
+    "modelo": "gpt-5.4"
   },
   "_meta_v2": {
-    "intentos": 1,
+    "intentos": 3,
     "requiere_revision": false,
-    "escalado": false,
-    "razon": null,
+    "escalado": true,
+    "razon": "escalado_a_gpt-5.4_tras_2x_mini_fallido",
     "usado_reocr": false,
     "usado_vision": false,
     "tokens": {
-      "input": 8586,
-      "output": 357,
+      "input": 9406,
+      "output": 433,
       "cached": 5888
     },
     "cvegeo": "11021",

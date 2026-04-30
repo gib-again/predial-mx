@@ -1,11 +1,50 @@
 {
   "predial": {
-    "tipo_esquema": "otro_no_clasificado",
-    "categoria": "segmento_vacio",
-    "descripcion_estructural": "El texto proporcionado no contiene el articulado ni una tabla tarifaria de la sección del Impuesto Predial; sólo aparecen páginas de encabezado y sumario con el monto estimado del impuesto predial, sin mecánica de cálculo extraíble. No es posible transcribir tasas, brackets o cuotas sin inventar contenido.",
-    "tabla_cruda": [],
+    "tipo_esquema": "tarifa_millar",
+    "tabla": [
+      {
+        "grupo": "urbano",
+        "clave": "urbanos_sin_edificaciones",
+        "descripcion": "Inmuebles urbanos y suburbanos, sin edificaciones; años 2002 a 2020 inclusive",
+        "tasa_millar": 0.002,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "urbano",
+        "clave": "urbanos_con_edificaciones",
+        "descripcion": "Inmuebles urbanos y suburbanos, con edificaciones; años 2002 a 2020 inclusive",
+        "tasa_millar": 0.003,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "urbano",
+        "clave": "urbanos_valor_determinado_modificado_sin_edificaciones",
+        "descripcion": "Inmuebles urbanos y suburbanos, sin edificaciones, con valor determinado o modificado; con anterioridad al año 2002",
+        "tasa_millar": 0.008,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "urbano",
+        "clave": "urbanos_valor_determinado_modificado_con_edificaciones",
+        "descripcion": "Inmuebles urbanos y suburbanos, con edificaciones, con valor determinado o modificado; con anterioridad al año 2002",
+        "tasa_millar": 0.045,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "rustico",
+        "clave": "rusticos_con_valor_determinado_modificado",
+        "descripcion": "Inmuebles rústicos con valor determinado o modificado; con anterioridad al año de 1993",
+        "tasa_millar": 0.0012,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      }
+    ],
     "minimo_predial": null,
-    "comentarios": "No se observa la sección tarifaria del predial en el fragmento suministrado."
+    "comentarios": "Art. 4: tasas anuales sobre valor catastral para inmuebles urbanos y suburbanos según categoría temporal y presencia de edificaciones, y para inmuebles rústicos con valor determinado o modificado. Se transcribe la mecánica principal como catálogo categórico de tasas; la ley no presenta rangos de valor catastral en este artículo. Art. 5 contiene tablas de valores unitarios catastrales y factores de valuación, no mecánica del impuesto."
   },
   "_meta": {
     "fuente": "txt",
@@ -13,15 +52,15 @@
   },
   "_meta_v2": {
     "intentos": 1,
-    "requiere_revision": true,
+    "requiere_revision": false,
     "escalado": false,
-    "razon": "clasificado_como_otro_no_clasificado",
-    "usado_reocr": true,
-    "usado_vision": true,
+    "razon": null,
+    "usado_reocr": false,
+    "usado_vision": false,
     "tokens": {
-      "input": 52168,
+      "input": 9070,
       "output": 487,
-      "cached": 17664
+      "cached": 5888
     },
     "cvegeo": "11041",
     "estado": "guanajuato",

@@ -1,179 +1,101 @@
 {
   "predial": {
-    "tipo_esquema": "mixto",
+    "tipo_esquema": "progresivo",
     "tabla": [
       {
         "n_rango": 1,
         "inferior": 0.01,
         "superior": 320000.0,
-        "columnas": [
-          {
-            "nombre": "general",
-            "valor": 0.002,
-            "tipo": "tasa_marginal",
-            "unidad": "al_millar"
-          }
-        ]
+        "cuota_fija": 0.0,
+        "tasa_marginal": 0.002
       },
       {
         "n_rango": 2,
         "inferior": 320000.01,
         "superior": 420000.0,
-        "columnas": [
-          {
-            "nombre": "general",
-            "valor": 0.00205,
-            "tipo": "tasa_marginal",
-            "unidad": "al_millar"
-          }
-        ]
+        "cuota_fija": 640.0,
+        "tasa_marginal": 0.00205
       },
       {
         "n_rango": 3,
         "inferior": 420000.01,
         "superior": 530000.0,
-        "columnas": [
-          {
-            "nombre": "general",
-            "valor": 0.0021,
-            "tipo": "tasa_marginal",
-            "unidad": "al_millar"
-          }
-        ]
+        "cuota_fija": 845.0,
+        "tasa_marginal": 0.0021
       },
       {
         "n_rango": 4,
         "inferior": 530000.01,
         "superior": 680000.0,
-        "columnas": [
-          {
-            "nombre": "general",
-            "valor": 0.00215,
-            "tipo": "tasa_marginal",
-            "unidad": "al_millar"
-          }
-        ]
+        "cuota_fija": 1076.0,
+        "tasa_marginal": 0.00215
       },
       {
         "n_rango": 5,
         "inferior": 680000.01,
         "superior": 830000.0,
-        "columnas": [
-          {
-            "nombre": "general",
-            "valor": 0.00221,
-            "tipo": "tasa_marginal",
-            "unidad": "al_millar"
-          }
-        ]
+        "cuota_fija": 1398.5,
+        "tasa_marginal": 0.00221
       },
       {
         "n_rango": 6,
         "inferior": 830000.01,
         "superior": 1020000.0,
-        "columnas": [
-          {
-            "nombre": "general",
-            "valor": 0.00226,
-            "tipo": "tasa_marginal",
-            "unidad": "al_millar"
-          }
-        ]
+        "cuota_fija": 1730.0,
+        "tasa_marginal": 0.00226
       },
       {
         "n_rango": 7,
         "inferior": 1020000.01,
         "superior": 1250000.0,
-        "columnas": [
-          {
-            "nombre": "general",
-            "valor": 0.00232,
-            "tipo": "tasa_marginal",
-            "unidad": "al_millar"
-          }
-        ]
+        "cuota_fija": 2159.4,
+        "tasa_marginal": 0.00232
       },
       {
         "n_rango": 8,
         "inferior": 1250000.01,
         "superior": 1620000.0,
-        "columnas": [
-          {
-            "nombre": "general",
-            "valor": 0.00238,
-            "tipo": "tasa_marginal",
-            "unidad": "al_millar"
-          }
-        ]
+        "cuota_fija": 2693.0,
+        "tasa_marginal": 0.00238
       },
       {
         "n_rango": 9,
         "inferior": 1620000.01,
         "superior": 2350000.0,
-        "columnas": [
-          {
-            "nombre": "general",
-            "valor": 0.00244,
-            "tipo": "tasa_marginal",
-            "unidad": "al_millar"
-          }
-        ]
+        "cuota_fija": 3573.6,
+        "tasa_marginal": 0.00244
       },
       {
         "n_rango": 10,
         "inferior": 2350000.01,
         "superior": 4100000.0,
-        "columnas": [
-          {
-            "nombre": "general",
-            "valor": 0.0025,
-            "tipo": "tasa_marginal",
-            "unidad": "al_millar"
-          }
-        ]
+        "cuota_fija": 5354.8,
+        "tasa_marginal": 0.0025
       },
       {
         "n_rango": 11,
         "inferior": 4100000.01,
         "superior": 9860000.0,
-        "columnas": [
-          {
-            "nombre": "general",
-            "valor": 0.00256,
-            "tipo": "tasa_marginal",
-            "unidad": "al_millar"
-          }
-        ]
+        "cuota_fija": 9729.8,
+        "tasa_marginal": 0.00256
       },
       {
         "n_rango": 12,
         "inferior": 9860000.01,
         "superior": 29250000.0,
-        "columnas": [
-          {
-            "nombre": "general",
-            "valor": 0.00262,
-            "tipo": "tasa_marginal",
-            "unidad": "al_millar"
-          }
-        ]
+        "cuota_fija": 24475.4,
+        "tasa_marginal": 0.00262
       },
       {
         "n_rango": 13,
         "inferior": 29250000.01,
         "superior": null,
-        "columnas": [
-          {
-            "nombre": "general",
-            "valor": 0.00269,
-            "tipo": "tasa_marginal",
-            "unidad": "al_millar"
-          }
-        ]
+        "cuota_fija": 75277.2,
+        "tasa_marginal": 0.00269
       }
     ],
     "minimo_predial": null,
-    "comentarios": "Art. 4 fraccs. I y II: la mecánica principal del predial es progresiva por valor fiscal con cuota fija + tasa marginal sobre el excedente. Fracc. I aplica a inmuebles urbanos, suburbanos y rústicos con edificaciones; fracc. II a inmuebles urbanos, suburbanos y rústicos sin edificaciones. El documento también contiene valores unitarios de suelo en Art. 5, pero eso es catastro/valoración y no se extrae como mecánica del impuesto. La tabla se transcribe como una sola estructura homogénea de brackets con tasa marginal y cuota fija, distinguiendo las dos fracciones en el comentario porque comparten la misma fórmula y forma de cálculo."
+    "comentarios": "Artículo 4, fracciones I y II: se transcribe únicamente la mecánica de cálculo del predial. La ley establece dos tablas progresivas por valor fiscal: I) inmuebles urbanos, suburbanos y rústicos con edificaciones; II) inmuebles urbanos, suburbanos y rústicos sin edificaciones. Ambas usan la misma fórmula ((VF-LI)*T)+CF, con cuota fija y tasa marginal por bracket. La tarifa principal se clasifica como progresivo porque hay brackets por valor catastral y tasa marginal positiva. El Artículo 5 contiene valores unitarios de terreno/construcción (catastro), no tarifa, y se ignora. No se documentan descuentos/bonificaciones."
   },
   "_meta": {
     "fuente": "txt",
@@ -188,7 +110,7 @@
     "usado_vision": false,
     "tokens": {
       "input": 11932,
-      "output": 865,
+      "output": 718,
       "cached": 5888
     },
     "cvegeo": "11007",

@@ -4,7 +4,7 @@
     "tabla": [
       {
         "grupo": "urbano",
-        "clave": "urbano_industrial",
+        "clave": "industrial",
         "descripcion": "Predios urbanos industriales con o sin edificación",
         "tasa_millar": 0.005,
         "periodicidad": "anual",
@@ -12,7 +12,7 @@
       },
       {
         "grupo": "urbano",
-        "clave": "urbano_comercial_edificado",
+        "clave": "comercial_con_edificacion",
         "descripcion": "Predios urbanos comerciales con edificación",
         "tasa_millar": 0.005,
         "periodicidad": "anual",
@@ -20,7 +20,7 @@
       },
       {
         "grupo": "urbano",
-        "clave": "urbano_comercial_sin_edificacion",
+        "clave": "comercial_sin_edificacion",
         "descripcion": "Predios urbanos comerciales sin edificación",
         "tasa_millar": 0.00665,
         "periodicidad": "anual",
@@ -28,7 +28,7 @@
       },
       {
         "grupo": "urbano",
-        "clave": "urbano_residencial_edificado",
+        "clave": "residencial_con_edificacion",
         "descripcion": "Predios urbanos residenciales, de interés social y populares con edificación",
         "tasa_millar": 0.005,
         "periodicidad": "anual",
@@ -36,7 +36,7 @@
       },
       {
         "grupo": "urbano",
-        "clave": "urbano_residencial_sin_edificacion",
+        "clave": "residencial_sin_edificacion",
         "descripcion": "Predios urbanos residenciales, de interés social y populares sin edificación",
         "tasa_millar": 0.00665,
         "periodicidad": "anual",
@@ -56,7 +56,7 @@
       "periodicidad": "bimestral",
       "unidad": "pesos"
     },
-    "comentarios": "Art. 2: predios urbanos comerciales sin edificación pagan 1.33 veces lo fijado para los predios con edificación; predios urbanos residenciales, de interés social y populares sin edificación pagan 1.33 veces lo fijado para los predios con edificación. Art. 2 fracc. V establece mínimo predial de $40.00 bimestral, y $20.00 bimestral para pensionados/jubilados/adultos mayores/personas con discapacidad. Art. 2 fracc. VI prevé incentivos por pago anticipado y tasas/incentivos especiales para casa habitación, industria, predios prestados al Municipio, instituciones educativas no públicas y predios con licencia de fraccionamiento; se ignoran por tratarse de descuentos o incentivos. Art. 3 contiene incentivos fiscales para empresas y personas con discapacidad, no una mecánica general distinta del impuesto."
+    "comentarios": "Art. 2: predios urbanos comerciales y residenciales sin edificación pagan 1.33 veces la tasa de los predios con edificación (5 al millar -> 6.65 al millar). Art. 2: instituciones educativas no públicas pagan 1 al millar anual; predios prestados al Municipio para actividad deportiva o social cubren 10% de la cuota; licencias de fraccionamiento en vías de desarrollo pagan hasta 20% del impuesto correspondiente. Art. 3 establece incentivos fiscales para empresas generadoras de empleo y para personas con discapacidad, pero no modifica la mecánica base del cálculo."
   },
   "_meta": {
     "fuente": "txt",
@@ -71,7 +71,7 @@
     "usado_vision": false,
     "tokens": {
       "input": 7179,
-      "output": 561,
+      "output": 492,
       "cached": 5888
     },
     "cvegeo": "05027",

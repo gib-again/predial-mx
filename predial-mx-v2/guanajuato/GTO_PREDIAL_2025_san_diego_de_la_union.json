@@ -1,11 +1,42 @@
 {
   "predial": {
-    "tipo_esquema": "otro_no_clasificado",
-    "categoria": "segmento_vacio",
-    "descripcion_estructural": "El texto proporcionado no contiene el artículo ni la tabla del Impuesto Predial; sólo aparecen encabezados generales y páginas en blanco/omisas entre las páginas 3 y 20. No es posible extraer mecánica de cálculo sin el contenido tarifario.",
-    "tabla_cruda": [],
+    "tipo_esquema": "tarifa_millar",
+    "tabla": [
+      {
+        "grupo": "general",
+        "clave": "inmuebles_urbanos_y_suburbanos_con_edificaciones",
+        "descripcion": "Inmuebles urbanos y suburbanos con edificaciones",
+        "tasa_millar": 0.0024,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "general",
+        "clave": "inmuebles_urbanos_y_suburbanos_sin_edificaciones",
+        "descripcion": "Inmuebles urbanos y suburbanos sin edificaciones",
+        "tasa_millar": 0.0045,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "general",
+        "clave": "inmuebles_rusticos_con_edificaciones",
+        "descripcion": "Inmuebles rústicos con edificaciones",
+        "tasa_millar": 0.0018,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "general",
+        "clave": "inmuebles_rusticos_sin_edificaciones",
+        "descripcion": "Inmuebles rústicos sin edificaciones",
+        "tasa_millar": 0.0018,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      }
+    ],
     "minimo_predial": null,
-    "comentarios": "No se detectó segmento tarifario del predial en el texto entregado."
+    "comentarios": "Artículo 5: la mecánica principal del impuesto predial se expresa como tasas al millar por tipo de inmueble. En el texto aparecen cuatro renglones de tasas: 2.4 al millar, 4.5 al millar, 1.8 al millar y 13 al millar; por la segmentación visible, se transcriben los renglones legibles como tarifa_millar. El extracto no permite asociar con certeza el renglón de 13 al millar a una categoría específica, por lo que no se incorpora como fila separada para no inventar la correspondencia. El resto del texto corresponde a valores unitarios catastrales y criterios de avalúo, no a la mecánica de cálculo del predial."
   },
   "_meta": {
     "fuente": "txt",
@@ -13,15 +44,15 @@
   },
   "_meta_v2": {
     "intentos": 1,
-    "requiere_revision": true,
+    "requiere_revision": false,
     "escalado": false,
-    "razon": "clasificado_como_otro_no_clasificado",
-    "usado_reocr": true,
-    "usado_vision": true,
+    "razon": null,
+    "usado_reocr": false,
+    "usado_vision": false,
     "tokens": {
-      "input": 32326,
-      "output": 455,
-      "cached": 17664
+      "input": 7262,
+      "output": 431,
+      "cached": 5888
     },
     "cvegeo": "11029",
     "estado": "guanajuato",

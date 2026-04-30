@@ -3,24 +3,24 @@
     "tipo_esquema": "tarifa_millar",
     "tabla": [
       {
-        "grupo": "urbano",
-        "clave": "urbanos_con_edificaciones",
-        "descripcion": "Inmuebles urbanos y suburbanos con edificaciones",
+        "grupo": "general",
+        "clave": "general_urbanos_suburbanos",
+        "descripcion": "Inmuebles urbanos y suburbanos con valor determinado o modificado: con edificaciones",
         "tasa_millar": 0.0024,
         "periodicidad": "anual",
         "cuota_fija_adicional": null
       },
       {
-        "grupo": "urbano",
-        "clave": "urbanos_sin_edificaciones",
-        "descripcion": "Inmuebles urbanos y suburbanos sin edificaciones",
+        "grupo": "general",
+        "clave": "general_urbanos_suburbanos_sin_edificaciones",
+        "descripcion": "Inmuebles urbanos y suburbanos con valor determinado o modificado: sin edificaciones",
         "tasa_millar": 0.0045,
         "periodicidad": "anual",
         "cuota_fija_adicional": null
       },
       {
         "grupo": "rustico",
-        "clave": "rusticos",
+        "clave": "rustico",
         "descripcion": "Inmuebles rústicos",
         "tasa_millar": 0.0018,
         "periodicidad": "anual",
@@ -28,7 +28,7 @@
       }
     ],
     "minimo_predial": null,
-    "comentarios": "Art. 4: la mecánica del impuesto predial se expresa como tasas anuales al millar por categoría de inmueble. Se observan tres grupos principales: urbanos y suburbanos con edificaciones (2.4 al millar), urbanos y suburbanos sin edificaciones (4.5 al millar) y rústicos (1.8 al millar). El texto también muestra referencias históricas para años anteriores (2002-2019) con otras tasas, pero la mecánica vigente para 2020 es la transcrita. Art. 5 contiene valores unitarios catastrales para avalúo, no la tarifa del impuesto, por lo que no se incluye en la tabla principal."
+    "comentarios": "Art. 4: tarifa principal anual al millar por tipo de inmueble. Se transcribe como catálogo categórico de tasas al millar sobre valor catastral. No se documentan aquí los valores unitarios de catastro de los arts. 5 y 6 porque no son mecánica del impuesto. No se observan cuotas fijas adicionales ni brackets por rango de valor catastral. Las tablas del artículo 5 son de valores unitarios para avalúo, no tarifa del predial."
   },
   "_meta": {
     "fuente": "txt",
@@ -43,7 +43,7 @@
     "usado_vision": false,
     "tokens": {
       "input": 8460,
-      "output": 339,
+      "output": 322,
       "cached": 5888
     },
     "cvegeo": "11040",

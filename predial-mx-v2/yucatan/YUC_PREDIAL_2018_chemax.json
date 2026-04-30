@@ -4,7 +4,7 @@
     "tabla": [
       {
         "n_rango": 1,
-        "inferior": 0.01,
+        "inferior": 0.0,
         "superior": 5000.0,
         "columnas": [
           {
@@ -17,7 +17,7 @@
       },
       {
         "n_rango": 2,
-        "inferior": 5000.01,
+        "inferior": 5000.0,
         "superior": 7500.0,
         "columnas": [
           {
@@ -30,7 +30,7 @@
       },
       {
         "n_rango": 3,
-        "inferior": 7500.01,
+        "inferior": 7500.0,
         "superior": 10500.0,
         "columnas": [
           {
@@ -43,7 +43,7 @@
       },
       {
         "n_rango": 4,
-        "inferior": 10500.01,
+        "inferior": 10500.0,
         "superior": 12500.0,
         "columnas": [
           {
@@ -56,7 +56,7 @@
       },
       {
         "n_rango": 5,
-        "inferior": 12500.01,
+        "inferior": 12500.0,
         "superior": 15000.0,
         "columnas": [
           {
@@ -95,7 +95,7 @@
       }
     ],
     "minimo_predial": null,
-    "comentarios": "Artículo 13: la tarifa principal del impuesto predial por valor catastral es una tabla por rangos con cuota fija anual y factor para aplicar al excedente del límite inferior de 0.001 %; por la heterogeneidad de unidades entre cuota fija y factor, se codifica como mixto. El texto presenta además una tarifa paralela para predios destinados a la producción agropecuaria de 10 al millar anual sobre el valor registrado o catastral, sin exceder la legislación agraria federal; no se incorpora en la tabla principal por ser una tarifa separada. Se normalizó el salto del texto entre 15,000.00 y 15,500.01 ajustando el inicio del siguiente tramo a 15,000.00 para mantener rangos contiguos según la validación solicitada."
+    "comentarios": "Art. 13: la tarifa principal para base en valor catastral es una tabla por rangos con cuota fija anual y factor sobre el excedente; sin embargo, el texto muestra '0.001 %' en todos los renglones, por lo que la estructura combina cuota fija en pesos con un factor porcentual uniforme. Se normalizó el hueco aparente entre 15000.01 y 15500.01 como continuidad de rango para evitar ruptura de brackets. Tarifa paralela adicional: todo predio destinado a producción agropecuaria paga 10 al millar anual sobre el valor registrado o catastral; se documenta aparte por ser tarifa paralela. Además, se incluyen tarifas por metro cuadrado y por hectárea en otros apartados del texto como base de cálculo municipal/catastral, pero no se consideran predial principal."
   },
   "_meta": {
     "fuente": "txt",
@@ -110,7 +110,7 @@
     "usado_vision": false,
     "tokens": {
       "input": 15503,
-      "output": 972,
+      "output": 983,
       "cached": 11776
     },
     "cvegeo": "31019",

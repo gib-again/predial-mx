@@ -2,10 +2,10 @@
   "predial": {
     "tipo_esquema": "otro_no_clasificado",
     "categoria": "municipio_sin_impuesto",
-    "descripcion_estructural": "En el texto proporcionado no aparece la mecánica tarifaria del impuesto predial (tabla, cuotas, tasas o brackets). El segmento visible sólo contiene un recurso de revisión para inmuebles sin edificar que permite aplicar la tasa general de inmuebles urbanos y suburbanos, pero no transcribe esa tasa ni la base de cálculo del predial. Por ello no es posible extraer una mecánica estructural del impuesto predial desde este fragmento.",
+    "descripcion_estructural": "El texto proporcionado no contiene una mecánica de cálculo del impuesto predial. El fragmento visible corresponde a descuentos de servicios de agua, servicios catastrales, medios de defensa y ajustes tarifarios, pero no aparece una tarifa, tabla o tasa del impuesto predial para Tierra Blanca, Guanajuato.",
     "tabla_cruda": [],
     "minimo_predial": null,
-    "comentarios": "Sección 'Del Impuesto Predial' no incluye en el extracto las tarifas del artículo aplicable; sólo remite a la tasa general en caso de recurso de revisión."
+    "comentarios": "No se identificó artículo o tabla específica del impuesto predial en el segmento remitido."
   },
   "_meta": {
     "fuente": "txt",
@@ -17,11 +17,11 @@
     "escalado": false,
     "razon": "clasificado_como_otro_no_clasificado",
     "usado_reocr": false,
-    "usado_vision": false,
+    "usado_vision": true,
     "tokens": {
-      "input": 7595,
-      "output": 186,
-      "cached": 5888
+      "input": 19633,
+      "output": 532,
+      "cached": 11776
     },
     "cvegeo": "11040",
     "estado": "guanajuato",

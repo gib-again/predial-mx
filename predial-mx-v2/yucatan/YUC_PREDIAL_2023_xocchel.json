@@ -95,7 +95,7 @@
       }
     ],
     "minimo_predial": null,
-    "comentarios": "Art. 13: la tarifa principal del impuesto predial sobre valor catastral está estructurada por rangos con cuota fija anual y factor para aplicar al excedente (0.10%, 0.15%, 0.25%). Se clasifica como mixto porque cada bracket combina cuota fija en pesos con una tasa sobre el excedente. Además, el texto establece una tarifa paralela para predios destinados a la producción agropecuaria: 10 al millar anual sobre el valor registrado o catastral; no se incluye en la tabla principal por ser una tarifa separada. Se ignoran descuentos, recargos y la tabla de rentas/frutos civiles por tratarse de otra base distinta. También se excluyen tablas de valores unitarios de terreno y construcción por ser catastro, no mecánica de cobro."
+    "comentarios": "Artículo 13: la mecánica principal del predial es una tabla por rangos de valor catastral con cuota fija anual y factor para aplicar al excedente del límite inferior; sin embargo, los factores no son homogéneos como tasa marginal estándar y se presentan como 'factor para aplicar al excedente', por lo que se captura como mixto. Además, el mismo artículo establece una tarifa paralela para predios destinados a la producción agropecuaria: 10 al millar anual sobre el valor registrado o catastral. Artículo 15 establece una mecánica separada por rentas o frutos civiles (2.5% casas habitación, 5.0% comerciales), documentada aquí como tarifa secundaria no estructural del predial principal."
   },
   "_meta": {
     "fuente": "txt",
@@ -106,10 +106,12 @@
     "requiere_revision": false,
     "escalado": false,
     "razon": null,
+    "usado_reocr": false,
+    "usado_vision": false,
     "tokens": {
-      "input": 6555,
-      "output": 529,
-      "cached": 3840
+      "input": 7772,
+      "output": 513,
+      "cached": 5888
     },
     "cvegeo": "31103",
     "estado": "yucatan",

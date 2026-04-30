@@ -28,7 +28,7 @@
       },
       {
         "grupo": "urbano",
-        "clave": "predios_urbanos_y_suburbanos_sin_edificacion_baldios",
+        "clave": "predios_urbanos_y_suburbanos_sin_edificaciones_baldios",
         "descripcion": "Predios urbanos y suburbanos sin edificaciones (baldíos)",
         "tasa_millar": 0.003,
         "periodicidad": "anual",
@@ -44,7 +44,7 @@
       }
     ],
     "minimo_predial": null,
-    "comentarios": "Artículo 10: la mecánica principal es una tarifa categórica al millar sobre valor catastral para predios urbanos, suburbanos, rústicos, baldíos e industriales. Las fracciones VI a VIII establecen reglas especiales/recargos por fraccionamientos y adquirientes que no construyan, pero no se transcriben como parte de la mecánica principal solicitada."
+    "comentarios": "Art. 10: la mecánica principal es una tarifa al millar sobre el valor catastral con cinco categorías. Las fracciones VI a VIII contienen reglas de excepción o aumentos por falta de construcción o por plazo de 3 años, pero no se transcriben como mecánica principal por no constituir una tabla tarifaria distinta."
   },
   "_meta": {
     "fuente": "txt",
@@ -59,7 +59,7 @@
     "usado_vision": false,
     "tokens": {
       "input": 6566,
-      "output": 391,
+      "output": 382,
       "cached": 5888
     },
     "cvegeo": "28027",

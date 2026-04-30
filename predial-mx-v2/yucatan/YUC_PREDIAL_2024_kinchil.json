@@ -2,19 +2,19 @@
   "predial": {
     "tipo_esquema": "otro_no_clasificado",
     "categoria": "estructura_no_estandar",
-    "descripcion_estructural": "El texto transcrito no contiene una tarifa del impuesto predial en alguna de las siete variantes, sino una tabla de valores catastrales/unitarios de suelo y construcción para determinar la base gravable. Solo aparece de forma tarifaria una disposición paralela para predios destinados a la producción agropecuaria de 10 al millar anual sobre el valor registrado o catastral, pero no se presenta la mecánica principal del impuesto en forma extraíble.",
+    "descripcion_estructural": "El texto transcrito no contiene una tarifa del impuesto predial en forma de cuotas, rangos o tasas por valor catastral; contiene principalmente una tabla de valores catastrales/unitarios de terreno y construcción para determinar la base gravable. Solo aparece de forma separada una tarifa identificable para predios destinados a la producción agropecuaria de 10 al millar anual sobre el valor registrado o catastral, pero no se observa en el segmento la mecánica principal completa del impuesto predial para los demás predios.",
     "tabla_cruda": [
       {
-        "descripcion": "Tabla de valores catastrales del Municipio de Kinchil para el año 2024; zonas A, B, C y rústicos por m2/ha; tipos de construcción popular, económico, mediano, calidad, de lujo e industrial.",
-        "valores": "Valores unitarios observados: 2444.00, 2184.00, 1560.00, 728.00; 3744.00, 3432.00, 2496.00, 1144.00; 4992.00, 4368.00, 3120.00, 1456.00; 6240.00, 5720.00, 3952.00, 1872.00; 7800.00, 6916.00, 5096.00, 2340.00; 1456.00, 1300.00, 936.00, 416.00; 2288.00, 2080.00, 1456.00, 676.00; 800.00; 200.00; 100.00; 20000.00; 10000.00; 5000.00; 31200.00, 2756.00, 2080.00, 936.00"
+        "descripcion": "Tabla de valores catastrales del municipio de Kinchil para el año 2024; valores unitarios por zonas y tipos/calidades de construcción",
+        "valores": "Zona A, Zona B, Zona C, rústicos 5,000.00 m2; valores unitarios x m2 y por ha; ejemplos visibles: Popular 2444.00/2184.00/1560.00/728.00; Económico 3744.00/3432.00/2496.00/1144.00; Mediano 4992.00/4368.00/3120.00/1456.00; Calidad 6240.00/5720.00/3952.00/1872.00; De lujo 7800.00/6916.00/5096.00/2340.00; Industrial económico 1456.00/1300.00/936.00/416.00; aparecen también 800.00, 200.00, 100.00, 20000.00, 10000.00, 5000.00."
       },
       {
-        "descripcion": "Tarifa paralela expresamente visible para predios agropecuarios.",
-        "valores": "10 al millar anual sobre el valor registrado o catastral; sin que la cantidad a pagar resultante exceda lo establecido por la legislación agraria federal para terrenos ejidales"
+        "descripcion": "Tarifa paralela explícita para producción agropecuaria",
+        "valores": "Todo predio destinado a la producción agropecuaria 10 al millar anual sobre el valor registrado o catastral, sin que la cantidad a pagar resultante exceda a lo establecido por la legislación agraria federal para terrenos ejidales."
       }
     ],
     "minimo_predial": null,
-    "comentarios": "Se ignoran los descuentos del artículo 14 por instrucción. La tabla visible corresponde a catastro/base gravable y no debe forzarse como tarifa predial. El propio artículo 13 remite a la Ley de Hacienda del Municipio de Kinchil, Yucatán, para el pago del impuesto predial; en este extracto no aparece la tarifa principal. Sí se documenta la disposición adicional: 'Todo predio destinado a la producción agropecuaria 10 al millar anual sobre el valor registrado o catastral'."
+    "comentarios": "Se ignoran los descuentos del artículo 14. La tabla visible corresponde a catastro/base gravable y no a la tarifa del impuesto predial. Aunque se documenta la tasa agropecuaria de 10 al millar, la mecánica principal del predial para el resto de predios no es extraíble con este segmento sin inventar estructura."
   },
   "_meta": {
     "fuente": "txt",
@@ -29,7 +29,7 @@
     "usado_vision": false,
     "tokens": {
       "input": 24300,
-      "output": 1120,
+      "output": 1272,
       "cached": 17664
     },
     "cvegeo": "31044",

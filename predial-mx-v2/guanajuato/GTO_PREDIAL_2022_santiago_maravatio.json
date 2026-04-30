@@ -4,7 +4,7 @@
     "tabla": [
       {
         "grupo": "general",
-        "clave": "con_edificaciones",
+        "clave": "urbano_con_edificaciones",
         "descripcion": "Inmuebles urbanos y suburbanos con edificaciones",
         "tasa_millar": 0.0024,
         "periodicidad": "anual",
@@ -12,7 +12,7 @@
       },
       {
         "grupo": "general",
-        "clave": "sin_edificaciones",
+        "clave": "urbano_sin_edificaciones",
         "descripcion": "Inmuebles urbanos y suburbanos sin edificaciones",
         "tasa_millar": 0.0045,
         "periodicidad": "anual",
@@ -21,14 +21,14 @@
       {
         "grupo": "general",
         "clave": "rustico",
-        "descripcion": "Inmuebles rústicos",
-        "tasa_millar": 0.004,
+        "descripcion": "Predios rústicos",
+        "tasa_millar": 0.0018,
         "periodicidad": "anual",
         "cuota_fija_adicional": null
       }
     ],
     "minimo_predial": null,
-    "comentarios": "Art. 4 establece tasas anuales al millar por tipo de inmueble. Se transcribe la tarifa principal como catálogo categórico: urbanos y suburbanos con edificaciones 2.4 al millar; urbanos y suburbanos sin edificaciones 4.5 al millar; inmuebles rústicos 4 al millar. El texto también muestra una tabla histórica por años (2002-2021, 1993, 1993) con tasas al millar para inmuebles urbanos y suburbanos, pero no se integra como brackets ni como tarifa paralela principal porque el artículo visible presenta la tasa vigente aplicable en 2022 en la primera fila. Art. 5 contiene valores unitarios de catastro y factores de valuación, no mecánica del impuesto."
+    "comentarios": "Artículo 4 establece tasas anuales al millar por categoría de inmueble, sin rangos de valor catastral. Se transcribe sólo la mecánica principal del predial. Los valores unitarios de terreno y construcción de los artículos 5 y 6 corresponden a catastro/avalúo, no a la tarifa del impuesto. La tabla también contiene referencias históricas en el texto OCR, pero la mecánica vigente para 2022 es la de tres tasas categóricas: urbano y suburbano con edificaciones 2.4 al millar; urbano y suburbano sin edificaciones 4.5 al millar; rústicos 1.8 al millar."
   },
   "_meta": {
     "fuente": "txt",
@@ -43,7 +43,7 @@
     "usado_vision": false,
     "tokens": {
       "input": 8652,
-      "output": 345,
+      "output": 330,
       "cached": 5888
     },
     "cvegeo": "11036",

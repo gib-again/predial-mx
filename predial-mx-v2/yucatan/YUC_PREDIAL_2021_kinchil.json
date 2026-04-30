@@ -1,36 +1,34 @@
 {
   "predial": {
-    "tipo_esquema": "otro_no_clasificado",
-    "categoria": "municipio_sin_impuesto",
-    "descripcion_estructural": "El texto del capítulo de predial no contiene una tarifa del impuesto predial extraíble; únicamente remite a la Ley de Hacienda del Municipio de Kinchil, Yucatán, para el pago del impuesto, y luego inserta tablas de valores catastrales/unitarios de suelo y construcción. La única tasa expresa observada es una tarifa paralela para predios destinados a la producción agropecuaria de 10 al millar anual sobre el valor registrado o catastral, pero no se proporciona la mecánica principal del impuesto predial para los demás predios.",
-    "tabla_cruda": [
+    "tipo_esquema": "tarifa_millar",
+    "tabla": [
       {
-        "descripcion": "Remisión normativa principal",
-        "valores": "Artículo 13: 'Para el cálculo del valor catastral de los predios se servirá de base para el pago del Impuesto Predial en los términos de la Ley de Hacienda del Municipio de Kinchil, Yucatán...'"
-      },
-      {
-        "descripcion": "Tarifa paralela agropecuaria",
-        "valores": "Todo predio destinado a la producción agropecuaria 10 al millar anual sobre el valor registrado o catastral"
+        "grupo": "general",
+        "clave": "agropecuario",
+        "descripcion": "Todo predio destinado a la producción agropecuaria",
+        "tasa_millar": 0.01,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
       }
     ],
     "minimo_predial": null,
-    "comentarios": "Se ignoraron las tablas de valores catastrales/unitarios de terreno y construcción porque son de catastro y no constituyen por sí mismas la tarifa del impuesto predial. También se ignoraron descuentos del artículo 14 conforme a la instrucción. La tasa de 10 al millar para producción agropecuaria se documenta sólo como referencia, pero no permite reconstruir la mecánica principal del predial municipal."
+    "comentarios": "Art. 13: La nota de la tabla de valores catastrales indica que, en caso de no estar clasificadas las construcciones, la base del impuesto predial será el valor catastral del inmueble; esto remite a valores unitarios catastrales y no a una tarifa del impuesto, por lo que no se transcribe como mecánica. La mecánica tarifaria explícita del predial es una tarifa paralela para predios agropecuarios: 10 al millar anual sobre el valor registrado o catastral, con la salvedad de que no exceda lo establecido por la legislación agraria federal para terrenos ejidales. No se identifican otros brackets o categorías tarifarias del predial en el texto proporcionado."
   },
   "_meta": {
     "fuente": "txt",
-    "modelo": "gpt-5.4"
+    "modelo": "gpt-5.4-mini"
   },
   "_meta_v2": {
-    "intentos": 3,
-    "requiere_revision": true,
-    "escalado": true,
-    "razon": "clasificado_como_otro_no_clasificado",
+    "intentos": 1,
+    "requiere_revision": false,
+    "escalado": false,
+    "razon": null,
     "usado_reocr": false,
     "usado_vision": false,
     "tokens": {
-      "input": 25098,
-      "output": 846,
-      "cached": 17664
+      "input": 7915,
+      "output": 250,
+      "cached": 5888
     },
     "cvegeo": "31044",
     "estado": "yucatan",

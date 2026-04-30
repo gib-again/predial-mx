@@ -4,31 +4,31 @@
     "tabla": [
       {
         "grupo": "urbano",
-        "clave": "inmuebles_urbanos_con_edificaciones",
-        "descripcion": "Inmuebles urbanos y suburbanos con edificaciones; valor determinado o modificado a la entrada en vigor de la ley",
-        "tasa_millar": 0.002,
+        "clave": "inmuebles_urbanos_y_suburbanos_con_edificaciones",
+        "descripcion": "Inmuebles urbanos y suburbanos con edificaciones; valor determinado o modificado.",
+        "tasa_millar": 0.0039,
         "periodicidad": "anual",
         "cuota_fija_adicional": null
       },
       {
         "grupo": "urbano",
-        "clave": "inmuebles_urbanos_sin_edificaciones",
-        "descripcion": "Inmuebles urbanos y suburbanos sin edificaciones; valor determinado o modificado a la entrada en vigor de la ley",
-        "tasa_millar": 0.003,
+        "clave": "inmuebles_urbanos_y_suburbanos_sin_edificaciones",
+        "descripcion": "Inmuebles urbanos y suburbanos sin edificaciones; valor determinado o modificado.",
+        "tasa_millar": 0.00565,
         "periodicidad": "anual",
         "cuota_fija_adicional": null
       },
       {
         "grupo": "rustico",
         "clave": "inmuebles_rusticos",
-        "descripcion": "Inmuebles rústicos; valor determinado o modificado a la entrada en vigor de la ley",
-        "tasa_millar": 0.002,
+        "descripcion": "Inmuebles rústicos.",
+        "tasa_millar": 0.0004,
         "periodicidad": "anual",
         "cuota_fija_adicional": null
       }
     ],
     "minimo_predial": null,
-    "comentarios": "Art. 4 contiene tarifas paralelas por antigüedad del valor catastral para inmuebles urbanos/suburbanos y rústicos. Para urbanos y suburbanos se establecen tasas distintas según tengan o no edificaciones: 2.00 al millar con edificaciones y 3.00 al millar sin edificaciones a la entrada en vigor; 3.39/5.65 al millar para valores determinados o modificados durante 2003-2018; 2.25/3.77 para 2002; 8.00/15.00 para 1993-2001; 13/13 al millar con anterioridad a 1993. Para inmuebles rústicos: 2.00 al millar a la entrada en vigor; 0.40 al millar durante 2003-2018; 0.27 al millar en 2002; 6.00 al millar en 1993-2001; 12 al millar con anterioridad a 1993. Se transcribe la mecánica predominante como tarifa_millar y las demás tarifas paralelas quedan documentadas aquí."
+    "comentarios": "Artículo 4 contiene tarifas anuales por categoría de predio y condición de edificación. Se transcribe la mecánica del ejercicio 2019 correspondiente a la fracción 'Durante los años 2003 y hasta 2018, inclusive' del texto proporcionado: urbanos y suburbanos con edificaciones 3.39 al millar, sin edificaciones 5.65 al millar, rústicos 0.40 al millar. El texto también incluye otras tasas históricas por años anteriores (entrada en vigor, 2002, 1993-2001, anterior a 1993), pero para 2019 la tarifa aplicable visible en el fragmento es la de 2003-2018 inclusive. No se incluyen valores catastrales ni tablas de avalúo (artículos 5 y 6), por no ser mecánica de cálculo del impuesto."
   },
   "_meta": {
     "fuente": "txt",
@@ -43,7 +43,7 @@
     "usado_vision": false,
     "tokens": {
       "input": 10830,
-      "output": 485,
+      "output": 409,
       "cached": 5888
     },
     "cvegeo": "11017",

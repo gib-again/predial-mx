@@ -4,8 +4,8 @@
     "tabla": [
       {
         "grupo": "general",
-        "clave": "urbanos_y_suburbanos",
-        "descripcion": "Inmuebles urbanos y suburbanos con valor determinado o edificaciones",
+        "clave": "urbanos_suburbanos_edificados",
+        "descripcion": "Inmuebles urbanos y suburbanos; inmuebles que cuenten con edificaciones",
         "tasa_millar": 0.013,
         "periodicidad": "anual",
         "cuota_fija_adicional": null
@@ -14,13 +14,13 @@
         "grupo": "general",
         "clave": "rusticos",
         "descripcion": "Inmuebles rústicos",
-        "tasa_millar": 0.013,
+        "tasa_millar": 0.01,
         "periodicidad": "anual",
         "cuota_fija_adicional": null
       }
     ],
     "minimo_predial": null,
-    "comentarios": "Artículo 4 establece tasas anuales al millar para dos grupos principales: inmuebles urbanos y suburbanos (13 al millar) e inmuebles rústicos (13 al millar). El resto del texto transcrito corresponde a valores unitarios de suelo y construcción para avalúo (Art. 5) y no modifica la mecánica tarifaria del predial."
+    "comentarios": "Art. 4 establece tasas anuales al millar para inmuebles urbanos y suburbanos con edificaciones (13 al millar) y para inmuebles rústicos (10 al millar). Art. 5 contiene únicamente valores unitarios de terreno/construcción y valores base para avalúo, no la mecánica del impuesto; no se transcribe como tarifa. No se identifican brackets por valor catastral ni cuota fija adicional."
   },
   "_meta": {
     "fuente": "txt",
@@ -35,7 +35,7 @@
     "usado_vision": false,
     "tokens": {
       "input": 7874,
-      "output": 217,
+      "output": 236,
       "cached": 5888
     },
     "cvegeo": "11009",

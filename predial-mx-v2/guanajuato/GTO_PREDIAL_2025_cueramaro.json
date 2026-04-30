@@ -1,27 +1,126 @@
 {
   "predial": {
-    "tipo_esquema": "otro_no_clasificado",
-    "categoria": "segmento_vacio",
-    "descripcion_estructural": "El texto proporcionado no contiene el articulado ni tablas del apartado de Impuesto Predial; sólo aparecen encabezados de páginas y metadatos del documento. No es posible extraer una mecánica de cálculo sin contenido tarifario.",
-    "tabla_cruda": [],
+    "tipo_esquema": "mixto",
+    "tabla": [
+      {
+        "n_rango": 1,
+        "inferior": 0.0,
+        "superior": 875.12,
+        "columnas": [
+          {
+            "nombre": "general",
+            "valor": 2.4,
+            "tipo": "tasa_millar",
+            "unidad": "al_millar"
+          },
+          {
+            "nombre": "general",
+            "valor": 5.0,
+            "tipo": "tasa_millar",
+            "unidad": "al_millar"
+          },
+          {
+            "nombre": "general",
+            "valor": 18.0,
+            "tipo": "tasa_millar",
+            "unidad": "al_millar"
+          }
+        ]
+      },
+      {
+        "n_rango": 2,
+        "inferior": 875.12,
+        "superior": 1670.54,
+        "columnas": [
+          {
+            "nombre": "general",
+            "valor": 24.0,
+            "tipo": "tasa_millar",
+            "unidad": "al_millar"
+          },
+          {
+            "nombre": "general",
+            "valor": 45.0,
+            "tipo": "tasa_millar",
+            "unidad": "al_millar"
+          },
+          {
+            "nombre": "general",
+            "valor": 1.8,
+            "tipo": "tasa_millar",
+            "unidad": "al_millar"
+          }
+        ]
+      },
+      {
+        "n_rango": 3,
+        "inferior": 1670.54,
+        "superior": 2902.35,
+        "columnas": [
+          {
+            "nombre": "general",
+            "valor": 8.0,
+            "tipo": "tasa_millar",
+            "unidad": "al_millar"
+          },
+          {
+            "nombre": "general",
+            "valor": 15.0,
+            "tipo": "tasa_millar",
+            "unidad": "al_millar"
+          },
+          {
+            "nombre": "general",
+            "valor": 6.0,
+            "tipo": "tasa_millar",
+            "unidad": "al_millar"
+          }
+        ]
+      },
+      {
+        "n_rango": 4,
+        "inferior": 2902.35,
+        "superior": 55354.58,
+        "columnas": [
+          {
+            "nombre": "general",
+            "valor": 13.0,
+            "tipo": "tasa_millar",
+            "unidad": "al_millar"
+          },
+          {
+            "nombre": "general",
+            "valor": 13.0,
+            "tipo": "tasa_millar",
+            "unidad": "al_millar"
+          },
+          {
+            "nombre": "general",
+            "valor": 12.0,
+            "tipo": "tasa_millar",
+            "unidad": "al_millar"
+          }
+        ]
+      }
+    ],
     "minimo_predial": null,
-    "comentarios": "Sección 'Del Impuesto Predial' no visible en el fragmento aportado."
+    "comentarios": "Artículo 4: la tabla principal es una tarifa por rangos de valor catastral con tasas al millar para inmuebles urbanos/suburbanos y rústicos. El texto OCR está muy degradado, pero los renglones muestran cuatro rangos contiguos con tasas distintas por columna; se transcribe como mixto por la presencia de varias columnas categóricas en el mismo esquema. En el texto también aparecen otras tablas de valores unitarios y criterios de avalúo (no son predial) y una tarifa aparte para inmuebles rústicos por hectárea / elementos agrológicos, que no se integra aquí por tratarse de mecánica paralela o de valuación, no de la tabla principal de predial."
   },
   "_meta": {
     "fuente": "txt",
     "modelo": "gpt-5.4-mini"
   },
   "_meta_v2": {
-    "intentos": 1,
-    "requiere_revision": true,
+    "intentos": 2,
+    "requiere_revision": false,
     "escalado": false,
-    "razon": "clasificado_como_otro_no_clasificado",
-    "usado_reocr": true,
-    "usado_vision": true,
+    "razon": null,
+    "usado_reocr": false,
+    "usado_vision": false,
     "tokens": {
-      "input": 32769,
-      "output": 463,
-      "cached": 17664
+      "input": 16320,
+      "output": 1140,
+      "cached": 11776
     },
     "cvegeo": "11012",
     "estado": "guanajuato",

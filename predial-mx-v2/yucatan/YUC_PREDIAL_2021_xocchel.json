@@ -12,12 +12,18 @@
             "valor": 4.0,
             "tipo": "cuota_fija",
             "unidad": "pesos"
+          },
+          {
+            "nombre": "general",
+            "valor": 0.001,
+            "tipo": "tasa_marginal",
+            "unidad": "porcentaje"
           }
         ]
       },
       {
         "n_rango": 2,
-        "inferior": 4000.0,
+        "inferior": 4000.01,
         "superior": 5500.0,
         "columnas": [
           {
@@ -25,12 +31,18 @@
             "valor": 7.0,
             "tipo": "cuota_fija",
             "unidad": "pesos"
+          },
+          {
+            "nombre": "general",
+            "valor": 0.0015,
+            "tipo": "tasa_marginal",
+            "unidad": "porcentaje"
           }
         ]
       },
       {
         "n_rango": 3,
-        "inferior": 5500.0,
+        "inferior": 5500.01,
         "superior": 6500.0,
         "columnas": [
           {
@@ -38,12 +50,18 @@
             "valor": 10.0,
             "tipo": "cuota_fija",
             "unidad": "pesos"
+          },
+          {
+            "nombre": "general",
+            "valor": 0.0025,
+            "tipo": "tasa_marginal",
+            "unidad": "porcentaje"
           }
         ]
       },
       {
         "n_rango": 4,
-        "inferior": 6500.0,
+        "inferior": 6500.01,
         "superior": 7500.0,
         "columnas": [
           {
@@ -51,12 +69,18 @@
             "valor": 13.0,
             "tipo": "cuota_fija",
             "unidad": "pesos"
+          },
+          {
+            "nombre": "general",
+            "valor": 0.0025,
+            "tipo": "tasa_marginal",
+            "unidad": "porcentaje"
           }
         ]
       },
       {
         "n_rango": 5,
-        "inferior": 7500.0,
+        "inferior": 7500.01,
         "superior": 8500.0,
         "columnas": [
           {
@@ -64,12 +88,18 @@
             "valor": 16.0,
             "tipo": "cuota_fija",
             "unidad": "pesos"
+          },
+          {
+            "nombre": "general",
+            "valor": 0.0025,
+            "tipo": "tasa_marginal",
+            "unidad": "porcentaje"
           }
         ]
       },
       {
         "n_rango": 6,
-        "inferior": 8500.0,
+        "inferior": 8500.01,
         "superior": 10000.0,
         "columnas": [
           {
@@ -77,12 +107,18 @@
             "valor": 20.0,
             "tipo": "cuota_fija",
             "unidad": "pesos"
+          },
+          {
+            "nombre": "general",
+            "valor": 0.0025,
+            "tipo": "tasa_marginal",
+            "unidad": "porcentaje"
           }
         ]
       },
       {
         "n_rango": 7,
-        "inferior": 10000.0,
+        "inferior": 10000.01,
         "superior": null,
         "columnas": [
           {
@@ -90,12 +126,18 @@
             "valor": 24.0,
             "tipo": "cuota_fija",
             "unidad": "pesos"
+          },
+          {
+            "nombre": "general",
+            "valor": 0.0025,
+            "tipo": "tasa_marginal",
+            "unidad": "porcentaje"
           }
         ]
       }
     ],
     "minimo_predial": null,
-    "comentarios": "Art. 13: tarifa principal por valor catastral con cuotas fijas anuales por rango y factor sobre excedente. Se transcribe como mixto porque cada bracket combina cuota fija anual en pesos y factor porcentual sobre el excedente del límite inferior (0.10% en el primer rango; 0.15% y 0.25% en los siguientes). Además, Art. 13 establece una tarifa paralela para predios destinados a producción agropecuaria: 10 al millar anual sobre el valor registrado o catastral, sin exceder la legislación agraria federal; no se integra en la tabla principal. Se ignoran los valores unitarios de terreno y construcción, por ser tablas catastrales y no mecánica del impuesto."
+    "comentarios": "Art. 13: tarifa principal por valor catastral con cuota fija anual y factor aplicado al excedente del límite inferior; se codifica como mixto por combinar cuota fija y tasa marginal en cada bracket. Tarifa paralela: predios destinados a la producción agropecuaria pagan 10 al millar anual sobre el valor registrado o catastral. Art. 15: el predial con base en rentas o frutos civiles mensuales causa 2.5% en casas habitación y 5.0% en actividades comerciales; se documenta como tarifa secundaria no estructural respecto de la mecánica principal."
   },
   "_meta": {
     "fuente": "txt",
@@ -106,10 +148,12 @@
     "requiere_revision": false,
     "escalado": false,
     "razon": null,
+    "usado_reocr": false,
+    "usado_vision": false,
     "tokens": {
-      "input": 6451,
-      "output": 504,
-      "cached": 3840
+      "input": 7668,
+      "output": 653,
+      "cached": 5888
     },
     "cvegeo": "31103",
     "estado": "yucatan",

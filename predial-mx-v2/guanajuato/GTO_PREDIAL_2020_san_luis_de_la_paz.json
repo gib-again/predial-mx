@@ -3,32 +3,32 @@
     "tipo_esquema": "tarifa_millar",
     "tabla": [
       {
-        "grupo": "general",
-        "clave": "urbano_suburbano_con_edificaciones",
-        "descripcion": "Inmuebles urbanos y suburbanos con edificaciones, art. 4, tasa anual",
-        "tasa_millar": 0.0024,
+        "grupo": "urbano",
+        "clave": "urbano_con_edificaciones",
+        "descripcion": "Inmuebles urbanos y suburbanos con edificaciones",
+        "tasa_millar": 0.0045,
         "periodicidad": "anual",
         "cuota_fija_adicional": null
       },
       {
-        "grupo": "general",
-        "clave": "urbano_suburbano_sin_edificaciones",
-        "descripcion": "Inmuebles urbanos y suburbanos sin edificaciones, art. 4, tasa anual",
-        "tasa_millar": 0.0045,
+        "grupo": "urbano",
+        "clave": "urbano_sin_edificaciones",
+        "descripcion": "Inmuebles urbanos y suburbanos sin edificaciones",
+        "tasa_millar": 0.024,
         "periodicidad": "anual",
         "cuota_fija_adicional": null
       },
       {
         "grupo": "rustico",
         "clave": "rustico_general",
-        "descripcion": "Inmuebles rústicos, art. 4, tasa anual",
+        "descripcion": "Inmuebles rústicos",
         "tasa_millar": 0.0018,
         "periodicidad": "anual",
         "cuota_fija_adicional": null
       }
     ],
     "minimo_predial": null,
-    "comentarios": "Artículo 4 establece tasas anuales al millar por categoría de inmueble: urbanos y suburbanos con edificaciones 2.4 al millar; urbanos y suburbanos sin edificaciones 4.5 al millar; rústicos 1.8 al millar. También aparece una tabla histórica con tasas aplicables según antigüedad del valor determinado o modificado (1) a la entrada en vigor 2.4/4.5/1.8 al millar, (2) 2002 a 2019 2.4/4.5/1.8 al millar, (3) anterior a 2002 y hasta 1993 8/15/6 al millar, (4) anterior a 1993 13/12 al millar; esa tabla histórica no se integra aquí porque la mecánica principal vigente para 2020 es la tabla de tasas por tipo de inmueble. El resto del texto corresponde a valores catastrales para avalúo (artículos 5 y 6), no a la mecánica del impuesto."
+    "comentarios": "Art. 4 contiene una tabla de tasas al millar por antigüedad del valor determinado/modificado del inmueble: (1) a la entrada en vigor: urbanos y suburbanos con edificaciones 2.4 al millar, sin edificaciones 4.5 al millar, rústicos 1.8 al millar; (2) durante 2002-2019 inclusive: mismas tasas; (3) con anterioridad a 2002 y hasta 1993 inclusive: 8 al millar, 15 al millar y 6 al millar; (4) con anterioridad a 1993: 13 al millar y 12 al millar. Dado que existen tarifas paralelas por antigüedad y categoría, se transcribe sólo la mecánica principal más reciente del artículo en la tabla principal; las demás tasas históricas quedan documentadas en este comentario. Art. 5 y 6 contienen valores unitarios y criterios de avalúo, no la mecánica de cálculo del impuesto."
   },
   "_meta": {
     "fuente": "txt",
@@ -43,7 +43,7 @@
     "usado_vision": false,
     "tokens": {
       "input": 8655,
-      "output": 446,
+      "output": 407,
       "cached": 5888
     },
     "cvegeo": "11033",

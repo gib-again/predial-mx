@@ -3,32 +3,32 @@
     "tipo_esquema": "tarifa_millar",
     "tabla": [
       {
-        "grupo": "general",
-        "clave": "urbano_suburbano_con_edificaciones",
-        "descripcion": "Inmuebles urbanos y suburbanos con edificaciones, a la entrada en vigor de la presente Ley",
+        "grupo": "urbano",
+        "clave": "urbano_con_edificaciones",
+        "descripcion": "Inmuebles urbanos y suburbanos con edificaciones",
         "tasa_millar": 0.0024,
         "periodicidad": "anual",
         "cuota_fija_adicional": null
       },
       {
-        "grupo": "general",
-        "clave": "urbano_suburbano_sin_edificaciones",
-        "descripcion": "Inmuebles urbanos y suburbanos sin edificaciones, a la entrada en vigor de la presente Ley",
+        "grupo": "urbano",
+        "clave": "urbano_sin_edificaciones",
+        "descripcion": "Inmuebles urbanos y suburbanos sin edificaciones",
         "tasa_millar": 0.0045,
         "periodicidad": "anual",
         "cuota_fija_adicional": null
       },
       {
-        "grupo": "general",
+        "grupo": "rustico",
         "clave": "rustico",
-        "descripcion": "Inmuebles rústicos, a la entrada en vigor de la presente Ley",
+        "descripcion": "Inmuebles rústicos",
         "tasa_millar": 0.0018,
         "periodicidad": "anual",
         "cuota_fija_adicional": null
       }
     ],
     "minimo_predial": null,
-    "comentarios": "Art. 4 contiene una tabla de tasas al millar por tipo de inmueble (urbanos y suburbanos con/sin edificaciones, y rústicos). El texto también muestra tasas históricas para periodos anteriores (2002-2017, anterior a 2002, anterior a 1993), pero la mecánica vigente para el ejercicio 2018 se transcribe con la tarifa aplicable 'a la entrada en vigor de la presente Ley'. Los artículos 5 y 6 son valores unitarios y criterios de avalúo, no forman parte de la mecánica tarifaria del impuesto predial."
+    "comentarios": "Artículo 4: tasa anual sobre valor catastral según tipo de inmueble y condición de edificación. Se transcribe la mecánica principal como catálogo de tasas al millar por categoría. Artículo 5 y 6 contienen valores unitarios y criterios de valuación, no la tarifa del impuesto."
   },
   "_meta": {
     "fuente": "txt",
@@ -43,7 +43,7 @@
     "usado_vision": false,
     "tokens": {
       "input": 8532,
-      "output": 352,
+      "output": 255,
       "cached": 5888
     },
     "cvegeo": "11018",

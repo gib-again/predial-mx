@@ -1,11 +1,30 @@
 {
   "predial": {
-    "tipo_esquema": "otro_no_clasificado",
-    "categoria": "segmento_vacio",
-    "descripcion_estructural": "El texto proporcionado del apartado \"Del Impuesto Predial\" no contiene la mecánica de cálculo del predial; sólo aparecen incentivos, condiciones de aplicación y después inicia el capítulo de otro impuesto. No hay tabla, cuota fija, tasa, rangos ni categorías del impuesto predial extraíbles en el fragmento.",
-    "tabla_cruda": [],
-    "minimo_predial": null,
-    "comentarios": "No se detectó estructura tarifaria del impuesto predial en el fragmento recibido."
+    "tipo_esquema": "tarifa_millar",
+    "tabla": [
+      {
+        "grupo": "urbano",
+        "clave": "predios_urbanos",
+        "descripcion": "Sobre los predios urbanos",
+        "tasa_millar": 0.003,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "rustico",
+        "clave": "predios_rusticos",
+        "descripcion": "Sobre los predios rústicos",
+        "tasa_millar": 0.003,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      }
+    ],
+    "minimo_predial": {
+      "monto": 13.0,
+      "periodicidad": "bimestral",
+      "unidad": "pesos"
+    },
+    "comentarios": "Art. 2 fracc. IV: los predios rústicos dedicados a la agricultura y ganadería cubrirán el 50% del monto del impuesto. El texto contiene incentivos/bonificaciones posteriores, que se ignoran por instrucción."
   },
   "_meta": {
     "fuente": "txt",
@@ -13,15 +32,15 @@
   },
   "_meta_v2": {
     "intentos": 1,
-    "requiere_revision": true,
+    "requiere_revision": false,
     "escalado": false,
-    "razon": "clasificado_como_otro_no_clasificado",
+    "razon": null,
     "usado_reocr": false,
-    "usado_vision": true,
+    "usado_vision": false,
     "tokens": {
-      "input": 15264,
-      "output": 383,
-      "cached": 11776
+      "input": 8793,
+      "output": 207,
+      "cached": 5888
     },
     "cvegeo": "05022",
     "estado": "coahuila",

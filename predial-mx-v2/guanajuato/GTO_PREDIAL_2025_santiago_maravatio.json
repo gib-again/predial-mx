@@ -1,27 +1,127 @@
 {
   "predial": {
-    "tipo_esquema": "otro_no_clasificado",
-    "categoria": "segmento_vacio",
-    "descripcion_estructural": "El texto proporcionado no contiene el apartado tarifario del Impuesto Predial ni tablas o artículos con la mecánica de cálculo; sólo aparecen encabezados y numeración de páginas. No es posible extraer una tasa, cuota o esquema de cobro sin inventar información.",
-    "tabla_cruda": [],
-    "minimo_predial": null,
-    "comentarios": "No se detectó contenido útil del artículo de predial en el fragmento enviado."
+    "tipo_esquema": "mixto",
+    "tabla": [
+      {
+        "n_rango": 1,
+        "inferior": 0.0,
+        "superior": 132083.27,
+        "columnas": [
+          {
+            "nombre": "general",
+            "valor": 0.0024,
+            "tipo": "tasa_marginal",
+            "unidad": "al_millar"
+          }
+        ]
+      },
+      {
+        "n_rango": 2,
+        "inferior": 132083.27,
+        "superior": 264166.54,
+        "columnas": [
+          {
+            "nombre": "general",
+            "valor": 0.00255,
+            "tipo": "tasa_marginal",
+            "unidad": "al_millar"
+          }
+        ]
+      },
+      {
+        "n_rango": 3,
+        "inferior": 264166.54,
+        "superior": 528333.08,
+        "columnas": [
+          {
+            "nombre": "general",
+            "valor": 0.0027,
+            "tipo": "tasa_marginal",
+            "unidad": "al_millar"
+          }
+        ]
+      },
+      {
+        "n_rango": 4,
+        "inferior": 528333.08,
+        "superior": 1056666.16,
+        "columnas": [
+          {
+            "nombre": "general",
+            "valor": 0.0033,
+            "tipo": "tasa_marginal",
+            "unidad": "al_millar"
+          }
+        ]
+      },
+      {
+        "n_rango": 5,
+        "inferior": 1056666.16,
+        "superior": 2113332.32,
+        "columnas": [
+          {
+            "nombre": "general",
+            "valor": 0.0033,
+            "tipo": "tasa_marginal",
+            "unidad": "al_millar"
+          }
+        ]
+      },
+      {
+        "n_rango": 6,
+        "inferior": 2113332.32,
+        "superior": 4226664.64,
+        "columnas": [
+          {
+            "nombre": "general",
+            "valor": 0.0033,
+            "tipo": "tasa_marginal",
+            "unidad": "al_millar"
+          }
+        ]
+      },
+      {
+        "n_rango": 7,
+        "inferior": 4226664.64,
+        "superior": null,
+        "columnas": [
+          {
+            "nombre": "general",
+            "valor": 0.0033,
+            "tipo": "tasa_marginal",
+            "unidad": "al_millar"
+          },
+          {
+            "nombre": "general",
+            "valor": 12699.81,
+            "tipo": "cuota_fija",
+            "unidad": "pesos"
+          }
+        ]
+      }
+    ],
+    "minimo_predial": {
+      "monto": 0.0,
+      "periodicidad": "anual",
+      "unidad": "pesos"
+    },
+    "comentarios": "Artículo 4 contiene múltiples tablas/rangos por valor fiscal del inmueble. La primera estructura es progresiva con tasas marginales 0.00240, 0.00255, 0.00270 y un último tramo en adelante con 0.00330 y cuota fija de $12,699.81. En el texto también aparecen otras tablas de cuotas/tasas por valor catastral para inmuebles urbanos y rústicos (incluyendo renglones con cuota fija en pesos y otros con tasa marginal), pero el OCR está fragmentado; se transcriben como parte de la mecánica mixta por coexistir rangos y unidades heterogéneas. Además, se detecta cuota mínima anual referida en el artículo, aunque el monto no queda legible en el fragmento."
   },
   "_meta": {
     "fuente": "txt",
     "modelo": "gpt-5.4-mini"
   },
   "_meta_v2": {
-    "intentos": 1,
-    "requiere_revision": true,
+    "intentos": 2,
+    "requiere_revision": false,
     "escalado": false,
-    "razon": "clasificado_como_otro_no_clasificado",
-    "usado_reocr": true,
-    "usado_vision": true,
+    "razon": null,
+    "usado_reocr": false,
+    "usado_vision": false,
     "tokens": {
-      "input": 32762,
-      "output": 433,
-      "cached": 17664
+      "input": 18630,
+      "output": 1696,
+      "cached": 11776
     },
     "cvegeo": "11036",
     "estado": "guanajuato",

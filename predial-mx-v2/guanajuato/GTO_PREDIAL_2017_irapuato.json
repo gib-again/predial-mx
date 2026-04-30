@@ -4,47 +4,47 @@
     "tabla": [
       {
         "grupo": "urbano",
-        "clave": "urbano_con_edificaciones",
-        "descripcion": "Inmuebles urbanos y suburbanos con edificaciones; entrada en vigor de la presente Ley / años 2003 a 2016 inclusive / año 2002 / 1993 a 2001 inclusive / anterior a 1993.",
+        "clave": "urbanos_suburbanos_con_edificaciones",
+        "descripcion": "Inmuebles urbanos y suburbanos con edificaciones; a la entrada en vigor de la Ley y durante 2003 a 2016 inclusive",
         "tasa_millar": 0.00339,
         "periodicidad": "anual",
         "cuota_fija_adicional": null
       },
       {
         "grupo": "urbano",
-        "clave": "urbano_sin_edificaciones",
-        "descripcion": "Inmuebles urbanos y suburbanos sin edificaciones; entrada en vigor de la presente Ley / años 2003 a 2016 inclusive / año 2002 / 1993 a 2001 inclusive / anterior a 1993.",
+        "clave": "urbanos_suburbanos_sin_edificaciones",
+        "descripcion": "Inmuebles urbanos y suburbanos sin edificaciones; a la entrada en vigor de la Ley y durante 2003 a 2016 inclusive",
         "tasa_millar": 0.00565,
         "periodicidad": "anual",
         "cuota_fija_adicional": null
       },
       {
         "grupo": "rustico",
-        "clave": "rustico",
-        "descripcion": "Inmuebles rústicos.",
+        "clave": "rusticos",
+        "descripcion": "Inmuebles rústicos; a la entrada en vigor de la Ley y durante 2003 a 2016 inclusive",
         "tasa_millar": 0.0004,
         "periodicidad": "anual",
         "cuota_fija_adicional": null
       }
     ],
     "minimo_predial": null,
-    "comentarios": "Art. 4: la tarifa del predial se presenta como tasas al millar por tipo de inmueble. Para inmuebles urbanos y suburbanos se distinguen dos categorías (con edificaciones y sin edificaciones) y cinco tramos temporales con tasas al millar distintas; para inmuebles rústicos se fija 0.40 al millar anual. La tabla se transcribe sólo en su parte más estructurada/categórica y la tarifa rústica paralela se documenta como categoría separada."
+    "comentarios": "Art. 4 contiene una tabla de tasas anuales al millar para inmuebles urbanos y suburbanos (con y sin edificaciones) y para inmuebles rústicos. El mismo artículo incluye tasas históricas por año de determinación/modificación del inmueble: durante 2002: urbanos/suburbanos con edificaciones 2.25 al millar, sin edificaciones 3.77 al millar, rústicos 0.27 al millar; de 1993 a 2001 inclusive: 8.00, 15.00 y 6.00 al millar, respectivamente; con anterioridad a 1993: 13 al millar para urbanos/suburbanos con y sin edificaciones y 12 al millar para rústicos. Se omiten los valores unitarios de catastro del Art. 5 por no ser mecánica de cálculo del predial."
   },
   "_meta": {
     "fuente": "txt",
     "modelo": "gpt-5.4-mini"
   },
   "_meta_v2": {
-    "intentos": 2,
+    "intentos": 1,
     "requiere_revision": false,
     "escalado": false,
     "razon": null,
     "usado_reocr": false,
     "usado_vision": false,
     "tokens": {
-      "input": 22243,
-      "output": 769,
-      "cached": 11776
+      "input": 10790,
+      "output": 442,
+      "cached": 5888
     },
     "cvegeo": "11017",
     "estado": "guanajuato",

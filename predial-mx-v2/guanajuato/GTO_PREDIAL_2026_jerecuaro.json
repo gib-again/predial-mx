@@ -3,32 +3,32 @@
     "tipo_esquema": "tarifa_millar",
     "tabla": [
       {
-        "grupo": "general",
-        "clave": "urbanos_y_suburbanos_con_edificaciones",
-        "descripcion": "Inmuebles urbanos y suburbanos con edificaciones; aplica a predios con valor determinado o modificado. Art. 4, fracción 1 y 2.",
+        "grupo": "urbano",
+        "clave": "urbano_con_edificaciones",
+        "descripcion": "Inmuebles urbanos y suburbanos con edificaciones; ejercicio 2026. La tabla separa también sin edificaciones y rústicos como tarifas paralelas.",
         "tasa_millar": 0.0024,
         "periodicidad": "anual",
         "cuota_fija_adicional": null
       },
       {
-        "grupo": "general",
-        "clave": "urbanos_y_suburbanos_sin_edificaciones",
-        "descripcion": "Inmuebles urbanos y suburbanos sin edificaciones; aplica a predios con valor determinado o modificado. Art. 4, fracción 1 y 2.",
+        "grupo": "urbano",
+        "clave": "urbano_sin_edificaciones",
+        "descripcion": "Inmuebles urbanos y suburbanos sin edificaciones; ejercicio 2026.",
         "tasa_millar": 0.0045,
         "periodicidad": "anual",
         "cuota_fija_adicional": null
       },
       {
         "grupo": "rustico",
-        "clave": "rusticos",
-        "descripcion": "Inmuebles rústicos; aplica a predios con valor determinado o modificado. Art. 4, fracción 1 y 2.",
+        "clave": "rustico",
+        "descripcion": "Inmuebles rústicos; ejercicio 2026.",
         "tasa_millar": 0.0018,
         "periodicidad": "anual",
         "cuota_fija_adicional": null
       }
     ],
     "minimo_predial": null,
-    "comentarios": "Art. 4 establece tasas anuales al millar por categoría de inmueble, sin rangos de valor catastral. Las fracciones 3 y 4 muestran tasas históricas para predios con anterioridad a años específicos; en el ejercicio 2026 la tarifa aplicable extraída del texto es la de las fracciones 1 y 2. Se ignoran tablas de valores unitarios del Art. 5 por ser catastro, no mecánica del impuesto."
+    "comentarios": "Artículo 4: la mecánica principal del predial es una tarifa al millar anual por categoría de inmueble, sin rangos de valor catastral. Se transcribe como tarifas paralelas: (i) inmuebles urbanos y suburbanos con edificaciones: 2.4 al millar; (ii) inmuebles urbanos y suburbanos sin edificaciones: 4.5 al millar; (iii) inmuebles rústicos: 1.8 al millar. El texto OCR incluye referencias históricas a años 2002, 1993 y renglones adicionales, pero para el ejercicio 2026 la tabla aplicable es la de tasas por categoría contenida en el artículo 4."
   },
   "_meta": {
     "fuente": "txt",
@@ -43,7 +43,7 @@
     "usado_vision": false,
     "tokens": {
       "input": 8959,
-      "output": 369,
+      "output": 372,
       "cached": 5888
     },
     "cvegeo": "11019",

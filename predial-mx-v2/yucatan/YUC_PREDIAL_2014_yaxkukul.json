@@ -3,7 +3,7 @@
     "tipo_esquema": "tasa_unica",
     "tabla": [
       {
-        "descripcion": "Tasa general sobre valor catastral para la sección I a la sección IV",
+        "descripcion": "Impuesto predial general sobre valor catastral",
         "tasa": 0.002,
         "base_calculo": "valor_catastral",
         "unidad": "porcentaje",
@@ -11,7 +11,7 @@
       }
     ],
     "minimo_predial": null,
-    "comentarios": "Art. 13: el impuesto predial se determina aplicando la tasa del 0.20% sobre el valor catastral de la sección I a la sección IV. El mismo artículo prevé una cuota fija sólo cuando no se pueda determinar el valor catastral: predio urbano $30.00 y predio rústico $10.00; se documenta como referencia textual, pero la mecánica principal es una tasa única. Art. 15 establece una tabla de tarifas sobre rentas o frutos civiles mensuales (4% para predios habitación y 4% para predios comerciales), que se registra como tarifa secundaria no predominante."
+    "comentarios": "Art. 13: tasa del 0.20% sobre el valor catastral de las secciones I a IV y comisarías. Si no se pudiera determinar el valor catastral, se cobra cuota fija: predio urbano $30.00 y predio rústico $10.00. Art. 15 establece una tarifa secundaria sobre rentas o frutos civiles mensuales: 4% para predios habitación y 4% para predios comerciales."
   },
   "_meta": {
     "fuente": "txt",
@@ -26,7 +26,7 @@
     "usado_vision": false,
     "tokens": {
       "input": 7201,
-      "output": 233,
+      "output": 190,
       "cached": 5888
     },
     "cvegeo": "31105",

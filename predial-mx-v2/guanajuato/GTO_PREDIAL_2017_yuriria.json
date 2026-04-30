@@ -5,7 +5,7 @@
       {
         "grupo": "urbano",
         "clave": "inmuebles_urbanos_y_suburbanos_con_edificaciones",
-        "descripcion": "Inmuebles urbanos y suburbanos con edificaciones",
+        "descripcion": "Inmuebles urbanos y suburbanos con edificaciones; artículo 4, fracción I, numeral 1 y 2.",
         "tasa_millar": 0.002,
         "periodicidad": "anual",
         "cuota_fija_adicional": null
@@ -13,7 +13,7 @@
       {
         "grupo": "urbano",
         "clave": "inmuebles_urbanos_y_suburbanos_sin_edificaciones",
-        "descripcion": "Inmuebles urbanos y suburbanos sin edificaciones",
+        "descripcion": "Inmuebles urbanos y suburbanos sin edificaciones; artículo 4, fracción I, numeral 1 y 2.",
         "tasa_millar": 0.004,
         "periodicidad": "anual",
         "cuota_fija_adicional": null
@@ -21,14 +21,14 @@
       {
         "grupo": "rustico",
         "clave": "inmuebles_rusticos",
-        "descripcion": "Inmuebles rústicos",
+        "descripcion": "Inmuebles rústicos; artículo 4, fracción I, numeral 1 y 2.",
         "tasa_millar": 0.0018,
         "periodicidad": "anual",
         "cuota_fija_adicional": null
       }
     ],
     "minimo_predial": null,
-    "comentarios": "Artículo 4. Tasas anuales sobre valor catastral para inmuebles urbanos y suburbanos, con distinción entre con edificaciones, sin edificaciones y rústicos. Se transcriben sólo las tasas; el texto contiene además tablas de valores unitarios para avalúo en los artículos 5 y 6, que no forman parte de la mecánica del impuesto."
+    "comentarios": "Artículo 4 establece tasas anuales al millar por categoría de predio. Para inmuebles urbanos y suburbanos: con edificaciones 2 al millar; sin edificaciones 4 al millar. Para inmuebles rústicos: 1.8 al millar. Los numerales 3 y 4 del artículo 4 muestran tasas históricas para predios con anterioridad a 2002 y a 1993, pero el ejercicio 2017 aplica los numerales vigentes de la tabla principal. Artículos 5 a 6 contienen valores unitarios y criterios de valuación, no la mecánica tarifaria."
   },
   "_meta": {
     "fuente": "txt",
@@ -43,7 +43,7 @@
     "usado_vision": false,
     "tokens": {
       "input": 8680,
-      "output": 291,
+      "output": 388,
       "cached": 5888
     },
     "cvegeo": "11046",

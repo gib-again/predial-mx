@@ -5,7 +5,7 @@
       {
         "grupo": "urbano",
         "clave": "inmuebles_urbanos_y_suburbanos_con_edificaciones",
-        "descripcion": "Inmuebles urbanos y suburbanos con edificaciones",
+        "descripcion": "Inmuebles que cuenten con valor determinado o modificado: urbanos y suburbanos con edificaciones",
         "tasa_millar": 0.0024,
         "periodicidad": "anual",
         "cuota_fija_adicional": null
@@ -13,22 +13,30 @@
       {
         "grupo": "urbano",
         "clave": "inmuebles_urbanos_y_suburbanos_sin_edificaciones",
-        "descripcion": "Inmuebles urbanos y suburbanos sin edificaciones",
+        "descripcion": "Inmuebles que cuenten con valor determinado o modificado: urbanos y suburbanos sin edificaciones",
         "tasa_millar": 0.0045,
         "periodicidad": "anual",
         "cuota_fija_adicional": null
       },
       {
         "grupo": "rustico",
-        "clave": "inmuebles_rusticos",
-        "descripcion": "Inmuebles rústicos",
+        "clave": "inmuebles_rusticos_con_edificaciones",
+        "descripcion": "Inmuebles rústicos con edificaciones",
         "tasa_millar": 0.0018,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "rustico",
+        "clave": "inmuebles_rusticos_sin_edificaciones",
+        "descripcion": "Inmuebles rústicos sin edificaciones",
+        "tasa_millar": 0.013,
         "periodicidad": "anual",
         "cuota_fija_adicional": null
       }
     ],
     "minimo_predial": null,
-    "comentarios": "Art. 4 establece tasas anuales al millar para inmuebles urbanos y suburbanos con/sin edificaciones, así como para inmuebles rústicos. Se transcribe sólo la mecánica principal del predial; los valores unitarios de los artículos 5 y 6 corresponden a catastro/avalúo y no se incluyen como tarifa."
+    "comentarios": "Artículo 4. Tasas anuales aplicables a inmuebles urbanos/suburbanos y rústicos, diferenciadas por presencia o ausencia de edificaciones y por antigüedad del valor determinado o modificado. También se transcriben los valores unitarios de terrenos y construcciones de los artículos 5 y 6, pero son tablas de valuación catastral y no forman parte de la mecánica del impuesto predial. No se identifican cuotas fijas, brackets de valor catastral ni una tarifa secundaria predominante adicional en el segmento proporcionado."
   },
   "_meta": {
     "fuente": "txt",
@@ -43,7 +51,7 @@
     "usado_vision": false,
     "tokens": {
       "input": 8881,
-      "output": 287,
+      "output": 410,
       "cached": 5888
     },
     "cvegeo": "11005",

@@ -5,16 +5,16 @@
       {
         "grupo": "urbano",
         "clave": "predios_urbanos",
-        "descripcion": "Sobre los predios urbanos",
-        "tasa_millar": 5.0,
+        "descripcion": "Predios urbanos",
+        "tasa_millar": 0.005,
         "periodicidad": "anual",
         "cuota_fija_adicional": null
       },
       {
         "grupo": "rustico",
         "clave": "predios_rusticos",
-        "descripcion": "Sobre predios rústicos",
-        "tasa_millar": 3.0,
+        "descripcion": "Predios rústicos",
+        "tasa_millar": 0.003,
         "periodicidad": "anual",
         "cuota_fija_adicional": null
       }
@@ -24,7 +24,7 @@
       "periodicidad": "bimestral",
       "unidad": "pesos"
     },
-    "comentarios": "Art. 2: la base del impuesto predial es el valor catastral de los inmuebles. Se establece tarifa paralela: predios urbanos pagan 5 al millar anual y predios rústicos 3 al millar anual. Los incentivos por pago anticipado y las bonificaciones a ciertos contribuyentes no se documentan por instrucción."
+    "comentarios": "Art. 2: base de cálculo = valor catastral. Tarifas paralelas: predios urbanos 5 al millar anual y predios rústicos 3 al millar anual. Los incentivos por pago anticipado y descuentos a ciertos contribuyentes se ignoran por instrucción."
   },
   "_meta": {
     "fuente": "txt",
@@ -39,7 +39,7 @@
     "usado_vision": false,
     "tokens": {
       "input": 6320,
-      "output": 227,
+      "output": 215,
       "cached": 5888
     },
     "cvegeo": "05020",

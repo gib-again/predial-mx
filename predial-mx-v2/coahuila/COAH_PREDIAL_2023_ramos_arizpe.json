@@ -28,7 +28,7 @@
       },
       {
         "grupo": "urbano",
-        "clave": "residencial_interes_social_popular_con_edificacion",
+        "clave": "residencial_con_edificacion",
         "descripcion": "Predios urbanos residenciales, de interés social y populares con edificación",
         "tasa_millar": 0.005,
         "periodicidad": "anual",
@@ -36,7 +36,7 @@
       },
       {
         "grupo": "urbano",
-        "clave": "residencial_interes_social_popular_sin_edificacion",
+        "clave": "residencial_sin_edificacion",
         "descripcion": "Predios urbanos residenciales, de interés social y populares sin edificación",
         "tasa_millar": 0.006,
         "periodicidad": "anual",
@@ -52,7 +52,7 @@
       },
       {
         "grupo": "rustico",
-        "clave": "rustico_industrial_eolica_solar_ejecucion",
+        "clave": "rustico_renovable_ejecucion",
         "descripcion": "Predios rústicos industriales con explotación de energías renovables (eólica y solar) en ejecución",
         "tasa_millar": 0.005,
         "periodicidad": "anual",
@@ -60,7 +60,7 @@
       },
       {
         "grupo": "rustico",
-        "clave": "rustico_industrial_eolica_solar_desarrollo",
+        "clave": "rustico_renovable_desarrollo",
         "descripcion": "Predios rústicos industriales con explotación de energía renovable (eólica y solar) en desarrollo",
         "tasa_millar": 0.005,
         "periodicidad": "anual",
@@ -68,7 +68,7 @@
       },
       {
         "grupo": "rustico",
-        "clave": "rustico_industrial_eolica_solar_proyecto",
+        "clave": "rustico_renovable_proyecto",
         "descripcion": "Predios rústicos industriales con explotación de energía renovable (eólica y solar) en proyecto",
         "tasa_millar": 0.005,
         "periodicidad": "anual",
@@ -80,7 +80,7 @@
       "periodicidad": "bimestral",
       "unidad": "pesos"
     },
-    "comentarios": "Art. 2: se transcribe la mecánica principal por catálogo de tasas al millar sobre valor catastral. El texto incluye un mínimo predial de $58.00 por bimestre. También contiene incentivos/bonificaciones y una tasa preferencial para instituciones educativas no públicas (1 al millar anual), pero se ignoran por tratarse de beneficios o tarifa secundaria no predominante en la mecánica principal."
+    "comentarios": "Art. 2: catálogo de tasas al millar por tipo de predio. El texto también establece un mínimo predial de $58.00 por bimestre. Los incentivos y bonificaciones del propio artículo se ignoran conforme a la instrucción. Art. 3 contiene incentivos por generación de empleos y para personas con discapacidad; no se incluyen por ser descuentos/beneficios, no mecánica base del cálculo."
   },
   "_meta": {
     "fuente": "txt",
@@ -95,7 +95,7 @@
     "usado_vision": false,
     "tokens": {
       "input": 7413,
-      "output": 669,
+      "output": 648,
       "cached": 5888
     },
     "cvegeo": "05027",

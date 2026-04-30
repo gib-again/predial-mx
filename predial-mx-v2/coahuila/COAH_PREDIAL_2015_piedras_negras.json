@@ -26,7 +26,7 @@
             "unidad": "pesos"
           },
           {
-            "nombre": "habitacional_no_edificado_sin_barda",
+            "nombre": "no_habitacional_no_edificado_sin_barda",
             "valor": 189.0,
             "tipo": "cuota_fija",
             "unidad": "pesos"
@@ -57,7 +57,7 @@
             "unidad": "pesos"
           },
           {
-            "nombre": "habitacional_no_edificado_sin_barda",
+            "nombre": "no_habitacional_no_edificado_sin_barda",
             "valor": 283.5,
             "tipo": "cuota_fija",
             "unidad": "pesos"
@@ -88,7 +88,7 @@
             "unidad": "pesos"
           },
           {
-            "nombre": "habitacional_no_edificado_sin_barda",
+            "nombre": "no_habitacional_no_edificado_sin_barda",
             "valor": 425.25,
             "tipo": "cuota_fija",
             "unidad": "pesos"
@@ -119,7 +119,7 @@
             "unidad": "al_millar"
           },
           {
-            "nombre": "habitacional_no_edificado_sin_barda",
+            "nombre": "no_habitacional_no_edificado_sin_barda",
             "valor": 3.15,
             "tipo": "tasa_millar",
             "unidad": "al_millar"
@@ -132,7 +132,7 @@
       "periodicidad": "bimestral",
       "unidad": "pesos"
     },
-    "comentarios": "Art. 2, fracción I: predios urbanos con tabla por rangos de valor catastral y columnas heterogéneas (edificados/no edificados, con/sin barda). Los tres primeros rangos cobran cuota fija en pesos; el último rango abierto cobra tasa al millar, por eso se clasifica como mixto. Art. 3: predios rústicos pagan 4 al millar anual sobre valor catastral; tarifa paralela no incluida en la tabla principal. Se ignoran incentivos y bonificaciones de las fracciones II a VII."
+    "comentarios": "Art. 2: Predios urbanos usan tabla por valor catastral con columnas heterogéneas para edificados y no edificados, y el último rango cambia a tasa al millar; por eso se clasifica como mixto. Art. 3: predios rústicos pagan 4 al millar anual sobre el valor catastral; tarifa paralela documentada aquí y no incluida en la tabla principal. Los incentivos/bonificaciones de las fracciones II a VII se ignoran por instrucción."
   },
   "_meta": {
     "fuente": "txt",
@@ -147,7 +147,7 @@
     "usado_vision": false,
     "tokens": {
       "input": 7316,
-      "output": 714,
+      "output": 709,
       "cached": 5888
     },
     "cvegeo": "05025",

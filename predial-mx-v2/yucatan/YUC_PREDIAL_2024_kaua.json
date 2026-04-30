@@ -3,10 +3,10 @@
     "tipo_esquema": "tasa_unica",
     "tabla": [
       {
-        "descripcion": "Impuesto predial base sobre valor catastral",
+        "descripcion": "Impuesto predial base valor catastral",
         "tasa": 0.00025,
         "base_calculo": "valor_catastral",
-        "unidad": "porcentaje",
+        "unidad": "al_millar",
         "cuota_fija_adicional": null
       }
     ],
@@ -15,22 +15,22 @@
       "periodicidad": "anual",
       "unidad": "pesos"
     },
-    "comentarios": "Art. 13: el valor catastral se obtiene sumando el valor del terreno por m2 según sección/manzana o comisaría y el valor de construcción según tipo y zona; sobre ese valor catastral se aplica el factor 0.00025. Para predios con valor catastral igual o menor a $200,000.00 se paga cuota fija de $50.00. La tabla de valores unitarios de terreno y construcción es catastro y no forma parte de la mecánica tarifaria. Se menciona un tope comparativo anual de 6% o 10% sobre el impuesto inmediato anterior, pero se ignora por ser disposición de limitación/ajuste y no mecánica base de cálculo."
+    "comentarios": "El artículo 13 señala que, una vez obtenido el valor catastral, se multiplica por el factor 0.00025 para determinar el impuesto. También establece que, en caso de predios cuyo valor catastral sea igual o menor a 200000.00, el contribuyente pagará como cuota fija la cantidad de 50.00 pesos; se registra como mínimo predial. Se ignoran los topes de incremento anual de 6% y 10% respecto del ejercicio inmediato anterior por no formar parte de la mecánica base de cálculo solicitada. Las tablas de valores unitarios de terreno y construcción corresponden a la determinación del valor catastral, no a una tarifa predial por rangos."
   },
   "_meta": {
     "fuente": "txt",
-    "modelo": "gpt-5.4-mini"
+    "modelo": "gpt-5.4"
   },
   "_meta_v2": {
     "intentos": 1,
     "requiere_revision": false,
-    "escalado": false,
-    "razon": null,
+    "escalado": true,
+    "razon": "escalado_a_gpt-5.4_tras_2x_mini_fallido",
     "usado_reocr": false,
     "usado_vision": false,
     "tokens": {
       "input": 7388,
-      "output": 255,
+      "output": 253,
       "cached": 5888
     },
     "cvegeo": "31043",

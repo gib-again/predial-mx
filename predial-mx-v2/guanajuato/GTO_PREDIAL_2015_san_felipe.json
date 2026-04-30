@@ -4,31 +4,103 @@
     "tabla": [
       {
         "grupo": "urbano",
-        "clave": "urbano_edificado",
-        "descripcion": "Predios urbanos y suburbanos con valor determinado o modificado: edificaciones",
+        "clave": "urbanos_suburbanos_edificados_a_entrada_en_vigor",
+        "descripcion": "Inmuebles urbanos y suburbanos con valor determinado o modificado, edificaciones; a la entrada en vigor de la ley",
         "tasa_millar": 0.0024,
         "periodicidad": "anual",
         "cuota_fija_adicional": null
       },
       {
         "grupo": "urbano",
-        "clave": "urbano_edificaciones",
-        "descripcion": "Predios urbanos y suburbanos con edificaciones",
+        "clave": "urbanos_suburbanos_edificados_2014",
+        "descripcion": "Inmuebles urbanos y suburbanos con valor determinado o modificado, edificaciones; durante 2002 y hasta 2014 inclusive",
+        "tasa_millar": 0.0024,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "urbano",
+        "clave": "urbanos_suburbanos_edificados_1993_2001",
+        "descripcion": "Inmuebles urbanos y suburbanos con valor determinado o modificado, edificaciones; con anterioridad a 2002 y hasta 1993 inclusive",
+        "tasa_millar": 0.008,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "urbano",
+        "clave": "urbanos_suburbanos_edificados_anterior_1993",
+        "descripcion": "Inmuebles urbanos y suburbanos con valor determinado o modificado, edificaciones; con anterioridad a 1993",
+        "tasa_millar": 0.013,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "urbano",
+        "clave": "urbanos_suburbanos_no_edificados_a_entrada_en_vigor",
+        "descripcion": "Inmuebles urbanos y suburbanos con valor determinado o modificado, no edificaciones; a la entrada en vigor de la ley",
         "tasa_millar": 0.0045,
         "periodicidad": "anual",
         "cuota_fija_adicional": null
       },
       {
         "grupo": "urbano",
-        "clave": "suburbano",
-        "descripcion": "Predios suburbanos",
+        "clave": "urbanos_suburbanos_no_edificados_2014",
+        "descripcion": "Inmuebles urbanos y suburbanos con valor determinado o modificado, no edificaciones; durante 2002 y hasta 2014 inclusive",
+        "tasa_millar": 0.0045,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "urbano",
+        "clave": "urbanos_suburbanos_no_edificados_1993_2001",
+        "descripcion": "Inmuebles urbanos y suburbanos con valor determinado o modificado, no edificaciones; con anterioridad a 2002 y hasta 1993 inclusive",
+        "tasa_millar": 0.015,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "urbano",
+        "clave": "urbanos_suburbanos_no_edificados_anterior_1993",
+        "descripcion": "Inmuebles urbanos y suburbanos con valor determinado o modificado, no edificaciones; con anterioridad a 1993",
+        "tasa_millar": 0.012,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "urbano",
+        "clave": "urbanos_suburbanos_sin_valor_determinado_a_entrada_en_vigor",
+        "descripcion": "Inmuebles urbanos y suburbanos sin valor determinado o modificado; a la entrada en vigor de la ley",
         "tasa_millar": 0.0018,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "urbano",
+        "clave": "urbanos_suburbanos_sin_valor_determinado_2014",
+        "descripcion": "Inmuebles urbanos y suburbanos sin valor determinado o modificado; durante 2002 y hasta 2014 inclusive",
+        "tasa_millar": 0.0018,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "urbano",
+        "clave": "urbanos_suburbanos_sin_valor_determinado_1993_2001",
+        "descripcion": "Inmuebles urbanos y suburbanos sin valor determinado o modificado; con anterioridad a 2002 y hasta 1993 inclusive",
+        "tasa_millar": 0.006,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "urbano",
+        "clave": "urbanos_suburbanos_sin_valor_determinado_anterior_1993",
+        "descripcion": "Inmuebles urbanos y suburbanos sin valor determinado o modificado; con anterioridad a 1993",
+        "tasa_millar": 0.012,
         "periodicidad": "anual",
         "cuota_fija_adicional": null
       }
     ],
     "minimo_predial": null,
-    "comentarios": "Art. 4: para inmuebles urbanos y suburbanos con valor determinado o modificado, la tasa anual se establece por categorías en función de la antigüedad de la construcción: a la entrada en vigor de la ley 2.4 al millar, 4.5 al millar y 1.8 al millar; durante 2002 a 2014, inclusive, 2.4 al millar, 4.5 al millar y 1.8 al millar; con anterioridad a 2002 y hasta 1993, 8 al millar, 15 al millar y 6 al millar; y con anterioridad a 1993, 13 al millar y 12 al millar. Se transcribe únicamente la mecánica principal visible en el fragmento, sin descuentos ni recargos. El texto también contiene tablas de valores unitarios de terreno y construcción para avalúo (arts. 5 y 6), que no forman parte de la tarifa del impuesto."
+    "comentarios": "Artículo 4 establece tasas anuales categóricas por antigüedad y por tipo de inmueble dentro de inmuebles urbanos y suburbanos: 2.4, 8, 13, 4.5, 15, 12 y 1.8, 6, 12 al millar según el bloque textual. Se transcribe como tarifa_millar porque no hay rangos de valor catastral. El texto OCR es irregular en la composición de columnas, pero la mecánica observable es un catálogo de tasas al millar por condición/antigüedad del inmueble. La sección de valores unitarios de terreno y construcción (arts. 5 y 6) corresponde a catastro y no se extrajo. No se aprecian tarifas secundarias estructurales relevantes en el fragmento."
   },
   "_meta": {
     "fuente": "txt",
@@ -43,7 +115,7 @@
     "usado_vision": false,
     "tokens": {
       "input": 8611,
-      "output": 406,
+      "output": 1126,
       "cached": 5888
     },
     "cvegeo": "11030",

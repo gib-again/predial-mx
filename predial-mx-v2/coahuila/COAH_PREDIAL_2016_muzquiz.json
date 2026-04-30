@@ -32,7 +32,7 @@
       "periodicidad": "bimestral",
       "unidad": "pesos"
     },
-    "comentarios": "Art. 2: tarifa principal por categoría de predio con tasas al millar anuales. El texto incluye un mínimo predial de $17.30 por bimestre. Los incentivos por pronto pago y la bonificación a pensionados/jubilados/adultos mayores/personas con discapacidad se ignoran por instrucción."
+    "comentarios": "Art. 2: tasas categóricas al millar sobre valor catastral para predios urbanos (5 al millar anual), rústicos (3 al millar anual) y lotes baldíos con maleza (7 al millar). Se establece un mínimo predial de $17.30 por bimestre. Se ignoran incentivos/bonificaciones por pago anticipado y descuentos a pensionados, jubilados, adultos mayores y personas con discapacidad por instrucción."
   },
   "_meta": {
     "fuente": "txt",
@@ -47,7 +47,7 @@
     "usado_vision": false,
     "tokens": {
       "input": 6338,
-      "output": 274,
+      "output": 305,
       "cached": 5888
     },
     "cvegeo": "05020",

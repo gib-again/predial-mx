@@ -14,19 +14,19 @@
             "unidad": "pesos"
           },
           {
-            "nombre": "no_habitacional_edificado_con_barda",
+            "nombre": "edificado_con_barda",
             "valor": 134.64,
             "tipo": "cuota_fija",
             "unidad": "pesos"
           },
           {
-            "nombre": "no_habitacional_edificado_sin_barda",
+            "nombre": "no_habitacional_edificado",
             "valor": 120.0,
             "tipo": "cuota_fija",
             "unidad": "pesos"
           },
           {
-            "nombre": "no_habitacional_no_edificado",
+            "nombre": "no_edificado",
             "valor": 189.0,
             "tipo": "cuota_fija",
             "unidad": "pesos"
@@ -45,19 +45,19 @@
             "unidad": "pesos"
           },
           {
-            "nombre": "no_habitacional_edificado_con_barda",
+            "nombre": "edificado_con_barda",
             "valor": 189.0,
             "tipo": "cuota_fija",
             "unidad": "pesos"
           },
           {
-            "nombre": "no_habitacional_edificado_sin_barda",
+            "nombre": "no_habitacional_edificado",
             "valor": 180.0,
             "tipo": "cuota_fija",
             "unidad": "pesos"
           },
           {
-            "nombre": "no_habitacional_no_edificado",
+            "nombre": "no_edificado",
             "valor": 283.5,
             "tipo": "cuota_fija",
             "unidad": "pesos"
@@ -76,19 +76,19 @@
             "unidad": "pesos"
           },
           {
-            "nombre": "no_habitacional_edificado_con_barda",
+            "nombre": "edificado_con_barda",
             "valor": 283.5,
             "tipo": "cuota_fija",
             "unidad": "pesos"
           },
           {
-            "nombre": "no_habitacional_edificado_sin_barda",
+            "nombre": "no_habitacional_edificado",
             "valor": 270.0,
             "tipo": "cuota_fija",
             "unidad": "pesos"
           },
           {
-            "nombre": "no_habitacional_no_edificado",
+            "nombre": "no_edificado",
             "valor": 425.25,
             "tipo": "cuota_fija",
             "unidad": "pesos"
@@ -102,25 +102,25 @@
         "columnas": [
           {
             "nombre": "habitacional_edificado",
-            "valor": 1.58,
+            "valor": 0.00158,
             "tipo": "tasa_millar",
             "unidad": "al_millar"
           },
           {
-            "nombre": "no_habitacional_edificado_con_barda",
-            "valor": 2.1,
+            "nombre": "edificado_con_barda",
+            "valor": 0.0021,
             "tipo": "tasa_millar",
             "unidad": "al_millar"
           },
           {
-            "nombre": "no_habitacional_edificado_sin_barda",
-            "valor": 2.1,
+            "nombre": "no_habitacional_edificado",
+            "valor": 0.0021,
             "tipo": "tasa_millar",
             "unidad": "al_millar"
           },
           {
-            "nombre": "no_habitacional_no_edificado",
-            "valor": 3.15,
+            "nombre": "no_edificado",
+            "valor": 0.00315,
             "tipo": "tasa_millar",
             "unidad": "al_millar"
           }
@@ -132,7 +132,7 @@
       "periodicidad": "bimestral",
       "unidad": "pesos"
     },
-    "comentarios": "Art. 2, fracción I: predios urbanos con tabla por valor catastral y cuatro columnas categóricas (habitacional edificado, no habitacional edificado con barda, no habitacional edificado sin barda, no habitacional no edificado). Los tres primeros rangos cobran cuota fija en pesos y el último rango en adelante cobra tasa al millar, por lo que la estructura es mixta. Art. 3: predios rústicos pagan 4 al millar anual sobre valor catastral; se documenta como tarifa paralela no incluida en la tabla principal. Los incentivos/bonificaciones de las fracciones II a VII se ignoran por instrucción."
+    "comentarios": "Art. 2: Predios urbanos se calculan con tabla mixta por rangos de valor catastral y categorías (habitacional edificado, edificado con barda, no habitacional edificado, no edificado). Los tres primeros rangos pagan cuota fija en pesos; el último rango abierto cobra tasa al millar. Art. 3: predios rústicos pagan 4 al millar anual sobre valor catastral como tarifa paralela, no incluida en la tabla principal. Se documenta el mínimo predial de $17.50 por bimestre."
   },
   "_meta": {
     "fuente": "txt",
@@ -147,7 +147,7 @@
     "usado_vision": false,
     "tokens": {
       "input": 7398,
-      "output": 752,
+      "output": 682,
       "cached": 5888
     },
     "cvegeo": "05025",

@@ -3,15 +3,15 @@
     "tipo_esquema": "tasa_unica",
     "tabla": [
       {
-        "descripcion": "Tasa general sobre el valor catastral",
-        "tasa": 0.2,
+        "descripcion": "Tasa del 0.20% sobre el valor catastral",
+        "tasa": 0.002,
         "base_calculo": "valor_catastral",
         "unidad": "porcentaje",
         "cuota_fija_adicional": null
       }
     ],
     "minimo_predial": null,
-    "comentarios": "Artículo 13 establece como mecánica principal una tasa única de 0.20 % sobre el valor catastral. Si no se pudiera determinar el valor catastral, se cobrará cuota fija: predio urbano $50.00 y predio rústico $30.00; estas cuotas son supletorias y no alteran la clasificación principal. Artículo 15 establece una tarifa paralela para predios destinados a la producción agropecuaria de 10 al millar anual sobre el valor registrado o catastral; no se incluye en la tabla principal por ser tarifa separada. Artículo 16 establece 4% sobre rentas o frutos civiles mensuales para predios habitación y comerciales; tampoco se incluye en la tabla principal por ser una mecánica paralela distinta. Se ignoran las tablas de valores unitarios del artículo 14 por corresponder a catastro y no a la tarifa del impuesto."
+    "comentarios": "Artículo 13 establece como mecánica principal una tasa única de 0.20% sobre el valor catastral. El mismo artículo señala que cuando no se pudiera determinar el valor catastral se cobrará cuota fija: predio urbano 50.00 pesos y predio rústico 30.00 pesos; no se incorpora a la tabla principal por no formar una estructura uniforme adicional tipificada en el esquema. Artículo 15 dispone una tarifa paralela para predios destinados a la producción agropecuaria de 10 al millar anual sobre el valor registrado o catastral. Artículo 16 establece, de forma separada, 4% sobre renta o frutos civiles mensuales para predios habitación y comerciales. Artículo 14 contiene tablas de valores unitarios de terreno y construcción para cálculo catastral, no tarifa del impuesto predial."
   },
   "_meta": {
     "fuente": "txt",
@@ -26,7 +26,7 @@
     "usado_vision": false,
     "tokens": {
       "input": 24173,
-      "output": 867,
+      "output": 857,
       "cached": 17664
     },
     "cvegeo": "31105",

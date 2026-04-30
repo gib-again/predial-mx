@@ -4,16 +4,16 @@
     "tabla": [
       {
         "grupo": "urbano",
-        "clave": "con_edificaciones",
-        "descripcion": "Inmuebles urbanos y suburbanos con edificaciones",
+        "clave": "urbano_con_edificaciones",
+        "descripcion": "Inmuebles urbanos y suburbanos con edificaciones, con valor determinado o modificado",
         "tasa_millar": 0.0024,
         "periodicidad": "anual",
         "cuota_fija_adicional": null
       },
       {
         "grupo": "urbano",
-        "clave": "sin_edificaciones",
-        "descripcion": "Inmuebles urbanos y suburbanos sin edificaciones",
+        "clave": "urbano_sin_edificaciones",
+        "descripcion": "Inmuebles urbanos y suburbanos sin edificaciones, con valor determinado o modificado",
         "tasa_millar": 0.0045,
         "periodicidad": "anual",
         "cuota_fija_adicional": null
@@ -21,14 +21,14 @@
       {
         "grupo": "rustico",
         "clave": "rustico",
-        "descripcion": "Inmuebles rústicos",
+        "descripcion": "Inmuebles rústicos, con valor determinado o modificado",
         "tasa_millar": 0.0018,
         "periodicidad": "anual",
         "cuota_fija_adicional": null
       }
     ],
     "minimo_predial": null,
-    "comentarios": "Art. 4: el impuesto predial se causa anualmente con tasas diferenciadas por tipo de inmueble: urbanos y suburbanos con edificaciones 2.4 al millar; urbanos y suburbanos sin edificaciones 4.5 al millar; rústicos 1.8 al millar. No se extraen aquí los valores catastrales de los arts. 5 y 6 porque corresponden a valuación, no a la mecánica tarifaria del impuesto."
+    "comentarios": "Artículo 4: tasas anuales sobre el valor catastral. Se transcribe la mecánica principal como catálogo de tasas al millar por categoría de inmueble. No se incluyen los valores unitarios del Artículo 5 ni los criterios de avalúo del Artículo 6 porque son valuación catastral, no tarifa del impuesto."
   },
   "_meta": {
     "fuente": "txt",
@@ -43,7 +43,7 @@
     "usado_vision": false,
     "tokens": {
       "input": 8616,
-      "output": 289,
+      "output": 285,
       "cached": 5888
     },
     "cvegeo": "11004",

@@ -3,28 +3,31 @@
     "tipo_esquema": "tasa_unica",
     "tabla": [
       {
-        "descripcion": "Impuesto predial sobre el valor catastral determinado",
+        "descripcion": "Factor de 0.001 al importe del valor catastral que se determine",
         "tasa": 0.001,
         "base_calculo": "valor_catastral",
-        "unidad": "al_millar"
+        "unidad": "al_millar",
+        "cuota_fija_adicional": null
       }
     ],
     "minimo_predial": null,
-    "comentarios": "Art. 13 establece una sola tasa uniforme: 'el impuesto predial se causará el factor de .001 al importe del Valor Catastral que se determine'. La sección de valores unitarios de terreno y construcción se ignora como insumo catastral, no como mecánica tarifaria. No se observan rangos, categorías ni tarifas paralelas del predial."
+    "comentarios": "El Artículo 13 establece una sola tasa uniforme sobre el valor catastral: factor de 0.001. Las tablas de valores unitarios de terreno y construcción solo sirven para determinar el valor catastral y no forman parte de la tarifa del impuesto predial."
   },
   "_meta": {
     "fuente": "txt",
-    "modelo": "gpt-5.4-mini"
+    "modelo": "gpt-5.4"
   },
   "_meta_v2": {
     "intentos": 1,
     "requiere_revision": false,
-    "escalado": false,
-    "razon": null,
+    "escalado": true,
+    "razon": "escalado_a_gpt-5.4_tras_2x_mini_fallido",
+    "usado_reocr": false,
+    "usado_vision": false,
     "tokens": {
-      "input": 5877,
-      "output": 163,
-      "cached": 3840
+      "input": 7094,
+      "output": 149,
+      "cached": 5888
     },
     "cvegeo": "31086",
     "estado": "yucatan",

@@ -95,7 +95,7 @@
       }
     ],
     "minimo_predial": null,
-    "comentarios": "Art. 13: tarifa por valor catastral con brackets de cuota fija anual y factor marginal (0.00075, 0.00200, 0.00300, 0.00300, 0.00400, 0.00133, 0.00200) sobre el excedente; la mecánica es híbrida porque combina cuota fija y tasa marginal. Art. 14: predios rústicos pagan 315/420/525 pesos por hectárea según superficie (1-20, 21-40, 41 en adelante), y predios agropecuarios pagan 10 al millar anual sobre valor registrado o catastral; el artículo 15 establece frutos civiles: habitacional 2% mensual y comercial 3% mensual sobre la contraprestación. Se documenta solo la mecánica principal y las tarifas paralelas/secundarias sin incorporar descuentos."
+    "comentarios": "Art. 13: cuando la base sea el valor catastral, la tabla principal es por rangos con cuota fija anual y factor (0.00075 a 0.00400), pero el texto indica que el excedente sobre el límite inferior se multiplica por el factor y se suma a la cuota fija; por la heterogeneidad entre cuota fija y factor por rango, se registra como mixto. Art. 14: predios rústicos pagan 10 al millar anual sobre el valor registrado o catastral, con tope por legislación agraria federal para terrenos ejidales. Art. 15: frutos civiles producen 2% mensual (habitacional) o 3% mensual (comercial) sobre la contraprestación; se documentan como tarifas secundarias no estructurales."
   },
   "_meta": {
     "fuente": "txt",
@@ -110,7 +110,7 @@
     "usado_vision": false,
     "tokens": {
       "input": 7537,
-      "output": 547,
+      "output": 527,
       "cached": 5888
     },
     "cvegeo": "31013",

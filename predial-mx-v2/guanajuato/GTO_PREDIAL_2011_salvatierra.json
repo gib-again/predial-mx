@@ -4,31 +4,31 @@
     "tabla": [
       {
         "grupo": "urbano",
-        "clave": "urbano_con_edificaciones",
-        "descripcion": "Inmuebles urbanos y suburbanos con edificaciones",
+        "clave": "con_edificaciones",
+        "descripcion": "Inmuebles urbanos y suburbanos con edificaciones; tasa anual.",
         "tasa_millar": 0.0024,
         "periodicidad": "anual",
         "cuota_fija_adicional": null
       },
       {
         "grupo": "urbano",
-        "clave": "urbano_sin_edificaciones",
-        "descripcion": "Inmuebles urbanos y suburbanos sin edificaciones",
+        "clave": "sin_edificaciones",
+        "descripcion": "Inmuebles urbanos y suburbanos sin edificaciones; tasa anual.",
         "tasa_millar": 0.0045,
         "periodicidad": "anual",
         "cuota_fija_adicional": null
       },
       {
         "grupo": "rustico",
-        "clave": "rustico",
-        "descripcion": "Inmuebles rústicos",
+        "clave": "general",
+        "descripcion": "Inmuebles rústicos; tasa anual.",
         "tasa_millar": 0.0018,
         "periodicidad": "anual",
         "cuota_fija_adicional": null
       }
     ],
     "minimo_predial": null,
-    "comentarios": "Art. 4 contiene una tabla de tasas al millar por categoría de inmueble (urbanos y suburbanos con edificaciones, sin edificaciones, y rústicos), sin rangos de valor catastral. Se ignoran las tablas de valores unitarios de los Arts. 5 y 6 por ser valuación catastral, no mecánica de cálculo del impuesto. La fracción IV del texto OCR aparece incompleta/cortada y no se transcribe como fila separada; la mecánica identificable y explícita en el encabezado de TASAS es la de tres categorías con tasas anuales al millar."
+    "comentarios": "Artículo 4 contiene una tabla categórica de tasas al millar por tipo de inmueble y condición, sin rangos de valor catastral. Se transcribe sólo la estructura principal. También aparecen tasas históricas para inmuebles con anterioridad al año 2002 y hasta 1993 inclusive, y con anterioridad a 1993, pero el texto suministrado está cortado/mezclado y no se consolidan como tabla principal. Artículo 5 y 6 son tablas de valores unitarios para avalúo catastral, no mecánica de cálculo del impuesto, por lo que no se incluyen."
   },
   "_meta": {
     "fuente": "txt",
@@ -43,7 +43,7 @@
     "usado_vision": false,
     "tokens": {
       "input": 8508,
-      "output": 323,
+      "output": 330,
       "cached": 5888
     },
     "cvegeo": "11028",

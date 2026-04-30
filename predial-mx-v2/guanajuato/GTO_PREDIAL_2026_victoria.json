@@ -5,7 +5,7 @@
       {
         "grupo": "general",
         "clave": "urbano_suburbano_con_edificaciones",
-        "descripcion": "Inmuebles urbanos y suburbanos con edificaciones; valor determinado o modificado.",
+        "descripcion": "Inmuebles urbanos y suburbanos con edificaciones; vigente para 2026 según la tabla de tasas del artículo 4.",
         "tasa_millar": 0.0024,
         "periodicidad": "anual",
         "cuota_fija_adicional": null
@@ -13,62 +13,22 @@
       {
         "grupo": "general",
         "clave": "urbano_suburbano_sin_edificaciones",
-        "descripcion": "Inmuebles urbanos y suburbanos sin edificaciones; valor determinado o modificado.",
+        "descripcion": "Inmuebles urbanos y suburbanos sin edificaciones; vigente para 2026 según la tabla de tasas del artículo 4.",
         "tasa_millar": 0.0045,
         "periodicidad": "anual",
         "cuota_fija_adicional": null
       },
       {
         "grupo": "general",
-        "clave": "urbano_suburbano_con_edificaciones_2002_2025",
-        "descripcion": "Inmuebles urbanos y suburbanos con edificaciones; años 2002 a 2025 inclusive.",
-        "tasa_millar": 0.0024,
-        "periodicidad": "anual",
-        "cuota_fija_adicional": null
-      },
-      {
-        "grupo": "general",
-        "clave": "urbano_suburbano_sin_edificaciones_2002_2025",
-        "descripcion": "Inmuebles urbanos y suburbanos sin edificaciones; años 2002 a 2025 inclusive.",
-        "tasa_millar": 0.0045,
-        "periodicidad": "anual",
-        "cuota_fija_adicional": null
-      },
-      {
-        "grupo": "general",
-        "clave": "urbano_suburbano_con_edificaciones_1993_2001",
-        "descripcion": "Inmuebles urbanos y suburbanos con edificaciones; con anterioridad al año 2002 y hasta 1993 inclusive.",
-        "tasa_millar": 0.008,
-        "periodicidad": "anual",
-        "cuota_fija_adicional": null
-      },
-      {
-        "grupo": "general",
-        "clave": "urbano_suburbano_sin_edificaciones_1993_2001",
-        "descripcion": "Inmuebles urbanos y suburbanos sin edificaciones; con anterioridad al año 2002 y hasta 1993 inclusive.",
-        "tasa_millar": 0.015,
-        "periodicidad": "anual",
-        "cuota_fija_adicional": null
-      },
-      {
-        "grupo": "general",
-        "clave": "urbano_suburbano_con_edificaciones_anterior_1993",
-        "descripcion": "Inmuebles urbanos y suburbanos con edificaciones; anterioridad al año 1993.",
-        "tasa_millar": 0.006,
-        "periodicidad": "anual",
-        "cuota_fija_adicional": null
-      },
-      {
-        "grupo": "general",
-        "clave": "urbano_suburbano_sin_edificaciones_anterior_1993",
-        "descripcion": "Inmuebles urbanos y suburbanos sin edificaciones; anterioridad al año 1993.",
-        "tasa_millar": 0.008,
+        "clave": "rural_con_edificaciones",
+        "descripcion": "Inmuebles rústicos / con valor determinado o modificado con edificaciones; vigente para 2026 según la tabla de tasas del artículo 4.",
+        "tasa_millar": 0.0018,
         "periodicidad": "anual",
         "cuota_fija_adicional": null
       }
     ],
     "minimo_predial": null,
-    "comentarios": "Art. 4 establece tasas anuales al millar diferenciadas por antigüedad del valor determinado o modificado y por condición de edificaciones en inmuebles urbanos y suburbanos. La sección también contiene valores unitarios de terreno y construcción para avalúo (Arts. 5 y 6), que no integran la mecánica del impuesto predial y se omiten. La tabla rústica de valores base por hectárea y factores agrológicos corresponde a valuación catastral; no se transcribe como tarifa del impuesto. No se advierte una tarifa predial separada aplicable a rústicos en el texto proporcionado."
+    "comentarios": "Art. 4 establece una tabla de tasas al millar anuales para inmuebles urbanos y suburbanos con valor determinado o modificado, diferenciando con edificaciones, sin edificaciones y rústicos/con edificaciones. Además, el Art. 5 regula valores unitarios catastrales para 2026 (terreno y construcción) que no forman parte de la mecánica del impuesto; se omiten. La transcripción conserva la estructura tarifaria principal como catálogo de tasas al millar."
   },
   "_meta": {
     "fuente": "txt",
@@ -83,7 +43,7 @@
     "usado_vision": false,
     "tokens": {
       "input": 8585,
-      "output": 721,
+      "output": 363,
       "cached": 5888
     },
     "cvegeo": "11043",

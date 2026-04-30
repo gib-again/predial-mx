@@ -5,7 +5,7 @@
       {
         "grupo": "urbano",
         "clave": "urbanos_con_edificaciones",
-        "descripcion": "Inmuebles urbanos y suburbanos con edificaciones; a la entrada en vigor de la ley, durante 2002-2014, y con anterioridad al año 2002 hasta 1993 inclusive, las tasas son las señaladas en la tabla del artículo 4.",
+        "descripcion": "Inmuebles urbanos y suburbanos con edificaciones; tasa anual sobre valor catastral.",
         "tasa_millar": 0.0024,
         "periodicidad": "anual",
         "cuota_fija_adicional": null
@@ -13,7 +13,7 @@
       {
         "grupo": "urbano",
         "clave": "urbanos_sin_edificaciones",
-        "descripcion": "Inmuebles urbanos y suburbanos sin edificaciones; a la entrada en vigor de la ley, durante 2002-2014, y con anterioridad al año 2002 hasta 1993 inclusive, las tasas son las señaladas en la tabla del artículo 4.",
+        "descripcion": "Inmuebles urbanos y suburbanos sin edificaciones; tasa anual sobre valor catastral.",
         "tasa_millar": 0.0045,
         "periodicidad": "anual",
         "cuota_fija_adicional": null
@@ -21,14 +21,14 @@
       {
         "grupo": "rustico",
         "clave": "rusticos",
-        "descripcion": "Inmuebles rústicos; a la entrada en vigor de la ley, durante 2002-2014, y con anterioridad al año 2002 hasta 1993 inclusive, las tasas son las señaladas en la tabla del artículo 4.",
+        "descripcion": "Inmuebles rústicos; tasa anual sobre valor catastral.",
         "tasa_millar": 0.0018,
         "periodicidad": "anual",
         "cuota_fija_adicional": null
       }
     ],
     "minimo_predial": null,
-    "comentarios": "Artículo 4 establece tasas anuales al millar por tipo de inmueble: urbanos y suburbanos con edificaciones, urbanos y suburbanos sin edificaciones, y rústicos. El texto también muestra una tabla histórica por periodos: 1) a la entrada en vigor y durante 2002-2014: 2.4 al millar (con edificaciones), 4.5 al millar (sin edificaciones), 1.8 al millar (rústicos); 2) con anterioridad al año 2002 y hasta 1993 inclusive: 8, 15 y 6 al millar; 3) con anterioridad a 1993: 13 y 12 al millar para urbanos/suburbanos, y aparece rústicos sin cifra visible en el recorte. Se omite la tabla de valores unitarios del artículo 5 por ser catastro, no tarifa. No se documentan descuentos ni bonificaciones."
+    "comentarios": "Artículo 4 establece tasas anuales al millar para tres grupos: inmuebles urbanos y suburbanos con edificaciones (2.4 al millar), urbanos y suburbanos sin edificaciones (4.5 al millar) y rústicos (1.8 al millar). El texto también muestra una tabla histórica por años, pero la mecánica vigente para 2015 queda como catálogo categórico de tasas al millar. No se extraen las tablas de valores unitarios del Artículo 5 porque corresponden a catastro/avalúo, no a la tarifa del impuesto."
   },
   "_meta": {
     "fuente": "txt",
@@ -43,7 +43,7 @@
     "usado_vision": false,
     "tokens": {
       "input": 8739,
-      "output": 530,
+      "output": 339,
       "cached": 5888
     },
     "cvegeo": "11046",

@@ -109,7 +109,7 @@
       }
     ],
     "minimo_predial": null,
-    "comentarios": "Art. 4, fracción I, inciso a) 'Con edificaciones': tarifa anual progresiva para inmuebles urbanos y suburbanos. Art. 4, fracción I, inciso b) 'Sin edificaciones': 4.5 al millar para inmuebles urbanos y suburbanos con valor determinado o modificado (incluye periodos históricos); Art. 4, fracción II: 1.8 al millar para inmuebles rústicos con valor determinado o modificado (incluye periodos históricos). Estas tarifas paralelas no se incluyen en la tabla principal por ser mecánicas separadas y categóricas."
+    "comentarios": "Art. 4, fracción I, inciso a) inmuebles urbanos y suburbanos con edificaciones: tabla de valores catastrales por rangos con cuota fija y tasa marginal. Art. 4, fracción I, inciso b) sin edificaciones: 4.5 al millar; y fracción II inmuebles rústicos: 1.8 al millar (con referencias históricas adicionales en el texto para años anteriores). Estas tarifas paralelas no se incorporan a la tabla principal por ser grupos distintos y no formar parte de la mecánica predominante estructurada."
   },
   "_meta": {
     "fuente": "txt",
@@ -124,7 +124,7 @@
     "usado_vision": false,
     "tokens": {
       "input": 9087,
-      "output": 785,
+      "output": 776,
       "cached": 5888
     },
     "cvegeo": "11001",

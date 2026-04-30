@@ -1,75 +1,45 @@
 {
   "predial": {
-    "tipo_esquema": "mixto",
+    "tipo_esquema": "progresivo",
     "tabla": [
       {
         "n_rango": 1,
         "inferior": 0.0,
-        "superior": 198000.0,
-        "columnas": [
-          {
-            "nombre": "general",
-            "valor": 0.002,
-            "tipo": "tasa_marginal",
-            "unidad": "al_millar"
-          }
-        ]
+        "superior": 400000.0,
+        "cuota_fija": 0.0,
+        "tasa_marginal": 0.002
       },
       {
         "n_rango": 2,
-        "inferior": 198000.0,
-        "superior": 295000.0,
-        "columnas": [
-          {
-            "nombre": "general",
-            "valor": 0.0021,
-            "tipo": "tasa_marginal",
-            "unidad": "al_millar"
-          }
-        ]
+        "inferior": 400000.0,
+        "superior": 1000000.0,
+        "cuota_fija": 800.0,
+        "tasa_marginal": 0.0021
       },
       {
         "n_rango": 3,
-        "inferior": 295000.0,
+        "inferior": 1000000.0,
         "superior": 2810474.56,
-        "columnas": [
-          {
-            "nombre": "general",
-            "valor": 0.0022,
-            "tipo": "tasa_marginal",
-            "unidad": "al_millar"
-          }
-        ]
+        "cuota_fija": 2060.0,
+        "tasa_marginal": 0.0022
       },
       {
         "n_rango": 4,
         "inferior": 2810474.56,
         "superior": 18335436.71,
-        "columnas": [
-          {
-            "nombre": "general",
-            "valor": 0.0022,
-            "tipo": "tasa_marginal",
-            "unidad": "al_millar"
-          }
-        ]
+        "cuota_fija": 0.0,
+        "tasa_marginal": 0.0022
       },
       {
         "n_rango": 5,
         "inferior": 18335436.71,
         "superior": null,
-        "columnas": [
-          {
-            "nombre": "general",
-            "valor": 0.0022,
-            "tipo": "tasa_marginal",
-            "unidad": "al_millar"
-          }
-        ]
+        "cuota_fija": 0.0,
+        "tasa_marginal": 0.0022
       }
     ],
     "minimo_predial": null,
-    "comentarios": "Art. 4 fracc. I: para inmuebles urbanos y suburbanos con edificación con valor determinado o modificado en 2020, la ley presenta una tabla por rangos de valor catastral con cuota fija y factor sobre el excedente; el texto OCR está incompleto/dañado, pero la estructura corresponde a brackets heterogéneos del predial principal. Art. 4 fracc. II: inmuebles urbanos y suburbanos sin edificación pagan 3.00 al millar sobre la base gravable. Art. 4 fracc. III: inmuebles rústicos con valor determinado o modificado en 2020 pagan 0.20 al millar. Art. 4 fracc. IV: para valores determinados o modificados en 2019 y anteriores se establecen tasas al millar distintas por antigüedad y tipo de inmueble (urbano con edificación, urbano sin edificación y rústico): 2.00, 3.00 y 0.20 al millar; 3.55, 6.50 y 0.398 al millar; 8, 15 y 6 al millar; 13, 12 y 12 al millar, según los periodos indicados en la ley. Se documenta como mixto porque la fracción I usa una mecánica por rangos con cuota fija + factor sobre excedente, mientras que las fracciones II, III y IV contienen tarifas paralelas y heterogéneas por tipo y antigüedad que no caben en una sola tabla homogénea."
+    "comentarios": "Art. 4, fracción II: inmuebles urbanos y suburbanos con edificación con valor determinado o modificado en 2020. El texto OCR de la tabla está deteriorado; se transcriben los límites visibles (0, 400,000, 1,000,000, 2,810,474.56 y 18,335,436.71 en adelante) y los factores visibles en el encabezado (0.0020, 0.0021, 0.0022). La mecánica principal es progresiva porque la ley indica que a la base gravable se le disminuye el límite inferior y al excedente se le aplica el factor, sumando una cuota fija y dividiendo entre seis para obtener el impuesto bimestral. Como el OCR no permite recuperar con certeza todas las cuotas fijas de cada renglón, se conserva la estructura de brackets con la tasa marginal visible. Tarifas paralelas no incluidas en la tabla principal: Art. 4, fracción III, urbanos/suburbanos sin edificación pagan 3.00 al millar sobre base gravable; inmuebles rústicos con valor 2020 pagan 0.20 al millar. Art. 4, fracción IV repite tasas distintas para valores 2019 y anteriores (urbanos con edificación 2.00/3.55/8 al millar; sin edificación 3.00/6.50/15 al millar; rústicos 0.20/0.398/6/13 al millar según antigüedad)."
   },
   "_meta": {
     "fuente": "txt",
@@ -84,7 +54,7 @@
     "usado_vision": false,
     "tokens": {
       "input": 10358,
-      "output": 631,
+      "output": 571,
       "cached": 5888
     },
     "cvegeo": "11007",

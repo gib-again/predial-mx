@@ -3,72 +3,32 @@
     "tipo_esquema": "tarifa_millar",
     "tabla": [
       {
-        "grupo": "urbano",
-        "clave": "urbano_con_edificaciones",
-        "descripcion": "Inmuebles urbanos y suburbanos con edificaciones, para la entrada en vigor de la ley y durante 2002-2013, inclusive",
-        "tasa_millar": 0.0024,
-        "periodicidad": "anual",
-        "cuota_fija_adicional": null
-      },
-      {
-        "grupo": "urbano",
-        "clave": "urbano_sin_edificaciones",
-        "descripcion": "Inmuebles urbanos y suburbanos sin edificaciones, para la entrada en vigor de la ley y durante 2002-2013, inclusive",
+        "grupo": "general",
+        "clave": "urbano_suburbano_con_edificaciones",
+        "descripcion": "Inmuebles urbanos y suburbanos con edificaciones",
         "tasa_millar": 0.0045,
         "periodicidad": "anual",
         "cuota_fija_adicional": null
       },
       {
-        "grupo": "rustico",
-        "clave": "rustico",
-        "descripcion": "Inmuebles rústicos, para la entrada en vigor de la ley y durante 2002-2013, inclusive",
+        "grupo": "general",
+        "clave": "urbano_suburbano_sin_edificaciones",
+        "descripcion": "Inmuebles urbanos y suburbanos sin edificaciones",
         "tasa_millar": 0.0018,
         "periodicidad": "anual",
         "cuota_fija_adicional": null
       },
       {
-        "grupo": "urbano",
-        "clave": "urbano_con_edificaciones_historico",
-        "descripcion": "Inmuebles urbanos y suburbanos con edificaciones, con anterioridad al año 2002 y hasta 1993 inclusive",
-        "tasa_millar": 0.008,
-        "periodicidad": "anual",
-        "cuota_fija_adicional": null
-      },
-      {
-        "grupo": "urbano",
-        "clave": "urbano_sin_edificaciones_historico",
-        "descripcion": "Inmuebles urbanos y suburbanos sin edificaciones, con anterioridad al año 2002 y hasta 1993 inclusive",
-        "tasa_millar": 0.015,
-        "periodicidad": "anual",
-        "cuota_fija_adicional": null
-      },
-      {
-        "grupo": "rustico",
-        "clave": "rustico_historico",
-        "descripcion": "Inmuebles rústicos, con anterioridad al año 2002 y hasta 1993 inclusive",
-        "tasa_millar": 0.006,
-        "periodicidad": "anual",
-        "cuota_fija_adicional": null
-      },
-      {
-        "grupo": "urbano",
-        "clave": "urbano_con_edificaciones_muy_antiguo",
-        "descripcion": "Inmuebles urbanos y suburbanos con edificaciones, con anterioridad a 1993",
-        "tasa_millar": 0.013,
-        "periodicidad": "anual",
-        "cuota_fija_adicional": null
-      },
-      {
-        "grupo": "urbano",
-        "clave": "urbano_sin_edificaciones_muy_antiguo",
-        "descripcion": "Inmuebles urbanos y suburbanos sin edificaciones, con anterioridad a 1993",
-        "tasa_millar": 0.012,
+        "grupo": "general",
+        "clave": "rustico",
+        "descripcion": "Inmuebles rústicos",
+        "tasa_millar": 0.0018,
         "periodicidad": "anual",
         "cuota_fija_adicional": null
       }
     ],
     "minimo_predial": null,
-    "comentarios": "Art. 4 establece tasas anuales al millar por categoría de inmueble y por antigüedad del valor determinado o modificado. Se transcribe la mecánica principal como tarifa_millar. Art. 5 y 6 contienen valores unitarios y criterios de valuación/catastro, no mecánica tarifaria del impuesto. No se observan cuotas fijas adicionales ni brackets por valor catastral en el artículo 4."
+    "comentarios": "Art. 4 establece tasas anuales al millar por categoría de inmueble y por antigüedad/condición: I) a la entrada en vigor: urbanos y suburbanos con edificaciones 2.4 al millar, sin edificaciones 4.5 al millar, rústicos 1.8 al millar; II) durante 2002 a 2013 inclusive: mismas tasas; III) anteriores a 2002 y hasta 1993 inclusive: 8 al millar, 15 al millar y 6 al millar; IV) anteriores a 1993: 13 al millar y 12 al millar (el texto visible no muestra completo el tercer valor de esa fila). Se toma la mecánica principal como catálogo de tasas al millar por categoría; la Ley además contiene Art. 5 con valores unitarios catastrales y Art. 6 con criterios de valuación, que no forman parte de la tarifa."
   },
   "_meta": {
     "fuente": "txt",
@@ -83,7 +43,7 @@
     "usado_vision": false,
     "tokens": {
       "input": 8517,
-      "output": 669,
+      "output": 397,
       "cached": 5888
     },
     "cvegeo": "11034",

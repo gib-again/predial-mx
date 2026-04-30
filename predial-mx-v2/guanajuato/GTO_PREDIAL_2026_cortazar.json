@@ -1,11 +1,26 @@
 {
   "predial": {
-    "tipo_esquema": "otro_no_clasificado",
-    "categoria": "segmento_vacio",
-    "descripcion_estructural": "El texto proporcionado para la sección de impuesto predial no contiene la mecánica tarifaria; las páginas mostradas están vacías o sólo incluyen encabezados y no aparece tabla, cuota, tasa ni artículo aplicable del predial. No es posible extraer un esquema de cálculo sin inventar información.",
-    "tabla_cruda": [],
+    "tipo_esquema": "tarifa_millar",
+    "tabla": [
+      {
+        "grupo": "urbano",
+        "clave": "inmuebles_urbanos_suburbanos_con_valor_determinado_o_modificado",
+        "descripcion": "Inmuebles urbanos y suburbanos que cuenten con un valor determinado o modificado: a la entrada en vigor de la ley 4.5 al millar; durante los años 2002 a 2025 inclusive 2.4 al millar; con anterioridad al año 2002 y hasta el 1993 inclusive 8 al millar; con anterioridad al año de 1993 13 al millar.",
+        "tasa_millar": 4.5,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "rustico",
+        "clave": "inmuebles_rusticos_con_edificaciones",
+        "descripcion": "Inmuebles rústicos con edificaciones: a la entrada en vigor de la ley 4.5 al millar; durante los años 2002 a 2025 inclusive 2.4 al millar; con anterioridad al año 2002 y hasta el 1993 inclusive 15 al millar.",
+        "tasa_millar": 4.5,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      }
+    ],
     "minimo_predial": null,
-    "comentarios": "Se recibió un segmento sin contenido tarifario útil para predial."
+    "comentarios": "Art. 4 establece tasas al millar para inmuebles urbanos y suburbanos con valor determinado o modificado, y para inmuebles rústicos con edificaciones. El texto OCR presenta una tabla deteriorada; se transcribe la mecánica principal como catálogo de tasas al millar por grupo. Art. 5 contiene valores unitarios de suelo y construcción para avalúo, no mecánica de cálculo del impuesto. La numeración legible en el encabezado de Art. 4 muestra las tasas históricas por periodos; la tasa vigente al inicio del ejercicio 2026 es 4.5 al millar para urbanos/suburbanos y rústicos con edificaciones, conforme al texto visible."
   },
   "_meta": {
     "fuente": "txt",
@@ -13,15 +28,15 @@
   },
   "_meta_v2": {
     "intentos": 1,
-    "requiere_revision": true,
+    "requiere_revision": false,
     "escalado": false,
-    "razon": "clasificado_como_otro_no_clasificado",
-    "usado_reocr": true,
-    "usado_vision": true,
+    "razon": null,
+    "usado_reocr": false,
+    "usado_vision": false,
     "tokens": {
-      "input": 32515,
-      "output": 458,
-      "cached": 17664
+      "input": 7693,
+      "output": 440,
+      "cached": 5888
     },
     "cvegeo": "11011",
     "estado": "guanajuato",

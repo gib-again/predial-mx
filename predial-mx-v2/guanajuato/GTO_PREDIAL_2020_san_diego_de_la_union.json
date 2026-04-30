@@ -4,31 +4,31 @@
     "tabla": [
       {
         "grupo": "urbano",
-        "clave": "urbanos_y_suburbanos_con_edificaciones",
-        "descripcion": "Inmuebles urbanos y suburbanos con edificaciones",
+        "clave": "inmuebles_urbanos_y_suburbanos_con_edificaciones",
+        "descripcion": "Inmuebles Urbanos y Suburbanos con edificaciones. Art. 4.",
         "tasa_millar": 0.0024,
         "periodicidad": "anual",
         "cuota_fija_adicional": null
       },
       {
         "grupo": "urbano",
-        "clave": "urbanos_y_suburbanos_sin_edificaciones",
-        "descripcion": "Inmuebles urbanos y suburbanos sin edificaciones",
+        "clave": "inmuebles_urbanos_y_suburbanos_sin_edificaciones",
+        "descripcion": "Inmuebles Urbanos y Suburbanos sin edificaciones. Art. 4.",
         "tasa_millar": 0.0045,
         "periodicidad": "anual",
         "cuota_fija_adicional": null
       },
       {
         "grupo": "rustico",
-        "clave": "rusticos",
-        "descripcion": "Inmuebles rústicos",
+        "clave": "inmuebles_rusticos",
+        "descripcion": "Inmuebles Rústicos. Art. 4.",
         "tasa_millar": 0.0018,
         "periodicidad": "anual",
         "cuota_fija_adicional": null
       }
     ],
     "minimo_predial": null,
-    "comentarios": "Art. 4: tasas anuales al millar por tipo de inmueble. La disposición contiene una serie histórica de tasas (fracciones I a IV) según el año de aplicación; para el ejercicio 2020 se toma la tarifa vigente del propio ejercicio indicada en el artículo. Los artículos 5 y 6 contienen valores unitarios y criterios de valuación catastral, no la mecánica de cálculo del predial."
+    "comentarios": "Artículo 4 establece tasas al millar anuales por categoría de predio. Se transcribe la mecánica principal sólo con las tasas del ejercicio 2020: urbanos/suburbanos con edificaciones 2.4 al millar, urbanos/suburbanos sin edificaciones 4.5 al millar, y rústicos 1.8 al millar. El texto muestra también tasas históricas para años anteriores, que se ignoran por corresponder a otros ejercicios. Artículos 5 y 6 contienen valores unitarios y criterios de valuación catastral, no la mecánica tarifaria del impuesto."
   },
   "_meta": {
     "fuente": "txt",
@@ -43,7 +43,7 @@
     "usado_vision": false,
     "tokens": {
       "input": 8645,
-      "output": 288,
+      "output": 359,
       "cached": 5888
     },
     "cvegeo": "11029",

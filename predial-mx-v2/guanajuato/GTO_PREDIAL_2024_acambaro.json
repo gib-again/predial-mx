@@ -1,11 +1,38 @@
 {
   "predial": {
-    "tipo_esquema": "otro_no_clasificado",
-    "categoria": "segmento_vacio",
-    "descripcion_estructural": "El texto proporcionado no contiene la sección tarifaria del impuesto predial ni tablas de cálculo; sólo aparecen páginas del índice y páginas en blanco/encabezados sin mecánica extraíble. No hay rangos, tasas, cuotas ni artículo tarifario visible para transcribir la mecánica.",
-    "tabla_cruda": [],
-    "minimo_predial": null,
-    "comentarios": "Se revisó el bloque de páginas 3-20 indicado para predial, pero el contenido visible no incluye la disposición específica del impuesto predial."
+    "tipo_esquema": "tarifa_millar",
+    "tabla": [
+      {
+        "grupo": "urbano",
+        "clave": "inmuebles_urbanos_y_suburbanos_con_edificaciones",
+        "descripcion": "Inmuebles urbanos y suburbanos con edificaciones",
+        "tasa_millar": 0.024,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "urbano",
+        "clave": "inmuebles_urbanos_y_suburbanos_sin_edificaciones",
+        "descripcion": "Inmuebles urbanos y suburbanos sin edificaciones",
+        "tasa_millar": 0.0045,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "rustico",
+        "clave": "inmuebles_rusticos",
+        "descripcion": "Inmuebles rústicos",
+        "tasa_millar": 0.0018,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      }
+    ],
+    "minimo_predial": {
+      "monto": 80.0,
+      "periodicidad": "anual",
+      "unidad": "pesos"
+    },
+    "comentarios": "Se transcribe la mecánica tarifaria principal como catálogo de tasas al millar por categoría. En el texto aparecen además otras tablas/valores para tipos y calidades de construcción, predios rústicos, archerías, fraccionamientos y otros conceptos; no se integran en la tabla principal porque corresponden a segmentos distintos del documento o a tarifas especiales/paralelas no claramente estructuradas como la mecánica principal del predial. Se observa un mínimo predial de $80.00 anual."
   },
   "_meta": {
     "fuente": "txt",
@@ -13,15 +40,15 @@
   },
   "_meta_v2": {
     "intentos": 1,
-    "requiere_revision": true,
+    "requiere_revision": false,
     "escalado": false,
-    "razon": "clasificado_como_otro_no_clasificado",
+    "razon": null,
     "usado_reocr": false,
-    "usado_vision": true,
+    "usado_vision": false,
     "tokens": {
-      "input": 24476,
-      "output": 312,
-      "cached": 11776
+      "input": 15463,
+      "output": 333,
+      "cached": 5888
     },
     "cvegeo": "11002",
     "estado": "guanajuato",

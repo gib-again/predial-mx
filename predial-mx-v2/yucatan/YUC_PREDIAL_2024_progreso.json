@@ -74,7 +74,7 @@
       }
     ],
     "minimo_predial": null,
-    "comentarios": "Artículo 19: impuesto predial calculado con base en el valor catastral, con tarifa progresiva por rangos. Artículo 21 establece una tarifa paralela para predios que tributan sobre rentas o frutos civiles: 5% mensual sobre la renta/frutos civiles para casa habitación y 5% para actividades comerciales e industriales; se documenta como tarifa secundaria porque no forma parte de la mecánica principal por valor catastral."
+    "comentarios": "Art. 19: tarifa progresiva sobre valor catastral con cuota fija y tasa marginal por excedente. Art. 21 establece una tarifa paralela secundaria para rentas o frutos civiles (5% mensual para casa habitación y 5% mensual para actividades comerciales e industriales), documentada sólo en comentarios por no ser la mecánica principal del predial catastral. Las tablas de valores unitarios de terreno y construcción del Art. 20 no se extraen porque son valores catastrales, no tarifa."
   },
   "_meta": {
     "fuente": "txt",
@@ -89,7 +89,7 @@
     "usado_vision": false,
     "tokens": {
       "input": 16995,
-      "output": 549,
+      "output": 563,
       "cached": 5888
     },
     "cvegeo": "31059",

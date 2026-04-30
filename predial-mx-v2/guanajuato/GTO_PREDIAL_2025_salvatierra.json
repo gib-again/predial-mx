@@ -11,35 +11,35 @@
       },
       {
         "n_rango": 2,
-        "inferior": 400000.0,
+        "inferior": 400000.01,
         "superior": 800000.0,
         "cuota_fija": 960.0,
         "tasa_marginal": 0.003
       },
       {
         "n_rango": 3,
-        "inferior": 800000.0,
+        "inferior": 800000.01,
         "superior": 1200000.0,
         "cuota_fija": 2160.0,
         "tasa_marginal": 0.0036
       },
       {
         "n_rango": 4,
-        "inferior": 1200000.0,
+        "inferior": 1200000.01,
         "superior": 1800000.0,
         "cuota_fija": 3600.0,
         "tasa_marginal": 0.0042
       },
       {
         "n_rango": 5,
-        "inferior": 1800000.0,
+        "inferior": 1800000.01,
         "superior": null,
         "cuota_fija": 6120.0,
         "tasa_marginal": 0.0048
       }
     ],
     "minimo_predial": null,
-    "comentarios": "Art. 4, fracción I: inmuebles urbanos y suburbanos con edificación, con valor determinado o modificado en el ejercicio fiscal vigente y hasta 2023 inclusive. La ley indica que al valor fiscal se le disminuye el límite inferior, al excedente se le aplica la tasa marginal y al resultado se suma la cuota fija correspondiente. La fracción II contiene una tarifa paralela en tasas al millar para inmuebles urbanos, suburbanos y rústicos distintos a los de la fracción I; no se integra en la tabla principal por ser una mecánica separada: 0.0000 al millar (sin edificaciones y rústicos, del inicio de vigencia a 2023 inclusive), 4.7000 al millar (urbanos/suburbanos con edificaciones, mismo periodo), 2.0000 al millar (urbanos/suburbanos sin edificaciones y rústicos, de la entrada en vigor a 2023 inclusive) y 8.0000/15.0000/6.0000/12.0000 al millar según los periodos posteriores indicados en el texto. Si el resultado es inferior a la cuota mínima del artículo 40, se paga dicha cuota mínima."
+    "comentarios": "Art. 4, fracción I: inmuebles urbanos y suburbanos con edificación con valor determinado o modificado en el ejercicio fiscal vigente y hasta 2023 inclusive. La tabla es de brackets por valor fiscal con cuota fija + tasa marginal sobre el excedente."
   },
   "_meta": {
     "fuente": "pdf_reocr",
@@ -54,7 +54,7 @@
     "usado_vision": false,
     "tokens": {
       "input": 17454,
-      "output": 636,
+      "output": 438,
       "cached": 11776
     },
     "cvegeo": "11028",

@@ -1,17 +1,26 @@
 {
   "predial": {
-    "tipo_esquema": "tasa_unica",
+    "tipo_esquema": "tarifa_millar",
     "tabla": [
       {
+        "grupo": "general",
+        "clave": "habitacional",
         "descripcion": "Habitacional",
-        "tasa": 2.0,
-        "base_calculo": "valor_catastral",
-        "unidad": "porcentaje",
+        "tasa_millar": 0.02,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "general",
+        "clave": "comercial",
+        "descripcion": "Comercial",
+        "tasa_millar": 0.03,
+        "periodicidad": "anual",
         "cuota_fija_adicional": null
       }
     ],
     "minimo_predial": null,
-    "comentarios": "Se toma como mecánica principal la tarifa expresa del Artículo 15: 'Habitacional; 2 % sobre el monto de la base catastral'. El mismo artículo también establece una tarifa paralela para 'Comercial; 3 % sobre el monto de la base catastral', pero no se mezcla en la tabla principal porque son tarifas separadas por tipo de predio. El texto previo de los artículos 13 y subsecuentes contiene valores unitarios de terreno y construcción y reglas de valuación catastral, no una tabla tarifaria estructurada del impuesto predial extraíble en brackets. Además, se documenta que los predios destinados a producción agropecuaria pagan 10 al millar anual sobre el valor registrado o catastral, como tarifa paralela no incluida en la tabla principal."
+    "comentarios": "Se toma como mecánica principal la tarifa expresa del Artículo 15: I.- Habitacional, 2 % sobre el monto de la base catastral; II.- Comercial, 3 % sobre el monto de la base catastral. El texto de los Artículos 13 y subsecuentes reproduce valores unitarios de terreno y construcciones y fórmulas para determinar el valor catastral, pero no aporta una tabla tarifaria de predial estructurada con límites inferior/superior, cuota fija y factor aplicable extraíbles. Tarifa paralela no incluida en la tabla principal: predios destinados a la producción agropecuaria pagan 10 al millar anual sobre el valor registrado o catastral, con el tope señalado por la legislación agraria federal para terrenos ejidales."
   },
   "_meta": {
     "fuente": "txt",
@@ -26,7 +35,7 @@
     "usado_vision": false,
     "tokens": {
       "input": 24345,
-      "output": 801,
+      "output": 843,
       "cached": 17664
     },
     "cvegeo": "31013",

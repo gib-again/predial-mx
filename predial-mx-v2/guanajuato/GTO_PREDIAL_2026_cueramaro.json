@@ -3,32 +3,32 @@
     "tipo_esquema": "tarifa_millar",
     "tabla": [
       {
-        "grupo": "general",
-        "clave": "urbano_suburbano_con_edificaciones",
-        "descripcion": "Inmuebles urbanos y suburbanos con edificaciones",
+        "grupo": "urbano",
+        "clave": "con_edificaciones",
+        "descripcion": "Inmuebles urbanos y suburbanos con edificaciones; inmuebles que cuenten con un valor determinado o modificado durante el año de la presente ley",
         "tasa_millar": 0.0024,
         "periodicidad": "anual",
         "cuota_fija_adicional": null
       },
       {
-        "grupo": "general",
-        "clave": "urbano_suburbano_sin_edificaciones",
-        "descripcion": "Inmuebles urbanos y suburbanos sin edificaciones",
+        "grupo": "urbano",
+        "clave": "sin_edificaciones",
+        "descripcion": "Inmuebles urbanos y suburbanos sin edificaciones; inmuebles que cuenten con un valor determinado o modificado durante el año de la presente ley",
         "tasa_millar": 0.0045,
         "periodicidad": "anual",
         "cuota_fija_adicional": null
       },
       {
         "grupo": "rustico",
-        "clave": "rustico",
-        "descripcion": "Inmuebles rústicos",
+        "clave": "general",
+        "descripcion": "Inmuebles rústicos; inmuebles que cuenten con un valor determinado o modificado durante el año de la presente ley",
         "tasa_millar": 0.0018,
         "periodicidad": "anual",
         "cuota_fija_adicional": null
       }
     ],
     "minimo_predial": null,
-    "comentarios": "Artículo 4: la tabla de tasas distingue inmuebles urbanos y suburbanos con edificaciones, sin edificaciones, e inmuebles rústicos. Se transcribe la mecánica principal anual conforme a las tasas al millar. El artículo también incluye tasas diferenciadas por antigüedad (años 2002 a 2025, anteriores a 2002 y hasta 1993, y anteriores a 1993), pero el texto proporcionado no permite extraer con claridad una tabla estructurada completa para esa serie; se deja fuera de la tabla principal para no inventar valores."
+    "comentarios": "Art. 4 establece tasas anuales al millar por categoría de inmueble, sin rangos de valor catastral. Se transcribe la mecánica principal de la tabla: para inmuebles urbanos y suburbanos con edificaciones 2.4 al millar; sin edificaciones 4.5 al millar; inmuebles rústicos 1.8 al millar. El texto también contiene tasas diferenciadas por antigüedad de construcción (años 2002-2025, anterior a 2002 y hasta 1993, con anterioridad a 1993), pero la estructura mostrada en el extracto es heterogénea y se conserva sólo la clasificación principal visible."
   },
   "_meta": {
     "fuente": "pdf_reocr",
@@ -43,7 +43,7 @@
     "usado_vision": false,
     "tokens": {
       "input": 16729,
-      "output": 444,
+      "output": 527,
       "cached": 11776
     },
     "cvegeo": "11012",

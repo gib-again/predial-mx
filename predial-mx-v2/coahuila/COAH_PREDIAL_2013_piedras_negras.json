@@ -132,7 +132,7 @@
       "periodicidad": "bimestral",
       "unidad": "pesos"
     },
-    "comentarios": "Art. 3: Predios urbanos se determinan por rangos de valor catastral con cuotas fijas en pesos en los tres primeros brackets y una tasa al millar en el último bracket abierto; además existen categorías heterogéneas (edificados habitacional/no habitacional y no edificados con/sin barda), por lo que se codifica como mixto. Art. 4: predios rústicos cubren el impuesto predial al cuatro al millar anual sobre el valor catastral, como tarifa paralela secundaria no incluida en la tabla principal."
+    "comentarios": "Art. 3, fracción I: predios urbanos con rangos de valor catastral y columnas heterogéneas por uso/condición (edificados habitacional y no habitacional; no edificados con/sin barda). Los primeros tres rangos cobran cuotas fijas en pesos y el último rango abierto cobra tasas al millar, por lo que la estructura es mixta. Art. 4: predios rústicos cubren 4 al millar anual sobre el valor catastral; se documenta como tarifa paralela secundaria fuera de la tabla principal."
   },
   "_meta": {
     "fuente": "txt",
@@ -147,7 +147,7 @@
     "usado_vision": false,
     "tokens": {
       "input": 7284,
-      "output": 702,
+      "output": 698,
       "cached": 5888
     },
     "cvegeo": "05025",

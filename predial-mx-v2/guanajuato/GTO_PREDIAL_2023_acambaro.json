@@ -3,16 +3,16 @@
     "tipo_esquema": "tarifa_millar",
     "tabla": [
       {
-        "grupo": "urbano",
-        "clave": "urbanos_y_suburbanos_con_edificaciones",
+        "grupo": "general",
+        "clave": "inmuebles_urbanos_y_suburbanos_con_edificaciones",
         "descripcion": "Inmuebles urbanos y suburbanos con edificaciones",
         "tasa_millar": 0.0024,
         "periodicidad": "anual",
         "cuota_fija_adicional": null
       },
       {
-        "grupo": "urbano",
-        "clave": "urbanos_y_suburbanos_sin_edificaciones",
+        "grupo": "general",
+        "clave": "inmuebles_urbanos_y_suburbanos_sin_edificaciones",
         "descripcion": "Inmuebles urbanos y suburbanos sin edificaciones",
         "tasa_millar": 0.0045,
         "periodicidad": "anual",
@@ -20,23 +20,15 @@
       },
       {
         "grupo": "rustico",
-        "clave": "rusticos_con_edificaciones",
-        "descripcion": "Inmuebles rústicos con edificaciones",
+        "clave": "inmuebles_rusticos",
+        "descripcion": "Inmuebles rústicos",
         "tasa_millar": 0.0018,
-        "periodicidad": "anual",
-        "cuota_fija_adicional": null
-      },
-      {
-        "grupo": "rustico",
-        "clave": "rusticos_sin_edificaciones",
-        "descripcion": "Inmuebles rústicos sin edificaciones",
-        "tasa_millar": 0.0012,
         "periodicidad": "anual",
         "cuota_fija_adicional": null
       }
     ],
     "minimo_predial": null,
-    "comentarios": "Art. 4 establece tasas anuales al millar por categoría de inmueble, sin rangos de valor catastral. Se transcribe sólo la mecánica principal. Art. 5 contiene valores unitarios catastrales para avalúo, no forman parte de la tarifa del impuesto. La ley muestra también valores para inmuebles rústicos y reglas de valuación, pero no una tarifa paralela adicional distinta a las tasas aquí capturadas."
+    "comentarios": "Art. 4: el impuesto predial se causa y liquida anualmente conforme a tasas al millar sobre el valor catastral. Se transcribe la tabla principal con tres grupos categóricos: inmuebles urbanos y suburbanos con edificaciones (2.4 al millar), inmuebles urbanos y suburbanos sin edificaciones (4.5 al millar) e inmuebles rústicos (1.8 al millar). El texto también contiene tasas históricas para años anteriores, pero la mecánica aplicable al ejercicio 2023 es la de entrada en vigor. Art. 5 y 6 contienen valores unitarios de suelo y construcción y criterios de avalúo, no la tarifa del impuesto."
   },
   "_meta": {
     "fuente": "txt",
@@ -51,7 +43,7 @@
     "usado_vision": false,
     "tokens": {
       "input": 8751,
-      "output": 353,
+      "output": 358,
       "cached": 5888
     },
     "cvegeo": "11002",

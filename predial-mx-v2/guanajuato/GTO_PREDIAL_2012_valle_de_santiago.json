@@ -4,31 +4,31 @@
     "tabla": [
       {
         "grupo": "urbano",
-        "clave": "urbanos_con_edificaciones",
-        "descripcion": "Inmuebles urbanos y suburbanos con edificaciones; valor determinado o modificado. Art. 4, fracciones.",
+        "clave": "con_edificaciones",
+        "descripcion": "Inmuebles urbanos y suburbanos con edificaciones; a la entrada en vigor de la presente Ley.",
         "tasa_millar": 0.0024,
         "periodicidad": "anual",
         "cuota_fija_adicional": null
       },
       {
         "grupo": "urbano",
-        "clave": "urbanos_sin_edificaciones",
-        "descripcion": "Inmuebles urbanos y suburbanos sin edificaciones; valor determinado o modificado. Art. 4, fracciones.",
+        "clave": "sin_edificaciones",
+        "descripcion": "Inmuebles urbanos y suburbanos sin edificaciones; a la entrada en vigor de la presente Ley.",
         "tasa_millar": 0.0045,
         "periodicidad": "anual",
         "cuota_fija_adicional": null
       },
       {
         "grupo": "rustico",
-        "clave": "rusticos",
-        "descripcion": "Inmuebles rústicos; valor determinado o modificado. Art. 4, fracciones.",
+        "clave": "rustico",
+        "descripcion": "Inmuebles rústicos; a la entrada en vigor de la presente Ley.",
         "tasa_millar": 0.0018,
         "periodicidad": "anual",
         "cuota_fija_adicional": null
       }
     ],
     "minimo_predial": null,
-    "comentarios": "Art. 4 establece tasas anuales al millar por tipo de inmueble: urbanos y suburbanos con edificaciones 2.4 al millar, urbanos y suburbanos sin edificaciones 4.5 al millar, y rústicos 1.8 al millar; para inmuebles anteriores a 2002 y hasta 1993 inclusive, urbanos con edificaciones 8 al millar, urbanos sin edificaciones 15 al millar y rústicos 6 al millar. Se documenta sólo la mecánica tarifaria; los valores unitarios del Art. 5 son tablas catastrales, no tarifa. No se integran descuentos o bonificaciones."
+    "comentarios": "Art. 4 establece tasas anuales al millar diferenciadas por tipo de inmueble y condición de edificación. Se transcribe sólo la mecánica principal. La tabla de valores unitarios del Art. 5 corresponde a valores catastrales base y no se incluye aquí. No se detectan tarifas paralelas adicionales en el segmento proporcionado."
   },
   "_meta": {
     "fuente": "txt",
@@ -43,7 +43,7 @@
     "usado_vision": false,
     "tokens": {
       "input": 8592,
-      "output": 376,
+      "output": 290,
       "cached": 5888
     },
     "cvegeo": "11042",

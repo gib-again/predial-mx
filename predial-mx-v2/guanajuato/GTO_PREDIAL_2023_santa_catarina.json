@@ -4,23 +4,23 @@
     "tabla": [
       {
         "grupo": "urbano",
-        "clave": "urbanos_con_edificaciones",
+        "clave": "urbano_con_edificaciones",
         "descripcion": "Inmuebles urbanos y suburbanos con edificaciones",
-        "tasa_millar": 0.0024,
-        "periodicidad": "anual",
-        "cuota_fija_adicional": null
-      },
-      {
-        "grupo": "urbano",
-        "clave": "urbanos_sin_edificaciones",
-        "descripcion": "Inmuebles urbanos y suburbanos sin edificaciones",
         "tasa_millar": 0.0045,
         "periodicidad": "anual",
         "cuota_fija_adicional": null
       },
       {
+        "grupo": "urbano",
+        "clave": "urbano_sin_edificaciones",
+        "descripcion": "Inmuebles urbanos y suburbanos sin edificaciones",
+        "tasa_millar": 0.0018,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
         "grupo": "rustico",
-        "clave": "rusticos",
+        "clave": "rustico",
         "descripcion": "Inmuebles rústicos",
         "tasa_millar": 0.0018,
         "periodicidad": "anual",
@@ -28,7 +28,7 @@
       }
     ],
     "minimo_predial": null,
-    "comentarios": "Art. 4: tasas anuales al millar para el impuesto predial. Se observa una tarifa paralela por antigüedad del inmueble en el texto OCR ('1993', 'a la entrada en vigor de la presente ley', 'durante los años 2002 y hasta el 2022, inclusive', 'con anterioridad al año 2002 y hasta 1993, inclusive', 'con anterioridad al año de ...') con tasas 2.4/4.5/1.8; 2.4/4.5/1.8; 8/15/6; 13/13/12 al millar, pero el tramo está fragmentado y el texto no queda estructurable con certeza. Se documentan además en el artículo 5 valores catastrales y tablas de valuación, que no constituyen mecánica de cálculo del predial."
+    "comentarios": "Art. 4 contiene una tabla de tasas anuales al millar por tipo de inmueble y condición. El texto también muestra cuatro supuestos históricos/temporales con tasas distintas según antigüedad del valor determinado o modificado (2.4/4.5/1.8 al millar; 8/15/6 al millar; 13/13/12 al millar), pero la transcripción OCR está fragmentada y no permite reconstruir con seguridad cada renglón completo; por ello se documenta sólo la mecánica claramente legible de la tabla principal. Art. 4 también establece que el impuesto se causa y liquida anualmente."
   },
   "_meta": {
     "fuente": "txt",
@@ -43,7 +43,7 @@
     "usado_vision": false,
     "tokens": {
       "input": 8742,
-      "output": 384,
+      "output": 330,
       "cached": 5888
     },
     "cvegeo": "11034",

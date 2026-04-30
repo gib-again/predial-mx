@@ -1,205 +1,115 @@
 {
   "predial": {
-    "tipo_esquema": "mixto",
+    "tipo_esquema": "progresivo",
     "tabla": [
       {
         "n_rango": 1,
         "inferior": 0.0,
         "superior": 100000.0,
-        "columnas": [
-          {
-            "nombre": "general",
-            "valor": 0.0024,
-            "tipo": "tasa_marginal",
-            "unidad": "porcentaje"
-          }
-        ]
+        "cuota_fija": 0.0,
+        "tasa_marginal": 0.0024
       },
       {
         "n_rango": 2,
-        "inferior": 100000.01,
+        "inferior": 100000.0,
         "superior": 200000.0,
-        "columnas": [
-          {
-            "nombre": "general",
-            "valor": 0.00252,
-            "tipo": "tasa_marginal",
-            "unidad": "porcentaje"
-          }
-        ]
+        "cuota_fija": 240.0,
+        "tasa_marginal": 0.00252
       },
       {
         "n_rango": 3,
-        "inferior": 200000.01,
+        "inferior": 200000.0,
         "superior": 300000.0,
-        "columnas": [
-          {
-            "nombre": "general",
-            "valor": 0.002646,
-            "tipo": "tasa_marginal",
-            "unidad": "porcentaje"
-          }
-        ]
+        "cuota_fija": 492.0,
+        "tasa_marginal": 0.002646
       },
       {
         "n_rango": 4,
-        "inferior": 300000.01,
+        "inferior": 300000.0,
         "superior": 400000.0,
-        "columnas": [
-          {
-            "nombre": "general",
-            "valor": 0.002778,
-            "tipo": "tasa_marginal",
-            "unidad": "porcentaje"
-          }
-        ]
+        "cuota_fija": 756.6,
+        "tasa_marginal": 0.002778
       },
       {
         "n_rango": 5,
-        "inferior": 400000.01,
+        "inferior": 400000.0,
         "superior": 500000.0,
-        "columnas": [
-          {
-            "nombre": "general",
-            "valor": 0.002917,
-            "tipo": "tasa_marginal",
-            "unidad": "porcentaje"
-          }
-        ]
+        "cuota_fija": 1034.43,
+        "tasa_marginal": 0.002917
       },
       {
         "n_rango": 6,
-        "inferior": 500000.01,
+        "inferior": 500000.0,
         "superior": 600000.0,
-        "columnas": [
-          {
-            "nombre": "general",
-            "valor": 0.003063,
-            "tipo": "tasa_marginal",
-            "unidad": "porcentaje"
-          }
-        ]
+        "cuota_fija": 1326.15,
+        "tasa_marginal": 0.003063
       },
       {
         "n_rango": 7,
-        "inferior": 600000.01,
+        "inferior": 600000.0,
         "superior": 700000.0,
-        "columnas": [
-          {
-            "nombre": "general",
-            "valor": 0.003216,
-            "tipo": "tasa_marginal",
-            "unidad": "porcentaje"
-          }
-        ]
+        "cuota_fija": 1632.46,
+        "tasa_marginal": 0.003216
       },
       {
         "n_rango": 8,
-        "inferior": 700000.01,
+        "inferior": 700000.0,
         "superior": 800000.0,
-        "columnas": [
-          {
-            "nombre": "general",
-            "valor": 0.003377,
-            "tipo": "tasa_marginal",
-            "unidad": "porcentaje"
-          }
-        ]
+        "cuota_fija": 1954.08,
+        "tasa_marginal": 0.003377
       },
       {
         "n_rango": 9,
-        "inferior": 800000.01,
+        "inferior": 800000.0,
         "superior": 900000.0,
-        "columnas": [
-          {
-            "nombre": "general",
-            "valor": 0.003546,
-            "tipo": "tasa_marginal",
-            "unidad": "porcentaje"
-          }
-        ]
+        "cuota_fija": 2291.79,
+        "tasa_marginal": 0.003546
       },
       {
         "n_rango": 10,
-        "inferior": 900000.01,
+        "inferior": 900000.0,
         "superior": 1000000.0,
-        "columnas": [
-          {
-            "nombre": "general",
-            "valor": 0.003723,
-            "tipo": "tasa_marginal",
-            "unidad": "porcentaje"
-          }
-        ]
+        "cuota_fija": 2046.38,
+        "tasa_marginal": 0.003723
       },
       {
         "n_rango": 11,
-        "inferior": 1000000.01,
+        "inferior": 1000000.0,
         "superior": 1100000.0,
-        "columnas": [
-          {
-            "nombre": "general",
-            "valor": 0.003909,
-            "tipo": "tasa_marginal",
-            "unidad": "porcentaje"
-          }
-        ]
+        "cuota_fija": 3018.69,
+        "tasa_marginal": 0.003909
       },
       {
         "n_rango": 12,
-        "inferior": 1100000.01,
+        "inferior": 1100000.0,
         "superior": 1200000.0,
-        "columnas": [
-          {
-            "nombre": "general",
-            "valor": 0.004105,
-            "tipo": "tasa_marginal",
-            "unidad": "porcentaje"
-          }
-        ]
+        "cuota_fija": 3409.63,
+        "tasa_marginal": 0.004105
       },
       {
         "n_rango": 13,
-        "inferior": 1200000.01,
+        "inferior": 1200000.0,
         "superior": 1300000.0,
-        "columnas": [
-          {
-            "nombre": "general",
-            "valor": 0.00431,
-            "tipo": "tasa_marginal",
-            "unidad": "porcentaje"
-          }
-        ]
+        "cuota_fija": 3820.11,
+        "tasa_marginal": 0.00431
       },
       {
         "n_rango": 14,
-        "inferior": 1300000.01,
+        "inferior": 1300000.0,
         "superior": 1400000.0,
-        "columnas": [
-          {
-            "nombre": "general",
-            "valor": 0.004526,
-            "tipo": "tasa_marginal",
-            "unidad": "porcentaje"
-          }
-        ]
+        "cuota_fija": 4251.12,
+        "tasa_marginal": 0.004526
       },
       {
         "n_rango": 15,
-        "inferior": 1400000.01,
+        "inferior": 1400000.0,
         "superior": null,
-        "columnas": [
-          {
-            "nombre": "general",
-            "valor": 0.004752,
-            "tipo": "tasa_marginal",
-            "unidad": "porcentaje"
-          }
-        ]
+        "cuota_fija": 4703.67,
+        "tasa_marginal": 0.004752
       }
     ],
     "minimo_predial": null,
-    "comentarios": "Art. 4, fracción I, inciso a): inmuebles urbanos y suburbanos con edificaciones. Se transcribe como mixto porque la tabla de la ley combina rangos de valor fiscal con cuota fija en pesos y una tasa marginal; la columna visible en el texto usa porcentaje/tasa marginal sobre el excedente y cuotas base por rango. Art. 4, fracción I, inciso b): sin edificaciones; 4.5 al millar para inmuebles urbanos y suburbanos con valor determinado o modificado a la entrada en vigor de la ley y durante 2002-2021, 15 al millar para anteriores a 2002 hasta 1993, y 13 al millar para anteriores a 1993. Art. 4, fracción II: inmuebles rústicos; 1.8 al millar a la entrada en vigor y durante 2002-2021, 6 al millar para anteriores a 2002 hasta 1993, y 12 al millar para anteriores a 1993. Estas tarifas paralelas no se incluyen en la tabla principal por ser separadas de la mecánica predominante por rangos."
+    "comentarios": "Art. 4, fracción I, inciso a): inmuebles urbanos y suburbanos con edificaciones. Tarifa paralela no estructurada en la tabla principal: Art. 4, fracción I, inciso b) sin edificaciones paga 4.5 al millar (entrada en vigor de la ley y 2002-2021), 15 al millar (con anterioridad a 2002 y hasta 1993), y 13 al millar (con anterioridad a 1993); Art. 4, fracción II: inmuebles rústicos pagan 1.8 al millar (entrada en vigor y 2002-2021), 6 al millar (anterioridad a 2002 y hasta 1993) y 12 al millar (anterioridad a 1993)."
   },
   "_meta": {
     "fuente": "txt",
@@ -214,7 +124,7 @@
     "usado_vision": false,
     "tokens": {
       "input": 9318,
-      "output": 1040,
+      "output": 801,
       "cached": 5888
     },
     "cvegeo": "11001",

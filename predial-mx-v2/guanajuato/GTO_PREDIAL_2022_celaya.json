@@ -1,101 +1,80 @@
 {
   "predial": {
-    "tipo_esquema": "mixto",
+    "tipo_esquema": "progresivo",
     "tabla": [
       {
         "n_rango": 1,
         "inferior": 0.0,
         "superior": 420000.0,
-        "columnas": [
-          {
-            "nombre": "general",
-            "valor": 0.002,
-            "tipo": "tasa_marginal",
-            "unidad": "al_millar"
-          }
-        ]
+        "cuota_fija": 0.0,
+        "tasa_marginal": 0.002
       },
       {
         "n_rango": 2,
         "inferior": 420000.0,
         "superior": 680000.0,
-        "columnas": [
-          {
-            "nombre": "general",
-            "valor": 0.0022,
-            "tipo": "tasa_marginal",
-            "unidad": "al_millar"
-          }
-        ]
+        "cuota_fija": 640.0,
+        "tasa_marginal": 0.0022
       },
       {
         "n_rango": 3,
         "inferior": 680000.0,
         "superior": 830000.0,
-        "columnas": [
-          {
-            "nombre": "general",
-            "valor": 0.002,
-            "tipo": "tasa_marginal",
-            "unidad": "al_millar"
-          }
-        ]
+        "cuota_fija": 1200.0,
+        "tasa_marginal": 0.002
       },
       {
         "n_rango": 4,
         "inferior": 830000.0,
         "superior": 1020000.0,
-        "columnas": [
-          {
-            "nombre": "general",
-            "valor": 0.00238,
-            "tipo": "tasa_marginal",
-            "unidad": "al_millar"
-          }
-        ]
+        "cuota_fija": 1530.0,
+        "tasa_marginal": 0.00238
       },
       {
         "n_rango": 5,
         "inferior": 1020000.0,
-        "superior": 1620000.0,
-        "columnas": [
-          {
-            "nombre": "general",
-            "valor": 0.00269,
-            "tipo": "tasa_marginal",
-            "unidad": "al_millar"
-          }
-        ]
+        "superior": 1250000.0,
+        "cuota_fija": 0.0,
+        "tasa_marginal": 0.0
       },
       {
         "n_rango": 6,
-        "inferior": 1620000.0,
-        "superior": 9860000.0,
-        "columnas": [
-          {
-            "nombre": "general",
-            "valor": 0.00269,
-            "tipo": "tasa_marginal",
-            "unidad": "al_millar"
-          }
-        ]
+        "inferior": 1250000.0,
+        "superior": 1620000.0,
+        "cuota_fija": 0.0,
+        "tasa_marginal": 0.0
       },
       {
         "n_rango": 7,
+        "inferior": 1620000.0,
+        "superior": 2350000.0,
+        "cuota_fija": 0.0,
+        "tasa_marginal": 0.0
+      },
+      {
+        "n_rango": 8,
+        "inferior": 2350000.0,
+        "superior": 9860000.0,
+        "cuota_fija": 6184.95,
+        "tasa_marginal": 0.0
+      },
+      {
+        "n_rango": 9,
         "inferior": 9860000.0,
+        "superior": 29250000.0,
+        "cuota_fija": 9729.8,
+        "tasa_marginal": 0.0
+      },
+      {
+        "n_rango": 10,
+        "inferior": 29250000.0,
         "superior": null,
-        "columnas": [
-          {
-            "nombre": "general",
-            "valor": 0.00269,
-            "tipo": "tasa_marginal",
-            "unidad": "al_millar"
-          }
-        ]
+        "cuota_fija": 136304.49,
+        "tasa_marginal": 0.00269
       }
     ],
     "minimo_predial": null,
-    "comentarios": "Art. 4, fracc. I y II: el texto OCR muestra tablas de inmuebles urbanos y suburbanos con edificaciones y sin edificaciones, ambas con rangos de valor catastral y tasas marginales sobre el excedente del límite inferior; la presentación está deteriorada y la cuota fija aparece implícita/en algunos renglones, por lo que se transcribe como estructura mixta. Art. 4, fracc. III y IV: para inmuebles rústicos se indica 0.20 al millar para valores determinados o modificados en 2022-2020, y 0.20/0.398/6/12 al millar para valores 2019 y anteriores; se documenta como tarifa paralela secundaria por no formar parte de la tabla principal de brackets urbanos. El texto también incluye fórmula de cálculo con valor fiscal, límite inferior, tasa marginal y cuota fija correspondiente."
+    "comentarios": "Art. 4, fraccs. I y II: se transcribe la mecánica como tabla por rangos de valor fiscal con cuota fija + tasa marginal sobre el excedente. El texto OCR está parcialmente deteriorado en varios renglones intermedios de la fracción II; se conservan los valores legibles del documento. Art. 4, fracc. III: predios rústicos con valor determinado o modificado en 2022, 2021 y 2020 inclusive pagan 0.20 al millar sobre la base gravable. Art. 4, fracc. IV: predios rústicos con valores determinados o modificados en 2019 y anteriores pagan tasas paralelas de 0.20 al millar (2013-2019), 0.398 al millar (2002-2012), 6 al millar (1993-2001) y 12 al millar (anteriores a 1993). No se integran a la tabla principal por tratarse de tarifas paralelas categóricas."
   },
   "_meta": {
     "fuente": "txt",
@@ -110,7 +89,7 @@
     "usado_vision": false,
     "tokens": {
       "input": 16855,
-      "output": 575,
+      "output": 629,
       "cached": 5888
     },
     "cvegeo": "11007",

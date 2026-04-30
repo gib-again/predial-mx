@@ -4,7 +4,7 @@
     "tabla": [
       {
         "grupo": "urbano",
-        "clave": "industrial",
+        "clave": "urbano_industrial",
         "descripcion": "Predios urbanos industriales con o sin edificación",
         "tasa_millar": 0.005,
         "periodicidad": "anual",
@@ -12,7 +12,7 @@
       },
       {
         "grupo": "urbano",
-        "clave": "comercial_con_edificacion",
+        "clave": "urbano_comercial_con_edificacion",
         "descripcion": "Predios urbanos comerciales con edificación",
         "tasa_millar": 0.005,
         "periodicidad": "anual",
@@ -20,7 +20,7 @@
       },
       {
         "grupo": "urbano",
-        "clave": "residencial_interes_social_populares_con_edificacion",
+        "clave": "urbano_residencial_con_edificacion",
         "descripcion": "Predios urbanos residenciales, de interés social y populares con edificación",
         "tasa_millar": 0.005,
         "periodicidad": "anual",
@@ -40,7 +40,7 @@
       "periodicidad": "bimestral",
       "unidad": "pesos"
     },
-    "comentarios": "Art. 2: para predios urbanos comerciales sin edificación y predios urbanos residenciales/de interés social/populares sin edificación, la ley indica 1.33 veces lo fijado para los predios con edificación; no se transcribe como fila separada por depender de la tasa base ya capturada. Art. 2: predios urbanos industriales pagan 5 al millar anual; predios urbanos comerciales con edificación 5 al millar; predios urbanos residenciales, de interés social y populares con edificación hasta 5 al millar; predios rústicos 3 al millar anual. Art. 2: instituciones educativas no públicas pagan 1 al millar anual en el predio donde se localicen, y predios con licencia de fraccionamiento en vías de desarrollo pagan el 20% del impuesto predial correspondiente al valor considerando como predio ya fraccionado y desarrollado; se documentan como incentivos/tarifas especiales no estructuradas en la tabla principal. Art. 3 y 4 contienen incentivos/condonaciones por empleo y zona comercial, ignorados por no formar parte de la mecánica base."
+    "comentarios": "Art. 2: se establecen tasas al millar sobre el valor catastral por categoría de predio. Para predios urbanos comerciales sin edificación y urbanos residenciales/de interés social/populares sin edificación, la ley indica 1.33 veces lo fijado para los predios con edificación; se omite como fila separada porque la mecánica principal ya queda representada por las categorías con edificación y el texto no fija una tasa numérica distinta en el propio renglón. Art. 2 también prevé una tasa de 1 al millar anual para predios de instituciones educativas no públicas, y un pago del 20% del impuesto para predios con licencia de fraccionamiento en vías de desarrollo; se documentan como tarifas secundarias no estructurales: instituciones educativas no públicas pagan 1 al millar anual en el predio donde se localicen; predios con licencia de fraccionamiento autorizada y en vías de desarrollo pagan 20% del impuesto correspondiente al valor considerando como predio ya fraccionado y desarrollado. Incentivos/bonificaciones por pronto pago, pensionados, discapacitados, apoyo a actividades deportivas/sociales y zona comercial del centro histórico no se transcriben por instrucción."
   },
   "_meta": {
     "fuente": "txt",
@@ -55,7 +55,7 @@
     "usado_vision": false,
     "tokens": {
       "input": 7200,
-      "output": 501,
+      "output": 524,
       "cached": 5888
     },
     "cvegeo": "05027",

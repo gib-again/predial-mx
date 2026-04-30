@@ -4,39 +4,31 @@
     "tabla": [
       {
         "grupo": "general",
-        "clave": "general_2014",
-        "descripcion": "Tasa anual para inmuebles urbanos y rústicos, según el texto del artículo 4 y su tabla de tasas.",
-        "tasa_millar": 0.0013,
-        "periodicidad": "anual",
-        "cuota_fija_adicional": null
-      },
-      {
-        "grupo": "general",
-        "clave": "general_2014_2",
-        "descripcion": "Tasa anual para inmuebles urbanos y rústicos, según el texto del artículo 4 y su tabla de tasas.",
-        "tasa_millar": 0.0015,
-        "periodicidad": "anual",
-        "cuota_fija_adicional": null
-      },
-      {
-        "grupo": "general",
-        "clave": "general_2014_3",
-        "descripcion": "Tasa anual para inmuebles urbanos y rústicos, según el texto del artículo 4 y su tabla de tasas.",
+        "clave": "urbano_y_suburbano_con_edificaciones",
+        "descripcion": "Inmuebles urbanos y suburbanos con edificaciones, a la entrada en vigor de la Ley",
         "tasa_millar": 0.0024,
         "periodicidad": "anual",
         "cuota_fija_adicional": null
       },
       {
         "grupo": "general",
-        "clave": "general_2014_4",
-        "descripcion": "Tasa anual para inmuebles urbanos y rústicos, según el texto del artículo 4 y su tabla de tasas.",
+        "clave": "urbano_y_suburbano_sin_edificaciones",
+        "descripcion": "Inmuebles urbanos y suburbanos sin edificaciones, a la entrada en vigor de la Ley",
         "tasa_millar": 0.0045,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "general",
+        "clave": "rustico",
+        "descripcion": "Inmuebles rústicos, a la entrada en vigor de la Ley",
+        "tasa_millar": 0.0013,
         "periodicidad": "anual",
         "cuota_fija_adicional": null
       }
     ],
     "minimo_predial": null,
-    "comentarios": "Art. 4 establece tasas anuales al millar para inmuebles urbanos y rústicos. El texto OCR de la tabla aparece fragmentado y con encabezados desalineados; se transcriben únicamente las tasas visibles: 1.3 al millar, 1.5 al millar, 2.4 al millar y 4.5 al millar. Art. 5 y 6 contienen valores unitarios y criterios de valuación catastral, no la mecánica de cálculo del impuesto, por lo que no se incluyen."
+    "comentarios": "Artículo 4 establece tasas anuales al millar por categoría de inmueble: urbanos y suburbanos con edificaciones 2.4 al millar, sin edificaciones 4.5 al millar, y rústicos 1.3 al millar. Se transcribe sólo la mecánica de cálculo; no se incluyen valores unitarios de los artículos 5 y 6 por ser disposiciones de valuación/catastro, no tarifa del impuesto."
   },
   "_meta": {
     "fuente": "txt",
@@ -51,7 +43,7 @@
     "usado_vision": false,
     "tokens": {
       "input": 8558,
-      "output": 426,
+      "output": 319,
       "cached": 5888
     },
     "cvegeo": "11004",

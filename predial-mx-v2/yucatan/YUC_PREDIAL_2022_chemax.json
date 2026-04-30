@@ -1,75 +1,20 @@
 {
-  "predial": {
-    "tipo_esquema": "progresivo",
-    "tabla": [
-      {
-        "n_rango": 1,
-        "inferior": 0.0,
-        "superior": 5000.0,
-        "cuota_fija": 140.0,
-        "tasa_marginal": 0.001
-      },
-      {
-        "n_rango": 2,
-        "inferior": 5000.0,
-        "superior": 7500.0,
-        "cuota_fija": 160.0,
-        "tasa_marginal": 0.001
-      },
-      {
-        "n_rango": 3,
-        "inferior": 7500.0,
-        "superior": 10500.0,
-        "cuota_fija": 200.0,
-        "tasa_marginal": 0.001
-      },
-      {
-        "n_rango": 4,
-        "inferior": 10500.0,
-        "superior": 12500.0,
-        "cuota_fija": 220.0,
-        "tasa_marginal": 0.001
-      },
-      {
-        "n_rango": 5,
-        "inferior": 12500.0,
-        "superior": 15000.0,
-        "cuota_fija": 250.0,
-        "tasa_marginal": 0.001
-      },
-      {
-        "n_rango": 6,
-        "inferior": 15000.0,
-        "superior": 20000.0,
-        "cuota_fija": 300.0,
-        "tasa_marginal": 0.001
-      },
-      {
-        "n_rango": 7,
-        "inferior": 20000.0,
-        "superior": null,
-        "cuota_fija": 350.0,
-        "tasa_marginal": 0.001
-      }
-    ],
-    "minimo_predial": null,
-    "comentarios": "Art. 13: tarifa principal por valor catastral con cuota fija anual + factor para aplicar al excedente del límite inferior; se normalizó el primer renglón a 0–5000 y el último a 'en adelante'. Art. 13: predios destinados a la producción agropecuaria pagan 10 al millar anual sobre el valor registrado o catastral; se documenta como tarifa paralela y no se incluye en la tabla principal."
-  },
+  "predial": null,
   "_meta": {
     "fuente": "txt",
-    "modelo": "gpt-5.4-mini"
+    "modelo": "gpt-5.4"
   },
   "_meta_v2": {
-    "intentos": 2,
-    "requiere_revision": false,
-    "escalado": false,
-    "razon": null,
+    "intentos": 3,
+    "requiere_revision": true,
+    "escalado": true,
+    "razon": "valido_3x_fallido | e1=  • predial.progresivo: Value error, brackets 5→6: hueco detectado (superior=15000.0, siguiente inferior=15500.01) | e2=  • predial.progresivo: Value error, brackets 5→6: hueco detectado (superior=15000.0, siguiente inferior=15500.01) | full_e3=  • predial.progresivo: Value error, brackets 5→6: hueco detectado (superior=15000.0, siguiente inferior=15500.01)",
     "usado_reocr": false,
     "usado_vision": false,
     "tokens": {
-      "input": 13815,
-      "output": 756,
-      "cached": 11776
+      "input": 21114,
+      "output": 1230,
+      "cached": 17664
     },
     "cvegeo": "31019",
     "estado": "yucatan",

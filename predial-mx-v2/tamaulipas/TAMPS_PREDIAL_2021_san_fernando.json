@@ -11,7 +11,7 @@
         "cuota_fija_adicional": null
       },
       {
-        "grupo": "urbano",
+        "grupo": "otro",
         "clave": "predios_suburbanos_con_edificaciones",
         "descripcion": "Predios suburbanos con edificaciones",
         "tasa_millar": 0.0016,
@@ -28,7 +28,7 @@
       },
       {
         "grupo": "urbano",
-        "clave": "predios_urbanos_y_suburbanos_sin_edificaciones_baldios",
+        "clave": "predios_urbanos_sin_edificacion_baldios",
         "descripcion": "Predios urbanos y suburbanos sin edificaciones (baldíos)",
         "tasa_millar": 0.0016,
         "periodicidad": "anual",
@@ -48,7 +48,7 @@
       "periodicidad": "anual",
       "unidad": "uma"
     },
-    "comentarios": "Art. 10: la base de cálculo es el valor catastral anual. Se establece tasa general de 1.6 al millar para cinco categorías: predios urbanos con edificaciones, suburbanos con edificaciones, rústicos, urbanos y suburbanos sin edificaciones (baldíos) y urbanos de uso industrial. El texto también prevé aumentos de 100% para predios urbanos no edificados y de 50% para predios urbanos cuya edificación tenga valor inferior a la quinta parte del terreno; se transcriben como disposición complementaria, no como filas separadas. Mínimo anual: 3 UMA en zonas urbanas 6, 7 y 8 y en predios rústicos de hasta 16 hectáreas; 5 UMA en zonas urbanas 1 a 5 y en predios rústicos mayores de 16-01 hectáreas."
+    "comentarios": "Art. 10: la base de cálculo es el valor catastral. Se transcriben las tasas generales al millar para cinco categorías. El texto además establece incrementos del 100% para predios urbanos no edificados y del 50% para predios urbanos cuya edificación tenga valor inferior a la quinta parte del valor del terreno; se omiten como ajuste de tasa porque no se presentan como tabla separada. Mínimo anual: 3 UMA en zonas urbanas 6, 7 y 8 y en predios rústicos de hasta 16 hectáreas; 5 UMA en zonas urbanas 1, 2, 3, 4 y 5 y en predios rústicos mayores de 16-01 hectáreas. No se transcriben descuentos ni otras disposiciones."
   },
   "_meta": {
     "fuente": "txt",
@@ -63,7 +63,7 @@
     "usado_vision": false,
     "tokens": {
       "input": 6649,
-      "output": 516,
+      "output": 495,
       "cached": 5888
     },
     "cvegeo": "28035",

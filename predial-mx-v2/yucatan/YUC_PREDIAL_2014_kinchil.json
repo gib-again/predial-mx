@@ -8,7 +8,7 @@
         "superior": 10000.0,
         "columnas": [
           {
-            "nombre": "habitacional",
+            "nombre": "urbano_con_o_sin_construccion",
             "valor": 7.0,
             "tipo": "cuota_fija",
             "unidad": "pesos"
@@ -21,7 +21,7 @@
         "superior": 20000.0,
         "columnas": [
           {
-            "nombre": "habitacional",
+            "nombre": "urbano_con_o_sin_construccion",
             "valor": 14.0,
             "tipo": "cuota_fija",
             "unidad": "pesos"
@@ -34,7 +34,7 @@
         "superior": 30000.0,
         "columnas": [
           {
-            "nombre": "habitacional",
+            "nombre": "urbano_con_o_sin_construccion",
             "valor": 15.0,
             "tipo": "cuota_fija",
             "unidad": "pesos"
@@ -47,7 +47,7 @@
         "superior": 40000.0,
         "columnas": [
           {
-            "nombre": "habitacional",
+            "nombre": "urbano_con_o_sin_construccion",
             "valor": 26.0,
             "tipo": "cuota_fija",
             "unidad": "pesos"
@@ -60,7 +60,7 @@
         "superior": 50000.0,
         "columnas": [
           {
-            "nombre": "habitacional",
+            "nombre": "urbano_con_o_sin_construccion",
             "valor": 33.0,
             "tipo": "cuota_fija",
             "unidad": "pesos"
@@ -73,7 +73,7 @@
         "superior": 60000.0,
         "columnas": [
           {
-            "nombre": "habitacional",
+            "nombre": "urbano_con_o_sin_construccion",
             "valor": 40.0,
             "tipo": "cuota_fija",
             "unidad": "pesos"
@@ -86,22 +86,22 @@
         "superior": null,
         "columnas": [
           {
-            "nombre": "habitacional",
+            "nombre": "urbano_con_o_sin_construccion",
             "valor": 46.0,
             "tipo": "cuota_fija",
             "unidad": "pesos"
           },
           {
-            "nombre": "rustico",
-            "valor": 15.0,
-            "tipo": "cuota_fija",
-            "unidad": "pesos"
+            "nombre": "urbano_con_o_sin_construccion",
+            "valor": 0.0025,
+            "tipo": "tasa_porcentual",
+            "unidad": "porcentaje"
           }
         ]
       }
     ],
     "minimo_predial": null,
-    "comentarios": "Art. 13, inciso a): predios urbanos con o sin construcción pagan cuota fija anual por rangos de valor catastral y además 0.25% sobre el excedente del límite inferior en cada rango; se codifica como mixto porque en la misma estructura hay cuota fija y tasa porcentual marginal. Art. 13, inciso b): predios rústicos con o sin construcción pagan una cuota de $15.00 por hectárea; se documenta en la tabla principal como columna heterogénea por coexistir en el mismo artículo, aunque su base es superficie y no valor catastral. Art. 14 contiene descuentos/bonificaciones y no se considera en la mecánica."
+    "comentarios": "Art. 13, inciso a): predios urbanos con o sin construcción usan tabla por rangos de valor catastral con cuota fija al límite inferior y un factor del 0.25% sobre el excedente; se codifica como mixto porque en los primeros 6 rangos la estructura es de cuota fija en pesos y el último renglón abierto mantiene la misma lógica pero la tabla impresa mezcla cuota fija + factor. Art. 13, inciso b): predios rústicos con o sin construcción pagan $15.00 por hectárea; se documenta como tarifa paralela no incluida en la tabla principal por ser una mecánica distinta sobre superficie, no sobre valor catastral."
   },
   "_meta": {
     "fuente": "txt",
@@ -116,7 +116,7 @@
     "usado_vision": false,
     "tokens": {
       "input": 6862,
-      "output": 535,
+      "output": 594,
       "cached": 5888
     },
     "cvegeo": "31044",

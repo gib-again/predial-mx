@@ -28,7 +28,7 @@
       },
       {
         "grupo": "urbano",
-        "clave": "predios_urbanos_y_suburbanos_sin_edificaciones_baldios",
+        "clave": "predios_urbanos_y_suburbanos_sin_edificacion_baldios",
         "descripcion": "Predios urbanos y suburbanos sin edificaciones (baldíos)",
         "tasa_millar": 0.0016,
         "periodicidad": "anual",
@@ -48,7 +48,7 @@
       "periodicidad": "anual",
       "unidad": "vsm"
     },
-    "comentarios": "Art. 10: tasas al millar sobre valor catastral para predios urbanos con edificaciones (1.6), suburbanos con edificaciones (1.6), rústicos (1.5), urbanos y suburbanos sin edificaciones/baldíos (1.6) y urbanos de uso industrial (1.6). El texto incluye reglas de aumento del 100% para predios urbanos no edificados y de 50% cuando la edificación valga menos de la quinta parte del terreno; se documentan como parte de la mecánica tarifaria, pero la ley no presenta una tabla separada de cálculo. Mínimo predial: no podrá ser inferior a tres salarios mínimos en zonas urbanas 6, 7 y 8 y en predios rústicos de hasta 16 hectáreas; y a cinco salarios mínimos en zonas urbanas 1, 2, 3, 4 y 5 y en predios rústicos mayores de 16-01 hectáreas."
+    "comentarios": "Art. 10: la base es el valor catastral. La fracción VI dispone que los predios urbanos no edificados causan el impuesto con la tasa del artículo aumentada en 100%; la fracción VII establece que los predios urbanos con edificación de valor inferior a la quinta parte del valor del terreno causan la tasa aumentada en 50%. El último párrafo fija un impuesto anual mínimo de 3 salarios mínimos en zonas urbanas 6, 7 y 8 y en predios rústicos de hasta 16 hectáreas, y de 5 salarios mínimos en zonas urbanas 1 a 5 y en predios rústicos mayores de 16-01 hectáreas. Se transcribe como mínimo predial general por existir dos umbrales territoriales/por superficie dentro del texto."
   },
   "_meta": {
     "fuente": "txt",
@@ -63,7 +63,7 @@
     "usado_vision": false,
     "tokens": {
       "input": 6628,
-      "output": 540,
+      "output": 502,
       "cached": 5888
     },
     "cvegeo": "28035",

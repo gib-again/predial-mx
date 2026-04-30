@@ -3,32 +3,80 @@
     "tipo_esquema": "tarifa_millar",
     "tabla": [
       {
-        "grupo": "urbano",
+        "grupo": "general",
         "clave": "urbano_suburbano_con_edificaciones",
-        "descripcion": "Inmuebles urbanos y suburbanos con edificaciones",
+        "descripcion": "Inmuebles urbanos y suburbanos con edificaciones; aplica a la entrada en vigor de la ley y durante 2002 al 2022 inclusive.",
         "tasa_millar": 0.0025,
         "periodicidad": "anual",
         "cuota_fija_adicional": null
       },
       {
-        "grupo": "urbano",
+        "grupo": "general",
         "clave": "urbano_suburbano_sin_edificaciones",
-        "descripcion": "Inmuebles urbanos y suburbanos sin edificaciones",
+        "descripcion": "Inmuebles urbanos y suburbanos sin edificaciones; aplica a la entrada en vigor de la ley y durante 2002 al 2022 inclusive.",
         "tasa_millar": 0.0046,
         "periodicidad": "anual",
         "cuota_fija_adicional": null
       },
       {
-        "grupo": "rustico",
+        "grupo": "general",
         "clave": "rustico",
-        "descripcion": "Inmuebles rústicos",
+        "descripcion": "Inmuebles rústicos; aplica a la entrada en vigor de la ley y durante 2002 al 2022 inclusive.",
         "tasa_millar": 0.0026,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "general",
+        "clave": "urbano_suburbano_con_edificaciones",
+        "descripcion": "Inmuebles urbanos y suburbanos con edificaciones; con anterioridad al año 2002 y hasta 1993 inclusive.",
+        "tasa_millar": 0.008,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "general",
+        "clave": "urbano_suburbano_sin_edificaciones",
+        "descripcion": "Inmuebles urbanos y suburbanos sin edificaciones; con anterioridad al año 2002 y hasta 1993 inclusive.",
+        "tasa_millar": 0.015,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "general",
+        "clave": "rustico",
+        "descripcion": "Inmuebles rústicos; con anterioridad al año 2002 y hasta 1993 inclusive.",
+        "tasa_millar": 0.006,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "general",
+        "clave": "urbano_suburbano_con_edificaciones",
+        "descripcion": "Inmuebles urbanos y suburbanos con edificaciones; con anterioridad a 1993.",
+        "tasa_millar": 0.013,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "general",
+        "clave": "urbano_suburbano_sin_edificaciones",
+        "descripcion": "Inmuebles urbanos y suburbanos sin edificaciones; con anterioridad a 1993.",
+        "tasa_millar": 0.013,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "general",
+        "clave": "rustico",
+        "descripcion": "Inmuebles rústicos; con anterioridad a 1993.",
+        "tasa_millar": 0.012,
         "periodicidad": "anual",
         "cuota_fija_adicional": null
       }
     ],
     "minimo_predial": null,
-    "comentarios": "Art. 4: las tasas del impuesto predial son anuales y se expresan por tipo de inmueble. La mecánica principal es un catálogo de tasas al millar por categoría, sin rangos de valor catastral. Se transcriben las tasas para inmuebles urbanos y suburbanos con edificaciones (2.5 al millar), urbanos y suburbanos sin edificaciones (4.6 al millar) e inmuebles rústicos (2.6 al millar). El Art. 5 contiene tablas de valores unitarios de suelo y construcción para avalúo, no la tarifa del impuesto."
+    "comentarios": "Art. 4 establece tasas anuales al millar por tipo de inmueble y por antigüedad del valor determinado o modificado. Se transcribe la mecánica principal como catálogo de tarifas categóricas; no se incluyeron tablas de valores unitarios de los artículos 5 y 6 porque corresponden a catastro/avalúos, no a la tarifa del impuesto. La secuencia de tasas del artículo 4 se presenta por periodos históricos: a la entrada en vigor / 2002-2022 / anterior al 2002 y hasta 1993 / anterior a 1993."
   },
   "_meta": {
     "fuente": "txt",
@@ -43,7 +91,7 @@
     "usado_vision": false,
     "tokens": {
       "input": 9258,
-      "output": 332,
+      "output": 756,
       "cached": 5888
     },
     "cvegeo": "11027",

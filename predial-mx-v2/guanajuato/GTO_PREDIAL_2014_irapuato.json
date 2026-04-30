@@ -4,7 +4,7 @@
     "tabla": [
       {
         "grupo": "urbano",
-        "clave": "urbano_con_edificaciones",
+        "clave": "urbano_suburbano_con_edificaciones",
         "descripcion": "Inmuebles urbanos y suburbanos con edificaciones",
         "tasa_millar": 0.00339,
         "periodicidad": "anual",
@@ -12,7 +12,7 @@
       },
       {
         "grupo": "urbano",
-        "clave": "urbano_sin_edificaciones",
+        "clave": "urbano_suburbano_sin_edificaciones",
         "descripcion": "Inmuebles urbanos y suburbanos sin edificaciones",
         "tasa_millar": 0.00565,
         "periodicidad": "anual",
@@ -20,7 +20,7 @@
       },
       {
         "grupo": "rustico",
-        "clave": "rustico_general",
+        "clave": "rustico",
         "descripcion": "Inmuebles rústicos",
         "tasa_millar": 0.0004,
         "periodicidad": "anual",
@@ -28,23 +28,23 @@
       }
     ],
     "minimo_predial": null,
-    "comentarios": "Art. 4: tasa anual por categorías de predio. Para inmuebles urbanos y suburbanos, la tarifa distingue con edificaciones y sin edificaciones; para inmuebles rústicos existe una tarifa paralela de 0.40 al millar. El texto presenta además una serie histórica por años (2002, 1993-2001, anterior a 1993) con las mismas categorías y tasas distintas; se transcribe sólo la estructura tarifaria principal del artículo sin integrar la serie histórica como brackets, por tratarse de tarifas paralelas temporales y no de un esquema progresivo por rangos de valor catastral."
+    "comentarios": "Artículo 4 establece un catálogo de tasas al millar según la antigüedad del valor determinado o modificado del inmueble. Se toma como mecánica principal la tasa vigente a la entrada en vigor de la presente Ley: 3.39 al millar para inmuebles urbanos y suburbanos con edificaciones, 5.65 al millar para inmuebles urbanos y suburbanos sin edificaciones, y 0.40 al millar para inmuebles rústicos. Las demás filas del artículo 4 corresponden a tasas históricas según el año en que fue determinado o modificado el valor catastral (2003-2013, 2002, 1993-2001 y anterior a 1993) y no se incorporan como filas separadas porque no son rangos de valor catastral ni brackets progresivos; forman parte de una tabla categórica temporal del mismo impuesto."
   },
   "_meta": {
     "fuente": "txt",
-    "modelo": "gpt-5.4-mini"
+    "modelo": "gpt-5.4"
   },
   "_meta_v2": {
-    "intentos": 2,
+    "intentos": 3,
     "requiere_revision": false,
-    "escalado": false,
-    "razon": null,
+    "escalado": true,
+    "razon": "escalado_a_gpt-5.4_tras_2x_mini_fallido",
     "usado_reocr": false,
     "usado_vision": false,
     "tokens": {
-      "input": 22164,
-      "output": 993,
-      "cached": 11776
+      "input": 33614,
+      "output": 1603,
+      "cached": 17664
     },
     "cvegeo": "11017",
     "estado": "guanajuato",

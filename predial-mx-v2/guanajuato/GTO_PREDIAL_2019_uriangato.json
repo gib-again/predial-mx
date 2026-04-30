@@ -4,63 +4,39 @@
     "tabla": [
       {
         "grupo": "urbano",
-        "clave": "urbano_suburbano_con_edificaciones",
-        "descripcion": "Inmuebles urbanos y suburbanos con edificaciones, con valor determinado o modificado; tasa anual aplicable a partir de la entrada en vigor de la Ley y durante 2002 a 2019 inclusive.",
+        "clave": "urbano_sin_edificaciones",
+        "descripcion": "Inmuebles urbanos y suburbanos con valor determinado o modificado, sin edificaciones.",
         "tasa_millar": 0.002,
         "periodicidad": "anual",
         "cuota_fija_adicional": null
       },
       {
         "grupo": "urbano",
-        "clave": "urbano_suburbano_sin_edificaciones",
-        "descripcion": "Inmuebles urbanos y suburbanos sin edificaciones, con valor determinado o modificado; tasa anual aplicable a partir de la entrada en vigor de la Ley y durante 2002 a 2019 inclusive.",
+        "clave": "urbano_con_edificaciones",
+        "descripcion": "Inmuebles urbanos y suburbanos con valor determinado o modificado, con edificaciones.",
         "tasa_millar": 0.003,
         "periodicidad": "anual",
         "cuota_fija_adicional": null
       },
       {
         "grupo": "rustico",
-        "clave": "rustico",
-        "descripcion": "Inmuebles rústicos, con valor determinado o modificado; tasa anual aplicable a partir de la entrada en vigor de la Ley y durante 2002 a 2019 inclusive.",
+        "clave": "rustico_sin_edificaciones",
+        "descripcion": "Inmuebles rústicos con valor determinado o modificado, sin edificaciones.",
         "tasa_millar": 0.00032,
         "periodicidad": "anual",
         "cuota_fija_adicional": null
       },
       {
-        "grupo": "urbano",
-        "clave": "urbano_suburbano_con_edificaciones_historico",
-        "descripcion": "Con anterioridad al año 2002 y hasta 1993 inclusive, inmuebles urbanos y suburbanos con edificaciones.",
-        "tasa_millar": 0.008,
-        "periodicidad": "anual",
-        "cuota_fija_adicional": null
-      },
-      {
-        "grupo": "urbano",
-        "clave": "urbano_suburbano_sin_edificaciones_historico",
-        "descripcion": "Con anterioridad al año 2002 y hasta 1993 inclusive, inmuebles urbanos y suburbanos sin edificaciones.",
-        "tasa_millar": 0.015,
-        "periodicidad": "anual",
-        "cuota_fija_adicional": null
-      },
-      {
         "grupo": "rustico",
-        "clave": "rustico_historico",
-        "descripcion": "Con anterioridad al año 2002 y hasta 1993 inclusive, inmuebles rústicos.",
-        "tasa_millar": 0.006,
-        "periodicidad": "anual",
-        "cuota_fija_adicional": null
-      },
-      {
-        "grupo": "urbano",
-        "clave": "urbano_suburbano_muy_antiguo",
-        "descripcion": "Con anterioridad al año de 1993, inmuebles urbanos y suburbanos; en el texto aparecen dos tasas para este supuesto.",
-        "tasa_millar": 0.0012,
+        "clave": "rustico_con_edificaciones",
+        "descripcion": "Inmuebles rústicos con valor determinado o modificado, con edificaciones.",
+        "tasa_millar": 0.00032,
         "periodicidad": "anual",
         "cuota_fija_adicional": null
       }
     ],
     "minimo_predial": null,
-    "comentarios": "Art. 4 establece tasas anuales sobre valor catastral para inmuebles urbanos y suburbanos con/sin edificaciones y para inmuebles rústicos. Se transcribe la mecánica principal como catálogo de tasas al millar. En el texto se observa un renglón para 'Con anterioridad al año de 1993' con dos porcentajes (0.13% y 0.12%); se conserva una sola entrada porque el OCR no permite distinguir con certeza la separación exacta de categorías en ese renglón. No se documentan descuentos, recargos ni bonificaciones. Las tablas de valores unitarios de terrenos y construcción de los artículos 5 y 6 no forman parte de la mecánica del impuesto."
+    "comentarios": "Art. 4 establece tasas anuales sobre valor catastral con catálogo por tipo de inmueble y condición de edificaciones. Se transcriben sólo las tasas aplicables a 2019: urbanos y suburbanos sin edificaciones 0.20%, con edificaciones 0.30%; rústicos 0.032% para sin/con edificaciones. Las demás filas del artículo muestran ejercicios anteriores (2002 y anteriores) y no se consideran para la mecánica vigente 2019."
   },
   "_meta": {
     "fuente": "txt",
@@ -75,7 +51,7 @@
     "usado_vision": false,
     "tokens": {
       "input": 8706,
-      "output": 721,
+      "output": 378,
       "cached": 5888
     },
     "cvegeo": "11041",

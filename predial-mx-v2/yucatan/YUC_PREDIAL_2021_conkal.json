@@ -4,30 +4,30 @@
     "tabla": [
       {
         "descripcion": "Habitacional",
-        "tasa": 0.2,
+        "tasa": 0.002,
         "base_calculo": "valor_catastral",
         "unidad": "porcentaje",
         "cuota_fija_adicional": null
       }
     ],
     "minimo_predial": null,
-    "comentarios": "Se toma como mecánica principal la tarifa expresa del Artículo 15 para impuesto predial sobre base catastral: 'Habitacional; 0.2 % sobre el monto de la base catastral'. El mismo artículo también establece una tarifa paralela para 'Comercial; 0.3 % sobre el monto de la base catastral', pero no se incluye en la tabla principal porque son tarifas separadas por tipo de uso y el esquema `tasa_unica` sólo admite una entrada. El texto de los artículos 13 y siguientes contiene valores unitarios de terreno y construcción y fórmulas para determinar el valor catastral, que corresponden a catastro/base gravable, no a la tarifa del impuesto. Además, el texto señala una tarifa paralela para predios destinados a la producción agropecuaria de 10 al millar anual sobre el valor registrado o catastral; se documenta aquí como observación y no en la tabla principal por tratarse de una tarifa separada."
+    "comentarios": "Art. 15 establece dos tarifas sobre el valor catastral: habitacional 0.2% y comercial 0.3%. Se clasifica como tasa_unica con una sola fila principal porque la tabla proporcionada en el texto no está estructurada como tabla categórica completa de múltiples filas; la segunda tarifa comercial queda documentada como tarifa paralela: comercial 0.3% sobre la base catastral. Art. 14 también indica que todo predio destinado a la producción agropecuaria paga 10 al millar anual sobre el valor registrado o catastral; se documenta como tarifa paralela secundaria. El texto incluye cálculo bimestral dividiendo entre seis, pero no se transcribe como mecánica aparte."
   },
   "_meta": {
     "fuente": "txt",
-    "modelo": "gpt-5.4"
+    "modelo": "gpt-5.4-mini"
   },
   "_meta_v2": {
-    "intentos": 3,
+    "intentos": 1,
     "requiere_revision": false,
-    "escalado": true,
-    "razon": "escalado_a_gpt-5.4_tras_2x_mini_fallido",
+    "escalado": false,
+    "razon": null,
     "usado_reocr": false,
     "usado_vision": false,
     "tokens": {
-      "input": 24363,
-      "output": 923,
-      "cached": 17664
+      "input": 7670,
+      "output": 230,
+      "cached": 5888
     },
     "cvegeo": "31013",
     "estado": "yucatan",

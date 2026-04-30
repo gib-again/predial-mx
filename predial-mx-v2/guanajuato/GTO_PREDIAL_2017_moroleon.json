@@ -3,40 +3,72 @@
     "tipo_esquema": "tarifa_millar",
     "tabla": [
       {
-        "grupo": "urbano",
-        "clave": "inmuebles_urbanos_y_suburbanos_con_edificaciones",
-        "descripcion": "Inmuebles urbanos y suburbanos con edificaciones, a la entrada en vigor de la ley",
+        "grupo": "general",
+        "clave": "inmuebles_urbanos_suburbanos_con_edificaciones",
+        "descripcion": "Inmuebles urbanos y suburbanos con edificaciones; a la entrada en vigor de la presente Ley / durante 2002 a 2016 inclusive",
         "tasa_millar": 0.0024,
         "periodicidad": "anual",
         "cuota_fija_adicional": null
       },
       {
-        "grupo": "urbano",
-        "clave": "inmuebles_urbanos_y_suburbanos_con_edificaciones_2002_2016",
-        "descripcion": "Inmuebles urbanos y suburbanos con edificaciones, durante 2002 a 2016 inclusive",
-        "tasa_millar": 0.0024,
+        "grupo": "general",
+        "clave": "inmuebles_urbanos_suburbanos_sin_edificaciones",
+        "descripcion": "Inmuebles urbanos y suburbanos sin edificaciones; a la entrada en vigor de la presente Ley / durante 2002 a 2016 inclusive",
+        "tasa_millar": 0.0045,
         "periodicidad": "anual",
         "cuota_fija_adicional": null
       },
       {
-        "grupo": "urbano",
-        "clave": "inmuebles_urbanos_y_suburbanos_sin_edificaciones_1993_2001",
-        "descripcion": "Inmuebles urbanos y suburbanos sin edificaciones, con valor determinado o modificado, anteriores a 2002 y hasta 1993 inclusive",
+        "grupo": "general",
+        "clave": "inmuebles_urbanos_suburbanos_con_desalumbrado",
+        "descripcion": "Inmuebles urbanos y suburbanos con des alumbre / sin desa; a la entrada en vigor de la presente Ley / durante 2002 a 2016 inclusive",
+        "tasa_millar": 0.0018,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "general",
+        "clave": "inmuebles_urbanos_suburbanos_con_edificaciones_antiguos_1993_2001",
+        "descripcion": "Inmuebles urbanos y suburbanos con edificaciones; con anterioridad al año 2002 y hasta 1993 inclusive",
         "tasa_millar": 0.008,
         "periodicidad": "anual",
         "cuota_fija_adicional": null
       },
       {
-        "grupo": "urbano",
-        "clave": "inmuebles_urbanos_y_suburbanos_sin_edificaciones_anteriores_1993",
-        "descripcion": "Inmuebles urbanos y suburbanos sin edificaciones, con valor determinado o modificado, con anterioridad a 1993",
+        "grupo": "general",
+        "clave": "inmuebles_urbanos_suburbanos_sin_edificaciones_antiguos_1993_2001",
+        "descripcion": "Inmuebles urbanos y suburbanos sin edificaciones; con anterioridad al año 2002 y hasta 1993 inclusive",
+        "tasa_millar": 0.015,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "general",
+        "clave": "inmuebles_urbanos_suburbanos_con_desalumbrado_antiguos_1993_2001",
+        "descripcion": "Inmuebles urbanos y suburbanos con des alumbre / sin desa; con anterioridad al año 2002 y hasta 1993 inclusive",
+        "tasa_millar": 0.006,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "general",
+        "clave": "inmuebles_urbanos_suburbanos_con_edificaciones_anteriores_1993",
+        "descripcion": "Inmuebles urbanos y suburbanos con edificaciones; con anterioridad a 1993",
         "tasa_millar": 0.013,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "general",
+        "clave": "inmuebles_urbanos_suburbanos_sin_edificaciones_anteriores_1993",
+        "descripcion": "Inmuebles urbanos y suburbanos sin edificaciones; con anterioridad a 1993",
+        "tasa_millar": 0.012,
         "periodicidad": "anual",
         "cuota_fija_adicional": null
       }
     ],
     "minimo_predial": null,
-    "comentarios": "Art. 4: se transcribe la mecánica principal visible en la tabla de TASAS para inmuebles urbanos y suburbanos con valor determinado o modificado. El texto también contiene tablas de valores unitarios de terreno y construcción (Art. 5) y reglas de avalúo (Art. 6), que no son tarifa del predial. No se extrae una estructura por rangos de valor catastral; la mecánica tarifaria mostrada es categórica por tipo/condición del inmueble y periodo, con tasas al millar. La tabla OCR presenta encabezados fragmentados; se conserva únicamente la tasa identificable por renglón."
+    "comentarios": "Art. 4 establece tasas anuales al millar para inmuebles urbanos y suburbanos, diferenciadas por condición de edificación y por antigüedad del inmueble. No se extrae la Tabla de Valores Unitarios de los artículos 5 y 6 porque corresponde a valuación catastral, no a la mecánica del impuesto. El texto OCR de la columna para 'con des...' está deteriorado; se transcribe como la tercera categoría observable en la tabla de tasas, sin interpretar más allá del texto visible."
   },
   "_meta": {
     "fuente": "txt",
@@ -51,7 +83,7 @@
     "usado_vision": false,
     "tokens": {
       "input": 8550,
-      "output": 489,
+      "output": 784,
       "cached": 5888
     },
     "cvegeo": "11021",

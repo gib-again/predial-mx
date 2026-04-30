@@ -3,47 +3,31 @@
     "tipo_esquema": "tarifa_millar",
     "tabla": [
       {
-        "grupo": "urbano",
-        "clave": "industrial",
+        "grupo": "general",
+        "clave": "urbano_industrial",
         "descripcion": "Predios urbanos industriales con o sin edificación",
         "tasa_millar": 0.005,
         "periodicidad": "anual",
         "cuota_fija_adicional": null
       },
       {
-        "grupo": "urbano",
-        "clave": "comercial_con_edificacion",
+        "grupo": "general",
+        "clave": "urbano_comercial_con_edificacion",
         "descripcion": "Predios urbanos comerciales con edificación",
         "tasa_millar": 0.005,
         "periodicidad": "anual",
         "cuota_fija_adicional": null
       },
       {
-        "grupo": "urbano",
-        "clave": "comercial_sin_edificacion",
-        "descripcion": "Predios urbanos comerciales sin edificación; paga 1.33 veces lo fijado para los predios con edificación",
-        "tasa_millar": 0.00665,
-        "periodicidad": "anual",
-        "cuota_fija_adicional": null
-      },
-      {
-        "grupo": "urbano",
-        "clave": "residencial_interes_social_popular_con_edificacion",
+        "grupo": "general",
+        "clave": "urbano_residencial_interes_social_popular_con_edificacion",
         "descripcion": "Predios urbanos residenciales, de interés social y populares con edificación",
         "tasa_millar": 0.005,
         "periodicidad": "anual",
         "cuota_fija_adicional": null
       },
       {
-        "grupo": "urbano",
-        "clave": "residencial_interes_social_popular_sin_edificacion",
-        "descripcion": "Predios urbanos residenciales, de interés social y populares sin edificación; paga 1.33 veces lo fijado para los predios con edificación",
-        "tasa_millar": 0.00665,
-        "periodicidad": "anual",
-        "cuota_fija_adicional": null
-      },
-      {
-        "grupo": "rustico",
+        "grupo": "general",
         "clave": "rustico",
         "descripcion": "Predios rústicos",
         "tasa_millar": 0.003,
@@ -56,7 +40,7 @@
       "periodicidad": "bimestral",
       "unidad": "pesos"
     },
-    "comentarios": "Art. 2: además de las tasas principales, el texto prevé incentivos y mínimos especiales que no se transcriben como mecánica principal. Se menciona que los predios de instituciones educativas no públicas pagan 1 al millar anual y que los predios con licencia de fraccionamiento autorizada en vías de desarrollo pueden pagar hasta el 20% del impuesto correspondiente; se documentan aquí sólo como tarifas/incentivos paralelos no predominantes. También se indica un mínimo de $21 bimestrales para pensionados, jubilados, adultos mayores o personas con discapacidad, siempre que se cumpla la fracción VI."
+    "comentarios": "Art. 2: para predios urbanos comerciales sin edificación y urbanos residenciales/de interés social/populares sin edificación, el texto fija una mecánica derivada de 1.33 veces lo fijado para los predios con edificación; no se desglosa como fila separada porque la tasa base indicada para con edificación es la misma y el enunciado remite a esa base. Art. 2 fracc. V establece un mínimo predial de $42.00 bimestral, o $21.00 bimestral para pensionados, jubilados, adultos mayores o personas con discapacidad; el texto también contiene incentivos y descuentos que se omiten por instrucción. Art. 2 fracc. V y VI y Art. 3 incluyen incentivos fiscales (pago anticipado, casa habitación, industria, predios prestados al municipio, instituciones educativas no públicas, fraccionamientos, empresas generadoras de empleo y personas con discapacidad), que no forman parte de la mecánica base del impuesto predial y se documentan solo como referencia en comentarios."
   },
   "_meta": {
     "fuente": "txt",
@@ -71,7 +55,7 @@
     "usado_vision": false,
     "tokens": {
       "input": 7235,
-      "output": 542,
+      "output": 491,
       "cached": 5888
     },
     "cvegeo": "05027",

@@ -32,7 +32,7 @@
       "periodicidad": "bimestral",
       "unidad": "pesos"
     },
-    "comentarios": "Art. 2: la base es el valor catastral. Se establecen tres tasas categóricas al millar: predios urbanos 5 al millar anual, predios rústicos 3 al millar anual y lotes baldíos con maleza 7 al millar. Los incentivos por pago anticipado no se documentan. Las referencias a posesión, plantas de beneficio y concesiones forman parte del objeto del impuesto, no de la mecánica de cálculo."
+    "comentarios": "Art. 2: la base es el valor catastral. Tarifas paralelas por tipo de predio: urbanos 5 al millar anual; rústicos 3 al millar anual; lotes baldíos con maleza 7 al millar. Se ignoran incentivos por pago anticipado y descuentos a pensionados/jubilados/discapacidad por instrucción. El texto también menciona predios rústicos de la Federación/Estado/Municipio destinados a explotación agrícola o ganadera dentro del objeto del impuesto, pero no agrega una tarifa distinta en este extracto."
   },
   "_meta": {
     "fuente": "txt",
@@ -47,7 +47,7 @@
     "usado_vision": false,
     "tokens": {
       "input": 6477,
-      "output": 305,
+      "output": 326,
       "cached": 5888
     },
     "cvegeo": "05020",

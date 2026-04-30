@@ -50,7 +50,7 @@
       "periodicidad": "anual",
       "unidad": "pesos"
     },
-    "comentarios": "Artículo 4, fracción III, inciso a): inmuebles urbanos y suburbanos con edificaciones con valores determinados o modificados durante 2002-2024. Se documenta únicamente la tabla principal progresiva de valor fiscal. La fracción IV establece tasas paralelas para inmuebles con valores determinados/modificados con anterioridad a 2002: urbanos y suburbanos con edificaciones 8 al millar o 13 al millar; urbanos y suburbanos sin edificaciones 15 al millar o 12 al millar; rústicos 6 al millar o 0.002 al millar; cuando el impuesto resulte inferior a la cuota mínima anual del artículo 40, se pagará esa cuota mínima."
+    "comentarios": "Art. 4, fracc. I-III: inmuebles urbanos y suburbanos con edificaciones (valores determinados o modificados durante 2002 a 2024 inclusive). La primera fila se transcribe con cuota fija 0 porque el texto sólo muestra la tasa marginal. Art. 4, fracc. IV establece tasas paralelas para inmuebles con valores anteriores a 2002: urbanos/suburbanos con edificaciones 8 al millar (o 13 al millar antes de 1993), urbanos/suburbanos sin edificaciones 15 al millar (o 12 al millar antes de 1993), y rústicos 6 al millar (o 15 al millar antes de 1993); se documenta como tarifa paralela no incluida en la tabla principal. Art. 4 indica que si el resultado es inferior a la cuota mínima anual del artículo 40, se pagará dicha cuota mínima."
   },
   "_meta": {
     "fuente": "txt",
@@ -65,7 +65,7 @@
     "usado_vision": false,
     "tokens": {
       "input": 11986,
-      "output": 448,
+      "output": 496,
       "cached": 5888
     },
     "cvegeo": "11021",

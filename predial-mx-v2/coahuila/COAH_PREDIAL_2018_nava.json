@@ -5,16 +5,16 @@
       {
         "grupo": "urbano",
         "clave": "predios_urbanos",
-        "descripcion": "Sobre los predios urbanos",
-        "tasa_millar": 0.003,
+        "descripcion": "Predios urbanos",
+        "tasa_millar": 3.0,
         "periodicidad": "anual",
         "cuota_fija_adicional": null
       },
       {
         "grupo": "rustico",
         "clave": "predios_rusticos",
-        "descripcion": "Sobre los predios rústicos",
-        "tasa_millar": 0.003,
+        "descripcion": "Predios rústicos",
+        "tasa_millar": 3.0,
         "periodicidad": "anual",
         "cuota_fija_adicional": null
       }
@@ -24,7 +24,7 @@
       "periodicidad": "bimestral",
       "unidad": "pesos"
     },
-    "comentarios": "Art. 2 fraccs. I y II: tasa de 3 al millar anual para predios urbanos y rústicos. Fracc. III: mínimo predial de $22.50 por bimestre, con cuota mínima anual de $135.00. Fracc. IV: los predios rústicos dedicados a agricultura y ganadería cubren el 50% del monto del impuesto. Las fraccs. V a VIII son incentivos/bonificaciones y no se transcriben como mecánica del cálculo principal."
+    "comentarios": "Art. 2 fracc. I y II: 3 al millar anual para predios urbanos y rústicos. Fracc. III: mínimo de $22.50 por bimestre, con cuota mínima anual de $135.00. Fracc. IV: los predios rústicos dedicados a agricultura y ganadería cubren el 50% del monto del impuesto; se documenta como tarifa secundaria/ajuste sobre la tasa principal. Las fracciones V a VIII contienen incentivos/bonificaciones y no se consideran en la mecánica de cálculo."
   },
   "_meta": {
     "fuente": "txt",
@@ -39,7 +39,7 @@
     "usado_vision": false,
     "tokens": {
       "input": 6744,
-      "output": 269,
+      "output": 266,
       "cached": 5888
     },
     "cvegeo": "05022",

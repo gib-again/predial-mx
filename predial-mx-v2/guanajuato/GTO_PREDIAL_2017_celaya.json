@@ -4,23 +4,23 @@
     "tabla": [
       {
         "grupo": "general",
-        "clave": "inmuebles_urbanos_y_suburbanos",
+        "clave": "urbano_suburbano_general",
         "descripcion": "Inmuebles urbanos y suburbanos",
-        "tasa_millar": 3.0,
+        "tasa_millar": 0.003,
         "periodicidad": "anual",
         "cuota_fija_adicional": null
       },
       {
         "grupo": "rustico",
-        "clave": "sin_edificaciones",
+        "clave": "rustico_sin_edificaciones",
         "descripcion": "Rústicos sin edificaciones",
-        "tasa_millar": 0.2,
+        "tasa_millar": 0.0002,
         "periodicidad": "anual",
         "cuota_fija_adicional": null
       }
     ],
     "minimo_predial": null,
-    "comentarios": "Artículo 4: mecánica principal por tasa al millar. Se observan dos tarifas principales separadas: inmuebles urbanos y suburbanos 3.00 al millar anual; rústicos sin edificaciones 0.20 al millar anual. El texto OCR muestra además tramos/valores por antigüedad y tipo de construcción, pero corresponden a valuación/catálogos de valores unitarios del Art. 5 y no a la mecánica principal del impuesto predial. Se ignoran descuentos, recargos y bonificaciones. Art. 5 contiene valores unitarios de terreno y construcción, no tarifa del impuesto."
+    "comentarios": "Art. 4: para inmuebles urbanos y suburbanos se observa una tabla por rangos de año de construcción/antigüedad con cuotas fijas en pesos por tipo/calidad de construcción y, además, una tasa al millar general para urbanos y suburbanos. La sección OCR muestra también tarifas diferenciadas para rústicos y construcciones, pero el texto está fragmentado y no permite reconstruir con seguridad una mecánica única de brackets; se transcribe sólo la tarifa categórica claramente legible. Art. 4 también contiene una tarifa para rústicos sin edificaciones de 0.20 al millar anual."
   },
   "_meta": {
     "fuente": "txt",
@@ -35,7 +35,7 @@
     "usado_vision": false,
     "tokens": {
       "input": 9256,
-      "output": 275,
+      "output": 270,
       "cached": 5888
     },
     "cvegeo": "11007",

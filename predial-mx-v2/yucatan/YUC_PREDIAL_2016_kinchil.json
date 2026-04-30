@@ -137,7 +137,7 @@
       }
     ],
     "minimo_predial": null,
-    "comentarios": "Art. 13: tarifa principal por rangos de valor catastral con cuota fija anual más factor del 0.25% aplicado al excedente del límite inferior en cada bracket. Además, el artículo establece cobros paralelos no integrados a la tabla principal: predios rústicos con o sin construcción pagan $15.00 por hectárea; y todo predio destinado a producción agropecuaria paga 10 al millar anual sobre el valor registrado o catastral. Se ignoraron descuentos y recargos del Art. 14."
+    "comentarios": "Art. 13: tabla por rangos de valor catastral con cuota fija anual y factor del 0.25% aplicado al excedente del límite inferior. Además, el mismo artículo establece tarifas paralelas no integradas a la tabla principal: predios rústicos con o sin construcción pagan $15.00 por hectárea; y todo predio destinado a producción agropecuaria paga 10 al millar anual sobre el valor registrado o catastral. Se ignoran descuentos y recargos conforme a la instrucción."
   },
   "_meta": {
     "fuente": "txt",
@@ -152,7 +152,7 @@
     "usado_vision": false,
     "tokens": {
       "input": 6859,
-      "output": 641,
+      "output": 637,
       "cached": 5888
     },
     "cvegeo": "31044",

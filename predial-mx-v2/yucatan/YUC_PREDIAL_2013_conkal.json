@@ -9,6 +9,12 @@
         "columnas": [
           {
             "nombre": "general",
+            "valor": 5.0,
+            "tipo": "cuota_fija",
+            "unidad": "pesos"
+          },
+          {
+            "nombre": "general",
             "valor": 0.00075,
             "tipo": "tasa_marginal",
             "unidad": "porcentaje"
@@ -17,9 +23,15 @@
       },
       {
         "n_rango": 2,
-        "inferior": 4000.0,
+        "inferior": 4000.01,
         "superior": 5500.0,
         "columnas": [
+          {
+            "nombre": "general",
+            "valor": 8.0,
+            "tipo": "cuota_fija",
+            "unidad": "pesos"
+          },
           {
             "nombre": "general",
             "valor": 0.002,
@@ -30,9 +42,15 @@
       },
       {
         "n_rango": 3,
-        "inferior": 5500.0,
+        "inferior": 5500.01,
         "superior": 6500.0,
         "columnas": [
+          {
+            "nombre": "general",
+            "valor": 11.0,
+            "tipo": "cuota_fija",
+            "unidad": "pesos"
+          },
           {
             "nombre": "general",
             "valor": 0.003,
@@ -43,9 +61,15 @@
       },
       {
         "n_rango": 4,
-        "inferior": 6500.0,
+        "inferior": 6500.01,
         "superior": 7500.0,
         "columnas": [
+          {
+            "nombre": "general",
+            "valor": 14.0,
+            "tipo": "cuota_fija",
+            "unidad": "pesos"
+          },
           {
             "nombre": "general",
             "valor": 0.003,
@@ -56,9 +80,15 @@
       },
       {
         "n_rango": 5,
-        "inferior": 7500.0,
+        "inferior": 7500.01,
         "superior": 8500.0,
         "columnas": [
+          {
+            "nombre": "general",
+            "valor": 17.0,
+            "tipo": "cuota_fija",
+            "unidad": "pesos"
+          },
           {
             "nombre": "general",
             "valor": 0.004,
@@ -69,9 +99,15 @@
       },
       {
         "n_rango": 6,
-        "inferior": 8500.0,
+        "inferior": 8500.01,
         "superior": 10000.0,
         "columnas": [
+          {
+            "nombre": "general",
+            "valor": 21.0,
+            "tipo": "cuota_fija",
+            "unidad": "pesos"
+          },
           {
             "nombre": "general",
             "valor": 0.00133,
@@ -82,9 +118,15 @@
       },
       {
         "n_rango": 7,
-        "inferior": 10000.0,
+        "inferior": 10000.01,
         "superior": null,
         "columnas": [
+          {
+            "nombre": "general",
+            "valor": 23.0,
+            "tipo": "cuota_fija",
+            "unidad": "pesos"
+          },
           {
             "nombre": "general",
             "valor": 0.002,
@@ -95,7 +137,7 @@
       }
     ],
     "minimo_predial": null,
-    "comentarios": "Art. 13: la tarifa principal para base valor catastral combina cuota fija anual y factor sobre el excedente, con cálculo bimestral dividiendo el resultado entre seis. Se codifica como mixto porque los brackets usan cuota fija en pesos y factor/tasa marginal por excedente. Tarifa secundaria paralela: Art. 14, predios rústicos pagan $300 por hectárea (1-20 ha), $400 (21-40 ha) y $500 (41+ ha); Art. 15, frutos civiles: habitacional 2% mensual y comercial 3% mensual sobre la contraprestación. No se integran a la tabla principal por ser mecánicas paralelas/no predominantes."
+    "comentarios": "Art. 13: tabla por valor catastral con cuota fija y factor sobre el excedente; el resultado se divide entre seis para obtener el impuesto bimestral. Art. 14: predios destinados a la producción agropecuaria pagan 10 al millar anual sobre valor registrado o catastral; predios rústicos pagan cuota por hectárea de $300 (1-20 ha), $400 (21-40 ha) y $500 (41 ha en adelante). Art. 15: frutos civiles habitacional 2% mensual y comercial 3% mensual sobre la contraprestación."
   },
   "_meta": {
     "fuente": "txt",
@@ -110,7 +152,7 @@
     "usado_vision": false,
     "tokens": {
       "input": 7403,
-      "output": 520,
+      "output": 649,
       "cached": 5888
     },
     "cvegeo": "31013",

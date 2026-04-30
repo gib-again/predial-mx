@@ -1,11 +1,34 @@
 {
   "predial": {
-    "tipo_esquema": "otro_no_clasificado",
-    "categoria": "segmento_vacio",
-    "descripcion_estructural": "El texto proporcionado para la sección de Impuesto Predial no contiene la mecánica de cálculo ni tablas tarifarias; únicamente aparece el encabezado del impuesto en el cuadro de ingresos estimados y luego páginas vacías respecto al predial. No es posible extraer una tarifa sin inventarla.",
-    "tabla_cruda": [],
+    "tipo_esquema": "tarifa_millar",
+    "tabla": [
+      {
+        "grupo": "urbano",
+        "clave": "con_edificaciones",
+        "descripcion": "Inmuebles urbanos y suburbanos con edificaciones; a la entrada en vigor de la ley.",
+        "tasa_millar": 0.0024,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "urbano",
+        "clave": "sin_edificaciones",
+        "descripcion": "Inmuebles urbanos y suburbanos sin edificaciones; a la entrada en vigor de la ley.",
+        "tasa_millar": 0.0045,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "rustico",
+        "clave": "general",
+        "descripcion": "Inmuebles rústicos; a la entrada en vigor de la ley.",
+        "tasa_millar": 0.0018,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      }
+    ],
     "minimo_predial": null,
-    "comentarios": "No se localizó artículo, tabla o cuota aplicable dentro del segmento enviado."
+    "comentarios": "Artículo 4 establece tasas anuales al millar sobre el valor catastral para tres grupos: urbanos y suburbanos con edificaciones (2.4 al millar), urbanos y suburbanos sin edificaciones (4.5 al millar) e inmuebles rústicos (1.8 al millar). El texto también muestra tasas para otros periodos históricos, pero la mecánica vigente del ejercicio 2026 se transcribe con la fila de 'A la entrada en vigor de la presente ley'. Los artículos 5 y 6 contienen valores unitarios y criterios de valuación catastral, no la tarifa del impuesto."
   },
   "_meta": {
     "fuente": "txt",
@@ -13,15 +36,15 @@
   },
   "_meta_v2": {
     "intentos": 1,
-    "requiere_revision": true,
+    "requiere_revision": false,
     "escalado": false,
-    "razon": "clasificado_como_otro_no_clasificado",
-    "usado_reocr": true,
-    "usado_vision": true,
+    "razon": null,
+    "usado_reocr": false,
+    "usado_vision": false,
     "tokens": {
-      "input": 32415,
-      "output": 465,
-      "cached": 17664
+      "input": 8659,
+      "output": 344,
+      "cached": 5888
     },
     "cvegeo": "11034",
     "estado": "guanajuato",

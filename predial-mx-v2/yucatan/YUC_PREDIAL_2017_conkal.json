@@ -137,7 +137,7 @@
       }
     ],
     "minimo_predial": null,
-    "comentarios": "Art. 13: tabla de valor catastral con cuota fija + factor aplicado al excedente; se paga bimestralmente dividiendo entre seis. Art. 14: predios agropecuarios pagan 10 al millar anual sobre valor registrado o catastral como tarifa paralela; predios rústicos pagan cuota por hectárea: 1-20 ha $328, 21-40 ha $437, 41+ ha $546; frutos civiles (Art. 15) 2% mensual habitacional y 3% mensual comercial sobre contraprestación, documentados como mecánicas secundarias/paralelas. Se ignoran descuentos."
+    "comentarios": "Art. 13: tarifa principal por valor catastral con cuota fija + factor marginal por rango, calculada bimestralmente al dividir el resultado entre seis. Tarifa paralela: predios rústicos pagan cuota por hectárea ($328 de 1 a 20 ha; $437 de 21 a 40 ha; $546 de 41 en adelante). Art. 15: predial calculado con base en frutos civiles: habitacional 2% mensual y comercial 3% mensual sobre la contraprestación; se documenta como tarifa secundaria no estructural. Art. 14 contiene descuentos por pronto pago, ignorados conforme instrucción."
   },
   "_meta": {
     "fuente": "txt",
@@ -152,7 +152,7 @@
     "usado_vision": false,
     "tokens": {
       "input": 7561,
-      "output": 663,
+      "output": 661,
       "cached": 5888
     },
     "cvegeo": "31013",

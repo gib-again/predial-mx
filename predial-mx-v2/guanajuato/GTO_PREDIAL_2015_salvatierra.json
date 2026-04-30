@@ -20,7 +20,7 @@
       },
       {
         "grupo": "rustico",
-        "clave": "general",
+        "clave": "rustico",
         "descripcion": "Inmuebles rústicos",
         "tasa_millar": 0.0018,
         "periodicidad": "anual",
@@ -28,7 +28,7 @@
       }
     ],
     "minimo_predial": null,
-    "comentarios": "Art. 5 establece tasas al millar diferenciadas para inmuebles urbanos y suburbanos con edificaciones (2.4 al millar), sin edificaciones (4.5 al millar) e inmuebles rústicos (1.8 al millar). El texto también contiene tablas de valores unitarios de terreno y construcción para el avalúo, que no son mecánica tarifaria del predial y se omiten. El Art. 6 incorpora criterios y factores de valuación, no una tarifa adicional."
+    "comentarios": "Art. 4: la ley establece tasas anuales al millar según tipo de inmueble (urbanos y suburbanos con edificaciones, urbanos y suburbanos sin edificaciones, e inmuebles rústicos). La tabla transcrita contiene también históricos de 2002-2014 y anteriores, pero la mecánica vigente para 2015 es la de tasas al millar por categoría. Art. 5 y 6 contienen valores unitarios y criterios de valuación catastral, no una tarifa distinta del predial."
   },
   "_meta": {
     "fuente": "txt",
@@ -43,7 +43,7 @@
     "usado_vision": false,
     "tokens": {
       "input": 8519,
-      "output": 294,
+      "output": 297,
       "cached": 5888
     },
     "cvegeo": "11028",

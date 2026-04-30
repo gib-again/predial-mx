@@ -20,11 +20,11 @@
       }
     ],
     "minimo_predial": {
-      "monto": 26.0,
-      "periodicidad": "bimestral",
+      "monto": 158.0,
+      "periodicidad": "anual",
       "unidad": "pesos"
     },
-    "comentarios": "Art. 2, fraccs. I y II: predios urbanos y rústicos pagan 3 al millar anual sobre valor catastral. Art. 2, fracc. III: no podrá ser inferior a $26.00 por bimestre, con cuota mínima anual de $158.00. Fracc. IV y demás fracciones establecen incentivos/bonificaciones y no se incorporan a la mecánica de cálculo."
+    "comentarios": "Art. 2 fracc. I y II: tasa de 3 al millar anual para predios urbanos y rústicos. Art. 2 fracc. III: mínimo predial de $26.00 por bimestre y cuota mínima anual de $158.00. Se omiten incentivos, descuentos y bonificaciones. La fracc. IV establece un incentivo del 50% para predios rústicos dedicados a agricultura y ganadería, aplicable solo en enero y febrero; no se documenta como mecánica de cálculo principal."
   },
   "_meta": {
     "fuente": "txt",
@@ -39,7 +39,7 @@
     "usado_vision": false,
     "tokens": {
       "input": 6842,
-      "output": 248,
+      "output": 268,
       "cached": 5888
     },
     "cvegeo": "05022",

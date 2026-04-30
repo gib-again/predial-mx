@@ -3,34 +3,30 @@
     "tipo_esquema": "tasa_unica",
     "tabla": [
       {
-        "descripcion": "Impuesto predial base valor catastral",
+        "descripcion": "Tasa única sobre el valor catastral; para predios con valor catastral igual o menor a 200000 aplica cuota fija",
         "tasa": 0.00025,
         "base_calculo": "valor_catastral",
-        "unidad": "porcentaje",
+        "unidad": "al_millar",
         "cuota_fija_adicional": null
       }
     ],
-    "minimo_predial": {
-      "monto": 50.0,
-      "periodicidad": "anual",
-      "unidad": "pesos"
-    },
-    "comentarios": "Artículo 13 establece una tasa uniforme del 0.00025 sobre el valor catastral. También señala que para predios con valor catastral igual o menor a $200,000.00 se paga una cuota fija de $50.00; se documenta como mínimo predial por coexistir con la regla general, sin interpretar el comparativo de topes del ejercicio anterior. Las tablas de valores unitarios de terreno y construcción no se extraen porque son insumos catastrales, no la mecánica del impuesto."
+    "minimo_predial": null,
+    "comentarios": "El artículo 13 establece que, una vez obtenido el valor catastral, se multiplica por el factor 0.00025. También dispone que, en caso de predios cuyo valor catastral sea igual o menor a 200000.00, el contribuyente pagará una cuota fija de 50.00. La tabla de valores unitarios de terreno y construcción sirve para determinar el valor catastral, no constituye la tarifa del impuesto predial. El texto además prevé topes de incremento respecto del ejercicio anterior (6% para predios con valor catastral menor o igual a 200000.00 y 10% para predios con valor catastral igual o superior a 200000.01), los cuales no se incorporan a la tabla principal por no corresponder a una tarifa adicional estructurada."
   },
   "_meta": {
     "fuente": "txt",
-    "modelo": "gpt-5.4-mini"
+    "modelo": "gpt-5.4"
   },
   "_meta_v2": {
     "intentos": 1,
     "requiere_revision": false,
-    "escalado": false,
-    "razon": null,
+    "escalado": true,
+    "razon": "escalado_a_gpt-5.4_tras_2x_mini_fallido",
     "usado_reocr": false,
     "usado_vision": false,
     "tokens": {
       "input": 7378,
-      "output": 218,
+      "output": 278,
       "cached": 5888
     },
     "cvegeo": "31043",

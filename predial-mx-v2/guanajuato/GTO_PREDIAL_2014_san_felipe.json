@@ -3,48 +3,88 @@
     "tipo_esquema": "tarifa_millar",
     "tabla": [
       {
-        "grupo": "urbano",
-        "clave": "con_edificaciones",
-        "descripcion": "Inmuebles urbanos y suburbanos con edificaciones; tasa anual según antigüedad/periodo.",
+        "grupo": "general",
+        "clave": "inmuebles_urbanos_suburbanos_con_edificaciones",
+        "descripcion": "Inmuebles urbanos y suburbanos con edificaciones",
         "tasa_millar": 0.0024,
         "periodicidad": "anual",
         "cuota_fija_adicional": null
       },
       {
-        "grupo": "urbano",
-        "clave": "sin_edificaciones",
-        "descripcion": "Inmuebles urbanos y suburbanos sin edificaciones; tasa anual según antigüedad/periodo.",
+        "grupo": "general",
+        "clave": "inmuebles_urbanos_suburbanos_sin_edificaciones",
+        "descripcion": "Inmuebles urbanos y suburbanos sin edificaciones",
         "tasa_millar": 0.0045,
         "periodicidad": "anual",
         "cuota_fija_adicional": null
       },
       {
         "grupo": "rustico",
-        "clave": "rusticos",
-        "descripcion": "Predios rústicos; tasa anual según antigüedad/periodo.",
+        "clave": "inmuebles_rusticos",
+        "descripcion": "Inmuebles rústicos",
         "tasa_millar": 0.0018,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "general",
+        "clave": "inmuebles_urbanos_suburbanos_con_edificaciones_anterior_2002_1993",
+        "descripcion": "Inmuebles urbanos y suburbanos con edificaciones, con anterioridad al año 2002 y hasta 1993 inclusive",
+        "tasa_millar": 0.008,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "general",
+        "clave": "inmuebles_urbanos_suburbanos_sin_edificaciones_anterior_2002_1993",
+        "descripcion": "Inmuebles urbanos y suburbanos sin edificaciones, con anterioridad al año 2002 y hasta 1993 inclusive",
+        "tasa_millar": 0.015,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "rustico",
+        "clave": "inmuebles_rusticos_anterior_2002_1993",
+        "descripcion": "Inmuebles rústicos, con anterioridad al año 2002 y hasta 1993 inclusive",
+        "tasa_millar": 0.006,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "general",
+        "clave": "inmuebles_urbanos_suburbanos_con_edificaciones_anterior_1993",
+        "descripcion": "Inmuebles urbanos y suburbanos con edificaciones, con anterioridad a 1993",
+        "tasa_millar": 0.013,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "general",
+        "clave": "inmuebles_urbanos_suburbanos_sin_edificaciones_anterior_1993",
+        "descripcion": "Inmuebles urbanos y suburbanos sin edificaciones, con anterioridad a 1993",
+        "tasa_millar": 0.012,
         "periodicidad": "anual",
         "cuota_fija_adicional": null
       }
     ],
     "minimo_predial": null,
-    "comentarios": "Art. 4: el impuesto predial se causa y liquida anualmente con tasas diferenciadas por tipo de inmueble y antigüedad; se transcriben las tasas vigentes para 2014 como catálogo categórico. La ley además remite a valores unitarios de terreno y construcción (Arts. 5 y 6), que son elementos de valuación catastral y no una mecánica tarifaria adicional. Se observan tasas históricas para periodos anteriores, pero la tarifa aplicable al ejercicio 2014 es la de entrada en vigor (2.4 al millar, 4.5 al millar y 1.8 al millar)."
+    "comentarios": "Artículo 4 contiene una tabla categórica de tasas al millar por tipo de inmueble y antigüedad. El OCR mezcla encabezados en la primera columna; se transcriben como categorías separadas. No se incluyen las tablas de valores unitarios del Artículo 5 porque son valores catastrales, no la mecánica tarifaria del predial. En el texto también aparecen disposiciones de valuación para inmuebles urbanos y rústicos (Art. 5 y 6), pero no constituyen tarifa del impuesto."
   },
   "_meta": {
     "fuente": "txt",
     "modelo": "gpt-5.4-mini"
   },
   "_meta_v2": {
-    "intentos": 1,
+    "intentos": 2,
     "requiere_revision": false,
     "escalado": false,
     "razon": null,
     "usado_reocr": false,
     "usado_vision": false,
     "tokens": {
-      "input": 8508,
-      "output": 356,
-      "cached": 5888
+      "input": 17672,
+      "output": 1242,
+      "cached": 11776
     },
     "cvegeo": "11030",
     "estado": "guanajuato",

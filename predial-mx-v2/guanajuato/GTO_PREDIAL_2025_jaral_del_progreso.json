@@ -3,16 +3,16 @@
     "tipo_esquema": "tarifa_millar",
     "tabla": [
       {
-        "grupo": "urbano",
-        "clave": "urbano_y_suburbano_con_edificaciones",
+        "grupo": "general",
+        "clave": "urbanos_suburbanos_con_edificaciones",
         "descripcion": "Inmuebles urbanos y suburbanos con edificaciones",
         "tasa_millar": 0.0024,
         "periodicidad": "anual",
         "cuota_fija_adicional": null
       },
       {
-        "grupo": "urbano",
-        "clave": "urbano_y_suburbano_sin_edificaciones",
+        "grupo": "general",
+        "clave": "urbanos_suburbanos_sin_edificaciones",
         "descripcion": "Inmuebles urbanos y suburbanos sin edificaciones",
         "tasa_millar": 0.0045,
         "periodicidad": "anual",
@@ -20,23 +20,15 @@
       },
       {
         "grupo": "rustico",
-        "clave": "rustico_con_edificaciones",
-        "descripcion": "Inmuebles rústicos con edificaciones",
-        "tasa_millar": 0.0018,
-        "periodicidad": "anual",
-        "cuota_fija_adicional": null
-      },
-      {
-        "grupo": "rustico",
-        "clave": "rustico_sin_edificaciones",
-        "descripcion": "Inmuebles rústicos sin edificaciones",
+        "clave": "rusticos",
+        "descripcion": "Inmuebles rústicos",
         "tasa_millar": 0.0018,
         "periodicidad": "anual",
         "cuota_fija_adicional": null
       }
     ],
     "minimo_predial": null,
-    "comentarios": "Art. 4 establece tasas anuales al millar por categoría de inmueble. Se transcribe la mecánica principal como tarifa_millar. El texto OCR muestra encabezados deteriorados; se conserva la estructura visible de categorías: urbanos y suburbanos con/sin edificaciones y rústicos con/sin edificaciones. No se documentan en la tabla los valores unitarios de los Arts. 5 y 6 porque corresponden a catastro/avalúo, no a la mecánica tarifaria del predial."
+    "comentarios": "Artículo 4: tasa anual al millar por categoría de predio. Se transcribe la mecánica principal como catálogo categórico de tasas. No se documentan en la tabla principal los valores unitarios de los artículos 5 y 6 porque son tablas de valuación catastral, no tarifa del impuesto. Se observa también una tasa histórica diferenciada para inmuebles con valor determinado o modificado con anterioridad a 2002/1993, pero el texto OCR está degradado y no queda suficientemente nítida su mecánica para estructurarla sin interpretación; se deja fuera de la tabla principal."
   },
   "_meta": {
     "fuente": "txt",
@@ -51,7 +43,7 @@
     "usado_vision": false,
     "tokens": {
       "input": 8659,
-      "output": 372,
+      "output": 322,
       "cached": 5888
     },
     "cvegeo": "11018",

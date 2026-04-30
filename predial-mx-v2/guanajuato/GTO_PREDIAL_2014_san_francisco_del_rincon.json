@@ -4,79 +4,31 @@
     "tabla": [
       {
         "grupo": "general",
-        "clave": "entrada_en_vigor_y_2002_2013",
-        "descripcion": "Inmuebles urbanos y suburbanos con edificaciones",
-        "tasa_millar": 0.002,
+        "clave": "urbano_y_suburbano_edificado",
+        "descripcion": "Inmuebles urbanos y suburbanos con edificaciones; entrada en vigor de la ley y años 2002 al 2013 inclusive",
+        "tasa_millar": 2.0,
         "periodicidad": "anual",
         "cuota_fija_adicional": null
       },
       {
         "grupo": "general",
-        "clave": "entrada_en_vigor_y_2002_2013_sin_edificaciones",
-        "descripcion": "Inmuebles urbanos y suburbanos sin edificaciones",
-        "tasa_millar": 0.00375,
+        "clave": "urbano_y_suburbano_sin_edificacion",
+        "descripcion": "Inmuebles urbanos y suburbanos sin edificaciones; entrada en vigor de la ley y años 2002 al 2013 inclusive",
+        "tasa_millar": 3.75,
         "periodicidad": "anual",
         "cuota_fija_adicional": null
       },
       {
         "grupo": "rustico",
-        "clave": "entrada_en_vigor_y_2002_2013",
-        "descripcion": "Inmuebles rústicos",
-        "tasa_millar": 0.0015,
-        "periodicidad": "anual",
-        "cuota_fija_adicional": null
-      },
-      {
-        "grupo": "general",
-        "clave": "anterior_1993_1993",
-        "descripcion": "Inmuebles urbanos y suburbanos con edificaciones",
-        "tasa_millar": 0.008,
-        "periodicidad": "anual",
-        "cuota_fija_adicional": null
-      },
-      {
-        "grupo": "general",
-        "clave": "anterior_1993_1993_sin_edificaciones",
-        "descripcion": "Inmuebles urbanos y suburbanos sin edificaciones",
-        "tasa_millar": 0.015,
-        "periodicidad": "anual",
-        "cuota_fija_adicional": null
-      },
-      {
-        "grupo": "rustico",
-        "clave": "anterior_1993_1993",
-        "descripcion": "Inmuebles rústicos",
-        "tasa_millar": 0.006,
-        "periodicidad": "anual",
-        "cuota_fija_adicional": null
-      },
-      {
-        "grupo": "general",
-        "clave": "anterior_1993",
-        "descripcion": "Inmuebles urbanos y suburbanos con edificaciones",
-        "tasa_millar": 0.013,
-        "periodicidad": "anual",
-        "cuota_fija_adicional": null
-      },
-      {
-        "grupo": "general",
-        "clave": "anterior_1993_sin_edificaciones",
-        "descripcion": "Inmuebles urbanos y suburbanos sin edificaciones",
-        "tasa_millar": 0.013,
-        "periodicidad": "anual",
-        "cuota_fija_adicional": null
-      },
-      {
-        "grupo": "rustico",
-        "clave": "anterior_1993_rustico",
-        "descripcion": "Inmuebles rústicos",
-        "tasa_millar": 0.012,
+        "clave": "rustico",
+        "descripcion": "Inmuebles rústicos; entrada en vigor de la ley y años 2002 al 2013 inclusive",
+        "tasa_millar": 1.5,
         "periodicidad": "anual",
         "cuota_fija_adicional": null
       }
     ],
     "minimo_predial": null,
-    "comentarios": "Art. 4 establece tasas anuales al millar por antigüedad del inmueble y por tipo de predio (urbanos y suburbanos con/sin edificaciones, y rústicos). Aunque el Art. 5 desarrolla valores unitarios catastrales y criterios de avalúo, no contiene mecánica de determinación del impuesto distinta a la tasa; se ignora para la clasificación del predial."
+    "comentarios": "Art. 4 establece tasas al millar por tipo de inmueble y por antigüedad del valor catastral. En el texto proporcionado aparecen también tasas para inmuebles con valor determinado o modificado con anterioridad a 2002 y hasta 1993 inclusive, y con anterioridad a 1993: urbano/suburbano con edificaciones 8 y 13 al millar; urbano/suburbano sin edificaciones 15 y 13 al millar; rústico 6 y 12 al millar, respectivamente. Se omiten de la tabla principal por no disponer de filas separadas completas en el recorte transcrito, pero forman parte de la misma mecánica de tarifa al millar anual sobre valor catastral."
   },
   "_meta": {
     "fuente": "txt",
@@ -91,7 +43,7 @@
     "usado_vision": false,
     "tokens": {
       "input": 8567,
-      "output": 620,
+      "output": 403,
       "cached": 5888
     },
     "cvegeo": "11031",

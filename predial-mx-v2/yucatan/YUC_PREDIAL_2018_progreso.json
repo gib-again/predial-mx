@@ -32,7 +32,7 @@
       }
     ],
     "minimo_predial": null,
-    "comentarios": "Art. 19: impuesto predial calculado con base en el valor catastral de los predios mediante tabla de rangos con cuota fija y factor para aplicar al excedente del límite inferior. Art. 21 establece una mecánica paralela sobre rentas o frutos civiles (5% sobre renta o frutos civiles mensuales), la cual no se incluye en la tabla principal por no ser la mecánica predominante de predial con base en valor catastral."
+    "comentarios": "Art. 19: impuesto predial calculado con base en el valor catastral de los predios mediante tabla de brackets con cuota fija y factor sobre el excedente del límite inferior. Art. 21 establece una tarifa secundaria de 5% sobre la renta o frutos civiles mensuales (casas y otro supuesto parcialmente truncado); no se integra a la tabla principal por ser una mecánica paralela y secundaria."
   },
   "_meta": {
     "fuente": "txt",
@@ -47,7 +47,7 @@
     "usado_vision": false,
     "tokens": {
       "input": 16000,
-      "output": 298,
+      "output": 288,
       "cached": 5888
     },
     "cvegeo": "31059",

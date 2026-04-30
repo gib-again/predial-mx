@@ -4,41 +4,41 @@
     "tabla": [
       {
         "grupo": "urbano",
-        "clave": "predios_urbanos_con_edificaciones",
+        "clave": "urbanos_con_edificaciones",
         "descripcion": "Predios urbanos con edificaciones",
-        "tasa_millar": 0.0016,
+        "tasa_millar": 1.6,
         "periodicidad": "anual",
         "cuota_fija_adicional": null
       },
       {
         "grupo": "urbano",
-        "clave": "predios_suburbanos_con_edificaciones",
+        "clave": "suburbanos_con_edificaciones",
         "descripcion": "Predios suburbanos con edificaciones",
-        "tasa_millar": 0.0016,
+        "tasa_millar": 1.6,
         "periodicidad": "anual",
         "cuota_fija_adicional": null
       },
       {
         "grupo": "rustico",
-        "clave": "predios_rusticos",
+        "clave": "rusticos",
         "descripcion": "Predios rústicos",
-        "tasa_millar": 0.0016,
+        "tasa_millar": 1.6,
         "periodicidad": "anual",
         "cuota_fija_adicional": null
       },
       {
         "grupo": "urbano",
-        "clave": "predios_urbanos_y_suburbanos_sin_edificaciones_baldios",
+        "clave": "urbanos_y_suburbanos_sin_edificacion_baldios",
         "descripcion": "Predios urbanos y suburbanos sin edificaciones (baldíos)",
-        "tasa_millar": 0.0016,
+        "tasa_millar": 1.6,
         "periodicidad": "anual",
         "cuota_fija_adicional": null
       },
       {
-        "grupo": "urbano",
-        "clave": "predios_urbanos_de_uso_industrial",
+        "grupo": "otro",
+        "clave": "urbanos_uso_industrial",
         "descripcion": "Predios urbanos de uso industrial",
-        "tasa_millar": 0.0016,
+        "tasa_millar": 1.6,
         "periodicidad": "anual",
         "cuota_fija_adicional": null
       }
@@ -48,7 +48,7 @@
       "periodicidad": "anual",
       "unidad": "uma"
     },
-    "comentarios": "Art. 10: la mecánica principal es una tarifa al millar uniforme de 1.6‰ sobre valor catastral para predios urbanos con edificaciones, suburbanos con edificaciones, rústicos, urbanos y suburbanos sin edificaciones (baldíos) y urbanos de uso industrial. No se capturan como tarifa separada las reglas de incremento de la tasa para predios urbanos no edificados (+100%) y para predios urbanos cuya edificación tenga valor inferior a la quinta parte del terreno (+50%) porque el texto las presenta como aumentos sobre la tasa señalada, ni el mínimo de 5 UMA para otras zonas y rústicos mayores de 16.01 hectáreas por no estar desagregado en una tabla estructural adicional."
+    "comentarios": "Art. 10: la mecánica principal es una tarifa al millar uniforme de 1.6‰ para cinco categorías de predio: urbanos con edificaciones, suburbanos con edificaciones, rústicos, urbanos y suburbanos sin edificaciones (baldíos) y urbanos de uso industrial. El texto añade incrementos para predios urbanos no edificados (+100%) y para predios urbanos con edificación cuyo valor sea inferior a la quinta parte del valor del terreno (+50%); se documentan como notas textuales porque no se presentan como tabla separada. El impuesto anual no podrá ser inferior a 3 UMA en zonas urbanas 6, 7 y 8 y en predios rústicos de hasta 16 hectáreas, ni inferior a 5 UMA en zonas urbanas 1 a 5 y en predios rústicos mayores de 16-01 hectáreas."
   },
   "_meta": {
     "fuente": "txt",
@@ -63,7 +63,7 @@
     "usado_vision": false,
     "tokens": {
       "input": 6614,
-      "output": 488,
+      "output": 496,
       "cached": 5888
     },
     "cvegeo": "28035",

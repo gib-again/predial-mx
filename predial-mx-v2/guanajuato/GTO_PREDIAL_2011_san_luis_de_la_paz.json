@@ -5,7 +5,7 @@
       {
         "grupo": "urbano",
         "clave": "urbano_con_edificaciones",
-        "descripcion": "Inmuebles urbanos y suburbanos con edificaciones, al inicio de la vigencia de la ley.",
+        "descripcion": "Inmuebles urbanos y suburbanos con edificaciones",
         "tasa_millar": 0.0024,
         "periodicidad": "anual",
         "cuota_fija_adicional": null
@@ -13,7 +13,7 @@
       {
         "grupo": "urbano",
         "clave": "urbano_sin_edificaciones",
-        "descripcion": "Inmuebles urbanos y suburbanos sin edificaciones, al inicio de la vigencia de la ley.",
+        "descripcion": "Inmuebles urbanos y suburbanos sin edificaciones",
         "tasa_millar": 0.0045,
         "periodicidad": "anual",
         "cuota_fija_adicional": null
@@ -21,14 +21,14 @@
       {
         "grupo": "rustico",
         "clave": "rustico",
-        "descripcion": "Inmuebles rústicos, al inicio de la vigencia de la ley.",
+        "descripcion": "Inmuebles rústicos",
         "tasa_millar": 0.0018,
         "periodicidad": "anual",
         "cuota_fija_adicional": null
       }
     ],
     "minimo_predial": null,
-    "comentarios": "Art. 4 establece tasas anuales al millar por categoría de inmueble. El texto también incluye tasas históricas por año de valuación: durante 2002-2010, 2.4 al millar para urbanos/suburbanos con edificaciones, 4.5 al millar para urbanos/suburbanos sin edificaciones y 1.8 al millar para rústicos; y para anterioridad a 2002/1993 y anterioridad a 1993 se señalan otras tasas al millar. Se documenta sólo la mecánica principal extractable como catálogo de tasas por categoría; las tablas de valores unitarios de los Arts. 5 y 6 corresponden a valuación catastral, no a la tarifa del impuesto."
+    "comentarios": "Art. 4: tasas anuales sobre valor determinado o modificado. Se transcriben las tasas por categoría: inmuebles urbanos y suburbanos con edificaciones 2.4 al millar; sin edificaciones 4.5 al millar; inmuebles rústicos 1.8 al millar. También aparecen tasas históricas para inmuebles con valores determinados o modificados con anterioridad a 2002 y 1993 (8, 15, 6 y 13 al millar según categoría), pero no alteran la mecánica principal del artículo; se deja constancia únicamente en este comentario. Los artículos 5 y 6 corresponden a valores unitarios y criterios de valuación, no a la tarifa del predial."
   },
   "_meta": {
     "fuente": "txt",
@@ -43,7 +43,7 @@
     "usado_vision": false,
     "tokens": {
       "input": 8618,
-      "output": 380,
+      "output": 348,
       "cached": 5888
     },
     "cvegeo": "11033",
