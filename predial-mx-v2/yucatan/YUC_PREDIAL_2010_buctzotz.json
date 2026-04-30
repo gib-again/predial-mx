@@ -53,7 +53,7 @@
       }
     ],
     "minimo_predial": null,
-    "comentarios": "Art. 4: tarifa progresiva del impuesto predial con cuota fija y factor porcentual del 0.025% sobre el excedente del límite inferior en cada rango. Los cuadros posteriores de valores unitarios de terreno y construcción son tablas catastrales, no la mecánica del impuesto, y se ignoran. Art. 5 prevé descuento por pronto pago, ignorado conforme a instrucción."
+    "comentarios": "Art. 4: impuesto predial calculado con base en el valor catastral mediante tarifa progresiva por rangos, con cuota fija y factor 0.025% sobre el excedente del límite inferior en cada bracket. El texto también incluye valores unitarios de terreno y construcción, que son tablas catastrales de referencia y no forman parte de la mecánica de cálculo del impuesto; se omiten. Art. 5: descuento por pronto pago ignorado por instrucción."
   },
   "_meta": {
     "fuente": "txt",
@@ -65,9 +65,9 @@
     "escalado": false,
     "razon": null,
     "tokens": {
-      "input": 6173,
-      "output": 379,
-      "cached": 3840
+      "input": 7327,
+      "output": 401,
+      "cached": 4864
     },
     "cvegeo": "31006",
     "estado": "yucatan",

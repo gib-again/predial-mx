@@ -78,7 +78,7 @@
       "periodicidad": "anual",
       "unidad": "uma"
     },
-    "comentarios": "Art. 10, fracc. I: tabla progresiva para inmuebles urbanos y suburbanos con construcciones permanentes y rústicas con y sin construcción, con fórmula Impuesto = (Valor Catastral - Límite Inferior) x Tasa al millar + Cuota Anual. Art. 10, fracc. II: predios rústicos pagan tasa anual de 1.5 al millar sobre el valor catastral; se describe como tarifa paralela porque la tabla principal corresponde a la fracc. I. Art. 10, fracc. III: predios urbanos y suburbanos baldíos pagan la tasa del artículo aumentada en 100%; se consigna como regla paralela/acumulable no incorporada en la tabla principal. Art. 11: cuota mínima anual de 3 UMA."
+    "comentarios": "Art. 10 fracc. I establece una tabla de valor catastral para inmuebles urbanos y suburbanos con construcciones permanentes y rústicas con y sin construcción, aplicando la fórmula: (Valor Catastral - Límite Inferior) x Tasa Anual al Millar + Cuota Anual. Art. 10 fracc. II señala para predios rústicos una tasa anual de 1.5 al millar sobre el valor catastral. Art. 10 fracc. III dispone que los predios urbanos y suburbanos sin edificaciones (baldíos) aumentan la tasa en 100%. Estas tarifas paralelas no se integran en la tabla principal por tener reglas específicas por grupo."
   },
   "_meta": {
     "fuente": "txt",
@@ -90,9 +90,9 @@
     "escalado": false,
     "razon": null,
     "tokens": {
-      "input": 5916,
-      "output": 629,
-      "cached": 3840
+      "input": 7070,
+      "output": 608,
+      "cached": 4864
     },
     "cvegeo": "28038",
     "estado": "tamaulipas",

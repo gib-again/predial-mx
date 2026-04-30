@@ -40,7 +40,7 @@
       }
     ],
     "minimo_predial": null,
-    "comentarios": "Artículo 13: tarifa escalonada por valores catastrales para predios urbanos y rústicos con o sin construcción; cada rango establece una cuota fija anual y el factor para aplicar al excedente es 0.00 en todos los renglones. Se menciona aparte una tarifa paralela para todo predio destinado a la producción agropecuaria de 10 al millar anual sobre el valor registrado o catastral; no se incorpora en la tabla principal por ser una tarifa separada. Se ignoran descuentos del artículo 14."
+    "comentarios": "Artículo 13: la tarifa principal para predios urbanos y rústicos con o sin construcción es una tabla por rangos de valores catastrales con cuota fija anual y factor para aplicar al excedente igual a 0.00 en todos los brackets; por ello se clasifica como cuota fija escalonada. Tarifa secundaria paralela: todo predio destinado a la producción agropecuaria paga 10 al millar anual sobre el valor registrado o catastral; no se incluye en la tabla principal por ser una mecánica separada. Artículo 14 contiene solo descuento por pago oportuno y se ignora."
   },
   "_meta": {
     "fuente": "txt",
@@ -52,9 +52,9 @@
     "escalado": false,
     "razon": null,
     "tokens": {
-      "input": 5255,
-      "output": 309,
-      "cached": 3840
+      "input": 6409,
+      "output": 325,
+      "cached": 4864
     },
     "cvegeo": "31055",
     "estado": "yucatan",

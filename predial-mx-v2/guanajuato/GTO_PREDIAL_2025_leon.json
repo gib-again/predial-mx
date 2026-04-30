@@ -71,7 +71,7 @@
       "periodicidad": "anual",
       "unidad": "pesos"
     },
-    "comentarios": "Artículo 5, fracción I, inciso a): tabla progresiva para urbanos, suburbanos y rústicos con edificaciones, con fórmula ((VF-LI)*T)+CF. Se transcribe solo esta mecánica principal. Existen tarifas paralelas para otros supuestos del mismo artículo: fracción I inciso b) y fracción II inciso b) para predios sin edificación con progresividad por superficie; fracción II inciso a) y fracción III inciso a) para predios con edificación en otros periodos con tarifas progresivas similares. Las tablas de valores unitarios del artículo 6 no se incluyen por ser catastro, no mecánica de cálculo del impuesto."
+    "comentarios": "Artículo 5, fracción I, inciso a: inmuebles urbanos, suburbanos y rústicos con edificaciones; mecánica progresiva sobre valor fiscal con cuota fija más tasa marginal sobre el excedente. El texto también contiene tarifas paralelas para inmuebles sin edificaciones (inciso b) y para otras determinaciones históricas (fracciones II y IIX), pero se omiten de la tabla principal por tratarse de esquemas paralelos de la misma sección. Para el inciso b de las fracciones I y II, el texto muestra tasas progresivas sobre superficie/valor del terreno con fórmula sobre valor del metro cuadrado; no se transcribe aquí porque el segmento OCR está severamente degradado. Art. 5 también indica que si el resultado es inferior a la cuota mínima anual del Art. 44, aplica dicha cuota mínima."
   },
   "_meta": {
     "fuente": "txt",
@@ -83,9 +83,9 @@
     "escalado": false,
     "razon": null,
     "tokens": {
-      "input": 10539,
-      "output": 595,
-      "cached": 3840
+      "input": 11693,
+      "output": 628,
+      "cached": 4864
     },
     "cvegeo": "11020",
     "estado": "guanajuato",

@@ -71,7 +71,69 @@ campos automáticamente y propongo fixes basados en los patrones acumulados.
 - **prioridad**: alta · media · baja
 - **estado**: pending · in_progress · done
 
+### P-01
+- **casos**: 
+- **diagnostico**: Errores de segmentación, no había sección predial en txt de focus_predial de origen
+- **fix_propuesto**: mejorar segmentador 
+- **prioridad**: alta
+- **estado**: pending
+
+### P-02
+- **casos**: 
+- **diagnostico**: seccion predial existe en txt de focus_predial pero no se captura la información 
+- **fix_propuesto**: retry con gpt-5.4, modelo de visión si es necesario
+- **prioridad**: media
+- **estado**: pending
+
+### P-03
+- **casos**: 
+- **diagnostico**: Fallo de OCR en páginas con tarifas prediales 
+- **fix_propuesto**: evaluar costo de re-OCR o usar modelo de visión
+- **prioridad**: media
+- **estado**: pending
+
+
+### P-04
+- **casos**: 
+- **diagnostico**: El documento no contiene las tarifas predial 
+- **fix_propuesto**: dejar en blanco (sin_predial) e intentar corregir por imputación
+- **prioridad**: media
+- **estado**: pending
+
+### P-05
+- **casos**: 
+- **diagnostico**: El esquema de cobro no está contemplado en el esquema, cuota por metro cuadrado
+- **fix_propuesto**: clasificar como tasa_fija y distinguir (dentro del tipo de esquema) de tasa fija sobre el valor catastral. Adecuar esquema. 
+- **prioridad**: alta
+- **estado**: pending
+
+### P-06
+- **diagnostico**: El esquema cuota_fija es restrictivo, tipo de esquema no contemplado
+- **fix_propuesto**: Adaptar esquema cuota_fija para poder incluir los frutos de rentas, sin que este sea el tipo dominante de esquema catastral 
+- **prioridad**: media
+- **estado**: pending
+
+### P-07
+- **diagnostico**: Esquema no convencional basado en rentas civiles
+- **fix_propuesto**: Crear otros_rentas como tipo de esquema, indicando que es un esquema poco usado pero basado en rentas, incluye el impuesto al millar para predios agricolas en el esquema. 
+- **prioridad**: media
+- **estado**: pending
+
+### P-09
+- **diagnostico**: Esquema no contemplado, tasa unica con cuota fija adicional
+- **fix_propuesto**: robustecer esquema tasa_unica para que soporte cuotas fijas adicionales
+- **prioridad**: media
+- **estado**: pending
+
+### P-10
+- **diagnostico**: El recorte corresponde a un documento que no es la Ley de Ingresos
+- **fix_propuesto**: Se indica el documento correcto y se vuelve a realizar segmentación y extracción
+- **prioridad**: media
+- **estado**: pending
+
 ---
+
+
 
 
 ## Tabla de contenidos
@@ -115,13 +177,13 @@ campos automáticamente y propongo fixes basados en los patrones acumulados.
 
 **Revisión**:
 
-- [ ] revisado
-- veredicto: 
-- tipo_correcto: 
-- causa_raiz: 
-- patron: 
-- notas: 
-- accion: 
+- [x ] revisado
+- veredicto: invalido 
+- tipo_correcto: n/a
+- causa_raiz: segmentacion
+- patron: P-01
+- notas: Verdadera ley de Ingresos en pagina 83 de COAH_RAW_2010_ocampo_104-ORD-29-DIC-2009.PDF
+- accion: re-segmentación, mejora de segment.py
 
 ---
 
@@ -136,13 +198,13 @@ campos automáticamente y propongo fixes basados en los patrones acumulados.
 
 **Revisión**:
 
-- [ ] revisado
-- veredicto: 
-- tipo_correcto: 
-- causa_raiz: 
-- patron: 
-- notas: 
-- accion: 
+- [ x] revisado
+- veredicto: Invalido 
+- tipo_correcto: n/a
+- causa_raiz: segmentacion
+- patron: P-01
+- notas: seccion predial en pagina 120 de COAH_RAW_2010_piedras_negras_104-ORD-29-DIC-2009.PDF 
+- accion: re-segmentación, mejora de segment.py
 
 ---
 
@@ -157,13 +219,13 @@ campos automáticamente y propongo fixes basados en los patrones acumulados.
 
 **Revisión**:
 
-- [ ] revisado
-- veredicto: 
-- tipo_correcto: 
-- causa_raiz: 
-- patron: 
-- notas: 
-- accion: 
+- [ x] revisado
+- veredicto: invalido
+- tipo_correcto: n/a
+- causa_raiz: segmetacion
+- patron: P-01
+- notas: seccion predial en paginas 165-166 de COAH_RAW_2010_ramos_arizpe_104-ORD-29-DIC-2009.PDF 
+- accion: re-segmentación, mejora de segment.py
 
 ---
 
@@ -178,13 +240,13 @@ campos automáticamente y propongo fixes basados en los patrones acumulados.
 
 **Revisión**:
 
-- [ ] revisado
-- veredicto: 
-- tipo_correcto: 
-- causa_raiz: 
-- patron: 
-- notas: 
-- accion: 
+- [ x] revisado
+- veredicto: invalido 
+- tipo_correcto: n/a
+- causa_raiz: segment
+- patron: P-01
+- notas: tarifas predial en paginas 25-28 de 2024_17194_Periódico_Número_261_Segunda_Parte_ocr.pdf
+- accion: re-segmentacion, mejora de segment.py; revisar si el esquema predial es soportado en esquema v2
 
 ---
 
@@ -199,13 +261,13 @@ campos automáticamente y propongo fixes basados en los patrones acumulados.
 
 **Revisión**:
 
-- [ ] revisado
-- veredicto: 
-- tipo_correcto: 
-- causa_raiz: 
-- patron: 
-- notas: 
-- accion: 
+- [ x] revisado
+- veredicto: incorrecto
+- tipo_correcto: tarifa_millar
+- causa_raiz: api_error
+- patron: P-02
+- notas: tabla tarifas en pagina 15 de focus_predial/*_2025_atarjea.pdf
+- accion: re-run api
 
 ---
 
@@ -220,13 +282,13 @@ campos automáticamente y propongo fixes basados en los patrones acumulados.
 
 **Revisión**:
 
-- [ ] revisado
-- veredicto: 
-- tipo_correcto: 
-- causa_raiz: 
-- patron: 
-- notas: 
-- accion: 
+- [ x] revisado
+- veredicto: incorrecto
+- tipo_correcto: tarifa_millar
+- causa_raiz: api_error
+- patron: P-02
+- notas: tabla tarifas en pagina 17-18 de focus_predial/*_2026_atarjea.pdf
+- accion: re-run api
 
 ---
 
@@ -241,13 +303,13 @@ campos automáticamente y propongo fixes basados en los patrones acumulados.
 
 **Revisión**:
 
-- [ ] revisado
-- veredicto: 
-- tipo_correcto: 
-- causa_raiz: 
-- patron: 
-- notas: 
-- accion: 
+- [ x] revisado
+- veredicto: invalido 
+- tipo_correcto: n/a
+- causa_raiz: segment
+- patron: P-01
+- notas: tarifas predial en paginas 24-25 de 2024_17196_Periódico_Número_261_Novena_Parte_ocr.pdf
+- accion: mejorar segment.py
 
 ---
 
@@ -262,13 +324,13 @@ campos automáticamente y propongo fixes basados en los patrones acumulados.
 
 **Revisión**:
 
-- [ ] revisado
-- veredicto: 
-- tipo_correcto: 
-- causa_raiz: 
-- patron: 
-- notas: 
-- accion: 
+- [ x] revisado
+- veredicto: invalido 
+- tipo_correcto: n/a
+- causa_raiz: segment
+- patron: P-01
+- notas: tarifas predial en paginas 200-201 de 2022_15530_Periodico_Numero_260_Décima_Primera_Parte_ocr.pdf
+- accion: mejorar segment.py
 
 ---
 
@@ -409,13 +471,13 @@ campos automáticamente y propongo fixes basados en los patrones acumulados.
 
 **Revisión**:
 
-- [ ] revisado
-- veredicto: 
-- tipo_correcto: 
-- causa_raiz: 
-- patron: 
-- notas: 
-- accion: 
+- [ x] revisado
+- veredicto: invalido 
+- tipo_correcto: n/a
+- causa_raiz: documento_ambiguo
+- patron: P-10
+- notas: documento corresponde a fe de erratas, no contiene ley de ingresos
+- accion: documento correcto en focus_predial/2014/GTO_PREDIAL_2015_huanimaro.txt
 
 ---
 
@@ -472,13 +534,13 @@ campos automáticamente y propongo fixes basados en los patrones acumulados.
 
 **Revisión**:
 
-- [ ] revisado
-- veredicto: 
-- tipo_correcto: 
-- causa_raiz: 
-- patron: 
-- notas: 
-- accion: 
+- [ x] revisado
+- veredicto: incorrecto
+- tipo_correcto: tarifa_millar
+- causa_raiz: api_error
+- patron: P-02
+- notas: tabla tarifas en pagina 15-16 de focus_predial/GTO_PREDIAL_2024_jaral_del_progreso.pdf
+- accion: re-run api
 
 ---
 
@@ -493,13 +555,13 @@ campos automáticamente y propongo fixes basados en los patrones acumulados.
 
 **Revisión**:
 
-- [ ] revisado
-- veredicto: 
-- tipo_correcto: 
-- causa_raiz: 
-- patron: 
-- notas: 
-- accion: 
+- [ x] revisado
+- veredicto: invalido 
+- tipo_correcto: n/a
+- causa_raiz: segment
+- patron: P-01
+- notas: tarifas predial en paginas 223 de 2023_16442_Periodico_Numero_261_Vigesima_Primera_Parte_ocr.pdf
+- accion: mejorar segment.py
 
 ---
 
@@ -514,13 +576,13 @@ campos automáticamente y propongo fixes basados en los patrones acumulados.
 
 **Revisión**:
 
-- [ ] revisado
-- veredicto: 
-- tipo_correcto: 
-- causa_raiz: 
-- patron: 
-- notas: 
-- accion: 
+- [ X] revisado
+- veredicto: incorrecto
+- tipo_correcto: mixto
+- causa_raiz: ocr
+- patron: P-03
+- notas: El ocr del recorte falla solo en las tablas de tarifas
+- accion: re-ocr o modelo de vision 
 
 ---
 
@@ -556,13 +618,13 @@ campos automáticamente y propongo fixes basados en los patrones acumulados.
 
 **Revisión**:
 
-- [ ] revisado
-- veredicto: 
-- tipo_correcto: 
-- causa_raiz: 
-- patron: 
+- [ X] revisado
+- veredicto: invalido 
+- tipo_correcto: n/a
+- causa_raiz: segment
+- patron: P-01
 - notas: 
-- accion: 
+- accion: re-segmentar
 
 ---
 
@@ -619,13 +681,13 @@ campos automáticamente y propongo fixes basados en los patrones acumulados.
 
 **Revisión**:
 
-- [ ] revisado
-- veredicto: 
-- tipo_correcto: 
-- causa_raiz: 
-- patron: 
-- notas: 
-- accion: 
+- [ X] revisado
+- veredicto: invalido 
+- tipo_correcto: n/a
+- causa_raiz: segment
+- patron: P-01
+- notas: No hay busqueda por texto despues de las primeras páginas 
+- accion: re-segmentar
 
 ---
 
@@ -661,14 +723,13 @@ campos automáticamente y propongo fixes basados en los patrones acumulados.
 
 **Revisión**:
 
-- [ ] revisado
-- veredicto: 
-- tipo_correcto: 
-- causa_raiz: 
-- patron: 
-- notas: 
-- accion: 
-
+- [ X] revisado
+- veredicto: invalido 
+- tipo_correcto: n/a
+- causa_raiz: segment
+- patron: P-01
+- notas: No hay busqueda por texto despues de las primeras páginas 
+- accion: re-segmentar
 ---
 
 ### `guanajuato/san_diego_de_la_union/2025` (cvegeo 11029)
@@ -766,13 +827,13 @@ campos automáticamente y propongo fixes basados en los patrones acumulados.
 
 **Revisión**:
 
-- [ ] revisado
-- veredicto: 
-- tipo_correcto: 
-- causa_raiz: 
-- patron: 
+- [ X] revisado
+- veredicto: invalido 
+- tipo_correcto: n/a
+- causa_raiz: segment
+- patron: P-01
 - notas: 
-- accion: 
+- accion: re-segmentar
 
 ---
 
@@ -787,13 +848,13 @@ campos automáticamente y propongo fixes basados en los patrones acumulados.
 
 **Revisión**:
 
-- [ ] revisado
-- veredicto: 
-- tipo_correcto: 
-- causa_raiz: 
-- patron: 
-- notas: 
-- accion: 
+- [ X] revisado
+- veredicto: invalido 
+- tipo_correcto: n/a
+- causa_raiz: segment
+- patron: P-01
+- notas: No hay busqueda por texto despues de las primeras páginas 
+- accion: re-segmentar
 
 ---
 
@@ -808,13 +869,13 @@ campos automáticamente y propongo fixes basados en los patrones acumulados.
 
 **Revisión**:
 
-- [ ] revisado
-- veredicto: 
-- tipo_correcto: 
-- causa_raiz: 
-- patron: 
-- notas: 
-- accion: 
+- [ X] revisado
+- veredicto: incorrecto
+- tipo_correcto: mixto
+- causa_raiz: ocr
+- patron: P-03
+- notas: El ocr del recorte falla solo en las tablas de tarifas
+- accion: re-ocr o modelo de vision 
 
 ---
 
@@ -829,13 +890,13 @@ campos automáticamente y propongo fixes basados en los patrones acumulados.
 
 **Revisión**:
 
-- [ ] revisado
-- veredicto: 
-- tipo_correcto: 
-- causa_raiz: 
-- patron: 
-- notas: 
-- accion: 
+- [ x] revisado
+- veredicto: invalido 
+- tipo_correcto: n/a
+- causa_raiz: segment
+- patron: P-01
+- notas: seccion tarifa predial en pagina 155 de 2009-12-29_suplemento.pdf
+- accion: re-segmentar y mejorar segment.py 
 
 ---
 
@@ -850,13 +911,13 @@ campos automáticamente y propongo fixes basados en los patrones acumulados.
 
 **Revisión**:
 
-- [ ] revisado
-- veredicto: 
-- tipo_correcto: 
-- causa_raiz: 
-- patron: 
-- notas: 
-- accion: 
+- [ x] revisado
+- veredicto: invalido 
+- tipo_correcto: n/a
+- causa_raiz: segment
+- patron: P-01
+- notas: tarifas predial en pagina 402 de 2010-12-29_suplemento.pdf
+- accion: re-segmentar, mejorar segment.py
 
 ---
 
@@ -871,13 +932,13 @@ campos automáticamente y propongo fixes basados en los patrones acumulados.
 
 **Revisión**:
 
-- [ ] revisado
-- veredicto: 
-- tipo_correcto: 
-- causa_raiz: 
+- [ x] revisado
+- veredicto: incorrecto 
+- tipo_correcto: cuota_fija
+- causa_raiz: documento_ambiguo
 - patron: 
-- notas: 
-- accion: 
+- notas: El txt de focus predial no contiene las tarifas, pero el documento está bien segmentado y el OCR funciona bien.
+- accion: re-try con modelo de vision
 
 ---
 
@@ -894,12 +955,12 @@ campos automáticamente y propongo fixes basados en los patrones acumulados.
 
 **Revisión**:
 
-- [ ] revisado
-- veredicto: 
-- tipo_correcto: 
-- causa_raiz: 
-- patron: 
-- notas: 
+- [ x] revisado
+- veredicto: correcto 
+- tipo_correcto: n/a
+- causa_raiz: documento_ambiguo
+- patron: P-04
+- notas: La sección predial no contiene información sobre tasas, se deja vació por si se puede llenar con imputación
 - accion: 
 
 ---
@@ -916,13 +977,13 @@ campos automáticamente y propongo fixes basados en los patrones acumulados.
 
 **Revisión**:
 
-- [ ] revisado
-- veredicto: 
-- tipo_correcto: 
-- causa_raiz: 
-- patron: 
-- notas: 
-- accion: 
+- [ x] revisado
+- veredicto: Correcto 
+- tipo_correcto: otro_no_clasificado
+- causa_raiz: otro
+- patron: P-05
+- notas: es un tipo de couta por extensión 
+- accion: clasificar como tasa_fija con la anotación de base sobre extension del predio, intentar incluir la tasa al millar agropecuaria en el JSON.  
 
 ---
 
@@ -938,13 +999,13 @@ campos automáticamente y propongo fixes basados en los patrones acumulados.
 
 **Revisión**:
 
-- [ ] revisado
-- veredicto: 
-- tipo_correcto: 
-- causa_raiz: 
-- patron: 
-- notas: 
-- accion: 
+- [ x] revisado
+- veredicto: Correcto 
+- tipo_correcto: otro_no_clasificado
+- causa_raiz: otro
+- patron: P-05
+- notas: es un tipo de couta por extensión 
+- accion: clasificar como tasa_fija con la anotación de base sobre extension del predio, intentar incluir la tasa al millar agropecuaria en el JSON.  
 
 ---
 
@@ -960,13 +1021,13 @@ campos automáticamente y propongo fixes basados en los patrones acumulados.
 
 **Revisión**:
 
-- [ ] revisado
-- veredicto: 
-- tipo_correcto: 
-- causa_raiz: 
-- patron: 
-- notas: 
-- accion: 
+- [ x] revisado
+- veredicto: Correcto 
+- tipo_correcto: otro_no_clasificado
+- causa_raiz: otro
+- patron: P-05
+- notas: es un tipo de couta por extensión 
+- accion: clasificar como tasa_fija con la anotación de base sobre extension del predio, intentar incluir la tasa al millar agropecuaria en el JSON.  
 
 ---
 
@@ -982,13 +1043,13 @@ campos automáticamente y propongo fixes basados en los patrones acumulados.
 
 **Revisión**:
 
-- [ ] revisado
-- veredicto: 
-- tipo_correcto: 
-- causa_raiz: 
-- patron: 
-- notas: 
-- accion: 
+- [ x] revisado
+- veredicto: Correcto 
+- tipo_correcto: otro_no_clasificado
+- causa_raiz: otro
+- patron: P-05
+- notas: es un tipo de couta por extensión 
+- accion: clasificar como tasa_fija con la anotación de base sobre extension del predio, intentar incluir la tasa al millar agropecuaria en el JSON.  
 
 ---
 
@@ -1004,13 +1065,13 @@ campos automáticamente y propongo fixes basados en los patrones acumulados.
 
 **Revisión**:
 
-- [ ] revisado
-- veredicto: 
-- tipo_correcto: 
-- causa_raiz: 
-- patron: 
-- notas: 
-- accion: 
+- [ x] revisado
+- veredicto: Correcto 
+- tipo_correcto: otro_no_clasificado
+- causa_raiz: otro
+- patron: P-05
+- notas: es un tipo de couta por extensión 
+- accion: clasificar como tasa_fija con la anotación de base sobre extension del predio, intentar incluir la tasa al millar agropecuaria en el JSON.  
 
 ---
 
@@ -1026,13 +1087,13 @@ campos automáticamente y propongo fixes basados en los patrones acumulados.
 
 **Revisión**:
 
-- [ ] revisado
-- veredicto: 
-- tipo_correcto: 
-- causa_raiz: 
-- patron: 
-- notas: 
-- accion: 
+- [ x] revisado
+- veredicto: Correcto 
+- tipo_correcto: otro_no_clasificado
+- causa_raiz: otro
+- patron: P-05
+- notas: es un tipo de couta por extensión 
+- accion: clasificar como tasa_fija con la anotación de base sobre extension del predio, intentar incluir la tasa al millar agropecuaria en el JSON.  
 
 ---
 
@@ -1048,13 +1109,13 @@ campos automáticamente y propongo fixes basados en los patrones acumulados.
 
 **Revisión**:
 
-- [ ] revisado
-- veredicto: 
-- tipo_correcto: 
-- causa_raiz: 
-- patron: 
-- notas: 
-- accion: 
+- [ x] revisado
+- veredicto: Correcto 
+- tipo_correcto: otro_no_clasificado
+- causa_raiz: otro
+- patron: P-05
+- notas: es un tipo de couta por extensión 
+- accion: clasificar como tasa_fija con la anotación de base sobre extension del predio, intentar incluir la tasa al millar agropecuaria en el JSON.  
 
 ---
 
@@ -1070,13 +1131,13 @@ campos automáticamente y propongo fixes basados en los patrones acumulados.
 
 **Revisión**:
 
-- [ ] revisado
-- veredicto: 
-- tipo_correcto: 
-- causa_raiz: 
-- patron: 
-- notas: 
-- accion: 
+- [ x] revisado
+- veredicto: Correcto 
+- tipo_correcto: otro_no_clasificado
+- causa_raiz: otro
+- patron: P-05
+- notas: es un tipo de couta por extensión 
+- accion: clasificar como tasa_fija con la anotación de base sobre extension del predio, intentar incluir la tasa al millar agropecuaria en el JSON.  
 
 ---
 
@@ -1092,13 +1153,13 @@ campos automáticamente y propongo fixes basados en los patrones acumulados.
 
 **Revisión**:
 
-- [ ] revisado
-- veredicto: 
-- tipo_correcto: 
-- causa_raiz: 
-- patron: 
-- notas: 
-- accion: 
+- [ x] revisado
+- veredicto: Correcto 
+- tipo_correcto: otro_no_clasificado
+- causa_raiz: otro
+- patron: P-05
+- notas: es un tipo de couta por extensión 
+- accion: clasificar como tasa_fija con la anotación de base sobre extension del predio, intentar incluir la tasa al millar agropecuaria en el JSON.  
 
 ---
 
@@ -1113,13 +1174,13 @@ campos automáticamente y propongo fixes basados en los patrones acumulados.
 
 **Revisión**:
 
-- [ ] revisado
-- veredicto: 
-- tipo_correcto: 
-- causa_raiz: 
-- patron: 
-- notas: 
-- accion: 
+- [ x] revisado
+- veredicto: incorrecto
+- tipo_correcto: cuota_fija_simple
+- causa_raiz: otro
+- patron: P-06
+- notas: Adaptar esquema para poder incluir los frutos de rentas, sin que este sea el tipo dominante de esquema 
+- accion: clasificar como cuota_fija_simple pero incluir información de cobro los frutos de rentas
 
 ---
 
@@ -1134,13 +1195,13 @@ campos automáticamente y propongo fixes basados en los patrones acumulados.
 
 **Revisión**:
 
-- [ ] revisado
-- veredicto: 
-- tipo_correcto: 
-- causa_raiz: 
-- patron: 
+- [ x] revisado
+- veredicto: incorrecto 
+- tipo_correcto: otro_no_clasificado
+- causa_raiz: schema
+- patron: P-07
 - notas: 
-- accion: 
+- accion: Crear categoría otros_rentas o similar, que indique que es un esquema no convencional basado en rentas civiles, incluye la capacidad de incluir el impuesto al millar para predios agricolas  
 
 ---
 
@@ -1157,13 +1218,13 @@ campos automáticamente y propongo fixes basados en los patrones acumulados.
 
 **Revisión**:
 
-- [ ] revisado
-- veredicto: 
-- tipo_correcto: 
-- causa_raiz: 
-- patron: 
-- notas: 
-- accion: 
+- [ X] revisado
+- veredicto: incorrecto 
+- tipo_correcto: tarifa_millar
+- causa_raiz: segment
+- patron: P-01
+- notas: el recorte del PDF es correcto, pero el del txt falla
+- accion: re-segmentar
 
 ---
 
@@ -1178,13 +1239,13 @@ campos automáticamente y propongo fixes basados en los patrones acumulados.
 
 **Revisión**:
 
-- [ ] revisado
-- veredicto: 
-- tipo_correcto: 
-- causa_raiz: 
-- patron: 
+- [ x] revisado
+- veredicto: invalido 
+- tipo_correcto: n/a
+- causa_raiz: segment
+- patron: P-01
 - notas: 
-- accion: 
+- accion: mejorar segment.py
 
 ---
 
@@ -1199,13 +1260,13 @@ campos automáticamente y propongo fixes basados en los patrones acumulados.
 
 **Revisión**:
 
-- [ ] revisado
-- veredicto: 
-- tipo_correcto: 
-- causa_raiz: 
-- patron: 
-- notas: 
-- accion: 
+- [ x] revisado
+- veredicto: invalido 
+- tipo_correcto: n/a
+- causa_raiz: segment
+- patron: P-01
+- notas: tarifas predial en paginas 24-25 de 2024_17196_Periódico_Número_261_Novena_Parte_ocr.pdf
+- accion: mejorar segment.py
 
 ---
 
@@ -1220,13 +1281,13 @@ campos automáticamente y propongo fixes basados en los patrones acumulados.
 
 **Revisión**:
 
-- [ ] revisado
-- veredicto: 
-- tipo_correcto: 
-- causa_raiz: 
-- patron: 
-- notas: 
-- accion: 
+- [ x] revisado
+- veredicto: invalido 
+- tipo_correcto: n/a
+- causa_raiz: segment
+- patron: P-01
+- notas:
+- accion: mejorar segment.py
 
 ---
 
@@ -1241,13 +1302,13 @@ campos automáticamente y propongo fixes basados en los patrones acumulados.
 
 **Revisión**:
 
-- [ ] revisado
-- veredicto: 
-- tipo_correcto: 
-- causa_raiz: 
-- patron: 
-- notas: 
-- accion: 
+- [ x] revisado
+- veredicto: invalido 
+- tipo_correcto: n/a
+- causa_raiz: segment
+- patron: P-01
+- notas:
+- accion: mejorar segment.py
 
 ---
 
@@ -1262,13 +1323,13 @@ campos automáticamente y propongo fixes basados en los patrones acumulados.
 
 **Revisión**:
 
-- [ ] revisado
-- veredicto: 
-- tipo_correcto: 
-- causa_raiz: 
-- patron: 
-- notas: 
-- accion: 
+- [ x] revisado
+- veredicto: invalido 
+- tipo_correcto: n/a
+- causa_raiz: segment
+- patron: P-01
+- notas:
+- accion: mejorar segment.py
 
 ---
 
@@ -1283,13 +1344,13 @@ campos automáticamente y propongo fixes basados en los patrones acumulados.
 
 **Revisión**:
 
-- [ ] revisado
-- veredicto: 
-- tipo_correcto: 
-- causa_raiz: 
-- patron: 
-- notas: 
-- accion: 
+- [ x] revisado
+- veredicto: invalido 
+- tipo_correcto: n/a
+- causa_raiz: segment
+- patron: P-01
+- notas:
+- accion: mejorar segment.py
 
 ---
 
@@ -1304,13 +1365,13 @@ campos automáticamente y propongo fixes basados en los patrones acumulados.
 
 **Revisión**:
 
-- [ ] revisado
-- veredicto: 
-- tipo_correcto: 
-- causa_raiz: 
-- patron: 
+- [ x] revisado
+- veredicto: incorrecto
+- tipo_correcto: tarifa_millar 
+- causa_raiz: api_error
+- patron: P-02
 - notas: 
-- accion: 
+- accion: volver a extraer con gpt-5.4 
 
 ---
 
@@ -1325,13 +1386,13 @@ campos automáticamente y propongo fixes basados en los patrones acumulados.
 
 **Revisión**:
 
-- [ ] revisado
-- veredicto: 
-- tipo_correcto: 
-- causa_raiz: 
-- patron: 
-- notas: 
-- accion: 
+- [ x] revisado
+- veredicto: invalido 
+- tipo_correcto: n/a
+- causa_raiz: segment
+- patron: P-01
+- notas:
+- accion: mejorar segment.py
 
 ---
 
@@ -1346,13 +1407,13 @@ campos automáticamente y propongo fixes basados en los patrones acumulados.
 
 **Revisión**:
 
-- [ ] revisado
-- veredicto: 
-- tipo_correcto: 
-- causa_raiz: 
-- patron: 
-- notas: 
-- accion: 
+- [ x] revisado
+- veredicto: invalido 
+- tipo_correcto: n/a
+- causa_raiz: segment
+- patron: P-01
+- notas:
+- accion: mejorar segment.py
 
 ---
 
@@ -1367,13 +1428,13 @@ campos automáticamente y propongo fixes basados en los patrones acumulados.
 
 **Revisión**:
 
-- [ ] revisado
-- veredicto: 
-- tipo_correcto: 
-- causa_raiz: 
-- patron: 
-- notas: 
-- accion: 
+- [ x] revisado
+- veredicto: invalido 
+- tipo_correcto: n/a
+- causa_raiz: ocr, segment 
+- patron: P-03
+- notas: El OCR solo funciona en las primeras paginas 
+- accion: mejorar escaneo OCR y corregir segmentación
 
 ---
 
@@ -1411,13 +1472,13 @@ campos automáticamente y propongo fixes basados en los patrones acumulados.
 
 **Revisión**:
 
-- [ ] revisado
-- veredicto: 
-- tipo_correcto: 
-- causa_raiz: 
-- patron: 
-- notas: 
-- accion: 
+- [ X] revisado
+- veredicto: incorrecto 
+- tipo_correcto: tarifa_millar
+- causa_raiz: segment
+- patron: P-01
+- notas: el recorte del PDF es correcto, pero el del txt falla
+- accion: re-segmentar
 
 ---
 
@@ -1432,13 +1493,13 @@ campos automáticamente y propongo fixes basados en los patrones acumulados.
 
 **Revisión**:
 
-- [ ] revisado
-- veredicto: 
-- tipo_correcto: 
-- causa_raiz: 
-- patron: 
-- notas: 
-- accion: 
+- [ x] revisado
+- veredicto: incorrecto
+- tipo_correcto: mixto
+- causa_raiz: ocr
+- patron: P-03
+- notas: el recorte pdf si contiene sección tarifas predial, pero el texto no es apto para la busqueda en las ultimas paginas
+- accion: volver a ejecutar ocr 
 
 ---
 
@@ -1453,13 +1514,13 @@ campos automáticamente y propongo fixes basados en los patrones acumulados.
 
 **Revisión**:
 
-- [ ] revisado
-- veredicto: 
-- tipo_correcto: 
-- causa_raiz: 
-- patron: 
-- notas: 
-- accion: 
+- [ x] revisado
+- veredicto: invalido 
+- tipo_correcto: tarifa_progresiva
+- causa_raiz: otro
+- patron: P-10
+- notas: el recorte corresponde a una fe de erratas, sección correcta en: pagina 30 de 2020_13879_Periodico_Numero_261_Décima_Quinta_Parte.pdf
+- accion: Volver a realizar segmentación desde el documento indicado 
 
 ---
 
@@ -1495,13 +1556,13 @@ campos automáticamente y propongo fixes basados en los patrones acumulados.
 
 **Revisión**:
 
-- [ ] revisado
-- veredicto: 
-- tipo_correcto: 
-- causa_raiz: 
-- patron: 
-- notas: 
-- accion: 
+- [ x] revisado
+- veredicto: invalido 
+- tipo_correcto: tarifa_progresiva
+- causa_raiz: otro
+- patron: P-10
+- notas: el recorte corresponde a una fe de erratas, sección correcta en: paginas 15-16 de 2023_16367_Periodico_Numero_261_Decima_Segunda_Parte_ocr.pdf
+- accion: Volver a realizar segmentación desde el documento indicado 
 
 ---
 
@@ -1516,13 +1577,13 @@ campos automáticamente y propongo fixes basados en los patrones acumulados.
 
 **Revisión**:
 
-- [ ] revisado
-- veredicto: 
-- tipo_correcto: 
-- causa_raiz: 
-- patron: 
-- notas: 
-- accion: 
+- [ x] revisado
+- veredicto: invalido
+- tipo_correcto: tafifa_millar
+- causa_raiz: segment
+- patron: P-01
+- notas: seccion tarifa predial en pagina 129 de TAMPS_RAW_2012_consolidado.pdf
+- accion: re-segmentar, mejorar segment.py
 
 ---
 
@@ -1537,13 +1598,14 @@ campos automáticamente y propongo fixes basados en los patrones acumulados.
 
 **Revisión**:
 
-- [ ] revisado
-- veredicto: 
-- tipo_correcto: 
-- causa_raiz: 
-- patron: 
-- notas: 
-- accion: 
+- [ x] revisado
+- veredicto: invalido
+- tipo_correcto: tafifa_millar
+- causa_raiz: segment
+- patron: P-01
+- notas: seccion tarifa predial en pagina 89 de TAMPS_RAW_2013_consolidado.pdf
+- accion: re-segmentar, mejorar segment.py
+
 
 ---
 
@@ -1560,13 +1622,13 @@ campos automáticamente y propongo fixes basados en los patrones acumulados.
 
 **Revisión**:
 
-- [ ] revisado
-- veredicto: 
-- tipo_correcto: 
-- causa_raiz: 
-- patron: 
-- notas: 
-- accion: 
+- [ x] revisado
+- veredicto: invalido 
+- tipo_correcto: tarfifa_millar
+- causa_raiz: segment
+- patron: P-01
+- notas: El recorte de pdf es correcto, pero el de txt falló
+- accion: re-segment
 
 ---
 
@@ -1581,13 +1643,14 @@ campos automáticamente y propongo fixes basados en los patrones acumulados.
 
 **Revisión**:
 
-- [ ] revisado
-- veredicto: 
-- tipo_correcto: 
-- causa_raiz: 
-- patron: 
-- notas: 
-- accion: 
+- [ x] revisado
+- veredicto: invalido 
+- tipo_correcto: tarfifa_millar
+- causa_raiz: segment
+- patron: P-01
+- notas: El recorte de pdf es correcto, pero el de txt falló
+- accion: re-segment
+
 
 ---
 
@@ -1602,13 +1665,13 @@ campos automáticamente y propongo fixes basados en los patrones acumulados.
 
 **Revisión**:
 
-- [ ] revisado
-- veredicto: 
-- tipo_correcto: 
-- causa_raiz: 
-- patron: 
-- notas: 
-- accion: 
+- [ x] revisado
+- veredicto: incorrecto 
+- tipo_correcto: mixto
+- causa_raiz: api_eror
+- patron: P-02
+- notas: el esquema puede clasificarse como mixto, observar esquema del año siguiente para cotejar calsificación
+- accion: re extract con gpt-5.4
 
 ---
 
@@ -1624,13 +1687,13 @@ campos automáticamente y propongo fixes basados en los patrones acumulados.
 
 **Revisión**:
 
-- [ ] revisado
-- veredicto: 
-- tipo_correcto: 
-- causa_raiz: 
-- patron: 
-- notas: 
-- accion: 
+- [ x] revisado
+- veredicto: incorrecto 
+- tipo_correcto: tasa_unica
+- causa_raiz: schema
+- patron: P-09
+- notas: el tipo que domina es la tasa fija, la cuota es solo una adición
+- accion: robustecer esquema tasa_unica para que soporte cuotas fijas adicionales
 
 ---
 
@@ -1646,13 +1709,13 @@ campos automáticamente y propongo fixes basados en los patrones acumulados.
 
 **Revisión**:
 
-- [ ] revisado
-- veredicto: 
-- tipo_correcto: 
-- causa_raiz: 
-- patron: 
-- notas: 
-- accion: 
+- [ x] revisado
+- veredicto: incorrecto 
+- tipo_correcto: tasa_unica
+- causa_raiz: schema
+- patron: P-09
+- notas: el tipo que domina es la tasa fija, la cuota es solo una adición
+- accion: robustecer esquema tasa_unica para que soporte cuotas fijas adicionales
 
 ---
 
@@ -1668,13 +1731,13 @@ campos automáticamente y propongo fixes basados en los patrones acumulados.
 
 **Revisión**:
 
-- [ ] revisado
-- veredicto: 
-- tipo_correcto: 
-- causa_raiz: 
+- [ x] revisado
+- veredicto: incorrecto 
+- tipo_correcto: couta_fija
+- causa_raiz: otro
 - patron: 
-- notas: 
-- accion: 
+- notas: el txt no contiene el esquema de cobro, pero el pdf asociado si, 
+- accion: usar modelo de vision sobre el PDF original
 
 ---
 
@@ -1691,13 +1754,13 @@ campos automáticamente y propongo fixes basados en los patrones acumulados.
 
 **Revisión**:
 
-- [ ] revisado
-- veredicto: 
-- tipo_correcto: 
-- causa_raiz: 
-- patron: 
-- notas: 
-- accion: 
+- [ X] revisado
+- veredicto: incorrecto
+- tipo_correcto: mixto
+- causa_raiz: ocr
+- patron: P-03
+- notas: El ocr del recorte falla solo en las tablas de tarifas
+- accion: re-ocr o modelo de vision 
 
 ---
 
@@ -1713,13 +1776,13 @@ campos automáticamente y propongo fixes basados en los patrones acumulados.
 
 **Revisión**:
 
-- [ ] revisado
-- veredicto: 
-- tipo_correcto: 
-- causa_raiz: 
-- patron: 
+- [ x] revisado
+- veredicto: correcto 
+- tipo_correcto: n/a
+- causa_raiz: documento_ambiguo
+- patron: P-04
 - notas: 
-- accion: 
+- accion: Conservar en blanco y esperar recuperar por imputación
 
 ---
 
@@ -1734,13 +1797,13 @@ campos automáticamente y propongo fixes basados en los patrones acumulados.
 
 **Revisión**:
 
-- [ ] revisado
-- veredicto: 
-- tipo_correcto: 
-- causa_raiz: 
-- patron: 
+- [ x] revisado
+- veredicto: correcto 
+- tipo_correcto: n/a
+- causa_raiz: documento_ambiguo
+- patron: P-04
 - notas: 
-- accion: 
+- accion: Conservar en blanco y esperar recuperar por imputación
 
 ---
 
@@ -1755,13 +1818,13 @@ campos automáticamente y propongo fixes basados en los patrones acumulados.
 
 **Revisión**:
 
-- [ ] revisado
-- veredicto: 
-- tipo_correcto: 
-- causa_raiz: 
-- patron: 
+- [ x] revisado
+- veredicto: correcto 
+- tipo_correcto: n/a
+- causa_raiz: documento_ambiguo
+- patron: P-04
 - notas: 
-- accion: 
+- accion: Conservar en blanco y esperar recuperar por imputación
 
 ---
 
@@ -1776,13 +1839,13 @@ campos automáticamente y propongo fixes basados en los patrones acumulados.
 
 **Revisión**:
 
-- [ ] revisado
-- veredicto: 
-- tipo_correcto: 
-- causa_raiz: 
-- patron: 
+- [ x] revisado
+- veredicto: correcto 
+- tipo_correcto: n/a
+- causa_raiz: documento_ambiguo
+- patron: P-04
 - notas: 
-- accion: 
+- accion: Conservar en blanco y esperar recuperar por imputación
 
 ---
 
@@ -1797,13 +1860,13 @@ campos automáticamente y propongo fixes basados en los patrones acumulados.
 
 **Revisión**:
 
-- [ ] revisado
-- veredicto: 
-- tipo_correcto: 
-- causa_raiz: 
-- patron: 
+- [ x] revisado
+- veredicto: correcto 
+- tipo_correcto: otro_rentas
+- causa_raiz: schema
+- patron: P-07
 - notas: 
-- accion: 
+- accion: Crear categoría otros_rentas o similar, que indique que es un esquema no convencional basado en rentas civiles
 
 ---
 
@@ -1821,13 +1884,13 @@ campos automáticamente y propongo fixes basados en los patrones acumulados.
 
 **Revisión**:
 
-- [ ] revisado
-- veredicto: 
-- tipo_correcto: 
-- causa_raiz: 
-- patron: 
+- [ x] revisado
+- veredicto: incorrecto
+- tipo_correcto: tarifa_millar
+- causa_raiz: api_error
+- patron: P-02
 - notas: 
-- accion: 
+- accion: Usar modelo de vision gpt-5.4
 
 ---
 
@@ -1843,13 +1906,13 @@ campos automáticamente y propongo fixes basados en los patrones acumulados.
 
 **Revisión**:
 
-- [ ] revisado
-- veredicto: 
-- tipo_correcto: 
-- causa_raiz: 
-- patron: 
+- [ x] revisado
+- veredicto: correcto 
+- tipo_correcto: n/a
+- causa_raiz: documento_ambiguo
+- patron: P-04
 - notas: 
-- accion: 
+- accion: Conservar en blanco y esperar recuperar por imputación
 
 ---
 
@@ -1865,13 +1928,13 @@ campos automáticamente y propongo fixes basados en los patrones acumulados.
 
 **Revisión**:
 
-- [ ] revisado
-- veredicto: 
-- tipo_correcto: 
-- causa_raiz: 
-- patron: 
+- [ x] revisado
+- veredicto: correcto 
+- tipo_correcto: n/a
+- causa_raiz: documento_ambiguo
+- patron: P-04
 - notas: 
-- accion: 
+- accion: Conservar en blanco y esperar recuperar por imputación
 
 ---
 
@@ -1887,13 +1950,13 @@ campos automáticamente y propongo fixes basados en los patrones acumulados.
 
 **Revisión**:
 
-- [ ] revisado
-- veredicto: 
-- tipo_correcto: 
-- causa_raiz: 
-- patron: 
+- [ x] revisado
+- veredicto: correcto 
+- tipo_correcto: n/a
+- causa_raiz: documento_ambiguo
+- patron: P-04
 - notas: 
-- accion: 
+- accion: Conservar en blanco y esperar recuperar por imputación
 
 ---
 
@@ -1910,13 +1973,13 @@ campos automáticamente y propongo fixes basados en los patrones acumulados.
 
 **Revisión**:
 
-- [ ] revisado
-- veredicto: 
-- tipo_correcto: 
-- causa_raiz: 
-- patron: 
-- notas: 
-- accion: 
+- [ X] revisado
+- veredicto: invalido 
+- tipo_correcto: n/a
+- causa_raiz: segment
+- patron: P-01
+- notas: No hay busqueda por texto despues de las primeras páginas 
+- accion: re-segmentar
 
 ---
 
@@ -1952,13 +2015,13 @@ campos automáticamente y propongo fixes basados en los patrones acumulados.
 
 **Revisión**:
 
-- [ ] revisado
-- veredicto: 
-- tipo_correcto: 
-- causa_raiz: 
-- patron: 
-- notas: 
-- accion: 
+- [ X] revisado
+- veredicto: invalido 
+- tipo_correcto: n/a
+- causa_raiz: segment
+- patron: P-01
+- notas: la sección de tarifas predial va antes de donde empieza el recorte
+- accion: re-segmentar
 
 ---
 
@@ -1975,13 +2038,13 @@ campos automáticamente y propongo fixes basados en los patrones acumulados.
 
 **Revisión**:
 
-- [ ] revisado
-- veredicto: 
-- tipo_correcto: 
-- causa_raiz: 
-- patron: 
-- notas: 
-- accion: 
+- [ x] revisado
+- veredicto: invalid 
+- tipo_correcto: tarifa_millar
+- causa_raiz: segment
+- patron: P-01
+- notas: La sección con tarifa predial empieza una pagina atrás en el documento
+- accion: re-segmentar, robustecer segment.py 
 
 ---
 
@@ -2149,13 +2212,13 @@ campos automáticamente y propongo fixes basados en los patrones acumulados.
 
 **Revisión**:
 
-- [ ] revisado
-- veredicto: 
-- tipo_correcto: 
-- causa_raiz: 
-- patron: 
-- notas: 
-- accion: 
+- [ x] revisado
+- veredicto: incorrect 
+- tipo_correcto: tarifa_progresiva
+- causa_raiz: ocr
+- patron: P-03
+- notas: Solo la tabla está como imagen, el resto de documento es apto para la búsqueda
+- accion: usar modelo de vision
 
 ---
 
@@ -2433,13 +2496,13 @@ campos automáticamente y propongo fixes basados en los patrones acumulados.
 
 **Revisión**:
 
-- [ ] revisado
-- veredicto: 
-- tipo_correcto: 
-- causa_raiz: 
-- patron: 
-- notas: 
-- accion: 
+- [ x] revisado
+- veredicto: incorrecto 
+- tipo_correcto: tasa_unica
+- causa_raiz: schema
+- patron: P-09
+- notas: el tipo que domina es la tasa fija, la cuota es solo una adición
+- accion: robustecer esquema tasa_unica para que soporte cuotas fijas adicionales
 
 ---
 
@@ -2452,13 +2515,13 @@ campos automáticamente y propongo fixes basados en los patrones acumulados.
 
 **Revisión**:
 
-- [ ] revisado
-- veredicto: 
-- tipo_correcto: 
-- causa_raiz: 
-- patron: 
-- notas: 
-- accion: 
+- [ x] revisado
+- veredicto: incorrecto 
+- tipo_correcto: tasa_unica
+- causa_raiz: schema
+- patron: P-09
+- notas: el tipo que domina es la tasa fija, la cuota es solo una adición
+- accion: robustecer esquema tasa_unica para que soporte cuotas fijas adicionales
 
 ---
 
@@ -2471,13 +2534,13 @@ campos automáticamente y propongo fixes basados en los patrones acumulados.
 
 **Revisión**:
 
-- [ ] revisado
-- veredicto: 
-- tipo_correcto: 
-- causa_raiz: 
-- patron: 
-- notas: 
-- accion: 
+- [ x] revisado
+- veredicto: incorrecto 
+- tipo_correcto: tasa_unica
+- causa_raiz: schema
+- patron: P-09
+- notas: el tipo que domina es la tasa fija, la cuota es solo una adición
+- accion: robustecer esquema tasa_unica para que soporte cuotas fijas adicionales
 
 ---
 
@@ -2490,13 +2553,13 @@ campos automáticamente y propongo fixes basados en los patrones acumulados.
 
 **Revisión**:
 
-- [ ] revisado
-- veredicto: 
-- tipo_correcto: 
-- causa_raiz: 
-- patron: 
-- notas: 
-- accion: 
+- [ x] revisado
+- veredicto: incorrecto 
+- tipo_correcto: tasa_unica
+- causa_raiz: schema
+- patron: P-09
+- notas: el tipo que domina es la tasa fija, la cuota es solo un caso de respaldo cuando no se puede determinar valor catastral
+- accion: robustecer esquema tasa_unica para que soporte cuotas fijas opcionales
 
 ---
 
@@ -2509,13 +2572,13 @@ campos automáticamente y propongo fixes basados en los patrones acumulados.
 
 **Revisión**:
 
-- [ ] revisado
-- veredicto: 
-- tipo_correcto: 
-- causa_raiz: 
-- patron: 
-- notas: 
-- accion: 
+- [ x] revisado
+- veredicto: incorrecto 
+- tipo_correcto: tasa_unica
+- causa_raiz: schema
+- patron: P-09
+- notas: el tipo que domina es la tasa fija, la cuota es solo un caso de respaldo cuando no se puede determinar valor catastral
+- accion: robustecer esquema tasa_unica para que soporte cuotas fijas opcionales
 
 ---
 
@@ -2528,13 +2591,13 @@ campos automáticamente y propongo fixes basados en los patrones acumulados.
 
 **Revisión**:
 
-- [ ] revisado
-- veredicto: 
-- tipo_correcto: 
-- causa_raiz: 
-- patron: 
-- notas: 
-- accion: 
+- [ x] revisado
+- veredicto: incorrecto 
+- tipo_correcto: tasa_unica
+- causa_raiz: schema
+- patron: P-09
+- notas: el tipo que domina es la tasa fija, la cuota es solo un caso de respaldo cuando no se puede determinar valor catastral
+- accion: robustecer esquema tasa_unica para que soporte cuotas fijas opcionales
 
 ---
 
@@ -2547,13 +2610,13 @@ campos automáticamente y propongo fixes basados en los patrones acumulados.
 
 **Revisión**:
 
-- [ ] revisado
-- veredicto: 
-- tipo_correcto: 
-- causa_raiz: 
-- patron: 
-- notas: 
-- accion: 
+- [ x] revisado
+- veredicto: incorrecto 
+- tipo_correcto: tasa_unica
+- causa_raiz: schema
+- patron: P-09
+- notas: el tipo que domina es la tasa fija, la cuota es solo un caso de respaldo cuando no se puede determinar valor catastral
+- accion: robustecer esquema tasa_unica para que soporte cuotas fijas opcionales
 
 ---
 
@@ -2566,13 +2629,13 @@ campos automáticamente y propongo fixes basados en los patrones acumulados.
 
 **Revisión**:
 
-- [ ] revisado
-- veredicto: 
-- tipo_correcto: 
-- causa_raiz: 
-- patron: 
-- notas: 
-- accion: 
+- [ x] revisado
+- veredicto: incorrecto 
+- tipo_correcto: tasa_unica
+- causa_raiz: schema
+- patron: P-09
+- notas: el tipo que domina es la tasa fija, la cuota es solo un caso de respaldo cuando no se puede determinar valor catastral
+- accion: robustecer esquema tasa_unica para que soporte cuotas fijas opcionales
 
 ---
 
@@ -2585,13 +2648,13 @@ campos automáticamente y propongo fixes basados en los patrones acumulados.
 
 **Revisión**:
 
-- [ ] revisado
-- veredicto: 
-- tipo_correcto: 
-- causa_raiz: 
-- patron: 
-- notas: 
-- accion: 
+- [ x] revisado
+- veredicto: incorrecto 
+- tipo_correcto: tasa_unica
+- causa_raiz: schema
+- patron: P-09
+- notas: el tipo que domina es la tasa fija, la cuota es solo un caso de respaldo cuando no se puede determinar valor catastral
+- accion: robustecer esquema tasa_unica para que soporte cuotas fijas opcionales
 
 ---
 
@@ -2604,13 +2667,13 @@ campos automáticamente y propongo fixes basados en los patrones acumulados.
 
 **Revisión**:
 
-- [ ] revisado
-- veredicto: 
-- tipo_correcto: 
-- causa_raiz: 
-- patron: 
-- notas: 
-- accion: 
+- [ x] revisado
+- veredicto: incorrecto 
+- tipo_correcto: tarifa_millar
+- causa_raiz: schema
+- patron: P-09
+- notas: el tipo que domina es la una tarifa_fija (al millar) que diferencía predios costeros, la cuota es solo un caso de respaldo cuando no se puede determinar valor catastral
+- accion: robustecer esquema tarifa_millar para que soporte cuotas fijas opcionales y casos en zona costera
 
 ---
 
@@ -2623,13 +2686,13 @@ campos automáticamente y propongo fixes basados en los patrones acumulados.
 
 **Revisión**:
 
-- [ ] revisado
-- veredicto: 
-- tipo_correcto: 
-- causa_raiz: 
-- patron: 
-- notas: 
-- accion: 
+- [ x] revisado
+- veredicto: incorrecto 
+- tipo_correcto: tarifa_millar
+- causa_raiz: schema
+- patron: P-09
+- notas: el tipo que domina es la una tarifa_fija (al millar) que diferencía predios costeros, la cuota es solo un caso de respaldo cuando no se puede determinar valor catastral
+- accion: robustecer esquema tarifa_millar para que soporte cuotas fijas opcionales y casos en zona costera
 
 ---
 
@@ -2680,13 +2743,13 @@ campos automáticamente y propongo fixes basados en los patrones acumulados.
 
 **Revisión**:
 
-- [ ] revisado
-- veredicto: 
-- tipo_correcto: 
-- causa_raiz: 
-- patron: 
-- notas: 
-- accion: 
+- [ x] revisado
+- veredicto: incorrecto 
+- tipo_correcto: tasa_unica
+- causa_raiz: api_error
+- patron: P-03
+- notas: en el texto dice: Al resultado del valor catastral se multiplicará por el factor del 0.00025 ; implicitamente es una cuota fija
+- accion: volver a extraer 
 
 ---
 
@@ -2699,13 +2762,13 @@ campos automáticamente y propongo fixes basados en los patrones acumulados.
 
 **Revisión**:
 
-- [ ] revisado
-- veredicto: 
-- tipo_correcto: 
-- causa_raiz: 
-- patron: 
-- notas: 
-- accion: 
+- [ x] revisado
+- veredicto: incorrecto 
+- tipo_correcto: tasa_unica
+- causa_raiz: schema
+- patron: P-09
+- notas: el tipo que domina es la tasa fija, la cuota es solo un caso de respaldo cuando no se puede determinar valor catastral
+- accion: robustecer esquema tasa_unica para que soporte cuotas fijas opcionales
 
 ---
 
@@ -2718,13 +2781,13 @@ campos automáticamente y propongo fixes basados en los patrones acumulados.
 
 **Revisión**:
 
-- [ ] revisado
-- veredicto: 
-- tipo_correcto: 
-- causa_raiz: 
-- patron: 
-- notas: 
-- accion: 
+- [ x] revisado
+- veredicto: incorrecto 
+- tipo_correcto: tasa_unica
+- causa_raiz: schema
+- patron: P-09
+- notas: el tipo que domina es la tasa fija, la cuota es solo un caso de respaldo cuando no se puede determinar valor catastral
+- accion: robustecer esquema tasa_unica para que soporte cuotas fijas opcionales
 
 ---
 
@@ -2737,12 +2800,12 @@ campos automáticamente y propongo fixes basados en los patrones acumulados.
 
 **Revisión**:
 
-- [ ] revisado
-- veredicto: 
-- tipo_correcto: 
-- causa_raiz: 
-- patron: 
-- notas: 
-- accion: 
+- [ x] revisado
+- veredicto: incorrecto 
+- tipo_correcto: tasa_unica
+- causa_raiz: schema
+- patron: P-09
+- notas: el tipo que domina es la tasa fija, la cuota es solo un caso de respaldo cuando no se puede determinar valor catastral
+- accion: robustecer esquema tasa_unica para que soporte cuotas fijas opcionales
 
 ---

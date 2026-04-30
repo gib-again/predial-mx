@@ -109,7 +109,7 @@
       }
     ],
     "minimo_predial": null,
-    "comentarios": "Artículo 45, fracción I: tarifa bimestral para predios rústicos y urbanos sobre valor fiscal, con cuota fija + tasa marginal sobre el excedente del límite inferior. El texto también menciona una sobretasa del 100% para predios no edificados que no reúnan las características legales, pero se omite de la tabla principal por ser una regla especial/accesoria fuera de la mecánica base solicitada."
+    "comentarios": "Art. 45 fracción I: impuesto predial bimestral para predios rústicos y urbanos sobre el valor fiscal, con tabla progresiva de cuota fija + tasa marginal sobre excedente. El texto también indica que los predios no edificados que no reúnan ciertas características pagan una sobretasa del 100% respecto de la tarifa aplicable; y que predios en comodato al Municipio pagan factor 0.01, además de diversos beneficios y reducciones de otros artículos, todo lo cual se ignora por tratarse de estímulos o reglas accesorias, no de la mecánica base."
   },
   "_meta": {
     "fuente": "txt",
@@ -121,9 +121,9 @@
     "escalado": false,
     "razon": null,
     "tokens": {
-      "input": 10707,
-      "output": 782,
-      "cached": 3840
+      "input": 11861,
+      "output": 811,
+      "cached": 4864
     },
     "cvegeo": "14120",
     "estado": "jalisco",

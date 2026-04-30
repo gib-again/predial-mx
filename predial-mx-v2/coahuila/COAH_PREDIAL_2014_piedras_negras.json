@@ -132,7 +132,7 @@
       "periodicidad": "bimestral",
       "unidad": "pesos"
     },
-    "comentarios": "Art. 2 fracc. I: tabla de predios urbanos con rangos de valor catastral y cuatro columnas heterogéneas (habitacional edificado, no habitacional edificado, no edificado con barda, no edificado sin barda). Los tres primeros rangos usan cuotas fijas en pesos; el último rango abierto usa tasas al millar, por eso se clasifica como mixto y no como cuota fija escalonada ni tarifa_millar. Art. 3: predios rústicos pagan 4 al millar anual sobre el valor catastral; se trata como tarifa paralela y no se integra a la tabla principal. Se ignoran incentivos y bonificaciones. Los estímulos de las fracciones II a VII no son acumulables entre sí."
+    "comentarios": "Art. 2: Predios urbanos por rangos de valor catastral con estructura heterogénea: los tres primeros rangos cobran cuotas fijas en pesos por tipo (edificados habitacional/no habitacional y no edificados con/sin barda), mientras el último rango abierto cobra tasas al millar. Art. 3: predios rústicos cubren el impuesto al cuatro al millar anual sobre el valor catastral; se documenta como tarifa paralela y no se integra en la tabla principal. Los incentivos de las fracciones II a VII se ignoran por no formar parte de la mecánica base."
   },
   "_meta": {
     "fuente": "txt",
@@ -144,9 +144,9 @@
     "escalado": false,
     "razon": null,
     "tokens": {
-      "input": 6014,
-      "output": 741,
-      "cached": 3840
+      "input": 7168,
+      "output": 709,
+      "cached": 4864
     },
     "cvegeo": "05025",
     "estado": "coahuila",

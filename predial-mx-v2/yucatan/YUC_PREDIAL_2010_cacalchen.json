@@ -60,7 +60,7 @@
       }
     ],
     "minimo_predial": null,
-    "comentarios": "Art. 14: el impuesto predial sobre valor catastral se determina con una tabla progresiva de cuota fija anual más factor aplicado al excedente del límite inferior. Se transcribe además que los predios destinados a producción agropecuaria pagan 10 al millar anual sobre el valor registrado o catastral, sin exceder lo permitido por la legislación agraria federal; y que el predial con base en rentas o frutos civiles causa 2% para casa habitación y 3% para actividades comerciales. Las tablas de valores unitarios de terreno y construcción del artículo 14 no se incluyen porque son valores catastrales, no mecánica del impuesto."
+    "comentarios": "Art. 14: el impuesto predial se determina aplicando al valor catastral una tabla progresiva de cuota fija anual más factor sobre el excedente del límite inferior. Tarifa secundaria: predios destinados a la producción agropecuaria pagan 10 al millar anual sobre el valor registrado o catastral, con tope por legislación agraria federal; Art. 16 establece impuesto sobre rentas o frutos civiles (2% casa habitación, 3% comerciales), documentado solo como referencia secundaria no predominante."
   },
   "_meta": {
     "fuente": "txt",
@@ -72,9 +72,9 @@
     "escalado": false,
     "razon": null,
     "tokens": {
-      "input": 6347,
-      "output": 479,
-      "cached": 4352
+      "input": 7501,
+      "output": 456,
+      "cached": 4864
     },
     "cvegeo": "31007",
     "estado": "yucatan",

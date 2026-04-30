@@ -2,24 +2,37 @@
   "predial": {
     "tipo_esquema": "otro_no_clasificado",
     "categoria": "estructura_no_estandar",
-    "descripcion_estructural": "El texto no presenta una mecánica tarifaria estándar del impuesto predial clasificable en una de las seis variantes principales. La \"tabla\" visible corresponde a una tabla de valores de terreno por ubicación y una tabla de valores unitarios de construcción, es decir, insumos catastrales, no una tarifa de cálculo del impuesto. Aunque aparece una frase sobre aplicar un factor y sumar cuota fija anual, el segmento no proporciona una tabla completa de brackets o tasas del predial aprovechable sin inferencia.",
-    "tabla_cruda": [],
+    "descripcion_estructural": "El artículo 14 mezcla una tabla de valores unitarios de terreno (insumo catastral) con una mecánica de cálculo que sólo indica que al excedente del límite inferior se le aplica un factor de la tarifa y se suma una cuota fija anual, pero en el texto proporcionado no aparecen los brackets completos ni los valores de la tasa/cuota fija anual respectiva. Además contiene una tarifa paralela para predios agropecuarios de $2.00 por hectárea, separada de la mecánica principal.",
+    "tabla_cruda": [
+      {
+        "descripcion": "Tabla de valores de terreno por colonia o calle",
+        "valores": "valores unitarios por m2 en varias secciones; no es una tarifa de predial extraíble como esquema completo"
+      },
+      {
+        "descripcion": "Mecánica principal indicada en prosa",
+        "valores": "a la cantidad que exceda del límite inferior se le aplicará el factor determinado en esta tarifa y el resultado se incrementará con la cuota fija anual respectiva"
+      },
+      {
+        "descripcion": "Predio destinado a la producción agropecuaria",
+        "valores": "$2.00 por hectárea"
+      }
+    ],
     "minimo_predial": null,
-    "comentarios": "Se ignoraron descuentos y recargos. No hay una tabla tarifaria completa del impuesto predial en el texto proporcionado; lo observable es catastro (valores unitarios) y una referencia genérica a factor/cuota fija sin desglose."
+    "comentarios": "No se extrae la tabla de valores unitarios de terreno y construcción porque es catastro, no tarifa; tampoco se cuenta con los brackets/tasas completas de la cuota principal. La tarifa agropecuaria de $2.00 por hectárea se documenta como referencia paralela no estructurada en la mecánica principal."
   },
   "_meta": {
     "fuente": "txt",
     "modelo": "gpt-5.4-mini"
   },
   "_meta_v2": {
-    "intentos": 2,
+    "intentos": 1,
     "requiere_revision": true,
     "escalado": false,
     "razon": "clasificado_como_otro_no_clasificado",
     "tokens": {
-      "input": 12137,
-      "output": 523,
-      "cached": 7680
+      "input": 7001,
+      "output": 351,
+      "cached": 4864
     },
     "cvegeo": "31027",
     "estado": "yucatan",

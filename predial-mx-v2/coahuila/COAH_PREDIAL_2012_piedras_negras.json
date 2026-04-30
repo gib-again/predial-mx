@@ -8,25 +8,25 @@
         "superior": 60000.0,
         "columnas": [
           {
-            "nombre": "habitacional_edificado_con_barda",
+            "nombre": "edificados_habitacional",
             "valor": 94.8,
             "tipo": "cuota_fija",
             "unidad": "pesos"
           },
           {
-            "nombre": "habitacional_edificado_sin_barda",
+            "nombre": "edificados_no_habitacional",
             "valor": 126.0,
             "tipo": "cuota_fija",
             "unidad": "pesos"
           },
           {
-            "nombre": "habitacional_no_edificado_con_barda",
+            "nombre": "no_edificados_habitacional",
             "valor": 120.0,
             "tipo": "cuota_fija",
             "unidad": "pesos"
           },
           {
-            "nombre": "habitacional_no_edificado_sin_barda",
+            "nombre": "no_edificados_no_habitacional",
             "valor": 189.0,
             "tipo": "cuota_fija",
             "unidad": "pesos"
@@ -39,25 +39,25 @@
         "superior": 90000.0,
         "columnas": [
           {
-            "nombre": "habitacional_edificado_con_barda",
+            "nombre": "edificados_habitacional",
             "valor": 142.2,
             "tipo": "cuota_fija",
             "unidad": "pesos"
           },
           {
-            "nombre": "habitacional_edificado_sin_barda",
+            "nombre": "edificados_no_habitacional",
             "valor": 189.0,
             "tipo": "cuota_fija",
             "unidad": "pesos"
           },
           {
-            "nombre": "habitacional_no_edificado_con_barda",
+            "nombre": "no_edificados_habitacional",
             "valor": 180.0,
             "tipo": "cuota_fija",
             "unidad": "pesos"
           },
           {
-            "nombre": "habitacional_no_edificado_sin_barda",
+            "nombre": "no_edificados_no_habitacional",
             "valor": 283.5,
             "tipo": "cuota_fija",
             "unidad": "pesos"
@@ -70,25 +70,25 @@
         "superior": 135000.0,
         "columnas": [
           {
-            "nombre": "habitacional_edificado_con_barda",
+            "nombre": "edificados_habitacional",
             "valor": 213.3,
             "tipo": "cuota_fija",
             "unidad": "pesos"
           },
           {
-            "nombre": "habitacional_edificado_sin_barda",
+            "nombre": "edificados_no_habitacional",
             "valor": 283.5,
             "tipo": "cuota_fija",
             "unidad": "pesos"
           },
           {
-            "nombre": "habitacional_no_edificado_con_barda",
+            "nombre": "no_edificados_habitacional",
             "valor": 270.0,
             "tipo": "cuota_fija",
             "unidad": "pesos"
           },
           {
-            "nombre": "habitacional_no_edificado_sin_barda",
+            "nombre": "no_edificados_no_habitacional",
             "valor": 425.25,
             "tipo": "cuota_fija",
             "unidad": "pesos"
@@ -101,25 +101,25 @@
         "superior": null,
         "columnas": [
           {
-            "nombre": "habitacional_edificado_con_barda",
+            "nombre": "edificados_habitacional",
             "valor": 1.58,
             "tipo": "tasa_millar",
             "unidad": "al_millar"
           },
           {
-            "nombre": "habitacional_edificado_sin_barda",
+            "nombre": "edificados_no_habitacional",
             "valor": 2.1,
             "tipo": "tasa_millar",
             "unidad": "al_millar"
           },
           {
-            "nombre": "habitacional_no_edificado_con_barda",
+            "nombre": "no_edificados_habitacional",
             "valor": 2.1,
             "tipo": "tasa_millar",
             "unidad": "al_millar"
           },
           {
-            "nombre": "habitacional_no_edificado_sin_barda",
+            "nombre": "no_edificados_no_habitacional",
             "valor": 3.15,
             "tipo": "tasa_millar",
             "unidad": "al_millar"
@@ -132,7 +132,7 @@
       "periodicidad": "bimestral",
       "unidad": "pesos"
     },
-    "comentarios": "Art. 3, fracción I: predios urbanos con rangos de valor catastral y cuatro categorías heterogéneas (edificados/no edificados, con/sin barda). Los tres primeros rangos cobran cuota fija en pesos; el último rango abierto ('135,000.01 en adelante') cobra tasa al millar, por eso se clasifica como mixto y no como cuota fija escalonada ni tarifa_millar. Art. 4: predios rústicos pagan 4 al millar anual sobre el valor catastral; se reporta como tarifa paralela y no se mezcla en la tabla principal."
+    "comentarios": "Art. 3: Predios urbanos se calculan sobre valor catastral con tabla por rangos y cuatro categorías (edificados/no edificados; habitacional/no habitacional). Los primeros tres rangos son cuotas fijas en pesos y el último rango abierto ('135,000.01 en adelante') cambia a tasa al millar, por lo que la mecánica principal es mixta. Art. 4: predios rústicos pagan 4 al millar anual sobre valor catastral como tarifa paralela; no se incorpora a la tabla principal. Las fracciones II a VII sólo establecen incentivos y no se transcriben como mecánica de cálculo."
   },
   "_meta": {
     "fuente": "txt",
@@ -144,9 +144,9 @@
     "escalado": false,
     "razon": null,
     "tokens": {
-      "input": 6092,
-      "output": 745,
-      "cached": 3840
+      "input": 7246,
+      "output": 720,
+      "cached": 4864
     },
     "cvegeo": "05025",
     "estado": "coahuila",
