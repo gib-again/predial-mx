@@ -19,7 +19,7 @@ ejercicio,municipio,slug,source_pdf,ley_page_start,ley_page_end,predial_found,pr
 2010,Chichimilá,chichimila,2009\2009-12-28_suplemento.pdf,217,228,true,seccion_primera,218,220,YUC_PREDIAL_2010_chichimila.txt,3552
 2010,Chicxulub Pueblo,chicxulub_pueblo,2009\2009-12-28_suplemento.pdf,228,240,false,none,,,YUC_PREDIAL_2010_chicxulub_pueblo.txt,0
 2010,Chikindzonot,chikindzonot,2009\2009-12-28_suplemento.pdf,240,256,true,capitulo_i,243,245,YUC_PREDIAL_2010_chikindzonot.txt,3111
-2010,Chocholá,chochola,2009\2009-12-28_suplemento.pdf,256,259,false,none,,,YUC_PREDIAL_2010_chochola.txt,0
+2010,Chocholá,chochola,2009\2009-12-28_suplemento.pdf,256,259,true,short_form,256,259,YUC_PREDIAL_2010_chochola.txt,4020
 2010,Chumayel,chumayel,2009\2009-12-28_suplemento.pdf,259,272,true,capitulo_i,261,262,YUC_PREDIAL_2010_chumayel.txt,1223
 2010,Dzan,dzan,2009\2009-12-28_suplemento.pdf,272,287,true,capitulo_i,275,277,YUC_PREDIAL_2010_dzan.txt,3014
 2010,Dzemul,dzemul,2009\2009-12-28_suplemento.pdf,287,303,true,capitulo_i,290,292,YUC_PREDIAL_2010_dzemul.txt,3520
@@ -27,7 +27,7 @@ ejercicio,municipio,slug,source_pdf,ley_page_start,ley_page_end,predial_found,pr
 2010,Dzilam de Bravo,dzilam_de_bravo,2009\2009-12-28_suplemento.pdf,316,327,true,capitulo_i,318,318,YUC_PREDIAL_2010_dzilam_de_bravo.txt,926
 2010,Dzitás,dzitas,2009\2009-12-28_suplemento.pdf,327,337,true,capitulo_i,329,331,YUC_PREDIAL_2010_dzitas.txt,3550
 2010,Dzoncauich,dzoncauich,2009\2009-12-28_suplemento.pdf,337,348,true,capitulo_i,340,341,YUC_PREDIAL_2010_dzoncauich.txt,3023
-2010,Hocabá,hocaba,2009\2009-12-28_suplemento.pdf,348,352,false,none,,,YUC_PREDIAL_2010_hocaba.txt,0
+2010,Hocabá,hocaba,2009\2009-12-28_suplemento.pdf,348,352,true,short_form,348,352,YUC_PREDIAL_2010_hocaba.txt,4025
 2010,Hoctún,hoctun,2009\2009-12-28_suplemento.pdf,352,364,true,capitulo_i,354,356,YUC_PREDIAL_2010_hoctun.txt,3890
 2010,Homún,homun,2009\2009-12-28_suplemento.pdf,364,373,true,capitulo_i,366,367,YUC_PREDIAL_2010_homun.txt,1608
 2010,Huhí,huhi,2009\2009-12-28_suplemento.pdf,373,382,true,capitulo_i,375,376,YUC_PREDIAL_2010_huhi.txt,1302
@@ -40,17 +40,17 @@ ejercicio,municipio,slug,source_pdf,ley_page_start,ley_page_end,predial_found,pr
 2010,Maní,mani,2009\2009-12-28_suplemento.pdf,446,456,true,capitulo_i,449,450,YUC_PREDIAL_2010_mani.txt,2198
 2010,Mayapán,mayapan,2009\2009-12-28_suplemento.pdf,456,470,true,seccion_primera,457,459,YUC_PREDIAL_2010_mayapan.txt,3529
 2010,Mocochá,mococha,2009\2009-12-28_suplemento.pdf,470,482,true,capitulo_i,473,475,YUC_PREDIAL_2010_mococha.txt,4357
-2010,Muna,muna,2009\2009-12-28_suplemento.pdf,482,486,false,none,,,YUC_PREDIAL_2010_muna.txt,0
+2010,Muna,muna,2009\2009-12-28_suplemento.pdf,482,486,true,short_form,482,486,YUC_PREDIAL_2010_muna.txt,3994
 2010,Muxupip,muxupip,2009\2009-12-28_suplemento.pdf,486,495,true,capitulo_i,488,489,YUC_PREDIAL_2010_muxupip.txt,1561
 2010,Opichén,opichen,2009\2009-12-28_suplemento.pdf,495,505,true,capitulo_i,498,498,YUC_PREDIAL_2010_opichen.txt,1438
 2010,Panabá,panaba,2009\2009-12-28_suplemento.pdf,505,517,true,capitulo_i,508,509,YUC_PREDIAL_2010_panaba.txt,4034
 2010,Quintana Roo,quintana_roo,2009\2009-12-28_suplemento.pdf,517,527,true,capitulo_i,519,520,YUC_PREDIAL_2010_quintana_roo.txt,1293
 2010,Río Lagartos,rio_lagartos,2009\2009-12-28_suplemento.pdf,527,536,true,capitulo_i,529,530,YUC_PREDIAL_2010_rio_lagartos.txt,2459
-2010,Sacalum,sacalum,2009\2009-12-28_suplemento.pdf,536,539,false,none,,,YUC_PREDIAL_2010_sacalum.txt,0
+2010,Sacalum,sacalum,2009\2009-12-28_suplemento.pdf,536,539,true,short_form,536,539,YUC_PREDIAL_2010_sacalum.txt,4026
 2010,Samahil,samahil,2009\2009-12-28_suplemento.pdf,539,555,true,capitulo_i,541,544,YUC_PREDIAL_2010_samahil.txt,3998
 2010,Sanahcat,sanahcat,2009\2009-12-28_suplemento.pdf,555,565,true,capitulo_i,557,558,YUC_PREDIAL_2010_sanahcat.txt,650
 2010,San Felipe,san_felipe,2009\2009-12-28_suplemento.pdf,565,576,true,capitulo_i,567,569,YUC_PREDIAL_2010_san_felipe.txt,2571
-2010,Acanceh,acanceh,2009\2009-12-29_suplemento.pdf,10,13,false,none,,,YUC_PREDIAL_2010_acanceh.txt,0
+2010,Acanceh,acanceh,2009\2009-12-29_suplemento.pdf,10,13,true,short_form,10,13,YUC_PREDIAL_2010_acanceh.txt,4023
 2010,Chemax,chemax,2009\2009-12-29_suplemento.pdf,13,24,true,capitulo_i,16,17,YUC_PREDIAL_2010_chemax.txt,3374
 2010,Espita,espita,2009\2009-12-29_suplemento.pdf,24,35,true,capitulo_i,26,27,YUC_PREDIAL_2010_espita.txt,2674
 2010,Halachó,halacho,2009\2009-12-29_suplemento.pdf,35,51,true,capitulo_i,38,39,YUC_PREDIAL_2010_halacho.txt,2498
@@ -58,29 +58,29 @@ ejercicio,municipio,slug,source_pdf,ley_page_start,ley_page_end,predial_found,pr
 2010,Izamal,izamal,2009\2009-12-29_suplemento.pdf,70,86,true,capitulo_i,72,75,YUC_PREDIAL_2010_izamal.txt,5432
 2010,Kanasín,kanasin,2009\2009-12-29_suplemento.pdf,86,107,true,seccion_primera,87,89,YUC_PREDIAL_2010_kanasin.txt,3253
 2010,Maxcanú,maxcanu,2009\2009-12-29_suplemento.pdf,107,123,true,capitulo_i,110,113,YUC_PREDIAL_2010_maxcanu.txt,5573
-2010,Motul,motul,2009\2009-12-29_suplemento.pdf,123,126,false,none,,,YUC_PREDIAL_2010_motul.txt,0
+2010,Motul,motul,2009\2009-12-29_suplemento.pdf,123,126,true,short_form,123,126,YUC_PREDIAL_2010_motul.txt,4025
 2010,Oxkutzcab,oxkutzcab,2009\2009-12-29_suplemento.pdf,126,141,true,seccion_primera,126,129,YUC_PREDIAL_2010_oxkutzcab.txt,4105
 2010,Peto,peto,2009\2009-12-29_suplemento.pdf,141,153,true,capitulo_i,143,144,YUC_PREDIAL_2010_peto.txt,589
 2010,Progreso,progreso,2009\2009-12-29_suplemento.pdf,153,172,true,capitulo_i,155,155,YUC_PREDIAL_2010_progreso.txt,270
 2010,Santa Elena,santa_elena,2009\2009-12-29_suplemento.pdf,172,184,true,capitulo_i,174,177,YUC_PREDIAL_2010_santa_elena.txt,4007
 2010,Seyé,seye,2009\2009-12-29_suplemento.pdf,184,193,true,capitulo_i,186,187,YUC_PREDIAL_2010_seye.txt,944
 2010,Sinanché,sinanche,2009\2009-12-29_suplemento.pdf,193,209,true,capitulo_i,196,200,YUC_PREDIAL_2010_sinanche.txt,5921
-2010,Sotuta,sotuta,2009\2009-12-29_suplemento.pdf,209,212,false,none,,,YUC_PREDIAL_2010_sotuta.txt,0
+2010,Sotuta,sotuta,2009\2009-12-29_suplemento.pdf,209,212,true,short_form,209,212,YUC_PREDIAL_2010_sotuta.txt,4025
 2010,Sucilá,sucila,2009\2009-12-29_suplemento.pdf,212,225,true,capitulo_i,215,217,YUC_PREDIAL_2010_sucila.txt,3647
 2010,Sudzal,sudzal,2009\2009-12-29_suplemento.pdf,225,235,true,capitulo_i,228,228,YUC_PREDIAL_2010_sudzal.txt,1551
 2010,Suma de Hidalgo,suma_de_hidalgo,2009\2009-12-29_suplemento.pdf,235,245,true,capitulo_i,237,238,YUC_PREDIAL_2010_suma_de_hidalgo.txt,1708
-2010,Tahdziú,tahdziu,2009\2009-12-29_suplemento.pdf,245,249,false,none,,,YUC_PREDIAL_2010_tahdziu.txt,0
+2010,Tahdziú,tahdziu,2009\2009-12-29_suplemento.pdf,245,249,true,short_form,245,249,YUC_PREDIAL_2010_tahdziu.txt,4016
 2010,Tahmek,tahmek,2009\2009-12-29_suplemento.pdf,249,257,true,capitulo_i,251,252,YUC_PREDIAL_2010_tahmek.txt,2337
 2010,Teabo,teabo,2009\2009-12-29_suplemento.pdf,257,270,true,capitulo_i,260,262,YUC_PREDIAL_2010_teabo.txt,3343
 2010,Tecoh,tecoh,2009\2009-12-29_suplemento.pdf,270,283,true,capitulo_i,272,274,YUC_PREDIAL_2010_tecoh.txt,4580
-2010,Tekal de Venegas,tekal_de_venegas,2009\2009-12-29_suplemento.pdf,283,287,false,none,,,YUC_PREDIAL_2010_tekal_de_venegas.txt,0
+2010,Tekal de Venegas,tekal_de_venegas,2009\2009-12-29_suplemento.pdf,283,287,true,short_form,283,287,YUC_PREDIAL_2010_tekal_de_venegas.txt,4025
 2010,Tekantó,tekanto,2009\2009-12-29_suplemento.pdf,287,300,true,capitulo_i,289,292,YUC_PREDIAL_2010_tekanto.txt,3900
 2010,Tekax,tekax,2009\2009-12-29_suplemento.pdf,300,317,true,capitulo_i,303,304,YUC_PREDIAL_2010_tekax.txt,2367
 2010,Tekit,tekit,2009\2009-12-29_suplemento.pdf,317,328,true,capitulo_i,320,322,YUC_PREDIAL_2010_tekit.txt,3034
 2010,Tekom,tekom,2009\2009-12-29_suplemento.pdf,328,339,true,capitulo_i,330,332,YUC_PREDIAL_2010_tekom.txt,3927
 2010,Telchac Puerto,telchac_puerto,2009\2009-12-29_suplemento.pdf,339,351,true,capitulo_i,341,342,YUC_PREDIAL_2010_telchac_puerto.txt,1589
 2010,Telchac Pueblo,telchac_pueblo,2009\2009-12-29_suplemento.pdf,351,362,true,capitulo_i,353,353,YUC_PREDIAL_2010_telchac_pueblo.txt,708
-2010,Temax,temax,2009\2009-12-29_suplemento.pdf,362,365,false,none,,,YUC_PREDIAL_2010_temax.txt,0
+2010,Temax,temax,2009\2009-12-29_suplemento.pdf,362,365,true,short_form,362,365,YUC_PREDIAL_2010_temax.txt,4026
 2010,Temozón,temozon,2009\2009-12-29_suplemento.pdf,365,376,true,capitulo_i,367,369,YUC_PREDIAL_2010_temozon.txt,2914
 2010,Tepakán,tepakan,2009\2009-12-29_suplemento.pdf,376,386,true,capitulo_i,378,380,YUC_PREDIAL_2010_tepakan.txt,2636
 2010,Tetiz,tetiz,2009\2009-12-29_suplemento.pdf,386,394,true,capitulo_i,388,389,YUC_PREDIAL_2010_tetiz.txt,1649
@@ -94,16 +94,16 @@ ejercicio,municipio,slug,source_pdf,ley_page_start,ley_page_end,predial_found,pr
 2010,Tixpéual,tixpehual,2009\2009-12-29_suplemento.pdf,485,495,true,capitulo_i,487,488,YUC_PREDIAL_2010_tixpehual.txt,2147
 2010,Tunkás,tunkas,2009\2009-12-29_suplemento.pdf,495,504,true,capitulo_i,497,498,YUC_PREDIAL_2010_tunkas.txt,1564
 2010,Tzucacab,tzucacab,2009\2009-12-29_suplemento.pdf,504,515,true,seccion_primera,505,507,YUC_PREDIAL_2010_tzucacab.txt,3211
-2010,Uayma,uayma,2009\2009-12-29_suplemento.pdf,515,518,false,none,,,YUC_PREDIAL_2010_uayma.txt,0
+2010,Uayma,uayma,2009\2009-12-29_suplemento.pdf,515,518,true,short_form,515,518,YUC_PREDIAL_2010_uayma.txt,4025
 2010,Ucú,ucu,2009\2009-12-29_suplemento.pdf,518,530,true,capitulo_i,521,522,YUC_PREDIAL_2010_ucu.txt,3217
 2010,Umán,uman,2009\2009-12-29_suplemento.pdf,530,551,true,capitulo_i,532,538,YUC_PREDIAL_2010_uman.txt,11958
-2010,Valladolid,valladolid,2009\2009-12-29_suplemento.pdf,551,554,false,none,,,YUC_PREDIAL_2010_valladolid.txt,0
+2010,Valladolid,valladolid,2009\2009-12-29_suplemento.pdf,551,554,true,short_form,551,554,YUC_PREDIAL_2010_valladolid.txt,4025
 2010,Xocchel,xocchel,2009\2009-12-29_suplemento.pdf,554,570,true,capitulo_i,556,559,YUC_PREDIAL_2010_xocchel.txt,4512
 2010,Yaxcabá,yaxcaba,2009\2009-12-29_suplemento.pdf,570,581,true,seccion_primera,571,571,YUC_PREDIAL_2010_yaxcaba.txt,465
 2010,Yaxkukul,yaxkukul,2009\2009-12-29_suplemento.pdf,581,588,true,capitulo_i,583,583,YUC_PREDIAL_2010_yaxkukul.txt,693
 2010,Yobaín,yobain,2009\2009-12-29_suplemento.pdf,588,600,true,capitulo_i,590,592,YUC_PREDIAL_2010_yobain.txt,3697
 2011,Abalá,abala,2010\2010-12-24_suplemento.pdf,10,22,true,capitulo_i,13,15,YUC_PREDIAL_2011_abala.txt,4544
-2011,Acanceh,acanceh,2010\2010-12-24_suplemento.pdf,22,25,false,none,,,YUC_PREDIAL_2011_acanceh.txt,0
+2011,Acanceh,acanceh,2010\2010-12-24_suplemento.pdf,22,25,true,short_form,22,25,YUC_PREDIAL_2011_acanceh.txt,4026
 2011,Akil,akil,2010\2010-12-24_suplemento.pdf,25,39,true,capitulo_i,27,29,YUC_PREDIAL_2011_akil.txt,3587
 2011,Buctzotz,buctzotz,2010\2010-12-24_suplemento.pdf,39,50,true,seccion_primera,40,42,YUC_PREDIAL_2011_buctzotz.txt,3229
 2011,Calotmul,calotmul,2010\2010-12-24_suplemento.pdf,50,64,true,seccion_primera,50,53,YUC_PREDIAL_2011_calotmul.txt,6953
@@ -131,7 +131,7 @@ ejercicio,municipio,slug,source_pdf,ley_page_start,ley_page_end,predial_found,pr
 2011,San Felipe,san_felipe,2010\2010-12-24_suplemento.pdf,378,394,true,capitulo_i,381,382,YUC_PREDIAL_2011_san_felipe.txt,2541
 2011,Sanahcat,sanahcat,2010\2010-12-24_suplemento.pdf,394,404,true,capitulo_i,396,396,YUC_PREDIAL_2011_sanahcat.txt,902
 2011,Sotuta,sotuta,2010\2010-12-24_suplemento.pdf,404,417,true,capitulo_i,409,410,YUC_PREDIAL_2011_sotuta.txt,1389
-2011,Tahdziú,tahdziu,2010\2010-12-24_suplemento.pdf,417,420,false,none,,,YUC_PREDIAL_2011_tahdziu.txt,0
+2011,Tahdziú,tahdziu,2010\2010-12-24_suplemento.pdf,417,420,true,short_form,417,420,YUC_PREDIAL_2011_tahdziu.txt,4026
 2011,Teabo,teabo,2010\2010-12-24_suplemento.pdf,420,434,true,capitulo_i,423,425,YUC_PREDIAL_2011_teabo.txt,3357
 2011,Tekantó,tekanto,2010\2010-12-24_suplemento.pdf,434,449,true,capitulo_i,437,440,YUC_PREDIAL_2011_tekanto.txt,4494
 2011,Tekom,tekom,2010\2010-12-24_suplemento.pdf,449,461,true,capitulo_i,451,454,YUC_PREDIAL_2011_tekom.txt,3962
@@ -153,7 +153,7 @@ ejercicio,municipio,slug,source_pdf,ley_page_start,ley_page_end,predial_found,pr
 2011,Dzilám de Bravo,dzilam_de_bravo,2010\2010-12-29_suplemento.pdf,161,174,true,capitulo_i,163,164,YUC_PREDIAL_2011_dzilam_de_bravo.txt,956
 2011,Dzoncauich,dzoncauich,2010\2010-12-29_suplemento.pdf,174,185,true,capitulo_i,176,178,YUC_PREDIAL_2011_dzoncauich.txt,2931
 2011,Halachó,halacho,2010\2010-12-29_suplemento.pdf,185,201,true,seccion_primera,185,187,YUC_PREDIAL_2011_halacho.txt,2877
-2011,Hocabá,hocaba,2010\2010-12-29_suplemento.pdf,201,204,false,none,,,YUC_PREDIAL_2011_hocaba.txt,0
+2011,Hocabá,hocaba,2010\2010-12-29_suplemento.pdf,201,204,true,short_form,201,204,YUC_PREDIAL_2011_hocaba.txt,4026
 2011,Hoctún,hoctun,2010\2010-12-29_suplemento.pdf,204,217,true,capitulo_i,206,209,YUC_PREDIAL_2011_hoctun.txt,3552
 2011,Huhí,huhi,2010\2010-12-29_suplemento.pdf,217,227,true,capitulo_i,219,220,YUC_PREDIAL_2011_huhi.txt,1276
 2011,Hunucmá,hunucma,2010\2010-12-29_suplemento.pdf,227,247,true,capitulo_i,230,235,YUC_PREDIAL_2011_hunucma.txt,10005
@@ -164,14 +164,14 @@ ejercicio,municipio,slug,source_pdf,ley_page_start,ley_page_end,predial_found,pr
 2011,Mama,mama,2010\2010-12-29_suplemento.pdf,308,318,true,capitulo_i,311,312,YUC_PREDIAL_2011_mama.txt,1401
 2011,Maní,mani,2010\2010-12-29_suplemento.pdf,318,329,true,capitulo_i,320,322,YUC_PREDIAL_2011_mani.txt,2164
 2011,Maxcanú,maxcanu,2010\2010-12-29_suplemento.pdf,329,346,true,capitulo_i,332,335,YUC_PREDIAL_2011_maxcanu.txt,5130
-2011,Motul,motul,2010\2010-12-29_suplemento.pdf,346,349,false,none,,,YUC_PREDIAL_2011_motul.txt,0
-2011,Muna,muna,2010\2010-12-29_suplemento.pdf,349,353,false,none,,,YUC_PREDIAL_2011_muna.txt,0
+2011,Motul,motul,2010\2010-12-29_suplemento.pdf,346,349,true,short_form,346,349,YUC_PREDIAL_2011_motul.txt,4026
+2011,Muna,muna,2010\2010-12-29_suplemento.pdf,349,353,true,short_form,349,353,YUC_PREDIAL_2011_muna.txt,4026
 2011,Muxupip,muxupip,2010\2010-12-29_suplemento.pdf,353,364,true,capitulo_i,355,356,YUC_PREDIAL_2011_muxupip.txt,1558
 2011,Oxkutzcab,oxkutzcab,2010\2010-12-29_suplemento.pdf,364,383,true,seccion_primera,365,367,YUC_PREDIAL_2011_oxkutzcab.txt,3505
 2011,Peto,peto,2010\2010-12-29_suplemento.pdf,383,400,true,seccion_primera,383,384,YUC_PREDIAL_2011_peto.txt,683
 2011,Progreso,progreso,2010\2010-12-29_suplemento.pdf,400,421,true,capitulo_i,402,402,YUC_PREDIAL_2011_progreso.txt,272
 2011,Río Lagartos,rio_lagartos,2010\2010-12-29_suplemento.pdf,421,432,true,capitulo_i,423,425,YUC_PREDIAL_2011_rio_lagartos.txt,1987
-2011,Sacalúm,sacalum,2010\2010-12-29_suplemento.pdf,432,435,false,none,,,YUC_PREDIAL_2011_sacalum.txt,0
+2011,Sacalúm,sacalum,2010\2010-12-29_suplemento.pdf,432,435,true,short_form,432,435,YUC_PREDIAL_2011_sacalum.txt,4026
 2011,Santa Elena,santa_elena,2010\2010-12-29_suplemento.pdf,435,448,true,capitulo_i,437,440,YUC_PREDIAL_2011_santa_elena.txt,3944
 2011,Seyé,seye,2010\2010-12-29_suplemento.pdf,448,458,true,capitulo_i,450,451,YUC_PREDIAL_2011_seye.txt,949
 2011,Sinanché,sinanche,2010\2010-12-29_suplemento.pdf,458,475,true,capitulo_i,461,464,YUC_PREDIAL_2011_sinanche.txt,5450
@@ -179,7 +179,7 @@ ejercicio,municipio,slug,source_pdf,ley_page_start,ley_page_end,predial_found,pr
 2011,Sudzal,sudzal,2010\2010-12-29_suplemento.pdf,489,499,true,capitulo_i,491,492,YUC_PREDIAL_2011_sudzal.txt,1698
 2011,Tahmek,tahmek,2010\2010-12-29_suplemento.pdf,499,509,true,capitulo_i,501,503,YUC_PREDIAL_2011_tahmek.txt,2938
 2011,Tecoh,tecoh,2010\2010-12-29_suplemento.pdf,509,522,true,capitulo_i,511,513,YUC_PREDIAL_2011_tecoh.txt,4386
-2011,Tekal de Venegas,tekal_de_venegas,2010\2010-12-29_suplemento.pdf,522,526,false,none,,,YUC_PREDIAL_2011_tekal_de_venegas.txt,0
+2011,Tekal de Venegas,tekal_de_venegas,2010\2010-12-29_suplemento.pdf,522,526,true,short_form,522,526,YUC_PREDIAL_2011_tekal_de_venegas.txt,4026
 2011,Tekax,tekax,2010\2010-12-29_suplemento.pdf,526,542,true,capitulo_i,528,529,YUC_PREDIAL_2011_tekax.txt,2494
 2011,Tekit,tekit,2010\2010-12-29_suplemento.pdf,542,557,true,capitulo_i,545,547,YUC_PREDIAL_2011_tekit.txt,3104
 2011,Temozón,temozon,2010\2010-12-29_suplemento.pdf,557,569,true,capitulo_i,559,561,YUC_PREDIAL_2011_temozon.txt,2913
@@ -193,16 +193,16 @@ ejercicio,municipio,slug,source_pdf,ley_page_start,ley_page_end,predial_found,pr
 2011,Tizimín,tizimin,2010\2010-12-29_suplemento.pdf,654,680,true,seccion_primera,655,658,YUC_PREDIAL_2011_tizimin.txt,5098
 2011,Tunkás,tunkas,2010\2010-12-29_suplemento.pdf,680,691,true,capitulo_i,682,683,YUC_PREDIAL_2011_tunkas.txt,2272
 2011,Tzucacab,tzucacab,2010\2010-12-29_suplemento.pdf,691,704,true,seccion_primera,692,694,YUC_PREDIAL_2011_tzucacab.txt,3553
-2011,Uayma,uayma,2010\2010-12-29_suplemento.pdf,704,707,false,none,,,YUC_PREDIAL_2011_uayma.txt,0
+2011,Uayma,uayma,2010\2010-12-29_suplemento.pdf,704,707,true,short_form,704,707,YUC_PREDIAL_2011_uayma.txt,4021
 2011,Ucú,ucu,2010\2010-12-29_suplemento.pdf,707,719,true,capitulo_i,710,711,YUC_PREDIAL_2011_ucu.txt,3812
 2011,Umán,uman,2010\2010-12-29_suplemento.pdf,719,743,true,capitulo_i,722,728,YUC_PREDIAL_2011_uman.txt,12100
-2011,Valladolid,valladolid,2010\2010-12-29_suplemento.pdf,743,747,false,none,,,YUC_PREDIAL_2011_valladolid.txt,0
+2011,Valladolid,valladolid,2010\2010-12-29_suplemento.pdf,743,747,true,short_form,743,747,YUC_PREDIAL_2011_valladolid.txt,4025
 2011,Xocchel,xocchel,2010\2010-12-29_suplemento.pdf,747,765,true,capitulo_i,749,752,YUC_PREDIAL_2011_xocchel.txt,4529
 2011,Yaxcabá,yaxcaba,2010\2010-12-29_suplemento.pdf,765,777,true,seccion_primera,766,766,YUC_PREDIAL_2011_yaxcaba.txt,474
 2011,Yaxkukul,yaxkukul,2010\2010-12-29_suplemento.pdf,777,786,true,capitulo_i,780,780,YUC_PREDIAL_2011_yaxkukul.txt,803
 2011,Yobaín,yobain,2010\2010-12-29_suplemento.pdf,786,800,true,capitulo_i,788,790,YUC_PREDIAL_2011_yobain.txt,3366
 2012,Abalá,abala,2011\2011-12-28_suplemento.pdf,12,26,true,capitulo_i,14,17,YUC_PREDIAL_2012_abala.txt,4647
-2012,Acanceh,acanceh,2011\2011-12-28_suplemento.pdf,26,29,false,none,,,YUC_PREDIAL_2012_acanceh.txt,0
+2012,Acanceh,acanceh,2011\2011-12-28_suplemento.pdf,26,29,true,short_form,26,29,YUC_PREDIAL_2012_acanceh.txt,4026
 2012,Akil,akil,2011\2011-12-28_suplemento.pdf,29,59,true,seccion_primera,30,32,YUC_PREDIAL_2012_akil.txt,3647
 2012,Cacalchén,cacalchen,2011\2011-12-28_suplemento.pdf,59,76,true,capitulo_i,62,65,YUC_PREDIAL_2012_cacalchen.txt,4001
 2012,Calotmul,calotmul,2011\2011-12-28_suplemento.pdf,76,92,true,seccion_primera,77,79,YUC_PREDIAL_2012_calotmul.txt,6192
@@ -220,7 +220,7 @@ ejercicio,municipio,slug,source_pdf,ley_page_start,ley_page_end,predial_found,pr
 2012,Chicxulub Pueblo,chicxulub_pueblo,2011\2011-12-28_suplemento.pdf,246,265,true,capitulo_i,249,252,YUC_PREDIAL_2012_chicxulub_pueblo.txt,3779
 2012,Chichimilá,chichimila,2011\2011-12-28_suplemento.pdf,265,278,true,seccion_primera,266,268,YUC_PREDIAL_2012_chichimila.txt,3603
 2012,Chikindzonot,chikindzonot,2011\2011-12-28_suplemento.pdf,278,296,true,capitulo_i,281,283,YUC_PREDIAL_2012_chikindzonot.txt,2812
-2012,Chocholá,chochola,2011\2011-12-28_suplemento.pdf,296,299,false,none,,,YUC_PREDIAL_2012_chochola.txt,0
+2012,Chocholá,chochola,2011\2011-12-28_suplemento.pdf,296,299,true,short_form,296,299,YUC_PREDIAL_2012_chochola.txt,4026
 2012,Dzan,dzan,2011\2011-12-28_suplemento.pdf,299,316,true,capitulo_i,302,304,YUC_PREDIAL_2012_dzan.txt,2990
 2012,Dzemul,dzemul,2011\2011-12-28_suplemento.pdf,316,334,true,capitulo_i,319,321,YUC_PREDIAL_2012_dzemul.txt,3403
 2012,Dzidzantún,dzidzantun,2011\2011-12-28_suplemento.pdf,334,348,true,capitulo_i,337,338,YUC_PREDIAL_2012_dzidzantun.txt,2692
@@ -228,7 +228,7 @@ ejercicio,municipio,slug,source_pdf,ley_page_start,ley_page_end,predial_found,pr
 2012,Dzilám González,dzilam_gonzalez,2011\2011-12-28_suplemento.pdf,362,373,true,capitulo_i,364,365,YUC_PREDIAL_2012_dzilam_gonzalez.txt,1129
 2012,Dzitás,dzitas,2011\2011-12-28_suplemento.pdf,373,386,true,capitulo_i,376,378,YUC_PREDIAL_2012_dzitas.txt,3098
 2012,Dzoncauich,dzoncauich,2011\2011-12-28_suplemento.pdf,386,398,true,capitulo_i,388,390,YUC_PREDIAL_2012_dzoncauich.txt,2777
-2012,Hocabá,hocaba,2011\2011-12-28_suplemento.pdf,398,402,false,none,,,YUC_PREDIAL_2012_hocaba.txt,0
+2012,Hocabá,hocaba,2011\2011-12-28_suplemento.pdf,398,402,true,short_form,398,402,YUC_PREDIAL_2012_hocaba.txt,4021
 2012,Homún,homun,2011\2011-12-28_suplemento.pdf,402,414,true,capitulo_i,404,405,YUC_PREDIAL_2012_homun.txt,1306
 2012,Kantunil,kantunil,2011\2011-12-28_suplemento.pdf,414,426,true,capitulo_i,416,418,YUC_PREDIAL_2012_kantunil.txt,4529
 2012,Kinchil,kinchil,2011\2011-12-28_suplemento.pdf,426,436,true,capitulo_i,428,429,YUC_PREDIAL_2012_kinchil.txt,1596
@@ -240,7 +240,7 @@ ejercicio,municipio,slug,source_pdf,ley_page_start,ley_page_end,predial_found,pr
 2012,Sanahcat,sanahcat,2011\2011-12-28_suplemento.pdf,524,537,true,capitulo_i,527,527,YUC_PREDIAL_2012_sanahcat.txt,916
 2012,San Felipe,san_felipe,2011\2011-12-28_suplemento.pdf,537,550,true,capitulo_i,540,542,YUC_PREDIAL_2012_san_felipe.txt,2461
 2012,Sotuta,sotuta,2011\2011-12-28_suplemento.pdf,550,564,true,capitulo_i,556,557,YUC_PREDIAL_2012_sotuta.txt,1756
-2012,Tahdziú,tahdziu,2011\2011-12-28_suplemento.pdf,564,568,false,none,,,YUC_PREDIAL_2012_tahdziu.txt,0
+2012,Tahdziú,tahdziu,2011\2011-12-28_suplemento.pdf,564,568,true,short_form,564,568,YUC_PREDIAL_2012_tahdziu.txt,4026
 2012,Teabo,teabo,2011\2011-12-28_suplemento.pdf,568,582,true,capitulo_i,571,573,YUC_PREDIAL_2012_teabo.txt,3168
 2012,Tekantó,tekanto,2011\2011-12-28_suplemento.pdf,582,598,true,capitulo_i,585,588,YUC_PREDIAL_2012_tekanto.txt,3973
 2012,Tekom,tekom,2011\2011-12-28_suplemento.pdf,598,610,true,capitulo_i,600,603,YUC_PREDIAL_2012_tekom.txt,3934
@@ -263,13 +263,13 @@ ejercicio,municipio,slug,source_pdf,ley_page_start,ley_page_end,predial_found,pr
 2012,Mama,mama,2011\2011-12-29_suplemento.pdf,202,212,true,capitulo_i,204,206,YUC_PREDIAL_2012_mama.txt,1580
 2012,Maní,mani,2011\2011-12-29_suplemento.pdf,212,224,true,capitulo_i,215,217,YUC_PREDIAL_2012_mani.txt,2159
 2012,Maxcanú,maxcanu,2011\2011-12-29_suplemento.pdf,224,242,true,capitulo_i,227,230,YUC_PREDIAL_2012_maxcanu.txt,5131
-2012,Motul,motul,2011\2011-12-29_suplemento.pdf,242,245,false,none,,,YUC_PREDIAL_2012_motul.txt,0
-2012,Muna,muna,2011\2011-12-29_suplemento.pdf,245,249,false,none,,,YUC_PREDIAL_2012_muna.txt,0
+2012,Motul,motul,2011\2011-12-29_suplemento.pdf,242,245,true,short_form,242,245,YUC_PREDIAL_2012_motul.txt,4025
+2012,Muna,muna,2011\2011-12-29_suplemento.pdf,245,249,true,short_form,245,249,YUC_PREDIAL_2012_muna.txt,4023
 2012,Muxupip,muxupip,2011\2011-12-29_suplemento.pdf,249,260,true,capitulo_i,251,252,YUC_PREDIAL_2012_muxupip.txt,1615
 2012,Oxkutzcab,oxkutzcab,2011\2011-12-29_suplemento.pdf,260,296,true,seccion_primera,261,263,YUC_PREDIAL_2012_oxkutzcab.txt,3469
 2012,Progreso,progreso,2011\2011-12-29_suplemento.pdf,296,326,true,capitulo_i,299,305,YUC_PREDIAL_2012_progreso.txt,10890
 2012,Río Lagartos,rio_lagartos,2011\2011-12-29_suplemento.pdf,326,338,true,capitulo_i,329,330,YUC_PREDIAL_2012_rio_lagartos.txt,2020
-2012,Sacalum,sacalum,2011\2011-12-29_suplemento.pdf,338,341,false,none,,,YUC_PREDIAL_2012_sacalum.txt,0
+2012,Sacalum,sacalum,2011\2011-12-29_suplemento.pdf,338,341,true,short_form,338,341,YUC_PREDIAL_2012_sacalum.txt,4026
 2012,Santa Elena,santa_elena,2011\2011-12-29_suplemento.pdf,341,355,true,capitulo_i,344,346,YUC_PREDIAL_2012_santa_elena.txt,3944
 2012,Seyé,seye,2011\2011-12-29_suplemento.pdf,355,366,true,capitulo_i,358,358,YUC_PREDIAL_2012_seye.txt,936
 2012,Sinanché,sinanche,2011\2011-12-29_suplemento.pdf,366,383,true,capitulo_i,369,372,YUC_PREDIAL_2012_sinanche.txt,5155
@@ -277,10 +277,10 @@ ejercicio,municipio,slug,source_pdf,ley_page_start,ley_page_end,predial_found,pr
 2012,Sudzal,sudzal,2011\2011-12-29_suplemento.pdf,399,410,true,capitulo_i,401,402,YUC_PREDIAL_2012_sudzal.txt,1624
 2012,Tahmek,tahmek,2011\2011-12-29_suplemento.pdf,410,421,true,capitulo_i,412,414,YUC_PREDIAL_2012_tahmek.txt,3439
 2012,Tecoh,tecoh,2011\2011-12-29_suplemento.pdf,421,437,true,capitulo_i,424,427,YUC_PREDIAL_2012_tecoh.txt,4354
-2012,Tekal de Venegas,tekal_de_venegas,2011\2011-12-29_suplemento.pdf,437,441,false,none,,,YUC_PREDIAL_2012_tekal_de_venegas.txt,0
+2012,Tekal de Venegas,tekal_de_venegas,2011\2011-12-29_suplemento.pdf,437,441,true,short_form,437,441,YUC_PREDIAL_2012_tekal_de_venegas.txt,4022
 2012,Tekax,tekax,2011\2011-12-29_suplemento.pdf,441,461,true,capitulo_i,443,445,YUC_PREDIAL_2012_tekax.txt,2461
 2012,Tekit,tekit,2011\2011-12-29_suplemento.pdf,461,473,true,capitulo_i,463,466,YUC_PREDIAL_2012_tekit.txt,3042
-2012,Temax,temax,2011\2011-12-29_suplemento.pdf,473,476,false,none,,,YUC_PREDIAL_2012_temax.txt,0
+2012,Temax,temax,2011\2011-12-29_suplemento.pdf,473,476,true,short_form,473,476,YUC_PREDIAL_2012_temax.txt,4026
 2012,Temozón,temozon,2011\2011-12-29_suplemento.pdf,476,488,true,capitulo_i,479,481,YUC_PREDIAL_2012_temozon.txt,2904
 2012,Tepakán,tepakan,2011\2011-12-29_suplemento.pdf,488,500,true,capitulo_i,491,493,YUC_PREDIAL_2012_tepakan.txt,2598
 2012,Tetiz,tetiz,2011\2011-12-29_suplemento.pdf,500,510,true,capitulo_i,502,504,YUC_PREDIAL_2012_tetiz.txt,3009
@@ -294,7 +294,7 @@ ejercicio,municipio,slug,source_pdf,ley_page_start,ley_page_end,predial_found,pr
 2012,Tunkás,tunkas,2011\2011-12-29_suplemento.pdf,633,645,true,capitulo_i,635,636,YUC_PREDIAL_2012_tunkas.txt,1560
 2012,Ucú,ucu,2011\2011-12-29_suplemento.pdf,645,658,true,capitulo_i,648,649,YUC_PREDIAL_2012_ucu.txt,2479
 2012,Umán,uman,2011\2011-12-29_suplemento.pdf,658,683,true,capitulo_i,661,667,YUC_PREDIAL_2012_uman.txt,11754
-2012,Valladolid,valladolid,2011\2011-12-29_suplemento.pdf,683,687,false,none,,,YUC_PREDIAL_2012_valladolid.txt,0
+2012,Valladolid,valladolid,2011\2011-12-29_suplemento.pdf,683,687,true,short_form,683,687,YUC_PREDIAL_2012_valladolid.txt,4026
 2012,Xocchel,xocchel,2011\2011-12-29_suplemento.pdf,687,705,true,capitulo_i,689,692,YUC_PREDIAL_2012_xocchel.txt,4567
 2012,Yaxcabá,yaxcaba,2011\2011-12-29_suplemento.pdf,705,720,true,seccion_primera,706,707,YUC_PREDIAL_2012_yaxcaba.txt,541
 2012,Yaxkukul,yaxkukul,2011\2011-12-29_suplemento.pdf,720,729,true,capitulo_i,722,723,YUC_PREDIAL_2012_yaxkukul.txt,824
@@ -330,18 +330,18 @@ ejercicio,municipio,slug,source_pdf,ley_page_start,ley_page_end,predial_found,pr
 2013,Kinchil,kinchil,2012\2012-12-24_suplemento.pdf,429,439,true,capitulo_i,431,433,YUC_PREDIAL_2013_kinchil.txt,2893
 2013,Mayapán,mayapan,2012\2012-12-24_suplemento.pdf,439,456,true,seccion_primera,441,443,YUC_PREDIAL_2013_mayapan.txt,3579
 2013,Mocochá,mococha,2012\2012-12-24_suplemento.pdf,456,470,true,capitulo_i,459,461,YUC_PREDIAL_2013_mococha.txt,3232
-2013,Motul,motul,2012\2012-12-24_suplemento.pdf,470,473,false,none,,,YUC_PREDIAL_2013_motul.txt,0
-2013,Muna,muna,2012\2012-12-24_suplemento.pdf,473,477,false,none,,,YUC_PREDIAL_2013_muna.txt,0
+2013,Motul,motul,2012\2012-12-24_suplemento.pdf,470,473,true,short_form,470,473,YUC_PREDIAL_2013_motul.txt,4025
+2013,Muna,muna,2012\2012-12-24_suplemento.pdf,473,477,true,short_form,473,477,YUC_PREDIAL_2013_muna.txt,4023
 2013,Opichén,opichen,2012\2012-12-24_suplemento.pdf,477,489,true,capitulo_i,480,480,YUC_PREDIAL_2013_opichen.txt,948
 2013,Panabá,panaba,2012\2012-12-24_suplemento.pdf,489,502,true,capitulo_i,492,494,YUC_PREDIAL_2013_panaba.txt,2939
 2013,Quintana Roo,quintana_roo,2012\2012-12-24_suplemento.pdf,502,514,true,capitulo_i,505,506,YUC_PREDIAL_2013_quintana_roo.txt,1284
-2013,Sacalum,sacalum,2012\2012-12-24_suplemento.pdf,514,518,false,none,,,YUC_PREDIAL_2013_sacalum.txt,0
+2013,Sacalum,sacalum,2012\2012-12-24_suplemento.pdf,514,518,true,short_form,514,518,YUC_PREDIAL_2013_sacalum.txt,3958
 2013,Samahil,samahil,2012\2012-12-24_suplemento.pdf,518,535,true,capitulo_i,520,523,YUC_PREDIAL_2013_samahil.txt,3807
 2013,Sanahcat,sanahcat,2012\2012-12-24_suplemento.pdf,535,546,true,capitulo_i,537,538,YUC_PREDIAL_2013_sanahcat.txt,650
 2013,San Felipe,san_felipe,2012\2012-12-24_suplemento.pdf,546,558,true,capitulo_i,549,551,YUC_PREDIAL_2013_san_felipe.txt,2345
-2013,Sotuta,sotuta,2012\2012-12-24_suplemento.pdf,558,562,false,none,,,YUC_PREDIAL_2013_sotuta.txt,0
+2013,Sotuta,sotuta,2012\2012-12-24_suplemento.pdf,558,562,true,short_form,558,562,YUC_PREDIAL_2013_sotuta.txt,4025
 2013,Suma de Hidalgo,suma_de_hidalgo,2012\2012-12-24_suplemento.pdf,562,573,true,capitulo_i,564,565,YUC_PREDIAL_2013_suma_de_hidalgo.txt,1348
-2013,Tahdziú,tahdziu,2012\2012-12-24_suplemento.pdf,573,577,false,none,,,YUC_PREDIAL_2013_tahdziu.txt,0
+2013,Tahdziú,tahdziu,2012\2012-12-24_suplemento.pdf,573,577,true,short_form,573,577,YUC_PREDIAL_2013_tahdziu.txt,4023
 2013,Teabo,teabo,2012\2012-12-24_suplemento.pdf,577,589,true,capitulo_i,579,581,YUC_PREDIAL_2013_teabo.txt,3912
 2013,Tekantó,tekanto,2012\2012-12-24_suplemento.pdf,589,604,true,capitulo_i,592,594,YUC_PREDIAL_2013_tekanto.txt,3947
 2013,Tekom,tekom,2012\2012-12-24_suplemento.pdf,604,617,true,capitulo_i,607,609,YUC_PREDIAL_2013_tekom.txt,3738
@@ -377,10 +377,10 @@ ejercicio,municipio,slug,source_pdf,ley_page_start,ley_page_end,predial_found,pr
 2013,Sudzal,sudzal,2012\2012-12-27_suplemento.pdf,434,445,true,capitulo_i,436,437,YUC_PREDIAL_2013_sudzal.txt,1503
 2013,Tahmek,tahmek,2012\2012-12-27_suplemento.pdf,445,456,true,capitulo_i,448,450,YUC_PREDIAL_2013_tahmek.txt,2575
 2013,Tecoh,tecoh,2012\2012-12-27_suplemento.pdf,456,475,true,capitulo_i,458,461,YUC_PREDIAL_2013_tecoh.txt,4472
-2013,Tekal de Venegas,tekal_de_venegas,2012\2012-12-27_suplemento.pdf,475,479,false,none,,,YUC_PREDIAL_2013_tekal_de_venegas.txt,0
+2013,Tekal de Venegas,tekal_de_venegas,2012\2012-12-27_suplemento.pdf,475,479,true,short_form,475,479,YUC_PREDIAL_2013_tekal_de_venegas.txt,4025
 2013,Tekax,tekax,2012\2012-12-27_suplemento.pdf,479,498,true,capitulo_i,481,483,YUC_PREDIAL_2013_tekax.txt,2370
 2013,Tekit,tekit,2012\2012-12-27_suplemento.pdf,498,512,true,capitulo_i,501,504,YUC_PREDIAL_2013_tekit.txt,3047
-2103,Temax,temax,2012\2012-12-27_suplemento.pdf,512,515,false,none,,,YUC_PREDIAL_2103_temax.txt,0
+2103,Temax,temax,2012\2012-12-27_suplemento.pdf,512,515,true,short_form,512,515,YUC_PREDIAL_2103_temax.txt,4025
 2013,Temozón,temozon,2012\2012-12-27_suplemento.pdf,515,527,false,none,,,YUC_PREDIAL_2013_temozon.txt,0
 2013,Tepakán,tepakan,2012\2012-12-27_suplemento.pdf,527,539,true,capitulo_i,530,531,YUC_PREDIAL_2013_tepakan.txt,2649
 2013,Tetiz,tetiz,2012\2012-12-27_suplemento.pdf,539,551,true,capitulo_i,542,543,YUC_PREDIAL_2013_tetiz.txt,2659
@@ -418,7 +418,7 @@ ejercicio,municipio,slug,source_pdf,ley_page_start,ley_page_end,predial_found,pr
 2014,Chicxulub Pueblo,chicxulub_pueblo,2013\2013-12-31_2.pdf,248,274,true,seccion_primera,265,266,YUC_PREDIAL_2014_chicxulub_pueblo.txt,1826
 2014,Chikindzonot,chikindzonot,2013\2013-12-31_2.pdf,274,295,true,capitulo_i,277,279,YUC_PREDIAL_2014_chikindzonot.txt,4263
 2014,Dzan,dzan,2013\2013-12-31_2.pdf,295,312,true,capitulo_i,297,300,YUC_PREDIAL_2014_dzan.txt,2996
-2014,Dzidzantún,dzidzantun,2013\2013-12-31_2.pdf,312,315,false,none,,,YUC_PREDIAL_2014_dzidzantun.txt,0
+2014,Dzidzantún,dzidzantun,2013\2013-12-31_2.pdf,312,315,true,short_form,312,315,YUC_PREDIAL_2014_dzidzantun.txt,4025
 2014,Dzilam de Bravo,dzilam_de_bravo,2013\2013-12-31_2.pdf,315,327,true,capitulo_i,317,318,YUC_PREDIAL_2014_dzilam_de_bravo.txt,1081
 2014,Dzilam González,dzilam_gonzalez,2013\2013-12-31_2.pdf,327,352,true,capitulo_i,329,331,YUC_PREDIAL_2014_dzilam_gonzalez.txt,2911
 2014,Dzoncauich,dzoncauich,2013\2013-12-31_2.pdf,352,364,true,capitulo_i,354,356,YUC_PREDIAL_2014_dzoncauich.txt,2965
@@ -428,15 +428,15 @@ ejercicio,municipio,slug,source_pdf,ley_page_start,ley_page_end,predial_found,pr
 2014,Kinchil,kinchil,2013\2013-12-31_2.pdf,408,419,true,capitulo_i,410,412,YUC_PREDIAL_2014_kinchil.txt,2897
 2014,Mayapán,mayapan,2013\2013-12-31_2.pdf,419,435,true,seccion_primera,420,422,YUC_PREDIAL_2014_mayapan.txt,3225
 2014,Mocochá,mococha,2013\2013-12-31_2.pdf,435,449,true,capitulo_i,437,439,YUC_PREDIAL_2014_mococha.txt,3295
-2014,Motul,motul,2013\2013-12-31_2.pdf,449,452,false,none,,,YUC_PREDIAL_2014_motul.txt,0
+2014,Motul,motul,2013\2013-12-31_2.pdf,449,452,true,short_form,449,452,YUC_PREDIAL_2014_motul.txt,4025
 2014,Opichén,opichen,2013\2013-12-31_2.pdf,452,463,true,capitulo_i,454,455,YUC_PREDIAL_2014_opichen.txt,1220
 2014,Panabá,panaba,2013\2013-12-31_2.pdf,463,476,true,capitulo_i,465,467,YUC_PREDIAL_2014_panaba.txt,2989
 2014,Quintana Roo,quintana_roo,2013\2013-12-31_2.pdf,476,504,true,capitulo_i,478,480,YUC_PREDIAL_2014_quintana_roo.txt,3096
 2014,Sanahcat,sanahcat,2013\2013-12-31_2.pdf,504,514,true,capitulo_i,506,506,YUC_PREDIAL_2014_sanahcat.txt,641
 2014,San Felipe,san_felipe,2013\2013-12-31_2.pdf,514,524,true,capitulo_i,516,518,YUC_PREDIAL_2014_san_felipe.txt,2426
-2014,Sotuta,sotuta,2013\2013-12-31_2.pdf,524,527,false,none,,,YUC_PREDIAL_2014_sotuta.txt,0
+2014,Sotuta,sotuta,2013\2013-12-31_2.pdf,524,527,true,short_form,524,527,YUC_PREDIAL_2014_sotuta.txt,4026
 2014,Suma de Hidalgo,suma_de_hidalgo,2013\2013-12-31_2.pdf,527,537,true,capitulo_i,529,530,YUC_PREDIAL_2014_suma_de_hidalgo.txt,1478
-2014,Tahdziú,tahdziu,2013\2013-12-31_2.pdf,537,541,false,none,,,YUC_PREDIAL_2014_tahdziu.txt,0
+2014,Tahdziú,tahdziu,2013\2013-12-31_2.pdf,537,541,true,short_form,537,541,YUC_PREDIAL_2014_tahdziu.txt,4025
 2014,Teabo,teabo,2013\2013-12-31_2.pdf,541,554,true,capitulo_i,543,546,YUC_PREDIAL_2014_teabo.txt,4362
 2014,Tekantó,tekanto,2013\2013-12-31_2.pdf,554,567,true,capitulo_i,556,559,YUC_PREDIAL_2014_tekanto.txt,4447
 2014,Tekit,tekit,2013\2013-12-31_2.pdf,567,580,true,capitulo_i,570,572,YUC_PREDIAL_2014_tekit.txt,2971
@@ -451,7 +451,7 @@ ejercicio,municipio,slug,source_pdf,ley_page_start,ley_page_end,predial_found,pr
 2014,Chumayel,chumayel,2013\2013-12-31_3.pdf,47,61,true,capitulo_i,49,50,YUC_PREDIAL_2014_chumayel.txt,1229
 2014,Espita,espita,2013\2013-12-31_3.pdf,61,79,true,capitulo_i,64,65,YUC_PREDIAL_2014_espita.txt,3469
 2014,Halachó,halacho,2013\2013-12-31_3.pdf,79,96,true,capitulo_i,81,83,YUC_PREDIAL_2014_halacho.txt,3348
-2014,Hocabá,hocaba,2013\2013-12-31_3.pdf,96,99,false,none,,,YUC_PREDIAL_2014_hocaba.txt,0
+2014,Hocabá,hocaba,2013\2013-12-31_3.pdf,96,99,true,short_form,96,99,YUC_PREDIAL_2014_hocaba.txt,4020
 2014,Hoctún,hoctun,2013\2013-12-31_3.pdf,99,111,true,capitulo_i,102,103,YUC_PREDIAL_2014_hoctun.txt,2774
 2014,Huhí,huhi,2013\2013-12-31_3.pdf,111,123,true,capitulo_i,114,116,YUC_PREDIAL_2014_huhi.txt,4032
 2014,Hunucmá,hunucma,2013\2013-12-31_3.pdf,123,148,true,capitulo_i,126,132,YUC_PREDIAL_2014_hunucma.txt,10064
@@ -462,21 +462,21 @@ ejercicio,municipio,slug,source_pdf,ley_page_start,ley_page_end,predial_found,pr
 2014,Mama,mama,2013\2013-12-31_3.pdf,222,233,true,capitulo_i,224,226,YUC_PREDIAL_2014_mama.txt,1376
 2014,Maní,mani,2013\2013-12-31_3.pdf,233,244,true,capitulo_i,235,237,YUC_PREDIAL_2014_mani.txt,2201
 2014,Maxcanú,maxcanu,2013\2013-12-31_3.pdf,244,261,true,seccion_primera,244,247,YUC_PREDIAL_2014_maxcanu.txt,4601
-2014,Muna,muna,2013\2013-12-31_3.pdf,261,265,false,none,,,YUC_PREDIAL_2014_muna.txt,0
+2014,Muna,muna,2013\2013-12-31_3.pdf,261,265,true,short_form,261,265,YUC_PREDIAL_2014_muna.txt,4024
 2014,Muxupip,muxupip,2013\2013-12-31_3.pdf,265,276,true,capitulo_i,267,268,YUC_PREDIAL_2014_muxupip.txt,1336
 2014,Oxkutzcab,oxkutzcab,2013\2013-12-31_3.pdf,276,294,true,seccion_primera,277,279,YUC_PREDIAL_2014_oxkutzcab.txt,3718
 2014,Peto,peto,2013\2013-12-31_3.pdf,294,336,true,seccion_primera,295,296,YUC_PREDIAL_2014_peto.txt,535
 2014,Rio Lagartos,rio_lagartos,2013\2013-12-31_3.pdf,336,346,true,capitulo_i,338,340,YUC_PREDIAL_2014_rio_lagartos.txt,1844
-2014,Sacalum,sacalum,2013\2013-12-31_3.pdf,346,349,false,none,,,YUC_PREDIAL_2014_sacalum.txt,0
+2014,Sacalum,sacalum,2013\2013-12-31_3.pdf,346,349,true,short_form,346,349,YUC_PREDIAL_2014_sacalum.txt,4026
 2014,Santa Elena,santa_elena,2013\2013-12-31_3.pdf,349,361,true,capitulo_i,351,354,YUC_PREDIAL_2014_santa_elena.txt,4530
 2014,Seye,seye,2013\2013-12-31_3.pdf,361,374,true,capitulo_i,363,365,YUC_PREDIAL_2014_seye.txt,4542
 2014,Sinanché,sinanche,2013\2013-12-31_3.pdf,374,391,true,capitulo_i,377,380,YUC_PREDIAL_2014_sinanche.txt,5494
 2014,Sucilá,sucila,2013\2013-12-31_3.pdf,391,405,true,capitulo_i,394,397,YUC_PREDIAL_2014_sucila.txt,4033
 2014,Tahmek,tahmek,2013\2013-12-31_3.pdf,405,421,true,seccion_primera,405,407,YUC_PREDIAL_2014_tahmek.txt,3081
 2014,Tecoh,tecoh,2013\2013-12-31_3.pdf,421,441,true,capitulo_i,423,426,YUC_PREDIAL_2014_tecoh.txt,5237
-2014,Tekal de Venegas,tekal_de_venegas,2013\2013-12-31_3.pdf,441,444,false,none,,,YUC_PREDIAL_2014_tekal_de_venegas.txt,0
+2014,Tekal de Venegas,tekal_de_venegas,2013\2013-12-31_3.pdf,441,444,true,short_form,441,444,YUC_PREDIAL_2014_tekal_de_venegas.txt,4026
 2014,Tekax,tekax,2013\2013-12-31_3.pdf,444,464,true,capitulo_i,447,448,YUC_PREDIAL_2014_tekax.txt,2326
-2014,Temax,temax,2013\2013-12-31_3.pdf,464,467,false,none,,,YUC_PREDIAL_2014_temax.txt,0
+2014,Temax,temax,2013\2013-12-31_3.pdf,464,467,true,short_form,464,467,YUC_PREDIAL_2014_temax.txt,4003
 2014,Temozón,temozon,2013\2013-12-31_3.pdf,467,478,true,capitulo_i,469,471,YUC_PREDIAL_2014_temozon.txt,2835
 2014,Tepakán,tepakan,2013\2013-12-31_3.pdf,478,489,true,capitulo_i,481,482,YUC_PREDIAL_2014_tepakan.txt,2764
 2014,Tetiz,tetiz,2013\2013-12-31_3.pdf,489,499,true,capitulo_i,491,492,YUC_PREDIAL_2014_tetiz.txt,2923
@@ -489,7 +489,7 @@ ejercicio,municipio,slug,source_pdf,ley_page_start,ley_page_end,predial_found,pr
 2014,Tizimín,tizimin,2013\2013-12-31_3.pdf,594,624,true,seccion_primera,595,598,YUC_PREDIAL_2014_tizimin.txt,4956
 2014,Tunkás,tunkas,2013\2013-12-31_3.pdf,624,635,true,capitulo_i,626,627,YUC_PREDIAL_2014_tunkas.txt,1571
 2014,Tzucacab,tzucacab,2013\2013-12-31_3.pdf,635,648,true,seccion_primera,635,638,YUC_PREDIAL_2014_tzucacab.txt,5295
-2014,Uayma,uayma,2013\2013-12-31_3.pdf,648,651,false,none,,,YUC_PREDIAL_2014_uayma.txt,0
+2014,Uayma,uayma,2013\2013-12-31_3.pdf,648,651,true,short_form,648,651,YUC_PREDIAL_2014_uayma.txt,4026
 2014,Ucu,ucu,2013\2013-12-31_3.pdf,651,663,true,capitulo_i,653,655,YUC_PREDIAL_2014_ucu.txt,3062
 2014,Umán,uman,2013\2013-12-31_3.pdf,663,689,true,capitulo_i,666,671,YUC_PREDIAL_2014_uman.txt,13445
 2014,Xocchel,xocchel,2013\2013-12-31_3.pdf,689,707,true,capitulo_i,691,694,YUC_PREDIAL_2014_xocchel.txt,4608
@@ -535,7 +535,7 @@ ejercicio,municipio,slug,source_pdf,ley_page_start,ley_page_end,predial_found,pr
 2015,Samahil,samahil,2014\2014-12-24_2.pdf,606,626,true,capitulo_i,610,613,YUC_PREDIAL_2015_samahil.txt,3374
 2015,Sanahcat,sanahcat,2014\2014-12-24_2.pdf,626,640,true,capitulo_i,630,631,YUC_PREDIAL_2015_sanahcat.txt,1153
 2015,San Felipe,san_felipe,2014\2014-12-24_2.pdf,640,654,true,capitulo_i,644,646,YUC_PREDIAL_2015_san_felipe.txt,2767
-2015,Sotuta,sotuta,2014\2014-12-24_2.pdf,654,659,false,none,,,YUC_PREDIAL_2015_sotuta.txt,0
+2015,Sotuta,sotuta,2014\2014-12-24_2.pdf,654,659,true,short_form,654,659,YUC_PREDIAL_2015_sotuta.txt,4026
 2015,Sudzal,sudzal,2014\2014-12-24_2.pdf,659,673,true,capitulo_i,664,665,YUC_PREDIAL_2015_sudzal.txt,1512
 2015,Suma de Hidalgo,suma_de_hidalgo,2014\2014-12-24_2.pdf,673,685,true,capitulo_i,677,678,YUC_PREDIAL_2015_suma_de_hidalgo.txt,1953
 2015,Tahdziú,tahdziu,2014\2014-12-24_2.pdf,685,689,false,none,,,YUC_PREDIAL_2015_tahdziu.txt,0
@@ -563,7 +563,7 @@ ejercicio,municipio,slug,source_pdf,ley_page_start,ley_page_end,predial_found,pr
 2015,Mama,mama,2014\2014-12-31_2.pdf,267,280,true,capitulo_i,271,272,YUC_PREDIAL_2015_mama.txt,1330
 2015,Maní,mani,2014\2014-12-31_2.pdf,280,292,true,capitulo_i,284,285,YUC_PREDIAL_2015_mani.txt,2269
 2015,Maxcanú,maxcanu,2014\2014-12-31_2.pdf,292,314,true,seccion_primera,293,297,YUC_PREDIAL_2015_maxcanu.txt,4523
-2015,Muna,muna,2014\2014-12-31_2.pdf,314,320,false,none,,,YUC_PREDIAL_2015_muna.txt,0
+2015,Muna,muna,2014\2014-12-31_2.pdf,314,320,true,short_form,314,320,YUC_PREDIAL_2015_muna.txt,4026
 2015,Muxupip,muxupip,2014\2014-12-31_2.pdf,320,334,true,capitulo_i,324,325,YUC_PREDIAL_2015_muxupip.txt,1836
 2015,Oxkutzcab,oxkutzcab,2014\2014-12-31_2.pdf,334,357,true,seccion_primera,335,337,YUC_PREDIAL_2015_oxkutzcab.txt,3372
 2015,Peto,peto,2014\2014-12-31_2.pdf,357,376,true,seccion_primera,358,358,YUC_PREDIAL_2015_peto.txt,518
@@ -575,9 +575,9 @@ ejercicio,municipio,slug,source_pdf,ley_page_start,ley_page_end,predial_found,pr
 2015,Sucilá,sucila,2014\2014-12-31_2.pdf,486,501,true,capitulo_i,490,493,YUC_PREDIAL_2015_sucila.txt,4178
 2015,Tahmek,tahmek,2014\2014-12-31_2.pdf,501,519,true,seccion_primera,502,504,YUC_PREDIAL_2015_tahmek.txt,3081
 2015,Tecoh,tecoh,2014\2014-12-31_2.pdf,519,544,true,capitulo_i,524,527,YUC_PREDIAL_2015_tecoh.txt,4578
-2015,Tekal de Venegas,tekal_de_venegas,2014\2014-12-31_2.pdf,544,549,false,none,,,YUC_PREDIAL_2015_tekal_de_venegas.txt,0
+2015,Tekal de Venegas,tekal_de_venegas,2014\2014-12-31_2.pdf,544,549,true,short_form,544,549,YUC_PREDIAL_2015_tekal_de_venegas.txt,4026
 2015,Tekax,tekax,2014\2014-12-31_2.pdf,549,573,false,none,,,YUC_PREDIAL_2015_tekax.txt,0
-2015,Temax,temax,2014\2014-12-31_2.pdf,573,578,false,none,,,YUC_PREDIAL_2015_temax.txt,0
+2015,Temax,temax,2014\2014-12-31_2.pdf,573,578,true,short_form,573,578,YUC_PREDIAL_2015_temax.txt,4026
 2015,Temozon,temozon,2014\2014-12-31_2.pdf,578,593,true,capitulo_i,582,584,YUC_PREDIAL_2015_temozon.txt,2796
 2015,Tepakan,tepakan,2014\2014-12-31_2.pdf,593,608,true,capitulo_i,597,600,YUC_PREDIAL_2015_tepakan.txt,2689
 2015,Telchac Puerto,telchac_puerto,2014\2014-12-31_2.pdf,608,633,true,capitulo_i,613,617,YUC_PREDIAL_2015_telchac_puerto.txt,5623
@@ -622,7 +622,7 @@ ejercicio,municipio,slug,source_pdf,ley_page_start,ley_page_end,predial_found,pr
 2016,Kantunil,kantunil,2015\2015-12-23_2.pdf,437,450,true,capitulo_i,441,444,YUC_PREDIAL_2016_kantunil.txt,3129
 2016,Kinchil,kinchil,2015\2015-12-23_2.pdf,450,466,true,capitulo_i,455,456,YUC_PREDIAL_2016_kinchil.txt,3119
 2016,Mayapán,mayapan,2015\2015-12-23_2.pdf,466,483,true,seccion_primera,467,469,YUC_PREDIAL_2016_mayapan.txt,3450
-2016,Motul,motul,2015\2015-12-23_2.pdf,483,488,false,none,,,YUC_PREDIAL_2016_motul.txt,0
+2016,Motul,motul,2015\2015-12-23_2.pdf,483,488,true,short_form,483,488,YUC_PREDIAL_2016_motul.txt,4025
 2016,Opichén,opichen,2015\2015-12-23_2.pdf,488,502,true,capitulo_i,493,493,YUC_PREDIAL_2016_opichen.txt,1193
 2016,Panaba,panaba,2015\2015-12-23_2.pdf,502,517,true,capitulo_i,507,509,YUC_PREDIAL_2016_panaba.txt,2949
 2016,Quintana Roo,quintana_roo,2015\2015-12-23_2.pdf,517,530,true,capitulo_i,521,523,YUC_PREDIAL_2016_quintana_roo.txt,3136
@@ -632,12 +632,12 @@ ejercicio,municipio,slug,source_pdf,ley_page_start,ley_page_end,predial_found,pr
 2016,San Felipe,san_felipe,2015\2015-12-23_2.pdf,584,599,true,capitulo_i,588,590,YUC_PREDIAL_2016_san_felipe.txt,2478
 2016,Sudzal,sudzal,2015\2015-12-23_2.pdf,599,612,true,capitulo_i,604,604,YUC_PREDIAL_2016_sudzal.txt,1848
 2016,Suma de Hidalgo,suma_de_hidalgo,2015\2015-12-23_2.pdf,612,625,true,capitulo_i,616,617,YUC_PREDIAL_2016_suma_de_hidalgo.txt,1455
-2016,Tahdziú,tahdziu,2015\2015-12-23_2.pdf,625,630,false,none,,,YUC_PREDIAL_2016_tahdziu.txt,0
-2016,Tekal de Venegas,tekal_de_venegas,2015\2015-12-23_2.pdf,630,634,false,none,,,YUC_PREDIAL_2016_tekal_de_venegas.txt,0
+2016,Tahdziú,tahdziu,2015\2015-12-23_2.pdf,625,630,true,short_form,625,630,YUC_PREDIAL_2016_tahdziu.txt,4025
+2016,Tekal de Venegas,tekal_de_venegas,2015\2015-12-23_2.pdf,630,634,true,short_form,630,634,YUC_PREDIAL_2016_tekal_de_venegas.txt,4025
 2016,Tekantó,tekanto,2015\2015-12-23_2.pdf,634,650,true,capitulo_i,639,641,YUC_PREDIAL_2016_tekanto.txt,4316
 2016,Tekit,tekit,2015\2015-12-23_2.pdf,650,674,true,capitulo_i,654,656,YUC_PREDIAL_2016_tekit.txt,3408
 2016,Telchac Pueblo,telchac_pueblo,2015\2015-12-23_2.pdf,674,688,true,capitulo_i,678,679,YUC_PREDIAL_2016_telchac_pueblo.txt,710
-2016,Temax,temax,2015\2015-12-23_2.pdf,688,693,false,none,,,YUC_PREDIAL_2016_temax.txt,0
+2016,Temax,temax,2015\2015-12-23_2.pdf,688,693,true,short_form,688,693,YUC_PREDIAL_2016_temax.txt,4025
 2016,Tetiz,tetiz,2015\2015-12-23_2.pdf,693,712,true,capitulo_i,697,698,YUC_PREDIAL_2016_tetiz.txt,2688
 2016,Teya,teya,2015\2015-12-23_2.pdf,712,745,true,capitulo_i,716,717,YUC_PREDIAL_2016_teya.txt,1056
 2016,Tixméhuac,tixmehuac,2015\2015-12-23_2.pdf,745,759,true,seccion_primera,746,748,YUC_PREDIAL_2016_tixmehuac.txt,4127
@@ -707,14 +707,14 @@ ejercicio,municipio,slug,source_pdf,ley_page_start,ley_page_end,predial_found,pr
 2017,Mani,mani,2016\2016-12-29_2.pdf,263,280,true,capitulo_i,268,270,YUC_PREDIAL_2017_mani.txt,3981
 2017,Maxcanú,maxcanu,2016\2016-12-29_2.pdf,280,299,true,seccion_primera,280,283,YUC_PREDIAL_2017_maxcanu.txt,4616
 2017,Mocochá,mococha,2016\2016-12-29_2.pdf,299,314,true,capitulo_i,303,305,YUC_PREDIAL_2017_mococha.txt,3157
-2017,Motul,motul,2016\2016-12-29_2.pdf,314,319,false,none,,,YUC_PREDIAL_2017_motul.txt,0
-2017,Muna,muna,2016\2016-12-29_2.pdf,319,325,false,none,,,YUC_PREDIAL_2017_muna.txt,0
+2017,Motul,motul,2016\2016-12-29_2.pdf,314,319,true,short_form,314,319,YUC_PREDIAL_2017_motul.txt,4026
+2017,Muna,muna,2016\2016-12-29_2.pdf,319,325,true,short_form,319,325,YUC_PREDIAL_2017_muna.txt,4025
 2017,Muxupip,muxupip,2016\2016-12-29_2.pdf,325,341,true,capitulo_i,329,332,YUC_PREDIAL_2017_muxupip.txt,3157
 2017,Oxkutzcab,oxkutzcab,2016\2016-12-29_2.pdf,341,361,true,seccion_primera,341,343,YUC_PREDIAL_2017_oxkutzcab.txt,3014
 2017,Panabá,panaba,2016\2016-12-29_2.pdf,361,379,true,capitulo_i,366,368,YUC_PREDIAL_2017_panaba.txt,3450
 2017,Progreso,progreso,2016\2016-12-29_2.pdf,379,413,true,seccion_primera,384,396,YUC_PREDIAL_2017_progreso.txt,22820
 2017,Quintana Roo,quintana_roo,2016\2016-12-29_2.pdf,413,431,true,capitulo_i,417,420,YUC_PREDIAL_2017_quintana_roo.txt,3506
-2017,Sacalum,sacalum,2016\2016-12-29_2.pdf,431,436,false,none,,,YUC_PREDIAL_2017_sacalum.txt,0
+2017,Sacalum,sacalum,2016\2016-12-29_2.pdf,431,436,true,short_form,431,436,YUC_PREDIAL_2017_sacalum.txt,4025
 2017,Santa Elena,santa_elena,2016\2016-12-29_2.pdf,436,455,true,seccion_primera,437,439,YUC_PREDIAL_2017_santa_elena.txt,3223
 2017,Sinanché,sinanche,2016\2016-12-29_2.pdf,455,474,true,capitulo_i,459,462,YUC_PREDIAL_2017_sinanche.txt,5036
 2017,Sotuta,sotuta,2016\2016-12-29_2.pdf,474,492,true,seccion_primera,474,477,YUC_PREDIAL_2017_sotuta.txt,3716
@@ -723,10 +723,10 @@ ejercicio,municipio,slug,source_pdf,ley_page_start,ley_page_end,predial_found,pr
 2017,Suma de Hidalgo,suma_de_hidalgo,2016\2016-12-29_2.pdf,524,538,true,capitulo_i,528,528,YUC_PREDIAL_2017_suma_de_hidalgo.txt,1381
 2017,Teabo,teabo,2016\2016-12-29_2.pdf,538,557,true,seccion_primera,539,541,YUC_PREDIAL_2017_teabo.txt,4720
 2017,Tecoh,tecoh,2016\2016-12-29_2.pdf,557,577,true,capitulo_i,561,564,YUC_PREDIAL_2017_tecoh.txt,4528
-2017,Tekal de Venegas,tekal_de_venegas,2016\2016-12-29_2.pdf,577,582,false,none,,,YUC_PREDIAL_2017_tekal_de_venegas.txt,0
+2017,Tekal de Venegas,tekal_de_venegas,2016\2016-12-29_2.pdf,577,582,true,short_form,577,582,YUC_PREDIAL_2017_tekal_de_venegas.txt,4026
 2017,Tekax,tekax,2016\2016-12-29_2.pdf,582,604,true,capitulo_i,586,587,YUC_PREDIAL_2017_tekax.txt,2361
 2017,Telchac Puerto,telchac_puerto,2016\2016-12-29_2.pdf,604,628,true,capitulo_i,608,612,YUC_PREDIAL_2017_telchac_puerto.txt,5683
-2017,Temax,temax,2016\2016-12-29_2.pdf,628,632,false,none,,,YUC_PREDIAL_2017_temax.txt,0
+2017,Temax,temax,2016\2016-12-29_2.pdf,628,632,true,short_form,628,632,YUC_PREDIAL_2017_temax.txt,4024
 2017,Temozón,temozon,2016\2016-12-29_2.pdf,632,649,true,capitulo_i,636,638,YUC_PREDIAL_2017_temozon.txt,3346
 2017,Tepakan,tepakan,2016\2016-12-29_2.pdf,649,663,true,capitulo_i,653,656,YUC_PREDIAL_2017_tepakan.txt,2454
 2017,Ticul,ticul,2016\2016-12-29_2.pdf,663,684,true,capitulo_i,667,668,YUC_PREDIAL_2017_ticul.txt,1363
@@ -808,14 +808,14 @@ ejercicio,municipio,slug,source_pdf,ley_page_start,ley_page_end,predial_found,pr
 2018,Kinchil,kinchil,2017\2017-12-31_3.pdf,222,240,true,capitulo_i,226,228,YUC_PREDIAL_2018_kinchil.txt,3329
 2018,Kopomá,kopoma,2017\2017-12-31_3.pdf,240,263,true,capitulo_i,245,247,YUC_PREDIAL_2018_kopoma.txt,4546
 2018,Maxcanú,maxcanu,2017\2017-12-31_3.pdf,263,284,true,seccion_primera,264,267,YUC_PREDIAL_2018_maxcanu.txt,4162
-2018,Motul,motul,2017\2017-12-31_3.pdf,284,289,false,none,,,YUC_PREDIAL_2018_motul.txt,0
-2018,Muna,muna,2017\2017-12-31_3.pdf,289,295,false,none,,,YUC_PREDIAL_2018_muna.txt,0
+2018,Motul,motul,2017\2017-12-31_3.pdf,284,289,true,short_form,284,289,YUC_PREDIAL_2018_motul.txt,4026
+2018,Muna,muna,2017\2017-12-31_3.pdf,289,295,true,short_form,289,295,YUC_PREDIAL_2018_muna.txt,4022
 2018,Muxupip,muxupip,2017\2017-12-31_3.pdf,295,310,true,capitulo_i,299,300,YUC_PREDIAL_2018_muxupip.txt,1136
 2018,Oxkutzcab,oxkutzcab,2017\2017-12-31_3.pdf,310,328,true,seccion_primera,311,312,YUC_PREDIAL_2018_oxkutzcab.txt,2956
 2018,Panabá,panaba,2017\2017-12-31_3.pdf,328,347,true,capitulo_i,333,335,YUC_PREDIAL_2018_panaba.txt,2876
 2018,Progreso,progreso,2017\2017-12-31_3.pdf,347,384,true,seccion_primera,353,365,YUC_PREDIAL_2018_progreso.txt,22692
 2018,Quintana Roo,quintana_roo,2017\2017-12-31_3.pdf,384,400,true,capitulo_i,388,390,YUC_PREDIAL_2018_quintana_roo.txt,3620
-2018,Sacalum,sacalum,2017\2017-12-31_3.pdf,400,405,false,none,,,YUC_PREDIAL_2018_sacalum.txt,0
+2018,Sacalum,sacalum,2017\2017-12-31_3.pdf,400,405,true,short_form,400,405,YUC_PREDIAL_2018_sacalum.txt,4026
 2018,Samahil,samahil,2017\2017-12-31_3.pdf,405,425,true,capitulo_i,409,411,YUC_PREDIAL_2018_samahil.txt,3401
 2018,Santa Elena,santa_elena,2017\2017-12-31_3.pdf,425,445,true,seccion_primera,426,428,YUC_PREDIAL_2018_santa_elena.txt,3175
 2018,Sinanché,sinanche,2017\2017-12-31_3.pdf,445,466,true,capitulo_i,450,453,YUC_PREDIAL_2018_sinanche.txt,5012
@@ -823,10 +823,10 @@ ejercicio,municipio,slug,source_pdf,ley_page_start,ley_page_end,predial_found,pr
 2018,Sucilá,sucila,2017\2017-12-31_3.pdf,484,502,true,capitulo_i,488,490,YUC_PREDIAL_2018_sucila.txt,3183
 2018,Teabo,teabo,2017\2017-12-31_3.pdf,502,520,true,seccion_primera,502,505,YUC_PREDIAL_2018_teabo.txt,4782
 2018,Tecoh,tecoh,2017\2017-12-31_3.pdf,520,540,true,capitulo_i,525,527,YUC_PREDIAL_2018_tecoh.txt,4571
-2018,Tekal de Venegas,tekal_de_venegas,2017\2017-12-31_3.pdf,540,545,false,none,,,YUC_PREDIAL_2018_tekal_de_venegas.txt,0
+2018,Tekal de Venegas,tekal_de_venegas,2017\2017-12-31_3.pdf,540,545,true,short_form,540,545,YUC_PREDIAL_2018_tekal_de_venegas.txt,4024
 2018,Tekax,tekax,2017\2017-12-31_3.pdf,545,567,false,none,,,YUC_PREDIAL_2018_tekax.txt,0
 2018,Telchac Puerto,telchac_puerto,2017\2017-12-31_3.pdf,567,590,true,capitulo_i,571,575,YUC_PREDIAL_2018_telchac_puerto.txt,5596
-2018,Temax,temax,2017\2017-12-31_3.pdf,590,594,false,none,,,YUC_PREDIAL_2018_temax.txt,0
+2018,Temax,temax,2017\2017-12-31_3.pdf,590,594,true,short_form,590,594,YUC_PREDIAL_2018_temax.txt,4024
 2018,Temozón,temozon,2017\2017-12-31_3.pdf,594,612,true,capitulo_i,599,601,YUC_PREDIAL_2018_temozon.txt,3059
 2018,Tepakan,tepakan,2017\2017-12-31_3.pdf,612,625,true,capitulo_i,616,618,YUC_PREDIAL_2018_tepakan.txt,2527
 2018,Ticul,ticul,2017\2017-12-31_3.pdf,625,647,true,capitulo_i,629,630,YUC_PREDIAL_2018_ticul.txt,1517
@@ -856,7 +856,7 @@ ejercicio,municipio,slug,source_pdf,ley_page_start,ley_page_end,predial_found,pr
 2019,Chicxulub Pueblo,chicxulub_pueblo,2018\2018-12-28_2.pdf,334,359,true,capitulo_i,339,342,YUC_PREDIAL_2019_chicxulub_pueblo.txt,4187
 2019,Chichimilá,chichimila,2018\2018-12-28_2.pdf,359,375,true,seccion_primera,360,361,YUC_PREDIAL_2019_chichimila.txt,1605
 2019,Chikindzonot,chikindzonot,2018\2018-12-28_2.pdf,375,393,true,capitulo_i,381,383,YUC_PREDIAL_2019_chikindzonot.txt,2683
-2019,Chocholá,chochola,2018\2018-12-28_2.pdf,393,399,false,none,,,YUC_PREDIAL_2019_chochola.txt,0
+2019,Chocholá,chochola,2018\2018-12-28_2.pdf,393,399,true,short_form,393,399,YUC_PREDIAL_2019_chochola.txt,4025
 2019,Chumayel,chumayel,2018\2018-12-28_2.pdf,399,419,true,capitulo_i,404,407,YUC_PREDIAL_2019_chumayel.txt,4360
 2019,Dzemul,dzemul,2018\2018-12-28_2.pdf,419,449,true,capitulo_i,425,430,YUC_PREDIAL_2019_dzemul.txt,5073
 2019,Dzilam de Bravo,dzilam_de_bravo,2018\2018-12-28_2.pdf,449,466,false,none,,,YUC_PREDIAL_2019_dzilam_de_bravo.txt,0
@@ -878,13 +878,13 @@ ejercicio,municipio,slug,source_pdf,ley_page_start,ley_page_end,predial_found,pr
 2019,Maxcanú,maxcanu,2018\2018-12-28_2.pdf,845,869,true,seccion_primera,846,850,YUC_PREDIAL_2019_maxcanu.txt,4189
 2019,Mayapán,mayapan,2018\2018-12-28_2.pdf,869,890,true,seccion_primera,870,873,YUC_PREDIAL_2019_mayapan.txt,3586
 2019,Mocochá,mococha,2018\2018-12-28_2.pdf,890,909,true,capitulo_i,895,897,YUC_PREDIAL_2019_mococha.txt,3785
-2019,Muna,muna,2018\2018-12-28_2.pdf,909,915,false,none,,,YUC_PREDIAL_2019_muna.txt,0
+2019,Muna,muna,2018\2018-12-28_2.pdf,909,915,true,short_form,909,915,YUC_PREDIAL_2019_muna.txt,4026
 2019,Muxupip,muxupip,2018\2018-12-28_2.pdf,915,933,true,capitulo_i,920,921,YUC_PREDIAL_2019_muxupip.txt,1155
 2019,Opichén,opichen,2018\2018-12-28_2.pdf,933,949,true,capitulo_i,938,939,YUC_PREDIAL_2019_opichen.txt,1554
 2019,Peto,peto,2018\2018-12-28_2.pdf,949,977,true,capitulo_i,955,959,YUC_PREDIAL_2019_peto.txt,6121
 2019,Quintana Roo,quintana_roo,2018\2018-12-28_2.pdf,977,1000,true,capitulo_i,982,985,YUC_PREDIAL_2019_quintana_roo.txt,3649
 2019,Río Lagartos,rio_lagartos,2018\2018-12-28_2.pdf,1000,1028,true,capitulo_i,1006,1009,YUC_PREDIAL_2019_rio_lagartos.txt,4884
-2019,Sacalum,sacalum,2018\2018-12-28_2.pdf,1028,1035,false,none,,,YUC_PREDIAL_2019_sacalum.txt,0
+2019,Sacalum,sacalum,2018\2018-12-28_2.pdf,1028,1035,true,short_form,1028,1035,YUC_PREDIAL_2019_sacalum.txt,4026
 2019,Samahil,samahil,2018\2018-12-28_2.pdf,1035,1060,true,capitulo_i,1040,1043,YUC_PREDIAL_2019_samahil.txt,3516
 2019,Sanahcat,sanahcat,2018\2018-12-28_2.pdf,1060,1076,true,capitulo_i,1066,1066,YUC_PREDIAL_2019_sanahcat.txt,876
 2019,San Felipe,san_felipe,2018\2018-12-28_2.pdf,1076,1098,true,capitulo_i,1081,1083,YUC_PREDIAL_2019_san_felipe.txt,2461
@@ -895,12 +895,12 @@ ejercicio,municipio,slug,source_pdf,ley_page_start,ley_page_end,predial_found,pr
 2019,Suma de Hidalgo,suma_de_hidalgo,2018\2018-12-28_2.pdf,1182,1206,true,capitulo_i,1188,1189,YUC_PREDIAL_2019_suma_de_hidalgo.txt,1400
 2019,Tahmek,tahmek,2018\2018-12-28_2.pdf,1206,1229,true,capitulo_i,1211,1213,YUC_PREDIAL_2019_tahmek.txt,1276
 2019,Teabo,teabo,2018\2018-12-28_2.pdf,1229,1256,true,seccion_primera,1230,1233,YUC_PREDIAL_2019_teabo.txt,4281
-2019,Tekal de Venegas,tekal_de_venegas,2018\2018-12-28_2.pdf,1256,1263,false,none,,,YUC_PREDIAL_2019_tekal_de_venegas.txt,0
+2019,Tekal de Venegas,tekal_de_venegas,2018\2018-12-28_2.pdf,1256,1263,true,short_form,1256,1263,YUC_PREDIAL_2019_tekal_de_venegas.txt,4026
 2019,Tekanto,tekanto,2018\2018-12-28_2.pdf,1263,1284,true,capitulo_i,1268,1271,YUC_PREDIAL_2019_tekanto.txt,4493
 2019,Tekit,tekit,2018\2018-12-28_2.pdf,1284,1318,true,capitulo_i,1290,1293,YUC_PREDIAL_2019_tekit.txt,3605
 2019,Telchac Puerto,telchac_puerto,2018\2018-12-28_2.pdf,1318,1352,true,capitulo_i,1324,1329,YUC_PREDIAL_2019_telchac_puerto.txt,5515
 2019,Telchac Pueblo,telchac_pueblo,2018\2018-12-28_2.pdf,1352,1368,true,capitulo_i,1357,1358,YUC_PREDIAL_2019_telchac_pueblo.txt,657
-2019,Temax,temax,2018\2018-12-28_2.pdf,1368,1373,false,none,,,YUC_PREDIAL_2019_temax.txt,0
+2019,Temax,temax,2018\2018-12-28_2.pdf,1368,1373,true,short_form,1368,1373,YUC_PREDIAL_2019_temax.txt,4026
 2019,Temozón,temozon,2018\2018-12-28_2.pdf,1373,1395,true,capitulo_i,1378,1381,YUC_PREDIAL_2019_temozon.txt,3088
 2019,Tepakan,tepakan,2018\2018-12-28_2.pdf,1395,1413,true,capitulo_i,1399,1401,YUC_PREDIAL_2019_tepakan.txt,2240
 2019,Tetiz,tetiz,2018\2018-12-28_2.pdf,1413,1433,true,capitulo_i,1418,1419,YUC_PREDIAL_2019_tetiz.txt,2698
@@ -923,20 +923,20 @@ ejercicio,municipio,slug,source_pdf,ley_page_start,ley_page_end,predial_found,pr
 2019,Chankom,chankom,2018\2018-12-29_2.pdf,96,120,true,capitulo_i,102,105,YUC_PREDIAL_2019_chankom.txt,4319
 2019,Chemax,chemax,2018\2018-12-29_2.pdf,120,139,true,capitulo_i,126,128,YUC_PREDIAL_2019_chemax.txt,3710
 2019,Dzan,dzan,2018\2018-12-29_2.pdf,139,159,true,capitulo_i,145,146,YUC_PREDIAL_2019_dzan.txt,2222
-2019,Dzidzantun,dzidzantun,2018\2018-12-29_2.pdf,159,165,false,none,,,YUC_PREDIAL_2019_dzidzantun.txt,0
+2019,Dzidzantun,dzidzantun,2018\2018-12-29_2.pdf,159,165,true,short_form,159,165,YUC_PREDIAL_2019_dzidzantun.txt,4026
 2019,Hoctún,hoctun,2018\2018-12-29_2.pdf,165,184,true,capitulo_i,171,173,YUC_PREDIAL_2019_hoctun.txt,2651
 2019,Kanasín,kanasin,2018\2018-12-29_2.pdf,184,241,true,seccion_primera,185,193,YUC_PREDIAL_2019_kanasin.txt,7435
-2019,Motul,motul,2018\2018-12-29_2.pdf,241,247,false,none,,,YUC_PREDIAL_2019_motul.txt,0
+2019,Motul,motul,2018\2018-12-29_2.pdf,241,247,true,short_form,241,247,YUC_PREDIAL_2019_motul.txt,4020
 2019,Oxkutzcab,oxkutzcab,2018\2018-12-29_2.pdf,247,280,true,seccion_primera,248,251,YUC_PREDIAL_2019_oxkutzcab.txt,3175
 2019,Panabá,panaba,2018\2018-12-29_2.pdf,280,298,true,capitulo_i,284,285,YUC_PREDIAL_2019_panaba.txt,586
 2019,Progreso,progreso,2018\2018-12-29_2.pdf,298,344,true,seccion_primera,305,320,YUC_PREDIAL_2019_progreso.txt,21811
 2019,Sinanché,sinanche,2018\2018-12-29_2.pdf,344,370,true,capitulo_i,350,354,YUC_PREDIAL_2019_sinanche.txt,5483
 2019,Sucilá,sucila,2018\2018-12-29_2.pdf,370,392,true,capitulo_i,375,378,YUC_PREDIAL_2019_sucila.txt,3269
 2019,Tecoh,tecoh,2018\2018-12-29_2.pdf,392,417,true,capitulo_i,397,400,YUC_PREDIAL_2019_tecoh.txt,4474
-2019,Tekax,tekax,2018\2018-12-29_2.pdf,417,424,false,none,,,YUC_PREDIAL_2019_tekax.txt,0
+2019,Tekax,tekax,2018\2018-12-29_2.pdf,417,424,true,short_form,417,424,YUC_PREDIAL_2019_tekax.txt,4025
 2019,Timucuy,timucuy,2018\2018-12-29_2.pdf,424,444,true,capitulo_i,429,432,YUC_PREDIAL_2019_timucuy.txt,3550
 2019,Tizimín,tizimin,2018\2018-12-29_2.pdf,444,482,true,seccion_primera,445,450,YUC_PREDIAL_2019_tizimin.txt,5679
-2019,Tzucacab,tzucacab,2018\2018-12-29_2.pdf,482,489,false,none,,,YUC_PREDIAL_2019_tzucacab.txt,0
+2019,Tzucacab,tzucacab,2018\2018-12-29_2.pdf,482,489,true,short_form,482,489,YUC_PREDIAL_2019_tzucacab.txt,4026
 2019,Umán,uman,2018\2018-12-29_2.pdf,489,542,true,capitulo_i,497,504,YUC_PREDIAL_2019_uman.txt,11604
 2019,Yobain,yobain,2018\2018-12-29_2.pdf,542,566,true,capitulo_i,547,550,YUC_PREDIAL_2019_yobain.txt,3122
 2020,Abalá,abala,2019\2019-12-24_2.pdf,16,35,true,capitulo_i,22,25,YUC_PREDIAL_2020_abala.txt,4199
@@ -956,7 +956,7 @@ ejercicio,municipio,slug,source_pdf,ley_page_start,ley_page_end,predial_found,pr
 2020,Dzitás,dzitas,2019\2019-12-24_2.pdf,301,322,true,capitulo_i,306,309,YUC_PREDIAL_2020_dzitas.txt,2953
 2020,Cuzamá,cuzama,2019\2019-12-24_2.pdf,322,344,true,capitulo_i,329,333,YUC_PREDIAL_2020_cuzama.txt,4308
 2020,Dzan,dzan,2019\2019-12-24_2.pdf,344,368,true,capitulo_i,351,353,YUC_PREDIAL_2020_dzan.txt,5185
-2020,Dzidzantun,dzidzantun,2019\2019-12-24_2.pdf,368,376,false,none,,,YUC_PREDIAL_2020_dzidzantun.txt,0
+2020,Dzidzantun,dzidzantun,2019\2019-12-24_2.pdf,368,376,true,short_form,368,376,YUC_PREDIAL_2020_dzidzantun.txt,4026
 2020,Halachó,halacho,2019\2019-12-24_2.pdf,376,406,true,capitulo_i,382,385,YUC_PREDIAL_2020_halacho.txt,2944
 2020,Hoctún,hoctun,2019\2019-12-24_2.pdf,406,427,true,capitulo_i,412,414,YUC_PREDIAL_2020_hoctun.txt,2656
 2020,Homún,homun,2019\2019-12-24_2.pdf,427,446,true,capitulo_i,432,433,YUC_PREDIAL_2020_homun.txt,3963
@@ -973,7 +973,7 @@ ejercicio,municipio,slug,source_pdf,ley_page_start,ley_page_end,predial_found,pr
 2020,Panabá,panaba,2019\2019-12-24_2.pdf,652,672,true,capitulo_i,657,658,YUC_PREDIAL_2020_panaba.txt,1880
 2020,Tixméhuac,tixmehuac,2019\2019-12-24_2.pdf,672,689,true,seccion_primera,673,676,YUC_PREDIAL_2020_tixmehuac.txt,3759
 2020,Progreso,progreso,2019\2019-12-24_2.pdf,689,738,true,seccion_primera,696,711,YUC_PREDIAL_2020_progreso.txt,21167
-2020,Sacalum,sacalum,2019\2019-12-24_2.pdf,738,745,false,none,,,YUC_PREDIAL_2020_sacalum.txt,0
+2020,Sacalum,sacalum,2019\2019-12-24_2.pdf,738,745,true,short_form,738,745,YUC_PREDIAL_2020_sacalum.txt,4026
 2020,Samahil,samahil,2019\2019-12-24_2.pdf,745,776,true,capitulo_i,751,755,YUC_PREDIAL_2020_samahil.txt,3412
 2020,Sinanché,sinanche,2019\2019-12-24_2.pdf,776,809,true,capitulo_i,782,787,YUC_PREDIAL_2020_sinanche.txt,7882
 2020,Tahmek,tahmek,2019\2019-12-24_2.pdf,809,830,true,capitulo_i,814,815,YUC_PREDIAL_2020_tahmek.txt,4024
@@ -985,7 +985,7 @@ ejercicio,municipio,slug,source_pdf,ley_page_start,ley_page_end,predial_found,pr
 2020,Ticul,ticul,2019\2019-12-24_2.pdf,943,973,true,capitulo_i,948,949,YUC_PREDIAL_2020_ticul.txt,1176
 2020,Tixcacalcupul,tixcacalcupul,2019\2019-12-24_2.pdf,973,989,true,capitulo_i,978,980,YUC_PREDIAL_2020_tixcacalcupul.txt,3673
 2020,Tixpéual,tixpehual,2019\2019-12-24_2.pdf,989,1009,true,capitulo_i,994,997,YUC_PREDIAL_2020_tixpehual.txt,3932
-2020,Tzucacab,tzucacab,2019\2019-12-24_2.pdf,1009,1021,false,none,,,YUC_PREDIAL_2020_tzucacab.txt,0
+2020,Tzucacab,tzucacab,2019\2019-12-24_2.pdf,1009,1021,true,short_form,1009,1021,YUC_PREDIAL_2020_tzucacab.txt,4026
 2020,Ucú,ucu,2019\2019-12-24_2.pdf,1021,1048,false,none,,,YUC_PREDIAL_2020_ucu.txt,0
 2020,Yaxcabá,yaxcaba,2019\2019-12-24_2.pdf,1048,1067,true,seccion_primera,1049,1051,YUC_PREDIAL_2020_yaxcaba.txt,3556
 2020,Yaxkukul,yaxkukul,2019\2019-12-24_2.pdf,1067,1090,true,capitulo_i,1072,1075,YUC_PREDIAL_2020_yaxkukul.txt,3182
@@ -995,7 +995,7 @@ ejercicio,municipio,slug,source_pdf,ley_page_start,ley_page_end,predial_found,pr
 2020,Calotmul,calotmul,2019\2019-12-27_2.pdf,84,105,true,seccion_primera,85,88,YUC_PREDIAL_2020_calotmul.txt,3431
 2020,Celestún,celestun,2019\2019-12-27_2.pdf,105,130,true,capitulo_i,110,114,YUC_PREDIAL_2020_celestun.txt,7737
 2020,Chicxulub Pueblo,chicxulub_pueblo,2019\2019-12-27_2.pdf,130,155,true,capitulo_i,135,138,YUC_PREDIAL_2020_chicxulub_pueblo.txt,5463
-2020,Chocholá,chochola,2019\2019-12-27_2.pdf,155,162,false,none,,,YUC_PREDIAL_2020_chochola.txt,0
+2020,Chocholá,chochola,2019\2019-12-27_2.pdf,155,162,true,short_form,155,162,YUC_PREDIAL_2020_chochola.txt,4026
 2020,Conkal,conkal,2019\2019-12-27_2.pdf,162,203,true,capitulo_i,168,172,YUC_PREDIAL_2020_conkal.txt,6098
 2020,Cuncunul,cuncunul,2019\2019-12-27_2.pdf,203,220,true,capitulo_i,208,211,YUC_PREDIAL_2020_cuncunul.txt,2666
 2020,Dzemul,dzemul,2019\2019-12-27_2.pdf,220,249,true,capitulo_i,225,229,YUC_PREDIAL_2020_dzemul.txt,4479
@@ -1009,7 +1009,7 @@ ejercicio,municipio,slug,source_pdf,ley_page_start,ley_page_end,predial_found,pr
 2020,Kanasín,kanasin,2019\2019-12-27_2.pdf,419,477,true,capitulo_i,426,429,YUC_PREDIAL_2020_kanasin.txt,3355
 2020,Kinchil,kinchil,2019\2019-12-27_2.pdf,477,500,true,capitulo_i,482,484,YUC_PREDIAL_2020_kinchil.txt,3232
 2020,Kopomá,kopoma,2019\2019-12-27_2.pdf,500,528,true,capitulo_i,505,508,YUC_PREDIAL_2020_kopoma.txt,4646
-2020,Motul,motul,2019\2019-12-27_2.pdf,528,535,false,none,,,YUC_PREDIAL_2020_motul.txt,0
+2020,Motul,motul,2019\2019-12-27_2.pdf,528,535,true,short_form,528,535,YUC_PREDIAL_2020_motul.txt,4026
 2020,Muna,muna,2019\2019-12-27_2.pdf,535,563,true,capitulo_i,541,544,YUC_PREDIAL_2020_muna.txt,3995
 2020,Oxkutzcab,oxkutzcab,2019\2019-12-27_2.pdf,563,600,true,seccion_primera,564,566,YUC_PREDIAL_2020_oxkutzcab.txt,3946
 2020,Peto,peto,2019\2019-12-27_2.pdf,600,633,true,capitulo_i,605,610,YUC_PREDIAL_2020_peto.txt,6444
@@ -1024,11 +1024,11 @@ ejercicio,municipio,slug,source_pdf,ley_page_start,ley_page_end,predial_found,pr
 2020,Sudzal,sudzal,2019\2019-12-27_2.pdf,821,841,true,capitulo_i,826,829,YUC_PREDIAL_2020_sudzal.txt,3506
 2020,Suma de Hidalgo,suma_de_hidalgo,2019\2019-12-27_2.pdf,841,859,true,capitulo_i,847,848,YUC_PREDIAL_2020_suma_de_hidalgo.txt,1402
 2020,Tecoh,tecoh,2019\2019-12-27_2.pdf,859,883,true,capitulo_i,865,868,YUC_PREDIAL_2020_tecoh.txt,4475
-2020,Tekal de Venegas,tekal_de_venegas,2019\2019-12-27_2.pdf,883,889,false,none,,,YUC_PREDIAL_2020_tekal_de_venegas.txt,0
+2020,Tekal de Venegas,tekal_de_venegas,2019\2019-12-27_2.pdf,883,889,true,short_form,883,889,YUC_PREDIAL_2020_tekal_de_venegas.txt,4026
 2020,Tekanto,tekanto,2019\2019-12-27_2.pdf,889,910,true,capitulo_i,893,897,YUC_PREDIAL_2020_tekanto.txt,4831
 2020,Tekax,tekax,2019\2019-12-27_2.pdf,910,933,true,capitulo_i,924,925,YUC_PREDIAL_2020_tekax.txt,1366
 2020,Telchac Puerto,telchac_puerto,2019\2019-12-27_2.pdf,933,967,true,capitulo_i,939,944,YUC_PREDIAL_2020_telchac_puerto.txt,5526
-2020,Temax,temax,2019\2019-12-27_2.pdf,967,973,false,none,,,YUC_PREDIAL_2020_temax.txt,0
+2020,Temax,temax,2019\2019-12-27_2.pdf,967,973,true,short_form,967,973,YUC_PREDIAL_2020_temax.txt,4026
 2020,Tepakán,tepakan,2019\2019-12-27_2.pdf,973,994,true,capitulo_i,978,982,YUC_PREDIAL_2020_tepakan.txt,4746
 2020,Teya,teya,2019\2019-12-27_2.pdf,994,1015,true,capitulo_i,999,1000,YUC_PREDIAL_2020_teya.txt,641
 2020,Timucuy,timucuy,2019\2019-12-27_2.pdf,1015,1036,true,capitulo_i,1021,1023,YUC_PREDIAL_2020_timucuy.txt,3553
@@ -1081,7 +1081,7 @@ ejercicio,municipio,slug,source_pdf,ley_page_start,ley_page_end,predial_found,pr
 2021,Tixcacalcupul,tixcacalcupul,2020\2020-12-28_2.pdf,990,1023,true,seccion_primera,1008,1010,YUC_PREDIAL_2021_tixcacalcupul.txt,3972
 2021,Tixpéual,tixpehual,2020\2020-12-28_2.pdf,1023,1038,false,none,,,YUC_PREDIAL_2021_tixpehual.txt,0
 2021,Tunkás,tunkas,2020\2020-12-28_2.pdf,1038,1059,true,capitulo_i,1042,1048,YUC_PREDIAL_2021_tunkas.txt,4456
-2021,Uayma,uayma,2020\2020-12-28_2.pdf,1059,1065,false,none,,,YUC_PREDIAL_2021_uayma.txt,0
+2021,Uayma,uayma,2020\2020-12-28_2.pdf,1059,1065,true,short_form,1059,1065,YUC_PREDIAL_2021_uayma.txt,4023
 2021,Ucú,ucu,2020\2020-12-28_2.pdf,1065,1098,false,none,,,YUC_PREDIAL_2021_ucu.txt,0
 2021,Yaxcabá,yaxcaba,2020\2020-12-28_2.pdf,1098,1144,true,seccion_primera,1099,1103,YUC_PREDIAL_2021_yaxcaba.txt,3809
 2021,Baca,baca,2020\2020-12-29_2.pdf,15,42,true,seccion_primera,16,19,YUC_PREDIAL_2021_baca.txt,2827
@@ -1089,7 +1089,7 @@ ejercicio,municipio,slug,source_pdf,ley_page_start,ley_page_end,predial_found,pr
 2021,Calotmul,calotmul,2020\2020-12-29_2.pdf,62,84,true,seccion_primera,63,66,YUC_PREDIAL_2021_calotmul.txt,3456
 2021,Celestun,celestun,2020\2020-12-29_2.pdf,84,112,true,capitulo_i,90,94,YUC_PREDIAL_2021_celestun.txt,7457
 2021,Chicxulub Pueblo,chicxulub_pueblo,2020\2020-12-29_2.pdf,112,139,true,capitulo_i,117,120,YUC_PREDIAL_2021_chicxulub_pueblo.txt,4614
-2021,"Chocholá, Yucatan",chochola,2020\2020-12-29_2.pdf,139,145,false,none,,,YUC_PREDIAL_2021_chochola.txt,0
+2021,"Chocholá, Yucatan",chochola,2020\2020-12-29_2.pdf,139,145,true,short_form,139,145,YUC_PREDIAL_2021_chochola.txt,4024
 2021,Conkal,conkal,2020\2020-12-29_2.pdf,145,212,true,capitulo_i,152,157,YUC_PREDIAL_2021_conkal.txt,6077
 2021,Dzemul,dzemul,2020\2020-12-29_2.pdf,212,244,true,capitulo_i,218,222,YUC_PREDIAL_2021_dzemul.txt,4479
 2021,Dzilám de Bravo,dzilam_de_bravo,2020\2020-12-29_2.pdf,244,265,false,none,,,YUC_PREDIAL_2021_dzilam_de_bravo.txt,0
@@ -1107,25 +1107,25 @@ ejercicio,municipio,slug,source_pdf,ley_page_start,ley_page_end,predial_found,pr
 2021,Quintana Roo,quintana_roo,2020\2020-12-29_2.pdf,600,623,true,capitulo_i,605,608,YUC_PREDIAL_2021_quintana_roo.txt,3832
 2021,Río Lagartos,rio_lagartos,2020\2020-12-29_2.pdf,623,651,true,capitulo_i,629,631,YUC_PREDIAL_2021_rio_lagartos.txt,3240
 2021,San Felipe,san_felipe,2020\2020-12-29_2.pdf,651,673,false,none,,,YUC_PREDIAL_2021_san_felipe.txt,0
-2021,Sacalum,sacalum,2020\2020-12-29_2.pdf,673,680,false,none,,,YUC_PREDIAL_2021_sacalum.txt,0
+2021,Sacalum,sacalum,2020\2020-12-29_2.pdf,673,680,true,short_form,673,680,YUC_PREDIAL_2021_sacalum.txt,4026
 2021,Santa Elena,santa_elena,2020\2020-12-29_2.pdf,680,713,true,seccion_primera,681,686,YUC_PREDIAL_2021_santa_elena.txt,6274
 2021,Seyé,seye,2020\2020-12-29_2.pdf,713,736,true,capitulo_i,719,722,YUC_PREDIAL_2021_seye.txt,4583
 2021,Sotuta,sotuta,2020\2020-12-29_2.pdf,736,761,true,capitulo_i,742,744,YUC_PREDIAL_2021_sotuta.txt,3365
 2021,Sucilá,sucila,2020\2020-12-29_2.pdf,761,784,true,capitulo_i,766,769,YUC_PREDIAL_2021_sucila.txt,3264
 2021,Sudzal,sudzal,2020\2020-12-29_2.pdf,784,828,true,capitulo_i,789,791,YUC_PREDIAL_2021_sudzal.txt,5092
 2021,Tecoh,tecoh,2020\2020-12-29_2.pdf,828,852,true,capitulo_i,834,837,YUC_PREDIAL_2021_tecoh.txt,4364
-2021,Tekal de Venegas,tekal_de_venegas,2020\2020-12-29_2.pdf,852,859,false,none,,,YUC_PREDIAL_2021_tekal_de_venegas.txt,0
+2021,Tekal de Venegas,tekal_de_venegas,2020\2020-12-29_2.pdf,852,859,true,short_form,852,859,YUC_PREDIAL_2021_tekal_de_venegas.txt,4026
 2021,Tekantó,tekanto,2020\2020-12-29_2.pdf,859,883,true,capitulo_i,863,866,YUC_PREDIAL_2021_tekanto.txt,4485
 2021,Tekax,tekax,2020\2020-12-29_2.pdf,883,894,false,none,,,YUC_PREDIAL_2021_tekax.txt,0
 2021,Tekom,tekom,2020\2020-12-29_2.pdf,894,905,true,capitulo_i,897,898,YUC_PREDIAL_2021_tekom.txt,1326
 2021,Telchac Pueblo,telchac_pueblo,2020\2020-12-29_2.pdf,905,969,true,capitulo_i,911,914,YUC_PREDIAL_2021_telchac_pueblo.txt,5149
-2021,Temax,temax,2020\2020-12-29_2.pdf,969,975,false,none,,,YUC_PREDIAL_2021_temax.txt,0
+2021,Temax,temax,2020\2020-12-29_2.pdf,969,975,true,short_form,969,975,YUC_PREDIAL_2021_temax.txt,4026
 2021,Tepakán,tepakan,2020\2020-12-29_2.pdf,975,996,true,capitulo_i,980,983,YUC_PREDIAL_2021_tepakan.txt,4546
 2021,Teya,teya,2020\2020-12-29_2.pdf,996,1019,true,capitulo_i,1002,1002,YUC_PREDIAL_2021_teya.txt,633
 2021,Timucuy,timucuy,2020\2020-12-29_2.pdf,1019,1041,true,capitulo_i,1025,1028,YUC_PREDIAL_2021_timucuy.txt,3602
 2021,Tixkokob,tixkokob,2020\2020-12-29_2.pdf,1041,1065,true,capitulo_i,1047,1050,YUC_PREDIAL_2021_tixkokob.txt,4685
 2021,Tizimín,tizimin,2020\2020-12-29_2.pdf,1065,1108,true,seccion_primera,1066,1072,YUC_PREDIAL_2021_tizimin.txt,8598
-2021,Tzucacab,tzucacab,2020\2020-12-29_2.pdf,1108,1114,false,none,,,YUC_PREDIAL_2021_tzucacab.txt,0
+2021,Tzucacab,tzucacab,2020\2020-12-29_2.pdf,1108,1114,true,short_form,1108,1114,YUC_PREDIAL_2021_tzucacab.txt,4026
 2021,Umán,uman,2020\2020-12-29_2.pdf,1114,1176,true,capitulo_i,1121,1132,YUC_PREDIAL_2021_uman.txt,12165
 2021,Valladolid,valladolid,2020\2020-12-29_2.pdf,1176,1181,false,none,,,YUC_PREDIAL_2021_valladolid.txt,0
 2021,Xocchel,xocchel,2020\2020-12-29_2.pdf,1181,1203,true,capitulo_i,1186,1189,YUC_PREDIAL_2021_xocchel.txt,4705
@@ -1142,7 +1142,7 @@ ejercicio,municipio,slug,source_pdf,ley_page_start,ley_page_end,predial_found,pr
 2022,Cantamayec,cantamayec,2021\2021-12-31_3.pdf,246,269,true,capitulo_i,252,254,YUC_PREDIAL_2022_cantamayec.txt,2923
 2022,Celestún,celestun,2021\2021-12-31_3.pdf,269,296,true,capitulo_i,274,278,YUC_PREDIAL_2022_celestun.txt,7358
 2022,Cenotillo,cenotillo,2021\2021-12-31_3.pdf,296,318,true,capitulo_i,301,305,YUC_PREDIAL_2022_cenotillo.txt,7390
-2022,Conkal,conkal,2021\2021-12-31_3.pdf,318,325,false,none,,,YUC_PREDIAL_2022_conkal.txt,0
+2022,Conkal,conkal,2021\2021-12-31_3.pdf,318,325,true,short_form,318,325,YUC_PREDIAL_2022_conkal.txt,4025
 2022,Cuncunul,cuncunul,2021\2021-12-31_3.pdf,325,341,true,capitulo_i,330,332,YUC_PREDIAL_2022_cuncunul.txt,3270
 2022,Cuzamá,cuzama,2021\2021-12-31_3.pdf,341,363,false,none,,,YUC_PREDIAL_2022_cuzama.txt,0
 2022,Chacsinkín,chacsinkin,2021\2021-12-31_3.pdf,363,381,true,capitulo_i,368,371,YUC_PREDIAL_2022_chacsinkin.txt,3350
@@ -1155,7 +1155,7 @@ ejercicio,municipio,slug,source_pdf,ley_page_start,ley_page_end,predial_found,pr
 2022,Chumayel,chumayel,2021\2021-12-31_3.pdf,545,566,true,capitulo_i,550,553,YUC_PREDIAL_2022_chumayel.txt,4744
 2022,Dzan,dzan,2021\2021-12-31_3.pdf,566,590,true,capitulo_i,571,576,YUC_PREDIAL_2022_dzan.txt,8263
 2022,Dzemul,dzemul,2021\2021-12-31_3.pdf,590,625,true,capitulo_i,595,600,YUC_PREDIAL_2022_dzemul.txt,4730
-2022,Dzidzantún,dzidzantun,2021\2021-12-31_3.pdf,625,629,false,none,,,YUC_PREDIAL_2022_dzidzantun.txt,0
+2022,Dzidzantún,dzidzantun,2021\2021-12-31_3.pdf,625,629,true,short_form,625,629,YUC_PREDIAL_2022_dzidzantun.txt,4025
 2022,Dzilám de Bravo,dzilam_de_bravo,2021\2021-12-31_3.pdf,629,650,true,capitulo_i,635,637,YUC_PREDIAL_2022_dzilam_de_bravo.txt,4939
 2022,Dzilam González,dzilam_gonzalez,2021\2021-12-31_3.pdf,650,672,true,capitulo_i,656,658,YUC_PREDIAL_2022_dzilam_gonzalez.txt,3461
 2022,Dzitás,dzitas,2021\2021-12-31_3.pdf,672,694,true,capitulo_i,678,681,YUC_PREDIAL_2022_dzitas.txt,3249
@@ -1167,7 +1167,7 @@ ejercicio,municipio,slug,source_pdf,ley_page_start,ley_page_end,predial_found,pr
 2022,Huhí,huhi,2021\2021-12-31_3.pdf,806,873,true,capitulo_i,811,814,YUC_PREDIAL_2022_huhi.txt,3444
 2022,Ixil,ixil,2021\2021-12-31_3.pdf,873,896,true,capitulo_i,879,882,YUC_PREDIAL_2022_ixil.txt,4121
 2022,Izamal,izamal,2021\2021-12-31_3.pdf,896,936,false,none,,,YUC_PREDIAL_2022_izamal.txt,0
-2022,Kanasín,kanasin,2021\2021-12-31_3.pdf,936,945,false,none,,,YUC_PREDIAL_2022_kanasin.txt,0
+2022,Kanasín,kanasin,2021\2021-12-31_3.pdf,936,945,true,short_form,936,945,YUC_PREDIAL_2022_kanasin.txt,4026
 2022,Kantunil,kantunil,2021\2021-12-31_3.pdf,945,971,true,capitulo_i,951,954,YUC_PREDIAL_2022_kantunil.txt,4114
 2022,Kaua,kaua,2021\2021-12-31_3.pdf,971,998,true,capitulo_i,977,980,YUC_PREDIAL_2022_kaua.txt,4137
 2022,Kinchil,kinchil,2021\2021-12-31_3.pdf,998,1022,true,capitulo_i,1003,1006,YUC_PREDIAL_2022_kinchil.txt,5595
@@ -1177,7 +1177,7 @@ ejercicio,municipio,slug,source_pdf,ley_page_start,ley_page_end,predial_found,pr
 2022,Maxcanú,maxcanu,2021\2021-12-31_3.pdf,1090,1117,true,seccion_primera,1091,1096,YUC_PREDIAL_2022_maxcanu.txt,5566
 2022,Mayapán,mayapan,2021\2021-12-31_3.pdf,1117,1140,true,seccion_primera,1119,1122,YUC_PREDIAL_2022_mayapan.txt,4386
 2022,Mocochá,mococha,2021\2021-12-31_3.pdf,1140,1179,true,capitulo_i,1145,1151,YUC_PREDIAL_2022_mococha.txt,8618
-2022,Motul,motul,2021\2021-12-31_3.pdf,1179,1186,false,none,,,YUC_PREDIAL_2022_motul.txt,0
+2022,Motul,motul,2021\2021-12-31_3.pdf,1179,1186,true,short_form,1179,1186,YUC_PREDIAL_2022_motul.txt,4024
 2022,Muna,muna,2021\2021-12-31_3.pdf,1186,1215,true,capitulo_i,1192,1194,YUC_PREDIAL_2022_muna.txt,4718
 2022,Muxupip,muxupip,2021\2021-12-31_3.pdf,1215,1237,true,capitulo_i,1221,1223,YUC_PREDIAL_2022_muxupip.txt,3175
 2022,Opichén,opichen,2021\2021-12-31_3.pdf,1237,1262,true,capitulo_i,1242,1244,YUC_PREDIAL_2022_opichen.txt,4936
@@ -1186,7 +1186,7 @@ ejercicio,municipio,slug,source_pdf,ley_page_start,ley_page_end,predial_found,pr
 2022,Peto,peto,2021\2021-12-31_3.pdf,1320,1356,true,capitulo_i,1325,1330,YUC_PREDIAL_2022_peto.txt,6462
 2022,Progreso,progreso,2021\2021-12-31_3.pdf,1356,1412,true,seccion_primera,1363,1380,YUC_PREDIAL_2022_progreso.txt,24530
 2022,Quintana Roo,quintana_roo,2021\2021-12-31_3.pdf,1412,1466,true,capitulo_i,1416,1420,YUC_PREDIAL_2022_quintana_roo.txt,3649
-2022,Sacalum,sacalum,2021\2021-12-31_3.pdf,1466,1472,false,none,,,YUC_PREDIAL_2022_sacalum.txt,0
+2022,Sacalum,sacalum,2021\2021-12-31_3.pdf,1466,1472,true,short_form,1466,1472,YUC_PREDIAL_2022_sacalum.txt,4025
 2022,Samahil,samahil,2021\2021-12-31_3.pdf,1472,1501,true,capitulo_i,1477,1480,YUC_PREDIAL_2022_samahil.txt,3523
 2022,Sanahcat,sanahcat,2021\2021-12-31_3.pdf,1501,1518,true,capitulo_i,1507,1508,YUC_PREDIAL_2022_sanahcat.txt,891
 2022,San Felipe,san_felipe,2021\2021-12-31_3.pdf,1518,1538,true,capitulo_i,1523,1525,YUC_PREDIAL_2022_san_felipe.txt,1580
@@ -1199,13 +1199,13 @@ ejercicio,municipio,slug,source_pdf,ley_page_start,ley_page_end,predial_found,pr
 2022,Suma de Hidalgo,suma_de_hidalgo,2021\2021-12-31_3.pdf,1698,1742,false,none,,,YUC_PREDIAL_2022_suma_de_hidalgo.txt,0
 2022,Teabo,teabo,2021\2021-12-31_3.pdf,1742,1766,true,seccion_primera,1743,1746,YUC_PREDIAL_2022_teabo.txt,3720
 2022,Tecoh,tecoh,2021\2021-12-31_3.pdf,1766,1790,true,capitulo_i,1772,1775,YUC_PREDIAL_2022_tecoh.txt,4448
-2022,Tekal de Venegas,tekal_de_venegas,2021\2021-12-31_3.pdf,1790,1796,false,none,,,YUC_PREDIAL_2022_tekal_de_venegas.txt,0
+2022,Tekal de Venegas,tekal_de_venegas,2021\2021-12-31_3.pdf,1790,1796,true,short_form,1790,1796,YUC_PREDIAL_2022_tekal_de_venegas.txt,4022
 2022,Tekantó,tekanto,2021\2021-12-31_3.pdf,1796,1817,true,capitulo_i,1799,1803,YUC_PREDIAL_2022_tekanto.txt,4921
 2022,Tekax,tekax,2021\2021-12-31_3.pdf,1817,1829,false,none,,,YUC_PREDIAL_2022_tekax.txt,0
 2022,Tekit,tekit,2021\2021-12-31_3.pdf,1829,1868,true,capitulo_i,1835,1838,YUC_PREDIAL_2022_tekit.txt,3143
 2022,Telchac Puerto,telchac_puerto,2021\2021-12-31_3.pdf,1868,1898,true,capitulo_i,1873,1877,YUC_PREDIAL_2022_telchac_puerto.txt,5529
 2022,Telchac Pueblo,telchac_pueblo,2021\2021-12-31_3.pdf,1898,1930,true,capitulo_i,1904,1907,YUC_PREDIAL_2022_telchac_pueblo.txt,5387
-2022,Temax,temax,2021\2021-12-31_3.pdf,1930,1935,false,none,,,YUC_PREDIAL_2022_temax.txt,0
+2022,Temax,temax,2021\2021-12-31_3.pdf,1930,1935,true,short_form,1930,1935,YUC_PREDIAL_2022_temax.txt,4023
 2022,Temozón,temozon,2021\2021-12-31_3.pdf,1935,1959,true,capitulo_i,1940,1943,YUC_PREDIAL_2022_temozon.txt,4395
 2022,Tepakán,tepakan,2021\2021-12-31_3.pdf,1959,1980,true,capitulo_i,1964,1967,YUC_PREDIAL_2022_tepakan.txt,4794
 2022,Tetiz,tetiz,2021\2021-12-31_3.pdf,1980,2008,true,capitulo_i,1985,1989,YUC_PREDIAL_2022_tetiz.txt,5513
@@ -1216,11 +1216,11 @@ ejercicio,municipio,slug,source_pdf,ley_page_start,ley_page_end,predial_found,pr
 2022,Tixcacalcupul,tixcacalcupul,2021\2021-12-31_3.pdf,2112,2130,true,capitulo_i,2117,2120,YUC_PREDIAL_2022_tixcacalcupul.txt,3345
 2022,Tixkokob,tixkokob,2021\2021-12-31_3.pdf,2130,2156,true,capitulo_i,2135,2141,YUC_PREDIAL_2022_tixkokob.txt,6616
 2022,Tixméhuac,tixmehuac,2021\2021-12-31_3.pdf,2156,2172,true,seccion_primera,2157,2160,YUC_PREDIAL_2022_tixmehuac.txt,4238
-2022,Tixpéual,tixpehual,2021\2021-12-31_3.pdf,2172,2179,false,none,,,YUC_PREDIAL_2022_tixpehual.txt,0
+2022,Tixpéual,tixpehual,2021\2021-12-31_3.pdf,2172,2179,true,short_form,2172,2179,YUC_PREDIAL_2022_tixpehual.txt,4026
 2022,Tizimín,tizimin,2021\2021-12-31_3.pdf,2179,2222,true,seccion_primera,2180,2188,YUC_PREDIAL_2022_tizimin.txt,9736
 2022,Tunkás,tunkas,2021\2021-12-31_3.pdf,2222,2244,true,capitulo_i,2227,2232,YUC_PREDIAL_2022_tunkas.txt,4438
 2022,Tzucacab,tzucacab,2021\2021-12-31_3.pdf,2244,2276,true,capitulo_i,2249,2253,YUC_PREDIAL_2022_tzucacab.txt,6258
-2022,Uayma,uayma,2021\2021-12-31_3.pdf,2276,2283,false,none,,,YUC_PREDIAL_2022_uayma.txt,0
+2022,Uayma,uayma,2021\2021-12-31_3.pdf,2276,2283,true,short_form,2276,2283,YUC_PREDIAL_2022_uayma.txt,4026
 2022,Ucú,ucu,2021\2021-12-31_3.pdf,2283,2316,false,none,,,YUC_PREDIAL_2022_ucu.txt,0
 2022,Umán,uman,2021\2021-12-31_3.pdf,2316,2391,true,capitulo_i,2324,2335,YUC_PREDIAL_2022_uman.txt,20646
 2022,Valladolid,valladolid,2021\2021-12-31_3.pdf,2391,2396,false,none,,,YUC_PREDIAL_2022_valladolid.txt,0
@@ -1240,7 +1240,7 @@ ejercicio,municipio,slug,source_pdf,ley_page_start,ley_page_end,predial_found,pr
 2023,Cantamayec,cantamayec,2022\2022-12-30_4.pdf,246,272,true,capitulo_i,252,254,YUC_PREDIAL_2023_cantamayec.txt,3215
 2023,Celestún,celestun,2022\2022-12-30_4.pdf,272,299,true,capitulo_i,278,281,YUC_PREDIAL_2023_celestun.txt,7097
 2023,Cenotillo,cenotillo,2022\2022-12-30_4.pdf,299,320,true,capitulo_i,304,306,YUC_PREDIAL_2023_cenotillo.txt,3202
-2023,Conkal,conkal,2022\2022-12-30_4.pdf,320,327,false,none,,,YUC_PREDIAL_2023_conkal.txt,0
+2023,Conkal,conkal,2022\2022-12-30_4.pdf,320,327,true,short_form,320,327,YUC_PREDIAL_2023_conkal.txt,4020
 2023,Cuncunul,cuncunul,2022\2022-12-30_4.pdf,327,353,true,capitulo_i,333,335,YUC_PREDIAL_2023_cuncunul.txt,3142
 2023,Cuzamá,cuzama,2022\2022-12-30_4.pdf,353,374,true,capitulo_i,359,361,YUC_PREDIAL_2023_cuzama.txt,3626
 2023,Chacsinkin,chacsinkin,2022\2022-12-30_4.pdf,374,393,true,capitulo_i,379,382,YUC_PREDIAL_2023_chacsinkin.txt,3907
@@ -1254,7 +1254,7 @@ ejercicio,municipio,slug,source_pdf,ley_page_start,ley_page_end,predial_found,pr
 2023,Chumayel,chumayel,2022\2022-12-30_4.pdf,565,591,true,capitulo_i,571,573,YUC_PREDIAL_2023_chumayel.txt,3147
 2023,Dzan,dzan,2022\2022-12-30_4.pdf,591,616,true,capitulo_i,597,602,YUC_PREDIAL_2023_dzan.txt,8280
 2023,Dzemul,dzemul,2022\2022-12-30_4.pdf,616,657,true,capitulo_i,621,625,YUC_PREDIAL_2023_dzemul.txt,4798
-2023,Dzidzantún,dzidzantun,2022\2022-12-30_4.pdf,657,661,false,none,,,YUC_PREDIAL_2023_dzidzantun.txt,0
+2023,Dzidzantún,dzidzantun,2022\2022-12-30_4.pdf,657,661,true,short_form,657,661,YUC_PREDIAL_2023_dzidzantun.txt,4026
 2023,Dzilám de Bravo,dzilam_de_bravo,2022\2022-12-30_4.pdf,661,682,true,capitulo_i,666,669,YUC_PREDIAL_2023_dzilam_de_bravo.txt,4508
 2023,Dzilam González,dzilam_gonzalez,2022\2022-12-30_4.pdf,682,714,true,capitulo_i,687,691,YUC_PREDIAL_2023_dzilam_gonzalez.txt,5909
 2023,Dzitás,dzitas,2022\2022-12-30_4.pdf,714,735,true,capitulo_i,719,722,YUC_PREDIAL_2023_dzitas.txt,4503
@@ -1266,7 +1266,7 @@ ejercicio,municipio,slug,source_pdf,ley_page_start,ley_page_end,predial_found,pr
 2023,Huhí,huhi,2022\2022-12-30_4.pdf,850,909,true,capitulo_i,854,857,YUC_PREDIAL_2023_huhi.txt,3349
 2023,Ixil,ixil,2022\2022-12-30_4.pdf,909,941,true,capitulo_i,914,919,YUC_PREDIAL_2023_ixil.txt,6514
 2023,Izamal,izamal,2022\2022-12-30_4.pdf,941,982,false,none,,,YUC_PREDIAL_2023_izamal.txt,0
-2023,Kanasín,kanasin,2022\2022-12-30_4.pdf,982,989,false,none,,,YUC_PREDIAL_2023_kanasin.txt,0
+2023,Kanasín,kanasin,2022\2022-12-30_4.pdf,982,989,true,short_form,982,989,YUC_PREDIAL_2023_kanasin.txt,4026
 2023,Kantunil,kantunil,2022\2022-12-30_4.pdf,989,1013,true,capitulo_i,994,997,YUC_PREDIAL_2023_kantunil.txt,4174
 2023,Kaua,kaua,2022\2022-12-30_4.pdf,1013,1038,true,capitulo_i,1018,1021,YUC_PREDIAL_2023_kaua.txt,4168
 2023,Kinchil,kinchil,2022\2022-12-30_4.pdf,1038,1063,true,capitulo_i,1043,1046,YUC_PREDIAL_2023_kinchil.txt,5645
@@ -1276,7 +1276,7 @@ ejercicio,municipio,slug,source_pdf,ley_page_start,ley_page_end,predial_found,pr
 2023,Maxcanú,maxcanu,2022\2022-12-30_4.pdf,1134,1163,true,seccion_primera,1135,1140,YUC_PREDIAL_2023_maxcanu.txt,5540
 2023,Mayapán,mayapan,2022\2022-12-30_4.pdf,1163,1185,true,seccion_primera,1164,1168,YUC_PREDIAL_2023_mayapan.txt,4549
 2023,Mocochá,mococha,2022\2022-12-30_4.pdf,1185,1226,true,capitulo_i,1191,1197,YUC_PREDIAL_2023_mococha.txt,9465
-2023,Motul,motul,2022\2022-12-30_4.pdf,1226,1232,false,none,,,YUC_PREDIAL_2023_motul.txt,0
+2023,Motul,motul,2022\2022-12-30_4.pdf,1226,1232,true,short_form,1226,1232,YUC_PREDIAL_2023_motul.txt,4026
 2023,Muna,muna,2022\2022-12-30_4.pdf,1232,1262,true,capitulo_i,1237,1241,YUC_PREDIAL_2023_muna.txt,5399
 2023,Muxupip,muxupip,2022\2022-12-30_4.pdf,1262,1282,true,capitulo_i,1267,1269,YUC_PREDIAL_2023_muxupip.txt,3295
 2023,Opichén,opichen,2022\2022-12-30_4.pdf,1282,1306,true,capitulo_i,1287,1288,YUC_PREDIAL_2023_opichen.txt,4867
@@ -1286,7 +1286,7 @@ ejercicio,municipio,slug,source_pdf,ley_page_start,ley_page_end,predial_found,pr
 2023,Progreso,progreso,2022\2022-12-30_4.pdf,1406,1456,true,seccion_primera,1413,1425,YUC_PREDIAL_2023_progreso.txt,24608
 2023,Quintana Roo,quintana_roo,2022\2022-12-30_4.pdf,1456,1478,true,capitulo_i,1461,1463,YUC_PREDIAL_2023_quintana_roo.txt,3060
 2023,Río Lagartos,rio_lagartos,2022\2022-12-30_4.pdf,1478,1507,true,capitulo_i,1483,1486,YUC_PREDIAL_2023_rio_lagartos.txt,6482
-2023,Sacalum,sacalum,2022\2022-12-30_4.pdf,1507,1513,false,none,,,YUC_PREDIAL_2023_sacalum.txt,0
+2023,Sacalum,sacalum,2022\2022-12-30_4.pdf,1507,1513,true,short_form,1507,1513,YUC_PREDIAL_2023_sacalum.txt,4025
 2023,Samahil,samahil,2022\2022-12-30_4.pdf,1513,1542,true,capitulo_i,1518,1521,YUC_PREDIAL_2023_samahil.txt,3571
 2023,Sanahcat,sanahcat,2022\2022-12-30_4.pdf,1542,1562,true,capitulo_i,1547,1551,YUC_PREDIAL_2023_sanahcat.txt,3927
 2023,San Felipe,san_felipe,2022\2022-12-30_4.pdf,1562,1582,true,capitulo_i,1567,1570,YUC_PREDIAL_2023_san_felipe.txt,3094
@@ -1300,13 +1300,13 @@ ejercicio,municipio,slug,source_pdf,ley_page_start,ley_page_end,predial_found,pr
 2023,Tahmek,tahmek,2022\2022-12-30_4.pdf,1767,1791,true,capitulo_i,1772,1774,YUC_PREDIAL_2023_tahmek.txt,2577
 2023,Teabo,teabo,2022\2022-12-30_4.pdf,1791,1816,true,seccion_primera,1792,1795,YUC_PREDIAL_2023_teabo.txt,3784
 2023,Tecoh,tecoh,2022\2022-12-30_4.pdf,1816,1841,true,capitulo_i,1822,1825,YUC_PREDIAL_2023_tecoh.txt,4128
-2023,Tekal de Venegas,tekal_de_venegas,2022\2022-12-30_4.pdf,1841,1847,false,none,,,YUC_PREDIAL_2023_tekal_de_venegas.txt,0
+2023,Tekal de Venegas,tekal_de_venegas,2022\2022-12-30_4.pdf,1841,1847,true,short_form,1841,1847,YUC_PREDIAL_2023_tekal_de_venegas.txt,4026
 2023,Tekantó,tekanto,2022\2022-12-30_4.pdf,1847,1868,true,capitulo_i,1850,1853,YUC_PREDIAL_2023_tekanto.txt,3327
 2023,Tekax,tekax,2022\2022-12-30_4.pdf,1868,1877,false,none,,,YUC_PREDIAL_2023_tekax.txt,0
 2023,Tekit,tekit,2022\2022-12-30_4.pdf,1877,1911,true,capitulo_i,1882,1885,YUC_PREDIAL_2023_tekit.txt,3045
 2023,Telchac Puerto,telchac_puerto,2022\2022-12-30_4.pdf,1911,1941,true,capitulo_i,1916,1920,YUC_PREDIAL_2023_telchac_puerto.txt,5654
 2023,Telchac Pueblo,telchac_pueblo,2022\2022-12-30_4.pdf,1941,1975,true,capitulo_i,1947,1950,YUC_PREDIAL_2023_telchac_pueblo.txt,5572
-2023,Temax,temax,2022\2022-12-30_4.pdf,1975,1982,false,none,,,YUC_PREDIAL_2023_temax.txt,0
+2023,Temax,temax,2022\2022-12-30_4.pdf,1975,1982,true,short_form,1975,1982,YUC_PREDIAL_2023_temax.txt,4024
 2023,Temozón,temozon,2022\2022-12-30_4.pdf,1982,2005,true,capitulo_i,1987,1990,YUC_PREDIAL_2023_temozon.txt,3056
 2023,Tepakán,tepakan,2022\2022-12-30_4.pdf,2005,2028,true,capitulo_i,2010,2013,YUC_PREDIAL_2023_tepakan.txt,4709
 2023,Tetiz,tetiz,2022\2022-12-30_4.pdf,2028,2058,true,capitulo_i,2033,2036,YUC_PREDIAL_2023_tetiz.txt,5467
@@ -1317,11 +1317,11 @@ ejercicio,municipio,slug,source_pdf,ley_page_start,ley_page_end,predial_found,pr
 2023,Tixcacalcupul,tixcacalcupul,2022\2022-12-30_4.pdf,2164,2183,true,capitulo_i,2169,2172,YUC_PREDIAL_2023_tixcacalcupul.txt,3101
 2023,Tixkokob,tixkokob,2022\2022-12-30_4.pdf,2183,2209,true,capitulo_i,2189,2193,YUC_PREDIAL_2023_tixkokob.txt,6646
 2023,Tixméhuac,tixmehuac,2022\2022-12-30_4.pdf,2209,2226,true,seccion_primera,2210,2213,YUC_PREDIAL_2023_tixmehuac.txt,4087
-2023,Tixpéual,tixpehual,2022\2022-12-30_4.pdf,2226,2233,false,none,,,YUC_PREDIAL_2023_tixpehual.txt,0
+2023,Tixpéual,tixpehual,2022\2022-12-30_4.pdf,2226,2233,true,short_form,2226,2233,YUC_PREDIAL_2023_tixpehual.txt,4026
 2023,Tizimín,tizimin,2022\2022-12-30_4.pdf,2233,2278,true,seccion_primera,2234,2242,YUC_PREDIAL_2023_tizimin.txt,10131
 2023,Tunkás,tunkas,2022\2022-12-30_4.pdf,2278,2297,true,capitulo_i,2282,2285,YUC_PREDIAL_2023_tunkas.txt,3581
 2023,Tzucacab,tzucacab,2022\2022-12-30_4.pdf,2297,2334,true,capitulo_i,2302,2306,YUC_PREDIAL_2023_tzucacab.txt,6315
-2023,Uayma,uayma,2022\2022-12-30_4.pdf,2334,2343,false,none,,,YUC_PREDIAL_2023_uayma.txt,0
+2023,Uayma,uayma,2022\2022-12-30_4.pdf,2334,2343,true,short_form,2334,2343,YUC_PREDIAL_2023_uayma.txt,4026
 2023,Ucú,ucu,2022\2022-12-30_4.pdf,2343,2376,false,none,,,YUC_PREDIAL_2023_ucu.txt,0
 2023,Umán,uman,2022\2022-12-30_4.pdf,2376,2445,true,capitulo_i,2382,2393,YUC_PREDIAL_2023_uman.txt,20611
 2023,Valladolid,valladolid,2022\2022-12-30_4.pdf,2445,2450,false,none,,,YUC_PREDIAL_2023_valladolid.txt,0
@@ -1341,7 +1341,7 @@ ejercicio,municipio,slug,source_pdf,ley_page_start,ley_page_end,predial_found,pr
 2024,Cantamayec,cantamayec,2023\2023-12-29_3.pdf,239,265,true,capitulo_i,245,247,YUC_PREDIAL_2024_cantamayec.txt,3219
 2024,Celestún,celestun,2023\2023-12-29_3.pdf,265,291,true,capitulo_i,270,274,YUC_PREDIAL_2024_celestun.txt,7097
 2024,Cenotillo,cenotillo,2023\2023-12-29_3.pdf,291,313,true,capitulo_i,296,298,YUC_PREDIAL_2024_cenotillo.txt,3133
-2024,Conkal,conkal,2023\2023-12-29_3.pdf,313,319,false,none,,,YUC_PREDIAL_2024_conkal.txt,0
+2024,Conkal,conkal,2023\2023-12-29_3.pdf,313,319,true,short_form,313,319,YUC_PREDIAL_2024_conkal.txt,4019
 2024,Cuncunul,cuncunul,2023\2023-12-29_3.pdf,319,344,true,capitulo_i,325,327,YUC_PREDIAL_2024_cuncunul.txt,2564
 2024,Cuzamá,cuzama,2023\2023-12-29_3.pdf,344,365,true,capitulo_i,350,353,YUC_PREDIAL_2024_cuzama.txt,3506
 2024,Chacsinkin,chacsinkin,2023\2023-12-29_3.pdf,365,383,true,capitulo_i,370,373,YUC_PREDIAL_2024_chacsinkin.txt,3755
@@ -1355,7 +1355,7 @@ ejercicio,municipio,slug,source_pdf,ley_page_start,ley_page_end,predial_found,pr
 2024,Chumayel,chumayel,2023\2023-12-29_3.pdf,548,574,true,capitulo_i,554,556,YUC_PREDIAL_2024_chumayel.txt,3130
 2024,Dzan,dzan,2023\2023-12-29_3.pdf,574,598,true,capitulo_i,579,584,YUC_PREDIAL_2024_dzan.txt,7684
 2024,Dzemul,dzemul,2023\2023-12-29_3.pdf,598,638,true,capitulo_i,602,606,YUC_PREDIAL_2024_dzemul.txt,5162
-2024,Dzidzantún,dzidzantun,2023\2023-12-29_3.pdf,638,643,false,none,,,YUC_PREDIAL_2024_dzidzantun.txt,0
+2024,Dzidzantún,dzidzantun,2023\2023-12-29_3.pdf,638,643,true,short_form,638,643,YUC_PREDIAL_2024_dzidzantun.txt,4026
 2024,Dzilám de Bravo,dzilam_de_bravo,2023\2023-12-29_3.pdf,643,662,true,capitulo_i,647,649,YUC_PREDIAL_2024_dzilam_de_bravo.txt,4495
 2024,Dzilam González,dzilam_gonzalez,2023\2023-12-29_3.pdf,662,694,true,capitulo_i,667,671,YUC_PREDIAL_2024_dzilam_gonzalez.txt,4118
 2024,Dzitás,dzitas,2023\2023-12-29_3.pdf,694,715,true,capitulo_i,699,702,YUC_PREDIAL_2024_dzitas.txt,3262
@@ -1369,7 +1369,7 @@ ejercicio,municipio,slug,source_pdf,ley_page_start,ley_page_end,predial_found,pr
 2024,Hunucmá,hunucma,2023\2023-12-29_3.pdf,846,887,true,capitulo_i,853,859,YUC_PREDIAL_2024_hunucma.txt,9595
 2024,Ixil,ixil,2023\2023-12-29_3.pdf,887,920,true,capitulo_i,891,896,YUC_PREDIAL_2024_ixil.txt,6677
 2024,Izamal,izamal,2023\2023-12-29_3.pdf,920,961,false,none,,,YUC_PREDIAL_2024_izamal.txt,0
-2024,Kanasín,kanasin,2023\2023-12-29_3.pdf,961,969,false,none,,,YUC_PREDIAL_2024_kanasin.txt,0
+2024,Kanasín,kanasin,2023\2023-12-29_3.pdf,961,969,true,short_form,961,969,YUC_PREDIAL_2024_kanasin.txt,4026
 2024,Kantunil,kantunil,2023\2023-12-29_3.pdf,969,996,true,capitulo_i,974,978,YUC_PREDIAL_2024_kantunil.txt,4301
 2024,Kaua,kaua,2023\2023-12-29_3.pdf,996,1021,true,capitulo_i,1002,1005,YUC_PREDIAL_2024_kaua.txt,4146
 2024,Kinchil,kinchil,2023\2023-12-29_3.pdf,1021,1046,true,capitulo_i,1027,1029,YUC_PREDIAL_2024_kinchil.txt,5479
@@ -1379,7 +1379,7 @@ ejercicio,municipio,slug,source_pdf,ley_page_start,ley_page_end,predial_found,pr
 2024,Maxcanú,maxcanu,2023\2023-12-29_3.pdf,1116,1144,true,seccion_primera,1117,1121,YUC_PREDIAL_2024_maxcanu.txt,6185
 2024,Mayapán,mayapan,2023\2023-12-29_3.pdf,1144,1167,true,seccion_primera,1146,1149,YUC_PREDIAL_2024_mayapan.txt,4659
 2024,Mocochá,mococha,2023\2023-12-29_3.pdf,1167,1202,true,capitulo_i,1171,1177,YUC_PREDIAL_2024_mococha.txt,8453
-2024,Motul,motul,2023\2023-12-29_3.pdf,1202,1208,false,none,,,YUC_PREDIAL_2024_motul.txt,0
+2024,Motul,motul,2023\2023-12-29_3.pdf,1202,1208,true,short_form,1202,1208,YUC_PREDIAL_2024_motul.txt,4026
 2024,Muna,muna,2023\2023-12-29_3.pdf,1208,1237,true,capitulo_i,1214,1217,YUC_PREDIAL_2024_muna.txt,5416
 2024,Muxupip,muxupip,2023\2023-12-29_3.pdf,1237,1258,true,capitulo_i,1243,1245,YUC_PREDIAL_2024_muxupip.txt,3357
 2024,Opichén,opichen,2023\2023-12-29_3.pdf,1258,1283,true,capitulo_i,1263,1265,YUC_PREDIAL_2024_opichen.txt,4834
@@ -1389,7 +1389,7 @@ ejercicio,municipio,slug,source_pdf,ley_page_start,ley_page_end,predial_found,pr
 2024,Progreso,progreso,2023\2023-12-29_3.pdf,1384,1445,true,seccion_primera,1391,1407,YUC_PREDIAL_2024_progreso.txt,24629
 2024,Quintana Roo,quintana_roo,2023\2023-12-29_3.pdf,1445,1468,true,capitulo_i,1450,1452,YUC_PREDIAL_2024_quintana_roo.txt,3264
 2024,Río Lagartos,rio_lagartos,2023\2023-12-29_3.pdf,1468,1501,true,capitulo_i,1473,1477,YUC_PREDIAL_2024_rio_lagartos.txt,8309
-2024,Sacalum,sacalum,2023\2023-12-29_3.pdf,1501,1507,false,none,,,YUC_PREDIAL_2024_sacalum.txt,0
+2024,Sacalum,sacalum,2023\2023-12-29_3.pdf,1501,1507,true,short_form,1501,1507,YUC_PREDIAL_2024_sacalum.txt,4024
 2024,Samahil,samahil,2023\2023-12-29_3.pdf,1507,1535,true,capitulo_i,1513,1515,YUC_PREDIAL_2024_samahil.txt,3572
 2024,Sanahcat,sanahcat,2023\2023-12-29_3.pdf,1535,1554,true,capitulo_i,1541,1544,YUC_PREDIAL_2024_sanahcat.txt,3705
 2024,San Felipe,san_felipe,2023\2023-12-29_3.pdf,1554,1573,true,capitulo_i,1558,1561,YUC_PREDIAL_2024_san_felipe.txt,3322
@@ -1403,7 +1403,7 @@ ejercicio,municipio,slug,source_pdf,ley_page_start,ley_page_end,predial_found,pr
 2024,Tahmek,tahmek,2023\2023-12-29_3.pdf,1755,1778,true,capitulo_i,1760,1762,YUC_PREDIAL_2024_tahmek.txt,2568
 2024,Teabo,teabo,2023\2023-12-29_3.pdf,1778,1804,true,seccion_primera,1779,1782,YUC_PREDIAL_2024_teabo.txt,3781
 2024,Tecoh,tecoh,2023\2023-12-29_3.pdf,1804,1848,false,none,,,YUC_PREDIAL_2024_tecoh.txt,0
-2024,Tekal de Venegas,tekal_de_venegas,2023\2023-12-29_3.pdf,1848,1853,false,none,,,YUC_PREDIAL_2024_tekal_de_venegas.txt,0
+2024,Tekal de Venegas,tekal_de_venegas,2023\2023-12-29_3.pdf,1848,1853,true,short_form,1848,1853,YUC_PREDIAL_2024_tekal_de_venegas.txt,4025
 2024,Tekantó,tekanto,2023\2023-12-29_3.pdf,1853,1874,true,capitulo_i,1857,1860,YUC_PREDIAL_2024_tekanto.txt,2981
 2024,Tekax,tekax,2023\2023-12-29_3.pdf,1874,1883,false,none,,,YUC_PREDIAL_2024_tekax.txt,0
 2024,Tekit,tekit,2023\2023-12-29_3.pdf,1883,1906,true,capitulo_i,1888,1891,YUC_PREDIAL_2024_tekit.txt,3092
@@ -1421,11 +1421,11 @@ ejercicio,municipio,slug,source_pdf,ley_page_start,ley_page_end,predial_found,pr
 2024,Tixcacalcupul,tixcacalcupul,2023\2023-12-29_3.pdf,2161,2180,true,capitulo_i,2166,2169,YUC_PREDIAL_2024_tixcacalcupul.txt,3126
 2024,Tixkokob,tixkokob,2023\2023-12-29_3.pdf,2180,2206,true,capitulo_i,2185,2190,YUC_PREDIAL_2024_tixkokob.txt,6713
 2024,Tixméhuac,tixmehuac,2023\2023-12-29_3.pdf,2206,2223,true,seccion_primera,2207,2210,YUC_PREDIAL_2024_tixmehuac.txt,4045
-2024,Tixpéual,tixpehual,2023\2023-12-29_3.pdf,2223,2230,false,none,,,YUC_PREDIAL_2024_tixpehual.txt,0
+2024,Tixpéual,tixpehual,2023\2023-12-29_3.pdf,2223,2230,true,short_form,2223,2230,YUC_PREDIAL_2024_tixpehual.txt,4026
 2024,Tizimín,tizimin,2023\2023-12-29_3.pdf,2230,2278,true,seccion_primera,2231,2239,YUC_PREDIAL_2024_tizimin.txt,9906
 2024,Tunkás,tunkas,2023\2023-12-29_3.pdf,2278,2297,true,capitulo_i,2283,2285,YUC_PREDIAL_2024_tunkas.txt,3487
 2024,Tzucacab,tzucacab,2023\2023-12-29_3.pdf,2297,2333,true,capitulo_i,2302,2307,YUC_PREDIAL_2024_tzucacab.txt,6209
-2024,Uayma,uayma,2023\2023-12-29_3.pdf,2333,2341,false,none,,,YUC_PREDIAL_2024_uayma.txt,0
+2024,Uayma,uayma,2023\2023-12-29_3.pdf,2333,2341,true,short_form,2333,2341,YUC_PREDIAL_2024_uayma.txt,4026
 2024,Ucú,ucu,2023\2023-12-29_3.pdf,2341,2373,false,none,,,YUC_PREDIAL_2024_ucu.txt,0
 2024,Umán,uman,2023\2023-12-29_3.pdf,2373,2448,true,capitulo_i,2381,2392,YUC_PREDIAL_2024_uman.txt,20679
 2024,Valladolid,valladolid,2023\2023-12-29_3.pdf,2448,2452,false,none,,,YUC_PREDIAL_2024_valladolid.txt,0
@@ -1442,7 +1442,7 @@ ejercicio,municipio,slug,source_pdf,ley_page_start,ley_page_end,predial_found,pr
 2025,Calotmul,calotmul,2024\2024-12-30_3.pdf,181,204,true,seccion_primera,182,184,YUC_PREDIAL_2025_calotmul.txt,3031
 2025,Cansahcab,cansahcab,2024\2024-12-30_3.pdf,204,209,false,none,,,YUC_PREDIAL_2025_cansahcab.txt,0
 2025,Celestún,celestun,2024\2024-12-30_3.pdf,209,235,true,capitulo_i,214,217,YUC_PREDIAL_2025_celestun.txt,7003
-2025,Conkal,conkal,2024\2024-12-30_3.pdf,235,241,false,none,,,YUC_PREDIAL_2025_conkal.txt,0
+2025,Conkal,conkal,2024\2024-12-30_3.pdf,235,241,true,short_form,235,241,YUC_PREDIAL_2025_conkal.txt,4026
 2025,Cuncunul,cuncunul,2024\2024-12-30_3.pdf,241,263,true,capitulo_i,245,247,YUC_PREDIAL_2025_cuncunul.txt,2546
 2025,Chacsinkin,chacsinkin,2024\2024-12-30_3.pdf,263,282,true,capitulo_i,268,271,YUC_PREDIAL_2025_chacsinkin.txt,3812
 2025,Chankom,chankom,2024\2024-12-30_3.pdf,282,308,true,capitulo_i,287,290,YUC_PREDIAL_2025_chankom.txt,5222
@@ -1450,13 +1450,13 @@ ejercicio,municipio,slug,source_pdf,ley_page_start,ley_page_end,predial_found,pr
 2025,Chichimilá,chichimila,2024\2024-12-30_3.pdf,333,382,true,seccion_primera,334,335,YUC_PREDIAL_2025_chichimila.txt,1276
 2025,Chikindzonot,chikindzonot,2024\2024-12-30_3.pdf,382,397,true,capitulo_i,385,388,YUC_PREDIAL_2025_chikindzonot.txt,3145
 2025,Chumayel,chumayel,2024\2024-12-30_3.pdf,397,422,true,capitulo_i,403,405,YUC_PREDIAL_2025_chumayel.txt,2751
-2025,Dzidzantún,dzidzantun,2024\2024-12-30_3.pdf,422,427,false,none,,,YUC_PREDIAL_2025_dzidzantun.txt,0
+2025,Dzidzantún,dzidzantun,2024\2024-12-30_3.pdf,422,427,true,short_form,422,427,YUC_PREDIAL_2025_dzidzantun.txt,4026
 2025,Dzilám de Bravo,dzilam_de_bravo,2024\2024-12-30_3.pdf,427,447,true,capitulo_i,430,432,YUC_PREDIAL_2025_dzilam_de_bravo.txt,4540
 2025,Dzoncauich,dzoncauich,2024\2024-12-30_3.pdf,447,468,true,capitulo_i,452,454,YUC_PREDIAL_2025_dzoncauich.txt,2709
 2025,Hocabá,hocaba,2024\2024-12-30_3.pdf,468,472,false,none,,,YUC_PREDIAL_2025_hocaba.txt,0
-2025,Hoctún,hoctun,2024\2024-12-30_3.pdf,472,479,false,none,,,YUC_PREDIAL_2025_hoctun.txt,0
-2025,Kanasín,kanasin,2024\2024-12-30_3.pdf,479,487,false,none,,,YUC_PREDIAL_2025_kanasin.txt,0
-2025,Kaua,kaua,2024\2024-12-30_3.pdf,487,493,false,none,,,YUC_PREDIAL_2025_kaua.txt,0
+2025,Hoctún,hoctun,2024\2024-12-30_3.pdf,472,479,true,short_form,472,479,YUC_PREDIAL_2025_hoctun.txt,4026
+2025,Kanasín,kanasin,2024\2024-12-30_3.pdf,479,487,true,short_form,479,487,YUC_PREDIAL_2025_kanasin.txt,4024
+2025,Kaua,kaua,2024\2024-12-30_3.pdf,487,493,true,short_form,487,493,YUC_PREDIAL_2025_kaua.txt,4025
 2025,Mama,mama,2024\2024-12-30_3.pdf,493,511,true,capitulo_i,497,499,YUC_PREDIAL_2025_mama.txt,3777
 2025,Maxcanú,maxcanu,2024\2024-12-30_3.pdf,511,539,true,seccion_primera,512,516,YUC_PREDIAL_2025_maxcanu.txt,5892
 2025,Motul,motul,2024\2024-12-30_3.pdf,539,545,false,none,,,YUC_PREDIAL_2025_motul.txt,0
@@ -1469,7 +1469,7 @@ ejercicio,municipio,slug,source_pdf,ley_page_start,ley_page_end,predial_found,pr
 2025,Seyé,seye,2024\2024-12-30_3.pdf,664,693,true,capitulo_i,670,673,YUC_PREDIAL_2025_seye.txt,4348
 2025,Sinanché,sinanche,2024\2024-12-30_3.pdf,693,722,true,capitulo_i,699,704,YUC_PREDIAL_2025_sinanche.txt,9232
 2025,Sotuta,sotuta,2024\2024-12-30_3.pdf,722,752,true,capitulo_i,727,730,YUC_PREDIAL_2025_sotuta.txt,3779
-2025,Tekal de Venegas,tekal_de_venegas,2024\2024-12-30_3.pdf,752,758,false,none,,,YUC_PREDIAL_2025_tekal_de_venegas.txt,0
+2025,Tekal de Venegas,tekal_de_venegas,2024\2024-12-30_3.pdf,752,758,true,short_form,752,758,YUC_PREDIAL_2025_tekal_de_venegas.txt,4026
 2025,Tekantó,tekanto,2024\2024-12-30_3.pdf,758,763,false,none,,,YUC_PREDIAL_2025_tekanto.txt,0
 2025,Tekax,tekax,2024\2024-12-30_3.pdf,763,770,false,none,,,YUC_PREDIAL_2025_tekax.txt,0
 2025,Telchac Pueblo,telchac_pueblo,2024\2024-12-30_3.pdf,770,804,true,capitulo_i,775,780,YUC_PREDIAL_2025_telchac_pueblo.txt,6090
@@ -1479,7 +1479,7 @@ ejercicio,municipio,slug,source_pdf,ley_page_start,ley_page_end,predial_found,pr
 2025,Tetiz,tetiz,2024\2024-12-30_3.pdf,863,867,false,none,,,YUC_PREDIAL_2025_tetiz.txt,0
 2025,Timucuy,timucuy,2024\2024-12-30_3.pdf,867,888,true,capitulo_i,871,875,YUC_PREDIAL_2025_timucuy.txt,4356
 2025,Tinum,tinum,2024\2024-12-30_3.pdf,888,916,true,capitulo_i,891,896,YUC_PREDIAL_2025_tinum.txt,7504
-2025,Tixpéual,tixpehual,2024\2024-12-30_3.pdf,916,923,false,none,,,YUC_PREDIAL_2025_tixpehual.txt,0
+2025,Tixpéual,tixpehual,2024\2024-12-30_3.pdf,916,923,true,short_form,916,923,YUC_PREDIAL_2025_tixpehual.txt,4026
 2025,Uayma,uayma,2024\2024-12-30_3.pdf,923,932,false,none,,,YUC_PREDIAL_2025_uayma.txt,0
 2025,Baca,baca,2024\2024-12-30_4.pdf,38,74,true,seccion_primera,39,42,YUC_PREDIAL_2025_baca.txt,2959
 2025,Cantamayec,cantamayec,2024\2024-12-30_4.pdf,74,99,true,capitulo_i,79,82,YUC_PREDIAL_2025_cantamayec.txt,3135
@@ -1509,7 +1509,7 @@ ejercicio,municipio,slug,source_pdf,ley_page_start,ley_page_end,predial_found,pr
 2025,Panabá,panaba,2024\2024-12-30_4.pdf,767,786,true,capitulo_i,771,771,YUC_PREDIAL_2025_panaba.txt,415
 2025,Peto,peto,2024\2024-12-30_4.pdf,786,827,true,capitulo_i,791,796,YUC_PREDIAL_2025_peto.txt,6633
 2025,Progreso,progreso,2024\2024-12-30_4.pdf,827,894,true,seccion_primera,834,856,YUC_PREDIAL_2025_progreso.txt,33509
-2025,Sacalum,sacalum,2024\2024-12-30_4.pdf,894,901,false,none,,,YUC_PREDIAL_2025_sacalum.txt,0
+2025,Sacalum,sacalum,2024\2024-12-30_4.pdf,894,901,true,short_form,894,901,YUC_PREDIAL_2025_sacalum.txt,4026
 2025,Santa Elena,santa_elena,2024\2024-12-30_4.pdf,901,932,true,seccion_primera,902,905,YUC_PREDIAL_2025_santa_elena.txt,4983
 2025,Sucilá,sucila,2024\2024-12-30_4.pdf,932,953,true,capitulo_i,937,940,YUC_PREDIAL_2025_sucila.txt,3181
 2025,Sudzal,sudzal,2024\2024-12-30_4.pdf,953,983,true,capitulo_i,958,962,YUC_PREDIAL_2025_sudzal.txt,5310

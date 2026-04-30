@@ -283,6 +283,70 @@ _YUC_END_SPECS = [
 ]
 
 
+# ── Fallback para leyes de forma corta (sin sección detallada de predial) ──
+#
+# Algunas leyes municipales (Hocabá, Motul, Tahdziu, Tekal de Venegas, Temax,
+# Uayma, y años puntuales de Valladolid, Muna, Chochola, Sacalum, Ucú,
+# Dzidzantun) consisten únicamente en pronóstico presupuestal por concepto sin
+# secciones de tarifa. Estas leyes referencian la **Ley General de Hacienda
+# Municipal del Estado de Yucatán** (Art. 13-15 típicamente) para las tarifas.
+#
+# El fallback detecta este patrón y emite un focus_predial con encabezado
+# explicativo para que el extractor downstream lo clasifique como
+# `otro_no_clasificado / municipio_sin_impuesto`.
+
+_RE_TARIFF_KEYWORDS = re.compile(
+    r"\b(?:tasa|al\s*millar|millar|tarifa|factor|cuota\s+fija|porcentaje\s+sobre|"
+    r"valor\s+catastral.*?(?:multiplicad|por))\b",
+    re.IGNORECASE,
+)
+_RE_PREDIAL_MENTION = re.compile(
+    # Acepta "Impuesto Predial", "Imp. Predial", o "Predial" suelto
+    # (las leyes cortas usan ítem "I.- Predial $X" sin prefijo).
+    r"\b(?:Imp[a-záéíóú]*\.?\s+Predial|Predial)\b",
+    re.IGNORECASE,
+)
+
+
+def _extract_short_form_predial(law_text: str) -> Optional[str]:
+    """Para leyes de ingresos cortas (sin sección detallada de predial), extrae
+    la mención de Impuesto Predial con contexto y prepende un encabezado
+    explicativo para guiar la clasificación LLM como
+    `otro_no_clasificado / municipio_sin_impuesto`.
+
+    Returns:
+        Texto con encabezado + ventana, o None si no se identifica como
+        ley de forma corta.
+    """
+    if not law_text:
+        return None
+
+    # Heurística: ley corta = sin keywords de tarifa.
+    if _RE_TARIFF_KEYWORDS.search(law_text):
+        return None
+
+    m = _RE_PREDIAL_MENTION.search(law_text)
+    if not m:
+        return None
+
+    start = max(0, m.start() - 500)
+    end = min(len(law_text), m.start() + 3000)
+    window = law_text[start:end].strip()
+
+    header = (
+        "[NOTA DEL SEGMENTADOR — LEY DE INGRESOS DE FORMA CORTA]\n"
+        "Esta ley contiene únicamente el pronóstico presupuestal por concepto "
+        "(p. ej. 'Impuesto Predial $X'); NO incluye una sección con tarifas, "
+        "tasas, montos al millar, ni rangos. Las contribuciones se rigen por "
+        "la Ley General de Hacienda Municipal del Estado de Yucatán "
+        "(referencia explícita típicamente en Art. 13-15 del articulado).\n"
+        "Clasificación esperada: `otro_no_clasificado` con "
+        "`categoria=municipio_sin_impuesto`.\n\n"
+        "TEXTO DEL SEGMENTO QUE MENCIONA EL IMPUESTO PREDIAL:\n\n"
+    )
+    return header + window
+
+
 def run_extract_sections(adapter) -> Path:
     """
     Para cada ley delimitada, extrae sección de predial.
@@ -371,6 +435,14 @@ def run_extract_sections(adapter) -> Path:
                         if len(predial_text) < 50:
                             predial_text = None
 
+                    # Fallback: ley de forma corta (presupuesto sin tarifas)
+                    short_form_used = False
+                    if not predial_text:
+                        sf_text = _extract_short_form_predial(law_text)
+                        if sf_text:
+                            predial_text = sf_text
+                            short_form_used = True
+
                     if not predial_text:
                         log_rows.append({
                             "municipio": muni, "ejercicio": fy,
@@ -390,21 +462,30 @@ def run_extract_sections(adapter) -> Path:
                         continue
 
                     # Tipo de patrón usado
-                    predial_tipo = (
-                        "seccion_primera"
-                        if result.method == "seccion_predial"
-                        else "capitulo_i"
-                    )
+                    if short_form_used:
+                        predial_tipo = "short_form"
+                    else:
+                        predial_tipo = (
+                            "seccion_primera"
+                            if result.method == "seccion_predial"
+                            else "capitulo_i"
+                        )
 
-                    # Calcular páginas de predial a partir de offsets
-                    predial_offset_in_full = char_start + result.start_char
-                    if predial_offset_in_full < 0:
-                        predial_offset_in_full = char_start
-                    pred_page_start = bisect.bisect_right(page_char_starts, predial_offset_in_full)
-                    pred_page_end = bisect.bisect_right(
-                        page_char_starts,
-                        max(predial_offset_in_full, predial_offset_in_full + len(predial_text) - 1)
-                    )
+                    # Calcular páginas de predial a partir de offsets.
+                    # Para short_form los offsets de result no aplican; usamos el
+                    # rango de páginas de la ley completa.
+                    if short_form_used:
+                        pred_page_start = ley_start_page
+                        pred_page_end = ley_end_page
+                    else:
+                        predial_offset_in_full = char_start + result.start_char
+                        if predial_offset_in_full < 0:
+                            predial_offset_in_full = char_start
+                        pred_page_start = bisect.bisect_right(page_char_starts, predial_offset_in_full)
+                        pred_page_end = bisect.bisect_right(
+                            page_char_starts,
+                            max(predial_offset_in_full, predial_offset_in_full + len(predial_text) - 1)
+                        )
 
                     # Guardar TXT
                     txt_path = focus_dir / fy / txt_name
@@ -462,9 +543,11 @@ def run_extract_sections(adapter) -> Path:
     no_pred = sum(1 for r in log_rows if r["status"] == "no_predial_found")
     tipo_b = sum(1 for r in log_rows if r.get("predial_tipo") == "seccion_primera")
     tipo_a = sum(1 for r in log_rows if r.get("predial_tipo") == "capitulo_i")
+    short_form = sum(1 for r in log_rows if r.get("predial_tipo") == "short_form")
     merida_ok = sum(1 for r in log_rows if r.get("predial_tipo") == "merida_hacienda")
     print(f"  Secciones extraídas: {ok_count}/{len(log_rows)} "
-          f"(tipo_B={tipo_b}, tipo_A={tipo_a}, mérida={merida_ok}, sin_predial={no_pred})")
+          f"(tipo_B={tipo_b}, tipo_A={tipo_a}, short_form={short_form}, "
+          f"mérida={merida_ok}, sin_predial={no_pred})")
     print(f"  → {sections_csv}")
     return sections_csv
 

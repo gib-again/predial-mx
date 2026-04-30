@@ -1,0 +1,27 @@
+{
+  "predial": {
+    "tipo_esquema": "otro_no_clasificado",
+    "categoria": "municipio_sin_impuesto",
+    "descripcion_estructural": "Ley de ingresos en formato corto: contiene únicamente pronóstico presupuestal por concepto (línea 'Impuesto Predial $X' o 'I.- Predial $X') sin secciones que detallen tarifas, tasas, montos al millar ni rangos. Las contribuciones se rigen por la Ley General de Hacienda Municipal del Estado de Yucatán (referenciada típicamente en Art. 13-15 del articulado).",
+    "tabla_cruda": [],
+    "minimo_predial": null,
+    "comentarios": "Síntesis determinista a partir del fallback `short_form` del segmentador de Yucatán. No se invocó LLM porque el documento fuente no contiene información de tarifa."
+  },
+  "_meta": {
+    "fuente": "txt",
+    "modelo": "synthesized_short_form"
+  },
+  "_meta_v2": {
+    "intentos": 0,
+    "requiere_revision": false,
+    "razon": null,
+    "tokens": {
+      "input": 0,
+      "output": 0,
+      "cached": 0
+    },
+    "cvegeo": "31084",
+    "estado": "yucatan",
+    "anio": 2018
+  }
+}
