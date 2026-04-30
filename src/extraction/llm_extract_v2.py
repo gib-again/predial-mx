@@ -134,9 +134,153 @@ def _resolve_cvegeo(cvegeo: str) -> tuple[str, str]:
     raise KeyError(f"CVEGEO {cve} no encontrado en {CATALOG}")
 
 
-# ── Localizar source ──
+# ── Localizar source (con manual overrides) ──
 
-def _find_focus_paths(estado: str, prefijo: str, anio: int, slug: str) -> tuple[Path | None, Path | None]:
+# Cache de overrides por estado: {(anio, cvegeo): {pdf_correcto, paginas, nota}}
+_OVERRIDE_CACHE: dict[str, dict[tuple[int, str], dict]] = {}
+
+
+def _load_overrides(estado: str) -> dict[tuple[int, str], dict]:
+    """Carga `data/{estado}/manual_pdf_overrides.csv` si existe.
+
+    Cada fila apunta una pareja (anio, cvegeo) a un PDF distinto + páginas
+    específicas. Usado para casos donde el segmenter eligió un decreto
+    incorrecto (fe de erratas, anexo, etc.) — patrón P-10 del HITL.
+    """
+    if estado in _OVERRIDE_CACHE:
+        return _OVERRIDE_CACHE[estado]
+    p = ROOT / "data" / estado / "manual_pdf_overrides.csv"
+    out: dict[tuple[int, str], dict] = {}
+    if p.exists():
+        with p.open(encoding="utf-8-sig", newline="") as f:
+            for r in csv.DictReader(f):
+                try:
+                    anio = int(r["anio"])
+                except (KeyError, ValueError):
+                    continue
+                cvegeo = (r.get("cvegeo") or "").strip().zfill(5)
+                if not cvegeo:
+                    continue
+                out[(anio, cvegeo)] = {
+                    "pdf_correcto": (r.get("pdf_correcto") or "").strip(),
+                    "paginas": (r.get("paginas") or "").strip(),
+                    "nota": (r.get("nota_auditor") or "").strip(),
+                }
+    _OVERRIDE_CACHE[estado] = out
+    return out
+
+
+def _parse_paginas(spec: str) -> list[int] | None:
+    """Convierte '30', '15-16', '1,3,5' o '' (vacío) → list[int] | None.
+
+    None significa "todas las páginas".
+    """
+    if not spec:
+        return None
+    pages: list[int] = []
+    for part in spec.split(","):
+        part = part.strip()
+        if "-" in part:
+            a, b = part.split("-", 1)
+            pages.extend(range(int(a), int(b) + 1))
+        elif part:
+            pages.append(int(part))
+    return pages or None
+
+
+def _apply_pdf_override(
+    estado: str, prefijo: str, anio: int, slug: str, override: dict,
+) -> tuple[Path | None, Path | None]:
+    """Genera TXT/PDF temporales recortados a las páginas indicadas en el override.
+
+    Output cacheado en `data/{estado}/focus_predial_overrides/{anio}/{prefijo}_PREDIAL_{anio}_{slug}.{txt,pdf}`.
+    Si el archivo override existe ya y las páginas indicadas no cambian, se reutiliza.
+    """
+    src_pdf = Path(override["pdf_correcto"])
+    if not src_pdf.is_absolute():
+        src_pdf = ROOT / src_pdf
+    if not src_pdf.exists():
+        print(f"  [override] PDF no existe: {src_pdf}")
+        return (None, None)
+
+    pages = _parse_paginas(override["paginas"])
+
+    # Output paths
+    out_dir = ROOT / "data" / estado / "focus_predial_overrides" / str(anio)
+    out_dir.mkdir(parents=True, exist_ok=True)
+    name = f"{prefijo}_PREDIAL_{anio}_{slug}"
+    out_txt = out_dir / f"{name}.txt"
+    out_pdf = out_dir / f"{name}.pdf"
+
+    # Si el cache del override existe Y es más nuevo que el src + cvs, usar
+    if out_txt.exists() and out_pdf.exists():
+        if out_txt.stat().st_mtime >= src_pdf.stat().st_mtime:
+            return (out_txt, out_pdf)
+
+    # Recortar PDF y extraer texto
+    try:
+        import fitz
+    except ImportError:
+        # Sin PyMuPDF, copiar el PDF entero y extraer texto si pages=None
+        if pages is None:
+            import shutil
+            shutil.copy2(src_pdf, out_pdf)
+            return (None, out_pdf)
+        return (None, None)
+
+    with fitz.open(src_pdf) as doc:
+        n = doc.page_count
+        if pages is None:
+            page_idxs = list(range(n))
+        else:
+            page_idxs = [p - 1 for p in pages if 1 <= p <= n]
+
+        if not page_idxs:
+            return (None, None)
+
+        # Extraer texto concatenado
+        texto = "\n\n".join(
+            doc[i].get_text("text") or "" for i in page_idxs
+        ).strip()
+
+        # Recortar PDF
+        new_doc = fitz.open()
+        for i in page_idxs:
+            new_doc.insert_pdf(doc, from_page=i, to_page=i)
+        new_doc.save(str(out_pdf), deflate=True)
+        new_doc.close()
+
+    out_txt.write_text(texto, encoding="utf-8")
+    return (out_txt, out_pdf)
+
+
+def _find_focus_paths(
+    estado: str,
+    prefijo: str,
+    anio: int,
+    slug: str,
+    cvegeo: str | None = None,
+) -> tuple[Path | None, Path | None]:
+    """Localiza el TXT/PDF de la sección predial.
+
+    Orden:
+      1. Manual override (`data/{estado}/manual_pdf_overrides.csv`) si hay match
+         por (anio, cvegeo). Genera TXT/PDF temporales recortados a las páginas
+         indicadas. P-10 del HITL.
+      2. `focus_predial/{anio}/{prefijo}_PREDIAL_{anio}_{slug}.{txt,pdf}` directo.
+      3. rglob fallback bajo `focus_predial/`.
+    """
+    # 1. Manual override
+    if cvegeo:
+        cvegeo_padded = str(cvegeo).zfill(5)
+        overrides = _load_overrides(estado)
+        ov = overrides.get((anio, cvegeo_padded))
+        if ov:
+            txt, pdf = _apply_pdf_override(estado, prefijo, anio, slug, ov)
+            if txt is not None:
+                return (txt, pdf)
+
+    # 2 + 3. Default behavior
     base = ROOT / "data" / estado / "focus_predial"
     name = f"{prefijo}_PREDIAL_{anio}_{slug}"
     primary = base / str(anio)
@@ -397,6 +541,33 @@ def _format_validation_error(e: ValidationError) -> str:
 
 
 def _call_llm(messages: list[dict], model: str | None = None) -> _LLMCall:
+    """Llamada estándar (text-only) con structured output strict."""
+    return _call_llm_completions(messages, model=model)
+
+
+def _call_llm_vision(
+    system_prompt: str,
+    user_text: str,
+    image_data_urls: list[str],
+    model: str | None = None,
+) -> _LLMCall:
+    """Llamada multimodal: texto + N imágenes (data URLs base64) → JSON estricto.
+
+    Útil cuando el TXT pre-extraído está vacío/corrupto pero el PDF original
+    es legible visualmente. Usa por defecto el modelo de fallback (gpt-5.4)
+    porque mini no soporta vision con la misma fidelidad.
+    """
+    user_content: list[dict] = [{"type": "text", "text": user_text}]
+    for url in image_data_urls:
+        user_content.append({"type": "image_url", "image_url": {"url": url}})
+    messages = [
+        {"role": "system", "content": system_prompt},
+        {"role": "user", "content": user_content},
+    ]
+    return _call_llm_completions(messages, model=model or OPENAI_MODEL_FALLBACK)
+
+
+def _call_llm_completions(messages: list[dict], model: str | None = None) -> _LLMCall:
     client = _get_client()
     schema = _build_openai_schema()
     modelo = model or OPENAI_MODEL
@@ -463,6 +634,94 @@ class ExtractionResult:
     modelo_usado: str = OPENAI_MODEL
     escalado: bool = False
     out_path: Path | None = None
+    fuente: str = "txt"          # "txt" | "pdf_reocr" | "pdf_vision"
+    usado_reocr: bool = False
+    usado_vision: bool = False
+
+
+# ── Cascada re-OCR → visión (rescue para casos con texto fuente vacío/truncado) ──
+
+# Categorías de otro_no_clasificado que indican un problema con la fuente, no con
+# el LLM ni con el documento. Son las únicas que ameritan intentar OCR/vision rescue.
+_RESCUABLE_CATEGORIAS = {"segmento_vacio", "error_segmentacion"}
+
+# Mínima longitud (chars) que el TXT re-OCR debe alcanzar para considerarse "rescatado"
+# y reintentar el LLM. Por debajo de esto asumimos que el OCR no ayudó y pasamos a vision.
+_REOCR_MIN_CHARS = 1500
+_REOCR_IMPROVEMENT_FACTOR = 3.0  # también requerimos ≥3× más que el original
+
+
+def _should_attempt_rescue(result_output: PredialOutputV2 | None) -> bool:
+    """Determina si vale la pena gastar tokens/CPU en OCR/vision rescue."""
+    if result_output is None:
+        return True  # 3 intentos LLM fallaron → rescue es último recurso
+    pred = result_output.predial
+    if not isinstance(pred, OtroNoClasificadoSchema):
+        return False  # Clasificación válida → no tocar
+    return pred.categoria in _RESCUABLE_CATEGORIAS
+
+
+def _attempt_ocr_rescue(
+    pdf_path: Path,
+    estado_pretty: str,
+    municipio_pretty: str,
+    anio: int,
+    texto_original_len: int,
+) -> _LLMCall | None:
+    """Re-OCR agresivo del PDF; si rescata texto, reinvoca el LLM.
+
+    Returns:
+        _LLMCall si el re-OCR produjo texto suficiente Y la nueva llamada
+        valida un esquema NO-otro_no_clasificado. None si no rescata.
+    """
+    from src.core.ocr_utils import aggressive_reocr
+
+    new_text = aggressive_reocr(pdf_path, dpi=600, lang="spa+lat", psm=6)
+    if not new_text or len(new_text) < _REOCR_MIN_CHARS:
+        return None
+    if texto_original_len > 0 and len(new_text) < texto_original_len * _REOCR_IMPROVEMENT_FACTOR:
+        return None
+
+    user_msg = USER_TEMPLATE_V2.format(
+        MUNICIPIO=municipio_pretty,
+        ESTADO=estado_pretty,
+        ANIO=anio,
+        TEXTO=new_text,
+    )
+    messages = [
+        {"role": "system", "content": SYSTEM_PROMPT_V2},
+        {"role": "user", "content": user_msg},
+    ]
+    call = _call_llm(messages, model=OPENAI_MODEL)
+    return call
+
+
+def _attempt_vision_rescue(
+    pdf_path: Path,
+    estado_pretty: str,
+    municipio_pretty: str,
+    anio: int,
+) -> _LLMCall | None:
+    """Envía hasta 6 páginas del PDF como imágenes al modelo full con visión."""
+    from src.core.ocr_utils import pdf_pages_to_base64
+
+    image_urls = pdf_pages_to_base64(pdf_path, pages=None, dpi=150, max_pages=6)
+    if not image_urls:
+        return None
+
+    user_text = (
+        f'Sección "Del Impuesto Predial" del municipio de {municipio_pretty}, '
+        f'{estado_pretty}, ejercicio fiscal {anio}.\n\n'
+        f"El TXT pre-extraído estaba truncado o vacío. Las imágenes adjuntas "
+        f"son las páginas del PDF original (focus_predial). Extrae la mecánica "
+        f"de cálculo del predial siguiendo las reglas del system prompt."
+    )
+    return _call_llm_vision(
+        system_prompt=SYSTEM_PROMPT_V2,
+        user_text=user_text,
+        image_data_urls=image_urls,
+        model=OPENAI_MODEL_FALLBACK,
+    )
 
 
 def _extract_one(
@@ -474,10 +733,11 @@ def _extract_one(
     slug: str,
     municipio_pretty: str,
     prefijo: str,
+    enable_rescue: bool = True,
 ) -> ExtractionResult:
     archivo = f"{prefijo}_PREDIAL_{anio}_{slug}.json"
 
-    txt_path, _pdf_path = _find_focus_paths(estado, prefijo, anio, slug)
+    txt_path, pdf_path = _find_focus_paths(estado, prefijo, anio, slug, cvegeo=cvegeo)
 
     if txt_path is None:
         return ExtractionResult(
@@ -510,79 +770,150 @@ def _extract_one(
     r1 = _call_llm(messages, model=OPENAI_MODEL)
     total_in, total_out, total_cached = r1.tokens_in, r1.tokens_out, r1.tokens_cached
 
-    if r1.output is not None:
-        is_otro = isinstance(r1.output.predial, OtroNoClasificadoSchema)
+    intentos = 1
+    final_call: _LLMCall | None = r1
+    error_history: list[str] = []
+    escalado = False
+
+    if r1.output is None:
+        # Retry con mini + error específico
+        error_history.append(f"mini_e1={r1.error}")
+        retry_msg = USER_RETRY_TEMPLATE.format(ERROR=r1.error, TEXTO=texto)
+        messages_retry = [
+            {"role": "system", "content": SYSTEM_PROMPT_V2},
+            {"role": "user", "content": retry_msg},
+        ]
+        r2 = _call_llm(messages_retry, model=OPENAI_MODEL)
+        total_in += r2.tokens_in; total_out += r2.tokens_out; total_cached += r2.tokens_cached
+        intentos = 2
+        final_call = r2
+
+        if r2.output is None:
+            # Escalación: tercer intento con modelo de fallback (gpt-5.4 full).
+            error_history.append(f"mini_e2={r2.error}")
+            escalation_msg = USER_RETRY_TEMPLATE.format(
+                ERROR=(f"Intento previo (mini) falló con: {r2.error}\n"
+                       f"Intento aún anterior falló con: {r1.error}"),
+                TEXTO=texto,
+            )
+            messages_escalate = [
+                {"role": "system", "content": SYSTEM_PROMPT_V2},
+                {"role": "user", "content": escalation_msg},
+            ]
+            r3 = _call_llm(messages_escalate, model=OPENAI_MODEL_FALLBACK)
+            total_in += r3.tokens_in; total_out += r3.tokens_out; total_cached += r3.tokens_cached
+            intentos = 3
+            final_call = r3
+            escalado = True
+
+            if r3.output is None:
+                error_history.append(f"full_e3={r3.error}")
+
+    # ── Cascada de rescate (re-OCR → visión) ──
+    fuente = "txt"
+    usado_reocr = False
+    usado_vision = False
+
+    if (
+        enable_rescue
+        and pdf_path is not None
+        and _should_attempt_rescue(final_call.output if final_call else None)
+    ):
+        # Re-OCR rescue
+        try:
+            r_reocr = _attempt_ocr_rescue(
+                pdf_path=pdf_path,
+                estado_pretty=estado_pretty,
+                municipio_pretty=municipio_pretty,
+                anio=anio,
+                texto_original_len=len(texto),
+            )
+        except Exception as e:
+            r_reocr = None
+            error_history.append(f"reocr_exception={type(e).__name__}: {e}")
+
+        if r_reocr is not None:
+            usado_reocr = True
+            total_in += r_reocr.tokens_in
+            total_out += r_reocr.tokens_out
+            total_cached += r_reocr.tokens_cached
+            # Aceptar el rescue solo si validó Y no es otro_no_clasificado
+            if r_reocr.output is not None:
+                is_otro = isinstance(r_reocr.output.predial, OtroNoClasificadoSchema)
+                if not is_otro:
+                    final_call = r_reocr
+                    fuente = "pdf_reocr"
+                    intentos += 1
+                else:
+                    error_history.append("reocr_devolvió_otro_no_clasificado")
+            else:
+                error_history.append(f"reocr_invalid={r_reocr.error}")
+
+        # Vision rescue (si re-OCR no rescató)
+        if fuente == "txt":
+            try:
+                r_vision = _attempt_vision_rescue(
+                    pdf_path=pdf_path,
+                    estado_pretty=estado_pretty,
+                    municipio_pretty=municipio_pretty,
+                    anio=anio,
+                )
+            except Exception as e:
+                r_vision = None
+                error_history.append(f"vision_exception={type(e).__name__}: {e}")
+
+            if r_vision is not None:
+                usado_vision = True
+                total_in += r_vision.tokens_in
+                total_out += r_vision.tokens_out
+                total_cached += r_vision.tokens_cached
+                if r_vision.output is not None:
+                    is_otro = isinstance(r_vision.output.predial, OtroNoClasificadoSchema)
+                    if not is_otro:
+                        final_call = r_vision
+                        fuente = "pdf_vision"
+                        escalado = True  # vision usa modelo full
+                        intentos += 1
+                    else:
+                        error_history.append("vision_devolvió_otro_no_clasificado")
+                else:
+                    error_history.append(f"vision_invalid={r_vision.error}")
+
+    # ── Construcción del ExtractionResult final ──
+    if final_call is not None and final_call.output is not None:
+        is_otro = isinstance(final_call.output.predial, OtroNoClasificadoSchema)
+        if fuente == "pdf_reocr":
+            razon = "rescate_via_reocr"
+        elif fuente == "pdf_vision":
+            razon = "rescate_via_vision"
+        elif is_otro:
+            razon = "clasificado_como_otro_no_clasificado"
+        elif escalado:
+            razon = f"escalado_a_{OPENAI_MODEL_FALLBACK}_tras_2x_mini_fallido"
+        else:
+            razon = None
+
         return ExtractionResult(
             estado=estado, cvegeo=cvegeo, anio=anio, slug=slug, archivo=archivo,
-            output=r1.output,
-            requiere_revision=is_otro,
-            razon=("clasificado_como_otro_no_clasificado" if is_otro else None),
-            tokens_in=total_in, tokens_out=total_out, tokens_cached=total_cached,
-            intentos=1, modelo_usado=r1.modelo, escalado=False,
-        )
-
-    # Retry con mini + error específico
-    retry_msg = USER_RETRY_TEMPLATE.format(ERROR=r1.error, TEXTO=texto)
-    messages_retry = [
-        {"role": "system", "content": SYSTEM_PROMPT_V2},
-        {"role": "user", "content": retry_msg},
-    ]
-    r2 = _call_llm(messages_retry, model=OPENAI_MODEL)
-    total_in += r2.tokens_in
-    total_out += r2.tokens_out
-    total_cached += r2.tokens_cached
-
-    if r2.output is not None:
-        is_otro = isinstance(r2.output.predial, OtroNoClasificadoSchema)
-        return ExtractionResult(
-            estado=estado, cvegeo=cvegeo, anio=anio, slug=slug, archivo=archivo,
-            output=r2.output,
-            requiere_revision=is_otro,
-            razon=("clasificado_como_otro_no_clasificado" if is_otro else None),
-            tokens_in=total_in, tokens_out=total_out, tokens_cached=total_cached,
-            intentos=2, modelo_usado=r2.modelo, escalado=False,
-        )
-
-    # Escalación: tercer intento con modelo de fallback (gpt-5.4 full).
-    escalation_msg = USER_RETRY_TEMPLATE.format(
-        ERROR=f"Intento previo (mini) falló con: {r2.error}\nIntento aún anterior falló con: {r1.error}",
-        TEXTO=texto,
-    )
-    messages_escalate = [
-        {"role": "system", "content": SYSTEM_PROMPT_V2},
-        {"role": "user", "content": escalation_msg},
-    ]
-    r3 = _call_llm(messages_escalate, model=OPENAI_MODEL_FALLBACK)
-    total_in += r3.tokens_in
-    total_out += r3.tokens_out
-    total_cached += r3.tokens_cached
-
-    if r3.output is not None:
-        is_otro = isinstance(r3.output.predial, OtroNoClasificadoSchema)
-        razon = (
-            "clasificado_como_otro_no_clasificado_tras_escalacion"
-            if is_otro
-            else f"escalado_a_{OPENAI_MODEL_FALLBACK}_tras_2x_mini_fallido"
-        )
-        return ExtractionResult(
-            estado=estado, cvegeo=cvegeo, anio=anio, slug=slug, archivo=archivo,
-            output=r3.output,
+            output=final_call.output,
             requiere_revision=is_otro,
             razon=razon,
             tokens_in=total_in, tokens_out=total_out, tokens_cached=total_cached,
-            intentos=3, modelo_usado=r3.modelo, escalado=True,
+            intentos=intentos, modelo_usado=final_call.modelo, escalado=escalado,
+            fuente=fuente, usado_reocr=usado_reocr, usado_vision=usado_vision,
         )
 
+    # Todo falló
     return ExtractionResult(
         estado=estado, cvegeo=cvegeo, anio=anio, slug=slug, archivo=archivo,
         output=None,
         requiere_revision=True,
-        razon=(
-            f"valido_3x_fallido | mini_e1={r1.error} | "
-            f"mini_e2={r2.error} | full_e3={r3.error}"
-        ),
+        razon="valido_3x_fallido | " + " | ".join(error_history),
         tokens_in=total_in, tokens_out=total_out, tokens_cached=total_cached,
-        intentos=3, modelo_usado=r3.modelo, escalado=True,
+        intentos=intentos,
+        modelo_usado=final_call.modelo if final_call else OPENAI_MODEL,
+        escalado=escalado,
+        fuente=fuente, usado_reocr=usado_reocr, usado_vision=usado_vision,
     )
 
 
@@ -597,7 +928,7 @@ def _save_result(result: ExtractionResult) -> Path:
         payload = {"predial": None, "_meta": None}
 
     payload["_meta"] = {
-        "fuente": "txt",
+        "fuente": result.fuente,
         "modelo": result.modelo_usado,
     }
     payload["_meta_v2"] = {
@@ -605,6 +936,8 @@ def _save_result(result: ExtractionResult) -> Path:
         "requiere_revision": result.requiere_revision,
         "escalado": result.escalado,
         "razon": result.razon,
+        "usado_reocr": result.usado_reocr,
+        "usado_vision": result.usado_vision,
         "tokens": {
             "input": result.tokens_in,
             "output": result.tokens_out,
@@ -674,9 +1007,15 @@ def extraer_municipio(
         tipo = r.output.predial.tipo_esquema if r.output else "—"
         flag = "  [REVISAR]" if r.requiere_revision else ""
         esc = f"  [ESCALADO→{r.modelo_usado}]" if r.escalado else ""
+        rescue = ""
+        if r.usado_vision:
+            rescue = "  [VISION]"
+        elif r.usado_reocr:
+            rescue = "  [REOCR]"
         print(
-            f"    tipo={tipo:25s}  intentos={r.intentos}  "
-            f"tokens(in={r.tokens_in}, out={r.tokens_out}, cached={r.tokens_cached}){esc}{flag}"
+            f"    tipo={tipo:25s}  intentos={r.intentos}  fuente={r.fuente}  "
+            f"tokens(in={r.tokens_in}, out={r.tokens_out}, cached={r.tokens_cached})"
+            f"{esc}{rescue}{flag}"
         )
         if r.razon:
             print(f"    razon: {r.razon}")

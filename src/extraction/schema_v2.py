@@ -65,7 +65,14 @@ class MetaExtraccion(BaseModel):
     """Metadata de la extracción LLM. Incluida en cada JSON de salida."""
     model_config = ConfigDict(extra="forbid")
 
-    fuente: Literal["txt", "pdf_vision"] = Field(description="Fuente usada para la extracción")
+    fuente: Literal["txt", "pdf_reocr", "pdf_vision"] = Field(
+        description=(
+            "Fuente del texto enviado al LLM. txt = TXT pre-extraído del "
+            "focus_predial. pdf_reocr = re-OCR agresivo del PDF cuando el "
+            "TXT pre-extraído estaba truncado/vacío. pdf_vision = mensaje "
+            "multimodal con páginas del PDF rasterizadas."
+        ),
+    )
     modelo: str = Field(description="Modelo LLM usado (ej: gpt-5.2)")
 
 
