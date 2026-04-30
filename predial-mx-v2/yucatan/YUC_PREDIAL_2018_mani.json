@@ -46,7 +46,7 @@
       }
     ],
     "minimo_predial": null,
-    "comentarios": "Art. 13: tarifa principal del impuesto predial por valor catastral con cuota fija anual y factor para aplicar al excedente del límite inferior. Se transcriben los brackets con tasas marginales; los primeros cuatro renglones tienen factor 0%. Tarifa paralela adicional: predios destinados a la producción agropecuaria pagan 10 al millar anual sobre el valor registrado o catastral, con tope conforme a la legislación agraria federal para terrenos ejidales; no se incluye en la tabla principal por ser una tarifa separada. También aparecen gravámenes sobre rentas o frutos civiles (2% habitacional y comercial), que se ignoran por instrucción."
+    "comentarios": "Art. 13: tarifa principal del impuesto predial por rangos de valor catastral con cuota fija anual y factor para aplicar al excedente del límite inferior. Tarifas secundarias no estructurales: predios destinados a la producción agropecuaria pagan 10 al millar anual sobre el valor registrado o catastral; el impuesto con base en rentas o frutos civiles se causa con 2% sobre la renta o frutos civiles mensuales para predio habitacional y 2% para predio comercial. Se ignoran descuentos del Art. 14."
   },
   "_meta": {
     "fuente": "txt",
@@ -57,10 +57,12 @@
     "requiere_revision": false,
     "escalado": false,
     "razon": null,
+    "usado_reocr": false,
+    "usado_vision": false,
     "tokens": {
-      "input": 6220,
-      "output": 396,
-      "cached": 3840
+      "input": 7437,
+      "output": 372,
+      "cached": 5888
     },
     "cvegeo": "31047",
     "estado": "yucatan",

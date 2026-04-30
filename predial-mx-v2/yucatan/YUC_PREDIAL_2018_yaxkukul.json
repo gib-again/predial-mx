@@ -3,14 +3,15 @@
     "tipo_esquema": "tasa_unica",
     "tabla": [
       {
-        "descripcion": "Impuesto predial sobre el valor catastral",
-        "tasa": 0.002,
+        "descripcion": "Tasa general del impuesto predial sobre el valor catastral",
+        "tasa": 0.2,
         "base_calculo": "valor_catastral",
-        "unidad": "porcentaje"
+        "unidad": "porcentaje",
+        "cuota_fija_adicional": null
       }
     ],
     "minimo_predial": null,
-    "comentarios": "Artículo 13: el impuesto predial se determina aplicando la tasa del 0.20% sobre el valor catastral. Si no se pudiera determinar el valor catastral, se cobra cuota fija: predio urbano 50.00 pesos y predio rústico 30.00 pesos. Artículo 15 establece una tarifa paralela para todo predio destinado a la producción agropecuaria de 10 al millar anual sobre el valor registrado o catastral; no se incluye en la tabla principal por ser tarifa separada para un grupo distinto. Se ignoran las tablas de valores unitarios de terreno y construcción del artículo 14 por ser de catastro, no tarifa del impuesto predial; también se ignora el impuesto con base en rentas o frutos civiles por instrucción."
+    "comentarios": "Artículo 13 establece como mecánica principal una tasa única de 0.20% sobre el valor catastral. Si no se pudiera determinar el valor catastral, se cobrará cuota fija: predio urbano $50.00 y predio rústico $30.00. Artículo 15 prevé una tarifa paralela para predios destinados a la producción agropecuaria de 10 al millar anual sobre el valor registrado o catastral, y además señala impuesto con base en rentas o frutos civiles mensuales de 4% para predios habitación y 4% para predios comerciales; se documentan solo en comentarios por no ser la mecánica principal. Artículo 14 contiene tablas de valores unitarios de terreno y construcción para cálculo catastral, no una tarifa del impuesto predial."
   },
   "_meta": {
     "fuente": "txt",
@@ -21,10 +22,12 @@
     "requiere_revision": false,
     "escalado": true,
     "razon": "escalado_a_gpt-5.4_tras_2x_mini_fallido",
+    "usado_reocr": false,
+    "usado_vision": false,
     "tokens": {
-      "input": 19170,
-      "output": 845,
-      "cached": 13568
+      "input": 23243,
+      "output": 852,
+      "cached": 17664
     },
     "cvegeo": "31105",
     "estado": "yucatan",

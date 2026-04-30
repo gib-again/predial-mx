@@ -1,88 +1,52 @@
 {
   "predial": {
-    "tipo_esquema": "mixto",
+    "tipo_esquema": "progresivo",
     "tabla": [
       {
         "n_rango": 1,
         "inferior": 0.01,
         "superior": 139981.64,
-        "columnas": [
-          {
-            "nombre": "urbano_suburbano_con_edificaciones",
-            "valor": 0.0024,
-            "tipo": "tasa_marginal",
-            "unidad": "porcentaje"
-          }
-        ]
+        "cuota_fija": 0.0,
+        "tasa_marginal": 0.0024
       },
       {
         "n_rango": 2,
         "inferior": 139981.65,
         "superior": 300000.0,
-        "columnas": [
-          {
-            "nombre": "urbano_suburbano_con_edificaciones",
-            "valor": 0.00255,
-            "tipo": "tasa_marginal",
-            "unidad": "porcentaje"
-          }
-        ]
+        "cuota_fija": 335.95,
+        "tasa_marginal": 0.00255
       },
       {
         "n_rango": 3,
         "inferior": 300000.01,
         "superior": 600000.0,
-        "columnas": [
-          {
-            "nombre": "urbano_suburbano_con_edificaciones",
-            "valor": 0.0027,
-            "tipo": "tasa_marginal",
-            "unidad": "porcentaje"
-          }
-        ]
+        "cuota_fija": 692.9,
+        "tasa_marginal": 0.0027
       },
       {
         "n_rango": 4,
         "inferior": 600000.01,
         "superior": 1200000.0,
-        "columnas": [
-          {
-            "nombre": "urbano_suburbano_con_edificaciones",
-            "valor": 0.00285,
-            "tipo": "tasa_marginal",
-            "unidad": "porcentaje"
-          }
-        ]
+        "cuota_fija": 1502.9,
+        "tasa_marginal": 0.00285
       },
       {
         "n_rango": 5,
         "inferior": 1200000.01,
         "superior": 2400000.0,
-        "columnas": [
-          {
-            "nombre": "urbano_suburbano_con_edificaciones",
-            "valor": 0.003,
-            "tipo": "tasa_marginal",
-            "unidad": "porcentaje"
-          }
-        ]
+        "cuota_fija": 3212.9,
+        "tasa_marginal": 0.003
       },
       {
         "n_rango": 6,
         "inferior": 2400000.01,
         "superior": null,
-        "columnas": [
-          {
-            "nombre": "urbano_suburbano_con_edificaciones",
-            "valor": 0.00315,
-            "tipo": "tasa_marginal",
-            "unidad": "porcentaje"
-          }
-        ]
+        "cuota_fija": 6812.9,
+        "tasa_marginal": 0.00315
       }
     ],
     "minimo_predial": null,
-    "comentarios": "Art. 4 fracción I, inciso a: tabla de inmuebles urbanos y suburbanos con edificaciones determinada por rangos de valor fiscal; la ley describe cuota fija + impuesto marginal, por lo que la estructura es progresiva. Además, el Art. 4 fracción IV establece tarifas paralelas para inmuebles con valores anteriores a 2002 y hasta 1993 inclusive (8/15/6 al millar y 13/12 al millar según urbano/suburbano/rústico), pero no se incorporan en la tabla principal por ser un régimen separado. También existe una fracción IV con tarifas paralelas, no acumulables, para inmuebles urbanos y suburbanos sin edificaciones y rústicos con valores determinados o modificados durante años específicos."
+    "comentarios": "Art. 4, fracción I: inmuebles urbanos y suburbanos con edificaciones con valores determinados o modificados durante 2002-2020. La ley establece cuota fija + impuesto marginal sobre el excedente. Se transcribe sólo esta tabla principal; las fracciones IV y demás tablas constituyen tarifas paralelas o valores de catastro no clasificados aquí. Art. 4, fracción II: urbanos y suburbanos sin edificaciones pagan otra tabla progresiva separada. Art. 4, fracción III: inmuebles rústicos pagan otra tabla progresiva separada. Art. 4, fracción IV: existen tasas distintas para inmuebles con valores anteriores a 2002 y a 1993, separadas por urbano/suburbano y rústico."
   },
   "_meta": {
     "fuente": "txt",
@@ -93,10 +57,12 @@
     "requiere_revision": false,
     "escalado": false,
     "razon": null,
+    "usado_reocr": false,
+    "usado_vision": false,
     "tokens": {
-      "input": 8176,
-      "output": 544,
-      "cached": 3840
+      "input": 9393,
+      "output": 448,
+      "cached": 5888
     },
     "cvegeo": "11021",
     "estado": "guanajuato",

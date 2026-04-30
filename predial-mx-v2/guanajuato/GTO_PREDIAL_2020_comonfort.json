@@ -4,31 +4,39 @@
     "tabla": [
       {
         "grupo": "urbano",
-        "clave": "urbanos_y_suburbanos_con_valor_determinado_o_modificado",
-        "descripcion": "Inmuebles urbanos y suburbanos con un valor determinado o modificado, con edificaciones",
-        "tasa_millar": 0.0018,
+        "clave": "general_urbano_suburbano",
+        "descripcion": "Inmuebles urbanos y suburbanos con valor determinado o modificado",
+        "tasa_millar": 1.8,
         "periodicidad": "anual",
         "cuota_fija_adicional": null
       },
       {
         "grupo": "urbano",
-        "clave": "urbanos_y_suburbanos_con_valor_determinado_o_modificado_sin_edificaciones",
-        "descripcion": "Inmuebles urbanos y suburbanos con un valor determinado o modificado, sin edificaciones",
-        "tasa_millar": 0.0024,
+        "clave": "urbano_suburbano_anteriores_2002_2019",
+        "descripcion": "Inmuebles urbanos y suburbanos con edificaciones con anterioridad al año 2002 y hasta el 2019, inclusive",
+        "tasa_millar": 1.8,
         "periodicidad": "anual",
         "cuota_fija_adicional": null
       },
       {
-        "grupo": "rustico",
-        "clave": "rusticos_con_valor_determinado_o_modificado",
-        "descripcion": "Inmuebles rústicos con un valor determinado o modificado",
-        "tasa_millar": 0.0018,
+        "grupo": "urbano",
+        "clave": "urbano_suburbano_anteriores_1993_2001",
+        "descripcion": "Inmuebles urbanos y suburbanos con edificaciones con anterioridad al año 1993 y hasta el 2001, inclusive",
+        "tasa_millar": 2.4,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "urbano",
+        "clave": "urbano_suburbano_anteriores_1993",
+        "descripcion": "Inmuebles urbanos y suburbanos con edificaciones con anterioridad al año 1993",
+        "tasa_millar": 4.0,
         "periodicidad": "anual",
         "cuota_fija_adicional": null
       }
     ],
     "minimo_predial": null,
-    "comentarios": "Art. 4 establece tasas anuales al millar para predios urbanos y suburbanos con valor determinado o modificado: 1.8 al millar con edificaciones y 2.4 al millar sin edificaciones; para inmuebles rústicos con valor determinado o modificado, 1.8 al millar. El resto del texto son tablas de valores unitarios de catastro (terreno/construcción) y criterios de valuación, no mecánica tarifaria adicional."
+    "comentarios": "Art. 4: tasas anuales para inmuebles urbanos y suburbanos según antigüedad/condición de edificación: 1.8 al millar para inmuebles con valor determinado o modificado; 1.8 al millar para edificaciones de 2002 a 2019; 2.4 al millar para edificaciones anteriores a 2002 y hasta 1993; 4 al millar para edificaciones anteriores a 1993. Art. 5, fracción II: predios rústicos se valoran con tablas de hectáreas y factores agrológicos, pero en el texto remitido no aparece una tasa predial distinta para rústicos; no se traslada a la tabla principal."
   },
   "_meta": {
     "fuente": "txt",
@@ -39,10 +47,12 @@
     "requiere_revision": false,
     "escalado": false,
     "razon": null,
+    "usado_reocr": false,
+    "usado_vision": false,
     "tokens": {
-      "input": 7589,
-      "output": 350,
-      "cached": 3840
+      "input": 8806,
+      "output": 474,
+      "cached": 5888
     },
     "cvegeo": "11009",
     "estado": "guanajuato",

@@ -1,63 +1,143 @@
 {
   "predial": {
-    "tipo_esquema": "progresivo",
+    "tipo_esquema": "mixto",
     "tabla": [
       {
         "n_rango": 1,
         "inferior": 0.01,
         "superior": 4000.0,
-        "cuota_fija": 4.0,
-        "tasa_marginal": 0.00075
+        "columnas": [
+          {
+            "nombre": "general",
+            "valor": 4.0,
+            "tipo": "cuota_fija",
+            "unidad": "pesos"
+          },
+          {
+            "nombre": "general",
+            "valor": 0.00075,
+            "tipo": "tasa_marginal",
+            "unidad": "al_millar"
+          }
+        ]
       },
       {
         "n_rango": 2,
-        "inferior": 4001.0,
+        "inferior": 4000.0,
         "superior": 5500.0,
-        "cuota_fija": 7.0,
-        "tasa_marginal": 0.002
+        "columnas": [
+          {
+            "nombre": "general",
+            "valor": 7.0,
+            "tipo": "cuota_fija",
+            "unidad": "pesos"
+          },
+          {
+            "nombre": "general",
+            "valor": 0.002,
+            "tipo": "tasa_marginal",
+            "unidad": "al_millar"
+          }
+        ]
       },
       {
         "n_rango": 3,
-        "inferior": 5501.0,
+        "inferior": 5500.0,
         "superior": 6500.0,
-        "cuota_fija": 10.0,
-        "tasa_marginal": 0.003
+        "columnas": [
+          {
+            "nombre": "general",
+            "valor": 10.0,
+            "tipo": "cuota_fija",
+            "unidad": "pesos"
+          },
+          {
+            "nombre": "general",
+            "valor": 0.003,
+            "tipo": "tasa_marginal",
+            "unidad": "al_millar"
+          }
+        ]
       },
       {
         "n_rango": 4,
-        "inferior": 6501.0,
+        "inferior": 6500.0,
         "superior": 7500.0,
-        "cuota_fija": 13.0,
-        "tasa_marginal": 0.003
+        "columnas": [
+          {
+            "nombre": "general",
+            "valor": 13.0,
+            "tipo": "cuota_fija",
+            "unidad": "pesos"
+          },
+          {
+            "nombre": "general",
+            "valor": 0.003,
+            "tipo": "tasa_marginal",
+            "unidad": "al_millar"
+          }
+        ]
       },
       {
         "n_rango": 5,
-        "inferior": 7501.0,
+        "inferior": 7500.0,
         "superior": 8500.0,
-        "cuota_fija": 16.0,
-        "tasa_marginal": 0.004
+        "columnas": [
+          {
+            "nombre": "general",
+            "valor": 16.0,
+            "tipo": "cuota_fija",
+            "unidad": "pesos"
+          },
+          {
+            "nombre": "general",
+            "valor": 0.004,
+            "tipo": "tasa_marginal",
+            "unidad": "al_millar"
+          }
+        ]
       },
       {
         "n_rango": 6,
-        "inferior": 8501.0,
+        "inferior": 8500.0,
         "superior": 10000.0,
-        "cuota_fija": 20.0,
-        "tasa_marginal": 0.00133
+        "columnas": [
+          {
+            "nombre": "general",
+            "valor": 20.0,
+            "tipo": "cuota_fija",
+            "unidad": "pesos"
+          },
+          {
+            "nombre": "general",
+            "valor": 0.00133,
+            "tipo": "tasa_marginal",
+            "unidad": "al_millar"
+          }
+        ]
       },
       {
         "n_rango": 7,
-        "inferior": 10001.0,
+        "inferior": 10000.0,
         "superior": null,
-        "cuota_fija": 22.0,
-        "tasa_marginal": 0.0025
+        "columnas": [
+          {
+            "nombre": "general",
+            "valor": 22.0,
+            "tipo": "cuota_fija",
+            "unidad": "pesos"
+          },
+          {
+            "nombre": "general",
+            "valor": 0.0025,
+            "tipo": "tasa_marginal",
+            "unidad": "al_millar"
+          }
+        ]
       }
     ],
-    "minimo_predial": {
-      "monto": 90.0,
-      "periodicidad": "anual",
-      "unidad": "pesos"
-    },
-    "comentarios": "Art. 4: se transcribe la tarifa del impuesto predial con base en valor catastral como esquema progresivo de cuota fija + factor sobre el excedente. Tarifas paralelas no incluidas en la tabla principal: (1) predios rústicos por superficie: 1-20 m2 $200, 21-40 m2 $300, 41 m2 en adelante $400; (2) cuando el predial se determine con base en el valor catastral de inmuebles rústicos, cuota fija anual de $90 por predio; (3) predial sobre rentas o frutos civiles: habitacional 4% mensual, comercial 5% mensual, radio base de telefonía 5% mensual. Se ignoran descuentos."
+    "minimo_predial": null,
+    "comentarios": "Art. 4: tarifa principal por valor catastral con cuota fija + factor sobre el excedente en 7 rangos. Además, Art. 4 establece para predios rústicos una tarifa paralela por superficie: $206/ha brecha, $413/ha camino blanco y $620/ha carretera; y una cuota fija anual de $90 cuando el predio se determine con base en valor catastral. Art. 7: cuando el impuesto se cause sobre rentas o frutos civiles, se paga mensualmente 4% habitacional, 5% comercial y 5% para radio base de telefonía; se documenta como tarifa secundaria no predominante."
   },
   "_meta": {
     "fuente": "txt",
@@ -68,10 +148,12 @@
     "requiere_revision": false,
     "escalado": false,
     "razon": null,
+    "usado_reocr": false,
+    "usado_vision": false,
     "tokens": {
-      "input": 6288,
-      "output": 466,
-      "cached": 3840
+      "input": 7505,
+      "output": 661,
+      "cached": 5888
     },
     "cvegeo": "31009",
     "estado": "yucatan",

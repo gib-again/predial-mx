@@ -1,18 +1,240 @@
 {
   "predial": {
-    "tipo_esquema": "tarifa_millar",
+    "tipo_esquema": "mixto",
     "tabla": [
       {
-        "grupo": "general",
-        "clave": "agropecuario",
-        "descripcion": "Predios destinados a la producción agropecuaria",
-        "tasa_millar": 0.01,
-        "periodicidad": "anual",
-        "cuota_fija_adicional": null
+        "n_rango": 1,
+        "inferior": 0.0,
+        "superior": 200000.0,
+        "columnas": [
+          {
+            "nombre": "habitacional_terreno_urbano",
+            "valor": 357.0,
+            "tipo": "cuota_fija",
+            "unidad": "pesos"
+          },
+          {
+            "nombre": "media_terreno_urbano",
+            "valor": 179.0,
+            "tipo": "cuota_fija",
+            "unidad": "pesos"
+          },
+          {
+            "nombre": "periferia_terreno_urbano",
+            "valor": 98.0,
+            "tipo": "cuota_fija",
+            "unidad": "pesos"
+          },
+          {
+            "nombre": "rustico_brecha",
+            "valor": 750.0,
+            "tipo": "cuota_fija",
+            "unidad": "pesos"
+          },
+          {
+            "nombre": "rustico_camino_blanco",
+            "valor": 1600.0,
+            "tipo": "cuota_fija",
+            "unidad": "pesos"
+          },
+          {
+            "nombre": "rustico_carretera",
+            "valor": 2100.0,
+            "tipo": "cuota_fija",
+            "unidad": "pesos"
+          },
+          {
+            "nombre": "construccion_concreto_centro",
+            "valor": 4320.0,
+            "tipo": "cuota_fija",
+            "unidad": "pesos"
+          },
+          {
+            "nombre": "construccion_concreto_media",
+            "valor": 2916.0,
+            "tipo": "cuota_fija",
+            "unidad": "pesos"
+          },
+          {
+            "nombre": "construccion_concreto_periferia",
+            "valor": 1620.0,
+            "tipo": "cuota_fija",
+            "unidad": "pesos"
+          },
+          {
+            "nombre": "construccion_hierro_y_rollizos_centro",
+            "valor": 3240.0,
+            "tipo": "cuota_fija",
+            "unidad": "pesos"
+          },
+          {
+            "nombre": "construccion_hierro_y_rollizos_media",
+            "valor": 1620.0,
+            "tipo": "cuota_fija",
+            "unidad": "pesos"
+          },
+          {
+            "nombre": "construccion_hierro_y_rollizos_periferia",
+            "valor": 1080.0,
+            "tipo": "cuota_fija",
+            "unidad": "pesos"
+          },
+          {
+            "nombre": "construccion_zinc_asbesto_teja_centro",
+            "valor": 1080.0,
+            "tipo": "cuota_fija",
+            "unidad": "pesos"
+          },
+          {
+            "nombre": "construccion_zinc_asbesto_teja_media",
+            "valor": 540.0,
+            "tipo": "cuota_fija",
+            "unidad": "pesos"
+          },
+          {
+            "nombre": "construccion_zinc_asbesto_teja_periferia",
+            "valor": 378.0,
+            "tipo": "cuota_fija",
+            "unidad": "pesos"
+          },
+          {
+            "nombre": "construccion_carton_y_paja_centro",
+            "valor": 432.0,
+            "tipo": "cuota_fija",
+            "unidad": "pesos"
+          },
+          {
+            "nombre": "construccion_carton_y_paja_media",
+            "valor": 324.0,
+            "tipo": "cuota_fija",
+            "unidad": "pesos"
+          },
+          {
+            "nombre": "construccion_carton_y_paja_periferia",
+            "valor": 216.0,
+            "tipo": "cuota_fija",
+            "unidad": "pesos"
+          }
+        ]
+      },
+      {
+        "n_rango": 2,
+        "inferior": 200000.01,
+        "superior": null,
+        "columnas": [
+          {
+            "nombre": "habitacional_terreno_urbano",
+            "valor": 357.0,
+            "tipo": "cuota_fija",
+            "unidad": "pesos"
+          },
+          {
+            "nombre": "media_terreno_urbano",
+            "valor": 179.0,
+            "tipo": "cuota_fija",
+            "unidad": "pesos"
+          },
+          {
+            "nombre": "periferia_terreno_urbano",
+            "valor": 98.0,
+            "tipo": "cuota_fija",
+            "unidad": "pesos"
+          },
+          {
+            "nombre": "rustico_brecha",
+            "valor": 750.0,
+            "tipo": "cuota_fija",
+            "unidad": "pesos"
+          },
+          {
+            "nombre": "rustico_camino_blanco",
+            "valor": 1600.0,
+            "tipo": "cuota_fija",
+            "unidad": "pesos"
+          },
+          {
+            "nombre": "rustico_carretera",
+            "valor": 2100.0,
+            "tipo": "cuota_fija",
+            "unidad": "pesos"
+          },
+          {
+            "nombre": "construccion_concreto_centro",
+            "valor": 4320.0,
+            "tipo": "cuota_fija",
+            "unidad": "pesos"
+          },
+          {
+            "nombre": "construccion_concreto_media",
+            "valor": 2916.0,
+            "tipo": "cuota_fija",
+            "unidad": "pesos"
+          },
+          {
+            "nombre": "construccion_concreto_periferia",
+            "valor": 1620.0,
+            "tipo": "cuota_fija",
+            "unidad": "pesos"
+          },
+          {
+            "nombre": "construccion_hierro_y_rollizos_centro",
+            "valor": 3240.0,
+            "tipo": "cuota_fija",
+            "unidad": "pesos"
+          },
+          {
+            "nombre": "construccion_hierro_y_rollizos_media",
+            "valor": 1620.0,
+            "tipo": "cuota_fija",
+            "unidad": "pesos"
+          },
+          {
+            "nombre": "construccion_hierro_y_rollizos_periferia",
+            "valor": 1080.0,
+            "tipo": "cuota_fija",
+            "unidad": "pesos"
+          },
+          {
+            "nombre": "construccion_zinc_asbesto_teja_centro",
+            "valor": 1080.0,
+            "tipo": "cuota_fija",
+            "unidad": "pesos"
+          },
+          {
+            "nombre": "construccion_zinc_asbesto_teja_media",
+            "valor": 540.0,
+            "tipo": "cuota_fija",
+            "unidad": "pesos"
+          },
+          {
+            "nombre": "construccion_zinc_asbesto_teja_periferia",
+            "valor": 378.0,
+            "tipo": "cuota_fija",
+            "unidad": "pesos"
+          },
+          {
+            "nombre": "construccion_carton_y_paja_centro",
+            "valor": 432.0,
+            "tipo": "cuota_fija",
+            "unidad": "pesos"
+          },
+          {
+            "nombre": "construccion_carton_y_paja_media",
+            "valor": 324.0,
+            "tipo": "cuota_fija",
+            "unidad": "pesos"
+          },
+          {
+            "nombre": "construccion_carton_y_paja_periferia",
+            "valor": 216.0,
+            "tipo": "cuota_fija",
+            "unidad": "pesos"
+          }
+        ]
       }
     ],
     "minimo_predial": null,
-    "comentarios": "Art. 14: predios destinados a la producción agropecuaria pagan 10 al millar anual sobre el valor registrado o catastral. No se clasifica la tabla de valores unitarios de terreno y construcción del Art. 13 porque corresponde a catastro/base de cálculo, no a tarifa del impuesto. También se menciona una tabla de tarifas sobre rentas o frutos civiles (5% habitación y 5% comerciales), pero eso no es predial base valor catastral y se excluye de la mecánica principal."
+    "comentarios": "Art. 13 no establece una tarifa del impuesto predial por valor catastral sino tablas de valores unitarios de terreno y construcción para integrar el valor catastral. Se transcriben como estructura mixta porque hay rangos por valor ($0 a $200,000 y en adelante) pero las columnas contienen valores unitarios de catastro, no una mecánica tarifaria directa del impuesto. Art. 14 establece una tarifa paralela: predios destinados a producción agropecuaria pagan 10 al millar anual sobre el valor registrado o catastral. Art. 14 también contiene otra tarifa paralela sobre rentas o frutos civiles mensuales (5% habitación y 5% comerciales), que no se incluye en la tabla principal por ser una mecánica distinta y secundaria respecto del predial base valor catastral."
   },
   "_meta": {
     "fuente": "txt",
@@ -23,10 +245,12 @@
     "requiere_revision": false,
     "escalado": false,
     "razon": null,
+    "usado_reocr": false,
+    "usado_vision": false,
     "tokens": {
-      "input": 6216,
-      "output": 203,
-      "cached": 3840
+      "input": 7433,
+      "output": 1287,
+      "cached": 5888
     },
     "cvegeo": "31105",
     "estado": "yucatan",

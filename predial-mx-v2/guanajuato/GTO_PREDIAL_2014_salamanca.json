@@ -4,16 +4,16 @@
     "tabla": [
       {
         "grupo": "urbano",
-        "clave": "urbano_con_construccion",
-        "descripcion": "Inmuebles urbanos y suburbanos con construcción, a la entrada en vigor de la presente Ley",
+        "clave": "urbano_con_edificaciones",
+        "descripcion": "Inmuebles urbanos y suburbanos con edificaciones",
         "tasa_millar": 0.0025,
         "periodicidad": "anual",
         "cuota_fija_adicional": null
       },
       {
         "grupo": "urbano",
-        "clave": "urbano_sin_construccion",
-        "descripcion": "Inmuebles urbanos y suburbanos sin construcción, a la entrada en vigor de la presente Ley",
+        "clave": "urbano_sin_edificaciones",
+        "descripcion": "Inmuebles urbanos y suburbanos sin edificaciones",
         "tasa_millar": 0.0046,
         "periodicidad": "anual",
         "cuota_fija_adicional": null
@@ -21,14 +21,14 @@
       {
         "grupo": "rustico",
         "clave": "rustico",
-        "descripcion": "Predios rústicos, a la entrada en vigor de la presente Ley",
+        "descripcion": "Inmuebles rústicos",
         "tasa_millar": 0.0026,
         "periodicidad": "anual",
         "cuota_fija_adicional": null
       }
     ],
     "minimo_predial": null,
-    "comentarios": "Art. 4 establece tasas anuales al millar por tipo de inmueble: urbano/suburbano con construcción 2.5 al millar, urbano/suburbano sin construcción 4.6 al millar y rústicos 2.6 al millar. También aparecen tasas para periodos anteriores (2002-2013, antes de 2002 y hasta 1993, y antes de 1993), pero la mecánica anual vigente para 2014 se toma de la primera fila del artículo. No se transcriben tablas de valores unitarios de los artículos 5 y 6 porque son catastro/avaluó, no mecánica del impuesto."
+    "comentarios": "Art. 4: la mecánica del impuesto predial se fija como tasas anuales al millar según tipo de inmueble y condición de edificación. La tarifa mostrada incluye: inmuebles urbanos y suburbanos con edificaciones 2.5 al millar, sin edificaciones 4.6 al millar, y rústicos 2.6 al millar. Las fracciones históricas I-IV sobre años anteriores al 2002/1993 aparecen como referencias temporales de tasas, pero no se transcriben como esquema principal porque el texto visible muestra la tabla principal vigente para 2014. Los artículos 5 y 6 contienen valores catastrales y criterios de avalúo, no la mecánica de cobro."
   },
   "_meta": {
     "fuente": "txt",
@@ -39,10 +39,12 @@
     "requiere_revision": false,
     "escalado": false,
     "razon": null,
+    "usado_reocr": false,
+    "usado_vision": false,
     "tokens": {
-      "input": 7455,
-      "output": 361,
-      "cached": 3840
+      "input": 8672,
+      "output": 347,
+      "cached": 5888
     },
     "cvegeo": "11027",
     "estado": "guanajuato",

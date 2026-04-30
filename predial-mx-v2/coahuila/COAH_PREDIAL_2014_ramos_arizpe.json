@@ -5,48 +5,48 @@
       {
         "grupo": "urbano",
         "clave": "industrial",
-        "descripcion": "predios urbanos industriales con o sin edificación",
-        "tasa_millar": 0.005,
+        "descripcion": "Predios urbanos industriales con o sin edificación",
+        "tasa_millar": 5.0,
         "periodicidad": "anual",
         "cuota_fija_adicional": null
       },
       {
         "grupo": "urbano",
-        "clave": "comercial_edificado",
-        "descripcion": "predios urbanos comerciales con edificación",
-        "tasa_millar": 0.005,
+        "clave": "comercial_con_edificacion",
+        "descripcion": "Predios urbanos comerciales con edificación",
+        "tasa_millar": 5.0,
         "periodicidad": "anual",
         "cuota_fija_adicional": null
       },
       {
         "grupo": "urbano",
         "clave": "comercial_sin_edificacion",
-        "descripcion": "predios urbanos comerciales sin edificación",
-        "tasa_millar": 0.00665,
+        "descripcion": "Predios urbanos comerciales sin edificación",
+        "tasa_millar": 6.65,
         "periodicidad": "anual",
         "cuota_fija_adicional": null
       },
       {
         "grupo": "urbano",
-        "clave": "residencial_edificado",
-        "descripcion": "predios urbanos residenciales, de interés social y populares con edificación",
-        "tasa_millar": 0.005,
+        "clave": "residencial_interes_social_popular_con_edificacion",
+        "descripcion": "Predios urbanos residenciales, de interés social y populares con edificación",
+        "tasa_millar": 5.0,
         "periodicidad": "anual",
         "cuota_fija_adicional": null
       },
       {
         "grupo": "urbano",
-        "clave": "residencial_sin_edificacion",
-        "descripcion": "predios urbanos residenciales, de interés social y populares sin edificación",
-        "tasa_millar": 0.00665,
+        "clave": "residencial_interes_social_popular_sin_edificacion",
+        "descripcion": "Predios urbanos residenciales, de interés social y populares sin edificación",
+        "tasa_millar": 6.65,
         "periodicidad": "anual",
         "cuota_fija_adicional": null
       },
       {
         "grupo": "rustico",
         "clave": "rustico",
-        "descripcion": "predios rústicos",
-        "tasa_millar": 0.003,
+        "descripcion": "Predios rústicos",
+        "tasa_millar": 3.0,
         "periodicidad": "anual",
         "cuota_fija_adicional": null
       }
@@ -56,7 +56,7 @@
       "periodicidad": "bimestral",
       "unidad": "pesos"
     },
-    "comentarios": "Art. 2 establece tasas categóricas al millar para predios urbanos industriales (5 al millar anual), urbanos comerciales con edificación (5 al millar), urbanos comerciales sin edificación (1.33 veces 5 al millar = 6.65 al millar), urbanos residenciales/interés social/populares con edificación (hasta 5 al millar), urbanos residenciales/interés social/populares sin edificación (1.33 veces lo fijado = 6.65 al millar) y rústicos (3 al millar anual). Se registra el mínimo predial bimestral de $38.00. Art. 2 también menciona un mínimo de $19.00 para pensionados/jubilados/adultos mayores/personas con discapacidad, pero está condicionado y se omite por ser un trato especial/bonificación. Art. 3 contiene incentivos fiscales para empresas y personas con discapacidad; no modifica la mecánica base y se ignora."
+    "comentarios": "Art. 2: predios urbanos comerciales sin edificación y predios urbanos residenciales, de interés social y populares sin edificación pagan 1.33 veces la tasa de los predios con edificación; se transcribe como 6.65 al millar. El texto también menciona incentivos/bonificaciones (pagos en enero-febrero-marzo, pensionados, instituciones educativas, fraccionamientos, empresas y personas con discapacidad), pero se ignoran por instrucción. Para predios urbanos industriales se indica 5 al millar anual y para rústicos 3 al millar anual. El mínimo predial es de $38.00 bimestrales, o $19.00 bimestrales para ciertos contribuyentes."
   },
   "_meta": {
     "fuente": "txt",
@@ -67,10 +67,12 @@
     "requiere_revision": false,
     "escalado": false,
     "razon": null,
+    "usado_reocr": false,
+    "usado_vision": false,
     "tokens": {
-      "input": 5880,
-      "output": 563,
-      "cached": 3840
+      "input": 7097,
+      "output": 523,
+      "cached": 5888
     },
     "cvegeo": "05027",
     "estado": "coahuila",

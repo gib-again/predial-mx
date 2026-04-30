@@ -6,7 +6,7 @@
         "grupo": "urbano",
         "clave": "predios_urbanos",
         "descripcion": "Sobre los predios urbanos",
-        "tasa_millar": 3.0,
+        "tasa_millar": 0.003,
         "periodicidad": "anual",
         "cuota_fija_adicional": null
       },
@@ -14,7 +14,7 @@
         "grupo": "rustico",
         "clave": "predios_rusticos",
         "descripcion": "Sobre los predios rústicos",
-        "tasa_millar": 1.0,
+        "tasa_millar": 0.001,
         "periodicidad": "anual",
         "cuota_fija_adicional": null
       }
@@ -24,7 +24,7 @@
       "periodicidad": "bimestral",
       "unidad": "pesos"
     },
-    "comentarios": "Art. 2: predios urbanos pagan 3 al millar anual y predios rústicos 1 al millar anual. El texto establece un mínimo predial de $11.00 por bimestre. Se omiten incentivos/bonificaciones por pagos en una sola exhibición y para grupos especiales, por instrucción de extracción."
+    "comentarios": "Art. 3: el impuesto se determina con tasa al millar anual de 3 por mil para predios urbanos y 1 por mil para predios rústicos. El propio artículo establece un mínimo de $11.00 por bimestre. Los incentivos por pago anual anticipado y los descuentos a pensionados, jubilados, adultos mayores, personas con discapacidad, beneficencia e instituciones educativas no públicas se omiten por ser bonificaciones, no mecánica de cálculo."
   },
   "_meta": {
     "fuente": "txt",
@@ -35,10 +35,12 @@
     "requiere_revision": false,
     "escalado": false,
     "razon": null,
+    "usado_reocr": false,
+    "usado_vision": false,
     "tokens": {
-      "input": 5339,
-      "output": 221,
-      "cached": 3840
+      "input": 6556,
+      "output": 259,
+      "cached": 5888
     },
     "cvegeo": "05013",
     "estado": "coahuila",

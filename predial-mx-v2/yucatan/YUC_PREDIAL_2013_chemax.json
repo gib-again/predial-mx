@@ -4,35 +4,35 @@
     "tabla": [
       {
         "n_rango": 1,
-        "inferior": 0.0,
+        "inferior": 0.01,
         "superior": 5000.0,
         "cuota_fija": 60.0,
         "tasa_marginal": 1e-05
       },
       {
         "n_rango": 2,
-        "inferior": 5000.0,
+        "inferior": 5000.01,
         "superior": 7500.0,
         "cuota_fija": 90.0,
         "tasa_marginal": 1e-05
       },
       {
         "n_rango": 3,
-        "inferior": 7500.0,
+        "inferior": 7500.01,
         "superior": 10500.0,
         "cuota_fija": 120.0,
         "tasa_marginal": 1e-05
       },
       {
         "n_rango": 4,
-        "inferior": 10500.0,
+        "inferior": 10500.01,
         "superior": 12500.0,
         "cuota_fija": 150.0,
         "tasa_marginal": 1e-05
       },
       {
         "n_rango": 5,
-        "inferior": 12500.0,
+        "inferior": 12500.01,
         "superior": 15000.0,
         "cuota_fija": 180.0,
         "tasa_marginal": 1e-05
@@ -53,7 +53,7 @@
       }
     ],
     "minimo_predial": null,
-    "comentarios": "Art. 13: tarifa progresiva por valor catastral con cuota fija anual y factor para aplicar al excedente del límite inferior. Se normalizó el primer rango $0.01–$5,000.00 a 0–5000 y los siguientes como rangos contiguos. Se conservó la estructura del texto para el tramo 15,500.01–20,000.00 como aparece en la fuente original. Tarifa paralela: predio destinado a la producción agropecuaria paga 10 al millar anual sobre el valor registrado o catastral; no se incluye en la tabla principal por ser una tarifa separada. Se ignoraron los valores unitarios de terreno y construcción y el descuento del Art. 14."
+    "comentarios": "Art. 13: tarifa por valor catastral con cuota fija anual y factor para aplicar al excedente del límite inferior. El texto muestra 0.001 % como factor; se normaliza como tasa marginal 0.00001. Se corrige el hueco material entre 15,000.01 y 15,500.01 normalizando el tramo 6 a 15,000–20,000, conforme a la regla de límites contiguos. Tarifa secundaria paralela: predios destinados a producción agropecuaria pagan 10 al millar anual sobre el valor registrado o catastral; se documenta como tarifa paralela no incluida en la tabla principal. También hay tablas de valores unitarios de terreno y construcción y la tarifa se refiere a base catastral."
   },
   "_meta": {
     "fuente": "txt",
@@ -64,10 +64,12 @@
     "requiere_revision": false,
     "escalado": false,
     "razon": null,
+    "usado_reocr": false,
+    "usado_vision": false,
     "tokens": {
-      "input": 12472,
-      "output": 844,
-      "cached": 7680
+      "input": 15117,
+      "output": 903,
+      "cached": 11776
     },
     "cvegeo": "31019",
     "estado": "yucatan",

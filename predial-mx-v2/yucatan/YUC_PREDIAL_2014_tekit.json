@@ -1,30 +1,37 @@
 {
   "predial": {
-    "tipo_esquema": "otro_no_clasificado",
-    "categoria": "estructura_no_estandar",
-    "descripcion_estructural": "El texto del Artículo 13 establece el impuesto predial con una cuota fija de 50.00 pesos aplicando además una tasa de 0.15% sobre el valor catastral, sin tabla de rangos ni catálogo por categorías. Esa combinación de cuota fija más tasa porcentual única no encaja exactamente en las variantes tipadas disponibles, ya que `tasa_unica` no contempla cuota fija adicional y `cuota_fija_simple` no contempla tasa porcentual adicional.",
-    "tabla_cruda": [
+    "tipo_esquema": "tasa_unica",
+    "tabla": [
       {
-        "descripcion": "Artículo 13",
-        "valores": "cuota fija=50.00 pesos; tasa=0.15% sobre valor catastral"
+        "descripcion": "Impuesto predial anual sobre valor catastral con cuota fija adicional",
+        "tasa": 0.0015,
+        "base_calculo": "valor_catastral",
+        "unidad": "porcentaje",
+        "cuota_fija_adicional": {
+          "monto": 50.0,
+          "periodicidad": "anual",
+          "unidad": "pesos"
+        }
       }
     ],
     "minimo_predial": null,
-    "comentarios": "Se ignoraron las tablas de valores unitarios de terreno, construcción y rústicos por hectárea por ser tablas catastrales, no tarifas del impuesto predial. También se ignoraron descuentos del Artículo 14 y el impuesto sobre rentas o frutos civiles del Artículo 15."
+    "comentarios": "Art. 13: el impuesto predial se determina con cuota fija de $50.00 aplicando la tasa del 0.15% sobre el valor catastral. La tabla de valores unitarios de terreno y construcciones es valuación catastral, no mecánica tarifaria. Art. 15 establece una tarifa sobre rentas o frutos civiles mensuales (2% casas habitación y 2% actividades comerciales), documentada como mecánica secundaria no predominante."
   },
   "_meta": {
     "fuente": "txt",
-    "modelo": "gpt-5.4"
+    "modelo": "gpt-5.4-mini"
   },
   "_meta_v2": {
-    "intentos": 3,
-    "requiere_revision": true,
-    "escalado": true,
-    "razon": "clasificado_como_otro_no_clasificado_tras_escalacion",
+    "intentos": 1,
+    "requiere_revision": false,
+    "escalado": false,
+    "razon": null,
+    "usado_reocr": false,
+    "usado_vision": false,
     "tokens": {
-      "input": 18979,
-      "output": 834,
-      "cached": 13568
+      "input": 7233,
+      "output": 204,
+      "cached": 5888
     },
     "cvegeo": "31080",
     "estado": "yucatan",

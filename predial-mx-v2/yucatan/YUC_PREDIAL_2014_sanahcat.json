@@ -1,20 +1,17 @@
 {
   "predial": {
-    "tipo_esquema": "otro_no_clasificado",
-    "categoria": "estructura_no_estandar",
-    "descripcion_estructural": "El texto establece dos mecánicas distintas para el impuesto predial: una cuota por superficie de 15 centavos por m2 para el predio causante y, por separado, una tasa de 10 al millar anual sobre el valor registrado o catastral para predios destinados a la producción agropecuaria. La base de cálculo principal es superficie, lo que no encaja en las variantes tipadas disponibles para predial en este esquema.",
-    "tabla_cruda": [
+    "tipo_esquema": "tasa_unica",
+    "tabla": [
       {
-        "descripcion": "Predio causante",
-        "valores": "15 centavos por m2 que tenga la extensión de predio causante; periodicidad anual"
-      },
-      {
-        "descripcion": "Predio destinado a la producción agropecuaria",
-        "valores": "10 al millar anual sobre el valor registrado o catastral; con tope conforme a la legislación agraria federal para terrenos ejidales"
+        "descripcion": "Impuesto predial anual de 15 centavos por metro cuadrado de extensión del predio",
+        "tasa": 0.15,
+        "base_calculo": "superficie_m2",
+        "unidad": "por_metro_cuadrado",
+        "cuota_fija_adicional": null
       }
     ],
     "minimo_predial": null,
-    "comentarios": "Art. 13 establece una cuota anual por superficie (m2), no una tasa uniforme sobre valor catastral ni brackets por valor. Además contiene una tarifa paralela para predios destinados a la producción agropecuaria de 10 al millar anual sobre el valor registrado o catastral. Se omite el descuento del Art. 14 por ser beneficio no tarifario."
+    "comentarios": "La mecánica principal del impuesto predial en el texto es una cuota por superficie: 15 centavos por m2 anuales. El mismo artículo también establece una tarifa paralela para predios destinados a la producción agropecuaria de 10 al millar anual sobre el valor registrado o catastral, con el límite de no exceder lo establecido por la legislación agraria federal para terrenos ejidales; esa tarifa paralela no se incluye en la tabla principal conforme a la regla de tarifas paralelas."
   },
   "_meta": {
     "fuente": "txt",
@@ -22,13 +19,15 @@
   },
   "_meta_v2": {
     "intentos": 3,
-    "requiere_revision": true,
+    "requiere_revision": false,
     "escalado": true,
-    "razon": "clasificado_como_otro_no_clasificado_tras_escalacion",
+    "razon": "escalado_a_gpt-5.4_tras_2x_mini_fallido",
+    "usado_reocr": false,
+    "usado_vision": false,
     "tokens": {
-      "input": 15893,
-      "output": 782,
-      "cached": 13568
+      "input": 19966,
+      "output": 681,
+      "cached": 17664
     },
     "cvegeo": "31064",
     "estado": "yucatan",

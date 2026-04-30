@@ -5,7 +5,7 @@
       {
         "grupo": "urbano",
         "clave": "predios_urbanos",
-        "descripcion": "Sobre los predios urbanos",
+        "descripcion": "Predios urbanos",
         "tasa_millar": 0.005,
         "periodicidad": "anual",
         "cuota_fija_adicional": null
@@ -13,7 +13,7 @@
       {
         "grupo": "rustico",
         "clave": "predios_rusticos",
-        "descripcion": "Sobre los predios rústicos",
+        "descripcion": "Predios rústicos",
         "tasa_millar": 0.003,
         "periodicidad": "anual",
         "cuota_fija_adicional": null
@@ -24,7 +24,7 @@
       "periodicidad": "bimestral",
       "unidad": "pesos"
     },
-    "comentarios": "Art. 2: predios urbanos pagan 5 al millar anual y predios rústicos 3 al millar anual sobre el valor catastral. El artículo también establece que en ningún caso el impuesto predial será inferior a $35.00 por bimestre. Se ignoran incentivos/bonificaciones del propio artículo. Los predios ejidales con título del RAN se indican como base en valor catastral, sin una tasa distinta en el texto proporcionado."
+    "comentarios": "Art. 2 fracc. I y II: predios urbanos pagan 5 al millar anual y predios rústicos 3 al millar anual. Art. 2 fracc. III establece un mínimo predial de $35.00 por bimestre. Las fraccs. IV, VI y VII contienen incentivos/bonificaciones y no se transcriben como mecánica de cálculo. La fracc. V indica que los predios ejidales con título del RAN pagan con base en el valor catastral asignado, pero no fija una tasa distinta."
   },
   "_meta": {
     "fuente": "txt",
@@ -35,10 +35,12 @@
     "requiere_revision": false,
     "escalado": false,
     "razon": null,
+    "usado_reocr": false,
+    "usado_vision": false,
     "tokens": {
-      "input": 5240,
-      "output": 255,
-      "cached": 3840
+      "input": 6457,
+      "output": 272,
+      "cached": 5888
     },
     "cvegeo": "05023",
     "estado": "coahuila",

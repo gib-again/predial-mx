@@ -99,7 +99,7 @@
       "periodicidad": "anual",
       "unidad": "pesos"
     },
-    "comentarios": "Art. 4, fracción I, inciso a) para inmuebles urbanos y suburbanos con edificaciones: tabla progresiva por valor fiscal con cuota fija + tasa marginal sobre el excedente. Art. 4, fracción I, inciso b) predios urbanos/suburbanos sin edificaciones: 4.5 al millar (según el periodo de determinación del valor) y Art. 4, fracción II predios rústicos: 1.8 al millar / 6 al millar / 12 al millar según antigüedad del valor determinado; se dejan fuera de la tabla principal por ser tarifas paralelas. El texto también señala que si el impuesto resulta inferior a la cuota mínima del art. 39, se paga dicha cuota mínima; no se transcribe aquí el monto porque no aparece en el segmento."
+    "comentarios": "Art. 4, fracción I, inciso a): para inmuebles urbanos y suburbanos con edificaciones se establece una tabla de rangos de valor fiscal con cuota fija y tasa marginal sobre el excedente. Art. 4, fracción I, inciso b): para inmuebles urbanos y suburbanos sin edificaciones hay tasas paralelas de 4.5, 15 y 13 al millar según antigüedad del valor determinado/modificado; se documentan como tarifa secundaria paralela y no se incluyen en la tabla principal. Art. 4, fracción II: para inmuebles rústicos hay tasas paralelas de 1.8, 6 y 12 al millar según antigüedad del valor determinado/modificado; se documentan como tarifa secundaria paralela y no se incluyen en la tabla principal. El texto también señala que si el resultado es inferior a la cuota mínima del artículo 39 se paga dicha cuota mínima."
   },
   "_meta": {
     "fuente": "txt",
@@ -110,10 +110,12 @@
     "requiere_revision": false,
     "escalado": false,
     "razon": null,
+    "usado_reocr": false,
+    "usado_vision": false,
     "tokens": {
-      "input": 8011,
-      "output": 748,
-      "cached": 3840
+      "input": 9228,
+      "output": 767,
+      "cached": 5888
     },
     "cvegeo": "11026",
     "estado": "guanajuato",

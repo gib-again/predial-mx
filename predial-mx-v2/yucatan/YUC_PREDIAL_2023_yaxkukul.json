@@ -1,18 +1,32 @@
 {
   "predial": {
-    "tipo_esquema": "tarifa_millar",
-    "tabla": [
+    "tipo_esquema": "otro_no_clasificado",
+    "categoria": "estructura_no_estandar",
+    "descripcion_estructural": "El texto no presenta una tarifa predial directamente calculable como tabla de cobro del impuesto principal. El Artículo 13 contiene valores unitarios de terreno y construcción para integrar el valor catastral; el Artículo 14 establece una tasa al millar para predios agropecuarios y una tabla de rentas/frutos civiles, pero la mecánica principal del predial base valor catastral no queda estructurada en rangos o cuotas extraíbles sin una norma complementaria de cálculo. Por ello no encaja limpiamente en las variantes tarifarias previstas.",
+    "tabla_cruda": [
       {
-        "grupo": "general",
-        "clave": "agropecuario",
-        "descripcion": "Predios destinados a la producción agropecuaria",
-        "tasa_millar": 0.01,
-        "periodicidad": "anual",
-        "cuota_fija_adicional": null
+        "descripcion": "Artículo 13: valores unitarios de terreno por sección/manzana y tipo de área.",
+        "valores": "Centro/Media/Periferia y comisarías; valores por m2: 357, 179, 98; rústicos por brecha/ml 750, camino blanco/ml 1600, carretera/ml 2100"
+      },
+      {
+        "descripcion": "Artículo 13: valores unitarios de construcción por tipo y zona.",
+        "valores": "Concreto 4320/2916/1620; hierro y rollizos 3240/1620/1080; zinc/asbesto/teja 1080/540/378; cartón y paja 432/324/216"
+      },
+      {
+        "descripcion": "Artículo 14: predios agropecuarios.",
+        "valores": "10 al millar anual sobre valor registrado o catastral"
+      },
+      {
+        "descripcion": "Artículo 14: rentas o frutos civiles mensuales predios habitación.",
+        "valores": "5%"
+      },
+      {
+        "descripcion": "Artículo 14: rentas o frutos civiles mensuales predios comerciales.",
+        "valores": "5%"
       }
     ],
     "minimo_predial": null,
-    "comentarios": "Art. 14: los predios destinados a la producción agropecuaria pagan 10 al millar anual sobre el valor registrado o catastral. La tabla de valores unitarios de terreno y construcción (Arts. 13 y tablas A/B) corresponde a catastro y no se transcribe como mecánica del impuesto. También se menciona en el mismo artículo un impuesto sobre rentas o frutos civiles mensuales para predios habitación y comerciales de 5%, pero esa mecánica es de frutos/rentas y no se integra en la tabla principal de predial sobre valor catastral."
+    "comentarios": "Se omitieron descuentos y topes del Artículo 15 por instrucción. El texto transcrito corresponde principalmente a valores catastrales y a tarifas secundarias/paralelas, no a una mecánica tarifaria principal estructurada del predial sobre la que pueda elegirse con seguridad otra variante."
   },
   "_meta": {
     "fuente": "txt",
@@ -20,13 +34,15 @@
   },
   "_meta_v2": {
     "intentos": 1,
-    "requiere_revision": false,
+    "requiere_revision": true,
     "escalado": false,
-    "razon": null,
+    "razon": "clasificado_como_otro_no_clasificado",
+    "usado_reocr": false,
+    "usado_vision": false,
     "tokens": {
-      "input": 6209,
-      "output": 220,
-      "cached": 3840
+      "input": 7426,
+      "output": 454,
+      "cached": 5888
     },
     "cvegeo": "31105",
     "estado": "yucatan",

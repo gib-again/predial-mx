@@ -17,7 +17,7 @@
       },
       {
         "n_rango": 2,
-        "inferior": 20001.0,
+        "inferior": 20000.01,
         "superior": 50000.0,
         "columnas": [
           {
@@ -30,7 +30,7 @@
       },
       {
         "n_rango": 3,
-        "inferior": 50001.0,
+        "inferior": 50000.01,
         "superior": 80000.0,
         "columnas": [
           {
@@ -43,7 +43,7 @@
       },
       {
         "n_rango": 4,
-        "inferior": 80001.0,
+        "inferior": 80000.01,
         "superior": 110000.0,
         "columnas": [
           {
@@ -56,7 +56,7 @@
       },
       {
         "n_rango": 5,
-        "inferior": 110001.0,
+        "inferior": 110000.01,
         "superior": 500000.0,
         "columnas": [
           {
@@ -69,7 +69,7 @@
       },
       {
         "n_rango": 6,
-        "inferior": 500001.0,
+        "inferior": 500000.01,
         "superior": 1000000.0,
         "columnas": [
           {
@@ -82,7 +82,7 @@
       },
       {
         "n_rango": 7,
-        "inferior": 1000001.0,
+        "inferior": 1000000.01,
         "superior": null,
         "columnas": [
           {
@@ -95,21 +95,23 @@
       }
     ],
     "minimo_predial": null,
-    "comentarios": "Art. 13: se toma como tarifa principal la tabla de PREDIOS URBANOS por rangos de valor catastral con cuota fija anual y factor sobre el excedente, ya que el texto mezcla cuota fija en pesos con una tasa porcentual aplicada al excedente. Los predios rústicos tienen una tarifa paralela separada con la misma estructura de rangos, y además existe una tasa autónoma de 10 al millar anual para predios destinados a la producción agropecuaria; no se incorporan en la tabla principal por tratarse de tarifas paralelas/separadas. Art. 13: en los brackets urbanos y rústicos, el documento expresa 'factor para aplicar al excedente' con 0.25%, 0.20% y 0.15%; por la mezcla de cuota fija en pesos y porcentaje sobre excedente se clasifica como mixto."
+    "comentarios": "Art. 13: La mecánica principal para predios urbanos y rústicos está dada por tarifas por rangos de valor catastral con cuota fija anual más factor sobre el excedente. Se clasifica como mixto porque dentro de la misma disposición aparecen dos tablas heterogéneas por tipo de predio: predios urbanos con cuota fija anual y factor marginal de 0.25%, 0.25%, 0.25%, 0.20%, 0.20%, 0.15% y 0.15% según rango; predios rústicos con cuota fija anual y los mismos factores marginales por rango; además, para predios destinados a producción agropecuaria se indica una tarifa paralela de 10 al millar anual sobre el valor registrado o catastral. La tabla principal se transcribe sólo con la parte de cuota fija escalonada porque los factores marginales son heterogéneos respecto del monto fijo y aplican sobre el excedente del límite inferior. Las tarifas de predios rústicos y agropecuarios son paralelas y se documentan en el comentario."
   },
   "_meta": {
     "fuente": "txt",
     "modelo": "gpt-5.4-mini"
   },
   "_meta_v2": {
-    "intentos": 2,
+    "intentos": 1,
     "requiere_revision": false,
     "escalado": false,
     "razon": null,
+    "usado_reocr": false,
+    "usado_vision": false,
     "tokens": {
-      "input": 13117,
-      "output": 1213,
-      "cached": 7680
+      "input": 7554,
+      "output": 599,
+      "cached": 5888
     },
     "cvegeo": "31029",
     "estado": "yucatan",

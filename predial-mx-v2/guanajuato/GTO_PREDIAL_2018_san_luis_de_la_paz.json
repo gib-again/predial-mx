@@ -4,31 +4,31 @@
     "tabla": [
       {
         "grupo": "urbano",
-        "clave": "urbano_con_edificaciones",
-        "descripcion": "Inmuebles urbanos y suburbanos con edificaciones",
-        "tasa_millar": 0.0045,
-        "periodicidad": "anual",
-        "cuota_fija_adicional": null
-      },
-      {
-        "grupo": "urbano",
-        "clave": "urbano_sin_edificaciones",
-        "descripcion": "Inmuebles urbanos y suburbanos sin edificaciones",
+        "clave": "urbanos_con_edificaciones",
+        "descripcion": "Inmuebles urbanos y suburbanos con edificaciones; tasa anual aplicable a la entrada en vigor de la ley",
         "tasa_millar": 0.0024,
         "periodicidad": "anual",
         "cuota_fija_adicional": null
       },
       {
+        "grupo": "urbano",
+        "clave": "urbanos_sin_edificaciones",
+        "descripcion": "Inmuebles urbanos y suburbanos sin edificaciones; tasa anual aplicable a la entrada en vigor de la ley",
+        "tasa_millar": 0.0045,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
         "grupo": "rustico",
-        "clave": "rustico_general",
-        "descripcion": "Inmuebles rústicos",
+        "clave": "rusticos",
+        "descripcion": "Inmuebles rústicos; tasa anual aplicable a la entrada en vigor de la ley",
         "tasa_millar": 0.0018,
         "periodicidad": "anual",
         "cuota_fija_adicional": null
       }
     ],
     "minimo_predial": null,
-    "comentarios": "Art. 4 establece tasas anuales al millar por categoría de inmueble. El texto muestra además tasas diferenciadas por antigüedad (2002-2017, anterior a 2002, etc.) para inmuebles urbanos/suburbanos, pero se transcriben sólo las tasas categóricas principales visibles del artículo; el segmento no presenta rangos de valor catastral. Art. 5 y 6 contienen valores unitarios y criterios de valuación, no mecánica tarifaria del impuesto."
+    "comentarios": "Art. 4 contiene una tabla paralela de tasas para cuatro periodos históricos. Se transcribe la tarifa vigente a la entrada en vigor de la ley: inmuebles urbanos y suburbanos con edificaciones 2.4 al millar, sin edificaciones 4.5 al millar, e inmuebles rústicos 1.8 al millar, todas anuales sobre el valor catastral. Las demás filas del artículo 4 corresponden a periodos anteriores (2002-2017, 1993-2001, y anteriores a 1993) y se omiten por no ser la mecánica aplicable al ejercicio 2018. Los artículos 5 y 6 describen valores unitarios y criterios de avalúo, no la tarifa del impuesto predial."
   },
   "_meta": {
     "fuente": "txt",
@@ -39,10 +39,12 @@
     "requiere_revision": false,
     "escalado": false,
     "razon": null,
+    "usado_reocr": false,
+    "usado_vision": false,
     "tokens": {
-      "input": 7399,
-      "output": 298,
-      "cached": 3840
+      "input": 8616,
+      "output": 396,
+      "cached": 5888
     },
     "cvegeo": "11033",
     "estado": "guanajuato",

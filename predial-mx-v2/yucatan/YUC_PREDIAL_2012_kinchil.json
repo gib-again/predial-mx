@@ -9,10 +9,12 @@
     "requiere_revision": true,
     "escalado": true,
     "razon": "valido_3x_fallido | mini_e1=  • predial.mixto: Value error, brackets 6→7: hueco detectado (superior=60000.0, siguiente inferior=70000.01) | mini_e2=  • predial.mixto: Value error, brackets 6→7: hueco detectado (superior=60000.0, siguiente inferior=70000.01) | full_e3=  • predial.progresivo: Value error, brackets 6→7: hueco detectado (superior=60000.0, siguiente inferior=70000.0)",
+    "usado_reocr": false,
+    "usado_vision": false,
     "tokens": {
-      "input": 16939,
-      "output": 1587,
-      "cached": 11520
+      "input": 21012,
+      "output": 1661,
+      "cached": 17664
     },
     "cvegeo": "31044",
     "estado": "yucatan",

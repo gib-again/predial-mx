@@ -24,7 +24,7 @@
       "periodicidad": "bimestral",
       "unidad": "pesos"
     },
-    "comentarios": "Art. 2 fracc. I y II: predios urbanos pagan 5 al millar anual sobre el valor catastral; predios rústicos pagan 3 al millar anual sobre el valor catastral. Art. 2 fracc. III establece un mínimo predial de $42.60 por bimestre. Se ignoran los incentivos y bonificaciones de las fracciones IV a VIII por instrucción."
+    "comentarios": "Art. 2 fraccs. I y II: predios urbanos pagan 5 al millar anual sobre el valor catastral; predios rústicos pagan 3 al millar anual sobre el valor catastral. Fracc. III establece mínimo predial de $42.60 por bimestre. Se ignoran incentivos y bonificaciones de las fraccs. IV a VIII."
   },
   "_meta": {
     "fuente": "txt",
@@ -35,10 +35,12 @@
     "requiere_revision": false,
     "escalado": false,
     "razon": null,
+    "usado_reocr": false,
+    "usado_vision": false,
     "tokens": {
-      "input": 5592,
-      "output": 246,
-      "cached": 3840
+      "input": 6809,
+      "output": 240,
+      "cached": 5888
     },
     "cvegeo": "05021",
     "estado": "coahuila",

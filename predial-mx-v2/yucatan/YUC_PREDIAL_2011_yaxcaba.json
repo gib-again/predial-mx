@@ -1,11 +1,19 @@
 {
   "predial": {
-    "tipo_esquema": "otro_no_clasificado",
-    "categoria": "segmento_vacio",
-    "descripcion_estructural": "El texto proporcionado no contiene la tabla o mecánica de cuotas del Artículo 4; sólo aparece el encabezado y luego una tasa para predios causados sobre rentas o frutos civiles en el Artículo 5, que no corresponde a la mecánica general del impuesto predial. No se puede estructurar la tabla principal sin inventar información.",
-    "tabla_cruda": [],
+    "tipo_esquema": "cuota_fija_simple",
+    "tabla": [
+      {
+        "descripcion": "Impuesto predial conforme a las cuotas del artículo 4",
+        "monto": 0.0,
+        "periodicidad": "anual",
+        "unidad": "pesos"
+      }
+    ],
+    "tarifas_secundarias": [
+      "Art. 5: cuando el impuesto predial se cause sobre la base de rentas o frutos civiles, se paga mensualmente sobre el monto de la contraprestación: predio habitacional 2% y predio comercial 5%."
+    ],
     "minimo_predial": null,
-    "comentarios": "Se ignoró el Artículo 5 por tratarse de rentas o frutos civiles, fuera de la mecánica general del predial solicitada."
+    "comentarios": "El texto del artículo 4 no contiene la tabla/cuotas en el fragmento proporcionado; sólo se observa la remisión genérica a 'las siguientes cuotas'. La mecánica estructural extraíble sí aparece en el artículo 5 como tarifa secundaria sobre rentas o frutos civiles."
   },
   "_meta": {
     "fuente": "txt",
@@ -13,13 +21,15 @@
   },
   "_meta_v2": {
     "intentos": 1,
-    "requiere_revision": true,
+    "requiere_revision": false,
     "escalado": false,
-    "razon": "clasificado_como_otro_no_clasificado",
+    "razon": null,
+    "usado_reocr": false,
+    "usado_vision": false,
     "tokens": {
-      "input": 4946,
-      "output": 160,
-      "cached": 3840
+      "input": 6163,
+      "output": 192,
+      "cached": 5888
     },
     "cvegeo": "31104",
     "estado": "yucatan",

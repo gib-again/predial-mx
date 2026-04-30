@@ -12,6 +12,12 @@
             "valor": 7.0,
             "tipo": "cuota_fija",
             "unidad": "pesos"
+          },
+          {
+            "nombre": "general",
+            "valor": 0.0025,
+            "tipo": "tasa_marginal",
+            "unidad": "porcentaje"
           }
         ]
       },
@@ -25,6 +31,12 @@
             "valor": 14.0,
             "tipo": "cuota_fija",
             "unidad": "pesos"
+          },
+          {
+            "nombre": "general",
+            "valor": 0.0025,
+            "tipo": "tasa_marginal",
+            "unidad": "porcentaje"
           }
         ]
       },
@@ -38,6 +50,12 @@
             "valor": 15.0,
             "tipo": "cuota_fija",
             "unidad": "pesos"
+          },
+          {
+            "nombre": "general",
+            "valor": 0.0025,
+            "tipo": "tasa_marginal",
+            "unidad": "porcentaje"
           }
         ]
       },
@@ -51,6 +69,12 @@
             "valor": 26.0,
             "tipo": "cuota_fija",
             "unidad": "pesos"
+          },
+          {
+            "nombre": "general",
+            "valor": 0.0025,
+            "tipo": "tasa_marginal",
+            "unidad": "porcentaje"
           }
         ]
       },
@@ -64,6 +88,12 @@
             "valor": 33.0,
             "tipo": "cuota_fija",
             "unidad": "pesos"
+          },
+          {
+            "nombre": "general",
+            "valor": 0.0025,
+            "tipo": "tasa_marginal",
+            "unidad": "porcentaje"
           }
         ]
       },
@@ -77,6 +107,12 @@
             "valor": 40.0,
             "tipo": "cuota_fija",
             "unidad": "pesos"
+          },
+          {
+            "nombre": "general",
+            "valor": 0.0025,
+            "tipo": "tasa_marginal",
+            "unidad": "porcentaje"
           }
         ]
       },
@@ -90,12 +126,18 @@
             "valor": 46.0,
             "tipo": "cuota_fija",
             "unidad": "pesos"
+          },
+          {
+            "nombre": "general",
+            "valor": 0.0025,
+            "tipo": "tasa_marginal",
+            "unidad": "porcentaje"
           }
         ]
       }
     ],
     "minimo_predial": null,
-    "comentarios": "Art. 13: tarifa principal por rangos de valor catastral con cuota fija anual y factor de 0.25% sobre el excedente del límite inferior; además, el mismo artículo establece tarifas paralelas no integradas en la tabla principal: predios rústicos con o sin construcción pagan $15.00 por hectárea, y los predios destinados a producción agropecuaria pagan 10 al millar anual sobre el valor registrado o catastral. Se omiten descuentos y recargos por instrucciones."
+    "comentarios": "Art. 13: tarifa principal por rangos de valor catastral con cuota fija anual y factor del 0.25% sobre el excedente del límite inferior en todos los brackets. Además, se documentan tarifas paralelas no integradas en la tabla principal: (i) predios rústicos con o sin construcción: $15.00 por hectárea; (ii) todo predio destinado a producción agropecuaria: 10 al millar anual sobre el valor registrado o catastral. Se ignoran descuentos y recargos."
   },
   "_meta": {
     "fuente": "txt",
@@ -106,10 +148,12 @@
     "requiere_revision": false,
     "escalado": false,
     "razon": null,
+    "usado_reocr": false,
+    "usado_vision": false,
     "tokens": {
-      "input": 5740,
-      "output": 455,
-      "cached": 3840
+      "input": 6957,
+      "output": 629,
+      "cached": 5888
     },
     "cvegeo": "31044",
     "estado": "yucatan",

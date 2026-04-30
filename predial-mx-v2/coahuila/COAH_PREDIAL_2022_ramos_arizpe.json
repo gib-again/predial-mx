@@ -4,73 +4,73 @@
     "tabla": [
       {
         "grupo": "urbano",
-        "clave": "industrial",
-        "descripcion": "predios urbanos industriales con o sin edificación",
-        "tasa_millar": 5.0,
+        "clave": "urbano_industrial",
+        "descripcion": "Predios urbanos industriales con o sin edificación",
+        "tasa_millar": 0.005,
         "periodicidad": "anual",
         "cuota_fija_adicional": null
       },
       {
         "grupo": "urbano",
-        "clave": "comercial_con_edificacion",
-        "descripcion": "predios urbanos comerciales con edificación",
-        "tasa_millar": 5.0,
+        "clave": "urbano_comercial_con_edificacion",
+        "descripcion": "Predios urbanos comerciales con edificación",
+        "tasa_millar": 0.005,
         "periodicidad": "anual",
         "cuota_fija_adicional": null
       },
       {
         "grupo": "urbano",
-        "clave": "comercial_sin_edificacion",
-        "descripcion": "predios urbanos comerciales sin edificación",
-        "tasa_millar": 6.0,
+        "clave": "urbano_comercial_sin_edificacion",
+        "descripcion": "Predios urbanos comerciales sin edificación",
+        "tasa_millar": 0.006,
         "periodicidad": "anual",
         "cuota_fija_adicional": null
       },
       {
         "grupo": "urbano",
-        "clave": "residencial_con_edificacion",
-        "descripcion": "predios urbanos residenciales, de interés social y populares con edificación",
-        "tasa_millar": 5.0,
+        "clave": "urbano_residencial_con_edificacion",
+        "descripcion": "Predios urbanos residenciales, de interés social y populares con edificación",
+        "tasa_millar": 0.005,
         "periodicidad": "anual",
         "cuota_fija_adicional": null
       },
       {
         "grupo": "urbano",
-        "clave": "residencial_sin_edificacion",
-        "descripcion": "predios urbanos residenciales, de interés social y populares sin edificación",
-        "tasa_millar": 6.0,
+        "clave": "urbano_residencial_sin_edificacion",
+        "descripcion": "Predios urbanos residenciales, de interés social y populares sin edificación",
+        "tasa_millar": 0.006,
         "periodicidad": "anual",
         "cuota_fija_adicional": null
       },
       {
         "grupo": "rustico",
-        "clave": "general_rustico",
-        "descripcion": "predios rústicos",
-        "tasa_millar": 3.0,
+        "clave": "rustico_general",
+        "descripcion": "Predios rústicos",
+        "tasa_millar": 0.003,
         "periodicidad": "anual",
         "cuota_fija_adicional": null
       },
       {
         "grupo": "rustico",
-        "clave": "industrial_eolica_en_ejecucion",
-        "descripcion": "predios rústicos industriales con explotación de energía renovable (eólica) en ejecución",
-        "tasa_millar": 5.0,
+        "clave": "rustico_industrial_eolica_ejecucion",
+        "descripcion": "Predios rústicos industriales con explotación de energía renovable (eólica) en ejecución",
+        "tasa_millar": 0.005,
         "periodicidad": "anual",
         "cuota_fija_adicional": null
       },
       {
         "grupo": "rustico",
-        "clave": "industrial_eolica_en_desarrollo",
-        "descripcion": "predios rústicos industriales con explotación de energía renovable (eólica) en desarrollo",
-        "tasa_millar": 5.0,
+        "clave": "rustico_industrial_eolica_desarrollo",
+        "descripcion": "Predios rústicos industriales con explotación de energía renovable (eólica) en desarrollo",
+        "tasa_millar": 0.005,
         "periodicidad": "anual",
         "cuota_fija_adicional": null
       },
       {
         "grupo": "rustico",
-        "clave": "industrial_eolica_en_proyecto",
-        "descripcion": "predios rústicos industriales con explotación de energía renovable (eólica) en proyecto",
-        "tasa_millar": 5.0,
+        "clave": "rustico_industrial_eolica_proyecto",
+        "descripcion": "Predios rústicos industriales con explotación de energía renovable (eólica) en proyecto",
+        "tasa_millar": 0.005,
         "periodicidad": "anual",
         "cuota_fija_adicional": null
       }
@@ -80,7 +80,7 @@
       "periodicidad": "bimestral",
       "unidad": "pesos"
     },
-    "comentarios": "Art. 2 establece tasas al millar por tipo de predio. Se ignoran los incentivos/bonificaciones del mismo artículo y del Art. 3 por ser descuentos. También se menciona una tasa especial de 1 al millar para predios de instituciones educativas no públicas, pero se trata de un incentivo condicionado; no se incorpora en la tabla principal."
+    "comentarios": "Art. 2 establece catálogo de tasas al millar por tipo de predio. Se documentan como tarifa_millar. Nota normativa: para predios urbanos residenciales, de interés social y populares con edificación el texto dice 'hasta 5 al millar anual'. Art. 2 fracc. VIII fija mínimo predial de $53.53 bimestral. Art. 2 también menciona incentivos/bonificaciones, y un incentivo para instituciones educativas no públicas de 1 al millar anual, pero se omiten por ser beneficios o tratamiento especial no predominante de la mecánica general. Art. 3 regula incentivos fiscales por generación de empleos, no se incorpora a la mecánica de cálculo principal."
   },
   "_meta": {
     "fuente": "txt",
@@ -91,10 +91,12 @@
     "requiere_revision": false,
     "escalado": false,
     "razon": null,
+    "usado_reocr": false,
+    "usado_vision": false,
     "tokens": {
-      "input": 6147,
-      "output": 602,
-      "cached": 3840
+      "input": 7364,
+      "output": 714,
+      "cached": 5888
     },
     "cvegeo": "05027",
     "estado": "coahuila",

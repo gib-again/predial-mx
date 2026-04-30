@@ -1,90 +1,228 @@
 {
   "predial": {
-    "tipo_esquema": "progresivo",
+    "tipo_esquema": "mixto",
     "tabla": [
       {
         "n_rango": 1,
-        "inferior": 0.01,
+        "inferior": 0.0,
         "superior": 1552285.8,
-        "cuota_fija": 0.0,
-        "tasa_marginal": 0.00234
+        "columnas": [
+          {
+            "nombre": "habitacional_general",
+            "valor": 0.00234,
+            "tipo": "tasa_marginal",
+            "unidad": "porcentaje"
+          }
+        ]
       },
       {
         "n_rango": 2,
-        "inferior": 1552285.81,
+        "inferior": 1552285.8,
         "superior": 3104571.6,
-        "cuota_fija": 3777.64,
-        "tasa_marginal": 0.00267
+        "columnas": [
+          {
+            "nombre": "habitacional_general",
+            "valor": 3777.64,
+            "tipo": "cuota_fija",
+            "unidad": "pesos"
+          },
+          {
+            "nombre": "habitacional_general",
+            "valor": 0.00267,
+            "tipo": "tasa_marginal",
+            "unidad": "porcentaje"
+          }
+        ]
       },
       {
         "n_rango": 3,
-        "inferior": 3104571.61,
+        "inferior": 3104571.6,
         "superior": 6209143.2,
-        "cuota_fija": 7926.59,
-        "tasa_marginal": 0.00292
+        "columnas": [
+          {
+            "nombre": "habitacional_general",
+            "valor": 7926.59,
+            "tipo": "cuota_fija",
+            "unidad": "pesos"
+          },
+          {
+            "nombre": "habitacional_general",
+            "valor": 0.00292,
+            "tipo": "tasa_marginal",
+            "unidad": "porcentaje"
+          }
+        ]
       },
       {
         "n_rango": 4,
-        "inferior": 6209143.21,
+        "inferior": 6209143.2,
         "superior": 12418286.4,
-        "cuota_fija": 16999.39,
-        "tasa_marginal": 0.00316
+        "columnas": [
+          {
+            "nombre": "habitacional_general",
+            "valor": 16999.39,
+            "tipo": "cuota_fija",
+            "unidad": "pesos"
+          },
+          {
+            "nombre": "habitacional_general",
+            "valor": 0.00316,
+            "tipo": "tasa_marginal",
+            "unidad": "porcentaje"
+          }
+        ]
       },
       {
         "n_rango": 5,
-        "inferior": 12418286.41,
+        "inferior": 12418286.4,
         "superior": 24836572.8,
-        "cuota_fija": 36630.22,
-        "tasa_marginal": 0.00341
+        "columnas": [
+          {
+            "nombre": "habitacional_general",
+            "valor": 0.0,
+            "tipo": "cuota_fija",
+            "unidad": "pesos"
+          },
+          {
+            "nombre": "habitacional_general",
+            "valor": 0.00341,
+            "tipo": "tasa_marginal",
+            "unidad": "porcentaje"
+          }
+        ]
       },
       {
         "n_rango": 6,
-        "inferior": 24836572.81,
+        "inferior": 24836572.8,
         "superior": 49673145.6,
-        "cuota_fija": 78991.48,
-        "tasa_marginal": 0.00365
+        "columnas": [
+          {
+            "nombre": "habitacional_general",
+            "valor": 78991.48,
+            "tipo": "cuota_fija",
+            "unidad": "pesos"
+          },
+          {
+            "nombre": "habitacional_general",
+            "valor": 0.00365,
+            "tipo": "tasa_marginal",
+            "unidad": "porcentaje"
+          }
+        ]
       },
       {
         "n_rango": 7,
-        "inferior": 49673145.61,
+        "inferior": 49673145.6,
         "superior": 99346291.2,
-        "cuota_fija": 169654.9,
-        "tasa_marginal": 0.00389
+        "columnas": [
+          {
+            "nombre": "habitacional_general",
+            "valor": 169654.9,
+            "tipo": "cuota_fija",
+            "unidad": "pesos"
+          },
+          {
+            "nombre": "habitacional_general",
+            "valor": 0.00389,
+            "tipo": "tasa_marginal",
+            "unidad": "porcentaje"
+          }
+        ]
       },
       {
         "n_rango": 8,
-        "inferior": 99346291.21,
+        "inferior": 99346291.2,
         "superior": 198692582.4,
-        "cuota_fija": 362863.57,
-        "tasa_marginal": 0.00414
+        "columnas": [
+          {
+            "nombre": "habitacional_general",
+            "valor": 362863.57,
+            "tipo": "cuota_fija",
+            "unidad": "pesos"
+          },
+          {
+            "nombre": "habitacional_general",
+            "valor": 0.00414,
+            "tipo": "tasa_marginal",
+            "unidad": "porcentaje"
+          }
+        ]
       },
       {
         "n_rango": 9,
-        "inferior": 198692582.41,
+        "inferior": 198692582.4,
         "superior": 397385164.8,
-        "cuota_fija": 774077.74,
-        "tasa_marginal": 0.00438
+        "columnas": [
+          {
+            "nombre": "habitacional_general",
+            "valor": 774077.74,
+            "tipo": "cuota_fija",
+            "unidad": "pesos"
+          },
+          {
+            "nombre": "habitacional_general",
+            "valor": 0.00438,
+            "tipo": "tasa_marginal",
+            "unidad": "porcentaje"
+          }
+        ]
       },
       {
         "n_rango": 10,
-        "inferior": 397385164.81,
+        "inferior": 397385164.8,
         "superior": 794770329.6,
-        "cuota_fija": 1644033.34,
-        "tasa_marginal": 0.00462
+        "columnas": [
+          {
+            "nombre": "habitacional_general",
+            "valor": 1644033.34,
+            "tipo": "cuota_fija",
+            "unidad": "pesos"
+          },
+          {
+            "nombre": "habitacional_general",
+            "valor": 0.00462,
+            "tipo": "tasa_marginal",
+            "unidad": "porcentaje"
+          }
+        ]
       },
       {
         "n_rango": 11,
-        "inferior": 794770329.61,
+        "inferior": 794770329.6,
         "superior": 1589540659.2,
-        "cuota_fija": 3480652.2,
-        "tasa_marginal": 0.00487
+        "columnas": [
+          {
+            "nombre": "habitacional_general",
+            "valor": 3480652.2,
+            "tipo": "cuota_fija",
+            "unidad": "pesos"
+          },
+          {
+            "nombre": "habitacional_general",
+            "valor": 0.00487,
+            "tipo": "tasa_marginal",
+            "unidad": "porcentaje"
+          }
+        ]
       },
       {
         "n_rango": 12,
-        "inferior": 1589540659.21,
+        "inferior": 1589540659.2,
         "superior": null,
-        "cuota_fija": 7347305.23,
-        "tasa_marginal": 0.00511
+        "columnas": [
+          {
+            "nombre": "habitacional_general",
+            "valor": 7347305.23,
+            "tipo": "cuota_fija",
+            "unidad": "pesos"
+          },
+          {
+            "nombre": "habitacional_general",
+            "valor": 0.00511,
+            "tipo": "tasa_marginal",
+            "unidad": "porcentaje"
+          }
+        ]
       }
     ],
     "minimo_predial": {
@@ -92,7 +230,7 @@
       "periodicidad": "anual",
       "unidad": "pesos"
     },
-    "comentarios": "Art. 5, fracción I, inciso a) (urbanos, suburbanos y rústicos con edificaciones) y fracción II, inciso a) (misma estructura para 2016-2020): tabla de brackets de valor fiscal con cuota fija + tasa marginal sobre excedente, por lo que se clasifica como progresivo. Se omiten los incisos b) de fracciones I, II y III porque son tarifas paralelas con superficie de terreno y múltiples tasas/categorías; además el propio texto refiere su cálculo como tasas progresivas. El texto también indica una cuota mínima anual del artículo 43, pero no se proporciona en el segmento transcrito."
+    "comentarios": "Art. 5 fracc. I inciso a: tabla progresiva para urbanos, suburbanos y rústicos con edificaciones (valor fiscal del inmueble) con cuota fija + tasa marginal. Art. 5 fracc. I inciso b: urbanos, suburbanos y rústicos sin edificaciones pagan también una tabla progresiva por superficie de terreno con tasa marginal; no se integra en la tabla principal por tratarse de una mecánica paralela con base de cálculo distinta. Art. 5 fracc. II inciso a: otra tabla progresiva para inmuebles cuyo valor se determinó o modificó de 2016 a 2020, con cuotas fijas y tasas marginales distintas. Art. 5 fracc. II inciso b y fracc. III inciso b: tablas progresivas por superficie para sin edificaciones, con tasas marginales distintas. Art. 5 fracc. III inciso a: inmuebles con edificaciones valuados antes de 2016 pagan una tasa única de 0.681% sobre valor fiscal. Art. 5 último párrafo: si el impuesto resultante es inferior a la cuota mínima anual del artículo 43, se aplica esa cuota mínima."
   },
   "_meta": {
     "fuente": "txt",
@@ -103,10 +241,12 @@
     "requiere_revision": false,
     "escalado": false,
     "razon": null,
+    "usado_reocr": false,
+    "usado_vision": false,
     "tokens": {
-      "input": 10465,
-      "output": 734,
-      "cached": 3840
+      "input": 11682,
+      "output": 1242,
+      "cached": 5888
     },
     "cvegeo": "11020",
     "estado": "guanajuato",

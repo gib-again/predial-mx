@@ -1,34 +1,33 @@
 {
   "predial": {
-    "tipo_esquema": "otro_no_clasificado",
-    "categoria": "estructura_no_estandar",
-    "descripcion_estructural": "El texto no presenta una tabla tarifaria estándar por valor catastral ni una cuota fija simple/escalonada. La mecánica principal indica 15 centavos por m2 de extensión del predio, y además establece una tarifa paralela distinta para predios destinados a la producción agropecuaria: 10 al millar anual sobre el valor registrado o catastral. No encaja de forma limpia en las variantes simples porque mezcla una base por superficie con una tasa al millar sobre valor catastral.",
-    "tabla_cruda": [
+    "tipo_esquema": "tasa_unica",
+    "tabla": [
       {
-        "descripcion": "Predio general",
-        "valores": "15 centavos por m2 de la extensión del predio causante"
-      },
-      {
-        "descripcion": "Predios destinados a la producción agropecuaria",
-        "valores": "10 al millar anual sobre el valor registrado o catastral"
+        "descripcion": "15 centavos por m2 de extensión del predio causante",
+        "tasa": 0.15,
+        "base_calculo": "superficie_m2",
+        "unidad": "por_metro_cuadrado",
+        "cuota_fija_adicional": null
       }
     ],
     "minimo_predial": null,
-    "comentarios": "Se ignoran descuentos del Art. 14. La estructura detectada no corresponde a tarifa_millar, progresivo, tasa_unica, cuota_fija_simple ni cuota_fija_escalonada; la primera regla usa una cuota por m2 y la segunda una tasa al millar sobre valor catastral, ambas en la misma sección."
+    "comentarios": "La mecánica principal del impuesto predial se establece como 15 centavos por m2 de la extensión del predio. El mismo artículo también señala una tarifa paralela para predios destinados a la producción agropecuaria de 10 al millar anual sobre el valor registrado o catastral, con el límite indicado por la legislación agraria federal para terrenos ejidales; no se incluye en la tabla principal por ser una tarifa separada para un grupo distinto."
   },
   "_meta": {
     "fuente": "txt",
-    "modelo": "gpt-5.4-mini"
+    "modelo": "gpt-5.4"
   },
   "_meta_v2": {
-    "intentos": 1,
-    "requiere_revision": true,
-    "escalado": false,
-    "razon": "clasificado_como_otro_no_clasificado",
+    "intentos": 3,
+    "requiere_revision": false,
+    "escalado": true,
+    "razon": "escalado_a_gpt-5.4_tras_2x_mini_fallido",
+    "usado_reocr": false,
+    "usado_vision": false,
     "tokens": {
-      "input": 5125,
-      "output": 294,
-      "cached": 3840
+      "input": 20377,
+      "output": 736,
+      "cached": 17664
     },
     "cvegeo": "31064",
     "estado": "yucatan",

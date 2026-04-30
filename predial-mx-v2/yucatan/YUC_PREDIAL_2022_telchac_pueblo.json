@@ -1,73 +1,117 @@
 {
   "predial": {
-    "tipo_esquema": "progresivo",
+    "tipo_esquema": "mixto",
     "tabla": [
       {
         "n_rango": 1,
         "inferior": 1.0,
         "superior": 20000.0,
-        "cuota_fija": 80.0,
-        "tasa_marginal": 0.0025
+        "columnas": [
+          {
+            "nombre": "general",
+            "valor": 80.0,
+            "tipo": "cuota_fija",
+            "unidad": "pesos"
+          }
+        ]
       },
       {
         "n_rango": 2,
         "inferior": 20000.0,
         "superior": 50000.0,
-        "cuota_fija": 100.0,
-        "tasa_marginal": 0.0025
+        "columnas": [
+          {
+            "nombre": "general",
+            "valor": 100.0,
+            "tipo": "cuota_fija",
+            "unidad": "pesos"
+          }
+        ]
       },
       {
         "n_rango": 3,
         "inferior": 50000.0,
         "superior": 80000.0,
-        "cuota_fija": 130.0,
-        "tasa_marginal": 0.0025
+        "columnas": [
+          {
+            "nombre": "general",
+            "valor": 130.0,
+            "tipo": "cuota_fija",
+            "unidad": "pesos"
+          }
+        ]
       },
       {
         "n_rango": 4,
         "inferior": 80000.0,
         "superior": 110000.0,
-        "cuota_fija": 150.0,
-        "tasa_marginal": 0.002
+        "columnas": [
+          {
+            "nombre": "general",
+            "valor": 150.0,
+            "tipo": "cuota_fija",
+            "unidad": "pesos"
+          }
+        ]
       },
       {
         "n_rango": 5,
         "inferior": 110000.0,
         "superior": 500000.0,
-        "cuota_fija": 200.0,
-        "tasa_marginal": 0.002
+        "columnas": [
+          {
+            "nombre": "general",
+            "valor": 200.0,
+            "tipo": "cuota_fija",
+            "unidad": "pesos"
+          }
+        ]
       },
       {
         "n_rango": 6,
         "inferior": 500000.0,
         "superior": 1000000.0,
-        "cuota_fija": 250.0,
-        "tasa_marginal": 0.0015
+        "columnas": [
+          {
+            "nombre": "general",
+            "valor": 250.0,
+            "tipo": "cuota_fija",
+            "unidad": "pesos"
+          }
+        ]
       },
       {
         "n_rango": 7,
         "inferior": 1000000.0,
         "superior": null,
-        "cuota_fija": 300.0,
-        "tasa_marginal": 0.0015
+        "columnas": [
+          {
+            "nombre": "general",
+            "valor": 300.0,
+            "tipo": "cuota_fija",
+            "unidad": "pesos"
+          }
+        ]
       }
     ],
     "minimo_predial": null,
-    "comentarios": "Se toma como tabla principal la tarifa progresiva del Artículo 13, normalizando los rangos centavados a límites contiguos: 20,001–50,000 a 20,000–50,000; 50,001–80,000 a 50,000–80,000; 80,001–110,000 a 80,000–110,000; 110,501–500,000 se normaliza a 110,000–500,000 conforme la instrucción de no dejar huecos, aunque el texto muestra 110,501. La misma tarifa se aplicará a los terrenos ejidales. Tarifa paralela no incluida en la tabla principal: 'Todo predio destinado a la producción agropecuaria 10 al millar anual sobre el valor registrado o catastral', por ser una tarifa separada para otro grupo de predios."
+    "comentarios": "Art. 13: tarifa principal por valor catastral con 7 brackets de cuota fija anual en pesos y factor marginal (0.25%, 0.25%, 0.25%, 0.20%, 0.20%, 0.15%, 0.15%); como la mecánica es híbrida de cuota fija + tasa sobre excedente, se clasifica como mixto. Además, el artículo incluye una tarifa paralela para predios destinados a la producción agropecuaria: 10 al millar anual sobre el valor registrado o catastral; se documenta aquí como tarifa secundaria paralela y no se integra a la tabla principal. La frase 'La misma tarifa se aplicará a los terrenos ejidales' se mantiene como nota textual, sin reclasificar la estructura principal. Art. 13 también contiene valores por m2/ha para terreno y tablas de calidad de construcción/categoría, pero no se incorporan porque el esquema principal del predial extraíble es la tarifa por valor catastral."
   },
   "_meta": {
     "fuente": "txt",
-    "modelo": "gpt-5.4"
+    "modelo": "gpt-5.4-mini"
   },
   "_meta_v2": {
-    "intentos": 3,
+    "intentos": 2,
     "requiere_revision": false,
-    "escalado": true,
-    "razon": "escalado_a_gpt-5.4_tras_2x_mini_fallido",
+    "escalado": false,
+    "razon": null,
+    "usado_reocr": false,
+    "usado_vision": false,
     "tokens": {
-      "input": 21015,
-      "output": 1491,
-      "cached": 11520
+      "input": 16452,
+      "output": 1103,
+      "cached": 11776
     },
     "cvegeo": "31082",
     "estado": "yucatan",

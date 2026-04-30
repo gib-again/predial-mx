@@ -24,7 +24,7 @@
       "periodicidad": "bimestral",
       "unidad": "pesos"
     },
-    "comentarios": "Art. 2: predios urbanos pagan 5 al millar anual; predios rústicos pagan 3 al millar anual. Mínimo predial: $23.00 bimestral. Se ignoran incentivos/bonificaciones por pago anual anticipado y por grupos específicos, por no formar parte de la mecánica de cálculo."
+    "comentarios": "Art. 2: predios urbanos 5 al millar anual y predios rústicos 3 al millar anual. Se documenta el mínimo predial de $23.00 bimestral. Los incentivos y bonificaciones posteriores se ignoran por instrucción."
   },
   "_meta": {
     "fuente": "txt",
@@ -35,10 +35,12 @@
     "requiere_revision": false,
     "escalado": false,
     "razon": null,
+    "usado_reocr": false,
+    "usado_vision": false,
     "tokens": {
-      "input": 5179,
-      "output": 226,
-      "cached": 3840
+      "input": 6396,
+      "output": 211,
+      "cached": 5888
     },
     "cvegeo": "05024",
     "estado": "coahuila",

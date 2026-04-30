@@ -5,7 +5,7 @@
       {
         "grupo": "urbano",
         "clave": "urbano_suburbano_con_edificaciones",
-        "descripcion": "Inmuebles urbanos y suburbanos con edificaciones, conforme al artículo 4, fracción I, II, III y IV.",
+        "descripcion": "Inmuebles urbanos y suburbanos con edificaciones",
         "tasa_millar": 0.0025,
         "periodicidad": "anual",
         "cuota_fija_adicional": null
@@ -13,7 +13,7 @@
       {
         "grupo": "urbano",
         "clave": "urbano_suburbano_sin_edificaciones",
-        "descripcion": "Inmuebles urbanos y suburbanos sin edificaciones, conforme al artículo 4, fracción I, II, III y IV.",
+        "descripcion": "Inmuebles urbanos y suburbanos sin edificaciones",
         "tasa_millar": 0.0046,
         "periodicidad": "anual",
         "cuota_fija_adicional": null
@@ -21,14 +21,14 @@
       {
         "grupo": "rustico",
         "clave": "rustico",
-        "descripcion": "Inmuebles rústicos, conforme al artículo 4, fracción I, II, III y IV.",
+        "descripcion": "Inmuebles rústicos",
         "tasa_millar": 0.0026,
         "periodicidad": "anual",
         "cuota_fija_adicional": null
       }
     ],
     "minimo_predial": null,
-    "comentarios": "Artículo 4 establece tres tasas sobre el valor catastral para inmuebles urbanos y suburbanos con edificaciones, urbanos y suburbanos sin edificaciones, y rústicos. Aunque las tasas varían por antigüedad del valor determinado o modificado (fracciones I a IV), la mecánica sigue siendo un catálogo de tasas al millar por categoría, no una tabla por rangos catastrales. Artículo 5 contiene valores unitarios de catastro y no se transcribe como mecánica del impuesto. No se advierten cuotas fijas adicionales ni mínimo predial en el texto proporcionado."
+    "comentarios": "Art. 4: las tasas del impuesto predial son anuales y se expresan por tipo de inmueble. La mecánica principal es un catálogo de tasas al millar por categoría, sin rangos de valor catastral. Se transcriben las tasas para inmuebles urbanos y suburbanos con edificaciones (2.5 al millar), urbanos y suburbanos sin edificaciones (4.6 al millar) e inmuebles rústicos (2.6 al millar). El Art. 5 contiene tablas de valores unitarios de suelo y construcción para avalúo, no la tarifa del impuesto."
   },
   "_meta": {
     "fuente": "txt",
@@ -39,10 +39,12 @@
     "requiere_revision": false,
     "escalado": false,
     "razon": null,
+    "usado_reocr": false,
+    "usado_vision": false,
     "tokens": {
-      "input": 8041,
-      "output": 372,
-      "cached": 3840
+      "input": 9258,
+      "output": 332,
+      "cached": 5888
     },
     "cvegeo": "11027",
     "estado": "guanajuato",

@@ -5,7 +5,7 @@
       {
         "grupo": "urbano",
         "clave": "predios_urbanos",
-        "descripcion": "Predios urbanos",
+        "descripcion": "Sobre los predios urbanos",
         "tasa_millar": 0.003,
         "periodicidad": "anual",
         "cuota_fija_adicional": null
@@ -13,7 +13,7 @@
       {
         "grupo": "rustico",
         "clave": "predios_rusticos",
-        "descripcion": "Predios rústicos",
+        "descripcion": "Sobre los predios rústicos",
         "tasa_millar": 0.003,
         "periodicidad": "anual",
         "cuota_fija_adicional": null
@@ -24,7 +24,7 @@
       "periodicidad": "bimestral",
       "unidad": "pesos"
     },
-    "comentarios": "Art. 2 fraccs. I y II: 3 al millar anual para predios urbanos y rústicos. Fracc. III: mínimo de $20.00 por bimestre y cuota mínima anual de $120.00. Fracc. IV establece que los predios rústicos dedicados a agricultura y ganadería cubren el 50% del monto del impuesto; se trata de una regla especial/beneficio, no se incorpora como tarifa principal. Se ignoran incentivos de pago anual, pensionados, instituciones y empresas nuevas por ser bonificaciones."
+    "comentarios": "Art. 2 fracc. IV: los predios rústicos dedicados a la agricultura y ganadería cubren el 50% del monto del impuesto. Se documenta como tarifa secundaria/beneficio sobre la cuota causada, no como mecánica principal. Los incentivos de pago anual anticipado, personas con derecho a estímulos y empresas de nueva creación se ignoran por ser bonificaciones/descuentos."
   },
   "_meta": {
     "fuente": "txt",
@@ -35,10 +35,12 @@
     "requiere_revision": false,
     "escalado": false,
     "razon": null,
+    "usado_reocr": false,
+    "usado_vision": false,
     "tokens": {
-      "input": 5543,
-      "output": 271,
-      "cached": 3840
+      "input": 6760,
+      "output": 240,
+      "cached": 5888
     },
     "cvegeo": "05022",
     "estado": "coahuila",

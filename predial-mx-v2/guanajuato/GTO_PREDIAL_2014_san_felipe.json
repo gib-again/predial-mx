@@ -3,17 +3,17 @@
     "tipo_esquema": "tarifa_millar",
     "tabla": [
       {
-        "grupo": "general",
-        "clave": "urbanos_y_suburbanos_con_edificacion",
-        "descripcion": "Inmuebles urbanos y suburbanos con edificaciones",
+        "grupo": "urbano",
+        "clave": "con_edificaciones",
+        "descripcion": "Inmuebles urbanos y suburbanos con edificaciones; tasa anual según antigüedad/periodo.",
         "tasa_millar": 0.0024,
         "periodicidad": "anual",
         "cuota_fija_adicional": null
       },
       {
-        "grupo": "general",
-        "clave": "urbanos_y_suburbanos_sin_edificacion",
-        "descripcion": "Inmuebles urbanos y suburbanos sin edificaciones",
+        "grupo": "urbano",
+        "clave": "sin_edificaciones",
+        "descripcion": "Inmuebles urbanos y suburbanos sin edificaciones; tasa anual según antigüedad/periodo.",
         "tasa_millar": 0.0045,
         "periodicidad": "anual",
         "cuota_fija_adicional": null
@@ -21,14 +21,14 @@
       {
         "grupo": "rustico",
         "clave": "rusticos",
-        "descripcion": "Inmuebles rústicos",
+        "descripcion": "Predios rústicos; tasa anual según antigüedad/periodo.",
         "tasa_millar": 0.0018,
         "periodicidad": "anual",
         "cuota_fija_adicional": null
       }
     ],
     "minimo_predial": null,
-    "comentarios": "Artículo 4 establece tasas anuales al millar por tipo de inmueble/predio: urbanos y suburbanos con edificaciones (2.4 al millar), urbanos y suburbanos sin edificaciones (4.5 al millar) y rústicos (1.8 al millar). El texto también contiene tablas de valores unitarios para avalúo en los artículos 5 y 6, pero no forman parte de la mecánica tarifaria del impuesto. Se ignoraron descuentos y demás beneficios."
+    "comentarios": "Art. 4: el impuesto predial se causa y liquida anualmente con tasas diferenciadas por tipo de inmueble y antigüedad; se transcriben las tasas vigentes para 2014 como catálogo categórico. La ley además remite a valores unitarios de terreno y construcción (Arts. 5 y 6), que son elementos de valuación catastral y no una mecánica tarifaria adicional. Se observan tasas históricas para periodos anteriores, pero la tarifa aplicable al ejercicio 2014 es la de entrada en vigor (2.4 al millar, 4.5 al millar y 1.8 al millar)."
   },
   "_meta": {
     "fuente": "txt",
@@ -39,10 +39,12 @@
     "requiere_revision": false,
     "escalado": false,
     "razon": null,
+    "usado_reocr": false,
+    "usado_vision": false,
     "tokens": {
-      "input": 7291,
-      "output": 303,
-      "cached": 3840
+      "input": 8508,
+      "output": 356,
+      "cached": 5888
     },
     "cvegeo": "11030",
     "estado": "guanajuato",

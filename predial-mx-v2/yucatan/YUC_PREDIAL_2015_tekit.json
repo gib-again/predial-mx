@@ -3,28 +3,35 @@
     "tipo_esquema": "tasa_unica",
     "tabla": [
       {
-        "descripcion": "Cuota fija de 50.00 más tasa de 0.15% sobre el valor catastral",
+        "descripcion": "Impuesto predial general sobre valor catastral",
         "tasa": 0.0015,
         "base_calculo": "valor_catastral",
-        "unidad": "porcentaje"
+        "unidad": "porcentaje",
+        "cuota_fija_adicional": {
+          "monto": 50.0,
+          "periodicidad": "anual",
+          "unidad": "pesos"
+        }
       }
     ],
     "minimo_predial": null,
-    "comentarios": "Artículo 14 establece que el impuesto predial se determinará con una cuota fija de 50.00 aplicando la tasa del 0.15% sobre el valor catastral. La estructura principal se captura como tasa única sobre valor catastral; la cuota fija adicional no tiene campo propio en este esquema. Se ignoraron las tablas de valores unitarios de terreno y construcción por ser catastrales, no tarifarias del impuesto. También se ignoraron descuentos del artículo 15 y el impuesto sobre rentas o frutos civiles del artículo 16 por no corresponder a la mecánica principal del predial sobre valor catastral."
+    "comentarios": "Art. 14: el impuesto predial se determina con una cuota fija de $50.00 aplicando la tasa del 0.15% sobre el valor catastral. Art. 16 establece una tarifa paralela para predios con base en rentas o frutos civiles: 2% mensual sobre la renta/frutos civiles para casas habitación y 2% mensual para actividades comerciales; se documenta sólo en comentarios por ser una mecánica secundaria/paralela respecto del predial principal sobre valor catastral. Las tablas de valores unitarios de terreno y construcción no se transcriben porque son valores catastrales, no tarifa."
   },
   "_meta": {
     "fuente": "txt",
-    "modelo": "gpt-5.4"
+    "modelo": "gpt-5.4-mini"
   },
   "_meta_v2": {
-    "intentos": 3,
+    "intentos": 1,
     "requiere_revision": false,
-    "escalado": true,
-    "razon": "escalado_a_gpt-5.4_tras_2x_mini_fallido",
+    "escalado": false,
+    "razon": null,
+    "usado_reocr": false,
+    "usado_vision": false,
     "tokens": {
-      "input": 18916,
-      "output": 722,
-      "cached": 13568
+      "input": 7212,
+      "output": 240,
+      "cached": 5888
     },
     "cvegeo": "31080",
     "estado": "yucatan",

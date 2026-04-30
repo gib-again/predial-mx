@@ -30,7 +30,7 @@
       }
     ],
     "minimo_predial": null,
-    "comentarios": "Art. 13 establece una mecánica heterogénea: para predios con valor catastral igual o menor a $200,000.00 se paga una cuota fija de $50.00; para valores catastrales superiores se calcula el impuesto aplicando el factor 0.00025 sobre (Tabla A + Tabla B). Además, el texto describe tablas de valores unitarios de terreno y construcción que sirven para integrar el valor catastral, no como tarifa independiente. Se ignoran descuentos del Art. 15 y la limitación de aumento del Art. 14 por no formar parte de la mecánica base de cálculo."
+    "comentarios": "Art. 13: la mecánica principal se define como valor catastral = (Tabla A de terreno + Tabla B de construcción) y luego se multiplica por 0.00025. Sin embargo, el mismo artículo establece una cuota fija de $50.00 cuando el valor catastral sea igual o menor a $200,000.00. Se transcribe como estructura mixta por coexistir cuota fija para un umbral y tasa al millar para el resto. Art. 14 y 15 contienen topes de incremento y descuento por pronto pago; no se incluyen en la mecánica de cálculo."
   },
   "_meta": {
     "fuente": "txt",
@@ -41,10 +41,12 @@
     "requiere_revision": false,
     "escalado": false,
     "razon": null,
+    "usado_reocr": false,
+    "usado_vision": false,
     "tokens": {
-      "input": 5977,
-      "output": 262,
-      "cached": 3840
+      "input": 7194,
+      "output": 257,
+      "cached": 5888
     },
     "cvegeo": "31064",
     "estado": "yucatan",

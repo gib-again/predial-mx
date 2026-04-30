@@ -3,74 +3,74 @@
     "tipo_esquema": "tarifa_millar",
     "tabla": [
       {
-        "grupo": "urbano",
-        "clave": "industrial_urbano",
-        "descripcion": "predios urbanos industriales con o sin edificación",
-        "tasa_millar": 5.0,
+        "grupo": "general",
+        "clave": "urbano_industrial",
+        "descripcion": "Predios urbanos industriales con o sin edificación",
+        "tasa_millar": 0.005,
         "periodicidad": "anual",
         "cuota_fija_adicional": null
       },
       {
-        "grupo": "urbano",
-        "clave": "comercial_urbano_con_edificacion",
-        "descripcion": "predios urbanos comerciales con edificación",
-        "tasa_millar": 5.0,
+        "grupo": "general",
+        "clave": "urbano_comercial_con_edificacion",
+        "descripcion": "Predios urbanos comerciales con edificación",
+        "tasa_millar": 0.005,
         "periodicidad": "anual",
         "cuota_fija_adicional": null
       },
       {
-        "grupo": "urbano",
-        "clave": "comercial_urbano_sin_edificacion",
-        "descripcion": "predios urbanos comerciales sin edificación",
-        "tasa_millar": 6.65,
+        "grupo": "general",
+        "clave": "urbano_comercial_sin_edificacion",
+        "descripcion": "Predios urbanos comerciales sin edificación; 1.33 veces lo fijado para los predios con edificación",
+        "tasa_millar": 0.00665,
         "periodicidad": "anual",
         "cuota_fija_adicional": null
       },
       {
-        "grupo": "urbano",
-        "clave": "residencial_interes_social_popular_con_edificacion",
-        "descripcion": "predios urbanos residenciales, de interés social y populares con edificación",
-        "tasa_millar": 5.0,
+        "grupo": "general",
+        "clave": "urbano_residencial_con_edificacion",
+        "descripcion": "Predios urbanos residenciales, de interés social y populares con edificación",
+        "tasa_millar": 0.005,
         "periodicidad": "anual",
         "cuota_fija_adicional": null
       },
       {
-        "grupo": "urbano",
-        "clave": "residencial_interes_social_popular_sin_edificacion",
-        "descripcion": "predios urbanos residenciales, de interés social y populares sin edificación",
-        "tasa_millar": 6.65,
+        "grupo": "general",
+        "clave": "urbano_residencial_sin_edificacion",
+        "descripcion": "Predios urbanos residenciales, de interés social y populares sin edificación; 1.33 veces lo fijado para los predios con edificación",
+        "tasa_millar": 0.00665,
         "periodicidad": "anual",
         "cuota_fija_adicional": null
       },
       {
         "grupo": "rustico",
         "clave": "rustico_general",
-        "descripcion": "predios rústicos",
-        "tasa_millar": 3.0,
+        "descripcion": "Predios rústicos",
+        "tasa_millar": 0.003,
         "periodicidad": "anual",
         "cuota_fija_adicional": null
       },
       {
         "grupo": "rustico",
         "clave": "rustico_industrial_eolica_ejecucion",
-        "descripcion": "predios rústicos industriales con explotación de energía renovable (eólica) en ejecución",
-        "tasa_millar": 5.0,
+        "descripcion": "Predios rústicos industriales con explotación de energía renovable (eólica) en ejecución",
+        "tasa_millar": 0.005,
         "periodicidad": "anual",
         "cuota_fija_adicional": null
       },
       {
         "grupo": "rustico",
         "clave": "rustico_industrial_eolica_desarrollo",
-        "descripcion": "predios rústicos industriales con explotación de energía renovable (eólica) en desarrollo",
-        "tasa_millar": 5.0,
+        "descripcion": "Predios rústicos industriales con explotación de energía renovable (eólica) en desarrollo",
+        "tasa_millar": 0.005,
         "periodicidad": "anual",
         "cuota_fija_adicional": null
       },
       {
         "grupo": "rustico",
         "clave": "rustico_industrial_eolica_proyecto",
-        "descripcion": "predios rústicos industriales con explotación de energía renovable (eólica) en proyecto",
-        "tasa_millar": 5.0,
+        "descripcion": "Predios rústicos industriales con explotación de energía renovable (eólica) en proyecto",
+        "tasa_millar": 0.005,
         "periodicidad": "anual",
         "cuota_fija_adicional": null
       }
@@ -80,7 +80,7 @@
       "periodicidad": "bimestral",
       "unidad": "pesos"
     },
-    "comentarios": "Art. 2: se transcribe la mecánica de tasas por categoría de predio. Para comerciales y residenciales sin edificación se aplica 1.33 veces la cuota de los predios con edificación; se expresa como tasa equivalente de 6.65 al millar. Art. 2 fr. VIII establece un mínimo predial de $50.50 bimestral. Los incentivos, descuentos y bonificaciones del propio artículo 2 y el artículo 3 se ignoran por instrucción; no se incorporan en la mecánica de cálculo."
+    "comentarios": "Art. 2 establece tasas categóricas al millar sobre valor catastral para predios urbanos industriales, urbanos comerciales (con edificación y sin edificación), urbanos residenciales, de interés social y populares (con edificación y sin edificación), rústicos y rústicos industriales con explotación eólica en ejecución/desarrollo/proyecto. Se documenta literalmente la relación de 1.33 veces para los predios sin edificación como tasa derivada. No se incluyen incentivos, descuentos ni bonificaciones. Art. 2 fracción VIII fija un mínimo predial de $50.50 por bimestre. Art. 2 también menciona un incentivo de 1 al millar anual para predios de instituciones educativas no públicas y un pago del 20% para predios con licencia de fraccionamiento en vías de desarrollo; se omiten por ser incentivos/beneficios, no la mecánica general. Art. 3 contiene incentivos fiscales por generación de empleos directos y para personas con discapacidad; se omiten por no ser mecánica general del impuesto."
   },
   "_meta": {
     "fuente": "txt",
@@ -91,10 +91,12 @@
     "requiere_revision": false,
     "escalado": false,
     "razon": null,
+    "usado_reocr": false,
+    "usado_vision": false,
     "tokens": {
-      "input": 6148,
-      "output": 673,
-      "cached": 3840
+      "input": 7365,
+      "output": 816,
+      "cached": 5888
     },
     "cvegeo": "05027",
     "estado": "coahuila",

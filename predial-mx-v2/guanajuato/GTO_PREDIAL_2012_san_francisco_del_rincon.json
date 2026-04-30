@@ -4,31 +4,31 @@
     "tabla": [
       {
         "grupo": "general",
-        "clave": "urbanos_suburbanos_sin_edificaciones",
-        "descripcion": "Inmuebles urbanos y suburbanos con sin edificaciones",
+        "clave": "urbanos_suburbanos_con_edificacion",
+        "descripcion": "Inmuebles urbanos y suburbanos con edificaciones; valor determinado o modificado a la entrada en vigor de la ley y durante 2002-2011.",
+        "tasa_millar": 0.002,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "general",
+        "clave": "urbanos_suburbanos_sin_edificacion",
+        "descripcion": "Inmuebles urbanos y suburbanos sin edificaciones; valor determinado o modificado a la entrada en vigor de la ley y durante 2002-2011.",
         "tasa_millar": 0.00375,
         "periodicidad": "anual",
         "cuota_fija_adicional": null
       },
       {
         "grupo": "general",
-        "clave": "urbanos_suburbanos_con_edificaciones",
-        "descripcion": "Inmuebles urbanos y suburbanos con edificaciones",
-        "tasa_millar": 0.00375,
-        "periodicidad": "anual",
-        "cuota_fija_adicional": null
-      },
-      {
-        "grupo": "rustico",
         "clave": "rusticos",
-        "descripcion": "Inmuebles rústicos",
+        "descripcion": "Inmuebles rústicos; valor determinado o modificado a la entrada en vigor de la ley y durante 2002-2011.",
         "tasa_millar": 0.0015,
         "periodicidad": "anual",
         "cuota_fija_adicional": null
       }
     ],
     "minimo_predial": null,
-    "comentarios": "Art. 4 establece tasas anuales al millar por categoría de inmueble y por antigüedad del valor determinado o modificado. La tabla principal refleja la estructura predominante de categorías fiscales. El artículo también contiene una tarifa paralela por antigüedad para inmuebles urbanos y suburbanos: 2 al millar para valores a la entrada en vigor de la ley y años 2002-2011; 8 al millar para valores con anterioridad a 2002 y hasta 1993; 13 al millar para valores con anterioridad a 1993; en el texto aparecen separadas las columnas 'con sin edificaciones' y 'con edificaciones' con la misma tasa en cada renglón de 2012. Se ignoran los artículos 5 y 6 por corresponder a valores unitarios de catastro, no a la mecánica del impuesto."
+    "comentarios": "Art. 4 establece tasas anuales diferenciadas por tipo de inmueble. El texto también contiene tarifas históricas por año de determinación del valor: con anterioridad a 2002 y hasta 1993, 8 al millar (urbanos/suburbanos con edificación), 15 al millar (urbanos/suburbanos sin edificación) y 6 al millar (rústicos); con anterioridad a 1993, 13 al millar, 13 al millar y 12 al millar respectivamente. No se incluyen en la tabla principal porque la mecánica predominante se presenta por categorías y el enunciado de la tabla queda truncado en el OCR. Art. 5 y 6 contienen valores unitarios y criterios de valuación catastral, no la tarifa del predial."
   },
   "_meta": {
     "fuente": "txt",
@@ -39,10 +39,12 @@
     "requiere_revision": false,
     "escalado": false,
     "razon": null,
+    "usado_reocr": false,
+    "usado_vision": false,
     "tokens": {
-      "input": 7305,
-      "output": 386,
-      "cached": 3840
+      "input": 8522,
+      "output": 432,
+      "cached": 5888
     },
     "cvegeo": "11031",
     "estado": "guanajuato",

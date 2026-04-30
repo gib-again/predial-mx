@@ -1,56 +1,33 @@
 {
   "predial": {
-    "tipo_esquema": "tarifa_millar",
+    "tipo_esquema": "tasa_unica",
     "tabla": [
       {
-        "grupo": "urbano",
-        "clave": "secciones_1_a_4",
-        "descripcion": "Predios urbanos en secciones 1 a 4: tasa sobre valor catastral",
-        "tasa_millar": 0.002,
-        "periodicidad": "anual",
+        "descripcion": "Tasa del 0.20% sobre el valor catastral de la sección 1 a la sección 4",
+        "tasa": 0.2,
+        "base_calculo": "valor_catastral",
+        "unidad": "porcentaje",
         "cuota_fija_adicional": null
-      },
-      {
-        "grupo": "rustico",
-        "clave": "predio_rustico",
-        "descripcion": "Predio rústico cuando no se pudiera determinar el valor catastral: cuota fija",
-        "tasa_millar": 0.0,
-        "periodicidad": "anual",
-        "cuota_fija_adicional": {
-          "monto": 65.0,
-          "periodicidad": "anual",
-          "unidad": "pesos"
-        }
-      },
-      {
-        "grupo": "urbano",
-        "clave": "predio_urbano_sin_determinacion",
-        "descripcion": "Predio urbano cuando no se pudiera determinar el valor catastral: cuota fija",
-        "tasa_millar": 0.0,
-        "periodicidad": "anual",
-        "cuota_fija_adicional": {
-          "monto": 80.0,
-          "periodicidad": "anual",
-          "unidad": "pesos"
-        }
       }
     ],
     "minimo_predial": null,
-    "comentarios": "Art. 13: el impuesto predial se determina aplicando la tasa del 0.20% sobre el valor catastral de la sección 1 a la sección 4. Cuando no se pudiera determinar, se cobra cuota fija de $80.00 para predio urbano y $65.00 para predio rústico. Se ignoran los artículos 14 (descuento) y 15 (rentas o frutos civiles) por no ser mecánica base del predial sobre valor catastral. No se transcriben las tablas de valores unitarios de terreno/construcción porque son catastro, no tarifa."
+    "comentarios": "La mecánica principal del impuesto predial en el Artículo 13 es una tasa única de 0.20% sobre el valor catastral. El mismo artículo señala que cuando no se pudiera determinar el valor catastral se cobrará una cuota fija de 80.00 pesos para predio urbano y 65.00 pesos para predio rústico; esas cuotas operan como regla supletoria y no como la mecánica principal. Las tablas de valores unitarios de terreno, construcción y rústicos son de valuación catastral, no la tarifa del impuesto predial. El Artículo 15 establece un impuesto con base en rentas o frutos civiles de 2% mensual para casas habitación y 2% mensual para actividades comerciales, pero es una tarifa distinta y no se incorpora a la tabla principal del predial."
   },
   "_meta": {
     "fuente": "txt",
-    "modelo": "gpt-5.4-mini"
+    "modelo": "gpt-5.4"
   },
   "_meta_v2": {
-    "intentos": 1,
+    "intentos": 3,
     "requiere_revision": false,
-    "escalado": false,
-    "razon": null,
+    "escalado": true,
+    "razon": "escalado_a_gpt-5.4_tras_2x_mini_fallido",
+    "usado_reocr": false,
+    "usado_vision": false,
     "tokens": {
-      "input": 6131,
-      "output": 388,
-      "cached": 3840
+      "input": 23393,
+      "output": 869,
+      "cached": 17664
     },
     "cvegeo": "31029",
     "estado": "yucatan",

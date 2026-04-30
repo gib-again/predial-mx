@@ -3,10 +3,11 @@
     "tipo_esquema": "tasa_unica",
     "tabla": [
       {
-        "descripcion": "Impuesto predial base sobre el valor catastral del inmueble o terreno",
+        "descripcion": "Impuesto predial base sobre valor catastral",
         "tasa": 0.00025,
         "base_calculo": "valor_catastral",
-        "unidad": "al_millar"
+        "unidad": "porcentaje",
+        "cuota_fija_adicional": null
       }
     ],
     "minimo_predial": {
@@ -14,7 +15,7 @@
       "periodicidad": "anual",
       "unidad": "pesos"
     },
-    "comentarios": "Art. 13 establece una sola tasa uniforme de 0.00025 sobre el valor catastral. También prevé una cuota fija anual de $50.00 para predios con valor catastral igual o menor a $200,000.00; se conserva como mínimo predial porque coexiste con la regla general de cálculo. La sección incluye tablas de valores unitarios de terreno y construcción, que son catastro y no se transcriben como tarifa. Art. 14 contiene descuentos, que se ignoran."
+    "comentarios": "Art. 13: el valor catastral se obtiene sumando el valor del terreno por m2 según sección/manzana o comisaría y el valor de construcción según tipo y zona; sobre ese valor catastral se aplica el factor 0.00025. Para predios con valor catastral igual o menor a $200,000.00 se paga cuota fija de $50.00. La tabla de valores unitarios de terreno y construcción es catastro y no forma parte de la mecánica tarifaria. Se menciona un tope comparativo anual de 6% o 10% sobre el impuesto inmediato anterior, pero se ignora por ser disposición de limitación/ajuste y no mecánica base de cálculo."
   },
   "_meta": {
     "fuente": "txt",
@@ -25,10 +26,12 @@
     "requiere_revision": false,
     "escalado": false,
     "razon": null,
+    "usado_reocr": false,
+    "usado_vision": false,
     "tokens": {
-      "input": 6171,
-      "output": 209,
-      "cached": 3840
+      "input": 7388,
+      "output": 255,
+      "cached": 5888
     },
     "cvegeo": "31043",
     "estado": "yucatan",

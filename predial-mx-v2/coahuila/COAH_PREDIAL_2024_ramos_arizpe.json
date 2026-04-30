@@ -4,8 +4,8 @@
     "tabla": [
       {
         "grupo": "urbano",
-        "clave": "industrial",
-        "descripcion": "predios urbanos industriales con o sin edificación",
+        "clave": "industrial_con_o_sin_edificacion",
+        "descripcion": "Predios urbanos industriales con o sin edificación",
         "tasa_millar": 0.005,
         "periodicidad": "anual",
         "cuota_fija_adicional": null
@@ -13,7 +13,7 @@
       {
         "grupo": "urbano",
         "clave": "comercial_con_edificacion",
-        "descripcion": "predios urbanos comerciales con edificación",
+        "descripcion": "Predios urbanos comerciales con edificación",
         "tasa_millar": 0.005,
         "periodicidad": "anual",
         "cuota_fija_adicional": null
@@ -21,7 +21,7 @@
       {
         "grupo": "urbano",
         "clave": "comercial_sin_edificacion",
-        "descripcion": "predios urbanos comerciales sin edificación",
+        "descripcion": "Predios urbanos comerciales sin edificación",
         "tasa_millar": 0.006,
         "periodicidad": "anual",
         "cuota_fija_adicional": null
@@ -29,7 +29,7 @@
       {
         "grupo": "urbano",
         "clave": "residencial_interes_social_popular_con_edificacion",
-        "descripcion": "predios urbanos residenciales, de interés social y populares con edificación",
+        "descripcion": "Predios urbanos residenciales, de interés social y populares con edificación",
         "tasa_millar": 0.005,
         "periodicidad": "anual",
         "cuota_fija_adicional": null
@@ -37,7 +37,7 @@
       {
         "grupo": "urbano",
         "clave": "residencial_interes_social_popular_sin_edificacion",
-        "descripcion": "predios urbanos residenciales, de interés social y populares sin edificación",
+        "descripcion": "Predios urbanos residenciales, de interés social y populares sin edificación",
         "tasa_millar": 0.006,
         "periodicidad": "anual",
         "cuota_fija_adicional": null
@@ -45,7 +45,7 @@
       {
         "grupo": "rustico",
         "clave": "rustico_general",
-        "descripcion": "predios rústicos",
+        "descripcion": "Predios rústicos",
         "tasa_millar": 0.003,
         "periodicidad": "anual",
         "cuota_fija_adicional": null
@@ -53,7 +53,7 @@
       {
         "grupo": "rustico",
         "clave": "rustico_industrial_eolica_solar_en_ejecucion",
-        "descripcion": "predios rústicos industriales con explotación de energías renovables (eólica y solar) en ejecución",
+        "descripcion": "Predios rústicos industriales con explotación de energías renovables (eólica y solar) en ejecución",
         "tasa_millar": 0.005,
         "periodicidad": "anual",
         "cuota_fija_adicional": null
@@ -61,7 +61,7 @@
       {
         "grupo": "rustico",
         "clave": "rustico_industrial_eolica_solar_en_desarrollo",
-        "descripcion": "predios rústicos industriales con explotación de energía renovable (eólica y solar) en desarrollo",
+        "descripcion": "Predios rústicos industriales con explotación de energía renovable (eólica y solar) en desarrollo",
         "tasa_millar": 0.005,
         "periodicidad": "anual",
         "cuota_fija_adicional": null
@@ -69,7 +69,7 @@
       {
         "grupo": "rustico",
         "clave": "rustico_industrial_eolica_solar_en_proyecto",
-        "descripcion": "predios rústicos industriales con explotación de energía renovable (eólica y solar) en proyecto",
+        "descripcion": "Predios rústicos industriales con explotación de energía renovable (eólica y solar) en proyecto",
         "tasa_millar": 0.005,
         "periodicidad": "anual",
         "cuota_fija_adicional": null
@@ -80,7 +80,7 @@
       "periodicidad": "anual",
       "unidad": "pesos"
     },
-    "comentarios": "Art. 2 establece tasas al millar por tipo de predio. Se transcriben como tarifa_millar porque no hay brackets por valor catastral. El texto también prevé una tasa de 1 al millar para predios de instituciones educativas no públicas y un estímulo para predios prestados al municipio (10% de la cuota) y para predios con licencia de fraccionamiento en vías de desarrollo (pagan hasta 30% del impuesto correspondiente); se omiten por ser incentivos/condiciones especiales y no la mecánica general. Art. 3 contiene incentivos fiscales por empleos directos y discapacidad, también omitidos por no ser mecánica base del impuesto."
+    "comentarios": "Art. 2: la mecánica principal es un catálogo de tasas al millar por tipo de predio. El texto también establece que el pago bimestral no podrá ser inferior a $61.00 y que ciertos contribuyentes/prestadores de predio pueden acceder a incentivos o reducciones (15%, 10%, 5%, 50%, 10%, 1 al millar para instituciones educativas no públicas, y hasta 30% para fraccionamientos en desarrollo), pero estos son beneficios/estímulos y no forman parte de la mecánica base de cálculo. Art. 3 regula incentivos fiscales por generación de empleos y discapacidad, no altera la tasa base del predial."
   },
   "_meta": {
     "fuente": "txt",
@@ -91,10 +91,12 @@
     "requiere_revision": false,
     "escalado": false,
     "razon": null,
+    "usado_reocr": false,
+    "usado_vision": false,
     "tokens": {
-      "input": 6384,
-      "output": 719,
-      "cached": 3840
+      "input": 7601,
+      "output": 727,
+      "cached": 5888
     },
     "cvegeo": "05027",
     "estado": "coahuila",

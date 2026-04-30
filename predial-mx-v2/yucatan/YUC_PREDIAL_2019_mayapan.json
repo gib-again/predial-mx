@@ -53,7 +53,7 @@
       }
     ],
     "minimo_predial": null,
-    "comentarios": "Art. 6: tarifa progresiva anual sobre valor catastral con cuota fija + factor aplicado al excedente del límite inferior. Art. 7 establece una tasa mensual por rentas o frutos civiles (Habitacional 2% y Comercial 5% sobre la contraprestación), pero es una base distinta y se deja fuera de la tabla principal por ser tarifa paralela."
+    "comentarios": "Art. 6: Tarifa principal progresiva sobre valor catastral con cuota fija anual y factor sobre el excedente del límite inferior. Art. 7: cuando el predial se cause sobre rentas o frutos civiles, la tasa es mensual sobre la contraprestación: 2% para predio habitacional y 5% para predio comercial; se documenta como tarifa secundaria paralela y no se integra a la tabla principal. La tasa por valor catastral es la mecánica predominante del impuesto."
   },
   "_meta": {
     "fuente": "txt",
@@ -64,10 +64,12 @@
     "requiere_revision": false,
     "escalado": false,
     "razon": null,
+    "usado_reocr": false,
+    "usado_vision": false,
     "tokens": {
-      "input": 6117,
-      "output": 380,
-      "cached": 3840
+      "input": 7334,
+      "output": 410,
+      "cached": 5888
     },
     "cvegeo": "31049",
     "estado": "yucatan",

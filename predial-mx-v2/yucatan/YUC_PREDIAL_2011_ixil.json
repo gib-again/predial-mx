@@ -1,18 +1,37 @@
 {
-  "predial": null,
+  "predial": {
+    "tipo_esquema": "tasa_unica",
+    "tabla": [
+      {
+        "descripcion": "Impuesto predial general sobre valor catastral para secciones 1 a 4",
+        "tasa": 0.001,
+        "base_calculo": "valor_catastral",
+        "unidad": "porcentaje",
+        "cuota_fija_adicional": null
+      }
+    ],
+    "minimo_predial": {
+      "monto": 60.0,
+      "periodicidad": "anual",
+      "unidad": "pesos"
+    },
+    "comentarios": "Art. 13: además del esquema general, la zona costera paga 0.40% sobre valor catastral; y para predios rústicos se listan valores unitarios por hectárea (brecha $1,000; camino blanco $2,000; carretera $3,000) como tarifa paralela. Art. 15 establece predial con base en rentas o frutos civiles: 2% mensual sobre renta de casas habitación y 2% mensual sobre renta de actividades comerciales; se documenta como tarifa secundaria no predominante. Se ignoró el descuento del Art. 14."
+  },
   "_meta": {
     "fuente": "txt",
-    "modelo": "gpt-5.4"
+    "modelo": "gpt-5.4-mini"
   },
   "_meta_v2": {
-    "intentos": 3,
-    "requiere_revision": true,
-    "escalado": true,
-    "razon": "valido_3x_fallido | mini_e1=  • predial.mixto: Value error, bracket 1: superior=None solo permitido en el último rango | mini_e2=  • predial.mixto: Value error, bracket 1: superior=None solo permitido en el último rango | full_e3=  • predial.mixto: Value error, bracket 1: superior=None solo permitido en el último rango",
+    "intentos": 1,
+    "requiere_revision": false,
+    "escalado": false,
+    "razon": null,
+    "usado_reocr": false,
+    "usado_vision": false,
     "tokens": {
-      "input": 19456,
-      "output": 933,
-      "cached": 13568
+      "input": 7392,
+      "output": 243,
+      "cached": 5888
     },
     "cvegeo": "31039",
     "estado": "yucatan",

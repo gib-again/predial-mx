@@ -1,21 +1,12 @@
 {
   "predial": {
-    "tipo_esquema": "tarifa_millar",
+    "tipo_esquema": "tasa_unica",
     "tabla": [
       {
-        "grupo": "general",
-        "clave": "secciones_1_a_4",
-        "descripcion": "Predial sobre valor catastral de la sección I a la IV",
-        "tasa_millar": 0.001,
-        "periodicidad": "anual",
-        "cuota_fija_adicional": null
-      },
-      {
-        "grupo": "general",
-        "clave": "zona_costera",
-        "descripcion": "Zona costera sobre valor catastral",
-        "tasa_millar": 0.01,
-        "periodicidad": "anual",
+        "descripcion": "Impuesto predial general sobre valor catastral de la sección I a la sección IV",
+        "tasa": 0.001,
+        "base_calculo": "valor_catastral",
+        "unidad": "al_millar",
         "cuota_fija_adicional": null
       }
     ],
@@ -24,21 +15,23 @@
       "periodicidad": "anual",
       "unidad": "pesos"
     },
-    "comentarios": "Art. 13: el impuesto predial se determina multiplicando por 0.001 sobre el valor catastral de la sección I a la IV; cuando no se pudiera determinar se cobra cuota fija de $60.00. También establece una tarifa paralela para la zona costera: 0.010 sobre el valor catastral. Se ignoran tablas de valores unitarios de terreno y construcción por ser catastro, no tarifa. No se incluye el Art. 15 (rentas o frutos civiles) por ser impuesto sobre rentas, no mecánica del predial sobre valor catastral."
+    "comentarios": "Art. 13: la mecánica principal es una tasa única de 0.001 sobre el valor catastral para la sección I a la sección IV. La zona costera se indica con 0.010 sobre el valor catastral, pero el texto también presenta tablas de valores unitarios de terreno y construcción que corresponden a catastro, no a la mecánica tarifaria del predial. Art. 15 establece una tarifa secundaria por rentas o frutos civiles: 2% mensual sobre casas habitación y 2% mensual sobre actividades comerciales; se documenta sólo como referencia textual porque no es la mecánica principal del predial. Art. 13 también prevé cuota fija de $60.00 cuando no se pudiera determinar el impuesto."
   },
   "_meta": {
     "fuente": "txt",
     "modelo": "gpt-5.4-mini"
   },
   "_meta_v2": {
-    "intentos": 1,
+    "intentos": 2,
     "requiere_revision": false,
     "escalado": false,
     "razon": null,
+    "usado_reocr": false,
+    "usado_vision": false,
     "tokens": {
-      "input": 6213,
-      "output": 286,
-      "cached": 3840
+      "input": 15516,
+      "output": 577,
+      "cached": 11776
     },
     "cvegeo": "31039",
     "estado": "yucatan",

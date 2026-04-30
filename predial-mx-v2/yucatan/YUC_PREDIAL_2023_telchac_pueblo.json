@@ -1,115 +1,75 @@
 {
   "predial": {
-    "tipo_esquema": "mixto",
+    "tipo_esquema": "progresivo",
     "tabla": [
       {
         "n_rango": 1,
         "inferior": 1.0,
         "superior": 20000.0,
-        "columnas": [
-          {
-            "nombre": "general",
-            "valor": 80.0,
-            "tipo": "cuota_fija",
-            "unidad": "pesos"
-          }
-        ]
+        "cuota_fija": 80.0,
+        "tasa_marginal": 0.0025
       },
       {
         "n_rango": 2,
-        "inferior": 20001.0,
+        "inferior": 20000.0,
         "superior": 50000.0,
-        "columnas": [
-          {
-            "nombre": "general",
-            "valor": 100.0,
-            "tipo": "cuota_fija",
-            "unidad": "pesos"
-          }
-        ]
+        "cuota_fija": 100.0,
+        "tasa_marginal": 0.0025
       },
       {
         "n_rango": 3,
-        "inferior": 50001.0,
+        "inferior": 50000.0,
         "superior": 80000.0,
-        "columnas": [
-          {
-            "nombre": "general",
-            "valor": 150.0,
-            "tipo": "cuota_fija",
-            "unidad": "pesos"
-          }
-        ]
+        "cuota_fija": 150.0,
+        "tasa_marginal": 0.0025
       },
       {
         "n_rango": 4,
-        "inferior": 80001.0,
+        "inferior": 80000.0,
         "superior": 110000.0,
-        "columnas": [
-          {
-            "nombre": "general",
-            "valor": 200.0,
-            "tipo": "cuota_fija",
-            "unidad": "pesos"
-          }
-        ]
+        "cuota_fija": 200.0,
+        "tasa_marginal": 0.002
       },
       {
         "n_rango": 5,
         "inferior": 110000.0,
         "superior": 500000.0,
-        "columnas": [
-          {
-            "nombre": "general",
-            "valor": 250.0,
-            "tipo": "cuota_fija",
-            "unidad": "pesos"
-          }
-        ]
+        "cuota_fija": 250.0,
+        "tasa_marginal": 0.002
       },
       {
         "n_rango": 6,
-        "inferior": 500001.0,
+        "inferior": 500000.0,
         "superior": 1000000.0,
-        "columnas": [
-          {
-            "nombre": "general",
-            "valor": 300.0,
-            "tipo": "cuota_fija",
-            "unidad": "pesos"
-          }
-        ]
+        "cuota_fija": 300.0,
+        "tasa_marginal": 0.0015
       },
       {
         "n_rango": 7,
-        "inferior": 1000001.0,
+        "inferior": 1000000.0,
         "superior": null,
-        "columnas": [
-          {
-            "nombre": "general",
-            "valor": 350.0,
-            "tipo": "cuota_fija",
-            "unidad": "pesos"
-          }
-        ]
+        "cuota_fija": 350.0,
+        "tasa_marginal": 0.0015
       }
     ],
     "minimo_predial": null,
-    "comentarios": "Artículo 13: se transcribe la tarifa principal del valor catastral como estructura mixta porque la tabla incluye límites inferior/superior con cuota fija anual y factor porcentual al excedente (0.25%, 0.20%, 0.15%). Se normalizó el hueco aparente entre 110,000 y 110,501 como contigüidad estructural del texto; además, la fila de 1,000,001 en adelante queda abierta. La tarifa paralela para predios agropecuarios (10 al millar anual sobre valor registrado o catastral) no se incluye en la tabla principal por ser una tarifa separada."
+    "comentarios": "Se toma como mecánica principal la tarifa por rangos de valor catastral con cuota fija anual más factor al excedente del límite inferior. Los rangos fueron normalizados para eliminar la convención centavera del texto ('20,001', '50,001', etc.) y también el salto '110,501', quedando límites contiguos. El texto además establece una tarifa paralela: 'Todo predio destinado a la producción agropecuaria 10 al millar anual sobre el valor registrado o catastral'; no se incluye en la tabla principal por ser tarifa separada. También señala que la misma tarifa principal se aplicará a los terrenos ejidales."
   },
   "_meta": {
     "fuente": "txt",
-    "modelo": "gpt-5.4-mini"
+    "modelo": "gpt-5.4"
   },
   "_meta_v2": {
-    "intentos": 2,
+    "intentos": 3,
     "requiere_revision": false,
-    "escalado": false,
-    "razon": null,
+    "escalado": true,
+    "razon": "escalado_a_gpt-5.4_tras_2x_mini_fallido",
+    "usado_reocr": false,
+    "usado_vision": false,
     "tokens": {
-      "input": 13932,
-      "output": 876,
-      "cached": 8704
+      "input": 25254,
+      "output": 1321,
+      "cached": 17664
     },
     "cvegeo": "31082",
     "estado": "yucatan",

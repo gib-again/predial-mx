@@ -20,7 +20,7 @@
       },
       {
         "grupo": "urbano",
-        "clave": "residencial_interes_social_popular_con_edificacion",
+        "clave": "residencial_interes_social_populares_con_edificacion",
         "descripcion": "Predios urbanos residenciales, de interés social y populares con edificación",
         "tasa_millar": 0.005,
         "periodicidad": "anual",
@@ -28,7 +28,7 @@
       },
       {
         "grupo": "rustico",
-        "clave": "rustico",
+        "clave": "rustico_general",
         "descripcion": "Predios rústicos",
         "tasa_millar": 0.003,
         "periodicidad": "anual",
@@ -40,7 +40,7 @@
       "periodicidad": "bimestral",
       "unidad": "pesos"
     },
-    "comentarios": "Art. 2 establece tasas al millar por categoría de predio sobre valor catastral. Se transcribe solo la mecánica principal. Las frases '1.33 veces lo fijado' para predios comerciales sin edificación y residenciales sin edificación remiten a una relación derivada respecto de la tasa de la fila con edificación, pero no se presentan como filas tarifarias independientes en el texto. Art. 2 también fija un mínimo predial de $32.00 por bimestre. Se omiten incentivos, condonaciones y bonificaciones de los arts. 2, 3 y 4 por instrucción."
+    "comentarios": "Art. 2: para predios urbanos comerciales sin edificación y predios urbanos residenciales/de interés social/populares sin edificación, la ley indica 1.33 veces lo fijado para los predios con edificación; no se transcribe como fila separada por depender de la tasa base ya capturada. Art. 2: predios urbanos industriales pagan 5 al millar anual; predios urbanos comerciales con edificación 5 al millar; predios urbanos residenciales, de interés social y populares con edificación hasta 5 al millar; predios rústicos 3 al millar anual. Art. 2: instituciones educativas no públicas pagan 1 al millar anual en el predio donde se localicen, y predios con licencia de fraccionamiento en vías de desarrollo pagan el 20% del impuesto predial correspondiente al valor considerando como predio ya fraccionado y desarrollado; se documentan como incentivos/tarifas especiales no estructuradas en la tabla principal. Art. 3 y 4 contienen incentivos/condonaciones por empleo y zona comercial, ignorados por no formar parte de la mecánica base."
   },
   "_meta": {
     "fuente": "txt",
@@ -51,10 +51,12 @@
     "requiere_revision": false,
     "escalado": false,
     "razon": null,
+    "usado_reocr": false,
+    "usado_vision": false,
     "tokens": {
-      "input": 5983,
-      "output": 396,
-      "cached": 4352
+      "input": 7200,
+      "output": 501,
+      "cached": 5888
     },
     "cvegeo": "05027",
     "estado": "coahuila",

@@ -1,25 +1,50 @@
 {
   "predial": {
-    "tipo_esquema": "otro_no_clasificado",
-    "categoria": "segmento_vacio",
-    "descripcion_estructural": "El texto proporcionado no contiene la sección tarifaria del Impuesto Predial; sólo aparecen portadas y páginas iniciales con el encabezado de la ley, pero no se observan tablas, cuotas ni tasas aplicables al predial. No hay mecánica de cálculo extraíble en el segmento compartido.",
-    "tabla_cruda": [],
+    "tipo_esquema": "tarifa_millar",
+    "tabla": [
+      {
+        "grupo": "general",
+        "clave": "urbano_suburbano_con_edificaciones",
+        "descripcion": "Inmuebles urbanos y suburbanos con edificaciones",
+        "tasa_millar": 0.0024,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "general",
+        "clave": "urbano_suburbano_sin_edificaciones",
+        "descripcion": "Inmuebles urbanos y suburbanos sin edificaciones",
+        "tasa_millar": 0.0045,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "rustico",
+        "clave": "rustico",
+        "descripcion": "Inmuebles rústicos",
+        "tasa_millar": 0.0018,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      }
+    ],
     "minimo_predial": null,
-    "comentarios": "Se solicitó extraer únicamente la mecánica de cálculo del predial, pero el fragmento no incluye el articulado o tablas correspondientes."
+    "comentarios": "Artículo 4: la tabla de tasas distingue inmuebles urbanos y suburbanos con edificaciones, sin edificaciones, e inmuebles rústicos. Se transcribe la mecánica principal anual conforme a las tasas al millar. El artículo también incluye tasas diferenciadas por antigüedad (años 2002 a 2025, anteriores a 2002 y hasta 1993, y anteriores a 1993), pero el texto proporcionado no permite extraer con claridad una tabla estructurada completa para esa serie; se deja fuera de la tabla principal para no inventar valores."
   },
   "_meta": {
-    "fuente": "txt",
+    "fuente": "pdf_reocr",
     "modelo": "gpt-5.4-mini"
   },
   "_meta_v2": {
-    "intentos": 1,
-    "requiere_revision": true,
+    "intentos": 2,
+    "requiere_revision": false,
     "escalado": false,
-    "razon": "clasificado_como_otro_no_clasificado",
+    "razon": "rescate_via_reocr",
+    "usado_reocr": true,
+    "usado_vision": false,
     "tokens": {
-      "input": 5799,
-      "output": 148,
-      "cached": 3840
+      "input": 16729,
+      "output": 444,
+      "cached": 11776
     },
     "cvegeo": "11012",
     "estado": "guanajuato",

@@ -4,23 +4,23 @@
     "tabla": [
       {
         "grupo": "urbano",
-        "clave": "urbano_con_edificaciones",
+        "clave": "urbanos_suburbanos_con_edificaciones",
         "descripcion": "Inmuebles urbanos y suburbanos con edificaciones",
-        "tasa_millar": 0.0045,
-        "periodicidad": "anual",
-        "cuota_fija_adicional": null
-      },
-      {
-        "grupo": "urbano",
-        "clave": "urbano_sin_edificaciones",
-        "descripcion": "Inmuebles urbanos y suburbanos sin edificaciones",
         "tasa_millar": 0.0024,
         "periodicidad": "anual",
         "cuota_fija_adicional": null
       },
       {
+        "grupo": "urbano",
+        "clave": "urbanos_suburbanos_sin_edificaciones",
+        "descripcion": "Inmuebles urbanos y suburbanos sin edificaciones",
+        "tasa_millar": 0.0045,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
         "grupo": "rustico",
-        "clave": "rustico_general",
+        "clave": "rusticos",
         "descripcion": "Inmuebles rústicos",
         "tasa_millar": 0.0018,
         "periodicidad": "anual",
@@ -28,7 +28,7 @@
       }
     ],
     "minimo_predial": null,
-    "comentarios": "Art. 4 establece tasas anuales al millar por categoría de inmueble. Se transcriben las tasas vigentes para 2015. La fracción IV del texto aparece inconclusa/truncada y no se utiliza para evitar inferencias no expresas. Los artículos 5 y 6 contienen valores unitarios y criterios de avalúo, no la mecánica tarifaria del impuesto."
+    "comentarios": "Artículo 4: tasas anuales sobre valor catastral para inmuebles urbanos y suburbanos con edificaciones (2.4 al millar), urbanos y suburbanos sin edificaciones (4.5 al millar) e inmuebles rústicos (1.8 al millar). El texto también contiene una fracción IV con tasas 13 al millar y 12 al millar para inmuebles con anterioridad a 1993, pero la captura está fragmentada y no se integra aquí por no quedar claramente estructurada en el mismo cuadro; además, el artículo 5 desarrolla valores unitarios catastrales, no la mecánica principal del impuesto."
   },
   "_meta": {
     "fuente": "txt",
@@ -39,10 +39,12 @@
     "requiere_revision": false,
     "escalado": false,
     "razon": null,
+    "usado_reocr": false,
+    "usado_vision": false,
     "tokens": {
-      "input": 7405,
-      "output": 276,
-      "cached": 3840
+      "input": 8622,
+      "output": 336,
+      "cached": 5888
     },
     "cvegeo": "11021",
     "estado": "guanajuato",

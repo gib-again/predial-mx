@@ -24,7 +24,7 @@
       "periodicidad": "bimestral",
       "unidad": "pesos"
     },
-    "comentarios": "Art. 2: predios urbanos pagan 5 al millar anual; predios rústicos pagan 3 al millar anual. Se establece un mínimo de $24.00 bimestral. Se ignoran incentivos/bonificaciones por pago anual y para personas pensionadas/jubiladas/adultos mayores/personas con discapacidad."
+    "comentarios": "Art. 2: tasa anual de 5 al millar para predios urbanos y 3 al millar para predios rústicos. El texto también establece que en ningún caso el impuesto predial será inferior a $24.00 bimestral. Se omiten incentivos, descuentos y bonificaciones por instrucción."
   },
   "_meta": {
     "fuente": "txt",
@@ -35,10 +35,12 @@
     "requiere_revision": false,
     "escalado": false,
     "razon": null,
+    "usado_reocr": false,
+    "usado_vision": false,
     "tokens": {
-      "input": 5177,
-      "output": 224,
-      "cached": 3840
+      "input": 6394,
+      "output": 221,
+      "cached": 5888
     },
     "cvegeo": "05024",
     "estado": "coahuila",

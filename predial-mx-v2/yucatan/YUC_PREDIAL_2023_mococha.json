@@ -3,14 +3,15 @@
     "tipo_esquema": "tasa_unica",
     "tabla": [
       {
-        "descripcion": "Impuesto predial general por secciones 1 a 5 y resto de la población",
-        "tasa": 0.0025,
+        "descripcion": "Tasa general del impuesto predial",
+        "tasa": 0.25,
         "base_calculo": "valor_catastral",
-        "unidad": "porcentaje"
+        "unidad": "porcentaje",
+        "cuota_fija_adicional": null
       }
     ],
     "minimo_predial": null,
-    "comentarios": "Artículo 13 establece una sola tasa de 0.25% para SECCIÓN 1, SECCIÓN 2, SECCIÓN 3, SECCIÓN 4, SECCIÓN 5 y RESTO DE LA POBLACIÓN. Las tablas de valores unitarios de terreno y construcción son catastrales y no forman parte de la tarifa del impuesto. Tarifas paralelas no incluidas en la tabla principal: predios destinados a la producción agropecuaria pagan 10 al millar anual sobre el valor registrado o catastral; para terrenos iguales o superiores a una hectárea se cobra cuota fija de 200.00 por hectárea y para terrenos rústicos con giro comercial cuota fija de 300.00 por hectárea; cuando no pueda determinarse el valor catastral se cobra cuota fija de 110.00 para terrenos con construcción y 90.00 para terrenos sin construcción."
+    "comentarios": "El Artículo 13 establece una sola tasa general de 0.25% para Secciones 1 a 5 y resto de la población; las tablas posteriores son de valores unitarios de terreno y construcción para determinar el valor catastral, no la tarifa del impuesto. Tarifas paralelas no incluidas en la tabla principal: predios destinados a la producción agropecuaria pagan 10 al millar anual sobre el valor registrado o catastral; terrenos iguales o superiores a una hectárea pagan cuota fija de 200 pesos por hectárea y terrenos rústicos con giro comercial 300 pesos por hectárea; cuando no pueda determinarse el valor catastral se cobrará cuota fija de 110 pesos para terrenos con construcción y 90 pesos para terrenos sin construcción. Artículo 15 prevé impuesto predial con base en rentas o frutos civiles: 3% para casa habitación y 3% para actividades comerciales."
   },
   "_meta": {
     "fuente": "txt",
@@ -21,10 +22,12 @@
     "requiere_revision": false,
     "escalado": true,
     "razon": "escalado_a_gpt-5.4_tras_2x_mini_fallido",
+    "usado_reocr": false,
+    "usado_vision": false,
     "tokens": {
-      "input": 24941,
-      "output": 1091,
-      "cached": 13568
+      "input": 29014,
+      "output": 949,
+      "cached": 17664
     },
     "cvegeo": "31051",
     "estado": "yucatan",

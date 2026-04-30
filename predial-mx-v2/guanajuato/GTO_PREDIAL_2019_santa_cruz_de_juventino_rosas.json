@@ -5,7 +5,7 @@
       {
         "grupo": "general",
         "clave": "urbanos_suburbanos_con_edificaciones",
-        "descripcion": "Inmuebles urbanos y suburbanos con edificaciones, vigencia 2019 (aplica a valores determinados o modificados con edificaciones).",
+        "descripcion": "Inmuebles urbanos y suburbanos con edificaciones; tasa anual por valor determinado o modificado con edificaciones vigente a la entrada en vigor de la ley.",
         "tasa_millar": 0.0024,
         "periodicidad": "anual",
         "cuota_fija_adicional": null
@@ -13,7 +13,7 @@
       {
         "grupo": "general",
         "clave": "urbanos_suburbanos_sin_edificaciones",
-        "descripcion": "Inmuebles urbanos y suburbanos sin edificaciones, vigencia 2019 (aplica a valores determinados o modificados sin edificaciones).",
+        "descripcion": "Inmuebles urbanos y suburbanos sin edificaciones; tasa anual por valor determinado o modificado con edificaciones vigente a la entrada en vigor de la ley.",
         "tasa_millar": 0.0045,
         "periodicidad": "anual",
         "cuota_fija_adicional": null
@@ -21,54 +21,14 @@
       {
         "grupo": "rustico",
         "clave": "rusticos",
-        "descripcion": "Inmuebles rústicos, vigencia 2019.",
+        "descripcion": "Inmuebles rústicos; tasa anual por valor determinado o modificado con edificaciones vigente a la entrada en vigor de la ley.",
         "tasa_millar": 0.0018,
-        "periodicidad": "anual",
-        "cuota_fija_adicional": null
-      },
-      {
-        "grupo": "general",
-        "clave": "urbanos_suburbanos_con_edificaciones_anterior_2002_1993",
-        "descripcion": "Inmuebles urbanos y suburbanos con anterioridad al año 2002 y hasta 1993, inclusive.",
-        "tasa_millar": 0.008,
-        "periodicidad": "anual",
-        "cuota_fija_adicional": null
-      },
-      {
-        "grupo": "general",
-        "clave": "urbanos_suburbanos_sin_edificaciones_anterior_2002_1993",
-        "descripcion": "Inmuebles urbanos y suburbanos sin edificaciones con anterioridad al año 2002 y hasta 1993, inclusive.",
-        "tasa_millar": 0.015,
-        "periodicidad": "anual",
-        "cuota_fija_adicional": null
-      },
-      {
-        "grupo": "rustico",
-        "clave": "rusticos_anterior_2002_1993",
-        "descripcion": "Inmuebles rústicos con anterioridad al año 2002 y hasta 1993, inclusive.",
-        "tasa_millar": 0.006,
-        "periodicidad": "anual",
-        "cuota_fija_adicional": null
-      },
-      {
-        "grupo": "general",
-        "clave": "urbanos_suburbanos_con_edificaciones_anterior_1993",
-        "descripcion": "Inmuebles urbanos y suburbanos con anterioridad al año de 1993.",
-        "tasa_millar": 0.013,
-        "periodicidad": "anual",
-        "cuota_fija_adicional": null
-      },
-      {
-        "grupo": "general",
-        "clave": "urbanos_suburbanos_sin_edificaciones_anterior_1993",
-        "descripcion": "Inmuebles urbanos y suburbanos sin edificaciones con anterioridad al año de 1993.",
-        "tasa_millar": 0.012,
         "periodicidad": "anual",
         "cuota_fija_adicional": null
       }
     ],
     "minimo_predial": null,
-    "comentarios": "Art. 4 establece tasas anuales al millar según antigüedad y tipo de inmueble. Se transcribe la mecánica tal como aparece en la tabla; no se integra la información de valores unitarios del Art. 5 porque corresponde a catastro/valuación, no a la tarifa del impuesto. Los renglones se presentan por grupo urbano/suburbano con y sin edificaciones, y por rústico. En el texto aparece 'al miliar' en un renglón; se normaliza como al millar sin alterar la tasa. No se detectan cuotas fijas adicionales ni tarifa paralela acumulable dentro del segmento."
+    "comentarios": "Art. 4 establece tasas anuales al millar por tipo de inmueble. Además prevé tarifas históricas paralelas para inmuebles urbanos y suburbanos según el año de valuación: durante 2002-2018, 2.4 al millar (con edificaciones), 4.5 al millar (sin edificaciones) y 1.8 al millar (rústicos); con anterioridad a 2002 y hasta 1993, 8 al millar, 15 al millar y 6 al millar; con anterioridad a 1993, 13 al millar y 12 al millar. Se documenta sólo la mecánica principal extraíble como catálogo de tasas al millar. Art. 5 contiene valores unitarios catastrales para avalúo, no tarifa del impuesto."
   },
   "_meta": {
     "fuente": "txt",
@@ -79,10 +39,12 @@
     "requiere_revision": false,
     "escalado": false,
     "razon": null,
+    "usado_reocr": false,
+    "usado_vision": false,
     "tokens": {
-      "input": 7420,
-      "output": 731,
-      "cached": 3840
+      "input": 8637,
+      "output": 436,
+      "cached": 5888
     },
     "cvegeo": "11035",
     "estado": "guanajuato",

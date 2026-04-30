@@ -4,79 +4,31 @@
     "tabla": [
       {
         "grupo": "urbano",
-        "clave": "entrada_en_vigor",
-        "descripcion": "Inmuebles urbanos y suburbanos con valor determinado o modificado a la entrada en vigor de la ley",
+        "clave": "urbano_con_edificaciones",
+        "descripcion": "Inmuebles urbanos y suburbanos con edificaciones, tasa anual al millar",
         "tasa_millar": 0.0024,
         "periodicidad": "anual",
         "cuota_fija_adicional": null
       },
       {
         "grupo": "urbano",
-        "clave": "periodo_2002_2021",
-        "descripcion": "Inmuebles urbanos y suburbanos con valor determinado o modificado durante los años 2002 a 2021 inclusive",
-        "tasa_millar": 0.0024,
-        "periodicidad": "anual",
-        "cuota_fija_adicional": null
-      },
-      {
-        "grupo": "urbano",
-        "clave": "anterior_1993_2001",
-        "descripcion": "Inmuebles urbanos y suburbanos con valor determinado o modificado con anterioridad a 2002 y hasta 1993 inclusive",
-        "tasa_millar": 0.008,
-        "periodicidad": "anual",
-        "cuota_fija_adicional": null
-      },
-      {
-        "grupo": "urbano",
-        "clave": "anterior_1993",
-        "descripcion": "Inmuebles urbanos y suburbanos con valor determinado o modificado con anterioridad al año de 1993",
-        "tasa_millar": 0.013,
-        "periodicidad": "anual",
-        "cuota_fija_adicional": null
-      },
-      {
-        "grupo": "rustico",
-        "clave": "entrada_en_vigor",
-        "descripcion": "Inmuebles rústicos con valor determinado o modificado a la entrada en vigor de la ley",
+        "clave": "urbano_sin_edificaciones",
+        "descripcion": "Inmuebles urbanos y suburbanos sin edificaciones, tasa anual al millar",
         "tasa_millar": 0.0045,
         "periodicidad": "anual",
         "cuota_fija_adicional": null
       },
       {
         "grupo": "rustico",
-        "clave": "periodo_2002_2021",
-        "descripcion": "Inmuebles rústicos con valor determinado o modificado durante los años 2002 a 2021 inclusive",
-        "tasa_millar": 0.0045,
-        "periodicidad": "anual",
-        "cuota_fija_adicional": null
-      },
-      {
-        "grupo": "rustico",
-        "clave": "anterior_1993_2001",
-        "descripcion": "Inmuebles rústicos con valor determinado o modificado con anterioridad a 2002 y hasta 1993 inclusive",
-        "tasa_millar": 0.015,
-        "periodicidad": "anual",
-        "cuota_fija_adicional": null
-      },
-      {
-        "grupo": "rustico",
-        "clave": "anterior_1993",
-        "descripcion": "Inmuebles rústicos con valor determinado o modificado con anterioridad al año de 1993",
-        "tasa_millar": 0.012,
-        "periodicidad": "anual",
-        "cuota_fija_adicional": null
-      },
-      {
-        "grupo": "otro",
-        "clave": "edificado_sin_edificaciones",
-        "descripcion": "Inmuebles urbanos y suburbanos con edificaciones / sin edificaciones, según la tabla del artículo 4",
+        "clave": "rustico_con_edificaciones",
+        "descripcion": "Inmuebles rústicos con edificaciones, tasa anual al millar",
         "tasa_millar": 0.0018,
         "periodicidad": "anual",
         "cuota_fija_adicional": null
       }
     ],
     "minimo_predial": null,
-    "comentarios": "Art. 4 establece tasas al millar anuales por categorías y antigüedad del valor determinado o modificado. Se transcriben como tarifa_millar. La ley también contiene Art. 5 y 6 sobre valores unitarios, avalúos y factores de valuación, que son catastro y no mecánica de cálculo del impuesto; no se incluyen. En el texto aparece una tabla con tres columnas para urbanos/suburbanos y rústicos, pero el OCR está fragmentado en el renglón de 'inmuebles urbanos y suburbanos'; se conserva la tasa de 1.8 al millar como renglón separado sin alterar el resto de tasas."
+    "comentarios": "Art. 4 establece tasas anuales al millar aplicables sobre valor catastral según tipo de inmueble. Se transcribe la mecánica principal de la primera tabla visible: inmuebles urbanos y suburbanos con edificaciones 2.4 al millar, sin edificaciones 4.5 al millar, y rústicos con edificaciones 1.8 al millar. El texto también muestra renglones históricos/alternos para inmuebles con valor determinado o modificado (4.5, 8, 13 al millar, etc.), pero aparecen en el mismo bloque textual sin una tabla completa separable; no se reclasifican aquí. Valores unitarios de terreno y construcción de los artículos 5 y 6 no forman parte de la mecánica del impuesto y se ignoran."
   },
   "_meta": {
     "fuente": "txt",
@@ -87,10 +39,12 @@
     "requiere_revision": false,
     "escalado": false,
     "razon": null,
+    "usado_reocr": false,
+    "usado_vision": false,
     "tokens": {
-      "input": 7469,
-      "output": 771,
-      "cached": 3840
+      "input": 8686,
+      "output": 384,
+      "cached": 5888
     },
     "cvegeo": "11035",
     "estado": "guanajuato",

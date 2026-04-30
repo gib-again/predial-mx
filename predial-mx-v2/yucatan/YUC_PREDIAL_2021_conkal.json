@@ -1,18 +1,33 @@
 {
-  "predial": null,
+  "predial": {
+    "tipo_esquema": "tasa_unica",
+    "tabla": [
+      {
+        "descripcion": "Habitacional",
+        "tasa": 0.2,
+        "base_calculo": "valor_catastral",
+        "unidad": "porcentaje",
+        "cuota_fija_adicional": null
+      }
+    ],
+    "minimo_predial": null,
+    "comentarios": "Se toma como mecánica principal la tarifa expresa del Artículo 15 para impuesto predial sobre base catastral: 'Habitacional; 0.2 % sobre el monto de la base catastral'. El mismo artículo también establece una tarifa paralela para 'Comercial; 0.3 % sobre el monto de la base catastral', pero no se incluye en la tabla principal porque son tarifas separadas por tipo de uso y el esquema `tasa_unica` sólo admite una entrada. El texto de los artículos 13 y siguientes contiene valores unitarios de terreno y construcción y fórmulas para determinar el valor catastral, que corresponden a catastro/base gravable, no a la tarifa del impuesto. Además, el texto señala una tarifa paralela para predios destinados a la producción agropecuaria de 10 al millar anual sobre el valor registrado o catastral; se documenta aquí como observación y no en la tabla principal por tratarse de una tarifa separada."
+  },
   "_meta": {
     "fuente": "txt",
     "modelo": "gpt-5.4"
   },
   "_meta_v2": {
     "intentos": 3,
-    "requiere_revision": true,
+    "requiere_revision": false,
     "escalado": true,
-    "razon": "valido_3x_fallido | mini_e1=  • predial.mixto: Value error, bracket 1: superior=None solo permitido en el último rango | mini_e2=  • predial.mixto: Value error, bracket 1: superior=None solo permitido en el último rango | full_e3=  • predial.mixto: Value error, bracket 1: superior=None solo permitido en el último rango",
+    "razon": "escalado_a_gpt-5.4_tras_2x_mini_fallido",
+    "usado_reocr": false,
+    "usado_vision": false,
     "tokens": {
-      "input": 20290,
-      "output": 939,
-      "cached": 13568
+      "input": 24363,
+      "output": 923,
+      "cached": 17664
     },
     "cvegeo": "31013",
     "estado": "yucatan",

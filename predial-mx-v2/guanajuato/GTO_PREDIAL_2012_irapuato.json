@@ -4,31 +4,31 @@
     "tabla": [
       {
         "grupo": "urbano",
-        "clave": "inmuebles_urbanos_y_suburbanos_con_edificaciones",
-        "descripcion": "Inmuebles urbanos y suburbanos con edificaciones; Art. 4",
+        "clave": "urbano_con_edificaciones",
+        "descripcion": "Inmuebles urbanos y suburbanos con edificaciones",
         "tasa_millar": 0.00339,
         "periodicidad": "anual",
         "cuota_fija_adicional": null
       },
       {
         "grupo": "urbano",
-        "clave": "inmuebles_urbanos_y_suburbanos_sin_edificaciones",
-        "descripcion": "Inmuebles urbanos y suburbanos sin edificaciones; Art. 4",
+        "clave": "urbano_sin_edificaciones",
+        "descripcion": "Inmuebles urbanos y suburbanos sin edificaciones",
         "tasa_millar": 0.00565,
         "periodicidad": "anual",
         "cuota_fija_adicional": null
       },
       {
         "grupo": "rustico",
-        "clave": "inmuebles_rusticos",
-        "descripcion": "Inmuebles rústicos; Art. 4",
+        "clave": "rustico",
+        "descripcion": "Inmuebles rústicos",
         "tasa_millar": 0.0004,
         "periodicidad": "anual",
         "cuota_fija_adicional": null
       }
     ],
     "minimo_predial": null,
-    "comentarios": "Art. 4 establece tasas anuales al millar por tipo de inmueble: urbanos y suburbanos con edificaciones (3.39 al millar), urbanos y suburbanos sin edificaciones (5.65 al millar) e inmuebles rústicos (0.40 al millar). El resto del texto reproducido corresponde a valores unitarios catastrales, factores agrológicos y criterios de avalúo (Arts. 5 y 6), no a la mecánica de cálculo del impuesto predial."
+    "comentarios": "Art. 4: tasas anuales por categoría de inmueble. La tabla transcrita en el texto presenta varias tasas históricas por año de construcción/entrada en vigor, pero para el ejercicio 2012 la mecánica vigente queda expresada en el bloque de tasas mostrado: urbanos y suburbanos con edificaciones 3.39 al millar, sin edificaciones 5.65 al millar, y rústicos 0.40 al millar. Art. 5 contiene valores unitarios de catastro para avalúo, no la tarifa del impuesto."
   },
   "_meta": {
     "fuente": "txt",
@@ -39,10 +39,12 @@
     "requiere_revision": false,
     "escalado": false,
     "razon": null,
+    "usado_reocr": false,
+    "usado_vision": false,
     "tokens": {
-      "input": 9509,
-      "output": 336,
-      "cached": 3840
+      "input": 10726,
+      "output": 316,
+      "cached": 5888
     },
     "cvegeo": "11017",
     "estado": "guanajuato",

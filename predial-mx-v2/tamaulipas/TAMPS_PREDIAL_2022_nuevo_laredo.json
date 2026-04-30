@@ -36,7 +36,7 @@
       },
       {
         "grupo": "urbano",
-        "clave": "predios_urbanos_uso_industrial",
+        "clave": "predios_urbanos_de_uso_industrial",
         "descripcion": "Predios urbanos de uso industrial",
         "tasa_millar": 0.003,
         "periodicidad": "anual",
@@ -44,7 +44,7 @@
       }
     ],
     "minimo_predial": null,
-    "comentarios": "Art. 10: se establece una tarifa por categorías de predio sobre el valor catastral. Las fracciones VI, VII y VIII contienen disposiciones de excepción o aumento por incumplimiento/fraccionamientos (100% más del impuesto), las cuales no se incorporan a la tabla principal por ser reglas accesorias y no una tarifa base separada."
+    "comentarios": "Art. 10, fraccs. VI-VIII: se menciona que para predios urbanos no edificados propiedad de fraccionamientos autorizados no se aplica la tasa de la fracción IV; además, los adquirientes de lotes provenientes de fraccionamientos que no construyan en 3 años y los fraccionadores autorizados por predios no vendidos en 3 años pagan un 100% más del impuesto. Se documenta como disposición complementaria, no como mecánica base."
   },
   "_meta": {
     "fuente": "txt",
@@ -55,10 +55,12 @@
     "requiere_revision": false,
     "escalado": false,
     "razon": null,
+    "usado_reocr": false,
+    "usado_vision": false,
     "tokens": {
-      "input": 5373,
-      "output": 384,
-      "cached": 3840
+      "input": 6590,
+      "output": 414,
+      "cached": 5888
     },
     "cvegeo": "28027",
     "estado": "tamaulipas",

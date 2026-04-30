@@ -3,32 +3,72 @@
     "tipo_esquema": "tarifa_millar",
     "tabla": [
       {
-        "grupo": "urbano",
-        "clave": "inmuebles_urbanos_y_suburbanos_con_edificaciones",
-        "descripcion": "Inmuebles urbanos y suburbanos con edificaciones; a la entrada en vigor de la presente Ley",
+        "grupo": "general",
+        "clave": "inmuebles_urbanos_y_suburbanos_entrada_vigor",
+        "descripcion": "Inmuebles urbanos y suburbanos con valor determinado o modificado: a la entrada en vigor de la presente Ley",
         "tasa_millar": 0.0048,
         "periodicidad": "anual",
         "cuota_fija_adicional": null
       },
       {
-        "grupo": "urbano",
-        "clave": "inmuebles_urbanos_y_suburbanos_sin_edificaciones",
-        "descripcion": "Inmuebles urbanos y suburbanos sin edificaciones; a la entrada en vigor de la presente Ley",
-        "tasa_millar": 0.0024,
+        "grupo": "general",
+        "clave": "inmuebles_urbanos_y_suburbanos_2002_2013",
+        "descripcion": "Inmuebles urbanos y suburbanos con valor determinado o modificado: durante los años 2002 y hasta el 2013 inclusive",
+        "tasa_millar": 0.0045,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "general",
+        "clave": "inmuebles_urbanos_y_suburbanos_antes_2002_hasta_1993",
+        "descripcion": "Inmuebles urbanos y suburbanos con valor determinado o modificado: con anterioridad al año 2002 y hasta 1993 inclusive",
+        "tasa_millar": 0.0042,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "general",
+        "clave": "inmuebles_urbanos_y_suburbanos_anteriores_1993",
+        "descripcion": "Inmuebles urbanos y suburbanos con valor determinado o modificado: con anterioridad al año de 1993",
+        "tasa_millar": 0.0013,
         "periodicidad": "anual",
         "cuota_fija_adicional": null
       },
       {
         "grupo": "rustico",
-        "clave": "inmuebles_rusticos",
-        "descripcion": "Inmuebles rústicos; a la entrada de la ley",
+        "clave": "inmuebles_rusticos_entrada_vigor",
+        "descripcion": "Inmuebles rústicos: a la entrada en vigor de la presente Ley",
         "tasa_millar": 0.004,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "rustico",
+        "clave": "inmuebles_rusticos_2002_2013",
+        "descripcion": "Inmuebles rústicos: durante los años 2002 y hasta el 2013 inclusive",
+        "tasa_millar": 0.003,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "rustico",
+        "clave": "inmuebles_rusticos_antes_2002_hasta_1993",
+        "descripcion": "Inmuebles rústicos: con anterioridad al año 2002 y hasta 1993 inclusive",
+        "tasa_millar": 0.0018,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "rustico",
+        "clave": "inmuebles_rusticos_anteriores_1993",
+        "descripcion": "Inmuebles rústicos: con anterioridad al año de 1993",
+        "tasa_millar": 0.0024,
         "periodicidad": "anual",
         "cuota_fija_adicional": null
       }
     ],
     "minimo_predial": null,
-    "comentarios": "Artículo 4 establece tasas anuales al millar sobre el valor catastral. Se transcribe la tarifa principal para inmuebles urbanos y suburbanos con/sin edificaciones, y la tarifa paralela para inmuebles rústicos (4 al millar anual). Artículo 5 y 6 contienen valores unitarios y criterios de avalúo, no la mecánica tarifaria del impuesto."
+    "comentarios": "Artículo 4 establece una tarifa categórica anual al millar por antigüedad/valor determinado o modificado del inmueble. No se extrae Art. 5-6 porque son tablas de valores unitarios y criterios de avalúo, no mecánica de cálculo del impuesto. Se incluyen por separado las tasas para inmuebles urbanos y suburbanos y las tasas para inmuebles rústicos como tarifa paralela dentro de la misma estructura del artículo."
   },
   "_meta": {
     "fuente": "txt",
@@ -39,10 +79,12 @@
     "requiere_revision": false,
     "escalado": false,
     "razon": null,
+    "usado_reocr": false,
+    "usado_vision": false,
     "tokens": {
-      "input": 7419,
-      "output": 321,
-      "cached": 3840
+      "input": 8636,
+      "output": 715,
+      "cached": 5888
     },
     "cvegeo": "11002",
     "estado": "guanajuato",

@@ -5,30 +5,30 @@
       {
         "grupo": "urbano",
         "clave": "urbano_con_edificaciones",
-        "descripcion": "Inmuebles urbanos y suburbanos con edificaciones, para inmuebles con valor determinado o modificado: a la entrada en vigor de la presente ley y durante 2002 hasta 2014, inclusive.",
-        "tasa_millar": 0.0024,
+        "descripcion": "Inmuebles urbanos y suburbanos con edificaciones",
+        "tasa_millar": 0.0045,
         "periodicidad": "anual",
         "cuota_fija_adicional": null
       },
       {
         "grupo": "urbano",
         "clave": "urbano_sin_edificaciones",
-        "descripcion": "Inmuebles urbanos y suburbanos sin edificaciones, para inmuebles con valor determinado o modificado: a la entrada en vigor de la presente ley y durante 2002 hasta 2014, inclusive.",
-        "tasa_millar": 0.0045,
+        "descripcion": "Inmuebles urbanos y suburbanos sin edificaciones",
+        "tasa_millar": 0.0024,
         "periodicidad": "anual",
         "cuota_fija_adicional": null
       },
       {
         "grupo": "rustico",
-        "clave": "rustico_general",
-        "descripcion": "Inmuebles rústicos, para inmuebles con valor determinado o modificado: a la entrada en vigor de la presente ley y durante 2002 hasta 2014, inclusive.",
+        "clave": "rustico",
+        "descripcion": "Inmuebles rústicos",
         "tasa_millar": 0.0018,
         "periodicidad": "anual",
         "cuota_fija_adicional": null
       }
     ],
     "minimo_predial": null,
-    "comentarios": "Art. 4 establece tasas anuales al millar por categoría de predio para inmuebles con valor determinado o modificado. Se omiten las tablas de valores unitarios de los artículos 5 y 6 por ser materia de catastro/avalúo, no mecánica del impuesto. El texto también muestra tasas históricas para otros periodos (con anterioridad a 2002 y antes de 1993), pero la mecánica vigente para 2015 se transcribe con la tasa aplicable del artículo 4; no se integran como tarifa paralela porque no constituyen una estructura acumulable sino supuestos temporales alternativos."
+    "comentarios": "Art. 4: la mecánica principal del impuesto predial es una tarifa al millar anual sobre el valor catastral/determinado o modificado, con tasas diferenciadas por tipo de inmueble. La tabla incluye dos tasas para inmuebles urbanos y suburbanos (con y sin edificaciones) y una tasa para inmuebles rústicos. El resto del texto (Art. 5 y 6) contiene valores unitarios y criterios de valuación para determinar la base, no una tarifa distinta."
   },
   "_meta": {
     "fuente": "txt",
@@ -39,10 +39,12 @@
     "requiere_revision": false,
     "escalado": false,
     "razon": null,
+    "usado_reocr": false,
+    "usado_vision": false,
     "tokens": {
-      "input": 6688,
-      "output": 420,
-      "cached": 3840
+      "input": 7905,
+      "output": 303,
+      "cached": 5888
     },
     "cvegeo": "11006",
     "estado": "guanajuato",

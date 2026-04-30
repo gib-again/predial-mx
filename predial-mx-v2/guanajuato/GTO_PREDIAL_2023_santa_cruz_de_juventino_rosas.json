@@ -81,7 +81,7 @@
       }
     ],
     "minimo_predial": null,
-    "comentarios": "Art. 4, fracc. I: para inmuebles urbanos, suburbanos y rústicos con edificación con valor determinado o modificado en 2023. La ley también contiene tarifas paralelas para inmuebles urbanos y suburbanos con valor determinado o modificado durante 2022 o anteriores (2.4 al millar, 4.5 al millar, 1.8 al millar; 8 al millar, 15 al millar, 6 al millar; 43 al millar, 13 al millar, 12 al millar), pero no se incluyen en la tabla principal por ser una tarifa paralela categórica."
+    "comentarios": "Art. 4, fracción I: tabla de valor fiscal del inmueble para inmuebles urbanos, suburbanos y rústicos con edificación con valor determinado o modificado en 2023. El texto incluye además una mecánica paralela para inmuebles urbanos, suburbanos y rústicos con valor determinado o modificado durante 2022 o anteriores (tasas al millar según antigüedad y existencia de edificaciones), pero se omite de la tabla principal por ser tarifa paralela. Art. 5 contiene valores unitarios de catastro y no se transcribe como mecánica del impuesto."
   },
   "_meta": {
     "fuente": "txt",
@@ -92,10 +92,12 @@
     "requiere_revision": false,
     "escalado": false,
     "razon": null,
+    "usado_reocr": false,
+    "usado_vision": false,
     "tokens": {
-      "input": 8159,
-      "output": 640,
-      "cached": 3840
+      "input": 9376,
+      "output": 626,
+      "cached": 5888
     },
     "cvegeo": "11035",
     "estado": "guanajuato",

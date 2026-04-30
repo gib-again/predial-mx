@@ -3,32 +3,40 @@
     "tipo_esquema": "tarifa_millar",
     "tabla": [
       {
-        "grupo": "urbano",
-        "clave": "urbanos_suburbanos_con_edificaciones",
-        "descripcion": "Inmuebles urbanos y suburbanos con edificaciones",
+        "grupo": "general",
+        "clave": "urbano_suburbano_edificado",
+        "descripcion": "Inmuebles urbanos y suburbanos con valor determinado o modificado, con edificaciones",
         "tasa_millar": 0.002,
         "periodicidad": "anual",
         "cuota_fija_adicional": null
       },
       {
-        "grupo": "urbano",
-        "clave": "urbanos_suburbanos_sin_edificaciones",
-        "descripcion": "Inmuebles urbanos y suburbanos sin edificaciones",
+        "grupo": "general",
+        "clave": "urbano_suburbano_sin_edificacion",
+        "descripcion": "Inmuebles urbanos y suburbanos con valor determinado o modificado, sin edificaciones",
         "tasa_millar": 0.003,
         "periodicidad": "anual",
         "cuota_fija_adicional": null
       },
       {
-        "grupo": "rustico",
-        "clave": "rusticos_con_edificaciones",
+        "grupo": "general",
+        "clave": "rustico_con_edificaciones",
         "descripcion": "Inmuebles rústicos con edificaciones",
         "tasa_millar": 0.00032,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "general",
+        "clave": "rustico_sin_edificaciones",
+        "descripcion": "Inmuebles rústicos sin edificaciones",
+        "tasa_millar": 0.008,
         "periodicidad": "anual",
         "cuota_fija_adicional": null
       }
     ],
     "minimo_predial": null,
-    "comentarios": "Art. 4 establece tasas anuales por categoría de inmueble: urbanos y suburbanos con edificaciones 0.20%, sin edificaciones 0.30%, y rústicos con edificaciones 0.032%. Se omiten tablas de valores unitarios de los Arts. 5 y 6 por ser valuación catastral, no mecánica tarifaria."
+    "comentarios": "Artículo 4 establece tasas anuales aplicables sobre el valor determinado o modificado del inmueble, con cuatro supuestos categóricos: urbanos y suburbanos con edificaciones (0.20%), urbanos y suburbanos sin edificaciones (0.30%), rústicos con edificaciones (0.032%) y rústicos sin edificaciones (0.80%). Se transcribe solo la mecánica de cálculo; las tablas de valores unitarios y factores de valuación de los artículos 5 y 6 no se incluyen porque son base catastral, no tarifa del impuesto."
   },
   "_meta": {
     "fuente": "txt",
@@ -39,10 +47,12 @@
     "requiere_revision": false,
     "escalado": false,
     "razon": null,
+    "usado_reocr": false,
+    "usado_vision": false,
     "tokens": {
-      "input": 7093,
-      "output": 280,
-      "cached": 3840
+      "input": 8310,
+      "output": 381,
+      "cached": 5888
     },
     "cvegeo": "11041",
     "estado": "guanajuato",

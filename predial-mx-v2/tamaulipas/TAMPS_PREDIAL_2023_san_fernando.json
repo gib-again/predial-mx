@@ -2,31 +2,14 @@
   "predial": {
     "tipo_esquema": "otro_no_clasificado",
     "categoria": "estructura_no_estandar",
-    "descripcion_estructural": "El texto no presenta una tabla tarifaria completa del impuesto predial ni un esquema de brackets, cuota fija o tasa única. Solo describe la base del cálculo (valor catastral) y remite a una tasa no transcrita en el fragmento, además de reglas de incremento para ciertos predios y un mínimo anual en UMA. Con el segmento proporcionado no es posible reconstruir la mecánica tarifaria principal sin inventar datos.",
-    "tabla_cruda": [
-      {
-        "descripcion": "Artículo 10: impuesto sobre la propiedad urbana, suburbana y rústica",
-        "valores": "base=valor catastral; tasa=no visible en el fragmento"
-      },
-      {
-        "descripcion": "Predios urbanos no edificados",
-        "valores": "aumentar tasa en 100%"
-      },
-      {
-        "descripcion": "Predios urbanos con edificación inferior a la quinta parte del valor del terreno",
-        "valores": "aumentar tasa en 50%"
-      },
-      {
-        "descripcion": "Mínimo anual",
-        "valores": "3 UMA zonas 6,7 y 8 urbanas y rústicos hasta 16 hectáreas; 5 UMA zonas urbanas 1 a 5 y rústicos mayores de 16-01 hectáreas"
-      }
-    ],
+    "descripcion_estructural": "El texto no presenta una tabla tarifaria extraíble de impuesto predial con rangos o categorías de tasa. Sólo indica que la base es el valor catastral y remite a una tasa señalada en el artículo, pero en el fragmento proporcionado no aparece dicha tasa. Sí aparecen reglas de incremento para predios urbanos no edificados y con edificación inferior a la quinta parte del terreno, además de mínimos en UMA, pero no la mecánica completa de cálculo.",
+    "tabla_cruda": [],
     "minimo_predial": {
       "monto": 3.0,
       "periodicidad": "anual",
       "unidad": "uma"
     },
-    "comentarios": "Se detecta referencia a una tasa base del artículo, pero en el texto suministrado no aparece su valor numérico ni una tabla estructurada. Por ello se clasifica como estructura no estándar y no se inventa la mecánica faltante."
+    "comentarios": "También se menciona un mínimo de cinco UMA para zonas urbanas 1-5 y predios rústicos mayores de 16-01 hectáreas; el fragmento no permite extraer la tasa principal ni estructurar la mecánica completa sin inventarla."
   },
   "_meta": {
     "fuente": "txt",
@@ -37,10 +20,12 @@
     "requiere_revision": true,
     "escalado": false,
     "razon": "clasificado_como_otro_no_clasificado",
+    "usado_reocr": false,
+    "usado_vision": false,
     "tokens": {
-      "input": 5275,
-      "output": 365,
-      "cached": 3840
+      "input": 6492,
+      "output": 229,
+      "cached": 5888
     },
     "cvegeo": "28035",
     "estado": "tamaulipas",

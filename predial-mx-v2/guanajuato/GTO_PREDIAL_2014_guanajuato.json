@@ -4,31 +4,31 @@
     "tabla": [
       {
         "grupo": "urbano",
-        "clave": "urbano_con_edificaciones",
-        "descripcion": "Inmuebles urbanos y suburbanos con edificaciones; valor determinado o modificado a la entrada en vigor de la ley",
+        "clave": "urbanos_suburbanos_con_edificaciones",
+        "descripcion": "Inmuebles urbanos y suburbanos con edificaciones",
         "tasa_millar": 0.0024,
         "periodicidad": "anual",
         "cuota_fija_adicional": null
       },
       {
         "grupo": "urbano",
-        "clave": "urbano_sin_edificaciones",
-        "descripcion": "Inmuebles urbanos y suburbanos sin edificaciones; valor determinado o modificado a la entrada en vigor de la ley",
+        "clave": "urbanos_suburbanos_sin_edificaciones",
+        "descripcion": "Inmuebles urbanos y suburbanos sin edificaciones",
         "tasa_millar": 0.0045,
         "periodicidad": "anual",
         "cuota_fija_adicional": null
       },
       {
         "grupo": "rustico",
-        "clave": "rustico",
-        "descripcion": "Inmuebles rústicos; valor determinado o modificado a la entrada en vigor de la ley",
+        "clave": "rusticos",
+        "descripcion": "Inmuebles rústicos",
         "tasa_millar": 0.0018,
         "periodicidad": "anual",
         "cuota_fija_adicional": null
       }
     ],
     "minimo_predial": null,
-    "comentarios": "Art. 4 establece tasas al millar diferenciadas por categoría de predio (urbanos y suburbanos con edificaciones, urbanos y suburbanos sin edificaciones, rústicos). El texto también contiene referencias a años de determinación/modificación del valor catastral, pero no conforman brackets de valor ni una estructura progresiva. Se ignoran las tablas de valores unitarios de los arts. 5 y 6 por ser catastro/valuación, no mecánica del impuesto."
+    "comentarios": "Art. 4 establece tres tarifas paralelas sobre valor catastral según tipo de inmueble: urbanos y suburbanos con edificaciones 2.4 al millar; urbanos y suburbanos sin edificaciones 4.5 al millar; rústicos 1.8 al millar. Se repiten los mismos porcentajes para valores determinados/modificados en distintos periodos de antigüedad (a la entrada en vigor, 2002-2013, 1993-2001), sin cambiar la mecánica principal; no se incluyen como filas separadas porque son la misma tarifa por categoría. El artículo 5 y siguientes contienen valores unitarios catastrales para avalúo, no la tarifa del impuesto."
   },
   "_meta": {
     "fuente": "txt",
@@ -39,10 +39,12 @@
     "requiere_revision": false,
     "escalado": false,
     "razon": null,
+    "usado_reocr": false,
+    "usado_vision": false,
     "tokens": {
-      "input": 7695,
-      "output": 337,
-      "cached": 3840
+      "input": 8912,
+      "output": 348,
+      "cached": 5888
     },
     "cvegeo": "11015",
     "estado": "guanajuato",

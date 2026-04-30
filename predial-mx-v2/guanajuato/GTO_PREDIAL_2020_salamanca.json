@@ -3,32 +3,32 @@
     "tipo_esquema": "tarifa_millar",
     "tabla": [
       {
-        "grupo": "urbano",
-        "clave": "inmuebles_urbanos_y_suburbanos_con_edificaciones",
-        "descripcion": "Inmuebles urbanos y suburbanos con edificaciones; tasa anual según antigüedad del valor determinado o modificado",
+        "grupo": "general",
+        "clave": "urbano_con_edificacion",
+        "descripcion": "Inmuebles urbanos y suburbanos con edificaciones",
         "tasa_millar": 0.0025,
         "periodicidad": "anual",
         "cuota_fija_adicional": null
       },
       {
-        "grupo": "urbano",
-        "clave": "inmuebles_urbanos_y_suburbanos_sin_edificaciones",
-        "descripcion": "Inmuebles urbanos y suburbanos sin edificaciones; tasa anual según antigüedad del valor determinado o modificado",
+        "grupo": "general",
+        "clave": "urbano_sin_edificacion",
+        "descripcion": "Inmuebles urbanos y suburbanos sin edificaciones",
         "tasa_millar": 0.0046,
         "periodicidad": "anual",
         "cuota_fija_adicional": null
       },
       {
         "grupo": "rustico",
-        "clave": "inmuebles_rusticos",
-        "descripcion": "Inmuebles rústicos; tasa anual según antigüedad del valor determinado o modificado",
+        "clave": "rustico",
+        "descripcion": "Inmuebles rústicos",
         "tasa_millar": 0.0026,
         "periodicidad": "anual",
         "cuota_fija_adicional": null
       }
     ],
     "minimo_predial": null,
-    "comentarios": "Art. 4: la mecánica del impuesto predial es una tarifa al millar anual por tipo de inmueble y por antigüedad del valor determinado o modificado. Se transcriben las tasas aplicables para la entrada en vigor de la ley; las demás filas del artículo muestran tasas históricas para años anteriores (2002-2019, 1993 y anteriores), no una estructura por rangos. Art. 4 también menciona una tasa de 12 al millar para la fracción IV en la columna de inmuebles urbanos y suburbanos sin edificaciones, pero el texto OCR está fragmentado; no se corrige. Se ignoran valores unitarios de catastro de los arts. 5 y 6 por no ser mecánica de cálculo del impuesto."
+    "comentarios": "Artículo 4. Se transcriben las tasas anuales aplicables conforme a los inmuebles que cuenten con un valor determinado o modificado: I y II: urbanos y suburbanos con edificaciones 2.5 al millar; sin edificaciones 4.6 al millar; rústicos 2.6 al millar. La fracción IV del texto muestra '13 al millar' para inmuebles urbanos y suburbanos y '12 al millar' para rústicos, pero aparece desalineada/incompleta en el OCR; no se reestructura ni corrige. Los artículos 5 y 6 contienen tablas de valores unitarios y criterios de avalúo, no mecánica tarifaria del impuesto."
   },
   "_meta": {
     "fuente": "txt",
@@ -39,10 +39,12 @@
     "requiere_revision": false,
     "escalado": false,
     "razon": null,
+    "usado_reocr": false,
+    "usado_vision": false,
     "tokens": {
-      "input": 7515,
-      "output": 412,
-      "cached": 3840
+      "input": 8732,
+      "output": 343,
+      "cached": 5888
     },
     "cvegeo": "11027",
     "estado": "guanajuato",

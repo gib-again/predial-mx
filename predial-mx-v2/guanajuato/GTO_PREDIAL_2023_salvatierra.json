@@ -39,7 +39,7 @@
       }
     ],
     "minimo_predial": null,
-    "comentarios": "Art. 4, fracción I: inmuebles urbanos y suburbanos con edificación y valor determinado o modificado en el ejercicio 2023. Art. 4, fracción II establece tarifas paralelas al millar para inmuebles con valores determinados o modificados en 2022 y anteriores (urbanos, suburbanos y rústicos), por lo que no se integran en la tabla principal: 0.0000, 2.4000, 8.0000 y 13.0000 al millar para urbanos/suburbanos con edificación; 4.7000, 4.5000, 15.0000 y 13.0000 al millar para urbanos/suburbanos sin edificación; 2.0000, 1.8000, 6.0000 y 12.0000 al millar para rústicos, según la antigüedad indicada en la ley. Se excluyen valores unitarios de catastro (Art. 5 y 6)."
+    "comentarios": "Art. 4 fracción I: inmuebles urbanos y suburbanos con edificación y valor determinado o modificado en el ejercicio 2023. Art. 4 fracción II establece tarifas paralelas al millar para inmuebles urbanos, suburbanos y rústicos con valor determinado o modificado en 2022 y anteriores: 0.0000/4.7000/2.0000 al millar para entrada en vigor; 2.4000/4.5000/1.8000 al millar para 2002-2022; 8.0000/15.0000/6.0000 al millar para 1993-2001; 13.0000/13.0000/12.0000 al millar para anteriores a 1993, según la clasificación urbana/suburbana con edificación, urbana/suburbana sin edificación y rústica. No se incluyen en la tabla principal por ser una tarifa paralela con estructura distinta."
   },
   "_meta": {
     "fuente": "txt",
@@ -50,10 +50,12 @@
     "requiere_revision": false,
     "escalado": false,
     "razon": null,
+    "usado_reocr": false,
+    "usado_vision": false,
     "tokens": {
-      "input": 8030,
-      "output": 447,
-      "cached": 3840
+      "input": 9247,
+      "output": 435,
+      "cached": 5888
     },
     "cvegeo": "11028",
     "estado": "guanajuato",

@@ -3,32 +3,32 @@
     "tipo_esquema": "tarifa_millar",
     "tabla": [
       {
-        "grupo": "general",
+        "grupo": "urbano",
         "clave": "urbanos_suburbanos_con_edificaciones",
-        "descripcion": "Inmuebles urbanos y suburbanos con edificaciones",
+        "descripcion": "Inmuebles urbanos y suburbanos con edificaciones; a la entrada en vigor de la ley",
         "tasa_millar": 0.0024,
         "periodicidad": "anual",
         "cuota_fija_adicional": null
       },
       {
-        "grupo": "general",
+        "grupo": "urbano",
         "clave": "urbanos_suburbanos_sin_edificaciones",
-        "descripcion": "Inmuebles urbanos y suburbanos sin edificaciones",
+        "descripcion": "Inmuebles urbanos y suburbanos sin edificaciones; a la entrada en vigor de la ley",
         "tasa_millar": 0.0045,
         "periodicidad": "anual",
         "cuota_fija_adicional": null
       },
       {
-        "grupo": "general",
+        "grupo": "rustico",
         "clave": "rusticos",
-        "descripcion": "Inmuebles rústicos",
+        "descripcion": "Inmuebles rústicos; a la entrada en vigor de la ley",
         "tasa_millar": 0.0018,
         "periodicidad": "anual",
         "cuota_fija_adicional": null
       }
     ],
     "minimo_predial": null,
-    "comentarios": "Art. 4 establece tasas anuales al millar por tipo de inmueble, sin rangos de valor catastral. La mecánica de valuación y los valores unitarios de los arts. 5 y 6 son criterios catastrales, no la tarifa del impuesto. Se transcribe sólo la tabla de tasas: urbanos y suburbanos con edificaciones 2.4 al millar; urbanos y suburbanos sin edificaciones 4.5 al millar; rústicos 1.8 al millar. El renglón 4 ('con anterioridad al año de 1993') aparece incompleto en el texto proporcionado y no se usa para clasificar por estar truncado y no corresponder a una estructura de brackets completa."
+    "comentarios": "Art. 4 establece tasas al millar por tipo de inmueble. La tabla observada en el texto corresponde a la tarifa vigente a la entrada en vigor de la ley; el artículo también muestra tasas históricas para años anteriores (2002-2011, 1993-2001 y anteriores a 1993), pero se transcribe solo la mecánica principal visible para el ejercicio. El resto del texto (Arts. 5 y 6) contiene valores unitarios y criterios de avalúo, no la mecánica de cálculo del impuesto."
   },
   "_meta": {
     "fuente": "txt",
@@ -39,10 +39,12 @@
     "requiere_revision": false,
     "escalado": false,
     "razon": null,
+    "usado_reocr": false,
+    "usado_vision": false,
     "tokens": {
-      "input": 7303,
-      "output": 358,
-      "cached": 3840
+      "input": 8520,
+      "output": 345,
+      "cached": 5888
     },
     "cvegeo": "11026",
     "estado": "guanajuato",

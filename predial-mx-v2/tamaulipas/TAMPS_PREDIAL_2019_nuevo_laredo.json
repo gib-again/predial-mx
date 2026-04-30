@@ -11,7 +11,7 @@
         "cuota_fija_adicional": null
       },
       {
-        "grupo": "otro",
+        "grupo": "urbano",
         "clave": "predios_suburbanos_con_edificaciones",
         "descripcion": "Predios suburbanos con edificaciones",
         "tasa_millar": 0.0015,
@@ -35,7 +35,7 @@
         "cuota_fija_adicional": null
       },
       {
-        "grupo": "otro",
+        "grupo": "urbano",
         "clave": "predios_urbanos_de_uso_industrial",
         "descripcion": "Predios urbanos de uso industrial",
         "tasa_millar": 0.003,
@@ -44,7 +44,7 @@
       }
     ],
     "minimo_predial": null,
-    "comentarios": "Art. 10: tarifa anual sobre valor catastral con tasas categóricas por tipo de predio. No se incluyen como mecánica base las disposiciones de aumento del 100% para adquirientes no constructores y fraccionadores, ni la excepción de fraccionamientos autorizados sobre baldíos."
+    "comentarios": "Art. 10: la base es el valor catastral anual. VI: los predios urbanos no edificados propiedad de fraccionamientos autorizados no aplican la tasa de la fracción IV. VII: adquirientes de lotes de fraccionamientos que no construyan en 3 años pagan 100% más del impuesto. VIII: fraccionadores autorizados pagan 100% de aumento sobre predios no vendidos en 3 años. Se documenta como comentario porque son aumentos/condiciones especiales, no parte de la tabla principal."
   },
   "_meta": {
     "fuente": "txt",
@@ -55,10 +55,12 @@
     "requiere_revision": false,
     "escalado": false,
     "razon": null,
+    "usado_reocr": false,
+    "usado_vision": false,
     "tokens": {
-      "input": 5352,
-      "output": 373,
-      "cached": 3840
+      "input": 6569,
+      "output": 425,
+      "cached": 5888
     },
     "cvegeo": "28027",
     "estado": "tamaulipas",

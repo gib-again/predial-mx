@@ -9,8 +9,13 @@
         "unidad": "pesos"
       }
     ],
+    "tarifas_secundarias": [
+      "Predio rústico: $65.00 anual.",
+      "Todo predio destinado a la producción agropecuaria: $2.00 por hectárea, sin que la cantidad a pagar resultante exceda a lo establecido por la legislación agraria federal para terrenos ejidales.",
+      "Artículo 15: impuesto predial con base en rentas o frutos civiles; casas habitación 2% mensual y actividades comerciales 2% mensual."
+    ],
     "minimo_predial": null,
-    "comentarios": "Artículo 13 establece una cuota fija anual para predio urbano ($80.00) y otra para predio rústico ($65.00), además de un cobro de $2.00 por hectárea para predios destinados a la producción agropecuaria; también aparece un régimen por rentas o frutos civiles (Artículo 15) que no forma parte de la mecánica del impuesto predial sobre valor/categoría principal y se deja fuera de la tabla principal por ser una tarifa paralela sobre rentas. El segmento contiene varias mecánicas distintas, pero la instrucción exige una sola variante; no se clasifica como tarifa_millar/progresivo/tasa_unica/cuota_fija_escalonada porque no hay tabla por rangos ni tasa uniforme sobre valor catastral."
+    "comentarios": "La mecánica principal del artículo 13 es una cuota fija anual por tipo de predio. Se documentan como tarifas secundarias las cuotas de predio rústico, la tarifa por hectárea para predios agropecuarios y la tabla de rentas o frutos civiles del artículo 15, sin incorporarlas a la tabla principal porque no constituyen una estructura homogénea predominante del predial."
   },
   "_meta": {
     "fuente": "txt",
@@ -21,10 +26,12 @@
     "requiere_revision": false,
     "escalado": false,
     "razon": null,
+    "usado_reocr": false,
+    "usado_vision": false,
     "tokens": {
-      "input": 5102,
-      "output": 233,
-      "cached": 3840
+      "input": 6319,
+      "output": 248,
+      "cached": 5888
     },
     "cvegeo": "31029",
     "estado": "yucatan",

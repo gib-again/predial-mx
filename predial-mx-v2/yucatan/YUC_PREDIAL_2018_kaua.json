@@ -46,7 +46,7 @@
       }
     ],
     "minimo_predial": null,
-    "comentarios": "Artículo 13: tarifa progresiva del impuesto predial con cuota fija anual y factor/tasa marginal aplicable al excedente del límite inferior. Se transcribe sólo la mecánica de cálculo. Artículo 13 también establece una tarifa paralela para todo predio destinado a la producción agropecuaria: 10 al millar anual sobre el valor registrado o catastral; no se incluye en la tabla principal por ser una tarifa separada."
+    "comentarios": "Art. 13: la tarifa principal del impuesto predial es progresiva por valor catastral, con cuota fija anual y factor aplicable al excedente del límite inferior. Tarifa secundaria paralela: todo predio destinado a la producción agropecuaria paga 10 al millar anual sobre el valor registrado o catastral, sin que exceda lo establecido por la legislación agraria federal para terrenos ejidales; se documenta aparte porque no forma parte de la mecánica principal por brackets."
   },
   "_meta": {
     "fuente": "txt",
@@ -57,10 +57,12 @@
     "requiere_revision": false,
     "escalado": false,
     "razon": null,
+    "usado_reocr": false,
+    "usado_vision": false,
     "tokens": {
-      "input": 6214,
-      "output": 357,
-      "cached": 3840
+      "input": 7431,
+      "output": 369,
+      "cached": 5888
     },
     "cvegeo": "31043",
     "estado": "yucatan",

@@ -103,12 +103,18 @@
             "valor": 600.0,
             "tipo": "cuota_fija",
             "unidad": "pesos"
+          },
+          {
+            "nombre": "zona_costera",
+            "valor": 3e-05,
+            "tipo": "tasa_porcentual",
+            "unidad": "porcentaje"
           }
         ]
       }
     ],
     "minimo_predial": null,
-    "comentarios": "Artículo 14 establece una tarifa por rangos de valor catastral con cuota fija en pesos y un factor para aplicar al excedente; por ello no encaja como cuota fija escalonada pura. Se transcribe sólo la mecánica del impuesto predial sobre valor catastral. El mismo artículo incluye además una tarifa paralela para zona costera: 0.003% del valor catastral de predios de playa colindantes con el Golfo de México y su zona federal marítimo terrestre; no se incorpora en la tabla principal por ser una tarifa separada. Artículo 17 regula el predial sobre rentas o frutos civiles (3% casas habitación, 5% actividades comerciales), materia distinta que se ignora para esta mecánica."
+    "comentarios": "Art. 14: tarifa principal de predial con rangos de valor catastral y cuota fija + factor sobre el excedente. Art. 15: para la zona costera colindante con el Golfo de México y su zona federal marítimo terrestre, una vez calculado el valor catastral el impuesto será el 0.003% del valor catastral; se documenta como columna heterogénea adicional porque coexiste con la tarifa principal. Art. 17: predial sobre rentas o frutos civiles mensuales: casas habitación 3% y actividades comerciales 5%; tarifa secundaria paralela no incorporada a la tabla principal."
   },
   "_meta": {
     "fuente": "txt",
@@ -119,10 +125,12 @@
     "requiere_revision": false,
     "escalado": false,
     "razon": null,
+    "usado_reocr": false,
+    "usado_vision": false,
     "tokens": {
-      "input": 6255,
-      "output": 562,
-      "cached": 3840
+      "input": 7472,
+      "output": 570,
+      "cached": 5888
     },
     "cvegeo": "31061",
     "estado": "yucatan",

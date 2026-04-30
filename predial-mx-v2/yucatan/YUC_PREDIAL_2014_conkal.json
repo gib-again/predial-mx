@@ -1,59 +1,101 @@
 {
   "predial": {
-    "tipo_esquema": "progresivo",
+    "tipo_esquema": "mixto",
     "tabla": [
       {
         "n_rango": 1,
         "inferior": 0.0,
         "superior": 4000.0,
-        "cuota_fija": 6.0,
-        "tasa_marginal": 0.00075
+        "columnas": [
+          {
+            "nombre": "general",
+            "valor": 6.0,
+            "tipo": "cuota_fija",
+            "unidad": "pesos"
+          }
+        ]
       },
       {
         "n_rango": 2,
         "inferior": 4000.01,
         "superior": 5500.0,
-        "cuota_fija": 9.0,
-        "tasa_marginal": 0.002
+        "columnas": [
+          {
+            "nombre": "general",
+            "valor": 9.0,
+            "tipo": "cuota_fija",
+            "unidad": "pesos"
+          }
+        ]
       },
       {
         "n_rango": 3,
         "inferior": 5500.01,
         "superior": 6500.0,
-        "cuota_fija": 12.0,
-        "tasa_marginal": 0.003
+        "columnas": [
+          {
+            "nombre": "general",
+            "valor": 12.0,
+            "tipo": "cuota_fija",
+            "unidad": "pesos"
+          }
+        ]
       },
       {
         "n_rango": 4,
         "inferior": 6500.01,
         "superior": 7500.0,
-        "cuota_fija": 15.0,
-        "tasa_marginal": 0.003
+        "columnas": [
+          {
+            "nombre": "general",
+            "valor": 15.0,
+            "tipo": "cuota_fija",
+            "unidad": "pesos"
+          }
+        ]
       },
       {
         "n_rango": 5,
         "inferior": 7500.01,
         "superior": 8500.0,
-        "cuota_fija": 18.0,
-        "tasa_marginal": 0.004
+        "columnas": [
+          {
+            "nombre": "general",
+            "valor": 18.0,
+            "tipo": "cuota_fija",
+            "unidad": "pesos"
+          }
+        ]
       },
       {
         "n_rango": 6,
         "inferior": 8500.01,
         "superior": 10000.0,
-        "cuota_fija": 22.0,
-        "tasa_marginal": 0.00133
+        "columnas": [
+          {
+            "nombre": "general",
+            "valor": 22.0,
+            "tipo": "cuota_fija",
+            "unidad": "pesos"
+          }
+        ]
       },
       {
         "n_rango": 7,
         "inferior": 10000.01,
         "superior": null,
-        "cuota_fija": 24.0,
-        "tasa_marginal": 0.002
+        "columnas": [
+          {
+            "nombre": "general",
+            "valor": 24.0,
+            "tipo": "cuota_fija",
+            "unidad": "pesos"
+          }
+        ]
       }
     ],
     "minimo_predial": null,
-    "comentarios": "Art. 13: tabla progresiva de valor catastral con cuota fija anual y factor sobre el excedente; el impuesto bimestral se obtiene dividiendo el resultado entre seis. Art. 14: para predios rústicos destinados a producción agropecuaria se establece una tarifa paralela de 10 al millar anual sobre el valor registrado o catastral; no se incluye en la tabla principal por ser tarifa separada. También se ignoran descuentos, valores unitarios de catastro y frutos civiles por no ser mecánica de la tabla principal solicitada."
+    "comentarios": "Art. 13: tarifa por valor catastral con brackets de cuota fija anual y factor marginal (0.00075, 0.00200, 0.00300, 0.00300, 0.00400, 0.00133, 0.00200) sobre el excedente; la mecánica es híbrida porque combina cuota fija y tasa marginal. Art. 14: predios rústicos pagan 315/420/525 pesos por hectárea según superficie (1-20, 21-40, 41 en adelante), y predios agropecuarios pagan 10 al millar anual sobre valor registrado o catastral; el artículo 15 establece frutos civiles: habitacional 2% mensual y comercial 3% mensual sobre la contraprestación. Se documenta solo la mecánica principal y las tarifas paralelas/secundarias sin incorporar descuentos."
   },
   "_meta": {
     "fuente": "txt",
@@ -64,10 +106,12 @@
     "requiere_revision": false,
     "escalado": false,
     "razon": null,
+    "usado_reocr": false,
+    "usado_vision": false,
     "tokens": {
-      "input": 6320,
-      "output": 418,
-      "cached": 3840
+      "input": 7537,
+      "output": 547,
+      "cached": 5888
     },
     "cvegeo": "31013",
     "estado": "yucatan",

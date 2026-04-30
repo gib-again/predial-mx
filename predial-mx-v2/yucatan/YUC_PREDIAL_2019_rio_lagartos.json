@@ -60,7 +60,7 @@
       }
     ],
     "minimo_predial": null,
-    "comentarios": "Art. 14 establece una tarifa progresiva por valor catastral con cuota fija + factor para aplicar al excedente del límite inferior en cada rango. Art. 15 incluye valores unitarios de terreno/construcción y una regla separada para zona costera (0.003% del valor catastral) y comisaría Las Coloradas, pero esos son criterios de valuación o tarifas paralelas fuera de la mecánica principal de la tabla del Art. 14. Art. 17 trata predial sobre rentas o frutos civiles (3% casas habitación, 5% comerciales) y se omite por ser una base distinta."
+    "comentarios": "Art. 14: tarifa progresiva sobre valor catastral con cuota fija + factor para aplicar al excedente del límite inferior. Art. 17 establece una mecánica paralela sobre rentas o frutos civiles: 3% mensual para casas habitación y 5% mensual para actividades comerciales; se documenta aparte por ser tarifa secundaria/no estructurada dentro de la tabla principal. Art. 15 contiene valores unitarios catastrales, no tarifa de cálculo. La zona costera menciona 0.003% del valor catastral, pero el texto no presenta una tabla estructurada separada; se omite de la tabla principal y se deja constancia como referencia textual en la norma."
   },
   "_meta": {
     "fuente": "txt",
@@ -71,10 +71,12 @@
     "requiere_revision": false,
     "escalado": false,
     "razon": null,
+    "usado_reocr": false,
+    "usado_vision": false,
     "tokens": {
-      "input": 6325,
-      "output": 462,
-      "cached": 3840
+      "input": 7542,
+      "output": 473,
+      "cached": 5888
     },
     "cvegeo": "31061",
     "estado": "yucatan",

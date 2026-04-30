@@ -36,7 +36,7 @@
       }
     ],
     "minimo_predial": null,
-    "comentarios": "Art. 4 establece tasas anuales al millar por categoría de inmueble. Se transcribe la mecánica principal del predial conforme a los renglones visibles del texto. El artículo 5 contiene valores unitarios catastrales para avalúo, no una tarifa del impuesto, por lo que no se clasifica en la mecánica del cálculo. El texto OCR presenta una tabla con encabezados y cuatro tasas: 2.4 al millar, 4.5 al millar, 1.8 al millar y 13 al millar/13 al millar/12 al millar en renglón deteriorado; se conserva únicamente la estructura inequívoca de la tarifa visible y se deja constancia de la ambigüedad del OCR. No se detectó mínimo predial."
+    "comentarios": "Artículo 4 establece tasas anuales al millar sobre el valor catastral determinadas por tipo de inmueble y existencia de edificaciones. Se distinguen dos grupos: inmuebles urbanos y suburbanos, e inmuebles rústicos. Las tasas aplicables según el texto son: a la entrada en vigor de la ley 2.4 al millar (urbanos/suburbanos con edificaciones), 4.5 al millar (urbanos/suburbanos sin edificaciones) y 1.8 al millar (rústicos con edificaciones y rústicos sin edificaciones, tal como aparece en el texto). Artículo 5 y 6 contienen valores unitarios y criterios de valuación, no mecánica tarifaria."
   },
   "_meta": {
     "fuente": "txt",
@@ -47,10 +47,12 @@
     "requiere_revision": false,
     "escalado": false,
     "razon": null,
+    "usado_reocr": false,
+    "usado_vision": false,
     "tokens": {
-      "input": 7650,
-      "output": 418,
-      "cached": 3840
+      "input": 8867,
+      "output": 403,
+      "cached": 5888
     },
     "cvegeo": "11005",
     "estado": "guanajuato",

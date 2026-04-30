@@ -3,56 +3,48 @@
     "tipo_esquema": "tarifa_millar",
     "tabla": [
       {
-        "grupo": "urbano",
-        "clave": "urbano_suburbano_reciente",
-        "descripcion": "Inmuebles urbanos y suburbanos con valor determinado a la entrada en vigor de la ley y hasta el año 2018, inclusive",
-        "tasa_millar": 0.0024,
+        "grupo": "general",
+        "clave": "inmuebles_urbanos_y_suburbanos_entrada_en_vigor_a_2018",
+        "descripcion": "Inmuebles urbanos y suburbanos: de la entrada en vigor de la ley a 2018 inclusive",
+        "tasa_millar": 2.4,
         "periodicidad": "anual",
         "cuota_fija_adicional": null
       },
       {
-        "grupo": "urbano",
-        "clave": "urbano_suburbano_historico",
-        "descripcion": "Inmuebles urbanos y suburbanos con valor determinado con anterioridad al año 2002 y hasta el año 1993",
-        "tasa_millar": 0.008,
+        "grupo": "general",
+        "clave": "inmuebles_urbanos_y_suburbanos_anteriores_a_2002_hasta_1993",
+        "descripcion": "Inmuebles urbanos y suburbanos: con anterioridad al año 2002 y hasta el año 1993",
+        "tasa_millar": 8.0,
         "periodicidad": "anual",
         "cuota_fija_adicional": null
       },
       {
-        "grupo": "rustico",
-        "clave": "rustico_reciente",
-        "descripcion": "Inmuebles rústicos con valor determinado a la entrada en vigor de la ley y hasta el año 2018, inclusive",
-        "tasa_millar": 0.0045,
-        "periodicidad": "anual",
-        "cuota_fija_adicional": null
-      },
-      {
-        "grupo": "rustico",
-        "clave": "rustico_historico",
-        "descripcion": "Inmuebles rústicos con valor determinado con anterioridad al año 2002 y hasta el año 1993",
-        "tasa_millar": 0.015,
-        "periodicidad": "anual",
-        "cuota_fija_adicional": null
-      },
-      {
-        "grupo": "urbano",
-        "clave": "urbano_suburbano_muy_antiguo",
-        "descripcion": "Inmuebles urbanos y suburbanos con valor determinado con anterioridad al año 1993",
-        "tasa_millar": 0.012,
+        "grupo": "general",
+        "clave": "inmuebles_urbanos_y_suburbanos_anterior_a_1993",
+        "descripcion": "Inmuebles urbanos y suburbanos: con anterioridad al año 1993",
+        "tasa_millar": 12.0,
         "periodicidad": "anual",
         "cuota_fija_adicional": null
       },
       {
         "grupo": "rustico",
-        "clave": "rustico_muy_antiguo",
-        "descripcion": "Inmuebles rústicos con valor determinado con anterioridad al año 1993",
-        "tasa_millar": 0.006,
+        "clave": "inmuebles_rusticos_entrada_en_vigor_a_2018",
+        "descripcion": "Inmuebles rústicos: de la entrada en vigor de la ley a 2018 inclusive",
+        "tasa_millar": 1.8,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "rustico",
+        "clave": "inmuebles_rusticos_anteriores_a_2002_hasta_1993",
+        "descripcion": "Inmuebles rústicos: con anterioridad al año 2002 y hasta el año 1993",
+        "tasa_millar": 6.0,
         "periodicidad": "anual",
         "cuota_fija_adicional": null
       }
     ],
     "minimo_predial": null,
-    "comentarios": "Artículo 4: se transcriben tasas al millar por antigüedad de valuación para inmuebles urbanos y suburbanos, y por separado para inmuebles rústicos. No se incluyen tablas de valores unitarios de los artículos 5 y 6 porque son valores catastrales, no mecánica de cálculo del impuesto. La imagen OCR presenta texto deteriorado en el encabezado, pero la estructura observable es de tarifas categóricas sin rangos de valor catastral."
+    "comentarios": "Artículo 4 contiene una tabla de tasas al millar por antigüedad del inmueble y por tipo general/rústico. El texto OCR está fragmentado, pero se distinguen tasas diferenciadas para inmuebles urbanos y suburbanos, y para inmuebles rústicos. También aparece una columna adicional para inmuebles edificado/edificaciones con tasas 1.8, 4.5, 6 y 15 al millar; se transcribe sólo la mecánica principal detectada en la tabla, sin interpretar cruces adicionales que el OCR no deja inequívocos."
   },
   "_meta": {
     "fuente": "txt",
@@ -63,10 +55,12 @@
     "requiere_revision": false,
     "escalado": false,
     "razon": null,
+    "usado_reocr": false,
+    "usado_vision": false,
     "tokens": {
-      "input": 7351,
-      "output": 542,
-      "cached": 3840
+      "input": 8568,
+      "output": 524,
+      "cached": 5888
     },
     "cvegeo": "11033",
     "estado": "guanajuato",

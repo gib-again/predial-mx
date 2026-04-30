@@ -53,7 +53,7 @@
       }
     ],
     "minimo_predial": null,
-    "comentarios": "Art. 13 establece una cuota fija anual de $60.00 y una tasa del 0.20% del valor catastral vigente; sin embargo, el Art. 14 contiene la tarifa por rangos de valor catastral con cuota anual fija y factor marginal. Se transcribe la mecánica tarifaria por brackets del Art. 14. El Art. 16 regula predial sobre rentas o frutos civiles (2% mensual para casas habitación y 2% para actividades comerciales), pero es una base distinta y se omite de la tabla principal por ser tarifa paralela."
+    "comentarios": "Art. 13 establece una cuota fija de $60.00 y además una tasa del 0.20% del valor catastral vigente. Art. 14 contiene la tabla por rangos con cuota anual y factor para aplicar al límite; se transcribe como progresivo porque usa límites inferior/superior y un factor marginal. El Art. 16 regula el impuesto predial con base en rentas o frutos civiles mensuales por casas habitación y actividades comerciales al 2% mensual; se documenta como tarifa secundaria paralela, no como mecánica principal."
   },
   "_meta": {
     "fuente": "txt",
@@ -64,10 +64,12 @@
     "requiere_revision": false,
     "escalado": false,
     "razon": null,
+    "usado_reocr": false,
+    "usado_vision": false,
     "tokens": {
-      "input": 6762,
-      "output": 422,
-      "cached": 3840
+      "input": 7979,
+      "output": 416,
+      "cached": 5888
     },
     "cvegeo": "31026",
     "estado": "yucatan",

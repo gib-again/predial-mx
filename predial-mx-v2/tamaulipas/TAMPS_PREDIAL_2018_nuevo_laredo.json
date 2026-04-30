@@ -28,7 +28,7 @@
       },
       {
         "grupo": "urbano",
-        "clave": "predios_urbanos_y_suburbanos_sin_edificaciones_baldios",
+        "clave": "predios_urbanos_y_suburbanos_sin_edificacion_baldios",
         "descripcion": "Predios urbanos y suburbanos sin edificaciones (baldíos)",
         "tasa_millar": 0.003,
         "periodicidad": "anual",
@@ -44,7 +44,7 @@
       }
     ],
     "minimo_predial": null,
-    "comentarios": "Art. 10: impuesto anual sobre el valor catastral de los inmuebles. Se transcriben las tasas por categoría: urbanos con edificaciones 1.5 al millar; suburbanos con edificaciones 1.5 al millar; rústicos 3.0 al millar; urbanos y suburbanos sin edificaciones (baldíos) 3.0 al millar; urbanos de uso industrial 3.0 al millar. Las fracciones VI-VIII contienen reglas de excepción/aumento, pero no se transcriben como parte de la mecánica base de cálculo."
+    "comentarios": "Artículo 10: la mecánica principal es una tarifa categórica al millar sobre valor catastral para predios urbanos, suburbanos, rústicos, baldíos e industriales. Las fracciones VI a VIII establecen reglas especiales/recargos por fraccionamientos y adquirientes que no construyan, pero no se transcriben como parte de la mecánica principal solicitada."
   },
   "_meta": {
     "fuente": "txt",
@@ -55,10 +55,12 @@
     "requiere_revision": false,
     "escalado": false,
     "razon": null,
+    "usado_reocr": false,
+    "usado_vision": false,
     "tokens": {
-      "input": 5349,
-      "output": 436,
-      "cached": 3840
+      "input": 6566,
+      "output": 391,
+      "cached": 5888
     },
     "cvegeo": "28027",
     "estado": "tamaulipas",

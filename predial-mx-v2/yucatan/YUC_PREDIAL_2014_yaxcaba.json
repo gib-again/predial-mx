@@ -53,7 +53,7 @@
       }
     ],
     "minimo_predial": null,
-    "comentarios": "Artículo 4 contiene la tarifa principal del impuesto predial sobre valor catastral con brackets y tasa marginal positiva. Artículo 5 establece una tasa separada sobre rentas o frutos civiles: 2% habitacional y 5% comercial, mensual sobre el monto de la contraprestación; se trata de una tarifa paralela y no se integra a la tabla principal."
+    "comentarios": "Art. 4: mecánica principal sobre valor catastral con tarifa progresiva por rangos. Art. 5: cuando el impuesto predial se cause sobre la base de rentas o frutos civiles, se paga mensualmente al 2% para predio habitacional y 5% para comercial sobre el monto de la contraprestación; se documenta como tarifa secundaria/paralela porque no es la mecánica principal del predial calculada sobre valor catastral."
   },
   "_meta": {
     "fuente": "txt",
@@ -64,10 +64,12 @@
     "requiere_revision": false,
     "escalado": false,
     "razon": null,
+    "usado_reocr": false,
+    "usado_vision": false,
     "tokens": {
-      "input": 6411,
-      "output": 379,
-      "cached": 3840
+      "input": 7628,
+      "output": 400,
+      "cached": 5888
     },
     "cvegeo": "31104",
     "estado": "yucatan",

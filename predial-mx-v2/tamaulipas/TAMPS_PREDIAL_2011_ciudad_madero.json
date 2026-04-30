@@ -55,9 +55,9 @@
     "minimo_predial": {
       "monto": 3.0,
       "periodicidad": "anual",
-      "unidad": "vsm"
+      "unidad": "salario_mínimo"
     },
-    "comentarios": "Art. 9 establece que la base es el valor catastral. La tabla transcrita en Art. 10 contiene cuota anual mínima aplicable en cada rango más tasa anual al millar sobre el excedente del límite inferior, por lo que corresponde a esquema progresivo. El mínimo predial es: en zonas precarias 3 salarios mínimos y en cualquier otra zona 4 salarios mínimos. Se ignoran los aumentos por predios no edificados o con baja construcción, por ser reglas de cálculo particulares dentro del mismo artículo y no una tarifa paralela."
+    "comentarios": "Art. 9: el impuesto predial se causa sobre el valor catastral. La tabla aplicable es una tarifa progresiva por rangos de valor catastral con cuota fija anual mínima aplicable en cada rango y tasa anual al millar sobre el excedente del límite inferior. Art. 10 establece mínimo predial: 3 salarios mínimos en zonas precarias y 4 salarios mínimos en cualquier otra zona. Las reglas de aumento por predios no edificados, con baja edificación o lotes de fraccionamiento se transcriben sólo como tratamiento diferencial dentro del mismo artículo, sin cambiar el esquema base de cálculo."
   },
   "_meta": {
     "fuente": "txt",
@@ -68,10 +68,12 @@
     "requiere_revision": false,
     "escalado": false,
     "razon": null,
+    "usado_reocr": false,
+    "usado_vision": false,
     "tokens": {
-      "input": 7486,
-      "output": 441,
-      "cached": 3840
+      "input": 8703,
+      "output": 458,
+      "cached": 5888
     },
     "cvegeo": "28009",
     "estado": "tamaulipas",

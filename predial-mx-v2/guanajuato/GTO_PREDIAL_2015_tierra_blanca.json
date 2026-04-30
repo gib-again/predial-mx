@@ -3,32 +3,32 @@
     "tipo_esquema": "tarifa_millar",
     "tabla": [
       {
-        "grupo": "general",
-        "clave": "urbanos_y_suburbanos_con_edificaciones",
-        "descripcion": "Inmuebles urbanos y suburbanos con edificaciones",
+        "grupo": "urbano",
+        "clave": "con_edificaciones",
+        "descripcion": "Inmuebles urbanos y suburbanos con edificaciones; valor determinado o modificado. Art. 4, fracc. 1",
         "tasa_millar": 0.0024,
         "periodicidad": "anual",
         "cuota_fija_adicional": null
       },
       {
-        "grupo": "general",
-        "clave": "urbanos_y_suburbanos_sin_edificaciones",
-        "descripcion": "Inmuebles urbanos y suburbanos sin edificaciones",
+        "grupo": "urbano",
+        "clave": "sin_edificaciones",
+        "descripcion": "Inmuebles urbanos y suburbanos sin edificaciones; valor determinado o modificado. Art. 4, fracc. 1",
         "tasa_millar": 0.0043,
         "periodicidad": "anual",
         "cuota_fija_adicional": null
       },
       {
         "grupo": "rustico",
-        "clave": "rusticos",
-        "descripcion": "Inmuebles rústicos",
+        "clave": "rustico",
+        "descripcion": "Inmuebles rústicos; valor determinado o modificado. Art. 4, fracc. 1",
         "tasa_millar": 0.0018,
         "periodicidad": "anual",
         "cuota_fija_adicional": null
       }
     ],
     "minimo_predial": null,
-    "comentarios": "Artículo 4: el impuesto predial se causa y liquida anualmente con tres tasas diferenciadas por tipo de inmueble. No se transcriben los valores unitarios de terreno y construcción de los artículos 5 y 6 porque son tablas catastrales de valuación, no la mecánica del impuesto. La tasa para inmuebles urbanos y suburbanos con edificaciones es 2.4 al millar; sin edificaciones 4.3 al millar; rústicos 1.8 al millar. El texto también muestra tasas históricas para años anteriores, pero se ignoran por corresponder a ejercicios previos."
+    "comentarios": "Art. 4 establece una tarifa anual al millar por tipo de inmueble y condición: urbanos y suburbanos con edificaciones 2.4 al millar, sin edificaciones 4.3 al millar, e inmuebles rústicos 1.8 al millar. El texto también muestra una tabla histórica de tasas para años anteriores (2002-2014 y anteriores), pero la mecánica vigente para 2015 es la primera fracción indicada. Los artículos 5 y 6 contienen tablas de valores unitarios y criterios de avalúo, no la tarifa del impuesto."
   },
   "_meta": {
     "fuente": "txt",
@@ -39,10 +39,12 @@
     "requiere_revision": false,
     "escalado": false,
     "razon": null,
+    "usado_reocr": false,
+    "usado_vision": false,
     "tokens": {
-      "input": 7301,
-      "output": 336,
-      "cached": 3840
+      "input": 8518,
+      "output": 361,
+      "cached": 5888
     },
     "cvegeo": "11040",
     "estado": "guanajuato",

@@ -3,17 +3,17 @@
     "tipo_esquema": "tarifa_millar",
     "tabla": [
       {
-        "grupo": "urbano",
+        "grupo": "general",
         "clave": "urbanos_y_suburbanos_con_edificaciones",
-        "descripcion": "Inmuebles urbanos y suburbanos con edificaciones: a la entrada en vigor de la presente Ley / durante 2002 a 2025 inclusive / con anterioridad a 2002 y hasta 1993",
+        "descripcion": "Inmuebles urbanos y suburbanos con edificaciones; aplica a predios con valor determinado o modificado. Art. 4, fracción 1 y 2.",
         "tasa_millar": 0.0024,
         "periodicidad": "anual",
         "cuota_fija_adicional": null
       },
       {
-        "grupo": "urbano",
+        "grupo": "general",
         "clave": "urbanos_y_suburbanos_sin_edificaciones",
-        "descripcion": "Inmuebles urbanos y suburbanos sin edificaciones: a la entrada en vigor de la presente Ley / durante 2002 a 2025 inclusive / con anterioridad a 2002 y hasta 1993",
+        "descripcion": "Inmuebles urbanos y suburbanos sin edificaciones; aplica a predios con valor determinado o modificado. Art. 4, fracción 1 y 2.",
         "tasa_millar": 0.0045,
         "periodicidad": "anual",
         "cuota_fija_adicional": null
@@ -21,14 +21,14 @@
       {
         "grupo": "rustico",
         "clave": "rusticos",
-        "descripcion": "Inmuebles rústicos: a la entrada en vigor de la presente Ley / durante 2002 a 2025 inclusive / con anterioridad a 2002 y hasta 1993",
+        "descripcion": "Inmuebles rústicos; aplica a predios con valor determinado o modificado. Art. 4, fracción 1 y 2.",
         "tasa_millar": 0.0018,
         "periodicidad": "anual",
         "cuota_fija_adicional": null
       }
     ],
     "minimo_predial": null,
-    "comentarios": "Art. 4 establece tasas anuales al millar por tipo de inmueble y condición, sin rangos de valor catastral. Se transcriben las tasas visibles en el texto OCR: 2.4 al millar, 4.5 al millar y 1.8 al millar para inmuebles urbanos y suburbanos con edificaciones, sin edificaciones, y rústicos, respectivamente. El texto OCR muestra además renglones históricos con otras tasas para años anteriores, pero la mecánica aplicable al ejercicio 2026 queda capturada por las tasas vigentes del Art. 4. Art. 5 contiene valores unitarios de catastro para avalúo, no la tarifa del impuesto, por lo que se ignora."
+    "comentarios": "Art. 4 establece tasas anuales al millar por categoría de inmueble, sin rangos de valor catastral. Las fracciones 3 y 4 muestran tasas históricas para predios con anterioridad a años específicos; en el ejercicio 2026 la tarifa aplicable extraída del texto es la de las fracciones 1 y 2. Se ignoran tablas de valores unitarios del Art. 5 por ser catastro, no mecánica del impuesto."
   },
   "_meta": {
     "fuente": "txt",
@@ -39,10 +39,12 @@
     "requiere_revision": false,
     "escalado": false,
     "razon": null,
+    "usado_reocr": false,
+    "usado_vision": false,
     "tokens": {
-      "input": 7742,
-      "output": 455,
-      "cached": 3840
+      "input": 8959,
+      "output": 369,
+      "cached": 5888
     },
     "cvegeo": "11019",
     "estado": "guanajuato",

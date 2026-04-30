@@ -3,32 +3,32 @@
     "tipo_esquema": "tarifa_millar",
     "tabla": [
       {
-        "grupo": "general",
-        "clave": "inmuebles_urbanos_y_suburbanos_con_edificaciones",
-        "descripcion": "Inmuebles urbanos y suburbanos con edificaciones, según antigüedad de la edificación",
+        "grupo": "urbano",
+        "clave": "urbano_con_edificaciones",
+        "descripcion": "Inmuebles urbanos y suburbanos con edificaciones",
         "tasa_millar": 0.0024,
         "periodicidad": "anual",
         "cuota_fija_adicional": null
       },
       {
-        "grupo": "general",
-        "clave": "inmuebles_urbanos_y_suburbanos_sin_edificaciones",
-        "descripcion": "Inmuebles urbanos y suburbanos sin edificaciones, según antigüedad de la edificación",
+        "grupo": "urbano",
+        "clave": "urbano_sin_edificaciones",
+        "descripcion": "Inmuebles urbanos y suburbanos sin edificaciones",
         "tasa_millar": 0.0045,
         "periodicidad": "anual",
         "cuota_fija_adicional": null
       },
       {
-        "grupo": "general",
-        "clave": "inmuebles_rusticos",
-        "descripcion": "Inmuebles rústicos, según antigüedad de la edificación",
+        "grupo": "rustico",
+        "clave": "rustico",
+        "descripcion": "Inmuebles rústicos",
         "tasa_millar": 0.0018,
         "periodicidad": "anual",
         "cuota_fija_adicional": null
       }
     ],
     "minimo_predial": null,
-    "comentarios": "Artículo 4 establece tasas anuales al millar por tipo de inmueble y antigüedad. Se transcriben sólo las tasas de la sección tarifaria. Las tablas de valores unitarios de terreno y construcción de los artículos 5 y 6 son tablas catastrales de valuación, no mecánica del impuesto, y se ignoran. No se advierte en el texto una estructura de rangos por valor catastral para el cálculo del predial, sino tasas categóricas por tipo de inmueble."
+    "comentarios": "Artículo 4: tasas anuales sobre valor catastral para inmuebles urbanos y suburbanos con edificaciones (2.4 al millar), sin edificaciones (4.5 al millar) y rústicos (1.8 al millar). Se ignoran las tablas de valores unitarios de los artículos 5 y 6 por ser valuación catastral, no mecánica de cálculo del impuesto."
   },
   "_meta": {
     "fuente": "txt",
@@ -39,10 +39,12 @@
     "requiere_revision": false,
     "escalado": false,
     "razon": null,
+    "usado_reocr": false,
+    "usado_vision": false,
     "tokens": {
-      "input": 7366,
-      "output": 343,
-      "cached": 3840
+      "input": 8583,
+      "output": 280,
+      "cached": 5888
     },
     "cvegeo": "11021",
     "estado": "guanajuato",

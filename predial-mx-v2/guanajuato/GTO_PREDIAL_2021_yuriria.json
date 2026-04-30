@@ -4,15 +4,15 @@
     "tabla": [
       {
         "grupo": "urbano",
-        "clave": "inmuebles_urbanos_y_suburbanos_con_edificaciones",
+        "clave": "urbano_con_edificaciones",
         "descripcion": "Inmuebles urbanos y suburbanos con edificaciones",
-        "tasa_millar": 0.0024,
+        "tasa_millar": 0.0018,
         "periodicidad": "anual",
         "cuota_fija_adicional": null
       },
       {
         "grupo": "urbano",
-        "clave": "inmuebles_urbanos_y_suburbanos_sin_edificaciones",
+        "clave": "urbano_sin_edificaciones",
         "descripcion": "Inmuebles urbanos y suburbanos sin edificaciones",
         "tasa_millar": 0.0045,
         "periodicidad": "anual",
@@ -20,15 +20,15 @@
       },
       {
         "grupo": "rustico",
-        "clave": "inmuebles_rusticos",
+        "clave": "rustico",
         "descripcion": "Inmuebles rústicos",
-        "tasa_millar": 0.0018,
+        "tasa_millar": 0.0024,
         "periodicidad": "anual",
         "cuota_fija_adicional": null
       }
     ],
     "minimo_predial": null,
-    "comentarios": "Art. 4: el impuesto predial se causa y liquida anualmente con tasas al millar según tipo de inmueble. Se identifican tarifas paralelas por antigüedad del inmueble (1: entrada en vigor; 2: 2002-2020; 3: anterior a 2002 y hasta 1993; 4: anterior a 1993), pero el texto presentado está fragmentado y no permite reconstruir con certeza una tabla única adicional sin mezclar estructuras. Art. 5 y 6 contienen tablas de valores unitarios para avalúo/catastro, no la mecánica del impuesto; se ignoran."
+    "comentarios": "Art. 4: la mecánica principal del impuesto predial es una tarifa al millar anual por tipo de inmueble. Se transcribe la tarifa vigente para 2021 conforme al texto proporcionado: inmuebles urbanos y suburbanos con edificaciones 1.8 al millar; sin edificaciones 4.5 al millar; inmuebles rústicos 2.4 al millar. El artículo también contiene referencias históricas por periodos anteriores y valores catastrales para avalúo (arts. 5 y 6), pero no forman parte de la mecánica de cálculo del impuesto y se ignoran."
   },
   "_meta": {
     "fuente": "txt",
@@ -39,10 +39,12 @@
     "requiere_revision": false,
     "escalado": false,
     "razon": null,
+    "usado_reocr": false,
+    "usado_vision": false,
     "tokens": {
-      "input": 7556,
-      "output": 347,
-      "cached": 3840
+      "input": 8773,
+      "output": 329,
+      "cached": 5888
     },
     "cvegeo": "11046",
     "estado": "guanajuato",

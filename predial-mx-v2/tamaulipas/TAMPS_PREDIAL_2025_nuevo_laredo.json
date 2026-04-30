@@ -6,7 +6,7 @@
         "grupo": "urbano",
         "clave": "predios_urbanos_con_edificaciones",
         "descripcion": "Predios urbanos con edificaciones",
-        "tasa_millar": 1.5,
+        "tasa_millar": 0.0015,
         "periodicidad": "anual",
         "cuota_fija_adicional": null
       },
@@ -14,7 +14,7 @@
         "grupo": "urbano",
         "clave": "predios_suburbanos_con_edificaciones",
         "descripcion": "Predios suburbanos con edificaciones",
-        "tasa_millar": 1.5,
+        "tasa_millar": 0.0015,
         "periodicidad": "anual",
         "cuota_fija_adicional": null
       },
@@ -22,7 +22,7 @@
         "grupo": "rustico",
         "clave": "predios_rusticos",
         "descripcion": "Predios rústicos",
-        "tasa_millar": 3.0,
+        "tasa_millar": 0.003,
         "periodicidad": "anual",
         "cuota_fija_adicional": null
       },
@@ -30,7 +30,7 @@
         "grupo": "urbano",
         "clave": "predios_urbanos_y_suburbanos_sin_edificacion_baldios",
         "descripcion": "Predios urbanos y suburbanos sin edificaciones (baldíos)",
-        "tasa_millar": 3.0,
+        "tasa_millar": 0.003,
         "periodicidad": "anual",
         "cuota_fija_adicional": null
       },
@@ -38,13 +38,13 @@
         "grupo": "urbano",
         "clave": "predios_urbanos_de_uso_industrial",
         "descripcion": "Predios urbanos de uso industrial",
-        "tasa_millar": 3.0,
+        "tasa_millar": 0.003,
         "periodicidad": "anual",
         "cuota_fija_adicional": null
       }
     ],
     "minimo_predial": null,
-    "comentarios": "Art. 10: se establece una tarifa al millar sobre el valor catastral para distintas categorías de predios. No se incorpora la fracción VI porque es una excepción a la tasa de baldíos; tampoco se incorporan las fracciones VII y VIII por tratarse de aumentos del 100% ligados a supuestos específicos, no de la mecánica básica de tarifa."
+    "comentarios": "Art. 10: la base es el valor catastral anual. Se documentan las tasas categóricas por tipo de predio. Fraccs. VI-VIII contienen reglas de exclusión y aumento del 100% para ciertos predios/fraccionadores; no se integran como tarifa base por ser disposiciones accesorias y de incremento, no una fila tarifaria distinta."
   },
   "_meta": {
     "fuente": "txt",
@@ -55,10 +55,12 @@
     "requiere_revision": false,
     "escalado": false,
     "razon": null,
+    "usado_reocr": false,
+    "usado_vision": false,
     "tokens": {
-      "input": 5334,
-      "output": 388,
-      "cached": 3840
+      "input": 6551,
+      "output": 391,
+      "cached": 5888
     },
     "cvegeo": "28027",
     "estado": "tamaulipas",

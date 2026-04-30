@@ -5,7 +5,7 @@
       {
         "grupo": "urbano",
         "clave": "con_edificaciones",
-        "descripcion": "Inmuebles urbanos y suburbanos con edificaciones; a la entrada en vigor de la ley y durante 2003 a 2014 inclusive",
+        "descripcion": "Inmuebles urbanos y suburbanos con edificaciones",
         "tasa_millar": 0.00339,
         "periodicidad": "anual",
         "cuota_fija_adicional": null
@@ -13,22 +13,22 @@
       {
         "grupo": "urbano",
         "clave": "sin_edificaciones",
-        "descripcion": "Inmuebles urbanos y suburbanos sin edificaciones; a la entrada en vigor de la ley y durante 2003 a 2014 inclusive",
+        "descripcion": "Inmuebles urbanos y suburbanos sin edificaciones",
         "tasa_millar": 0.00565,
         "periodicidad": "anual",
         "cuota_fija_adicional": null
       },
       {
         "grupo": "rustico",
-        "clave": "inmuebles_rusticos",
-        "descripcion": "Inmuebles rústicos; a la entrada en vigor de la ley y durante 2003 a 2014 inclusive",
+        "clave": "rustico",
+        "descripcion": "Inmuebles rústicos",
         "tasa_millar": 0.0004,
         "periodicidad": "anual",
         "cuota_fija_adicional": null
       }
     ],
     "minimo_predial": null,
-    "comentarios": "Art. 4 establece tasas anuales sobre el valor catastral por categoría de inmueble. Se tomó como tarifa principal la vigente al ejercicio 2015 para tres grupos: urbanos y suburbanos con edificaciones (3.39 al millar), urbanos y suburbanos sin edificaciones (5.65 al millar) y rústicos (0.40 al millar). Las demás filas del artículo 4 son tasas históricas por año de determinación y no se incorporan como brackets. Los artículos 5 y 6 contienen valores unitarios de catastro y criterios de avalúo, no la mecánica de cálculo del impuesto."
+    "comentarios": "Art. 4 establece tasas anuales al millar por categoría de inmueble. Para urbanos y suburbanos hay dos tasas según cuenten con edificaciones o no; para rústicos se fija una tasa paralela de 0.40 al millar. La tabla principal recoge el esquema tarifario del artículo 4; los artículos 5 y 6 contienen valores unitarios y criterios de valuación, no la mecánica del impuesto."
   },
   "_meta": {
     "fuente": "txt",
@@ -39,10 +39,12 @@
     "requiere_revision": false,
     "escalado": false,
     "razon": null,
+    "usado_reocr": false,
+    "usado_vision": false,
     "tokens": {
-      "input": 9569,
-      "output": 387,
-      "cached": 3840
+      "input": 10786,
+      "output": 278,
+      "cached": 5888
     },
     "cvegeo": "11017",
     "estado": "guanajuato",

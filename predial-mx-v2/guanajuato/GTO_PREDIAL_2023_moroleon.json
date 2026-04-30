@@ -46,7 +46,7 @@
       }
     ],
     "minimo_predial": null,
-    "comentarios": "Art. 4, fracción I a III: la mecánica principal del predial para inmuebles urbanos/suburbanos con edificaciones se integra por cuota fija más impuesto marginal sobre el excedente del límite inferior. Art. 4 también establece tarifas paralelas por antigüedad y tipo de inmueble: a) urbanos y suburbanos sin edificaciones con valores determinados o modificados de 2002 a 2023; b) inmuebles rústicos con valores determinados o modificados de 2002 a 2023; y fracción IV contiene tasas al millar para inmuebles con valores anteriores (8/15/6 al millar y 13/12 al millar según grupo). No se incorporan en la tabla principal por ser tarifas paralelas."
+    "comentarios": "Art. 4 fracción IV establece tarifas paralelas para inmuebles con valores determinados o modificados: urbanos y suburbanos con edificaciones (8 al millar), urbanos y suburbanos sin edificaciones (15 al millar) e inmuebles rústicos (6 al millar) para supuestos con anterioridad al año 2002 y hasta 1993 inclusive; y 13 al millar / 12 al millar para anterioridad a 1993, según columna correspondiente. Se documenta sólo la estructura principal por brackets de valor fiscal de la fracción III, que es la mecánica predominante y estructurada. Las tarifas de la fracción IV son paralelas y se consignan en texto, no en la tabla principal."
   },
   "_meta": {
     "fuente": "txt",
@@ -57,10 +57,12 @@
     "requiere_revision": false,
     "escalado": false,
     "razon": null,
+    "usado_reocr": false,
+    "usado_vision": false,
     "tokens": {
-      "input": 11139,
-      "output": 450,
-      "cached": 3840
+      "input": 12356,
+      "output": 440,
+      "cached": 5888
     },
     "cvegeo": "11021",
     "estado": "guanajuato",

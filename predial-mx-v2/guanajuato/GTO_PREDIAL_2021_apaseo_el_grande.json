@@ -3,32 +3,32 @@
     "tipo_esquema": "tarifa_millar",
     "tabla": [
       {
-        "grupo": "urbano",
-        "clave": "inmuebles_urbanos_y_suburbanos_con_edificaciones",
-        "descripcion": "Inmuebles urbanos y suburbanos con edificaciones",
+        "grupo": "general",
+        "clave": "inmuebles_urbanos_suburbanos_con_edificaciones",
+        "descripcion": "A la entrada en vigor de la presente Ley",
         "tasa_millar": 0.0024,
         "periodicidad": "anual",
         "cuota_fija_adicional": null
       },
       {
-        "grupo": "urbano",
-        "clave": "inmuebles_urbanos_y_suburbanos_sin_edificaciones",
-        "descripcion": "Inmuebles urbanos y suburbanos sin edificaciones",
+        "grupo": "general",
+        "clave": "inmuebles_urbanos_suburbanos_sin_edificaciones",
+        "descripcion": "A la entrada en vigor de la presente Ley",
         "tasa_millar": 0.0045,
         "periodicidad": "anual",
         "cuota_fija_adicional": null
       },
       {
-        "grupo": "urbano",
-        "clave": "inmuebles_urbanos_y_suburbanos_mixto",
-        "descripcion": "Inmuebles urbanos y suburbanos modificado",
+        "grupo": "general",
+        "clave": "inmuebles_urbanos_suburbanos_otros",
+        "descripcion": "A la entrada en vigor de la presente Ley",
         "tasa_millar": 0.0018,
         "periodicidad": "anual",
         "cuota_fija_adicional": null
       }
     ],
     "minimo_predial": null,
-    "comentarios": "Art. 4 establece tasas al millar anuales para inmuebles urbanos y suburbanos según condición de edificación y la fecha de construcción/modificación. Además, el artículo contiene tarifas paralelas para inmuebles rústicos (no integradas en la tabla principal por ser una tarifa distinta): 4.5 al millar para predios de riego, 4.5 al millar para temporal/agostadero/cerril según el texto OCR no presenta claramente una tasa única adicional; la mecánica rústica se basa en valores unitarios de valuación del Art. 5 y no en brackets del predial. Se omiten tablas de valores unitarios porque corresponden a catastro, no a la mecánica del impuesto."
+    "comentarios": "Art. 4 establece tasas al millar anuales para inmuebles urbanos y suburbanos con valor determinado o modificado, diferenciando tres condiciones: con edificaciones (2.4 al millar), sin edificaciones (4.5 al millar) y una tercera columna capturada como 'otros' en el texto OCR (1.8 al millar). El artículo también contiene tasas históricas para años anteriores, pero la mecánica vigente para 2021 es la de la primera fila del cuadro. No se incorpora el resto del artículo 4 por ser referencia temporal y no mecánica principal vigente."
   },
   "_meta": {
     "fuente": "txt",
@@ -39,10 +39,12 @@
     "requiere_revision": false,
     "escalado": false,
     "razon": null,
+    "usado_reocr": false,
+    "usado_vision": false,
     "tokens": {
-      "input": 7462,
-      "output": 376,
-      "cached": 3840
+      "input": 8679,
+      "output": 338,
+      "cached": 5888
     },
     "cvegeo": "11005",
     "estado": "guanajuato",

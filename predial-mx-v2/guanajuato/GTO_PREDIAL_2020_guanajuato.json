@@ -28,7 +28,7 @@
       }
     ],
     "minimo_predial": null,
-    "comentarios": "Art. 4 establece tasas anuales al millar para tres grupos: urbanos/suburbanos con edificaciones (2.4 al millar), urbanos/suburbanos sin edificaciones (4.5 al millar) y rústicos (1.8 al millar). Se omiten las tablas de valores unitarios de los arts. 5 y 6 por ser catastro/valuación, no mecánica tarifaria del impuesto."
+    "comentarios": "Art. 4: tasas anuales sobre el valor catastral según tipo de inmueble. Se transcriben dos bloques equivalentes de tasas: fracción I (valor determinado o modificado a la entrada en vigor) y fracción II (valor determinado o modificado durante 2002-2019), con las mismas tasas: urbanos y suburbanos con edificaciones 2.4 al millar; urbanos y suburbanos sin edificaciones 4.5 al millar; rústicos 1.8 al millar. La mecánica principal es un catálogo categórico de tasas al millar; los Artículos 5 y 6 contienen valores unitarios/criterios de avalúo, no la tarifa del impuesto."
   },
   "_meta": {
     "fuente": "txt",
@@ -39,10 +39,12 @@
     "requiere_revision": false,
     "escalado": false,
     "razon": null,
+    "usado_reocr": false,
+    "usado_vision": false,
     "tokens": {
-      "input": 7794,
-      "output": 285,
-      "cached": 3840
+      "input": 9011,
+      "output": 344,
+      "cached": 5888
     },
     "cvegeo": "11015",
     "estado": "guanajuato",

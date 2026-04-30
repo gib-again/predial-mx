@@ -1,25 +1,50 @@
 {
   "predial": {
-    "tipo_esquema": "otro_no_clasificado",
-    "categoria": "segmento_vacio",
-    "descripcion_estructural": "El texto proporcionado no incluye el contenido de la sección 'Del Impuesto Predial' ni alguna tabla o artículo con la mecánica de cálculo; sólo aparecen metadatos y páginas de portadilla del periódico oficial. No es posible transcribir una tarifa sin el segmento tarifario.",
-    "tabla_cruda": [],
+    "tipo_esquema": "tarifa_millar",
+    "tabla": [
+      {
+        "grupo": "urbano",
+        "clave": "urbano_con_edificaciones",
+        "descripcion": "Inmuebles urbanos y suburbanos con edificaciones",
+        "tasa_millar": 0.0024,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "urbano",
+        "clave": "urbano_sin_edificaciones",
+        "descripcion": "Inmuebles urbanos y suburbanos sin edificaciones",
+        "tasa_millar": 0.0045,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "rustico",
+        "clave": "rustico",
+        "descripcion": "Inmuebles rústicos",
+        "tasa_millar": 0.0018,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      }
+    ],
     "minimo_predial": null,
-    "comentarios": "Se requiere el texto sustantivo de la sección para clasificar la mecánica del impuesto predial."
+    "comentarios": "Art. 4: el impuesto predial se causa y liquida anualmente con tasas diferenciadas por tipo de inmueble y condición de edificación. Se transcriben solo las tasas aplicables para 2019: inmuebles urbanos y suburbanos con edificaciones 2.4 al millar; sin edificaciones 4.5 al millar; inmuebles rústicos 1.8 al millar. El texto mostrado también contiene tasas históricas para años anteriores, que no se incluyen."
   },
   "_meta": {
-    "fuente": "txt",
+    "fuente": "pdf_reocr",
     "modelo": "gpt-5.4-mini"
   },
   "_meta_v2": {
-    "intentos": 1,
-    "requiere_revision": true,
+    "intentos": 2,
+    "requiere_revision": false,
     "escalado": false,
-    "razon": "clasificado_como_otro_no_clasificado",
+    "razon": "rescate_via_reocr",
+    "usado_reocr": true,
+    "usado_vision": false,
     "tokens": {
-      "input": 5451,
-      "output": 136,
-      "cached": 3840
+      "input": 16822,
+      "output": 409,
+      "cached": 11776
     },
     "cvegeo": "11005",
     "estado": "guanajuato",

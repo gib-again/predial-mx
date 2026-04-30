@@ -2,10 +2,10 @@
   "predial": {
     "tipo_esquema": "otro_no_clasificado",
     "categoria": "segmento_vacio",
-    "descripcion_estructural": "El texto proporcionado no contiene el articulado ni la tabla de mecánica del Impuesto Predial; sólo aparecen encabezados, metadatos y referencias a páginas. No es posible identificar brackets, tasas o cuotas sin inventar información.",
+    "descripcion_estructural": "El texto proporcionado no contiene el artículo o tabla del Impuesto Predial; sólo aparecen encabezados y páginas en blanco/omisiones entre las páginas 3-20. No hay mecánica tarifaria extraíble para clasificar en alguna de las variantes.",
     "tabla_cruda": [],
     "minimo_predial": null,
-    "comentarios": "Se recibió un segmento sin contenido tarifario utilizable para extraer la mecánica del predial."
+    "comentarios": "No se detectó contenido tarifario del predial en el segmento recibido."
   },
   "_meta": {
     "fuente": "txt",
@@ -16,10 +16,12 @@
     "requiere_revision": true,
     "escalado": false,
     "razon": "clasificado_como_otro_no_clasificado",
+    "usado_reocr": true,
+    "usado_vision": true,
     "tokens": {
-      "input": 5723,
-      "output": 126,
-      "cached": 3840
+      "input": 32076,
+      "output": 405,
+      "cached": 17664
     },
     "cvegeo": "11009",
     "estado": "guanajuato",

@@ -1,148 +1,50 @@
 {
   "predial": {
-    "tipo_esquema": "mixto",
+    "tipo_esquema": "tarifa_millar",
     "tabla": [
       {
-        "n_rango": 1,
-        "inferior": 0.0,
-        "superior": 1993.0,
-        "columnas": [
-          {
-            "nombre": "urbanos_con_edificaciones",
-            "valor": 0.004,
-            "tipo": "tasa_millar",
-            "unidad": "al_millar"
-          },
-          {
-            "nombre": "urbanos_sin_edificaciones",
-            "valor": 0.0045,
-            "tipo": "tasa_millar",
-            "unidad": "al_millar"
-          },
-          {
-            "nombre": "suburbanos",
-            "valor": 0.018,
-            "tipo": "tasa_millar",
-            "unidad": "al_millar"
-          },
-          {
-            "nombre": "rusticos",
-            "valor": 0.0018,
-            "tipo": "tasa_millar",
-            "unidad": "al_millar"
-          }
-        ]
+        "grupo": "urbano",
+        "clave": "inmuebles_urbanos_y_suburbanos_con_edificaciones",
+        "descripcion": "Inmuebles urbanos y suburbanos con edificaciones",
+        "tasa_millar": 0.002,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
       },
       {
-        "n_rango": 2,
-        "inferior": 1993.0,
-        "superior": 2002.0,
-        "columnas": [
-          {
-            "nombre": "urbanos_con_edificaciones",
-            "valor": 0.008,
-            "tipo": "tasa_millar",
-            "unidad": "al_millar"
-          },
-          {
-            "nombre": "urbanos_sin_edificaciones",
-            "valor": 0.015,
-            "tipo": "tasa_millar",
-            "unidad": "al_millar"
-          },
-          {
-            "nombre": "suburbanos",
-            "valor": 0.013,
-            "tipo": "tasa_millar",
-            "unidad": "al_millar"
-          },
-          {
-            "nombre": "rusticos",
-            "valor": 0.006,
-            "tipo": "tasa_millar",
-            "unidad": "al_millar"
-          }
-        ]
+        "grupo": "urbano",
+        "clave": "inmuebles_urbanos_y_suburbanos_sin_edificaciones",
+        "descripcion": "Inmuebles urbanos y suburbanos sin edificaciones",
+        "tasa_millar": 0.004,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
       },
       {
-        "n_rango": 3,
-        "inferior": 2002.0,
-        "superior": 2016.0,
-        "columnas": [
-          {
-            "nombre": "urbanos_con_edificaciones",
-            "valor": 0.004,
-            "tipo": "tasa_millar",
-            "unidad": "al_millar"
-          },
-          {
-            "nombre": "urbanos_sin_edificaciones",
-            "valor": 0.0045,
-            "tipo": "tasa_millar",
-            "unidad": "al_millar"
-          },
-          {
-            "nombre": "suburbanos",
-            "valor": 0.018,
-            "tipo": "tasa_millar",
-            "unidad": "al_millar"
-          },
-          {
-            "nombre": "rusticos",
-            "valor": 0.0018,
-            "tipo": "tasa_millar",
-            "unidad": "al_millar"
-          }
-        ]
-      },
-      {
-        "n_rango": 4,
-        "inferior": 2016.0,
-        "superior": null,
-        "columnas": [
-          {
-            "nombre": "urbanos_con_edificaciones",
-            "valor": 0.004,
-            "tipo": "tasa_millar",
-            "unidad": "al_millar"
-          },
-          {
-            "nombre": "urbanos_sin_edificaciones",
-            "valor": 0.0045,
-            "tipo": "tasa_millar",
-            "unidad": "al_millar"
-          },
-          {
-            "nombre": "suburbanos",
-            "valor": 0.018,
-            "tipo": "tasa_millar",
-            "unidad": "al_millar"
-          },
-          {
-            "nombre": "rusticos",
-            "valor": 0.0018,
-            "tipo": "tasa_millar",
-            "unidad": "al_millar"
-          }
-        ]
+        "grupo": "rustico",
+        "clave": "inmuebles_rusticos",
+        "descripcion": "Inmuebles rústicos",
+        "tasa_millar": 0.0018,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
       }
     ],
     "minimo_predial": null,
-    "comentarios": "Art. 4 establece una tabla de tasas por fecha de valor determinado/modificado para inmuebles urbanos, suburbanos y rústicos. Se transcribe como mixto porque el texto viene en formato multi-columna heterogéneo por categoría. La tarifa rústica aparece como tasa paralela dentro del mismo cuadro; no se separa en tabla adicional. Se normalizaron los rangos a límites contiguos según el texto disponible: antes de 1993, de 1993 a 2002, de 2002 a 2016 y en adelante. El texto OCR muestra ambigüedades en algunos renglones, pero se conservan las tasas visibles sin interpretar ni corregir la ley."
+    "comentarios": "Artículo 4. Tasas anuales sobre valor catastral para inmuebles urbanos y suburbanos, con distinción entre con edificaciones, sin edificaciones y rústicos. Se transcriben sólo las tasas; el texto contiene además tablas de valores unitarios para avalúo en los artículos 5 y 6, que no forman parte de la mecánica del impuesto."
   },
   "_meta": {
     "fuente": "txt",
     "modelo": "gpt-5.4-mini"
   },
   "_meta_v2": {
-    "intentos": 2,
+    "intentos": 1,
     "requiere_revision": false,
     "escalado": false,
     "razon": null,
+    "usado_reocr": false,
+    "usado_vision": false,
     "tokens": {
-      "input": 15371,
-      "output": 1383,
-      "cached": 8704
+      "input": 8680,
+      "output": 291,
+      "cached": 5888
     },
     "cvegeo": "11046",
     "estado": "guanajuato",

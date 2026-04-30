@@ -46,7 +46,7 @@
       }
     ],
     "minimo_predial": null,
-    "comentarios": "Art. 4 establece una tarifa anual por rangos de valor catastral con cuota fija en pesos; no se indica tasa marginal, por lo que se clasifica como cuota_fija_escalonada. El texto además incluye tablas de valores unitarios de terreno y construcción por zonas (catastro) que no se transcriben aquí. Para la mecánica del predial por zona/uso, el propio artículo remite a esos valores catastrales y señala que cualquier predio no incluido en los cuadros se considera como cuadro 3; no obstante, la tarifa aplicable del impuesto es la cuota fija por rango de valor catastral."
+    "comentarios": "Artículo 4: el impuesto predial se determina por rangos de valor catastral con cuota fija anual. El texto también incluye valores unitarios de terreno y construcción por zonas (tablas de catastro) y ubica predios no contemplados en el cuadro 3; esas tablas no son la mecánica del impuesto y no se transcriben aquí."
   },
   "_meta": {
     "fuente": "txt",
@@ -57,10 +57,12 @@
     "requiere_revision": false,
     "escalado": false,
     "razon": null,
+    "usado_reocr": false,
+    "usado_vision": false,
     "tokens": {
-      "input": 6562,
-      "output": 355,
-      "cached": 3840
+      "input": 7779,
+      "output": 296,
+      "cached": 0
     },
     "cvegeo": "31047",
     "estado": "yucatan",

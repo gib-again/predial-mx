@@ -1,16 +1,66 @@
 {
   "predial": {
-    "tipo_esquema": "tasa_unica",
+    "tipo_esquema": "tarifa_millar",
     "tabla": [
       {
-        "descripcion": "Impuesto predial anual sobre el valor catastral para inmuebles urbanos y suburbanos con valor determinado o modificado, y para inmuebles rústicos, según la tabla del Artículo 4.",
-        "tasa": 0.002,
-        "base_calculo": "valor_catastral",
-        "unidad": "porcentaje"
+        "grupo": "urbano",
+        "clave": "urbano_suburbano_con_edificaciones",
+        "descripcion": "Inmuebles urbanos y suburbanos con edificaciones, con valor determinado o modificado; tasa anual aplicable a partir de la entrada en vigor de la Ley y durante 2002 a 2019 inclusive.",
+        "tasa_millar": 0.002,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "urbano",
+        "clave": "urbano_suburbano_sin_edificaciones",
+        "descripcion": "Inmuebles urbanos y suburbanos sin edificaciones, con valor determinado o modificado; tasa anual aplicable a partir de la entrada en vigor de la Ley y durante 2002 a 2019 inclusive.",
+        "tasa_millar": 0.003,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "rustico",
+        "clave": "rustico",
+        "descripcion": "Inmuebles rústicos, con valor determinado o modificado; tasa anual aplicable a partir de la entrada en vigor de la Ley y durante 2002 a 2019 inclusive.",
+        "tasa_millar": 0.00032,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "urbano",
+        "clave": "urbano_suburbano_con_edificaciones_historico",
+        "descripcion": "Con anterioridad al año 2002 y hasta 1993 inclusive, inmuebles urbanos y suburbanos con edificaciones.",
+        "tasa_millar": 0.008,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "urbano",
+        "clave": "urbano_suburbano_sin_edificaciones_historico",
+        "descripcion": "Con anterioridad al año 2002 y hasta 1993 inclusive, inmuebles urbanos y suburbanos sin edificaciones.",
+        "tasa_millar": 0.015,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "rustico",
+        "clave": "rustico_historico",
+        "descripcion": "Con anterioridad al año 2002 y hasta 1993 inclusive, inmuebles rústicos.",
+        "tasa_millar": 0.006,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "urbano",
+        "clave": "urbano_suburbano_muy_antiguo",
+        "descripcion": "Con anterioridad al año de 1993, inmuebles urbanos y suburbanos; en el texto aparecen dos tasas para este supuesto.",
+        "tasa_millar": 0.0012,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
       }
     ],
     "minimo_predial": null,
-    "comentarios": "Artículo 4 establece tasas porcentuales uniformes sobre el valor catastral. Se observa una tabla con tasas distintas por tipo de inmueble y periodo: para urbanos y suburbanos con edificaciones y sin edificaciones, y para rústicos. No se trata de tarifa_millar porque la unidad está expresada en porcentaje, no al millar. Se transcribe la mecánica principal del artículo 4; se ignoran valores unitarios de los artículos 5 y 6 por ser catastro/valuación, no mecánica del impuesto."
+    "comentarios": "Art. 4 establece tasas anuales sobre valor catastral para inmuebles urbanos y suburbanos con/sin edificaciones y para inmuebles rústicos. Se transcribe la mecánica principal como catálogo de tasas al millar. En el texto se observa un renglón para 'Con anterioridad al año de 1993' con dos porcentajes (0.13% y 0.12%); se conserva una sola entrada porque el OCR no permite distinguir con certeza la separación exacta de categorías en ese renglón. No se documentan descuentos, recargos ni bonificaciones. Las tablas de valores unitarios de terrenos y construcción de los artículos 5 y 6 no forman parte de la mecánica del impuesto."
   },
   "_meta": {
     "fuente": "txt",
@@ -21,10 +71,12 @@
     "requiere_revision": false,
     "escalado": false,
     "razon": null,
+    "usado_reocr": false,
+    "usado_vision": false,
     "tokens": {
-      "input": 7489,
-      "output": 219,
-      "cached": 3840
+      "input": 8706,
+      "output": 721,
+      "cached": 5888
     },
     "cvegeo": "11041",
     "estado": "guanajuato",

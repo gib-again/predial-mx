@@ -4,13 +4,14 @@
     "tabla": [
       {
         "descripcion": "Impuesto predial sobre valor catastral",
-        "tasa": 0.001,
+        "tasa": 0.1,
         "base_calculo": "valor_catastral",
-        "unidad": "porcentaje"
+        "unidad": "porcentaje",
+        "cuota_fija_adicional": null
       }
     ],
     "minimo_predial": null,
-    "comentarios": "Artículo 13: el impuesto predial se determina multiplicando el valor catastral por el factor de 0.10 por ciento. Como tarifa paralela para predios no actualizados en el padrón catastral, se establece una tarifa fija anual de 150 pesos para predios urbanos y 75 pesos para predios rústicos; no se incluye en la tabla principal por no ser la tarifa predominante basada en valor catastral."
+    "comentarios": "Artículo 13: el impuesto predial se determina multiplicando el valor catastral por el factor de 0.10 por ciento. Si el predio no se encuentra actualizado en el padrón catastral, se aplicará una tarifa fija paralela de 150 pesos anuales para predios urbanos y 75 pesos anuales para predios rústicos (entendidos como los predios sin construcción); no se incluye en la tabla principal por ser una tarifa alternativa/paralela y no la mecánica predominante."
   },
   "_meta": {
     "fuente": "txt",
@@ -21,10 +22,12 @@
     "requiere_revision": false,
     "escalado": true,
     "razon": "escalado_a_gpt-5.4_tras_2x_mini_fallido",
+    "usado_reocr": false,
+    "usado_vision": false,
     "tokens": {
-      "input": 15963,
-      "output": 677,
-      "cached": 13568
+      "input": 20036,
+      "output": 737,
+      "cached": 17664
     },
     "cvegeo": "31082",
     "estado": "yucatan",

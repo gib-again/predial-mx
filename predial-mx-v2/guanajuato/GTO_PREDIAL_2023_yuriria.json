@@ -4,31 +4,71 @@
     "tabla": [
       {
         "grupo": "urbano",
-        "clave": "urbano_con_edificaciones",
-        "descripcion": "Inmuebles urbanos y suburbanos con edificaciones; Art. 4, fracciones I a IV (tabla de tasas por antigüedad).",
+        "clave": "general_con_edificaciones",
+        "descripcion": "Inmuebles urbanos y suburbanos con edificaciones, a la entrada en vigor de la ley",
         "tasa_millar": 0.0024,
         "periodicidad": "anual",
         "cuota_fija_adicional": null
       },
       {
         "grupo": "urbano",
-        "clave": "urbano_sin_edificaciones",
-        "descripcion": "Inmuebles urbanos y suburbanos sin edificaciones; Art. 4, fracciones I a IV (tabla de tasas por antigüedad).",
+        "clave": "general_sin_edificaciones",
+        "descripcion": "Inmuebles urbanos y suburbanos sin edificaciones, a la entrada en vigor de la ley",
         "tasa_millar": 0.0045,
         "periodicidad": "anual",
         "cuota_fija_adicional": null
       },
       {
-        "grupo": "rustico",
-        "clave": "predios_rusticos",
-        "descripcion": "Predios rústicos; Art. 4 remite a valuación rústica del Art. 5, pero no se localiza una tasa predial rústica separada en el texto proporcionado.",
-        "tasa_millar": 0.0,
+        "grupo": "urbano",
+        "clave": "general_con_edificaciones_2002_2022",
+        "descripcion": "Inmuebles urbanos y suburbanos con edificaciones, durante los años 2002 a 2022 inclusive",
+        "tasa_millar": 0.0024,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "urbano",
+        "clave": "general_sin_edificaciones_2002_2022",
+        "descripcion": "Inmuebles urbanos y suburbanos sin edificaciones, durante los años 2002 a 2022 inclusive",
+        "tasa_millar": 0.0045,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "urbano",
+        "clave": "general_con_edificaciones_1993_2001",
+        "descripcion": "Inmuebles urbanos y suburbanos con edificaciones, con anterioridad al año 2002 y hasta 1993 inclusive",
+        "tasa_millar": 0.015,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "urbano",
+        "clave": "general_sin_edificaciones_1993_2001",
+        "descripcion": "Inmuebles urbanos y suburbanos sin edificaciones, con anterioridad al año 2002 y hasta 1993 inclusive",
+        "tasa_millar": 0.006,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "urbano",
+        "clave": "general_con_edificaciones_anteriores_1993",
+        "descripcion": "Inmuebles urbanos y suburbanos con edificaciones, con anterioridad al año 1993",
+        "tasa_millar": 0.013,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "urbano",
+        "clave": "general_sin_edificaciones_anteriores_1993",
+        "descripcion": "Inmuebles urbanos y suburbanos sin edificaciones, con anterioridad al año 1993",
+        "tasa_millar": 0.012,
         "periodicidad": "anual",
         "cuota_fija_adicional": null
       }
     ],
     "minimo_predial": null,
-    "comentarios": "Artículo 4 contiene una tabla de tasas al millar para inmuebles urbanos y suburbanos, diferenciada por con edificaciones y sin edificaciones, con cuatro periodos de antigüedad. Se transcribe la estructura predominante como tarifa_millar. El texto también incluye valuación catastral (Art. 5 y 6) y tablas de valores unitarios, que se ignoran por no ser mecánica de cálculo del impuesto. No se identificó una tarifa rústica distinta y completa en el segmento transcrito."
+    "comentarios": "Art. 4: la mecánica principal del predial es un catálogo de tasas al millar para inmuebles urbanos y suburbanos, con distinción por presencia o ausencia de edificaciones y por antigüedad de valuación. Art. 4 no establece brackets por valor catastral sino categorías; por ello se clasifica como tarifa_millar. Art. 5 contiene valores unitarios de catastro para 2023 (terreno y construcción) y no forma parte de la tarifa del impuesto. Para inmuebles rústicos, el texto proporcionado sólo muestra tablas de valores base y factores agrológicos para avalúo en Art. 5, pero no una tarifa predial separada extraíble en esta sección."
   },
   "_meta": {
     "fuente": "txt",
@@ -39,10 +79,12 @@
     "requiere_revision": false,
     "escalado": false,
     "razon": null,
+    "usado_reocr": false,
+    "usado_vision": false,
     "tokens": {
-      "input": 7482,
-      "output": 379,
-      "cached": 3840
+      "input": 8699,
+      "output": 733,
+      "cached": 5888
     },
     "cvegeo": "11046",
     "estado": "guanajuato",

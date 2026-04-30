@@ -24,7 +24,7 @@
       "periodicidad": "bimestral",
       "unidad": "pesos"
     },
-    "comentarios": "Art. 2 fracc. I y II: predios urbanos 5 al millar anual; predios rústicos 3 al millar anual. Fracc. III: monto mínimo del impuesto predial de $18.00 por bimestre. Se omiten los incentivos/bonificaciones de las fracc. IV, V y VI por instrucción."
+    "comentarios": "Art. 2: predios urbanos pagan 5 al millar anual y predios rústicos 3 al millar anual. El artículo también establece que en ningún caso el impuesto predial será inferior a $18.00 por bimestre. Se omiten los incentivos/descuentos por pago anticipado y para ciertos contribuyentes, por indicación expresa de la tarea."
   },
   "_meta": {
     "fuente": "txt",
@@ -35,10 +35,12 @@
     "requiere_revision": false,
     "escalado": false,
     "razon": null,
+    "usado_reocr": false,
+    "usado_vision": false,
     "tokens": {
-      "input": 5119,
-      "output": 231,
-      "cached": 3840
+      "input": 6336,
+      "output": 234,
+      "cached": 5888
     },
     "cvegeo": "05023",
     "estado": "coahuila",

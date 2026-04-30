@@ -3,10 +3,11 @@
     "tipo_esquema": "tasa_unica",
     "tabla": [
       {
-        "descripcion": "Impuesto predial sobre valor catastral (suma de terreno y construcción)",
+        "descripcion": "Impuesto predial sobre valor catastral (suma de valor unitario de terreno y construcción)",
         "tasa": 0.00025,
         "base_calculo": "valor_catastral",
-        "unidad": "porcentaje"
+        "unidad": "al_millar",
+        "cuota_fija_adicional": null
       }
     ],
     "minimo_predial": {
@@ -14,7 +15,7 @@
       "periodicidad": "anual",
       "unidad": "pesos"
     },
-    "comentarios": "Art. 13: el impuesto se determina multiplicando el valor catastral del inmueble (Tabla A + Tabla B) por 0.00025. El texto también indica que cuando el valor catastral sea igual o menor a $200,000.00, se pagará una cuota fija de $50.00; se registra como mínimo predial por ser una condición de pago mínima asociada al impuesto. Las tablas de valores unitarios de terreno y construcción se ignoran por ser catastro, no tarifa. Art. 14 y 15 se ignoran por tratarse de tope de वृद्धि y descuento."
+    "comentarios": "Art. 13: la mecánica principal es una tasa uniforme de 0.00025 sobre el valor catastral (Tabla A + Tabla B). El texto también establece una cuota fija de $50.00 cuando el valor catastral sea igual o menor a $200,000.00; se documenta como mínimo/umbral adicional porque no constituye una tabla tarifaria por rangos. Se ignoran descuentos y el límite de aumento del Art. 14 por ser reglas accesorias."
   },
   "_meta": {
     "fuente": "txt",
@@ -25,10 +26,12 @@
     "requiere_revision": false,
     "escalado": false,
     "razon": null,
+    "usado_reocr": false,
+    "usado_vision": false,
     "tokens": {
-      "input": 6068,
-      "output": 229,
-      "cached": 3840
+      "input": 7285,
+      "output": 218,
+      "cached": 5888
     },
     "cvegeo": "31064",
     "estado": "yucatan",

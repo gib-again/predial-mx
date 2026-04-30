@@ -53,7 +53,7 @@
       }
     ],
     "minimo_predial": null,
-    "comentarios": "Art. 4: tabla progresiva del impuesto predial calculado con base en el valor catastral, con cuota fija y factor porcentual aplicable al excedente del límite inferior. Los predios rústicos tienen una tarifa paralela separada por hectáreas ($200 de 1 a 20 ha; $300 de 21 a 40 ha; $400 de 41 en adelante), por lo que no se integra en la tabla principal. Art. 7 establece una tasa mensual sobre rentas o frutos civiles (2% habitacional, 3% comercial), tratada como disposición paralela no integrada a la mecánica principal de valor catastral."
+    "comentarios": "Art. 4: tarifa progresiva sobre valor catastral con cuota fija + factor porcentual aplicado al excedente del límite inferior. Tarifa paralela para predios rústicos: 1 a 20 hectáreas $200.00; 21 a 40 hectáreas $300.00; 41 en adelante $400.00. Art. 7: cuando el predial se cause sobre rentas o frutos civiles, se paga mensualmente 2% habitacional y 3% comercial sobre la contraprestación; se documenta sólo como tarifa secundaria."
   },
   "_meta": {
     "fuente": "txt",
@@ -64,10 +64,12 @@
     "requiere_revision": false,
     "escalado": false,
     "razon": null,
+    "usado_reocr": false,
+    "usado_vision": false,
     "tokens": {
-      "input": 6128,
-      "output": 433,
-      "cached": 3840
+      "input": 7345,
+      "output": 414,
+      "cached": 5888
     },
     "cvegeo": "31013",
     "estado": "yucatan",

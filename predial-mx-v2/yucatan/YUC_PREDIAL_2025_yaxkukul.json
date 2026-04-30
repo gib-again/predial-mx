@@ -1,26 +1,36 @@
 {
   "predial": {
-    "tipo_esquema": "tarifa_millar",
+    "tipo_esquema": "mixto",
     "tabla": [
       {
-        "grupo": "otro",
-        "clave": "predios_generales",
-        "descripcion": "Predios cuyo valor catastral se determina con Tabla A + Tabla B y se aplica factor anual sobre el valor catastral",
-        "tasa_millar": 0.00025,
-        "periodicidad": "anual",
-        "cuota_fija_adicional": null
+        "n_rango": 1,
+        "inferior": 0.0,
+        "superior": 200000.0,
+        "columnas": [
+          {
+            "nombre": "general",
+            "valor": 0.00025,
+            "tipo": "tasa_millar",
+            "unidad": "al_millar"
+          }
+        ]
       },
       {
-        "grupo": "otro",
-        "clave": "predios_agropecuarios",
-        "descripcion": "Todo predio destinado a la producción agropecuaria paga 10 al millar anual sobre el valor registrado o catastral",
-        "tasa_millar": 0.01,
-        "periodicidad": "anual",
-        "cuota_fija_adicional": null
+        "n_rango": 2,
+        "inferior": 200000.01,
+        "superior": null,
+        "columnas": [
+          {
+            "nombre": "general",
+            "valor": 0.00025,
+            "tipo": "tasa_millar",
+            "unidad": "al_millar"
+          }
+        ]
       }
     ],
     "minimo_predial": null,
-    "comentarios": "Art. 13: la base se integra con valores unitarios de terreno (Tabla A) y construcción (Tabla B), y una vez obtenido el valor catastral final se aplica un factor de 0.00025 anual. Art. 14 establece una tarifa paralela para predios destinados a la producción agropecuaria de 10 al millar anual sobre el valor registrado o catastral; no se mezcla en la tabla principal por ser tarifa separada. Se ignoran descuentos y límites de incremento del Art. 13 por no formar parte de la mecánica tarifaria base. La referencia a rentas o frutos civiles (Art. 14) no se desarrolla aquí por ser un impuesto sobre ingresos, no sobre valor catastral."
+    "comentarios": "Art. 13: el predial base valor catastral se determina con valores unitarios de terreno (Tabla A) + construcción (Tabla B) y se aplica un factor del 0.00025. La parte principal es uniforme sobre valor catastral, pero el texto también establece una tarifa paralela para predios agropecuarios: 10 al millar anual sobre el valor registrado o catastral (Art. 14), y una mecánica distinta por rentas o frutos civiles: 5% mensual para predios habitación y 5% mensual para predios comerciales (Art. 14). Se clasifica como mixto porque coexisten reglas de base catastral con tarifas heterogéneas adicionales por tipo de predio/ingreso."
   },
   "_meta": {
     "fuente": "txt",
@@ -31,10 +41,12 @@
     "requiere_revision": false,
     "escalado": false,
     "razon": null,
+    "usado_reocr": false,
+    "usado_vision": false,
     "tokens": {
-      "input": 6243,
-      "output": 331,
-      "cached": 3840
+      "input": 7460,
+      "output": 301,
+      "cached": 5888
     },
     "cvegeo": "31105",
     "estado": "yucatan",

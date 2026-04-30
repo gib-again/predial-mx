@@ -4,7 +4,7 @@
     "tabla": [
       {
         "grupo": "urbano",
-        "clave": "urbano_industrial",
+        "clave": "industrial_urbano",
         "descripcion": "Predios urbanos industriales con o sin edificación",
         "tasa_millar": 0.005,
         "periodicidad": "anual",
@@ -12,7 +12,7 @@
       },
       {
         "grupo": "urbano",
-        "clave": "urbano_comercial_con_edificacion",
+        "clave": "comercial_urbano_con_edificacion",
         "descripcion": "Predios urbanos comerciales con edificación",
         "tasa_millar": 0.005,
         "periodicidad": "anual",
@@ -20,7 +20,7 @@
       },
       {
         "grupo": "urbano",
-        "clave": "urbano_comercial_sin_edificacion",
+        "clave": "comercial_urbano_sin_edificacion",
         "descripcion": "Predios urbanos comerciales sin edificación",
         "tasa_millar": 0.006,
         "periodicidad": "anual",
@@ -28,7 +28,7 @@
       },
       {
         "grupo": "urbano",
-        "clave": "urbano_residencial_interes_social_popular_con_edificacion",
+        "clave": "residencial_interes_social_popular_con_edificacion",
         "descripcion": "Predios urbanos residenciales, de interés social y populares con edificación",
         "tasa_millar": 0.005,
         "periodicidad": "anual",
@@ -36,7 +36,7 @@
       },
       {
         "grupo": "urbano",
-        "clave": "urbano_residencial_interes_social_popular_sin_edificacion",
+        "clave": "residencial_interes_social_popular_sin_edificacion",
         "descripcion": "Predios urbanos residenciales, de interés social y populares sin edificación",
         "tasa_millar": 0.006,
         "periodicidad": "anual",
@@ -52,7 +52,7 @@
       },
       {
         "grupo": "rustico",
-        "clave": "rustico_industrial_renovable_ejecucion",
+        "clave": "rustico_industrial_eolica_solar_ejecucion",
         "descripcion": "Predios rústicos industriales con explotación de energías renovables (eólica y solar) en ejecución",
         "tasa_millar": 0.005,
         "periodicidad": "anual",
@@ -60,7 +60,7 @@
       },
       {
         "grupo": "rustico",
-        "clave": "rustico_industrial_renovable_desarrollo",
+        "clave": "rustico_industrial_eolica_solar_desarrollo",
         "descripcion": "Predios rústicos industriales con explotación de energía renovable (eólica y solar) en desarrollo",
         "tasa_millar": 0.005,
         "periodicidad": "anual",
@@ -68,7 +68,7 @@
       },
       {
         "grupo": "rustico",
-        "clave": "rustico_industrial_renovable_proyecto",
+        "clave": "rustico_industrial_eolica_solar_proyecto",
         "descripcion": "Predios rústicos industriales con explotación de energía renovable (eólica y solar) en proyecto",
         "tasa_millar": 0.005,
         "periodicidad": "anual",
@@ -80,7 +80,7 @@
       "periodicidad": "bimestral",
       "unidad": "pesos"
     },
-    "comentarios": "Art. 2 establece tasas al millar anuales por tipo de predio. Además, indica un mínimo predial de $58.00 por bimestre. Se ignoran incentivos y bonificaciones. La tasa para predios urbanos residenciales, de interés social y populares con edificación aparece como 'hasta 5 al millar anual'; se transcribe como 0.005 al millar."
+    "comentarios": "Art. 2: se transcribe la mecánica principal por catálogo de tasas al millar sobre valor catastral. El texto incluye un mínimo predial de $58.00 por bimestre. También contiene incentivos/bonificaciones y una tasa preferencial para instituciones educativas no públicas (1 al millar anual), pero se ignoran por tratarse de beneficios o tarifa secundaria no predominante en la mecánica principal."
   },
   "_meta": {
     "fuente": "txt",
@@ -91,10 +91,12 @@
     "requiere_revision": false,
     "escalado": false,
     "razon": null,
+    "usado_reocr": false,
+    "usado_vision": false,
     "tokens": {
-      "input": 6196,
-      "output": 665,
-      "cached": 3840
+      "input": 7413,
+      "output": 669,
+      "cached": 5888
     },
     "cvegeo": "05027",
     "estado": "coahuila",

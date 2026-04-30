@@ -4,31 +4,31 @@
     "tabla": [
       {
         "grupo": "urbano",
-        "clave": "inmuebles_urbanos_y_suburbanos_con_edificacion",
-        "descripcion": "Inmuebles urbanos y suburbanos con edificación",
+        "clave": "urbano_con_edificacion",
+        "descripcion": "Inmuebles urbanos y suburbanos con edificación; valor determinado o modificado",
         "tasa_millar": 0.0024,
         "periodicidad": "anual",
         "cuota_fija_adicional": null
       },
       {
         "grupo": "urbano",
-        "clave": "inmuebles_urbanos_y_suburbanos_sin_edificacion",
-        "descripcion": "Inmuebles urbanos y suburbanos sin edificación",
+        "clave": "urbano_sin_edificacion",
+        "descripcion": "Inmuebles urbanos y suburbanos sin edificación; valor determinado o modificado",
         "tasa_millar": 0.0045,
         "periodicidad": "anual",
         "cuota_fija_adicional": null
       },
       {
         "grupo": "rustico",
-        "clave": "inmuebles_rusticos",
-        "descripcion": "Inmuebles rústicos",
+        "clave": "rustico",
+        "descripcion": "Inmuebles rústicos; valor determinado o modificado",
         "tasa_millar": 0.0018,
         "periodicidad": "anual",
         "cuota_fija_adicional": null
       }
     ],
     "minimo_predial": null,
-    "comentarios": "Art. 4 establece tasas anuales al millar por tipo de inmueble y condición (urbanos y suburbanos con edificación; urbanos y suburbanos sin edificación; rústicos). No se transcriben los cuadros de valores unitarios de los artículos 5 y 6 por tratarse de catastro/avalúo, no de mecánica tarifaria. Las tasas históricas previas mencionadas en el mismo artículo (años anteriores a 2002/1993) no se usan como esquema principal para 2019."
+    "comentarios": "Artículo 4 establece tasas anuales al millar según tipo de inmueble y condición de edificación, sin rangos de valor catastral. Se omiten los valores unitarios de terreno y construcción de los artículos 5 y 6 por ser catastro, no mecánica del impuesto. No se documentan descuentos ni bonificaciones."
   },
   "_meta": {
     "fuente": "txt",
@@ -39,10 +39,12 @@
     "requiere_revision": false,
     "escalado": false,
     "razon": null,
+    "usado_reocr": false,
+    "usado_vision": false,
     "tokens": {
-      "input": 7314,
-      "output": 330,
-      "cached": 3840
+      "input": 8531,
+      "output": 280,
+      "cached": 5888
     },
     "cvegeo": "11043",
     "estado": "guanajuato",

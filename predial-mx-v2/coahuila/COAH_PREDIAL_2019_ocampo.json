@@ -4,16 +4,16 @@
     "tabla": [
       {
         "grupo": "urbano",
-        "clave": "predio_urbano",
-        "descripcion": "Sobre los predios urbanos",
+        "clave": "predios_urbanos",
+        "descripcion": "Predios urbanos",
         "tasa_millar": 0.005,
         "periodicidad": "anual",
         "cuota_fija_adicional": null
       },
       {
         "grupo": "rustico",
-        "clave": "predio_rustico",
-        "descripcion": "Sobre los predios rústicos",
+        "clave": "predios_rusticos",
+        "descripcion": "Predios rústicos",
         "tasa_millar": 0.003,
         "periodicidad": "anual",
         "cuota_fija_adicional": null
@@ -24,7 +24,7 @@
       "periodicidad": "bimestral",
       "unidad": "pesos"
     },
-    "comentarios": "Art. 2 fracc. I y II: predios urbanos 5 al millar anual; predios rústicos 3 al millar anual. Art. 2 fracc. III: en ningún caso el impuesto predial será inferior a $26.77 por bimestre. Los incentivos, bonificaciones y supuestos especiales de las fracciones IV, VI y VII se ignoran conforme a instrucción. La fracción V menciona predios ejidales que pagan en base al valor catastral asignado, pero no establece una tarifa diferenciada cuantificada en el texto proporcionado."
+    "comentarios": "Art. 2 fracc. I-II: predios urbanos 5 al millar anual y predios rústicos 3 al millar anual. Fracc. III establece un mínimo predial de $26.77 por bimestre. Las fracciones IV, VI y VII contienen incentivos/bonificaciones, no mecánica de cálculo; la fracc. V indica que predios ejidales con títulos del RAN pagan con base en el valor catastral asignado, sin tarifa específica adicional en el texto proporcionado."
   },
   "_meta": {
     "fuente": "txt",
@@ -35,10 +35,12 @@
     "requiere_revision": false,
     "escalado": false,
     "razon": null,
+    "usado_reocr": false,
+    "usado_vision": false,
     "tokens": {
-      "input": 5243,
-      "output": 282,
-      "cached": 3840
+      "input": 6460,
+      "output": 263,
+      "cached": 5888
     },
     "cvegeo": "05023",
     "estado": "coahuila",

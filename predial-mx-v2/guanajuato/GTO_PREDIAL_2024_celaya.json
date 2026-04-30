@@ -2,10 +2,10 @@
   "predial": {
     "tipo_esquema": "otro_no_clasificado",
     "categoria": "segmento_vacio",
-    "descripcion_estructural": "En el texto proporcionado no aparece la sección normativa del Impuesto Predial ni una tabla tarifaria de cálculo; sólo se observan páginas con el índice y montos estimados de ingresos, y las páginas señaladas para predial están vacías o sin transcripción legible del articulado. No es posible extraer mecánica de cálculo sin inventar contenido.",
+    "descripcion_estructural": "El texto proporcionado no contiene la sección tarifaria del impuesto predial de Celaya, Guanajuato, para 2024. Solo aparecen páginas de índices y montos globales de ingresos, sin tablas, brackets ni tasas del predial extraíbles.",
     "tabla_cruda": [],
     "minimo_predial": null,
-    "comentarios": "No se detectó el articulado tarifario del predial en el segmento suministrado."
+    "comentarios": "No se observó mecánica de cálculo del impuesto predial en el material enviado; las páginas 3-20 no incluyen el articulado tarifario pertinente."
   },
   "_meta": {
     "fuente": "txt",
@@ -16,10 +16,12 @@
     "requiere_revision": true,
     "escalado": false,
     "razon": "clasificado_como_otro_no_clasificado",
+    "usado_reocr": false,
+    "usado_vision": true,
     "tokens": {
-      "input": 8015,
-      "output": 151,
-      "cached": 3840
+      "input": 25211,
+      "output": 322,
+      "cached": 11776
     },
     "cvegeo": "11007",
     "estado": "guanajuato",

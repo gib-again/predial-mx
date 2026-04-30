@@ -1,20 +1,17 @@
 {
   "predial": {
-    "tipo_esquema": "otro_no_clasificado",
-    "categoria": "estructura_no_estandar",
-    "descripcion_estructural": "El texto establece dos mecánicas paralelas para el impuesto predial con bases gravables distintas: una cuota de 15 centavos por metro cuadrado para el predio causante y, por separado, una tasa de 10 al millar anual sobre el valor registrado o catastral para predios destinados a la producción agropecuaria. No encaja limpiamente en una sola de las variantes estándar porque no es una tabla por rangos ni una sola tasa uniforme para toda la población.",
-    "tabla_cruda": [
+    "tipo_esquema": "tasa_unica",
+    "tabla": [
       {
-        "descripcion": "Predio causante",
-        "valores": "15 centavos por m2 que tenga la extensión del predio causante"
-      },
-      {
-        "descripcion": "Predio destinado a la producción agropecuaria",
-        "valores": "10 al millar anual sobre el valor registrado o catastral; sin que la cantidad a pagar resultante exceda a lo establecido por la Legislación Agraria Federal para terrenos ejidales"
+        "descripcion": "Impuesto predial anual de 15 centavos por metro cuadrado de extensión del predio",
+        "tasa": 0.15,
+        "base_calculo": "superficie_m2",
+        "unidad": "por_metro_cuadrado",
+        "cuota_fija_adicional": null
       }
     ],
     "minimo_predial": null,
-    "comentarios": "Artículo 13. Se omite el descuento del 10% del artículo 14 por ser estímulo y no parte de la mecánica base del impuesto."
+    "comentarios": "La mecánica principal del impuesto predial se establece como 15 centavos por m2 de la extensión del predio causante. El texto también prevé una tarifa paralela para predios destinados a la producción agropecuaria de 10 al millar anual sobre el valor registrado o catastral, con tope conforme a la legislación agraria federal para terrenos ejidales; no se incluye en la tabla principal por ser una tarifa separada para un grupo distinto."
   },
   "_meta": {
     "fuente": "txt",
@@ -22,13 +19,15 @@
   },
   "_meta_v2": {
     "intentos": 3,
-    "requiere_revision": true,
+    "requiere_revision": false,
     "escalado": true,
-    "razon": "clasificado_como_otro_no_clasificado_tras_escalacion",
+    "razon": "escalado_a_gpt-5.4_tras_2x_mini_fallido",
+    "usado_reocr": false,
+    "usado_vision": false,
     "tokens": {
-      "input": 16109,
-      "output": 775,
-      "cached": 13568
+      "input": 20182,
+      "output": 714,
+      "cached": 17664
     },
     "cvegeo": "31064",
     "estado": "yucatan",

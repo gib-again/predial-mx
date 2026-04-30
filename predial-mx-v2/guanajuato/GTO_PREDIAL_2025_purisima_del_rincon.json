@@ -4,39 +4,31 @@
     "tabla": [
       {
         "grupo": "general",
-        "clave": "urbanos_suburbanos_con_edificaciones",
-        "descripcion": "Inmuebles urbanos y suburbanos con edificaciones; primer supuesto de la tabla del artículo 4.",
+        "clave": "inmuebles_urbanos_y_suburbanos_con_edificaciones",
+        "descripcion": "Inmuebles urbanos y suburbanos con edificaciones; para inmuebles con valor determinado o modificado en la presente Ley, durante 2025.",
         "tasa_millar": 0.0024,
         "periodicidad": "anual",
         "cuota_fija_adicional": null
       },
       {
         "grupo": "general",
-        "clave": "urbanos_suburbanos_sin_edificaciones",
-        "descripcion": "Inmuebles urbanos y suburbanos sin edificaciones; primer supuesto de la tabla del artículo 4.",
+        "clave": "inmuebles_urbanos_y_suburbanos_sin_edificaciones",
+        "descripcion": "Inmuebles urbanos y suburbanos sin edificaciones; para inmuebles con valor determinado o modificado en la presente Ley, durante 2025.",
         "tasa_millar": 0.0045,
         "periodicidad": "anual",
         "cuota_fija_adicional": null
       },
       {
-        "grupo": "general",
-        "clave": "rusticos_con_edificaciones",
-        "descripcion": "Inmuebles rústicos con edificaciones; primer supuesto de la tabla del artículo 4.",
+        "grupo": "rustico",
+        "clave": "inmuebles_rusticos",
+        "descripcion": "Inmuebles rústicos; para inmuebles con valor determinado o modificado en la presente Ley, durante 2025.",
         "tasa_millar": 0.0018,
-        "periodicidad": "anual",
-        "cuota_fija_adicional": null
-      },
-      {
-        "grupo": "general",
-        "clave": "rusticos_sin_edificaciones",
-        "descripcion": "Inmuebles rústicos sin edificaciones; primer supuesto de la tabla del artículo 4.",
-        "tasa_millar": 0.0045,
         "periodicidad": "anual",
         "cuota_fija_adicional": null
       }
     ],
     "minimo_predial": null,
-    "comentarios": "Artículo 4 establece tasas anuales al millar por tipo de inmueble y condición de edificación. La tabla es categórica, sin rangos de valor catastral. No se incluyen los artículos 5 y 6 porque corresponden a valores unitarios para avalúo/catastro, no a la mecánica del impuesto. No se detectan tarifas paralelas adicionales aplicables en el mismo artículo para otras poblaciones dentro del segmento extraído."
+    "comentarios": "Art. 4: la mecánica principal es una tabla categórica de tasas al millar sobre valor catastral para inmuebles urbanos y suburbanos (con edificaciones 2.4 al millar; sin edificaciones 4.5 al millar) y para inmuebles rústicos 1.8 al millar. Art. 5 y 6 contienen valores unitarios y criterios de valuación catastral, no la tarifa del impuesto."
   },
   "_meta": {
     "fuente": "txt",
@@ -47,10 +39,12 @@
     "requiere_revision": false,
     "escalado": false,
     "razon": null,
+    "usado_reocr": false,
+    "usado_vision": false,
     "tokens": {
-      "input": 7569,
-      "output": 386,
-      "cached": 3840
+      "input": 8786,
+      "output": 370,
+      "cached": 5888
     },
     "cvegeo": "11025",
     "estado": "guanajuato",

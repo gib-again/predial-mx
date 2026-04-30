@@ -4,31 +4,31 @@
     "tabla": [
       {
         "grupo": "urbano",
-        "clave": "urbano_con_edificaciones",
-        "descripcion": "Inmuebles urbanos y suburbanos con edificaciones; a la entrada en vigor de la presente Ley.",
+        "clave": "urbanos_con_edificaciones",
+        "descripcion": "Inmuebles urbanos y suburbanos con edificaciones; valor determinado o modificado. Art. 4, fracciones.",
         "tasa_millar": 0.0024,
         "periodicidad": "anual",
         "cuota_fija_adicional": null
       },
       {
         "grupo": "urbano",
-        "clave": "urbano_sin_edificaciones",
-        "descripcion": "Inmuebles urbanos y suburbanos sin edificaciones; a la entrada en vigor de la presente Ley.",
+        "clave": "urbanos_sin_edificaciones",
+        "descripcion": "Inmuebles urbanos y suburbanos sin edificaciones; valor determinado o modificado. Art. 4, fracciones.",
         "tasa_millar": 0.0045,
         "periodicidad": "anual",
         "cuota_fija_adicional": null
       },
       {
         "grupo": "rustico",
-        "clave": "rustico",
-        "descripcion": "Inmuebles rústicos; a la entrada en vigor de la presente Ley.",
+        "clave": "rusticos",
+        "descripcion": "Inmuebles rústicos; valor determinado o modificado. Art. 4, fracciones.",
         "tasa_millar": 0.0018,
         "periodicidad": "anual",
         "cuota_fija_adicional": null
       }
     ],
     "minimo_predial": null,
-    "comentarios": "Art. 4 establece tasas al millar por categorías de predio, sin rangos de valor catastral: urbanos y suburbanos con edificaciones, urbanos y suburbanos sin edificaciones, e inmuebles rústicos. Se transcribe la tarifa principal. Art. 5 contiene valores unitarios para avalúo/catastro y no se toma como mecánica del impuesto. El texto OCR presenta una posible errata en la fila 2 ('45 al millar'); se conserva la lógica estructural del artículo como aparece en la tabla, sin interpretar ni corregir."
+    "comentarios": "Art. 4 establece tasas anuales al millar por tipo de inmueble: urbanos y suburbanos con edificaciones 2.4 al millar, urbanos y suburbanos sin edificaciones 4.5 al millar, y rústicos 1.8 al millar; para inmuebles anteriores a 2002 y hasta 1993 inclusive, urbanos con edificaciones 8 al millar, urbanos sin edificaciones 15 al millar y rústicos 6 al millar. Se documenta sólo la mecánica tarifaria; los valores unitarios del Art. 5 son tablas catastrales, no tarifa. No se integran descuentos o bonificaciones."
   },
   "_meta": {
     "fuente": "txt",
@@ -39,10 +39,12 @@
     "requiere_revision": false,
     "escalado": false,
     "razon": null,
+    "usado_reocr": false,
+    "usado_vision": false,
     "tokens": {
-      "input": 7375,
-      "output": 342,
-      "cached": 3840
+      "input": 8592,
+      "output": 376,
+      "cached": 5888
     },
     "cvegeo": "11042",
     "estado": "guanajuato",

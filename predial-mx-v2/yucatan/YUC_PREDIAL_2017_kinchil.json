@@ -1,59 +1,143 @@
 {
   "predial": {
-    "tipo_esquema": "progresivo",
+    "tipo_esquema": "mixto",
     "tabla": [
       {
         "n_rango": 1,
         "inferior": 0.0,
         "superior": 10000.0,
-        "cuota_fija": 7.0,
-        "tasa_marginal": 0.0025
+        "columnas": [
+          {
+            "nombre": "general",
+            "valor": 7.0,
+            "tipo": "cuota_fija",
+            "unidad": "pesos"
+          },
+          {
+            "nombre": "general",
+            "valor": 0.0025,
+            "tipo": "tasa_marginal",
+            "unidad": "porcentaje"
+          }
+        ]
       },
       {
         "n_rango": 2,
-        "inferior": 10000.0,
+        "inferior": 10000.01,
         "superior": 20000.0,
-        "cuota_fija": 14.0,
-        "tasa_marginal": 0.0025
+        "columnas": [
+          {
+            "nombre": "general",
+            "valor": 14.0,
+            "tipo": "cuota_fija",
+            "unidad": "pesos"
+          },
+          {
+            "nombre": "general",
+            "valor": 0.0025,
+            "tipo": "tasa_marginal",
+            "unidad": "porcentaje"
+          }
+        ]
       },
       {
         "n_rango": 3,
-        "inferior": 20000.0,
+        "inferior": 20000.01,
         "superior": 30000.0,
-        "cuota_fija": 15.0,
-        "tasa_marginal": 0.0025
+        "columnas": [
+          {
+            "nombre": "general",
+            "valor": 15.0,
+            "tipo": "cuota_fija",
+            "unidad": "pesos"
+          },
+          {
+            "nombre": "general",
+            "valor": 0.0025,
+            "tipo": "tasa_marginal",
+            "unidad": "porcentaje"
+          }
+        ]
       },
       {
         "n_rango": 4,
-        "inferior": 30000.0,
+        "inferior": 30000.01,
         "superior": 40000.0,
-        "cuota_fija": 26.0,
-        "tasa_marginal": 0.0025
+        "columnas": [
+          {
+            "nombre": "general",
+            "valor": 26.0,
+            "tipo": "cuota_fija",
+            "unidad": "pesos"
+          },
+          {
+            "nombre": "general",
+            "valor": 0.0025,
+            "tipo": "tasa_marginal",
+            "unidad": "porcentaje"
+          }
+        ]
       },
       {
         "n_rango": 5,
-        "inferior": 40000.0,
+        "inferior": 40000.01,
         "superior": 50000.0,
-        "cuota_fija": 33.0,
-        "tasa_marginal": 0.0025
+        "columnas": [
+          {
+            "nombre": "general",
+            "valor": 33.0,
+            "tipo": "cuota_fija",
+            "unidad": "pesos"
+          },
+          {
+            "nombre": "general",
+            "valor": 0.0025,
+            "tipo": "tasa_marginal",
+            "unidad": "porcentaje"
+          }
+        ]
       },
       {
         "n_rango": 6,
-        "inferior": 50000.0,
+        "inferior": 50000.01,
         "superior": 60000.0,
-        "cuota_fija": 40.0,
-        "tasa_marginal": 0.0025
+        "columnas": [
+          {
+            "nombre": "general",
+            "valor": 40.0,
+            "tipo": "cuota_fija",
+            "unidad": "pesos"
+          },
+          {
+            "nombre": "general",
+            "valor": 0.0025,
+            "tipo": "tasa_marginal",
+            "unidad": "porcentaje"
+          }
+        ]
       },
       {
         "n_rango": 7,
-        "inferior": 60000.0,
+        "inferior": 60000.01,
         "superior": null,
-        "cuota_fija": 46.0,
-        "tasa_marginal": 0.0025
+        "columnas": [
+          {
+            "nombre": "general",
+            "valor": 46.0,
+            "tipo": "cuota_fija",
+            "unidad": "pesos"
+          },
+          {
+            "nombre": "general",
+            "valor": 0.0025,
+            "tipo": "tasa_marginal",
+            "unidad": "porcentaje"
+          }
+        ]
       }
     ],
     "minimo_predial": null,
-    "comentarios": "Art. 13: tarifa progresiva por valor catastral con cuota fija anual y factor del 0.25% sobre el excedente del límite inferior en todos los brackets. Se omiten descuentos, recargos y bonificaciones. Tarifas paralelas descritas en el mismo artículo no se integran a la tabla principal: predios rústicos con o sin construcción pagan $15.00 por hectárea; y todo predio destinado a producción agropecuaria paga 10 al millar anual sobre el valor registrado o catastral."
+    "comentarios": "Art. 13: tabla principal por rangos de valor catastral con cuota fija anual y factor del 0.25% sobre el excedente del límite inferior en todos los brackets, incluyendo el último abierto. Además, el mismo artículo establece tarifas paralelas no integrables a la tabla principal: (1) predios rústicos con o sin construcción: cuota de $15.00 por hectárea; (2) todo predio destinado a producción agropecuaria: 10 al millar anual sobre el valor registrado o catastral. Estas tarifas no se mezclan en la tabla principal por corresponder a grupos y unidades distintas."
   },
   "_meta": {
     "fuente": "txt",
@@ -64,10 +148,12 @@
     "requiere_revision": false,
     "escalado": false,
     "razon": null,
+    "usado_reocr": false,
+    "usado_vision": false,
     "tokens": {
-      "input": 5771,
-      "output": 412,
-      "cached": 3840
+      "input": 6988,
+      "output": 666,
+      "cached": 5888
     },
     "cvegeo": "31044",
     "estado": "yucatan",

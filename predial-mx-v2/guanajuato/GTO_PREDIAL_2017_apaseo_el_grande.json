@@ -5,7 +5,7 @@
       {
         "grupo": "urbano",
         "clave": "edificaciones",
-        "descripcion": "Inmuebles urbanos y suburbanos con edificaciones, según antigüedad del valor determinado modificado",
+        "descripcion": "Inmuebles urbanos y suburbanos con inmuebles edificados, años 2002 a 2016 inclusive y a la entrada en vigor de la Ley",
         "tasa_millar": 0.0024,
         "periodicidad": "anual",
         "cuota_fija_adicional": null
@@ -13,62 +13,62 @@
       {
         "grupo": "urbano",
         "clave": "sin_edificaciones",
-        "descripcion": "Inmuebles urbanos y suburbanos sin edificaciones, según antigüedad del valor determinado modificado",
+        "descripcion": "Inmuebles urbanos y suburbanos sin edificaciones, años 2002 a 2016 inclusive y a la entrada en vigor de la Ley",
         "tasa_millar": 0.0045,
         "periodicidad": "anual",
         "cuota_fija_adicional": null
       },
       {
         "grupo": "rustico",
-        "clave": "inmuebles_rusticos",
-        "descripcion": "Inmuebles rústicos, según antigüedad del valor determinado modificado",
+        "clave": "rustico_general",
+        "descripcion": "Inmuebles rústicos, años 2002 a 2016 inclusive y a la entrada en vigor de la Ley",
         "tasa_millar": 0.0018,
         "periodicidad": "anual",
         "cuota_fija_adicional": null
       },
       {
         "grupo": "urbano",
-        "clave": "edificaciones_ant_1993",
-        "descripcion": "Con anterioridad al año de 1993: inmuebles urbanos y suburbanos con edificaciones",
+        "clave": "edificaciones_ant_1993_1993_2001",
+        "descripcion": "Inmuebles urbanos y suburbanos con inmuebles edificados, con anterioridad al año 2002 y hasta 1993 inclusive",
         "tasa_millar": 0.008,
         "periodicidad": "anual",
         "cuota_fija_adicional": null
       },
       {
         "grupo": "urbano",
-        "clave": "sin_edificaciones_ant_1993",
-        "descripcion": "Con anterioridad al año de 1993: inmuebles urbanos y suburbanos sin edificaciones",
+        "clave": "sin_edificaciones_ant_1993_1993_2001",
+        "descripcion": "Inmuebles urbanos y suburbanos sin edificaciones, con anterioridad al año 2002 y hasta 1993 inclusive",
         "tasa_millar": 0.015,
         "periodicidad": "anual",
         "cuota_fija_adicional": null
       },
       {
         "grupo": "rustico",
-        "clave": "rustico_ant_1993",
-        "descripcion": "Con anterioridad al año de 1993: inmuebles rústicos",
+        "clave": "rustico_ant_1993_1993_2001",
+        "descripcion": "Inmuebles rústicos, con anterioridad al año 2002 y hasta 1993 inclusive",
         "tasa_millar": 0.006,
         "periodicidad": "anual",
         "cuota_fija_adicional": null
       },
       {
         "grupo": "urbano",
-        "clave": "edificaciones_ant_1993_2",
-        "descripcion": "Con anterioridad al año de 1993: inmuebles urbanos y suburbanos con edificaciones (renglón adicional del texto)",
+        "clave": "edificaciones_pre_1993",
+        "descripcion": "Inmuebles urbanos y suburbanos con inmuebles edificados, con anterioridad al año de 1993",
         "tasa_millar": 0.013,
         "periodicidad": "anual",
         "cuota_fija_adicional": null
       },
       {
         "grupo": "urbano",
-        "clave": "sin_edificaciones_ant_1993_2",
-        "descripcion": "Con anterioridad al año de 1993: inmuebles urbanos y suburbanos sin edificaciones (renglón adicional del texto)",
+        "clave": "sin_edificaciones_pre_1993",
+        "descripcion": "Inmuebles urbanos y suburbanos sin edificaciones, con anterioridad al año de 1993",
         "tasa_millar": 0.012,
         "periodicidad": "anual",
         "cuota_fija_adicional": null
       }
     ],
     "minimo_predial": null,
-    "comentarios": "Art. 4 establece tasas anuales al millar por categoría de inmueble y por antigüedad del valor determinado modificado. Se transcriben los renglones visibles del texto; el artículo presenta una tabla categórica de tasas, no rangos por valor catastral. Se ignoran valores unitarios de catastro de los artículos 5 y 6. La lectura OCR de los renglones de 1993 muestra dos pares de tasas adicionales en el texto; se conservan tal como aparecen."
+    "comentarios": "Artículo 4: la mecánica principal del predial es un catálogo de tasas al millar por categoría de inmueble y por periodo de antigüedad del valor determinado modificado. Se transcribe como tarifa_millar porque no hay rangos de valor catastral. El artículo 5 contiene valores unitarios catastrales para avalúo, no la tarifa del impuesto, y por tanto no se incorpora en la mecánica de cálculo."
   },
   "_meta": {
     "fuente": "txt",
@@ -79,10 +79,12 @@
     "requiere_revision": false,
     "escalado": false,
     "razon": null,
+    "usado_reocr": false,
+    "usado_vision": false,
     "tokens": {
-      "input": 7156,
-      "output": 649,
-      "cached": 3840
+      "input": 8373,
+      "output": 689,
+      "cached": 5888
     },
     "cvegeo": "11005",
     "estado": "guanajuato",

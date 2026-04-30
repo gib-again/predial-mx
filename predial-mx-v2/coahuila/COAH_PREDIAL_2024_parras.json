@@ -6,7 +6,7 @@
         "grupo": "urbano",
         "clave": "predios_urbanos",
         "descripcion": "Sobre los predios urbanos",
-        "tasa_millar": 5.0,
+        "tasa_millar": 0.005,
         "periodicidad": "anual",
         "cuota_fija_adicional": null
       },
@@ -14,31 +14,31 @@
         "grupo": "rustico",
         "clave": "predios_rusticos",
         "descripcion": "Sobre los predios rústicos",
-        "tasa_millar": 3.0,
+        "tasa_millar": 0.003,
         "periodicidad": "anual",
         "cuota_fija_adicional": null
       },
       {
         "grupo": "rustico",
-        "clave": "predios_rusticos_industriales_eolica_ejecucion",
+        "clave": "rusticos_industriales_eolica_ejecucion",
         "descripcion": "Sobre los predios rústicos industriales con explotación de energía renovable (eólica) en ejecución",
-        "tasa_millar": 5.0,
+        "tasa_millar": 0.005,
         "periodicidad": "anual",
         "cuota_fija_adicional": null
       },
       {
         "grupo": "rustico",
-        "clave": "predios_rusticos_industriales_eolica_desarrollo",
+        "clave": "rusticos_industriales_eolica_desarrollo",
         "descripcion": "Sobre los predios rústicos industriales con explotación de energía renovable (eólica) en desarrollo",
-        "tasa_millar": 5.0,
+        "tasa_millar": 0.005,
         "periodicidad": "anual",
         "cuota_fija_adicional": null
       },
       {
         "grupo": "rustico",
-        "clave": "predios_rusticos_industriales_eolica_proyecto",
+        "clave": "rusticos_industriales_eolica_proyecto",
         "descripcion": "Sobre los predios rústicos industriales con explotación de energía renovable (eólica) en proyecto",
-        "tasa_millar": 5.0,
+        "tasa_millar": 0.005,
         "periodicidad": "anual",
         "cuota_fija_adicional": null
       }
@@ -48,7 +48,7 @@
       "periodicidad": "bimestral",
       "unidad": "pesos"
     },
-    "comentarios": "Art. 2: tarifas paralelas por tipo de predio. Además, se establece un mínimo predial de $33.50 bimestral. Se ignoraron los incentivos/bonificaciones por pago anual y a grupos específicos."
+    "comentarios": "Art. 2: tasas categóricas al millar sobre valor catastral para predios urbanos, rústicos y rústicos industriales con explotación de energía renovable (eólica) en ejecución, desarrollo y proyecto. Se ignoran incentivos/bonificaciones. El texto establece un mínimo predial de $33.50 bimestral."
   },
   "_meta": {
     "fuente": "txt",
@@ -59,10 +59,12 @@
     "requiere_revision": false,
     "escalado": false,
     "razon": null,
+    "usado_reocr": false,
+    "usado_vision": false,
     "tokens": {
-      "input": 5263,
-      "output": 400,
-      "cached": 3840
+      "input": 6480,
+      "output": 431,
+      "cached": 5888
     },
     "cvegeo": "05024",
     "estado": "coahuila",

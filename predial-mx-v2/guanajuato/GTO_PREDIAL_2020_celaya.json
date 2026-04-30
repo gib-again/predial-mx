@@ -1,24 +1,75 @@
 {
   "predial": {
-    "tipo_esquema": "progresivo",
+    "tipo_esquema": "mixto",
     "tabla": [
       {
         "n_rango": 1,
         "inferior": 0.0,
-        "superior": 219000.0,
-        "cuota_fija": 0.0,
-        "tasa_marginal": 0.002
+        "superior": 198000.0,
+        "columnas": [
+          {
+            "nombre": "general",
+            "valor": 0.002,
+            "tipo": "tasa_marginal",
+            "unidad": "al_millar"
+          }
+        ]
       },
       {
         "n_rango": 2,
-        "inferior": 219000.0,
+        "inferior": 198000.0,
+        "superior": 295000.0,
+        "columnas": [
+          {
+            "nombre": "general",
+            "valor": 0.0021,
+            "tipo": "tasa_marginal",
+            "unidad": "al_millar"
+          }
+        ]
+      },
+      {
+        "n_rango": 3,
+        "inferior": 295000.0,
+        "superior": 2810474.56,
+        "columnas": [
+          {
+            "nombre": "general",
+            "valor": 0.0022,
+            "tipo": "tasa_marginal",
+            "unidad": "al_millar"
+          }
+        ]
+      },
+      {
+        "n_rango": 4,
+        "inferior": 2810474.56,
+        "superior": 18335436.71,
+        "columnas": [
+          {
+            "nombre": "general",
+            "valor": 0.0022,
+            "tipo": "tasa_marginal",
+            "unidad": "al_millar"
+          }
+        ]
+      },
+      {
+        "n_rango": 5,
+        "inferior": 18335436.71,
         "superior": null,
-        "cuota_fija": 0.0,
-        "tasa_marginal": 0.0021
+        "columnas": [
+          {
+            "nombre": "general",
+            "valor": 0.0022,
+            "tipo": "tasa_marginal",
+            "unidad": "al_millar"
+          }
+        ]
       }
     ],
     "minimo_predial": null,
-    "comentarios": "Art. 4, fracc. I: para inmuebles urbanos y suburbanos con edificación que cuenten con valor determinado o modificado en el ejercicio fiscal 2020, el texto muestra una tabla por rangos de valor catastral con factor para aplicarse sobre el excedente del límite inferior y cuota fija; sin embargo, el OCR disponible está muy deteriorado y sólo se distinguen con claridad los factores 0.0020, 0.0021 y 0.0022, además de un último renglón con 18,335,436.71 en adelante. También se identifican tarifas paralelas separadas para otros supuestos del mismo artículo: urbanos y suburbanos sin edificación 3.00 al millar; rústicos 0.20 al millar; y para valores 2019 y anteriores tasas diferenciadas por grupo. Esas tarifas paralelas no se integran en la tabla principal."
+    "comentarios": "Art. 4 fracc. I: para inmuebles urbanos y suburbanos con edificación con valor determinado o modificado en 2020, la ley presenta una tabla por rangos de valor catastral con cuota fija y factor sobre el excedente; el texto OCR está incompleto/dañado, pero la estructura corresponde a brackets heterogéneos del predial principal. Art. 4 fracc. II: inmuebles urbanos y suburbanos sin edificación pagan 3.00 al millar sobre la base gravable. Art. 4 fracc. III: inmuebles rústicos con valor determinado o modificado en 2020 pagan 0.20 al millar. Art. 4 fracc. IV: para valores determinados o modificados en 2019 y anteriores se establecen tasas al millar distintas por antigüedad y tipo de inmueble (urbano con edificación, urbano sin edificación y rústico): 2.00, 3.00 y 0.20 al millar; 3.55, 6.50 y 0.398 al millar; 8, 15 y 6 al millar; 13, 12 y 12 al millar, según los periodos indicados en la ley. Se documenta como mixto porque la fracción I usa una mecánica por rangos con cuota fija + factor sobre excedente, mientras que las fracciones II, III y IV contienen tarifas paralelas y heterogéneas por tipo y antigüedad que no caben en una sola tabla homogénea."
   },
   "_meta": {
     "fuente": "txt",
@@ -29,10 +80,12 @@
     "requiere_revision": false,
     "escalado": false,
     "razon": null,
+    "usado_reocr": false,
+    "usado_vision": false,
     "tokens": {
-      "input": 9141,
-      "output": 311,
-      "cached": 3840
+      "input": 10358,
+      "output": 631,
+      "cached": 5888
     },
     "cvegeo": "11007",
     "estado": "guanajuato",

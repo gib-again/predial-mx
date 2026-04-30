@@ -2,10 +2,10 @@
   "predial": {
     "tipo_esquema": "otro_no_clasificado",
     "categoria": "segmento_vacio",
-    "descripcion_estructural": "El texto proporcionado no contiene el artículo, tabla o mecánica específica del Impuesto Predial; sólo aparecen páginas de índice/ingresos estimados y el renglón '1201 Impuesto predial' sin desglose tarifario. No es posible transcribir una mecánica de cálculo sin inventarla.",
+    "descripcion_estructural": "El texto proporcionado no contiene el articulado ni una tabla tarifaria visible del Impuesto Predial para Apaseo el Alto; sólo aparecen páginas de índice/ingresos estimados y no la mecánica de cálculo. No es posible extraer una tarifa sin inventarla.",
     "tabla_cruda": [],
     "minimo_predial": null,
-    "comentarios": "No se detectó la sección tarifaria del predial en el segmento entregado."
+    "comentarios": "No se localizó la sección tarifaria del predial en el texto suministrado."
   },
   "_meta": {
     "fuente": "txt",
@@ -16,10 +16,12 @@
     "requiere_revision": true,
     "escalado": false,
     "razon": "clasificado_como_otro_no_clasificado",
+    "usado_reocr": false,
+    "usado_vision": true,
     "tokens": {
-      "input": 9685,
-      "output": 139,
-      "cached": 3840
+      "input": 26884,
+      "output": 286,
+      "cached": 11776
     },
     "cvegeo": "11004",
     "estado": "guanajuato",

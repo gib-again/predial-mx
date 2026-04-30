@@ -12,6 +12,12 @@
             "valor": 50.0,
             "tipo": "cuota_fija",
             "unidad": "pesos"
+          },
+          {
+            "nombre": "general",
+            "valor": 0.0015,
+            "tipo": "tasa_marginal",
+            "unidad": "al_millar"
           }
         ]
       },
@@ -25,6 +31,12 @@
             "valor": 60.0,
             "tipo": "cuota_fija",
             "unidad": "pesos"
+          },
+          {
+            "nombre": "general",
+            "valor": 0.0014,
+            "tipo": "tasa_marginal",
+            "unidad": "al_millar"
           }
         ]
       },
@@ -38,6 +50,12 @@
             "valor": 70.0,
             "tipo": "cuota_fija",
             "unidad": "pesos"
+          },
+          {
+            "nombre": "general",
+            "valor": 0.0013,
+            "tipo": "tasa_marginal",
+            "unidad": "al_millar"
           }
         ]
       },
@@ -51,6 +69,12 @@
             "valor": 80.0,
             "tipo": "cuota_fija",
             "unidad": "pesos"
+          },
+          {
+            "nombre": "general",
+            "valor": 0.0012,
+            "tipo": "tasa_marginal",
+            "unidad": "al_millar"
           }
         ]
       },
@@ -64,6 +88,12 @@
             "valor": 90.0,
             "tipo": "cuota_fija",
             "unidad": "pesos"
+          },
+          {
+            "nombre": "general",
+            "valor": 0.0011,
+            "tipo": "tasa_marginal",
+            "unidad": "al_millar"
           }
         ]
       },
@@ -77,6 +107,12 @@
             "valor": 100.0,
             "tipo": "cuota_fija",
             "unidad": "pesos"
+          },
+          {
+            "nombre": "general",
+            "valor": 0.001,
+            "tipo": "tasa_marginal",
+            "unidad": "al_millar"
           }
         ]
       },
@@ -90,6 +126,12 @@
             "valor": 250.0,
             "tipo": "cuota_fija",
             "unidad": "pesos"
+          },
+          {
+            "nombre": "general",
+            "valor": 0.0009,
+            "tipo": "tasa_marginal",
+            "unidad": "al_millar"
           }
         ]
       },
@@ -103,12 +145,18 @@
             "valor": 600.0,
             "tipo": "cuota_fija",
             "unidad": "pesos"
+          },
+          {
+            "nombre": "general",
+            "valor": 0.0008,
+            "tipo": "tasa_marginal",
+            "unidad": "al_millar"
           }
         ]
       }
     ],
     "minimo_predial": null,
-    "comentarios": "Art. 14: tarifa por rangos de valor catastral con cuota fija en pesos y factor para aplicar al excedente; además, para la zona costera colindante con el Golfo de México y su zona federal marítimo terrestre, el impuesto predial a pagar será el 0.003% del valor catastral. Se clasifica como mixto porque la tabla principal es progresiva con tasa marginal, pero existe una tarifa paralela con tasa porcentual para la zona costera. Se ignoran descuentos del art. 17 y el apartado de rentas/frutos civiles del art. 18 por no formar parte de la mecánica pedial sobre valor catastral."
+    "comentarios": "Art. 14: tarifa principal por valor catastral con rangos y fórmula híbrida (cuota fija + factor/tasa marginal sobre el excedente). Art. 16: para la zona costera del municipio, una vez calculado el valor catastral, el impuesto predial a pagar será 0.003% del valor catastral; se documenta como tarifa paralela/secundaria. Art. 18: predial con base en rentas o frutos civiles: 3% sobre renta mensual de casas habitación y 5% sobre renta mensual por actividades comerciales; se documenta como tarifa secundaria."
   },
   "_meta": {
     "fuente": "txt",
@@ -119,10 +167,12 @@
     "requiere_revision": false,
     "escalado": false,
     "razon": null,
+    "usado_reocr": false,
+    "usado_vision": false,
     "tokens": {
-      "input": 6300,
-      "output": 535,
-      "cached": 3840
+      "input": 7517,
+      "output": 726,
+      "cached": 5888
     },
     "cvegeo": "31061",
     "estado": "yucatan",

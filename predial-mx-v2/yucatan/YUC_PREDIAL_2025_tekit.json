@@ -3,28 +3,35 @@
     "tipo_esquema": "tasa_unica",
     "tabla": [
       {
-        "descripcion": "Cuota fija de 150.00 aplicando la tasa del 0.05% sobre el valor catastral",
+        "descripcion": "Impuesto predial general sobre valor catastral",
         "tasa": 0.0005,
         "base_calculo": "valor_catastral",
-        "unidad": "porcentaje"
+        "unidad": "al_ciento",
+        "cuota_fija_adicional": {
+          "monto": 150.0,
+          "periodicidad": "anual",
+          "unidad": "pesos"
+        }
       }
     ],
     "minimo_predial": null,
-    "comentarios": "Artículo 13 establece una cuota fija de 150.00 pesos además de una tasa del 0.05% sobre el valor catastral. La estructura no presenta rangos ni categorías; para ajustarse a las variantes permitidas, se clasifica como tasa_unica y la cuota fija adicional no tiene campo propio en esta variante. Se ignoran las tablas de valores catastrales de terreno y construcción por no ser la tarifa del impuesto predial, así como el impuesto sobre rentas o frutos civiles del artículo 15 por no corresponder a la mecánica general del predial sobre valor catastral."
+    "comentarios": "Art. 13: el impuesto predial se determina con una cuota fija de $150.00 aplicando la tasa del 0.05% sobre el valor catastral. Art. 15 establece una mecánica separada para predios con base en rentas o frutos civiles: 3% mensual para casa habitación y 3% mensual para actividades التجارية/comerciales; se documenta como tarifa secundaria no principal."
   },
   "_meta": {
     "fuente": "txt",
-    "modelo": "gpt-5.4"
+    "modelo": "gpt-5.4-mini"
   },
   "_meta_v2": {
-    "intentos": 3,
+    "intentos": 1,
     "requiere_revision": false,
-    "escalado": true,
-    "razon": "escalado_a_gpt-5.4_tras_2x_mini_fallido",
+    "escalado": false,
+    "razon": null,
+    "usado_reocr": false,
+    "usado_vision": false,
     "tokens": {
-      "input": 19462,
-      "output": 815,
-      "cached": 13568
+      "input": 7394,
+      "output": 191,
+      "cached": 5888
     },
     "cvegeo": "31080",
     "estado": "yucatan",

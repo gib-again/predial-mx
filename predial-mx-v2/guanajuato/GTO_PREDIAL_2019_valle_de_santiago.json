@@ -3,80 +3,32 @@
     "tipo_esquema": "tarifa_millar",
     "tabla": [
       {
-        "grupo": "urbano",
-        "clave": "con_edificaciones",
-        "descripcion": "Inmuebles urbanos y suburbanos con edificaciones, artículo 4, tasas anuales por año de origen.",
+        "grupo": "general",
+        "clave": "urbano_suburbano_con_edificaciones",
+        "descripcion": "Inmuebles urbanos y suburbanos con edificaciones; entrada en vigor de la ley",
         "tasa_millar": 0.0024,
         "periodicidad": "anual",
         "cuota_fija_adicional": null
       },
       {
-        "grupo": "urbano",
-        "clave": "sin_edificaciones",
-        "descripcion": "Inmuebles urbanos y suburbanos sin edificaciones, artículo 4, tasas anuales por año de origen.",
+        "grupo": "general",
+        "clave": "urbano_suburbano_sin_edificaciones",
+        "descripcion": "Inmuebles urbanos y suburbanos sin edificaciones; entrada en vigor de la ley",
         "tasa_millar": 0.0045,
         "periodicidad": "anual",
         "cuota_fija_adicional": null
       },
       {
-        "grupo": "rustico",
-        "clave": "general",
-        "descripcion": "Inmuebles rústicos, artículo 4, tasas anuales por año de origen.",
+        "grupo": "general",
+        "clave": "rustico",
+        "descripcion": "Inmuebles rústicos; entrada en vigor de la ley",
         "tasa_millar": 0.0018,
-        "periodicidad": "anual",
-        "cuota_fija_adicional": null
-      },
-      {
-        "grupo": "urbano",
-        "clave": "con_edificaciones_historico_2002_2018",
-        "descripcion": "Inmuebles urbanos y suburbanos con edificaciones, años 2002 a 2018 inclusive.",
-        "tasa_millar": 0.0024,
-        "periodicidad": "anual",
-        "cuota_fija_adicional": null
-      },
-      {
-        "grupo": "urbano",
-        "clave": "sin_edificaciones_historico_2002_2018",
-        "descripcion": "Inmuebles urbanos y suburbanos sin edificaciones, años 2002 a 2018 inclusive.",
-        "tasa_millar": 0.0045,
-        "periodicidad": "anual",
-        "cuota_fija_adicional": null
-      },
-      {
-        "grupo": "rustico",
-        "clave": "historico_2002_2018",
-        "descripcion": "Inmuebles rústicos, años 2002 a 2018 inclusive.",
-        "tasa_millar": 0.0018,
-        "periodicidad": "anual",
-        "cuota_fija_adicional": null
-      },
-      {
-        "grupo": "urbano",
-        "clave": "con_edificaciones_historico_1993_2001",
-        "descripcion": "Inmuebles urbanos y suburbanos con edificaciones, con anterioridad a 2002 y hasta 1993 inclusive.",
-        "tasa_millar": 0.008,
-        "periodicidad": "anual",
-        "cuota_fija_adicional": null
-      },
-      {
-        "grupo": "urbano",
-        "clave": "sin_edificaciones_historico_1993_2001",
-        "descripcion": "Inmuebles urbanos y suburbanos sin edificaciones, con anterioridad a 2002 y hasta 1993 inclusive.",
-        "tasa_millar": 0.015,
-        "periodicidad": "anual",
-        "cuota_fija_adicional": null
-      },
-      {
-        "grupo": "rustico",
-        "clave": "historico_1993_2001",
-        "descripcion": "Inmuebles rústicos, con anterioridad a 2002 y hasta 1993 inclusive.",
-        "tasa_millar": 0.006,
         "periodicidad": "anual",
         "cuota_fija_adicional": null
       }
     ],
     "minimo_predial": null,
-    "comentarios": "Artículo 4 establece tasas anuales al millar por categoría y por periodo de antigüedad del inmueble. No se detectan rangos de valor catastral ni cuotas fijas. Se ignoran las tablas de valores unitarios de terreno/construcción de los artículos 5 y 6 porque son catastro/avalúo, no la mecánica del impuesto. No se observa una tarifa paralela adicional distinta para otra población que altere la clasificación principal."
+    "comentarios": "Artículo 4 establece tasas anuales al millar por tipo de inmueble: urbanos y suburbanos con edificaciones 2.4 al millar, sin edificaciones 4.5 al millar, y rústicos 1.8 al millar para la entrada en vigor de la ley; también aparecen tasas históricas para 2002-2018 e anteriores a 2002, pero la mecánica principal vigente en 2019 se transcribe en la tabla. Las tablas de valores unitarios de terreno y construcción de los artículos 5 y 6 corresponden a valuación catastral, no a la tarifa del predial."
   },
   "_meta": {
     "fuente": "txt",
@@ -87,10 +39,12 @@
     "requiere_revision": false,
     "escalado": false,
     "razon": null,
+    "usado_reocr": false,
+    "usado_vision": false,
     "tokens": {
-      "input": 7460,
-      "output": 729,
-      "cached": 3840
+      "input": 8677,
+      "output": 356,
+      "cached": 5888
     },
     "cvegeo": "11042",
     "estado": "guanajuato",

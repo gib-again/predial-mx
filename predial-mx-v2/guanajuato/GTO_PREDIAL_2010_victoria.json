@@ -3,40 +3,40 @@
     "tipo_esquema": "tarifa_millar",
     "tabla": [
       {
-        "grupo": "urbano",
-        "clave": "valor_determinado_con_edificaciones",
-        "descripcion": "Inmuebles que cuenten con un valor determinado o modificado: con edificaciones",
+        "grupo": "general",
+        "clave": "entrada_en_vigor",
+        "descripcion": "A la entrada en vigor de la presente Ley: inmuebles con valor determinado o modificado; inmuebles urbanos y suburbanos con edificaciones; inmuebles rústicos sin edificaciones.",
         "tasa_millar": 0.0024,
         "periodicidad": "anual",
         "cuota_fija_adicional": null
       },
       {
-        "grupo": "urbano",
-        "clave": "valor_determinado_sin_edificaciones",
-        "descripcion": "Inmuebles que cuenten con un valor determinado o modificado: sin edificaciones",
-        "tasa_millar": 0.0045,
+        "grupo": "general",
+        "clave": "anios_2002_2009",
+        "descripcion": "Durante los años 2002 y hasta 2009 inclusive: inmuebles con valor determinado o modificado; inmuebles urbanos y suburbanos con edificaciones; inmuebles rústicos sin edificaciones.",
+        "tasa_millar": 0.0024,
         "periodicidad": "anual",
         "cuota_fija_adicional": null
       },
       {
-        "grupo": "rustico",
-        "clave": "valor_determinado_con_edificaciones",
-        "descripcion": "Inmuebles rústicos: con edificaciones",
-        "tasa_millar": 0.0018,
+        "grupo": "general",
+        "clave": "anterior_2002_hasta_1993",
+        "descripcion": "Con anterioridad al año 2002 y hasta 1993 inclusive: inmuebles con valor determinado o modificado; inmuebles urbanos y suburbanos con edificaciones; inmuebles rústicos sin edificaciones.",
+        "tasa_millar": 0.008,
         "periodicidad": "anual",
         "cuota_fija_adicional": null
       },
       {
-        "grupo": "rustico",
-        "clave": "valor_determinado_sin_edificaciones",
-        "descripcion": "Inmuebles rústicos: sin edificaciones",
-        "tasa_millar": 0.0018,
+        "grupo": "general",
+        "clave": "anterior_1993",
+        "descripcion": "Con anterioridad al año de 1993: inmuebles con valor determinado o modificado; inmuebles urbanos y suburbanos con edificaciones; inmuebles rústicos sin edificaciones.",
+        "tasa_millar": 0.008,
         "periodicidad": "anual",
         "cuota_fija_adicional": null
       }
     ],
     "minimo_predial": null,
-    "comentarios": "Art. 4 establece tasas anuales al millar por categoría y condición del inmueble. La ley también contiene en los arts. 5 y 6 tablas de valores unitarios y criterios de valuación catastral, pero no constituyen la mecánica de cálculo del impuesto sino la determinación de la base. No se transcriben descuentos, recargos ni bonificaciones. La misma sección incluye tasas históricas para años anteriores a 2010; se conserva sólo la mecánica vigente para el ejercicio fiscal 2010 al inicio de vigencia de la ley."
+    "comentarios": "Art. 4: la mecánica principal del predial es una tarifa al millar anual por antigüedad/condición del inmueble, con tres grupos de referencia en la misma tabla: (i) inmuebles que cuenten con un valor determinado o modificado, (ii) inmuebles urbanos y suburbanos con edificaciones, y (iii) inmuebles rústicos sin edificaciones. No se extraen aquí los valores unitarios de los arts. 5 y 6 porque son tablas catastrales, no tarifa del impuesto. La tasa para el primer y segundo periodo es 2.4 al millar para el grupo general indicado; para el tercer y cuarto periodo es 8 al millar. La ley no presenta una estructura de brackets por valor catastral para la cuota del predial en este artículo."
   },
   "_meta": {
     "fuente": "txt",
@@ -47,10 +47,12 @@
     "requiere_revision": false,
     "escalado": false,
     "razon": null,
+    "usado_reocr": false,
+    "usado_vision": false,
     "tokens": {
-      "input": 7240,
-      "output": 397,
-      "cached": 3840
+      "input": 8457,
+      "output": 539,
+      "cached": 5888
     },
     "cvegeo": "11043",
     "estado": "guanajuato",

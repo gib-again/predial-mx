@@ -4,31 +4,31 @@
     "tabla": [
       {
         "grupo": "urbano",
-        "clave": "vigente_2019",
-        "descripcion": "Inmuebles urbanos y suburbanos con valor determinado o modificado: a la entrada en vigor de la ley; durante los años 2002 y hasta 2018 inclusive; con anterioridad al año 2002 y hasta 1993; con anterioridad al año 1993.",
-        "tasa_millar": 2.4,
+        "clave": "urbano_con_edificaciones",
+        "descripcion": "Inmuebles urbanos y suburbanos con edificaciones, valor determinado o modificado a la entrada en vigor de la ley.",
+        "tasa_millar": 0.0024,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "urbano",
+        "clave": "urbano_sin_edificaciones",
+        "descripcion": "Inmuebles urbanos y suburbanos sin edificaciones, valor determinado o modificado a la entrada en vigor de la ley.",
+        "tasa_millar": 0.0045,
         "periodicidad": "anual",
         "cuota_fija_adicional": null
       },
       {
         "grupo": "rustico",
-        "clave": "vigente_2019",
-        "descripcion": "Inmuebles rústicos con valor determinado o modificado: a la entrada en vigor de la ley; durante los años 2002 y hasta 2018 inclusive; con anterioridad al año 2002 y hasta 1993; con anterioridad al año 1993.",
-        "tasa_millar": 4.5,
-        "periodicidad": "anual",
-        "cuota_fija_adicional": null
-      },
-      {
-        "grupo": "otro",
-        "clave": "vigente_2019_sin_edificacion",
-        "descripcion": "Inmuebles urbanos y suburbanos sin edificaciones, con valor determinado o modificado: a la entrada en vigor de la ley; durante los años 2002 y hasta 2018 inclusive; con anterioridad al año 2002 y hasta 1993; con anterioridad al año 1993.",
-        "tasa_millar": 1.8,
+        "clave": "rustico",
+        "descripcion": "Inmuebles rústicos, valor determinado o modificado a la entrada en vigor de la ley.",
+        "tasa_millar": 0.0018,
         "periodicidad": "anual",
         "cuota_fija_adicional": null
       }
     ],
     "minimo_predial": null,
-    "comentarios": "Art. 4 establece tasas anuales al millar sobre el valor catastral para inmuebles con valor determinado o modificado. Se transcribe la estructura principal con la tasa vigente de 2019 para cada grupo: urbanos y suburbanos edificados 2.4 al millar, rústicos 4.5 al millar, y urbanos/suburbanos sin edificaciones 1.8 al millar. El texto también contiene tasas históricas para periodos anteriores (8, 15, 6, 13 al millar), pero se omiten por ser supuestos temporales distintos. La mecánica de cálculo de Art. 5 sobre valores unitarios de terreno y construcción corresponde a catastro/valuación, no a la tarifa del impuesto."
+    "comentarios": "Art. 4 establece tasas al millar por categoría de inmueble, sin rangos de valor catastral en la mecánica principal. Se transcribe la tarifa vigente para la entrada en vigor de la ley, que es la estructura aplicable para el ejercicio 2019 según el texto proporcionado. El mismo artículo contiene tasas históricas para periodos anteriores (2002-2018, con anterioridad a 2002 y con anterioridad a 1993), que se omiten por no ser la mecánica aplicable al ejercicio solicitado."
   },
   "_meta": {
     "fuente": "txt",
@@ -39,10 +39,12 @@
     "requiere_revision": false,
     "escalado": false,
     "razon": null,
+    "usado_reocr": false,
+    "usado_vision": false,
     "tokens": {
-      "input": 7399,
-      "output": 510,
-      "cached": 3840
+      "input": 8616,
+      "output": 354,
+      "cached": 5888
     },
     "cvegeo": "11037",
     "estado": "guanajuato",

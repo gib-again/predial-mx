@@ -4,39 +4,31 @@
     "tabla": [
       {
         "grupo": "urbano",
-        "clave": "inmuebles_urbanos_y_suburbanos_con_edificaciones",
-        "descripcion": "Inmuebles urbanos y suburbanos con edificaciones",
+        "clave": "urbano_con_edificaciones",
+        "descripcion": "Inmuebles urbanos y suburbanos con edificaciones, valor determinado a la entrada en vigor de la ley y durante 2002 hasta 2017 inclusive",
         "tasa_millar": 0.0024,
         "periodicidad": "anual",
         "cuota_fija_adicional": null
       },
       {
         "grupo": "urbano",
-        "clave": "inmuebles_urbanos_y_suburbanos_sin_edificaciones",
-        "descripcion": "Inmuebles urbanos y suburbanos sin edificaciones",
+        "clave": "urbano_sin_edificaciones",
+        "descripcion": "Inmuebles urbanos y suburbanos sin edificaciones, valor determinado a la entrada en vigor de la ley y durante 2002 hasta 2017 inclusive",
         "tasa_millar": 0.0045,
         "periodicidad": "anual",
         "cuota_fija_adicional": null
       },
       {
         "grupo": "rustico",
-        "clave": "inmuebles_rusticos_con_edificaciones",
-        "descripcion": "Inmuebles rústicos con edificaciones",
-        "tasa_millar": 0.0018,
-        "periodicidad": "anual",
-        "cuota_fija_adicional": null
-      },
-      {
-        "grupo": "rustico",
-        "clave": "inmuebles_rusticos_sin_edificaciones",
-        "descripcion": "Inmuebles rústicos sin edificaciones",
+        "clave": "rustico",
+        "descripcion": "Inmuebles rústicos, valor determinado a la entrada en vigor de la ley y durante 2002 hasta 2017 inclusive",
         "tasa_millar": 0.0018,
         "periodicidad": "anual",
         "cuota_fija_adicional": null
       }
     ],
     "minimo_predial": null,
-    "comentarios": "Artículo 4 establece tasas anuales al millar para inmuebles urbanos y suburbanos, diferenciando con edificaciones y sin edificaciones, y para inmuebles rústicos con/sin edificaciones. No se transcriben las tablas de valores unitarios de los artículos 5 y 6 por ser catastro, no mecánica del impuesto."
+    "comentarios": "Art. 4: la tasa se fija por antigüedad del valor del inmueble. Se transcribe la fila vigente al ejercicio 2018: 'A la entrada en vigor de la presente Ley' y 'Durante el año 2002 y hasta el año 2017, inclusive' con las mismas tasas. El texto también contiene tasas para 'con anterioridad al año 2002 y hasta el año 1993, inclusive' y 'con anterioridad al año 1993', pero no se aplican al ejercicio 2018 según la redacción proporcionada y presentan formatos OCR ambiguos; no se incorporan en la tabla principal. Art. 4 además muestra una separación para inmuebles urbanos/suburbanos con y sin edificaciones, y rústicos. Art. 5 a 6 sólo contienen valores unitarios de catastro y criterios de avalúo, no mecánica de cálculo del impuesto."
   },
   "_meta": {
     "fuente": "txt",
@@ -47,10 +39,12 @@
     "requiere_revision": false,
     "escalado": false,
     "razon": null,
+    "usado_reocr": false,
+    "usado_vision": false,
     "tokens": {
-      "input": 7430,
-      "output": 347,
-      "cached": 3840
+      "input": 8647,
+      "output": 445,
+      "cached": 5888
     },
     "cvegeo": "11025",
     "estado": "guanajuato",

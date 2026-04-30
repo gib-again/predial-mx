@@ -3,28 +3,35 @@
     "tipo_esquema": "tasa_unica",
     "tabla": [
       {
-        "descripcion": "Cuota fija de 50 pesos más tasa de 0.10% sobre el valor catastral",
+        "descripcion": "Predial general sobre valor catastral para secciones I a IV",
         "tasa": 0.001,
         "base_calculo": "valor_catastral",
-        "unidad": "porcentaje"
+        "unidad": "al_ciento",
+        "cuota_fija_adicional": {
+          "monto": 50.0,
+          "periodicidad": "anual",
+          "unidad": "pesos"
+        }
       }
     ],
     "minimo_predial": null,
-    "comentarios": "Artículo 13 establece que el impuesto predial se determinará con una cuota fija de $50 y aplicando la tasa del 0.10% sobre el valor catastral de las secciones I a IV. La zona costera tiene una tarifa paralela separada de 0.40% sobre el valor catastral; no se incluye en la tabla principal por ser tarifa paralela. La cuota fija de $50 no puede modelarse en `tasa_unica` según el esquema disponible; se consigna aquí en comentarios. Se ignoraron las tablas de valores unitarios de terreno y construcción por ser de catastro, no tarifa del impuesto."
+    "comentarios": "Art. 13: el impuesto predial se determina con cuota fija de $50 y aplicando 0.10% sobre el valor catastral de la sección I a la IV. También se menciona que a la zona costera se aplicará 0.40% sobre el valor catastral; se documenta como tarifa paralela no incluida en la tabla principal. Art. 15 establece predial con base en rentas o frutos civiles: 2% mensual sobre casas habitación y 2% mensual sobre actividades التجارية/comerciales; se trata de una mecánica secundaria distinta del predial principal por valor catastral."
   },
   "_meta": {
     "fuente": "txt",
-    "modelo": "gpt-5.4"
+    "modelo": "gpt-5.4-mini"
   },
   "_meta_v2": {
-    "intentos": 3,
+    "intentos": 1,
     "requiere_revision": false,
-    "escalado": true,
-    "razon": "escalado_a_gpt-5.4_tras_2x_mini_fallido",
+    "escalado": false,
+    "razon": null,
+    "usado_reocr": false,
+    "usado_vision": false,
     "tokens": {
-      "input": 19417,
-      "output": 822,
-      "cached": 13568
+      "input": 7379,
+      "output": 244,
+      "cached": 5888
     },
     "cvegeo": "31039",
     "estado": "yucatan",

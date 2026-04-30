@@ -1,29 +1,103 @@
 {
   "predial": {
-    "tipo_esquema": "otro_no_clasificado",
-    "categoria": "error_segmentacion",
-    "descripcion_estructural": "El texto describe expresamente una mecánica progresiva del impuesto predial con valor fiscal, límite inferior, tasa marginal y cuota fija, pero la tabla de TASAS no aparece en el segmento proporcionado. El contenido entre las páginas referidas está ausente o sustituido por encabezados de página y después cambia a otros conceptos distintos al predial, por lo que no es posible reconstruir válidamente los rangos ni las tasas.",
-    "tabla_cruda": [],
-    "minimo_predial": {
-      "monto": 369.81,
-      "periodicidad": "anual",
-      "unidad": "pesos"
-    },
-    "comentarios": "Se identifica fórmula de impuesto predial progresivo: ((VF-LI)*T)+CF. Sin embargo, la tabla tarifaria anunciada para inmuebles urbanos, suburbanos y rústicos con valor determinado o modificado durante 2022 o anteriores no fue extraíble del texto. Sólo se pudo recuperar la cuota mínima anual del Artículo 37 por 369.81 pesos."
+    "tipo_esquema": "progresivo",
+    "tabla": [
+      {
+        "n_rango": 1,
+        "inferior": 0.0,
+        "superior": 135690.0,
+        "cuota_fija": 0.0,
+        "tasa_marginal": 0.0024
+      },
+      {
+        "n_rango": 2,
+        "inferior": 135690.0,
+        "superior": 435690.0,
+        "cuota_fija": 325.65,
+        "tasa_marginal": 0.00245
+      },
+      {
+        "n_rango": 3,
+        "inferior": 435690.0,
+        "superior": 735690.0,
+        "cuota_fija": 1060.65,
+        "tasa_marginal": 0.0025
+      },
+      {
+        "n_rango": 4,
+        "inferior": 735690.0,
+        "superior": 1035690.0,
+        "cuota_fija": 1810.65,
+        "tasa_marginal": 0.00255
+      },
+      {
+        "n_rango": 5,
+        "inferior": 1035690.0,
+        "superior": 1335690.0,
+        "cuota_fija": 2575.65,
+        "tasa_marginal": 0.0026
+      },
+      {
+        "n_rango": 6,
+        "inferior": 1335690.0,
+        "superior": 1635690.0,
+        "cuota_fija": 3355.65,
+        "tasa_marginal": 0.00265
+      },
+      {
+        "n_rango": 7,
+        "inferior": 1635690.0,
+        "superior": 1935690.0,
+        "cuota_fija": 4150.65,
+        "tasa_marginal": 0.0027
+      },
+      {
+        "n_rango": 8,
+        "inferior": 1935690.0,
+        "superior": 2235690.0,
+        "cuota_fija": 4960.65,
+        "tasa_marginal": 0.00275
+      },
+      {
+        "n_rango": 9,
+        "inferior": 2235690.0,
+        "superior": 2535690.0,
+        "cuota_fija": 5785.65,
+        "tasa_marginal": 0.0028
+      },
+      {
+        "n_rango": 10,
+        "inferior": 2535690.0,
+        "superior": 5071380.0,
+        "cuota_fija": 6625.65,
+        "tasa_marginal": 0.00285
+      },
+      {
+        "n_rango": 11,
+        "inferior": 5071380.0,
+        "superior": null,
+        "cuota_fija": 13852.36,
+        "tasa_marginal": 0.0029
+      }
+    ],
+    "minimo_predial": null,
+    "comentarios": "Art. 4, fracción I: para inmuebles urbanos, suburbanos y rústicos con valor determinado o modificado en el ejercicio fiscal vigente y hasta 2023, el impuesto se calcula con la fórmula ((VF-LI)*T)+CF, donde VF es valor fiscal, LI límite inferior, T tasa marginal y CF cuota fija. La tabla fue normalizada a límites contiguos. Art. 4, fracción II establece una tarifa paralela para inmuebles con valor determinado o modificado durante 2022 o anteriores: urbanos y suburbanos con edificaciones 2.4 al millar (2002-2022), 8 al millar (antes de 2002 y hasta 1993), 13 al millar (antes de 1993); urbanos y suburbanos sin edificaciones 4.5 al millar, 15 al millar y 13 al millar en esos mismos periodos; inmuebles rústicos 1.8 al millar, 6 al millar y 12 al millar. No se incluye en la tabla principal por ser tarifa paralela."
   },
   "_meta": {
-    "fuente": "txt",
+    "fuente": "pdf_vision",
     "modelo": "gpt-5.4"
   },
   "_meta_v2": {
-    "intentos": 3,
-    "requiere_revision": true,
+    "intentos": 2,
+    "requiere_revision": false,
     "escalado": true,
-    "razon": "clasificado_como_otro_no_clasificado_tras_escalacion",
+    "razon": "rescate_via_vision",
+    "usado_reocr": true,
+    "usado_vision": true,
     "tokens": {
-      "input": 26718,
-      "output": 755,
-      "cached": 11520
+      "input": 47947,
+      "output": 1250,
+      "cached": 17664
     },
     "cvegeo": "11035",
     "estado": "guanajuato",

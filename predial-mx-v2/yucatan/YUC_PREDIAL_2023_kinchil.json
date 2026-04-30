@@ -1,32 +1,78 @@
 {
   "predial": {
-    "tipo_esquema": "tarifa_millar",
+    "tipo_esquema": "mixto",
     "tabla": [
       {
-        "grupo": "general",
-        "clave": "predio_agropecuario",
-        "descripcion": "Todo predio destinado a la producción agropecuaria",
-        "tasa_millar": 0.01,
-        "periodicidad": "anual",
-        "cuota_fija_adicional": null
+        "n_rango": 1,
+        "inferior": 0.0,
+        "superior": 5000.0,
+        "columnas": [
+          {
+            "nombre": "general",
+            "valor": 2444.0,
+            "tipo": "cuota_fija",
+            "unidad": "pesos"
+          }
+        ]
+      },
+      {
+        "n_rango": 2,
+        "inferior": 5000.0,
+        "superior": 10000.0,
+        "columnas": [
+          {
+            "nombre": "general",
+            "valor": 3744.0,
+            "tipo": "cuota_fija",
+            "unidad": "pesos"
+          }
+        ]
+      },
+      {
+        "n_rango": 3,
+        "inferior": 10000.0,
+        "superior": 20000.0,
+        "columnas": [
+          {
+            "nombre": "general",
+            "valor": 4992.0,
+            "tipo": "cuota_fija",
+            "unidad": "pesos"
+          }
+        ]
+      },
+      {
+        "n_rango": 4,
+        "inferior": 20000.0,
+        "superior": null,
+        "columnas": [
+          {
+            "nombre": "general",
+            "valor": 0.01,
+            "tipo": "tasa_millar",
+            "unidad": "al_millar"
+          }
+        ]
       }
     ],
     "minimo_predial": null,
-    "comentarios": "Artículo 13 contiene tablas de valores catastrales para suelo y construcción (insumo catastral, no mecánica tarifaria del predial) y una tarifa paralela para predios agropecuarios: 10 al millar anual sobre el valor registrado o catastral. No se identificó en el texto otra tabla de cobro del impuesto predial basada en rangos; lo demás corresponde a valores unitarios catastrales y no a la mecánica de cálculo del impuesto. Artículo 14 sólo establece descuento por pronto pago y beneficios por regularización; se ignora."
+    "comentarios": "Art. 13: la tabla principal combina cuotas fijas en pesos por rangos de valor catastral y un último renglón abierto con tasa al millar, por lo que se clasifica como mixto. También se consigna una tarifa secundaria para todo predio destinado a la producción agropecuaria: 10 al millar anual sobre el valor registrado o catastral; se documenta aquí como tarifa paralela y no se integra a la tabla principal. El texto incluye además valores unitarios de terreno y construcción, que son catastro y no tarifa predial."
   },
   "_meta": {
     "fuente": "txt",
     "modelo": "gpt-5.4-mini"
   },
   "_meta_v2": {
-    "intentos": 1,
+    "intentos": 2,
     "requiere_revision": false,
     "escalado": false,
     "razon": null,
+    "usado_reocr": false,
+    "usado_vision": false,
     "tokens": {
-      "input": 6476,
-      "output": 218,
-      "cached": 3840
+      "input": 16042,
+      "output": 629,
+      "cached": 11776
     },
     "cvegeo": "31044",
     "estado": "yucatan",

@@ -1,24 +1,11 @@
 {
   "predial": {
     "tipo_esquema": "otro_no_clasificado",
-    "categoria": "municipio_sin_impuesto",
-    "descripcion_estructural": "El segmento proporcionado sólo muestra renglones de recaudación/partidas presupuestales (propiedad urbana, suburbana y rústica) con montos agregados, pero no contiene la mecánica de determinación del impuesto predial: no hay tasas, cuotas, rangos de valor catastral ni tablas aplicables. No es posible transcribir una fórmula de cálculo a partir de este fragmento.",
-    "tabla_cruda": [
-      {
-        "descripcion": "IMPUESTO SOBRE LA PROPIEDAD URBANA, SUBURBANA Y RUSTICA",
-        "valores": "100.962.220,06"
-      },
-      {
-        "descripcion": "IMPUESTOS SOBRE LA PROPIEDAD URBANA",
-        "valores": "94.279.384,72"
-      },
-      {
-        "descripcion": "IMPUESTO SOBRE LA PROPIEDAD RUSTICA",
-        "valores": "6.682.835,34"
-      }
-    ],
+    "categoria": "segmento_vacio",
+    "descripcion_estructural": "El texto proporcionado no contiene la mecánica de cálculo del impuesto predial. Solo aparecen rubros presupuestales de recaudación/ingresos ('Impuesto sobre la propiedad urbana, suburbana y rústica', 'Impuesto sobre la propiedad urbana', 'Impuesto sobre la propiedad rústica') con montos agregados, pero no tablas, cuotas, tasas ni rangos aplicables al cálculo.",
+    "tabla_cruda": [],
     "minimo_predial": null,
-    "comentarios": "Segmento sin mecánica tarifaria detectable; sólo contiene importes globales por concepto."
+    "comentarios": "No es posible extraer la mecánica tarifaria a partir de este segmento."
   },
   "_meta": {
     "fuente": "txt",
@@ -29,10 +16,12 @@
     "requiere_revision": true,
     "escalado": false,
     "razon": "clasificado_como_otro_no_clasificado",
+    "usado_reocr": true,
+    "usado_vision": true,
     "tokens": {
-      "input": 5007,
-      "output": 251,
-      "cached": 3840
+      "input": 21756,
+      "output": 536,
+      "cached": 17664
     },
     "cvegeo": "28027",
     "estado": "tamaulipas",

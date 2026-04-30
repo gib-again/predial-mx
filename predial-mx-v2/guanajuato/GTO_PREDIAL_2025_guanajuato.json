@@ -57,7 +57,7 @@
       "periodicidad": "anual",
       "unidad": "pesos"
     },
-    "comentarios": "Artículo 4, fracción I: inmuebles urbanos y suburbanos con edificaciones. Se normalizaron los límites a rangos contiguos; la última fila es 'En adelante'. El texto también establece una fracción II para inmuebles urbanos y suburbanos sin edificaciones (misma lógica progresiva) y una fracción III para inmuebles rústicos (también progresiva). No se mezclaron tarifas paralelas en la tabla principal; las demás fracciones se dejan fuera por ser tarifas separadas con la misma estructura base pero grupos distintos. Fracción II: 0.00450000, 0.00490000, 0.00495000, 0.00500000, 0.00505000, 0.00510000, 0.00515000. Fracción III: 0.00180000, 0.00200000, 0.00202500, 0.00205000, 0.00207500, 0.00210000, 0.00212500."
+    "comentarios": "Art. 4: se transcribe la fracción I (urbanos y suburbanos con edificaciones) como tabla principal progresiva. El texto también contiene tarifas paralelas para: fracción II urbanos y suburbanos sin edificaciones; fracción III inmuebles rústicos. No se incluyen en la tabla principal para evitar mezclar tarifas paralelas con brackets distintos."
   },
   "_meta": {
     "fuente": "txt",
@@ -68,10 +68,12 @@
     "requiere_revision": false,
     "escalado": false,
     "razon": null,
+    "usado_reocr": false,
+    "usado_vision": false,
     "tokens": {
-      "input": 22321,
-      "output": 1607,
-      "cached": 7680
+      "input": 24966,
+      "output": 1537,
+      "cached": 11776
     },
     "cvegeo": "11015",
     "estado": "guanajuato",

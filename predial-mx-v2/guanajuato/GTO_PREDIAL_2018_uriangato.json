@@ -1,11 +1,11 @@
 {
   "predial": {
     "tipo_esquema": "otro_no_clasificado",
-    "categoria": "segmento_vacio",
-    "descripcion_estructural": "El fragmento proporcionado contiene únicamente encabezados, referencias a tablas de valores unitarios y factores de valuación (terreno/construcción), pero no incluye una mecánica tarifaria completa del impuesto predial con tasas, cuotas o brackets aplicables. No se observa una tabla de cálculo del predial transcribible sin inventar contenido.",
+    "categoria": "estructura_no_estandar",
+    "descripcion_estructural": "El segmento proporcionado no contiene la mecánica de liquidación del impuesto predial en forma extraíble. El texto visible corresponde principalmente a tablas y factores para valuación catastral (valores unitarios de terreno y construcción, factores de forma, superficie, fondo, topografía y pavimento), pero no muestra una tabla tarifaria aplicable del predial ni una cuota fija/tasa sobre base de cálculo que pueda transcribirse sin inferencia. Por ello no encaja de manera segura en tarifa_millar, progresivo, tasa_unica, cuota_fija_simple, cuota_fija_escalonada o mixto.",
     "tabla_cruda": [],
     "minimo_predial": null,
-    "comentarios": "Se ignoran las tablas de valores unitarios de terreno y construcción porque son catastro/valuación, no la mecánica del impuesto. El texto visible no contiene la estructura de cobro del predial."
+    "comentarios": "Se ignoran los valores unitarios de catastro por instrucción; no se detecta una mecánica tarifaria de predial directamente transcribible en el fragmento."
   },
   "_meta": {
     "fuente": "txt",
@@ -16,10 +16,12 @@
     "requiere_revision": true,
     "escalado": false,
     "razon": "clasificado_como_otro_no_clasificado",
+    "usado_reocr": false,
+    "usado_vision": false,
     "tokens": {
-      "input": 6312,
-      "output": 169,
-      "cached": 3840
+      "input": 7529,
+      "output": 220,
+      "cached": 5888
     },
     "cvegeo": "11041",
     "estado": "guanajuato",

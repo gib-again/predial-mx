@@ -1,42 +1,11 @@
 {
   "predial": {
-    "tipo_esquema": "tarifa_millar",
-    "tabla": [
-      {
-        "grupo": "rustico",
-        "clave": "rusticos_sin_edificaciones_antiguos",
-        "descripcion": "Inmuebles rústicos sin edificaciones: con anterioridad al año de 1993",
-        "tasa_millar": 0.0,
-        "periodicidad": "anual",
-        "cuota_fija_adicional": null
-      },
-      {
-        "grupo": "rustico",
-        "clave": "rusticos_sin_edificaciones_1993_a_2001",
-        "descripcion": "Inmuebles rústicos sin edificaciones: del año 1993 al 2001 inclusive",
-        "tasa_millar": 0.0,
-        "periodicidad": "anual",
-        "cuota_fija_adicional": null
-      },
-      {
-        "grupo": "rustico",
-        "clave": "rusticos_sin_edificaciones_2002_a_2012",
-        "descripcion": "Inmuebles rústicos sin edificaciones: durante los años 2002 y hasta 2012 inclusive",
-        "tasa_millar": 0.0,
-        "periodicidad": "anual",
-        "cuota_fija_adicional": null
-      },
-      {
-        "grupo": "rustico",
-        "clave": "rusticos_sin_edificaciones_posteriores",
-        "descripcion": "Inmuebles rústicos sin edificaciones: posteriores a 2012",
-        "tasa_millar": 0.0,
-        "periodicidad": "anual",
-        "cuota_fija_adicional": null
-      }
-    ],
+    "tipo_esquema": "otro_no_clasificado",
+    "categoria": "estructura_no_estandar",
+    "descripcion_estructural": "El texto proporcionado no contiene una mecánica tarifaria de cobro del impuesto predial extraíble como tabla de tasas, cuotas fijas o brackets. Lo visible corresponde principalmente a tablas de valores unitarios de terreno y construcción, factores agrológicos y criterios de valuación para avalúos, que son insumos catastrales y no la tarifa del impuesto. La única referencia al impuesto predial en el artículo 4 aparece truncada e incompleta, sin permitir reconstruir la tasa o cuota aplicable.",
+    "tabla_cruda": [],
     "minimo_predial": null,
-    "comentarios": "Artículo 4 del texto proporcionado muestra el encabezado de 'TASAS' para inmuebles rústicos sin edificaciones, pero el OCR está muy deteriorado y no permite leer con certeza los valores numéricos de cada renglón. Se transcribe únicamente la estructura visible como tarifa por categoría de predio; no se incorporan valores no legibles. El resto del texto corresponde a valores unitarios catastrales (Arts. 5 y 6), que se ignoran por ser catastro y no mecánica de cálculo del impuesto."
+    "comentarios": "Sección del predial con OCR fragmentado; se observan valores unitarios y reglas de valuación (artículos 5 y 6), pero no la tasa/cálculo del impuesto."
   },
   "_meta": {
     "fuente": "txt",
@@ -44,13 +13,15 @@
   },
   "_meta_v2": {
     "intentos": 1,
-    "requiere_revision": false,
+    "requiere_revision": true,
     "escalado": false,
-    "razon": null,
+    "razon": "clasificado_como_otro_no_clasificado",
+    "usado_reocr": false,
+    "usado_vision": false,
     "tokens": {
-      "input": 6685,
-      "output": 428,
-      "cached": 3840
+      "input": 7902,
+      "output": 209,
+      "cached": 5888
     },
     "cvegeo": "11007",
     "estado": "guanajuato",

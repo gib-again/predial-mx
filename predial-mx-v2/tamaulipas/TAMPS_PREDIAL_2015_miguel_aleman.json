@@ -5,7 +5,7 @@
       {
         "grupo": "urbano",
         "clave": "predios_urbanos_y_suburbanos",
-        "descripcion": "Predios urbanos y suburbanos",
+        "descripcion": "Predios urbanos y suburbanos sobre valor catastral",
         "tasa_millar": 0.0015,
         "periodicidad": "anual",
         "cuota_fija_adicional": null
@@ -13,14 +13,14 @@
       {
         "grupo": "rustico",
         "clave": "predios_rusticos",
-        "descripcion": "Predios rústicos",
+        "descripcion": "Predios rústicos sobre valor catastral",
         "tasa_millar": 0.0015,
         "periodicidad": "anual",
         "cuota_fija_adicional": null
       }
     ],
     "minimo_predial": null,
-    "comentarios": "Art. 10: base de cálculo sobre valor catastral. Se aplica tasa del 1.5 al millar anual para predios urbanos y suburbanos, y tasa del 1.5 al millar anual para predios rústicos. No se observan rangos por valor catastral ni cuotas fijas."
+    "comentarios": "Art. 10: base de cálculo = valor catastral de los inmuebles. Tasa del 1.5 al millar anual para predios urbanos y suburbanos, y 1.5 al millar anual para predios rústicos. Se transcribe como tarifa_millar por ser un catálogo categórico sin rangos."
   },
   "_meta": {
     "fuente": "txt",
@@ -31,10 +31,12 @@
     "requiere_revision": false,
     "escalado": false,
     "razon": null,
+    "usado_reocr": false,
+    "usado_vision": false,
     "tokens": {
-      "input": 5096,
-      "output": 211,
-      "cached": 3840
+      "input": 6313,
+      "output": 223,
+      "cached": 5888
     },
     "cvegeo": "28025",
     "estado": "tamaulipas",

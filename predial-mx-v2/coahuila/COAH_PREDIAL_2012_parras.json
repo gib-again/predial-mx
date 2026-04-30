@@ -5,7 +5,7 @@
       {
         "grupo": "urbano",
         "clave": "predios_urbanos",
-        "descripcion": "Sobre los predios urbanos",
+        "descripcion": "Predios urbanos",
         "tasa_millar": 0.005,
         "periodicidad": "anual",
         "cuota_fija_adicional": null
@@ -13,7 +13,7 @@
       {
         "grupo": "rustico",
         "clave": "predios_rusticos",
-        "descripcion": "Sobre predios rústicos",
+        "descripcion": "Predios rústicos",
         "tasa_millar": 0.003,
         "periodicidad": "anual",
         "cuota_fija_adicional": null
@@ -24,7 +24,7 @@
       "periodicidad": "bimestral",
       "unidad": "pesos"
     },
-    "comentarios": "Art. 2: base del impuesto = valor catastral. Tarifa paralela por grupo: predios urbanos 5 al millar anual y predios rústicos 3 al millar anual. Se ignoran incentivos/bonificaciones conforme instrucción."
+    "comentarios": "Art. 2: base de cálculo sobre valor catastral. Tarifas separadas: predios urbanos 5 al millar anual; predios rústicos 3 al millar anual. Incentivos/bonificaciones ignorados."
   },
   "_meta": {
     "fuente": "txt",
@@ -35,10 +35,12 @@
     "requiere_revision": false,
     "escalado": false,
     "razon": null,
+    "usado_reocr": false,
+    "usado_vision": false,
     "tokens": {
-      "input": 5216,
-      "output": 209,
-      "cached": 3840
+      "input": 6433,
+      "output": 200,
+      "cached": 5888
     },
     "cvegeo": "05024",
     "estado": "coahuila",

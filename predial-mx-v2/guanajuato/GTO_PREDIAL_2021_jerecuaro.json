@@ -4,31 +4,31 @@
     "tabla": [
       {
         "grupo": "urbano",
-        "clave": "urbano_suburbano_con_edificaciones",
-        "descripcion": "Inmuebles urbanos y suburbanos con edificaciones",
+        "clave": "urbano_con_edificaciones",
+        "descripcion": "Inmuebles urbanos y suburbanos con edificaciones; a la entrada en vigor de la presente y durante 2002 a 2020, inclusive",
         "tasa_millar": 0.0024,
         "periodicidad": "anual",
         "cuota_fija_adicional": null
       },
       {
         "grupo": "urbano",
-        "clave": "urbano_suburbano_sin_edificaciones",
-        "descripcion": "Inmuebles urbanos y suburbanos sin edificaciones",
+        "clave": "urbano_sin_edificaciones",
+        "descripcion": "Inmuebles urbanos y suburbanos sin edificaciones; a la entrada en vigor de la presente y durante 2002 a 2020, inclusive",
         "tasa_millar": 0.0045,
         "periodicidad": "anual",
         "cuota_fija_adicional": null
       },
       {
         "grupo": "rustico",
-        "clave": "rustico_con_edificaciones",
-        "descripcion": "Inmuebles rústicos con edificaciones",
+        "clave": "rustico",
+        "descripcion": "Inmuebles rústicos; a la entrada en vigor de la presente y durante 2002 a 2020, inclusive",
         "tasa_millar": 0.0018,
         "periodicidad": "anual",
         "cuota_fija_adicional": null
       }
     ],
     "minimo_predial": null,
-    "comentarios": "Art. 4 establece tasas anuales al millar por tipo de inmueble y condición (urbanos y suburbanos con/sin edificaciones, y rústicos con edificaciones). Se ignora Art. 5 porque contiene valores unitarios de catastro para avalúo, no la mecánica del impuesto."
+    "comentarios": "Art. 4 establece tasas anuales al millar sobre el valor determinado o modificado del inmueble para inmuebles urbanos y suburbanos con edificación (2.4 al millar), urbanos y suburbanos sin edificación (4.5 al millar) e inmuebles rústicos (1.8 al millar). Aunque el texto trae renglones históricos por años de antigüedad, la mecánica principal extraíble es un catálogo categórico de tasas por tipo de inmueble; las tablas de valores unitarios de los arts. 5 y 6 son valuación catastral, no tarifa predial. Se omiten descuentos, recargos y bonificaciones."
   },
   "_meta": {
     "fuente": "txt",
@@ -39,10 +39,12 @@
     "requiere_revision": false,
     "escalado": false,
     "razon": null,
+    "usado_reocr": false,
+    "usado_vision": false,
     "tokens": {
-      "input": 7542,
-      "output": 270,
-      "cached": 3840
+      "input": 8759,
+      "output": 392,
+      "cached": 5888
     },
     "cvegeo": "11019",
     "estado": "guanajuato",

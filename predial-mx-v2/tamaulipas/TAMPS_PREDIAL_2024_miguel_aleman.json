@@ -28,7 +28,7 @@
       }
     ],
     "minimo_predial": null,
-    "comentarios": "Art. 10: el impuesto se determina sobre el valor catastral. La ley establece tarifas paralelas por grupo: 1.5 al millar anual para predios urbanos y suburbanos; 1.5 al millar anual para predios rústicos; y 3.00 al millar para predios urbanos baldíos. No se reportan cuotas fijas adicionales ni rangos por valor catastral."
+    "comentarios": "Art. 10: el impuesto se calcula sobre el valor catastral. Tarifa principal con tasas al millar por categoría: 1.5 al millar para predios urbanos y suburbanos; 1.5 al millar anual para predios rústicos; 3.00 al millar para predios urbanos baldíos. No se observan rangos por valor catastral ni cuota fija adicional."
   },
   "_meta": {
     "fuente": "txt",
@@ -39,10 +39,12 @@
     "requiere_revision": false,
     "escalado": false,
     "razon": null,
+    "usado_reocr": false,
+    "usado_vision": false,
     "tokens": {
-      "input": 5118,
-      "output": 280,
-      "cached": 3840
+      "input": 6335,
+      "output": 279,
+      "cached": 5888
     },
     "cvegeo": "28025",
     "estado": "tamaulipas",

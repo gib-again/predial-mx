@@ -1,101 +1,59 @@
 {
   "predial": {
-    "tipo_esquema": "mixto",
+    "tipo_esquema": "progresivo",
     "tabla": [
       {
         "n_rango": 1,
-        "inferior": 0.01,
+        "inferior": 0.0,
         "superior": 5000.0,
-        "columnas": [
-          {
-            "nombre": "general",
-            "valor": 70.0,
-            "tipo": "cuota_fija",
-            "unidad": "pesos"
-          }
-        ]
+        "cuota_fija": 70.0,
+        "tasa_marginal": 1e-05
       },
       {
         "n_rango": 2,
         "inferior": 5000.01,
         "superior": 7500.0,
-        "columnas": [
-          {
-            "nombre": "general",
-            "valor": 100.0,
-            "tipo": "cuota_fija",
-            "unidad": "pesos"
-          }
-        ]
+        "cuota_fija": 100.0,
+        "tasa_marginal": 1e-05
       },
       {
         "n_rango": 3,
         "inferior": 7500.01,
         "superior": 10500.0,
-        "columnas": [
-          {
-            "nombre": "general",
-            "valor": 130.0,
-            "tipo": "cuota_fija",
-            "unidad": "pesos"
-          }
-        ]
+        "cuota_fija": 130.0,
+        "tasa_marginal": 1e-05
       },
       {
         "n_rango": 4,
         "inferior": 10500.01,
         "superior": 12500.0,
-        "columnas": [
-          {
-            "nombre": "general",
-            "valor": 160.0,
-            "tipo": "cuota_fija",
-            "unidad": "pesos"
-          }
-        ]
+        "cuota_fija": 160.0,
+        "tasa_marginal": 1e-05
       },
       {
         "n_rango": 5,
         "inferior": 12500.01,
         "superior": 15000.0,
-        "columnas": [
-          {
-            "nombre": "general",
-            "valor": 190.0,
-            "tipo": "cuota_fija",
-            "unidad": "pesos"
-          }
-        ]
+        "cuota_fija": 190.0,
+        "tasa_marginal": 1e-05
       },
       {
         "n_rango": 6,
         "inferior": 15000.0,
         "superior": 20000.0,
-        "columnas": [
-          {
-            "nombre": "general",
-            "valor": 230.0,
-            "tipo": "cuota_fija",
-            "unidad": "pesos"
-          }
-        ]
+        "cuota_fija": 230.0,
+        "tasa_marginal": 1e-05
       },
       {
         "n_rango": 7,
         "inferior": 20000.0,
         "superior": null,
-        "columnas": [
-          {
-            "nombre": "general",
-            "valor": 270.0,
-            "tipo": "cuota_fija",
-            "unidad": "pesos"
-          }
-        ]
+        "cuota_fija": 270.0,
+        "tasa_marginal": 1e-05
       }
     ],
     "minimo_predial": null,
-    "comentarios": "Art. 13: la tarifa principal del impuesto predial sobre valor catastral es una tabla por rangos con cuota fija anual en pesos y un factor para aplicar al excedente indicado como 0.001 %, que se transcribe como estructura mixta porque la unidad del factor no es homogénea con la cuota fija. Se normalizó la continuidad de rangos contiguos conforme a la instrucción (0.01–5000.00, 5000.01–7500.00, etc.); el tramo que en el texto aparece como 15500.01–20000.00 se ajustó a 15000–20000 para evitar el hueco detectado. Tarifa paralela: todo predio destinado a la producción agropecuaria paga 10 al millar anual sobre el valor registrado o catastral; se deja fuera de la tabla principal por ser una tarifa separada. Se ignoran los valores unitarios de terreno y construcción por no ser tarifa del predial."
+    "comentarios": "Art. 13: tarifa principal por valor catastral con cuotas fijas y factor marginal de 0.001% (0.00001) sobre el excedente del límite inferior. Se normalizaron los rangos para hacerlos contiguos; el texto presenta un salto de 15,000.01 a 15,500.01, pero se dejó continuo a partir de 15,000 conforme a la validación solicitada. Tarifa paralela: predios destinados a producción agropecuaria pagan 10 al millar anual sobre el valor registrado o catastral; no se incluye en la tabla principal por ser una tarifa paralela. También aparecen tablas de valores unitarios por m2/ha para catastro, que no forman parte de la tarifa del impuesto predial."
   },
   "_meta": {
     "fuente": "txt",
@@ -106,10 +64,12 @@
     "requiere_revision": false,
     "escalado": false,
     "razon": null,
+    "usado_reocr": false,
+    "usado_vision": false,
     "tokens": {
-      "input": 12590,
-      "output": 990,
-      "cached": 8704
+      "input": 15235,
+      "output": 882,
+      "cached": 11776
     },
     "cvegeo": "31019",
     "estado": "yucatan",

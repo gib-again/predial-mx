@@ -1,101 +1,179 @@
 {
   "predial": {
-    "tipo_esquema": "progresivo",
+    "tipo_esquema": "mixto",
     "tabla": [
       {
         "n_rango": 1,
         "inferior": 0.01,
         "superior": 320000.0,
-        "cuota_fija": 0.0,
-        "tasa_marginal": 0.002
+        "columnas": [
+          {
+            "nombre": "general",
+            "valor": 0.002,
+            "tipo": "tasa_marginal",
+            "unidad": "al_millar"
+          }
+        ]
       },
       {
         "n_rango": 2,
         "inferior": 320000.01,
         "superior": 420000.0,
-        "cuota_fija": 640.0,
-        "tasa_marginal": 0.00205
+        "columnas": [
+          {
+            "nombre": "general",
+            "valor": 0.00205,
+            "tipo": "tasa_marginal",
+            "unidad": "al_millar"
+          }
+        ]
       },
       {
         "n_rango": 3,
         "inferior": 420000.01,
         "superior": 530000.0,
-        "cuota_fija": 845.0,
-        "tasa_marginal": 0.0021
+        "columnas": [
+          {
+            "nombre": "general",
+            "valor": 0.0021,
+            "tipo": "tasa_marginal",
+            "unidad": "al_millar"
+          }
+        ]
       },
       {
         "n_rango": 4,
         "inferior": 530000.01,
         "superior": 680000.0,
-        "cuota_fija": 1076.0,
-        "tasa_marginal": 0.00215
+        "columnas": [
+          {
+            "nombre": "general",
+            "valor": 0.00215,
+            "tipo": "tasa_marginal",
+            "unidad": "al_millar"
+          }
+        ]
       },
       {
         "n_rango": 5,
         "inferior": 680000.01,
         "superior": 830000.0,
-        "cuota_fija": 1398.5,
-        "tasa_marginal": 0.00221
+        "columnas": [
+          {
+            "nombre": "general",
+            "valor": 0.00221,
+            "tipo": "tasa_marginal",
+            "unidad": "al_millar"
+          }
+        ]
       },
       {
         "n_rango": 6,
         "inferior": 830000.01,
         "superior": 1020000.0,
-        "cuota_fija": 1730.0,
-        "tasa_marginal": 0.00226
+        "columnas": [
+          {
+            "nombre": "general",
+            "valor": 0.00226,
+            "tipo": "tasa_marginal",
+            "unidad": "al_millar"
+          }
+        ]
       },
       {
         "n_rango": 7,
         "inferior": 1020000.01,
         "superior": 1250000.0,
-        "cuota_fija": 2159.4,
-        "tasa_marginal": 0.00232
+        "columnas": [
+          {
+            "nombre": "general",
+            "valor": 0.00232,
+            "tipo": "tasa_marginal",
+            "unidad": "al_millar"
+          }
+        ]
       },
       {
         "n_rango": 8,
         "inferior": 1250000.01,
         "superior": 1620000.0,
-        "cuota_fija": 2693.0,
-        "tasa_marginal": 0.00238
+        "columnas": [
+          {
+            "nombre": "general",
+            "valor": 0.00238,
+            "tipo": "tasa_marginal",
+            "unidad": "al_millar"
+          }
+        ]
       },
       {
         "n_rango": 9,
         "inferior": 1620000.01,
         "superior": 2350000.0,
-        "cuota_fija": 3573.6,
-        "tasa_marginal": 0.00244
+        "columnas": [
+          {
+            "nombre": "general",
+            "valor": 0.00244,
+            "tipo": "tasa_marginal",
+            "unidad": "al_millar"
+          }
+        ]
       },
       {
         "n_rango": 10,
         "inferior": 2350000.01,
         "superior": 4100000.0,
-        "cuota_fija": 5354.8,
-        "tasa_marginal": 0.0025
+        "columnas": [
+          {
+            "nombre": "general",
+            "valor": 0.0025,
+            "tipo": "tasa_marginal",
+            "unidad": "al_millar"
+          }
+        ]
       },
       {
         "n_rango": 11,
         "inferior": 4100000.01,
         "superior": 9860000.0,
-        "cuota_fija": 9729.8,
-        "tasa_marginal": 0.00256
+        "columnas": [
+          {
+            "nombre": "general",
+            "valor": 0.00256,
+            "tipo": "tasa_marginal",
+            "unidad": "al_millar"
+          }
+        ]
       },
       {
         "n_rango": 12,
         "inferior": 9860000.01,
         "superior": 29250000.0,
-        "cuota_fija": 24475.4,
-        "tasa_marginal": 0.00262
+        "columnas": [
+          {
+            "nombre": "general",
+            "valor": 0.00262,
+            "tipo": "tasa_marginal",
+            "unidad": "al_millar"
+          }
+        ]
       },
       {
         "n_rango": 13,
         "inferior": 29250000.01,
         "superior": null,
-        "cuota_fija": 75277.2,
-        "tasa_marginal": 0.00269
+        "columnas": [
+          {
+            "nombre": "general",
+            "valor": 0.00269,
+            "tipo": "tasa_marginal",
+            "unidad": "al_millar"
+          }
+        ]
       }
     ],
     "minimo_predial": null,
-    "comentarios": "Art. 4 fraccs. I y II establecen dos tablas progresivas con la misma mecánica (cuota fija + tasa marginal sobre el excedente) para inmuebles urbanos, suburbanos y rústicos con edificaciones, y para los mismos inmuebles sin edificaciones. Se transcribe la fracción I como tabla principal por ser la estructura tarifaria completa; la fracción II también es progresiva y se menciona como tarifa paralela: para sin edificaciones las tasas van de 0.00300000 a 0.00482516 con sus cuotas fijas correspondientes, aplicando la fórmula ((VF-LI)*T)+CF."
+    "comentarios": "Art. 4 fraccs. I y II: la mecánica principal del predial es progresiva por valor fiscal con cuota fija + tasa marginal sobre el excedente. Fracc. I aplica a inmuebles urbanos, suburbanos y rústicos con edificaciones; fracc. II a inmuebles urbanos, suburbanos y rústicos sin edificaciones. El documento también contiene valores unitarios de suelo en Art. 5, pero eso es catastro/valoración y no se extrae como mecánica del impuesto. La tabla se transcribe como una sola estructura homogénea de brackets con tasa marginal y cuota fija, distinguiendo las dos fracciones en el comentario porque comparten la misma fórmula y forma de cálculo."
   },
   "_meta": {
     "fuente": "txt",
@@ -106,10 +184,12 @@
     "requiere_revision": false,
     "escalado": false,
     "razon": null,
+    "usado_reocr": false,
+    "usado_vision": false,
     "tokens": {
-      "input": 10715,
-      "output": 707,
-      "cached": 3840
+      "input": 11932,
+      "output": 865,
+      "cached": 5888
     },
     "cvegeo": "11007",
     "estado": "guanajuato",

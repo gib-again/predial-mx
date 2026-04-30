@@ -2,10 +2,10 @@
   "predial": {
     "tipo_esquema": "otro_no_clasificado",
     "categoria": "segmento_vacio",
-    "descripcion_estructural": "El texto proporcionado inicia a media frase y corresponde a reglas de diferimiento/actualización del impuesto, pero no incluye la tabla o mecánica tarifaria del Impuesto Predial. No hay brackets, cuotas, tasas al millar ni una cuota fija identificable para transcribir.",
+    "descripcion_estructural": "El texto proporcionado no contiene la mecánica de cálculo del impuesto predial; sólo aparecen disposiciones sobre diferimiento del pago y una referencia incompleta a adquisiciones de inmuebles. No hay tabla, cuota, tasa ni brackets extraíbles para estructurar el predial.",
     "tabla_cruda": [],
     "minimo_predial": null,
-    "comentarios": "Se omitió cualquier interpretación; el segmento está truncado y no contiene la estructura de cálculo del predial."
+    "comentarios": "Segmento truncado/incompleto; no se observa tarifa del impuesto predial."
   },
   "_meta": {
     "fuente": "txt",
@@ -16,10 +16,12 @@
     "requiere_revision": true,
     "escalado": false,
     "razon": "clasificado_como_otro_no_clasificado",
+    "usado_reocr": true,
+    "usado_vision": true,
     "tokens": {
-      "input": 5062,
-      "output": 137,
-      "cached": 3840
+      "input": 21811,
+      "output": 470,
+      "cached": 11776
     },
     "cvegeo": "05020",
     "estado": "coahuila",

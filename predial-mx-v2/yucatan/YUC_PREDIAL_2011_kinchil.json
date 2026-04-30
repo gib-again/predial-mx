@@ -137,7 +137,7 @@
       }
     ],
     "minimo_predial": null,
-    "comentarios": "Art. 12: para predios urbanos con o sin construcción hay una tabla por rangos de valor catastral con cuota fija anual más factor del 0.25% sobre el excedente del límite inferior; además, para predios rústicos con o sin construcción se cobra una cuota de $14.00 por hectárea como tarifa paralela, por lo que se clasifica como mixto. Se ignora el descuento del Art. 13."
+    "comentarios": "Art. 12(a): predios urbanos con o sin construcción usan tabla por rangos de valor catastral con cuota fija al límite inferior más 0.25% sobre el excedente, por eso se clasifica como mixto. Art. 12(b): predios rústicos con o sin construcción pagan $14.00 por hectárea; es una tarifa paralela de base superficial y no se integra en la tabla principal. Art. 13 menciona descuento por pago anual en el primer bimestre, ignorado conforme a instrucción."
   },
   "_meta": {
     "fuente": "txt",
@@ -148,10 +148,12 @@
     "requiere_revision": false,
     "escalado": false,
     "razon": null,
+    "usado_reocr": false,
+    "usado_vision": false,
     "tokens": {
-      "input": 5325,
-      "output": 638,
-      "cached": 3840
+      "input": 6542,
+      "output": 657,
+      "cached": 5888
     },
     "cvegeo": "31044",
     "estado": "yucatan",

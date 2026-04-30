@@ -1,18 +1,33 @@
 {
-  "predial": null,
+  "predial": {
+    "tipo_esquema": "tasa_unica",
+    "tabla": [
+      {
+        "descripcion": "Impuesto predial sobre valor catastral",
+        "tasa": 0.001,
+        "base_calculo": "valor_catastral",
+        "unidad": "porcentaje",
+        "cuota_fija_adicional": null
+      }
+    ],
+    "minimo_predial": null,
+    "comentarios": "Art. 13: el impuesto se determina multiplicando el valor catastral por el 0.10 por ciento. Además, si el valor catastral no se encuentra actualizado en el padrón catastral, se aplica una tarifa fija anual para predios urbanos de $100.00 y predios rústicos de $60.00; esta tarifa alternativa se documenta como mecánica secundaria porque el texto la condiciona a la falta de actualización del padrón. Art. 14 contiene descuento y se ignora."
+  },
   "_meta": {
     "fuente": "txt",
-    "modelo": "gpt-5.4"
+    "modelo": "gpt-5.4-mini"
   },
   "_meta_v2": {
-    "intentos": 3,
-    "requiere_revision": true,
-    "escalado": true,
-    "razon": "valido_3x_fallido | mini_e1=  • predial.mixto: Value error, bracket 1: superior=None solo permitido en el último rango | mini_e2=  • predial.mixto: Value error, bracket 1: superior=None solo permitido en el último rango | full_e3=  • predial.mixto: Value error, bracket 1: superior=None solo permitido en el último rango",
+    "intentos": 1,
+    "requiere_revision": false,
+    "escalado": false,
+    "razon": null,
+    "usado_reocr": false,
+    "usado_vision": false,
     "tokens": {
-      "input": 15915,
-      "output": 777,
-      "cached": 13568
+      "input": 6213,
+      "output": 194,
+      "cached": 5888
     },
     "cvegeo": "31082",
     "estado": "yucatan",

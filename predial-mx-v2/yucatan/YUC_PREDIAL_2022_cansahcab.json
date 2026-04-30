@@ -24,31 +24,29 @@
             "nombre": "general",
             "valor": 0.00025,
             "tipo": "tasa_marginal",
-            "unidad": "porcentaje"
+            "unidad": "al_millar"
           }
         ]
       }
     ],
-    "minimo_predial": {
-      "monto": 1.0,
-      "periodicidad": "anual",
-      "unidad": "uma"
-    },
-    "comentarios": "Artículo 4 establece una estructura heterogénea para predios determinados con base en valor catastral: para valor catastral igual o menor a 200,000.00 se paga cuota fija de 1 UMA; para la tarifa general del impuesto predial se aplica el factor 0.00025 al valor catastral actualizado. Se clasifica como mixto porque combina una cuota fija y una tasa sobre el valor catastral en brackets. Además, el mismo artículo prevé una tarifa paralela para predios rústicos por superficie: de 1 a 20 metros cuadrados, 2.23 UMA; de 21 a 40 metros cuadrados, 3.34 UMA; de 41 metros cuadrados en adelante, 4.46 UMA, la cual no se incluye en la tabla principal por ser tarifa separada. También señala que cuando no se pueda determinar el pago con base en el valor catastral, se aplicará una cuota fija anual de 1 UMA por predio."
+    "minimo_predial": null,
+    "comentarios": "Art. 4: mecánica principal híbrida sobre valor catastral actualizado: para predios con valor catastral igual o menor a $200,000.00 se paga cuota fija de 1 UMA; para el resto se multiplica el valor catastral por 0.00025. Además, el propio artículo prevé tarifa paralela para predios rústicos por superficie (1 a 20 m²: 2.23 UMA; 21 a 40 m²: 3.34 UMA; 41 m² en adelante: 4.46 UMA) y una cuota fija anual de 1 UMA cuando no pueda determinarse el pago con base en valor catastral. Art. 7 establece predial sobre rentas o frutos civiles con pago mensual: habitacional 4%, comercial 5% y radio base de telefonía 5% sobre la contraprestación; se documenta como tarifa secundaria/paralela, no como mecánica principal."
   },
   "_meta": {
     "fuente": "txt",
-    "modelo": "gpt-5.4"
+    "modelo": "gpt-5.4-mini"
   },
   "_meta_v2": {
-    "intentos": 3,
+    "intentos": 1,
     "requiere_revision": false,
-    "escalado": true,
-    "razon": "escalado_a_gpt-5.4_tras_2x_mini_fallido",
+    "escalado": false,
+    "razon": null,
+    "usado_reocr": false,
+    "usado_vision": false,
     "tokens": {
-      "input": 18759,
-      "output": 1314,
-      "cached": 11520
+      "input": 7161,
+      "output": 338,
+      "cached": 5888
     },
     "cvegeo": "31009",
     "estado": "yucatan",

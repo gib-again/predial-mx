@@ -2,10 +2,10 @@
   "predial": {
     "tipo_esquema": "otro_no_clasificado",
     "categoria": "segmento_vacio",
-    "descripcion_estructural": "El segmento proporcionado sólo contiene el encabezado del capítulo 'DEL IMPUESTO PREDIAL' y no incluye ningún artículo, tabla, cuota, tasa, rango o mecánica de cálculo. No es posible clasificar la estructura tarifaria con el texto disponible.",
+    "descripcion_estructural": "El segmento proporcionado sólo contiene el encabezado de la sección \"Del Impuesto Predial\" y no incluye artículo, tabla, rangos, tasas ni cuota aplicable. No es posible transcribir la mecánica de cálculo con el contenido recibido.",
     "tabla_cruda": [],
     "minimo_predial": null,
-    "comentarios": "Se recibió un fragmento vacío de contenido tarifario; no hay información transcribible de mecánica del impuesto."
+    "comentarios": ""
   },
   "_meta": {
     "fuente": "txt",
@@ -16,10 +16,12 @@
     "requiere_revision": true,
     "escalado": false,
     "razon": "clasificado_como_otro_no_clasificado",
+    "usado_reocr": true,
+    "usado_vision": true,
     "tokens": {
-      "input": 4857,
-      "output": 134,
-      "cached": 3840
+      "input": 21286,
+      "output": 416,
+      "cached": 17664
     },
     "cvegeo": "05023",
     "estado": "coahuila",

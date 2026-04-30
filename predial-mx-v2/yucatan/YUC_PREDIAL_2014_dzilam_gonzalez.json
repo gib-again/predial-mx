@@ -1,18 +1,33 @@
 {
-  "predial": null,
+  "predial": {
+    "tipo_esquema": "tasa_unica",
+    "tabla": [
+      {
+        "descripcion": "Tasa del 0.20 % sobre el valor catastral",
+        "tasa": 0.2,
+        "base_calculo": "valor_catastral",
+        "unidad": "porcentaje",
+        "cuota_fija_adicional": null
+      }
+    ],
+    "minimo_predial": null,
+    "comentarios": "El artículo 13 establece como mecánica principal del impuesto predial una tasa única de 0.20 % sobre el valor catastral de las secciones 1 a 4. Cuando no se pudiera determinar el valor catastral, señala cuotas fijas de respaldo: predio urbano 80.00 pesos y predio rústico 65.00 pesos. La tabla de valores unitarios de terreno 2014 y los valores por hectárea para rústicos son catastrales, no la tarifa principal del impuesto predial. El artículo 15 establece una tarifa separada sobre rentas o frutos civiles mensuales de 2 % para casas habitación y 2 % para actividades comerciales, pero no se incorpora en la tabla principal por no ser la mecánica predominante del predial sobre valor catastral."
+  },
   "_meta": {
     "fuente": "txt",
     "modelo": "gpt-5.4"
   },
   "_meta_v2": {
     "intentos": 3,
-    "requiere_revision": true,
+    "requiere_revision": false,
     "escalado": true,
-    "razon": "valido_3x_fallido | mini_e1=  • predial.mixto: Value error, bracket 1: superior=None solo permitido en el último rango | mini_e2=  • predial.mixto: Value error, bracket 1: superior=None solo permitido en el último rango | full_e3=  • predial.mixto: Value error, bracket 1: superior=None solo permitido en el último rango",
+    "razon": "escalado_a_gpt-5.4_tras_2x_mini_fallido",
+    "usado_reocr": false,
+    "usado_vision": false,
     "tokens": {
-      "input": 18606,
-      "output": 990,
-      "cached": 13568
+      "input": 22679,
+      "output": 873,
+      "cached": 17664
     },
     "cvegeo": "31029",
     "estado": "yucatan",

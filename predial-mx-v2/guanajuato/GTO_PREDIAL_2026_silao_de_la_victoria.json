@@ -1,15 +1,21 @@
 {
   "predial": {
-    "tipo_esquema": "otro_no_clasificado",
-    "categoria": "municipio_sin_impuesto",
-    "descripcion_estructural": "El segmento proporcionado sólo establece una cuota mínima anual del impuesto predial y una disposición de descuento por pronto pago. No contiene una mecánica de cálculo del impuesto (tarifa, rangos, tasa única o cuotas escalonadas) para determinar la base del predial.",
-    "tabla_cruda": [],
+    "tipo_esquema": "cuota_fija_simple",
+    "tabla": [
+      {
+        "descripcion": "Cuota mínima anual del impuesto predial 2026",
+        "monto": 429.71,
+        "periodicidad": "anual",
+        "unidad": "pesos"
+      }
+    ],
+    "tarifas_secundarias": null,
     "minimo_predial": {
       "monto": 429.71,
       "periodicidad": "anual",
       "unidad": "pesos"
     },
-    "comentarios": "Se transcribe únicamente la cuota mínima anual del Art. 42; el Art. 43 contiene descuentos y se ignora conforme a la instrucción."
+    "comentarios": "Art. 42 establece una cuota mínima anual única de $429.71 para 2026. El texto proporcionado no contiene tabla de tarifas por valor catastral, categorías o rangos para la mecánica principal del predial; sólo menciona un beneficio para predios en comodato y descuentos por pronto pago, que se ignoran conforme a la instrucción."
   },
   "_meta": {
     "fuente": "txt",
@@ -17,13 +23,15 @@
   },
   "_meta_v2": {
     "intentos": 1,
-    "requiere_revision": true,
+    "requiere_revision": false,
     "escalado": false,
-    "razon": "clasificado_como_otro_no_clasificado",
+    "razon": null,
+    "usado_reocr": false,
+    "usado_vision": false,
     "tokens": {
-      "input": 5143,
-      "output": 164,
-      "cached": 3840
+      "input": 6360,
+      "output": 180,
+      "cached": 5888
     },
     "cvegeo": "11037",
     "estado": "guanajuato",

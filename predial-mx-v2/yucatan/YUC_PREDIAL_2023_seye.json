@@ -46,11 +46,11 @@
       }
     ],
     "minimo_predial": {
-      "monto": 52.0,
+      "monto": 37.0,
       "periodicidad": "anual",
       "unidad": "pesos"
     },
-    "comentarios": "Art. 13 establece una tarifa progresiva por rangos de valor catastral con cuota fija anual y factor para aplicar al excedente del límite inferior. Se omitieron descuentos del Art. 14. Además, el mismo artículo indica que cuando no se pueda determinar el valor se cobrará cuota fija de $52.00 para predio urbano y $37.00 para predio rústico; y que todo predio destinado a la producción agropecuaria pagará 10 al millar anual sobre el valor registrado o catastral. Estas disposiciones se reportan como tarifa paralela/criterio especial y no se integran en la tabla principal."
+    "comentarios": "Art. 13: La mecánica principal del predial es una tabla progresiva por valor catastral con cuota fija anual y factor para aplicar al excedente del límite inferior. Cuando no se pueda determinar, la ley fija cuotas anuales de $52.00 para predio urbano y $37.00 para predio rústico; se documenta como mínimo predial/importe supletorio. Además, el texto establece una tarifa paralela para predios destinados a la producción agropecuaria: 10 al millar anual sobre el valor registrado o catastral, sin exceder la legislación agraria federal para terrenos ejidales."
   },
   "_meta": {
     "fuente": "txt",
@@ -61,10 +61,12 @@
     "requiere_revision": false,
     "escalado": false,
     "razon": null,
+    "usado_reocr": false,
+    "usado_vision": false,
     "tokens": {
-      "input": 6562,
-      "output": 421,
-      "cached": 3840
+      "input": 7779,
+      "output": 419,
+      "cached": 5888
     },
     "cvegeo": "31067",
     "estado": "yucatan",

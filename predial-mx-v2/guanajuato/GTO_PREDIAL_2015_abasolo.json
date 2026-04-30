@@ -3,16 +3,16 @@
     "tipo_esquema": "tarifa_millar",
     "tabla": [
       {
-        "grupo": "urbano",
-        "clave": "urbanos_y_suburbanos_con_edificaciones",
+        "grupo": "general",
+        "clave": "inmuebles_urbanos_y_suburbanos_con_edificaciones",
         "descripcion": "Inmuebles urbanos y suburbanos con edificaciones",
         "tasa_millar": 0.0024,
         "periodicidad": "anual",
         "cuota_fija_adicional": null
       },
       {
-        "grupo": "urbano",
-        "clave": "urbanos_y_suburbanos_sin_edificaciones",
+        "grupo": "general",
+        "clave": "inmuebles_urbanos_y_suburbanos_sin_edificaciones",
         "descripcion": "Inmuebles urbanos y suburbanos sin edificaciones",
         "tasa_millar": 0.0045,
         "periodicidad": "anual",
@@ -20,7 +20,7 @@
       },
       {
         "grupo": "rustico",
-        "clave": "rusticos_general",
+        "clave": "inmuebles_rusticos",
         "descripcion": "Inmuebles rústicos",
         "tasa_millar": 0.0018,
         "periodicidad": "anual",
@@ -28,7 +28,7 @@
       }
     ],
     "minimo_predial": null,
-    "comentarios": "Art. 4 establece tasas anuales al millar por categoría de inmueble: urbanos y suburbanos con edificaciones 2.4 al millar; urbanos y suburbanos sin edificaciones 4.5 al millar; rústicos 1.8 al millar. En el texto también aparecen tasas históricas para años anteriores (2002-2014, anteriores a 2002 y anteriores a 1993), pero no se transcriben como mecánica vigente 2015. La sección de valores unitarios (arts. 5 y 6) corresponde a catastro/avalúo, no a la tarifa del impuesto."
+    "comentarios": "Artículo 4 establece tasas anuales al millar diferenciadas por tipo de inmueble: urbanos y suburbanos con edificaciones (2.4 al millar), urbanos y suburbanos sin edificaciones (4.5 al millar) e inmuebles rústicos (1.8 al millar). El texto también muestra una tabla histórica para años anteriores a 2015, pero la mecánica aplicable al ejercicio 2015 es la del artículo 4. Los artículos 5 y 6 corresponden a valores unitarios y criterios de avalúo, no a la mecánica tarifaria del impuesto."
   },
   "_meta": {
     "fuente": "txt",
@@ -39,10 +39,12 @@
     "requiere_revision": false,
     "escalado": false,
     "razon": null,
+    "usado_reocr": false,
+    "usado_vision": false,
     "tokens": {
-      "input": 7436,
-      "output": 335,
-      "cached": 3840
+      "input": 8653,
+      "output": 336,
+      "cached": 5888
     },
     "cvegeo": "11001",
     "estado": "guanajuato",

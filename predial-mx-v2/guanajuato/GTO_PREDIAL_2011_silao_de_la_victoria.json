@@ -5,7 +5,7 @@
       {
         "grupo": "urbano",
         "clave": "urbano_con_edificaciones",
-        "descripcion": "Inmuebles urbanos y suburbanos con edificaciones",
+        "descripcion": "Inmuebles urbanos y suburbanos con edificaciones; ejercicio 2011 conforme a la tabla del Art. 4.",
         "tasa_millar": 0.0024,
         "periodicidad": "anual",
         "cuota_fija_adicional": null
@@ -13,7 +13,7 @@
       {
         "grupo": "urbano",
         "clave": "urbano_sin_edificaciones",
-        "descripcion": "Inmuebles urbanos y suburbanos sin edificaciones",
+        "descripcion": "Inmuebles urbanos y suburbanos sin edificaciones; ejercicio 2011 conforme a la tabla del Art. 4.",
         "tasa_millar": 0.0045,
         "periodicidad": "anual",
         "cuota_fija_adicional": null
@@ -21,14 +21,14 @@
       {
         "grupo": "rustico",
         "clave": "rustico",
-        "descripcion": "Inmuebles rústicos",
+        "descripcion": "Inmuebles rústicos; ejercicio 2011 conforme a la tabla del Art. 4.",
         "tasa_millar": 0.0018,
         "periodicidad": "anual",
         "cuota_fija_adicional": null
       }
     ],
     "minimo_predial": null,
-    "comentarios": "Artículo 4 establece tasas anuales al millar según tipo de inmueble: urbanos y suburbanos con edificaciones 2.4 al millar, sin edificaciones 4.5 al millar, y rústicos 1.8 al millar. El texto también muestra referencias históricas para años anteriores (2002-2010 y anterior a 1993), pero no se extraen por corresponder a ejercicios distintos. La mecánica de cálculo se complementa con los valores unitarios de suelo y construcción de los artículos 5 y 6, que sirven para determinar el valor catastral, no para modificar la tasa del predial."
+    "comentarios": "Artículo 4 establece tasas anuales al millar sobre el valor catastral por categoría de predio: urbanos y suburbanos con edificaciones 2.4 al millar, urbanos y suburbanos sin edificaciones 4.5 al millar, y rústicos 1.8 al millar. El texto también muestra tasas históricas para inmuebles determinados o modificados en años anteriores, pero la mecánica principal de 2011 se transcribe con las tasas vigentes del ejercicio."
   },
   "_meta": {
     "fuente": "txt",
@@ -39,10 +39,12 @@
     "requiere_revision": false,
     "escalado": false,
     "razon": null,
+    "usado_reocr": false,
+    "usado_vision": false,
     "tokens": {
-      "input": 7176,
-      "output": 327,
-      "cached": 3840
+      "input": 8393,
+      "output": 344,
+      "cached": 5888
     },
     "cvegeo": "11037",
     "estado": "guanajuato",

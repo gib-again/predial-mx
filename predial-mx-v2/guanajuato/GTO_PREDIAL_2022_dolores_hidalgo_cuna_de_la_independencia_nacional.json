@@ -134,7 +134,7 @@
       }
     ],
     "minimo_predial": null,
-    "comentarios": "Art. 4 fracc. I y II establecen tasas al millar para inmuebles urbanos/suburbanos sin edificación (4.50 al millar) y rústicos (1.8 al millar) con valor determinado o modificado en 2022; esas son tarifas paralelas no incluidas en la tabla principal. La estructura principal es la tabla 2 del Art. 4 para inmuebles urbanos y suburbanos con edificación, con brackets de valor catastral, cuota fija y tasa marginal; se transcribe como esquema mixto porque combina cuota fija y tasa marginal por rango."
+    "comentarios": "Art. 4: mecánica principal mixta. Para inmuebles urbanos y suburbanos con edificación que cuenten con valor determinado o modificado en 2022 se aplica la TABLA 2 por rangos de valor catastral con cuota fija y tasa marginal sobre el excedente; la tabla combina cuota fija en pesos con tasa marginal porcentual, por lo que no es progresivo ni cuota fija escalonada. Art. 4 fraccs. I y II: inmuebles urbanos/suburbanos sin edificación pagan 4.50 al millar y los rústicos 1.8 al millar; Art. 4 fracc. III remite a la TABLA 1 para valores 2021 y anteriores, con tasas al millar por antigüedad y tipo de inmueble (urbano/suburbano con o sin edificación y rústico). Estas tarifas paralelas no se mezclan en la tabla principal por ser regímenes separados. Se ignoran Art. 5 y 6 por tratarse de valores unitarios y criterios de avalúo, no de cálculo del impuesto."
   },
   "_meta": {
     "fuente": "txt",
@@ -145,10 +145,12 @@
     "requiere_revision": false,
     "escalado": false,
     "razon": null,
+    "usado_reocr": false,
+    "usado_vision": false,
     "tokens": {
-      "input": 8206,
-      "output": 677,
-      "cached": 3840
+      "input": 9423,
+      "output": 783,
+      "cached": 5888
     },
     "cvegeo": "11014",
     "estado": "guanajuato",

@@ -39,7 +39,7 @@
       }
     ],
     "minimo_predial": null,
-    "comentarios": "Art. 6: impuesto predial sobre valor catastral con tabla de brackets que incluye cuota fija anual más factor aplicado al excedente del límite inferior. La sección de valores unitarios de terreno y construcción se ignora por ser catastro, no tarifa. Art. 7 establece predial sobre rentas o frutos civiles (habitacional 2% y comercial 5% mensual sobre la contraprestación), que se trata como tarifa paralela y no se integra en la tabla principal por ser una base distinta."
+    "comentarios": "Art. 6: impuesto predial sobre valor catastral con tabla progresiva de cuota fija anual + factor sobre el excedente del límite inferior. Art. 7: cuando se cause sobre rentas o frutos civiles, se paga mensualmente sobre el monto de la contraprestación con tasas secundarias de 2% para predio habitacional y 5% para comercial; se documentan solo como tarifa secundaria no estructural."
   },
   "_meta": {
     "fuente": "txt",
@@ -50,10 +50,12 @@
     "requiere_revision": false,
     "escalado": false,
     "razon": null,
+    "usado_reocr": false,
+    "usado_vision": false,
     "tokens": {
-      "input": 6075,
-      "output": 335,
-      "cached": 3840
+      "input": 7292,
+      "output": 319,
+      "cached": 5888
     },
     "cvegeo": "31049",
     "estado": "yucatan",

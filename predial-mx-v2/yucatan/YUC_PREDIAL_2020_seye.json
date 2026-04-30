@@ -46,7 +46,7 @@
       }
     ],
     "minimo_predial": null,
-    "comentarios": "Art. 13: tarifa progresiva anual por valor catastral con cuota fija y factor aplicable al excedente del límite inferior. Tarifa paralela adicional para predios destinados a la producción agropecuaria: 10 al millar anual sobre el valor registrado o catastral; se describe fuera de la tabla principal por ser una tarifa separada. Cuando no se pueda determinar el valor, se cobra cuota fija: predio urbano $50.00 y predio rústico $35.00."
+    "comentarios": "Art. 13: tarifa progresiva anual sobre valor catastral con cuota fija y factor sobre el excedente del límite inferior. Regla para cuando no se pueda determinar: cuota fija de $50.00 para predio urbano y $35.00 para predio rústico; se documenta como comentario por ser regla secundaria. También se establece que todo predio destinado a la producción agropecuaria paga 10 al millar anual sobre el valor registrado o catastral, con tope de legislación agraria federal; se documenta como tarifa paralela secundaria. Se ignoran descuentos del Art. 14."
   },
   "_meta": {
     "fuente": "txt",
@@ -57,10 +57,12 @@
     "requiere_revision": false,
     "escalado": false,
     "razon": null,
+    "usado_reocr": false,
+    "usado_vision": false,
     "tokens": {
-      "input": 6532,
-      "output": 371,
-      "cached": 3840
+      "input": 7749,
+      "output": 394,
+      "cached": 5888
     },
     "cvegeo": "31067",
     "estado": "yucatan",

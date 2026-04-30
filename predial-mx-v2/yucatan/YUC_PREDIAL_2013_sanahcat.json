@@ -1,26 +1,17 @@
 {
   "predial": {
-    "tipo_esquema": "tarifa_millar",
+    "tipo_esquema": "tasa_unica",
     "tabla": [
       {
-        "grupo": "general",
-        "clave": "predio_causante_por_m2",
-        "descripcion": "El impuesto predial se causará anualmente en razón de 15 centavos por m2 que tenga la extensión de predio causante.",
-        "tasa_millar": 0.0,
-        "periodicidad": "anual",
-        "cuota_fija_adicional": null
-      },
-      {
-        "grupo": "rústico",
-        "clave": "produccion_agropecuaria",
-        "descripcion": "Todo predio destinado a la producción agropecuaria.",
-        "tasa_millar": 10.0,
-        "periodicidad": "anual",
+        "descripcion": "Impuesto predial general por superficie del predio causante",
+        "tasa": 0.15,
+        "base_calculo": "superficie_m2",
+        "unidad": "por_metro_cuadrado",
         "cuota_fija_adicional": null
       }
     ],
     "minimo_predial": null,
-    "comentarios": "Art. 13 establece dos tarifas paralelas sobre bases distintas: (1) 15 centavos por m2 de la extensión del predio causante; (2) predios destinados a la producción agropecuaria pagan 10 al millar anual sobre el valor registrado o catastral. Se transcribe la estructura tarifaria sin interpretar equivalencias entre m2 y valor catastral. Art. 14 contiene un descuento por pronto pago, ignorado conforme a instrucciones."
+    "comentarios": "Art. 13: el impuesto predial se causa anualmente en razón de 15 centavos por m2 de la extensión del predio. Art. 13 también establece una tarifa paralela para todo predio destinado a la producción agropecuaria: 10 al millar anual sobre el valor registrado o catastral; se documenta aquí como tarifa secundaria porque la mecánica principal del texto es una cuota por superficie, no una tabla categórica separada."
   },
   "_meta": {
     "fuente": "txt",
@@ -31,10 +22,12 @@
     "requiere_revision": false,
     "escalado": false,
     "razon": null,
+    "usado_reocr": false,
+    "usado_vision": false,
     "tokens": {
-      "input": 10428,
-      "output": 524,
-      "cached": 8704
+      "input": 13073,
+      "output": 435,
+      "cached": 11776
     },
     "cvegeo": "31064",
     "estado": "yucatan",

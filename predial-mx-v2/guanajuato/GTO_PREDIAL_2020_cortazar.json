@@ -5,100 +5,54 @@
       {
         "grupo": "urbano",
         "clave": "entrada_en_vigor",
-        "descripcion": "Inmuebles urbanos y suburbanos sin edificaciones, a la entrada en vigor de la ley",
+        "descripcion": "A la entrada en vigor de la presente ley",
         "tasa_millar": 0.0024,
         "periodicidad": "anual",
         "cuota_fija_adicional": null
       },
       {
         "grupo": "urbano",
-        "clave": "entrada_en_vigor_edificaciones",
-        "descripcion": "Inmuebles urbanos y suburbanos con edificaciones, a la entrada en vigor de la ley",
-        "tasa_millar": 0.0045,
-        "periodicidad": "anual",
-        "cuota_fija_adicional": null
-      },
-      {
-        "grupo": "urbano",
-        "clave": "entrada_en_vigor_mas_edificaciones",
-        "descripcion": "Inmuebles urbanos y suburbanos con edificaciones, a la entrada en vigor de la ley",
-        "tasa_millar": 0.018,
-        "periodicidad": "anual",
-        "cuota_fija_adicional": null
-      },
-      {
-        "grupo": "urbano",
-        "clave": "2002_a_2019_sin_edificaciones",
-        "descripcion": "Inmuebles urbanos y suburbanos sin edificaciones, durante los años 2002 y hasta 2019 inclusive",
+        "clave": "anios_2002_a_2019",
+        "descripcion": "Durante los años 2002 y hasta 2019 inclusive",
         "tasa_millar": 0.0024,
         "periodicidad": "anual",
         "cuota_fija_adicional": null
       },
       {
         "grupo": "urbano",
-        "clave": "2002_a_2019_edificaciones",
-        "descripcion": "Inmuebles urbanos y suburbanos con edificaciones, durante los años 2002 y hasta 2019 inclusive",
-        "tasa_millar": 0.0045,
-        "periodicidad": "anual",
-        "cuota_fija_adicional": null
-      },
-      {
-        "grupo": "urbano",
-        "clave": "2002_a_2019_mas_edificaciones",
-        "descripcion": "Inmuebles urbanos y suburbanos con edificaciones, durante los años 2002 y hasta 2019 inclusive",
-        "tasa_millar": 0.018,
-        "periodicidad": "anual",
-        "cuota_fija_adicional": null
-      },
-      {
-        "grupo": "urbano",
-        "clave": "anterior_2002_hasta_1993_sin_edificaciones",
-        "descripcion": "Inmuebles urbanos y suburbanos sin edificaciones, con anterioridad al año 2002 y hasta 1993 inclusive",
+        "clave": "anterior_2002_hasta_1993",
+        "descripcion": "Con anterioridad al año 2002 y hasta el 1993, inclusive",
         "tasa_millar": 0.008,
         "periodicidad": "anual",
         "cuota_fija_adicional": null
       },
       {
         "grupo": "urbano",
-        "clave": "anterior_2002_hasta_1993_edificaciones",
-        "descripcion": "Inmuebles urbanos y suburbanos con edificaciones, con anterioridad al año 2002 y hasta 1993 inclusive",
-        "tasa_millar": 0.005,
-        "periodicidad": "anual",
-        "cuota_fija_adicional": null
-      },
-      {
-        "grupo": "urbano",
-        "clave": "anterior_1993_sin_edificaciones",
-        "descripcion": "Inmuebles urbanos y suburbanos sin edificaciones, con anterioridad al año de 1993",
+        "clave": "anterior_1993",
+        "descripcion": "Con anterioridad al año de 1993",
         "tasa_millar": 0.013,
-        "periodicidad": "anual",
-        "cuota_fija_adicional": null
-      },
-      {
-        "grupo": "urbano",
-        "clave": "anterior_1993_edificaciones",
-        "descripcion": "Inmuebles urbanos y suburbanos con edificaciones, con anterioridad al año de 1993",
-        "tasa_millar": 0.012,
         "periodicidad": "anual",
         "cuota_fija_adicional": null
       }
     ],
     "minimo_predial": null,
-    "comentarios": "Artículo 4 contiene una tarifa paralela de tasas al millar para inmuebles urbanos y suburbanos, diferenciada por antigüedad y por si tienen o no edificaciones. No se incluyeron tablas de valores unitarios de los artículos 5 y 6 porque corresponden a valuación catastral, no a la mecánica del impuesto. El texto OCR presenta algunos renglones fragmentados, pero la estructura tarifaria es de catálogo de tasas al millar; se transcriben sólo las tasas identificables en la sección de predial."
+    "comentarios": "Art. 4: tabla de tasas al millar por antigüedad de inmueble urbano y suburbano, con columnas para predios sin edificación, con edificaciones y una tercera columna en el texto OCR que aparece como '18al millar' / '45al millar' / 'Sal millar' / '12 al millar' / '13 al millar'. El OCR está muy deteriorado y no permite separar con fiabilidad todas las columnas ni conservar una mecánica homogénea adicional sin inventar valores; se transcribe únicamente la estructura legible principal como tarifa_millar. Art. 5 contiene valores unitarios de terreno y construcción (catastro) y no se usa para el predial."
   },
   "_meta": {
     "fuente": "txt",
     "modelo": "gpt-5.4-mini"
   },
   "_meta_v2": {
-    "intentos": 1,
+    "intentos": 2,
     "requiere_revision": false,
     "escalado": false,
     "razon": null,
+    "usado_reocr": false,
+    "usado_vision": false,
     "tokens": {
-      "input": 7272,
-      "output": 825,
-      "cached": 3840
+      "input": 17634,
+      "output": 994,
+      "cached": 11776
     },
     "cvegeo": "11011",
     "estado": "guanajuato",

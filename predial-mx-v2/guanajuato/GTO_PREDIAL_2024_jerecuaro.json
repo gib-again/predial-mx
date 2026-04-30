@@ -4,39 +4,71 @@
     "tabla": [
       {
         "grupo": "urbano",
-        "clave": "inmuebles_urbanos_y_suburbanos",
-        "descripcion": "Inmuebles urbanos y suburbanos con valor determinado o modificado en la presente Ley; con edificaciones",
+        "clave": "inmuebles_urbanos_y_suburbanos_actuales",
+        "descripcion": "Inmuebles urbanos y suburbanos con valor determinado o modificado conforme a la presente Ley (edificaciones / sin edificaciones): para los del año de la presente Ley.",
         "tasa_millar": 0.0024,
         "periodicidad": "anual",
         "cuota_fija_adicional": null
       },
       {
         "grupo": "urbano",
-        "clave": "inmuebles_urbanos_y_suburbanos_sin_edificaciones",
-        "descripcion": "Inmuebles urbanos y suburbanos con valor determinado o modificado en la presente Ley; sin edificaciones",
-        "tasa_millar": 0.0045,
+        "clave": "inmuebles_urbanos_y_suburbanos_2002_a_2023",
+        "descripcion": "Inmuebles urbanos y suburbanos durante los años 2002 a 2023, inclusive.",
+        "tasa_millar": 0.0024,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "urbano",
+        "clave": "inmuebles_urbanos_y_suburbanos_1993_a_2001",
+        "descripcion": "Inmuebles urbanos y suburbanos con anterioridad al año 2002 y hasta el año 1993, inclusive.",
+        "tasa_millar": 0.008,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "urbano",
+        "clave": "inmuebles_urbanos_y_suburbanos_anteriores_1992",
+        "descripcion": "Inmuebles urbanos y suburbanos con anterioridad al año de 1992.",
+        "tasa_millar": 0.013,
         "periodicidad": "anual",
         "cuota_fija_adicional": null
       },
       {
         "grupo": "rustico",
-        "clave": "inmuebles_rusticos_con_edificaciones",
-        "descripcion": "Inmuebles rústicos; con edificaciones",
+        "clave": "inmuebles_rusticos_actuales",
+        "descripcion": "Inmuebles rústicos con valor determinado o modificado conforme a la presente Ley: para los del año de la presente Ley.",
         "tasa_millar": 0.0018,
         "periodicidad": "anual",
         "cuota_fija_adicional": null
       },
       {
         "grupo": "rustico",
-        "clave": "inmuebles_rusticos_sin_edificaciones",
-        "descripcion": "Inmuebles rústicos; sin edificaciones",
-        "tasa_millar": 0.003,
+        "clave": "inmuebles_rusticos_2002_a_2023",
+        "descripcion": "Inmuebles rústicos durante los años 2002 a 2023, inclusive.",
+        "tasa_millar": 0.0018,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "rustico",
+        "clave": "inmuebles_rusticos_1993_a_2001",
+        "descripcion": "Inmuebles rústicos con anterioridad al año 2002 y hasta el año 1993, inclusive.",
+        "tasa_millar": 0.006,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "rustico",
+        "clave": "inmuebles_rusticos_anteriores_1992",
+        "descripcion": "Inmuebles rústicos con anterioridad al año de 1992.",
+        "tasa_millar": 0.012,
         "periodicidad": "anual",
         "cuota_fija_adicional": null
       }
     ],
     "minimo_predial": null,
-    "comentarios": "Art. 4 establece tasas anuales al millar por tipo de inmueble y por si cuenta o no con edificaciones. Se transcriben las cuatro combinaciones visibles en la tabla: urbanos y suburbanos con/sin edificaciones, y rústicos con/sin edificaciones. Art. 5 y 6 contienen valores unitarios para avalúo, no la mecánica del impuesto."
+    "comentarios": "Art. 4 establece tasas anuales al millar diferenciadas por tipo de inmueble (urbanos/suburbanos vs. rústicos) y por antigüedad del valor determinado o modificado conforme a la Ley. La mecánica principal es un catálogo de tasas categóricas sin rangos de valor catastral. Art. 5 contiene tablas de valores unitarios para avalúo/catastro, no la tarifa del impuesto. No se observa cuota fija adicional ni mínimo predial en el texto proporcionado."
   },
   "_meta": {
     "fuente": "txt",
@@ -47,10 +79,12 @@
     "requiere_revision": false,
     "escalado": false,
     "razon": null,
+    "usado_reocr": false,
+    "usado_vision": false,
     "tokens": {
-      "input": 7545,
-      "output": 377,
-      "cached": 3840
+      "input": 8762,
+      "output": 725,
+      "cached": 5888
     },
     "cvegeo": "11019",
     "estado": "guanajuato",

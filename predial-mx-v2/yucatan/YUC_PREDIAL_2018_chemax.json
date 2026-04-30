@@ -4,7 +4,7 @@
     "tabla": [
       {
         "n_rango": 1,
-        "inferior": 0.0,
+        "inferior": 0.01,
         "superior": 5000.0,
         "columnas": [
           {
@@ -17,7 +17,7 @@
       },
       {
         "n_rango": 2,
-        "inferior": 5000.0,
+        "inferior": 5000.01,
         "superior": 7500.0,
         "columnas": [
           {
@@ -30,7 +30,7 @@
       },
       {
         "n_rango": 3,
-        "inferior": 7500.0,
+        "inferior": 7500.01,
         "superior": 10500.0,
         "columnas": [
           {
@@ -43,7 +43,7 @@
       },
       {
         "n_rango": 4,
-        "inferior": 10500.0,
+        "inferior": 10500.01,
         "superior": 12500.0,
         "columnas": [
           {
@@ -56,7 +56,7 @@
       },
       {
         "n_rango": 5,
-        "inferior": 12500.0,
+        "inferior": 12500.01,
         "superior": 15000.0,
         "columnas": [
           {
@@ -95,7 +95,7 @@
       }
     ],
     "minimo_predial": null,
-    "comentarios": "Art. 13: la tarifa principal para predio con base en valor catastral está estructurada por brackets con cuota fija anual y factor para aplicar al excedente. El texto muestra factor de 0.001% en todos los renglones; como la validación previa marcó un hueco entre 15,000.00 y 15,500.01, aquí se normaliza la secuencia de límites a rangos contiguos usando 0–5000, 5000–7500, 7500–10500, 10500–12500, 12500–15000, 15000–20000 y 20000 en adelante. La fracción 'Todo predio destinado a la producción agropecuaria 10 al millar anual' se trata como tarifa paralela secundaria y no se incorpora a la tabla principal. Art. 14: descuento por pago oportuno ignorado."
+    "comentarios": "Artículo 13: la tarifa principal del impuesto predial por valor catastral es una tabla por rangos con cuota fija anual y factor para aplicar al excedente del límite inferior de 0.001 %; por la heterogeneidad de unidades entre cuota fija y factor, se codifica como mixto. El texto presenta además una tarifa paralela para predios destinados a la producción agropecuaria de 10 al millar anual sobre el valor registrado o catastral, sin exceder la legislación agraria federal; no se incorpora en la tabla principal por ser una tarifa separada. Se normalizó el salto del texto entre 15,000.00 y 15,500.01 ajustando el inicio del siguiente tramo a 15,000.00 para mantener rangos contiguos según la validación solicitada."
   },
   "_meta": {
     "fuente": "txt",
@@ -106,10 +106,12 @@
     "requiere_revision": false,
     "escalado": false,
     "razon": null,
+    "usado_reocr": false,
+    "usado_vision": false,
     "tokens": {
-      "input": 12858,
-      "output": 979,
-      "cached": 8704
+      "input": 15503,
+      "output": 972,
+      "cached": 11776
     },
     "cvegeo": "31019",
     "estado": "yucatan",

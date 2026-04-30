@@ -5,16 +5,16 @@
       {
         "grupo": "urbano",
         "clave": "predios_urbanos",
-        "descripcion": "Predios urbanos",
-        "tasa_millar": 3.0,
+        "descripcion": "Sobre los predios urbanos",
+        "tasa_millar": 0.003,
         "periodicidad": "anual",
         "cuota_fija_adicional": null
       },
       {
         "grupo": "rustico",
         "clave": "predios_rusticos",
-        "descripcion": "Predios rústicos",
-        "tasa_millar": 3.0,
+        "descripcion": "Sobre los predios rústicos",
+        "tasa_millar": 0.003,
         "periodicidad": "anual",
         "cuota_fija_adicional": null
       }
@@ -24,7 +24,7 @@
       "periodicidad": "bimestral",
       "unidad": "pesos"
     },
-    "comentarios": "Art. 2 fracc. I y II: predios urbanos y rústicos pagan 3 al millar anual. Art. 2 fracc. III establece un mínimo de $26.00 por bimestre y cuota mínima anual de $158.00. Las fraccs. IV a VIII contienen incentivos/bonificaciones y no se incorporan por instrucción."
+    "comentarios": "Art. 2, fraccs. I y II: predios urbanos y rústicos pagan 3 al millar anual sobre valor catastral. Art. 2, fracc. III: no podrá ser inferior a $26.00 por bimestre, con cuota mínima anual de $158.00. Fracc. IV y demás fracciones establecen incentivos/bonificaciones y no se incorporan a la mecánica de cálculo."
   },
   "_meta": {
     "fuente": "txt",
@@ -35,10 +35,12 @@
     "requiere_revision": false,
     "escalado": false,
     "razon": null,
+    "usado_reocr": false,
+    "usado_vision": false,
     "tokens": {
-      "input": 5625,
-      "output": 225,
-      "cached": 3840
+      "input": 6842,
+      "output": 248,
+      "cached": 5888
     },
     "cvegeo": "05022",
     "estado": "coahuila",

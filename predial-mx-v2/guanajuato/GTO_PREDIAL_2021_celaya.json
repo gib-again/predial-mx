@@ -1,101 +1,61 @@
 {
   "predial": {
-    "tipo_esquema": "mixto",
+    "tipo_esquema": "progresivo",
     "tabla": [
       {
         "n_rango": 1,
         "inferior": 0.0,
         "superior": 1000000.0,
-        "columnas": [
-          {
-            "nombre": "urbanos_y_suburbanos_con_edificacion",
-            "valor": 0.002,
-            "tipo": "tasa_marginal",
-            "unidad": "porcentaje"
-          }
-        ]
+        "cuota_fija": 0.0,
+        "tasa_marginal": 0.002
       },
       {
         "n_rango": 2,
         "inferior": 1000000.0,
         "superior": 1452621.34,
-        "columnas": [
-          {
-            "nombre": "urbanos_y_suburbanos_con_edificacion",
-            "valor": 0.0027,
-            "tipo": "tasa_marginal",
-            "unidad": "porcentaje"
-          }
-        ]
+        "cuota_fija": 2000.0,
+        "tasa_marginal": 0.0027
       },
       {
         "n_rango": 3,
         "inferior": 1452621.34,
         "superior": 10526340.0,
-        "columnas": [
-          {
-            "nombre": "urbanos_y_suburbanos_con_edificacion",
-            "valor": 0.0027,
-            "tipo": "tasa_marginal",
-            "unidad": "porcentaje"
-          }
-        ]
+        "cuota_fija": 3222.08,
+        "tasa_marginal": 0.003
       },
       {
         "n_rango": 4,
         "inferior": 10526340.0,
         "superior": 18335436.7,
-        "columnas": [
-          {
-            "nombre": "urbanos_y_suburbanos_con_edificacion",
-            "valor": 24701.93,
-            "tipo": "cuota_fija",
-            "unidad": "pesos"
-          },
-          {
-            "nombre": "urbanos_y_suburbanos_con_edificacion",
-            "valor": 0.0027,
-            "tipo": "tasa_marginal",
-            "unidad": "porcentaje"
-          }
-        ]
+        "cuota_fija": 30543.75,
+        "tasa_marginal": 0.0029
       },
       {
         "n_rango": 5,
         "inferior": 18335436.7,
         "superior": null,
-        "columnas": [
-          {
-            "nombre": "urbanos_y_suburbanos_con_edificacion",
-            "valor": 24701.93,
-            "tipo": "cuota_fija",
-            "unidad": "pesos"
-          },
-          {
-            "nombre": "urbanos_y_suburbanos_con_edificacion",
-            "valor": 0.0027,
-            "tipo": "tasa_marginal",
-            "unidad": "porcentaje"
-          }
-        ]
+        "cuota_fija": 24701.93,
+        "tasa_marginal": 0.0027
       }
     ],
     "minimo_predial": null,
-    "comentarios": "Art. 4: la fracción II contiene una tabla por rangos de valor catastral para inmuebles urbanos y suburbanos con edificación, pero el texto OCR está fragmentado y mezcla cuotas fijas con tasas/porcentajes en los renglones. Además, el propio artículo establece otras tarifas paralelas separadas: para urbanos y suburbanos sin edificación, 3.00 al millar; para rústicos, 0.20 al millar; y para inmuebles con valores de 2019 y anteriores, tasas distintas según año (2.00, 3.00, 6.50, 3.55, 8, 15, 13, 0.20, 0.398 y 6 al millar, entre otras líneas OCR). Se clasifica como mixto por la heterogeneidad estructural y la presencia de tarifas paralelas, no como tarifa_millar o progresivo simple. La sección de valores unitarios del artículo 5 se ignora por no ser mecánica del impuesto."
+    "comentarios": "Tabla principal tomada de la fracción I del artículo 4 para inmuebles urbanos y suburbanos con edificación con valor determinado o modificado en 2021 y 2020 inclusive. Los rangos fueron normalizados a límites contiguos. El OCR del cuadro es deficiente; la reconstrucción se apoya en los valores legibles '0.002', '0.0027', '0.0030', '1,000,000.01', '1,452,621.34', '10,526,340.00', '10,526,340.01', '18,335,436.70' y '24,701.93 0.0027'. Tarifas paralelas no incluidas en la tabla principal: fracción II, inmuebles urbanos y suburbanos sin edificación, 3.00 al millar sobre la base gravable; fracción III, inmuebles rústicos con valor determinado o modificado en 2021 y 2020 inclusive, 0.20 al millar; fracción IV, inmuebles urbanos, suburbanos y rústicos con valor determinado o modificado en 2019 y anteriores, conforme a tasas al millar por antigüedad del valor."
   },
   "_meta": {
     "fuente": "txt",
-    "modelo": "gpt-5.4-mini"
+    "modelo": "gpt-5.4"
   },
   "_meta_v2": {
-    "intentos": 1,
+    "intentos": 3,
     "requiere_revision": false,
-    "escalado": false,
-    "razon": null,
+    "escalado": true,
+    "razon": "escalado_a_gpt-5.4_tras_2x_mini_fallido",
+    "usado_reocr": false,
+    "usado_vision": false,
     "tokens": {
-      "input": 8731,
-      "output": 613,
-      "cached": 3840
+      "input": 31231,
+      "output": 1660,
+      "cached": 13568
     },
     "cvegeo": "11007",
     "estado": "guanajuato",

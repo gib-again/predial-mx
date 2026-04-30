@@ -1,11 +1,11 @@
 {
   "predial": {
     "tipo_esquema": "otro_no_clasificado",
-    "categoria": "segmento_vacio",
-    "descripcion_estructural": "El texto proporcionado no contiene el artículo ni la tabla específica de la mecánica del Impuesto Predial. Solo aparecen disposiciones de ajustes, recurso de revisión y referencias indirectas al artículo 21 de otra sección, pero no la tarifa o estructura de cálculo del predial. No es posible clasificar la mecánica sin inventarla.",
+    "categoria": "municipio_sin_impuesto",
+    "descripcion_estructural": "En el texto proporcionado no aparece la mecánica tarifaria del impuesto predial (tabla, cuotas, tasas o brackets). El segmento visible sólo contiene un recurso de revisión para inmuebles sin edificar que permite aplicar la tasa general de inmuebles urbanos y suburbanos, pero no transcribe esa tasa ni la base de cálculo del predial. Por ello no es posible extraer una mecánica estructural del impuesto predial desde este fragmento.",
     "tabla_cruda": [],
     "minimo_predial": null,
-    "comentarios": "Sección de predial incompleta o ausente en el fragmento suministrado."
+    "comentarios": "Sección 'Del Impuesto Predial' no incluye en el extracto las tarifas del artículo aplicable; sólo remite a la tasa general en caso de recurso de revisión."
   },
   "_meta": {
     "fuente": "txt",
@@ -16,10 +16,12 @@
     "requiere_revision": true,
     "escalado": false,
     "razon": "clasificado_como_otro_no_clasificado",
+    "usado_reocr": false,
+    "usado_vision": false,
     "tokens": {
-      "input": 6378,
-      "output": 144,
-      "cached": 3840
+      "input": 7595,
+      "output": 186,
+      "cached": 5888
     },
     "cvegeo": "11040",
     "estado": "guanajuato",

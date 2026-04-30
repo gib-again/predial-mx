@@ -1,28 +1,20 @@
 {
   "predial": {
-    "tipo_esquema": "otro_no_clasificado",
-    "categoria": "estructura_no_estandar",
-    "descripcion_estructural": "El texto presenta dos mecánicas distintas dentro del capítulo: una tarifa fija anual por tipo de predio (urbano y rústico) en el artículo 13, y además una imposición sobre rentas o frutos civiles en el artículo 15, que corresponde a un gravamen sobre ingresos y no a la mecánica típica por valor catastral. No encaja limpiamente en las variantes simples de cálculo del predial sobre valor catastral.",
-    "tabla_cruda": [
+    "tipo_esquema": "cuota_fija_simple",
+    "tabla": [
       {
         "descripcion": "Predial urbano",
-        "valores": "monto=25.00; periodicidad=anual"
-      },
-      {
-        "descripcion": "Predial rústico",
-        "valores": "monto=23.00; periodicidad=anual"
-      },
-      {
-        "descripcion": "Sobre la renta o frutos civiles mensuales por predios habitacionales",
-        "valores": "tasa=2%; periodicidad=mensual"
-      },
-      {
-        "descripcion": "Sobre la renta o frutos civiles mensuales por predios comerciales",
-        "valores": "tasa=2%; periodicidad=mensual"
+        "monto": 25.0,
+        "periodicidad": "anual",
+        "unidad": "pesos"
       }
     ],
+    "tarifas_secundarias": [
+      "Art. 13: predial rústico con cuota anual de $23.00.",
+      "Art. 15: predial con base en rentas o frutos civiles mensuales; predios habitacionales 2% y predios comerciales 2% sobre la renta o frutos civiles mensuales."
+    ],
     "minimo_predial": null,
-    "comentarios": "Art. 14 contiene descuento por pronto pago y se ignora. Art. 15 refiere un impuesto predial con base en rentas o frutos civiles, lo cual se conserva sólo como referencia estructural porque no corresponde a una tabla estándar por valor catastral."
+    "comentarios": "Artículo 13 establece una cuota fija anual para predial urbano; se documenta el rústico y la mecánica sobre rentas/frutos civiles como tarifas secundarias porque no forman la mecánica principal extraíble de la sección."
   },
   "_meta": {
     "fuente": "txt",
@@ -30,13 +22,15 @@
   },
   "_meta_v2": {
     "intentos": 1,
-    "requiere_revision": true,
+    "requiere_revision": false,
     "escalado": false,
-    "razon": "clasificado_como_otro_no_clasificado",
+    "razon": null,
+    "usado_reocr": false,
+    "usado_vision": false,
     "tokens": {
-      "input": 5061,
-      "output": 311,
-      "cached": 3840
+      "input": 6278,
+      "output": 183,
+      "cached": 5888
     },
     "cvegeo": "31067",
     "estado": "yucatan",

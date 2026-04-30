@@ -81,7 +81,7 @@
       }
     ],
     "minimo_predial": null,
-    "comentarios": "Art. 13 contiene una tarifa paralela para predios agropecuarios: 10 al millar anual sobre el valor registrado o catastral. No se integra en la tabla principal porque es una tarifa separada por grupo. Se ignoran valuaciones catastrales y descuentos del Art. 15."
+    "comentarios": "Art. 13: todo predio destinado a la producción agropecuaria paga 10 al millar anual sobre el valor registrado o catastral; se documenta como tarifa paralela y no se incluye en la tabla principal. La tabla principal del Art. 14 es progresiva por valor catastral con cuota fija anual más factor aplicado al excedente del límite inferior."
   },
   "_meta": {
     "fuente": "txt",
@@ -92,10 +92,12 @@
     "requiere_revision": false,
     "escalado": false,
     "razon": null,
+    "usado_reocr": false,
+    "usado_vision": false,
     "tokens": {
-      "input": 6127,
-      "output": 527,
-      "cached": 3840
+      "input": 7344,
+      "output": 540,
+      "cached": 5888
     },
     "cvegeo": "31064",
     "estado": "yucatan",

@@ -4,7 +4,7 @@
     "tabla": [
       {
         "grupo": "urbano",
-        "clave": "edificaciones",
+        "clave": "urbanos_y_suburbanos_con_edificaciones",
         "descripcion": "Inmuebles urbanos y suburbanos con edificaciones",
         "tasa_millar": 0.0024,
         "periodicidad": "anual",
@@ -12,23 +12,47 @@
       },
       {
         "grupo": "urbano",
-        "clave": "sin_edificaciones",
-        "descripcion": "Inmuebles urbanos y suburbanos con inmuebles sin edificaciones",
+        "clave": "urbanos_y_suburbanos_sin_edificaciones",
+        "descripcion": "Inmuebles urbanos y suburbanos sin edificaciones",
         "tasa_millar": 0.0045,
         "periodicidad": "anual",
         "cuota_fija_adicional": null
       },
       {
         "grupo": "rustico",
-        "clave": "rustico",
+        "clave": "rusticos",
         "descripcion": "Inmuebles rústicos",
         "tasa_millar": 0.0018,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "urbano",
+        "clave": "anteriores_1993_con_edificaciones",
+        "descripcion": "Con anterioridad al año de 1993, inmuebles urbanos y suburbanos con edificaciones",
+        "tasa_millar": 0.013,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "urbano",
+        "clave": "anteriores_1993_sin_edificaciones",
+        "descripcion": "Con anterioridad al año de 1993, inmuebles urbanos y suburbanos sin edificaciones",
+        "tasa_millar": 0.012,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "rustico",
+        "clave": "anteriores_1993_rusticos",
+        "descripcion": "Con anterioridad al año de 1993, inmuebles rústicos",
+        "tasa_millar": 0.006,
         "periodicidad": "anual",
         "cuota_fija_adicional": null
       }
     ],
     "minimo_predial": null,
-    "comentarios": "Art. 4: el impuesto predial se causa y liquida anualmente con tasas al millar por categoría de inmueble. Se transcribe la tarifa principal de la tabla: urbanos y suburbanos con edificaciones 2.4 al millar; urbanos y suburbanos sin edificaciones 4.5 al millar; rústicos 1.8 al millar. En el texto aparecen también tasas históricas por periodos anteriores a 2002, pero no se incorporan como tarifa vigente del ejercicio 2014. El Art. 5 contiene valores unitarios catastrales para avalúo, no la mecánica del impuesto."
+    "comentarios": "Art. 4: la mecánica principal es una tarifa al millar categórica, diferenciada por tipo de inmueble y por antigüedad del valor aplicado. Se transcriben las tasas anuales para urbanos y suburbanos con/sin edificaciones y para rústicos. No se trata de rangos por valor catastral. Art. 5 y 6 contienen valores unitarios y criterios de valuación, no la tarifa del impuesto."
   },
   "_meta": {
     "fuente": "txt",
@@ -39,10 +63,12 @@
     "requiere_revision": false,
     "escalado": false,
     "razon": null,
+    "usado_reocr": false,
+    "usado_vision": false,
     "tokens": {
-      "input": 7268,
-      "output": 324,
-      "cached": 3840
+      "input": 8485,
+      "output": 480,
+      "cached": 5888
     },
     "cvegeo": "11005",
     "estado": "guanajuato",

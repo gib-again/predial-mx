@@ -6,7 +6,7 @@
         "grupo": "urbano",
         "clave": "predios_urbanos",
         "descripcion": "Sobre los predios urbanos",
-        "tasa_millar": 5.0,
+        "tasa_millar": 0.005,
         "periodicidad": "anual",
         "cuota_fija_adicional": null
       },
@@ -14,7 +14,7 @@
         "grupo": "rustico",
         "clave": "predios_rusticos",
         "descripcion": "Sobre predios rústicos",
-        "tasa_millar": 3.0,
+        "tasa_millar": 0.003,
         "periodicidad": "anual",
         "cuota_fija_adicional": null
       },
@@ -22,7 +22,7 @@
         "grupo": "otro",
         "clave": "lotes_baldios_con_maleza",
         "descripcion": "Sobre Lotes Baldíos con maleza",
-        "tasa_millar": 7.0,
+        "tasa_millar": 0.007,
         "periodicidad": "anual",
         "cuota_fija_adicional": null
       }
@@ -32,7 +32,7 @@
       "periodicidad": "bimestral",
       "unidad": "pesos"
     },
-    "comentarios": "Art. 2 establece tasas al millar diferenciadas por categoría de predio: urbano 5 al millar anual, rústico 3 al millar anual y lotes baldíos con maleza 7 al millar. Se incluye mínimo predial de $24.10 por bimestre. Se ignoran incentivos por pago anticipado y bonificaciones a jubilados/adultos mayores/personas con discapacidad por instrucción."
+    "comentarios": "Art. 2: tasa anual de 5 al millar para predios urbanos, 3 al millar para predios rústicos y 7 al millar para lotes baldíos con maleza. Se ignoran incentivos por pago anticipado y descuentos para pensionados/jubilados/adultos mayores/personas con discapacidad por ser bonificaciones."
   },
   "_meta": {
     "fuente": "txt",
@@ -43,10 +43,12 @@
     "requiere_revision": false,
     "escalado": false,
     "razon": null,
+    "usado_reocr": false,
+    "usado_vision": false,
     "tokens": {
-      "input": 5152,
-      "output": 290,
-      "cached": 3840
+      "input": 6369,
+      "output": 281,
+      "cached": 5888
     },
     "cvegeo": "05020",
     "estado": "coahuila",

@@ -11,42 +11,42 @@
       },
       {
         "n_rango": 2,
-        "inferior": 5000.01,
+        "inferior": 5000.0,
         "superior": 7500.0,
         "cuota_fija": 9.0,
         "tasa_marginal": 0.0009
       },
       {
         "n_rango": 3,
-        "inferior": 7500.01,
+        "inferior": 7500.0,
         "superior": 10500.0,
         "cuota_fija": 12.0,
         "tasa_marginal": 0.001
       },
       {
         "n_rango": 4,
-        "inferior": 10500.01,
+        "inferior": 10500.0,
         "superior": 12500.0,
         "cuota_fija": 15.0,
         "tasa_marginal": 0.0011
       },
       {
         "n_rango": 5,
-        "inferior": 12500.01,
+        "inferior": 12500.0,
         "superior": 15500.0,
         "cuota_fija": 18.0,
         "tasa_marginal": 0.0012
       },
       {
         "n_rango": 6,
-        "inferior": 15500.01,
+        "inferior": 15500.0,
         "superior": null,
         "cuota_fija": 22.0,
         "tasa_marginal": 0.0013
       }
     ],
     "minimo_predial": null,
-    "comentarios": "Artículo 13 establece una tarifa progresiva por rangos de valor catastral con cuota fija anual más factor para aplicar al excedente del límite inferior. Tarifa paralela: todo predio destinado a la producción agropecuaria paga 10 al millar anual sobre el valor registrado o catastral; se deja fuera de la tabla principal por ser una tarifa separada. Se ignoran descuentos."
+    "comentarios": "Art. 13: además de la tabla progresiva por valor catastral, el texto establece una tarifa paralela para 'todo predio destinado a la producción agropecuaria' de 10 al millar anual sobre el valor registrado o catastral; se documenta aquí como comentario por ser una tarifa secundaria/paralela. Las tablas de valores unitarios de terreno y construcción se ignoran por ser catastro, no mecánica del impuesto."
   },
   "_meta": {
     "fuente": "txt",
@@ -57,10 +57,12 @@
     "requiere_revision": false,
     "escalado": false,
     "razon": null,
+    "usado_reocr": false,
+    "usado_vision": false,
     "tokens": {
-      "input": 6119,
+      "input": 7336,
       "output": 350,
-      "cached": 3840
+      "cached": 5888
     },
     "cvegeo": "31043",
     "estado": "yucatan",

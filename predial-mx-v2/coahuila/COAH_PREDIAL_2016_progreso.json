@@ -24,7 +24,7 @@
       "periodicidad": "bimestral",
       "unidad": "pesos"
     },
-    "comentarios": "Art. 2: predios urbanos y predios rústicos pagan 5 al millar anual sobre valor catastral. El artículo también establece que en ningún caso el impuesto será inferior a $32.00 por bimestre. Se ignoran incentivos y bonificaciones por instrucción."
+    "comentarios": "Art. 2 fracc. I y II: predios urbanos y rústicos pagan 5 al millar anual sobre el valor catastral. Fracc. III: mínimo predial de $32.00 por bimestre. Los incentivos/bonificaciones de las fraccs. IV a VII se ignoraron por instrucción."
   },
   "_meta": {
     "fuente": "txt",
@@ -35,10 +35,12 @@
     "requiere_revision": false,
     "escalado": false,
     "razon": null,
+    "usado_reocr": false,
+    "usado_vision": false,
     "tokens": {
-      "input": 5506,
-      "output": 211,
-      "cached": 3840
+      "input": 6723,
+      "output": 222,
+      "cached": 5888
     },
     "cvegeo": "05026",
     "estado": "coahuila",

@@ -32,7 +32,7 @@
       }
     ],
     "minimo_predial": null,
-    "comentarios": "Art. 19: impuesto predial calculado con base en el valor catastral mediante tabla de rangos con cuota fija y factor aplicable al excedente del límite inferior. Se transcribe sólo la mecánica de cálculo. Art. 21 corresponde a predial sobre rentas o frutos civiles y no se incluye por ser otra base de cálculo."
+    "comentarios": "Art. 19: impuesto predial calculado con base en el valor catastral de los predios mediante tabla de rangos con cuota fija y factor para aplicar al excedente del límite inferior. Art. 21 establece una mecánica paralela sobre rentas o frutos civiles (5% sobre renta o frutos civiles mensuales), la cual no se incluye en la tabla principal por no ser la mecánica predominante de predial con base en valor catastral."
   },
   "_meta": {
     "fuente": "txt",
@@ -43,10 +43,12 @@
     "requiere_revision": false,
     "escalado": false,
     "razon": null,
+    "usado_reocr": false,
+    "usado_vision": false,
     "tokens": {
-      "input": 14783,
-      "output": 274,
-      "cached": 3840
+      "input": 16000,
+      "output": 298,
+      "cached": 5888
     },
     "cvegeo": "31059",
     "estado": "yucatan",

@@ -50,21 +50,23 @@
       "periodicidad": "anual",
       "unidad": "pesos"
     },
-    "comentarios": "Artículo 13: tarifa progresiva sobre valor catastral con cuota anual y factor para aplicar al excedente del límite inferior. Se normalizaron los rangos a contiguos para cumplir la validación: el texto trae 0.01–5,000.00; 5,000.01–7,500.00; 7,500.01–10,000.00; 10,500.01–12,500.00; 12,500.01–15,000.00; 15,500.01 en adelante, por lo que se transcriben como 0–5,000; 5,000–7,500; 7,500–10,000; 10,000–12,500; 12,500–15,000; 15,000 en adelante. Se ignora la tarifa paralela de predios agropecuarios (10 al millar anual) por ser secundaria respecto de la tabla principal con brackets. La frase 'Cuando no se pudiera determinar se cobrará una cuota fija de $100.00' se captura como mínimo predial."
+    "comentarios": "Art. 13: cuando la base del impuesto predial sea el valor catastral del inmueble, se aplica una tarifa progresiva con cuota anual y factor sobre el excedente del límite inferior. También se indica una tarifa paralela para predios destinados a la producción agropecuaria: 10 al millar anual sobre el valor registrado o catastral, con tope conforme a la Legislación Agraria Federal para terrenos ejidales; se documenta sólo en comentarios por ser una tarifa secundaria paralela a la mecánica principal."
   },
   "_meta": {
     "fuente": "txt",
     "modelo": "gpt-5.4-mini"
   },
   "_meta_v2": {
-    "intentos": 2,
+    "intentos": 1,
     "requiere_revision": false,
     "escalado": false,
     "razon": null,
+    "usado_reocr": false,
+    "usado_vision": false,
     "tokens": {
-      "input": 13173,
-      "output": 1007,
-      "cached": 7680
+      "input": 7574,
+      "output": 386,
+      "cached": 5888
     },
     "cvegeo": "31039",
     "estado": "yucatan",

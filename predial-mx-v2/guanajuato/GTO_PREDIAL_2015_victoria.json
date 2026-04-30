@@ -4,53 +4,55 @@
     "tabla": [
       {
         "grupo": "general",
-        "clave": "entrada_en_vigor",
-        "descripcion": "Los inmuebles que cuenten con un valor determinado modificado: a la entrada en vigor de la presente Ley",
+        "clave": "valor_determinado_a_entrada_vigor",
+        "descripcion": "Los inmuebles que cuenten con un valor determinado. A la entrada en vigor de la presente Ley.",
         "tasa_millar": 0.0024,
         "periodicidad": "anual",
         "cuota_fija_adicional": null
       },
       {
         "grupo": "general",
-        "clave": "anos_2002_a_2014",
-        "descripcion": "Los inmuebles que cuenten con un valor determinado modificado: durante los años 2002 y hasta 2014 inclusive",
+        "clave": "valor_determinado_2002_hasta_2014",
+        "descripcion": "Los inmuebles que cuenten con un valor determinado. Durante los años 2002 y hasta 2014 inclusive.",
         "tasa_millar": 0.0024,
         "periodicidad": "anual",
         "cuota_fija_adicional": null
       },
       {
         "grupo": "general",
-        "clave": "anterior_1993_a_2001",
-        "descripcion": "Los inmuebles que cuenten con un valor determinado modificado: con anterioridad al año 2002 y hasta 1993 inclusive",
+        "clave": "valor_determinado_anteriores_2002_1993",
+        "descripcion": "Los inmuebles que cuenten con un valor determinado. Con anterioridad al año 2002 y hasta 1993 inclusive.",
         "tasa_millar": 0.008,
         "periodicidad": "anual",
         "cuota_fija_adicional": null
       },
       {
         "grupo": "general",
-        "clave": "anterior_1993",
-        "descripcion": "Los inmuebles que cuenten con un valor determinado modificado: con anterioridad al año de 1993",
+        "clave": "valor_determinado_anteriores_1993",
+        "descripcion": "Los inmuebles que cuenten con un valor determinado. Con anterioridad al año de 1993.",
         "tasa_millar": 0.008,
         "periodicidad": "anual",
         "cuota_fija_adicional": null
       }
     ],
     "minimo_predial": null,
-    "comentarios": "Art. 4: tarifa por antigüedad/valor determinado modificado para inmuebles urbanos, suburbanos y rústicos, expresada en tasas al millar. Se transcribe sólo la mecánica de cálculo del impuesto predial; Art. 5 y 6 contienen valores unitarios y criterios de avalúo (catastro), no una tarifa adicional. El texto presenta para urbanos/suburbanos con y sin edificaciones tasas distintas, pero dentro de la misma tabla general de Art. 4 se conservan las cuatro filas visibles del apartado de tasas."
+    "comentarios": "Art. 4: La tabla principal del predial para inmuebles con valor determinado es una tarifa categórica por antigüedad/periodo, con tres columnas de tasas al millar: inmuebles urbanos y suburbanos con/sin edificaciones y rústicos. Se transcribe sólo la mecánica principal. Tarifa paralela: para inmuebles urbanos y suburbanos con/sin edificaciones: 2.4 al millar, 4.5 al millar y 1.8 al millar según el periodo; para rústicos: 1.8 al millar, 1.8 al millar y 6 al millar, según el periodo. Art. 5 contiene tablas de valores unitarios catastrales (terreno y construcción) y factores agrológicos, pero no constituyen la mecánica tarifaria del impuesto."
   },
   "_meta": {
     "fuente": "txt",
     "modelo": "gpt-5.4-mini"
   },
   "_meta_v2": {
-    "intentos": 1,
+    "intentos": 2,
     "requiere_revision": false,
     "escalado": false,
     "razon": null,
+    "usado_reocr": false,
+    "usado_vision": false,
     "tokens": {
-      "input": 7244,
-      "output": 429,
-      "cached": 3840
+      "input": 17579,
+      "output": 1144,
+      "cached": 11776
     },
     "cvegeo": "11043",
     "estado": "guanajuato",

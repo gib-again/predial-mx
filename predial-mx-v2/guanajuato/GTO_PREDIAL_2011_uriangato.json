@@ -6,7 +6,7 @@
         "grupo": "general",
         "clave": "urbano_suburbano_con_edificaciones",
         "descripcion": "Inmuebles urbanos y suburbanos con edificaciones",
-        "tasa_millar": 0.002,
+        "tasa_millar": 0.003,
         "periodicidad": "anual",
         "cuota_fija_adicional": null
       },
@@ -14,20 +14,20 @@
         "grupo": "general",
         "clave": "urbano_suburbano_sin_edificaciones",
         "descripcion": "Inmuebles urbanos y suburbanos sin edificaciones",
-        "tasa_millar": 0.003,
+        "tasa_millar": 0.002,
         "periodicidad": "anual",
         "cuota_fija_adicional": null
       },
       {
-        "grupo": "rustico",
+        "grupo": "general",
         "clave": "rustico_con_edificaciones",
         "descripcion": "Inmuebles rústicos con edificaciones",
-        "tasa_millar": 0.00032,
+        "tasa_millar": 0.0032,
         "periodicidad": "anual",
         "cuota_fija_adicional": null
       },
       {
-        "grupo": "rustico",
+        "grupo": "general",
         "clave": "rustico_sin_edificaciones",
         "descripcion": "Inmuebles rústicos sin edificaciones",
         "tasa_millar": 0.0012,
@@ -36,7 +36,7 @@
       }
     ],
     "minimo_predial": null,
-    "comentarios": "Art. 4 establece tasas anuales sobre el valor catastral según tipo de inmueble y si cuenta o no con edificaciones. Se transcriben las tasas expresamente visibles en el texto: urbanos/suburbanos con edificaciones 0.20%, sin edificaciones 0.30%; rústicos con edificaciones 0.032%; rústicos sin edificaciones 0.12%. El Art. 5 y 6 contienen valores unitarios y factores de valuación, no mecánica tarifaria del impuesto."
+    "comentarios": "Art. 4 establece tasas anuales diferenciadas por tipo de inmueble y presencia de edificaciones. La tabla se transcribe conforme al cuadro de tasas. Se ignora la sección de valores unitarios del Art. 5 por ser catastro, no mecánica de cálculo del impuesto. Nota de OCR: en la fila 'Con anterioridad al año 2002 y hasta 1993 inclusive' el texto aparece corrupto ('pd 1a07s ad'); no se usa por estar ilegible."
   },
   "_meta": {
     "fuente": "txt",
@@ -47,10 +47,12 @@
     "requiere_revision": false,
     "escalado": false,
     "razon": null,
+    "usado_reocr": false,
+    "usado_vision": false,
     "tokens": {
-      "input": 8470,
-      "output": 368,
-      "cached": 3840
+      "input": 9687,
+      "output": 361,
+      "cached": 5888
     },
     "cvegeo": "11041",
     "estado": "guanajuato",

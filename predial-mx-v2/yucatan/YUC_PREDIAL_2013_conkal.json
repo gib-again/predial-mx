@@ -1,59 +1,101 @@
 {
   "predial": {
-    "tipo_esquema": "progresivo",
+    "tipo_esquema": "mixto",
     "tabla": [
       {
         "n_rango": 1,
         "inferior": 0.0,
         "superior": 4000.0,
-        "cuota_fija": 5.0,
-        "tasa_marginal": 0.00075
+        "columnas": [
+          {
+            "nombre": "general",
+            "valor": 0.00075,
+            "tipo": "tasa_marginal",
+            "unidad": "porcentaje"
+          }
+        ]
       },
       {
         "n_rango": 2,
-        "inferior": 4000.01,
+        "inferior": 4000.0,
         "superior": 5500.0,
-        "cuota_fija": 8.0,
-        "tasa_marginal": 0.002
+        "columnas": [
+          {
+            "nombre": "general",
+            "valor": 0.002,
+            "tipo": "tasa_marginal",
+            "unidad": "porcentaje"
+          }
+        ]
       },
       {
         "n_rango": 3,
-        "inferior": 5500.01,
+        "inferior": 5500.0,
         "superior": 6500.0,
-        "cuota_fija": 11.0,
-        "tasa_marginal": 0.003
+        "columnas": [
+          {
+            "nombre": "general",
+            "valor": 0.003,
+            "tipo": "tasa_marginal",
+            "unidad": "porcentaje"
+          }
+        ]
       },
       {
         "n_rango": 4,
-        "inferior": 6500.01,
+        "inferior": 6500.0,
         "superior": 7500.0,
-        "cuota_fija": 14.0,
-        "tasa_marginal": 0.003
+        "columnas": [
+          {
+            "nombre": "general",
+            "valor": 0.003,
+            "tipo": "tasa_marginal",
+            "unidad": "porcentaje"
+          }
+        ]
       },
       {
         "n_rango": 5,
-        "inferior": 7500.01,
+        "inferior": 7500.0,
         "superior": 8500.0,
-        "cuota_fija": 17.0,
-        "tasa_marginal": 0.004
+        "columnas": [
+          {
+            "nombre": "general",
+            "valor": 0.004,
+            "tipo": "tasa_marginal",
+            "unidad": "porcentaje"
+          }
+        ]
       },
       {
         "n_rango": 6,
-        "inferior": 8500.01,
+        "inferior": 8500.0,
         "superior": 10000.0,
-        "cuota_fija": 21.0,
-        "tasa_marginal": 0.00133
+        "columnas": [
+          {
+            "nombre": "general",
+            "valor": 0.00133,
+            "tipo": "tasa_marginal",
+            "unidad": "porcentaje"
+          }
+        ]
       },
       {
         "n_rango": 7,
-        "inferior": 10000.01,
+        "inferior": 10000.0,
         "superior": null,
-        "cuota_fija": 23.0,
-        "tasa_marginal": 0.002
+        "columnas": [
+          {
+            "nombre": "general",
+            "valor": 0.002,
+            "tipo": "tasa_marginal",
+            "unidad": "porcentaje"
+          }
+        ]
       }
     ],
     "minimo_predial": null,
-    "comentarios": "Art. 13: tabla de base por valor catastral con cuota fija anual y factor para aplicar al excedente; el cálculo indicado divide entre seis para obtener el impuesto bimestral. Art. 14: predios destinados a la producción agropecuaria pagan 10 al millar anual sobre el valor registrado o catastral, tarifa paralela no incluida en la tabla principal. Art. 15: frutos civiles (2% habitacional, 3% comercial mensual) corresponde a otra base de cálculo y se ignora conforme a la instrucción."
+    "comentarios": "Art. 13: la tarifa principal para base valor catastral combina cuota fija anual y factor sobre el excedente, con cálculo bimestral dividiendo el resultado entre seis. Se codifica como mixto porque los brackets usan cuota fija en pesos y factor/tasa marginal por excedente. Tarifa secundaria paralela: Art. 14, predios rústicos pagan $300 por hectárea (1-20 ha), $400 (21-40 ha) y $500 (41+ ha); Art. 15, frutos civiles: habitacional 2% mensual y comercial 3% mensual sobre la contraprestación. No se integran a la tabla principal por ser mecánicas paralelas/no predominantes."
   },
   "_meta": {
     "fuente": "txt",
@@ -64,10 +106,12 @@
     "requiere_revision": false,
     "escalado": false,
     "razon": null,
+    "usado_reocr": false,
+    "usado_vision": false,
     "tokens": {
-      "input": 6186,
-      "output": 415,
-      "cached": 3840
+      "input": 7403,
+      "output": 520,
+      "cached": 5888
     },
     "cvegeo": "31013",
     "estado": "yucatan",

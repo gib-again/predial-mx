@@ -50,7 +50,7 @@
       "periodicidad": "anual",
       "unidad": "pesos"
     },
-    "comentarios": "Art. 4, fracción III, inciso a): inmuebles urbanos y suburbanos con edificaciones con valores determinados o modificados durante 2002-2024. Fracción IV establece tarifas paralelas para otros grupos: urbanos/suburbanos sin edificaciones y rústicos; además hay tasas históricas por antigüedad (8 al millar, 15 al millar, 6 al millar, 13 al millar, 12 al millar) que no se integran a la tabla principal por ser tarifa paralela. El texto también indica que si el impuesto resulta inferior a la cuota mínima anual del artículo 40, se paga esa cuota mínima."
+    "comentarios": "Artículo 4, fracción III, inciso a): inmuebles urbanos y suburbanos con edificaciones con valores determinados o modificados durante 2002-2024. Se documenta únicamente la tabla principal progresiva de valor fiscal. La fracción IV establece tasas paralelas para inmuebles con valores determinados/modificados con anterioridad a 2002: urbanos y suburbanos con edificaciones 8 al millar o 13 al millar; urbanos y suburbanos sin edificaciones 15 al millar o 12 al millar; rústicos 6 al millar o 0.002 al millar; cuando el impuesto resulte inferior a la cuota mínima anual del artículo 40, se pagará esa cuota mínima."
   },
   "_meta": {
     "fuente": "txt",
@@ -61,10 +61,12 @@
     "requiere_revision": false,
     "escalado": false,
     "razon": null,
+    "usado_reocr": false,
+    "usado_vision": false,
     "tokens": {
-      "input": 10769,
-      "output": 444,
-      "cached": 3840
+      "input": 11986,
+      "output": 448,
+      "cached": 5888
     },
     "cvegeo": "11021",
     "estado": "guanajuato",

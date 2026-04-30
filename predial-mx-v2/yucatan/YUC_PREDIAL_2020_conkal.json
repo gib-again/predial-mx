@@ -1,26 +1,17 @@
 {
   "predial": {
-    "tipo_esquema": "tarifa_millar",
+    "tipo_esquema": "tasa_unica",
     "tabla": [
       {
-        "grupo": "otro",
-        "clave": "habitacional",
         "descripcion": "Habitacional",
-        "tasa_millar": 0.02,
-        "periodicidad": "anual",
-        "cuota_fija_adicional": null
-      },
-      {
-        "grupo": "otro",
-        "clave": "comercial",
-        "descripcion": "Comercial",
-        "tasa_millar": 0.03,
-        "periodicidad": "anual",
+        "tasa": 2.0,
+        "base_calculo": "valor_catastral",
+        "unidad": "porcentaje",
         "cuota_fija_adicional": null
       }
     ],
     "minimo_predial": null,
-    "comentarios": "Se toma como tarifa principal el Artículo 15, que establece dos tasas porcentuales/categóricas sobre la base catastral: habitacional 2 % y comercial 3 %. El texto previo de los artículos 13 y subsecuentes contiene valores unitarios de terreno y construcciones y fórmulas para determinar el valor catastral, pero no aporta una tabla tarifaria del impuesto predial transcribible en brackets. Además, el texto indica una tarifa paralela para predios destinados a la producción agropecuaria de 10 al millar anual sobre el valor registrado o catastral; no se incluye en la tabla principal por ser una tarifa separada para otro grupo de predios."
+    "comentarios": "Se toma como mecánica principal la tarifa expresa del Artículo 15: 'Habitacional; 2 % sobre el monto de la base catastral'. El mismo artículo también establece una tarifa paralela para 'Comercial; 3 % sobre el monto de la base catastral', pero no se mezcla en la tabla principal porque son tarifas separadas por tipo de predio. El texto previo de los artículos 13 y subsecuentes contiene valores unitarios de terreno y construcción y reglas de valuación catastral, no una tabla tarifaria estructurada del impuesto predial extraíble en brackets. Además, se documenta que los predios destinados a producción agropecuaria pagan 10 al millar anual sobre el valor registrado o catastral, como tarifa paralela no incluida en la tabla principal."
   },
   "_meta": {
     "fuente": "txt",
@@ -31,10 +22,12 @@
     "requiere_revision": false,
     "escalado": true,
     "razon": "escalado_a_gpt-5.4_tras_2x_mini_fallido",
+    "usado_reocr": false,
+    "usado_vision": false,
     "tokens": {
-      "input": 20272,
-      "output": 886,
-      "cached": 13568
+      "input": 24345,
+      "output": 801,
+      "cached": 17664
     },
     "cvegeo": "31013",
     "estado": "yucatan",

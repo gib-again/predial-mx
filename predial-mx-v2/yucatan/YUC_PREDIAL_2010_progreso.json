@@ -2,10 +2,10 @@
   "predial": {
     "tipo_esquema": "otro_no_clasificado",
     "categoria": "segmento_vacio",
-    "descripcion_estructural": "El texto proporcionado sólo contiene el encabezado del Capítulo I y el inicio del Artículo 13, pero no incluye la mecánica de cálculo del impuesto predial ni tablas, tarifas o cuotas. No es posible clasificar en ninguna de las seis variantes tarifarias con el segmento recibido.",
+    "descripcion_estructural": "El segmento proporcionado está truncado y sólo contiene el encabezado del Capítulo I y la definición general de impuestos; no aparece la mecánica de cálculo del impuesto predial ni tabla, rangos, tasas o cuotas aplicables. Con este contenido no es posible extraer una tarifa predial estructurada sin inventar información.",
     "tabla_cruda": [],
     "minimo_predial": null,
-    "comentarios": "Segmento truncado antes de la disposición tarifaria."
+    "comentarios": "No se identificó el artículo con la mecánica del predial; el texto termina en una frase inconclusa ('...distintas de las señaladas en el')."
   },
   "_meta": {
     "fuente": "txt",
@@ -16,10 +16,12 @@
     "requiere_revision": true,
     "escalado": false,
     "razon": "clasificado_como_otro_no_clasificado",
+    "usado_reocr": false,
+    "usado_vision": false,
     "tokens": {
-      "input": 4893,
-      "output": 128,
-      "cached": 3840
+      "input": 6110,
+      "output": 159,
+      "cached": 5888
     },
     "cvegeo": "31059",
     "estado": "yucatan",

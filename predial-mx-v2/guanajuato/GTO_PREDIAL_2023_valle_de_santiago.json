@@ -57,7 +57,7 @@
       "periodicidad": "anual",
       "unidad": "pesos"
     },
-    "comentarios": "Artículo 4 establece una tabla progresiva general para inmuebles urbanos y suburbanos, con edificaciones, cuyo valor fiscal se ubique entre límites inferior y superior y con cálculo por cuota fija más impuesto marginal. El texto también contiene tarifas paralelas separadas: Tabla 2 para inmuebles urbanos y suburbanos con edificaciones con valor determinado o modificado antes de 2002 y hasta 1993 inclusive; Tabla 3 y Tabla 4 para inmuebles urbanos y suburbanos sin edificaciones; Tabla 5 y Tabla 6 para inmuebles rústicos. No se integran en la tabla principal por ser tarifas paralelas del mismo artículo."
+    "comentarios": "Artículo 4 establece la mecánica general como cuota fija por rango de valor fiscal más impuesto marginal sobre el excedente. Se transcribe la Tabla 1 (inmuebles urbanos y suburbanos con edificaciones, valor determinado o modificado durante 2002 y hasta la entrada en vigor de la ley). El texto también contiene Tablas 2 a 6 para otros supuestos (urbanos/suburbanos sin edificaciones, y predios rústicos con distintos periodos de determinación), con la misma estructura de progresión por valor fiscal; no se agregan aquí para no mezclar múltiples tablas en una sola tabla principal. El artículo 4 prevé cuota mínima anual si el cálculo resulta inferior a la del artículo 38."
   },
   "_meta": {
     "fuente": "txt",
@@ -68,10 +68,12 @@
     "requiere_revision": false,
     "escalado": false,
     "razon": null,
+    "usado_reocr": false,
+    "usado_vision": false,
     "tokens": {
-      "input": 9640,
-      "output": 484,
-      "cached": 3840
+      "input": 10857,
+      "output": 508,
+      "cached": 5888
     },
     "cvegeo": "11042",
     "estado": "guanajuato",

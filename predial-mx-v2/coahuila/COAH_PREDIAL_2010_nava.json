@@ -2,10 +2,10 @@
   "predial": {
     "tipo_esquema": "otro_no_clasificado",
     "categoria": "segmento_vacio",
-    "descripcion_estructural": "El texto proporcionado no contiene la mecánica del Impuesto Predial del municipio de Nava, Coahuila. El fragmento visible corresponde a incentivos y luego al Impuesto Sobre Adquisición de Inmuebles, por lo que no aparece una tabla o regla tarifaria del predial para extraer.",
+    "descripcion_estructural": "El texto proporcionado del apartado \"Del Impuesto Predial\" no contiene la mecánica de cálculo del predial; sólo aparecen incentivos, condiciones de aplicación y después inicia el capítulo de otro impuesto. No hay tabla, cuota fija, tasa, rangos ni categorías del impuesto predial extraíbles en el fragmento.",
     "tabla_cruda": [],
     "minimo_predial": null,
-    "comentarios": "No se detectó estructura tarifaria de predial en el segmento entregado."
+    "comentarios": "No se detectó estructura tarifaria del impuesto predial en el fragmento recibido."
   },
   "_meta": {
     "fuente": "txt",
@@ -16,10 +16,12 @@
     "requiere_revision": true,
     "escalado": false,
     "razon": "clasificado_como_otro_no_clasificado",
+    "usado_reocr": false,
+    "usado_vision": true,
     "tokens": {
-      "input": 5606,
-      "output": 143,
-      "cached": 3840
+      "input": 15264,
+      "output": 383,
+      "cached": 11776
     },
     "cvegeo": "05022",
     "estado": "coahuila",

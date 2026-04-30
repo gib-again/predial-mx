@@ -5,7 +5,7 @@
       {
         "grupo": "urbano",
         "clave": "general_urbano_con_edificaciones",
-        "descripcion": "Inmuebles urbanos y suburbanos con edificaciones; entrada en vigor, años 2002 a 2022 inclusive, con anterioridad a 1993 y hasta 1993 inclusive, y con anterioridad a 1993 según la tabla del artículo 4.",
+        "descripcion": "Inmuebles urbanos y suburbanos con edificaciones",
         "tasa_millar": 0.0024,
         "periodicidad": "anual",
         "cuota_fija_adicional": null
@@ -13,22 +13,30 @@
       {
         "grupo": "urbano",
         "clave": "general_urbano_sin_edificaciones",
-        "descripcion": "Inmuebles urbanos y suburbanos sin edificaciones; entrada en vigor, años 2002 a 2022 inclusive, con anterioridad a 1993 y hasta 1993 inclusive, y con anterioridad a 1993 según la tabla del artículo 4.",
+        "descripcion": "Inmuebles urbanos y suburbanos sin edificaciones",
         "tasa_millar": 0.0045,
         "periodicidad": "anual",
         "cuota_fija_adicional": null
       },
       {
         "grupo": "rustico",
-        "clave": "general_rustico",
-        "descripcion": "Inmuebles rústicos; entrada en vigor, años 2002 a 2022 inclusive, con anterioridad a 1993 y hasta 1993 inclusive, y con anterioridad a 1993 según la tabla del artículo 4.",
+        "clave": "general_rustico_con_edificaciones",
+        "descripcion": "Inmuebles rústicos con edificaciones",
         "tasa_millar": 0.0018,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "rustico",
+        "clave": "general_rustico_sin_edificaciones",
+        "descripcion": "Inmuebles rústicos sin edificaciones",
+        "tasa_millar": 0.0045,
         "periodicidad": "anual",
         "cuota_fija_adicional": null
       }
     ],
     "minimo_predial": null,
-    "comentarios": "Artículo 4 contiene una tarifa categórica por tipo de inmueble (urbano/suburbano con edificaciones, urbano/suburbano sin edificaciones y rústico) expresada únicamente en tasas al millar, sin rangos de valor catastral. El texto muestra además tasas diferenciadas por antigüedad de valuación (1 a 4), pero no son brackets de valor catastral; se transcriben como parte de la mecánica categórica general en la descripción de cada fila. Se ignoran los artículos 5 y 6 por tratarse de valores unitarios catastrales, no de la mecánica del impuesto."
+    "comentarios": "Art. 4 establece tasas anuales al millar sobre el valor de los inmuebles con valor determinado o modificado, diferenciando por tipo de inmueble y presencia de edificaciones. Se transcribe la mecánica principal vigente para 2023: urbano/suburbano con edificaciones 2.4 al millar; urbano/suburbano sin edificaciones 4.5 al millar; rústicos con edificaciones 1.8 al millar; rústicos sin edificaciones 4.5 al millar. Las tasas históricas del mismo artículo para años anteriores no se incluyen por no corresponder al ejercicio 2023."
   },
   "_meta": {
     "fuente": "txt",
@@ -39,10 +47,12 @@
     "requiere_revision": false,
     "escalado": false,
     "razon": null,
+    "usado_reocr": false,
+    "usado_vision": false,
     "tokens": {
-      "input": 7859,
-      "output": 464,
-      "cached": 3840
+      "input": 9076,
+      "output": 391,
+      "cached": 5888
     },
     "cvegeo": "11030",
     "estado": "guanajuato",

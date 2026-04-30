@@ -2,10 +2,27 @@
   "predial": {
     "tipo_esquema": "otro_no_clasificado",
     "categoria": "estructura_no_estandar",
-    "descripcion_estructural": "El texto proporcionado sólo contiene la base jurídica del impuesto predial y reglas especiales de aplicación/recargos para predios urbanos no edificados y fraccionamientos, pero no incluye ninguna tabla o catálogo de tasas/cuotas del impuesto. No es posible extraer una mecánica de cálculo completa de las variantes tarifarias solicitadas.",
-    "tabla_cruda": [],
+    "descripcion_estructural": "El texto proporcionado sólo establece que el impuesto se causa sobre el valor catastral de los bienes raíces y remite a las fracciones del artículo 10, pero en el segmento enviado no aparecen las tarifas o tablas de cálculo aplicables. Las fracciones visibles contienen exclusiones y aumentos por incumplimiento, no la mecánica tarifaria principal extraíble.",
+    "tabla_cruda": [
+      {
+        "descripcion": "Artículo 10: base del impuesto",
+        "valores": "base=valor_catastral; se causa y liquida anualmente sobre inmuebles cuyo valor se determine o modifique a partir de la entrada en vigor de la ley"
+      },
+      {
+        "descripcion": "Fracción VI",
+        "valores": "predios urbanos no edificados de fraccionamientos autorizados: no se aplica la tasa prevista en la fracción IV"
+      },
+      {
+        "descripcion": "Fracción VII",
+        "valores": "adquirientes de lotes de fraccionamientos que no construyan en 3 años: pagarán 100% más del impuesto al término de ese tiempo"
+      },
+      {
+        "descripcion": "Fracción VIII",
+        "valores": "fraccionadores autorizados: pagarán 100% de aumento al impuesto por predios no vendidos en 3 años a partir de la autorización oficial de la venta"
+      }
+    ],
     "minimo_predial": null,
-    "comentarios": "Se ignoraron las disposiciones de aumento del 100% por ser recargos/ajustes especiales, no la mecánica base de cálculo. El segmento no muestra tasas, cuotas ni brackets aplicables."
+    "comentarios": "No se transcribe una tarifa principal porque el fragmento no incluye la fracción IV ni la tabla correspondiente. Las disposiciones visibles son reglas especiales, exclusiones y recargos/aumentos, que se ignoran para la mecánica base."
   },
   "_meta": {
     "fuente": "txt",
@@ -16,10 +33,12 @@
     "requiere_revision": true,
     "escalado": false,
     "razon": "clasificado_como_otro_no_clasificado",
+    "usado_reocr": false,
+    "usado_vision": false,
     "tokens": {
-      "input": 5189,
-      "output": 165,
-      "cached": 3840
+      "input": 6406,
+      "output": 355,
+      "cached": 5888
     },
     "cvegeo": "28027",
     "estado": "tamaulipas",

@@ -57,7 +57,7 @@
       "periodicidad": "anual",
       "unidad": "pesos"
     },
-    "comentarios": "Art. 12: tarifa principal por valor catastral con cuota fija + factor (tasa marginal) sobre el excedente. Tarifas paralelas no incluidas en la tabla principal: predios rústicos pagan cuotas fijas por superficie ($200 de 1 a 20 m2, $300 de 21 a 40 m2, $400 de 41 m2 en adelante) y, cuando no pueda determinarse el pago con base en el valor catastral, se cobra cuota fija anual de $70 por predio. Art. 15 establece tasa sobre rentas o frutos civiles (habitacional 4%, comercial 5%, radio bases 5%), materia ignorada por ser frutal/civil y no mecánica principal del predial sobre valor catastral. Art. 14 descuento ignorado."
+    "comentarios": "Art. 12: tarifa por valor catastral con cuota fija + factor sobre el excedente, por lo que se codifica como progresivo. Tarifa paralela: predios rústicos pagan cuotas fijas por superficie ($200 de 1 a 20 m2; $300 de 21 a 40 m2; $400 de 41 m2 en adelante), no incluida en la tabla principal por ser mecánica separada. Art. 15: cuando el predial se cause sobre rentas o frutos civiles, se paga mensualmente 4% habitacional, 5% comercial y 5% para instalación de radio bases de telefonía; se documenta como tarifa secundaria. Art. 12 también establece cuota fija anual de $70 cuando no pueda determinarse el pago con base en el valor catastral; se registra como mínimo predial por ser el cobro fijo aplicable en ese supuesto."
   },
   "_meta": {
     "fuente": "txt",
@@ -68,10 +68,12 @@
     "requiere_revision": false,
     "escalado": false,
     "razon": null,
+    "usado_reocr": false,
+    "usado_vision": false,
     "tokens": {
-      "input": 6330,
-      "output": 484,
-      "cached": 3840
+      "input": 7547,
+      "output": 503,
+      "cached": 5888
     },
     "cvegeo": "31009",
     "estado": "yucatan",

@@ -9,8 +9,12 @@
         "unidad": "pesos"
       }
     ],
+    "tarifas_secundarias": [
+      "Art. 13: predial rústico $23.00 anual.",
+      "Art. 15: impuesto predial con base en rentas o frutos civiles mensuales: casas habitación 2% y actividades comerciales 2%."
+    ],
     "minimo_predial": null,
-    "comentarios": "Art. 13 establece una cuota fija anual para predial urbano ($25.00) y otra para predial rústico ($23.00). Sin embargo, el texto también contiene en el Art. 15 una regla separada sobre rentas o frutos civiles (2% mensual para casas habitación y actividades comerciales), la cual corresponde a frutos civiles y no a la mecánica del impuesto predial sobre valor/catastro; por ello no se incorpora en la tabla principal. El segmento de predial presenta además dos tarifas paralelas por tipo de inmueble (urbano y rústico), pero la estructura tarifaria principal aquí es una cuota fija simple para la entrada urbana transcrita en el texto proporcionado."
+    "comentarios": "El artículo 13 establece cuotas fijas anuales por tipo de predio (urbano y rústico), sin rangos ni tasas al millar; se transcribe como cuota fija simple. El artículo 15 contiene una mecánica secundaria basada en rentas o frutos civiles mensuales, que no es la mecánica principal del predial y se documenta aparte."
   },
   "_meta": {
     "fuente": "txt",
@@ -21,10 +25,12 @@
     "requiere_revision": false,
     "escalado": false,
     "razon": null,
+    "usado_reocr": false,
+    "usado_vision": false,
     "tokens": {
-      "input": 5056,
-      "output": 213,
-      "cached": 3840
+      "input": 6273,
+      "output": 198,
+      "cached": 5888
     },
     "cvegeo": "31067",
     "estado": "yucatan",

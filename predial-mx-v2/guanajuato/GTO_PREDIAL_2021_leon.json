@@ -50,7 +50,7 @@
       "periodicidad": "anual",
       "unidad": "pesos"
     },
-    "comentarios": "Art. 5, fracción I, inciso a): para urbanos, suburbanos y rústicos con edificaciones, el texto establece una tabla de valor fiscal con cuota fija + tasa marginal sobre el excedente. Se transcriben los brackets con tasas 0.234% a 0.351%. El texto también contiene tarifas paralelas para predios sin edificación (incisos b) por superficie y para otros periodos históricos de valuación; no se mezclan en la tabla principal. El apartado de valor mínimo indica $83.05 anual. No se extraen valores unitarios de catastro del artículo 6."
+    "comentarios": "Art. 5, fracc. I, inciso a) (urbanos, suburbanos y rústicos con edificaciones): tabla progresiva con cuota fija + tasa marginal sobre el excedente. Se transcribe solo la mecánica principal del predial. Fracc. I, inciso b) y fraccs. II/III: para predios sin edificación y para inmuebles anteriores al 31/dic/2006 se observan tablas por superficie o tasas planas/categóricas que forman esquemas paralelos; no se incluyen en la tabla principal para no mezclar mecánicas. Art. 5 también señala fórmula ((VF-LI)*T)+CF. Valor mínimo predial: $83.05 anual."
   },
   "_meta": {
     "fuente": "txt",
@@ -61,9 +61,11 @@
     "requiere_revision": false,
     "escalado": false,
     "razon": null,
+    "usado_reocr": false,
+    "usado_vision": false,
     "tokens": {
-      "input": 71861,
-      "output": 451,
+      "input": 73078,
+      "output": 474,
       "cached": 0
     },
     "cvegeo": "11020",

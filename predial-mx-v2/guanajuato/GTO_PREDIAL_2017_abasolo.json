@@ -4,31 +4,31 @@
     "tabla": [
       {
         "grupo": "general",
-        "clave": "urbano_suburbano_con_edificaciones",
-        "descripcion": "Inmuebles urbanos y suburbanos con edificaciones, a la entrada en vigor de la ley y durante 2002 a 2016 inclusive",
+        "clave": "urbano_con_edificaciones",
+        "descripcion": "Inmuebles urbanos y suburbanos con edificaciones",
         "tasa_millar": 0.0024,
         "periodicidad": "anual",
         "cuota_fija_adicional": null
       },
       {
         "grupo": "general",
-        "clave": "urbano_suburbano_sin_edificaciones",
-        "descripcion": "Inmuebles urbanos y suburbanos sin edificaciones, a la entrada en vigor de la ley y durante 2002 a 2016 inclusive",
+        "clave": "urbano_sin_edificaciones",
+        "descripcion": "Inmuebles urbanos y suburbanos sin edificaciones",
         "tasa_millar": 0.0045,
         "periodicidad": "anual",
         "cuota_fija_adicional": null
       },
       {
         "grupo": "rustico",
-        "clave": "rustico_general",
-        "descripcion": "Inmuebles rústicos, a la entrada en vigor de la ley y durante 2002 a 2016 inclusive",
+        "clave": "rustico",
+        "descripcion": "Inmuebles rústicos",
         "tasa_millar": 0.0018,
         "periodicidad": "anual",
         "cuota_fija_adicional": null
       }
     ],
     "minimo_predial": null,
-    "comentarios": "Art. 4 establece tasas al millar por categoría de predio. Se transcribe la tarifa de las dos primeras filas del cuadro visible en el texto: inmuebles urbanos y suburbanos con edificaciones 2.4 al millar; sin edificaciones 4.5 al millar; y predios rústicos 1.8 al millar. El fragmento proporcionado no permite distinguir con certeza las demás líneas históricas del cuadro (años 2002-1993 y anteriores) por el corrimiento/rotura del OCR, por lo que no se incluyen para no inferir estructura no segura. Art. 5 y 6 son valores unitarios catastrales, no mecánica del impuesto."
+    "comentarios": "Artículo 4 establece tasas anuales al millar por categoría de inmueble. Se transcribe sólo la mecánica principal del predial. No se incluyó la tabla de valores unitarios del Artículo 5, pues corresponde a valuación catastral, no a tarifa. No se incluyeron descuentos ni bonificaciones."
   },
   "_meta": {
     "fuente": "txt",
@@ -39,10 +39,12 @@
     "requiere_revision": false,
     "escalado": false,
     "razon": null,
+    "usado_reocr": false,
+    "usado_vision": false,
     "tokens": {
-      "input": 7432,
-      "output": 404,
-      "cached": 0
+      "input": 8649,
+      "output": 259,
+      "cached": 5888
     },
     "cvegeo": "11001",
     "estado": "guanajuato",

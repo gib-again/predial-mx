@@ -4,31 +4,31 @@
     "tabla": [
       {
         "grupo": "urbano",
-        "clave": "entrada_en_vigor_ley",
-        "descripcion": "Inmuebles urbanos y suburbanos con valor determinado o modificado",
+        "clave": "urbanos_y_suburbanos_moderno",
+        "descripcion": "Inmuebles urbanos y suburbanos con valor determinado o modificado: a la entrada en vigor de la ley, 2002 a 2020 inclusive, anterior a 2002 y hasta 1993 inclusive, y con anterioridad a 1993.",
         "tasa_millar": 0.0024,
         "periodicidad": "anual",
         "cuota_fija_adicional": null
       },
       {
         "grupo": "rustico",
-        "clave": "entrada_en_vigor_ley",
-        "descripcion": "Inmuebles rústicos con edificaciones",
+        "clave": "rusticos_con_edificaciones",
+        "descripcion": "Inmuebles rústicos con edificaciones: a la entrada en vigor de la ley, 2002 a 2020 inclusive, anterior a 2002 y hasta 1993 inclusive, y con anterioridad a 1993.",
         "tasa_millar": 0.0045,
         "periodicidad": "anual",
         "cuota_fija_adicional": null
       },
       {
         "grupo": "rustico",
-        "clave": "entrada_en_vigor_ley",
-        "descripcion": "Inmuebles rústicos sin edificaciones",
+        "clave": "rusticos_sin_edificaciones",
+        "descripcion": "Inmuebles rústicos sin edificaciones: a la entrada en vigor de la ley, 2002 a 2020 inclusive, anterior a 2002 y hasta 1993 inclusive, y con anterioridad a 1993.",
         "tasa_millar": 0.0018,
         "periodicidad": "anual",
         "cuota_fija_adicional": null
       }
     ],
     "minimo_predial": null,
-    "comentarios": "Art. 4 establece tasas anuales al millar por tipo de inmueble y condición. La mecánica del impuesto predial es una tarifa por categoría, no por rangos de valor catastral. Se transcribe únicamente la primera tasa vigente aplicable; el texto muestra también tasas diferenciadas por antigüedad de valuación: durante 2002-2020, 2.4/4.5/1.8 al millar; con anterioridad al año 2002 y hasta 1993, 8/15/6 al millar; y con anterioridad a 1993, 13/13/12 al millar."
+    "comentarios": "Artículo 4 establece tasas anuales al millar por tipo de inmueble y condición histórica, sin rangos de valor catastral. Los valores unitarios de los artículos 5 y 6 son de valuación catastral y no forman parte de la mecánica de cálculo. No se reportan tarifas secundarias en el texto proporcionado."
   },
   "_meta": {
     "fuente": "txt",
@@ -39,10 +39,12 @@
     "requiere_revision": false,
     "escalado": false,
     "razon": null,
+    "usado_reocr": false,
+    "usado_vision": false,
     "tokens": {
-      "input": 7425,
-      "output": 338,
-      "cached": 3840
+      "input": 8642,
+      "output": 392,
+      "cached": 5888
     },
     "cvegeo": "11028",
     "estado": "guanajuato",

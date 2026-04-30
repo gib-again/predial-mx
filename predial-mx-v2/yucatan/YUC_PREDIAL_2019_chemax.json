@@ -1,59 +1,101 @@
 {
   "predial": {
-    "tipo_esquema": "progresivo",
+    "tipo_esquema": "mixto",
     "tabla": [
       {
         "n_rango": 1,
-        "inferior": 0.0,
+        "inferior": 0.01,
         "superior": 5000.0,
-        "cuota_fija": 100.0,
-        "tasa_marginal": 1e-05
+        "columnas": [
+          {
+            "nombre": "general",
+            "valor": 100.0,
+            "tipo": "cuota_fija",
+            "unidad": "pesos"
+          }
+        ]
       },
       {
         "n_rango": 2,
-        "inferior": 5000.0,
+        "inferior": 5000.01,
         "superior": 7500.0,
-        "cuota_fija": 130.0,
-        "tasa_marginal": 1e-05
+        "columnas": [
+          {
+            "nombre": "general",
+            "valor": 130.0,
+            "tipo": "cuota_fija",
+            "unidad": "pesos"
+          }
+        ]
       },
       {
         "n_rango": 3,
-        "inferior": 7500.0,
+        "inferior": 7500.01,
         "superior": 10500.0,
-        "cuota_fija": 160.0,
-        "tasa_marginal": 1e-05
+        "columnas": [
+          {
+            "nombre": "general",
+            "valor": 160.0,
+            "tipo": "cuota_fija",
+            "unidad": "pesos"
+          }
+        ]
       },
       {
         "n_rango": 4,
-        "inferior": 10500.0,
+        "inferior": 10500.01,
         "superior": 12500.0,
-        "cuota_fija": 190.0,
-        "tasa_marginal": 1e-05
+        "columnas": [
+          {
+            "nombre": "general",
+            "valor": 190.0,
+            "tipo": "cuota_fija",
+            "unidad": "pesos"
+          }
+        ]
       },
       {
         "n_rango": 5,
-        "inferior": 12500.0,
+        "inferior": 12500.01,
         "superior": 15000.0,
-        "cuota_fija": 220.0,
-        "tasa_marginal": 1e-05
+        "columnas": [
+          {
+            "nombre": "general",
+            "valor": 220.0,
+            "tipo": "cuota_fija",
+            "unidad": "pesos"
+          }
+        ]
       },
       {
         "n_rango": 6,
         "inferior": 15000.0,
         "superior": 20000.0,
-        "cuota_fija": 260.0,
-        "tasa_marginal": 1e-05
+        "columnas": [
+          {
+            "nombre": "general",
+            "valor": 260.0,
+            "tipo": "cuota_fija",
+            "unidad": "pesos"
+          }
+        ]
       },
       {
         "n_rango": 7,
         "inferior": 20000.0,
         "superior": null,
-        "cuota_fija": 300.0,
-        "tasa_marginal": 1e-05
+        "columnas": [
+          {
+            "nombre": "general",
+            "valor": 300.0,
+            "tipo": "cuota_fija",
+            "unidad": "pesos"
+          }
+        ]
       }
     ],
     "minimo_predial": null,
-    "comentarios": "Art. 13: se transcribe la tarifa principal por valor catastral con cuota fija anual y factor sobre el excedente. El texto muestra una discontinuidad en el original entre $15,000.00 y $15,500.01; para evitar huecos de validación se normalizó el límite inferior del 6.º rango a 15000 y el siguiente a 20000, manteniendo la secuencia contigua. Tarifa paralela secundaria: predios destinados a la producción agropecuaria pagan 10 al millar anual sobre el valor registrado o catastral; no se integra en la tabla principal por tratarse de una tarifa separada."
+    "comentarios": "Art. 13: la tarifa principal es una tabla por rangos de valor catastral con cuota fija anual y factor para aplicar al excedente, pero el texto muestra el factor como 0.001% en todos los brackets. Se codifica como mixto porque la tabla impresa combina cuota fija en pesos con una tasa porcentual explícita sobre el excedente; la base es única y no hay categorías. Además, el propio artículo incluye una tarifa paralela para predios destinados a la producción agropecuaria de 10 al millar anual sobre el valor registrado o catastral, que no se incorpora a la tabla principal por ser una tarifa separada. Los renglones de valuación catastral de terreno y construcción posteriores son tablas de valores unitarios, no tarifa del predial."
   },
   "_meta": {
     "fuente": "txt",
@@ -64,10 +106,12 @@
     "requiere_revision": false,
     "escalado": false,
     "razon": null,
+    "usado_reocr": false,
+    "usado_vision": false,
     "tokens": {
-      "input": 12812,
-      "output": 864,
-      "cached": 8704
+      "input": 15456,
+      "output": 1191,
+      "cached": 11776
     },
     "cvegeo": "31019",
     "estado": "yucatan",

@@ -4,71 +4,39 @@
     "tabla": [
       {
         "grupo": "urbano",
-        "clave": "con_edificaciones",
-        "descripcion": "Inmuebles urbanos y suburbanos con edificaciones; a la entrada en vigor de la presente Ley",
-        "tasa_millar": 0.0024,
+        "clave": "inmuebles_urbanos_y_suburbanos_con_edificaciones",
+        "descripcion": "Inmuebles urbanos y suburbanos con edificaciones; valor determinado o modificado.",
+        "tasa_millar": 0.018,
         "periodicidad": "anual",
         "cuota_fija_adicional": null
       },
       {
         "grupo": "urbano",
-        "clave": "sin_edificaciones",
-        "descripcion": "Inmuebles urbanos y suburbanos sin edificaciones; a la entrada en vigor de la presente Ley",
-        "tasa_millar": 0.0045,
+        "clave": "inmuebles_urbanos_y_suburbanos_sin_edificaciones",
+        "descripcion": "Inmuebles urbanos y suburbanos sin edificaciones; valor determinado o modificado.",
+        "tasa_millar": 0.045,
         "periodicidad": "anual",
         "cuota_fija_adicional": null
       },
       {
-        "grupo": "urbano",
-        "clave": "con_edificaciones_2002_2022",
-        "descripcion": "Inmuebles urbanos y suburbanos con edificaciones; durante los años 2002 y hasta el año 2022, inclusive",
-        "tasa_millar": 0.0024,
+        "grupo": "rustico",
+        "clave": "inmuebles_rusticos_con_edificaciones",
+        "descripcion": "Inmuebles rústicos con edificaciones.",
+        "tasa_millar": 0.018,
         "periodicidad": "anual",
         "cuota_fija_adicional": null
       },
       {
-        "grupo": "urbano",
-        "clave": "sin_edificaciones_2002_2022",
-        "descripcion": "Inmuebles urbanos y suburbanos sin edificaciones; durante los años 2002 y hasta el año 2022, inclusive",
-        "tasa_millar": 0.0045,
-        "periodicidad": "anual",
-        "cuota_fija_adicional": null
-      },
-      {
-        "grupo": "urbano",
-        "clave": "con_edificaciones_1993_2001",
-        "descripcion": "Inmuebles urbanos y suburbanos con edificaciones; con anterioridad al año 2002 y hasta el año 1993, inclusive",
-        "tasa_millar": 0.008,
-        "periodicidad": "anual",
-        "cuota_fija_adicional": null
-      },
-      {
-        "grupo": "urbano",
-        "clave": "sin_edificaciones_1993_2001",
-        "descripcion": "Inmuebles urbanos y suburbanos sin edificaciones; con anterioridad al año 2002 y hasta el año 1993, inclusive",
-        "tasa_millar": 0.015,
-        "periodicidad": "anual",
-        "cuota_fija_adicional": null
-      },
-      {
-        "grupo": "urbano",
-        "clave": "con_edificaciones_anterior_1993",
-        "descripcion": "Inmuebles urbanos y suburbanos con edificaciones; con anterioridad al año de 1993",
-        "tasa_millar": 0.043,
-        "periodicidad": "anual",
-        "cuota_fija_adicional": null
-      },
-      {
-        "grupo": "urbano",
-        "clave": "sin_edificaciones_anterior_1993",
-        "descripcion": "Inmuebles urbanos y suburbanos sin edificaciones; con anterioridad al año de 1993",
-        "tasa_millar": 0.013,
+        "grupo": "rustico",
+        "clave": "inmuebles_rusticos_sin_edificaciones",
+        "descripcion": "Inmuebles rústicos sin edificaciones.",
+        "tasa_millar": 0.024,
         "periodicidad": "anual",
         "cuota_fija_adicional": null
       }
     ],
     "minimo_predial": null,
-    "comentarios": "Art. 4 establece tasas anuales al millar para inmuebles urbanos y suburbanos diferenciadas por presencia/ausencia de edificaciones y por antigüedad; no se incluye la valuación de Art. 5-6 porque describe valores unitarios para catastro, no la mecánica de cálculo del impuesto. No se transcriben tarifas paralelas rústicas porque en el texto proporcionado no aparece una tasa de cobro específica distinta dentro de esta sección, sólo tablas de valores catastrales."
+    "comentarios": "Artículo 4 establece tasas anuales al millar diferenciadas por tipo de inmueble y por existencia de edificaciones. Se transcribe la mecánica principal como catálogo categórico; no se incorporan las tablas de valores unitarios de los artículos 5 y 6 porque corresponden a valuación/catastro, no a tarifa del impuesto. La lectura OCR presenta una fila adicional truncada/borrosa al final del cuadro de tasas; no se usa para evitar inventar una tarifa no legible. No se observan cuotas fijas adicionales ni mínimo predial en el segmento proporcionado."
   },
   "_meta": {
     "fuente": "txt",
@@ -79,10 +47,12 @@
     "requiere_revision": false,
     "escalado": false,
     "razon": null,
+    "usado_reocr": false,
+    "usado_vision": false,
     "tokens": {
-      "input": 7440,
-      "output": 693,
-      "cached": 3840
+      "input": 8657,
+      "output": 403,
+      "cached": 5888
     },
     "cvegeo": "11036",
     "estado": "guanajuato",

@@ -20,15 +20,31 @@
       },
       {
         "grupo": "urbano",
-        "clave": "residencial_interes_social_popular_con_edificacion",
+        "clave": "comercial_sin_edificacion",
+        "descripcion": "Predios urbanos comerciales sin edificación; 1.33 veces lo fijado para los predios con edificación",
+        "tasa_millar": 0.00665,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "urbano",
+        "clave": "residencial_con_edificacion",
         "descripcion": "Predios urbanos residenciales, de interés social y populares con edificación",
         "tasa_millar": 0.005,
         "periodicidad": "anual",
         "cuota_fija_adicional": null
       },
       {
+        "grupo": "urbano",
+        "clave": "residencial_sin_edificacion",
+        "descripcion": "Predios urbanos residenciales, de interés social y populares sin edificación; 1.33 veces lo fijado para los predios con edificación",
+        "tasa_millar": 0.00665,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
         "grupo": "rustico",
-        "clave": "rustico",
+        "clave": "rustico_general",
         "descripcion": "Predios rústicos",
         "tasa_millar": 0.003,
         "periodicidad": "anual",
@@ -40,7 +56,7 @@
       "periodicidad": "bimestral",
       "unidad": "pesos"
     },
-    "comentarios": "Art. 2: tarifa principal por categoría sobre valor catastral. Se transcribe sólo la mecánica de cálculo; no se incluyen incentivos/bonificaciones/recargos. Tarifas paralelas o condiciones especiales descritas en el mismo artículo: predios urbanos comerciales sin edificación pagan 1.33 veces lo fijado para los predios con edificación; predios urbanos residenciales, de interés social y populares sin edificación pagan 1.33 veces lo fijado para los predios con edificación; predios de instituciones educativas no públicas pagan 1 al millar anual; predios con licencia de fraccionamiento autorizada y en vías de desarrollo pagan el 20% del impuesto predial correspondiente al valor considerado como predio ya fraccionado y desarrollado; predios urbanos y rústicos prestados al municipio para actividad deportiva o social cubren únicamente el 10% de la cuota que les corresponda. Art. 3 contiene incentivos fiscales para empresas y personas con discapacidad, no integrados a la tabla por ser reducciones condicionadas."
+    "comentarios": "Art. 2: la base es el valor catastral de cada inmueble. Se documentan únicamente las tasas principales; los incentivos/bonificaciones del mismo artículo se ignoran por instrucción. El texto también establece una tasa de 1 al millar anual para predios de instituciones educativas no públicas y un beneficio para predios con licencia de fraccionamiento autorizada; se omiten como incentivos/beneficios no estructurales de la mecánica principal. Para los predios urbanos comerciales y residenciales sin edificación, la ley indica 1.33 veces lo fijado para los predios con edificación."
   },
   "_meta": {
     "fuente": "txt",
@@ -51,10 +67,12 @@
     "requiere_revision": false,
     "escalado": false,
     "razon": null,
+    "usado_reocr": false,
+    "usado_vision": false,
     "tokens": {
-      "input": 5907,
-      "output": 477,
-      "cached": 3840
+      "input": 7124,
+      "output": 523,
+      "cached": 5888
     },
     "cvegeo": "05027",
     "estado": "coahuila",

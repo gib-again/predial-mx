@@ -4,16 +4,16 @@
     "tabla": [
       {
         "grupo": "urbano",
-        "clave": "urbanos_suburbanos_con_edificaciones",
-        "descripcion": "Inmuebles urbanos y suburbanos con edificaciones; valor determinado o modificado a la entrada en vigor de la ley",
+        "clave": "urbanos_y_suburbanos_con_edificaciones",
+        "descripcion": "Inmuebles urbanos y suburbanos con edificaciones (valores determinados o modificados a la entrada en vigor de la ley, y también los determinados o modificados durante 2002-2016 inclusive)",
         "tasa_millar": 0.0024,
         "periodicidad": "anual",
         "cuota_fija_adicional": null
       },
       {
         "grupo": "urbano",
-        "clave": "urbanos_suburbanos_sin_edificaciones",
-        "descripcion": "Inmuebles urbanos y suburbanos sin edificaciones; valor determinado o modificado a la entrada en vigor de la ley",
+        "clave": "urbanos_y_suburbanos_sin_edificaciones",
+        "descripcion": "Inmuebles urbanos y suburbanos sin edificaciones (valores determinados o modificados a la entrada en vigor de la ley, y también los determinados o modificados durante 2002-2016 inclusive)",
         "tasa_millar": 0.0045,
         "periodicidad": "anual",
         "cuota_fija_adicional": null
@@ -21,14 +21,14 @@
       {
         "grupo": "rustico",
         "clave": "rusticos",
-        "descripcion": "Inmuebles rústicos; valor determinado o modificado a la entrada en vigor de la ley",
+        "descripcion": "Inmuebles rústicos (valores determinados o modificados a la entrada en vigor de la ley, y también los determinados o modificados durante 2002-2016 inclusive)",
         "tasa_millar": 0.0018,
         "periodicidad": "anual",
         "cuota_fija_adicional": null
       }
     ],
     "minimo_predial": null,
-    "comentarios": "Art. 4 establece tasas al millar categóricas por tipo de inmueble, sin rangos de valor catastral: urbanos y suburbanos con edificaciones 2.4 al millar; urbanos y suburbanos sin edificaciones 4.5 al millar; rústicos 1.8 al millar. Se reproducen sólo las tasas del ejercicio 2017. Las tablas de valores unitarios de los artículos 5 y 6 son catastro/avalúo y no forman parte de la mecánica del impuesto."
+    "comentarios": "Art. 4 fracc. III establece una tarifa paralela para inmuebles con valor determinado o modificado con anterioridad al año 2002 y hasta 1993 inclusive: urbanos y suburbanos con edificaciones 8 al millar, sin edificaciones 15 al millar, y rústicos 6 al millar. Se documenta sólo como referencia textual por tratarse de una tarifa paralela adicional a la principal."
   },
   "_meta": {
     "fuente": "txt",
@@ -39,10 +39,12 @@
     "requiere_revision": false,
     "escalado": false,
     "razon": null,
+    "usado_reocr": false,
+    "usado_vision": false,
     "tokens": {
-      "input": 7736,
-      "output": 353,
-      "cached": 3840
+      "input": 8953,
+      "output": 387,
+      "cached": 5888
     },
     "cvegeo": "11015",
     "estado": "guanajuato",

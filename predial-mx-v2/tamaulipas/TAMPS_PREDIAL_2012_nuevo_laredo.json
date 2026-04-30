@@ -28,7 +28,7 @@
       },
       {
         "grupo": "urbano",
-        "clave": "predios_urbanos_y_suburbanos_sin_edificaciones_baldios",
+        "clave": "predios_urbanos_y_suburbanos_sin_edificacion_baldios",
         "descripcion": "Predios urbanos y suburbanos sin edificaciones (baldíos)",
         "tasa_millar": 0.003,
         "periodicidad": "anual",
@@ -36,7 +36,7 @@
       },
       {
         "grupo": "urbano",
-        "clave": "predios_urbanos_de_uso_industrial",
+        "clave": "predios_urbanos_uso_industrial",
         "descripcion": "Predios urbanos de uso industrial",
         "tasa_millar": 0.003,
         "periodicidad": "anual",
@@ -44,7 +44,7 @@
       }
     ],
     "minimo_predial": null,
-    "comentarios": "Art. 9: se establecen tasas al millar por tipo de predio sobre el valor catastral. Las fracciones VI a VIII sólo regulan excepciones y aumentos por fraccionamientos/no construcción; no se transcriben como tarifa base. Art. 10 corresponde al impuesto sobre adquisición de inmuebles, no al predial, por lo que se ignora."
+    "comentarios": "Art. 9: la base de cálculo es el valor catastral de los inmuebles. Se documentan únicamente las tasas del impuesto predial. Los numerales VI, VII y VIII establecen excepciones y aumentos para ciertos supuestos de fraccionamientos, pero no constituyen una tarifa estructural distinta en la tabla principal."
   },
   "_meta": {
     "fuente": "txt",
@@ -55,10 +55,12 @@
     "requiere_revision": false,
     "escalado": false,
     "razon": null,
+    "usado_reocr": false,
+    "usado_vision": false,
     "tokens": {
-      "input": 6346,
-      "output": 391,
-      "cached": 3840
+      "input": 7563,
+      "output": 380,
+      "cached": 5888
     },
     "cvegeo": "28027",
     "estado": "tamaulipas",

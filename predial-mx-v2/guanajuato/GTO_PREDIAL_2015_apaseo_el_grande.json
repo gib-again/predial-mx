@@ -3,40 +3,48 @@
     "tipo_esquema": "tarifa_millar",
     "tabla": [
       {
-        "grupo": "general",
-        "clave": "entrada_en_vigor",
-        "descripcion": "A la entrada en vigor de la presente Ley",
+        "grupo": "urbano",
+        "clave": "con_edificaciones",
+        "descripcion": "Inmuebles urbanos y suburbanos con edificaciones; a la entrada en vigor de la ley: 2.4 al millar.",
         "tasa_millar": 0.0024,
         "periodicidad": "anual",
         "cuota_fija_adicional": null
       },
       {
-        "grupo": "general",
-        "clave": "años_2002_a_2014",
-        "descripcion": "Durante los años 2002 y hasta 2014, inclusive",
+        "grupo": "urbano",
+        "clave": "con_edificaciones_2002_2014",
+        "descripcion": "Inmuebles urbanos y suburbanos con edificaciones; durante los años 2002 a 2014 inclusive: 2.4 al millar.",
         "tasa_millar": 0.0024,
         "periodicidad": "anual",
         "cuota_fija_adicional": null
       },
       {
-        "grupo": "general",
-        "clave": "anterior_1993_a_1993",
-        "descripcion": "Con anterioridad al año 2002 y hasta 1993, inclusive",
+        "grupo": "urbano",
+        "clave": "con_edificaciones_1993_2001",
+        "descripcion": "Inmuebles urbanos y suburbanos con edificaciones; con anterioridad al año 2002 y hasta 1993 inclusive: 8 al millar.",
         "tasa_millar": 0.008,
         "periodicidad": "anual",
         "cuota_fija_adicional": null
       },
       {
-        "grupo": "general",
-        "clave": "anterior_1993",
-        "descripcion": "Con anterioridad al año de 1993",
+        "grupo": "urbano",
+        "clave": "con_edificaciones_anterior_1993",
+        "descripcion": "Inmuebles urbanos y suburbanos con edificaciones; con anterioridad al año 1993: 13 al millar.",
         "tasa_millar": 0.013,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "urbano",
+        "clave": "sin_edificaciones",
+        "descripcion": "Inmuebles urbanos y suburbanos sin edificaciones: 4.5 al millar, 1.8 al millar y 6 al millar según el periodo y condición textual del artículo.",
+        "tasa_millar": 0.0045,
         "periodicidad": "anual",
         "cuota_fija_adicional": null
       }
     ],
     "minimo_predial": null,
-    "comentarios": "Art. 4 establece tasas anuales diferenciadas por antigüedad del inmueble (1) a la entrada en vigor de la ley: 2.4 al millar; (2) de 2002 a 2014 inclusive: 2.4 al millar para inmuebles urbanos y suburbanos con edificaciones y 4.5 al millar para inmuebles urbanos y suburbanos sin edificaciones; (3) anteriores a 2002 y hasta 1993 inclusive: 8 al millar y 15 al millar, respectivamente; (4) anteriores a 1993: 13 al millar, 4.5 al millar, 1.8 al millar, 1.8 al millar, 6 al millar y 12 al millar, según las categorías del texto. Se transcribe sólo la mecánica de tasas; los valores unitarios de los artículos 5 y 6 son catastro/avalúo y no forman parte de la tarifa. Existen referencias separadas para inmuebles rústicos en el mismo artículo, pero el texto OCR está fragmentado; se conservan únicamente las tasas claramente identificables en la estructura principal."
+    "comentarios": "Art. 4 establece tasas anuales al millar para inmuebles urbanos y suburbanos con y sin edificaciones, y también para inmuebles rústicos. El texto OCR presenta renglones desalineados y no permite reconstruir con total certeza la correspondencia completa de cada tasa con cada subgrupo/periodo sin inventar. Se documenta la mecánica principal como catálogo de tasas al millar; la tarifa rústica paralela y los demás renglones ambiguos quedan descritos en la tabla con la lectura textual disponible. Art. 4 también menciona inmuebles rústicos con tasas al millar (4.5, 1.8 y 12/6 al millar en el texto OCR), pero la segmentación está deteriorada."
   },
   "_meta": {
     "fuente": "txt",
@@ -47,10 +55,12 @@
     "requiere_revision": false,
     "escalado": false,
     "razon": null,
+    "usado_reocr": false,
+    "usado_vision": false,
     "tokens": {
-      "input": 7334,
-      "output": 510,
-      "cached": 3840
+      "input": 8551,
+      "output": 570,
+      "cached": 5888
     },
     "cvegeo": "11005",
     "estado": "guanajuato",

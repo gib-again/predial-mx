@@ -2,10 +2,10 @@
   "predial": {
     "tipo_esquema": "otro_no_clasificado",
     "categoria": "segmento_vacio",
-    "descripcion_estructural": "El texto proporcionado no contiene el articulado ni tablas del Impuesto Predial de Cortazar; sólo aparecen portadas, encabezados y páginas en blanco o sin contenido tarifario visible entre las páginas indicadas. No es posible extraer la mecánica de cálculo sin inventar información.",
+    "descripcion_estructural": "El texto proporcionado incluye únicamente la portada y páginas en blanco o sin contenido tarifario visible para la sección de impuesto predial. No se observa tabla, cuotas, tasas ni mecánica de cálculo extraíble en el segmento enviado.",
     "tabla_cruda": [],
     "minimo_predial": null,
-    "comentarios": "No se detectó estructura tarifaria del impuesto predial en el segmento entregado."
+    "comentarios": "No fue posible extraer mecánica del impuesto predial porque el segmento carece de contenido tarifario legible."
   },
   "_meta": {
     "fuente": "txt",
@@ -16,10 +16,12 @@
     "requiere_revision": true,
     "escalado": false,
     "razon": "clasificado_como_otro_no_clasificado",
+    "usado_reocr": true,
+    "usado_vision": true,
     "tokens": {
-      "input": 5801,
-      "output": 133,
-      "cached": 3840
+      "input": 32190,
+      "output": 451,
+      "cached": 17664
     },
     "cvegeo": "11011",
     "estado": "guanajuato",

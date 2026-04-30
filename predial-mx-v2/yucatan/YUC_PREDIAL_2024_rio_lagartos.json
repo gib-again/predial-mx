@@ -1,18 +1,33 @@
 {
-  "predial": null,
+  "predial": {
+    "tipo_esquema": "tasa_unica",
+    "tabla": [
+      {
+        "descripcion": "Predios urbanos y rústicos en Zona Costera, impuesto predial sobre valor catastral",
+        "tasa": 0.008,
+        "base_calculo": "porcentaje",
+        "unidad": "porcentaje",
+        "cuota_fija_adicional": null
+      }
+    ],
+    "minimo_predial": null,
+    "comentarios": "La mecánica principal extraíble del texto es una tasa única sobre el valor catastral para la Zona Costera: 'el impuesto predial a pagar será el 0.008% del valor catastral'. En el resto del artículo aparecen factores de cálculo para Cabecera Municipal y comisarías (0.00025, 0.0025, 0.00008, 0.000025), además de valores unitarios de terreno/construcción y tarifas paralelas cuando no se pueda determinar el valor catastral; esos valores unitarios son catastrales y no una tabla tarifaria homogénea única de predial para estructurar aquí sin mezclar esquemas paralelos. También se establece una tarifa paralela de 2,000 pesos por hectárea para predios destinados a la producción agropecuaria, y el artículo 16 fija 3% y 5% sobre rentas o frutos civiles, lo cual corresponde a un impuesto distinto con base en rentas y no se incorpora en la tabla principal."
+  },
   "_meta": {
     "fuente": "txt",
     "modelo": "gpt-5.4"
   },
   "_meta_v2": {
     "intentos": 3,
-    "requiere_revision": true,
+    "requiere_revision": false,
     "escalado": true,
-    "razon": "valido_3x_fallido | mini_e1=  • predial.mixto: Value error, bracket 1: superior=None solo permitido en el último rango | mini_e2=  • predial.mixto: Value error, bracket 1: superior=None solo permitido en el último rango | full_e3=  • predial.mixto: Value error, bracket 1: superior=None solo permitido en el último rango",
+    "razon": "escalado_a_gpt-5.4_tras_2x_mini_fallido",
+    "usado_reocr": false,
+    "usado_vision": false,
     "tokens": {
-      "input": 22847,
-      "output": 1269,
-      "cached": 13568
+      "input": 26920,
+      "output": 1330,
+      "cached": 17664
     },
     "cvegeo": "31061",
     "estado": "yucatan",

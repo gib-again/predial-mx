@@ -6,7 +6,7 @@
         "grupo": "urbano",
         "clave": "predios_urbanos_con_edificaciones",
         "descripcion": "Predios urbanos con edificaciones",
-        "tasa_millar": 0.0016,
+        "tasa_millar": 1.6,
         "periodicidad": "anual",
         "cuota_fija_adicional": null
       },
@@ -14,7 +14,7 @@
         "grupo": "urbano",
         "clave": "predios_suburbanos_con_edificaciones",
         "descripcion": "Predios suburbanos con edificaciones",
-        "tasa_millar": 0.0016,
+        "tasa_millar": 1.6,
         "periodicidad": "anual",
         "cuota_fija_adicional": null
       },
@@ -22,23 +22,23 @@
         "grupo": "rustico",
         "clave": "predios_rusticos",
         "descripcion": "Predios rústicos",
-        "tasa_millar": 0.0016,
+        "tasa_millar": 1.6,
         "periodicidad": "anual",
         "cuota_fija_adicional": null
       },
       {
         "grupo": "urbano",
-        "clave": "predios_urbanos_y_suburbanos_sin_edificaciones_baldios",
+        "clave": "predios_urbanos_y_suburbanos_sin_edificacion_baldios",
         "descripcion": "Predios urbanos y suburbanos sin edificaciones (baldíos)",
-        "tasa_millar": 0.0016,
+        "tasa_millar": 1.6,
         "periodicidad": "anual",
         "cuota_fija_adicional": null
       },
       {
         "grupo": "urbano",
-        "clave": "predios_urbanos_de_uso_industrial",
+        "clave": "predios_urbanos_uso_industrial",
         "descripcion": "Predios urbanos de uso industrial",
-        "tasa_millar": 0.0016,
+        "tasa_millar": 1.6,
         "periodicidad": "anual",
         "cuota_fija_adicional": null
       }
@@ -48,7 +48,7 @@
       "periodicidad": "anual",
       "unidad": "uma"
     },
-    "comentarios": "Art. 10: todas las categorías listadas causan 1.6 al millar anual sobre valor catastral. Las fracciones VI y VII establecen aumentos a la tasa para ciertos predios urbanos: no edificados (+100%) y con edificación inferior a la quinta parte del valor del terreno (+50%). El artículo también fija mínimos anuales de 3 UMA para zonas urbanas 6, 7 y 8 y para predios rústicos de hasta 16 hectáreas, y de 5 UMA para zonas urbanas 1 a 5 y para predios rústicos mayores de 16-01 hectáreas."
+    "comentarios": "Art. 10: la mecánica principal es una tarifa al millar uniforme de 1.6 para cinco grupos de predios (urbanos con edificación, suburbanos con edificación, rústicos, urbanos/suburbanos baldíos e industriales). Las fracciones VI y VII indican aumentos del 100% y 50% para supuestos específicos de predios urbanos no edificados o con edificación menor a la quinta parte del valor del terreno; se transcriben como reglas accesorias del artículo. El impuesto anual no podrá ser inferior a 3 UMA en zonas urbanas 6, 7 y 8 y en predios rústicos de hasta 16 hectáreas, ni a 5 UMA en zonas urbanas 1 a 5 y en predios rústicos mayores de 16-01 hectáreas."
   },
   "_meta": {
     "fuente": "txt",
@@ -59,10 +59,12 @@
     "requiere_revision": false,
     "escalado": false,
     "razon": null,
+    "usado_reocr": false,
+    "usado_vision": false,
     "tokens": {
-      "input": 5367,
-      "output": 466,
-      "cached": 3840
+      "input": 6584,
+      "output": 499,
+      "cached": 5888
     },
     "cvegeo": "28035",
     "estado": "tamaulipas",

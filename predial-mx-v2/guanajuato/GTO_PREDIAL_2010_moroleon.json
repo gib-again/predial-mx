@@ -4,31 +4,31 @@
     "tabla": [
       {
         "grupo": "urbano",
-        "clave": "con_edificaciones",
-        "descripcion": "Inmuebles urbanos y suburbanos con edificaciones",
+        "clave": "urbano_con_edificaciones",
+        "descripcion": "Inmuebles urbanos y suburbanos con edificaciones; anual",
         "tasa_millar": 0.0024,
         "periodicidad": "anual",
         "cuota_fija_adicional": null
       },
       {
         "grupo": "urbano",
-        "clave": "sin_edificaciones",
-        "descripcion": "Inmuebles urbanos y suburbanos sin edificaciones",
+        "clave": "urbano_sin_edificaciones",
+        "descripcion": "Inmuebles urbanos y suburbanos sin edificaciones; anual",
         "tasa_millar": 0.0045,
         "periodicidad": "anual",
         "cuota_fija_adicional": null
       },
       {
         "grupo": "rustico",
-        "clave": "rusticos",
-        "descripcion": "Inmuebles rústicos",
+        "clave": "rustico",
+        "descripcion": "Inmuebles rústicos; anual",
         "tasa_millar": 0.0018,
         "periodicidad": "anual",
         "cuota_fija_adicional": null
       }
     ],
     "minimo_predial": null,
-    "comentarios": "Art. 4: tabla de tasas anuales al millar por categoría de inmueble. Se transcriben las tasas visibles para 'Inmuebles Urbanos y Suburbanos' con y sin edificaciones, y 'Inmuebles Rústicos'. La fila IV del texto está truncada/incompleta en el OCR ('Con anterioridad a 1993 ... 13 al millar 12 al millar') y no se incorpora como estructura separada por no estar completa. Los artículos 5 y 6 contienen valores unitarios y criterios de avalúo, no la mecánica tarifaria del impuesto predial."
+    "comentarios": "Art. 4 establece tasas anuales sobre el valor catastral para inmuebles urbanos y suburbanos (con y sin edificaciones) y para inmuebles rústicos. Art. 5 contiene tablas de valores unitarios para avalúo catastral, no una mecánica distinta de cobro."
   },
   "_meta": {
     "fuente": "txt",
@@ -39,10 +39,12 @@
     "requiere_revision": false,
     "escalado": false,
     "razon": null,
+    "usado_reocr": false,
+    "usado_vision": false,
     "tokens": {
-      "input": 7382,
-      "output": 317,
-      "cached": 3840
+      "input": 8599,
+      "output": 269,
+      "cached": 5888
     },
     "cvegeo": "11021",
     "estado": "guanajuato",

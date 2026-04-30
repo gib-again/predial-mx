@@ -1,40 +1,37 @@
 {
   "predial": {
-    "tipo_esquema": "tarifa_millar",
+    "tipo_esquema": "cuota_fija_simple",
     "tabla": [
       {
-        "grupo": "urbano",
-        "clave": "predio_urbano",
         "descripcion": "Predio urbano",
-        "tasa_millar": 50.0,
+        "monto": 50.0,
         "periodicidad": "anual",
-        "cuota_fija_adicional": null
-      },
-      {
-        "grupo": "rustico",
-        "clave": "predio_rustico_por_hectarea",
-        "descripcion": "Predio rústico por hectárea",
-        "tasa_millar": 450.0,
-        "periodicidad": "anual",
-        "cuota_fija_adicional": null
+        "unidad": "pesos"
       }
     ],
+    "tarifas_secundarias": [
+      "Predio rústico: $450.00 por hectárea.",
+      "Todo predio destinado a la producción agropecuaria paga 10 al millar anual sobre el valor registrado o catastral.",
+      "Impuesto predial con base en rentas o frutos civiles: 4% mensual sobre predios habitación y 4% mensual sobre predios comerciales."
+    ],
     "minimo_predial": null,
-    "comentarios": "Se transcribe literalmente el Artículo 13, que establece: 'Predio Urbano $50.00' y 'Predio rústico $450.00 por hectárea'. No hay rangos de valor catastral. El Artículo 14 contiene tablas de valores unitarios de terreno y otros conceptos catastrales/constructivos, por lo que se ignora para la tarifa del impuesto predial. Artículo 15 establece una tarifa paralela separada para predios destinados a producción agropecuaria de 10 al millar anual sobre el valor registrado o catastral; no se incluye en la tabla principal por ser tarifa paralela distinta."
+    "comentarios": "Art. 13 establece una cuota fija anual para predio urbano ($50.00) y una tarifa distinta para predio rústico ($450.00 por hectárea), además de cobros por metro lineal para brecha/camino blanco/carretera y otras tablas de valores unitarios de terreno y construcción que son catastro, no mecánica principal del predial. Art. 15 contiene tarifas paralelas/secundarias: predios agropecuarios al 10 al millar anual sobre valor registrado o catastral, y rentas o frutos civiles al 4% mensual para predios habitación y comerciales. Se extrae sólo la mecánica principal predominante del artículo 13; las demás se documentan como tarifas secundarias."
   },
   "_meta": {
     "fuente": "txt",
-    "modelo": "gpt-5.4"
+    "modelo": "gpt-5.4-mini"
   },
   "_meta_v2": {
-    "intentos": 3,
+    "intentos": 1,
     "requiere_revision": false,
-    "escalado": true,
-    "razon": "escalado_a_gpt-5.4_tras_2x_mini_fallido",
+    "escalado": false,
+    "razon": null,
+    "usado_reocr": false,
+    "usado_vision": false,
     "tokens": {
-      "input": 19068,
-      "output": 808,
-      "cached": 13568
+      "input": 7264,
+      "output": 304,
+      "cached": 5888
     },
     "cvegeo": "31105",
     "estado": "yucatan",

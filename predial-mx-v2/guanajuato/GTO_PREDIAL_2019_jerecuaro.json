@@ -4,16 +4,16 @@
     "tabla": [
       {
         "grupo": "general",
-        "clave": "urbanos_y_suburbanos_con_edificaciones",
-        "descripcion": "Inmuebles urbanos y suburbanos con edificaciones; a la entrada en vigor de la ley / durante 2002 a 2018 inclusive",
+        "clave": "inmuebles_con_valor_determinado_o_modificado",
+        "descripcion": "Inmuebles que cuenten con un valor determinado o modificado, a la entrada en vigor de la ley.",
         "tasa_millar": 0.0024,
         "periodicidad": "anual",
         "cuota_fija_adicional": null
       },
       {
-        "grupo": "general",
-        "clave": "urbanos_y_suburbanos_sin_edificaciones",
-        "descripcion": "Inmuebles urbanos y suburbanos sin edificaciones; a la entrada en vigor de la ley / durante 2002 a 2018 inclusive",
+        "grupo": "urbano",
+        "clave": "urbanos_suburbanos_con_edificacion",
+        "descripcion": "Inmuebles urbanos y suburbanos con edificaciones, durante los años 2002 y hasta el año 2018 inclusive.",
         "tasa_millar": 0.0045,
         "periodicidad": "anual",
         "cuota_fija_adicional": null
@@ -21,14 +21,54 @@
       {
         "grupo": "rustico",
         "clave": "rusticos",
-        "descripcion": "Inmuebles rústicos; a la entrada en vigor de la ley / durante 2002 a 2018 inclusive",
+        "descripcion": "Inmuebles rústicos, durante los años 2002 y hasta el año 2018 inclusive.",
         "tasa_millar": 0.0018,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "general",
+        "clave": "inmuebles_con_valor_determinado_o_modificado_anterior_a_2002",
+        "descripcion": "Inmuebles que cuenten con un valor determinado o modificado, con anterioridad al año 2002 y hasta el año 1993 inclusive.",
+        "tasa_millar": 0.008,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "urbano",
+        "clave": "urbanos_suburbanos_con_edificacion_anterior_a_2002",
+        "descripcion": "Inmuebles urbanos y suburbanos con edificaciones, con anterioridad al año 2002 y hasta el año 1993 inclusive.",
+        "tasa_millar": 0.015,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "rustico",
+        "clave": "rusticos_anterior_a_2002",
+        "descripcion": "Inmuebles rústicos, con anterioridad al año 2002 y hasta el año 1993 inclusive.",
+        "tasa_millar": 0.006,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "general",
+        "clave": "inmuebles_con_valor_determinado_o_modificado_anterior_a_1993",
+        "descripcion": "Inmuebles que cuenten con un valor determinado o modificado, con anterioridad al año de 1993.",
+        "tasa_millar": 0.013,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "urbano",
+        "clave": "urbanos_suburbanos_con_edificacion_anterior_a_1993",
+        "descripcion": "Inmuebles urbanos y suburbanos con edificaciones, con anterioridad al año de 1993.",
+        "tasa_millar": 0.012,
         "periodicidad": "anual",
         "cuota_fija_adicional": null
       }
     ],
     "minimo_predial": null,
-    "comentarios": "Art. 4 establece tasas anuales al millar sobre el valor catastral por tipo de inmueble. Se transcribe únicamente la mecánica tarifaria principal vigente para el ejercicio; las tasas históricas para inmuebles determinados o modificados con anterioridad a 2002/1993 aparecen en el mismo artículo, pero se omiten por ser cuadros paralelos de aplicación histórica no desglosados aquí. Art. 5 y 6 contienen valores unitarios y criterios de avalúo, no la mecánica tarifaria del impuesto."
+    "comentarios": "Art. 4 establece tasas anuales al millar por antigüedad y por grupo de inmueble. Se transcriben las tarifas principales. Art. 5 y 6 contienen valores unitarios y criterios de valuación catastral, no mecánica de cobro."
   },
   "_meta": {
     "fuente": "txt",
@@ -39,10 +79,12 @@
     "requiere_revision": false,
     "escalado": false,
     "razon": null,
+    "usado_reocr": false,
+    "usado_vision": false,
     "tokens": {
-      "input": 7249,
-      "output": 367,
-      "cached": 3840
+      "input": 8466,
+      "output": 673,
+      "cached": 5888
     },
     "cvegeo": "11019",
     "estado": "guanajuato",

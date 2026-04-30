@@ -4,31 +4,31 @@
     "tabla": [
       {
         "grupo": "urbano",
-        "clave": "con_edificaciones",
-        "descripcion": "Inmuebles urbanos y suburbanos con edificaciones; tasas por antigüedad del valor determinado o modificado",
+        "clave": "inmuebles_urbanos_suburbanos_con_edificaciones",
+        "descripcion": "Inmuebles urbanos y suburbanos con edificaciones",
         "tasa_millar": 0.0024,
         "periodicidad": "anual",
         "cuota_fija_adicional": null
       },
       {
         "grupo": "urbano",
-        "clave": "sin_edificaciones",
-        "descripcion": "Inmuebles urbanos y suburbanos sin edificaciones; tasas por antigüedad del valor determinado o modificado",
+        "clave": "inmuebles_urbanos_suburbanos_sin_edificaciones",
+        "descripcion": "Inmuebles urbanos y suburbanos sin edificaciones",
         "tasa_millar": 0.0045,
         "periodicidad": "anual",
         "cuota_fija_adicional": null
       },
       {
         "grupo": "rustico",
-        "clave": "general",
-        "descripcion": "Inmuebles rústicos; tasa anual sobre valor catastral según antigüedad/condición indicada en la tabla",
+        "clave": "inmuebles_rusticos",
+        "descripcion": "Inmuebles rústicos",
         "tasa_millar": 0.0018,
         "periodicidad": "anual",
         "cuota_fija_adicional": null
       }
     ],
     "minimo_predial": null,
-    "comentarios": "Art. 4 establece tasas anuales al millar por categoría de predio/condición, sin rangos de valor catastral. Se transcribe la tarifa predominante de la sección. La ley también contiene tablas de valores unitarios para avalúo (Arts. 5 y 6), que no se extraen como mecánica del impuesto. En el texto aparecen tasas históricas diferenciadas por antigüedad del inmueble (p. ej. 2.4, 4.5 y 1.8 al millar; además otras tasas para periodos anteriores), pero la estructura tarifaria base es de catálogo de tasas al millar por tipo de inmueble."
+    "comentarios": "Art. 4: tasa anual según tipo de inmueble y existencia de edificaciones. Los inmuebles urbanos y suburbanos con un valor determinado o modificado pagan 2.4 al millar con edificaciones y 4.5 al millar sin edificaciones; los inmuebles rústicos pagan 1.8 al millar. El texto también menciona tasas históricas para inmuebles con valor determinado o modificado con anterioridad a años específicos, pero la mecánica principal del ejercicio 2021 es la tabla de tasas vigente. Los artículos 5 y 6 contienen valores unitarios y criterios de valuación catastral, no una tarifa adicional del impuesto."
   },
   "_meta": {
     "fuente": "txt",
@@ -39,10 +39,12 @@
     "requiere_revision": false,
     "escalado": false,
     "razon": null,
+    "usado_reocr": false,
+    "usado_vision": false,
     "tokens": {
-      "input": 7411,
-      "output": 369,
-      "cached": 3840
+      "input": 8628,
+      "output": 349,
+      "cached": 5888
     },
     "cvegeo": "11033",
     "estado": "guanajuato",

@@ -1,44 +1,33 @@
 {
   "predial": {
-    "tipo_esquema": "tarifa_millar",
+    "tipo_esquema": "tasa_unica",
     "tabla": [
       {
-        "grupo": "urbano",
-        "clave": "predio_urbano",
-        "descripcion": "Impuesto predial sobre valor catastral actualizado",
-        "tasa_millar": 0.001,
-        "periodicidad": "anual",
+        "descripcion": "Impuesto predial sobre valor catastral",
+        "tasa": 0.1,
+        "base_calculo": "valor_catastral",
+        "unidad": "porcentaje",
         "cuota_fija_adicional": null
-      },
-      {
-        "grupo": "rustico",
-        "clave": "predio_rustico",
-        "descripcion": "Tarifa fija cuando no se encuentre actualizado en el padrón catastral",
-        "tasa_millar": 0.0,
-        "periodicidad": "anual",
-        "cuota_fija_adicional": {
-          "monto": 75.0,
-          "periodicidad": "anual",
-          "unidad": "pesos"
-        }
       }
     ],
     "minimo_predial": null,
-    "comentarios": "Art. 13: el impuesto se determina multiplicando el valor catastral por el factor del 0.10 por ciento. Para predios urbanos/rústicos, si no se encuentra actualizado en el padrón catastral, se aplica tarifa fija anual: $150.00 para predios urbanos y $75.00 para predios rústicos (entendidos como predios sin construcción). Art. 14 contiene descuentos y se ignora."
+    "comentarios": "Artículo 13: el impuesto predial se determina multiplicando el valor catastral por el factor de 0.10 por ciento. Si el predio no se encuentra actualizado en el padrón catastral, se aplicará una tarifa fija paralela de 150 pesos anuales para predios urbanos y 75 pesos anuales para predios rústicos; no se incluye en la tabla principal por ser una tarifa alternativa/condicionada y no la mecánica principal."
   },
   "_meta": {
     "fuente": "txt",
-    "modelo": "gpt-5.4-mini"
+    "modelo": "gpt-5.4"
   },
   "_meta_v2": {
-    "intentos": 1,
+    "intentos": 3,
     "requiere_revision": false,
-    "escalado": false,
-    "razon": null,
+    "escalado": true,
+    "razon": "escalado_a_gpt-5.4_tras_2x_mini_fallido",
+    "usado_reocr": false,
+    "usado_vision": false,
     "tokens": {
-      "input": 5014,
-      "output": 257,
-      "cached": 3840
+      "input": 20042,
+      "output": 670,
+      "cached": 17664
     },
     "cvegeo": "31082",
     "estado": "yucatan",

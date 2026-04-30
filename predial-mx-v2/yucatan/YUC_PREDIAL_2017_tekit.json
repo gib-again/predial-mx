@@ -3,28 +3,35 @@
     "tipo_esquema": "tasa_unica",
     "tabla": [
       {
-        "descripcion": "Cuota fija de 50.00 más tasa de 0.15% sobre el valor catastral",
+        "descripcion": "Impuesto predial sobre valor catastral",
         "tasa": 0.0015,
         "base_calculo": "valor_catastral",
-        "unidad": "porcentaje"
+        "unidad": "porcentaje",
+        "cuota_fija_adicional": {
+          "monto": 50.0,
+          "periodicidad": "anual",
+          "unidad": "pesos"
+        }
       }
     ],
     "minimo_predial": null,
-    "comentarios": "Artículo 13 establece que el Impuesto Predial se determinará con una cuota fija de $50.00 aplicando la tasa del 0.15% sobre el valor catastral. No se transcriben las tablas de valores unitarios de terreno, construcción ni rústicos por hectárea porque son valores catastrales/catastro y no la tarifa del impuesto predial. La cuota fija de $50.00 no tiene campo propio en el esquema tasa_unica; se conserva en comentarios sin reinterpretar la estructura legal."
+    "comentarios": "Art. 13: el impuesto predial se determina con una cuota fija de $50.00 aplicando la tasa del 0.15% sobre el valor catastral. Art. 15 establece una tarifa separada sobre rentas o frutos civiles mensuales (2% casa habitación y 2% actividades comerciales), documentada como tarifa secundaria no estructural porque la mecánica principal del predial es la tasa única sobre valor catastral. Se ignoran descuentos del Art. 14. Las tablas de valores catastrales y valores unitarios de terreno/construcción no se tratan como mecánica tarifaria."
   },
   "_meta": {
     "fuente": "txt",
-    "modelo": "gpt-5.4"
+    "modelo": "gpt-5.4-mini"
   },
   "_meta_v2": {
-    "intentos": 3,
+    "intentos": 1,
     "requiere_revision": false,
-    "escalado": true,
-    "razon": "escalado_a_gpt-5.4_tras_2x_mini_fallido",
+    "escalado": false,
+    "razon": null,
+    "usado_reocr": false,
+    "usado_vision": false,
     "tokens": {
-      "input": 19177,
-      "output": 725,
-      "cached": 13568
+      "input": 7299,
+      "output": 231,
+      "cached": 5888
     },
     "cvegeo": "31080",
     "estado": "yucatan",

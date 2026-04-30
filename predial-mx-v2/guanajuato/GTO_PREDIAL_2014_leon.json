@@ -8,8 +8,8 @@
         "superior": 1000.0,
         "columnas": [
           {
-            "nombre": "general",
-            "valor": 0.0023,
+            "nombre": "urbano_y_suburbano_con_edificaciones",
+            "valor": 0.00234,
             "tipo": "tasa_porcentual",
             "unidad": "porcentaje"
           }
@@ -21,8 +21,14 @@
         "superior": 3000.0,
         "columnas": [
           {
-            "nombre": "general",
-            "valor": 0.0033,
+            "nombre": "urbano_y_suburbano_sin_edificaciones_hasta_1000_m2",
+            "valor": 0.0023,
+            "tipo": "tasa_porcentual",
+            "unidad": "porcentaje"
+          },
+          {
+            "nombre": "urbano_y_suburbano_sin_edificaciones_hasta_1000_m2_tasa_excedente",
+            "valor": 0.023,
             "tipo": "tasa_porcentual",
             "unidad": "porcentaje"
           }
@@ -34,8 +40,26 @@
         "superior": 5000.0,
         "columnas": [
           {
-            "nombre": "general",
+            "nombre": "urbano_y_suburbano_sin_edificaciones_hasta_1000_m2",
+            "valor": 0.0033,
+            "tipo": "tasa_porcentual",
+            "unidad": "porcentaje"
+          },
+          {
+            "nombre": "urbano_y_suburbano_sin_edificaciones_hasta_1000_m2_tasa_excedente",
+            "valor": 0.0548,
+            "tipo": "tasa_porcentual",
+            "unidad": "porcentaje"
+          },
+          {
+            "nombre": "urbano_y_suburbano_sin_edificaciones_de_1000_a_3000_m2",
             "valor": 0.00439,
+            "tipo": "tasa_porcentual",
+            "unidad": "porcentaje"
+          },
+          {
+            "nombre": "urbano_y_suburbano_sin_edificaciones_de_1000_a_3000_m2_tasa_excedente",
+            "valor": 0.048,
             "tipo": "tasa_porcentual",
             "unidad": "porcentaje"
           }
@@ -47,8 +71,32 @@
         "superior": 7000.0,
         "columnas": [
           {
-            "nombre": "general",
-            "valor": 0.00548,
+            "nombre": "urbano_y_suburbano_sin_edificaciones_hasta_1000_m2",
+            "valor": 0.00439,
+            "tipo": "tasa_porcentual",
+            "unidad": "porcentaje"
+          },
+          {
+            "nombre": "urbano_y_suburbano_sin_edificaciones_hasta_1000_m2_tasa_excedente",
+            "valor": 0.0548,
+            "tipo": "tasa_porcentual",
+            "unidad": "porcentaje"
+          },
+          {
+            "nombre": "urbano_y_suburbano_sin_edificaciones_de_1000_a_3000_m2",
+            "valor": 0.0046,
+            "tipo": "tasa_porcentual",
+            "unidad": "porcentaje"
+          },
+          {
+            "nombre": "urbano_y_suburbano_sin_edificaciones_de_1000_a_3000_m2_tasa_excedente",
+            "valor": 0.0481,
+            "tipo": "tasa_porcentual",
+            "unidad": "porcentaje"
+          },
+          {
+            "nombre": "urbano_y_suburbano_sin_edificaciones_de_3000_a_5000_m2",
+            "valor": 0.00481,
             "tipo": "tasa_porcentual",
             "unidad": "porcentaje"
           }
@@ -60,8 +108,38 @@
         "superior": 9000.0,
         "columnas": [
           {
-            "nombre": "general",
-            "valor": 0.00639,
+            "nombre": "urbano_y_suburbano_sin_edificaciones_hasta_1000_m2",
+            "valor": 0.00439,
+            "tipo": "tasa_porcentual",
+            "unidad": "porcentaje"
+          },
+          {
+            "nombre": "urbano_y_suburbano_sin_edificaciones_hasta_1000_m2_tasa_excedente",
+            "valor": 0.0548,
+            "tipo": "tasa_porcentual",
+            "unidad": "porcentaje"
+          },
+          {
+            "nombre": "urbano_y_suburbano_sin_edificaciones_de_1000_a_3000_m2",
+            "valor": 0.0046,
+            "tipo": "tasa_porcentual",
+            "unidad": "porcentaje"
+          },
+          {
+            "nombre": "urbano_y_suburbano_sin_edificaciones_de_1000_a_3000_m2_tasa_excedente",
+            "valor": 0.0481,
+            "tipo": "tasa_porcentual",
+            "unidad": "porcentaje"
+          },
+          {
+            "nombre": "urbano_y_suburbano_sin_edificaciones_de_3000_a_5000_m2",
+            "valor": 0.00481,
+            "tipo": "tasa_porcentual",
+            "unidad": "porcentaje"
+          },
+          {
+            "nombre": "urbano_y_suburbano_sin_edificaciones_de_5000_a_7000_m2",
+            "valor": 0.00501,
             "tipo": "tasa_porcentual",
             "unidad": "porcentaje"
           }
@@ -73,8 +151,44 @@
         "superior": 11000.0,
         "columnas": [
           {
-            "nombre": "general",
-            "valor": 0.008,
+            "nombre": "urbano_y_suburbano_sin_edificaciones_hasta_1000_m2",
+            "valor": 0.0043,
+            "tipo": "tasa_porcentual",
+            "unidad": "porcentaje"
+          },
+          {
+            "nombre": "urbano_y_suburbano_sin_edificaciones_hasta_1000_m2_tasa_excedente",
+            "valor": 0.0548,
+            "tipo": "tasa_porcentual",
+            "unidad": "porcentaje"
+          },
+          {
+            "nombre": "urbano_y_suburbano_sin_edificaciones_de_1000_a_3000_m2",
+            "valor": 0.0045,
+            "tipo": "tasa_porcentual",
+            "unidad": "porcentaje"
+          },
+          {
+            "nombre": "urbano_y_suburbano_sin_edificaciones_de_1000_a_3000_m2_tasa_excedente",
+            "valor": 0.0481,
+            "tipo": "tasa_porcentual",
+            "unidad": "porcentaje"
+          },
+          {
+            "nombre": "urbano_y_suburbano_sin_edificaciones_de_3000_a_5000_m2",
+            "valor": 0.00481,
+            "tipo": "tasa_porcentual",
+            "unidad": "porcentaje"
+          },
+          {
+            "nombre": "urbano_y_suburbano_sin_edificaciones_de_5000_a_7000_m2",
+            "valor": 0.00501,
+            "tipo": "tasa_porcentual",
+            "unidad": "porcentaje"
+          },
+          {
+            "nombre": "urbano_y_suburbano_sin_edificaciones_de_7000_a_9000_m2",
+            "valor": 0.0065,
             "tipo": "tasa_porcentual",
             "unidad": "porcentaje"
           }
@@ -86,7 +200,55 @@
         "superior": null,
         "columnas": [
           {
-            "nombre": "general",
+            "nombre": "urbano_y_suburbano_sin_edificaciones_hasta_1000_m2",
+            "valor": 0.00439,
+            "tipo": "tasa_porcentual",
+            "unidad": "porcentaje"
+          },
+          {
+            "nombre": "urbano_y_suburbano_sin_edificaciones_hasta_1000_m2_tasa_excedente",
+            "valor": 0.0548,
+            "tipo": "tasa_porcentual",
+            "unidad": "porcentaje"
+          },
+          {
+            "nombre": "urbano_y_suburbano_sin_edificaciones_de_1000_a_3000_m2",
+            "valor": 0.0046,
+            "tipo": "tasa_porcentual",
+            "unidad": "porcentaje"
+          },
+          {
+            "nombre": "urbano_y_suburbano_sin_edificaciones_de_1000_a_3000_m2_tasa_excedente",
+            "valor": 0.0481,
+            "tipo": "tasa_porcentual",
+            "unidad": "porcentaje"
+          },
+          {
+            "nombre": "urbano_y_suburbano_sin_edificaciones_de_3000_a_5000_m2",
+            "valor": 0.00481,
+            "tipo": "tasa_porcentual",
+            "unidad": "porcentaje"
+          },
+          {
+            "nombre": "urbano_y_suburbano_sin_edificaciones_de_5000_a_7000_m2",
+            "valor": 0.00501,
+            "tipo": "tasa_porcentual",
+            "unidad": "porcentaje"
+          },
+          {
+            "nombre": "urbano_y_suburbano_sin_edificaciones_de_7000_a_9000_m2",
+            "valor": 0.00565,
+            "tipo": "tasa_porcentual",
+            "unidad": "porcentaje"
+          },
+          {
+            "nombre": "urbano_y_suburbano_sin_edificaciones_de_9000_a_11000_m2",
+            "valor": 0.008,
+            "tipo": "tasa_porcentual",
+            "unidad": "porcentaje"
+          },
+          {
+            "nombre": "urbano_y_suburbano_sin_edificaciones_en_adelante",
             "valor": 0.01,
             "tipo": "tasa_porcentual",
             "unidad": "porcentaje"
@@ -95,7 +257,7 @@
       }
     ],
     "minimo_predial": null,
-    "comentarios": "Art. 5, fracc. I, inciso b) (urbanos y suburbanos sin edificaciones, para inmuebles cuyo valor se determinó o modificó a partir del 1 de enero de 2006 y hasta el 31 de diciembre de 2010): la tabla aparece en el texto como tasas progresivas por rangos de valor catastral; se transcribe como mixto por la presencia de rangos y la lectura OCR de porcentajes. Art. 5 también contiene tasas paralelas por grupo y periodo de valuación: 0.234% para urbanos y suburbanos con edificaciones (fracc. I, inciso a), 0.0416% para rústicos (fracc. I, inciso c), 0.681% para urbanos y suburbanos con edificaciones valuados hasta 31/12/2005 (fracc. III, inciso a), 0.661% para rústicos valuados hasta 31/12/2005 (fracc. III, inciso c) y otras tablas para sin edificación; no se integran todas en la tabla principal por ser tarifas paralelas y porque el texto OCR presenta varios bloques heterogéneos. Art. 6 a 7 son tablas de valores unitarios de catastro, no mecánica de impuesto, y se ignoran."
+    "comentarios": "La mecánica principal combina varias tablas de tasas progresivas por rangos de superficie/valor con estructura heterogénea y varias tasas por bracket, por lo que se clasifica como mixto. Art. 5: inciso I a) urbanos y suburbanos con edificaciones 0.234% (tasa única sobre valor catastral); inciso I b) y II b) urbanos/suburbanos sin edificaciones con tablas progresivas por superficie y tasa marginal; inciso I c) rústicos 0.0416% y 0.271%; inciso III a) urbanos/suburbanos con edificaciones 0.681% para inmuebles con valor modificado antes de 2005; inciso III b) urbanos/suburbanos sin edificaciones con tabla progresiva por superficie; inciso III c) rústicos 0.661%. La información muestra tarifas paralelas según fecha de valuación y tipo de predio, con unidades mezcladas entre tasa porcentual única y tablas progresivas."
   },
   "_meta": {
     "fuente": "txt",
@@ -106,10 +268,12 @@
     "requiere_revision": false,
     "escalado": false,
     "razon": null,
+    "usado_reocr": false,
+    "usado_vision": false,
     "tokens": {
-      "input": 10799,
-      "output": 650,
-      "cached": 3840
+      "input": 12016,
+      "output": 1872,
+      "cached": 5888
     },
     "cvegeo": "11020",
     "estado": "guanajuato",

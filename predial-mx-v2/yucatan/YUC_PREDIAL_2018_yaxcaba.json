@@ -11,35 +11,35 @@
       },
       {
         "n_rango": 2,
-        "inferior": 4000.0,
+        "inferior": 4000.01,
         "superior": 5500.0,
         "cuota_fija": 22.0,
         "tasa_marginal": 0.003
       },
       {
         "n_rango": 3,
-        "inferior": 5500.0,
+        "inferior": 5500.01,
         "superior": 6500.0,
         "cuota_fija": 28.0,
         "tasa_marginal": 0.0045
       },
       {
         "n_rango": 4,
-        "inferior": 6500.0,
+        "inferior": 6500.01,
         "superior": 7500.0,
         "cuota_fija": 34.0,
         "tasa_marginal": 0.006
       },
       {
         "n_rango": 5,
-        "inferior": 7500.0,
+        "inferior": 7500.01,
         "superior": 8500.0,
         "cuota_fija": 38.0,
         "tasa_marginal": 0.0075
       },
       {
         "n_rango": 6,
-        "inferior": 8500.0,
+        "inferior": 8500.01,
         "superior": 10000.0,
         "cuota_fija": 48.0,
         "tasa_marginal": 0.009
@@ -53,7 +53,7 @@
       }
     ],
     "minimo_predial": null,
-    "comentarios": "Art. 4: tarifa progresiva anual sobre valor catastral con cuota fija anual y factor para aplicar al excedente del límite inferior. Además, el artículo incluye tablas de valores unitarios de terreno y construcción para el cálculo del valor catastral, que no se transcriben como mecánica de impuesto. Art. 5: cuando el predial se cause sobre rentas o frutos civiles, la tasa es mensual sobre la contraprestación: 2% habitacional y 5% comercial; se deja fuera de la tabla principal por ser una modalidad paralela distinta al cálculo sobre valor catastral."
+    "comentarios": "Art. 4: tarifa principal progresiva sobre valor catastral con cuota fija anual y factor para aplicar al excedente del límite inferior. Art. 5: cuando el impuesto se cause sobre rentas o frutos civiles, la tasa es mensual de 2% habitacional y 5% comercial sobre el monto de la contraprestación; se documenta como tarifa secundaria paralela porque no es la mecánica principal del predial."
   },
   "_meta": {
     "fuente": "txt",
@@ -64,10 +64,12 @@
     "requiere_revision": false,
     "escalado": false,
     "razon": null,
+    "usado_reocr": false,
+    "usado_vision": false,
     "tokens": {
-      "input": 6522,
-      "output": 424,
-      "cached": 3840
+      "input": 7739,
+      "output": 392,
+      "cached": 5888
     },
     "cvegeo": "31104",
     "estado": "yucatan",

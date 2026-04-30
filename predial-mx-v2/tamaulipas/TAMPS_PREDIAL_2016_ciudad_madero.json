@@ -53,11 +53,11 @@
       }
     ],
     "minimo_predial": {
-      "monto": 3.0,
+      "monto": 4.0,
       "periodicidad": "anual",
       "unidad": "vsm"
     },
-    "comentarios": "Art. 9: tabla progresiva de valor catastral con cuota anual mínima aplicable en cada rango y tasa anual sobre el excedente del límite inferior. Art. 10: mínimo predial de 3 VSM en zonas precarias o de extrema pobreza y 4 VSM en cualquier otra zona. Las reglas de aumento para predios urbanos/suburbanos no edificados, con construcción inferior al 20%, lotes de fraccionamientos y otros supuestos se describen como incrementos/condiciones de aplicación sobre la misma tabla, no como tarifa separada."
+    "comentarios": "Art. 9: tabla progresiva sobre valor catastral con cuota anual mínima aplicable en cada rango y tasa anual al millar sobre el excedente del límite inferior. Art. 9 establece incrementos para predios urbanos/suburbanos no edificados (+100%), urbanos con construcción menor al 20% (+50%), lotes de fraccionamientos no construidos (+100% tras 2 años), y otros supuestos de baldíos; se documentan como reglas de incremento sobre la misma tabla, no como tarifas separadas. Art. 10 fija mínimo predial: 3 salarios mínimos en zonas precarias o de extrema pobreza y 4 salarios mínimos en cualquier otra zona; se conserva el mínimo general más alto como referencia estructural, sin perjuicio de la regla especial de zona precaria."
   },
   "_meta": {
     "fuente": "txt",
@@ -68,10 +68,12 @@
     "requiere_revision": false,
     "escalado": false,
     "razon": null,
+    "usado_reocr": false,
+    "usado_vision": false,
     "tokens": {
-      "input": 6239,
-      "output": 444,
-      "cached": 3840
+      "input": 7456,
+      "output": 491,
+      "cached": 5888
     },
     "cvegeo": "28009",
     "estado": "tamaulipas",

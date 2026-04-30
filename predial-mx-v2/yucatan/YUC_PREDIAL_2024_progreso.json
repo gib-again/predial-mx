@@ -74,7 +74,7 @@
       }
     ],
     "minimo_predial": null,
-    "comentarios": "Artículo 19: impuesto predial con base en el valor catastral mediante tabla de rangos, aplicando en cada rango una cuota para el límite inferior y una tasa sobre el excedente. El artículo 21 establece una tarifa paralela distinta para rentas o frutos civiles (5% mensual para casa habitación y 5% mensual para actividades comerciales e industriales), que no se incluye en la tabla principal por ser un supuesto diferente al cálculo sobre valor catastral."
+    "comentarios": "Artículo 19: impuesto predial calculado con base en el valor catastral, con tarifa progresiva por rangos. Artículo 21 establece una tarifa paralela para predios que tributan sobre rentas o frutos civiles: 5% mensual sobre la renta/frutos civiles para casa habitación y 5% para actividades comerciales e industriales; se documenta como tarifa secundaria porque no forma parte de la mecánica principal por valor catastral."
   },
   "_meta": {
     "fuente": "txt",
@@ -85,10 +85,12 @@
     "requiere_revision": false,
     "escalado": false,
     "razon": null,
+    "usado_reocr": false,
+    "usado_vision": false,
     "tokens": {
-      "input": 15778,
-      "output": 552,
-      "cached": 3840
+      "input": 16995,
+      "output": 549,
+      "cached": 5888
     },
     "cvegeo": "31059",
     "estado": "yucatan",

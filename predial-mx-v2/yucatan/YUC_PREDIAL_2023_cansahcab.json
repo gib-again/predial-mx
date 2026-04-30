@@ -1,58 +1,56 @@
 {
   "predial": {
-    "tipo_esquema": "otro_no_clasificado",
-    "categoria": "estructura_no_estandar",
-    "descripcion_estructural": "El texto contiene varias mecánicas distintas del impuesto predial: una fórmula general con factor 0.00025 sobre valor catastral, una cuota fija de 1 UMA para predios con valor catastral igual o menor a 200,000, una tabla de cuotas en UMA para predios rústicos por superficie, y además una tabla aparte para predial sobre rentas o frutos civiles. No existe una sola tabla homogénea que encaje limpiamente en tarifa_millar, progresivo, cuota fija escalonada o mixto sin mezclar bases de cálculo distintas.",
-    "tabla_cruda": [
+    "tipo_esquema": "mixto",
+    "tabla": [
       {
-        "descripcion": "Factor general sobre valor catastral",
-        "valores": "C = (Tabla A + Tabla B) x 0.00025"
+        "n_rango": 1,
+        "inferior": 0.0,
+        "superior": 200000.0,
+        "columnas": [
+          {
+            "nombre": "general",
+            "valor": 1.0,
+            "tipo": "cuota_fija",
+            "unidad": "uma"
+          }
+        ]
       },
       {
-        "descripcion": "Cuota fija para predios con valor catastral <= 200,000",
-        "valores": "1 unidad de medida y actualización"
-      },
-      {
-        "descripcion": "Predios rústicos por superficie 1 a 20 m2",
-        "valores": "2.23 UMA"
-      },
-      {
-        "descripcion": "Predios rústicos por superficie 21 a 40 m2",
-        "valores": "3.34 UMA"
-      },
-      {
-        "descripcion": "Predios rústicos por superficie 41 m2 en adelante",
-        "valores": "4.46 UMA"
-      },
-      {
-        "descripcion": "Cuando no se pueda determinar el pago con base en valor catastral",
-        "valores": "1 UMA anual por predio"
-      },
-      {
-        "descripcion": "Predial sobre rentas o frutos civiles, habitacional",
-        "valores": "4% sobre el monto de la contraprestación"
-      },
-      {
-        "descripcion": "Predial sobre rentas o frutos civiles, comercial",
-        "valores": "5% sobre el monto de la contraprestación"
+        "n_rango": 2,
+        "inferior": 200000.01,
+        "superior": null,
+        "columnas": [
+          {
+            "nombre": "general",
+            "valor": 0.00025,
+            "tipo": "tasa_millar",
+            "unidad": "al_millar"
+          }
+        ]
       }
     ],
-    "minimo_predial": null,
-    "comentarios": "Se dejó fuera la tabla de valores unitarios de terreno y construcción porque es catastro, no tarifa. Hay tarifas paralelas y bases de cálculo heterogéneas (valor catastral, superficie, rentas/frutos civiles, cuota fija en UMA), por lo que no se fuerza una clasificación única."
+    "minimo_predial": {
+      "monto": 1.0,
+      "periodicidad": "anual",
+      "unidad": "uma"
+    },
+    "comentarios": "Art. 4: para predios con valor catastral igual o menor a $200,000.00 se paga cuota fija de 1 UMA anual; para valor catastral superior se aplica 0.00025 del valor catastral actualizado. Además, el mismo artículo establece una tarifa paralela para predios rústicos por superficie: 1–20 m2 = 2.23 UMA, 21–40 m2 = 3.34 UMA, 41 m2 en adelante = 4.46 UMA; y otra referencia para cuando no se pueda determinar el cobro con base en el valor catastral, pagando 1 UMA anual por predio. Art. 7: si el predial se causa sobre rentas o frutos civiles, se paga mensualmente 4% habitacional y 5% comercial sobre la contraprestación; se documenta como tarifa secundaria no integrada a la tabla principal."
   },
   "_meta": {
     "fuente": "txt",
     "modelo": "gpt-5.4-mini"
   },
   "_meta_v2": {
-    "intentos": 2,
-    "requiere_revision": true,
+    "intentos": 1,
+    "requiere_revision": false,
     "escalado": false,
-    "razon": "clasificado_como_otro_no_clasificado",
+    "razon": null,
+    "usado_reocr": false,
+    "usado_vision": false,
     "tokens": {
-      "input": 12257,
-      "output": 932,
-      "cached": 7680
+      "input": 7124,
+      "output": 339,
+      "cached": 5888
     },
     "cvegeo": "31009",
     "estado": "yucatan",

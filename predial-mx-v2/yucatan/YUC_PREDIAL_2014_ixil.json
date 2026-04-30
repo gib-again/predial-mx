@@ -1,12 +1,22 @@
 {
   "predial": {
-    "tipo_esquema": "tasa_unica",
+    "tipo_esquema": "tarifa_millar",
     "tabla": [
       {
-        "descripcion": "Impuesto predial general sobre valor catastral para las secciones I a IV",
-        "tasa": 0.001,
-        "base_calculo": "valor_catastral",
-        "unidad": "al_millar"
+        "grupo": "general",
+        "clave": "general",
+        "descripcion": "Predial sobre valor catastral para las secciones I a IV",
+        "tasa_millar": 0.001,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "otro",
+        "clave": "zona_costera",
+        "descripcion": "Zona costera sobre valor catastral",
+        "tasa_millar": 0.01,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
       }
     ],
     "minimo_predial": {
@@ -14,7 +24,7 @@
       "periodicidad": "anual",
       "unidad": "pesos"
     },
-    "comentarios": "Art. 13: el impuesto predial se determina multiplicando por 0.001 sobre el valor catastral de la sección I a la sección IV. Además, cuando no se pudiera determinar, se cobra cuota fija de $60.00 anual. La referencia a zona costera (0.010 sobre valor catastral) aparece como tarifa paralela y no se integra en la tabla principal; Art. 15 corresponde a frutos/rentas civiles y se ignora por instrucción al no ser mecánica de predial sobre valor catastral."
+    "comentarios": "Art. 13: el impuesto predial se determina multiplicando por 0.001 sobre el valor catastral de la sección I a la IV. Para la zona costera se aplica 0.010 sobre el valor catastral. Art. 15 establece una tarifa paralela sobre rentas o frutos civiles mensuales (casas habitación 2% y actividades comerciales 2%); se documenta solo como referencia secundaria y no se incluye en la tabla principal porque no es la mecánica predominante de cálculo del predial sobre valor catastral."
   },
   "_meta": {
     "fuente": "txt",
@@ -25,10 +35,12 @@
     "requiere_revision": false,
     "escalado": false,
     "razon": null,
+    "usado_reocr": false,
+    "usado_vision": false,
     "tokens": {
-      "input": 6261,
-      "output": 215,
-      "cached": 3840
+      "input": 7478,
+      "output": 271,
+      "cached": 5888
     },
     "cvegeo": "31039",
     "estado": "yucatan",

@@ -8,26 +8,20 @@
         "superior": 90000.0,
         "columnas": [
           {
-            "nombre": "habitacional",
+            "nombre": "habitacional_edificado",
             "valor": 158.26,
             "tipo": "cuota_fija",
             "unidad": "pesos"
           },
           {
-            "nombre": "edificado_con_barda",
+            "nombre": "no_edificado_con_barda",
             "valor": 210.34,
             "tipo": "cuota_fija",
             "unidad": "pesos"
           },
           {
-            "nombre": "edificado_sin_barda",
+            "nombre": "no_edificado_sin_barda",
             "valor": 200.34,
-            "tipo": "cuota_fija",
-            "unidad": "pesos"
-          },
-          {
-            "nombre": "no_edificado_habitacional",
-            "valor": 315.53,
             "tipo": "cuota_fija",
             "unidad": "pesos"
           }
@@ -39,25 +33,25 @@
         "superior": 135000.0,
         "columnas": [
           {
-            "nombre": "habitacional",
+            "nombre": "habitacional_edificado",
             "valor": 237.41,
             "tipo": "cuota_fija",
             "unidad": "pesos"
           },
           {
-            "nombre": "edificado_con_barda",
+            "nombre": "no_edificado_con_barda",
             "valor": 315.51,
             "tipo": "cuota_fija",
             "unidad": "pesos"
           },
           {
-            "nombre": "edificado_sin_barda",
+            "nombre": "no_edificado_sin_barda",
             "valor": 300.51,
             "tipo": "cuota_fija",
             "unidad": "pesos"
           },
           {
-            "nombre": "no_edificado_habitacional",
+            "nombre": "habitacional_no_edificado",
             "valor": 473.31,
             "tipo": "cuota_fija",
             "unidad": "pesos"
@@ -70,26 +64,26 @@
         "superior": null,
         "columnas": [
           {
-            "nombre": "habitacional",
-            "valor": 1.66,
+            "nombre": "habitacional_edificado",
+            "valor": 0.00166,
             "tipo": "tasa_millar",
             "unidad": "al_millar"
           },
           {
-            "nombre": "edificado_con_barda",
-            "valor": 2.2,
+            "nombre": "no_edificado_con_barda",
+            "valor": 0.0022,
             "tipo": "tasa_millar",
             "unidad": "al_millar"
           },
           {
-            "nombre": "edificado_sin_barda",
-            "valor": 2.23,
+            "nombre": "no_edificado_sin_barda",
+            "valor": 0.00223,
             "tipo": "tasa_millar",
             "unidad": "al_millar"
           },
           {
-            "nombre": "no_edificado_habitacional",
-            "valor": 3.35,
+            "nombre": "habitacional_no_edificado",
+            "valor": 0.00335,
             "tipo": "tasa_millar",
             "unidad": "al_millar"
           }
@@ -101,7 +95,7 @@
       "periodicidad": "bimestral",
       "unidad": "pesos"
     },
-    "comentarios": "Art. 2, fracc. I: tabla de predios urbanos con rangos de valor catastral y columnas heterogéneas por uso/condición (habitacional, edificado con barda, edificado sin barda, no edificado). Los dos primeros rangos cobran cuotas fijas en pesos y el último rango abierto cobra tasas al millar, por lo que se clasifica como mixto. Art. 3: predios rústicos pagan 4 al millar anual sobre el valor catastral; se reporta como tarifa paralela y no se incorpora en la tabla principal. Se ignoraron incentivos, descuentos y bonificaciones de las fracciones II a VII."
+    "comentarios": "Art. 2, fracc. I: predios urbanos con tabla por valor catastral y columnas heterogéneas (habitacional edificado, no edificado con barda, no edificado sin barda y habitacional no edificado). Los dos primeros rangos cobran cuotas fijas en pesos y el último rango cobra tasas al millar, por lo que no encaja en tarifa_millar, cuota_fija_escalonada ni progresivo. Art. 3: predios rústicos pagan 4 al millar anual sobre valor catastral; se documenta como tarifa paralela en comentarios por no compartir la misma estructura de tabla. Los incentivos, descuentos y bonificaciones se ignoraron conforme a la instrucción."
   },
   "_meta": {
     "fuente": "txt",
@@ -112,10 +106,12 @@
     "requiere_revision": false,
     "escalado": false,
     "razon": null,
+    "usado_reocr": false,
+    "usado_vision": false,
     "tokens": {
-      "input": 6160,
-      "output": 591,
-      "cached": 3840
+      "input": 7377,
+      "output": 587,
+      "cached": 5888
     },
     "cvegeo": "05025",
     "estado": "coahuila",

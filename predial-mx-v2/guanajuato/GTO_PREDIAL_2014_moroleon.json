@@ -3,96 +3,32 @@
     "tipo_esquema": "tarifa_millar",
     "tabla": [
       {
-        "grupo": "urbano",
-        "clave": "con_edificaciones",
-        "descripcion": "Inmuebles urbanos y suburbanos con edificaciones, al entrar en vigor la ley",
+        "grupo": "general",
+        "clave": "inmuebles_urbanos_y_suburbanos_con_edificaciones",
+        "descripcion": "Inmuebles urbanos y suburbanos con edificaciones: tasa anual por el valor determinado o modificado.",
         "tasa_millar": 0.0024,
         "periodicidad": "anual",
         "cuota_fija_adicional": null
       },
       {
-        "grupo": "urbano",
-        "clave": "sin_edificaciones",
-        "descripcion": "Inmuebles urbanos y suburbanos sin edificaciones, al entrar en vigor la ley",
+        "grupo": "general",
+        "clave": "inmuebles_urbanos_y_suburbanos_sin_edificaciones",
+        "descripcion": "Inmuebles urbanos y suburbanos sin edificaciones: tasa anual por el valor determinado o modificado.",
         "tasa_millar": 0.0045,
         "periodicidad": "anual",
         "cuota_fija_adicional": null
       },
       {
         "grupo": "rustico",
-        "clave": "rusticos",
-        "descripcion": "Inmuebles rústicos, al entrar en vigor la ley",
+        "clave": "inmuebles_rusticos",
+        "descripcion": "Inmuebles rústicos: tasa anual sobre el valor determinado o modificado.",
         "tasa_millar": 0.0018,
-        "periodicidad": "anual",
-        "cuota_fija_adicional": null
-      },
-      {
-        "grupo": "urbano",
-        "clave": "con_edificaciones_2002_a_2013",
-        "descripcion": "Inmuebles urbanos y suburbanos con edificaciones, durante 2002 a 2013 inclusive",
-        "tasa_millar": 0.0024,
-        "periodicidad": "anual",
-        "cuota_fija_adicional": null
-      },
-      {
-        "grupo": "urbano",
-        "clave": "sin_edificaciones_2002_a_2013",
-        "descripcion": "Inmuebles urbanos y suburbanos sin edificaciones, durante 2002 a 2013 inclusive",
-        "tasa_millar": 0.0045,
-        "periodicidad": "anual",
-        "cuota_fija_adicional": null
-      },
-      {
-        "grupo": "rustico",
-        "clave": "rusticos_2002_a_2013",
-        "descripcion": "Inmuebles rústicos, durante 2002 a 2013 inclusive",
-        "tasa_millar": 0.0018,
-        "periodicidad": "anual",
-        "cuota_fija_adicional": null
-      },
-      {
-        "grupo": "urbano",
-        "clave": "con_edificaciones_1993_a_2002",
-        "descripcion": "Inmuebles urbanos y suburbanos con edificaciones, con anterioridad a 2002 y hasta 1993 inclusive",
-        "tasa_millar": 0.008,
-        "periodicidad": "anual",
-        "cuota_fija_adicional": null
-      },
-      {
-        "grupo": "urbano",
-        "clave": "sin_edificaciones_1993_a_2002",
-        "descripcion": "Inmuebles urbanos y suburbanos sin edificaciones, con anterioridad a 2002 y hasta 1993 inclusive",
-        "tasa_millar": 0.015,
-        "periodicidad": "anual",
-        "cuota_fija_adicional": null
-      },
-      {
-        "grupo": "rustico",
-        "clave": "rusticos_1993_a_2002",
-        "descripcion": "Inmuebles rústicos, con anterioridad a 2002 y hasta 1993 inclusive",
-        "tasa_millar": 0.006,
-        "periodicidad": "anual",
-        "cuota_fija_adicional": null
-      },
-      {
-        "grupo": "urbano",
-        "clave": "con_edificaciones_anterior_1993",
-        "descripcion": "Inmuebles urbanos y suburbanos con edificaciones, con anterioridad a 1993",
-        "tasa_millar": 0.013,
-        "periodicidad": "anual",
-        "cuota_fija_adicional": null
-      },
-      {
-        "grupo": "urbano",
-        "clave": "sin_edificaciones_anterior_1993",
-        "descripcion": "Inmuebles urbanos y suburbanos sin edificaciones, con anterioridad a 1993",
-        "tasa_millar": 0.012,
         "periodicidad": "anual",
         "cuota_fija_adicional": null
       }
     ],
     "minimo_predial": null,
-    "comentarios": "Art. 4 establece tasas anuales al millar por antigüedad y condición del inmueble. Se transcribe sólo la mecánica de cálculo del impuesto predial. Las tablas de valores unitarios de los arts. 5 y 6 corresponden a catastro/avalúo y no se incluyen. El texto fuente muestra una tabla paralela para inmuebles urbanos/suburbanos con edificaciones, sin edificaciones y rústicos; además el renglón IV aparece con dos columnas urbanas y una columna rústica. No se adicionan descuentos, recargos ni bonificaciones."
+    "comentarios": "Art. 4: la mecánica principal es una tarifa al millar por categoría de inmueble. La fracción I aplica a la entrada en vigor de la ley y la fracción II durante 2002-2013, pero el texto proporcionado corresponde al ejercicio 2014 y sólo se transcriben las tasas vigentes en el artículo. La fracción IV aparece truncada en el texto (no se integra como fila por incompleta). Art. 5 y 6 contienen valores unitarios y criterios de avalúo, no la tarifa del impuesto."
   },
   "_meta": {
     "fuente": "txt",
@@ -103,10 +39,12 @@
     "requiere_revision": false,
     "escalado": false,
     "razon": null,
+    "usado_reocr": false,
+    "usado_vision": false,
     "tokens": {
-      "input": 7369,
-      "output": 856,
-      "cached": 3840
+      "input": 8586,
+      "output": 357,
+      "cached": 5888
     },
     "cvegeo": "11021",
     "estado": "guanajuato",

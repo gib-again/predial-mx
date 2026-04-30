@@ -4,31 +4,31 @@
     "tabla": [
       {
         "grupo": "urbano",
-        "clave": "con_edificacion",
-        "descripcion": "Inmuebles urbanos y suburbanos con edificaciones",
+        "clave": "con_edificaciones",
+        "descripcion": "Inmuebles urbanos y suburbanos con edificaciones: a la entrada en vigor de la presente Ley y durante los años 2002 a 2013, inclusive.",
         "tasa_millar": 0.0024,
         "periodicidad": "anual",
         "cuota_fija_adicional": null
       },
       {
         "grupo": "urbano",
-        "clave": "sin_edificacion",
-        "descripcion": "Inmuebles urbanos y suburbanos sin edificaciones",
+        "clave": "sin_edificaciones",
+        "descripcion": "Inmuebles urbanos y suburbanos sin edificaciones: a la entrada en vigor de la presente Ley y durante los años 2002 a 2013, inclusive.",
         "tasa_millar": 0.0045,
         "periodicidad": "anual",
         "cuota_fija_adicional": null
       },
       {
         "grupo": "rustico",
-        "clave": "general",
-        "descripcion": "Inmuebles rústicos",
+        "clave": "rustico_general",
+        "descripcion": "Inmuebles rústicos: a la entrada en vigor de la presente Ley y durante los años 2002 a 2013, inclusive.",
         "tasa_millar": 0.0018,
         "periodicidad": "anual",
         "cuota_fija_adicional": null
       }
     ],
     "minimo_predial": null,
-    "comentarios": "Art. 4: mecánica anual por tasas al millar según categoría de inmueble. Se transcriben las tasas visibles para inmuebles urbanos y suburbanos con edificaciones (2.4 al millar), sin edificaciones (4.5 al millar) e inmuebles rústicos (1.8 al millar). El texto OCR muestra otras referencias históricas en el mismo artículo, pero la estructura principal extraída es un catálogo categórico de tasas al millar. No se incorpora la tabla de valores unitarios de los artículos 5 y 6 porque corresponde a catastro/avalúos, no a la mecánica del impuesto."
+    "comentarios": "Artículo 4 establece tasas anuales al millar por categoría de inmueble (urbano/suburbano con edificaciones, urbano/suburbano sin edificaciones y rústico). El texto también contiene una tabla histórica con tasas para periodos anteriores (1993-2001), pero la mecánica principal visible para 2014 es el catálogo categórico al millar. Los artículos 5 y 6 sólo regulan valores unitarios y criterios de valuación, no la mecánica tarifaria del predial."
   },
   "_meta": {
     "fuente": "txt",
@@ -39,10 +39,12 @@
     "requiere_revision": false,
     "escalado": false,
     "razon": null,
+    "usado_reocr": false,
+    "usado_vision": false,
     "tokens": {
-      "input": 7258,
-      "output": 327,
-      "cached": 3840
+      "input": 8475,
+      "output": 363,
+      "cached": 5888
     },
     "cvegeo": "11040",
     "estado": "guanajuato",

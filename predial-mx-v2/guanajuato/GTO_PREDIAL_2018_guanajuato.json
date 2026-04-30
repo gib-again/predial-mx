@@ -4,31 +4,31 @@
     "tabla": [
       {
         "grupo": "urbano",
-        "clave": "inmuebles_urbanos_y_suburbanos_con_edificaciones",
-        "descripcion": "Inmuebles urbanos y suburbanos con edificaciones (valores determinados o modificados a la entrada en vigor de la ley, y también 2002 a 2017 inclusive)",
+        "clave": "urbanos_y_suburbanos_con_edificaciones",
+        "descripcion": "Inmuebles urbanos y suburbanos con edificaciones",
         "tasa_millar": 0.0024,
         "periodicidad": "anual",
         "cuota_fija_adicional": null
       },
       {
         "grupo": "urbano",
-        "clave": "inmuebles_urbanos_y_suburbanos_sin_edificaciones",
-        "descripcion": "Inmuebles urbanos y suburbanos sin edificaciones (valores determinados o modificados a la entrada en vigor de la ley, y también 2002 a 2017 inclusive)",
+        "clave": "urbanos_y_suburbanos_sin_edificaciones",
+        "descripcion": "Inmuebles urbanos y suburbanos sin edificaciones",
         "tasa_millar": 0.0045,
         "periodicidad": "anual",
         "cuota_fija_adicional": null
       },
       {
         "grupo": "rustico",
-        "clave": "inmuebles_rusticos",
-        "descripcion": "Inmuebles rústicos (valores determinados o modificados a la entrada en vigor de la ley, y también 2002 a 2017 inclusive)",
+        "clave": "rusticos",
+        "descripcion": "Inmuebles rústicos",
         "tasa_millar": 0.0018,
         "periodicidad": "anual",
         "cuota_fija_adicional": null
       }
     ],
     "minimo_predial": null,
-    "comentarios": "Art. 4 establece tasas anuales al millar para tres categorías de inmuebles según tipo y presencia de edificaciones. Se omiten tablas de valores unitarios de los Arts. 5 y 6 por ser catastro/avalúo, no mecánica de cálculo del impuesto. No se detectan brackets por valor catastral ni cuotas fijas."
+    "comentarios": "Art. 4 establece tasas anuales sobre valor catastral según tipo de inmueble. El texto contiene tres bloques temporales (fracciones II, II y III) con las mismas tasas para urbanos/suburbanos con y sin edificación y rústicos; se transcribe la tarifa vigente descrita en la sección. No se extraen tablas de valores unitarios de los Arts. 5 y 6 por ser insumos catastrales, no la mecánica del impuesto."
   },
   "_meta": {
     "fuente": "txt",
@@ -39,10 +39,12 @@
     "requiere_revision": false,
     "escalado": false,
     "razon": null,
+    "usado_reocr": false,
+    "usado_vision": false,
     "tokens": {
-      "input": 7623,
-      "output": 369,
-      "cached": 3840
+      "input": 8840,
+      "output": 301,
+      "cached": 5888
     },
     "cvegeo": "11015",
     "estado": "guanajuato",

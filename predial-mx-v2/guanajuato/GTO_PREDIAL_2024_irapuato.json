@@ -316,7 +316,7 @@
       }
     ],
     "minimo_predial": null,
-    "comentarios": "Se transcribe sólo la mecánica principal de la fracción I.a (urbanos y suburbanos con edificaciones) como estructura de brackets con cuota fija + tasa marginal. El texto incluye tarifas paralelas por superficie para urbanos/suburbanos sin edificaciones y una tasa paralela para rústicos (2 al millar; en otras secciones aparece 0.40 al millar), además de otras fracciones por año de valuación; no se mezclan en la tabla principal por ser tarifas paralelas/heterogéneas. La tabla visible del texto está OCR-corrupta en algunos límites y cuotas, pero conserva la secuencia de rangos y tasas marginales."
+    "comentarios": "Art. 4: la mecánica principal es una tabla progresiva por valor fiscal con cuota fija + tasa marginal para inmuebles urbanos y suburbanos con edificaciones (para los inmuebles cuyo valor se determine o modifique a partir de la entrada en vigor de la ley, hasta 2023). Se documenta como `mixto` porque el texto aportado también contiene tarifas paralelas por superficie para urbanos/suburbanos sin edificaciones y tasas únicas para rústicos (p.ej. 2 al millar, 0.40 al millar), que no se mezclan en la tabla principal. El cuadro de edificados tiene brackets contiguos y tasas marginales positivas; la columna de cuota fija aparece en el texto pero está incompleta/afectada por OCR en varios renglones, por lo que no se transcribe como cero salvo donde se observa explícitamente."
   },
   "_meta": {
     "fuente": "txt",
@@ -327,10 +327,12 @@
     "requiere_revision": false,
     "escalado": false,
     "razon": null,
+    "usado_reocr": false,
+    "usado_vision": false,
     "tokens": {
-      "input": 11606,
-      "output": 1447,
-      "cached": 3840
+      "input": 12823,
+      "output": 1491,
+      "cached": 5888
     },
     "cvegeo": "11017",
     "estado": "guanajuato",

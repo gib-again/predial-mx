@@ -4,55 +4,71 @@
     "tabla": [
       {
         "grupo": "urbano",
-        "clave": "urbanos_y_suburbanos",
-        "descripcion": "Inmuebles urbanos y suburbanos, a la entrada en vigor de la presente ley",
+        "clave": "inmuebles_urbanos_y_suburbanos",
+        "descripcion": "A la entrada en vigor de la presente ley / durante los años 2002 y hasta el 2013, inclusive",
         "tasa_millar": 0.0024,
         "periodicidad": "anual",
         "cuota_fija_adicional": null
       },
       {
-        "grupo": "urbano",
-        "clave": "urbanos_y_suburbanos_2002_2013",
-        "descripcion": "Inmuebles urbanos y suburbanos, durante los años 2002 y hasta el 2013 inclusive",
-        "tasa_millar": 0.0024,
+        "grupo": "rustico",
+        "clave": "inmuebles_rusticos_con_edificaciones",
+        "descripcion": "A la entrada en vigor de la presente ley / durante los años 2002 y hasta el 2013, inclusive",
+        "tasa_millar": 0.0045,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "otro",
+        "clave": "inmuebles_rusticos_sin_edificaciones",
+        "descripcion": "A la entrada en vigor de la presente ley / durante los años 2002 y hasta el 2013, inclusive",
+        "tasa_millar": 0.0018,
         "periodicidad": "anual",
         "cuota_fija_adicional": null
       },
       {
         "grupo": "urbano",
-        "clave": "urbanos_y_suburbanos_antes_2002_hasta_1993",
-        "descripcion": "Inmuebles urbanos y suburbanos, con anterioridad al año 2002 y hasta 1993 inclusive",
+        "clave": "inmuebles_urbanos_y_suburbanos",
+        "descripcion": "Con anterioridad al año 2002 y hasta 1993, inclusive",
         "tasa_millar": 0.008,
         "periodicidad": "anual",
         "cuota_fija_adicional": null
       },
       {
+        "grupo": "rustico",
+        "clave": "inmuebles_rusticos_con_edificaciones",
+        "descripcion": "Con anterioridad al año 2002 y hasta 1993, inclusive",
+        "tasa_millar": 0.015,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "otro",
+        "clave": "inmuebles_rusticos_sin_edificaciones",
+        "descripcion": "Con anterioridad al año 2002 y hasta 1993, inclusive",
+        "tasa_millar": 0.006,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
         "grupo": "urbano",
-        "clave": "urbanos_y_suburbanos_antes_1993",
-        "descripcion": "Inmuebles urbanos y suburbanos, con anterioridad al año de 1993",
+        "clave": "inmuebles_urbanos_y_suburbanos",
+        "descripcion": "Con anterioridad al año de 1993",
         "tasa_millar": 0.013,
         "periodicidad": "anual",
         "cuota_fija_adicional": null
       },
       {
         "grupo": "rustico",
-        "clave": "rusticos_con_edificaciones",
-        "descripcion": "Inmuebles rústicos con edificaciones",
-        "tasa_millar": 0.0045,
-        "periodicidad": "anual",
-        "cuota_fija_adicional": null
-      },
-      {
-        "grupo": "rustico",
-        "clave": "rusticos_sin_edificaciones",
-        "descripcion": "Inmuebles rústicos sin edificaciones",
-        "tasa_millar": 0.0018,
+        "clave": "inmuebles_rusticos_con_edificaciones",
+        "descripcion": "Con anterioridad al año de 1993",
+        "tasa_millar": 0.012,
         "periodicidad": "anual",
         "cuota_fija_adicional": null
       }
     ],
     "minimo_predial": null,
-    "comentarios": "Artículo 4 establece tasas anuales al millar por tipo de inmueble y antigüedad/condición. No se incluye Artículo 5 porque contiene valores unitarios de catastro para avalúo, no la mecánica del impuesto. No se detectan cuotas fijas adicionales ni esquemas por rangos catastrales."
+    "comentarios": "Art. 4 establece tasas anuales al millar diferenciadas por antigüedad de la construcción/valoración y por tipo de inmueble. La transcripción del texto OCR muestra tres grupos tarifarios: inmuebles urbanos y suburbanos, inmuebles rústicos con edificaciones, e inmuebles rústicos sin edificaciones. En el último renglón visible del artículo 4 falta en el OCR la tercera columna para 'inmuebles rústicos sin edificaciones'; se conserva únicamente lo legible. El artículo 5 y 6 contienen tablas de valores unitarios para avalúo (terreno y construcción), no la mecánica del impuesto, por lo que no se incluyen."
   },
   "_meta": {
     "fuente": "txt",
@@ -63,10 +79,12 @@
     "requiere_revision": false,
     "escalado": false,
     "razon": null,
+    "usado_reocr": false,
+    "usado_vision": false,
     "tokens": {
-      "input": 7370,
-      "output": 483,
-      "cached": 3840
+      "input": 8587,
+      "output": 686,
+      "cached": 5888
     },
     "cvegeo": "11012",
     "estado": "guanajuato",

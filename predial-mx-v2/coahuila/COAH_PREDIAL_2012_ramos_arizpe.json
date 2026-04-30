@@ -4,48 +4,48 @@
     "tabla": [
       {
         "grupo": "urbano",
-        "clave": "urbano_industrial",
-        "descripcion": "predios urbanos industriales con o sin edificación",
+        "clave": "industrial",
+        "descripcion": "Predios urbanos industriales con o sin edificación",
         "tasa_millar": 0.005,
         "periodicidad": "anual",
         "cuota_fija_adicional": null
       },
       {
         "grupo": "urbano",
-        "clave": "urbano_comercial_con_edificacion",
-        "descripcion": "predios urbanos comerciales con edificación",
+        "clave": "comercial_con_edificacion",
+        "descripcion": "Predios urbanos comerciales con edificación",
         "tasa_millar": 0.005,
         "periodicidad": "anual",
         "cuota_fija_adicional": null
       },
       {
         "grupo": "urbano",
-        "clave": "urbano_comercial_sin_edificacion",
-        "descripcion": "predios urbanos comerciales sin edificación",
-        "tasa_millar": 0.00665,
+        "clave": "comercial_sin_edificacion",
+        "descripcion": "Predios urbanos comerciales sin edificación",
+        "tasa_millar": 0.006649999999999999,
         "periodicidad": "anual",
         "cuota_fija_adicional": null
       },
       {
         "grupo": "urbano",
-        "clave": "urbano_residencial_interes_social_popular_con_edificacion",
-        "descripcion": "predios urbanos residenciales, de interés social y populares con edificación",
+        "clave": "residencial_con_edificacion",
+        "descripcion": "Predios urbanos residenciales, de interés social y populares con edificación",
         "tasa_millar": 0.005,
         "periodicidad": "anual",
         "cuota_fija_adicional": null
       },
       {
         "grupo": "urbano",
-        "clave": "urbano_residencial_interes_social_popular_sin_edificacion",
-        "descripcion": "predios urbanos residenciales, de interés social y populares sin edificación",
-        "tasa_millar": 0.00665,
+        "clave": "residencial_sin_edificacion",
+        "descripcion": "Predios urbanos residenciales, de interés social y populares sin edificación",
+        "tasa_millar": 0.006649999999999999,
         "periodicidad": "anual",
         "cuota_fija_adicional": null
       },
       {
         "grupo": "rustico",
         "clave": "rustico",
-        "descripcion": "predios rústicos",
+        "descripcion": "Predios rústicos",
         "tasa_millar": 0.003,
         "periodicidad": "anual",
         "cuota_fija_adicional": null
@@ -56,7 +56,7 @@
       "periodicidad": "anual",
       "unidad": "pesos"
     },
-    "comentarios": "Art. 2: se establece tasa al millar por categoría de predio sobre valor catastral. Predios urbanos comerciales y residenciales sin edificación pagan 1.33 veces la tasa de los predios con edificación; por ello se transcribe como 0.00665 al millar equivalente. Se ignoran incentivos/bonificaciones de los arts. 2, 3 y 4 por instrucción. No se integran al esquema las reglas de estímulos fiscales porque no son mecánica base de cálculo."
+    "comentarios": "Art. 2: la base es el valor catastral de cada inmueble. Las tarifas secundarias/incentivos mencionados en el texto (pagos anticipados, casa habitación, industria, pensionados/jubilados/adultos mayores/personas con discapacidad, predios prestados al municipio, instituciones educativas no públicas, fraccionamientos en vías de desarrollo, incentivos por empleo y centro histórico) son bonificaciones/incentivos y se ignoran para la mecánica de cálculo. Para comerciales y residenciales sin edificación se transcribe 1.33 veces la tarifa de los predios con edificación; esto equivale a 0.00665 al millar anual si la tasa base es 0.005."
   },
   "_meta": {
     "fuente": "txt",
@@ -67,10 +67,12 @@
     "requiere_revision": false,
     "escalado": false,
     "razon": null,
+    "usado_reocr": false,
+    "usado_vision": false,
     "tokens": {
-      "input": 5968,
-      "output": 492,
-      "cached": 3840
+      "input": 7185,
+      "output": 517,
+      "cached": 5888
     },
     "cvegeo": "05027",
     "estado": "coahuila",

@@ -1,18 +1,17 @@
 {
   "predial": {
-    "tipo_esquema": "tarifa_millar",
+    "tipo_esquema": "tasa_unica",
     "tabla": [
       {
-        "grupo": "general",
-        "clave": "general",
         "descripcion": "Impuesto predial determinado multiplicando el valor catastral por 0.015 por ciento del salario mínimo vigente para el Estado de Yucatán",
-        "tasa_millar": 0.15,
-        "periodicidad": "anual",
+        "tasa": 0.015,
+        "base_calculo": "otro",
+        "unidad": "porcentaje",
         "cuota_fija_adicional": null
       }
     ],
     "minimo_predial": null,
-    "comentarios": "Artículo 13 establece una sola tasa aplicable al valor catastral: 0.015 por ciento del salario mínimo vigente para el Estado de Yucatán. El mismo artículo señala una tarifa fija paralela únicamente para el caso de que no esté actualizado el padrón catastral: urbanos 65.00 pesos anuales y predios rústicos 40.00 pesos anuales; no se incluye en la tabla principal por ser una tarifa separada condicionada."
+    "comentarios": "La mecánica principal del artículo 13 establece una tasa única de 0.015 por ciento vinculada al salario mínimo vigente para el Estado de Yucatán, no directamente como tasa al millar sobre valor catastral. El mismo artículo señala que, si no está actualizado el padrón catastral, se aplicará tarifa fija anual paralela de 65 pesos para predios urbanos y 40 pesos para predios rústicos; no se incorpora en la tabla principal por ser una mecánica alternativa condicionada."
   },
   "_meta": {
     "fuente": "txt",
@@ -23,10 +22,12 @@
     "requiere_revision": false,
     "escalado": true,
     "razon": "escalado_a_gpt-5.4_tras_2x_mini_fallido",
+    "usado_reocr": false,
+    "usado_vision": false,
     "tokens": {
-      "input": 16071,
-      "output": 777,
-      "cached": 12544
+      "input": 20144,
+      "output": 809,
+      "cached": 17664
     },
     "cvegeo": "31082",
     "estado": "yucatan",

@@ -3,28 +3,35 @@
     "tipo_esquema": "tasa_unica",
     "tabla": [
       {
-        "descripcion": "Cuota fija de 50.00 y tasa del 0.25% sobre el valor catastral",
-        "tasa": 0.25,
+        "descripcion": "Impuesto predial anual",
+        "tasa": 0.0025,
         "base_calculo": "valor_catastral",
-        "unidad": "porcentaje"
+        "unidad": "porcentaje",
+        "cuota_fija_adicional": {
+          "monto": 50.0,
+          "periodicidad": "anual",
+          "unidad": "pesos"
+        }
       }
     ],
     "minimo_predial": null,
-    "comentarios": "Artículo 13: el impuesto predial se determinará con una cuota fija de 50.00 y aplicando la tasa del 0.25% sobre el valor catastral. La tabla de valores unitarios de terreno y construcción corresponde a catastro y no a la tarifa del impuesto predial, por lo que se ignora. La cuota fija adicional no puede representarse en el esquema tasa_unica según el formato disponible; se deja asentada textualmente en comentarios. Se ignoran descuentos del artículo 14 y el impuesto sobre rentas o frutos civiles del artículo 15 por no formar parte de la mecánica principal solicitada."
+    "comentarios": "Art. 13: el impuesto predial se determina con una cuota fija de $50.00 y aplicando una tasa del 0.25% sobre el valor catastral. Art. 15 establece una tarifa secundaria sobre rentas o frutos civiles mensuales: 2% para casas habitación y 2% para actividades comerciales; se documenta como secundaria y no como mecánica principal del predial."
   },
   "_meta": {
     "fuente": "txt",
-    "modelo": "gpt-5.4"
+    "modelo": "gpt-5.4-mini"
   },
   "_meta_v2": {
-    "intentos": 3,
+    "intentos": 1,
     "requiere_revision": false,
-    "escalado": true,
-    "razon": "escalado_a_gpt-5.4_tras_2x_mini_fallido",
+    "escalado": false,
+    "razon": null,
+    "usado_reocr": false,
+    "usado_vision": false,
     "tokens": {
-      "input": 17970,
-      "output": 818,
-      "cached": 13568
+      "input": 6896,
+      "output": 182,
+      "cached": 5888
     },
     "cvegeo": "31047",
     "estado": "yucatan",

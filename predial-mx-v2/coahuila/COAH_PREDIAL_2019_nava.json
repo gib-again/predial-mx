@@ -5,7 +5,7 @@
       {
         "grupo": "urbano",
         "clave": "predios_urbanos",
-        "descripcion": "Predios urbanos",
+        "descripcion": "Sobre los predios urbanos",
         "tasa_millar": 0.003,
         "periodicidad": "anual",
         "cuota_fija_adicional": null
@@ -13,7 +13,7 @@
       {
         "grupo": "rustico",
         "clave": "predios_rusticos",
-        "descripcion": "Predios rústicos",
+        "descripcion": "Sobre los predios rústicos",
         "tasa_millar": 0.003,
         "periodicidad": "anual",
         "cuota_fija_adicional": null
@@ -24,7 +24,7 @@
       "periodicidad": "bimestral",
       "unidad": "pesos"
     },
-    "comentarios": "Art. 2 fracc. I y II: predios urbanos y rústicos pagan 3 al millar anual sobre el valor catastral. Art. 2 fracc. III establece mínimo predial de $23.33 por bimestre y cuota mínima anual de $140.00. Las fraccs. IV a VIII contienen reducciones e incentivos (agropecuarios, pago anual anticipado, pensionados/jubilados/adultos mayores/personas con discapacidad, beneficencia/educativas/seguridad pública y empresas de nueva creación), pero se ignoran por tratarse de estímulos, no de mecánica base del impuesto."
+    "comentarios": "Art. 2, fraccs. I y II: tasa general de 3 al millar anual para predios urbanos y rústicos. Fracc. III: mínimo de $23.33 por bimestre y cuota mínima anual de $140.00. Fracc. IV: predios rústicos dedicados a agricultura y ganadería cubren 50% del monto del impuesto sólo en enero y febrero; se documenta como incentivo/beneficio y no se incorpora a la mecánica principal. Fraccs. V a VIII: incentivos por pago anual, pensionados/jubilados/adultos mayores/discapacidad, beneficencia/educativas/seguridad pública y empresas de nueva creación; no se consideran para la mecánica de cálculo."
   },
   "_meta": {
     "fuente": "txt",
@@ -35,10 +35,12 @@
     "requiere_revision": false,
     "escalado": false,
     "razon": null,
+    "usado_reocr": false,
+    "usado_vision": false,
     "tokens": {
-      "input": 5627,
-      "output": 296,
-      "cached": 3840
+      "input": 6844,
+      "output": 321,
+      "cached": 5888
     },
     "cvegeo": "05022",
     "estado": "coahuila",

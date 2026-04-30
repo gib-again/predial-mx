@@ -1,30 +1,33 @@
 {
   "predial": {
-    "tipo_esquema": "otro_no_clasificado",
-    "categoria": "error_segmentacion",
-    "descripcion_estructural": "El segmento contiene principalmente tablas de valores unitarios de terreno y construcción (catastro), pero no incluye la tabla tarifaria del impuesto predial por rangos o cuotas a la que alude la frase 'A la cantidad que se exceda del límite inferior...'. Sólo es visible una tarifa paralela para predios destinados a la producción agropecuaria de 10 al millar anual sobre el valor registrado o catastral, por lo que no hay información suficiente para reconstruir la tabla principal sin inventar rangos o montos.",
-    "tabla_cruda": [
+    "tipo_esquema": "tasa_unica",
+    "tabla": [
       {
-        "descripcion": "Predio destinado a la producción agropecuaria",
-        "valores": "10 al millar anual sobre el valor registrado o catastral"
+        "descripcion": "Predios destinados a la producción agropecuaria",
+        "tasa": 0.01,
+        "base_calculo": "valor_catastral",
+        "unidad": "al_millar",
+        "cuota_fija_adicional": null
       }
     ],
     "minimo_predial": null,
-    "comentarios": "Se ignoraron las tablas de valores unitarios de terreno y construcción por ser catastro y no tarifa del impuesto. El texto parece truncado o mal segmentado: menciona una tarifa con límite inferior, factor y cuota fija anual, pero esa tabla no aparece en el segmento."
+    "comentarios": "Art. 13: Para el predial sobre valor catastral se incluyen tablas de valores unitarios de terreno por sección y una fórmula de determinación con cuota fija anual, pero el texto proporcionado no contiene una tabla tarifaria de predial por rangos suficientemente estructurada para transcribirla sin interpretar. Se documenta la tarifa secundaria explícita del artículo: predios destinados a la producción agropecuaria pagan 10 al millar anual sobre el valor registrado o catastral. Art. 15 establece un impuesto sobre rentas o frutos civiles (2% casas habitación y 2% actividades comerciales), que no se toma como mecánica principal del predial en esta extracción."
   },
   "_meta": {
     "fuente": "txt",
-    "modelo": "gpt-5.4"
+    "modelo": "gpt-5.4-mini"
   },
   "_meta_v2": {
-    "intentos": 3,
-    "requiere_revision": true,
-    "escalado": true,
-    "razon": "clasificado_como_otro_no_clasificado_tras_escalacion",
+    "intentos": 2,
+    "requiere_revision": false,
+    "escalado": false,
+    "razon": null,
+    "usado_reocr": false,
+    "usado_vision": false,
     "tokens": {
-      "input": 18926,
-      "output": 1003,
-      "cached": 13568
+      "input": 15087,
+      "output": 548,
+      "cached": 11776
     },
     "cvegeo": "31051",
     "estado": "yucatan",

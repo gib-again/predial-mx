@@ -1,143 +1,59 @@
 {
   "predial": {
-    "tipo_esquema": "mixto",
+    "tipo_esquema": "progresivo",
     "tabla": [
       {
         "n_rango": 1,
         "inferior": 0.01,
         "superior": 4000.0,
-        "columnas": [
-          {
-            "nombre": "general",
-            "valor": 16.0,
-            "tipo": "cuota_fija",
-            "unidad": "pesos"
-          },
-          {
-            "nombre": "general",
-            "valor": 0.0015,
-            "tipo": "tasa_marginal",
-            "unidad": "porcentaje"
-          }
-        ]
+        "cuota_fija": 16.0,
+        "tasa_marginal": 0.0015
       },
       {
         "n_rango": 2,
         "inferior": 4000.01,
         "superior": 5500.0,
-        "columnas": [
-          {
-            "nombre": "general",
-            "valor": 22.0,
-            "tipo": "cuota_fija",
-            "unidad": "pesos"
-          },
-          {
-            "nombre": "general",
-            "valor": 0.003,
-            "tipo": "tasa_marginal",
-            "unidad": "porcentaje"
-          }
-        ]
+        "cuota_fija": 22.0,
+        "tasa_marginal": 0.003
       },
       {
         "n_rango": 3,
         "inferior": 5500.01,
         "superior": 6500.0,
-        "columnas": [
-          {
-            "nombre": "general",
-            "valor": 28.0,
-            "tipo": "cuota_fija",
-            "unidad": "pesos"
-          },
-          {
-            "nombre": "general",
-            "valor": 0.0045,
-            "tipo": "tasa_marginal",
-            "unidad": "porcentaje"
-          }
-        ]
+        "cuota_fija": 28.0,
+        "tasa_marginal": 0.0045
       },
       {
         "n_rango": 4,
         "inferior": 6500.01,
         "superior": 7500.0,
-        "columnas": [
-          {
-            "nombre": "general",
-            "valor": 34.0,
-            "tipo": "cuota_fija",
-            "unidad": "pesos"
-          },
-          {
-            "nombre": "general",
-            "valor": 0.006,
-            "tipo": "tasa_marginal",
-            "unidad": "porcentaje"
-          }
-        ]
+        "cuota_fija": 34.0,
+        "tasa_marginal": 0.006
       },
       {
         "n_rango": 5,
         "inferior": 7500.01,
         "superior": 8500.0,
-        "columnas": [
-          {
-            "nombre": "general",
-            "valor": 38.0,
-            "tipo": "cuota_fija",
-            "unidad": "pesos"
-          },
-          {
-            "nombre": "general",
-            "valor": 0.0075,
-            "tipo": "tasa_marginal",
-            "unidad": "porcentaje"
-          }
-        ]
+        "cuota_fija": 38.0,
+        "tasa_marginal": 0.0075
       },
       {
         "n_rango": 6,
         "inferior": 8500.01,
         "superior": 10000.0,
-        "columnas": [
-          {
-            "nombre": "general",
-            "valor": 48.0,
-            "tipo": "cuota_fija",
-            "unidad": "pesos"
-          },
-          {
-            "nombre": "general",
-            "valor": 0.009,
-            "tipo": "tasa_marginal",
-            "unidad": "porcentaje"
-          }
-        ]
+        "cuota_fija": 48.0,
+        "tasa_marginal": 0.009
       },
       {
         "n_rango": 7,
         "inferior": 10000.01,
         "superior": null,
-        "columnas": [
-          {
-            "nombre": "general",
-            "valor": 52.0,
-            "tipo": "cuota_fija",
-            "unidad": "pesos"
-          },
-          {
-            "nombre": "general",
-            "valor": 0.01,
-            "tipo": "tasa_marginal",
-            "unidad": "porcentaje"
-          }
-        ]
+        "cuota_fija": 52.0,
+        "tasa_marginal": 0.01
       }
     ],
     "minimo_predial": null,
-    "comentarios": "Art. 4: tarifa principal por valor catastral con brackets que combinan cuota fija anual en pesos y factor/tasa marginal sobre el excedente del límite inferior; se transcribe como mixto. Art. 5 establece una tarifa paralela para predios que causen el impuesto sobre rentas o frutos civiles: habitacional 2% mensual y comercial 5% mensual sobre el monto de la contraprestación; se omite de la tabla principal por ser una base distinta y paralela."
+    "comentarios": "Art. 4: tarifa principal del impuesto predial sobre valor catastral con cuota fija anual y factor sobre el excedente del límite inferior. Art. 4 también contiene tablas de valores unitarios de construcción y de predios rústicos por hectárea, que son parámetros de valuación catastral y no la mecánica tarifaria principal. Art. 5 establece una tasa secundaria sobre rentas o frutos civiles (habitacional 2% y comercial 5% mensual sobre el monto de la contraprestación), documentada como tarifa paralela no estructural."
   },
   "_meta": {
     "fuente": "txt",
@@ -148,10 +64,12 @@
     "requiere_revision": false,
     "escalado": false,
     "razon": null,
+    "usado_reocr": false,
+    "usado_vision": false,
     "tokens": {
-      "input": 6340,
-      "output": 628,
-      "cached": 3840
+      "input": 7557,
+      "output": 421,
+      "cached": 5888
     },
     "cvegeo": "31104",
     "estado": "yucatan",

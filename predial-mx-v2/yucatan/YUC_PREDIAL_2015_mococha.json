@@ -3,14 +3,15 @@
     "tipo_esquema": "tasa_unica",
     "tabla": [
       {
-        "descripcion": "Tasa general por secciones 1, 2, 3, 4 y 5 sobre el valor catastral del inmueble",
+        "descripcion": "Tasa general sobre el valor catastral del inmueble",
         "tasa": 0.25,
         "base_calculo": "valor_catastral",
-        "unidad": "porcentaje"
+        "unidad": "porcentaje",
+        "cuota_fija_adicional": null
       }
     ],
     "minimo_predial": null,
-    "comentarios": "Artículo 13: la base del impuesto predial es el valor catastral del inmueble y se determina aplicando una tasa de 0.25% en las secciones 1, 2, 3, 4 y 5. Las tablas de valores unitarios de terreno y construcción son de catastro y no forman parte de la tarifa del impuesto. El mismo artículo señala, de forma paralela, que cuando no pueda determinarse el valor catastral se cobrará una cuota fija de 80 pesos para terrenos con construcción y 50 pesos para terrenos sin construcción; también establece una tarifa paralela para predios destinados a la producción agropecuaria de 10 al millar anual sobre el valor registrado o catastral. Estas tarifas paralelas no se incluyen en la tabla principal por no corresponder a la misma estructura uniforme."
+    "comentarios": "La mecánica principal del impuesto predial es una tasa única de 0.25% sobre el valor catastral; el texto la repite por secciones 1 a 5 con la misma tasa. Cuando no pueda determinarse el valor catastral, se establece una cuota fija alternativa de $80.00 para terrenos con construcción y $50.00 para terrenos sin construcción, pero no forma parte de la tabla principal de tasa única. Tarifa paralela no incluida en la tabla principal: predios destinados a la producción agropecuaria pagan 10 al millar anual sobre el valor registrado o catastral. También aparece un impuesto predial con base en rentas o frutos civiles de 2% para casa habitación y 2% para actividades, como mecánica separada."
   },
   "_meta": {
     "fuente": "txt",
@@ -21,10 +22,12 @@
     "requiere_revision": false,
     "escalado": true,
     "razon": "escalado_a_gpt-5.4_tras_2x_mini_fallido",
+    "usado_reocr": false,
+    "usado_vision": false,
     "tokens": {
-      "input": 19049,
-      "output": 872,
-      "cached": 13568
+      "input": 23122,
+      "output": 867,
+      "cached": 17664
     },
     "cvegeo": "31051",
     "estado": "yucatan",

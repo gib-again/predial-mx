@@ -3,28 +3,35 @@
     "tipo_esquema": "tasa_unica",
     "tabla": [
       {
-        "descripcion": "Cuota fija de 50.00 más tasa de 0.15% sobre el valor catastral",
-        "tasa": 0.15,
+        "descripcion": "Impuesto predial anual sobre valor catastral",
+        "tasa": 0.0015,
         "base_calculo": "valor_catastral",
-        "unidad": "porcentaje"
+        "unidad": "porcentaje",
+        "cuota_fija_adicional": {
+          "monto": 50.0,
+          "periodicidad": "anual",
+          "unidad": "pesos"
+        }
       }
     ],
     "minimo_predial": null,
-    "comentarios": "Artículo 13: el impuesto predial se determinará con una cuota fija de 50.00 aplicando la tasa del 0.15 % sobre el valor catastral. La tabla de valores catastrales de terreno, valores unitarios de construcción y valores rústicos por hectárea corresponde a catastro/base valuatoria y no a una tarifa del impuesto predial, por lo que se ignora conforme a instrucciones. La cuota fija de 50.00 aparece en el texto, pero la variante disponible que mejor encaja con la mecánica principal es tasa_unica por existir una sola tasa uniforme sobre el valor catastral; se deja asentada la cuota fija en la descripción."
+    "comentarios": "Art. 13: el impuesto predial se determina con una cuota fija de $50.00 aplicando la tasa del 0.15% sobre el valor catastral. Art. 15 establece una tarifa separada sobre rentas o frutos civiles mensuales (2% casas habitación y 2% actividades comerciales), que se documenta como tarifa secundaria no predominante."
   },
   "_meta": {
     "fuente": "txt",
-    "modelo": "gpt-5.4"
+    "modelo": "gpt-5.4-mini"
   },
   "_meta_v2": {
-    "intentos": 3,
+    "intentos": 1,
     "requiere_revision": false,
-    "escalado": true,
-    "razon": "escalado_a_gpt-5.4_tras_2x_mini_fallido",
+    "escalado": false,
+    "razon": null,
+    "usado_reocr": false,
+    "usado_vision": false,
     "tokens": {
-      "input": 6635,
-      "output": 233,
-      "cached": 4864
+      "input": 7243,
+      "output": 186,
+      "cached": 5888
     },
     "cvegeo": "31080",
     "estado": "yucatan",

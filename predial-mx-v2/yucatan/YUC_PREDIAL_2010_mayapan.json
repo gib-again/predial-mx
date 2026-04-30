@@ -53,7 +53,7 @@
       }
     ],
     "minimo_predial": null,
-    "comentarios": "Art. 4: tarifa progresiva anual sobre el valor catastral con cuota fija + tasa marginal sobre el excedente. Además, el artículo 5 establece una tarifa paralela sobre rentas o frutos civiles: 2% para predio habitacional y 5% para comercial, pagadera mensualmente sobre el monto de la contraprestación; se describe textualmente por ser una base distinta al valor catastral."
+    "comentarios": "Art. 4: tarifa progresiva anual sobre valor catastral con cuota fija + tasa marginal sobre el excedente del límite inferior. Art. 5: predios que se causen sobre rentas o frutos civiles pagan mensualmente 2% habitacional y 5% comercial sobre el monto de la contraprestación; se documenta como tarifa secundaria no estructurada en la tabla principal. Las tablas de valores unitarios de terreno y construcción se omiten por ser insumo catastral, no mecánica tarifaria."
   },
   "_meta": {
     "fuente": "txt",
@@ -64,10 +64,12 @@
     "requiere_revision": false,
     "escalado": false,
     "razon": null,
+    "usado_reocr": false,
+    "usado_vision": false,
     "tokens": {
-      "input": 6143,
-      "output": 390,
-      "cached": 3840
+      "input": 7360,
+      "output": 411,
+      "cached": 5888
     },
     "cvegeo": "31049",
     "estado": "yucatan",

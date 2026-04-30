@@ -5,16 +5,16 @@
       {
         "grupo": "urbano",
         "clave": "predios_urbanos",
-        "descripcion": "Sobre los predios urbanos",
-        "tasa_millar": 5.0,
+        "descripcion": "Predios urbanos",
+        "tasa_millar": 0.005,
         "periodicidad": "anual",
         "cuota_fija_adicional": null
       },
       {
         "grupo": "rustico",
         "clave": "predios_rusticos",
-        "descripcion": "Sobre predios rústicos",
-        "tasa_millar": 3.0,
+        "descripcion": "Predios rústicos",
+        "tasa_millar": 0.003,
         "periodicidad": "anual",
         "cuota_fija_adicional": null
       }
@@ -24,7 +24,7 @@
       "periodicidad": "bimestral",
       "unidad": "pesos"
     },
-    "comentarios": "Art. 2: base del impuesto = valor catastral. Tarifa anual de 5 al millar para predios urbanos y 3 al millar para predios rústicos. Mínimo predial: $22.00 bimestral. Se ignoran incentivos/bonificaciones por pago anual y por grupos de contribuyentes por tratarse de descuentos."
+    "comentarios": "Art. 2: base del impuesto = valor catastral de los inmuebles. Tarifa principal: 5 al millar anual para predios urbanos y 3 al millar anual para predios rústicos. El texto incluye incentivos/bonificaciones por pronto pago y a pensionados/jubilados/adultos mayores/personas con discapacidad, pero se ignoran por instrucción. También menciona que no será inferior a $22.00 bimestral, registrado como mínimo predial."
   },
   "_meta": {
     "fuente": "txt",
@@ -35,10 +35,12 @@
     "requiere_revision": false,
     "escalado": false,
     "razon": null,
+    "usado_reocr": false,
+    "usado_vision": false,
     "tokens": {
-      "input": 5212,
-      "output": 228,
-      "cached": 3840
+      "input": 6429,
+      "output": 254,
+      "cached": 5888
     },
     "cvegeo": "05024",
     "estado": "coahuila",

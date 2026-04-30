@@ -4,16 +4,16 @@
     "tabla": [
       {
         "grupo": "urbano",
-        "clave": "inmuebles_urbanos_y_suburbanos_con_edificaciones",
-        "descripcion": "Inmuebles urbanos y suburbanos con edificaciones",
+        "clave": "inmuebles_urbanos_con_edificaciones",
+        "descripcion": "Inmuebles urbanos y suburbanos con edificaciones; valor determinado o modificado a la entrada en vigor de la ley",
         "tasa_millar": 0.002,
         "periodicidad": "anual",
         "cuota_fija_adicional": null
       },
       {
         "grupo": "urbano",
-        "clave": "inmuebles_urbanos_y_suburbanos_sin_edificaciones",
-        "descripcion": "Inmuebles urbanos y suburbanos sin edificaciones",
+        "clave": "inmuebles_urbanos_sin_edificaciones",
+        "descripcion": "Inmuebles urbanos y suburbanos sin edificaciones; valor determinado o modificado a la entrada en vigor de la ley",
         "tasa_millar": 0.003,
         "periodicidad": "anual",
         "cuota_fija_adicional": null
@@ -21,14 +21,14 @@
       {
         "grupo": "rustico",
         "clave": "inmuebles_rusticos",
-        "descripcion": "Inmuebles rústicos",
+        "descripcion": "Inmuebles rústicos; valor determinado o modificado a la entrada en vigor de la ley",
         "tasa_millar": 0.002,
         "periodicidad": "anual",
         "cuota_fija_adicional": null
       }
     ],
     "minimo_predial": null,
-    "comentarios": "Artículo 4. Se transcriben las tasas anuales del impuesto predial por tipo de inmueble para la entrada en vigor de la ley. Las demás tasas listadas en el mismo artículo corresponden a periodos anteriores (2003-2018, 2002, 1993-2001 y anteriores a 1993) y se ignoran por ser mecánica histórica no vigente para el ejercicio 2019. Las tablas de valores unitarios de terreno y construcción de los artículos 5 y 6 no se incluyen porque son catastro/valuación, no tarifa del impuesto."
+    "comentarios": "Art. 4 contiene tarifas paralelas por antigüedad del valor catastral para inmuebles urbanos/suburbanos y rústicos. Para urbanos y suburbanos se establecen tasas distintas según tengan o no edificaciones: 2.00 al millar con edificaciones y 3.00 al millar sin edificaciones a la entrada en vigor; 3.39/5.65 al millar para valores determinados o modificados durante 2003-2018; 2.25/3.77 para 2002; 8.00/15.00 para 1993-2001; 13/13 al millar con anterioridad a 1993. Para inmuebles rústicos: 2.00 al millar a la entrada en vigor; 0.40 al millar durante 2003-2018; 0.27 al millar en 2002; 6.00 al millar en 1993-2001; 12 al millar con anterioridad a 1993. Se transcribe la mecánica predominante como tarifa_millar y las demás tarifas paralelas quedan documentadas aquí."
   },
   "_meta": {
     "fuente": "txt",
@@ -39,10 +39,12 @@
     "requiere_revision": false,
     "escalado": false,
     "razon": null,
+    "usado_reocr": false,
+    "usado_vision": false,
     "tokens": {
-      "input": 9613,
-      "output": 331,
-      "cached": 3840
+      "input": 10830,
+      "output": 485,
+      "cached": 5888
     },
     "cvegeo": "11017",
     "estado": "guanajuato",

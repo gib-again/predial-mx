@@ -4,31 +4,31 @@
     "tabla": [
       {
         "grupo": "urbano",
-        "clave": "con_edificaciones",
-        "descripcion": "Inmuebles urbanos y suburbanos con edificaciones",
-        "tasa_millar": 0.0024,
+        "clave": "urbano_con_edificaciones",
+        "descripcion": "Inmuebles urbanos y suburbanos con edificaciones, según Art. 4 fracción I y IV",
+        "tasa_millar": 0.013,
         "periodicidad": "anual",
         "cuota_fija_adicional": null
       },
       {
         "grupo": "urbano",
-        "clave": "sin_edificaciones",
-        "descripcion": "Inmuebles urbanos y suburbanos sin edificaciones",
-        "tasa_millar": 0.0045,
+        "clave": "urbano_sin_edificaciones",
+        "descripcion": "Inmuebles urbanos y suburbanos sin edificaciones, según Art. 4 fracción I y IV",
+        "tasa_millar": 0.012,
         "periodicidad": "anual",
         "cuota_fija_adicional": null
       },
       {
         "grupo": "rustico",
-        "clave": "rusticos",
-        "descripcion": "Inmuebles rústicos",
+        "clave": "rustico_general",
+        "descripcion": "Inmuebles rústicos, según Art. 4 fracción I y IV",
         "tasa_millar": 0.0018,
         "periodicidad": "anual",
         "cuota_fija_adicional": null
       }
     ],
     "minimo_predial": null,
-    "comentarios": "Art. 4 establece tasas anuales al millar por categoría de inmueble: urbanos y suburbanos con edificaciones 2.4 al millar, sin edificaciones 4.5 al millar, y rústicos 1.8 al millar. La fracción III muestra tasas distintas para periodos anteriores al ejercicio, pero para 2011 la mecánica aplicable es la de la tasa anual vigente indicada en la entrada en vigor. Los artículos 5 y 6 contienen tablas de valores unitarios para avalúo/catastro, no la mecánica de cálculo del impuesto."
+    "comentarios": "Art. 4 establece tasas anuales al millar por tipo de inmueble y condición de edificación. Además prevé tasas históricas para períodos anteriores (2002-2010, 1993-2002 y con anterioridad a 1993), pero la mecánica principal transcrita para el ejercicio 2011 es la tarifa categórica al millar. El texto de Art. 5 y 6 contiene valores unitarios para avalúo/catastro, no mecánica del impuesto."
   },
   "_meta": {
     "fuente": "txt",
@@ -39,10 +39,12 @@
     "requiere_revision": false,
     "escalado": false,
     "razon": null,
+    "usado_reocr": false,
+    "usado_vision": false,
     "tokens": {
-      "input": 7366,
-      "output": 311,
-      "cached": 3840
+      "input": 8583,
+      "output": 335,
+      "cached": 5888
     },
     "cvegeo": "11021",
     "estado": "guanajuato",

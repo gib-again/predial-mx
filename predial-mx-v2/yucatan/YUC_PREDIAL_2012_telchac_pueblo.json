@@ -1,30 +1,33 @@
 {
   "predial": {
-    "tipo_esquema": "cuota_fija_simple",
+    "tipo_esquema": "tasa_unica",
     "tabla": [
       {
-        "descripcion": "Predios urbanos y rústicos con tarifa fija cuando no está actualizado el padrón catastral",
-        "monto": 65.0,
-        "periodicidad": "anual",
-        "unidad": "pesos"
+        "descripcion": "Impuesto predial determinado multiplicando el valor catastral por 0.015 por ciento del salario mínimo vigente para el Estado de Yucatán",
+        "tasa": 0.015,
+        "base_calculo": "otro",
+        "unidad": "porcentaje",
+        "cuota_fija_adicional": null
       }
     ],
     "minimo_predial": null,
-    "comentarios": "Artículo 13: se menciona como regla general la determinación multiplicando el valor catastral por 0.015 por ciento del salario mínimo vigente para el Estado de Yucatán, pero el texto también establece que cuando no está actualizado el padrón catastral se aplicará tarifa fija para urbanos de $65.00 pesos y predios rústicos de $40.00 pesos anuales. El segmento no presenta una tabla estructurada con filas separadas para ambas tarifas, por lo que se transcribe sólo la cuota fija visible en el texto base. Artículo 14 contiene descuento y se ignora. Se deja la estructura mínima detectada sin interpretar la mecánica completa."
+    "comentarios": "La mecánica principal del artículo 13 es una tasa única expresada como 0.015 por ciento del salario mínimo vigente aplicada al valor catastral. El propio texto agrega que, si no está actualizado el padrón catastral, se aplicará tarifa fija anual de 65 pesos para urbanos y 40 pesos para predios rústicos; esas tarifas son paralelas/condicionadas y no se incluyen en la tabla principal."
   },
   "_meta": {
     "fuente": "txt",
-    "modelo": "gpt-5.4-mini"
+    "modelo": "gpt-5.4"
   },
   "_meta_v2": {
-    "intentos": 2,
+    "intentos": 3,
     "requiere_revision": false,
-    "escalado": false,
-    "razon": null,
+    "escalado": true,
+    "razon": "escalado_a_gpt-5.4_tras_2x_mini_fallido",
+    "usado_reocr": false,
+    "usado_vision": false,
     "tokens": {
-      "input": 10535,
-      "output": 485,
-      "cached": 8704
+      "input": 20138,
+      "output": 736,
+      "cached": 17664
     },
     "cvegeo": "31082",
     "estado": "yucatan",

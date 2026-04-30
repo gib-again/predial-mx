@@ -11,49 +11,49 @@
       },
       {
         "n_rango": 2,
-        "inferior": 4000.0,
+        "inferior": 4000.01,
         "superior": 5500.0,
         "cuota_fija": 27.0,
         "tasa_marginal": 0.0015
       },
       {
         "n_rango": 3,
-        "inferior": 5500.0,
+        "inferior": 5500.01,
         "superior": 6500.0,
         "cuota_fija": 40.0,
         "tasa_marginal": 0.0018
       },
       {
         "n_rango": 4,
-        "inferior": 6500.0,
+        "inferior": 6500.01,
         "superior": 7500.0,
         "cuota_fija": 60.0,
         "tasa_marginal": 0.002
       },
       {
         "n_rango": 5,
-        "inferior": 7500.0,
+        "inferior": 7500.01,
         "superior": 8500.0,
         "cuota_fija": 70.0,
         "tasa_marginal": 0.0021
       },
       {
         "n_rango": 6,
-        "inferior": 8500.0,
+        "inferior": 8500.01,
         "superior": 10000.0,
         "cuota_fija": 80.0,
         "tasa_marginal": 0.0023
       },
       {
         "n_rango": 7,
-        "inferior": 10000.0,
+        "inferior": 10000.01,
         "superior": null,
         "cuota_fija": 100.0,
         "tasa_marginal": 0.0025
       }
     ],
     "minimo_predial": null,
-    "comentarios": "Art. 13 establece una tarifa progresiva por valor catastral con cuota fija anual y factor (tasa marginal) sobre el excedente del límite inferior. Además, el mismo artículo contiene tablas de valores unitarios de terreno/construcción y cuotas para predios rústicos y colindantes con la ZFMT, pero esas son valuación catastral/base de cálculo o tarifas paralelas no integradas en la mecánica principal del bracket. Se ignora el descuento del Art. 14."
+    "comentarios": "Art. 13: el impuesto predial se calcula sobre el valor catastral con tabla progresiva de cuota fija anual más factor sobre el excedente. El texto también contiene valores unitarios de terreno, construcciones y predios rústicos, pero corresponden a catastro/valorización, no a la mecánica tarifaria principal. Art. 14 contiene un descuento por pronto pago, ignorado conforme a la instrucción."
   },
   "_meta": {
     "fuente": "txt",
@@ -64,10 +64,12 @@
     "requiere_revision": false,
     "escalado": false,
     "razon": null,
+    "usado_reocr": false,
+    "usado_vision": false,
     "tokens": {
-      "input": 5588,
-      "output": 396,
-      "cached": 3840
+      "input": 6805,
+      "output": 401,
+      "cached": 5888
     },
     "cvegeo": "31061",
     "estado": "yucatan",

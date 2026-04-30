@@ -1,32 +1,36 @@
 {
   "predial": {
-    "tipo_esquema": "tarifa_millar",
-    "tabla": [
+    "tipo_esquema": "otro_no_clasificado",
+    "categoria": "municipio_sin_impuesto",
+    "descripcion_estructural": "El texto del capítulo de predial no contiene una tarifa del impuesto predial extraíble; únicamente remite a la Ley de Hacienda del Municipio de Kinchil, Yucatán, para el pago del impuesto, y luego inserta tablas de valores catastrales/unitarios de suelo y construcción. La única tasa expresa observada es una tarifa paralela para predios destinados a la producción agropecuaria de 10 al millar anual sobre el valor registrado o catastral, pero no se proporciona la mecánica principal del impuesto predial para los demás predios.",
+    "tabla_cruda": [
       {
-        "grupo": "general",
-        "clave": "predio_agropecuario",
-        "descripcion": "Todo predio destinado a la producción agropecuaria",
-        "tasa_millar": 0.01,
-        "periodicidad": "anual",
-        "cuota_fija_adicional": null
+        "descripcion": "Remisión normativa principal",
+        "valores": "Artículo 13: 'Para el cálculo del valor catastral de los predios se servirá de base para el pago del Impuesto Predial en los términos de la Ley de Hacienda del Municipio de Kinchil, Yucatán...'"
+      },
+      {
+        "descripcion": "Tarifa paralela agropecuaria",
+        "valores": "Todo predio destinado a la producción agropecuaria 10 al millar anual sobre el valor registrado o catastral"
       }
     ],
     "minimo_predial": null,
-    "comentarios": "Art. 13: la mecánica del impuesto predial no se presenta como una tabla de cobro por rangos ni como una tasa uniforme general; el único dato expreso de cálculo del predial en el texto extraído es una tarifa paralela para predios destinados a la producción agropecuaria de 10 al millar anual sobre el valor registrado o catastral. El resto del artículo reproduce tablas de valores catastrales de suelo y construcción, que son base valuatoria y no se transcriben como mecánica de cobro. No se detecta en el segmento una tabla completa de tasas del predial para todos los tipos de predio."
+    "comentarios": "Se ignoraron las tablas de valores catastrales/unitarios de terreno y construcción porque son de catastro y no constituyen por sí mismas la tarifa del impuesto predial. También se ignoraron descuentos del artículo 14 conforme a la instrucción. La tasa de 10 al millar para producción agropecuaria se documenta sólo como referencia, pero no permite reconstruir la mecánica principal del predial municipal."
   },
   "_meta": {
     "fuente": "txt",
-    "modelo": "gpt-5.4-mini"
+    "modelo": "gpt-5.4"
   },
   "_meta_v2": {
-    "intentos": 1,
-    "requiere_revision": false,
-    "escalado": false,
-    "razon": null,
+    "intentos": 3,
+    "requiere_revision": true,
+    "escalado": true,
+    "razon": "clasificado_como_otro_no_clasificado",
+    "usado_reocr": false,
+    "usado_vision": false,
     "tokens": {
-      "input": 6698,
-      "output": 238,
-      "cached": 3840
+      "input": 25098,
+      "output": 846,
+      "cached": 17664
     },
     "cvegeo": "31044",
     "estado": "yucatan",

@@ -17,7 +17,7 @@
       },
       {
         "n_rango": 2,
-        "inferior": 4000.01,
+        "inferior": 4000.0,
         "superior": 5500.0,
         "columnas": [
           {
@@ -30,7 +30,7 @@
       },
       {
         "n_rango": 3,
-        "inferior": 5500.01,
+        "inferior": 5500.0,
         "superior": 6500.0,
         "columnas": [
           {
@@ -43,7 +43,7 @@
       },
       {
         "n_rango": 4,
-        "inferior": 6500.01,
+        "inferior": 6500.0,
         "superior": 7500.0,
         "columnas": [
           {
@@ -56,7 +56,7 @@
       },
       {
         "n_rango": 5,
-        "inferior": 7500.01,
+        "inferior": 7500.0,
         "superior": 8500.0,
         "columnas": [
           {
@@ -69,7 +69,7 @@
       },
       {
         "n_rango": 6,
-        "inferior": 8500.01,
+        "inferior": 8500.0,
         "superior": 10000.0,
         "columnas": [
           {
@@ -82,7 +82,7 @@
       },
       {
         "n_rango": 7,
-        "inferior": 10000.01,
+        "inferior": 10000.0,
         "superior": null,
         "columnas": [
           {
@@ -90,18 +90,12 @@
             "valor": 101.0,
             "tipo": "cuota_fija",
             "unidad": "pesos"
-          },
-          {
-            "nombre": "general",
-            "valor": 0.002,
-            "tipo": "tasa_marginal",
-            "unidad": "porcentaje"
           }
         ]
       }
     ],
     "minimo_predial": null,
-    "comentarios": "Art. 13 establece una mecánica híbrida: cuota fija anual de $60.00 más una tasa del 0.20% del valor catastral vigente. Además, en el mismo artículo aparece la tarifa escalonada por valor catastral con cuota anual en pesos y un factor para aplicar al excedente; el último renglón combina cuota fija de $101.00 con factor 0.002%, por lo que se clasifica como mixto. No se incluyen las tablas de valores unitarios de terreno y construcción del Art. 14 porque son bases catastrales, no tarifa del impuesto. Se ignoran descuentos del Art. 15 y el gravamen sobre rentas/frutos civiles del Art. 16 por instrucción de extracción."
+    "comentarios": "Art. 13: el impuesto predial se determina con una cuota fija de $60.00 y aplicando la tasa del 0.20% del valor catastral vigente; además, el Art. 14 establece una tarifa por rangos de valor catastral con cuota anual en pesos y factor para aplicar al excedente, que se transcribe como tabla principal. La mecánica es heterogénea porque coexisten una cuota fija/tasa sobre valor catastral y una tabla escalonada por rangos con montos fijos; además, el Art. 16 establece una tasa de 2% sobre rentas o frutos civiles mensuales para casas habitación y actividades comerciales como tarifa paralela secundaria. Art. 14: 'La cantidad que exceda el límite inferior, le será aplicada el factor determinado en ésta tarifa y el resultado se incrementará con la cuota fija anual respectiva.'"
   },
   "_meta": {
     "fuente": "txt",
@@ -112,10 +106,12 @@
     "requiere_revision": false,
     "escalado": false,
     "razon": null,
+    "usado_reocr": false,
+    "usado_vision": false,
     "tokens": {
-      "input": 6753,
-      "output": 541,
-      "cached": 3840
+      "input": 7970,
+      "output": 536,
+      "cached": 5888
     },
     "cvegeo": "31026",
     "estado": "yucatan",

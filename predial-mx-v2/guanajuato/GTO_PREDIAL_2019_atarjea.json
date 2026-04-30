@@ -5,7 +5,7 @@
       {
         "grupo": "urbano",
         "clave": "con_edificaciones",
-        "descripcion": "Inmuebles urbanos y suburbanos con edificaciones",
+        "descripcion": "Inmuebles urbanos y suburbanos con edificaciones; Art. 4, tasas anuales según antigüedad del valor determinado o modificado.",
         "tasa_millar": 0.0024,
         "periodicidad": "anual",
         "cuota_fija_adicional": null
@@ -13,38 +13,22 @@
       {
         "grupo": "urbano",
         "clave": "sin_edificaciones",
-        "descripcion": "Inmuebles urbanos y suburbanos sin edificaciones",
+        "descripcion": "Inmuebles urbanos y suburbanos sin edificaciones; Art. 4, tasas anuales según antigüedad del valor determinado o modificado.",
         "tasa_millar": 0.0045,
         "periodicidad": "anual",
         "cuota_fija_adicional": null
       },
       {
         "grupo": "rustico",
-        "clave": "general",
-        "descripcion": "Inmuebles rústicos",
+        "clave": "rusticos",
+        "descripcion": "Inmuebles rústicos; Art. 4, tasas anuales según antigüedad del valor determinado o modificado.",
         "tasa_millar": 0.0018,
-        "periodicidad": "anual",
-        "cuota_fija_adicional": null
-      },
-      {
-        "grupo": "urbano",
-        "clave": "antiguo_con_edificaciones",
-        "descripcion": "Con anterioridad al año de 1993, inmuebles urbanos y suburbanos con edificaciones",
-        "tasa_millar": 0.013,
-        "periodicidad": "anual",
-        "cuota_fija_adicional": null
-      },
-      {
-        "grupo": "urbano",
-        "clave": "antiguo_sin_edificaciones",
-        "descripcion": "Con anterioridad al año de 1993, inmuebles urbanos y suburbanos sin edificaciones",
-        "tasa_millar": 0.012,
         "periodicidad": "anual",
         "cuota_fija_adicional": null
       }
     ],
     "minimo_predial": null,
-    "comentarios": "Art. 4 establece tasas anuales al millar por tipo de inmueble y antigüedad. Se transcriben las tasas detectadas para inmuebles urbanos y suburbanos con/sin edificaciones y para inmuebles rústicos. El texto OCR presenta una matriz con encabezados desalineados; se conserva la mecánica tarifaria sin interpretar ni corregir columnas faltantes. Art. 5 y 6 contienen valores unitarios y criterios de valuación, no tarifa del impuesto."
+    "comentarios": "Art. 4 establece una tarifa por antigüedad del valor determinado o modificado, con tres tasas para inmuebles urbanos y suburbanos con edificaciones, sin edificaciones, y rústicos. El texto OCR no permite separar con certeza el renglón 4 para 'con anterioridad al año de 1993' en la misma estructura sin introducir ambigüedad adicional; se conserva la mecánica principal observable como tarifa al millar. Art. 5 y 6 describen valores unitarios y criterios de avalúo, no la mecánica de cobro, y se ignoran conforme a la instrucción."
   },
   "_meta": {
     "fuente": "txt",
@@ -55,10 +39,12 @@
     "requiere_revision": false,
     "escalado": false,
     "razon": null,
+    "usado_reocr": false,
+    "usado_vision": false,
     "tokens": {
-      "input": 6763,
-      "output": 410,
-      "cached": 3840
+      "input": 7980,
+      "output": 375,
+      "cached": 5888
     },
     "cvegeo": "11006",
     "estado": "guanajuato",

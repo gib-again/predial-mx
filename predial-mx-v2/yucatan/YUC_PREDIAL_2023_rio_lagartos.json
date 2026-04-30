@@ -3,28 +3,31 @@
     "tipo_esquema": "tasa_unica",
     "tabla": [
       {
-        "descripcion": "Impuesto predial general sobre valor catastral actualizado",
+        "descripcion": "Tasa general sobre valor catastral determinado conforme a valores unitarios de terreno y construcción",
         "tasa": 0.0025,
         "base_calculo": "valor_catastral",
-        "unidad": "porcentaje"
+        "unidad": "porcentaje",
+        "cuota_fija_adicional": null
       }
     ],
     "minimo_predial": null,
-    "comentarios": "Art. 14: el texto establece un cálculo general del predial multiplicando el valor catastral actualizado por el factor 0.0025% (transcrito como tasa única sobre el valor catastral). Además aparecen reglas paralelas no integradas en la tabla principal: cuando no se pueda determinar el valor catastral se cobra tarifa fija de $200.00 para habitacional y $600.00 para comercial; predios agropecuarios pagan $20.00 por hectárea; y en zona costera el impuesto es 0.0003% del valor catastral. Art. 16 regula frutos civiles (3% y 5%), que se ignoran por ser renta/frutos civiles, no predial sobre valor catastral."
+    "comentarios": "La mecánica principal del artículo 14 es una tasa única aplicada al valor catastral: el texto indica 'se multiplicara por el factor del 0.0025% del valor catastral actualizado'. Las tablas extensas de zonas, valores unitarios por m2, categorías de construcción, zona costera y comisaría Las Coloradas corresponden a la determinación del valor catastral, no a brackets del impuesto predial. Tarifas paralelas no incorporadas en la tabla principal: cuando no se pueda determinar el valor catastral, se cobrará una cuota fija de $200.00 para habitacional y $600.00 para comercial; predios destinados a producción agropecuaria pagan $20.00 por hectárea; para predios de la zona costera colindantes con el Golfo de México y zona federal marítimo terrestre, una vez calculado el valor catastral, el impuesto predial a pagar será 0.0003% del valor catastral; para la comisaría Las Coloradas el texto señala que al valor obtenido se multiplicará por el factor del 0.025%. El artículo 16 regula un impuesto con base en rentas o frutos civiles (3% casas habitación y 5% actividades comerciales), documentado aquí solo como tarifa secundaria ajena a la mecánica principal del predial sobre valor catastral."
   },
   "_meta": {
     "fuente": "txt",
-    "modelo": "gpt-5.4-mini"
+    "modelo": "gpt-5.4"
   },
   "_meta_v2": {
-    "intentos": 1,
+    "intentos": 3,
     "requiere_revision": false,
-    "escalado": false,
-    "razon": null,
+    "escalado": true,
+    "razon": "escalado_a_gpt-5.4_tras_2x_mini_fallido",
+    "usado_reocr": false,
+    "usado_vision": false,
     "tokens": {
-      "input": 6807,
-      "output": 243,
-      "cached": 3840
+      "input": 25423,
+      "output": 1037,
+      "cached": 17664
     },
     "cvegeo": "31061",
     "estado": "yucatan",

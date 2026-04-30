@@ -53,7 +53,7 @@
       }
     ],
     "minimo_predial": null,
-    "comentarios": "Se toma como tabla principal la tarifa progresiva de predios urbanos, normalizando los rangos contiguamente conforme al texto que presenta límites como 20,001.00, 50,001.00, 80,001.00, 110,501.00, 500,001.00 y 1000,001.00. Tarifas paralelas no incluidas en la tabla principal: para predios rústicos el Artículo 13 establece otra tarifa progresiva con los mismos rangos y cuotas fijas de 130, 300, 320, 350, 400, 450 y 500 pesos, con factores de 0.25%, 0.25%, 0.25%, 0.20%, 0.20%, 0.15% y 0.15%, respectivamente; además, el mismo artículo incluye una tarifa separada para todo predio destinado a la producción agropecuaria de 10 al millar anual sobre el valor registrado o catastral, y un segmento previo con valores por m2 para predios urbanos/rústicos que no se incorpora por no corresponder a la tabla principal de brackets sobre valor catastral."
+    "comentarios": "Se toma como tabla principal la tarifa progresiva de predios urbanos, normalizando los rangos contiguos conforme a la instrucción: 20,001–50,000 se registra como 20,000–50,000; 50,001–80,000 como 50,000–80,000; 80,001–110,000 como 80,000–110,000; 110,501–500,000 se registra como 110,000–500,000; 500,001–1,000,000 como 500,000–1,000,000; 1,000,001 en adelante como 1,000,000 en adelante. Existe una tarifa paralela separada para predios rústicos con los mismos tramos y cuotas fijas de 130, 300, 320, 350, 400, 450 y 500 pesos, con factores de 0.25%, 0.25%, 0.25%, 0.20%, 0.20%, 0.15% y 0.15%, respectivamente; no se incluye en la tabla principal por ser tarifa paralela. El texto también establece: 'Todo predio destinado a la producción agropecuaria pagará 10 al millar anual sobre el valor registrado o catastral', tarifa paralela no incluida en la tabla principal."
   },
   "_meta": {
     "fuente": "txt",
@@ -64,10 +64,12 @@
     "requiere_revision": false,
     "escalado": true,
     "razon": "escalado_a_gpt-5.4_tras_2x_mini_fallido",
+    "usado_reocr": false,
+    "usado_vision": false,
     "tokens": {
-      "input": 20084,
-      "output": 1651,
-      "cached": 13568
+      "input": 24155,
+      "output": 1906,
+      "cached": 17664
     },
     "cvegeo": "31029",
     "estado": "yucatan",

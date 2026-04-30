@@ -20,7 +20,7 @@
       }
     ],
     "minimo_predial": null,
-    "comentarios": "Art. 10: se aplica la tasa del 1.5 al millar anual sobre el valor catastral para predios urbanos y suburbanos, y la tasa del 1.5 al millar anual para predios rústicos. No se observan rangos por valor catastral ni cuota fija adicional."
+    "comentarios": "Art. 10: el impuesto se causa sobre el valor catastral; se aplican dos tarifas paralelas de 1.5 al millar anual, una para predios urbanos y suburbanos y otra para predios rústicos, ambas sobre valor catastral. No hay rangos por valor ni cuota fija adicional."
   },
   "_meta": {
     "fuente": "txt",
@@ -31,10 +31,12 @@
     "requiere_revision": false,
     "escalado": false,
     "razon": null,
+    "usado_reocr": false,
+    "usado_vision": false,
     "tokens": {
-      "input": 5092,
-      "output": 210,
-      "cached": 3840
+      "input": 6309,
+      "output": 211,
+      "cached": 5888
     },
     "cvegeo": "28025",
     "estado": "tamaulipas",

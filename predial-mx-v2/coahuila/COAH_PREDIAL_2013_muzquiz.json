@@ -32,7 +32,7 @@
       "periodicidad": "bimestral",
       "unidad": "pesos"
     },
-    "comentarios": "Art. 2: base de cálculo sobre valor catastral con tasas separadas por categoría: predios urbanos 5 al millar anual, predios rústicos 3 al millar anual y lotes baldíos con maleza 7 al millar. Se ignoran incentivos por pago anticipado y descuentos para pensionados/jubilados/adultos mayores/personas con discapacidad por instrucción. No se incluyen otras disposiciones ajenas a la mecánica de cálculo."
+    "comentarios": "Art. 2: la base es el valor catastral. Se establecen tres tasas categóricas al millar: predios urbanos 5 al millar anual, predios rústicos 3 al millar anual y lotes baldíos con maleza 7 al millar. Los incentivos por pago anticipado no se documentan. Las referencias a posesión, plantas de beneficio y concesiones forman parte del objeto del impuesto, no de la mecánica de cálculo."
   },
   "_meta": {
     "fuente": "txt",
@@ -43,10 +43,12 @@
     "requiere_revision": false,
     "escalado": false,
     "razon": null,
+    "usado_reocr": false,
+    "usado_vision": false,
     "tokens": {
-      "input": 5260,
-      "output": 304,
-      "cached": 3840
+      "input": 6477,
+      "output": 305,
+      "cached": 5888
     },
     "cvegeo": "05020",
     "estado": "coahuila",

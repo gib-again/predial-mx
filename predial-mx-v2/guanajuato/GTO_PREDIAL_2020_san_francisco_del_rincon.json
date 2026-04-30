@@ -74,7 +74,7 @@
       }
     ],
     "minimo_predial": null,
-    "comentarios": "Art. 4, fracción II: para inmuebles urbanos y rústicos con edificaciones se aplica esta tabla de valor fiscal. No se incluye la tabla paralela de inmuebles urbanos y rústicos sin edificaciones (0.003750% a 0.006750%) por tratarse de una tarifa separada para otro grupo de predios."
+    "comentarios": "Art. 4 fracc. II: para inmuebles urbanos y rústicos con edificaciones se aplica tabla progresiva sobre valor fiscal. La mecánica es de cuota fija + tasa marginal sobre el excedente. En el texto también aparece una tabla separada para inmuebles urbanos y rústicos sin edificaciones con la misma estructura progresiva; se omite en la tabla principal por ser una tarifa paralela análoga. Art. 4 también remite a tablas/valores para avalúo en artículos 5 y 6, pero no forman parte de la mecánica del impuesto."
   },
   "_meta": {
     "fuente": "txt",
@@ -85,10 +85,12 @@
     "requiere_revision": false,
     "escalado": false,
     "razon": null,
+    "usado_reocr": false,
+    "usado_vision": false,
     "tokens": {
-      "input": 7900,
-      "output": 520,
-      "cached": 3840
+      "input": 9117,
+      "output": 569,
+      "cached": 5888
     },
     "cvegeo": "11031",
     "estado": "guanajuato",

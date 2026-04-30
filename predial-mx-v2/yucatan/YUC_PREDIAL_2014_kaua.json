@@ -46,7 +46,7 @@
       }
     ],
     "minimo_predial": null,
-    "comentarios": "Artículo 13: impuesto predial determinado por rangos de valor catastral con cuota fija anual y factor para aplicar al excedente del límite inferior. Se excluye de la tabla principal la disposición paralela para predios destinados a la producción agropecuaria, que pagan 10 al millar anual sobre el valor registrado o catastral, por tratarse de una tarifa sectorial separada; también se ignoran descuentos del Art. 14 y las tablas de valores unitarios de terreno y construcción por no ser mecánica de cálculo del impuesto."
+    "comentarios": "Art. 13: la mecánica principal es una tarifa progresiva por valor catastral con cuota fija anual y factor para aplicar al excedente del límite inferior. Tarifa secundaria paralela: todo predio destinado a la producción agropecuaria paga 10 al millar anual sobre el valor registrado o catastral; no se incluye en la tabla principal por ser una tarifa paralela. Las tablas de valores de terreno y construcción no forman parte de la mecánica del impuesto."
   },
   "_meta": {
     "fuente": "txt",
@@ -57,10 +57,12 @@
     "requiere_revision": false,
     "escalado": false,
     "razon": null,
+    "usado_reocr": false,
+    "usado_vision": false,
     "tokens": {
-      "input": 6129,
-      "output": 381,
-      "cached": 3840
+      "input": 7346,
+      "output": 373,
+      "cached": 5888
     },
     "cvegeo": "31043",
     "estado": "yucatan",

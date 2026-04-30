@@ -52,8 +52,12 @@
         "tasa_marginal": 0.0025
       }
     ],
-    "minimo_predial": null,
-    "comentarios": "Art. 4: tarifa principal por valor catastral con cuota fija + factor (tasa marginal) por rango. Tarifa paralela para predios rústicos: $200 de 1 a 20 m2, $300 de 21 a 40 m2 y $400 de 41 m2 en adelante; no se incluye en la tabla principal por ser una mecánica distinta. También se establece una cuota fija anual de $70.00 por predio cuando el impuesto predial se determine con base en el valor catastral de los inmuebles en ese supuesto; se deja fuera por estar en el mismo artículo como regla específica no estructurada en brackets."
+    "minimo_predial": {
+      "monto": 70.0,
+      "periodicidad": "anual",
+      "unidad": "pesos"
+    },
+    "comentarios": "Art. 4: tarifa principal por valor catastral con cuota fija + factor sobre el excedente, transcrita como progresivo. Tarifas paralelas secundarias no incluidas en la tabla principal: predios rústicos por superficie pagan $200 (1-20 m2), $300 (21-40 m2) y $400 (41 m2 en adelante); y cuando el predial se cause sobre rentas o frutos civiles se paga mensualmente 4% habitacional, 5% comercial y 5% para radio base de telefonía. Art. 4 también señala cuota fija anual de $70 por predio cuando se determine el pago con base en valor catastral de inmuebles; se registra como mínimo predial por ser un cobro anual fijo indicado en el mismo artículo."
   },
   "_meta": {
     "fuente": "txt",
@@ -64,10 +68,12 @@
     "requiere_revision": false,
     "escalado": false,
     "razon": null,
+    "usado_reocr": false,
+    "usado_vision": false,
     "tokens": {
-      "input": 6290,
-      "output": 429,
-      "cached": 3840
+      "input": 7507,
+      "output": 474,
+      "cached": 5888
     },
     "cvegeo": "31009",
     "estado": "yucatan",

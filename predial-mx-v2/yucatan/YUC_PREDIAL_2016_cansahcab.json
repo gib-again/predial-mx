@@ -141,7 +141,7 @@
       "periodicidad": "anual",
       "unidad": "pesos"
     },
-    "comentarios": "Art. 4: la tarifa principal por valor catastral es una estructura por rangos con cuota fija y factor sobre el excedente, por lo que se clasifica como mixto. Además, el mismo artículo establece una tarifa paralela para predios rústicos por superficie (1-20 m2: $200; 21-40 m2: $300; 41 m2 en adelante: $400) y otra cuota fija de $70 anuales cuando no pueda determinarse el pago con base en valor catastral; estas reglas secundarias no se incorporan en la tabla principal. Art. 7 establece tasa mensual sobre rentas/frutos civiles (habitacional 4%, comercial 5%, radio bases 5%), pero se ignora por ser frutos civiles."
+    "comentarios": "Art. 4: tarifa principal por valor catastral con cuota fija + factor marginal por excedente; se clasifica como mixto porque la mecánica principal convive con tarifas paralelas no homogéneas. Tarifa paralela para predios rústicos: por superficie, 'De 1 a 20 m² $200; de 21 a 40 m² $300; de 41 m² en adelante $400'. Además, cuando no pueda determinarse el pago con base en valor catastral, se aplica cuota fija anual de $70 por predio. Art. 7: impuesto sobre rentas o frutos civiles pagadero mensualmente, 4% habitacional, 5% comercial y 5% para instalación de radio bases de telefonía; se documenta como tarifa secundaria paralela."
   },
   "_meta": {
     "fuente": "txt",
@@ -152,10 +152,12 @@
     "requiere_revision": false,
     "escalado": false,
     "razon": null,
+    "usado_reocr": false,
+    "usado_vision": false,
     "tokens": {
-      "input": 6337,
-      "output": 690,
-      "cached": 3840
+      "input": 7554,
+      "output": 698,
+      "cached": 5888
     },
     "cvegeo": "31009",
     "estado": "yucatan",

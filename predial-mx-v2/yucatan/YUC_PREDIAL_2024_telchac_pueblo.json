@@ -53,7 +53,7 @@
       }
     ],
     "minimo_predial": null,
-    "comentarios": "Se toma como tabla principal la de predios urbanos del Artículo 13, normalizando los rangos contiguamente donde el texto usa cortes tipo 20,001 / 50,001 / 80,001 / 110,501 / 500,001 / 1000,001. El texto también establece una tarifa paralela para predios rústicos con la misma estructura de brackets pero distintas cuotas fijas (100, 300, 320, 350, 400, 450 y 500 pesos) y tasas marginales de 0.25%, 0.25%, 0.25%, 0.20%, 0.20%, 0.15% y 0.15%; además indica que la misma tarifa se aplicará a terrenos ejidales. Asimismo, señala que todo predio destinado a la producción agropecuaria paga 10 al millar anual sobre el valor registrado o catastral; no se incluye en la tabla principal por ser una tarifa paralela para otro grupo de predios."
+    "comentarios": "Se toma como tarifa principal la de PREDIOS URBANOS por ser la tabla estructurada principal del artículo. Los límites se normalizan para eliminar la convención centavera y el hueco OCR entre 110,000.00 y 110,501.00, quedando rangos contiguos. Tarifa paralela no incluida en la tabla principal: PREDIOS RÚSTICOS con la misma mecánica progresiva pero cuotas fijas de 100, 300, 320, 350, 400, 450 y 500 pesos y tasas marginales de 0.25%, 0.25%, 0.25%, 0.20%, 0.20%, 0.15% y 0.15%, respectivamente. Además, el texto establece para todo predio destinado a la producción agropecuaria una tarifa paralela de 10 al millar anual sobre el valor registrado o catastral, con el tope previsto por la legislación agraria federal para terrenos ejidales."
   },
   "_meta": {
     "fuente": "txt",
@@ -64,10 +64,12 @@
     "requiere_revision": false,
     "escalado": true,
     "razon": "escalado_a_gpt-5.4_tras_2x_mini_fallido",
+    "usado_reocr": false,
+    "usado_vision": false,
     "tokens": {
-      "input": 21784,
-      "output": 1707,
-      "cached": 12544
+      "input": 25842,
+      "output": 2040,
+      "cached": 17664
     },
     "cvegeo": "31082",
     "estado": "yucatan",

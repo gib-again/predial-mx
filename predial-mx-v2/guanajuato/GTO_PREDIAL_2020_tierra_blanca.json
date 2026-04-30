@@ -4,16 +4,16 @@
     "tabla": [
       {
         "grupo": "urbano",
-        "clave": "urbanos_y_suburbanos_con_edificaciones",
-        "descripcion": "Inmuebles urbanos y suburbanos con edificaciones; causación anual según antigüedad/periodo de valuación.",
+        "clave": "urbanos_con_edificaciones",
+        "descripcion": "Inmuebles urbanos y suburbanos con edificaciones",
         "tasa_millar": 0.0024,
         "periodicidad": "anual",
         "cuota_fija_adicional": null
       },
       {
         "grupo": "urbano",
-        "clave": "urbanos_y_suburbanos_sin_edificaciones",
-        "descripcion": "Inmuebles urbanos y suburbanos sin edificaciones; causación anual según antigüedad/periodo de valuación.",
+        "clave": "urbanos_sin_edificaciones",
+        "descripcion": "Inmuebles urbanos y suburbanos sin edificaciones",
         "tasa_millar": 0.0045,
         "periodicidad": "anual",
         "cuota_fija_adicional": null
@@ -21,14 +21,14 @@
       {
         "grupo": "rustico",
         "clave": "rusticos",
-        "descripcion": "Inmuebles rústicos; causación anual según antigüedad/periodo de valuación.",
+        "descripcion": "Inmuebles rústicos",
         "tasa_millar": 0.0018,
         "periodicidad": "anual",
         "cuota_fija_adicional": null
       }
     ],
     "minimo_predial": null,
-    "comentarios": "Art. 4 establece tasas al millar diferenciadas por tipo de inmueble y condición: inmuebles urbanos y suburbanos con edificaciones (2.4 al millar), sin edificaciones (4.5 al millar) y rústicos (1.8 al millar), con reglas históricas por antigüedad del valor determinado. No se integra la mecánica del Art. 5 porque corresponde a valores unitarios de catastro, no a tarifa del impuesto."
+    "comentarios": "Art. 4: la mecánica del impuesto predial se expresa como tasas anuales al millar por categoría de inmueble. Se observan tres grupos principales: urbanos y suburbanos con edificaciones (2.4 al millar), urbanos y suburbanos sin edificaciones (4.5 al millar) y rústicos (1.8 al millar). El texto también muestra referencias históricas para años anteriores (2002-2019) con otras tasas, pero la mecánica vigente para 2020 es la transcrita. Art. 5 contiene valores unitarios catastrales para avalúo, no la tarifa del impuesto, por lo que no se incluye en la tabla principal."
   },
   "_meta": {
     "fuente": "txt",
@@ -39,10 +39,12 @@
     "requiere_revision": false,
     "escalado": false,
     "razon": null,
+    "usado_reocr": false,
+    "usado_vision": false,
     "tokens": {
-      "input": 7243,
-      "output": 341,
-      "cached": 3840
+      "input": 8460,
+      "output": 339,
+      "cached": 5888
     },
     "cvegeo": "11040",
     "estado": "guanajuato",

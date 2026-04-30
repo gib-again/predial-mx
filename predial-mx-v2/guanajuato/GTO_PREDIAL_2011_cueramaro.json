@@ -3,40 +3,80 @@
     "tipo_esquema": "tarifa_millar",
     "tabla": [
       {
-        "grupo": "general",
+        "grupo": "urbano",
         "clave": "entrada_en_vigor",
-        "descripcion": "Los inmuebles que cuenten con valor determinado o modificado a la entrada en vigor de la presente ley",
-        "tasa_millar": 24.0,
+        "descripcion": "A la entrada en vigor de la presente ley",
+        "tasa_millar": 0.024,
         "periodicidad": "anual",
         "cuota_fija_adicional": null
       },
       {
-        "grupo": "general",
+        "grupo": "urbano",
         "clave": "anio_2002_a_2010",
         "descripcion": "Durante los años 2002 y hasta el 2010, inclusive",
-        "tasa_millar": 2.4,
+        "tasa_millar": 0.0024,
         "periodicidad": "anual",
         "cuota_fija_adicional": null
       },
       {
-        "grupo": "general",
-        "clave": "anterior_2002_hasta_1993",
+        "grupo": "rustico",
+        "clave": "anio_2002_a_2010_con_edificaciones",
+        "descripcion": "Inmuebles rústicos con edificaciones durante los años 2002 y hasta el 2010, inclusive",
+        "tasa_millar": 0.0045,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "rustico",
+        "clave": "anio_2002_a_2010_sin_edificaciones",
+        "descripcion": "Inmuebles rústicos sin edificaciones durante los años 2002 y hasta el 2010, inclusive",
+        "tasa_millar": 0.00138,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "urbano",
+        "clave": "anterior_a_2002_hasta_1993",
         "descripcion": "Con anterioridad al año 2002 y hasta 1993, inclusive",
-        "tasa_millar": 8.0,
+        "tasa_millar": 0.008,
         "periodicidad": "anual",
         "cuota_fija_adicional": null
       },
       {
-        "grupo": "general",
-        "clave": "anterior_1993",
+        "grupo": "rustico",
+        "clave": "anterior_a_2002_hasta_1993_con_edificaciones",
+        "descripcion": "Inmuebles rústicos con edificaciones con anterioridad al año 2002 y hasta 1993, inclusive",
+        "tasa_millar": 0.015,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "rustico",
+        "clave": "anterior_a_2002_hasta_1993_sin_edificaciones",
+        "descripcion": "Inmuebles rústicos sin edificaciones con anterioridad al año 2002 y hasta 1993, inclusive",
+        "tasa_millar": 0.006,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "urbano",
+        "clave": "con_anterioridad_a_1993",
         "descripcion": "Con anterioridad al año de 1993",
-        "tasa_millar": 13.0,
+        "tasa_millar": 0.013,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "rustico",
+        "clave": "con_anterioridad_a_1993_sin_edificaciones",
+        "descripcion": "Inmuebles rústicos sin edificaciones con anterioridad al año de 1993",
+        "tasa_millar": 0.012,
         "periodicidad": "anual",
         "cuota_fija_adicional": null
       }
     ],
     "minimo_predial": null,
-    "comentarios": "Art. 4: tabla de tasas al millar por antigüedad del valor determinado o modificado, con tres columnas categóricas para inmuebles suburbanos/urbanos, rústicos con edificaciones y rústicos sin edificaciones. Para la primera fila se lee 24 al millar, 4.5 al millar y 1.8 al millar; para 2002-2010: 2.4, 4.5 y 1.38; para anterior a 2002 hasta 1993: 8, 15 y 6; para anterior a 1993 la imagen sólo deja legibles 13 al millar y 12 al millar, faltando un tercer dato por OCR. Se omiten las tablas de valores unitarios de los artículos 5 y 6 por ser catastro, no mecánica del impuesto. Art. 4 establece el impuesto predial anual. No se detecta cuota fija adicional ni mínimo predial."
+    "comentarios": "Artículo 4 contiene una tarifa paralela por antigüedad del inmueble con categorías urbano/suburbano y rústico, incluyendo distinción con/sin edificaciones en algunos renglones. Se transcribe como tarifa_millar porque son tasas categóricas al millar, no brackets por valor catastral. Artículos 5 y 6 sólo establecen valores unitarios para avalúo/catastro; no integran la mecánica del cálculo del impuesto."
   },
   "_meta": {
     "fuente": "txt",
@@ -47,10 +87,12 @@
     "requiere_revision": false,
     "escalado": false,
     "razon": null,
+    "usado_reocr": false,
+    "usado_vision": false,
     "tokens": {
-      "input": 7362,
-      "output": 475,
-      "cached": 3840
+      "input": 8579,
+      "output": 726,
+      "cached": 5888
     },
     "cvegeo": "11012",
     "estado": "guanajuato",

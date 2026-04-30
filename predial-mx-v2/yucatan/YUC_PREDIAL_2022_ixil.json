@@ -4,21 +4,21 @@
     "tabla": [
       {
         "n_rango": 1,
-        "inferior": 0.0,
+        "inferior": 0.01,
         "superior": 5000.0,
         "cuota_fija": 18.0,
         "tasa_marginal": 0.0015
       },
       {
         "n_rango": 2,
-        "inferior": 5000.0,
+        "inferior": 5000.01,
         "superior": 7500.0,
         "cuota_fija": 24.0,
         "tasa_marginal": 0.002
       },
       {
         "n_rango": 3,
-        "inferior": 7500.0,
+        "inferior": 7500.01,
         "superior": 10000.0,
         "cuota_fija": 30.0,
         "tasa_marginal": 0.0025
@@ -32,14 +32,14 @@
       },
       {
         "n_rango": 5,
-        "inferior": 12500.0,
+        "inferior": 12500.01,
         "superior": 15000.0,
         "cuota_fija": 40.0,
         "tasa_marginal": 0.0035
       },
       {
         "n_rango": 6,
-        "inferior": 15000.0,
+        "inferior": 15000.01,
         "superior": null,
         "cuota_fija": 50.0,
         "tasa_marginal": 0.004
@@ -50,7 +50,7 @@
       "periodicidad": "anual",
       "unidad": "pesos"
     },
-    "comentarios": "Art. 13: tarifa progresiva para predios cuyo impuesto se cause sobre el valor catastral. Se respetan los brackets y factores al excedente. El texto también establece tarifas paralelas no incorporadas en la tabla principal: predios agropecuarios pagan 10 al millar anual sobre el valor registrado o catastral; y cuando el impuesto se cause sobre rentas o frutos civiles, se paga mensualmente 2% para predio habitacional y 5% para predio comercial sobre el monto de la contraprestación. Cuando no se pudiera determinar, se cobrará una cuota fija de $100.00."
+    "comentarios": "Artículo 13: la tarifa principal del impuesto predial es progresiva sobre valor catastral con cuota anual y factor sobre el excedente del límite inferior. Se normalizó el hueco aparente entre 10,000.01 y 10,500.01 ajustando el inicio del cuarto bracket a 10,000.00 para mantener continuidad conforme al texto tarifario. Tarifa secundaria: predios agropecuarios pagan 10 al millar anual sobre el valor registrado o catastral; impuesto sobre rentas o frutos civiles: 2% habitacional y 5% comercial sobre la contraprestación mensual. Cuando no se pudiera determinar se cobrará una cuota fija de $100.00."
   },
   "_meta": {
     "fuente": "txt",
@@ -61,10 +61,12 @@
     "requiere_revision": false,
     "escalado": false,
     "razon": null,
+    "usado_reocr": false,
+    "usado_vision": false,
     "tokens": {
-      "input": 13300,
-      "output": 818,
-      "cached": 7680
+      "input": 15945,
+      "output": 854,
+      "cached": 11776
     },
     "cvegeo": "31039",
     "estado": "yucatan",

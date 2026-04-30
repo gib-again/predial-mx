@@ -4,7 +4,7 @@
     "tabla": [
       {
         "grupo": "general",
-        "clave": "años_2002_a_2023_inclusive",
+        "clave": "general_2002_a_2023",
         "descripcion": "Durante los años 2002 y hasta el 2023 inclusive",
         "tasa_millar": 0.002,
         "periodicidad": "anual",
@@ -12,7 +12,7 @@
       },
       {
         "grupo": "general",
-        "clave": "anterior_2002_hasta_1993_inclusive",
+        "clave": "general_anteriores_1993_a_2001",
         "descripcion": "Con anterioridad al año 2002 y hasta 1993 inclusive",
         "tasa_millar": 0.008,
         "periodicidad": "anual",
@@ -20,39 +20,15 @@
       },
       {
         "grupo": "general",
-        "clave": "anterior_1993",
+        "clave": "general_anteriores_1993",
         "descripcion": "Con anterioridad al año de 1993",
         "tasa_millar": 0.0013,
-        "periodicidad": "anual",
-        "cuota_fija_adicional": null
-      },
-      {
-        "grupo": "general",
-        "clave": "inmuebles_urbanos_y_suburbanos_con_edificaciones",
-        "descripcion": "Inmuebles urbanos y suburbanos con edificaciones",
-        "tasa_millar": 0.006,
-        "periodicidad": "anual",
-        "cuota_fija_adicional": null
-      },
-      {
-        "grupo": "general",
-        "clave": "inmuebles_urbanos_y_suburbanos_sin_edificaciones",
-        "descripcion": "Inmuebles urbanos y suburbanos sin edificaciones",
-        "tasa_millar": 0.006,
-        "periodicidad": "anual",
-        "cuota_fija_adicional": null
-      },
-      {
-        "grupo": "rustico",
-        "clave": "inmuebles_rusticos",
-        "descripcion": "Inmuebles rústicos",
-        "tasa_millar": 0.0,
         "periodicidad": "anual",
         "cuota_fija_adicional": null
       }
     ],
     "minimo_predial": null,
-    "comentarios": "Art. 4 establece tasas anuales sobre el valor catastral. Se observan tasas diferenciadas por antigüedad/construcción para inmuebles urbanos y suburbanos: 0.20% (2002-2023), 0.80% (anterior a 2002 y hasta 1993), 0.13% (anterior a 1993), además de 0.60% para inmuebles urbanos y suburbanos con y sin edificaciones en la fracción visible del texto. El fragmento OCR presenta un renglón incompleto para inmuebles rústicos y no permite reconstruir con certeza su tasa; se deja registrada como 0.0 solo para mantener la estructura transcrita, sin inferir valores no legibles. Art. 5 y 6 contienen valores unitarios y factores de valuación, no mecánica tarifaria del impuesto."
+    "comentarios": "Artículo 4 presenta una tabla de tasas por año de construcción/antigüedad para inmuebles urbanos, suburbanos y rústicos. El extracto OCR está deteriorado en el primer renglón, pero sí permite identificar las tasas de los renglones 2 a 4: 0.20%, 0.80% y 0.13%. En el texto también aparecen tasas diferenciadas para categorías urbanas/suburbanas y rústicas, pero la segmentación no permite recuperar con fiabilidad todas las celdas. No se documenta la valuación de inmuebles (Art. 5 y 6) porque no es mecánica de cálculo del predial, sino bases catastrales."
   },
   "_meta": {
     "fuente": "txt",
@@ -63,10 +39,12 @@
     "requiere_revision": false,
     "escalado": false,
     "razon": null,
+    "usado_reocr": false,
+    "usado_vision": false,
     "tokens": {
-      "input": 8060,
-      "output": 567,
-      "cached": 3840
+      "input": 9277,
+      "output": 361,
+      "cached": 5888
     },
     "cvegeo": "11041",
     "estado": "guanajuato",

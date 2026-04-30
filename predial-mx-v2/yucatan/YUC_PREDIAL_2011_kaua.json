@@ -46,7 +46,7 @@
       }
     ],
     "minimo_predial": null,
-    "comentarios": "Art. 13: tarifa progresiva sobre valor catastral con cuota fija anual y factor para aplicar al excedente del límite inferior. Tarifa paralela adicional: predios destinados a la producción agropecuaria pagan 10 al millar anual sobre el valor registrado o catastral; se describe aquí por separado porque no forma parte de la tabla principal. Se ignoran tablas de valores unitarios de terreno y construcción por ser catastro, no mecánica del impuesto."
+    "comentarios": "Art. 13: tarifa progresiva por valor catastral con cuota fija anual más factor sobre el excedente del límite inferior. Tarifa paralela: todo predio destinado a la producción agropecuaria paga 10 al millar anual sobre el valor registrado o catastral; se documenta sólo en comentarios por ser una tarifa secundaria paralela. Se ignoran descuentos del Art. 14."
   },
   "_meta": {
     "fuente": "txt",
@@ -57,10 +57,12 @@
     "requiere_revision": false,
     "escalado": false,
     "razon": null,
+    "usado_reocr": false,
+    "usado_vision": false,
     "tokens": {
-      "input": 5925,
-      "output": 365,
-      "cached": 3840
+      "input": 7142,
+      "output": 351,
+      "cached": 5888
     },
     "cvegeo": "31043",
     "estado": "yucatan",

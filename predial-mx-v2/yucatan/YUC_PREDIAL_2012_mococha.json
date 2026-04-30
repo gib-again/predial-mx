@@ -3,28 +3,31 @@
     "tipo_esquema": "tasa_unica",
     "tabla": [
       {
-        "descripcion": "Impuesto predial sobre el valor catastral del inmueble",
-        "tasa": 0.25,
+        "descripcion": "Predios urbanos por valor catastral (secciones 1 a 5)",
+        "tasa": 0.0025,
         "base_calculo": "valor_catastral",
-        "unidad": "porcentaje"
+        "unidad": "porcentaje",
+        "cuota_fija_adicional": null
       }
     ],
     "minimo_predial": null,
-    "comentarios": "El texto establece para SECCION 1, SECCION 2, SECCION 3, SECCION 4 y SECCION 5 la misma tasa de 0.25% sobre el valor catastral, por lo que se captura como tasa única. Artículo 14 también establece una tarifa paralela para predios destinados a la producción agropecuaria de 10 al millar anual sobre el valor registrado o catastral; no se incluye en la tabla principal por ser tarifa separada para un grupo distinto. Se ignoraron las tablas de valores unitarios de terreno y construcción por ser de catastro, no tarifa del impuesto."
+    "comentarios": "Art. 14: todas las secciones 1 a 5 aplican 0.25% sobre el valor catastral. Tarifa paralela: predios destinados a la producción agropecuaria pagan 10 al millar anual sobre el valor registrado o catastral; y Art. 16 establece impuesto con base en rentas o frutos civiles de inmuebles: 2% para casa habitación y 2% para actividades comerciales. Estas tarifas secundarias/paralelas no se incluyen en la tabla principal por no ser la mecánica predominante del predial urbano."
   },
   "_meta": {
     "fuente": "txt",
-    "modelo": "gpt-5.4"
+    "modelo": "gpt-5.4-mini"
   },
   "_meta_v2": {
-    "intentos": 3,
+    "intentos": 1,
     "requiere_revision": false,
-    "escalado": true,
-    "razon": "escalado_a_gpt-5.4_tras_2x_mini_fallido",
+    "escalado": false,
+    "razon": null,
+    "usado_reocr": false,
+    "usado_vision": false,
     "tokens": {
-      "input": 19082,
-      "output": 920,
-      "cached": 13568
+      "input": 7268,
+      "output": 214,
+      "cached": 5888
     },
     "cvegeo": "31051",
     "estado": "yucatan",

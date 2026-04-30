@@ -4,31 +4,23 @@
     "tabla": [
       {
         "grupo": "urbano",
-        "clave": "inmuebles_urbanos_y_suburbanos_con_edificaciones",
-        "descripcion": "Inmuebles urbanos y suburbanos con edificaciones, para inmuebles con valor determinado o modificado.",
-        "tasa_millar": 0.004,
+        "clave": "urbano_con_edificaciones",
+        "descripcion": "Inmuebles urbanos y suburbanos con edificaciones. Para inmuebles con valor determinado o modificado: desde la entrada en vigor de la ley hasta 2001 inclusive: 2 al millar; durante 2002 y hasta 2024 inclusive: 4 al millar; con anterioridad al año 2002 y hasta 1993 inclusive: 8 al millar; con anterioridad a 1993: 8 al millar.",
+        "tasa_millar": 0.002,
         "periodicidad": "anual",
         "cuota_fija_adicional": null
       },
       {
         "grupo": "urbano",
-        "clave": "inmuebles_urbanos_y_suburbanos_sin_edificaciones",
-        "descripcion": "Inmuebles urbanos y suburbanos sin edificaciones, para inmuebles con valor determinado o modificado.",
+        "clave": "urbano_sin_edificaciones",
+        "descripcion": "Inmuebles urbanos y suburbanos sin edificaciones. Para inmuebles con valor determinado o modificado: desde la entrada en vigor de la ley hasta 2001 inclusive: 4.5 al millar; durante 2002 y hasta 2024 inclusive: 4.5 al millar; con anterioridad al año 2002 y hasta 1993 inclusive: 15 al millar; con anterioridad a 1993: 8 al millar.",
         "tasa_millar": 0.0045,
-        "periodicidad": "anual",
-        "cuota_fija_adicional": null
-      },
-      {
-        "grupo": "rustico",
-        "clave": "predios_rusticos",
-        "descripcion": "Predios rústicos; tarifa paralela prevista en el artículo 4, fracción II, con base en valor catastral determinado conforme a tablas de valores unitarios.",
-        "tasa_millar": 0.004,
         "periodicidad": "anual",
         "cuota_fija_adicional": null
       }
     ],
     "minimo_predial": null,
-    "comentarios": "Art. 4 establece tasas al millar por categoría de inmueble. Se transcriben las tarifas visibles para inmuebles urbanos y suburbanos con edificación y sin edificación, así como la tarifa paralela para predios rústicos indicada en la fracción II. El texto OCR presenta renglones parcialmente dañados; no se interpretan tasas no legibles. Art. 5 y 6 contienen tablas de valores unitarios y criterios de avalúo, no forman parte de la mecánica tarifaria del predial."
+    "comentarios": "Art. 4 contiene una tabla de tasas al millar para inmuebles urbanos y suburbanos, diferenciando con y sin edificaciones, pero la imagen/OCR presenta renglones y valores parcialmente deformados. Se transcribe solo la mecánica principal identificable: tasas al millar anuales sobre valor catastral con categorías por existencia de edificaciones y antigüedad del valor determinado o modificado. Art. 4 también remite a inmuebles rústicos con tabla de valores, pero no se observa una tarifa predial separada adicional en el fragmento proporcionado. Se ignoran valores unitarios de terreno y construcción del Art. 5 por ser catastro, no tarifa."
   },
   "_meta": {
     "fuente": "txt",
@@ -39,10 +31,12 @@
     "requiere_revision": false,
     "escalado": false,
     "razon": null,
+    "usado_reocr": false,
+    "usado_vision": false,
     "tokens": {
-      "input": 7321,
-      "output": 374,
-      "cached": 3840
+      "input": 8538,
+      "output": 458,
+      "cached": 5888
     },
     "cvegeo": "11043",
     "estado": "guanajuato",

@@ -1,101 +1,59 @@
 {
   "predial": {
-    "tipo_esquema": "mixto",
+    "tipo_esquema": "progresivo",
     "tabla": [
       {
         "n_rango": 1,
         "inferior": 0.01,
         "superior": 4000.0,
-        "columnas": [
-          {
-            "nombre": "general",
-            "valor": 4.0,
-            "tipo": "cuota_fija",
-            "unidad": "pesos"
-          }
-        ]
+        "cuota_fija": 4.0,
+        "tasa_marginal": 0.00075
       },
       {
         "n_rango": 2,
         "inferior": 4001.0,
         "superior": 5500.0,
-        "columnas": [
-          {
-            "nombre": "general",
-            "valor": 7.0,
-            "tipo": "cuota_fija",
-            "unidad": "pesos"
-          }
-        ]
+        "cuota_fija": 7.0,
+        "tasa_marginal": 0.002
       },
       {
         "n_rango": 3,
         "inferior": 5501.0,
         "superior": 6500.0,
-        "columnas": [
-          {
-            "nombre": "general",
-            "valor": 10.0,
-            "tipo": "cuota_fija",
-            "unidad": "pesos"
-          }
-        ]
+        "cuota_fija": 10.0,
+        "tasa_marginal": 0.003
       },
       {
         "n_rango": 4,
         "inferior": 6501.0,
         "superior": 7500.0,
-        "columnas": [
-          {
-            "nombre": "general",
-            "valor": 13.0,
-            "tipo": "cuota_fija",
-            "unidad": "pesos"
-          }
-        ]
+        "cuota_fija": 13.0,
+        "tasa_marginal": 0.003
       },
       {
         "n_rango": 5,
         "inferior": 7501.0,
         "superior": 8500.0,
-        "columnas": [
-          {
-            "nombre": "general",
-            "valor": 16.0,
-            "tipo": "cuota_fija",
-            "unidad": "pesos"
-          }
-        ]
+        "cuota_fija": 16.0,
+        "tasa_marginal": 0.004
       },
       {
         "n_rango": 6,
         "inferior": 8501.0,
         "superior": 10000.0,
-        "columnas": [
-          {
-            "nombre": "general",
-            "valor": 20.0,
-            "tipo": "cuota_fija",
-            "unidad": "pesos"
-          }
-        ]
+        "cuota_fija": 20.0,
+        "tasa_marginal": 0.00133
       },
       {
         "n_rango": 7,
         "inferior": 10001.0,
         "superior": null,
-        "columnas": [
-          {
-            "nombre": "general",
-            "valor": 22.0,
-            "tipo": "cuota_fija",
-            "unidad": "pesos"
-          }
-        ]
+        "cuota_fija": 22.0,
+        "tasa_marginal": 0.0025
       }
     ],
     "minimo_predial": null,
-    "comentarios": "Artículo 4: tarifa principal por valor catastral con cuotas fijas por rango y factor porcentual aplicable sobre el excedente; se clasifica como mixto porque cada bracket combina cuota fija en pesos y factor % (tasa marginal/porcentual) en la mecánica de cálculo. Además, el mismo artículo establece una tarifa paralela para predios rústicos por hectáreas ($200, $300, $400) y el artículo 7 prevé otra tasa paralela sobre rentas o frutos civiles (2% habitacional, 3% comercial); no se incluyen en la tabla principal por ser regímenes separados. Se ignoran descuentos del artículo 6 y valores unitarios de los artículos 5."
+    "comentarios": "Art. 4: tarifa progresiva sobre valor catastral con cuota fija + factor marginal aplicable al excedente. Tarifa paralela para predios rústicos: 1 a 20 ha $200; 21 a 40 ha $300; 41 en adelante $400. Art. 7: cuando el impuesto se cause sobre rentas o frutos civiles, tasa mensual de 2% habitacional y 3% comercial sobre la contraprestación; se documenta como tarifa secundaria porque no es la mecánica principal del predial."
   },
   "_meta": {
     "fuente": "txt",
@@ -106,10 +64,12 @@
     "requiere_revision": false,
     "escalado": false,
     "razon": null,
+    "usado_reocr": false,
+    "usado_vision": false,
     "tokens": {
-      "input": 6145,
-      "output": 499,
-      "cached": 3840
+      "input": 7362,
+      "output": 405,
+      "cached": 5888
     },
     "cvegeo": "31013",
     "estado": "yucatan",

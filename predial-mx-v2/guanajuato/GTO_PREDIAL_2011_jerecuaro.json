@@ -4,31 +4,31 @@
     "tabla": [
       {
         "grupo": "general",
-        "clave": "inmuebles_urbanos_y_suburbanos_con_edificaciones",
-        "descripcion": "Inmuebles urbanos y suburbanos con edificaciones; tasa anual",
-        "tasa_millar": 0.0024,
+        "clave": "urbanos_suburbanos_con_edificacion",
+        "descripcion": "Inmuebles urbanos y suburbanos con edificaciones; tasa anual al millar según antigüedad del valor determinado o modificado.",
+        "tasa_millar": 0.0045,
         "periodicidad": "anual",
         "cuota_fija_adicional": null
       },
       {
         "grupo": "general",
-        "clave": "inmuebles_urbanos_y_suburbanos_sin_edificaciones",
-        "descripcion": "Inmuebles urbanos y suburbanos sin edificaciones; tasa anual",
+        "clave": "urbanos_suburbanos_sin_edificacion",
+        "descripcion": "Inmuebles urbanos y suburbanos sin edificaciones; tasa anual al millar según antigüedad del valor determinado o modificado.",
         "tasa_millar": 0.0045,
         "periodicidad": "anual",
         "cuota_fija_adicional": null
       },
       {
         "grupo": "rustico",
-        "clave": "inmuebles_rusticos",
-        "descripcion": "Inmuebles rústicos; tasa anual",
+        "clave": "rusticos",
+        "descripcion": "Inmuebles rústicos; tasa anual al millar según antigüedad del valor determinado o modificado.",
         "tasa_millar": 0.0018,
         "periodicidad": "anual",
         "cuota_fija_adicional": null
       }
     ],
     "minimo_predial": null,
-    "comentarios": "Art. 4 establece tasas anuales al millar por tipo de inmueble. Se transcribe la mecánica vigente para 2011 como catálogo de tarifas: urbanos y suburbanos con edificaciones 2.4 al millar, urbanos y suburbanos sin edificaciones 4.5 al millar, y rústicos 1.8 al millar. Las tasas históricas por antigüedad del inmueble (fracciones 1 a 4) aparecen en el texto, pero no se integran como tabla principal porque la sección visible mezcla criterios de valuación y antigüedad, sin una estructura de brackets única de predial para esta extracción."
+    "comentarios": "Art. 4 establece tasas al millar por antigüedad del valor catastral/modificado. La mecánica principal es un catálogo categórico de tasas, no una tabla por rangos. El texto muestra además una tasa para inmuebles urbanos y suburbanos con y sin edificaciones; se transcribe como filas separadas dentro de la categoría general. Las tablas de valores unitarios de terreno y construcción de los arts. 5 y 6 son catastro/valuación, no mecánica del impuesto. También aparece una tasa histórica distinta para 'con anterioridad al año 2002 y hasta 1993' y otra para 'con anterioridad al año de 1993'; el extracto OCR presenta el renglón de urbanos/suburbanos con una sola tasa para cada caso y el de rústicos con 1.8 al millar. No se documentan descuentos ni bonificaciones."
   },
   "_meta": {
     "fuente": "txt",
@@ -39,10 +39,12 @@
     "requiere_revision": false,
     "escalado": false,
     "razon": null,
+    "usado_reocr": false,
+    "usado_vision": false,
     "tokens": {
-      "input": 7231,
-      "output": 354,
-      "cached": 3840
+      "input": 8448,
+      "output": 431,
+      "cached": 5888
     },
     "cvegeo": "11019",
     "estado": "guanajuato",

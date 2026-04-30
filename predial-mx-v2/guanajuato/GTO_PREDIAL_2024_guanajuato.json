@@ -57,21 +57,23 @@
       "periodicidad": "anual",
       "unidad": "pesos"
     },
-    "comentarios": "Art. 4 fraccs. I, II y III establecen tablas progresivas con cuota fija + tasa marginal sobre el excedente para inmuebles urbanos y suburbanos con edificaciones, urbanos y suburbanos sin edificaciones, y rústicos. Se transcribe sólo la mecánica de cálculo principal. Art. 4 inciso d) prevé cuota mínima anual si el resultado es inferior; no se transcriben descuentos/bonificaciones. Las tablas paralelas por tipo de inmueble (edificado, sin edificar, rústico) se documentan en una sola tabla principal por ser la misma estructura progresiva con brackets equivalentes; la ley las separa por grupo."
+    "comentarios": "Art. 4 fraccs. I, II y III: tabla progresiva por valor fiscal con cuota fija + tasa marginal para inmuebles urbanos y suburbanos edificados, urbanos y suburbanos sin edificaciones, y rústicos. Se normalizaron los límites a rangos contiguos. Art. 4 inciso d): si el resultado es inferior a la cuota mínima anual del artículo 40, se pagará dicha cuota mínima; el monto no aparece en el texto proporcionado, por lo que se deja sólo la referencia en comentarios. La fracción II y III también son progresivas y se consideran parte del mismo esquema principal."
   },
   "_meta": {
     "fuente": "txt",
     "modelo": "gpt-5.4-mini"
   },
   "_meta_v2": {
-    "intentos": 1,
+    "intentos": 2,
     "requiere_revision": false,
     "escalado": false,
     "razon": null,
+    "usado_reocr": false,
+    "usado_vision": false,
     "tokens": {
-      "input": 10681,
-      "output": 485,
-      "cached": 3840
+      "input": 24452,
+      "output": 1493,
+      "cached": 11776
     },
     "cvegeo": "11015",
     "estado": "guanajuato",

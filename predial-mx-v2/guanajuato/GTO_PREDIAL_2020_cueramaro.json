@@ -5,70 +5,94 @@
       {
         "grupo": "general",
         "clave": "entrada_en_vigor",
-        "descripcion": "Inmuebles urbanos y suburbanos con valor determinado o modificados: a la entrada en vigor de la ley",
-        "tasa_millar": 0.0024,
+        "descripcion": "A la entrada en vigor de la presente ley; inmuebles urbanos y suburbanos edificados",
+        "tasa_millar": 2.4,
         "periodicidad": "anual",
         "cuota_fija_adicional": null
       },
       {
         "grupo": "general",
-        "clave": "anio_2002_a_2019",
-        "descripcion": "Inmuebles urbanos y suburbanos con valor determinado o modificados: durante los años 2002 a 2019, inclusive",
-        "tasa_millar": 0.0024,
+        "clave": "entrada_en_vigor_suburbano_no_edificado",
+        "descripcion": "A la entrada en vigor de la presente ley; inmuebles urbanos y suburbanos no edificados",
+        "tasa_millar": 4.5,
         "periodicidad": "anual",
         "cuota_fija_adicional": null
       },
       {
-        "grupo": "general",
-        "clave": "anterior_2002_hasta_1993",
-        "descripcion": "Inmuebles urbanos y suburbanos con valor determinado o modificados: con anterioridad al año 2002 y hasta 1993, inclusive",
-        "tasa_millar": 0.015,
-        "periodicidad": "anual",
-        "cuota_fija_adicional": null
-      },
-      {
-        "grupo": "general",
-        "clave": "anterior_1993",
-        "descripcion": "Inmuebles urbanos y suburbanos con valor determinado o modificados: con anterioridad al año 1993",
-        "tasa_millar": 0.013,
-        "periodicidad": "anual",
-        "cuota_fija_adicional": null
-      },
-      {
-        "grupo": "general",
+        "grupo": "rustico",
         "clave": "entrada_en_vigor_rustico",
-        "descripcion": "Inmuebles rústicos: a la entrada en vigor de la ley",
-        "tasa_millar": 0.0018,
+        "descripcion": "A la entrada en vigor de la presente ley; inmuebles rústicos",
+        "tasa_millar": 1.8,
         "periodicidad": "anual",
         "cuota_fija_adicional": null
       },
       {
         "grupo": "general",
-        "clave": "anio_2002_a_2019_rustico",
-        "descripcion": "Inmuebles rústicos: durante los años 2002 a 2019, inclusive",
-        "tasa_millar": 0.0018,
+        "clave": "2002_a_2019_edificado",
+        "descripcion": "Durante los años 2002 y hasta el 2019, inclusive; inmuebles urbanos y suburbanos edificados",
+        "tasa_millar": 2.4,
         "periodicidad": "anual",
         "cuota_fija_adicional": null
       },
       {
         "grupo": "general",
-        "clave": "anterior_2002_hasta_1993_rustico",
-        "descripcion": "Inmuebles rústicos: con anterioridad al año 2002 y hasta 1993, inclusive",
-        "tasa_millar": 0.008,
+        "clave": "2002_a_2019_no_edificado",
+        "descripcion": "Durante los años 2002 y hasta el 2019, inclusive; inmuebles urbanos y suburbanos no edificados",
+        "tasa_millar": 4.5,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "rustico",
+        "clave": "2002_a_2019_rustico",
+        "descripcion": "Durante los años 2002 y hasta el 2019, inclusive; inmuebles rústicos",
+        "tasa_millar": 1.8,
         "periodicidad": "anual",
         "cuota_fija_adicional": null
       },
       {
         "grupo": "general",
-        "clave": "anterior_1993_rustico",
-        "descripcion": "Inmuebles rústicos: con anterioridad al año 1993",
-        "tasa_millar": 0.012,
+        "clave": "antes_2002_hasta_1993_edificado",
+        "descripcion": "Con anterioridad al año 2002 y hasta 1993, inclusive; inmuebles urbanos y suburbanos edificados",
+        "tasa_millar": 15.0,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "general",
+        "clave": "antes_2002_hasta_1993_no_edificado",
+        "descripcion": "Con anterioridad al año 2002 y hasta 1993, inclusive; inmuebles urbanos y suburbanos no edificados",
+        "tasa_millar": 6.0,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "rustico",
+        "clave": "antes_2002_hasta_1993_rustico",
+        "descripcion": "Con anterioridad al año 2002 y hasta 1993, inclusive; inmuebles rústicos",
+        "tasa_millar": 8.0,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "general",
+        "clave": "antes_1993_edificado",
+        "descripcion": "Con anterioridad al año de 1993; inmuebles urbanos y suburbanos edificados",
+        "tasa_millar": 13.0,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "general",
+        "clave": "antes_1993_no_edificado",
+        "descripcion": "Con anterioridad al año de 1993; inmuebles urbanos y suburbanos no edificados",
+        "tasa_millar": 12.0,
         "periodicidad": "anual",
         "cuota_fija_adicional": null
       }
     ],
     "minimo_predial": null,
-    "comentarios": "Artículo 4 establece tasas anuales al millar por antigüedad del inmueble y por tipo de inmueble (urbano/suburbano vs rústico). No se transcriben los artículos 5 y 6 porque corresponden a valores unitarios de catastro/avalúo, no a mecánica de cálculo del impuesto predial."
+    "comentarios": "Art. 4 establece una tabla de tasas al millar por antigüedad y tipo de inmueble, con renglones para inmuebles urbanos/suburbanos edificados y no edificados, además de inmuebles rústicos. No se trata de brackets por valor catastral sino de tasas categóricas. Art. 5 contiene tablas de valores unitarios para avalúo (terreno y construcción) y factores agrológicos; no forman parte de la mecánica de cobro del predial."
   },
   "_meta": {
     "fuente": "txt",
@@ -79,10 +103,12 @@
     "requiere_revision": false,
     "escalado": false,
     "razon": null,
+    "usado_reocr": false,
+    "usado_vision": false,
     "tokens": {
-      "input": 7653,
-      "output": 640,
-      "cached": 3840
+      "input": 8870,
+      "output": 847,
+      "cached": 5888
     },
     "cvegeo": "11012",
     "estado": "guanajuato",

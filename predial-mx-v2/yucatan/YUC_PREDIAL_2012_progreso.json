@@ -32,7 +32,7 @@
       }
     ],
     "minimo_predial": null,
-    "comentarios": "Art. 14: tarifa progresiva sobre valor catastral con cuota fija y factor (tasa marginal) por excedente del límite inferior. Se ignoran la tabla de valores unitarios de terreno y construcción del Art. 15 por ser catastro, no tarifa. El Art. 17 establece una tarifa separada sobre rentas o frutos civiles (5% casas habitación; 5% actividades comerciales), tratada como tarifa paralela y no incluida en la tabla principal."
+    "comentarios": "Art. 14: predial determinado sobre valor catastral con tabla de rangos, cuota fija y factor para aplicar al excedente del límite inferior. Art. 17: predial sobre rentas o frutos civiles mensuales (casas habitación y actividades comerciales) al 5% sobre la contraprestación pactada; tarifa secundaria paralela no incluida en la tabla principal. Las tablas de valores unitarios de terreno y construcción del Art. 15 no se consideran mecánica de cálculo del impuesto."
   },
   "_meta": {
     "fuente": "txt",
@@ -43,10 +43,12 @@
     "requiere_revision": false,
     "escalado": false,
     "razon": null,
+    "usado_reocr": false,
+    "usado_vision": false,
     "tokens": {
-      "input": 8911,
-      "output": 300,
-      "cached": 3840
+      "input": 10128,
+      "output": 305,
+      "cached": 5888
     },
     "cvegeo": "31059",
     "estado": "yucatan",

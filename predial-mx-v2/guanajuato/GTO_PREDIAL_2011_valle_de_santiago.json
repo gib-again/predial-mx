@@ -4,7 +4,7 @@
     "tabla": [
       {
         "grupo": "urbano",
-        "clave": "urbano_con_edificaciones",
+        "clave": "urbanos_y_suburbanos_con_edificaciones",
         "descripcion": "Inmuebles urbanos y suburbanos con edificaciones",
         "tasa_millar": 0.0024,
         "periodicidad": "anual",
@@ -12,7 +12,7 @@
       },
       {
         "grupo": "urbano",
-        "clave": "urbano_sin_edificaciones",
+        "clave": "urbanos_y_suburbanos_sin_edificaciones",
         "descripcion": "Inmuebles urbanos y suburbanos sin edificaciones",
         "tasa_millar": 0.0045,
         "periodicidad": "anual",
@@ -20,7 +20,7 @@
       },
       {
         "grupo": "rustico",
-        "clave": "rustico",
+        "clave": "rusticos",
         "descripcion": "Inmuebles rústicos",
         "tasa_millar": 0.0018,
         "periodicidad": "anual",
@@ -28,7 +28,7 @@
       }
     ],
     "minimo_predial": null,
-    "comentarios": "Artículo 4 establece tasas anuales al millar para inmuebles urbanos y suburbanos con edificaciones, sin edificaciones, y rústicos. Se transcribe sólo la mecánica tarifaria; el resto del texto corresponde a valuación catastral (Art. 5 y 6), no a la cuota del impuesto. Las tasas históricas mencionadas en la misma tabla para años anteriores no se incluyen porque no corresponden al ejercicio 2011."
+    "comentarios": "Art. 4: el impuesto predial se causa anualmente con tasas al millar diferenciadas por tipo de inmueble y condición de edificación. Se transcribe sólo la mecánica principal. Art. 5 contiene valores unitarios para avalúo (terreno y construcción) y criterios de valuación, no una tarifa de cálculo del impuesto."
   },
   "_meta": {
     "fuente": "txt",
@@ -39,10 +39,12 @@
     "requiere_revision": false,
     "escalado": false,
     "razon": null,
+    "usado_reocr": false,
+    "usado_vision": false,
     "tokens": {
-      "input": 7460,
-      "output": 287,
-      "cached": 3840
+      "input": 8677,
+      "output": 273,
+      "cached": 5888
     },
     "cvegeo": "11042",
     "estado": "guanajuato",

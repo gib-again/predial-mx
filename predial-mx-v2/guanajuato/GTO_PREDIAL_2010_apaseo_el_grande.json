@@ -5,7 +5,7 @@
       {
         "grupo": "urbano",
         "clave": "inmuebles_urbanos_y_suburbanos_con_edificaciones",
-        "descripcion": "Inmuebles urbanos y suburbanos con un valor determinado o modificado: edificaciones, según periodos del Artículo 4.",
+        "descripcion": "Inmuebles urbanos y suburbanos con valor determinado o modificado: edificaciones",
         "tasa_millar": 0.0024,
         "periodicidad": "anual",
         "cuota_fija_adicional": null
@@ -13,22 +13,22 @@
       {
         "grupo": "urbano",
         "clave": "inmuebles_urbanos_y_suburbanos_sin_edificaciones",
-        "descripcion": "Inmuebles urbanos y suburbanos con un valor determinado o modificado: sin edificaciones, según periodos del Artículo 4.",
+        "descripcion": "Inmuebles urbanos y suburbanos con valor determinado o modificado: sin edificaciones",
         "tasa_millar": 0.0045,
         "periodicidad": "anual",
         "cuota_fija_adicional": null
       },
       {
-        "grupo": "rustico",
+        "grupo": "rústico",
         "clave": "inmuebles_rusticos",
-        "descripcion": "Inmuebles rústicos, según periodos del Artículo 4.",
+        "descripcion": "Inmuebles rústicos",
         "tasa_millar": 0.0018,
         "periodicidad": "anual",
         "cuota_fija_adicional": null
       }
     ],
     "minimo_predial": null,
-    "comentarios": "Art. 4 establece tasas anuales al millar por tipo de inmueble y condición (urbano/suburbano con edificaciones, urbano/suburbano sin edificaciones, rústico) sin rangos de valor catastral. Los periodos históricos del mismo artículo (2002-2009 y anteriores) contienen tarifas paralelas temporales, pero la estructura principal es un catálogo categórico de tasas al millar. Artículos 5 y 6 son tablas de valores unitarios y criterios de avalúo, no mecánica de tasa del impuesto."
+    "comentarios": "Art. 4: tasas anuales al millar por tipo de inmueble. Se observan tasas diferenciadas para inmuebles urbanos y suburbanos con edificaciones (2.4 al millar), urbanos y suburbanos sin edificaciones (4.5 al millar) e inmuebles rústicos (1.8 al millar). El texto también muestra tasas históricas para años anteriores, pero no se transcriben por corresponder a ejercicios previos al 2010. Los artículos 5 y 6 contienen tablas de valores unitarios y criterios de avalúo, no la mecánica tarifaria del impuesto predial."
   },
   "_meta": {
     "fuente": "txt",
@@ -39,10 +39,12 @@
     "requiere_revision": false,
     "escalado": false,
     "razon": null,
+    "usado_reocr": false,
+    "usado_vision": false,
     "tokens": {
-      "input": 7406,
-      "output": 370,
-      "cached": 3840
+      "input": 8623,
+      "output": 357,
+      "cached": 5888
     },
     "cvegeo": "11005",
     "estado": "guanajuato",

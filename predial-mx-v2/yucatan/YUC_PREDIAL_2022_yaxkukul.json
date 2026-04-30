@@ -2,24 +2,47 @@
   "predial": {
     "tipo_esquema": "otro_no_clasificado",
     "categoria": "estructura_no_estandar",
-    "descripcion_estructural": "El texto no presenta una mecánica única de cálculo del impuesto predial. Incluye una tabla de valores unitarios de terreno para determinar valor catastral, una tabla de licencias de construcción por m2 y metro lineal que no corresponde al predial, una tarifa paralela para predios agropecuarios de 10 al millar anual, y además un impuesto sobre rentas o frutos civiles con tarifas porcentuales mensuales. No es posible reducirlo limpiamente a una sola de las variantes tarifarias solicitadas sin mezclar figuras distintas.",
-    "tabla_cruda": [],
+    "descripcion_estructural": "El texto no contiene una tarifa estructural del impuesto predial sobre valor catastral por rangos o categorías inmobiliarias, sino tablas de valores unitarios catastrales ($ por sección, metro lineal y $ por m2) para calcular el valor catastral. Además, sólo establece de forma paralela una tasa de 10 al millar anual para predios destinados a la producción agropecuaria y un impuesto sobre rentas o frutos civiles mensuales del 5%, sin una mecánica principal extraíble de predial general para inmuebles urbanos.",
+    "tabla_cruda": [
+      {
+        "descripcion": "Valores unitarios de terreno por sección/área/manzana",
+        "valores": "Centro 310.00; Media 165.00; Periferia 90.00; Todas las comisarías 90.00"
+      },
+      {
+        "descripcion": "Rústicos importe por brecha/camino blanco/carretera",
+        "valores": "Brecha 700.00 ML; Camino blanco 1500.00 ML; Carretera 2000.00 ML"
+      },
+      {
+        "descripcion": "Tipo de construcción $ por m2",
+        "valores": "Concreto: Centro 3000.00, Área media 1700.00, Periferia 1200.00; Hierro y rollizos: 2000.00, 1200.00, 900.00; Zinc/asbesto/teja: 900.00, 500.00, 350.00; Cartón o paja: 300.00, 300.00, 190.00"
+      },
+      {
+        "descripcion": "Predios destinados a la producción agropecuaria",
+        "valores": "10 al millar anual sobre el valor registrado o catastral"
+      },
+      {
+        "descripcion": "Rentas o frutos civiles mensuales",
+        "valores": "Predios habitación: 5%; predios comerciales: 5%"
+      }
+    ],
     "minimo_predial": null,
-    "comentarios": "Se ignoró el descuento por pronto pago del artículo 15. La parte relevante del Art. 14 sí contiene una tarifa paralela de 10 al millar para predios destinados a la producción agropecuaria, pero el segmento global está estructuralmente heterogéneo y no encaja en una sola mecánica de predial."
+    "comentarios": "El Artículo 13 describe insumos catastrales para valuar el predio, no la tarifa del impuesto predial general. El Artículo 14 sí contiene una tarifa específica paralela para producción agropecuaria (10 al millar anual sobre valor registrado o catastral) y otra sobre rentas o frutos civiles mensuales (5% para habitación y 5% para comerciales), pero no aparece una tarifa general principal del predial para los demás inmuebles. Por ello no procede forzar tasa_unica, tarifa_millar, progresivo, cuota_fija_escalonada ni mixto."
   },
   "_meta": {
     "fuente": "txt",
-    "modelo": "gpt-5.4-mini"
+    "modelo": "gpt-5.4"
   },
   "_meta_v2": {
-    "intentos": 1,
+    "intentos": 3,
     "requiere_revision": true,
-    "escalado": false,
+    "escalado": true,
     "razon": "clasificado_como_otro_no_clasificado",
+    "usado_reocr": false,
+    "usado_vision": false,
     "tokens": {
-      "input": 5697,
-      "output": 246,
-      "cached": 3840
+      "input": 22091,
+      "output": 1625,
+      "cached": 17664
     },
     "cvegeo": "31105",
     "estado": "yucatan",

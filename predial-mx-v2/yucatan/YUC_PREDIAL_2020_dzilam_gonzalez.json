@@ -1,36 +1,33 @@
 {
   "predial": {
-    "tipo_esquema": "tarifa_millar",
+    "tipo_esquema": "tasa_unica",
     "tabla": [
       {
-        "grupo": "general",
-        "clave": "general",
-        "descripcion": "Impuesto predial sobre el valor catastral de la sección 1 a la sección 4",
-        "tasa_millar": 0.002,
-        "periodicidad": "anual",
+        "descripcion": "Tasa del 0.20% sobre el valor catastral",
+        "tasa": 0.2,
+        "base_calculo": "valor_catastral",
+        "unidad": "porcentaje",
         "cuota_fija_adicional": null
       }
     ],
-    "minimo_predial": {
-      "monto": 80.0,
-      "periodicidad": "anual",
-      "unidad": "pesos"
-    },
-    "comentarios": "Art. 13: el impuesto predial se determina aplicando la tasa de 0.20% sobre el valor catastral de las secciones 1 a 4. Cuando no se pueda determinar, se cobra cuota fija: predio urbano $80.00 y predio rústico $65.00. También se establece una tarifa paralela para predios rústicos por hectárea ($436.00 brecha, $873.00 camino blanco, $1,310.00 carretera) y para predios destinados a producción agropecuaria ($2.00 por hectárea), pero no se incorpora en la tabla principal por ser una tarifa separada. Se ignoran descuentos del Art. 14 y el esquema de rentas/frutos civiles del Art. 15 por corresponder a una base distinta."
+    "minimo_predial": null,
+    "comentarios": "La mecánica principal del impuesto predial establece una sola tasa de 0.20% sobre el valor catastral. El texto agrega que, cuando no se pudiera determinar el valor catastral, se cobrará una cuota fija de 80.00 pesos para predio urbano y 65.00 pesos para predio rústico; esa regla subsidiaria no se incorpora en la tabla principal de tasa única. Se ignoran las tablas de valores unitarios de terreno y construcción por ser catastrales, no tarifarias. Artículo 15 establece un impuesto con base en rentas o frutos civiles mensuales de 2% para casas habitación y 2% para actividades comerciales, como mecánica separada."
   },
   "_meta": {
     "fuente": "txt",
-    "modelo": "gpt-5.4-mini"
+    "modelo": "gpt-5.4"
   },
   "_meta_v2": {
-    "intentos": 1,
+    "intentos": 3,
     "requiere_revision": false,
-    "escalado": false,
-    "razon": null,
+    "escalado": true,
+    "razon": "escalado_a_gpt-5.4_tras_2x_mini_fallido",
+    "usado_reocr": false,
+    "usado_vision": false,
     "tokens": {
-      "input": 6211,
-      "output": 287,
-      "cached": 3840
+      "input": 23633,
+      "output": 844,
+      "cached": 17664
     },
     "cvegeo": "31029",
     "estado": "yucatan",

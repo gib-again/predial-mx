@@ -3,32 +3,32 @@
     "tipo_esquema": "tarifa_millar",
     "tabla": [
       {
-        "grupo": "general",
-        "clave": "urbanos_suburbanos_con_edificaciones",
-        "descripcion": "Inmuebles urbanos y suburbanos, inmuebles con valor determinado o modificado, con edificaciones; a la entrada en vigor de la ley, durante los años 2002 a 2022 inclusive, con anterioridad a 2002 y hasta 1993 inclusive, y con anterioridad a 1993",
+        "grupo": "urbano",
+        "clave": "inmuebles_urbanos_y_suburbanos_con_edificaciones",
+        "descripcion": "Inmuebles urbanos y suburbanos con edificaciones; tasa según antigüedad del valor determinado o modificado a la entrada en vigor de la ley.",
         "tasa_millar": 0.0024,
         "periodicidad": "anual",
         "cuota_fija_adicional": null
       },
       {
-        "grupo": "general",
-        "clave": "urbanos_suburbanos_sin_edificaciones",
-        "descripcion": "Inmuebles urbanos y suburbanos, inmuebles con valor determinado o modificado, sin edificaciones; a la entrada en vigor de la ley, durante los años 2002 a 2022 inclusive, con anterioridad a 2002 y hasta 1993 inclusive, y con anterioridad a 1993",
+        "grupo": "urbano",
+        "clave": "inmuebles_urbanos_y_suburbanos_sin_edificaciones",
+        "descripcion": "Inmuebles urbanos y suburbanos sin edificaciones; tasa según antigüedad del valor determinado o modificado a la entrada en vigor de la ley.",
         "tasa_millar": 0.0045,
         "periodicidad": "anual",
         "cuota_fija_adicional": null
       },
       {
         "grupo": "rustico",
-        "clave": "rusticos",
-        "descripcion": "Inmuebles rústicos; a la entrada en vigor de la ley, durante los años 2002 a 2022 inclusive, con anterioridad a 2002 y hasta 1993 inclusive, y con anterioridad a 1993",
+        "clave": "inmuebles_rusticos",
+        "descripcion": "Inmuebles rústicos; tasa según antigüedad del valor determinado o modificado a la entrada en vigor de la ley.",
         "tasa_millar": 0.0018,
         "periodicidad": "anual",
         "cuota_fija_adicional": null
       }
     ],
     "minimo_predial": null,
-    "comentarios": "Art. 4 establece tasas anuales al millar por tipo de inmueble. Se transcriben como catálogo categórico. Art. 5 y 6 contienen valores unitarios y criterios de valuación, no la mecánica tarifaria del impuesto predial."
+    "comentarios": "Artículo 4 establece tasas anuales al millar por antigüedad del valor catastral/valor determinado o modificado, con tres grupos tarifarios: inmuebles urbanos y suburbanos con edificaciones, urbanos y suburbanos sin edificaciones, e inmuebles rústicos. La mecánica principal es una tarifa categórica al millar. El texto posterior (Art. 5 y 6) contiene valores unitarios de suelo/construcción y criterios de avalúo, no una mecánica distinta de cálculo del predial."
   },
   "_meta": {
     "fuente": "txt",
@@ -39,10 +39,12 @@
     "requiere_revision": false,
     "escalado": false,
     "razon": null,
+    "usado_reocr": false,
+    "usado_vision": false,
     "tokens": {
-      "input": 7663,
-      "output": 403,
-      "cached": 3840
+      "input": 8880,
+      "output": 383,
+      "cached": 5888
     },
     "cvegeo": "11016",
     "estado": "guanajuato",

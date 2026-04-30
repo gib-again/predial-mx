@@ -48,7 +48,7 @@
       "periodicidad": "bimestral",
       "unidad": "pesos"
     },
-    "comentarios": "Art. 2: tasas anuales separadas por tipo de predio. Se ignoran incentivos y bonificaciones. Mínimo predial: $28.50 bimestral."
+    "comentarios": "Art. 2: se establecen tasas al millar anuales por categoría de predio. Los incentivos por pago anual anticipado y para pensionados/jubilados/adultos mayores/personas con discapacidad se omiten por tratarse de bonificaciones/descuentos. No se incluye el texto del mínimo predial dentro de la tabla porque es una regla general adicional, no una categoría tarifaria."
   },
   "_meta": {
     "fuente": "txt",
@@ -59,10 +59,12 @@
     "requiere_revision": false,
     "escalado": false,
     "razon": null,
+    "usado_reocr": false,
+    "usado_vision": false,
     "tokens": {
-      "input": 5268,
-      "output": 404,
-      "cached": 3840
+      "input": 6485,
+      "output": 447,
+      "cached": 5888
     },
     "cvegeo": "05024",
     "estado": "coahuila",

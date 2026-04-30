@@ -57,7 +57,7 @@
       "periodicidad": "anual",
       "unidad": "vsm"
     },
-    "comentarios": "Artículo 9: tabla progresiva de valor catastral para predios urbanos, suburbanos y rústicos/casos previstos en el propio artículo con cuotas mínimas y tasa anual al millar sobre el excedente del límite inferior. Art. 10 establece mínimo predial de 3 salarios mínimos en zonas precarias y 4 salarios mínimos en cualquier otra zona; se conserva como mínimo_predial. Las reglas de aumento del 50% o 100% para ciertos predios se ignoran por instrucción, al ser recargos/ajustes sobre la tasa base."
+    "comentarios": "Art. 9: la mecánica principal es una tabla progresiva sobre valor catastral con cuota anual mínima aplicable en cada rango y tasa anual al millar sobre el excedente del límite inferior. Art. 9 fracc. I, II y III establecen incrementos del 100% o 50% para ciertos predios urbanos/suburbanos no edificados o con baja construcción; se describen en el texto pero no se reflejan como tarifa separada. Art. 10 fija mínimo predial de 3 salarios mínimos en zonas precarias y 4 salarios mínimos en cualquier otra zona."
   },
   "_meta": {
     "fuente": "txt",
@@ -68,10 +68,12 @@
     "requiere_revision": false,
     "escalado": false,
     "razon": null,
+    "usado_reocr": false,
+    "usado_vision": false,
     "tokens": {
-      "input": 6197,
-      "output": 443,
-      "cached": 3840
+      "input": 7414,
+      "output": 451,
+      "cached": 5888
     },
     "cvegeo": "28009",
     "estado": "tamaulipas",

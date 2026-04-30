@@ -4,79 +4,31 @@
     "tabla": [
       {
         "grupo": "urbano",
-        "clave": "entrada_en_vigor",
-        "descripcion": "Inmuebles urbanos y suburbanos con valor determinado o modificado; con edificaciones",
-        "tasa_millar": 0.004,
-        "periodicidad": "anual",
-        "cuota_fija_adicional": null
-      },
-      {
-        "grupo": "urbano",
-        "clave": "entrada_en_vigor_sin_edificaciones",
-        "descripcion": "Inmuebles urbanos y suburbanos con valor determinado o modificado; sin edificaciones",
+        "clave": "urbano_con_edificaciones",
+        "descripcion": "Inmuebles urbanos y suburbanos con edificaciones, a la entrada en vigor de la ley",
         "tasa_millar": 0.0045,
         "periodicidad": "anual",
         "cuota_fija_adicional": null
       },
       {
-        "grupo": "rustico",
-        "clave": "entrada_en_vigor",
-        "descripcion": "Inmuebles rústicos",
-        "tasa_millar": 0.0018,
-        "periodicidad": "anual",
-        "cuota_fija_adicional": null
-      },
-      {
         "grupo": "urbano",
-        "clave": "2002_2017_con_edificaciones",
-        "descripcion": "Durante los años 2002 y hasta 2017, inclusive; inmuebles urbanos y suburbanos con edificaciones",
-        "tasa_millar": 0.0024,
-        "periodicidad": "anual",
-        "cuota_fija_adicional": null
-      },
-      {
-        "grupo": "urbano",
-        "clave": "2002_2017_sin_edificaciones",
-        "descripcion": "Durante los años 2002 y hasta 2017, inclusive; inmuebles urbanos y suburbanos sin edificaciones",
-        "tasa_millar": 0.0045,
+        "clave": "urbano_sin_edificaciones",
+        "descripcion": "Inmuebles urbanos y suburbanos sin edificaciones, a la entrada en vigor de la ley",
+        "tasa_millar": 0.024,
         "periodicidad": "anual",
         "cuota_fija_adicional": null
       },
       {
         "grupo": "rustico",
-        "clave": "2002_2017",
-        "descripcion": "Durante los años 2002 y hasta 2017, inclusive; inmuebles rústicos",
-        "tasa_millar": 0.0018,
-        "periodicidad": "anual",
-        "cuota_fija_adicional": null
-      },
-      {
-        "grupo": "urbano",
-        "clave": "anterior_2002_hasta_1993_con_edificaciones",
-        "descripcion": "Con anterioridad al año 2002 y hasta 1993, inclusive; inmuebles urbanos y suburbanos con edificaciones",
-        "tasa_millar": 0.008,
-        "periodicidad": "anual",
-        "cuota_fija_adicional": null
-      },
-      {
-        "grupo": "urbano",
-        "clave": "anterior_2002_hasta_1993_sin_edificaciones",
-        "descripcion": "Con anterioridad al año 2002 y hasta 1993, inclusive; inmuebles urbanos y suburbanos sin edificaciones",
-        "tasa_millar": 0.015,
-        "periodicidad": "anual",
-        "cuota_fija_adicional": null
-      },
-      {
-        "grupo": "rustico",
-        "clave": "anterior_2002_hasta_1993",
-        "descripcion": "Con anterioridad al año 2002 y hasta 1993, inclusive; inmuebles rústicos",
-        "tasa_millar": 0.008,
+        "clave": "rustico_general",
+        "descripcion": "Inmuebles rústicos, a la entrada en vigor de la ley",
+        "tasa_millar": 0.018,
         "periodicidad": "anual",
         "cuota_fija_adicional": null
       }
     ],
     "minimo_predial": null,
-    "comentarios": "Art. 4 establece tasas anuales al millar por tipo de inmueble y por periodo de construcción/antigüedad. La mecánica del impuesto predial no se presenta con rangos de valor catastral, sino como catálogo de tasas categóricas. Las tablas de valores unitarios de los Arts. 5 y 6 son catastro/valuación y no se transcriben como tarifa. Se observan tasas paralelas para inmuebles urbanos/suburbanos (con y sin edificaciones) y rústicos; se incluyen todas las tasas del artículo."
+    "comentarios": "Artículo 4 contiene una tabla de tasas al millar por categoría de inmueble, sin rangos de valor catastral. Además establece tasas históricas para 2002-2017 y anteriores a 2002, pero la mecánica principal transcrita corresponde al esquema por categoría vigente al inicio de 2018. El artículo 5 regula valores unitarios catastrales, no la tarifa del impuesto."
   },
   "_meta": {
     "fuente": "txt",
@@ -87,10 +39,12 @@
     "requiere_revision": false,
     "escalado": false,
     "razon": null,
+    "usado_reocr": false,
+    "usado_vision": false,
     "tokens": {
-      "input": 7412,
-      "output": 741,
-      "cached": 3840
+      "input": 8629,
+      "output": 304,
+      "cached": 5888
     },
     "cvegeo": "11042",
     "estado": "guanajuato",

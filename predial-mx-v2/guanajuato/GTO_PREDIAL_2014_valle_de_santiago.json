@@ -3,16 +3,16 @@
     "tipo_esquema": "tarifa_millar",
     "tabla": [
       {
-        "grupo": "urbano",
-        "clave": "urbanos_con_edificaciones",
+        "grupo": "general",
+        "clave": "inmuebles_urbanos_y_suburbanos_con_edificaciones",
         "descripcion": "Inmuebles urbanos y suburbanos con edificaciones",
         "tasa_millar": 0.0024,
         "periodicidad": "anual",
         "cuota_fija_adicional": null
       },
       {
-        "grupo": "urbano",
-        "clave": "urbanos_sin_edificaciones",
+        "grupo": "general",
+        "clave": "inmuebles_urbanos_y_suburbanos_sin_edificaciones",
         "descripcion": "Inmuebles urbanos y suburbanos sin edificaciones",
         "tasa_millar": 0.0045,
         "periodicidad": "anual",
@@ -20,7 +20,7 @@
       },
       {
         "grupo": "rustico",
-        "clave": "rusticos",
+        "clave": "inmuebles_rusticos",
         "descripcion": "Inmuebles rústicos",
         "tasa_millar": 0.0018,
         "periodicidad": "anual",
@@ -28,7 +28,7 @@
       }
     ],
     "minimo_predial": null,
-    "comentarios": "Artículo 4 contiene tarifas anuales al millar por tipo de inmueble. La mecánica de cálculo se estructura como catálogo categórico de tasas al millar y no como brackets por valor catastral. El Artículo 5 aporta valores unitarios para avalúo/catastro, no una tarifa del impuesto, por lo que no se clasifica aquí. Se transcriben las tasas generales vigentes indicadas para inmuebles urbanos y suburbanos con/sin edificaciones y rústicos."
+    "comentarios": "Artículo 4 establece tasas anuales al millar por tipo de inmueble. Se transcribe sólo la mecánica principal del predial. Artículo 5 contiene valores unitarios de suelo y construcción para avalúo, no una tarifa de cálculo del impuesto. No se detectan tarifas secundarias independientes en el segmento proporcionado."
   },
   "_meta": {
     "fuente": "txt",
@@ -39,10 +39,12 @@
     "requiere_revision": false,
     "escalado": false,
     "razon": null,
+    "usado_reocr": false,
+    "usado_vision": false,
     "tokens": {
-      "input": 7422,
-      "output": 295,
-      "cached": 3840
+      "input": 8639,
+      "output": 279,
+      "cached": 5888
     },
     "cvegeo": "11042",
     "estado": "guanajuato",

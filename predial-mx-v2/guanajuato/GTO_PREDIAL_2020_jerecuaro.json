@@ -3,32 +3,32 @@
     "tipo_esquema": "tarifa_millar",
     "tabla": [
       {
-        "grupo": "general",
+        "grupo": "urbano",
         "clave": "inmuebles_urbanos_y_suburbanos_con_edificaciones",
-        "descripcion": "Inmuebles urbanos y suburbanos con edificaciones",
-        "tasa_millar": 0.0045,
+        "descripcion": "A la entrada en vigor de la presente Ley; inmuebles urbanos y suburbanos con edificaciones",
+        "tasa_millar": 0.0024,
         "periodicidad": "anual",
         "cuota_fija_adicional": null
       },
       {
-        "grupo": "general",
+        "grupo": "urbano",
         "clave": "inmuebles_urbanos_y_suburbanos_sin_edificaciones",
-        "descripcion": "Inmuebles urbanos y suburbanos sin edificaciones",
-        "tasa_millar": 0.0018,
+        "descripcion": "A la entrada en vigor de la presente Ley; inmuebles urbanos y suburbanos sin edificaciones",
+        "tasa_millar": 0.0045,
         "periodicidad": "anual",
         "cuota_fija_adicional": null
       },
       {
         "grupo": "rustico",
         "clave": "inmuebles_rusticos",
-        "descripcion": "Inmuebles rústicos",
+        "descripcion": "A la entrada en vigor de la presente Ley; inmuebles rústicos",
         "tasa_millar": 0.0018,
         "periodicidad": "anual",
         "cuota_fija_adicional": null
       }
     ],
     "minimo_predial": null,
-    "comentarios": "Art. 4 establece tasas anuales sobre el valor catastral por tipo y condición del predio. Se transcribe la tasa aplicable a inmuebles urbanos y suburbanos con edificaciones (4.5 al millar), sin edificaciones (1.8 al millar) y rústicos (1.8 al millar). La ley también contiene tasas históricas para inmuebles con valor determinado o modificado en distintos periodos (2.4, 8 y 13 al millar), pero no se incluyen como mecánica vigente general del ejercicio 2020."
+    "comentarios": "Art. 4 establece tasas al millar sobre el valor catastral por categoría de inmueble. No se extrae la tabla de valores unitarios del Art. 5 por ser catastro, no mecánica tarifaria."
   },
   "_meta": {
     "fuente": "txt",
@@ -39,10 +39,12 @@
     "requiere_revision": false,
     "escalado": false,
     "razon": null,
+    "usado_reocr": false,
+    "usado_vision": false,
     "tokens": {
-      "input": 7312,
-      "output": 337,
-      "cached": 3840
+      "input": 8529,
+      "output": 293,
+      "cached": 5888
     },
     "cvegeo": "11019",
     "estado": "guanajuato",

@@ -74,7 +74,7 @@
       }
     ],
     "minimo_predial": null,
-    "comentarios": "Art. 19: impuesto predial calculado con base en el valor catastral mediante tarifa progresiva por rangos de valor catastral. El texto indica que en cada rango se aplica la cuota señalada para el límite inferior y al excedente el factor señalado al rango. No se incluyen las tablas de valores unitarios (Art. 20) por ser catastro, ni las actualizaciones/recargos/bonificaciones. Art. 21 regula predial sobre rentas o frutos civiles (5% para casa habitación y 5% para actividades comerciales e industrias), pero es una mecánica separada y no forma parte de la tarifa principal de valor catastral."
+    "comentarios": "Art. 19: impuesto predial sobre valor catastral con tabla progresiva por rangos y fórmula de cuota fija + factor/tasa sobre el excedente del límite inferior. Art. 21 establece tarifa paralela para rentas o frutos civiles: 5% mensual sobre la renta de casa habitación y 5% mensual sobre la renta de actividades comerciales e industriales; se documenta como tarifa secundaria fuera de la tabla principal."
   },
   "_meta": {
     "fuente": "txt",
@@ -85,10 +85,12 @@
     "requiere_revision": false,
     "escalado": false,
     "razon": null,
+    "usado_reocr": false,
+    "usado_vision": false,
     "tokens": {
-      "input": 15823,
-      "output": 596,
-      "cached": 3840
+      "input": 17040,
+      "output": 545,
+      "cached": 5888
     },
     "cvegeo": "31059",
     "estado": "yucatan",

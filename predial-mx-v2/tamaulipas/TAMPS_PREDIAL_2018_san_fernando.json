@@ -28,7 +28,7 @@
       },
       {
         "grupo": "urbano",
-        "clave": "predios_urbanos_y_suburbanos_sin_edificaciones_baldios",
+        "clave": "predios_urbanos_y_suburbanos_sin_edificacion_baldios",
         "descripcion": "Predios urbanos y suburbanos sin edificaciones (baldíos)",
         "tasa_millar": 0.0016,
         "periodicidad": "anual",
@@ -36,7 +36,7 @@
       },
       {
         "grupo": "urbano",
-        "clave": "predios_urbanos_de_uso_industrial",
+        "clave": "predios_urbanos_uso_industrial",
         "descripcion": "Predios urbanos de uso industrial",
         "tasa_millar": 0.0016,
         "periodicidad": "anual",
@@ -48,7 +48,7 @@
       "periodicidad": "anual",
       "unidad": "uma"
     },
-    "comentarios": "Art. 10: todas las categorías listadas pagan 1.6 al millar anual sobre el valor catastral. El texto agrega aumentos para predios urbanos no edificados (+100%) y predios urbanos cuya edificación tenga valor inferior a la quinta parte del terreno (+50%), y fija un mínimo anual de 3 UMA en zonas urbanas 6, 7 y 8 y en predios rústicos de hasta 16 hectáreas, y de 5 UMA en zonas urbanas 1 a 5 y en predios rústicos mayores de 16-01 hectáreas. Se transcribe la tarifa básica principal; las reglas de aumento funcionan como recargos sobre la tasa indicada en el mismo artículo."
+    "comentarios": "Art. 10: todos los grupos listados pagan 1.6 al millar anual sobre valor catastral. Las fracciones VI y VII establecen aumentos de tasa para ciertos predios urbanos (baldíos +100%; edificación inferior a una quinta parte del valor del terreno +50%), pero el texto proporcionado no desglosa una tabla adicional separada. También establece un mínimo anual de 3 UMA para zonas urbanas 6, 7 y 8 y para predios rústicos de hasta 16 hectáreas, y de 5 UMA para zonas urbanas 1 a 5 y predios rústicos mayores de 16-01 hectáreas."
   },
   "_meta": {
     "fuente": "txt",
@@ -59,10 +59,12 @@
     "requiere_revision": false,
     "escalado": false,
     "razon": null,
+    "usado_reocr": false,
+    "usado_vision": false,
     "tokens": {
-      "input": 5369,
-      "output": 482,
-      "cached": 3840
+      "input": 6586,
+      "output": 479,
+      "cached": 5888
     },
     "cvegeo": "28035",
     "estado": "tamaulipas",

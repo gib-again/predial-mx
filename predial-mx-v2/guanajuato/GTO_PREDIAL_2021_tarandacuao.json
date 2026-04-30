@@ -4,31 +4,31 @@
     "tabla": [
       {
         "grupo": "urbano",
-        "clave": "urbano_con_edificaciones",
-        "descripcion": "Inmuebles urbanos y suburbanos con edificaciones",
+        "clave": "urbano_suburbano_con_edificaciones",
+        "descripcion": "Inmuebles urbanos y suburbanos con edificaciones (valor determinado o modificado): al entrar en vigor la ley, 2002-2020 inclusive, anterior a 2002 hasta 1993, y anterior a 1993.",
         "tasa_millar": 0.0045,
         "periodicidad": "anual",
         "cuota_fija_adicional": null
       },
       {
         "grupo": "urbano",
-        "clave": "urbano_sin_edificaciones",
-        "descripcion": "Inmuebles urbanos y suburbanos sin edificaciones",
-        "tasa_millar": 0.0024,
+        "clave": "urbano_suburbano_sin_edificaciones",
+        "descripcion": "Inmuebles urbanos y suburbanos sin edificaciones (valor determinado o modificado): al entrar en vigor la ley, 2002-2020 inclusive, anterior a 2002 hasta 1993, y anterior a 1993.",
+        "tasa_millar": 0.0018,
         "periodicidad": "anual",
         "cuota_fija_adicional": null
       },
       {
         "grupo": "rustico",
-        "clave": "rustico_con_edificaciones",
-        "descripcion": "Inmuebles rústicos con edificaciones",
-        "tasa_millar": 0.0018,
+        "clave": "rustico",
+        "descripcion": "Inmuebles rústicos (valor determinado o modificado): al entrar en vigor la ley, 2002-2020 inclusive, anterior a 2002 hasta 1993, y anterior a 1993.",
+        "tasa_millar": 0.0024,
         "periodicidad": "anual",
         "cuota_fija_adicional": null
       }
     ],
     "minimo_predial": null,
-    "comentarios": "Art. 4 establece tasas anuales al millar por tipo de inmueble y condición de edificaciones. Se transcribe también la tarifa paralela contenida en el mismo artículo para inmuebles con valor determinado o modificado por año de origen: para a la entrada en vigor de la Ley y durante 2002 a 2020 inclusive, 2.4 al millar (urbanos/suburbanos sin edificaciones), 4.5 al millar (urbanos/suburbanos con edificaciones) y 1.8 al millar (rústicos con edificaciones); para anterior a 2002 y hasta 1993, 8 al millar, 15 al millar y 6 al millar respectivamente; y para anterior a 1993, 13 al millar para ambas columnas urbanas/suburbanas y 12 al millar para rústicos con edificaciones. No se incluye como tabla principal por tratarse de tarifas paralelas por antigüedad, no de una sola estructura uniforme."
+    "comentarios": "Art. 4 establece tasas anuales al millar por categoría de inmueble. Se transcriben las tasas aplicables para el ejercicio 2021: urbanos y suburbanos con edificaciones 4.5 al millar; urbanos y suburbanos sin edificaciones 1.8 al millar; rústicos 2.4 al millar. El texto también muestra antecedentes históricos de tasas para periodos anteriores, que no se usan como mecánica del ejercicio 2021. Art. 5 contiene valores unitarios catastrales de terreno y construcción, no la tarifa del impuesto, por lo que no se incluye."
   },
   "_meta": {
     "fuente": "txt",
@@ -39,10 +39,12 @@
     "requiere_revision": false,
     "escalado": false,
     "razon": null,
+    "usado_reocr": false,
+    "usado_vision": false,
     "tokens": {
-      "input": 7537,
-      "output": 410,
-      "cached": 3840
+      "input": 8754,
+      "output": 442,
+      "cached": 5888
     },
     "cvegeo": "11038",
     "estado": "guanajuato",

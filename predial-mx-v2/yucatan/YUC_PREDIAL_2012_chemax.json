@@ -53,21 +53,23 @@
       }
     ],
     "minimo_predial": null,
-    "comentarios": "Se toma como tabla principal la tarifa por rangos de valor catastral del Artículo 13. Los límites fueron normalizados a rangos contiguos conforme a la instrucción: 0.01–5000.00, 5000.01–7500.00, etc., se transcriben como 0–5000, 5000–7500, etc. La tarifa paralela para predios destinados a la producción agropecuaria no se mezcla en la tabla principal: el Artículo 13 establece para ellos 10 al millar anual sobre el valor registrado o catastral, con el tope señalado por la legislación agraria federal para terrenos ejidales."
+    "comentarios": "Art. 13: tarifa principal del impuesto predial sobre valor catastral con cuota fija anual + factor para aplicar al excedente del límite inferior. El texto indica '0.001 %' en todos los renglones; se transcribe como tasa marginal uniforme según el documento. Tarifa paralela: predios destinados a la producción agropecuaria pagan 10 al millar anual sobre el valor registrado o catastral; se documenta como tarifa secundaria paralela y no se incluye en la tabla principal. También aparecen tablas de valores unitarios de terreno/construcción, que son catastro y no forman parte de la tarifa predial."
   },
   "_meta": {
     "fuente": "txt",
-    "modelo": "gpt-5.4"
+    "modelo": "gpt-5.4-mini"
   },
   "_meta_v2": {
-    "intentos": 3,
+    "intentos": 2,
     "requiere_revision": false,
-    "escalado": true,
-    "razon": "escalado_a_gpt-5.4_tras_2x_mini_fallido",
+    "escalado": false,
+    "razon": null,
+    "usado_reocr": false,
+    "usado_vision": false,
     "tokens": {
-      "input": 19156,
-      "output": 1315,
-      "cached": 11520
+      "input": 15225,
+      "output": 874,
+      "cached": 11776
     },
     "cvegeo": "31019",
     "estado": "yucatan",

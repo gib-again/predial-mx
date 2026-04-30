@@ -1,73 +1,20 @@
 {
-  "predial": {
-    "tipo_esquema": "progresivo",
-    "tabla": [
-      {
-        "n_rango": 1,
-        "inferior": 0.0,
-        "superior": 10000.0,
-        "cuota_fija": 7.0,
-        "tasa_marginal": 0.0025
-      },
-      {
-        "n_rango": 2,
-        "inferior": 10000.0,
-        "superior": 20000.0,
-        "cuota_fija": 14.0,
-        "tasa_marginal": 0.0025
-      },
-      {
-        "n_rango": 3,
-        "inferior": 20000.0,
-        "superior": 30000.0,
-        "cuota_fija": 15.0,
-        "tasa_marginal": 0.0025
-      },
-      {
-        "n_rango": 4,
-        "inferior": 30000.0,
-        "superior": 40000.0,
-        "cuota_fija": 26.0,
-        "tasa_marginal": 0.0025
-      },
-      {
-        "n_rango": 5,
-        "inferior": 40000.0,
-        "superior": 50000.0,
-        "cuota_fija": 33.0,
-        "tasa_marginal": 0.0025
-      },
-      {
-        "n_rango": 6,
-        "inferior": 50000.0,
-        "superior": 60000.0,
-        "cuota_fija": 40.0,
-        "tasa_marginal": 0.0025
-      },
-      {
-        "n_rango": 7,
-        "inferior": 60000.0,
-        "superior": null,
-        "cuota_fija": 46.0,
-        "tasa_marginal": 0.0025
-      }
-    ],
-    "minimo_predial": null,
-    "comentarios": "Artículo 13 inciso a): tabla para predios urbanos con o sin construcción. Se normalizaron los límites centesimales del texto (0.01–10,000.00; 10,000.01–20,000.00; etc.) a rangos contiguos (0–10,000; 10,000–20,000; etc.). La última fila del texto aparece como '70,000.01 en adelante', pero para evitar hueco entre 60,000 y 70,000.01 y dado que conserva la misma mecánica de cuota fija más 0.25% sobre excedente, se transcribe como último bracket continuo desde 60,000 en adelante. Artículo 13 inciso b) establece una tarifa paralela para predios rústicos: cuota de 15.00 pesos por hectárea; no se incluye en la tabla principal por ser tarifa separada."
-  },
+  "predial": null,
   "_meta": {
     "fuente": "txt",
     "modelo": "gpt-5.4"
   },
   "_meta_v2": {
     "intentos": 3,
-    "requiere_revision": false,
+    "requiere_revision": true,
     "escalado": true,
-    "razon": "escalado_a_gpt-5.4_tras_2x_mini_fallido",
+    "razon": "valido_3x_fallido | mini_e1=  • predial.mixto: Value error, brackets 6→7: hueco detectado (superior=60000.0, siguiente inferior=70000.01) | mini_e2=  • predial.mixto: Value error, brackets 6→7: hueco detectado (superior=60000.0, siguiente inferior=70000.01) | full_e3=  • predial.progresivo: Value error, brackets 6→7: hueco detectado (superior=60000.0, siguiente inferior=70000.01)",
+    "usado_reocr": false,
+    "usado_vision": false,
     "tokens": {
-      "input": 17997,
-      "output": 1509,
-      "cached": 11520
+      "input": 22068,
+      "output": 1704,
+      "cached": 17664
     },
     "cvegeo": "31044",
     "estado": "yucatan",

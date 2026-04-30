@@ -4,7 +4,7 @@
     "tabla": [
       {
         "grupo": "urbano",
-        "clave": "urbano_con_edificaciones",
+        "clave": "inmuebles_urbanos_y_suburbanos_con_edificaciones",
         "descripcion": "Inmuebles urbanos y suburbanos con edificaciones",
         "tasa_millar": 0.0024,
         "periodicidad": "anual",
@@ -12,7 +12,7 @@
       },
       {
         "grupo": "urbano",
-        "clave": "urbano_sin_edificaciones",
+        "clave": "inmuebles_urbanos_y_suburbanos_sin_edificaciones",
         "descripcion": "Inmuebles urbanos y suburbanos sin edificaciones",
         "tasa_millar": 0.0045,
         "periodicidad": "anual",
@@ -20,7 +20,7 @@
       },
       {
         "grupo": "rustico",
-        "clave": "rustico_con_edificaciones",
+        "clave": "inmuebles_rusticos_con_edificaciones",
         "descripcion": "Inmuebles rústicos con edificaciones",
         "tasa_millar": 0.0018,
         "periodicidad": "anual",
@@ -28,15 +28,15 @@
       },
       {
         "grupo": "rustico",
-        "clave": "rustico_sin_edificaciones",
+        "clave": "inmuebles_rusticos_sin_edificaciones",
         "descripcion": "Inmuebles rústicos sin edificaciones",
-        "tasa_millar": 0.0,
+        "tasa_millar": 0.0043,
         "periodicidad": "anual",
         "cuota_fija_adicional": null
       }
     ],
     "minimo_predial": null,
-    "comentarios": "Art. 4 (tabla de tasas): se transcriben las tasas anuales al millar para inmuebles urbanos y suburbanos, y para inmuebles rústicos, distinguiendo con/sin edificaciones. Se ignoran los valores unitarios de catastro de los arts. 5 y 6 por no ser mecánica del impuesto. La línea 'con anterioridad al año 2002 y hasta 1993, inclusive' aparece en el texto con OCR deteriorado; se conserva sólo la tasa visible para la fila rústica sin edificaciones como 0 al millar cuando no se pudo leer otra cifra completa."
+    "comentarios": "Artículo 1993, tasas aplicables por tipo de inmueble. Se transcribe la mecánica principal como catálogo de tasas al millar por categoría: urbanos y suburbanos con/sin edificaciones; rústicos con/sin edificaciones. El resto del texto mostrado corresponde a valores unitarios y criterios de avalúo, no a la tarifa del impuesto."
   },
   "_meta": {
     "fuente": "txt",
@@ -47,10 +47,12 @@
     "requiere_revision": false,
     "escalado": false,
     "razon": null,
+    "usado_reocr": false,
+    "usado_vision": false,
     "tokens": {
-      "input": 7512,
-      "output": 386,
-      "cached": 3840
+      "input": 8729,
+      "output": 349,
+      "cached": 5888
     },
     "cvegeo": "11033",
     "estado": "guanajuato",

@@ -95,7 +95,7 @@
       }
     ],
     "minimo_predial": null,
-    "comentarios": "Artículo 13 establece una cuota fija de $60.00 y además una tasa del 0.20% del valor catastral vigente; esto es una estructura híbrida acumulable, pero la tarifa principal transcrita corresponde a la tabla escalonada del Artículo 14 con cuotas fijas por rango y un factor porcentual marginal. En la tabla del Artículo 14 las cuotas son en pesos y el último campo aparece como 'factor para aplicar al límite' con porcentajes impresos como 0.000% / 0.001% / 0.002%, por lo que se clasifica como mixto. Artículo 16 (rentas o frutos civiles) no se incluye por no ser predial sobre valor catastral."
+    "comentarios": "Art. 13 establece una cuota fija anual de $60.00 más una tasa del 0.20% del valor catastral vigente. Sin embargo, el artículo 14 contiene la tarifa principal por rangos de valor catastral con cuota anual fija y factor marginal; se transcribe como estructura mixta porque cada bracket tiene cuota fija en pesos y un factor porcentual explícito en la columna 'FACTOR PARA APLICAR AL LÍMITE'. La tabla del Art. 16 sobre rentas o frutos civiles mensuales (2% casas habitación y 2% actividades comerciales) se documenta como tarifa paralela secundaria y no se integra a la tabla principal: 'Sobre la renta o frutos civiles mensuales por casas habitación: 2%; Sobre la renta o frutos civiles mensuales por actividades comerciales: 2%'. También se observa que el texto incluye tablas de valores unitarios de terreno y construcción del Art. 14, las cuales son insumos catastrales y no mecánica de cálculo del impuesto."
   },
   "_meta": {
     "fuente": "txt",
@@ -106,10 +106,12 @@
     "requiere_revision": false,
     "escalado": false,
     "razon": null,
+    "usado_reocr": false,
+    "usado_vision": false,
     "tokens": {
-      "input": 6781,
-      "output": 521,
-      "cached": 3840
+      "input": 7998,
+      "output": 572,
+      "cached": 5888
     },
     "cvegeo": "31026",
     "estado": "yucatan",

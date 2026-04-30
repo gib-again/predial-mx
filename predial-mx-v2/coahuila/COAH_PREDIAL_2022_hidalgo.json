@@ -24,7 +24,7 @@
       "periodicidad": "bimestral",
       "unidad": "pesos"
     },
-    "comentarios": "Art. 2 fraccs. I y II: tasas al millar anuales para predios urbanos (3 al millar) y rústicos (1 al millar). Fracc. III establece mínimo predial de $10.31 por bimestre. Se ignoran incentivos/bonificaciones de las fraccs. IV, V y VI por instrucción."
+    "comentarios": "Art. 2 fracc. I y II: predios urbanos 3 al millar anual; predios rústicos 1 al millar anual. La fracc. III establece un mínimo predial de $10.31 por bimestre. Se omiten incentivos y bonificaciones de las fraccs. IV, V y VI por no formar parte de la mecánica de cálculo."
   },
   "_meta": {
     "fuente": "txt",
@@ -35,10 +35,12 @@
     "requiere_revision": false,
     "escalado": false,
     "razon": null,
+    "usado_reocr": false,
+    "usado_vision": false,
     "tokens": {
-      "input": 5300,
-      "output": 235,
-      "cached": 3840
+      "input": 6517,
+      "output": 239,
+      "cached": 5888
     },
     "cvegeo": "05013",
     "estado": "coahuila",

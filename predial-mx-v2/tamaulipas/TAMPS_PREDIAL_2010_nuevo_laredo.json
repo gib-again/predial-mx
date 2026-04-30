@@ -6,7 +6,7 @@
         "grupo": "urbano",
         "clave": "predios_urbanos_con_edificaciones",
         "descripcion": "Predios urbanos con edificaciones",
-        "tasa_millar": 0.00146,
+        "tasa_millar": 1.46,
         "periodicidad": "anual",
         "cuota_fija_adicional": null
       },
@@ -14,7 +14,7 @@
         "grupo": "urbano",
         "clave": "predios_suburbanos_con_edificaciones",
         "descripcion": "Predios suburbanos con edificaciones",
-        "tasa_millar": 0.00146,
+        "tasa_millar": 1.46,
         "periodicidad": "anual",
         "cuota_fija_adicional": null
       },
@@ -22,15 +22,15 @@
         "grupo": "rustico",
         "clave": "predios_rusticos",
         "descripcion": "Predios rústicos",
-        "tasa_millar": 0.0025,
+        "tasa_millar": 2.5,
         "periodicidad": "anual",
         "cuota_fija_adicional": null
       },
       {
         "grupo": "urbano",
-        "clave": "predios_urbanos_y_suburbanos_sin_edificaciones",
+        "clave": "predios_urbanos_y_suburbanos_sin_edificaciones_baldios",
         "descripcion": "Predios urbanos y suburbanos sin edificaciones (baldíos)",
-        "tasa_millar": 0.00292,
+        "tasa_millar": 2.92,
         "periodicidad": "anual",
         "cuota_fija_adicional": null
       },
@@ -38,13 +38,13 @@
         "grupo": "urbano",
         "clave": "predios_urbanos_de_uso_industrial",
         "descripcion": "Predios urbanos de uso industrial",
-        "tasa_millar": 0.00292,
+        "tasa_millar": 2.92,
         "periodicidad": "anual",
         "cuota_fija_adicional": null
       }
     ],
     "minimo_predial": null,
-    "comentarios": "Art. 9: el impuesto predial se determina sobre el valor catastral anual con tasas al millar por categoría de predio. Se ignoran las disposiciones de la fracción VI, así como los aumentos de las fracciones VII y VIII por tratarse de reglas de incremento/bonificación no parte de la mecánica base. Art. 10 corresponde al impuesto sobre adquisición de inmuebles y no se incluye."
+    "comentarios": "Art. 9: impuesto sobre la propiedad urbana, suburbana y rústica determinado sobre el valor catastral. Las fracciones VI, VII y VIII establecen exenciones/recargos por fraccionamientos y no modifican la mecánica base de cálculo. La tasa es anual sobre valor catastral por categoría de predio."
   },
   "_meta": {
     "fuente": "txt",
@@ -55,10 +55,12 @@
     "requiere_revision": false,
     "escalado": false,
     "razon": null,
+    "usado_reocr": false,
+    "usado_vision": false,
     "tokens": {
-      "input": 6346,
-      "output": 400,
-      "cached": 3840
+      "input": 7563,
+      "output": 380,
+      "cached": 5888
     },
     "cvegeo": "28027",
     "estado": "tamaulipas",

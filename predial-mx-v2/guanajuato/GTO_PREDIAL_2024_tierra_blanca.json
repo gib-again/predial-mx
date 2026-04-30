@@ -1,20 +1,66 @@
 {
   "predial": {
-    "tipo_esquema": "otro_no_clasificado",
-    "categoria": "municipio_sin_impuesto",
-    "descripcion_estructural": "En el segmento proporcionado no aparece una mecánica de cálculo del impuesto predial: sólo se observa un artículo de recurso de revisión para predios sin edificar y un artículo de ajustes tarifarios. No se incluyen tasas, cuotas, brackets ni tabla aplicable al predial.",
-    "tabla_cruda": [
+    "tipo_esquema": "tarifa_millar",
+    "tabla": [
       {
-        "descripcion": "Artículo 44. Recurso de revisión para inmuebles sin edificar",
-        "valores": "sin tabla de impuesto; referencia a tasa general de inmuebles urbanos y suburbanos"
+        "grupo": "urbano",
+        "clave": "inmuebles_urbanos_y_suburbanos_con_edificaciones",
+        "descripcion": "Inmuebles urbanos y suburbanos con edificaciones",
+        "tasa_millar": 0.0045,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
       },
       {
-        "descripcion": "Artículo 45. Ajustes tarifarios",
-        "valores": "desde 0.01 hasta 0.50 -> a la unidad de peso inmediato inferior; desde 0.51 hasta 0.99 -> a la unidad de peso inmediato superior"
+        "grupo": "urbano",
+        "clave": "inmuebles_urbanos_y_suburbanos_sin_edificaciones",
+        "descripcion": "Inmuebles urbanos y suburbanos sin edificaciones",
+        "tasa_millar": 0.0018,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "rustico",
+        "clave": "inmuebles_rusticos",
+        "descripcion": "Inmuebles rústicos",
+        "tasa_millar": 0.0045,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "otro",
+        "clave": "con_anterioridad_al_anio_2023",
+        "descripcion": "Con anterioridad al año 2023, inclusive",
+        "tasa_millar": 0.0024,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "otro",
+        "clave": "con_anterioridad_al_anio_2023_sin_edificaciones",
+        "descripcion": "Con anterioridad al año 2023, inclusive, sin edificaciones",
+        "tasa_millar": 0.0002,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "otro",
+        "clave": "con_anterioridad_al_anio_2002_y_hasta_1993",
+        "descripcion": "Con anterioridad al año 2002 y hasta el año 1993",
+        "tasa_millar": 0.0015,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "otro",
+        "clave": "con_anterioridad_al_anio_1993",
+        "descripcion": "Con anterioridad al año de 1993",
+        "tasa_millar": 0.0013,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
       }
     ],
     "minimo_predial": null,
-    "comentarios": "No se detectó la tasa o cuota del impuesto predial en el texto aportado."
+    "comentarios": "La sección muestra una tabla de tasas al millar por tipo/circunstancia del inmueble, sin rangos de valor catastral. El texto OCR es fragmentario en algunos renglones, pero la mecánica identificable es tarifa_millar. Se observan tasas para inmuebles urbanos y suburbanos con y sin edificaciones, inmuebles rústicos, y renglones por antigüedad ('con anterioridad al año 2023, inclusive'; 'con anterioridad al año 2002 y hasta el año 1993'; 'con anterioridad al año de 1993'). No se transcriben valores unitarios de catastro ni bonificaciones."
   },
   "_meta": {
     "fuente": "txt",
@@ -22,13 +68,15 @@
   },
   "_meta_v2": {
     "intentos": 1,
-    "requiere_revision": true,
+    "requiere_revision": false,
     "escalado": false,
-    "razon": "clasificado_como_otro_no_clasificado",
+    "razon": null,
+    "usado_reocr": false,
+    "usado_vision": false,
     "tokens": {
-      "input": 5583,
-      "output": 224,
-      "cached": 3840
+      "input": 6519,
+      "output": 593,
+      "cached": 5888
     },
     "cvegeo": "11040",
     "estado": "guanajuato",

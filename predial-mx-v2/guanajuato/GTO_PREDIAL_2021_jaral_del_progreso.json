@@ -4,31 +4,31 @@
     "tabla": [
       {
         "grupo": "urbano",
-        "clave": "urbano_suburbano_con_edificaciones",
-        "descripcion": "Inmuebles urbanos y suburbanos con edificaciones; tasa anual según antigüedad indicada en el artículo 4",
+        "clave": "inmuebles_urbanos_suburbanos_con_edificaciones",
+        "descripcion": "Inmuebles urbanos y suburbanos con edificaciones",
         "tasa_millar": 0.0024,
         "periodicidad": "anual",
         "cuota_fija_adicional": null
       },
       {
         "grupo": "urbano",
-        "clave": "urbano_suburbano_sin_edificaciones",
-        "descripcion": "Inmuebles urbanos y suburbanos sin edificaciones; tasa anual según antigüedad indicada en el artículo 4",
+        "clave": "inmuebles_urbanos_suburbanos_sin_edificaciones",
+        "descripcion": "Inmuebles urbanos y suburbanos sin edificaciones",
         "tasa_millar": 0.0045,
         "periodicidad": "anual",
         "cuota_fija_adicional": null
       },
       {
         "grupo": "rustico",
-        "clave": "rustico",
-        "descripcion": "Inmuebles rústicos; tasa anual según antigüedad indicada en el artículo 4",
+        "clave": "inmuebles_rusticos",
+        "descripcion": "Inmuebles rústicos",
         "tasa_millar": 0.0018,
         "periodicidad": "anual",
         "cuota_fija_adicional": null
       }
     ],
     "minimo_predial": null,
-    "comentarios": "Art. 4 establece tasas al millar anuales diferenciadas por grupo y antigüedad del inmueble. Se transcriben las tres tasas principales visibles en el texto para inmuebles urbanos y suburbanos con edificaciones, sin edificaciones, y rústicos. El artículo también muestra un renglón adicional para inmuebles con anterioridad al año de 1993: 13 al millar / 13 al millar / 12 al millar; no se integra en la tabla principal porque el texto OCR presenta la estructura de manera incompleta y con columnas ambiguas, pero sí se observa como tasa paralela del mismo artículo."
+    "comentarios": "Art. 4 establece tasas anuales al millar por tipo de inmueble. La mecánica principal es un catálogo categórico sin rangos de valor catastral. Los renglones visibles en el texto separan: inmuebles urbanos y suburbanos con edificaciones (2.4 al millar), sin edificaciones (4.5 al millar) e inmuebles rústicos (1.8 al millar). El artículo 5 contiene valores unitarios para avalúo/catastro, no la tarifa del impuesto, por lo que no se integra a la tabla del predial."
   },
   "_meta": {
     "fuente": "txt",
@@ -39,10 +39,12 @@
     "requiere_revision": false,
     "escalado": false,
     "razon": null,
+    "usado_reocr": false,
+    "usado_vision": false,
     "tokens": {
-      "input": 7597,
-      "output": 369,
-      "cached": 3840
+      "input": 8814,
+      "output": 334,
+      "cached": 5888
     },
     "cvegeo": "11018",
     "estado": "guanajuato",

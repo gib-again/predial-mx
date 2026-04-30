@@ -4,16 +4,16 @@
     "tabla": [
       {
         "grupo": "urbano",
-        "clave": "predios_urbanos",
-        "descripcion": "Predios urbanos",
+        "clave": "predio_urbano",
+        "descripcion": "Sobre los predios urbanos",
         "tasa_millar": 0.005,
         "periodicidad": "anual",
         "cuota_fija_adicional": null
       },
       {
         "grupo": "rustico",
-        "clave": "predios_rusticos",
-        "descripcion": "Predios rústicos",
+        "clave": "predio_rustico",
+        "descripcion": "Sobre los predios rústicos",
         "tasa_millar": 0.003,
         "periodicidad": "anual",
         "cuota_fija_adicional": null
@@ -24,7 +24,7 @@
       "periodicidad": "bimestral",
       "unidad": "pesos"
     },
-    "comentarios": "Art. 2: tarifa paralela por grupo de predio: predios urbanos 5 al millar anual y predios rústicos 3 al millar anual. Se ignoran incentivos/bonificaciones por instrucción. El texto menciona predios ejidales que pagan en base al valor catastral asignado, pero no fija una tasa o estructura distinta en el fragmento proporcionado."
+    "comentarios": "Art. 2 fracc. V: los predios ejidales con títulos expedidos por el Registro Agrario Nacional deberán pagar predial con base en el valor catastral asignado a su predio; no se extrae una tarifa específica adicional. Fraccs. IV, VI y VII contienen incentivos/bonificaciones que se ignoran por instrucción."
   },
   "_meta": {
     "fuente": "txt",
@@ -35,10 +35,12 @@
     "requiere_revision": false,
     "escalado": false,
     "razon": null,
+    "usado_reocr": false,
+    "usado_vision": false,
     "tokens": {
-      "input": 5241,
-      "output": 235,
-      "cached": 3840
+      "input": 6458,
+      "output": 231,
+      "cached": 5888
     },
     "cvegeo": "05023",
     "estado": "coahuila",

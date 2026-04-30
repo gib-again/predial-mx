@@ -5,7 +5,7 @@
       {
         "grupo": "urbano",
         "clave": "urbano_y_suburbano_con_edificaciones",
-        "descripcion": "Inmuebles urbanos y suburbanos con edificaciones; tasa anual",
+        "descripcion": "Inmuebles urbanos y suburbanos con edificaciones",
         "tasa_millar": 0.0024,
         "periodicidad": "anual",
         "cuota_fija_adicional": null
@@ -13,22 +13,30 @@
       {
         "grupo": "urbano",
         "clave": "urbano_y_suburbano_sin_edificaciones",
-        "descripcion": "Inmuebles urbanos y suburbanos sin edificaciones; tasa anual",
+        "descripcion": "Inmuebles urbanos y suburbanos sin edificaciones",
         "tasa_millar": 0.0045,
         "periodicidad": "anual",
         "cuota_fija_adicional": null
       },
       {
         "grupo": "rustico",
-        "clave": "rustico",
-        "descripcion": "Inmuebles rústicos; tasa anual",
+        "clave": "rustico_con_edificaciones",
+        "descripcion": "Inmuebles rústicos con edificaciones",
+        "tasa_millar": 0.0018,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "rustico",
+        "clave": "rustico_sin_edificaciones",
+        "descripcion": "Inmuebles rústicos sin edificaciones",
         "tasa_millar": 0.0018,
         "periodicidad": "anual",
         "cuota_fija_adicional": null
       }
     ],
     "minimo_predial": null,
-    "comentarios": "Art. 4 establece tasas anuales al millar para tres grupos: inmuebles urbanos y suburbanos con edificaciones (2.4000 al millar), sin edificaciones (4.5000 al millar) e inmuebles rústicos (1.8000 al millar). Se transcribe sólo la mecánica de cálculo; los valores unitarios de los artículos 5 y 6 son tablas de catastro/avalúo y no se incluyen como tarifa."
+    "comentarios": "Art. 4 establece tasas anuales al millar por categoría de inmueble. Se transcribe la mecánica principal como tarifa_millar. El texto OCR muestra encabezados deteriorados; se conserva la estructura visible de categorías: urbanos y suburbanos con/sin edificaciones y rústicos con/sin edificaciones. No se documentan en la tabla los valores unitarios de los Arts. 5 y 6 porque corresponden a catastro/avalúo, no a la mecánica tarifaria del predial."
   },
   "_meta": {
     "fuente": "txt",
@@ -39,10 +47,12 @@
     "requiere_revision": false,
     "escalado": false,
     "razon": null,
+    "usado_reocr": false,
+    "usado_vision": false,
     "tokens": {
-      "input": 7442,
-      "output": 315,
-      "cached": 3840
+      "input": 8659,
+      "output": 372,
+      "cached": 5888
     },
     "cvegeo": "11018",
     "estado": "guanajuato",

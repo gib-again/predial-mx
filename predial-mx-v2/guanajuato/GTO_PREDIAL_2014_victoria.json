@@ -3,17 +3,17 @@
     "tipo_esquema": "tarifa_millar",
     "tabla": [
       {
-        "grupo": "urbano",
+        "grupo": "general",
         "clave": "urbano_suburbano_con_edificaciones",
-        "descripcion": "Inmuebles urbanos y suburbanos con edificaciones",
+        "descripcion": "Inmuebles urbanos y suburbanos con edificaciones; a la entrada en vigor de la Ley / durante 2002 a 2013 inclusive / con anterioridad a 2002 y hasta 1993 inclusive / con anterioridad a 1993.",
         "tasa_millar": 0.0024,
         "periodicidad": "anual",
         "cuota_fija_adicional": null
       },
       {
-        "grupo": "urbano",
+        "grupo": "general",
         "clave": "urbano_suburbano_sin_edificaciones",
-        "descripcion": "Inmuebles urbanos y suburbanos sin edificaciones",
+        "descripcion": "Inmuebles urbanos y suburbanos sin edificaciones; a la entrada en vigor de la Ley / durante 2002 a 2013 inclusive / con anterioridad a 2002 y hasta 1993 inclusive / con anterioridad a 1993.",
         "tasa_millar": 0.0045,
         "periodicidad": "anual",
         "cuota_fija_adicional": null
@@ -21,14 +21,14 @@
       {
         "grupo": "rustico",
         "clave": "rustico",
-        "descripcion": "Inmuebles rústicos",
+        "descripcion": "Inmuebles rústicos; a la entrada en vigor de la Ley / durante 2002 a 2013 inclusive / con anterioridad a 2002 y hasta 1993 inclusive / con anterioridad a 1993.",
         "tasa_millar": 0.0018,
         "periodicidad": "anual",
         "cuota_fija_adicional": null
       }
     ],
     "minimo_predial": null,
-    "comentarios": "Art. 4 establece tasas anuales al millar por tipo de inmueble y condición: urbanos y suburbanos con edificaciones 2.4 al millar, urbanos y suburbanos sin edificaciones 4.5 al millar, y rústicos 1.8 al millar. También aparecen tasas históricas por antigüedad de valor determinado (8/15/6 al millar y 8/8/6 al millar), pero el esquema principal del artículo es categórico por tipo de predio; no se incluyen descuentos, recargos ni los valores unitarios de catastro de los artículos 5 y 6."
+    "comentarios": "Art. 4 establece tasas al millar anuales sobre el valor catastral por categoría de inmueble. La tabla transcrita contiene series históricas por fecha de construcción/antigüedad, pero todas son tarifas categóricas en millar; no hay brackets por valor catastral. Art. 5 y 6 contienen valores unitarios y criterios de avalúo, no mecánica tarifaria del impuesto."
   },
   "_meta": {
     "fuente": "txt",
@@ -39,10 +39,12 @@
     "requiere_revision": false,
     "escalado": false,
     "razon": null,
+    "usado_reocr": false,
+    "usado_vision": false,
     "tokens": {
-      "input": 7195,
-      "output": 331,
-      "cached": 3840
+      "input": 8412,
+      "output": 408,
+      "cached": 5888
     },
     "cvegeo": "11043",
     "estado": "guanajuato",

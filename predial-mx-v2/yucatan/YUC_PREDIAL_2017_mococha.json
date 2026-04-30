@@ -3,14 +3,15 @@
     "tipo_esquema": "tasa_unica",
     "tabla": [
       {
-        "descripcion": "Tasa general por secciones 1 a 5 sobre el valor catastral del inmueble",
-        "tasa": 0.0025,
+        "descripcion": "Impuesto predial general por secciones 1 a 5",
+        "tasa": 0.25,
         "base_calculo": "valor_catastral",
-        "unidad": "porcentaje"
+        "unidad": "porcentaje",
+        "cuota_fija_adicional": null
       }
     ],
     "minimo_predial": null,
-    "comentarios": "Artículo 13 establece una tasa de 0.25% para las secciones 1, 2, 3, 4 y 5; todas muestran la misma tasa, por lo que se captura como tasa única sobre valor catastral. También señala cuotas fijas sólo cuando no pueda determinarse el valor catastral del inmueble: 83.00 para terrenos con construcción y 52.00 para terrenos sin construcción; no se integran en la tabla principal por no formar parte de la tarifa general sobre valor catastral. Asimismo, como tarifa paralela, todo predio destinado a la producción agropecuaria paga 10 al millar anual sobre el valor registrado o catastral; no se incluye en la tabla principal por aplicarse a un grupo distinto. Se ignoran los valores unitarios de terreno y construcción por ser tablas catastrales, no la tarifa del impuesto predial, y se ignora el impuesto con base en rentas o frutos civiles del artículo 15 por no corresponder a la mecánica general aquí solicitada."
+    "comentarios": "La mecánica principal del impuesto predial es una tasa única de 0.25% sobre el valor catastral del inmueble; el texto la repite para las secciones 1 a 5 con la misma tasa. Cuando no pueda determinarse el valor catastral, el texto establece cuotas fijas de $83.00 para terrenos con construcción y de $52.00 para terrenos sin construcción, pero no forman parte de la tabla principal basada en valor catastral. Tarifa paralela no incluida en la tabla principal: todo predio destinado a la producción agropecuaria paga 10 al millar anual sobre el valor registrado o catastral. También se menciona en el Artículo 15 un impuesto predial con base en rentas o frutos civiles: 2% para casa habitación y 2% para actividades comerciales."
   },
   "_meta": {
     "fuente": "txt",
@@ -21,10 +22,12 @@
     "requiere_revision": false,
     "escalado": true,
     "razon": "escalado_a_gpt-5.4_tras_2x_mini_fallido",
+    "usado_reocr": false,
+    "usado_vision": false,
     "tokens": {
-      "input": 19085,
-      "output": 924,
-      "cached": 13568
+      "input": 23158,
+      "output": 836,
+      "cached": 17664
     },
     "cvegeo": "31051",
     "estado": "yucatan",

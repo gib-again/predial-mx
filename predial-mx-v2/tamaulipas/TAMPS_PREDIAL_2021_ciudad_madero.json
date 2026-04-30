@@ -57,7 +57,7 @@
       "periodicidad": "anual",
       "unidad": "uma"
     },
-    "comentarios": "Art. 9 fracción I establece una tabla progresiva para predios urbanos con cuota anual mínima aplicable en cada rango y tasa anual al millar sobre el excedente del límite inferior. Art. 9 fracción II prevé aumento del 100% para predios urbanos no edificados (baldíos) salvo excepciones; fracción III aumento del 50% para predios urbanos con construcción permanente inferior al 20% del terreno; fracción IV prevé supuestos con aumento del 100% o aplicación de la tabla de construidos. Estas reglas son incrementos sobre la misma tabla principal y no se transcriben como tarifa separada. Art. 10 fija mínimo predial de 3 UMA en zonas precarias o de extrema pobreza y 4 UMA en cualquier otra zona; se conserva el mínimo general de 4 UMA y se menciona el de 3 UMA como excepción textual."
+    "comentarios": "Art. 9 fracc. I: tarifa urbana por valor catastral con cuota mínima aplicable y tasa anual al millar sobre el excedente del límite inferior. Art. 9 fraccs. II, III y IV establecen incrementos del 100% o 50% para ciertos predios urbanos no edificados, con edificación menor al 20%, o lotes de fraccionamientos; no se codifican como tabla principal por ser recargos/ajustes sobre la tarifa base. Art. 10 fija mínimo predial de 3 UMA en zonas precarias o de extrema pobreza y 4 UMA en cualquier otra zona; se registra el mínimo general de 4 UMA y se deja constancia del supuesto de 3 UMA."
   },
   "_meta": {
     "fuente": "txt",
@@ -68,10 +68,12 @@
     "requiere_revision": false,
     "escalado": false,
     "razon": null,
+    "usado_reocr": false,
+    "usado_vision": false,
     "tokens": {
-      "input": 6228,
-      "output": 511,
-      "cached": 3840
+      "input": 7445,
+      "output": 480,
+      "cached": 5888
     },
     "cvegeo": "28009",
     "estado": "tamaulipas",

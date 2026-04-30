@@ -11,35 +11,35 @@
       },
       {
         "n_rango": 2,
-        "inferior": 4000.01,
+        "inferior": 4000.0,
         "superior": 5500.0,
         "cuota_fija": 22.0,
         "tasa_marginal": 0.003
       },
       {
         "n_rango": 3,
-        "inferior": 5500.01,
+        "inferior": 5500.0,
         "superior": 6500.0,
         "cuota_fija": 28.0,
         "tasa_marginal": 0.0045
       },
       {
         "n_rango": 4,
-        "inferior": 6500.01,
+        "inferior": 6500.0,
         "superior": 7500.0,
         "cuota_fija": 34.0,
         "tasa_marginal": 0.006
       },
       {
         "n_rango": 5,
-        "inferior": 7500.01,
+        "inferior": 7500.0,
         "superior": 8500.0,
         "cuota_fija": 38.0,
         "tasa_marginal": 0.0075
       },
       {
         "n_rango": 6,
-        "inferior": 8500.01,
+        "inferior": 8500.0,
         "superior": 10000.0,
         "cuota_fija": 48.0,
         "tasa_marginal": 0.009
@@ -53,7 +53,7 @@
       }
     ],
     "minimo_predial": null,
-    "comentarios": "Art. 4: el impuesto predial se calcula sobre el valor catastral con tarifa progresiva de cuota fija anual más factor sobre el excedente del límite inferior. Art. 5 establece una base distinta sobre rentas o frutos civiles: 2% habitacional y 5% comercial, pagadero mensualmente; se consigna como tarifa paralela no incluida en la tabla principal."
+    "comentarios": "Art. 4: tarifa progresiva sobre valor catastral con cuota fija anual más factor aplicado al excedente del límite inferior. Art. 5: cuando el impuesto se cause sobre la base de rentas o frutos civiles, se paga mensualmente sobre la contraprestación con tasa de 2% para predio habitacional y 5% para predio comercial; se documenta como tarifa secundaria por no ser la mecánica principal."
   },
   "_meta": {
     "fuente": "txt",
@@ -64,10 +64,12 @@
     "requiere_revision": false,
     "escalado": false,
     "razon": null,
+    "usado_reocr": false,
+    "usado_vision": false,
     "tokens": {
-      "input": 6395,
+      "input": 7612,
       "output": 383,
-      "cached": 3840
+      "cached": 5888
     },
     "cvegeo": "31104",
     "estado": "yucatan",

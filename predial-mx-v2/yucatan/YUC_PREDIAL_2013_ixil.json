@@ -3,10 +3,11 @@
     "tipo_esquema": "tasa_unica",
     "tabla": [
       {
-        "descripcion": "Impuesto predial general sobre valor catastral de las secciones I a IV",
+        "descripcion": "Predial general sobre valor catastral de la sección I a la IV",
         "tasa": 0.001,
         "base_calculo": "valor_catastral",
-        "unidad": "porcentaje"
+        "unidad": "porcentaje",
+        "cuota_fija_adicional": null
       }
     ],
     "minimo_predial": {
@@ -14,21 +15,23 @@
       "periodicidad": "anual",
       "unidad": "pesos"
     },
-    "comentarios": "Art. 13: la mecánica principal es una tasa uniforme de 0.10% sobre el valor catastral de las secciones I a IV. La zona costera tiene una tasa distinta de 0.50% sobre valor catastral, pero se trata como tarifa paralela y no se incorpora a la tabla principal. El texto también incluye tablas de valores unitarios de terreno y construcción, que son insumos catastrales y no la mecánica del impuesto. Cuando no pueda determinarse el valor catastral, se cobra una cuota fija de $60.00."
+    "comentarios": "Art. 13: el impuesto predial se determina aplicando la tasa del 0.10% sobre el valor catastral de la sección I a la IV. Art. 13 también señala que cuando no se pudiera determinar se cobrará cuota fija de $60.00 como mínimo predial. Se documenta además la mecánica paralela de la zona costera (0.50% sobre valor catastral) y el impuesto con base en rentas o frutos civiles del Art. 15: 2% mensual sobre la renta/frutos civiles para casas habitación y 2% para actividades comerciales, como tarifa secundaria no principal del predial."
   },
   "_meta": {
     "fuente": "txt",
     "modelo": "gpt-5.4-mini"
   },
   "_meta_v2": {
-    "intentos": 1,
+    "intentos": 2,
     "requiere_revision": false,
     "escalado": false,
     "razon": null,
+    "usado_reocr": false,
+    "usado_vision": false,
     "tokens": {
-      "input": 6192,
-      "output": 228,
-      "cached": 3840
+      "input": 15474,
+      "output": 543,
+      "cached": 11776
     },
     "cvegeo": "31039",
     "estado": "yucatan",

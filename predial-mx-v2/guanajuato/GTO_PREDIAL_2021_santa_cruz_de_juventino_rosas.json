@@ -3,18 +3,19 @@
     "tipo_esquema": "cuota_fija_simple",
     "tabla": [
       {
-        "descripcion": "Cuota mínima anual del impuesto predial para 2021",
+        "descripcion": "Cuota mínima anual del impuesto predial 2021",
         "monto": 313.26,
         "periodicidad": "anual",
         "unidad": "pesos"
       }
     ],
+    "tarifas_secundarias": [],
     "minimo_predial": {
       "monto": 313.26,
       "periodicidad": "anual",
       "unidad": "pesos"
     },
-    "comentarios": "Artículo 37 establece una cuota mínima anual única de $313.26 para el impuesto predial en 2021. El texto proporcionado no incluye tabla de tasas por rangos ni tarifas diferenciadas; sólo se transcribe la cuota mínima. Se ignoran los descuentos del artículo 38 conforme a la instrucción."
+    "comentarios": "Artículo 37 establece únicamente una cuota mínima anual del impuesto predial para 2021. El texto proporcionado no contiene tabla de tasas ni rangos de valor catastral; las referencias posteriores son supuestos de aplicación de la cuota mínima y un descuento por pago anticipado, ambos ignorados para la mecánica de cálculo."
   },
   "_meta": {
     "fuente": "txt",
@@ -25,10 +26,12 @@
     "requiere_revision": false,
     "escalado": false,
     "razon": null,
+    "usado_reocr": false,
+    "usado_vision": false,
     "tokens": {
-      "input": 5197,
-      "output": 161,
-      "cached": 3840
+      "input": 6414,
+      "output": 170,
+      "cached": 5888
     },
     "cvegeo": "11035",
     "estado": "guanajuato",

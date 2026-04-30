@@ -1,11 +1,17 @@
 {
   "predial": {
-    "tipo_esquema": "otro_no_clasificado",
-    "categoria": "municipio_sin_impuesto",
-    "descripcion_estructural": "El texto no presenta una tabla tarifaria por rangos ni un esquema clasificable en las variantes esperadas. Sólo se lee una regla general: '15 centavos por m2' y, para predios destinados a producción agropecuaria, '10 al millar anual sobre el valor registrado o catastral'. No hay estructura de brackets, categorías tarifarias comparables ni una tabla desarrollable en cuota fija/progresiva/tasa única.",
-    "tabla_cruda": [],
+    "tipo_esquema": "tasa_unica",
+    "tabla": [
+      {
+        "descripcion": "Impuesto predial por superficie del predio causante",
+        "tasa": 0.15,
+        "base_calculo": "superficie_m2",
+        "unidad": "por_metro_cuadrado",
+        "cuota_fija_adicional": null
+      }
+    ],
     "minimo_predial": null,
-    "comentarios": "Se omitió el descuento del artículo 14 por instrucción. La referencia a predios agropecuarios constituye una tarifa paralela sobre un grupo distinto, pero el fragmento no aporta una tabla estructurada para clasificarla en las seis variantes principales."
+    "comentarios": "Art. 13: el predial se causa anualmente en razón de 15 centavos por m2 que tenga la extensión del predio causante. El mismo artículo también establece una tarifa secundaria paralela: todo predio destinado a la producción agropecuaria paga 10 al millar anual sobre el valor registrado o catastral; se documenta sólo en comentarios por tratarse de una tarifa secundaria/paralela."
   },
   "_meta": {
     "fuente": "txt",
@@ -13,13 +19,15 @@
   },
   "_meta_v2": {
     "intentos": 2,
-    "requiere_revision": true,
+    "requiere_revision": false,
     "escalado": false,
-    "razon": "clasificado_como_otro_no_clasificado",
+    "razon": null,
+    "usado_reocr": false,
+    "usado_vision": false,
     "tokens": {
-      "input": 10796,
-      "output": 497,
-      "cached": 8704
+      "input": 13441,
+      "output": 437,
+      "cached": 11776
     },
     "cvegeo": "31064",
     "estado": "yucatan",

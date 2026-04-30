@@ -4,39 +4,31 @@
     "tabla": [
       {
         "grupo": "urbano",
-        "clave": "urbanos_y_suburbanos_con_edificaciones",
-        "descripcion": "Inmuebles urbanos y suburbanos con edificaciones",
+        "clave": "inmuebles_urbanos_y_suburbanos_con_edificaciones",
+        "descripcion": "Inmuebles urbanos y suburbanos con edificaciones; tasa anual al millar según antigüedad del valor determinado o modificado",
         "tasa_millar": 0.0024,
         "periodicidad": "anual",
         "cuota_fija_adicional": null
       },
       {
         "grupo": "urbano",
-        "clave": "urbanos_y_suburbanos_sin_edificaciones",
-        "descripcion": "Inmuebles urbanos y suburbanos sin edificaciones",
+        "clave": "inmuebles_urbanos_y_suburbanos_sin_edificaciones",
+        "descripcion": "Inmuebles urbanos y suburbanos sin edificaciones; tasa anual al millar según antigüedad del valor determinado o modificado",
         "tasa_millar": 0.0045,
         "periodicidad": "anual",
         "cuota_fija_adicional": null
       },
       {
         "grupo": "rustico",
-        "clave": "rusticos_con_edificaciones",
-        "descripcion": "Inmuebles rústicos con edificaciones",
-        "tasa_millar": 0.0018,
-        "periodicidad": "anual",
-        "cuota_fija_adicional": null
-      },
-      {
-        "grupo": "rustico",
-        "clave": "rusticos_sin_edificaciones",
-        "descripcion": "Inmuebles rústicos sin edificaciones",
+        "clave": "inmuebles_rusticos",
+        "descripcion": "Inmuebles rústicos; tasa anual al millar según antigüedad del valor determinado o modificado",
         "tasa_millar": 0.0018,
         "periodicidad": "anual",
         "cuota_fija_adicional": null
       }
     ],
     "minimo_predial": null,
-    "comentarios": "Art. 4 establece tasas anuales al millar por tipo de inmueble y condición de edificación. La mecánica del impuesto predial es una tarifa categórica, no por rangos de valor catastral. Artículos 5 y 6 contienen valores unitarios y criterios de avalúo para determinar la base, pero no modifican la forma tarifaria. No se incorporan descuentos, recargos ni bonificaciones."
+    "comentarios": "Artículo 4 contiene una tabla de tasas al millar por tipo de inmueble y por antigüedad del valor catastral/modificado: a la entrada en vigor y durante 2002-2021 inclusive, 2.4 al millar para urbanos y suburbanos con edificaciones, 4.5 al millar para urbanos y suburbanos sin edificaciones, y 1.8 al millar para rústicos; para anteriores a 2002 hasta 1993: 8, 15 y 6 al millar, respectivamente; para anteriores a 1993: 13, 13 y 12 al millar. Como la mecánica está organizada por tasas categóricas sin rangos de valor catastral, se captura como tarifa_millar. Las tablas de valores unitarios de terreno y construcción de los artículos 5 y 6 no se transcriben porque son valores catastrales, no tarifa. No se detecta mínimo predial en el texto proporcionado."
   },
   "_meta": {
     "fuente": "txt",
@@ -47,10 +39,12 @@
     "requiere_revision": false,
     "escalado": false,
     "razon": null,
+    "usado_reocr": false,
+    "usado_vision": false,
     "tokens": {
-      "input": 7447,
-      "output": 347,
-      "cached": 3840
+      "input": 8664,
+      "output": 468,
+      "cached": 5888
     },
     "cvegeo": "11037",
     "estado": "guanajuato",

@@ -3,32 +3,40 @@
     "tipo_esquema": "tarifa_millar",
     "tabla": [
       {
-        "grupo": "urbano",
-        "clave": "inmuebles_urbanos_y_suburbanos_con_edificaciones",
-        "descripcion": "Inmuebles urbanos y suburbanos con valor determinado / edificaciones",
+        "grupo": "general",
+        "clave": "urbanos_y_suburbanos_con_edificacion",
+        "descripcion": "Inmuebles urbanos y suburbanos con valor determinado modificados, con edificaciones",
         "tasa_millar": 0.0024,
         "periodicidad": "anual",
         "cuota_fija_adicional": null
       },
       {
-        "grupo": "urbano",
-        "clave": "inmuebles_urbanos_y_suburbanos_sin_edificaciones",
-        "descripcion": "Inmuebles urbanos y suburbanos sin edificaciones",
+        "grupo": "general",
+        "clave": "urbanos_y_suburbanos_sin_edificacion",
+        "descripcion": "Inmuebles urbanos y suburbanos con valor determinado modificados, sin edificaciones",
         "tasa_millar": 0.0045,
         "periodicidad": "anual",
         "cuota_fija_adicional": null
       },
       {
         "grupo": "rustico",
-        "clave": "inmuebles_rusticos",
-        "descripcion": "Inmuebles rústicos",
+        "clave": "rusticos_con_edificacion",
+        "descripcion": "Inmuebles rústicos con valor determinado modificados, con edificaciones",
+        "tasa_millar": 0.0018,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "rustico",
+        "clave": "rusticos_sin_edificacion",
+        "descripcion": "Inmuebles rústicos con valor determinado modificados, sin edificaciones",
         "tasa_millar": 0.0018,
         "periodicidad": "anual",
         "cuota_fija_adicional": null
       }
     ],
     "minimo_predial": null,
-    "comentarios": "Art. 4: tasas anuales al millar para predios urbanos y suburbanos (con edificaciones 2.4 al millar; sin edificaciones 4.5 al millar) y para inmuebles rústicos 1.8 al millar. No se clasifica como progresivo porque el texto de tasa del predial no está estructurado por rangos de valor catastral; la tabla de Art. 5 corresponde a valores unitarios de catastro, no a la mecánica del impuesto."
+    "comentarios": "Art. 4: la tasa del impuesto predial es categórica por tipo de inmueble y condición de edificación. Se transcribe la tabla como aparece en la ley; se observa un renglón para inmuebles urbanos y suburbanos con/sin edificaciones, y otro para inmuebles rústicos con/sin edificios. El Art. 5 contiene valores unitarios catastrales para avalúo, no la mecánica tarifaria del impuesto."
   },
   "_meta": {
     "fuente": "txt",
@@ -39,10 +47,12 @@
     "requiere_revision": false,
     "escalado": false,
     "razon": null,
+    "usado_reocr": false,
+    "usado_vision": false,
     "tokens": {
-      "input": 7485,
-      "output": 325,
-      "cached": 3840
+      "input": 8702,
+      "output": 376,
+      "cached": 5888
     },
     "cvegeo": "11029",
     "estado": "guanajuato",

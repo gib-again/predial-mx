@@ -1,20 +1,17 @@
 {
   "predial": {
-    "tipo_esquema": "otro_no_clasificado",
-    "categoria": "estructura_no_estandar",
-    "descripcion_estructural": "El artículo establece dos mecánicas distintas de impuesto predial sobre bases de cálculo diferentes: una cuota de 15 centavos por m2 de extensión del predio causante y, separadamente, una tasa de 10 al millar anual sobre el valor registrado o catastral para predios destinados a la producción agropecuaria. Esto no encaja en las siete variantes tipadas, porque la mecánica principal no usa valor catastral ni una cuota fija simple anual, sino una tasa por superficie.",
-    "tabla_cruda": [
+    "tipo_esquema": "tasa_unica",
+    "tabla": [
       {
-        "descripcion": "Predio causante",
-        "valores": "15 centavos por m2 que tenga la extensión de predio causante"
-      },
-      {
-        "descripcion": "Predio destinado a la producción agropecuaria",
-        "valores": "10 al millar anual sobre el valor registrado o catastral"
+        "descripcion": "Impuesto predial anual de 15 centavos por m2 de extensión del predio causante",
+        "tasa": 0.15,
+        "base_calculo": "superficie_m2",
+        "unidad": "por_metro_cuadrado",
+        "cuota_fija_adicional": null
       }
     ],
     "minimo_predial": null,
-    "comentarios": "Artículo 13. Se ignora el descuento del 20 % del artículo 14 por ser beneficio de pago anticipado y no formar parte de la mecánica base del impuesto."
+    "comentarios": "La mecánica principal del impuesto predial se establece como una cuota por superficie: 15 centavos por m2 anuales. El texto también prevé una tarifa paralela para predios destinados a la producción agropecuaria de 10 al millar anual sobre el valor registrado o catastral, con tope conforme a la legislación agraria federal para terrenos ejidales; no se incluye en la tabla principal por tratarse de una tarifa separada para un grupo distinto de predios."
   },
   "_meta": {
     "fuente": "txt",
@@ -22,13 +19,15 @@
   },
   "_meta_v2": {
     "intentos": 3,
-    "requiere_revision": true,
+    "requiere_revision": false,
     "escalado": true,
-    "razon": "clasificado_como_otro_no_clasificado_tras_escalacion",
+    "razon": "escalado_a_gpt-5.4_tras_2x_mini_fallido",
+    "usado_reocr": false,
+    "usado_vision": false,
     "tokens": {
-      "input": 16040,
-      "output": 734,
-      "cached": 13568
+      "input": 20113,
+      "output": 697,
+      "cached": 17664
     },
     "cvegeo": "31064",
     "estado": "yucatan",

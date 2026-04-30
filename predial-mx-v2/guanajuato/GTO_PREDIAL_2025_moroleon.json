@@ -45,8 +45,12 @@
         "tasa_marginal": 0.00315
       }
     ],
-    "minimo_predial": null,
-    "comentarios": "Art. 4, fracción III, inciso a): inmuebles urbanos y suburbanos con edificaciones con valores determinados o modificados durante 2002 a 2025; tabla por valor fiscal con cuota fija + tasa marginal. Fracción III, inciso b): inmuebles urbanos y suburbanos sin edificaciones con valores determinados o modificados durante 2002 a 2025; tabla por valor fiscal con cuota fija + tasa marginal. Fracción III, inciso c): inmuebles rústicos con valores determinados o modificados durante 2002 a 2025; tabla por valor fiscal con cuota fija + tasa marginal. Fracción IV contiene tasas al millar para inmuebles anteriores a 2002 y hasta 1993 / anteriores a 1993, pero se deja fuera de la tabla principal por ser tarifa paralela. El texto indica cuota mínima anual del artículo 40 si el impuesto resultara inferior, pero no se transcribe su monto porque no aparece en el segmento provisto."
+    "minimo_predial": {
+      "monto": 0.0,
+      "periodicidad": "anual",
+      "unidad": "pesos"
+    },
+    "comentarios": "Artículo 4, fracción III, inciso a): inmuebles urbanos y suburbanos con edificaciones con valores determinados o modificados durante 2002 y hasta 2025 inclusive. La mecánica principal es progresiva por valor fiscal con cuota fija + tasa marginal sobre el excedente. También existen tarifas paralelas en el propio artículo 4: inciso b) urbanos y suburbanos sin edificaciones (mismas bandas pero con cuotas/tasas distintas) e inciso c) rústicos; además, fracción IV establece tasas distintas para inmuebles con valores anteriores (8, 15, 6 al millar; 13, 12 al millar), sujetas a cuota mínima anual del artículo 40 si el resultado es menor. Esas tarifas paralelas no se mezclan en la tabla principal."
   },
   "_meta": {
     "fuente": "txt",
@@ -57,10 +61,12 @@
     "requiere_revision": false,
     "escalado": false,
     "razon": null,
+    "usado_reocr": false,
+    "usado_vision": false,
     "tokens": {
-      "input": 10783,
-      "output": 480,
-      "cached": 3840
+      "input": 12000,
+      "output": 459,
+      "cached": 5888
     },
     "cvegeo": "11021",
     "estado": "guanajuato",

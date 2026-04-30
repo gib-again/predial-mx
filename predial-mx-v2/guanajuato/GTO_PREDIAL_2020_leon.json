@@ -1,25 +1,68 @@
 {
   "predial": {
-    "tipo_esquema": "otro_no_clasificado",
-    "categoria": "segmento_vacio",
-    "descripcion_estructural": "El texto proporcionado para la sección de predial no contiene la mecánica de cálculo del impuesto: las páginas indicadas aparecen vacías de tablas tarifarias y sólo se observan encabezados, definiciones y páginas en blanco dentro del segmento extraído. No es posible identificar una tarifa, brackets, cuotas o tasas aplicables sin inventar información.",
-    "tabla_cruda": [],
+    "tipo_esquema": "progresivo",
+    "tabla": [
+      {
+        "n_rango": 1,
+        "inferior": 0.01,
+        "superior": 3104571.6,
+        "cuota_fija": 0.0,
+        "tasa_marginal": 0.00234
+      },
+      {
+        "n_rango": 2,
+        "inferior": 3104571.61,
+        "superior": 6209143.2,
+        "cuota_fija": 7264.7,
+        "tasa_marginal": 0.00257
+      },
+      {
+        "n_rango": 3,
+        "inferior": 6209143.21,
+        "superior": 12418286.4,
+        "cuota_fija": 15243.45,
+        "tasa_marginal": 0.00281
+      },
+      {
+        "n_rango": 4,
+        "inferior": 12418286.41,
+        "superior": 24836572.8,
+        "cuota_fija": 32691.14,
+        "tasa_marginal": 0.00304
+      },
+      {
+        "n_rango": 5,
+        "inferior": 24836572.81,
+        "superior": 49673145.6,
+        "cuota_fija": 70442.73,
+        "tasa_marginal": 0.00328
+      },
+      {
+        "n_rango": 6,
+        "inferior": 49673145.61,
+        "superior": null,
+        "cuota_fija": 151906.69,
+        "tasa_marginal": 0.00351
+      }
+    ],
     "minimo_predial": null,
-    "comentarios": "Se requiere el cuerpo tarifario del artículo correspondiente; el segmento visible no muestra la mecánica del impuesto predial."
+    "comentarios": "Art. 5, fracción I, inciso a: inmuebles urbanos, suburbanos y rústicos con edificaciones; Art. 5, fracción II, inciso a: inmuebles urbanos, suburbanos y rústicos con edificaciones; Art. 5, fracción III: inmuebles con valor determinado o modificado antes del 31 de diciembre de 2006 para urbanos, suburbanos y rústicos con edificaciones pagan 0.681% fija, pero no se integra a la tabla principal por coexistir con otra mecánica independiente. El texto también contiene tablas distintas para predios sin edificaciones y tasas por superficie; se omiten aquí por ser estructuras paralelas o heterogéneas no consolidadas en esta tabla principal."
   },
   "_meta": {
-    "fuente": "txt",
+    "fuente": "pdf_reocr",
     "modelo": "gpt-5.4-mini"
   },
   "_meta_v2": {
-    "intentos": 1,
-    "requiere_revision": true,
+    "intentos": 2,
+    "requiere_revision": false,
     "escalado": false,
-    "razon": "clasificado_como_otro_no_clasificado",
+    "razon": "rescate_via_reocr",
+    "usado_reocr": true,
+    "usado_vision": false,
     "tokens": {
-      "input": 6284,
-      "output": 151,
-      "cached": 3840
+      "input": 20461,
+      "output": 574,
+      "cached": 11776
     },
     "cvegeo": "11020",
     "estado": "guanajuato",

@@ -3,28 +3,31 @@
     "tipo_esquema": "tasa_unica",
     "tabla": [
       {
-        "descripcion": "Impuesto predial general por secciones 1 a 5",
-        "tasa": 0.25,
+        "descripcion": "Predios en secciones 1 a 5 y comisarías",
+        "tasa": 0.0025,
         "base_calculo": "valor_catastral",
-        "unidad": "porcentaje"
+        "unidad": "porcentaje",
+        "cuota_fija_adicional": null
       }
     ],
     "minimo_predial": null,
-    "comentarios": "El texto establece para las secciones 1 a 5 la misma tasa de 0.25% sobre el valor catastral. Se elige como tabla principal por ser la tarifa general del impuesto predial. Tarifas paralelas no incluidas en la tabla principal: para terrenos iguales o superiores a una hectárea se cobra cuota fija de 190.00 por hectárea, y para terrenos rústicos con giro comercial cuota fija de 300.00 por hectárea; cuando no pueda determinarse el valor catastral se cobra cuota fija de 100.00 para terrenos con construcción y 80.00 para terrenos sin construcción; todo predio destinado a la producción agropecuaria paga 10 al millar anual sobre el valor registrado o catastral. No se incluyen por corresponder a supuestos específicos y tarifas paralelas al esquema general."
+    "comentarios": "Art. 13: la base del impuesto predial es el valor catastral del inmueble y se aplica una tasa uniforme de 0.25% para las secciones 1 a 5; además, el mismo artículo establece tarifas paralelas/alternas para casos específicos: terrenos iguales o superiores a una hectárea $190.00 por hectárea; terrenos rústicos con giro comercial $300.00 por hectárea; cuando no pueda determinarse el valor catastral, $100.00 con construcción y $80.00 sin construcción; y predios destinados a producción agropecuaria 10 al millar anual sobre el valor registrado o catastral. Art. 15: el impuesto predial con base en rentas o frutos civiles se causa a 2% para casa habitación y 2% para actividades comerciales; se documenta como tarifa secundaria por tratarse de una mecánica distinta a la principal basada en valor catastral."
   },
   "_meta": {
     "fuente": "txt",
-    "modelo": "gpt-5.4"
+    "modelo": "gpt-5.4-mini"
   },
   "_meta_v2": {
-    "intentos": 3,
+    "intentos": 2,
     "requiere_revision": false,
-    "escalado": true,
-    "razon": "escalado_a_gpt-5.4_tras_2x_mini_fallido",
+    "escalado": false,
+    "razon": null,
+    "usado_reocr": false,
+    "usado_vision": false,
     "tokens": {
-      "input": 19475,
-      "output": 1529,
-      "cached": 13568
+      "input": 15453,
+      "output": 601,
+      "cached": 11776
     },
     "cvegeo": "31051",
     "estado": "yucatan",
