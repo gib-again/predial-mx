@@ -73,6 +73,15 @@ CVE_ENT = {
     "queretaro": "22", "yucatan": "31", "tamaulipas": "28",
 }
 
+# Munis donde gpt-5.4-mini interpreta sistemáticamente mal — invocar gpt-5.4
+# desde el primer intento (P-04 del HITL pasada 2). Si entran por
+# --from-bitacora --patron P-04 también se activa automáticamente.
+P04_MUNIS = {
+    ("yucatan", "tepakan"),
+    ("yucatan", "kaua"),
+    ("guanajuato", "purisima_del_rincon"),
+}
+
 
 def _slug_to_cvegeo(estado: str) -> dict[str, str]:
     cve_ent = CVE_ENT[estado]
@@ -208,6 +217,9 @@ def main() -> int:
                     help="Con --from-bitacora: solo pendientes (no revisados)")
     ap.add_argument("--patron", default=None,
                     help="Filtrar por patrón (ej. P-01, P-09)")
+    ap.add_argument("--force-full-model", action="store_true",
+                    help="Forzar gpt-5.4 desde el primer intento (skip mini). "
+                         "Auto-activa para munis en P04_MUNIS o cuando --patron=P-04.")
     ap.add_argument("--dry-run", action="store_true",
                     help="Mostrar qué se procesaría sin invocar LLM")
     ap.add_argument("--no-rebuild-csv", action="store_true",
@@ -247,16 +259,31 @@ def main() -> int:
     grand_in = grand_out = grand_cached = 0
     grand_cost = 0.0
 
+    # Determinar si --patron P-04 fue solicitado (para auto-force-full-model)
+    patron_is_p04 = (args.patron or "").upper() == "P-04"
+
     for i, (estado, slug, cvegeo, anios) in enumerate(sorted(targets), 1):
         prefijo = PREFIJOS_ESTADO[estado]
+
+        # Decidir si se fuerza gpt-5.4 para este muni
+        force_full = (
+            args.force_full_model
+            or patron_is_p04
+            or (estado, slug) in P04_MUNIS
+        )
+        ff_tag = "  [FORCE_FULL]" if force_full else ""
         print(f"\n[{i}/{len(targets)}] {estado}/{slug} (cvegeo {cvegeo}, "
-              f"{len(anios)} años: {anios[0]}–{anios[-1]})")
+              f"{len(anios)} años: {anios[0]}–{anios[-1]}){ff_tag}")
 
         # Snapshot tipos previos
         tipos_antes = {a: _load_existing_tipo(estado, prefijo, a, slug) for a in anios}
 
         try:
-            results = extraer_municipio(estado, cvegeo, anios, slug_override=slug)
+            results = extraer_municipio(
+                estado, cvegeo, anios,
+                slug_override=slug,
+                force_full_model=force_full,
+            )
         except Exception as e:
             print(f"  [ERROR] {type(e).__name__}: {e}")
             continue

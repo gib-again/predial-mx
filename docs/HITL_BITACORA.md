@@ -63,13 +63,43 @@ campos automáticamente y propongo fixes basados en los patrones acumulados.
 > Acumula aquí los hallazgos transversales que afectan a múltiples casos.
 > Cada `P-XX` representa un cambio de código pendiente.
 
-### P-00: ejemplo (borra al agregar el primero)
+### P-00: 
+- **casos**:
+- **diagnostico**: La seccion no contiene información sobre tasas predial, solo menciona una cuota fija y excedente 
+- **fix_propuesto**: dejar en blanco, esperar recuperación por imputación
+- **prioridad**: baja
+- **estado**: pending 
 
-- **casos**: estado/slug/anio, …
-- **diagnostico**: descripción del patrón
-- **fix_propuesto**: qué cambiar (prompt, schema, segment, etc.)
-- **prioridad**: alta · media · baja
-- **estado**: pending · in_progress · done
+### P-01
+
+- **casos**: 
+- **diagnostico**: Error puro de segmentación, la sección mostrada no contiene esquema de cobro
+- **fix_propuesto**: mejorar segment.py y volver a realizar segmentación
+- **prioridad**: media
+- **estado**: pending
+
+### P-02
+
+- **casos**: 
+- **diagnostico**: Error de segmentación causado por mal OCR, la sección mostrada no contiene esquema de cobro pero se encontró que el OCR deja de funcionar en las primeras paginas
+- **fix_propuesto**:volver a ejecutar OCR y volver a realizar segmentación
+- **prioridad**: alta
+- **estado**: pending
+
+### P-03
+- **casos**: 
+- **diagnostico**: La segmentación parece ser correcta, pero omite la tabla progresiva asociada. Está disponible en el recorte de PDF
+- **fix_propuesto**:usar modelo de vision
+- **prioridad**: media
+- **estado**: pending
+
+### P-04
+
+- **casos**: 
+- **diagnostico**: 
+- **fix_propuesto**:usar modelo gpt-5.4
+- **prioridad**: media
+- **estado**: pending
 
 ---
 
@@ -112,13 +142,13 @@ campos automáticamente y propongo fixes basados en los patrones acumulados.
 
 **Revisión**:
 
-- [ ] revisado
-- veredicto: 
-- tipo_correcto: 
-- causa_raiz: 
-- patron: 
-- notas: 
-- accion: 
+- [ x] revisado
+- veredicto:invalido 
+- tipo_correcto: n/a 
+- causa_raiz: segmentacion
+- patron: P-01
+- notas: El recorte corresponde a un segmento del municipio Morelos
+- accion: volver a segmentar, mejorar segment.py
 
 ---
 
@@ -133,13 +163,13 @@ campos automáticamente y propongo fixes basados en los patrones acumulados.
 
 **Revisión**:
 
-- [ ] revisado
-- veredicto: 
-- tipo_correcto: 
-- causa_raiz: 
-- patron: 
-- notas: 
-- accion: 
+- [ x] revisado
+- veredicto:invalido 
+- tipo_correcto: n/a 
+- causa_raiz: segmentacion
+- patron: P-01
+- notas: El recorte corresponde a un segmento del municipio Morelos
+- accion: volver a segmentar, mejorar segment.py
 
 ---
 
@@ -154,13 +184,13 @@ campos automáticamente y propongo fixes basados en los patrones acumulados.
 
 **Revisión**:
 
-- [ ] revisado
-- veredicto: 
-- tipo_correcto: 
-- causa_raiz: 
-- patron: 
-- notas: 
-- accion: 
+- [ x] revisado
+- veredicto:invalido 
+- tipo_correcto: n/a 
+- causa_raiz: segmentacion
+- patron: P-01
+- notas: El recorte corresponde a un segmento del municipio Morelos
+- accion: volver a segmentar, mejorar segment.py
 
 ---
 
@@ -175,13 +205,13 @@ campos automáticamente y propongo fixes basados en los patrones acumulados.
 
 **Revisión**:
 
-- [ ] revisado
-- veredicto: 
-- tipo_correcto: 
-- causa_raiz: 
-- patron: 
-- notas: 
-- accion: 
+- [ x] revisado
+- veredicto: invalido 
+- tipo_correcto: n/a
+- causa_raiz: ocr, segmentacion
+- patron: P-02
+- notas: solo primeras paginas aptas para busqueda por text, segmentación incorrecta. Problema similar otro ya corregido con HITL previo. 
+- accion: implementar re-ocr + segmentacion 
 
 ---
 
@@ -196,13 +226,13 @@ campos automáticamente y propongo fixes basados en los patrones acumulados.
 
 **Revisión**:
 
-- [ ] revisado
-- veredicto: 
-- tipo_correcto: 
-- causa_raiz: 
-- patron: 
-- notas: 
-- accion: 
+- [ x] revisado
+- veredicto: invalido 
+- tipo_correcto: n/a
+- causa_raiz: ocr, segmentacion
+- patron: P-02
+- notas: solo primeras paginas aptas para busqueda por text, segmentación incorrecta. Problema similar otro ya corregido con HITL previo. 
+- accion: implementar re-ocr + segmentacion 
 
 ---
 
@@ -217,13 +247,13 @@ campos automáticamente y propongo fixes basados en los patrones acumulados.
 
 **Revisión**:
 
-- [ ] revisado
-- veredicto: 
-- tipo_correcto: 
-- causa_raiz: 
-- patron: 
-- notas: 
-- accion: 
+- [ x] revisado
+- veredicto: invalido 
+- tipo_correcto: n/a
+- causa_raiz: ocr, segmentacion
+- patron: P-02
+- notas: solo primeras paginas aptas para busqueda por text, segmentación incorrecta. Problema similar otro ya corregido con HITL previo. 
+- accion: implementar re-ocr + segmentacion 
 
 ---
 
@@ -238,13 +268,13 @@ campos automáticamente y propongo fixes basados en los patrones acumulados.
 
 **Revisión**:
 
-- [ ] revisado
-- veredicto: 
-- tipo_correcto: 
-- causa_raiz: 
-- patron: 
-- notas: 
-- accion: 
+- [ x] revisado
+- veredicto: invalido 
+- tipo_correcto: n/a
+- causa_raiz: ocr, segmentacion
+- patron: P-02
+- notas: solo primeras paginas aptas para busqueda por text, segmentación incorrecta. Problema similar otro ya corregido con HITL previo. 
+- accion: implementar re-ocr + segmentacion 
 
 ---
 
@@ -259,13 +289,13 @@ campos automáticamente y propongo fixes basados en los patrones acumulados.
 
 **Revisión**:
 
-- [ ] revisado
-- veredicto: 
-- tipo_correcto: 
-- causa_raiz: 
-- patron: 
-- notas: 
-- accion: 
+- [ x] revisado
+- veredicto: invalido 
+- tipo_correcto: n/a
+- causa_raiz: ocr, segmentacion
+- patron: P-02
+- notas: solo primeras paginas aptas para busqueda por text, segmentación incorrecta. Problema similar otro ya corregido con HITL previo. 
+- accion: implementar re-ocr + segmentacion 
 
 ---
 
@@ -280,13 +310,13 @@ campos automáticamente y propongo fixes basados en los patrones acumulados.
 
 **Revisión**:
 
-- [ ] revisado
-- veredicto: 
-- tipo_correcto: 
-- causa_raiz: 
-- patron: 
-- notas: 
-- accion: 
+- [ x] revisado
+- veredicto: invalido 
+- tipo_correcto: n/a
+- causa_raiz: ocr, segmentacion
+- patron: P-02
+- notas: solo primeras paginas aptas para busqueda por text, segmentación incorrecta. Problema similar otro ya corregido con HITL previo. 
+- accion: implementar re-ocr + segmentacion 
 
 ---
 
@@ -301,13 +331,13 @@ campos automáticamente y propongo fixes basados en los patrones acumulados.
 
 **Revisión**:
 
-- [ ] revisado
-- veredicto: 
-- tipo_correcto: 
-- causa_raiz: 
-- patron: 
-- notas: 
-- accion: 
+- [ x] revisado
+- veredicto: invalido 
+- tipo_correcto: n/a
+- causa_raiz: ocr, segmentacion
+- patron: P-02
+- notas: solo primeras paginas aptas para busqueda por text, segmentación incorrecta. Problema similar otro ya corregido con HITL previo. 
+- accion: implementar re-ocr + segmentacion 
 
 ---
 
@@ -322,13 +352,13 @@ campos automáticamente y propongo fixes basados en los patrones acumulados.
 
 **Revisión**:
 
-- [ ] revisado
-- veredicto: 
-- tipo_correcto: 
-- causa_raiz: 
-- patron: 
-- notas: 
-- accion: 
+- [ x] revisado
+- veredicto: invalido 
+- tipo_correcto: n/a
+- causa_raiz: ocr, segmentacion
+- patron: P-02
+- notas: solo primeras paginas aptas para busqueda por text, segmentación incorrecta. Problema similar otro ya corregido con HITL previo. 
+- accion: implementar re-ocr + segmentacion 
 
 ---
 
@@ -343,13 +373,13 @@ campos automáticamente y propongo fixes basados en los patrones acumulados.
 
 **Revisión**:
 
-- [ ] revisado
-- veredicto: 
-- tipo_correcto: 
-- causa_raiz: 
-- patron: 
-- notas: 
-- accion: 
+- [ x] revisado
+- veredicto: invalido 
+- tipo_correcto: n/a
+- causa_raiz: ocr, segmentacion
+- patron: P-02
+- notas: solo primeras paginas aptas para busqueda por text, segmentación incorrecta. Problema similar otro ya corregido con HITL previo. 
+- accion: implementar re-ocr + segmentacion 
 
 ---
 
@@ -364,13 +394,13 @@ campos automáticamente y propongo fixes basados en los patrones acumulados.
 
 **Revisión**:
 
-- [ ] revisado
-- veredicto: 
-- tipo_correcto: 
-- causa_raiz: 
-- patron: 
-- notas: 
-- accion: 
+- [ x] revisado
+- veredicto: invalido 
+- tipo_correcto: n/a
+- causa_raiz: ocr, segmentacion
+- patron: P-02
+- notas: solo primeras paginas aptas para busqueda por text, segmentación incorrecta. Problema similar otro ya corregido con HITL previo. 
+- accion: implementar re-ocr + segmentacion 
 
 ---
 
@@ -385,13 +415,13 @@ campos automáticamente y propongo fixes basados en los patrones acumulados.
 
 **Revisión**:
 
-- [ ] revisado
-- veredicto: 
-- tipo_correcto: 
-- causa_raiz: 
-- patron: 
-- notas: 
-- accion: 
+- [ x] revisado
+- veredicto: invalido 
+- tipo_correcto: n/a
+- causa_raiz: ocr, segmentacion
+- patron: P-02
+- notas: solo primeras paginas aptas para busqueda por text, segmentación incorrecta. Problema similar otro ya corregido con HITL previo. 
+- accion: implementar re-ocr + segmentacion 
 
 ---
 
@@ -406,13 +436,13 @@ campos automáticamente y propongo fixes basados en los patrones acumulados.
 
 **Revisión**:
 
-- [ ] revisado
-- veredicto: 
-- tipo_correcto: 
-- causa_raiz: 
-- patron: 
-- notas: 
-- accion: 
+- [ x] revisado
+- veredicto: invalido 
+- tipo_correcto: n/a
+- causa_raiz: ocr, segmentacion
+- patron: P-02
+- notas: solo primeras paginas aptas para busqueda por text, segmentación incorrecta. Problema similar otro ya corregido con HITL previo. 
+- accion: implementar re-ocr + segmentacion 
 
 ---
 
@@ -427,13 +457,13 @@ campos automáticamente y propongo fixes basados en los patrones acumulados.
 
 **Revisión**:
 
-- [ ] revisado
-- veredicto: 
-- tipo_correcto: 
-- causa_raiz: 
-- patron: 
-- notas: 
-- accion: 
+- [ x] revisado
+- veredicto: invalido 
+- tipo_correcto: n/a
+- causa_raiz: ocr, segmentacion
+- patron: P-02
+- notas: solo primeras paginas aptas para busqueda por text, segmentación incorrecta. Problema similar otro ya corregido con HITL previo. 
+- accion: implementar re-ocr + segmentacion 
 
 ---
 
@@ -448,13 +478,13 @@ campos automáticamente y propongo fixes basados en los patrones acumulados.
 
 **Revisión**:
 
-- [ ] revisado
-- veredicto: 
-- tipo_correcto: 
-- causa_raiz: 
-- patron: 
-- notas: 
-- accion: 
+- [ x] revisado
+- veredicto: invalido 
+- tipo_correcto: n/a
+- causa_raiz: ocr, segmentacion
+- patron: P-02
+- notas: solo primeras paginas aptas para busqueda por text, segmentación incorrecta. Problema similar otro ya corregido con HITL previo. 
+- accion: implementar re-ocr + segmentacion 
 
 ---
 
@@ -469,13 +499,13 @@ campos automáticamente y propongo fixes basados en los patrones acumulados.
 
 **Revisión**:
 
-- [ ] revisado
-- veredicto: 
-- tipo_correcto: 
-- causa_raiz: 
-- patron: 
-- notas: 
-- accion: 
+- [ x] revisado
+- veredicto: invalido 
+- tipo_correcto: n/a
+- causa_raiz: ocr, segmentacion
+- patron: P-02
+- notas: solo primeras paginas aptas para busqueda por text, segmentación incorrecta. Problema similar otro ya corregido con HITL previo. 
+- accion: implementar re-ocr + segmentacion 
 
 ---
 
@@ -490,13 +520,13 @@ campos automáticamente y propongo fixes basados en los patrones acumulados.
 
 **Revisión**:
 
-- [ ] revisado
-- veredicto: 
-- tipo_correcto: 
-- causa_raiz: 
-- patron: 
-- notas: 
-- accion: 
+- [ x] revisado
+- veredicto: invalido 
+- tipo_correcto: n/a
+- causa_raiz: ocr, segmentacion
+- patron: P-02
+- notas: solo primeras paginas aptas para busqueda por text, segmentación incorrecta. Problema similar otro ya corregido con HITL previo. 
+- accion: implementar re-ocr + segmentacion 
 
 ---
 
@@ -511,13 +541,13 @@ campos automáticamente y propongo fixes basados en los patrones acumulados.
 
 **Revisión**:
 
-- [ ] revisado
-- veredicto: 
-- tipo_correcto: 
-- causa_raiz: 
-- patron: 
-- notas: 
-- accion: 
+- [ x] revisado
+- veredicto: invalido 
+- tipo_correcto: n/a
+- causa_raiz: ocr, segmentacion
+- patron: P-02
+- notas: solo primeras paginas aptas para busqueda por text, segmentación incorrecta. Problema similar otro ya corregido con HITL previo. 
+- accion: implementar re-ocr + segmentacion 
 
 ---
 
@@ -532,13 +562,13 @@ campos automáticamente y propongo fixes basados en los patrones acumulados.
 
 **Revisión**:
 
-- [ ] revisado
-- veredicto: 
-- tipo_correcto: 
-- causa_raiz: 
-- patron: 
-- notas: 
-- accion: 
+- [ x] revisado
+- veredicto: invalido 
+- tipo_correcto: n/a
+- causa_raiz: ocr, segmentacion
+- patron: P-02
+- notas: solo primeras paginas aptas para busqueda por text, segmentación incorrecta. Problema similar otro ya corregido con HITL previo. 
+- accion: implementar re-ocr + segmentacion 
 
 ---
 
@@ -553,13 +583,13 @@ campos automáticamente y propongo fixes basados en los patrones acumulados.
 
 **Revisión**:
 
-- [ ] revisado
-- veredicto: 
-- tipo_correcto: 
-- causa_raiz: 
-- patron: 
-- notas: 
-- accion: 
+- [ x] revisado
+- veredicto: invalido 
+- tipo_correcto: n/a
+- causa_raiz: ocr, segmentacion
+- patron: P-02
+- notas: solo primeras paginas aptas para busqueda por text, segmentación incorrecta. Problema similar otro ya corregido con HITL previo. 
+- accion: implementar re-ocr + segmentacion 
 
 ---
 
@@ -574,13 +604,13 @@ campos automáticamente y propongo fixes basados en los patrones acumulados.
 
 **Revisión**:
 
-- [ ] revisado
-- veredicto: 
-- tipo_correcto: 
-- causa_raiz: 
-- patron: 
-- notas: 
-- accion: 
+- [ x] revisado
+- veredicto: invalido 
+- tipo_correcto: n/a
+- causa_raiz: ocr, segmentacion
+- patron: P-02
+- notas: solo primeras paginas aptas para busqueda por text, segmentación incorrecta. Problema similar otro ya corregido con HITL previo. 
+- accion: implementar re-ocr + segmentacion 
 
 ---
 
@@ -595,13 +625,13 @@ campos automáticamente y propongo fixes basados en los patrones acumulados.
 
 **Revisión**:
 
-- [ ] revisado
-- veredicto: 
-- tipo_correcto: 
-- causa_raiz: 
-- patron: 
-- notas: 
-- accion: 
+- [ x] revisado
+- veredicto: invalido 
+- tipo_correcto: n/a
+- causa_raiz: ocr, segmentacion
+- patron: P-02
+- notas: solo primeras paginas aptas para busqueda por text, segmentación incorrecta. Problema similar otro ya corregido con HITL previo. 
+- accion: implementar re-ocr + segmentacion 
 
 ---
 
@@ -616,13 +646,13 @@ campos automáticamente y propongo fixes basados en los patrones acumulados.
 
 **Revisión**:
 
-- [ ] revisado
-- veredicto: 
-- tipo_correcto: 
-- causa_raiz: 
-- patron: 
-- notas: 
-- accion: 
+- [ x] revisado
+- veredicto: invalido 
+- tipo_correcto: n/a
+- causa_raiz: ocr, segmentacion
+- patron: P-02
+- notas: solo primeras paginas aptas para busqueda por text, segmentación incorrecta. Problema similar otro ya corregido con HITL previo. 
+- accion: implementar re-ocr + segmentacion 
 
 ---
 
@@ -637,13 +667,13 @@ campos automáticamente y propongo fixes basados en los patrones acumulados.
 
 **Revisión**:
 
-- [ ] revisado
-- veredicto: 
-- tipo_correcto: 
-- causa_raiz: 
-- patron: 
-- notas: 
-- accion: 
+- [ x] revisado
+- veredicto: invalido 
+- tipo_correcto: n/a
+- causa_raiz: ocr, segmentacion
+- patron: P-02
+- notas: solo primeras paginas aptas para busqueda por text, segmentación incorrecta. Problema similar otro ya corregido con HITL previo. 
+- accion: implementar re-ocr + segmentacion 
 
 ---
 
@@ -658,13 +688,13 @@ campos automáticamente y propongo fixes basados en los patrones acumulados.
 
 **Revisión**:
 
-- [ ] revisado
-- veredicto: 
-- tipo_correcto: 
-- causa_raiz: 
-- patron: 
-- notas: 
-- accion: 
+- [ x] revisado
+- veredicto: invalido 
+- tipo_correcto: n/a
+- causa_raiz: ocr, segmentacion
+- patron: P-02
+- notas: solo primeras paginas aptas para busqueda por text, segmentación incorrecta. Problema similar otro ya corregido con HITL previo. 
+- accion: implementar re-ocr + segmentacion 
 
 ---
 
@@ -679,13 +709,13 @@ campos automáticamente y propongo fixes basados en los patrones acumulados.
 
 **Revisión**:
 
-- [ ] revisado
-- veredicto: 
-- tipo_correcto: 
-- causa_raiz: 
-- patron: 
-- notas: 
-- accion: 
+- [ x] revisado
+- veredicto: invalido 
+- tipo_correcto: n/a
+- causa_raiz: ocr, segmentacion
+- patron: P-02
+- notas: solo primeras paginas aptas para busqueda por text, segmentación incorrecta. Problema similar otro ya corregido con HITL previo. 
+- accion: implementar re-ocr + segmentacion 
 
 ---
 
@@ -700,13 +730,13 @@ campos automáticamente y propongo fixes basados en los patrones acumulados.
 
 **Revisión**:
 
-- [ ] revisado
-- veredicto: 
-- tipo_correcto: 
-- causa_raiz: 
-- patron: 
-- notas: 
-- accion: 
+- [ x] revisado
+- veredicto: invalido 
+- tipo_correcto: progresivo
+- causa_raiz: segment
+- patron: P-01
+- notas: error puro de segmentación, tarifas en pagina 155 de 2009-12-29_suplemento.pdf
+- accion: re-segment, mejorar segment.py
 
 ---
 
@@ -721,13 +751,13 @@ campos automáticamente y propongo fixes basados en los patrones acumulados.
 
 **Revisión**:
 
-- [ ] revisado
-- veredicto: 
-- tipo_correcto: 
-- causa_raiz: 
-- patron: 
-- notas: 
-- accion: 
+- [ x] revisado
+- veredicto: invalido 
+- tipo_correcto: progresivo
+- causa_raiz: segment
+- patron: P-01
+- notas: error puro de segmentación, tarifas en pagina 402 de 2010-12-29_suplemento.pdf
+- accion: re-segment, mejorar segment.py
 
 ---
 
@@ -744,13 +774,13 @@ campos automáticamente y propongo fixes basados en los patrones acumulados.
 
 **Revisión**:
 
-- [ ] revisado
-- veredicto: 
-- tipo_correcto: 
-- causa_raiz: 
-- patron: 
-- notas: 
-- accion: 
+- [ x] revisado
+- veredicto: incorrecto 
+- tipo_correcto: tarifa_millar
+- causa_raiz: ocr
+- patron: P-03
+- notas: el OCR es deficiente, la segmentación es correcta. 
+- accion: re-ocr con retry a modelo vision 
 
 ---
 
@@ -765,13 +795,13 @@ campos automáticamente y propongo fixes basados en los patrones acumulados.
 
 **Revisión**:
 
-- [ ] revisado
-- veredicto: 
-- tipo_correcto: 
-- causa_raiz: 
-- patron: 
-- notas: 
-- accion: 
+- [ x] revisado
+- veredicto: incorrecto 
+- tipo_correcto: tarifa_millar
+- causa_raiz: ocr
+- patron: P-03
+- notas: el OCR es deficiente, la segmentación es correcta. 
+- accion: re-ocr con retry a modelo vision 
 
 ---
 
@@ -786,13 +816,13 @@ campos automáticamente y propongo fixes basados en los patrones acumulados.
 
 **Revisión**:
 
-- [ ] revisado
-- veredicto: 
-- tipo_correcto: 
-- causa_raiz: 
-- patron: 
-- notas: 
-- accion: 
+- [ x] revisado
+- veredicto: incorrecto 
+- tipo_correcto: tarifa_millar
+- causa_raiz: ocr
+- patron: P-03
+- notas: el OCR es deficiente, la segmentación es correcta. 
+- accion: re-ocr con retry a modelo vision 
 
 ---
 
@@ -808,13 +838,13 @@ campos automáticamente y propongo fixes basados en los patrones acumulados.
 
 **Revisión**:
 
-- [ ] revisado
-- veredicto: 
-- tipo_correcto: 
-- causa_raiz: 
-- patron: 
-- notas: 
-- accion: 
+- [ x] revisado
+- veredicto: correcto 
+- tipo_correcto: n/a
+- causa_raiz: documento_ambiguo
+- patron: P-00
+- notas: La seccion no contiene información sobre tasas predial, solo menciona una cuota fija y excedente 
+- accion: dejar en blanco, esperar recuperación por imputación
 
 ---
 
@@ -829,13 +859,13 @@ campos automáticamente y propongo fixes basados en los patrones acumulados.
 
 **Revisión**:
 
-- [ ] revisado
-- veredicto: 
-- tipo_correcto: 
-- causa_raiz: 
-- patron: 
-- notas: 
-- accion: 
+- [ x] revisado
+- veredicto: correcto 
+- tipo_correcto: n/a
+- causa_raiz: documento_ambiguo
+- patron: P-00
+- notas: La seccion no contiene información sobre tasas predial, solo menciona una cuota fija y excedente 
+- accion: dejar en blanco, esperar recuperación por imputación
 
 ---
 
@@ -850,13 +880,14 @@ campos automáticamente y propongo fixes basados en los patrones acumulados.
 
 **Revisión**:
 
-- [ ] revisado
-- veredicto: 
-- tipo_correcto: 
-- causa_raiz: 
-- patron: 
-- notas: 
-- accion: 
+- [ x] revisado
+- veredicto: incorrecto 
+- tipo_correcto: tasa_unica
+- causa_raiz: api_error 
+- patron: P-04
+- notas: En la ley dice: la tarifa del impuesto predial (C) se multiplicará por el factor del 0.25 del valor catastral 
+actualizado y se dividirá entre 100
+- accion: volver a enviar a gpt-5.4
 
 ---
 
@@ -871,13 +902,13 @@ campos automáticamente y propongo fixes basados en los patrones acumulados.
 
 **Revisión**:
 
-- [ ] revisado
-- veredicto: 
-- tipo_correcto: 
-- causa_raiz: 
-- patron: 
-- notas: 
-- accion: 
+- [ x] revisado
+- veredicto: incorrecto 
+- tipo_correcto: progresivo
+- causa_raiz: segment , api_error
+- patron: P-03
+- notas: La segmentación parece ser correcta, pero omite la tabla progresiva asociada. Está disponible en el recorte de PDF
+- accion: usar modelo de vision
 
 ---
 
@@ -891,14 +922,13 @@ campos automáticamente y propongo fixes basados en los patrones acumulados.
 - **razon**: `clasificado_como_otro_no_clasificado`
 
 **Revisión**:
-
-- [ ] revisado
-- veredicto: 
-- tipo_correcto: 
-- causa_raiz: 
-- patron: 
-- notas: 
-- accion: 
+- [ x] revisado
+- veredicto: incorrecto 
+- tipo_correcto: progresivo
+- causa_raiz: segment , api_error
+- patron: P-03
+- notas: La segmentación parece ser correcta, pero omite la tabla progresiva asociada. Está disponible en el recorte de PDF
+- accion: usar modelo de vision
 
 ---
 
@@ -915,13 +945,13 @@ campos automáticamente y propongo fixes basados en los patrones acumulados.
 
 **Revisión**:
 
-- [ ] revisado
-- veredicto: 
-- tipo_correcto: 
-- causa_raiz: 
-- patron: 
-- notas: 
-- accion: 
+- [ x] revisado
+- veredicto: invalido 
+- tipo_correcto: n/a
+- causa_raiz: ocr, segmentacion
+- patron: P-02
+- notas: solo primeras paginas aptas para busqueda por text, segmentación incorrecta. Problema similar otro ya corregido con HITL previo. 
+- accion: implementar re-ocr + segmentacion 
 
 ---
 
@@ -936,13 +966,13 @@ campos automáticamente y propongo fixes basados en los patrones acumulados.
 
 **Revisión**:
 
-- [ ] revisado
-- veredicto: 
-- tipo_correcto: 
-- causa_raiz: 
-- patron: 
-- notas: 
-- accion: 
+- [ x] revisado
+- veredicto: invalido 
+- tipo_correcto: tarifa_millar
+- causa_raiz: segment
+- patron: P-02
+- notas: error de segmentación, quizá asociado a ocr deficiente, seccion predial en pagina 84 de 2024_17215_Periódico_Número_261_Vigésima_Cuarta_Parte_ocr.pdf
+- accion: re ocr , mejorar segment.py
 
 ---
 
@@ -957,13 +987,13 @@ campos automáticamente y propongo fixes basados en los patrones acumulados.
 
 **Revisión**:
 
-- [ ] revisado
-- veredicto: 
-- tipo_correcto: 
-- causa_raiz: 
-- patron: 
-- notas: 
-- accion: 
+- [ x] revisado
+- veredicto: invalido 
+- tipo_correcto: n/a
+- causa_raiz: ocr, segmentacion
+- patron: P-02
+- notas: solo primeras paginas aptas para busqueda por text, segmentación incorrecta. Problema similar otro ya corregido con HITL previo. 
+- accion: implementar re-ocr + segmentacion 
 
 ---
 
@@ -978,13 +1008,13 @@ campos automáticamente y propongo fixes basados en los patrones acumulados.
 
 **Revisión**:
 
-- [ ] revisado
-- veredicto: 
-- tipo_correcto: 
-- causa_raiz: 
-- patron: 
-- notas: 
-- accion: 
+- [ x] revisado
+- veredicto: invalido 
+- tipo_correcto: progresivo
+- causa_raiz: segment
+- patron: P-01
+- notas: error de segmentación, tarifas en pagina 402 de 2010-12-29_suplemento.pdf
+- accion: re-segment, mejorar segment.py
 
 ---
 
@@ -999,13 +1029,13 @@ campos automáticamente y propongo fixes basados en los patrones acumulados.
 
 **Revisión**:
 
-- [ ] revisado
-- veredicto: 
-- tipo_correcto: 
-- causa_raiz: 
-- patron: 
-- notas: 
-- accion: 
+- [ x] revisado
+- veredicto: correcto 
+- tipo_correcto: n/a
+- causa_raiz: documento_ambiguo
+- patron: P-00
+- notas: No existe información sobre tasas predial
+- accion: dejar en blanco, esperar recuperación por imputación
 
 ---
 
@@ -1020,13 +1050,13 @@ campos automáticamente y propongo fixes basados en los patrones acumulados.
 
 **Revisión**:
 
-- [ ] revisado
-- veredicto: 
-- tipo_correcto: 
-- causa_raiz: 
-- patron: 
-- notas: 
-- accion: 
+- [ x] revisado
+- veredicto: correcto 
+- tipo_correcto: n/a
+- causa_raiz: documento_ambiguo
+- patron: P-00
+- notas: No existe información sobre tasas predial
+- accion: dejar en blanco, esperar recuperación por imputación
 
 ---
 
@@ -1041,13 +1071,13 @@ campos automáticamente y propongo fixes basados en los patrones acumulados.
 
 **Revisión**:
 
-- [ ] revisado
-- veredicto: 
-- tipo_correcto: 
-- causa_raiz: 
-- patron: 
-- notas: 
-- accion: 
+- [ x] revisado
+- veredicto: correcto 
+- tipo_correcto: n/a
+- causa_raiz: documento_ambiguo
+- patron: P-00
+- notas: No existe información sobre tasas predial
+- accion: dejar en blanco, esperar recuperación por imputación
 
 ---
 
@@ -1062,13 +1092,14 @@ campos automáticamente y propongo fixes basados en los patrones acumulados.
 
 **Revisión**:
 
-- [ ] revisado
-- veredicto: 
-- tipo_correcto: 
-- causa_raiz: 
-- patron: 
-- notas: 
-- accion: 
+- [ x] revisado
+- veredicto: incorrecto 
+- tipo_correcto: tasa_unica
+- causa_raiz: api_error
+- patron: P-04
+- notas: En el recorte dice: una vez  
+teniendo el valor catastral se multiplica por el factor 0.00025 y el resultado será el monto a pagar.; dejar como comentario que :en caso de predios cuyo valor catastral sea igual o menor a $ 200,000.00 el contribuyente pagará como  cuota fija para el impuesto predial la cantidad de $ 50.00. 
+- accion: volver a enviar a api con modelo gpt-5.4
 
 ---
 
@@ -1085,14 +1116,13 @@ campos automáticamente y propongo fixes basados en los patrones acumulados.
 
 **Revisión**:
 
-- [ ] revisado
-- veredicto: 
-- tipo_correcto: 
-- causa_raiz: 
-- patron: 
-- notas: 
-- accion: 
-
+- [ x] revisado
+- veredicto: invalido 
+- tipo_correcto: n/a
+- causa_raiz: ocr, segmentacion
+- patron: P-02
+- notas: solo primeras paginas aptas para busqueda por text, segmentación incorrecta. Problema similar otro ya corregido con HITL previo. 
+- accion: implementar re-ocr + segmentacion 
 ---
 
 ### `guanajuato/comonfort/2023` (cvegeo 11009)
@@ -1106,13 +1136,13 @@ campos automáticamente y propongo fixes basados en los patrones acumulados.
 
 **Revisión**:
 
-- [ ] revisado
-- veredicto: 
-- tipo_correcto: 
-- causa_raiz: 
-- patron: 
-- notas: 
-- accion: 
+- [ x] revisado
+- veredicto: invalido 
+- tipo_correcto: n/a
+- causa_raiz: ocr, segmentacion
+- patron: P-02
+- notas: solo primeras paginas aptas para busqueda por text, segmentación incorrecta. Problema similar otro ya corregido con HITL previo. 
+- accion: implementar re-ocr + segmentacion 
 
 ---
 
@@ -1127,13 +1157,13 @@ campos automáticamente y propongo fixes basados en los patrones acumulados.
 
 **Revisión**:
 
-- [ ] revisado
-- veredicto: 
-- tipo_correcto: 
-- causa_raiz: 
-- patron: 
-- notas: 
-- accion: 
+- [ x] revisado
+- veredicto: invalido 
+- tipo_correcto: n/a
+- causa_raiz: ocr, segmentacion
+- patron: P-02
+- notas: solo primeras paginas aptas para busqueda por text, segmentación incorrecta. Problema similar otro ya corregido con HITL previo. 
+- accion: implementar re-ocr + segmentacion 
 
 ---
 
@@ -1148,13 +1178,13 @@ campos automáticamente y propongo fixes basados en los patrones acumulados.
 
 **Revisión**:
 
-- [ ] revisado
-- veredicto: 
-- tipo_correcto: 
-- causa_raiz: 
-- patron: 
-- notas: 
-- accion: 
+- [ x] revisado
+- veredicto: invalido 
+- tipo_correcto: n/a
+- causa_raiz: ocr, segmentacion
+- patron: P-02
+- notas: solo primeras paginas aptas para busqueda por text, segmentación incorrecta. Problema similar otro ya corregido con HITL previo. 
+- accion: implementar re-ocr + segmentacion 
 
 ---
 
@@ -1169,13 +1199,13 @@ campos automáticamente y propongo fixes basados en los patrones acumulados.
 
 **Revisión**:
 
-- [ ] revisado
-- veredicto: 
-- tipo_correcto: 
-- causa_raiz: 
-- patron: 
-- notas: 
-- accion: 
+- [ x] revisado
+- veredicto: invalido 
+- tipo_correcto: n/a
+- causa_raiz: ocr, segmentacion
+- patron: P-02
+- notas: solo primeras paginas aptas para busqueda por text, segmentación incorrecta. Problema similar otro ya corregido con HITL previo. 
+- accion: implementar re-ocr + segmentacion 
 
 ---
 
@@ -1190,13 +1220,13 @@ campos automáticamente y propongo fixes basados en los patrones acumulados.
 
 **Revisión**:
 
-- [ ] revisado
-- veredicto: 
-- tipo_correcto: 
-- causa_raiz: 
-- patron: 
-- notas: 
-- accion: 
+- [ x] revisado
+- veredicto: invalido 
+- tipo_correcto: n/a
+- causa_raiz: ocr, segmentacion
+- patron: P-02
+- notas: solo primeras paginas aptas para busqueda por text, segmentación incorrecta. Problema similar otro ya corregido con HITL previo. 
+- accion: implementar re-ocr + segmentacion 
 
 ---
 
@@ -1213,13 +1243,13 @@ campos automáticamente y propongo fixes basados en los patrones acumulados.
 
 **Revisión**:
 
-- [ ] revisado
-- veredicto: 
-- tipo_correcto: 
-- causa_raiz: 
-- patron: 
-- notas: 
-- accion: 
+- [ x] revisado
+- veredicto: correcto 
+- tipo_correcto: n/a
+- causa_raiz: documento_ambiguo
+- patron: P-00
+- notas: No existe información sobre tasas predial
+- accion: dejar en blanco, esperar recuperación por imputación
 
 ---
 
@@ -1234,14 +1264,13 @@ campos automáticamente y propongo fixes basados en los patrones acumulados.
 
 **Revisión**:
 
-- [ ] revisado
-- veredicto: 
-- tipo_correcto: 
-- causa_raiz: 
-- patron: 
-- notas: 
-- accion: 
-
+- [ x] revisado
+- veredicto: correcto 
+- tipo_correcto: n/a
+- causa_raiz: documento_ambiguo
+- patron: P-00
+- notas: No existe información sobre tasas predial
+- accion: dejar en blanco, esperar recuperación por imputación
 ---
 
 ### `yucatan/kinchil/2024` (cvegeo 31044)
@@ -1256,13 +1285,13 @@ campos automáticamente y propongo fixes basados en los patrones acumulados.
 
 **Revisión**:
 
-- [ ] revisado
-- veredicto: 
-- tipo_correcto: 
-- causa_raiz: 
-- patron: 
-- notas: 
-- accion: 
+- [ x] revisado
+- veredicto: correcto 
+- tipo_correcto: n/a
+- causa_raiz: documento_ambiguo
+- patron: P-00
+- notas: No existe información sobre tasas predial
+- accion: dejar en blanco, esperar recuperación por imputación
 
 ---
 
@@ -1278,13 +1307,13 @@ campos automáticamente y propongo fixes basados en los patrones acumulados.
 
 **Revisión**:
 
-- [ ] revisado
-- veredicto: 
-- tipo_correcto: 
-- causa_raiz: 
-- patron: 
-- notas: 
-- accion: 
+- [ x] revisado
+- veredicto: incorrecto 
+- tipo_correcto: progresivo
+- causa_raiz: segment , api_error
+- patron: P-03
+- notas: La segmentación parece ser correcta, pero omite la tabla progresiva asociada. Está disponible en el recorte de PDF
+- accion: usar modelo de vision
 
 ---
 
@@ -1302,13 +1331,13 @@ campos automáticamente y propongo fixes basados en los patrones acumulados.
 
 **Revisión**:
 
-- [ ] revisado
-- veredicto: 
-- tipo_correcto: 
-- causa_raiz: 
-- patron: 
-- notas: 
-- accion: 
+- [ x] revisado
+- veredicto: correcto 
+- tipo_correcto: n/a
+- causa_raiz: documento_ambiguo
+- patron: P-00
+- notas: No existe información sobre tasas predial
+- accion: dejar en blanco, esperar recuperación por imputación
 
 ---
 
@@ -1324,13 +1353,13 @@ campos automáticamente y propongo fixes basados en los patrones acumulados.
 
 **Revisión**:
 
-- [ ] revisado
-- veredicto: 
-- tipo_correcto: 
-- causa_raiz: 
-- patron: 
-- notas: 
-- accion: 
+- [ x] revisado
+- veredicto: correcto 
+- tipo_correcto: n/a
+- causa_raiz: documento_ambiguo
+- patron: P-00
+- notas: No existe información sobre tasas predial
+- accion: dejar en blanco, esperar recuperación por imputación
 
 ---
 
@@ -1346,13 +1375,13 @@ campos automáticamente y propongo fixes basados en los patrones acumulados.
 
 **Revisión**:
 
-- [ ] revisado
-- veredicto: 
-- tipo_correcto: 
-- causa_raiz: 
-- patron: 
-- notas: 
-- accion: 
+- [ x] revisado
+- veredicto: correcto 
+- tipo_correcto: n/a
+- causa_raiz: documento_ambiguo
+- patron: P-00
+- notas: No existe información sobre tasas predial
+- accion: dejar en blanco, esperar recuperación por imputación
 
 ---
 
@@ -1369,13 +1398,13 @@ campos automáticamente y propongo fixes basados en los patrones acumulados.
 
 **Revisión**:
 
-- [ ] revisado
-- veredicto: 
-- tipo_correcto: 
-- causa_raiz: 
-- patron: 
-- notas: 
-- accion: 
+- [ x] revisado
+- veredicto: invalido 
+- tipo_correcto: progresivo
+- causa_raiz: segment
+- patron: P-01
+- notas: error puro de segmentación, tarifas en pagina anterior al recorte
+- accion: re-segment, mejorar segment.py
 
 ---
 
@@ -1390,13 +1419,13 @@ campos automáticamente y propongo fixes basados en los patrones acumulados.
 
 **Revisión**:
 
-- [ ] revisado
-- veredicto: 
-- tipo_correcto: 
-- causa_raiz: 
-- patron: 
-- notas: 
-- accion: 
+- [ x] revisado
+- veredicto: incorrecto 
+- tipo_correcto: tarifa_millar
+- causa_raiz: api_error
+- patron: P-04
+- notas: En el recorte se indican las tarifas al millar correspondientes  
+- accion: volver a enviar a api con modelo gpt-5.4
 
 ---
 
@@ -1411,13 +1440,13 @@ campos automáticamente y propongo fixes basados en los patrones acumulados.
 
 **Revisión**:
 
-- [ ] revisado
-- veredicto: 
-- tipo_correcto: 
-- causa_raiz: 
-- patron: 
-- notas: 
-- accion: 
+- [ x] revisado
+- veredicto: invalido 
+- tipo_correcto: tarifa_millar
+- causa_raiz: seggment
+- patron: P-01
+- notas: La sección predial esta en pagina 431 de TAMPS_RAW_2013_consolidado.pdf
+- accion: re-segmentar, mejorar segment.py
 
 ---
 
@@ -1434,13 +1463,13 @@ campos automáticamente y propongo fixes basados en los patrones acumulados.
 
 **Revisión**:
 
-- [ ] revisado
-- veredicto: 
-- tipo_correcto: 
-- causa_raiz: 
-- patron: 
-- notas: 
-- accion: 
+- [ x] revisado
+- veredicto: invalido 
+- tipo_correcto: tarifa_millar
+- causa_raiz: seggment
+- patron: P-01
+- notas: La sección predial esta en pagina 846 de TAMPS_RAW_2024_consolidado.pdf
+- accion: re-segmentar, mejorar segment.py
 
 ---
 
@@ -1455,13 +1484,13 @@ campos automáticamente y propongo fixes basados en los patrones acumulados.
 
 **Revisión**:
 
-- [ ] revisado
-- veredicto: 
-- tipo_correcto: 
-- causa_raiz: 
-- patron: 
-- notas: 
-- accion: 
+- [ x] revisado
+- veredicto: invalido 
+- tipo_correcto: tarifa_millar
+- causa_raiz: seggment
+- patron: P-01
+- notas: La sección predial esta en pagina 446 de TAMPS_RAW_2023_consolidado.pdf
+- accion: re-segmentar, mejorar segment.py 
 
 ---
 
@@ -1478,13 +1507,13 @@ campos automáticamente y propongo fixes basados en los patrones acumulados.
 
 **Revisión**:
 
-- [ ] revisado
-- veredicto: 
-- tipo_correcto: 
-- causa_raiz: 
-- patron: 
-- notas: 
-- accion: 
+- [ x] revisado
+- veredicto: incorrecto 
+- tipo_correcto: progresivo
+- causa_raiz: segment , api_error
+- patron: P-03
+- notas: La segmentación parece ser correcta, pero omite la tabla progresiva asociada. Está disponible en el recorte de PDF
+- accion: usar modelo de vision
 
 ---
 
@@ -1499,13 +1528,13 @@ campos automáticamente y propongo fixes basados en los patrones acumulados.
 
 **Revisión**:
 
-- [ ] revisado
-- veredicto: 
-- tipo_correcto: 
-- causa_raiz: 
-- patron: 
-- notas: 
-- accion: 
+- [ x] revisado
+- veredicto: incorrecto 
+- tipo_correcto: progresivo
+- causa_raiz: segment , api_error
+- patron: P-03
+- notas: La segmentación parece ser correcta, pero omite la tabla progresiva asociada. Está disponible en el recorte de PDF
+- accion: usar modelo de vision
 
 ---
 
@@ -1522,13 +1551,13 @@ campos automáticamente y propongo fixes basados en los patrones acumulados.
 
 **Revisión**:
 
-- [ ] revisado
-- veredicto: 
-- tipo_correcto: 
-- causa_raiz: 
-- patron: 
-- notas: 
-- accion: 
+- [ x] revisado
+- veredicto: incorrecto 
+- tipo_correcto: progresivo
+- causa_raiz: segment , api_error
+- patron: P-03
+- notas: La segmentación parece ser correcta, pero omite la tabla progresiva asociada. Está disponible en el recorte de PDF
+- accion: usar modelo de vision
 
 ---
 
@@ -1543,13 +1572,13 @@ campos automáticamente y propongo fixes basados en los patrones acumulados.
 
 **Revisión**:
 
-- [ ] revisado
-- veredicto: 
-- tipo_correcto: 
-- causa_raiz: 
-- patron: 
-- notas: 
-- accion: 
+- [ x] revisado
+- veredicto: invalido 
+- tipo_correcto: n/a
+- causa_raiz: ocr, segmentacion
+- patron: P-02
+- notas: solo primeras paginas aptas para busqueda por text, segmentación incorrecta. Problema similar otro ya corregido con HITL previo. 
+- accion: implementar re-ocr + segmentacion 
 
 ---
 
@@ -1566,13 +1595,14 @@ campos automáticamente y propongo fixes basados en los patrones acumulados.
 
 **Revisión**:
 
-- [ ] revisado
-- veredicto: 
-- tipo_correcto: 
-- causa_raiz: 
-- patron: 
-- notas: 
-- accion: 
+- [ x] revisado
+- veredicto: invalido 
+- tipo_correcto: n/a
+- causa_raiz: ocr, segmentacion
+- patron: P-02
+- notas: solo primeras paginas aptas para busqueda por text, segmentación incorrecta. Problema similar otro ya corregido con HITL previo. 
+- accion: implementar re-ocr + segmentacion 
+
 
 ---
 
@@ -1587,13 +1617,14 @@ campos automáticamente y propongo fixes basados en los patrones acumulados.
 
 **Revisión**:
 
-- [ ] revisado
-- veredicto: 
-- tipo_correcto: 
-- causa_raiz: 
-- patron: 
-- notas: 
-- accion: 
+- [ x] revisado
+- veredicto: invalido 
+- tipo_correcto: n/a
+- causa_raiz: ocr, segmentacion
+- patron: P-02
+- notas: solo primeras paginas aptas para busqueda por text, segmentación incorrecta. Problema similar otro ya corregido con HITL previo. 
+- accion: implementar re-ocr + segmentacion 
+
 
 ---
 
@@ -1609,14 +1640,13 @@ campos automáticamente y propongo fixes basados en los patrones acumulados.
 - **razon**: `clasificado_como_otro_no_clasificado`
 
 **Revisión**:
-
-- [ ] revisado
-- veredicto: 
-- tipo_correcto: 
-- causa_raiz: 
-- patron: 
-- notas: 
-- accion: 
+- [ x] revisado
+- veredicto:invalido 
+- tipo_correcto: n/a 
+- causa_raiz: segmentacion
+- patron: P-01
+- notas: La sección predial está en la pagina inmediata anterior
+- accion: volver a segmentar, mejorar segment.py
 
 ---
 
@@ -1633,13 +1663,13 @@ campos automáticamente y propongo fixes basados en los patrones acumulados.
 
 **Revisión**:
 
-- [ ] revisado
-- veredicto: 
-- tipo_correcto: 
-- causa_raiz: 
-- patron: 
-- notas: 
-- accion: 
+- [ x] revisado
+- veredicto: incorrecto 
+- tipo_correcto: progresivo
+- causa_raiz: segment , api_error
+- patron: P-03
+- notas: La segmentación parece ser correcta, pero omite la tabla progresiva asociada. Está disponible en el recorte de PDF
+- accion: usar modelo de vision
 
 ---
 
@@ -1657,13 +1687,13 @@ campos automáticamente y propongo fixes basados en los patrones acumulados.
 
 **Revisión**:
 
-- [ ] revisado
-- veredicto: 
-- tipo_correcto: 
-- causa_raiz: 
-- patron: 
-- notas: 
-- accion: 
+- [ x] revisado
+- veredicto: correcto 
+- tipo_correcto: n/a
+- causa_raiz: documento_ambiguo
+- patron: P-00
+- notas: No existe información sobre tasas predial
+- accion: dejar en blanco, esperar recuperación por imputación 
 
 ---
 
@@ -1680,13 +1710,13 @@ campos automáticamente y propongo fixes basados en los patrones acumulados.
 
 **Revisión**:
 
-- [ ] revisado
-- veredicto: 
-- tipo_correcto: 
-- causa_raiz: 
-- patron: 
-- notas: 
-- accion: 
+- [ x] revisado
+- veredicto: incorrecto 
+- tipo_correcto: progresivo
+- causa_raiz: segment , api_error
+- patron: P-03
+- notas: La segmentación pdf es correcta, pero el txt  omite las tarifas. Está disponible en el recorte de PDF
+- accion: usar modelo de vision
 
 ---
 
@@ -1703,13 +1733,13 @@ campos automáticamente y propongo fixes basados en los patrones acumulados.
 
 **Revisión**:
 
-- [ ] revisado
-- veredicto: 
-- tipo_correcto: 
-- causa_raiz: 
-- patron: 
-- notas: 
-- accion: 
+- [ x] revisado
+- veredicto: incorrecto 
+- tipo_correcto: progresivo
+- causa_raiz: segment , api_error
+- patron: P-03
+- notas: La segmentación parece ser correcta, pero omite la tabla progresiva asociada. Está disponible en el recorte de PDF
+- accion: usar modelo de vision
 
 ---
 
@@ -1725,14 +1755,13 @@ campos automáticamente y propongo fixes basados en los patrones acumulados.
 - **razon**: `clasificado_como_otro_no_clasificado`
 
 **Revisión**:
-
-- [ ] revisado
-- veredicto: 
-- tipo_correcto: 
-- causa_raiz: 
-- patron: 
-- notas: 
-- accion: 
+- [ x] revisado
+- veredicto:invalido 
+- tipo_correcto: n/a 
+- causa_raiz: segmentacion
+- patron: P-01
+- notas: La sección predial está en la pagina inmediata anterior
+- accion: volver a segmentar, mejorar segment.py
 
 ---
 
@@ -1747,13 +1776,12 @@ campos automáticamente y propongo fixes basados en los patrones acumulados.
 
 **Revisión**:
 
-- [ ] revisado
-- veredicto: 
-- tipo_correcto: 
-- causa_raiz: 
-- patron: 
-- notas: 
-- accion: 
+- [ x] revisado
+- veredicto: correcto 
+- tipo_correcto: n/a
+- causa_raiz: otro
+- patron: P-00
+- notas: No se pudo identificar Ley de Ingresos, esperar recuperación por imputación 
 
 ---
 
@@ -1766,13 +1794,13 @@ campos automáticamente y propongo fixes basados en los patrones acumulados.
 
 **Revisión**:
 
-- [ ] revisado
-- veredicto: 
-- tipo_correcto: 
-- causa_raiz: 
-- patron: 
-- notas: 
-- accion: 
+- [ x] revisado
+- veredicto: incorrecto 
+- tipo_correcto: progresivo
+- causa_raiz: segment, api_error
+- patron: P-03
+- notas: El recorte parece ser correcto, pero no se incluyen tarifas en txt
+- accion: usar modelo de vision sobre las paginas del recorte asociado
 
 ---
 
@@ -1785,13 +1813,13 @@ campos automáticamente y propongo fixes basados en los patrones acumulados.
 
 **Revisión**:
 
-- [ ] revisado
-- veredicto: 
-- tipo_correcto: 
-- causa_raiz: 
-- patron: 
-- notas: 
-- accion: 
+- [ x] revisado
+- veredicto: incorrecto 
+- tipo_correcto: progresivo
+- causa_raiz: segment, api_error
+- patron: P-03
+- notas: El recorte parece ser correcto, pero no se incluyen tarifas en txt
+- accion: usar modelo de vision sobre las paginas del recorte asociado 
 
 ---
 
@@ -1804,13 +1832,13 @@ campos automáticamente y propongo fixes basados en los patrones acumulados.
 
 **Revisión**:
 
-- [ ] revisado
-- veredicto: 
-- tipo_correcto: 
-- causa_raiz: 
-- patron: 
-- notas: 
-- accion: 
+- [ x] revisado
+- veredicto: incorrecto 
+- tipo_correcto: progresivo
+- causa_raiz: segment, api_error
+- patron: P-03
+- notas: El recorte parece ser correcto, pero no se incluyen tarifas en txt
+- accion: usar modelo de vision sobre las paginas del recorte asociado
 
 ---
 
@@ -1823,12 +1851,12 @@ campos automáticamente y propongo fixes basados en los patrones acumulados.
 
 **Revisión**:
 
-- [ ] revisado
-- veredicto: 
-- tipo_correcto: 
-- causa_raiz: 
-- patron: 
-- notas: 
-- accion: 
+- [ x] revisado
+- veredicto: incorrecto 
+- tipo_correcto: progresivo
+- causa_raiz: segment, api_error
+- patron: P-03
+- notas: El recorte parece ser correcto, pero no se incluyen tarifas en txt
+- accion: usar modelo de vision sobre las paginas del recorte asociado
 
 ---

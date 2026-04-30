@@ -641,24 +641,55 @@ class ExtractionResult:
 
 # ── Cascada re-OCR → visión (rescue para casos con texto fuente vacío/truncado) ──
 
-# Categorías de otro_no_clasificado que indican un problema con la fuente, no con
-# el LLM ni con el documento. Son las únicas que ameritan intentar OCR/vision rescue.
-_RESCUABLE_CATEGORIAS = {"segmento_vacio", "error_segmentacion"}
-
 # Mínima longitud (chars) que el TXT re-OCR debe alcanzar para considerarse "rescatado"
 # y reintentar el LLM. Por debajo de esto asumimos que el OCR no ayudó y pasamos a vision.
 _REOCR_MIN_CHARS = 1500
 _REOCR_IMPROVEMENT_FACTOR = 3.0  # también requerimos ≥3× más que el original
 
+# Patrones en `descripcion_estructural` que indican que el documento sí está
+# correctamente clasificado como otro_no_clasificado porque NO contiene tarifa
+# real (P-00 del HITL: el municipio remite a otra ley o solo establece un mínimo).
+# Cuando el LLM emite estas señales, no vale la pena gastar CPU/tokens en re-OCR
+# o visión — el resultado ya es legítimamente correcto.
+_P00_DESCRIPCION_SIGNALS = (
+    "sólo menciona una cuota",
+    "solo menciona una cuota",
+    "no establece tarifa",
+    "rige por la ley general",
+    "remite a la ley general",
+    "no causa el impuesto",
+    "ley estatal de hacienda",
+    "ley general de hacienda municipal",
+    "se rige por la ley",
+    "tres salarios mínimos",
+    "tres salarios minimos",
+    "única tasa visible corresponde al impuesto sobre adquisición",
+    "unica tasa visible corresponde al impuesto sobre adquisicion",
+)
+
 
 def _should_attempt_rescue(result_output: PredialOutputV2 | None) -> bool:
-    """Determina si vale la pena gastar tokens/CPU en OCR/vision rescue."""
+    """Determina si vale la pena gastar tokens/CPU en OCR/vision rescue.
+
+    Activa cuando:
+      - 3 intentos LLM fallaron (output is None) → último recurso
+      - El resultado es otro_no_clasificado de cualquier categoría EXCEPTO
+        si la descripcion_estructural sugiere que es legítimamente "sin
+        tarifa real" (P-00).
+    """
     if result_output is None:
-        return True  # 3 intentos LLM fallaron → rescue es último recurso
+        return True
     pred = result_output.predial
     if not isinstance(pred, OtroNoClasificadoSchema):
         return False  # Clasificación válida → no tocar
-    return pred.categoria in _RESCUABLE_CATEGORIAS
+
+    desc = (pred.descripcion_estructural or "").lower()
+    if any(s in desc for s in _P00_DESCRIPCION_SIGNALS):
+        return False  # P-00: documento legítimamente sin tarifa
+
+    # Cualquier otro otro_no_clasificado → intentar rescate (cubre P-03 que
+    # antes quedaba afuera por categoria=estructura_no_estandar).
+    return True
 
 
 def _attempt_ocr_rescue(
@@ -734,6 +765,7 @@ def _extract_one(
     municipio_pretty: str,
     prefijo: str,
     enable_rescue: bool = True,
+    force_full_model: bool = False,
 ) -> ExtractionResult:
     archivo = f"{prefijo}_PREDIAL_{anio}_{slug}.json"
 
@@ -767,30 +799,33 @@ def _extract_one(
         {"role": "user", "content": user_msg},
     ]
 
-    r1 = _call_llm(messages, model=OPENAI_MODEL)
+    # Modelo de primer intento: mini por default, full si force_full_model=True
+    primary_model = OPENAI_MODEL_FALLBACK if force_full_model else OPENAI_MODEL
+    r1 = _call_llm(messages, model=primary_model)
     total_in, total_out, total_cached = r1.tokens_in, r1.tokens_out, r1.tokens_cached
 
     intentos = 1
     final_call: _LLMCall | None = r1
     error_history: list[str] = []
-    escalado = False
+    escalado = force_full_model  # si arrancamos con full, ya está "escalado"
 
     if r1.output is None:
-        # Retry con mini + error específico
-        error_history.append(f"mini_e1={r1.error}")
+        # Retry con mismo modelo + error específico
+        error_history.append(f"e1={r1.error}")
         retry_msg = USER_RETRY_TEMPLATE.format(ERROR=r1.error, TEXTO=texto)
         messages_retry = [
             {"role": "system", "content": SYSTEM_PROMPT_V2},
             {"role": "user", "content": retry_msg},
         ]
-        r2 = _call_llm(messages_retry, model=OPENAI_MODEL)
+        r2 = _call_llm(messages_retry, model=primary_model)
         total_in += r2.tokens_in; total_out += r2.tokens_out; total_cached += r2.tokens_cached
         intentos = 2
         final_call = r2
 
-        if r2.output is None:
+        if r2.output is None and not force_full_model:
             # Escalación: tercer intento con modelo de fallback (gpt-5.4 full).
-            error_history.append(f"mini_e2={r2.error}")
+            # Si ya arrancamos con full (force_full_model), no hay a dónde escalar.
+            error_history.append(f"e2={r2.error}")
             escalation_msg = USER_RETRY_TEMPLATE.format(
                 ERROR=(f"Intento previo (mini) falló con: {r2.error}\n"
                        f"Intento aún anterior falló con: {r1.error}"),
@@ -808,6 +843,8 @@ def _extract_one(
 
             if r3.output is None:
                 error_history.append(f"full_e3={r3.error}")
+        elif r2.output is None and force_full_model:
+            error_history.append(f"e2={r2.error}")
 
     # ── Cascada de rescate (re-OCR → visión) ──
     fuente = "txt"
@@ -959,6 +996,7 @@ def extraer_municipio(
     cvegeo: str,
     anios: Iterable[int],
     slug_override: str | None = None,
+    force_full_model: bool = False,
 ) -> list[ExtractionResult]:
     """Extrae predial v2 para un municipio en los años indicados.
 
@@ -989,7 +1027,9 @@ def extraer_municipio(
     slug = slug_override or slug_catalog
 
     results: list[ExtractionResult] = []
-    print(f"[v2] {estado.upper()} cvegeo={cvegeo} ({municipio_pretty})  modelo={OPENAI_MODEL}")
+    arranque_modelo = OPENAI_MODEL_FALLBACK if force_full_model else OPENAI_MODEL
+    print(f"[v2] {estado.upper()} cvegeo={cvegeo} ({municipio_pretty})  modelo={arranque_modelo}"
+          f"{' [FORCE_FULL]' if force_full_model else ''}")
     for anio in anios:
         print(f"  -- {anio} --")
         r = _extract_one(
@@ -1000,6 +1040,7 @@ def extraer_municipio(
             slug=slug,
             municipio_pretty=municipio_pretty,
             prefijo=prefijo,
+            force_full_model=force_full_model,
         )
         out_path = _save_result(r)
         r.out_path = out_path

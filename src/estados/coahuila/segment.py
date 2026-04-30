@@ -107,7 +107,12 @@ def find_ley_span(raw_text: str, municipio: str):
     Localiza (start_idx, end_idx) de la LEY DE INGRESOS de un municipio en el PDF.
 
     Se ancla en 'NUMERO xxx.- LEY DE INGRESOS DEL MUNICIPIO DE {MUNICIPIO}'
-    del cuerpo del PO (no del sumario/índice).
+    del cuerpo del PO. Cuando ese ancla falla (OCR rompió "NUMERO X.-"), cae
+    a un patrón laxo `LEY DE INGRESOS DEL MUNICIPIO DE {MUNI}` PERO descartando
+    matches que caen en el sumario al principio del PO (antes del primer
+    "NUMERO X.- LEY..." de cualquier municipio). Sin esto, el sumario en pg 1
+    capturaba a Ocampo/Piedras Negras/Ramos Arizpe en 2010 y producía un span
+    pg 1-2 con solo el índice.
     """
     norm_text = norm(raw_text)
     muni_norm = norm(municipio)
@@ -120,19 +125,42 @@ def find_ley_span(raw_text: str, municipio: str):
     m = re.search(patt_numero, norm_text, flags=re.DOTALL)
     if not m:
         patt_simple = rf"LEY\s+DE\s+INGRESOS\s+DEL\s+MUNICIPIO\s+DE\s+{muni_pattern}"
-        m = re.search(patt_simple, norm_text, flags=re.DOTALL)
+
+        # Identificar inicio del cuerpo (primer "NUMERO X.- LEY..." de
+        # cualquier muni). Matches simples antes de eso son del sumario.
+        first_numero = re.search(
+            r"NUMERO\s+\d+\.-\s*LEY\s+DE\s+INGRESOS\s+DEL\s+MUNICIPIO\s+DE\s+\w+",
+            norm_text, flags=re.DOTALL,
+        )
+        cuerpo_min_idx = first_numero.start() if first_numero else 0
+
+        m = None
+        for m_simple in re.finditer(patt_simple, norm_text, flags=re.DOTALL):
+            if m_simple.start() >= cuerpo_min_idx:
+                m = m_simple
+                break
         if not m:
             return None
 
     law_start = m.start()
     law_header_end = m.end()
 
+    # Cierre del span: primero intentar el patrón estricto NUMERO X.-, luego
+    # un patrón laxo (cualquier "LEY DE INGRESOS DEL MUNICIPIO DE ..." que
+    # marque el inicio de OTRA ley con OCR dañado de NUMERO).
     patt_any_numero = PATRON_LEY_HEADER
     m_next = re.search(patt_any_numero, norm_text[law_header_end:], flags=re.DOTALL)
     if m_next:
         law_end = law_header_end + m_next.start()
     else:
-        law_end = len(norm_text)
+        m_next_simple = re.search(
+            r"LEY\s+DE\s+INGRESOS\s+DEL\s+MUNICIPIO\s+DE\s+\w+",
+            norm_text[law_header_end:], flags=re.DOTALL,
+        )
+        if m_next_simple:
+            law_end = law_header_end + m_next_simple.start()
+        else:
+            law_end = len(norm_text)
 
     if law_end <= law_start:
         return None
