@@ -1,6 +1,7 @@
 # ── PDFs (pesados, regenerables) ──
 data/*/pdf_raw/
 data/*/pdf_ocr/
+data/*/pdf_cleaned/
 data/*/focus_predial/
 data/*/json/
 data/*/json_predial/
@@ -42,3 +43,4 @@ data/*/debug_html/
 # ── Artefactos de regression / investigación (logs verbosos) ──
 output/regression_*
 output/reextract_v2*.log
+output/sample_v2_postchanges.log

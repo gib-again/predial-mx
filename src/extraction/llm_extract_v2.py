@@ -176,10 +176,34 @@ mutuamente excluyentes. NO interpretes ni corrijas la ley.
    Si todos los `tasa_marginal` son 0 → NO es progresivo, es `cuota_fija_escalonada`.
 
 3) tasa_unica
-   Una sola tasa uniforme sobre el valor catastral. Exactamente UNA entrada en `tabla`.
+   Una sola tasa uniforme sobre el valor catastral o sobre la superficie del predio.
+   Exactamente UNA entrada en `tabla`. Soporta tres patrones:
+
+   3a) Tasa al millar/porcentaje sobre valor catastral:
+       `unidad="al_millar"` | `"al_ciento"` | `"porcentaje"`,
+       `base_calculo="valor_catastral"`.
+
+   3b) Tasa única + cuota fija adicional ("$50 + 1.5 al millar anual"):
+       Llena `cuota_fija_adicional` (objeto con `monto`, `periodicidad`, `unidad`)
+       además de `tasa` y `unidad`. NO es `mixto` — sigue siendo tasa única
+       porque la mecánica es uniforme (no hay brackets ni categorías).
+
+   3c) Cuota por superficie ("$0.15 por m²", "$10 por hectárea"):
+       `unidad="por_metro_cuadrado"` o `"por_hectarea"`,
+       `base_calculo="superficie_m2"` o `"superficie_ha"`,
+       `tasa` = monto en pesos por unidad de superficie. Esta variante es
+       distinta a tasa al millar; úsala cuando el documento literalmente
+       diga "X centavos/pesos por metro cuadrado" o equivalente.
 
 4) cuota_fija_simple
    Una sola cuota fija anual SIN rangos ni categorías. Exactamente UNA entrada.
+
+   Si además existe una tarifa SECUNDARIA menor (frutos civiles sobre rentas,
+   predios agropecuarios al millar) que NO es la mecánica predominante del
+   predial, documéntala como string en `tarifas_secundarias` (lista). NO
+   migres a `mixto` solo por tener una tarifa secundaria pequeña — `mixto`
+   está reservado para estructuras donde la heterogeneidad es PARTE de la
+   mecánica principal.
 
 5) cuota_fija_escalonada
    Brackets de valor catastral donde cada rango paga un MONTO FIJO (pesos), NO una tasa.
@@ -221,6 +245,22 @@ mutuamente excluyentes. NO interpretes ni corrijas la ley.
    Sólo si NINGUNA variante encaja, o el segmento llegó vacío/truncado.
    Exige `categoria` (estructura_no_estandar | segmento_vacio | error_segmentacion |
    municipio_sin_impuesto) y `descripcion_estructural` no vacía.
+
+   Casos legítimos donde ESTE es el output correcto:
+     • `municipio_sin_impuesto`: el documento explícitamente remite a otra ley
+       (ej. "el impuesto predial se rige por la Ley General de Hacienda
+       Municipal del Estado de X"). NO inventar mecánica.
+     • `segmento_vacio`: el chunk llegó sin contenido tarifario por error de
+       segmentación o de OCR.
+     • `estructura_no_estandar`: el documento describe una mecánica que
+       genuinamente no encaja (ej. base de cálculo es renta civil del predio,
+       no valor catastral, sin tabla extraíble).
+
+   Antes de caer aquí por "esquema raro", revisa si encaja en `mixto` con
+   `comentarios` explicativos: por ejemplo, una mecánica de "rentas civiles"
+   acompañada de "tasa al millar para predios agropecuarios" puede codificarse
+   en `mixto` con una sola FilaMixta y comentarios que documenten la
+   peculiaridad. `otro_no_clasificado` es el último recurso.
 
 ═══ REGLAS DE BRACKETS (progresivo, cuota_fija_escalonada, mixto) ═══
 
@@ -265,8 +305,19 @@ Establece SIEMPRE `_meta = null`. La metadata se llena del lado del orquestador.
 
   • Descuentos, recargos, condonaciones, bonificaciones.
   • Tablas de "VALORES UNITARIOS DE TERRENO Y CONSTRUCCIÓN" (catastro, no tarifa).
-  • Frutos civiles (impuesto sobre rentas).
-  • Predios ejidales que pagan sobre producción.
+  • Predios ejidales que pagan sobre producción agrícola (no inmueble).
+
+═══ DOCUMENTAR (no ignorar) ═══
+
+  • Frutos civiles / impuesto sobre rentas: si NO es la mecánica principal,
+    documéntalos en `tarifas_secundarias` (cuota_fija_simple) o en
+    `comentarios` (otras variantes). Si ES la mecánica principal pero no hay
+    tabla estructural extraíble, usa `mixto` con `comentarios` explicativos
+    o `otro_no_clasificado / estructura_no_estandar` como último recurso.
+  • Tasa al millar para predios agropecuarios paralela a la tarifa principal:
+    si la tarifa principal es estructurada (brackets / categorías), describe
+    la paralela en `comentarios`. Si la principal es plana, considera
+    `cuota_fija_simple` con `tarifas_secundarias`.
 
 Devuelve un único objeto JSON con clave "predial" en la raíz y `_meta=null`.
 """
@@ -305,6 +356,15 @@ Re-extrae el mismo texto teniendo cuenta:
     es probable que estés mezclando DOS tarifas paralelas (ej. urbanos con
     brackets + rústicos con tasa única). Elige la tarifa con brackets como
     `tabla` principal y describe la otra en `comentarios`.
+  • Si la tarifa es "$X por m²" o "$X por hectárea" (cuota por superficie),
+    usa `tasa_unica` con `unidad="por_metro_cuadrado"` o `"por_hectarea"`,
+    `base_calculo="superficie_m2"` o `"superficie_ha"`. NO uses `cuota_fija_simple`
+    para esto — la cuota varía con el tamaño del predio.
+  • Si la mecánica es una tasa única + cuota fija fija ("$50 + 1.5 al millar"),
+    usa `tasa_unica` con `cuota_fija_adicional` poblado. NO confundir con `mixto`.
+  • Si hay UNA cuota fija plana como mecánica principal y existe una tarifa
+    secundaria menor (frutos civiles, agropecuarios), usa `cuota_fija_simple`
+    con `tarifas_secundarias` (lista de strings descriptivos), NO `mixto`.
   • Si ninguna variante encaja realmente, usa `otro_no_clasificado` con la categoría
     correcta y `descripcion_estructural` no vacía.
 

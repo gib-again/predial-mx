@@ -109,10 +109,30 @@ class FilaTasaUnica(BaseModel):
     model_config = ConfigDict(extra="forbid")
 
     descripcion: str = Field(description="Texto descriptivo corto")
-    tasa: float = Field(description="Valor numérico de la tasa")
-    base_calculo: str = Field(description="valor_catastral | valor_fiscal | superficie | otro")
-    unidad: Literal["al_millar", "al_ciento", "porcentaje"] = Field(
-        description="Unidad de la tasa"
+    tasa: float = Field(description="Valor numérico de la tasa o monto por unidad")
+    base_calculo: str = Field(
+        description=(
+            "valor_catastral | valor_fiscal | superficie_m2 | superficie_ha | otro. "
+            "Usar superficie_m2 cuando la tarifa es '$X por m²' y superficie_ha "
+            "para '$X por hectárea'."
+        )
+    )
+    unidad: Literal[
+        "al_millar", "al_ciento", "porcentaje",
+        "por_metro_cuadrado", "por_hectarea", "pesos",
+    ] = Field(
+        description=(
+            "Unidad de la tasa. al_millar/al_ciento/porcentaje cuando la base es "
+            "valor_catastral; por_metro_cuadrado/por_hectarea cuando la base es "
+            "superficie; pesos cuando la 'tasa' es realmente una cuota plana."
+        )
+    )
+    cuota_fija_adicional: CuotaFijaAdicional | None = Field(
+        default=None,
+        description=(
+            "Cuota fija que se cobra ADEMÁS de la tasa única (ej. '$50 + 1.5 al "
+            "millar anual'). null si la tarifa es solo la tasa."
+        ),
     )
 
     _coerce_tasa = field_validator("tasa", mode="before")(_coerce_to_float)
@@ -276,7 +296,10 @@ class TasaUnicaSchema(BaseModel):
 class CuotaFijaSimpleSchema(BaseModel):
     """Cuota fija anual única, sin rangos por valor catastral ni categorías.
 
-    Si hay categorías o rangos, usar `tarifa_millar` o `cuota_fija_escalonada`.
+    Si hay categorías o rangos en la mecánica PRINCIPAL, usar `tarifa_millar` o
+    `cuota_fija_escalonada`. El campo `tarifas_secundarias` permite documentar
+    cobros menores (frutos civiles, agropecuarios) sin forzar reclasificación
+    a `mixto` cuando esos cobros NO son la mecánica predominante del predial.
     """
     model_config = ConfigDict(extra="forbid")
 
@@ -284,7 +307,16 @@ class CuotaFijaSimpleSchema(BaseModel):
     tabla: list[FilaCuotaFijaSimple] = Field(
         min_length=1,
         max_length=1,
-        description="Exactamente una entrada con el monto fijo.",
+        description="Exactamente una entrada con el monto fijo principal.",
+    )
+    tarifas_secundarias: list[str] | None = Field(
+        default=None,
+        description=(
+            "Tarifas paralelas no estructurales (frutos civiles, predios "
+            "agropecuarios sobre rentas, etc.) descritas en prosa libre. "
+            "Una entrada por tarifa secundaria. null o lista vacía si no aplica. "
+            "NO usar para registrar la mecánica principal — esa va en `tabla`."
+        ),
     )
     minimo_predial: MinimoPredial | None = None
     comentarios: str = ""
