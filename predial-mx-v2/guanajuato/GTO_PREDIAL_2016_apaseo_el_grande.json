@@ -1,0 +1,60 @@
+{
+  "predial": {
+    "tipo_esquema": "tarifa_millar",
+    "tabla": [
+      {
+        "grupo": "urbano",
+        "clave": "urbano_con_edificaciones",
+        "descripcion": "Inmuebles urbanos y suburbanos con edificaciones; tasa según antigüedad del inmueble.",
+        "tasa_millar": 0.0024,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "urbano",
+        "clave": "urbano_sin_edificaciones",
+        "descripcion": "Inmuebles urbanos y suburbanos sin edificaciones; tasa según antigüedad del inmueble.",
+        "tasa_millar": 0.0045,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "rustico",
+        "clave": "rustico_con_edificaciones",
+        "descripcion": "Inmuebles rústicos con edificaciones; tasa según antigüedad del inmueble.",
+        "tasa_millar": 0.0045,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "rustico",
+        "clave": "rustico_sin_edificaciones",
+        "descripcion": "Inmuebles rústicos sin edificaciones; tasa según antigüedad del inmueble.",
+        "tasa_millar": 0.0018,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      }
+    ],
+    "minimo_predial": null,
+    "comentarios": "Artículo 4 establece una mecánica por antigüedad del inmueble con tasas anuales al millar aplicables a inmuebles urbanos/suburbanos y rústicos, distinguiendo con y sin edificaciones. La transcripción del texto OCR está desordenada, pero se identifican como tarifas paralelas por categoría/condición, no como rangos de valor catastral. Artículo 4 también muestra tasas adicionales para periodos anteriores (2.4, 4.5, 8, 15, 13, 4.5, 1.8 y 6, 12 al millar según antigüedad/condición); se conservan únicamente las filas principales leídas con mayor claridad en el encabezado de tasas, sin inventar una tabla de rangos. Los artículos 5 y 6 corresponden a valores unitarios y criterios de avalúo, no a la mecánica de cálculo del impuesto."
+  },
+  "_meta": {
+    "fuente": "txt",
+    "modelo": "imputed_confirmed_fill"
+  },
+  "_meta_v2": {
+    "intentos": 0,
+    "requiere_revision": false,
+    "razon": null,
+    "tokens": {
+      "input": 0,
+      "output": 0,
+      "cached": 0
+    },
+    "cvegeo": "11005",
+    "estado": "guanajuato",
+    "anio": 2016,
+    "imputed_from_year": 2015,
+    "imputed_method": "confirmed_fill"
+  }
+}

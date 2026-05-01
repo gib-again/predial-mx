@@ -15,20 +15,24 @@ Reglas aplicadas (en orden, una vez que las anteriores no llenan el hueco):
                               dona valores de cualquier muni del estado-año.
 
 Outputs:
-  output/panel_v2_balanced.csv         — panel rectangular cvegeo×año con `imputed`.
-  output/panel_v2_balance_report.md    — cobertura, fuentes de desbalance y
-                                          sugerencias human-in-the-loop por muni.
+  predial-mx-v2/{estado}/*.json         — JSONs imputados con `_meta.modelo`
+                                            "imputed_<método>" (vía impute_jsons).
+  output/panel_v2_balanced.csv          — vista CSV rectangular del balance.
+  output/panel_v2_balance_report.md     — cobertura, fuentes de desbalance y
+                                            sugerencias human-in-the-loop por muni.
 """
 
 from __future__ import annotations
 
 import csv
+import json
 from collections import Counter, defaultdict
 from pathlib import Path
 from typing import Optional
 
 from src.core.constants import EJERCICIO_INI, EJERCICIO_FIN
 from src.core.impute import _load_new_municipalities
+from src.core.text_utils import slugify
 
 
 INCLUDED_NOM_ENT = {
@@ -38,6 +42,31 @@ INCLUDED_NOM_ENT = {
 EXCLUDED_NOM_ENT = {"Oaxaca"}
 
 UNIFORM_STATES_NOM_ENT = {"Chihuahua", "Colima", "Mexico", "Sinaloa", "Tabasco"}
+
+# Mapeos para resolver paths del corpus v2 a partir del NOM_ENT del catálogo.
+ESTADO_SLUG_BY_NOM_ENT = {
+    "Coahuila de Zaragoza": "coahuila",
+    "Chihuahua": "chihuahua",
+    "Colima": "colima",
+    "Guanajuato": "guanajuato",
+    "Jalisco": "jalisco",
+    "Mexico": "edomex",
+    "Queretaro": "queretaro",
+    "Sinaloa": "sinaloa",
+    "Tabasco": "tabasco",
+    "Tamaulipas": "tamaulipas",
+    "Yucatan": "yucatan",
+}
+PREFIJOS_BY_SLUG = {
+    "coahuila":   "COAH", "chihuahua": "CHIH", "colima":  "COL",
+    "guanajuato": "GTO",  "jalisco":   "JAL",  "edomex":  "MEX",
+    "queretaro":  "QRO",  "sinaloa":   "SIN",  "tabasco": "TAB",
+    "tamaulipas": "TAMPS","yucatan":   "YUC",
+}
+
+# Confianza por método: define si clonamos `tabla` del donor o emitimos esqueleto.
+HIGH_CONFIDENCE_METHODS = {"confirmed_fill", "closure_fill", "uniform_state_fill"}
+LOW_CONFIDENCE_METHODS = {"ffill", "bfill", "tipo_only_fill"}
 
 MAX_GAP_CONFIRMED = 4
 MAX_GAP_FFILL = 4
@@ -629,48 +658,296 @@ def _write_report(
     out_path.write_text("\n".join(lines), encoding="utf-8")
 
 
-def balance_panel_v2(
-    input_csv: Path = Path("output/panel_v2.csv"),
-    output_csv: Path = Path("output/panel_v2_balanced.csv"),
-    report_md: Path = Path("output/panel_v2_balance_report.md"),
+# ════════════════════════════════════════════════════════════════════
+# impute_jsons — escribe JSONs imputados a predial-mx-v2/{estado}/
+# ════════════════════════════════════════════════════════════════════
+
+def _slug_by_cvegeo_from_catalog(catalog_path: Path) -> dict[str, str]:
+    """{cvegeo: slug} desde catálogo INEGI (NOM_MUN slugified)."""
+    out: dict[str, str] = {}
+    if not catalog_path.exists():
+        return out
+    with catalog_path.open(encoding="utf-8-sig", newline="") as f:
+        for r in csv.DictReader(f):
+            cvegeo = (r.get("CVEGEO") or "").strip().zfill(5)
+            slug = slugify(r.get("NOM_MUN") or "")
+            if cvegeo and slug:
+                out[cvegeo] = slug
+    return out
+
+
+def _read_donor_json(
+    cvegeo: str, donor_year: int, estado_slug: str, slug: str,
+    v2_root: Path,
+) -> tuple[Path, dict] | None:
+    """Localiza y lee el JSON donor en predial-mx-v2/{estado_slug}/."""
+    prefijo = PREFIJOS_BY_SLUG.get(estado_slug)
+    if not prefijo:
+        return None
+    fname = f"{prefijo}_PREDIAL_{donor_year}_{slug}.json"
+    path = v2_root / estado_slug / fname
+    if not path.exists():
+        return None
+    try:
+        return path, json.loads(path.read_text(encoding="utf-8"))
+    except Exception:
+        return None
+
+
+def _build_imputed_predial(donor_predial: dict, method: str) -> dict:
+    """Construye el dict 'predial' del JSON imputado según confianza del método.
+
+    - HIGH_CONFIDENCE_METHODS: clonar el predial completo del donor.
+    - LOW_CONFIDENCE_METHODS:  esqueleto mínimo con `tabla=[]` o equivalente.
+    """
+    if method in HIGH_CONFIDENCE_METHODS:
+        # Clonación profunda vía json roundtrip (predial es siempre serializable).
+        return json.loads(json.dumps(donor_predial))
+
+    # Baja confianza — esqueleto sin clonar `tabla`.
+    tipo = donor_predial.get("tipo_esquema") or ""
+    skel: dict = {
+        "tipo_esquema": tipo,
+        "comentarios": (
+            f"Imputado por {method}: tipo_esquema preservado del año donor; "
+            f"tabla/rangos no clonados por baja confianza en estabilidad temporal."
+        ),
+        "minimo_predial": None,
+    }
+    # `tabla` se incluye vacía para que la variante quede sintácticamente válida
+    # como referencia (la validación schema_v2 estricta no se aplica a imputados).
+    if tipo in {
+        "progresivo", "cuota_fija_escalonada", "mixto",
+        "tarifa_millar", "tasa_unica", "cuota_fija_simple",
+    }:
+        skel["tabla"] = []
+    if tipo == "otro_no_clasificado":
+        # Preservar campos requeridos por OtroNoClasificadoSchema.
+        skel["categoria"] = donor_predial.get("categoria", "estructura_no_estandar")
+        skel["descripcion_estructural"] = (
+            f"Imputado por {method}; descripción heredada del año donor."
+        )
+        skel["tabla_cruda"] = []
+    return skel
+
+
+def _build_imputed_doc(
+    cvegeo: str, anio: int, estado_slug: str,
+    method: str, donor_year: int, donor_doc: dict,
+) -> dict:
+    donor_predial = donor_doc.get("predial") or {}
+    src_meta = donor_doc.get("_meta") or {}
+    return {
+        "predial": _build_imputed_predial(donor_predial, method),
+        "_meta": {
+            "fuente": src_meta.get("fuente", "txt"),
+            "modelo": f"imputed_{method}",
+        },
+        "_meta_v2": {
+            "intentos": 0,
+            "requiere_revision": False,
+            "razon": None,
+            "tokens": {"input": 0, "output": 0, "cached": 0},
+            "cvegeo": cvegeo,
+            "estado": estado_slug,
+            "anio": anio,
+            "imputed_from_year": donor_year,
+            "imputed_method": method,
+        },
+    }
+
+
+def impute_jsons(
+    panel_csv: Path = Path("output/panel_v2.csv"),
+    v2_root: Path = Path("predial-mx-v2"),
     catalog_inegi: Path = Path("catalogs/municipios_inegi.csv"),
     changes_catalog: Path = Path("catalogs/changes_ageeml.csv"),
     year_min: int = EJERCICIO_INI,
     year_max: int = EJERCICIO_FIN,
-) -> tuple[Path, Path]:
+    dry_run: bool = False,
+) -> tuple[int, int, Counter]:
+    """Aplica las 6 reglas y escribe JSONs imputados a predial-mx-v2/{estado}/.
+
+    Devuelve (n_escritos, n_skipped_donor_missing, counter_por_metodo).
+    """
     print("=" * 60)
-    print("  Balance del panel v2 (excluye Oaxaca, reglas extendidas)")
+    print("  impute_jsons — imputando JSONs a predial-mx-v2/")
     print("=" * 60)
 
     universe = _load_inegi_universe(catalog_inegi)
-    print(f"  munis en universo INEGI: {len(universe)}")
-
+    slug_by_cvegeo = _slug_by_cvegeo_from_catalog(catalog_inegi)
     new_munis_by_cve = _load_new_municipalities(changes_catalog)
     new_munis_by_cvegeo: dict[str, int] = {
-        f"{cve_ent}{cve_mun}".zfill(5): yr
-        for (cve_ent, cve_mun), yr in new_munis_by_cve.items()
+        f"{ce}{cm}".zfill(5): yr for (ce, cm), yr in new_munis_by_cve.items()
     }
-    print(f"  munis nuevos en catálogo: {len(new_munis_by_cvegeo)}")
 
-    raw = _read_panel(input_csv)
+    # Leer panel; filtrar Oaxaca, rango de años, y FUERA filas previamente
+    # imputadas (idempotencia — solo trabajamos sobre observaciones crudas).
+    raw = _read_panel(panel_csv)
     raw = [r for r in raw if r["estado"] not in EXCLUDED_NOM_ENT]
     raw = [r for r in raw if year_min <= r["ejercicio"] <= year_max]
-    print(f"  filas crudas (post-filtro): {len(raw)}")
+    raw = [r for r in raw if not (r.get("imputed_method") or "").strip()]
+    print(f"  filas crudas (excluye imputadas previas): {len(raw)}")
 
     raw_by_muni: dict[str, list[dict]] = defaultdict(list)
     for r in raw:
         raw_by_muni[r["cvegeo"]].append(r)
 
     state_donors = _build_state_donors(raw_by_muni, universe)
-    print(f"  donors uniformes: {{{', '.join(f'{s}: {len(d)}' for s, d in state_donors.items())}}}")
 
-    balanced: list[dict] = []
+    n_written = 0
+    n_donor_missing = 0
+    n_existing_real = 0
+    method_counts: Counter = Counter()
+
+    for cv, info in sorted(universe.items()):
+        if info["nom_ent"] not in INCLUDED_NOM_ENT:
+            continue
+        estado_slug = ESTADO_SLUG_BY_NOM_ENT.get(info["nom_ent"])
+        prefijo = PREFIJOS_BY_SLUG.get(estado_slug or "")
+        slug = slug_by_cvegeo.get(cv)
+        if not (estado_slug and prefijo and slug):
+            continue
+
+        creation_year = new_munis_by_cvegeo.get(cv)
+        obs = raw_by_muni.get(cv, [])
+        donors_for_state = state_donors.get(info["nom_ent"], {})
+        filled, _gaps = _impute_municipality(
+            cv, info["nom_ent"], info["nom_mun"], obs,
+            year_min, year_max, creation_year, donors_for_state,
+        )
+
+        for year, row in filled.items():
+            method = row.get("imputed", "false")
+            if method == "false":
+                continue
+            source_year = row.get("imputed_from_year")
+            if not source_year:
+                continue
+            source_year = int(source_year)
+
+            # Resolver donor JSON. uniform_state_fill puede venir de OTRO cvegeo.
+            if method == "uniform_state_fill":
+                donor_obs = donors_for_state.get(source_year)
+                if not donor_obs:
+                    n_donor_missing += 1
+                    continue
+                donor_cvegeo = donor_obs["cvegeo"]
+                donor_slug = slug_by_cvegeo.get(donor_cvegeo)
+                if not donor_slug:
+                    n_donor_missing += 1
+                    continue
+                hit = _read_donor_json(
+                    donor_cvegeo, source_year, estado_slug, donor_slug, v2_root,
+                )
+            else:
+                hit = _read_donor_json(cv, source_year, estado_slug, slug, v2_root)
+
+            if hit is None:
+                n_donor_missing += 1
+                continue
+            _donor_path, donor_doc = hit
+
+            # Path destino
+            out_name = f"{prefijo}_PREDIAL_{year}_{slug}.json"
+            out_path = v2_root / estado_slug / out_name
+
+            # Idempotencia: no sobrescribir extracciones reales (LLM, hardcoded,
+            # reclasified_v1, synthesized_short_form). Solo sobrescribir
+            # imputaciones previas (`imputed_*`) o si no existe.
+            if out_path.exists():
+                try:
+                    existing = json.loads(out_path.read_text(encoding="utf-8"))
+                    existing_modelo = (existing.get("_meta") or {}).get("modelo", "")
+                    if existing_modelo and not existing_modelo.startswith("imputed_"):
+                        n_existing_real += 1
+                        continue
+                except Exception:
+                    pass
+
+            doc = _build_imputed_doc(
+                cv, year, estado_slug, method, source_year, donor_doc,
+            )
+            if not dry_run:
+                out_path.parent.mkdir(parents=True, exist_ok=True)
+                out_path.write_text(
+                    json.dumps(doc, ensure_ascii=False, indent=2),
+                    encoding="utf-8",
+                )
+            n_written += 1
+            method_counts[method] += 1
+
+    print(f"  escritos: {n_written}")
+    for m, n in method_counts.most_common():
+        print(f"    {m}: {n}")
+    if n_donor_missing:
+        print(f"  donors faltantes (saltados): {n_donor_missing}")
+    if n_existing_real:
+        print(f"  destinos con extracción real preservados: {n_existing_real}")
+
+    return n_written, n_donor_missing, method_counts
+
+
+def balance_panel_v2(
+    input_csv: Path = Path("output/panel_v2.csv"),
+    output_csv: Path = Path("output/panel_v2_balanced.csv"),
+    report_md: Path = Path("output/panel_v2_balance_report.md"),
+    catalog_inegi: Path = Path("catalogs/municipios_inegi.csv"),
+    changes_catalog: Path = Path("catalogs/changes_ageeml.csv"),
+    v2_root: Path = Path("predial-mx-v2"),
+    year_min: int = EJERCICIO_INI,
+    year_max: int = EJERCICIO_FIN,
+) -> tuple[Path, Path]:
+    """Workflow completo:
+       1. impute_jsons() — escribe JSONs imputados a predial-mx-v2/{estado}/
+       2. build_panel_v2() — regenera panel_v2.csv con celdas imputadas
+       3. Lee panel y emite panel_v2_balanced.csv (vista filtrada) + reporte
+    """
+    # ── Paso 1: imputar JSONs ──
+    impute_jsons(
+        panel_csv=input_csv, v2_root=v2_root,
+        catalog_inegi=catalog_inegi, changes_catalog=changes_catalog,
+        year_min=year_min, year_max=year_max,
+    )
+
+    # ── Paso 2: regenerar panel_v2.csv para que refleje los imputados ──
+    print()
+    from src.core.panel_v2 import build_panel_v2 as _build_panel
+    _build_panel(v2_root=v2_root, catalog_path=catalog_inegi, out_csv=input_csv)
+
+    # ── Paso 3: análisis de gaps + reporte ──
+    print()
+    print("=" * 60)
+    print("  Análisis de huecos remanentes")
+    print("=" * 60)
+
+    universe = _load_inegi_universe(catalog_inegi)
+    new_munis_by_cve = _load_new_municipalities(changes_catalog)
+    new_munis_by_cvegeo: dict[str, int] = {
+        f"{cve_ent}{cve_mun}".zfill(5): yr
+        for (cve_ent, cve_mun), yr in new_munis_by_cve.items()
+    }
+
+    all_panel = _read_panel(input_csv)
+    in_scope = [
+        r for r in all_panel
+        if r["estado"] not in EXCLUDED_NOM_ENT
+        and year_min <= r["ejercicio"] <= year_max
+    ]
+    # Para detección de gaps usar sólo OBSERVACIONES (filas no imputadas).
+    raw = [r for r in in_scope if not (r.get("imputed_method") or "").strip()]
+    print(f"  filas en scope: {len(in_scope)}  (raw={len(raw)}, imputadas={len(in_scope)-len(raw)})")
+
+    raw_by_muni: dict[str, list[dict]] = defaultdict(list)
+    for r in raw:
+        raw_by_muni[r["cvegeo"]].append(r)
+
+    state_donors = _build_state_donors(raw_by_muni, universe)
+
     method_counts: Counter = Counter()
     all_gaps: list[tuple[str, int, str]] = []
     hitl_suggestions: list[dict] = []
 
-    # Iterar sobre TODOS los munis del universo (no solo los con datos),
-    # para que uniform_state_fill cubra munis sin obs propias.
     for cv, info in sorted(universe.items()):
         if info["nom_ent"] not in INCLUDED_NOM_ENT:
             continue
@@ -681,7 +958,6 @@ def balance_panel_v2(
             cv, info["nom_ent"], info["nom_mun"], obs,
             year_min, year_max, creation_year, donors,
         )
-        balanced.extend(filled.values())
         for r in filled.values():
             method_counts[r["imputed"]] += 1
         for y, motivo in gaps:
@@ -691,12 +967,23 @@ def balance_panel_v2(
             if sug:
                 hitl_suggestions.append(sug)
 
-    print(f"  filas balanceadas: {len(balanced)}")
-    for m, n in method_counts.most_common():
-        print(f"    {m}: {n:,}")
-    print(f"  huecos remanentes: {len(all_gaps)}")
-
+    # Agregar `imputed` al row siguiendo el formato esperado por _write_balanced.
+    balanced: list[dict] = []
+    for r in in_scope:
+        method = r.get("imputed_method") or "false"
+        balanced.append({
+            "cvegeo": r["cvegeo"],
+            "estado": r.get("estado", ""),
+            "municipio": r.get("municipio", ""),
+            "ejercicio": r["ejercicio"],
+            "tipo_esquema": r.get("tipo_esquema", ""),
+            "numero_rangos": r.get("numero_rangos", ""),
+            "monto_max_rango": r.get("monto_max_rango", ""),
+            "imputed": method,
+            "imputed_from_year": r.get("imputed_from_year", ""),
+        })
     balanced.sort(key=lambda r: (r["cvegeo"], r["ejercicio"]))
+
     _write_balanced(balanced, output_csv)
     print(f"  -> {output_csv}")
 
@@ -720,5 +1007,7 @@ def balance_panel_v2(
         year_max=year_max,
     )
     print(f"  -> {report_md}")
+    print(f"  huecos remanentes: {len(all_gaps)}")
+    return output_csv, report_md
 
     return output_csv, report_md

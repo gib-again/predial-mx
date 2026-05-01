@@ -1,0 +1,52 @@
+{
+  "predial": {
+    "tipo_esquema": "tarifa_millar",
+    "tabla": [
+      {
+        "grupo": "general",
+        "clave": "entrada_en_vigor_2002_2011",
+        "descripcion": "Inmuebles urbanos y suburbanos con edificaciones; inmuebles urbanos y suburbanos sin edificaciones; rústicos. A la entrada en vigor de la ley y durante 2002 a 2011 inclusive.",
+        "tasa_millar": 0.0024,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "general",
+        "clave": "anterior_1993_2001",
+        "descripcion": "Inmuebles urbanos y suburbanos con edificaciones; inmuebles urbanos y suburbanos sin edificaciones; rústicos. Con anterioridad al año 2002 y hasta 1993 inclusive.",
+        "tasa_millar": 0.008,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "general",
+        "clave": "anterior_1993",
+        "descripcion": "Inmuebles urbanos y suburbanos con edificaciones; inmuebles urbanos y suburbanos sin edificaciones; rústicos. Con anterioridad a 1993.",
+        "tasa_millar": 0.013,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      }
+    ],
+    "minimo_predial": null,
+    "comentarios": "Art. 4 establece tasas anuales por valor catastral para inmuebles urbanos y suburbanos con edificaciones/sin edificaciones y rústicos. La tabla OCR del texto está truncada en el último renglón: el encabezado muestra cuatro columnas (urbanos con edificaciones, urbanos sin edificaciones, rústicos) pero sólo se conservan tres valores visibles en los renglones 1-3; el renglón 4 aparece incompleto. Se transcribe únicamente lo claramente legible de la mecánica principal. Art. 5 y 6 son valores unitarios y criterios de valuación, no mecánica de cálculo del impuesto."
+  },
+  "_meta": {
+    "fuente": "txt",
+    "modelo": "imputed_confirmed_fill"
+  },
+  "_meta_v2": {
+    "intentos": 0,
+    "requiere_revision": false,
+    "razon": null,
+    "tokens": {
+      "input": 0,
+      "output": 0,
+      "cached": 0
+    },
+    "cvegeo": "11046",
+    "estado": "guanajuato",
+    "anio": 2014,
+    "imputed_from_year": 2012,
+    "imputed_method": "confirmed_fill"
+  }
+}

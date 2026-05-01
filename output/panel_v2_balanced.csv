@@ -1948,7 +1948,7 @@ cvegeo,estado,municipio,ejercicio,tipo_esquema,numero_rangos,monto_max_rango,imp
 11007,Guanajuato,Celaya,2022,progresivo,10,29250000.0,false,
 11007,Guanajuato,Celaya,2023,progresivo,13,29250000.0,false,
 11007,Guanajuato,Celaya,2024,mixto,13,29250000.0,false,
-11007,Guanajuato,Celaya,2025,mixto,13,29250000.0,ffill,2024
+11007,Guanajuato,Celaya,2025,mixto,,,ffill,2024
 11008,Guanajuato,Manuel Doblado,2010,tarifa_millar,,,false,
 11008,Guanajuato,Manuel Doblado,2011,tarifa_millar,,,confirmed_fill,2010
 11008,Guanajuato,Manuel Doblado,2012,tarifa_millar,,,confirmed_fill,2010
@@ -2137,7 +2137,7 @@ cvegeo,estado,municipio,ejercicio,tipo_esquema,numero_rangos,monto_max_rango,imp
 11019,Guanajuato,Jerecuaro,2023,tarifa_millar,,,false,
 11019,Guanajuato,Jerecuaro,2024,tarifa_millar,,,false,
 11019,Guanajuato,Jerecuaro,2025,tarifa_millar,,,false,
-11020,Guanajuato,Leon,2010,mixto,7,11000.0,bfill,2011
+11020,Guanajuato,Leon,2010,mixto,,,bfill,2011
 11020,Guanajuato,Leon,2011,mixto,7,11000.0,false,
 11020,Guanajuato,Leon,2012,progresivo,7,11000.0,false,
 11020,Guanajuato,Leon,2014,mixto,7,11000.0,false,
@@ -2330,19 +2330,16 @@ cvegeo,estado,municipio,ejercicio,tipo_esquema,numero_rangos,monto_max_rango,imp
 11032,Guanajuato,San Jose de Iturbide,2010,tarifa_millar,,,false,
 11032,Guanajuato,San Jose de Iturbide,2011,tarifa_millar,,,false,
 11032,Guanajuato,San Jose de Iturbide,2012,tarifa_millar,,,false,
-11032,Guanajuato,San Jose de Iturbide,2013,tarifa_millar,,,confirmed_fill,2012
 11032,Guanajuato,San Jose de Iturbide,2014,tarifa_millar,,,false,
 11032,Guanajuato,San Jose de Iturbide,2015,tarifa_millar,,,false,
-11032,Guanajuato,San Jose de Iturbide,2016,tarifa_millar,,,confirmed_fill,2015
-11032,Guanajuato,San Jose de Iturbide,2017,tarifa_millar,,,confirmed_fill,2015
 11032,Guanajuato,San Jose de Iturbide,2018,tarifa_millar,,,false,
 11032,Guanajuato,San Jose de Iturbide,2019,tarifa_millar,,,false,
 11032,Guanajuato,San Jose de Iturbide,2020,tarifa_millar,,,false,
 11032,Guanajuato,San Jose de Iturbide,2021,tarifa_millar,,,false,
 11032,Guanajuato,San Jose de Iturbide,2022,tarifa_millar,,,false,
 11032,Guanajuato,San Jose de Iturbide,2023,progresivo,7,4000000.0,false,
-11032,Guanajuato,San Jose de Iturbide,2024,progresivo,7,4000000.0,ffill,2023
-11032,Guanajuato,San Jose de Iturbide,2025,progresivo,7,4000000.0,ffill,2023
+11032,Guanajuato,San Jose de Iturbide,2024,progresivo,,,ffill,2023
+11032,Guanajuato,San Jose de Iturbide,2025,progresivo,,,ffill,2023
 11033,Guanajuato,San Luis de la Paz,2010,tarifa_millar,,,false,
 11033,Guanajuato,San Luis de la Paz,2011,tarifa_millar,,,false,
 11033,Guanajuato,San Luis de la Paz,2012,tarifa_millar,,,false,
@@ -2502,7 +2499,6 @@ cvegeo,estado,municipio,ejercicio,tipo_esquema,numero_rangos,monto_max_rango,imp
 11042,Guanajuato,Valle de Santiago,2024,progresivo,7,4226664.64,false,
 11042,Guanajuato,Valle de Santiago,2025,otro_no_clasificado,,,false,
 11043,Guanajuato,Victoria,2010,tarifa_millar,,,false,
-11043,Guanajuato,Victoria,2011,tarifa_millar,,,confirmed_fill,2010
 11043,Guanajuato,Victoria,2012,tarifa_millar,,,false,
 11043,Guanajuato,Victoria,2013,tarifa_millar,,,confirmed_fill,2012
 11043,Guanajuato,Victoria,2014,tarifa_millar,,,false,
@@ -6639,8 +6635,6 @@ cvegeo,estado,municipio,ejercicio,tipo_esquema,numero_rangos,monto_max_rango,imp
 22005,Queretaro,Colon,2019,progresivo,25,100143891.1,false,
 22005,Queretaro,Colon,2020,progresivo,25,1917537179.96,false,
 22005,Queretaro,Colon,2021,progresivo,25,1917537179.96,false,
-22005,Queretaro,Colon,2022,progresivo,,,tipo_only_fill,2021
-22005,Queretaro,Colon,2023,progresivo,,,tipo_only_fill,2021
 22005,Queretaro,Colon,2024,progresivo,25,2848684672.48,false,
 22005,Queretaro,Colon,2025,progresivo,25,2848684672.48,false,
 22006,Queretaro,Corregidora,2010,tarifa_millar,,,false,
@@ -6736,7 +6730,6 @@ cvegeo,estado,municipio,ejercicio,tipo_esquema,numero_rangos,monto_max_rango,imp
 22011,Queretaro,El Marques,2022,progresivo,25,999999999.0,false,
 22011,Queretaro,El Marques,2023,progresivo,25,6127678.41,false,
 22011,Queretaro,El Marques,2024,progresivo,25,6127678.41,false,
-22011,Queretaro,El Marques,2025,progresivo,25,6127678.41,ffill,2024
 22012,Queretaro,Pedro Escobedo,2010,tarifa_millar,,,false,
 22012,Queretaro,Pedro Escobedo,2011,tarifa_millar,,,false,
 22012,Queretaro,Pedro Escobedo,2012,tarifa_millar,,,false,
@@ -6748,7 +6741,6 @@ cvegeo,estado,municipio,ejercicio,tipo_esquema,numero_rangos,monto_max_rango,imp
 22012,Queretaro,Pedro Escobedo,2018,progresivo,25,999999999.0,false,
 22012,Queretaro,Pedro Escobedo,2019,progresivo,25,25064209.5,false,
 22012,Queretaro,Pedro Escobedo,2020,progresivo,25,25064209.5,false,
-22012,Queretaro,Pedro Escobedo,2021,progresivo,25,25064209.5,confirmed_fill,2020
 22012,Queretaro,Pedro Escobedo,2022,progresivo,25,25064209.5,false,
 22012,Queretaro,Pedro Escobedo,2023,progresivo,25,25064209.5,false,
 22012,Queretaro,Pedro Escobedo,2024,progresivo,25,25064209.5,false,
@@ -6781,9 +6773,6 @@ cvegeo,estado,municipio,ejercicio,tipo_esquema,numero_rangos,monto_max_rango,imp
 22014,Queretaro,Queretaro,2019,progresivo,25,686844196.4,false,
 22014,Queretaro,Queretaro,2020,progresivo,25,686844196.4,false,
 22014,Queretaro,Queretaro,2021,progresivo,25,686844196.4,false,
-22014,Queretaro,Queretaro,2022,progresivo,,,tipo_only_fill,2021
-22014,Queretaro,Queretaro,2023,progresivo,,,tipo_only_fill,2021
-22014,Queretaro,Queretaro,2024,progresivo,,,tipo_only_fill,2021
 22014,Queretaro,Queretaro,2025,progresivo,25,999999999999.99,false,
 22015,Queretaro,San Joaquin,2010,tarifa_millar,,,false,
 22015,Queretaro,San Joaquin,2011,tarifa_millar,,,false,
@@ -6816,7 +6805,6 @@ cvegeo,estado,municipio,ejercicio,tipo_esquema,numero_rangos,monto_max_rango,imp
 22016,Queretaro,San Juan del Rio,2022,progresivo,35,532575544.78,false,
 22016,Queretaro,San Juan del Rio,2023,progresivo,35,532575544.78,false,
 22016,Queretaro,San Juan del Rio,2024,progresivo,35,532575544.78,false,
-22016,Queretaro,San Juan del Rio,2025,progresivo,35,532575544.78,ffill,2024
 22017,Queretaro,Tequisquiapan,2010,tarifa_millar,,,false,
 22017,Queretaro,Tequisquiapan,2011,tarifa_millar,,,false,
 22017,Queretaro,Tequisquiapan,2012,tarifa_millar,,,false,
@@ -8242,7 +8230,7 @@ cvegeo,estado,municipio,ejercicio,tipo_esquema,numero_rangos,monto_max_rango,imp
 31009,Yucatan,Cansahcab,2022,mixto,2,200000.0,false,
 31009,Yucatan,Cansahcab,2023,mixto,2,200000.0,false,
 31009,Yucatan,Cansahcab,2024,mixto,2,200000.0,false,
-31009,Yucatan,Cansahcab,2025,mixto,2,200000.0,ffill,2024
+31009,Yucatan,Cansahcab,2025,mixto,,,ffill,2024
 31010,Yucatan,Cantamayec,2010,progresivo,7,10000.0,false,
 31010,Yucatan,Cantamayec,2011,mixto,7,10000.0,false,
 31010,Yucatan,Cantamayec,2012,mixto,7,10000.0,false,
@@ -8402,7 +8390,7 @@ cvegeo,estado,municipio,ejercicio,tipo_esquema,numero_rangos,monto_max_rango,imp
 31019,Yucatan,Chemax,2023,progresivo,7,20000.0,false,
 31019,Yucatan,Chemax,2024,mixto,7,20000.0,false,
 31019,Yucatan,Chemax,2025,mixto,7,20000.0,false,
-31020,Yucatan,Chicxulub Pueblo,2010,progresivo,7,10000.0,bfill,2011
+31020,Yucatan,Chicxulub Pueblo,2010,progresivo,,,bfill,2011
 31020,Yucatan,Chicxulub Pueblo,2011,progresivo,7,10000.0,false,
 31020,Yucatan,Chicxulub Pueblo,2012,progresivo,7,10000.0,false,
 31020,Yucatan,Chicxulub Pueblo,2013,progresivo,7,10000.0,false,
@@ -8417,7 +8405,7 @@ cvegeo,estado,municipio,ejercicio,tipo_esquema,numero_rangos,monto_max_rango,imp
 31020,Yucatan,Chicxulub Pueblo,2022,progresivo,11,4000000.0,false,
 31020,Yucatan,Chicxulub Pueblo,2023,mixto,11,4000000.0,false,
 31020,Yucatan,Chicxulub Pueblo,2024,progresivo,11,4000000.0,false,
-31020,Yucatan,Chicxulub Pueblo,2025,progresivo,11,4000000.0,ffill,2024
+31020,Yucatan,Chicxulub Pueblo,2025,progresivo,,,ffill,2024
 31021,Yucatan,Chichimila,2010,progresivo,9,22500.0,false,
 31021,Yucatan,Chichimila,2011,progresivo,9,22500.0,false,
 31021,Yucatan,Chichimila,2012,progresivo,9,22500.0,false,
@@ -8717,10 +8705,10 @@ cvegeo,estado,municipio,ejercicio,tipo_esquema,numero_rangos,monto_max_rango,imp
 31040,Yucatan,Izamal,2019,mixto,28,33000.0,false,
 31040,Yucatan,Izamal,2020,mixto,28,33000.0,false,
 31040,Yucatan,Izamal,2021,mixto,28,33000.0,false,
-31040,Yucatan,Izamal,2022,mixto,28,33000.0,ffill,2021
-31040,Yucatan,Izamal,2023,mixto,28,33000.0,ffill,2021
-31040,Yucatan,Izamal,2024,mixto,28,33000.0,ffill,2021
-31040,Yucatan,Izamal,2025,mixto,28,33000.0,ffill,2021
+31040,Yucatan,Izamal,2022,mixto,,,ffill,2021
+31040,Yucatan,Izamal,2023,mixto,,,ffill,2021
+31040,Yucatan,Izamal,2024,mixto,,,ffill,2021
+31040,Yucatan,Izamal,2025,mixto,,,ffill,2021
 31041,Yucatan,Kanasin,2010,mixto,4,280000.0,false,
 31041,Yucatan,Kanasin,2011,progresivo,4,280000.0,false,
 31041,Yucatan,Kanasin,2012,progresivo,4,280000.0,false,
@@ -8769,7 +8757,6 @@ cvegeo,estado,municipio,ejercicio,tipo_esquema,numero_rangos,monto_max_rango,imp
 31043,Yucatan,Kaua,2023,tasa_unica,,,false,
 31043,Yucatan,Kaua,2024,tasa_unica,,,false,
 31043,Yucatan,Kaua,2025,otro_no_clasificado,,,false,
-31044,Yucatan,Kinchil,2010,mixto,7,60000.0,bfill,2011
 31044,Yucatan,Kinchil,2011,mixto,7,60000.0,false,
 31044,Yucatan,Kinchil,2012,mixto,7,60000.0,false,
 31044,Yucatan,Kinchil,2013,mixto,7,60000.0,false,
@@ -9211,8 +9198,6 @@ cvegeo,estado,municipio,ejercicio,tipo_esquema,numero_rangos,monto_max_rango,imp
 31071,Yucatan,Sudzal,2024,progresivo,7,200000.0,false,
 31071,Yucatan,Sudzal,2025,progresivo,13,10000000.0,false,
 31072,Yucatan,Suma,2010,mixto,7,10000.0,false,
-31072,Yucatan,Suma,2011,mixto,7,10000.0,confirmed_fill,2010
-31072,Yucatan,Suma,2012,mixto,7,10000.0,confirmed_fill,2010
 31072,Yucatan,Suma,2013,mixto,7,10000.0,false,
 31072,Yucatan,Suma,2014,mixto,7,10000.0,false,
 31072,Yucatan,Suma,2015,mixto,7,10000.0,false,
@@ -9221,8 +9206,6 @@ cvegeo,estado,municipio,ejercicio,tipo_esquema,numero_rangos,monto_max_rango,imp
 31072,Yucatan,Suma,2018,mixto,7,10000.0,false,
 31072,Yucatan,Suma,2019,mixto,7,10000.0,false,
 31072,Yucatan,Suma,2020,mixto,7,10000.0,false,
-31072,Yucatan,Suma,2021,mixto,7,10000.0,confirmed_fill,2020
-31072,Yucatan,Suma,2022,mixto,7,10000.0,confirmed_fill,2020
 31072,Yucatan,Suma,2023,mixto,7,10000.0,false,
 31072,Yucatan,Suma,2024,mixto,7,10000.0,false,
 31072,Yucatan,Suma,2025,mixto,7,10000.0,false,
@@ -9282,8 +9265,8 @@ cvegeo,estado,municipio,ejercicio,tipo_esquema,numero_rangos,monto_max_rango,imp
 31076,Yucatan,Tecoh,2021,progresivo,7,120000.0,false,
 31076,Yucatan,Tecoh,2022,progresivo,7,120000.0,false,
 31076,Yucatan,Tecoh,2023,progresivo,7,120000.0,false,
-31076,Yucatan,Tecoh,2024,progresivo,7,120000.0,ffill,2023
-31076,Yucatan,Tecoh,2025,progresivo,7,120000.0,ffill,2023
+31076,Yucatan,Tecoh,2024,progresivo,,,ffill,2023
+31076,Yucatan,Tecoh,2025,progresivo,,,ffill,2023
 31077,Yucatan,Tekal de Venegas,2010,otro_no_clasificado,,,false,
 31077,Yucatan,Tekal de Venegas,2011,otro_no_clasificado,,,false,
 31077,Yucatan,Tekal de Venegas,2012,otro_no_clasificado,,,false,
@@ -9315,7 +9298,7 @@ cvegeo,estado,municipio,ejercicio,tipo_esquema,numero_rangos,monto_max_rango,imp
 31078,Yucatan,Tekanto,2022,mixto,7,10000.0,false,
 31078,Yucatan,Tekanto,2023,progresivo,7,10000.01,false,
 31078,Yucatan,Tekanto,2024,mixto,7,10000.0,false,
-31078,Yucatan,Tekanto,2025,mixto,7,10000.0,ffill,2024
+31078,Yucatan,Tekanto,2025,mixto,,,ffill,2024
 31079,Yucatan,Tekax,2010,tarifa_millar,,,false,
 31079,Yucatan,Tekax,2011,tarifa_millar,,,false,
 31079,Yucatan,Tekax,2012,tarifa_millar,,,false,
@@ -9352,10 +9335,10 @@ cvegeo,estado,municipio,ejercicio,tipo_esquema,numero_rangos,monto_max_rango,imp
 31081,Yucatan,Tekom,2013,progresivo,7,10000.0,false,
 31081,Yucatan,Tekom,2014,progresivo,7,10000.0,false,
 31081,Yucatan,Tekom,2015,progresivo,7,10000.0,false,
-31081,Yucatan,Tekom,2016,progresivo,7,10000.0,ffill,2015
-31081,Yucatan,Tekom,2017,progresivo,7,10000.0,ffill,2015
-31081,Yucatan,Tekom,2018,progresivo,7,10000.0,ffill,2015
-31081,Yucatan,Tekom,2019,progresivo,7,10000.0,ffill,2015
+31081,Yucatan,Tekom,2016,progresivo,,,ffill,2015
+31081,Yucatan,Tekom,2017,progresivo,,,ffill,2015
+31081,Yucatan,Tekom,2018,progresivo,,,ffill,2015
+31081,Yucatan,Tekom,2019,progresivo,,,ffill,2015
 31081,Yucatan,Tekom,2021,tasa_unica,,,false,
 31081,Yucatan,Tekom,2022,tasa_unica,,,confirmed_fill,2021
 31081,Yucatan,Tekom,2023,tasa_unica,,,confirmed_fill,2021
@@ -9421,7 +9404,7 @@ cvegeo,estado,municipio,ejercicio,tipo_esquema,numero_rangos,monto_max_rango,imp
 31085,Yucatan,Temozon,2022,progresivo,5,400000.0,false,
 31085,Yucatan,Temozon,2023,mixto,5,400000.0,false,
 31085,Yucatan,Temozon,2024,mixto,5,400000.0,false,
-31085,Yucatan,Temozon,2025,mixto,5,400000.0,ffill,2024
+31085,Yucatan,Temozon,2025,mixto,,,ffill,2024
 31086,Yucatan,Tepakan,2010,tasa_unica,,,false,
 31086,Yucatan,Tepakan,2011,tasa_unica,,,false,
 31086,Yucatan,Tepakan,2012,tasa_unica,,,false,
@@ -9577,7 +9560,7 @@ cvegeo,estado,municipio,ejercicio,tipo_esquema,numero_rangos,monto_max_rango,imp
 31095,Yucatan,Tixpehual,2023,otro_no_clasificado,,,false,
 31095,Yucatan,Tixpehual,2024,otro_no_clasificado,,,false,
 31095,Yucatan,Tixpehual,2025,otro_no_clasificado,,,false,
-31096,Yucatan,Tizimin,2010,progresivo,7,10000.0,bfill,2011
+31096,Yucatan,Tizimin,2010,progresivo,,,bfill,2011
 31096,Yucatan,Tizimin,2011,progresivo,7,10000.0,false,
 31096,Yucatan,Tizimin,2012,progresivo,7,10000.0,false,
 31096,Yucatan,Tizimin,2013,progresivo,7,10000.0,false,
@@ -9672,10 +9655,10 @@ cvegeo,estado,municipio,ejercicio,tipo_esquema,numero_rangos,monto_max_rango,imp
 31102,Yucatan,Valladolid,2011,otro_no_clasificado,,,false,
 31102,Yucatan,Valladolid,2012,otro_no_clasificado,,,false,
 31102,Yucatan,Valladolid,2013,mixto,5,135000.0,false,
-31102,Yucatan,Valladolid,2014,mixto,5,135000.0,ffill,2013
-31102,Yucatan,Valladolid,2015,mixto,5,135000.0,ffill,2013
-31102,Yucatan,Valladolid,2016,mixto,5,135000.0,ffill,2013
-31102,Yucatan,Valladolid,2017,mixto,5,135000.0,ffill,2013
+31102,Yucatan,Valladolid,2014,mixto,,,ffill,2013
+31102,Yucatan,Valladolid,2015,mixto,,,ffill,2013
+31102,Yucatan,Valladolid,2016,mixto,,,ffill,2013
+31102,Yucatan,Valladolid,2017,mixto,,,ffill,2013
 31103,Yucatan,Xocchel,2010,mixto,7,10000.0,false,
 31103,Yucatan,Xocchel,2011,mixto,7,10000.0,false,
 31103,Yucatan,Xocchel,2012,progresivo,7,10000.0,false,
@@ -9705,7 +9688,7 @@ cvegeo,estado,municipio,ejercicio,tipo_esquema,numero_rangos,monto_max_rango,imp
 31104,Yucatan,Yaxcaba,2022,progresivo,7,10000.0,false,
 31104,Yucatan,Yaxcaba,2023,mixto,7,10000.0,false,
 31104,Yucatan,Yaxcaba,2024,progresivo,7,500000.0,false,
-31104,Yucatan,Yaxcaba,2025,progresivo,7,500000.0,ffill,2024
+31104,Yucatan,Yaxcaba,2025,progresivo,,,ffill,2024
 31105,Yucatan,Yaxkukul,2010,cuota_fija_simple,,,false,
 31105,Yucatan,Yaxkukul,2011,cuota_fija_simple,,,false,
 31105,Yucatan,Yaxkukul,2012,cuota_fija_simple,,,false,

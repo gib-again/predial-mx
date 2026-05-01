@@ -1719,3 +1719,157 @@ def extract_all(
         print(f"  JSON vía PDF visión: {stats['ok_pdf']}")
     print(f"  Saltados (existían): {stats['skipped']}")
     print(f"  Errores            : {stats['errors']}")
+
+
+# ════════════════════════════════════════════════════════════════════
+# extract_single — extracción dirigida a un único TXT
+# ════════════════════════════════════════════════════════════════════
+
+def extract_single(
+    txt_path: Path,
+    json_dir: Path,
+    prefijo: str,
+    estado_nombre: str = "",
+    pdf_fallback: bool = True,
+    adapter=None,
+) -> Path | None:
+    """Extrae predial de un único focus_predial.txt y persiste el JSON.
+
+    Wrapper sobre la lógica de `extract_all` para usar desde flujos
+    interactivos / re-extracción dirigida (audit_pendiente). Si ya existe un
+    JSON válido en destino, lo respeta y retorna su path.
+
+    Args:
+        txt_path: Path al focus_predial.txt fuente.
+        json_dir: Directorio raíz para los JSONs (típicamente
+                  predial-mx-v2/{estado}/ o data/{estado}/json_predial/).
+        prefijo: Prefijo del estado (ej. "YUC", "GTO").
+        estado_nombre: Nombre legible para el prompt (ej. "Yucatán").
+        pdf_fallback: Si True, intenta TXT extendido + PDF visión cuando
+                      el TXT inicial falla.
+        adapter: Adapter del estado, requerido para fallback PDF visión.
+
+    Returns:
+        Path del JSON escrito (o existente válido), o None si falló.
+    """
+    if not txt_path.exists():
+        print(f"  [extract_single] No existe: {txt_path}")
+        return None
+
+    if not estado_nombre:
+        estado_nombre = prefijo.capitalize()
+
+    try:
+        anio, slug, nombre_mpio = parse_predial_filename(txt_path, prefijo)
+    except Exception as e:
+        print(f"  [extract_single] parse_filename falló: {e}")
+        return None
+
+    # Ruta destino. Si json_dir parece ser predial-mx-v2/{estado}/ (sin
+    # subdirectorio por año), escribir directo allí; si tiene subdir por año,
+    # mantener el patrón {anio}/.
+    if json_dir.name in {"yucatan", "coahuila", "queretaro", "jalisco",
+                         "tamaulipas", "guanajuato", "chihuahua", "colima",
+                         "edomex", "sinaloa", "tabasco", "oaxaca"}:
+        out_path = json_dir / f"{prefijo}_PREDIAL_{anio}_{slug}.json"
+    else:
+        out_dir = json_dir / str(anio)
+        out_dir.mkdir(parents=True, exist_ok=True)
+        out_path = out_dir / f"{prefijo}_PREDIAL_{anio}_{slug}.json"
+    out_path.parent.mkdir(parents=True, exist_ok=True)
+
+    if out_path.exists():
+        try:
+            existing = json.loads(out_path.read_text(encoding="utf-8"))
+            if _is_valid_extraction(existing):
+                print(f"  [extract_single] OK previo: {out_path.name}")
+                return out_path
+        except Exception:
+            pass
+
+    print(f"  [extract_single] >>> {nombre_mpio} {anio}")
+
+    try:
+        texto = txt_path.read_text(encoding="utf-8", errors="ignore")
+    except Exception as e:
+        print(f"    [ERROR] Leyendo TXT: {e}")
+        return None
+    if not texto.strip():
+        print("    [ERROR] TXT vacío")
+        return None
+
+    data = None
+    used_pdf = False
+    used_ext_txt = False
+
+    # Paso 1 — TXT
+    try:
+        print(f"    [1/3] TXT ({len(texto)} chars)...")
+        data = call_llm(texto, anio, nombre_mpio, estado_nombre)
+    except Exception as e:
+        print(f"    [ERROR] LLM TXT: {e}")
+
+    # Paso 2 — TXT extendido
+    if pdf_fallback and (data is None or not _is_valid_extraction(data)):
+        ext_texto = get_extended_txt(txt_path, adapter)
+        if ext_texto and len(ext_texto) > len(texto) + 500:
+            try:
+                print(f"    [2/3] TXT extendido ({len(ext_texto)} chars)...")
+                data_ext = call_llm(ext_texto, anio, nombre_mpio, estado_nombre)
+                if _is_valid_extraction(data_ext):
+                    data = data_ext
+                    used_ext_txt = True
+                    print(f"    [2/3] TXT ext → válido ✓")
+                elif data is None:
+                    data = data_ext
+            except Exception as e:
+                print(f"    [ERROR] LLM TXT extendido: {e}")
+
+    # Paso 3 — PDF visión
+    if pdf_fallback and not used_ext_txt and (data is None or not _is_valid_extraction(data)):
+        pdf_path = txt_path.with_suffix(".pdf")
+        if not pdf_path.exists() and adapter is not None:
+            pdf_path = _generate_focus_pdf_from_segment(txt_path, adapter)
+
+        if pdf_path is not None and pdf_path.exists():
+            import fitz
+            try:
+                with fitz.open(str(pdf_path)) as check_doc:
+                    n_pages = len(check_doc)
+            except Exception:
+                n_pages = 0
+
+            if 0 < n_pages <= 20:
+                try:
+                    ext_pdf = get_extended_pdf(pdf_path, adapter)
+                    print(f"    [3/3] PDF visión ({n_pages}pp)...")
+                    data_pdf = call_llm_vision(ext_pdf, anio, nombre_mpio, estado_nombre)
+                    if _is_valid_extraction(data_pdf):
+                        data = data_pdf
+                        used_pdf = True
+                        print(f"    [3/3] PDF → válido ✓")
+                    elif data is None:
+                        data = data_pdf
+                    if ext_pdf != pdf_path and ext_pdf.exists():
+                        ext_pdf.unlink()
+                except Exception as e:
+                    print(f"    [ERROR] Vision PDF: {e}")
+            elif n_pages > 20:
+                print(f"    [3/3] PDF tiene {n_pages} páginas, skip")
+
+    if data is None:
+        print("    [extract_single] FALLO — no se obtuvo extracción válida")
+        return None
+
+    data["_meta"] = {
+        "fuente": "pdf_vision" if used_pdf else ("txt_extendido" if used_ext_txt else "txt"),
+        "modelo": OPENAI_VISION_MODEL if used_pdf else OPENAI_MODEL,
+    }
+
+    try:
+        out_path.write_text(json.dumps(data, ensure_ascii=False, indent=2), encoding="utf-8")
+        print(f"    [OK] → {out_path}")
+        return out_path
+    except Exception as e:
+        print(f"    [ERROR] Guardando: {e}")
+        return None

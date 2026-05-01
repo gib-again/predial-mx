@@ -1,0 +1,35 @@
+{
+  "predial": {
+    "tipo_esquema": "tasa_unica",
+    "tabla": [
+      {
+        "descripcion": "Tasa general sobre el valor catastral del inmueble",
+        "tasa": 0.25,
+        "base_calculo": "valor_catastral",
+        "unidad": "porcentaje",
+        "cuota_fija_adicional": null
+      }
+    ],
+    "minimo_predial": null,
+    "comentarios": "La mecánica principal del impuesto predial es una tasa única de 0.25% sobre el valor catastral; el texto la repite por secciones 1 a 5 con la misma tasa. Cuando no pueda determinarse el valor catastral, se establece una cuota fija alternativa de $80.00 para terrenos con construcción y $50.00 para terrenos sin construcción, pero no forma parte de la tabla principal de tasa única. Tarifa paralela no incluida en la tabla principal: predios destinados a la producción agropecuaria pagan 10 al millar anual sobre el valor registrado o catastral. También aparece un impuesto predial con base en rentas o frutos civiles de 2% para casa habitación y 2% para actividades, como mecánica separada."
+  },
+  "_meta": {
+    "fuente": "txt",
+    "modelo": "imputed_confirmed_fill"
+  },
+  "_meta_v2": {
+    "intentos": 0,
+    "requiere_revision": false,
+    "razon": null,
+    "tokens": {
+      "input": 0,
+      "output": 0,
+      "cached": 0
+    },
+    "cvegeo": "31051",
+    "estado": "yucatan",
+    "anio": 2016,
+    "imputed_from_year": 2015,
+    "imputed_method": "confirmed_fill"
+  }
+}

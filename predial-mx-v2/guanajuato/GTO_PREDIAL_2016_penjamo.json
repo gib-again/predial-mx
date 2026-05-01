@@ -1,0 +1,60 @@
+{
+  "predial": {
+    "tipo_esquema": "tarifa_millar",
+    "tabla": [
+      {
+        "grupo": "urbano",
+        "clave": "urbano_con_edificaciones",
+        "descripcion": "Inmuebles urbanos y suburbanos con edificaciones",
+        "tasa_millar": 0.0024,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "urbano",
+        "clave": "urbano_sin_edificaciones",
+        "descripcion": "Inmuebles urbanos y suburbanos sin edificaciones",
+        "tasa_millar": 0.0045,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "rustico",
+        "clave": "rustico",
+        "descripcion": "Inmuebles rústicos",
+        "tasa_millar": 0.0018,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "general",
+        "clave": "predios_anteriores_a_1993",
+        "descripcion": "Con anterioridad al año 1993",
+        "tasa_millar": 0.012,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      }
+    ],
+    "minimo_predial": null,
+    "comentarios": "Art. 4 establece tasas anuales al millar por tipo de inmueble y antigüedad del valor determinado o modificado. Se transcribe la mecánica tarifaria visible en el texto. El documento muestra una tabla con renglones por periodo de valuación; para los inmuebles urbanos/suburbanos se distinguen con edificación y sin edificación, y para inmuebles rústicos aparece tasa propia. La fracción 4 ('con anterioridad al año 1993') aparece incompleta en el OCR pero se conserva como fila independiente con la tasa visible 12.0 al millar para la columna mostrada."
+  },
+  "_meta": {
+    "fuente": "txt",
+    "modelo": "imputed_confirmed_fill"
+  },
+  "_meta_v2": {
+    "intentos": 0,
+    "requiere_revision": false,
+    "razon": null,
+    "tokens": {
+      "input": 0,
+      "output": 0,
+      "cached": 0
+    },
+    "cvegeo": "11023",
+    "estado": "guanajuato",
+    "anio": 2016,
+    "imputed_from_year": 2015,
+    "imputed_method": "confirmed_fill"
+  }
+}

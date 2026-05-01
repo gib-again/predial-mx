@@ -1,0 +1,60 @@
+{
+  "predial": {
+    "tipo_esquema": "tarifa_millar",
+    "tabla": [
+      {
+        "grupo": "general",
+        "clave": "entrada_en_vigor_a",
+        "descripcion": "A la entrada en vigor de la presente ley",
+        "tasa_millar": 0.0024,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "general",
+        "clave": "durante_2002_a_2011",
+        "descripcion": "Durante los años 2002 y hasta 2011, inclusive",
+        "tasa_millar": 0.0024,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "general",
+        "clave": "anterior_2002_hasta_1993",
+        "descripcion": "Con anterioridad al año 2002 y hasta 1993, inclusive",
+        "tasa_millar": 0.008,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "general",
+        "clave": "anterior_1993",
+        "descripcion": "Con anterioridad al año de 1993",
+        "tasa_millar": 0.013,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      }
+    ],
+    "minimo_predial": null,
+    "comentarios": "Art. 4 establece tasas al millar diferenciadas por antigüedad del inmueble sobre el valor catastral. La tabla es heterogénea por tipo de inmueble/categoría: urbanos o suburbanos con edificaciones, urbanos o suburbanos sin edificaciones, y rústicos. Se transcribe la mecánica principal como tarifa_millar con el grupo general porque el texto OCR no permite separar limpiamente cada columna sin mezclar renglones; las tasas visibles son 2.4 al millar, 4.5 al millar, 1.8 al millar; luego 2.4 al millar, 4.5 al millar, 1.8 al millar; luego 8 al millar, 15 al millar, 6 al millar; y finalmente 13 al millar, 12 al millar. Art. 4 también menciona inmuebles urbanos/suburbanos/rústicos, con y sin edificaciones. Art. 5 y 6 contienen valores unitarios y factores de avalúo, no forman parte de la tarifa del predial."
+  },
+  "_meta": {
+    "fuente": "txt",
+    "modelo": "imputed_confirmed_fill"
+  },
+  "_meta_v2": {
+    "intentos": 0,
+    "requiere_revision": false,
+    "razon": null,
+    "tokens": {
+      "input": 0,
+      "output": 0,
+      "cached": 0
+    },
+    "cvegeo": "11006",
+    "estado": "guanajuato",
+    "anio": 2013,
+    "imputed_from_year": 2012,
+    "imputed_method": "confirmed_fill"
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "predial": {
+    "tipo_esquema": "tarifa_millar",
+    "tabla": [
+      {
+        "grupo": "urbano",
+        "clave": "predios_urbanos",
+        "descripcion": "Predios urbanos",
+        "tasa_millar": 0.005,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "rustico",
+        "clave": "predios_rusticos",
+        "descripcion": "Predios rústicos",
+        "tasa_millar": 0.005,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      }
+    ],
+    "minimo_predial": {
+      "monto": 32.0,
+      "periodicidad": "bimestral",
+      "unidad": "pesos"
+    },
+    "comentarios": "Art. 2: tasa general de 5 al millar anual para predios urbanos y 5 al millar anual para predios rústicos. Incentivos por pago anual anticipado, pensionados/jubilados/adultos mayores/personas con discapacidad, instituciones de beneficencia e instituciones educativas no públicas, y empresas con nuevos empleos se ignoran por ser bonificaciones/descuentos. Se conserva el mínimo predial de $32.00 por bimestre."
+  },
+  "_meta": {
+    "fuente": "txt",
+    "modelo": "imputed_confirmed_fill"
+  },
+  "_meta_v2": {
+    "intentos": 0,
+    "requiere_revision": false,
+    "razon": null,
+    "tokens": {
+      "input": 0,
+      "output": 0,
+      "cached": 0
+    },
+    "cvegeo": "05026",
+    "estado": "coahuila",
+    "anio": 2017,
+    "imputed_from_year": 2016,
+    "imputed_method": "confirmed_fill"
+  }
+}

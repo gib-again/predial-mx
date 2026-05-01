@@ -1,0 +1,116 @@
+{
+  "predial": {
+    "tipo_esquema": "tarifa_millar",
+    "tabla": [
+      {
+        "grupo": "general",
+        "clave": "entrada_en_vigor",
+        "descripcion": "A la entrada en vigor de la presente Ley: inmuebles urbanos y suburbanos con edificaciones",
+        "tasa_millar": 0.00355,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "general",
+        "clave": "entrada_en_vigor_sin_edificaciones",
+        "descripcion": "A la entrada en vigor de la presente Ley: inmuebles urbanos y suburbanos sin edificaciones",
+        "tasa_millar": 0.0065,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "rustico",
+        "clave": "entrada_en_vigor_rustico",
+        "descripcion": "A la entrada en vigor de la presente Ley: inmuebles rústicos",
+        "tasa_millar": 0.000398,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "general",
+        "clave": "anios_2002_2011_edificaciones",
+        "descripcion": "Durante los años 2002 y hasta el 2011 inclusive: inmuebles urbanos y suburbanos con edificaciones",
+        "tasa_millar": 0.00355,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "general",
+        "clave": "anios_2002_2011_sin_edificaciones",
+        "descripcion": "Durante los años 2002 y hasta el 2011 inclusive: inmuebles urbanos y suburbanos sin edificaciones",
+        "tasa_millar": 0.0065,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "rustico",
+        "clave": "anios_2002_2011_rustico",
+        "descripcion": "Durante los años 2002 y hasta el 2011 inclusive: inmuebles rústicos",
+        "tasa_millar": 0.000398,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "general",
+        "clave": "anterior_2002_1993_edificaciones",
+        "descripcion": "Con anterioridad al año 2002 y hasta 1993 inclusive: inmuebles urbanos y suburbanos con edificaciones",
+        "tasa_millar": 0.008,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "general",
+        "clave": "anterior_2002_1993_sin_edificaciones",
+        "descripcion": "Con anterioridad al año 2002 y hasta 1993 inclusive: inmuebles urbanos y suburbanos sin edificaciones",
+        "tasa_millar": 0.015,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "rustico",
+        "clave": "anterior_2002_1993_rustico",
+        "descripcion": "Con anterioridad al año 2002 y hasta 1993 inclusive: inmuebles rústicos",
+        "tasa_millar": 0.006,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "general",
+        "clave": "anterior_1993_edificaciones",
+        "descripcion": "Con anterioridad al año de 1993: inmuebles urbanos y suburbanos con edificaciones",
+        "tasa_millar": 0.013,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "general",
+        "clave": "anterior_1993_sin_edificaciones",
+        "descripcion": "Con anterioridad al año de 1993: inmuebles urbanos y suburbanos sin edificaciones",
+        "tasa_millar": 0.012,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      }
+    ],
+    "minimo_predial": null,
+    "comentarios": "Artículo 4 establece una tarifa categórica por antigüedad/condición del inmueble, no por rangos de valor catastral. Se transcribe como tarifa_millar. El texto también contiene tablas de valores unitarios de terreno y construcción de los artículos 5 y 6, que son catastro y no forman parte de la mecánica del impuesto predial. Para rústicos se conserva la tasa paralela explícita (0.398 al millar, luego 6 al millar en el tramo 1993-2002, etc.) dentro de la misma tarifa porque aparece en la misma tabla de tasas del artículo 4."
+  },
+  "_meta": {
+    "fuente": "txt",
+    "modelo": "imputed_confirmed_fill"
+  },
+  "_meta_v2": {
+    "intentos": 0,
+    "requiere_revision": false,
+    "razon": null,
+    "tokens": {
+      "input": 0,
+      "output": 0,
+      "cached": 0
+    },
+    "cvegeo": "11007",
+    "estado": "guanajuato",
+    "anio": 2013,
+    "imputed_from_year": 2012,
+    "imputed_method": "confirmed_fill"
+  }
+}

@@ -1,0 +1,70 @@
+{
+  "predial": {
+    "tipo_esquema": "progresivo",
+    "tabla": [
+      {
+        "n_rango": 1,
+        "inferior": 0.01,
+        "superior": 5000.0,
+        "cuota_fija": 10.0,
+        "tasa_marginal": 0.0006
+      },
+      {
+        "n_rango": 2,
+        "inferior": 5000.01,
+        "superior": 7500.0,
+        "cuota_fija": 13.0,
+        "tasa_marginal": 0.001
+      },
+      {
+        "n_rango": 3,
+        "inferior": 7500.01,
+        "superior": 10500.0,
+        "cuota_fija": 16.0,
+        "tasa_marginal": 0.0012
+      },
+      {
+        "n_rango": 4,
+        "inferior": 10500.01,
+        "superior": 12500.0,
+        "cuota_fija": 19.0,
+        "tasa_marginal": 0.0013
+      },
+      {
+        "n_rango": 5,
+        "inferior": 12500.01,
+        "superior": 15500.0,
+        "cuota_fija": 22.0,
+        "tasa_marginal": 0.002
+      },
+      {
+        "n_rango": 6,
+        "inferior": 15500.01,
+        "superior": null,
+        "cuota_fija": 25.0,
+        "tasa_marginal": 0.009
+      }
+    ],
+    "minimo_predial": null,
+    "comentarios": "Art. 13: tarifa progresiva por valor catastral con cuota fija anual y factor para aplicar al excedente del límite inferior. Además, el texto establece una tarifa paralela para predios agropecuarios: 'Todo predio destinado a la producción agropecuaria se pagará 10 al millar anual sobre el valor registrado o catastral', la cual no se incluye en la tabla principal por ser una tarifa separada. No se extraen descuentos del Art. 14 ni tablas de valores unitarios de terreno/construcción."
+  },
+  "_meta": {
+    "fuente": "txt",
+    "modelo": "imputed_confirmed_fill"
+  },
+  "_meta_v2": {
+    "intentos": 0,
+    "requiere_revision": false,
+    "razon": null,
+    "tokens": {
+      "input": 0,
+      "output": 0,
+      "cached": 0
+    },
+    "cvegeo": "31015",
+    "estado": "yucatan",
+    "anio": 2022,
+    "imputed_from_year": 2020,
+    "imputed_method": "confirmed_fill"
+  }
+}

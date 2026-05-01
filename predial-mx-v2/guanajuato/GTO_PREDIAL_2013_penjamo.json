@@ -1,0 +1,56 @@
+{
+  "predial": {
+    "tipo_esquema": "tarifa_millar",
+    "tabla": [
+      {
+        "grupo": "urbano",
+        "clave": "con_edificaciones",
+        "descripcion": "Inmuebles urbanos y suburbanos con edificaciones",
+        "tasa_millar": 0.0024,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "urbano",
+        "clave": "sin_edificaciones",
+        "descripcion": "Inmuebles urbanos y suburbanos sin edificaciones",
+        "tasa_millar": 0.0045,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "rustico",
+        "clave": "rusticos",
+        "descripcion": "Inmuebles rústicos",
+        "tasa_millar": 0.0018,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      }
+    ],
+    "minimo_predial": {
+      "monto": 0.5,
+      "periodicidad": "anual",
+      "unidad": "pesos"
+    },
+    "comentarios": "Art. 4: tasas anuales al millar por tipo de inmueble. Se omiten los valores unitarios de catastro de los arts. 5 y 6 por ser tablas de valuación, no mecánica de cálculo del impuesto. Art. 4 también muestra tasas históricas para distintos periodos, pero la tasa aplicable al ejercicio 2012 es la vigente en la entrada en vigor de la ley: 2.4 al millar para inmuebles urbanos y suburbanos con edificaciones, 4.5 al millar para urbanos y suburbanos sin edificaciones, y 1.8 al millar para rústicos. En Art. 6 se menciona un mínimo de 0.5% en el contexto de avalúos, no como mínimo predial; no se incorpora como mecánica del impuesto."
+  },
+  "_meta": {
+    "fuente": "txt",
+    "modelo": "imputed_confirmed_fill"
+  },
+  "_meta_v2": {
+    "intentos": 0,
+    "requiere_revision": false,
+    "razon": null,
+    "tokens": {
+      "input": 0,
+      "output": 0,
+      "cached": 0
+    },
+    "cvegeo": "11023",
+    "estado": "guanajuato",
+    "anio": 2013,
+    "imputed_from_year": 2012,
+    "imputed_method": "confirmed_fill"
+  }
+}

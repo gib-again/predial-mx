@@ -1,0 +1,56 @@
+{
+  "predial": {
+    "tipo_esquema": "progresivo",
+    "tabla": [
+      {
+        "n_rango": 1,
+        "inferior": 0.01,
+        "superior": 50000.0,
+        "cuota_fija": 153.56,
+        "tasa_marginal": 0.0047
+      },
+      {
+        "n_rango": 2,
+        "inferior": 50000.01,
+        "superior": 150000.0,
+        "cuota_fija": 388.56,
+        "tasa_marginal": 0.0012
+      },
+      {
+        "n_rango": 3,
+        "inferior": 150000.01,
+        "superior": 400000.0,
+        "cuota_fija": 568.56,
+        "tasa_marginal": 0.0029
+      },
+      {
+        "n_rango": 4,
+        "inferior": 400000.01,
+        "superior": null,
+        "cuota_fija": 1728.56,
+        "tasa_marginal": 0.0026
+      }
+    ],
+    "minimo_predial": null,
+    "comentarios": "Art. 19: impuesto predial calculado con base en el valor catastral mediante tarifa por rangos con cuota fija y factor aplicable al excedente del límite inferior. Art. 21 establece tarifa separada para rentas o frutos civiles (5% mensual para casa habitación y 5% para actividades comerciales e industriales); se documenta solo como tarifa secundaria, no en la tabla principal. Los artículos 20 y tablas de valores unitarios corresponden a catastro/valores unitarios y no a la mecánica de cálculo del impuesto."
+  },
+  "_meta": {
+    "fuente": "txt",
+    "modelo": "imputed_confirmed_fill"
+  },
+  "_meta_v2": {
+    "intentos": 0,
+    "requiere_revision": false,
+    "razon": null,
+    "tokens": {
+      "input": 0,
+      "output": 0,
+      "cached": 0
+    },
+    "cvegeo": "31059",
+    "estado": "yucatan",
+    "anio": 2021,
+    "imputed_from_year": 2020,
+    "imputed_method": "confirmed_fill"
+  }
+}

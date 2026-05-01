@@ -1,0 +1,77 @@
+{
+  "predial": {
+    "tipo_esquema": "progresivo",
+    "tabla": [
+      {
+        "n_rango": 1,
+        "inferior": 0.01,
+        "superior": 4000.0,
+        "cuota_fija": 4.0,
+        "tasa_marginal": 0.00025
+      },
+      {
+        "n_rango": 2,
+        "inferior": 4000.01,
+        "superior": 5500.0,
+        "cuota_fija": 7.0,
+        "tasa_marginal": 0.00025
+      },
+      {
+        "n_rango": 3,
+        "inferior": 5500.01,
+        "superior": 6500.0,
+        "cuota_fija": 10.0,
+        "tasa_marginal": 0.00025
+      },
+      {
+        "n_rango": 4,
+        "inferior": 6500.01,
+        "superior": 7500.0,
+        "cuota_fija": 13.0,
+        "tasa_marginal": 0.00025
+      },
+      {
+        "n_rango": 5,
+        "inferior": 7500.01,
+        "superior": 8500.0,
+        "cuota_fija": 16.0,
+        "tasa_marginal": 0.00025
+      },
+      {
+        "n_rango": 6,
+        "inferior": 8500.01,
+        "superior": 10000.0,
+        "cuota_fija": 20.0,
+        "tasa_marginal": 0.00025
+      },
+      {
+        "n_rango": 7,
+        "inferior": 10000.01,
+        "superior": null,
+        "cuota_fija": 22.0,
+        "tasa_marginal": 0.00025
+      }
+    ],
+    "minimo_predial": null,
+    "comentarios": "Artículo 13: impuesto predial calculado sobre el valor catastral mediante tarifa progresiva con cuota fija anual y factor aplicable (tasa marginal) de 0.025% en todos los brackets. Se ignoran las tablas de valores unitarios de terreno y construcción porque son valores catastrales, no la mecánica del impuesto. Artículo 15 establece una tarifa separada sobre rentas o frutos civiles mensuales (2% casas habitación y 2% actividades comerciales), pero no se incluye en la tabla principal por ser una tarifa paralela no basada en valor catastral."
+  },
+  "_meta": {
+    "fuente": "txt",
+    "modelo": "imputed_confirmed_fill"
+  },
+  "_meta_v2": {
+    "intentos": 0,
+    "requiere_revision": false,
+    "razon": null,
+    "tokens": {
+      "input": 0,
+      "output": 0,
+      "cached": 0
+    },
+    "cvegeo": "31070",
+    "estado": "yucatan",
+    "anio": 2016,
+    "imputed_from_year": 2015,
+    "imputed_method": "confirmed_fill"
+  }
+}

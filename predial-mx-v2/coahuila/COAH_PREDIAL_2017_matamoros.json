@@ -1,0 +1,56 @@
+{
+  "predial": {
+    "tipo_esquema": "tarifa_millar",
+    "tabla": [
+      {
+        "grupo": "urbano",
+        "clave": "predios_urbanos",
+        "descripcion": "Sobre los predios urbanos",
+        "tasa_millar": 0.003,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "rustico",
+        "clave": "predios_rusticos",
+        "descripcion": "Sobre los predios rústicos",
+        "tasa_millar": 0.003,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "otro",
+        "clave": "predios_parcelarios",
+        "descripcion": "Sobre los predios parcelarios",
+        "tasa_millar": 0.001,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      }
+    ],
+    "minimo_predial": {
+      "monto": 27.0,
+      "periodicidad": "bimestral",
+      "unidad": "pesos"
+    },
+    "comentarios": "Art. 2 fracc. I-II y IV: predios urbanos 3 al millar anual, predios rústicos 3 al millar anual y predios parcelarios 1 al millar anual. El texto también establece en la fracc. III un mínimo de $27.00 por bimestre. Se omiten incentivos, recargos y estímulos. Las fracc. V y VI gravan predios de extracción ejidal y establecimientos metalúrgicos o mineros con extracción con 3% del valor de su producción anual comercializada; se describen como tarifas paralelas sobre producción, no se integran a la tabla principal por no ser predial sobre valor catastral. La frase final indica que toda propiedad dentro del Plan Director de Desarrollo Urbano se cobrará como predial urbano aunque la escritura señale rústica."
+  },
+  "_meta": {
+    "fuente": "txt",
+    "modelo": "imputed_confirmed_fill"
+  },
+  "_meta_v2": {
+    "intentos": 0,
+    "requiere_revision": false,
+    "razon": null,
+    "tokens": {
+      "input": 0,
+      "output": 0,
+      "cached": 0
+    },
+    "cvegeo": "05017",
+    "estado": "coahuila",
+    "anio": 2017,
+    "imputed_from_year": 2016,
+    "imputed_method": "confirmed_fill"
+  }
+}

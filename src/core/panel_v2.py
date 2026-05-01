@@ -90,6 +90,8 @@ def _row_template(cvegeo: str, ejercicio: int, slug: str, estado_slug: str) -> d
         "tipo_esquema": "",
         "numero_rangos": "",
         "monto_max_rango": "",
+        "imputed_method": "",
+        "imputed_from_year": "",
         "_slug": slug,
         "_estado_slug": estado_slug,
     }
@@ -133,6 +135,12 @@ def _row_from_v2_json(json_path: Path, estado_slug: str) -> dict | None:
     row = _row_template(cvegeo, int(anio), slug, estado_slug)
     row["tipo_esquema"] = tipo
     _fill_rangos(row, tipo, tabla)
+    # Marcadores de imputación si _meta.modelo == "imputed_<método>"
+    modelo = (doc.get("_meta") or {}).get("modelo", "") or ""
+    if modelo.startswith("imputed_"):
+        row["imputed_method"] = modelo[len("imputed_"):]
+        ifrom = meta.get("imputed_from_year")
+        row["imputed_from_year"] = int(ifrom) if ifrom is not None else ""
     return row
 
 
@@ -284,7 +292,8 @@ def _enrich(rows: list[dict], inegi_by_cvegeo: dict[str, dict]) -> None:
 def _write_csv(rows: list[dict], out_path: Path) -> None:
     out_path.parent.mkdir(parents=True, exist_ok=True)
     cols = ["cvegeo", "ejercicio", "estado", "municipio",
-            "tipo_esquema", "numero_rangos", "monto_max_rango"]
+            "tipo_esquema", "numero_rangos", "monto_max_rango",
+            "imputed_method", "imputed_from_year"]
     with out_path.open("w", encoding="utf-8", newline="") as f:
         w = csv.DictWriter(f, fieldnames=cols, extrasaction="ignore")
         w.writeheader()
@@ -351,14 +360,21 @@ def build_panel_v2(
     # Reporte de cobertura.
     by_estado: dict[str, int] = {}
     by_tipo: dict[str, int] = {}
+    by_imputed: dict[str, int] = {}
     for row in deduped:
         by_estado[row["estado"] or "(sin estado)"] = by_estado.get(row["estado"] or "(sin estado)", 0) + 1
         by_tipo[row["tipo_esquema"] or "(vacío)"] = by_tipo.get(row["tipo_esquema"] or "(vacío)", 0) + 1
+        m = row.get("imputed_method") or "(observado)"
+        by_imputed[m] = by_imputed.get(m, 0) + 1
     print("\nCobertura por estado:")
     for est, n in sorted(by_estado.items(), key=lambda x: -x[1]):
         print(f"  {est:35s} {n}")
     print("\nDistribución tipo_esquema:")
     for tipo, n in sorted(by_tipo.items(), key=lambda x: -x[1]):
         print(f"  {tipo:25s} {n}")
+    if any(k != "(observado)" for k in by_imputed):
+        print("\nDistribución imputed_method:")
+        for m, n in sorted(by_imputed.items(), key=lambda x: -x[1]):
+            print(f"  {m:25s} {n}")
 
     return out_csv
