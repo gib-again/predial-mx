@@ -1,0 +1,74 @@
+{
+  "predial": {
+    "tipo_esquema": "tarifa_millar",
+    "tabla": [
+      {
+        "grupo": "general",
+        "clave": "predios_en_general_tasa_bimestral_al_millar",
+        "descripcion": "Predios en general ... sobre la base fiscal registrada, el: (tasa bimestral al millar)",
+        "tasa_millar": 0.1,
+        "periodicidad": "bimestral",
+        "cuota_fija_adicional": {
+          "monto": 31.82,
+          "periodicidad": "bimestral",
+          "unidad": "pesos"
+        }
+      },
+      {
+        "grupo": "rustico",
+        "clave": "predios_rusticos_sobre_valor_fiscal_determinado",
+        "descripcion": "Predios rústicos: Para predios, cuyo valor real se determine ... sobre el valor fiscal determinado, el:",
+        "tasa_millar": 0.2,
+        "periodicidad": "bimestral",
+        "cuota_fija_adicional": {
+          "monto": 17.55,
+          "periodicidad": "bimestral",
+          "unidad": "pesos"
+        }
+      },
+      {
+        "grupo": "urbano",
+        "clave": "predios_urbanos_edificados_sobre_valor_determinado",
+        "descripcion": "Predios urbanos: a) Predios edificados ... sobre el valor determinado, el:",
+        "tasa_millar": 0.17,
+        "periodicidad": "bimestral",
+        "cuota_fija_adicional": {
+          "monto": 25.2,
+          "periodicidad": "bimestral",
+          "unidad": "pesos"
+        }
+      },
+      {
+        "grupo": "urbano",
+        "clave": "predios_urbanos_no_edificados_sobre_valor_determinado",
+        "descripcion": "Predios urbanos: b) Predios no edificados ... sobre el valor determinado, el:",
+        "tasa_millar": 0.35,
+        "periodicidad": "bimestral",
+        "cuota_fija_adicional": {
+          "monto": 25.2,
+          "periodicidad": "bimestral",
+          "unidad": "pesos"
+        }
+      }
+    ],
+    "minimo_predial": null,
+    "comentarios": "La ley establece una tasa bimestral al millar sobre la base fiscal registrada/determinada y además una cuota fija bimestral adicional según el tipo de predio: general (31.82), rústico (17.55) y urbano (25.20). Se ignoran reducciones/beneficios."
+  },
+  "_meta": {
+    "fuente": "pdf_vision",
+    "modelo": "reclasified_v1[gpt-5.2]"
+  },
+  "_meta_v2": {
+    "intentos": 0,
+    "requiere_revision": false,
+    "razon": null,
+    "tokens": {
+      "input": 0,
+      "output": 0,
+      "cached": 0
+    },
+    "cvegeo": "14026",
+    "estado": "jalisco",
+    "anio": 2022
+  }
+}

@@ -1,0 +1,268 @@
+{
+  "predial": {
+    "tipo_esquema": "otro_no_clasificado",
+    "categoria": "estructura_no_estandar",
+    "descripcion_estructural": "Ninguna variante validó (declared='mixto'). Razones: tarifa_millar: List should have at least 1 item after validation, not 0; progresivo: List should have at least 2 items after validation, not 0; tasa_unica: List should have at least 1 item after validation, not 0; cuota_fija_simple: List should have at least 1 item after validation, not 0; cuota_fija_escalonada: List should have at least 2 items after validation, not 0; mixto: Input should be a valid number",
+    "tabla_cruda": [
+      {
+        "_tabla": "tabla_mixta_rango",
+        "n_rango": "1",
+        "inferior": "0.01",
+        "superior": "180,000.00",
+        "columnas": [
+          {
+            "nombre": "cuota_fija",
+            "valor": 30,
+            "tipo": "cuota_fija",
+            "unidad": "pesos"
+          },
+          {
+            "nombre": "tasa_excedente",
+            "valor": 0.00023,
+            "tipo": "tasa_millar",
+            "unidad": "factor_decimal"
+          }
+        ]
+      },
+      {
+        "_tabla": "tabla_mixta_rango",
+        "n_rango": "2",
+        "inferior": "180,000.01",
+        "superior": "300,000.00",
+        "columnas": [
+          {
+            "nombre": "cuota_fija",
+            "valor": 71.4,
+            "tipo": "cuota_fija",
+            "unidad": "pesos"
+          },
+          {
+            "nombre": "tasa_excedente",
+            "valor": 0.00025,
+            "tipo": "tasa_millar",
+            "unidad": "factor_decimal"
+          }
+        ]
+      },
+      {
+        "_tabla": "tabla_mixta_rango",
+        "n_rango": "3",
+        "inferior": "300,000.01",
+        "superior": "550,000.00",
+        "columnas": [
+          {
+            "nombre": "cuota_fija",
+            "valor": 101.4,
+            "tipo": "cuota_fija",
+            "unidad": "pesos"
+          },
+          {
+            "nombre": "tasa_excedente",
+            "valor": 0.00025,
+            "tipo": "tasa_millar",
+            "unidad": "factor_decimal"
+          }
+        ]
+      },
+      {
+        "_tabla": "tabla_mixta_rango",
+        "n_rango": "4",
+        "inferior": "550,000.01",
+        "superior": "950,000.00",
+        "columnas": [
+          {
+            "nombre": "cuota_fija",
+            "valor": 163.9,
+            "tipo": "cuota_fija",
+            "unidad": "pesos"
+          },
+          {
+            "nombre": "tasa_excedente",
+            "valor": 0.000275,
+            "tipo": "tasa_millar",
+            "unidad": "factor_decimal"
+          }
+        ]
+      },
+      {
+        "_tabla": "tabla_mixta_rango",
+        "n_rango": "5",
+        "inferior": "950,000.01",
+        "superior": "1,450,000.00",
+        "columnas": [
+          {
+            "nombre": "cuota_fija",
+            "valor": 273.9,
+            "tipo": "cuota_fija",
+            "unidad": "pesos"
+          },
+          {
+            "nombre": "tasa_excedente",
+            "valor": 0.0003,
+            "tipo": "tasa_millar",
+            "unidad": "factor_decimal"
+          }
+        ]
+      },
+      {
+        "_tabla": "tabla_mixta_rango",
+        "n_rango": "6",
+        "inferior": "1,450,000.01",
+        "superior": "2,350,000.00",
+        "columnas": [
+          {
+            "nombre": "cuota_fija",
+            "valor": 423.9,
+            "tipo": "cuota_fija",
+            "unidad": "pesos"
+          },
+          {
+            "nombre": "tasa_excedente",
+            "valor": 0.000325,
+            "tipo": "tasa_millar",
+            "unidad": "factor_decimal"
+          }
+        ]
+      },
+      {
+        "_tabla": "tabla_mixta_rango",
+        "n_rango": "7",
+        "inferior": "2,350,000.01",
+        "superior": "3,850,000.00",
+        "columnas": [
+          {
+            "nombre": "cuota_fija",
+            "valor": 716.4,
+            "tipo": "cuota_fija",
+            "unidad": "pesos"
+          },
+          {
+            "nombre": "tasa_excedente",
+            "valor": 0.00035,
+            "tipo": "tasa_millar",
+            "unidad": "factor_decimal"
+          }
+        ]
+      },
+      {
+        "_tabla": "tabla_mixta_rango",
+        "n_rango": "8",
+        "inferior": "3,850,000.01",
+        "superior": "8,450,000.00",
+        "columnas": [
+          {
+            "nombre": "cuota_fija",
+            "valor": 1241.4,
+            "tipo": "cuota_fija",
+            "unidad": "pesos"
+          },
+          {
+            "nombre": "tasa_excedente",
+            "valor": 0.000375,
+            "tipo": "tasa_millar",
+            "unidad": "factor_decimal"
+          }
+        ]
+      },
+      {
+        "_tabla": "tabla_mixta_rango",
+        "n_rango": "9",
+        "inferior": "8,450,000.01",
+        "superior": "25,450,000.00",
+        "columnas": [
+          {
+            "nombre": "cuota_fija",
+            "valor": 2966.4,
+            "tipo": "cuota_fija",
+            "unidad": "pesos"
+          },
+          {
+            "nombre": "tasa_excedente",
+            "valor": 0.0004,
+            "tipo": "tasa_millar",
+            "unidad": "factor_decimal"
+          }
+        ]
+      },
+      {
+        "_tabla": "tabla_mixta_rango",
+        "n_rango": "10",
+        "inferior": "25,450,000.01",
+        "superior": "68,450,000.00",
+        "columnas": [
+          {
+            "nombre": "cuota_fija",
+            "valor": 9766.4,
+            "tipo": "cuota_fija",
+            "unidad": "pesos"
+          },
+          {
+            "nombre": "tasa_excedente",
+            "valor": 0.000425,
+            "tipo": "tasa_millar",
+            "unidad": "factor_decimal"
+          }
+        ]
+      },
+      {
+        "_tabla": "tabla_mixta_rango",
+        "n_rango": "11",
+        "inferior": "68,450,000.01",
+        "superior": "en adelante",
+        "columnas": [
+          {
+            "nombre": "cuota_fija",
+            "valor": 28041.4,
+            "tipo": "cuota_fija",
+            "unidad": "pesos"
+          },
+          {
+            "nombre": "tasa_excedente",
+            "valor": 0.00045,
+            "tipo": "tasa_millar",
+            "unidad": "factor_decimal"
+          }
+        ]
+      },
+      {
+        "_tabla": "tabla_mixta_rango",
+        "n_rango": "12",
+        "inferior": "N/A",
+        "superior": "N/A",
+        "columnas": [
+          {
+            "nombre": "urbano_no_edificado_factor_sobre_valor_determinado",
+            "valor": 0.00081,
+            "tipo": "tasa_millar",
+            "unidad": "factor_decimal"
+          },
+          {
+            "nombre": "cuota_fija_adicional_por_bimestre",
+            "valor": 25,
+            "tipo": "cuota_fija",
+            "unidad": "pesos"
+          }
+        ]
+      }
+    ],
+    "minimo_predial": null,
+    "comentarios": "I) Predios rústicos y urbanos edificados: se calcula bimestralmente con tabla de rangos (límite inferior/superior), cuota fija y tasa aplicable sobre el excedente del límite inferior, usando la fórmula ((VF-LI)*T)+CF. II) Predios urbanos no edificados: se aplica un factor de 0.00081 sobre el valor determinado y al impuesto se suma una cuota fija de $25.00 por cada bimestre. No se observa en las páginas proporcionadas un mínimo predial explícito."
+  },
+  "_meta": {
+    "fuente": "pdf_vision",
+    "modelo": "reclasified_v1[gpt-5.2]"
+  },
+  "_meta_v2": {
+    "intentos": 0,
+    "requiere_revision": false,
+    "razon": null,
+    "tokens": {
+      "input": 0,
+      "output": 0,
+      "cached": 0
+    },
+    "cvegeo": "14101",
+    "estado": "jalisco",
+    "anio": 2024
+  }
+}

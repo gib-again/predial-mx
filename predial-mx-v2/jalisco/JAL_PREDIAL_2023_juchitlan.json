@@ -1,0 +1,62 @@
+{
+  "predial": {
+    "tipo_esquema": "tarifa_millar",
+    "tabla": [
+      {
+        "grupo": "rustico",
+        "clave": "rustico_valor_real_valor_fiscal_determinado",
+        "descripcion": "Predios rústicos: sobre el valor fiscal determinado, el 0.22 al millar (tasa bimestral).",
+        "tasa_millar": 0.22,
+        "periodicidad": "bimestral",
+        "cuota_fija_adicional": {
+          "monto": 11.13,
+          "periodicidad": "bimestral",
+          "unidad": "pesos"
+        }
+      },
+      {
+        "grupo": "urbano",
+        "clave": "urbano_edificado_valor_real",
+        "descripcion": "Predios urbanos edificados: sobre el valor determinado, el 0.20 al millar (tasa bimestral).",
+        "tasa_millar": 0.2,
+        "periodicidad": "bimestral",
+        "cuota_fija_adicional": {
+          "monto": 11.13,
+          "periodicidad": "bimestral",
+          "unidad": "pesos"
+        }
+      },
+      {
+        "grupo": "urbano",
+        "clave": "urbano_no_edificado_valor_real",
+        "descripcion": "Predios urbanos no edificados: sobre el valor determinado, el 0.37 al millar (tasa bimestral).",
+        "tasa_millar": 0.37,
+        "periodicidad": "bimestral",
+        "cuota_fija_adicional": {
+          "monto": 18.92,
+          "periodicidad": "bimestral",
+          "unidad": "pesos"
+        }
+      }
+    ],
+    "minimo_predial": null,
+    "comentarios": "El Art. 17 establece tasas bimestrales al millar por tipo de predio (rústico; urbano edificado; urbano no edificado) y señala que a los montos resultantes se adiciona una cuota fija bimestral (según el caso). Se ignoraron reducciones, factores/beneficios y recargos por estar fuera de la mecánica básica."
+  },
+  "_meta": {
+    "fuente": "txt",
+    "modelo": "reclasified_v1[gpt-5.2]"
+  },
+  "_meta_v2": {
+    "intentos": 0,
+    "requiere_revision": false,
+    "razon": null,
+    "tokens": {
+      "input": 0,
+      "output": 0,
+      "cached": 0
+    },
+    "cvegeo": "14052",
+    "estado": "jalisco",
+    "anio": 2023
+  }
+}

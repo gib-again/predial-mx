@@ -1,0 +1,62 @@
+{
+  "predial": {
+    "tipo_esquema": "tarifa_millar",
+    "tabla": [
+      {
+        "grupo": "rustico",
+        "clave": "rustico_valor_real",
+        "descripcion": "Predios rústicos: sobre el valor determinado, el 0.22 bimestral al millar; se adicionará una cuota fija de $15.00 bimestrales.",
+        "tasa_millar": 0.22,
+        "periodicidad": "bimestral",
+        "cuota_fija_adicional": {
+          "monto": 15.0,
+          "periodicidad": "bimestral",
+          "unidad": "pesos"
+        }
+      },
+      {
+        "grupo": "urbano",
+        "clave": "urbano_edificado_valor_real",
+        "descripcion": "Predios urbanos edificados: sobre el valor determinado, el 0.22; se adicionará una cuota fija de $20.00.",
+        "tasa_millar": 0.22,
+        "periodicidad": "bimestral",
+        "cuota_fija_adicional": {
+          "monto": 20.0,
+          "periodicidad": "bimestral",
+          "unidad": "pesos"
+        }
+      },
+      {
+        "grupo": "urbano",
+        "clave": "urbano_no_edificado_zona_urbana_valor_real",
+        "descripcion": "Predios urbanos no edificados dentro de la zona urbana: sobre el valor determinado, el 0.31; se adicionará una cuota fija de $20.00.",
+        "tasa_millar": 0.31,
+        "periodicidad": "bimestral",
+        "cuota_fija_adicional": {
+          "monto": 20.0,
+          "periodicidad": "bimestral",
+          "unidad": "pesos"
+        }
+      }
+    ],
+    "minimo_predial": null,
+    "comentarios": "El texto establece tasas bimestrales al millar aplicables sobre el valor real (base fiscal) determinado conforme a leyes de Hacienda/Catastro de Jalisco. Se menciona además una cuota fija bimestral adicional ($15.00 rústicos; $20.00 urbanos) que se suma al resultado de aplicar la tasa al millar. Se ignoraron factores de reducción/beneficios, no causación de recargos y demás estímulos."
+  },
+  "_meta": {
+    "fuente": "txt",
+    "modelo": "reclasified_v1[gpt-5.2]"
+  },
+  "_meta_v2": {
+    "intentos": 0,
+    "requiere_revision": false,
+    "razon": null,
+    "tokens": {
+      "input": 0,
+      "output": 0,
+      "cached": 0
+    },
+    "cvegeo": "14036",
+    "estado": "jalisco",
+    "anio": 2022
+  }
+}

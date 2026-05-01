@@ -1,0 +1,50 @@
+{
+  "predial": {
+    "tipo_esquema": "tarifa_millar",
+    "tabla": [
+      {
+        "grupo": "rustico",
+        "clave": "rustico_valor_real",
+        "descripcion": "Predios Rústicos: sobre el valor determinado, el: 0.254",
+        "tasa_millar": 0.254,
+        "periodicidad": "bimestral",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "urbano",
+        "clave": "urbano_valor_real",
+        "descripcion": "Predios Urbanos (a): sobre el valor determinado, el: 0.254",
+        "tasa_millar": 0.254,
+        "periodicidad": "bimestral",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "urbano",
+        "clave": "urbano_no_edificado_zona_urbana",
+        "descripcion": "Predios no edificados dentro de la zona urbana: sobre el valor determinado, el: 0.810",
+        "tasa_millar": 0.81,
+        "periodicidad": "bimestral",
+        "cuota_fija_adicional": null
+      }
+    ],
+    "minimo_predial": null,
+    "comentarios": "El texto establece tasas bimestrales al millar (Art. 21) para predios rústicos y urbanos, incluyendo una tasa diferenciada para predios urbanos no edificados. El resto del texto son beneficios/factores de descuento o estímulos (Arts. 22-25), los cuales se ignoran según instrucciones. No se identifica monto mínimo de impuesto predial en el fragmento proporcionado."
+  },
+  "_meta": {
+    "fuente": "txt",
+    "modelo": "reclasified_v1[gpt-5.2]"
+  },
+  "_meta_v2": {
+    "intentos": 0,
+    "requiere_revision": false,
+    "razon": null,
+    "tokens": {
+      "input": 0,
+      "output": 0,
+      "cached": 0
+    },
+    "cvegeo": "14039",
+    "estado": "jalisco",
+    "anio": 2015
+  }
+}

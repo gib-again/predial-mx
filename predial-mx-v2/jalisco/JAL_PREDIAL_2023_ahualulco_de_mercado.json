@@ -1,0 +1,74 @@
+{
+  "predial": {
+    "tipo_esquema": "tarifa_millar",
+    "tabla": [
+      {
+        "grupo": "general",
+        "clave": "predios_en_general_base_fiscal_registrada",
+        "descripcion": "Predios en general que han venido tributando con tasas diferentes a las contenidas en este artículo, sobre la base fiscal registrada",
+        "tasa_millar": 0.0,
+        "periodicidad": "bimestral",
+        "cuota_fija_adicional": {
+          "monto": 38.5,
+          "periodicidad": "bimestral",
+          "unidad": "pesos"
+        }
+      },
+      {
+        "grupo": "rustico",
+        "clave": "rusticos_valor_real_determinado",
+        "descripcion": "Predios rústicos: para predios cuyo valor real se determine en los términos de la Ley de Hacienda Municipal del Estado de Jalisco, sobre el valor fiscal determinado, el 23.00%",
+        "tasa_millar": 0.23,
+        "periodicidad": "bimestral",
+        "cuota_fija_adicional": {
+          "monto": 38.52,
+          "periodicidad": "bimestral",
+          "unidad": "pesos"
+        }
+      },
+      {
+        "grupo": "urbano",
+        "clave": "urbanos_edificados_valor_real_determinado",
+        "descripcion": "Predios urbanos: a) Predios edificados cuyo valor real se determine en los términos de la Ley de Hacienda Municipal del Estado de Jalisco, sobre el valor determinado, el 21%",
+        "tasa_millar": 0.21,
+        "periodicidad": "bimestral",
+        "cuota_fija_adicional": {
+          "monto": 36.04,
+          "periodicidad": "bimestral",
+          "unidad": "pesos"
+        }
+      },
+      {
+        "grupo": "urbano",
+        "clave": "urbanos_no_edificados_valor_real_determinado",
+        "descripcion": "Predios urbanos: b) Predios no edificados, cuyo valor real se determine en los términos de la Ley de Hacienda Municipal del Estado de Jalisco, sobre el valor determinado, el 30%",
+        "tasa_millar": 0.3,
+        "periodicidad": "bimestral",
+        "cuota_fija_adicional": {
+          "monto": 36.04,
+          "periodicidad": "bimestral",
+          "unidad": "pesos"
+        }
+      }
+    ],
+    "minimo_predial": null,
+    "comentarios": "El texto indica 'Tasa bimestral al millar'. Los porcentajes mostrados en la ley (23.00%, 21%, 30%) se interpretan como tasas al millar expresadas con signo %, por lo que se convierten dividiendo entre 100 (regla de conversión obligatoria). Se mencionan cuotas fijas bimestrales adicionales ($38.50, $38.52, $36.04) que se suman al resultado de aplicar la tasa a la base fiscal/valor determinado."
+  },
+  "_meta": {
+    "fuente": "pdf_vision",
+    "modelo": "reclasified_v1[gpt-5.2]"
+  },
+  "_meta_v2": {
+    "intentos": 0,
+    "requiere_revision": false,
+    "razon": null,
+    "tokens": {
+      "input": 0,
+      "output": 0,
+      "cached": 0
+    },
+    "cvegeo": "14003",
+    "estado": "jalisco",
+    "anio": 2023
+  }
+}

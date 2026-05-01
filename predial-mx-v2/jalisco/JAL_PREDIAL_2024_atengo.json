@@ -1,0 +1,74 @@
+{
+  "predial": {
+    "tipo_esquema": "tarifa_millar",
+    "tabla": [
+      {
+        "grupo": "general",
+        "clave": "predios_en_general_base_fiscal_registrada_tasas_diferentes",
+        "descripcion": "Predios en general que han venido tributando con tasas diferentes a las contenidas en este artículo, sobre la base fiscal registrada",
+        "tasa_millar": 10.0,
+        "periodicidad": "bimestral",
+        "cuota_fija_adicional": {
+          "monto": 28.18,
+          "periodicidad": "bimestral",
+          "unidad": "pesos"
+        }
+      },
+      {
+        "grupo": "rustico",
+        "clave": "rustico_valor_fiscal_determinado",
+        "descripcion": "Predios rústicos, sobre el valor fiscal determinado",
+        "tasa_millar": 0.2,
+        "periodicidad": "bimestral",
+        "cuota_fija_adicional": {
+          "monto": 15.8,
+          "periodicidad": "bimestral",
+          "unidad": "pesos"
+        }
+      },
+      {
+        "grupo": "urbano",
+        "clave": "urbano_edificado_valor_determinado",
+        "descripcion": "Predios urbanos edificados, sobre el valor determinado",
+        "tasa_millar": 0.2,
+        "periodicidad": "bimestral",
+        "cuota_fija_adicional": {
+          "monto": 23.15,
+          "periodicidad": "bimestral",
+          "unidad": "pesos"
+        }
+      },
+      {
+        "grupo": "urbano",
+        "clave": "urbano_no_edificado_valor_determinado",
+        "descripcion": "Predios urbanos no edificados, sobre el valor determinado",
+        "tasa_millar": 0.3,
+        "periodicidad": "bimestral",
+        "cuota_fija_adicional": {
+          "monto": 23.15,
+          "periodicidad": "bimestral",
+          "unidad": "pesos"
+        }
+      }
+    ],
+    "minimo_predial": null,
+    "comentarios": "Esquema de tasa bimestral al millar sobre el valor/base fiscal, con cuota fija adicional bimestral según fracción aplicable. Se ignoraron reducciones/beneficios. El texto indica un mínimo relacionado con UMA pero está truncado/incompleto (no señala monto o equivalencia exacta), por lo que no se captura como minimo_predial."
+  },
+  "_meta": {
+    "fuente": "txt",
+    "modelo": "reclasified_v1[gpt-5.2]"
+  },
+  "_meta_v2": {
+    "intentos": 0,
+    "requiere_revision": false,
+    "razon": null,
+    "tokens": {
+      "input": 0,
+      "output": 0,
+      "cached": 0
+    },
+    "cvegeo": "14011",
+    "estado": "jalisco",
+    "anio": 2024
+  }
+}

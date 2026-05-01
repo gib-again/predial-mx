@@ -1,0 +1,50 @@
+{
+  "predial": {
+    "tipo_esquema": "tarifa_millar",
+    "tabla": [
+      {
+        "grupo": "rustico",
+        "clave": "rustico_valor_real_determinado_leyes_hacienda_catastro",
+        "descripcion": "Para predios cuyo valor real se determine en los términos de las Leyes de Hacienda y de Catastro Municipales del Estado de Jalisco, sobre el valor determinado",
+        "tasa_millar": 0.26,
+        "periodicidad": "bimestral",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "urbano",
+        "clave": "urbano_edificado_valor_real_determinado_leyes_hacienda_catastro",
+        "descripcion": "Predios edificados cuyo valor real se determine en los términos de las Leyes de Hacienda Municipal y de Catastro Municipal del Estado de Jalisco, sobre el valor determinado",
+        "tasa_millar": 0.24,
+        "periodicidad": "bimestral",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "urbano",
+        "clave": "urbano_no_edificado_en_zona_urbana_valor_real_determinado_leyes_hacienda_catastro",
+        "descripcion": "Predios no edificados que se localicen dentro de la zona urbana de la ciudad, cuyo valor real se determine en los términos de las Leyes de Hacienda Municipal y de Catastro Municipal del Estado de Jalisco, sobre el valor determinado",
+        "tasa_millar": 0.41,
+        "periodicidad": "bimestral",
+        "cuota_fija_adicional": null
+      }
+    ],
+    "minimo_predial": null,
+    "comentarios": "Se extraen únicamente las tasas bimestrales al millar del Artículo 17. Se ignoraron factores de reducción/beneficios (0.5, 0.22, 0.4, 0.6, 1%) y demás estímulos/condiciones de los Artículos 18 a 20. No se menciona monto mínimo del impuesto predial en el texto proporcionado."
+  },
+  "_meta": {
+    "fuente": "txt",
+    "modelo": "reclasified_v1[gpt-5.2]"
+  },
+  "_meta_v2": {
+    "intentos": 0,
+    "requiere_revision": false,
+    "razon": null,
+    "tokens": {
+      "input": 0,
+      "output": 0,
+      "cached": 0
+    },
+    "cvegeo": "14068",
+    "estado": "jalisco",
+    "anio": 2021
+  }
+}

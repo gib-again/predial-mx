@@ -1,0 +1,82 @@
+{
+  "predial": {
+    "tipo_esquema": "tarifa_millar",
+    "tabla": [
+      {
+        "grupo": "general",
+        "clave": "predios_en_general_y_urbanos_edificados_valores_anteriores_2000",
+        "descripcion": "Predios en general y predios urbanos edificados, con valores anteriores al 2000, que han venido tributando con tasas diferentes... (Tasa bimestral al millar)",
+        "tasa_millar": 10.0,
+        "periodicidad": "bimestral",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "rustico",
+        "clave": "rustico_construcciones_localizadas_en_predios_rusticos",
+        "descripcion": "Predios rústicos: Para efectos de la determinación del impuesto en las construcciones localizadas en predios rústicos",
+        "tasa_millar": 0.8,
+        "periodicidad": "bimestral",
+        "cuota_fija_adicional": {
+          "monto": 21.0,
+          "periodicidad": "bimestral",
+          "unidad": "pesos"
+        }
+      },
+      {
+        "grupo": "rustico",
+        "clave": "rustico_valor_fiscal_determinado",
+        "descripcion": "Predios rústicos: Para predios cuyo valor real se determine... sobre el valor fiscal determinado",
+        "tasa_millar": 0.2,
+        "periodicidad": "bimestral",
+        "cuota_fija_adicional": {
+          "monto": 14.7,
+          "periodicidad": "bimestral",
+          "unidad": "pesos"
+        }
+      },
+      {
+        "grupo": "urbano",
+        "clave": "urbano_edificado_valor_determinado",
+        "descripcion": "Predios urbanos: Predios edificados cuyo valor real se determine... sobre el valor determinado",
+        "tasa_millar": 0.18,
+        "periodicidad": "bimestral",
+        "cuota_fija_adicional": {
+          "monto": 21.0,
+          "periodicidad": "bimestral",
+          "unidad": "pesos"
+        }
+      },
+      {
+        "grupo": "urbano",
+        "clave": "urbano_no_edificado_valor_determinado",
+        "descripcion": "Predios urbanos: Predios no edificados, cuyo valor real se determine... sobre el valor determinado",
+        "tasa_millar": 0.32,
+        "periodicidad": "bimestral",
+        "cuota_fija_adicional": {
+          "monto": 21.0,
+          "periodicidad": "bimestral",
+          "unidad": "pesos"
+        }
+      }
+    ],
+    "minimo_predial": null,
+    "comentarios": "El Art. 17 establece tasas bimestrales al millar con cuotas fijas adicionales bimestrales para ciertos supuestos (rústicos inciso a y b; urbanos incisos a y b). La fracción I contempla predios con valores anteriores al 2000 que liquidan adeudos con tasa/cuota/valor fiscal vigentes en su momento; se transcribe la tasa indicada (10.00 al millar) como una tasa específica. No se observa un mínimo predial en pesos/UMA/VSM; la ley solo señala que no será inferior a las cuotas fijas establecidas en la sección."
+  },
+  "_meta": {
+    "fuente": "txt",
+    "modelo": "reclasified_v1[gpt-5.2]"
+  },
+  "_meta_v2": {
+    "intentos": 0,
+    "requiere_revision": false,
+    "razon": null,
+    "tokens": {
+      "input": 0,
+      "output": 0,
+      "cached": 0
+    },
+    "cvegeo": "14001",
+    "estado": "jalisco",
+    "anio": 2013
+  }
+}

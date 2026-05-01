@@ -1,0 +1,122 @@
+{
+  "predial": {
+    "tipo_esquema": "tarifa_millar",
+    "tabla": [
+      {
+        "grupo": "general",
+        "clave": "predios_en_general_tasa_transitoria_base_fiscal_registrada",
+        "descripcion": "Predios en general que han venido tributando con tasas diferentes... sobre la base fiscal registrada",
+        "tasa_millar": 0.1,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": {
+          "monto": 60.0,
+          "periodicidad": "bimestral",
+          "unidad": "pesos"
+        }
+      },
+      {
+        "grupo": "rustico",
+        "clave": "rustico_valores_anteriores_2000",
+        "descripcion": "Predios rústicos valuados... con valores anteriores al año 2000, sobre el valor determinado",
+        "tasa_millar": 1.5,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": {
+          "monto": 30.0,
+          "periodicidad": "bimestral",
+          "unidad": "pesos"
+        }
+      },
+      {
+        "grupo": "rustico",
+        "clave": "rustico_valor_real_ley_hacienda_municipal",
+        "descripcion": "Predios rústicos cuyo valor real se determine en los términos de la Ley de Hacienda Municipal del Estado de Jalisco... sobre el valor fiscal determinado",
+        "tasa_millar": 2.0,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": {
+          "monto": 15.0,
+          "periodicidad": "bimestral",
+          "unidad": "pesos"
+        }
+      },
+      {
+        "grupo": "urbano",
+        "clave": "urbano_no_edificado_antes_1979",
+        "descripcion": "Predios urbanos no edificados... antes de 1979, sobre el valor determinado",
+        "tasa_millar": 1.3,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": {
+          "monto": 60.0,
+          "periodicidad": "bimestral",
+          "unidad": "pesos"
+        }
+      },
+      {
+        "grupo": "urbano",
+        "clave": "urbano_edificado_1979_1992",
+        "descripcion": "Predios urbanos edificados cuyo valor se determine a partir de 1979 y antes del año de 1992... sobre el valor determinado",
+        "tasa_millar": 0.8,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": {
+          "monto": 60.0,
+          "periodicidad": "bimestral",
+          "unidad": "pesos"
+        }
+      },
+      {
+        "grupo": "urbano",
+        "clave": "urbano_edificado_1992_2000_tablas_valores",
+        "descripcion": "Predios urbanos edificados... con base a las tablas de valores de terreno y construcción... a partir de enero de 1992 y antes del 2000, sobre el valor determinado",
+        "tasa_millar": 0.17,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": {
+          "monto": 60.0,
+          "periodicidad": "bimestral",
+          "unidad": "pesos"
+        }
+      },
+      {
+        "grupo": "urbano",
+        "clave": "urbano_edificado_valor_real_ley_hacienda_municipal",
+        "descripcion": "Predios urbanos edificados cuyo valor real se determine en los términos de la Ley de Hacienda Municipal... sobre el valor determinado",
+        "tasa_millar": 0.19,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": {
+          "monto": 30.0,
+          "periodicidad": "bimestral",
+          "unidad": "pesos"
+        }
+      },
+      {
+        "grupo": "urbano",
+        "clave": "urbano_no_edificado_valor_real_ley_hacienda_municipal",
+        "descripcion": "Predios urbanos no edificados, cuyo valor real se determine en los términos de la Ley de Hacienda Municipal... sobre el valor determinado",
+        "tasa_millar": 0.3,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": {
+          "monto": 30.0,
+          "periodicidad": "bimestral",
+          "unidad": "pesos"
+        }
+      }
+    ],
+    "minimo_predial": null,
+    "comentarios": "Las tasas están expresadas como valores al millar sobre la base/valor fiscal (valor determinado). En varios supuestos se adiciona una cuota fija bimestral; se capturó como cuota_fija_adicional por fila. No se identifica en el texto proporcionado un monto mínimo predial explícito."
+  },
+  "_meta": {
+    "fuente": "txt",
+    "modelo": "reclasified_v1[gpt-5.2]"
+  },
+  "_meta_v2": {
+    "intentos": 0,
+    "requiere_revision": false,
+    "razon": null,
+    "tokens": {
+      "input": 0,
+      "output": 0,
+      "cached": 0
+    },
+    "cvegeo": "14053",
+    "estado": "jalisco",
+    "anio": 2021
+  }
+}

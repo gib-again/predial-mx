@@ -1,0 +1,74 @@
+{
+  "predial": {
+    "tipo_esquema": "tarifa_millar",
+    "tabla": [
+      {
+        "grupo": "rustico",
+        "clave": "rustico_valor_fiscal",
+        "descripcion": "Predios rústicos: sobre el valor fiscal determinado, el: 0.20. A la cantidad que resulte de aplicar la tasa contenida en el inciso a), se le adicionará una cuota fija de $14.00 bimestrales.",
+        "tasa_millar": 0.2,
+        "periodicidad": "bimestral",
+        "cuota_fija_adicional": {
+          "monto": 14.0,
+          "periodicidad": "bimestral",
+          "unidad": "pesos"
+        }
+      },
+      {
+        "grupo": "urbano",
+        "clave": "urbano_edificado",
+        "descripcion": "Predios urbanos edificados: sobre el valor determinado, el: 0.16. A las cantidades determinadas mediante la aplicación de las tasas señaladas (...) se les adicionará una cuota fija de $18.00 bimestrales.",
+        "tasa_millar": 0.16,
+        "periodicidad": "bimestral",
+        "cuota_fija_adicional": {
+          "monto": 18.0,
+          "periodicidad": "bimestral",
+          "unidad": "pesos"
+        }
+      },
+      {
+        "grupo": "urbano",
+        "clave": "urbano_baldio_fuera_zonas_edificadas",
+        "descripcion": "Predios baldíos que se localicen fuera de las zonas edificadas: sobre el valor determinado, el: 0.30. A las cantidades determinadas mediante la aplicación de las tasas señaladas (...) se les adicionará una cuota fija de $18.00 bimestrales.",
+        "tasa_millar": 0.3,
+        "periodicidad": "bimestral",
+        "cuota_fija_adicional": {
+          "monto": 18.0,
+          "periodicidad": "bimestral",
+          "unidad": "pesos"
+        }
+      },
+      {
+        "grupo": "urbano",
+        "clave": "urbano_baldio_dentro_zonas_edificadas",
+        "descripcion": "Predios baldíos que se localicen dentro de las zonas edificadas: sobre el valor determinado, el: 0.40. A las cantidades determinadas mediante la aplicación de las tasas señaladas (...) se les adicionará una cuota fija de $18.00 bimestrales.",
+        "tasa_millar": 0.4,
+        "periodicidad": "bimestral",
+        "cuota_fija_adicional": {
+          "monto": 18.0,
+          "periodicidad": "bimestral",
+          "unidad": "pesos"
+        }
+      }
+    ],
+    "minimo_predial": null,
+    "comentarios": "El texto establece tasas expresadas como \"0.20\", \"0.16\", \"0.30\" y \"0.40\" sobre el valor fiscal/real determinado conforme a la Ley de Hacienda Municipal del Estado de Jalisco, y señala cuotas fijas bimestrales adicionales ($14.00 para rústicos y $18.00 para urbanos). Se ignoraron beneficios/reducciones (Art. 19-21). No se menciona un mínimo predial en el extracto proporcionado."
+  },
+  "_meta": {
+    "fuente": "txt",
+    "modelo": "reclasified_v1[gpt-5.2]"
+  },
+  "_meta_v2": {
+    "intentos": 0,
+    "requiere_revision": false,
+    "razon": null,
+    "tokens": {
+      "input": 0,
+      "output": 0,
+      "cached": 0
+    },
+    "cvegeo": "14037",
+    "estado": "jalisco",
+    "anio": 2019
+  }
+}

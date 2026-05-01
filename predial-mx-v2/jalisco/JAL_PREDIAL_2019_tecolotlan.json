@@ -1,0 +1,62 @@
+{
+  "predial": {
+    "tipo_esquema": "tarifa_millar",
+    "tabla": [
+      {
+        "grupo": "rustico",
+        "clave": "rustico_valor_fiscal",
+        "descripcion": "Predios rústicos: sobre el valor fiscal determinado, el: 0.24. A las cantidades que resulten de aplicar la tasa contenida en el inciso a), se le adicionará una cuota fija de $12.97 bimestrales.",
+        "tasa_millar": 0.24,
+        "periodicidad": "bimestral",
+        "cuota_fija_adicional": {
+          "monto": 12.97,
+          "periodicidad": "bimestral",
+          "unidad": "pesos"
+        }
+      },
+      {
+        "grupo": "urbano",
+        "clave": "urbano_edificado",
+        "descripcion": "Predios urbanos edificados: sobre el valor determinado, el: 0.24. A las cantidades determinadas mediante la aplicación de las tasas señaladas... se les adicionará una cuota fija de $17.00 bimestrales.",
+        "tasa_millar": 0.24,
+        "periodicidad": "bimestral",
+        "cuota_fija_adicional": {
+          "monto": 17.0,
+          "periodicidad": "bimestral",
+          "unidad": "pesos"
+        }
+      },
+      {
+        "grupo": "urbano",
+        "clave": "urbano_no_edificado",
+        "descripcion": "Predios urbanos no edificados: sobre el valor determinado, el: 0.36. A las cantidades determinadas mediante la aplicación de las tasas señaladas... se les adicionará una cuota fija de $17.00 bimestrales.",
+        "tasa_millar": 0.36,
+        "periodicidad": "bimestral",
+        "cuota_fija_adicional": {
+          "monto": 17.0,
+          "periodicidad": "bimestral",
+          "unidad": "pesos"
+        }
+      }
+    ],
+    "minimo_predial": null,
+    "comentarios": "El texto establece tasas \"0.24\" y \"0.36\" (típicamente al millar en leyes municipales de Jalisco) aplicables sobre el valor fiscal/catastral, con cuota fija bimestral adicional. Para rústicos también indica tasa 0.24 sobre valor fiscal y cuota fija bimestral adicional. No se identifica un monto mínimo distinto; solo señala que no será inferior a las cuotas fijas de la sección."
+  },
+  "_meta": {
+    "fuente": "txt",
+    "modelo": "reclasified_v1[gpt-5.2]"
+  },
+  "_meta_v2": {
+    "intentos": 0,
+    "requiere_revision": false,
+    "razon": null,
+    "tokens": {
+      "input": 0,
+      "output": 0,
+      "cached": 0
+    },
+    "cvegeo": "14088",
+    "estado": "jalisco",
+    "anio": 2019
+  }
+}

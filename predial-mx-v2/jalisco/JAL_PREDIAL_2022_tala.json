@@ -1,0 +1,70 @@
+{
+  "predial": {
+    "tipo_esquema": "tarifa_millar",
+    "tabla": [
+      {
+        "grupo": "rustico",
+        "clave": "rustico_general_valor_fiscal",
+        "descripcion": "Predios rústicos: sobre el valor fiscal determinado, el 0.2% (bimestral). A la cantidad que resulte se le adicionará una cuota fija de $5.00 bimestrales.",
+        "tasa_millar": 2.0,
+        "periodicidad": "bimestral",
+        "cuota_fija_adicional": {
+          "monto": 5.0,
+          "periodicidad": "bimestral",
+          "unidad": "pesos"
+        }
+      },
+      {
+        "grupo": "rustico",
+        "clave": "rustico_invernadero_microtuneles",
+        "descripcion": "Predios rústicos de tipo invernadero, microtúneles y microtúneles: tasa del 0.35% (bimestral).",
+        "tasa_millar": 3.5,
+        "periodicidad": "bimestral",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "urbano",
+        "clave": "urbano_edificado",
+        "descripcion": "Predios urbanos edificados: sobre el valor determinado, el 0.23% (bimestral). Se adicionará una cuota fija de $4.00 bimestrales.",
+        "tasa_millar": 2.3,
+        "periodicidad": "bimestral",
+        "cuota_fija_adicional": {
+          "monto": 4.0,
+          "periodicidad": "bimestral",
+          "unidad": "pesos"
+        }
+      },
+      {
+        "grupo": "urbano",
+        "clave": "urbano_no_edificado_fuera_zonas_urbanas",
+        "descripcion": "Predios urbanos no edificados, localizados fuera de las zonas urbanas: sobre el valor determinado, el 0.35% (bimestral). La cuota fija será de $4.00 bimestral.",
+        "tasa_millar": 3.5,
+        "periodicidad": "bimestral",
+        "cuota_fija_adicional": {
+          "monto": 4.0,
+          "periodicidad": "bimestral",
+          "unidad": "pesos"
+        }
+      }
+    ],
+    "minimo_predial": null,
+    "comentarios": "El Art. 32 establece tasas bimestrales expresadas en porcentaje (equivalentes a tasa al millar) aplicadas sobre el valor fiscal/catastral, con cuotas fijas bimestrales adicionales. Se ignoran beneficios/descuentos de los Arts. 33-35. La tabla de 'calidad/valor por m2' para invernaderos corresponde a valores catastrales (base), no a la tarifa."
+  },
+  "_meta": {
+    "fuente": "txt",
+    "modelo": "reclasified_v1[gpt-5.2]"
+  },
+  "_meta_v2": {
+    "intentos": 0,
+    "requiere_revision": false,
+    "razon": null,
+    "tokens": {
+      "input": 0,
+      "output": 0,
+      "cached": 0
+    },
+    "cvegeo": "14083",
+    "estado": "jalisco",
+    "anio": 2022
+  }
+}

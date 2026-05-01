@@ -1,0 +1,74 @@
+{
+  "predial": {
+    "tipo_esquema": "tarifa_millar",
+    "tabla": [
+      {
+        "grupo": "general",
+        "clave": "predios_en_general_base_fiscal_registrada_tasa_diferente",
+        "descripcion": "Predios en general que han venido tributando con tasas diferentes a las contenidas en este artículo, sobre la base fiscal registrada",
+        "tasa_millar": 10.0,
+        "periodicidad": "bimestral",
+        "cuota_fija_adicional": {
+          "monto": 29.0,
+          "periodicidad": "bimestral",
+          "unidad": "pesos"
+        }
+      },
+      {
+        "grupo": "rustico",
+        "clave": "rusticos_valor_fiscal_determinado",
+        "descripcion": "Predios rústicos: sobre el valor fiscal determinado",
+        "tasa_millar": 0.2,
+        "periodicidad": "bimestral",
+        "cuota_fija_adicional": {
+          "monto": 16.0,
+          "periodicidad": "bimestral",
+          "unidad": "pesos"
+        }
+      },
+      {
+        "grupo": "urbano",
+        "clave": "urbanos_edificados_valor_determinado",
+        "descripcion": "Predios urbanos: Predios edificados sobre el valor determinado",
+        "tasa_millar": 0.17,
+        "periodicidad": "bimestral",
+        "cuota_fija_adicional": {
+          "monto": 25.0,
+          "periodicidad": "bimestral",
+          "unidad": "pesos"
+        }
+      },
+      {
+        "grupo": "urbano",
+        "clave": "urbanos_no_edificados_valor_determinado",
+        "descripcion": "Predios urbanos: Predios no edificados sobre el valor determinado",
+        "tasa_millar": 0.33,
+        "periodicidad": "bimestral",
+        "cuota_fija_adicional": {
+          "monto": 25.0,
+          "periodicidad": "bimestral",
+          "unidad": "pesos"
+        }
+      }
+    ],
+    "minimo_predial": null,
+    "comentarios": "El artículo 17 establece tasas bimestrales al millar por tipo de predio y, además, una cuota fija bimestral que se adiciona al resultado de aplicar la tasa sobre la base/valor fiscal. No se identifica un mínimo predial en pesos; solo se indica que no será inferior a las cuotas fijas establecidas."
+  },
+  "_meta": {
+    "fuente": "txt",
+    "modelo": "reclasified_v1[gpt-5.2]"
+  },
+  "_meta_v2": {
+    "intentos": 0,
+    "requiere_revision": false,
+    "razon": null,
+    "tokens": {
+      "input": 0,
+      "output": 0,
+      "cached": 0
+    },
+    "cvegeo": "14026",
+    "estado": "jalisco",
+    "anio": 2012
+  }
+}

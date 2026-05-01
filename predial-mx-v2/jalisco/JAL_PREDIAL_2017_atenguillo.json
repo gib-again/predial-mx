@@ -1,0 +1,62 @@
+{
+  "predial": {
+    "tipo_esquema": "tarifa_millar",
+    "tabla": [
+      {
+        "grupo": "rustico",
+        "clave": "rustico_valor_real_valor_fiscal_determinado",
+        "descripcion": "Predios rústicos: sobre el valor fiscal determinado (valor real determinado en los términos de la Ley de Hacienda Municipal del Estado de Jalisco), el: 0.2 al millar (tasa bimestral).",
+        "tasa_millar": 0.2,
+        "periodicidad": "bimestral",
+        "cuota_fija_adicional": {
+          "monto": 15.0,
+          "periodicidad": "bimestral",
+          "unidad": "pesos"
+        }
+      },
+      {
+        "grupo": "urbano",
+        "clave": "urbano_edificado_valor_real_valor_determinado",
+        "descripcion": "Predios urbanos edificados: sobre el valor determinado (valor real en términos de la Ley de Hacienda Municipal del Estado de Jalisco), el: 0.2 al millar (tasa bimestral).",
+        "tasa_millar": 0.2,
+        "periodicidad": "bimestral",
+        "cuota_fija_adicional": {
+          "monto": 23.0,
+          "periodicidad": "bimestral",
+          "unidad": "pesos"
+        }
+      },
+      {
+        "grupo": "urbano",
+        "clave": "urbano_no_edificado_valor_real_valor_determinado",
+        "descripcion": "Predios urbanos no edificados: sobre el valor determinado (valor real en términos de la Ley de Hacienda Municipal del Estado de Jalisco), el: 0.3 al millar (tasa bimestral).",
+        "tasa_millar": 0.3,
+        "periodicidad": "bimestral",
+        "cuota_fija_adicional": {
+          "monto": 23.0,
+          "periodicidad": "bimestral",
+          "unidad": "pesos"
+        }
+      }
+    ],
+    "minimo_predial": null,
+    "comentarios": "El texto establece tasas bimestrales al millar aplicables a la base fiscal (valor fiscal/real determinado conforme a la Ley de Hacienda Municipal del Estado de Jalisco) y señala que se adiciona una cuota fija bimestral (distinta para rústicos y urbanos). Se ignoran beneficios, descuentos y estímulos."
+  },
+  "_meta": {
+    "fuente": "txt",
+    "modelo": "reclasified_v1[gpt-5.2]"
+  },
+  "_meta_v2": {
+    "intentos": 0,
+    "requiere_revision": false,
+    "razon": null,
+    "tokens": {
+      "input": 0,
+      "output": 0,
+      "cached": 0
+    },
+    "cvegeo": "14012",
+    "estado": "jalisco",
+    "anio": 2017
+  }
+}

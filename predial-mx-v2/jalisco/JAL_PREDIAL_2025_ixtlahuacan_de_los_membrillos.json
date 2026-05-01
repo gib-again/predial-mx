@@ -1,0 +1,118 @@
+{
+  "predial": {
+    "tipo_esquema": "otro_no_clasificado",
+    "categoria": "estructura_no_estandar",
+    "descripcion_estructural": "Ninguna variante validó (declared='progresivo'). Razones: tarifa_millar: List should have at least 1 item after validation, not 0; progresivo: Value error, brackets 4→5: hueco detectado (superior=820933.0, siguiente inferior=820936.01); tasa_unica: List should have at least 1 item after validation, not 0; cuota_fija_simple: List should have at least 1 item after validation, not 0; cuota_fija_escalonada: Value error, brackets 4→5: hueco detectado (superior=820933.0, siguiente inferior=820936.01); mixto: List should have at least 2 items after validation, not 0",
+    "tabla_cruda": [
+      {
+        "_tabla": "tabla_progresiva",
+        "n_rango": "1",
+        "inferior": "$ 0.01",
+        "superior": "$ 183,935.00",
+        "cuota_fija": "$ 28.00",
+        "tasa_marginal": "0.00025",
+        "unidad_cuota_fija": "pesos"
+      },
+      {
+        "_tabla": "tabla_progresiva",
+        "n_rango": "2",
+        "inferior": "$ 183,935.01",
+        "superior": "$ 246,803.00",
+        "cuota_fija": "$ 73.98",
+        "tasa_marginal": "0.00027",
+        "unidad_cuota_fija": "pesos"
+      },
+      {
+        "_tabla": "tabla_progresiva",
+        "n_rango": "3",
+        "inferior": "$ 246,803.01",
+        "superior": "$ 482,947.00",
+        "cuota_fija": "$ 90.96",
+        "tasa_marginal": "0.00029",
+        "unidad_cuota_fija": "pesos"
+      },
+      {
+        "_tabla": "tabla_progresiva",
+        "n_rango": "4",
+        "inferior": "$ 482,947.01",
+        "superior": "$ 820,933.00",
+        "cuota_fija": "$ 159.44",
+        "tasa_marginal": "0.00031",
+        "unidad_cuota_fija": "pesos"
+      },
+      {
+        "_tabla": "tabla_progresiva",
+        "n_rango": "5",
+        "inferior": "$ 820,936.01",
+        "superior": "$ 1,315,500.00",
+        "cuota_fija": "$ 264.22",
+        "tasa_marginal": "0.00033",
+        "unidad_cuota_fija": "pesos"
+      },
+      {
+        "_tabla": "tabla_progresiva",
+        "n_rango": "6",
+        "inferior": "$ 1,315,500.01",
+        "superior": "$ 2,075,986.00",
+        "cuota_fija": "$ 427.42",
+        "tasa_marginal": "0.00036",
+        "unidad_cuota_fija": "pesos"
+      },
+      {
+        "_tabla": "tabla_progresiva",
+        "n_rango": "7",
+        "inferior": "$ 2,075,986.01",
+        "superior": "$ 3,904,573.00",
+        "cuota_fija": "$ 701.20",
+        "tasa_marginal": "0.00039",
+        "unidad_cuota_fija": "pesos"
+      },
+      {
+        "_tabla": "tabla_progresiva",
+        "n_rango": "8",
+        "inferior": "$ 3,904,573.01",
+        "superior": "$ 10,281,384.00",
+        "cuota_fija": "$ 1,414.35",
+        "tasa_marginal": "0.00042",
+        "unidad_cuota_fija": "pesos"
+      },
+      {
+        "_tabla": "tabla_progresiva",
+        "n_rango": "9",
+        "inferior": "$10,281,384.01",
+        "superior": "$ 38,281,100.00",
+        "cuota_fija": "$ 4,092.61",
+        "tasa_marginal": "0.00045",
+        "unidad_cuota_fija": "pesos"
+      },
+      {
+        "_tabla": "tabla_progresiva",
+        "n_rango": "10",
+        "inferior": "$38,281,100.01",
+        "superior": "$ EN ADELANTE",
+        "cuota_fija": "$16,692.48",
+        "tasa_marginal": "0.00048",
+        "unidad_cuota_fija": "pesos"
+      }
+    ],
+    "minimo_predial": null,
+    "comentarios": "El impuesto predial se determina con una tabla progresiva (Tabla 01) aplicable a predios rústicos y urbanos: ((VF-LI)*T)+CF = impuesto bimestral; el anual es el bimestral multiplicado por 6. Se ignoran reducciones, descuentos, sobretasas y demás estímulos."
+  },
+  "_meta": {
+    "fuente": "txt",
+    "modelo": "reclasified_v1[gpt-5.2]"
+  },
+  "_meta_v2": {
+    "intentos": 0,
+    "requiere_revision": false,
+    "razon": null,
+    "tokens": {
+      "input": 0,
+      "output": 0,
+      "cached": 0
+    },
+    "cvegeo": "14044",
+    "estado": "jalisco",
+    "anio": 2025
+  }
+}

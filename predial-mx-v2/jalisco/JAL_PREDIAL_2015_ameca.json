@@ -1,0 +1,74 @@
+{
+  "predial": {
+    "tipo_esquema": "tarifa_millar",
+    "tabla": [
+      {
+        "grupo": "general",
+        "clave": "predios_en_general_tasas_diferentes_base_fiscal_registrada",
+        "descripcion": "Predios en general que han venido tributando con tasas diferentes a las contenidas en este artículo, sobre la base fiscal registrada",
+        "tasa_millar": 19.9,
+        "periodicidad": "bimestral",
+        "cuota_fija_adicional": {
+          "monto": 23.0,
+          "periodicidad": "bimestral",
+          "unidad": "pesos"
+        }
+      },
+      {
+        "grupo": "rustico",
+        "clave": "rusticos_valor_fiscal_determinado",
+        "descripcion": "Predios rústicos: sobre el valor fiscal determinado (del terreno y las construcciones en su caso)",
+        "tasa_millar": 0.22,
+        "periodicidad": "bimestral",
+        "cuota_fija_adicional": {
+          "monto": 10.0,
+          "periodicidad": "bimestral",
+          "unidad": "pesos"
+        }
+      },
+      {
+        "grupo": "urbano",
+        "clave": "urbanos_edificados_valor_determinado",
+        "descripcion": "Predios urbanos edificados: sobre el valor determinado",
+        "tasa_millar": 0.22,
+        "periodicidad": "bimestral",
+        "cuota_fija_adicional": {
+          "monto": 10.0,
+          "periodicidad": "bimestral",
+          "unidad": "pesos"
+        }
+      },
+      {
+        "grupo": "urbano",
+        "clave": "urbanos_no_edificados_valor_determinado",
+        "descripcion": "Predios urbanos no edificados: sobre el valor determinado",
+        "tasa_millar": 0.32,
+        "periodicidad": "bimestral",
+        "cuota_fija_adicional": {
+          "monto": 10.0,
+          "periodicidad": "bimestral",
+          "unidad": "pesos"
+        }
+      }
+    ],
+    "minimo_predial": null,
+    "comentarios": "Se establecen tasas bimestrales al millar sobre base/valor fiscal, con cuota fija adicional bimestral para los supuestos aplicables. Se ignoraron reducciones/beneficios de artículos 19-21 por instrucción."
+  },
+  "_meta": {
+    "fuente": "txt",
+    "modelo": "reclasified_v1[gpt-5.2]"
+  },
+  "_meta_v2": {
+    "intentos": 0,
+    "requiere_revision": false,
+    "razon": null,
+    "tokens": {
+      "input": 0,
+      "output": 0,
+      "cached": 0
+    },
+    "cvegeo": "14006",
+    "estado": "jalisco",
+    "anio": 2015
+  }
+}

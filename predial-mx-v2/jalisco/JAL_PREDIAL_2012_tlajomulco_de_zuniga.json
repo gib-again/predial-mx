@@ -1,0 +1,62 @@
+{
+  "predial": {
+    "tipo_esquema": "tarifa_millar",
+    "tabla": [
+      {
+        "grupo": "rustico",
+        "clave": "rustico_valor_fiscal_determinado",
+        "descripcion": "Predios rústicos: sobre el valor fiscal determinado",
+        "tasa_millar": 0.23,
+        "periodicidad": "bimestral",
+        "cuota_fija_adicional": {
+          "monto": 10.0,
+          "periodicidad": "bimestral",
+          "unidad": "pesos"
+        }
+      },
+      {
+        "grupo": "urbano",
+        "clave": "urbano_edificado_valor_determinado",
+        "descripcion": "Predios urbanos edificados: sobre el valor determinado",
+        "tasa_millar": 0.23,
+        "periodicidad": "bimestral",
+        "cuota_fija_adicional": {
+          "monto": 8.0,
+          "periodicidad": "bimestral",
+          "unidad": "pesos"
+        }
+      },
+      {
+        "grupo": "urbano",
+        "clave": "urbano_baldio_valor_determinado",
+        "descripcion": "Predios urbanos baldíos: sobre el valor determinado",
+        "tasa_millar": 0.6,
+        "periodicidad": "bimestral",
+        "cuota_fija_adicional": {
+          "monto": 8.0,
+          "periodicidad": "bimestral",
+          "unidad": "pesos"
+        }
+      }
+    ],
+    "minimo_predial": null,
+    "comentarios": "El Art. 22 establece tasas bimestrales y al millar, con cuota fija adicional bimestral para rústicos (inc. I) y para urbanos (fracc. II incisos a y b). Se ignoran beneficios, reducciones e incrementos topados (Arts. 23-27) por instrucción."
+  },
+  "_meta": {
+    "fuente": "txt",
+    "modelo": "reclasified_v1[gpt-5.2]"
+  },
+  "_meta_v2": {
+    "intentos": 0,
+    "requiere_revision": false,
+    "razon": null,
+    "tokens": {
+      "input": 0,
+      "output": 0,
+      "cached": 0
+    },
+    "cvegeo": "14097",
+    "estado": "jalisco",
+    "anio": 2012
+  }
+}

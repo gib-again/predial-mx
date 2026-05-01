@@ -1,0 +1,74 @@
+{
+  "predial": {
+    "tipo_esquema": "tarifa_millar",
+    "tabla": [
+      {
+        "grupo": "general",
+        "clave": "predios_en_general_base_fiscal_registrada",
+        "descripcion": "Predios en general que han venido tributando con tasas diferentes a las contenidas en este Artículo, sobre la base fiscal registrada",
+        "tasa_millar": 10.45,
+        "periodicidad": "bimestral",
+        "cuota_fija_adicional": {
+          "monto": 35.53,
+          "periodicidad": "bimestral",
+          "unidad": "pesos"
+        }
+      },
+      {
+        "grupo": "rustico",
+        "clave": "rustico_valor_fiscal_determinado",
+        "descripcion": "Predios rústicos: para predios cuyo valor real se determine en los términos de la Ley de Hacienda Municipal del Estado de Jalisco, sobre el valor fiscal determinado",
+        "tasa_millar": 0.2009,
+        "periodicidad": "bimestral",
+        "cuota_fija_adicional": {
+          "monto": 22.89,
+          "periodicidad": "bimestral",
+          "unidad": "pesos"
+        }
+      },
+      {
+        "grupo": "urbano",
+        "clave": "urbano_edificado_valor_determinado",
+        "descripcion": "Predios urbanos: predios edificados cuyo valor real se determine en los términos de la Ley de Hacienda Municipal del Estado de Jalisco, sobre el valor determinado",
+        "tasa_millar": 0.18,
+        "periodicidad": "bimestral",
+        "cuota_fija_adicional": {
+          "monto": 32.55,
+          "periodicidad": "bimestral",
+          "unidad": "pesos"
+        }
+      },
+      {
+        "grupo": "urbano",
+        "clave": "urbano_no_edificado_valor_determinado",
+        "descripcion": "Predios urbanos: predios no edificados, cuyo valor real se determine en los términos de la Ley de Hacienda Municipal del Estado de Jalisco, sobre el valor determinado",
+        "tasa_millar": 0.03,
+        "periodicidad": "bimestral",
+        "cuota_fija_adicional": {
+          "monto": 32.55,
+          "periodicidad": "bimestral",
+          "unidad": "pesos"
+        }
+      }
+    ],
+    "minimo_predial": null,
+    "comentarios": "El texto establece tasas bimestrales al millar expresadas con signo de porcentaje (ej. 20.09%, 18%, 3%). Se interpretan como tasas al millar (p.ej., 20.09% al millar = 0.2009 al millar) y se convierten dividiendo entre 100, conforme a la regla indicada. Se ignoran reducciones/beneficios de los artículos 19 a 21."
+  },
+  "_meta": {
+    "fuente": "txt",
+    "modelo": "reclasified_v1[gpt-5.2]"
+  },
+  "_meta_v2": {
+    "intentos": 0,
+    "requiere_revision": false,
+    "razon": null,
+    "tokens": {
+      "input": 0,
+      "output": 0,
+      "cached": 0
+    },
+    "cvegeo": "14003",
+    "estado": "jalisco",
+    "anio": 2020
+  }
+}

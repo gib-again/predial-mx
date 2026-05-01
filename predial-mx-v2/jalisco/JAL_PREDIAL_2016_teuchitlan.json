@@ -1,0 +1,62 @@
+{
+  "predial": {
+    "tipo_esquema": "tarifa_millar",
+    "tabla": [
+      {
+        "grupo": "rustico",
+        "clave": "rustico_valor_fiscal",
+        "descripcion": "Predios rústicos: sobre el valor fiscal determinado, el 0.20 al millar (tasa bimestral).",
+        "tasa_millar": 0.2,
+        "periodicidad": "bimestral",
+        "cuota_fija_adicional": {
+          "monto": 12.0,
+          "periodicidad": "bimestral",
+          "unidad": "pesos"
+        }
+      },
+      {
+        "grupo": "urbano",
+        "clave": "urbano_edificado",
+        "descripcion": "Predios urbanos edificados: sobre el valor determinado, el 0.20 al millar (tasa bimestral).",
+        "tasa_millar": 0.2,
+        "periodicidad": "bimestral",
+        "cuota_fija_adicional": {
+          "monto": 16.0,
+          "periodicidad": "bimestral",
+          "unidad": "pesos"
+        }
+      },
+      {
+        "grupo": "urbano",
+        "clave": "urbano_no_edificado",
+        "descripcion": "Predios urbanos no edificados: sobre el valor determinado, el 0.30 al millar (tasa bimestral).",
+        "tasa_millar": 0.3,
+        "periodicidad": "bimestral",
+        "cuota_fija_adicional": {
+          "monto": 16.0,
+          "periodicidad": "bimestral",
+          "unidad": "pesos"
+        }
+      }
+    ],
+    "minimo_predial": null,
+    "comentarios": "El Art. 20 establece una tasa bimestral al millar por tipo de predio (rústico y urbano) y señala que al resultado de aplicar la tasa se adiciona una cuota fija bimestral ($12.00 rústico y $16.00 urbano). Se ignoraron reducciones/beneficios de los Arts. 21-23 por instrucción."
+  },
+  "_meta": {
+    "fuente": "txt",
+    "modelo": "reclasified_v1[gpt-5.2]"
+  },
+  "_meta_v2": {
+    "intentos": 0,
+    "requiere_revision": false,
+    "razon": null,
+    "tokens": {
+      "input": 0,
+      "output": 0,
+      "cached": 0
+    },
+    "cvegeo": "14095",
+    "estado": "jalisco",
+    "anio": 2016
+  }
+}

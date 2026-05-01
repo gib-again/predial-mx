@@ -1,0 +1,78 @@
+{
+  "predial": {
+    "tipo_esquema": "tarifa_millar",
+    "tabla": [
+      {
+        "grupo": "rustico",
+        "clave": "rustico_valor_real_lhmj",
+        "descripcion": "Predios rústicos: para predios cuyo valor real se determine en los términos de la Ley de Hacienda Municipal del Estado de Jalisco (del terreno y las construcciones en su caso), sobre el valor fiscal determinado",
+        "tasa_millar": 0.2,
+        "periodicidad": "bimestral",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "rustico",
+        "clave": "rustico_valor_fiscal_minimo_catastro_traslativo_tablas",
+        "descripcion": "Predios rústicos: para predio cuyo valor real se determine en los términos de la Ley de Catastro del Estado de Jalisco o cuyo valor se haya determinado en cualquier operación traslativa de dominio o de Tablas de Valores vigentes y resulten con valor fiscal mínimo",
+        "tasa_millar": 1.5,
+        "periodicidad": "bimestral",
+        "cuota_fija_adicional": {
+          "monto": 15.0,
+          "periodicidad": "bimestral",
+          "unidad": "pesos"
+        }
+      },
+      {
+        "grupo": "rustico",
+        "clave": "rustico_agropecuario_en_produccion",
+        "descripcion": "Predios rústicos dedicados preponderantemente a fines agropecuarios en producción (previa constancia) y cuyo valor se determine conforme al párrafo anterior",
+        "tasa_millar": 0.8,
+        "periodicidad": "bimestral",
+        "cuota_fija_adicional": {
+          "monto": 15.0,
+          "periodicidad": "bimestral",
+          "unidad": "pesos"
+        }
+      },
+      {
+        "grupo": "urbano",
+        "clave": "urbano_edificado_valor_real_lhmj",
+        "descripcion": "Predios urbanos edificados cuyo valor real se determine en los términos de la Ley de Hacienda Municipal del Estado de Jalisco, sobre el valor determinado",
+        "tasa_millar": 0.2,
+        "periodicidad": "bimestral",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "urbano",
+        "clave": "urbano_no_edificado_valor_real_lhmj",
+        "descripcion": "Predios urbanos no edificados, cuyo valor real se determine en los términos de la Ley de Hacienda Municipal del Estado de Jalisco, sobre el valor determinado",
+        "tasa_millar": 0.3,
+        "periodicidad": "bimestral",
+        "cuota_fija_adicional": {
+          "monto": 5.0,
+          "periodicidad": "bimestral",
+          "unidad": "pesos"
+        }
+      }
+    ],
+    "minimo_predial": null,
+    "comentarios": "La sección establece tasas bimestrales al millar por tipo de predio (rústico/urbano) y condición (edificado/no edificado, agropecuario), y en algunos casos una cuota fija adicional bimestral ($15.00 o $5.00). No se indica un monto mínimo numérico; solo menciona que no será inferior a las cuotas fijas establecidas en la sección."
+  },
+  "_meta": {
+    "fuente": "txt",
+    "modelo": "reclasified_v1[gpt-5.2]"
+  },
+  "_meta_v2": {
+    "intentos": 0,
+    "requiere_revision": false,
+    "razon": null,
+    "tokens": {
+      "input": 0,
+      "output": 0,
+      "cached": 0
+    },
+    "cvegeo": "14069",
+    "estado": "jalisco",
+    "anio": 2024
+  }
+}

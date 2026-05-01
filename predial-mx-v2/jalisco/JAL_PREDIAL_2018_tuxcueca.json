@@ -1,0 +1,66 @@
+{
+  "predial": {
+    "tipo_esquema": "tarifa_millar",
+    "tabla": [
+      {
+        "grupo": "rustico",
+        "clave": "rustico_valor_real_determinado",
+        "descripcion": "Para predios cuyo valor real se determine en los términos de las Leyes de Hacienda y de Catastro Municipales del Estado de Jalisco, sobre el valor determinado",
+        "tasa_millar": 0.85,
+        "periodicidad": "bimestral",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "rustico",
+        "clave": "rustico_edificados_no_edificados_valor_excede_760000",
+        "descripcion": "Para predios edificados y no edificados cuyo valor exceda los $760,000.00",
+        "tasa_millar": 0.5,
+        "periodicidad": "bimestral",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "urbano",
+        "clave": "urbano_edificados_valor_determinado",
+        "descripcion": "Predios edificados cuyo valor se determine en los términos de las Leyes de Hacienda Municipal y de Catastro Municipal del Estado de Jalisco, sobre el valor determinado",
+        "tasa_millar": 0.22,
+        "periodicidad": "bimestral",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "urbano",
+        "clave": "urbano_no_edificados_valor_determinado",
+        "descripcion": "Predios no edificados cuyo valor se determine en los términos de las Leyes de Hacienda Municipal y de Catastro Municipal del Estado de Jalisco, sobre el valor determinado",
+        "tasa_millar": 0.38,
+        "periodicidad": "bimestral",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "urbano",
+        "clave": "urbano_edificados_no_edificados_valor_no_excede_70000",
+        "descripcion": "Predios edificados y no edificados cuyo valor no exceda los $70,000.00",
+        "tasa_millar": 0.7,
+        "periodicidad": "bimestral",
+        "cuota_fija_adicional": null
+      }
+    ],
+    "minimo_predial": null,
+    "comentarios": "Artículo 18 establece tasas bimestrales al millar aplicables a la base fiscal (valor determinado conforme a Leyes de Hacienda Municipal y Catastro Municipal de Jalisco). Artículos 19-22 contienen beneficios/condiciones e instrucciones de pago que se ignoran para la mecánica básica. El texto menciona un mínimo ('En ningún caso...'), pero no especifica monto."
+  },
+  "_meta": {
+    "fuente": "txt",
+    "modelo": "reclasified_v1[gpt-5.2]"
+  },
+  "_meta_v2": {
+    "intentos": 0,
+    "requiere_revision": false,
+    "razon": null,
+    "tokens": {
+      "input": 0,
+      "output": 0,
+      "cached": 0
+    },
+    "cvegeo": "14107",
+    "estado": "jalisco",
+    "anio": 2018
+  }
+}

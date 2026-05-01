@@ -1,0 +1,49 @@
+{
+  "predial": {
+    "tipo_esquema": "otro_no_clasificado",
+    "categoria": "estructura_no_estandar",
+    "descripcion_estructural": "Ninguna variante validó (declared='tasa_unica'). Razones: tarifa_millar: List should have at least 1 item after validation, not 0; progresivo: List should have at least 2 items after validation, not 0; tasa_unica: List should have at most 1 item after validation, not 3; cuota_fija_simple: List should have at least 1 item after validation, not 0; cuota_fija_escalonada: List should have at least 2 items after validation, not 0; mixto: List should have at least 2 items after validation, not 0",
+    "tabla_cruda": [
+      {
+        "_tabla": "tabla_tasa_unica",
+        "descripcion": "Predios rústicos: sobre el valor fiscal determinado, el 22% (más cuota fija bimestral indicada en ley).",
+        "tasa": 0.22,
+        "base_calculo": "valor_fiscal",
+        "unidad": "porcentaje"
+      },
+      {
+        "_tabla": "tabla_tasa_unica",
+        "descripcion": "Predios urbanos edificados: sobre el valor determinado, el 25% (más cuota fija bimestral indicada en ley).",
+        "tasa": 0.25,
+        "base_calculo": "valor_fiscal",
+        "unidad": "porcentaje"
+      },
+      {
+        "_tabla": "tabla_tasa_unica",
+        "descripcion": "Predios urbanos no edificados: sobre el valor determinado, el 37% (más cuota fija bimestral indicada en ley).",
+        "tasa": 0.37,
+        "base_calculo": "valor_fiscal",
+        "unidad": "porcentaje"
+      }
+    ],
+    "minimo_predial": null,
+    "comentarios": "El texto establece tasas porcentuales sobre el valor fiscal (rústico 22%, urbano edificado 25%, urbano no edificado 37%) y además cuotas fijas bimestrales ($13.49 y $17.60). Por la estructura JSON disponible, las cuotas fijas adicionales se capturan en tabla_tarifa_millar; sin embargo, aquí las tasas están expresadas como porcentaje (no al millar). Se clasifica como tasa_unica por ser el esquema más cercano dentro de las opciones, aunque en realidad hay tasas distintas por tipo de predio (esquema mixto de tasas porcentuales + cuota fija)."
+  },
+  "_meta": {
+    "fuente": "txt_extendido",
+    "modelo": "reclasified_v1[gpt-5.2]"
+  },
+  "_meta_v2": {
+    "intentos": 0,
+    "requiere_revision": false,
+    "razon": null,
+    "tokens": {
+      "input": 0,
+      "output": 0,
+      "cached": 0
+    },
+    "cvegeo": "14088",
+    "estado": "jalisco",
+    "anio": 2020
+  }
+}

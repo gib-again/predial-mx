@@ -1,0 +1,74 @@
+{
+  "predial": {
+    "tipo_esquema": "tarifa_millar",
+    "tabla": [
+      {
+        "grupo": "general",
+        "clave": "predios_en_general_tasas_diferentes_base_fiscal_registrada",
+        "descripcion": "Predios en general que han venido tributando con tasas diferentes a las contenidas en este artículo, sobre la base fiscal registrada",
+        "tasa_millar": 0.12,
+        "periodicidad": "bimestral",
+        "cuota_fija_adicional": {
+          "monto": 27.0,
+          "periodicidad": "bimestral",
+          "unidad": "pesos"
+        }
+      },
+      {
+        "grupo": "rustico",
+        "clave": "rusticos_valor_real_valor_fiscal_determinado",
+        "descripcion": "Predios rústicos: Para predios cuyo valor real se determine en los términos de la Ley de Hacienda Municipal del Estado de Jalisco (del terreno y las construcciones en su caso), sobre el valor fiscal determinado",
+        "tasa_millar": 0.23,
+        "periodicidad": "bimestral",
+        "cuota_fija_adicional": {
+          "monto": 18.0,
+          "periodicidad": "bimestral",
+          "unidad": "pesos"
+        }
+      },
+      {
+        "grupo": "urbano",
+        "clave": "urbanos_edificados_valor_real",
+        "descripcion": "Predios urbanos: Predios edificados cuyo valor real se determine en los términos de la Ley de Hacienda Municipal del Estado de Jalisco, sobre el valor determinado",
+        "tasa_millar": 0.49,
+        "periodicidad": "bimestral",
+        "cuota_fija_adicional": {
+          "monto": 25.0,
+          "periodicidad": "bimestral",
+          "unidad": "pesos"
+        }
+      },
+      {
+        "grupo": "urbano",
+        "clave": "urbanos_no_edificados_valor_real",
+        "descripcion": "Predios urbanos: Predios no edificados, cuyo valor real se determine en los términos de la Ley de Hacienda Municipal del Estado de Jalisco, sobre el valor determinado",
+        "tasa_millar": 0.33,
+        "periodicidad": "bimestral",
+        "cuota_fija_adicional": {
+          "monto": 25.0,
+          "periodicidad": "bimestral",
+          "unidad": "pesos"
+        }
+      }
+    ],
+    "minimo_predial": null,
+    "comentarios": "El texto establece tasas bimestrales al millar (aunque en el documento aparecen con signo %). Se capturan como tasas al millar: 12% -> 0.12 al millar; 23% -> 0.23 al millar. Las tasas 0.49 y 0.33 ya están expresadas como al millar. Se omiten reducciones/beneficios. El mínimo predial se menciona de forma referencial ('no será inferior a las cuotas fijas establecidas en esta sección') pero no fija un monto mínimo general distinto a las cuotas fijas adicionales, por lo que no se captura un mínimo explícito."
+  },
+  "_meta": {
+    "fuente": "txt",
+    "modelo": "reclasified_v1[gpt-5.2]"
+  },
+  "_meta_v2": {
+    "intentos": 0,
+    "requiere_revision": false,
+    "razon": null,
+    "tokens": {
+      "input": 0,
+      "output": 0,
+      "cached": 0
+    },
+    "cvegeo": "14074",
+    "estado": "jalisco",
+    "anio": 2022
+  }
+}

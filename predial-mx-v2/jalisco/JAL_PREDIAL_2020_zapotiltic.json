@@ -1,0 +1,82 @@
+{
+  "predial": {
+    "tipo_esquema": "tarifa_millar",
+    "tabla": [
+      {
+        "grupo": "general",
+        "clave": "predios_en_general_tasas_diferentes_base_fiscal_registrada",
+        "descripcion": "Predios en general que han venido tributando con tasas diferentes a las contenidas en este articulo, sobre la base fiscal registrada",
+        "tasa_millar": 10.3,
+        "periodicidad": "bimestral",
+        "cuota_fija_adicional": {
+          "monto": 25.0,
+          "periodicidad": "bimestral",
+          "unidad": "pesos"
+        }
+      },
+      {
+        "grupo": "rustico",
+        "clave": "rusticos_valor_fiscal_determinado_lhmj",
+        "descripcion": "Predios rústicos: sobre el valor fiscal determinado (del terreno y las construcciones en su caso)",
+        "tasa_millar": 0.22,
+        "periodicidad": "bimestral",
+        "cuota_fija_adicional": {
+          "monto": 15.0,
+          "periodicidad": "bimestral",
+          "unidad": "pesos"
+        }
+      },
+      {
+        "grupo": "urbano",
+        "clave": "urbanos_edificados_valor_determinado_lhmj",
+        "descripcion": "Predios urbanos: predios edificados, sobre el valor determinado",
+        "tasa_millar": 0.22,
+        "periodicidad": "bimestral",
+        "cuota_fija_adicional": {
+          "monto": 24.0,
+          "periodicidad": "bimestral",
+          "unidad": "pesos"
+        }
+      },
+      {
+        "grupo": "urbano",
+        "clave": "urbanos_no_edificados_valor_determinado_lhmj",
+        "descripcion": "Predios urbanos: predios no edificados, sobre el valor determinado",
+        "tasa_millar": 0.38,
+        "periodicidad": "bimestral",
+        "cuota_fija_adicional": {
+          "monto": 24.0,
+          "periodicidad": "bimestral",
+          "unidad": "pesos"
+        }
+      },
+      {
+        "grupo": "urbano",
+        "clave": "urbanos_agropecuaria_comercial_industrial_edificados_no_edificados",
+        "descripcion": "Predios urbanos: predios edificados y no edificados, cuando su naturaleza sea agropecuaria, comercial o industrial",
+        "tasa_millar": 0.84,
+        "periodicidad": "bimestral",
+        "cuota_fija_adicional": null
+      }
+    ],
+    "minimo_predial": null,
+    "comentarios": "El texto establece tasas bimestrales al millar aplicables sobre el valor/base fiscal, con cuotas fijas bimestrales adicionales para ciertos supuestos (I, II.a y urbanos a-b). Se ignoraron reducciones/beneficios."
+  },
+  "_meta": {
+    "fuente": "txt",
+    "modelo": "reclasified_v1[gpt-5.2]"
+  },
+  "_meta_v2": {
+    "intentos": 0,
+    "requiere_revision": false,
+    "razon": null,
+    "tokens": {
+      "input": 0,
+      "output": 0,
+      "cached": 0
+    },
+    "cvegeo": "14121",
+    "estado": "jalisco",
+    "anio": 2020
+  }
+}

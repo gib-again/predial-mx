@@ -1,0 +1,74 @@
+{
+  "predial": {
+    "tipo_esquema": "tarifa_millar",
+    "tabla": [
+      {
+        "grupo": "general",
+        "clave": "predios_en_general_base_fiscal_registrada",
+        "descripcion": "Predios en general que han venido tributando con tasas diferentes a las contenidas en este artículo, sobre la base fiscal registrada",
+        "tasa_millar": 0.1,
+        "periodicidad": "bimestral",
+        "cuota_fija_adicional": {
+          "monto": 31.5,
+          "periodicidad": "bimestral",
+          "unidad": "pesos"
+        }
+      },
+      {
+        "grupo": "rustico",
+        "clave": "rustico_valor_fiscal_determinado",
+        "descripcion": "Predios rústicos: para predios cuyo valor real se determine... sobre el valor fiscal determinado",
+        "tasa_millar": 0.22,
+        "periodicidad": "bimestral",
+        "cuota_fija_adicional": {
+          "monto": 21.0,
+          "periodicidad": "bimestral",
+          "unidad": "pesos"
+        }
+      },
+      {
+        "grupo": "urbano",
+        "clave": "urbano_edificado_valor_determinado",
+        "descripcion": "Predios urbanos: predios edificados... sobre el valor determinado",
+        "tasa_millar": 0.18,
+        "periodicidad": "bimestral",
+        "cuota_fija_adicional": {
+          "monto": 21.0,
+          "periodicidad": "bimestral",
+          "unidad": "pesos"
+        }
+      },
+      {
+        "grupo": "urbano",
+        "clave": "urbano_no_edificado_valor_determinado",
+        "descripcion": "Predios urbanos: predios no edificados... sobre el valor determinado",
+        "tasa_millar": 0.33,
+        "periodicidad": "bimestral",
+        "cuota_fija_adicional": {
+          "monto": 21.0,
+          "periodicidad": "bimestral",
+          "unidad": "pesos"
+        }
+      }
+    ],
+    "minimo_predial": null,
+    "comentarios": "El texto indica 'Tasa bimestral al millar', pero las tasas están expresadas como porcentajes (10%, 22%, 18%, 33%) y además establece una cuota fija bimestral adicional según el tipo de predio/supuesto."
+  },
+  "_meta": {
+    "fuente": "txt",
+    "modelo": "reclasified_v1[gpt-5.2]"
+  },
+  "_meta_v2": {
+    "intentos": 0,
+    "requiere_revision": false,
+    "razon": null,
+    "tokens": {
+      "input": 0,
+      "output": 0,
+      "cached": 0
+    },
+    "cvegeo": "14034",
+    "estado": "jalisco",
+    "anio": 2021
+  }
+}

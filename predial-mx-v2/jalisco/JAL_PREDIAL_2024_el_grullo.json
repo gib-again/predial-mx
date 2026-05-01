@@ -1,0 +1,74 @@
+{
+  "predial": {
+    "tipo_esquema": "tarifa_millar",
+    "tabla": [
+      {
+        "grupo": "general",
+        "clave": "predios_valor_real_valor_fiscal",
+        "descripcion": "Para predios cuyo valor real se determine en los términos de la Ley de Hacienda Municipal del Estado de Jalisco (del terreno y las construcciones en su caso), sobre el valor fiscal determinado",
+        "tasa_millar": 0.2,
+        "periodicidad": "bimestral",
+        "cuota_fija_adicional": {
+          "monto": 16.98,
+          "periodicidad": "bimestral",
+          "unidad": "pesos"
+        }
+      },
+      {
+        "grupo": "urbano",
+        "clave": "urbanos_edificados",
+        "descripcion": "Predios urbanos: Predios edificados, cuyo valor real se determine en los términos de la Ley de Hacienda Municipal del Estado de Jalisco, sobre el valor determinado",
+        "tasa_millar": 0.16,
+        "periodicidad": "bimestral",
+        "cuota_fija_adicional": {
+          "monto": 21.84,
+          "periodicidad": "bimestral",
+          "unidad": "pesos"
+        }
+      },
+      {
+        "grupo": "urbano",
+        "clave": "urbanos_baldios_fuera_zonas_edificadas",
+        "descripcion": "Predios urbanos: Predios baldíos que se localicen fuera de las zonas edificadas, cuyo valor real se determine en los términos de la Ley de Hacienda Municipal del Estado de Jalisco, sobre el valor determinado",
+        "tasa_millar": 0.3,
+        "periodicidad": "bimestral",
+        "cuota_fija_adicional": {
+          "monto": 21.84,
+          "periodicidad": "bimestral",
+          "unidad": "pesos"
+        }
+      },
+      {
+        "grupo": "urbano",
+        "clave": "urbanos_baldios_dentro_zonas_edificadas",
+        "descripcion": "Predios urbanos: Predios baldíos que se localicen dentro de las zonas edificadas, cuyo valor real se determine en los términos de la Ley de Hacienda Municipal del Estado de Jalisco, sobre el valor determinado",
+        "tasa_millar": 0.4,
+        "periodicidad": "bimestral",
+        "cuota_fija_adicional": {
+          "monto": 21.84,
+          "periodicidad": "bimestral",
+          "unidad": "pesos"
+        }
+      }
+    ],
+    "minimo_predial": null,
+    "comentarios": "El texto establece tasas aplicables sobre el valor fiscal (valor real determinado conforme a la Ley de Hacienda Municipal del Estado de Jalisco) y además señala una cuota fija bimestral adicional (para el inciso a) y para predios urbanos). Se ignoraron beneficios/descuentos/estímulos."
+  },
+  "_meta": {
+    "fuente": "txt",
+    "modelo": "reclasified_v1[gpt-5.2]"
+  },
+  "_meta_v2": {
+    "intentos": 0,
+    "requiere_revision": false,
+    "razon": null,
+    "tokens": {
+      "input": 0,
+      "output": 0,
+      "cached": 0
+    },
+    "cvegeo": "14037",
+    "estado": "jalisco",
+    "anio": 2024
+  }
+}

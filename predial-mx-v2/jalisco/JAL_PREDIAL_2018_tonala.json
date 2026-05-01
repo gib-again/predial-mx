@@ -1,0 +1,62 @@
+{
+  "predial": {
+    "tipo_esquema": "tarifa_millar",
+    "tabla": [
+      {
+        "grupo": "rustico",
+        "clave": "rusticos_valor_fiscal_determinado",
+        "descripcion": "Predios rústicos cuyo valor real se determine... sobre el valor fiscal determinado, el: 0.23; se adicionará una cuota fija de $11.00 pesos bimestrales",
+        "tasa_millar": 0.23,
+        "periodicidad": "bimestral",
+        "cuota_fija_adicional": {
+          "monto": 11.0,
+          "periodicidad": "bimestral",
+          "unidad": "pesos"
+        }
+      },
+      {
+        "grupo": "urbano",
+        "clave": "urbanos_edificados_valor_determinado",
+        "descripcion": "Predios edificados... sobre el valor que resulte de aplicar el factor determinado, el: 0.25; se adicionará una cuota fija de $17.00 pesos bimestrales",
+        "tasa_millar": 0.25,
+        "periodicidad": "bimestral",
+        "cuota_fija_adicional": {
+          "monto": 17.0,
+          "periodicidad": "bimestral",
+          "unidad": "pesos"
+        }
+      },
+      {
+        "grupo": "urbano",
+        "clave": "urbanos_no_edificados_zona_urbana_valor_determinado",
+        "descripcion": "Predios no edificados dentro de la zona urbana... sobre el valor determinado, el: 0.81; se adicionará una cuota fija de $17.00 pesos bimestrales",
+        "tasa_millar": 0.81,
+        "periodicidad": "bimestral",
+        "cuota_fija_adicional": {
+          "monto": 17.0,
+          "periodicidad": "bimestral",
+          "unidad": "pesos"
+        }
+      }
+    ],
+    "minimo_predial": null,
+    "comentarios": "El artículo 40 establece cálculo bimestral aplicando tasas a la base fiscal (valor fiscal determinado) y adicionando cuotas fijas bimestrales. Se ignoraron beneficios/Reducciones de artículos 41-43."
+  },
+  "_meta": {
+    "fuente": "txt",
+    "modelo": "reclasified_v1[gpt-5.2]"
+  },
+  "_meta_v2": {
+    "intentos": 0,
+    "requiere_revision": false,
+    "razon": null,
+    "tokens": {
+      "input": 0,
+      "output": 0,
+      "cached": 0
+    },
+    "cvegeo": "14101",
+    "estado": "jalisco",
+    "anio": 2018
+  }
+}

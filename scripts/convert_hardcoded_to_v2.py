@@ -16,6 +16,7 @@ from pathlib import Path
 from pydantic import ValidationError
 
 from src.core.adapters_hardcoded import (
+    adapt_chihuahua,
     adapt_colima,
     adapt_edomex,
     adapt_sinaloa,
@@ -44,26 +45,29 @@ def _validate_v2(predial_dict: dict) -> tuple[bool, str]:
         return False, msg
 
 
-# Estados persistibles a predial-mx-v2/. Chihuahua queda excluido (in-memory only).
+# Estados persistibles a predial-mx-v2/.
 SRC_DIRS: dict[str, Path] = {
-    "colima":  Path("data/colima/json_predial"),
-    "edomex":  Path("data/edomex/json_predial"),
-    "sinaloa": Path("data/sinaloa/json_predial"),
-    "tabasco": Path("data/tabasco/json"),  # ojo: distinto de json_predial
+    "colima":    Path("data/colima/json_predial"),
+    "edomex":    Path("data/edomex/json_predial"),
+    "sinaloa":   Path("data/sinaloa/json_predial"),
+    "tabasco":   Path("data/tabasco/json"),  # ojo: distinto de json_predial
+    "chihuahua": Path("data/chihuahua/json_predial"),
 }
 
 PREFIJOS: dict[str, str] = {
-    "colima":  "COL",
-    "edomex":  "MEX",
-    "sinaloa": "SIN",
-    "tabasco": "TAB",
+    "colima":    "COL",
+    "edomex":    "MEX",
+    "sinaloa":   "SIN",
+    "tabasco":   "TAB",
+    "chihuahua": "CHIH",
 }
 
 ADAPTERS = {
-    "colima":  adapt_colima,
-    "edomex":  adapt_edomex,
-    "sinaloa": adapt_sinaloa,
-    "tabasco": adapt_tabasco,
+    "colima":    adapt_colima,
+    "edomex":    adapt_edomex,
+    "sinaloa":   adapt_sinaloa,
+    "tabasco":   adapt_tabasco,
+    "chihuahua": adapt_chihuahua,
 }
 
 

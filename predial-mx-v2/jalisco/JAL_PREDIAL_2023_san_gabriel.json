@@ -1,0 +1,62 @@
+{
+  "predial": {
+    "tipo_esquema": "tarifa_millar",
+    "tabla": [
+      {
+        "grupo": "rustico",
+        "clave": "rusticos_valor_fiscal",
+        "descripcion": "Predios rústicos: sobre el valor fiscal determinado, el 0.22; a las cantidades que resulten se adicionará una cuota fija de $24.50 bimestrales.",
+        "tasa_millar": 0.22,
+        "periodicidad": "bimestral",
+        "cuota_fija_adicional": {
+          "monto": 24.5,
+          "periodicidad": "bimestral",
+          "unidad": "pesos"
+        }
+      },
+      {
+        "grupo": "urbano",
+        "clave": "urbanos_edificados_valor_fiscal",
+        "descripcion": "Predios urbanos edificados: sobre el valor determinado, el 0.20; se adicionará una cuota fija de $19.25 bimestrales.",
+        "tasa_millar": 0.2,
+        "periodicidad": "bimestral",
+        "cuota_fija_adicional": {
+          "monto": 19.25,
+          "periodicidad": "bimestral",
+          "unidad": "pesos"
+        }
+      },
+      {
+        "grupo": "urbano",
+        "clave": "urbanos_no_edificados_valor_fiscal",
+        "descripcion": "Predios urbanos no edificados: sobre el valor determinado, el 0.33; la cuota fija será de $28.32 bimestral.",
+        "tasa_millar": 0.33,
+        "periodicidad": "bimestral",
+        "cuota_fija_adicional": {
+          "monto": 28.32,
+          "periodicidad": "bimestral",
+          "unidad": "pesos"
+        }
+      }
+    ],
+    "minimo_predial": null,
+    "comentarios": "El texto establece tasas aplicables sobre el valor fiscal determinado (rústico y urbano: edificado/no edificado) y en cada caso se adiciona una cuota fija bimestral. Se ignoraron reducciones/beneficios/estímulos."
+  },
+  "_meta": {
+    "fuente": "txt",
+    "modelo": "reclasified_v1[gpt-5.2]"
+  },
+  "_meta_v2": {
+    "intentos": 0,
+    "requiere_revision": false,
+    "razon": null,
+    "tokens": {
+      "input": 0,
+      "output": 0,
+      "cached": 0
+    },
+    "cvegeo": "14113",
+    "estado": "jalisco",
+    "anio": 2023
+  }
+}

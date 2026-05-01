@@ -2,11 +2,11 @@
 
 Acompaña a `output/audit_pendiente.csv` (formato rellenable).
 
-**Total de filas a auditar: 126**
+**Total de filas a auditar: 119**
 
 Por motivo:
 - `sin_predial_residual`: 71
-- `schema_discontinuity`: 47
+- `schema_discontinuity`: 40
 - `edge`: 8
 
 ## Cómo llenar el CSV
@@ -44,17 +44,18 @@ Por cada fila, después de revisar el PDF candidato:
 | 2021 | `schema_discontinuity` | tarifa_millar | progresivo | 2020 | 2023 | 2021_14082_Periódico_Número_27_Segunda_Parte.pdf |
 | 2022 | `schema_discontinuity` | tarifa_millar | progresivo | 2020 | 2023 | 2022_15505_Periódico_Numero_260_Tercera_Parte.pdf |
 
+### Guanajuato — Irapuato (11017)
+
+| Año | Motivo | tipo prev | tipo next | Año prev | Año next | PDF candidato |
+|---|---|---|---|---:|---:|---|
+| 2021 | `schema_discontinuity` | mixto | progresivo | 2020 | 2022 | 2021_14082_Periódico_Número_27_Segunda_Parte.pdf |
+
 ### Guanajuato — Leon (11020)
 
 | Año | Motivo | tipo prev | tipo next | Año prev | Año next | PDF candidato |
 |---|---|---|---|---:|---:|---|
-| 2016 | `schema_discontinuity` | mixto | progresivo | 2015 | 2017 | 2016_10813_Periodico_Numero_205_Quinta_Parte.pdf |
-
-### Guanajuato — San Felipe (11030)
-
-| Año | Motivo | tipo prev | tipo next | Año prev | Año next | PDF candidato |
-|---|---|---|---|---:|---:|---|
-| 2024 | `schema_discontinuity` | tarifa_millar | otro_no_clasificado | 2023 | 2025 | 2024_17194_Periódico_Número_261_Segunda_Parte.pdf |
+| 2013 | `schema_discontinuity` | progresivo | mixto | 2012 | 2014 | 2013_4923_Periodico_Numero_207_Segunda_Parte.pdf |
+| 2024 | `schema_discontinuity` | progresivo | mixto | 2023 | 2025 | 2024_17194_Periódico_Número_261_Segunda_Parte.pdf |
 
 ### Guanajuato — San Luis de la Paz (11033)
 
@@ -72,14 +73,7 @@ Por cada fila, después de revisar el PDF candidato:
 
 | Año | Motivo | tipo prev | tipo next | Año prev | Año next | PDF candidato |
 |---|---|---|---|---:|---:|---|
-| 2024 | `schema_discontinuity` | tarifa_millar | otro_no_clasificado | 2023 | 2025 | 2024_17194_Periódico_Número_261_Segunda_Parte.pdf |
-
-### Guanajuato — Uriangato (11041)
-
-| Año | Motivo | tipo prev | tipo next | Año prev | Año next | PDF candidato |
-|---|---|---|---|---:|---:|---|
-| 2013 | `schema_discontinuity` | tarifa_millar | tasa_unica | 2012 | 2014 | 2013_4923_Periodico_Numero_207_Segunda_Parte.pdf |
-| 2021 | `schema_discontinuity` | otro_no_clasificado | tarifa_millar | 2020 | 2022 | 2021_14082_Periódico_Número_27_Segunda_Parte.pdf |
+| 2024 | `schema_discontinuity` | tarifa_millar | mixto | 2023 | 2025 | 2024_17194_Periódico_Número_261_Segunda_Parte.pdf |
 
 ### Jalisco — San Cristobal de la Barranca (14071)
 
@@ -124,6 +118,12 @@ Por cada fila, después de revisar el PDF candidato:
 |---|---|---|---|---:|---:|---|
 | 2025 | `sin_predial_residual` | — | — | — | — | 2024-12-30_3.pdf |
 
+### Yucatan — Chemax (31019)
+
+| Año | Motivo | tipo prev | tipo next | Año prev | Año next | PDF candidato |
+|---|---|---|---|---:|---:|---|
+| 2022 | `schema_discontinuity` | mixto | progresivo | 2021 | 2023 | 2022-01-13_2.pdf |
+
 ### Yucatan — Chichimila (31021)
 
 | Año | Motivo | tipo prev | tipo next | Año prev | Año next | PDF candidato |
@@ -144,12 +144,6 @@ Por cada fila, después de revisar el PDF candidato:
 | 2018 | `edge` | otro_no_clasificado | otro_no_clasificado | 2012 | 2019 | 2018-01-15_1.pdf |
 | 2022 | `schema_discontinuity` | otro_no_clasificado | mixto | 2021 | 2023 | 2022-01-13_2.pdf |
 
-### Yucatan — Conkal (31013)
-
-| Año | Motivo | tipo prev | tipo next | Año prev | Año next | PDF candidato |
-|---|---|---|---|---:|---:|---|
-| 2021 | `schema_discontinuity` | tarifa_millar | otro_no_clasificado | 2020 | 2022 | 2021-01-04_1.pdf |
-
 ### Yucatan — Cuzamá (31015)
 
 | Año | Motivo | tipo prev | tipo next | Año prev | Año next | PDF candidato |
@@ -168,16 +162,6 @@ Por cada fila, después de revisar el PDF candidato:
 | Año | Motivo | tipo prev | tipo next | Año prev | Año next | PDF candidato |
 |---|---|---|---|---:|---:|---|
 | 2015 | `sin_predial_residual` | — | — | — | — | 2014-12-24_2.pdf |
-
-### Yucatan — Dzilam Gonzalez (31029)
-
-| Año | Motivo | tipo prev | tipo next | Año prev | Año next | PDF candidato |
-|---|---|---|---|---:|---:|---|
-| 2014 | `schema_discontinuity` | cuota_fija_simple | tarifa_millar | 2013 | 2017 | 2014-01-10_1.pdf |
-| 2015 | `schema_discontinuity` | cuota_fija_simple | tarifa_millar | 2013 | 2017 | 2015-01-15_1.pdf |
-| 2016 | `schema_discontinuity` | cuota_fija_simple | tarifa_millar | 2013 | 2017 | 2016-01-04_1.pdf |
-| 2021 | `schema_discontinuity` | tarifa_millar | progresivo | 2020 | 2023 | 2021-01-04_1.pdf |
-| 2022 | `schema_discontinuity` | tarifa_millar | progresivo | 2020 | 2023 | 2022-01-13_2.pdf |
 
 ### Yucatan — Dzilam de Bravo (31028)
 
@@ -228,7 +212,7 @@ Por cada fila, después de revisar el PDF candidato:
 
 | Año | Motivo | tipo prev | tipo next | Año prev | Año next | PDF candidato |
 |---|---|---|---|---:|---:|---|
-| 2016 | `schema_discontinuity` | tarifa_millar | progresivo | 2015 | 2017 | 2016-01-04_1.pdf |
+| 2016 | `schema_discontinuity` | tasa_unica | progresivo | 2015 | 2017 | 2016-01-04_1.pdf |
 
 ### Yucatan — Izamal (31040)
 
@@ -243,8 +227,7 @@ Por cada fila, después de revisar el PDF candidato:
 
 | Año | Motivo | tipo prev | tipo next | Año prev | Año next | PDF candidato |
 |---|---|---|---|---:|---:|---|
-| 2015 | `schema_discontinuity` | otro_no_clasificado | progresivo | 2014 | 2017 | 2015-01-15_1.pdf |
-| 2016 | `schema_discontinuity` | otro_no_clasificado | progresivo | 2014 | 2017 | 2016-01-04_1.pdf |
+| 2016 | `schema_discontinuity` | tasa_unica | progresivo | 2015 | 2017 | 2016-01-04_1.pdf |
 
 ### Yucatan — Maxcanu (31048)
 
@@ -264,6 +247,12 @@ Por cada fila, después de revisar el PDF candidato:
 | Año | Motivo | tipo prev | tipo next | Año prev | Año next | PDF candidato |
 |---|---|---|---|---:|---:|---|
 | 2016 | `schema_discontinuity` | tasa_unica | progresivo | 2015 | 2017 | 2016-01-04_1.pdf |
+
+### Yucatan — Progreso (31059)
+
+| Año | Motivo | tipo prev | tipo next | Año prev | Año next | PDF candidato |
+|---|---|---|---|---:|---:|---|
+| 2014 | `schema_discontinuity` | mixto | progresivo | 2013 | 2015 | 2014-01-10_1.pdf |
 
 ### Yucatan — Río Lagartos (31061)
 
@@ -347,12 +336,6 @@ Por cada fila, después de revisar el PDF candidato:
 | 2020 | `edge` | progresivo | tasa_unica | 2015 | 2021 | 2020-01-03_1.pdf |
 | 2025 | `sin_predial_residual` | — | — | — | — | 2024-12-30_4.pdf |
 
-### Yucatan — Telchac Pueblo (31082)
-
-| Año | Motivo | tipo prev | tipo next | Año prev | Año next | PDF candidato |
-|---|---|---|---|---:|---:|---|
-| 2013 | `schema_discontinuity` | cuota_fija_simple | tasa_unica | 2012 | 2014 | 2013-01-15.pdf |
-
 ### Yucatan — Telchac Puerto (31083)
 
 | Año | Motivo | tipo prev | tipo next | Año prev | Año next | PDF candidato |
@@ -378,12 +361,6 @@ Por cada fila, después de revisar el PDF candidato:
 | Año | Motivo | tipo prev | tipo next | Año prev | Año next | PDF candidato |
 |---|---|---|---|---:|---:|---|
 | 2013 | `sin_predial_residual` | — | — | — | — | 2012-12-27_suplemento.pdf |
-
-### Yucatan — Tepakan (31086)
-
-| Año | Motivo | tipo prev | tipo next | Año prev | Año next | PDF candidato |
-|---|---|---|---|---:|---:|---|
-| 2016 | `schema_discontinuity` | tasa_unica | tarifa_millar | 2015 | 2017 | 2016-01-04_1.pdf |
 
 ### Yucatan — Tetiz (31087)
 
@@ -475,8 +452,14 @@ Por cada fila, después de revisar el PDF candidato:
 |---|---|---|---|---:|---:|---|
 | 2016 | `schema_discontinuity` | progresivo | mixto | 2015 | 2017 | 2016-01-04_1.pdf |
 
+### Yucatan — Yaxcaba (31104)
+
+| Año | Motivo | tipo prev | tipo next | Año prev | Año next | PDF candidato |
+|---|---|---|---|---:|---:|---|
+| 2016 | `schema_discontinuity` | mixto | progresivo | 2015 | 2017 | 2016-01-04_1.pdf |
+
 ### Yucatan — Yaxkukul (31105)
 
 | Año | Motivo | tipo prev | tipo next | Año prev | Año next | PDF candidato |
 |---|---|---|---|---:|---:|---|
-| 2021 | `schema_discontinuity` | tarifa_millar | otro_no_clasificado | 2020 | 2022 | 2021-01-04_1.pdf |
+| 2021 | `schema_discontinuity` | tasa_unica | otro_no_clasificado | 2020 | 2022 | 2021-01-04_1.pdf |

@@ -1,0 +1,50 @@
+{
+  "predial": {
+    "tipo_esquema": "tarifa_millar",
+    "tabla": [
+      {
+        "grupo": "rustico",
+        "clave": "rustico_valor_real_determinado",
+        "descripcion": "Predios rústicos: sobre el valor determinado (valor real), tasa bimestral al millar 0.23",
+        "tasa_millar": 0.23,
+        "periodicidad": "bimestral",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "urbano",
+        "clave": "urbano_edificado_valor_real_determinado",
+        "descripcion": "Predios urbanos edificados: sobre el valor determinado (valor real), tasa al millar 0.23",
+        "tasa_millar": 0.23,
+        "periodicidad": "bimestral",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "urbano",
+        "clave": "urbano_no_edificado_zona_urbana_valor_real_determinado",
+        "descripcion": "Predios urbanos no edificados dentro de la zona urbana: sobre el valor determinado (valor real), tasa al millar 0.81",
+        "tasa_millar": 0.81,
+        "periodicidad": "bimestral",
+        "cuota_fija_adicional": null
+      }
+    ],
+    "minimo_predial": null,
+    "comentarios": "La mecánica base es una tasa bimestral al millar aplicada sobre el valor real/fiscal determinado conforme a las Leyes de Hacienda Municipal y de Catastro Municipal del Estado de Jalisco. Se ignoran factores/beneficios de pago anticipado, recargos, y tarifas de factor (0.5, 0.85, 0.90, 0.95, 0.20, 0.4, 0.6, etc.) por ser estímulos/beneficios."
+  },
+  "_meta": {
+    "fuente": "txt",
+    "modelo": "reclasified_v1[gpt-5.2]"
+  },
+  "_meta_v2": {
+    "intentos": 0,
+    "requiere_revision": false,
+    "razon": null,
+    "tokens": {
+      "input": 0,
+      "output": 0,
+      "cached": 0
+    },
+    "cvegeo": "14039",
+    "estado": "jalisco",
+    "anio": 2013
+  }
+}

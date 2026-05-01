@@ -1,0 +1,62 @@
+{
+  "predial": {
+    "tipo_esquema": "tarifa_millar",
+    "tabla": [
+      {
+        "grupo": "rustico",
+        "clave": "rustico_valor_real_ii_d",
+        "descripcion": "II. Predios rústicos, d) Para predios cuyo valor real se determine... (del terreno y las construcciones en su caso), sobre el valor fiscal determinado",
+        "tasa_millar": 0.2,
+        "periodicidad": "bimestral",
+        "cuota_fija_adicional": {
+          "monto": 14.0,
+          "periodicidad": "bimestral",
+          "unidad": "pesos"
+        }
+      },
+      {
+        "grupo": "urbano",
+        "clave": "urbano_edificado_iii_a",
+        "descripcion": "III. Predios urbanos, a) Predios edificados cuyo valor real se determine... sobre el valor determinado",
+        "tasa_millar": 0.2,
+        "periodicidad": "bimestral",
+        "cuota_fija_adicional": {
+          "monto": 7.0,
+          "periodicidad": "bimestral",
+          "unidad": "pesos"
+        }
+      },
+      {
+        "grupo": "urbano",
+        "clave": "urbano_no_edificado_iii_b",
+        "descripcion": "III. Predios urbanos, b) Predios no edificados, cuyo valor real se determine... sobre el valor determinado",
+        "tasa_millar": 0.3,
+        "periodicidad": "bimestral",
+        "cuota_fija_adicional": {
+          "monto": 7.0,
+          "periodicidad": "bimestral",
+          "unidad": "pesos"
+        }
+      }
+    ],
+    "minimo_predial": null,
+    "comentarios": "Artículo 20 (Impuesto predial): cálculo por tasa al millar sobre el valor fiscal/real determinado, con cuota fija bimestral adicional según tipo de predio. En las imágenes proporcionadas no se alcanza a leer la(s) tasa(s) de los incisos I y II a), II b), II c) (predios en general y rústicos); sí se leen las tasas para II d) (rústico valor real) y III a)/III b) (urbanos). No se identifica un mínimo en pesos; solo se menciona que no será inferior a las cuotas fijas establecidas."
+  },
+  "_meta": {
+    "fuente": "pdf_vision",
+    "modelo": "reclasified_v1[gpt-5.2]"
+  },
+  "_meta_v2": {
+    "intentos": 0,
+    "requiere_revision": false,
+    "razon": null,
+    "tokens": {
+      "input": 0,
+      "output": 0,
+      "cached": 0
+    },
+    "cvegeo": "14023",
+    "estado": "jalisco",
+    "anio": 2015
+  }
+}

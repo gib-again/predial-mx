@@ -40,9 +40,10 @@ from src.extraction.schema_v2 import (
 V2_ESTADOS = {
     "coahuila", "guanajuato", "queretaro", "tamaulipas", "yucatan",
     "colima", "edomex", "sinaloa", "tabasco",
+    "chihuahua", "jalisco",
 }
-V1_ESTADOS_INMEM = {"jalisco", "oaxaca"}
-HARDCODED_INMEM = {"chihuahua"}
+V1_ESTADOS_INMEM = {"oaxaca"}
+HARDCODED_INMEM: set[str] = set()
 
 ESQUEMAS_CON_RANGOS = {"progresivo", "cuota_fija_escalonada", "mixto"}
 

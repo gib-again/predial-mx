@@ -1,0 +1,98 @@
+{
+  "predial": {
+    "tipo_esquema": "tarifa_millar",
+    "tabla": [
+      {
+        "grupo": "general",
+        "clave": "predios_en_general_base_fiscal_registrada",
+        "descripcion": "Predios en general, que han venido tributando con tasas diferentes a las contenidas en este artículo, sobre la base fiscal registrada, la tasa bimestral al millar de: 10",
+        "tasa_millar": 10.0,
+        "periodicidad": "bimestral",
+        "cuota_fija_adicional": {
+          "monto": 37.86,
+          "periodicidad": "bimestral",
+          "unidad": "pesos"
+        }
+      },
+      {
+        "grupo": "rustico",
+        "clave": "rustico_valor_real_inciso_a",
+        "descripcion": "Predios rústicos: a) Para predios, cuyo valor real se determine... sobre el valor fiscal determinado, el: 0.2",
+        "tasa_millar": 0.2,
+        "periodicidad": "bimestral",
+        "cuota_fija_adicional": {
+          "monto": 15.52,
+          "periodicidad": "bimestral",
+          "unidad": "pesos"
+        }
+      },
+      {
+        "grupo": "rustico",
+        "clave": "rustico_cerril_improductivo_eriazo_inciso_b",
+        "descripcion": "Predios rústicos... clasificados como cerril improductivo o eriazo... el: 0.83",
+        "tasa_millar": 0.83,
+        "periodicidad": "bimestral",
+        "cuota_fija_adicional": {
+          "monto": 19.09,
+          "periodicidad": "bimestral",
+          "unidad": "pesos"
+        }
+      },
+      {
+        "grupo": "urbano",
+        "clave": "urbano_edificados_inciso_a",
+        "descripcion": "Predios urbanos: a) Predios edificados... sobre el valor determinado, el: 0.2",
+        "tasa_millar": 0.2,
+        "periodicidad": "bimestral",
+        "cuota_fija_adicional": {
+          "monto": 22.93,
+          "periodicidad": "bimestral",
+          "unidad": "pesos"
+        }
+      },
+      {
+        "grupo": "urbano",
+        "clave": "urbano_no_edificados_fuera_zona_urbana_cabecera_inciso_b",
+        "descripcion": "Predios urbanos: b) Predios no edificados, que se localizan fuera de la zona urbana de la cabecera municipal... el: 0.3",
+        "tasa_millar": 0.3,
+        "periodicidad": "bimestral",
+        "cuota_fija_adicional": {
+          "monto": 22.93,
+          "periodicidad": "bimestral",
+          "unidad": "pesos"
+        }
+      },
+      {
+        "grupo": "urbano",
+        "clave": "urbano_no_edificados_dentro_zona_urbana_cabecera_inciso_c",
+        "descripcion": "Predios urbanos: c) Predios no edificados, que se localizan dentro de la zona urbana de la cabecera municipal... el: 0.36",
+        "tasa_millar": 0.36,
+        "periodicidad": "bimestral",
+        "cuota_fija_adicional": {
+          "monto": 19.47,
+          "periodicidad": "bimestral",
+          "unidad": "pesos"
+        }
+      }
+    ],
+    "minimo_predial": null,
+    "comentarios": "El Art. 18 establece tasas bimestrales al millar por tipo de predio y, en varios casos, una cuota fija bimestral adicional. Se ignoraron reducciones/beneficios de los Art. 19 y 20. No se identificó en el texto un monto mínimo predial explícito ('en ningún caso será inferior a...')."
+  },
+  "_meta": {
+    "fuente": "txt",
+    "modelo": "reclasified_v1[gpt-5.2]"
+  },
+  "_meta_v2": {
+    "intentos": 0,
+    "requiere_revision": false,
+    "razon": null,
+    "tokens": {
+      "input": 0,
+      "output": 0,
+      "cached": 0
+    },
+    "cvegeo": "14057",
+    "estado": "jalisco",
+    "anio": 2018
+  }
+}

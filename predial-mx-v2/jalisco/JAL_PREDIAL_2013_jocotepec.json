@@ -1,0 +1,122 @@
+{
+  "predial": {
+    "tipo_esquema": "tarifa_millar",
+    "tabla": [
+      {
+        "grupo": "rustico",
+        "clave": "rustico_valores_anteriores_2000",
+        "descripcion": "Para predios valuados en los términos de la Ley de Catastro Municipal del Estado de Jalisco o cuyo valor se haya determinado en cualquier operación traslativa de dominio, con valores anteriores a 2000, sobre el valor determinado",
+        "tasa_millar": 1.5,
+        "periodicidad": "bimestral",
+        "cuota_fija_adicional": {
+          "monto": 16.64,
+          "periodicidad": "bimestral",
+          "unidad": "pesos"
+        }
+      },
+      {
+        "grupo": "rustico",
+        "clave": "rustico_valor_real_lhmj",
+        "descripcion": "Para predios cuyo valor real se determine en los términos de la Ley de Hacienda Municipal del Estado de Jalisco, sobre el valor fiscal determinado",
+        "tasa_millar": 0.2,
+        "periodicidad": "bimestral",
+        "cuota_fija_adicional": {
+          "monto": 10.4,
+          "periodicidad": "bimestral",
+          "unidad": "pesos"
+        }
+      },
+      {
+        "grupo": "rustico",
+        "clave": "rustico_agropecuario_en_produccion_tasa_preferente",
+        "descripcion": "Tratándose de predios rústicos según la definición de la Ley de Catastro Municipal del Estado de Jalisco dedicados a fines agropecuarios en producción, y cuyo valor real se determine conforme al inciso b) se aplicará una tasa preferente",
+        "tasa_millar": 0.8,
+        "periodicidad": "bimestral",
+        "cuota_fija_adicional": {
+          "monto": 10.4,
+          "periodicidad": "bimestral",
+          "unidad": "pesos"
+        }
+      },
+      {
+        "grupo": "urbano",
+        "clave": "urbano_edificado_valores_no_responden_tablas",
+        "descripcion": "Predios edificados cuyos valores no respondan a los valores unitarios vigentes de conformidad con las tablas de valores aprobadas para el presente ejercicio fiscal",
+        "tasa_millar": 0.92,
+        "periodicidad": "bimestral",
+        "cuota_fija_adicional": {
+          "monto": 24.0,
+          "periodicidad": "bimestral",
+          "unidad": "pesos"
+        }
+      },
+      {
+        "grupo": "urbano",
+        "clave": "urbano_edificado_valor_real_lhmj",
+        "descripcion": "Predios edificados cuyo valor real se determine en los términos de la Ley de Hacienda Municipal del Estado de Jalisco, sobre el valor determinado",
+        "tasa_millar": 0.18,
+        "periodicidad": "bimestral",
+        "cuota_fija_adicional": {
+          "monto": 5.0,
+          "periodicidad": "bimestral",
+          "unidad": "pesos"
+        }
+      },
+      {
+        "grupo": "urbano",
+        "clave": "urbano_no_edificado_fuera_zonas_urbanas_valor_real_lhmj",
+        "descripcion": "Predios no edificados que se localicen fuera de las zonas urbanas cuyo valor real se determine en los términos de la Ley de Hacienda Municipal del Estado de Jalisco, sobre el valor determinado",
+        "tasa_millar": 0.5,
+        "periodicidad": "bimestral",
+        "cuota_fija_adicional": {
+          "monto": 5.0,
+          "periodicidad": "bimestral",
+          "unidad": "pesos"
+        }
+      },
+      {
+        "grupo": "urbano",
+        "clave": "urbano_no_edificado_dentro_zonas_hasta_10000m2_valor_real_lhmj",
+        "descripcion": "Predios no edificados que se localicen dentro de las zonas urbanas, con una superficie de hasta 10,000 metros cuadrados, cuyo valor real se determine en los términos de la Ley de Hacienda Municipal del Estado de Jalisco, sobre el valor determinado",
+        "tasa_millar": 0.81,
+        "periodicidad": "bimestral",
+        "cuota_fija_adicional": {
+          "monto": 5.0,
+          "periodicidad": "bimestral",
+          "unidad": "pesos"
+        }
+      },
+      {
+        "grupo": "urbano",
+        "clave": "urbano_no_edificado_dentro_zonas_mas_10000m2_valor_real_lhmj",
+        "descripcion": "Predios no edificados que se localicen dentro de las zonas urbanas, con una superficie mayor de 10,000.01 metros cuadrados, cuyo valor real se determine en los términos de la Ley de Hacienda Municipal del Estado de Jalisco, sobre el valor determinado",
+        "tasa_millar": 1.0,
+        "periodicidad": "bimestral",
+        "cuota_fija_adicional": {
+          "monto": 5.0,
+          "periodicidad": "bimestral",
+          "unidad": "pesos"
+        }
+      }
+    ],
+    "minimo_predial": null,
+    "comentarios": "El impuesto predial se determina aplicando bimestralmente tasas al millar sobre la base fiscal/valor fiscal o determinado, según tipo de predio, y en varios supuestos se adiciona una cuota fija bimestral. Se ignoraron descuentos y reducciones (arts. 40 y 41 y otros párrafos de beneficios)."
+  },
+  "_meta": {
+    "fuente": "txt",
+    "modelo": "reclasified_v1[gpt-5.2]"
+  },
+  "_meta_v2": {
+    "intentos": 0,
+    "requiere_revision": false,
+    "razon": null,
+    "tokens": {
+      "input": 0,
+      "output": 0,
+      "cached": 0
+    },
+    "cvegeo": "14050",
+    "estado": "jalisco",
+    "anio": 2013
+  }
+}

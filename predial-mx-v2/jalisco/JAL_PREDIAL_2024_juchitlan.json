@@ -1,0 +1,62 @@
+{
+  "predial": {
+    "tipo_esquema": "tarifa_millar",
+    "tabla": [
+      {
+        "grupo": "rustico",
+        "clave": "rustico_valor_fiscal_lhmun_jalisco",
+        "descripcion": "Predios rústicos: sobre el valor fiscal determinado",
+        "tasa_millar": 0.22,
+        "periodicidad": "bimestral",
+        "cuota_fija_adicional": {
+          "monto": 11.13,
+          "periodicidad": "bimestral",
+          "unidad": "pesos"
+        }
+      },
+      {
+        "grupo": "urbano",
+        "clave": "urbano_edificado",
+        "descripcion": "Predios urbanos edificados: sobre el valor determinado",
+        "tasa_millar": 0.2,
+        "periodicidad": "bimestral",
+        "cuota_fija_adicional": {
+          "monto": 11.13,
+          "periodicidad": "bimestral",
+          "unidad": "pesos"
+        }
+      },
+      {
+        "grupo": "urbano",
+        "clave": "urbano_no_edificado",
+        "descripcion": "Predios urbanos no edificados: sobre el valor determinado",
+        "tasa_millar": 0.37,
+        "periodicidad": "bimestral",
+        "cuota_fija_adicional": {
+          "monto": 18.92,
+          "periodicidad": "bimestral",
+          "unidad": "pesos"
+        }
+      }
+    ],
+    "minimo_predial": null,
+    "comentarios": "Se establece una tasa bimestral al millar diferenciada por tipo de predio (rústico, urbano edificado y urbano no edificado) y en todos los casos señalados se adiciona una cuota fija bimestral. Se ignoraron factores de reducción/beneficios y límites de incremento por ser estímulos."
+  },
+  "_meta": {
+    "fuente": "txt",
+    "modelo": "reclasified_v1[gpt-5.2]"
+  },
+  "_meta_v2": {
+    "intentos": 0,
+    "requiere_revision": false,
+    "razon": null,
+    "tokens": {
+      "input": 0,
+      "output": 0,
+      "cached": 0
+    },
+    "cvegeo": "14052",
+    "estado": "jalisco",
+    "anio": 2024
+  }
+}

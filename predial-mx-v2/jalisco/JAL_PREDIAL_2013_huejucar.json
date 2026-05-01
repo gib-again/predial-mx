@@ -1,0 +1,170 @@
+{
+  "predial": {
+    "tipo_esquema": "tarifa_millar",
+    "tabla": [
+      {
+        "grupo": "general",
+        "clave": "predios_en_general_base_fiscal_registrada_tasa_previa",
+        "descripcion": "Predios en general que han venido tributando con tasas diferentes... sobre la base fiscal registrada",
+        "tasa_millar": 10.0,
+        "periodicidad": "bimestral",
+        "cuota_fija_adicional": {
+          "monto": 17.0,
+          "periodicidad": "bimestral",
+          "unidad": "pesos"
+        }
+      },
+      {
+        "grupo": "rustico",
+        "clave": "rusticos_valores_anteriores_2000",
+        "descripcion": "Predios rústicos valuados en términos de la Ley de Catastro... con valores anteriores al año 2000",
+        "tasa_millar": 1.5,
+        "periodicidad": "bimestral",
+        "cuota_fija_adicional": {
+          "monto": 11.0,
+          "periodicidad": "bimestral",
+          "unidad": "pesos"
+        }
+      },
+      {
+        "grupo": "rustico",
+        "clave": "rusticos_agropecuarios_en_produccion_valores_anteriores_2000",
+        "descripcion": "Predios rústicos dedicados preponderantemente a fines agropecuarios en producción... y cuyo valor se determinó conforme al párrafo anterior",
+        "tasa_millar": 0.8,
+        "periodicidad": "bimestral",
+        "cuota_fija_adicional": {
+          "monto": 11.0,
+          "periodicidad": "bimestral",
+          "unidad": "pesos"
+        }
+      },
+      {
+        "grupo": "rustico",
+        "clave": "construcciones_en_predios_rusticos_tasa_inciso_b",
+        "descripcion": "Construcciones localizadas en predios rústicos: se aplicará la tasa consignada en el inciso b)",
+        "tasa_millar": 0.8,
+        "periodicidad": "bimestral",
+        "cuota_fija_adicional": {
+          "monto": 11.0,
+          "periodicidad": "bimestral",
+          "unidad": "pesos"
+        }
+      },
+      {
+        "grupo": "rustico",
+        "clave": "rusticos_valor_real_ley_hacienda_municipal",
+        "descripcion": "Predios (en contexto de rústicos) cuyo valor real se determine en términos de la Ley de Hacienda Municipal (del terreno y las construcciones en su caso)",
+        "tasa_millar": 0.2,
+        "periodicidad": "bimestral",
+        "cuota_fija_adicional": {
+          "monto": 10.0,
+          "periodicidad": "bimestral",
+          "unidad": "pesos"
+        }
+      },
+      {
+        "grupo": "urbano",
+        "clave": "urbanos_edificados_traslativa_antes_1979",
+        "descripcion": "Predios urbanos edificados... hasta antes de 1979",
+        "tasa_millar": 1.3,
+        "periodicidad": "bimestral",
+        "cuota_fija_adicional": {
+          "monto": 17.0,
+          "periodicidad": "bimestral",
+          "unidad": "pesos"
+        }
+      },
+      {
+        "grupo": "urbano",
+        "clave": "urbanos_edificados_1979_antes_1992",
+        "descripcion": "Predios urbanos edificados... a partir de 1979 y antes del año de 1992",
+        "tasa_millar": 0.8,
+        "periodicidad": "bimestral",
+        "cuota_fija_adicional": {
+          "monto": 17.0,
+          "periodicidad": "bimestral",
+          "unidad": "pesos"
+        }
+      },
+      {
+        "grupo": "urbano",
+        "clave": "urbanos_no_edificados_hasta_antes_1992",
+        "descripcion": "Predios urbanos no edificados... hasta antes de 1992",
+        "tasa_millar": 1.3,
+        "periodicidad": "bimestral",
+        "cuota_fija_adicional": {
+          "monto": 17.0,
+          "periodicidad": "bimestral",
+          "unidad": "pesos"
+        }
+      },
+      {
+        "grupo": "urbano",
+        "clave": "urbanos_no_edificados_1992_antes_2000",
+        "descripcion": "Predios urbanos no edificados... a partir de 1992 y antes del año 2000",
+        "tasa_millar": 0.3,
+        "periodicidad": "bimestral",
+        "cuota_fija_adicional": {
+          "monto": 17.0,
+          "periodicidad": "bimestral",
+          "unidad": "pesos"
+        }
+      },
+      {
+        "grupo": "urbano",
+        "clave": "urbanos_edificados_tablas_valores_1992_antes_2000",
+        "descripcion": "Predios urbanos edificados... en base a las tablas de valores de terreno y construcción... a partir de enero de 1992 y antes del 2000",
+        "tasa_millar": 0.14,
+        "periodicidad": "bimestral",
+        "cuota_fija_adicional": {
+          "monto": 17.0,
+          "periodicidad": "bimestral",
+          "unidad": "pesos"
+        }
+      },
+      {
+        "grupo": "urbano",
+        "clave": "urbanos_edificados_valor_real_ley_hacienda_municipal",
+        "descripcion": "Predios urbanos edificados cuyo valor real se determine en los términos de la Ley de Hacienda Municipal",
+        "tasa_millar": 0.16,
+        "periodicidad": "bimestral",
+        "cuota_fija_adicional": {
+          "monto": 15.0,
+          "periodicidad": "bimestral",
+          "unidad": "pesos"
+        }
+      },
+      {
+        "grupo": "urbano",
+        "clave": "urbanos_no_edificados_valor_real_ley_hacienda_municipal",
+        "descripcion": "Predios urbanos no edificados cuyo valor real se determine en los términos de la Ley de Hacienda Municipal",
+        "tasa_millar": 0.3,
+        "periodicidad": "bimestral",
+        "cuota_fija_adicional": {
+          "monto": 15.0,
+          "periodicidad": "bimestral",
+          "unidad": "pesos"
+        }
+      }
+    ],
+    "minimo_predial": null,
+    "comentarios": "El artículo 17 establece tasas bimestrales al millar diferenciadas por tipo de predio y por supuestos/periodos de valuación, con cuotas fijas bimestrales adicionales según el inciso aplicable. Se ignoran reducciones/beneficios de los artículos 18 a 20. No se identifica un mínimo predial numérico; solo se menciona que no será inferior a las cuotas fijas establecidas en la sección."
+  },
+  "_meta": {
+    "fuente": "txt",
+    "modelo": "reclasified_v1[gpt-5.2]"
+  },
+  "_meta_v2": {
+    "intentos": 0,
+    "requiere_revision": false,
+    "razon": null,
+    "tokens": {
+      "input": 0,
+      "output": 0,
+      "cached": 0
+    },
+    "cvegeo": "14041",
+    "estado": "jalisco",
+    "anio": 2013
+  }
+}

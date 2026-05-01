@@ -1,0 +1,50 @@
+{
+  "predial": {
+    "tipo_esquema": "tarifa_millar",
+    "tabla": [
+      {
+        "grupo": "rustico",
+        "clave": "predios_rusticos",
+        "descripcion": "Predios rústicos",
+        "tasa_millar": 1.0,
+        "periodicidad": "bimestral",
+        "cuota_fija_adicional": {
+          "monto": 16.0,
+          "periodicidad": "bimestral",
+          "unidad": "pesos"
+        }
+      },
+      {
+        "grupo": "urbano",
+        "clave": "predios_urbanos_edificados",
+        "descripcion": "Predios urbanos edificados",
+        "tasa_millar": 1.0,
+        "periodicidad": "bimestral",
+        "cuota_fija_adicional": {
+          "monto": 23.0,
+          "periodicidad": "bimestral",
+          "unidad": "pesos"
+        }
+      }
+    ],
+    "minimo_predial": null,
+    "comentarios": "Tasa bimestral al millar. Predios rústicos: 1.0 al millar sobre el valor fiscal determinado, con cuota fija adicional de $16.00 bimestrales. Predios urbanos edificados: 1.0 al millar sobre el valor determinado, con cuota fija adicional de $23.00 bimestrales. Se ignoran descuentos y reducciones."
+  },
+  "_meta": {
+    "fuente": "pdf_vision",
+    "modelo": "reclasified_v1[gpt-5.4-mini]"
+  },
+  "_meta_v2": {
+    "intentos": 0,
+    "requiere_revision": false,
+    "razon": null,
+    "tokens": {
+      "input": 0,
+      "output": 0,
+      "cached": 0
+    },
+    "cvegeo": "14076",
+    "estado": "jalisco",
+    "anio": 2017
+  }
+}

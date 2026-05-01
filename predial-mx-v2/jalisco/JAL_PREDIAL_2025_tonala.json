@@ -1,0 +1,103 @@
+{
+  "predial": {
+    "tipo_esquema": "progresivo",
+    "tabla": [
+      {
+        "n_rango": 1,
+        "inferior": 0.01,
+        "superior": 180000.0,
+        "cuota_fija": 30.0,
+        "tasa_marginal": 0.00023
+      },
+      {
+        "n_rango": 2,
+        "inferior": 180000.0,
+        "superior": 300000.0,
+        "cuota_fija": 71.4,
+        "tasa_marginal": 0.00025
+      },
+      {
+        "n_rango": 3,
+        "inferior": 300000.0,
+        "superior": 550000.0,
+        "cuota_fija": 101.4,
+        "tasa_marginal": 0.00025
+      },
+      {
+        "n_rango": 4,
+        "inferior": 550000.0,
+        "superior": 950000.0,
+        "cuota_fija": 163.9,
+        "tasa_marginal": 0.000275
+      },
+      {
+        "n_rango": 5,
+        "inferior": 950000.0,
+        "superior": 1450000.0,
+        "cuota_fija": 273.9,
+        "tasa_marginal": 0.0003
+      },
+      {
+        "n_rango": 6,
+        "inferior": 1450000.0,
+        "superior": 2350000.0,
+        "cuota_fija": 423.9,
+        "tasa_marginal": 0.000325
+      },
+      {
+        "n_rango": 7,
+        "inferior": 2350000.0,
+        "superior": 3850000.0,
+        "cuota_fija": 716.4,
+        "tasa_marginal": 0.00035
+      },
+      {
+        "n_rango": 8,
+        "inferior": 3850000.0,
+        "superior": 8450000.0,
+        "cuota_fija": 1241.4,
+        "tasa_marginal": 0.000375
+      },
+      {
+        "n_rango": 9,
+        "inferior": 8450000.0,
+        "superior": 25450000.0,
+        "cuota_fija": 2966.4,
+        "tasa_marginal": 0.0004
+      },
+      {
+        "n_rango": 10,
+        "inferior": 25450000.0,
+        "superior": 68450000.0,
+        "cuota_fija": 9766.4,
+        "tasa_marginal": 0.000425
+      },
+      {
+        "n_rango": 11,
+        "inferior": 68450000.0,
+        "superior": null,
+        "cuota_fija": 28041.4,
+        "tasa_marginal": 0.00045
+      }
+    ],
+    "minimo_predial": null,
+    "comentarios": "Se extrae la tabla principal bimestral para predios rústicos y urbanos edificados (VF, LI, T, CF). Para predios urbanos no edificados se establece un factor 0.00081 más una cuota fija adicional de $25.00 por bimestre (componente secundario capturado como tasa_unica). El texto menciona que el impuesto no será inferior a las cuotas fijas establecidas, pero no fija explícitamente un mínimo predial único, por lo que minimo_predial se deja en null."
+  },
+  "_meta": {
+    "fuente": "txt",
+    "modelo": "reclasified_v1[gpt-5.2]"
+  },
+  "_meta_v2": {
+    "intentos": 0,
+    "requiere_revision": false,
+    "razon": null,
+    "tokens": {
+      "input": 0,
+      "output": 0,
+      "cached": 0
+    },
+    "cvegeo": "14101",
+    "estado": "jalisco",
+    "anio": 2025
+  }
+}

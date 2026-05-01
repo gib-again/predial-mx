@@ -1,0 +1,58 @@
+{
+  "predial": {
+    "tipo_esquema": "tarifa_millar",
+    "tabla": [
+      {
+        "grupo": "rustico",
+        "clave": "rustico_valor_real_sobre_valor_fiscal",
+        "descripcion": "Predios rústicos: sobre el valor fiscal determinado",
+        "tasa_millar": 0.23,
+        "periodicidad": "bimestral",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "urbano",
+        "clave": "urbano_edificado_valor_real_sobre_valor_determinado",
+        "descripcion": "Predios urbanos edificados: sobre el valor determinado",
+        "tasa_millar": 0.23,
+        "periodicidad": "bimestral",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "urbano",
+        "clave": "urbano_no_edificado_hasta_10000_m2",
+        "descripcion": "Predios urbanos no edificados dentro de zonas urbanas, superficie hasta 10,000.00 m2: sobre el valor determinado",
+        "tasa_millar": 0.81,
+        "periodicidad": "bimestral",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "urbano",
+        "clave": "urbano_no_edificado_mas_10000_01_m2",
+        "descripcion": "Predios urbanos no edificados dentro de zonas urbanas, superficie mayor de 10,000.01 m2: sobre el valor determinado",
+        "tasa_millar": 1.0,
+        "periodicidad": "bimestral",
+        "cuota_fija_adicional": null
+      }
+    ],
+    "minimo_predial": null,
+    "comentarios": "El texto establece tasas bimestrales al millar aplicables a la base fiscal/valor fiscal determinado conforme a la Ley de Hacienda Municipal del Estado de Jalisco. Se ignoraron factores, descuentos y beneficios (p.ej. factor 0.50, 0.85, 0.90, etc.) por ser estímulos. No se identificó en el fragmento un monto mínimo explícito ('en ningún caso será inferior a...')."
+  },
+  "_meta": {
+    "fuente": "txt",
+    "modelo": "reclasified_v1[gpt-5.2]"
+  },
+  "_meta_v2": {
+    "intentos": 0,
+    "requiere_revision": false,
+    "razon": null,
+    "tokens": {
+      "input": 0,
+      "output": 0,
+      "cached": 0
+    },
+    "cvegeo": "14120",
+    "estado": "jalisco",
+    "anio": 2019
+  }
+}
