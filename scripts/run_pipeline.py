@@ -32,9 +32,18 @@ STEPS_ORDERED = [
 
 STEP_METHODS = {
     "download":      lambda a, **kw: a.download(),
-    "ocr":           lambda a, **kw: a.run_ocr(),
+    "ocr":           lambda a, **kw: a.run_ocr(
+                         year=kw.get("year"),
+                         force_reocr=kw.get("force_reocr", False),
+                         clean_watermark=kw.get("clean_watermark", True),
+                         threshold=kw.get("threshold"),
+                         limit=kw.get("limit"),
+                     ),
     "master":        lambda a, **kw: a.build_master(),
-    "segment":       lambda a, **kw: a.extract_predial_sections(),
+    "segment":       lambda a, **kw: (
+                         a.extract_predial_sections(year=kw["year"])
+                         if kw.get("year") else a.extract_predial_sections()
+                     ),
     "segment-audit": lambda a, **kw: a.run_segment_audit(),
     "extract":       lambda a, **kw: a.run_llm_extraction(batch_mode=kw.get("batch", False)),
     "validate":      lambda a, **kw: a.run_validation(),
@@ -42,7 +51,17 @@ STEP_METHODS = {
 }
 
 
-def run_estado(estado_slug: str, steps: list[str], batch: bool = False):
+def run_estado(
+    estado_slug: str,
+    steps: list[str],
+    batch: bool = False,
+    *,
+    year: str | None = None,
+    force_reocr: bool = False,
+    clean_watermark: bool = True,
+    threshold: int | None = None,
+    limit: int | None = None,
+):
     adapter = get_adapter(estado_slug)
 
     print(f"\n{'#' * 60}")
@@ -51,7 +70,13 @@ def run_estado(estado_slug: str, steps: list[str], batch: bool = False):
     print(f"  OCR: {'sí' if adapter.needs_ocr else 'no'}")
     print(f"  Pasos: {', '.join(steps)}")
     if batch and "extract" in steps:
-        print(f"  Modo LLM: BATCH (50% descuento)")
+        print("  Modo LLM: BATCH (50% descuento)")
+    if year and "ocr" in steps:
+        print(f"  OCR: filtro año {year}")
+    if force_reocr and "ocr" in steps:
+        print("  OCR: --force-reocr")
+    if not clean_watermark and "ocr" in steps:
+        print("  OCR: --no-clean-watermark (legacy)")
     print(f"{'#' * 60}")
 
     for step in steps:
@@ -61,7 +86,15 @@ def run_estado(estado_slug: str, steps: list[str], batch: bool = False):
 
         t0 = time.time()
         try:
-            STEP_METHODS[step](adapter, batch=batch)
+            STEP_METHODS[step](
+                adapter,
+                batch=batch,
+                year=year,
+                force_reocr=force_reocr,
+                clean_watermark=clean_watermark,
+                threshold=threshold,
+                limit=limit,
+            )
         except Exception as e:
             print(f"\n  [ERROR] {step}: {e}")
             raise
@@ -81,6 +114,17 @@ def main():
     parser.add_argument("--from-step", default=None, help="Ejecutar desde este paso en adelante")
     parser.add_argument("--batch", action="store_true",
                         help="Usar Batch API para extracción LLM (50%% descuento, hasta 24h)")
+    parser.add_argument("--year", default=None,
+                        help="Filtra los pasos ocr/segment a un solo año (ej: 2018)")
+    parser.add_argument("--force-reocr", action="store_true",
+                        help="Borra el OCR previo y lo regenera (sólo afecta paso ocr)")
+    parser.add_argument("--no-clean-watermark", action="store_true",
+                        help="Desactiva la limpieza de marca de agua antes del OCR (modo legacy)")
+    parser.add_argument("--threshold", type=int, default=None,
+                        help="Threshold fijo de luminancia (0-255) para limpieza de watermark. "
+                             "Default calibrado: 140. Útil para iterar en calibración.")
+    parser.add_argument("--limit", type=int, default=None,
+                        help="Procesa sólo los primeros N PDFs del paso ocr (calibración).")
     args = parser.parse_args()
 
     # ── Determinar pasos ──
@@ -117,7 +161,16 @@ def main():
     # ── Ejecutar ──
     t_total = time.time()
     for estado in estados:
-        run_estado(estado, steps, batch=args.batch)
+        run_estado(
+            estado,
+            steps,
+            batch=args.batch,
+            year=args.year,
+            force_reocr=args.force_reocr,
+            clean_watermark=not args.no_clean_watermark,
+            threshold=args.threshold,
+            limit=args.limit,
+        )
 
     elapsed_total = time.time() - t_total
     print(f"\n{'=' * 60}")

@@ -62,12 +62,41 @@ class OaxacaAdapter(EstadoAdapter):
         from src.estados.oaxaca.ocr import run_ocr
         return run_ocr(self)
 
-    def run_ocr(self):
-        """OCR con ocrmypdf (force-ocr para watermark)."""
-        from src.estados.oaxaca.ocr import run_ocr
-        return run_ocr(self)
+    def run_ocr(
+        self,
+        *,
+        year: str | None = None,
+        force_reocr: bool = False,
+        clean_watermark: bool = True,
+        threshold: int | None = None,
+        limit: int | None = None,
+        **_: object,
+    ):
+        """
+        OCR con ocrmypdf (force-ocr) + pre-paso de limpieza de watermark.
 
-    def extract_predial_sections(self) -> Path:
-        """Segmentación en 2 niveles: localizar leyes → extraer predial."""
+        Args:
+            year: Filtra a un solo año (ej. "2018") para calibración.
+            force_reocr: Regenera OCRs ya existentes.
+            clean_watermark: Si False, salta la limpieza (modo legacy).
+            threshold: Override del threshold de luminancia (0-255).
+            limit: Procesa sólo los primeros N PDFs (calibración).
+        """
+        from src.estados.oaxaca.ocr import run_ocr
+        return run_ocr(
+            self,
+            year=year,
+            force_reocr=force_reocr,
+            clean_watermark=clean_watermark,
+            threshold=threshold,
+            limit=limit,
+        )
+
+    def extract_predial_sections(self, *, year: str | None = None, **_: object) -> Path:
+        """Segmentación en 2 niveles: localizar leyes → extraer predial.
+
+        Args:
+            year: Si se da (ej. "2018"), procesa sólo PDFs de ese año.
+        """
         from src.estados.oaxaca.segment import run_segment
-        return run_segment(self)
+        return run_segment(self, year=year)

@@ -309,6 +309,16 @@ def _merge_ocr_and_index(
     pair_count = min(len(leyes_ocr), len(index_rows))
     merged: list[LeyMunicipal] = []
 
+    # Cuando OCR detecta más "inicios" que el índice curado, los excedentes
+    # son falsos positivos (típicamente referencias a la ley dentro de
+    # definiciones de artículos: "XXXV Ley de Ingresos: La Ley de Ingresos
+    # del Municipio de X..."). En vez de usar `unique[i+1].page` como
+    # page_end del par i, usamos el inicio del SIGUIENTE PAR REAL o el fin
+    # del documento — para que la ley pareada cubra todo su contenido,
+    # incluyendo la sección predial que normalmente está mucho después de
+    # las definiciones.
+    real_starts = [leyes_ocr[i].page_start for i in range(pair_count)]
+
     for i in range(pair_count):
         ocr = leyes_ocr[i]
         idx = index_rows[i]
@@ -319,7 +329,9 @@ def _merge_ocr_and_index(
         ejercicio = idx.ejercicio or ocr.ejercicio or default_ejercicio
         slug = idx.slug or _normalize_municipio_name(municipio or ocr.municipio)
 
-        p_start, p_end = _sanitize_page_range(ocr.page_start, ocr.page_end, doc_len)
+        p_start = real_starts[i]
+        p_end = real_starts[i + 1] if i + 1 < pair_count else doc_len
+        p_start, p_end = _sanitize_page_range(p_start, p_end, doc_len)
 
         merged.append(LeyMunicipal(
             municipio=municipio,
@@ -467,23 +479,47 @@ def find_leyes_in_pdf(
 # ── Patrones de sección predial (usa segment_utils compartido) ──
 
 _OAX_START_SPECS = [
-    # 1) "Sección Primera/Única. Predial"
+    # 1) "Sección Primera/Única/II/I/1. Predial" (acepta mojibake U+FFFD por OCR
+    #    y tolerancia a OCR misreads del numeral romano: "I" puede leerse como
+    #    "|" o "l" minúscula, o como dígito "1"). Tolera coma ", " entre el
+    #    numeral y "Del Impuesto Predial".
     PatternSpec(re.compile(
-        r"SECCI[OÓ]N\s+(?:PRIMERA|[UÚ]NICA)[.\s\-:]*\s*(?:DEL\s+)?(?:IMPUESTO\s+)?PREDIAL",
+        r"SECCI[OÓ�]N\s+(?:PRIMERA|[UÚ]NICA|II|Il|SEGUNDA|[I|l1])"
+        r"[.,\s\-:]*\s*(?:DEL\s+)?(?:IMPUESTO\s+)?PREDIAL",
         re.IGNORECASE,
     ), "seccion_predial"),
-    # 2) "Capítulo I/II ... Impuestos Sobre el Patrimonio" (con validación PREDIAL)
+    # 2) "APARTADO/Apartado X. (DEL) IMPUESTO PREDIAL" — patrón muy específico
+    #    usado en algunos munis (ej. Santa María Huatulco: "APARTADO B. DEL
+    #    IMPUESTO PREDIAL", o Oaxaca de Juárez: "Apartado Primero: Del Impuesto
+    #    Predial"). Va antes que capitulo_patrimonio porque cuando existe es
+    #    más preciso: capitulo_patrimonio puede matchear un encabezado umbrella
+    #    como "CAPÍTULO II IMPUESTOS SOBRE EL PATRIMONIO" que cubre múltiples
+    #    apartados (ej. Apartado A inmobiliario general, B predial), y lo que
+    #    queremos es la sección de predial específicamente.
     PatternSpec(re.compile(
-        r"CAP[IÍ]TULO\s+(?:I{1,3}|PRIMERO|SEGUNDO)\s*[.\s\-:]*\s*"
-        r"IMPUESTOS\s+SOBRE\s+EL\s+PATRIMONIO",
+        r"APARTADO\s+\w+\.?\s*[.\s\-:\n]*\s*(?:DEL\s+)?IMPUESTO\s+PREDIAL",
+        re.IGNORECASE,
+    ), "apartado_predial"),
+    # 3) "Capítulo X / Sección X" + "Impuesto(s) Sobre el Patrimonio"
+    #    (con validación PREDIAL en _oax_context_validator). Acepta
+    #    CAP�TULO/SECCI�N con replacement char por mojibake del OCR; numeración
+    #    romana incluyendo confusión II→Il; UNICO/ÚNICA/PRIMERO/SEGUNDO; y
+    #    "IMPUESTO" en singular además de "IMPUESTOS" plural.
+    PatternSpec(re.compile(
+        r"(?:CAP[IÍ�]TULO|SECCI[OÓ�]N)\s+"
+        r"(?:[IVXL]+l*|\d+|PRIMERO|SEGUNDO|TERCERO|PRIMERA|SEGUNDA|[UÚ]NICO|[UÚ]NICA)"
+        r"\s*[.\s\-:]*\s*IMPUESTOS?\s+SOBRE\s+EL\s+PATRIMONIO",
         re.IGNORECASE,
     ), "capitulo_patrimonio"),
-    # 3) "DEL IMPUESTO PREDIAL" standalone
+    # 4) "DEL IMPUESTO PREDIAL" / "IMPUESTO PREDIAL" como header en línea propia
+    #    (no cualquier referencia inline). Requiere que esté precedido de
+    #    salto de línea y seguido de salto/fin para evitar matchear referencias
+    #    como "...del Impuesto Predial y el Derecho de Aseo Público".
     PatternSpec(re.compile(
-        r"(?:DEL\s+)?IMPUESTO\s+PREDIAL",
+        r"(?:^|\n)\s*(?:DEL\s+)?IMPUESTO\s+PREDIAL\.?\s*(?:\n|$)",
         re.IGNORECASE,
     ), "impuesto_predial"),
-    # 4) Artículo que menciona "impuesto predial"
+    # 5) Artículo que define el predial (último recurso)
     PatternSpec(re.compile(
         r"ART[IÍ]CULO\s+\d+[.\s]+.*?(?:impuesto\s+)?predial\s+(?:se\s+determinar[aá]|"
         r"la\s+contribuci[oó]n|percibe\s+el\s+Municipio)",
@@ -509,8 +545,11 @@ _OAX_END_SPECS = [
 
 _OAX_BLACKLIST = [
     re.compile(
-        r"(?:CONCEPTO|ESTIMACI[OÓ]N|CLASIFICADOR|DISPOSICIONES\s+GENERALES|"
-        r"SUMARIO|INGRESOS\s+ESTIMADOS|IMPUESTOS\s+SOBRE\s+EL\s+PATRIMONIO\s+\d)",
+        r"(?:CLASIFICADOR|DISPOSICIONES\s+GENERALES|SUMARIO|INGRESOS\s+ESTIMADOS|"
+        # SUMARIO/TOC entry style: requires dot leaders ("....") before page number
+        # Antes era "...\\s+\\d" pero matcheaba cualquier dígito post-header (basura
+        # OCR de celdas de tablas) y descartaba el match legítimo de la sección.
+        r"IMPUESTOS\s+SOBRE\s+EL\s+PATRIMONIO[\s\.]*\.{3,}[\s\.]*\d)",
         re.IGNORECASE,
     ),
 ]
@@ -662,12 +701,22 @@ def _write_meta_csv(meta_dir: Path, all_rows: list[dict]) -> Path:
 # ═══════════════════════════════════════════════════
 
 
-def run_segment(adapter, force: bool = False) -> Path:
+def run_segment(
+    adapter,
+    force: bool = False,
+    *,
+    year: str | None = None,
+) -> Path:
     """
     Segmenta todos los PDFs del PO en secciones de predial por municipio.
 
     Oaxaca tiene estructura: pdf_raw/{año}/{mes}/{filename}.pdf
     A diferencia de Guanajuato, hay subdirectorios por mes.
+
+    Args:
+        adapter: OaxacaAdapter.
+        force: Si True, regenera focus_predial aunque ya exista.
+        year: Si se da (ej. "2018"), procesa sólo PDFs de ese año.
 
     Returns:
         Path al CSV de metadatos de segmentación.
@@ -680,6 +729,8 @@ def run_segment(adapter, force: bool = False) -> Path:
     index_by_rel, index_by_name = _load_index_map(meta_dir)
 
     print("═══ Oaxaca: Segmentación ═══")
+    if year:
+        print(f"  Filtro: año {year}")
 
     stats = {
         "total": 0,
@@ -693,6 +744,8 @@ def run_segment(adapter, force: bool = False) -> Path:
     all_meta_rows: list[dict] = []
 
     for pub_year in range(config.YEAR_MIN, config.YEAR_MAX + 1):
+        if year is not None and str(pub_year) != str(year):
+            continue
         year_raw_dir = pdf_raw_dir / str(pub_year)
         if not year_raw_dir.exists():
             continue
@@ -843,6 +896,22 @@ def run_segment(adapter, force: bool = False) -> Path:
                 })
 
             doc.close()
+
+    # Cuando hay filtro por año, fusionar con segment.csv previo para no
+    # sobrescribir las filas de otros años con un set parcial.
+    if year is not None and all_meta_rows:
+        existing_csv = meta_dir / "segment.csv"
+        if existing_csv.exists():
+            try:
+                with existing_csv.open(encoding="utf-8-sig", newline="") as f:
+                    existing = [
+                        row for row in csv.DictReader(f)
+                        if str(row.get("ejercicio", "")) != str(year)
+                    ]
+                all_meta_rows = existing + all_meta_rows
+                print(f"  Merge: {len(existing)} filas previas (otros años) + {len(all_meta_rows) - len(existing)} nuevas")
+            except Exception as e:
+                print(f"  [WARN] No se pudo fusionar segment.csv previo: {e}")
 
     if all_meta_rows:
         csv_path = _write_meta_csv(meta_dir, all_meta_rows)

@@ -112,16 +112,26 @@ class EstadoAdapter(ABC):
         """
 
     @abstractmethod
-    def extract_predial_sections(self) -> Path:
+    def extract_predial_sections(self, **kwargs) -> Path:
         """
         Localiza sección de predial en cada ley, genera TXT y PDF recortados.
+
+        Acepta kwargs específicos por estado (ej. year) para que el dispatcher
+        del CLI sea uniforme; las implementaciones que no los usen pueden
+        ignorarlos.
+
         Retorna: ruta al CSV bitácora de secciones.
         """
 
     # ── Métodos concretos (compartidos, usan core/) ──
 
-    def run_ocr(self):
-        """Aplica OCR a PDFs escaneados. Solo si needs_ocr=True."""
+    def run_ocr(self, **kwargs):
+        """
+        Aplica OCR a PDFs escaneados. Solo si needs_ocr=True.
+
+        Acepta y descarta kwargs específicos por estado (ej. year, force_reocr,
+        clean_watermark) para que el dispatcher del CLI sea uniforme.
+        """
         if not self.needs_ocr:
             print(f"  [{self.slug}] OCR no requerido, saltando.")
             return
