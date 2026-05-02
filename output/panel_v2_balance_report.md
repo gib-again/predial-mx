@@ -11,16 +11,16 @@ Estados con `uniform_state_fill`: Chihuahua, Colima, Estado de México, Sinaloa,
 
 - Municipios en universo (excl. Oaxaca): **615**
 - Cobertura ideal (ajustada por creation_year): 9,812 celdas
-- Panel balanceado: **9,809** celdas (**100.0%** cobertura)
-  - Observaciones crudas: 9,451
-  - Imputadas: 358
+- Panel balanceado: **9,812** celdas (**100.0%** cobertura)
+  - Observaciones crudas: 9,452
+  - Imputadas: 360
     - `confirmed_fill`: 255
-    - `ffill`: 51
+    - `ffill`: 50
     - `bfill`: 16
     - `tipo_only_fill`: 8
     - `closure_fill`: 7
     - `uniform_state_fill`: 4
-- Huecos remanentes: **3** (0.0%)
+- Huecos remanentes: **0** (0.0%)
 
 ## 2. Cobertura por estado
 
@@ -36,7 +36,7 @@ Estados con `uniform_state_fill`: Chihuahua, Colima, Estado de México, Sinaloa,
 | Sinaloa | 20 | 292 | 288 | 292 | 98.6% | 100.0% | 0 |
 | Tabasco | 17 | 272 | 272 | 272 | 100.0% | 100.0% | 0 |
 | Tamaulipas | 43 | 688 | 685 | 688 | 99.6% | 100.0% | 0 |
-| Yucatan | 106 | 1696 | 1536 | 1693 | 90.6% | 99.8% | 3 |
+| Yucatan | 106 | 1696 | 1537 | 1696 | 90.6% | 100.0% | 0 |
 
 ## 3. Fuentes de desbalance
 

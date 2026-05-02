@@ -1,21 +1,4 @@
 ﻿cvegeo,estado,municipio,ejercicio_gap,estatus_audit,result,mensaje
-11032,Guanajuato,San Jose de Iturbide,2013,no_existe_ley,wrote_directed_impute,predial-mx-v2\guanajuato\GTO_PREDIAL_2013_san_jose_de_iturbide.json
-11032,Guanajuato,San Jose de Iturbide,2016,no_existe_ley,wrote_directed_impute,predial-mx-v2\guanajuato\GTO_PREDIAL_2016_san_jose_de_iturbide.json
-11032,Guanajuato,San Jose de Iturbide,2017,no_existe_ley,wrote_directed_impute,predial-mx-v2\guanajuato\GTO_PREDIAL_2017_san_jose_de_iturbide.json
-11043,Guanajuato,Victoria,2011,no_existe_ley,wrote_directed_impute,predial-mx-v2\guanajuato\GTO_PREDIAL_2011_victoria.json
-22005,Queretaro,Colon,2022,encontrado,skip,"existe JSON real (gpt-5.4-mini, tipo=desconocido); no sobrescribir"
-22005,Queretaro,Colon,2023,encontrado,skip,"existe JSON real (gpt-5.4-mini, tipo=progresivo); no sobrescribir"
-22012,Queretaro,Pedro Escobedo,2021,encontrado,skip,"existe JSON real (gpt-5.4-mini, tipo=progresivo); no sobrescribir"
-22014,Queretaro,Queretaro,2023,encontrado,skip,"existe JSON real (gpt-5.4-mini, tipo=progresivo); no sobrescribir"
-22014,Queretaro,Queretaro,2024,encontrado,skip,"existe JSON real (gpt-5.4-mini, tipo=progresivo); no sobrescribir"
-22016,Queretaro,San Juan del Rio,2025,encontrado,skip,"existe JSON real (gpt-5.4-mini, tipo=progresivo); no sobrescribir"
-31019,Yucatan,Chemax,2022,encontrado,skip,"existe JSON real (gpt-5.4-mini, tipo=progresivo); no sobrescribir"
-31044,Yucatan,Kinchil,2010,encontrado,skip,"existe JSON real (gpt-5.4-mini, tipo=progresivo); no sobrescribir"
-31072,Yucatan,Suma,2011,no_existe_ley,warn_self_ref,notas dicen 'imputar con datos de 2011' pero ese ES el año del hueco; ignorando
-31072,Yucatan,Suma,2012,no_existe_ley,error_directed_impute,JSON fuente no localizable para cvegeo=31072 año=2011
-31072,Yucatan,Suma,2021,no_existe_ley,wrote_directed_impute,predial-mx-v2\yucatan\YUC_PREDIAL_2021_suma.json
-31072,Yucatan,Suma,2022,no_existe_ley,wrote_directed_impute,predial-mx-v2\yucatan\YUC_PREDIAL_2022_suma.json
-31073,Yucatan,Tahdziu,2021,no_existe_ley,wrote_no_ley,predial-mx-v2\yucatan\YUC_PREDIAL_2021_tahdziu.json
-31073,Yucatan,Tahdziu,2022,no_existe_ley,wrote_no_ley,predial-mx-v2\yucatan\YUC_PREDIAL_2022_tahdziu.json
-31073,Yucatan,Tahdziu,2023,no_existe_ley,wrote_no_ley,predial-mx-v2\yucatan\YUC_PREDIAL_2023_tahdziu.json
-31073,Yucatan,Tahdziu,2024,no_existe_ley,wrote_no_ley,predial-mx-v2\yucatan\YUC_PREDIAL_2024_tahdziu.json
+31072,Yucatan,Suma,2011,no_existe_ley,wrote_directed_impute,predial-mx-v2\yucatan\YUC_PREDIAL_2011_suma.json
+31072,Yucatan,Suma,2012,no_existe_ley,wrote_directed_impute,predial-mx-v2\yucatan\YUC_PREDIAL_2012_suma.json
+31073,Yucatan,Tahdziu,2025,no_existe_ley,wrote_no_ley,predial-mx-v2\yucatan\YUC_PREDIAL_2025_tahdziu.json
