@@ -1,0 +1,14 @@
+curl ^"https://periodicooficial.slp.gob.mx/api/publicacion/busqueda/filtro/gt?fechaInicio=1857-06-06^&fechaFin=2026-05-01^&tipo=disposiciones^&tipoPalabra=titulo^&palabra=ley+de+ingresos^" ^
+  -H ^"Accept: application/json, text/plain, */*^" ^
+  -H ^"Accept-Language: es-419,es;q=0.9,es-ES;q=0.8,en;q=0.7,en-GB;q=0.6,en-US;q=0.5,es-MX;q=0.4^" ^
+  -H ^"Connection: keep-alive^" ^
+  -b ^"XSRF-TOKEN=eyJpdiI6Imp6RmhXMmZFZ0dEK3E2Q2dIOCtoV0E9PSIsInZhbHVlIjoidmVNT01QTHlqckI4VERNVTBuQXZJdTRpTkZUSE9PMVFSdUs1ZnhWS213NXJxZlRhaXJNbFB4ZzMrYUtTVEkwd1RRMTF5ZkV1cUUwSVM1UUFjd1BuOWxXcXdMemM0VjNSN0htVldwbE4wMEM5TnRwQjdhK1RNUGlOS1RaUjJpRjYiLCJtYWMiOiJmNmU1NWJiMmU5YmQ4MmFhZWFjYzIyZmE4MmMzNDNkYjIxZTEzOWE3YzEzNTNhY2ViODQ4ZDA3MjM2M2U4NDQ5IiwidGFnIjoiIn0^%^3D; poe_session=eyJpdiI6ImtseE5OOUtaWjRPTHJ2MTlUbnBqYkE9PSIsInZhbHVlIjoib2JqK3ZML2ZMcVVTc284MEJKanRDbGtIZXlOTjczdXh2U05YcW4wUlhiUWp5NVpBbVJXc0psR2V0NXJaMXJSOFlGcjU5ZTg0YVl2KzcwdmNWdFFzalZmYVRCc0NZTjEzcEFEdkNTOTFXTEljNzlUVGV6b25xN3lwR1B5d3l3TnoiLCJtYWMiOiJlMzk0NGMzZWUyMDFkNzYzOWJiZWEyNjQ2NDRkOWI3MzJlM2Y2MmY3M2EzY2Q3ZmE1NDkxOTM3ZGE3N2IwNjYxIiwidGFnIjoiIn0^%^3D^" ^
+  -H ^"Referer: https://periodicooficial.slp.gob.mx/menu/consulta/periodico^" ^
+  -H ^"Sec-Fetch-Dest: empty^" ^
+  -H ^"Sec-Fetch-Mode: cors^" ^
+  -H ^"Sec-Fetch-Site: same-origin^" ^
+  -H ^"User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36 Edg/147.0.0.0^" ^
+  -H ^"X-XSRF-TOKEN: eyJpdiI6Imp6RmhXMmZFZ0dEK3E2Q2dIOCtoV0E9PSIsInZhbHVlIjoidmVNT01QTHlqckI4VERNVTBuQXZJdTRpTkZUSE9PMVFSdUs1ZnhWS213NXJxZlRhaXJNbFB4ZzMrYUtTVEkwd1RRMTF5ZkV1cUUwSVM1UUFjd1BuOWxXcXdMemM0VjNSN0htVldwbE4wMEM5TnRwQjdhK1RNUGlOS1RaUjJpRjYiLCJtYWMiOiJmNmU1NWJiMmU5YmQ4MmFhZWFjYzIyZmE4MmMzNDNkYjIxZTEzOWE3YzEzNTNhY2ViODQ4ZDA3MjM2M2U4NDQ5IiwidGFnIjoiIn0=^" ^
+  -H ^"sec-ch-ua: ^\^"Microsoft Edge^\^";v=^\^"147^\^", ^\^"Not.A/Brand^\^";v=^\^"8^\^", ^\^"Chromium^\^";v=^\^"147^\^"^" ^
+  -H ^"sec-ch-ua-mobile: ?0^" ^
+  -H ^"sec-ch-ua-platform: ^\^"Windows^\^"^"

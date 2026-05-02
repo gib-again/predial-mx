@@ -12,4 +12,5 @@ PREFIJOS_ESTADO = {
     "tamaulipas": "TAMPS",
     "chihuahua": "CHIH",
     "guanajuato": "GTO",
+    "sanluispotosi": "SLP",
 }

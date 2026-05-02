@@ -19,10 +19,11 @@ Particularidades del marco legal, fuente de datos, procesamiento y pipeline de c
 | 9 | Sinaloa | 25 | 18 | No | Tarifa estatal uniforme (Ley de Hacienda) + actualización INPC → expansión | 288 |
 | 10 | Tabasco | 27 | 17 | No | Tarifa estatal uniforme (Ley de Hacienda) → hardcoded → expansión | 272 |
 | 11 | Guanajuato | 11 | 46 | Sí | Ley de ingresos por municipio (PO) → OCR → segmentación 2 niveles → LLM | ~736 |
+| 12 | Oaxaca | 20 | 570 | Sí | Ley de ingresos por municipio (PO) → OCR + watermark cleanup → segmentación → LLM | en curso |
+| 13 | San Luis Potosí | 24 | 58 | Sí* | Ley de ingresos por municipio (PO API JSON) → OCR adaptativo → segmentación → LLM | en curso |
 
 \* Yucatán: PDFs digitales en su mayoría; algunas tablas de tarifa son imágenes embebidas que requieren OCR selectivo.
-
-**Próximos:** Oaxaca (OCR, 570 municipios) — publica Ley de Ingresos por municipio con tarifas individuales.
+\* San Luis Potosí: OCR adaptativo (sólo se aplica a PDFs con < 300 chars/página promedio; 2017+ son nativos y se saltan).
 
 ---
 
@@ -92,6 +93,60 @@ Particularidades del marco legal, fuente de datos, procesamiento y pipeline de c
   - Skip de páginas variable al inicio de cada PO (índice, contenido administrativo)
   - Patrón regex: `LEY DE INGRESOS (DEL|) MUNICIPIO DE {NOMBRE}`
   - Meta CSV único consolidado (corrección de bug de múltiples CSVs por año)
+
+### San Luis Potosí
+- **CVE_ENT**: 24 | **Municipios**: 58 | **Periodo**: 2010-2025
+- **Fuente**: Periódico Oficial del Estado de San Luis Potosí
+- **URL del PO**: API JSON en https://periodicooficial.slp.gob.mx
+  - Búsqueda: `/api/publicacion/busqueda/filtro/gt?fechaInicio=...&fechaFin=...&palabra=ley+de+ingresos`
+  - Descarga: `/api/publicacion/imprimir/guest/{id}/documento`
+- **OCR necesario**: Adaptativo. La mayoría 2017+ son texto nativo (saltados). 2015 y 2019 son escaneos puros (~100 chars/página vs ~3000 en nativos) → se aplica force-OCR con `ocrmypdf` (lang spa, deskew, rotate-pages). Threshold de detección: 300 chars/página promedio. Ver `src/estados/sanluispotosi/ocr.py`.
+- **Marco legal**: Ley de Ingresos por municipio (1 ley por municipio, expedida por el Congreso del Estado)
+- **Segmentación**: Un nivel (1 PDF = 1 ley municipal completa). Patrones priorizados:
+  1. `SECCIÓN PRIMERA / PREDIAL` (canónico 2010+)
+  2. `CAPÍTULO II + (PATRIMONIO opcional) + PREDIAL`
+  3. `ARTÍCULO N + el impuesto predial se calculará`
+  4. `TÍTULO SEGUNDO + DE LOS IMPUESTOS + CAPÍTULO I + PREDIAL` (variante histórica)
+- **Resolución de PDF**: la segmentación prefiere automáticamente `pdf_ocr/{año}/{stem}_ocr.pdf` cuando existe; cae al `pdf_raw/` original en caso contrario.
+- **Cobertura observada (2010-2025) — final con OCR**:
+
+  | Año | Hits API | OK descarga | OCR | Segment exacto | Notas |
+  |-----|----------|-------------|-----|----------------|-------|
+  | 2010 | 17 | 0 | – | – | API sin PDFs (404 en endpoint de descarga) |
+  | 2011 | 58 | 0 | – | – | API sin PDFs (404 en endpoint de descarga) |
+  | 2012 | 51 | 50 | – | 50 | OK (nativos) |
+  | 2013 | 39 | 38 | – | 37 | OK (nativos), 1 fallback (armadillo) |
+  | 2014 | 40 | 24 | – | 23 | API parcial, 1 fallback (tamazunchale) |
+  | 2015 | 51 | 36 | 28 | **34** | OCR aplicado → recuperados |
+  | 2016 | 5 | 5 | 1 | 5 | **API casi vacía** (5/58); los 5 segmentados |
+  | 2017 | 59 | 41 | 2 | 40 | API parcial |
+  | 2018 | 59 | 44 | – | 43 | API parcial |
+  | 2019 | 58 | 52 | 46 | **52** | OCR aplicado → recuperados |
+  | 2020 | 87 | 60 | – | 57 | OK (con duplicados), 1 fallback |
+  | 2021 | 0 | 0 | – | – | **API sin registros para fiscal 2021** |
+  | 2022 | 61 | 60 | – | 57 | OK |
+  | 2023 | 61 | 61 | – | 58 | OK |
+  | 2024 | 59 | 59 | – | 58 | OK |
+  | 2025 | 58 | 58 | – | 58 | OK |
+
+- **Cobertura efectiva final**: 572/928 (62 %) con segmentación exacta sobre el universo total; 572/575 (99.5 %) sobre los PDFs descargables. Lo restante son leyes que la API no expone (2010, 2011, 2016, 2021, parciales 2014/2017/2018/2020).
+- **Particularidades**:
+  - **Limitaciones del fuente**:
+    - Fiscal 2010, 2011, 2016 (parcial) y 2021 (total) ausentes o mínimos en la API; metadata existe pero el endpoint de descarga retorna 404 (todos los endpoints alternativos también, no es bug del adapter)
+    - Fiscal 2015 y 2019: PDFs descargables pero como escaneos sin capa de texto → segmentación cae al fallback de 12 páginas iniciales → necesitan OCR previo
+  - Variación de redacción del título entre años:
+    - 2010-2023: "Ley de Ingresos **del** Municipio de X, S.L.P., para el ejercicio fiscal Y"
+    - 2024+: "Se EXPIDE la Ley de Ingresos **para el** Municipio de X, S.L.P., para el ejercicio fiscal Y"
+    - Regex `(?:del|para\s+el)\s+[Mm]unicipio\s+de\s+`
+  - Typos comunes en datos antiguos: "Físcal" / "Físacal" / "Físascal" → regex tolerante con `[Ee]jercicio\s+\w+\s+(\d{4})`
+  - Estructura interna de la ley (verificada con muestras 2018, 2024):
+    - `CAPÍTULO I / IMPUESTOS SOBRE LOS INGRESOS / SECCIÓN ÚNICA / ESPECTÁCULOS PÚBLICOS` (no es predial)
+    - `CAPÍTULO II / IMPUESTOS SOBRE EL PATRIMONIO / SECCIÓN PRIMERA / PREDIAL / ARTÍCULO 6°` ← aquí
+    - `CAPÍTULO II / SECCIÓN SEGUNDA / DE PLUSVALÍA` ← aquí termina (no adquisición como en otros estados)
+  - Sumario en página 1 incluye "Ley de Ingresos del municipio de X" → context_validator rechaza matches en primeros 1 500 chars
+  - Cookies XSRF requeridas: warm-up GET a `/menu/consulta/periodico` para capturar `XSRF-TOKEN` y `poe_session` dinámicamente
+  - Aliases de municipios (Matahuala→Matehuala, Soledad→Soledad de Graciano Sánchez, Armadillo→Armadillo de los Infante, etc.) para fuzzy match
+  - Transición SMGZ→UMA en 2016-2018 puede aparecer mezclada en el texto extraído (no afecta tarifa al millar; sí afecta `minimo_predial` cuando está en unidades)
 
 ### Guanajuato
 - **CVE_ENT**: 11 | **Municipios**: 46 | **Periodo**: 2012-2025

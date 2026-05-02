@@ -1,0 +1,26 @@
+Resumen para arrancar en Code
+Estrategia consolidada para SLP:
+
+Estructura del adapter idéntica a Coahuila/Jalisco (slp/downloader.py, slp/segment.py, slp/llm_extract.py, integración con audit.py).
+Cobertura: ejercicios fiscales 2010–2025. En SLP las leyes de ingresos del año fiscal N se publican en diciembre del año N-1, así que las búsquedas reales irán aproximadamente del 1-nov-2009 al 31-ene-2025 (con margen de seguridad para fes de erratas y publicaciones tardías).
+Loop principal: 16 búsquedas anuales (una por ejercicio fiscal), cada una filtrando palabra clave "ley de ingresos" o equivalente y rango de fechas estrecho (nov–ene del año correspondiente). Por cada hit, capturas el id de la publicación y descargas el PDF vía /api/publicacion/imprimir/guest/{id}/documento.
+Parseo del título: el municipio sale del título del decreto (ej. "Decreto 226 - Ley de Ingresos del municipio de Huehuetlán, para el Ejercicio Fiscal 2005"). Habrá que normalizar nombres (acentos, "de" / "del", abreviaturas) contra tu catálogo de 58 municipios INEGI — esto ya lo tienes resuelto en otros adapters, reusable.
+
+Lo que llevas a Code
+Cuando inicies la sesión en Code, comparte:
+
+El contexto de esta conversación — copia el resumen de arriba más las decisiones, así no se pierde nada.
+El cURL del endpoint de búsqueda capturado con DevTools (Network → Fetch/XHR → busca el POST/GET que devuelve los resultados → "Copy as cURL").
+Una respuesta JSON de muestra del buscador (la pestaña Response en DevTools, copiada a un archivo).
+El PDF de Huehuetlán 2005 que ya me compartiste — sirve como caso de prueba para segment.py y llm_extract.py.
+
+Con eso, en Code el plan es:
+
+Implementar slp/downloader.py — el loop de 16 búsquedas + descarga por ID.
+Validar contra el catálogo INEGI: ¿salieron 58 leyes por año? ¿Qué municipios faltan? ¿Hay duplicados (fes de erratas)?
+Adaptar slp/segment.py con los patrones de SLP (TÍTULO SEGUNDO / DE LOS IMPUESTOS / CAPITULO I / Predial / ARTICULO 4° — patrón muy claro en el PDF de muestra). Ojo aquí con el bug que tuviste en Guanajuato: probar el regex contra el sumario también, no solo contra el cuerpo.
+Probar llm_extract.py con el PDF de Huehuetlán como caso de validación manual.
+Integrar con audit.py antes de consolidar.
+
+Una observación útil para más adelante
+Las tasas en el PDF de Huehuetlán 2005 ya vienen al millar anual (0.50, 0.75, 1.00, etc.) con segmentación por uso y características del predio — formato compatible con tu schema actual. Pero hay un detalle a vigilar: SLP usa SMGZ (salario mínimo general de la zona) en muchas tarifas hasta cierto año, y debe haber transición a UMA después de la reforma constitucional de 2016. Esto no afecta el cálculo del predial (que va al millar sobre valor catastral), pero sí podría aparecer mezclado en el texto extraído. Vale la pena anotarlo en notas_por_estado.md cuando llegues a la fase de extracción.
