@@ -1,0 +1,24 @@
+{
+  "predial": {
+    "tipo_esquema": "tasa_unica",
+    "esquema_valido": true,
+    "comentarios": "",
+    "minimo_predial": null,
+    "tabla_tarifa_millar": [],
+    "tabla_progresiva": [],
+    "tabla_tasa_unica": [
+      {
+        "descripcion": "la tarifa del impuesto predial (C) se propone sea el 0.10 % del valor catastral actualizado",
+        "tasa": 0.001,
+        "base_calculo": "valor_catastral",
+        "unidad": "porcentaje"
+      }
+    ],
+    "tabla_cuota_fija": [],
+    "tabla_mixta_rango": []
+  },
+  "_meta": {
+    "fuente": "txt",
+    "modelo": "gpt-5.4-mini"
+  }
+}

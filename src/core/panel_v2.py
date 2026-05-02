@@ -116,10 +116,35 @@ def _row_from_v2_json(json_path: Path, estado_slug: str) -> dict | None:
         # Extracción fallida (predial=null) o sin tipo — descartar.
         return None
     meta = doc.get("_meta_v2") or {}
-    cvegeo = str(meta.get("cvegeo") or "").zfill(5)
+    raw_cv = meta.get("cvegeo")
+    cvegeo = str(raw_cv).zfill(5) if raw_cv else ""
     anio = meta.get("anio")
+
+    # Fallback: parsear filename + lookup catálogo si _meta_v2 está incompleto
+    # (extract_all + extract_single no añaden _meta_v2).
     if not cvegeo or anio is None:
-        return None
+        prefijo = _PREFIJOS_INMEM.get(estado_slug) or {
+            "coahuila": "COAH", "guanajuato": "GTO", "queretaro": "QRO",
+            "tamaulipas": "TAMPS", "yucatan": "YUC", "colima": "COL",
+            "edomex": "MEX", "sinaloa": "SIN", "tabasco": "TAB",
+            "chihuahua": "CHIH", "jalisco": "JAL",
+        }.get(estado_slug, "")
+        if prefijo:
+            try:
+                anio_p, slug_p, _ = parse_predial_filename(json_path, prefijo)
+            except Exception:
+                return None
+            inegi = _load_inegi(Path("catalogs/municipios_inegi.csv"))
+            cve_ent = _ESTADO_CVE.get(estado_slug) or _EXTRA_ESTADO_CVE.get(estado_slug)
+            if not cve_ent:
+                return None
+            info = inegi.get((cve_ent, slug_p))
+            if not info:
+                return None
+            cvegeo = f"{cve_ent}{info['cve_mun']}"
+            anio = anio_p
+        else:
+            return None
 
     tipo = predial["tipo_esquema"]
     # Para otro_no_clasificado la tabla puede venir en `tabla_cruda`, sin `tabla`.
@@ -128,8 +153,6 @@ def _row_from_v2_json(json_path: Path, estado_slug: str) -> dict | None:
     # Slug desde el nombre de archivo (cae al cve_mun + nom_mun para enriquecer).
     slug = json_path.stem.split("_PREDIAL_", 1)[-1]
     if "_" in slug:
-        # COAH_PREDIAL_2014_saltillo → saltillo (split en _PREDIAL_ ya removió prefijo+año).
-        # En caso edge, parts puede venir con año adelante. Reusar parse si falla.
         slug = "_".join(slug.split("_")[1:]) if slug.split("_")[0].isdigit() else slug
 
     row = _row_template(cvegeo, int(anio), slug, estado_slug)

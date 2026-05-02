@@ -1,13 +1,62 @@
 {
   "predial": {
     "tipo_esquema": "tarifa_millar",
-    "comentarios": "Imputado por ffill: tipo_esquema preservado del año donor; tabla/rangos no clonados por baja confianza en estabilidad temporal.",
+    "tabla": [
+      {
+        "grupo": "general",
+        "clave": "seccion_1",
+        "descripcion": "Sección 1",
+        "tasa_millar": 0.25,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "general",
+        "clave": "seccion_2",
+        "descripcion": "Sección 2",
+        "tasa_millar": 0.25,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "general",
+        "clave": "seccion_3",
+        "descripcion": "Sección 3",
+        "tasa_millar": 0.25,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "general",
+        "clave": "seccion_4",
+        "descripcion": "Sección 4",
+        "tasa_millar": 0.25,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "general",
+        "clave": "seccion_5",
+        "descripcion": "Sección 5",
+        "tasa_millar": 0.25,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "general",
+        "clave": "seccion_6",
+        "descripcion": "Sección 6",
+        "tasa_millar": 0.25,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      }
+    ],
     "minimo_predial": null,
-    "tabla": []
+    "comentarios": "Art. 14: cuando la base del impuesto predial sea el valor catastral del inmueble, se aplica una tabla por secciones con tasa de 0.25. Además, el mismo artículo establece una tarifa paralela para predios destinados a la producción agropecuaria de 10 al millar anual sobre el valor registrado o catastral; se consigna sólo en comentarios por ser tarifa separada. Se ignoran la tabla de valores unitarios de terreno y construcción y el descuento del Art. 15."
   },
   "_meta": {
     "fuente": "txt",
-    "modelo": "imputed_ffill"
+    "modelo": "imputed_confirmed_fill"
   },
   "_meta_v2": {
     "intentos": 0,
@@ -22,6 +71,6 @@
     "estado": "yucatan",
     "anio": 2019,
     "imputed_from_year": 2016,
-    "imputed_method": "ffill"
+    "imputed_method": "confirmed_fill"
   }
 }

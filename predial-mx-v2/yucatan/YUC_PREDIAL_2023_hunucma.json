@@ -1,0 +1,54 @@
+{
+  "predial": {
+    "tipo_esquema": "progresivo",
+    "esquema_valido": true,
+    "comentarios": "",
+    "minimo_predial": {
+      "monto": 80.0,
+      "periodicidad": "anual",
+      "unidad": "pesos"
+    },
+    "tabla_tarifa_millar": [],
+    "tabla_progresiva": [
+      {
+        "n_rango": "1",
+        "inferior": "$80,000.01",
+        "superior": "$200,000.00",
+        "cuota_fija": "$50.00",
+        "tasa_marginal": "0.0015",
+        "unidad_cuota_fija": "pesos"
+      },
+      {
+        "n_rango": "2",
+        "inferior": "$200,000.01",
+        "superior": "$400,000.00",
+        "cuota_fija": "$577.32",
+        "tasa_marginal": "0.0024",
+        "unidad_cuota_fija": "pesos"
+      },
+      {
+        "n_rango": "3",
+        "inferior": "$400,000.01",
+        "superior": "$1,000,000.00",
+        "cuota_fija": "$962.20",
+        "tasa_marginal": "0.0026",
+        "unidad_cuota_fija": "pesos"
+      },
+      {
+        "n_rango": "4",
+        "inferior": "$1,000,000.01",
+        "superior": "En Adelante",
+        "cuota_fija": "$1,443.30",
+        "tasa_marginal": "0.0028",
+        "unidad_cuota_fija": "pesos"
+      }
+    ],
+    "tabla_tasa_unica": [],
+    "tabla_cuota_fija": [],
+    "tabla_mixta_rango": []
+  },
+  "_meta": {
+    "fuente": "txt",
+    "modelo": "gpt-5.4-mini"
+  }
+}

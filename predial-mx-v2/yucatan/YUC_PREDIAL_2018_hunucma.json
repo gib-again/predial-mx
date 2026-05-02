@@ -1,13 +1,20 @@
 {
   "predial": {
     "tipo_esquema": "tasa_unica",
-    "comentarios": "Imputado por ffill: tipo_esquema preservado del año donor; tabla/rangos no clonados por baja confianza en estabilidad temporal.",
+    "tabla": [
+      {
+        "descripcion": "Impuesto predial anual sobre el valor catastral",
+        "tasa": 0.0025,
+        "base_calculo": "valor_catastral",
+        "unidad": "porcentaje"
+      }
+    ],
     "minimo_predial": null,
-    "tabla": []
+    "comentarios": "Art. 13 establece una tasa única de 0.25% sobre el valor catastral. El resto del texto contiene tablas de valores para integrar el valor catastral (tablas de valores unitarios de terreno y construcción), así como una tarifa aparte por rentas o frutos civiles en el Art. 16, que no se integra a la mecánica principal del predial sobre valor catastral. También se menciona predios agropecuarios al 10 al millar y predios colindantes con ZOFEMAT, pero son tratamientos específicos/paralelos que no alteran la tasa general del Art. 13."
   },
   "_meta": {
     "fuente": "txt",
-    "modelo": "imputed_ffill"
+    "modelo": "imputed_confirmed_fill"
   },
   "_meta_v2": {
     "intentos": 0,
@@ -22,6 +29,6 @@
     "estado": "yucatan",
     "anio": 2018,
     "imputed_from_year": 2015,
-    "imputed_method": "ffill"
+    "imputed_method": "confirmed_fill"
   }
 }

@@ -27,6 +27,10 @@ import re
 from pathlib import Path
 
 import fitz  # PyMuPDF
+from dotenv import load_dotenv
+
+# Cargar .env temprano para que OPENAI_API_KEY esté disponible.
+load_dotenv()
 
 from src.core.balance_panel_v2 import (
     ESTADO_SLUG_BY_NOM_ENT,
@@ -58,19 +62,26 @@ def _parse_pages(pages_str: str) -> tuple[int, int] | None:
 
 
 def _resolve_pdf_path(estado_slug: str, pdf_filename: str) -> Path | None:
-    """Busca el PDF en data/{estado_slug}/pdf_raw/ recursivamente."""
-    pdf_root = Path(f"data/{estado_slug}/pdf_raw")
-    if not pdf_root.exists():
-        return None
-    # Match exacto primero
-    for p in pdf_root.rglob(pdf_filename):
-        if p.is_file():
-            return p
-    # Sin extensión exacta — buscar por basename
-    base = pdf_filename.lower()
-    for p in pdf_root.rglob("*.pdf"):
-        if p.name.lower() == base:
-            return p
+    """Busca el PDF primero en data/{estado_slug}/pdf_raw/, luego en
+    catalogs/discovered_laws/ (PDFs aportados por el auditor que no son
+    parte de los tomos del POE).
+    """
+    candidates = [
+        Path(f"data/{estado_slug}/pdf_raw"),
+        Path("catalogs/discovered_laws"),
+    ]
+    base_lower = pdf_filename.lower()
+    for root in candidates:
+        if not root.exists():
+            continue
+        # Match exacto primero
+        for p in root.rglob(pdf_filename):
+            if p.is_file():
+                return p
+        # Match por basename (case-insensitive)
+        for p in root.rglob("*.pdf"):
+            if p.name.lower() == base_lower:
+                return p
     return None
 
 
@@ -84,6 +95,102 @@ def _extract_pages_to_txt(pdf_path: Path, page_start_1: int, page_end_1: int) ->
             parts.append(t)
             parts.append("\n")
     return "".join(parts).strip()
+
+
+_RE_IMPUTAR_CON_DATOS = re.compile(
+    r"imputar\s+con\s+datos\s+de\s+(\d{4})", re.IGNORECASE,
+)
+
+
+def _parse_directed_impute_year(notas: str) -> int | None:
+    """Detecta 'imputar con datos de YYYY' en notas; retorna año fuente o None."""
+    if not notas:
+        return None
+    m = _RE_IMPUTAR_CON_DATOS.search(notas)
+    return int(m.group(1)) if m else None
+
+
+def _find_json_by_cvegeo_year(
+    estado_slug: str, prefijo: str, cvegeo: str, anio: int, default_slug: str,
+) -> Path | None:
+    """Localiza un JSON por (cvegeo, anio) sin asumir el slug. Primero prueba
+    el slug INEGI esperado; si no existe, escanea predial-mx-v2/{estado}/ y
+    devuelve el archivo cuyo `_meta_v2.cvegeo` y `_meta_v2.anio` coincidan
+    (los segmenters por estado a veces usan slugs distintos al INEGI).
+    """
+    # 1. Intentar el slug INEGI directo
+    direct = Path(f"predial-mx-v2/{estado_slug}/{prefijo}_PREDIAL_{anio}_{default_slug}.json")
+    if direct.exists():
+        return direct
+    # 2. Escanear archivos del año coincidente
+    pattern = f"{prefijo}_PREDIAL_{anio}_*.json"
+    for p in Path(f"predial-mx-v2/{estado_slug}").glob(pattern):
+        try:
+            d = json.loads(p.read_text(encoding="utf-8"))
+            meta = d.get("_meta_v2") or {}
+            if str(meta.get("cvegeo") or "").zfill(5) == cvegeo and meta.get("anio") == anio:
+                return p
+        except Exception:
+            continue
+    return None
+
+
+def _write_directed_imputed(
+    cvegeo: str, target_anio: int, source_anio: int, estado_slug: str,
+    prefijo: str, slug: str, auditor: str, fecha: str, notas: str,
+) -> tuple[Path | None, str]:
+    """Imputación dirigida por auditor: clonar el JSON del año fuente al target.
+    Retorna (path, msg). Si el JSON fuente no existe o es inválido → (None, error).
+    """
+    src_path = _find_json_by_cvegeo_year(
+        estado_slug, prefijo, cvegeo, source_anio, slug,
+    )
+    if src_path is None:
+        return None, f"JSON fuente no localizable para cvegeo={cvegeo} año={source_anio}"
+
+    try:
+        src_doc = json.loads(src_path.read_text(encoding="utf-8"))
+    except Exception as e:
+        return None, f"error leyendo JSON fuente: {e}"
+
+    src_pred = src_doc.get("predial")
+    if not isinstance(src_pred, dict) or not src_pred.get("tipo_esquema"):
+        return None, f"JSON fuente sin predial.tipo_esquema válido"
+
+    # Clonar predial entero del fuente.
+    target_pred = json.loads(json.dumps(src_pred))
+    old_com = (target_pred.get("comentarios") or "").strip()
+    target_pred["comentarios"] = (
+        f"[audit_directed_impute desde {source_anio}] "
+        f"Auditor instruyó imputar con datos de {source_anio} (notas: {notas})."
+        + (f" Comentario original: {old_com}" if old_com else "")
+    )
+
+    src_meta = src_doc.get("_meta") or {}
+    target_doc = {
+        "predial": target_pred,
+        "_meta": {
+            "fuente": src_meta.get("fuente", "txt"),
+            "modelo": f"imputed_audit_directed[from_{source_anio}]",
+        },
+        "_meta_v2": {
+            "intentos": 0,
+            "requiere_revision": False,
+            "razon": None,
+            "tokens": {"input": 0, "output": 0, "cached": 0},
+            "cvegeo": cvegeo,
+            "estado": estado_slug,
+            "anio": target_anio,
+            "imputed_from_year": source_anio,
+            "imputed_method": "audit_directed",
+            "audit_auditor": auditor,
+            "audit_fecha": fecha,
+        },
+    }
+    out_path = Path(f"predial-mx-v2/{estado_slug}/{prefijo}_PREDIAL_{target_anio}_{slug}.json")
+    out_path.parent.mkdir(parents=True, exist_ok=True)
+    out_path.write_text(json.dumps(target_doc, ensure_ascii=False, indent=2), encoding="utf-8")
+    return out_path, f"clonado desde {source_anio}"
 
 
 def _write_synthetic_no_ley(
@@ -145,6 +252,11 @@ def main():
     ap.add_argument("--audit-csv", default="output/audit_pendiente.csv")
     ap.add_argument("--log-csv", default="output/reextract_log.csv")
     ap.add_argument("--dry-run", action="store_true")
+    ap.add_argument("--overwrite", action="store_true",
+                    help="Sobrescribir JSONs existentes incluso si tienen modelo real "
+                         "(útil cuando el LLM previo falló y el JSON tiene tipo_esquema=None).")
+    ap.add_argument("--estado", default="",
+                    help="Filtrar a un solo estado (NOM_ENT del catálogo, ej. 'Queretaro').")
     args = ap.parse_args()
 
     audit_path = Path(args.audit_csv)
@@ -154,7 +266,11 @@ def main():
 
     rows = list(csv.DictReader(open(audit_path, encoding="utf-8-sig")))
     pending = [r for r in rows if (r.get("estatus") or "").strip()]
-    print(f"Filas en audit: {len(rows)}; con estatus llenado: {len(pending)}")
+    if args.estado:
+        pending = [r for r in pending if r.get("estado", "") == args.estado]
+        print(f"Filtro --estado={args.estado!r}: {len(pending)} filas pendientes")
+    print(f"Filas en audit: {len(rows)}; con estatus llenado: {len(pending)}; "
+          f"--overwrite={args.overwrite}")
 
     if not pending:
         print("Nada por procesar.")
@@ -187,20 +303,57 @@ def main():
             continue
 
         # Idempotencia: si ya existe JSON real (no imputado, no sintético previo de audit),
-        # no sobrescribir.
+        # no sobrescribir — a menos que --overwrite o que el JSON tenga predial=null/tipo=None.
         v2_path = Path(f"predial-mx-v2/{estado_slug}/{prefijo}_PREDIAL_{anio}_{muni_slug}.json")
-        if v2_path.exists():
+        if v2_path.exists() and not args.overwrite:
             try:
                 existing = json.loads(v2_path.read_text(encoding="utf-8"))
                 modelo = (existing.get("_meta") or {}).get("modelo", "")
-                if modelo and not modelo.startswith(("imputed_", "audit_no_ley")):
-                    log_rows.append(_row_resp(r, "skip", f"existe JSON real ({modelo}); no sobrescribir"))
+                pred_existing = existing.get("predial")
+                tipo_existing = (pred_existing or {}).get("tipo_esquema") if pred_existing else None
+                # Si el JSON existente está vacío/inválido (tipo=None), permitir sobrescritura.
+                if (
+                    modelo
+                    and not modelo.startswith(("imputed_", "audit_no_ley"))
+                    and tipo_existing  # tiene tipo válido
+                ):
+                    log_rows.append(_row_resp(r, "skip", f"existe JSON real ({modelo}, tipo={tipo_existing}); no sobrescribir"))
                     n_skipped += 1
                     continue
             except Exception:
                 pass
 
         if estatus == "no_existe_ley":
+            # Detectar instrucción "imputar con datos de YYYY" en notas
+            directed_year = _parse_directed_impute_year(notas)
+            if directed_year and directed_year != anio:
+                if args.dry_run:
+                    print(f"  [DRY] directed_impute desde {directed_year} → {v2_path.name}")
+                    log_rows.append(_row_resp(r, "would_directed_impute", f"desde {directed_year}"))
+                    n_no_ley += 1
+                    continue
+                out, msg = _write_directed_imputed(
+                    cvegeo, anio, directed_year, estado_slug,
+                    prefijo, muni_slug, auditor, fecha, notas,
+                )
+                if out is None:
+                    print(f"  [error directed_impute {anio}←{directed_year}] {msg}")
+                    log_rows.append(_row_resp(r, "error_directed_impute", msg))
+                    n_errors += 1
+                else:
+                    print(f"  [directed_impute {anio}←{directed_year}] → {out.name}")
+                    log_rows.append(_row_resp(r, "wrote_directed_impute", str(out)))
+                    n_no_ley += 1
+                continue
+            if directed_year == anio:
+                # Auto-referencia: el auditor escribió el mismo año, probable typo.
+                msg = f"notas dicen 'imputar con datos de {directed_year}' pero ese ES el año del hueco; ignorando"
+                print(f"  [warn] {msg}")
+                log_rows.append(_row_resp(r, "warn_self_ref", msg))
+                n_skipped += 1
+                continue
+
+            # Sin instrucción de imputación → audit_no_ley sintético.
             if args.dry_run:
                 print(f"  [DRY] no_existe_ley → {v2_path}")
                 log_rows.append(_row_resp(r, "would_write_no_ley", str(v2_path)))

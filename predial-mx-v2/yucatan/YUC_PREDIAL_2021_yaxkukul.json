@@ -1,0 +1,30 @@
+{
+  "predial": {
+    "tipo_esquema": "cuota_fija",
+    "esquema_valido": true,
+    "comentarios": "Artículo 13 establece cuota fija para predio urbano y predio rústico por hectárea. Se ignoran valores catastrales, licencias de construcción y frutos civiles por estar fuera del alcance.",
+    "minimo_predial": null,
+    "tabla_tarifa_millar": [],
+    "tabla_progresiva": [],
+    "tabla_tasa_unica": [],
+    "tabla_cuota_fija": [
+      {
+        "descripcion": "Predio Urbano",
+        "monto": 50.0,
+        "periodicidad": "anual",
+        "unidad": "pesos"
+      },
+      {
+        "descripcion": "Predio rústico por hectárea",
+        "monto": 450.0,
+        "periodicidad": "anual",
+        "unidad": "pesos"
+      }
+    ],
+    "tabla_mixta_rango": []
+  },
+  "_meta": {
+    "fuente": "txt",
+    "modelo": "gpt-5.4-mini"
+  }
+}

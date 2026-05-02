@@ -1,23 +1,74 @@
 {
-  "predial": null,
+  "predial": {
+    "tipo_esquema": "progresivo",
+    "esquema_valido": true,
+    "comentarios": "",
+    "minimo_predial": null,
+    "tabla_tarifa_millar": [],
+    "tabla_progresiva": [
+      {
+        "n_rango": "1",
+        "inferior": "$0.01",
+        "superior": "$10,000.00",
+        "cuota_fija": "$7",
+        "tasa_marginal": "0.0025",
+        "unidad_cuota_fija": "pesos"
+      },
+      {
+        "n_rango": "2",
+        "inferior": "$10,000.01",
+        "superior": "$20,000.00",
+        "cuota_fija": "$13",
+        "tasa_marginal": "0.0025",
+        "unidad_cuota_fija": "pesos"
+      },
+      {
+        "n_rango": "3",
+        "inferior": "$20,000.01",
+        "superior": "$30,000.00",
+        "cuota_fija": "$14",
+        "tasa_marginal": "0.0025",
+        "unidad_cuota_fija": "pesos"
+      },
+      {
+        "n_rango": "4",
+        "inferior": "$30,000.01",
+        "superior": "$40,000.00",
+        "cuota_fija": "$25",
+        "tasa_marginal": "0.0025",
+        "unidad_cuota_fija": "pesos"
+      },
+      {
+        "n_rango": "5",
+        "inferior": "$40,000.01",
+        "superior": "$50,000.00",
+        "cuota_fija": "$32",
+        "tasa_marginal": "0.0025",
+        "unidad_cuota_fija": "pesos"
+      },
+      {
+        "n_rango": "6",
+        "inferior": "$50,000.01",
+        "superior": "$60,000.00",
+        "cuota_fija": "$38",
+        "tasa_marginal": "0.0025",
+        "unidad_cuota_fija": "pesos"
+      },
+      {
+        "n_rango": "7",
+        "inferior": "$70,000.01",
+        "superior": "EN ADELANTE",
+        "cuota_fija": "$44",
+        "tasa_marginal": "0.0025",
+        "unidad_cuota_fija": "pesos"
+      }
+    ],
+    "tabla_tasa_unica": [],
+    "tabla_cuota_fija": [],
+    "tabla_mixta_rango": []
+  },
   "_meta": {
     "fuente": "txt",
-    "modelo": "gpt-5.4"
-  },
-  "_meta_v2": {
-    "intentos": 3,
-    "requiere_revision": true,
-    "escalado": true,
-    "razon": "valido_3x_fallido | e1=  • predial.mixto: Value error, brackets 6→7: hueco detectado (superior=60000.0, siguiente inferior=70000.01) | e2=  • predial.mixto: Value error, brackets 6→7: hueco detectado (superior=60000.0, siguiente inferior=70000.01) | full_e3=  • predial.progresivo: Value error, brackets 6→7: hueco detectado (superior=60000.0, siguiente inferior=70000.0)",
-    "usado_reocr": false,
-    "usado_vision": false,
-    "tokens": {
-      "input": 20997,
-      "output": 1750,
-      "cached": 17664
-    },
-    "cvegeo": "31044",
-    "estado": "yucatan",
-    "anio": 2010
+    "modelo": "gpt-5.4-mini"
   }
 }

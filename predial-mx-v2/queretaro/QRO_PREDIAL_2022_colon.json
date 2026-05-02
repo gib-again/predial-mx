@@ -1,20 +1,17 @@
 {
-  "predial": null,
+  "predial": {
+    "tipo_esquema": "desconocido",
+    "esquema_valido": false,
+    "comentarios": "No se incluye la sección del Impuesto Predial ni su mecánica de cálculo; el texto mostrado corresponde a aportaciones, transferencias y financiamiento.",
+    "minimo_predial": null,
+    "tabla_tarifa_millar": [],
+    "tabla_progresiva": [],
+    "tabla_tasa_unica": [],
+    "tabla_cuota_fija": [],
+    "tabla_mixta_rango": []
+  },
   "_meta": {
     "fuente": "txt",
     "modelo": "gpt-5.4-mini"
-  },
-  "_meta_v2": {
-    "intentos": 2,
-    "requiere_revision": true,
-    "razon": "valido_2x_fallido | error1=  • predial.mixto: Value error, bracket 25: superior=None solo permitido en el último rango | error2=  • predial.mixto: Value error, brackets 1→2: hueco detectado (superior=180664.83, siguiente inferior=180664.84)",
-    "tokens": {
-      "input": 13941,
-      "output": 3552,
-      "cached": 8704
-    },
-    "cvegeo": "22005",
-    "estado": "queretaro",
-    "anio": 2022
   }
 }

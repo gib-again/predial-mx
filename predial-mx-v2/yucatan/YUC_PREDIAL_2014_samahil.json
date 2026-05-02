@@ -1,0 +1,83 @@
+{
+  "predial": {
+    "tipo_esquema": "progresivo",
+    "esquema_valido": true,
+    "comentarios": "",
+    "minimo_predial": null,
+    "tabla_tarifa_millar": [
+      {
+        "grupo": "rustico",
+        "clave": "produccion_agropecuaria",
+        "descripcion": "Todo predio destinado a la producción agropecuaria 10 al millar anual sobre el valor registrado o catastral",
+        "tasa_millar": 10,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      }
+    ],
+    "tabla_progresiva": [
+      {
+        "n_rango": "1",
+        "inferior": "De 01",
+        "superior": "10,000.00",
+        "cuota_fija": "6.00",
+        "tasa_marginal": "0.0025",
+        "unidad_cuota_fija": "pesos"
+      },
+      {
+        "n_rango": "2",
+        "inferior": "10,000.01",
+        "superior": "20,000.00",
+        "cuota_fija": "13.00",
+        "tasa_marginal": "0.0025",
+        "unidad_cuota_fija": "pesos"
+      },
+      {
+        "n_rango": "3",
+        "inferior": "20,000.01",
+        "superior": "30,000.00",
+        "cuota_fija": "19.00",
+        "tasa_marginal": "0.0025",
+        "unidad_cuota_fija": "pesos"
+      },
+      {
+        "n_rango": "4",
+        "inferior": "30,000.01",
+        "superior": "40,000.00",
+        "cuota_fija": "25.00",
+        "tasa_marginal": "0.0025",
+        "unidad_cuota_fija": "pesos"
+      },
+      {
+        "n_rango": "5",
+        "inferior": "40,000.01",
+        "superior": "50,000.00",
+        "cuota_fija": "31.00",
+        "tasa_marginal": "0.0025",
+        "unidad_cuota_fija": "pesos"
+      },
+      {
+        "n_rango": "6",
+        "inferior": "50,000.01",
+        "superior": "60,000.00",
+        "cuota_fija": "37.00",
+        "tasa_marginal": "0.0025",
+        "unidad_cuota_fija": "pesos"
+      },
+      {
+        "n_rango": "7",
+        "inferior": "60,000.01",
+        "superior": "En adelante",
+        "cuota_fija": "44.00",
+        "tasa_marginal": "0.0025",
+        "unidad_cuota_fija": "pesos"
+      }
+    ],
+    "tabla_tasa_unica": [],
+    "tabla_cuota_fija": [],
+    "tabla_mixta_rango": []
+  },
+  "_meta": {
+    "fuente": "txt",
+    "modelo": "gpt-5.4-mini"
+  }
+}

@@ -1,0 +1,71 @@
+{
+  "predial": {
+    "tipo_esquema": "tarifa_millar",
+    "esquema_valido": true,
+    "comentarios": "",
+    "minimo_predial": null,
+    "tabla_tarifa_millar": [
+      {
+        "grupo": "urbano",
+        "clave": "seccion_001",
+        "descripcion": "SECCIÓN 001",
+        "tasa_millar": 0.25,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "urbano",
+        "clave": "seccion_002",
+        "descripcion": "SECCIÓN 002",
+        "tasa_millar": 0.25,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "urbano",
+        "clave": "seccion_003",
+        "descripcion": "SECCIÓN 003",
+        "tasa_millar": 0.25,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "urbano",
+        "clave": "seccion_004",
+        "descripcion": "SECCIÓN 004",
+        "tasa_millar": 0.25,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "urbano",
+        "clave": "otras_secciones",
+        "descripcion": "OTRAS SECCIONES",
+        "tasa_millar": 0.25,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      }
+    ],
+    "tabla_progresiva": [],
+    "tabla_tasa_unica": [],
+    "tabla_cuota_fija": [
+      {
+        "descripcion": "Cuota fija para valores catastrales menores o igual a $45,000.00 pesos (o cuando no se pudiera determinar el impuesto predial) - Predio urbano",
+        "monto": 200,
+        "periodicidad": "anual",
+        "unidad": "pesos"
+      },
+      {
+        "descripcion": "Cuota fija para valores catastrales menores o igual a $45,000.00 pesos (o cuando no se pudiera determinar el impuesto predial) - Predio rústico",
+        "monto": 150,
+        "periodicidad": "anual",
+        "unidad": "pesos"
+      }
+    ],
+    "tabla_mixta_rango": []
+  },
+  "_meta": {
+    "fuente": "txt",
+    "modelo": "gpt-5.4-mini"
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "predial": {
+    "tipo_esquema": "otro_no_clasificado",
+    "categoria": "municipio_sin_impuesto",
+    "descripcion_estructural": "Auditor confirmó que no existe Ley de Ingresos publicada para este municipio en el ejercicio 2021.",
+    "tabla_cruda": [],
+    "minimo_predial": null,
+    "comentarios": "Confirmado por (sin auditor) el (sin fecha)."
+  },
+  "_meta": {
+    "fuente": "manual",
+    "modelo": "audit_no_ley"
+  },
+  "_meta_v2": {
+    "intentos": 0,
+    "requiere_revision": false,
+    "razon": null,
+    "tokens": {
+      "input": 0,
+      "output": 0,
+      "cached": 0
+    },
+    "cvegeo": "31095",
+    "estado": "yucatan",
+    "anio": 2021,
+    "audit_estatus": "no_existe_ley",
+    "audit_auditor": "",
+    "audit_fecha": ""
+  }
+}

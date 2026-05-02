@@ -1,0 +1,37 @@
+{
+  "predial": {
+    "tipo_esquema": "tasa_unica",
+    "esquema_valido": true,
+    "comentarios": "",
+    "minimo_predial": null,
+    "tabla_tarifa_millar": [],
+    "tabla_progresiva": [],
+    "tabla_tasa_unica": [
+      {
+        "descripcion": "tarifa del impuesto predial (c) se propone el 0.25% del valor catastral actualizado",
+        "tasa": 0.0025,
+        "base_calculo": "valor_catastral",
+        "unidad": "porcentaje"
+      }
+    ],
+    "tabla_cuota_fija": [
+      {
+        "descripcion": "cuando no se pueda determinar el valor catastral",
+        "monto": 150.0,
+        "periodicidad": "anual",
+        "unidad": "pesos"
+      },
+      {
+        "descripcion": "cuando no se pueda determinar el valor catastral",
+        "monto": 300.0,
+        "periodicidad": "anual",
+        "unidad": "pesos"
+      }
+    ],
+    "tabla_mixta_rango": []
+  },
+  "_meta": {
+    "fuente": "txt",
+    "modelo": "gpt-5.4-mini"
+  }
+}

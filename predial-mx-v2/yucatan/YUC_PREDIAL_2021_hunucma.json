@@ -1,0 +1,30 @@
+{
+  "predial": {
+    "tipo_esquema": "tarifa_millar",
+    "esquema_valido": true,
+    "comentarios": "",
+    "minimo_predial": {
+      "monto": 80.0,
+      "periodicidad": "anual",
+      "unidad": "pesos"
+    },
+    "tabla_tarifa_millar": [
+      {
+        "grupo": "general",
+        "clave": "general",
+        "descripcion": "El Impuesto Predial se determinara aplicando la tasa de 0.10 % del valor catastral.",
+        "tasa_millar": 0.1,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      }
+    ],
+    "tabla_progresiva": [],
+    "tabla_tasa_unica": [],
+    "tabla_cuota_fija": [],
+    "tabla_mixta_rango": []
+  },
+  "_meta": {
+    "fuente": "txt",
+    "modelo": "gpt-5.4-mini"
+  }
+}

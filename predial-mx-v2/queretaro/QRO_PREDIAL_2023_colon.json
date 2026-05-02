@@ -1,20 +1,218 @@
 {
-  "predial": null,
+  "predial": {
+    "tipo_esquema": "progresivo",
+    "esquema_valido": true,
+    "comentarios": "",
+    "minimo_predial": null,
+    "tabla_tarifa_millar": [],
+    "tabla_progresiva": [
+      {
+        "n_rango": "1",
+        "inferior": "$0.00",
+        "superior": "$216,750.50",
+        "cuota_fija": "$216.21",
+        "tasa_marginal": "0.0005186",
+        "unidad_cuota_fija": "pesos"
+      },
+      {
+        "n_rango": "2",
+        "inferior": "$216,750.51",
+        "superior": "$327,365.82",
+        "cuota_fija": "$328.63",
+        "tasa_marginal": "0.0015448",
+        "unidad_cuota_fija": "pesos"
+      },
+      {
+        "n_rango": "3",
+        "inferior": "$327,365.83",
+        "superior": "$494,431.99",
+        "cuota_fija": "$499.52",
+        "tasa_marginal": "0.0015547",
+        "unidad_cuota_fija": "pesos"
+      },
+      {
+        "n_rango": "4",
+        "inferior": "$494,432.00",
+        "superior": "$746,757.85",
+        "cuota_fija": "$759.28",
+        "tasa_marginal": "0.0015647",
+        "unidad_cuota_fija": "pesos"
+      },
+      {
+        "n_rango": "5",
+        "inferior": "$746,757.86",
+        "superior": "$1,127,854.36",
+        "cuota_fija": "$1,154.10",
+        "tasa_marginal": "0.0015747",
+        "unidad_cuota_fija": "pesos"
+      },
+      {
+        "n_rango": "6",
+        "inferior": "$1,127,854.37",
+        "superior": "$1,703,437.70",
+        "cuota_fija": "$1,754.23",
+        "tasa_marginal": "0.0015848",
+        "unidad_cuota_fija": "pesos"
+      },
+      {
+        "n_rango": "7",
+        "inferior": "$1,703,437.71",
+        "superior": "$2,572,761.23",
+        "cuota_fija": "$2,666.43",
+        "tasa_marginal": "0.0015949",
+        "unidad_cuota_fija": "pesos"
+      },
+      {
+        "n_rango": "8",
+        "inferior": "$2,572,761.24",
+        "superior": "$3,885,730.82",
+        "cuota_fija": "$4,052.97",
+        "tasa_marginal": "0.0016051",
+        "unidad_cuota_fija": "pesos"
+      },
+      {
+        "n_rango": "9",
+        "inferior": "$3,885,730.83",
+        "superior": "$5,868,754.48",
+        "cuota_fija": "$6,160.52",
+        "tasa_marginal": "0.0016154",
+        "unidad_cuota_fija": "pesos"
+      },
+      {
+        "n_rango": "10",
+        "inferior": "$5,868,754.49",
+        "superior": "$8,863,784.13",
+        "cuota_fija": "$9,363.99",
+        "tasa_marginal": "0.0016257",
+        "unidad_cuota_fija": "pesos"
+      },
+      {
+        "n_rango": "11",
+        "inferior": "$8,863,784.14",
+        "superior": "$13,387,281.63",
+        "cuota_fija": "$14,233.26",
+        "tasa_marginal": "0.0016361",
+        "unidad_cuota_fija": "pesos"
+      },
+      {
+        "n_rango": "12",
+        "inferior": "$13,387,281.64",
+        "superior": "$20,219,277.32",
+        "cuota_fija": "$21,634.55",
+        "tasa_marginal": "0.0016466",
+        "unidad_cuota_fija": "pesos"
+      },
+      {
+        "n_rango": "13",
+        "inferior": "$20,219,277.33",
+        "superior": "$30,537,878.16",
+        "cuota_fija": "$32,884.52",
+        "tasa_marginal": "0.0016571",
+        "unidad_cuota_fija": "pesos"
+      },
+      {
+        "n_rango": "14",
+        "inferior": "$30,537,878.17",
+        "superior": "$46,122,420.10",
+        "cuota_fija": "$49,984.47",
+        "tasa_marginal": "0.0016678",
+        "unidad_cuota_fija": "pesos"
+      },
+      {
+        "n_rango": "15",
+        "inferior": "$46,122,420.11",
+        "superior": "$69,660,296.13",
+        "cuota_fija": "$75,976.39",
+        "tasa_marginal": "0.0016784",
+        "unidad_cuota_fija": "pesos"
+      },
+      {
+        "n_rango": "16",
+        "inferior": "$69,660,296.14",
+        "superior": "$105,210,369.41",
+        "cuota_fija": "$115,484.11",
+        "tasa_marginal": "0.0016892",
+        "unidad_cuota_fija": "pesos"
+      },
+      {
+        "n_rango": "17",
+        "inferior": "$105,210,369.42",
+        "superior": "$158,902,882.24",
+        "cuota_fija": "$175,535.85",
+        "tasa_marginal": "0.0017000",
+        "unidad_cuota_fija": "pesos"
+      },
+      {
+        "n_rango": "18",
+        "inferior": "$158,902,882.25",
+        "superior": "$239,996,552.84",
+        "cuota_fija": "$266,814.50",
+        "tasa_marginal": "0.0017109",
+        "unidad_cuota_fija": "pesos"
+      },
+      {
+        "n_rango": "19",
+        "inferior": "$239,996,552.85",
+        "superior": "$362,475,145.62",
+        "cuota_fija": "$405,558.03",
+        "tasa_marginal": "0.0017218",
+        "unidad_cuota_fija": "pesos"
+      },
+      {
+        "n_rango": "20",
+        "inferior": "$362,475,145.63",
+        "superior": "$547,458,826.52",
+        "cuota_fija": "$616,448.21",
+        "tasa_marginal": "0.0017328",
+        "unidad_cuota_fija": "pesos"
+      },
+      {
+        "n_rango": "21",
+        "inferior": "$547,458,826.53",
+        "superior": "$826,846,117.20",
+        "cuota_fija": "$937,001.28",
+        "tasa_marginal": "0.0017439",
+        "unidad_cuota_fija": "pesos"
+      },
+      {
+        "n_rango": "22",
+        "inferior": "$826,846,117.21",
+        "superior": "$1,248,814,464.97",
+        "cuota_fija": "$1,424,241.94",
+        "tasa_marginal": "0.0017551",
+        "unidad_cuota_fija": "pesos"
+      },
+      {
+        "n_rango": "23",
+        "inferior": "$1,248,814,464.98",
+        "superior": "$1,886,127,945.06",
+        "cuota_fija": "$2,164,847.76",
+        "tasa_marginal": "0.0017663",
+        "unidad_cuota_fija": "pesos"
+      },
+      {
+        "n_rango": "24",
+        "inferior": "$1,886,127,945.07",
+        "superior": "$2,848,684,672.48",
+        "cuota_fija": "$3,290,568.59",
+        "tasa_marginal": "0.0017776",
+        "unidad_cuota_fija": "pesos"
+      },
+      {
+        "n_rango": "25",
+        "inferior": "$2,848,684,672.49",
+        "superior": "En adelante",
+        "cuota_fija": "$5,001,664.26",
+        "tasa_marginal": "0.0017890",
+        "unidad_cuota_fija": "pesos"
+      }
+    ],
+    "tabla_tasa_unica": [],
+    "tabla_cuota_fija": [],
+    "tabla_mixta_rango": []
+  },
   "_meta": {
     "fuente": "txt",
     "modelo": "gpt-5.4-mini"
-  },
-  "_meta_v2": {
-    "intentos": 2,
-    "requiere_revision": true,
-    "razon": "valido_2x_fallido | error1=  • predial.progresivo: Value error, brackets 1→2: hueco detectado (superior=216750.5, siguiente inferior=216750.51) | error2=  • predial.mixto: Value error, bracket 25: superior=None solo permitido en el último rango",
-    "tokens": {
-      "input": 13124,
-      "output": 3355,
-      "cached": 9728
-    },
-    "cvegeo": "22005",
-    "estado": "queretaro",
-    "anio": 2023
   }
 }

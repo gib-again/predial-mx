@@ -1,0 +1,40 @@
+{
+  "predial": {
+    "tipo_esquema": "tasa_unica",
+    "esquema_valido": true,
+    "comentarios": "",
+    "minimo_predial": {
+      "monto": 72.0,
+      "periodicidad": "anual",
+      "unidad": "pesos"
+    },
+    "tabla_tarifa_millar": [],
+    "tabla_progresiva": [],
+    "tabla_tasa_unica": [
+      {
+        "descripcion": "Predios urbanos ubicados en Tekax",
+        "tasa": 0.00085,
+        "base_calculo": "valor_catastral",
+        "unidad": "factor_decimal"
+      },
+      {
+        "descripcion": "Predios urbanos ubicados en comisarías",
+        "tasa": 0.0008,
+        "base_calculo": "valor_catastral",
+        "unidad": "factor_decimal"
+      },
+      {
+        "descripcion": "Predios rústicos",
+        "tasa": 0.00075,
+        "base_calculo": "valor_catastral",
+        "unidad": "factor_decimal"
+      }
+    ],
+    "tabla_cuota_fija": [],
+    "tabla_mixta_rango": []
+  },
+  "_meta": {
+    "fuente": "txt",
+    "modelo": "gpt-5.4-mini"
+  }
+}

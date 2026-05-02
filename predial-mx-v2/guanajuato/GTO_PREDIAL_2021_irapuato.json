@@ -1,0 +1,17 @@
+{
+  "predial": {
+    "tipo_esquema": "desconocido",
+    "esquema_valido": false,
+    "comentarios": "Texto insuficiente o truncado; no contiene la mecánica de cálculo del impuesto predial.",
+    "minimo_predial": null,
+    "tabla_tarifa_millar": [],
+    "tabla_progresiva": [],
+    "tabla_tasa_unica": [],
+    "tabla_cuota_fija": [],
+    "tabla_mixta_rango": []
+  },
+  "_meta": {
+    "fuente": "txt",
+    "modelo": "gpt-5.4-mini"
+  }
+}
