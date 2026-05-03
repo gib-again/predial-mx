@@ -1,0 +1,54 @@
+{
+  "predial": {
+    "tipo_esquema": "tarifa_millar",
+    "esquema_valido": true,
+    "comentarios": "",
+    "minimo_predial": null,
+    "tabla_tarifa_millar": [
+      {
+        "grupo": "urbano",
+        "clave": "predios_bases_gravables_menores_a_1500000",
+        "descripcion": "Predios con bases gravables menores a 1,500,000 pesos: Zona Baja 1.5 al millar; Zona Media 2.0 al millar; Zona Alta 3.0 al millar",
+        "tasa_millar": 1.5,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "urbano",
+        "clave": "predios_bases_gravables_de_1500001_a_3000000",
+        "descripcion": "Predios con bases gravables de 1,500,001 a 3,000,000 de pesos",
+        "tasa_millar": 3.5,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "urbano",
+        "clave": "predios_bases_gravables_de_3000001_a_4000000",
+        "descripcion": "Predios con bases gravables de 3,000,001 a 4,000,000 de pesos",
+        "tasa_millar": 4.0,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "urbano",
+        "clave": "predios_bases_gravables_mayores_a_4000001",
+        "descripcion": "Predios con bases gravables mayores a 4,000,001 pesos",
+        "tasa_millar": 4.5,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "urbano",
+        "clave": "terrenos_baldios",
+        "descripcion": "Terrenos baldíos",
+        "tasa_millar": 4.5,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      }
+    ],
+    "tabla_progresiva": [],
+    "tabla_tasa_unica": [],
+    "tabla_cuota_fija": [],
+    "tabla_mixta_rango": []
+  }
+}

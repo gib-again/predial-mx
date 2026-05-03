@@ -1,0 +1,74 @@
+{
+  "predial": {
+    "tipo_esquema": "tarifa_millar",
+    "esquema_valido": true,
+    "comentarios": "",
+    "minimo_predial": {
+      "monto": 120000.0,
+      "periodicidad": "anual",
+      "unidad": "pesos"
+    },
+    "tabla_tarifa_millar": [
+      {
+        "grupo": "urbano",
+        "clave": "predios_con_bases_gravables_menores_a_1500000_pesos_zona_baja",
+        "descripcion": "Predios con bases gravables menores a 1'500,000 de pesos, Zona Baja",
+        "tasa_millar": 1.5,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "urbano",
+        "clave": "predios_con_bases_gravables_menores_a_1500000_pesos_zona_media",
+        "descripcion": "Predios con bases gravables menores a 1'500,000 de pesos, Zona Media",
+        "tasa_millar": 2.0,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "urbano",
+        "clave": "predios_con_bases_gravables_menores_a_1500000_pesos_zona_alta",
+        "descripcion": "Predios con bases gravables menores a 1'500,000 de pesos, Zona Alta",
+        "tasa_millar": 3.0,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "urbano",
+        "clave": "predios_con_bases_gravables_de_1500001_a_3000000_pesos",
+        "descripcion": "Predios con bases gravables de 1'500,001 a 3'000,000 de pesos",
+        "tasa_millar": 3.5,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "urbano",
+        "clave": "predios_con_bases_gravables_de_3000001_a_4000000_pesos",
+        "descripcion": "Predios con bases gravables de 3'000,001 a 4'000,000 de pesos",
+        "tasa_millar": 4.0,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "urbano",
+        "clave": "predios_con_bases_gravables_mayores_a_4000001_pesos",
+        "descripcion": "Predios con bases gravables mayores de 4'000,001 de pesos",
+        "tasa_millar": 4.5,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "urbano",
+        "clave": "terrenos_balidos",
+        "descripcion": "Terrenos baldíos",
+        "tasa_millar": 4.5,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      }
+    ],
+    "tabla_progresiva": [],
+    "tabla_tasa_unica": [],
+    "tabla_cuota_fija": [],
+    "tabla_mixta_rango": []
+  }
+}

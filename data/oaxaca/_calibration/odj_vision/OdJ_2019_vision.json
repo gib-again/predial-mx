@@ -1,0 +1,78 @@
+{
+  "predial": {
+    "tipo_esquema": "tarifa_millar",
+    "esquema_valido": true,
+    "comentarios": "",
+    "minimo_predial": null,
+    "tabla_tarifa_millar": [
+      {
+        "grupo": "general",
+        "clave": "menores_a_un_millon_zona_baja",
+        "descripcion": "Menores a 1'000,000.00: Zona Baja",
+        "tasa_millar": 1.5,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "general",
+        "clave": "menores_a_un_millon_zona_media",
+        "descripcion": "Menores a 1'000,000.00: Zona Media",
+        "tasa_millar": 2.0,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "general",
+        "clave": "menores_a_un_millon_zona_alta",
+        "descripcion": "Menores a 1'000,000.00: Zona Alta",
+        "tasa_millar": 3.0,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "general",
+        "clave": "un_millon_uno_a_tres_millones",
+        "descripcion": "1'000,001.00 a 3'000,000.00",
+        "tasa_millar": 3.5,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "general",
+        "clave": "tres_millones_uno_a_cuatro_millones",
+        "descripcion": "3'000,001.00 a 4'000,000.00",
+        "tasa_millar": 4.0,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "general",
+        "clave": "cuatro_millones_uno_en_adelante",
+        "descripcion": "4'000,001.00 en adelante",
+        "tasa_millar": 4.5,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "general",
+        "clave": "terrenos_balidos",
+        "descripcion": "Terrenos baldíos",
+        "tasa_millar": 4.5,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "general",
+        "clave": "excedente_veinte_millones",
+        "descripcion": "20,000,000.00 en adelante",
+        "tasa_millar": 4.8,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      }
+    ],
+    "tabla_progresiva": [],
+    "tabla_tasa_unica": [],
+    "tabla_cuota_fija": [],
+    "tabla_mixta_rango": []
+  }
+}

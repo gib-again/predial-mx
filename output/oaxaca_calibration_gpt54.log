@@ -1,0 +1,360 @@
+>> OPENAI_MODEL en runtime: gpt-5.4
+
+[1/50] fallback_ley_completa | OAX_PREDIAL_2024_yaxe.txt (14818 chars)
+  [extract_single] >>> Yaxe 2024
+    [1/3] TXT (14278 chars)...
+      [ext_txt] Páginas no numéricas: start=, end=
+    [3/3] PDF visión (3pp)...
+    [OK] → data\oaxaca\_calibration\json_gpt54\2024\OAX_PREDIAL_2024_yaxe.json
+
+[2/50] fallback_ley_completa | OAX_PREDIAL_2012_villa_sola_de_vega.txt (4472 chars)
+  [extract_single] >>> Villa Sola De Vega 2012
+    [1/3] TXT (4268 chars)...
+    [CACHE] 3840 tokens cacheados de 5766
+      [ext_txt] Páginas no numéricas: start=, end=
+    [3/3] PDF visión (1pp)...
+    [OK] → data\oaxaca\_calibration\json_gpt54\2012\OAX_PREDIAL_2012_villa_sola_de_vega.json
+
+[3/50] fallback_ley_completa | OAX_PREDIAL_2019_zapotitlan_palmas.txt (14247 chars)
+  [extract_single] >>> Zapotitlan Palmas 2019
+    [1/3] TXT (13743 chars)...
+    [CACHE] 3840 tokens cacheados de 9273
+      [ext_txt] Páginas no numéricas: start=, end=
+    [3/3] PDF visión (3pp)...
+    [OK] → data\oaxaca\_calibration\json_gpt54\2019\OAX_PREDIAL_2019_zapotitlan_palmas.json
+
+[4/50] fallback_ley_completa | OAX_PREDIAL_2026_san_juan_yaee.txt (10551 chars)
+  [extract_single] >>> San Juan Yaee 2026
+    [1/3] TXT (10186 chars)...
+    [CACHE] 3840 tokens cacheados de 8613
+      [ext_txt] Páginas no numéricas: start=, end=
+    [3/3] PDF visión (3pp)...
+    [OK] → data\oaxaca\_calibration\json_gpt54\2026\OAX_PREDIAL_2026_san_juan_yaee.json
+
+[5/50] fallback_ley_completa | OAX_PREDIAL_2017_villa_hidalgo_yalalag.txt (31461 chars)
+  [extract_single] >>> Villa Hidalgo Yalalag 2017
+    [1/3] TXT (30142 chars)...
+    [CACHE] 3840 tokens cacheados de 13027
+      [ext_txt] Páginas no numéricas: start=, end=
+    [3/3] PDF visión (8pp)...
+    [OK] → data\oaxaca\_calibration\json_gpt54\2017\OAX_PREDIAL_2017_villa_hidalgo_yalalag.json
+
+[6/50] fallback_ley_completa | OAX_PREDIAL_2016_zapotitlan_palmas.txt (4287 chars)
+  [extract_single] >>> Zapotitlan Palmas 2016
+    [1/3] TXT (4132 chars)...
+    [CACHE] 3840 tokens cacheados de 5704
+      [ext_txt] Source PDF no encontrado para OAX_PREDIAL_2016_zapotitlan_palmas
+    [3/3] PDF visión (1pp)...
+    [OK] → data\oaxaca\_calibration\json_gpt54\2016\OAX_PREDIAL_2016_zapotitlan_palmas.json
+
+[7/50] fallback_ley_completa | OAX_PREDIAL_2021_zimatlan_de_alvarez.txt (6198 chars)
+  [extract_single] >>> Zimatlan De Alvarez 2021
+    [1/3] TXT (5956 chars)...
+    [CACHE] 3840 tokens cacheados de 6152
+      [ext_txt] Páginas no numéricas: start=, end=
+    [3/3] PDF visión (1pp)...
+    [OK] → data\oaxaca\_calibration\json_gpt54\2021\OAX_PREDIAL_2021_zimatlan_de_alvarez.json
+
+[8/50] fallback_ley_completa | OAX_PREDIAL_2013_villa_tejupam_de_la_union.txt (4563 chars)
+  [extract_single] >>> Villa Tejupam De La Union 2013
+    [1/3] TXT (4368 chars)...
+    [CACHE] 3840 tokens cacheados de 6108
+      [ext_txt] OAX_PREDIAL_2013_villa_tejupam_de_la_union no encontrado en segment.csv
+    [3/3] PDF visión (1pp)...
+    [OK] → data\oaxaca\_calibration\json_gpt54\2013\OAX_PREDIAL_2013_villa_tejupam_de_la_union.json
+
+[9/50] fallback_ley_completa | OAX_PREDIAL_2023_zapotitlan_lagunas.txt (15759 chars)
+  [extract_single] >>> Zapotitlan Lagunas 2023
+    [1/3] TXT (15281 chars)...
+    [CACHE] 3840 tokens cacheados de 9955
+      [ext_txt] Páginas no numéricas: start=, end=
+    [3/3] PDF visión (3pp)...
+    [OK] → data\oaxaca\_calibration\json_gpt54\2023\OAX_PREDIAL_2023_zapotitlan_lagunas.json
+
+[10/50] fallback_ley_completa | OAX_PREDIAL_2015_zapotitlan_lagunas.txt (25467 chars)
+  [extract_single] >>> Zapotitlan Lagunas 2015
+    [1/3] TXT (24520 chars)...
+    [CACHE] 3840 tokens cacheados de 11408
+      [ext_txt] Páginas no numéricas: start=, end=
+    [3/3] PDF visión (4pp)...
+    [OK] → data\oaxaca\_calibration\json_gpt54\2015\OAX_PREDIAL_2015_zapotitlan_lagunas.json
+
+[11/50] fallback_ley_completa | OAX_PREDIAL_2025_yaxe.txt (5450 chars)
+  [extract_single] >>> Yaxe 2025
+    [1/3] TXT (5247 chars)...
+    [CACHE] 3840 tokens cacheados de 6004
+      [ext_txt] Páginas no numéricas: start=, end=
+    [3/3] PDF visión (1pp)...
+    [OK] → data\oaxaca\_calibration\json_gpt54\2025\OAX_PREDIAL_2025_yaxe.json
+
+[12/50] fallback_ley_completa | OAX_PREDIAL_2018_zimatlan_de_alvarez.txt (31199 chars)
+  [extract_single] >>> Zimatlan De Alvarez 2018
+    [1/3] TXT (30231 chars)...
+    [CACHE] 3840 tokens cacheados de 11665
+      [ext_txt] Páginas no numéricas: start=, end=
+    [3/3] PDF tiene 39 páginas, skip
+    [OK] → data\oaxaca\_calibration\json_gpt54\2018\OAX_PREDIAL_2018_zimatlan_de_alvarez.json
+
+[13/50] fallback_ley_completa | OAX_PREDIAL_2011_yogana.txt (20054 chars)
+  [extract_single] >>> Yogana 2011
+    [1/3] TXT (19330 chars)...
+    [CACHE] 3840 tokens cacheados de 9720
+      [ext_txt] Páginas no numéricas: start=, end=
+    [3/3] PDF visión (4pp)...
+    [OK] → data\oaxaca\_calibration\json_gpt54\2011\OAX_PREDIAL_2011_yogana.json
+
+[14/50] fallback_ley_completa | OAX_PREDIAL_2010_zimatlan_de_alvarez.txt (3937 chars)
+  [extract_single] >>> Zimatlan De Alvarez 2010
+    [1/3] TXT (3772 chars)...
+    [CACHE] 3840 tokens cacheados de 5667
+      [ext_txt] Páginas no numéricas: start=, end=
+    [3/3] PDF visión (1pp)...
+    [OK] → data\oaxaca\_calibration\json_gpt54\2010\OAX_PREDIAL_2010_zimatlan_de_alvarez.json
+
+[15/50] fallback_ley_completa | OAX_PREDIAL_2042_acimas_establece_el_arficiso_117_traccion_il_segundo_parralo_de_la_constitucion_politica_trujano.txt (15661 chars)
+  [extract_single] >>> Acimas Establece El Arficiso 117 Traccion Il Segundo Parralo De La Constitucion Politica Trujano 2042
+    [1/3] TXT (15115 chars)...
+    [CACHE] 3840 tokens cacheados de 9235
+    [OK] → data\oaxaca\_calibration\json_gpt54\2042\OAX_PREDIAL_2042_acimas_establece_el_arficiso_117_traccion_il_segundo_parralo_de_la_constitucion_politica_trujano.json
+
+[16/50] seccion_predial | OAX_PREDIAL_2018_zapotitlan_palmas.txt (2220 chars)
+  [extract_single] >>> Zapotitlan Palmas 2018
+    [1/3] TXT (2139 chars)...
+    [CACHE] 3840 tokens cacheados de 5205
+    [OK] → data\oaxaca\_calibration\json_gpt54\2018\OAX_PREDIAL_2018_zapotitlan_palmas.json
+
+[17/50] seccion_predial | OAX_PREDIAL_2024_zimatlan_de_alvarez.txt (41281 chars)
+  [extract_single] >>> Zimatlan De Alvarez 2024
+    [1/3] TXT (39791 chars)...
+    [CACHE] 3840 tokens cacheados de 15583
+      [ext_txt] Páginas no numéricas: start=, end=
+    [3/3] PDF visión (9pp)...
+    [3/3] PDF → válido ✓
+    [OK] → data\oaxaca\_calibration\json_gpt54\2024\OAX_PREDIAL_2024_zimatlan_de_alvarez.json
+
+[18/50] seccion_predial | OAX_PREDIAL_2017_zapotitlan_palmas.txt (12672 chars)
+  [extract_single] >>> Zapotitlan Palmas 2017
+    [1/3] TXT (12226 chars)...
+    [CACHE] 3840 tokens cacheados de 7687
+    [OK] → data\oaxaca\_calibration\json_gpt54\2017\OAX_PREDIAL_2017_zapotitlan_palmas.json
+
+[19/50] seccion_predial | OAX_PREDIAL_2025_zimatlan_de_alvarez.txt (36312 chars)
+  [extract_single] >>> Zimatlan De Alvarez 2025
+    [1/3] TXT (35067 chars)...
+    [CACHE] 3840 tokens cacheados de 14227
+    [OK] → data\oaxaca\_calibration\json_gpt54\2025\OAX_PREDIAL_2025_zimatlan_de_alvarez.json
+
+[20/50] seccion_predial | OAX_PREDIAL_2019_yogana.txt (2489 chars)
+  [extract_single] >>> Yogana 2019
+    [1/3] TXT (2391 chars)...
+    [CACHE] 3840 tokens cacheados de 5233
+    [OK] → data\oaxaca\_calibration\json_gpt54\2019\OAX_PREDIAL_2019_yogana.json
+
+[21/50] seccion_predial | OAX_PREDIAL_2020_zimatlan_de_alvarez.txt (14325 chars)
+  [extract_single] >>> Zimatlan De Alvarez 2020
+    [1/3] TXT (13824 chars)...
+    [CACHE] 3840 tokens cacheados de 7879
+      [ext_txt] Páginas no numéricas: start=, end=
+    [3/3] PDF visión (3pp)...
+    [3/3] PDF → válido ✓
+    [OK] → data\oaxaca\_calibration\json_gpt54\2020\OAX_PREDIAL_2020_zimatlan_de_alvarez.json
+
+[22/50] seccion_predial | OAX_PREDIAL_2022_zapotitlan_palmas.txt (2451 chars)
+  [extract_single] >>> Zapotitlan Palmas 2022
+    [1/3] TXT (2361 chars)...
+    [CACHE] 3840 tokens cacheados de 5252
+    [OK] → data\oaxaca\_calibration\json_gpt54\2022\OAX_PREDIAL_2022_zapotitlan_palmas.json
+
+[23/50] seccion_predial | OAX_PREDIAL_2026_santa_ana_yareni.txt (3514 chars)
+  [extract_single] >>> Santa Ana Yareni 2026
+    [1/3] TXT (3392 chars)...
+    [CACHE] 3840 tokens cacheados de 5521
+    [OK] → data\oaxaca\_calibration\json_gpt54\2026\OAX_PREDIAL_2026_santa_ana_yareni.json
+
+[24/50] seccion_predial | OAX_PREDIAL_2015_zapotitlan_palmas.txt (2659 chars)
+  [extract_single] >>> Zapotitlan Palmas 2015
+    [1/3] TXT (2550 chars)...
+    [CACHE] 3840 tokens cacheados de 5332
+    [OK] → data\oaxaca\_calibration\json_gpt54\2015\OAX_PREDIAL_2015_zapotitlan_palmas.json
+
+[25/50] seccion_predial | OAX_PREDIAL_2021_yutanduchi_de_guerrero.txt (11022 chars)
+  [extract_single] >>> Yutanduchi De Guerrero 2021
+    [1/3] TXT (10589 chars)...
+    [CACHE] 3840 tokens cacheados de 7522
+      [ext_txt] Páginas no numéricas: start=, end=
+    [3/3] PDF visión (3pp)...
+    [OK] → data\oaxaca\_calibration\json_gpt54\2021\OAX_PREDIAL_2021_yutanduchi_de_guerrero.json
+
+[26/50] seccion_predial | OAX_PREDIAL_2023_zapotitlan_palmas.txt (2175 chars)
+  [extract_single] >>> Zapotitlan Palmas 2023
+    [1/3] TXT (2093 chars)...
+    [CACHE] 3840 tokens cacheados de 5184
+    [OK] → data\oaxaca\_calibration\json_gpt54\2023\OAX_PREDIAL_2023_zapotitlan_palmas.json
+
+[27/50] seccion_predial | OAX_PREDIAL_2016_zapotitlan_lagunas.txt (6424 chars)
+  [extract_single] >>> Zapotitlan Lagunas 2016
+    [1/3] TXT (6139 chars)...
+    [CACHE] 3840 tokens cacheados de 6533
+    [OK] → data\oaxaca\_calibration\json_gpt54\2016\OAX_PREDIAL_2016_zapotitlan_lagunas.json
+
+[28/50] impuesto_predial | OAX_PREDIAL_2013_zapotitlan_palmas.txt (2197 chars)
+  [extract_single] >>> Zapotitlan Palmas 2013
+    [1/3] TXT (2106 chars)...
+    [CACHE] 3840 tokens cacheados de 5189
+    [OK] → data\oaxaca\_calibration\json_gpt54\2013\OAX_PREDIAL_2013_zapotitlan_palmas.json
+
+[29/50] impuesto_predial | OAX_PREDIAL_2015_villa_talea_de_castro.txt (2349 chars)
+  [extract_single] >>> Villa Talea De Castro 2015
+    [1/3] TXT (2251 chars)...
+    [CACHE] 3840 tokens cacheados de 5315
+    [OK] → data\oaxaca\_calibration\json_gpt54\2015\OAX_PREDIAL_2015_villa_talea_de_castro.json
+
+[30/50] impuesto_predial | OAX_PREDIAL_2010_zapotitlan_del_rio.txt (1744 chars)
+  [extract_single] >>> Zapotitlan Del Rio 2010
+    [1/3] TXT (1673 chars)...
+    [CACHE] 3840 tokens cacheados de 5087
+      [ext_txt] Páginas no numéricas: start=, end=
+    [3/3] PDF visión (1pp)...
+    [3/3] PDF → válido ✓
+    [OK] → data\oaxaca\_calibration\json_gpt54\2010\OAX_PREDIAL_2010_zapotitlan_del_rio.json
+
+[31/50] impuesto_predial | OAX_PREDIAL_2042_san_agustin_etla.txt (2581 chars)
+  [extract_single] >>> San Agustin Etla 2042
+    [1/3] TXT (2494 chars)...
+    [CACHE] 3840 tokens cacheados de 5292
+    [OK] → data\oaxaca\_calibration\json_gpt54\2042\OAX_PREDIAL_2042_san_agustin_etla.json
+
+[32/50] impuesto_predial | OAX_PREDIAL_2020_yaxe.txt (11192 chars)
+  [extract_single] >>> Yaxe 2020
+    [1/3] TXT (10895 chars)...
+    [CACHE] 3840 tokens cacheados de 8501
+      [ext_txt] Páginas no numéricas: start=, end=
+    [3/3] PDF visión (3pp)...
+    [OK] → data\oaxaca\_calibration\json_gpt54\2020\OAX_PREDIAL_2020_yaxe.json
+
+[33/50] impuesto_predial | OAX_PREDIAL_2019_zimatlan_de_alvarez.txt (21429 chars)
+  [extract_single] >>> Zimatlan De Alvarez 2019
+    [1/3] TXT (20749 chars)...
+    [CACHE] 3840 tokens cacheados de 9492
+      [ext_txt] Páginas no numéricas: start=, end=
+    [3/3] PDF visión (4pp)...
+    [OK] → data\oaxaca\_calibration\json_gpt54\2019\OAX_PREDIAL_2019_zimatlan_de_alvarez.json
+
+[34/50] impuesto_predial | OAX_PREDIAL_2021_villa_talea_de_castro.txt (6390 chars)
+  [extract_single] >>> Villa Talea De Castro 2021
+    [1/3] TXT (6122 chars)...
+    [CACHE] 3840 tokens cacheados de 6183
+      [ext_txt] Páginas no numéricas: start=, end=
+    [3/3] PDF visión (2pp)...
+    [OK] → data\oaxaca\_calibration\json_gpt54\2021\OAX_PREDIAL_2021_villa_talea_de_castro.json
+
+[35/50] impuesto_predial | OAX_PREDIAL_2025_zapotitlan_palmas.txt (2466 chars)
+  [extract_single] >>> Zapotitlan Palmas 2025
+    [1/3] TXT (2377 chars)...
+    [CACHE] 3840 tokens cacheados de 5252
+    [OK] → data\oaxaca\_calibration\json_gpt54\2025\OAX_PREDIAL_2025_zapotitlan_palmas.json
+
+[36/50] impuesto_predial | OAX_PREDIAL_2024_zapotitlan_palmas.txt (2403 chars)
+  [extract_single] >>> Zapotitlan Palmas 2024
+    [1/3] TXT (2321 chars)...
+    [CACHE] 3840 tokens cacheados de 5226
+    [OK] → data\oaxaca\_calibration\json_gpt54\2024\OAX_PREDIAL_2024_zapotitlan_palmas.json
+
+[37/50] impuesto_predial | OAX_PREDIAL_2022_zimatlan_de_alvarez.txt (48128 chars)
+  [extract_single] >>> Zimatlan De Alvarez 2022
+    [1/3] TXT (46322 chars)...
+    [CACHE] 3840 tokens cacheados de 17325
+    [OK] → data\oaxaca\_calibration\json_gpt54\2022\OAX_PREDIAL_2022_zimatlan_de_alvarez.json
+
+[38/50] impuesto_predial | OAX_PREDIAL_2016_zimatlan_de_alvarez.txt (12718 chars)
+  [extract_single] >>> Zimatlan De Alvarez 2016
+    [1/3] TXT (12222 chars)...
+    [CACHE] 3840 tokens cacheados de 8005
+    [OK] → data\oaxaca\_calibration\json_gpt54\2016\OAX_PREDIAL_2016_zimatlan_de_alvarez.json
+
+[39/50] impuesto_predial | OAX_PREDIAL_2014_yogana.txt (13599 chars)
+  [extract_single] >>> Yogana 2014
+    [1/3] TXT (13107 chars)...
+    [CACHE] 3840 tokens cacheados de 8381
+    [OK] → data\oaxaca\_calibration\json_gpt54\2014\OAX_PREDIAL_2014_yogana.json
+
+[40/50] capitulo_patrimonio | OAX_PREDIAL_2023_san_pedro_juchatengo.txt (12676 chars)
+  [extract_single] >>> San Pedro Juchatengo 2023
+    [1/3] TXT (12228 chars)...
+    [CACHE] 3840 tokens cacheados de 7790
+    [OK] → data\oaxaca\_calibration\json_gpt54\2023\OAX_PREDIAL_2023_san_pedro_juchatengo.json
+
+[41/50] capitulo_patrimonio | OAX_PREDIAL_2015_zimatlan_de_alvarez.txt (17397 chars)
+  [extract_single] >>> Zimatlan De Alvarez 2015
+    [1/3] TXT (16802 chars)...
+    [CACHE] 3840 tokens cacheados de 9122
+    [OK] → data\oaxaca\_calibration\json_gpt54\2015\OAX_PREDIAL_2015_zimatlan_de_alvarez.json
+
+[42/50] capitulo_patrimonio | OAX_PREDIAL_2022_san_jose_ayuquila.txt (2775 chars)
+  [extract_single] >>> San Jose Ayuquila 2022
+    [1/3] TXT (2666 chars)...
+    [CACHE] 3968 tokens cacheados de 5349
+    [OK] → data\oaxaca\_calibration\json_gpt54\2022\OAX_PREDIAL_2022_san_jose_ayuquila.json
+
+[43/50] capitulo_patrimonio | OAX_PREDIAL_2019_villa_de_etla.txt (21163 chars)
+  [extract_single] >>> Villa De Etla 2019
+    [1/3] TXT (20368 chars)...
+    [CACHE] 3840 tokens cacheados de 9915
+    [OK] → data\oaxaca\_calibration\json_gpt54\2019\OAX_PREDIAL_2019_villa_de_etla.json
+
+[44/50] capitulo_patrimonio | OAX_PREDIAL_2017_villa_de_santiago_chazumba.txt (4235 chars)
+  [extract_single] >>> Villa De Santiago Chazumba 2017
+    [1/3] TXT (4084 chars)...
+    [CACHE] 3840 tokens cacheados de 5760
+    [OK] → data\oaxaca\_calibration\json_gpt54\2017\OAX_PREDIAL_2017_villa_de_santiago_chazumba.json
+
+[45/50] capitulo_patrimonio | OAX_PREDIAL_2025_soledad_etla.txt (11109 chars)
+  [extract_single] >>> Soledad Etla 2025
+    [1/3] TXT (10676 chars)...
+    [CACHE] 3840 tokens cacheados de 7504
+    [OK] → data\oaxaca\_calibration\json_gpt54\2025\OAX_PREDIAL_2025_soledad_etla.json
+
+[46/50] capitulo_patrimonio | OAX_PREDIAL_2020_san_juan_colorado.txt (3079 chars)
+  [extract_single] >>> San Juan Colorado 2020
+    [1/3] TXT (2948 chars)...
+    [CACHE] 3840 tokens cacheados de 5419
+      [ext_txt] Páginas no numéricas: start=, end=
+    [3/3] PDF visión (1pp)...
+    [3/3] PDF → válido ✓
+    [OK] → data\oaxaca\_calibration\json_gpt54\2020\OAX_PREDIAL_2020_san_juan_colorado.json
+
+[47/50] capitulo_patrimonio | OAX_PREDIAL_2016_villa_sola_de_vega.txt (12750 chars)
+  [extract_single] >>> Villa Sola De Vega 2016
+    [1/3] TXT (12232 chars)...
+    [CACHE] 3840 tokens cacheados de 8063
+    [OK] → data\oaxaca\_calibration\json_gpt54\2016\OAX_PREDIAL_2016_villa_sola_de_vega.json
+
+[48/50] apartado_predial | OAX_PREDIAL_2013_soledad_etla.txt (2204 chars)
+  [extract_single] >>> Soledad Etla 2013
+    [1/3] TXT (2123 chars)...
+    [CACHE] 3840 tokens cacheados de 5198
+    [OK] → data\oaxaca\_calibration\json_gpt54\2013\OAX_PREDIAL_2013_soledad_etla.json
+
+[49/50] apartado_predial | OAX_PREDIAL_2016_santa_maria_huatulco.txt (28099 chars)
+  [extract_single] >>> Santa Maria Huatulco 2016
+    [1/3] TXT (27231 chars)...
+    [CACHE] 3840 tokens cacheados de 11359
+    [OK] → data\oaxaca\_calibration\json_gpt54\2016\OAX_PREDIAL_2016_santa_maria_huatulco.json
+
+[50/50] articulo_predial | OAX_PREDIAL_2016_cosoltepec.txt (12668 chars)
+  [extract_single] >>> Cosoltepec 2016
+    [1/3] TXT (12217 chars)...
+    [CACHE] 3840 tokens cacheados de 8077
+      [ext_txt] Source PDF no encontrado para OAX_PREDIAL_2016_cosoltepec
+    [3/3] PDF visión (3pp)...
+    [OK] → data\oaxaca\_calibration\json_gpt54\2016\OAX_PREDIAL_2016_cosoltepec.json
+
+
+══════ RESUMEN gpt-5.4 ══════
+método                       total  válido  descon  fail
+fallback_ley_completa           15       1      14     0
+seccion_predial                 12      11       1     0
+impuesto_predial                12       9       3     0
+capitulo_patrimonio              8       8       0     0
+apartado_predial                 2       2       0     0
+articulo_predial                 1       0       1     0
