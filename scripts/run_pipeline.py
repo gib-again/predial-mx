@@ -26,28 +26,31 @@ import time
 from src.estados import get_adapter, list_estados
 
 STEPS_ORDERED = [
-    "download", "ocr", "master", "segment", "segment-audit",
+    "discover", "download", "ocr",
+    "master", "segment", "segment-audit",
     "extract", "validate", "audit",
 ]
 
 STEP_METHODS = {
-    "download":      lambda a, **kw: a.download(),
-    "ocr":           lambda a, **kw: a.run_ocr(
-                         year=kw.get("year"),
-                         force_reocr=kw.get("force_reocr", False),
-                         clean_watermark=kw.get("clean_watermark", True),
-                         threshold=kw.get("threshold"),
-                         limit=kw.get("limit"),
-                     ),
-    "master":        lambda a, **kw: a.build_master(),
-    "segment":       lambda a, **kw: (
-                         a.extract_predial_sections(year=kw["year"])
-                         if kw.get("year") else a.extract_predial_sections()
-                     ),
-    "segment-audit": lambda a, **kw: a.run_segment_audit(),
-    "extract":       lambda a, **kw: a.run_llm_extraction(batch_mode=kw.get("batch", False)),
-    "validate":      lambda a, **kw: a.run_validation(),
-    "audit":         lambda a, **kw: a.run_audit(),
+    "discover":       lambda a, **kw: a.discover_leyes(),
+    "download":       lambda a, **kw: a.download(),
+    "ocr":            lambda a, **kw: a.run_ocr(
+                          year=kw.get("year"),
+                          force_reocr=kw.get("force_reocr", False),
+                          clean_watermark=kw.get("clean_watermark", True),
+                          threshold=kw.get("threshold"),
+                          limit=kw.get("limit"),
+                          source_csv=kw.get("source_csv"),
+                      ),
+    "master":         lambda a, **kw: a.build_master(),
+    "segment":        lambda a, **kw: (
+                          a.extract_predial_sections(year=kw["year"])
+                          if kw.get("year") else a.extract_predial_sections()
+                      ),
+    "segment-audit":  lambda a, **kw: a.run_segment_audit(),
+    "extract":        lambda a, **kw: a.run_llm_extraction(batch_mode=kw.get("batch", False)),
+    "validate":       lambda a, **kw: a.run_validation(),
+    "audit":          lambda a, **kw: a.run_audit(),
 }
 
 
@@ -61,6 +64,7 @@ def run_estado(
     clean_watermark: bool = True,
     threshold: int | None = None,
     limit: int | None = None,
+    source_csv=None,
 ):
     adapter = get_adapter(estado_slug)
 
@@ -94,6 +98,7 @@ def run_estado(
                 clean_watermark=clean_watermark,
                 threshold=threshold,
                 limit=limit,
+                source_csv=source_csv,
             )
         except Exception as e:
             print(f"\n  [ERROR] {step}: {e}")
@@ -125,6 +130,9 @@ def main():
                              "Default calibrado: 140. Útil para iterar en calibración.")
     parser.add_argument("--limit", type=int, default=None,
                         help="Procesa sólo los primeros N PDFs del paso ocr (calibración).")
+    parser.add_argument("--source-csv", default=None,
+                        help="source_documents.csv (Sonora v3). Si se pasa al "
+                             "paso ocr, procesa solo los PDFs ahí listados.")
     args = parser.parse_args()
 
     # ── Determinar pasos ──
@@ -161,6 +169,8 @@ def main():
     # ── Ejecutar ──
     t_total = time.time()
     for estado in estados:
+        from pathlib import Path as _Path
+        source_csv_arg = _Path(args.source_csv) if args.source_csv else None
         run_estado(
             estado,
             steps,
@@ -170,6 +180,7 @@ def main():
             clean_watermark=not args.no_clean_watermark,
             threshold=args.threshold,
             limit=args.limit,
+            source_csv=source_csv_arg,
         )
 
     elapsed_total = time.time() - t_total

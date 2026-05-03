@@ -21,9 +21,11 @@ Particularidades del marco legal, fuente de datos, procesamiento y pipeline de c
 | 11 | Guanajuato | 11 | 46 | Sí | Ley de ingresos por municipio (PO) → OCR → segmentación 2 niveles → LLM | ~736 |
 | 12 | Oaxaca | 20 | 570 | Sí | Ley de ingresos por municipio (PO) → OCR + watermark cleanup → segmentación → LLM | en curso |
 | 13 | San Luis Potosí | 24 | 58 | Sí* | Ley de ingresos por municipio (PO API JSON) → OCR adaptativo → segmentación → LLM | en curso |
+| 14 | Sonora | 26 | 72 | Sí* | Boletín Oficial (scraping HTML índice Joomla) → OCR adaptativo → segmentación → LLM | en curso |
 
 \* Yucatán: PDFs digitales en su mayoría; algunas tablas de tarifa son imágenes embebidas que requieren OCR selectivo.
 \* San Luis Potosí: OCR adaptativo (sólo se aplica a PDFs con < 300 chars/página promedio; 2017+ son nativos y se saltan).
+\* Sonora: OCR adaptativo (mismo umbral que SLP; los boletines de la era nueva 2019+ son nativos y se saltan, los antiguos pueden ser escaneos).
 
 ---
 
@@ -170,6 +172,32 @@ Particularidades del marco legal, fuente de datos, procesamiento y pipeline de c
     como imagen al LLM con +1 página extra por si faltaba contenido
   - Primer estado en usar structured output; la funcionalidad quedó en src/core/llm_extract.py
     para beneficio de todos los estados
+
+### Sonora
+- **CVE_ENT**: 26 | **Municipios**: 72 | **Periodo**: 2010-2025
+- **Fuente**: Boletín Oficial del Estado de Sonora
+- **URL del PO**: https://boletinoficial.sonora.gob.mx (Joomla, sppagebuilder)
+  - Índice anual: `?option=com_sppagebuilder&view=page&id={id_joomla}` (ID descubierto por barrido + match en `<title>`/`<h1>`)
+  - Patrones de URL de PDFs:
+    - Era nueva (2019+): `/images/boletines/{YEAR}/12/{YEAR}{TOMO}{NUM}{SECC}.pdf`
+    - Era antigua (≤2018): `/boletin/images/boletinesPdf/{YEAR}/12/{YEAR}{TOMO}{NUM}{SECC}.pdf`
+    - Edición Especial: `/images/boletines/{YEAR}/12/EE{ddmmaaaa}{seq}.pdf`
+- **OCR necesario**: Adaptativo (mismo umbral SLP: 300 chars/pág). Esperamos era nueva 2019+ como nativos y boletines ≤2018 posiblemente escaneados.
+- **Marco legal**: Ley de Ingresos y Presupuesto de Ingresos del Ayuntamiento del Municipio de X, Sonora, publicada en boletines especiales del 24-31 de diciembre del año N-1. Cada sección romana del boletín = 1 municipio.
+- **Segmentación**: Un nivel (1 PDF = 1 ley municipal completa). Patrones priorizados:
+  1. `TÍTULO SEGUNDO + CAPÍTULO PRIMERO + Impuesto Predial` (canónico)
+  2. `CAPÍTULO PRIMERO + Impuesto Predial` (sin contexto previo)
+  3. `ARTÍCULO N + el impuesto predial se causará/calculará`
+  4. `IMPUESTO PREDIAL` como cabecera (fallback genérico)
+- **Resolución de PDF**: la segmentación prefiere `pdf_ocr/{año}/{stem}_ocr.pdf` cuando existe; cae al `pdf_raw/` original en caso contrario.
+- **Particularidades**:
+  - El sitio bloquea con HTTP 403 a User-Agents no-navegador → se envía UA realista de Chrome.
+  - Estructura predial: cuota fija + tasa progresiva al millar por rangos de valor catastral; rústicos por cuota fija por hectárea (ej. $450/ha en Cajeme 2024); mínimo en UMA desde 2017.
+  - El esquema `tabla_progresiva` (con `cuota_fija` + `tasa_marginal` por fila) ya soporta este caso vía `src/core/schemas.py` → no requiere extensión.
+  - Tomos romanos cambian cada año (CCII=2018, CCXII=2023, CCXIV=2024, CCXV=2025, CCXVII=2026).
+  - Mapeo `año_pub → id_joomla` se descubre vía barrido adyacente desde semillas conocidas (ver `config.ID_JOOMLA_POR_ANIO_PUB`).
+  - Si el HTML del índice viene vacío de `<a href>` a PDFs (caso poco probable en sppagebuilder), upgrade documentado a Playwright.
+- **Cobertura objetivo**: 2010-2025 (15 ejercicios) × 72 municipios = 1,080 leyes potenciales. Datos reales pendientes tras primera corrida.
 
 ---
 

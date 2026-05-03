@@ -49,3 +49,4 @@ import src.estados.tabasco   # noqa: F401, E402
 import src.estados.guanajuato # noqa: F401, E402
 import src.estados.oaxaca     # noqa: F401, E402
 import src.estados.sanluispotosi  # noqa: F401, E402
+import src.estados.sonora  # noqa: F401, E402

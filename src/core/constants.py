@@ -13,4 +13,5 @@ PREFIJOS_ESTADO = {
     "chihuahua": "CHIH",
     "guanajuato": "GTO",
     "sanluispotosi": "SLP",
+    "sonora":     "SON",
 }

@@ -57,6 +57,7 @@ r"IMPUESTO\s+SOBRE\s+ESPECT[AÁ]CULOS"
 | Tabasco | progresivo | 5 rangos, estática desde 1995 |
 | Guanajuato | tarifa_millar | Con cuota_fija_adicional en algunos |
 | Oaxaca | — | Recién agregado |
+| Sonora | mixto | Cuota fija + tasa al millar por rangos; rústicos por hectárea; UMA desde 2017 |
 
 ## Trampas comunes en segmentación
 
