@@ -41,9 +41,45 @@ class SanluispotosiAdapter(EstadoAdapter):
     def ejercicio_range(self) -> range:
         return range(config.YEAR_MIN, config.YEAR_MAX + 1)
 
-    def download(self) -> Path:
+    def download(self, **kwargs) -> Path:
+        """
+        Pipeline de descarga multi-fuente:
+
+          1. Ruta B: PO con rango ancho (recupera huecos parciales 2012-2020/22).
+          2. Ruta A: Congreso del Estado SLP via Playwright (rescata 2010-2011).
+          3. Ruta C: Wayback Machine (best effort para IDs irrecuperables).
+
+        Args (kwargs):
+            mode (str): "wide" (default, recomendado) o "per_year" (legacy).
+            routes (list[str] | None): subconjunto de ["po", "congreso", "wayback"].
+                Default: ["po"] solamente. Las otras rutas se invocan de forma
+                explícita por el usuario o por el pipeline orquestador.
+            target_years (list[int] | None): para Congreso/Wayback, restringir años.
+            force_reocr: ignorado en download (solo aplica a OCR).
+        """
         from src.estados.sanluispotosi.download import run_download
-        return run_download(self)
+
+        mode = kwargs.get("mode", "wide")
+        routes = kwargs.get("routes") or ["po"]
+        target_years = kwargs.get("target_years")
+
+        last_index = None
+        if "po" in routes:
+            last_index = run_download(self, mode=mode)
+
+        if "congreso" in routes:
+            from src.estados.sanluispotosi.download_congreso import (
+                run_download_congreso,
+            )
+            last_index = run_download_congreso(self, target_years=target_years)
+
+        if "wayback" in routes:
+            from src.estados.sanluispotosi.download_wayback import (
+                run_download_wayback,
+            )
+            last_index = run_download_wayback(self, target_years=target_years)
+
+        return last_index or self.meta_dir / "ley_ingresos_index.csv"
 
     def run_ocr(self, **kwargs):
         """OCR adaptativo: sólo procesa PDFs escaneados (chars/pág < threshold)."""

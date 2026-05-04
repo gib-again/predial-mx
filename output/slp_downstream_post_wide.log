@@ -1,0 +1,40 @@
+
+############################################################
+  ESTADO: SANLUISPOTOSI
+  Ejercicios: 2010–2025
+  OCR: sí
+  Pasos: ocr, segment
+############################################################
+
+────────────────────────────────────────
+  Paso: ocr
+────────────────────────────────────────
+═══ San Luis Potosí: OCR adaptativo ═══
+    Threshold: 300 chars/página promedio
+    Total PDFs candidatos: 578
+
+  ── Resumen OCR ──
+  Nativos (saltados):  501
+  OCR procesados:      0
+  Ya OCR'd (saltados): 77
+  Errores:             0
+  Log: data\sanluispotosi\meta\ocr_log.csv
+  ✓ ocr completado en 16.2s
+
+────────────────────────────────────────
+  Paso: segment
+────────────────────────────────────────
+═══ San Luis Potosí: Segmentación predial ═══
+
+  ── Resumen segmentación ──
+  Total:    578
+  Exacta:   575
+  Fallback: 3
+  Errores:  0
+  Desde OCR: 77
+  Bitácora: data\sanluispotosi\meta\segment.csv
+  ✓ segment completado en 109.7s
+
+============================================================
+  ✓ Pipeline completado para 1 estado(s) en 125.9s
+============================================================

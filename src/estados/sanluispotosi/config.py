@@ -31,6 +31,37 @@ API_BUSQUEDA = f"{BASE_URL}/api/publicacion/busqueda/filtro/gt"
 API_DOC = f"{BASE_URL}/api/publicacion/imprimir/guest/{{id}}/documento"
 PALABRA = "ley de ingresos"
 
+# Cascada de endpoints PDF para reintentos (la app web del PO los rota
+# silenciosamente cuando el primero da 404). Probado contra IDs históricos.
+FALLBACK_PDF_ENDPOINTS = [
+    f"{BASE_URL}/api/publicacion/imprimir/guest/{{id}}/documento",  # principal
+    f"{BASE_URL}/api/publicacion/imprimir/{{id}}/documento",        # sin "guest"
+    f"{BASE_URL}/api/publicacion/{{id}}/pdf",                       # legacy
+    f"{BASE_URL}/publicacion/{{id}}/pdf",                           # sin /api
+    f"{BASE_URL}/storage/publicaciones/{{id}}.pdf",                 # static Laravel
+]
+
+# Rango "ancho" para barrido histórico en una sola query — replica el
+# comportamiento que la SPA del PO usa por defecto. Capturado en
+# catalogs/curl_slp.txt. La hipótesis es que la API no expone los mismos
+# resultados con ventanas estrechas que con esta consulta global.
+WIDE_FECHA_INICIO = "1857-06-06"
+WIDE_FECHA_FIN = "2026-12-31"
+
+# ── Congreso del Estado de SLP (Ruta A — Playwright) ──
+# Sitio del Congreso Local. Su listado de leyes municipales sirve como
+# fuente alterna para 2010-2011 (cuyos PDFs ya no existen en el backend
+# del PO). El sitio está protegido por Sucuri Cloud Proxy con challenge
+# JavaScript: requiere navegador real (Playwright).
+BASE_URL_CONGRESO = "https://www.congresosanluis.gob.mx"
+URL_CONGRESO_LEYES = f"{BASE_URL_CONGRESO}/legislacion/leyes"
+
+# ── Wayback Machine (Ruta C — best effort) ──
+WAYBACK_AVAILABILITY_API = "https://archive.org/wayback/available"
+WAYBACK_REPLAY_BASE = "https://web.archive.org/web"
+# Backoff conservador: vimos 503s en pruebas; prefieren rate < 1 req/s.
+WAYBACK_THROTTLE_SECONDS = 8.0
+
 # ── Headers HTTP ──
 USER_AGENT = "Mozilla/5.0 (compatible; PredialMX/1.0)"
 REQUESTS_KWARGS = {"timeout": 60, "verify": True}
