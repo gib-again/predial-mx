@@ -1,6 +1,6 @@
 {
   "predial": {
-    "tipo_esquema": "tarifa_millar",
+    "tipo_esquema": "mixto",
     "tabla": [
       {
         "grupo": "urbano",
@@ -36,11 +36,11 @@
       }
     ],
     "minimo_predial": null,
-    "comentarios": "Artículo 4 establece tasas categóricas anuales sobre el valor catastral: urbanos con edificaciones 0.234%, suburbanos con edificaciones 0.207%, urbanos y suburbanos sin edificaciones con tabla progresiva por valor; y rústicos 0.18%. Se transcribe la mecánica principal como tarifa_millar por categorías. La fracción III contiene además una tabla de tasas progresivas para inmuebles urbanos y suburbanos sin edificaciones, pero el texto OCR está dañado y no permite reconstruir con seguridad sus brackets; por ello no se clasifica esa subtabla aparte. Artículo 4 también señala que la tabla de tasas progresivas se aplica a inmuebles con menos del 5% de construcción respecto de la superficie total del terreno."
+    "comentarios": "[treatment_audit:override_tipo tarifa_millar→mixto] La sección es identica al año anterior, el LLM se confundió ya que no es progresividad por valor, si no por M2 del predio Comentario original: Artículo 4 establece tasas categóricas anuales sobre el valor catastral: urbanos con edificaciones 0.234%, suburbanos con edificaciones 0.207%, urbanos y suburbanos sin edificaciones con tabla progresiva por valor; y rústicos 0.18%. Se transcribe la mecánica principal como tarifa_millar por categorías. La fracción III contiene además una tabla de tasas progresivas para inmuebles urbanos y suburbanos sin edificaciones, pero el texto OCR está dañado y no permite reconstruir con seguridad sus brackets; por ello no se clasifica esa subtabla aparte. Artículo 4 también señala que la tabla de tasas progresivas se aplica a inmuebles con menos del 5% de construcción respecto de la superficie total del terreno."
   },
   "_meta": {
     "fuente": "txt",
-    "modelo": "gpt-5.4-mini"
+    "modelo": "audit_override[tarifa_millar->mixto|orig:gpt-5.4-mini]"
   },
   "_meta_v2": {
     "intentos": 1,
@@ -54,6 +54,13 @@
     },
     "cvegeo": "11003",
     "estado": "guanajuato",
-    "anio": 2018
+    "anio": 2018,
+    "treatment_audit_override": {
+      "old_tipo": "tarifa_millar",
+      "new_tipo": "mixto",
+      "auditor": "",
+      "fecha": "",
+      "notas": "La sección es identica al año anterior, el LLM se confundió ya que no es progresividad por valor, si no por M2 del predio"
+    }
   }
 }

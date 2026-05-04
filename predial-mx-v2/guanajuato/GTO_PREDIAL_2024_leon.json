@@ -1,8 +1,8 @@
 {
   "predial": {
-    "tipo_esquema": "desconocido",
+    "tipo_esquema": "mixto",
     "esquema_valido": false,
-    "comentarios": "Texto truncado o sin mecánica de cálculo del impuesto predial; solo contiene encabezados y paginación.",
+    "comentarios": "[treatment_audit:override_tipo desconocido→mixto] Auditor manual Comentario original: Texto truncado o sin mecánica de cálculo del impuesto predial; solo contiene encabezados y paginación.",
     "minimo_predial": null,
     "tabla_tarifa_millar": [],
     "tabla_progresiva": [],
@@ -12,6 +12,15 @@
   },
   "_meta": {
     "fuente": "txt",
-    "modelo": "gpt-5.4-mini"
+    "modelo": "audit_override[desconocido->mixto|orig:gpt-5.4-mini]"
+  },
+  "_meta_v2": {
+    "treatment_audit_override": {
+      "old_tipo": "desconocido",
+      "new_tipo": "mixto",
+      "auditor": "",
+      "fecha": "",
+      "notas": ""
+    }
   }
 }

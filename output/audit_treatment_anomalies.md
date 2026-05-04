@@ -11,29 +11,27 @@
 
 | Patrón | Munis | Significado |
 |---|---:|---|
-| `siempre_T` | 276 | tratado los 16 años — válido pero sin variación temporal |
-| `siempre_C` | 221 | control puro — válido como control |
-| `clean_onset` | 61 | C...CT...T — **caso ideal** para DiD absorbente |
-| `reversion_simple` | 15 | T...TC...C — REVERSIÓN, rompe absorbing |
-| `outlier_year_T_in_C` | 12 | CTC — un año T aislado en medio de control |
-| `outlier_year_C_in_T` | 12 | TCT — un año C aislado en medio de tratamiento |
-| `flip_x2[CTCT]` | 10 | patrón complejo, requiere revisión |
-| `flip_x2[TCTC]` | 4 | patrón complejo, requiere revisión |
-| `multi_flip[TCTCT]` | 2 | patrón complejo, requiere revisión |
-| `multi_flip[CTCTC]` | 1 | patrón complejo, requiere revisión |
+| `siempre_T` | 284 | tratado los 16 años — válido pero sin variación temporal |
+| `siempre_C` | 227 | control puro — válido como control |
+| `clean_onset` | 68 | C...CT...T — **caso ideal** para DiD absorbente |
+| `reversion_simple` | 16 | T...TC...C — REVERSIÓN, rompe absorbing |
+| `outlier_year_C_in_T` | 7 | TCT — un año C aislado en medio de tratamiento |
+| `outlier_year_T_in_C` | 6 | CTC — un año T aislado en medio de control |
+| `flip_x2[CTCT]` | 4 | patrón complejo, requiere revisión |
+| `flip_x2[TCTC]` | 2 | patrón complejo, requiere revisión |
 | `multi_flip[CTCTCT]` | 1 | patrón complejo, requiere revisión |
 
-**Munis a auditar**: 57 (con 166 años problemáticos)
+**Munis a auditar**: 36 (con 132 años problemáticos)
 
 ## Por motivo
 
 | Motivo | Conteo |
 |---|---:|
 | `reversion_T_to_C` | 82 |
-| `flip_minority_block_C_in_majority_T` | 30 |
-| `outlier_C_in_T` | 24 |
-| `outlier_T_in_C` | 16 |
-| `flip_minority_block_T_in_majority_C` | 14 |
+| `flip_minority_block_C_in_majority_T` | 22 |
+| `flip_minority_block_T_in_majority_C` | 13 |
+| `outlier_C_in_T` | 10 |
+| `outlier_T_in_C` | 5 |
 
 ## Cómo llenar el CSV
 
@@ -63,55 +61,18 @@ Trayectoria por año (2010-2025): `T`=tratamiento, `C`=control, `·`=sin dato.
 | 2011 | tarifa_millar | **C** | T | `flip_minority_block_C_in_majority_T` | gpt-5.4-mini | — |
 | 2025 | tarifa_millar | **C** | T | `flip_minority_block_C_in_majority_T` | gpt-5.4-mini | — |
 
-### 05036 Coahuila de Zaragoza — Viesca
-
-**Trayectoria** (2010-2025): `CCCCTCCCCCCCCCCC`
-**Patrón**: `outlier_year_T_in_C`
-
-| Año | tipo_actual | T/C | esperado | motivo | modelo | pdf · pág |
-|---:|---|:---:|:---:|---|---|---|
-| 2014 | mixto | **T** | C | `outlier_T_in_C` | gpt-5.4-mini | — |
-
-### 05037 Coahuila de Zaragoza — Villa Union
-
-**Trayectoria** (2010-2025): `CCCCTCCCCCCCCCCC`
-**Patrón**: `outlier_year_T_in_C`
-
-| Año | tipo_actual | T/C | esperado | motivo | modelo | pdf · pág |
-|---:|---|:---:|:---:|---|---|---|
-| 2014 | progresivo | **T** | C | `outlier_T_in_C` | gpt-5.4-mini | — |
-
-### 05038 Coahuila de Zaragoza — Zaragoza
-
-**Trayectoria** (2010-2025): `CCCCTCCCCCCCCCCC`
-**Patrón**: `outlier_year_T_in_C`
-
-| Año | tipo_actual | T/C | esperado | motivo | modelo | pdf · pág |
-|---:|---|:---:|:---:|---|---|---|
-| 2014 | progresivo | **T** | C | `outlier_T_in_C` | gpt-5.4-mini | — |
-
 ### 11017 Guanajuato — Irapuato
 
-**Trayectoria** (2010-2025): `CCCCCCCCCCTCTTTC`
-**Patrón**: `multi_flip[CTCTC]`
+**Trayectoria** (2010-2025): `CCCCCCCCCCTTTTTC`
+**Patrón**: `outlier_year_T_in_C`
 
 | Año | tipo_actual | T/C | esperado | motivo | modelo | pdf · pág |
 |---:|---|:---:|:---:|---|---|---|
-| 2020 | mixto | **T** | C | `outlier_T_in_C` | gpt-5.4-mini | 2019_13223_Periodico_Numero_260_... p.10-32 |
-| 2021 | desconocido | **C** | T | `outlier_C_in_T` | gpt-5.4-mini | — |
+| 2020 | mixto | **T** | C | `flip_minority_block_T_in_majority_C` | gpt-5.4-mini | 2019_13223_Periodico_Numero_260_... p.10-32 |
+| 2021 | mixto | **T** | C | `flip_minority_block_T_in_majority_C` | imputed_audit_directed[from_2020] | — |
 | 2022 | progresivo | **T** | C | `flip_minority_block_T_in_majority_C` | gpt-5.4-mini | 2021_14625_Periodico_Numero_260_... p.28-225 |
 | 2023 | mixto | **T** | C | `flip_minority_block_T_in_majority_C` | gpt-5.4-mini | 2022_15517_Periodico_Numero_260_... p.122-134 |
 | 2024 | progresivo | **T** | C | `flip_minority_block_T_in_majority_C` | gpt-5.4-mini | 2023_16371_Periodico_Numero_261_... p.58-70 |
-
-### 11020 Guanajuato — Leon
-
-**Trayectoria** (2010-2025): `TTTCTTTTTTTTTTCT`
-**Patrón**: `multi_flip[TCTCT]`
-
-| Año | tipo_actual | T/C | esperado | motivo | modelo | pdf · pág |
-|---:|---|:---:|:---:|---|---|---|
-| 2013 | otro_no_clasificado | **C** | T | `outlier_C_in_T` | audit_no_ley | — |
-| 2024 | desconocido | **C** | T | `outlier_C_in_T` | gpt-5.4-mini | — |
 
 ### 11031 Guanajuato — San Francisco del Rincon
 
@@ -121,15 +82,6 @@ Trayectoria por año (2010-2025): `T`=tratamiento, `C`=control, `·`=sin dato.
 | Año | tipo_actual | T/C | esperado | motivo | modelo | pdf · pág |
 |---:|---|:---:|:---:|---|---|---|
 | 2020 | progresivo | **T** | C | `outlier_T_in_C` | gpt-5.4-mini | 2019_13218_Periodico_Numero_260_... p.199-208 |
-
-### 11003 Guanajuato — San Miguel de Allende
-
-**Trayectoria** (2010-2025): `CCCCTTTTCTTTTTTT`
-**Patrón**: `flip_x2[CTCT]`
-
-| Año | tipo_actual | T/C | esperado | motivo | modelo | pdf · pág |
-|---:|---|:---:|:---:|---|---|---|
-| 2018 | tarifa_millar | **C** | T | `outlier_C_in_T` | gpt-5.4-mini | 2017_11504_Periodico_Número_225_... p.7-13 |
 
 ### 11042 Guanajuato — Valle de Santiago
 
@@ -174,15 +126,6 @@ Trayectoria por año (2010-2025): `T`=tratamiento, `C`=control, `·`=sin dato.
 |---:|---|:---:|:---:|---|---|---|
 | 2022 | progresivo | **T** | C | `outlier_T_in_C` | reclasified_v1[gpt-5.2] | — |
 | 2023 | otro_no_clasificado | **C** | T | `outlier_C_in_T` | reclasified_v1[gpt-5.2] | — |
-
-### 22005 Queretaro — Colon
-
-**Trayectoria** (2010-2025): `CCCCCCCTTTTTCTTT`
-**Patrón**: `flip_x2[CTCT]`
-
-| Año | tipo_actual | T/C | esperado | motivo | modelo | pdf · pág |
-|---:|---|:---:|:---:|---|---|---|
-| 2022 | desconocido | **C** | T | `outlier_C_in_T` | gpt-5.4-mini | QRO_RAW_202112111-01.pdf art.14 |
 
 ### 31003 Yucatan — Akil
 
@@ -229,25 +172,6 @@ Trayectoria por año (2010-2025): `T`=tratamiento, `C`=control, `·`=sin dato.
 | 2022 | tasa_unica | **C** | T | `flip_minority_block_C_in_majority_T` | gpt-5.4-mini | 2021\2021-12-31_3.pdf p.274-278 |
 | 2023 | tarifa_millar | **C** | T | `flip_minority_block_C_in_majority_T` | gpt-5.4-mini | 2022\2022-12-30_4.pdf p.278-281 |
 
-### 31012 Yucatan — Cenotillo
-
-**Trayectoria** (2010-2025): `TTTTTTTTTTTTTCTT`
-**Patrón**: `outlier_year_C_in_T`
-
-| Año | tipo_actual | T/C | esperado | motivo | modelo | pdf · pág |
-|---:|---|:---:|:---:|---|---|---|
-| 2023 | cuota_fija_escalonada | **C** | T | `outlier_C_in_T` | gpt-5.4 | 2022\2022-12-30_4.pdf p.304-306 |
-
-### 31018 Yucatan — Chapab
-
-**Trayectoria** (2010-2025): `TTCCTTTTTTTTTTTT`
-**Patrón**: `outlier_year_C_in_T`
-
-| Año | tipo_actual | T/C | esperado | motivo | modelo | pdf · pág |
-|---:|---|:---:|:---:|---|---|---|
-| 2012 | cuota_fija_escalonada | **C** | T | `flip_minority_block_C_in_majority_T` | gpt-5.4-mini | 2011\2011-12-28_suplemento.pdf p.220-222 |
-| 2013 | cuota_fija_escalonada | **C** | T | `flip_minority_block_C_in_majority_T` | gpt-5.4-mini | 2012\2012-12-24_suplemento.pdf p.227-229 |
-
 ### 31021 Yucatan — Chichimila
 
 **Trayectoria** (2010-2025): `TTTTTTCTTTTTCCCC`
@@ -269,16 +193,6 @@ Trayectoria por año (2010-2025): `T`=tratamiento, `C`=control, `·`=sin dato.
 | Año | tipo_actual | T/C | esperado | motivo | modelo | pdf · pág |
 |---:|---|:---:|:---:|---|---|---|
 | 2020 | tasa_unica | **C** | T | `outlier_C_in_T` | gpt-5.4-mini | 2019\2019-12-27_2.pdf p.135-138 |
-
-### 31023 Yucatan — Chochola
-
-**Trayectoria** (2010-2025): `CCCCCCCCCCCCCTCT`
-**Patrón**: `flip_x2[CTCT]`
-
-| Año | tipo_actual | T/C | esperado | motivo | modelo | pdf · pág |
-|---:|---|:---:|:---:|---|---|---|
-| 2023 | mixto | **T** | C | `outlier_T_in_C` | gpt-5.4-mini | 2022\2022-12-30_4.pdf p.542-546 |
-| 2024 | tarifa_millar | **C** | T | `outlier_C_in_T` | gpt-5.4-mini | 2023\2023-12-29_3.pdf p.525-529 |
 
 ### 31024 Yucatan — Chumayel
 
@@ -318,17 +232,6 @@ Trayectoria por año (2010-2025): `T`=tratamiento, `C`=control, `·`=sin dato.
 | 2023 | tasa_unica | **C** | T | `reversion_T_to_C` | gpt-5.4-mini | 2022\2022-12-30_4.pdf p.597-602 |
 | 2024 | tasa_unica | **C** | T | `reversion_T_to_C` | gpt-5.4-mini | 2023\2023-12-29_3.pdf p.579-584 |
 | 2025 | tasa_unica | **C** | T | `reversion_T_to_C` | gpt-5.4-mini | 2024\2024-12-30_4.pdf p.199-203 |
-
-### 31026 Yucatan — Dzemul
-
-**Trayectoria** (2010-2025): `CCCCCCCTTTCCCCCC`
-**Patrón**: `outlier_year_T_in_C`
-
-| Año | tipo_actual | T/C | esperado | motivo | modelo | pdf · pág |
-|---:|---|:---:|:---:|---|---|---|
-| 2017 | mixto | **T** | C | `flip_minority_block_T_in_majority_C` | gpt-5.4-mini | 2016\2016-12-29_2.pdf p.66-70 |
-| 2018 | mixto | **T** | C | `flip_minority_block_T_in_majority_C` | gpt-5.4-mini | 2017\2017-12-31_3.pdf p.72-76 |
-| 2019 | progresivo | **T** | C | `flip_minority_block_T_in_majority_C` | gpt-5.4-mini | 2018\2018-12-28_2.pdf p.425-430 |
 
 ### 31027 Yucatan — Dzidzantun
 
@@ -382,15 +285,6 @@ Trayectoria por año (2010-2025): `T`=tratamiento, `C`=control, `·`=sin dato.
 | 2024 | otro_no_clasificado | **C** | T | `reversion_T_to_C` | synthesized_short_form | 2023\2023-12-29_3.pdf p.961-969 |
 | 2025 | otro_no_clasificado | **C** | T | `reversion_T_to_C` | synthesized_short_form | 2024\2024-12-30_3.pdf p.479-487 |
 
-### 31042 Yucatan — Kantunil
-
-**Trayectoria** (2010-2025): `CCCCCCCCCTCCTTTT`
-**Patrón**: `flip_x2[CTCT]`
-
-| Año | tipo_actual | T/C | esperado | motivo | modelo | pdf · pág |
-|---:|---|:---:|:---:|---|---|---|
-| 2019 | mixto | **T** | C | `outlier_T_in_C` | gpt-5.4-mini | 2018\2018-12-28_2.pdf p.732-734 |
-
 ### 31043 Yucatan — Kaua
 
 **Trayectoria** (2010-2025): `TTTTTTTTTTTTCCCC`
@@ -405,41 +299,12 @@ Trayectoria por año (2010-2025): `T`=tratamiento, `C`=control, `·`=sin dato.
 
 ### 31044 Yucatan — Kinchil
 
-**Trayectoria** (2010-2025): `TTTTTTTTTTTCTTCT`
-**Patrón**: `multi_flip[TCTCT]`
-
-| Año | tipo_actual | T/C | esperado | motivo | modelo | pdf · pág |
-|---:|---|:---:|:---:|---|---|---|
-| 2021 | tarifa_millar | **C** | T | `outlier_C_in_T` | gpt-5.4-mini | 2020\2020-12-29_2.pdf p.457-461 |
-| 2024 | otro_no_clasificado | **C** | T | `outlier_C_in_T` | gpt-5.4 | 2023\2023-12-29_3.pdf p.1027-1029 |
-
-### 31046 Yucatan — Mama
-
-**Trayectoria** (2010-2025): `CCCCCCCCCCCCCCTC`
-**Patrón**: `outlier_year_T_in_C`
-
-| Año | tipo_actual | T/C | esperado | motivo | modelo | pdf · pág |
-|---:|---|:---:|:---:|---|---|---|
-| 2024 | mixto | **T** | C | `outlier_T_in_C` | gpt-5.4-mini | 2023\2023-12-29_3.pdf p.1080-1082 |
-
-### 31048 Yucatan — Maxcanu
-
-**Trayectoria** (2010-2025): `CCCCCTCTTTTTTTTT`
-**Patrón**: `flip_x2[CTCT]`
-
-| Año | tipo_actual | T/C | esperado | motivo | modelo | pdf · pág |
-|---:|---|:---:|:---:|---|---|---|
-| 2015 | progresivo | **T** | C | `outlier_T_in_C` | gpt-5.4-mini | 2014\2014-12-31_2.pdf p.293-297 |
-| 2016 | otro_no_clasificado | **C** | T | `outlier_C_in_T` | audit_no_ley | — |
-
-### 31049 Yucatan — Mayapan
-
-**Trayectoria** (2010-2025): `TTTCTTTTTTTTTTTT`
+**Trayectoria** (2010-2025): `TTTTTTTTTTTTTTCT`
 **Patrón**: `outlier_year_C_in_T`
 
 | Año | tipo_actual | T/C | esperado | motivo | modelo | pdf · pág |
 |---:|---|:---:|:---:|---|---|---|
-| 2013 | tasa_unica | **C** | T | `outlier_C_in_T` | gpt-5.4-mini | 2012\2012-12-24_suplemento.pdf p.441-443 |
+| 2024 | otro_no_clasificado | **C** | T | `outlier_C_in_T` | gpt-5.4 | 2023\2023-12-29_3.pdf p.1027-1029 |
 
 ### 31057 Yucatan — Panaba
 
@@ -469,15 +334,6 @@ Trayectoria por año (2010-2025): `T`=tratamiento, `C`=control, `·`=sin dato.
 | 2024 | tasa_unica | **C** | T | `reversion_T_to_C` | gpt-5.4 | 2023\2023-12-29_3.pdf p.1473-1477 |
 | 2025 | tasa_unica | **C** | T | `reversion_T_to_C` | imputed_ffill | 2024\2024-12-30_3.pdf |
 
-### 31062 Yucatan — Sacalum
-
-**Trayectoria** (2010-2025): `CCCCCTCCCCCCCCCC`
-**Patrón**: `outlier_year_T_in_C`
-
-| Año | tipo_actual | T/C | esperado | motivo | modelo | pdf · pág |
-|---:|---|:---:|:---:|---|---|---|
-| 2015 | mixto | **T** | C | `outlier_T_in_C` | gpt-5.4-mini | 2014\2014-12-31_2.pdf p.438-441 |
-
 ### 31065 Yucatan — San Felipe
 
 **Trayectoria** (2010-2025): `TTTTTTTTTTTCCCCC`
@@ -505,16 +361,6 @@ Trayectoria por año (2010-2025): `T`=tratamiento, `C`=control, `·`=sin dato.
 | 2016 | otro_no_clasificado | **C** | T | `flip_minority_block_C_in_majority_T` | audit_no_ley | — |
 | 2020 | tasa_unica | **C** | T | `outlier_C_in_T` | gpt-5.4 | 2019\2019-12-27_2.pdf p.776-779 |
 
-### 31075 Yucatan — Teabo
-
-**Trayectoria** (2010-2025): `TTTTTCCTTTTTTTTT`
-**Patrón**: `outlier_year_C_in_T`
-
-| Año | tipo_actual | T/C | esperado | motivo | modelo | pdf · pág |
-|---:|---|:---:|:---:|---|---|---|
-| 2015 | tarifa_millar | **C** | T | `flip_minority_block_C_in_majority_T` | gpt-5.4-mini | 2014\2014-12-24_2.pdf p.694-696 |
-| 2016 | otro_no_clasificado | **C** | T | `flip_minority_block_C_in_majority_T` | audit_no_ley | — |
-
 ### 31078 Yucatan — Tekanto
 
 **Trayectoria** (2010-2025): `CTCTTTTTTTTTTTTT`
@@ -541,35 +387,17 @@ Trayectoria por año (2010-2025): `T`=tratamiento, `C`=control, `·`=sin dato.
 
 ### 31087 Yucatan — Tetiz
 
-**Trayectoria** (2010-2025): `TTTTTTTTTTCCTCCC`
-**Patrón**: `flip_x2[TCTC]`
+**Trayectoria** (2010-2025): `TTTTTTTTTTCCCCCC`
+**Patrón**: `reversion_simple`
 
 | Año | tipo_actual | T/C | esperado | motivo | modelo | pdf · pág |
 |---:|---|:---:|:---:|---|---|---|
 | 2020 | tasa_unica | **C** | T | `reversion_T_to_C` | gpt-5.4-mini | 2019\2019-12-24_2.pdf p.927-929 |
 | 2021 | tasa_unica | **C** | T | `reversion_T_to_C` | gpt-5.4-mini | 2020\2020-12-28_2.pdf p.913-916 |
-| 2022 | mixto | **T** | C | `outlier_T_in_C` | gpt-5.4-mini | 2021\2021-12-31_3.pdf p.1985-1989 |
+| 2022 | tasa_unica | **C** | T | `reversion_T_to_C` | gpt-5.4-mini | 2021\2021-12-31_3.pdf p.1985-1989 |
 | 2023 | tasa_unica | **C** | T | `reversion_T_to_C` | gpt-5.4-mini | 2022\2022-12-30_4.pdf p.2033-2036 |
 | 2024 | tasa_unica | **C** | T | `reversion_T_to_C` | gpt-5.4-mini | 2023\2023-12-29_3.pdf p.2032-2035 |
 | 2025 | tasa_unica | **C** | T | `reversion_T_to_C` | imputed_ffill | 2024\2024-12-30_3.pdf |
-
-### 31090 Yucatan — Timucuy
-
-**Trayectoria** (2010-2025): `TTTTTTCTTTTTTTTT`
-**Patrón**: `outlier_year_C_in_T`
-
-| Año | tipo_actual | T/C | esperado | motivo | modelo | pdf · pág |
-|---:|---|:---:|:---:|---|---|---|
-| 2016 | otro_no_clasificado | **C** | T | `outlier_C_in_T` | audit_no_ley | — |
-
-### 31091 Yucatan — Tinum
-
-**Trayectoria** (2010-2025): `TTTTTTTTTTCTTTTT`
-**Patrón**: `outlier_year_C_in_T`
-
-| Año | tipo_actual | T/C | esperado | motivo | modelo | pdf · pág |
-|---:|---|:---:|:---:|---|---|---|
-| 2020 | otro_no_clasificado | **C** | T | `outlier_C_in_T` | audit_no_ley | — |
 
 ### 31092 Yucatan — Tixcacalcupul
 
@@ -579,15 +407,6 @@ Trayectoria por año (2010-2025): `T`=tratamiento, `C`=control, `·`=sin dato.
 | Año | tipo_actual | T/C | esperado | motivo | modelo | pdf · pág |
 |---:|---|:---:|:---:|---|---|---|
 | 2025 | cuota_fija_escalonada | **C** | T | `reversion_T_to_C` | gpt-5.4-mini | 2024\2024-12-30_4.pdf p.1199-1201 |
-
-### 31093 Yucatan — Tixkokob
-
-**Trayectoria** (2010-2025): `CCCTTTCTTTTTTTTT`
-**Patrón**: `flip_x2[CTCT]`
-
-| Año | tipo_actual | T/C | esperado | motivo | modelo | pdf · pág |
-|---:|---|:---:|:---:|---|---|---|
-| 2016 | otro_no_clasificado | **C** | T | `outlier_C_in_T` | audit_no_ley | — |
 
 ### 31095 Yucatan — Tixpehual
 
@@ -611,17 +430,6 @@ Trayectoria por año (2010-2025): `T`=tratamiento, `C`=control, `·`=sin dato.
 |---:|---|:---:|:---:|---|---|---|
 | 2025 | cuota_fija_escalonada | **C** | T | `reversion_T_to_C` | gpt-5.4-mini | 2024\2024-12-30_4.pdf p.1264-1272 |
 
-### 31097 Yucatan — Tunkas
-
-**Trayectoria** (2010-2025): `TTTTTTTTTTTTTCTC`
-**Patrón**: `flip_x2[TCTC]`
-
-| Año | tipo_actual | T/C | esperado | motivo | modelo | pdf · pág |
-|---:|---|:---:|:---:|---|---|---|
-| 2023 | otro_no_clasificado | **C** | T | `outlier_C_in_T` | gpt-5.4 | 2022\2022-12-30_4.pdf p.2282-2285 |
-| 2024 | progresivo | **T** | C | `outlier_T_in_C` | gpt-5.4-mini | 2023\2023-12-29_3.pdf p.2283-2285 |
-| 2025 | otro_no_clasificado | **C** | T | `reversion_T_to_C` | gpt-5.4 | 2024\2024-12-30_4.pdf p.1313-1316 |
-
 ### 31098 Yucatan — Tzucacab
 
 **Trayectoria** (2010-2025): `TTTTTTTTTCCCCTTC`
@@ -643,18 +451,6 @@ Trayectoria por año (2010-2025): `T`=tratamiento, `C`=control, `·`=sin dato.
 | Año | tipo_actual | T/C | esperado | motivo | modelo | pdf · pág |
 |---:|---|:---:|:---:|---|---|---|
 | 2023 | tarifa_millar | **C** | T | `outlier_C_in_T` | gpt-5.4-mini | 2022\2022-12-30_4.pdf p.2382-2393 |
-
-### 31102 Yucatan — Valladolid
-
-**Trayectoria** (2010-2025): `CCCTTTTTTTTTTTTC`
-**Patrón**: `outlier_year_T_in_C`
-
-| Año | tipo_actual | T/C | esperado | motivo | modelo | pdf · pág |
-|---:|---|:---:|:---:|---|---|---|
-| 2010 | otro_no_clasificado | **C** | T | `flip_minority_block_C_in_majority_T` | synthesized_short_form | 2009\2009-12-29_suplemento.pdf p.551-554 |
-| 2011 | otro_no_clasificado | **C** | T | `flip_minority_block_C_in_majority_T` | synthesized_short_form | 2010\2010-12-29_suplemento.pdf p.743-747 |
-| 2012 | otro_no_clasificado | **C** | T | `flip_minority_block_C_in_majority_T` | synthesized_short_form | 2011\2011-12-29_suplemento.pdf p.683-687 |
-| 2025 | desconocido | **C** | T | `flip_minority_block_C_in_majority_T` | gpt-5.4-mini | 2024\2024-12-30_4.pdf |
 
 ### 31103 Yucatan — Xocchel
 

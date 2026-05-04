@@ -1,17 +1,481 @@
 {
   "predial": {
-    "tipo_esquema": "desconocido",
-    "esquema_valido": false,
-    "comentarios": "Texto insuficiente o truncado; no contiene la mecánica de cálculo del impuesto predial.",
+    "tipo_esquema": "mixto",
+    "tabla": [
+      {
+        "n_rango": 1,
+        "inferior": 0.01,
+        "superior": 350000.0,
+        "columnas": [
+          {
+            "nombre": "urbanos_y_suburbanos_con_edificaciones",
+            "valor": 0.002,
+            "tipo": "tasa_millar",
+            "unidad": "al_millar"
+          }
+        ]
+      },
+      {
+        "n_rango": 2,
+        "inferior": 350000.01,
+        "superior": 750000.0,
+        "columnas": [
+          {
+            "nombre": "urbanos_y_suburbanos_con_edificaciones",
+            "valor": 735.0,
+            "tipo": "cuota_fija",
+            "unidad": "pesos"
+          },
+          {
+            "nombre": "urbanos_y_suburbanos_con_edificaciones",
+            "valor": 0.0021,
+            "tipo": "tasa_marginal",
+            "unidad": "porcentaje"
+          }
+        ]
+      },
+      {
+        "n_rango": 3,
+        "inferior": 750000.01,
+        "superior": 1150000.0,
+        "columnas": [
+          {
+            "nombre": "urbanos_y_suburbanos_con_edificaciones",
+            "valor": 1615.0,
+            "tipo": "cuota_fija",
+            "unidad": "pesos"
+          },
+          {
+            "nombre": "urbanos_y_suburbanos_con_edificaciones",
+            "valor": 0.0022,
+            "tipo": "tasa_marginal",
+            "unidad": "porcentaje"
+          }
+        ]
+      },
+      {
+        "n_rango": 4,
+        "inferior": 1150000.01,
+        "superior": 1550000.0,
+        "columnas": [
+          {
+            "nombre": "urbanos_y_suburbanos_con_edificaciones",
+            "valor": 2535.0,
+            "tipo": "cuota_fija",
+            "unidad": "pesos"
+          },
+          {
+            "nombre": "urbanos_y_suburbanos_con_edificaciones",
+            "valor": 0.0023,
+            "tipo": "tasa_marginal",
+            "unidad": "porcentaje"
+          }
+        ]
+      },
+      {
+        "n_rango": 5,
+        "inferior": 1550000.01,
+        "superior": 1950000.0,
+        "columnas": [
+          {
+            "nombre": "urbanos_y_suburbanos_con_edificaciones",
+            "valor": 3495.0,
+            "tipo": "cuota_fija",
+            "unidad": "pesos"
+          },
+          {
+            "nombre": "urbanos_y_suburbanos_con_edificaciones",
+            "valor": 0.0024,
+            "tipo": "tasa_marginal",
+            "unidad": "porcentaje"
+          }
+        ]
+      },
+      {
+        "n_rango": 6,
+        "inferior": 1950000.01,
+        "superior": 2350000.0,
+        "columnas": [
+          {
+            "nombre": "urbanos_y_suburbanos_con_edificaciones",
+            "valor": 4495.0,
+            "tipo": "cuota_fija",
+            "unidad": "pesos"
+          },
+          {
+            "nombre": "urbanos_y_suburbanos_con_edificaciones",
+            "valor": 0.0025,
+            "tipo": "tasa_marginal",
+            "unidad": "porcentaje"
+          }
+        ]
+      },
+      {
+        "n_rango": 7,
+        "inferior": 2350000.01,
+        "superior": 2750000.0,
+        "columnas": [
+          {
+            "nombre": "urbanos_y_suburbanos_con_edificaciones",
+            "valor": 5499.0,
+            "tipo": "cuota_fija",
+            "unidad": "pesos"
+          },
+          {
+            "nombre": "urbanos_y_suburbanos_con_edificaciones",
+            "valor": 0.00251,
+            "tipo": "tasa_marginal",
+            "unidad": "porcentaje"
+          }
+        ]
+      },
+      {
+        "n_rango": 8,
+        "inferior": 2750000.01,
+        "superior": 3150000.0,
+        "columnas": [
+          {
+            "nombre": "urbanos_y_suburbanos_con_edificaciones",
+            "valor": 6503.4,
+            "tipo": "cuota_fija",
+            "unidad": "pesos"
+          },
+          {
+            "nombre": "urbanos_y_suburbanos_con_edificaciones",
+            "valor": 0.002511,
+            "tipo": "tasa_marginal",
+            "unidad": "porcentaje"
+          }
+        ]
+      },
+      {
+        "n_rango": 9,
+        "inferior": 3150000.01,
+        "superior": 3550000.0,
+        "columnas": [
+          {
+            "nombre": "urbanos_y_suburbanos_con_edificaciones",
+            "valor": 7508.2,
+            "tipo": "cuota_fija",
+            "unidad": "pesos"
+          },
+          {
+            "nombre": "urbanos_y_suburbanos_con_edificaciones",
+            "valor": 0.002512,
+            "tipo": "tasa_marginal",
+            "unidad": "porcentaje"
+          }
+        ]
+      },
+      {
+        "n_rango": 10,
+        "inferior": 3550000.01,
+        "superior": 4050000.0,
+        "columnas": [
+          {
+            "nombre": "urbanos_y_suburbanos_con_edificaciones",
+            "valor": 8513.4,
+            "tipo": "cuota_fija",
+            "unidad": "pesos"
+          },
+          {
+            "nombre": "urbanos_y_suburbanos_con_edificaciones",
+            "valor": 0.002513,
+            "tipo": "tasa_marginal",
+            "unidad": "porcentaje"
+          }
+        ]
+      },
+      {
+        "n_rango": 11,
+        "inferior": 4050000.01,
+        "superior": 4700000.0,
+        "columnas": [
+          {
+            "nombre": "urbanos_y_suburbanos_con_edificaciones",
+            "valor": 9770.4,
+            "tipo": "cuota_fija",
+            "unidad": "pesos"
+          },
+          {
+            "nombre": "urbanos_y_suburbanos_con_edificaciones",
+            "valor": 0.002514,
+            "tipo": "tasa_marginal",
+            "unidad": "porcentaje"
+          }
+        ]
+      },
+      {
+        "n_rango": 12,
+        "inferior": 4700000.01,
+        "superior": 5400000.0,
+        "columnas": [
+          {
+            "nombre": "urbanos_y_suburbanos_con_edificaciones",
+            "valor": 11405.15,
+            "tipo": "cuota_fija",
+            "unidad": "pesos"
+          },
+          {
+            "nombre": "urbanos_y_suburbanos_con_edificaciones",
+            "valor": 0.002515,
+            "tipo": "tasa_marginal",
+            "unidad": "porcentaje"
+          }
+        ]
+      },
+      {
+        "n_rango": 13,
+        "inferior": 5400000.01,
+        "superior": 6100000.0,
+        "columnas": [
+          {
+            "nombre": "urbanos_y_suburbanos_con_edificaciones",
+            "valor": 13166.35,
+            "tipo": "cuota_fija",
+            "unidad": "pesos"
+          },
+          {
+            "nombre": "urbanos_y_suburbanos_con_edificaciones",
+            "valor": 0.002516,
+            "tipo": "tasa_marginal",
+            "unidad": "porcentaje"
+          }
+        ]
+      },
+      {
+        "n_rango": 14,
+        "inferior": 6100000.01,
+        "superior": 6800000.0,
+        "columnas": [
+          {
+            "nombre": "urbanos_y_suburbanos_con_edificaciones",
+            "valor": 14928.25,
+            "tipo": "cuota_fija",
+            "unidad": "pesos"
+          },
+          {
+            "nombre": "urbanos_y_suburbanos_con_edificaciones",
+            "valor": 0.002517,
+            "tipo": "tasa_marginal",
+            "unidad": "porcentaje"
+          }
+        ]
+      },
+      {
+        "n_rango": 15,
+        "inferior": 6800000.01,
+        "superior": 7500000.0,
+        "columnas": [
+          {
+            "nombre": "urbanos_y_suburbanos_con_edificaciones",
+            "valor": 16690.85,
+            "tipo": "cuota_fija",
+            "unidad": "pesos"
+          },
+          {
+            "nombre": "urbanos_y_suburbanos_con_edificaciones",
+            "valor": 0.002518,
+            "tipo": "tasa_marginal",
+            "unidad": "porcentaje"
+          }
+        ]
+      },
+      {
+        "n_rango": 16,
+        "inferior": 7500000.01,
+        "superior": 8200000.0,
+        "columnas": [
+          {
+            "nombre": "urbanos_y_suburbanos_con_edificaciones",
+            "valor": 18454.15,
+            "tipo": "cuota_fija",
+            "unidad": "pesos"
+          },
+          {
+            "nombre": "urbanos_y_suburbanos_con_edificaciones",
+            "valor": 0.002519,
+            "tipo": "tasa_marginal",
+            "unidad": "porcentaje"
+          }
+        ]
+      },
+      {
+        "n_rango": 17,
+        "inferior": 8200000.01,
+        "superior": 8900000.0,
+        "columnas": [
+          {
+            "nombre": "urbanos_y_suburbanos_con_edificaciones",
+            "valor": 20218.15,
+            "tipo": "cuota_fija",
+            "unidad": "pesos"
+          },
+          {
+            "nombre": "urbanos_y_suburbanos_con_edificaciones",
+            "valor": 0.00252,
+            "tipo": "tasa_marginal",
+            "unidad": "porcentaje"
+          }
+        ]
+      },
+      {
+        "n_rango": 18,
+        "inferior": 8900000.01,
+        "superior": 9600000.0,
+        "columnas": [
+          {
+            "nombre": "urbanos_y_suburbanos_con_edificaciones",
+            "valor": 21982.85,
+            "tipo": "cuota_fija",
+            "unidad": "pesos"
+          },
+          {
+            "nombre": "urbanos_y_suburbanos_con_edificaciones",
+            "valor": 0.002521,
+            "tipo": "tasa_marginal",
+            "unidad": "porcentaje"
+          }
+        ]
+      },
+      {
+        "n_rango": 19,
+        "inferior": 9600000.01,
+        "superior": 10300000.0,
+        "columnas": [
+          {
+            "nombre": "urbanos_y_suburbanos_con_edificaciones",
+            "valor": 23748.25,
+            "tipo": "cuota_fija",
+            "unidad": "pesos"
+          },
+          {
+            "nombre": "urbanos_y_suburbanos_con_edificaciones",
+            "valor": 0.002522,
+            "tipo": "tasa_marginal",
+            "unidad": "porcentaje"
+          }
+        ]
+      },
+      {
+        "n_rango": 20,
+        "inferior": 10300000.01,
+        "superior": 12000000.0,
+        "columnas": [
+          {
+            "nombre": "urbanos_y_suburbanos_con_edificaciones",
+            "valor": 25513.72,
+            "tipo": "cuota_fija",
+            "unidad": "pesos"
+          },
+          {
+            "nombre": "urbanos_y_suburbanos_con_edificaciones",
+            "valor": 0.0025221,
+            "tipo": "tasa_marginal",
+            "unidad": "porcentaje"
+          }
+        ]
+      },
+      {
+        "n_rango": 21,
+        "inferior": 12000000.01,
+        "superior": 14000000.0,
+        "columnas": [
+          {
+            "nombre": "urbanos_y_suburbanos_con_edificaciones",
+            "valor": 29801.31,
+            "tipo": "cuota_fija",
+            "unidad": "pesos"
+          },
+          {
+            "nombre": "urbanos_y_suburbanos_con_edificaciones",
+            "valor": 0.00252211,
+            "tipo": "tasa_marginal",
+            "unidad": "porcentaje"
+          }
+        ]
+      },
+      {
+        "n_rango": 22,
+        "inferior": 14000000.01,
+        "superior": 18000000.0,
+        "columnas": [
+          {
+            "nombre": "urbanos_y_suburbanos_con_edificaciones",
+            "valor": 34845.55,
+            "tipo": "cuota_fija",
+            "unidad": "pesos"
+          },
+          {
+            "nombre": "urbanos_y_suburbanos_con_edificaciones",
+            "valor": 0.00252212,
+            "tipo": "tasa_marginal",
+            "unidad": "porcentaje"
+          }
+        ]
+      },
+      {
+        "n_rango": 23,
+        "inferior": 18000000.01,
+        "superior": 22000000.0,
+        "columnas": [
+          {
+            "nombre": "urbanos_y_suburbanos_con_edificaciones",
+            "valor": 44934.07,
+            "tipo": "cuota_fija",
+            "unidad": "pesos"
+          },
+          {
+            "nombre": "urbanos_y_suburbanos_con_edificaciones",
+            "valor": 0.00252213,
+            "tipo": "tasa_marginal",
+            "unidad": "porcentaje"
+          }
+        ]
+      },
+      {
+        "n_rango": 24,
+        "inferior": 22000000.01,
+        "superior": null,
+        "columnas": [
+          {
+            "nombre": "urbanos_y_suburbanos_con_edificaciones",
+            "valor": 55022.63,
+            "tipo": "cuota_fija",
+            "unidad": "pesos"
+          },
+          {
+            "nombre": "urbanos_y_suburbanos_con_edificaciones",
+            "valor": 0.00252214,
+            "tipo": "tasa_marginal",
+            "unidad": "porcentaje"
+          }
+        ]
+      }
+    ],
     "minimo_predial": null,
-    "tabla_tarifa_millar": [],
-    "tabla_progresiva": [],
-    "tabla_tasa_unica": [],
-    "tabla_cuota_fija": [],
-    "tabla_mixta_rango": []
+    "comentarios": "[treatment_audit:asumir_esquema_anterior from 2020] asumir esquema ejercicio anterior Comentario original: Art. 4, fracción I y II: la mecánica principal para urbanos y suburbanos con edificaciones es una tabla progresiva por valor catastral con cuota fija + tasa marginal; se transcriben los brackets de las tres tablas visibles (valor determinado a partir de la entrada en vigor de la ley; a partir del 1 de enero hasta 31 de diciembre de 2019; y a partir de 1 de enero de 2003 hasta 31 de diciembre de 2018) porque comparten estructura de brackets con distinto tramo/tasa. Fracción b) urbanos y suburbanos sin edificaciones aparece como tabla de tasas al millar sobre superficie con estructura OCR muy deteriorada y columnas múltiples; no se integra aquí como tabla principal porque el texto está fragmentado y heterogéneo. Fracciones c) rústicos 2 al millar / 0.40 al millar / 0.27 al millar / 6.00 al millar se registran como tarifas paralelas secundarias y no como mecánica principal."
   },
   "_meta": {
     "fuente": "txt",
-    "modelo": "gpt-5.4-mini"
+    "modelo": "imputed_audit_directed[from_2020]"
+  },
+  "_meta_v2": {
+    "intentos": 0,
+    "requiere_revision": false,
+    "razon": null,
+    "tokens": {
+      "input": 0,
+      "output": 0,
+      "cached": 0
+    },
+    "cvegeo": "11017",
+    "estado": "guanajuato",
+    "anio": 2021,
+    "imputed_from_year": 2020,
+    "imputed_method": "audit_directed",
+    "treatment_audit_source": "asumir_esquema_anterior",
+    "audit_auditor": "",
+    "audit_fecha": ""
   }
 }

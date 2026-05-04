@@ -1,120 +1,30 @@
 {
   "predial": {
-    "tipo_esquema": "mixto",
-    "tabla": [
+    "tipo_esquema": "tarifa_millar",
+    "esquema_valido": true,
+    "comentarios": "",
+    "minimo_predial": null,
+    "tabla_tarifa_millar": [
       {
-        "n_rango": 1,
-        "inferior": 0.01,
-        "superior": 4000.0,
-        "columnas": [
-          {
-            "nombre": "general",
-            "valor": 15.0,
-            "tipo": "cuota_fija",
-            "unidad": "pesos"
-          }
-        ]
-      },
-      {
-        "n_rango": 2,
-        "inferior": 4000.0,
-        "superior": 5500.0,
-        "columnas": [
-          {
-            "nombre": "general",
-            "valor": 28.0,
-            "tipo": "cuota_fija",
-            "unidad": "pesos"
-          }
-        ]
-      },
-      {
-        "n_rango": 3,
-        "inferior": 5500.0,
-        "superior": 6500.0,
-        "columnas": [
-          {
-            "nombre": "general",
-            "valor": 41.0,
-            "tipo": "cuota_fija",
-            "unidad": "pesos"
-          }
-        ]
-      },
-      {
-        "n_rango": 4,
-        "inferior": 6500.0,
-        "superior": 7500.0,
-        "columnas": [
-          {
-            "nombre": "general",
-            "valor": 61.0,
-            "tipo": "cuota_fija",
-            "unidad": "pesos"
-          }
-        ]
-      },
-      {
-        "n_rango": 5,
-        "inferior": 7500.0,
-        "superior": 8500.0,
-        "columnas": [
-          {
-            "nombre": "general",
-            "valor": 71.0,
-            "tipo": "cuota_fija",
-            "unidad": "pesos"
-          }
-        ]
-      },
-      {
-        "n_rango": 6,
-        "inferior": 8500.0,
-        "superior": 10000.0,
-        "columnas": [
-          {
-            "nombre": "general",
-            "valor": 81.0,
-            "tipo": "cuota_fija",
-            "unidad": "pesos"
-          }
-        ]
-      },
-      {
-        "n_rango": 7,
-        "inferior": 10000.0,
-        "superior": null,
-        "columnas": [
-          {
-            "nombre": "general",
-            "valor": 101.0,
-            "tipo": "cuota_fija",
-            "unidad": "pesos"
-          }
-        ]
+        "grupo": "general",
+        "clave": "general",
+        "descripcion": "cuota fija de $ 60.00 y aplicando la tasa del 0.20% del valor catastral vigente",
+        "tasa_millar": 0.2,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": {
+          "monto": 60.0,
+          "periodicidad": "anual",
+          "unidad": "pesos"
+        }
       }
     ],
-    "minimo_predial": null,
-    "comentarios": "Art. 13: el impuesto predial se determina con una cuota fija de $60.00 y aplicando la tasa del 0.20% del valor catastral vigente; además, el Art. 14 establece una tarifa por rangos de valor catastral con cuota anual en pesos y factor para aplicar al excedente, que se transcribe como tabla principal. La mecánica es heterogénea porque coexisten una cuota fija/tasa sobre valor catastral y una tabla escalonada por rangos con montos fijos; además, el Art. 16 establece una tasa de 2% sobre rentas o frutos civiles mensuales para casas habitación y actividades comerciales como tarifa paralela secundaria. Art. 14: 'La cantidad que exceda el límite inferior, le será aplicada el factor determinado en ésta tarifa y el resultado se incrementará con la cuota fija anual respectiva.'"
+    "tabla_progresiva": [],
+    "tabla_tasa_unica": [],
+    "tabla_cuota_fija": [],
+    "tabla_mixta_rango": []
   },
   "_meta": {
     "fuente": "txt",
     "modelo": "gpt-5.4-mini"
-  },
-  "_meta_v2": {
-    "intentos": 1,
-    "requiere_revision": false,
-    "escalado": false,
-    "razon": null,
-    "usado_reocr": false,
-    "usado_vision": false,
-    "tokens": {
-      "input": 7970,
-      "output": 536,
-      "cached": 5888
-    },
-    "cvegeo": "31026",
-    "estado": "yucatan",
-    "anio": 2018
   }
 }

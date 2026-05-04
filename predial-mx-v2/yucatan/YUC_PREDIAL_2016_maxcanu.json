@@ -1,15 +1,63 @@
 {
   "predial": {
-    "tipo_esquema": "otro_no_clasificado",
-    "categoria": "municipio_sin_impuesto",
-    "descripcion_estructural": "Auditor confirmó que no existe Ley de Ingresos publicada para este municipio en el ejercicio 2016.",
-    "tabla_cruda": [],
+    "tipo_esquema": "progresivo",
+    "tabla": [
+      {
+        "n_rango": 1,
+        "inferior": 0.01,
+        "superior": 60000.0,
+        "cuota_fija": 76.0,
+        "tasa_marginal": 2.5e-05
+      },
+      {
+        "n_rango": 2,
+        "inferior": 60000.01,
+        "superior": 120000.0,
+        "cuota_fija": 106.0,
+        "tasa_marginal": 2.5e-05
+      },
+      {
+        "n_rango": 3,
+        "inferior": 120000.01,
+        "superior": 200000.0,
+        "cuota_fija": 155.0,
+        "tasa_marginal": 2.5e-05
+      },
+      {
+        "n_rango": 4,
+        "inferior": 200000.01,
+        "superior": 400000.0,
+        "cuota_fija": 210.0,
+        "tasa_marginal": 2.5e-05
+      },
+      {
+        "n_rango": 5,
+        "inferior": 400000.01,
+        "superior": 600000.0,
+        "cuota_fija": 431.0,
+        "tasa_marginal": 2.5e-05
+      },
+      {
+        "n_rango": 6,
+        "inferior": 600000.01,
+        "superior": 800000.0,
+        "cuota_fija": 682.0,
+        "tasa_marginal": 2.5e-05
+      },
+      {
+        "n_rango": 7,
+        "inferior": 800000.01,
+        "superior": null,
+        "cuota_fija": 1252.0,
+        "tasa_marginal": 2.5e-05
+      }
+    ],
     "minimo_predial": null,
-    "comentarios": "Confirmado por (sin auditor) el (sin fecha)."
+    "comentarios": "[treatment_audit:asumir_esquema_anterior from 2015] asumir tasa periodo inmediato anterior Comentario original: Art. 4: tarifa progresiva del impuesto predial calculado con base en el valor catastral, con cuota fija anual y factor aplicable al excedente del límite inferior de 0.0025% en todos los brackets. El resto del texto contiene valores unitarios de terreno y construcción por zonas/cuartos (catastro), que no se transcriben como mecánica del impuesto. Predios rústicos: se mencionan valores unitarios de terreno por hectárea, pero no aparece una mecánica tarifaria separada de predial en el segmento transcrito."
   },
   "_meta": {
-    "fuente": "manual",
-    "modelo": "audit_no_ley"
+    "fuente": "txt",
+    "modelo": "imputed_audit_directed[from_2015]"
   },
   "_meta_v2": {
     "intentos": 0,
@@ -23,7 +71,9 @@
     "cvegeo": "31048",
     "estado": "yucatan",
     "anio": 2016,
-    "audit_estatus": "no_existe_ley",
+    "imputed_from_year": 2015,
+    "imputed_method": "audit_directed",
+    "treatment_audit_source": "asumir_esquema_anterior",
     "audit_auditor": "",
     "audit_fecha": ""
   }

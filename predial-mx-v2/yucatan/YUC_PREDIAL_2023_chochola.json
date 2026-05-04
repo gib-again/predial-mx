@@ -1,6 +1,6 @@
 {
   "predial": {
-    "tipo_esquema": "mixto",
+    "tipo_esquema": "tarifa_millar",
     "tabla": [
       {
         "n_rango": 1,
@@ -40,11 +40,11 @@
       "periodicidad": "anual",
       "unidad": "uma"
     },
-    "comentarios": "Art. 13 establece una mecánica híbrida: tasa general de 0.25% del valor catastral y, para valores catastrales menores o iguales a $22,000.00, un impuesto anual de $60.00. Además, para predios con valor catastral igual o inferior a 62 UMAS se fija un mínimo de 0.70 UMAS. Art. 14 contiene tablas de valores unitarios de terreno y construcción para el cálculo del valor catastral, que no se transcriben como tarifa del impuesto; también menciona una tarifa paralela para predios destinados a producción agropecuaria de 10 al millar sobre el valor registrado o catastral, y que inmuebles con rentas o frutos civiles causan 5% mensual, pero esas reglas se dejan fuera de la tabla principal por ser supuestos especiales/paralelos."
+    "comentarios": "[treatment_audit:override_tipo mixto→tarifa_millar] Auditor manual Comentario original: Art. 13 establece una mecánica híbrida: tasa general de 0.25% del valor catastral y, para valores catastrales menores o iguales a $22,000.00, un impuesto anual de $60.00. Además, para predios con valor catastral igual o inferior a 62 UMAS se fija un mínimo de 0.70 UMAS. Art. 14 contiene tablas de valores unitarios de terreno y construcción para el cálculo del valor catastral, que no se transcriben como tarifa del impuesto; también menciona una tarifa paralela para predios destinados a producción agropecuaria de 10 al millar sobre el valor registrado o catastral, y que inmuebles con rentas o frutos civiles causan 5% mensual, pero esas reglas se dejan fuera de la tabla principal por ser supuestos especiales/paralelos."
   },
   "_meta": {
     "fuente": "txt",
-    "modelo": "gpt-5.4-mini"
+    "modelo": "audit_override[mixto->tarifa_millar|orig:gpt-5.4-mini]"
   },
   "_meta_v2": {
     "intentos": 1,
@@ -58,6 +58,13 @@
     },
     "cvegeo": "31023",
     "estado": "yucatan",
-    "anio": 2023
+    "anio": 2023,
+    "treatment_audit_override": {
+      "old_tipo": "mixto",
+      "new_tipo": "tarifa_millar",
+      "auditor": "",
+      "fecha": "",
+      "notas": ""
+    }
   }
 }

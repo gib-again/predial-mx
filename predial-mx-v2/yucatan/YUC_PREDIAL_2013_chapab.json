@@ -1,6 +1,6 @@
 {
   "predial": {
-    "tipo_esquema": "cuota_fija_escalonada",
+    "tipo_esquema": "mixto",
     "tabla": [
       {
         "n_rango": 1,
@@ -34,11 +34,11 @@
       }
     ],
     "minimo_predial": null,
-    "comentarios": "Art. 13: para el cálculo del impuesto predial con base en el valor catastral se presenta una tarifa por rangos con cuota fija anual en pesos. Aunque en los dos últimos renglones aparece un factor de 0.003 sobre el excedente, los cuatro primeros brackets tienen factor 0 y la estructura principal del cuadro está dada como cuotas fijas por rango; además el texto incluye otra mecánica distinta en Art. 15 sobre rentas o frutos civiles (2% habitacional y comercial), que se omite por ser una tarifa paralela no estructurada en la misma tabla principal."
+    "comentarios": "[treatment_audit:override_tipo cuota_fija_escalonada→mixto] Auditor manual Comentario original: Art. 13: para el cálculo del impuesto predial con base en el valor catastral se presenta una tarifa por rangos con cuota fija anual en pesos. Aunque en los dos últimos renglones aparece un factor de 0.003 sobre el excedente, los cuatro primeros brackets tienen factor 0 y la estructura principal del cuadro está dada como cuotas fijas por rango; además el texto incluye otra mecánica distinta en Art. 15 sobre rentas o frutos civiles (2% habitacional y comercial), que se omite por ser una tarifa paralela no estructurada en la misma tabla principal."
   },
   "_meta": {
     "fuente": "txt",
-    "modelo": "gpt-5.4-mini"
+    "modelo": "audit_override[cuota_fija_escalonada->mixto|orig:gpt-5.4-mini]"
   },
   "_meta_v2": {
     "intentos": 1,
@@ -52,6 +52,13 @@
     },
     "cvegeo": "31018",
     "estado": "yucatan",
-    "anio": 2013
+    "anio": 2013,
+    "treatment_audit_override": {
+      "old_tipo": "cuota_fija_escalonada",
+      "new_tipo": "mixto",
+      "auditor": "",
+      "fecha": "",
+      "notas": ""
+    }
   }
 }

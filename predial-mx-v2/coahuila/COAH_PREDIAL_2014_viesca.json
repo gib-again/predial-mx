@@ -1,103 +1,38 @@
 {
   "predial": {
-    "tipo_esquema": "mixto",
-    "tabla": [
+    "tipo_esquema": "tarifa_millar",
+    "esquema_valido": true,
+    "comentarios": "",
+    "minimo_predial": {
+      "monto": 9.3,
+      "periodicidad": "bimestral",
+      "unidad": "pesos"
+    },
+    "tabla_tarifa_millar": [
       {
-        "n_rango": 1,
-        "inferior": 0.01,
-        "superior": 40000.0,
-        "columnas": [
-          {
-            "nombre": "general",
-            "valor": 81.31,
-            "tipo": "cuota_fija",
-            "unidad": "pesos"
-          },
-          {
-            "nombre": "general",
-            "valor": 0.5,
-            "tipo": "tasa_millar",
-            "unidad": "al_millar"
-          }
-        ]
+        "grupo": "urbano",
+        "clave": "predios_urbanos",
+        "descripcion": "Sobre los predios urbanos 3 al millar anual",
+        "tasa_millar": 3,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
       },
       {
-        "n_rango": 2,
-        "inferior": 40000.01,
-        "superior": 80000.0,
-        "columnas": [
-          {
-            "nombre": "general",
-            "valor": 103.75,
-            "tipo": "cuota_fija",
-            "unidad": "pesos"
-          },
-          {
-            "nombre": "general",
-            "valor": 1.0,
-            "tipo": "tasa_millar",
-            "unidad": "al_millar"
-          }
-        ]
-      },
-      {
-        "n_rango": 3,
-        "inferior": 80000.01,
-        "superior": 120000.0,
-        "columnas": [
-          {
-            "nombre": "general",
-            "valor": 148.61,
-            "tipo": "cuota_fija",
-            "unidad": "pesos"
-          },
-          {
-            "nombre": "general",
-            "valor": 1.5,
-            "tipo": "tasa_millar",
-            "unidad": "al_millar"
-          }
-        ]
-      },
-      {
-        "n_rango": 4,
-        "inferior": 120000.01,
-        "superior": null,
-        "columnas": [
-          {
-            "nombre": "general",
-            "valor": 215.28,
-            "tipo": "cuota_fija",
-            "unidad": "pesos"
-          },
-          {
-            "nombre": "general",
-            "valor": 2.25,
-            "tipo": "tasa_millar",
-            "unidad": "al_millar"
-          }
-        ]
+        "grupo": "rustico",
+        "clave": "predios_rusticos",
+        "descripcion": "Sobre los predios rústicos 3 al millar anual",
+        "tasa_millar": 3,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
       }
     ],
-    "minimo_predial": null,
-    "comentarios": "Art. 2: tabla por rangos de valor catastral con cuota fija y tasa al millar aplicada sobre el excedente del límite inferior; por coexistir cuota fija + tasa en cada bracket se clasifica como mixto. No se observan tarifas paralelas adicionales en el texto proporcionado."
+    "tabla_progresiva": [],
+    "tabla_tasa_unica": [],
+    "tabla_cuota_fija": [],
+    "tabla_mixta_rango": []
   },
   "_meta": {
     "fuente": "txt",
     "modelo": "gpt-5.4-mini"
-  },
-  "_meta_v2": {
-    "intentos": 1,
-    "requiere_revision": false,
-    "escalado": false,
-    "razon": null,
-    "tokens": {
-      "input": 5095,
-      "output": 383,
-      "cached": 3840
-    },
-    "cvegeo": "05036",
-    "estado": "coahuila",
-    "anio": 2014
   }
 }

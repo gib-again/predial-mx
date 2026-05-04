@@ -1,15 +1,67 @@
 {
   "predial": {
-    "tipo_esquema": "otro_no_clasificado",
-    "categoria": "municipio_sin_impuesto",
-    "descripcion_estructural": "Auditor confirmó que no existe Ley de Ingresos publicada para este municipio en el ejercicio 2016.",
-    "tabla_cruda": [],
+    "tipo_esquema": "progresivo",
+    "esquema_valido": true,
+    "comentarios": "[treatment_audit:asumir_esquema_anterior from 2015] asumir tasa periodo inmediato anterior",
     "minimo_predial": null,
-    "comentarios": "Confirmado por (sin auditor) el (sin fecha)."
+    "tabla_tarifa_millar": [],
+    "tabla_progresiva": [
+      {
+        "n_rango": "1",
+        "inferior": "0.01",
+        "superior": "$5,000.00",
+        "cuota_fija": "$19.00",
+        "tasa_marginal": "0.0015",
+        "unidad_cuota_fija": "pesos"
+      },
+      {
+        "n_rango": "2",
+        "inferior": "$5,000.01",
+        "superior": "$7,500.00",
+        "cuota_fija": "$25.00",
+        "tasa_marginal": "0.0020",
+        "unidad_cuota_fija": "pesos"
+      },
+      {
+        "n_rango": "3",
+        "inferior": "$7,500.01",
+        "superior": "$10,500.00",
+        "cuota_fija": "$31.00",
+        "tasa_marginal": "0.0025",
+        "unidad_cuota_fija": "pesos"
+      },
+      {
+        "n_rango": "4",
+        "inferior": "$10,500.01",
+        "superior": "$12,500.00",
+        "cuota_fija": "$37.00",
+        "tasa_marginal": "0.0030",
+        "unidad_cuota_fija": "pesos"
+      },
+      {
+        "n_rango": "5",
+        "inferior": "$12,500.01",
+        "superior": "$15,500.00",
+        "cuota_fija": "$41.00",
+        "tasa_marginal": "0.0035",
+        "unidad_cuota_fija": "pesos"
+      },
+      {
+        "n_rango": "6",
+        "inferior": "$15,500.01",
+        "superior": "En adelante",
+        "cuota_fija": "$51.00",
+        "tasa_marginal": "0.0040",
+        "unidad_cuota_fija": "pesos"
+      }
+    ],
+    "tabla_tasa_unica": [],
+    "tabla_cuota_fija": [],
+    "tabla_mixta_rango": []
   },
   "_meta": {
-    "fuente": "manual",
-    "modelo": "audit_no_ley"
+    "fuente": "txt",
+    "modelo": "imputed_audit_directed[from_2015]"
   },
   "_meta_v2": {
     "intentos": 0,
@@ -23,7 +75,9 @@
     "cvegeo": "31075",
     "estado": "yucatan",
     "anio": 2016,
-    "audit_estatus": "no_existe_ley",
+    "imputed_from_year": 2015,
+    "imputed_method": "audit_directed",
+    "treatment_audit_source": "asumir_esquema_anterior",
     "audit_auditor": "",
     "audit_fecha": ""
   }

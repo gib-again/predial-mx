@@ -1,6 +1,6 @@
 {
   "predial": {
-    "tipo_esquema": "cuota_fija_escalonada",
+    "tipo_esquema": "mixto",
     "tabla": [
       {
         "n_rango": 1,
@@ -76,11 +76,11 @@
       }
     ],
     "minimo_predial": null,
-    "comentarios": "La tabla principal del Artículo 13 para predios urbanos y rústicos con o sin construcción presenta rangos de valor catastral con cuota fija anual expresada como porcentaje de 1.06 UMA vigente y un factor al excedente igual a 0 en todos los rangos; por ello se clasifica como cuota_fija_escalonada y se transcribe el monto como cuota fija. Se normalizaron los límites de 0.01–2,000.00; 2,000.01–4,000.00; etc., a rangos contiguos 0–2000; 2000–4000; etc. Tarifas paralelas no incluidas en la tabla principal: 'Impuesto predial rústico $4.00 por hectárea' y 'Todo predio destinado a la producción agropecuaria pagará 10 al millar anual sobre el valor registrado o catastral'."
+    "comentarios": "[treatment_audit:override_tipo cuota_fija_escalonada→mixto] Auditor manual Comentario original: La tabla principal del Artículo 13 para predios urbanos y rústicos con o sin construcción presenta rangos de valor catastral con cuota fija anual expresada como porcentaje de 1.06 UMA vigente y un factor al excedente igual a 0 en todos los rangos; por ello se clasifica como cuota_fija_escalonada y se transcribe el monto como cuota fija. Se normalizaron los límites de 0.01–2,000.00; 2,000.01–4,000.00; etc., a rangos contiguos 0–2000; 2000–4000; etc. Tarifas paralelas no incluidas en la tabla principal: 'Impuesto predial rústico $4.00 por hectárea' y 'Todo predio destinado a la producción agropecuaria pagará 10 al millar anual sobre el valor registrado o catastral'."
   },
   "_meta": {
     "fuente": "txt",
-    "modelo": "gpt-5.4"
+    "modelo": "audit_override[cuota_fija_escalonada->mixto|orig:gpt-5.4]"
   },
   "_meta_v2": {
     "intentos": 3,
@@ -94,6 +94,13 @@
     },
     "cvegeo": "31012",
     "estado": "yucatan",
-    "anio": 2023
+    "anio": 2023,
+    "treatment_audit_override": {
+      "old_tipo": "cuota_fija_escalonada",
+      "new_tipo": "mixto",
+      "auditor": "",
+      "fecha": "",
+      "notas": ""
+    }
   }
 }

@@ -1,0 +1,12 @@
+﻿cvegeo,estado,municipio,trayectoria,pattern_muni,auditor,fecha,notas
+11017,Guanajuato,Irapuato,CCCCCCCCCCTCTTTC,multi_flip[CTCTC],,,
+11020,Guanajuato,Leon,TTTCTTTTTTTTTTCT,multi_flip[TCTCT],,,
+11042,Guanajuato,Valle de Santiago,CCCCCCCCCCTTTTTC,outlier_year_T_in_C,,,Re-segmentar 2025; pag 230-233 de 2024_17215_Periódico_Número_261_Vigésima_Cuarta_Parte_ocr.pdf muestra progresivo
+14071,Jalisco,San Cristobal de la Barranca,CCCCCCCCCCCCTCTT,flip_x2[CTCT],,,
+14123,Jalisco,Zapotlan del Rey,CCCCCCCCCCCCTTTC,outlier_year_T_in_C,,,
+14023,Jalisco,Zapotlan el Grande,CCCCCCCCCCCCTCTT,flip_x2[CTCT],,,
+31008,Yucatan,Calotmul,TTTTTTTTTTTTTCCT,outlier_year_C_in_T,,,"Error en 2025, pag 184 de 2024-12-30_3.pdf"
+31011,Yucatan,Celestun,TTTTTTTTTCCCCCTT,outlier_year_C_in_T,,,Error en 2024-2025; pag 270 de 2023-12-29_3.pdf y pag 214 de 2024-12-30_3.pdf
+31023,Yucatan,Chochola,CCCCCCCCCCCCCTCT,flip_x2[CTCT],,,"Error en 2025, es tarifa_millar"
+31048,Yucatan,Maxcanu,CCCCCTCTTTTTTTTT,flip_x2[CTCT],,,
+31097,Yucatan,Tunkas,TTTTTTTTTTTTTCTC,flip_x2[TCTC],,,
