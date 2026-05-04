@@ -12540,7 +12540,7 @@ cvegeo,ejercicio,estado,municipio,tipo_esquema,numero_rangos,monto_max_rango,imp
 31020,2017,Yucatan,Chicxulub Pueblo,progresivo,10,1500000.0,,
 31020,2018,Yucatan,Chicxulub Pueblo,progresivo,10,1500000.0,,
 31020,2019,Yucatan,Chicxulub Pueblo,progresivo,10,1500000.0,,
-31020,2020,Yucatan,Chicxulub Pueblo,tasa_unica,,,,
+31020,2020,Yucatan,Chicxulub Pueblo,progresivo,10,1500000.0,audit_directed[from_2019],2019
 31020,2021,Yucatan,Chicxulub Pueblo,progresivo,11,4000000.0,,
 31020,2022,Yucatan,Chicxulub Pueblo,progresivo,11,4000000.0,,
 31020,2023,Yucatan,Chicxulub Pueblo,mixto,11,4000000.0,,
@@ -13791,8 +13791,8 @@ cvegeo,ejercicio,estado,municipio,tipo_esquema,numero_rangos,monto_max_rango,imp
 31098,2020,Yucatan,Tzucacab,otro_no_clasificado,,,,
 31098,2021,Yucatan,Tzucacab,otro_no_clasificado,,,,
 31098,2022,Yucatan,Tzucacab,tasa_unica,,,,
-31098,2023,Yucatan,Tzucacab,mixto,2,200000.0,,
-31098,2024,Yucatan,Tzucacab,mixto,2,200000.0,,
+31098,2023,Yucatan,Tzucacab,otro_no_clasificado,,,audit_directed[from_2021],2021
+31098,2024,Yucatan,Tzucacab,otro_no_clasificado,,,audit_directed[from_2021],2021
 31098,2025,Yucatan,Tzucacab,tasa_unica,,,,
 31099,2010,Yucatan,Uayma,otro_no_clasificado,,,,
 31099,2011,Yucatan,Uayma,otro_no_clasificado,,,,
@@ -13864,7 +13864,7 @@ cvegeo,ejercicio,estado,municipio,tipo_esquema,numero_rangos,monto_max_rango,imp
 31103,2013,Yucatan,Xocchel,mixto,7,10000.0,,
 31103,2014,Yucatan,Xocchel,progresivo,7,10000.0,,
 31103,2015,Yucatan,Xocchel,progresivo,7,10000.0,,
-31103,2016,Yucatan,Xocchel,otro_no_clasificado,,,,
+31103,2016,Yucatan,Xocchel,progresivo,7,10000.0,audit_directed[from_2015],2015
 31103,2017,Yucatan,Xocchel,mixto,7,10000.0,,
 31103,2018,Yucatan,Xocchel,mixto,7,10000.0,,
 31103,2019,Yucatan,Xocchel,progresivo,7,10000.0,,
@@ -13880,7 +13880,7 @@ cvegeo,ejercicio,estado,municipio,tipo_esquema,numero_rangos,monto_max_rango,imp
 31104,2013,Yucatan,Yaxcaba,progresivo,7,10000.0,,
 31104,2014,Yucatan,Yaxcaba,progresivo,7,10000.0,,
 31104,2015,Yucatan,Yaxcaba,mixto,7,10000.0,,
-31104,2016,Yucatan,Yaxcaba,otro_no_clasificado,,,,
+31104,2016,Yucatan,Yaxcaba,mixto,7,10000.0,audit_directed[from_2015],2015
 31104,2017,Yucatan,Yaxcaba,progresivo,7,10000.0,,
 31104,2018,Yucatan,Yaxcaba,progresivo,7,10000.0,,
 31104,2019,Yucatan,Yaxcaba,progresivo,7,10000.0,,

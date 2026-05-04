@@ -1,59 +1,30 @@
 {
   "predial": {
-    "tipo_esquema": "mixto",
-    "tabla": [
-      {
-        "n_rango": 1,
-        "inferior": 0.0,
-        "superior": 200000.0,
-        "columnas": [
-          {
-            "nombre": "general",
-            "valor": 0.00025,
-            "tipo": "tasa_marginal",
-            "unidad": "porcentaje"
-          },
-          {
-            "nombre": "general",
-            "valor": 50.0,
-            "tipo": "cuota_fija",
-            "unidad": "pesos"
-          }
-        ]
-      },
-      {
-        "n_rango": 2,
-        "inferior": 200000.01,
-        "superior": null,
-        "columnas": [
-          {
-            "nombre": "general",
-            "valor": 0.00025,
-            "tipo": "tasa_marginal",
-            "unidad": "porcentaje"
-          }
-        ]
-      }
-    ],
+    "tipo_esquema": "otro_no_clasificado",
+    "categoria": "municipio_sin_impuesto",
+    "descripcion_estructural": "Ley de ingresos en formato corto: contiene únicamente pronóstico presupuestal por concepto (línea 'Impuesto Predial $X' o 'I.- Predial $X') sin secciones que detallen tarifas, tasas, montos al millar ni rangos. Las contribuciones se rigen por la Ley General de Hacienda Municipal del Estado de Yucatán (referenciada típicamente en Art. 13-15 del articulado).",
+    "tabla_cruda": [],
     "minimo_predial": null,
-    "comentarios": "Art. 13: la regla general indica impuesto predial = valor catastral actualizado por factor 0.00025; además, para predios con valor catastral igual o menor a $200,000.00 se paga cuota fija de $50.00. También aparece una tarifa paralela para predios destinados a la producción agropecuaria de 10 al millar anual sobre el valor registrado o catastral, que no se integra a la tabla principal por ser un grupo separado."
+    "comentarios": "[treatment_audit:audit_directed from 2021] Reversión de tratamiento: asumir tasas de 2021 (auditor). Comentario original: Síntesis determinista a partir del fallback `short_form` del segmentador de Yucatán. No se invocó LLM porque el documento fuente no contiene información de tarifa."
   },
   "_meta": {
     "fuente": "txt",
-    "modelo": "gpt-5.4-mini"
+    "modelo": "imputed_audit_directed[from_2021]"
   },
   "_meta_v2": {
-    "intentos": 1,
+    "intentos": 0,
     "requiere_revision": false,
-    "escalado": false,
     "razon": null,
     "tokens": {
-      "input": 7042,
-      "output": 260,
-      "cached": 3840
+      "input": 0,
+      "output": 0,
+      "cached": 0
     },
     "cvegeo": "31098",
     "estado": "yucatan",
-    "anio": 2023
+    "anio": 2023,
+    "imputed_from_year": 2021,
+    "imputed_method": "audit_directed",
+    "treatment_audit_source": "asumir_tasas_anteriores_o_dirigidas"
   }
 }
