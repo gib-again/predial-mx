@@ -1,0 +1,51 @@
+
+############################################################
+  ESTADO: SONORA
+  Ejercicios: 2010–2025
+  OCR: sí
+  Pasos: ocr, master, segment
+  OCR: --no-clean-watermark (legacy)
+############################################################
+
+────────────────────────────────────────
+  Paso: ocr
+────────────────────────────────────────
+═══ Sonora: OCR ═══
+    Modo: adaptativo (threshold 300 chars/pág)
+    Total PDFs candidatos: 271
+
+  ── Resumen OCR ──
+  Nativos (saltados):  200
+  OCR procesados:      0
+  Ya OCR'd (saltados): 71
+  Errores:             0
+  Log: data\sonora\meta\ocr_log.csv
+  ✓ ocr completado en 20.2s
+
+────────────────────────────────────────
+  Paso: master
+────────────────────────────────────────
+═══ Sonora: Inventario de leyes por PDF ═══
+  PDFs procesados: 1270 | Leyes localizadas: 829
+  Master: data\sonora\meta\predial_master.csv
+  ✓ master completado en 313.5s
+
+────────────────────────────────────────
+  Paso: segment
+────────────────────────────────────────
+═══ Sonora: Segmentación predial ═══
+    [WARN] 2020CCVI51III_ocr.pdf/cajeme: PDF slice failed (cannot save with zero pages)
+    [WARN] EE311220232.pdf/aconchi: PDF slice failed (cannot save with zero pages)
+
+  ── Resumen segmentación ──
+  Total leyes:   829
+  Exacta:        703
+  Fallback:      126
+  Errores:       0
+  Desde OCR:     90
+  Bitácora: data\sonora\meta\segment.csv
+  ✓ segment completado en 295.3s
+
+============================================================
+  ✓ Pipeline completado para 1 estado(s) en 629.0s
+============================================================

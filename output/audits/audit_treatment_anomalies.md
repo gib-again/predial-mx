@@ -11,27 +11,27 @@
 
 | Patrón | Munis | Significado |
 |---|---:|---|
-| `siempre_T` | 284 | tratado los 16 años — válido pero sin variación temporal |
+| `siempre_T` | 286 | tratado los 16 años — válido pero sin variación temporal |
 | `siempre_C` | 227 | control puro — válido como control |
-| `clean_onset` | 68 | C...CT...T — **caso ideal** para DiD absorbente |
-| `reversion_simple` | 16 | T...TC...C — REVERSIÓN, rompe absorbing |
-| `outlier_year_C_in_T` | 7 | TCT — un año C aislado en medio de tratamiento |
-| `outlier_year_T_in_C` | 6 | CTC — un año T aislado en medio de control |
-| `flip_x2[CTCT]` | 4 | patrón complejo, requiere revisión |
-| `flip_x2[TCTC]` | 2 | patrón complejo, requiere revisión |
+| `clean_onset` | 70 | C...CT...T — **caso ideal** para DiD absorbente |
+| `reversion_simple` | 17 | T...TC...C — REVERSIÓN, rompe absorbing |
+| `outlier_year_T_in_C` | 5 | CTC — un año T aislado en medio de control |
+| `outlier_year_C_in_T` | 5 | TCT — un año C aislado en medio de tratamiento |
+| `flip_x2[CTCT]` | 3 | patrón complejo, requiere revisión |
+| `flip_x2[TCTC]` | 1 | patrón complejo, requiere revisión |
 | `multi_flip[CTCTCT]` | 1 | patrón complejo, requiere revisión |
 
-**Munis a auditar**: 36 (con 132 años problemáticos)
+**Munis a auditar**: 32 (con 130 años problemáticos)
 
 ## Por motivo
 
 | Motivo | Conteo |
 |---|---:|
-| `reversion_T_to_C` | 82 |
-| `flip_minority_block_C_in_majority_T` | 22 |
+| `reversion_T_to_C` | 89 |
+| `flip_minority_block_C_in_majority_T` | 17 |
 | `flip_minority_block_T_in_majority_C` | 13 |
-| `outlier_C_in_T` | 10 |
-| `outlier_T_in_C` | 5 |
+| `outlier_C_in_T` | 7 |
+| `outlier_T_in_C` | 4 |
 
 ## Cómo llenar el CSV
 
@@ -73,15 +73,6 @@ Trayectoria por año (2010-2025): `T`=tratamiento, `C`=control, `·`=sin dato.
 | 2022 | progresivo | **T** | C | `flip_minority_block_T_in_majority_C` | gpt-5.4-mini | 2021_14625_Periodico_Numero_260_... p.28-225 |
 | 2023 | mixto | **T** | C | `flip_minority_block_T_in_majority_C` | gpt-5.4-mini | 2022_15517_Periodico_Numero_260_... p.122-134 |
 | 2024 | progresivo | **T** | C | `flip_minority_block_T_in_majority_C` | gpt-5.4-mini | 2023_16371_Periodico_Numero_261_... p.58-70 |
-
-### 11031 Guanajuato — San Francisco del Rincon
-
-**Trayectoria** (2010-2025): `CCCCCCCCCCTCCCCC`
-**Patrón**: `outlier_year_T_in_C`
-
-| Año | tipo_actual | T/C | esperado | motivo | modelo | pdf · pág |
-|---:|---|:---:|:---:|---|---|---|
-| 2020 | progresivo | **T** | C | `outlier_T_in_C` | gpt-5.4-mini | 2019_13218_Periodico_Numero_260_... p.199-208 |
 
 ### 11042 Guanajuato — Valle de Santiago
 
@@ -184,15 +175,6 @@ Trayectoria por año (2010-2025): `T`=tratamiento, `C`=control, `·`=sin dato.
 | 2023 | cuota_fija_escalonada | **C** | T | `reversion_T_to_C` | gpt-5.4-mini | 2022\2022-12-30_4.pdf p.496-497 |
 | 2024 | cuota_fija_escalonada | **C** | T | `reversion_T_to_C` | gpt-5.4-mini | 2023\2023-12-29_3.pdf p.480-481 |
 | 2025 | cuota_fija_escalonada | **C** | T | `reversion_T_to_C` | gpt-5.4-mini | 2024\2024-12-30_3.pdf p.334-335 |
-
-### 31020 Yucatan — Chicxulub Pueblo
-
-**Trayectoria** (2010-2025): `TTTTTTTTTTCTTTTT`
-**Patrón**: `outlier_year_C_in_T`
-
-| Año | tipo_actual | T/C | esperado | motivo | modelo | pdf · pág |
-|---:|---|:---:|:---:|---|---|---|
-| 2020 | tasa_unica | **C** | T | `outlier_C_in_T` | gpt-5.4-mini | 2019\2019-12-27_2.pdf p.135-138 |
 
 ### 31024 Yucatan — Chumayel
 
@@ -432,16 +414,18 @@ Trayectoria por año (2010-2025): `T`=tratamiento, `C`=control, `·`=sin dato.
 
 ### 31098 Yucatan — Tzucacab
 
-**Trayectoria** (2010-2025): `TTTTTTTTTCCCCTTC`
-**Patrón**: `flip_x2[TCTC]`
+**Trayectoria** (2010-2025): `TTTTTTTTTCCCCCCC`
+**Patrón**: `reversion_simple`
 
 | Año | tipo_actual | T/C | esperado | motivo | modelo | pdf · pág |
 |---:|---|:---:|:---:|---|---|---|
-| 2019 | otro_no_clasificado | **C** | T | `flip_minority_block_C_in_majority_T` | synthesized_short_form | 2018\2018-12-29_2.pdf p.482-489 |
-| 2020 | otro_no_clasificado | **C** | T | `flip_minority_block_C_in_majority_T` | synthesized_short_form | 2019\2019-12-24_2.pdf p.1009-1021 |
-| 2021 | otro_no_clasificado | **C** | T | `flip_minority_block_C_in_majority_T` | synthesized_short_form | 2020\2020-12-29_2.pdf p.1108-1114 |
-| 2022 | tasa_unica | **C** | T | `flip_minority_block_C_in_majority_T` | gpt-5.4-mini | 2021\2021-12-31_3.pdf p.2249-2253 |
-| 2025 | tasa_unica | **C** | T | `flip_minority_block_C_in_majority_T` | gpt-5.4 | 2024\2024-12-30_4.pdf p.1332-1336 |
+| 2019 | otro_no_clasificado | **C** | T | `reversion_T_to_C` | synthesized_short_form | 2018\2018-12-29_2.pdf p.482-489 |
+| 2020 | otro_no_clasificado | **C** | T | `reversion_T_to_C` | synthesized_short_form | 2019\2019-12-24_2.pdf p.1009-1021 |
+| 2021 | otro_no_clasificado | **C** | T | `reversion_T_to_C` | synthesized_short_form | 2020\2020-12-29_2.pdf p.1108-1114 |
+| 2022 | tasa_unica | **C** | T | `reversion_T_to_C` | gpt-5.4-mini | 2021\2021-12-31_3.pdf p.2249-2253 |
+| 2023 | otro_no_clasificado | **C** | T | `reversion_T_to_C` | imputed_audit_directed[from_2021] | 2022\2022-12-30_4.pdf p.2302-2306 |
+| 2024 | otro_no_clasificado | **C** | T | `reversion_T_to_C` | imputed_audit_directed[from_2021] | 2023\2023-12-29_3.pdf p.2302-2307 |
+| 2025 | tasa_unica | **C** | T | `reversion_T_to_C` | gpt-5.4 | 2024\2024-12-30_4.pdf p.1332-1336 |
 
 ### 31101 Yucatan — Uman
 
@@ -451,21 +435,3 @@ Trayectoria por año (2010-2025): `T`=tratamiento, `C`=control, `·`=sin dato.
 | Año | tipo_actual | T/C | esperado | motivo | modelo | pdf · pág |
 |---:|---|:---:|:---:|---|---|---|
 | 2023 | tarifa_millar | **C** | T | `outlier_C_in_T` | gpt-5.4-mini | 2022\2022-12-30_4.pdf p.2382-2393 |
-
-### 31103 Yucatan — Xocchel
-
-**Trayectoria** (2010-2025): `TTTTTTCTTTTTTTTT`
-**Patrón**: `outlier_year_C_in_T`
-
-| Año | tipo_actual | T/C | esperado | motivo | modelo | pdf · pág |
-|---:|---|:---:|:---:|---|---|---|
-| 2016 | otro_no_clasificado | **C** | T | `outlier_C_in_T` | audit_no_ley | — |
-
-### 31104 Yucatan — Yaxcaba
-
-**Trayectoria** (2010-2025): `CCCTTTCTTTTTTTTT`
-**Patrón**: `flip_x2[CTCT]`
-
-| Año | tipo_actual | T/C | esperado | motivo | modelo | pdf · pág |
-|---:|---|:---:|:---:|---|---|---|
-| 2016 | otro_no_clasificado | **C** | T | `outlier_C_in_T` | audit_no_ley | — |

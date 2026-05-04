@@ -1,0 +1,49 @@
+
+############################################################
+  ESTADO: SONORA
+  Ejercicios: 2010–2025
+  OCR: sí
+  Pasos: ocr
+  OCR: --no-clean-watermark (legacy)
+############################################################
+
+────────────────────────────────────────
+  Paso: ocr
+────────────────────────────────────────
+═══ Sonora: OCR ═══
+    Modo: dirigido (triage_csv=data\sonora\meta\triage_ocr.csv)
+    Total PDFs candidatos: 573
+    [1/573] 2009CLXXXIV49I.pdf | ok=0 err=0 | eta=0.0min
+    [10/573] 2012CXC53XIII.pdf | ok=9 err=0 | eta=683.9min
+    [20/573] 2009CLXXXIV53XIX.pdf | ok=19 err=0 | eta=641.2min
+    [30/573] 2009CLXXXIV53XXVI.pdf | ok=29 err=0 | eta=596.2min
+    [40/573] 2010CLXXXVI53XIX.pdf | ok=39 err=0 | eta=563.7min
+    [50/573] 2013CXCII50XIX.pdf | ok=49 err=0 | eta=669.2min
+    [60/573] 2013CXCII50XXV.pdf | ok=59 err=0 | eta=779.5min
+    [70/573] 2009CLXXXIV47VIII.pdf | ok=69 err=0 | eta=725.6min
+    [80/573] 2009CLXXXIV53XXX.pdf | ok=79 err=0 | eta=652.2min
+    [90/573] 2010CLXXXVI47IX.pdf | ok=89 err=0 | eta=602.6min
+    [100/573] 2010CLXXXVI47XV.pdf | ok=99 err=0 | eta=583.5min
+    [110/573] 2010CLXXXVI53.pdf | ok=109 err=0 | eta=546.1min
+    [120/573] 2010CLXXXVI53XXI.pdf | ok=119 err=0 | eta=523.5min
+    [130/573] 2011CLXXXVIII44X.pdf | ok=129 err=0 | eta=497.9min
+    [140/573] 2011CLXXXVIII51VI.pdf | ok=139 err=0 | eta=479.0min
+    [150/573] EE1630DICIEMBRE2011.pdf | ok=149 err=0 | eta=453.9min
+    [160/573] 2012CXC50II.pdf | ok=159 err=0 | eta=452.6min
+    [170/573] 2012CXC53IV.pdf | ok=169 err=0 | eta=437.9min
+    [180/573] 2013CXCII50V.pdf | ok=179 err=0 | eta=439.9min
+    [190/573] 2014CXCIV46I.pdf | ok=189 err=0 | eta=437.7min
+    [200/573] 2014CXCIV52III.pdf | ok=199 err=0 | eta=420.9min
+    [210/573] 2014CXCIV52XIII.pdf | ok=209 err=0 | eta=406.6min
+    [220/573] EE1531DICIEMBRE2014.pdf | ok=219 err=0 | eta=395.2min
+    [230/573] EE2731DICIEMBRE2014.pdf | ok=229 err=0 | eta=387.3min
+    [240/573] 2015CXCVI48IV.pdf | ok=239 err=0 | eta=367.9min
+    [250/573] 2015CXCVI51VI.pdf | ok=249 err=0 | eta=355.1min
+    [260/573] 2015CXCVI51XVI.pdf | ok=259 err=0 | eta=343.4min
+    [270/573] 2015CXCVI53VI.pdf | ok=269 err=0 | eta=327.8min
+    [280/573] 2016CXCVIII44I.pdf | ok=279 err=0 | eta=314.0min
+    [290/573] 2016CXCVIII49III.pdf | ok=289 err=0 | eta=311.8min
+    [300/573] EE1131DICIEMBRE2016.pdf | ok=299 err=0 | eta=302.1min
+    [310/573] EE431DICIEMBRE2016.pdf | ok=309 err=0 | eta=301.3min
+    [320/573] 2017CC48III.pdf | ok=319 err=0 | eta=296.1min
+    [330/573] 2017CC48XIII.pdf | ok=329 err=0 | eta=297.0min

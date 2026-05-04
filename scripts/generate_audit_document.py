@@ -435,7 +435,7 @@ def main():
     print(f"  ubicaciones cargadas: {len(seg_locations)}")
 
     print("Cargando audit existente (para preservar filas llenadas por el auditor)...")
-    audit_csv = Path("output/audit_pendiente.csv")
+    audit_csv = Path("output/audits/audit_pendiente.csv")
     existing_audit = _load_existing_audit(audit_csv)
     n_existing_filled = sum(
         1 for r in existing_audit.values() if (r.get("estatus") or "").strip()
@@ -478,7 +478,7 @@ def main():
     print(f"  nuevos (a auditar): {n_new}")
     print(f"  obsoletos descartados (gap cerrado): {n_obsolete}")
 
-    md_path = Path("output/audit_pendiente.md")
+    md_path = Path("output/audits/audit_pendiente.md")
     _write_csv(final_rows, audit_csv)
     _write_md(final_rows, md_path)
     print(f"\n  -> {audit_csv} ({len(final_rows)} filas)")

@@ -1,0 +1,989 @@
+[regress] queretaro: 18 municipios, 301 archivos focus_predial
+[regress] audit: 288 filas | slug_to_cvegeo: 18 mapeos
+
+  [1/18] amealco_de_bonfil (cvegeo=22001, 17 anios)
+[v2] QUERETARO cvegeo=22001 (Amealco de Bonfil)  modelo=gpt-5.4-mini
+  -- 2010 --
+    tipo=tarifa_millar              intentos=1  tokens(in=4173, out=355, cached=3840)
+    saved: predial-mx-v2\queretaro\QRO_PREDIAL_2010_amealco_de_bonfil.json
+  -- 2011 --
+    tipo=tarifa_millar              intentos=1  tokens(in=4416, out=351, cached=3840)
+    saved: predial-mx-v2\queretaro\QRO_PREDIAL_2011_amealco_de_bonfil.json
+  -- 2012 --
+    tipo=tarifa_millar              intentos=1  tokens(in=4423, out=347, cached=3840)
+    saved: predial-mx-v2\queretaro\QRO_PREDIAL_2012_amealco_de_bonfil.json
+  -- 2013 --
+    tipo=tarifa_millar              intentos=1  tokens(in=4426, out=365, cached=3840)
+    saved: predial-mx-v2\queretaro\QRO_PREDIAL_2013_amealco_de_bonfil.json
+  -- 2014 --
+    tipo=tarifa_millar              intentos=1  tokens(in=4475, out=353, cached=4352)
+    saved: predial-mx-v2\queretaro\QRO_PREDIAL_2014_amealco_de_bonfil.json
+  -- 2015 --
+    tipo=tarifa_millar              intentos=1  tokens(in=4509, out=366, cached=4352)
+    saved: predial-mx-v2\queretaro\QRO_PREDIAL_2015_amealco_de_bonfil.json
+  -- 2016 --
+    tipo=tarifa_millar              intentos=1  tokens(in=4488, out=376, cached=4352)
+    saved: predial-mx-v2\queretaro\QRO_PREDIAL_2016_amealco_de_bonfil.json
+  -- 2017 --
+    tipo=tarifa_millar              intentos=1  tokens(in=4512, out=359, cached=4352)
+    saved: predial-mx-v2\queretaro\QRO_PREDIAL_2017_amealco_de_bonfil.json
+  -- 2018 --
+    tipo=tarifa_millar              intentos=1  tokens(in=4509, out=341, cached=4352)
+    saved: predial-mx-v2\queretaro\QRO_PREDIAL_2018_amealco_de_bonfil.json
+  -- 2019 --
+    tipo=tarifa_millar              intentos=1  tokens(in=4508, out=386, cached=4352)
+    saved: predial-mx-v2\queretaro\QRO_PREDIAL_2019_amealco_de_bonfil.json
+  -- 2020 --
+    tipo=tarifa_millar              intentos=1  tokens(in=4172, out=368, cached=3840)
+    saved: predial-mx-v2\queretaro\QRO_PREDIAL_2020_amealco_de_bonfil.json
+  -- 2021 --
+    tipo=tarifa_millar              intentos=1  tokens(in=4196, out=362, cached=3840)
+    saved: predial-mx-v2\queretaro\QRO_PREDIAL_2021_amealco_de_bonfil.json
+  -- 2022 --
+    tipo=tarifa_millar              intentos=1  tokens(in=4175, out=365, cached=3840)
+    saved: predial-mx-v2\queretaro\QRO_PREDIAL_2022_amealco_de_bonfil.json
+  -- 2023 --
+    tipo=tarifa_millar              intentos=1  tokens(in=4198, out=368, cached=3840)
+    saved: predial-mx-v2\queretaro\QRO_PREDIAL_2023_amealco_de_bonfil.json
+  -- 2024 --
+    tipo=tarifa_millar              intentos=1  tokens(in=4174, out=368, cached=3840)
+    saved: predial-mx-v2\queretaro\QRO_PREDIAL_2024_amealco_de_bonfil.json
+  -- 2025 --
+    tipo=tarifa_millar              intentos=1  tokens(in=4198, out=366, cached=0)
+    saved: predial-mx-v2\queretaro\QRO_PREDIAL_2025_amealco_de_bonfil.json
+  -- 2026 --
+    tipo=tarifa_millar              intentos=1  tokens(in=4176, out=355, cached=3840)
+    saved: predial-mx-v2\queretaro\QRO_PREDIAL_2026_amealco_de_bonfil.json
+[v2] resumen: 17 archivos | tokens(in=73728, out=6151, cached=64512) | requiere_revision=0
+
+  [2/18] arroyo_seco (cvegeo=22003, 17 anios)
+[v2] QUERETARO cvegeo=22003 (Arroyo Seco)  modelo=gpt-5.4-mini
+  -- 2010 --
+    tipo=tarifa_millar              intentos=1  tokens(in=14953, out=361, cached=14080)
+    saved: predial-mx-v2\queretaro\QRO_PREDIAL_2010_arroyo_seco.json
+  -- 2011 --
+    tipo=tarifa_millar              intentos=1  tokens(in=4406, out=369, cached=3840)
+    saved: predial-mx-v2\queretaro\QRO_PREDIAL_2011_arroyo_seco.json
+  -- 2012 --
+    tipo=tarifa_millar              intentos=1  tokens(in=4420, out=367, cached=3840)
+    saved: predial-mx-v2\queretaro\QRO_PREDIAL_2012_arroyo_seco.json
+  -- 2013 --
+    tipo=tarifa_millar              intentos=1  tokens(in=4661, out=293, cached=4352)
+    saved: predial-mx-v2\queretaro\QRO_PREDIAL_2013_arroyo_seco.json
+  -- 2014 --
+    tipo=tarifa_millar              intentos=1  tokens(in=4505, out=388, cached=4352)
+    saved: predial-mx-v2\queretaro\QRO_PREDIAL_2014_arroyo_seco.json
+  -- 2015 --
+    tipo=tarifa_millar              intentos=1  tokens(in=4560, out=366, cached=4352)
+    saved: predial-mx-v2\queretaro\QRO_PREDIAL_2015_arroyo_seco.json
+  -- 2016 --
+    tipo=tarifa_millar              intentos=1  tokens(in=4484, out=372, cached=2816)
+    saved: predial-mx-v2\queretaro\QRO_PREDIAL_2016_arroyo_seco.json
+  -- 2017 --
+    tipo=tarifa_millar              intentos=1  tokens(in=4505, out=377, cached=4352)
+    saved: predial-mx-v2\queretaro\QRO_PREDIAL_2017_arroyo_seco.json
+  -- 2018 --
+    tipo=tarifa_millar              intentos=1  tokens(in=4488, out=372, cached=4352)
+    saved: predial-mx-v2\queretaro\QRO_PREDIAL_2018_arroyo_seco.json
+  -- 2019 --
+    tipo=tarifa_millar              intentos=1  tokens(in=4486, out=365, cached=4352)
+    saved: predial-mx-v2\queretaro\QRO_PREDIAL_2019_arroyo_seco.json
+  -- 2020 --
+    tipo=tarifa_millar              intentos=1  tokens(in=4510, out=366, cached=4352)
+    saved: predial-mx-v2\queretaro\QRO_PREDIAL_2020_arroyo_seco.json
+  -- 2021 --
+    tipo=tarifa_millar              intentos=1  tokens(in=4482, out=359, cached=4352)
+    saved: predial-mx-v2\queretaro\QRO_PREDIAL_2021_arroyo_seco.json
+  -- 2022 --
+    tipo=tarifa_millar              intentos=1  tokens(in=4482, out=366, cached=4352)
+    saved: predial-mx-v2\queretaro\QRO_PREDIAL_2022_arroyo_seco.json
+  -- 2023 --
+    tipo=tarifa_millar              intentos=1  tokens(in=4479, out=378, cached=4352)
+    saved: predial-mx-v2\queretaro\QRO_PREDIAL_2023_arroyo_seco.json
+  -- 2024 --
+    tipo=tarifa_millar              intentos=1  tokens(in=4503, out=395, cached=2816)
+    saved: predial-mx-v2\queretaro\QRO_PREDIAL_2024_arroyo_seco.json
+  -- 2025 --
+    tipo=tarifa_millar              intentos=1  tokens(in=4503, out=343, cached=4352)
+    saved: predial-mx-v2\queretaro\QRO_PREDIAL_2025_arroyo_seco.json
+  -- 2026 --
+    tipo=tarifa_millar              intentos=1  tokens(in=4508, out=388, cached=4352)
+    saved: predial-mx-v2\queretaro\QRO_PREDIAL_2026_arroyo_seco.json
+[v2] resumen: 17 archivos | tokens(in=86935, out=6225, cached=79616) | requiere_revision=0
+
+  [3/18] cadereyta_de_montes (cvegeo=22004, 17 anios)
+[v2] QUERETARO cvegeo=22004 (Cadereyta de Montes)  modelo=gpt-5.4-mini
+  -- 2010 --
+    tipo=tarifa_millar              intentos=1  tokens(in=4173, out=374, cached=2816)
+    saved: predial-mx-v2\queretaro\QRO_PREDIAL_2010_cadereyta_de_montes.json
+  -- 2011 --
+    tipo=tarifa_millar              intentos=1  tokens(in=4405, out=360, cached=3840)
+    saved: predial-mx-v2\queretaro\QRO_PREDIAL_2011_cadereyta_de_montes.json
+  -- 2012 --
+    tipo=tarifa_millar              intentos=1  tokens(in=4428, out=394, cached=3840)
+    saved: predial-mx-v2\queretaro\QRO_PREDIAL_2012_cadereyta_de_montes.json
+  -- 2013 --
+    tipo=tarifa_millar              intentos=1  tokens(in=4426, out=377, cached=3840)
+    saved: predial-mx-v2\queretaro\QRO_PREDIAL_2013_cadereyta_de_montes.json
+  -- 2014 --
+    tipo=tarifa_millar              intentos=1  tokens(in=4508, out=369, cached=4352)
+    saved: predial-mx-v2\queretaro\QRO_PREDIAL_2014_cadereyta_de_montes.json
+  -- 2015 --
+    tipo=tarifa_millar              intentos=1  tokens(in=4485, out=363, cached=4352)
+    saved: predial-mx-v2\queretaro\QRO_PREDIAL_2015_cadereyta_de_montes.json
+  -- 2016 --
+    tipo=tarifa_millar              intentos=1  tokens(in=4487, out=352, cached=4352)
+    saved: predial-mx-v2\queretaro\QRO_PREDIAL_2016_cadereyta_de_montes.json
+  -- 2017 --
+    tipo=tarifa_millar              intentos=1  tokens(in=4511, out=358, cached=4352)
+    saved: predial-mx-v2\queretaro\QRO_PREDIAL_2017_cadereyta_de_montes.json
+  -- 2018 --
+    tipo=tarifa_millar              intentos=1  tokens(in=4486, out=369, cached=4352)
+    saved: predial-mx-v2\queretaro\QRO_PREDIAL_2018_cadereyta_de_montes.json
+  -- 2019 --
+    tipo=tarifa_millar              intentos=1  tokens(in=4481, out=356, cached=4352)
+    saved: predial-mx-v2\queretaro\QRO_PREDIAL_2019_cadereyta_de_montes.json
+  -- 2020 --
+    tipo=tarifa_millar              intentos=1  tokens(in=4457, out=369, cached=4352)
+    saved: predial-mx-v2\queretaro\QRO_PREDIAL_2020_cadereyta_de_montes.json
+  -- 2021 --
+    tipo=tarifa_millar              intentos=1  tokens(in=4457, out=362, cached=4352)
+    saved: predial-mx-v2\queretaro\QRO_PREDIAL_2021_cadereyta_de_montes.json
+  -- 2022 --
+    tipo=tarifa_millar              intentos=1  tokens(in=4482, out=373, cached=4352)
+    saved: predial-mx-v2\queretaro\QRO_PREDIAL_2022_cadereyta_de_montes.json
+  -- 2023 --
+    tipo=tarifa_millar              intentos=1  tokens(in=6136, out=363, cached=5888)
+    saved: predial-mx-v2\queretaro\QRO_PREDIAL_2023_cadereyta_de_montes.json
+  -- 2024 --
+    tipo=tarifa_millar              intentos=1  tokens(in=6111, out=363, cached=5888)
+    saved: predial-mx-v2\queretaro\QRO_PREDIAL_2024_cadereyta_de_montes.json
+  -- 2025 --
+    tipo=tarifa_millar              intentos=1  tokens(in=6181, out=359, cached=2816)
+    saved: predial-mx-v2\queretaro\QRO_PREDIAL_2025_cadereyta_de_montes.json
+  -- 2026 --
+    tipo=tarifa_millar              intentos=1  tokens(in=6181, out=354, cached=5888)
+    saved: predial-mx-v2\queretaro\QRO_PREDIAL_2026_cadereyta_de_montes.json
+[v2] resumen: 17 archivos | tokens(in=82395, out=6215, cached=73984) | requiere_revision=0
+
+  [4/18] colon (cvegeo=22005, 16 anios)
+[v2] QUERETARO cvegeo=22005 (Colon)  modelo=gpt-5.4-mini
+  -- 2010 --
+    tipo=tarifa_millar              intentos=1  tokens(in=24005, out=369, cached=23808)
+    saved: predial-mx-v2\queretaro\QRO_PREDIAL_2010_colon.json
+  -- 2011 --
+    tipo=tarifa_millar              intentos=1  tokens(in=27519, out=408, cached=27392)
+    saved: predial-mx-v2\queretaro\QRO_PREDIAL_2011_colon.json
+  -- 2012 --
+    tipo=tarifa_millar              intentos=1  tokens(in=28546, out=368, cached=28416)
+    saved: predial-mx-v2\queretaro\QRO_PREDIAL_2012_colon.json
+  -- 2013 --
+    tipo=tarifa_millar              intentos=1  tokens(in=26232, out=373, cached=25344)
+    saved: predial-mx-v2\queretaro\QRO_PREDIAL_2013_colon.json
+  -- 2014 --
+    tipo=tarifa_millar              intentos=1  tokens(in=4389, out=414, cached=3840)
+    saved: predial-mx-v2\queretaro\QRO_PREDIAL_2014_colon.json
+  -- 2015 --
+    tipo=tarifa_millar              intentos=1  tokens(in=35291, out=391, cached=34560)
+    saved: predial-mx-v2\queretaro\QRO_PREDIAL_2015_colon.json
+  -- 2017 --
+    tipo=progresivo                 intentos=2  tokens(in=13336, out=2432, cached=11776)
+    saved: predial-mx-v2\queretaro\QRO_PREDIAL_2017_colon.json
+  -- 2018 --
+    tipo=progresivo                 intentos=2  tokens(in=13378, out=2430, cached=11776)
+    saved: predial-mx-v2\queretaro\QRO_PREDIAL_2018_colon.json
+  -- 2019 --
+    tipo=progresivo                 intentos=2  tokens(in=13426, out=2432, cached=11776)
+    saved: predial-mx-v2\queretaro\QRO_PREDIAL_2019_colon.json
+  -- 2020 --
+    tipo=progresivo                 intentos=2  tokens(in=13190, out=2489, cached=11776)
+    saved: predial-mx-v2\queretaro\QRO_PREDIAL_2020_colon.json
+  -- 2021 --
+    tipo=progresivo                 intentos=2  tokens(in=13996, out=2472, cached=12800)
+    saved: predial-mx-v2\queretaro\QRO_PREDIAL_2021_colon.json
+  -- 2022 --
+    tipo=—                          intentos=2  tokens(in=13941, out=3552, cached=8704)  [REVISAR]
+    razon: valido_2x_fallido | error1=  • predial.mixto: Value error, bracket 25: superior=None solo permitido en el último rango | error2=  • predial.mixto: Value error, brackets 1→2: hueco detectado (superior=180664.83, siguiente inferior=180664.84)
+    saved: predial-mx-v2\queretaro\QRO_PREDIAL_2022_colon.json
+  -- 2023 --
+    tipo=—                          intentos=2  tokens(in=13124, out=3355, cached=9728)  [REVISAR]
+    razon: valido_2x_fallido | error1=  • predial.progresivo: Value error, brackets 1→2: hueco detectado (superior=216750.5, siguiente inferior=216750.51) | error2=  • predial.mixto: Value error, bracket 25: superior=None solo permitido en el último rango
+    saved: predial-mx-v2\queretaro\QRO_PREDIAL_2023_colon.json
+  -- 2024 --
+    tipo=progresivo                 intentos=2  tokens(in=13560, out=2522, cached=11776)
+    saved: predial-mx-v2\queretaro\QRO_PREDIAL_2024_colon.json
+  -- 2025 --
+    tipo=progresivo                 intentos=2  tokens(in=13278, out=2503, cached=8704)
+    saved: predial-mx-v2\queretaro\QRO_PREDIAL_2025_colon.json
+  -- 2026 --
+    tipo=—                          intentos=2  tokens(in=13470, out=2396, cached=11776)  [REVISAR]
+    razon: valido_2x_fallido | error1=  • predial.progresivo: Value error, brackets 1→2: hueco detectado (superior=94454.99, siguiente inferior=94455.0) | error2=  • predial.progresivo: Value error, brackets 2→3: hueco detectado (superior=112441.75, siguiente inferior=112441.76)
+    saved: predial-mx-v2\queretaro\QRO_PREDIAL_2026_colon.json
+[v2] resumen: 16 archivos | tokens(in=280681, out=28906, cached=253952) | requiere_revision=3
+
+  [5/18] corregidora (cvegeo=22006, 17 anios)
+[v2] QUERETARO cvegeo=22006 (Corregidora)  modelo=gpt-5.4-mini
+  -- 2010 --
+    tipo=tarifa_millar              intentos=1  tokens(in=4169, out=366, cached=3840)
+    saved: predial-mx-v2\queretaro\QRO_PREDIAL_2010_corregidora.json
+  -- 2011 --
+    tipo=tarifa_millar              intentos=1  tokens(in=4409, out=370, cached=3840)
+    saved: predial-mx-v2\queretaro\QRO_PREDIAL_2011_corregidora.json
+  -- 2012 --
+    tipo=tarifa_millar              intentos=1  tokens(in=4395, out=369, cached=3840)
+    saved: predial-mx-v2\queretaro\QRO_PREDIAL_2012_corregidora.json
+  -- 2013 --
+    tipo=tarifa_millar              intentos=1  tokens(in=4192, out=298, cached=3840)
+    saved: predial-mx-v2\queretaro\QRO_PREDIAL_2013_corregidora.json
+  -- 2014 --
+    tipo=progresivo                 intentos=2  tokens(in=11242, out=2367, cached=9728)
+    saved: predial-mx-v2\queretaro\QRO_PREDIAL_2014_corregidora.json
+  -- 2015 --
+    tipo=progresivo                 intentos=2  tokens(in=12592, out=2396, cached=11776)
+    saved: predial-mx-v2\queretaro\QRO_PREDIAL_2015_corregidora.json
+  -- 2016 --
+    tipo=progresivo                 intentos=2  tokens(in=12590, out=2364, cached=8704)
+    saved: predial-mx-v2\queretaro\QRO_PREDIAL_2016_corregidora.json
+  -- 2017 --
+    tipo=progresivo                 intentos=2  tokens(in=12554, out=2328, cached=5888)
+    saved: predial-mx-v2\queretaro\QRO_PREDIAL_2017_corregidora.json
+  -- 2018 --
+    tipo=progresivo                 intentos=2  tokens(in=12634, out=2338, cached=7168)
+    saved: predial-mx-v2\queretaro\QRO_PREDIAL_2018_corregidora.json
+  -- 2019 --
+    tipo=progresivo                 intentos=2  tokens(in=12692, out=2386, cached=7168)
+    saved: predial-mx-v2\queretaro\QRO_PREDIAL_2019_corregidora.json
+  -- 2020 --
+    tipo=progresivo                 intentos=2  tokens(in=12660, out=2409, cached=7168)
+    saved: predial-mx-v2\queretaro\QRO_PREDIAL_2020_corregidora.json
+  -- 2021 --
+    tipo=progresivo                 intentos=2  tokens(in=12594, out=2430, cached=7168)
+    saved: predial-mx-v2\queretaro\QRO_PREDIAL_2021_corregidora.json
+  -- 2022 --
+    tipo=progresivo                 intentos=2  tokens(in=12636, out=2370, cached=6656)
+    saved: predial-mx-v2\queretaro\QRO_PREDIAL_2022_corregidora.json
+  -- 2023 --
+    tipo=progresivo                 intentos=2  tokens(in=13772, out=2310, cached=9216)
+    saved: predial-mx-v2\queretaro\QRO_PREDIAL_2023_corregidora.json
+  -- 2024 --
+    tipo=progresivo                 intentos=2  tokens(in=13622, out=2374, cached=10240)
+    saved: predial-mx-v2\queretaro\QRO_PREDIAL_2024_corregidora.json
+  -- 2025 --
+    tipo=progresivo                 intentos=2  tokens(in=13760, out=2391, cached=11776)
+    saved: predial-mx-v2\queretaro\QRO_PREDIAL_2025_corregidora.json
+  -- 2026 --
+    tipo=progresivo                 intentos=2  tokens(in=13746, out=2337, cached=11776)
+    saved: predial-mx-v2\queretaro\QRO_PREDIAL_2026_corregidora.json
+[v2] resumen: 17 archivos | tokens(in=184259, out=32203, cached=129792) | requiere_revision=0
+
+  [6/18] el_marques (cvegeo=22011, 14 anios)
+[v2] QUERETARO cvegeo=22011 (El Marques)  modelo=gpt-5.4-mini
+  -- 2010 --
+    tipo=tarifa_millar              intentos=1  tokens(in=4195, out=374, cached=3840)
+    saved: predial-mx-v2\queretaro\QRO_PREDIAL_2010_el_marques.json
+  -- 2011 --
+    tipo=tarifa_millar              intentos=1  tokens(in=4384, out=418, cached=2816)
+    saved: predial-mx-v2\queretaro\QRO_PREDIAL_2011_el_marques.json
+  -- 2012 --
+    tipo=tarifa_millar              intentos=1  tokens(in=4426, out=361, cached=2816)
+    saved: predial-mx-v2\queretaro\QRO_PREDIAL_2012_el_marques.json
+  -- 2013 --
+    tipo=tarifa_millar              intentos=1  tokens(in=43545, out=432, cached=42752)
+    saved: predial-mx-v2\queretaro\QRO_PREDIAL_2013_el_marques.json
+  -- 2014 --
+    tipo=tarifa_millar              intentos=1  tokens(in=41147, out=446, cached=40704)
+    saved: predial-mx-v2\queretaro\QRO_PREDIAL_2014_el_marques.json
+  -- 2017 --
+    tipo=progresivo                 intentos=2  tokens(in=13297, out=2284, cached=11776)
+    saved: predial-mx-v2\queretaro\QRO_PREDIAL_2017_el_marques.json
+  -- 2018 --
+    tipo=progresivo                 intentos=2  tokens(in=13407, out=2476, cached=11776)
+    saved: predial-mx-v2\queretaro\QRO_PREDIAL_2018_el_marques.json
+  -- 2019 --
+    tipo=progresivo                 intentos=2  tokens(in=13021, out=2366, cached=11776)
+    saved: predial-mx-v2\queretaro\QRO_PREDIAL_2019_el_marques.json
+  -- 2021 --
+    tipo=progresivo                 intentos=2  tokens(in=12973, out=2406, cached=11776)
+    saved: predial-mx-v2\queretaro\QRO_PREDIAL_2021_el_marques.json
+  -- 2022 --
+    tipo=progresivo                 intentos=2  tokens(in=13683, out=2325, cached=11776)
+    saved: predial-mx-v2\queretaro\QRO_PREDIAL_2022_el_marques.json
+  -- 2023 --
+    tipo=progresivo                 intentos=2  tokens(in=13339, out=2310, cached=11776)
+    saved: predial-mx-v2\queretaro\QRO_PREDIAL_2023_el_marques.json
+  -- 2024 --
+    tipo=progresivo                 intentos=2  tokens(in=13361, out=2312, cached=11776)
+    saved: predial-mx-v2\queretaro\QRO_PREDIAL_2024_el_marques.json
+  -- 2025 --
+    tipo=—                          intentos=2  tokens(in=13915, out=2785, cached=12800)  [REVISAR]
+    razon: valido_2x_fallido | error1=  • predial.progresivo: Value error, brackets 1→2: hueco detectado (superior=129875.9, siguiente inferior=129875.91) | error2=  • predial.progresivo: Value error, brackets 1→2: hueco detectado (superior=129875.9, siguiente inferior=129875.91)
+    saved: predial-mx-v2\queretaro\QRO_PREDIAL_2025_el_marques.json
+  -- 2026 --
+    tipo=progresivo                 intentos=2  tokens(in=14581, out=2815, cached=13824)
+    saved: predial-mx-v2\queretaro\QRO_PREDIAL_2026_el_marques.json
+[v2] resumen: 14 archivos | tokens(in=219274, out=24110, cached=201984) | requiere_revision=1
+
+  [7/18] ezequiel_montes (cvegeo=22007, 17 anios)
+[v2] QUERETARO cvegeo=22007 (Ezequiel Montes)  modelo=gpt-5.4-mini
+  -- 2010 --
+    tipo=tarifa_millar              intentos=1  tokens(in=4185, out=364, cached=3840)
+    saved: predial-mx-v2\queretaro\QRO_PREDIAL_2010_ezequiel_montes.json
+  -- 2011 --
+    tipo=tarifa_millar              intentos=1  tokens(in=4385, out=411, cached=2816)
+    saved: predial-mx-v2\queretaro\QRO_PREDIAL_2011_ezequiel_montes.json
+  -- 2012 --
+    tipo=tarifa_millar              intentos=1  tokens(in=4425, out=359, cached=3840)
+    saved: predial-mx-v2\queretaro\QRO_PREDIAL_2012_ezequiel_montes.json
+  -- 2013 --
+    tipo=tarifa_millar              intentos=1  tokens(in=4400, out=366, cached=3840)
+    saved: predial-mx-v2\queretaro\QRO_PREDIAL_2013_ezequiel_montes.json
+  -- 2014 --
+    tipo=tarifa_millar              intentos=1  tokens(in=4433, out=370, cached=3840)
+    saved: predial-mx-v2\queretaro\QRO_PREDIAL_2014_ezequiel_montes.json
+  -- 2015 --
+    tipo=tarifa_millar              intentos=1  tokens(in=4410, out=357, cached=3840)
+    saved: predial-mx-v2\queretaro\QRO_PREDIAL_2015_ezequiel_montes.json
+  -- 2016 --
+    tipo=tarifa_millar              intentos=1  tokens(in=4413, out=361, cached=3840)
+    saved: predial-mx-v2\queretaro\QRO_PREDIAL_2016_ezequiel_montes.json
+  -- 2017 --
+    tipo=tarifa_millar              intentos=1  tokens(in=4434, out=361, cached=3840)
+    saved: predial-mx-v2\queretaro\QRO_PREDIAL_2017_ezequiel_montes.json
+  -- 2018 --
+    tipo=tarifa_millar              intentos=1  tokens(in=4432, out=409, cached=3840)
+    saved: predial-mx-v2\queretaro\QRO_PREDIAL_2018_ezequiel_montes.json
+  -- 2019 --
+    tipo=tarifa_millar              intentos=1  tokens(in=4435, out=362, cached=3840)
+    saved: predial-mx-v2\queretaro\QRO_PREDIAL_2019_ezequiel_montes.json
+  -- 2020 --
+    tipo=tarifa_millar              intentos=1  tokens(in=4406, out=359, cached=3840)
+    saved: predial-mx-v2\queretaro\QRO_PREDIAL_2020_ezequiel_montes.json
+  -- 2021 --
+    tipo=tarifa_millar              intentos=1  tokens(in=4167, out=370, cached=3840)
+    saved: predial-mx-v2\queretaro\QRO_PREDIAL_2021_ezequiel_montes.json
+  -- 2022 --
+    tipo=tarifa_millar              intentos=1  tokens(in=4169, out=375, cached=3840)
+    saved: predial-mx-v2\queretaro\QRO_PREDIAL_2022_ezequiel_montes.json
+  -- 2023 --
+    tipo=tarifa_millar              intentos=1  tokens(in=4167, out=371, cached=2816)
+    saved: predial-mx-v2\queretaro\QRO_PREDIAL_2023_ezequiel_montes.json
+  -- 2024 --
+    tipo=tarifa_millar              intentos=1  tokens(in=4189, out=354, cached=2816)
+    saved: predial-mx-v2\queretaro\QRO_PREDIAL_2024_ezequiel_montes.json
+  -- 2025 --
+    tipo=tarifa_millar              intentos=1  tokens(in=4166, out=357, cached=3840)
+    saved: predial-mx-v2\queretaro\QRO_PREDIAL_2025_ezequiel_montes.json
+  -- 2026 --
+    tipo=tarifa_millar              intentos=1  tokens(in=4168, out=363, cached=3840)
+    saved: predial-mx-v2\queretaro\QRO_PREDIAL_2026_ezequiel_montes.json
+[v2] resumen: 17 archivos | tokens(in=73384, out=6269, cached=62208) | requiere_revision=0
+
+  [8/18] huimilpan (cvegeo=22008, 17 anios)
+[v2] QUERETARO cvegeo=22008 (Huimilpan)  modelo=gpt-5.4-mini
+  -- 2010 --
+    tipo=tarifa_millar              intentos=1  tokens(in=4169, out=364, cached=2816)
+    saved: predial-mx-v2\queretaro\QRO_PREDIAL_2010_huimilpan.json
+  -- 2011 --
+    tipo=tarifa_millar              intentos=1  tokens(in=4411, out=371, cached=3840)
+    saved: predial-mx-v2\queretaro\QRO_PREDIAL_2011_huimilpan.json
+  -- 2012 --
+    tipo=tarifa_millar              intentos=1  tokens(in=4424, out=368, cached=3840)
+    saved: predial-mx-v2\queretaro\QRO_PREDIAL_2012_huimilpan.json
+  -- 2013 --
+    tipo=tarifa_millar              intentos=1  tokens(in=4427, out=363, cached=3840)
+    saved: predial-mx-v2\queretaro\QRO_PREDIAL_2013_huimilpan.json
+  -- 2014 --
+    tipo=tarifa_millar              intentos=1  tokens(in=4506, out=368, cached=2816)
+    saved: predial-mx-v2\queretaro\QRO_PREDIAL_2014_huimilpan.json
+  -- 2015 --
+    tipo=tarifa_millar              intentos=1  tokens(in=4507, out=355, cached=4352)
+    saved: predial-mx-v2\queretaro\QRO_PREDIAL_2015_huimilpan.json
+  -- 2016 --
+    tipo=tarifa_millar              intentos=1  tokens(in=4511, out=372, cached=4352)
+    saved: predial-mx-v2\queretaro\QRO_PREDIAL_2016_huimilpan.json
+  -- 2017 --
+    tipo=progresivo                 intentos=2  tokens(in=11022, out=2353, cached=9728)
+    saved: predial-mx-v2\queretaro\QRO_PREDIAL_2017_huimilpan.json
+  -- 2018 --
+    tipo=progresivo                 intentos=2  tokens(in=11202, out=2367, cached=9728)
+    saved: predial-mx-v2\queretaro\QRO_PREDIAL_2018_huimilpan.json
+  -- 2019 --
+    tipo=progresivo                 intentos=2  tokens(in=11272, out=2228, cached=9728)
+    saved: predial-mx-v2\queretaro\QRO_PREDIAL_2019_huimilpan.json
+  -- 2020 --
+    tipo=progresivo                 intentos=2  tokens(in=11990, out=2251, cached=10752)
+    saved: predial-mx-v2\queretaro\QRO_PREDIAL_2020_huimilpan.json
+  -- 2021 --
+    tipo=progresivo                 intentos=2  tokens(in=11578, out=2362, cached=7680)
+    saved: predial-mx-v2\queretaro\QRO_PREDIAL_2021_huimilpan.json
+  -- 2022 --
+    tipo=progresivo                 intentos=2  tokens(in=12756, out=2369, cached=11776)
+    saved: predial-mx-v2\queretaro\QRO_PREDIAL_2022_huimilpan.json
+  -- 2023 --
+    tipo=progresivo                 intentos=2  tokens(in=12482, out=2351, cached=11776)
+    saved: predial-mx-v2\queretaro\QRO_PREDIAL_2023_huimilpan.json
+  -- 2024 --
+    tipo=progresivo                 intentos=2  tokens(in=12426, out=2380, cached=11776)
+    saved: predial-mx-v2\queretaro\QRO_PREDIAL_2024_huimilpan.json
+  -- 2025 --
+    tipo=progresivo                 intentos=2  tokens(in=12462, out=2370, cached=11776)
+    saved: predial-mx-v2\queretaro\QRO_PREDIAL_2025_huimilpan.json
+  -- 2026 --
+    tipo=progresivo                 intentos=2  tokens(in=12464, out=2386, cached=11776)
+    saved: predial-mx-v2\queretaro\QRO_PREDIAL_2026_huimilpan.json
+[v2] resumen: 17 archivos | tokens(in=150609, out=25978, cached=132352) | requiere_revision=0
+
+  [9/18] jalpan_de_serra (cvegeo=22009, 17 anios)
+[v2] QUERETARO cvegeo=22009 (Jalpan de Serra)  modelo=gpt-5.4-mini
+  -- 2010 --
+    tipo=tarifa_millar              intentos=1  tokens(in=4207, out=377, cached=3840)
+    saved: predial-mx-v2\queretaro\QRO_PREDIAL_2010_jalpan_de_serra.json
+  -- 2011 --
+    tipo=tarifa_millar              intentos=1  tokens(in=4421, out=354, cached=3840)
+    saved: predial-mx-v2\queretaro\QRO_PREDIAL_2011_jalpan_de_serra.json
+  -- 2012 --
+    tipo=tarifa_millar              intentos=1  tokens(in=4370, out=361, cached=3840)
+    saved: predial-mx-v2\queretaro\QRO_PREDIAL_2012_jalpan_de_serra.json
+  -- 2013 --
+    tipo=tarifa_millar              intentos=1  tokens(in=4391, out=404, cached=2816)
+    saved: predial-mx-v2\queretaro\QRO_PREDIAL_2013_jalpan_de_serra.json
+  -- 2014 --
+    tipo=tarifa_millar              intentos=1  tokens(in=4504, out=344, cached=4352)
+    saved: predial-mx-v2\queretaro\QRO_PREDIAL_2014_jalpan_de_serra.json
+  -- 2015 --
+    tipo=tarifa_millar              intentos=1  tokens(in=4482, out=342, cached=4352)
+    saved: predial-mx-v2\queretaro\QRO_PREDIAL_2015_jalpan_de_serra.json
+  -- 2016 --
+    tipo=tarifa_millar              intentos=1  tokens(in=4484, out=359, cached=4352)
+    saved: predial-mx-v2\queretaro\QRO_PREDIAL_2016_jalpan_de_serra.json
+  -- 2017 --
+    tipo=progresivo                 intentos=2  tokens(in=11115, out=2296, cached=7680)
+    saved: predial-mx-v2\queretaro\QRO_PREDIAL_2017_jalpan_de_serra.json
+  -- 2018 --
+    tipo=progresivo                 intentos=1  tokens(in=5446, out=1195, cached=4864)
+    saved: predial-mx-v2\queretaro\QRO_PREDIAL_2018_jalpan_de_serra.json
+  -- 2019 --
+    tipo=progresivo                 intentos=2  tokens(in=11373, out=2357, cached=9728)
+    saved: predial-mx-v2\queretaro\QRO_PREDIAL_2019_jalpan_de_serra.json
+  -- 2020 --
+    tipo=progresivo                 intentos=2  tokens(in=11621, out=2365, cached=9728)
+    saved: predial-mx-v2\queretaro\QRO_PREDIAL_2020_jalpan_de_serra.json
+  -- 2021 --
+    tipo=progresivo                 intentos=2  tokens(in=11633, out=2391, cached=9728)
+    saved: predial-mx-v2\queretaro\QRO_PREDIAL_2021_jalpan_de_serra.json
+  -- 2022 --
+    tipo=progresivo                 intentos=2  tokens(in=11333, out=2355, cached=8704)
+    saved: predial-mx-v2\queretaro\QRO_PREDIAL_2022_jalpan_de_serra.json
+  -- 2023 --
+    tipo=progresivo                 intentos=2  tokens(in=11393, out=2349, cached=9728)
+    saved: predial-mx-v2\queretaro\QRO_PREDIAL_2023_jalpan_de_serra.json
+  -- 2024 --
+    tipo=progresivo                 intentos=2  tokens(in=11335, out=2378, cached=8704)
+    saved: predial-mx-v2\queretaro\QRO_PREDIAL_2024_jalpan_de_serra.json
+  -- 2025 --
+    tipo=progresivo                 intentos=2  tokens(in=11341, out=2368, cached=9728)
+    saved: predial-mx-v2\queretaro\QRO_PREDIAL_2025_jalpan_de_serra.json
+  -- 2026 --
+    tipo=progresivo                 intentos=2  tokens(in=11351, out=2361, cached=9728)
+    saved: predial-mx-v2\queretaro\QRO_PREDIAL_2026_jalpan_de_serra.json
+[v2] resumen: 17 archivos | tokens(in=138800, out=24956, cached=115712) | requiere_revision=0
+
+  [10/18] landa_de_matamoros (cvegeo=22010, 17 anios)
+[v2] QUERETARO cvegeo=22010 (Landa de Matamoros)  modelo=gpt-5.4-mini
+  -- 2010 --
+    tipo=tarifa_millar              intentos=1  tokens(in=4173, out=369, cached=3840)
+    saved: predial-mx-v2\queretaro\QRO_PREDIAL_2010_landa_de_matamoros.json
+  -- 2011 --
+    tipo=tarifa_millar              intentos=1  tokens(in=4393, out=377, cached=3840)
+    saved: predial-mx-v2\queretaro\QRO_PREDIAL_2011_landa_de_matamoros.json
+  -- 2012 --
+    tipo=tarifa_millar              intentos=1  tokens(in=4424, out=361, cached=3840)
+    saved: predial-mx-v2\queretaro\QRO_PREDIAL_2012_landa_de_matamoros.json
+  -- 2013 --
+    tipo=tarifa_millar              intentos=1  tokens(in=4427, out=401, cached=3840)
+    saved: predial-mx-v2\queretaro\QRO_PREDIAL_2013_landa_de_matamoros.json
+  -- 2014 --
+    tipo=tarifa_millar              intentos=1  tokens(in=4479, out=347, cached=4352)
+    saved: predial-mx-v2\queretaro\QRO_PREDIAL_2014_landa_de_matamoros.json
+  -- 2015 --
+    tipo=tarifa_millar              intentos=1  tokens(in=4510, out=397, cached=2816)
+    saved: predial-mx-v2\queretaro\QRO_PREDIAL_2015_landa_de_matamoros.json
+  -- 2016 --
+    tipo=tarifa_millar              intentos=1  tokens(in=4486, out=364, cached=4352)
+    saved: predial-mx-v2\queretaro\QRO_PREDIAL_2016_landa_de_matamoros.json
+  -- 2017 --
+    tipo=tarifa_millar              intentos=1  tokens(in=4509, out=340, cached=4352)
+    saved: predial-mx-v2\queretaro\QRO_PREDIAL_2017_landa_de_matamoros.json
+  -- 2018 --
+    tipo=tarifa_millar              intentos=1  tokens(in=4487, out=360, cached=4352)
+    saved: predial-mx-v2\queretaro\QRO_PREDIAL_2018_landa_de_matamoros.json
+  -- 2019 --
+    tipo=tarifa_millar              intentos=1  tokens(in=4501, out=366, cached=4352)
+    saved: predial-mx-v2\queretaro\QRO_PREDIAL_2019_landa_de_matamoros.json
+  -- 2020 --
+    tipo=tarifa_millar              intentos=1  tokens(in=4510, out=343, cached=4352)
+    saved: predial-mx-v2\queretaro\QRO_PREDIAL_2020_landa_de_matamoros.json
+  -- 2021 --
+    tipo=tarifa_millar              intentos=1  tokens(in=4407, out=362, cached=3840)
+    saved: predial-mx-v2\queretaro\QRO_PREDIAL_2021_landa_de_matamoros.json
+  -- 2022 --
+    tipo=tarifa_millar              intentos=1  tokens(in=4406, out=346, cached=3840)
+    saved: predial-mx-v2\queretaro\QRO_PREDIAL_2022_landa_de_matamoros.json
+  -- 2023 --
+    tipo=tarifa_millar              intentos=1  tokens(in=4429, out=391, cached=2816)
+    saved: predial-mx-v2\queretaro\QRO_PREDIAL_2023_landa_de_matamoros.json
+  -- 2024 --
+    tipo=tarifa_millar              intentos=1  tokens(in=4405, out=351, cached=3840)
+    saved: predial-mx-v2\queretaro\QRO_PREDIAL_2024_landa_de_matamoros.json
+  -- 2025 --
+    tipo=tarifa_millar              intentos=1  tokens(in=4431, out=368, cached=3840)
+    saved: predial-mx-v2\queretaro\QRO_PREDIAL_2025_landa_de_matamoros.json
+  -- 2026 --
+    tipo=tarifa_millar              intentos=1  tokens(in=4405, out=345, cached=3840)
+    saved: predial-mx-v2\queretaro\QRO_PREDIAL_2026_landa_de_matamoros.json
+[v2] resumen: 17 archivos | tokens(in=75382, out=6188, cached=66304) | requiere_revision=0
+
+  [11/18] pedro_escobedo (cvegeo=22012, 17 anios)
+[v2] QUERETARO cvegeo=22012 (Pedro Escobedo)  modelo=gpt-5.4-mini
+  -- 2010 --
+    tipo=tarifa_millar              intentos=1  tokens(in=4177, out=359, cached=3840)
+    saved: predial-mx-v2\queretaro\QRO_PREDIAL_2010_pedro_escobedo.json
+  -- 2011 --
+    tipo=tarifa_millar              intentos=1  tokens(in=4402, out=359, cached=2816)
+    saved: predial-mx-v2\queretaro\QRO_PREDIAL_2011_pedro_escobedo.json
+  -- 2012 --
+    tipo=tarifa_millar              intentos=1  tokens(in=4422, out=353, cached=3840)
+    saved: predial-mx-v2\queretaro\QRO_PREDIAL_2012_pedro_escobedo.json
+  -- 2013 --
+    tipo=tarifa_millar              intentos=1  tokens(in=4398, out=366, cached=3840)
+    saved: predial-mx-v2\queretaro\QRO_PREDIAL_2013_pedro_escobedo.json
+  -- 2014 --
+    tipo=tarifa_millar              intentos=1  tokens(in=4506, out=357, cached=4352)
+    saved: predial-mx-v2\queretaro\QRO_PREDIAL_2014_pedro_escobedo.json
+  -- 2015 --
+    tipo=tarifa_millar              intentos=1  tokens(in=4480, out=374, cached=4352)
+    saved: predial-mx-v2\queretaro\QRO_PREDIAL_2015_pedro_escobedo.json
+  -- 2016 --
+    tipo=tarifa_millar              intentos=1  tokens(in=4482, out=364, cached=2816)
+    saved: predial-mx-v2\queretaro\QRO_PREDIAL_2016_pedro_escobedo.json
+  -- 2017 --
+    tipo=progresivo                 intentos=2  tokens(in=12773, out=2341, cached=11776)
+    saved: predial-mx-v2\queretaro\QRO_PREDIAL_2017_pedro_escobedo.json
+  -- 2018 --
+    tipo=progresivo                 intentos=2  tokens(in=12819, out=2262, cached=11776)
+    saved: predial-mx-v2\queretaro\QRO_PREDIAL_2018_pedro_escobedo.json
+  -- 2019 --
+    tipo=progresivo                 intentos=2  tokens(in=13337, out=2399, cached=11776)
+    saved: predial-mx-v2\queretaro\QRO_PREDIAL_2019_pedro_escobedo.json
+  -- 2020 --
+    tipo=progresivo                 intentos=2  tokens(in=13295, out=2367, cached=11776)
+    saved: predial-mx-v2\queretaro\QRO_PREDIAL_2020_pedro_escobedo.json
+  -- 2021 --
+    tipo=—                          intentos=2  tokens(in=13251, out=2323, cached=11776)  [REVISAR]
+    razon: valido_2x_fallido | error1=  • predial.progresivo: Value error, brackets 1→2: hueco detectado (superior=26701.14, siguiente inferior=26701.15) | error2=  • predial.progresivo: Value error, brackets 1→2: hueco detectado (superior=26701.14, siguiente inferior=26701.15)
+    saved: predial-mx-v2\queretaro\QRO_PREDIAL_2021_pedro_escobedo.json
+  -- 2022 --
+    tipo=progresivo                 intentos=2  tokens(in=13307, out=2341, cached=9728)
+    saved: predial-mx-v2\queretaro\QRO_PREDIAL_2022_pedro_escobedo.json
+  -- 2023 --
+    tipo=progresivo                 intentos=2  tokens(in=13303, out=2361, cached=11776)
+    saved: predial-mx-v2\queretaro\QRO_PREDIAL_2023_pedro_escobedo.json
+  -- 2024 --
+    tipo=progresivo                 intentos=2  tokens(in=13265, out=2395, cached=11776)
+    saved: predial-mx-v2\queretaro\QRO_PREDIAL_2024_pedro_escobedo.json
+  -- 2025 --
+    tipo=progresivo                 intentos=2  tokens(in=12743, out=2409, cached=11776)
+    saved: predial-mx-v2\queretaro\QRO_PREDIAL_2025_pedro_escobedo.json
+  -- 2026 --
+    tipo=progresivo                 intentos=2  tokens(in=12899, out=2466, cached=11776)
+    saved: predial-mx-v2\queretaro\QRO_PREDIAL_2026_pedro_escobedo.json
+[v2] resumen: 17 archivos | tokens(in=161859, out=26196, cached=141568) | requiere_revision=1
+
+  [12/18] penamiller (cvegeo=22013, 17 anios)
+[v2] QUERETARO cvegeo=22013 (Peñamiller)  modelo=gpt-5.4-mini
+  -- 2010 --
+    tipo=tarifa_millar              intentos=1  tokens(in=4168, out=368, cached=3840)
+    saved: predial-mx-v2\queretaro\QRO_PREDIAL_2010_penamiller.json
+  -- 2011 --
+    tipo=tarifa_millar              intentos=1  tokens(in=4410, out=365, cached=2816)
+    saved: predial-mx-v2\queretaro\QRO_PREDIAL_2011_penamiller.json
+  -- 2012 --
+    tipo=tarifa_millar              intentos=1  tokens(in=4427, out=362, cached=3840)
+    saved: predial-mx-v2\queretaro\QRO_PREDIAL_2012_penamiller.json
+  -- 2013 --
+    tipo=tarifa_millar              intentos=1  tokens(in=4419, out=361, cached=2816)
+    saved: predial-mx-v2\queretaro\QRO_PREDIAL_2013_penamiller.json
+  -- 2014 --
+    tipo=tarifa_millar              intentos=1  tokens(in=4504, out=374, cached=4352)
+    saved: predial-mx-v2\queretaro\QRO_PREDIAL_2014_penamiller.json
+  -- 2015 --
+    tipo=tarifa_millar              intentos=1  tokens(in=4502, out=372, cached=4352)
+    saved: predial-mx-v2\queretaro\QRO_PREDIAL_2015_penamiller.json
+  -- 2016 --
+    tipo=tarifa_millar              intentos=1  tokens(in=4487, out=338, cached=4352)
+    saved: predial-mx-v2\queretaro\QRO_PREDIAL_2016_penamiller.json
+  -- 2017 --
+    tipo=tarifa_millar              intentos=1  tokens(in=4505, out=364, cached=4352)
+    saved: predial-mx-v2\queretaro\QRO_PREDIAL_2017_penamiller.json
+  -- 2018 --
+    tipo=tarifa_millar              intentos=1  tokens(in=4496, out=347, cached=4352)
+    saved: predial-mx-v2\queretaro\QRO_PREDIAL_2018_penamiller.json
+  -- 2019 --
+    tipo=tarifa_millar              intentos=1  tokens(in=4496, out=344, cached=4352)
+    saved: predial-mx-v2\queretaro\QRO_PREDIAL_2019_penamiller.json
+  -- 2020 --
+    tipo=tarifa_millar              intentos=1  tokens(in=4495, out=397, cached=4352)
+    saved: predial-mx-v2\queretaro\QRO_PREDIAL_2020_penamiller.json
+  -- 2021 --
+    tipo=tarifa_millar              intentos=1  tokens(in=4400, out=366, cached=3840)
+    saved: predial-mx-v2\queretaro\QRO_PREDIAL_2021_penamiller.json
+  -- 2022 --
+    tipo=tarifa_millar              intentos=1  tokens(in=4422, out=365, cached=3840)
+    saved: predial-mx-v2\queretaro\QRO_PREDIAL_2022_penamiller.json
+  -- 2023 --
+    tipo=tarifa_millar              intentos=1  tokens(in=4422, out=349, cached=3840)
+    saved: predial-mx-v2\queretaro\QRO_PREDIAL_2023_penamiller.json
+  -- 2024 --
+    tipo=tarifa_millar              intentos=1  tokens(in=4420, out=364, cached=3840)
+    saved: predial-mx-v2\queretaro\QRO_PREDIAL_2024_penamiller.json
+  -- 2025 --
+    tipo=tarifa_millar              intentos=1  tokens(in=4399, out=361, cached=2816)
+    saved: predial-mx-v2\queretaro\QRO_PREDIAL_2025_penamiller.json
+  -- 2026 --
+    tipo=tarifa_millar              intentos=1  tokens(in=4399, out=359, cached=3840)
+    saved: predial-mx-v2\queretaro\QRO_PREDIAL_2026_penamiller.json
+[v2] resumen: 17 archivos | tokens(in=75371, out=6156, cached=65792) | requiere_revision=0
+
+  [13/18] pinal_de_amoles (cvegeo=22002, 17 anios)
+[v2] QUERETARO cvegeo=22002 (Pinal de Amoles)  modelo=gpt-5.4-mini
+  -- 2010 --
+    tipo=tarifa_millar              intentos=1  tokens(in=4174, out=357, cached=3840)
+    saved: predial-mx-v2\queretaro\QRO_PREDIAL_2010_pinal_de_amoles.json
+  -- 2011 --
+    tipo=tarifa_millar              intentos=1  tokens(in=4415, out=371, cached=3840)
+    saved: predial-mx-v2\queretaro\QRO_PREDIAL_2011_pinal_de_amoles.json
+  -- 2012 --
+    tipo=tarifa_millar              intentos=1  tokens(in=4422, out=363, cached=3840)
+    saved: predial-mx-v2\queretaro\QRO_PREDIAL_2012_pinal_de_amoles.json
+  -- 2013 --
+    tipo=tarifa_millar              intentos=1  tokens(in=4421, out=364, cached=3840)
+    saved: predial-mx-v2\queretaro\QRO_PREDIAL_2013_pinal_de_amoles.json
+  -- 2014 --
+    tipo=tarifa_millar              intentos=1  tokens(in=4506, out=369, cached=4352)
+    saved: predial-mx-v2\queretaro\QRO_PREDIAL_2014_pinal_de_amoles.json
+  -- 2015 --
+    tipo=tarifa_millar              intentos=1  tokens(in=4510, out=362, cached=4352)
+    saved: predial-mx-v2\queretaro\QRO_PREDIAL_2015_pinal_de_amoles.json
+  -- 2016 --
+    tipo=tarifa_millar              intentos=1  tokens(in=4528, out=387, cached=2816)
+    saved: predial-mx-v2\queretaro\QRO_PREDIAL_2016_pinal_de_amoles.json
+  -- 2017 --
+    tipo=tarifa_millar              intentos=1  tokens(in=4520, out=352, cached=4352)
+    saved: predial-mx-v2\queretaro\QRO_PREDIAL_2017_pinal_de_amoles.json
+  -- 2018 --
+    tipo=tarifa_millar              intentos=1  tokens(in=4523, out=352, cached=4352)
+    saved: predial-mx-v2\queretaro\QRO_PREDIAL_2018_pinal_de_amoles.json
+  -- 2019 --
+    tipo=tarifa_millar              intentos=1  tokens(in=4521, out=347, cached=4352)
+    saved: predial-mx-v2\queretaro\QRO_PREDIAL_2019_pinal_de_amoles.json
+  -- 2020 --
+    tipo=tarifa_millar              intentos=1  tokens(in=4495, out=374, cached=4352)
+    saved: predial-mx-v2\queretaro\QRO_PREDIAL_2020_pinal_de_amoles.json
+  -- 2021 --
+    tipo=tarifa_millar              intentos=1  tokens(in=4485, out=369, cached=4352)
+    saved: predial-mx-v2\queretaro\QRO_PREDIAL_2021_pinal_de_amoles.json
+  -- 2022 --
+    tipo=tarifa_millar              intentos=1  tokens(in=4510, out=354, cached=2816)
+    saved: predial-mx-v2\queretaro\QRO_PREDIAL_2022_pinal_de_amoles.json
+  -- 2023 --
+    tipo=tarifa_millar              intentos=1  tokens(in=4486, out=369, cached=4352)
+    saved: predial-mx-v2\queretaro\QRO_PREDIAL_2023_pinal_de_amoles.json
+  -- 2024 --
+    tipo=tarifa_millar              intentos=1  tokens(in=4508, out=347, cached=4352)
+    saved: predial-mx-v2\queretaro\QRO_PREDIAL_2024_pinal_de_amoles.json
+  -- 2025 --
+    tipo=tarifa_millar              intentos=1  tokens(in=4493, out=379, cached=4352)
+    saved: predial-mx-v2\queretaro\QRO_PREDIAL_2025_pinal_de_amoles.json
+  -- 2026 --
+    tipo=tarifa_millar              intentos=1  tokens(in=4410, out=365, cached=3840)
+    saved: predial-mx-v2\queretaro\QRO_PREDIAL_2026_pinal_de_amoles.json
+[v2] resumen: 17 archivos | tokens(in=75927, out=6181, cached=68352) | requiere_revision=0
+
+  [14/18] queretaro (cvegeo=22014, 17 anios)
+[v2] QUERETARO cvegeo=22014 (Queretaro)  modelo=gpt-5.4-mini
+  -- 2010 --
+    tipo=tarifa_millar              intentos=1  tokens(in=4371, out=367, cached=3840)
+    saved: predial-mx-v2\queretaro\QRO_PREDIAL_2010_queretaro.json
+  -- 2011 --
+    tipo=tarifa_millar              intentos=1  tokens(in=4445, out=361, cached=3840)
+    saved: predial-mx-v2\queretaro\QRO_PREDIAL_2011_queretaro.json
+  -- 2012 --
+    tipo=tarifa_millar              intentos=1  tokens(in=4485, out=360, cached=4352)
+    saved: predial-mx-v2\queretaro\QRO_PREDIAL_2012_queretaro.json
+  -- 2013 --
+    tipo=tarifa_millar              intentos=1  tokens(in=4534, out=352, cached=4352)
+    saved: predial-mx-v2\queretaro\QRO_PREDIAL_2013_queretaro.json
+  -- 2014 --
+    tipo=tarifa_millar              intentos=1  tokens(in=4314, out=364, cached=3840)
+    saved: predial-mx-v2\queretaro\QRO_PREDIAL_2014_queretaro.json
+  -- 2015 --
+    tipo=tarifa_millar              intentos=1  tokens(in=4313, out=386, cached=3840)
+    saved: predial-mx-v2\queretaro\QRO_PREDIAL_2015_queretaro.json
+  -- 2016 --
+    tipo=progresivo                 intentos=2  tokens(in=13284, out=2378, cached=11776)
+    saved: predial-mx-v2\queretaro\QRO_PREDIAL_2016_queretaro.json
+  -- 2017 --
+    tipo=progresivo                 intentos=1  tokens(in=6620, out=1199, cached=5888)
+    saved: predial-mx-v2\queretaro\QRO_PREDIAL_2017_queretaro.json
+  -- 2018 --
+    tipo=progresivo                 intentos=1  tokens(in=6628, out=1221, cached=5888)
+    saved: predial-mx-v2\queretaro\QRO_PREDIAL_2018_queretaro.json
+  -- 2019 --
+    tipo=progresivo                 intentos=2  tokens(in=13416, out=2430, cached=11776)
+    saved: predial-mx-v2\queretaro\QRO_PREDIAL_2019_queretaro.json
+  -- 2020 --
+    tipo=progresivo                 intentos=2  tokens(in=185512, out=2514, cached=95744)
+    saved: predial-mx-v2\queretaro\QRO_PREDIAL_2020_queretaro.json
+  -- 2021 --
+    tipo=progresivo                 intentos=2  tokens(in=191024, out=2530, cached=5632)
+    saved: predial-mx-v2\queretaro\QRO_PREDIAL_2021_queretaro.json
+  -- 2022 --
+    tipo=—                          intentos=2  tokens(in=197644, out=2528, cached=196096)  [REVISAR]
+    razon: valido_2x_fallido | error1=  • predial.progresivo: Value error, brackets 1→2: hueco detectado (superior=45129.0, siguiente inferior=45129.01) | error2=  • predial.progresivo: Value error, brackets 2→3: hueco detectado (superior=68596.08, siguiente inferior=68596.09)
+    saved: predial-mx-v2\queretaro\QRO_PREDIAL_2022_queretaro.json
+  -- 2023 --
+    tipo=—                          intentos=2  tokens(in=203372, out=2495, cached=103936)  [REVISAR]
+    razon: valido_2x_fallido | error1=  • predial.progresivo: Value error, brackets 2→3: hueco detectado (superior=68596.08, siguiente inferior=68596.09) | error2=  • predial.progresivo: Value error, brackets 1→2: hueco detectado (superior=45129.0, siguiente inferior=45129.01)
+    saved: predial-mx-v2\queretaro\QRO_PREDIAL_2023_queretaro.json
+  -- 2024 --
+    tipo=—                          intentos=2  tokens(in=196806, out=2508, cached=98048)  [REVISAR]
+    razon: valido_2x_fallido | error1=  • predial.progresivo: Value error, brackets 2→3: hueco detectado (superior=68596.08, siguiente inferior=68596.09) | error2=  • predial.progresivo: Value error, brackets 1→2: hueco detectado (superior=45129.0, siguiente inferior=45129.01)
+    saved: predial-mx-v2\queretaro\QRO_PREDIAL_2024_queretaro.json
+  -- 2025 --
+    tipo=progresivo                 intentos=2  tokens(in=207454, out=2500, cached=206336)
+    saved: predial-mx-v2\queretaro\QRO_PREDIAL_2025_queretaro.json
+  -- 2026 --
+    tipo=progresivo                 intentos=2  tokens(in=217594, out=2425, cached=216576)
+    saved: predial-mx-v2\queretaro\QRO_PREDIAL_2026_queretaro.json
+[v2] resumen: 17 archivos | tokens(in=1465816, out=26918, cached=981760) | requiere_revision=3
+
+  [15/18] san_joaquin (cvegeo=22015, 17 anios)
+[v2] QUERETARO cvegeo=22015 (San Joaquin)  modelo=gpt-5.4-mini
+  -- 2010 --
+    tipo=tarifa_millar              intentos=1  tokens(in=4167, out=374, cached=3840)
+    saved: predial-mx-v2\queretaro\QRO_PREDIAL_2010_san_joaquin.json
+  -- 2011 --
+    tipo=tarifa_millar              intentos=1  tokens(in=4410, out=360, cached=3840)
+    saved: predial-mx-v2\queretaro\QRO_PREDIAL_2011_san_joaquin.json
+  -- 2012 --
+    tipo=tarifa_millar              intentos=1  tokens(in=4424, out=360, cached=3840)
+    saved: predial-mx-v2\queretaro\QRO_PREDIAL_2012_san_joaquin.json
+  -- 2013 --
+    tipo=tarifa_millar              intentos=1  tokens(in=4419, out=357, cached=3840)
+    saved: predial-mx-v2\queretaro\QRO_PREDIAL_2013_san_joaquin.json
+  -- 2014 --
+    tipo=tarifa_millar              intentos=1  tokens(in=4480, out=367, cached=4352)
+    saved: predial-mx-v2\queretaro\QRO_PREDIAL_2014_san_joaquin.json
+  -- 2015 --
+    tipo=tarifa_millar              intentos=1  tokens(in=4479, out=371, cached=4352)
+    saved: predial-mx-v2\queretaro\QRO_PREDIAL_2015_san_joaquin.json
+  -- 2016 --
+    tipo=tarifa_millar              intentos=1  tokens(in=4474, out=350, cached=4352)
+    saved: predial-mx-v2\queretaro\QRO_PREDIAL_2016_san_joaquin.json
+  -- 2017 --
+    tipo=tarifa_millar              intentos=1  tokens(in=4501, out=349, cached=4352)
+    saved: predial-mx-v2\queretaro\QRO_PREDIAL_2017_san_joaquin.json
+  -- 2018 --
+    tipo=tarifa_millar              intentos=1  tokens(in=4500, out=349, cached=4352)
+    saved: predial-mx-v2\queretaro\QRO_PREDIAL_2018_san_joaquin.json
+  -- 2019 --
+    tipo=tarifa_millar              intentos=1  tokens(in=4495, out=359, cached=4352)
+    saved: predial-mx-v2\queretaro\QRO_PREDIAL_2019_san_joaquin.json
+  -- 2020 --
+    tipo=tarifa_millar              intentos=1  tokens(in=4472, out=350, cached=4352)
+    saved: predial-mx-v2\queretaro\QRO_PREDIAL_2020_san_joaquin.json
+  -- 2021 --
+    tipo=tarifa_millar              intentos=1  tokens(in=4473, out=383, cached=4352)
+    saved: predial-mx-v2\queretaro\QRO_PREDIAL_2021_san_joaquin.json
+  -- 2022 --
+    tipo=tarifa_millar              intentos=1  tokens(in=4498, out=366, cached=4352)
+    saved: predial-mx-v2\queretaro\QRO_PREDIAL_2022_san_joaquin.json
+  -- 2023 --
+    tipo=tarifa_millar              intentos=1  tokens(in=4496, out=365, cached=3328)
+    saved: predial-mx-v2\queretaro\QRO_PREDIAL_2023_san_joaquin.json
+  -- 2024 --
+    tipo=tarifa_millar              intentos=1  tokens(in=4489, out=336, cached=4352)
+    saved: predial-mx-v2\queretaro\QRO_PREDIAL_2024_san_joaquin.json
+  -- 2025 --
+    tipo=tarifa_millar              intentos=1  tokens(in=4477, out=360, cached=4352)
+    saved: predial-mx-v2\queretaro\QRO_PREDIAL_2025_san_joaquin.json
+  -- 2026 --
+    tipo=tarifa_millar              intentos=1  tokens(in=4476, out=366, cached=2816)
+    saved: predial-mx-v2\queretaro\QRO_PREDIAL_2026_san_joaquin.json
+[v2] resumen: 17 archivos | tokens(in=75730, out=6122, cached=69376) | requiere_revision=0
+
+  [16/18] san_juan_del_rio (cvegeo=22016, 16 anios)
+[v2] QUERETARO cvegeo=22016 (San Juan del Rio)  modelo=gpt-5.4-mini_PREDIAL_2012_san_juan_del_rio.json
+  -- 2013 --
+    tipo=tarifa_millar              intentos=1  tokens(in=4498, out=353, cached=2816)
+    saved: predial-mx-v2\queretaro\QRO_PREDIAL_2013_san_juan_del_rio.json
+  -- 2014 --
+    tipo=tarifa_millar              intentos=1  tokens(in=4392, out=367, cached=3328)
+    saved: predial-mx-v2\queretaro\QRO_PREDIAL_2014_san_juan_del_rio.json
+  -- 2015 --
+    tipo=tarifa_millar              intentos=1  tokens(in=4417, out=357, cached=3328)
+    saved: predial-mx-v2\queretaro\QRO_PREDIAL_2015_san_juan_del_rio.json
+  -- 2016 --
+    tipo=tarifa_millar              intentos=1  tokens(in=4396, out=362, cached=3328)
+    saved: predial-mx-v2\queretaro\QRO_PREDIAL_2016_san_juan_del_rio.json
+  -- 2017 --
+    tipo=progresivo                 intentos=2  tokens(in=13419, out=2368, cached=7168)
+    saved: predial-mx-v2\queretaro\QRO_PREDIAL_2017_san_juan_del_rio.json
+  -- 2018 --
+    tipo=progresivo                 intentos=2  tokens(in=13457, out=2360, cached=6656)
+    saved: predial-mx-v2\queretaro\QRO_PREDIAL_2018_san_juan_del_rio.json
+  -- 2019 --
+    tipo=progresivo                 intentos=2  tokens(in=13165, out=2380, cached=7168)
+    saved: predial-mx-v2\queretaro\QRO_PREDIAL_2019_san_juan_del_rio.json
+  -- 2020 --
+    tipo=progresivo                 intentos=2  tokens(in=13383, out=2401, cached=7168)
+    saved: predial-mx-v2\queretaro\QRO_PREDIAL_2020_san_juan_del_rio.json
+  -- 2021 --
+    tipo=progresivo                 intentos=2  tokens(in=13373, out=2345, cached=6656)
+    saved: predial-mx-v2\queretaro\QRO_PREDIAL_2021_san_juan_del_rio.json
+  -- 2022 --
+    tipo=progresivo                 intentos=2  tokens(in=14131, out=3369, cached=6656)
+    saved: predial-mx-v2\queretaro\QRO_PREDIAL_2022_san_juan_del_rio.json
+  -- 2023 --
+    tipo=progresivo                 intentos=2  tokens(in=14125, out=3411, cached=7168)
+    saved: predial-mx-v2\queretaro\QRO_PREDIAL_2023_san_juan_del_rio.json
+  -- 2024 --
+    tipo=progresivo                 intentos=2  tokens(in=14115, out=3369, cached=7168)
+    saved: predial-mx-v2\queretaro\QRO_PREDIAL_2024_san_juan_del_rio.json
+  -- 2025 --
+    tipo=progresivo                 intentos=2  tokens(in=14115, out=3408, cached=7168)
+    saved: predial-mx-v2\queretaro\QRO_PREDIAL_2025_san_juan_del_rio.json
+  -- 2026 --
+    tipo=—                          intentos=2  tokens(in=14163, out=3420, cached=7168)  [REVISAR]
+    razon: valido_2x_fallido | error1=  • predial.progresivo: Value error, brackets 1→2: hueco detectado (superior=44514.78, siguiente inferior=44514.79) | error2=  • predial.progresivo: Value error, brackets 1→2: hueco detectado (superior=44514.78, siguiente inferior=44514.79)
+    saved: predial-mx-v2\queretaro\QRO_PREDIAL_2026_san_juan_del_rio.json
+[v2] resumen: 16 archivos | tokens(in=164092, out=31011, cached=89600) | requiere_revision=1
+
+  [17/18] tequisquiapan (cvegeo=22017, 17 anios)
+[v2] QUERETARO cvegeo=22017 (Tequisquiapan)  modelo=gpt-5.4-mini
+  -- 2010 --
+    tipo=tarifa_millar              intentos=1  tokens(in=4170, out=365, cached=2816)
+    saved: predial-mx-v2\queretaro\QRO_PREDIAL_2010_tequisquiapan.json
+  -- 2011 --
+    tipo=tarifa_millar              intentos=1  tokens(in=4390, out=371, cached=3328)
+    saved: predial-mx-v2\queretaro\QRO_PREDIAL_2011_tequisquiapan.json
+  -- 2012 --
+    tipo=tarifa_millar              intentos=1  tokens(in=4397, out=353, cached=2816)
+    saved: predial-mx-v2\queretaro\QRO_PREDIAL_2012_tequisquiapan.json
+  -- 2013 --
+    tipo=tarifa_millar              intentos=1  tokens(in=4423, out=371, cached=3328)
+    saved: predial-mx-v2\queretaro\QRO_PREDIAL_2013_tequisquiapan.json
+  -- 2014 --
+    tipo=tarifa_millar              intentos=1  tokens(in=4454, out=376, cached=3328)
+    saved: predial-mx-v2\queretaro\QRO_PREDIAL_2014_tequisquiapan.json
+  -- 2015 --
+    tipo=tarifa_millar              intentos=1  tokens(in=4476, out=368, cached=3328)
+    saved: predial-mx-v2\queretaro\QRO_PREDIAL_2015_tequisquiapan.json
+  -- 2016 --
+    tipo=tarifa_millar              intentos=1  tokens(in=4476, out=350, cached=3328)
+    saved: predial-mx-v2\queretaro\QRO_PREDIAL_2016_tequisquiapan.json
+  -- 2017 --
+    tipo=tarifa_millar              intentos=1  tokens(in=4412, out=370, cached=3328)
+    saved: predial-mx-v2\queretaro\QRO_PREDIAL_2017_tequisquiapan.json
+  -- 2018 --
+    tipo=tarifa_millar              intentos=1  tokens(in=4411, out=366, cached=2816)
+    saved: predial-mx-v2\queretaro\QRO_PREDIAL_2018_tequisquiapan.json
+  -- 2019 --
+    tipo=tarifa_millar              intentos=1  tokens(in=5719, out=364, cached=2816)
+    saved: predial-mx-v2\queretaro\QRO_PREDIAL_2019_tequisquiapan.json
+  -- 2020 --
+    tipo=tarifa_millar              intentos=1  tokens(in=5731, out=369, cached=2816)
+    saved: predial-mx-v2\queretaro\QRO_PREDIAL_2020_tequisquiapan.json
+  -- 2021 --
+    tipo=tarifa_millar              intentos=1  tokens(in=5744, out=363, cached=3328)
+    saved: predial-mx-v2\queretaro\QRO_PREDIAL_2021_tequisquiapan.json
+  -- 2022 --
+    tipo=tarifa_millar              intentos=1  tokens(in=5723, out=364, cached=3328)
+    saved: predial-mx-v2\queretaro\QRO_PREDIAL_2022_tequisquiapan.json
+  -- 2023 --
+    tipo=tarifa_millar              intentos=1  tokens(in=5723, out=358, cached=3328)
+    saved: predial-mx-v2\queretaro\QRO_PREDIAL_2023_tequisquiapan.json
+  -- 2024 --
+    tipo=tarifa_millar              intentos=1  tokens(in=5716, out=354, cached=3328)
+    saved: predial-mx-v2\queretaro\QRO_PREDIAL_2024_tequisquiapan.json
+  -- 2025 --
+    tipo=tarifa_millar              intentos=1  tokens(in=5727, out=364, cached=3328)
+    saved: predial-mx-v2\queretaro\QRO_PREDIAL_2025_tequisquiapan.json
+  -- 2026 --
+    tipo=—                          intentos=2  tokens(in=13531, out=2416, cached=6656)  [REVISAR]
+    razon: valido_2x_fallido | error1=  • predial.progresivo: Value error, brackets 1→2: hueco detectado (superior=178446.99, siguiente inferior=178447.0) | error2=  • predial.progresivo: Value error, brackets 1→2: hueco detectado (superior=178446.99, siguiente inferior=178447.0)
+    saved: predial-mx-v2\queretaro\QRO_PREDIAL_2026_tequisquiapan.json
+[v2] resumen: 17 archivos | tokens(in=93223, out=8242, cached=57344) | requiere_revision=1
+
+  [18/18] toliman (cvegeo=22018, 17 anios)
+[v2] QUERETARO cvegeo=22018 (Toliman)  modelo=gpt-5.4-mini
+  -- 2010 --
+    tipo=tarifa_millar              intentos=1  tokens(in=4164, out=359, cached=3328)
+    saved: predial-mx-v2\queretaro\QRO_PREDIAL_2010_toliman.json
+  -- 2011 --
+    tipo=tarifa_millar              intentos=1  tokens(in=4410, out=362, cached=2816)
+    saved: predial-mx-v2\queretaro\QRO_PREDIAL_2011_toliman.json
+  -- 2012 --
+    tipo=tarifa_millar              intentos=1  tokens(in=4431, out=362, cached=2816)
+    saved: predial-mx-v2\queretaro\QRO_PREDIAL_2012_toliman.json
+  -- 2013 --
+    tipo=tarifa_millar              intentos=1  tokens(in=4423, out=356, cached=2816)
+    saved: predial-mx-v2\queretaro\QRO_PREDIAL_2013_toliman.json
+  -- 2014 --
+    tipo=tarifa_millar              intentos=1  tokens(in=4398, out=364, cached=3328)
+    saved: predial-mx-v2\queretaro\QRO_PREDIAL_2014_toliman.json
+  -- 2015 --
+    tipo=tarifa_millar              intentos=1  tokens(in=4427, out=368, cached=3328)
+    saved: predial-mx-v2\queretaro\QRO_PREDIAL_2015_toliman.json
+  -- 2016 --
+    tipo=tarifa_millar              intentos=1  tokens(in=4484, out=362, cached=3328)
+    saved: predial-mx-v2\queretaro\QRO_PREDIAL_2016_toliman.json
+  -- 2017 --
+    tipo=tarifa_millar              intentos=1  tokens(in=4483, out=366, cached=3328)
+    saved: predial-mx-v2\queretaro\QRO_PREDIAL_2017_toliman.json
+  -- 2018 --
+    tipo=tarifa_millar              intentos=1  tokens(in=4504, out=365, cached=2816)
+    saved: predial-mx-v2\queretaro\QRO_PREDIAL_2018_toliman.json
+  -- 2019 --
+    tipo=tarifa_millar              intentos=1  tokens(in=4482, out=397, cached=3328)
+    saved: predial-mx-v2\queretaro\QRO_PREDIAL_2019_toliman.json
+  -- 2020 --
+    tipo=tarifa_millar              intentos=1  tokens(in=4501, out=347, cached=3328)
+    saved: predial-mx-v2\queretaro\QRO_PREDIAL_2020_toliman.json
+  -- 2021 --
+    tipo=tarifa_millar              intentos=1  tokens(in=4479, out=354, cached=2816)
+    saved: predial-mx-v2\queretaro\QRO_PREDIAL_2021_toliman.json
+  -- 2022 --
+    tipo=tarifa_millar              intentos=1  tokens(in=4479, out=367, cached=3328)
+    saved: predial-mx-v2\queretaro\QRO_PREDIAL_2022_toliman.json
+  -- 2023 --
+    tipo=tarifa_millar              intentos=1  tokens(in=4502, out=397, cached=3328)
+    saved: predial-mx-v2\queretaro\QRO_PREDIAL_2023_toliman.json
+  -- 2024 --
+    tipo=tarifa_millar              intentos=1  tokens(in=4477, out=375, cached=3328)
+    saved: predial-mx-v2\queretaro\QRO_PREDIAL_2024_toliman.json
+  -- 2025 --
+    tipo=tarifa_millar              intentos=1  tokens(in=4479, out=351, cached=2816)
+    saved: predial-mx-v2\queretaro\QRO_PREDIAL_2025_toliman.json
+  -- 2026 --
+    tipo=tarifa_millar              intentos=1  tokens(in=4478, out=346, cached=3328)
+    saved: predial-mx-v2\queretaro\QRO_PREDIAL_2026_toliman.json
+[v2] resumen: 17 archivos | tokens(in=75601, out=6198, cached=53504) | requiere_revision=0
+[regress] full: C:\Users\gibra\OneDrive\Documents\Thesis\predial-mx\output\regression_v1_v2_full.csv  (301 filas)
+
+[regress] RESUMEN — queretaro
+  archivos procesados: 301
+  discrepancias v1↔v2: 1
+  requiere_revision_v2: 9
+  tokens totales: in=3472614  out=281368
+  CSV discrepancias: C:\Users\gibra\OneDrive\Documents\Thesis\predial-mx\output\regression_v1_v2.csv

@@ -380,6 +380,16 @@ def build_panel_v2(
     print(f"\nEscribiendo {out_csv} ({len(deduped)} filas)...")
     _write_csv(deduped, out_csv)
 
+    # Tambien escribir panel_v2_raw.csv: solo observaciones (sin imputaciones).
+    raw_only = []
+    for row in deduped:
+        if (row.get("imputed_method") or "").strip():
+            continue
+        raw_only.append(row)
+    raw_csv = out_csv.parent / (out_csv.stem + "_raw" + out_csv.suffix)
+    print(f"Escribiendo {raw_csv} ({len(raw_only)} filas raw)...")
+    _write_csv(raw_only, raw_csv)
+
     # Reporte de cobertura.
     by_estado: dict[str, int] = {}
     by_tipo: dict[str, int] = {}

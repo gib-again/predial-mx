@@ -1,0 +1,35 @@
+
+############################################################
+  ESTADO: SONORA
+  Ejercicios: 2010–2025
+  OCR: sí
+  Pasos: master, segment
+############################################################
+
+────────────────────────────────────────
+  Paso: master
+────────────────────────────────────────
+═══ Sonora: Inventario de leyes por PDF ═══
+  PDFs procesados: 1266 | Leyes localizadas: 822
+  Master: data\sonora\meta\predial_master.csv
+  ✓ master completado en 218.1s
+
+────────────────────────────────────────
+  Paso: segment
+────────────────────────────────────────
+═══ Sonora: Segmentación predial ═══
+    [WARN] 2020CCVI51III_ocr.pdf/cajeme: PDF slice failed (cannot save with zero pages)
+    [WARN] EE311220232.pdf/aconchi: PDF slice failed (cannot save with zero pages)
+
+  ── Resumen segmentación ──
+  Total leyes:   822
+  Exacta:        696
+  Fallback:      126
+  Errores:       0
+  Desde OCR:     90
+  Bitácora: data\sonora\meta\segment.csv
+  ✓ segment completado en 299.2s
+
+============================================================
+  ✓ Pipeline completado para 1 estado(s) en 517.3s
+============================================================

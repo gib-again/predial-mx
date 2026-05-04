@@ -1,0 +1,39 @@
+
+############################################################
+  ESTADO: SONORA
+  Ejercicios: 2010–2025
+  OCR: sí
+  Pasos: ocr
+  OCR: --no-clean-watermark (legacy)
+############################################################
+
+────────────────────────────────────────
+  Paso: ocr
+────────────────────────────────────────
+═══ Sonora: OCR ═══
+    Modo: dirigido (triage_csv=data\sonora\meta\triage_ocr.csv)
+    Total PDFs candidatos: 573
+    [340/573] 2017CC50V.pdf | ok=6 err=0 | eta=3.1min
+    [350/573] EE1631DICIEMBRE2017.pdf | ok=16 err=0 | eta=17.7min
+    [360/573] EE431DICIEMBRE2017.pdf | ok=26 err=0 | eta=29.3min
+    [370/573] 2018CCII49I.pdf | ok=36 err=0 | eta=37.3min
+    [380/573] 2018CCII52I.pdf | ok=46 err=0 | eta=39.2min
+    [390/573] 2018CCII53XIV.pdf | ok=56 err=0 | eta=46.7min
+    [400/573] 2019CCIV47II.pdf | ok=66 err=0 | eta=50.7min
+    [410/573] 2019CCIV51III.pdf | ok=76 err=0 | eta=51.3min
+    [420/573] EE271220193.pdf | ok=86 err=0 | eta=50.4min
+    [430/573] 2020CCVI46I.pdf | ok=96 err=0 | eta=55.7min
+    [440/573] 2020CCVI50IV.pdf | ok=106 err=0 | eta=53.5min
+    [450/573] 2020CCVI51X.pdf | ok=116 err=0 | eta=54.9min
+    [460/573] 2020CCVI53IV.pdf | ok=126 err=0 | eta=54.8min
+    [470/573] 2021CCVIII47IV.pdf | ok=136 err=0 | eta=53.0min
+    [480/573] 2021CCVIII51IV.pdf | ok=146 err=0 | eta=48.5min
+    [490/573] 2021CCVIII53XXVI.pdf | ok=156 err=0 | eta=46.0min
+    [500/573] 2022CCX48II.pdf | ok=166 err=0 | eta=41.6min
+    [510/573] 2022CCX52I.pdf | ok=176 err=0 | eta=36.5min
+    [520/573] 2023CCXII48.pdf | ok=186 err=0 | eta=31.6min
+    [530/573] 2023CCXII50IV.pdf | ok=196 err=0 | eta=26.0min
+    [540/573] EE15122023.pdf | ok=206 err=0 | eta=20.2min
+    [550/573] 2024CCXIV46VIII.pdf | ok=216 err=0 | eta=14.2min
+    [560/573] 2024CCXIV50II.pdf | ok=226 err=0 | eta=8.1min
+    [570/573] EE27122024.pdf | ok=236 err=0 | eta=1.9min

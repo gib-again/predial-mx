@@ -249,8 +249,8 @@ def _row_resp(row: dict, status: str, msg: str) -> dict:
 
 def main():
     ap = argparse.ArgumentParser(description=__doc__.split("\n", 1)[0])
-    ap.add_argument("--audit-csv", default="output/audit_pendiente.csv")
-    ap.add_argument("--log-csv", default="output/reextract_log.csv")
+    ap.add_argument("--audit-csv", default="output/audits/audit_pendiente.csv")
+    ap.add_argument("--log-csv", default="output/audits/reextract_log.csv")
     ap.add_argument("--dry-run", action="store_true")
     ap.add_argument("--overwrite", action="store_true",
                     help="Sobrescribir JSONs existentes incluso si tienen modelo real "

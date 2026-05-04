@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Aplica las decisiones de output/audit_treatment_anomalies.csv.
+"""Aplica las decisiones de output/audits/audit_treatment_anomalies.csv.
 
 Decisiones soportadas:
 
@@ -18,17 +18,17 @@ Decisiones soportadas:
       - Con `tipo_correcto`: idem (c) — el tipo correcto post-reforma
         es el indicado.
       - Sin `tipo_correcto`: aceptar el tipo actual; registrar el
-        muni en `output/treatment_real_reform_munis.csv` para que el
+        muni en `output/audits/treatment_real_reform_munis.csv` para que el
         DiD lo trate como no-absorbente.
 
   - `accept_as_is`: registrar el muni en
-    `output/treatment_non_absorbing_munis.csv`.
+    `output/audits/treatment_non_absorbing_munis.csv`.
 
   - `exclude_muni`: registrar el muni en
-    `output/treatment_excluded_munis.csv` (descartado por completo).
+    `output/audits/treatment_excluded_munis.csv` (descartado por completo).
 
 Outputs adicionales:
-  output/apply_treatment_audit.log  — log línea-por-fila con resultado.
+  output/audits/apply_treatment_audit.log  — log línea-por-fila con resultado.
 """
 
 from __future__ import annotations
@@ -274,7 +274,7 @@ def _action_override_tipo(
 
 def main():
     ap = argparse.ArgumentParser(description=__doc__.split("\n", 1)[0])
-    ap.add_argument("--audit-csv", default="output/audit_treatment_anomalies.csv")
+    ap.add_argument("--audit-csv", default="output/audits/audit_treatment_anomalies.csv")
     ap.add_argument("--dry-run", action="store_true")
     args = ap.parse_args()
 
@@ -414,7 +414,8 @@ def main():
         n_skip += 1
 
     # Escribir listas
-    out_dir = Path("output")
+    out_dir = Path("output/audits")
+    out_dir.mkdir(parents=True, exist_ok=True)
     if not args.dry_run:
         # excluded
         excl_path = out_dir / "treatment_excluded_munis.csv"

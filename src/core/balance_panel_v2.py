@@ -890,8 +890,8 @@ def impute_jsons(
 
 def balance_panel_v2(
     input_csv: Path = Path("output/panel_v2.csv"),
-    output_csv: Path = Path("output/panel_v2_balanced.csv"),
-    report_md: Path = Path("output/panel_v2_balance_report.md"),
+    output_csv: Path = Path("output/balance/panel_v2_balanced.csv"),
+    report_md: Path = Path("output/balance/panel_v2_balance_report.md"),
     catalog_inegi: Path = Path("catalogs/municipios_inegi.csv"),
     changes_catalog: Path = Path("catalogs/changes_ageeml.csv"),
     v2_root: Path = Path("predial-mx-v2"),

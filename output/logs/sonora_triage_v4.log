@@ -1,0 +1,76 @@
+
+############################################################
+  ESTADO: SONORA
+  Ejercicios: 2010–2025
+  OCR: sí
+  Pasos: triage-ocr
+############################################################
+
+────────────────────────────────────────
+  Paso: triage-ocr
+────────────────────────────────────────
+═══ Sonora: Triage OCR (Fase 1) ═══
+    Páginas por PDF: 5
+    PDFs ya en master: 256
+    Slugs en index.csv: 72
+    Resume: reusando 62 filas con is_law=True previas
+    Candidatos a procesar: 903 PDFs
+    [1/903] law=62 not_law=0 error=0 | rate=1000.00/s | eta=0.0min
+    [20/903] law=72 not_law=9 error=0 | rate=0.13/s | eta=113.5min
+    [40/903] law=84 not_law=17 error=0 | rate=0.14/s | eta=104.3min
+    [60/903] law=95 not_law=26 error=0 | rate=0.15/s | eta=96.3min
+    [80/903] law=105 not_law=36 error=0 | rate=0.15/s | eta=91.0min
+    [100/903] law=121 not_law=40 error=0 | rate=0.15/s | eta=87.0min
+    [120/903] law=130 not_law=51 error=0 | rate=0.15/s | eta=86.4min
+    [140/903] law=132 not_law=69 error=0 | rate=0.14/s | eta=93.3min
+    [160/903] law=145 not_law=75 error=1 | rate=0.12/s | eta=102.5min
+    [180/903] law=156 not_law=84 error=1 | rate=0.11/s | eta=106.2min
+    [200/903] law=168 not_law=92 error=1 | rate=0.11/s | eta=108.5min
+    [220/903] law=175 not_law=105 error=1 | rate=0.10/s | eta=109.0min
+    [240/903] law=182 not_law=117 error=2 | rate=0.10/s | eta=112.6min
+    [260/903] law=188 not_law=131 error=2 | rate=0.10/s | eta=112.1min
+    [280/903] law=194 not_law=145 error=2 | rate=0.10/s | eta=108.8min
+    [300/903] law=199 not_law=160 error=2 | rate=0.10/s | eta=102.9min
+    [320/903] law=218 not_law=161 error=2 | rate=0.10/s | eta=97.0min
+    [340/903] law=235 not_law=163 error=3 | rate=0.10/s | eta=92.2min
+    [360/903] law=243 not_law=175 error=3 | rate=0.10/s | eta=87.1min
+    [380/903] law=259 not_law=179 error=3 | rate=0.11/s | eta=82.2min
+    [400/903] law=273 not_law=185 error=3 | rate=0.11/s | eta=77.8min
+    [420/903] law=282 not_law=196 error=3 | rate=0.11/s | eta=75.6min
+    [440/903] law=294 not_law=204 error=3 | rate=0.10/s | eta=74.3min
+    [460/903] law=313 not_law=205 error=3 | rate=0.10/s | eta=73.0min
+    [480/903] law=327 not_law=211 error=3 | rate=0.10/s | eta=70.5min
+    [500/903] law=342 not_law=216 error=3 | rate=0.10/s | eta=67.7min
+    [520/903] law=362 not_law=216 error=3 | rate=0.10/s | eta=64.7min
+    [540/903] law=371 not_law=227 error=3 | rate=0.10/s | eta=61.5min
+    [560/903] law=386 not_law=232 error=3 | rate=0.10/s | eta=58.1min
+    [580/903] law=400 not_law=238 error=3 | rate=0.10/s | eta=54.9min
+    [600/903] law=411 not_law=247 error=3 | rate=0.10/s | eta=51.6min
+    [620/903] law=424 not_law=254 error=3 | rate=0.10/s | eta=48.4min
+    [640/903] law=435 not_law=263 error=3 | rate=0.10/s | eta=45.3min
+    [660/903] law=449 not_law=269 error=3 | rate=0.10/s | eta=42.1min
+    [680/903] law=463 not_law=275 error=3 | rate=0.10/s | eta=38.8min
+    [700/903] law=477 not_law=281 error=3 | rate=0.10/s | eta=35.4min
+    [720/903] law=489 not_law=289 error=3 | rate=0.10/s | eta=31.9min
+    [740/903] law=497 not_law=299 error=5 | rate=0.10/s | eta=28.4min
+    [760/903] law=505 not_law=311 error=5 | rate=0.10/s | eta=25.0min
+    [780/903] law=514 not_law=322 error=5 | rate=0.10/s | eta=21.5min
+    [800/903] law=526 not_law=330 error=5 | rate=0.09/s | eta=18.1min
+    [820/903] law=532 not_law=344 error=5 | rate=0.09/s | eta=14.6min
+    [840/903] law=543 not_law=353 error=5 | rate=0.09/s | eta=11.1min
+    [860/903] law=558 not_law=358 error=5 | rate=0.09/s | eta=7.6min
+    [880/903] law=566 not_law=370 error=5 | rate=0.09/s | eta=4.0min
+    [900/903] law=570 not_law=386 error=5 | rate=0.09/s | eta=0.5min
+
+  ── Resumen triage ──
+  Total candidatos:      903
+  Es ley municipal:      573
+  No es ley:             387
+  Errores OCR:           5
+  Match con index.csv:   64
+  Bitácora: data\sonora\meta\triage_ocr.csv
+  ✓ triage-ocr completado en 9528.0s
+
+============================================================
+  ✓ Pipeline completado para 1 estado(s) en 9528.0s
+============================================================

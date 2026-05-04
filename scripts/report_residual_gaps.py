@@ -44,13 +44,13 @@ def _load_panel_index() -> dict[tuple[str, int], dict]:
 
 def _load_audit_index() -> dict[tuple[str, int], dict]:
     """{(cvegeo, ejercicio): row} desde audit_pendiente.csv (decisiones del auditor)."""
-    rows = list(csv.DictReader(open("output/audit_pendiente.csv", encoding="utf-8-sig")))
+    rows = list(csv.DictReader(open("output/audits/audit_pendiente.csv", encoding="utf-8-sig")))
     return {(r["cvegeo"], int(r["ejercicio_gap"])): r for r in rows if r["cvegeo"]}
 
 
 def _load_reextract_log() -> dict[tuple[str, int], dict]:
     """Lee el log de reextract para entender qué falló."""
-    p = Path("output/reextract_log.csv")
+    p = Path("output/audits/reextract_log.csv")
     if not p.exists():
         return {}
     out = {}
@@ -246,7 +246,7 @@ def main():
         lines.append("")
 
     # Section: tokens / costo info si disponible
-    out_path = Path("output/residual_gaps_report.md")
+    out_path = Path("output/audits/residual_gaps_report.md")
     out_path.write_text("\n".join(lines), encoding="utf-8")
     print(f"  -> {out_path}")
     print(f"  Munis residuales: {len(residuals_by_muni)}")

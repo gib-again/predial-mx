@@ -348,7 +348,7 @@ def main():
     print(f"Años problemáticos a auditar: {len(audit_rows)}")
 
     # Escribir CSV
-    csv_path = Path("output/audit_treatment_anomalies.csv")
+    csv_path = Path("output/audits/audit_treatment_anomalies.csv")
     csv_path.parent.mkdir(parents=True, exist_ok=True)
     with csv_path.open("w", encoding="utf-8-sig", newline="") as f:
         w = csv.DictWriter(f, fieldnames=_AUDIT_FIELDS, extrasaction="ignore")
@@ -358,7 +358,7 @@ def main():
     print(f"\n  -> {csv_path}")
 
     # MD
-    md_path = Path("output/audit_treatment_anomalies.md")
+    md_path = Path("output/audits/audit_treatment_anomalies.md")
     by_muni_audit: dict[tuple[str, str, str], list[dict]] = defaultdict(list)
     for r in audit_rows:
         by_muni_audit[(r["estado"], r["municipio"], r["cvegeo"])].append(r)
