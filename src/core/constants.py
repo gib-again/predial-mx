@@ -14,4 +14,5 @@ PREFIJOS_ESTADO = {
     "guanajuato": "GTO",
     "sanluispotosi": "SLP",
     "sonora":     "SON",
+    "oaxaca":     "OAX",
 }

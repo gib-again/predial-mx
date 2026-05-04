@@ -1,0 +1,90 @@
+{
+  "predial": {
+    "tipo_esquema": "tarifa_millar",
+    "esquema_valido": true,
+    "comentarios": "",
+    "minimo_predial": null,
+    "tabla_tarifa_millar": [
+      {
+        "grupo": "general",
+        "clave": "predios_con_bases_gravables_menores_a_1000000_de_pesos_zona_baja",
+        "descripcion": "Predios con bases gravables menores a 1'000,000 de pesos, zona baja",
+        "tasa_millar": 2.0,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "general",
+        "clave": "predios_con_bases_gravables_menores_a_1000000_de_pesos_zona_media",
+        "descripcion": "Predios con bases gravables menores a 1'000,000 de pesos, zona media",
+        "tasa_millar": 2.5,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "general",
+        "clave": "predios_con_bases_gravables_menores_a_1000000_de_pesos_zona_alta",
+        "descripcion": "Predios con bases gravables menores a 1'000,000 de pesos, zona alta",
+        "tasa_millar": 3.5,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "general",
+        "clave": "predios_con_bases_gravables_de_1000001_a_3000000_de_pesos",
+        "descripcion": "Predios con bases gravables de 1'000,001 a 3'000,000 de pesos",
+        "tasa_millar": 4.0,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "general",
+        "clave": "predios_con_bases_gravables_de_3000001_a_4000000_de_pesos",
+        "descripcion": "Predios con bases gravables de 3'000,001 a 4'000,000 de pesos",
+        "tasa_millar": 4.5,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "general",
+        "clave": "predios_con_bases_gravables_mayores_de_4000000_de_pesos",
+        "descripcion": "Predios con bases gravables mayores de 4'000,000 de pesos",
+        "tasa_millar": 5.0,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "general",
+        "clave": "terrenos_baldios_en_zonas_urbanas",
+        "descripcion": "Terrenos baldíos en zonas urbanas",
+        "tasa_millar": 8.0,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "general",
+        "clave": "predios_pertenecientes_a_nucleos_agrarios_de_poblacion_ejidal_o_comunal",
+        "descripcion": "Predios pertenecientes a núcleos agrarios de población ejidal o comunal",
+        "tasa_millar": 2.0,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "general",
+        "clave": "terrenos_baldios_en_zonas_no_urbanizadas",
+        "descripcion": "Terrenos baldíos en zonas no urbanizadas",
+        "tasa_millar": 5.0,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      }
+    ],
+    "tabla_progresiva": [],
+    "tabla_tasa_unica": [],
+    "tabla_cuota_fija": [],
+    "tabla_mixta_rango": []
+  },
+  "_meta": {
+    "fuente": "pdf_vision",
+    "modelo": "gpt-5.4-mini"
+  }
+}
