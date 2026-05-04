@@ -36,6 +36,12 @@ dev = [
     "pytest>=7.0",
     "ruff",
 ]
+# Para SLP Ruta A (Congreso del Estado SLP). El sitio está protegido por
+# Sucuri Cloud Proxy con JavaScript challenge → requiere browser real.
+# Instalación adicional: `playwright install chromium`.
+slp-congreso = [
+    "playwright>=1.40",
+]
 
 [build-system]
 requires = ["setuptools>=68.0", "wheel"]
