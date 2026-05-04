@@ -2358,11 +2358,11 @@ cvegeo,ejercicio,estado,municipio,tipo_esquema,numero_rangos,monto_max_rango,imp
 11031,2018,Guanajuato,San Francisco del Rincon,tarifa_millar,,,,
 11031,2019,Guanajuato,San Francisco del Rincon,tarifa_millar,,,,
 11031,2020,Guanajuato,San Francisco del Rincon,progresivo,10,43000000.0,,
-11031,2021,Guanajuato,San Francisco del Rincon,otro_no_clasificado,,,,
-11031,2022,Guanajuato,San Francisco del Rincon,otro_no_clasificado,,,ffill,2021
-11031,2023,Guanajuato,San Francisco del Rincon,otro_no_clasificado,,,ffill,2021
-11031,2024,Guanajuato,San Francisco del Rincon,otro_no_clasificado,,,ffill,2021
-11031,2025,Guanajuato,San Francisco del Rincon,otro_no_clasificado,,,ffill,2021
+11031,2021,Guanajuato,San Francisco del Rincon,progresivo,10,43000000.0,audit_directed[from_2020],2020
+11031,2022,Guanajuato,San Francisco del Rincon,progresivo,10,43000000.0,audit_directed[from_2020],2020
+11031,2023,Guanajuato,San Francisco del Rincon,progresivo,10,43000000.0,audit_directed[from_2020],2020
+11031,2024,Guanajuato,San Francisco del Rincon,progresivo,10,43000000.0,audit_directed[from_2020],2020
+11031,2025,Guanajuato,San Francisco del Rincon,progresivo,10,43000000.0,audit_directed[from_2020],2020
 11032,2010,Guanajuato,San Jose de Iturbide,tarifa_millar,,,,
 11032,2011,Guanajuato,San Jose de Iturbide,tarifa_millar,,,,
 11032,2012,Guanajuato,San Jose de Iturbide,tarifa_millar,,,,
