@@ -1,0 +1,18 @@
+Panel balanceado: 14915 filas
+  SLP: 842 filas
+  Resto: 14073 filas
+
+SLP pragmático: 930 filas
+  Por origen:
+    bfill: 125
+    confirmed_fill: 94
+    false: 569
+    ffill: 45
+    pragmatic_fill: 88
+    pragmatic_force: 9
+  Por esquema:
+    progresivo: 6
+    tarifa_millar: 924
+
+→ output\predial_panel_pragmatic.csv
+  Total filas: 15003
