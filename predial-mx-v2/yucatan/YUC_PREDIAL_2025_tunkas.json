@@ -1,42 +1,13 @@
 {
   "predial": {
     "tipo_esquema": "progresivo",
-    "tabla": [
-      {
-        "n_rango": 1,
-        "inferior": 0.0,
-        "superior": 200000.0,
-        "cuota_fija": 0.0,
-        "tasa_marginal": 0.0015
-      },
-      {
-        "n_rango": 2,
-        "inferior": 200000.0,
-        "superior": 500000.0,
-        "cuota_fija": 300.0,
-        "tasa_marginal": 0.002
-      },
-      {
-        "n_rango": 3,
-        "inferior": 500000.0,
-        "superior": 1000000.0,
-        "cuota_fija": 1500.0,
-        "tasa_marginal": 0.0025
-      },
-      {
-        "n_rango": 4,
-        "inferior": 1000000.0,
-        "superior": null,
-        "cuota_fija": 4000.0,
-        "tasa_marginal": 0.003
-      }
-    ],
+    "comentarios": "Imputado por ffill: tipo_esquema preservado del año donor; tabla/rangos no clonados por baja confianza en estabilidad temporal.",
     "minimo_predial": null,
-    "comentarios": "[treatment_audit:asumir_esquema_anterior from 2024] asumir tasa periodo inmediato anterior Comentario original: Art. 15 establece que el cálculo se hace por diferencia entre el valor catastral y el límite inferior, multiplicada por el factor aplicable y sumada a la cuota fija, lo que corresponde a una tabla progresiva. El texto proporcionado no incluye los límites inferiores/superiores ni las cuotas/factores específicos de la tabla tarifaria del impuesto, sólo describe la mecánica y menciona una tarifa paralela para predios rústicos con actividad agropecuaria de $20.00 por hectárea, que se deja fuera de la tabla principal."
+    "tabla": []
   },
   "_meta": {
     "fuente": "txt",
-    "modelo": "imputed_audit_directed[from_2024]"
+    "modelo": "imputed_ffill"
   },
   "_meta_v2": {
     "intentos": 0,
@@ -51,9 +22,6 @@
     "estado": "yucatan",
     "anio": 2025,
     "imputed_from_year": 2024,
-    "imputed_method": "audit_directed",
-    "treatment_audit_source": "asumir_esquema_anterior",
-    "audit_auditor": "",
-    "audit_fecha": ""
+    "imputed_method": "ffill"
   }
 }

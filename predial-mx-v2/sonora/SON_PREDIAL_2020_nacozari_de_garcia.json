@@ -1,0 +1,107 @@
+{
+  "predial": {
+    "tipo_esquema": "progresivo",
+    "tabla": [
+      {
+        "n_rango": 1,
+        "inferior": 0.01,
+        "superior": 38000.0,
+        "cuota_fija": 58.89,
+        "tasa_marginal": 0.0
+      },
+      {
+        "n_rango": 2,
+        "inferior": 38000.0,
+        "superior": 76000.0,
+        "cuota_fija": 58.89,
+        "tasa_marginal": 0.16003
+      },
+      {
+        "n_rango": 3,
+        "inferior": 76000.0,
+        "superior": 144400.0,
+        "cuota_fija": 121.51,
+        "tasa_marginal": 0.16017
+      },
+      {
+        "n_rango": 4,
+        "inferior": 144400.0,
+        "superior": 256920.0,
+        "cuota_fija": 238.83,
+        "tasa_marginal": 0.20515
+      },
+      {
+        "n_rango": 5,
+        "inferior": 256920.0,
+        "superior": 441864.0,
+        "cuota_fija": 492.7,
+        "tasa_marginal": 0.2241
+      },
+      {
+        "n_rango": 6,
+        "inferior": 441864.0,
+        "superior": 706982.0,
+        "cuota_fija": 929.44,
+        "tasa_marginal": 0.22422
+      },
+      {
+        "n_rango": 7,
+        "inferior": 706982.0,
+        "superior": 1060473.0,
+        "cuota_fija": 1566.24,
+        "tasa_marginal": 0.13079
+      },
+      {
+        "n_rango": 8,
+        "inferior": 1060473.0,
+        "superior": 1484662.0,
+        "cuota_fija": 2543.28,
+        "tasa_marginal": 0.13093
+      },
+      {
+        "n_rango": 9,
+        "inferior": 1484662.0,
+        "superior": 1930060.0,
+        "cuota_fija": 3716.36,
+        "tasa_marginal": 0.2726
+      },
+      {
+        "n_rango": 10,
+        "inferior": 1930060.0,
+        "superior": 2316072.0,
+        "cuota_fija": 4911.16,
+        "tasa_marginal": 0.27275
+      },
+      {
+        "n_rango": 11,
+        "inferior": 2316072.0,
+        "superior": null,
+        "cuota_fija": 6144.83,
+        "tasa_marginal": 0.27289
+      }
+    ],
+    "minimo_predial": {
+      "monto": 58.89,
+      "periodicidad": "anual",
+      "unidad": "pesos"
+    },
+    "comentarios": "Tabla progresiva para predios edificados y tabla complementaria para no edificados y rústicos. Se ignoran descuentos y el impuesto predial ejidal por estar fuera de alcance."
+  },
+  "_meta": {
+    "fuente": "txt",
+    "modelo": "reclasified_v1[gpt-5.4-mini]"
+  },
+  "_meta_v2": {
+    "intentos": 0,
+    "requiere_revision": false,
+    "razon": null,
+    "tokens": {
+      "input": 0,
+      "output": 0,
+      "cached": 0
+    },
+    "cvegeo": "26041",
+    "estado": "sonora",
+    "anio": 2020
+  }
+}

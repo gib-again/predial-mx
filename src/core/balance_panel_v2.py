@@ -37,7 +37,8 @@ from src.core.text_utils import slugify
 
 INCLUDED_NOM_ENT = {
     "Coahuila de Zaragoza", "Chihuahua", "Colima", "Guanajuato", "Jalisco",
-    "Mexico", "Queretaro", "Sinaloa", "Tabasco", "Tamaulipas", "Yucatan",
+    "Mexico", "Queretaro", "San Luis Potosi", "Sinaloa", "Sonora",
+    "Tabasco", "Tamaulipas", "Yucatan",
 }
 EXCLUDED_NOM_ENT = {"Oaxaca"}
 
@@ -52,7 +53,9 @@ ESTADO_SLUG_BY_NOM_ENT = {
     "Jalisco": "jalisco",
     "Mexico": "edomex",
     "Queretaro": "queretaro",
+    "San Luis Potosi": "sanluispotosi",
     "Sinaloa": "sinaloa",
+    "Sonora": "sonora",
     "Tabasco": "tabasco",
     "Tamaulipas": "tamaulipas",
     "Yucatan": "yucatan",
@@ -60,7 +63,9 @@ ESTADO_SLUG_BY_NOM_ENT = {
 PREFIJOS_BY_SLUG = {
     "coahuila":   "COAH", "chihuahua": "CHIH", "colima":  "COL",
     "guanajuato": "GTO",  "jalisco":   "JAL",  "edomex":  "MEX",
-    "queretaro":  "QRO",  "sinaloa":   "SIN",  "tabasco": "TAB",
+    "queretaro":  "QRO",  "sanluispotosi": "SLP",
+    "sinaloa":   "SIN",  "sonora": "SON",
+    "tabasco": "TAB",
     "tamaulipas": "TAMPS","yucatan":   "YUC",
 }
 
@@ -680,18 +685,34 @@ def _read_donor_json(
     cvegeo: str, donor_year: int, estado_slug: str, slug: str,
     v2_root: Path,
 ) -> tuple[Path, dict] | None:
-    """Localiza y lee el JSON donor en predial-mx-v2/{estado_slug}/."""
+    """Localiza y lee el JSON donor.
+
+    Busca primero en `predial-mx-v2/{estado_slug}/` (corpus v2 estándar) y
+    si no encuentra, hace fallback a `data/{estado_slug}/json_predial/{año}/`
+    (estados v1 in-memory: oaxaca, sanluispotosi, sonora).
+    """
     prefijo = PREFIJOS_BY_SLUG.get(estado_slug)
     if not prefijo:
         return None
     fname = f"{prefijo}_PREDIAL_{donor_year}_{slug}.json"
-    path = v2_root / estado_slug / fname
-    if not path.exists():
-        return None
-    try:
-        return path, json.loads(path.read_text(encoding="utf-8"))
-    except Exception:
-        return None
+
+    # 1. Buscar en corpus v2
+    path_v2 = v2_root / estado_slug / fname
+    if path_v2.exists():
+        try:
+            return path_v2, json.loads(path_v2.read_text(encoding="utf-8"))
+        except Exception:
+            pass
+
+    # 2. Fallback: data/{estado}/json_predial/{año}/
+    path_v1 = Path("data") / estado_slug / "json_predial" / str(donor_year) / fname
+    if path_v1.exists():
+        try:
+            return path_v1, json.loads(path_v1.read_text(encoding="utf-8"))
+        except Exception:
+            pass
+
+    return None
 
 
 def _build_imputed_predial(donor_predial: dict, method: str) -> dict:

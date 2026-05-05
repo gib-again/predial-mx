@@ -1,0 +1,126 @@
+{
+  "predial": {
+    "tipo_esquema": "tarifa_millar",
+    "tabla": [
+      {
+        "grupo": "rustico",
+        "clave": "predios_rurales_hectarea",
+        "descripcion": "Sobre el valor catastral de cada hectárea de los predios rurales",
+        "tasa_millar": 1.047650739,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "rustico",
+        "clave": "riego_de_gravedad_2",
+        "descripcion": "Riego de Gravedad 2: Terrenos con derecho a agua de presa o rio irregularmente aun dentro del distrito de Riego.",
+        "tasa_millar": 1.84118713,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "rustico",
+        "clave": "riego_de_bombeo_1",
+        "descripcion": "Riego de Bombeo 1: Terrenos con riego mecánico con pozo de poca profundidad (100 pies máximos).",
+        "tasa_millar": 1.83260896,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "rustico",
+        "clave": "riego_de_bombeo_2",
+        "descripcion": "Riego de Bombeo 2: Terrenos con riego mecánico con pozo profundo (más de 100 pies).",
+        "tasa_millar": 1.860905779,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "rustico",
+        "clave": "riego_de_temporal_unica",
+        "descripcion": "Riego de temporal Única: Terreno que depende de para su irrigación de la eventualidad de precipitaciones.",
+        "tasa_millar": 2.791692883,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "rustico",
+        "clave": "agostadero_de_1",
+        "descripcion": "Agostadero de 1: terreno con praderas naturales.",
+        "tasa_millar": 1.4343368,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "rustico",
+        "clave": "agostadero_de_2",
+        "descripcion": "Agostadero de 2: terreno que fueron mejorados para pastoreo en base a técnicas.",
+        "tasa_millar": 1.819797408,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "rustico",
+        "clave": "agostadero_de_3",
+        "descripcion": "Agostadero de 3: Terrenos que se encuentran en zonas semidesérticas de bajo rendimiento.",
+        "tasa_millar": 0.286755955,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "rustico",
+        "clave": "acuicola_de_1",
+        "descripcion": "Acuícola de 1: terreno con topografía irregular localizado en un estero o bahía muy pequeña.",
+        "tasa_millar": 1.860905779,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "rustico",
+        "clave": "acuicola_de_2",
+        "descripcion": "Acuícola de 2: Estanques de tierra con canal de llenado y canal de desagüe. circulación de agua. agua controlada.",
+        "tasa_millar": 1.859457517,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "rustico",
+        "clave": "acuicola_de_3",
+        "descripcion": "Acuícola de 3: Estanques con recirculación de agua pasada por filtros. Agua de pozo con agua de mar.",
+        "tasa_millar": 2.787570906,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "rustico",
+        "clave": "edificaciones_predios_rurales",
+        "descripcion": "Sobre el valor catastral de las edificaciones de los predios rurales",
+        "tasa_millar": 0.6151,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      }
+    ],
+    "minimo_predial": {
+      "monto": 51.82,
+      "periodicidad": "anual",
+      "unidad": "pesos"
+    },
+    "comentarios": ""
+  },
+  "_meta": {
+    "fuente": "txt",
+    "modelo": "reclasified_v1[gpt-5.4-mini]"
+  },
+  "_meta_v2": {
+    "intentos": 0,
+    "requiere_revision": false,
+    "razon": null,
+    "tokens": {
+      "input": 0,
+      "output": 0,
+      "cached": 0
+    },
+    "cvegeo": "26012",
+    "estado": "sonora",
+    "anio": 2020
+  }
+}

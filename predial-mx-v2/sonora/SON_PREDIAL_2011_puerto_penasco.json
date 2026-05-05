@@ -1,0 +1,86 @@
+{
+  "predial": {
+    "tipo_esquema": "tarifa_millar",
+    "tabla": [
+      {
+        "grupo": "rustico",
+        "clave": "predios_no_edificados",
+        "descripcion": "Tratándose de Predios No Edificados y sobretasas",
+        "tasa_millar": 0.0,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "rustico",
+        "clave": "agricola_2_pies_de_profundidad",
+        "descripcion": "Agrícola 2: de poca profundidad",
+        "tasa_millar": 1.48,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "rustico",
+        "clave": "agricola_riego_de_bombeo",
+        "descripcion": "Riego de bombeo 2: Terrenos con riego mecánico con pozo profundo",
+        "tasa_millar": 1.56,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "rustico",
+        "clave": "temporal_unica",
+        "descripcion": "Temporal única: Terrenos que deben a su irrigación la eventualidad de precipitaciones",
+        "tasa_millar": 2.26,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "rustico",
+        "clave": "agostadero_1",
+        "descripcion": "Agostadera 1: Terrenos con praderas naturales",
+        "tasa_millar": 1.16,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "rustico",
+        "clave": "agostadero_3",
+        "descripcion": "Agostadero 3: Terrenos que se encuentran en zonas semidesérticas de bajo rendimiento",
+        "tasa_millar": 0.0,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "rustico",
+        "clave": "forestal_unica",
+        "descripcion": "Forestal única: Terrenos poblados de árboles en espesura al, que no es aprovechable como agrícolas, ni agostaderos",
+        "tasa_millar": 0.38,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      }
+    ],
+    "minimo_predial": {
+      "monto": 41.95,
+      "periodicidad": "anual",
+      "unidad": "pesos"
+    },
+    "comentarios": ""
+  },
+  "_meta": {
+    "fuente": "txt",
+    "modelo": "reclasified_v1[gpt-5.4-mini]"
+  },
+  "_meta_v2": {
+    "intentos": 0,
+    "requiere_revision": false,
+    "razon": null,
+    "tokens": {
+      "input": 0,
+      "output": 0,
+      "cached": 0
+    },
+    "cvegeo": "26048",
+    "estado": "sonora",
+    "anio": 2011
+  }
+}

@@ -1,0 +1,134 @@
+{
+  "predial": {
+    "tipo_esquema": "tarifa_millar",
+    "tabla": [
+      {
+        "grupo": "rustico",
+        "clave": "predios_no_edificados",
+        "descripcion": "Sobre el valor catastral de los predios no edificados",
+        "tasa_millar": 8.2823742,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "rustico",
+        "clave": "predios_rurales_hectarea",
+        "descripcion": "Sobre el valor catastral de cada hectárea de predios rurales",
+        "tasa_millar": 0.97657596,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "rustico",
+        "clave": "riego_de_gravedad_2",
+        "descripcion": "Riego de gravedad 2: Terrenos con derecho de agua de presa o río irregularmente, aun dentro del distrito de riego",
+        "tasa_millar": 1.71621072,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "rustico",
+        "clave": "riego_de_bombeo_1",
+        "descripcion": "Riego de bombeo 1: Terrenos con riego mecánico con pozo de poca profundidad (máximo 100 pies)",
+        "tasa_millar": 1.70820144,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "rustico",
+        "clave": "riego_de_bombeo_2",
+        "descripcion": "Riego de bombeo 2: Terrenos con riego mecánico con pozo profundo (más de 100 pies)",
+        "tasa_millar": 1.73456532,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "rustico",
+        "clave": "riego_de_temporal_unica",
+        "descripcion": "Riego de temporal única: Terrenos que, para su irrigación, dependen de la eventualidad de las precipitaciones",
+        "tasa_millar": 2.60223732,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "rustico",
+        "clave": "agostadero_1",
+        "descripcion": "Agostadero de 1: Terrenos con praderas naturales",
+        "tasa_millar": 1.33699356,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "rustico",
+        "clave": "agostadero_2",
+        "descripcion": "Agostadero de 2: Terrenos para pastoreo mejorados en base a técnicas",
+        "tasa_millar": 1.69629876,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "rustico",
+        "clave": "agostadero_3",
+        "descripcion": "Agostadero de 3: Terrenos en zonas semidesérticas de bajo rendimiento",
+        "tasa_millar": 0.26730972,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "rustico",
+        "clave": "forestal_unica",
+        "descripcion": "Forestal única: Terrenos poblados de árboles en espesura tal que no es aprovechable como agrícola ni como agostadero",
+        "tasa_millar": 0.43984296,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "rustico",
+        "clave": "industrial_minera_1",
+        "descripcion": "Industrial minera 1: Terrenos con explotación metálico y no metálico",
+        "tasa_millar": 1.83546,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "rustico",
+        "clave": "industrial_minera_2",
+        "descripcion": "Industrial minera 2: Terrenos de reserva para explotación minera",
+        "tasa_millar": 1.71621072,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "rustico",
+        "clave": "industrial_minera_3",
+        "descripcion": "Industrial minera 3: Terrenos o praderas naturales con vocación minera",
+        "tasa_millar": 1.69629876,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      }
+    ],
+    "minimo_predial": {
+      "monto": 48.3,
+      "periodicidad": "anual",
+      "unidad": "pesos"
+    },
+    "comentarios": ""
+  },
+  "_meta": {
+    "fuente": "pdf_vision",
+    "modelo": "reclasified_v1[gpt-5.4-mini]"
+  },
+  "_meta_v2": {
+    "intentos": 0,
+    "requiere_revision": false,
+    "razon": null,
+    "tokens": {
+      "input": 0,
+      "output": 0,
+      "cached": 0
+    },
+    "cvegeo": "26019",
+    "estado": "sonora",
+    "anio": 2023
+  }
+}

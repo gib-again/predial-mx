@@ -1,0 +1,150 @@
+{
+  "predial": {
+    "tipo_esquema": "tarifa_millar",
+    "tabla": [
+      {
+        "grupo": "urbano",
+        "clave": "predios_edificados",
+        "descripcion": "Sobre el valor catastral de los predios edificados",
+        "tasa_millar": 0.0,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "urbano",
+        "clave": "predios_no_edificados",
+        "descripcion": "Sobre el valor catastral de los predios no edificados",
+        "tasa_millar": 0.0,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "rustico",
+        "clave": "predios_rurales_riego_de_gravedad_1",
+        "descripcion": "Riego de Gravedad 1: terrenos dentro del distrito de Riego con derecho de agua de presa",
+        "tasa_millar": 1.0476336,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "rustico",
+        "clave": "predios_rurales_riego_de_gravedad_2",
+        "descripcion": "Riego de Gravedad 2: Terrenos con derecho a agua de presa o rio irregularmente aun dentro del distrito de Riego",
+        "tasa_millar": 1.84117856,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "rustico",
+        "clave": "predios_rurales_riego_de_bombeo_1",
+        "descripcion": "Riego de Bombeo 1: Terrenos con riego mecánico con pozo de poca profundidad (100 pies máximo)",
+        "tasa_millar": 1.83250184,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "rustico",
+        "clave": "predios_rurales_riego_de_bombeo_2",
+        "descripcion": "Riego de Bombeo 2: Terrenos con riego mecánico con pozos profundos (más de 100 pies)",
+        "tasa_millar": 1.86088864,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "rustico",
+        "clave": "predios_rurales_riego_de_temporal",
+        "descripcion": "Riego de temporal Única: Terreno que depende de para su irrigación de la eventualidad de precipitaciones",
+        "tasa_millar": 2.79176144,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "rustico",
+        "clave": "predios_rurales_agostadero_1",
+        "descripcion": "Agostadero de 1: Terreno con praderas naturales",
+        "tasa_millar": 1.43444392,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "rustico",
+        "clave": "predios_rurales_agostadero_2",
+        "descripcion": "Agostadero de 2: Terreno que fueron mejorados para pastoreo en base a técnicas",
+        "tasa_millar": 1.81964744,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "rustico",
+        "clave": "predios_rurales_agostadero_3",
+        "descripcion": "Agostadero de 3: Terrenos que se encuentran en zonas semidesérticas de bajo rendimiento",
+        "tasa_millar": 0.28686736,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "rustico",
+        "clave": "predios_rurales_cinegetico",
+        "descripcion": "Cinegético Única: Zona semidesérticas, cerril, con bajíos y arroyos e instalaciones rústicas de abrevadero",
+        "tasa_millar": 1.0476336,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "rustico",
+        "clave": "industrial_minero_1",
+        "descripcion": "Industrial Minero 1: Que fueron mejorados para industria minera con derecho a agua de presa regularmente",
+        "tasa_millar": 1.84117856,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "rustico",
+        "clave": "industrial_minero_2",
+        "descripcion": "Industrial Minero 2: Que fueron mejorados para industria minera",
+        "tasa_millar": 1.83250184,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "rustico",
+        "clave": "industrial_minero_3",
+        "descripcion": "Industrial Minero 3: Praderas naturales para uso minero",
+        "tasa_millar": 1.86088864,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "otro",
+        "clave": "industrial",
+        "descripcion": "Industrial: Que fueron mejorados para industria",
+        "tasa_millar": 1.8360368,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      }
+    ],
+    "minimo_predial": {
+      "monto": 51.82,
+      "periodicidad": "anual",
+      "unidad": "pesos"
+    },
+    "comentarios": ""
+  },
+  "_meta": {
+    "fuente": "txt",
+    "modelo": "reclasified_v1[gpt-5.4-mini]"
+  },
+  "_meta_v2": {
+    "intentos": 0,
+    "requiere_revision": false,
+    "razon": null,
+    "tokens": {
+      "input": 0,
+      "output": 0,
+      "cached": 0
+    },
+    "cvegeo": "26021",
+    "estado": "sonora",
+    "anio": 2019
+  }
+}

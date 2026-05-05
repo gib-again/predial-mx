@@ -1,0 +1,87 @@
+{
+  "predial": {
+    "tipo_esquema": "progresivo",
+    "tabla": [
+      {
+        "n_rango": 1,
+        "inferior": 0.01,
+        "superior": 38000.0,
+        "cuota_fija": 57.41,
+        "tasa_marginal": 0.0
+      },
+      {
+        "n_rango": 2,
+        "inferior": 38000.0,
+        "superior": 76000.0,
+        "cuota_fija": 57.41,
+        "tasa_marginal": 0.8693
+      },
+      {
+        "n_rango": 3,
+        "inferior": 76000.0,
+        "superior": 144400.0,
+        "cuota_fija": 87.98,
+        "tasa_marginal": 1.2806
+      },
+      {
+        "n_rango": 4,
+        "inferior": 144400.0,
+        "superior": 259920.0,
+        "cuota_fija": 175.58,
+        "tasa_marginal": 1.6049
+      },
+      {
+        "n_rango": 5,
+        "inferior": 259920.0,
+        "superior": 441864.0,
+        "cuota_fija": 360.93,
+        "tasa_marginal": 2.14
+      },
+      {
+        "n_rango": 6,
+        "inferior": 441864.0,
+        "superior": 706982.0,
+        "cuota_fija": 750.31,
+        "tasa_marginal": 2.1413
+      },
+      {
+        "n_rango": 7,
+        "inferior": 706982.0,
+        "superior": null,
+        "cuota_fija": 1318.02,
+        "tasa_marginal": 2.1428
+      }
+    ],
+    "minimo_predial": {
+      "monto": 57.41,
+      "periodicidad": "anual",
+      "unidad": "pesos"
+    },
+    "comentarios": "Tarifa principal tomada de predios edificados. Tarifa paralela para predios no edificados: 0.01-18686.75 paga 57.41 cuota mínima; 18686.76-21855.00 paga 3.0672576 al millar; 21855.01 en adelante paga 3.9618744 al millar. Tarifa paralela para cada hectárea de predios rurales por categorías de riego/agostadero/minero en al millar; y para edificaciones de predios rurales existe otra tabla por rangos con cuota mínima 57.41 y tasas de 1.3739 a 2.0768 al millar. Impuesto predial ejidal: 2.00 por hectárea.",
+    "clasificacion_justificacion": null
+  },
+  "_meta": {
+    "fuente": "pdf_vision_multi",
+    "modelo": "gpt-5.4"
+  },
+  "_meta_v2": {
+    "intentos": 1,
+    "requiere_revision": false,
+    "escalado": true,
+    "razon": "rescate_via_vision_multi",
+    "usado_reocr": false,
+    "usado_vision": true,
+    "usado_vision_multi": true,
+    "tokens": {
+      "input": 130868,
+      "output": 3327,
+      "cached": 6912
+    },
+    "cvegeo": "26013",
+    "estado": "sonora",
+    "anio": 2022,
+    "pdf_stem": "2021CCVIII53X",
+    "elapsed_sec_pdf": 106.73499999998603,
+    "razon_no_encontrado": null
+  }
+}

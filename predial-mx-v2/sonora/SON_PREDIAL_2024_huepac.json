@@ -1,0 +1,80 @@
+{
+  "predial": {
+    "tipo_esquema": "progresivo",
+    "tabla": [
+      {
+        "n_rango": 1,
+        "inferior": 0.01,
+        "superior": 38000.0,
+        "cuota_fija": 62.69,
+        "tasa_marginal": 0.0
+      },
+      {
+        "n_rango": 2,
+        "inferior": 38000.0,
+        "superior": 76000.0,
+        "cuota_fija": 62.69,
+        "tasa_marginal": 0.91369038
+      },
+      {
+        "n_rango": 3,
+        "inferior": 76000.0,
+        "superior": 144400.0,
+        "cuota_fija": 94.72,
+        "tasa_marginal": 1.47599612
+      },
+      {
+        "n_rango": 4,
+        "inferior": 144400.0,
+        "superior": 259920.0,
+        "cuota_fija": 195.67,
+        "tasa_marginal": 1.86893267
+      },
+      {
+        "n_rango": 5,
+        "inferior": 259920.0,
+        "superior": 441864.0,
+        "cuota_fija": 411.67,
+        "tasa_marginal": 1.87085218
+      },
+      {
+        "n_rango": 6,
+        "inferior": 441864.0,
+        "superior": null,
+        "cuota_fija": 752.0,
+        "tasa_marginal": 1.87220714
+      }
+    ],
+    "minimo_predial": {
+      "monto": 62.69,
+      "periodicidad": "anual",
+      "unidad": "pesos"
+    },
+    "comentarios": "Tarifa principal tomada de predios edificados (artículo 5, fracción I). Tarifas paralelas: predios no edificados con tres brackets (0.01-21902.30: 62.6891866 cuota mínima; 21902.30-25620.00: 3.86191493 al millar; 25620.01 en adelante: 3.68543653 al millar); predios rurales por hectárea con tasas al millar por categoría; edificaciones de predios rurales con brackets y tasa al millar. Impuesto predial ejidal separado: 2.00 por hectárea (artículo 9).",
+    "clasificacion_justificacion": null
+  },
+  "_meta": {
+    "fuente": "pdf_vision_multi",
+    "modelo": "gpt-5.4"
+  },
+  "_meta_v2": {
+    "intentos": 1,
+    "requiere_revision": false,
+    "escalado": true,
+    "razon": "rescate_via_vision_multi",
+    "usado_reocr": false,
+    "usado_vision": true,
+    "usado_vision_multi": true,
+    "tokens": {
+      "input": 130808,
+      "output": 1120,
+      "cached": 6912
+    },
+    "cvegeo": "26034",
+    "estado": "sonora",
+    "anio": 2024,
+    "pdf_stem": "2023CCXII52XIV",
+    "elapsed_sec_pdf": 119.31200000003446,
+    "razon_no_encontrado": null
+  }
+}

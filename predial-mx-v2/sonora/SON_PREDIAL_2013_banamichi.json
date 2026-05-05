@@ -1,0 +1,174 @@
+{
+  "predial": {
+    "tipo_esquema": "tarifa_millar",
+    "tabla": [
+      {
+        "grupo": "urbano",
+        "clave": "predios_edificados",
+        "descripcion": "Sobre el valor catastral de los predios edificados",
+        "tasa_millar": 0.0,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "urbano",
+        "clave": "predios_edificados",
+        "descripcion": "Sobre el valor catastral de los predios edificados",
+        "tasa_millar": 0.6608,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "urbano",
+        "clave": "predios_edificados",
+        "descripcion": "Sobre el valor catastral de los predios edificados",
+        "tasa_millar": 0.9734,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "urbano",
+        "clave": "predios_edificados",
+        "descripcion": "Sobre el valor catastral de los predios edificados",
+        "tasa_millar": 1.22,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "urbano",
+        "clave": "predios_edificados",
+        "descripcion": "Sobre el valor catastral de los predios edificados",
+        "tasa_millar": 1.6268,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "urbano",
+        "clave": "predios_edificados",
+        "descripcion": "Sobre el valor catastral de los predios edificados",
+        "tasa_millar": 1.6278,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "urbano",
+        "clave": "predios_edificados",
+        "descripcion": "Sobre el valor catastral de los predios edificados",
+        "tasa_millar": 1.6288,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "urbano",
+        "clave": "predios_no_edificados",
+        "descripcion": "Sobre el valor catastral de los predios no edificados conforme a lo siguiente",
+        "tasa_millar": 2.2454,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "urbano",
+        "clave": "predios_no_edificados",
+        "descripcion": "Sobre el valor catastral de los predios no edificados conforme a lo siguiente",
+        "tasa_millar": 2.8922,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "rustico",
+        "clave": "riego_de_gravedad_1",
+        "descripcion": "Riego de Gravedad 1: Terrenos dentro del distrito de Riego con derecho de agua de presa regularmente",
+        "tasa_millar": 0.8821,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "rustico",
+        "clave": "riego_de_gravedad_2",
+        "descripcion": "Riego de Gravedad 2: Terrenos con derecho a agua de presa o río irregularmente aun dentro del distrito de Riego",
+        "tasa_millar": 1.5502,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "rustico",
+        "clave": "riego_de_bombeo_1",
+        "descripcion": "Riego de Bombeo 1: Terrenos con riego mecánico con pozo de poca profundidad (100 pies máximos)",
+        "tasa_millar": 1.543,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "rustico",
+        "clave": "riego_de_bombeo_2",
+        "descripcion": "Riego de Bombeo 2: Terrenos con riego mecánico con pozo profundo (más de 100 pies)",
+        "tasa_millar": 1.5669,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "rustico",
+        "clave": "riego_de_temporal_unica",
+        "descripcion": "Riego de temporal Única: Terreno que depende de para su irrigación de la eventualidad de precipitaciones",
+        "tasa_millar": 2.3506,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "rustico",
+        "clave": "agostadero_de_1",
+        "descripcion": "Agostadero de 1: Terreno con praderas naturales",
+        "tasa_millar": 1.2078,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "rustico",
+        "clave": "agostadero_de_2",
+        "descripcion": "Agostadero de 2: Terreno que fueron mejorados para pastoreo en base a técnicas",
+        "tasa_millar": 1.5322,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "rustico",
+        "clave": "agostadero_de_3",
+        "descripcion": "Agostadero de 3: Terrenos que se encuentran en zonas semidesérticas de bajo rendimiento",
+        "tasa_millar": 0.2415,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "rustico",
+        "clave": "minero_1",
+        "descripcion": "Minero 1: Terrenos con aprovechamiento metálico y no metálico",
+        "tasa_millar": 1.555,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      }
+    ],
+    "minimo_predial": {
+      "monto": 43.63,
+      "periodicidad": "anual",
+      "unidad": "pesos"
+    },
+    "comentarios": ""
+  },
+  "_meta": {
+    "fuente": "txt",
+    "modelo": "reclasified_v1[gpt-5.4-mini]"
+  },
+  "_meta_v2": {
+    "intentos": 0,
+    "requiere_revision": false,
+    "razon": null,
+    "tokens": {
+      "input": 0,
+      "output": 0,
+      "cached": 0
+    },
+    "cvegeo": "26013",
+    "estado": "sonora",
+    "anio": 2013
+  }
+}

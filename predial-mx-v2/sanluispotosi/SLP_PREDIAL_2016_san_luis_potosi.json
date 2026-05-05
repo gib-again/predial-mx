@@ -1,0 +1,134 @@
+{
+  "predial": {
+    "tipo_esquema": "tarifa_millar",
+    "tabla": [
+      {
+        "grupo": "urbano",
+        "clave": "urbanos_y_suburbanos_con_edificacion_habitacional_valor_hasta_230000",
+        "descripcion": "Predios urbanos y suburbanos con edificación de uso habitacional, cuyo valor no exceda de $230,000.00",
+        "tasa_millar": 1.1,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "urbano",
+        "clave": "urbanos_y_suburbanos_con_edificacion_habitacional_valor_mayor",
+        "descripcion": "Predios urbanos y suburbanos con edificación de uso habitacional, predios distintos al numeral anterior",
+        "tasa_millar": 1.23,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "urbano",
+        "clave": "urbanos_y_suburbanos_sin_edificacion_bardeados_y_cercados_con_malla_y_limpios",
+        "descripcion": "Predios urbanos y suburbanos sin edificación, predios bardeados y cercados con malla y limpios",
+        "tasa_millar": 1.2,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "urbano",
+        "clave": "urbanos_y_suburbanos_sin_edificacion_sin_bardear_y_sin_cercado_con_malla",
+        "descripcion": "Predios urbanos y suburbanos sin edificación, predios sin bardear y sin cercado con malla",
+        "tasa_millar": 6.0,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "urbano",
+        "clave": "urbanos_y_suburbanos_destinados_a_comercios_servicios_oficinas",
+        "descripcion": "Predios urbanos y suburbanos destinados a comercios, servicios, oficinas",
+        "tasa_millar": 6.15,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "urbano",
+        "clave": "urbanos_y_suburbanos_destinados_a_comercios_servicios_oficinas_en_club",
+        "descripcion": "Predios urbanos y suburbanos destinados a comercios, servicios, oficinas en club",
+        "tasa_millar": 1.7,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "rustico",
+        "clave": "predios_de_propiedad_privada_de_uso_ganadero_y_o_agricola",
+        "descripcion": "Predios rústicos de propiedad privada de uso ganadero y/o agrícola",
+        "tasa_millar": 1.03,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "rustico",
+        "clave": "predios_de_propiedad_privada_de_uso_industrial_o_agroindustrial",
+        "descripcion": "Predios rústicos de propiedad privada de uso industrial o agroindustrial",
+        "tasa_millar": 1.05,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "rustico",
+        "clave": "predios_de_propiedad_privada_de_uso_comercial_y_o_turistico",
+        "descripcion": "Predios rústicos de propiedad privada de uso comercial y/o turístico",
+        "tasa_millar": 1.545,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "rustico",
+        "clave": "predios_de_propiedad_ejidal_de_uso_ganadero_y_o_agricola",
+        "descripcion": "Predios de propiedad ejidal de uso ganadero y/o agrícola",
+        "tasa_millar": 1.03,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "rustico",
+        "clave": "predios_de_propiedad_ejidal_de_uso_industrial_o_agroindustrial",
+        "descripcion": "Predios de propiedad ejidal de uso industrial o agroindustrial",
+        "tasa_millar": 1.05,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "rustico",
+        "clave": "predios_de_propiedad_ejidal_de_uso_comercial_y_o_turistica",
+        "descripcion": "Predios de propiedad ejidal de uso comercial y/o turística",
+        "tasa_millar": 1.545,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "general",
+        "clave": "instituciones_religiosas",
+        "descripcion": "Instituciones Religiosas",
+        "tasa_millar": 1.0,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      }
+    ],
+    "minimo_predial": {
+      "monto": 4.0,
+      "periodicidad": "anual",
+      "unidad": "vsm"
+    },
+    "comentarios": ""
+  },
+  "_meta": {
+    "fuente": "txt",
+    "modelo": "reclasified_v1[gpt-5.4-mini]"
+  },
+  "_meta_v2": {
+    "intentos": 0,
+    "requiere_revision": false,
+    "razon": null,
+    "tokens": {
+      "input": 0,
+      "output": 0,
+      "cached": 0
+    },
+    "cvegeo": "24028",
+    "estado": "sanluispotosi",
+    "anio": 2016
+  }
+}

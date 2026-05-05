@@ -5,11 +5,11 @@
     "descripcion_estructural": "Ley de ingresos en formato corto: contiene únicamente pronóstico presupuestal por concepto (línea 'Impuesto Predial $X' o 'I.- Predial $X') sin secciones que detallen tarifas, tasas, montos al millar ni rangos. Las contribuciones se rigen por la Ley General de Hacienda Municipal del Estado de Yucatán (referenciada típicamente en Art. 13-15 del articulado).",
     "tabla_cruda": [],
     "minimo_predial": null,
-    "comentarios": "[treatment_audit:asumir_esquema_anterior from 2014] asumir tasa periodo inmediato anterior Comentario original: Síntesis determinista a partir del fallback `short_form` del segmentador de Yucatán. No se invocó LLM porque el documento fuente no contiene información de tarifa."
+    "comentarios": "Síntesis determinista a partir del fallback `short_form` del segmentador de Yucatán. No se invocó LLM porque el documento fuente no contiene información de tarifa."
   },
   "_meta": {
     "fuente": "txt",
-    "modelo": "imputed_audit_directed[from_2014]"
+    "modelo": "imputed_confirmed_fill"
   },
   "_meta_v2": {
     "intentos": 0,
@@ -24,9 +24,6 @@
     "estado": "yucatan",
     "anio": 2015,
     "imputed_from_year": 2014,
-    "imputed_method": "audit_directed",
-    "treatment_audit_source": "asumir_esquema_anterior",
-    "audit_auditor": "",
-    "audit_fecha": ""
+    "imputed_method": "confirmed_fill"
   }
 }

@@ -1,0 +1,80 @@
+{
+  "predial": {
+    "tipo_esquema": "progresivo",
+    "tabla": [
+      {
+        "n_rango": 1,
+        "inferior": 0.01,
+        "superior": 38000.0,
+        "cuota_fija": 49.81,
+        "tasa_marginal": 0.0
+      },
+      {
+        "n_rango": 2,
+        "inferior": 38000.0,
+        "superior": 76000.0,
+        "cuota_fija": 49.81,
+        "tasa_marginal": 0.8214
+      },
+      {
+        "n_rango": 3,
+        "inferior": 76000.0,
+        "superior": 144400.0,
+        "cuota_fija": 79.84,
+        "tasa_marginal": 1.2328
+      },
+      {
+        "n_rango": 4,
+        "inferior": 144400.0,
+        "superior": 259920.0,
+        "cuota_fija": 166.66,
+        "tasa_marginal": 1.4606
+      },
+      {
+        "n_rango": 5,
+        "inferior": 259920.0,
+        "superior": 441864.0,
+        "cuota_fija": 340.49,
+        "tasa_marginal": 1.7377
+      },
+      {
+        "n_rango": 6,
+        "inferior": 441864.0,
+        "superior": null,
+        "cuota_fija": 636.03,
+        "tasa_marginal": 3.3677
+      }
+    ],
+    "minimo_predial": {
+      "monto": 49.81,
+      "periodicidad": "anual",
+      "unidad": "pesos"
+    },
+    "comentarios": "Tabla principal tomada de predios edificados. Tarifa paralela para predios no edificados: 0.01-11106.33 cuota mínima 49.81; 11106.34-12617.00 tasa 4.4850 al millar; 12617.00 en adelante 5.7766 al millar. Tarifa paralela para predios rústicos por categoría al millar y para edificaciones de predios rurales con rangos y tasas al millar. Impuesto predial ejidal: 0.6341 por hectárea.",
+    "clasificacion_justificacion": null
+  },
+  "_meta": {
+    "fuente": "pdf_vision_multi",
+    "modelo": "gpt-5.4"
+  },
+  "_meta_v2": {
+    "intentos": 1,
+    "requiere_revision": false,
+    "escalado": true,
+    "razon": "rescate_via_vision_multi",
+    "usado_reocr": false,
+    "usado_vision": true,
+    "usado_vision_multi": true,
+    "tokens": {
+      "input": 198292,
+      "output": 2533,
+      "cached": 6912
+    },
+    "cvegeo": "26011",
+    "estado": "sonora",
+    "anio": 2016,
+    "pdf_stem": "2015CXCVI51IX",
+    "elapsed_sec_pdf": 223.875,
+    "razon_no_encontrado": null
+  }
+}

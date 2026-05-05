@@ -1,0 +1,115 @@
+{
+  "predial": {
+    "tipo_esquema": "progresivo",
+    "tabla": [
+      {
+        "n_rango": 1,
+        "inferior": 0.01,
+        "superior": 38000.0,
+        "cuota_fija": 48.38,
+        "tasa_marginal": 0.0
+      },
+      {
+        "n_rango": 2,
+        "inferior": 38000.0,
+        "superior": 76000.0,
+        "cuota_fija": 48.38,
+        "tasa_marginal": 0.0
+      },
+      {
+        "n_rango": 3,
+        "inferior": 76000.0,
+        "superior": 144400.0,
+        "cuota_fija": 48.38,
+        "tasa_marginal": 1.3817
+      },
+      {
+        "n_rango": 4,
+        "inferior": 144400.0,
+        "superior": 259920.0,
+        "cuota_fija": 99.55,
+        "tasa_marginal": 1.3824
+      },
+      {
+        "n_rango": 5,
+        "inferior": 259920.0,
+        "superior": 441864.0,
+        "cuota_fija": 231.83,
+        "tasa_marginal": 1.3834
+      },
+      {
+        "n_rango": 6,
+        "inferior": 441864.0,
+        "superior": 706982.0,
+        "cuota_fija": 455.43,
+        "tasa_marginal": 1.3842
+      },
+      {
+        "n_rango": 7,
+        "inferior": 706982.0,
+        "superior": 1060473.0,
+        "cuota_fija": 807.79,
+        "tasa_marginal": 1.385
+      },
+      {
+        "n_rango": 8,
+        "inferior": 1060473.0,
+        "superior": 1484662.0,
+        "cuota_fija": 1321.57,
+        "tasa_marginal": 1.386
+      },
+      {
+        "n_rango": 9,
+        "inferior": 1484662.0,
+        "superior": 1930060.0,
+        "cuota_fija": 2007.02,
+        "tasa_marginal": 1.3867
+      },
+      {
+        "n_rango": 10,
+        "inferior": 1930060.0,
+        "superior": 2316072.0,
+        "cuota_fija": 2630.07,
+        "tasa_marginal": 1.3876
+      },
+      {
+        "n_rango": 11,
+        "inferior": 2316072.0,
+        "superior": null,
+        "cuota_fija": 3694.79,
+        "tasa_marginal": 1.3885
+      }
+    ],
+    "minimo_predial": {
+      "monto": 48.38,
+      "periodicidad": "anual",
+      "unidad": "pesos"
+    },
+    "comentarios": "Tarifas paralelas en el mismo artículo: predios no edificados con tres brackets (0.01–12774.38 cuota mínima 48.38; 12774.39–14941.00 tasa 3.7870 al millar; 14941.01 en adelante tasa 4.8786 al millar); predios rústicos por hectárea con categorías y tasas al millar; edificaciones de predios rurales con ocho brackets y cuota mínima de 48.38. Nota expresa: se aplicará 10% de descuento a los contribuyentes que realicen el pago del impuesto predial del año 2016 en enero, febrero y marzo; para morosidad de 2015 y anteriores podrá aplicarse descuento de hasta 80% en recargos en esos meses; en abril, mayo y junio de 2016 habrá descuento de 5% en el impuesto predial correspondiente al año 2016 y hasta 25% por concepto de recargos de 2015 y anteriores; a quienes presenten credencial del INAPAM se aplicará 50% de descuento a impuesto y recargos considerando el impuesto del año 2016. En impuesto predial ejidal, la tarifa aplicable será de 10.00 por hectárea.",
+    "clasificacion_justificacion": null
+  },
+  "_meta": {
+    "fuente": "pdf_vision_multi",
+    "modelo": "gpt-5.4"
+  },
+  "_meta_v2": {
+    "intentos": 1,
+    "requiere_revision": false,
+    "escalado": true,
+    "razon": "rescate_via_vision_multi",
+    "usado_reocr": false,
+    "usado_vision": true,
+    "usado_vision_multi": true,
+    "tokens": {
+      "input": 198260,
+      "output": 1882,
+      "cached": 6912
+    },
+    "cvegeo": "26039",
+    "estado": "sonora",
+    "anio": 2016,
+    "pdf_stem": "2015CXCVI51XIV",
+    "elapsed_sec_pdf": 129.23400000005495,
+    "razon_no_encontrado": null
+  }
+}

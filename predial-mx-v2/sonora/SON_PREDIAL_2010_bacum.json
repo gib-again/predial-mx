@@ -1,0 +1,101 @@
+{
+  "predial": {
+    "tipo_esquema": "progresivo",
+    "tabla": [
+      {
+        "n_rango": 1,
+        "inferior": 0.01,
+        "superior": 38000.0,
+        "cuota_fija": 41.95,
+        "tasa_marginal": 0.0
+      },
+      {
+        "n_rango": 2,
+        "inferior": 38000.0,
+        "superior": 76000.0,
+        "cuota_fija": 41.95,
+        "tasa_marginal": 0.104
+      },
+      {
+        "n_rango": 3,
+        "inferior": 76000.0,
+        "superior": 144400.0,
+        "cuota_fija": 44.1,
+        "tasa_marginal": 0.3676
+      },
+      {
+        "n_rango": 4,
+        "inferior": 144400.0,
+        "superior": 259920.0,
+        "cuota_fija": 69.24,
+        "tasa_marginal": 0.5034
+      },
+      {
+        "n_rango": 5,
+        "inferior": 259920.0,
+        "superior": 441864.0,
+        "cuota_fija": 127.39,
+        "tasa_marginal": 0.6209
+      },
+      {
+        "n_rango": 6,
+        "inferior": 441864.0,
+        "superior": 706982.0,
+        "cuota_fija": 240.35,
+        "tasa_marginal": 0.6219
+      },
+      {
+        "n_rango": 7,
+        "inferior": 706982.0,
+        "superior": 1060473.0,
+        "cuota_fija": 405.24,
+        "tasa_marginal": 0.623
+      },
+      {
+        "n_rango": 8,
+        "inferior": 1060473.0,
+        "superior": 1484662.0,
+        "cuota_fija": 625.45,
+        "tasa_marginal": 0.7808
+      },
+      {
+        "n_rango": 9,
+        "inferior": 1484662.0,
+        "superior": null,
+        "cuota_fija": 956.66,
+        "tasa_marginal": 0.7809
+      }
+    ],
+    "minimo_predial": {
+      "monto": 41.95,
+      "periodicidad": "anual",
+      "unidad": "pesos"
+    },
+    "comentarios": "Tabla principal tomada de predios edificados (Art. 5, fracción I). Tarifa paralela para predios no edificados: $41.95 cuota mínima hasta $9,450.00; 4.2557 al millar de $9,450.01 a $11,534.00; 5.4798 al millar en adelante. Tarifa paralela para predios rurales por hectárea para distintas poblaciones con categorías de riego/agostadero/acuícola; en la página visible aparecen tasas 0.8482, 1.4906, 1.4837, 1.5066, 2.2602, 1.1613, 1.4733, 0.2322, 1.5066, 1.5054 y 2.2568 al millar. Tarifa paralela para edificaciones de predios rurales: $41.95 cuota mínima hasta $38,000.00; luego 0.468, 0.520, 0.572, 0.624, 0.728, 0.832 y 0.936 al millar por rangos hasta en adelante. En ningún caso el impuesto será menor a $41.95.",
+    "clasificacion_justificacion": null
+  },
+  "_meta": {
+    "fuente": "pdf_vision_multi",
+    "modelo": "gpt-5.4"
+  },
+  "_meta_v2": {
+    "intentos": 1,
+    "requiere_revision": false,
+    "escalado": true,
+    "razon": "rescate_via_vision_multi",
+    "usado_reocr": false,
+    "usado_vision": true,
+    "usado_vision_multi": true,
+    "tokens": {
+      "input": 163190,
+      "output": 1759,
+      "cached": 6912
+    },
+    "cvegeo": "26012",
+    "estado": "sonora",
+    "anio": 2010,
+    "pdf_stem": "2009CLXXXIV53XV",
+    "elapsed_sec_pdf": 127.125,
+    "razon_no_encontrado": null
+  }
+}

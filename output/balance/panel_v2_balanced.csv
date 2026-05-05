@@ -563,7 +563,7 @@ cvegeo,estado,municipio,ejercicio,tipo_esquema,numero_rangos,monto_max_rango,imp
 05036,Coahuila de Zaragoza,Viesca,2011,tarifa_millar,,,false,
 05036,Coahuila de Zaragoza,Viesca,2012,tarifa_millar,,,false,
 05036,Coahuila de Zaragoza,Viesca,2013,tarifa_millar,,,false,
-05036,Coahuila de Zaragoza,Viesca,2014,mixto,4,120000.0,false,
+05036,Coahuila de Zaragoza,Viesca,2014,tarifa_millar,,,false,
 05036,Coahuila de Zaragoza,Viesca,2015,tarifa_millar,,,false,
 05036,Coahuila de Zaragoza,Viesca,2016,tarifa_millar,,,false,
 05036,Coahuila de Zaragoza,Viesca,2017,tarifa_millar,,,false,
@@ -579,7 +579,7 @@ cvegeo,estado,municipio,ejercicio,tipo_esquema,numero_rangos,monto_max_rango,imp
 05037,Coahuila de Zaragoza,Villa Union,2011,tarifa_millar,,,false,
 05037,Coahuila de Zaragoza,Villa Union,2012,tarifa_millar,,,false,
 05037,Coahuila de Zaragoza,Villa Union,2013,tarifa_millar,,,false,
-05037,Coahuila de Zaragoza,Villa Union,2014,progresivo,4,120000.0,false,
+05037,Coahuila de Zaragoza,Villa Union,2014,tarifa_millar,,,false,
 05037,Coahuila de Zaragoza,Villa Union,2015,tarifa_millar,,,false,
 05037,Coahuila de Zaragoza,Villa Union,2016,tarifa_millar,,,false,
 05037,Coahuila de Zaragoza,Villa Union,2017,tarifa_millar,,,false,
@@ -595,7 +595,7 @@ cvegeo,estado,municipio,ejercicio,tipo_esquema,numero_rangos,monto_max_rango,imp
 05038,Coahuila de Zaragoza,Zaragoza,2011,tarifa_millar,,,false,
 05038,Coahuila de Zaragoza,Zaragoza,2012,tarifa_millar,,,false,
 05038,Coahuila de Zaragoza,Zaragoza,2013,tarifa_millar,,,false,
-05038,Coahuila de Zaragoza,Zaragoza,2014,progresivo,4,120000.0,false,
+05038,Coahuila de Zaragoza,Zaragoza,2014,tarifa_millar,,,false,
 05038,Coahuila de Zaragoza,Zaragoza,2015,tarifa_millar,,,false,
 05038,Coahuila de Zaragoza,Zaragoza,2016,tarifa_millar,,,false,
 05038,Coahuila de Zaragoza,Zaragoza,2017,tarifa_millar,,,false,
@@ -1879,7 +1879,7 @@ cvegeo,estado,municipio,ejercicio,tipo_esquema,numero_rangos,monto_max_rango,imp
 11003,Guanajuato,San Miguel de Allende,2015,mixto,6,9000.0,false,
 11003,Guanajuato,San Miguel de Allende,2016,mixto,6,9000.0,confirmed_fill,2015
 11003,Guanajuato,San Miguel de Allende,2017,mixto,6,9000.0,false,
-11003,Guanajuato,San Miguel de Allende,2018,tarifa_millar,,,false,
+11003,Guanajuato,San Miguel de Allende,2018,mixto,4,,false,
 11003,Guanajuato,San Miguel de Allende,2019,mixto,6,9000.0,false,
 11003,Guanajuato,San Miguel de Allende,2020,mixto,7,1500000.0,false,
 11003,Guanajuato,San Miguel de Allende,2021,mixto,7,1500000.0,false,
@@ -2106,7 +2106,7 @@ cvegeo,estado,municipio,ejercicio,tipo_esquema,numero_rangos,monto_max_rango,imp
 11017,Guanajuato,Irapuato,2018,tarifa_millar,,,false,
 11017,Guanajuato,Irapuato,2019,tarifa_millar,,,false,
 11017,Guanajuato,Irapuato,2020,mixto,24,22000000.0,false,
-11017,Guanajuato,Irapuato,2021,desconocido,,,false,
+11017,Guanajuato,Irapuato,2021,mixto,24,22000000.0,audit_directed[from_2020],2020
 11017,Guanajuato,Irapuato,2022,progresivo,24,22000000.0,false,
 11017,Guanajuato,Irapuato,2023,mixto,24,22000000.0,false,
 11017,Guanajuato,Irapuato,2024,progresivo,24,22000000.0,false,
@@ -2146,7 +2146,7 @@ cvegeo,estado,municipio,ejercicio,tipo_esquema,numero_rangos,monto_max_rango,imp
 11020,Guanajuato,Leon,2010,mixto,,,bfill,2011
 11020,Guanajuato,Leon,2011,mixto,7,11000.0,false,
 11020,Guanajuato,Leon,2012,progresivo,7,11000.0,false,
-11020,Guanajuato,Leon,2013,otro_no_clasificado,,,false,
+11020,Guanajuato,Leon,2013,progresivo,7,11000.0,audit_directed[from_2012],2012
 11020,Guanajuato,Leon,2014,mixto,7,11000.0,false,
 11020,Guanajuato,Leon,2015,progresivo,7,11000.0,false,
 11020,Guanajuato,Leon,2016,progresivo,7,11000.0,confirmed_fill,2015
@@ -2157,7 +2157,7 @@ cvegeo,estado,municipio,ejercicio,tipo_esquema,numero_rangos,monto_max_rango,imp
 11020,Guanajuato,Leon,2021,progresivo,6,49673145.6,false,
 11020,Guanajuato,Leon,2022,mixto,6,49673145.6,false,
 11020,Guanajuato,Leon,2023,progresivo,6,49673145.6,false,
-11020,Guanajuato,Leon,2024,desconocido,,,false,
+11020,Guanajuato,Leon,2024,mixto,,,false,
 11020,Guanajuato,Leon,2025,mixto,9,198692582.4,false,
 11021,Guanajuato,Moroleon,2010,tarifa_millar,,,false,
 11021,Guanajuato,Moroleon,2011,tarifa_millar,,,false,
@@ -2330,11 +2330,11 @@ cvegeo,estado,municipio,ejercicio,tipo_esquema,numero_rangos,monto_max_rango,imp
 11031,Guanajuato,San Francisco del Rincon,2018,tarifa_millar,,,false,
 11031,Guanajuato,San Francisco del Rincon,2019,tarifa_millar,,,false,
 11031,Guanajuato,San Francisco del Rincon,2020,progresivo,10,43000000.0,false,
-11031,Guanajuato,San Francisco del Rincon,2021,otro_no_clasificado,,,false,
-11031,Guanajuato,San Francisco del Rincon,2022,otro_no_clasificado,,,ffill,2021
-11031,Guanajuato,San Francisco del Rincon,2023,otro_no_clasificado,,,ffill,2021
-11031,Guanajuato,San Francisco del Rincon,2024,otro_no_clasificado,,,ffill,2021
-11031,Guanajuato,San Francisco del Rincon,2025,otro_no_clasificado,,,ffill,2021
+11031,Guanajuato,San Francisco del Rincon,2021,progresivo,,,ffill,2020
+11031,Guanajuato,San Francisco del Rincon,2022,progresivo,,,ffill,2020
+11031,Guanajuato,San Francisco del Rincon,2023,progresivo,,,ffill,2020
+11031,Guanajuato,San Francisco del Rincon,2024,progresivo,,,ffill,2020
+11031,Guanajuato,San Francisco del Rincon,2025,progresivo,10,43000000.0,audit_directed[from_2020],2020
 11032,Guanajuato,San Jose de Iturbide,2010,tarifa_millar,,,false,
 11032,Guanajuato,San Jose de Iturbide,2011,tarifa_millar,,,false,
 11032,Guanajuato,San Jose de Iturbide,2012,tarifa_millar,,,false,
@@ -6651,7 +6651,7 @@ cvegeo,estado,municipio,ejercicio,tipo_esquema,numero_rangos,monto_max_rango,imp
 22005,Queretaro,Colon,2019,progresivo,25,100143891.1,false,
 22005,Queretaro,Colon,2020,progresivo,25,1917537179.96,false,
 22005,Queretaro,Colon,2021,progresivo,25,1917537179.96,false,
-22005,Queretaro,Colon,2022,desconocido,,,false,
+22005,Queretaro,Colon,2022,progresivo,,,false,
 22005,Queretaro,Colon,2023,progresivo,,,false,
 22005,Queretaro,Colon,2024,progresivo,25,2848684672.48,false,
 22005,Queretaro,Colon,2025,progresivo,25,2848684672.48,false,
@@ -6863,6 +6863,931 @@ cvegeo,estado,municipio,ejercicio,tipo_esquema,numero_rangos,monto_max_rango,imp
 22018,Queretaro,Toliman,2023,tarifa_millar,,,false,
 22018,Queretaro,Toliman,2024,tarifa_millar,,,false,
 22018,Queretaro,Toliman,2025,tarifa_millar,,,false,
+24001,San Luis Potosi,Ahualulco del Sonido 13,2010,tarifa_millar,,,bfill,2012
+24001,San Luis Potosi,Ahualulco del Sonido 13,2011,tarifa_millar,,,bfill,2012
+24001,San Luis Potosi,Ahualulco del Sonido 13,2012,tarifa_millar,,,false,
+24001,San Luis Potosi,Ahualulco del Sonido 13,2013,tarifa_millar,,,confirmed_fill,2012
+24001,San Luis Potosi,Ahualulco del Sonido 13,2014,tarifa_millar,,,confirmed_fill,2012
+24001,San Luis Potosi,Ahualulco del Sonido 13,2015,tarifa_millar,,,false,
+24001,San Luis Potosi,Ahualulco del Sonido 13,2016,tarifa_millar,,,closure_fill,2012
+24001,San Luis Potosi,Ahualulco del Sonido 13,2017,otro_no_clasificado,,,false,
+24001,San Luis Potosi,Ahualulco del Sonido 13,2018,otro_no_clasificado,,,false,
+24001,San Luis Potosi,Ahualulco del Sonido 13,2019,otro_no_clasificado,,,false,
+24001,San Luis Potosi,Ahualulco del Sonido 13,2020,tarifa_millar,,,false,
+24001,San Luis Potosi,Ahualulco del Sonido 13,2021,tarifa_millar,,,confirmed_fill,2020
+24001,San Luis Potosi,Ahualulco del Sonido 13,2022,tarifa_millar,,,false,
+24001,San Luis Potosi,Ahualulco del Sonido 13,2023,tarifa_millar,,,false,
+24001,San Luis Potosi,Ahualulco del Sonido 13,2024,tarifa_millar,,,false,
+24001,San Luis Potosi,Ahualulco del Sonido 13,2025,tarifa_millar,,,false,
+24002,San Luis Potosi,Alaquines,2010,tarifa_millar,,,bfill,2012
+24002,San Luis Potosi,Alaquines,2011,tarifa_millar,,,bfill,2012
+24002,San Luis Potosi,Alaquines,2012,tarifa_millar,,,false,
+24002,San Luis Potosi,Alaquines,2013,tarifa_millar,,,confirmed_fill,2012
+24002,San Luis Potosi,Alaquines,2014,tarifa_millar,,,false,
+24002,San Luis Potosi,Alaquines,2015,tarifa_millar,,,false,
+24002,San Luis Potosi,Alaquines,2016,tarifa_millar,,,confirmed_fill,2015
+24002,San Luis Potosi,Alaquines,2017,tarifa_millar,,,false,
+24002,San Luis Potosi,Alaquines,2018,tarifa_millar,,,false,
+24002,San Luis Potosi,Alaquines,2019,tarifa_millar,,,false,
+24002,San Luis Potosi,Alaquines,2020,tarifa_millar,,,false,
+24002,San Luis Potosi,Alaquines,2021,tarifa_millar,,,confirmed_fill,2020
+24002,San Luis Potosi,Alaquines,2022,tarifa_millar,,,false,
+24002,San Luis Potosi,Alaquines,2023,tarifa_millar,,,false,
+24002,San Luis Potosi,Alaquines,2024,tarifa_millar,,,false,
+24002,San Luis Potosi,Alaquines,2025,tarifa_millar,,,false,
+24003,San Luis Potosi,Aquismon,2010,tarifa_millar,,,bfill,2012
+24003,San Luis Potosi,Aquismon,2011,tarifa_millar,,,bfill,2012
+24003,San Luis Potosi,Aquismon,2012,tarifa_millar,,,false,
+24003,San Luis Potosi,Aquismon,2013,tarifa_millar,,,ffill,2012
+24003,San Luis Potosi,Aquismon,2014,tarifa_millar,,,ffill,2012
+24003,San Luis Potosi,Aquismon,2015,tarifa_millar,,,ffill,2012
+24003,San Luis Potosi,Aquismon,2016,tarifa_millar,,,ffill,2012
+24003,San Luis Potosi,Aquismon,2017,tarifa_millar,,,closure_fill,2012
+24003,San Luis Potosi,Aquismon,2018,tarifa_millar,,,closure_fill,2012
+24003,San Luis Potosi,Aquismon,2019,tarifa_millar,,,false,
+24003,San Luis Potosi,Aquismon,2020,tarifa_millar,,,false,
+24003,San Luis Potosi,Aquismon,2021,tarifa_millar,,,confirmed_fill,2020
+24003,San Luis Potosi,Aquismon,2022,tarifa_millar,,,false,
+24003,San Luis Potosi,Aquismon,2023,tarifa_millar,,,false,
+24003,San Luis Potosi,Aquismon,2024,tarifa_millar,,,false,
+24003,San Luis Potosi,Aquismon,2025,tarifa_millar,,,false,
+24004,San Luis Potosi,Armadillo de los Infante,2010,tarifa_millar,,,bfill,2012
+24004,San Luis Potosi,Armadillo de los Infante,2011,tarifa_millar,,,bfill,2012
+24004,San Luis Potosi,Armadillo de los Infante,2012,tarifa_millar,,,false,
+24004,San Luis Potosi,Armadillo de los Infante,2013,cuota_fija_escalonada,3,440000.0,false,
+24004,San Luis Potosi,Armadillo de los Infante,2014,tarifa_millar,,,false,
+24004,San Luis Potosi,Armadillo de los Infante,2015,tarifa_millar,,,false,
+24004,San Luis Potosi,Armadillo de los Infante,2016,tarifa_millar,,,confirmed_fill,2015
+24004,San Luis Potosi,Armadillo de los Infante,2017,tarifa_millar,,,false,
+24004,San Luis Potosi,Armadillo de los Infante,2018,tarifa_millar,,,false,
+24004,San Luis Potosi,Armadillo de los Infante,2019,tarifa_millar,,,false,
+24004,San Luis Potosi,Armadillo de los Infante,2020,tarifa_millar,,,false,
+24004,San Luis Potosi,Armadillo de los Infante,2021,tarifa_millar,,,confirmed_fill,2020
+24004,San Luis Potosi,Armadillo de los Infante,2022,tarifa_millar,,,false,
+24004,San Luis Potosi,Armadillo de los Infante,2023,tarifa_millar,,,false,
+24004,San Luis Potosi,Armadillo de los Infante,2024,tarifa_millar,,,false,
+24004,San Luis Potosi,Armadillo de los Infante,2025,tarifa_millar,,,ffill,2024
+24005,San Luis Potosi,Cardenas,2010,tarifa_millar,,,bfill,2012
+24005,San Luis Potosi,Cardenas,2011,tarifa_millar,,,bfill,2012
+24005,San Luis Potosi,Cardenas,2012,tarifa_millar,,,false,
+24005,San Luis Potosi,Cardenas,2013,tarifa_millar,,,ffill,2012
+24005,San Luis Potosi,Cardenas,2014,tarifa_millar,,,ffill,2012
+24005,San Luis Potosi,Cardenas,2015,tarifa_millar,,,ffill,2012
+24005,San Luis Potosi,Cardenas,2016,tarifa_millar,,,ffill,2012
+24005,San Luis Potosi,Cardenas,2017,tarifa_millar,,,closure_fill,2012
+24005,San Luis Potosi,Cardenas,2018,tarifa_millar,,,closure_fill,2012
+24005,San Luis Potosi,Cardenas,2019,tarifa_millar,,,closure_fill,2012
+24005,San Luis Potosi,Cardenas,2020,tarifa_millar,,,false,
+24005,San Luis Potosi,Cardenas,2021,tarifa_millar,,,confirmed_fill,2020
+24005,San Luis Potosi,Cardenas,2022,tarifa_millar,,,false,
+24005,San Luis Potosi,Cardenas,2023,tarifa_millar,,,false,
+24005,San Luis Potosi,Cardenas,2024,tarifa_millar,,,false,
+24005,San Luis Potosi,Cardenas,2025,tarifa_millar,,,false,
+24006,San Luis Potosi,Catorce,2010,tarifa_millar,,,bfill,2012
+24006,San Luis Potosi,Catorce,2011,tarifa_millar,,,bfill,2012
+24006,San Luis Potosi,Catorce,2012,tarifa_millar,,,false,
+24006,San Luis Potosi,Catorce,2013,tarifa_millar,,,confirmed_fill,2012
+24006,San Luis Potosi,Catorce,2014,tarifa_millar,,,false,
+24006,San Luis Potosi,Catorce,2015,tarifa_millar,,,false,
+24006,San Luis Potosi,Catorce,2016,tarifa_millar,,,confirmed_fill,2015
+24006,San Luis Potosi,Catorce,2017,tarifa_millar,,,false,
+24006,San Luis Potosi,Catorce,2018,tarifa_millar,,,false,
+24006,San Luis Potosi,Catorce,2019,tarifa_millar,,,false,
+24006,San Luis Potosi,Catorce,2020,tarifa_millar,,,false,
+24006,San Luis Potosi,Catorce,2021,tarifa_millar,,,confirmed_fill,2020
+24006,San Luis Potosi,Catorce,2022,tarifa_millar,,,false,
+24006,San Luis Potosi,Catorce,2023,tarifa_millar,,,false,
+24006,San Luis Potosi,Catorce,2024,tarifa_millar,,,false,
+24006,San Luis Potosi,Catorce,2025,tarifa_millar,,,false,
+24007,San Luis Potosi,Cedral,2010,tarifa_millar,,,bfill,2012
+24007,San Luis Potosi,Cedral,2011,tarifa_millar,,,bfill,2012
+24007,San Luis Potosi,Cedral,2012,tarifa_millar,,,false,
+24007,San Luis Potosi,Cedral,2013,tarifa_millar,,,false,
+24007,San Luis Potosi,Cedral,2014,tarifa_millar,,,false,
+24007,San Luis Potosi,Cedral,2015,tarifa_millar,,,false,
+24007,San Luis Potosi,Cedral,2016,tarifa_millar,,,confirmed_fill,2015
+24007,San Luis Potosi,Cedral,2017,tarifa_millar,,,false,
+24007,San Luis Potosi,Cedral,2018,tarifa_millar,,,false,
+24007,San Luis Potosi,Cedral,2019,tarifa_millar,,,false,
+24007,San Luis Potosi,Cedral,2020,tarifa_millar,,,false,
+24007,San Luis Potosi,Cedral,2021,tarifa_millar,,,confirmed_fill,2020
+24007,San Luis Potosi,Cedral,2022,tarifa_millar,,,false,
+24007,San Luis Potosi,Cedral,2023,tarifa_millar,,,false,
+24007,San Luis Potosi,Cedral,2024,tarifa_millar,,,false,
+24007,San Luis Potosi,Cedral,2025,tarifa_millar,,,false,
+24008,San Luis Potosi,Cerritos,2010,tarifa_millar,,,bfill,2012
+24008,San Luis Potosi,Cerritos,2011,tarifa_millar,,,bfill,2012
+24008,San Luis Potosi,Cerritos,2012,tarifa_millar,,,false,
+24008,San Luis Potosi,Cerritos,2013,tarifa_millar,,,false,
+24008,San Luis Potosi,Cerritos,2014,tarifa_millar,,,false,
+24008,San Luis Potosi,Cerritos,2015,tarifa_millar,,,false,
+24008,San Luis Potosi,Cerritos,2016,tarifa_millar,,,confirmed_fill,2015
+24008,San Luis Potosi,Cerritos,2017,tarifa_millar,,,false,
+24008,San Luis Potosi,Cerritos,2018,tarifa_millar,,,false,
+24008,San Luis Potosi,Cerritos,2019,tarifa_millar,,,false,
+24008,San Luis Potosi,Cerritos,2020,tarifa_millar,,,false,
+24008,San Luis Potosi,Cerritos,2021,tarifa_millar,,,confirmed_fill,2020
+24008,San Luis Potosi,Cerritos,2022,tarifa_millar,,,false,
+24008,San Luis Potosi,Cerritos,2023,tarifa_millar,,,false,
+24008,San Luis Potosi,Cerritos,2024,tarifa_millar,,,false,
+24008,San Luis Potosi,Cerritos,2025,tarifa_millar,,,false,
+24009,San Luis Potosi,Cerro de San Pedro,2010,tarifa_millar,,,bfill,2012
+24009,San Luis Potosi,Cerro de San Pedro,2011,tarifa_millar,,,bfill,2012
+24009,San Luis Potosi,Cerro de San Pedro,2012,tarifa_millar,,,false,
+24009,San Luis Potosi,Cerro de San Pedro,2013,tarifa_millar,,,false,
+24009,San Luis Potosi,Cerro de San Pedro,2014,tarifa_millar,,,false,
+24009,San Luis Potosi,Cerro de San Pedro,2015,tarifa_millar,,,confirmed_fill,2014
+24009,San Luis Potosi,Cerro de San Pedro,2016,tarifa_millar,,,confirmed_fill,2014
+24009,San Luis Potosi,Cerro de San Pedro,2017,tarifa_millar,,,false,
+24009,San Luis Potosi,Cerro de San Pedro,2018,tarifa_millar,,,false,
+24009,San Luis Potosi,Cerro de San Pedro,2019,tarifa_millar,,,false,
+24009,San Luis Potosi,Cerro de San Pedro,2020,tarifa_millar,,,false,
+24009,San Luis Potosi,Cerro de San Pedro,2021,tarifa_millar,,,confirmed_fill,2020
+24009,San Luis Potosi,Cerro de San Pedro,2022,tarifa_millar,,,confirmed_fill,2020
+24009,San Luis Potosi,Cerro de San Pedro,2023,tarifa_millar,,,false,
+24009,San Luis Potosi,Cerro de San Pedro,2024,tarifa_millar,,,false,
+24009,San Luis Potosi,Cerro de San Pedro,2025,tarifa_millar,,,false,
+24010,San Luis Potosi,Ciudad del Maiz,2010,tarifa_millar,,,bfill,2012
+24010,San Luis Potosi,Ciudad del Maiz,2011,tarifa_millar,,,bfill,2012
+24010,San Luis Potosi,Ciudad del Maiz,2012,tarifa_millar,,,false,
+24010,San Luis Potosi,Ciudad del Maiz,2013,tarifa_millar,,,false,
+24010,San Luis Potosi,Ciudad del Maiz,2014,tarifa_millar,,,false,
+24010,San Luis Potosi,Ciudad del Maiz,2015,tarifa_millar,,,false,
+24010,San Luis Potosi,Ciudad del Maiz,2016,tarifa_millar,,,confirmed_fill,2015
+24010,San Luis Potosi,Ciudad del Maiz,2017,tarifa_millar,,,confirmed_fill,2015
+24010,San Luis Potosi,Ciudad del Maiz,2018,tarifa_millar,,,false,
+24010,San Luis Potosi,Ciudad del Maiz,2019,tarifa_millar,,,false,
+24010,San Luis Potosi,Ciudad del Maiz,2020,tarifa_millar,,,false,
+24010,San Luis Potosi,Ciudad del Maiz,2021,tarifa_millar,,,confirmed_fill,2020
+24010,San Luis Potosi,Ciudad del Maiz,2022,tarifa_millar,,,false,
+24010,San Luis Potosi,Ciudad del Maiz,2023,tarifa_millar,,,false,
+24010,San Luis Potosi,Ciudad del Maiz,2024,tarifa_millar,,,false,
+24010,San Luis Potosi,Ciudad del Maiz,2025,tarifa_millar,,,false,
+24011,San Luis Potosi,Ciudad Fernandez,2010,tarifa_millar,,,bfill,2012
+24011,San Luis Potosi,Ciudad Fernandez,2011,tarifa_millar,,,bfill,2012
+24011,San Luis Potosi,Ciudad Fernandez,2012,tarifa_millar,,,false,
+24011,San Luis Potosi,Ciudad Fernandez,2013,tarifa_millar,,,ffill,2012
+24011,San Luis Potosi,Ciudad Fernandez,2014,tarifa_millar,,,ffill,2012
+24011,San Luis Potosi,Ciudad Fernandez,2015,tarifa_millar,,,ffill,2012
+24011,San Luis Potosi,Ciudad Fernandez,2016,tarifa_millar,,,ffill,2012
+24011,San Luis Potosi,Ciudad Fernandez,2017,tarifa_millar,,,closure_fill,2012
+24011,San Luis Potosi,Ciudad Fernandez,2018,tarifa_millar,,,closure_fill,2012
+24011,San Luis Potosi,Ciudad Fernandez,2019,tarifa_millar,,,closure_fill,2012
+24011,San Luis Potosi,Ciudad Fernandez,2020,tarifa_millar,,,false,
+24011,San Luis Potosi,Ciudad Fernandez,2021,tarifa_millar,,,confirmed_fill,2020
+24011,San Luis Potosi,Ciudad Fernandez,2022,tarifa_millar,,,false,
+24011,San Luis Potosi,Ciudad Fernandez,2023,tarifa_millar,,,false,
+24011,San Luis Potosi,Ciudad Fernandez,2024,tarifa_millar,,,false,
+24011,San Luis Potosi,Ciudad Fernandez,2025,tarifa_millar,,,false,
+24012,San Luis Potosi,Tancanhuitz,2010,tarifa_millar,,,bfill,2012
+24012,San Luis Potosi,Tancanhuitz,2011,tarifa_millar,,,bfill,2012
+24012,San Luis Potosi,Tancanhuitz,2012,tarifa_millar,,,false,
+24012,San Luis Potosi,Tancanhuitz,2013,tarifa_millar,,,confirmed_fill,2012
+24012,San Luis Potosi,Tancanhuitz,2014,tarifa_millar,,,confirmed_fill,2012
+24012,San Luis Potosi,Tancanhuitz,2015,tarifa_millar,,,false,
+24012,San Luis Potosi,Tancanhuitz,2016,tarifa_millar,,,confirmed_fill,2015
+24012,San Luis Potosi,Tancanhuitz,2017,tarifa_millar,,,false,
+24012,San Luis Potosi,Tancanhuitz,2018,tarifa_millar,,,false,
+24012,San Luis Potosi,Tancanhuitz,2019,tarifa_millar,,,false,
+24012,San Luis Potosi,Tancanhuitz,2020,tarifa_millar,,,false,
+24012,San Luis Potosi,Tancanhuitz,2021,tarifa_millar,,,confirmed_fill,2020
+24012,San Luis Potosi,Tancanhuitz,2022,tarifa_millar,,,false,
+24012,San Luis Potosi,Tancanhuitz,2023,tarifa_millar,,,false,
+24012,San Luis Potosi,Tancanhuitz,2024,tarifa_millar,,,false,
+24012,San Luis Potosi,Tancanhuitz,2025,tarifa_millar,,,false,
+24013,San Luis Potosi,Ciudad Valles,2010,tarifa_millar,,,bfill,2013
+24013,San Luis Potosi,Ciudad Valles,2011,tarifa_millar,,,bfill,2013
+24013,San Luis Potosi,Ciudad Valles,2012,tarifa_millar,,,bfill,2013
+24013,San Luis Potosi,Ciudad Valles,2013,tarifa_millar,,,false,
+24013,San Luis Potosi,Ciudad Valles,2014,tarifa_millar,,,false,
+24013,San Luis Potosi,Ciudad Valles,2015,tarifa_millar,,,false,
+24013,San Luis Potosi,Ciudad Valles,2016,tarifa_millar,,,confirmed_fill,2015
+24013,San Luis Potosi,Ciudad Valles,2017,tarifa_millar,,,false,
+24013,San Luis Potosi,Ciudad Valles,2018,tarifa_millar,,,false,
+24013,San Luis Potosi,Ciudad Valles,2019,tarifa_millar,,,false,
+24013,San Luis Potosi,Ciudad Valles,2020,tarifa_millar,,,false,
+24013,San Luis Potosi,Ciudad Valles,2021,tarifa_millar,,,confirmed_fill,2020
+24013,San Luis Potosi,Ciudad Valles,2022,tarifa_millar,,,false,
+24013,San Luis Potosi,Ciudad Valles,2023,tarifa_millar,,,false,
+24013,San Luis Potosi,Ciudad Valles,2024,tarifa_millar,,,false,
+24013,San Luis Potosi,Ciudad Valles,2025,tarifa_millar,,,false,
+24014,San Luis Potosi,Coxcatlan,2010,tarifa_millar,,,bfill,2012
+24014,San Luis Potosi,Coxcatlan,2011,tarifa_millar,,,bfill,2012
+24014,San Luis Potosi,Coxcatlan,2012,tarifa_millar,,,false,
+24014,San Luis Potosi,Coxcatlan,2013,tarifa_millar,,,confirmed_fill,2012
+24014,San Luis Potosi,Coxcatlan,2014,tarifa_millar,,,false,
+24014,San Luis Potosi,Coxcatlan,2015,tarifa_millar,,,confirmed_fill,2014
+24014,San Luis Potosi,Coxcatlan,2016,tarifa_millar,,,confirmed_fill,2014
+24014,San Luis Potosi,Coxcatlan,2017,tarifa_millar,,,confirmed_fill,2014
+24014,San Luis Potosi,Coxcatlan,2018,tarifa_millar,,,false,
+24014,San Luis Potosi,Coxcatlan,2019,tarifa_millar,,,confirmed_fill,2018
+24014,San Luis Potosi,Coxcatlan,2020,tarifa_millar,,,false,
+24014,San Luis Potosi,Coxcatlan,2021,tarifa_millar,,,confirmed_fill,2020
+24014,San Luis Potosi,Coxcatlan,2022,tarifa_millar,,,false,
+24014,San Luis Potosi,Coxcatlan,2023,tarifa_millar,,,false,
+24014,San Luis Potosi,Coxcatlan,2024,tarifa_millar,,,false,
+24014,San Luis Potosi,Coxcatlan,2025,tarifa_millar,,,false,
+24015,San Luis Potosi,Charcas,2010,tarifa_millar,,,bfill,2012
+24015,San Luis Potosi,Charcas,2011,tarifa_millar,,,bfill,2012
+24015,San Luis Potosi,Charcas,2012,tarifa_millar,,,false,
+24015,San Luis Potosi,Charcas,2013,tarifa_millar,,,false,
+24015,San Luis Potosi,Charcas,2014,tarifa_millar,,,false,
+24015,San Luis Potosi,Charcas,2015,tarifa_millar,,,false,
+24015,San Luis Potosi,Charcas,2016,tarifa_millar,,,confirmed_fill,2015
+24015,San Luis Potosi,Charcas,2017,tarifa_millar,,,false,
+24015,San Luis Potosi,Charcas,2018,tarifa_millar,,,false,
+24015,San Luis Potosi,Charcas,2019,tarifa_millar,,,false,
+24015,San Luis Potosi,Charcas,2020,tarifa_millar,,,false,
+24015,San Luis Potosi,Charcas,2021,tarifa_millar,,,confirmed_fill,2020
+24015,San Luis Potosi,Charcas,2022,tarifa_millar,,,false,
+24015,San Luis Potosi,Charcas,2023,tarifa_millar,,,false,
+24015,San Luis Potosi,Charcas,2024,tarifa_millar,,,false,
+24015,San Luis Potosi,Charcas,2025,tarifa_millar,,,false,
+24016,San Luis Potosi,Ebano,2010,tarifa_millar,,,bfill,2012
+24016,San Luis Potosi,Ebano,2011,tarifa_millar,,,bfill,2012
+24016,San Luis Potosi,Ebano,2012,tarifa_millar,,,false,
+24016,San Luis Potosi,Ebano,2013,tarifa_millar,,,ffill,2012
+24016,San Luis Potosi,Ebano,2014,tarifa_millar,,,ffill,2012
+24016,San Luis Potosi,Ebano,2015,tarifa_millar,,,ffill,2012
+24016,San Luis Potosi,Ebano,2016,tarifa_millar,,,ffill,2012
+24016,San Luis Potosi,Ebano,2017,tarifa_millar,,,closure_fill,2012
+24016,San Luis Potosi,Ebano,2018,tarifa_millar,,,closure_fill,2012
+24016,San Luis Potosi,Ebano,2019,tarifa_millar,,,false,
+24016,San Luis Potosi,Ebano,2020,tarifa_millar,,,false,
+24016,San Luis Potosi,Ebano,2021,tarifa_millar,,,confirmed_fill,2020
+24016,San Luis Potosi,Ebano,2022,tarifa_millar,,,false,
+24016,San Luis Potosi,Ebano,2023,tarifa_millar,,,false,
+24016,San Luis Potosi,Ebano,2024,tarifa_millar,,,false,
+24016,San Luis Potosi,Ebano,2025,tarifa_millar,,,false,
+24017,San Luis Potosi,Guadalcazar,2010,tarifa_millar,,,bfill,2012
+24017,San Luis Potosi,Guadalcazar,2011,tarifa_millar,,,bfill,2012
+24017,San Luis Potosi,Guadalcazar,2012,tarifa_millar,,,false,
+24017,San Luis Potosi,Guadalcazar,2013,tarifa_millar,,,ffill,2012
+24017,San Luis Potosi,Guadalcazar,2014,tarifa_millar,,,ffill,2012
+24017,San Luis Potosi,Guadalcazar,2015,tarifa_millar,,,ffill,2012
+24017,San Luis Potosi,Guadalcazar,2016,tarifa_millar,,,ffill,2012
+24017,San Luis Potosi,Guadalcazar,2017,tarifa_millar,,,closure_fill,2012
+24017,San Luis Potosi,Guadalcazar,2018,tarifa_millar,,,false,
+24017,San Luis Potosi,Guadalcazar,2019,tarifa_millar,,,false,
+24017,San Luis Potosi,Guadalcazar,2020,tarifa_millar,,,false,
+24017,San Luis Potosi,Guadalcazar,2021,tarifa_millar,,,confirmed_fill,2020
+24017,San Luis Potosi,Guadalcazar,2022,tarifa_millar,,,false,
+24017,San Luis Potosi,Guadalcazar,2023,tarifa_millar,,,false,
+24017,San Luis Potosi,Guadalcazar,2024,tarifa_millar,,,false,
+24017,San Luis Potosi,Guadalcazar,2025,tarifa_millar,,,false,
+24018,San Luis Potosi,Huehuetlan,2010,tarifa_millar,,,bfill,2012
+24018,San Luis Potosi,Huehuetlan,2011,tarifa_millar,,,bfill,2012
+24018,San Luis Potosi,Huehuetlan,2012,tarifa_millar,,,false,
+24018,San Luis Potosi,Huehuetlan,2013,tarifa_millar,,,confirmed_fill,2012
+24018,San Luis Potosi,Huehuetlan,2014,tarifa_millar,,,confirmed_fill,2012
+24018,San Luis Potosi,Huehuetlan,2015,tarifa_millar,,,confirmed_fill,2012
+24018,San Luis Potosi,Huehuetlan,2016,tarifa_millar,,,confirmed_fill,2012
+24018,San Luis Potosi,Huehuetlan,2017,tarifa_millar,,,false,
+24018,San Luis Potosi,Huehuetlan,2018,tarifa_millar,,,confirmed_fill,2017
+24018,San Luis Potosi,Huehuetlan,2019,tarifa_millar,,,false,
+24018,San Luis Potosi,Huehuetlan,2020,tarifa_millar,,,false,
+24018,San Luis Potosi,Huehuetlan,2021,tarifa_millar,,,confirmed_fill,2020
+24018,San Luis Potosi,Huehuetlan,2022,tarifa_millar,,,false,
+24018,San Luis Potosi,Huehuetlan,2023,tarifa_millar,,,false,
+24018,San Luis Potosi,Huehuetlan,2024,tarifa_millar,,,false,
+24018,San Luis Potosi,Huehuetlan,2025,tarifa_millar,,,false,
+24019,San Luis Potosi,Lagunillas,2010,tarifa_millar,,,bfill,2012
+24019,San Luis Potosi,Lagunillas,2011,tarifa_millar,,,bfill,2012
+24019,San Luis Potosi,Lagunillas,2012,tarifa_millar,,,false,
+24019,San Luis Potosi,Lagunillas,2013,tarifa_millar,,,false,
+24019,San Luis Potosi,Lagunillas,2014,tarifa_millar,,,false,
+24019,San Luis Potosi,Lagunillas,2015,tarifa_millar,,,confirmed_fill,2014
+24019,San Luis Potosi,Lagunillas,2016,tarifa_millar,,,confirmed_fill,2014
+24019,San Luis Potosi,Lagunillas,2017,tarifa_millar,,,false,
+24019,San Luis Potosi,Lagunillas,2018,tarifa_millar,,,false,
+24019,San Luis Potosi,Lagunillas,2019,tarifa_millar,,,false,
+24019,San Luis Potosi,Lagunillas,2020,tarifa_millar,,,false,
+24019,San Luis Potosi,Lagunillas,2021,tarifa_millar,,,confirmed_fill,2020
+24019,San Luis Potosi,Lagunillas,2022,tarifa_millar,,,false,
+24019,San Luis Potosi,Lagunillas,2023,tarifa_millar,,,false,
+24019,San Luis Potosi,Lagunillas,2024,tarifa_millar,,,false,
+24019,San Luis Potosi,Lagunillas,2025,tarifa_millar,,,false,
+24020,San Luis Potosi,Matehuala,2010,tarifa_millar,,,bfill,2013
+24020,San Luis Potosi,Matehuala,2011,tarifa_millar,,,bfill,2013
+24020,San Luis Potosi,Matehuala,2012,tarifa_millar,,,bfill,2013
+24020,San Luis Potosi,Matehuala,2013,tarifa_millar,,,false,
+24020,San Luis Potosi,Matehuala,2014,tarifa_millar,,,confirmed_fill,2013
+24020,San Luis Potosi,Matehuala,2015,tarifa_millar,,,false,
+24020,San Luis Potosi,Matehuala,2016,tarifa_millar,,,confirmed_fill,2015
+24020,San Luis Potosi,Matehuala,2017,tarifa_millar,,,false,
+24020,San Luis Potosi,Matehuala,2018,tarifa_millar,,,false,
+24020,San Luis Potosi,Matehuala,2019,tarifa_millar,,,false,
+24020,San Luis Potosi,Matehuala,2020,tarifa_millar,,,false,
+24020,San Luis Potosi,Matehuala,2021,tarifa_millar,,,confirmed_fill,2020
+24020,San Luis Potosi,Matehuala,2022,tarifa_millar,,,false,
+24020,San Luis Potosi,Matehuala,2023,tarifa_millar,,,false,
+24020,San Luis Potosi,Matehuala,2024,tarifa_millar,,,false,
+24020,San Luis Potosi,Matehuala,2025,tarifa_millar,,,false,
+24021,San Luis Potosi,Mexquitic de Carmona,2010,tarifa_millar,,,bfill,2012
+24021,San Luis Potosi,Mexquitic de Carmona,2011,tarifa_millar,,,bfill,2012
+24021,San Luis Potosi,Mexquitic de Carmona,2012,tarifa_millar,,,false,
+24021,San Luis Potosi,Mexquitic de Carmona,2013,tarifa_millar,,,confirmed_fill,2012
+24021,San Luis Potosi,Mexquitic de Carmona,2014,tarifa_millar,,,false,
+24021,San Luis Potosi,Mexquitic de Carmona,2015,tarifa_millar,,,confirmed_fill,2014
+24021,San Luis Potosi,Mexquitic de Carmona,2016,tarifa_millar,,,confirmed_fill,2014
+24021,San Luis Potosi,Mexquitic de Carmona,2017,tarifa_millar,,,false,
+24021,San Luis Potosi,Mexquitic de Carmona,2018,tarifa_millar,,,false,
+24021,San Luis Potosi,Mexquitic de Carmona,2019,tarifa_millar,,,confirmed_fill,2018
+24021,San Luis Potosi,Mexquitic de Carmona,2020,tarifa_millar,,,false,
+24021,San Luis Potosi,Mexquitic de Carmona,2021,tarifa_millar,,,confirmed_fill,2020
+24021,San Luis Potosi,Mexquitic de Carmona,2022,tarifa_millar,,,false,
+24021,San Luis Potosi,Mexquitic de Carmona,2023,tarifa_millar,,,false,
+24021,San Luis Potosi,Mexquitic de Carmona,2024,tarifa_millar,,,false,
+24021,San Luis Potosi,Mexquitic de Carmona,2025,tarifa_millar,,,false,
+24022,San Luis Potosi,Moctezuma,2010,tarifa_millar,,,bfill,2012
+24022,San Luis Potosi,Moctezuma,2011,tarifa_millar,,,bfill,2012
+24022,San Luis Potosi,Moctezuma,2012,tarifa_millar,,,false,
+24022,San Luis Potosi,Moctezuma,2013,tarifa_millar,,,false,
+24022,San Luis Potosi,Moctezuma,2014,tarifa_millar,,,false,
+24022,San Luis Potosi,Moctezuma,2015,tarifa_millar,,,false,
+24022,San Luis Potosi,Moctezuma,2016,tarifa_millar,,,confirmed_fill,2015
+24022,San Luis Potosi,Moctezuma,2017,tarifa_millar,,,false,
+24022,San Luis Potosi,Moctezuma,2018,tarifa_millar,,,false,
+24022,San Luis Potosi,Moctezuma,2019,tarifa_millar,,,false,
+24022,San Luis Potosi,Moctezuma,2020,tarifa_millar,,,false,
+24022,San Luis Potosi,Moctezuma,2021,tarifa_millar,,,confirmed_fill,2020
+24022,San Luis Potosi,Moctezuma,2022,tarifa_millar,,,false,
+24022,San Luis Potosi,Moctezuma,2023,tarifa_millar,,,false,
+24022,San Luis Potosi,Moctezuma,2024,tarifa_millar,,,false,
+24022,San Luis Potosi,Moctezuma,2025,tarifa_millar,,,false,
+24023,San Luis Potosi,Rayon,2010,tarifa_millar,,,bfill,2012
+24023,San Luis Potosi,Rayon,2011,tarifa_millar,,,bfill,2012
+24023,San Luis Potosi,Rayon,2012,tarifa_millar,,,false,
+24023,San Luis Potosi,Rayon,2013,tarifa_millar,,,ffill,2012
+24023,San Luis Potosi,Rayon,2014,tarifa_millar,,,ffill,2012
+24023,San Luis Potosi,Rayon,2015,tarifa_millar,,,ffill,2012
+24023,San Luis Potosi,Rayon,2016,tarifa_millar,,,ffill,2012
+24023,San Luis Potosi,Rayon,2017,tarifa_millar,,,closure_fill,2012
+24023,San Luis Potosi,Rayon,2018,tarifa_millar,,,closure_fill,2012
+24023,San Luis Potosi,Rayon,2019,tarifa_millar,,,false,
+24023,San Luis Potosi,Rayon,2020,tarifa_millar,,,false,
+24023,San Luis Potosi,Rayon,2021,tarifa_millar,,,confirmed_fill,2020
+24023,San Luis Potosi,Rayon,2022,tarifa_millar,,,false,
+24023,San Luis Potosi,Rayon,2023,tarifa_millar,,,false,
+24023,San Luis Potosi,Rayon,2024,tarifa_millar,,,false,
+24023,San Luis Potosi,Rayon,2025,tarifa_millar,,,false,
+24024,San Luis Potosi,Rioverde,2010,tarifa_millar,,,bfill,2013
+24024,San Luis Potosi,Rioverde,2011,tarifa_millar,,,bfill,2013
+24024,San Luis Potosi,Rioverde,2012,tarifa_millar,,,bfill,2013
+24024,San Luis Potosi,Rioverde,2013,tarifa_millar,,,false,
+24024,San Luis Potosi,Rioverde,2014,tarifa_millar,,,confirmed_fill,2013
+24024,San Luis Potosi,Rioverde,2015,tarifa_millar,,,false,
+24024,San Luis Potosi,Rioverde,2016,tarifa_millar,,,confirmed_fill,2015
+24024,San Luis Potosi,Rioverde,2017,tarifa_millar,,,false,
+24024,San Luis Potosi,Rioverde,2018,tarifa_millar,,,false,
+24024,San Luis Potosi,Rioverde,2019,tarifa_millar,,,false,
+24024,San Luis Potosi,Rioverde,2020,tarifa_millar,,,false,
+24024,San Luis Potosi,Rioverde,2021,tarifa_millar,,,confirmed_fill,2020
+24024,San Luis Potosi,Rioverde,2022,tarifa_millar,,,false,
+24024,San Luis Potosi,Rioverde,2023,tarifa_millar,,,false,
+24024,San Luis Potosi,Rioverde,2024,tarifa_millar,,,false,
+24024,San Luis Potosi,Rioverde,2025,tarifa_millar,,,false,
+24025,San Luis Potosi,Salinas,2010,tarifa_millar,,,bfill,2012
+24025,San Luis Potosi,Salinas,2011,tarifa_millar,,,bfill,2012
+24025,San Luis Potosi,Salinas,2012,tarifa_millar,,,false,
+24025,San Luis Potosi,Salinas,2013,tarifa_millar,,,false,
+24025,San Luis Potosi,Salinas,2014,tarifa_millar,,,confirmed_fill,2013
+24025,San Luis Potosi,Salinas,2015,tarifa_millar,,,false,
+24025,San Luis Potosi,Salinas,2016,tarifa_millar,,,confirmed_fill,2015
+24025,San Luis Potosi,Salinas,2017,tarifa_millar,,,false,
+24025,San Luis Potosi,Salinas,2018,tarifa_millar,,,false,
+24025,San Luis Potosi,Salinas,2019,tarifa_millar,,,false,
+24025,San Luis Potosi,Salinas,2020,tarifa_millar,,,false,
+24025,San Luis Potosi,Salinas,2021,tarifa_millar,,,confirmed_fill,2020
+24025,San Luis Potosi,Salinas,2022,tarifa_millar,,,false,
+24025,San Luis Potosi,Salinas,2023,tarifa_millar,,,false,
+24025,San Luis Potosi,Salinas,2024,tarifa_millar,,,false,
+24025,San Luis Potosi,Salinas,2025,tarifa_millar,,,false,
+24026,San Luis Potosi,San Antonio,2010,tarifa_millar,,,bfill,2012
+24026,San Luis Potosi,San Antonio,2011,tarifa_millar,,,bfill,2012
+24026,San Luis Potosi,San Antonio,2012,tarifa_millar,,,false,
+24026,San Luis Potosi,San Antonio,2013,tarifa_millar,,,false,
+24026,San Luis Potosi,San Antonio,2014,tarifa_millar,,,false,
+24026,San Luis Potosi,San Antonio,2015,tarifa_millar,,,false,
+24026,San Luis Potosi,San Antonio,2016,tarifa_millar,,,closure_fill,2012
+24026,San Luis Potosi,San Antonio,2017,otro_no_clasificado,,,false,
+24026,San Luis Potosi,San Antonio,2018,tarifa_millar,,,false,
+24026,San Luis Potosi,San Antonio,2019,tarifa_millar,,,false,
+24026,San Luis Potosi,San Antonio,2020,otro_no_clasificado,,,false,
+24026,San Luis Potosi,San Antonio,2021,tarifa_millar,,,closure_fill,2012
+24026,San Luis Potosi,San Antonio,2022,tarifa_millar,,,false,
+24026,San Luis Potosi,San Antonio,2023,tarifa_millar,,,false,
+24026,San Luis Potosi,San Antonio,2024,tarifa_millar,,,false,
+24026,San Luis Potosi,San Antonio,2025,tarifa_millar,,,false,
+24027,San Luis Potosi,San Ciro de Acosta,2010,tarifa_millar,,,bfill,2012
+24027,San Luis Potosi,San Ciro de Acosta,2011,tarifa_millar,,,bfill,2012
+24027,San Luis Potosi,San Ciro de Acosta,2012,tarifa_millar,,,false,
+24027,San Luis Potosi,San Ciro de Acosta,2013,tarifa_millar,,,confirmed_fill,2012
+24027,San Luis Potosi,San Ciro de Acosta,2014,tarifa_millar,,,confirmed_fill,2012
+24027,San Luis Potosi,San Ciro de Acosta,2015,tarifa_millar,,,false,
+24027,San Luis Potosi,San Ciro de Acosta,2016,tarifa_millar,,,confirmed_fill,2015
+24027,San Luis Potosi,San Ciro de Acosta,2017,tarifa_millar,,,false,
+24027,San Luis Potosi,San Ciro de Acosta,2018,tarifa_millar,,,false,
+24027,San Luis Potosi,San Ciro de Acosta,2019,tarifa_millar,,,false,
+24027,San Luis Potosi,San Ciro de Acosta,2020,tarifa_millar,,,false,
+24027,San Luis Potosi,San Ciro de Acosta,2021,tarifa_millar,,,confirmed_fill,2020
+24027,San Luis Potosi,San Ciro de Acosta,2022,tarifa_millar,,,false,
+24027,San Luis Potosi,San Ciro de Acosta,2023,tarifa_millar,,,false,
+24027,San Luis Potosi,San Ciro de Acosta,2024,tarifa_millar,,,false,
+24027,San Luis Potosi,San Ciro de Acosta,2025,tarifa_millar,,,false,
+24028,San Luis Potosi,San Luis Potosi,2010,tarifa_millar,,,bfill,2013
+24028,San Luis Potosi,San Luis Potosi,2011,tarifa_millar,,,bfill,2013
+24028,San Luis Potosi,San Luis Potosi,2012,tarifa_millar,,,bfill,2013
+24028,San Luis Potosi,San Luis Potosi,2013,tarifa_millar,,,false,
+24028,San Luis Potosi,San Luis Potosi,2014,tarifa_millar,,,confirmed_fill,2013
+24028,San Luis Potosi,San Luis Potosi,2015,tarifa_millar,,,confirmed_fill,2013
+24028,San Luis Potosi,San Luis Potosi,2016,tarifa_millar,,,false,
+24028,San Luis Potosi,San Luis Potosi,2017,tarifa_millar,,,false,
+24028,San Luis Potosi,San Luis Potosi,2018,tarifa_millar,,,false,
+24028,San Luis Potosi,San Luis Potosi,2019,tarifa_millar,,,false,
+24028,San Luis Potosi,San Luis Potosi,2020,tarifa_millar,,,false,
+24028,San Luis Potosi,San Luis Potosi,2021,tarifa_millar,,,closure_fill,2013
+24028,San Luis Potosi,San Luis Potosi,2022,progresivo,21,686844196.4,false,
+24028,San Luis Potosi,San Luis Potosi,2023,progresivo,21,686844196.4,false,
+24028,San Luis Potosi,San Luis Potosi,2024,progresivo,21,686844196.4,false,
+24028,San Luis Potosi,San Luis Potosi,2025,tarifa_millar,,,false,
+24029,San Luis Potosi,San Martin Chalchicuautla,2010,tarifa_millar,,,bfill,2012
+24029,San Luis Potosi,San Martin Chalchicuautla,2011,tarifa_millar,,,bfill,2012
+24029,San Luis Potosi,San Martin Chalchicuautla,2012,tarifa_millar,,,false,
+24029,San Luis Potosi,San Martin Chalchicuautla,2013,tarifa_millar,,,false,
+24029,San Luis Potosi,San Martin Chalchicuautla,2014,tarifa_millar,,,ffill,2013
+24029,San Luis Potosi,San Martin Chalchicuautla,2015,tarifa_millar,,,ffill,2013
+24029,San Luis Potosi,San Martin Chalchicuautla,2016,tarifa_millar,,,ffill,2013
+24029,San Luis Potosi,San Martin Chalchicuautla,2017,tarifa_millar,,,ffill,2013
+24029,San Luis Potosi,San Martin Chalchicuautla,2018,tarifa_millar,,,closure_fill,2012
+24029,San Luis Potosi,San Martin Chalchicuautla,2019,tarifa_millar,,,false,
+24029,San Luis Potosi,San Martin Chalchicuautla,2020,tarifa_millar,,,false,
+24029,San Luis Potosi,San Martin Chalchicuautla,2021,tarifa_millar,,,confirmed_fill,2020
+24029,San Luis Potosi,San Martin Chalchicuautla,2022,tarifa_millar,,,false,
+24029,San Luis Potosi,San Martin Chalchicuautla,2023,tarifa_millar,,,false,
+24029,San Luis Potosi,San Martin Chalchicuautla,2024,tarifa_millar,,,false,
+24029,San Luis Potosi,San Martin Chalchicuautla,2025,tarifa_millar,,,false,
+24030,San Luis Potosi,San Nicolas Tolentino,2010,tarifa_millar,,,bfill,2012
+24030,San Luis Potosi,San Nicolas Tolentino,2011,tarifa_millar,,,bfill,2012
+24030,San Luis Potosi,San Nicolas Tolentino,2012,tarifa_millar,,,false,
+24030,San Luis Potosi,San Nicolas Tolentino,2013,tarifa_millar,,,false,
+24030,San Luis Potosi,San Nicolas Tolentino,2014,tarifa_millar,,,confirmed_fill,2013
+24030,San Luis Potosi,San Nicolas Tolentino,2015,tarifa_millar,,,false,
+24030,San Luis Potosi,San Nicolas Tolentino,2016,tarifa_millar,,,confirmed_fill,2015
+24030,San Luis Potosi,San Nicolas Tolentino,2017,tarifa_millar,,,confirmed_fill,2015
+24030,San Luis Potosi,San Nicolas Tolentino,2018,tarifa_millar,,,confirmed_fill,2015
+24030,San Luis Potosi,San Nicolas Tolentino,2019,tarifa_millar,,,confirmed_fill,2015
+24030,San Luis Potosi,San Nicolas Tolentino,2020,tarifa_millar,,,false,
+24030,San Luis Potosi,San Nicolas Tolentino,2021,tarifa_millar,,,confirmed_fill,2020
+24030,San Luis Potosi,San Nicolas Tolentino,2022,tarifa_millar,,,false,
+24030,San Luis Potosi,San Nicolas Tolentino,2023,tarifa_millar,,,false,
+24030,San Luis Potosi,San Nicolas Tolentino,2024,tarifa_millar,,,false,
+24030,San Luis Potosi,San Nicolas Tolentino,2025,tarifa_millar,,,false,
+24031,San Luis Potosi,Santa Catarina,2010,tarifa_millar,,,bfill,2012
+24031,San Luis Potosi,Santa Catarina,2011,tarifa_millar,,,bfill,2012
+24031,San Luis Potosi,Santa Catarina,2012,tarifa_millar,,,false,
+24031,San Luis Potosi,Santa Catarina,2013,tarifa_millar,,,false,
+24031,San Luis Potosi,Santa Catarina,2014,tarifa_millar,,,false,
+24031,San Luis Potosi,Santa Catarina,2015,tarifa_millar,,,confirmed_fill,2014
+24031,San Luis Potosi,Santa Catarina,2016,tarifa_millar,,,confirmed_fill,2014
+24031,San Luis Potosi,Santa Catarina,2017,tarifa_millar,,,false,
+24031,San Luis Potosi,Santa Catarina,2018,tarifa_millar,,,false,
+24031,San Luis Potosi,Santa Catarina,2019,tarifa_millar,,,false,
+24031,San Luis Potosi,Santa Catarina,2020,tarifa_millar,,,false,
+24031,San Luis Potosi,Santa Catarina,2021,tarifa_millar,,,confirmed_fill,2020
+24031,San Luis Potosi,Santa Catarina,2022,tarifa_millar,,,false,
+24031,San Luis Potosi,Santa Catarina,2023,tarifa_millar,,,false,
+24031,San Luis Potosi,Santa Catarina,2024,tarifa_millar,,,false,
+24031,San Luis Potosi,Santa Catarina,2025,tarifa_millar,,,false,
+24032,San Luis Potosi,Santa Maria del Rio,2015,tarifa_millar,,,bfill,2019
+24032,San Luis Potosi,Santa Maria del Rio,2016,tarifa_millar,,,bfill,2019
+24032,San Luis Potosi,Santa Maria del Rio,2017,tarifa_millar,,,bfill,2019
+24032,San Luis Potosi,Santa Maria del Rio,2018,tarifa_millar,,,bfill,2019
+24032,San Luis Potosi,Santa Maria del Rio,2019,tarifa_millar,,,false,
+24032,San Luis Potosi,Santa Maria del Rio,2020,tarifa_millar,,,false,
+24032,San Luis Potosi,Santa Maria del Rio,2021,tarifa_millar,,,confirmed_fill,2020
+24032,San Luis Potosi,Santa Maria del Rio,2022,tarifa_millar,,,false,
+24032,San Luis Potosi,Santa Maria del Rio,2023,tarifa_millar,,,false,
+24032,San Luis Potosi,Santa Maria del Rio,2024,tarifa_millar,,,false,
+24032,San Luis Potosi,Santa Maria del Rio,2025,tarifa_millar,,,false,
+24033,San Luis Potosi,Santo Domingo,2010,tarifa_millar,,,bfill,2012
+24033,San Luis Potosi,Santo Domingo,2011,tarifa_millar,,,bfill,2012
+24033,San Luis Potosi,Santo Domingo,2012,tarifa_millar,,,false,
+24033,San Luis Potosi,Santo Domingo,2013,tarifa_millar,,,false,
+24033,San Luis Potosi,Santo Domingo,2014,tarifa_millar,,,false,
+24033,San Luis Potosi,Santo Domingo,2015,tarifa_millar,,,false,
+24033,San Luis Potosi,Santo Domingo,2016,tarifa_millar,,,confirmed_fill,2015
+24033,San Luis Potosi,Santo Domingo,2017,tarifa_millar,,,false,
+24033,San Luis Potosi,Santo Domingo,2018,tarifa_millar,,,false,
+24033,San Luis Potosi,Santo Domingo,2019,tarifa_millar,,,false,
+24033,San Luis Potosi,Santo Domingo,2020,tarifa_millar,,,false,
+24033,San Luis Potosi,Santo Domingo,2021,tarifa_millar,,,confirmed_fill,2020
+24033,San Luis Potosi,Santo Domingo,2022,tarifa_millar,,,false,
+24033,San Luis Potosi,Santo Domingo,2023,tarifa_millar,,,false,
+24033,San Luis Potosi,Santo Domingo,2024,tarifa_millar,,,false,
+24033,San Luis Potosi,Santo Domingo,2025,tarifa_millar,,,false,
+24034,San Luis Potosi,San Vicente Tancuayalab,2010,tarifa_millar,,,bfill,2012
+24034,San Luis Potosi,San Vicente Tancuayalab,2011,tarifa_millar,,,bfill,2012
+24034,San Luis Potosi,San Vicente Tancuayalab,2012,tarifa_millar,,,false,
+24034,San Luis Potosi,San Vicente Tancuayalab,2013,tarifa_millar,,,confirmed_fill,2012
+24034,San Luis Potosi,San Vicente Tancuayalab,2014,tarifa_millar,,,false,
+24034,San Luis Potosi,San Vicente Tancuayalab,2015,tarifa_millar,,,confirmed_fill,2014
+24034,San Luis Potosi,San Vicente Tancuayalab,2016,tarifa_millar,,,confirmed_fill,2014
+24034,San Luis Potosi,San Vicente Tancuayalab,2017,tarifa_millar,,,false,
+24034,San Luis Potosi,San Vicente Tancuayalab,2018,tarifa_millar,,,false,
+24034,San Luis Potosi,San Vicente Tancuayalab,2019,tarifa_millar,,,false,
+24034,San Luis Potosi,San Vicente Tancuayalab,2020,otro_no_clasificado,,,false,
+24034,San Luis Potosi,San Vicente Tancuayalab,2021,tarifa_millar,,,closure_fill,2012
+24034,San Luis Potosi,San Vicente Tancuayalab,2022,tarifa_millar,,,false,
+24034,San Luis Potosi,San Vicente Tancuayalab,2023,tarifa_millar,,,false,
+24034,San Luis Potosi,San Vicente Tancuayalab,2024,tarifa_millar,,,false,
+24034,San Luis Potosi,San Vicente Tancuayalab,2025,tarifa_millar,,,false,
+24035,San Luis Potosi,Soledad de Graciano Sanchez,2010,tarifa_millar,,,bfill,2013
+24035,San Luis Potosi,Soledad de Graciano Sanchez,2011,tarifa_millar,,,bfill,2013
+24035,San Luis Potosi,Soledad de Graciano Sanchez,2012,tarifa_millar,,,bfill,2013
+24035,San Luis Potosi,Soledad de Graciano Sanchez,2013,tarifa_millar,,,false,
+24035,San Luis Potosi,Soledad de Graciano Sanchez,2014,tarifa_millar,,,confirmed_fill,2013
+24035,San Luis Potosi,Soledad de Graciano Sanchez,2015,tarifa_millar,,,confirmed_fill,2013
+24035,San Luis Potosi,Soledad de Graciano Sanchez,2016,tarifa_millar,,,false,
+24035,San Luis Potosi,Soledad de Graciano Sanchez,2017,tarifa_millar,,,confirmed_fill,2016
+24035,San Luis Potosi,Soledad de Graciano Sanchez,2018,tarifa_millar,,,false,
+24035,San Luis Potosi,Soledad de Graciano Sanchez,2019,tarifa_millar,,,false,
+24035,San Luis Potosi,Soledad de Graciano Sanchez,2020,tarifa_millar,,,false,
+24035,San Luis Potosi,Soledad de Graciano Sanchez,2021,tarifa_millar,,,confirmed_fill,2020
+24035,San Luis Potosi,Soledad de Graciano Sanchez,2022,tarifa_millar,,,false,
+24035,San Luis Potosi,Soledad de Graciano Sanchez,2023,tarifa_millar,,,false,
+24035,San Luis Potosi,Soledad de Graciano Sanchez,2024,tarifa_millar,,,false,
+24035,San Luis Potosi,Soledad de Graciano Sanchez,2025,tarifa_millar,,,false,
+24036,San Luis Potosi,Tamasopo,2010,tarifa_millar,,,bfill,2012
+24036,San Luis Potosi,Tamasopo,2011,tarifa_millar,,,bfill,2012
+24036,San Luis Potosi,Tamasopo,2012,tarifa_millar,,,false,
+24036,San Luis Potosi,Tamasopo,2013,tarifa_millar,,,false,
+24036,San Luis Potosi,Tamasopo,2014,tarifa_millar,,,false,
+24036,San Luis Potosi,Tamasopo,2015,tarifa_millar,,,false,
+24036,San Luis Potosi,Tamasopo,2016,tarifa_millar,,,confirmed_fill,2015
+24036,San Luis Potosi,Tamasopo,2017,tarifa_millar,,,false,
+24036,San Luis Potosi,Tamasopo,2018,tarifa_millar,,,false,
+24036,San Luis Potosi,Tamasopo,2019,tarifa_millar,,,false,
+24036,San Luis Potosi,Tamasopo,2020,tarifa_millar,,,false,
+24036,San Luis Potosi,Tamasopo,2021,tarifa_millar,,,confirmed_fill,2020
+24036,San Luis Potosi,Tamasopo,2022,tarifa_millar,,,false,
+24036,San Luis Potosi,Tamasopo,2023,tarifa_millar,,,false,
+24036,San Luis Potosi,Tamasopo,2024,tarifa_millar,,,false,
+24036,San Luis Potosi,Tamasopo,2025,tarifa_millar,,,false,
+24037,San Luis Potosi,Tamazunchale,2010,tarifa_millar,,,bfill,2013
+24037,San Luis Potosi,Tamazunchale,2011,tarifa_millar,,,bfill,2013
+24037,San Luis Potosi,Tamazunchale,2012,tarifa_millar,,,bfill,2013
+24037,San Luis Potosi,Tamazunchale,2013,tarifa_millar,,,false,
+24037,San Luis Potosi,Tamazunchale,2014,otro_no_clasificado,,,false,
+24037,San Luis Potosi,Tamazunchale,2015,tarifa_millar,,,false,
+24037,San Luis Potosi,Tamazunchale,2016,tarifa_millar,,,confirmed_fill,2015
+24037,San Luis Potosi,Tamazunchale,2017,tarifa_millar,,,false,
+24037,San Luis Potosi,Tamazunchale,2018,tarifa_millar,,,false,
+24037,San Luis Potosi,Tamazunchale,2019,tarifa_millar,,,false,
+24037,San Luis Potosi,Tamazunchale,2020,tarifa_millar,,,false,
+24037,San Luis Potosi,Tamazunchale,2021,tarifa_millar,,,confirmed_fill,2020
+24037,San Luis Potosi,Tamazunchale,2022,tarifa_millar,,,false,
+24037,San Luis Potosi,Tamazunchale,2023,tarifa_millar,,,false,
+24037,San Luis Potosi,Tamazunchale,2024,tarifa_millar,,,false,
+24037,San Luis Potosi,Tamazunchale,2025,tarifa_millar,,,false,
+24038,San Luis Potosi,Tampacan,2010,tarifa_millar,,,bfill,2012
+24038,San Luis Potosi,Tampacan,2011,tarifa_millar,,,bfill,2012
+24038,San Luis Potosi,Tampacan,2012,tarifa_millar,,,false,
+24038,San Luis Potosi,Tampacan,2013,tarifa_millar,,,false,
+24038,San Luis Potosi,Tampacan,2014,tarifa_millar,,,ffill,2013
+24038,San Luis Potosi,Tampacan,2015,tarifa_millar,,,ffill,2013
+24038,San Luis Potosi,Tampacan,2016,tarifa_millar,,,ffill,2013
+24038,San Luis Potosi,Tampacan,2017,tarifa_millar,,,ffill,2013
+24038,San Luis Potosi,Tampacan,2018,tarifa_millar,,,closure_fill,2012
+24038,San Luis Potosi,Tampacan,2019,tarifa_millar,,,false,
+24038,San Luis Potosi,Tampacan,2020,tarifa_millar,,,false,
+24038,San Luis Potosi,Tampacan,2021,tarifa_millar,,,confirmed_fill,2020
+24038,San Luis Potosi,Tampacan,2022,tarifa_millar,,,false,
+24038,San Luis Potosi,Tampacan,2023,tarifa_millar,,,false,
+24038,San Luis Potosi,Tampacan,2024,tarifa_millar,,,false,
+24038,San Luis Potosi,Tampacan,2025,tarifa_millar,,,false,
+24039,San Luis Potosi,Tampamolon Corona,2010,tarifa_millar,,,bfill,2012
+24039,San Luis Potosi,Tampamolon Corona,2011,tarifa_millar,,,bfill,2012
+24039,San Luis Potosi,Tampamolon Corona,2012,tarifa_millar,,,false,
+24039,San Luis Potosi,Tampamolon Corona,2013,tarifa_millar,,,false,
+24039,San Luis Potosi,Tampamolon Corona,2014,tarifa_millar,,,ffill,2013
+24039,San Luis Potosi,Tampamolon Corona,2015,tarifa_millar,,,ffill,2013
+24039,San Luis Potosi,Tampamolon Corona,2016,tarifa_millar,,,ffill,2013
+24039,San Luis Potosi,Tampamolon Corona,2017,tarifa_millar,,,ffill,2013
+24039,San Luis Potosi,Tampamolon Corona,2018,tarifa_millar,,,closure_fill,2012
+24039,San Luis Potosi,Tampamolon Corona,2019,tarifa_millar,,,false,
+24039,San Luis Potosi,Tampamolon Corona,2020,tarifa_millar,,,false,
+24039,San Luis Potosi,Tampamolon Corona,2021,tarifa_millar,,,confirmed_fill,2020
+24039,San Luis Potosi,Tampamolon Corona,2022,tarifa_millar,,,false,
+24039,San Luis Potosi,Tampamolon Corona,2023,tarifa_millar,,,false,
+24039,San Luis Potosi,Tampamolon Corona,2024,tarifa_millar,,,false,
+24039,San Luis Potosi,Tampamolon Corona,2025,tarifa_millar,,,false,
+24040,San Luis Potosi,Tamuin,2010,tarifa_millar,,,bfill,2013
+24040,San Luis Potosi,Tamuin,2011,tarifa_millar,,,bfill,2013
+24040,San Luis Potosi,Tamuin,2012,tarifa_millar,,,bfill,2013
+24040,San Luis Potosi,Tamuin,2013,tarifa_millar,,,false,
+24040,San Luis Potosi,Tamuin,2014,tarifa_millar,,,ffill,2013
+24040,San Luis Potosi,Tamuin,2015,tarifa_millar,,,ffill,2013
+24040,San Luis Potosi,Tamuin,2016,tarifa_millar,,,ffill,2013
+24040,San Luis Potosi,Tamuin,2017,tarifa_millar,,,ffill,2013
+24040,San Luis Potosi,Tamuin,2018,tarifa_millar,,,closure_fill,2013
+24040,San Luis Potosi,Tamuin,2019,tarifa_millar,,,false,
+24040,San Luis Potosi,Tamuin,2020,tarifa_millar,,,false,
+24040,San Luis Potosi,Tamuin,2021,tarifa_millar,,,confirmed_fill,2020
+24040,San Luis Potosi,Tamuin,2022,tarifa_millar,,,false,
+24040,San Luis Potosi,Tamuin,2023,tarifa_millar,,,false,
+24040,San Luis Potosi,Tamuin,2024,tarifa_millar,,,false,
+24040,San Luis Potosi,Tamuin,2025,tarifa_millar,,,false,
+24041,San Luis Potosi,Tanlajas,2010,tarifa_millar,,,bfill,2012
+24041,San Luis Potosi,Tanlajas,2011,tarifa_millar,,,bfill,2012
+24041,San Luis Potosi,Tanlajas,2012,tarifa_millar,,,false,
+24041,San Luis Potosi,Tanlajas,2013,tarifa_millar,,,false,
+24041,San Luis Potosi,Tanlajas,2014,tarifa_millar,,,false,
+24041,San Luis Potosi,Tanlajas,2015,tarifa_millar,,,confirmed_fill,2014
+24041,San Luis Potosi,Tanlajas,2016,tarifa_millar,,,confirmed_fill,2014
+24041,San Luis Potosi,Tanlajas,2017,tarifa_millar,,,confirmed_fill,2014
+24041,San Luis Potosi,Tanlajas,2018,tarifa_millar,,,confirmed_fill,2014
+24041,San Luis Potosi,Tanlajas,2019,tarifa_millar,,,false,
+24041,San Luis Potosi,Tanlajas,2020,tarifa_millar,,,false,
+24041,San Luis Potosi,Tanlajas,2021,tarifa_millar,,,confirmed_fill,2020
+24041,San Luis Potosi,Tanlajas,2022,tarifa_millar,,,false,
+24041,San Luis Potosi,Tanlajas,2023,tarifa_millar,,,false,
+24041,San Luis Potosi,Tanlajas,2024,tarifa_millar,,,false,
+24041,San Luis Potosi,Tanlajas,2025,tarifa_millar,,,false,
+24042,San Luis Potosi,Tanquian de Escobedo,2010,tarifa_millar,,,bfill,2012
+24042,San Luis Potosi,Tanquian de Escobedo,2011,tarifa_millar,,,bfill,2012
+24042,San Luis Potosi,Tanquian de Escobedo,2012,tarifa_millar,,,false,
+24042,San Luis Potosi,Tanquian de Escobedo,2013,tarifa_millar,,,false,
+24042,San Luis Potosi,Tanquian de Escobedo,2014,tarifa_millar,,,ffill,2013
+24042,San Luis Potosi,Tanquian de Escobedo,2015,tarifa_millar,,,ffill,2013
+24042,San Luis Potosi,Tanquian de Escobedo,2016,tarifa_millar,,,ffill,2013
+24042,San Luis Potosi,Tanquian de Escobedo,2017,tarifa_millar,,,ffill,2013
+24042,San Luis Potosi,Tanquian de Escobedo,2018,tarifa_millar,,,closure_fill,2012
+24042,San Luis Potosi,Tanquian de Escobedo,2019,tarifa_millar,,,false,
+24042,San Luis Potosi,Tanquian de Escobedo,2020,tarifa_millar,,,false,
+24042,San Luis Potosi,Tanquian de Escobedo,2021,tarifa_millar,,,confirmed_fill,2020
+24042,San Luis Potosi,Tanquian de Escobedo,2022,tarifa_millar,,,false,
+24042,San Luis Potosi,Tanquian de Escobedo,2023,tarifa_millar,,,false,
+24042,San Luis Potosi,Tanquian de Escobedo,2024,tarifa_millar,,,false,
+24042,San Luis Potosi,Tanquian de Escobedo,2025,tarifa_millar,,,false,
+24043,San Luis Potosi,Tierra Nueva,2010,tarifa_millar,,,bfill,2012
+24043,San Luis Potosi,Tierra Nueva,2011,tarifa_millar,,,bfill,2012
+24043,San Luis Potosi,Tierra Nueva,2012,tarifa_millar,,,false,
+24043,San Luis Potosi,Tierra Nueva,2013,tarifa_millar,,,false,
+24043,San Luis Potosi,Tierra Nueva,2014,tarifa_millar,,,false,
+24043,San Luis Potosi,Tierra Nueva,2015,tarifa_millar,,,false,
+24043,San Luis Potosi,Tierra Nueva,2016,tarifa_millar,,,confirmed_fill,2015
+24043,San Luis Potosi,Tierra Nueva,2017,tarifa_millar,,,false,
+24043,San Luis Potosi,Tierra Nueva,2018,tarifa_millar,,,false,
+24043,San Luis Potosi,Tierra Nueva,2019,tarifa_millar,,,false,
+24043,San Luis Potosi,Tierra Nueva,2020,tarifa_millar,,,false,
+24043,San Luis Potosi,Tierra Nueva,2021,tarifa_millar,,,confirmed_fill,2020
+24043,San Luis Potosi,Tierra Nueva,2022,tarifa_millar,,,false,
+24043,San Luis Potosi,Tierra Nueva,2023,tarifa_millar,,,false,
+24043,San Luis Potosi,Tierra Nueva,2024,tarifa_millar,,,false,
+24043,San Luis Potosi,Tierra Nueva,2025,tarifa_millar,,,false,
+24044,San Luis Potosi,Vanegas,2010,tarifa_millar,,,bfill,2012
+24044,San Luis Potosi,Vanegas,2011,tarifa_millar,,,bfill,2012
+24044,San Luis Potosi,Vanegas,2012,tarifa_millar,,,false,
+24044,San Luis Potosi,Vanegas,2013,tarifa_millar,,,false,
+24044,San Luis Potosi,Vanegas,2014,tarifa_millar,,,confirmed_fill,2013
+24044,San Luis Potosi,Vanegas,2015,tarifa_millar,,,false,
+24044,San Luis Potosi,Vanegas,2016,tarifa_millar,,,confirmed_fill,2015
+24044,San Luis Potosi,Vanegas,2017,tarifa_millar,,,false,
+24044,San Luis Potosi,Vanegas,2018,tarifa_millar,,,false,
+24044,San Luis Potosi,Vanegas,2019,tarifa_millar,,,false,
+24044,San Luis Potosi,Vanegas,2020,tarifa_millar,,,false,
+24044,San Luis Potosi,Vanegas,2021,tarifa_millar,,,confirmed_fill,2020
+24044,San Luis Potosi,Vanegas,2022,tarifa_millar,,,false,
+24044,San Luis Potosi,Vanegas,2023,tarifa_millar,,,false,
+24044,San Luis Potosi,Vanegas,2024,tarifa_millar,,,false,
+24044,San Luis Potosi,Vanegas,2025,tarifa_millar,,,false,
+24045,San Luis Potosi,Venado,2010,tarifa_millar,,,bfill,2012
+24045,San Luis Potosi,Venado,2011,tarifa_millar,,,bfill,2012
+24045,San Luis Potosi,Venado,2012,tarifa_millar,,,false,
+24045,San Luis Potosi,Venado,2013,tarifa_millar,,,false,
+24045,San Luis Potosi,Venado,2014,tarifa_millar,,,false,
+24045,San Luis Potosi,Venado,2015,tarifa_millar,,,false,
+24045,San Luis Potosi,Venado,2016,tarifa_millar,,,confirmed_fill,2015
+24045,San Luis Potosi,Venado,2017,tarifa_millar,,,false,
+24045,San Luis Potosi,Venado,2018,tarifa_millar,,,false,
+24045,San Luis Potosi,Venado,2019,tarifa_millar,,,false,
+24045,San Luis Potosi,Venado,2020,tarifa_millar,,,false,
+24045,San Luis Potosi,Venado,2021,tarifa_millar,,,confirmed_fill,2020
+24045,San Luis Potosi,Venado,2022,tarifa_millar,,,false,
+24045,San Luis Potosi,Venado,2023,tarifa_millar,,,false,
+24045,San Luis Potosi,Venado,2024,tarifa_millar,,,false,
+24045,San Luis Potosi,Venado,2025,tarifa_millar,,,false,
+24046,San Luis Potosi,Villa de Arriaga,2010,tarifa_millar,,,bfill,2012
+24046,San Luis Potosi,Villa de Arriaga,2011,tarifa_millar,,,bfill,2012
+24046,San Luis Potosi,Villa de Arriaga,2012,tarifa_millar,,,false,
+24046,San Luis Potosi,Villa de Arriaga,2013,tarifa_millar,,,false,
+24046,San Luis Potosi,Villa de Arriaga,2014,tarifa_millar,,,confirmed_fill,2013
+24046,San Luis Potosi,Villa de Arriaga,2015,tarifa_millar,,,false,
+24046,San Luis Potosi,Villa de Arriaga,2016,tarifa_millar,,,confirmed_fill,2015
+24046,San Luis Potosi,Villa de Arriaga,2017,tarifa_millar,,,false,
+24046,San Luis Potosi,Villa de Arriaga,2018,tarifa_millar,,,false,
+24046,San Luis Potosi,Villa de Arriaga,2019,tarifa_millar,,,false,
+24046,San Luis Potosi,Villa de Arriaga,2020,tarifa_millar,,,false,
+24046,San Luis Potosi,Villa de Arriaga,2021,tarifa_millar,,,confirmed_fill,2020
+24046,San Luis Potosi,Villa de Arriaga,2022,tarifa_millar,,,false,
+24046,San Luis Potosi,Villa de Arriaga,2023,tarifa_millar,,,false,
+24046,San Luis Potosi,Villa de Arriaga,2024,tarifa_millar,,,false,
+24046,San Luis Potosi,Villa de Arriaga,2025,tarifa_millar,,,false,
+24047,San Luis Potosi,Villa de Guadalupe,2010,tarifa_millar,,,bfill,2012
+24047,San Luis Potosi,Villa de Guadalupe,2011,tarifa_millar,,,bfill,2012
+24047,San Luis Potosi,Villa de Guadalupe,2012,tarifa_millar,,,false,
+24047,San Luis Potosi,Villa de Guadalupe,2013,tarifa_millar,,,false,
+24047,San Luis Potosi,Villa de Guadalupe,2014,tarifa_millar,,,confirmed_fill,2013
+24047,San Luis Potosi,Villa de Guadalupe,2015,tarifa_millar,,,false,
+24047,San Luis Potosi,Villa de Guadalupe,2016,tarifa_millar,,,false,
+24047,San Luis Potosi,Villa de Guadalupe,2017,tarifa_millar,,,false,
+24047,San Luis Potosi,Villa de Guadalupe,2018,tarifa_millar,,,false,
+24047,San Luis Potosi,Villa de Guadalupe,2019,tarifa_millar,,,false,
+24047,San Luis Potosi,Villa de Guadalupe,2020,tarifa_millar,,,false,
+24047,San Luis Potosi,Villa de Guadalupe,2021,tarifa_millar,,,confirmed_fill,2020
+24047,San Luis Potosi,Villa de Guadalupe,2022,tarifa_millar,,,false,
+24047,San Luis Potosi,Villa de Guadalupe,2023,tarifa_millar,,,false,
+24047,San Luis Potosi,Villa de Guadalupe,2024,tarifa_millar,,,false,
+24047,San Luis Potosi,Villa de Guadalupe,2025,tarifa_millar,,,false,
+24048,San Luis Potosi,Villa de la Paz,2010,tarifa_millar,,,bfill,2012
+24048,San Luis Potosi,Villa de la Paz,2011,tarifa_millar,,,bfill,2012
+24048,San Luis Potosi,Villa de la Paz,2012,tarifa_millar,,,false,
+24048,San Luis Potosi,Villa de la Paz,2013,tarifa_millar,,,false,
+24048,San Luis Potosi,Villa de la Paz,2014,tarifa_millar,,,confirmed_fill,2013
+24048,San Luis Potosi,Villa de la Paz,2015,tarifa_millar,,,false,
+24048,San Luis Potosi,Villa de la Paz,2016,tarifa_millar,,,confirmed_fill,2015
+24048,San Luis Potosi,Villa de la Paz,2017,tarifa_millar,,,false,
+24048,San Luis Potosi,Villa de la Paz,2018,tarifa_millar,,,false,
+24048,San Luis Potosi,Villa de la Paz,2019,tarifa_millar,,,false,
+24048,San Luis Potosi,Villa de la Paz,2020,tarifa_millar,,,false,
+24048,San Luis Potosi,Villa de la Paz,2021,tarifa_millar,,,confirmed_fill,2020
+24048,San Luis Potosi,Villa de la Paz,2022,tarifa_millar,,,false,
+24048,San Luis Potosi,Villa de la Paz,2023,tarifa_millar,,,false,
+24048,San Luis Potosi,Villa de la Paz,2024,tarifa_millar,,,false,
+24048,San Luis Potosi,Villa de la Paz,2025,tarifa_millar,,,false,
+24049,San Luis Potosi,Villa de Ramos,2010,tarifa_millar,,,bfill,2012
+24049,San Luis Potosi,Villa de Ramos,2011,tarifa_millar,,,bfill,2012
+24049,San Luis Potosi,Villa de Ramos,2012,tarifa_millar,,,false,
+24049,San Luis Potosi,Villa de Ramos,2013,tarifa_millar,,,false,
+24049,San Luis Potosi,Villa de Ramos,2014,tarifa_millar,,,confirmed_fill,2013
+24049,San Luis Potosi,Villa de Ramos,2015,tarifa_millar,,,false,
+24049,San Luis Potosi,Villa de Ramos,2016,tarifa_millar,,,false,
+24049,San Luis Potosi,Villa de Ramos,2017,tarifa_millar,,,false,
+24049,San Luis Potosi,Villa de Ramos,2018,tarifa_millar,,,false,
+24049,San Luis Potosi,Villa de Ramos,2019,tarifa_millar,,,false,
+24049,San Luis Potosi,Villa de Ramos,2020,tarifa_millar,,,false,
+24049,San Luis Potosi,Villa de Ramos,2021,tarifa_millar,,,confirmed_fill,2020
+24049,San Luis Potosi,Villa de Ramos,2022,tarifa_millar,,,false,
+24049,San Luis Potosi,Villa de Ramos,2023,tarifa_millar,,,false,
+24049,San Luis Potosi,Villa de Ramos,2024,tarifa_millar,,,false,
+24049,San Luis Potosi,Villa de Ramos,2025,tarifa_millar,,,false,
+24050,San Luis Potosi,Villa de Reyes,2010,tarifa_millar,,,bfill,2012
+24050,San Luis Potosi,Villa de Reyes,2011,tarifa_millar,,,bfill,2012
+24050,San Luis Potosi,Villa de Reyes,2012,tarifa_millar,,,false,
+24050,San Luis Potosi,Villa de Reyes,2013,tarifa_millar,,,false,
+24050,San Luis Potosi,Villa de Reyes,2014,tarifa_millar,,,confirmed_fill,2013
+24050,San Luis Potosi,Villa de Reyes,2015,tarifa_millar,,,false,
+24050,San Luis Potosi,Villa de Reyes,2016,tarifa_millar,,,confirmed_fill,2015
+24050,San Luis Potosi,Villa de Reyes,2017,tarifa_millar,,,false,
+24050,San Luis Potosi,Villa de Reyes,2018,tarifa_millar,,,false,
+24050,San Luis Potosi,Villa de Reyes,2019,tarifa_millar,,,false,
+24050,San Luis Potosi,Villa de Reyes,2020,tarifa_millar,,,false,
+24050,San Luis Potosi,Villa de Reyes,2021,tarifa_millar,,,confirmed_fill,2020
+24050,San Luis Potosi,Villa de Reyes,2022,tarifa_millar,,,false,
+24050,San Luis Potosi,Villa de Reyes,2023,tarifa_millar,,,false,
+24050,San Luis Potosi,Villa de Reyes,2024,tarifa_millar,,,false,
+24050,San Luis Potosi,Villa de Reyes,2025,tarifa_millar,,,false,
+24051,San Luis Potosi,Villa Hidalgo,2010,tarifa_millar,,,bfill,2012
+24051,San Luis Potosi,Villa Hidalgo,2011,tarifa_millar,,,bfill,2012
+24051,San Luis Potosi,Villa Hidalgo,2012,tarifa_millar,,,false,
+24051,San Luis Potosi,Villa Hidalgo,2013,tarifa_millar,,,confirmed_fill,2012
+24051,San Luis Potosi,Villa Hidalgo,2014,tarifa_millar,,,confirmed_fill,2012
+24051,San Luis Potosi,Villa Hidalgo,2015,tarifa_millar,,,confirmed_fill,2012
+24051,San Luis Potosi,Villa Hidalgo,2016,tarifa_millar,,,confirmed_fill,2012
+24051,San Luis Potosi,Villa Hidalgo,2017,tarifa_millar,,,false,
+24051,San Luis Potosi,Villa Hidalgo,2018,tarifa_millar,,,false,
+24051,San Luis Potosi,Villa Hidalgo,2019,tarifa_millar,,,false,
+24051,San Luis Potosi,Villa Hidalgo,2020,tarifa_millar,,,false,
+24051,San Luis Potosi,Villa Hidalgo,2021,tarifa_millar,,,confirmed_fill,2020
+24051,San Luis Potosi,Villa Hidalgo,2022,tarifa_millar,,,false,
+24051,San Luis Potosi,Villa Hidalgo,2023,tarifa_millar,,,false,
+24051,San Luis Potosi,Villa Hidalgo,2024,tarifa_millar,,,false,
+24051,San Luis Potosi,Villa Hidalgo,2025,tarifa_millar,,,false,
+24052,San Luis Potosi,Villa Juarez,2010,tarifa_millar,,,bfill,2012
+24052,San Luis Potosi,Villa Juarez,2011,tarifa_millar,,,bfill,2012
+24052,San Luis Potosi,Villa Juarez,2012,tarifa_millar,,,false,
+24052,San Luis Potosi,Villa Juarez,2013,tarifa_millar,,,false,
+24052,San Luis Potosi,Villa Juarez,2014,tarifa_millar,,,confirmed_fill,2013
+24052,San Luis Potosi,Villa Juarez,2015,tarifa_millar,,,confirmed_fill,2013
+24052,San Luis Potosi,Villa Juarez,2016,tarifa_millar,,,false,
+24052,San Luis Potosi,Villa Juarez,2017,tarifa_millar,,,confirmed_fill,2016
+24052,San Luis Potosi,Villa Juarez,2018,tarifa_millar,,,confirmed_fill,2016
+24052,San Luis Potosi,Villa Juarez,2019,tarifa_millar,,,false,
+24052,San Luis Potosi,Villa Juarez,2020,tarifa_millar,,,false,
+24052,San Luis Potosi,Villa Juarez,2021,tarifa_millar,,,confirmed_fill,2020
+24052,San Luis Potosi,Villa Juarez,2022,tarifa_millar,,,false,
+24052,San Luis Potosi,Villa Juarez,2023,tarifa_millar,,,false,
+24052,San Luis Potosi,Villa Juarez,2024,tarifa_millar,,,false,
+24052,San Luis Potosi,Villa Juarez,2025,tarifa_millar,,,false,
+24053,San Luis Potosi,Axtla de Terrazas,2010,tarifa_millar,,,bfill,2012
+24053,San Luis Potosi,Axtla de Terrazas,2011,tarifa_millar,,,bfill,2012
+24053,San Luis Potosi,Axtla de Terrazas,2012,tarifa_millar,,,false,
+24053,San Luis Potosi,Axtla de Terrazas,2013,tarifa_millar,,,confirmed_fill,2012
+24053,San Luis Potosi,Axtla de Terrazas,2014,tarifa_millar,,,false,
+24053,San Luis Potosi,Axtla de Terrazas,2015,tarifa_millar,,,false,
+24053,San Luis Potosi,Axtla de Terrazas,2016,tarifa_millar,,,confirmed_fill,2015
+24053,San Luis Potosi,Axtla de Terrazas,2017,tarifa_millar,,,false,
+24053,San Luis Potosi,Axtla de Terrazas,2018,tarifa_millar,,,false,
+24053,San Luis Potosi,Axtla de Terrazas,2019,tarifa_millar,,,confirmed_fill,2018
+24053,San Luis Potosi,Axtla de Terrazas,2020,tarifa_millar,,,false,
+24053,San Luis Potosi,Axtla de Terrazas,2021,tarifa_millar,,,confirmed_fill,2020
+24053,San Luis Potosi,Axtla de Terrazas,2022,tarifa_millar,,,false,
+24053,San Luis Potosi,Axtla de Terrazas,2023,tarifa_millar,,,false,
+24053,San Luis Potosi,Axtla de Terrazas,2024,tarifa_millar,,,false,
+24053,San Luis Potosi,Axtla de Terrazas,2025,tarifa_millar,,,false,
+24054,San Luis Potosi,Xilitla,2010,tarifa_millar,,,bfill,2012
+24054,San Luis Potosi,Xilitla,2011,tarifa_millar,,,bfill,2012
+24054,San Luis Potosi,Xilitla,2012,tarifa_millar,,,false,
+24054,San Luis Potosi,Xilitla,2013,tarifa_millar,,,false,
+24054,San Luis Potosi,Xilitla,2014,tarifa_millar,,,confirmed_fill,2013
+24054,San Luis Potosi,Xilitla,2015,tarifa_millar,,,false,
+24054,San Luis Potosi,Xilitla,2016,tarifa_millar,,,false,
+24054,San Luis Potosi,Xilitla,2017,tarifa_millar,,,false,
+24054,San Luis Potosi,Xilitla,2018,tarifa_millar,,,false,
+24054,San Luis Potosi,Xilitla,2019,tarifa_millar,,,false,
+24054,San Luis Potosi,Xilitla,2020,tarifa_millar,,,false,
+24054,San Luis Potosi,Xilitla,2021,tarifa_millar,,,confirmed_fill,2020
+24054,San Luis Potosi,Xilitla,2022,tarifa_millar,,,false,
+24054,San Luis Potosi,Xilitla,2023,tarifa_millar,,,false,
+24054,San Luis Potosi,Xilitla,2024,tarifa_millar,,,false,
+24054,San Luis Potosi,Xilitla,2025,tarifa_millar,,,false,
+24055,San Luis Potosi,Zaragoza,2010,tarifa_millar,,,bfill,2012
+24055,San Luis Potosi,Zaragoza,2011,tarifa_millar,,,bfill,2012
+24055,San Luis Potosi,Zaragoza,2012,tarifa_millar,,,false,
+24055,San Luis Potosi,Zaragoza,2013,tarifa_millar,,,false,
+24055,San Luis Potosi,Zaragoza,2014,tarifa_millar,,,confirmed_fill,2013
+24055,San Luis Potosi,Zaragoza,2015,tarifa_millar,,,false,
+24055,San Luis Potosi,Zaragoza,2016,tarifa_millar,,,confirmed_fill,2015
+24055,San Luis Potosi,Zaragoza,2017,tarifa_millar,,,false,
+24055,San Luis Potosi,Zaragoza,2018,tarifa_millar,,,false,
+24055,San Luis Potosi,Zaragoza,2019,tarifa_millar,,,false,
+24055,San Luis Potosi,Zaragoza,2020,tarifa_millar,,,false,
+24055,San Luis Potosi,Zaragoza,2021,tarifa_millar,,,confirmed_fill,2020
+24055,San Luis Potosi,Zaragoza,2022,tarifa_millar,,,false,
+24055,San Luis Potosi,Zaragoza,2023,tarifa_millar,,,false,
+24055,San Luis Potosi,Zaragoza,2024,tarifa_millar,,,false,
+24055,San Luis Potosi,Zaragoza,2025,tarifa_millar,,,false,
+24056,San Luis Potosi,Villa de Arista,2010,tarifa_millar,,,bfill,2012
+24056,San Luis Potosi,Villa de Arista,2011,tarifa_millar,,,bfill,2012
+24056,San Luis Potosi,Villa de Arista,2012,tarifa_millar,,,false,
+24056,San Luis Potosi,Villa de Arista,2013,tarifa_millar,,,false,
+24056,San Luis Potosi,Villa de Arista,2014,tarifa_millar,,,confirmed_fill,2013
+24056,San Luis Potosi,Villa de Arista,2015,tarifa_millar,,,false,
+24056,San Luis Potosi,Villa de Arista,2016,tarifa_millar,,,confirmed_fill,2015
+24056,San Luis Potosi,Villa de Arista,2017,tarifa_millar,,,false,
+24056,San Luis Potosi,Villa de Arista,2018,tarifa_millar,,,false,
+24056,San Luis Potosi,Villa de Arista,2019,tarifa_millar,,,false,
+24056,San Luis Potosi,Villa de Arista,2020,otro_no_clasificado,,,false,
+24056,San Luis Potosi,Villa de Arista,2021,tarifa_millar,,,closure_fill,2012
+24056,San Luis Potosi,Villa de Arista,2022,tarifa_millar,,,false,
+24056,San Luis Potosi,Villa de Arista,2023,tarifa_millar,,,false,
+24056,San Luis Potosi,Villa de Arista,2024,tarifa_millar,,,false,
+24056,San Luis Potosi,Villa de Arista,2025,tarifa_millar,,,false,
+24057,San Luis Potosi,Matlapa,2010,tarifa_millar,,,bfill,2012
+24057,San Luis Potosi,Matlapa,2011,tarifa_millar,,,bfill,2012
+24057,San Luis Potosi,Matlapa,2012,tarifa_millar,,,false,
+24057,San Luis Potosi,Matlapa,2013,tarifa_millar,,,confirmed_fill,2012
+24057,San Luis Potosi,Matlapa,2014,tarifa_millar,,,false,
+24057,San Luis Potosi,Matlapa,2015,tarifa_millar,,,false,
+24057,San Luis Potosi,Matlapa,2016,tarifa_millar,,,confirmed_fill,2015
+24057,San Luis Potosi,Matlapa,2017,tarifa_millar,,,false,
+24057,San Luis Potosi,Matlapa,2018,tarifa_millar,,,false,
+24057,San Luis Potosi,Matlapa,2019,tarifa_millar,,,false,
+24057,San Luis Potosi,Matlapa,2020,tarifa_millar,,,false,
+24057,San Luis Potosi,Matlapa,2021,tarifa_millar,,,confirmed_fill,2020
+24057,San Luis Potosi,Matlapa,2022,tarifa_millar,,,false,
+24057,San Luis Potosi,Matlapa,2023,tarifa_millar,,,false,
+24057,San Luis Potosi,Matlapa,2024,tarifa_millar,,,false,
+24057,San Luis Potosi,Matlapa,2025,tarifa_millar,,,false,
+24058,San Luis Potosi,El Naranjo,2010,tarifa_millar,,,bfill,2012
+24058,San Luis Potosi,El Naranjo,2011,tarifa_millar,,,bfill,2012
+24058,San Luis Potosi,El Naranjo,2012,tarifa_millar,,,false,
+24058,San Luis Potosi,El Naranjo,2013,tarifa_millar,,,confirmed_fill,2012
+24058,San Luis Potosi,El Naranjo,2014,tarifa_millar,,,false,
+24058,San Luis Potosi,El Naranjo,2015,tarifa_millar,,,false,
+24058,San Luis Potosi,El Naranjo,2016,tarifa_millar,,,confirmed_fill,2015
+24058,San Luis Potosi,El Naranjo,2017,tarifa_millar,,,false,
+24058,San Luis Potosi,El Naranjo,2018,tarifa_millar,,,false,
+24058,San Luis Potosi,El Naranjo,2019,tarifa_millar,,,false,
+24058,San Luis Potosi,El Naranjo,2020,tarifa_millar,,,false,
+24058,San Luis Potosi,El Naranjo,2021,tarifa_millar,,,confirmed_fill,2020
+24058,San Luis Potosi,El Naranjo,2022,tarifa_millar,,,false,
+24058,San Luis Potosi,El Naranjo,2023,tarifa_millar,,,false,
+24058,San Luis Potosi,El Naranjo,2024,tarifa_millar,,,false,
+24058,San Luis Potosi,El Naranjo,2025,tarifa_millar,,,false,
+24059,San Luis Potosi,Villa de Pozos,2024,progresivo,21,686844196.4,false,
+24059,San Luis Potosi,Villa de Pozos,2025,progresivo,21,686844196.4,false,
 25001,Sinaloa,Ahome,2010,progresivo,11,3949694.81,false,
 25001,Sinaloa,Ahome,2011,progresivo,11,4120198.39,false,
 25001,Sinaloa,Ahome,2012,progresivo,11,4263692.31,false,
@@ -7155,6 +8080,1094 @@ cvegeo,estado,municipio,ejercicio,tipo_esquema,numero_rangos,monto_max_rango,imp
 25019,Sinaloa,Eldorado,2025,progresivo,11,7593912.81,uniform_state_fill,2025
 25020,Sinaloa,Juan Jose Rios,2024,progresivo,11,7263519.25,uniform_state_fill,2024
 25020,Sinaloa,Juan Jose Rios,2025,progresivo,11,7593912.81,uniform_state_fill,2025
+26001,Sonora,Aconchi,2010,progresivo,8,1060473.0,false,
+26001,Sonora,Aconchi,2011,tarifa_millar,,,false,
+26001,Sonora,Aconchi,2012,progresivo,11,2316072.0,false,
+26001,Sonora,Aconchi,2013,progresivo,11,2316072.0,false,
+26001,Sonora,Aconchi,2014,progresivo,10,2930600.0,false,
+26001,Sonora,Aconchi,2015,mixto,10,1930060.0,false,
+26001,Sonora,Aconchi,2016,progresivo,10,1930060.0,false,
+26001,Sonora,Aconchi,2017,progresivo,10,1930060.0,false,
+26001,Sonora,Aconchi,2018,tarifa_millar,,,false,
+26001,Sonora,Aconchi,2020,progresivo,10,1930060.0,false,
+26001,Sonora,Aconchi,2021,progresivo,10,1930060.0,false,
+26001,Sonora,Aconchi,2022,progresivo,10,1930060.0,false,
+26001,Sonora,Aconchi,2023,progresivo,10,1930060.0,false,
+26001,Sonora,Aconchi,2024,progresivo,10,1930060.0,false,
+26001,Sonora,Aconchi,2025,progresivo,10,1930060.01,false,
+26002,Sonora,Agua Prieta,2010,progresivo,,,bfill,2012
+26002,Sonora,Agua Prieta,2011,progresivo,,,bfill,2012
+26002,Sonora,Agua Prieta,2012,progresivo,11,2316972.0,false,
+26002,Sonora,Agua Prieta,2013,tarifa_millar,,,false,
+26002,Sonora,Agua Prieta,2014,mixto,11,2316072.0,false,
+26002,Sonora,Agua Prieta,2015,mixto,11,2316072.0,false,
+26002,Sonora,Agua Prieta,2016,progresivo,11,2316072.0,false,
+26002,Sonora,Agua Prieta,2017,tarifa_millar,,,false,
+26002,Sonora,Agua Prieta,2018,progresivo,11,2316072.0,false,
+26002,Sonora,Agua Prieta,2019,progresivo,11,2316072.0,false,
+26002,Sonora,Agua Prieta,2020,tarifa_millar,,,false,
+26002,Sonora,Agua Prieta,2021,progresivo,11,2316072.0,false,
+26002,Sonora,Agua Prieta,2022,progresivo,11,2316072.0,false,
+26002,Sonora,Agua Prieta,2023,tarifa_millar,,,false,
+26002,Sonora,Agua Prieta,2024,progresivo,11,2316072.0,false,
+26002,Sonora,Agua Prieta,2025,progresivo,11,2316072.0,false,
+26003,Sonora,alamos,2010,tarifa_millar,,,false,
+26003,Sonora,alamos,2011,progresivo,11,2316072.0,false,
+26003,Sonora,alamos,2012,progresivo,11,2316072.0,false,
+26003,Sonora,alamos,2013,tarifa_millar,,,false,
+26003,Sonora,alamos,2014,progresivo,11,2316072.0,false,
+26003,Sonora,alamos,2015,mixto,11,2316072.0,false,
+26003,Sonora,alamos,2016,progresivo,11,2316072.0,false,
+26003,Sonora,alamos,2017,progresivo,11,2316072.0,false,
+26003,Sonora,alamos,2018,progresivo,11,2316072.0,false,
+26003,Sonora,alamos,2019,progresivo,,,tipo_only_fill,2018
+26003,Sonora,alamos,2020,progresivo,11,2316072.0,false,
+26003,Sonora,alamos,2021,progresivo,12,4916578.86,false,
+26003,Sonora,alamos,2022,progresivo,12,4916578.87,false,
+26003,Sonora,alamos,2023,progresivo,12,4916578.86,false,
+26003,Sonora,alamos,2024,progresivo,12,4916578.86,false,
+26003,Sonora,alamos,2025,progresivo,12,4916578.86,false,
+26004,Sonora,Altar,2010,progresivo,11,2316072.0,false,
+26004,Sonora,Altar,2011,progresivo,,,bfill,2012
+26004,Sonora,Altar,2012,progresivo,6,441864.0,false,
+26004,Sonora,Altar,2013,progresivo,11,2316072.0,false,
+26004,Sonora,Altar,2014,progresivo,,,tipo_only_fill,2012
+26004,Sonora,Altar,2015,progresivo,11,2316072.01,false,
+26004,Sonora,Altar,2016,progresivo,11,2316072.0,false,
+26004,Sonora,Altar,2017,progresivo,11,2316072.0,false,
+26004,Sonora,Altar,2018,tarifa_millar,,,false,
+26004,Sonora,Altar,2019,tarifa_millar,,,false,
+26004,Sonora,Altar,2020,tarifa_millar,,,false,
+26004,Sonora,Altar,2021,progresivo,11,2316072.0,false,
+26004,Sonora,Altar,2023,progresivo,11,2316072.0,false,
+26004,Sonora,Altar,2024,tarifa_millar,,,false,
+26004,Sonora,Altar,2025,progresivo,11,2316072.01,false,
+26005,Sonora,Arivechi,2010,progresivo,6,441864.0,false,
+26005,Sonora,Arivechi,2011,mixto,6,441854.0,false,
+26005,Sonora,Arivechi,2012,progresivo,6,441864.0,false,
+26005,Sonora,Arivechi,2013,tarifa_millar,,,false,
+26005,Sonora,Arivechi,2014,progresivo,6,441864.0,false,
+26005,Sonora,Arivechi,2015,progresivo,6,441864.01,false,
+26005,Sonora,Arivechi,2016,progresivo,6,441864.0,false,
+26005,Sonora,Arivechi,2017,tarifa_millar,,,false,
+26005,Sonora,Arivechi,2018,progresivo,6,441864.0,false,
+26005,Sonora,Arivechi,2019,progresivo,11,2316072.0,false,
+26005,Sonora,Arivechi,2020,progresivo,6,441864.0,false,
+26005,Sonora,Arivechi,2021,progresivo,6,441864.0,false,
+26005,Sonora,Arivechi,2022,mixto,3,15212.0,false,
+26005,Sonora,Arivechi,2023,tarifa_millar,,,false,
+26005,Sonora,Arivechi,2024,mixto,6,441864.0,false,
+26005,Sonora,Arivechi,2025,progresivo,6,441864.0,false,
+26006,Sonora,Arizpe,2010,progresivo,9,1484662.0,false,
+26006,Sonora,Arizpe,2011,mixto,11,2316072.01,false,
+26006,Sonora,Arizpe,2012,progresivo,11,2316072.0,false,
+26006,Sonora,Arizpe,2013,progresivo,11,2316072.0,false,
+26006,Sonora,Arizpe,2014,mixto,11,2316072.0,false,
+26006,Sonora,Arizpe,2015,progresivo,11,2316072.01,false,
+26006,Sonora,Arizpe,2016,progresivo,11,2316072.0,false,
+26006,Sonora,Arizpe,2017,progresivo,11,2316072.0,false,
+26006,Sonora,Arizpe,2018,progresivo,11,2316072.0,false,
+26006,Sonora,Arizpe,2019,progresivo,11,2316072.0,false,
+26006,Sonora,Arizpe,2020,progresivo,11,2316072.0,false,
+26006,Sonora,Arizpe,2021,progresivo,11,2316072.0,false,
+26006,Sonora,Arizpe,2022,progresivo,11,2316072.0,false,
+26006,Sonora,Arizpe,2023,tarifa_millar,,,false,
+26006,Sonora,Arizpe,2024,mixto,11,2316072.0,false,
+26006,Sonora,Arizpe,2025,progresivo,11,2316072.0,false,
+26007,Sonora,Atil,2010,progresivo,5,259920.9,false,
+26007,Sonora,Atil,2011,progresivo,5,259920.0,false,
+26007,Sonora,Atil,2012,progresivo,5,259920.0,false,
+26007,Sonora,Atil,2013,progresivo,5,259920.0,false,
+26007,Sonora,Atil,2014,mixto,5,259920.0,false,
+26007,Sonora,Atil,2015,progresivo,5,259920.0,false,
+26007,Sonora,Atil,2016,tarifa_millar,,,false,
+26007,Sonora,Atil,2017,progresivo,5,259920.0,false,
+26007,Sonora,Atil,2018,tarifa_millar,,,false,
+26007,Sonora,Atil,2020,progresivo,5,259920.0,false,
+26007,Sonora,Atil,2021,progresivo,5,259920.0,false,
+26007,Sonora,Atil,2022,mixto,3,23142.0,false,
+26007,Sonora,Atil,2023,tarifa_millar,,,false,
+26007,Sonora,Atil,2024,mixto,5,259920.0,false,
+26007,Sonora,Atil,2025,progresivo,5,259920.0,false,
+26008,Sonora,Bacadehuachi,2010,progresivo,5,259920.0,false,
+26008,Sonora,Bacadehuachi,2011,mixto,11,2316072.0,false,
+26008,Sonora,Bacadehuachi,2012,progresivo,10,2316072.0,false,
+26008,Sonora,Bacadehuachi,2013,progresivo,11,2316072.0,false,
+26008,Sonora,Bacadehuachi,2014,mixto,11,2316072.0,false,
+26008,Sonora,Bacadehuachi,2015,progresivo,11,2316072.01,false,
+26008,Sonora,Bacadehuachi,2016,progresivo,11,2316072.0,false,
+26008,Sonora,Bacadehuachi,2017,tarifa_millar,,,false,
+26008,Sonora,Bacadehuachi,2018,progresivo,11,2316072.0,false,
+26008,Sonora,Bacadehuachi,2020,progresivo,11,2316072.0,false,
+26008,Sonora,Bacadehuachi,2021,progresivo,11,2316072.0,false,
+26008,Sonora,Bacadehuachi,2022,mixto,3,51224.0,false,
+26008,Sonora,Bacadehuachi,2023,progresivo,11,2316072.0,false,
+26008,Sonora,Bacadehuachi,2024,progresivo,11,2316072.0,false,
+26008,Sonora,Bacadehuachi,2025,mixto,11,2316072.0,false,
+26009,Sonora,Bacanora,2010,progresivo,5,259920.0,false,
+26009,Sonora,Bacanora,2011,mixto,5,259920.0,false,
+26009,Sonora,Bacanora,2012,progresivo,5,259920.0,false,
+26009,Sonora,Bacanora,2013,progresivo,5,259920.0,false,
+26009,Sonora,Bacanora,2014,mixto,5,259920.0,false,
+26009,Sonora,Bacanora,2015,mixto,5,259920.0,false,
+26009,Sonora,Bacanora,2016,progresivo,5,259920.0,false,
+26009,Sonora,Bacanora,2017,progresivo,5,259920.0,false,
+26009,Sonora,Bacanora,2018,tarifa_millar,,,false,
+26009,Sonora,Bacanora,2019,tarifa_millar,,,false,
+26009,Sonora,Bacanora,2020,progresivo,5,259920.0,false,
+26009,Sonora,Bacanora,2021,progresivo,5,259920.0,false,
+26009,Sonora,Bacanora,2022,mixto,3,22191.0,false,
+26009,Sonora,Bacanora,2023,progresivo,5,259920.0,false,
+26009,Sonora,Bacanora,2024,mixto,5,259920.0,false,
+26009,Sonora,Bacanora,2025,tarifa_millar,,,false,
+26010,Sonora,Bacerac,2010,progresivo,8,1060473.0,false,
+26010,Sonora,Bacerac,2011,progresivo,,,bfill,2012
+26010,Sonora,Bacerac,2013,tarifa_millar,,,false,
+26010,Sonora,Bacerac,2014,mixto,11,2316072.0,false,
+26010,Sonora,Bacerac,2015,mixto,11,2316072.0,false,
+26010,Sonora,Bacerac,2016,progresivo,11,2316072.0,false,
+26010,Sonora,Bacerac,2017,tarifa_millar,,,false,
+26010,Sonora,Bacerac,2018,progresivo,11,2316072.0,false,
+26010,Sonora,Bacerac,2019,progresivo,11,2316072.0,false,
+26010,Sonora,Bacerac,2020,progresivo,11,2316072.0,false,
+26010,Sonora,Bacerac,2021,tarifa_millar,,,false,
+26010,Sonora,Bacerac,2022,mixto,3,22294.0,false,
+26010,Sonora,Bacerac,2023,progresivo,11,2316072.0,false,
+26010,Sonora,Bacerac,2024,tarifa_millar,,,false,
+26010,Sonora,Bacerac,2025,tarifa_millar,,,false,
+26011,Sonora,Bacoachi,2010,progresivo,6,441864.0,false,
+26011,Sonora,Bacoachi,2011,mixto,6,441864.0,false,
+26011,Sonora,Bacoachi,2012,progresivo,6,441864.0,false,
+26011,Sonora,Bacoachi,2013,progresivo,6,441864.0,false,
+26011,Sonora,Bacoachi,2014,progresivo,6,441864.0,false,
+26011,Sonora,Bacoachi,2015,mixto,6,441864.0,false,
+26011,Sonora,Bacoachi,2016,progresivo,6,441864.0,false,
+26011,Sonora,Bacoachi,2017,progresivo,6,441864.0,false,
+26011,Sonora,Bacoachi,2018,tarifa_millar,,,false,
+26011,Sonora,Bacoachi,2019,tarifa_millar,,,confirmed_fill,2018
+26011,Sonora,Bacoachi,2020,tarifa_millar,,,false,
+26011,Sonora,Bacoachi,2021,progresivo,6,441864.0,false,
+26011,Sonora,Bacoachi,2022,tarifa_millar,,,false,
+26011,Sonora,Bacoachi,2023,tarifa_millar,,,false,
+26011,Sonora,Bacoachi,2024,progresivo,6,441864.0,false,
+26011,Sonora,Bacoachi,2025,tarifa_millar,,,false,
+26012,Sonora,Bacum,2010,progresivo,9,1484662.0,false,
+26012,Sonora,Bacum,2011,tarifa_millar,,,bfill,2012
+26012,Sonora,Bacum,2012,tarifa_millar,,,false,
+26012,Sonora,Bacum,2013,tarifa_millar,,,false,
+26012,Sonora,Bacum,2014,mixto,9,1484662.0,false,
+26012,Sonora,Bacum,2015,mixto,9,1484662.0,false,
+26012,Sonora,Bacum,2016,progresivo,9,1484662.0,false,
+26012,Sonora,Bacum,2017,progresivo,9,1484662.0,false,
+26012,Sonora,Bacum,2018,progresivo,9,1484662.0,false,
+26012,Sonora,Bacum,2019,progresivo,9,1484662.0,false,
+26012,Sonora,Bacum,2020,tarifa_millar,,,false,
+26012,Sonora,Bacum,2021,progresivo,9,1484662.0,false,
+26012,Sonora,Bacum,2022,progresivo,9,1484662.0,false,
+26012,Sonora,Bacum,2023,tarifa_millar,,,false,
+26012,Sonora,Bacum,2024,progresivo,9,1474662.0,false,
+26012,Sonora,Bacum,2025,tarifa_millar,,,false,
+26013,Sonora,Banamichi,2010,progresivo,7,706982.0,false,
+26013,Sonora,Banamichi,2011,progresivo,,,bfill,2012
+26013,Sonora,Banamichi,2012,progresivo,7,706982.0,false,
+26013,Sonora,Banamichi,2013,tarifa_millar,,,false,
+26013,Sonora,Banamichi,2014,mixto,7,706982.0,false,
+26013,Sonora,Banamichi,2015,mixto,7,706982.0,false,
+26013,Sonora,Banamichi,2016,progresivo,7,706982.0,false,
+26013,Sonora,Banamichi,2017,progresivo,7,706982.0,false,
+26013,Sonora,Banamichi,2018,tarifa_millar,,,false,
+26013,Sonora,Banamichi,2020,progresivo,7,706982.0,false,
+26013,Sonora,Banamichi,2021,progresivo,7,706982.0,false,
+26013,Sonora,Banamichi,2022,progresivo,7,706982.0,false,
+26013,Sonora,Banamichi,2023,progresivo,7,706982.0,false,
+26013,Sonora,Banamichi,2024,progresivo,7,706982.0,false,
+26013,Sonora,Banamichi,2025,mixto,7,706982.0,false,
+26014,Sonora,Baviacora,2010,progresivo,8,1060473.0,false,
+26014,Sonora,Baviacora,2011,mixto,8,1069473.0,false,
+26014,Sonora,Baviacora,2012,progresivo,8,1060473.0,false,
+26014,Sonora,Baviacora,2013,tarifa_millar,,,bfill,2017
+26014,Sonora,Baviacora,2014,mixto,8,1060473.0,false,
+26014,Sonora,Baviacora,2015,progresivo,8,1060473.0,false,
+26014,Sonora,Baviacora,2016,progresivo,8,1060473.0,false,
+26014,Sonora,Baviacora,2017,tarifa_millar,,,false,
+26014,Sonora,Baviacora,2019,progresivo,8,1060473.0,false,
+26014,Sonora,Baviacora,2020,tarifa_millar,,,false,
+26014,Sonora,Baviacora,2021,progresivo,8,1060473.0,false,
+26014,Sonora,Baviacora,2022,progresivo,8,1060473.0,false,
+26014,Sonora,Baviacora,2023,tarifa_millar,,,false,
+26014,Sonora,Baviacora,2024,progresivo,8,1060473.0,false,
+26014,Sonora,Baviacora,2025,mixto,8,1060473.0,false,
+26015,Sonora,Bavispe,2010,tarifa_millar,,,false,
+26015,Sonora,Bavispe,2011,mixto,5,259920.0,false,
+26015,Sonora,Bavispe,2012,tarifa_millar,,,false,
+26015,Sonora,Bavispe,2013,tarifa_millar,,,closure_fill,2010
+26015,Sonora,Bavispe,2014,mixto,5,259920.0,false,
+26015,Sonora,Bavispe,2015,progresivo,5,259920.0,false,
+26015,Sonora,Bavispe,2016,progresivo,5,259920.0,false,
+26015,Sonora,Bavispe,2017,progresivo,5,259920.0,false,
+26015,Sonora,Bavispe,2018,tarifa_millar,,,false,
+26015,Sonora,Bavispe,2019,tarifa_millar,,,confirmed_fill,2018
+26015,Sonora,Bavispe,2020,tarifa_millar,,,false,
+26015,Sonora,Bavispe,2021,tarifa_millar,,,confirmed_fill,2020
+26015,Sonora,Bavispe,2022,progresivo,5,259920.0,false,
+26015,Sonora,Bavispe,2023,progresivo,5,259920.0,false,
+26015,Sonora,Bavispe,2024,tarifa_millar,,,false,
+26015,Sonora,Bavispe,2025,tarifa_millar,,,false,
+26016,Sonora,Benjamin Hill,2010,progresivo,11,2316072.0,false,
+26016,Sonora,Benjamin Hill,2011,progresivo,11,2316072.0,false,
+26016,Sonora,Benjamin Hill,2012,progresivo,11,2316072.0,false,
+26016,Sonora,Benjamin Hill,2013,progresivo,11,2316072.0,false,
+26016,Sonora,Benjamin Hill,2014,mixto,11,2316072.0,false,
+26016,Sonora,Benjamin Hill,2015,progresivo,11,2316072.0,false,
+26016,Sonora,Benjamin Hill,2016,tarifa_millar,,,false,
+26016,Sonora,Benjamin Hill,2017,progresivo,11,2316072.0,false,
+26016,Sonora,Benjamin Hill,2018,progresivo,11,2316072.0,false,
+26016,Sonora,Benjamin Hill,2019,progresivo,11,2895090.0,false,
+26016,Sonora,Benjamin Hill,2020,tarifa_millar,,,false,
+26016,Sonora,Benjamin Hill,2021,tarifa_millar,,,false,
+26016,Sonora,Benjamin Hill,2022,mixto,3,26949.0,false,
+26016,Sonora,Benjamin Hill,2023,progresivo,11,2316072.0,false,
+26016,Sonora,Benjamin Hill,2024,progresivo,11,2316072.0,false,
+26016,Sonora,Benjamin Hill,2025,mixto,11,2316072.0,false,
+26017,Sonora,Caborca,2010,tarifa_millar,,,bfill,2012
+26017,Sonora,Caborca,2011,progresivo,10,2895090.0,false,
+26017,Sonora,Caborca,2012,tarifa_millar,,,false,
+26017,Sonora,Caborca,2013,progresivo,11,2895090.0,false,
+26017,Sonora,Caborca,2014,mixto,11,2895090.0,false,
+26017,Sonora,Caborca,2017,progresivo,11,2895090.0,false,
+26017,Sonora,Caborca,2018,tarifa_millar,,,false,
+26017,Sonora,Caborca,2019,progresivo,11,2895090.0,false,
+26017,Sonora,Caborca,2020,progresivo,11,2895090.0,false,
+26017,Sonora,Caborca,2022,tarifa_millar,,,false,
+26017,Sonora,Caborca,2023,progresivo,11,2895090.0,false,
+26017,Sonora,Caborca,2024,progresivo,11,2895090.0,false,
+26017,Sonora,Caborca,2025,progresivo,11,2895090.0,false,
+26018,Sonora,Cajeme,2010,tarifa_millar,,,bfill,2012
+26018,Sonora,Cajeme,2011,tarifa_millar,,,bfill,2012
+26018,Sonora,Cajeme,2012,tarifa_millar,,,false,
+26018,Sonora,Cajeme,2013,tarifa_millar,,,false,
+26018,Sonora,Cajeme,2014,tarifa_millar,,,confirmed_fill,2012
+26018,Sonora,Cajeme,2015,tarifa_millar,,,false,
+26018,Sonora,Cajeme,2016,tarifa_millar,,,confirmed_fill,2012
+26018,Sonora,Cajeme,2017,tarifa_millar,,,false,
+26018,Sonora,Cajeme,2018,tarifa_millar,,,false,
+26018,Sonora,Cajeme,2019,progresivo,11,2316072.0,false,
+26018,Sonora,Cajeme,2020,tarifa_millar,,,false,
+26018,Sonora,Cajeme,2022,tarifa_millar,,,false,
+26018,Sonora,Cajeme,2023,progresivo,9,4000000.0,false,
+26018,Sonora,Cajeme,2024,progresivo,9,4000000.0,false,
+26018,Sonora,Cajeme,2025,progresivo,9,320000.0,false,
+26019,Sonora,Cananea,2010,progresivo,,,bfill,2012
+26019,Sonora,Cananea,2011,progresivo,,,bfill,2012
+26019,Sonora,Cananea,2012,progresivo,11,2316072.0,false,
+26019,Sonora,Cananea,2013,progresivo,11,2316072.0,false,
+26019,Sonora,Cananea,2014,mixto,11,2316072.01,false,
+26019,Sonora,Cananea,2016,progresivo,11,2316072.0,false,
+26019,Sonora,Cananea,2017,progresivo,11,2316072.0,false,
+26019,Sonora,Cananea,2018,progresivo,11,2316072.0,false,
+26019,Sonora,Cananea,2019,progresivo,11,2316072.0,false,
+26019,Sonora,Cananea,2020,progresivo,11,2316072.0,confirmed_fill,2018
+26019,Sonora,Cananea,2021,progresivo,11,2316072.0,false,
+26019,Sonora,Cananea,2023,tarifa_millar,,,false,
+26019,Sonora,Cananea,2024,tarifa_millar,,,false,
+26019,Sonora,Cananea,2025,tarifa_millar,,,ffill,2024
+26020,Sonora,Carbo,2010,tarifa_millar,,,bfill,2012
+26020,Sonora,Carbo,2011,tarifa_millar,,,bfill,2012
+26020,Sonora,Carbo,2012,tarifa_millar,,,false,
+26020,Sonora,Carbo,2013,progresivo,11,2316072.0,false,
+26020,Sonora,Carbo,2014,mixto,11,2316072.0,false,
+26020,Sonora,Carbo,2015,progresivo,11,2316072.0,confirmed_fill,2013
+26020,Sonora,Carbo,2016,progresivo,11,2316072.0,confirmed_fill,2013
+26020,Sonora,Carbo,2017,progresivo,11,2316072.0,false,
+26020,Sonora,Carbo,2018,tarifa_millar,,,closure_fill,2012
+26020,Sonora,Carbo,2019,tarifa_millar,,,closure_fill,2012
+26020,Sonora,Carbo,2020,tarifa_millar,,,false,
+26020,Sonora,Carbo,2021,progresivo,11,2316072.0,false,
+26020,Sonora,Carbo,2022,progresivo,11,2316072.0,false,
+26020,Sonora,Carbo,2023,tarifa_millar,,,false,
+26020,Sonora,Carbo,2024,tarifa_millar,,,ffill,2023
+26020,Sonora,Carbo,2025,mixto,11,2316072.0,false,
+26021,Sonora,La Colorada,2010,tarifa_millar,,,bfill,2012
+26021,Sonora,La Colorada,2011,tarifa_millar,,,bfill,2012
+26021,Sonora,La Colorada,2012,tarifa_millar,,,false,
+26021,Sonora,La Colorada,2013,tarifa_millar,,,closure_fill,2012
+26021,Sonora,La Colorada,2014,tarifa_millar,,,closure_fill,2012
+26021,Sonora,La Colorada,2015,tarifa_millar,,,closure_fill,2012
+26021,Sonora,La Colorada,2016,tarifa_millar,,,closure_fill,2012
+26021,Sonora,La Colorada,2017,progresivo,11,2316072.0,false,
+26021,Sonora,La Colorada,2018,progresivo,11,2316072.0,false,
+26021,Sonora,La Colorada,2019,tarifa_millar,,,false,
+26021,Sonora,La Colorada,2020,tarifa_millar,,,false,
+26021,Sonora,La Colorada,2021,tarifa_millar,,,false,
+26021,Sonora,La Colorada,2022,tarifa_millar,,,false,
+26021,Sonora,La Colorada,2023,tarifa_millar,,,false,
+26021,Sonora,La Colorada,2024,tarifa_millar,,,false,
+26021,Sonora,La Colorada,2025,tarifa_millar,,,false,
+26022,Sonora,Cucurpe,2010,tarifa_millar,,,bfill,2012
+26022,Sonora,Cucurpe,2011,tarifa_millar,,,bfill,2012
+26022,Sonora,Cucurpe,2012,tarifa_millar,,,false,
+26022,Sonora,Cucurpe,2013,tarifa_millar,,,false,
+26022,Sonora,Cucurpe,2014,mixto,11,2316072.0,false,
+26022,Sonora,Cucurpe,2016,progresivo,11,2316072.0,false,
+26022,Sonora,Cucurpe,2017,progresivo,11,2316072.0,false,
+26022,Sonora,Cucurpe,2018,progresivo,11,2316072.0,false,
+26022,Sonora,Cucurpe,2020,progresivo,11,2316072.0,false,
+26022,Sonora,Cucurpe,2021,tarifa_millar,,,false,
+26022,Sonora,Cucurpe,2022,progresivo,11,2316072.0,false,
+26022,Sonora,Cucurpe,2023,progresivo,11,2316072.0,false,
+26022,Sonora,Cucurpe,2024,progresivo,11,2316072.0,false,
+26022,Sonora,Cucurpe,2025,mixto,11,2316072.0,false,
+26023,Sonora,Cumpas,2010,tarifa_millar,,,bfill,2012
+26023,Sonora,Cumpas,2011,tarifa_millar,,,bfill,2012
+26023,Sonora,Cumpas,2012,tarifa_millar,,,false,
+26023,Sonora,Cumpas,2013,mixto,11,2316072.0,false,
+26023,Sonora,Cumpas,2014,mixto,11,2316072.0,false,
+26023,Sonora,Cumpas,2015,mixto,11,2316072.0,false,
+26023,Sonora,Cumpas,2016,progresivo,10,2316072.0,false,
+26023,Sonora,Cumpas,2017,tarifa_millar,,,false,
+26023,Sonora,Cumpas,2018,tarifa_millar,,,false,
+26023,Sonora,Cumpas,2020,progresivo,11,2316072.0,false,
+26023,Sonora,Cumpas,2021,tarifa_millar,,,false,
+26023,Sonora,Cumpas,2022,progresivo,11,2316072.0,false,
+26023,Sonora,Cumpas,2023,progresivo,11,2316072.0,false,
+26023,Sonora,Cumpas,2024,progresivo,11,2316072.0,false,
+26023,Sonora,Cumpas,2025,mixto,11,2316072.0,false,
+26024,Sonora,Divisaderos,2010,tarifa_millar,,,false,
+26024,Sonora,Divisaderos,2011,tarifa_millar,,,confirmed_fill,2010
+26024,Sonora,Divisaderos,2012,tarifa_millar,,,false,
+26024,Sonora,Divisaderos,2013,tarifa_millar,,,false,
+26024,Sonora,Divisaderos,2014,mixto,4,144400.0,false,
+26024,Sonora,Divisaderos,2015,tarifa_millar,,,confirmed_fill,2013
+26024,Sonora,Divisaderos,2016,tarifa_millar,,,confirmed_fill,2013
+26024,Sonora,Divisaderos,2017,tarifa_millar,,,false,
+26024,Sonora,Divisaderos,2018,tarifa_millar,,,false,
+26024,Sonora,Divisaderos,2019,tarifa_millar,,,false,
+26024,Sonora,Divisaderos,2020,cuota_fija_simple,,,false,
+26024,Sonora,Divisaderos,2021,cuota_fija_simple,,,false,
+26024,Sonora,Divisaderos,2022,tarifa_millar,,,false,
+26024,Sonora,Divisaderos,2023,tarifa_millar,,,false,
+26024,Sonora,Divisaderos,2024,tarifa_millar,,,false,
+26024,Sonora,Divisaderos,2025,progresivo,4,144400.0,false,
+26025,Sonora,Empalme,2010,progresivo,,,bfill,2012
+26025,Sonora,Empalme,2011,progresivo,,,bfill,2012
+26025,Sonora,Empalme,2012,progresivo,11,2577788.0,false,
+26025,Sonora,Empalme,2013,progresivo,11,2316072.0,false,
+26025,Sonora,Empalme,2014,progresivo,,,tipo_only_fill,2013
+26025,Sonora,Empalme,2015,progresivo,,,tipo_only_fill,2013
+26025,Sonora,Empalme,2016,progresivo,,,tipo_only_fill,2013
+26025,Sonora,Empalme,2017,progresivo,11,2710637.65,false,
+26025,Sonora,Empalme,2018,tarifa_millar,,,false,
+26025,Sonora,Empalme,2019,tarifa_millar,,,confirmed_fill,2018
+26025,Sonora,Empalme,2020,tarifa_millar,,,confirmed_fill,2018
+26025,Sonora,Empalme,2021,tarifa_millar,,,confirmed_fill,2018
+26025,Sonora,Empalme,2022,tarifa_millar,,,false,
+26025,Sonora,Empalme,2023,progresivo,11,2710637.65,false,
+26025,Sonora,Empalme,2024,progresivo,,,ffill,2023
+26025,Sonora,Empalme,2025,progresivo,,,ffill,2023
+26026,Sonora,Etchojoa,2010,progresivo,,,bfill,2012
+26026,Sonora,Etchojoa,2011,progresivo,,,bfill,2012
+26026,Sonora,Etchojoa,2012,progresivo,11,2316072.0,false,
+26026,Sonora,Etchojoa,2013,progresivo,11,2316072.0,confirmed_fill,2012
+26026,Sonora,Etchojoa,2014,progresivo,11,2316072.0,confirmed_fill,2012
+26026,Sonora,Etchojoa,2015,progresivo,11,2316072.0,confirmed_fill,2012
+26026,Sonora,Etchojoa,2016,progresivo,11,2316072.0,false,
+26026,Sonora,Etchojoa,2017,progresivo,11,2316072.0,false,
+26026,Sonora,Etchojoa,2018,progresivo,11,2316072.0,false,
+26026,Sonora,Etchojoa,2019,progresivo,11,2316072.0,false,
+26026,Sonora,Etchojoa,2020,progresivo,11,2316072.0,false,
+26026,Sonora,Etchojoa,2021,progresivo,11,2316072.0,confirmed_fill,2020
+26026,Sonora,Etchojoa,2022,progresivo,11,2316072.0,confirmed_fill,2020
+26026,Sonora,Etchojoa,2023,progresivo,11,2316072.0,false,
+26026,Sonora,Etchojoa,2024,progresivo,11,2316072.0,false,
+26026,Sonora,Etchojoa,2025,mixto,11,2316072.0,false,
+26027,Sonora,Fronteras,2010,progresivo,11,2316072.0,false,
+26027,Sonora,Fronteras,2011,progresivo,11,2316072.01,false,
+26027,Sonora,Fronteras,2012,tarifa_millar,,,false,
+26027,Sonora,Fronteras,2013,progresivo,11,2316072.0,false,
+26027,Sonora,Fronteras,2014,mixto,11,2316072.0,false,
+26027,Sonora,Fronteras,2015,progresivo,11,2316072.0,false,
+26027,Sonora,Fronteras,2016,progresivo,11,2316072.0,false,
+26027,Sonora,Fronteras,2017,tarifa_millar,,,false,
+26027,Sonora,Fronteras,2018,tarifa_millar,,,false,
+26027,Sonora,Fronteras,2019,tarifa_millar,,,confirmed_fill,2018
+26027,Sonora,Fronteras,2020,tarifa_millar,,,false,
+26027,Sonora,Fronteras,2021,tarifa_millar,,,confirmed_fill,2020
+26027,Sonora,Fronteras,2022,tarifa_millar,,,confirmed_fill,2020
+26027,Sonora,Fronteras,2023,tarifa_millar,,,confirmed_fill,2020
+26027,Sonora,Fronteras,2024,tarifa_millar,,,false,
+26027,Sonora,Fronteras,2025,tarifa_millar,,,ffill,2024
+26028,Sonora,Granados,2010,progresivo,,,bfill,2012
+26028,Sonora,Granados,2011,progresivo,,,bfill,2012
+26028,Sonora,Granados,2012,progresivo,6,441864.0,false,
+26028,Sonora,Granados,2013,progresivo,11,2316072.0,false,
+26028,Sonora,Granados,2014,mixto,6,441864.0,false,
+26028,Sonora,Granados,2015,progresivo,6,441864.0,false,
+26028,Sonora,Granados,2016,progresivo,6,441864.0,false,
+26028,Sonora,Granados,2017,tarifa_millar,,,false,
+26028,Sonora,Granados,2018,tarifa_millar,,,false,
+26028,Sonora,Granados,2019,progresivo,6,441864.0,false,
+26028,Sonora,Granados,2020,tarifa_millar,,,false,
+26028,Sonora,Granados,2021,tarifa_millar,,,false,
+26028,Sonora,Granados,2022,tarifa_millar,,,confirmed_fill,2021
+26028,Sonora,Granados,2023,tarifa_millar,,,false,
+26028,Sonora,Granados,2024,tarifa_millar,,,ffill,2023
+26028,Sonora,Granados,2025,tarifa_millar,,,ffill,2023
+26029,Sonora,Guaymas,2010,progresivo,,,bfill,2012
+26029,Sonora,Guaymas,2011,progresivo,,,bfill,2012
+26029,Sonora,Guaymas,2012,progresivo,11,2316072.0,false,
+26029,Sonora,Guaymas,2013,progresivo,11,2316072.0,closure_fill,2012
+26029,Sonora,Guaymas,2014,tasa_unica,,,false,
+26029,Sonora,Guaymas,2015,progresivo,11,2316072.0,closure_fill,2012
+26029,Sonora,Guaymas,2016,progresivo,11,2316072.0,closure_fill,2012
+26029,Sonora,Guaymas,2017,tarifa_millar,,,false,
+26029,Sonora,Guaymas,2018,tasa_unica,,,false,
+26029,Sonora,Guaymas,2019,progresivo,11,2316072.0,closure_fill,2012
+26029,Sonora,Guaymas,2020,tarifa_millar,,,false,
+26029,Sonora,Guaymas,2021,tarifa_millar,,,false,
+26029,Sonora,Guaymas,2023,tarifa_millar,,,false,
+26029,Sonora,Guaymas,2024,progresivo,11,2316072.0,false,
+26029,Sonora,Guaymas,2025,progresivo,,,ffill,2024
+26030,Sonora,Hermosillo,2010,tarifa_millar,,,false,
+26030,Sonora,Hermosillo,2011,tarifa_millar,,,confirmed_fill,2010
+26030,Sonora,Hermosillo,2012,tarifa_millar,,,confirmed_fill,2010
+26030,Sonora,Hermosillo,2013,tarifa_millar,,,false,
+26030,Sonora,Hermosillo,2015,tarifa_millar,,,false,
+26030,Sonora,Hermosillo,2016,tarifa_millar,,,false,
+26030,Sonora,Hermosillo,2017,tarifa_millar,,,false,
+26030,Sonora,Hermosillo,2018,tarifa_millar,,,false,
+26030,Sonora,Hermosillo,2020,tarifa_millar,,,false,
+26030,Sonora,Hermosillo,2021,tarifa_millar,,,false,
+26030,Sonora,Hermosillo,2022,progresivo,9,17500000.0,false,
+26030,Sonora,Hermosillo,2023,progresivo,,,tipo_only_fill,2022
+26030,Sonora,Hermosillo,2024,progresivo,9,117500000.0,false,
+26031,Sonora,Huachinera,2010,tarifa_millar,,,bfill,2012
+26031,Sonora,Huachinera,2011,tarifa_millar,,,bfill,2012
+26031,Sonora,Huachinera,2012,tarifa_millar,,,false,
+26031,Sonora,Huachinera,2013,tarifa_millar,,,closure_fill,2012
+26031,Sonora,Huachinera,2014,tarifa_millar,,,closure_fill,2012
+26031,Sonora,Huachinera,2015,tarifa_millar,,,closure_fill,2012
+26031,Sonora,Huachinera,2016,tarifa_millar,,,closure_fill,2012
+26031,Sonora,Huachinera,2017,progresivo,11,2316072.0,false,
+26031,Sonora,Huachinera,2018,tarifa_millar,,,false,
+26031,Sonora,Huachinera,2019,tarifa_millar,,,confirmed_fill,2018
+26031,Sonora,Huachinera,2020,tarifa_millar,,,confirmed_fill,2018
+26031,Sonora,Huachinera,2021,tarifa_millar,,,false,
+26031,Sonora,Huachinera,2022,tarifa_millar,,,closure_fill,2012
+26031,Sonora,Huachinera,2023,progresivo,11,2316072.0,false,
+26031,Sonora,Huachinera,2024,tarifa_millar,,,false,
+26031,Sonora,Huachinera,2025,tarifa_millar,,,ffill,2024
+26032,Sonora,Huasabas,2010,progresivo,,,bfill,2012
+26032,Sonora,Huasabas,2011,progresivo,,,bfill,2012
+26032,Sonora,Huasabas,2012,progresivo,11,2316072.0,false,
+26032,Sonora,Huasabas,2013,progresivo,11,2316072.0,false,
+26032,Sonora,Huasabas,2014,tarifa_millar,,,false,
+26032,Sonora,Huasabas,2017,tarifa_millar,,,false,
+26032,Sonora,Huasabas,2018,tarifa_millar,,,false,
+26032,Sonora,Huasabas,2019,tarifa_millar,,,false,
+26032,Sonora,Huasabas,2020,progresivo,11,2316072.0,false,
+26032,Sonora,Huasabas,2021,tarifa_millar,,,false,
+26032,Sonora,Huasabas,2022,tarifa_millar,,,false,
+26032,Sonora,Huasabas,2023,tarifa_millar,,,false,
+26032,Sonora,Huasabas,2024,progresivo,11,2316072.0,false,
+26032,Sonora,Huasabas,2025,progresivo,11,2316072.0,false,
+26033,Sonora,Huatabampo,2010,tarifa_millar,,,bfill,2013
+26033,Sonora,Huatabampo,2011,tarifa_millar,,,bfill,2013
+26033,Sonora,Huatabampo,2012,tarifa_millar,,,bfill,2013
+26033,Sonora,Huatabampo,2013,tarifa_millar,,,false,
+26033,Sonora,Huatabampo,2015,mixto,11,2316072.0,false,
+26033,Sonora,Huatabampo,2016,progresivo,11,2316072.0,false,
+26033,Sonora,Huatabampo,2017,progresivo,11,2316072.0,false,
+26033,Sonora,Huatabampo,2018,tarifa_millar,,,false,
+26033,Sonora,Huatabampo,2019,tarifa_millar,,,false,
+26033,Sonora,Huatabampo,2020,progresivo,11,2316072.0,false,
+26033,Sonora,Huatabampo,2021,mixto,11,2316072.0,false,
+26033,Sonora,Huatabampo,2022,progresivo,11,2316072.0,false,
+26033,Sonora,Huatabampo,2023,progresivo,11,2316072.0,false,
+26033,Sonora,Huatabampo,2024,progresivo,11,2316072.0,false,
+26033,Sonora,Huatabampo,2025,progresivo,11,2316072.0,false,
+26034,Sonora,Huepac,2010,tarifa_millar,,,bfill,2012
+26034,Sonora,Huepac,2011,tarifa_millar,,,bfill,2012
+26034,Sonora,Huepac,2012,tarifa_millar,,,false,
+26034,Sonora,Huepac,2013,tarifa_millar,,,confirmed_fill,2012
+26034,Sonora,Huepac,2014,tarifa_millar,,,confirmed_fill,2012
+26034,Sonora,Huepac,2015,tarifa_millar,,,confirmed_fill,2012
+26034,Sonora,Huepac,2016,tarifa_millar,,,confirmed_fill,2012
+26034,Sonora,Huepac,2017,tarifa_millar,,,false,
+26034,Sonora,Huepac,2018,progresivo,6,441864.0,false,
+26034,Sonora,Huepac,2019,tarifa_millar,,,closure_fill,2012
+26034,Sonora,Huepac,2021,progresivo,6,441864.0,false,
+26034,Sonora,Huepac,2022,tarifa_millar,,,closure_fill,2012
+26034,Sonora,Huepac,2023,progresivo,6,441864.0,false,
+26034,Sonora,Huepac,2024,progresivo,6,441864.0,false,
+26034,Sonora,Huepac,2025,tarifa_millar,,,false,
+26035,Sonora,Imuris,2010,tarifa_millar,,,bfill,2012
+26035,Sonora,Imuris,2011,tarifa_millar,,,bfill,2012
+26035,Sonora,Imuris,2012,tarifa_millar,,,false,
+26035,Sonora,Imuris,2013,progresivo,11,2316072.0,false,
+26035,Sonora,Imuris,2014,mixto,11,2316072.01,false,
+26035,Sonora,Imuris,2015,mixto,11,2316072.0,false,
+26035,Sonora,Imuris,2017,tarifa_millar,,,false,
+26035,Sonora,Imuris,2018,progresivo,11,2316072.0,false,
+26035,Sonora,Imuris,2019,progresivo,11,2316072.0,confirmed_fill,2018
+26035,Sonora,Imuris,2020,progresivo,11,2316072.0,false,
+26035,Sonora,Imuris,2021,progresivo,11,2316072.0,false,
+26035,Sonora,Imuris,2022,tarifa_millar,,,false,
+26035,Sonora,Imuris,2023,progresivo,11,2316072.0,false,
+26035,Sonora,Imuris,2024,progresivo,11,2316072.0,false,
+26035,Sonora,Imuris,2025,progresivo,11,2316072.0,false,
+26036,Sonora,Magdalena,2010,progresivo,11,2316072.0,false,
+26036,Sonora,Magdalena,2011,progresivo,11,2316072.0,false,
+26036,Sonora,Magdalena,2013,mixto,3,6943.0,false,
+26036,Sonora,Magdalena,2014,mixto,11,1000000000.0,false,
+26036,Sonora,Magdalena,2015,mixto,11,2316072.01,false,
+26036,Sonora,Magdalena,2016,progresivo,11,2316072.0,false,
+26036,Sonora,Magdalena,2017,progresivo,11,2316072.0,false,
+26036,Sonora,Magdalena,2018,progresivo,11,2316072.0,false,
+26036,Sonora,Magdalena,2019,progresivo,11,2316072.0,confirmed_fill,2018
+26036,Sonora,Magdalena,2020,progresivo,11,2316072.0,false,
+26036,Sonora,Magdalena,2021,progresivo,11,2316072.0,false,
+26036,Sonora,Magdalena,2022,progresivo,11,2316072.0,false,
+26036,Sonora,Magdalena,2023,progresivo,11,2316072.0,false,
+26036,Sonora,Magdalena,2024,mixto,11,2316072.0,false,
+26036,Sonora,Magdalena,2025,progresivo,11,2316072.0,false,
+26037,Sonora,Mazatan,2010,progresivo,,,bfill,2012
+26037,Sonora,Mazatan,2011,progresivo,,,bfill,2012
+26037,Sonora,Mazatan,2012,progresivo,8,1060473.0,false,
+26037,Sonora,Mazatan,2013,tarifa_millar,,,false,
+26037,Sonora,Mazatan,2014,mixto,7,706982.01,false,
+26037,Sonora,Mazatan,2015,mixto,7,706982.0,false,
+26037,Sonora,Mazatan,2016,progresivo,7,706982.0,false,
+26037,Sonora,Mazatan,2017,mixto,7,706982.0,false,
+26037,Sonora,Mazatan,2018,progresivo,7,706982.0,false,
+26037,Sonora,Mazatan,2019,cuota_fija_simple,,,false,
+26037,Sonora,Mazatan,2020,progresivo,7,706982.0,false,
+26037,Sonora,Mazatan,2021,progresivo,7,706982.0,false,
+26037,Sonora,Mazatan,2023,tarifa_millar,,,false,
+26037,Sonora,Mazatan,2024,progresivo,7,706982.0,false,
+26037,Sonora,Mazatan,2025,progresivo,,,ffill,2024
+26038,Sonora,Moctezuma,2010,progresivo,,,bfill,2012
+26038,Sonora,Moctezuma,2011,progresivo,,,bfill,2012
+26038,Sonora,Moctezuma,2012,progresivo,11,2316072.0,false,
+26038,Sonora,Moctezuma,2013,progresivo,11,2316072.0,confirmed_fill,2012
+26038,Sonora,Moctezuma,2014,progresivo,11,2316072.0,confirmed_fill,2012
+26038,Sonora,Moctezuma,2015,progresivo,11,2316072.0,confirmed_fill,2012
+26038,Sonora,Moctezuma,2016,progresivo,11,2316072.0,confirmed_fill,2012
+26038,Sonora,Moctezuma,2017,progresivo,11,2316072.0,false,
+26038,Sonora,Moctezuma,2018,progresivo,11,2316072.0,false,
+26038,Sonora,Moctezuma,2020,tarifa_millar,,,false,
+26038,Sonora,Moctezuma,2021,progresivo,11,2316072.0,false,
+26038,Sonora,Moctezuma,2023,tarifa_millar,,,false,
+26038,Sonora,Moctezuma,2024,progresivo,11,2316072.0,false,
+26038,Sonora,Moctezuma,2025,progresivo,11,2316072.0,false,
+26039,Sonora,Naco,2010,tarifa_millar,,,false,
+26039,Sonora,Naco,2011,tarifa_millar,,,ffill,2010
+26039,Sonora,Naco,2012,tarifa_millar,,,ffill,2010
+26039,Sonora,Naco,2013,tarifa_millar,,,ffill,2010
+26039,Sonora,Naco,2014,tarifa_millar,,,ffill,2010
+26039,Sonora,Naco,2015,mixto,11,2316072.0,false,
+26039,Sonora,Naco,2016,progresivo,11,2316072.0,false,
+26039,Sonora,Naco,2017,tarifa_millar,,,false,
+26039,Sonora,Naco,2018,tarifa_millar,,,false,
+26039,Sonora,Naco,2019,progresivo,11,2316072.0,false,
+26039,Sonora,Naco,2020,progresivo,11,2316072.0,false,
+26039,Sonora,Naco,2021,progresivo,11,2316072.0,false,
+26039,Sonora,Naco,2022,tarifa_millar,,,false,
+26039,Sonora,Naco,2023,progresivo,11,2316072.0,false,
+26039,Sonora,Naco,2024,mixto,11,2316072.0,false,
+26039,Sonora,Naco,2025,progresivo,11,2316072.0,false,
+26040,Sonora,Nacori Chico,2010,progresivo,,,bfill,2013
+26040,Sonora,Nacori Chico,2011,progresivo,,,bfill,2013
+26040,Sonora,Nacori Chico,2012,progresivo,,,bfill,2013
+26040,Sonora,Nacori Chico,2013,progresivo,11,2316072.0,false,
+26040,Sonora,Nacori Chico,2014,progresivo,,,tipo_only_fill,2013
+26040,Sonora,Nacori Chico,2015,progresivo,,,tipo_only_fill,2013
+26040,Sonora,Nacori Chico,2016,progresivo,11,2316072.0,false,
+26040,Sonora,Nacori Chico,2017,tarifa_millar,,,false,
+26040,Sonora,Nacori Chico,2018,progresivo,11,2316072.0,false,
+26040,Sonora,Nacori Chico,2020,progresivo,11,2316072.0,false,
+26040,Sonora,Nacori Chico,2021,progresivo,11,2316072.0,false,
+26040,Sonora,Nacori Chico,2022,mixto,11,2316072.0,false,
+26040,Sonora,Nacori Chico,2023,progresivo,11,2316072.0,false,
+26040,Sonora,Nacori Chico,2024,progresivo,11,2316072.0,false,
+26041,Sonora,Nacozari de Garcia,2010,progresivo,,,bfill,2012
+26041,Sonora,Nacozari de Garcia,2011,progresivo,,,bfill,2012
+26041,Sonora,Nacozari de Garcia,2012,progresivo,11,2316072.0,false,
+26041,Sonora,Nacozari de Garcia,2013,progresivo,11,2316072.0,false,
+26041,Sonora,Nacozari de Garcia,2014,mixto,11,2316072.0,false,
+26041,Sonora,Nacozari de Garcia,2015,progresivo,11,2316072.0,confirmed_fill,2013
+26041,Sonora,Nacozari de Garcia,2016,progresivo,11,2316072.0,confirmed_fill,2013
+26041,Sonora,Nacozari de Garcia,2017,progresivo,11,2316072.0,false,
+26041,Sonora,Nacozari de Garcia,2018,progresivo,11,2316072.0,false,
+26041,Sonora,Nacozari de Garcia,2019,progresivo,8,3442500.0,false,
+26041,Sonora,Nacozari de Garcia,2020,progresivo,11,2316072.0,false,
+26041,Sonora,Nacozari de Garcia,2021,tarifa_millar,,,false,
+26041,Sonora,Nacozari de Garcia,2022,progresivo,11,2316072.0,false,
+26041,Sonora,Nacozari de Garcia,2023,progresivo,11,2316072.0,false,
+26041,Sonora,Nacozari de Garcia,2024,progresivo,11,2316072.0,false,
+26041,Sonora,Nacozari de Garcia,2025,tarifa_millar,,,false,
+26042,Sonora,Navojoa,2010,progresivo,11,2316072.0,false,
+26042,Sonora,Navojoa,2011,progresivo,,,bfill,2012
+26042,Sonora,Navojoa,2012,progresivo,11,2316072.0,false,
+26042,Sonora,Navojoa,2013,progresivo,11,2895090.0,false,
+26042,Sonora,Navojoa,2014,progresivo,11,2316072.0,false,
+26042,Sonora,Navojoa,2015,progresivo,11,2316072.0,false,
+26042,Sonora,Navojoa,2016,tarifa_millar,,,false,
+26042,Sonora,Navojoa,2017,tarifa_millar,,,false,
+26042,Sonora,Navojoa,2018,tarifa_millar,,,false,
+26042,Sonora,Navojoa,2020,tarifa_millar,,,false,
+26042,Sonora,Navojoa,2021,tarifa_millar,,,tipo_only_fill,2020
+26042,Sonora,Navojoa,2022,tarifa_millar,,,tipo_only_fill,2020
+26042,Sonora,Navojoa,2023,progresivo,12,10850000.0,false,
+26042,Sonora,Navojoa,2024,progresivo,,,ffill,2023
+26042,Sonora,Navojoa,2025,progresivo,,,ffill,2023
+26043,Sonora,Nogales,2010,tasa_unica,,,bfill,2012
+26043,Sonora,Nogales,2011,tasa_unica,,,bfill,2012
+26043,Sonora,Nogales,2012,tasa_unica,,,false,
+26043,Sonora,Nogales,2013,tasa_unica,,,false,
+26043,Sonora,Nogales,2017,tasa_unica,,,false,
+26043,Sonora,Nogales,2018,tasa_unica,,,false,
+26043,Sonora,Nogales,2019,tarifa_millar,,,false,
+26043,Sonora,Nogales,2020,tarifa_millar,,,false,
+26043,Sonora,Nogales,2021,tarifa_millar,,,confirmed_fill,2020
+26043,Sonora,Nogales,2022,tarifa_millar,,,confirmed_fill,2020
+26043,Sonora,Nogales,2023,tarifa_millar,,,false,
+26043,Sonora,Nogales,2024,tarifa_millar,,,false,
+26043,Sonora,Nogales,2025,tarifa_millar,,,false,
+26044,Sonora,onavas,2010,progresivo,,,bfill,2012
+26044,Sonora,onavas,2011,progresivo,,,bfill,2012
+26044,Sonora,onavas,2013,progresivo,,,closure_fill,2012
+26044,Sonora,onavas,2014,progresivo,,,closure_fill,2012
+26044,Sonora,onavas,2015,progresivo,,,closure_fill,2012
+26044,Sonora,onavas,2016,progresivo,,,closure_fill,2012
+26044,Sonora,onavas,2017,tarifa_millar,,,false,
+26044,Sonora,onavas,2018,progresivo,,,closure_fill,2012
+26044,Sonora,onavas,2019,progresivo,5,259920.0,false,
+26044,Sonora,onavas,2020,tarifa_millar,,,false,
+26044,Sonora,onavas,2021,tarifa_millar,,,confirmed_fill,2020
+26044,Sonora,onavas,2022,tarifa_millar,,,false,
+26044,Sonora,onavas,2023,tarifa_millar,,,false,
+26044,Sonora,onavas,2024,progresivo,,,closure_fill,2012
+26044,Sonora,onavas,2025,mixto,5,259920.0,false,
+26045,Sonora,Opodepe,2010,progresivo,11,2316072.0,false,
+26045,Sonora,Opodepe,2011,progresivo,11,2316072.0,false,
+26045,Sonora,Opodepe,2013,progresivo,,,bfill,2017
+26045,Sonora,Opodepe,2014,progresivo,,,bfill,2017
+26045,Sonora,Opodepe,2015,progresivo,,,bfill,2017
+26045,Sonora,Opodepe,2016,progresivo,,,bfill,2017
+26045,Sonora,Opodepe,2017,progresivo,11,2316072.0,false,
+26045,Sonora,Opodepe,2018,progresivo,11,2316072.0,false,
+26045,Sonora,Opodepe,2019,progresivo,11,2316072.0,false,
+26045,Sonora,Opodepe,2020,progresivo,11,2316072.0,false,
+26045,Sonora,Opodepe,2021,mixto,11,2316072.0,false,
+26045,Sonora,Opodepe,2022,mixto,11,2316072.0,false,
+26045,Sonora,Opodepe,2023,tarifa_millar,,,false,
+26045,Sonora,Opodepe,2024,mixto,11,2316072.0,false,
+26045,Sonora,Opodepe,2025,progresivo,11,2316072.0,false,
+26046,Sonora,Oquitoa,2010,progresivo,5,259920.0,false,
+26046,Sonora,Oquitoa,2011,progresivo,5,259920.0,false,
+26046,Sonora,Oquitoa,2013,tarifa_millar,,,bfill,2017
+26046,Sonora,Oquitoa,2014,tarifa_millar,,,bfill,2017
+26046,Sonora,Oquitoa,2015,tarifa_millar,,,bfill,2017
+26046,Sonora,Oquitoa,2016,tarifa_millar,,,bfill,2017
+26046,Sonora,Oquitoa,2017,tarifa_millar,,,false,
+26046,Sonora,Oquitoa,2018,tarifa_millar,,,false,
+26046,Sonora,Oquitoa,2019,progresivo,5,259920.0,false,
+26046,Sonora,Oquitoa,2020,tarifa_millar,,,false,
+26046,Sonora,Oquitoa,2021,otro_no_clasificado,,,false,
+26046,Sonora,Oquitoa,2022,progresivo,11,2316072.0,false,
+26046,Sonora,Oquitoa,2023,progresivo,5,259920.0,false,
+26046,Sonora,Oquitoa,2024,tarifa_millar,,,false,
+26046,Sonora,Oquitoa,2025,progresivo,5,259920.0,false,
+26047,Sonora,Pitiquito,2010,progresivo,11,2316072.0,false,
+26047,Sonora,Pitiquito,2011,progresivo,11,2316072.0,false,
+26047,Sonora,Pitiquito,2013,progresivo,11,2318072.0,false,
+26047,Sonora,Pitiquito,2014,progresivo,,,bfill,2018
+26047,Sonora,Pitiquito,2015,progresivo,,,bfill,2018
+26047,Sonora,Pitiquito,2016,progresivo,,,bfill,2018
+26047,Sonora,Pitiquito,2017,progresivo,,,bfill,2018
+26047,Sonora,Pitiquito,2018,progresivo,11,2316072.0,false,
+26047,Sonora,Pitiquito,2019,progresivo,11,2316072.0,false,
+26047,Sonora,Pitiquito,2020,progresivo,11,2316072.0,false,
+26047,Sonora,Pitiquito,2021,otro_no_clasificado,,,false,
+26047,Sonora,Pitiquito,2023,progresivo,11,2316072.0,false,
+26047,Sonora,Pitiquito,2024,progresivo,11,2316072.0,false,
+26047,Sonora,Pitiquito,2025,mixto,11,2316072.0,false,
+26048,Sonora,Puerto Peñasco,2010,tarifa_millar,,,bfill,2011
+26048,Sonora,Puerto Peñasco,2011,tarifa_millar,,,false,
+26048,Sonora,Puerto Peñasco,2012,tarifa_millar,,,ffill,2011
+26048,Sonora,Puerto Peñasco,2013,tarifa_millar,,,ffill,2011
+26048,Sonora,Puerto Peñasco,2014,tarifa_millar,,,ffill,2011
+26048,Sonora,Puerto Peñasco,2015,tarifa_millar,,,ffill,2011
+26048,Sonora,Puerto Peñasco,2016,otro_no_clasificado,,,false,
+26048,Sonora,Puerto Peñasco,2017,tarifa_millar,,,false,
+26048,Sonora,Puerto Peñasco,2018,tarifa_millar,,,false,
+26048,Sonora,Puerto Peñasco,2019,tarifa_millar,,,false,
+26048,Sonora,Puerto Peñasco,2020,tarifa_millar,,,false,
+26048,Sonora,Puerto Peñasco,2021,tarifa_millar,,,false,
+26048,Sonora,Puerto Peñasco,2022,tarifa_millar,,,false,
+26048,Sonora,Puerto Peñasco,2023,tarifa_millar,,,false,
+26048,Sonora,Puerto Peñasco,2024,tarifa_millar,,,false,
+26048,Sonora,Puerto Peñasco,2025,cuota_fija_simple,,,false,
+26049,Sonora,Quiriego,2010,tarifa_millar,,,bfill,2012
+26049,Sonora,Quiriego,2011,tarifa_millar,,,bfill,2012
+26049,Sonora,Quiriego,2012,tarifa_millar,,,false,
+26049,Sonora,Quiriego,2013,tarifa_millar,,,false,
+26049,Sonora,Quiriego,2014,tarifa_millar,,,closure_fill,2012
+26049,Sonora,Quiriego,2015,tarifa_millar,,,closure_fill,2012
+26049,Sonora,Quiriego,2016,tarifa_millar,,,closure_fill,2012
+26049,Sonora,Quiriego,2017,progresivo,5,259920.0,false,
+26049,Sonora,Quiriego,2018,progresivo,5,259920.0,false,
+26049,Sonora,Quiriego,2019,progresivo,5,259920.0,false,
+26049,Sonora,Quiriego,2020,progresivo,5,259920.0,false,
+26049,Sonora,Quiriego,2021,tarifa_millar,,,closure_fill,2012
+26049,Sonora,Quiriego,2022,tarifa_millar,,,closure_fill,2012
+26049,Sonora,Quiriego,2023,tarifa_millar,,,false,
+26049,Sonora,Quiriego,2024,tarifa_millar,,,ffill,2023
+26049,Sonora,Quiriego,2025,tarifa_millar,,,ffill,2023
+26050,Sonora,Rayon,2010,progresivo,8,1060473.0,false,
+26050,Sonora,Rayon,2011,progresivo,,,ffill,2010
+26050,Sonora,Rayon,2012,progresivo,,,ffill,2010
+26050,Sonora,Rayon,2013,progresivo,,,ffill,2010
+26050,Sonora,Rayon,2014,progresivo,,,ffill,2010
+26050,Sonora,Rayon,2015,mixto,6,441864.0,false,
+26050,Sonora,Rayon,2016,progresivo,6,441864.0,false,
+26050,Sonora,Rayon,2017,tarifa_millar,,,false,
+26050,Sonora,Rayon,2018,progresivo,6,441864.0,false,
+26050,Sonora,Rayon,2019,progresivo,6,441864.0,false,
+26050,Sonora,Rayon,2020,tarifa_millar,,,false,
+26050,Sonora,Rayon,2021,tarifa_millar,,,confirmed_fill,2020
+26050,Sonora,Rayon,2022,tarifa_millar,,,confirmed_fill,2020
+26050,Sonora,Rayon,2023,tarifa_millar,,,false,
+26050,Sonora,Rayon,2024,tarifa_millar,,,ffill,2023
+26050,Sonora,Rayon,2025,tarifa_millar,,,ffill,2023
+26051,Sonora,Rosario,2011,progresivo,8,1060473.0,false,
+26051,Sonora,Rosario,2013,progresivo,,,bfill,2017
+26051,Sonora,Rosario,2014,progresivo,,,bfill,2017
+26051,Sonora,Rosario,2015,progresivo,,,bfill,2017
+26051,Sonora,Rosario,2016,progresivo,,,bfill,2017
+26051,Sonora,Rosario,2017,progresivo,8,1060473.0,false,
+26051,Sonora,Rosario,2018,progresivo,8,1060473.0,false,
+26051,Sonora,Rosario,2019,progresivo,8,1060473.0,confirmed_fill,2018
+26051,Sonora,Rosario,2020,progresivo,8,1060473.0,false,
+26051,Sonora,Rosario,2021,progresivo,8,1060473.0,closure_fill,2017
+26051,Sonora,Rosario,2022,tarifa_millar,,,false,
+26051,Sonora,Rosario,2023,tarifa_millar,,,false,
+26051,Sonora,Rosario,2024,progresivo,8,1060473.0,false,
+26051,Sonora,Rosario,2025,progresivo,8,1060473.0,false,
+26052,Sonora,Sahuaripa,2010,tarifa_millar,,,bfill,2012
+26052,Sonora,Sahuaripa,2011,tarifa_millar,,,bfill,2012
+26052,Sonora,Sahuaripa,2012,tarifa_millar,,,false,
+26052,Sonora,Sahuaripa,2013,progresivo,7,706982.0,false,
+26052,Sonora,Sahuaripa,2014,progresivo,7,706982.0,confirmed_fill,2013
+26052,Sonora,Sahuaripa,2015,progresivo,7,706982.0,confirmed_fill,2013
+26052,Sonora,Sahuaripa,2016,progresivo,7,706982.0,confirmed_fill,2013
+26052,Sonora,Sahuaripa,2017,progresivo,7,706982.0,false,
+26052,Sonora,Sahuaripa,2018,progresivo,7,706982.0,false,
+26052,Sonora,Sahuaripa,2019,progresivo,7,706982.0,confirmed_fill,2018
+26052,Sonora,Sahuaripa,2020,progresivo,7,706982.0,false,
+26052,Sonora,Sahuaripa,2021,tarifa_millar,,,closure_fill,2012
+26052,Sonora,Sahuaripa,2022,tarifa_millar,,,closure_fill,2012
+26052,Sonora,Sahuaripa,2023,tarifa_millar,,,false,
+26052,Sonora,Sahuaripa,2024,tarifa_millar,,,ffill,2023
+26052,Sonora,Sahuaripa,2025,tarifa_millar,,,ffill,2023
+26053,Sonora,San Felipe de Jesus,2010,progresivo,5,259920.0,false,
+26053,Sonora,San Felipe de Jesus,2011,progresivo,5,259920.0,false,
+26053,Sonora,San Felipe de Jesus,2013,tarifa_millar,,,bfill,2017
+26053,Sonora,San Felipe de Jesus,2014,tarifa_millar,,,bfill,2017
+26053,Sonora,San Felipe de Jesus,2015,tarifa_millar,,,bfill,2017
+26053,Sonora,San Felipe de Jesus,2016,tarifa_millar,,,bfill,2017
+26053,Sonora,San Felipe de Jesus,2017,tarifa_millar,,,false,
+26053,Sonora,San Felipe de Jesus,2018,progresivo,5,259920.0,false,
+26053,Sonora,San Felipe de Jesus,2020,progresivo,5,259920.0,false,
+26053,Sonora,San Felipe de Jesus,2023,tarifa_millar,,,false,
+26053,Sonora,San Felipe de Jesus,2024,tarifa_millar,,,false,
+26054,Sonora,San Javier,2010,progresivo,,,bfill,2011
+26054,Sonora,San Javier,2011,progresivo,11,2516072.0,false,
+26054,Sonora,San Javier,2014,mixto,11,2316072.0,false,
+26054,Sonora,San Javier,2015,mixto,11,2316072.0,false,
+26054,Sonora,San Javier,2016,progresivo,11,2316072.0,false,
+26054,Sonora,San Javier,2017,progresivo,11,2316072.0,false,
+26054,Sonora,San Javier,2018,progresivo,11,2316072.0,false,
+26054,Sonora,San Javier,2019,progresivo,11,2316072.0,false,
+26054,Sonora,San Javier,2020,tarifa_millar,,,false,
+26054,Sonora,San Javier,2023,progresivo,11,2316072.0,false,
+26054,Sonora,San Javier,2025,mixto,3,22073.0,false,
+26055,Sonora,San Luis Rio Colorado,2010,tarifa_millar,,,bfill,2012
+26055,Sonora,San Luis Rio Colorado,2011,mixto,21,5500000.0,false,
+26055,Sonora,San Luis Rio Colorado,2012,tarifa_millar,,,false,
+26055,Sonora,San Luis Rio Colorado,2013,progresivo,2,34000.0,false,
+26055,Sonora,San Luis Rio Colorado,2014,tarifa_millar,,,closure_fill,2012
+26055,Sonora,San Luis Rio Colorado,2015,tarifa_millar,,,closure_fill,2012
+26055,Sonora,San Luis Rio Colorado,2016,tarifa_millar,,,false,
+26055,Sonora,San Luis Rio Colorado,2017,progresivo,21,5500000.0,false,
+26055,Sonora,San Luis Rio Colorado,2018,tarifa_millar,,,false,
+26055,Sonora,San Luis Rio Colorado,2019,tarifa_millar,,,confirmed_fill,2018
+26055,Sonora,San Luis Rio Colorado,2020,tarifa_millar,,,false,
+26055,Sonora,San Luis Rio Colorado,2021,progresivo,48,999999999999.0,false,
+26055,Sonora,San Luis Rio Colorado,2022,tarifa_millar,,,closure_fill,2012
+26055,Sonora,San Luis Rio Colorado,2023,tarifa_millar,,,false,
+26055,Sonora,San Luis Rio Colorado,2024,tarifa_millar,,,ffill,2023
+26055,Sonora,San Luis Rio Colorado,2025,tarifa_millar,,,ffill,2023
+26056,Sonora,San Miguel de Horcasitas,2010,tarifa_millar,,,false,
+26056,Sonora,San Miguel de Horcasitas,2011,tarifa_millar,,,ffill,2010
+26056,Sonora,San Miguel de Horcasitas,2012,tarifa_millar,,,ffill,2010
+26056,Sonora,San Miguel de Horcasitas,2013,tarifa_millar,,,ffill,2010
+26056,Sonora,San Miguel de Horcasitas,2014,tarifa_millar,,,ffill,2010
+26056,Sonora,San Miguel de Horcasitas,2015,tarifa_millar,,,closure_fill,2010
+26056,Sonora,San Miguel de Horcasitas,2016,tarifa_millar,,,closure_fill,2010
+26056,Sonora,San Miguel de Horcasitas,2017,progresivo,6,441864.0,false,
+26056,Sonora,San Miguel de Horcasitas,2018,progresivo,6,441864.0,false,
+26056,Sonora,San Miguel de Horcasitas,2019,progresivo,6,441864.0,confirmed_fill,2018
+26056,Sonora,San Miguel de Horcasitas,2020,progresivo,6,441864.0,confirmed_fill,2018
+26056,Sonora,San Miguel de Horcasitas,2021,progresivo,6,441864.0,confirmed_fill,2018
+26056,Sonora,San Miguel de Horcasitas,2022,progresivo,6,441864.0,false,
+26056,Sonora,San Miguel de Horcasitas,2023,tarifa_millar,,,false,
+26056,Sonora,San Miguel de Horcasitas,2024,tarifa_millar,,,ffill,2023
+26056,Sonora,San Miguel de Horcasitas,2025,tarifa_millar,,,ffill,2023
+26057,Sonora,San Pedro de la Cueva,2010,progresivo,,,bfill,2013
+26057,Sonora,San Pedro de la Cueva,2011,progresivo,,,bfill,2013
+26057,Sonora,San Pedro de la Cueva,2012,progresivo,,,bfill,2013
+26057,Sonora,San Pedro de la Cueva,2013,progresivo,6,441864.0,false,
+26057,Sonora,San Pedro de la Cueva,2014,mixto,6,441864.0,false,
+26057,Sonora,San Pedro de la Cueva,2016,progresivo,6,441864.0,false,
+26057,Sonora,San Pedro de la Cueva,2017,tarifa_millar,,,false,
+26057,Sonora,San Pedro de la Cueva,2018,tarifa_millar,,,false,
+26057,Sonora,San Pedro de la Cueva,2019,progresivo,6,441864.0,false,
+26057,Sonora,San Pedro de la Cueva,2020,tarifa_millar,,,false,
+26057,Sonora,San Pedro de la Cueva,2021,tarifa_millar,,,confirmed_fill,2020
+26057,Sonora,San Pedro de la Cueva,2022,tarifa_millar,,,confirmed_fill,2020
+26057,Sonora,San Pedro de la Cueva,2023,tarifa_millar,,,false,
+26057,Sonora,San Pedro de la Cueva,2024,progresivo,6,441864.0,false,
+26057,Sonora,San Pedro de la Cueva,2025,progresivo,6,441864.0,false,
+26058,Sonora,Santa Ana,2010,progresivo,,,bfill,2012
+26058,Sonora,Santa Ana,2011,progresivo,,,bfill,2012
+26058,Sonora,Santa Ana,2012,progresivo,11,2316072.0,false,
+26058,Sonora,Santa Ana,2013,progresivo,11,2316072.0,false,
+26058,Sonora,Santa Ana,2014,progresivo,11,2316072.0,confirmed_fill,2013
+26058,Sonora,Santa Ana,2015,progresivo,11,2316072.0,confirmed_fill,2013
+26058,Sonora,Santa Ana,2016,progresivo,11,2316072.0,confirmed_fill,2013
+26058,Sonora,Santa Ana,2017,progresivo,11,2316072.0,false,
+26058,Sonora,Santa Ana,2018,progresivo,11,2316072.0,false,
+26058,Sonora,Santa Ana,2019,progresivo,11,2316072.0,closure_fill,2012
+26058,Sonora,Santa Ana,2020,tarifa_millar,,,false,
+26058,Sonora,Santa Ana,2021,progresivo,11,2316072.0,false,
+26058,Sonora,Santa Ana,2022,progresivo,11,2316072.0,confirmed_fill,2021
+26058,Sonora,Santa Ana,2023,progresivo,11,2316072.0,false,
+26058,Sonora,Santa Ana,2024,progresivo,11,2316072.0,false,
+26058,Sonora,Santa Ana,2025,progresivo,11,2316072.0,false,
+26059,Sonora,Santa Cruz,2010,progresivo,5,259920.0,false,
+26059,Sonora,Santa Cruz,2013,progresivo,,,bfill,2017
+26059,Sonora,Santa Cruz,2014,progresivo,,,bfill,2017
+26059,Sonora,Santa Cruz,2015,progresivo,,,bfill,2017
+26059,Sonora,Santa Cruz,2016,progresivo,,,bfill,2017
+26059,Sonora,Santa Cruz,2017,progresivo,11,2316072.0,false,
+26059,Sonora,Santa Cruz,2018,progresivo,11,2316072.0,confirmed_fill,2017
+26059,Sonora,Santa Cruz,2019,progresivo,11,2316072.0,confirmed_fill,2017
+26059,Sonora,Santa Cruz,2020,progresivo,11,2316072.0,false,
+26059,Sonora,Santa Cruz,2021,progresivo,11,2316072.0,confirmed_fill,2020
+26059,Sonora,Santa Cruz,2022,progresivo,11,2316072.0,false,
+26059,Sonora,Santa Cruz,2023,progresivo,11,2316072.0,false,
+26059,Sonora,Santa Cruz,2024,progresivo,11,2316072.0,false,
+26060,Sonora,Saric,2010,progresivo,,,bfill,2012
+26060,Sonora,Saric,2011,progresivo,,,bfill,2012
+26060,Sonora,Saric,2012,progresivo,7,706982.0,false,
+26060,Sonora,Saric,2013,progresivo,7,706982.0,closure_fill,2012
+26060,Sonora,Saric,2014,progresivo,7,706982.0,closure_fill,2012
+26060,Sonora,Saric,2015,progresivo,7,706982.0,closure_fill,2012
+26060,Sonora,Saric,2016,progresivo,7,706982.0,closure_fill,2012
+26060,Sonora,Saric,2017,tarifa_millar,,,false,
+26060,Sonora,Saric,2018,progresivo,7,706982.0,false,
+26060,Sonora,Saric,2019,progresivo,7,706982.0,false,
+26060,Sonora,Saric,2020,progresivo,7,706982.0,closure_fill,2012
+26060,Sonora,Saric,2021,tarifa_millar,,,false,
+26060,Sonora,Saric,2022,progresivo,7,706982.0,closure_fill,2012
+26060,Sonora,Saric,2023,progresivo,7,706982.0,false,
+26060,Sonora,Saric,2024,progresivo,,,ffill,2023
+26060,Sonora,Saric,2025,progresivo,,,ffill,2023
+26061,Sonora,Soyopa,2010,progresivo,,,bfill,2012
+26061,Sonora,Soyopa,2011,progresivo,,,bfill,2012
+26061,Sonora,Soyopa,2012,progresivo,11,2316072.0,false,
+26061,Sonora,Soyopa,2013,tarifa_millar,,,false,
+26061,Sonora,Soyopa,2014,progresivo,11,2316072.0,closure_fill,2012
+26061,Sonora,Soyopa,2015,progresivo,11,2316072.0,closure_fill,2012
+26061,Sonora,Soyopa,2016,progresivo,11,2316072.0,closure_fill,2012
+26061,Sonora,Soyopa,2017,progresivo,11,2316072.0,false,
+26061,Sonora,Soyopa,2018,progresivo,11,2316072.0,closure_fill,2012
+26061,Sonora,Soyopa,2019,cuota_fija_simple,,,false,
+26061,Sonora,Soyopa,2020,tarifa_millar,,,false,
+26061,Sonora,Soyopa,2021,progresivo,11,2316072.0,closure_fill,2012
+26061,Sonora,Soyopa,2022,progresivo,11,2316072.0,false,
+26061,Sonora,Soyopa,2023,progresivo,11,2316072.0,false,
+26061,Sonora,Soyopa,2024,progresivo,,,ffill,2023
+26061,Sonora,Soyopa,2025,progresivo,,,ffill,2023
+26062,Sonora,Suaqui Grande,2010,tarifa_millar,,,bfill,2012
+26062,Sonora,Suaqui Grande,2011,tarifa_millar,,,bfill,2012
+26062,Sonora,Suaqui Grande,2012,tarifa_millar,,,false,
+26062,Sonora,Suaqui Grande,2013,tarifa_millar,,,confirmed_fill,2012
+26062,Sonora,Suaqui Grande,2014,tarifa_millar,,,confirmed_fill,2012
+26062,Sonora,Suaqui Grande,2015,tarifa_millar,,,confirmed_fill,2012
+26062,Sonora,Suaqui Grande,2016,tarifa_millar,,,confirmed_fill,2012
+26062,Sonora,Suaqui Grande,2017,tarifa_millar,,,false,
+26062,Sonora,Suaqui Grande,2018,tarifa_millar,,,false,
+26062,Sonora,Suaqui Grande,2019,tarifa_millar,,,confirmed_fill,2018
+26062,Sonora,Suaqui Grande,2020,tarifa_millar,,,false,
+26062,Sonora,Suaqui Grande,2021,progresivo,6,441864.01,false,
+26062,Sonora,Suaqui Grande,2022,progresivo,11,2316072.0,false,
+26062,Sonora,Suaqui Grande,2023,progresivo,6,441864.0,false,
+26062,Sonora,Suaqui Grande,2024,progresivo,6,441864.0,false,
+26062,Sonora,Suaqui Grande,2025,mixto,6,441864.0,false,
+26063,Sonora,Tepache,2010,tarifa_millar,,,bfill,2013
+26063,Sonora,Tepache,2011,tarifa_millar,,,bfill,2013
+26063,Sonora,Tepache,2012,tarifa_millar,,,bfill,2013
+26063,Sonora,Tepache,2013,tarifa_millar,,,false,
+26063,Sonora,Tepache,2014,mixto,11,2316072.0,false,
+26063,Sonora,Tepache,2016,progresivo,11,2316072.0,false,
+26063,Sonora,Tepache,2017,progresivo,11,2316072.0,false,
+26063,Sonora,Tepache,2018,progresivo,11,2316072.0,false,
+26063,Sonora,Tepache,2019,progresivo,11,2316072.0,false,
+26063,Sonora,Tepache,2020,mixto,3,17011.0,false,
+26063,Sonora,Tepache,2021,progresivo,11,2316072.01,false,
+26063,Sonora,Tepache,2022,mixto,11,2316072.0,false,
+26063,Sonora,Tepache,2023,progresivo,11,2316072.0,false,
+26063,Sonora,Tepache,2024,mixto,11,2316072.0,false,
+26063,Sonora,Tepache,2025,mixto,,,ffill,2024
+26064,Sonora,Trincheras,2010,progresivo,5,259920.0,false,
+26064,Sonora,Trincheras,2012,progresivo,,,bfill,2016
+26064,Sonora,Trincheras,2013,progresivo,,,bfill,2016
+26064,Sonora,Trincheras,2014,progresivo,,,bfill,2016
+26064,Sonora,Trincheras,2015,progresivo,,,bfill,2016
+26064,Sonora,Trincheras,2016,progresivo,11,2316072.0,false,
+26064,Sonora,Trincheras,2017,tarifa_millar,,,false,
+26064,Sonora,Trincheras,2018,progresivo,5,259920.0,false,
+26064,Sonora,Trincheras,2020,tarifa_millar,,,false,
+26064,Sonora,Trincheras,2021,progresivo,5,259920.0,false,
+26064,Sonora,Trincheras,2022,progresivo,11,2316072.0,false,
+26064,Sonora,Trincheras,2023,progresivo,5,259920.0,false,
+26064,Sonora,Trincheras,2024,progresivo,5,259920.0,false,
+26064,Sonora,Trincheras,2025,progresivo,,,ffill,2024
+26065,Sonora,Tubutama,2010,progresivo,11,2316072.0,false,
+26065,Sonora,Tubutama,2011,progresivo,5,259920.0,false,
+26065,Sonora,Tubutama,2012,progresivo,,,ffill,2011
+26065,Sonora,Tubutama,2013,progresivo,,,ffill,2011
+26065,Sonora,Tubutama,2014,progresivo,,,ffill,2011
+26065,Sonora,Tubutama,2015,progresivo,,,ffill,2011
+26065,Sonora,Tubutama,2016,progresivo,5,259920.0,false,
+26065,Sonora,Tubutama,2017,progresivo,5,259920.0,false,
+26065,Sonora,Tubutama,2018,progresivo,5,259920.0,false,
+26065,Sonora,Tubutama,2019,tarifa_millar,,,false,
+26065,Sonora,Tubutama,2020,progresivo,5,259920.0,false,
+26065,Sonora,Tubutama,2021,progresivo,5,259920.0,confirmed_fill,2020
+26065,Sonora,Tubutama,2022,progresivo,5,259920.0,false,
+26065,Sonora,Tubutama,2023,progresivo,5,259920.0,false,
+26065,Sonora,Tubutama,2024,mixto,5,259920.0,false,
+26065,Sonora,Tubutama,2025,progresivo,5,259920.0,false,
+26066,Sonora,Ures,2010,tarifa_millar,,,bfill,2013
+26066,Sonora,Ures,2011,progresivo,11,2316072.0,false,
+26066,Sonora,Ures,2012,progresivo,11,2316072.0,false,
+26066,Sonora,Ures,2013,tarifa_millar,,,false,
+26066,Sonora,Ures,2014,tarifa_millar,,,ffill,2013
+26066,Sonora,Ures,2015,tarifa_millar,,,ffill,2013
+26066,Sonora,Ures,2016,tarifa_millar,,,ffill,2013
+26066,Sonora,Ures,2017,tarifa_millar,,,ffill,2013
+26066,Sonora,Ures,2018,tarifa_millar,,,closure_fill,2013
+26066,Sonora,Ures,2019,tarifa_millar,,,closure_fill,2013
+26066,Sonora,Ures,2020,mixto,3,12540.0,false,
+26066,Sonora,Ures,2021,mixto,3,12540.0,confirmed_fill,2020
+26066,Sonora,Ures,2022,progresivo,11,2316072.0,false,
+26066,Sonora,Ures,2023,tarifa_millar,,,false,
+26066,Sonora,Ures,2024,tarifa_millar,,,false,
+26066,Sonora,Ures,2025,tarifa_millar,,,ffill,2024
+26067,Sonora,Villa Hidalgo,2010,progresivo,,,bfill,2012
+26067,Sonora,Villa Hidalgo,2011,progresivo,5,259920.0,false,
+26067,Sonora,Villa Hidalgo,2012,progresivo,3,21972.0,false,
+26067,Sonora,Villa Hidalgo,2013,progresivo,,,tipo_only_fill,2012
+26067,Sonora,Villa Hidalgo,2014,progresivo,,,tipo_only_fill,2012
+26067,Sonora,Villa Hidalgo,2015,progresivo,,,tipo_only_fill,2012
+26067,Sonora,Villa Hidalgo,2016,progresivo,,,tipo_only_fill,2012
+26067,Sonora,Villa Hidalgo,2017,progresivo,5,259920.0,false,
+26067,Sonora,Villa Hidalgo,2018,progresivo,,,tipo_only_fill,2017
+26067,Sonora,Villa Hidalgo,2019,progresivo,,,tipo_only_fill,2017
+26067,Sonora,Villa Hidalgo,2020,progresivo,,,tipo_only_fill,2017
+26067,Sonora,Villa Hidalgo,2021,progresivo,,,tipo_only_fill,2017
+26067,Sonora,Villa Hidalgo,2022,progresivo,11,2316072.0,false,
+26067,Sonora,Villa Hidalgo,2023,tarifa_millar,,,false,
+26067,Sonora,Villa Hidalgo,2024,mixto,5,259920.0,false,
+26067,Sonora,Villa Hidalgo,2025,progresivo,5,259920.0,false,
+26068,Sonora,Villa Pesqueira,2010,progresivo,,,bfill,2012
+26068,Sonora,Villa Pesqueira,2011,progresivo,,,bfill,2012
+26068,Sonora,Villa Pesqueira,2012,progresivo,5,259920.0,false,
+26068,Sonora,Villa Pesqueira,2013,progresivo,5,259920.0,confirmed_fill,2012
+26068,Sonora,Villa Pesqueira,2014,progresivo,5,259920.0,confirmed_fill,2012
+26068,Sonora,Villa Pesqueira,2015,progresivo,5,259920.0,confirmed_fill,2012
+26068,Sonora,Villa Pesqueira,2016,progresivo,5,259920.0,confirmed_fill,2012
+26068,Sonora,Villa Pesqueira,2017,progresivo,5,259920.0,false,
+26068,Sonora,Villa Pesqueira,2018,progresivo,5,259920.0,false,
+26068,Sonora,Villa Pesqueira,2020,tarifa_millar,,,false,
+26068,Sonora,Villa Pesqueira,2021,tarifa_millar,,,confirmed_fill,2020
+26068,Sonora,Villa Pesqueira,2022,tarifa_millar,,,confirmed_fill,2020
+26068,Sonora,Villa Pesqueira,2023,tarifa_millar,,,false,
+26068,Sonora,Villa Pesqueira,2024,mixto,5,259920.0,false,
+26068,Sonora,Villa Pesqueira,2025,mixto,5,259920.0,false,
+26069,Sonora,Yecora,2010,tarifa_millar,,,bfill,2012
+26069,Sonora,Yecora,2011,tarifa_millar,,,bfill,2012
+26069,Sonora,Yecora,2012,tarifa_millar,,,false,
+26069,Sonora,Yecora,2014,mixto,11,2316072.0,false,
+26069,Sonora,Yecora,2015,progresivo,11,2316072.0,false,
+26069,Sonora,Yecora,2016,progresivo,11,2316072.0,false,
+26069,Sonora,Yecora,2017,progresivo,11,2316072.0,false,
+26069,Sonora,Yecora,2018,tarifa_millar,,,false,
+26069,Sonora,Yecora,2019,tarifa_millar,,,confirmed_fill,2018
+26069,Sonora,Yecora,2020,tarifa_millar,,,false,
+26069,Sonora,Yecora,2023,progresivo,11,2316072.0,false,
+26069,Sonora,Yecora,2024,mixto,11,2316072.0,false,
+26069,Sonora,Yecora,2025,progresivo,11,2316072.0,false,
+26070,Sonora,General Plutarco Elias Calles,2010,progresivo,,,bfill,2012
+26070,Sonora,General Plutarco Elias Calles,2011,progresivo,,,bfill,2012
+26070,Sonora,General Plutarco Elias Calles,2012,progresivo,11,2316072.0,false,
+26070,Sonora,General Plutarco Elias Calles,2013,mixto,11,2316072.0,false,
+26070,Sonora,General Plutarco Elias Calles,2014,mixto,11,2316072.0,false,
+26070,Sonora,General Plutarco Elias Calles,2015,mixto,11,2316072.0,false,
+26070,Sonora,General Plutarco Elias Calles,2016,progresivo,11,2316072.0,false,
+26070,Sonora,General Plutarco Elias Calles,2017,tarifa_millar,,,false,
+26070,Sonora,General Plutarco Elias Calles,2018,tarifa_millar,,,false,
+26070,Sonora,General Plutarco Elias Calles,2020,progresivo,11,2316072.0,false,
+26070,Sonora,General Plutarco Elias Calles,2021,progresivo,11,2316072.0,false,
+26070,Sonora,General Plutarco Elias Calles,2022,progresivo,11,2316072.0,false,
+26070,Sonora,General Plutarco Elias Calles,2023,progresivo,11,2316072.0,false,
+26070,Sonora,General Plutarco Elias Calles,2024,tarifa_millar,,,false,
+26070,Sonora,General Plutarco Elias Calles,2025,tarifa_millar,,,false,
+26071,Sonora,Benito Juarez,2010,progresivo,11,2316072.0,false,
+26071,Sonora,Benito Juarez,2011,progresivo,11,2316072.0,closure_fill,2010
+26071,Sonora,Benito Juarez,2012,mixto,11,2316072.0,false,
+26071,Sonora,Benito Juarez,2013,progresivo,11,2316072.0,false,
+26071,Sonora,Benito Juarez,2014,mixto,11,2316072.0,false,
+26071,Sonora,Benito Juarez,2015,progresivo,11,2316072.0,false,
+26071,Sonora,Benito Juarez,2016,progresivo,11,2316072.0,confirmed_fill,2013
+26071,Sonora,Benito Juarez,2017,progresivo,11,2316072.0,false,
+26071,Sonora,Benito Juarez,2018,progresivo,11,2316072.0,false,
+26071,Sonora,Benito Juarez,2019,tarifa_millar,,,false,
+26071,Sonora,Benito Juarez,2020,progresivo,11,2316072.0,false,
+26071,Sonora,Benito Juarez,2021,tarifa_millar,,,false,
+26071,Sonora,Benito Juarez,2022,progresivo,11,2316072.0,false,
+26071,Sonora,Benito Juarez,2023,progresivo,11,2316072.0,false,
+26071,Sonora,Benito Juarez,2024,progresivo,11,2316072.0,false,
+26071,Sonora,Benito Juarez,2025,progresivo,11,2316072.0,false,
+26072,Sonora,San Ignacio Rio Muerto,2010,tarifa_millar,,,bfill,2013
+26072,Sonora,San Ignacio Rio Muerto,2011,tarifa_millar,,,bfill,2013
+26072,Sonora,San Ignacio Rio Muerto,2012,tarifa_millar,,,bfill,2013
+26072,Sonora,San Ignacio Rio Muerto,2013,tarifa_millar,,,false,
+26072,Sonora,San Ignacio Rio Muerto,2014,tarifa_millar,,,closure_fill,2013
+26072,Sonora,San Ignacio Rio Muerto,2015,tarifa_millar,,,closure_fill,2013
+26072,Sonora,San Ignacio Rio Muerto,2016,progresivo,11,2316072.0,false,
+26072,Sonora,San Ignacio Rio Muerto,2017,tarifa_millar,,,false,
+26072,Sonora,San Ignacio Rio Muerto,2018,progresivo,10,2451520.0,false,
+26072,Sonora,San Ignacio Rio Muerto,2019,tarifa_millar,,,closure_fill,2013
+26072,Sonora,San Ignacio Rio Muerto,2020,progresivo,10,2451520.0,false,
+26072,Sonora,San Ignacio Rio Muerto,2021,tarifa_millar,,,closure_fill,2013
+26072,Sonora,San Ignacio Rio Muerto,2022,progresivo,10,2451520.0,false,
+26072,Sonora,San Ignacio Rio Muerto,2023,progresivo,10,2451520.0,false,
+26072,Sonora,San Ignacio Rio Muerto,2024,progresivo,10,2451520.0,false,
+26072,Sonora,San Ignacio Rio Muerto,2025,tarifa_millar,,,false,
 27001,Tabasco,Balancan,2010,progresivo,5,70000.0,false,
 27001,Tabasco,Balancan,2011,progresivo,5,70000.0,false,
 27001,Tabasco,Balancan,2012,progresivo,5,70000.0,false,
@@ -8304,7 +10317,7 @@ cvegeo,estado,municipio,ejercicio,tipo_esquema,numero_rangos,monto_max_rango,imp
 31012,Yucatan,Cenotillo,2020,mixto,12,100000.0,false,
 31012,Yucatan,Cenotillo,2021,mixto,12,100000.0,false,
 31012,Yucatan,Cenotillo,2022,mixto,2,200000.0,false,
-31012,Yucatan,Cenotillo,2023,cuota_fija_escalonada,12,100000.0,false,
+31012,Yucatan,Cenotillo,2023,mixto,12,100000.0,false,
 31012,Yucatan,Cenotillo,2024,mixto,12,100000.0,false,
 31012,Yucatan,Cenotillo,2025,mixto,12,100000.0,false,
 31013,Yucatan,Conkal,2010,mixto,7,10000.0,false,
@@ -8389,8 +10402,8 @@ cvegeo,estado,municipio,ejercicio,tipo_esquema,numero_rangos,monto_max_rango,imp
 31017,Yucatan,Chankom,2025,progresivo,7,60000.0,false,
 31018,Yucatan,Chapab,2010,mixto,5,100000.0,false,
 31018,Yucatan,Chapab,2011,mixto,5,100000.0,false,
-31018,Yucatan,Chapab,2012,cuota_fija_escalonada,5,100000.0,false,
-31018,Yucatan,Chapab,2013,cuota_fija_escalonada,5,100000.0,false,
+31018,Yucatan,Chapab,2012,mixto,5,100000.0,false,
+31018,Yucatan,Chapab,2013,mixto,5,100000.0,false,
 31018,Yucatan,Chapab,2014,mixto,5,100000.0,false,
 31018,Yucatan,Chapab,2015,progresivo,5,100000.0,false,
 31018,Yucatan,Chapab,2016,progresivo,5,100000.0,false,
@@ -8429,7 +10442,7 @@ cvegeo,estado,municipio,ejercicio,tipo_esquema,numero_rangos,monto_max_rango,imp
 31020,Yucatan,Chicxulub Pueblo,2017,progresivo,10,1500000.0,false,
 31020,Yucatan,Chicxulub Pueblo,2018,progresivo,10,1500000.0,false,
 31020,Yucatan,Chicxulub Pueblo,2019,progresivo,10,1500000.0,false,
-31020,Yucatan,Chicxulub Pueblo,2020,tasa_unica,,,false,
+31020,Yucatan,Chicxulub Pueblo,2020,progresivo,,,tipo_only_fill,2019
 31020,Yucatan,Chicxulub Pueblo,2021,progresivo,11,4000000.0,false,
 31020,Yucatan,Chicxulub Pueblo,2022,progresivo,11,4000000.0,false,
 31020,Yucatan,Chicxulub Pueblo,2023,mixto,11,4000000.0,false,
@@ -8480,7 +10493,7 @@ cvegeo,estado,municipio,ejercicio,tipo_esquema,numero_rangos,monto_max_rango,imp
 31023,Yucatan,Chochola,2020,otro_no_clasificado,,,false,
 31023,Yucatan,Chochola,2021,otro_no_clasificado,,,false,
 31023,Yucatan,Chochola,2022,tarifa_millar,,,false,
-31023,Yucatan,Chochola,2023,mixto,2,22000.0,false,
+31023,Yucatan,Chochola,2023,tarifa_millar,,,false,
 31023,Yucatan,Chochola,2024,tarifa_millar,,,false,
 31023,Yucatan,Chochola,2025,mixto,2,22000.0,false,
 31024,Yucatan,Chumayel,2010,mixto,5,100000.0,false,
@@ -8522,9 +10535,9 @@ cvegeo,estado,municipio,ejercicio,tipo_esquema,numero_rangos,monto_max_rango,imp
 31026,Yucatan,Dzemul,2014,tasa_unica,,,confirmed_fill,2013
 31026,Yucatan,Dzemul,2015,tasa_unica,,,false,
 31026,Yucatan,Dzemul,2016,tasa_unica,,,false,
-31026,Yucatan,Dzemul,2017,mixto,7,10000.0,false,
-31026,Yucatan,Dzemul,2018,mixto,7,10000.0,false,
-31026,Yucatan,Dzemul,2019,progresivo,7,10000.0,false,
+31026,Yucatan,Dzemul,2017,tarifa_millar,,,false,
+31026,Yucatan,Dzemul,2018,tarifa_millar,,,false,
+31026,Yucatan,Dzemul,2019,tarifa_millar,,,false,
 31026,Yucatan,Dzemul,2020,tasa_unica,,,false,
 31026,Yucatan,Dzemul,2021,tasa_unica,,,false,
 31026,Yucatan,Dzemul,2022,tasa_unica,,,false,
@@ -8780,7 +10793,7 @@ cvegeo,estado,municipio,ejercicio,tipo_esquema,numero_rangos,monto_max_rango,imp
 31042,Yucatan,Kantunil,2016,cuota_fija_simple,,,false,
 31042,Yucatan,Kantunil,2017,tarifa_millar,,,false,
 31042,Yucatan,Kantunil,2018,cuota_fija_simple,,,false,
-31042,Yucatan,Kantunil,2019,mixto,2,999999999.0,false,
+31042,Yucatan,Kantunil,2019,tasa_unica,,,false,
 31042,Yucatan,Kantunil,2020,tarifa_millar,,,false,
 31042,Yucatan,Kantunil,2021,tarifa_millar,,,false,
 31042,Yucatan,Kantunil,2022,mixto,2,200000.0,false,
@@ -8814,7 +10827,7 @@ cvegeo,estado,municipio,ejercicio,tipo_esquema,numero_rangos,monto_max_rango,imp
 31044,Yucatan,Kinchil,2018,mixto,7,60000.0,false,
 31044,Yucatan,Kinchil,2019,mixto,7,60000.0,false,
 31044,Yucatan,Kinchil,2020,mixto,12,300000.0,false,
-31044,Yucatan,Kinchil,2021,tarifa_millar,,,false,
+31044,Yucatan,Kinchil,2021,mixto,,,tipo_only_fill,2020
 31044,Yucatan,Kinchil,2022,mixto,4,20000.0,false,
 31044,Yucatan,Kinchil,2023,mixto,2,100000.0,false,
 31044,Yucatan,Kinchil,2024,otro_no_clasificado,,,false,
@@ -8849,7 +10862,7 @@ cvegeo,estado,municipio,ejercicio,tipo_esquema,numero_rangos,monto_max_rango,imp
 31046,Yucatan,Mama,2021,tasa_unica,,,false,
 31046,Yucatan,Mama,2022,tasa_unica,,,false,
 31046,Yucatan,Mama,2023,tasa_unica,,,false,
-31046,Yucatan,Mama,2024,mixto,2,200000.0,false,
+31046,Yucatan,Mama,2024,tasa_unica,,,false,
 31046,Yucatan,Mama,2025,tasa_unica,,,false,
 31047,Yucatan,Mani,2010,tasa_unica,,,false,
 31047,Yucatan,Mani,2011,tasa_unica,,,false,
@@ -8873,7 +10886,7 @@ cvegeo,estado,municipio,ejercicio,tipo_esquema,numero_rangos,monto_max_rango,imp
 31048,Yucatan,Maxcanu,2013,cuota_fija_escalonada,7,800000.0,confirmed_fill,2012
 31048,Yucatan,Maxcanu,2014,cuota_fija_escalonada,7,800000.0,false,
 31048,Yucatan,Maxcanu,2015,progresivo,7,800000.0,false,
-31048,Yucatan,Maxcanu,2016,otro_no_clasificado,,,false,
+31048,Yucatan,Maxcanu,2016,progresivo,7,800000.0,audit_directed[from_2015],2015
 31048,Yucatan,Maxcanu,2017,mixto,7,800000.0,false,
 31048,Yucatan,Maxcanu,2018,progresivo,7,800000.0,false,
 31048,Yucatan,Maxcanu,2019,progresivo,7,800000.0,false,
@@ -8886,7 +10899,7 @@ cvegeo,estado,municipio,ejercicio,tipo_esquema,numero_rangos,monto_max_rango,imp
 31049,Yucatan,Mayapan,2010,progresivo,7,10000.0,false,
 31049,Yucatan,Mayapan,2011,mixto,7,10000.0,false,
 31049,Yucatan,Mayapan,2012,mixto,7,10000.0,false,
-31049,Yucatan,Mayapan,2013,tasa_unica,,,false,
+31049,Yucatan,Mayapan,2013,progresivo,,,false,
 31049,Yucatan,Mayapan,2014,progresivo,7,10000.0,false,
 31049,Yucatan,Mayapan,2015,progresivo,7,10000.0,false,
 31049,Yucatan,Mayapan,2016,progresivo,5,8500.0,false,
@@ -9096,8 +11109,8 @@ cvegeo,estado,municipio,ejercicio,tipo_esquema,numero_rangos,monto_max_rango,imp
 31062,Yucatan,Sacalum,2012,otro_no_clasificado,,,false,
 31062,Yucatan,Sacalum,2013,otro_no_clasificado,,,false,
 31062,Yucatan,Sacalum,2014,otro_no_clasificado,,,false,
-31062,Yucatan,Sacalum,2015,mixto,7,49900.0,false,
-31062,Yucatan,Sacalum,2016,otro_no_clasificado,,,closure_fill,2010
+31062,Yucatan,Sacalum,2015,otro_no_clasificado,,,confirmed_fill,2014
+31062,Yucatan,Sacalum,2016,otro_no_clasificado,,,confirmed_fill,2014
 31062,Yucatan,Sacalum,2017,otro_no_clasificado,,,false,
 31062,Yucatan,Sacalum,2018,otro_no_clasificado,,,false,
 31062,Yucatan,Sacalum,2019,otro_no_clasificado,,,false,
@@ -9304,8 +11317,8 @@ cvegeo,estado,municipio,ejercicio,tipo_esquema,numero_rangos,monto_max_rango,imp
 31075,Yucatan,Teabo,2012,mixto,7,10000.0,false,
 31075,Yucatan,Teabo,2013,progresivo,6,15500.0,false,
 31075,Yucatan,Teabo,2014,progresivo,6,15500.0,false,
-31075,Yucatan,Teabo,2015,tarifa_millar,,,false,
-31075,Yucatan,Teabo,2016,otro_no_clasificado,,,false,
+31075,Yucatan,Teabo,2015,progresivo,,,false,
+31075,Yucatan,Teabo,2016,progresivo,,,tipo_only_fill,2015
 31075,Yucatan,Teabo,2017,progresivo,6,15500.0,false,
 31075,Yucatan,Teabo,2018,progresivo,6,15500.0,false,
 31075,Yucatan,Teabo,2019,progresivo,6,15500.0,false,
@@ -9503,7 +11516,7 @@ cvegeo,estado,municipio,ejercicio,tipo_esquema,numero_rangos,monto_max_rango,imp
 31087,Yucatan,Tetiz,2019,progresivo,7,99000.0,false,
 31087,Yucatan,Tetiz,2020,tasa_unica,,,false,
 31087,Yucatan,Tetiz,2021,tasa_unica,,,false,
-31087,Yucatan,Tetiz,2022,mixto,2,200000.0,false,
+31087,Yucatan,Tetiz,2022,tasa_unica,,,false,
 31087,Yucatan,Tetiz,2023,tasa_unica,,,false,
 31087,Yucatan,Tetiz,2024,tasa_unica,,,false,
 31087,Yucatan,Tetiz,2025,tasa_unica,,,ffill,2024
@@ -9545,7 +11558,7 @@ cvegeo,estado,municipio,ejercicio,tipo_esquema,numero_rangos,monto_max_rango,imp
 31090,Yucatan,Timucuy,2013,progresivo,7,10000.0,false,
 31090,Yucatan,Timucuy,2014,progresivo,7,10000.0,false,
 31090,Yucatan,Timucuy,2015,mixto,7,10000.0,false,
-31090,Yucatan,Timucuy,2016,otro_no_clasificado,,,false,
+31090,Yucatan,Timucuy,2016,mixto,7,10000.0,audit_directed[from_2015],2015
 31090,Yucatan,Timucuy,2017,progresivo,7,10000.0,false,
 31090,Yucatan,Timucuy,2018,progresivo,7,10000.0,false,
 31090,Yucatan,Timucuy,2019,progresivo,7,10000.0,false,
@@ -9565,7 +11578,7 @@ cvegeo,estado,municipio,ejercicio,tipo_esquema,numero_rangos,monto_max_rango,imp
 31091,Yucatan,Tinum,2017,progresivo,14,1300000.0,false,
 31091,Yucatan,Tinum,2018,progresivo,14,1300000.0,false,
 31091,Yucatan,Tinum,2019,progresivo,14,1300000.0,false,
-31091,Yucatan,Tinum,2020,otro_no_clasificado,,,false,
+31091,Yucatan,Tinum,2020,progresivo,,,tipo_only_fill,2019
 31091,Yucatan,Tinum,2021,progresivo,,,false,
 31091,Yucatan,Tinum,2022,mixto,14,1300000.0,false,
 31091,Yucatan,Tinum,2023,progresivo,14,1300000.0,false,
@@ -9593,7 +11606,7 @@ cvegeo,estado,municipio,ejercicio,tipo_esquema,numero_rangos,monto_max_rango,imp
 31093,Yucatan,Tixkokob,2013,progresivo,7,10000.0,false,
 31093,Yucatan,Tixkokob,2014,progresivo,7,10000.0,false,
 31093,Yucatan,Tixkokob,2015,progresivo,6,15500.0,false,
-31093,Yucatan,Tixkokob,2016,otro_no_clasificado,,,false,
+31093,Yucatan,Tixkokob,2016,progresivo,6,15500.0,audit_directed[from_2015],2015
 31093,Yucatan,Tixkokob,2017,mixto,6,15500.0,false,
 31093,Yucatan,Tixkokob,2018,progresivo,6,15500.0,false,
 31093,Yucatan,Tixkokob,2019,mixto,6,15500.0,false,
@@ -9664,9 +11677,9 @@ cvegeo,estado,municipio,ejercicio,tipo_esquema,numero_rangos,monto_max_rango,imp
 31097,Yucatan,Tunkas,2020,progresivo,7,20000.0,false,
 31097,Yucatan,Tunkas,2021,progresivo,7,20000.0,false,
 31097,Yucatan,Tunkas,2022,progresivo,7,20000.0,false,
-31097,Yucatan,Tunkas,2023,otro_no_clasificado,,,false,
+31097,Yucatan,Tunkas,2023,progresivo,,,tipo_only_fill,2022
 31097,Yucatan,Tunkas,2024,progresivo,4,1000000.0,false,
-31097,Yucatan,Tunkas,2025,otro_no_clasificado,,,false,
+31097,Yucatan,Tunkas,2025,progresivo,,,ffill,2024
 31098,Yucatan,Tzucacab,2010,progresivo,7,10000.0,false,
 31098,Yucatan,Tzucacab,2011,progresivo,7,10000.0,false,
 31098,Yucatan,Tzucacab,2012,progresivo,7,10000.0,confirmed_fill,2011
@@ -9680,8 +11693,8 @@ cvegeo,estado,municipio,ejercicio,tipo_esquema,numero_rangos,monto_max_rango,imp
 31098,Yucatan,Tzucacab,2020,otro_no_clasificado,,,false,
 31098,Yucatan,Tzucacab,2021,otro_no_clasificado,,,false,
 31098,Yucatan,Tzucacab,2022,tasa_unica,,,false,
-31098,Yucatan,Tzucacab,2023,mixto,2,200000.0,false,
-31098,Yucatan,Tzucacab,2024,mixto,2,200000.0,false,
+31098,Yucatan,Tzucacab,2023,tasa_unica,,,confirmed_fill,2022
+31098,Yucatan,Tzucacab,2024,tasa_unica,,,confirmed_fill,2022
 31098,Yucatan,Tzucacab,2025,tasa_unica,,,false,
 31099,Yucatan,Uayma,2010,otro_no_clasificado,,,false,
 31099,Yucatan,Uayma,2011,otro_no_clasificado,,,false,
@@ -9746,14 +11759,14 @@ cvegeo,estado,municipio,ejercicio,tipo_esquema,numero_rangos,monto_max_rango,imp
 31102,Yucatan,Valladolid,2022,progresivo,,,false,
 31102,Yucatan,Valladolid,2023,progresivo,,,false,
 31102,Yucatan,Valladolid,2024,progresivo,,,false,
-31102,Yucatan,Valladolid,2025,desconocido,,,false,
+31102,Yucatan,Valladolid,2025,progresivo,,,ffill,2024
 31103,Yucatan,Xocchel,2010,mixto,7,10000.0,false,
 31103,Yucatan,Xocchel,2011,mixto,7,10000.0,false,
 31103,Yucatan,Xocchel,2012,progresivo,7,10000.0,false,
 31103,Yucatan,Xocchel,2013,mixto,7,10000.0,false,
 31103,Yucatan,Xocchel,2014,progresivo,7,10000.0,false,
 31103,Yucatan,Xocchel,2015,progresivo,7,10000.0,false,
-31103,Yucatan,Xocchel,2016,otro_no_clasificado,,,false,
+31103,Yucatan,Xocchel,2016,progresivo,7,10000.0,audit_directed[from_2015],2015
 31103,Yucatan,Xocchel,2017,mixto,7,10000.0,false,
 31103,Yucatan,Xocchel,2018,mixto,7,10000.0,false,
 31103,Yucatan,Xocchel,2019,progresivo,7,10000.0,false,
@@ -9769,7 +11782,7 @@ cvegeo,estado,municipio,ejercicio,tipo_esquema,numero_rangos,monto_max_rango,imp
 31104,Yucatan,Yaxcaba,2013,progresivo,7,10000.0,false,
 31104,Yucatan,Yaxcaba,2014,progresivo,7,10000.0,false,
 31104,Yucatan,Yaxcaba,2015,mixto,7,10000.0,false,
-31104,Yucatan,Yaxcaba,2016,otro_no_clasificado,,,false,
+31104,Yucatan,Yaxcaba,2016,mixto,7,10000.0,audit_directed[from_2015],2015
 31104,Yucatan,Yaxcaba,2017,progresivo,7,10000.0,false,
 31104,Yucatan,Yaxcaba,2018,progresivo,7,10000.0,false,
 31104,Yucatan,Yaxcaba,2019,progresivo,7,10000.0,false,

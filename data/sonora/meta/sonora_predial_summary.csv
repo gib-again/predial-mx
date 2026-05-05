@@ -1,0 +1,558 @@
+﻿municipio_slug,municipio_nombre,anio,tipo_esquema,esquema_valido,n_tarifa_rows,n_prog_rows,n_tasa_unica_rows,n_cuota_fija_rows,n_mixta_rows,anomalias,json_path
+aconchi,Aconchi,2011,tarifa_millar,True,21,0,0,0,0,,data\sonora\json_predial\2011\SON_PREDIAL_2011_aconchi.json
+aconchi,Aconchi,2012,progresivo,True,0,11,0,0,0,cambio_esquema_tarifa_millar_a_progresivo_desde_2011,data\sonora\json_predial\2012\SON_PREDIAL_2012_aconchi.json
+aconchi,Aconchi,2013,progresivo,True,0,11,0,0,0,,data\sonora\json_predial\2013\SON_PREDIAL_2013_aconchi.json
+aconchi,Aconchi,2017,progresivo,True,0,10,0,0,0,,data\sonora\json_predial\2017\SON_PREDIAL_2017_aconchi.json
+aconchi,Aconchi,2018,tarifa_millar,True,8,0,0,0,0,cambio_esquema_progresivo_a_tarifa_millar_desde_2017|reclasificado_de_progresivo_a_tarifa_millar,data\sonora\json_predial\2018\SON_PREDIAL_2018_aconchi.json
+aconchi,Aconchi,2019,otro_no_clasificado,False,0,0,0,0,0,otro_no_clasificado_segmento_vacio,data\sonora\json_predial\2019\SON_PREDIAL_2019_aconchi.json
+aconchi,Aconchi,2020,progresivo,True,0,10,0,0,0,,data\sonora\json_predial\2020\SON_PREDIAL_2020_aconchi.json
+aconchi,Aconchi,2022,otro_no_clasificado,False,0,0,0,0,0,otro_no_clasificado_segmento_vacio,data\sonora\json_predial\2022\SON_PREDIAL_2022_aconchi.json
+agua_prieta,Agua Prieta,2012,progresivo,True,0,11,0,0,0,,data\sonora\json_predial\2012\SON_PREDIAL_2012_agua_prieta.json
+agua_prieta,Agua Prieta,2017,tarifa_millar,True,2,0,0,0,0,cambio_brusco_n_filas_11_a_2|cambio_esquema_progresivo_a_tarifa_millar_desde_2012|reclasificado_de_progresivo_a_tarifa_millar,data\sonora\json_predial\2017\SON_PREDIAL_2017_agua_prieta.json
+agua_prieta,Agua Prieta,2019,progresivo,True,0,11,0,0,0,cambio_brusco_n_filas_2_a_11|cambio_esquema_tarifa_millar_a_progresivo_desde_2017,data\sonora\json_predial\2019\SON_PREDIAL_2019_agua_prieta.json
+agua_prieta,Agua Prieta,2020,tarifa_millar,True,2,0,0,0,0,cambio_brusco_n_filas_11_a_2|cambio_esquema_progresivo_a_tarifa_millar_desde_2019|reclasificado_de_progresivo_a_tarifa_millar,data\sonora\json_predial\2020\SON_PREDIAL_2020_agua_prieta.json
+agua_prieta,Agua Prieta,2023,tarifa_millar,True,2,0,0,0,0,reclasificado_de_progresivo_a_tarifa_millar,data\sonora\json_predial\2023\SON_PREDIAL_2023_agua_prieta.json
+agua_prieta,Agua Prieta,2024,progresivo,True,0,11,0,0,0,cambio_brusco_n_filas_2_a_11|cambio_esquema_tarifa_millar_a_progresivo_desde_2023,data\sonora\json_predial\2024\SON_PREDIAL_2024_agua_prieta.json
+agua_prieta,Agua Prieta,2025,progresivo,True,0,11,0,0,0,,data\sonora\json_predial\2025\SON_PREDIAL_2025_agua_prieta.json
+alamos,Alamos,2010,tarifa_millar,True,1,0,0,0,0,reclasificado_de_progresivo_a_tarifa_millar,data\sonora\json_predial\2010\SON_PREDIAL_2010_alamos.json
+alamos,Alamos,2012,progresivo,True,0,11,0,0,0,cambio_brusco_n_filas_1_a_11|cambio_esquema_tarifa_millar_a_progresivo_desde_2010,data\sonora\json_predial\2012\SON_PREDIAL_2012_alamos.json
+alamos,Alamos,2013,tarifa_millar,True,16,0,0,0,0,cambio_esquema_progresivo_a_tarifa_millar_desde_2012|reclasificado_de_progresivo_a_tarifa_millar,data\sonora\json_predial\2013\SON_PREDIAL_2013_alamos.json
+alamos,Alamos,2017,progresivo,True,0,11,0,0,0,cambio_esquema_tarifa_millar_a_progresivo_desde_2013,data\sonora\json_predial\2017\SON_PREDIAL_2017_alamos.json
+alamos,Alamos,2018,progresivo,True,0,11,0,0,0,,data\sonora\json_predial\2018\SON_PREDIAL_2018_alamos.json
+alamos,Alamos,2021,progresivo,True,0,12,0,0,0,,data\sonora\json_predial\2021\SON_PREDIAL_2021_alamos.json
+alamos,Alamos,2023,progresivo,True,0,12,0,0,0,,data\sonora\json_predial\2023\SON_PREDIAL_2023_alamos.json
+alamos,Alamos,2024,progresivo,True,0,12,0,0,0,,data\sonora\json_predial\2024\SON_PREDIAL_2024_alamos.json
+alamos,Alamos,2025,progresivo,True,0,12,0,0,0,,data\sonora\json_predial\2025\SON_PREDIAL_2025_alamos.json
+alil,Alil,2024,otro_no_clasificado,False,0,0,0,0,0,otro_no_clasificado_segmento_vacio,data\sonora\json_predial\2024\SON_PREDIAL_2024_alil.json
+altar,Altar,2012,progresivo,True,0,6,0,0,0,,data\sonora\json_predial\2012\SON_PREDIAL_2012_altar.json
+altar,Altar,2017,progresivo,True,0,11,0,0,0,,data\sonora\json_predial\2017\SON_PREDIAL_2017_altar.json
+altar,Altar,2018,tarifa_millar,True,12,0,0,0,0,cambio_esquema_progresivo_a_tarifa_millar_desde_2017|reclasificado_de_progresivo_a_tarifa_millar,data\sonora\json_predial\2018\SON_PREDIAL_2018_altar.json
+altar,Altar,2019,tarifa_millar,True,13,0,0,0,0,reclasificado_de_progresivo_a_tarifa_millar,data\sonora\json_predial\2019\SON_PREDIAL_2019_altar.json
+altar,Altar,2020,tarifa_millar,True,12,0,0,0,0,reclasificado_de_progresivo_a_tarifa_millar,data\sonora\json_predial\2020\SON_PREDIAL_2020_altar.json
+altar,Altar,2021,otro_no_clasificado,False,0,0,0,0,0,otro_no_clasificado_segmento_vacio,data\sonora\json_predial\2021\SON_PREDIAL_2021_altar.json
+altar,Altar,2024,tarifa_millar,True,11,0,0,0,0,reclasificado_de_progresivo_a_tarifa_millar,data\sonora\json_predial\2024\SON_PREDIAL_2024_altar.json
+altar,Altar,2025,otro_no_clasificado,False,0,0,0,0,0,otro_no_clasificado_segmento_vacio,data\sonora\json_predial\2025\SON_PREDIAL_2025_altar.json
+arivechi,Arivechi,2013,tarifa_millar,True,9,0,0,0,0,reclasificado_de_progresivo_a_tarifa_millar,data\sonora\json_predial\2013\SON_PREDIAL_2013_arivechi.json
+arivechi,Arivechi,2017,tarifa_millar,True,2,0,0,0,0,cambio_brusco_n_filas_9_a_2|reclasificado_de_progresivo_a_tarifa_millar,data\sonora\json_predial\2017\SON_PREDIAL_2017_arivechi.json
+arivechi,Arivechi,2018,progresivo,True,0,6,0,0,0,cambio_brusco_n_filas_2_a_6|cambio_esquema_tarifa_millar_a_progresivo_desde_2017,data\sonora\json_predial\2018\SON_PREDIAL_2018_arivechi.json
+arivechi,Arivechi,2019,progresivo,True,0,11,0,0,0,,data\sonora\json_predial\2019\SON_PREDIAL_2019_arivechi.json
+arivechi,Arivechi,2020,progresivo,True,0,6,0,0,0,,data\sonora\json_predial\2020\SON_PREDIAL_2020_arivechi.json
+arivechi,Arivechi,2022,otro_no_clasificado,False,0,0,0,0,0,otro_no_clasificado_segmento_vacio,data\sonora\json_predial\2022\SON_PREDIAL_2022_arivechi.json
+arivechi,Arivechi,2023,tarifa_millar,True,2,0,0,0,0,reclasificado_de_progresivo_a_tarifa_millar,data\sonora\json_predial\2023\SON_PREDIAL_2023_arivechi.json
+arizpe,Arizpe,2010,progresivo,True,0,9,0,0,0,,data\sonora\json_predial\2010\SON_PREDIAL_2010_arizpe.json
+arizpe,Arizpe,2013,progresivo,True,0,11,0,0,0,,data\sonora\json_predial\2013\SON_PREDIAL_2013_arizpe.json
+arizpe,Arizpe,2017,progresivo,True,0,11,0,0,0,,data\sonora\json_predial\2017\SON_PREDIAL_2017_arizpe.json
+arizpe,Arizpe,2018,progresivo,True,0,11,0,0,0,,data\sonora\json_predial\2018\SON_PREDIAL_2018_arizpe.json
+arizpe,Arizpe,2023,tarifa_millar,True,8,0,0,0,0,cambio_esquema_progresivo_a_tarifa_millar_desde_2018|reclasificado_de_progresivo_a_tarifa_millar,data\sonora\json_predial\2023\SON_PREDIAL_2023_arizpe.json
+arjzpe,Arjzpe,2020,progresivo,True,0,11,0,0,0,,data\sonora\json_predial\2020\SON_PREDIAL_2020_arjzpe.json
+atil,Atil,2010,progresivo,True,0,5,0,0,0,,data\sonora\json_predial\2010\SON_PREDIAL_2010_atil.json
+atil,Atil,2012,progresivo,True,0,5,0,0,0,,data\sonora\json_predial\2012\SON_PREDIAL_2012_atil.json
+atil,Atil,2013,progresivo,True,0,5,0,0,0,,data\sonora\json_predial\2013\SON_PREDIAL_2013_atil.json
+atil,Atil,2016,tarifa_millar,True,7,0,0,0,0,cambio_esquema_progresivo_a_tarifa_millar_desde_2013|reclasificado_de_progresivo_a_tarifa_millar,data\sonora\json_predial\2016\SON_PREDIAL_2016_atil.json
+atil,Atil,2017,progresivo,True,0,5,0,0,0,cambio_esquema_tarifa_millar_a_progresivo_desde_2016,data\sonora\json_predial\2017\SON_PREDIAL_2017_atil.json
+atil,Atil,2018,tarifa_millar,True,2,0,0,0,0,cambio_brusco_n_filas_5_a_2|cambio_esquema_progresivo_a_tarifa_millar_desde_2017|reclasificado_de_progresivo_a_tarifa_millar,data\sonora\json_predial\2018\SON_PREDIAL_2018_atil.json
+atil,Atil,2020,progresivo,True,0,5,0,0,0,cambio_brusco_n_filas_2_a_5|cambio_esquema_tarifa_millar_a_progresivo_desde_2018,data\sonora\json_predial\2020\SON_PREDIAL_2020_atil.json
+atil,Atil,2021,progresivo,True,0,5,0,0,0,,data\sonora\json_predial\2021\SON_PREDIAL_2021_atil.json
+atil,Atil,2022,otro_no_clasificado,False,0,0,0,0,0,otro_no_clasificado_segmento_vacio,data\sonora\json_predial\2022\SON_PREDIAL_2022_atil.json
+atil,Atil,2023,tarifa_millar,True,22,0,0,0,0,,data\sonora\json_predial\2023\SON_PREDIAL_2023_atil.json
+bacadehuachi,Bacadehuachi,2013,progresivo,True,0,11,0,0,0,,data\sonora\json_predial\2013\SON_PREDIAL_2013_bacadehuachi.json
+bacadehuachi,Bacadehuachi,2017,tarifa_millar,True,10,0,0,0,0,cambio_esquema_progresivo_a_tarifa_millar_desde_2013|reclasificado_de_progresivo_a_tarifa_millar,data\sonora\json_predial\2017\SON_PREDIAL_2017_bacadehuachi.json
+bacadehuachi,Bacadehuachi,2018,progresivo,True,0,11,0,0,0,cambio_esquema_tarifa_millar_a_progresivo_desde_2017,data\sonora\json_predial\2018\SON_PREDIAL_2018_bacadehuachi.json
+bacadehuachi,Bacadehuachi,2020,otro_no_clasificado,False,0,0,0,0,0,otro_no_clasificado_segmento_vacio,data\sonora\json_predial\2020\SON_PREDIAL_2020_bacadehuachi.json
+bacadehuachi,Bacadehuachi,2022,otro_no_clasificado,False,0,0,0,0,0,otro_no_clasificado_segmento_vacio,data\sonora\json_predial\2022\SON_PREDIAL_2022_bacadehuachi.json
+bacadehuachi,Bacadehuachi,2023,progresivo,True,0,11,0,0,0,,data\sonora\json_predial\2023\SON_PREDIAL_2023_bacadehuachi.json
+bacadehuachi,Bacadehuachi,2025,otro_no_clasificado,False,0,0,0,0,0,otro_no_clasificado_segmento_vacio,data\sonora\json_predial\2025\SON_PREDIAL_2025_bacadehuachi.json
+bacanora,Bacanora,2010,progresivo,True,0,5,0,0,0,,data\sonora\json_predial\2010\SON_PREDIAL_2010_bacanora.json
+bacanora,Bacanora,2012,otro_no_clasificado,False,0,0,0,0,0,otro_no_clasificado_estructura_no_estandar,data\sonora\json_predial\2012\SON_PREDIAL_2012_bacanora.json
+bacanora,Bacanora,2017,progresivo,True,0,5,0,0,0,,data\sonora\json_predial\2017\SON_PREDIAL_2017_bacanora.json
+bacanora,Bacanora,2018,tarifa_millar,True,9,0,0,0,0,cambio_esquema_progresivo_a_tarifa_millar_desde_2017|reclasificado_de_progresivo_a_tarifa_millar,data\sonora\json_predial\2018\SON_PREDIAL_2018_bacanora.json
+bacanora,Bacanora,2019,tarifa_millar,True,9,0,0,0,0,reclasificado_de_progresivo_a_tarifa_millar,data\sonora\json_predial\2019\SON_PREDIAL_2019_bacanora.json
+bacanora,Bacanora,2020,progresivo,True,0,5,0,0,0,cambio_esquema_tarifa_millar_a_progresivo_desde_2019,data\sonora\json_predial\2020\SON_PREDIAL_2020_bacanora.json
+bacerac,Bacerac,2012,otro_no_clasificado,False,0,0,0,0,0,otro_no_clasificado_estructura_no_estandar,data\sonora\json_predial\2012\SON_PREDIAL_2012_bacerac.json
+bacerac,Bacerac,2017,tarifa_millar,True,9,0,0,0,0,reclasificado_de_progresivo_a_tarifa_millar,data\sonora\json_predial\2017\SON_PREDIAL_2017_bacerac.json
+bacerac,Bacerac,2018,progresivo,True,0,11,0,0,0,cambio_esquema_tarifa_millar_a_progresivo_desde_2017,data\sonora\json_predial\2018\SON_PREDIAL_2018_bacerac.json
+bacerac,Bacerac,2019,progresivo,True,0,11,0,0,0,,data\sonora\json_predial\2019\SON_PREDIAL_2019_bacerac.json
+bacerac,Bacerac,2020,progresivo,True,0,11,0,0,0,,data\sonora\json_predial\2020\SON_PREDIAL_2020_bacerac.json
+bacerac,Bacerac,2021,tarifa_millar,True,16,0,0,0,0,cambio_esquema_progresivo_a_tarifa_millar_desde_2020|reclasificado_de_progresivo_a_tarifa_millar,data\sonora\json_predial\2021\SON_PREDIAL_2021_bacerac.json
+bacerac,Bacerac,2023,progresivo,True,0,11,0,0,0,cambio_esquema_tarifa_millar_a_progresivo_desde_2021,data\sonora\json_predial\2023\SON_PREDIAL_2023_bacerac.json
+bacerac,Bacerac,2025,tarifa_millar,True,18,0,0,0,0,cambio_esquema_progresivo_a_tarifa_millar_desde_2023|reclasificado_de_progresivo_a_tarifa_millar,data\sonora\json_predial\2025\SON_PREDIAL_2025_bacerac.json
+bacoachi,Bacoachi,2017,progresivo,True,0,6,0,0,0,,data\sonora\json_predial\2017\SON_PREDIAL_2017_bacoachi.json
+bacoachi,Bacoachi,2018,tarifa_millar,True,1,0,0,0,0,cambio_brusco_n_filas_6_a_1|cambio_esquema_progresivo_a_tarifa_millar_desde_2017|reclasificado_de_progresivo_a_tarifa_millar,data\sonora\json_predial\2018\SON_PREDIAL_2018_bacoachi.json
+bacoachi,Bacoachi,2020,tarifa_millar,True,10,0,0,0,0,cambio_brusco_n_filas_1_a_10|reclasificado_de_progresivo_a_tarifa_millar,data\sonora\json_predial\2020\SON_PREDIAL_2020_bacoachi.json
+bacoachi,Bacoachi,2022,tarifa_millar,True,8,0,0,0,0,reclasificado_de_progresivo_a_tarifa_millar,data\sonora\json_predial\2022\SON_PREDIAL_2022_bacoachi.json
+bacoachi,Bacoachi,2023,tarifa_millar,True,2,0,0,0,0,cambio_brusco_n_filas_8_a_2|reclasificado_de_progresivo_a_tarifa_millar,data\sonora\json_predial\2023\SON_PREDIAL_2023_bacoachi.json
+bacoachi,Bacoachi,2024,progresivo,True,0,6,0,0,0,cambio_brusco_n_filas_2_a_6|cambio_esquema_tarifa_millar_a_progresivo_desde_2023,data\sonora\json_predial\2024\SON_PREDIAL_2024_bacoachi.json
+bacoachi,Bacoachi,2025,tarifa_millar,True,16,0,0,0,0,cambio_brusco_n_filas_6_a_16|cambio_esquema_progresivo_a_tarifa_millar_desde_2024|reclasificado_de_progresivo_a_tarifa_millar,data\sonora\json_predial\2025\SON_PREDIAL_2025_bacoachi.json
+bacum,Bacum,2012,tarifa_millar,True,13,0,0,0,0,reclasificado_de_progresivo_a_tarifa_millar,data\sonora\json_predial\2012\SON_PREDIAL_2012_bacum.json
+bacum,Bacum,2013,tarifa_millar,True,8,0,0,0,0,reclasificado_de_progresivo_a_tarifa_millar,data\sonora\json_predial\2013\SON_PREDIAL_2013_bacum.json
+bacum,Bacum,2017,progresivo,True,0,9,0,0,0,cambio_esquema_tarifa_millar_a_progresivo_desde_2013,data\sonora\json_predial\2017\SON_PREDIAL_2017_bacum.json
+bacum,Bacum,2018,progresivo,True,0,9,0,0,0,,data\sonora\json_predial\2018\SON_PREDIAL_2018_bacum.json
+bacum,Bacum,2019,progresivo,True,0,9,0,0,0,,data\sonora\json_predial\2019\SON_PREDIAL_2019_bacum.json
+bacum,Bacum,2020,tarifa_millar,True,12,0,0,0,0,cambio_esquema_progresivo_a_tarifa_millar_desde_2019|reclasificado_de_progresivo_a_tarifa_millar,data\sonora\json_predial\2020\SON_PREDIAL_2020_bacum.json
+bacum,Bacum,2023,tarifa_millar,True,8,0,0,0,0,reclasificado_de_progresivo_a_tarifa_millar,data\sonora\json_predial\2023\SON_PREDIAL_2023_bacum.json
+bacum,Bacum,2025,tarifa_millar,True,18,0,0,0,0,cambio_brusco_n_filas_8_a_18|reclasificado_de_progresivo_a_tarifa_millar,data\sonora\json_predial\2025\SON_PREDIAL_2025_bacum.json
+banamichi,Banamichi,2012,progresivo,True,0,7,0,0,0,,data\sonora\json_predial\2012\SON_PREDIAL_2012_banamichi.json
+banamichi,Banamichi,2013,tarifa_millar,True,18,0,0,0,0,cambio_brusco_n_filas_7_a_18|cambio_esquema_progresivo_a_tarifa_millar_desde_2012,data\sonora\json_predial\2013\SON_PREDIAL_2013_banamichi.json
+banamichi,Banamichi,2017,progresivo,True,0,7,0,0,0,cambio_brusco_n_filas_18_a_7|cambio_esquema_tarifa_millar_a_progresivo_desde_2013,data\sonora\json_predial\2017\SON_PREDIAL_2017_banamichi.json
+banamichi,Banamichi,2018,tarifa_millar,True,11,0,0,0,0,cambio_esquema_progresivo_a_tarifa_millar_desde_2017|reclasificado_de_progresivo_a_tarifa_millar,data\sonora\json_predial\2018\SON_PREDIAL_2018_banamichi.json
+banamichi,Banamichi,2019,otro_no_clasificado,False,0,0,0,0,0,otro_no_clasificado_segmento_vacio,data\sonora\json_predial\2019\SON_PREDIAL_2019_banamichi.json
+banamichi,Banamichi,2023,progresivo,True,0,7,0,0,0,,data\sonora\json_predial\2023\SON_PREDIAL_2023_banamichi.json
+baviacora,Baviacora,2017,tarifa_millar,True,15,0,0,0,0,reclasificado_de_progresivo_a_tarifa_millar,data\sonora\json_predial\2017\SON_PREDIAL_2017_baviacora.json
+baviacora,Baviacora,2019,progresivo,True,0,8,0,0,0,cambio_esquema_tarifa_millar_a_progresivo_desde_2017,data\sonora\json_predial\2019\SON_PREDIAL_2019_baviacora.json
+baviacora,Baviacora,2020,tarifa_millar,True,1,0,0,0,0,cambio_brusco_n_filas_8_a_1|cambio_esquema_progresivo_a_tarifa_millar_desde_2019|reclasificado_de_progresivo_a_tarifa_millar,data\sonora\json_predial\2020\SON_PREDIAL_2020_baviacora.json
+baviacora,Baviacora,2023,tarifa_millar,True,8,0,0,0,0,cambio_brusco_n_filas_1_a_8|reclasificado_de_progresivo_a_tarifa_millar,data\sonora\json_predial\2023\SON_PREDIAL_2023_baviacora.json
+baviacora,Baviacora,2024,otro_no_clasificado,False,0,0,0,0,0,otro_no_clasificado_segmento_vacio,data\sonora\json_predial\2024\SON_PREDIAL_2024_baviacora.json
+baviacora,Baviacora,2025,otro_no_clasificado,False,0,0,0,0,0,otro_no_clasificado_segmento_vacio,data\sonora\json_predial\2025\SON_PREDIAL_2025_baviacora.json
+bavispe,Bavispe,2010,tarifa_millar,True,8,0,0,0,0,,data\sonora\json_predial\2010\SON_PREDIAL_2010_bavispe.json
+bavispe,Bavispe,2012,tarifa_millar,True,14,0,0,0,0,,data\sonora\json_predial\2012\SON_PREDIAL_2012_bavispe.json
+bavispe,Bavispe,2017,progresivo,True,0,5,0,0,0,cambio_brusco_n_filas_14_a_5|cambio_esquema_tarifa_millar_a_progresivo_desde_2012,data\sonora\json_predial\2017\SON_PREDIAL_2017_bavispe.json
+bavispe,Bavispe,2018,tarifa_millar,True,1,0,0,0,0,cambio_brusco_n_filas_5_a_1|cambio_esquema_progresivo_a_tarifa_millar_desde_2017|reclasificado_de_progresivo_a_tarifa_millar,data\sonora\json_predial\2018\SON_PREDIAL_2018_bavispe.json
+bavispe,Bavispe,2020,tarifa_millar,True,9,0,0,0,0,cambio_brusco_n_filas_1_a_9|reclasificado_de_progresivo_a_tarifa_millar,data\sonora\json_predial\2020\SON_PREDIAL_2020_bavispe.json
+bavispe,Bavispe,2024,tarifa_millar,True,9,0,0,0,0,reclasificado_de_progresivo_a_tarifa_millar,data\sonora\json_predial\2024\SON_PREDIAL_2024_bavispe.json
+bavispe,Bavispe,2025,tarifa_millar,True,9,0,0,0,0,reclasificado_de_progresivo_a_tarifa_millar,data\sonora\json_predial\2025\SON_PREDIAL_2025_bavispe.json
+benito_juarez,Benito Juarez,2010,progresivo,True,0,11,0,0,0,,data\sonora\json_predial\2010\SON_PREDIAL_2010_benito_juarez.json
+benito_juarez,Benito Juarez,2012,otro_no_clasificado,False,0,0,0,0,0,otro_no_clasificado_estructura_no_estandar,data\sonora\json_predial\2012\SON_PREDIAL_2012_benito_juarez.json
+benito_juarez,Benito Juarez,2013,progresivo,True,0,11,0,0,0,,data\sonora\json_predial\2013\SON_PREDIAL_2013_benito_juarez.json
+benito_juarez,Benito Juarez,2017,progresivo,True,0,11,0,0,0,,data\sonora\json_predial\2017\SON_PREDIAL_2017_benito_juarez.json
+benito_juarez,Benito Juarez,2018,progresivo,True,0,11,0,0,0,,data\sonora\json_predial\2018\SON_PREDIAL_2018_benito_juarez.json
+benito_juarez,Benito Juarez,2019,tarifa_millar,True,3,0,0,0,0,cambio_brusco_n_filas_11_a_3|cambio_esquema_progresivo_a_tarifa_millar_desde_2018,data\sonora\json_predial\2019\SON_PREDIAL_2019_benito_juarez.json
+benito_juarez,Benito Juarez,2020,progresivo,True,0,11,0,0,0,cambio_brusco_n_filas_3_a_11|cambio_esquema_tarifa_millar_a_progresivo_desde_2019,data\sonora\json_predial\2020\SON_PREDIAL_2020_benito_juarez.json
+benito_juarez,Benito Juarez,2021,tarifa_millar,True,3,0,0,0,0,cambio_brusco_n_filas_11_a_3|cambio_esquema_progresivo_a_tarifa_millar_desde_2020|reclasificado_de_progresivo_a_tarifa_millar,data\sonora\json_predial\2021\SON_PREDIAL_2021_benito_juarez.json
+benito_juarez,Benito Juarez,2022,progresivo,True,0,11,0,0,0,cambio_brusco_n_filas_3_a_11|cambio_esquema_tarifa_millar_a_progresivo_desde_2021,data\sonora\json_predial\2022\SON_PREDIAL_2022_benito_juarez.json
+benito_juarez,Benito Juarez,2023,progresivo,True,0,11,0,0,0,,data\sonora\json_predial\2023\SON_PREDIAL_2023_benito_juarez.json
+benito_juarez,Benito Juarez,2024,progresivo,True,0,11,0,0,0,,data\sonora\json_predial\2024\SON_PREDIAL_2024_benito_juarez.json
+benito_juarez,Benito Juarez,2025,progresivo,True,0,11,0,0,0,,data\sonora\json_predial\2025\SON_PREDIAL_2025_benito_juarez.json
+benjamin_hill,Benjamin Hill,2011,progresivo,True,0,11,0,0,0,,data\sonora\json_predial\2011\SON_PREDIAL_2011_benjamin_hill.json
+benjamin_hill,Benjamin Hill,2016,tarifa_millar,True,8,0,0,0,0,cambio_esquema_progresivo_a_tarifa_millar_desde_2011|reclasificado_de_mixto_a_tarifa_millar,data\sonora\json_predial\2016\SON_PREDIAL_2016_benjamin_hill.json
+benjamin_hill,Benjamin Hill,2017,progresivo,True,0,11,0,0,0,cambio_esquema_tarifa_millar_a_progresivo_desde_2016,data\sonora\json_predial\2017\SON_PREDIAL_2017_benjamin_hill.json
+benjamin_hill,Benjamin Hill,2018,progresivo,True,0,11,0,0,0,,data\sonora\json_predial\2018\SON_PREDIAL_2018_benjamin_hill.json
+benjamin_hill,Benjamin Hill,2020,tarifa_millar,True,16,0,0,0,0,cambio_esquema_progresivo_a_tarifa_millar_desde_2018|reclasificado_de_progresivo_a_tarifa_millar,data\sonora\json_predial\2020\SON_PREDIAL_2020_benjamin_hill.json
+benjamin_hill,Benjamin Hill,2021,tarifa_millar,True,2,0,0,0,0,cambio_brusco_n_filas_16_a_2|reclasificado_de_progresivo_a_tarifa_millar,data\sonora\json_predial\2021\SON_PREDIAL_2021_benjamin_hill.json
+benjamin_hill,Benjamin Hill,2023,progresivo,True,0,11,0,0,0,cambio_brusco_n_filas_2_a_11|cambio_esquema_tarifa_millar_a_progresivo_desde_2021,data\sonora\json_predial\2023\SON_PREDIAL_2023_benjamin_hill.json
+benjamin_hill,Benjamin Hill,2024,otro_no_clasificado,False,0,0,0,0,0,otro_no_clasificado_segmento_vacio,data\sonora\json_predial\2024\SON_PREDIAL_2024_benjamin_hill.json
+benjamin_hill,Benjamin Hill,2025,otro_no_clasificado,False,0,0,0,0,0,otro_no_clasificado_segmento_vacio,data\sonora\json_predial\2025\SON_PREDIAL_2025_benjamin_hill.json
+benjamjn_hjll,Benjamjn Hjll,2019,progresivo,True,0,11,0,0,0,,data\sonora\json_predial\2019\SON_PREDIAL_2019_benjamjn_hjll.json
+caborca,Caborca,2012,tarifa_millar,True,16,0,0,0,0,reclasificado_de_progresivo_a_tarifa_millar,data\sonora\json_predial\2012\SON_PREDIAL_2012_caborca.json
+caborca,Caborca,2017,progresivo,True,0,11,0,0,0,cambio_esquema_tarifa_millar_a_progresivo_desde_2012,data\sonora\json_predial\2017\SON_PREDIAL_2017_caborca.json
+caborca,Caborca,2018,tarifa_millar,True,16,0,0,0,0,cambio_esquema_progresivo_a_tarifa_millar_desde_2017|reclasificado_de_progresivo_a_tarifa_millar,data\sonora\json_predial\2018\SON_PREDIAL_2018_caborca.json
+caborca,Caborca,2020,progresivo,True,0,11,0,0,0,cambio_esquema_tarifa_millar_a_progresivo_desde_2018,data\sonora\json_predial\2020\SON_PREDIAL_2020_caborca.json
+caborca,Caborca,2022,tarifa_millar,True,4,0,0,0,0,cambio_brusco_n_filas_11_a_4|cambio_esquema_progresivo_a_tarifa_millar_desde_2020|reclasificado_de_progresivo_a_tarifa_millar,data\sonora\json_predial\2022\SON_PREDIAL_2022_caborca.json
+caborca,Caborca,2023,progresivo,True,0,11,0,0,0,cambio_brusco_n_filas_4_a_11|cambio_esquema_tarifa_millar_a_progresivo_desde_2022,data\sonora\json_predial\2023\SON_PREDIAL_2023_caborca.json
+caborca,Caborca,2024,progresivo,True,0,11,0,0,0,,data\sonora\json_predial\2024\SON_PREDIAL_2024_caborca.json
+caborca,Caborca,2025,progresivo,True,0,11,0,0,0,,data\sonora\json_predial\2025\SON_PREDIAL_2025_caborca.json
+cajeme,Cajeme,2012,tarifa_millar,True,2,0,0,0,0,,data\sonora\json_predial\2012\SON_PREDIAL_2012_cajeme.json
+cajeme,Cajeme,2017,tarifa_millar,True,2,0,0,0,0,,data\sonora\json_predial\2017\SON_PREDIAL_2017_cajeme.json
+cajeme,Cajeme,2018,tarifa_millar,True,2,0,0,0,0,,data\sonora\json_predial\2018\SON_PREDIAL_2018_cajeme.json
+cajeme,Cajeme,2019,progresivo,True,0,11,0,0,0,cambio_brusco_n_filas_2_a_11|cambio_esquema_tarifa_millar_a_progresivo_desde_2018,data\sonora\json_predial\2019\SON_PREDIAL_2019_cajeme.json
+cajeme,Cajeme,2022,otro_no_clasificado,False,0,0,0,0,0,otro_no_clasificado_segmento_vacio,data\sonora\json_predial\2022\SON_PREDIAL_2022_cajeme.json
+cajeme,Cajeme,2023,otro_no_clasificado,False,0,0,0,0,0,otro_no_clasificado_segmento_vacio,data\sonora\json_predial\2023\SON_PREDIAL_2023_cajeme.json
+cajeme,Cajeme,2024,otro_no_clasificado,False,0,0,0,0,0,otro_no_clasificado_segmento_vacio,data\sonora\json_predial\2024\SON_PREDIAL_2024_cajeme.json
+cajeme,Cajeme,2025,progresivo,True,0,9,0,0,0,,data\sonora\json_predial\2025\SON_PREDIAL_2025_cajeme.json
+cananea,Cananea,2012,progresivo,True,0,11,0,0,0,,data\sonora\json_predial\2012\SON_PREDIAL_2012_cananea.json
+cananea,Cananea,2013,otro_no_clasificado,False,0,0,0,0,0,otro_no_clasificado_segmento_vacio,data\sonora\json_predial\2013\SON_PREDIAL_2013_cananea.json
+cananea,Cananea,2017,progresivo,True,0,11,0,0,0,,data\sonora\json_predial\2017\SON_PREDIAL_2017_cananea.json
+cananea,Cananea,2018,progresivo,True,0,11,0,0,0,,data\sonora\json_predial\2018\SON_PREDIAL_2018_cananea.json
+cananea,Cananea,2021,progresivo,True,0,11,0,0,0,,data\sonora\json_predial\2021\SON_PREDIAL_2021_cananea.json
+cananea,Cananea,2023,tarifa_millar,True,13,0,0,0,0,cambio_esquema_progresivo_a_tarifa_millar_desde_2021|reclasificado_de_progresivo_a_tarifa_millar,data\sonora\json_predial\2023\SON_PREDIAL_2023_cananea.json
+cananea,Cananea,2024,tarifa_millar,True,12,0,0,0,0,reclasificado_de_progresivo_a_tarifa_millar,data\sonora\json_predial\2024\SON_PREDIAL_2024_cananea.json
+carba,Carba,2025,otro_no_clasificado,False,0,0,0,0,0,otro_no_clasificado_segmento_vacio,data\sonora\json_predial\2025\SON_PREDIAL_2025_carba.json
+carbo,Carbo,2012,tarifa_millar,True,1,0,0,0,0,reclasificado_de_progresivo_a_tarifa_millar,data\sonora\json_predial\2012\SON_PREDIAL_2012_carbo.json
+carbo,Carbo,2013,progresivo,True,0,11,0,0,0,cambio_brusco_n_filas_1_a_11|cambio_esquema_tarifa_millar_a_progresivo_desde_2012,data\sonora\json_predial\2013\SON_PREDIAL_2013_carbo.json
+carbo,Carbo,2017,progresivo,True,0,11,0,0,0,,data\sonora\json_predial\2017\SON_PREDIAL_2017_carbo.json
+carbo,Carbo,2020,tarifa_millar,True,9,0,0,0,0,cambio_esquema_progresivo_a_tarifa_millar_desde_2017|reclasificado_de_progresivo_a_tarifa_millar,data\sonora\json_predial\2020\SON_PREDIAL_2020_carbo.json
+carbo,Carbo,2021,progresivo,True,0,11,0,0,0,cambio_esquema_tarifa_millar_a_progresivo_desde_2020,data\sonora\json_predial\2021\SON_PREDIAL_2021_carbo.json
+carbo,Carbo,2022,otro_no_clasificado,False,0,0,0,0,0,otro_no_clasificado_segmento_vacio,data\sonora\json_predial\2022\SON_PREDIAL_2022_carbo.json
+carbo,Carbo,2023,tarifa_millar,True,10,0,0,0,0,reclasificado_de_progresivo_a_tarifa_millar,data\sonora\json_predial\2023\SON_PREDIAL_2023_carbo.json
+carilo,Carilo,2019,progresivo,True,0,11,0,0,0,,data\sonora\json_predial\2019\SON_PREDIAL_2019_carilo.json
+cucurpe,Cucurpe,2012,tarifa_millar,True,9,0,0,0,0,reclasificado_de_progresivo_a_tarifa_millar,data\sonora\json_predial\2012\SON_PREDIAL_2012_cucurpe.json
+cucurpe,Cucurpe,2013,tarifa_millar,True,23,0,0,0,0,cambio_brusco_n_filas_9_a_23,data\sonora\json_predial\2013\SON_PREDIAL_2013_cucurpe.json
+cucurpe,Cucurpe,2017,progresivo,True,0,11,0,0,0,cambio_brusco_n_filas_23_a_11|cambio_esquema_tarifa_millar_a_progresivo_desde_2013,data\sonora\json_predial\2017\SON_PREDIAL_2017_cucurpe.json
+cucurpe,Cucurpe,2018,progresivo,True,0,11,0,0,0,,data\sonora\json_predial\2018\SON_PREDIAL_2018_cucurpe.json
+cucurpe,Cucurpe,2019,otro_no_clasificado,False,0,0,0,0,0,otro_no_clasificado_segmento_vacio,data\sonora\json_predial\2019\SON_PREDIAL_2019_cucurpe.json
+cucurpe,Cucurpe,2021,tarifa_millar,True,9,0,0,0,0,reclasificado_de_progresivo_a_tarifa_millar,data\sonora\json_predial\2021\SON_PREDIAL_2021_cucurpe.json
+cucurpe,Cucurpe,2022,otro_no_clasificado,False,0,0,0,0,0,otro_no_clasificado_segmento_vacio,data\sonora\json_predial\2022\SON_PREDIAL_2022_cucurpe.json
+cucurpe,Cucurpe,2023,progresivo,True,0,11,0,0,0,,data\sonora\json_predial\2023\SON_PREDIAL_2023_cucurpe.json
+cucurpe,Cucurpe,2025,otro_no_clasificado,False,0,0,0,0,0,otro_no_clasificado_segmento_vacio,data\sonora\json_predial\2025\SON_PREDIAL_2025_cucurpe.json
+cumpas,Cumpas,2012,tarifa_millar,True,11,0,0,0,0,reclasificado_de_progresivo_a_tarifa_millar,data\sonora\json_predial\2012\SON_PREDIAL_2012_cumpas.json
+cumpas,Cumpas,2016,progresivo,True,0,10,0,0,0,cambio_esquema_tarifa_millar_a_progresivo_desde_2012,data\sonora\json_predial\2016\SON_PREDIAL_2016_cumpas.json
+cumpas,Cumpas,2017,tarifa_millar,True,12,0,0,0,0,cambio_esquema_progresivo_a_tarifa_millar_desde_2016|reclasificado_de_progresivo_a_tarifa_millar,data\sonora\json_predial\2017\SON_PREDIAL_2017_cumpas.json
+cumpas,Cumpas,2018,tarifa_millar,True,3,0,0,0,0,cambio_brusco_n_filas_12_a_3|reclasificado_de_mixto_a_tarifa_millar,data\sonora\json_predial\2018\SON_PREDIAL_2018_cumpas.json
+cumpas,Cumpas,2020,progresivo,True,0,11,0,0,0,cambio_brusco_n_filas_3_a_11|cambio_esquema_tarifa_millar_a_progresivo_desde_2018,data\sonora\json_predial\2020\SON_PREDIAL_2020_cumpas.json
+cumpas,Cumpas,2021,tarifa_millar,True,11,0,0,0,0,cambio_esquema_progresivo_a_tarifa_millar_desde_2020|reclasificado_de_progresivo_a_tarifa_millar,data\sonora\json_predial\2021\SON_PREDIAL_2021_cumpas.json
+cumpas,Cumpas,2022,progresivo,True,0,11,0,0,0,cambio_esquema_tarifa_millar_a_progresivo_desde_2021,data\sonora\json_predial\2022\SON_PREDIAL_2022_cumpas.json
+cumpas,Cumpas,2023,progresivo,True,0,11,0,0,0,,data\sonora\json_predial\2023\SON_PREDIAL_2023_cumpas.json
+cumpas,Cumpas,2024,otro_no_clasificado,False,0,0,0,0,0,otro_no_clasificado_segmento_vacio,data\sonora\json_predial\2024\SON_PREDIAL_2024_cumpas.json
+divisaderos,Divisaderos,2010,tarifa_millar,True,2,0,0,0,0,,data\sonora\json_predial\2010\SON_PREDIAL_2010_divisaderos.json
+divisaderos,Divisaderos,2012,tarifa_millar,True,9,0,0,0,0,cambio_brusco_n_filas_2_a_9|reclasificado_de_progresivo_a_tarifa_millar,data\sonora\json_predial\2012\SON_PREDIAL_2012_divisaderos.json
+divisaderos,Divisaderos,2013,tarifa_millar,True,8,0,0,0,0,reclasificado_de_progresivo_a_tarifa_millar,data\sonora\json_predial\2013\SON_PREDIAL_2013_divisaderos.json
+divisaderos,Divisaderos,2017,tarifa_millar,True,15,0,0,0,0,reclasificado_de_progresivo_a_tarifa_millar,data\sonora\json_predial\2017\SON_PREDIAL_2017_divisaderos.json
+divisaderos,Divisaderos,2018,tarifa_millar,True,5,0,0,0,0,cambio_brusco_n_filas_15_a_5|reclasificado_de_progresivo_a_tarifa_millar,data\sonora\json_predial\2018\SON_PREDIAL_2018_divisaderos.json
+divisaderos,Divisaderos,2019,tarifa_millar,True,8,0,0,0,0,reclasificado_de_progresivo_a_tarifa_millar,data\sonora\json_predial\2019\SON_PREDIAL_2019_divisaderos.json
+divisaderos,Divisaderos,2020,cuota_fija_simple,True,0,0,0,1,0,cambio_esquema_tarifa_millar_a_cuota_fija_simple_desde_2019|reclasificado_de_cuota_fija_a_cuota_fija_simple,data\sonora\json_predial\2020\SON_PREDIAL_2020_divisaderos.json
+divisaderos,Divisaderos,2023,tarifa_millar,True,8,0,0,0,0,cambio_esquema_cuota_fija_simple_a_tarifa_millar_desde_2020|reclasificado_de_progresivo_a_tarifa_millar,data\sonora\json_predial\2023\SON_PREDIAL_2023_divisaderos.json
+divisaderos,Divisaderos,2025,otro_no_clasificado,False,0,0,0,0,0,otro_no_clasificado_segmento_vacio,data\sonora\json_predial\2025\SON_PREDIAL_2025_divisaderos.json
+empalme,Empalme,2012,progresivo,True,0,11,0,0,0,,data\sonora\json_predial\2012\SON_PREDIAL_2012_empalme.json
+empalme,Empalme,2013,progresivo,True,0,11,0,0,0,,data\sonora\json_predial\2013\SON_PREDIAL_2013_empalme.json
+empalme,Empalme,2017,progresivo,True,0,11,0,0,0,,data\sonora\json_predial\2017\SON_PREDIAL_2017_empalme.json
+empalme,Empalme,2018,tarifa_millar,True,27,0,0,0,0,cambio_brusco_n_filas_11_a_27|cambio_esquema_progresivo_a_tarifa_millar_desde_2017,data\sonora\json_predial\2018\SON_PREDIAL_2018_empalme.json
+empalme,Empalme,2022,tarifa_millar,True,1,0,0,0,0,cambio_brusco_n_filas_27_a_1|reclasificado_de_progresivo_a_tarifa_millar,data\sonora\json_predial\2022\SON_PREDIAL_2022_empalme.json
+empalme,Empalme,2023,progresivo,True,0,11,0,0,0,cambio_brusco_n_filas_1_a_11|cambio_esquema_tarifa_millar_a_progresivo_desde_2022,data\sonora\json_predial\2023\SON_PREDIAL_2023_empalme.json
+etchojoa,Etchojoa,2012,progresivo,True,0,11,0,0,0,,data\sonora\json_predial\2012\SON_PREDIAL_2012_etchojoa.json
+etchojoa,Etchojoa,2016,progresivo,True,0,11,0,0,0,,data\sonora\json_predial\2016\SON_PREDIAL_2016_etchojoa.json
+etchojoa,Etchojoa,2017,progresivo,True,0,11,0,0,0,,data\sonora\json_predial\2017\SON_PREDIAL_2017_etchojoa.json
+etchojoa,Etchojoa,2018,progresivo,True,0,11,0,0,0,,data\sonora\json_predial\2018\SON_PREDIAL_2018_etchojoa.json
+etchojoa,Etchojoa,2019,progresivo,True,0,11,0,0,0,,data\sonora\json_predial\2019\SON_PREDIAL_2019_etchojoa.json
+etchojoa,Etchojoa,2020,progresivo,True,0,11,0,0,0,,data\sonora\json_predial\2020\SON_PREDIAL_2020_etchojoa.json
+etchojoa,Etchojoa,2023,progresivo,True,0,11,0,0,0,,data\sonora\json_predial\2023\SON_PREDIAL_2023_etchojoa.json
+etchojoa,Etchojoa,2025,otro_no_clasificado,False,0,0,0,0,0,otro_no_clasificado_segmento_vacio,data\sonora\json_predial\2025\SON_PREDIAL_2025_etchojoa.json
+fronteras,Fronteras,2010,progresivo,True,0,11,0,0,0,,data\sonora\json_predial\2010\SON_PREDIAL_2010_fronteras.json
+fronteras,Fronteras,2012,tarifa_millar,True,8,0,0,0,0,cambio_esquema_progresivo_a_tarifa_millar_desde_2010|reclasificado_de_progresivo_a_tarifa_millar,data\sonora\json_predial\2012\SON_PREDIAL_2012_fronteras.json
+fronteras,Fronteras,2013,progresivo,True,0,11,0,0,0,cambio_esquema_tarifa_millar_a_progresivo_desde_2012,data\sonora\json_predial\2013\SON_PREDIAL_2013_fronteras.json
+fronteras,Fronteras,2017,tarifa_millar,True,2,0,0,0,0,cambio_brusco_n_filas_11_a_2|cambio_esquema_progresivo_a_tarifa_millar_desde_2013|reclasificado_de_progresivo_a_tarifa_millar,data\sonora\json_predial\2017\SON_PREDIAL_2017_fronteras.json
+fronteras,Fronteras,2018,tarifa_millar,True,15,0,0,0,0,cambio_brusco_n_filas_2_a_15|reclasificado_de_progresivo_a_tarifa_millar,data\sonora\json_predial\2018\SON_PREDIAL_2018_fronteras.json
+fronteras,Fronteras,2020,tarifa_millar,True,8,0,0,0,0,reclasificado_de_progresivo_a_tarifa_millar,data\sonora\json_predial\2020\SON_PREDIAL_2020_fronteras.json
+fronteras,Fronteras,2024,tarifa_millar,True,1,0,0,0,0,cambio_brusco_n_filas_8_a_1|reclasificado_de_progresivo_a_tarifa_millar,data\sonora\json_predial\2024\SON_PREDIAL_2024_fronteras.json
+garbo,Garbo,2018,tarifa_millar,True,16,0,0,0,0,reclasificado_de_progresivo_a_tarifa_millar,data\sonora\json_predial\2018\SON_PREDIAL_2018_garbo.json
+general_plutarco_elias_calles,General Plutarco Elias Calles,2009,otro_no_clasificado,False,0,0,0,0,0,otro_no_clasificado_segmento_vacio,data\sonora\json_predial\2009\SON_PREDIAL_2009_general_plutarco_elias_calles.json
+general_plutarco_elias_calles,General Plutarco Elias Calles,2012,progresivo,True,0,11,0,0,0,,data\sonora\json_predial\2012\SON_PREDIAL_2012_general_plutarco_elias_calles.json
+general_plutarco_elias_calles,General Plutarco Elias Calles,2017,tarifa_millar,True,8,0,0,0,0,cambio_esquema_progresivo_a_tarifa_millar_desde_2012|reclasificado_de_progresivo_a_tarifa_millar,data\sonora\json_predial\2017\SON_PREDIAL_2017_general_plutarco_elias_calles.json
+general_plutarco_elias_calles,General Plutarco Elias Calles,2018,tarifa_millar,True,8,0,0,0,0,reclasificado_de_progresivo_a_tarifa_millar,data\sonora\json_predial\2018\SON_PREDIAL_2018_general_plutarco_elias_calles.json
+general_plutarco_elias_calles,General Plutarco Elias Calles,2023,progresivo,True,0,11,0,0,0,cambio_esquema_tarifa_millar_a_progresivo_desde_2018,data\sonora\json_predial\2023\SON_PREDIAL_2023_general_plutarco_elias_calles.json
+general_plutarco_elias_calles,General Plutarco Elias Calles,2025,tarifa_millar,True,1,0,0,0,0,cambio_brusco_n_filas_11_a_1|cambio_esquema_progresivo_a_tarifa_millar_desde_2023|reclasificado_de_progresivo_a_tarifa_millar,data\sonora\json_predial\2025\SON_PREDIAL_2025_general_plutarco_elias_calles.json
+granados,Granados,2012,progresivo,True,0,6,0,0,0,,data\sonora\json_predial\2012\SON_PREDIAL_2012_granados.json
+granados,Granados,2017,tarifa_millar,True,9,0,0,0,0,cambio_esquema_progresivo_a_tarifa_millar_desde_2012|reclasificado_de_progresivo_a_tarifa_millar,data\sonora\json_predial\2017\SON_PREDIAL_2017_granados.json
+granados,Granados,2018,tarifa_millar,True,9,0,0,0,0,reclasificado_de_progresivo_a_tarifa_millar,data\sonora\json_predial\2018\SON_PREDIAL_2018_granados.json
+granados,Granados,2019,progresivo,True,0,6,0,0,0,cambio_esquema_tarifa_millar_a_progresivo_desde_2018,data\sonora\json_predial\2019\SON_PREDIAL_2019_granados.json
+granados,Granados,2020,tarifa_millar,True,9,0,0,0,0,cambio_esquema_progresivo_a_tarifa_millar_desde_2019|reclasificado_de_progresivo_a_tarifa_millar,data\sonora\json_predial\2020\SON_PREDIAL_2020_granados.json
+granados,Granados,2021,tarifa_millar,True,16,0,0,0,0,reclasificado_de_progresivo_a_tarifa_millar,data\sonora\json_predial\2021\SON_PREDIAL_2021_granados.json
+granados,Granados,2023,tarifa_millar,True,10,0,0,0,0,reclasificado_de_progresivo_a_tarifa_millar,data\sonora\json_predial\2023\SON_PREDIAL_2023_granados.json
+guay_mas_de_zaragoza,Guay Mas De Zaragoza,2025,otro_no_clasificado,False,0,0,0,0,0,otro_no_clasificado_segmento_vacio,data\sonora\json_predial\2025\SON_PREDIAL_2025_guay_mas_de_zaragoza.json
+guaymas,Guaymas,2009,otro_no_clasificado,False,0,0,0,0,0,otro_no_clasificado_segmento_vacio,data\sonora\json_predial\2009\SON_PREDIAL_2009_guaymas.json
+guaymas,Guaymas,2012,progresivo,True,0,11,0,0,0,,data\sonora\json_predial\2012\SON_PREDIAL_2012_guaymas.json
+guaymas,Guaymas,2017,tarifa_millar,True,1,0,0,0,0,cambio_brusco_n_filas_11_a_1|cambio_esquema_progresivo_a_tarifa_millar_desde_2012,data\sonora\json_predial\2017\SON_PREDIAL_2017_guaymas.json
+guaymas,Guaymas,2018,otro_no_clasificado,False,0,0,0,0,0,otro_no_clasificado_segmento_vacio,data\sonora\json_predial\2018\SON_PREDIAL_2018_guaymas.json
+guaymas,Guaymas,2020,tarifa_millar,True,1,0,0,0,0,,data\sonora\json_predial\2020\SON_PREDIAL_2020_guaymas.json
+guaymas,Guaymas,2021,tarifa_millar,True,1,0,0,0,0,,data\sonora\json_predial\2021\SON_PREDIAL_2021_guaymas.json
+guaymas,Guaymas,2022,otro_no_clasificado,False,0,0,0,0,0,otro_no_clasificado_segmento_vacio,data\sonora\json_predial\2022\SON_PREDIAL_2022_guaymas.json
+guaymas,Guaymas,2023,tarifa_millar,True,2,0,0,0,0,,data\sonora\json_predial\2023\SON_PREDIAL_2023_guaymas.json
+guaymas,Guaymas,2024,progresivo,True,0,11,0,0,0,cambio_brusco_n_filas_2_a_11|cambio_esquema_tarifa_millar_a_progresivo_desde_2023,data\sonora\json_predial\2024\SON_PREDIAL_2024_guaymas.json
+hennosillo,Hennosillo,2025,cuota_fija_escalonada,True,0,0,0,9,0,reclasificado_de_progresivo_a_cuota_fija_escalonada,data\sonora\json_predial\2025\SON_PREDIAL_2025_hennosillo.json
+hermosillo,Hermosillo,2010,tarifa_millar,True,1,0,0,0,0,,data\sonora\json_predial\2010\SON_PREDIAL_2010_hermosillo.json
+hermosillo,Hermosillo,2013,tarifa_millar,True,1,0,0,0,0,,data\sonora\json_predial\2013\SON_PREDIAL_2013_hermosillo.json
+hermosillo,Hermosillo,2016,otro_no_clasificado,False,0,0,0,0,0,otro_no_clasificado_segmento_vacio,data\sonora\json_predial\2016\SON_PREDIAL_2016_hermosillo.json
+hermosillo,Hermosillo,2017,otro_no_clasificado,False,0,0,0,0,0,otro_no_clasificado_segmento_vacio,data\sonora\json_predial\2017\SON_PREDIAL_2017_hermosillo.json
+hermosillo,Hermosillo,2022,progresivo,True,0,9,0,0,0,,data\sonora\json_predial\2022\SON_PREDIAL_2022_hermosillo.json
+hermosillo,Hermosillo,2024,progresivo,True,0,9,0,0,0,,data\sonora\json_predial\2024\SON_PREDIAL_2024_hermosillo.json
+hermosillo,Hermosillo,2025,otro_no_clasificado,False,0,0,0,0,0,otro_no_clasificado_segmento_vacio,data\sonora\json_predial\2025\SON_PREDIAL_2025_hermosillo.json
+heroica_guaymas_de_zaragoza,Heroica Guaymas De Zaragoza,2025,tarifa_millar,True,1,0,0,0,0,,data\sonora\json_predial\2025\SON_PREDIAL_2025_heroica_guaymas_de_zaragoza.json
+huachinera,Huachinera,2012,tarifa_millar,True,4,0,0,0,0,,data\sonora\json_predial\2012\SON_PREDIAL_2012_huachinera.json
+huachinera,Huachinera,2017,progresivo,True,0,11,0,0,0,cambio_brusco_n_filas_4_a_11|cambio_esquema_tarifa_millar_a_progresivo_desde_2012,data\sonora\json_predial\2017\SON_PREDIAL_2017_huachinera.json
+huachinera,Huachinera,2018,tarifa_millar,True,16,0,0,0,0,cambio_esquema_progresivo_a_tarifa_millar_desde_2017|reclasificado_de_progresivo_a_tarifa_millar,data\sonora\json_predial\2018\SON_PREDIAL_2018_huachinera.json
+huachinera,Huachinera,2021,tarifa_millar,True,2,0,0,0,0,cambio_brusco_n_filas_16_a_2|reclasificado_de_progresivo_a_tarifa_millar,data\sonora\json_predial\2021\SON_PREDIAL_2021_huachinera.json
+huachinera,Huachinera,2023,progresivo,True,0,11,0,0,0,cambio_brusco_n_filas_2_a_11|cambio_esquema_tarifa_millar_a_progresivo_desde_2021,data\sonora\json_predial\2023\SON_PREDIAL_2023_huachinera.json
+huachinera,Huachinera,2024,tarifa_millar,True,1,0,0,0,0,cambio_brusco_n_filas_11_a_1|cambio_esquema_progresivo_a_tarifa_millar_desde_2023|reclasificado_de_progresivo_a_tarifa_millar,data\sonora\json_predial\2024\SON_PREDIAL_2024_huachinera.json
+huasabas,Huasabas,2012,progresivo,True,0,11,0,0,0,,data\sonora\json_predial\2012\SON_PREDIAL_2012_huasabas.json
+huasabas,Huasabas,2013,progresivo,True,0,11,0,0,0,,data\sonora\json_predial\2013\SON_PREDIAL_2013_huasabas.json
+huasabas,Huasabas,2017,tarifa_millar,True,1,0,0,0,0,cambio_brusco_n_filas_11_a_1|cambio_esquema_progresivo_a_tarifa_millar_desde_2013|reclasificado_de_progresivo_a_tarifa_millar,data\sonora\json_predial\2017\SON_PREDIAL_2017_huasabas.json
+huasabas,Huasabas,2018,tarifa_millar,True,2,0,0,0,0,reclasificado_de_progresivo_a_tarifa_millar,data\sonora\json_predial\2018\SON_PREDIAL_2018_huasabas.json
+huasabas,Huasabas,2019,tarifa_millar,True,23,0,0,0,0,cambio_brusco_n_filas_2_a_23,data\sonora\json_predial\2019\SON_PREDIAL_2019_huasabas.json
+huasabas,Huasabas,2020,progresivo,True,0,11,0,0,0,cambio_brusco_n_filas_23_a_11|cambio_esquema_tarifa_millar_a_progresivo_desde_2019,data\sonora\json_predial\2020\SON_PREDIAL_2020_huasabas.json
+huasabas,Huasabas,2021,tarifa_millar,True,16,0,0,0,0,cambio_esquema_progresivo_a_tarifa_millar_desde_2020|reclasificado_de_progresivo_a_tarifa_millar,data\sonora\json_predial\2021\SON_PREDIAL_2021_huasabas.json
+huasabas,Huasabas,2022,tarifa_millar,True,1,0,0,0,0,cambio_brusco_n_filas_16_a_1|reclasificado_de_progresivo_a_tarifa_millar,data\sonora\json_predial\2022\SON_PREDIAL_2022_huasabas.json
+huasabas,Huasabas,2023,tarifa_millar,True,9,0,0,0,0,cambio_brusco_n_filas_1_a_9|reclasificado_de_progresivo_a_tarifa_millar,data\sonora\json_predial\2023\SON_PREDIAL_2023_huasabas.json
+huasabas,Huasabas,2024,otro_no_clasificado,False,0,0,0,0,0,otro_no_clasificado_segmento_vacio,data\sonora\json_predial\2024\SON_PREDIAL_2024_huasabas.json
+huasabas,Huasabas,2025,otro_no_clasificado,False,0,0,0,0,0,otro_no_clasificado_segmento_vacio,data\sonora\json_predial\2025\SON_PREDIAL_2025_huasabas.json
+huatabampo,Huatabampo,2013,tarifa_millar,True,25,0,0,0,0,reclasificado_de_progresivo_a_tarifa_millar,data\sonora\json_predial\2013\SON_PREDIAL_2013_huatabampo.json
+huatabampo,Huatabampo,2017,progresivo,True,0,11,0,0,0,cambio_brusco_n_filas_25_a_11|cambio_esquema_tarifa_millar_a_progresivo_desde_2013,data\sonora\json_predial\2017\SON_PREDIAL_2017_huatabampo.json
+huatabampo,Huatabampo,2018,tarifa_millar,True,18,0,0,0,0,cambio_esquema_progresivo_a_tarifa_millar_desde_2017|reclasificado_de_progresivo_a_tarifa_millar,data\sonora\json_predial\2018\SON_PREDIAL_2018_huatabampo.json
+huatabampo,Huatabampo,2019,tarifa_millar,True,1,0,0,0,0,cambio_brusco_n_filas_18_a_1,data\sonora\json_predial\2019\SON_PREDIAL_2019_huatabampo.json
+huatabampo,Huatabampo,2023,progresivo,True,0,11,0,0,0,cambio_brusco_n_filas_1_a_11|cambio_esquema_tarifa_millar_a_progresivo_desde_2019,data\sonora\json_predial\2023\SON_PREDIAL_2023_huatabampo.json
+huatabampo,Huatabampo,2024,progresivo,True,0,11,0,0,0,,data\sonora\json_predial\2024\SON_PREDIAL_2024_huatabampo.json
+huatabampo,Huatabampo,2025,progresivo,True,0,11,0,0,0,,data\sonora\json_predial\2025\SON_PREDIAL_2025_huatabampo.json
+huepac,Huepac,2012,tarifa_millar,True,9,0,0,0,0,reclasificado_de_progresivo_a_tarifa_millar,data\sonora\json_predial\2012\SON_PREDIAL_2012_huepac.json
+huepac,Huepac,2017,tarifa_millar,True,15,0,0,0,0,reclasificado_de_progresivo_a_tarifa_millar,data\sonora\json_predial\2017\SON_PREDIAL_2017_huepac.json
+huepac,Huepac,2018,progresivo,True,0,6,0,0,0,cambio_brusco_n_filas_15_a_6|cambio_esquema_tarifa_millar_a_progresivo_desde_2017,data\sonora\json_predial\2018\SON_PREDIAL_2018_huepac.json
+huepac,Huepac,2020,otro_no_clasificado,False,0,0,0,0,0,otro_no_clasificado_segmento_vacio,data\sonora\json_predial\2020\SON_PREDIAL_2020_huepac.json
+huepac,Huepac,2021,otro_no_clasificado,False,0,0,0,0,0,otro_no_clasificado_segmento_vacio,data\sonora\json_predial\2021\SON_PREDIAL_2021_huepac.json
+huepac,Huepac,2023,progresivo,True,0,6,0,0,0,,data\sonora\json_predial\2023\SON_PREDIAL_2023_huepac.json
+huepac,Huepac,2024,otro_no_clasificado,False,0,0,0,0,0,otro_no_clasificado_segmento_vacio,data\sonora\json_predial\2024\SON_PREDIAL_2024_huepac.json
+huepac,Huepac,2025,tarifa_millar,True,16,0,0,0,0,reclasificado_de_progresivo_a_tarifa_millar,data\sonora\json_predial\2025\SON_PREDIAL_2025_huepac.json
+imuris,Imuris,2012,tarifa_millar,True,10,0,0,0,0,reclasificado_de_progresivo_a_tarifa_millar,data\sonora\json_predial\2012\SON_PREDIAL_2012_imuris.json
+imuris,Imuris,2013,progresivo,True,0,11,0,0,0,cambio_esquema_tarifa_millar_a_progresivo_desde_2012,data\sonora\json_predial\2013\SON_PREDIAL_2013_imuris.json
+imuris,Imuris,2017,tarifa_millar,True,11,0,0,0,0,cambio_esquema_progresivo_a_tarifa_millar_desde_2013|reclasificado_de_progresivo_a_tarifa_millar,data\sonora\json_predial\2017\SON_PREDIAL_2017_imuris.json
+imuris,Imuris,2018,progresivo,True,0,11,0,0,0,cambio_esquema_tarifa_millar_a_progresivo_desde_2017,data\sonora\json_predial\2018\SON_PREDIAL_2018_imuris.json
+imuris,Imuris,2020,progresivo,True,0,11,0,0,0,,data\sonora\json_predial\2020\SON_PREDIAL_2020_imuris.json
+imuris,Imuris,2022,tarifa_millar,True,11,0,0,0,0,cambio_esquema_progresivo_a_tarifa_millar_desde_2020|reclasificado_de_progresivo_a_tarifa_millar,data\sonora\json_predial\2022\SON_PREDIAL_2022_imuris.json
+imuris,Imuris,2023,progresivo,True,0,11,0,0,0,cambio_esquema_tarifa_millar_a_progresivo_desde_2022,data\sonora\json_predial\2023\SON_PREDIAL_2023_imuris.json
+imuris,Imuris,2024,progresivo,True,0,11,0,0,0,,data\sonora\json_predial\2024\SON_PREDIAL_2024_imuris.json
+imuris,Imuris,2025,progresivo,True,0,11,0,0,0,,data\sonora\json_predial\2025\SON_PREDIAL_2025_imuris.json
+la_colorada,La Colorada,2012,tarifa_millar,True,15,0,0,0,0,reclasificado_de_progresivo_a_tarifa_millar,data\sonora\json_predial\2012\SON_PREDIAL_2012_la_colorada.json
+la_colorada,La Colorada,2017,progresivo,True,0,11,0,0,0,cambio_esquema_tarifa_millar_a_progresivo_desde_2012,data\sonora\json_predial\2017\SON_PREDIAL_2017_la_colorada.json
+la_colorada,La Colorada,2018,progresivo,True,0,11,0,0,0,,data\sonora\json_predial\2018\SON_PREDIAL_2018_la_colorada.json
+la_colorada,La Colorada,2019,tarifa_millar,True,15,0,0,0,0,cambio_esquema_progresivo_a_tarifa_millar_desde_2018,data\sonora\json_predial\2019\SON_PREDIAL_2019_la_colorada.json
+la_colorada,La Colorada,2020,tarifa_millar,True,13,0,0,0,0,reclasificado_de_progresivo_a_tarifa_millar,data\sonora\json_predial\2020\SON_PREDIAL_2020_la_colorada.json
+la_colorada,La Colorada,2021,tarifa_millar,True,13,0,0,0,0,reclasificado_de_progresivo_a_tarifa_millar,data\sonora\json_predial\2021\SON_PREDIAL_2021_la_colorada.json
+la_colorada,La Colorada,2022,tarifa_millar,True,13,0,0,0,0,reclasificado_de_progresivo_a_tarifa_millar,data\sonora\json_predial\2022\SON_PREDIAL_2022_la_colorada.json
+la_colorada,La Colorada,2023,tarifa_millar,True,17,0,0,0,0,reclasificado_de_progresivo_a_tarifa_millar,data\sonora\json_predial\2023\SON_PREDIAL_2023_la_colorada.json
+la_colorada,La Colorada,2024,tarifa_millar,True,12,0,0,0,0,reclasificado_de_progresivo_a_tarifa_millar,data\sonora\json_predial\2024\SON_PREDIAL_2024_la_colorada.json
+la_colorada,La Colorada,2025,tarifa_millar,True,12,0,0,0,0,reclasificado_de_progresivo_a_tarifa_millar,data\sonora\json_predial\2025\SON_PREDIAL_2025_la_colorada.json
+la_heroica_ures,La Heroica Ures,2013,tarifa_millar,True,9,0,0,0,0,reclasificado_de_progresivo_a_tarifa_millar,data\sonora\json_predial\2013\SON_PREDIAL_2013_la_heroica_ures.json
+la_heroica_ures,La Heroica Ures,2017,tarifa_millar,True,1,0,0,0,0,cambio_brusco_n_filas_9_a_1|reclasificado_de_progresivo_a_tarifa_millar,data\sonora\json_predial\2017\SON_PREDIAL_2017_la_heroica_ures.json
+la_heroica_ures,La Heroica Ures,2018,tarifa_millar,True,9,0,0,0,0,cambio_brusco_n_filas_1_a_9|reclasificado_de_progresivo_a_tarifa_millar,data\sonora\json_predial\2018\SON_PREDIAL_2018_la_heroica_ures.json
+la_heroica_ures,La Heroica Ures,2020,tarifa_millar,True,8,0,0,0,0,reclasificado_de_progresivo_a_tarifa_millar,data\sonora\json_predial\2020\SON_PREDIAL_2020_la_heroica_ures.json
+la_heroica_ures,La Heroica Ures,2021,tarifa_millar,True,2,0,0,0,0,cambio_brusco_n_filas_8_a_2|reclasificado_de_progresivo_a_tarifa_millar,data\sonora\json_predial\2021\SON_PREDIAL_2021_la_heroica_ures.json
+llavispe,Llavispe,2022,progresivo,True,0,11,0,0,0,,data\sonora\json_predial\2022\SON_PREDIAL_2022_llavispe.json
+magdalena,Magdalena,2017,otro_no_clasificado,False,0,0,0,0,0,otro_no_clasificado_segmento_vacio,data\sonora\json_predial\2017\SON_PREDIAL_2017_magdalena.json
+magdalena,Magdalena,2018,otro_no_clasificado,False,0,0,0,0,0,otro_no_clasificado_segmento_vacio,data\sonora\json_predial\2018\SON_PREDIAL_2018_magdalena.json
+magdalena,Magdalena,2020,otro_no_clasificado,False,0,0,0,0,0,otro_no_clasificado_segmento_vacio,data\sonora\json_predial\2020\SON_PREDIAL_2020_magdalena.json
+mazatan,Mazatan,2018,progresivo,True,0,7,0,0,0,,data\sonora\json_predial\2018\SON_PREDIAL_2018_mazatan.json
+mazatan,Mazatan,2019,cuota_fija_simple,True,0,0,0,1,0,cambio_esquema_progresivo_a_cuota_fija_simple_desde_2018|reclasificado_de_cuota_fija_a_cuota_fija_simple,data\sonora\json_predial\2019\SON_PREDIAL_2019_mazatan.json
+mazatan,Mazatan,2020,progresivo,True,0,7,0,0,0,cambio_esquema_cuota_fija_simple_a_progresivo_desde_2019,data\sonora\json_predial\2020\SON_PREDIAL_2020_mazatan.json
+mazatan,Mazatan,2023,tarifa_millar,True,9,0,0,0,0,cambio_esquema_progresivo_a_tarifa_millar_desde_2020|reclasificado_de_progresivo_a_tarifa_millar,data\sonora\json_predial\2023\SON_PREDIAL_2023_mazatan.json
+mazatan,Mazatan,2024,progresivo,True,0,7,0,0,0,cambio_esquema_tarifa_millar_a_progresivo_desde_2023,data\sonora\json_predial\2024\SON_PREDIAL_2024_mazatan.json
+moctezllma,Moctezllma,2019,progresivo,True,0,11,0,0,0,,data\sonora\json_predial\2019\SON_PREDIAL_2019_moctezllma.json
+moctezuma,Moctezuma,2012,progresivo,True,0,11,0,0,0,,data\sonora\json_predial\2012\SON_PREDIAL_2012_moctezuma.json
+moctezuma,Moctezuma,2017,progresivo,True,0,11,0,0,0,,data\sonora\json_predial\2017\SON_PREDIAL_2017_moctezuma.json
+moctezuma,Moctezuma,2018,progresivo,True,0,11,0,0,0,,data\sonora\json_predial\2018\SON_PREDIAL_2018_moctezuma.json
+moctezuma,Moctezuma,2020,tarifa_millar,True,8,0,0,0,0,cambio_esquema_progresivo_a_tarifa_millar_desde_2018|reclasificado_de_progresivo_a_tarifa_millar,data\sonora\json_predial\2020\SON_PREDIAL_2020_moctezuma.json
+moctezuma,Moctezuma,2022,otro_no_clasificado,False,0,0,0,0,0,otro_no_clasificado_segmento_vacio,data\sonora\json_predial\2022\SON_PREDIAL_2022_moctezuma.json
+moctezuma,Moctezuma,2023,tarifa_millar,True,8,0,0,0,0,reclasificado_de_progresivo_a_tarifa_millar,data\sonora\json_predial\2023\SON_PREDIAL_2023_moctezuma.json
+moctezuma,Moctezuma,2025,otro_no_clasificado,False,0,0,0,0,0,otro_no_clasificado_segmento_vacio,data\sonora\json_predial\2025\SON_PREDIAL_2025_moctezuma.json
+naco,Naco,2009,otro_no_clasificado,False,0,0,0,0,0,otro_no_clasificado_segmento_vacio,data\sonora\json_predial\2009\SON_PREDIAL_2009_naco.json
+naco,Naco,2010,tarifa_millar,True,5,0,0,0,0,reclasificado_de_progresivo_a_tarifa_millar,data\sonora\json_predial\2010\SON_PREDIAL_2010_naco.json
+naco,Naco,2017,tarifa_millar,True,15,0,0,0,0,cambio_brusco_n_filas_5_a_15|reclasificado_de_progresivo_a_tarifa_millar,data\sonora\json_predial\2017\SON_PREDIAL_2017_naco.json
+naco,Naco,2018,tarifa_millar,True,8,0,0,0,0,reclasificado_de_progresivo_a_tarifa_millar,data\sonora\json_predial\2018\SON_PREDIAL_2018_naco.json
+naco,Naco,2019,progresivo,True,0,11,0,0,0,cambio_esquema_tarifa_millar_a_progresivo_desde_2018,data\sonora\json_predial\2019\SON_PREDIAL_2019_naco.json
+naco,Naco,2020,progresivo,True,0,11,0,0,0,,data\sonora\json_predial\2020\SON_PREDIAL_2020_naco.json
+naco,Naco,2021,otro_no_clasificado,False,0,0,0,0,0,otro_no_clasificado_segmento_vacio,data\sonora\json_predial\2021\SON_PREDIAL_2021_naco.json
+naco,Naco,2022,tarifa_millar,True,4,0,0,0,0,reclasificado_de_mixto_a_tarifa_millar,data\sonora\json_predial\2022\SON_PREDIAL_2022_naco.json
+naco,Naco,2023,progresivo,True,0,11,0,0,0,cambio_brusco_n_filas_4_a_11|cambio_esquema_tarifa_millar_a_progresivo_desde_2022,data\sonora\json_predial\2023\SON_PREDIAL_2023_naco.json
+naco,Naco,2024,otro_no_clasificado,False,0,0,0,0,0,otro_no_clasificado_segmento_vacio,data\sonora\json_predial\2024\SON_PREDIAL_2024_naco.json
+naco,Naco,2025,otro_no_clasificado,False,0,0,0,0,0,otro_no_clasificado_segmento_vacio,data\sonora\json_predial\2025\SON_PREDIAL_2025_naco.json
+nacori_chico,Nacori Chico,2013,progresivo,True,0,11,0,0,0,,data\sonora\json_predial\2013\SON_PREDIAL_2013_nacori_chico.json
+nacori_chico,Nacori Chico,2017,tarifa_millar,True,4,0,0,0,0,cambio_brusco_n_filas_11_a_4|cambio_esquema_progresivo_a_tarifa_millar_desde_2013|reclasificado_de_progresivo_a_tarifa_millar,data\sonora\json_predial\2017\SON_PREDIAL_2017_nacori_chico.json
+nacori_chico,Nacori Chico,2018,progresivo,True,0,11,0,0,0,cambio_brusco_n_filas_4_a_11|cambio_esquema_tarifa_millar_a_progresivo_desde_2017,data\sonora\json_predial\2018\SON_PREDIAL_2018_nacori_chico.json
+nacori_chico,Nacori Chico,2020,otro_no_clasificado,False,0,0,0,0,0,otro_no_clasificado_segmento_vacio,data\sonora\json_predial\2020\SON_PREDIAL_2020_nacori_chico.json
+nacori_chico,Nacori Chico,2021,progresivo,True,0,11,0,0,0,,data\sonora\json_predial\2021\SON_PREDIAL_2021_nacori_chico.json
+nacori_chico,Nacori Chico,2022,otro_no_clasificado,False,0,0,0,0,0,otro_no_clasificado_segmento_vacio,data\sonora\json_predial\2022\SON_PREDIAL_2022_nacori_chico.json
+nacori_chico,Nacori Chico,2023,progresivo,True,0,11,0,0,0,,data\sonora\json_predial\2023\SON_PREDIAL_2023_nacori_chico.json
+nacori_chico,Nacori Chico,2024,progresivo,True,0,11,0,0,0,,data\sonora\json_predial\2024\SON_PREDIAL_2024_nacori_chico.json
+nacori_chico,Nacori Chico,2025,otro_no_clasificado,False,0,0,0,0,0,otro_no_clasificado_segmento_vacio,data\sonora\json_predial\2025\SON_PREDIAL_2025_nacori_chico.json
+nacozari_de_garcia,Nacozari De Garcia,2012,progresivo,True,0,11,0,0,0,,data\sonora\json_predial\2012\SON_PREDIAL_2012_nacozari_de_garcia.json
+nacozari_de_garcia,Nacozari De Garcia,2013,progresivo,True,0,11,0,0,0,,data\sonora\json_predial\2013\SON_PREDIAL_2013_nacozari_de_garcia.json
+nacozari_de_garcia,Nacozari De Garcia,2017,progresivo,True,0,11,0,0,0,,data\sonora\json_predial\2017\SON_PREDIAL_2017_nacozari_de_garcia.json
+nacozari_de_garcia,Nacozari De Garcia,2018,progresivo,True,0,11,0,0,0,,data\sonora\json_predial\2018\SON_PREDIAL_2018_nacozari_de_garcia.json
+nacozari_de_garcia,Nacozari De Garcia,2019,progresivo,True,0,8,0,0,0,,data\sonora\json_predial\2019\SON_PREDIAL_2019_nacozari_de_garcia.json
+nacozari_de_garcia,Nacozari De Garcia,2020,progresivo,True,0,11,0,0,0,,data\sonora\json_predial\2020\SON_PREDIAL_2020_nacozari_de_garcia.json
+nacozari_de_garcia,Nacozari De Garcia,2021,tarifa_millar,True,12,0,0,0,0,cambio_esquema_progresivo_a_tarifa_millar_desde_2020|reclasificado_de_progresivo_a_tarifa_millar,data\sonora\json_predial\2021\SON_PREDIAL_2021_nacozari_de_garcia.json
+nacozari_de_garcia,Nacozari De Garcia,2023,progresivo,True,0,11,0,0,0,cambio_esquema_tarifa_millar_a_progresivo_desde_2021,data\sonora\json_predial\2023\SON_PREDIAL_2023_nacozari_de_garcia.json
+nacozari_de_garcia,Nacozari De Garcia,2024,progresivo,True,0,11,0,0,0,,data\sonora\json_predial\2024\SON_PREDIAL_2024_nacozari_de_garcia.json
+nacozari_de_garcia,Nacozari De Garcia,2025,tarifa_millar,True,2,0,0,0,0,cambio_brusco_n_filas_11_a_2|cambio_esquema_progresivo_a_tarifa_millar_desde_2024|reclasificado_de_mixto_a_tarifa_millar,data\sonora\json_predial\2025\SON_PREDIAL_2025_nacozari_de_garcia.json
+navojoa,Navojoa,2012,progresivo,True,0,11,0,0,0,,data\sonora\json_predial\2012\SON_PREDIAL_2012_navojoa.json
+navojoa,Navojoa,2016,tarifa_millar,True,10,0,0,0,0,cambio_esquema_progresivo_a_tarifa_millar_desde_2012|reclasificado_de_progresivo_a_tarifa_millar,data\sonora\json_predial\2016\SON_PREDIAL_2016_navojoa.json
+navojoa,Navojoa,2017,tarifa_millar,True,11,0,0,0,0,reclasificado_de_progresivo_a_tarifa_millar,data\sonora\json_predial\2017\SON_PREDIAL_2017_navojoa.json
+navojoa,Navojoa,2018,tarifa_millar,True,10,0,0,0,0,reclasificado_de_progresivo_a_tarifa_millar,data\sonora\json_predial\2018\SON_PREDIAL_2018_navojoa.json
+navojoa,Navojoa,2023,progresivo,True,0,12,0,0,0,cambio_esquema_tarifa_millar_a_progresivo_desde_2018,data\sonora\json_predial\2023\SON_PREDIAL_2023_navojoa.json
+nogales,Nogales,2009,otro_no_clasificado,False,0,0,0,0,0,otro_no_clasificado_segmento_vacio,data\sonora\json_predial\2009\SON_PREDIAL_2009_nogales.json
+nogales,Nogales,2012,tasa_unica,True,0,0,1,0,0,,data\sonora\json_predial\2012\SON_PREDIAL_2012_nogales.json
+nogales,Nogales,2013,tasa_unica,True,0,0,1,0,0,,data\sonora\json_predial\2013\SON_PREDIAL_2013_nogales.json
+nogales,Nogales,2017,otro_no_clasificado,False,0,0,0,0,0,otro_no_clasificado_estructura_no_estandar,data\sonora\json_predial\2017\SON_PREDIAL_2017_nogales.json
+nogales,Nogales,2018,otro_no_clasificado,False,0,0,0,0,0,otro_no_clasificado_estructura_no_estandar,data\sonora\json_predial\2018\SON_PREDIAL_2018_nogales.json
+nogales,Nogales,2019,tarifa_millar,True,5,0,0,0,0,,data\sonora\json_predial\2019\SON_PREDIAL_2019_nogales.json
+nogales,Nogales,2020,tarifa_millar,True,1,0,0,0,0,cambio_brusco_n_filas_5_a_1,data\sonora\json_predial\2020\SON_PREDIAL_2020_nogales.json
+nogales,Nogales,2023,tarifa_millar,True,1,0,0,0,0,,data\sonora\json_predial\2023\SON_PREDIAL_2023_nogales.json
+nogales,Nogales,2024,tarifa_millar,True,1,0,0,0,0,,data\sonora\json_predial\2024\SON_PREDIAL_2024_nogales.json
+nogales,Nogales,2025,tarifa_millar,True,1,0,0,0,0,,data\sonora\json_predial\2025\SON_PREDIAL_2025_nogales.json
+onavas,Onavas,2012,otro_no_clasificado,False,0,0,0,0,0,otro_no_clasificado_estructura_no_estandar,data\sonora\json_predial\2012\SON_PREDIAL_2012_onavas.json
+onavas,Onavas,2017,tarifa_millar,True,8,0,0,0,0,reclasificado_de_progresivo_a_tarifa_millar,data\sonora\json_predial\2017\SON_PREDIAL_2017_onavas.json
+onavas,Onavas,2019,progresivo,True,0,5,0,0,0,cambio_esquema_tarifa_millar_a_progresivo_desde_2017,data\sonora\json_predial\2019\SON_PREDIAL_2019_onavas.json
+onavas,Onavas,2020,tarifa_millar,True,3,0,0,0,0,cambio_esquema_progresivo_a_tarifa_millar_desde_2019|reclasificado_de_progresivo_a_tarifa_millar,data\sonora\json_predial\2020\SON_PREDIAL_2020_onavas.json
+onavas,Onavas,2022,tarifa_millar,True,8,0,0,0,0,cambio_brusco_n_filas_3_a_8|reclasificado_de_progresivo_a_tarifa_millar,data\sonora\json_predial\2022\SON_PREDIAL_2022_onavas.json
+onavas,Onavas,2023,tarifa_millar,True,4,0,0,0,0,reclasificado_de_mixto_a_tarifa_millar,data\sonora\json_predial\2023\SON_PREDIAL_2023_onavas.json
+onavas,Onavas,2025,otro_no_clasificado,False,0,0,0,0,0,otro_no_clasificado_segmento_vacio,data\sonora\json_predial\2025\SON_PREDIAL_2025_onavas.json
+opodepe,Opodepe,2017,progresivo,True,0,11,0,0,0,,data\sonora\json_predial\2017\SON_PREDIAL_2017_opodepe.json
+opodepe,Opodepe,2018,progresivo,True,0,11,0,0,0,,data\sonora\json_predial\2018\SON_PREDIAL_2018_opodepe.json
+opodepe,Opodepe,2019,progresivo,True,0,11,0,0,0,,data\sonora\json_predial\2019\SON_PREDIAL_2019_opodepe.json
+opodepe,Opodepe,2020,progresivo,True,0,11,0,0,0,,data\sonora\json_predial\2020\SON_PREDIAL_2020_opodepe.json
+opodepe,Opodepe,2022,otro_no_clasificado,False,0,0,0,0,0,otro_no_clasificado_segmento_vacio,data\sonora\json_predial\2022\SON_PREDIAL_2022_opodepe.json
+opodepe,Opodepe,2023,tarifa_millar,True,1,0,0,0,0,reclasificado_de_progresivo_a_tarifa_millar,data\sonora\json_predial\2023\SON_PREDIAL_2023_opodepe.json
+opodepe,Opodepe,2024,otro_no_clasificado,False,0,0,0,0,0,otro_no_clasificado_segmento_vacio,data\sonora\json_predial\2024\SON_PREDIAL_2024_opodepe.json
+opodepe,Opodepe,2025,otro_no_clasificado,False,0,0,0,0,0,otro_no_clasificado_segmento_vacio,data\sonora\json_predial\2025\SON_PREDIAL_2025_opodepe.json
+oquitoa,Oquitoa,2017,tarifa_millar,True,14,0,0,0,0,reclasificado_de_progresivo_a_tarifa_millar,data\sonora\json_predial\2017\SON_PREDIAL_2017_oquitoa.json
+oquitoa,Oquitoa,2018,tarifa_millar,True,8,0,0,0,0,reclasificado_de_progresivo_a_tarifa_millar,data\sonora\json_predial\2018\SON_PREDIAL_2018_oquitoa.json
+oquitoa,Oquitoa,2019,progresivo,True,0,5,0,0,0,cambio_esquema_tarifa_millar_a_progresivo_desde_2018,data\sonora\json_predial\2019\SON_PREDIAL_2019_oquitoa.json
+oquitoa,Oquitoa,2020,tarifa_millar,True,9,0,0,0,0,cambio_esquema_progresivo_a_tarifa_millar_desde_2019|reclasificado_de_progresivo_a_tarifa_millar,data\sonora\json_predial\2020\SON_PREDIAL_2020_oquitoa.json
+oquitoa,Oquitoa,2023,progresivo,True,0,5,0,0,0,cambio_esquema_tarifa_millar_a_progresivo_desde_2020,data\sonora\json_predial\2023\SON_PREDIAL_2023_oquitoa.json
+oquitoa,Oquitoa,2024,tarifa_millar,True,9,0,0,0,0,cambio_esquema_progresivo_a_tarifa_millar_desde_2023|reclasificado_de_progresivo_a_tarifa_millar,data\sonora\json_predial\2024\SON_PREDIAL_2024_oquitoa.json
+oquitoa,Oquitoa,2025,otro_no_clasificado,False,0,0,0,0,0,otro_no_clasificado_segmento_vacio,data\sonora\json_predial\2025\SON_PREDIAL_2025_oquitoa.json
+pitiquito,Pitiquito,2018,progresivo,True,0,11,0,0,0,,data\sonora\json_predial\2018\SON_PREDIAL_2018_pitiquito.json
+pitiquito,Pitiquito,2019,progresivo,True,0,11,0,0,0,,data\sonora\json_predial\2019\SON_PREDIAL_2019_pitiquito.json
+pitiquito,Pitiquito,2020,otro_no_clasificado,False,0,0,0,0,0,otro_no_clasificado_segmento_vacio,data\sonora\json_predial\2020\SON_PREDIAL_2020_pitiquito.json
+pitiquito,Pitiquito,2021,otro_no_clasificado,False,0,0,0,0,0,otro_no_clasificado_segmento_vacio,data\sonora\json_predial\2021\SON_PREDIAL_2021_pitiquito.json
+pitiquito,Pitiquito,2022,otro_no_clasificado,False,0,0,0,0,0,otro_no_clasificado_segmento_vacio,data\sonora\json_predial\2022\SON_PREDIAL_2022_pitiquito.json
+pitiquito,Pitiquito,2023,progresivo,True,0,11,0,0,0,,data\sonora\json_predial\2023\SON_PREDIAL_2023_pitiquito.json
+pitiquito,Pitiquito,2024,otro_no_clasificado,False,0,0,0,0,0,otro_no_clasificado_segmento_vacio,data\sonora\json_predial\2024\SON_PREDIAL_2024_pitiquito.json
+pitiquito,Pitiquito,2025,otro_no_clasificado,False,0,0,0,0,0,otro_no_clasificado_segmento_vacio,data\sonora\json_predial\2025\SON_PREDIAL_2025_pitiquito.json
+puerto_penasco,Puerto Penasco,2011,tarifa_millar,True,7,0,0,0,0,reclasificado_de_progresivo_a_tarifa_millar,data\sonora\json_predial\2011\SON_PREDIAL_2011_puerto_penasco.json
+puerto_penasco,Puerto Penasco,2017,tarifa_millar,True,2,0,0,0,0,cambio_brusco_n_filas_7_a_2,data\sonora\json_predial\2017\SON_PREDIAL_2017_puerto_penasco.json
+puerto_penasco,Puerto Penasco,2018,tarifa_millar,True,2,0,0,0,0,,data\sonora\json_predial\2018\SON_PREDIAL_2018_puerto_penasco.json
+puerto_penasco,Puerto Penasco,2019,tarifa_millar,True,2,0,0,0,0,,data\sonora\json_predial\2019\SON_PREDIAL_2019_puerto_penasco.json
+puerto_penasco,Puerto Penasco,2020,tarifa_millar,True,1,0,0,0,0,,data\sonora\json_predial\2020\SON_PREDIAL_2020_puerto_penasco.json
+puerto_penasco,Puerto Penasco,2021,tarifa_millar,True,1,0,0,0,0,,data\sonora\json_predial\2021\SON_PREDIAL_2021_puerto_penasco.json
+puerto_penasco,Puerto Penasco,2022,tarifa_millar,True,4,0,0,0,0,cambio_brusco_n_filas_1_a_4,data\sonora\json_predial\2022\SON_PREDIAL_2022_puerto_penasco.json
+puerto_penasco,Puerto Penasco,2023,tarifa_millar,True,2,0,0,0,0,,data\sonora\json_predial\2023\SON_PREDIAL_2023_puerto_penasco.json
+puerto_penasco,Puerto Penasco,2024,tarifa_millar,True,2,0,0,0,0,,data\sonora\json_predial\2024\SON_PREDIAL_2024_puerto_penasco.json
+puerto_penasco,Puerto Penasco,2025,cuota_fija_simple,True,0,0,0,1,0,cambio_esquema_tarifa_millar_a_cuota_fija_simple_desde_2024|reclasificado_de_cuota_fija_a_cuota_fija_simple,data\sonora\json_predial\2025\SON_PREDIAL_2025_puerto_penasco.json
+quiriego,Quiriego,2012,tarifa_millar,True,12,0,0,0,0,,data\sonora\json_predial\2012\SON_PREDIAL_2012_quiriego.json
+quiriego,Quiriego,2013,tarifa_millar,True,16,0,0,0,0,,data\sonora\json_predial\2013\SON_PREDIAL_2013_quiriego.json
+quiriego,Quiriego,2017,progresivo,True,0,5,0,0,0,cambio_brusco_n_filas_16_a_5|cambio_esquema_tarifa_millar_a_progresivo_desde_2013,data\sonora\json_predial\2017\SON_PREDIAL_2017_quiriego.json
+quiriego,Quiriego,2018,progresivo,True,0,5,0,0,0,,data\sonora\json_predial\2018\SON_PREDIAL_2018_quiriego.json
+quiriego,Quiriego,2019,progresivo,True,0,5,0,0,0,,data\sonora\json_predial\2019\SON_PREDIAL_2019_quiriego.json
+quiriego,Quiriego,2020,progresivo,True,0,5,0,0,0,,data\sonora\json_predial\2020\SON_PREDIAL_2020_quiriego.json
+quiriego,Quiriego,2023,tarifa_millar,True,1,0,0,0,0,cambio_brusco_n_filas_5_a_1|cambio_esquema_progresivo_a_tarifa_millar_desde_2020|reclasificado_de_progresivo_a_tarifa_millar,data\sonora\json_predial\2023\SON_PREDIAL_2023_quiriego.json
+rayon,Rayon,2010,progresivo,True,0,8,0,0,0,,data\sonora\json_predial\2010\SON_PREDIAL_2010_rayon.json
+rayon,Rayon,2017,tarifa_millar,True,15,0,0,0,0,cambio_esquema_progresivo_a_tarifa_millar_desde_2010|reclasificado_de_progresivo_a_tarifa_millar,data\sonora\json_predial\2017\SON_PREDIAL_2017_rayon.json
+rayon,Rayon,2019,progresivo,True,0,6,0,0,0,cambio_brusco_n_filas_15_a_6|cambio_esquema_tarifa_millar_a_progresivo_desde_2017,data\sonora\json_predial\2019\SON_PREDIAL_2019_rayon.json
+rayon,Rayon,2020,tarifa_millar,True,15,0,0,0,0,cambio_brusco_n_filas_6_a_15|cambio_esquema_progresivo_a_tarifa_millar_desde_2019|reclasificado_de_progresivo_a_tarifa_millar,data\sonora\json_predial\2020\SON_PREDIAL_2020_rayon.json
+rayon,Rayon,2023,tarifa_millar,True,15,0,0,0,0,reclasificado_de_progresivo_a_tarifa_millar,data\sonora\json_predial\2023\SON_PREDIAL_2023_rayon.json
+rosario,Rosario,2017,progresivo,True,0,8,0,0,0,,data\sonora\json_predial\2017\SON_PREDIAL_2017_rosario.json
+rosario,Rosario,2018,progresivo,True,0,8,0,0,0,,data\sonora\json_predial\2018\SON_PREDIAL_2018_rosario.json
+rosario,Rosario,2020,progresivo,True,0,8,0,0,0,,data\sonora\json_predial\2020\SON_PREDIAL_2020_rosario.json
+rosario,Rosario,2022,tarifa_millar,True,16,0,0,0,0,cambio_esquema_progresivo_a_tarifa_millar_desde_2020|reclasificado_de_progresivo_a_tarifa_millar,data\sonora\json_predial\2022\SON_PREDIAL_2022_rosario.json
+rosario,Rosario,2023,tarifa_millar,True,16,0,0,0,0,reclasificado_de_progresivo_a_tarifa_millar,data\sonora\json_predial\2023\SON_PREDIAL_2023_rosario.json
+rosario,Rosario,2024,progresivo,True,0,8,0,0,0,cambio_esquema_tarifa_millar_a_progresivo_desde_2023,data\sonora\json_predial\2024\SON_PREDIAL_2024_rosario.json
+rosario,Rosario,2025,progresivo,True,0,8,0,0,0,,data\sonora\json_predial\2025\SON_PREDIAL_2025_rosario.json
+sacaliehuachi,Sacaliehuachi,2012,progresivo,True,0,11,0,0,0,,data\sonora\json_predial\2012\SON_PREDIAL_2012_sacaliehuachi.json
+sahuaripa,Sahuaripa,2012,tarifa_millar,True,14,0,0,0,0,,data\sonora\json_predial\2012\SON_PREDIAL_2012_sahuaripa.json
+sahuaripa,Sahuaripa,2013,progresivo,True,0,7,0,0,0,cambio_esquema_tarifa_millar_a_progresivo_desde_2012,data\sonora\json_predial\2013\SON_PREDIAL_2013_sahuaripa.json
+sahuaripa,Sahuaripa,2017,progresivo,True,0,7,0,0,0,,data\sonora\json_predial\2017\SON_PREDIAL_2017_sahuaripa.json
+sahuaripa,Sahuaripa,2018,progresivo,True,0,7,0,0,0,,data\sonora\json_predial\2018\SON_PREDIAL_2018_sahuaripa.json
+sahuaripa,Sahuaripa,2020,progresivo,True,0,7,0,0,0,,data\sonora\json_predial\2020\SON_PREDIAL_2020_sahuaripa.json
+sahuaripa,Sahuaripa,2023,tarifa_millar,True,12,0,0,0,0,cambio_esquema_progresivo_a_tarifa_millar_desde_2020|reclasificado_de_progresivo_a_tarifa_millar,data\sonora\json_predial\2023\SON_PREDIAL_2023_sahuaripa.json
+sajuc,Sajuc,2020,tarifa_millar,True,2,0,0,0,0,reclasificado_de_progresivo_a_tarifa_millar,data\sonora\json_predial\2020\SON_PREDIAL_2020_sajuc.json
+san_felipe_de_jesus,San Felipe De Jesus,2017,tarifa_millar,True,9,0,0,0,0,reclasificado_de_progresivo_a_tarifa_millar,data\sonora\json_predial\2017\SON_PREDIAL_2017_san_felipe_de_jesus.json
+san_felipe_de_jesus,San Felipe De Jesus,2018,progresivo,True,0,5,0,0,0,cambio_esquema_tarifa_millar_a_progresivo_desde_2017,data\sonora\json_predial\2018\SON_PREDIAL_2018_san_felipe_de_jesus.json
+san_felipe_de_jesus,San Felipe De Jesus,2019,otro_no_clasificado,False,0,0,0,0,0,otro_no_clasificado_segmento_vacio,data\sonora\json_predial\2019\SON_PREDIAL_2019_san_felipe_de_jesus.json
+san_felipe_de_jesus,San Felipe De Jesus,2021,otro_no_clasificado,False,0,0,0,0,0,otro_no_clasificado_segmento_vacio,data\sonora\json_predial\2021\SON_PREDIAL_2021_san_felipe_de_jesus.json
+san_felipe_de_jesus,San Felipe De Jesus,2022,otro_no_clasificado,False,0,0,0,0,0,otro_no_clasificado_segmento_vacio,data\sonora\json_predial\2022\SON_PREDIAL_2022_san_felipe_de_jesus.json
+san_felipe_de_jesus,San Felipe De Jesus,2023,tarifa_millar,True,1,0,0,0,0,reclasificado_de_progresivo_a_tarifa_millar,data\sonora\json_predial\2023\SON_PREDIAL_2023_san_felipe_de_jesus.json
+san_felipe_de_jesus,San Felipe De Jesus,2025,otro_no_clasificado,False,0,0,0,0,0,otro_no_clasificado_segmento_vacio,data\sonora\json_predial\2025\SON_PREDIAL_2025_san_felipe_de_jesus.json
+san_ignacio_rio_muerto,San Ignacio Rio Muerto,2013,tarifa_millar,True,11,0,0,0,0,reclasificado_de_progresivo_a_tarifa_millar,data\sonora\json_predial\2013\SON_PREDIAL_2013_san_ignacio_rio_muerto.json
+san_ignacio_rio_muerto,San Ignacio Rio Muerto,2016,progresivo,True,0,11,0,0,0,cambio_esquema_tarifa_millar_a_progresivo_desde_2013,data\sonora\json_predial\2016\SON_PREDIAL_2016_san_ignacio_rio_muerto.json
+san_ignacio_rio_muerto,San Ignacio Rio Muerto,2017,tarifa_millar,True,11,0,0,0,0,cambio_esquema_progresivo_a_tarifa_millar_desde_2016|reclasificado_de_progresivo_a_tarifa_millar,data\sonora\json_predial\2017\SON_PREDIAL_2017_san_ignacio_rio_muerto.json
+san_ignacio_rio_muerto,San Ignacio Rio Muerto,2018,progresivo,True,0,10,0,0,0,cambio_esquema_tarifa_millar_a_progresivo_desde_2017,data\sonora\json_predial\2018\SON_PREDIAL_2018_san_ignacio_rio_muerto.json
+san_ignacio_rio_muerto,San Ignacio Rio Muerto,2020,otro_no_clasificado,False,0,0,0,0,0,otro_no_clasificado_segmento_vacio,data\sonora\json_predial\2020\SON_PREDIAL_2020_san_ignacio_rio_muerto.json
+san_ignacio_rio_muerto,San Ignacio Rio Muerto,2022,progresivo,True,0,10,0,0,0,,data\sonora\json_predial\2022\SON_PREDIAL_2022_san_ignacio_rio_muerto.json
+san_ignacio_rio_muerto,San Ignacio Rio Muerto,2023,progresivo,True,0,10,0,0,0,,data\sonora\json_predial\2023\SON_PREDIAL_2023_san_ignacio_rio_muerto.json
+san_ignacio_rio_muerto,San Ignacio Rio Muerto,2024,progresivo,True,0,10,0,0,0,,data\sonora\json_predial\2024\SON_PREDIAL_2024_san_ignacio_rio_muerto.json
+san_ignacio_rio_muerto,San Ignacio Rio Muerto,2025,tarifa_millar,True,1,0,0,0,0,cambio_brusco_n_filas_10_a_1|cambio_esquema_progresivo_a_tarifa_millar_desde_2024|reclasificado_de_progresivo_a_tarifa_millar,data\sonora\json_predial\2025\SON_PREDIAL_2025_san_ignacio_rio_muerto.json
+san_javier,San Javier,2017,progresivo,True,0,11,0,0,0,,data\sonora\json_predial\2017\SON_PREDIAL_2017_san_javier.json
+san_javier,San Javier,2018,progresivo,True,0,11,0,0,0,,data\sonora\json_predial\2018\SON_PREDIAL_2018_san_javier.json
+san_javier,San Javier,2019,progresivo,True,0,11,0,0,0,,data\sonora\json_predial\2019\SON_PREDIAL_2019_san_javier.json
+san_javier,San Javier,2020,tarifa_millar,True,8,0,0,0,0,cambio_esquema_progresivo_a_tarifa_millar_desde_2019|reclasificado_de_progresivo_a_tarifa_millar,data\sonora\json_predial\2020\SON_PREDIAL_2020_san_javier.json
+san_javier,San Javier,2021,otro_no_clasificado,False,0,0,0,0,0,otro_no_clasificado_segmento_vacio,data\sonora\json_predial\2021\SON_PREDIAL_2021_san_javier.json
+san_javier,San Javier,2022,otro_no_clasificado,False,0,0,0,0,0,otro_no_clasificado_segmento_vacio,data\sonora\json_predial\2022\SON_PREDIAL_2022_san_javier.json
+san_javier,San Javier,2023,progresivo,True,0,11,0,0,0,,data\sonora\json_predial\2023\SON_PREDIAL_2023_san_javier.json
+san_javier,San Javier,2024,otro_no_clasificado,False,0,0,0,0,0,otro_no_clasificado_segmento_vacio,data\sonora\json_predial\2024\SON_PREDIAL_2024_san_javier.json
+san_luis_rio_colorado,San Luis Rio Colorado,2012,tarifa_millar,True,9,0,0,0,0,reclasificado_de_progresivo_a_tarifa_millar,data\sonora\json_predial\2012\SON_PREDIAL_2012_san_luis_rio_colorado.json
+san_luis_rio_colorado,San Luis Rio Colorado,2013,progresivo,True,0,2,0,0,0,cambio_brusco_n_filas_9_a_2|cambio_esquema_tarifa_millar_a_progresivo_desde_2012,data\sonora\json_predial\2013\SON_PREDIAL_2013_san_luis_rio_colorado.json
+san_luis_rio_colorado,San Luis Rio Colorado,2016,tarifa_millar,True,2,0,0,0,0,cambio_esquema_progresivo_a_tarifa_millar_desde_2013,data\sonora\json_predial\2016\SON_PREDIAL_2016_san_luis_rio_colorado.json
+san_luis_rio_colorado,San Luis Rio Colorado,2017,progresivo,True,0,21,0,0,0,cambio_brusco_n_filas_2_a_21|cambio_esquema_tarifa_millar_a_progresivo_desde_2016,data\sonora\json_predial\2017\SON_PREDIAL_2017_san_luis_rio_colorado.json
+san_luis_rio_colorado,San Luis Rio Colorado,2018,tarifa_millar,True,24,0,0,0,0,cambio_esquema_progresivo_a_tarifa_millar_desde_2017,data\sonora\json_predial\2018\SON_PREDIAL_2018_san_luis_rio_colorado.json
+san_luis_rio_colorado,San Luis Rio Colorado,2020,tarifa_millar,True,6,0,0,0,0,cambio_brusco_n_filas_24_a_6,data\sonora\json_predial\2020\SON_PREDIAL_2020_san_luis_rio_colorado.json
+san_luis_rio_colorado,San Luis Rio Colorado,2021,progresivo,True,0,48,0,0,0,cambio_brusco_n_filas_6_a_48|cambio_esquema_tarifa_millar_a_progresivo_desde_2020,data\sonora\json_predial\2021\SON_PREDIAL_2021_san_luis_rio_colorado.json
+san_luis_rio_colorado,San Luis Rio Colorado,2023,tarifa_millar,True,2,0,0,0,0,cambio_brusco_n_filas_48_a_2|cambio_esquema_progresivo_a_tarifa_millar_desde_2021|reclasificado_de_mixto_a_tarifa_millar,data\sonora\json_predial\2023\SON_PREDIAL_2023_san_luis_rio_colorado.json
+san_miguel_de_horcasitas,San Miguel De Horcasitas,2010,tarifa_millar,True,8,0,0,0,0,,data\sonora\json_predial\2010\SON_PREDIAL_2010_san_miguel_de_horcasitas.json
+san_miguel_de_horcasitas,San Miguel De Horcasitas,2017,progresivo,True,0,6,0,0,0,cambio_esquema_tarifa_millar_a_progresivo_desde_2010,data\sonora\json_predial\2017\SON_PREDIAL_2017_san_miguel_de_horcasitas.json
+san_miguel_de_horcasitas,San Miguel De Horcasitas,2018,progresivo,True,0,6,0,0,0,,data\sonora\json_predial\2018\SON_PREDIAL_2018_san_miguel_de_horcasitas.json
+san_miguel_de_horcasitas,San Miguel De Horcasitas,2022,progresivo,True,0,6,0,0,0,,data\sonora\json_predial\2022\SON_PREDIAL_2022_san_miguel_de_horcasitas.json
+san_miguel_de_horcasitas,San Miguel De Horcasitas,2023,tarifa_millar,True,17,0,0,0,0,cambio_brusco_n_filas_6_a_17|cambio_esquema_progresivo_a_tarifa_millar_desde_2022|reclasificado_de_progresivo_a_tarifa_millar,data\sonora\json_predial\2023\SON_PREDIAL_2023_san_miguel_de_horcasitas.json
+san_pedro_de_la_cueva,San Pedro De La Cueva,2013,progresivo,True,0,6,0,0,0,,data\sonora\json_predial\2013\SON_PREDIAL_2013_san_pedro_de_la_cueva.json
+san_pedro_de_la_cueva,San Pedro De La Cueva,2017,tarifa_millar,True,8,0,0,0,0,cambio_esquema_progresivo_a_tarifa_millar_desde_2013|reclasificado_de_progresivo_a_tarifa_millar,data\sonora\json_predial\2017\SON_PREDIAL_2017_san_pedro_de_la_cueva.json
+san_pedro_de_la_cueva,San Pedro De La Cueva,2018,tarifa_millar,True,9,0,0,0,0,reclasificado_de_progresivo_a_tarifa_millar,data\sonora\json_predial\2018\SON_PREDIAL_2018_san_pedro_de_la_cueva.json
+san_pedro_de_la_cueva,San Pedro De La Cueva,2019,progresivo,True,0,6,0,0,0,cambio_esquema_tarifa_millar_a_progresivo_desde_2018,data\sonora\json_predial\2019\SON_PREDIAL_2019_san_pedro_de_la_cueva.json
+san_pedro_de_la_cueva,San Pedro De La Cueva,2020,tarifa_millar,True,10,0,0,0,0,cambio_esquema_progresivo_a_tarifa_millar_desde_2019,data\sonora\json_predial\2020\SON_PREDIAL_2020_san_pedro_de_la_cueva.json
+san_pedro_de_la_cueva,San Pedro De La Cueva,2023,tarifa_millar,True,15,0,0,0,0,reclasificado_de_progresivo_a_tarifa_millar,data\sonora\json_predial\2023\SON_PREDIAL_2023_san_pedro_de_la_cueva.json
+san_pedro_de_la_cueva,San Pedro De La Cueva,2024,otro_no_clasificado,False,0,0,0,0,0,otro_no_clasificado_segmento_vacio,data\sonora\json_predial\2024\SON_PREDIAL_2024_san_pedro_de_la_cueva.json
+san_pedro_de_la_cueva,San Pedro De La Cueva,2025,otro_no_clasificado,False,0,0,0,0,0,otro_no_clasificado_segmento_vacio,data\sonora\json_predial\2025\SON_PREDIAL_2025_san_pedro_de_la_cueva.json
+santa_ana,Santa Ana,2012,progresivo,True,0,11,0,0,0,,data\sonora\json_predial\2012\SON_PREDIAL_2012_santa_ana.json
+santa_ana,Santa Ana,2013,progresivo,True,0,11,0,0,0,,data\sonora\json_predial\2013\SON_PREDIAL_2013_santa_ana.json
+santa_ana,Santa Ana,2017,progresivo,True,0,11,0,0,0,,data\sonora\json_predial\2017\SON_PREDIAL_2017_santa_ana.json
+santa_ana,Santa Ana,2018,progresivo,True,0,11,0,0,0,,data\sonora\json_predial\2018\SON_PREDIAL_2018_santa_ana.json
+santa_ana,Santa Ana,2020,tarifa_millar,True,15,0,0,0,0,cambio_esquema_progresivo_a_tarifa_millar_desde_2018|reclasificado_de_progresivo_a_tarifa_millar,data\sonora\json_predial\2020\SON_PREDIAL_2020_santa_ana.json
+santa_ana,Santa Ana,2021,progresivo,True,0,11,0,0,0,cambio_esquema_tarifa_millar_a_progresivo_desde_2020,data\sonora\json_predial\2021\SON_PREDIAL_2021_santa_ana.json
+santa_ana,Santa Ana,2023,progresivo,True,0,11,0,0,0,,data\sonora\json_predial\2023\SON_PREDIAL_2023_santa_ana.json
+santa_ana,Santa Ana,2024,progresivo,True,0,11,0,0,0,,data\sonora\json_predial\2024\SON_PREDIAL_2024_santa_ana.json
+santa_ana,Santa Ana,2025,progresivo,True,0,11,0,0,0,,data\sonora\json_predial\2025\SON_PREDIAL_2025_santa_ana.json
+santa_cruz,Santa Cruz,2017,progresivo,True,0,11,0,0,0,,data\sonora\json_predial\2017\SON_PREDIAL_2017_santa_cruz.json
+santa_cruz,Santa Cruz,2020,progresivo,True,0,11,0,0,0,,data\sonora\json_predial\2020\SON_PREDIAL_2020_santa_cruz.json
+santa_cruz,Santa Cruz,2022,progresivo,True,0,11,0,0,0,,data\sonora\json_predial\2022\SON_PREDIAL_2022_santa_cruz.json
+santa_cruz,Santa Cruz,2023,progresivo,True,0,11,0,0,0,,data\sonora\json_predial\2023\SON_PREDIAL_2023_santa_cruz.json
+santa_cruz,Santa Cruz,2025,otro_no_clasificado,False,0,0,0,0,0,otro_no_clasificado_segmento_vacio,data\sonora\json_predial\2025\SON_PREDIAL_2025_santa_cruz.json
+saric,Saric,2012,progresivo,True,0,7,0,0,0,,data\sonora\json_predial\2012\SON_PREDIAL_2012_saric.json
+saric,Saric,2017,tarifa_millar,True,2,0,0,0,0,cambio_brusco_n_filas_7_a_2|cambio_esquema_progresivo_a_tarifa_millar_desde_2012|reclasificado_de_progresivo_a_tarifa_millar,data\sonora\json_predial\2017\SON_PREDIAL_2017_saric.json
+saric,Saric,2018,progresivo,True,0,7,0,0,0,cambio_brusco_n_filas_2_a_7|cambio_esquema_tarifa_millar_a_progresivo_desde_2017,data\sonora\json_predial\2018\SON_PREDIAL_2018_saric.json
+saric,Saric,2019,progresivo,True,0,7,0,0,0,,data\sonora\json_predial\2019\SON_PREDIAL_2019_saric.json
+saric,Saric,2021,tarifa_millar,True,1,0,0,0,0,cambio_brusco_n_filas_7_a_1|cambio_esquema_progresivo_a_tarifa_millar_desde_2019|reclasificado_de_progresivo_a_tarifa_millar,data\sonora\json_predial\2021\SON_PREDIAL_2021_saric.json
+saric,Saric,2023,progresivo,True,0,7,0,0,0,cambio_brusco_n_filas_1_a_7|cambio_esquema_tarifa_millar_a_progresivo_desde_2021,data\sonora\json_predial\2023\SON_PREDIAL_2023_saric.json
+soyopa,Soyopa,2012,progresivo,True,0,11,0,0,0,,data\sonora\json_predial\2012\SON_PREDIAL_2012_soyopa.json
+soyopa,Soyopa,2013,tarifa_millar,True,8,0,0,0,0,cambio_esquema_progresivo_a_tarifa_millar_desde_2012|reclasificado_de_progresivo_a_tarifa_millar,data\sonora\json_predial\2013\SON_PREDIAL_2013_soyopa.json
+soyopa,Soyopa,2017,progresivo,True,0,11,0,0,0,cambio_esquema_tarifa_millar_a_progresivo_desde_2013,data\sonora\json_predial\2017\SON_PREDIAL_2017_soyopa.json
+soyopa,Soyopa,2019,cuota_fija_simple,True,0,0,0,1,0,cambio_esquema_progresivo_a_cuota_fija_simple_desde_2017|reclasificado_de_cuota_fija_a_cuota_fija_simple,data\sonora\json_predial\2019\SON_PREDIAL_2019_soyopa.json
+soyopa,Soyopa,2020,tarifa_millar,True,8,0,0,0,0,cambio_esquema_cuota_fija_simple_a_tarifa_millar_desde_2019|reclasificado_de_progresivo_a_tarifa_millar,data\sonora\json_predial\2020\SON_PREDIAL_2020_soyopa.json
+soyopa,Soyopa,2022,progresivo,True,0,11,0,0,0,cambio_esquema_tarifa_millar_a_progresivo_desde_2020,data\sonora\json_predial\2022\SON_PREDIAL_2022_soyopa.json
+soyopa,Soyopa,2023,progresivo,True,0,11,0,0,0,,data\sonora\json_predial\2023\SON_PREDIAL_2023_soyopa.json
+suaqui_grande,Suaqui Grande,2012,tarifa_millar,True,8,0,0,0,0,reclasificado_de_progresivo_a_tarifa_millar,data\sonora\json_predial\2012\SON_PREDIAL_2012_suaqui_grande.json
+suaqui_grande,Suaqui Grande,2017,tarifa_millar,True,8,0,0,0,0,reclasificado_de_progresivo_a_tarifa_millar,data\sonora\json_predial\2017\SON_PREDIAL_2017_suaqui_grande.json
+suaqui_grande,Suaqui Grande,2018,tarifa_millar,True,15,0,0,0,0,reclasificado_de_progresivo_a_tarifa_millar,data\sonora\json_predial\2018\SON_PREDIAL_2018_suaqui_grande.json
+suaqui_grande,Suaqui Grande,2020,tarifa_millar,True,12,0,0,0,0,,data\sonora\json_predial\2020\SON_PREDIAL_2020_suaqui_grande.json
+suaqui_grande,Suaqui Grande,2022,progresivo,True,0,11,0,0,0,cambio_esquema_tarifa_millar_a_progresivo_desde_2020,data\sonora\json_predial\2022\SON_PREDIAL_2022_suaqui_grande.json
+suaqui_grande,Suaqui Grande,2023,progresivo,True,0,6,0,0,0,,data\sonora\json_predial\2023\SON_PREDIAL_2023_suaqui_grande.json
+suaqui_grande,Suaqui Grande,2025,otro_no_clasificado,False,0,0,0,0,0,otro_no_clasificado_segmento_vacio,data\sonora\json_predial\2025\SON_PREDIAL_2025_suaqui_grande.json
+tepache,Tepache,2013,tarifa_millar,True,9,0,0,0,0,reclasificado_de_progresivo_a_tarifa_millar,data\sonora\json_predial\2013\SON_PREDIAL_2013_tepache.json
+tepache,Tepache,2016,progresivo,True,0,11,0,0,0,cambio_esquema_tarifa_millar_a_progresivo_desde_2013,data\sonora\json_predial\2016\SON_PREDIAL_2016_tepache.json
+tepache,Tepache,2017,progresivo,True,0,11,0,0,0,,data\sonora\json_predial\2017\SON_PREDIAL_2017_tepache.json
+tepache,Tepache,2018,progresivo,True,0,11,0,0,0,,data\sonora\json_predial\2018\SON_PREDIAL_2018_tepache.json
+tepache,Tepache,2019,progresivo,True,0,11,0,0,0,,data\sonora\json_predial\2019\SON_PREDIAL_2019_tepache.json
+tepache,Tepache,2021,otro_no_clasificado,False,0,0,0,0,0,otro_no_clasificado_segmento_vacio,data\sonora\json_predial\2021\SON_PREDIAL_2021_tepache.json
+tepache,Tepache,2023,progresivo,True,0,11,0,0,0,,data\sonora\json_predial\2023\SON_PREDIAL_2023_tepache.json
+tepache,Tepache,2024,otro_no_clasificado,False,0,0,0,0,0,otro_no_clasificado_segmento_vacio,data\sonora\json_predial\2024\SON_PREDIAL_2024_tepache.json
+trincheras,Trincheras,2016,progresivo,True,0,11,0,0,0,,data\sonora\json_predial\2016\SON_PREDIAL_2016_trincheras.json
+trincheras,Trincheras,2017,tarifa_millar,True,15,0,0,0,0,cambio_esquema_progresivo_a_tarifa_millar_desde_2016,data\sonora\json_predial\2017\SON_PREDIAL_2017_trincheras.json
+trincheras,Trincheras,2018,progresivo,True,0,5,0,0,0,cambio_brusco_n_filas_15_a_5|cambio_esquema_tarifa_millar_a_progresivo_desde_2017,data\sonora\json_predial\2018\SON_PREDIAL_2018_trincheras.json
+trincheras,Trincheras,2020,tarifa_millar,True,4,0,0,0,0,cambio_esquema_progresivo_a_tarifa_millar_desde_2018|reclasificado_de_mixto_a_tarifa_millar,data\sonora\json_predial\2020\SON_PREDIAL_2020_trincheras.json
+trincheras,Trincheras,2022,progresivo,True,0,11,0,0,0,cambio_brusco_n_filas_4_a_11|cambio_esquema_tarifa_millar_a_progresivo_desde_2020,data\sonora\json_predial\2022\SON_PREDIAL_2022_trincheras.json
+trincheras,Trincheras,2023,progresivo,True,0,5,0,0,0,cambio_brusco_n_filas_11_a_5,data\sonora\json_predial\2023\SON_PREDIAL_2023_trincheras.json
+trincheras,Trincheras,2024,progresivo,True,0,5,0,0,0,,data\sonora\json_predial\2024\SON_PREDIAL_2024_trincheras.json
+tubljtama,Tubljtama,2021,otro_no_clasificado,False,0,0,0,0,0,otro_no_clasificado_segmento_vacio,data\sonora\json_predial\2021\SON_PREDIAL_2021_tubljtama.json
+tubutama,Tubutama,2010,progresivo,True,0,11,0,0,0,,data\sonora\json_predial\2010\SON_PREDIAL_2010_tubutama.json
+tubutama,Tubutama,2011,progresivo,True,0,5,0,0,0,cambio_brusco_n_filas_11_a_5,data\sonora\json_predial\2011\SON_PREDIAL_2011_tubutama.json
+tubutama,Tubutama,2017,progresivo,True,0,5,0,0,0,,data\sonora\json_predial\2017\SON_PREDIAL_2017_tubutama.json
+tubutama,Tubutama,2018,progresivo,True,0,5,0,0,0,,data\sonora\json_predial\2018\SON_PREDIAL_2018_tubutama.json
+tubutama,Tubutama,2019,tarifa_millar,True,11,0,0,0,0,cambio_brusco_n_filas_5_a_11|cambio_esquema_progresivo_a_tarifa_millar_desde_2018,data\sonora\json_predial\2019\SON_PREDIAL_2019_tubutama.json
+tubutama,Tubutama,2020,progresivo,True,0,5,0,0,0,cambio_brusco_n_filas_11_a_5|cambio_esquema_tarifa_millar_a_progresivo_desde_2019,data\sonora\json_predial\2020\SON_PREDIAL_2020_tubutama.json
+tubutama,Tubutama,2022,progresivo,True,0,5,0,0,0,,data\sonora\json_predial\2022\SON_PREDIAL_2022_tubutama.json
+tubutama,Tubutama,2023,progresivo,True,0,5,0,0,0,,data\sonora\json_predial\2023\SON_PREDIAL_2023_tubutama.json
+tubutama,Tubutama,2024,otro_no_clasificado,False,0,0,0,0,0,otro_no_clasificado_segmento_vacio,data\sonora\json_predial\2024\SON_PREDIAL_2024_tubutama.json
+tubutama,Tubutama,2025,otro_no_clasificado,False,0,0,0,0,0,otro_no_clasificado_segmento_vacio,data\sonora\json_predial\2025\SON_PREDIAL_2025_tubutama.json
+ures,Ures,2020,otro_no_clasificado,False,0,0,0,0,0,otro_no_clasificado_segmento_vacio,data\sonora\json_predial\2020\SON_PREDIAL_2020_ures.json
+ures,Ures,2022,otro_no_clasificado,False,0,0,0,0,0,otro_no_clasificado_segmento_vacio,data\sonora\json_predial\2022\SON_PREDIAL_2022_ures.json
+ures,Ures,2023,tarifa_millar,True,9,0,0,0,0,reclasificado_de_progresivo_a_tarifa_millar,data\sonora\json_predial\2023\SON_PREDIAL_2023_ures.json
+ures,Ures,2024,tarifa_millar,True,9,0,0,0,0,reclasificado_de_progresivo_a_tarifa_millar,data\sonora\json_predial\2024\SON_PREDIAL_2024_ures.json
+villa_hidalgo,Villa Hidalgo,2012,progresivo,True,0,3,0,0,0,,data\sonora\json_predial\2012\SON_PREDIAL_2012_villa_hidalgo.json
+villa_hidalgo,Villa Hidalgo,2017,progresivo,True,0,5,0,0,0,,data\sonora\json_predial\2017\SON_PREDIAL_2017_villa_hidalgo.json
+villa_hidalgo,Villa Hidalgo,2023,tarifa_millar,True,8,0,0,0,0,cambio_esquema_progresivo_a_tarifa_millar_desde_2017|reclasificado_de_progresivo_a_tarifa_millar,data\sonora\json_predial\2023\SON_PREDIAL_2023_villa_hidalgo.json
+villa_hidalgo,Villa Hidalgo,2024,otro_no_clasificado,False,0,0,0,0,0,otro_no_clasificado_segmento_vacio,data\sonora\json_predial\2024\SON_PREDIAL_2024_villa_hidalgo.json
+villa_hidalgo,Villa Hidalgo,2025,otro_no_clasificado,False,0,0,0,0,0,otro_no_clasificado_segmento_vacio,data\sonora\json_predial\2025\SON_PREDIAL_2025_villa_hidalgo.json
+villa_judalgo,Villa Judalgo,2011,tarifa_millar,True,9,0,0,0,0,reclasificado_de_progresivo_a_tarifa_millar,data\sonora\json_predial\2011\SON_PREDIAL_2011_villa_judalgo.json
+villa_pesqueira,Villa Pesqueira,2012,progresivo,True,0,5,0,0,0,,data\sonora\json_predial\2012\SON_PREDIAL_2012_villa_pesqueira.json
+villa_pesqueira,Villa Pesqueira,2017,progresivo,True,0,5,0,0,0,,data\sonora\json_predial\2017\SON_PREDIAL_2017_villa_pesqueira.json
+villa_pesqueira,Villa Pesqueira,2018,progresivo,True,0,5,0,0,0,,data\sonora\json_predial\2018\SON_PREDIAL_2018_villa_pesqueira.json
+villa_pesqueira,Villa Pesqueira,2020,tarifa_millar,True,16,0,0,0,0,cambio_brusco_n_filas_5_a_16|cambio_esquema_progresivo_a_tarifa_millar_desde_2018|reclasificado_de_progresivo_a_tarifa_millar,data\sonora\json_predial\2020\SON_PREDIAL_2020_villa_pesqueira.json
+villa_pesqueira,Villa Pesqueira,2023,tarifa_millar,True,16,0,0,0,0,reclasificado_de_progresivo_a_tarifa_millar,data\sonora\json_predial\2023\SON_PREDIAL_2023_villa_pesqueira.json
+villa_pesqueira,Villa Pesqueira,2024,otro_no_clasificado,False,0,0,0,0,0,otro_no_clasificado_segmento_vacio,data\sonora\json_predial\2024\SON_PREDIAL_2024_villa_pesqueira.json
+yecora,Yecora,2012,tarifa_millar,True,11,0,0,0,0,reclasificado_de_progresivo_a_tarifa_millar,data\sonora\json_predial\2012\SON_PREDIAL_2012_yecora.json
+yecora,Yecora,2017,progresivo,True,0,11,0,0,0,cambio_esquema_tarifa_millar_a_progresivo_desde_2012,data\sonora\json_predial\2017\SON_PREDIAL_2017_yecora.json
+yecora,Yecora,2018,tarifa_millar,True,10,0,0,0,0,cambio_esquema_progresivo_a_tarifa_millar_desde_2017|reclasificado_de_progresivo_a_tarifa_millar,data\sonora\json_predial\2018\SON_PREDIAL_2018_yecora.json
+yecora,Yecora,2020,tarifa_millar,True,11,0,0,0,0,reclasificado_de_progresivo_a_tarifa_millar,data\sonora\json_predial\2020\SON_PREDIAL_2020_yecora.json
+yitcora,Yitcora,2019,progresivo,True,0,11,0,0,0,,data\sonora\json_predial\2019\SON_PREDIAL_2019_yitcora.json

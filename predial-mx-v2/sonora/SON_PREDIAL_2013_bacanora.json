@@ -1,0 +1,73 @@
+{
+  "predial": {
+    "tipo_esquema": "progresivo",
+    "tabla": [
+      {
+        "n_rango": 1,
+        "inferior": 0.01,
+        "superior": 38000.0,
+        "cuota_fija": 43.63,
+        "tasa_marginal": 0.0
+      },
+      {
+        "n_rango": 2,
+        "inferior": 38000.0,
+        "superior": 76000.0,
+        "cuota_fija": 43.63,
+        "tasa_marginal": 0.4154
+      },
+      {
+        "n_rango": 3,
+        "inferior": 76000.0,
+        "superior": 144400.0,
+        "cuota_fija": 57.53,
+        "tasa_marginal": 0.9237
+      },
+      {
+        "n_rango": 4,
+        "inferior": 144400.0,
+        "superior": 259920.0,
+        "cuota_fija": 120.72,
+        "tasa_marginal": 1.3422
+      },
+      {
+        "n_rango": 5,
+        "inferior": 259920.0,
+        "superior": null,
+        "cuota_fija": 275.83,
+        "tasa_marginal": 1.4407
+      }
+    ],
+    "minimo_predial": {
+      "monto": 43.63,
+      "periodicidad": "anual",
+      "unidad": "pesos"
+    },
+    "comentarios": "Tarifa principal tomada de predios edificados. Tarifa paralela para predios no edificados: 0.01-18963.88 cuota mínima 43.63; 18963.89-22191.00 tasa 2.3006 al millar; 22191.01 en adelante 2.9625 al millar. Tarifa paralela para predios rurales por hectárea con categorías al millar; incluye Minero 1: 1.0989 al millar. El artículo 7 establece impuesto predial ejidal de 2% sobre el valor de la producción comercializada.",
+    "clasificacion_justificacion": null
+  },
+  "_meta": {
+    "fuente": "pdf_vision_multi",
+    "modelo": "gpt-5.4"
+  },
+  "_meta_v2": {
+    "intentos": 1,
+    "requiere_revision": false,
+    "escalado": true,
+    "razon": "rescate_via_vision_multi",
+    "usado_reocr": false,
+    "usado_vision": true,
+    "usado_vision_multi": true,
+    "tokens": {
+      "input": 117519,
+      "output": 837,
+      "cached": 0
+    },
+    "cvegeo": "26009",
+    "estado": "sonora",
+    "anio": 2013,
+    "pdf_stem": "2012CXC53XIII",
+    "elapsed_sec_pdf": 170.68799999996554,
+    "razon_no_encontrado": null
+  }
+}

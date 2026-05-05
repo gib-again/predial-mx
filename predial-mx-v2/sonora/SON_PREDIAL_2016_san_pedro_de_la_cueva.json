@@ -1,0 +1,80 @@
+{
+  "predial": {
+    "tipo_esquema": "progresivo",
+    "tabla": [
+      {
+        "n_rango": 1,
+        "inferior": 0.01,
+        "superior": 38000.0,
+        "cuota_fija": 46.51,
+        "tasa_marginal": 0.0
+      },
+      {
+        "n_rango": 2,
+        "inferior": 38000.01,
+        "superior": 76000.0,
+        "cuota_fija": 46.51,
+        "tasa_marginal": 0.5409
+      },
+      {
+        "n_rango": 3,
+        "inferior": 76000.01,
+        "superior": 144400.0,
+        "cuota_fija": 65.08,
+        "tasa_marginal": 1.0677
+      },
+      {
+        "n_rango": 4,
+        "inferior": 144400.01,
+        "superior": 259920.0,
+        "cuota_fija": 138.12,
+        "tasa_marginal": 1.725
+      },
+      {
+        "n_rango": 5,
+        "inferior": 259920.01,
+        "superior": 441864.0,
+        "cuota_fija": 337.36,
+        "tasa_marginal": 1.7262
+      },
+      {
+        "n_rango": 6,
+        "inferior": 441864.01,
+        "superior": null,
+        "cuota_fija": 651.42,
+        "tasa_marginal": 1.7272
+      }
+    ],
+    "minimo_predial": {
+      "monto": 46.51,
+      "periodicidad": "anual",
+      "unidad": "pesos"
+    },
+    "comentarios": "Tabla principal tomada de predios edificados (Artículo 5, fracción I). Existen tarifas paralelas para predios no edificados: cuota mínima de 46.51 hasta 15,169.60 y 3.0661 / 3.9493 al millar en rangos posteriores; para predios rústicos por hectárea según categoría: riego de gravedad 1 0.9404, riego de gravedad 2 1.6527, riego de bombeo 1 1.6450, riego de bombeo 2 1.6704, riego de temporal única 2.5059, agostadero 1 1.2875, agostadero 2 1.6335, agostadero 3 0.2574; y para edificaciones de predios rurales: cuota mínima de 46.51 hasta 40,144.23 y después 1.1586, 1.2166, 1.3435, 1.4594, 1.5531, 1.6220 y 1.7491 al millar. La ley también establece impuesto predial ejidal de 5.00 por hectárea.",
+    "clasificacion_justificacion": null
+  },
+  "_meta": {
+    "fuente": "pdf_vision_multi",
+    "modelo": "gpt-5.4"
+  },
+  "_meta_v2": {
+    "intentos": 1,
+    "requiere_revision": false,
+    "escalado": true,
+    "razon": "rescate_via_vision_multi",
+    "usado_reocr": false,
+    "usado_vision": true,
+    "usado_vision_multi": true,
+    "tokens": {
+      "input": 141098,
+      "output": 604,
+      "cached": 6912
+    },
+    "cvegeo": "26057",
+    "estado": "sonora",
+    "anio": 2016,
+    "pdf_stem": "2015CXCVI51XVIII",
+    "elapsed_sec_pdf": 82.85899999993853,
+    "razon_no_encontrado": null
+  }
+}

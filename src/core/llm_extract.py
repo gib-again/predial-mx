@@ -41,11 +41,20 @@ from typing import Any
 from openai import OpenAI
 
 from src.core.text_utils import parse_predial_filename
+from src.core.validation import reclasificar
 
 # ── Configuración del modelo ──
 
 OPENAI_MODEL = os.environ.get("OPENAI_MODEL", "gpt-5.4-mini")
 OPENAI_VISION_MODEL = os.environ.get("OPENAI_VISION_MODEL", OPENAI_MODEL)
+# Modelo "fallback" full para casos que mini no resuelve bien (ej. vision multi-muni
+# con tablas heterogéneas). Default gpt-5.4 full.
+OPENAI_MODEL_FALLBACK = os.environ.get("OPENAI_MODEL_FALLBACK", "gpt-5.4")
+
+# Constantes de paths usadas por scripts de Sonora (vision_multi orchestrator,
+# compactar_tipo_esquema). Permite imports `from src.core.llm_extract import OUTPUT_ROOT, ROOT`.
+OUTPUT_ROOT = Path("predial-mx-v2")
+ROOT = Path.cwd()
 
 # Activar/desactivar structured output (default: activado)
 USE_STRUCTURED_OUTPUT = os.environ.get("OPENAI_STRUCTURED_OUTPUT", "1") == "1"
@@ -625,6 +634,140 @@ def _encode_pdf_pages(pdf_path: Path) -> list[str]:
     return images
 
 
+def _pdf_pages_to_data_urls(
+    pdf_path: Path,
+    *,
+    pages: list[int] | None = None,
+    dpi: int = 150,
+    max_pages: int = 80,
+    max_total_mb: float = 35.0,
+) -> list[str]:
+    """Renderiza páginas de un PDF a URLs `data:image/png;base64,...`.
+
+    Helper consumido por `call_llm_vision_multi`. Permite seleccionar páginas
+    específicas (1-indexed) o procesar todo el PDF hasta un cap.
+
+    DPI adaptativo: si el tamaño total excede `max_total_mb` (límite OpenAI
+    es 50 MB por mensaje, pero base64 agrega ~33% overhead → cap raw a 35 MB
+    para quedar bajo 50 MB enviado), reduce DPI progresivamente
+    (150→120→100→85→72) hasta caber. Más allá: trunca al subset que quepa.
+
+    Args:
+        pdf_path: PDF a procesar.
+        pages: páginas 1-indexed a renderizar; None = todas.
+        dpi: resolución inicial del rasterizado.
+        max_pages: cap absoluto de páginas a procesar.
+        max_total_mb: cap del tamaño total agregado de las imágenes.
+
+    Returns:
+        Lista de URLs `data:image/png;base64,<...>` aptas para mensajes vision.
+        Lista vacía si el PDF no se pudo abrir o tiene 0 páginas.
+    """
+    import fitz
+
+    try:
+        with fitz.open(str(pdf_path)) as doc:
+            n_pages = doc.page_count
+            if n_pages == 0:
+                return []
+            if pages is None:
+                page_indices = list(range(min(n_pages, max_pages)))
+            else:
+                page_indices = [
+                    p - 1 for p in pages
+                    if 1 <= p <= n_pages
+                ][:max_pages]
+
+            # Probar DPIs progresivamente bajos hasta caber en max_total_mb
+            dpi_ladder = [dpi, 120, 100, 85, 72]
+            # Dedup conservando orden
+            seen: set[int] = set()
+            dpi_ladder = [d for d in dpi_ladder if not (d in seen or seen.add(d))]
+
+            max_bytes = int(max_total_mb * 1024 * 1024)
+            for try_dpi in dpi_ladder:
+                page_blobs: list[bytes] = []
+                total = 0
+                aborted = False
+                for idx in page_indices:
+                    page = doc[idx]
+                    pix = page.get_pixmap(dpi=try_dpi)
+                    img_bytes = pix.tobytes("png")
+                    if total + len(img_bytes) > max_bytes:
+                        aborted = True
+                        break
+                    page_blobs.append(img_bytes)
+                    total += len(img_bytes)
+                if not aborted:
+                    # Cabe completo. Convertir a URLs y devolver.
+                    return [
+                        f"data:image/png;base64,{base64.b64encode(b).decode('utf-8')}"
+                        for b in page_blobs
+                    ]
+                # No cupo a este DPI — bajar y reintentar.
+
+            # Si NINGÚN DPI cupo: devolver el truncado al DPI más bajo.
+            min_dpi = dpi_ladder[-1]
+            page_blobs = []
+            total = 0
+            for idx in page_indices:
+                page = doc[idx]
+                pix = page.get_pixmap(dpi=min_dpi)
+                img_bytes = pix.tobytes("png")
+                if total + len(img_bytes) > max_bytes:
+                    break
+                page_blobs.append(img_bytes)
+                total += len(img_bytes)
+            return [
+                f"data:image/png;base64,{base64.b64encode(b).decode('utf-8')}"
+                for b in page_blobs
+            ]
+    except Exception:
+        return []
+
+
+def _patch_schema_for_openai(schema: dict) -> dict:
+    """Normaliza JSON Schema de Pydantic para el strict mode de OpenAI.
+
+    El strict mode de OpenAI requiere:
+      - `additionalProperties: False` en cada object
+      - Todos los properties listados en `required` (incluye los Optional → null)
+      - No usar `oneOf` (preferir `anyOf`)
+      - Sin `default`, `title`, `discriminator` extraviados
+
+    Esta función modifica el schema in-place y lo devuelve.
+    """
+    def _walk(node):
+        if isinstance(node, dict):
+            # oneOf → anyOf (OpenAI strict no soporta oneOf)
+            if "oneOf" in node and "anyOf" not in node:
+                node["anyOf"] = node.pop("oneOf")
+            # Eliminar discriminator (OpenAI strict no lo soporta)
+            node.pop("discriminator", None)
+            # Eliminar title y default que OpenAI a veces rechaza
+            node.pop("title", None)
+            node.pop("default", None)
+            # Para objects: forzar additionalProperties=False y required=todos
+            if node.get("type") == "object" and "properties" in node:
+                node["additionalProperties"] = False
+                if "required" not in node:
+                    node["required"] = list(node["properties"].keys())
+                else:
+                    # Asegurar que TODOS los properties estén en required
+                    props = list(node["properties"].keys())
+                    existing = set(node["required"])
+                    for p in props:
+                        if p not in existing:
+                            node["required"].append(p)
+            for v in node.values():
+                _walk(v)
+        elif isinstance(node, list):
+            for item in node:
+                _walk(item)
+    _walk(schema)
+    return schema
+
+
 # ══════════════════════════════════════════════════════════════
 # Llamada LLM (texto) con structured output
 # ══════════════════════════════════════════════════════════════
@@ -739,6 +882,329 @@ def call_llm_vision(
             last_error = e
 
     raise last_error  # type: ignore
+
+
+# ══════════════════════════════════════════════════════════════
+# Vision multi-municipio (1 PDF → N municipios en 1 llamada)
+# ══════════════════════════════════════════════════════════════
+#
+# Para boletines colectivos donde varias Leyes de Ingresos están en un mismo
+# PDF, este path hace UNA sola llamada de visión con la lista de municipios
+# esperados. Pensado para rescate de huecos (Sonora pre/post-2017 con OCR
+# degradado). Default model: OPENAI_MODEL_FALLBACK (gpt-5.4 full).
+
+from dataclasses import dataclass as _dataclass  # alias para no chocar
+from pydantic import BaseModel as _BaseModel, Field as _Field, ValidationError as _ValidationError
+
+# Lazy import de schema (evita carga al importar el módulo si no se usa)
+_PredialOutputV2 = None
+def _get_predial_output_v2():
+    global _PredialOutputV2
+    if _PredialOutputV2 is None:
+        from src.extraction.schema_v2 import PredialOutputV2
+        _PredialOutputV2 = PredialOutputV2
+    return _PredialOutputV2
+
+
+class VisionMultiItem(_BaseModel):
+    """Resultado individual de un municipio dentro de una llamada multi."""
+    slug: str = _Field(
+        ...,
+        description=(
+            "Slug snake_case del municipio, EXACTAMENTE como aparece en la "
+            "lista enviada en el prompt. NO inventar slugs."
+        ),
+    )
+    encontrado: bool = _Field(
+        ...,
+        description=(
+            "True si la ley del municipio aparece en el PDF y se pudo "
+            "extraer la mecánica del predial. False en cualquier otro caso."
+        ),
+    )
+    razon_no_encontrado: str | None = _Field(
+        None,
+        description=(
+            "Si encontrado=False, por qué. Valores típicos: "
+            "'no_aparece_en_pdf' | 'ocr_ilegible' | 'tarifa_no_extraible' | "
+            "'remite_a_otra_ley' | 'otro'. Null si encontrado=True."
+        ),
+    )
+    # `output` es PredialOutputV2 pero lo declaramos lazy para evitar circular
+    # de imports al cargar el módulo. Se valida runtime al construir el wrapper.
+    output: dict | None = _Field(
+        None,
+        description=(
+            "Extracción completa siguiendo PredialOutputV2 si encontrado=True. "
+            "Null si encontrado=False."
+        ),
+    )
+
+
+class VisionMultiOutput(_BaseModel):
+    """Wrapper de la respuesta multi: lista de items, uno por municipio pedido."""
+    resultados: list[VisionMultiItem] = _Field(
+        ...,
+        description=(
+            "Una entrada por cada municipio en la lista enviada. El orden "
+            "no importa, pero CADA slug pedido debe tener exactamente UNA "
+            "entrada (no duplicar, no omitir)."
+        ),
+    )
+
+
+@_dataclass
+class _LLMVisionMultiCall:
+    """Análogo a _LLMCall pero para multi-municipio."""
+    output: VisionMultiOutput | None
+    error: str | None
+    tokens_in: int
+    tokens_out: int
+    tokens_cached: int
+    modelo: str
+    n_imagenes: int = 0
+
+
+_vision_multi_schema_cache: dict | None = None
+
+
+def _build_vision_multi_schema() -> dict:
+    """Construye el JSON schema strict para VisionMultiOutput.
+
+    Reemplaza el `output: dict | None` por el schema completo de PredialOutputV2
+    (referencia inline) para que el modelo entregue la extracción tipada.
+    """
+    global _vision_multi_schema_cache
+    if _vision_multi_schema_cache is not None:
+        return _vision_multi_schema_cache
+
+    PredialOutputV2 = _get_predial_output_v2()
+
+    # Construir el schema directo desde Pydantic
+    base_schema = VisionMultiOutput.model_json_schema()
+    predial_schema = PredialOutputV2.model_json_schema()
+
+    # Inyectar el schema de PredialOutputV2 en el campo `output` de cada item.
+    # base_schema['$defs']['VisionMultiItem']['properties']['output'] actualmente
+    # es {anyOf: [{type: dict}, {type: null}]} aproximadamente. Lo reemplazamos
+    # por un anyOf con el schema completo + null.
+    defs = base_schema.setdefault("$defs", {})
+    # Mover los $defs de PredialOutputV2 al schema raíz (merge)
+    for name, definition in (predial_schema.get("$defs") or {}).items():
+        defs.setdefault(name, definition)
+
+    # El root del PredialOutputV2 schema (sin sus $defs) lo usamos como output
+    predial_root = {k: v for k, v in predial_schema.items() if k != "$defs"}
+
+    # Encontrar VisionMultiItem en defs
+    vmi = defs.get("VisionMultiItem")
+    if vmi is None:
+        # Pydantic puede no haber generado $defs si VisionMultiItem es inline;
+        # buscar en items del array `resultados` directamente
+        items_schema = base_schema["properties"]["resultados"]["items"]
+        if "$ref" in items_schema:
+            ref_name = items_schema["$ref"].rsplit("/", 1)[-1]
+            vmi = defs[ref_name]
+        else:
+            vmi = items_schema
+
+    # Reemplazar el campo output con anyOf [PredialOutputV2, null]
+    vmi["properties"]["output"] = {
+        "anyOf": [predial_root, {"type": "null"}],
+    }
+
+    # Patch específico para tabla_cruda (list[dict] genérico) — OpenAI strict
+    # rechaza objects sin additionalProperties=False explícito. Sustituimos
+    # items por una shape mínima auditable.
+    onc = defs.get("OtroNoClasificadoSchema")
+    if onc is not None and "tabla_cruda" in onc.get("properties", {}):
+        onc["properties"]["tabla_cruda"]["items"] = {
+            "type": "object",
+            "additionalProperties": False,
+            "properties": {
+                "descripcion": {"type": "string"},
+                "valores": {"type": "string"},
+            },
+            "required": ["descripcion", "valores"],
+        }
+
+    # Aplicar patch para OpenAI strict mode (oneOf→anyOf, additionalProperties=False, required)
+    _patch_schema_for_openai(base_schema)
+
+    _vision_multi_schema_cache = base_schema
+    return base_schema
+
+
+def call_llm_vision_multi(
+    pdf_path: Path,
+    *,
+    estado_pretty: str,
+    anio: int,
+    municipios: list[dict],
+    pages: list[int] | None = None,
+    dpi: int = 150,
+    detail: str = "high",
+    max_pages: int = 80,
+    model: str | None = None,
+    system_prompt: str | None = None,
+    user_template: str | None = None,
+) -> _LLMVisionMultiCall:
+    """Vision multi-municipio: 1 PDF → N extracciones predial en 1 llamada.
+
+    Args:
+        pdf_path: PDF a procesar (típicamente un boletín con varios munis).
+        estado_pretty: "Sonora", "Coahuila", etc.
+        anio: ejercicio fiscal.
+        municipios: [{"slug": "agua_prieta", "nombre": "Agua Prieta"}, ...].
+        pages: páginas 1-indexed o None para todas.
+        dpi: resolución del rasterizado. 150 = balance legibilidad/tokens.
+        detail: "high" (default, ~1500 tok/img) o "low" (~85 tok/img).
+        max_pages: cap de seguridad por PDF (default 80).
+        model: override del modelo; default OPENAI_MODEL_FALLBACK (gpt-5.4).
+        system_prompt: override del system; default SYSTEM_PROMPT_V3.
+        user_template: override del template; default USER_TEMPLATE_VISION_MULTI.
+
+    Returns:
+        _LLMVisionMultiCall con `output` o `error`.
+    """
+    from src.core.predial_prompts_v3 import (
+        SYSTEM_PROMPT_V3, USER_TEMPLATE_VISION_MULTI,
+    )
+
+    sys_prompt = system_prompt or SYSTEM_PROMPT_V3
+    usr_template = user_template or USER_TEMPLATE_VISION_MULTI
+    modelo = model or OPENAI_MODEL_FALLBACK
+
+    # 1. Renderizar páginas → URLs base64
+    image_urls = _pdf_pages_to_data_urls(
+        pdf_path, pages=pages, dpi=dpi, max_pages=max_pages,
+    )
+    if not image_urls:
+        return _LLMVisionMultiCall(
+            output=None, error="render_failed: no images produced",
+            tokens_in=0, tokens_out=0, tokens_cached=0, modelo=modelo,
+        )
+
+    # 2. Construir lista numerada de municipios
+    lista_munis_str = "\n".join(
+        f"  {i+1}. slug={m['slug']}  nombre={m['nombre']}"
+        for i, m in enumerate(municipios)
+    )
+    user_text = usr_template.format(
+        ESTADO=estado_pretty,
+        ANIO=anio,
+        LISTA_MUNICIPIOS=lista_munis_str,
+    )
+
+    # 3. Mensajes vision con detail explícito
+    user_content: list[dict] = [{"type": "text", "text": user_text}]
+    for url in image_urls:
+        user_content.append({
+            "type": "image_url",
+            "image_url": {"url": url, "detail": detail},
+        })
+    messages = [
+        {"role": "system", "content": sys_prompt},
+        {"role": "user", "content": user_content},
+    ]
+
+    # 4. Schema strict
+    schema = _build_vision_multi_schema()
+
+    # 5. Llamada API
+    client = _get_client()
+    try:
+        completion = client.chat.completions.create(
+            model=modelo,
+            messages=messages,
+            response_format={
+                "type": "json_schema",
+                "json_schema": {
+                    "name": "VisionMultiOutput",
+                    "strict": True,
+                    "schema": schema,
+                },
+            },
+        )
+    except Exception as e:
+        return _LLMVisionMultiCall(
+            output=None, error=f"api_error: {type(e).__name__}: {e}",
+            tokens_in=0, tokens_out=0, tokens_cached=0,
+            modelo=modelo, n_imagenes=len(image_urls),
+        )
+
+    # 6. Parse usage
+    msg = completion.choices[0].message
+    usage = completion.usage
+    tokens_in = usage.prompt_tokens if usage else 0
+    tokens_out = usage.completion_tokens if usage else 0
+    tokens_cached = 0
+    if usage and getattr(usage, "prompt_tokens_details", None):
+        tokens_cached = getattr(usage.prompt_tokens_details, "cached_tokens", 0) or 0
+
+    # 7. Manejar refusal / vacío / decode
+    if getattr(msg, "refusal", None):
+        return _LLMVisionMultiCall(
+            output=None, error=f"refusal: {msg.refusal}",
+            tokens_in=tokens_in, tokens_out=tokens_out, tokens_cached=tokens_cached,
+            modelo=modelo, n_imagenes=len(image_urls),
+        )
+    raw = msg.content
+    if not raw:
+        return _LLMVisionMultiCall(
+            output=None, error="respuesta_vacia",
+            tokens_in=tokens_in, tokens_out=tokens_out, tokens_cached=tokens_cached,
+            modelo=modelo, n_imagenes=len(image_urls),
+        )
+    try:
+        data = json.loads(raw)
+    except json.JSONDecodeError as e:
+        return _LLMVisionMultiCall(
+            output=None, error=f"json_decode: {e}",
+            tokens_in=tokens_in, tokens_out=tokens_out, tokens_cached=tokens_cached,
+            modelo=modelo, n_imagenes=len(image_urls),
+        )
+
+    # 8. Validar contra Pydantic (parcial: VisionMultiOutput; el inner output
+    #    permanece como dict y se valida individualmente por el orquestador).
+    try:
+        parsed = VisionMultiOutput.model_validate(data)
+    except _ValidationError as e:
+        err_msg = "; ".join(
+            f"{'.'.join(str(p) for p in err['loc'])}: {err['msg']}"
+            for err in e.errors()[:5]
+        )
+        return _LLMVisionMultiCall(
+            output=None, error=f"validation_error: {err_msg}",
+            tokens_in=tokens_in, tokens_out=tokens_out, tokens_cached=tokens_cached,
+            modelo=modelo, n_imagenes=len(image_urls),
+        )
+
+    # 9. Promover cada item.output (dict) a PredialOutputV2 si es posible
+    PredialOutputV2 = _get_predial_output_v2()
+    for item in parsed.resultados:
+        if item.encontrado and isinstance(item.output, dict):
+            try:
+                # Validar y guardar la instancia tipada en place
+                # (mantiene compatibilidad con el orquestador que espera
+                # item.output con .predial accessible)
+                validated = PredialOutputV2.model_validate(item.output)
+                # Pydantic v2: asignar atributo arbitrario solo si extra='allow'.
+                # Aquí guardamos el dump validado de nuevo (re-serializado limpio).
+                item.output = validated.model_dump(mode="json", by_alias=True)
+            except _ValidationError as ve:
+                # No falla el batch — marca el item como no_validable.
+                item.encontrado = False
+                item.razon_no_encontrado = (
+                    f"output_validation_failed: {ve.errors()[0].get('msg', '')[:80]}"
+                )
+                item.output = None
+
+    return _LLMVisionMultiCall(
+        output=parsed, error=None,
+        tokens_in=tokens_in, tokens_out=tokens_out, tokens_cached=tokens_cached,
+        modelo=modelo, n_imagenes=len(image_urls),
+    )
 
 
 # Extensión de TXT (+5pp antes, +2pp después) para fallback intermedio
@@ -1413,6 +1879,8 @@ def download_batch_results(
 
         # Agregar metadata
         data["_meta"] = {"fuente": "txt", "modelo": OPENAI_MODEL}
+        # Convertir v1 LLM → v2 typed schema antes de persistir
+        data = _v2ify_predial(data)
 
         out_dir = json_dir / str(anio)
         out_dir.mkdir(parents=True, exist_ok=True)
@@ -1427,6 +1895,36 @@ def download_batch_results(
     # ══════════════════════════════════════════════════════════════
 # Entry point principal (llamado por el pipeline)
 # ══════════════════════════════════════════════════════════════
+
+def _v2ify_predial(data: dict) -> dict:
+    """Convierte el `predial` (formato v1 LLM) al schema v2 tipado in-place.
+
+    Aplica `reclasificar()` para mapear los campos v1 (tabla_tarifa_millar,
+    tabla_progresiva, etc.) a la variante v2 unificada (single `tabla` con
+    estructura tipada por `tipo_esquema`). Esto garantiza que TODOS los
+    JSONs persistidos por extract_single/extract_all queden en schema v2,
+    listos para el panel sin pasar por convert_v1_to_v2.
+
+    Si reclasificar falla por cualquier motivo, mantiene el `predial` v1
+    original y emite un warning. El caller decide qué hacer.
+
+    Args:
+        data: dict con clave 'predial' (v1) tal como lo retorna call_llm.
+
+    Returns:
+        El mismo dict con `data['predial']` re-emitido en formato v2.
+    """
+    pred = data.get("predial")
+    if not isinstance(pred, dict):
+        return data
+    try:
+        variant = reclasificar(pred)
+        data["predial"] = variant.model_dump(mode="json")
+    except Exception as e:
+        # No-op: preserva el v1 original. Posible causa: predial corrupto.
+        print(f"    [WARN] _v2ify_predial: reclasificar() falló ({e})")
+    return data
+
 
 def extract_all(
     txt_dir: Path,
@@ -1692,6 +2190,8 @@ def extract_all(
             "fuente": "pdf_vision" if used_pdf else ("txt_extendido" if used_ext_txt else "txt"),
             "modelo": OPENAI_VISION_MODEL if used_pdf else OPENAI_MODEL,
         }
+        # Convertir v1 LLM → v2 typed schema antes de persistir
+        data = _v2ify_predial(data)
 
         try:
             with out_path.open("w", encoding="utf-8") as f:
@@ -1865,6 +2365,8 @@ def extract_single(
         "fuente": "pdf_vision" if used_pdf else ("txt_extendido" if used_ext_txt else "txt"),
         "modelo": OPENAI_VISION_MODEL if used_pdf else OPENAI_MODEL,
     }
+    # Convertir v1 LLM → v2 typed schema antes de persistir
+    data = _v2ify_predial(data)
 
     try:
         out_path.write_text(json.dumps(data, ensure_ascii=False, indent=2), encoding="utf-8")

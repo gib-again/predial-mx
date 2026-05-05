@@ -1,0 +1,45 @@
+{
+  "predial": {
+    "tipo_esquema": "tasa_unica",
+    "tabla": [
+      {
+        "descripcion": "Tasa general aplicable del impuesto predial rural, urbano y rústico",
+        "tasa": 4.86,
+        "base_calculo": "valor_catastral",
+        "unidad": "al_millar",
+        "cuota_fija_adicional": null
+      }
+    ],
+    "minimo_predial": {
+      "monto": 1.0,
+      "periodicidad": "anual",
+      "unidad": "uma"
+    },
+    "comentarios": "Artículo 10.- La tasa general aplicable del impuesto predial rural, urbano y rústico será 4.86 al millar sobre el valor catastral de los inmuebles. En ningún caso el impuesto predial causado será menor a una Unidad de Medida y Actualización vigente. Se establece además en Sección II un impuesto predial ejidal con tarifa aplicable de 325.31 pesos por hectárea para predios rústicos ejidales o comunales.",
+    "clasificacion_justificacion": null
+  },
+  "_meta": {
+    "fuente": "pdf_vision_multi",
+    "modelo": "gpt-5.4"
+  },
+  "_meta_v2": {
+    "intentos": 1,
+    "requiere_revision": false,
+    "escalado": true,
+    "razon": "rescate_via_vision_multi",
+    "usado_reocr": false,
+    "usado_vision": true,
+    "usado_vision_multi": true,
+    "tokens": {
+      "input": 130794,
+      "output": 242,
+      "cached": 6912
+    },
+    "cvegeo": "26029",
+    "estado": "sonora",
+    "anio": 2018,
+    "pdf_stem": "2017CC52XIV",
+    "elapsed_sec_pdf": 100.5,
+    "razon_no_encontrado": null
+  }
+}

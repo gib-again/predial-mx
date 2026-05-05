@@ -1,0 +1,15 @@
+{
+  "prefijo": "SLP",
+  "model": "gpt-5.4-mini",
+  "structured_output": true,
+  "batch_ids": [
+    "batch_69f9177c02388190bc668c1e8fe5af6d",
+    "batch_69f9177da1208190bf659d0f61b03fb7",
+    "batch_69f9177f0bc08190a24f78299b156fbe"
+  ],
+  "jsonl_files": [
+    "data\\sanluispotosi\\meta\\batch_SLP_001.jsonl",
+    "data\\sanluispotosi\\meta\\batch_SLP_002.jsonl",
+    "data\\sanluispotosi\\meta\\batch_SLP_003.jsonl"
+  ]
+}

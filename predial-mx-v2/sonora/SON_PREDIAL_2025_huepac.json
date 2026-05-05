@@ -1,0 +1,158 @@
+{
+  "predial": {
+    "tipo_esquema": "tarifa_millar",
+    "tabla": [
+      {
+        "grupo": "rustico",
+        "clave": "predios_rurales_hectarea",
+        "descripcion": "Sobre el valor catastral de cada hectárea de los predios rurales",
+        "tasa_millar": 1.267135796,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "rustico",
+        "clave": "rieg0_por_gravedad_2",
+        "descripcion": "Riego por gravedad 2",
+        "tasa_millar": 2.226945815,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "rustico",
+        "clave": "riego_por_bombeo_1",
+        "descripcion": "Riego por bombeo 1",
+        "tasa_millar": 2.216451132,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "rustico",
+        "clave": "riego_por_bombeo_2",
+        "descripcion": "Riego por bombeo 2",
+        "tasa_millar": 2.25078559,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "rustico",
+        "clave": "riego_de_temporal_unica",
+        "descripcion": "Riego de temporal única",
+        "tasa_millar": 3.37669664,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "rustico",
+        "clave": "riego_por_bombeo_4",
+        "descripcion": "Riego por bombeo 4",
+        "tasa_millar": 2.143605323,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "rustico",
+        "clave": "riego_por_goteo_1",
+        "descripcion": "Riego por goteo 1",
+        "tasa_millar": 2.096098527,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "rustico",
+        "clave": "riego_por_goteo_2",
+        "descripcion": "Riego por goteo 2",
+        "tasa_millar": 1.206795997,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "rustico",
+        "clave": "agostadero_1",
+        "descripcion": "Agostadero 1",
+        "tasa_millar": 1.734991355,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "rustico",
+        "clave": "agostadero_2",
+        "descripcion": "Agostadero 2",
+        "tasa_millar": 2.200903454,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "rustico",
+        "clave": "agostadero_3",
+        "descripcion": "Agostadero 3",
+        "tasa_millar": 0.346972358,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "rustico",
+        "clave": "industrial_1",
+        "descripcion": "Industrial 1",
+        "tasa_millar": 2.120900776,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "rustico",
+        "clave": "industrial_2",
+        "descripcion": "Industrial 2",
+        "tasa_millar": 2.11090584,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "rustico",
+        "clave": "industrial_3",
+        "descripcion": "Industrial 3",
+        "tasa_millar": 2.143605323,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "rustico",
+        "clave": "industrial_4",
+        "descripcion": "Industrial 4",
+        "tasa_millar": 2.120900776,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "rustico",
+        "clave": "cinetico_unica",
+        "descripcion": "Cinegético única",
+        "tasa_millar": 1.206795997,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      }
+    ],
+    "minimo_predial": {
+      "monto": 66.69,
+      "periodicidad": "anual",
+      "unidad": "pesos"
+    },
+    "comentarios": ""
+  },
+  "_meta": {
+    "fuente": "txt",
+    "modelo": "reclasified_v1[gpt-5.4-mini]"
+  },
+  "_meta_v2": {
+    "intentos": 0,
+    "requiere_revision": false,
+    "razon": null,
+    "tokens": {
+      "input": 0,
+      "output": 0,
+      "cached": 0
+    },
+    "cvegeo": "26034",
+    "estado": "sonora",
+    "anio": 2025
+  }
+}

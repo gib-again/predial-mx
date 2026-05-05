@@ -1,0 +1,60 @@
+{
+  "predial": {
+    "tipo_esquema": "otro_no_clasificado",
+    "categoria": "estructura_no_estandar",
+    "descripcion_estructural": "La ley contiene tarifa real del predial, pero la mecánica principal está distribuida en varias tarifas paralelas no reducibles a una sola variante del esquema: tabla progresiva para edificados, tasa para no edificados, catálogo amplio de tasas al millar para rústicos por categoría, tabla para edificaciones rústicas y predial ejidal con supuestos adicionales por hectárea y actividades mineras.",
+    "tabla_cruda": [
+      {
+        "descripcion": "Predios edificados",
+        "valores": "0.01-38,000.00 cuota fija 77.42; 38,000.01-76,000.00 cuota fija 77.42 + 0.8896 al millar; 76,000.01-144,400.00 cuota fija 111.23 + 0.9204 al millar; 144,400.01-259,920.00 cuota fija 152.00 + 1.1160 al millar; 259,920.01-441,864.00 cuota fija 286.06 + 1.3602 al millar; 441,864.01-706,982.00 cuota fija 543.32 + 1.3615 al millar; 706,982.01-1,060,473.00 cuota fija 918.71 + 1.3628 al millar; 1,060,473.01-1,484,662.00 cuota fija 1,419.68 + 1.7514 al millar; 1,484,662.01-1,930,060.00 cuota fija 2,192.32 + 1.7525 al millar; 1,930,060.01-2,316,072.00 cuota fija 3,004.16 + 2.2717 al millar; 2,316,072.01 en adelante cuota fija 3,916.13 + 2.2729 al millar"
+      },
+      {
+        "descripcion": "Predios no edificados",
+        "valores": "0.01-13,907.61 cuota mínima 77.42; 13,907.62 en adelante 5.51668 al millar"
+      },
+      {
+        "descripcion": "Predios rústicos por hectárea",
+        "valores": "Riego de gravedad 1 1.084358621; riego de gravedad 2 1.905602499; riego de bombeo 1 1.896652237; riego de bombeo 2 1.926027455; temporal única 2.889442797; agostadero 1 1.484710708; agostadero 2 1.883341592; agostadero 3 0.296965091; acuícola 1 1.926027455; acuícola 2 1.924420998; acuícola 3 2.884967666; litoral 1 1.084358621; litoral 2 1.905602499; litoral 3 1.926027455; cinegética única 2.884967666; minero 1 1.926027455; minero 2 1.883341592; industrial 1 0.0; industrial 2 2.18630201; fotovoltaicos 1 2.071675751; fotovoltaicos 2 2.022328828"
+      },
+      {
+        "descripcion": "Edificaciones de predios rústicos",
+        "valores": "0.01-64,700.81 cuota mínima 77.42; 64,700.82-172,125.00 1.1997 al millar; 172,125.01-344,250.00 1.2640 al millar; 344,250.01-961,875.00 1.2962 al millar; 961,875.01-1,923,750.00 1.3283 al millar; 1,923,750.01-2,885,625.00 1.4675 al millar; 2,885,625.01-3,847,500.00 1.5961 al millar; 3,847,500.01 en adelante 1.7246 al millar"
+      },
+      {
+        "descripcion": "Predial ejidal",
+        "valores": "52.00 por hectárea; cuando se instalen empresas distintas al sector primario, excepto minero, se pagará conforme al valor de inversión manifestada en permiso de construcción; cuando haya actividades mineras dentro de un predio ejidal el costo será 520.00 por hectárea"
+      }
+    ],
+    "minimo_predial": {
+      "monto": 77.42,
+      "periodicidad": "anual",
+      "unidad": "pesos"
+    },
+    "comentarios": "Se documenta además descuento por anualidad anticipada: enero 15%, febrero 10%, marzo 5%, pero no forma parte de la mecánica principal. La estructura del predial ejidal incluye reglas especiales adicionales.",
+    "clasificacion_justificacion": "Estructura paralela múltiple con variantes no homogéneas: progresivo para edificados, tasas/catálogos para otros grupos y predial ejidal con reglas especiales por hectárea e inversión."
+  },
+  "_meta": {
+    "fuente": "pdf_vision_multi",
+    "modelo": "gpt-5.4"
+  },
+  "_meta_v2": {
+    "intentos": 1,
+    "requiere_revision": true,
+    "escalado": true,
+    "razon": "clasificado_como_otro_no_clasificado",
+    "usado_reocr": false,
+    "usado_vision": true,
+    "usado_vision_multi": true,
+    "tokens": {
+      "input": 130845,
+      "output": 2771,
+      "cached": 6912
+    },
+    "cvegeo": "26047",
+    "estado": "sonora",
+    "anio": 2021,
+    "pdf_stem": "2020CCVI51XIX",
+    "elapsed_sec_pdf": 141.59400000004098,
+    "razon_no_encontrado": null
+  }
+}

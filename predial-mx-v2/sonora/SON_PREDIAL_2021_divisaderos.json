@@ -1,0 +1,20 @@
+{
+  "predial": {
+    "tipo_esquema": "cuota_fija_simple",
+    "tabla": [
+      {
+        "descripcion": "predios rústicos ejidales o comunales",
+        "monto": 10.0,
+        "periodicidad": "anual",
+        "unidad": "pesos"
+      }
+    ],
+    "tarifas_secundarias": null,
+    "minimo_predial": null,
+    "comentarios": ""
+  },
+  "_meta": {
+    "fuente": "txt",
+    "modelo": "gpt-5.4-mini->reclasified_v2"
+  }
+}

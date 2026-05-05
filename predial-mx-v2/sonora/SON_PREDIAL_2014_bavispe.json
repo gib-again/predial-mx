@@ -1,0 +1,133 @@
+{
+  "predial": {
+    "tipo_esquema": "mixto",
+    "tabla": [
+      {
+        "n_rango": 1,
+        "inferior": 0.01,
+        "superior": 38000.0,
+        "columnas": [
+          {
+            "nombre": "general",
+            "valor": 45.16,
+            "tipo": "cuota_fija",
+            "unidad": "pesos"
+          },
+          {
+            "nombre": "general",
+            "valor": 0.0,
+            "tipo": "tasa_marginal",
+            "unidad": "al_millar"
+          }
+        ]
+      },
+      {
+        "n_rango": 2,
+        "inferior": 38000.0,
+        "superior": 76000.0,
+        "columnas": [
+          {
+            "nombre": "general",
+            "valor": 45.16,
+            "tipo": "cuota_fija",
+            "unidad": "pesos"
+          },
+          {
+            "nombre": "general",
+            "valor": 0.2989,
+            "tipo": "tasa_marginal",
+            "unidad": "al_millar"
+          }
+        ]
+      },
+      {
+        "n_rango": 3,
+        "inferior": 76000.0,
+        "superior": 144000.0,
+        "columnas": [
+          {
+            "nombre": "general",
+            "valor": 66.6,
+            "tipo": "cuota_fija",
+            "unidad": "pesos"
+          },
+          {
+            "nombre": "general",
+            "valor": 0.9268,
+            "tipo": "tasa_marginal",
+            "unidad": "al_millar"
+          }
+        ]
+      },
+      {
+        "n_rango": 4,
+        "inferior": 144000.0,
+        "superior": 259920.0,
+        "columnas": [
+          {
+            "nombre": "general",
+            "valor": 117.98,
+            "tipo": "cuota_fija",
+            "unidad": "pesos"
+          },
+          {
+            "nombre": "general",
+            "valor": 1.284,
+            "tipo": "tasa_marginal",
+            "unidad": "al_millar"
+          }
+        ]
+      },
+      {
+        "n_rango": 5,
+        "inferior": 259920.0,
+        "superior": null,
+        "columnas": [
+          {
+            "nombre": "general",
+            "valor": 248.32,
+            "tipo": "cuota_fija",
+            "unidad": "pesos"
+          },
+          {
+            "nombre": "general",
+            "valor": 1.1643,
+            "tipo": "tasa_marginal",
+            "unidad": "al_millar"
+          }
+        ]
+      }
+    ],
+    "minimo_predial": {
+      "monto": 45.16,
+      "periodicidad": "anual",
+      "unidad": "pesos"
+    },
+    "comentarios": "Se toma como tabla principal la tarifa de predios edificados con rangos por valor catastral. El municipio también establece tarifa paralela para predios no edificados: de 0.01 a 19,080.32 cuota mínima 45.16 al millar; de 19,080.33 a 22,322.00 tasa 2.3655 al millar; de 22,322.01 en adelante tasa 3.0483 al millar. Además prevé tarifa paralela para predios rústicos por hectárea con categorías y para edificaciones de predios rurales con rangos y cuota mínima 45.16 más tasa al millar.",
+    "clasificacion_justificacion": "Heterogeneidad en COLUMNA: la tabla de rangos usa una columna de cuota_fija en pesos ($45.16, $66.60, $117.98, $248.32) y otra columna de tasa marginal al millar (0.0000, 0.2989, 0.9268, 1.284, 1.1643). Patrón: otro descrito."
+  },
+  "_meta": {
+    "fuente": "pdf_vision_multi",
+    "modelo": "gpt-5.4"
+  },
+  "_meta_v2": {
+    "intentos": 1,
+    "requiere_revision": false,
+    "escalado": true,
+    "razon": "rescate_via_vision_multi",
+    "usado_reocr": false,
+    "usado_vision": true,
+    "usado_vision_multi": true,
+    "tokens": {
+      "input": 55953,
+      "output": 2828,
+      "cached": 6912
+    },
+    "cvegeo": "26015",
+    "estado": "sonora",
+    "anio": 2014,
+    "pdf_stem": "2013CXCII50XVIII",
+    "elapsed_sec_pdf": 285.780999999959,
+    "razon_no_encontrado": null
+  }
+}

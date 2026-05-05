@@ -1,84 +1,13 @@
 {
   "predial": {
     "tipo_esquema": "progresivo",
-    "tabla": [
-      {
-        "n_rango": 1,
-        "inferior": 1.0,
-        "superior": 20000.0,
-        "cuota_fija": 70.0,
-        "tasa_marginal": 1e-05
-      },
-      {
-        "n_rango": 2,
-        "inferior": 20000.01,
-        "superior": 50000.0,
-        "cuota_fija": 80.0,
-        "tasa_marginal": 4e-05
-      },
-      {
-        "n_rango": 3,
-        "inferior": 50000.01,
-        "superior": 100000.0,
-        "cuota_fija": 90.0,
-        "tasa_marginal": 7e-05
-      },
-      {
-        "n_rango": 4,
-        "inferior": 100000.01,
-        "superior": 150000.0,
-        "cuota_fija": 100.0,
-        "tasa_marginal": 0.0001
-      },
-      {
-        "n_rango": 5,
-        "inferior": 150000.01,
-        "superior": 250000.0,
-        "cuota_fija": 120.0,
-        "tasa_marginal": 0.00013
-      },
-      {
-        "n_rango": 6,
-        "inferior": 250000.01,
-        "superior": 500000.0,
-        "cuota_fija": 140.0,
-        "tasa_marginal": 0.00016
-      },
-      {
-        "n_rango": 7,
-        "inferior": 500000.01,
-        "superior": 750000.0,
-        "cuota_fija": 200.0,
-        "tasa_marginal": 0.0005
-      },
-      {
-        "n_rango": 8,
-        "inferior": 750000.01,
-        "superior": 1000000.0,
-        "cuota_fija": 250.0,
-        "tasa_marginal": 0.001
-      },
-      {
-        "n_rango": 9,
-        "inferior": 1000000.01,
-        "superior": 1500000.0,
-        "cuota_fija": 400.0,
-        "tasa_marginal": 0.002
-      },
-      {
-        "n_rango": 10,
-        "inferior": 1500000.01,
-        "superior": null,
-        "cuota_fija": 500.0,
-        "tasa_marginal": 0.004
-      }
-    ],
+    "comentarios": "Imputado por tipo_only_fill: tipo_esquema preservado del año donor; tabla/rangos no clonados por baja confianza en estabilidad temporal.",
     "minimo_predial": null,
-    "comentarios": "[treatment_audit:audit_directed from 2019] Always treated: asumir tasa del período inmediato anterior (auditor). Comentario original: Art. 13: tarifa progresiva anual sobre valor catastral con cuota fija + factor para aplicar al excedente del límite inferior. Tarifa paralela secundaria: predios destinados a la producción agropecuaria pagan 10 al millar anual sobre el valor registrado o catastral, sin exceder la legislación agraria federal para terrenos ejidales; no se integra en la tabla principal. Art. 15 indica que las Zonas Residenciales se cobran con base en el Valor Catastral del Gobierno del Estado, sin tabla tarifaria adicional transcrita aquí."
+    "tabla": []
   },
   "_meta": {
     "fuente": "txt",
-    "modelo": "imputed_audit_directed[from_2019]"
+    "modelo": "imputed_tipo_only_fill"
   },
   "_meta_v2": {
     "intentos": 0,
@@ -93,7 +22,6 @@
     "estado": "yucatan",
     "anio": 2020,
     "imputed_from_year": 2019,
-    "imputed_method": "audit_directed",
-    "treatment_audit_source": "asumir_tasas_anteriores_o_dirigidas"
+    "imputed_method": "tipo_only_fill"
   }
 }

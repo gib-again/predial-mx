@@ -1,0 +1,73 @@
+{
+  "predial": {
+    "tipo_esquema": "progresivo",
+    "tabla": [
+      {
+        "n_rango": 1,
+        "inferior": 0.0,
+        "superior": 38000.0,
+        "cuota_fija": 61.42,
+        "tasa_marginal": 0.0
+      },
+      {
+        "n_rango": 2,
+        "inferior": 38000.0,
+        "superior": 76000.0,
+        "cuota_fija": 61.42,
+        "tasa_marginal": 0.5846
+      },
+      {
+        "n_rango": 3,
+        "inferior": 76000.0,
+        "superior": 144400.0,
+        "cuota_fija": 80.97,
+        "tasa_marginal": 1.3001
+      },
+      {
+        "n_rango": 4,
+        "inferior": 144400.0,
+        "superior": 259920.0,
+        "cuota_fija": 169.93,
+        "tasa_marginal": 1.8892
+      },
+      {
+        "n_rango": 5,
+        "inferior": 259920.0,
+        "superior": null,
+        "cuota_fija": 388.24,
+        "tasa_marginal": 2.0279
+      }
+    ],
+    "minimo_predial": {
+      "monto": 61.42,
+      "periodicidad": "anual",
+      "unidad": "pesos"
+    },
+    "comentarios": "Tabla principal tomada de predios edificados del Artículo 5. Tarifa paralela para predios no edificados: $61.42 cuota mínima de 0 a 18,967.34; 3.23638278 al millar de 18,967.35 a 22,191.00; 4.17083132 al millar en adelante. Tarifa paralela para predios rurales por hectárea en categorías de riego/agostadero/minero y para edificaciones de predios rurales con brackets al millar. Impuesto predial ejidal: $10.00 por hectárea (Artículo 7).",
+    "clasificacion_justificacion": null
+  },
+  "_meta": {
+    "fuente": "pdf_vision_multi",
+    "modelo": "gpt-5.4"
+  },
+  "_meta_v2": {
+    "intentos": 1,
+    "requiere_revision": false,
+    "escalado": true,
+    "razon": "rescate_via_vision_multi",
+    "usado_reocr": false,
+    "usado_vision": true,
+    "usado_vision_multi": true,
+    "tokens": {
+      "input": 130793,
+      "output": 414,
+      "cached": 6912
+    },
+    "cvegeo": "26009",
+    "estado": "sonora",
+    "anio": 2023,
+    "pdf_stem": "2022CCX52XVII",
+    "elapsed_sec_pdf": 125.07799999997951,
+    "razon_no_encontrado": null
+  }
+}

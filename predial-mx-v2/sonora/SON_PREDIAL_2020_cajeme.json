@@ -1,0 +1,33 @@
+{
+  "predial": {
+    "tipo_esquema": "tarifa_millar",
+    "tabla": [
+      {
+        "grupo": "general",
+        "clave": "general_urbano",
+        "descripcion": "tasa general del 1.50 al millar sobre el valor catastral de los inmuebles",
+        "tasa_millar": 1.5,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "rustico",
+        "clave": "predios_rurales_actividad_agricola_ganadera",
+        "descripcion": "predios rurales y edificaciones de predios rurales, así como predios dentro del programa de desarrollo del área urbana... utilizados para actividades agrícolas o ganaderas",
+        "tasa_millar": 0.57,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      }
+    ],
+    "minimo_predial": {
+      "monto": 1.0,
+      "periodicidad": "anual",
+      "unidad": "uma"
+    },
+    "comentarios": ""
+  },
+  "_meta": {
+    "fuente": "txt",
+    "modelo": "gpt-5.4-mini->reclasified_v2"
+  }
+}

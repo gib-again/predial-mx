@@ -1,0 +1,73 @@
+{
+  "predial": {
+    "tipo_esquema": "progresivo",
+    "tabla": [
+      {
+        "n_rango": 1,
+        "inferior": 0.01,
+        "superior": 38000.0,
+        "cuota_fija": 70.92,
+        "tasa_marginal": 0.0
+      },
+      {
+        "n_rango": 2,
+        "inferior": 38000.0,
+        "superior": 76000.0,
+        "cuota_fija": 70.92,
+        "tasa_marginal": 0.837
+      },
+      {
+        "n_rango": 3,
+        "inferior": 76000.0,
+        "superior": 144400.0,
+        "cuota_fija": 99.57,
+        "tasa_marginal": 1.4525
+      },
+      {
+        "n_rango": 4,
+        "inferior": 144400.0,
+        "superior": 259920.0,
+        "cuota_fija": 199.06,
+        "tasa_marginal": 1.6545
+      },
+      {
+        "n_rango": 5,
+        "inferior": 259920.0,
+        "superior": null,
+        "cuota_fija": 390.21,
+        "tasa_marginal": 2.3091
+      }
+    ],
+    "minimo_predial": {
+      "monto": 70.19,
+      "periodicidad": "anual",
+      "unidad": "pesos"
+    },
+    "comentarios": "Tarifa principal extraída de predios edificados (Art. 5, fracción I). Tarifas paralelas: predios no edificados con cuota mínima de 70.919472 y tasas de 3.77191934 al millar y 4.86045982 al millar; predios rurales por hectárea con tasas al millar por categoría (riego por gravedad 1: 1.434213119; riego por gravedad 2: 2.520413459; riego por bombeo 1: 2.508850636; riego por bombeo 2: 2.547628398; riego por temporal única: 3.821936129; agostadero 1: 1.963846831; agostadero 2: 2.49136539; agostadero 3: 0.392712962); edificaciones de predios rurales con cuota mínima de 70.9176 y tasas al millar de 1.6337938, 1.7155142, 1.8944389, 2.0578797, 2.1899842, 2.2871885 y 2.466359. Impuesto predial ejidal: 3.30 por hectárea.",
+    "clasificacion_justificacion": null
+  },
+  "_meta": {
+    "fuente": "pdf_vision_multi",
+    "modelo": "gpt-5.4"
+  },
+  "_meta_v2": {
+    "intentos": 1,
+    "requiere_revision": false,
+    "escalado": true,
+    "razon": "rescate_via_vision_multi",
+    "usado_reocr": false,
+    "usado_vision": true,
+    "usado_vision_multi": true,
+    "tokens": {
+      "input": 106199,
+      "output": 1085,
+      "cached": 88832
+    },
+    "cvegeo": "26067",
+    "estado": "sonora",
+    "anio": 2025,
+    "pdf_stem": "2024CCXIV53XXII",
+    "elapsed_sec_pdf": 210.9220000000205,
+    "razon_no_encontrado": null
+  }
+}

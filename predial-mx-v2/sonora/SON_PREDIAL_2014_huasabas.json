@@ -1,0 +1,73 @@
+{
+  "predial": {
+    "tipo_esquema": "tarifa_millar",
+    "tabla": [
+      {
+        "grupo": "urbano",
+        "clave": "predios_edificados",
+        "descripcion": "Sobre el valor catastral de predios edificados",
+        "tasa_millar": 0.0,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "urbano",
+        "clave": "predios_no_edificados",
+        "descripcion": "Sobre el valor catastral de los predios no edificados",
+        "tasa_millar": 3.89,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "rustico",
+        "clave": "predios_rurales_ubicaciones",
+        "descripcion": "Sobre el valor catastral de las ubicaciones de los predios rurales",
+        "tasa_millar": 0.0,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "rustico",
+        "clave": "predios_rurales_ubicaciones",
+        "descripcion": "Sobre el valor catastral de las ubicaciones de los predios rurales",
+        "tasa_millar": 1.0316,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "rustico",
+        "clave": "predios_rurales_ubicaciones",
+        "descripcion": "Sobre el valor catastral de las ubicaciones de los predios rurales",
+        "tasa_millar": 1.1357,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "rustico",
+        "clave": "predios_rurales_ubicaciones",
+        "descripcion": "Sobre el valor catastral de las ubicaciones de los predios rurales",
+        "tasa_millar": 1.3542,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "rustico",
+        "clave": "predios_rurales_ubicaciones",
+        "descripcion": "Sobre el valor catastral de las ubicaciones de los predios rurales",
+        "tasa_millar": 1.3524,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      }
+    ],
+    "minimo_predial": {
+      "monto": 50.81,
+      "periodicidad": "anual",
+      "unidad": "pesos"
+    },
+    "comentarios": ""
+  },
+  "_meta": {
+    "fuente": "txt",
+    "modelo": "gpt-5.4-mini->reclasified_v2"
+  }
+}

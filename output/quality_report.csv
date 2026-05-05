@@ -9499,7 +9499,7 @@
 26,009,Bacanora,sonora,2017,progresivo,1.53,True,True,False,False,,
 26,009,Bacanora,sonora,2018,progresivo,1.53,True,False,False,True,,rangos 5→13
 26,009,Bacanora,sonora,2019,progresivo,1.63,True,True,False,False,,
-26,009,Bacanora,sonora,2020,mixto,2.93,True,True,True,,jump_gt_50pct|schema_change,tasa 1.6300→2.9252; esquema progresivo→mixto
+26,009,Bacanora,sonora,2020,progresivo,1.71,True,True,False,True,,rangos 13→5
 26,010,Bacerac,sonora,2012,progresivo,0.522100,True,,,,,
 26,010,Bacerac,sonora,2017,progresivo,0.974900,True,True,False,True,jump_gt_50pct,tasa 0.5221→0.9749; rangos 11→19
 26,010,Bacerac,sonora,2018,progresivo,0.644900,True,True,False,True,,rangos 19→11
@@ -9753,9 +9753,9 @@
 26,039,Naco,sonora,2009,desconocido,,False,,,,tasa_zero_or_missing,
 26,039,Naco,sonora,2010,progresivo,,False,,,,tasa_zero_or_missing,
 26,039,Naco,sonora,2017,progresivo,0.001427,True,,False,True,,rangos 7→11
-26,039,Naco,sonora,2018,mixto,4.06,True,True,True,,jump_gt_50pct|schema_change,tasa 0.0014→4.0566; esquema progresivo→mixto
-26,039,Naco,sonora,2019,progresivo,0.001484,True,True,True,,jump_gt_50pct|schema_change,tasa 4.0566→0.0015; esquema mixto→progresivo
-26,039,Naco,sonora,2020,mixto,0.000000,False,True,True,,jump_gt_50pct|schema_change|tasa_zero_or_missing,tasa 0.0015→0.0000; esquema progresivo→mixto
+26,039,Naco,sonora,2018,progresivo,1.48,True,True,False,True,jump_gt_50pct,tasa 0.0014→1.4819; rangos 11→22
+26,039,Naco,sonora,2019,progresivo,0.001484,True,True,False,True,jump_gt_50pct,tasa 1.4819→0.0015; rangos 22→11
+26,039,Naco,sonora,2020,progresivo,0.001484,True,False,False,False,,
 26,039,Naco,sonora,2021,desconocido,,False,,,,tasa_zero_or_missing,
 26,039,Naco,sonora,2022,mixto,0.000000,False,,,,tasa_zero_or_missing,
 26,039,Naco,sonora,2023,progresivo,0.001758,True,,True,,schema_change,esquema mixto→progresivo
@@ -9855,8 +9855,8 @@
 26,051,Rosario,sonora,2024,progresivo,1.43,True,False,False,True,,rangos 10→8
 26,051,Rosario,sonora,2025,progresivo,1.43,True,False,False,False,,
 26,,Sacaliehuachi,sonora,2012,progresivo,1.49,True,,,,,
-26,052,Sahuaripa,sonora,2012,mixto,1.95,True,,,,,
-26,052,Sahuaripa,sonora,2013,progresivo,1.23,True,True,True,,schema_change,esquema mixto→progresivo
+26,052,Sahuaripa,sonora,2012,tarifa_millar,1.95,True,,,,,
+26,052,Sahuaripa,sonora,2013,progresivo,1.23,True,True,True,,schema_change,esquema tarifa_millar→progresivo
 26,052,Sahuaripa,sonora,2017,progresivo,1.40,True,True,False,False,,
 26,052,Sahuaripa,sonora,2018,progresivo,1.46,True,True,False,False,,
 26,052,Sahuaripa,sonora,2020,progresivo,1.56,True,True,False,False,,
@@ -9957,13 +9957,13 @@
 26,064,Trincheras,sonora,2023,progresivo,0.001533,True,True,False,True,,rangos 11→5
 26,064,Trincheras,sonora,2024,progresivo,1.78,True,True,False,False,jump_gt_50pct,tasa 0.0015→1.7811
 26,,Tubljtama,sonora,2021,desconocido,,False,,,,tasa_zero_or_missing,
-26,065,Tubutama,sonora,2010,progresivo,,False,,,,tasa_zero_or_missing,
-26,065,Tubutama,sonora,2011,progresivo,1.25,True,,False,True,,rangos 22→5
+26,065,Tubutama,sonora,2010,progresivo,5.04,True,,,,,
+26,065,Tubutama,sonora,2011,progresivo,1.25,True,True,False,True,jump_gt_50pct,tasa 5.0398→1.2532; rangos 11→5
 26,065,Tubutama,sonora,2017,progresivo,1.49,True,True,False,False,,
 26,065,Tubutama,sonora,2018,progresivo,1.55,True,True,False,False,,
 26,065,Tubutama,sonora,2019,tarifa_millar,0.000000,False,True,True,,jump_gt_50pct|schema_change|tasa_zero_or_missing,tasa 1.5479→0.0000; esquema progresivo→tarifa_millar
-26,065,Tubutama,sonora,2020,mixto,0.000000,False,,True,,schema_change|tasa_zero_or_missing,esquema tarifa_millar→mixto
-26,065,Tubutama,sonora,2022,progresivo,0.001594,True,,True,,schema_change,esquema mixto→progresivo
+26,065,Tubutama,sonora,2020,progresivo,1.59,True,,True,,schema_change,esquema tarifa_millar→progresivo
+26,065,Tubutama,sonora,2022,progresivo,0.001594,True,True,False,False,jump_gt_50pct,tasa 1.5943→0.0016
 26,065,Tubutama,sonora,2023,progresivo,1.71,True,True,False,False,jump_gt_50pct,tasa 0.0016→1.7126
 26,065,Tubutama,sonora,2024,desconocido,,False,,,,tasa_zero_or_missing,
 26,065,Tubutama,sonora,2025,desconocido,,False,,,,tasa_zero_or_missing,

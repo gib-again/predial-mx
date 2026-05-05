@@ -1,0 +1,73 @@
+{
+  "predial": {
+    "tipo_esquema": "progresivo",
+    "tabla": [
+      {
+        "n_rango": 1,
+        "inferior": 0.01,
+        "superior": 38000.0,
+        "cuota_fija": 43.62,
+        "tasa_marginal": 0.0
+      },
+      {
+        "n_rango": 2,
+        "inferior": 38000.0,
+        "superior": 76000.0,
+        "cuota_fija": 43.62,
+        "tasa_marginal": 0.5148
+      },
+      {
+        "n_rango": 3,
+        "inferior": 76000.0,
+        "superior": 144400.0,
+        "cuota_fija": 61.31,
+        "tasa_marginal": 0.8934
+      },
+      {
+        "n_rango": 4,
+        "inferior": 144400.0,
+        "superior": 259920.0,
+        "cuota_fija": 122.41,
+        "tasa_marginal": 1.0177
+      },
+      {
+        "n_rango": 5,
+        "inferior": 259920.0,
+        "superior": null,
+        "cuota_fija": 239.98,
+        "tasa_marginal": 1.4201
+      }
+    ],
+    "minimo_predial": {
+      "monto": 43.62,
+      "periodicidad": "anual",
+      "unidad": "pesos"
+    },
+    "comentarios": "La ley también establece tarifa paralela para predios no edificados con rangos: 0.01-18775.02 cuota mínima 43.62; 18775.03-21972.00 2.3233 al millar; 21972.01 en adelante 2.9917 al millar. Para predios rurales por hectárea fija categorías con tasa al millar: riego de gravedad 1 0.8821; riego de gravedad 2 1.5502; riego de bombeo 1 1.5430; riego de bombeo 2 1.5669; riego de temporal única 2.3506; agostadero 1 1.2078; agostadero 2 1.5322; agostadero 3 0.2415. En ningún caso el impuesto será menor a 43.62.",
+    "clasificacion_justificacion": null
+  },
+  "_meta": {
+    "fuente": "pdf_vision_multi",
+    "modelo": "gpt-5.4"
+  },
+  "_meta_v2": {
+    "intentos": 1,
+    "requiere_revision": false,
+    "escalado": true,
+    "razon": "rescate_via_vision_multi",
+    "usado_reocr": false,
+    "usado_vision": true,
+    "usado_vision_multi": true,
+    "tokens": {
+      "input": 106299,
+      "output": 2670,
+      "cached": 6912
+    },
+    "cvegeo": "26067",
+    "estado": "sonora",
+    "anio": 2011,
+    "pdf_stem": "2010CLXXXVI53XVI",
+    "elapsed_sec_pdf": 154.51500000001397,
+    "razon_no_encontrado": null
+  }
+}

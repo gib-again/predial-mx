@@ -1,0 +1,33 @@
+{
+  "predial": {
+    "tipo_esquema": "cuota_fija_simple",
+    "tabla": [
+      {
+        "descripcion": "predios rústicos ejidales o comunales",
+        "monto": 10.0,
+        "periodicidad": "anual",
+        "unidad": "pesos"
+      }
+    ],
+    "tarifas_secundarias": null,
+    "minimo_predial": null,
+    "comentarios": "Solo se identifica una cuota fija por hectárea para predios rústicos ejidales o comunales; se ignoran componentes fuera de alcance."
+  },
+  "_meta": {
+    "fuente": "txt",
+    "modelo": "reclasified_v1[gpt-5.4-mini]"
+  },
+  "_meta_v2": {
+    "intentos": 0,
+    "requiere_revision": false,
+    "razon": null,
+    "tokens": {
+      "input": 0,
+      "output": 0,
+      "cached": 0
+    },
+    "cvegeo": "26024",
+    "estado": "sonora",
+    "anio": 2020
+  }
+}
