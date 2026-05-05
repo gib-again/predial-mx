@@ -1,0 +1,152 @@
+{
+  "predial": {
+    "tipo_esquema": "mixto",
+    "tabla": [
+      {
+        "n_rango": 1,
+        "inferior": 0.01,
+        "superior": 38000.0,
+        "columnas": [
+          {
+            "nombre": "edificados_cuota_fija",
+            "valor": 43.2,
+            "tipo": "cuota_fija",
+            "unidad": "pesos"
+          },
+          {
+            "nombre": "edificados_tasa_marginal",
+            "valor": 0.0,
+            "tipo": "tasa_marginal",
+            "unidad": "al_millar"
+          }
+        ]
+      },
+      {
+        "n_rango": 2,
+        "inferior": 38000.0,
+        "superior": 76000.0,
+        "columnas": [
+          {
+            "nombre": "edificados_cuota_fija",
+            "valor": 43.2,
+            "tipo": "cuota_fija",
+            "unidad": "pesos"
+          },
+          {
+            "nombre": "edificados_tasa_marginal",
+            "valor": 0.7121,
+            "tipo": "tasa_marginal",
+            "unidad": "al_millar"
+          }
+        ]
+      },
+      {
+        "n_rango": 3,
+        "inferior": 76000.0,
+        "superior": 144400.0,
+        "columnas": [
+          {
+            "nombre": "edificados_cuota_fija",
+            "valor": 69.24,
+            "tipo": "cuota_fija",
+            "unidad": "pesos"
+          },
+          {
+            "nombre": "edificados_tasa_marginal",
+            "valor": 1.0591,
+            "tipo": "tasa_marginal",
+            "unidad": "al_millar"
+          }
+        ]
+      },
+      {
+        "n_rango": 4,
+        "inferior": 144400.0,
+        "superior": 259920.0,
+        "columnas": [
+          {
+            "nombre": "edificados_cuota_fija",
+            "valor": 144.54,
+            "tipo": "cuota_fija",
+            "unidad": "pesos"
+          },
+          {
+            "nombre": "edificados_tasa_marginal",
+            "valor": 1.3677,
+            "tipo": "tasa_marginal",
+            "unidad": "al_millar"
+          }
+        ]
+      },
+      {
+        "n_rango": 5,
+        "inferior": 259920.0,
+        "superior": 441864.0,
+        "columnas": [
+          {
+            "nombre": "edificados_cuota_fija",
+            "valor": 295.39,
+            "tipo": "cuota_fija",
+            "unidad": "pesos"
+          },
+          {
+            "nombre": "edificados_tasa_marginal",
+            "valor": 1.6766,
+            "tipo": "tasa_marginal",
+            "unidad": "al_millar"
+          }
+        ]
+      },
+      {
+        "n_rango": 6,
+        "inferior": 441864.0,
+        "superior": null,
+        "columnas": [
+          {
+            "nombre": "edificados_cuota_fija",
+            "valor": 551.6,
+            "tipo": "cuota_fija",
+            "unidad": "pesos"
+          },
+          {
+            "nombre": "edificados_tasa_marginal",
+            "valor": 2.7466,
+            "tipo": "tasa_marginal",
+            "unidad": "al_millar"
+          }
+        ]
+      }
+    ],
+    "minimo_predial": {
+      "monto": 43.2,
+      "periodicidad": "anual",
+      "unidad": "pesos"
+    },
+    "comentarios": "Se toma como tabla principal la tarifa con rangos para predios edificados. Tarifa paralela para predios no edificados: 0.01 a 11106.55 paga 43.20 cuota mínima; de 11106.55 a 12617.60, 3.8896 al millar; de 12617.60 en adelante, 5.0090 al millar. Tarifa paralela para predios rústicos por hectárea con tasas al millar por categoría: riego de gravedad 1 0.8482; riego de gravedad 2 1.4906; riego de bombeo 1 1.4837; riego de bombeo 2 1.5066; riego de temporal única 2.2602; agostadero 1 1.1613; agostadero 2 1.4733; agostadero 3 0.2322. La ley indica además reducción cuando por actualización de valores catastrales el importe resulte mayor al 10% del causado en 2010.",
+    "clasificacion_justificacion": "Heterogeneidad en COLUMNA: la tabla de rangos de predios edificados combina una columna de cuota fija en pesos con otra columna de tasa marginal al millar sobre el excedente. Patrón: otro descrito."
+  },
+  "_meta": {
+    "fuente": "pdf_vision_multi",
+    "modelo": "gpt-5.4"
+  },
+  "_meta_v2": {
+    "intentos": 1,
+    "requiere_revision": false,
+    "escalado": true,
+    "razon": "rescate_via_vision_multi",
+    "usado_reocr": false,
+    "usado_vision": true,
+    "usado_vision_multi": true,
+    "tokens": {
+      "input": 77768,
+      "output": 864,
+      "cached": 6912
+    },
+    "cvegeo": "26011",
+    "estado": "sonora",
+    "anio": 2011,
+    "pdf_stem": "2010CLXXXVI53XVIII",
+    "elapsed_sec_pdf": 137.5779999999795,
+    "razon_no_encontrado": null
+  }
+}

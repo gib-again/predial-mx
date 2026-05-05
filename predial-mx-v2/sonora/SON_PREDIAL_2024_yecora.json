@@ -1,0 +1,247 @@
+{
+  "predial": {
+    "tipo_esquema": "mixto",
+    "tabla": [
+      {
+        "n_rango": 1,
+        "inferior": 0.01,
+        "superior": 38000.0,
+        "columnas": [
+          {
+            "nombre": "predios_edificados",
+            "valor": 56.39,
+            "tipo": "cuota_fija",
+            "unidad": "pesos"
+          },
+          {
+            "nombre": "predios_edificados",
+            "valor": 0.0,
+            "tipo": "tasa_marginal",
+            "unidad": "al_millar"
+          }
+        ]
+      },
+      {
+        "n_rango": 2,
+        "inferior": 38000.0,
+        "superior": 76000.0,
+        "columnas": [
+          {
+            "nombre": "predios_edificados",
+            "valor": 56.39,
+            "tipo": "cuota_fija",
+            "unidad": "pesos"
+          },
+          {
+            "nombre": "predios_edificados",
+            "valor": 0.4025292,
+            "tipo": "tasa_marginal",
+            "unidad": "al_millar"
+          }
+        ]
+      },
+      {
+        "n_rango": 3,
+        "inferior": 76000.0,
+        "superior": 144400.0,
+        "columnas": [
+          {
+            "nombre": "predios_edificados",
+            "valor": 56.39,
+            "tipo": "cuota_fija",
+            "unidad": "pesos"
+          },
+          {
+            "nombre": "predios_edificados",
+            "valor": 0.6932388,
+            "tipo": "tasa_marginal",
+            "unidad": "al_millar"
+          }
+        ]
+      },
+      {
+        "n_rango": 4,
+        "inferior": 144400.0,
+        "superior": 259920.0,
+        "columnas": [
+          {
+            "nombre": "predios_edificados",
+            "valor": 69.93,
+            "tipo": "cuota_fija",
+            "unidad": "pesos"
+          },
+          {
+            "nombre": "predios_edificados",
+            "valor": 0.9132468,
+            "tipo": "tasa_marginal",
+            "unidad": "al_millar"
+          }
+        ]
+      },
+      {
+        "n_rango": 5,
+        "inferior": 259920.0,
+        "superior": 441864.01,
+        "columnas": [
+          {
+            "nombre": "predios_edificados",
+            "valor": 141.04,
+            "tipo": "cuota_fija",
+            "unidad": "pesos"
+          },
+          {
+            "nombre": "predios_edificados",
+            "valor": 1.095768,
+            "tipo": "tasa_marginal",
+            "unidad": "al_millar"
+          }
+        ]
+      },
+      {
+        "n_rango": 6,
+        "inferior": 441864.01,
+        "superior": 706982.0,
+        "columnas": [
+          {
+            "nombre": "predios_edificados",
+            "valor": 299.32,
+            "tipo": "cuota_fija",
+            "unidad": "pesos"
+          },
+          {
+            "nombre": "predios_edificados",
+            "valor": 1.0974768,
+            "tipo": "tasa_marginal",
+            "unidad": "al_millar"
+          }
+        ]
+      },
+      {
+        "n_rango": 7,
+        "inferior": 706982.0,
+        "superior": 1060473.0,
+        "columnas": [
+          {
+            "nombre": "predios_edificados",
+            "valor": 598.39,
+            "tipo": "cuota_fija",
+            "unidad": "pesos"
+          },
+          {
+            "nombre": "predios_edificados",
+            "valor": 1.0982244,
+            "tipo": "tasa_marginal",
+            "unidad": "al_millar"
+          }
+        ]
+      },
+      {
+        "n_rango": 8,
+        "inferior": 1060473.0,
+        "superior": 1484662.0,
+        "columnas": [
+          {
+            "nombre": "predios_edificados",
+            "valor": 1034.81,
+            "tipo": "cuota_fija",
+            "unidad": "pesos"
+          },
+          {
+            "nombre": "predios_edificados",
+            "valor": 1.0990788,
+            "tipo": "tasa_marginal",
+            "unidad": "al_millar"
+          }
+        ]
+      },
+      {
+        "n_rango": 9,
+        "inferior": 1484662.0,
+        "superior": 1930060.0,
+        "columnas": [
+          {
+            "nombre": "predios_edificados",
+            "valor": 1617.14,
+            "tipo": "cuota_fija",
+            "unidad": "pesos"
+          },
+          {
+            "nombre": "predios_edificados",
+            "valor": 1.0999332,
+            "tipo": "tasa_marginal",
+            "unidad": "al_millar"
+          }
+        ]
+      },
+      {
+        "n_rango": 10,
+        "inferior": 1930060.0,
+        "superior": 2316072.0,
+        "columnas": [
+          {
+            "nombre": "predios_edificados",
+            "valor": 2316.48,
+            "tipo": "cuota_fija",
+            "unidad": "pesos"
+          },
+          {
+            "nombre": "predios_edificados",
+            "valor": 1.2307632,
+            "tipo": "tasa_marginal",
+            "unidad": "al_millar"
+          }
+        ]
+      },
+      {
+        "n_rango": 11,
+        "inferior": 2316072.0,
+        "superior": null,
+        "columnas": [
+          {
+            "nombre": "predios_edificados",
+            "valor": 3051.33,
+            "tipo": "cuota_fija",
+            "unidad": "pesos"
+          },
+          {
+            "nombre": "predios_edificados",
+            "valor": 1.231404,
+            "tipo": "tasa_marginal",
+            "unidad": "al_millar"
+          }
+        ]
+      }
+    ],
+    "minimo_predial": {
+      "monto": 56.39,
+      "periodicidad": "anual",
+      "unidad": "pesos"
+    },
+    "comentarios": "La tarifa principal con mayor estructura es la de predios edificados por rangos. Existen tarifas paralelas para predios no edificados por rangos con cuota mínima de 56.3904 y tasas al millar de 3.1107884 y 4.0064097; para predios rurales por hectárea con categorías y tasas al millar; y para edificaciones de predios rurales por rangos con cuota mínima de 56.39 y tasas al millar de 1.4611 a 2.1187. Artículo 5; mínimo general señalado también en el artículo 6.",
+    "clasificacion_justificacion": "Heterogeneidad en COLUMNA: la tabla de predios edificados mezcla columna de cuota fija en pesos ($56.39, $69.93, etc.) con columna de tasa marginal al millar (0.4025292, 0.6932388, etc.). Patrón: otro descrito."
+  },
+  "_meta": {
+    "fuente": "pdf_vision_multi",
+    "modelo": "gpt-5.4"
+  },
+  "_meta_v2": {
+    "intentos": 1,
+    "requiere_revision": false,
+    "escalado": true,
+    "razon": "rescate_via_vision_multi",
+    "usado_reocr": false,
+    "usado_vision": true,
+    "usado_vision_multi": true,
+    "tokens": {
+      "input": 100067,
+      "output": 2460,
+      "cached": 6912
+    },
+    "cvegeo": "26069",
+    "estado": "sonora",
+    "anio": 2024,
+    "pdf_stem": "2023CCXII52XXV",
+    "elapsed_sec_pdf": 85.0,
+    "razon_no_encontrado": null
+  }
+}

@@ -1,0 +1,54 @@
+{
+  "predial": {
+    "tipo_esquema": "tarifa_millar",
+    "tabla": [
+      {
+        "grupo": "general",
+        "clave": "general",
+        "descripcion": "Tasa general sobre el valor catastral de los inmuebles",
+        "tasa_millar": 1.5,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "otro",
+        "clave": "rusticos_y_predios_agricolas_programa_desarrollo_urbano",
+        "descripcion": "Predios rurales y edificaciones de predios rurales, así como predios dentro del programa de desarrollo del área urbana de Ciudad Obregón, comisarías de Pueblo Yaqui, Marte R. Gómez, Tobarito, Esperanza, Cócorit y Providencia, siempre y cuando estén utilizados para actividades agrícolas o ganaderas",
+        "tasa_millar": 0.57,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      }
+    ],
+    "minimo_predial": {
+      "monto": 1.0,
+      "periodicidad": "anual",
+      "unidad": "uma"
+    },
+    "comentarios": "Artículo 11 establece tasa general de 1.50 al millar sobre el valor catastral. Artículo 12 establece una tasa paralela de 0.57 al millar para predios rurales y ciertos predios del programa de desarrollo urbano usados para actividades agrícolas o ganaderas. Artículo 19 señala que en ningún caso el impuesto predial causado será menor a una vez la unidad de medida y actualización vigente. Se omiten descuentos y recargos. El impuesto predial ejidal se regula aparte en la Sección II con cuota de 450.00 pesos por hectárea.",
+    "clasificacion_justificacion": null
+  },
+  "_meta": {
+    "fuente": "pdf_vision_multi",
+    "modelo": "gpt-5.4"
+  },
+  "_meta_v2": {
+    "intentos": 1,
+    "requiere_revision": false,
+    "escalado": true,
+    "razon": "rescate_via_vision_multi",
+    "usado_reocr": false,
+    "usado_vision": true,
+    "usado_vision_multi": true,
+    "tokens": {
+      "input": 130792,
+      "output": 379,
+      "cached": 109312
+    },
+    "cvegeo": "26018",
+    "estado": "sonora",
+    "anio": 2022,
+    "pdf_stem": "2021CCVIII53XIII",
+    "elapsed_sec_pdf": 265.2029999999795,
+    "razon_no_encontrado": null
+  }
+}

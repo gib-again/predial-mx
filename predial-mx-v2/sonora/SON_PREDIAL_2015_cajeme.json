@@ -1,0 +1,54 @@
+{
+  "predial": {
+    "tipo_esquema": "tarifa_millar",
+    "tabla": [
+      {
+        "grupo": "general",
+        "clave": "general",
+        "descripcion": "Tasa general sobre el valor catastral de los inmuebles",
+        "tasa_millar": 1.345,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "otro",
+        "clave": "predios_rurales_y_agropecuarios",
+        "descripcion": "Predios rurales y edificaciones de los predios rurales; así como predios dentro del programa de desarrollo de área urbana de Ciudad Obregón, comisarías de Esperanza, Cócorit y Providencia, siempre y cuando se utilicen para actividades agrícolas o ganaderas",
+        "tasa_millar": 0.51,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      }
+    ],
+    "minimo_predial": {
+      "monto": 1.0,
+      "periodicidad": "anual",
+      "unidad": "dias_sm"
+    },
+    "comentarios": "Artículo 8: el monto anual del impuesto predial será el resultado de aplicar la tasa general de 1.345 al millar sobre el valor catastral. Artículo 9: para predios rurales y ciertos predios usados para actividades agrícolas o ganaderas, la tasa general será de .51 al millar. Artículo 14: en ningún caso el impuesto predial causado será menor a un salario mínimo general vigente en el municipio de Cajeme. Artículo 10 señala una aportación voluntaria de 15 pesos con cargo al contribuyente, pero no forma parte de la mecánica principal del predial.",
+    "clasificacion_justificacion": "Tarifas categóricas paralelas al millar: una tasa general y otra específica para predios rurales/agropecuarios; sin rangos por valor catastral."
+  },
+  "_meta": {
+    "fuente": "pdf_vision_multi",
+    "modelo": "gpt-5.4"
+  },
+  "_meta_v2": {
+    "intentos": 1,
+    "requiere_revision": false,
+    "escalado": true,
+    "razon": "rescate_via_vision_multi",
+    "usado_reocr": false,
+    "usado_vision": true,
+    "usado_vision_multi": true,
+    "tokens": {
+      "input": 169660,
+      "output": 407,
+      "cached": 6912
+    },
+    "cvegeo": "26018",
+    "estado": "sonora",
+    "anio": 2015,
+    "pdf_stem": "2014CXCIV52IV",
+    "elapsed_sec_pdf": 196.03099999995902,
+    "razon_no_encontrado": null
+  }
+}

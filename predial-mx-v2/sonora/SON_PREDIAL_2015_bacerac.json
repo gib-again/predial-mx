@@ -1,0 +1,247 @@
+{
+  "predial": {
+    "tipo_esquema": "mixto",
+    "tabla": [
+      {
+        "n_rango": 1,
+        "inferior": 0.01,
+        "superior": 38000.0,
+        "columnas": [
+          {
+            "nombre": "general",
+            "valor": 46.74,
+            "tipo": "cuota_fija",
+            "unidad": "pesos"
+          },
+          {
+            "nombre": "general",
+            "valor": 0.0,
+            "tipo": "tasa_marginal",
+            "unidad": "al_millar"
+          }
+        ]
+      },
+      {
+        "n_rango": 2,
+        "inferior": 38000.0,
+        "superior": 76000.0,
+        "columnas": [
+          {
+            "nombre": "general",
+            "valor": 46.74,
+            "tipo": "cuota_fija",
+            "unidad": "pesos"
+          },
+          {
+            "nombre": "general",
+            "valor": 0.0,
+            "tipo": "tasa_marginal",
+            "unidad": "al_millar"
+          }
+        ]
+      },
+      {
+        "n_rango": 3,
+        "inferior": 76000.0,
+        "superior": 144400.0,
+        "columnas": [
+          {
+            "nombre": "general",
+            "valor": 46.74,
+            "tipo": "cuota_fija",
+            "unidad": "pesos"
+          },
+          {
+            "nombre": "general",
+            "valor": 0.36,
+            "tipo": "tasa_marginal",
+            "unidad": "al_millar"
+          }
+        ]
+      },
+      {
+        "n_rango": 4,
+        "inferior": 144400.0,
+        "superior": 259920.0,
+        "columnas": [
+          {
+            "nombre": "general",
+            "valor": 55.98,
+            "tipo": "cuota_fija",
+            "unidad": "pesos"
+          },
+          {
+            "nombre": "general",
+            "valor": 0.4429,
+            "tipo": "tasa_marginal",
+            "unidad": "al_millar"
+          }
+        ]
+      },
+      {
+        "n_rango": 5,
+        "inferior": 259920.0,
+        "superior": 441864.0,
+        "columnas": [
+          {
+            "nombre": "general",
+            "valor": 119.17,
+            "tipo": "cuota_fija",
+            "unidad": "pesos"
+          },
+          {
+            "nombre": "general",
+            "valor": 0.5345,
+            "tipo": "tasa_marginal",
+            "unidad": "al_millar"
+          }
+        ]
+      },
+      {
+        "n_rango": 6,
+        "inferior": 441864.0,
+        "superior": 706982.0,
+        "columnas": [
+          {
+            "nombre": "general",
+            "valor": 241.55,
+            "tipo": "cuota_fija",
+            "unidad": "pesos"
+          },
+          {
+            "nombre": "general",
+            "valor": 0.581,
+            "tipo": "tasa_marginal",
+            "unidad": "al_millar"
+          }
+        ]
+      },
+      {
+        "n_rango": 7,
+        "inferior": 706982.0,
+        "superior": 1060473.0,
+        "columnas": [
+          {
+            "nombre": "general",
+            "valor": 450.77,
+            "tipo": "cuota_fija",
+            "unidad": "pesos"
+          },
+          {
+            "nombre": "general",
+            "valor": 0.5817,
+            "tipo": "tasa_marginal",
+            "unidad": "al_millar"
+          }
+        ]
+      },
+      {
+        "n_rango": 8,
+        "inferior": 1060473.0,
+        "superior": 1484662.0,
+        "columnas": [
+          {
+            "nombre": "general",
+            "valor": 772.76,
+            "tipo": "cuota_fija",
+            "unidad": "pesos"
+          },
+          {
+            "nombre": "general",
+            "valor": 0.7185,
+            "tipo": "tasa_marginal",
+            "unidad": "al_millar"
+          }
+        ]
+      },
+      {
+        "n_rango": 9,
+        "inferior": 1484662.0,
+        "superior": 1930600.0,
+        "columnas": [
+          {
+            "nombre": "general",
+            "valor": 1271.81,
+            "tipo": "cuota_fija",
+            "unidad": "pesos"
+          },
+          {
+            "nombre": "general",
+            "valor": 0.7191,
+            "tipo": "tasa_marginal",
+            "unidad": "al_millar"
+          }
+        ]
+      },
+      {
+        "n_rango": 10,
+        "inferior": 1930600.0,
+        "superior": 2316072.0,
+        "columnas": [
+          {
+            "nombre": "general",
+            "valor": 1745.82,
+            "tipo": "cuota_fija",
+            "unidad": "pesos"
+          },
+          {
+            "nombre": "general",
+            "valor": 0.9139,
+            "tipo": "tasa_marginal",
+            "unidad": "al_millar"
+          }
+        ]
+      },
+      {
+        "n_rango": 11,
+        "inferior": 2316072.0,
+        "superior": null,
+        "columnas": [
+          {
+            "nombre": "general",
+            "valor": 2244.61,
+            "tipo": "cuota_fija",
+            "unidad": "pesos"
+          },
+          {
+            "nombre": "general",
+            "valor": 0.9145,
+            "tipo": "tasa_marginal",
+            "unidad": "al_millar"
+          }
+        ]
+      }
+    ],
+    "minimo_predial": {
+      "monto": 46.74,
+      "periodicidad": "anual",
+      "unidad": "pesos"
+    },
+    "comentarios": "Heterogeneidad dentro de la tabla principal de predios edificados: cuota fija en pesos más tasa al millar sobre el excedente. Tarifas paralelas no mezcladas en la tabla principal: predios no edificados con 0.01-19053.46 cuota mínima 46.74; 19053.47-22294.00 tasa 2.4528 al millar; 22294.01 en adelante 3.1584 al millar. Predios rurales por hectárea con tasas al millar por categoría y edificaciones de predios rurales con cuota mínima 46.74 más tasas al millar por rangos. En ningún caso el impuesto será menor a 46.74.",
+    "clasificacion_justificacion": "Heterogeneidad en COLUMNA: la tabla de rangos usa cuota_fija en pesos ($46.74, $55.98, $119.17...) vs tasa_marginal al millar (0.0000, 0.3600, 0.4429...). Patrón: otro."
+  },
+  "_meta": {
+    "fuente": "pdf_vision_multi",
+    "modelo": "gpt-5.4"
+  },
+  "_meta_v2": {
+    "intentos": 1,
+    "requiere_revision": false,
+    "escalado": true,
+    "razon": "rescate_via_vision_multi",
+    "usado_reocr": false,
+    "usado_vision": true,
+    "usado_vision_multi": true,
+    "tokens": {
+      "input": 136931,
+      "output": 4196,
+      "cached": 6912
+    },
+    "cvegeo": "26010",
+    "estado": "sonora",
+    "anio": 2015,
+    "pdf_stem": "2014CXCIV52X",
+    "elapsed_sec_pdf": 254.96799999999348,
+    "razon_no_encontrado": null
+  }
+}

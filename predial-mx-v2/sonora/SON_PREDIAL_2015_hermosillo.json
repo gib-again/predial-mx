@@ -1,0 +1,42 @@
+{
+  "predial": {
+    "tipo_esquema": "tarifa_millar",
+    "tabla": [
+      {
+        "grupo": "general",
+        "clave": "general",
+        "descripcion": "Tasa general aplicable del impuesto predial sobre el valor catastral de los inmuebles",
+        "tasa_millar": 9.0,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      }
+    ],
+    "minimo_predial": null,
+    "comentarios": "Artículo 9.- La tasa general aplicable del Impuesto predial será 9 al millar sobre el valor catastral de los inmuebles. Para efectos del cálculo del impuesto predial, un predio será considerado como construido o edificado cuando el valor catastral de sus construcciones sea igual o mayor del 6% del valor catastral del suelo, y se encuentre en condiciones de ser habitable. Artículo 14 establece una tarifa paralela para predios rústicos ejidales o comunales y núcleos de población ejidal o comunal: 2% de la producción comercializada. Conforme a las reglas, no se mezcla con la mecánica principal del predial inmobiliario.",
+    "clasificacion_justificacion": "Existe una tarifa principal al millar para inmuebles y una tarifa paralela accesoria para predios rústicos ejidales/comunales sobre producción comercializada, documentada en comentarios."
+  },
+  "_meta": {
+    "fuente": "pdf_vision_multi",
+    "modelo": "gpt-5.4"
+  },
+  "_meta_v2": {
+    "intentos": 1,
+    "requiere_revision": false,
+    "escalado": true,
+    "razon": "rescate_via_vision_multi",
+    "usado_reocr": false,
+    "usado_vision": true,
+    "usado_vision_multi": true,
+    "tokens": {
+      "input": 98634,
+      "output": 315,
+      "cached": 0
+    },
+    "cvegeo": "26030",
+    "estado": "sonora",
+    "anio": 2015,
+    "pdf_stem": "2014CXCIV52III",
+    "elapsed_sec_pdf": 136.93799999996554,
+    "razon_no_encontrado": null
+  }
+}

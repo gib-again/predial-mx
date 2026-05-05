@@ -1,0 +1,94 @@
+{
+  "predial": {
+    "tipo_esquema": "progresivo",
+    "tabla": [
+      {
+        "n_rango": 1,
+        "inferior": 0.01,
+        "superior": 47000.0,
+        "cuota_fija": 0.0,
+        "tasa_marginal": 0.0
+      },
+      {
+        "n_rango": 2,
+        "inferior": 47000.0,
+        "superior": 95000.0,
+        "cuota_fija": 66.25,
+        "tasa_marginal": 1.2226
+      },
+      {
+        "n_rango": 3,
+        "inferior": 95000.0,
+        "superior": 180000.0,
+        "cuota_fija": 138.97,
+        "tasa_marginal": 1.9086
+      },
+      {
+        "n_rango": 4,
+        "inferior": 180000.0,
+        "superior": 324900.0,
+        "cuota_fija": 306.32,
+        "tasa_marginal": 2.3924
+      },
+      {
+        "n_rango": 5,
+        "inferior": 324900.0,
+        "superior": 552330.0,
+        "cuota_fija": 589.04,
+        "tasa_marginal": 2.6458
+      },
+      {
+        "n_rango": 6,
+        "inferior": 552330.0,
+        "superior": 883726.0,
+        "cuota_fija": 1034.6,
+        "tasa_marginal": 2.6722
+      },
+      {
+        "n_rango": 7,
+        "inferior": 883726.0,
+        "superior": 1325591.0,
+        "cuota_fija": 1296.78,
+        "tasa_marginal": 1.2349
+      },
+      {
+        "n_rango": 8,
+        "inferior": 1325591.0,
+        "superior": 1855828.0,
+        "cuota_fija": 2295.54,
+        "tasa_marginal": 1.2473
+      },
+      {
+        "n_rango": 9,
+        "inferior": 1855828.0,
+        "superior": 2412575.0,
+        "cuota_fija": 3466.6,
+        "tasa_marginal": 1.1651
+      },
+      {
+        "n_rango": 10,
+        "inferior": 2412575.0,
+        "superior": 2895090.0,
+        "cuota_fija": 3689.44,
+        "tasa_marginal": 2.0127
+      },
+      {
+        "n_rango": 11,
+        "inferior": 2895090.0,
+        "superior": null,
+        "cuota_fija": 4058.38,
+        "tasa_marginal": 3.1221
+      }
+    ],
+    "minimo_predial": {
+      "monto": 66.25,
+      "periodicidad": "anual",
+      "unidad": "pesos"
+    },
+    "comentarios": ""
+  },
+  "_meta": {
+    "fuente": "txt",
+    "modelo": "gpt-5.4-mini->reclasified_v2"
+  }
+}

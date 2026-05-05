@@ -1,0 +1,38 @@
+{
+  "predial": {
+    "tipo_esquema": "tarifa_millar",
+    "tabla": [
+      {
+        "grupo": "rustico",
+        "clave": "predios_rusticos_ejidales_o_comunales",
+        "descripcion": "Tratándose del Impuesto Predial sobre predios rústicos ejidales o comunales, la tasa aplicable será la de $1.62 por hectárea.",
+        "tasa_millar": 1.62,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      }
+    ],
+    "minimo_predial": {
+      "monto": 60.0,
+      "periodicidad": "anual",
+      "unidad": "pesos"
+    },
+    "comentarios": ""
+  },
+  "_meta": {
+    "fuente": "txt",
+    "modelo": "reclasified_v1[gpt-5.4-mini]"
+  },
+  "_meta_v2": {
+    "intentos": 0,
+    "requiere_revision": false,
+    "razon": null,
+    "tokens": {
+      "input": 0,
+      "output": 0,
+      "cached": 0
+    },
+    "cvegeo": "26049",
+    "estado": "sonora",
+    "anio": 2023
+  }
+}

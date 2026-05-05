@@ -111,11 +111,18 @@ def _slug_to_cve(slug: str) -> str:
 _RE_LEY_INICIO = re.compile(
     r"LEY\s+DE\s+INGRESOS[\s\S]{0,300}?"
     # "MUNICIPIO DE" tolerante: M-U-N + cualquier ruido OCR (apóstrofes, puntos,
-    # espacios, letras sueltas) hasta el siguiente "DE" + espacio
-    r"MUN[\w\s\.\-:;'‘’]{1,8}?DE\s+"
-    r"(?P<muni>[\w\sÁÉÍÓÚÑÜáéíóúñü\.\-]+?)\s*,\s*"
-    r"SONORA[\s\S]{0,300}?"
-    r"EJERCICIO\s+F[\w]?SCAL\s+(?:DEL?\s+)?(?:A[ÑN]O\s+)?(?P<anio>\d{4})",
+    # espacios, letras sueltas) hasta el siguiente "DE" + espacio.
+    # Window 1-15 (era 1-8) para tolerar OCR mojibake severo en boletines
+    # colectivos donde el right-margin del PDF se corta.
+    r"MUN[\w\s\.\-:;'‘’]{1,15}?DE\s+"
+    r"(?P<muni>[\w\sÁÉÍÓÚÑÜáéíóúñü\.\-]+?)\s*,?\s*"  # coma opcional (OCR a veces la pierde)
+    r"SONORA[\s\S]{0,500}?"
+    # El marcador "EJERCICIO FISCAL" se vuelve OPCIONAL: el OCR de boletines
+    # colectivos trunca regularmente "EJERCICIO FISCAL DE 2010" → "EJERCICI\n2010".
+    # Aceptamos cualquier prefijo razonable o ninguno antes del año, siempre que
+    # el año (4 dígitos) aparezca en los siguientes 0-500 chars después de SONORA.
+    r"(?:EJERC[A-Z]*\s+(?:F[A-Z]*\s+)?(?:DEL?\s+)?(?:A[ÑN]O\s+)?)?"
+    r"(?P<anio>20\d{2}|19\d{2})",
     re.IGNORECASE,
 )
 

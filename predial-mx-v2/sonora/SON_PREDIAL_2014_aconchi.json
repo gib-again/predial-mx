@@ -1,0 +1,108 @@
+{
+  "predial": {
+    "tipo_esquema": "progresivo",
+    "tabla": [
+      {
+        "n_rango": 1,
+        "inferior": 0.01,
+        "superior": 38000.0,
+        "cuota_fija": 45.16,
+        "tasa_marginal": 0.0
+      },
+      {
+        "n_rango": 2,
+        "inferior": 38000.0,
+        "superior": 76000.0,
+        "cuota_fija": 45.16,
+        "tasa_marginal": 0.0
+      },
+      {
+        "n_rango": 3,
+        "inferior": 76000.0,
+        "superior": 144000.0,
+        "cuota_fija": 45.16,
+        "tasa_marginal": 0.367
+      },
+      {
+        "n_rango": 4,
+        "inferior": 144000.0,
+        "superior": 259920.0,
+        "cuota_fija": 48.28,
+        "tasa_marginal": 0.4517
+      },
+      {
+        "n_rango": 5,
+        "inferior": 259920.0,
+        "superior": 441864.0,
+        "cuota_fija": 102.82,
+        "tasa_marginal": 0.6451
+      },
+      {
+        "n_rango": 6,
+        "inferior": 441864.0,
+        "superior": 706882.0,
+        "cuota_fija": 208.38,
+        "tasa_marginal": 0.5925
+      },
+      {
+        "n_rango": 7,
+        "inferior": 706882.0,
+        "superior": 1060473.0,
+        "cuota_fija": 365.53,
+        "tasa_marginal": 0.6932
+      },
+      {
+        "n_rango": 8,
+        "inferior": 1060473.0,
+        "superior": 1846862.0,
+        "cuota_fija": 608.83,
+        "tasa_marginal": 0.7328
+      },
+      {
+        "n_rango": 9,
+        "inferior": 1846862.0,
+        "superior": 2930600.0,
+        "cuota_fija": 1175.16,
+        "tasa_marginal": 0.7335
+      },
+      {
+        "n_rango": 10,
+        "inferior": 2930600.0,
+        "superior": null,
+        "cuota_fija": 1969.67,
+        "tasa_marginal": 0.7335
+      }
+    ],
+    "minimo_predial": {
+      "monto": 45.16,
+      "periodicidad": "anual",
+      "unidad": "pesos"
+    },
+    "comentarios": "Tabla principal: predios edificados. Tarifa paralela para predios no edificados: 0.01–22146.00 paga 45.16 cuota mínima; 22146.00–25944.00 aplica 2.0364 al millar; 25944.00 en adelante aplica 2.6229 al millar. Tarifa paralela para predios rústicos por hectárea con categorías de riego/agostadero y para edificaciones rurales con brackets; en ningún caso el impuesto será menor a 45.16. La ley señala además que el importe a pagar del impuesto predial no podrá exceder 3.5% respecto al cobro del año anterior.",
+    "clasificacion_justificacion": null
+  },
+  "_meta": {
+    "fuente": "pdf_vision_multi",
+    "modelo": "gpt-5.4"
+  },
+  "_meta_v2": {
+    "intentos": 1,
+    "requiere_revision": false,
+    "escalado": true,
+    "razon": "rescate_via_vision_multi",
+    "usado_reocr": false,
+    "usado_vision": true,
+    "usado_vision_multi": true,
+    "tokens": {
+      "input": 98676,
+      "output": 2312,
+      "cached": 0
+    },
+    "cvegeo": "26001",
+    "estado": "sonora",
+    "anio": 2014,
+    "pdf_stem": "2013CXCII50XV",
+    "elapsed_sec_pdf": 159.0470000000205,
+    "razon_no_encontrado": null
+  }
+}

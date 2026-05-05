@@ -1,63 +1,13 @@
 {
   "predial": {
     "tipo_esquema": "progresivo",
-    "tabla": [
-      {
-        "n_rango": 1,
-        "inferior": 0.0,
-        "superior": 5000.0,
-        "cuota_fija": 10.0,
-        "tasa_marginal": 0.025
-      },
-      {
-        "n_rango": 2,
-        "inferior": 5000.01,
-        "superior": 7500.0,
-        "cuota_fija": 13.0,
-        "tasa_marginal": 0.025
-      },
-      {
-        "n_rango": 3,
-        "inferior": 7500.01,
-        "superior": 10500.0,
-        "cuota_fija": 15.0,
-        "tasa_marginal": 0.025
-      },
-      {
-        "n_rango": 4,
-        "inferior": 10500.01,
-        "superior": 12500.0,
-        "cuota_fija": 18.0,
-        "tasa_marginal": 0.025
-      },
-      {
-        "n_rango": 5,
-        "inferior": 12500.01,
-        "superior": 15000.0,
-        "cuota_fija": 23.0,
-        "tasa_marginal": 0.025
-      },
-      {
-        "n_rango": 6,
-        "inferior": 15000.01,
-        "superior": 20000.0,
-        "cuota_fija": 28.0,
-        "tasa_marginal": 0.025
-      },
-      {
-        "n_rango": 7,
-        "inferior": 20000.01,
-        "superior": null,
-        "cuota_fija": 33.0,
-        "tasa_marginal": 0.025
-      }
-    ],
+    "comentarios": "Imputado por tipo_only_fill: tipo_esquema preservado del año donor; tabla/rangos no clonados por baja confianza en estabilidad temporal.",
     "minimo_predial": null,
-    "comentarios": "[treatment_audit:asumir_esquema_anterior from 2022] asumir tasa periodo inmediato anterior Comentario original: Artículo 13: tabla progresiva anual del impuesto predial con cuota fija + factor 0.025 sobre el excedente. El texto incluye además una tarifa paralela para 'predios rústicos con actividad agropecuaria' de $20.00 por hectárea (Art. 14), que no se incorpora a la tabla principal por ser un régimen separado. Se normalizó el primer rango a inferior=0 para cubrir el tramo 'De 01'–5000.00. Se respetó la estructura de brackets con superior=null sólo en el último rango."
+    "tabla": []
   },
   "_meta": {
     "fuente": "txt",
-    "modelo": "imputed_audit_directed[from_2022]"
+    "modelo": "imputed_tipo_only_fill"
   },
   "_meta_v2": {
     "intentos": 0,
@@ -72,9 +22,6 @@
     "estado": "yucatan",
     "anio": 2023,
     "imputed_from_year": 2022,
-    "imputed_method": "audit_directed",
-    "treatment_audit_source": "asumir_esquema_anterior",
-    "audit_auditor": "",
-    "audit_fecha": ""
+    "imputed_method": "tipo_only_fill"
   }
 }

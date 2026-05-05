@@ -1,0 +1,187 @@
+{
+  "predial": {
+    "tipo_esquema": "mixto",
+    "tabla": [
+      {
+        "n_rango": 1,
+        "inferior": 0.01,
+        "superior": 38000.0,
+        "columnas": [
+          {
+            "nombre": "general",
+            "valor": 53.12,
+            "tipo": "cuota_fija",
+            "unidad": "pesos"
+          }
+        ]
+      },
+      {
+        "n_rango": 2,
+        "inferior": 38000.0,
+        "superior": 76000.0,
+        "columnas": [
+          {
+            "nombre": "general",
+            "valor": 53.12,
+            "tipo": "cuota_fija",
+            "unidad": "pesos"
+          }
+        ]
+      },
+      {
+        "n_rango": 3,
+        "inferior": 76000.0,
+        "superior": 144400.0,
+        "columnas": [
+          {
+            "nombre": "general",
+            "valor": 53.12,
+            "tipo": "cuota_fija",
+            "unidad": "pesos"
+          }
+        ]
+      },
+      {
+        "n_rango": 4,
+        "inferior": 144400.0,
+        "superior": 259920.0,
+        "columnas": [
+          {
+            "nombre": "general",
+            "valor": 81.31,
+            "tipo": "cuota_fija",
+            "unidad": "pesos"
+          }
+        ]
+      },
+      {
+        "n_rango": 5,
+        "inferior": 259920.0,
+        "superior": 441864.0,
+        "columnas": [
+          {
+            "nombre": "general",
+            "valor": 156.9,
+            "tipo": "cuota_fija",
+            "unidad": "pesos"
+          }
+        ]
+      },
+      {
+        "n_rango": 6,
+        "inferior": 441864.0,
+        "superior": 706982.0,
+        "columnas": [
+          {
+            "nombre": "general",
+            "valor": 289.24,
+            "tipo": "cuota_fija",
+            "unidad": "pesos"
+          }
+        ]
+      },
+      {
+        "n_rango": 7,
+        "inferior": 706982.0,
+        "superior": 1060473.0,
+        "columnas": [
+          {
+            "nombre": "general",
+            "valor": 598.22,
+            "tipo": "cuota_fija",
+            "unidad": "pesos"
+          }
+        ]
+      },
+      {
+        "n_rango": 8,
+        "inferior": 1060473.0,
+        "superior": 1484662.0,
+        "columnas": [
+          {
+            "nombre": "general",
+            "valor": 1048.67,
+            "tipo": "cuota_fija",
+            "unidad": "pesos"
+          }
+        ]
+      },
+      {
+        "n_rango": 9,
+        "inferior": 1484662.0,
+        "superior": 1930060.0,
+        "columnas": [
+          {
+            "nombre": "general",
+            "valor": 1649.67,
+            "tipo": "cuota_fija",
+            "unidad": "pesos"
+          }
+        ]
+      },
+      {
+        "n_rango": 10,
+        "inferior": 1930060.0,
+        "superior": 2316072.0,
+        "columnas": [
+          {
+            "nombre": "general",
+            "valor": 2371.29,
+            "tipo": "cuota_fija",
+            "unidad": "pesos"
+          }
+        ]
+      },
+      {
+        "n_rango": 11,
+        "inferior": 2316072.0,
+        "superior": null,
+        "columnas": [
+          {
+            "nombre": "general",
+            "valor": 3143.07,
+            "tipo": "cuota_fija",
+            "unidad": "pesos"
+          },
+          {
+            "nombre": "general",
+            "valor": 1.7307,
+            "tipo": "tasa_marginal",
+            "unidad": "al_millar"
+          }
+        ]
+      }
+    ],
+    "minimo_predial": {
+      "monto": 53.12,
+      "periodicidad": "anual",
+      "unidad": "pesos"
+    },
+    "comentarios": "Se toma como tabla principal la de predios edificados con rangos por valor catastral. Tarifas paralelas: predios no edificados con cuota mínima de 53.12 y tasas de 2.835899 y 3.652071 al millar; predios rústicos por hectárea con categorías al millar; edificaciones de predios rústicos con cuota mínima de 53.12 y tasas de 1.3294 a 2.0071 al millar. Impuesto predial ejidal: 10.00 por hectárea.",
+    "clasificacion_justificacion": "Heterogeneidad en BRACKET: brackets 1-10 con cuota_fija en pesos vs bracket 11 con cuota_fija en pesos y tasa_marginal de 1.7307 al millar sobre el excedente. Patrón C."
+  },
+  "_meta": {
+    "fuente": "pdf_vision_multi",
+    "modelo": "gpt-5.4"
+  },
+  "_meta_v2": {
+    "intentos": 1,
+    "requiere_revision": false,
+    "escalado": true,
+    "razon": "rescate_via_vision_multi",
+    "usado_reocr": false,
+    "usado_vision": true,
+    "usado_vision_multi": true,
+    "tokens": {
+      "input": 130845,
+      "output": 2771,
+      "cached": 6912
+    },
+    "cvegeo": "26045",
+    "estado": "sonora",
+    "anio": 2021,
+    "pdf_stem": "2020CCVI51XIX",
+    "elapsed_sec_pdf": 141.59400000004098,
+    "razon_no_encontrado": null
+  }
+}

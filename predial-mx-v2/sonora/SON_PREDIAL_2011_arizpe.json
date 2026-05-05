@@ -1,0 +1,181 @@
+{
+  "predial": {
+    "tipo_esquema": "mixto",
+    "tabla": [
+      {
+        "n_rango": 1,
+        "inferior": 0.01,
+        "superior": 38000.0,
+        "columnas": [
+          {
+            "nombre": "general",
+            "valor": 41.95,
+            "tipo": "cuota_fija",
+            "unidad": "pesos"
+          }
+        ]
+      },
+      {
+        "n_rango": 2,
+        "inferior": 38000.0,
+        "superior": 76000.0,
+        "columnas": [
+          {
+            "nombre": "general",
+            "valor": 41.95,
+            "tipo": "cuota_fija",
+            "unidad": "pesos"
+          }
+        ]
+      },
+      {
+        "n_rango": 3,
+        "inferior": 76000.0,
+        "superior": 144400.0,
+        "columnas": [
+          {
+            "nombre": "general",
+            "valor": 41.95,
+            "tipo": "cuota_fija",
+            "unidad": "pesos"
+          }
+        ]
+      },
+      {
+        "n_rango": 4,
+        "inferior": 144400.0,
+        "superior": 259920.0,
+        "columnas": [
+          {
+            "nombre": "general",
+            "valor": 57.1,
+            "tipo": "cuota_fija",
+            "unidad": "pesos"
+          }
+        ]
+      },
+      {
+        "n_rango": 5,
+        "inferior": 259920.0,
+        "superior": 441864.0,
+        "columnas": [
+          {
+            "nombre": "general",
+            "valor": 121.55,
+            "tipo": "cuota_fija",
+            "unidad": "pesos"
+          }
+        ]
+      },
+      {
+        "n_rango": 6,
+        "inferior": 441864.0,
+        "superior": 706982.01,
+        "columnas": [
+          {
+            "nombre": "general",
+            "valor": 246.38,
+            "tipo": "cuota_fija",
+            "unidad": "pesos"
+          }
+        ]
+      },
+      {
+        "n_rango": 7,
+        "inferior": 706982.01,
+        "superior": 1069473.0,
+        "columnas": [
+          {
+            "nombre": "general",
+            "valor": 459.79,
+            "tipo": "cuota_fija",
+            "unidad": "pesos"
+          }
+        ]
+      },
+      {
+        "n_rango": 8,
+        "inferior": 1069473.0,
+        "superior": 1484662.01,
+        "columnas": [
+          {
+            "nombre": "general",
+            "valor": 788.23,
+            "tipo": "cuota_fija",
+            "unidad": "pesos"
+          }
+        ]
+      },
+      {
+        "n_rango": 9,
+        "inferior": 1484662.01,
+        "superior": 1930000.0,
+        "columnas": [
+          {
+            "nombre": "general",
+            "valor": 1297.5,
+            "tipo": "cuota_fija",
+            "unidad": "pesos"
+          }
+        ]
+      },
+      {
+        "n_rango": 10,
+        "inferior": 1930000.0,
+        "superior": 2316072.01,
+        "columnas": [
+          {
+            "nombre": "general",
+            "valor": 1870.75,
+            "tipo": "cuota_fija",
+            "unidad": "pesos"
+          }
+        ]
+      },
+      {
+        "n_rango": 11,
+        "inferior": 2316072.01,
+        "superior": null,
+        "columnas": [
+          {
+            "nombre": "general",
+            "valor": 0.8665,
+            "tipo": "tasa_millar",
+            "unidad": "al_millar"
+          }
+        ]
+      }
+    ],
+    "minimo_predial": {
+      "monto": 41.95,
+      "periodicidad": "anual",
+      "unidad": "pesos"
+    },
+    "comentarios": "Tabla principal de predios edificados con rangos por valor catastral. En predios no edificados se observan tres rangos con cuota mínima para el primero y tasas al millar en rangos subsecuentes. Además, para predios rurales se establece una tarifa paralela por categoría con tasa al millar.",
+    "clasificacion_justificacion": "Heterogeneidad en BRACKET: brackets 1-10 con cuota_fija en pesos vs bracket 11 con tasa al millar (0.8665). Patrón: A."
+  },
+  "_meta": {
+    "fuente": "pdf_vision_multi",
+    "modelo": "gpt-5.4"
+  },
+  "_meta_v2": {
+    "intentos": 1,
+    "requiere_revision": false,
+    "escalado": true,
+    "razon": "rescate_via_vision_multi",
+    "usado_reocr": false,
+    "usado_vision": true,
+    "usado_vision_multi": true,
+    "tokens": {
+      "input": 77902,
+      "output": 2467,
+      "cached": 6912
+    },
+    "cvegeo": "26006",
+    "estado": "sonora",
+    "anio": 2011,
+    "pdf_stem": "2010CLXXXVI53XV",
+    "elapsed_sec_pdf": 185.0779999999795,
+    "razon_no_encontrado": null
+  }
+}

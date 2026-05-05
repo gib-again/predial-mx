@@ -1,0 +1,158 @@
+{
+  "predial": {
+    "tipo_esquema": "tarifa_millar",
+    "tabla": [
+      {
+        "grupo": "rustico",
+        "clave": "predios_rurales_hectarea_valor_catastral",
+        "descripcion": "Sobre el valor catastral de cada hectárea de los predios rurales",
+        "tasa_millar": 0.9827,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "rustico",
+        "clave": "predios_rurales_hectarea_valor_catastral",
+        "descripcion": "Sobre el valor catastral de cada hectárea de los predios rurales",
+        "tasa_millar": 1.727,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "rustico",
+        "clave": "predios_rurales_hectarea_valor_catastral",
+        "descripcion": "Sobre el valor catastral de cada hectárea de los predios rurales",
+        "tasa_millar": 1.9968,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "rustico",
+        "clave": "predios_rurales_hectarea_valor_catastral",
+        "descripcion": "Sobre el valor catastral de cada hectárea de los predios rurales",
+        "tasa_millar": 1.8512,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "rustico",
+        "clave": "predios_rurales_hectarea_valor_catastral",
+        "descripcion": "Sobre el valor catastral de cada hectárea de los predios rurales",
+        "tasa_millar": 2.6148,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "rustico",
+        "clave": "predios_rurales_hectarea_valor_catastral",
+        "descripcion": "Sobre el valor catastral de cada hectárea de los predios rurales",
+        "tasa_millar": 1.7069,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "rustico",
+        "clave": "predios_rurales_hectarea_valor_catastral",
+        "descripcion": "Sobre el valor catastral de cada hectárea de los predios rurales",
+        "tasa_millar": 0.2689,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "rustico",
+        "clave": "predios_rurales_hectarea_valor_catastral",
+        "descripcion": "Sobre el valor catastral de cada hectárea de los predios rurales",
+        "tasa_millar": 0.2689,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "rustico",
+        "clave": "predios_rurales_hectarea_valor_catastral",
+        "descripcion": "Sobre el valor catastral de cada hectárea de los predios rurales",
+        "tasa_millar": 1.7456,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "rustico",
+        "clave": "predios_rurales_hectarea_valor_catastral",
+        "descripcion": "Sobre el valor catastral de cada hectárea de los predios rurales",
+        "tasa_millar": 1.7442,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "rustico",
+        "clave": "predios_rurales_hectarea_valor_catastral",
+        "descripcion": "Sobre el valor catastral de cada hectárea de los predios rurales",
+        "tasa_millar": 2.6148,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "rustico",
+        "clave": "predios_rurales_hectarea_valor_catastral",
+        "descripcion": "Sobre el valor catastral de cada hectárea de los predios rurales",
+        "tasa_millar": 0.9827,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "rustico",
+        "clave": "predios_rurales_hectarea_valor_catastral",
+        "descripcion": "Sobre el valor catastral de cada hectárea de los predios rurales",
+        "tasa_millar": 0.727,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "rustico",
+        "clave": "predios_rurales_hectarea_valor_catastral",
+        "descripcion": "Sobre el valor catastral de cada hectárea de los predios rurales",
+        "tasa_millar": 1.727,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "rustico",
+        "clave": "predios_rurales_hectarea_valor_catastral",
+        "descripcion": "Sobre el valor catastral de cada hectárea de los predios rurales",
+        "tasa_millar": 2.6186,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "rustico",
+        "clave": "predios_rurales_hectarea_valor_catastral",
+        "descripcion": "Sobre el valor catastral de cada hectárea de los predios rurales",
+        "tasa_millar": 3.5066,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      }
+    ],
+    "minimo_predial": {
+      "monto": 63.7,
+      "periodicidad": "anual",
+      "unidad": "pesos"
+    },
+    "comentarios": ""
+  },
+  "_meta": {
+    "fuente": "txt",
+    "modelo": "reclasified_v1[gpt-5.4-mini]"
+  },
+  "_meta_v2": {
+    "intentos": 0,
+    "requiere_revision": false,
+    "razon": null,
+    "tokens": {
+      "input": 0,
+      "output": 0,
+      "cached": 0
+    },
+    "cvegeo": "26017",
+    "estado": "sonora",
+    "anio": 2018
+  }
+}

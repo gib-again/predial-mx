@@ -1,0 +1,126 @@
+{
+  "predial": {
+    "tipo_esquema": "tarifa_millar",
+    "tabla": [
+      {
+        "grupo": "urbano",
+        "clave": "predios_edificados",
+        "descripcion": "Sobre el valor catastral de los predios edificados",
+        "tasa_millar": 0.0,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": {
+          "monto": 49.59,
+          "periodicidad": "anual",
+          "unidad": "pesos"
+        }
+      },
+      {
+        "grupo": "urbano",
+        "clave": "predios_no_edificados",
+        "descripcion": "Sobre el valor catastral de los predios no edificados",
+        "tasa_millar": 3.3425,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": {
+          "monto": 49.59,
+          "periodicidad": "anual",
+          "unidad": "pesos"
+        }
+      },
+      {
+        "grupo": "rustico",
+        "clave": "predios_rurales_riego_de_gravedad_1",
+        "descripcion": "Riego de gravedad 1: Terrenos dentro del Distrito de Riego con derecho a agua de presa regularmente.",
+        "tasa_millar": 1.0476336,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "rustico",
+        "clave": "predios_rurales_riego_de_gravedad_2",
+        "descripcion": "Riego de gravedad 2: Terrenos con derecho a agua de presa o río irregularmente aún dentro del Distrito de Riego.",
+        "tasa_millar": 1.84117856,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "rustico",
+        "clave": "predios_rurales_riego_de_bombeo_1",
+        "descripcion": "Riego de bombeo 1: Terrenos con riego mecánico con pozo de poca profundidad (100 pies máximo).",
+        "tasa_millar": 1.83250184,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "rustico",
+        "clave": "predios_rurales_riego_de_bombeo_2",
+        "descripcion": "Riego de bombeo 2: Terrenos con riego mecánico con pozo profundo (más de 100 pies).",
+        "tasa_millar": 1.860888864,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "rustico",
+        "clave": "predios_rurales_riego_de_temporal_unica",
+        "descripcion": "Riego de temporal única: Terrenos que dependen para su irrigación de la eventualidad de precipitaciones.",
+        "tasa_millar": 2.79176144,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "rustico",
+        "clave": "predios_rurales_agostadero_1",
+        "descripcion": "Agostadero 1: Terrenos con praderas naturales.",
+        "tasa_millar": 1.43444392,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "rustico",
+        "clave": "predios_rurales_agostadero_2",
+        "descripcion": "Agostadero 2: Terrenos que fueron mejorados para pastoreo en base a técnicas.",
+        "tasa_millar": 1.81964744,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "rustico",
+        "clave": "predios_rurales_agostadero_3",
+        "descripcion": "Agostadero 3: Terrenos que se encuentran en zonas semidesérticas de bajo rendimiento.",
+        "tasa_millar": 0.28686736,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "rustico",
+        "clave": "predios_rurales_mineral_1",
+        "descripcion": "Mineral 1: Terrenos con aprovechamiento metálico y no metálico",
+        "tasa_millar": 1.86088864,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      }
+    ],
+    "minimo_predial": {
+      "monto": 49.59,
+      "periodicidad": "anual",
+      "unidad": "pesos"
+    },
+    "comentarios": ""
+  },
+  "_meta": {
+    "fuente": "txt",
+    "modelo": "reclasified_v1[gpt-5.4-mini]"
+  },
+  "_meta_v2": {
+    "intentos": 0,
+    "requiere_revision": false,
+    "razon": null,
+    "tokens": {
+      "input": 0,
+      "output": 0,
+      "cached": 0
+    },
+    "cvegeo": "26065",
+    "estado": "sonora",
+    "anio": 2019
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "predial": {
+    "tipo_esquema": "tasa_unica",
+    "tabla": [
+      {
+        "descripcion": "Impuesto predial sobre valor catastral",
+        "tasa": 1.0,
+        "base_calculo": "valor_catastral",
+        "unidad": "porcentaje",
+        "cuota_fija_adicional": null
+      }
+    ],
+    "minimo_predial": {
+      "monto": 4.562,
+      "periodicidad": "anual",
+      "unidad": "uma"
+    },
+    "comentarios": "Artículo 7: el impuesto predial se causará y pagará a una tasa del 1% sobre el valor catastral. Artículo 8: para predios edificados el monto anual resulta de aplicar la tasa del 1% menos el subsidio del 73.58% en 2017. Artículo 9: para predios no edificados el monto anual resulta de aplicar la tasa del 1% menos el subsidio del 56.29% en 2017. Artículo 10: en ningún caso el monto a pagar será inferior a 4.5620 VUMAV. Artículo 19 establece una tarifa paralela para impuesto predial ejidal sobre predios rústicos, ejidales o comunales: predios edificados con tasa del 1% menos subsidio del 73.58% y no edificados con tasa del 1% menos subsidio del 56.29%.",
+    "clasificacion_justificacion": null
+  },
+  "_meta": {
+    "fuente": "pdf_vision_multi",
+    "modelo": "gpt-5.4"
+  },
+  "_meta_v2": {
+    "intentos": 1,
+    "requiere_revision": false,
+    "escalado": true,
+    "razon": "rescate_via_vision_multi",
+    "usado_reocr": false,
+    "usado_vision": true,
+    "usado_vision_multi": true,
+    "tokens": {
+      "input": 117504,
+      "output": 328,
+      "cached": 6912
+    },
+    "cvegeo": "26043",
+    "estado": "sonora",
+    "anio": 2017,
+    "pdf_stem": "2016CXCVIII51IX",
+    "elapsed_sec_pdf": 125.98400000005495,
+    "razon_no_encontrado": null
+  }
+}

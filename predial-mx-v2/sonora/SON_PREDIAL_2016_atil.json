@@ -1,0 +1,86 @@
+{
+  "predial": {
+    "tipo_esquema": "tarifa_millar",
+    "tabla": [
+      {
+        "grupo": "rustico",
+        "clave": "riego_gravedad_1",
+        "descripcion": "Riego de gravedad 1: Terrenos dentro del Distrito de Riego con derecho a agua de presa regularmente",
+        "tasa_millar": 1.5893,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "rustico",
+        "clave": "riego_gravedad_2",
+        "descripcion": "Riego de gravedad 2: Terrenos con derecho a agua de presa o río irregularmente aún dentro del Distrito de Riego",
+        "tasa_millar": 1.5893,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "rustico",
+        "clave": "riego_bombeo_1",
+        "descripcion": "Riego de bombeo 1: Terrenos con riego mecánico con pozo de poca profundidad (100 pies máximo)",
+        "tasa_millar": 1.5893,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "rustico",
+        "clave": "riego_bombeo_2",
+        "descripcion": "Riego de bombeo 2: Terrenos con riego mecánico con pozo profundo (más de 100 pies)",
+        "tasa_millar": 1.6139,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "rustico",
+        "clave": "riego_temporal_unica",
+        "descripcion": "Riego de temporal única: Terrenos que dependen para su irrigación de la eventualidad de precipitaciones",
+        "tasa_millar": 2.4212,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "rustico",
+        "clave": "agostadero",
+        "descripcion": "Agostadero",
+        "tasa_millar": 1.244,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "rustico",
+        "clave": "terrenos_deserticas_bajo_rendimiento",
+        "descripcion": "Terrenos que se encuentran en zonas desérticas de bajo rendimiento",
+        "tasa_millar": 0.2487,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      }
+    ],
+    "minimo_predial": {
+      "monto": 44.94,
+      "periodicidad": "anual",
+      "unidad": "pesos"
+    },
+    "comentarios": ""
+  },
+  "_meta": {
+    "fuente": "txt",
+    "modelo": "reclasified_v1[gpt-5.4-mini]"
+  },
+  "_meta_v2": {
+    "intentos": 0,
+    "requiere_revision": false,
+    "razon": null,
+    "tokens": {
+      "input": 0,
+      "output": 0,
+      "cached": 0
+    },
+    "cvegeo": "26007",
+    "estado": "sonora",
+    "anio": 2016
+  }
+}

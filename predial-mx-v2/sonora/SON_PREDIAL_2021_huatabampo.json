@@ -1,0 +1,243 @@
+{
+  "predial": {
+    "tipo_esquema": "mixto",
+    "tabla": [
+      {
+        "n_rango": 1,
+        "inferior": 0.01,
+        "superior": 38000.0,
+        "columnas": [
+          {
+            "nombre": "general",
+            "valor": 0.0,
+            "tipo": "cuota_fija",
+            "unidad": "pesos"
+          },
+          {
+            "nombre": "general",
+            "valor": 0.0,
+            "tipo": "tasa_marginal",
+            "unidad": "al_millar"
+          }
+        ]
+      },
+      {
+        "n_rango": 2,
+        "inferior": 38000.0,
+        "superior": 76000.0,
+        "columnas": [
+          {
+            "nombre": "general",
+            "valor": 0.0,
+            "tipo": "cuota_fija",
+            "unidad": "pesos"
+          },
+          {
+            "nombre": "general",
+            "valor": 0.7473,
+            "tipo": "tasa_marginal",
+            "unidad": "al_millar"
+          }
+        ]
+      },
+      {
+        "n_rango": 3,
+        "inferior": 76000.0,
+        "superior": 144400.0,
+        "columnas": [
+          {
+            "nombre": "general",
+            "valor": 106.98,
+            "tipo": "cuota_fija",
+            "unidad": "pesos"
+          },
+          {
+            "nombre": "general",
+            "valor": 1.2119,
+            "tipo": "tasa_marginal",
+            "unidad": "al_millar"
+          }
+        ]
+      },
+      {
+        "n_rango": 4,
+        "inferior": 144400.0,
+        "superior": 259920.0,
+        "columnas": [
+          {
+            "nombre": "general",
+            "valor": 168.76,
+            "tipo": "cuota_fija",
+            "unidad": "pesos"
+          },
+          {
+            "nombre": "general",
+            "valor": 1.3277,
+            "tipo": "tasa_marginal",
+            "unidad": "al_millar"
+          }
+        ]
+      },
+      {
+        "n_rango": 5,
+        "inferior": 259920.0,
+        "superior": 441864.0,
+        "columnas": [
+          {
+            "nombre": "general",
+            "valor": 334.65,
+            "tipo": "cuota_fija",
+            "unidad": "pesos"
+          },
+          {
+            "nombre": "general",
+            "valor": 1.4077,
+            "tipo": "tasa_marginal",
+            "unidad": "al_millar"
+          }
+        ]
+      },
+      {
+        "n_rango": 6,
+        "inferior": 441864.0,
+        "superior": 706982.0,
+        "columnas": [
+          {
+            "nombre": "general",
+            "valor": 588.15,
+            "tipo": "cuota_fija",
+            "unidad": "pesos"
+          },
+          {
+            "nombre": "general",
+            "valor": 1.4204,
+            "tipo": "tasa_marginal",
+            "unidad": "al_millar"
+          }
+        ]
+      },
+      {
+        "n_rango": 7,
+        "inferior": 706982.0,
+        "superior": 1060473.0,
+        "columnas": [
+          {
+            "nombre": "general",
+            "valor": 979.81,
+            "tipo": "cuota_fija",
+            "unidad": "pesos"
+          },
+          {
+            "nombre": "general",
+            "valor": 1.936,
+            "tipo": "tasa_marginal",
+            "unidad": "al_millar"
+          }
+        ]
+      },
+      {
+        "n_rango": 8,
+        "inferior": 1060473.0,
+        "superior": 1484662.0,
+        "columnas": [
+          {
+            "nombre": "general",
+            "valor": 1691.54,
+            "tipo": "cuota_fija",
+            "unidad": "pesos"
+          },
+          {
+            "nombre": "general",
+            "valor": 1.9372,
+            "tipo": "tasa_marginal",
+            "unidad": "al_millar"
+          }
+        ]
+      },
+      {
+        "n_rango": 9,
+        "inferior": 1484662.0,
+        "superior": 1930060.0,
+        "columnas": [
+          {
+            "nombre": "general",
+            "valor": 2546.13,
+            "tipo": "cuota_fija",
+            "unidad": "pesos"
+          },
+          {
+            "nombre": "general",
+            "valor": 1.9383,
+            "tipo": "tasa_marginal",
+            "unidad": "al_millar"
+          }
+        ]
+      },
+      {
+        "n_rango": 10,
+        "inferior": 1930060.0,
+        "superior": 2316072.0,
+        "columnas": [
+          {
+            "nombre": "general",
+            "valor": 3444.01,
+            "tipo": "cuota_fija",
+            "unidad": "pesos"
+          },
+          {
+            "nombre": "general",
+            "valor": 1.9396,
+            "tipo": "tasa_marginal",
+            "unidad": "al_millar"
+          }
+        ]
+      },
+      {
+        "n_rango": 11,
+        "inferior": 2316072.0,
+        "superior": null,
+        "columnas": [
+          {
+            "nombre": "general",
+            "valor": 4222.63,
+            "tipo": "cuota_fija",
+            "unidad": "pesos"
+          },
+          {
+            "nombre": "general",
+            "valor": 1.9407,
+            "tipo": "tasa_marginal",
+            "unidad": "al_millar"
+          }
+        ]
+      }
+    ],
+    "minimo_predial": null,
+    "comentarios": "Tabla principal tomada de predios urbanos edificados (Art. 12 fracción I). Las dos primeras filas muestran 'UMA' en cuota fija, mientras las restantes usan cantidades numéricas; además existe tarifa paralela para predios no edificados: de 0.01 a 10345.33 cuota mínima en UMA; de 10345.34 a 31000.00, 7.65 al millar; de 31000.01 en adelante, 9.85 al millar. También hay tarifa paralela para cada hectárea de predios rurales por categorías al millar y tarifa paralela para edificaciones de predios rurales con cuota fija en pesos y tasa al millar; mínimo de 121.43. El impuesto a predios urbanos no será menor al valor de la UMA vigente en el municipio. Impuesto predial ejidal: cuota fija de 200.00 por hectárea en los supuestos del Art. 29.",
+    "clasificacion_justificacion": "Heterogeneidad en FILA: filas 1-2 con cuota fija expresada en UMA vs filas 3-11 con cuota_fija en pesos; además todas las filas combinan tasa al millar. Patrón: otro descrito."
+  },
+  "_meta": {
+    "fuente": "pdf_vision_multi",
+    "modelo": "gpt-5.4"
+  },
+  "_meta_v2": {
+    "intentos": 1,
+    "requiere_revision": false,
+    "escalado": true,
+    "razon": "rescate_via_vision_multi",
+    "usado_reocr": false,
+    "usado_vision": true,
+    "usado_vision_multi": true,
+    "tokens": {
+      "input": 130842,
+      "output": 3081,
+      "cached": 0
+    },
+    "cvegeo": "26033",
+    "estado": "sonora",
+    "anio": 2021,
+    "pdf_stem": "2020CCVI51VIII",
+    "elapsed_sec_pdf": 111.43700000003446,
+    "razon_no_encontrado": null
+  }
+}

@@ -9,7 +9,7 @@
   },
   "_meta": {
     "fuente": "txt",
-    "modelo": "imputed_closure_fill"
+    "modelo": "imputed_confirmed_fill"
   },
   "_meta_v2": {
     "intentos": 0,
@@ -23,7 +23,7 @@
     "cvegeo": "31062",
     "estado": "yucatan",
     "anio": 2016,
-    "imputed_from_year": 2010,
-    "imputed_method": "closure_fill"
+    "imputed_from_year": 2014,
+    "imputed_method": "confirmed_fill"
   }
 }

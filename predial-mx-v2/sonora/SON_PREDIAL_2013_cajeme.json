@@ -1,0 +1,54 @@
+{
+  "predial": {
+    "tipo_esquema": "tarifa_millar",
+    "tabla": [
+      {
+        "grupo": "general",
+        "clave": "general",
+        "descripcion": "Tasa general del impuesto predial sobre el valor catastral de los inmuebles",
+        "tasa_millar": 1.65,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "rustico",
+        "clave": "predios_rurales_y_area_desarrollo_cuidad_obregon",
+        "descripcion": "Predios rurales y edificaciones de predios rurales, así como predios dentro del programa de desarrollo del área urbana de Ciudad Obregón, en comisarías de Esperanza, Cócorit y Providencia, cuando se utilicen para actividades agrícolas o ganaderas",
+        "tasa_millar": 1.1,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      }
+    ],
+    "minimo_predial": {
+      "monto": 1.0,
+      "periodicidad": "anual",
+      "unidad": "dias_sm"
+    },
+    "comentarios": "Artículo 8: el monto anual será el resultado de aplicar la tasa general de 1.65 al millar sobre el valor catastral de los inmuebles. Artículo 9: para los predios rurales y las edificaciones de los predios rurales, así como los predios dentro del programa de desarrollo del área urbana de Ciudad Obregón en las comisarías de Esperanza, Cócorit y Providencia cuando estén siendo utilizados para actividades agrícolas o ganaderas, se aplicará 1.10 al millar. Artículo 15: en ningún caso el impuesto predial causado será menor a un salario mínimo general vigente en el municipio de Cajeme. Transitorio tercero: para el ejercicio fiscal 2013 se establece una tasa de 1.05 al millar para el cálculo del impuesto predial del ejercicio 2013 en el artículo 9 de la presente Ley, con el objeto de equilibrar condiciones con el sector urbano.",
+    "clasificacion_justificacion": null
+  },
+  "_meta": {
+    "fuente": "pdf_vision_multi",
+    "modelo": "gpt-5.4"
+  },
+  "_meta_v2": {
+    "intentos": 1,
+    "requiere_revision": false,
+    "escalado": true,
+    "razon": "rescate_via_vision_multi",
+    "usado_reocr": false,
+    "usado_vision": true,
+    "usado_vision_multi": true,
+    "tokens": {
+      "input": 123960,
+      "output": 444,
+      "cached": 6912
+    },
+    "cvegeo": "26018",
+    "estado": "sonora",
+    "anio": 2013,
+    "pdf_stem": "2012CXC53VI",
+    "elapsed_sec_pdf": 231.89100000006147,
+    "razon_no_encontrado": null
+  }
+}

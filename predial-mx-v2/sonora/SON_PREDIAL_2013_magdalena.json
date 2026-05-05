@@ -1,0 +1,77 @@
+{
+  "predial": {
+    "tipo_esquema": "mixto",
+    "tabla": [
+      {
+        "n_rango": 1,
+        "inferior": 0.01,
+        "superior": 5678.39,
+        "columnas": [
+          {
+            "nombre": "general",
+            "valor": 41.75,
+            "tipo": "cuota_fija",
+            "unidad": "pesos"
+          }
+        ]
+      },
+      {
+        "n_rango": 2,
+        "inferior": 5678.39,
+        "superior": 6943.0,
+        "columnas": [
+          {
+            "nombre": "general",
+            "valor": 7.3517,
+            "tipo": "tasa_millar",
+            "unidad": "al_millar"
+          }
+        ]
+      },
+      {
+        "n_rango": 3,
+        "inferior": 6943.0,
+        "superior": null,
+        "columnas": [
+          {
+            "nombre": "general",
+            "valor": 9.4672,
+            "tipo": "tasa_millar",
+            "unidad": "al_millar"
+          }
+        ]
+      }
+    ],
+    "minimo_predial": {
+      "monto": 41.75,
+      "periodicidad": "anual",
+      "unidad": "pesos"
+    },
+    "comentarios": "La ley contiene varias tarifas paralelas del predial. La tabla principal aquí transcrita corresponde a predios no edificados. Para predios edificados existe una tabla progresiva por valor catastral con cuota fija en pesos y tasa al millar sobre el excedente. Para predios rurales existe además un catálogo de tasas al millar por categoría, y para predial ejidal una tasa del 2% sobre el valor de la producción comercializada. En ningún caso el impuesto será menor a 41.75 pesos.",
+    "clasificacion_justificacion": "Heterogeneidad en BRACKET: bracket 1 con cuota_fija en pesos (41.75) vs brackets 2-3 con tasa al millar (7.3517 y 9.4672). Patrón: A/otro."
+  },
+  "_meta": {
+    "fuente": "pdf_vision_multi",
+    "modelo": "gpt-5.4"
+  },
+  "_meta_v2": {
+    "intentos": 1,
+    "requiere_revision": false,
+    "escalado": true,
+    "razon": "rescate_via_vision_multi",
+    "usado_reocr": false,
+    "usado_vision": true,
+    "usado_vision_multi": true,
+    "tokens": {
+      "input": 198234,
+      "output": 396,
+      "cached": 0
+    },
+    "cvegeo": "26036",
+    "estado": "sonora",
+    "anio": 2013,
+    "pdf_stem": "2012CXC53XIX",
+    "elapsed_sec_pdf": 160.954000000027,
+    "razon_no_encontrado": null
+  }
+}

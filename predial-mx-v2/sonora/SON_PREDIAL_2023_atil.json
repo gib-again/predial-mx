@@ -1,0 +1,206 @@
+{
+  "predial": {
+    "tipo_esquema": "tarifa_millar",
+    "tabla": [
+      {
+        "grupo": "urbano",
+        "clave": "predios_edificados",
+        "descripcion": "Sobre el valor catastral de los predios edificados",
+        "tasa_millar": 0.0,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "urbano",
+        "clave": "predios_edificados",
+        "descripcion": "Sobre el valor catastral de los predios edificados",
+        "tasa_millar": 0.4656,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "urbano",
+        "clave": "predios_edificados",
+        "descripcion": "Sobre el valor catastral de los predios edificados",
+        "tasa_millar": 1.1874,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "urbano",
+        "clave": "predios_edificados",
+        "descripcion": "Sobre el valor catastral de los predios edificados",
+        "tasa_millar": 1.3665,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "urbano",
+        "clave": "predios_edificados",
+        "descripcion": "Sobre el valor catastral de los predios edificados",
+        "tasa_millar": 1.5548,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "urbano",
+        "clave": "predios_no_edificados",
+        "descripcion": "Sobre el valor catastral de los predios no edificados",
+        "tasa_millar": 6.59,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "urbano",
+        "clave": "predios_no_edificados",
+        "descripcion": "Sobre el valor catastral de los predios no edificados",
+        "tasa_millar": 9.15,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "rustico",
+        "clave": "predios_rurales_riego_de_gravedad_1",
+        "descripcion": "Riego de gravedad 1: Terrenos dentro del distrito de riego con derecho de agua de presa regularmente.",
+        "tasa_millar": 1.06647701,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "rustico",
+        "clave": "predios_rurales_riego_de_gravedad_2",
+        "descripcion": "Riego de gravedad 2: Terrenos con derecho a agua de presa o río irregularmente, aun dentro del distrito de riego.",
+        "tasa_millar": 1.87425764,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "rustico",
+        "clave": "predios_rurales_riego_de_bombeo_1",
+        "descripcion": "Riego de bombeo 1: Terrenos con riego mecánico con pozo de poca profundidad (máximo 100 pies).",
+        "tasa_millar": 1.865454451,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "rustico",
+        "clave": "predios_rurales_riego_de_bombeo_2",
+        "descripcion": "Riego de bombeo 2: Terrenos con riego mecánico con pozo profundo (más de 100 pies).",
+        "tasa_millar": 1.894328911,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "rustico",
+        "clave": "predios_rurales_riego_de_temporal_unica",
+        "descripcion": "Riego de temporal única: Terrenos que dependen, para su irrigación, de la eventualidad de precipitaciones.",
+        "tasa_millar": 2.841904182,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "rustico",
+        "clave": "predios_rurales_agostadero_1",
+        "descripcion": "Agostadero de 1: Terrenos con praderas naturales.",
+        "tasa_millar": 1.460155626,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "rustico",
+        "clave": "predios_rurales_agostadero_2",
+        "descripcion": "Agostadero de 2: Terrenos que fueron mejorados para pastoreo en base a técnicas.",
+        "tasa_millar": 1.852543107,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "rustico",
+        "clave": "predios_rurales_agostadero_3",
+        "descripcion": "Agostadero de 3: Terrenos que se encuentran en zonas semidesérticas de bajo rendimiento.",
+        "tasa_millar": 0.291913749,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "rustico",
+        "clave": "edificaciones_predios_rurales",
+        "descripcion": "Sobre el valor catastral de las edificaciones de los predios rurales",
+        "tasa_millar": 1.314,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "rustico",
+        "clave": "edificaciones_predios_rurales",
+        "descripcion": "Sobre el valor catastral de las edificaciones de los predios rurales",
+        "tasa_millar": 1.3797,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "rustico",
+        "clave": "edificaciones_predios_rurales",
+        "descripcion": "Sobre el valor catastral de las edificaciones de los predios rurales",
+        "tasa_millar": 1.5236,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "rustico",
+        "clave": "edificaciones_predios_rurales",
+        "descripcion": "Sobre el valor catastral de las edificaciones de los predios rurales",
+        "tasa_millar": 1.6551,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "rustico",
+        "clave": "edificaciones_predios_rurales",
+        "descripcion": "Sobre el valor catastral de las edificaciones de los predios rurales",
+        "tasa_millar": 1.7612,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "rustico",
+        "clave": "edificaciones_predios_rurales",
+        "descripcion": "Sobre el valor catastral de las edificaciones de los predios rurales",
+        "tasa_millar": 1.8395,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "rustico",
+        "clave": "edificaciones_predios_rurales",
+        "descripcion": "Sobre el valor catastral de las edificaciones de los predios rurales",
+        "tasa_millar": 1.9835,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      }
+    ],
+    "minimo_predial": {
+      "monto": 52.75,
+      "periodicidad": "anual",
+      "unidad": "pesos"
+    },
+    "comentarios": ""
+  },
+  "_meta": {
+    "fuente": "txt",
+    "modelo": "reclasified_v1[gpt-5.4-mini]"
+  },
+  "_meta_v2": {
+    "intentos": 0,
+    "requiere_revision": false,
+    "razon": null,
+    "tokens": {
+      "input": 0,
+      "output": 0,
+      "cached": 0
+    },
+    "cvegeo": "26007",
+    "estado": "sonora",
+    "anio": 2023
+  }
+}

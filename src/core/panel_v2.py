@@ -41,6 +41,7 @@ V2_ESTADOS = {
     "coahuila", "guanajuato", "queretaro", "tamaulipas", "yucatan",
     "colima", "edomex", "sinaloa", "tabasco",
     "chihuahua", "jalisco",
+    "sanluispotosi", "sonora",
 }
 V1_ESTADOS_INMEM = {"oaxaca"}
 HARDCODED_INMEM: set[str] = set()
@@ -52,6 +53,8 @@ _PREFIJOS_INMEM = {
     "jalisco": "JAL",
     "oaxaca": "OAX",
     "chihuahua": "CHIH",
+    "sanluispotosi": "SLP",
+    "sonora": "SON",
 }
 
 # Códigos INEGI para estados que no están en consolidate._ESTADO_CVE.
@@ -60,7 +63,9 @@ _EXTRA_ESTADO_CVE = {
     "colima":    "06",
     "edomex":    "15",
     "oaxaca":    "20",
+    "sanluispotosi": "24",
     "sinaloa":   "25",
+    "sonora":    "26",
     "tabasco":   "27",
 }
 

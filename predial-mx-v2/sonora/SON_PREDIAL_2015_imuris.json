@@ -1,0 +1,241 @@
+{
+  "predial": {
+    "tipo_esquema": "mixto",
+    "tabla": [
+      {
+        "n_rango": 1,
+        "inferior": 0.01,
+        "superior": 38000.0,
+        "columnas": [
+          {
+            "nombre": "general",
+            "valor": 48.14,
+            "tipo": "cuota_fija",
+            "unidad": "pesos"
+          }
+        ]
+      },
+      {
+        "n_rango": 2,
+        "inferior": 38000.0,
+        "superior": 76000.0,
+        "columnas": [
+          {
+            "nombre": "general",
+            "valor": 48.14,
+            "tipo": "cuota_fija",
+            "unidad": "pesos"
+          },
+          {
+            "nombre": "general",
+            "valor": 0.9795,
+            "tipo": "tasa_marginal",
+            "unidad": "al_millar"
+          }
+        ]
+      },
+      {
+        "n_rango": 3,
+        "inferior": 76000.0,
+        "superior": 144400.0,
+        "columnas": [
+          {
+            "nombre": "general",
+            "valor": 84.14,
+            "tipo": "cuota_fija",
+            "unidad": "pesos"
+          },
+          {
+            "nombre": "general",
+            "valor": 1.0823,
+            "tipo": "tasa_marginal",
+            "unidad": "al_millar"
+          }
+        ]
+      },
+      {
+        "n_rango": 4,
+        "inferior": 144400.0,
+        "superior": 259920.0,
+        "columnas": [
+          {
+            "nombre": "general",
+            "valor": 66.44,
+            "tipo": "cuota_fija",
+            "unidad": "pesos"
+          },
+          {
+            "nombre": "general",
+            "valor": 1.0824,
+            "tipo": "tasa_marginal",
+            "unidad": "al_millar"
+          }
+        ]
+      },
+      {
+        "n_rango": 5,
+        "inferior": 259920.0,
+        "superior": 441864.0,
+        "columnas": [
+          {
+            "nombre": "general",
+            "valor": 113.98,
+            "tipo": "cuota_fija",
+            "unidad": "pesos"
+          },
+          {
+            "nombre": "general",
+            "valor": 1.0824,
+            "tipo": "tasa_marginal",
+            "unidad": "al_millar"
+          }
+        ]
+      },
+      {
+        "n_rango": 6,
+        "inferior": 441864.0,
+        "superior": 706982.0,
+        "columnas": [
+          {
+            "nombre": "general",
+            "valor": 222.71,
+            "tipo": "cuota_fija",
+            "unidad": "pesos"
+          },
+          {
+            "nombre": "general",
+            "valor": 1.0825,
+            "tipo": "tasa_marginal",
+            "unidad": "al_millar"
+          }
+        ]
+      },
+      {
+        "n_rango": 7,
+        "inferior": 706982.0,
+        "superior": 1063473.0,
+        "columnas": [
+          {
+            "nombre": "general",
+            "valor": 393.93,
+            "tipo": "cuota_fija",
+            "unidad": "pesos"
+          },
+          {
+            "nombre": "general",
+            "valor": 1.0826,
+            "tipo": "tasa_marginal",
+            "unidad": "al_millar"
+          }
+        ]
+      },
+      {
+        "n_rango": 8,
+        "inferior": 1063473.0,
+        "superior": 1484662.0,
+        "columnas": [
+          {
+            "nombre": "general",
+            "valor": 643.46,
+            "tipo": "cuota_fija",
+            "unidad": "pesos"
+          },
+          {
+            "nombre": "general",
+            "valor": 1.0858,
+            "tipo": "tasa_marginal",
+            "unidad": "al_millar"
+          }
+        ]
+      },
+      {
+        "n_rango": 9,
+        "inferior": 1484662.0,
+        "superior": 1930060.0,
+        "columnas": [
+          {
+            "nombre": "general",
+            "valor": 976.22,
+            "tipo": "cuota_fija",
+            "unidad": "pesos"
+          },
+          {
+            "nombre": "general",
+            "valor": 1.0859,
+            "tipo": "tasa_marginal",
+            "unidad": "al_millar"
+          }
+        ]
+      },
+      {
+        "n_rango": 10,
+        "inferior": 1930060.0,
+        "superior": 2316072.0,
+        "columnas": [
+          {
+            "nombre": "general",
+            "valor": 1376.72,
+            "tipo": "cuota_fija",
+            "unidad": "pesos"
+          },
+          {
+            "nombre": "general",
+            "valor": 1.086,
+            "tipo": "tasa_marginal",
+            "unidad": "al_millar"
+          }
+        ]
+      },
+      {
+        "n_rango": 11,
+        "inferior": 2316072.0,
+        "superior": null,
+        "columnas": [
+          {
+            "nombre": "general",
+            "valor": 1797.28,
+            "tipo": "cuota_fija",
+            "unidad": "pesos"
+          },
+          {
+            "nombre": "general",
+            "valor": 4.6758,
+            "tipo": "tasa_marginal",
+            "unidad": "al_millar"
+          }
+        ]
+      }
+    ],
+    "minimo_predial": {
+      "monto": 48.14,
+      "periodicidad": "anual",
+      "unidad": "pesos"
+    },
+    "comentarios": "Tabla principal tomada de predios edificados del Artículo 5. La ley también contiene una tarifa paralela para predios no edificados, una tarifa_millar por hectárea para predios rústicos y una tabla para edificaciones de predios rústicos. En ningún caso el impuesto será inferior a la cuota mínima de 48.14 pesos.",
+    "clasificacion_justificacion": "Heterogeneidad en COLUMNA: la tabla por rangos usa cuota_fija en pesos y tasa sobre el excedente al millar en las celdas tarifarias. Patrón: otro descrito."
+  },
+  "_meta": {
+    "fuente": "pdf_vision_multi",
+    "modelo": "gpt-5.4"
+  },
+  "_meta_v2": {
+    "intentos": 1,
+    "requiere_revision": false,
+    "escalado": true,
+    "razon": "rescate_via_vision_multi",
+    "usado_reocr": false,
+    "usado_vision": true,
+    "usado_vision_multi": true,
+    "tokens": {
+      "input": 98650,
+      "output": 1945,
+      "cached": 6912
+    },
+    "cvegeo": "26035",
+    "estado": "sonora",
+    "anio": 2015,
+    "pdf_stem": "2014CXCIV52XV",
+    "elapsed_sec_pdf": 145.51599999994505,
+    "razon_no_encontrado": null
+  }
+}

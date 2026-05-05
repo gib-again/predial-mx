@@ -1,0 +1,94 @@
+{
+  "predial": {
+    "tipo_esquema": "tarifa_millar",
+    "tabla": [
+      {
+        "grupo": "rustico",
+        "clave": "predios_rurales",
+        "descripcion": "Sobre el valor catastral de cada hectárea de los predios rurales.",
+        "tasa_millar": 1.206756295,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "rustico",
+        "clave": "predios_rurales_riego_de_gravedad_2",
+        "descripcion": "Riego de Gravedad 2: Terrenos con derecho a agua de presa o ria irregularmente aun dentro del distrito",
+        "tasa_millar": 2.120747811,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "rustico",
+        "clave": "predios_rurales_riego_de_bombeo_1",
+        "descripcion": "Riego de Bombeo 1: Terrenos con riego mecánico con pozo de poca profundidad (100 pies máximos).",
+        "tasa_millar": 2.110805309,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "rustico",
+        "clave": "predios_rurales_riego_de_bombeo_2",
+        "descripcion": "Riego de Bombeo 2: Terrenos con riego mecánico con pozo profundo (más de 100 pies).",
+        "tasa_millar": 2.143507757,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "rustico",
+        "clave": "predios_rurales_riego_de_temporal_unica",
+        "descripcion": "Riego de temporal Única: Terreno que depende de para su irrigación de la eventualidad de precipitaciones.",
+        "tasa_millar": 3.215501215,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "rustico",
+        "clave": "agostadero_de_1",
+        "descripcion": "Agostadero de 1: terreno con praderas naturales.",
+        "tasa_millar": 1.652012713,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "rustico",
+        "clave": "agostadero_de_2",
+        "descripcion": "Agostadero de 2: terreno que fueron mejorados para pastoreo en base a técnicas.",
+        "tasa_millar": 2.095951449,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "rustico",
+        "clave": "agostadero_de_3",
+        "descripcion": "Agostadero de 3: Terrenos que se encuentran en zonas semidesérticas de bajo rendimiento.",
+        "tasa_millar": 0.330378585,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      }
+    ],
+    "minimo_predial": {
+      "monto": 59.68,
+      "periodicidad": "anual",
+      "unidad": "pesos"
+    },
+    "comentarios": ""
+  },
+  "_meta": {
+    "fuente": "txt",
+    "modelo": "reclasified_v1[gpt-5.4-mini]"
+  },
+  "_meta_v2": {
+    "intentos": 0,
+    "requiere_revision": false,
+    "razon": null,
+    "tokens": {
+      "input": 0,
+      "output": 0,
+      "cached": 0
+    },
+    "cvegeo": "26038",
+    "estado": "sonora",
+    "anio": 2023
+  }
+}

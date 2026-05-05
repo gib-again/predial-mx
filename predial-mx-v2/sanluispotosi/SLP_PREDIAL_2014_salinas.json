@@ -1,0 +1,88 @@
+{
+  "predial": {
+    "tipo_esquema": "tarifa_millar",
+    "tabla": [
+      {
+        "grupo": "urbano",
+        "clave": "urbanos_suburbanos_habitacionales_interes_social_o_vivienda_popular_y_popular_con_urbanizacion_progresiva",
+        "descripcion": "Urbanos y suburbanos habitacionales: Predios con edificaciones tipificadas como de interés social o vivienda popular y popular con urbanización progresiva",
+        "tasa_millar": 0.5,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "urbano",
+        "clave": "urbanos_suburbanos_habitacionales_distintos_a_interes_social_con_edificacion_o_cercados",
+        "descripcion": "Urbanos y suburbanos habitacionales: Predios distintos a los del inciso anterior con edificación o cercados",
+        "tasa_millar": 0.75,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "urbano",
+        "clave": "urbanos_suburbanos_habitacionales_no_cercados",
+        "descripcion": "Urbanos y suburbanos habitacionales: Predios no cercados",
+        "tasa_millar": 1.0,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "general",
+        "clave": "urbanos_suburbanos_destinados_a_comercio_o_servicios",
+        "descripcion": "Urbanos y suburbanos destinados a comercio o servicios: Predios con edificación o sin ella",
+        "tasa_millar": 1.0,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "general",
+        "clave": "urbanos_suburbanos_destinados_a_uso_industrial",
+        "descripcion": "Urbanos y suburbanos destinados a uso industrial: Predios destinados al uso industrial",
+        "tasa_millar": 1.0,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "rustico",
+        "clave": "predios_rusticos_propiedad_privada",
+        "descripcion": "Predios rústicos: Predios de propiedad privada",
+        "tasa_millar": 0.75,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "rustico",
+        "clave": "predios_rusticos_propiedad_ejidal",
+        "descripcion": "Predios rústicos: Predios de propiedad ejidal",
+        "tasa_millar": 0.5,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      }
+    ],
+    "minimo_predial": {
+      "monto": 4.0,
+      "periodicidad": "anual",
+      "unidad": "smgz"
+    },
+    "comentarios": ""
+  },
+  "_meta": {
+    "fuente": "txt",
+    "modelo": "imputed_confirmed_fill"
+  },
+  "_meta_v2": {
+    "intentos": 0,
+    "requiere_revision": false,
+    "razon": null,
+    "tokens": {
+      "input": 0,
+      "output": 0,
+      "cached": 0
+    },
+    "cvegeo": "24025",
+    "estado": "sanluispotosi",
+    "anio": 2014,
+    "imputed_from_year": 2013,
+    "imputed_method": "confirmed_fill"
+  }
+}

@@ -26,8 +26,10 @@ from src.core.validation import reclasificar
 
 # Estados con corpus v1 a convertir.
 SUPPORTED_ESTADOS = {
-    "jalisco":  ("JAL", "14"),
-    "oaxaca":   ("OAX", "20"),
+    "jalisco":       ("JAL", "14"),
+    "oaxaca":        ("OAX", "20"),
+    "sanluispotosi": ("SLP", "24"),
+    "sonora":        ("SON", "26"),
 }
 
 

@@ -1,0 +1,115 @@
+{
+  "predial": {
+    "tipo_esquema": "progresivo",
+    "tabla": [
+      {
+        "n_rango": 1,
+        "inferior": 0.01,
+        "superior": 38000.0,
+        "cuota_fija": 55.52,
+        "tasa_marginal": 0.0
+      },
+      {
+        "n_rango": 2,
+        "inferior": 38000.0,
+        "superior": 76000.0,
+        "cuota_fija": 55.52,
+        "tasa_marginal": 0.0
+      },
+      {
+        "n_rango": 3,
+        "inferior": 76000.0,
+        "superior": 144400.0,
+        "cuota_fija": 55.52,
+        "tasa_marginal": 0.5415
+      },
+      {
+        "n_rango": 4,
+        "inferior": 144400.0,
+        "superior": 259920.0,
+        "cuota_fija": 75.55,
+        "tasa_marginal": 0.6661
+      },
+      {
+        "n_rango": 5,
+        "inferior": 259920.0,
+        "superior": 441864.0,
+        "cuota_fija": 160.81,
+        "tasa_marginal": 0.804
+      },
+      {
+        "n_rango": 6,
+        "inferior": 441864.0,
+        "superior": 706982.0,
+        "cuota_fija": 326.0,
+        "tasa_marginal": 0.874
+      },
+      {
+        "n_rango": 7,
+        "inferior": 706982.0,
+        "superior": 1060473.0,
+        "cuota_fija": 608.35,
+        "tasa_marginal": 0.8751
+      },
+      {
+        "n_rango": 8,
+        "inferior": 1060473.0,
+        "superior": 1484662.0,
+        "cuota_fija": 1042.9,
+        "tasa_marginal": 1.0809
+      },
+      {
+        "n_rango": 9,
+        "inferior": 1484662.0,
+        "superior": 1930060.0,
+        "cuota_fija": 1716.42,
+        "tasa_marginal": 1.0819
+      },
+      {
+        "n_rango": 10,
+        "inferior": 1930060.0,
+        "superior": 2316072.0,
+        "cuota_fija": 2356.13,
+        "tasa_marginal": 1.3749
+      },
+      {
+        "n_rango": 11,
+        "inferior": 2316072.0,
+        "superior": null,
+        "cuota_fija": 3029.29,
+        "tasa_marginal": 1.3757
+      }
+    ],
+    "minimo_predial": {
+      "monto": 55.52,
+      "periodicidad": "anual",
+      "unidad": "pesos"
+    },
+    "comentarios": "Tabla principal extraída de predios edificados (artículo 5, fracción I). La ley además establece tarifas paralelas para predios no edificados: 55.52 cuota mínima de 0.01 a 19057.00; 2.913046 al millar de 19057.01 a 22292.00; 3.751054 al millar de 22292.01 en adelante. También establece tarifa paralela para cada hectárea de predios rurales por categoría (riego, agostadero, forestal) y para edificaciones de predios rurales con cuota mínima de 55.52 y tasas al millar de 1.3294 a 2.0071. La ley prevé impuesto predial ejidal de 10.00 por hectárea.",
+    "clasificacion_justificacion": null
+  },
+  "_meta": {
+    "fuente": "pdf_vision_multi",
+    "modelo": "gpt-5.4"
+  },
+  "_meta_v2": {
+    "intentos": 1,
+    "requiere_revision": false,
+    "escalado": true,
+    "razon": "rescate_via_vision_multi",
+    "usado_reocr": false,
+    "usado_vision": true,
+    "usado_vision_multi": true,
+    "tokens": {
+      "input": 130811,
+      "output": 1438,
+      "cached": 6912
+    },
+    "cvegeo": "26040",
+    "estado": "sonora",
+    "anio": 2020,
+    "pdf_stem": "EE2712201915",
+    "elapsed_sec_pdf": 112.04700000002049,
+    "razon_no_encontrado": null
+  }
+}

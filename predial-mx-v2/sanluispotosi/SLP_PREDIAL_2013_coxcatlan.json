@@ -1,0 +1,96 @@
+{
+  "predial": {
+    "tipo_esquema": "tarifa_millar",
+    "tabla": [
+      {
+        "grupo": "urbano",
+        "clave": "habitacionales_interes_social_o_vivienda_popular",
+        "descripcion": "Predios con edificaciones tipificadas como de interés social o vivienda popular, y popular con urbanización",
+        "tasa_millar": 0.5,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "urbano",
+        "clave": "habitacionales_distintos_con_edificacion_o_cercados",
+        "descripcion": "Predios distintos a los del inciso anterior con edificación o cercados",
+        "tasa_millar": 0.75,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "urbano",
+        "clave": "habitacionales_no_cercados",
+        "descripcion": "Predios no cercados",
+        "tasa_millar": 1.0,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "urbano",
+        "clave": "comercio_o_servicios",
+        "descripcion": "Predios con edificación o sin ella",
+        "tasa_millar": 1.0,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "urbano",
+        "clave": "industrial_zona_industrial",
+        "descripcion": "Predios con edificación o sin ella ubicados en la zona industrial",
+        "tasa_millar": 1.0,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "urbano",
+        "clave": "industrial_fuera_de_zona_industrial",
+        "descripcion": "Predios con edificación o sin ella ubicados fuera de la zona industrial",
+        "tasa_millar": 1.0,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "rustico",
+        "clave": "propiedad_privada",
+        "descripcion": "Predios de propiedad privada",
+        "tasa_millar": 0.75,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "rustico",
+        "clave": "propiedad_ejidal",
+        "descripcion": "Predios de propiedad ejidal",
+        "tasa_millar": 0.5,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      }
+    ],
+    "minimo_predial": {
+      "monto": 4.0,
+      "periodicidad": "anual",
+      "unidad": "smgz"
+    },
+    "comentarios": "Se capturó la tarifa al millar para predios urbanos/suburbanos y rústicos; los estímulos, descuentos y tablas por valor catastral se ignoraron por estar fuera de la mecánica básica del impuesto predial."
+  },
+  "_meta": {
+    "fuente": "txt",
+    "modelo": "imputed_confirmed_fill"
+  },
+  "_meta_v2": {
+    "intentos": 0,
+    "requiere_revision": false,
+    "razon": null,
+    "tokens": {
+      "input": 0,
+      "output": 0,
+      "cached": 0
+    },
+    "cvegeo": "24014",
+    "estado": "sanluispotosi",
+    "anio": 2013,
+    "imputed_from_year": 2012,
+    "imputed_method": "confirmed_fill"
+  }
+}

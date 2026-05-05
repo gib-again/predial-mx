@@ -1,0 +1,362 @@
+{
+  "predial": {
+    "tipo_esquema": "progresivo",
+    "tabla": [
+      {
+        "n_rango": 1,
+        "inferior": 0.01,
+        "superior": 248000.0,
+        "cuota_fija": 255.2,
+        "tasa_marginal": 0.0
+      },
+      {
+        "n_rango": 2,
+        "inferior": 248000.0,
+        "superior": 300000.0,
+        "cuota_fija": 0.0,
+        "tasa_marginal": 0.00103
+      },
+      {
+        "n_rango": 3,
+        "inferior": 300000.0,
+        "superior": 350000.0,
+        "cuota_fija": 0.0,
+        "tasa_marginal": 0.001065
+      },
+      {
+        "n_rango": 4,
+        "inferior": 350000.0,
+        "superior": 400000.0,
+        "cuota_fija": 0.0,
+        "tasa_marginal": 0.0011
+      },
+      {
+        "n_rango": 5,
+        "inferior": 400000.0,
+        "superior": 450000.0,
+        "cuota_fija": 0.0,
+        "tasa_marginal": 0.001
+      },
+      {
+        "n_rango": 6,
+        "inferior": 450000.0,
+        "superior": 500000.0,
+        "cuota_fija": 0.0,
+        "tasa_marginal": 0.00112
+      },
+      {
+        "n_rango": 7,
+        "inferior": 500000.0,
+        "superior": 550000.0,
+        "cuota_fija": 0.0,
+        "tasa_marginal": 0.00113
+      },
+      {
+        "n_rango": 8,
+        "inferior": 550000.0,
+        "superior": 600000.0,
+        "cuota_fija": 0.0,
+        "tasa_marginal": 0.00114
+      },
+      {
+        "n_rango": 9,
+        "inferior": 600000.0,
+        "superior": 650000.0,
+        "cuota_fija": 0.0,
+        "tasa_marginal": 0.00118
+      },
+      {
+        "n_rango": 10,
+        "inferior": 650000.0,
+        "superior": 700000.0,
+        "cuota_fija": 0.0,
+        "tasa_marginal": 0.00116
+      },
+      {
+        "n_rango": 11,
+        "inferior": 700000.0,
+        "superior": 750000.0,
+        "cuota_fija": 0.0,
+        "tasa_marginal": 0.001
+      },
+      {
+        "n_rango": 12,
+        "inferior": 750000.0,
+        "superior": 800000.0,
+        "cuota_fija": 0.0,
+        "tasa_marginal": 0.00118
+      },
+      {
+        "n_rango": 13,
+        "inferior": 800000.0,
+        "superior": 850000.0,
+        "cuota_fija": 0.0,
+        "tasa_marginal": 0.00119
+      },
+      {
+        "n_rango": 14,
+        "inferior": 850000.0,
+        "superior": 900000.0,
+        "cuota_fija": 0.0,
+        "tasa_marginal": 0.0012
+      },
+      {
+        "n_rango": 15,
+        "inferior": 900000.0,
+        "superior": 950000.0,
+        "cuota_fija": 0.0,
+        "tasa_marginal": 0.00121
+      },
+      {
+        "n_rango": 16,
+        "inferior": 950000.0,
+        "superior": 1000000.0,
+        "cuota_fija": 0.0,
+        "tasa_marginal": 0.00122
+      },
+      {
+        "n_rango": 17,
+        "inferior": 1000000.0,
+        "superior": 1250000.0,
+        "cuota_fija": 0.0,
+        "tasa_marginal": 0.00123
+      },
+      {
+        "n_rango": 18,
+        "inferior": 1250000.0,
+        "superior": 1500000.0,
+        "cuota_fija": 0.0,
+        "tasa_marginal": 0.00124
+      },
+      {
+        "n_rango": 19,
+        "inferior": 1500000.0,
+        "superior": 1750000.0,
+        "cuota_fija": 0.0,
+        "tasa_marginal": 0.00125
+      },
+      {
+        "n_rango": 20,
+        "inferior": 1750000.0,
+        "superior": 2000000.0,
+        "cuota_fija": 0.0,
+        "tasa_marginal": 0.00126
+      },
+      {
+        "n_rango": 21,
+        "inferior": 2000000.0,
+        "superior": 2250000.0,
+        "cuota_fija": 0.0,
+        "tasa_marginal": 0.00127
+      },
+      {
+        "n_rango": 22,
+        "inferior": 2250000.0,
+        "superior": 2500000.0,
+        "cuota_fija": 0.0,
+        "tasa_marginal": 0.00128
+      },
+      {
+        "n_rango": 23,
+        "inferior": 2500000.0,
+        "superior": 3000000.0,
+        "cuota_fija": 0.0,
+        "tasa_marginal": 0.00129
+      },
+      {
+        "n_rango": 24,
+        "inferior": 3000000.0,
+        "superior": 3500000.0,
+        "cuota_fija": 0.0,
+        "tasa_marginal": 0.0013
+      },
+      {
+        "n_rango": 25,
+        "inferior": 3500000.0,
+        "superior": 4000000.0,
+        "cuota_fija": 0.0,
+        "tasa_marginal": 0.00131
+      },
+      {
+        "n_rango": 26,
+        "inferior": 4000000.0,
+        "superior": 4500000.0,
+        "cuota_fija": 0.0,
+        "tasa_marginal": 0.00132
+      },
+      {
+        "n_rango": 27,
+        "inferior": 4500000.0,
+        "superior": 5000000.0,
+        "cuota_fija": 0.0,
+        "tasa_marginal": 0.00133
+      },
+      {
+        "n_rango": 28,
+        "inferior": 5000000.0,
+        "superior": 5500000.0,
+        "cuota_fija": 0.0,
+        "tasa_marginal": 0.00134
+      },
+      {
+        "n_rango": 29,
+        "inferior": 5500000.0,
+        "superior": 6000000.0,
+        "cuota_fija": 0.0,
+        "tasa_marginal": 0.00135
+      },
+      {
+        "n_rango": 30,
+        "inferior": 6000000.0,
+        "superior": 6500000.0,
+        "cuota_fija": 0.0,
+        "tasa_marginal": 0.00136
+      },
+      {
+        "n_rango": 31,
+        "inferior": 6500000.0,
+        "superior": 7000000.0,
+        "cuota_fija": 0.0,
+        "tasa_marginal": 0.00137
+      },
+      {
+        "n_rango": 32,
+        "inferior": 7000000.0,
+        "superior": 7500000.0,
+        "cuota_fija": 0.0,
+        "tasa_marginal": 0.00138
+      },
+      {
+        "n_rango": 33,
+        "inferior": 7500000.0,
+        "superior": 8000000.0,
+        "cuota_fija": 0.0,
+        "tasa_marginal": 0.00139
+      },
+      {
+        "n_rango": 34,
+        "inferior": 8000000.0,
+        "superior": 8500000.0,
+        "cuota_fija": 0.0,
+        "tasa_marginal": 0.0014
+      },
+      {
+        "n_rango": 35,
+        "inferior": 8500000.0,
+        "superior": 9000000.0,
+        "cuota_fija": 0.0,
+        "tasa_marginal": 0.00141
+      },
+      {
+        "n_rango": 36,
+        "inferior": 9000000.0,
+        "superior": 9500000.0,
+        "cuota_fija": 0.0,
+        "tasa_marginal": 0.00142
+      },
+      {
+        "n_rango": 37,
+        "inferior": 9500000.0,
+        "superior": 10000000.0,
+        "cuota_fija": 0.0,
+        "tasa_marginal": 0.00143
+      },
+      {
+        "n_rango": 38,
+        "inferior": 10000000.0,
+        "superior": 10500000.0,
+        "cuota_fija": 0.0,
+        "tasa_marginal": 0.00144
+      },
+      {
+        "n_rango": 39,
+        "inferior": 10500000.0,
+        "superior": 11000000.0,
+        "cuota_fija": 0.0,
+        "tasa_marginal": 0.00145
+      },
+      {
+        "n_rango": 40,
+        "inferior": 11000000.0,
+        "superior": 11500000.0,
+        "cuota_fija": 0.0,
+        "tasa_marginal": 0.00146
+      },
+      {
+        "n_rango": 41,
+        "inferior": 11500000.0,
+        "superior": 12000000.0,
+        "cuota_fija": 0.0,
+        "tasa_marginal": 0.00147
+      },
+      {
+        "n_rango": 42,
+        "inferior": 12000000.0,
+        "superior": 12500000.0,
+        "cuota_fija": 0.0,
+        "tasa_marginal": 0.00148
+      },
+      {
+        "n_rango": 43,
+        "inferior": 12500000.0,
+        "superior": 13000000.0,
+        "cuota_fija": 0.0,
+        "tasa_marginal": 0.00149
+      },
+      {
+        "n_rango": 44,
+        "inferior": 13000000.0,
+        "superior": 13500000.0,
+        "cuota_fija": 0.0,
+        "tasa_marginal": 0.0015
+      },
+      {
+        "n_rango": 45,
+        "inferior": 13500000.0,
+        "superior": 14000000.0,
+        "cuota_fija": 0.0,
+        "tasa_marginal": 0.001
+      },
+      {
+        "n_rango": 46,
+        "inferior": 14000000.0,
+        "superior": 14500000.0,
+        "cuota_fija": 0.0,
+        "tasa_marginal": 0.00132
+      },
+      {
+        "n_rango": 47,
+        "inferior": 14500000.0,
+        "superior": 15000000.0,
+        "cuota_fija": 0.0,
+        "tasa_marginal": 0.00153
+      },
+      {
+        "n_rango": 48,
+        "inferior": 15000000.0,
+        "superior": 999999999999.0,
+        "cuota_fija": 0.0,
+        "tasa_marginal": 0.00154
+      }
+    ],
+    "minimo_predial": null,
+    "comentarios": "La mecánica principal para predios urbanos construidos está dada por una tabla progresiva de rangos de valor catastral con cuota fija y tasa marginal. Se ignoran descuentos, bonificaciones y la sección de predial ejidal por ser fuera de alcance o secundaria."
+  },
+  "_meta": {
+    "fuente": "txt",
+    "modelo": "reclasified_v1[gpt-5.4-mini]"
+  },
+  "_meta_v2": {
+    "intentos": 0,
+    "requiere_revision": false,
+    "razon": null,
+    "tokens": {
+      "input": 0,
+      "output": 0,
+      "cached": 0
+    },
+    "cvegeo": "26055",
+    "estado": "sonora",
+    "anio": 2021
+  }
+}

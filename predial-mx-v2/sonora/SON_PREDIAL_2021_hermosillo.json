@@ -1,0 +1,37 @@
+{
+  "predial": {
+    "tipo_esquema": "tarifa_millar",
+    "tabla": [
+      {
+        "grupo": "general",
+        "clave": "tasa_general_aplicable",
+        "descripcion": "La tasa general aplicable del Impuesto predial será 9 al millar sobre el valor catastral de los inmuebles.",
+        "tasa_millar": 9.0,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "otro",
+        "clave": "inmuebles_caracteristicas_especiales",
+        "descripcion": "Tratándose de inmuebles de características especiales la tasa del impuesto predial será del 9 al millar, sobre lo que resulte mayor entre el valor catastral y el valor comercial del inmueble, y las construcciones, instalaciones, mejoras y obras complementarias en ellos existentes.",
+        "tasa_millar": 9.0,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      },
+      {
+        "grupo": "rustico",
+        "clave": "predios_rusticos_ejidales_o_comunales",
+        "descripcion": "Tratándose del Impuesto Predial sobre predios rústicos ejidales o comunales, la tasa será del 9 al millar sobre el valor catastral de los inmuebles.",
+        "tasa_millar": 9.0,
+        "periodicidad": "anual",
+        "cuota_fija_adicional": null
+      }
+    ],
+    "minimo_predial": null,
+    "comentarios": ""
+  },
+  "_meta": {
+    "fuente": "txt",
+    "modelo": "gpt-5.4-mini->reclasified_v2"
+  }
+}

@@ -1,0 +1,107 @@
+{
+  "predial": {
+    "tipo_esquema": "progresivo",
+    "tabla": [
+      {
+        "n_rango": 1,
+        "inferior": 0.01,
+        "superior": 38000.0,
+        "cuota_fija": 44.94,
+        "tasa_marginal": 0.0
+      },
+      {
+        "n_rango": 2,
+        "inferior": 38000.0,
+        "superior": 76000.0,
+        "cuota_fija": 44.94,
+        "tasa_marginal": 0.0
+      },
+      {
+        "n_rango": 3,
+        "inferior": 76000.0,
+        "superior": 144400.0,
+        "cuota_fija": 44.94,
+        "tasa_marginal": 0.0007464
+      },
+      {
+        "n_rango": 4,
+        "inferior": 144400.0,
+        "superior": 259920.0,
+        "cuota_fija": 62.02,
+        "tasa_marginal": 0.0010103
+      },
+      {
+        "n_rango": 5,
+        "inferior": 259920.0,
+        "superior": 441884.0,
+        "cuota_fija": 106.41,
+        "tasa_marginal": 0.0010104
+      },
+      {
+        "n_rango": 6,
+        "inferior": 441884.0,
+        "superior": 706982.0,
+        "cuota_fija": 207.9,
+        "tasa_marginal": 0.0010105
+      },
+      {
+        "n_rango": 7,
+        "inferior": 706982.0,
+        "superior": 1060473.0,
+        "cuota_fija": 367.74,
+        "tasa_marginal": 0.0010106
+      },
+      {
+        "n_rango": 8,
+        "inferior": 1060473.0,
+        "superior": 1484662.0,
+        "cuota_fija": 600.68,
+        "tasa_marginal": 0.0010136
+      },
+      {
+        "n_rango": 9,
+        "inferior": 1484662.0,
+        "superior": 1930060.0,
+        "cuota_fija": 911.31,
+        "tasa_marginal": 0.0010137
+      },
+      {
+        "n_rango": 10,
+        "inferior": 1930060.0,
+        "superior": 2316072.0,
+        "cuota_fija": 1285.18,
+        "tasa_marginal": 0.0010138
+      },
+      {
+        "n_rango": 11,
+        "inferior": 2316072.0,
+        "superior": null,
+        "cuota_fija": 1677.78,
+        "tasa_marginal": 0.0043649
+      }
+    ],
+    "minimo_predial": {
+      "monto": 44.94,
+      "periodicidad": "anual",
+      "unidad": "pesos"
+    },
+    "comentarios": ""
+  },
+  "_meta": {
+    "fuente": "txt",
+    "modelo": "reclasified_v1[gpt-5.4-mini]"
+  },
+  "_meta_v2": {
+    "intentos": 0,
+    "requiere_revision": false,
+    "razon": null,
+    "tokens": {
+      "input": 0,
+      "output": 0,
+      "cached": 0
+    },
+    "cvegeo": "26035",
+    "estado": "sonora",
+    "anio": 2013
+  }
+}

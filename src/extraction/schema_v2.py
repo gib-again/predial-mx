@@ -257,6 +257,13 @@ class TarifaMillarSchema(BaseModel):
     )
     minimo_predial: MinimoPredial | None = None
     comentarios: str = ""
+    clasificacion_justificacion: str | None = Field(
+        None,
+        description=(
+            "Opcional. Si lo llenas, úsalo para señalar peculiaridades menores "
+            "(ej. tarifa secundaria de frutos civiles documentada aparte)."
+        ),
+    )
 
 
 class ProgresivoSchema(BaseModel):
@@ -274,6 +281,12 @@ class ProgresivoSchema(BaseModel):
     )
     minimo_predial: MinimoPredial | None = None
     comentarios: str = ""
+    clasificacion_justificacion: str | None = Field(
+        None,
+        description=(
+            "Opcional. Si lo llenas, úsalo para señalar peculiaridades menores."
+        ),
+    )
 
     @model_validator(mode="after")
     def _check_progresivo(self) -> "ProgresivoSchema":
@@ -298,6 +311,12 @@ class TasaUnicaSchema(BaseModel):
     )
     minimo_predial: MinimoPredial | None = None
     comentarios: str = ""
+    clasificacion_justificacion: str | None = Field(
+        None,
+        description=(
+            "Opcional. Si lo llenas, úsalo para señalar peculiaridades menores."
+        ),
+    )
 
 
 class CuotaFijaSimpleSchema(BaseModel):
@@ -327,6 +346,12 @@ class CuotaFijaSimpleSchema(BaseModel):
     )
     minimo_predial: MinimoPredial | None = None
     comentarios: str = ""
+    clasificacion_justificacion: str | None = Field(
+        None,
+        description=(
+            "Opcional. Si lo llenas, úsalo para señalar peculiaridades menores."
+        ),
+    )
 
 
 class CuotaFijaEscalonadaSchema(BaseModel):
@@ -344,6 +369,12 @@ class CuotaFijaEscalonadaSchema(BaseModel):
     )
     minimo_predial: MinimoPredial | None = None
     comentarios: str = ""
+    clasificacion_justificacion: str | None = Field(
+        None,
+        description=(
+            "Opcional. Si lo llenas, úsalo para señalar peculiaridades menores."
+        ),
+    )
 
     @model_validator(mode="after")
     def _check_cuota_fija_escalonada(self) -> "CuotaFijaEscalonadaSchema":
@@ -374,6 +405,16 @@ class MixtoSchema(BaseModel):
     minimo_predial: MinimoPredial | None = None
     comentarios: str = Field(
         description="Obligatorio: describir la mezcla y por qué no encaja en las variantes simples."
+    )
+    clasificacion_justificacion: str | None = Field(
+        None,
+        description=(
+            "Texto de 1-3 líneas que articula la heterogeneidad detectada por el "
+            "TEST DE HETEROGENEIDAD (prompt V3). Formato sugerido: "
+            "'Heterogeneidad en [FILA|COLUMNA|BRACKET]: [filas/cols con unidad U] "
+            "vs [filas/cols con unidad V]. Patrón: [A|B|C|otro].' "
+            "Opcional por compatibilidad retro; el prompt V3 lo pedirá no vacío."
+        ),
     )
 
     @model_validator(mode="after")
@@ -424,6 +465,12 @@ class OtroNoClasificadoSchema(BaseModel):
     )
     minimo_predial: MinimoPredial | None = None
     comentarios: str = ""
+    clasificacion_justificacion: str | None = Field(
+        None,
+        description=(
+            "Opcional. Si lo llenas, úsalo para señalar peculiaridades menores."
+        ),
+    )
 
     @model_validator(mode="after")
     def _check_descripcion(self) -> "OtroNoClasificadoSchema":

@@ -1,0 +1,241 @@
+{
+  "predial": {
+    "tipo_esquema": "mixto",
+    "tabla": [
+      {
+        "n_rango": 1,
+        "inferior": 0.01,
+        "superior": 38000.0,
+        "columnas": [
+          {
+            "nombre": "general",
+            "valor": 62.7,
+            "tipo": "cuota_fija",
+            "unidad": "pesos"
+          }
+        ]
+      },
+      {
+        "n_rango": 2,
+        "inferior": 38000.01,
+        "superior": 76000.0,
+        "columnas": [
+          {
+            "nombre": "general",
+            "valor": 62.7,
+            "tipo": "cuota_fija",
+            "unidad": "pesos"
+          },
+          {
+            "nombre": "general",
+            "valor": 1.4019,
+            "tipo": "tasa_millar",
+            "unidad": "al_millar"
+          }
+        ]
+      },
+      {
+        "n_rango": 3,
+        "inferior": 76000.0,
+        "superior": 144400.0,
+        "columnas": [
+          {
+            "nombre": "general",
+            "valor": 97.61,
+            "tipo": "cuota_fija",
+            "unidad": "pesos"
+          },
+          {
+            "nombre": "general",
+            "valor": 1.4563,
+            "tipo": "tasa_millar",
+            "unidad": "al_millar"
+          }
+        ]
+      },
+      {
+        "n_rango": 4,
+        "inferior": 144400.0,
+        "superior": 259920.0,
+        "columnas": [
+          {
+            "nombre": "general",
+            "valor": 198.77,
+            "tipo": "cuota_fija",
+            "unidad": "pesos"
+          },
+          {
+            "nombre": "general",
+            "valor": 1.404,
+            "tipo": "tasa_millar",
+            "unidad": "al_millar"
+          }
+        ]
+      },
+      {
+        "n_rango": 5,
+        "inferior": 259920.0,
+        "superior": 441864.0,
+        "columnas": [
+          {
+            "nombre": "general",
+            "valor": 367.38,
+            "tipo": "cuota_fija",
+            "unidad": "pesos"
+          },
+          {
+            "nombre": "general",
+            "valor": 1.405,
+            "tipo": "tasa_millar",
+            "unidad": "al_millar"
+          }
+        ]
+      },
+      {
+        "n_rango": 6,
+        "inferior": 441864.0,
+        "superior": 706982.0,
+        "columnas": [
+          {
+            "nombre": "general",
+            "valor": 634.52,
+            "tipo": "cuota_fija",
+            "unidad": "pesos"
+          },
+          {
+            "nombre": "general",
+            "valor": 1.4061,
+            "tipo": "tasa_millar",
+            "unidad": "al_millar"
+          }
+        ]
+      },
+      {
+        "n_rango": 7,
+        "inferior": 706982.0,
+        "superior": 1060473.0,
+        "columnas": [
+          {
+            "nombre": "general",
+            "valor": 1024.08,
+            "tipo": "cuota_fija",
+            "unidad": "pesos"
+          },
+          {
+            "nombre": "general",
+            "valor": 1.4071,
+            "tipo": "tasa_millar",
+            "unidad": "al_millar"
+          }
+        ]
+      },
+      {
+        "n_rango": 8,
+        "inferior": 1060473.0,
+        "superior": 1484662.0,
+        "columnas": [
+          {
+            "nombre": "general",
+            "valor": 1543.86,
+            "tipo": "cuota_fija",
+            "unidad": "pesos"
+          },
+          {
+            "nombre": "general",
+            "valor": 1.4082,
+            "tipo": "tasa_millar",
+            "unidad": "al_millar"
+          }
+        ]
+      },
+      {
+        "n_rango": 9,
+        "inferior": 1484662.0,
+        "superior": 1930060.0,
+        "columnas": [
+          {
+            "nombre": "general",
+            "valor": 2168.07,
+            "tipo": "cuota_fija",
+            "unidad": "pesos"
+          },
+          {
+            "nombre": "general",
+            "valor": 3.068,
+            "tipo": "tasa_millar",
+            "unidad": "al_millar"
+          }
+        ]
+      },
+      {
+        "n_rango": 10,
+        "inferior": 1930060.0,
+        "superior": 2316072.0,
+        "columnas": [
+          {
+            "nombre": "general",
+            "valor": 3596.03,
+            "tipo": "cuota_fija",
+            "unidad": "pesos"
+          },
+          {
+            "nombre": "general",
+            "valor": 3.069,
+            "tipo": "tasa_millar",
+            "unidad": "al_millar"
+          }
+        ]
+      },
+      {
+        "n_rango": 11,
+        "inferior": 2316072.0,
+        "superior": null,
+        "columnas": [
+          {
+            "nombre": "general",
+            "valor": 4834.03,
+            "tipo": "cuota_fija",
+            "unidad": "pesos"
+          },
+          {
+            "nombre": "general",
+            "valor": 3.0701,
+            "tipo": "tasa_millar",
+            "unidad": "al_millar"
+          }
+        ]
+      }
+    ],
+    "minimo_predial": {
+      "monto": 62.7,
+      "periodicidad": "anual",
+      "unidad": "pesos"
+    },
+    "comentarios": "Tabla principal elegida: predios edificados. Tarifas paralelas: predios no edificados con cuota mínima de 62.70 y tasas de 6.8805 al millar (de 6107.01 a 7453.00) y 8.8818 al millar (de 7453.01 en adelante); predios rústicos por hectárea con categorías de riego/agostadero/acuícola a tasa al millar; edificaciones de predios rústicos con cuota mínima de 62.70 y tasas al millar por rangos. La ley señala: 'En ningún caso el impuesto será menor a la cuota mínima de $62.70'.",
+    "clasificacion_justificacion": "Heterogeneidad en FILA/BRACKET: cada rango combina cuota_fija en pesos y tasa al millar sobre el excedente del límite inferior. Patrón: otro descrito."
+  },
+  "_meta": {
+    "fuente": "pdf_vision_multi",
+    "modelo": "gpt-5.4"
+  },
+  "_meta_v2": {
+    "intentos": 1,
+    "requiere_revision": false,
+    "escalado": true,
+    "razon": "rescate_via_vision_multi",
+    "usado_reocr": false,
+    "usado_vision": true,
+    "usado_vision_multi": true,
+    "tokens": {
+      "input": 127609,
+      "output": 1077,
+      "cached": 6912
+    },
+    "cvegeo": "26071",
+    "estado": "sonora",
+    "anio": 2012,
+    "pdf_stem": "2012CLXXXIX2XIV",
+    "elapsed_sec_pdf": 114.21799999999348,
+    "razon_no_encontrado": null
+  }
+}

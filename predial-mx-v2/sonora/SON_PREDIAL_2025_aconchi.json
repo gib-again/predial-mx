@@ -1,0 +1,108 @@
+{
+  "predial": {
+    "tipo_esquema": "progresivo",
+    "tabla": [
+      {
+        "n_rango": 1,
+        "inferior": 0.01,
+        "superior": 38000.01,
+        "cuota_fija": 67.71,
+        "tasa_marginal": 0.0
+      },
+      {
+        "n_rango": 2,
+        "inferior": 38000.01,
+        "superior": 76000.01,
+        "cuota_fija": 67.71,
+        "tasa_marginal": 0.0
+      },
+      {
+        "n_rango": 3,
+        "inferior": 76000.01,
+        "superior": 144400.01,
+        "cuota_fija": 67.71,
+        "tasa_marginal": 0.5502
+      },
+      {
+        "n_rango": 4,
+        "inferior": 144400.01,
+        "superior": 259920.01,
+        "cuota_fija": 72.39,
+        "tasa_marginal": 0.6773
+      },
+      {
+        "n_rango": 5,
+        "inferior": 259920.01,
+        "superior": 441864.01,
+        "cuota_fija": 154.16,
+        "tasa_marginal": 0.8173
+      },
+      {
+        "n_rango": 6,
+        "inferior": 441864.01,
+        "superior": 706982.01,
+        "cuota_fija": 312.44,
+        "tasa_marginal": 0.8884
+      },
+      {
+        "n_rango": 7,
+        "inferior": 706982.01,
+        "superior": 1060473.01,
+        "cuota_fija": 583.07,
+        "tasa_marginal": 0.8895
+      },
+      {
+        "n_rango": 8,
+        "inferior": 1060473.01,
+        "superior": 1484662.01,
+        "cuota_fija": 999.52,
+        "tasa_marginal": 1.0987
+      },
+      {
+        "n_rango": 9,
+        "inferior": 1484662.01,
+        "superior": 1930060.01,
+        "cuota_fija": 1645.05,
+        "tasa_marginal": 1.0998
+      },
+      {
+        "n_rango": 10,
+        "inferior": 1930060.01,
+        "superior": null,
+        "cuota_fija": 2258.14,
+        "tasa_marginal": 1.3974
+      }
+    ],
+    "minimo_predial": {
+      "monto": 67.71,
+      "periodicidad": "anual",
+      "unidad": "pesos"
+    },
+    "comentarios": "Tabla principal extraída de predios edificados del Artículo 5, fracción I. Tarifas paralelas: predios no edificados (0.01 a 22178.42 cuota mínima 67.71; 22178.42 a 25944.00 tasa 3.06 al millar; 25944.01 en adelante 3.94 al millar), predios rurales por hectárea con tasas al millar por categoría, edificaciones de predios rurales con tabla propia, e impuesto predial ejidal de 0.60 por hectárea en el Artículo 7. La ley indica que tratándose de predios no edificados, las sobretasas existentes serán las mismas que resultaron de la autorización para el ejercicio presupuestal 2025.",
+    "clasificacion_justificacion": null
+  },
+  "_meta": {
+    "fuente": "pdf_vision_multi",
+    "modelo": "gpt-5.4"
+  },
+  "_meta_v2": {
+    "intentos": 1,
+    "requiere_revision": false,
+    "escalado": true,
+    "razon": "rescate_via_vision_multi",
+    "usado_reocr": false,
+    "usado_vision": true,
+    "usado_vision_multi": true,
+    "tokens": {
+      "input": 130805,
+      "output": 1396,
+      "cached": 0
+    },
+    "cvegeo": "26001",
+    "estado": "sonora",
+    "anio": 2025,
+    "pdf_stem": "2024CCXIV53V",
+    "elapsed_sec_pdf": 79.53099999995902,
+    "razon_no_encontrado": null
+  }
+}

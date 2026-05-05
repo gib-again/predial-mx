@@ -1,0 +1,73 @@
+{
+  "predial": {
+    "tipo_esquema": "progresivo",
+    "tabla": [
+      {
+        "n_rango": 1,
+        "inferior": 0.01,
+        "superior": 38000.0,
+        "cuota_fija": 51.82,
+        "tasa_marginal": 0.0
+      },
+      {
+        "n_rango": 2,
+        "inferior": 38000.0,
+        "superior": 76000.0,
+        "cuota_fija": 51.82,
+        "tasa_marginal": 0.4855
+      },
+      {
+        "n_rango": 3,
+        "inferior": 76000.0,
+        "superior": 144400.0,
+        "cuota_fija": 68.04,
+        "tasa_marginal": 1.1497
+      },
+      {
+        "n_rango": 4,
+        "inferior": 144400.0,
+        "superior": 259920.0,
+        "cuota_fija": 146.71,
+        "tasa_marginal": 1.7599
+      },
+      {
+        "n_rango": 5,
+        "inferior": 259920.0,
+        "superior": null,
+        "cuota_fija": 350.06,
+        "tasa_marginal": 2.5872
+      }
+    ],
+    "minimo_predial": {
+      "monto": 51.82,
+      "periodicidad": "anual",
+      "unidad": "pesos"
+    },
+    "comentarios": "Tarifa principal tomada de predios edificados del artículo 5. Tarifa paralela para predios no edificados: $51.82 cuota mínima de 0.01 a 16,664.94; de 16,664.95 a 19,495.00, 3.1098 al millar; de 19,495.01 en adelante, 4.0052 al millar. Tarifa paralela para predios rústicos por hectárea: Riego de gravedad 1 1.04763360; Riego de gravedad 2 1.84117856; Riego de bombeo 1 1.83250184; Riego de bombeo 2 1.86088864; Riego por temporal única 2.79176144; Agostadero 1 1.43444392; Agostadero 2 1.81964744; Agostadero 3 0.28686736, todas al millar. Tarifa paralela para edificaciones de predios rurales: $51.82 cuota mínima de 0.01 a 41,757.29; de 41,757.30 a 172,125.00, 1.2411 al millar; de 172,125.01 a 344,250.00, 1.3032 al millar; de 344,250.01 a 860,625.00, 1.4392 al millar; de 860,625.01 a 1,721,250.00, 1.5633 al millar; de 1,721,250.01 a 2,581,875.00, 1.6637 al millar; de 2,581,875.01 a 3,442,500.00, 1.7375 al millar; de 3,442,500.01 en adelante, 1.8736 al millar. En ningún caso el impuesto será menor a 51.82 pesos.",
+    "clasificacion_justificacion": null
+  },
+  "_meta": {
+    "fuente": "pdf_vision_multi",
+    "modelo": "gpt-5.4"
+  },
+  "_meta_v2": {
+    "intentos": 1,
+    "requiere_revision": false,
+    "escalado": true,
+    "razon": "rescate_via_vision_multi",
+    "usado_reocr": false,
+    "usado_vision": true,
+    "usado_vision_multi": true,
+    "tokens": {
+      "input": 130793,
+      "output": 729,
+      "cached": 6912
+    },
+    "cvegeo": "26046",
+    "estado": "sonora",
+    "anio": 2025,
+    "pdf_stem": "2024CCXIV53XX",
+    "elapsed_sec_pdf": 136.89099999994505,
+    "razon_no_encontrado": null
+  }
+}

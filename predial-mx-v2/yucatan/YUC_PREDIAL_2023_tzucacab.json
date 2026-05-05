@@ -1,15 +1,20 @@
 {
   "predial": {
-    "tipo_esquema": "otro_no_clasificado",
-    "categoria": "municipio_sin_impuesto",
-    "descripcion_estructural": "Ley de ingresos en formato corto: contiene únicamente pronóstico presupuestal por concepto (línea 'Impuesto Predial $X' o 'I.- Predial $X') sin secciones que detallen tarifas, tasas, montos al millar ni rangos. Las contribuciones se rigen por la Ley General de Hacienda Municipal del Estado de Yucatán (referenciada típicamente en Art. 13-15 del articulado).",
-    "tabla_cruda": [],
+    "tipo_esquema": "tasa_unica",
+    "tabla": [
+      {
+        "descripcion": "Predio urbano y rústico: factor único sobre el valor catastral actualizado (Tabla A + Tabla B).",
+        "tasa": 0.00025,
+        "base_calculo": "valor_catastral",
+        "unidad": "porcentaje"
+      }
+    ],
     "minimo_predial": null,
-    "comentarios": "[treatment_audit:audit_directed from 2021] Reversión de tratamiento: asumir tasas de 2021 (auditor). Comentario original: Síntesis determinista a partir del fallback `short_form` del segmentador de Yucatán. No se invocó LLM porque el documento fuente no contiene información de tarifa."
+    "comentarios": "Art. 13 establece una sola tasa uniforme: C = (Tabla A + Tabla B) * 0.00025. Se ignoran descuentos y bonificaciones del Art. 14. También aparece una tarifa paralela para predios destinados a la producción agropecuaria de 10 al millar anual sobre el valor registrado o catastral; se deja fuera de la tabla principal por ser un grupo especial separado."
   },
   "_meta": {
     "fuente": "txt",
-    "modelo": "imputed_audit_directed[from_2021]"
+    "modelo": "imputed_confirmed_fill"
   },
   "_meta_v2": {
     "intentos": 0,
@@ -23,8 +28,7 @@
     "cvegeo": "31098",
     "estado": "yucatan",
     "anio": 2023,
-    "imputed_from_year": 2021,
-    "imputed_method": "audit_directed",
-    "treatment_audit_source": "asumir_tasas_anteriores_o_dirigidas"
+    "imputed_from_year": 2022,
+    "imputed_method": "confirmed_fill"
   }
 }
