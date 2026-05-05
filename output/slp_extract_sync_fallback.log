@@ -1,0 +1,315 @@
+  Encontrados 578 archivos TXT.
+  Modo: síncrono (structured output + fallback PDF visión)
+  Modelo: gpt-5.4-mini
+
+  >>> Armadillo De Los Infante 2013 (re-intento, esquema inválido)
+    [1/3] TXT (27639 chars)...
+    [CACHE] 11520 tokens cacheados de 11836
+    [1/3] TXT → inválido (tipo=desconocido, valido=False | diagnóstico=texto_insuficiente_o_truncado | comentario_llm=No se identificó la mecánica básica de cálculo del impuesto predial en el texto proporcionado; la sección visible mencio)
+      [ext_txt] SLP_PREDIAL_2013_armadillo_de_los_infante no encontrado en segment.csv
+    [2/3] Sin contexto adicional (ext_texto=None), skip TXT extendido
+    [3/3] PDF visión (12pp)...
+    [3/3] PDF → válido ✓
+    [OK] → SLP_PREDIAL_2013_armadillo_de_los_infante.json (vía PDF)
+
+  >>> Tamazunchale 2014 (re-intento, esquema inválido)
+    [1/3] TXT (1697 chars)...
+    [CACHE] 4864 tokens cacheados de 5221
+    [1/3] TXT → inválido (tipo=desconocido, valido=False | diagnóstico=texto_insuficiente_o_truncado | comentario_llm=Texto insuficiente: no contiene la mecánica de cálculo del impuesto predial, solo portada/sumario y metadatos.)
+      [ext_txt] SLP_PREDIAL_2014_tamazunchale no encontrado en segment.csv
+    [2/3] Sin contexto adicional (ext_texto=None), skip TXT extendido
+    [3/3] PDF visión (1pp)...
+    [3/3] PDF → también inválido (tipo=desconocido, valido=False | diagnóstico=texto_insuficiente_o_truncado | comentario_llm=No se proporcionó la sección del Impuesto Predial; solo aparece la portada/sumario del periódico oficial.)
+    [OK] → SLP_PREDIAL_2014_tamazunchale.json
+
+  >>> Ahualulco Del Sonido 13 2015 (re-intento, esquema inválido)
+    [1/3] TXT (3495 chars)...
+    [CACHE] 3840 tokens cacheados de 5737
+    [1/3] TXT → inválido (tipo=tarifa_millar, valido=False | comentario_llm=Las tasas aparecen OCR corruptas como '4.00' y no permiten distinguir con certeza la mecánica básica (al millar, porcent)
+      [ext_txt] SLP_PREDIAL_2015_ahualulco_del_sonido_13 no encontrado en segment.csv
+    [2/3] Sin contexto adicional (ext_texto=None), skip TXT extendido
+    [3/3] PDF visión (1pp)...
+    [3/3] PDF → válido ✓
+    [OK] → SLP_PREDIAL_2015_ahualulco_del_sonido_13.json (vía PDF)
+
+  >>> Alaquines 2017 (re-intento, esquema inválido)
+    [1/3] TXT (4116 chars)...
+    [CACHE] 5376 tokens cacheados de 5711
+    [1/3] TXT → inválido (tipo=desconocido, valido=False | diagnóstico=texto_insuficiente_o_truncado | comentario_llm=El texto proporcionado no contiene las tasas o tabla concreta de cálculo del impuesto predial; sólo menciona que se apli)
+      [ext_txt] SLP_PREDIAL_2017_alaquines no encontrado en segment.csv
+    [2/3] Sin contexto adicional (ext_texto=None), skip TXT extendido
+    [3/3] PDF visión (2pp)...
+    [3/3] PDF → válido ✓
+    [OK] → SLP_PREDIAL_2017_alaquines.json (vía PDF)
+
+  >>> Catorce 2017 (re-intento, esquema inválido)
+    [1/3] TXT (3990 chars)...
+    [CACHE] 5376 tokens cacheados de 5650
+    [1/3] TXT → inválido (tipo=desconocido, valido=False | diagnóstico=texto_insuficiente_o_truncado | comentario_llm=Solo se menciona que se aplicarán tasas según el tipo de predio, pero el texto proporcionado no incluye las tasas especí)
+      [ext_txt] SLP_PREDIAL_2017_catorce no encontrado en segment.csv
+    [2/3] Sin contexto adicional (ext_texto=None), skip TXT extendido
+    [3/3] PDF visión (2pp)...
+    [3/3] PDF → válido ✓
+    [OK] → SLP_PREDIAL_2017_catorce.json (vía PDF)
+
+  >>> Cerritos 2017 (re-intento, esquema inválido)
+    [1/3] TXT (3553 chars)...
+    [CACHE] 5376 tokens cacheados de 5614
+    [1/3] TXT → inválido (tipo=desconocido, valido=False | diagnóstico=texto_insuficiente_o_truncado | comentario_llm=El fragmento proporcionado no contiene la mecánica de cálculo de la tasa del impuesto predial; solo menciona que se apli)
+      [ext_txt] SLP_PREDIAL_2017_cerritos no encontrado en segment.csv
+    [2/3] Sin contexto adicional (ext_texto=None), skip TXT extendido
+    [3/3] PDF visión (2pp)...
+    [3/3] PDF → válido ✓
+    [OK] → SLP_PREDIAL_2017_cerritos.json (vía PDF)
+
+  >>> El Naranjo 2017 (re-intento, esquema inválido)
+    [1/3] TXT (3823 chars)...
+    [CACHE] 5376 tokens cacheados de 5655
+    [1/3] TXT → inválido (tipo=desconocido, valido=False | diagnóstico=texto_insuficiente_o_truncado | comentario_llm=El texto proporcionado no incluye la mecánica de cálculo específica del impuesto predial (tasas, cuotas o tabla aplicabl)
+      [ext_txt] SLP_PREDIAL_2017_el_naranjo no encontrado en segment.csv
+    [2/3] Sin contexto adicional (ext_texto=None), skip TXT extendido
+    [3/3] PDF visión (2pp)...
+    [3/3] PDF → válido ✓
+    [OK] → SLP_PREDIAL_2017_el_naranjo.json (vía PDF)
+
+  >>> Moctezuma 2017 (re-intento, esquema inválido)
+    [1/3] TXT (4039 chars)...
+    [CACHE] 5376 tokens cacheados de 5728
+    [1/3] TXT → inválido (tipo=desconocido, valido=False | diagnóstico=texto_insuficiente_o_truncado | comentario_llm=La sección transcrita menciona que el impuesto se calculará conforme a tasas según tipo de predio, pero en el texto prop)
+      [ext_txt] SLP_PREDIAL_2017_moctezuma no encontrado en segment.csv
+    [2/3] Sin contexto adicional (ext_texto=None), skip TXT extendido
+    [3/3] PDF visión (2pp)...
+    [3/3] PDF → válido ✓
+    [OK] → SLP_PREDIAL_2017_moctezuma.json (vía PDF)
+
+  >>> San Antonio 2017 (re-intento, esquema inválido)
+    [1/3] TXT (5652 chars)...
+    [CACHE] 5888 tokens cacheados de 6274
+    [OK] → SLP_PREDIAL_2017_san_antonio.json
+
+  >>> Villa De La Paz 2017 (re-intento, esquema inválido)
+    [1/3] TXT (4014 chars)...
+    [CACHE] 3840 tokens cacheados de 5650
+    [1/3] TXT → inválido (tipo=desconocido, valido=False | diagnóstico=texto_insuficiente_o_truncado | comentario_llm=Solo menciona tasas para predios urbanos, suburbanos y rústicos, pero el texto proporcionado está truncado y no incluye )
+      [ext_txt] SLP_PREDIAL_2017_villa_de_la_paz no encontrado en segment.csv
+    [2/3] Sin contexto adicional (ext_texto=None), skip TXT extendido
+    [3/3] PDF visión (2pp)...
+    [3/3] PDF → válido ✓
+    [OK] → SLP_PREDIAL_2017_villa_de_la_paz.json (vía PDF)
+
+  >>> Villa De Ramos 2017 (re-intento, esquema inválido)
+    [1/3] TXT (3925 chars)...
+    [CACHE] 3840 tokens cacheados de 5720
+    [OK] → SLP_PREDIAL_2017_villa_de_ramos.json
+
+  >>> Matehuala 2019 (re-intento, esquema inválido)
+    [1/3] TXT (4263 chars)...
+    [CACHE] 3840 tokens cacheados de 5863
+    [OK] → SLP_PREDIAL_2019_matehuala.json
+
+  >>> San Antonio 2019 (re-intento, esquema inválido)
+    [1/3] TXT (3678 chars)...
+    [CACHE] 3840 tokens cacheados de 5725
+    [OK] → SLP_PREDIAL_2019_san_antonio.json
+
+  >>> San Vicente Tancuayalab 2019
+    [1/3] TXT (3609 chars)...
+    [CACHE] 3840 tokens cacheados de 5716
+    [OK] → SLP_PREDIAL_2019_san_vicente_tancuayalab.json
+
+  >>> Tampamolon Corona 2019 (re-intento, esquema inválido)
+    [1/3] TXT (3002 chars)...
+    [CACHE] 3840 tokens cacheados de 5527
+    [1/3] TXT → inválido (tipo=desconocido, valido=False | diagnóstico=texto_insuficiente_o_truncado | comentario_llm=Solo menciona tarifa mínima y estímulos fiscales; no se transcribe una mecánica básica completa de cálculo del impuesto )
+      [ext_txt] SLP_PREDIAL_2019_tampamolon_corona no encontrado en segment.csv
+    [2/3] Sin contexto adicional (ext_texto=None), skip TXT extendido
+    [3/3] PDF visión (2pp)...
+    [3/3] PDF → válido ✓
+    [OK] → SLP_PREDIAL_2019_tampamolon_corona.json (vía PDF)
+
+  >>> Tamuin 2019
+    [1/3] TXT (5709 chars)...
+    [CACHE] 3840 tokens cacheados de 6223
+    [OK] → SLP_PREDIAL_2019_tamuin.json
+
+  >>> Villa De Arista 2019 (re-intento, esquema inválido)
+    [1/3] TXT (3752 chars)...
+    [CACHE] 3840 tokens cacheados de 5764
+    [OK] → SLP_PREDIAL_2019_villa_de_arista.json
+
+  >>> Villa De Guadalupe 2019
+    [1/3] TXT (3452 chars)...
+    [CACHE] 3840 tokens cacheados de 5674
+    [OK] → SLP_PREDIAL_2019_villa_de_guadalupe.json
+
+  >>> Villa Hidalgo 2019
+    [1/3] TXT (3642 chars)...
+    [CACHE] 3840 tokens cacheados de 5757
+    [OK] → SLP_PREDIAL_2019_villa_hidalgo.json
+
+  >>> Xilitla 2019
+    [1/3] TXT (3402 chars)...
+    [CACHE] 3840 tokens cacheados de 5651
+    [OK] → SLP_PREDIAL_2019_xilitla.json
+
+  >>> Ciudad Del Maiz 2020
+    [1/3] TXT (3997 chars)...
+    [CACHE] 3840 tokens cacheados de 5784
+    [OK] → SLP_PREDIAL_2020_ciudad_del_maiz.json
+
+  >>> Matehuala 2020 (re-intento, esquema inválido)
+    [1/3] TXT (5827 chars)...
+    [CACHE] 3840 tokens cacheados de 6373
+    [1/3] TXT → inválido (tipo=desconocido, valido=False | diagnóstico=texto_insuficiente_o_truncado | comentario_llm=Solo menciona la mecánica general del impuesto predial y un mínimo predial en UMA; no incluye una tabla o tasa específic)
+      [ext_txt] SLP_PREDIAL_2020_matehuala no encontrado en segment.csv
+    [2/3] Sin contexto adicional (ext_texto=None), skip TXT extendido
+    [3/3] PDF visión (3pp)...
+    [3/3] PDF → válido ✓
+    [OK] → SLP_PREDIAL_2020_matehuala.json (vía PDF)
+
+  >>> Rioverde 2020
+    [1/3] TXT (3967 chars)...
+    [CACHE] 3840 tokens cacheados de 5796
+    [OK] → SLP_PREDIAL_2020_rioverde.json
+
+  >>> San Luis Potosi 2020
+    [1/3] TXT (3684 chars)...
+    [CACHE] 3840 tokens cacheados de 5482
+    [OK] → SLP_PREDIAL_2020_san_luis_potosi.json
+
+  >>> San Vicente Tancuayalab 2020 (re-intento, esquema inválido)
+    [1/3] TXT (2068 chars)...
+    [CACHE] 3840 tokens cacheados de 5162
+    [1/3] TXT → inválido (tipo=desconocido, valido=False | diagnóstico=texto_insuficiente_o_truncado | comentario_llm=Texto insuficiente o no contiene la mecánica de cálculo del impuesto predial.)
+      [ext_txt] SLP_PREDIAL_2020_san_vicente_tancuayalab no encontrado en segment.csv
+    [2/3] Sin contexto adicional (ext_texto=None), skip TXT extendido
+    [3/3] PDF visión (1pp)...
+    [3/3] PDF → también inválido (tipo=desconocido, valido=False | diagnóstico=texto_insuficiente_o_truncado | comentario_llm=La imagen proporcionada no contiene la sección del Impuesto Predial ni la mecánica de cálculo; solo muestra una página d)
+    [OK] → SLP_PREDIAL_2020_san_vicente_tancuayalab.json
+
+  >>> Tanlajas 2020
+    [1/3] TXT (3695 chars)...
+    [CACHE] 3840 tokens cacheados de 5729
+    [OK] → SLP_PREDIAL_2020_tanlajas.json
+
+  >>> Tanquian De Escobedo 2020
+    [1/3] TXT (3948 chars)...
+    [CACHE] 3840 tokens cacheados de 5773
+    [OK] → SLP_PREDIAL_2020_tanquian_de_escobedo.json
+
+  >>> Tierra Nueva 2020
+    [1/3] TXT (3945 chars)...
+    [CACHE] 3840 tokens cacheados de 5762
+    [OK] → SLP_PREDIAL_2020_tierra_nueva.json
+
+  >>> Villa Hidalgo 2020
+    [1/3] TXT (4171 chars)...
+    [CACHE] 3840 tokens cacheados de 5818
+    [OK] → SLP_PREDIAL_2020_villa_hidalgo.json
+
+  >>> Cerritos 2022 (re-intento, esquema inválido)
+    [1/3] TXT (1885 chars)...
+    [CACHE] 3840 tokens cacheados de 5130
+    [1/3] TXT → inválido (tipo=desconocido, valido=False | diagnóstico=texto_insuficiente_o_truncado | comentario_llm=El texto visible no incluye la tabla o tasas específicas de cálculo del impuesto predial; solo menciona el mínimo predia)
+      [ext_txt] SLP_PREDIAL_2022_cerritos no encontrado en segment.csv
+    [2/3] Sin contexto adicional (ext_texto=None), skip TXT extendido
+    [3/3] PDF visión (2pp)...
+    [3/3] PDF → válido ✓
+    [OK] → SLP_PREDIAL_2022_cerritos.json (vía PDF)
+
+  >>> El Naranjo 2022
+    [1/3] TXT (3897 chars)...
+    [CACHE] 3840 tokens cacheados de 5785
+    [OK] → SLP_PREDIAL_2022_el_naranjo.json
+
+  >>> Matehuala 2022 (re-intento, esquema inválido)
+    [1/3] TXT (3843 chars)...
+    [CACHE] 3840 tokens cacheados de 5757
+    [1/3] TXT → inválido (tipo=desconocido, valido=False | diagnóstico=texto_insuficiente_o_truncado | comentario_llm=El texto visible no contiene la mecánica base de cálculo del impuesto predial; solo menciona que se aplicarán tasas y ta)
+      [ext_txt] SLP_PREDIAL_2022_matehuala no encontrado en segment.csv
+    [2/3] Sin contexto adicional (ext_texto=None), skip TXT extendido
+    [3/3] PDF visión (2pp)...
+    [3/3] PDF → válido ✓
+    [OK] → SLP_PREDIAL_2022_matehuala.json (vía PDF)
+
+  >>> San Luis Potosi 2022
+    [1/3] TXT (3713 chars)...
+    [CACHE] 3840 tokens cacheados de 6034
+    [OK] → SLP_PREDIAL_2022_san_luis_potosi.json
+
+  >>> Ahualulco Del Sonido 13 2023
+    [1/3] TXT (3934 chars)...
+    [CACHE] 3840 tokens cacheados de 5841
+    [OK] → SLP_PREDIAL_2023_ahualulco_del_sonido_13.json
+
+  >>> Cerritos 2023
+    [1/3] TXT (2528 chars)...
+    [CACHE] 3840 tokens cacheados de 5290
+    [OK] → SLP_PREDIAL_2023_cerritos.json
+
+  >>> Coxcatlan 2023
+    [1/3] TXT (3948 chars)...
+    [CACHE] 3840 tokens cacheados de 5783
+    [OK] → SLP_PREDIAL_2023_coxcatlan.json
+
+  >>> Matehuala 2023 (re-intento, esquema inválido)
+    [1/3] TXT (3853 chars)...
+    [CACHE] 3840 tokens cacheados de 5759
+    [1/3] TXT → inválido (tipo=desconocido, valido=False | diagnóstico=texto_insuficiente_o_truncado | comentario_llm=El texto visible solo indica que el impuesto se calculará conforme a la tasa que corresponda según el tipo de predio, pe)
+      [ext_txt] SLP_PREDIAL_2023_matehuala no encontrado en segment.csv
+    [2/3] Sin contexto adicional (ext_texto=None), skip TXT extendido
+    [3/3] PDF visión (3pp)...
+    [3/3] PDF → válido ✓
+    [OK] → SLP_PREDIAL_2023_matehuala.json (vía PDF)
+
+  >>> Santa Maria Del Rio 2023
+    [1/3] TXT (3944 chars)...
+    [CACHE] 3840 tokens cacheados de 5790
+    [OK] → SLP_PREDIAL_2023_santa_maria_del_rio.json
+
+  >>> Villa De Guadalupe 2023
+    [1/3] TXT (3908 chars)...
+    [CACHE] 3840 tokens cacheados de 5778
+    [OK] → SLP_PREDIAL_2023_villa_de_guadalupe.json
+
+  >>> Villa De La Paz 2023
+    [1/3] TXT (4077 chars)...
+    [CACHE] 3840 tokens cacheados de 5802
+    [OK] → SLP_PREDIAL_2023_villa_de_la_paz.json
+
+  >>> Xilitla 2023
+    [1/3] TXT (3840 chars)...
+    [CACHE] 3840 tokens cacheados de 5753
+    [OK] → SLP_PREDIAL_2023_xilitla.json
+
+  >>> Cerro De San Pedro 2024
+    [1/3] TXT (4360 chars)...
+    [CACHE] 3840 tokens cacheados de 5908
+    [OK] → SLP_PREDIAL_2024_cerro_de_san_pedro.json
+
+  >>> Charcas 2024
+    [1/3] TXT (2775 chars)...
+    [CACHE] 3840 tokens cacheados de 5345
+    [OK] → SLP_PREDIAL_2024_charcas.json
+
+  >>> Mexquitic De Carmona 2024
+    [1/3] TXT (2287 chars)...
+    [CACHE] 3840 tokens cacheados de 5240
+    [OK] → SLP_PREDIAL_2024_mexquitic_de_carmona.json
+
+  >>> Cerritos 2025 (re-intento, esquema inválido)
+    [1/3] TXT (1884 chars)...
+    [CACHE] 3840 tokens cacheados de 5118
+    [1/3] TXT → inválido (tipo=desconocido, valido=False | diagnóstico=texto_insuficiente_o_truncado | comentario_llm=El texto sólo muestra el encabezado de tasas y el mínimo predial; no incluye la tabla o tasas aplicables del artículo 6°)
+      [ext_txt] SLP_PREDIAL_2025_cerritos no encontrado en segment.csv
+    [2/3] Sin contexto adicional (ext_texto=None), skip TXT extendido
+    [3/3] PDF visión (2pp)...
+    [3/3] PDF → válido ✓
+    [OK] → SLP_PREDIAL_2025_cerritos.json (vía PDF)
+
+  ── Resumen extracción LLM ──
+  TXT encontrados    : 578
+  JSON vía TXT       : 31
+  JSON vía PDF visión: 14
+  Saltados (existían): 533
+  Errores            : 0
