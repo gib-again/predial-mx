@@ -1,0 +1,18 @@
+════════════════════════════════════════════════════════════
+  FASE 7: Imputación — Panel Balanceado
+════════════════════════════════════════════════════════════
+  Catálogo de municipios nuevos: 22 entradas
+  Panel crudo: 12044 observaciones
+
+  → output\predial_panel_balanced.csv
+  ── Resumen ──
+  Municipios:        939
+  Rango:             2010-2025 (16 años)
+  Panel ideal:       15024 obs
+  Panel balanceado:  13303 obs (88.5% cobertura)
+  Datos crudos:      9567
+  Imputados:         3736
+    confirmed_fill:  1016
+    ffill:           2359
+    bfill:           361
+  Huecos restantes:  1721 (11.5%)

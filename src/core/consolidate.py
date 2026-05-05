@@ -50,6 +50,8 @@ _ESTADO_CVE = {
     "jalisco": "14",
     "oaxaca": "20",
     "queretaro": "22",
+    "sanluispotosi": "24",
+    "sonora": "26",
     "tamaulipas": "28",
     "yucatan": "31",
 }

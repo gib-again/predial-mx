@@ -1,0 +1,37 @@
+════════════════════════════════════════════════════════════
+  FASE 6: Consolidación
+════════════════════════════════════════════════════════════
+  Catálogo INEGI: 2476 entradas
+
+  Leyendo JSONs...
+    coahuila: 579 obs (38 municipios)
+    guanajuato: 630 obs (48 municipios)
+    jalisco: 1975 obs (125 municipios)
+    oaxaca: 5368 obs (1736 municipios)
+    queretaro: 302 obs (18 municipios)
+    sanluispotosi: 578 obs (59 municipios)
+    sonora: 557 obs (89 municipios)
+    tamaulipas: 686 obs (44 municipios)
+    yucatan: 1369 obs (103 municipios)
+
+  Generando predial_panel.csv...
+  → output\predial_panel.csv (12044 filas)
+
+  Generando quality_report.csv...
+  → output\quality_report.csv (12044 filas)
+    Con anomalías:       2296
+    Cambios de esquema:  579
+    Cambios de tasa:     1671
+    Cambios de rangos:   205
+
+  ── Resumen ──
+  Observaciones: 12044
+  Municipios:    2260
+  Años:          1018-2026
+  Esquemas:
+    tasa_unica            4755 (39.5%)
+    tarifa_millar         4461 (37.0%)
+    progresivo            1607 (13.3%)
+    desconocido            866 (7.2%)
+    mixto                  254 (2.1%)
+    cuota_fija             101 (0.8%)

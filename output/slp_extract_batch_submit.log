@@ -1,0 +1,38 @@
+Estado: San Luis Potosí
+TXT dir: data\sanluispotosi\focus_predial
+JSON dir: data\sanluispotosi\json_predial
+
+Lanzando extract_all en batch_mode=True...
+  Requests pendientes: 568
+  Sub-batches generados: 3
+    [1] batch_SLP_001.jsonl: 246 requests
+    [2] batch_SLP_002.jsonl: 251 requests
+    [3] batch_SLP_003.jsonl: 71 requests
+
+  ── Sub-batch 1/3 ──
+  Subiendo batch_SLP_001.jsonl a OpenAI...
+  Archivo subido: file-CF7LnsR185Yk4k4bmH7F3y
+  Batch creado: batch_69f9177c02388190bc668c1e8fe5af6d (estado: validating)
+
+  ── Sub-batch 2/3 ──
+  Subiendo batch_SLP_002.jsonl a OpenAI...
+  Archivo subido: file-MGngF8JCpYpVzq3HM3PCF9
+  Batch creado: batch_69f9177da1208190bf659d0f61b03fb7 (estado: validating)
+
+  ── Sub-batch 3/3 ──
+  Subiendo batch_SLP_003.jsonl a OpenAI...
+  Archivo subido: file-Trmrt4j74hj4qfEQzYf9S3
+  Batch creado: batch_69f9177f0bc08190a24f78299b156fbe (estado: validating)
+
+  ══ 3 batch(es) enviado(s) ══
+  Modelo: gpt-5.4-mini
+  Structured output: sí
+    [1] batch_69f9177c02388190bc668c1e8fe5af6d
+    [2] batch_69f9177da1208190bf659d0f61b03fb7
+    [3] batch_69f9177f0bc08190a24f78299b156fbe
+
+  IDs guardados en: data\sanluispotosi\meta\batch_SLP_ids.json
+
+  Después de recibir resultados, ejecutar en modo síncrono
+  para el fallback PDF de los esquemas inválidos:
+    python scripts/run_pipeline.py slp --steps extract
