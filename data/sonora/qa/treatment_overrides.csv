@@ -1,0 +1,406 @@
+cve_mun,municipio,anio,tipo_override,source
+001,Aconchi,2011,progresivo,audit_individual
+001,Aconchi,2018,progresivo,audit_individual
+002,Agua Prieta,2013,progresivo,audit_individual
+002,Agua Prieta,2017,progresivo,audit_individual
+002,Agua Prieta,2020,progresivo,audit_individual
+002,Agua Prieta,2023,progresivo,audit_individual
+003,alamos,2010,progresivo,audit_individual
+003,alamos,2013,progresivo,audit_individual
+004,Altar,2018,progresivo,audit_individual
+004,Altar,2019,progresivo,user_reversion_noise
+004,Altar,2020,progresivo,user_reversion_noise
+004,Altar,2024,progresivo,audit_individual
+005,Arivechi,2013,progresivo,audit_individual
+005,Arivechi,2017,progresivo,audit_individual
+005,Arivechi,2023,progresivo,audit_individual
+006,Arizpe,2023,progresivo,audit_individual
+007,Atil,2016,progresivo,audit_individual
+007,Atil,2018,progresivo,audit_individual
+007,Atil,2023,progresivo,audit_individual
+008,Bacadehuachi,2017,progresivo,audit_individual
+009,Bacanora,2018,progresivo,audit_individual
+009,Bacanora,2019,progresivo,audit_individual
+009,Bacanora,2025,progresivo,audit_individual
+010,Bacerac,2013,progresivo,audit_individual
+010,Bacerac,2017,progresivo,audit_individual
+010,Bacerac,2021,progresivo,audit_individual
+010,Bacerac,2024,progresivo,audit_individual
+010,Bacerac,2025,progresivo,audit_individual
+011,Bacoachi,2018,progresivo,audit_individual
+011,Bacoachi,2019,progresivo,user_reversion_noise
+011,Bacoachi,2020,progresivo,user_reversion_noise
+011,Bacoachi,2022,progresivo,audit_individual
+011,Bacoachi,2023,progresivo,audit_individual
+011,Bacoachi,2025,progresivo,audit_individual
+012,Bacum,2011,progresivo,user_reversion_noise
+012,Bacum,2012,progresivo,user_reversion_noise
+012,Bacum,2013,progresivo,user_reversion_noise
+012,Bacum,2020,progresivo,audit_individual
+012,Bacum,2023,progresivo,audit_individual
+012,Bacum,2025,progresivo,audit_individual
+013,Banamichi,2013,progresivo,audit_individual
+013,Banamichi,2018,progresivo,audit_individual
+014,Baviacora,2013,progresivo,audit_individual
+014,Baviacora,2017,progresivo,audit_individual
+014,Baviacora,2020,progresivo,audit_individual
+014,Baviacora,2023,progresivo,audit_individual
+015,Bavispe,2010,progresivo,audit_individual
+015,Bavispe,2011,progresivo,audit_individual
+015,Bavispe,2012,progresivo,audit_individual
+015,Bavispe,2013,progresivo,audit_individual
+015,Bavispe,2018,progresivo,audit_individual
+015,Bavispe,2019,progresivo,user_reversion_noise
+015,Bavispe,2020,progresivo,user_reversion_noise
+015,Bavispe,2021,progresivo,user_reversion_noise
+015,Bavispe,2024,progresivo,audit_individual
+015,Bavispe,2025,progresivo,audit_individual
+016,Benjamin Hill,2016,progresivo,audit_individual
+016,Benjamin Hill,2020,progresivo,audit_individual
+016,Benjamin Hill,2021,progresivo,audit_individual
+017,Caborca,2010,progresivo,audit_individual
+017,Caborca,2012,progresivo,audit_individual
+017,Caborca,2018,progresivo,audit_individual
+017,Caborca,2022,progresivo,audit_individual
+018,Cajeme,2019,tarifa_millar,audit_individual
+019,Cananea,2023,progresivo,audit_individual
+019,Cananea,2024,progresivo,user_reversion_noise
+019,Cananea,2025,progresivo,user_reversion_noise
+020,Carbo,2010,progresivo,user_reversion_noise
+020,Carbo,2011,progresivo,user_reversion_noise
+020,Carbo,2012,progresivo,user_reversion_noise
+020,Carbo,2018,progresivo,audit_individual
+020,Carbo,2019,progresivo,user_reversion_noise
+020,Carbo,2020,progresivo,user_reversion_noise
+020,Carbo,2023,progresivo,audit_individual
+020,Carbo,2024,mixto,audit_individual
+021,La Colorada,2010,progresivo,audit_range
+021,La Colorada,2011,progresivo,audit_range
+021,La Colorada,2012,progresivo,audit_range
+021,La Colorada,2013,progresivo,audit_range
+021,La Colorada,2014,progresivo,audit_range
+021,La Colorada,2015,progresivo,audit_range
+021,La Colorada,2016,progresivo,audit_range
+021,La Colorada,2017,progresivo,audit_range
+021,La Colorada,2019,progresivo,audit_individual
+021,La Colorada,2020,progresivo,user_reversion_noise
+021,La Colorada,2021,progresivo,user_reversion_noise
+021,La Colorada,2022,progresivo,user_reversion_noise
+021,La Colorada,2023,progresivo,user_reversion_noise
+021,La Colorada,2024,progresivo,user_reversion_noise
+021,La Colorada,2025,progresivo,user_reversion_noise
+022,Cucurpe,2010,progresivo,audit_range
+022,Cucurpe,2011,progresivo,audit_range
+022,Cucurpe,2012,progresivo,audit_range
+022,Cucurpe,2013,progresivo,audit_range
+022,Cucurpe,2014,progresivo,audit_range
+022,Cucurpe,2015,progresivo,audit_range
+022,Cucurpe,2016,progresivo,audit_range
+022,Cucurpe,2017,progresivo,audit_range
+022,Cucurpe,2018,progresivo,audit_range
+022,Cucurpe,2019,progresivo,audit_range
+022,Cucurpe,2020,progresivo,audit_range
+022,Cucurpe,2021,progresivo,audit_individual
+023,Cumpas,2010,progresivo,audit_range
+023,Cumpas,2011,progresivo,audit_range
+023,Cumpas,2012,progresivo,audit_range
+023,Cumpas,2013,progresivo,audit_range
+023,Cumpas,2014,progresivo,audit_range
+023,Cumpas,2015,progresivo,audit_range
+023,Cumpas,2016,progresivo,audit_range
+023,Cumpas,2017,progresivo,audit_individual
+023,Cumpas,2018,progresivo,audit_individual
+023,Cumpas,2021,progresivo,audit_individual
+024,Divisaderos,2010,progresivo,audit_range
+024,Divisaderos,2011,progresivo,audit_range
+024,Divisaderos,2012,progresivo,audit_range
+024,Divisaderos,2013,progresivo,audit_range
+024,Divisaderos,2014,progresivo,audit_range
+024,Divisaderos,2015,progresivo,audit_individual
+024,Divisaderos,2016,progresivo,audit_range
+024,Divisaderos,2017,progresivo,audit_range
+024,Divisaderos,2018,progresivo,audit_range
+024,Divisaderos,2019,progresivo,audit_range
+024,Divisaderos,2020,progresivo,audit_range
+024,Divisaderos,2021,progresivo,audit_range
+024,Divisaderos,2022,progresivo,audit_range
+024,Divisaderos,2023,progresivo,audit_range
+024,Divisaderos,2024,progresivo,audit_range
+024,Divisaderos,2025,progresivo,audit_range
+025,Empalme,2018,progresivo,audit_individual
+025,Empalme,2019,progresivo,user_reversion_noise
+025,Empalme,2020,progresivo,user_reversion_noise
+025,Empalme,2021,progresivo,user_reversion_noise
+025,Empalme,2022,progresivo,user_reversion_noise
+027,Fronteras,2012,progresivo,audit_individual
+027,Fronteras,2017,progresivo,audit_individual
+027,Fronteras,2018,progresivo,user_reversion_noise
+027,Fronteras,2019,progresivo,user_reversion_noise
+027,Fronteras,2020,progresivo,user_reversion_noise
+027,Fronteras,2021,progresivo,user_reversion_noise
+027,Fronteras,2022,progresivo,user_reversion_noise
+027,Fronteras,2023,progresivo,user_reversion_noise
+027,Fronteras,2024,progresivo,user_reversion_noise
+027,Fronteras,2025,progresivo,user_reversion_noise
+028,Granados,2017,progresivo,audit_individual
+028,Granados,2018,progresivo,audit_individual
+028,Granados,2020,progresivo,audit_individual
+028,Granados,2021,progresivo,user_reversion_noise
+028,Granados,2022,progresivo,user_reversion_noise
+028,Granados,2023,progresivo,user_reversion_noise
+028,Granados,2024,progresivo,user_reversion_noise
+028,Granados,2025,progresivo,user_reversion_noise
+029,Guaymas,2015,tarifa_millar,audit_individual
+029,Guaymas,2016,tarifa_millar,audit_individual
+029,Guaymas,2019,tarifa_millar,audit_individual
+029,Guaymas,2024,tarifa_millar,audit_individual
+029,Guaymas,2025,tarifa_millar,audit_individual
+031,Huachinera,2010,progresivo,audit_range
+031,Huachinera,2011,progresivo,audit_range
+031,Huachinera,2012,progresivo,audit_range
+031,Huachinera,2013,progresivo,audit_range
+031,Huachinera,2014,progresivo,audit_range
+031,Huachinera,2015,progresivo,audit_range
+031,Huachinera,2016,progresivo,audit_range
+031,Huachinera,2017,progresivo,audit_range
+031,Huachinera,2018,progresivo,audit_individual
+031,Huachinera,2019,progresivo,audit_range
+031,Huachinera,2020,progresivo,audit_range
+031,Huachinera,2021,progresivo,audit_range
+031,Huachinera,2022,progresivo,audit_range
+031,Huachinera,2023,progresivo,audit_range
+031,Huachinera,2024,progresivo,audit_individual
+031,Huachinera,2025,progresivo,audit_individual
+032,Huasabas,2014,progresivo,audit_individual
+032,Huasabas,2016,progresivo,user_reversion_noise
+032,Huasabas,2017,progresivo,user_reversion_noise
+032,Huasabas,2018,progresivo,user_reversion_noise
+032,Huasabas,2019,progresivo,user_reversion_noise
+032,Huasabas,2021,progresivo,audit_individual
+032,Huasabas,2022,progresivo,user_reversion_noise
+032,Huasabas,2023,progresivo,user_reversion_noise
+033,Huatabampo,2010,mixto,user_manual
+033,Huatabampo,2011,mixto,user_manual
+033,Huatabampo,2012,mixto,user_manual
+033,Huatabampo,2013,mixto,user_manual
+033,Huatabampo,2014,mixto,user_manual
+033,Huatabampo,2015,mixto,user_manual
+033,Huatabampo,2018,progresivo,audit_individual
+033,Huatabampo,2019,progresivo,audit_individual
+034,Huepac,2010,progresivo,audit_range
+034,Huepac,2011,progresivo,audit_range
+034,Huepac,2012,progresivo,audit_range
+034,Huepac,2013,progresivo,audit_range
+034,Huepac,2014,progresivo,audit_range
+034,Huepac,2015,progresivo,audit_range
+034,Huepac,2016,progresivo,audit_range
+034,Huepac,2017,progresivo,audit_range
+034,Huepac,2018,progresivo,audit_range
+034,Huepac,2019,progresivo,audit_individual
+034,Huepac,2022,progresivo,audit_individual
+034,Huepac,2025,progresivo,audit_individual
+035,Imuris,2010,progresivo,audit_range
+035,Imuris,2011,progresivo,audit_range
+035,Imuris,2012,progresivo,audit_range
+035,Imuris,2013,progresivo,audit_range
+035,Imuris,2014,progresivo,audit_range
+035,Imuris,2015,progresivo,audit_range
+035,Imuris,2016,progresivo,audit_range
+035,Imuris,2017,progresivo,audit_range
+035,Imuris,2022,progresivo,audit_individual
+037,Mazatan,2013,progresivo,audit_individual
+037,Mazatan,2019,progresivo,audit_individual
+037,Mazatan,2023,progresivo,audit_individual
+038,Moctezuma,2020,progresivo,audit_individual
+038,Moctezuma,2023,progresivo,audit_individual
+039,Naco,2010,mixto,audit_range
+039,Naco,2011,mixto,audit_range
+039,Naco,2012,mixto,audit_range
+039,Naco,2013,mixto,audit_range
+039,Naco,2014,mixto,audit_range
+039,Naco,2015,mixto,audit_range
+039,Naco,2017,progresivo,audit_individual
+039,Naco,2018,progresivo,audit_individual
+039,Naco,2022,progresivo,audit_individual
+040,Nacori Chico,2017,progresivo,audit_individual
+041,Nacozari de Garcia,2021,progresivo,audit_individual
+041,Nacozari de Garcia,2025,progresivo,audit_individual
+042,Navojoa,2016,progresivo,audit_individual
+042,Navojoa,2017,progresivo,audit_range
+042,Navojoa,2018,progresivo,audit_range
+042,Navojoa,2019,progresivo,audit_range
+042,Navojoa,2020,progresivo,audit_range
+042,Navojoa,2021,progresivo,audit_range
+042,Navojoa,2022,progresivo,audit_range
+042,Navojoa,2023,progresivo,audit_range
+044,onavas,2017,progresivo,audit_individual
+044,onavas,2020,progresivo,audit_individual
+044,onavas,2021,progresivo,audit_range
+044,onavas,2022,progresivo,audit_range
+044,onavas,2023,progresivo,audit_range
+044,onavas,2024,progresivo,audit_range
+045,Opodepe,2023,progresivo,audit_individual
+046,Oquitoa,2013,progresivo,audit_individual
+046,Oquitoa,2014,progresivo,user_reversion_noise
+046,Oquitoa,2015,progresivo,user_reversion_noise
+046,Oquitoa,2016,progresivo,user_reversion_noise
+046,Oquitoa,2017,progresivo,user_reversion_noise
+046,Oquitoa,2018,progresivo,user_reversion_noise
+046,Oquitoa,2020,progresivo,audit_individual
+046,Oquitoa,2021,progresivo,audit_individual
+046,Oquitoa,2024,progresivo,audit_individual
+047,Pitiquito,2021,progresivo,audit_individual
+048,Puerto Peñasco,2016,tarifa_millar,audit_individual
+049,Quiriego,2010,progresivo,audit_range
+049,Quiriego,2011,progresivo,audit_range
+049,Quiriego,2012,progresivo,audit_range
+049,Quiriego,2013,progresivo,audit_range
+049,Quiriego,2014,progresivo,audit_range
+049,Quiriego,2015,progresivo,audit_range
+049,Quiriego,2016,progresivo,audit_range
+049,Quiriego,2017,progresivo,audit_range
+049,Quiriego,2018,progresivo,audit_range
+049,Quiriego,2019,progresivo,audit_range
+049,Quiriego,2020,progresivo,audit_range
+049,Quiriego,2021,progresivo,audit_individual
+049,Quiriego,2022,progresivo,user_reversion_noise
+049,Quiriego,2023,progresivo,user_reversion_noise
+049,Quiriego,2024,progresivo,user_reversion_noise
+049,Quiriego,2025,progresivo,user_reversion_noise
+050,Rayon,2017,progresivo,audit_individual
+050,Rayon,2020,progresivo,audit_individual
+050,Rayon,2021,progresivo,user_reversion_noise
+050,Rayon,2022,progresivo,user_reversion_noise
+050,Rayon,2023,progresivo,user_reversion_noise
+050,Rayon,2024,progresivo,user_reversion_noise
+050,Rayon,2025,progresivo,user_reversion_noise
+051,Rosario,2022,progresivo,audit_individual
+051,Rosario,2023,progresivo,audit_individual
+052,Sahuaripa,2010,progresivo,audit_range
+052,Sahuaripa,2011,progresivo,audit_range
+052,Sahuaripa,2012,progresivo,audit_range
+052,Sahuaripa,2013,progresivo,audit_range
+052,Sahuaripa,2014,progresivo,audit_range
+052,Sahuaripa,2015,progresivo,audit_range
+052,Sahuaripa,2016,progresivo,audit_range
+052,Sahuaripa,2017,progresivo,audit_range
+052,Sahuaripa,2018,progresivo,audit_range
+052,Sahuaripa,2019,progresivo,audit_range
+052,Sahuaripa,2020,progresivo,audit_range
+052,Sahuaripa,2021,progresivo,audit_individual
+052,Sahuaripa,2022,progresivo,user_reversion_noise
+052,Sahuaripa,2023,progresivo,user_reversion_noise
+052,Sahuaripa,2024,progresivo,user_reversion_noise
+052,Sahuaripa,2025,progresivo,user_reversion_noise
+053,San Felipe de Jesus,2013,progresivo,audit_individual
+053,San Felipe de Jesus,2014,progresivo,user_reversion_noise
+053,San Felipe de Jesus,2015,progresivo,user_reversion_noise
+053,San Felipe de Jesus,2016,progresivo,user_reversion_noise
+053,San Felipe de Jesus,2017,progresivo,user_reversion_noise
+053,San Felipe de Jesus,2023,progresivo,audit_individual
+053,San Felipe de Jesus,2024,progresivo,audit_individual
+054,San Javier,2020,progresivo,audit_individual
+055,San Luis Rio Colorado,2010,progresivo,audit_individual
+055,San Luis Rio Colorado,2012,progresivo,audit_individual
+055,San Luis Rio Colorado,2013,progresivo,audit_individual
+055,San Luis Rio Colorado,2014,progresivo,audit_individual
+055,San Luis Rio Colorado,2015,progresivo,user_reversion_noise
+055,San Luis Rio Colorado,2016,progresivo,user_reversion_noise
+055,San Luis Rio Colorado,2018,progresivo,audit_individual
+055,San Luis Rio Colorado,2019,progresivo,user_reversion_noise
+055,San Luis Rio Colorado,2020,progresivo,user_reversion_noise
+055,San Luis Rio Colorado,2021,progresivo,audit_individual
+055,San Luis Rio Colorado,2022,progresivo,audit_individual
+055,San Luis Rio Colorado,2023,progresivo,user_reversion_noise
+055,San Luis Rio Colorado,2024,progresivo,user_reversion_noise
+055,San Luis Rio Colorado,2025,progresivo,user_reversion_noise
+056,San Miguel de Horcasitas,2010,progresivo,audit_range
+056,San Miguel de Horcasitas,2011,progresivo,audit_range
+056,San Miguel de Horcasitas,2012,progresivo,audit_range
+056,San Miguel de Horcasitas,2013,progresivo,audit_range
+056,San Miguel de Horcasitas,2014,progresivo,audit_range
+056,San Miguel de Horcasitas,2015,progresivo,audit_range
+056,San Miguel de Horcasitas,2016,progresivo,audit_range
+056,San Miguel de Horcasitas,2017,progresivo,audit_range
+056,San Miguel de Horcasitas,2023,progresivo,audit_individual
+056,San Miguel de Horcasitas,2024,progresivo,user_reversion_noise
+056,San Miguel de Horcasitas,2025,progresivo,user_reversion_noise
+057,San Pedro de la Cueva,2017,progresivo,audit_individual
+057,San Pedro de la Cueva,2018,progresivo,audit_individual
+057,San Pedro de la Cueva,2020,progresivo,audit_individual
+057,San Pedro de la Cueva,2021,progresivo,user_reversion_noise
+057,San Pedro de la Cueva,2022,progresivo,user_reversion_noise
+057,San Pedro de la Cueva,2023,progresivo,user_reversion_noise
+058,Santa Ana,2020,progresivo,audit_individual
+060,Saric,2017,progresivo,audit_individual
+060,Saric,2021,progresivo,audit_individual
+060,Saric,2022,progresivo,audit_individual
+061,Soyopa,2013,progresivo,audit_individual
+061,Soyopa,2019,progresivo,audit_individual
+061,Soyopa,2020,progresivo,audit_individual
+062,Suaqui Grande,2010,progresivo,user_manual
+062,Suaqui Grande,2011,progresivo,user_manual
+062,Suaqui Grande,2012,progresivo,user_manual
+062,Suaqui Grande,2013,progresivo,user_manual
+062,Suaqui Grande,2014,progresivo,user_manual
+062,Suaqui Grande,2015,progresivo,user_manual
+062,Suaqui Grande,2016,progresivo,user_manual
+062,Suaqui Grande,2017,progresivo,user_manual
+062,Suaqui Grande,2018,progresivo,user_manual
+062,Suaqui Grande,2019,progresivo,user_manual
+062,Suaqui Grande,2020,progresivo,user_manual
+063,Tepache,2010,mixto,user_manual
+063,Tepache,2011,mixto,user_manual
+063,Tepache,2012,mixto,user_manual
+063,Tepache,2013,mixto,user_manual
+063,Tepache,2014,mixto,user_manual
+063,Tepache,2015,mixto,user_manual
+064,Trincheras,2017,progresivo,audit_individual
+064,Trincheras,2018,progresivo,audit_individual
+064,Trincheras,2020,progresivo,audit_individual
+065,Tubutama,2019,progresivo,audit_individual
+066,Ures,2010,progresivo,audit_individual
+066,Ures,2013,progresivo,audit_individual
+066,Ures,2014,progresivo,user_reversion_noise
+066,Ures,2015,progresivo,user_reversion_noise
+066,Ures,2016,progresivo,user_reversion_noise
+066,Ures,2017,progresivo,user_reversion_noise
+066,Ures,2018,progresivo,user_reversion_noise
+066,Ures,2019,progresivo,user_reversion_noise
+066,Ures,2023,progresivo,audit_individual
+066,Ures,2024,progresivo,audit_range
+066,Ures,2025,progresivo,audit_range
+067,Villa Hidalgo,2023,progresivo,audit_individual
+068,Villa Pesqueira,2020,progresivo,audit_individual
+068,Villa Pesqueira,2021,progresivo,user_reversion_noise
+068,Villa Pesqueira,2022,progresivo,user_reversion_noise
+068,Villa Pesqueira,2023,progresivo,user_reversion_noise
+069,Yecora,2010,progresivo,audit_range
+069,Yecora,2011,progresivo,audit_range
+069,Yecora,2012,progresivo,audit_range
+069,Yecora,2013,progresivo,audit_range
+069,Yecora,2014,progresivo,audit_range
+069,Yecora,2015,progresivo,audit_range
+069,Yecora,2016,progresivo,audit_range
+069,Yecora,2017,progresivo,audit_range
+069,Yecora,2018,progresivo,audit_individual
+069,Yecora,2019,progresivo,user_reversion_noise
+069,Yecora,2020,progresivo,user_reversion_noise
+069,Yecora,2021,progresivo,user_reversion_noise
+070,General Plutarco Elias Calles,2017,progresivo,audit_individual
+070,General Plutarco Elias Calles,2018,progresivo,audit_individual
+070,General Plutarco Elias Calles,2024,progresivo,audit_individual
+070,General Plutarco Elias Calles,2025,progresivo,audit_individual
+071,Benito Juarez,2019,progresivo,audit_individual
+071,Benito Juarez,2021,progresivo,audit_individual
+072,San Ignacio Rio Muerto,2010,progresivo,audit_range
+072,San Ignacio Rio Muerto,2011,progresivo,audit_range
+072,San Ignacio Rio Muerto,2012,progresivo,audit_range
+072,San Ignacio Rio Muerto,2013,progresivo,audit_range
+072,San Ignacio Rio Muerto,2014,progresivo,audit_range
+072,San Ignacio Rio Muerto,2015,progresivo,audit_range
+072,San Ignacio Rio Muerto,2016,progresivo,audit_range
+072,San Ignacio Rio Muerto,2017,progresivo,audit_individual
+072,San Ignacio Rio Muerto,2019,progresivo,audit_individual
+072,San Ignacio Rio Muerto,2021,progresivo,audit_individual
+072,San Ignacio Rio Muerto,2025,progresivo,audit_individual
