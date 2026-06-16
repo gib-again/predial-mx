@@ -653,7 +653,7 @@ def _write_report(
     lines.append("python -m scripts.run_pipeline {estado} --steps extract --slug {slug} --year {YYYY}")
     lines.append("")
     lines.append("# Auditar discontinuidad: comparar JSON antes y después")
-    lines.append("python -m scripts.regression_v1_v2 --cvegeo {cvegeo} --years {YYYY,YYYY}")
+    lines.append("python -m scripts.temps.regression_v1_v2 --cvegeo {cvegeo} --years {YYYY,YYYY}")
     lines.append("")
     lines.append("# Marcar una observación como 'excluir' en el audit CSV correspondiente")
     lines.append("# (data/{estado}/qa/audit_{PREFIJO}.csv) para que el panel la ignore.")

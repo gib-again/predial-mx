@@ -236,3 +236,64 @@ def find_predial_section(
         end_char=end_pos,
         confidence=0.5,
     )
+
+
+# ══════════════════════════════════════════════════════════════
+# Helper estandarizado para escribir focus_predial PDFs
+# ══════════════════════════════════════════════════════════════
+
+def save_focus_pdf(
+    pdf_src,
+    start_page_1indexed: int,
+    end_page_1indexed: int,
+    dst_pdf,
+) -> bool:
+    """Extrae páginas [start_page, end_page] (1-indexed, inclusivo) de
+    `pdf_src` y las guarda como un nuevo PDF en `dst_pdf`.
+
+    Convención del proyecto: cada `segment.py` debe producir TANTO el TXT
+    como el PDF correspondiente en `focus_predial/<año>/` para que el
+    revisor HITL pueda mostrar el documento de origen sin re-cortar. Este
+    helper centraliza la lógica de slicing para que todos los adapters lo
+    usen de forma consistente.
+
+    Args:
+        pdf_src: Ruta al PDF fuente (str o Path).
+        start_page_1indexed: Página inicial (1-indexed, inclusiva).
+        end_page_1indexed: Página final (1-indexed, inclusiva).
+        dst_pdf: Ruta destino del PDF de focus.
+
+    Returns:
+        True si se escribió el PDF, False si fallo (páginas fuera de rango,
+        PDF fuente faltante, etc.).
+    """
+    from pathlib import Path
+
+    import fitz  # PyMuPDF — ya es dependencia del proyecto
+
+    src = Path(pdf_src)
+    dst = Path(dst_pdf)
+    if not src.exists():
+        return False
+
+    try:
+        src_doc = fitz.open(src)
+    except Exception:
+        return False
+    try:
+        n = src_doc.page_count
+        # Convertir 1-indexed → 0-indexed y clamp al rango válido.
+        i0 = max(0, int(start_page_1indexed) - 1)
+        i1 = min(n - 1, int(end_page_1indexed) - 1)
+        if i0 > i1:
+            return False
+        dst.parent.mkdir(parents=True, exist_ok=True)
+        out = fitz.open()
+        try:
+            out.insert_pdf(src_doc, from_page=i0, to_page=i1)
+            out.save(str(dst))
+        finally:
+            out.close()
+        return True
+    finally:
+        src_doc.close()

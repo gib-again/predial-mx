@@ -14,7 +14,7 @@
   `edge`) — foco: cobertura temporal y reformas. Si un caso aparece en ambos,
   resuelve el del panel primero (decisión de imputación) y referencia su veredicto.
 - **Sintéticos `short_form`** (122 JSONs en Yucatán generados por
-  `scripts/synthesize_short_form_jsons.py` cuando el segmentador detectó leyes
+  `scripts/temps/synthesize_short_form_jsons.py` cuando el segmentador detectó leyes
   de ingreso en formato corto) **se excluyen automáticamente** de esta bitácora —
   son markers deterministas, no errores LLM. Identificables por
   `_meta.modelo == "synthesized_short_form"`.

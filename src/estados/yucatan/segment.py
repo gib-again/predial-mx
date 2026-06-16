@@ -62,7 +62,7 @@ from typing import Optional
 import fitz  # PyMuPDF
 
 from src.core.muni_matcher import MuniMatcher
-from src.core.segment_utils import PatternSpec, find_predial_section
+from src.core.segment_utils import PatternSpec, find_predial_section, save_focus_pdf
 from src.estados.yucatan.config import (
     CVE_ENT, KEEP_MONTHS, MERIDA_REPLICA_YEARS, MERIDA_URLS,
 )
@@ -492,6 +492,17 @@ def run_extract_sections(adapter) -> Path:
                     txt_path.parent.mkdir(parents=True, exist_ok=True)
                     txt_path.write_text(predial_text, encoding="utf-8")
 
+                    # Guardar PDF de focus (convención del proyecto: cada
+                    # segment.py produce TXT + PDF en focus_predial/).
+                    pdf_focus_path = txt_path.with_suffix(".pdf")
+                    if pred_page_start and pred_page_end:
+                        save_focus_pdf(
+                            pdf_path,
+                            pred_page_start,
+                            pred_page_end,
+                            pdf_focus_path,
+                        )
+
                     log_rows.append({
                         "municipio": muni, "ejercicio": fy,
                         "file": fname, "predial_chars": len(predial_text),
@@ -773,6 +784,13 @@ def _process_merida(pdf_raw_dir: Path, focus_dir: Path, prefijo: str) -> list[di
         txt_path = focus_dir / str(fy) / f"{prefijo}_PREDIAL_{fy}_merida.txt"
         txt_path.parent.mkdir(parents=True, exist_ok=True)
         txt_path.write_text(predial_text, encoding="utf-8")
+        # Mérida es una ley de hacienda chica; copiamos el PDF completo
+        # como focus (el revisor HITL puede paginar al área relevante).
+        import shutil as _shutil
+        try:
+            _shutil.copy2(pdf_path, txt_path.with_suffix(".pdf"))
+        except Exception:
+            pass
         processed_years.add(fy)
 
         log_rows.append({
@@ -788,10 +806,17 @@ def _process_merida(pdf_raw_dir: Path, focus_dir: Path, prefijo: str) -> list[di
     source_txt = focus_dir / str(source_fy) / f"{prefijo}_PREDIAL_{source_fy}_merida.txt"
     if source_txt.exists():
         source_text = source_txt.read_text(encoding="utf-8")
+        source_pdf = source_txt.with_suffix(".pdf")
         for fy in MERIDA_REPLICA_YEARS:
             txt_path = focus_dir / str(fy) / f"{prefijo}_PREDIAL_{fy}_merida.txt"
             txt_path.parent.mkdir(parents=True, exist_ok=True)
             txt_path.write_text(source_text, encoding="utf-8")
+            if source_pdf.exists():
+                import shutil as _shutil
+                try:
+                    _shutil.copy2(source_pdf, txt_path.with_suffix(".pdf"))
+                except Exception:
+                    pass
             log_rows.append({
                 "municipio": "Mérida", "ejercicio": str(fy),
                 "file": f"merida/merida_hacienda_{source_fy}.pdf",
