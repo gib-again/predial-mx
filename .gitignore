@@ -42,7 +42,23 @@ data/*/debug_html/
 # ── Caché de texto extraído de PDFs ──
 .text_cache/
 
-# ── Artefactos de regression / investigación (logs verbosos) ──
-output/regression_*
-output/reextract_v2*.log
-output/sample_v2_postchanges.log
+# ── Logs (todos) ──
+output/logs/
+output/*.log
+output/**/*.log
+
+# ── Legacy (archivado en git history) ──
+output/legacy/
+
+# ── v2/v3 extraction output (local, regenerable) ──
+predial-mx-v2/
+predial-mx-v3/
+
+# ── Diagnósticos temporales ──
+output/diag_*/
+
+# ── Overrides de focus_predial (PDFs manuales, pesados) ──
+data/*/focus_predial_overrides/
+
+# ── Reportes piloto (regenerable) ──
+reportes/
