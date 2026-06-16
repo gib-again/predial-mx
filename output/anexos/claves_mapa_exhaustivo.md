@@ -1,0 +1,8370 @@
+# Mapa exhaustivo de identificadores tarifarios
+
+Listado completo organizado por **tipo_esquema → estado → grupo**, con todas las claves observadas y su frecuencia. Usar para planear consolidación nomenclatural; pares semánticamente equivalentes deberían unificarse al mismo slug canónico.
+
+Generado a partir de 30035 filas y 4119 identificadores únicos.
+
+## Índice
+
+- **mixto**
+  - [Coahuila](#mixto-coahuila) — 20 claves en 1 grupo(s)
+  - [Guanajuato](#mixto-guanajuato) — 32 claves en 1 grupo(s)
+  - [Jalisco](#mixto-jalisco) — 6 claves en 1 grupo(s)
+  - [Sonora](#mixto-sonora) — 6 claves en 1 grupo(s)
+  - [Tamaulipas](#mixto-tamaulipas) — 10 claves en 1 grupo(s)
+  - [Yucatán](#mixto-yucatan) — 18 claves en 1 grupo(s)
+- **tarifa_millar**
+  - [Coahuila](#tarifa-millar-coahuila) — 203 claves en 7 grupo(s)
+  - [Guanajuato](#tarifa-millar-guanajuato) — 1437 claves en 9 grupo(s)
+  - [Jalisco](#tarifa-millar-jalisco) — 1195 claves en 4 grupo(s)
+  - [Oaxaca](#tarifa-millar-oaxaca) — 86 claves en 4 grupo(s)
+  - [Querétaro](#tarifa-millar-queretaro) — 65 claves en 4 grupo(s)
+  - [San Luis Potosí](#tarifa-millar-sanluispotosi) — 504 claves en 4 grupo(s)
+  - [Sonora](#tarifa-millar-sonora) — 277 claves en 5 grupo(s)
+  - [Tamaulipas](#tarifa-millar-tamaulipas) — 204 claves en 7 grupo(s)
+  - [Yucatán](#tarifa-millar-yucatan) — 56 claves en 5 grupo(s)
+
+## mixto
+
+### Coahuila <a id='mixto-coahuila'></a> — 20 claves
+
+#### grupo: `(sin grupo)` — 20 clave(s)
+
+- `habitacional_edificado` — apar=38, munis=1, años=10, vals=94.8|142.2|213.3|1.58|94.8
+- `no_habitacional_edificado` — apar=27, munis=1, años=7, vals=126.0|189.0|283.5|2.1|126.0
+- `general` — apar=24, munis=1, años=3, vals=81.31|0.5|103.75|1.0|148.61
+- `no_edificado_sin_barda` — apar=18, munis=1, años=5, vals=189.0|283.5|425.25|3.15|189.0
+- `no_edificado_con_barda` — apar=14, munis=1, años=4, vals=120.0|180.0|270.0|2.1|120.0
+- `edificado_con_barda` — apar=12, munis=1, años=3, vals=134.64|189.0|283.5|0.0021|134.64
+- `habitacional` — apar=11, munis=1, años=3, vals=105.0|142.2|213.3|0.00158|105.0
+- `no_habitacional_edificado_con_barda` — apar=8, munis=1, años=2, vals=120.0|180.0|270.0|2.1|134.64
+- `no_habitacional_edificado_sin_barda` — apar=8, munis=1, años=2, vals=189.0|283.5|425.25|3.15|120.0
+- `habitacional_no_edificado_con_barda` — apar=8, munis=1, años=2, vals=120.0|180.0|270.0|2.1|120.0
+- `no_edificado` — apar=8, munis=1, años=2, vals=189.0|283.5|425.25|3.15|189.0
+- `no_habitacional` — apar=8, munis=1, años=2, vals=134.64|189.0|283.5|0.0021|134.64
+- `sin_barda` — apar=8, munis=1, años=2, vals=120.0|180.0|270.0|0.0021|120.0
+- `con_barda` — apar=8, munis=1, años=2, vals=189.0|283.5|425.25|0.00315|189.0
+- `habitacional_edificado_con_barda` — apar=4, munis=1, años=1, vals=94.8|142.2|213.3|1.58
+- `habitacional_edificado_sin_barda` — apar=4, munis=1, años=1, vals=126.0|189.0|283.5|2.1
+- `habitacional_no_edificado_sin_barda` — apar=4, munis=1, años=1, vals=189.0|283.5|425.25|3.15
+- `no_habitacional_no_edificado_sin_barda` — apar=4, munis=1, años=1, vals=189.0|283.5|425.25|3.15
+- `edificado_sin_barda` — apar=4, munis=1, años=1, vals=120.0|180.0|270.0|0.0021
+- `no_edificado_habitacional` — apar=4, munis=1, años=1, vals=189.0|283.5|425.25|0.00315
+
+### Guanajuato <a id='mixto-guanajuato'></a> — 32 claves
+
+#### grupo: `(sin grupo)` — 32 clave(s)
+
+- `general` — apar=188, munis=9, años=10, vals=0.438|0.482|0.53|0.583|0.641
+- `urbanos_y_suburbanos_con_edificaciones` — apar=54, munis=2, años=2, vals=0.00234|0.00439|0.00439|0.00439|0.00439
+- `urbano_suburbano_con_edificaciones` — apar=49, munis=3, años=3, vals=0.0|0.0024|335.95|0.00255|692.9
+- `habitacional_general` — apar=23, munis=1, años=1, vals=0.00234|3777.64|0.00267|7926.59|0.00292
+- `urbanos_y_suburbanos_sin_edificaciones` — apar=13, munis=1, años=2, vals=0.00439|0.0046|0.00481|0.00501|0.0055
+- `habitacional_urbano_suburbano_con_edificaciones` — apar=13, munis=1, años=1, vals=0.00019|0.0024|0.00265|0.0029|0.003
+- `habitacional_con_edificaciones` — apar=13, munis=1, años=1, vals=0.00019|0.0024|0.00265|0.0029|0.003
+- `urbano_suburbano_rustico_con_edificacion` — apar=12, munis=1, años=1, vals=0.0|0.00234|7264.7|0.00257|15243.45
+- `rusticos` — apar=11, munis=2, años=2, vals=0.000416|0.0018|0.0018|0.0018|0.0018
+- `urbanos_y_suburbanos_sin_edificacion` — apar=10, munis=1, años=1, vals=0.0045|0.0045|0.0045|0.0045|0.0045
+- `urbanos_suburbanos_y_rusticos_2021_y_anteriores` — apar=10, munis=1, años=1, vals=0.0024|0.0045|0.008|0.013|0.015
+- `urbano_suburbano_con_edificacion` — apar=9, munis=1, años=1, vals=0.0024|0.0026|0.0028|0.003|0.0032
+- `urbano_con_edificacion` — apar=7, munis=1, años=1, vals=0.00234|0.00254|0.00274|0.00294|0.00314
+- `urbano_y_suburbano_sin_edificaciones_hasta_1000_m2` — apar=6, munis=1, años=1, vals=0.0023|0.0033|0.00439|0.00439|0.0043
+- `urbano_y_suburbano_sin_edificaciones_hasta_1000_m2_tasa_excedente` — apar=6, munis=1, años=1, vals=0.023|0.0548|0.0548|0.0548|0.0548
+- `urbano_suburbano_rustico_sin_edificacion` — apar=6, munis=1, años=1, vals=0.00439|0.00439|0.00439|0.00439|0.00439
+- `urbano_y_suburbano_sin_edificaciones_de_1000_a_3000_m2` — apar=5, munis=1, años=1, vals=0.00439|0.0046|0.0046|0.0045|0.0046
+- `urbano_y_suburbano_sin_edificaciones_de_1000_a_3000_m2_tasa_excedente` — apar=5, munis=1, años=1, vals=0.048|0.0481|0.0481|0.0481|0.0481
+- `urbano_suburbano_rustico_sin_edificacion_excedente` — apar=5, munis=1, años=1, vals=0.00026|0.00046|0.00046|0.0046|0.0046
+- `urbano_y_suburbano_sin_edificaciones_de_3000_a_5000_m2` — apar=4, munis=1, años=1, vals=0.00481|0.00481|0.00481|0.00481
+- `urbano_suburbano_rustico_sin_edificacion_excedente2` — apar=4, munis=1, años=1, vals=0.00022|0.00048|0.00481|0.00481
+- `urbano_y_suburbano_sin_edificaciones_de_5000_a_7000_m2` — apar=3, munis=1, años=1, vals=0.00501|0.00501|0.00501
+- `urbano_suburbano_rustico_sin_edificacion_excedente3` — apar=3, munis=1, años=1, vals=0.0002|0.00501|0.00501
+- `urbano_y_suburbano_sin_edificaciones_de_7000_a_9000_m2` — apar=2, munis=1, años=1, vals=0.0065|0.00565
+- `urbano_suburbano_rustico_sin_edificacion_excedente4` — apar=2, munis=1, años=1, vals=0.0013|0.0065
+- `urbano_y_suburbano_con_edificaciones` — apar=1, munis=1, años=1, vals=0.00234
+- `urbano_y_suburbano_sin_edificaciones_de_9000_a_11000_m2` — apar=1, munis=1, años=1, vals=0.008
+- `urbano_y_suburbano_sin_edificaciones_en_adelante` — apar=1, munis=1, años=1, vals=0.01
+- `urbano_suburbano_rustico_sin_edificacion_excedente5` — apar=1, munis=1, años=1, vals=0.008
+- `urbano_suburbano_rustico_sin_edificacion_excedente6` — apar=1, munis=1, años=1, vals=0.0125
+- `urbano_suburbano_sin_edificaciones` — apar=1, munis=1, años=1, vals=0.0045
+- `rustico` — apar=1, munis=1, años=1, vals=0.0018
+
+### Jalisco <a id='mixto-jalisco'></a> — 6 claves
+
+#### grupo: `(sin grupo)` — 6 clave(s)
+
+- `cuota_fija` — apar=50, munis=1, años=5, vals=0.0|146.2|247.05|423.64|684.62
+- `tasa_marginal` — apar=30, munis=1, años=3, vals=0.00025|0.00025|0.000275|0.0003|0.000325
+- `predios_urbanos_edificados_cuota_fija` — apar=10, munis=1, años=1, vals=0.0|146.2|247.05|423.64|684.62
+- `predios_urbanos_edificados_tasa_marginal` — apar=10, munis=1, años=1, vals=0.00025|0.00025|0.000275|0.0003|0.000325
+- `tasa_marginal_sobre_excedente` — apar=10, munis=1, años=1, vals=0.00025|0.00025|0.000275|0.0003|0.000325
+- `tasa_marginal_excedente` — apar=10, munis=1, años=1, vals=0.00025|0.00025|0.000275|0.0003|0.000325
+
+### Sonora <a id='mixto-sonora'></a> — 6 claves
+
+#### grupo: `(sin grupo)` — 6 clave(s)
+
+- `general` — apar=1238, munis=45, años=10, vals=41.95|0.0|41.95|0.4742|58.19
+- `predios_edificados` — apar=42, munis=3, años=1, vals=68.19|0.0|68.19|0.8048|95.84
+- `edificados` — apar=25, munis=2, años=2, vals=59.19|59.19|139.97|306.32|486.04
+- `no_edificados` — apar=9, munis=2, años=2, vals=59.19|2.5257|3.1162|3.7811|7.0527
+- `edificados_cuota_fija` — apar=6, munis=1, años=1, vals=43.2|43.2|69.24|144.54|295.39
+- `edificados_tasa_marginal` — apar=6, munis=1, años=1, vals=0.0|0.7121|1.0591|1.3677|1.6766
+
+### Tamaulipas <a id='mixto-tamaulipas'></a> — 10 claves
+
+#### grupo: `(sin grupo)` — 10 clave(s)
+
+- `general` — apar=210, munis=3, años=10, vals=0.0|0.001|45.0|0.0011|82.5
+- `urbano_y_suburbano` — apar=20, munis=1, años=1, vals=0.0|0.001|45.0|0.0011|82.5
+- `urbano_suburbano_general` — apar=17, munis=1, años=1, vals=1.5|159.0|1.6|183.0|1.7
+- `urbano_suburbano_construido_y_rustico_con_sin_construccion` — apar=10, munis=1, años=1, vals=0.5406|0.58|0.65|0.73|0.81
+- `urbano_suburbano_edificado` — apar=9, munis=1, años=1, vals=1.5|1.6|1.7|1.8|2.0
+- `urbano_suburbano_baldio` — apar=9, munis=1, años=1, vals=3.0|3.2|3.4|3.6|4.0
+- `urbano_suburbano_con_edificacion_inferior_20_por_ciento` — apar=9, munis=1, años=1, vals=2.25|2.4|2.55|2.7|3.0
+- `predios_sin_construccion_en_fraccionamiento_autorizado_primero_2_anos` — apar=9, munis=1, años=1, vals=1.5|1.5|1.5|1.5|1.5
+- `adquirientes_de_lotes_sin_construccion_en_fraccionamiento_2_anos` — apar=9, munis=1, años=1, vals=3.0|3.2|3.4|3.6|4.0
+- `urbano_suburbano` — apar=9, munis=1, años=1, vals=0.0|219.0|243.0|413.0|593.0
+
+### Yucatán <a id='mixto-yucatan'></a> — 18 claves
+
+#### grupo: `(sin grupo)` — 18 clave(s)
+
+- `general` — apar=2927, munis=75, años=16, vals=4.0|0.00075|7.0|0.002|10.0
+- `zona_turistica_uxmal_y_recursos_naturales_comercial` — apar=10, munis=1, años=1, vals=1000.0|2.5e-05|2000.0|2.5e-05|3000.0
+- `rustico` — apar=9, munis=2, años=2, vals=150.0|5.0|100.0|300.0|320.0
+- `urbano_con_o_sin_construccion` — apar=8, munis=1, años=1, vals=7.0|14.0|15.0|26.0|33.0
+- `urbano` — apar=7, munis=1, años=1, vals=80.0|100.0|130.0|150.0|200.0
+- `zona_6` — apar=5, munis=1, años=1, vals=100.0|115.0|135.0|140.0|145.0
+- `zona_7` — apar=5, munis=1, años=1, vals=70.0|85.0|90.0|100.0|110.0
+- `zona_8` — apar=5, munis=1, años=1, vals=60.0|75.0|80.0|90.0|100.0
+- `zona_9` — apar=5, munis=1, años=1, vals=50.0|55.0|60.0|80.0|90.0
+- `zona_rusticos_sobre_carretera_merida_uman` — apar=5, munis=1, años=1, vals=120.0|138.0|162.0|168.0|174.0
+- `zona_industrial_tablajes_catastrales` — apar=5, munis=1, años=1, vals=84.0|102.0|108.0|120.0|132.0
+- `rústicos_fuera_de_zona_industrial` — apar=5, munis=1, años=1, vals=120.0|90.0|140.0|150.0|160.0 ⚠ slugify_sug=`rusticos_fuera_de_zona_industrial`
+- `zona_de_comisarias` — apar=5, munis=1, años=1, vals=60.0|66.0|120.0|130.0|140.0
+- `rustico_zona_6` — apar=5, munis=1, años=1, vals=0.002|0.002|0.001|0.001|0.005
+- `rustico_carretera` — apar=5, munis=1, años=1, vals=120.0|138.0|162.0|168.0|174.0
+- `zona_turistica_uxmal` — apar=5, munis=1, años=1, vals=1000.0|2000.0|3000.0|4000.0|5000.0
+- `cabecera_municipal_o_comisaria_san_simon` — apar=5, munis=1, años=1, vals=90.0|95.0|100.0|125.0|200.0
+- `zona_costera` — apar=1, munis=1, años=1, vals=3e-05
+
+## tarifa_millar
+
+### Coahuila <a id='tarifa-millar-coahuila'></a> — 203 claves
+
+#### grupo: `general` — 32 clave(s)
+
+- `rustico` — apar=4, munis=1, años=4, vals=0.003|0.003|0.003|0.003
+  - desc: Predios rústicos
+- `lotes_baldios_desmontados` — apar=3, munis=2, años=3, vals=0.00165|0.005|0.005
+  - desc: Sobre los predios urbanos, lotes baldíos, desmontados
+- `lotes_baldios_con_maleza` — apar=3, munis=2, años=3, vals=0.0033|0.007|0.007
+  - desc: Sobre los predios urbanos, lotes baldíos, con maleza
+- `urbano_industrial` — apar=3, munis=1, años=3, vals=0.005|0.005|0.005
+  - desc: Predios urbanos industriales con o sin edificación
+- `urbano_comercial_con_edificacion` — apar=3, munis=1, años=3, vals=0.005|0.005|0.005
+  - desc: Predios urbanos comerciales con edificación
+- `predios_urbanos` — apar=2, munis=2, años=2, vals=0.00165|0.003
+  - desc: Sobre los predios urbanos
+- `industrial_urbano` — apar=2, munis=1, años=2, vals=0.005|0.005
+  - desc: Predios urbanos industriales con o sin edificación
+- `comercial_urbano_con_edificacion` — apar=2, munis=1, años=2, vals=0.005|0.005
+  - desc: Predios urbanos comerciales con edificación
+- `comercial_urbano_sin_edificacion` — apar=2, munis=1, años=2, vals=0.00665|0.00665
+  - desc: Predios urbanos comerciales sin edificación
+- `residencial_interes_social_popular_con_edificacion` — apar=2, munis=1, años=2, vals=0.005|0.005
+  - desc: Predios urbanos residenciales, de interés social y populares con edificación
+- `residencial_interes_social_popular_sin_edificacion` — apar=2, munis=1, años=2, vals=0.00665|0.00665
+  - desc: Predios urbanos residenciales, de interés social y populares sin edificación
+- `predios_urbanos_industriales` — apar=2, munis=1, años=2, vals=0.005|0.005
+  - desc: Predios urbanos industriales con o sin edificación
+- `predios_urbanos_comerciales_con_edificacion` — apar=2, munis=1, años=2, vals=0.005|0.005
+  - desc: Predios urbanos comerciales con edificación
+- `predios_urbanos_comerciales_sin_edificacion` — apar=2, munis=1, años=2, vals=0.00665|0.00665
+  - desc: Predios urbanos comerciales sin edificación; 1.33 veces lo fijado para con edificación
+- `predios_rusticos` — apar=2, munis=2, años=2, vals=0.003|0.003
+  - desc: Predios rústicos
+- `urbano_residencial_interes_social_popular_con_edificacion` — apar=2, munis=1, años=2, vals=0.005|0.005
+  - desc: Predios urbanos residenciales, de interés social y populares con edificación
+- `rustico_industrial_eolica_ejecucion` — apar=2, munis=1, años=2, vals=0.005|0.005
+  - desc: Predios rústicos industriales con explotación de energía renovable (eólica) en ejecución
+- `rustico_industrial_eolica_desarrollo` — apar=2, munis=1, años=2, vals=0.005|0.005
+  - desc: Predios rústicos industriales con explotación de energía renovable (eólica) en desarrollo
+- `rustico_industrial_eolica_proyecto` — apar=2, munis=1, años=2, vals=0.005|0.005
+  - desc: Predios rústicos industriales con explotación de energía renovable (eólica) en proyecto
+- `construcciones_permanentes` — apar=1, munis=1, años=1, vals=0.0015
+  - desc: Sobre construcciones permanentes ubicadas en predios urbanos y rústicos
+- `concesiones_uso_goce_predios_rusticos` — apar=1, munis=1, años=1, vals=0.0015
+  - desc: Sobre concesiones, uso o goce de predios rústicos de la Federación, del Estado o del Municipio, ejidales, comunales, federales, estatales o 
+- `predios_urbanos_residenciales_interes_social_populares_con_edificacion` — apar=1, munis=1, años=1, vals=0.005
+  - desc: Predios urbanos residenciales, de interés social y populares con edificación
+- `predios_urbanos_residenciales_interes_social_populares_sin_edificacion` — apar=1, munis=1, años=1, vals=0.00665
+  - desc: Predios urbanos residenciales, de interés social y populares sin edificación; 1.33 veces lo fijado para con edificación
+- `predios_parcelarios` — apar=1, munis=1, años=1, vals=0.001
+  - desc: Sobre los predios parcelarios
+- `urbano_habitacional_o_solares_en_congregaciones_ejidos` — apar=1, munis=1, años=1, vals=0.0
+  - desc: Predios urbano habitacional o solares, enclavados en congregaciones, ejidos
+- `predios_urbanos_no_edificados_sin_barda` — apar=1, munis=1, años=1, vals=0.005
+  - desc: Predios urbanos no edificados sin barda
+- `uso_industrial` — apar=1, munis=1, años=1, vals=0.007
+  - desc: Sobre los terrenos y construcciones de uso industrial
+- `predios_urbanos_residenciales_con_edificacion` — apar=1, munis=1, años=1, vals=0.005
+  - desc: Predios urbanos residenciales, de interés social y populares con edificación
+- `predios_urbanos_residenciales_sin_edificacion` — apar=1, munis=1, años=1, vals=0.00665
+  - desc: Predios urbanos residenciales, de interés social y populares sin edificación
+- `instituciones_educativas_no_publicas` — apar=1, munis=1, años=1, vals=0.001
+  - desc: Predios de instituciones educativas no públicas
+- `urbano_residencial_con_edificacion` — apar=1, munis=1, años=1, vals=0.005
+  - desc: Predios urbanos residenciales, de interés social y populares con edificación
+- `urbano_habitacional_solares_en_congregaciones_ejidos` — apar=1, munis=1, años=1, vals=0.0
+  - desc: Predios urbano habitacional o solares, enclavados en congregaciones, ejidos
+
+#### grupo: `industrial` — 2 clave(s)
+
+- `industrial_con_edificacion` — apar=1, munis=1, años=1, vals=1.6
+  - desc: Predios industriales con edificación
+- `industrial_sin_edificacion` — apar=1, munis=1, años=1, vals=1.9
+  - desc: Predios industriales sin edificaciones
+
+#### grupo: `otro` — 26 clave(s)
+
+- `lotes_baldios_con_maleza` — apar=19, munis=4, años=13, vals=0.007|0.007|7.0|0.007|0.007
+  - desc: Sobre lotes baldíos, con maleza
+- `uso_industrial` — apar=13, munis=1, años=13, vals=7.0|7.0|0.007|0.007|0.007
+  - desc: Sobre los terrenos y construcciones de uso industrial
+- `predios_parcelarios` — apar=12, munis=1, años=12, vals=0.001|0.001|0.001|0.001|0.001
+  - desc: Predios parcelarios
+- `lotes_baldios_desmontados` — apar=7, munis=3, años=6, vals=0.005|5.0|0.005|0.005|0.005
+  - desc: Sobre lotes baldíos, desmontados
+- `urbano_habitacional_o_solares_enclavados_en_congregaciones_ejidos` — apar=7, munis=1, años=7, vals=0.0|0.0|0.0|0.0|0.0
+  - desc: Predios urbano habitacional o solares, enclavados en congregaciones, ejidos
+- `urbano_habitacional_o_solares_en_congregaciones_ejidos` — apar=5, munis=3, años=4, vals=0.0|0.0|0.0|0.0|0.0
+  - desc: Predios urbano habitacional o solares, enclavados en congregaciones, ejidos
+- `industrial_con_edificacion` — apar=5, munis=2, años=5, vals=0.0016|1.6|0.0016|0.005|0.005
+  - desc: Predios industriales con edificación
+- `industrial_sin_edificacion` — apar=5, munis=2, años=5, vals=0.0019|1.9|0.0019|0.005|0.006
+  - desc: Predios industriales sin edificaciones
+- `comercial_con_edificacion` — apar=4, munis=1, años=4, vals=0.0016|1.6|0.0016|1.6
+  - desc: Predios comerciales con edificación
+- `comercial_sin_edificacion` — apar=4, munis=1, años=4, vals=0.0019|1.9|0.0019|1.9
+  - desc: Predios comerciales sin edificaciones
+- `comercial` — apar=4, munis=1, años=4, vals=5.0|0.005|0.005|0.005
+  - desc: Predios catalogados catastralmente como comerciales
+- `predios_suburbanos` — apar=2, munis=1, años=2, vals=0.004|0.004
+  - desc: Sobre los predios suburbanos
+- `predios_industriales` — apar=2, munis=1, años=2, vals=0.005|0.005
+  - desc: Sobre los predios industriales
+- `comercial_o_de_servicios` — apar=2, munis=1, años=2, vals=0.005|0.005
+  - desc: Predios comerciales o de servicios, con o sin edificación
+- `urbano_habitacional_solares_en_congregaciones_ejidos` — apar=1, munis=1, años=1, vals=0.0
+  - desc: Los predios urbano habitacional o solares, enclavados en congregaciones, ejidos
+- `urbanos_no_edificados_sin_barda` — apar=1, munis=1, años=1, vals=0.005
+  - desc: Predios urbanos no edificados sin barda
+- `predios_urbano_habitacional_o_solares_en_congregaciones_ejidos` — apar=1, munis=1, años=1, vals=0.0
+  - desc: Predios urbano habitacional o solares, enclavados en congregaciones, ejidos
+- `parcelario` — apar=1, munis=1, años=1, vals=0.001
+  - desc: predios parcelarios
+- `predios_catastrales_industriales_y_comerciales` — apar=1, munis=1, años=1, vals=0.005
+  - desc: Predios catalogados catastralmente como industriales y comerciales
+- `sub_urbano_habitacional_o_solares_en_congregaciones_ejidos` — apar=1, munis=1, años=1, vals=36.15
+  - desc: Predios sub urbano habitacional o solares, enclavados en congregaciones, ejidos
+- `suburbano_sin_edificacion` — apar=1, munis=1, años=1, vals=1.9
+  - desc: Predios suburbanos sin edificaciones
+- `suburbano_sin_edificacion_bulevares` — apar=1, munis=1, años=1, vals=2.2
+  - desc: Predios suburbanos sin edificaciones contiguos a bulevares, avenidas principales, fuera de uso habitacional
+- `predios_rusticos_industriales_con_explotacion_de_energia_renovable` — apar=1, munis=1, años=1, vals=0.003
+  - desc: Sobre los predios rústicos industriales con explotación de energía renovable en ejecución, desarrollo o proyecto
+- `industrial_comercial_o_servicios` — apar=1, munis=1, años=1, vals=0.005
+  - desc: Predios Industrial, Comercial o de Servicios, con o sin edificación
+- `predios_comerciales` — apar=1, munis=1, años=1, vals=0.005
+  - desc: Predios catalogados catastralmente como comerciales
+- `predios_rusticos_industriales_con_explotacion_de_energia_renovable_en_ejecucion_desarrollo_o_proyecto` — apar=1, munis=1, años=1, vals=0.003
+  - desc: Sobre los predios rústicos industriales con explotación de energía renovable en ejecución, desarrollo o proyecto
+
+#### grupo: `rural` — 1 clave(s)
+
+- `predios_rusticos` — apar=2, munis=2, años=2, vals=1.0|0.0012
+  - desc: Sobre los predios rústicos
+
+#### grupo: `rustico` — 69 clave(s)
+
+- `predios_rusticos` — apar=429, munis=36, años=16, vals=3.0|0.003|3.0|0.003|3.0
+  - desc: Sobre Predios Rústicos
+- `rustico` — apar=22, munis=12, años=13, vals=0.001|0.003|0.003|0.003|1.0
+  - desc: Predios rústicos
+- `predios_rusticos_agostaderos` — apar=14, munis=1, años=14, vals=0.00165|0.00165|1.65|1.65|1.65
+  - desc: Sobre los predios rústicos, agostaderos
+- `predios_rusticos_y_extraccion_ejidal_titulados` — apar=12, munis=5, años=8, vals=0.005|3.0|0.005|5.0|5.0
+  - desc: Predios rústicos y predios de extracción ejidal ya titulados
+- `predio_rustico` — apar=9, munis=7, años=7, vals=3.0|0.004|0.0025|0.003|3.0
+  - desc: Predios rústicos
+- `predios_rusticos_industriales_eolica_en_ejecucion` — apar=8, munis=3, años=6, vals=0.005|0.005|0.005|0.005|0.005
+  - desc: Predios rústicos industriales con explotación de energía renovable (eólica) en ejecución
+- `predios_rusticos_industriales_eolica_en_desarrollo` — apar=8, munis=3, años=6, vals=0.005|0.005|0.005|0.005|0.005
+  - desc: Predios rústicos industriales con explotación de energía renovable (eólica) en desarrollo
+- `predios_rusticos_industriales_eolica_en_proyecto` — apar=8, munis=3, años=6, vals=0.005|0.005|0.005|0.005|0.005
+  - desc: Predios rústicos industriales con explotación de energía renovable (eólica) en proyecto
+- `rustico_general` — apar=7, munis=3, años=5, vals=0.003|0.003|0.003|0.003|0.003
+  - desc: Predios rústicos
+- `predios_rusticos_y_ejidales_titulados` — apar=6, munis=2, años=5, vals=0.003|5.0|0.005|0.005|0.005
+  - desc: Predios rústicos y predios de extracción ejidal ya titulados
+- `rusticos` — apar=5, munis=4, años=5, vals=1.8|0.005|0.005|0.003|0.003
+  - desc: Predios rústicos
+- `rustico_y_extraccion_ejidal_titulado` — apar=5, munis=1, años=5, vals=0.005|0.005|0.005|0.005|5.0
+  - desc: Predios rústicos y predios de extracción ejidal ya titulados
+- `rusticos_industriales_eolica_ejecucion` — apar=5, munis=4, años=5, vals=0.005|0.005|0.005|0.005|0.005
+  - desc: Predios rústicos industriales con explotación de energía renovable (eólica) en ejecución
+- `rusticos_industriales_eolica_desarrollo` — apar=5, munis=4, años=5, vals=0.005|0.005|0.005|0.005|0.005
+  - desc: Predios rústicos industriales con explotación de energía renovable (eólica) en desarrollo
+- `rusticos_industriales_eolica_proyecto` — apar=5, munis=4, años=5, vals=0.005|0.005|0.005|0.005|0.005
+  - desc: Predios rústicos industriales con explotación de energía renovable (eólica) en proyecto
+- `predios_rusticos_industriales_energia_renovable` — apar=5, munis=3, años=4, vals=0.003|0.003|0.003|0.003|0.003
+  - desc: Sobre los predios rústicos industriales con explotación de energía renovable en ejecución, desarrollo o proyecto
+- `rustico_industrial` — apar=5, munis=2, años=4, vals=5.0|0.005|0.005|5.0|0.005
+  - desc: Predios rústicos industriales
+- `predios_rusticos_industriales_eolica_ejecucion` — apar=4, munis=3, años=4, vals=0.005|0.005|0.005|0.005
+  - desc: Predios rústicos industriales con explotación de energía renovable (eólica) en ejecución
+- `predios_rusticos_industriales_eolica_desarrollo` — apar=4, munis=3, años=4, vals=0.005|0.005|0.005|0.005
+  - desc: Predios rústicos industriales con explotación de energía renovable (eólica) en desarrollo
+- `predios_rusticos_industriales_eolica_proyecto` — apar=4, munis=3, años=4, vals=0.005|0.005|0.005|0.005
+  - desc: Predios rústicos industriales con explotación de energía renovable (eólica) en proyecto
+- `predios_rusticos_y_extraccion_ejidal` — apar=3, munis=2, años=3, vals=0.004|0.004|0.005
+  - desc: Predios rústicos y predios de extracción ejidal ya titulados, con o sin edificación
+- `rustico_y_extraccion_ejidal` — apar=3, munis=2, años=3, vals=0.005|5.0|0.004
+  - desc: Predios rústicos y predios de extracción ejidal ya titulados
+- `predios_rusticos_industriales_con_explotacion_de_energia_renovable` — apar=3, munis=1, años=3, vals=0.003|3.0|0.003
+  - desc: Predios rústicos industriales con explotación de energía renovable en ejecución, desarrollo o proyecto
+- `predios_rusticos_y_ejidal_titulado` — apar=2, munis=2, años=2, vals=3.0|0.005
+  - desc: Sobre predios rústicos y predios de extracción ejidal ya titulados
+- `rusticos_industriales_eolica_en_ejecucion` — apar=2, munis=2, años=2, vals=0.005|5.0
+  - desc: Predios rústicos industriales con explotación de energía renovable (eólica) en ejecución
+- `rusticos_industriales_eolica_en_desarrollo` — apar=2, munis=2, años=2, vals=0.005|5.0
+  - desc: Predios rústicos industriales con explotación de energía renovable (eólica) en desarrollo
+- `rusticos_industriales_eolica_en_proyecto` — apar=2, munis=2, años=2, vals=0.005|5.0
+  - desc: Predios rústicos industriales con explotación de energía renovable (eólica) en proyecto
+- `rustico_y_ejidal_titulado` — apar=2, munis=1, años=2, vals=0.004|0.004
+  - desc: Predios rústicos y predios de extracción ejidal ya titulados, con o sin edificación
+- `predios_rusticos_industriales` — apar=2, munis=2, años=2, vals=0.005|0.005
+  - desc: Predios rústicos destinados a la actividad industrial
+- `minimo_rustico` — apar=1, munis=1, años=1, vals=0.003
+  - desc: Monto mínimo del impuesto predial rústico
+- `predios_rusticos_y_extrajidales_titulados` — apar=1, munis=1, años=1, vals=0.004
+  - desc: Sobre predios rústicos y predios de extracción ejidal ya titulados
+- `rústicos_industriales_eólica_ejecución` — apar=1, munis=1, años=1, vals=0.005 ⚠ slugify_sug=`rusticos_industriales_eolica_ejecucion`
+  - desc: Predios rústicos industriales con explotación de energía renovable (eólica) en ejecución
+- `rústicos_industriales_eólica_desarrollo` — apar=1, munis=1, años=1, vals=0.005 ⚠ slugify_sug=`rusticos_industriales_eolica_desarrollo`
+  - desc: Predios rústicos industriales con explotación de energía renovable (eólica) en desarrollo
+- `rústicos_industriales_eólica_proyecto` — apar=1, munis=1, años=1, vals=0.005 ⚠ slugify_sug=`rusticos_industriales_eolica_proyecto`
+  - desc: Predios rústicos industriales con explotación de energía renovable (eólica) en proyecto
+- `rusticos_y_extraccion_ejidal` — apar=1, munis=1, años=1, vals=0.004
+  - desc: Predios catalogados catastralmente como rústicos y predios de extracción ejidal ya titulados, con o sin edificación
+- `rustico_y_extraccion_ejidal_titulados` — apar=1, munis=1, años=1, vals=5.0
+  - desc: Predios rústicos y predios de extracción ejidal ya titulados
+- `predios_rusticos_industriales_energia_renovable_ejecucion` — apar=1, munis=1, años=1, vals=0.005
+  - desc: Predios rústicos industriales con explotación de energía renovable (eólica, solar) en ejecución
+- `predios_rusticos_industriales_energia_renovable_desarrollo` — apar=1, munis=1, años=1, vals=0.005
+  - desc: Predios rústicos industriales con explotación de energía renovable (eólica, solar) en desarrollo
+- `predios_rusticos_industriales_energia_renovable_proyecto` — apar=1, munis=1, años=1, vals=0.005
+  - desc: Predios rústicos industriales con explotación de energía renovable (eólica, solar) en proyecto
+- `predios_rusticos_industriales_residuos_peligrosos_ejecucion` — apar=1, munis=1, años=1, vals=0.005
+  - desc: Predios rústicos industriales con sitio para reciclaje, tratamiento y confinamiento controlado de residuos peligrosos previamente estabiliza
+- `predios_rusticos_industriales_residuos_peligrosos_desarrollo` — apar=1, munis=1, años=1, vals=0.005
+  - desc: Predios rústicos industriales con sitio para reciclaje, tratamiento y confinamiento controlado de residuos peligrosos previamente estabiliza
+- `predios_rusticos_industriales_residuos_peligrosos_proyecto` — apar=1, munis=1, años=1, vals=0.005
+  - desc: Predios rústicos industriales con sitio para reciclaje, tratamiento y confinamiento controlado de residuos peligrosos previamente estabiliza
+- `predio_rustico_industrial` — apar=1, munis=1, años=1, vals=0.005
+  - desc: Predios rústicos destinados a la actividad industrial
+- `rusticos_habitacional` — apar=1, munis=1, años=1, vals=0.0015
+  - desc: Predios rústicos habitacional
+- `rusticos_comerciales_e_industriales` — apar=1, munis=1, años=1, vals=0.002
+  - desc: Predios rústicos comerciales e industriales
+- `rusticos_industriales_energia_y_gas` — apar=1, munis=1, años=1, vals=0.003
+  - desc: Predios rústicos industriales con explotación de energía y gas en ejecución, desarrollo o en proyecto
+- `rustico_y_extrajidal_titulado` — apar=1, munis=1, años=1, vals=5.0
+  - desc: Predios rústicos y predios de extracción ejidal ya titulados
+- `rustico_industrial_eolica_ejecucion` — apar=1, munis=1, años=1, vals=0.005
+  - desc: predios rústicos industriales con explotación de energía renovable (eólica) en ejecución
+- `rustico_industrial_eolica_desarrollo` — apar=1, munis=1, años=1, vals=0.005
+  - desc: predios rústicos industriales con explotación de energía renovable (eólica) en desarrollo
+- `rustico_industrial_eolica_proyecto` — apar=1, munis=1, años=1, vals=0.005
+  - desc: predios rústicos industriales con explotación de energía renovable (eólica) en proyecto
+- `rusticos_agostaderos` — apar=1, munis=1, años=1, vals=1.65
+  - desc: Predios rústicos, agostaderos
+- `rusticos_y_extraccion_ejidal_titulado` — apar=1, munis=1, años=1, vals=5.0
+  - desc: Predios rústicos y predios de extracción ejidal ya titulados
+- `predio_rustico_industrial_eolica_ejecucion` — apar=1, munis=1, años=1, vals=0.005
+  - desc: Predios rústicos industriales con explotación de energía renovable (eólica) en ejecución
+- `predio_rustico_industrial_eolica_desarrollo` — apar=1, munis=1, años=1, vals=0.005
+  - desc: Predios rústicos industriales con explotación de energía renovable (eólica) en desarrollo
+- `predio_rustico_industrial_eolica_proyecto` — apar=1, munis=1, años=1, vals=0.005
+  - desc: Predios rústicos industriales con explotación de energía renovable (eólica) en proyecto
+- `rustico_y_ejidal_titulado_con_o_sin_edificacion` — apar=1, munis=1, años=1, vals=0.004
+  - desc: Predios rústicos y predios de extracción ejidal ya titulados, con o sin edificación
+- `rustico_renovable_ejecucion` — apar=1, munis=1, años=1, vals=0.005
+  - desc: Predios rústicos industriales con explotación de energías renovables (eólica y solar) en ejecución
+- `rustico_renovable_desarrollo` — apar=1, munis=1, años=1, vals=0.005
+  - desc: Predios rústicos industriales con explotación de energía renovable (eólica y solar) en desarrollo
+- `rustico_renovable_proyecto` — apar=1, munis=1, años=1, vals=0.005
+  - desc: Predios rústicos industriales con explotación de energía renovable (eólica y solar) en proyecto
+- `rusticos_industriales_eolica_solar_ejecucion` — apar=1, munis=1, años=1, vals=0.005
+  - desc: Predios rústicos industriales con explotación de energías renovables (eólica y solar) en ejecución
+- `rusticos_industriales_eolica_solar_desarrollo` — apar=1, munis=1, años=1, vals=0.005
+  - desc: Predios rústicos industriales con explotación de energía renovable (eólica y solar) en desarrollo
+- `rusticos_industriales_eolica_solar_proyecto` — apar=1, munis=1, años=1, vals=0.005
+  - desc: Predios rústicos industriales con explotación de energía renovable (eólica y solar) en proyecto
+- `rustico_y_ejidal_con_o_sin_edificacion` — apar=1, munis=1, años=1, vals=0.004
+  - desc: Predios rústicos y predios de extracción ejidal, con o sin edificación
+- `rustico_habitacional` — apar=1, munis=1, años=1, vals=1.5
+  - desc: Predios rústicos habitacional
+- `rustico_comercial_e_industrial` — apar=1, munis=1, años=1, vals=2.0
+  - desc: Predios rústicos comerciales e industriales
+- `rustico_industrial_energia_y_gas` — apar=1, munis=1, años=1, vals=3.0
+  - desc: Predios rústicos industriales con explotación de energía y gas en ejecución, desarrollo o en proyecto
+- `rustico_industrial_renovable_ejecucion` — apar=1, munis=1, años=1, vals=0.005
+  - desc: Predios rústicos industriales con explotación de energías renovables (eólica y solar) en ejecución
+- `rustico_industrial_renovable_desarrollo` — apar=1, munis=1, años=1, vals=0.005
+  - desc: Predios rústicos industriales con explotación de energía renovable (eólica y solar) en desarrollo
+- `rustico_industrial_renovable_proyecto` — apar=1, munis=1, años=1, vals=0.005
+  - desc: Predios rústicos industriales con explotación de energía renovable (eólica y solar) en proyecto
+
+#### grupo: `rústico` — 1 clave(s)
+
+- `predios_rusticos` — apar=4, munis=4, años=4, vals=0.003|0.003|3.0|0.003
+  - desc: Sobre predios rústicos
+
+#### grupo: `urbano` — 72 clave(s)
+
+- `predios_urbanos` — apar=441, munis=36, años=16, vals=5.0|0.003|3.0|0.003|3.0
+  - desc: Sobre Predios Urbanos
+- `lotes_baldios_desmontados` — apar=21, munis=2, años=14, vals=0.00165|0.005|1.65|5.0|1.65
+  - desc: Predios urbanos, lotes baldíos, desmontados
+- `lotes_baldios_con_maleza` — apar=21, munis=2, años=14, vals=0.0033|0.007|3.3|7.0|3.3
+  - desc: Predios urbanos, lotes baldíos, con maleza
+- `predios_urbanos_con_edificacion` — apar=17, munis=4, años=14, vals=0.0015|0.005|1.5|5.0|5.0
+  - desc: Predios urbanos con edificación (no se considera edificación bardas o cercas)
+- `predios_urbanos_no_edificados_sin_barda` — apar=13, munis=3, años=12, vals=0.005|0.005|0.005|0.005|0.005
+  - desc: Predios urbanos no edificados sin barda
+- `urbano` — apar=12, munis=9, años=9, vals=0.001|0.005|1.0|2.5|3.0
+  - desc: Predios urbanos
+- `predio_urbano` — apar=9, munis=7, años=7, vals=3.0|0.003|0.0025|0.003|3.0
+  - desc: Predios urbanos
+- `urbano_sin_edificacion` — apar=9, munis=1, años=9, vals=0.0018|0.0018|0.0018|0.0019|1.9
+  - desc: Predios urbanos sin edificaciones
+- `urbano_con_edificacion` — apar=8, munis=1, años=8, vals=0.0015|0.0015|0.0015|0.0016|1.6
+  - desc: Predios urbanos con edificación (no se considera edificación bardas o cercas)
+- `predios_urbanos_no_baldios` — apar=7, munis=1, años=7, vals=0.005|0.005|0.005|0.005|0.005
+  - desc: Predios urbanos no baldíos
+- `predios_urbanos_baldios` — apar=7, munis=1, años=7, vals=0.006649999999999999|0.00133|0.00133|0.00133|0.00133
+  - desc: Predios urbanos baldíos: 1.33 veces lo fijado para no-baldío
+- `industrial` — apar=7, munis=2, años=6, vals=0.005|0.0027|0.0027|0.0027|2.7
+  - desc: Predios urbanos industriales con o sin edificación
+- `predios_urbanos_baldios_centro` — apar=6, munis=1, años=6, vals=0.0075|0.0015|0.0015|0.0015|0.0015
+  - desc: Predios urbanos baldíos en el centro: 1.5 veces lo fijado para no-baldío
+- `urbano_no_baldio` — apar=6, munis=1, años=6, vals=0.005|0.005|5.0|0.005|0.005
+  - desc: Predios urbanos no baldíos hasta un 5 al millar anual
+- `urbano_baldio` — apar=6, munis=1, años=6, vals=0.00133|0.00133|1.33|0.00133|0.00133
+  - desc: Predios baldíos
+- `urbano_baldio_centro` — apar=6, munis=1, años=6, vals=0.0015|0.0015|1.5|0.0015|0.0015
+  - desc: Predios baldíos en el centro
+- `urbano_industrial` — apar=5, munis=2, años=4, vals=0.005|5.0|0.005|0.005|0.005
+  - desc: Predios urbanos industriales con o sin edificación
+- `comercial` — apar=5, munis=1, años=5, vals=0.0026|0.0026|0.0026|2.6|0.0026
+  - desc: Predios urbanos comerciales
+- `habitacional` — apar=5, munis=1, años=5, vals=0.0025|0.0025|0.0025|2.5|0.0025
+  - desc: Predios urbanos habitacionales
+- `urbanos` — apar=4, munis=4, años=4, vals=3.0|0.005|0.005|1.65
+  - desc: Predios urbanos
+- `comerciales_con_edificacion` — apar=4, munis=2, años=4, vals=0.005|0.0025|0.005|2.5
+  - desc: Predios urbanos comerciales con edificación
+- `residenciales_interes_social_populares_con_edificacion` — apar=4, munis=2, años=4, vals=0.005|0.002|0.005|2.0
+  - desc: Predios urbanos residenciales, de interés social y populares con edificación
+- `urbano_con_o_sin_edificacion` — apar=4, munis=1, años=4, vals=0.004|0.004|0.004|0.004
+  - desc: Predios urbanos, con o sin edificación
+- `industriales_con_o_sin_edificacion` — apar=3, munis=2, años=3, vals=0.003|0.005|3.0
+  - desc: Predios urbanos industriales con o sin edificación
+- `predios_urbanos_sin_edificacion` — apar=2, munis=1, años=2, vals=0.0018|1.8
+  - desc: Predios urbanos sin edificaciones
+- `urbano_comercial_con_edificacion` — apar=2, munis=1, años=2, vals=0.005|0.005
+  - desc: Predios urbanos comerciales con edificación
+- `urbano_residencial_con_edificacion` — apar=2, munis=1, años=2, vals=0.005|0.005
+  - desc: Predios urbanos residenciales, de interés social y populares con edificación
+- `comercial_con_edificacion` — apar=2, munis=1, años=2, vals=0.005|0.005
+  - desc: Predios urbanos comerciales con edificación
+- `comercial_sin_edificacion` — apar=2, munis=1, años=2, vals=0.00665|0.006
+  - desc: Predios urbanos comerciales sin edificación
+- `residencial_con_edificacion` — apar=2, munis=1, años=2, vals=0.005|0.005
+  - desc: Predios urbanos residenciales, de interés social y populares con edificación
+- `residencial_sin_edificacion` — apar=2, munis=1, años=2, vals=0.00665|0.006
+  - desc: Predios urbanos residenciales, de interés social y populares sin edificación
+- `urbanos_no_edificados_sin_barda` — apar=2, munis=2, años=2, vals=0.005|0.003
+  - desc: Predios urbanos no edificados sin barda
+- `comerciales_sin_edificacion` — apar=2, munis=1, años=2, vals=0.00665|0.006
+  - desc: Predios urbanos comerciales sin edificación
+- `residenciales_interes_social_populares_sin_edificacion` — apar=2, munis=1, años=2, vals=0.00665|0.006
+  - desc: Predios urbanos residenciales, de interés social y populares sin edificación
+- `predios_urbanos_industriales` — apar=2, munis=1, años=2, vals=0.005|0.005
+  - desc: Predios urbanos industriales en general con o sin edificación
+- `predios_urbanos_sin_edificacion_contiguos_a_bulevares_y_avenidas_principales_fuera_de_uso_habitacional` — apar=1, munis=1, años=1, vals=0.0021
+  - desc: Predios urbanos sin edificaciones contiguos a los bulevares y avenidas principales y fuera de uso habitacional
+- `urbano_sin_edificacion_contiguo_bulevares_avenidas_principales_fuera_uso_habitacional` — apar=1, munis=1, años=1, vals=0.0021
+  - desc: Predios urbanos sin edificaciones contiguos a los bulevares y avenidas principales y fuera de uso habitacional
+- `predios_urbanos_sin_edificacion_contiguos_a_bulevares_avenidas_principales_fuera_de_uso_habitacional` — apar=1, munis=1, años=1, vals=2.1
+  - desc: Predios urbanos sin edificaciones contiguos a los bulevares, avenidas principales, fuera de uso habitacional
+- `urbano_sin_edificacion_contiguo_bulevares` — apar=1, munis=1, años=1, vals=0.0021
+  - desc: Predios urbanos sin edificaciones contiguos a bulevares, avenidas principales, fuera de uso habitacional
+- `urbano_sin_edificacion_contiguo_bulevar` — apar=1, munis=1, años=1, vals=0.0021
+  - desc: Predios urbanos sin edificaciones contiguos a los bulevares, avenidas principales, fuera de uso habitacional
+- `urbano_sin_edificacion_bulevares_avenidas_principales_fuera_habitacional` — apar=1, munis=1, años=1, vals=0.0022
+  - desc: Predios urbanos sin edificaciones contiguos a los bulevares, avenidas principales, fuera de uso habitacional
+- `predios_urbanos_baldios_en_centro` — apar=1, munis=1, años=1, vals=0.0015
+  - desc: Si el predio esta baldío y en el centro
+- `urbano_sin_edificacion_contiguos_bulevares_avenidas_principales_fuera_de_uso_habitacional` — apar=1, munis=1, años=1, vals=2.2
+  - desc: Predios urbanos sin edificaciones contiguos a bulevares o avenidas principales, fuera de uso habitacional
+- `urbanos_con_o_sin_edificacion` — apar=1, munis=1, años=1, vals=0.004
+  - desc: Predios catalogados catastralmente como urbanos, con o sin edificación
+- `industriales` — apar=1, munis=1, años=1, vals=0.005
+  - desc: Predios urbanos industriales con o sin edificación
+- `urbano_sin_edificacion_bulevares` — apar=1, munis=1, años=1, vals=0.0022
+  - desc: Predios urbanos sin edificaciones contiguos a bulevares, avenidas principales, fuera de uso habitacional
+- `urbano_sin_edificacion_contiguos_bulevares` — apar=1, munis=1, años=1, vals=2.2
+  - desc: Predios urbanos sin edificaciones contiguos a bulevares o avenidas principales, fuera de uso habitacional
+- `predios_urbanos_y_afines` — apar=1, munis=1, años=1, vals=0.003
+  - desc: Predios urbanos, minero, extracción de gases minerales y/o materiales pétreos y generación de energías eólicas
+- `urbano_sin_edificaciones` — apar=1, munis=1, años=1, vals=2.2
+  - desc: Predios urbanos sin edificaciones
+- `predios_urbanos_y_asimilables` — apar=1, munis=1, años=1, vals=3.0
+  - desc: Predios urbanos, minero, extracción de gases minerales y/o materiales pétreos y generación de energías eólicas
+- `urbano_edificado_industrial_comercial` — apar=1, munis=1, años=1, vals=1.6
+  - desc: Predios urbanos, industriales y comerciales con edificación
+- `urbano_industrial_comercial_sin_edificacion` — apar=1, munis=1, años=1, vals=1.9
+  - desc: Predios urbanos, industriales y comerciales sin edificaciones
+- `urbanos_con_edificacion` — apar=1, munis=1, años=1, vals=0.005
+  - desc: Predios urbanos con edificación (no se considera edificación bardas y cercas)
+- `urbano_con_sin_edificacion` — apar=1, munis=1, años=1, vals=0.004
+  - desc: Predios urbanos, con o sin edificación
+- `predios_urbanos_minero_extraccion_y_energeticos` — apar=1, munis=1, años=1, vals=3.0
+  - desc: Predios urbanos, minero, extracción de gases minerales y/o materiales pétreos y generación de energías eólicas
+- `urbano_comercial_sin_edificacion` — apar=1, munis=1, años=1, vals=0.006
+  - desc: predios urbanos comerciales sin edificación
+- `urbano_residencial_sin_edificacion` — apar=1, munis=1, años=1, vals=0.006
+  - desc: predios urbanos residenciales, de interés social y populares sin edificación
+- `urbanos_baldio_desmontado` — apar=1, munis=1, años=1, vals=1.65
+  - desc: Predios urbanos, lotes baldíos desmontados
+- `urbanos_baldio_con_maleza` — apar=1, munis=1, años=1, vals=3.3
+  - desc: Predios urbanos, lotes baldíos con maleza
+- `urbanos_comerciales_edificados` — apar=1, munis=1, años=1, vals=1.6
+  - desc: Predios urbanos, industriales y comerciales con edificación
+- `urbanos_comerciales_sin_edificacion` — apar=1, munis=1, años=1, vals=1.9
+  - desc: Predios urbanos, industriales y comerciales sin edificaciones
+- `urbanos_sin_edificacion_bulevares` — apar=1, munis=1, años=1, vals=2.2
+  - desc: Predios urbanos sin edificaciones contiguos a bulevares, avenidas principales, fuera de uso habitacional
+- `predio_urbano_no_edificado_sin_barda` — apar=1, munis=1, años=1, vals=0.003
+  - desc: Predios urbanos no edificados sin barda
+- `predios_urbanos_minero_extraccion_gases_materiales_petreos_eolicas` — apar=1, munis=1, años=1, vals=3.0
+  - desc: Predios urbanos, minero, extracción de gases minerales y/o materiales pétreos y generación de energías eólicas
+- `industrial_urbano` — apar=1, munis=1, años=1, vals=0.005
+  - desc: Predios urbanos industriales con o sin edificación
+- `comercial_urbano_con_edificacion` — apar=1, munis=1, años=1, vals=0.005
+  - desc: Predios urbanos comerciales con edificación
+- `comercial_urbano_sin_edificacion` — apar=1, munis=1, años=1, vals=0.006
+  - desc: Predios urbanos comerciales sin edificación
+- `urbano_industrial_general` — apar=1, munis=1, años=1, vals=0.005
+  - desc: Predios urbanos industriales en general con o sin edificación
+- `predios_urbanos_uso_suelo_industrial` — apar=1, munis=1, años=1, vals=5.0
+  - desc: Predios urbanos con uso de suelo industrial
+- `predios_urbanos_y_asimilados` — apar=1, munis=1, años=1, vals=3.0
+  - desc: Predios urbanos, minero, extracción de gases minerales y/o materiales pétreos y generación de energías eólicas
+- `residencial_interes_social_popular_con_edificacion` — apar=1, munis=1, años=1, vals=0.005
+  - desc: Predios urbanos residenciales, de interés social y populares con edificación (no se consideran edificaciones las cercas)
+- `residencial_interes_social_popular_sin_edificacion` — apar=1, munis=1, años=1, vals=0.006
+  - desc: Predios urbanos residenciales, de interés social y populares sin edificación
+
+### Guanajuato <a id='tarifa-millar-guanajuato'></a> — 1437 claves
+
+#### grupo: `edificacion` — 4 clave(s)
+
+- `entrada_vigor_ley` — apar=1, munis=1, años=1, vals=0.0018
+  - desc: A la entrada en vigor de la presente Ley
+- `anio_2002_2022` — apar=1, munis=1, años=1, vals=0.0018
+  - desc: Durante los años 2002 y hasta el 2022, inclusive
+- `anterior_2002_hasta_1993` — apar=1, munis=1, años=1, vals=0.006
+  - desc: Con anterioridad al año 2002 y hasta 1993 inclusive
+- `anterior_1993` — apar=1, munis=1, años=1, vals=0.012
+  - desc: Con anterioridad a 1993
+
+#### grupo: `edificado` — 3 clave(s)
+
+- `entrada_vigor` — apar=1, munis=1, años=1, vals=0.0018
+  - desc: Inmuebles con edificaciones; a la entrada en vigor de la presente Ley
+- `anios_2002_a_2021` — apar=1, munis=1, años=1, vals=0.0018
+  - desc: Inmuebles con edificaciones; durante los años 2002 y hasta 2021, inclusive
+- `anteriores_1993_a_2001` — apar=1, munis=1, años=1, vals=0.006
+  - desc: Inmuebles con edificaciones; con anterioridad al año 2002 y hasta 1993, inclusive
+
+#### grupo: `general` — 450 clave(s)
+
+- `urbano_suburbano_sin_edificaciones` — apar=22, munis=17, años=13, vals=0.0045|0.0045|0.0045|0.0045|0.0045
+  - desc: Inmuebles urbanos y suburbanos sin edificaciones, según año de determinación/modificación del valor
+- `urbano_suburbano_con_edificaciones` — apar=21, munis=16, años=12, vals=0.0024|0.0024|0.0024|0.0024|0.0024
+  - desc: Inmuebles urbanos y suburbanos con edificaciones, según año de determinación/modificación del valor
+- `inmuebles_urbanos_y_suburbanos_con_edificaciones` — apar=21, munis=16, años=13, vals=0.0024|0.002|0.0024|0.0024|0.0024
+  - desc: Inmuebles urbanos y suburbanos con valor determinado o modificado: edificaciones; entrada en vigor de la presente Ley y años 2002 a 2010 inc
+- `inmuebles_urbanos_y_suburbanos_sin_edificaciones` — apar=21, munis=16, años=13, vals=0.0045|0.003|0.0045|0.0045|0.0045
+  - desc: Inmuebles urbanos y suburbanos con valor determinado o modificado: sin edificaciones; entrada en vigor de la presente Ley y años 2002 a 2010
+- `entrada_en_vigor` — apar=19, munis=14, años=10, vals=0.0024|0.0024|0.0024|0.00355|0.00375
+  - desc: A la entrada en vigor de la presente ley
+- `anterior_1993` — apar=19, munis=13, años=10, vals=0.013|0.013|0.013|0.013|0.013
+  - desc: Con anterioridad al año de 1993
+- `rustico` — apar=18, munis=12, años=12, vals=0.0026|0.0018|0.0018|0.0013|0.0018
+  - desc: Inmuebles rústicos, al entrar en vigor la ley y durante 2002 a 2010 inclusive
+- `inmuebles_urbanos_suburbanos` — apar=15, munis=2, años=2, vals=0.0024|0.0024|0.008|0.013|4.2
+  - desc: A la entrada en vigor de la presente Ley; inmuebles urbanos y suburbanos con y sin edificaciones
+- `anterior_2002_hasta_1993` — apar=13, munis=11, años=8, vals=0.008|0.008|0.013|0.008|0.006
+  - desc: Con anterioridad al año 2002 y hasta 1993, inclusive
+- `inmuebles_rusticos` — apar=10, munis=7, años=6, vals=0.00032|0.0018|0.0018|0.0018|0.0018
+  - desc: Inmuebles rústicos: a la entrada en vigor de la ley y durante 2002 a 2010 inclusive.
+- `urbanos_suburbanos_sin_edificaciones` — apar=8, munis=6, años=6, vals=0.0095|0.0045|0.0045|0.0045|0.0045
+  - desc: Inmuebles urbanos y suburbanos sin edificaciones: a la entrada en vigor de la ley
+- `anterior_a_1993` — apar=7, munis=6, años=6, vals=0.013|0.008|0.013|0.0043|0.013
+  - desc: Inmuebles que cuenten con un valor determinado o modificado: edificaciones con y sin edificaciones; urbanos y suburbanos. Con anterioridad a
+- `rusticos` — apar=6, munis=5, años=5, vals=0.00167|0.0018|0.0026|0.01|0.0018
+  - desc: Inmuebles rústicos
+- `inmuebles_urbanos_suburbanos_con_edificaciones` — apar=6, munis=5, años=5, vals=0.0024|0.0024|0.0024|0.0024|0.0024
+  - desc: Inmuebles urbanos y suburbanos con edificaciones; causación anual conforme a la tabla de tasas por antigüedad del valor determinado o modifi
+- `inmuebles_urbanos_suburbanos_sin_edificaciones` — apar=6, munis=5, años=5, vals=0.0045|0.0045|0.0045|0.0045|0.0045
+  - desc: Inmuebles urbanos y suburbanos sin edificaciones; causación anual conforme a la tabla de tasas por antigüedad del valor determinado o modifi
+- `urbanos_suburbanos_con_edificaciones` — apar=6, munis=5, años=4, vals=0.0045|0.0024|0.0024|0.0024|0.0024
+  - desc: Inmuebles urbanos y suburbanos con edificaciones; tasa por año de valuación de la construcción/terreno.
+- `urbano_suburbano_edificado` — apar=6, munis=4, años=5, vals=0.0024|0.0024|0.0024|0.0024|0.0024
+  - desc: Inmuebles urbanos y suburbanos con edificaciones, valor determinado o modificado; aplica la tasa anual indicada en el Art. 4.
+- `entrada_vigor` — apar=6, munis=6, años=4, vals=0.0024|0.0024|0.0024|0.002|2.4
+  - desc: Los inmuebles que cuenten con un valor determinado modificado: a la entrada en vigor de la presente Ley
+- `anteriores_1993` — apar=5, munis=5, años=5, vals=0.012|0.013|8.0|0.006|0.013
+  - desc: Con anterioridad al año de 1993
+- `inmuebles_urbanos_y_suburbanos` — apar=5, munis=2, años=2, vals=0.0024|4.5|4.5|15.0|13.0
+  - desc: Inmuebles que cuenten con un valor determinado o con edificaciones; tasa aplicable a inmuebles urbanos y suburbanos.
+- `urbanos_y_suburbanos_con_edificaciones` — apar=5, munis=4, años=5, vals=0.0025|0.002|0.0024|0.0024|0.0024
+  - desc: Inmuebles urbanos y suburbanos con edificaciones, anual
+- `urbanos_y_suburbanos_sin_edificaciones` — apar=5, munis=4, años=5, vals=0.0046|0.003|0.0045|0.0045|0.0158
+  - desc: Inmuebles urbanos y suburbanos sin edificaciones, anual
+- `anio_2002_a_2018` — apar=5, munis=3, años=1, vals=0.0024|0.0045|0.0018|0.0045|0.0024
+  - desc: Durante los años 2002 y hasta el año 2018, inclusive: inmuebles urbanos y suburbanos con edificaciones 4.5 al millar; inmuebles urbanos y su
+- `antiguedad_entrada_vigor` — apar=4, munis=1, años=1, vals=0.0024|0.0045|0.002|0.0018
+  - desc: Inmuebles con valor determinado o modificado, a la entrada en vigor de la ley: urbanos con edificaciones
+- `entrada_en_vigor_sin_edificaciones` — apar=4, munis=2, años=4, vals=0.0065|0.0065|0.003|0.0045
+  - desc: Inmuebles urbanos y suburbanos sin edificaciones, a la entrada en vigor de la presente Ley
+- `urbano_suburbano_sin_edificacion` — apar=4, munis=3, años=3, vals=0.0045|0.0045|0.0045|0.0024
+  - desc: Inmuebles urbanos y suburbanos sin edificaciones, valor determinado o modificado; aplica la tasa anual indicada en el Art. 4.
+- `edificado` — apar=4, munis=1, años=1, vals=0.0045|0.0045|0.015|0.013
+  - desc: Los inmuebles que cuenten con edificaciones, a la entrada en vigor de la presente Ley
+- `sin_edificaciones` — apar=4, munis=1, años=1, vals=0.0045|0.0045|0.015|0.013
+  - desc: Los inmuebles que no cuenten con edificaciones, a la entrada en vigor de la presente Ley
+- `urbanos_y_suburbanos_edificaciones` — apar=4, munis=1, años=1, vals=4.0|24.0|8.0|13.0
+  - desc: Inmuebles urbanos y suburbanos edificaciones: a la entrada en vigor de la presente ley
+- `valor_determinado_modificado_entrada_vigor` — apar=3, munis=3, años=2, vals=0.0024|0.0024|0.0024
+  - desc: Inmuebles que cuenten con un valor determinado o modificado: a la entrada en vigor de la ley
+- `urbano_con_edificacion` — apar=3, munis=3, años=3, vals=0.0024|0.0025|0.002
+  - desc: Inmuebles urbanos y suburbanos con edificaciones; valor determinado o modificado
+- `urbano_sin_edificacion` — apar=3, munis=3, años=3, vals=0.0045|0.0046|0.003
+  - desc: Inmuebles urbanos y suburbanos sin edificaciones; valor determinado o modificado
+- `anterior_1993_sin_edificaciones` — apar=3, munis=2, años=3, vals=0.012|0.012|0.012
+  - desc: Inmuebles urbanos y suburbanos sin edificaciones, con anterioridad al año de 1993
+- `inmuebles_urbanos_y_suburbanos_con_edificaciones_anterior_1993` — apar=3, munis=3, años=3, vals=0.0013|0.023|0.013
+  - desc: Inmuebles urbanos y suburbanos con edificaciones: con anterioridad al año 1993.
+- `anterior_1993_a_2001` — apar=3, munis=3, años=3, vals=0.008|0.008|0.012
+  - desc: Inmuebles urbanos y suburbanos con valor determinado o modificado: con anterioridad al año 2002 y hasta el año 1993
+- `entrada_en_vigor_ley` — apar=3, munis=2, años=2, vals=0.0048|1.8|0.0024
+  - desc: Inmuebles que cuenten con un valor determinado o modificado a la entrada en vigor de la presente Ley
+- `anios_2002_a_2013` — apar=3, munis=3, años=1, vals=0.0048|0.00167|0.0024
+  - desc: Inmuebles que cuenten con un valor determinado o modificado durante los años 2002 y hasta el 2013 inclusive
+- `urbano_y_suburbano_con_edificaciones` — apar=3, munis=2, años=2, vals=0.0024|0.0024|0.0045
+  - desc: Inmuebles urbanos y suburbanos con edificaciones, a la entrada en vigor de la Ley
+- `urbano_y_suburbano_sin_edificaciones` — apar=3, munis=2, años=2, vals=0.0045|0.0045|0.0024
+  - desc: Inmuebles urbanos y suburbanos sin edificaciones, a la entrada en vigor de la Ley
+- `inmuebles_urbanos_y_suburbanos_con_edificaciones_anteriores_a_1993` — apar=3, munis=3, años=3, vals=0.013|0.013|0.013
+  - desc: Inmuebles urbanos y suburbanos con edificaciones, con anterioridad al año de 1993
+- `inmuebles_urbanos_y_suburbanos_sin_edificaciones_anteriores_a_1993` — apar=3, munis=3, años=3, vals=0.012|0.012|0.013
+  - desc: Inmuebles urbanos y suburbanos sin edificaciones, con anterioridad al año de 1993
+- `anteriores_a_1993` — apar=3, munis=3, años=3, vals=13.0|0.013|0.013
+  - desc: Con anterioridad al año de 1993
+- `valor_determinado_o_modificado` — apar=3, munis=3, años=3, vals=0.0024|0.0024|0.0024
+  - desc: Inmuebles que cuenten con un valor determinado o modificado, a la entrada en vigor de la ley.
+- `vigencia_entrada_en_vigor` — apar=3, munis=1, años=1, vals=0.0024|0.0045|0.0018
+  - desc: A la entrada en vigor de la presente Ley: inmuebles urbanos y suburbanos con edificaciones 4.5 al millar; inmuebles urbanos y suburbanos sin
+- `inmuebles_con_valor_determinado_o_modificado` — apar=3, munis=1, años=1, vals=0.0024|0.0024|0.008
+  - desc: Inmuebles que cuenten con un valor determinado o modificado; vigencia desde la entrada en vigor de la ley
+- `urbano_con_edificaciones` — apar=3, munis=3, años=3, vals=0.0024|0.0024|0.0024
+  - desc: Inmuebles urbanos y suburbanos con edificaciones
+- `urbano_sin_edificaciones` — apar=3, munis=3, años=3, vals=0.0045|0.0045|0.0045
+  - desc: Inmuebles urbanos y suburbanos sin edificaciones
+- `urbanos_y_suburbanos_1993_2001` — apar=2, munis=2, años=2, vals=1.5|0.008
+  - desc: Con anterioridad al año 2002 y hasta 1993 inclusive, para inmuebles urbanos y suburbanos con valor determinado o modificado
+- `rusticos_entrada_vigor` — apar=2, munis=2, años=2, vals=0.0018|0.0018
+  - desc: Inmuebles rústicos, a la entrada en vigor de la ley
+- `urbanos_y_suburbanos_con_edificaciones_1993_2001` — apar=2, munis=2, años=2, vals=0.008|0.008
+  - desc: Inmuebles urbanos y suburbanos con edificaciones, con anterioridad al año 2002 y hasta 1993 inclusive
+- `urbanos_y_suburbanos_sin_edificaciones_1993_2001` — apar=2, munis=2, años=2, vals=0.015|0.015
+  - desc: Inmuebles urbanos y suburbanos sin edificaciones, con anterioridad al año 2002 y hasta 1993 inclusive
+- `urbano_con_edificacion_1993_2001` — apar=2, munis=2, años=2, vals=0.008|0.0
+  - desc: Inmuebles urbanos y suburbanos con edificaciones; con anterioridad al año 2002 y hasta el año de 1993
+- `urbano_sin_edificacion_1993_2001` — apar=2, munis=2, años=2, vals=0.015|0.006
+  - desc: Inmuebles urbanos y suburbanos sin edificaciones; con anterioridad al año 2002 y hasta el año de 1993
+- `inmuebles_urbanos_y_suburbanos_con_edificaciones_ant_2002_1993` — apar=2, munis=2, años=2, vals=0.008|0.008
+  - desc: Inmuebles urbanos y suburbanos con valor determinado o modificado: edificaciones; con anterioridad al año 2002 y hasta 1993, inclusive.
+- `inmuebles_urbanos_y_suburbanos_sin_edificaciones_ant_2002_1993` — apar=2, munis=2, años=2, vals=0.015|0.015
+  - desc: Inmuebles urbanos y suburbanos con valor determinado o modificado: sin edificaciones; con anterioridad al año 2002 y hasta 1993, inclusive.
+- `anterior_2002_hasta_1993_sin_edificaciones` — apar=2, munis=2, años=2, vals=0.015|0.006
+  - desc: Inmuebles urbanos y suburbanos sin edificaciones, con anterioridad al año 2002 y hasta 1993 inclusive
+- `urbanos_suburbanos_edificados` — apar=2, munis=1, años=2, vals=0.0024|0.013
+  - desc: Inmuebles urbanos y suburbanos con edificaciones; años 2002 a 2010 inclusive
+- `urbanos_suburbanos_sin_edificaciones_ant_1993` — apar=2, munis=2, años=2, vals=0.012|0.012
+  - desc: Inmuebles urbanos y suburbanos sin edificaciones; con anterioridad al año de 1993
+- `rustico_historico` — apar=2, munis=2, años=2, vals=0.006|0.006
+  - desc: Inmuebles rústicos, con anterioridad al año 2002 y hasta 1993 inclusive
+- `anterior_1993_edificado` — apar=2, munis=2, años=2, vals=0.013|0.013
+  - desc: Inmuebles urbanos y suburbanos con edificaciones: con anterioridad al año 1993
+- `anterior_1993_sin_edificacion` — apar=2, munis=2, años=2, vals=0.013|0.012
+  - desc: Inmuebles urbanos y suburbanos sin edificaciones: con anterioridad al año 1993
+- `inmuebles_urbanos_y_suburbanos_sin_edificaciones_anterior_1993` — apar=2, munis=2, años=2, vals=0.0012|0.013
+  - desc: Inmuebles urbanos y suburbanos sin edificaciones: con anterioridad al año 1993.
+- `anios_2002_a_2011` — apar=2, munis=2, años=1, vals=0.0024|2.4
+  - desc: Durante los años 2002 y hasta 2011 inclusive
+- `urbano_suburbano_con_edificaciones_ant_1993` — apar=2, munis=2, años=2, vals=0.013|0.013
+  - desc: Inmuebles urbanos y suburbanos con edificaciones; con anterioridad al año de 1993
+- `urbano_suburbano_sin_edificaciones_ant_1993` — apar=2, munis=2, años=2, vals=0.012|0.012
+  - desc: Inmuebles urbanos y suburbanos sin edificaciones; con anterioridad al año de 1993
+- `urbanos_y_suburbanos_actuales` — apar=2, munis=2, años=2, vals=0.0024|0.0025
+  - desc: Inmuebles urbanos y suburbanos con valor determinado o modificado; con edificaciones.
+- `urbanos_y_suburbanos_anteriores_1993` — apar=2, munis=2, años=2, vals=0.013|0.013
+  - desc: Inmuebles urbanos y suburbanos con anterioridad a 1993; con edificaciones.
+- `urbanos_y_suburbanos_anteriores_1993_sin_edificaciones` — apar=2, munis=2, años=2, vals=0.012|0.012
+  - desc: Inmuebles urbanos y suburbanos con anterioridad a 1993; sin edificaciones.
+- `urbano_y_suburbano_sin_edificacion` — apar=2, munis=2, años=2, vals=3.75|0.0045
+  - desc: Inmuebles urbanos y suburbanos sin edificaciones; entrada en vigor de la ley y años 2002 al 2013 inclusive
+- `entrada_vigor_ley` — apar=2, munis=2, años=2, vals=0.0024|0.0024
+  - desc: A la entrada en vigor de la presente ley
+- `urbanos_y_suburbanos_con_edificaciones_entrada_en_vigor` — apar=2, munis=2, años=1, vals=0.0024|0.0024
+  - desc: Inmuebles urbanos y suburbanos con edificaciones, a la entrada en vigor de la ley
+- `urbanos_y_suburbanos_sin_edificaciones_entrada_en_vigor` — apar=2, munis=2, años=1, vals=0.0045|0.0045
+  - desc: Inmuebles urbanos y suburbanos sin edificaciones, a la entrada en vigor de la ley
+- `urbanos_y_suburbanos_con_edificaciones_2002_a_2014` — apar=2, munis=2, años=1, vals=0.0024|0.0024
+  - desc: Inmuebles urbanos y suburbanos con edificaciones, durante los años 2002 y hasta 2014 inclusive
+- `urbanos_y_suburbanos_sin_edificaciones_2002_a_2014` — apar=2, munis=2, años=1, vals=0.0045|0.0045
+  - desc: Inmuebles urbanos y suburbanos sin edificaciones, durante los años 2002 y hasta 2014 inclusive
+- `urbanos_y_suburbanos_con_edificaciones_anteriores_1993` — apar=2, munis=2, años=1, vals=0.013|0.013
+  - desc: Inmuebles urbanos y suburbanos con edificaciones, con anterioridad al año de 1993
+- `urbanos_y_suburbanos_sin_edificaciones_anteriores_1993` — apar=2, munis=2, años=1, vals=0.012|0.012
+  - desc: Inmuebles urbanos y suburbanos sin edificaciones, con anterioridad al año de 1993
+- `inmuebles_urbanos_y_suburbanos_con_edificaciones_anteriores_a_2002_hasta_1993` — apar=2, munis=2, años=2, vals=0.008|0.008
+  - desc: Inmuebles urbanos y suburbanos con edificaciones, con anterioridad al año 2002 y hasta el año 1993, inclusive
+- `inmuebles_urbanos_y_suburbanos_sin_edificaciones_anteriores_a_2002_hasta_1993` — apar=2, munis=2, años=2, vals=0.015|0.015
+  - desc: Inmuebles urbanos y suburbanos sin edificaciones, con anterioridad al año 2002 y hasta el año 1993, inclusive
+- `urbanos_y_suburbanos_con_edificaciones_1993_a_2001` — apar=2, munis=1, años=2, vals=0.008|0.008
+  - desc: Inmuebles urbanos y suburbanos con edificaciones, con anterioridad al año 2002 y hasta 1993 inclusive
+- `urbanos_y_suburbanos_sin_edificaciones_1993_a_2001` — apar=2, munis=1, años=2, vals=0.015|0.015
+  - desc: Inmuebles urbanos y suburbanos sin edificaciones, con anterioridad al año 2002 y hasta 1993 inclusive
+- `urbano_suburbano_con_edificacion` — apar=2, munis=2, años=2, vals=0.0024|0.0024
+  - desc: Inmuebles urbanos y suburbanos con edificaciones, a la entrada en vigor de la ley y durante 2002 a 2014 inclusive
+- `anterior_a_2002_hasta_1993` — apar=2, munis=2, años=2, vals=0.008|0.008
+  - desc: Inmuebles urbanos y suburbanos con valor determinado o modificado con edificaciones, con anterioridad al año 2002 y hasta 1993 inclusive
+- `anio_2002_a_2016` — apar=2, munis=2, años=1, vals=2.4|0.0024
+  - desc: Durante los años 2002 y hasta 2016, inclusive: inmuebles urbanos y suburbanos con edificaciones / sin edificaciones / rústicos
+- `a_la_entrada_en_vigor_de_la_presente_ley` — apar=2, munis=1, años=1, vals=0.0024|0.0045
+  - desc: Inmuebles con valor determinado o modificado: urbanos y suburbanos con edificaciones
+- `durante_los_anos_2002_y_hasta_el_ano_2016_inclusive` — apar=2, munis=1, años=1, vals=0.0024|0.0045
+  - desc: Inmuebles con valor determinado o modificado: urbanos y suburbanos con edificaciones
+- `con_anterioridad_al_ano_2002_y_hasta_el_ano_1993_inclusive` — apar=2, munis=1, años=1, vals=0.008|0.015
+  - desc: Inmuebles urbanos y suburbanos con edificaciones
+- `con_anterioridad_al_ano_de_1993` — apar=2, munis=1, años=1, vals=0.013|0.012
+  - desc: Inmuebles urbanos y suburbanos
+- `valor_determinado_modificado_2002_2017` — apar=2, munis=2, años=1, vals=0.0024|0.002
+  - desc: Inmuebles con valor determinado o modificado: durante los años 2002 hasta 2017 inclusive
+- `urbanos_y_suburbanos_con_edificacion` — apar=2, munis=2, años=2, vals=2.23|0.0024
+  - desc: Inmuebles urbanos y suburbanos con edificaciones, a la entrada en vigor de la ley y durante 2002 a 2019 inclusive
+- `urbanos_y_suburbanos_sin_edificacion` — apar=2, munis=2, años=2, vals=4.18|0.0045
+  - desc: Inmuebles urbanos y suburbanos sin edificaciones, a la entrada en vigor de la ley y durante 2002 a 2019 inclusive
+- `anio_2002_a_2021` — apar=2, munis=2, años=1, vals=0.0018|0.0024
+  - desc: Durante los años 2002 y hasta el 2021 inclusive
+- `general_1` — apar=2, munis=2, años=2, vals=0.0024|0.018
+  - desc: A la entrada en vigor de la presente ley: inmuebles urbanos y suburbanos con edificaciones
+- `general_2` — apar=2, munis=2, años=2, vals=0.0045|0.018
+  - desc: A la entrada en vigor de la presente ley: inmuebles urbanos y suburbanos sin edificaciones
+- `general_3` — apar=2, munis=2, años=2, vals=0.0024|0.015
+  - desc: Durante los años 2002 y hasta el 2023, inclusive: inmuebles urbanos y suburbanos con edificaciones
+- `general_4` — apar=2, munis=2, años=2, vals=0.0045|0.013
+  - desc: Durante los años 2002 y hasta el 2023, inclusive: inmuebles urbanos y suburbanos sin edificaciones
+- `inmuebles_con_valor_determinado_modificado_entrada_en_vigor` — apar=1, munis=1, años=1, vals=0.0024
+  - desc: A la entrada en vigor de la presente Ley
+- `inmuebles_con_valor_determinado_modificado_2002_a_2009` — apar=1, munis=1, años=1, vals=0.0024
+  - desc: Durante los años 2002 y hasta 2009 inclusive
+- `inmuebles_con_valor_determinado_modificado_anteriores_1993_a_2001` — apar=1, munis=1, años=1, vals=0.008
+  - desc: Con anterioridad al año 2002 y hasta 1993 inclusive
+- `inmuebles_con_valor_determinado_modificado_anteriores_1993` — apar=1, munis=1, años=1, vals=0.013
+  - desc: Con anterioridad al año de 1993
+- `urbanos_y_suburbanos_con_valor_determinado_o_modificado` — apar=1, munis=1, años=1, vals=2.4
+  - desc: Inmuebles urbanos y suburbanos con valor determinado o modificado; inmuebles rústicos
+- `urbanos_y_suburbanos_2010` — apar=1, munis=1, años=1, vals=3.5
+  - desc: A la entrada en vigor de la presente Ley, para inmuebles urbanos y suburbanos con valor determinado o modificado
+- `urbanos_y_suburbanos_2002_2009` — apar=1, munis=1, años=1, vals=2.4
+  - desc: Durante los años 2002 y hasta 2009 inclusive, para inmuebles urbanos y suburbanos con valor determinado o modificado
+- `urbanos_y_suburbanos_anterior_1993` — apar=1, munis=1, años=1, vals=1.3
+  - desc: Con anterioridad al año de 1993, para inmuebles urbanos y suburbanos con valor determinado o modificado
+- `valor_determinado_modificado_2002_2009` — apar=1, munis=1, años=1, vals=0.0024
+  - desc: Inmuebles que cuenten con un valor determinado o modificado: durante los años 2002 y hasta 2009, inclusive
+- `valor_determinado_modificado_1993_2001` — apar=1, munis=1, años=1, vals=0.008
+  - desc: Inmuebles que cuenten con un valor determinado o modificado: con anterioridad al año 2002 y hasta 1993, inclusive
+- `valor_determinado_modificado_anteriores_1993` — apar=1, munis=1, años=1, vals=0.013
+  - desc: Inmuebles que cuenten con un valor determinado o modificado: con anterioridad al año de 1993
+- `anios_2002_a_2009` — apar=1, munis=1, años=1, vals=0.0024
+  - desc: Durante los años 2002 y hasta el 2009, inclusive
+- `urbanos_suburbanos_modificado_con_edificaciones` — apar=1, munis=1, años=1, vals=0.00223
+  - desc: Inmuebles urbanos y suburbanos inmuebles con un valor determinado modificado: con edificaciones
+- `urbanos_suburbanos_modificado_sin_edificaciones` — apar=1, munis=1, años=1, vals=0.00418
+  - desc: Inmuebles urbanos y suburbanos inmuebles con un valor determinado modificado: sin edificaciones
+- `anteriores_2002_hasta_1993_con_edificaciones` — apar=1, munis=1, años=1, vals=0.015
+  - desc: Con anterioridad al año 2002 y hasta 1993 inclusive
+- `anteriores_2002_sin_edificaciones` — apar=1, munis=1, años=1, vals=0.006
+  - desc: Con anterioridad al año 2002 y hasta 1993 inclusive
+- `anio_2002_a_2009` — apar=1, munis=1, años=1, vals=0.0024
+  - desc: Inmuebles que cuenten con un valor determinado o modificado: edificaciones con y sin edificaciones; urbanos y suburbanos; rústicos. Durante 
+- `urbanos_y_suburbanos_con_edificaciones_entrada_vigor` — apar=1, munis=1, años=1, vals=0.0024
+  - desc: Inmuebles urbanos y suburbanos con edificaciones, a la entrada en vigor de la ley
+- `urbanos_y_suburbanos_sin_edificaciones_entrada_vigor` — apar=1, munis=1, años=1, vals=0.0045
+  - desc: Inmuebles urbanos y suburbanos sin edificaciones, a la entrada en vigor de la ley
+- `urbanos_y_suburbanos_con_edificaciones_2002_2009` — apar=1, munis=1, años=1, vals=0.0024
+  - desc: Inmuebles urbanos y suburbanos con edificaciones, durante los años 2002 hasta 2009 inclusive
+- `urbanos_y_suburbanos_sin_edificaciones_2002_2009` — apar=1, munis=1, años=1, vals=0.0045
+  - desc: Inmuebles urbanos y suburbanos sin edificaciones, durante los años 2002 hasta 2009 inclusive
+- `rusticos_2002_2009` — apar=1, munis=1, años=1, vals=0.0018
+  - desc: Inmuebles rústicos, durante los años 2002 hasta 2009 inclusive
+- `rusticos_1993_2001` — apar=1, munis=1, años=1, vals=0.006
+  - desc: Inmuebles rústicos, con anterioridad al año 2002 y hasta 1993 inclusive
+- `urbanos_y_suburbanos_con_edificaciones_pre1993` — apar=1, munis=1, años=1, vals=0.013
+  - desc: Inmuebles urbanos y suburbanos con edificaciones, con anterioridad al año 1993
+- `urbanos_y_suburbanos_sin_edificaciones_pre1993` — apar=1, munis=1, años=1, vals=0.013
+  - desc: Inmuebles urbanos y suburbanos sin edificaciones, con anterioridad al año 1993
+- `rusticos_pre1993` — apar=1, munis=1, años=1, vals=0.012
+  - desc: Inmuebles rústicos, con anterioridad al año 1993
+- `urbanos_suburbanos_edificaciones_construidas` — apar=1, munis=1, años=1, vals=0.0024
+  - desc: Inmuebles urbanos y suburbanos con edificaciones: a la entrada en vigor de la ley
+- `urbano_con_edificacion_2002_2008` — apar=1, munis=1, años=1, vals=0.0024
+  - desc: Inmuebles urbanos y suburbanos con edificaciones; durante los años 2002 y hasta el año 2008, inclusive
+- `urbano_sin_edificacion_2002_2008` — apar=1, munis=1, años=1, vals=0.0043
+  - desc: Inmuebles urbanos y suburbanos sin edificaciones; durante los años 2002 y hasta el año 2008, inclusive
+- `urbano_con_edificacion_pre_1993` — apar=1, munis=1, años=1, vals=0.013
+  - desc: Inmuebles urbanos y suburbanos con edificaciones; con anterioridad al año de 1993
+- `urbano_sin_edificacion_pre_1993` — apar=1, munis=1, años=1, vals=0.012
+  - desc: Inmuebles urbanos y suburbanos sin edificaciones; con anterioridad al año de 1993
+- `urbano_suburbano_con_edificaciones_anteriores_2002_y_hasta_1993` — apar=1, munis=1, años=1, vals=0.001
+  - desc: Inmuebles urbanos y suburbanos con edificaciones, con anterioridad al año 2002 y hasta el año 1993
+- `urbano_suburbano_sin_edificaciones_anteriores_2002_y_hasta_1993` — apar=1, munis=1, años=1, vals=0.015
+  - desc: Inmuebles urbanos y suburbanos sin edificaciones, con anterioridad al año 2002 y hasta el año 1993
+- `urbano_suburbano_con_edificaciones_anteriores_1993` — apar=1, munis=1, años=1, vals=0.013
+  - desc: Inmuebles urbanos y suburbanos con edificaciones, con anterioridad al año 1993
+- `urbano_suburbano_sin_edificaciones_anteriores_1993` — apar=1, munis=1, años=1, vals=0.013
+  - desc: Inmuebles urbanos y suburbanos sin edificaciones, con anterioridad al año 1993
+- `anos_2002_a_2010` — apar=1, munis=1, años=1, vals=0.0024
+  - desc: Inmuebles urbanos y suburbanos con edificaciones, inmuebles urbanos y suburbanos sin edificaciones, e inmuebles rústicos; durante los años 2
+- `anterior_1993_a_2002` — apar=1, munis=1, años=1, vals=0.006
+  - desc: Inmuebles urbanos y suburbanos con edificaciones, inmuebles urbanos y suburbanos sin edificaciones, e inmuebles rústicos; con anterioridad a
+- `inmuebles_urbanos_y_suburbanos_con_edificaciones_ant_1993` — apar=1, munis=1, años=1, vals=0.013
+  - desc: Inmuebles urbanos y suburbanos con valor determinado o modificado: edificaciones; con anterioridad al año de 1993.
+- `inmuebles_urbanos_y_suburbanos_sin_edificaciones_ant_1993` — apar=1, munis=1, años=1, vals=0.012
+  - desc: Inmuebles urbanos y suburbanos con valor determinado o modificado: sin edificaciones; con anterioridad al año de 1993.
+- `entrada_en_vigor_rusticos` — apar=1, munis=1, años=1, vals=0.000398
+  - desc: Inmuebles rústicos, a la entrada en vigor de la presente Ley
+- `2002_a_2010_edificados` — apar=1, munis=1, años=1, vals=0.00355
+  - desc: Inmuebles urbanos y suburbanos con edificaciones, durante los años 2002 a 2010 inclusive
+- `2002_a_2010_sin_edificaciones` — apar=1, munis=1, años=1, vals=0.0065
+  - desc: Inmuebles urbanos y suburbanos sin edificaciones, durante los años 2002 a 2010 inclusive
+- `2002_a_2010_rusticos` — apar=1, munis=1, años=1, vals=0.000398
+  - desc: Inmuebles rústicos, durante los años 2002 a 2010 inclusive
+- `anterior_2002_hasta_1993_edificados` — apar=1, munis=1, años=1, vals=0.008
+  - desc: Inmuebles urbanos y suburbanos con edificaciones, con anterioridad al año 2002 y hasta 1993 inclusive
+- `anterior_2002_hasta_1993_rusticos` — apar=1, munis=1, años=1, vals=0.006
+  - desc: Inmuebles rústicos, con anterioridad al año 2002 y hasta 1993 inclusive
+- `anterior_1993_edificados` — apar=1, munis=1, años=1, vals=0.013
+  - desc: Inmuebles urbanos y suburbanos con edificaciones, con anterioridad al año de 1993
+- `urbanos_suburbanos_edificados_ant_2002_1994_1993` — apar=1, munis=1, años=1, vals=0.008
+  - desc: Inmuebles urbanos y suburbanos con edificaciones; con anterioridad al año 2002 y hasta 1993 inclusive
+- `urbanos_suburbanos_sin_edificaciones_ant_2002_1994_1993` — apar=1, munis=1, años=1, vals=0.015
+  - desc: Inmuebles urbanos y suburbanos sin edificaciones; con anterioridad al año 2002 y hasta 1993 inclusive
+- `urbanos_suburbanos_edificados_ant_1993` — apar=1, munis=1, años=1, vals=0.013
+  - desc: Inmuebles urbanos y suburbanos con edificaciones; con anterioridad al año de 1993
+- `valor_inmueble_determinado_o_modificado` — apar=1, munis=1, años=1, vals=0.024
+  - desc: Inmuebles con valor inmueble determinado o modificado: a la entrada en vigor de la presente ley.
+- `valor_inmueble_determinado_o_modificado_2002_2010` — apar=1, munis=1, años=1, vals=0.024
+  - desc: Inmuebles con valor inmueble determinado o modificado: durante los años 2002 y hasta el 2010, inclusive.
+- `valor_inmueble_determinado_o_modificado_1993_2002` — apar=1, munis=1, años=1, vals=0.008
+  - desc: Inmuebles con valor inmueble determinado o modificado: con anterioridad al año 2002 y hasta 1993, inclusive.
+- `valor_inmueble_determinado_o_modificado_antes_1993` — apar=1, munis=1, años=1, vals=0.013
+  - desc: Inmuebles con valor inmueble determinado o modificado: con anterioridad al año de 1993.
+- `entradas_vigor_2002_2010` — apar=1, munis=1, años=1, vals=0.0024
+  - desc: Inmuebles que cuenten con un valor determinado o modificado; a la entrada en vigor de la ley y durante los años 2002 a 2010 inclusive.
+- `anteriores_1993_2002` — apar=1, munis=1, años=1, vals=0.008
+  - desc: Inmuebles que cuenten con un valor determinado o modificado; con anterioridad al año 2002 y hasta 1993 inclusive.
+- `urbano_con_edificacion_historico` — apar=1, munis=1, años=1, vals=0.008
+  - desc: Inmuebles urbanos y suburbanos con edificaciones, con anterioridad al año 2002 y hasta 1993 inclusive
+- `urbano_sin_edificacion_historico` — apar=1, munis=1, años=1, vals=0.015
+  - desc: Inmuebles urbanos y suburbanos sin edificaciones, con anterioridad al año 2002 y hasta 1993 inclusive
+- `urbano_con_edificacion_antiguo` — apar=1, munis=1, años=1, vals=0.013
+  - desc: Inmuebles urbanos y suburbanos con edificaciones, con anterioridad a 1993
+- `urbano_sin_edificacion_antiguo` — apar=1, munis=1, años=1, vals=0.012
+  - desc: Inmuebles urbanos y suburbanos sin edificaciones, con anterioridad a 1993
+- `entrada_en_vigor_sin_edificacion` — apar=1, munis=1, años=1, vals=0.002
+  - desc: Inmuebles urbanos y suburbanos sin edificaciones: a la entrada en vigor de la ley / años 2002 a 2010 inclusive
+- `entrada_en_vigor_rustico` — apar=1, munis=1, años=1, vals=0.0015
+  - desc: Inmuebles rústicos: a la entrada en vigor de la ley / años 2002 a 2010 inclusive
+- `anterior_2002_hasta_1993_edificado` — apar=1, munis=1, años=1, vals=0.015
+  - desc: Inmuebles urbanos y suburbanos con edificaciones: con anterioridad al año 2002 y hasta el año 1993 inclusive
+- `anterior_2002_hasta_1993_sin_edificacion` — apar=1, munis=1, años=1, vals=0.008
+  - desc: Inmuebles urbanos y suburbanos sin edificaciones: con anterioridad al año 2002 y hasta el año 1993 inclusive
+- `anterior_2002_hasta_1993_rustico` — apar=1, munis=1, años=1, vals=0.006
+  - desc: Inmuebles rústicos: con anterioridad al año 2002 y hasta el año 1993 inclusive
+- `anterior_1993_rustico` — apar=1, munis=1, años=1, vals=0.012
+  - desc: Inmuebles rústicos: con anterioridad al año 1993
+- `entrada_en_vigor_a` — apar=1, munis=1, años=1, vals=0.0024
+  - desc: A la entrada en vigor de la presente ley
+- `durante_2002_a_2011` — apar=1, munis=1, años=1, vals=0.0024
+  - desc: Durante los años 2002 y hasta 2011, inclusive
+- `anios_2002_2011_edificaciones` — apar=1, munis=1, años=1, vals=0.00355
+  - desc: Durante los años 2002 y hasta el 2011 inclusive: inmuebles urbanos y suburbanos con edificaciones
+- `anios_2002_2011_sin_edificaciones` — apar=1, munis=1, años=1, vals=0.0065
+  - desc: Durante los años 2002 y hasta el 2011 inclusive: inmuebles urbanos y suburbanos sin edificaciones
+- `anterior_2002_1993_edificaciones` — apar=1, munis=1, años=1, vals=0.008
+  - desc: Con anterioridad al año 2002 y hasta 1993 inclusive: inmuebles urbanos y suburbanos con edificaciones
+- `anterior_2002_1993_sin_edificaciones` — apar=1, munis=1, años=1, vals=0.015
+  - desc: Con anterioridad al año 2002 y hasta 1993 inclusive: inmuebles urbanos y suburbanos sin edificaciones
+- `anterior_1993_edificaciones` — apar=1, munis=1, años=1, vals=0.013
+  - desc: Con anterioridad al año de 1993: inmuebles urbanos y suburbanos con edificaciones
+- `urbano_suburbano_con_edificaciones_ant_2002` — apar=1, munis=1, años=1, vals=0.008
+  - desc: Inmuebles urbanos y suburbanos con edificaciones; con anterioridad al año 2002 y hasta 1993 inclusive
+- `urbano_suburbano_sin_edificaciones_ant_2002` — apar=1, munis=1, años=1, vals=0.015
+  - desc: Inmuebles urbanos y suburbanos sin edificaciones; con anterioridad al año 2002 y hasta 1993 inclusive
+- `2002_a_2011_inclusive` — apar=1, munis=1, años=1, vals=0.0024
+  - desc: Inmuebles urbanos y suburbanos con valor determinado o modificado: durante los años 2002 y hasta 2011 inclusive
+- `inmuebles_urbanos_y_suburbanos_2002_a_2011` — apar=1, munis=1, años=1, vals=0.0024
+  - desc: Inmuebles con valor determinado o con edificaciones; durante los años 2002 a 2011, inclusive.
+- `inmuebles_anteriores_2002_posteriores_1993` — apar=1, munis=1, años=1, vals=0.0015
+  - desc: Inmuebles con valor determinado o con edificaciones; con anterioridad al año 2002 y después de 1993.
+- `inmuebles_anteriores_1993` — apar=1, munis=1, años=1, vals=0.0013
+  - desc: Inmuebles con valor determinado o con edificaciones; con anterioridad al año de 1993.
+- `urbano_con_edificacion_pre1993` — apar=1, munis=1, años=1, vals=0.0013
+  - desc: Inmuebles urbanos y suburbanos con edificaciones, con anterioridad al año de 1993.
+- `urbano_sin_edificacion_pre1993` — apar=1, munis=1, años=1, vals=0.0012
+  - desc: Inmuebles urbanos y suburbanos sin edificaciones, con anterioridad al año de 1993.
+- `anteriores_2002_y_hasta_1993` — apar=1, munis=1, años=1, vals=8.0
+  - desc: Con anterioridad al año 2002 y hasta 1993 inclusive; urbanos y suburbanos con edificaciones / sin edificaciones / rústicos según columna
+- `urbanos_con_edificaciones` — apar=1, munis=1, años=1, vals=0.0024
+  - desc: Inmuebles urbanos y suburbanos con edificaciones
+- `urbanos_sin_edificaciones` — apar=1, munis=1, años=1, vals=0.0045
+  - desc: Inmuebles urbanos y suburbanos sin edificaciones
+- `entrada_en_vigor_2002_2011` — apar=1, munis=1, años=1, vals=0.0024
+  - desc: Inmuebles urbanos y suburbanos con edificaciones; inmuebles urbanos y suburbanos sin edificaciones; rústicos. A la entrada en vigor de la le
+- `anterior_1993_2001` — apar=1, munis=1, años=1, vals=0.008
+  - desc: Inmuebles urbanos y suburbanos con edificaciones; inmuebles urbanos y suburbanos sin edificaciones; rústicos. Con anterioridad al año 2002 y
+- `inmuebles_urbanos_y_suburbanos_con_edificaciones_antiguos` — apar=1, munis=1, años=1, vals=0.008
+  - desc: Inmuebles urbanos y suburbanos con edificaciones; con anterioridad al año 2002 y hasta 1993 inclusive.
+- `inmuebles_urbanos_y_suburbanos_sin_edificaciones_antiguos` — apar=1, munis=1, años=1, vals=0.015
+  - desc: Inmuebles urbanos y suburbanos sin edificaciones; con anterioridad al año 2002 y hasta 1993 inclusive.
+- `inmuebles_rusticos_antiguos` — apar=1, munis=1, años=1, vals=0.006
+  - desc: Inmuebles rústicos; con anterioridad al año 2002 y hasta 1993 inclusive.
+- `inmuebles_urbanos_y_suburbanos_con_edificaciones_muy_antiguos` — apar=1, munis=1, años=1, vals=0.013
+  - desc: Inmuebles urbanos y suburbanos con edificaciones; con anterioridad al año de 1993.
+- `inmuebles_urbanos_y_suburbanos_sin_edificaciones_muy_antiguos` — apar=1, munis=1, años=1, vals=0.012
+  - desc: Inmuebles urbanos y suburbanos sin edificaciones; con anterioridad al año de 1993.
+- `inmuebles_urbanos_suburbanos_con_edificaciones_ant_2002_1993` — apar=1, munis=1, años=1, vals=0.008
+  - desc: Con anterioridad al año 2002 y hasta 1993, inclusive.
+- `inmuebles_urbanos_suburbanos_sin_edificaciones_ant_2002_1993` — apar=1, munis=1, años=1, vals=0.015
+  - desc: Con anterioridad al año 2002 y hasta 1993, inclusive.
+- `inmuebles_urbanos_suburbanos_con_edificaciones_ant_1993` — apar=1, munis=1, años=1, vals=0.013
+  - desc: Con anterioridad al año de 1993.
+- `inmuebles_urbanos_suburbanos_sin_edificaciones_ant_1993` — apar=1, munis=1, años=1, vals=0.012
+  - desc: Con anterioridad al año de 1993.
+- `urbanos_y_suburbanos_actuales_sin_edificaciones` — apar=1, munis=1, años=1, vals=0.0045
+  - desc: Inmuebles urbanos y suburbanos con valor determinado o modificado; sin edificaciones.
+- `urbanos_y_suburbanos_2002_2013` — apar=1, munis=1, años=1, vals=0.0024
+  - desc: Inmuebles urbanos y suburbanos con anterioridad a 2002 y hasta 2013 inclusive; con edificaciones.
+- `urbanos_y_suburbanos_2002_2013_sin_edificaciones` — apar=1, munis=1, años=1, vals=0.0045
+  - desc: Inmuebles urbanos y suburbanos con anterioridad a 2002 y hasta 2013 inclusive; sin edificaciones.
+- `urbanos_y_suburbanos_1993_2001_sin_edificaciones` — apar=1, munis=1, años=1, vals=0.015
+  - desc: Inmuebles urbanos y suburbanos con anterioridad a 1993 y hasta 2001 inclusive; sin edificaciones.
+- `anterior_1993_hasta_1993` — apar=1, munis=1, años=1, vals=0.006
+  - desc: Con anterioridad al año 2002 y hasta 1993 inclusive
+- `urbanos_suburbanos_con_edificaciones_entrada_vigor` — apar=1, munis=1, años=1, vals=0.0024
+  - desc: Inmuebles urbanos y suburbanos con edificaciones; a la entrada en vigor de la presente Ley.
+- `urbanos_suburbanos_sin_edificaciones_entrada_vigor` — apar=1, munis=1, años=1, vals=0.0045
+  - desc: Inmuebles urbanos y suburbanos sin edificaciones; a la entrada en vigor de la presente Ley.
+- `inmuebles_urbanos_suburbanos_con_edificaciones_anterior_2002_1993` — apar=1, munis=1, años=1, vals=0.008
+  - desc: Inmuebles urbanos y suburbanos con edificaciones, con anterioridad al año 2002 y hasta 1993 inclusive
+- `inmuebles_urbanos_suburbanos_sin_edificaciones_anterior_2002_1993` — apar=1, munis=1, años=1, vals=0.015
+  - desc: Inmuebles urbanos y suburbanos sin edificaciones, con anterioridad al año 2002 y hasta 1993 inclusive
+- `inmuebles_urbanos_suburbanos_con_edificaciones_anterior_1993` — apar=1, munis=1, años=1, vals=0.013
+  - desc: Inmuebles urbanos y suburbanos con edificaciones, con anterioridad a 1993
+- `inmuebles_urbanos_suburbanos_sin_edificaciones_anterior_1993` — apar=1, munis=1, años=1, vals=0.012
+  - desc: Inmuebles urbanos y suburbanos sin edificaciones, con anterioridad a 1993
+- `urbano_y_suburbano_edificado` — apar=1, munis=1, años=1, vals=2.0
+  - desc: Inmuebles urbanos y suburbanos con edificaciones; entrada en vigor de la ley y años 2002 al 2013 inclusive
+- `urbanos_y_suburbanos_con_edificaciones_anteriores_1993_2002` — apar=1, munis=1, años=1, vals=0.008
+  - desc: Inmuebles urbanos y suburbanos con edificaciones, con anterioridad al año 2002 y hasta 1993 inclusive
+- `urbanos_y_suburbanos_sin_edificaciones_anteriores_1993_2002` — apar=1, munis=1, años=1, vals=0.015
+  - desc: Inmuebles urbanos y suburbanos sin edificaciones, con anterioridad al año 2002 y hasta 1993 inclusive
+- `anio_2002_a_2014_inclusive` — apar=1, munis=1, años=1, vals=1.8
+  - desc: Durante los años 2002 y hasta el 2014 inclusive: inmuebles urbanos y suburbanos con edificaciones / sin edificaciones; inmuebles rústicos.
+- `anterior_2002_hasta_1993_inclusive` — apar=1, munis=1, años=1, vals=6.0
+  - desc: Con anterioridad al año 2002 y hasta 1993 inclusive: inmuebles urbanos y suburbanos con edificaciones / sin edificaciones; inmuebles rústico
+- `2002_a_2014_con_edificaciones` — apar=1, munis=1, años=1, vals=0.00355
+  - desc: Inmuebles urbanos y suburbanos con valor determinado o modificado: durante los años 2002 y hasta 2014 inclusive; con edificaciones
+- `2002_a_2014_sin_edificaciones` — apar=1, munis=1, años=1, vals=0.0065
+  - desc: Inmuebles urbanos y suburbanos con valor determinado o modificado: durante los años 2002 y hasta 2014 inclusive; sin edificaciones
+- `antes_de_2002_hasta_1993_con_edificaciones` — apar=1, munis=1, años=1, vals=0.008
+  - desc: Inmuebles urbanos y suburbanos con valor determinado o modificado: con anterioridad al año 2002 y hasta 1993 inclusive; con edificaciones
+- `antes_de_2002_hasta_1993_sin_edificaciones` — apar=1, munis=1, años=1, vals=0.015
+  - desc: Inmuebles urbanos y suburbanos con valor determinado o modificado: con anterioridad al año 2002 y hasta 1993 inclusive; sin edificaciones
+- `con_anterioridad_a_1993_con_edificaciones` — apar=1, munis=1, años=1, vals=0.013
+  - desc: Inmuebles urbanos y suburbanos con valor determinado o modificado: con anterioridad al año de 1993; con edificaciones
+- `con_anterioridad_a_1993_sin_edificaciones` — apar=1, munis=1, años=1, vals=0.012
+  - desc: Inmuebles urbanos y suburbanos con valor determinado o modificado: con anterioridad al año de 1993; sin edificaciones
+- `valor_determinado_o_modificado_vigente` — apar=1, munis=1, años=1, vals=0.0024
+  - desc: Inmuebles urbanos y suburbanos con edificaciones; inmuebles urbanos y suburbanos sin edificaciones; inmuebles rústicos, para valores determi
+- `valor_determinado_o_modificado_2002_2014` — apar=1, munis=1, años=1, vals=0.0024
+  - desc: Inmuebles urbanos y suburbanos con edificaciones; inmuebles urbanos y suburbanos sin edificaciones; inmuebles rústicos, para valores determi
+- `valor_determinado_o_modificado_1993_2001` — apar=1, munis=1, años=1, vals=0.008
+  - desc: Inmuebles urbanos y suburbanos con edificaciones; inmuebles urbanos y suburbanos sin edificaciones; inmuebles rústicos, para valores determi
+- `valor_determinado_o_modificado_vigente_sin_edificaciones` — apar=1, munis=1, años=1, vals=0.0045
+  - desc: Inmuebles urbanos y suburbanos sin edificaciones, para valores determinados o modificados a la entrada en vigor de la ley
+- `valor_determinado_o_modificado_1993_2001_sin_edificaciones` — apar=1, munis=1, años=1, vals=0.015
+  - desc: Inmuebles urbanos y suburbanos sin edificaciones, para valores determinados o modificados con anterioridad a 2002 y hasta 1993 inclusive
+- `valor_determinado_o_modificado_vigente_rustico` — apar=1, munis=1, años=1, vals=0.0018
+  - desc: Inmuebles rústicos, para valores determinados o modificados a la entrada en vigor de la ley
+- `valor_determinado_o_modificado_2002_2014_rustico` — apar=1, munis=1, años=1, vals=0.0018
+  - desc: Inmuebles rústicos, para valores determinados o modificados durante 2002 y hasta 2014 inclusive
+- `valor_determinado_o_modificado_1993_2001_rustico` — apar=1, munis=1, años=1, vals=0.006
+  - desc: Inmuebles rústicos, para valores determinados o modificados con anterioridad a 2002 y hasta 1993 inclusive
+- `inmuebles_urbanos_y_suburbanos_con_edificaciones_anteriores_1993_1993` — apar=1, munis=1, años=1, vals=0.013
+  - desc: Inmuebles urbanos y suburbanos con edificaciones; con anterioridad al año 1993.
+- `inmuebles_urbanos_y_suburbanos_sin_edificaciones_anteriores_1993_1993` — apar=1, munis=1, años=1, vals=0.012
+  - desc: Inmuebles urbanos y suburbanos sin edificaciones; con anterioridad al año 1993.
+- `predios_anteriores_a_1993` — apar=1, munis=1, años=1, vals=0.012
+  - desc: Con anterioridad al año 1993
+- `rusticos_entrada_en_vigor` — apar=1, munis=1, años=1, vals=0.0018
+  - desc: Inmuebles rústicos, a la entrada en vigor de la ley
+- `rusticos_2002_a_2014` — apar=1, munis=1, años=1, vals=0.0018
+  - desc: Inmuebles rústicos, durante los años 2002 y hasta 2014 inclusive
+- `rusticos_1993_a_2001` — apar=1, munis=1, años=1, vals=0.006
+  - desc: Inmuebles rústicos, con anterioridad al año 2002 y hasta 1993 inclusive
+- `entradas_ley_2002_2014` — apar=1, munis=1, años=1, vals=0.0024
+  - desc: Inmuebles que cuenten con edificaciones
+- `entradas_ley_2002_2014_sin_edificaciones` — apar=1, munis=1, años=1, vals=0.0045
+  - desc: Inmuebles urbanos y suburbanos sin edificaciones
+- `rusticos_2002_2014` — apar=1, munis=1, años=1, vals=0.0018
+  - desc: Inmuebles rústicos
+- `anteriores_2002_1993_con_edificaciones` — apar=1, munis=1, años=1, vals=0.008
+  - desc: Con anterioridad al año 2002 y hasta el año 1993, inmuebles con edificaciones
+- `anteriores_2002_1993_sin_edificaciones` — apar=1, munis=1, años=1, vals=0.015
+  - desc: Con anterioridad al año 2002 y hasta el año 1993, inmuebles urbanos y suburbanos sin edificaciones
+- `urbano_suburbano_con_edificacion_historico` — apar=1, munis=1, años=1, vals=0.008
+  - desc: Inmuebles urbanos y suburbanos con edificaciones, con anterioridad al año 2002 y hasta 1993 inclusive
+- `urbano_suburbano_sin_edificacion_historico` — apar=1, munis=1, años=1, vals=0.015
+  - desc: Inmuebles urbanos y suburbanos sin edificaciones, con anterioridad al año 2002 y hasta 1993 inclusive
+- `2002_2014` — apar=1, munis=1, años=1, vals=0.0024
+  - desc: Los inmuebles que cuenten con un valor determinado modificado: durante los años 2002 y hasta 2014 inclusive
+- `anos_2002_a_2014` — apar=1, munis=1, años=1, vals=0.0024
+  - desc: Inmuebles urbanos y suburbanos con valor determinado o modificado con edificaciones, durante los años 2002 al 2014 inclusive
+- `inmuebles_con_edificaciones` — apar=1, munis=1, años=1, vals=0.0024
+  - desc: Inmuebles urbanos y suburbanos con edificaciones
+- `inmuebles_sin_edificaciones` — apar=1, munis=1, años=1, vals=0.0045
+  - desc: Inmuebles urbanos y suburbanos sin edificaciones
+- `urbano_suburbano_general` — apar=1, munis=1, años=1, vals=0.003
+  - desc: Inmuebles urbanos y suburbanos
+- `inmuebles_urbanos_suburbanos_con_desalumbrado` — apar=1, munis=1, años=1, vals=0.0018
+  - desc: Inmuebles urbanos y suburbanos con des alumbre / sin desa; a la entrada en vigor de la presente Ley / durante 2002 a 2016 inclusive
+- `inmuebles_urbanos_suburbanos_con_edificaciones_antiguos_1993_2001` — apar=1, munis=1, años=1, vals=0.008
+  - desc: Inmuebles urbanos y suburbanos con edificaciones; con anterioridad al año 2002 y hasta 1993 inclusive
+- `inmuebles_urbanos_suburbanos_sin_edificaciones_antiguos_1993_2001` — apar=1, munis=1, años=1, vals=0.015
+  - desc: Inmuebles urbanos y suburbanos sin edificaciones; con anterioridad al año 2002 y hasta 1993 inclusive
+- `inmuebles_urbanos_suburbanos_con_desalumbrado_antiguos_1993_2001` — apar=1, munis=1, años=1, vals=0.006
+  - desc: Inmuebles urbanos y suburbanos con des alumbre / sin desa; con anterioridad al año 2002 y hasta 1993 inclusive
+- `inmuebles_urbanos_suburbanos_con_edificaciones_anteriores_1993` — apar=1, munis=1, años=1, vals=0.013
+  - desc: Inmuebles urbanos y suburbanos con edificaciones; con anterioridad a 1993
+- `inmuebles_urbanos_suburbanos_sin_edificaciones_anteriores_1993` — apar=1, munis=1, años=1, vals=0.012
+  - desc: Inmuebles urbanos y suburbanos sin edificaciones; con anterioridad a 1993
+- `tasa_entrada_vigor` — apar=1, munis=1, años=1, vals=0.002
+  - desc: Inmuebles con valor determinado o modificado a la entrada en vigor de la ley
+- `tasa_2002_2016` — apar=1, munis=1, años=1, vals=0.002
+  - desc: Inmuebles con valor determinado o modificado durante los años 2002 al 2016 inclusive
+- `tasa_1993_2001` — apar=1, munis=1, años=1, vals=0.008
+  - desc: Inmuebles con valor determinado o modificado con anterioridad al año 2002 y hasta 1993 inclusive
+- `tasa_anteriores_1993` — apar=1, munis=1, años=1, vals=0.013
+  - desc: Inmuebles con valor determinado o modificado con anterioridad al año 1993
+- `urbano_suburbano_con_edificaciones_2002_a_2016` — apar=1, munis=1, años=1, vals=0.0024
+  - desc: Inmuebles urbanos y suburbanos con edificaciones, durante los años 2002 y hasta 2016 inclusive
+- `urbano_suburbano_sin_edificaciones_2002_a_2016` — apar=1, munis=1, años=1, vals=0.0045
+  - desc: Inmuebles urbanos y suburbanos sin edificaciones, durante los años 2002 y hasta 2016 inclusive
+- `rustico_2002_a_2016` — apar=1, munis=1, años=1, vals=0.0018
+  - desc: Inmuebles rústicos, durante los años 2002 y hasta 2016 inclusive
+- `urbano_suburbano_con_edificaciones_1994_a_2001` — apar=1, munis=1, años=1, vals=0.008
+  - desc: Inmuebles urbanos y suburbanos con edificaciones, con anterioridad al año 2002 y hasta 1993 inclusive
+- `urbano_suburbano_sin_edificaciones_1994_a_2001` — apar=1, munis=1, años=1, vals=0.015
+  - desc: Inmuebles urbanos y suburbanos sin edificaciones, con anterioridad al año 2002 y hasta 1993 inclusive
+- `rustico_1994_a_2001` — apar=1, munis=1, años=1, vals=0.006
+  - desc: Inmuebles rústicos, con anterioridad al año 2002 y hasta 1993 inclusive
+- `urbano_suburbano_con_edificaciones_1993_anterior` — apar=1, munis=1, años=1, vals=0.013
+  - desc: Inmuebles urbanos y suburbanos con edificaciones, con anterioridad al año 1993
+- `urbano_suburbano_sin_edificaciones_1993_anterior` — apar=1, munis=1, años=1, vals=0.012
+  - desc: Inmuebles urbanos y suburbanos sin edificaciones, con anterioridad al año 1993
+- `anteriores_a_2002_hasta_1993` — apar=1, munis=1, años=1, vals=8.0
+  - desc: Con anterioridad al año 2002 y hasta 1993, inclusive: inmuebles urbanos y suburbanos con edificaciones / sin edificaciones / rústicos
+- `anios_2002_a_2016` — apar=1, munis=1, años=1, vals=0.0024
+  - desc: Durante los años 2002 y hasta el año 2016, inclusive
+- `anterior_2002_post_1993` — apar=1, munis=1, años=1, vals=0.008
+  - desc: Con anterioridad al año 2002 y después de 1993
+- `urbanos_y_suburbanos_reciente` — apar=1, munis=1, años=1, vals=0.0024
+  - desc: Inmuebles con valor determinado o modificado: a la entrada en vigor de la presente Ley; inmuebles urbanos y suburbanos con o sin edificacion
+- `urbanos_y_suburbanos_2002_a_2016` — apar=1, munis=1, años=1, vals=0.0024
+  - desc: Inmuebles con valor determinado o modificado: durante los años 2002 y hasta 2016 inclusive; inmuebles urbanos y suburbanos con o sin edifica
+- `urbanos_y_suburbanos_1993_a_2001` — apar=1, munis=1, años=1, vals=0.008
+  - desc: Inmuebles con valor determinado o modificado: con anterioridad al año 2002 y hasta 1993 inclusive; inmuebles urbanos y suburbanos con o sin 
+- `urbanos_y_suburbanos_anterior_a_1993` — apar=1, munis=1, años=1, vals=0.013
+  - desc: Inmuebles con valor determinado o modificado: con anterioridad al año 1993
+- `valor_determinado_modificado_pre_2002_hasta_1993` — apar=1, munis=1, años=1, vals=0.008
+  - desc: Inmuebles con valor determinado o modificado: con anterioridad al año 2002 y hasta 1993 inclusive
+- `valor_determinado_modificado_anterior_1993` — apar=1, munis=1, años=1, vals=0.01
+  - desc: Inmuebles con valor determinado o modificado: con anterioridad al año 1993
+- `valor_determinado_o_modificado_2002_2017` — apar=1, munis=1, años=1, vals=0.0024
+  - desc: Inmuebles con valor determinado o modificado durante los años 2002 hasta 2017, inclusive.
+- `valor_determinado_o_modificado_anteriores_2002_hasta_1993` — apar=1, munis=1, años=1, vals=0.003
+  - desc: Inmuebles con valor determinado o modificado con anterioridad al año 2002 y hasta 1993, inclusive.
+- `valor_determinado_o_modificado_anteriores_1993` — apar=1, munis=1, años=1, vals=0.013
+  - desc: Inmuebles con valor determinado o modificado con anterioridad al año de 1993.
+- `urbano_suburbano_con_edificaciones_ant_2002_1993` — apar=1, munis=1, años=1, vals=0.008
+  - desc: Inmuebles urbanos y suburbanos con edificaciones; con anterioridad al año 2002 y hasta 1993, inclusive.
+- `urbano_suburbano_sin_edificaciones_ant_2002_1993` — apar=1, munis=1, años=1, vals=0.015
+  - desc: Inmuebles urbanos y suburbanos sin edificaciones; con anterioridad al año 2002 y hasta 1993, inclusive.
+- `inmuebles_con_valor_determinado` — apar=1, munis=1, años=1, vals=0.004
+  - desc: Inmuebles que cuenten con un valor determinado o modificados, a la entrada en vigor de la ley
+- `anteriores_2002_hasta_1993` — apar=1, munis=1, años=1, vals=0.008
+  - desc: Con anterioridad al año 2002 y hasta el año 1993 inclusive
+- `inmuebles_urbanos_y_suburbanos_con_edificaciones_anteriores_2002_1993` — apar=1, munis=1, años=1, vals=0.008
+  - desc: Inmuebles urbanos y suburbanos con edificaciones; con anterioridad al año 2002 y hasta 1993 inclusive.
+- `inmuebles_urbanos_y_suburbanos_sin_edificaciones_anteriores_2002_1993` — apar=1, munis=1, años=1, vals=0.015
+  - desc: Inmuebles urbanos y suburbanos sin edificaciones; con anterioridad al año 2002 y hasta 1993 inclusive.
+- `urbanos_y_suburbanos_2002_2017` — apar=1, munis=1, años=1, vals=0.0025
+  - desc: Inmuebles urbanos y suburbanos con valor determinado o modificado: edificaciones, durante el año 2002 y hasta el 2017 inclusive.
+- `urbanos_y_suburbanos_hasta_1993` — apar=1, munis=1, años=1, vals=0.008
+  - desc: Inmuebles urbanos y suburbanos con valor determinado o modificado: edificaciones, con anterioridad al año 2002 o hasta 1993 inclusive.
+- `urbanos_suburbanos_con_edificacion` — apar=1, munis=1, años=1, vals=0.0024
+  - desc: Inmuebles urbanos y suburbanos con edificaciones; valor determinado o modificado: a la entrada en vigor de la ley / durante 2002 a 2017 / an
+- `urbanos_suburbanos_sin_edificacion` — apar=1, munis=1, años=1, vals=0.0045
+  - desc: Inmuebles urbanos y suburbanos sin edificaciones; valor determinado o modificado: a la entrada en vigor de la ley / durante 2002 a 2017 / an
+- `valor_determinado_modificado_entrada_en_vigor` — apar=1, munis=1, años=1, vals=0.002
+  - desc: Los inmuebles que cuenten con un valor determinado o modificado a la entrada en vigor de la presente Ley
+- `valor_determinado_modificado_antes_2002_hasta_1993` — apar=1, munis=1, años=1, vals=0.008
+  - desc: Los inmuebles que cuenten con un valor determinado o modificado con anterioridad al año 2002 y hasta el año 1993 inclusive
+- `valor_determinado_modificado_antes_1993` — apar=1, munis=1, años=1, vals=0.013
+  - desc: Los inmuebles que cuenten con un valor determinado o modificado con anterioridad al año de 1993
+- `inmuebles_urbanos_y_suburbanos_ant_1993` — apar=1, munis=1, años=1, vals=0.013
+  - desc: Inmuebles urbanos y suburbanos con edificaciones o sin edificaciones, con anterioridad al año 1993.
+- `durante_2002_a_2017` — apar=1, munis=1, años=1, vals=0.0024
+  - desc: Inmuebles que cuenten con un valor determinado o modificado durante los años 2002 y hasta 2017, inclusive
+- `con_anterioridad_a_2002_y_despues_1993` — apar=1, munis=1, años=1, vals=0.008
+  - desc: Inmuebles que cuenten con un valor determinado o modificado con anterioridad al año 2002 y después de 1993
+- `con_anterioridad_a_1993` — apar=1, munis=1, años=1, vals=0.013
+  - desc: Inmuebles que cuenten con un valor determinado o modificado con anterioridad al año de 1993
+- `anio_2002_a_2018_con_edificaciones` — apar=1, munis=1, años=1, vals=0.0024
+  - desc: Inmuebles urbanos y suburbanos con valor determinado o modificado: con edificaciones, durante el año 2002 y hasta 2018 inclusive
+- `anio_2002_a_2018_sin_edificaciones` — apar=1, munis=1, años=1, vals=0.0045
+  - desc: Inmuebles urbanos y suburbanos con valor determinado o modificado: sin edificaciones, durante el año 2002 y hasta 2018 inclusive
+- `anterior_2002_hasta_1993_con_edificaciones` — apar=1, munis=1, años=1, vals=0.0015
+  - desc: Inmuebles urbanos y suburbanos con valor determinado o modificado: con edificaciones, con anterioridad al año 2002 y hasta 1993 inclusive
+- `anterior_1993_con_edificaciones` — apar=1, munis=1, años=1, vals=0.013
+  - desc: Inmuebles urbanos y suburbanos con valor determinado o modificado: con edificaciones, con anterioridad al año 1993
+- `anios_2002_a_2018` — apar=1, munis=1, años=1, vals=0.0024
+  - desc: Inmuebles que cuenten con un valor determinado o modificado: durante los años 2002 y hasta el 2018, inclusive
+- `anterior_1993_a_1993` — apar=1, munis=1, años=1, vals=0.008
+  - desc: Inmuebles que cuenten con un valor determinado o modificado: con anterioridad al año 2002 y hasta el 1993, inclusive
+- `inmuebles_urbanos_y_suburbanos_con_valor_determinado_o_modificado` — apar=1, munis=1, años=1, vals=2.4
+  - desc: A la entrada en vigor de la presente Ley; inmuebles urbanos y suburbanos con valor determinado o modificado
+- `inmuebles_urbanos_y_suburbanos_con_valor_determinado_o_modificado_2002_2018` — apar=1, munis=1, años=1, vals=2.4
+  - desc: Durante los años 2002 y hasta el 2018 inclusive; inmuebles urbanos y suburbanos con valor determinado o modificado
+- `inmuebles_urbanos_y_suburbanos_con_valor_determinado_o_modificado_1993_2002` — apar=1, munis=1, años=1, vals=8.0
+  - desc: Con anterioridad al año 2002 y hasta el año 1993 inclusive; inmuebles urbanos y suburbanos con valor determinado o modificado
+- `inmuebles_urbanos_y_suburbanos_con_valor_determinado_o_modificado_anteriores_1993` — apar=1, munis=1, años=1, vals=13.0
+  - desc: Con anterioridad al año de 1993; inmuebles urbanos y suburbanos con valor determinado o modificado
+- `urbanos_suburbanos_con_edificaciones_ant_1993` — apar=1, munis=1, años=1, vals=0.013
+  - desc: Inmuebles urbanos y suburbanos con edificaciones; con anterioridad al año de 1993.
+- `urbanos_y_suburbanos_con_edificaciones_vigencia_entrada_en_2019` — apar=1, munis=1, años=1, vals=0.0024
+  - desc: Inmuebles urbanos y suburbanos con edificaciones; valor determinado o modificado: a la entrada en vigor de la presente Ley
+- `urbanos_y_suburbanos_sin_edificaciones_vigencia_entrada_en_2019` — apar=1, munis=1, años=1, vals=0.0045
+  - desc: Inmuebles urbanos y suburbanos sin edificaciones; valor determinado o modificado: a la entrada en vigor de la presente Ley
+- `urbanos_y_suburbanos_con_edificaciones_2002_a_2018` — apar=1, munis=1, años=1, vals=0.0024
+  - desc: Inmuebles urbanos y suburbanos con edificaciones; durante el año 2002 y hasta el año 2018, inclusive
+- `urbanos_y_suburbanos_sin_edificaciones_2002_a_2018` — apar=1, munis=1, años=1, vals=0.0045
+  - desc: Inmuebles urbanos y suburbanos sin edificaciones; durante el año 2002 y hasta el año 2018, inclusive
+- `urbanos_y_suburbanos_con_edificaciones_1993_a_2002` — apar=1, munis=1, años=1, vals=0.008
+  - desc: Inmuebles urbanos y suburbanos con edificaciones; con anterioridad al año 2002 y hasta el año 1993, inclusive
+- `urbanos_y_suburbanos_sin_edificaciones_1993_a_2002` — apar=1, munis=1, años=1, vals=0.015
+  - desc: Inmuebles urbanos y suburbanos sin edificaciones; con anterioridad al año 2002 y hasta el año 1993, inclusive
+- `urbanos_y_suburbanos_con_edificaciones_anteriores_a_1993` — apar=1, munis=1, años=1, vals=0.013
+  - desc: Inmuebles urbanos y suburbanos con edificaciones; con anterioridad al año de 1993
+- `urbanos_y_suburbanos_sin_edificaciones_anteriores_a_1993` — apar=1, munis=1, años=1, vals=0.012
+  - desc: Inmuebles urbanos y suburbanos sin edificaciones; con anterioridad al año de 1993
+- `inmuebles_con_valor_modificado_presenta_ley` — apar=1, munis=1, años=1, vals=0.0024
+  - desc: Inmuebles con valor modificado determinado conforme a la presente Ley
+- `inmuebles_durante_anos_2002_a_2018_inclusive` — apar=1, munis=1, años=1, vals=0.0045
+  - desc: Inmuebles durante los años 2002 y hasta 2018, inclusive
+- `inmuebles_con_anterioridad_a_2002` — apar=1, munis=1, años=1, vals=0.008
+  - desc: Inmuebles con anterioridad al año 2002
+- `entrada_en_vigor_a_1993_o_mas_reciente` — apar=1, munis=1, años=1, vals=0.008
+  - desc: Inmuebles que cuenten con edificaciones, al entrar en vigor la Ley o con anterioridad al año 2002 y hasta 1993, inclusive; en el texto apare
+- `anterior_a_2002_y_hasta_1993_inclusive` — apar=1, munis=1, años=1, vals=0.0015
+  - desc: Inmuebles que cuenten con edificaciones, con anterioridad al año 2002 y hasta 1993, inclusive; en el texto aparecen columnas para inmuebles 
+- `entrada_vigor_urbanos_suburbanos` — apar=1, munis=1, años=1, vals=0.00375
+  - desc: A la entrada en vigor de la presente ley: inmuebles urbanos y suburbanos con edificaciones o sin edificaciones
+- `urbano_suburbano_construido` — apar=1, munis=1, años=1, vals=0.0024
+  - desc: Inmuebles urbanos y suburbanos construidos o edificados; para el año 2019 en la tabla de tasas.
+- `urbano_suburbano_sin_edificar` — apar=1, munis=1, años=1, vals=0.0045
+  - desc: Inmuebles urbanos y suburbanos sin edificar; para el año 2019 en la tabla de tasas.
+- `inmuebles_urbanos_y_suburbanos_otros` — apar=1, munis=1, años=1, vals=0.0018
+  - desc: Inmuebles urbanos y suburbanos con valor determinado, aplicable para 2019 según Art. 4.
+- `inmuebles_urbanos_y_suburbanos_con_edificacion` — apar=1, munis=1, años=1, vals=2.4
+  - desc: Inmuebles urbanos y suburbanos con edificación
+- `inmuebles_urbanos_y_suburbanos_sin_edificacion` — apar=1, munis=1, años=1, vals=4.5
+  - desc: Inmuebles urbanos y suburbanos sin edificaciones
+- `urbano_y_suburbano_con_edificacion` — apar=1, munis=1, años=1, vals=0.0024
+  - desc: Inmuebles urbanos y suburbanos con edificaciones, según la antigüedad indicada en el artículo 4.
+- `anio_2002_a_2019` — apar=1, munis=1, años=1, vals=0.004
+  - desc: Durante el año de 2002 y hasta 2019, inclusive
+- `urbano_suburbano_baldio` — apar=1, munis=1, años=1, vals=0.0045
+  - desc: Inmuebles urbanos y suburbanos con valor determinado o sin valor determinado, edificaciones.
+- `urbanos_y_suburbanos_con_edificacion_anterior_2002` — apar=1, munis=1, años=1, vals=8.0
+  - desc: Inmuebles urbanos y suburbanos con edificaciones, con anterioridad al año 2002 y hasta 1993 inclusive
+- `urbanos_y_suburbanos_sin_edificacion_anterior_2002` — apar=1, munis=1, años=1, vals=15.0
+  - desc: Inmuebles urbanos y suburbanos sin edificaciones, con anterioridad al año 2002 y hasta 1993 inclusive
+- `urbanos_y_suburbanos_con_edificacion_anteriores_1993` — apar=1, munis=1, años=1, vals=10.0
+  - desc: Inmuebles urbanos y suburbanos con edificaciones, con anterioridad al año de 1993
+- `urbanos_y_suburbanos_sin_edificacion_anteriores_1993` — apar=1, munis=1, años=1, vals=13.0
+  - desc: Inmuebles urbanos y suburbanos sin edificaciones, con anterioridad al año de 1993
+- `entrada_vigor_edificado` — apar=1, munis=1, años=1, vals=0.0024
+  - desc: Inmuebles urbanos y suburbanos con edificaciones, a la entrada en vigor de la ley; y durante 2002 a 2019 inclusive.
+- `entrada_vigor_sin_edificacion` — apar=1, munis=1, años=1, vals=0.0045
+  - desc: Inmuebles urbanos y suburbanos sin edificaciones, a la entrada en vigor de la ley; y durante 2002 a 2019 inclusive.
+- `entrada_vigor_rustico` — apar=1, munis=1, años=1, vals=0.0018
+  - desc: Inmuebles rústicos, a la entrada en vigor de la ley; y durante 2002 a 2019 inclusive.
+- `anterior_2002_edificado` — apar=1, munis=1, años=1, vals=0.008
+  - desc: Inmuebles urbanos y suburbanos con edificaciones, con anterioridad al año 2002 y hasta 1993 inclusive.
+- `anterior_2002_sin_edificacion` — apar=1, munis=1, años=1, vals=0.015
+  - desc: Inmuebles urbanos y suburbanos sin edificaciones, con anterioridad al año 2002 y hasta 1993 inclusive.
+- `urbano_suburbano_edificado_ant_2002_1993` — apar=1, munis=1, años=1, vals=0.008
+  - desc: Inmuebles urbanos y suburbanos o edificados: con anterioridad al año 2002 y hasta 1993, inclusive.
+- `rustico_ant_2002_1993` — apar=1, munis=1, años=1, vals=0.015
+  - desc: Inmuebles rústicos: con anterioridad al año 2002 y hasta 1993, inclusive.
+- `urbano_suburbano_edificado_ant_1993` — apar=1, munis=1, años=1, vals=0.013
+  - desc: Inmuebles urbanos y suburbanos o edificados: con anterioridad al año de 1993.
+- `rustico_ant_1993` — apar=1, munis=1, años=1, vals=0.012
+  - desc: Inmuebles rústicos: con anterioridad al año de 1993.
+- `anterior_2002_hasta_1993_valor_determinado_o_modificado` — apar=1, munis=1, años=1, vals=0.003
+  - desc: Con anterioridad al año 2002 y hasta el año 1993 inclusive: inmuebles con valor determinado o modificado
+- `general_urbanos_suburbanos` — apar=1, munis=1, años=1, vals=0.0024
+  - desc: Inmuebles urbanos y suburbanos con valor determinado o modificado: con edificaciones
+- `general_urbanos_suburbanos_sin_edificaciones` — apar=1, munis=1, años=1, vals=0.0045
+  - desc: Inmuebles urbanos y suburbanos con valor determinado o modificado: sin edificaciones
+- `inmuebles_urbanos_y_suburbanos_con_edificacion_entrada_vigor` — apar=1, munis=1, años=1, vals=0.0024
+  - desc: A la entrada en vigor de la presente Ley: inmuebles urbanos y suburbanos con edificación
+- `inmuebles_urbanos_y_suburbanos_sin_edificacion_entrada_vigor` — apar=1, munis=1, años=1, vals=0.0045
+  - desc: A la entrada en vigor de la presente Ley: inmuebles urbanos y suburbanos sin edificación
+- `inmuebles_urbanos_y_suburbanos_con_edificacion_2002_a_2019` — apar=1, munis=1, años=1, vals=0.0024
+  - desc: Durante los años 2002 y hasta 2019 inclusive: inmuebles urbanos y suburbanos con edificación
+- `inmuebles_urbanos_y_suburbanos_sin_edificacion_2002_a_2019` — apar=1, munis=1, años=1, vals=0.0045
+  - desc: Durante los años 2002 y hasta 2019 inclusive: inmuebles urbanos y suburbanos sin edificación
+- `inmuebles_urbanos_y_suburbanos_con_edificacion_1993_a_2001` — apar=1, munis=1, años=1, vals=0.008
+  - desc: Con anterioridad al año 2002 y hasta 1993 inclusive: inmuebles urbanos y suburbanos con edificación
+- `inmuebles_urbanos_y_suburbanos_sin_edificacion_1993_a_2001` — apar=1, munis=1, años=1, vals=0.015
+  - desc: Con anterioridad al año 2002 y hasta 1993 inclusive: inmuebles urbanos y suburbanos sin edificación
+- `inmuebles_urbanos_y_suburbanos_con_edificacion_anterior_1993` — apar=1, munis=1, años=1, vals=0.008
+  - desc: Con anterioridad al año de 1993: inmuebles urbanos y suburbanos con edificación
+- `inmuebles_urbanos_y_suburbanos_sin_edificacion_anterior_1993` — apar=1, munis=1, años=1, vals=0.008
+  - desc: Con anterioridad al año de 1993: inmuebles urbanos y suburbanos sin edificación
+- `valor_determinado_o_modificado_2002_2020` — apar=1, munis=1, años=1, vals=0.0024
+  - desc: Inmuebles con valor determinado o modificado: durante los años 2002 y hasta 2020 inclusive
+- `valor_determinado_o_modificado_2021` — apar=1, munis=1, años=1, vals=0.008
+  - desc: Inmuebles con valor determinado o modificado: con anterioridad a 2021 e inclusive
+- `valor_determinado_o_modificado_antes_1993` — apar=1, munis=1, años=1, vals=0.013
+  - desc: Inmuebles con valor determinado o modificado: con anterioridad al año de 1993
+- `inmuebles_urbanos_y_suburbanos_modificados_con_edificaciones` — apar=1, munis=1, años=1, vals=0.0018
+  - desc: Artículo 4, fracción I: inmuebles urbanos y suburbanos modificados con edificaciones.
+- `inmuebles_urbanos_y_suburbanos_con_edificaciones_2002_2020` — apar=1, munis=1, años=1, vals=0.0024
+  - desc: Artículo 4, fracción II: durante los años 2002 hasta 2020, inclusive, inmuebles urbanos y suburbanos con edificaciones.
+- `inmuebles_urbanos_y_suburbanos_sin_edificaciones_2002_2020` — apar=1, munis=1, años=1, vals=0.0045
+  - desc: Artículo 4, fracción II: durante los años 2002 hasta 2020, inclusive, inmuebles urbanos y suburbanos sin edificaciones.
+- `inmuebles_urbanos_y_suburbanos_modificados_con_edificaciones_2002_2020` — apar=1, munis=1, años=1, vals=0.0018
+  - desc: Artículo 4, fracción II: durante los años 2002 hasta 2020, inclusive, inmuebles urbanos y suburbanos modificados con edificaciones.
+- `inmuebles_urbanos_y_suburbanos_con_edificaciones_1993_2001` — apar=1, munis=1, años=1, vals=0.008
+  - desc: Artículo 4, fracción III: con anterioridad al año 2002 y hasta 1993, inclusive, inmuebles urbanos y suburbanos con edificaciones.
+- `inmuebles_urbanos_y_suburbanos_sin_edificaciones_1993_2001` — apar=1, munis=1, años=1, vals=0.015
+  - desc: Artículo 4, fracción III: con anterioridad al año 2002 y hasta 1993, inclusive, inmuebles urbanos y suburbanos sin edificaciones.
+- `inmuebles_urbanos_y_suburbanos_modificados_con_edificaciones_1993_2001` — apar=1, munis=1, años=1, vals=0.006
+  - desc: Artículo 4, fracción III: con anterioridad al año 2002 y hasta 1993, inclusive, inmuebles urbanos y suburbanos modificados con edificaciones
+- `inmuebles_urbanos_y_suburbanos_modificados_con_edificaciones_anterior_1993` — apar=1, munis=1, años=1, vals=0.012
+  - desc: Artículo 4, fracción IV: anterioridad al año de 1993, inmuebles urbanos y suburbanos modificados con edificaciones.
+- `rustico_con_edificaciones` — apar=1, munis=1, años=1, vals=0.0018
+  - desc: Inmuebles rústicos con edificaciones, a la entrada en vigor de la ley
+- `urbanos_y_suburbanos_con_edificaciones_vigencia_actual` — apar=1, munis=1, años=1, vals=0.0024
+  - desc: Inmuebles urbanos y suburbanos con edificaciones; a la entrada en vigor de la ley, y también durante los años 2002 a 2020 inclusive.
+- `urbanos_y_suburbanos_sin_edificaciones_vigencia_actual` — apar=1, munis=1, años=1, vals=0.0045
+  - desc: Inmuebles urbanos y suburbanos sin edificaciones; a la entrada en vigor de la ley, y también durante los años 2002 a 2020 inclusive.
+- `urbanos_y_suburbanos_dos_vigencia_actual` — apar=1, munis=1, años=1, vals=0.0018
+  - desc: Inmuebles urbanos y suburbanos dos; a la entrada en vigor de la ley, y también durante los años 2002 a 2020 inclusive.
+- `urbanos_y_suburbanos_dos_1993_a_2001` — apar=1, munis=1, años=1, vals=0.006
+  - desc: Inmuebles urbanos y suburbanos dos; con anterioridad al año 2002 y hasta el año 1993 inclusive.
+- `urbanos_y_suburbanos_anteriores_1993_con_edificaciones` — apar=1, munis=1, años=1, vals=0.013
+  - desc: Inmuebles urbanos y suburbanos con edificaciones; con anterioridad al año de 1993.
+- `valor_determinado_o_modificado_entrada_en_vigor` — apar=1, munis=1, años=1, vals=0.0045
+  - desc: Inmuebles que cuenten con valor determinado o modificado: a la entrada en vigor de la presente ley
+- `valor_determinado_o_modificado_2002_a_2021` — apar=1, munis=1, años=1, vals=0.0024
+  - desc: Inmuebles que cuenten con valor determinado o modificado: durante los años 2002 y hasta 2021 inclusive
+- `valor_determinado_o_modificado_1993_a_2001` — apar=1, munis=1, años=1, vals=0.006
+  - desc: Inmuebles que cuenten con valor determinado o modificado: con anterioridad al año 2002 y hasta el 1993, inclusive
+- `valor_determinado_o_modificado_anterior_1993` — apar=1, munis=1, años=1, vals=0.0
+  - desc: Inmuebles que cuenten con valor determinado o modificado: con anterioridad al año de 1993
+- `vigencia_ley` — apar=1, munis=1, años=1, vals=0.0024
+  - desc: A la entrada en vigor de la presente ley
+- `anios_2002_a_2021_inclusive` — apar=1, munis=1, años=1, vals=0.0024
+  - desc: Durante los años 2002 y hasta el 2021, inclusive
+- `anteriores_2002_hasta_1993_inclusive` — apar=1, munis=1, años=1, vals=0.008
+  - desc: Con anterioridad al año 2002 y hasta 1993, inclusive
+- `urbano_suburbano_no_edificado` — apar=1, munis=1, años=1, vals=0.0045
+  - desc: Inmuebles urbanos y suburbanos sin edificaciones; a la entrada en vigor de la ley
+- `general_5` — apar=1, munis=1, años=1, vals=0.008
+  - desc: Con anterioridad al año 2002 y hasta 1993, inclusive: inmuebles urbanos y suburbanos con edificaciones
+- `general_6` — apar=1, munis=1, años=1, vals=0.015
+  - desc: Con anterioridad al año 2002 y hasta 1993, inclusive: inmuebles urbanos y suburbanos sin edificaciones
+- `general_7` — apar=1, munis=1, años=1, vals=0.013
+  - desc: Con anterioridad al año de 1993: inmuebles urbanos y suburbanos con edificaciones
+- `general_8` — apar=1, munis=1, años=1, vals=0.013
+  - desc: Con anterioridad al año de 1993: inmuebles urbanos y suburbanos sin edificaciones
+- `urbano_suburbano_vigencia` — apar=1, munis=1, años=1, vals=0.0024
+  - desc: Inmuebles urbanos y suburbanos con valor determinado o modificado, a la entrada en vigor de la ley
+- `urbano_suburbano_2002_2022` — apar=1, munis=1, años=1, vals=0.0024
+  - desc: Inmuebles urbanos y suburbanos con valor determinado o modificado, durante los años 2002 hasta 2022 inclusive
+- `urbano_suburbano_1994_2001` — apar=1, munis=1, años=1, vals=0.008
+  - desc: Inmuebles urbanos y suburbanos con valor determinado o modificado, con anterioridad al año 2002 y después de 1993
+- `urbano_suburbano_1993_y_anteriores` — apar=1, munis=1, años=1, vals=0.013
+  - desc: Inmuebles urbanos y suburbanos con valor determinado o modificado, con anterioridad al año de 1993
+- `suburbano_con_edificaciones` — apar=1, munis=1, años=1, vals=0.0018
+  - desc: Inmuebles suburbanos con edificaciones, entrada en vigor de la presente Ley; durante 2002 y hasta 2022 inclusive
+- `suburbano_sin_edificaciones` — apar=1, munis=1, años=1, vals=0.0018
+  - desc: Inmuebles suburbanos sin edificaciones, entrada en vigor de la presente Ley; durante 2002 y hasta 2022 inclusive
+- `urbano_suburbano_historico_sin_edificaciones` — apar=1, munis=1, años=1, vals=0.015
+  - desc: Con anterioridad al año 2002 y hasta 1993 inclusive, sin edificaciones
+- `urbano_suburbano_historico_con_edificaciones` — apar=1, munis=1, años=1, vals=0.006
+  - desc: Con anterioridad al año 2002 y hasta 1993 inclusive, con edificaciones
+- `urbano_suburbano_muy_antiguo_sin_edificaciones` — apar=1, munis=1, años=1, vals=0.013
+  - desc: Con anterioridad al año 1993, sin edificaciones
+- `urbano_suburbano_muy_antiguo_con_edificaciones` — apar=1, munis=1, años=1, vals=0.013
+  - desc: Con anterioridad al año 1993, con edificaciones
+- `anios_2003_a_2023` — apar=1, munis=1, años=1, vals=0.0024
+  - desc: Durante los años 2003 y hasta 2023, inclusive: inmuebles urbanos y suburbanos con valor determinado o modificado con edificaciones; inmueble
+- `anteriores_a_2003_hasta_1993` — apar=1, munis=1, años=1, vals=0.008
+  - desc: Con anterioridad al año 2003 y hasta 1993, inclusive: inmuebles urbanos y suburbanos con valor determinado o modificado con edificaciones; i
+- `inmuebles_urbanos_y_suburbanos_entrada_en_vigor` — apar=1, munis=1, años=1, vals=0.0024
+  - desc: Inmuebles urbanos y suburbanos con valor determinado o modificado: a la entrada en vigor de la ley.
+- `inmuebles_urbanos_y_suburbanos_2002_a_2023` — apar=1, munis=1, años=1, vals=0.0024
+  - desc: Inmuebles urbanos y suburbanos con valor determinado o modificado: durante los años 2002 y hasta 2023 inclusive.
+- `inmuebles_urbanos_y_suburbanos_antes_2002_hasta_1993` — apar=1, munis=1, años=1, vals=0.008
+  - desc: Inmuebles urbanos y suburbanos con valor determinado o modificado: con anterioridad al año 2002 y hasta 1993 inclusive.
+- `inmuebles_urbanos_y_suburbanos_anteriores_1993` — apar=1, munis=1, años=1, vals=0.013
+  - desc: Inmuebles urbanos y suburbanos con valor determinado o modificado: con anterioridad al año 1993.
+- `inmuebles_urbanos_y_suburbanos_recientes` — apar=1, munis=1, años=1, vals=0.0024
+  - desc: Inmuebles que cuenten con un valor determinado o modificado, urbanos y suburbanos; alta entrada en vigor de la presente Ley, y durante los a
+- `inmuebles_urbanos_y_suburbanos_1993_a_2001` — apar=1, munis=1, años=1, vals=0.008
+  - desc: Inmuebles que cuenten con un valor determinado o modificado, urbanos y suburbanos; con anterioridad al año 2002 y hasta el año 1993.
+- `inmuebles_urbanos_y_suburbanos_anteriores_a_1993` — apar=1, munis=1, años=1, vals=0.013
+  - desc: Inmuebles que cuenten con un valor determinado o modificado, urbanos y suburbanos; con anterioridad al año de 1993.
+- `rustico_2023_inclusive` — apar=1, munis=1, años=1, vals=0.0018
+  - desc: Inmuebles rústicos año 2023 inclusive
+- `rustico_anterior_2002_hasta_1993` — apar=1, munis=1, años=1, vals=0.0015
+  - desc: Con anterioridad al año 2002 y hasta el año 1993
+- `rustico_anterior_1993` — apar=1, munis=1, años=1, vals=0.0013
+  - desc: Con anterioridad al año de 1993
+- `general_2002_2023` — apar=1, munis=1, años=1, vals=0.002
+  - desc: Durante los años 2002 y hasta el 2023 inclusive
+- `general_1993_2001` — apar=1, munis=1, años=1, vals=0.008
+  - desc: Con anterioridad al año 2002 y hasta 1993 inclusive
+- `general_anterior_1993` — apar=1, munis=1, años=1, vals=0.0013
+  - desc: Con anterioridad al año de 1993
+- `rusticos_con_edificaciones` — apar=1, munis=1, años=1, vals=0.0018
+  - desc: Inmuebles rústicos con edificaciones; valor determinado o modificado.
+- `rusticos_sin_edificaciones` — apar=1, munis=1, años=1, vals=0.013
+  - desc: Inmuebles rústicos sin edificaciones; valor determinado o modificado.
+- `anos_2002_a_2024` — apar=1, munis=1, años=1, vals=2.4
+  - desc: Durante los años 2002 y hasta 2024, inclusive
+- `anterior_2002_y_hasta_1993` — apar=1, munis=1, años=1, vals=6.0
+  - desc: Con anterioridad al año 2002 y hasta 1993, inclusive
+- `predios_anteriores_2024` — apar=1, munis=1, años=1, vals=0.0024
+  - desc: Tasas aplicables a inmuebles urbanos y suburbanos del periodo previo al 2025 (sección histórica en el texto)
+- `inmuebles_urbanos_y_suburbanos_a_la_entrada_en_vigor` — apar=1, munis=1, años=1, vals=0.024
+  - desc: A la entrada en vigor de la presente ley: inmuebles urbanos y suburbanos con valor determinado o modificado.
+- `inmuebles_urbanos_y_suburbanos_2002_a_2024` — apar=1, munis=1, años=1, vals=0.024
+  - desc: Durante los años 2002 y hasta el 2024, inclusive: inmuebles urbanos y suburbanos con valor determinado o modificado.
+- `inmuebles_urbanos_y_suburbanos_anteriores_1993_a_2002` — apar=1, munis=1, años=1, vals=0.008
+  - desc: Con anterioridad al año 2002 y hasta 1993, inclusive: inmuebles urbanos y suburbanos con valor determinado o modificado.
+- `inmuebles_urbanos_y_suburbanos_anterior_1993` — apar=1, munis=1, años=1, vals=0.013
+  - desc: Con anterioridad al año 1993: inmuebles urbanos y suburbanos con valor determinado o modificado.
+- `inmuebles_urbanos_y_suburbanos_con_edificaciones_a_la_entrada_en_vigor` — apar=1, munis=1, años=1, vals=0.045
+  - desc: A la entrada en vigor de la presente ley: inmuebles urbanos y suburbanos con edificaciones.
+- `inmuebles_urbanos_y_suburbanos_con_edificaciones_2002_a_2024` — apar=1, munis=1, años=1, vals=0.045
+  - desc: Durante los años 2002 y hasta el 2024, inclusive: inmuebles urbanos y suburbanos con edificaciones.
+- `inmuebles_urbanos_y_suburbanos_con_edificaciones_anteriores_1993_a_2002` — apar=1, munis=1, años=1, vals=0.015
+  - desc: Con anterioridad al año 2002 y hasta 1993, inclusive: inmuebles urbanos y suburbanos con edificaciones.
+- `inmuebles_suburbanos_sin_edificaciones_a_la_entrada_en_vigor` — apar=1, munis=1, años=1, vals=0.018
+  - desc: A la entrada en vigor de la presente ley: inmuebles suburbanos sin edificaciones.
+- `inmuebles_suburbanos_sin_edificaciones_2002_a_2024` — apar=1, munis=1, años=1, vals=0.018
+  - desc: Durante los años 2002 y hasta el 2024, inclusive: inmuebles suburbanos sin edificaciones.
+- `inmuebles_suburbanos_sin_edificaciones_anteriores_1993_a_2002` — apar=1, munis=1, años=1, vals=0.002
+  - desc: Con anterioridad al año 2002 y hasta 1993, inclusive: inmuebles suburbanos sin edificaciones.
+- `inmuebles_suburbanos_sin_edificaciones_anterior_1993` — apar=1, munis=1, años=1, vals=0.002
+  - desc: Con anterioridad al año 1993: inmuebles suburbanos sin edificaciones.
+- `anio_2002_hasta_2024` — apar=1, munis=1, años=1, vals=0.0095
+  - desc: Durante el año 2002 y hasta el 2024, inclusive
+- `inmuebles_rusticos_con_edificaciones` — apar=1, munis=1, años=1, vals=0.0018
+  - desc: Inmuebles rústicos con edificaciones
+- `inmuebles_rusticos_sin_edificaciones` — apar=1, munis=1, años=1, vals=0.0018
+  - desc: Inmuebles rústicos sin edificaciones
+- `general_urbano_con_edificaciones` — apar=1, munis=1, años=1, vals=0.0024
+  - desc: Inmuebles urbanos y suburbanos con edificaciones
+- `general_urbano_sin_edificaciones` — apar=1, munis=1, años=1, vals=0.005
+  - desc: Inmuebles urbanos y suburbanos sin edificaciones
+- `general_rustico_con_edificaciones` — apar=1, munis=1, años=1, vals=0.0018
+  - desc: Inmuebles rústicos con edificaciones
+- `general_rustico_sin_edificaciones` — apar=1, munis=1, años=1, vals=0.013
+  - desc: Inmuebles rústicos sin edificaciones
+- `urbanos_y_rusticos_con_edificaciones_entrada_en_vigor` — apar=1, munis=1, años=1, vals=0.0024
+  - desc: Inmuebles urbanos y rústicos con edificaciones, a la entrada en vigor de la presente Ley
+- `urbanos_y_rusticos_con_edificaciones_2002_a_2024` — apar=1, munis=1, años=1, vals=0.0024
+  - desc: Inmuebles urbanos y rústicos con edificaciones, durante los años 2002 y hasta el 2024 inclusive
+- `urbanos_y_rusticos_con_edificaciones_anteriores_2002_y_posteriores_1993` — apar=1, munis=1, años=1, vals=0.008
+  - desc: Inmuebles urbanos y rústicos con edificaciones, con anterioridad al año 2002 y después de 1993
+- `urbanos_y_rusticos_con_edificaciones_anteriores_1993` — apar=1, munis=1, años=1, vals=0.013
+  - desc: Inmuebles urbanos y rústicos con edificaciones, con anterioridad al año de 1993
+- `urbanos_y_rusticos_sin_edificaciones_entrada_en_vigor` — apar=1, munis=1, años=1, vals=0.0045
+  - desc: Inmuebles urbanos y rústicos sin edificaciones, a la entrada en vigor de la presente Ley
+- `urbanos_y_rusticos_sin_edificaciones_2002_a_2024` — apar=1, munis=1, años=1, vals=0.0045
+  - desc: Inmuebles urbanos y rústicos sin edificaciones, durante los años 2002 y hasta el 2024 inclusive
+- `urbanos_y_rusticos_sin_edificaciones_anteriores_2002_y_posteriores_1993` — apar=1, munis=1, años=1, vals=0.015
+  - desc: Inmuebles urbanos y rústicos sin edificaciones, con anterioridad al año 2002 y después de 1993
+- `urbanos_y_rusticos_sin_edificaciones_anteriores_1993` — apar=1, munis=1, años=1, vals=0.013
+  - desc: Inmuebles urbanos y rústicos sin edificaciones, con anterioridad al año de 1993
+- `rusticos_con_edificaciones_entrada_en_vigor` — apar=1, munis=1, años=1, vals=0.0018
+  - desc: Inmuebles rústicos con edificaciones, a la entrada en vigor de la presente Ley
+- `rusticos_con_edificaciones_2002_a_2024` — apar=1, munis=1, años=1, vals=0.0018
+  - desc: Inmuebles rústicos con edificaciones, durante los años 2002 y hasta el 2024 inclusive
+- `rusticos_con_edificaciones_anteriores_2002_y_posteriores_1993` — apar=1, munis=1, años=1, vals=0.006
+  - desc: Inmuebles rústicos con edificaciones, con anterioridad al año 2002 y después de 1993
+- `rusticos_con_edificaciones_anteriores_1993` — apar=1, munis=1, años=1, vals=0.012
+  - desc: Inmuebles rústicos con edificaciones, con anterioridad al año de 1993
+- `rustico_contribuciones_ejercicio_en_vigor` — apar=1, munis=1, años=1, vals=2.4
+  - desc: Inmuebles rústicos con contribuciones del ejercicio en vigor
+- `urbano_suburbano_contribuciones_anteriores` — apar=1, munis=1, años=1, vals=1.3
+  - desc: Inmuebles urbanos y suburbanos con contribuciones de ejercicios anteriores al año de 2025
+- `urbano_suburbano_sin_edificaciones_contribuciones_anteriores` — apar=1, munis=1, años=1, vals=1.2
+  - desc: Inmuebles urbanos y suburbanos sin edificaciones con contribuciones de ejercicios anteriores al año de 2025
+- `rustico_contribuciones_anteriores` — apar=1, munis=1, años=1, vals=1.8
+  - desc: Inmuebles rústicos con contribuciones de ejercicios anteriores al año de 2025
+- `urbanos_y_suburbanos_con_edificaciones_2002_2024` — apar=1, munis=1, años=1, vals=0.0024
+  - desc: Inmuebles urbanos y suburbanos con edificaciones; durante los años 2002 a 2024, inclusive.
+- `urbanos_y_suburbanos_sin_edificaciones_2002_2024` — apar=1, munis=1, años=1, vals=0.0045
+  - desc: Inmuebles urbanos y suburbanos sin edificaciones; durante los años 2002 a 2024, inclusive.
+- `urbanos_y_suburbanos_con_edificaciones_anterior_1993` — apar=1, munis=1, años=1, vals=0.043
+  - desc: Inmuebles urbanos y suburbanos con edificaciones; con anterioridad al año 1993.
+- `urbanos_y_suburbanos_sin_edificaciones_anterior_1993` — apar=1, munis=1, años=1, vals=0.013
+  - desc: Inmuebles urbanos y suburbanos sin edificaciones; con anterioridad al año 1993.
+- `inmuebles_urbanos_y_suburbanos_con_edificaciones_anteriores_a_2002_y_hasta_1993_inclusive` — apar=1, munis=1, años=1, vals=0.008
+  - desc: Inmuebles urbanos y suburbanos con edificaciones, con anterioridad al año 2002 y hasta 1993 inclusive
+- `inmuebles_urbanos_y_suburbanos_sin_edificaciones_anteriores_a_2002_y_hasta_1993_inclusive` — apar=1, munis=1, años=1, vals=0.015
+  - desc: Inmuebles urbanos y suburbanos sin edificaciones, con anterioridad al año 2002 y hasta 1993 inclusive
+- `inmuebles_rusticos_anteriores_a_2002_y_hasta_1993_inclusive` — apar=1, munis=1, años=1, vals=0.006
+  - desc: Inmuebles rústicos, con anterioridad al año 2002 y hasta 1993 inclusive
+- `inmuebles_rusticos_anteriores_a_1993` — apar=1, munis=1, años=1, vals=0.012
+  - desc: Inmuebles rústicos, con anterioridad a 1993
+- `anios_2002_a_2025` — apar=1, munis=1, años=1, vals=4.5
+  - desc: Durante los años 2002 y hasta 2025, inclusive: inmuebles urbanos y suburbanos con valor determinado o modificado; inmuebles rústicos con edi
+- `con_anterioridad_2002_y_despues_1993` — apar=1, munis=1, años=1, vals=15.0
+  - desc: Con anterioridad al año 2002 y después de 1993: inmuebles urbanos y suburbanos con valor determinado o modificado; inmuebles rústicos con ed
+- `anterioridad_1993` — apar=1, munis=1, años=1, vals=13.0
+  - desc: Con anterioridad al año de 1993: inmuebles urbanos y suburbanos con valor determinado o modificado; inmuebles rústicos con edificaciones; in
+- `rural_con_edificaciones` — apar=1, munis=1, años=1, vals=0.0018
+  - desc: Inmuebles rústicos / con valor determinado o modificado con edificaciones; vigente para 2026 según la tabla de tasas del artículo 4.
+- `suburbano_modificado_1` — apar=1, munis=1, años=1, vals=0.0045
+  - desc: Inmuebles con valor determinado o modificado, de la entrada en vigor de la ley al año 2002 inclusive
+- `suburbano_modificado_2` — apar=1, munis=1, años=1, vals=0.0045
+  - desc: Inmuebles con valor determinado o modificado, durante los años 2002 al 2025 inclusive
+- `suburbano_modificado_3` — apar=1, munis=1, años=1, vals=0.015
+  - desc: Inmuebles con valor determinado o modificado, con anterioridad al año 2002 y hasta 1993 inclusive
+- `suburbano_modificado_4` — apar=1, munis=1, años=1, vals=0.013
+  - desc: Inmuebles con valor determinado o modificado, con anterioridad al año 1993
+
+#### grupo: `otro` — 45 clave(s)
+
+- `anterior_1993` — apar=1, munis=1, años=1, vals=0.013
+  - desc: Con anterioridad al año de 1993: tasas visibles en el texto OCR 13 al millar y 12 al millar; la categoría asociada no queda completa en el s
+- `anterior_1993_segunda_tasa_visible` — apar=1, munis=1, años=1, vals=0.012
+  - desc: Con anterioridad al año de 1993: segunda tasa visible en el texto OCR 12 al millar; la categoría asociada no queda completa en el segmento p
+- `edificado_sin_edificaciones` — apar=1, munis=1, años=1, vals=0.018
+  - desc: Inmuebles sin edificaciones
+- `entrada_en_vigor_sin_edificaciones` — apar=1, munis=1, años=1, vals=4.5
+  - desc: A la entrada en vigor de la presente Ley: inmuebles urbanos y suburbanos con valor determinado o modificado: sin edificaciones
+- `anios_2002_a_2013_sin_edificaciones` — apar=1, munis=1, años=1, vals=4.5
+  - desc: Durante los años 2002 y hasta 2013, inclusive: inmuebles urbanos y suburbanos con valor determinado o modificado: sin edificaciones
+- `anterior_1993_a_2001_sin_edificaciones` — apar=1, munis=1, años=1, vals=15.0
+  - desc: Con anterioridad al año 2002 y hasta 1993, inclusive: inmuebles urbanos y suburbanos con valor determinado o modificado: sin edificaciones
+- `anterior_1993_sin_edificaciones` — apar=1, munis=1, años=1, vals=12.0
+  - desc: Con anterioridad al año de 1993: inmuebles urbanos y suburbanos con valor determinado o modificado: sin edificaciones
+- `entrada_vigor_ley` — apar=1, munis=1, años=1, vals=0.0018
+  - desc: A la entrada en vigor de la presente ley
+- `anio_2002_a_2013` — apar=1, munis=1, años=1, vals=0.0018
+  - desc: Durante los años 2002 y hasta el año 2013, inclusive
+- `anterior_a_2002_hasta_1993` — apar=1, munis=1, años=1, vals=0.006
+  - desc: Con anterioridad al año 2002 y hasta el año 1993
+- `anterior_a_1993` — apar=1, munis=1, años=1, vals=0.012
+  - desc: Con anterioridad al año 1993
+- `suburbanos` — apar=1, munis=1, años=1, vals=0.0045
+  - desc: Inmuebles urbanos y suburbanos con edificaciones sin edificaciones
+- `urbano_sin_edificacion` — apar=1, munis=1, años=1, vals=0.0026
+  - desc: Inmuebles urbanos y suburbanos sin edificaciones, a la entrada en vigor de la ley
+- `urbano_sin_edificacion_2002_2016` — apar=1, munis=1, años=1, vals=0.0026
+  - desc: Inmuebles urbanos y suburbanos sin edificaciones, durante el año 2002 y hasta 2016 inclusive
+- `urbano_sin_edificacion_anterior_1993_2001` — apar=1, munis=1, años=1, vals=0.006
+  - desc: Inmuebles urbanos y suburbanos sin edificaciones, con anterioridad al año 2002 y hasta 1993 inclusive
+- `suburbanos_sin_edificacion` — apar=1, munis=1, años=1, vals=4.5
+  - desc: Inmuebles suburbanos sin edificaciones, en los supuestos de la tabla de tasas del artículo 4
+- `urbano_sin_edificacion_entrada_en_vigor` — apar=1, munis=1, años=1, vals=0.0018
+  - desc: Inmuebles urbanos y suburbanos sin edificaciones; a la entrada en vigor de la ley
+- `urbano_sin_edificacion_2002_a_2019` — apar=1, munis=1, años=1, vals=0.0018
+  - desc: Inmuebles urbanos y suburbanos sin edificaciones; durante los años 2002 y hasta 2019 inclusive
+- `urbano_sin_edificacion_anterior_2002_hasta_1993` — apar=1, munis=1, años=1, vals=0.006
+  - desc: Inmuebles urbanos y suburbanos sin edificaciones; con anterioridad al año 2002 y hasta 1993 inclusive
+- `urbano_sin_edificacion_anterior_1993` — apar=1, munis=1, años=1, vals=0.012
+  - desc: Inmuebles urbanos y suburbanos sin edificaciones; con anterioridad al año de 1993
+- `inmuebles_con_valor_determinado_o_modificado` — apar=1, munis=1, años=1, vals=0.0018
+  - desc: Los inmuebles que cuenten con un valor determinado o con valor modificado; entrada en vigor de la ley y durante 2002 a 2019 inclusive
+- `inmuebles_con_valor_determinado_o_modificado_antiguo` — apar=1, munis=1, años=1, vals=0.006
+  - desc: Los inmuebles que cuenten con un valor determinado o con valor modificado; con anterioridad al año 2002 y hasta 1993 inclusive
+- `urbano_y_suburbano_baldio` — apar=1, munis=1, años=1, vals=0.0045
+  - desc: Inmuebles urbanos y suburbanos sin edificaciones: a la entrada en vigor de la presente Ley, y durante los años 2002 y hasta 2021 inclusive, 
+- `sin_edificaciones_entrada_en_vigor` — apar=1, munis=1, años=1, vals=0.0018
+  - desc: Inmuebles urbanos y suburbanos sin edificaciones, a la entrada en vigor de la presente ley
+- `sin_edificaciones_2002_a_2021` — apar=1, munis=1, años=1, vals=0.0018
+  - desc: Inmuebles urbanos y suburbanos sin edificaciones, durante los años 2002 y hasta el 2021 inclusive
+- `sin_edificaciones_anterior_2002_hasta_1993` — apar=1, munis=1, años=1, vals=0.006
+  - desc: Inmuebles urbanos y suburbanos sin edificaciones, con anterioridad al año 2002 o hasta el 1993 inclusive
+- `sin_edificaciones_anterior_1993` — apar=1, munis=1, años=1, vals=0.012
+  - desc: Inmuebles urbanos y suburbanos sin edificaciones, con anterioridad al año de 1993
+- `historico_2002_2021` — apar=1, munis=1, años=1, vals=0.008
+  - desc: Con anterioridad al año 2002 y hasta el año 1993: inmuebles urbanos y suburbanos con edificaciones
+- `historico_2002_2021_sin_edificaciones` — apar=1, munis=1, años=1, vals=0.015
+  - desc: Con anterioridad al año 2002 y hasta el año 1993: inmuebles urbanos y suburbanos sin edificaciones
+- `historico_2002_2021_rustico` — apar=1, munis=1, años=1, vals=0.006
+  - desc: Con anterioridad al año 2002 y hasta el año 1993: inmuebles rústicos
+- `historico_1993_anterior` — apar=1, munis=1, años=1, vals=0.013
+  - desc: Con anterioridad al año de 1993: inmueble urbano y suburbano con edificaciones
+- `historico_1993_anterior_sin_edificaciones` — apar=1, munis=1, años=1, vals=0.012
+  - desc: Con anterioridad al año de 1993: inmueble urbano y suburbano sin edificaciones
+- `valor_determinado_o_modificado_durante_2002_a_2024` — apar=1, munis=1, años=1, vals=0.0024
+  - desc: Inmuebles con valor determinado o modificado durante el año 2002 y hasta el año 2024, inclusive: urbanos y suburbanos con edificaciones
+- `valor_determinado_o_modificado_durante_2002_a_2024_sin_edificaciones` — apar=1, munis=1, años=1, vals=0.0045
+  - desc: Inmuebles con valor determinado o modificado durante el año 2002 y hasta el año 2024, inclusive: urbanos y suburbanos sin edificaciones
+- `con_anterioridad_2002_hasta_1993_con_edificaciones` — apar=1, munis=1, años=1, vals=0.008
+  - desc: Inmuebles con valor determinado o modificado con anterioridad al año 2002 y hasta el año 1993, inclusive: urbanos y suburbanos con edificaci
+- `con_anterioridad_2002_hasta_1993_sin_edificaciones` — apar=1, munis=1, años=1, vals=0.015
+  - desc: Inmuebles con valor determinado o modificado con anterioridad al año 2002 y hasta el año 1993, inclusive: urbanos y suburbanos sin edificaci
+- `con_anterioridad_1993_con_edificaciones` — apar=1, munis=1, años=1, vals=0.013
+  - desc: Inmuebles con valor determinado o modificado con anterioridad al año 1993: urbanos y suburbanos con edificaciones
+- `con_anterioridad_1993_sin_edificaciones` — apar=1, munis=1, años=1, vals=0.013
+  - desc: Inmuebles con valor determinado o modificado con anterioridad al año 1993: urbanos y suburbanos sin edificaciones
+- `inmuebles_suburbanos` — apar=1, munis=1, años=1, vals=0.00167
+  - desc: Inmuebles suburbanos; valor determinado o modificado a la entrada en vigor de la ley
+- `inmuebles_suburbanos_2002_a_2024` — apar=1, munis=1, años=1, vals=0.00167
+  - desc: Durante los años 2002 y hasta el 2024 inclusive
+- `inmuebles_suburbanos_1993_a_2001` — apar=1, munis=1, años=1, vals=0.006
+  - desc: Con anterioridad al año 2002 y hasta 1993 inclusive
+- `inmuebles_suburbanos_anterior_a_1993` — apar=1, munis=1, años=1, vals=0.012
+  - desc: Con anterioridad al año de 1993
+- `inmuebles_urbanos_y_suburbanos_valor_determinado_o_modificado_general` — apar=1, munis=1, años=1, vals=1.8
+  - desc: Inmuebles urbanos y suburbanos con valor determinado o modificado, año de entrada en vigor de la presente Ley y de 2002 hasta 2025 inclusive
+- `inmuebles_urbanos_y_suburbanos_valor_determinado_o_modificado_1993_2025` — apar=1, munis=1, años=1, vals=6.0
+  - desc: Con anterioridad al año 2002 y hasta el año 1993 inclusive, inmuebles urbanos y suburbanos con valor determinado o modificado
+- `inmuebles_urbanos_y_suburbanos_valor_determinado_o_modificado_anterior_1993` — apar=1, munis=1, años=1, vals=12.0
+  - desc: Con anterioridad al año 1993, inmuebles urbanos y suburbanos con valor determinado o modificado
+
+#### grupo: `rural` — 1 clave(s)
+
+- `predios_rusticos` — apar=1, munis=1, años=1, vals=0.0
+  - desc: Predios rústicos; el texto remite a su valuación por tablas de valores base y factores agrológicos, pero no exhibe en el fragmento una tarif
+
+#### grupo: `rustico` — 307 clave(s)
+
+- `rustico` — apar=109, munis=40, años=14, vals=0.0018|0.0018|0.0018|0.0018|0.0018
+  - desc: Inmuebles rústicos
+- `inmuebles_rusticos` — apar=62, munis=30, años=15, vals=0.0018|0.0018|0.0018|0.0018|0.0018
+  - desc: Inmuebles rústicos
+- `rusticos` — apar=55, munis=30, años=13, vals=0.0018|0.0018|0.0018|0.0018|0.0018
+  - desc: Inmuebles rústicos
+- `rustico_general` — apar=29, munis=20, años=12, vals=0.0018|0.0018|0.0018|0.0018|0.0018
+  - desc: Predios rústicos
+- `entrada_en_vigor` — apar=16, munis=13, años=12, vals=0.018|0.0018|0.0018|0.0045|0.0045
+  - desc: Inmuebles rústicos
+- `general` — apar=16, munis=12, años=8, vals=0.0026|0.0018|0.0018|0.0018|0.0018
+  - desc: Inmuebles rústicos, artículo 4 fracción I y II
+- `inmuebles_rusticos_con_edificaciones` — apar=14, munis=10, años=6, vals=0.0018|0.015|0.0018|0.006|0.0018
+  - desc: Inmuebles rústicos con edificaciones; a la entrada en vigor de la ley / durante 2002 a 2010 inclusive / con anterioridad a 2002 y hasta 1993
+- `rustico_con_edificaciones` — apar=13, munis=10, años=8, vals=0.006|0.0045|0.0018|0.015|0.00032
+  - desc: Inmuebles rústicos con edificaciones, según antigüedad del valor determinado o modificado.
+- `rustico_sin_edificaciones` — apar=10, munis=8, años=8, vals=0.015|0.0018|0.0018|0.0002|0.012
+  - desc: Inmuebles rústicos sin edificaciones, según antigüedad del valor determinado o modificado.
+- `anterior_2002_hasta_1993` — apar=8, munis=7, años=8, vals=0.015|0.015|0.006|0.006|0.006
+  - desc: Inmuebles rústicos
+- `rustico_1993_2001` — apar=8, munis=7, años=6, vals=0.006|0.006|0.0|0.006|0.6
+  - desc: Inmuebles rústicos; con anterioridad al año de 1993
+- `anterior_1993` — apar=8, munis=6, años=6, vals=0.012|0.012|0.013|0.012|0.013
+  - desc: Con anterioridad al año de 1993: inmuebles rústicos
+- `inmuebles_rusticos_sin_edificaciones` — apar=8, munis=8, años=6, vals=0.018|0.006|1.8|0.0018|0.012
+  - desc: Inmuebles rústicos sin edificaciones; a la entrada en vigor de la ley / durante 2002 a 2010 inclusive / con anterioridad a 2002 y hasta 1993
+- `rusticos_con_edificaciones` — apar=8, munis=7, años=7, vals=0.00032|0.0018|0.0018|0.0018|0.0018
+  - desc: Inmuebles rústicos con edificaciones; tasa anual sobre valor catastral.
+- `rusticos_1993_2001` — apar=6, munis=4, años=6, vals=0.006|0.006|0.006|0.006|0.006
+  - desc: Inmuebles rústicos, con anterioridad al año 2002 y hasta 1993 inclusive
+- `rustico_anteriores_1993` — apar=5, munis=5, años=4, vals=0.012|0.006|0.012|0.012|0.012
+  - desc: Inmuebles rústicos, con anterioridad al año 1993
+- `inmuebles_rusticos_ant_2002_1993` — apar=5, munis=5, años=4, vals=0.006|0.006|0.006|0.006|0.006
+  - desc: Inmuebles rústicos; con anterioridad al año 2002 y hasta 1993, inclusive.
+- `anteriores_1993` — apar=5, munis=4, años=4, vals=0.012|0.012|0.012|0.012|0.013
+  - desc: Inmuebles rústicos; con anterioridad al año de 1993
+- `rusticos_entrada_en_vigor` — apar=5, munis=4, años=5, vals=0.0018|0.0018|0.0018|0.0018|0.00032
+  - desc: Inmuebles rústicos, a la entrada en vigor de la ley
+- `rustico_1993_2002` — apar=5, munis=5, años=4, vals=0.006|0.006|0.006|0.006|0.006
+  - desc: Inmuebles rústicos, con anterioridad al año 2002 y hasta 1993 inclusive
+- `entrada_vigor_ley` — apar=4, munis=4, años=4, vals=0.0018|0.0018|0.0045|0.0045
+  - desc: Inmuebles rústicos
+- `entrada_en_vigor_rustico` — apar=4, munis=4, años=4, vals=0.0018|0.000398|1.8|0.0018
+  - desc: A la entrada en vigor de la presente ley: inmuebles rústicos
+- `entrada_vigor` — apar=4, munis=4, años=4, vals=0.0045|0.0018|0.0046|0.0045
+  - desc: A la entrada en vigor de la presente Ley
+- `rustico_con_edificacion` — apar=4, munis=4, años=3, vals=0.0018|0.0018|0.00032|0.0018
+  - desc: Inmuebles rústicos con edificaciones, valor determinado o modificado, a la entrada en vigor de la ley
+- `anterior_a_1993` — apar=4, munis=4, años=3, vals=0.012|0.012|0.013|0.012
+  - desc: Inmuebles rústicos, con anterioridad al año de 1993
+- `inmuebles_rusticos_1993_2001` — apar=4, munis=4, años=3, vals=0.006|0.015|0.006|0.006
+  - desc: Inmuebles rústicos; con anterioridad al año 2002 y hasta 1993, inclusive
+- `rusticos_1993_a_2001` — apar=4, munis=4, años=3, vals=0.006|0.006|0.006|0.006
+  - desc: Inmuebles rústicos, con anterioridad al año 2002 y hasta el año 1993, inclusive
+- `rustico_entrada_en_vigor` — apar=4, munis=4, años=3, vals=0.032|0.0018|1.8|0.0018
+  - desc: Inmuebles rústicos, a la entrada en vigor de la presente Ley
+- `rustico_antes_2002_hasta_1993` — apar=3, munis=2, años=2, vals=0.006|6.0|0.006
+  - desc: Inmuebles rústicos, con anterioridad a 2002 y hasta 1993 inclusive
+- `rustico_valor_1993_2001` — apar=3, munis=1, años=3, vals=0.006|0.006|0.006
+  - desc: Inmuebles rústicos; valor determinado o modificado con anterioridad al año 2002 y hasta el año 1993, inclusive
+- `rustico_anterior_1993` — apar=3, munis=3, años=3, vals=0.0|0.012|0.013
+  - desc: Inmuebles rústicos con valor determinado o modificado, con anterioridad al año de 1993
+- `anterior_a_2002_hasta_1993` — apar=3, munis=3, años=3, vals=0.015|0.015|0.006
+  - desc: Con anterioridad al año 2002 y hasta el año 1993
+- `rustico_2002_2016` — apar=3, munis=3, años=1, vals=0.0018|0.018|0.0018
+  - desc: Inmuebles rústicos; durante los años 2002 a 2016 inclusive.
+- `rusticos_anteriores_1993` — apar=3, munis=3, años=2, vals=0.0012|0.012|12.0
+  - desc: Inmuebles rústicos con valor determinado o modificado con anterioridad al año 1993
+- `rusticos_antes_1993` — apar=3, munis=1, años=3, vals=0.012|0.012|0.012
+  - desc: Inmuebles rústicos, con anterioridad al año 1993
+- `rusticos_anterior_1993` — apar=3, munis=3, años=3, vals=0.012|0.012|0.013
+  - desc: Inmuebles rústicos, con anterioridad a 1993.
+- `rustico_con_edificaciones_pre_1993` — apar=3, munis=3, años=3, vals=0.012|0.006|0.012
+  - desc: Inmuebles rústicos con edificaciones, con anterioridad al año de 1993
+- `rustico_2002_2022` — apar=3, munis=3, años=1, vals=0.0018|0.0045|0.0018
+  - desc: Inmuebles rústicos; durante los años 2002 y hasta el 2022, inclusive
+- `rustico_antes_1993` — apar=3, munis=3, años=2, vals=0.012|12.0|0.012
+  - desc: Inmuebles rústicos; con anterioridad al año de 1993
+- `rusticos_sin_edificaciones` — apar=3, munis=3, años=3, vals=0.00032|0.0018|0.0018
+  - desc: Inmuebles rústicos sin edificaciones con valor determinado o modificado, causación anual conforme a la antigüedad del valor
+- `anteriores_2002_hasta_1993` — apar=2, munis=1, años=2, vals=0.006|0.006
+  - desc: Inmuebles rústicos; con anterioridad al año 2002 y hasta el año 1993
+- `ant_2002_1993` — apar=2, munis=2, años=2, vals=0.006|0.006
+  - desc: Inmuebles rústicos con valor determinado o modificado con anterioridad al año 2002 y hasta el año 1993
+- `rusticos_ant_2002_1993` — apar=2, munis=2, años=2, vals=0.006|0.006
+  - desc: Inmuebles rústicos; con anterioridad al año 2002 y hasta 1993 inclusive
+- `rustico_sin_edificacion` — apar=2, munis=2, años=2, vals=0.0045|0.00032
+  - desc: Inmuebles rústicos sin edificaciones, valor determinado o modificado, a la entrada en vigor de la ley
+- `rustico_con_edificacion_1993_2001` — apar=2, munis=2, años=2, vals=0.006|0.006
+  - desc: Inmuebles rústicos con edificaciones, con anterioridad al año 2002 y hasta 1993 inclusive
+- `rustico_ant_1993_2001` — apar=2, munis=2, años=1, vals=0.006|0.006
+  - desc: Inmuebles rústicos; con anterioridad al año 2002 y hasta 1993 inclusive.
+- `rusticos_antes_2002_hasta_1993` — apar=2, munis=2, años=2, vals=0.006|0.006
+  - desc: Inmuebles rústicos, con anterioridad al año 2002 y hasta 1993 inclusive
+- `sin_edificaciones` — apar=2, munis=2, años=2, vals=0.0018|0.0
+  - desc: Inmuebles rústicos sin edificaciones
+- `anio_2002_a_2013` — apar=2, munis=2, años=1, vals=0.0045|0.0045
+  - desc: Inmuebles rústicos, durante los años 2002 y hasta 2013 inclusive
+- `anterior_1993_a_2001` — apar=2, munis=2, años=2, vals=0.015|0.006
+  - desc: Inmuebles rústicos, con anterioridad al año 2002 y hasta 1993 inclusive
+- `inmuebles_rusticos_anterior_1993` — apar=2, munis=2, años=2, vals=0.012|0.006
+  - desc: Inmuebles rústicos; con anterioridad al año de 1993
+- `rusticos_2002_2013` — apar=2, munis=2, años=1, vals=0.0018|0.0018
+  - desc: Inmuebles rústicos, valor determinado o modificado durante los años 2002 a 2013 inclusive
+- `rusticos_actuales` — apar=2, munis=2, años=2, vals=0.0018|0.0026
+  - desc: Inmuebles rústicos con valor determinado o modificado.
+- `rustico_antiguo` — apar=2, munis=2, años=2, vals=0.006|0.015
+  - desc: Inmuebles rústicos, con valor determinado o modificado con anterioridad al año 2002 y hasta el año 1993 inclusive
+- `rustico_ant_2002_1993` — apar=2, munis=2, años=2, vals=0.006|0.006
+  - desc: Inmuebles rústicos; con anterioridad al año 2002 y hasta el año 1993.
+- `rusticos_valor_determinado_o_modificado_entrada_en_vigor` — apar=2, munis=1, años=2, vals=0.0018|0.0018
+  - desc: Inmuebles rústicos; los inmuebles que cuenten con un valor determinado o modificado; a la entrada en vigor de la presente Ley
+- `inmuebles_rusticos_anteriores_a_2002_hasta_1993` — apar=2, munis=2, años=2, vals=0.006|0.006
+  - desc: Inmuebles rústicos, con anterioridad al año 2002 y hasta el año 1993, inclusive
+- `inmuebles_rusticos_anteriores_1993` — apar=2, munis=2, años=2, vals=0.012|0.012
+  - desc: Inmuebles rústicos con anterioridad al año de 1993
+- `rusticos_con_edificacion` — apar=2, munis=2, años=2, vals=0.00032|0.002
+  - desc: Inmuebles rústicos con edificaciones, a la entrada en vigor de la ley y durante 2002 a 2014 inclusive
+- `rustico_actual` — apar=2, munis=2, años=2, vals=0.0018|0.0018
+  - desc: Inmuebles rústicos; a la entrada en vigor de la ley.
+- `anio_2002_a_2016` — apar=2, munis=2, años=1, vals=1.67|0.0045
+  - desc: Inmuebles rústicos, durante los años 2002 y hasta 2016 inclusive
+- `rusticos_2002_a_2016` — apar=2, munis=2, años=1, vals=0.0018|0.0018
+  - desc: Inmuebles rústicos, durante el año 2002 y hasta el año 2016, inclusive
+- `rustico_ant_2002_a_1993` — apar=2, munis=2, años=2, vals=0.006|0.006
+  - desc: Inmuebles rústicos; con anterioridad al año 2002 y hasta el año 1993.
+- `rusticos_2002_2017` — apar=2, munis=2, años=1, vals=0.0018|0.0026
+  - desc: Inmuebles rústicos, durante el año 2002 y hasta el año 2017 inclusive
+- `rusticos_2002_a_2018` — apar=2, munis=2, años=1, vals=0.0018|0.0018
+  - desc: Inmuebles rústicos; durante el año 2002 y hasta el año 2018, inclusive
+- `rusticos_anteriores_2002` — apar=2, munis=2, años=2, vals=0.006|0.006
+  - desc: Inmuebles rústicos, con anterioridad al año 2002 y hasta 1993 inclusive
+- `rustico_2002_2020` — apar=2, munis=2, años=1, vals=0.0018|0.0026
+  - desc: Inmuebles rústicos; durante los años 2002 a 2020, inclusive.
+- `rusticos_anterior_2002_hasta_1993` — apar=2, munis=2, años=2, vals=0.006|0.008
+  - desc: Con anterioridad al año 2002 y hasta el año 1993, inclusive.
+- `rustico_con_edificaciones_1993_2001` — apar=2, munis=2, años=2, vals=0.006|0.006
+  - desc: Inmuebles rústicos con edificaciones; con anterioridad al año 2002 y hasta 1993 inclusive.
+- `rustico_1994_2001` — apar=2, munis=2, años=1, vals=0.015|0.006
+  - desc: Inmuebles rústicos con valor determinado o modificado, con anterioridad al año 2002 y después de 1993
+- `rusticos_2002_a_2025` — apar=2, munis=2, años=1, vals=0.0018|0.00032
+  - desc: Inmuebles rústicos, durante el año 2002 y hasta el año 2025, inclusive
+- `_2002_2009` — apar=1, munis=1, años=1, vals=0.018
+  - desc: Durante los años 2002 y hasta 2009 inclusive, inmuebles rústicos
+- `_1993_2001` — apar=1, munis=1, años=1, vals=0.006
+  - desc: Con anterioridad al año 2002 y hasta 1993 inclusive, inmuebles rústicos
+- `2002_2009` — apar=1, munis=1, años=1, vals=0.0018
+  - desc: Inmuebles rústicos
+- `inmuebles_rusticos_con_valor_determinado_o_modificado` — apar=1, munis=1, años=1, vals=0.018
+  - desc: Inmuebles rústicos con valor determinado o modificado, a la entrada en vigor de la ley
+- `rusticos_vigente_modificado` — apar=1, munis=1, años=1, vals=0.0018
+  - desc: Inmuebles rústicos, valor determinado o modificado a la entrada en vigor de la presente ley
+- `rusticos_2002_2009` — apar=1, munis=1, años=1, vals=0.0018
+  - desc: Inmuebles rústicos, durante el año 2002 y hasta el 2009 inclusive
+- `rusticos_hasta_1993_inclusive` — apar=1, munis=1, años=1, vals=0.006
+  - desc: Inmuebles rústicos, con anterioridad al año 2002 y hasta 1993 inclusive
+- `rustico_general_anteriores` — apar=1, munis=1, años=1, vals=0.008
+  - desc: Inmuebles rústicos; valor anterior al ejercicio 2009, inclusive.
+- `rustico_anterior_2002_1993` — apar=1, munis=1, años=1, vals=0.006
+  - desc: Inmuebles rústicos; con anterioridad al año 2002 y hasta 1993 inclusive
+- `rustico_2002_2008` — apar=1, munis=1, años=1, vals=0.0018
+  - desc: Inmuebles rústicos; durante los años 2002 y hasta el año 2008, inclusive
+- `rustico_anteriores_2002_y_hasta_1993` — apar=1, munis=1, años=1, vals=0.006
+  - desc: Inmuebles rústicos, con anterioridad al año 2002 y hasta el año 1993
+- `rustico_2002_a_2009` — apar=1, munis=1, años=1, vals=0.0018
+  - desc: Inmuebles rústicos, valores determinados durante los años 2002 a 2009, inclusive
+- `rustico_1993_a_2001` — apar=1, munis=1, años=1, vals=0.006
+  - desc: Inmuebles rústicos, valores determinados con anterioridad al año 2002 y hasta 1993 inclusive
+- `rustico_valor_determinado_o_modificado_entrada_en_vigor` — apar=1, munis=1, años=1, vals=0.032
+  - desc: Inmuebles rústicos, con valor determinado o modificado a la entrada en vigor de la presente Ley
+- `rustico_valor_determinado_2002_2009` — apar=1, munis=1, años=1, vals=0.032
+  - desc: Inmuebles rústicos, con valor determinado o modificado durante los años 2002 y hasta el 2009 inclusive
+- `rustico_valor_anterior_2002_hasta_1993` — apar=1, munis=1, años=1, vals=0.6
+  - desc: Inmuebles rústicos, con valor determinado o modificado con anterioridad al año 2002 y hasta 1993 inclusive
+- `rustico_valor_anterior_1993` — apar=1, munis=1, años=1, vals=0.12
+  - desc: Inmuebles rústicos, con valor determinado o modificado con anterioridad al año de 1993
+- `rusticos_antiguo` — apar=1, munis=1, años=1, vals=0.006
+  - desc: Inmuebles rústicos, con anterioridad al año 2002 y hasta 1993, inclusive
+- `rusticos_anteriores_2002_hasta_1993` — apar=1, munis=1, años=1, vals=0.006
+  - desc: Inmuebles rústicos; con anterioridad al año 2002 y hasta 1993, inclusive.
+- `rustico_2002_2010` — apar=1, munis=1, años=1, vals=0.0018
+  - desc: Inmuebles rústicos, durante 2002 a 2010 inclusive
+- `anio_2002_2010_rustico` — apar=1, munis=1, años=1, vals=0.0018
+  - desc: Durante los años 2002 y hasta 2010, inclusive: inmuebles rústicos
+- `anterior_2002_hasta_1993_rustico` — apar=1, munis=1, años=1, vals=0.006
+  - desc: Con anterioridad al año 2002 y hasta 1993, inclusive: inmuebles rústicos
+- `rusticos_edificados` — apar=1, munis=1, años=1, vals=0.0018
+  - desc: Inmuebles rústicos con edificaciones; años 2002 a 2010 inclusive
+- `rusticos_ant_2002_1994_1993` — apar=1, munis=1, años=1, vals=0.006
+  - desc: Inmuebles rústicos; con anterioridad al año 2002 y hasta 1993 inclusive
+- `años_2002_2010` — apar=1, munis=1, años=1, vals=0.0018 ⚠ slugify_sug=`anos_2002_2010`
+  - desc: Inmuebles rústicos con valor determinado o modificado: durante los años 2002 y hasta 2010, inclusive.
+- `antes_2002_hasta_1993` — apar=1, munis=1, años=1, vals=0.006
+  - desc: Inmuebles rústicos con valor determinado o modificado: con anterioridad al año 2002 y hasta 1993, inclusive.
+- `antes_1993` — apar=1, munis=1, años=1, vals=0.0
+  - desc: Inmuebles rústicos con valor determinado o modificado: con anterioridad al año 1993.
+- `inmuebles_rusticos_2002_2010` — apar=1, munis=1, años=1, vals=0.0018
+  - desc: Inmuebles rústicos; durante los años 2002 y hasta 2010 inclusive.
+- `inmuebles_rusticos_anteriores_1993_2002` — apar=1, munis=1, años=1, vals=0.006
+  - desc: Inmuebles rústicos; con anterioridad al año 2002 y hasta 1993 inclusive.
+- `anios_2002_a_2010` — apar=1, munis=1, años=1, vals=0.0018
+  - desc: Inmuebles rústicos; durante los años 2002 y hasta el año 2010, inclusive
+- `rustico_antiguo_1993_1994` — apar=1, munis=1, años=1, vals=0.006
+  - desc: Inmuebles rústicos; con anterioridad al año 2002 y hasta 1993, inclusive
+- `anterior_2002_hasta_1993_rusticos` — apar=1, munis=1, años=1, vals=0.006
+  - desc: Con anterioridad al año 2002 y hasta el año 1993, inclusive: inmuebles rústicos
+- `2002_2010` — apar=1, munis=1, años=1, vals=0.0045
+  - desc: Durante los años 2002 y hasta el 2010, inclusive
+- `rustico_anteriores_2002` — apar=1, munis=1, años=1, vals=0.006
+  - desc: Inmuebles rústicos, con anterioridad al año 2002 y hasta 1993 inclusive
+- `inmuebles_rusticos_con_valor_determinado_o_modificado_con_edificaciones` — apar=1, munis=1, años=1, vals=0.0018
+  - desc: Inmuebles rústicos con valor determinado o modificado con edificaciones, según antigüedad del inmueble
+- `rustico_ant_2002` — apar=1, munis=1, años=1, vals=0.006
+  - desc: Inmuebles rústicos con valor determinado o modificado con anterioridad al año 2002 y hasta el año 1993
+- `anios_2002_2011_rustico` — apar=1, munis=1, años=1, vals=0.000398
+  - desc: Durante los años 2002 y hasta el 2011 inclusive: inmuebles rústicos
+- `anterior_2002_1993_rustico` — apar=1, munis=1, años=1, vals=0.006
+  - desc: Con anterioridad al año 2002 y hasta 1993 inclusive: inmuebles rústicos
+- `inmuebles_rusticos_antiguos_1993_a_2001` — apar=1, munis=1, años=1, vals=0.006
+  - desc: Con anterioridad al año 2002 y hasta 1993 inclusive, inmuebles rústicos
+- `inmuebles_rusticos_anteriores_a_1993` — apar=1, munis=1, años=1, vals=0.004
+  - desc: Con anterioridad al año de 1993, inmuebles rústicos
+- `rustico_con_edificacion_2002_2011` — apar=1, munis=1, años=1, vals=0.0045
+  - desc: Inmuebles rústicos con edificaciones, durante los años 2002 y hasta 2011 inclusive
+- `rustico_sin_edificacion_2002_2011` — apar=1, munis=1, años=1, vals=0.0013
+  - desc: Inmuebles rústicos sin edificaciones, durante los años 2002 y hasta 2011 inclusive
+- `rustico_sin_edificacion_1993_2001` — apar=1, munis=1, años=1, vals=0.012
+  - desc: Inmuebles rústicos sin edificaciones, con anterioridad al año 2002 y hasta 1993 inclusive
+- `anio_2002_a_2011` — apar=1, munis=1, años=1, vals=0.0018
+  - desc: Inmuebles rústicos, durante el año 2002 y hasta el año 2011 inclusive
+- `rustico_2002_2011` — apar=1, munis=1, años=1, vals=0.0018
+  - desc: Inmuebles rústicos; durante los años 2002 a 2011, inclusive.
+- `rustico_valor_entrada_en_vigor` — apar=1, munis=1, años=1, vals=0.0018
+  - desc: Inmuebles rústicos; valor determinado o modificado a la entrada en vigor de la presente Ley
+- `rustico_valor_2002_2011` — apar=1, munis=1, años=1, vals=0.0018
+  - desc: Inmuebles rústicos; valor determinado o modificado durante el año 2002 y hasta el año 2011, inclusive
+- `rusticos_2002_2011` — apar=1, munis=1, años=1, vals=0.0018
+  - desc: Inmuebles rústicos, durante los años 2002 y hasta 2011 inclusive
+- `con_edificaciones` — apar=1, munis=1, años=1, vals=0.0045
+  - desc: Inmuebles rústicos con edificaciones
+- `anios_2002_a_2013_rustico` — apar=1, munis=1, años=1, vals=1.8
+  - desc: Durante los años 2002 y hasta 2013, inclusive: inmuebles rústicos
+- `anterior_1993_a_2001_rustico` — apar=1, munis=1, años=1, vals=6.0
+  - desc: Con anterioridad al año 2002 y hasta 1993, inclusive: inmuebles rústicos
+- `anterior_1993_rustico` — apar=1, munis=1, años=1, vals=0.0
+  - desc: Con anterioridad al año de 1993: inmuebles rústicos
+- `rustico_entrada_en_vigor_ley` — apar=1, munis=1, años=1, vals=0.018
+  - desc: Inmuebles rústicos con valor determinado o modificado, a la entrada en vigor de la presente Ley
+- `rustico_anio_2002_a_2013` — apar=1, munis=1, años=1, vals=0.018
+  - desc: Inmuebles rústicos con valor determinado o modificado, durante los años 2002 y hasta 2013 inclusive
+- `rustico_anterior_2002_hasta_1993` — apar=1, munis=1, años=1, vals=0.015
+  - desc: Inmuebles rústicos con valor determinado o modificado, con anterioridad al año 2002 y hasta 1993 inclusive
+- `inmuebles_rusticos_vigencia_2014` — apar=1, munis=1, años=1, vals=0.0018
+  - desc: Inmuebles rústicos; tasa aplicable para la entrada en vigor de la ley y durante 2013
+- `inmuebles_rusticos_2002_2013` — apar=1, munis=1, años=1, vals=0.0018
+  - desc: Inmuebles rústicos; durante los años 2002 y hasta 2013, inclusive
+- `rusticos_1993_2002` — apar=1, munis=1, años=1, vals=0.006
+  - desc: Inmuebles rústicos, valor determinado o modificado con anterioridad al año 2002 y hasta 1993 inclusive
+- `rustico_con_edificacion_2002_2013` — apar=1, munis=1, años=1, vals=0.0018
+  - desc: Inmuebles rústicos con edificaciones, durante los años 2002 y hasta el 2013 inclusive
+- `rustico_valor_2014` — apar=1, munis=1, años=1, vals=0.0012
+  - desc: Inmuebles rústicos, con valor determinado o modificado a la entrada en vigor de la presente Ley
+- `rustico_valor_2002_2013` — apar=1, munis=1, años=1, vals=0.0013
+  - desc: Inmuebles rústicos, con valor determinado o modificado durante el año 2002 y hasta el año 2013, inclusive
+- `inmuebles_rusticos_anterior_2002_1993` — apar=1, munis=1, años=1, vals=0.006
+  - desc: Inmuebles rústicos, con anterioridad al año 2002 y hasta 1993 inclusive
+- `2002_2013` — apar=1, munis=1, años=1, vals=0.0018
+  - desc: Durante los años 2002 y hasta el año 2013, inclusive; inmuebles rústicos
+- `1993_2002` — apar=1, munis=1, años=1, vals=0.006
+  - desc: Con anterioridad al año 2002 y hasta el año 1993, inclusive; inmuebles rústicos
+- `2002_a_2013` — apar=1, munis=1, años=1, vals=0.0045
+  - desc: Inmuebles rústicos con valor determinado o modificado: durante los años 2002 y hasta 2013 inclusive
+- `rusticos_2002_a_2014` — apar=1, munis=1, años=1, vals=0.0018
+  - desc: Inmuebles rústicos, durante los años 2002 y hasta 2014 inclusive
+- `rusticos_anteriores_1993_2002` — apar=1, munis=1, años=1, vals=0.006
+  - desc: Inmuebles rústicos, con anterioridad al año 2002 y hasta 1993 inclusive
+- `historicos_1993_2001` — apar=1, munis=1, años=1, vals=0.006
+  - desc: Predios con valor determinado o modificado con anterioridad al año 2002 y hasta 1993, inclusive
+- `historicos_anterior_1993` — apar=1, munis=1, años=1, vals=0.012
+  - desc: Predios con valor determinado o modificado con anterioridad al año de 1993
+- `rusticos_2002_2014` — apar=1, munis=1, años=1, vals=0.0018
+  - desc: Inmuebles rústicos, durante los años 2002 a 2014 inclusive
+- `inmuebles_rusticos_anteriores_2002_1993` — apar=1, munis=1, años=1, vals=0.006
+  - desc: Inmuebles rústicos; con anterioridad al año 2002 y hasta 1993, inclusive.
+- `rustico_2002_2014` — apar=1, munis=1, años=1, vals=0.0018
+  - desc: Inmuebles rústicos, durante el año 2002 y hasta el 2014, inclusive
+- `rusticos_con_antiguedad_1994_a_2001` — apar=1, munis=1, años=1, vals=0.006
+  - desc: Inmuebles rústicos con valor determinado o modificado con anterioridad al año 2002 y hasta 1993, inclusive
+- `rusticos_con_antiguedad_anterior_a_1993` — apar=1, munis=1, años=1, vals=0.013
+  - desc: Inmuebles rústicos con valor determinado o modificado con anterioridad al año de 1993
+- `rusticos_durante_2002_a_2014` — apar=1, munis=1, años=1, vals=0.0018
+  - desc: Inmuebles rústicos; durante el año 2002 y hasta el año 2014, inclusive
+- `historico_2002_2014` — apar=1, munis=1, años=1, vals=0.0018
+  - desc: Inmuebles rústicos; durante los años 2002 a 2014 inclusive
+- `2002_a_2014` — apar=1, munis=1, años=1, vals=0.0018
+  - desc: Inmuebles rústicos con valor determinado o modificado: durante los años 2002 y hasta 2014 inclusive
+- `inmuebles_rusticos_entrada_en_vigor` — apar=1, munis=1, años=1, vals=0.0045
+  - desc: Inmuebles rústicos a la entrada en vigor de la ley
+- `inmuebles_rusticos_2002_2014` — apar=1, munis=1, años=1, vals=0.0045
+  - desc: Inmuebles rústicos durante los años 2002 hasta 2014 inclusive
+- `rusticos_con_edificacion_anteriores_1993_1993` — apar=1, munis=1, años=1, vals=0.006
+  - desc: Inmuebles rústicos con edificaciones, con anterioridad a 2002 y hasta 1993 inclusive
+- `rusticos_con_edificacion_anteriores_1993` — apar=1, munis=1, años=1, vals=0.0012
+  - desc: Inmuebles rústicos con edificaciones, con anterioridad al año de 1993
+- `predios_rusticos` — apar=1, munis=1, años=1, vals=0.0
+  - desc: Predios rústicos: en el texto se enuncian valores base por hectárea y factores agrológicos para valuación, pero no aparece una tasa predial 
+- `rustico_historico_2002_2014` — apar=1, munis=1, años=1, vals=0.0018
+  - desc: Inmuebles rústicos (Art. 4, fracc. I, tasa aplicable a inmuebles determinados o modificados durante 2002 a 2014)
+- `rustico_pre_2002_1993` — apar=1, munis=1, años=1, vals=0.006
+  - desc: Inmuebles rústicos; con anterioridad al año 2002 y hasta 1993 inclusive.
+- `inmuebles_rusticos_vigente` — apar=1, munis=1, años=1, vals=0.0018
+  - desc: Inmuebles rústicos, a la entrada en vigor de la presente Ley y durante los años 2002 a 2016, inclusive.
+- `rustico_vigente` — apar=1, munis=1, años=1, vals=0.0018
+  - desc: Inmuebles rústicos; valor determinado o modificado a la entrada en vigor de la ley.
+- `periodo_2002_a_2016` — apar=1, munis=1, años=1, vals=0.008
+  - desc: Durante los años 2002 y hasta 2016 inclusive; inmuebles suburbanos rústicos sin edificaciones
+- `con_anterioridad_1993_a_2001` — apar=1, munis=1, años=1, vals=6.0
+  - desc: Inmuebles rústicos, con anterioridad al año 2002 y hasta 1993 inclusive
+- `con_anterioridad_1993` — apar=1, munis=1, años=1, vals=6.0
+  - desc: Inmuebles rústicos, con anterioridad al año de 1993
+- `rústico` — apar=1, munis=1, años=1, vals=0.0018 ⚠ slugify_sug=`rustico`
+  - desc: Inmuebles rústicos; a la entrada en vigor de la presente Ley y durante 2002 a 2016 inclusive.
+- `rústico_anteriores_1993` — apar=1, munis=1, años=1, vals=0.006 ⚠ slugify_sug=`rustico_anteriores_1993`
+  - desc: Inmuebles rústicos; con anterioridad al año 2002 y hasta el año 1993 inclusive.
+- `rustico_valor_a_la_entrada_en_vigor` — apar=1, munis=1, años=1, vals=0.0018
+  - desc: Inmuebles rústicos; valor determinado o modificado a la entrada en vigor de la presente ley
+- `rustico_valor_2002_2016` — apar=1, munis=1, años=1, vals=0.0018
+  - desc: Inmuebles rústicos; valor determinado o modificado durante 2002 a 2016, inclusive
+- `anio_2002_2016` — apar=1, munis=1, años=1, vals=0.0046
+  - desc: Inmuebles rústicos con valor determinado o modificado, con edificaciones, durante el año 2002 y hasta 2016 inclusive
+- `anterior_1993_2001` — apar=1, munis=1, años=1, vals=0.015
+  - desc: Inmuebles rústicos con valor determinado o modificado, con edificaciones, con anterioridad al año 2002 y hasta 1993 inclusive
+- `rustico_general_2002_2016` — apar=1, munis=1, años=1, vals=0.0018
+  - desc: Inmuebles rústicos, durante el año 2002 y hasta el año 2016, inclusive
+- `rustico_general_1993_2001` — apar=1, munis=1, años=1, vals=0.006
+  - desc: Inmuebles rústicos, con anterioridad al año 2002 y hasta el año 1993, inclusive
+- `inmuebles_rusticos_historicos_2002_2016` — apar=1, munis=1, años=1, vals=0.0018
+  - desc: Inmuebles rústicos: durante el año 2002 y hasta 2016, inclusive.
+- `rusticos_ant_1993` — apar=1, munis=1, años=1, vals=0.006
+  - desc: Inmuebles rústicos con anterioridad a 1993
+- `a_la_entrada_en_vigor_de_la_presente_ley` — apar=1, munis=1, años=1, vals=0.0018
+  - desc: Inmuebles rústicos con valor determinado o modificado
+- `durante_los_anos_2002_y_hasta_el_ano_2016_inclusive` — apar=1, munis=1, años=1, vals=0.0018
+  - desc: Inmuebles rústicos con valor determinado o modificado
+- `con_anterioridad_al_ano_2002_y_hasta_el_ano_1993_inclusive` — apar=1, munis=1, años=1, vals=0.006
+  - desc: Inmuebles rústicos
+- `rustico_con_edificacion_2002_2016` — apar=1, munis=1, años=1, vals=0.0018
+  - desc: Inmuebles rústicos con edificación; durante los años 2002 y hasta 2016 inclusive
+- `rustico_con_edificacion_pre_2002_1993` — apar=1, munis=1, años=1, vals=0.006
+  - desc: Inmuebles rústicos con edificación; con anterioridad al año 2002 y hasta 1993 inclusive
+- `rustico_con_edificacion_pre_1993` — apar=1, munis=1, años=1, vals=0.006
+  - desc: Inmuebles rústicos con edificación; con anterioridad al año de 1993
+- `rusticos_reciente` — apar=1, munis=1, años=1, vals=0.0018
+  - desc: Inmuebles rústicos; tasa aplicable a inmuebles rústicos conforme al artículo 4
+- `rusticos_anterior_a_1993` — apar=1, munis=1, años=1, vals=0.012
+  - desc: Inmuebles rústicos; con anterioridad al año 1993
+- `rusticos_2017_o_posterior` — apar=1, munis=1, años=1, vals=0.0018
+  - desc: Inmuebles rústicos con valor determinado o modificado con anterioridad al año 2002 y hasta 2017, inclusive
+- `rustico_con_valor_determinado_o_modificado` — apar=1, munis=1, años=1, vals=0.0018
+  - desc: Inmuebles rústicos; valor determinado o modificado a la entrada en vigor de la ley y durante 2002-2017, inclusive.
+- `rusticos_hasta_1993` — apar=1, munis=1, años=1, vals=0.006
+  - desc: Inmuebles rústicos, con anterioridad al año 2002 o hasta 1993 inclusive.
+- `inmuebles_rusticos_ant_1993` — apar=1, munis=1, años=1, vals=0.012
+  - desc: Inmuebles rústicos, con anterioridad al año 1993.
+- `rustico_entrada_vigor` — apar=1, munis=1, años=1, vals=0.0018
+  - desc: Inmuebles rústicos, a la entrada en vigor de la ley
+- `rustico_2002_a_2017_inclusive` — apar=1, munis=1, años=1, vals=0.0018
+  - desc: Inmuebles rústicos, durante los años 2002 y hasta 2017 inclusive
+- `rustico_anterior_1993_a_2001` — apar=1, munis=1, años=1, vals=0.006
+  - desc: Inmuebles rústicos, con anterioridad al año 2002 y hasta el año 1993
+- `rustico_valor_determinado_o_modificado_entrada_en_vigor_y_2002_2017` — apar=1, munis=1, años=1, vals=0.0018
+  - desc: Inmuebles rústicos, con valor determinado o modificado, a la entrada en vigor de la presente ley y durante los años 2002 hasta 2017 inclusiv
+- `rustico_valor_determinado_o_modificado_antes_2002_hasta_1993` — apar=1, munis=1, años=1, vals=0.006
+  - desc: Inmuebles rústicos, con valor determinado o modificado, con anterioridad al año 2002 y hasta el año 1993
+- `rustico_valor_determinado_o_modificado_antes_1993` — apar=1, munis=1, años=1, vals=0.012
+  - desc: Inmuebles rústicos, con valor determinado o modificado, con anterioridad al año de 1993
+- `rustico_2002_2017` — apar=1, munis=1, años=1, vals=0.032
+  - desc: Inmuebles rústicos, durante los años 2002 y hasta el 2017 inclusive
+- `rustico_ant_1993` — apar=1, munis=1, años=1, vals=0.12
+  - desc: Inmuebles rústicos, con anterioridad al año de 1993
+- `entrada_en_vigor_2018` — apar=1, munis=1, años=1, vals=0.018
+  - desc: Inmuebles rústicos, a la entrada en vigor de la presente Ley
+- `inmuebles_urbanos_suburbanos_sin_edificacion` — apar=1, munis=1, años=1, vals=0.0018
+  - desc: Inmuebles urbanos y suburbanos sin edificación
+- `anio_2002_a_2018` — apar=1, munis=1, años=1, vals=0.0018
+  - desc: Inmuebles rústicos, durante el año 2002 y hasta 2018 inclusive
+- `inmuebles_rusticos_hasta_1993_inclusive` — apar=1, munis=1, años=1, vals=0.0008
+  - desc: Inmuebles rústicos hasta 1993 inclusive.
+- `inmuebles_rusticos_anterioridad_1993` — apar=1, munis=1, años=1, vals=0.0013
+  - desc: Inmuebles rústicos con anterioridad al año de 1993.
+- `rustico_2002_2018` — apar=1, munis=1, años=1, vals=0.015
+  - desc: Inmuebles rústicos con valor determinado o modificado, de anterioridad al año 2002 y hasta 1993 inclusive.
+- `anios_2002_a_2018` — apar=1, munis=1, años=1, vals=0.0018
+  - desc: Inmuebles rústicos, durante los años 2002 a 2018 inclusive
+- `rusticos_durante_2002_a_2018` — apar=1, munis=1, años=1, vals=0.0018
+  - desc: Inmuebles rústicos; durante el año 2002 y hasta el año 2018, inclusive
+- `rusticos_antiguo_1993_2001` — apar=1, munis=1, años=1, vals=0.006
+  - desc: Inmuebles rústicos, con anterioridad a 2002 y hasta 1993 inclusive
+- `rusticos_vigencia_entrada_en_2019` — apar=1, munis=1, años=1, vals=0.0018
+  - desc: Inmuebles rústicos; valor determinado o modificado: a la entrada en vigor de la presente Ley
+- `rusticos_1993_a_2002` — apar=1, munis=1, años=1, vals=0.006
+  - desc: Inmuebles rústicos; con anterioridad al año 2002 y hasta el año 1993, inclusive
+- `entrada_vigor_rusticos` — apar=1, munis=1, años=1, vals=0.0015
+  - desc: A la entrada en vigor de la presente ley: inmuebles rústicos
+- `rustico_edificado_o_general` — apar=1, munis=1, años=1, vals=0.0018
+  - desc: Predios rústicos con o sin edificaciones, según la tabla del Art. 4.
+- `rustico_anteriores_a_2002_hasta_1993` — apar=1, munis=1, años=1, vals=0.006
+  - desc: Inmuebles rústicos; con anterioridad al año 2002 y hasta 1993, inclusive.
+- `rusticos_actual` — apar=1, munis=1, años=1, vals=0.0018
+  - desc: Inmuebles rústicos, a la entrada en vigor de la ley y durante 2002 a 2019 inclusive
+- `rusticos_historico_2002_2019` — apar=1, munis=1, años=1, vals=0.0018
+  - desc: Inmuebles rústicos, valores determinados o modificados durante 2002 a 2019
+- `rustico_con_edificaciones_2002_2019` — apar=1, munis=1, años=1, vals=0.0018
+  - desc: Inmuebles rústicos con edificaciones, durante los años 2002 y hasta 2019 inclusive
+- `rustico_con_edificaciones_pre_2002_1993` — apar=1, munis=1, años=1, vals=0.006
+  - desc: Inmuebles rústicos con edificaciones, con anterioridad al año 2002 y hasta el año 1993 inclusive
+- `rusticos_anterior_2002` — apar=1, munis=1, años=1, vals=6.0
+  - desc: Inmuebles rústicos, con anterioridad al año 2002 y hasta 1993 inclusive
+- `rusticos_con_edificacion_2002_2019` — apar=1, munis=1, años=1, vals=0.0018
+  - desc: Inmuebles rústicos con edificaciones, cuyo valor fue determinado durante el año 2002 y hasta el año 2019, inclusive
+- `rusticos_con_edificacion_1993_2001` — apar=1, munis=1, años=1, vals=0.006
+  - desc: Inmuebles rústicos con edificaciones, cuyo valor fue determinado con anterioridad al año 2002 y hasta el año 1993, inclusive
+- `rusticos_con_edificacion_antes_1993` — apar=1, munis=1, años=1, vals=0.012
+  - desc: Inmuebles rústicos con edificaciones, cuyo valor fue determinado con anterioridad al año 1993
+- `rustico_muy_antiguo` — apar=1, munis=1, años=1, vals=0.012
+  - desc: Inmuebles rústicos; con anterioridad al año de 1993
+- `rusticos_con_valor_determinado_modificado` — apar=1, munis=1, años=1, vals=0.0012
+  - desc: Inmuebles rústicos con valor determinado o modificado; con anterioridad al año de 1993
+- `inmuebles_rusticos_entrada_vigor` — apar=1, munis=1, años=1, vals=0.0018
+  - desc: A la entrada en vigor de la presente Ley: inmuebles rústicos
+- `inmuebles_rusticos_2002_a_2019` — apar=1, munis=1, años=1, vals=0.0018
+  - desc: Durante los años 2002 y hasta 2019 inclusive: inmuebles rústicos
+- `inmuebles_rusticos_1993_a_2001` — apar=1, munis=1, años=1, vals=0.006
+  - desc: Con anterioridad al año 2002 y hasta 1993 inclusive: inmuebles rústicos
+- `2002_2019` — apar=1, munis=1, años=1, vals=0.0018
+  - desc: Inmuebles rústicos con valor determinado o modificado, durante los años 2002 a 2019 inclusive
+- `anterior_2002` — apar=1, munis=1, años=1, vals=0.006
+  - desc: Inmuebles rústicos con valor determinado o modificado, con anterioridad al año 2002 y hasta el año 1993
+- `2002_a_2020` — apar=1, munis=1, años=1, vals=0.0018
+  - desc: Inmuebles rústicos, durante los años 2002 y hasta 2020 inclusive
+- `anteriores_1993_a_2002` — apar=1, munis=1, años=1, vals=0.006
+  - desc: Inmuebles rústicos, con anterioridad al año 2002 y hasta 1993 inclusive
+- `rustico_pre_1993` — apar=1, munis=1, años=1, vals=0.012
+  - desc: Inmuebles rústicos; con anterioridad al año de 1993.
+- `rusticos_valor_determinado_o_modificado_entrada_en_vigor_ley` — apar=1, munis=1, años=1, vals=0.024
+  - desc: Inmuebles rústicos con valor determinado o modificado a la entrada en vigor de la presente ley
+- `rusticos_valor_determinado_o_modificado_2002_a_2020` — apar=1, munis=1, años=1, vals=0.008
+  - desc: Inmuebles rústicos con valor determinado o modificado durante los años 2002 y hasta 2020 inclusive
+- `rustico_anteriores_2002_1993` — apar=1, munis=1, años=1, vals=0.006
+  - desc: Inmuebles rústicos, con anterioridad al año 2002 y hasta 1993, inclusive.
+- `rustico_2002_2020_inclusive` — apar=1, munis=1, años=1, vals=0.0018
+  - desc: Inmuebles rústicos, para inmuebles con valor determinado o modificado durante el año 2002 y hasta el año 2020 inclusive
+- `entrada_vigor_ley_con_edificaciones` — apar=1, munis=1, años=1, vals=0.0045
+  - desc: Inmuebles rústicos con edificaciones, a la entrada en vigor de la ley
+- `entrada_vigor_ley_sin_edificaciones` — apar=1, munis=1, años=1, vals=0.0018
+  - desc: Inmuebles rústicos sin edificaciones, a la entrada en vigor de la ley
+- `anio_2002_a_2020_con_edificaciones` — apar=1, munis=1, años=1, vals=0.0045
+  - desc: Inmuebles rústicos con edificaciones, durante el año 2002 y hasta el año 2020 inclusive
+- `anio_2002_a_2020_sin_edificaciones` — apar=1, munis=1, años=1, vals=0.0018
+  - desc: Inmuebles rústicos sin edificaciones, durante el año 2002 y hasta el año 2020 inclusive
+- `anio_1993_a_2001_con_edificaciones` — apar=1, munis=1, años=1, vals=0.015
+  - desc: Inmuebles rústicos con edificaciones, con anterioridad al año 2002 y hasta el año 1993 inclusive
+- `anio_1993_a_2001_sin_edificaciones` — apar=1, munis=1, años=1, vals=0.006
+  - desc: Inmuebles rústicos sin edificaciones, con anterioridad al año 2002 y hasta el año 1993 inclusive
+- `anteriores_a_1993_con_edificaciones` — apar=1, munis=1, años=1, vals=0.013
+  - desc: Inmuebles rústicos con edificaciones, con anterioridad al año de 1993
+- `anteriores_a_1993_sin_edificaciones` — apar=1, munis=1, años=1, vals=0.012
+  - desc: Inmuebles rústicos sin edificaciones, con anterioridad al año de 1993
+- `2002_a_2021` — apar=1, munis=1, años=1, vals=0.0045
+  - desc: Inmuebles rústicos, durante los años 2002 y hasta el 2021 inclusive
+- `rustico_2002_2021` — apar=1, munis=1, años=1, vals=0.0018
+  - desc: Inmuebles rústicos: durante los años 2002 y hasta el 2021, inclusive
+- `rustico_pre1993` — apar=1, munis=1, años=1, vals=0.012
+  - desc: Inmuebles rústicos: con anterioridad al año de 1993
+- `vigencia_actual` — apar=1, munis=1, años=1, vals=0.0018
+  - desc: Inmuebles rústicos, a la entrada en vigor de la presente Ley
+- `periodo_2002_a_2021` — apar=1, munis=1, años=1, vals=0.0018
+  - desc: Inmuebles rústicos, durante los años 2002 y hasta el año 2021, inclusive
+- `rusticos_con_valor_2002_2021` — apar=1, munis=1, años=1, vals=0.0018
+  - desc: Inmuebles rústicos con valor determinado o modificado durante el año 2002 y hasta el año 2021, inclusive
+- `rusticos_2002_a_2021` — apar=1, munis=1, años=1, vals=0.0018
+  - desc: Durante los años 2002 y hasta el 2021, inclusive: inmuebles rústicos
+- `rusticos_anteriores_1903` — apar=1, munis=1, años=1, vals=0.012
+  - desc: Con anterioridad al año de 1903: inmuebles rústicos
+- `anios_2002_a_2021` — apar=1, munis=1, años=1, vals=0.0045
+  - desc: Inmuebles rústicos; durante los años 2002 y hasta 2021, inclusive
+- `anteriores_1993_a_2001` — apar=1, munis=1, años=1, vals=0.015
+  - desc: Inmuebles rústicos; con anterioridad al año 2002 y hasta 1993, inclusive
+- `inmuebles_rusticos_2002_2021` — apar=1, munis=1, años=1, vals=0.0018
+  - desc: Inmuebles rústicos; durante los años 2002 a 2021 inclusive.
+- `inmuebles_rusticos_1994_2001` — apar=1, munis=1, años=1, vals=0.0006
+  - desc: Inmuebles rústicos; con anterioridad al año 2002 y hasta 1993.
+- `inmuebles_rusticos_pre_1993` — apar=1, munis=1, años=1, vals=0.012
+  - desc: Inmuebles rústicos; con anterioridad al año de 1993.
+- `rustico_con_edificaciones_2002_2021` — apar=1, munis=1, años=1, vals=0.0018
+  - desc: Inmuebles rústicos con edificaciones; durante los años 2002 y hasta 2021 inclusive.
+- `inmuebles_rusticos_con_edificaciones_ant_2002_1993` — apar=1, munis=1, años=1, vals=0.006
+  - desc: Inmuebles rústicos con edificaciones, con anterioridad al año 2002 y hasta 1993 inclusive
+- `inmuebles_rusticos_depreciados` — apar=1, munis=1, años=1, vals=0.0012
+  - desc: Inmuebles rústicos con valor determinado o modificado por antigüedad
+- `rustico_1` — apar=1, munis=1, años=1, vals=0.0018
+  - desc: A la entrada en vigor de la presente ley: inmuebles rústicos
+- `rustico_2` — apar=1, munis=1, años=1, vals=0.0018
+  - desc: Durante los años 2002 y hasta el 2023, inclusive: inmuebles rústicos
+- `rustico_3` — apar=1, munis=1, años=1, vals=0.006
+  - desc: Con anterioridad al año 2002 y hasta 1993, inclusive: inmuebles rústicos
+- `rustico_4` — apar=1, munis=1, años=1, vals=0.012
+  - desc: Con anterioridad al año de 1993: inmuebles rústicos
+- `entrada_en_vigor_sin_edificaciones` — apar=1, munis=1, años=1, vals=1.67
+  - desc: Inmuebles rústicos con valor determinado o modificado; sin edificaciones
+- `2002_a_2022_con_edificaciones` — apar=1, munis=1, años=1, vals=1.67
+  - desc: Inmuebles rústicos durante los años 2002 y hasta el 2022 inclusive; con edificaciones
+- `2002_a_2022_sin_edificaciones` — apar=1, munis=1, años=1, vals=1.67
+  - desc: Inmuebles rústicos durante los años 2002 y hasta el 2022 inclusive; sin edificaciones
+- `anterior_2002_hasta_1993_con_edificaciones` — apar=1, munis=1, años=1, vals=6.0
+  - desc: Inmuebles rústicos con anterioridad al año 2002 y hasta 1993 inclusive; con edificaciones
+- `anterior_2002_hasta_1993_sin_edificaciones` — apar=1, munis=1, años=1, vals=6.0
+  - desc: Inmuebles rústicos con anterioridad al año 2002 y hasta 1993 inclusive; sin edificaciones
+- `anterior_1993_con_edificaciones` — apar=1, munis=1, años=1, vals=12.0
+  - desc: Inmuebles rústicos con anterioridad al año de 1993; con edificaciones
+- `anterior_1993_sin_edificaciones` — apar=1, munis=1, años=1, vals=12.0
+  - desc: Inmuebles rústicos con anterioridad al año de 1993; sin edificaciones
+- `rusticos_2002_2022` — apar=1, munis=1, años=1, vals=0.0018
+  - desc: Inmuebles rústicos, durante el año 2002 y hasta el año 2022, inclusive
+- `anio_2002_2022` — apar=1, munis=1, años=1, vals=0.0045
+  - desc: Durante los años 2002 y hasta el 2022, inclusive
+- `rustico_vigencia` — apar=1, munis=1, años=1, vals=0.0045
+  - desc: Inmuebles rústicos con valor determinado o modificado, a la entrada en vigor de la ley
+- `rustico_1993_y_anteriores` — apar=1, munis=1, años=1, vals=0.013
+  - desc: Inmuebles rústicos con valor determinado o modificado, con anterioridad al año de 1993
+- `inmuebles_rusticos_con_edificaciones_entrada_en_vigor` — apar=1, munis=1, años=1, vals=0.0045
+  - desc: Inmuebles rústicos con edificaciones: a la entrada en vigor de la ley.
+- `inmuebles_rusticos_con_edificaciones_2002_a_2023` — apar=1, munis=1, años=1, vals=0.0045
+  - desc: Inmuebles rústicos con edificaciones: durante los años 2002 y hasta 2023 inclusive.
+- `inmuebles_rusticos_con_edificaciones_antes_2002_hasta_1993` — apar=1, munis=1, años=1, vals=0.015
+  - desc: Inmuebles rústicos con edificaciones: con anterioridad al año 2002 y hasta 1993 inclusive.
+- `inmuebles_rusticos_con_edificaciones_anteriores_1993` — apar=1, munis=1, años=1, vals=0.013
+  - desc: Inmuebles rústicos con edificaciones: con anterioridad al año 1993.
+- `inmuebles_rusticos_sin_edificaciones_entrada_en_vigor` — apar=1, munis=1, años=1, vals=0.0018
+  - desc: Inmuebles rústicos sin edificaciones: a la entrada en vigor de la ley.
+- `inmuebles_rusticos_sin_edificaciones_2002_a_2023` — apar=1, munis=1, años=1, vals=0.0018
+  - desc: Inmuebles rústicos sin edificaciones: durante los años 2002 y hasta 2023 inclusive.
+- `inmuebles_rusticos_sin_edificaciones_antes_2002_hasta_1993` — apar=1, munis=1, años=1, vals=0.006
+  - desc: Inmuebles rústicos sin edificaciones: con anterioridad al año 2002 y hasta 1993 inclusive.
+- `inmuebles_rusticos_sin_edificaciones_anteriores_1993` — apar=1, munis=1, años=1, vals=0.012
+  - desc: Inmuebles rústicos sin edificaciones: con anterioridad al año 1993.
+- `rustico_con_edificaciones_2002_2023` — apar=1, munis=1, años=1, vals=0.00167
+  - desc: Inmuebles rústicos con edificaciones, durante los años 2002 y hasta 2023 inclusive.
+- `rustico_sin_edificaciones_2002_2023` — apar=1, munis=1, años=1, vals=0.00418
+  - desc: Inmuebles rústicos sin edificaciones, durante los años 2002 y hasta 2023 inclusive.
+- `rustico_sin_edificaciones_1993_2001` — apar=1, munis=1, años=1, vals=0.015
+  - desc: Inmuebles rústicos sin edificaciones, con anterioridad al año 2002 y hasta 1993 inclusive.
+- `rustico_sin_edificaciones_pre_1993` — apar=1, munis=1, años=1, vals=0.013
+  - desc: Inmuebles rústicos sin edificaciones, con anterioridad al año de 1993.
+- `inmuebles_urbanos_y_suburbanos_rusticos_con_edificaciones_anterior_a_1993` — apar=1, munis=1, años=1, vals=0.013
+  - desc: Con anterioridad al año de 1993, inmuebles rústicos con edificaciones
+- `inmuebles_urbanos_y_suburbanos_rusticos_sin_edificaciones_anterior_a_1993` — apar=1, munis=1, años=1, vals=0.013
+  - desc: Con anterioridad al año de 1993, inmuebles rústicos sin edificaciones
+- `inmuebles_rusticos_con_edificaciones_anterior_a_1993` — apar=1, munis=1, años=1, vals=0.012
+  - desc: Con anterioridad al año de 1993, inmuebles rústicos
+- `anio_2002_a_2023` — apar=1, munis=1, años=1, vals=0.0045
+  - desc: Inmuebles rústicos con valor determinado o modificado; durante los años 2002 a 2023, inclusive
+- `anterior_2002_hasta_1993_inclusive` — apar=1, munis=1, años=1, vals=0.015
+  - desc: Inmuebles rústicos con valor determinado o modificado; con anterioridad al año 2002 y hasta 1993 inclusive
+- `rustico_2002_2024` — apar=1, munis=1, años=1, vals=1.8
+  - desc: Inmuebles rústicos; durante el año del 2002 y hasta el 2024, inclusive
+- `rustico_otro` — apar=1, munis=1, años=1, vals=0.012
+  - desc: Inmuebles rústicos (renglón visible en la tabla del artículo 4; OCR con texto fragmentado).
+- `rustico_2025` — apar=1, munis=1, años=1, vals=0.006
+  - desc: Inmuebles rústicos para el año 2025
+- `rustico_2002_a_2024` — apar=1, munis=1, años=1, vals=0.0018
+  - desc: Inmuebles rústicos; durante los años 2002 y hasta 2024 inclusive
+- `rustico_riego` — apar=1, munis=1, años=1, vals=0.0
+  - desc: Inmuebles rústicos de riego.
+- `rustico_temporal` — apar=1, munis=1, años=1, vals=0.0
+  - desc: Inmuebles rústicos de temporal.
+- `rustico_agostadero` — apar=1, munis=1, años=1, vals=0.0
+  - desc: Inmuebles rústicos de agostadero.
+- `rustico_cerril_o_monte` — apar=1, munis=1, años=1, vals=0.0
+  - desc: Inmuebles rústicos de cerril o monte.
+- `valor_determinado_o_modificado_durante_2002_a_2024_rustico` — apar=1, munis=1, años=1, vals=0.0018
+  - desc: Inmuebles con valor determinado o modificado durante el año 2002 y hasta el año 2024, inclusive: rústicos
+- `con_anterioridad_2002_hasta_1993_rustico` — apar=1, munis=1, años=1, vals=0.006
+  - desc: Inmuebles con valor determinado o modificado con anterioridad al año 2002 y hasta el año 1993, inclusive: rústicos
+- `con_anterioridad_1993_rustico` — apar=1, munis=1, años=1, vals=0.012
+  - desc: Inmuebles con valor determinado o modificado con anterioridad al año 1993: rústicos
+- `valor_determinado_o_modificado` — apar=1, munis=1, años=1, vals=1.8
+  - desc: Inmuebles rústicos; artículo 4, tasas vigentes a la entrada en vigor de la ley y durante 2002-2025 inclusive.
+- `valor_anterior_2002` — apar=1, munis=1, años=1, vals=6.0
+  - desc: Inmuebles rústicos; con anterioridad al año 2002 y hasta 1993, inclusive; artículo 4.
+- `valor_anterior_1993` — apar=1, munis=1, años=1, vals=12.0
+  - desc: Inmuebles rústicos; con anterioridad al año 1993; artículo 4.
+- `rusticos_con_edificaciones_2002_a_2025` — apar=1, munis=1, años=1, vals=0.0018
+  - desc: Inmuebles rústicos con edificaciones, durante los años 2002 y hasta el 2025, inclusive
+- `rusticos_sin_edificaciones_2002_a_2025` — apar=1, munis=1, años=1, vals=0.0018
+  - desc: Inmuebles rústicos sin edificaciones, durante los años 2002 y hasta el 2025, inclusive
+- `rusticos_con_edificaciones_1993_a_2001` — apar=1, munis=1, años=1, vals=0.006
+  - desc: Inmuebles rústicos con edificaciones, con anterioridad al año 2002 y hasta 1993, inclusive
+- `rusticos_sin_edificaciones_1993_a_2001` — apar=1, munis=1, años=1, vals=0.006
+  - desc: Inmuebles rústicos sin edificaciones, con anterioridad al año 2002 y hasta 1993, inclusive
+- `rusticos_con_edificaciones_anteriores_1993` — apar=1, munis=1, años=1, vals=0.012
+  - desc: Inmuebles rústicos con edificaciones, con anterioridad al año 1993
+- `rusticos_sin_edificaciones_anteriores_1993` — apar=1, munis=1, años=1, vals=0.012
+  - desc: Inmuebles rústicos sin edificaciones, con anterioridad al año 1993
+- `entrada_en_vigor_a_1993_y_posterior` — apar=1, munis=1, años=1, vals=0.0018
+  - desc: Inmuebles rústicos con valor determinado o modificado
+- `rusticos_valor_determinado_o_modificado` — apar=1, munis=1, años=1, vals=0.0018
+  - desc: Inmuebles rústicos que cuenten con un valor determinado o modificado
+- `inmuebles_rusticos_2002_a_2025` — apar=1, munis=1, años=1, vals=0.0026
+  - desc: Inmuebles rústicos; durante el año 2002 y hasta el 2025, inclusive
+- `inmuebles_rusticos_1993_a_2002` — apar=1, munis=1, años=1, vals=0.006
+  - desc: Inmuebles rústicos; con anterioridad al año 2002 y hasta 1993, inclusive
+- `rusticos_anteriores_a_1993` — apar=1, munis=1, años=1, vals=0.0012
+  - desc: Inmuebles rústicos, con anterioridad al año de 1993
+
+#### grupo: `rústico` — 7 clave(s)
+
+- `rustico_valor_determinado_o_modificado` — apar=1, munis=1, años=1, vals=0.0018
+  - desc: Inmuebles rústicos con un valor determinado o modificado; a la entrada en vigor de la presente Ley / durante los años 2002 y hasta 2011 incl
+- `rustico_valor_determinado_o_modificado_ant_2002` — apar=1, munis=1, años=1, vals=0.006
+  - desc: Inmuebles rústicos con un valor determinado o modificado; con anterioridad al año 2002 y hasta 1993 inclusive
+- `inmuebles_rusticos` — apar=1, munis=1, años=1, vals=0.0018
+  - desc: Inmuebles rústicos; art. 4, fracción I, rubro 1.
+- `rustico_edificado` — apar=1, munis=1, años=1, vals=0.001
+  - desc: Inmuebles rústicos con edificaciones.
+- `rustico_sin_edificacion` — apar=1, munis=1, años=1, vals=0.001
+  - desc: Inmuebles rústicos sin edificaciones.
+- `anio_2002_a_2017` — apar=1, munis=1, años=1, vals=0.018
+  - desc: Inmuebles rústicos, durante los años 2002 y hasta 2017, inclusive
+- `anterior_1993_a_2002` — apar=1, munis=1, años=1, vals=0.008
+  - desc: Inmuebles rústicos, con anterioridad al año 2002 y hasta 1993, inclusive
+
+#### grupo: `suburbano` — 6 clave(s)
+
+- `entrada_en_vigor` — apar=1, munis=1, años=1, vals=0.0018
+  - desc: Inmuebles suburbanos con edificaciones a la entrada en vigor de la ley.
+- `anio_2002_a_2016` — apar=1, munis=1, años=1, vals=0.0018
+  - desc: Inmuebles suburbanos con edificaciones con valor determinado o modificado durante los años 2002 a 2016 inclusive.
+- `anterior_1993_a_2001` — apar=1, munis=1, años=1, vals=0.012
+  - desc: Inmuebles suburbanos con edificaciones con valor determinado o modificado con anterioridad a 2002 y hasta 1993.
+- `anterior_1993` — apar=1, munis=1, años=1, vals=0.012
+  - desc: Inmuebles suburbanos con edificaciones con valor determinado o modificado con anterioridad a 1993.
+- `suburbano_con_edificaciones_anteriores_1993` — apar=1, munis=1, años=1, vals=0.012
+  - desc: Inmuebles urbanos y suburbanos con valor determinado o modificado con anterioridad al año 2026
+- `suburbano_sin_edificaciones_anteriores_1993` — apar=1, munis=1, años=1, vals=0.012
+  - desc: Inmuebles urbanos y suburbanos sin edificaciones, con valor determinado o modificado con anterioridad al año 2026
+
+#### grupo: `urbano` — 614 clave(s)
+
+- `urbano_con_edificaciones` — apar=78, munis=38, años=15, vals=0.0024|0.0024|0.0024|0.0024|0.0024
+  - desc: Inmuebles urbanos y suburbanos con edificaciones.
+- `urbano_sin_edificaciones` — apar=78, munis=38, años=15, vals=0.0045|0.0045|0.005|0.0045|0.0045
+  - desc: Inmuebles urbanos y suburbanos sin edificaciones.
+- `sin_edificaciones` — apar=55, munis=23, años=15, vals=0.0045|0.0046|0.00375|0.004|0.0045
+  - desc: Inmuebles urbanos y suburbanos sin edificaciones, valor determinado o modificado a la entrada en vigor de la ley
+- `con_edificaciones` — apar=53, munis=24, años=15, vals=0.0024|0.0025|0.0024|0.0024|0.0024
+  - desc: Inmuebles urbanos y suburbanos con edificaciones, valor determinado o modificado a la entrada en vigor de la ley
+- `inmuebles_urbanos_y_suburbanos_sin_edificaciones` — apar=43, munis=24, años=15, vals=0.0045|0.0024|0.0045|0.0045|0.0045
+  - desc: Inmuebles urbanos y suburbanos con valor determinado o modificado: sin edificaciones
+- `inmuebles_urbanos_y_suburbanos_con_edificaciones` — apar=42, munis=23, años=15, vals=0.0024|0.0045|0.024|0.0024|0.0024
+  - desc: Inmuebles urbanos y suburbanos con valor determinado o modificado: edificaciones
+- `urbanos_y_suburbanos_sin_edificaciones` — apar=23, munis=18, años=11, vals=0.0024|0.0045|0.0045|0.0045|0.0045
+  - desc: Inmuebles urbanos y suburbanos sin edificaciones
+- `entrada_en_vigor` — apar=22, munis=18, años=12, vals=0.024|0.0024|0.0024|0.0024|0.0024
+  - desc: Inmuebles urbanos y suburbanos con valor determinado o modificado, con edificaciones
+- `urbanos_y_suburbanos_con_edificaciones` — apar=21, munis=17, años=11, vals=0.0045|0.0024|0.0024|0.0024|0.0024
+  - desc: Inmuebles urbanos y suburbanos con edificaciones
+- `anterior_1993` — apar=15, munis=10, años=11, vals=0.013|0.013|0.013|0.013|13.0
+  - desc: Inmuebles urbanos y suburbanos con valor determinado o modificado, con anterioridad al año de 1993
+- `urbanos_con_edificaciones` — apar=15, munis=13, años=7, vals=0.0024|0.0045|0.0024|0.0024|0.0024
+  - desc: Inmuebles urbanos y suburbanos con edificaciones (a la entrada en vigor de la ley).
+- `urbanos_sin_edificaciones` — apar=15, munis=13, años=7, vals=0.0045|0.0045|0.0045|0.0045|0.0045
+  - desc: Inmuebles urbanos y suburbanos sin edificaciones (a la entrada en vigor de la ley).
+- `urbano_con_edificacion` — apar=11, munis=10, años=9, vals=0.0024|0.0024|0.0024|0.0024|0.0024
+  - desc: Inmuebles urbanos y suburbanos con edificaciones; valor determinado o modificado al entrar en vigor la ley.
+- `urbano_sin_edificacion` — apar=11, munis=10, años=9, vals=0.0045|0.0045|0.0045|0.0045|0.0045
+  - desc: Inmuebles urbanos y suburbanos sin edificaciones; valor determinado o modificado al entrar en vigor la ley.
+- `urbano_suburbano_con_edificaciones` — apar=11, munis=10, años=8, vals=0.0018|0.0024|0.00339|0.002|0.0024
+  - desc: Inmuebles urbanos y suburbanos con edificaciones, según antigüedad del valor determinado o modificado.
+- `urbano_suburbano_sin_edificaciones` — apar=11, munis=10, años=8, vals=0.0024|0.0045|0.00565|0.00375|0.004
+  - desc: Inmuebles urbanos y suburbanos sin edificaciones, según antigüedad del valor determinado o modificado.
+- `entrada_en_vigor_sin_edificaciones` — apar=9, munis=7, años=8, vals=0.045|0.0045|0.0045|0.0045|0.003
+  - desc: Inmuebles urbanos y suburbanos con valor determinado o modificado, sin edificaciones
+- `urbanos_suburbanos_con_edificaciones` — apar=9, munis=8, años=4, vals=0.0024|0.0024|0.0024|0.00339|0.0024
+  - desc: Inmuebles urbanos y suburbanos con edificaciones; entrada en vigor de la presente Ley y durante los años 2002 a 2011 inclusive
+- `urbanos_suburbanos_sin_edificaciones` — apar=9, munis=8, años=4, vals=0.0045|0.0045|0.0045|0.00565|0.0045
+  - desc: Inmuebles urbanos y suburbanos sin edificaciones; entrada en vigor de la presente Ley y durante los años 2002 a 2011 inclusive
+- `anterior_2002_hasta_1993_sin_edificaciones` — apar=8, munis=8, años=6, vals=0.008|0.015|0.015|0.015|0.015
+  - desc: Inmuebles urbanos y suburbanos con valor determinado o modificado, sin edificaciones
+- `anterior_2002_hasta_1993_con_edificaciones` — apar=7, munis=7, años=6, vals=0.006|0.008|0.008|0.008|0.008
+  - desc: Inmuebles urbanos y suburbanos con valor determinado o modificado, con edificaciones
+- `urbano_con_edificaciones_1993_2001` — apar=7, munis=6, años=6, vals=0.008|0.008|0.008|0.008|0.008
+  - desc: Inmuebles urbanos y suburbanos con edificaciones, con anterioridad al año 2002 y hasta 1993 inclusive
+- `urbano_sin_edificaciones_1993_2001` — apar=7, munis=6, años=6, vals=0.015|0.015|0.015|0.015|0.015
+  - desc: Inmuebles urbanos y suburbanos sin edificaciones, con anterioridad al año 2002 y hasta 1993 inclusive
+- `entrada_vigor` — apar=7, munis=7, años=7, vals=0.0024|0.0024|0.0024|0.0025|0.0024
+  - desc: A la entrada en vigor de la presente Ley
+- `anterior_2002_hasta_1993` — apar=7, munis=4, años=6, vals=0.008|0.008|0.015|0.008|0.006
+  - desc: Con anterioridad al año 2002 y hasta 1993 inclusive
+- `inmuebles_urbanos_suburbanos_con_edificaciones` — apar=7, munis=6, años=6, vals=0.0024|0.0024|0.0045|0.004|0.0024
+  - desc: Inmuebles urbanos y suburbanos con edificaciones
+- `inmuebles_urbanos_suburbanos_sin_edificaciones` — apar=7, munis=6, años=6, vals=0.0045|0.0045|0.018|0.0045|0.0045
+  - desc: Inmuebles urbanos y suburbanos sin edificaciones
+- `inmuebles_urbanos_y_suburbanos` — apar=7, munis=3, años=4, vals=0.0018|0.0018|0.054|0.024|0.008
+  - desc: Inmuebles urbanos y suburbanos con un valor determinado o modificado: con edificaciones
+- `anteriores_1993` — apar=6, munis=4, años=5, vals=0.013|0.013|0.008|0.013|0.013
+  - desc: Inmuebles urbanos y suburbanos con edificaciones sin edificaciones; con anterioridad al año de 1993
+- `con_edificaciones_ant_1993` — apar=6, munis=4, años=5, vals=0.013|0.013|0.013|0.013|0.013
+  - desc: Inmuebles urbanos y suburbanos con valor determinado o modificado con anterioridad al año 1993
+- `sin_edificaciones_ant_1993` — apar=6, munis=4, años=5, vals=0.012|0.012|0.012|0.012|0.012
+  - desc: Inmuebles urbanos y suburbanos sin edificaciones con valor determinado o modificado con anterioridad al año 1993
+- `entrada_vigor_ley` — apar=5, munis=5, años=5, vals=0.0024|0.0024|0.0024|0.0024|0.0024
+  - desc: Inmuebles urbanos y suburbanos con valor determinado o modificado, con edificaciones
+- `anterior_1993_sin_edificaciones` — apar=5, munis=5, años=5, vals=0.013|0.012|0.012|0.013|13.0
+  - desc: Inmuebles urbanos y suburbanos con valor determinado o modificado, sin edificaciones
+- `sin_edificaciones_antes_1993` — apar=5, munis=5, años=5, vals=0.012|0.012|0.012|0.012|0.013
+  - desc: Inmuebles urbanos y suburbanos sin edificaciones, con anterioridad a 1993
+- `anterior_a_1993` — apar=5, munis=5, años=3, vals=0.013|0.013|0.013|0.013|0.013
+  - desc: Inmuebles urbanos y suburbanos con valor determinado o modificado: con anterioridad al año de 1993, con edificaciones
+- `anterior_1993_con_edificaciones` — apar=4, munis=4, años=4, vals=0.012|0.013|0.013|13.0
+  - desc: Inmuebles urbanos y suburbanos con valor determinado o modificado, con edificaciones
+- `con_edificaciones_anteriores_1993` — apar=4, munis=4, años=3, vals=0.013|0.013|0.008|0.013
+  - desc: Inmuebles urbanos y suburbanos con edificaciones, valores determinados con anterioridad al año de 1993
+- `sin_edificaciones_anteriores_1993` — apar=4, munis=4, años=3, vals=0.012|0.012|0.015|0.012
+  - desc: Inmuebles urbanos y suburbanos sin edificaciones, valores determinados con anterioridad al año de 1993
+- `con_edificaciones_antes_1993` — apar=4, munis=4, años=4, vals=0.013|0.013|0.013|0.013
+  - desc: Inmuebles urbanos y suburbanos con edificaciones, con anterioridad a 1993
+- `anteriores_2002_hasta_1993` — apar=4, munis=2, años=4, vals=0.008|0.008|0.008|0.008
+  - desc: Inmuebles urbanos y suburbanos con edificaciones sin edificaciones; con anterioridad al año 2002 y hasta el año 1993
+- `anterior_1993_a_2001` — apar=4, munis=3, años=3, vals=8.0|0.008|0.015|0.008
+  - desc: Con anterioridad al año 2002 y hasta 1993, inclusive: inmuebles urbanos y suburbanos con valor determinado o modificado: con edificaciones
+- `anterior_a_2002_hasta_1993` — apar=4, munis=4, años=3, vals=0.008|0.008|0.008|0.008
+  - desc: Inmuebles urbanos y suburbanos con valor determinado o modificado: con anterioridad al año 2002 y hasta 1993 inclusive, con edificaciones
+- `urbanos_y_suburbanos_con_edificaciones_anteriores_1993` — apar=4, munis=4, años=4, vals=0.013|0.013|0.012|0.013
+  - desc: Inmuebles urbanos y suburbanos con edificaciones, con anterioridad al año 1993
+- `urbanos_y_suburbanos_sin_edificaciones_anteriores_1993` — apar=4, munis=4, años=4, vals=0.012|0.012|0.013|0.013
+  - desc: Inmuebles urbanos y suburbanos sin edificaciones, con anterioridad al año 1993
+- `urbano_con_edificaciones_2002_2016` — apar=4, munis=4, años=1, vals=0.0024|0.024|0.0024|0.0024
+  - desc: Inmuebles urbanos y suburbanos con edificaciones; durante los años 2002 a 2016 inclusive.
+- `urbano_sin_edificaciones_2002_2016` — apar=4, munis=4, años=1, vals=0.0045|0.045|0.0045|0.0045
+  - desc: Inmuebles urbanos y suburbanos sin edificaciones; durante los años 2002 a 2016 inclusive.
+- `urbano_con_edificaciones_pre_1993` — apar=4, munis=4, años=3, vals=0.013|0.013|0.013|0.013
+  - desc: Inmuebles urbanos y suburbanos con edificaciones; con anterioridad al año de 1993.
+- `urbano_sin_edificaciones_pre_1993` — apar=4, munis=4, años=3, vals=0.012|0.012|0.012|0.013
+  - desc: Inmuebles urbanos y suburbanos sin edificaciones; con anterioridad al año de 1993.
+- `urbano_con_edificaciones_anteriores_1993` — apar=4, munis=4, años=3, vals=0.013|0.013|0.013|0.013
+  - desc: Inmuebles urbanos y suburbanos con edificaciones, con anterioridad al año 1993
+- `urbanos_y_suburbanos_con_edificaciones_1993_a_2001` — apar=4, munis=4, años=3, vals=0.008|0.002|0.008|0.008
+  - desc: Inmuebles urbanos y suburbanos con edificaciones, con anterioridad al año 2002 y hasta el año 1993, inclusive
+- `urbanos_y_suburbanos_sin_edificaciones_1993_a_2001` — apar=4, munis=4, años=3, vals=0.015|0.015|0.015|0.015
+  - desc: Inmuebles urbanos y suburbanos sin edificaciones, con anterioridad al año 2002 y hasta el año 1993, inclusive
+- `general` — apar=4, munis=1, años=1, vals=0.0024|0.0024|0.008|0.013
+  - desc: Inmuebles urbanos y suburbanos con valor determinado o modificado: a la entrada en vigor de la presente ley
+- `urbano_suburbano_edificado` — apar=4, munis=1, años=1, vals=0.0024|0.0024|0.0024|0.013
+  - desc: Inmuebles urbanos y suburbanos / edificaciones / inmuebles que cuenten con un valor determinado o modificado; a la entrada en vigor de la le
+- `urbano_con_edificaciones_anterior_1993` — apar=3, munis=2, años=3, vals=0.013|0.013|0.013
+  - desc: Inmuebles urbanos y suburbanos con edificaciones, con anterioridad al año de 1993
+- `urbano_sin_edificaciones_anterior_1993` — apar=3, munis=2, años=3, vals=0.012|0.012|0.013
+  - desc: Inmuebles urbanos y suburbanos sin edificaciones, con anterioridad al año de 1993
+- `sin_edificaciones_anterior_1993` — apar=3, munis=3, años=3, vals=0.012|0.012|0.013
+  - desc: Inmuebles urbanos y suburbanos sin edificaciones; con anterioridad al año 1993
+- `urbano_con_edificacion_anteriores_1993` — apar=3, munis=3, años=3, vals=0.008|0.013|0.013
+  - desc: Inmuebles urbanos y suburbanos con edificaciones; con anterioridad al año 2002 y hasta 1993 inclusive
+- `urbano_sin_edificacion_anteriores_1993` — apar=3, munis=3, años=3, vals=0.015|0.012|0.012
+  - desc: Inmuebles urbanos y suburbanos sin edificaciones; con anterioridad al año 2002 y hasta 1993 inclusive
+- `con_edificaciones_ant_2002_1993` — apar=3, munis=3, años=3, vals=0.008|0.008|0.008
+  - desc: Inmuebles urbanos y suburbanos con valor determinado o modificado con anterioridad al año 2002 y hasta el año 1993
+- `sin_edificaciones_ant_2002_1993` — apar=3, munis=3, años=3, vals=0.015|0.015|0.015
+  - desc: Inmuebles urbanos y suburbanos sin edificaciones con valor determinado o modificado con anterioridad al año 2002 y hasta el año 1993
+- `urbano_suburbano_con_edificaciones_valor_1993_2001` — apar=3, munis=1, años=3, vals=0.008|0.008|0.008
+  - desc: Inmuebles urbanos y suburbanos con edificaciones; valor determinado o modificado con anterioridad al año 2002 y hasta el año 1993, inclusive
+- `urbano_suburbano_sin_edificaciones_valor_1993_2001` — apar=3, munis=1, años=3, vals=0.015|0.015|0.015
+  - desc: Inmuebles urbanos y suburbanos sin edificaciones; valor determinado o modificado con anterioridad al año 2002 y hasta el año 1993, inclusive
+- `edificado` — apar=3, munis=2, años=3, vals=0.00234|0.018|0.008
+  - desc: Inmuebles urbanos y suburbanos con edificaciones
+- `anio_2002_a_2013` — apar=3, munis=3, años=1, vals=0.024|0.0024|0.0024
+  - desc: Inmuebles urbanos y suburbanos con valor determinado o modificado, durante los años 2002 y hasta 2013 inclusive
+- `urbanos_y_suburbanos_sin_edificaciones_1993_2001` — apar=3, munis=3, años=2, vals=0.0015|0.015|0.015
+  - desc: Inmuebles urbanos y suburbanos sin edificaciones, con anterioridad al año 2002 y hasta 1993 inclusive
+- `urbano_con_edificaciones_1993_2002` — apar=3, munis=3, años=3, vals=0.008|0.008|0.008
+  - desc: Inmuebles urbanos y suburbanos con edificaciones, con anterioridad al año 2002 y hasta 1993 inclusive
+- `urbano_sin_edificaciones_1993_2002` — apar=3, munis=3, años=3, vals=0.015|0.015|0.015
+  - desc: Inmuebles urbanos y suburbanos sin edificaciones, con anterioridad al año 2002 y hasta 1993 inclusive
+- `urbanos_suburbanos_con_edificaciones_antes_1993` — apar=3, munis=1, años=3, vals=0.013|0.013|0.013
+  - desc: Inmuebles urbanos y suburbanos con edificaciones; con anterioridad al año 1993
+- `urbanos_suburbanos_sin_edificaciones_antes_1993` — apar=3, munis=1, años=3, vals=0.012|0.013|0.013
+  - desc: Inmuebles urbanos y suburbanos sin edificaciones; con anterioridad al año 1993
+- `sin_edificaciones_1993_2001` — apar=3, munis=3, años=2, vals=0.015|0.015|0.015
+  - desc: Inmuebles urbanos y suburbanos sin edificaciones, con anterioridad al año 2002 y hasta 1993 inclusive
+- `inmuebles_urbanos_suburbanos` — apar=3, munis=1, años=1, vals=0.0024|0.0018|0.008
+  - desc: Inmuebles urbanos y suburbanos con valor determinado o modificado a la entrada en vigor de la ley y durante 2002 a 2017 inclusive
+- `urbano_suburbano_con_edificaciones_entrada_en_vigor` — apar=3, munis=3, años=2, vals=0.2|2.4|0.0024
+  - desc: Inmuebles urbanos y suburbanos con edificaciones, a la entrada en vigor de la presente Ley
+- `urbano_suburbano_sin_edificaciones_entrada_en_vigor` — apar=3, munis=3, años=2, vals=0.3|4.5|0.0045
+  - desc: Inmuebles urbanos y suburbanos sin edificaciones, a la entrada en vigor de la presente Ley
+- `urbano_sin_edificaciones_anteriores_1993` — apar=3, munis=3, años=2, vals=0.013|0.013|0.013
+  - desc: Inmuebles urbanos y suburbanos sin edificaciones, con anterioridad al año de 1993.
+- `anterior_a_1993_con_edificaciones` — apar=2, munis=2, años=2, vals=0.013|0.012
+  - desc: Con anterioridad al año 1993, inmuebles urbanos y suburbanos con edificaciones
+- `inmuebles_urbanos_y_suburbanos_con_valor_determinado_o_modificado_con_edificaciones` — apar=2, munis=2, años=2, vals=0.0024|0.0024
+  - desc: Inmuebles urbanos y suburbanos con valor determinado o modificado, con edificaciones, a la entrada en vigor de la ley
+- `con_edificaciones_entrada_en_vigor` — apar=2, munis=2, años=2, vals=0.0024|0.0024
+  - desc: Inmuebles urbanos y suburbanos con edificaciones, a la entrada en vigor de la ley
+- `anterior_1993_2001` — apar=2, munis=2, años=2, vals=0.008|0.008
+  - desc: Inmuebles urbanos y suburbanos con valor determinado o modificado, con anterioridad al año 2002 y hasta 1993 inclusive
+- `sin_edificaciones_anterior_2002_1993` — apar=2, munis=2, años=2, vals=0.015|0.015
+  - desc: Inmuebles urbanos y suburbanos sin edificaciones; con anterioridad al año 2002 y hasta 1993 inclusive
+- `con_edificaciones_antes_2002_hasta_1993` — apar=2, munis=2, años=2, vals=0.008|0.008
+  - desc: Inmuebles urbanos y suburbanos con edificaciones, con anterioridad a 2002 y hasta 1993 inclusive
+- `sin_edificaciones_antes_2002_hasta_1993` — apar=2, munis=2, años=2, vals=0.015|0.015
+  - desc: Inmuebles urbanos y suburbanos sin edificaciones, con anterioridad a 2002 y hasta 1993 inclusive
+- `urbano_con_edificacion_pre_1993` — apar=2, munis=2, años=2, vals=0.013|0.008
+  - desc: Inmuebles urbanos y suburbanos con edificaciones; con anterioridad a 1993
+- `urbano_sin_edificacion_pre_1993` — apar=2, munis=2, años=2, vals=0.012|0.008
+  - desc: Inmuebles urbanos y suburbanos sin edificaciones; con anterioridad a 1993
+- `urbanos_suburbanos_con_edificaciones_ant_1993` — apar=2, munis=2, años=2, vals=0.013|0.008
+  - desc: Inmuebles urbanos y suburbanos con edificaciones; con anterioridad al año de 1993
+- `urbanos_suburbanos_sin_edificaciones_ant_1993` — apar=2, munis=2, años=2, vals=0.012|0.015
+  - desc: Inmuebles urbanos y suburbanos sin edificaciones; con anterioridad al año de 1993
+- `inmuebles_urbanos_y_suburbanos_anteriores_a_1993` — apar=2, munis=2, años=2, vals=0.013|0.013
+  - desc: Con anterioridad al año de 1993, urbanos y suburbanos
+- `urbano_con_edificacion_1993_2001` — apar=2, munis=2, años=2, vals=0.008|0.008
+  - desc: Inmuebles urbanos y suburbanos con edificaciones, con anterioridad al año 2002 y hasta 1993 inclusive
+- `urbano_sin_edificacion_1993_2001` — apar=2, munis=2, años=2, vals=0.015|0.015
+  - desc: Inmuebles urbanos y suburbanos sin edificaciones, con anterioridad al año 2002 y hasta 1993 inclusive
+- `con_edificacion` — apar=2, munis=2, años=2, vals=0.0024|0.0024
+  - desc: Inmuebles urbanos y suburbanos con edificaciones; a la entrada en vigor de la ley y durante 2002-2011 inclusive.
+- `sin_edificacion` — apar=2, munis=2, años=2, vals=0.0045|0.0045
+  - desc: Inmuebles urbanos y suburbanos sin edificaciones; a la entrada en vigor de la ley y durante 2002-2011 inclusive.
+- `sin_edificaciones_entrada_vigor` — apar=2, munis=2, años=2, vals=0.0045|0.0045
+  - desc: Inmuebles urbanos y suburbanos sin edificaciones, a la entrada en vigor de la ley
+- `sin_edificaciones_2002_2011` — apar=2, munis=2, años=1, vals=0.0045|0.00375
+  - desc: Inmuebles urbanos y suburbanos sin edificaciones, durante los años 2002 a 2011 inclusive
+- `urbano_suburbano_con_edificacion` — apar=2, munis=2, años=2, vals=0.0045|0.0024
+  - desc: Inmuebles urbanos y suburbanos con edificaciones (art. 4, tasas por periodo de determinación del valor).
+- `urbano_suburbano_con_edificaciones_valor_anterior_1993` — apar=2, munis=1, años=2, vals=0.013|0.013
+  - desc: Inmuebles urbanos y suburbanos con edificaciones; valor determinado o modificado con anterioridad al año de 1993
+- `urbano_suburbano_sin_edificaciones_valor_anterior_1993` — apar=2, munis=1, años=2, vals=0.012|0.012
+  - desc: Inmuebles urbanos y suburbanos sin edificaciones; valor determinado o modificado con anterioridad al año de 1993
+- `urbanos_con_edificacion` — apar=2, munis=2, años=2, vals=0.0024|0.002
+  - desc: Inmuebles urbanos y suburbanos con edificaciones, a la entrada en vigor de la ley y durante 2002-2011 inclusive
+- `urbanos_sin_edificacion` — apar=2, munis=2, años=2, vals=0.0045|0.003
+  - desc: Inmuebles urbanos y suburbanos sin edificaciones, a la entrada en vigor de la ley y durante 2002-2011 inclusive
+- `anios_2002_a_2013` — apar=2, munis=2, años=1, vals=2.4|0.00355
+  - desc: Durante los años 2002 y hasta 2013, inclusive: inmuebles urbanos y suburbanos con valor determinado o modificado: con edificaciones
+- `inmuebles_urbanos_y_suburbanos_1993_2001` — apar=2, munis=2, años=2, vals=0.008|0.008
+  - desc: Inmuebles urbanos y suburbanos con valor determinado o modificado; con anterioridad al año 2002 y hasta 1993, inclusive
+- `urbano_y_suburbano_con_edificaciones` — apar=2, munis=2, años=2, vals=0.0024|0.0024
+  - desc: Inmuebles urbanos y suburbanos con edificaciones
+- `urbano_y_suburbano_sin_edificaciones` — apar=2, munis=2, años=2, vals=0.0045|0.0045
+  - desc: Inmuebles urbanos y suburbanos sin edificaciones
+- `inmuebles_urbanos_con_edificaciones` — apar=2, munis=2, años=2, vals=0.004|0.0024
+  - desc: Inmuebles urbanos y suburbanos con edificaciones, según el valor del inmueble determinado o modificado
+- `inmuebles_urbanos_sin_edificaciones` — apar=2, munis=2, años=2, vals=0.0045|0.0045
+  - desc: Inmuebles urbanos y suburbanos sin edificaciones, según el valor del inmueble determinado o modificado
+- `anterior_1993_edificado` — apar=2, munis=2, años=2, vals=0.013|0.013
+  - desc: Con anterioridad al año de 1993; inmuebles urbanos y suburbanos con edificaciones
+- `anterior_1993_sin_edificacion` — apar=2, munis=2, años=2, vals=0.012|0.012
+  - desc: Con anterioridad al año de 1993; inmuebles urbanos y suburbanos sin edificaciones
+- `urbanos_y_suburbanos_con_edificaciones_1993_2001` — apar=2, munis=2, años=2, vals=0.008|0.008
+  - desc: Inmuebles urbanos y suburbanos con edificaciones, con anterioridad al año 2002 y hasta 1993 inclusive
+- `urbano_con_edificaciones_antes_1993` — apar=2, munis=2, años=2, vals=0.013|0.0018
+  - desc: Inmuebles urbanos y suburbanos con edificaciones, con anterioridad a 1993
+- `urbano_sin_edificaciones_antes_1993` — apar=2, munis=2, años=2, vals=0.012|0.006
+  - desc: Inmuebles urbanos y suburbanos sin edificaciones, con anterioridad a 1993
+- `urbanos_suburbanos_con_edificaciones_valor_determinado_o_modificado_entrada_en_vigor` — apar=2, munis=1, años=2, vals=0.0024|0.024
+  - desc: Inmuebles urbanos y suburbanos con edificaciones; los inmuebles que cuenten con un valor determinado o modificado; a la entrada en vigor de 
+- `urbanos_suburbanos_sin_edificaciones_valor_determinado_o_modificado_entrada_en_vigor` — apar=2, munis=1, años=2, vals=0.0045|0.045
+  - desc: Inmuebles urbanos y suburbanos sin edificaciones; los inmuebles que cuenten con un valor determinado o modificado; a la entrada en vigor de 
+- `inmuebles_urbanos_y_suburbanos_entrada_en_vigor` — apar=2, munis=2, años=1, vals=0.0024|0.0024
+  - desc: Inmuebles urbanos y suburbanos, a la entrada en vigor de la presente ley
+- `con_edificaciones_historico_2002_2014` — apar=2, munis=2, años=1, vals=0.0024|0.0024
+  - desc: Inmuebles urbanos y suburbanos con edificaciones; durante los años 2002 a 2014 inclusive
+- `sin_edificaciones_historico_2002_2014` — apar=2, munis=2, años=1, vals=0.00375|0.0045
+  - desc: Inmuebles urbanos y suburbanos sin edificaciones; durante los años 2002 a 2014 inclusive
+- `con_edificaciones_1993_2002` — apar=2, munis=2, años=2, vals=0.008|0.008
+  - desc: Inmuebles urbanos y suburbanos con edificaciones (Art. 4, fracc. I, tasa aplicable a inmuebles determinados con anterioridad a 2002 y hasta 
+- `sin_edificaciones_1993_2002` — apar=2, munis=2, años=2, vals=0.015|0.015
+  - desc: Inmuebles urbanos y suburbanos sin edificaciones (Art. 4, fracc. I, tasa aplicable a inmuebles determinados con anterioridad a 2002 y hasta 
+- `con_edificaciones_1993_2001` — apar=2, munis=2, años=2, vals=0.008|0.008
+  - desc: Inmuebles urbanos y suburbanos con edificaciones, con anterioridad al año 2002 y hasta 1993, inclusive.
+- `urbano_suburbano` — apar=2, munis=2, años=2, vals=0.001|0.0024
+  - desc: Inmuebles urbanos y suburbanos con valor determinado o modificado: a la entrada en vigor de la ley; durante los años 2002 a 2016 inclusive; 
+- `urbanos_y_suburbanos_con_edificaciones_entrada_en_vigor` — apar=2, munis=2, años=2, vals=0.0024|0.002
+  - desc: Inmuebles urbanos y suburbanos con edificaciones, a la entrada en vigor de la ley
+- `urbanos_y_suburbanos_sin_edificaciones_entrada_en_vigor` — apar=2, munis=2, años=2, vals=0.0045|0.003
+  - desc: Inmuebles urbanos y suburbanos sin edificaciones, a la entrada en vigor de la ley
+- `con_edificaciones_ant_2002_a_1993` — apar=2, munis=2, años=2, vals=0.008|0.008
+  - desc: Inmuebles urbanos y suburbanos con edificaciones; con anterioridad al año 2002 y hasta el año 1993.
+- `sin_edificaciones_ant_2002_a_1993` — apar=2, munis=2, años=2, vals=0.015|0.015
+  - desc: Inmuebles urbanos y suburbanos sin edificaciones; con anterioridad al año 2002 y hasta el año 1993.
+- `urbanos_suburbanos_con_edificaciones_entrada_en_vigor` — apar=2, munis=1, años=2, vals=0.0024|0.0024
+  - desc: Inmuebles urbanos y suburbanos con edificaciones, a la entrada en vigor de la presente Ley
+- `urbanos_suburbanos_sin_edificaciones_entrada_en_vigor` — apar=2, munis=1, años=2, vals=0.0045|0.0045
+  - desc: Inmuebles urbanos y suburbanos sin edificaciones, a la entrada en vigor de la presente Ley
+- `urbanos_suburbanos_con_edificaciones_1993_2001` — apar=2, munis=1, años=2, vals=0.008|0.008
+  - desc: Inmuebles urbanos y suburbanos con edificaciones, con anterioridad al año 2002 y hasta el año 1993 inclusive
+- `urbanos_suburbanos_sin_edificaciones_1993_2001` — apar=2, munis=1, años=2, vals=0.015|0.015
+  - desc: Inmuebles urbanos y suburbanos sin edificaciones, con anterioridad al año 2002 y hasta el año 1993 inclusive
+- `urbano_suburbano_con_edificaciones_1993_2001` — apar=2, munis=2, años=2, vals=0.8|0.008
+  - desc: Inmuebles urbanos y suburbanos con edificaciones, con anterioridad al año 2002 y hasta 1993 inclusive
+- `urbano_suburbano_sin_edificaciones_1993_2001` — apar=2, munis=2, años=2, vals=1.5|0.015
+  - desc: Inmuebles urbanos y suburbanos sin edificaciones, con anterioridad al año 2002 y hasta 1993 inclusive
+- `anteriores_1993_a_2001` — apar=2, munis=2, años=2, vals=0.008|0.008
+  - desc: Inmuebles urbanos y suburbanos con edificación, con anterioridad al año 2002 y hasta 1993 inclusive
+- `urbanos_y_suburbanos_con_edificaciones_anterior_1993` — apar=2, munis=2, años=2, vals=0.013|0.013
+  - desc: Inmuebles urbanos y suburbanos con edificaciones, con anterioridad a 1993.
+- `urbanos_y_suburbanos_sin_edificaciones_anterior_1993` — apar=2, munis=2, años=2, vals=0.0|0.013
+  - desc: Inmuebles urbanos y suburbanos sin edificaciones, con anterioridad a 1993.
+- `urbanos_y_suburbanos_con_edificaciones_anteriores_a_1993` — apar=2, munis=2, años=2, vals=0.013|0.0013
+  - desc: Inmuebles urbanos y suburbanos con edificaciones; con anterioridad al año de 1993.
+- `urbanos_y_suburbanos_sin_edificaciones_anteriores_a_1993` — apar=2, munis=2, años=2, vals=0.012|0.0013
+  - desc: Inmuebles urbanos y suburbanos sin edificaciones; con anterioridad al año de 1993.
+- `urbano_suburbano_con_edificaciones_pre_1993` — apar=2, munis=2, años=2, vals=0.013|0.008
+  - desc: Inmuebles urbanos y suburbanos con edificaciones, con anterioridad al año de 1993
+- `urbano_suburbano_sin_edificaciones_pre_1993` — apar=2, munis=2, años=2, vals=0.013|0.008
+  - desc: Inmuebles urbanos y suburbanos sin edificaciones, con anterioridad al año de 1993
+- `inmuebles_urbanos_y_suburbanos_con_edificaciones_ant_2002_1993` — apar=2, munis=2, años=2, vals=0.008|0.008
+  - desc: Inmuebles urbanos y suburbanos con edificaciones, con anterioridad al año 2002 y hasta 1993 inclusive.
+- `inmuebles_urbanos_y_suburbanos_sin_edificaciones_ant_2002_1993` — apar=2, munis=2, años=2, vals=0.015|0.015
+  - desc: Inmuebles urbanos y suburbanos sin edificaciones, con anterioridad al año 2002 y hasta 1993 inclusive.
+- `inmuebles_urbanos_y_suburbanos_con_edificaciones_ant_1993` — apar=2, munis=2, años=2, vals=0.013|0.013
+  - desc: Inmuebles urbanos y suburbanos con edificaciones, con anterioridad al año 1993.
+- `inmuebles_urbanos_y_suburbanos_sin_edificaciones_ant_1993` — apar=2, munis=2, años=2, vals=0.012|0.012
+  - desc: Inmuebles urbanos y suburbanos sin edificaciones, con anterioridad al año 1993.
+- `inmuebles_urbanos_y_suburbanos_con_edificaciones_1993_a_2001` — apar=2, munis=2, años=2, vals=0.008|0.008
+  - desc: Con anterioridad al año 2002 y hasta 1993 inclusive.
+- `inmuebles_urbanos_y_suburbanos_sin_edificaciones_1993_a_2001` — apar=2, munis=2, años=2, vals=0.015|0.015
+  - desc: Con anterioridad al año 2002 y hasta 1993 inclusive.
+- `urbano_suburbano_con_edificaciones_2002_2021` — apar=2, munis=2, años=1, vals=0.0024|0.0024
+  - desc: Inmuebles urbanos y suburbanos con edificaciones: durante los años 2002 y hasta el 2021, inclusive
+- `urbano_suburbano_sin_edificaciones_2002_2021` — apar=2, munis=2, años=1, vals=0.0045|0.0045
+  - desc: Inmuebles urbanos y suburbanos sin edificaciones: durante los años 2002 y hasta el 2021, inclusive
+- `urbanos_y_suburbanos` — apar=2, munis=2, años=2, vals=0.0024|0.002
+  - desc: Inmuebles urbanos y suburbanos
+- `urbano_suburbano_con_edificaciones_antes_2002_hasta_1993` — apar=2, munis=2, años=1, vals=8.0|0.008
+  - desc: Inmuebles urbanos y suburbanos con edificaciones; con anterioridad al año 2002 y hasta 1993, inclusive
+- `urbano_suburbano_sin_edificaciones_antes_2002_hasta_1993` — apar=2, munis=2, años=1, vals=15.0|0.015
+  - desc: Inmuebles urbanos y suburbanos sin edificaciones; con anterioridad al año 2002 y hasta 1993, inclusive
+- `urbano_suburbano_antes_1993` — apar=2, munis=2, años=1, vals=13.0|0.013
+  - desc: Inmuebles urbanos y suburbanos; con anterioridad al año 1993
+- `urbanos_y_suburbanos_con_edificaciones_2002_a_2025` — apar=2, munis=2, años=1, vals=0.0024|0.002
+  - desc: Inmuebles urbanos y suburbanos con edificaciones, durante los años 2002 y hasta el 2025, inclusive
+- `urbanos_y_suburbanos_sin_edificaciones_2002_a_2025` — apar=2, munis=2, años=1, vals=0.0045|0.003
+  - desc: Inmuebles urbanos y suburbanos sin edificaciones, durante los años 2002 y hasta el 2025, inclusive
+- `_2002_2009_con_edificaciones` — apar=1, munis=1, años=1, vals=0.024
+  - desc: Durante los años 2002 y hasta 2009 inclusive, inmuebles urbanos y suburbanos con edificaciones
+- `_2002_2009_sin_edificaciones` — apar=1, munis=1, años=1, vals=0.045
+  - desc: Durante los años 2002 y hasta 2009 inclusive, inmuebles urbanos y suburbanos sin edificaciones
+- `_1993_2001_con_edificaciones` — apar=1, munis=1, años=1, vals=0.008
+  - desc: Con anterioridad al año 2002 y hasta 1993 inclusive, inmuebles urbanos y suburbanos con edificaciones
+- `_1993_2001_sin_edificaciones` — apar=1, munis=1, años=1, vals=0.015
+  - desc: Con anterioridad al año 2002 y hasta 1993 inclusive, inmuebles urbanos y suburbanos sin edificaciones
+- `anterior_a_1993_sin_edificaciones` — apar=1, munis=1, años=1, vals=0.012
+  - desc: Con anterioridad al año 1993, inmuebles urbanos y suburbanos sin edificaciones
+- `entrada_vigor_ley_sin_edificaciones` — apar=1, munis=1, años=1, vals=0.0045
+  - desc: Inmuebles urbanos y suburbanos con valor determinado o modificado, sin edificaciones
+- `2002_2009_con_edificaciones` — apar=1, munis=1, años=1, vals=0.0024
+  - desc: Inmuebles urbanos y suburbanos con valor determinado o modificado, con edificaciones
+- `2002_2009_sin_edificaciones` — apar=1, munis=1, años=1, vals=0.0045
+  - desc: Inmuebles urbanos y suburbanos con valor determinado o modificado, sin edificaciones
+- `inmuebles_urbanos_y_suburbanos_con_valor_determinado_o_modificado_sin_edificaciones` — apar=1, munis=1, años=1, vals=0.0045
+  - desc: Inmuebles urbanos y suburbanos con valor determinado o modificado, sin edificaciones, a la entrada en vigor de la ley
+- `urbano_con_edificaciones_2002_2009` — apar=1, munis=1, años=1, vals=0.0024
+  - desc: Inmuebles urbanos y suburbanos con edificaciones, durante 2002 hasta 2009 inclusive
+- `urbano_sin_edificaciones_entrada_en_vigor` — apar=1, munis=1, años=1, vals=0.0045
+  - desc: Inmuebles urbanos y suburbanos sin edificaciones, a la entrada en vigor de la ley
+- `urbano_sin_edificaciones_2002_2009` — apar=1, munis=1, años=1, vals=0.0045
+  - desc: Inmuebles urbanos y suburbanos sin edificaciones, durante 2002 hasta 2009 inclusive
+- `urbanos_y_suburbanos_con_edificaciones_vigente_modificado` — apar=1, munis=1, años=1, vals=0.0024
+  - desc: Inmuebles urbanos y suburbanos con edificaciones, valor determinado o modificado a la entrada en vigor de la presente ley
+- `urbanos_y_suburbanos_sin_edificaciones_vigente_modificado` — apar=1, munis=1, años=1, vals=0.0045
+  - desc: Inmuebles urbanos y suburbanos sin edificaciones, valor determinado o modificado a la entrada en vigor de la presente ley
+- `urbanos_y_suburbanos_con_edificaciones_2002_2009` — apar=1, munis=1, años=1, vals=0.0024
+  - desc: Inmuebles urbanos y suburbanos con edificaciones, durante el año 2002 y hasta el 2009 inclusive
+- `urbanos_y_suburbanos_sin_edificaciones_2002_2009` — apar=1, munis=1, años=1, vals=0.0045
+  - desc: Inmuebles urbanos y suburbanos sin edificaciones, durante el año 2002 y hasta el 2009 inclusive
+- `urbanos_y_suburbanos_con_edificaciones_hasta_1993_inclusive` — apar=1, munis=1, años=1, vals=0.008
+  - desc: Inmuebles urbanos y suburbanos con edificaciones, con anterioridad al año 2002 y hasta 1993 inclusive
+- `urbanos_y_suburbanos_sin_edificaciones_hasta_1993_inclusive` — apar=1, munis=1, años=1, vals=0.015
+  - desc: Inmuebles urbanos y suburbanos sin edificaciones, con anterioridad al año 2002 y hasta 1993 inclusive
+- `urbanos_y_suburbanos_con_edificaciones_anterior_a_1993` — apar=1, munis=1, años=1, vals=0.013
+  - desc: Inmuebles urbanos y suburbanos con edificaciones, con anterioridad a 1993
+- `urbanos_y_suburbanos_sin_edificaciones_anterior_a_1993` — apar=1, munis=1, años=1, vals=0.012
+  - desc: Inmuebles urbanos y suburbanos sin edificaciones, con anterioridad a 1993
+- `anios_2002_2009` — apar=1, munis=1, años=1, vals=0.0045
+  - desc: Inmuebles urbanos y suburbanos con valor determinado o modificado, durante los años 2002 a 2009 inclusive
+- `urbano_con_edificacion_anteriores` — apar=1, munis=1, años=1, vals=0.008
+  - desc: Inmuebles urbanos y suburbanos con edificaciones; valor anterior al ejercicio 2009, inclusive.
+- `urbano_sin_edificacion_anteriores` — apar=1, munis=1, años=1, vals=0.015
+  - desc: Inmuebles urbanos y suburbanos sin edificaciones; valor anterior al ejercicio 2009, inclusive.
+- `con_edificaciones_anterior_2002_1993` — apar=1, munis=1, años=1, vals=0.008
+  - desc: Inmuebles urbanos y suburbanos con edificaciones; con anterioridad al año 2002 y hasta 1993 inclusive
+- `con_edificaciones_anterior_1993` — apar=1, munis=1, años=1, vals=0.013
+  - desc: Inmuebles urbanos y suburbanos con edificaciones; con anterioridad al año 1993
+- `con_edificaciones_2002_a_2009` — apar=1, munis=1, años=1, vals=0.0024
+  - desc: Inmuebles urbanos y suburbanos con edificaciones, valores determinados durante los años 2002 a 2009, inclusive
+- `sin_edificaciones_2002_a_2009` — apar=1, munis=1, años=1, vals=0.0045
+  - desc: Inmuebles urbanos y suburbanos sin edificaciones, valores determinados durante los años 2002 a 2009, inclusive
+- `con_edificaciones_1993_a_2001` — apar=1, munis=1, años=1, vals=0.008
+  - desc: Inmuebles urbanos y suburbanos con edificaciones, valores determinados con anterioridad al año 2002 y hasta 1993 inclusive
+- `sin_edificaciones_1993_a_2001` — apar=1, munis=1, años=1, vals=0.013
+  - desc: Inmuebles urbanos y suburbanos sin edificaciones, valores determinados con anterioridad al año 2002 y hasta 1993 inclusive
+- `urbano_suburbano_con_edificaciones_valor_determinado_o_modificado_entrada_en_vigor` — apar=1, munis=1, años=1, vals=0.2
+  - desc: Inmuebles urbanos y suburbanos con edificaciones, con valor determinado o modificado a la entrada en vigor de la presente Ley
+- `urbano_suburbano_sin_edificaciones_valor_determinado_o_modificado_entrada_en_vigor` — apar=1, munis=1, años=1, vals=0.3
+  - desc: Inmuebles urbanos y suburbanos sin edificaciones, con valor determinado o modificado a la entrada en vigor de la presente Ley
+- `urbano_suburbano_con_edificaciones_valor_determinado_2002_2009` — apar=1, munis=1, años=1, vals=0.2
+  - desc: Inmuebles urbanos y suburbanos con edificaciones, con valor determinado o modificado durante los años 2002 y hasta el 2009 inclusive
+- `urbano_suburbano_sin_edificaciones_valor_determinado_2002_2009` — apar=1, munis=1, años=1, vals=0.3
+  - desc: Inmuebles urbanos y suburbanos sin edificaciones, con valor determinado o modificados durante los años 2002 y hasta el 2009 inclusive
+- `urbano_suburbano_con_edificaciones_valor_anterior_2002_hasta_1993` — apar=1, munis=1, años=1, vals=0.8
+  - desc: Inmuebles urbanos y suburbanos con edificaciones, con valor determinado o modificado con anterioridad al año 2002 y hasta 1993 inclusive
+- `urbano_suburbano_sin_edificaciones_valor_anterior_2002_hasta_1993` — apar=1, munis=1, años=1, vals=1.5
+  - desc: Inmuebles urbanos y suburbanos sin edificaciones, con valor determinado o modificado con anterioridad al año 2002 y hasta 1993 inclusive
+- `urbano_suburbano_valor_anterior_1993` — apar=1, munis=1, años=1, vals=0.13
+  - desc: Inmuebles urbanos y suburbanos, con valor determinado o modificado con anterioridad al año de 1993
+- `con_edificaciones_antiguo` — apar=1, munis=1, años=1, vals=0.008
+  - desc: Inmuebles urbanos y suburbanos con edificaciones, con anterioridad al año 2002 y hasta 1993, inclusive
+- `sin_edificaciones_antiguo` — apar=1, munis=1, años=1, vals=0.015
+  - desc: Inmuebles urbanos y suburbanos sin edificaciones, con anterioridad al año 2002 y hasta 1993, inclusive
+- `urbanos_con_edificaciones_anteriores_2002_hasta_1993` — apar=1, munis=1, años=1, vals=0.008
+  - desc: Inmuebles urbanos y suburbanos con edificaciones; con anterioridad al año 2002 y hasta 1993, inclusive.
+- `urbanos_sin_edificaciones_anteriores_2002_hasta_1993` — apar=1, munis=1, años=1, vals=0.015
+  - desc: Inmuebles urbanos y suburbanos sin edificaciones; con anterioridad al año 2002 y hasta 1993, inclusive.
+- `urbanos_con_edificaciones_anteriores_1993` — apar=1, munis=1, años=1, vals=0.013
+  - desc: Inmuebles urbanos y suburbanos con edificaciones; con anterioridad al año 1993.
+- `urbanos_sin_edificaciones_anteriores_1993` — apar=1, munis=1, años=1, vals=0.012
+  - desc: Inmuebles urbanos y suburbanos sin edificaciones; con anterioridad al año 1993.
+- `con_edificaciones_2002_2010` — apar=1, munis=1, años=1, vals=0.0024
+  - desc: Inmuebles urbanos y suburbanos con edificaciones, durante 2002 a 2010 inclusive
+- `sin_edificaciones_2002_2010` — apar=1, munis=1, años=1, vals=0.0045
+  - desc: Inmuebles urbanos y suburbanos sin edificaciones, durante 2002 a 2010 inclusive
+- `anio_2002_2010_con_edificaciones` — apar=1, munis=1, años=1, vals=0.0024
+  - desc: Durante los años 2002 y hasta 2010, inclusive: inmuebles urbanos y suburbanos con edificaciones
+- `anio_2002_2010_sin_edificaciones` — apar=1, munis=1, años=1, vals=0.0045
+  - desc: Durante los años 2002 y hasta 2010, inclusive: inmuebles urbanos y suburbanos sin edificaciones
+- `años_2002_2010` — apar=1, munis=1, años=1, vals=0.0024 ⚠ slugify_sug=`anos_2002_2010`
+  - desc: Inmuebles urbanos y suburbanos con valor determinado o modificado: con edificaciones, durante los años 2002 y hasta 2010, inclusive.
+- `antes_2002_hasta_1993` — apar=1, munis=1, años=1, vals=0.008
+  - desc: Inmuebles urbanos y suburbanos con valor determinado o modificado: con edificaciones, con anterioridad al año 2002 y hasta 1993, inclusive.
+- `antes_1993` — apar=1, munis=1, años=1, vals=0.013
+  - desc: Inmuebles urbanos y suburbanos con valor determinado o modificado: con edificaciones, con anterioridad al año 1993.
+- `años_2002_2010_sin_edificaciones` — apar=1, munis=1, años=1, vals=0.0045 ⚠ slugify_sug=`anos_2002_2010_sin_edificaciones`
+  - desc: Inmuebles urbanos y suburbanos con valor determinado o modificado: sin edificaciones, durante los años 2002 y hasta 2010, inclusive.
+- `antes_2002_hasta_1993_sin_edificaciones` — apar=1, munis=1, años=1, vals=0.0015
+  - desc: Inmuebles urbanos y suburbanos con valor determinado o modificado: sin edificaciones, con anterioridad al año 2002 y hasta 1993, inclusive.
+- `antes_1993_sin_edificaciones` — apar=1, munis=1, años=1, vals=0.012
+  - desc: Inmuebles urbanos y suburbanos con valor determinado o modificado: sin edificaciones, con anterioridad al año 1993.
+- `urbano_suburbano_rustico_sin_edificaciones_2002_2010` — apar=1, munis=1, años=1, vals=0.0045
+  - desc: Inmuebles urbanos y suburbanos rústicos sin edificaciones; durante los años 2002 y hasta 2010 inclusive.
+- `urbano_suburbano_rustico_sin_edificaciones_anteriores_1993_2002` — apar=1, munis=1, años=1, vals=0.015
+  - desc: Inmuebles urbanos y suburbanos rústicos sin edificaciones; con anterioridad al año 2002 y hasta 1993 inclusive.
+- `urbano_suburbano_rustico_sin_edificaciones_anteriores_1993` — apar=1, munis=1, años=1, vals=0.012
+  - desc: Inmuebles urbanos y suburbanos rústicos sin edificaciones; con anterioridad al año de 1993.
+- `anios_2002_a_2010` — apar=1, munis=1, años=1, vals=0.0024
+  - desc: Inmuebles urbanos y suburbanos con edificaciones sin edificaciones; durante los años 2002 y hasta el año 2010, inclusive
+- `urbano_con_edificaciones_antiguo_1993_1994` — apar=1, munis=1, años=1, vals=0.008
+  - desc: Inmuebles urbanos y suburbanos con edificaciones; con anterioridad al año 2002 y hasta 1993, inclusive
+- `urbano_sin_edificaciones_antiguo_1993_1994` — apar=1, munis=1, años=1, vals=0.015
+  - desc: Inmuebles urbanos y suburbanos sin edificaciones; con anterioridad al año 2002 y hasta 1993, inclusive
+- `urbano_con_edificaciones_mas_antiguo` — apar=1, munis=1, años=1, vals=0.013
+  - desc: Inmuebles urbanos y suburbanos con edificaciones; con anterioridad al año de 1993
+- `urbano_sin_edificaciones_mas_antiguo` — apar=1, munis=1, años=1, vals=0.012
+  - desc: Inmuebles urbanos y suburbanos sin edificaciones; con anterioridad al año de 1993
+- `2002_2010` — apar=1, munis=1, años=1, vals=0.0024
+  - desc: Durante los años 2002 y hasta el 2010, inclusive
+- `urbano_anteriores_2002_con_edificaciones` — apar=1, munis=1, años=1, vals=0.008
+  - desc: Inmuebles urbanos y suburbanos con edificaciones, con anterioridad al año 2002 y hasta 1993 inclusive
+- `urbano_anteriores_2002_sin_edificaciones` — apar=1, munis=1, años=1, vals=0.015
+  - desc: Inmuebles urbanos y suburbanos sin edificaciones, con anterioridad al año 2002 y hasta 1993 inclusive
+- `urbano_anteriores_1993_con_edificaciones` — apar=1, munis=1, años=1, vals=0.013
+  - desc: Inmuebles urbanos y suburbanos con edificaciones, con anterioridad a 1993
+- `urbano_anteriores_1993_sin_edificaciones` — apar=1, munis=1, años=1, vals=0.012
+  - desc: Inmuebles urbanos y suburbanos sin edificaciones, con anterioridad a 1993
+- `con_edificaciones_ant_2002` — apar=1, munis=1, años=1, vals=0.008
+  - desc: Inmuebles urbanos y suburbanos con valor determinado o modificado con anterioridad al año 2002 y hasta el año 1993
+- `sin_edificaciones_ant_2002` — apar=1, munis=1, años=1, vals=0.015
+  - desc: Inmuebles urbanos y suburbanos sin edificaciones con valor determinado o modificado con anterioridad al año 2002 y hasta el año 1993
+- `suburbano` — apar=1, munis=1, años=1, vals=0.002
+  - desc: Inmuebles suburbanos
+- `urbanos_suburbanos_con_edificaciones_ant_2002_1993` — apar=1, munis=1, años=1, vals=0.008
+  - desc: Inmuebles urbanos y suburbanos con edificaciones; con anterioridad al año 2002 y hasta 1993 inclusive
+- `urbanos_suburbanos_sin_edificaciones_ant_2002_1993` — apar=1, munis=1, años=1, vals=0.015
+  - desc: Inmuebles urbanos y suburbanos sin edificaciones; con anterioridad al año 2002 y hasta 1993 inclusive
+- `inmuebles_urbanos_y_suburbanos_con_edificaciones_antiguos_1993_a_2001` — apar=1, munis=1, años=1, vals=0.008
+  - desc: Con anterioridad al año 2002 y hasta 1993 inclusive, urbanos y suburbanos con edificaciones
+- `inmuebles_urbanos_y_suburbanos_sin_edificaciones_antiguos_1993_a_2001` — apar=1, munis=1, años=1, vals=0.015
+  - desc: Con anterioridad al año 2002 y hasta 1993 inclusive, urbanos y suburbanos sin edificaciones
+- `urbano_con_edificacion_2002_2011` — apar=1, munis=1, años=1, vals=0.0024
+  - desc: Inmuebles urbanos y suburbanos con edificaciones, durante los años 2002 y hasta 2011 inclusive
+- `urbano_sin_edificacion_2002_2011` — apar=1, munis=1, años=1, vals=0.0013
+  - desc: Inmuebles urbanos y suburbanos sin edificaciones, durante los años 2002 y hasta 2011 inclusive
+- `con_edificacion_ant_1993_2001` — apar=1, munis=1, años=1, vals=0.008
+  - desc: Inmuebles urbanos y suburbanos con edificaciones; con anterioridad al año 2002 y hasta 1993 inclusive.
+- `sin_edificacion_ant_1993_2001` — apar=1, munis=1, años=1, vals=0.015
+  - desc: Inmuebles urbanos y suburbanos sin edificaciones; con anterioridad al año 2002 y hasta 1993 inclusive.
+- `con_edificacion_ant_1993` — apar=1, munis=1, años=1, vals=0.013
+  - desc: Inmuebles urbanos y suburbanos con edificaciones; con anterioridad al año 1993.
+- `sin_edificacion_ant_1993` — apar=1, munis=1, años=1, vals=0.012
+  - desc: Inmuebles urbanos y suburbanos sin edificaciones; con anterioridad al año 1993.
+- `anios_2002_2011` — apar=1, munis=1, años=1, vals=0.0024
+  - desc: Inmuebles urbanos y suburbanos con valor determinado o modificado, con edificaciones, durante los años 2002 a 2011 inclusive
+- `anterior_2002_1993` — apar=1, munis=1, años=1, vals=0.008
+  - desc: Inmuebles urbanos y suburbanos con valor determinado o modificado, con edificaciones, con anterioridad al año 2002 y hasta el año 1993 inclu
+- `urbano_suburbano_sin_edificacion` — apar=1, munis=1, años=1, vals=0.0024
+  - desc: Inmuebles urbanos y suburbanos sin edificaciones (art. 4, tasas por periodo de determinación del valor).
+- `inmuebles_urbanos_y_suburbanos_con_os` — apar=1, munis=1, años=1, vals=0.0018
+  - desc: Inmuebles urbanos y suburbanos con OS, a la entrada en vigor de la ley y durante 2002 a 2011 inclusive
+- `inmuebles_urbanos_y_suburbanos_con_edificaciones_2001_y_anteriores_hasta_1993` — apar=1, munis=1, años=1, vals=0.008
+  - desc: Inmuebles urbanos y suburbanos con edificaciones, con anterioridad al año 2002 y hasta 1993 inclusive
+- `inmuebles_urbanos_y_suburbanos_sin_edificaciones_2001_y_anteriores_hasta_1993` — apar=1, munis=1, años=1, vals=0.015
+  - desc: Inmuebles urbanos y suburbanos sin edificaciones, con anterioridad al año 2002 y hasta 1993 inclusive
+- `inmuebles_urbanos_y_suburbanos_con_os_2001_y_anteriores_hasta_1993` — apar=1, munis=1, años=1, vals=0.006
+  - desc: Inmuebles urbanos y suburbanos con OS, con anterioridad al año 2002 y hasta 1993 inclusive
+- `inmuebles_urbanos_y_suburbanos_con_edificaciones_anteriores_a_1993` — apar=1, munis=1, años=1, vals=0.013
+  - desc: Inmuebles urbanos y suburbanos con edificaciones, con anterioridad a 1993
+- `inmuebles_urbanos_y_suburbanos_sin_edificaciones_anteriores_a_1993` — apar=1, munis=1, años=1, vals=0.012
+  - desc: Inmuebles urbanos y suburbanos sin edificaciones, con anterioridad a 1993
+- `anio_2002_a_2011_con_edificaciones` — apar=1, munis=1, años=1, vals=0.004
+  - desc: Inmuebles urbanos y suburbanos con valor determinado o modificado, con edificaciones, durante el año 2002 y hasta el año 2011 inclusive
+- `anio_2002_a_2011_sin_edificaciones` — apar=1, munis=1, años=1, vals=0.0045
+  - desc: Inmuebles urbanos y suburbanos sin edificaciones, durante el año 2002 y hasta el año 2011 inclusive
+- `urbano_con_edificaciones_2002_2011` — apar=1, munis=1, años=1, vals=0.0024
+  - desc: Inmuebles urbanos y suburbanos con edificaciones; durante los años 2002 a 2011, inclusive.
+- `urbano_sin_edificaciones_2002_2011` — apar=1, munis=1, años=1, vals=0.0045
+  - desc: Inmuebles urbanos y suburbanos sin edificaciones; durante los años 2002 a 2011, inclusive.
+- `urbano_suburbano_con_edificaciones_valor_entrada_en_vigor` — apar=1, munis=1, años=1, vals=0.0024
+  - desc: Inmuebles urbanos y suburbanos con edificaciones; valor determinado o modificado a la entrada en vigor de la presente Ley
+- `urbano_suburbano_sin_edificaciones_valor_entrada_en_vigor` — apar=1, munis=1, años=1, vals=0.0045
+  - desc: Inmuebles urbanos y suburbanos sin edificaciones; valor determinado o modificado a la entrada en vigor de la presente Ley
+- `urbano_suburbano_con_edificaciones_valor_2002_2011` — apar=1, munis=1, años=1, vals=0.0024
+  - desc: Inmuebles urbanos y suburbanos con edificaciones; valor determinado o modificado durante el año 2002 y hasta el año 2011, inclusive
+- `urbano_suburbano_sin_edificaciones_valor_2002_2011` — apar=1, munis=1, años=1, vals=0.0045
+  - desc: Inmuebles urbanos y suburbanos sin edificaciones; valor determinado o modificado durante el año 2002 y hasta el año 2011, inclusive
+- `urbano_mixto` — apar=1, munis=1, años=1, vals=0.0026
+  - desc: Inmuebles urbanos y suburbanos con valor determinado o modificado
+- `urbano_con_edificacion_ant_1993_2001` — apar=1, munis=1, años=1, vals=0.008
+  - desc: Inmuebles urbanos y suburbanos con edificaciones, con anterioridad al año 2002 y hasta 1993 inclusive
+- `urbano_sin_edificacion_ant_1993_2001` — apar=1, munis=1, años=1, vals=0.015
+  - desc: Inmuebles urbanos y suburbanos sin edificaciones, con anterioridad al año 2002 y hasta 1993 inclusive
+- `urbano_ant_1993` — apar=1, munis=1, años=1, vals=0.013
+  - desc: Inmuebles urbanos y suburbanos con edificaciones, con anterioridad a 1993
+- `urbano_sin_edificacion_ant_1993` — apar=1, munis=1, años=1, vals=0.012
+  - desc: Inmuebles urbanos y suburbanos sin edificaciones, con anterioridad a 1993
+- `urbano_con_edificaciones_ant_1993` — apar=1, munis=1, años=1, vals=0.012
+  - desc: Inmuebles Urbanos y Suburbanos con edificaciones, con anterioridad a 1993
+- `con_edificaciones_2002_2011` — apar=1, munis=1, años=1, vals=0.0024
+  - desc: Inmuebles urbanos y suburbanos con edificaciones, durante los años 2002 y hasta 2011 inclusive
+- `urbanos_con_edificacion_1993_2001` — apar=1, munis=1, años=1, vals=0.008
+  - desc: Inmuebles urbanos y suburbanos con edificaciones, con anterioridad al año 2002 y hasta 1993 inclusive
+- `urbanos_sin_edificacion_1993_2001` — apar=1, munis=1, años=1, vals=0.015
+  - desc: Inmuebles urbanos y suburbanos sin edificaciones, con anterioridad al año 2002 y hasta 1993 inclusive
+- `urbanos_anteriores_1993_con_edificacion` — apar=1, munis=1, años=1, vals=0.013
+  - desc: Inmuebles urbanos y suburbanos con edificaciones, con anterioridad a 1993
+- `urbanos_anteriores_1993_sin_edificacion` — apar=1, munis=1, años=1, vals=0.012
+  - desc: Inmuebles urbanos y suburbanos sin edificaciones, con anterioridad a 1993
+- `anios_2002_a_2013_sin_edificaciones` — apar=1, munis=1, años=1, vals=0.0065
+  - desc: Inmuebles urbanos y suburbanos con valor determinado o modificado: durante los años 2002 al 2013 inclusive, sin edificaciones
+- `anterior_a_2002_hasta_1993_sin_edificaciones` — apar=1, munis=1, años=1, vals=0.015
+  - desc: Inmuebles urbanos y suburbanos con valor determinado o modificado: con anterioridad al año 2002 y hasta 1993 inclusive, sin edificaciones
+- `entrada_en_vigor_rusticos` — apar=1, munis=1, años=1, vals=0.002
+  - desc: Predios rústicos: a la entrada en vigor de la ley
+- `anios_2002_a_2013_rusticos` — apar=1, munis=1, años=1, vals=0.000398
+  - desc: Predios rústicos: durante los años 2002 al 2013 inclusive
+- `anterior_a_2002_hasta_1993_rusticos` — apar=1, munis=1, años=1, vals=0.006
+  - desc: Predios rústicos: con anterioridad al año 2002 y hasta 1993 inclusive
+- `anterior_a_1993_rusticos` — apar=1, munis=1, años=1, vals=0.012
+  - desc: Predios rústicos: con anterioridad al año de 1993
+- `entrada_en_vigor_ley` — apar=1, munis=1, años=1, vals=0.024
+  - desc: Inmuebles urbanos y suburbanos con valor determinado o modificado, a la entrada en vigor de la presente Ley
+- `inmuebles_urbanos_y_suburbanos_vigencia_2014` — apar=1, munis=1, años=1, vals=0.0024
+  - desc: Inmuebles urbanos y suburbanos con valor determinado o modificado; tasa aplicable para la entrada en vigor de la ley y durante 2013
+- `inmuebles_urbanos_y_suburbanos_2002_2013` — apar=1, munis=1, años=1, vals=0.0024
+  - desc: Inmuebles urbanos y suburbanos con valor determinado o modificado; durante los años 2002 y hasta 2013, inclusive
+- `inmuebles_urbanos_y_suburbanos_anterior_1993` — apar=1, munis=1, años=1, vals=0.013
+  - desc: Inmuebles urbanos y suburbanos con valor determinado o modificado; con anterioridad al año de 1993
+- `urbanos_y_suburbanos_con_edificaciones_2002_2013` — apar=1, munis=1, años=1, vals=0.0024
+  - desc: Inmuebles urbanos y suburbanos con edificaciones, valor determinado o modificado durante los años 2002 a 2013 inclusive
+- `urbanos_y_suburbanos_sin_edificaciones_2002_2013` — apar=1, munis=1, años=1, vals=0.0045
+  - desc: Inmuebles urbanos y suburbanos sin edificaciones, valor determinado o modificado durante los años 2002 a 2013 inclusive
+- `urbanos_y_suburbanos_con_edificaciones_1993_2002` — apar=1, munis=1, años=1, vals=0.008
+  - desc: Inmuebles urbanos y suburbanos con edificaciones, valor determinado o modificado con anterioridad al año 2002 y hasta 1993 inclusive
+- `urbanos_y_suburbanos_sin_edificaciones_1993_2002` — apar=1, munis=1, años=1, vals=0.015
+  - desc: Inmuebles urbanos y suburbanos sin edificaciones, valor determinado o modificado con anterioridad al año 2002 y hasta 1993 inclusive
+- `urbano_con_edificacion_2002_2013` — apar=1, munis=1, años=1, vals=0.0024
+  - desc: Inmuebles urbanos y suburbanos con edificaciones, durante los años 2002 y hasta el 2013 inclusive
+- `urbano_sin_edificacion_2002_2013` — apar=1, munis=1, años=1, vals=0.0045
+  - desc: Inmuebles urbanos y suburbanos sin edificaciones, durante los años 2002 y hasta el 2013 inclusive
+- `urbano_suburbano_con_edificaciones_valor_2014` — apar=1, munis=1, años=1, vals=0.0024
+  - desc: Inmuebles urbanos y suburbanos con edificaciones, con valor determinado o modificado a la entrada en vigor de la presente Ley
+- `urbano_suburbano_sin_edificaciones_valor_2014` — apar=1, munis=1, años=1, vals=0.0045
+  - desc: Inmuebles urbanos y suburbanos sin edificaciones, con valor determinado o modificado a la entrada en vigor de la presente Ley
+- `urbano_suburbano_con_edificaciones_valor_2002_2013` — apar=1, munis=1, años=1, vals=0.0024
+  - desc: Inmuebles urbanos y suburbanos con edificaciones, con valor determinado o modificado durante el año 2002 y hasta el año 2013, inclusive
+- `urbano_suburbano_sin_edificaciones_valor_2002_2013` — apar=1, munis=1, años=1, vals=0.0045
+  - desc: Inmuebles urbanos y suburbanos sin edificaciones, con valor determinado o modificado durante el año 2002 y hasta el año 2013, inclusive
+- `urbano_con_edificaciones_antiguo` — apar=1, munis=1, años=1, vals=0.008
+  - desc: Inmuebles urbanos y suburbanos con edificaciones, con valor determinado o modificado con anterioridad al año 2002 y hasta el año 1993 inclus
+- `urbano_sin_edificaciones_antiguo` — apar=1, munis=1, años=1, vals=0.015
+  - desc: Inmuebles urbanos y suburbanos sin edificaciones, con valor determinado o modificado con anterioridad al año 2002 y hasta el año 1993 inclus
+- `urbano_muy_antiguo` — apar=1, munis=1, años=1, vals=0.013
+  - desc: Inmuebles urbanos y suburbanos con edificaciones, con valor determinado o modificado con anterioridad al año 1993
+- `urbano_sin_edificaciones_muy_antiguo` — apar=1, munis=1, años=1, vals=0.012
+  - desc: Inmuebles urbanos y suburbanos sin edificaciones, con valor determinado o modificado con anterioridad al año 1993
+- `entrada_vigor_sin_edificacion` — apar=1, munis=1, años=1, vals=0.0045
+  - desc: A la entrada en vigor de la presente Ley; inmuebles urbanos y suburbanos sin edificaciones
+- `2002_2013_edificado` — apar=1, munis=1, años=1, vals=0.0024
+  - desc: Durante los años 2002 y hasta el año 2013, inclusive; inmuebles urbanos y suburbanos con edificaciones
+- `2002_2013_sin_edificacion` — apar=1, munis=1, años=1, vals=0.0045
+  - desc: Durante los años 2002 y hasta el año 2013, inclusive; inmuebles urbanos y suburbanos sin edificaciones
+- `1993_2002_edificado` — apar=1, munis=1, años=1, vals=0.008
+  - desc: Con anterioridad al año 2002 y hasta el año 1993, inclusive; inmuebles urbanos y suburbanos con edificaciones
+- `1993_2002_sin_edificacion` — apar=1, munis=1, años=1, vals=0.015
+  - desc: Con anterioridad al año 2002 y hasta el año 1993, inclusive; inmuebles urbanos y suburbanos sin edificaciones
+- `2002_a_2013` — apar=1, munis=1, años=1, vals=0.0024
+  - desc: Inmuebles urbanos y suburbanos con valor determinado o modificado: durante los años 2002 y hasta 2013 inclusive
+- `a_la_entrada_en_vigor` — apar=1, munis=1, años=1, vals=0.0024
+  - desc: Inmuebles urbanos y suburbanos con valor determinado o modificado, a la entrada en vigor de la ley
+- `años_2002_a_2014` — apar=1, munis=1, años=1, vals=0.0024 ⚠ slugify_sug=`anos_2002_a_2014`
+  - desc: Inmuebles urbanos y suburbanos con valor determinado o modificado, durante los años 2002 y hasta 2014 inclusive
+- `historicos_2002_2014` — apar=1, munis=1, años=1, vals=0.0024
+  - desc: Predios con valor determinado o modificado durante los años 2002 a 2014, inclusive
+- `historicos_1993_2001` — apar=1, munis=1, años=1, vals=0.008
+  - desc: Predios con valor determinado o modificado con anterioridad al año 2002 y hasta 1993, inclusive
+- `historicos_anterior_1993` — apar=1, munis=1, años=1, vals=0.013
+  - desc: Predios con valor determinado o modificado con anterioridad al año de 1993
+- `urbanos_y_suburbanos_con_edificaciones_2002_2014` — apar=1, munis=1, años=1, vals=0.0024
+  - desc: Inmuebles urbanos y suburbanos con edificaciones, durante los años 2002 a 2014 inclusive
+- `urbanos_y_suburbanos_sin_edificaciones_2002_2014` — apar=1, munis=1, años=1, vals=0.0045
+  - desc: Inmuebles urbanos y suburbanos sin edificaciones, durante los años 2002 a 2014 inclusive
+- `urbano_con_edificaciones_2002_2014` — apar=1, munis=1, años=1, vals=0.0024
+  - desc: Inmuebles urbanos y suburbanos con edificaciones, durante el año 2002 y hasta el 2014, inclusive
+- `urbano_sin_edificaciones_2002_2014` — apar=1, munis=1, años=1, vals=0.0045
+  - desc: Inmuebles urbanos y suburbanos sin edificaciones, durante el año 2002 y hasta el 2014, inclusive
+- `zonas_urbanas_y_suburbanas` — apar=1, munis=1, años=1, vals=0.0024
+  - desc: Inmuebles urbanos y suburbanos: zonas comercial, habitacional centro, económica y marginada irregular; edificaciones urbanas
+- `suburbanos` — apar=1, munis=1, años=1, vals=0.013
+  - desc: Inmuebles suburbanos
+- `edificaciones_urbanas` — apar=1, munis=1, años=1, vals=0.0045
+  - desc: Inmuebles urbanos - edificaciones
+- `urbanos_suburbanos_con_edificaciones_durante_2002_a_2014` — apar=1, munis=1, años=1, vals=0.0024
+  - desc: Inmuebles urbanos y suburbanos con edificaciones; durante el año 2002 y hasta el año 2014, inclusive
+- `urbanos_suburbanos_sin_edificaciones_durante_2002_a_2014` — apar=1, munis=1, años=1, vals=0.0045
+  - desc: Inmuebles urbanos y suburbanos sin edificaciones; durante el año 2002 y hasta el año 2014, inclusive
+- `urbanos_suburbanos_con_edificaciones_antes_2002_hasta_1993` — apar=1, munis=1, años=1, vals=0.003
+  - desc: Inmuebles urbanos y suburbanos con edificaciones; con anterioridad al año 2002 y hasta el año 1993, inclusive
+- `urbanos_suburbanos_sin_edificaciones_antes_2002_hasta_1993` — apar=1, munis=1, años=1, vals=0.015
+  - desc: Inmuebles urbanos y suburbanos sin edificaciones; con anterioridad al año 2002 y hasta el año 1993, inclusive
+- `inmuebles_urbanos_y_suburbanos_2002_a_2014` — apar=1, munis=1, años=1, vals=0.0024
+  - desc: Inmuebles urbanos y suburbanos, durante los años 2002 hasta el 2014 inclusive
+- `inmuebles_urbanos_y_suburbanos_1993_a_2001` — apar=1, munis=1, años=1, vals=0.008
+  - desc: Inmuebles urbanos y suburbanos, con anterioridad al año 2002 y hasta 1993 inclusive
+- `urbanos_suburbanos_edificados_a_entrada_en_vigor` — apar=1, munis=1, años=1, vals=0.0024
+  - desc: Inmuebles urbanos y suburbanos con valor determinado o modificado, edificaciones; a la entrada en vigor de la ley
+- `urbanos_suburbanos_edificados_2014` — apar=1, munis=1, años=1, vals=0.0024
+  - desc: Inmuebles urbanos y suburbanos con valor determinado o modificado, edificaciones; durante 2002 y hasta 2014 inclusive
+- `urbanos_suburbanos_edificados_1993_2001` — apar=1, munis=1, años=1, vals=0.008
+  - desc: Inmuebles urbanos y suburbanos con valor determinado o modificado, edificaciones; con anterioridad a 2002 y hasta 1993 inclusive
+- `urbanos_suburbanos_edificados_anterior_1993` — apar=1, munis=1, años=1, vals=0.013
+  - desc: Inmuebles urbanos y suburbanos con valor determinado o modificado, edificaciones; con anterioridad a 1993
+- `urbanos_suburbanos_no_edificados_a_entrada_en_vigor` — apar=1, munis=1, años=1, vals=0.0045
+  - desc: Inmuebles urbanos y suburbanos con valor determinado o modificado, no edificaciones; a la entrada en vigor de la ley
+- `urbanos_suburbanos_no_edificados_2014` — apar=1, munis=1, años=1, vals=0.0045
+  - desc: Inmuebles urbanos y suburbanos con valor determinado o modificado, no edificaciones; durante 2002 y hasta 2014 inclusive
+- `urbanos_suburbanos_no_edificados_1993_2001` — apar=1, munis=1, años=1, vals=0.015
+  - desc: Inmuebles urbanos y suburbanos con valor determinado o modificado, no edificaciones; con anterioridad a 2002 y hasta 1993 inclusive
+- `urbanos_suburbanos_no_edificados_anterior_1993` — apar=1, munis=1, años=1, vals=0.012
+  - desc: Inmuebles urbanos y suburbanos con valor determinado o modificado, no edificaciones; con anterioridad a 1993
+- `urbanos_suburbanos_sin_valor_determinado_a_entrada_en_vigor` — apar=1, munis=1, años=1, vals=0.0018
+  - desc: Inmuebles urbanos y suburbanos sin valor determinado o modificado; a la entrada en vigor de la ley
+- `urbanos_suburbanos_sin_valor_determinado_2014` — apar=1, munis=1, años=1, vals=0.0018
+  - desc: Inmuebles urbanos y suburbanos sin valor determinado o modificado; durante 2002 y hasta 2014 inclusive
+- `urbanos_suburbanos_sin_valor_determinado_1993_2001` — apar=1, munis=1, años=1, vals=0.006
+  - desc: Inmuebles urbanos y suburbanos sin valor determinado o modificado; con anterioridad a 2002 y hasta 1993 inclusive
+- `urbanos_suburbanos_sin_valor_determinado_anterior_1993` — apar=1, munis=1, años=1, vals=0.012
+  - desc: Inmuebles urbanos y suburbanos sin valor determinado o modificado; con anterioridad a 1993
+- `2002_a_2014_con_edificaciones` — apar=1, munis=1, años=1, vals=0.0024
+  - desc: Inmuebles urbanos y suburbanos con valor determinado o modificado: durante los años 2002 y hasta 2014 inclusive, con edificaciones
+- `2002_a_2014_sin_edificaciones` — apar=1, munis=1, años=1, vals=0.0045
+  - desc: Inmuebles urbanos y suburbanos con valor determinado o modificado: durante los años 2002 y hasta 2014 inclusive, sin edificaciones
+- `inmuebles_urbanos_y_suburbanos_2002_2014` — apar=1, munis=1, años=1, vals=0.0024
+  - desc: Inmuebles urbanos y suburbanos con un valor determinado o modificado con edificaciones, durante los años 2002 hasta 2014 inclusive
+- `inmuebles_urbanos_y_suburbanos_anteriores_1993` — apar=1, munis=1, años=1, vals=0.013
+  - desc: Inmuebles urbanos y suburbanos con un valor determinado o modificado con edificaciones, con anterioridad al año de 1993
+- `urbanos_con_edificacion_anteriores_1993_1993` — apar=1, munis=1, años=1, vals=0.008
+  - desc: Inmuebles urbanos y suburbanos con edificaciones, con anterioridad a 2002 y hasta 1993 inclusive
+- `urbanos_con_edificacion_anteriores_1993` — apar=1, munis=1, años=1, vals=0.0013
+  - desc: Inmuebles urbanos y suburbanos con edificaciones, con anterioridad al año de 1993
+- `urbanos_sin_edificacion_anteriores_1993_1993` — apar=1, munis=1, años=1, vals=0.015
+  - desc: Inmuebles urbanos y suburbanos sin edificaciones, con anterioridad a 2002 y hasta 1993 inclusive
+- `urbanos_sin_edificacion_anteriores_1993` — apar=1, munis=1, años=1, vals=0.0012
+  - desc: Inmuebles urbanos y suburbanos sin edificaciones, con anterioridad al año de 1993
+- `urbano_con_edificaciones_actual` — apar=1, munis=1, años=1, vals=0.0024
+  - desc: Inmuebles urbanos y suburbanos con edificaciones; a la entrada en vigor de la ley.
+- `urbano_sin_edificaciones_actual` — apar=1, munis=1, años=1, vals=0.0045
+  - desc: Inmuebles urbanos y suburbanos sin edificaciones; a la entrada en vigor de la ley.
+- `urbano_con_edificaciones_pre_2002_1993` — apar=1, munis=1, años=1, vals=0.008
+  - desc: Inmuebles urbanos y suburbanos con edificaciones; con anterioridad al año 2002 y hasta 1993 inclusive.
+- `urbano_sin_edificaciones_pre_2002_1993` — apar=1, munis=1, años=1, vals=0.015
+  - desc: Inmuebles urbanos y suburbanos sin edificaciones; con anterioridad al año 2002 y hasta 1993 inclusive.
+- `edificaciones` — apar=1, munis=1, años=1, vals=0.0024
+  - desc: Inmuebles urbanos y suburbanos con edificaciones, valor determinado modificado a la entrada en vigor de la ley y durante 2002-2016 inclusive
+- `edificaciones_1993_2001` — apar=1, munis=1, años=1, vals=0.008
+  - desc: Inmuebles urbanos y suburbanos con edificaciones, con anterioridad al año 2002 y hasta 1993 inclusive
+- `edificaciones_antes_1993` — apar=1, munis=1, años=1, vals=0.013
+  - desc: Inmuebles urbanos y suburbanos con edificaciones, con anterioridad al año 1993
+- `con_edificaciones_vigente` — apar=1, munis=1, años=1, vals=0.0024
+  - desc: Inmuebles urbanos y suburbanos con edificaciones, a la entrada en vigor de la presente Ley y durante los años 2002 a 2016, inclusive.
+- `sin_edificaciones_vigente` — apar=1, munis=1, años=1, vals=0.0045
+  - desc: Inmuebles urbanos y suburbanos sin edificaciones, a la entrada en vigor de la presente Ley y durante los años 2002 a 2016, inclusive.
+- `urbano_con_edificaciones_hasta_1993` — apar=1, munis=1, años=1, vals=0.008
+  - desc: Inmuebles urbanos y suburbanos con edificaciones, con anterioridad al año 2002 y hasta 1993 inclusive
+- `urbano_sin_edificaciones_hasta_1993` — apar=1, munis=1, años=1, vals=0.015
+  - desc: Inmuebles urbanos y suburbanos sin edificaciones, con anterioridad al año 2002 y hasta 1993 inclusive
+- `urbanos_suburbanos_ant_2002_1993_con_edificaciones` — apar=1, munis=1, años=1, vals=0.008
+  - desc: Inmuebles urbanos y suburbanos con edificaciones, con anterioridad al 2002 y hasta 1993 inclusive
+- `urbanos_suburbanos_ant_2002_1993_sin_edificaciones` — apar=1, munis=1, años=1, vals=0.015
+  - desc: Inmuebles urbanos y suburbanos sin edificaciones, con anterioridad al 2002 y hasta 1993 inclusive
+- `urbanos_suburbanos_ant_1993_con_edificaciones` — apar=1, munis=1, años=1, vals=0.013
+  - desc: Inmuebles urbanos y suburbanos con edificaciones, con anterioridad al año de 1993
+- `urbanos_suburbanos_ant_1993_sin_edificaciones` — apar=1, munis=1, años=1, vals=0.012
+  - desc: Inmuebles urbanos y suburbanos sin edificaciones, con anterioridad al año de 1993
+- `urbano_con_edificaciones_vigente` — apar=1, munis=1, años=1, vals=0.0024
+  - desc: Inmuebles urbanos y suburbanos con edificaciones; valor determinado o modificado a la entrada en vigor de la ley.
+- `urbano_sin_edificaciones_vigente` — apar=1, munis=1, años=1, vals=0.0045
+  - desc: Inmuebles urbanos y suburbanos sin edificaciones; valor determinado o modificado a la entrada en vigor de la ley.
+- `periodo_2002_a_2016` — apar=1, munis=1, años=1, vals=0.0045
+  - desc: Durante los años 2002 y hasta 2016 inclusive; inmuebles urbanos con edificaciones
+- `anios_2002_2016` — apar=1, munis=1, años=1, vals=0.0024
+  - desc: Durante los años 2002 y hasta el año 2016, inclusive: inmuebles urbanos y suburbanos con un valor determinado o modificado
+- `entrada_en_vigor_con_edificaciones` — apar=1, munis=1, años=1, vals=2.23
+  - desc: Inmuebles urbanos y suburbanos con edificaciones, a la entrada en vigor de la ley
+- `anio_2002_a_2016_con_edificaciones` — apar=1, munis=1, años=1, vals=2.23
+  - desc: Inmuebles urbanos y suburbanos con edificaciones, durante los años 2002 y hasta 2016 inclusive
+- `anio_2002_a_2016_sin_edificaciones` — apar=1, munis=1, años=1, vals=4.18
+  - desc: Inmuebles urbanos y suburbanos sin edificaciones, durante los años 2002 y hasta 2016 inclusive
+- `con_anterioridad_1993_a_2001_con_edificaciones` — apar=1, munis=1, años=1, vals=8.0
+  - desc: Inmuebles urbanos y suburbanos con edificaciones, con anterioridad al año 2002 y hasta 1993 inclusive
+- `con_anterioridad_1993_a_2001_sin_edificaciones` — apar=1, munis=1, años=1, vals=15.0
+  - desc: Inmuebles urbanos y suburbanos sin edificaciones, con anterioridad al año 2002 y hasta 1993 inclusive
+- `con_anterioridad_1993` — apar=1, munis=1, años=1, vals=13.0
+  - desc: Inmuebles urbanos y suburbanos con edificaciones, con anterioridad al año de 1993
+- `con_anterioridad_1993_sin_edificaciones` — apar=1, munis=1, años=1, vals=12.0
+  - desc: Inmuebles urbanos y suburbanos sin edificaciones, con anterioridad al año de 1993
+- `con_edificaciones_anteriores_1993_2` — apar=1, munis=1, años=1, vals=0.013
+  - desc: Inmuebles urbanos y suburbanos con edificaciones; con anterioridad al año de 1993.
+- `sin_edificaciones_anteriores_1993_2` — apar=1, munis=1, años=1, vals=0.012
+  - desc: Inmuebles urbanos y suburbanos sin edificaciones; con anterioridad al año de 1993.
+- `urbano_suburbano_con_edificaciones_valor_a_la_entrada_en_vigor` — apar=1, munis=1, años=1, vals=0.0024
+  - desc: Inmuebles urbanos y suburbanos con edificaciones; valor determinado o modificado a la entrada en vigor de la presente ley
+- `urbano_suburbano_sin_edificaciones_valor_a_la_entrada_en_vigor` — apar=1, munis=1, años=1, vals=0.0045
+  - desc: Inmuebles urbanos y suburbanos sin edificaciones; valor determinado o modificado a la entrada en vigor de la presente ley
+- `urbano_suburbano_con_edificaciones_valor_2002_2016` — apar=1, munis=1, años=1, vals=0.0024
+  - desc: Inmuebles urbanos y suburbanos con edificaciones; valor determinado o modificado durante 2002 a 2016, inclusive
+- `urbano_suburbano_sin_edificaciones_valor_2002_2016` — apar=1, munis=1, años=1, vals=0.0045
+  - desc: Inmuebles urbanos y suburbanos sin edificaciones; valor determinado o modificado durante 2002 a 2016, inclusive
+- `urbano_suburbano_con_edificaciones_valor_antes_1993` — apar=1, munis=1, años=1, vals=0.013
+  - desc: Inmuebles urbanos y suburbanos con edificaciones; valor determinado o modificado con anterioridad al año 1993
+- `urbano_suburbano_sin_edificaciones_valor_antes_1993` — apar=1, munis=1, años=1, vals=0.012
+  - desc: Inmuebles urbanos y suburbanos sin edificaciones; valor determinado o modificado con anterioridad al año 1993
+- `urbanos_y_suburbanos_con_edificaciones_2002_a_2016` — apar=1, munis=1, años=1, vals=0.0024
+  - desc: Inmuebles urbanos y suburbanos con edificaciones, durante el año 2002 y hasta el año 2016, inclusive
+- `urbanos_y_suburbanos_sin_edificaciones_2002_a_2016` — apar=1, munis=1, años=1, vals=0.0045
+  - desc: Inmuebles urbanos y suburbanos sin edificaciones, durante el año 2002 y hasta el año 2016, inclusive
+- `anio_2002_2016` — apar=1, munis=1, años=1, vals=0.0025
+  - desc: Inmuebles urbanos y suburbanos con valor determinado o modificado, con edificaciones, durante el año 2002 y hasta 2016 inclusive
+- `inmuebles_urbanos_y_suburbanos_con_edificaciones_historicos_2002_2016` — apar=1, munis=1, años=1, vals=0.0024
+  - desc: Inmuebles urbanos y suburbanos con edificaciones: durante el año 2002 y hasta 2016, inclusive.
+- `inmuebles_urbanos_y_suburbanos_sin_edificaciones_historicos_2002_2016` — apar=1, munis=1, años=1, vals=0.0045
+  - desc: Inmuebles urbanos y suburbanos sin edificaciones: durante el año 2002 y hasta 2016, inclusive.
+- `inmuebles_urbanos_y_suburbanos_con_edificaciones_1993_2001` — apar=1, munis=1, años=1, vals=0.008
+  - desc: Inmuebles urbanos y suburbanos con edificaciones: con anterioridad al año 2002 y hasta 1993 inclusive.
+- `inmuebles_urbanos_y_suburbanos_sin_edificaciones_1993_2001` — apar=1, munis=1, años=1, vals=0.015
+  - desc: Inmuebles urbanos y suburbanos sin edificaciones: con anterioridad al año 2002 y hasta 1993 inclusive.
+- `inmuebles_urbanos_y_suburbanos_con_edificaciones_anteriores_1993` — apar=1, munis=1, años=1, vals=0.013
+  - desc: Inmuebles urbanos y suburbanos con edificaciones: con anterioridad a 1993.
+- `inmuebles_urbanos_y_suburbanos_sin_edificaciones_anteriores_1993` — apar=1, munis=1, años=1, vals=0.012
+  - desc: Inmuebles urbanos y suburbanos sin edificaciones: con anterioridad a 1993.
+- `anio_2002_a_2016` — apar=1, munis=1, años=1, vals=0.0024
+  - desc: Inmuebles urbanos y suburbanos con valor determinado o modificado durante los años 2002 a 2016 inclusive; inmuebles rústicos sin edificacion
+- `urbano_con_edificacion_2002_2016` — apar=1, munis=1, años=1, vals=0.0024
+  - desc: Inmuebles urbanos y suburbanos con edificación; durante los años 2002 y hasta 2016 inclusive
+- `urbano_sin_edificacion_2002_2016` — apar=1, munis=1, años=1, vals=0.0045
+  - desc: Inmuebles urbanos y suburbanos sin edificación; durante los años 2002 y hasta 2016 inclusive
+- `urbano_con_edificacion_pre_2002_1993` — apar=1, munis=1, años=1, vals=0.008
+  - desc: Inmuebles urbanos y suburbanos con edificación; con anterioridad al año 2002 y hasta 1993 inclusive
+- `urbano_sin_edificacion_pre_2002_1993` — apar=1, munis=1, años=1, vals=0.015
+  - desc: Inmuebles urbanos y suburbanos sin edificación; con anterioridad al año 2002 y hasta 1993 inclusive
+- `urbanos_suburbanos_con_edificacion` — apar=1, munis=1, años=1, vals=0.0045
+  - desc: Inmuebles urbanos y suburbanos con edificaciones, durante los años 2002 y hasta 2017 inclusive
+- `urbanos_suburbanos_sin_edificacion` — apar=1, munis=1, años=1, vals=0.0045
+  - desc: Inmuebles urbanos y suburbanos sin edificaciones, durante los años 2002 y hasta 2017 inclusive
+- `anteriores_2002_hasta_1993_urbano_suburbano_con_edificacion` — apar=1, munis=1, años=1, vals=0.015
+  - desc: Inmuebles urbanos y suburbanos con edificaciones, con anterioridad al año 2002 y hasta el año 1993 inclusive
+- `anteriores_2002_hasta_1993_urbano_suburbano_sin_edificacion` — apar=1, munis=1, años=1, vals=0.006
+  - desc: Inmuebles urbanos y suburbanos sin edificaciones, con anterioridad al año 2002 y hasta el año 1993 inclusive
+- `anteriores_1993_urbano_suburbano_con_edificacion` — apar=1, munis=1, años=1, vals=0.0
+  - desc: Inmuebles urbanos y suburbanos con edificaciones, con anterioridad al año de 1993
+- `anteriores_1993_urbano_suburbano_sin_edificacion` — apar=1, munis=1, años=1, vals=0.012
+  - desc: Inmuebles urbanos y suburbanos sin edificaciones, con anterioridad al año de 1993
+- `urbanos_suburbanos_con_edificaciones_2002_2017` — apar=1, munis=1, años=1, vals=0.0024
+  - desc: Inmuebles urbanos y suburbanos con edificaciones, durante el año 2002 y hasta el año 2017 inclusive
+- `urbanos_suburbanos_sin_edificaciones_2002_2017` — apar=1, munis=1, años=1, vals=0.0045
+  - desc: Inmuebles urbanos y suburbanos sin edificaciones, durante el año 2002 y hasta el año 2017 inclusive
+- `urbanos_y_suburbanos_entrada_en_vigor` — apar=1, munis=1, años=1, vals=2.4
+  - desc: Inmuebles urbanos y suburbanos, a la entrada en vigor de la ley, con valor determinado o modificado
+- `urbanos_y_suburbanos_2002_a_2017` — apar=1, munis=1, años=1, vals=2.4
+  - desc: Inmuebles urbanos y suburbanos, durante los años 2002 a 2017 inclusive, con valor determinado o modificado
+- `urbanos_y_suburbanos_anterior_2002_hasta_1993` — apar=1, munis=1, años=1, vals=8.0
+  - desc: Inmuebles urbanos y suburbanos, con anterioridad al año 2002 y hasta 1993 inclusive
+- `urbanos_y_suburbanos_anterior_a_1993` — apar=1, munis=1, años=1, vals=13.0
+  - desc: Inmuebles urbanos y suburbanos, con anterioridad a 1993
+- `2002_a_2017_inclusive` — apar=1, munis=1, años=1, vals=0.0024
+  - desc: Inmuebles urbanos y suburbanos con edificaciones, durante los años 2002 y hasta 2017 inclusive
+- `sin_edificaciones_2002_a_2017_inclusive` — apar=1, munis=1, años=1, vals=0.0045
+  - desc: Inmuebles urbanos y suburbanos sin edificaciones, durante los años 2002 y hasta 2017 inclusive
+- `sin_edificaciones_anterior_1993_a_2001` — apar=1, munis=1, años=1, vals=0.015
+  - desc: Inmuebles urbanos y suburbanos sin edificaciones, con anterioridad al año 2002 y hasta el año 1993
+- `urbano_suburbano_con_edificaciones_valor_determinado_o_modificado_entrada_en_vigor_y_2002_2017` — apar=1, munis=1, años=1, vals=0.0024
+  - desc: Inmuebles urbanos y suburbanos con edificaciones, con valor determinado o modificado, a la entrada en vigor de la presente ley y durante los
+- `urbano_suburbano_sin_edificaciones_valor_determinado_o_modificado_entrada_en_vigor_y_2002_2017` — apar=1, munis=1, años=1, vals=0.0045
+  - desc: Inmuebles urbanos y suburbanos sin edificaciones, con valor determinado o modificado, a la entrada en vigor de la presente ley y durante los
+- `urbano_suburbano_con_edificaciones_valor_determinado_o_modificado_antes_2002_hasta_1993` — apar=1, munis=1, años=1, vals=0.008
+  - desc: Inmuebles urbanos y suburbanos con edificaciones, con valor determinado o modificado, con anterioridad al año 2002 y hasta el año 1993
+- `urbano_suburbano_sin_edificaciones_valor_determinado_o_modificado_antes_2002_hasta_1993` — apar=1, munis=1, años=1, vals=0.015
+  - desc: Inmuebles urbanos y suburbanos sin edificaciones, con valor determinado o modificado, con anterioridad al año 2002 y hasta el año 1993
+- `urbano_suburbano_valor_determinado_o_modificado_antes_1993` — apar=1, munis=1, años=1, vals=0.013
+  - desc: Inmuebles urbanos y suburbanos, con valor determinado o modificado, con anterioridad al año de 1993
+- `urbano_suburbano_con_edificaciones_2002_2017` — apar=1, munis=1, años=1, vals=0.2
+  - desc: Inmuebles urbanos y suburbanos con edificaciones, durante los años 2002 y hasta el 2017 inclusive
+- `urbano_suburbano_sin_edificaciones_2002_2017` — apar=1, munis=1, años=1, vals=0.3
+  - desc: Inmuebles urbanos y suburbanos sin edificaciones, durante los años 2002 y hasta el 2017 inclusive
+- `urbano_suburbano_ant_1993` — apar=1, munis=1, años=1, vals=0.13
+  - desc: Inmuebles urbanos y suburbanos, con anterioridad al año de 1993
+- `entrada_en_vigor_2018` — apar=1, munis=1, años=1, vals=0.0045
+  - desc: Inmuebles urbanos y suburbanos con edificaciones, a la entrada en vigor de la presente Ley
+- `anio_2002_a_2017` — apar=1, munis=1, años=1, vals=0.0045
+  - desc: Inmuebles urbanos y suburbanos con edificaciones, durante los años 2002 y hasta 2017, inclusive
+- `anterior_1993_a_2002` — apar=1, munis=1, años=1, vals=0.0045
+  - desc: Inmuebles urbanos y suburbanos con edificaciones, con anterioridad al año 2002 y hasta 1993, inclusive
+- `valor_determinado_modificado_edificado` — apar=1, munis=1, años=1, vals=0.0045
+  - desc: Inmuebles que cuenten con un valor determinado o modificado
+- `anos_2002_a_2017` — apar=1, munis=1, años=1, vals=0.0045
+  - desc: Inmuebles urbanos y suburbanos con edificación, durante los años 2002 y hasta 2017 inclusive
+- `inmuebles_urbanos_y_suburbanos_con_edificaciones_2002_2018` — apar=1, munis=1, años=1, vals=0.0048
+  - desc: Inmuebles urbanos y suburbanos con edificaciones; durante los años 2002 a 2018 inclusive.
+- `inmuebles_urbanos_y_suburbanos_sin_edificaciones_2002_2018` — apar=1, munis=1, años=1, vals=0.0045
+  - desc: Inmuebles urbanos y suburbanos sin edificaciones; durante los años 2002 a 2018 inclusive.
+- `inmuebles_urbanos_y_suburbanos_con_edificaciones_anteriores_2002` — apar=1, munis=1, años=1, vals=0.0015
+  - desc: Inmuebles urbanos y suburbanos con edificaciones; con anterioridad al año 2002.
+- `inmuebles_urbanos_y_suburbanos_sin_edificaciones_anteriores_2002` — apar=1, munis=1, años=1, vals=0.0006
+  - desc: Inmuebles urbanos y suburbanos sin edificaciones; con anterioridad al año 2002.
+- `urbano_suburbano_con_edificaciones_2002_2018` — apar=1, munis=1, años=1, vals=0.0045
+  - desc: Inmuebles urbanos y suburbanos con edificaciones, durante los años 2002 a 2018 inclusive.
+- `urbano_suburbano_sin_edificaciones_2002_2018` — apar=1, munis=1, años=1, vals=0.0024
+  - desc: Inmuebles urbanos y suburbanos sin edificaciones, durante los años 2002 a 2018 inclusive.
+- `anios_2002_a_2018` — apar=1, munis=1, años=1, vals=0.0024
+  - desc: Inmuebles urbanos y suburbanos, durante los años 2002 a 2018 inclusive
+- `urbanos_y_suburbanos_edificados` — apar=1, munis=1, años=1, vals=0.0024
+  - desc: Inmuebles urbanos y suburbanos con edificaciones (fracción I)
+- `con_edificaciones_2` — apar=1, munis=1, años=1, vals=0.006
+  - desc: Inmuebles urbanos y suburbanos con edificaciones, durante 2002 inclusive
+- `sin_edificaciones_2` — apar=1, munis=1, años=1, vals=0.018
+  - desc: Inmuebles urbanos y suburbanos sin edificaciones, durante 2002 inclusive
+- `con_edificaciones_3` — apar=1, munis=1, años=1, vals=0.008
+  - desc: Inmuebles urbanos y suburbanos con edificaciones, con anterioridad al año 2002 y hasta el año 1993 inclusive
+- `sin_edificaciones_3` — apar=1, munis=1, años=1, vals=0.015
+  - desc: Inmuebles urbanos y suburbanos sin edificaciones, con anterioridad al año 2002 y hasta el año 1993 inclusive
+- `con_edificaciones_4` — apar=1, munis=1, años=1, vals=0.013
+  - desc: Inmuebles urbanos y suburbanos con edificaciones, con anterioridad al año de 1993
+- `sin_edificaciones_4` — apar=1, munis=1, años=1, vals=0.012
+  - desc: Inmuebles urbanos y suburbanos sin edificaciones, con anterioridad al año de 1993
+- `urbanos_suburbanos_con_edificaciones_durante_2002_a_2018` — apar=1, munis=1, años=1, vals=0.0024
+  - desc: Inmuebles urbanos y suburbanos con edificaciones; durante el año 2002 y hasta el año 2018, inclusive
+- `urbanos_suburbanos_sin_edificaciones_durante_2002_a_2018` — apar=1, munis=1, años=1, vals=0.0045
+  - desc: Inmuebles urbanos y suburbanos sin edificaciones; durante el año 2002 y hasta el año 2018, inclusive
+- `urbanos_suburbanos_con_edificaciones_anterior_2002_hasta_1993` — apar=1, munis=1, años=1, vals=0.008
+  - desc: Inmuebles urbanos y suburbanos con edificaciones; con anterioridad al año 2002 y hasta el año 1993, inclusive
+- `urbanos_suburbanos_sin_edificaciones_anterior_2002_hasta_1993` — apar=1, munis=1, años=1, vals=0.0065
+  - desc: Inmuebles urbanos y suburbanos sin edificaciones; con anterioridad al año 2002 y hasta el año 1993, inclusive
+- `urbanos_suburbanos_con_edificaciones_anterior_1993` — apar=1, munis=1, años=1, vals=0.013
+  - desc: Inmuebles urbanos y suburbanos con edificaciones; con anterioridad al año 1993
+- `urbanos_suburbanos_sin_edificaciones_anterior_1993` — apar=1, munis=1, años=1, vals=0.012
+  - desc: Inmuebles urbanos y suburbanos sin edificaciones; con anterioridad al año 1993
+- `urbanos_suburbanos_con_edificaciones_antiguo_1993_2001` — apar=1, munis=1, años=1, vals=0.008
+  - desc: Inmuebles urbanos y suburbanos con edificaciones, con anterioridad a 2002 y hasta 1993 inclusive
+- `urbanos_suburbanos_sin_edificaciones_antiguo_1993_2001` — apar=1, munis=1, años=1, vals=0.015
+  - desc: Inmuebles urbanos y suburbanos sin edificaciones, con anterioridad a 2002 y hasta 1993 inclusive
+- `urbanos_suburbanos_con_edificaciones_mas_antiguo` — apar=1, munis=1, años=1, vals=0.013
+  - desc: Inmuebles urbanos y suburbanos con edificaciones, con anterioridad a 1993
+- `urbanos_suburbanos_sin_edificaciones_mas_antiguo` — apar=1, munis=1, años=1, vals=0.012
+  - desc: Inmuebles urbanos y suburbanos sin edificaciones, con anterioridad a 1993
+- `urbanos_y_suburbanos_con_edificaciones_2002_a_2018` — apar=1, munis=1, años=1, vals=0.0024
+  - desc: Inmuebles urbanos y suburbanos con edificaciones, valores determinados con anterioridad a 2002 y hasta 2018 inclusive.
+- `urbanos_y_suburbanos_sin_edificaciones_2002_a_2018` — apar=1, munis=1, años=1, vals=0.00372
+  - desc: Inmuebles urbanos y suburbanos sin edificaciones, valores determinados con anterioridad a 2002 y hasta 2018 inclusive.
+- `urbanos_con_edificaciones_ant_1993` — apar=1, munis=1, años=1, vals=0.013
+  - desc: Inmuebles urbanos y suburbanos con edificaciones, con anterioridad al año 1993; tasa anual conforme al artículo 4.
+- `urbanos_sin_edificaciones_ant_1993` — apar=1, munis=1, años=1, vals=0.012
+  - desc: Inmuebles urbanos y suburbanos sin edificaciones, con anterioridad al año 1993; tasa anual conforme al artículo 4.
+- `urbanos_y_suburbanos_con_edificaciones_anteriores_a_2002_hasta_1993` — apar=1, munis=1, años=1, vals=0.008
+  - desc: Inmuebles urbanos y suburbanos con edificaciones; con anterioridad al año 2002 y hasta 1993, inclusive.
+- `urbanos_y_suburbanos_sin_edificaciones_anteriores_a_2002_hasta_1993` — apar=1, munis=1, años=1, vals=0.015
+  - desc: Inmuebles urbanos y suburbanos sin edificaciones; con anterioridad al año 2002 y hasta 1993, inclusive.
+- `anios_2002_a_2019` — apar=1, munis=1, años=1, vals=0.0024
+  - desc: Inmuebles urbanos y suburbanos con edificaciones; durante los años 2002 y hasta 2019 inclusive
+- `entrada_en_vigor_edificaciones` — apar=1, munis=1, años=1, vals=0.0045
+  - desc: A la entrada en vigor de la presente ley: inmuebles urbanos y suburbanos con edificaciones
+- `entrada_en_vigor_edificaciones_alta` — apar=1, munis=1, años=1, vals=0.018
+  - desc: A la entrada en vigor de la presente ley: inmuebles urbanos y suburbanos con edificaciones
+- `2002_a_2019_sin_edificaciones` — apar=1, munis=1, años=1, vals=0.0024
+  - desc: Durante los años 2002 y hasta 2019 inclusive: inmuebles urbanos y suburbanos sin edificaciones
+- `2002_a_2019_edificaciones` — apar=1, munis=1, años=1, vals=0.0045
+  - desc: Durante los años 2002 y hasta 2019 inclusive: inmuebles urbanos y suburbanos con edificaciones
+- `2002_a_2019_edificaciones_alta` — apar=1, munis=1, años=1, vals=0.018
+  - desc: Durante los años 2002 y hasta 2019 inclusive: inmuebles urbanos y suburbanos con edificaciones
+- `anterior_2002_hasta_1993_edificaciones` — apar=1, munis=1, años=1, vals=0.005
+  - desc: Con anterioridad al año 2002 y hasta el 1993 inclusive: inmuebles urbanos y suburbanos con edificaciones
+- `anterior_1993_edificaciones` — apar=1, munis=1, años=1, vals=0.012
+  - desc: Con anterioridad al año de 1993: inmuebles urbanos y suburbanos con edificaciones
+- `con_edificaciones_actual` — apar=1, munis=1, años=1, vals=0.0024
+  - desc: Inmuebles urbanos y suburbanos con edificaciones, a la entrada en vigor de la ley y durante 2002 a 2019 inclusive
+- `sin_edificaciones_actual` — apar=1, munis=1, años=1, vals=0.0045
+  - desc: Inmuebles urbanos y suburbanos sin edificaciones, a la entrada en vigor de la ley y durante 2002 a 2019 inclusive
+- `con_edificaciones_anteriores_2002` — apar=1, munis=1, años=1, vals=0.008
+  - desc: Inmuebles urbanos y suburbanos con edificaciones, con anterioridad al año 2002 y hasta 1993 inclusive
+- `sin_edificaciones_anteriores_2002` — apar=1, munis=1, años=1, vals=0.0015
+  - desc: Inmuebles urbanos y suburbanos sin edificaciones, con anterioridad al año 2002 y hasta 1993 inclusive
+- `urbanos_y_suburbanos_con_edificaciones_historico_2002_2019` — apar=1, munis=1, años=1, vals=0.0024
+  - desc: Inmuebles urbanos y suburbanos con edificaciones, valores determinados o modificados durante 2002 a 2019
+- `urbanos_y_suburbanos_sin_edificaciones_historico_2002_2019` — apar=1, munis=1, años=1, vals=0.0045
+  - desc: Inmuebles urbanos y suburbanos sin edificaciones, valores determinados o modificados durante 2002 a 2019
+- `urbano_suburbano_con_edificaciones_2002_2019` — apar=1, munis=1, años=1, vals=0.0024
+  - desc: Inmuebles urbanos y suburbanos con edificaciones, durante los años 2002 y hasta 2019 inclusive
+- `urbano_suburbano_sin_edificaciones_2002_2019` — apar=1, munis=1, años=1, vals=0.0045
+  - desc: Inmuebles urbanos y suburbanos sin edificaciones, durante los años 2002 y hasta 2019 inclusive
+- `urbano_suburbano_con_edificaciones_pre_2002_1993` — apar=1, munis=1, años=1, vals=0.008
+  - desc: Inmuebles urbanos y suburbanos con edificaciones, con anterioridad al año 2002 y hasta el año 1993 inclusive
+- `urbano_suburbano_sin_edificaciones_pre_2002_1993` — apar=1, munis=1, años=1, vals=0.015
+  - desc: Inmuebles urbanos y suburbanos sin edificaciones, con anterioridad al año 2002 y hasta el año 1993 inclusive
+- `urbanos_y_suburbanos_sin_edificacion` — apar=1, munis=1, años=1, vals=0.0024
+  - desc: Inmuebles urbanos y suburbanos sin edificaciones, con valor determinado a la entrada en vigor de la presente Ley
+- `urbanos_y_suburbanos_con_edificacion` — apar=1, munis=1, años=1, vals=0.0025
+  - desc: Inmuebles urbanos y suburbanos con edificaciones, con valor determinado a la entrada en vigor de la presente Ley
+- `urbanos_y_suburbanos_sin_edificacion_2002_2019` — apar=1, munis=1, años=1, vals=0.0024
+  - desc: Inmuebles urbanos y suburbanos sin edificaciones, cuyo valor fue determinado durante el año 2002 y hasta el año 2019, inclusive
+- `urbanos_y_suburbanos_con_edificacion_2002_2019` — apar=1, munis=1, años=1, vals=0.0025
+  - desc: Inmuebles urbanos y suburbanos con edificaciones, cuyo valor fue determinado durante el año 2002 y hasta el año 2019, inclusive
+- `urbanos_y_suburbanos_sin_edificacion_1993_2001` — apar=1, munis=1, años=1, vals=0.008
+  - desc: Inmuebles urbanos y suburbanos sin edificaciones, cuyo valor fue determinado con anterioridad al año 2002 y hasta el año 1993, inclusive
+- `urbanos_y_suburbanos_con_edificacion_1993_2001` — apar=1, munis=1, años=1, vals=0.0045
+  - desc: Inmuebles urbanos y suburbanos con edificaciones, cuyo valor fue determinado con anterioridad al año 2002 y hasta el año 1993, inclusive
+- `urbanos_y_suburbanos_sin_edificacion_antes_1993` — apar=1, munis=1, años=1, vals=0.008
+  - desc: Inmuebles urbanos y suburbanos sin edificaciones, cuyo valor fue determinado con anterioridad al año 1993
+- `urbanos_y_suburbanos_con_edificacion_antes_1993` — apar=1, munis=1, años=1, vals=0.0045
+  - desc: Inmuebles urbanos y suburbanos con edificaciones, cuyo valor fue determinado con anterioridad al año 1993
+- `urbano_suburbano_con_edificacion_antiguo` — apar=1, munis=1, años=1, vals=0.008
+  - desc: Inmuebles urbanos y suburbanos con o sin edificaciones; con anterioridad al año 2002 y hasta 1993 inclusive
+- `urbano_suburbano_con_edificacion_muy_antiguo` — apar=1, munis=1, años=1, vals=0.013
+  - desc: Inmuebles urbanos y suburbanos con o sin edificaciones; con anterioridad al año de 1993
+- `urbanos_valor_determinado_modificado_sin_edificaciones` — apar=1, munis=1, años=1, vals=0.008
+  - desc: Inmuebles urbanos y suburbanos, sin edificaciones, con valor determinado o modificado; con anterioridad al año 2002
+- `urbanos_valor_determinado_modificado_con_edificaciones` — apar=1, munis=1, años=1, vals=0.045
+  - desc: Inmuebles urbanos y suburbanos, con edificaciones, con valor determinado o modificado; con anterioridad al año 2002
+- `urbano_suburbano_2002_2019` — apar=1, munis=1, años=1, vals=0.0024
+  - desc: Inmuebles urbanos y suburbanos con valor determinado durante los años 2002 hasta 2019, inclusive
+- `urbano_suburbano_anteriores_2002_1993` — apar=1, munis=1, años=1, vals=0.008
+  - desc: Inmuebles urbanos y suburbanos con valor determinado con anterioridad al año 2002 y hasta 1993 inclusive
+- `urbano_suburbano_anteriores_1993` — apar=1, munis=1, años=1, vals=0.013
+  - desc: Inmuebles urbanos y suburbanos con valor determinado con anterioridad al año 1993
+- `entrada_en_vigor_sin_edificacion` — apar=1, munis=1, años=1, vals=0.0045
+  - desc: Inmuebles urbanos y suburbanos con valor determinado o modificado, sin edificaciones
+- `2002_2019_edificado` — apar=1, munis=1, años=1, vals=0.0024
+  - desc: Inmuebles urbanos y suburbanos con valor determinado o modificado, con edificaciones, durante los años 2002 a 2019 inclusive
+- `2002_2019_sin_edificacion` — apar=1, munis=1, años=1, vals=0.0045
+  - desc: Inmuebles urbanos y suburbanos con valor determinado o modificado, sin edificaciones, durante los años 2002 a 2019 inclusive
+- `anterior_2002_edificado` — apar=1, munis=1, años=1, vals=0.008
+  - desc: Inmuebles urbanos y suburbanos con valor determinado o modificado, con edificaciones, con anterioridad al año 2002 y hasta el año 1993
+- `anterior_2002_sin_edificacion` — apar=1, munis=1, años=1, vals=0.015
+  - desc: Inmuebles urbanos y suburbanos con valor determinado o modificado, sin edificaciones, con anterioridad al año 2002 y hasta el año 1993
+- `inmuebles_urbanos_con_edificaciones_ant_2002_1993` — apar=1, munis=1, años=1, vals=0.008
+  - desc: Inmuebles urbanos y suburbanos con edificaciones; con anterioridad al año 2002 y hasta 1993 inclusive
+- `inmuebles_urbanos_sin_edificaciones_ant_2002_1993` — apar=1, munis=1, años=1, vals=0.015
+  - desc: Inmuebles urbanos y suburbanos sin edificaciones; con anterioridad al año 2002 y hasta 1993 inclusive
+- `inmuebles_urbanos_con_edificaciones_ant_1993` — apar=1, munis=1, años=1, vals=0.013
+  - desc: Inmuebles urbanos y suburbanos con edificaciones; con anterioridad al año de 1993
+- `inmuebles_urbanos_sin_edificaciones_ant_1993` — apar=1, munis=1, años=1, vals=0.012
+  - desc: Inmuebles urbanos y suburbanos sin edificaciones; con anterioridad al año de 1993
+- `2002_a_2020` — apar=1, munis=1, años=1, vals=0.0024
+  - desc: Inmuebles urbanos y suburbanos con valor determinado o modificado, durante los años 2002 y hasta 2020 inclusive
+- `anteriores_1993_a_2002` — apar=1, munis=1, años=1, vals=0.008
+  - desc: Inmuebles urbanos y suburbanos con valor determinado o modificado, con anterioridad al año 2002 y hasta 1993 inclusive
+- `con_edificaciones_2002_2020` — apar=1, munis=1, años=1, vals=0.0024
+  - desc: Inmuebles urbanos y suburbanos con edificaciones; durante los años 2002 a 2020, inclusive.
+- `sin_edificaciones_2002_2020` — apar=1, munis=1, años=1, vals=0.0045
+  - desc: Inmuebles urbanos y suburbanos sin edificaciones; durante los años 2002 a 2020, inclusive.
+- `con_edificaciones_pre_1993` — apar=1, munis=1, años=1, vals=0.013
+  - desc: Inmuebles urbanos y suburbanos con edificaciones; con anterioridad al año de 1993.
+- `sin_edificaciones_pre_1993` — apar=1, munis=1, años=1, vals=0.013
+  - desc: Inmuebles urbanos y suburbanos sin edificaciones; con anterioridad al año de 1993.
+- `urbanos_y_suburbanos_anteriores_2002_hasta_1993_inclusive` — apar=1, munis=1, años=1, vals=0.006
+  - desc: Inmuebles urbanos y suburbanos con valor determinado o modificado con anterioridad al año 2002 y hasta el 1993, inclusive
+- `urbanos_y_suburbanos_anteriores_1993` — apar=1, munis=1, años=1, vals=0.013
+  - desc: Inmuebles urbanos y suburbanos con valor determinado o modificado con anterioridad al año de 1993
+- `urbano_con_edificaciones_anteriores_2002_1993` — apar=1, munis=1, años=1, vals=0.008
+  - desc: Inmuebles urbanos y suburbanos con edificaciones, con anterioridad al año 2002 y hasta 1993, inclusive.
+- `urbano_sin_edificaciones_anteriores_2002_1993` — apar=1, munis=1, años=1, vals=0.015
+  - desc: Inmuebles urbanos y suburbanos sin edificaciones, con anterioridad al año 2002 y hasta 1993, inclusive.
+- `urbanos_y_suburbanos_con_edificaciones_anterior_2002_hasta_1993` — apar=1, munis=1, años=1, vals=0.008
+  - desc: Con anterioridad al año 2002 y hasta el año 1993, inclusive.
+- `urbanos_y_suburbanos_sin_edificaciones_anterior_2002_hasta_1993` — apar=1, munis=1, años=1, vals=0.015
+  - desc: Con anterioridad al año 2002 y hasta el año 1993, inclusive.
+- `urbano_suburbano_entrada_vigor` — apar=1, munis=1, años=1, vals=0.00223
+  - desc: Inmuebles urbanos y suburbanos, inmuebles con valor determinado o modificado, a la entrada en vigor de la ley
+- `urbano_suburbano_2002_2020` — apar=1, munis=1, años=1, vals=0.00223
+  - desc: Inmuebles urbanos y suburbanos, inmuebles con valor determinado o modificado, durante los años 2002 y hasta 2020 inclusive
+- `urbano_suburbano_anteriores_1993_1993` — apar=1, munis=1, años=1, vals=0.008
+  - desc: Inmuebles urbanos y suburbanos, inmuebles con valor determinado o modificado, con anterioridad al año 2002 y hasta 1993 inclusive
+- `urbano_suburbano_anterior_1993` — apar=1, munis=1, años=1, vals=0.013
+  - desc: Inmuebles urbanos y suburbanos, inmuebles con valor determinado o modificado, con anterioridad al año de 1993
+- `urbano_con_edificaciones_2002_2020_inclusive` — apar=1, munis=1, años=1, vals=0.0024
+  - desc: Inmuebles urbanos y suburbanos con edificaciones, para inmuebles con valor determinado o modificado durante el año 2002 y hasta el año 2020 
+- `urbano_sin_edificaciones_2002_2020_inclusive` — apar=1, munis=1, años=1, vals=0.0045
+  - desc: Inmuebles urbanos y suburbanos sin edificaciones, para inmuebles con valor determinado o modificado durante el año 2002 y hasta el año 2020 
+- `urbano_con_edificaciones_2002_2020` — apar=1, munis=1, años=1, vals=0.0025
+  - desc: Inmuebles urbanos y suburbanos con edificaciones, durante el año 2002 y hasta el 2020, inclusive
+- `urbano_sin_edificaciones_2002_2020` — apar=1, munis=1, años=1, vals=0.0046
+  - desc: Inmuebles urbanos y suburbanos sin edificaciones, durante el año 2002 y hasta el 2020, inclusive
+- `anio_2002_a_2020` — apar=1, munis=1, años=1, vals=0.0024
+  - desc: Inmuebles urbanos y suburbanos con valor determinado o modificado, durante el año 2002 y hasta el año 2020 inclusive
+- `anio_1993_a_2001` — apar=1, munis=1, años=1, vals=0.008
+  - desc: Inmuebles urbanos y suburbanos con valor determinado o modificado, con anterioridad al año 2002 y hasta el año 1993 inclusive
+- `anteriores_a_1993` — apar=1, munis=1, años=1, vals=0.013
+  - desc: Inmuebles urbanos y suburbanos con valor determinado o modificado, con anterioridad al año de 1993
+- `inmuebles_urbanos_y_suburbanos_con_edificaciones_2002_a_2021` — apar=1, munis=1, años=1, vals=0.0024
+  - desc: Durante los años 2002 y hasta el 2021 inclusive.
+- `inmuebles_urbanos_y_suburbanos_sin_edificaciones_entrada_en_vigor` — apar=1, munis=1, años=1, vals=0.0045
+  - desc: A la entrada en vigor de la presente Ley.
+- `inmuebles_urbanos_y_suburbanos_sin_edificaciones_2002_a_2021` — apar=1, munis=1, años=1, vals=0.0045
+  - desc: Durante los años 2002 y hasta el 2021 inclusive.
+- `urbano_y_suburbano_edificado` — apar=1, munis=1, años=1, vals=0.0024
+  - desc: Inmuebles urbanos y suburbanos con edificaciones: a la entrada en vigor de la presente Ley, y durante los años 2002 y hasta 2021 inclusive, 
+- `2002_a_2021` — apar=1, munis=1, años=1, vals=0.0024
+  - desc: Inmuebles urbanos y suburbanos, durante los años 2002 y hasta el 2021 inclusive
+- `urbano_suburbano_con_edificaciones_1993_2002` — apar=1, munis=1, años=1, vals=0.008
+  - desc: Inmuebles urbanos y suburbanos con edificaciones: con anterioridad al año 2002 y hasta el 1993, inclusive
+- `urbano_suburbano_sin_edificaciones_1993_2002` — apar=1, munis=1, años=1, vals=0.015
+  - desc: Inmuebles urbanos y suburbanos sin edificaciones: con anterioridad al año 2002 y hasta el 1993, inclusive
+- `urbano_suburbano_con_edificaciones_pre1993` — apar=1, munis=1, años=1, vals=0.013
+  - desc: Inmuebles urbanos y suburbanos con edificaciones: con anterioridad al año de 1993
+- `urbano_suburbano_sin_edificaciones_pre1993` — apar=1, munis=1, años=1, vals=0.013
+  - desc: Inmuebles urbanos y suburbanos sin edificaciones: con anterioridad al año de 1993
+- `vigencia_actual` — apar=1, munis=1, años=1, vals=0.0024
+  - desc: Inmuebles urbanos y suburbanos, a la entrada en vigor de la presente Ley
+- `periodo_2002_a_2021` — apar=1, munis=1, años=1, vals=0.0024
+  - desc: Inmuebles urbanos y suburbanos, durante los años 2002 y hasta el año 2021, inclusive
+- `urbano_con_edificaciones_2002_2021` — apar=1, munis=1, años=1, vals=0.008
+  - desc: Inmuebles urbanos y suburbanos con edificaciones, durante los años 2002 y hasta el año 2021 inclusive
+- `urbano_sin_edificaciones_2002_2021` — apar=1, munis=1, años=1, vals=0.015
+  - desc: Inmuebles urbanos y suburbanos sin edificaciones, durante los años 2002 y hasta el año 2021 inclusive
+- `urbanos_y_suburbanos_1993_2001` — apar=1, munis=1, años=1, vals=0.008
+  - desc: Inmuebles urbanos y suburbanos con valor determinado o modificado con anterioridad al año 2002 y hasta el año 1993, inclusive
+- `urbanos_y_suburbanos_antes_1993` — apar=1, munis=1, años=1, vals=0.013
+  - desc: Inmuebles urbanos y suburbanos con valor determinado o modificado con anterioridad al año 1993
+- `urbanos_y_suburbanos_sin_edificaciones_antes_1993` — apar=1, munis=1, años=1, vals=0.013
+  - desc: Inmuebles urbanos y suburbanos sin edificaciones con valor determinado o modificado con anterioridad al año 1993
+- `urbanos_y_suburbanos_con_edificaciones_2002_a_2021` — apar=1, munis=1, años=1, vals=0.0024
+  - desc: Durante los años 2002 y hasta el 2021, inclusive: inmuebles urbanos y suburbanos con edificaciones
+- `urbanos_y_suburbanos_sin_edificaciones_2002_a_2021` — apar=1, munis=1, años=1, vals=0.0045
+  - desc: Durante los años 2002 y hasta el 2021, inclusive: inmuebles urbanos y suburbanos sin edificaciones
+- `urbanos_y_suburbanos_con_edificaciones_anteriores_2002` — apar=1, munis=1, años=1, vals=0.008
+  - desc: Con anterioridad al año 2002 y hasta 1993, inclusive: inmuebles urbanos y suburbanos con edificaciones
+- `urbanos_y_suburbanos_sin_edificaciones_anteriores_2002` — apar=1, munis=1, años=1, vals=0.015
+  - desc: Con anterioridad al año 2002 y hasta 1993, inclusive: inmuebles urbanos y suburbanos sin edificaciones
+- `urbanos_y_suburbanos_con_edificaciones_anteriores_1903` — apar=1, munis=1, años=1, vals=0.013
+  - desc: Con anterioridad al año de 1903: inmuebles urbanos y suburbanos con edificaciones
+- `urbanos_y_suburbanos_sin_edificaciones_anteriores_1903` — apar=1, munis=1, años=1, vals=0.013
+  - desc: Con anterioridad al año de 1903: inmuebles urbanos y suburbanos sin edificaciones
+- `anios_2002_a_2021` — apar=1, munis=1, años=1, vals=0.0024
+  - desc: Inmuebles urbanos y suburbanos; durante los años 2002 y hasta 2021, inclusive
+- `inmuebles_urbanos_suburbanos_con_edificaciones_2002_2021` — apar=1, munis=1, años=1, vals=0.004
+  - desc: Inmuebles urbanos y suburbanos con edificaciones; durante los años 2002 a 2021 inclusive.
+- `inmuebles_urbanos_suburbanos_sin_edificaciones_2002_2021` — apar=1, munis=1, años=1, vals=0.0045
+  - desc: Inmuebles urbanos y suburbanos sin edificaciones; durante los años 2002 a 2021 inclusive.
+- `inmuebles_urbanos_suburbanos_con_edificaciones_1994_2001` — apar=1, munis=1, años=1, vals=0.0015
+  - desc: Inmuebles urbanos y suburbanos con edificaciones; con anterioridad al año 2002 y hasta 1993.
+- `inmuebles_urbanos_suburbanos_sin_edificaciones_1994_2001` — apar=1, munis=1, años=1, vals=0.0015
+  - desc: Inmuebles urbanos y suburbanos sin edificaciones; con anterioridad al año 2002 y hasta 1993.
+- `inmuebles_urbanos_suburbanos_con_edificaciones_pre_1993` — apar=1, munis=1, años=1, vals=0.013
+  - desc: Inmuebles urbanos y suburbanos con edificaciones; con anterioridad al año de 1993.
+- `inmuebles_urbanos_suburbanos_sin_edificaciones_pre_1993` — apar=1, munis=1, años=1, vals=0.013
+  - desc: Inmuebles urbanos y suburbanos sin edificaciones; con anterioridad al año de 1993.
+- `urbanos_y_suburbanos_con_edificaciones_2002_2021` — apar=1, munis=1, años=1, vals=0.002
+  - desc: Inmuebles urbanos y suburbanos con edificaciones durante los años 2002 y hasta 2021 inclusive
+- `urbanos_y_suburbanos_sin_edificaciones_2002_2021` — apar=1, munis=1, años=1, vals=0.003
+  - desc: Inmuebles urbanos y suburbanos sin edificaciones durante los años 2002 y hasta 2021 inclusive
+- `urbanos_y_suburbanos_anterior_a_1993_con_edificaciones` — apar=1, munis=1, años=1, vals=0.0013
+  - desc: Inmuebles urbanos y suburbanos con edificaciones con anterioridad al año de 1993
+- `urbanos_y_suburbanos_anterior_a_1993_sin_edificaciones` — apar=1, munis=1, años=1, vals=0.0012
+  - desc: Inmuebles urbanos y suburbanos sin edificaciones con anterioridad al año de 1993
+- `inmuebles_urbanos_y_suburbanos_depreciados` — apar=1, munis=1, años=1, vals=0.0018
+  - desc: Inmuebles urbanos y suburbanos con valor determinado o modificado por antigüedad
+- `2002_a_2022_con_edificaciones` — apar=1, munis=1, años=1, vals=2.23
+  - desc: Inmuebles urbanos y suburbanos durante los años 2002 y hasta el 2022 inclusive; con edificaciones
+- `2002_a_2022_sin_edificaciones` — apar=1, munis=1, años=1, vals=4.18
+  - desc: Inmuebles urbanos y suburbanos durante los años 2002 y hasta el 2022 inclusive; sin edificaciones
+- `urbanos_suburbanos_con_edificaciones_2002_2022` — apar=1, munis=1, años=1, vals=0.0024
+  - desc: Inmuebles urbanos y suburbanos con edificaciones, durante el año 2002 y hasta el año 2022, inclusive
+- `urbanos_suburbanos_sin_edificaciones_2002_2022` — apar=1, munis=1, años=1, vals=0.0045
+  - desc: Inmuebles urbanos y suburbanos sin edificaciones, durante el año 2002 y hasta el año 2022, inclusive
+- `anio_2002_2022` — apar=1, munis=1, años=1, vals=0.0024
+  - desc: Durante los años 2002 y hasta el 2022, inclusive
+- `sin_edificaciones_entrada_en_vigor` — apar=1, munis=1, años=1, vals=0.0045
+  - desc: Inmuebles urbanos y suburbanos sin edificaciones; a la entrada en vigor de la presente ley
+- `con_edificaciones_2002_2022` — apar=1, munis=1, años=1, vals=0.0024
+  - desc: Inmuebles urbanos y suburbanos con edificaciones; durante los años 2002 y hasta el 2022, inclusive
+- `sin_edificaciones_2002_2022` — apar=1, munis=1, años=1, vals=0.0045
+  - desc: Inmuebles urbanos y suburbanos sin edificaciones; durante los años 2002 y hasta el 2022, inclusive
+- `urbano_actual` — apar=1, munis=1, años=1, vals=0.0024
+  - desc: Inmuebles urbanos y suburbanos a la entrada en vigor de la ley
+- `urbano_2002_2022` — apar=1, munis=1, años=1, vals=0.0045
+  - desc: Inmuebles urbanos y suburbanos con valor determinado o modificado de 2002 hasta 2022 inclusive
+- `urbano_1994_2001` — apar=1, munis=1, años=1, vals=0.009
+  - desc: Inmuebles urbanos y suburbanos con valor determinado o modificado de 1994 hasta 2001 inclusive
+- `urbano_anteriores_1993` — apar=1, munis=1, años=1, vals=0.013
+  - desc: Inmuebles urbanos y suburbanos con anterioridad al año 1993
+- `urbano_con_edificaciones_2002_2023` — apar=1, munis=1, años=1, vals=0.00223
+  - desc: Inmuebles urbanos y suburbanos con edificaciones, durante los años 2002 y hasta 2023 inclusive.
+- `urbano_sin_edificaciones_2002_2023` — apar=1, munis=1, años=1, vals=0.00418
+  - desc: Inmuebles urbanos y suburbanos sin edificaciones, durante los años 2002 y hasta 2023 inclusive.
+- `inmuebles_suburbanos_con_edificaciones` — apar=1, munis=1, años=1, vals=0.0018
+  - desc: Inmuebles suburbanos con edificaciones; valor determinado o modificado
+- `inmuebles_urbanos_y_suburbanos_con_edificaciones_anios_2002_a_2023` — apar=1, munis=1, años=1, vals=0.0024
+  - desc: Durante los años 2002 hasta el año 2023, inclusive, inmuebles urbanos y suburbanos con edificaciones
+- `inmuebles_urbanos_y_suburbanos_sin_edificaciones_anios_2002_a_2023` — apar=1, munis=1, años=1, vals=0.0045
+  - desc: Durante los años 2002 hasta el año 2023, inclusive, inmuebles urbanos y suburbanos sin edificaciones
+- `inmuebles_suburbanos_con_edificaciones_anios_2002_a_2023` — apar=1, munis=1, años=1, vals=0.0018
+  - desc: Durante los años 2002 hasta el año 2023, inclusive, inmuebles suburbanos con edificaciones
+- `inmuebles_urbanos_y_suburbanos_con_edificaciones_anterior_2002_hasta_1993` — apar=1, munis=1, años=1, vals=0.008
+  - desc: Con anterioridad al año 2002 y hasta el año 1993, inclusive, inmuebles urbanos y suburbanos con edificaciones
+- `inmuebles_urbanos_y_suburbanos_sin_edificaciones_anterior_2002_hasta_1993` — apar=1, munis=1, años=1, vals=0.015
+  - desc: Con anterioridad al año 2002 y hasta el año 1993, inclusive, inmuebles urbanos y suburbanos sin edificaciones
+- `inmuebles_suburbanos_con_edificaciones_anterior_2002_hasta_1993` — apar=1, munis=1, años=1, vals=0.006
+  - desc: Con anterioridad al año 2002 y hasta el año 1993, inclusive, inmuebles suburbanos con edificaciones
+- `anio_2002_a_2023` — apar=1, munis=1, años=1, vals=0.0024
+  - desc: Inmuebles urbanos y suburbanos con valor determinado o modificado; durante los años 2002 a 2023, inclusive
+- `anterior_2002_hasta_1993_inclusive` — apar=1, munis=1, años=1, vals=0.008
+  - desc: Inmuebles urbanos y suburbanos con valor determinado o modificado; con anterioridad al año 2002 y hasta 1993 inclusive
+- `urbano_suburbano_con_edificaciones_2002_2024` — apar=1, munis=1, años=1, vals=2.4
+  - desc: Inmuebles urbanos y suburbanos con edificaciones; durante el año del 2002 y hasta el 2024, inclusive
+- `urbano_suburbano_sin_edificaciones_2002_2024` — apar=1, munis=1, años=1, vals=4.5
+  - desc: Inmuebles urbanos y suburbanos sin edificaciones; durante el año del 2002 y hasta el 2024, inclusive
+- `antiguedad_2002_2024_con_edificaciones` — apar=1, munis=1, años=1, vals=0.004534
+  - desc: Durante los años 2002 a 2024 inclusive, inmuebles urbanos y suburbanos con edificaciones.
+- `antiguedad_2002_2024_sin_edificaciones` — apar=1, munis=1, años=1, vals=0.0024
+  - desc: Durante los años 2002 a 2024 inclusive, inmuebles urbanos y suburbanos sin edificaciones.
+- `anteriores_1993_2002_con_edificaciones` — apar=1, munis=1, años=1, vals=0.003
+  - desc: Con anterioridad al año 2002 y hasta 1993, inclusive, inmuebles urbanos y suburbanos con edificaciones.
+- `anteriores_1993_2002_sin_edificaciones` — apar=1, munis=1, años=1, vals=0.005
+  - desc: Con anterioridad al año 2002 y hasta 1993, inclusive, inmuebles urbanos y suburbanos sin edificaciones.
+- `urbano_sin_edificacion_2025` — apar=1, munis=1, años=1, vals=0.008
+  - desc: Inmuebles urbanos y suburbanos con valor determinado o modificado, sin edificaciones, para el año 2025
+- `urbano_con_edificacion_2025` — apar=1, munis=1, años=1, vals=0.015
+  - desc: Inmuebles urbanos y suburbanos con valor determinado o modificado, con edificaciones, para el año 2025
+- `urbano_suburbano_con_edificaciones_2002_a_2024` — apar=1, munis=1, años=1, vals=0.0024
+  - desc: Inmuebles urbanos y suburbanos con edificaciones; durante los años 2002 y hasta 2024 inclusive
+- `urbano_suburbano_sin_edificaciones_2002_a_2024` — apar=1, munis=1, años=1, vals=0.0045
+  - desc: Inmuebles urbanos y suburbanos sin edificaciones; durante los años 2002 y hasta 2024 inclusive
+- `inmuebles_anteriores_2002_hasta_1993_con_edificaciones` — apar=1, munis=1, años=1, vals=0.008
+  - desc: Con anterioridad al año 2002 y hasta 1993 inclusive, con edificaciones
+- `inmuebles_anteriores_2002_hasta_1993_sin_edificaciones` — apar=1, munis=1, años=1, vals=0.015
+  - desc: Con anterioridad al año 2002 y hasta 1993 inclusive, sin edificaciones
+- `inmuebles_anteriores_1993_con_edificaciones` — apar=1, munis=1, años=1, vals=0.013
+  - desc: Con anterioridad al año de 1993
+- `urbano_con_edificaciones_2002_2024` — apar=1, munis=1, años=1, vals=0.0024
+  - desc: Inmuebles urbanos y suburbanos con edificaciones, durante los años 2002 a 2024 inclusive.
+- `urbano_sin_edificaciones_2002_2024` — apar=1, munis=1, años=1, vals=0.0045
+  - desc: Inmuebles urbanos y suburbanos sin edificaciones, durante los años 2002 a 2024 inclusive.
+- `sin_edificaciones_1993` — apar=1, munis=1, años=1, vals=0.015
+  - desc: Inmuebles urbanos y suburbanos sin edificaciones, con anterioridad al año 2002 y hasta 1993 inclusive
+- `otro` — apar=1, munis=1, años=1, vals=0.013
+  - desc: Inmuebles urbanos y suburbanos con edificaciones, con anterioridad al año de 1993
+- `otro_sin_edificaciones` — apar=1, munis=1, años=1, vals=0.013
+  - desc: Inmuebles urbanos y suburbanos sin edificaciones, con anterioridad al año de 1993
+- `valor_determinado_o_modificado_con_edificaciones` — apar=1, munis=1, años=1, vals=2.4
+  - desc: Inmuebles urbanos y suburbanos con valor determinado o modificado, con edificaciones; artículo 4, tasas vigentes a la entrada en vigor de la
+- `valor_determinado_o_modificado_sin_edificaciones` — apar=1, munis=1, años=1, vals=4.5
+  - desc: Inmuebles urbanos y suburbanos con valor determinado o modificado, sin edificaciones; artículo 4, tasas vigentes a la entrada en vigor de la
+- `valor_anterior_2002_con_edificaciones` — apar=1, munis=1, años=1, vals=8.0
+  - desc: Inmuebles urbanos y suburbanos con valor determinado o modificado, con edificaciones; con anterioridad al año 2002 y hasta 1993, inclusive; 
+- `valor_anterior_2002_sin_edificaciones` — apar=1, munis=1, años=1, vals=15.0
+  - desc: Inmuebles urbanos y suburbanos con valor determinado o modificado, sin edificaciones; con anterioridad al año 2002 y hasta 1993, inclusive; 
+- `valor_anterior_1993_con_edificaciones` — apar=1, munis=1, años=1, vals=13.0
+  - desc: Inmuebles urbanos y suburbanos con valor determinado o modificado, con edificaciones; con anterioridad al año 1993; artículo 4.
+- `valor_anterior_1993_sin_edificaciones` — apar=1, munis=1, años=1, vals=13.0
+  - desc: Inmuebles urbanos y suburbanos con valor determinado o modificado, sin edificaciones; con anterioridad al año 1993; artículo 4.
+- `inmuebles_urbanos_suburbanos_con_valor_determinado_o_modificado` — apar=1, munis=1, años=1, vals=4.5
+  - desc: Inmuebles urbanos y suburbanos que cuenten con un valor determinado o modificado: a la entrada en vigor de la ley 4.5 al millar; durante los
+- `entrada_en_vigor_a_1993_y_posterior` — apar=1, munis=1, años=1, vals=0.0024
+  - desc: Inmuebles urbanos y suburbanos con valor determinado o modificado, con edificaciones
+- `entrada_en_vigor_a_1993_y_posterior_sin_edificaciones` — apar=1, munis=1, años=1, vals=0.0045
+  - desc: Inmuebles urbanos y suburbanos con valor determinado o modificado, sin edificaciones
+- `inmuebles_urbanos_y_suburbanos_con_edificaciones_2002_a_2024` — apar=1, munis=1, años=1, vals=0.00223
+  - desc: Durante los años 2002 y hasta el 2024 inclusive
+- `inmuebles_urbanos_y_suburbanos_sin_edificaciones_2002_a_2024` — apar=1, munis=1, años=1, vals=0.00418
+  - desc: Durante los años 2002 y hasta el 2024 inclusive
+- `inmuebles_urbanos_y_suburbanos_anterior_a_1993` — apar=1, munis=1, años=1, vals=0.012
+  - desc: Con anterioridad al año de 1993
+- `inmuebles_urbanos_y_suburbanos_sin_edificaciones_anterior_a_1993` — apar=1, munis=1, años=1, vals=0.013
+  - desc: Con anterioridad al año de 1993
+- `con_edificacion_antiguo_2002_1993` — apar=1, munis=1, años=1, vals=0.008
+  - desc: Inmuebles urbanos y suburbanos con edificaciones; con anterioridad a 2002 y hasta 1993 inclusive
+- `sin_edificacion_antiguo_2002_1993` — apar=1, munis=1, años=1, vals=0.015
+  - desc: Inmuebles urbanos y suburbanos sin edificaciones; con anterioridad a 2002 y hasta 1993 inclusive
+- `con_edificacion_antiguo_pre_1993` — apar=1, munis=1, años=1, vals=0.013
+  - desc: Inmuebles urbanos y suburbanos con edificaciones; con anterioridad al año de 1993
+- `sin_edificacion_antiguo_pre_1993` — apar=1, munis=1, años=1, vals=0.013
+  - desc: Inmuebles urbanos y suburbanos sin edificaciones; con anterioridad al año de 1993
+- `inmuebles_urbanos_y_suburbanos_con_edificaciones_1993_2025` — apar=1, munis=1, años=1, vals=8.0
+  - desc: Con anterioridad al año 2002 y hasta el año 1993 inclusive, inmuebles urbanos y suburbanos con edificaciones
+- `inmuebles_urbanos_y_suburbanos_sin_edificaciones_1993_2025` — apar=1, munis=1, años=1, vals=15.0
+  - desc: Con anterioridad al año 2002 y hasta el año 1993 inclusive, inmuebles urbanos y suburbanos sin edificaciones
+- `inmuebles_urbanos_y_suburbanos_con_edificaciones_anterior_1993` — apar=1, munis=1, años=1, vals=43.0
+  - desc: Con anterioridad al año 1993, inmuebles urbanos y suburbanos con edificaciones
+- `inmuebles_urbanos_y_suburbanos_sin_edificaciones_anterior_1993` — apar=1, munis=1, años=1, vals=13.0
+  - desc: Con anterioridad al año 1993, inmuebles urbanos y suburbanos sin edificaciones
+- `urbano_suburbano_con_edificaciones_valor_determinado_o_modificado` — apar=1, munis=1, años=1, vals=0.0024
+  - desc: Inmuebles urbanos y suburbanos con edificaciones que cuenten con un valor determinado o modificado
+- `urbano_suburbano_sin_edificaciones_valor_determinado_o_modificado` — apar=1, munis=1, años=1, vals=0.0045
+  - desc: Inmuebles urbanos y suburbanos sin edificaciones que cuenten con un valor determinado o modificado
+- `urbano_suburbano_con_edificaciones_2002_a_2025` — apar=1, munis=1, años=1, vals=0.0024
+  - desc: Inmuebles urbanos y suburbanos con edificaciones, durante el año 2002 y hasta el año 2025, inclusive
+- `urbano_suburbano_sin_edificaciones_2002_a_2025` — apar=1, munis=1, años=1, vals=0.0045
+  - desc: Inmuebles urbanos y suburbanos sin edificaciones, durante el año 2002 y hasta el año 2025, inclusive
+- `urbano_suburbano_con_edificaciones_anterior_2002_hasta_1993` — apar=1, munis=1, años=1, vals=0.006
+  - desc: Inmuebles urbanos y suburbanos con edificaciones, con anterioridad al año 2002 y hasta el año 1993, inclusive
+- `urbano_suburbano_sin_edificaciones_anterior_2002_hasta_1993` — apar=1, munis=1, años=1, vals=0.015
+  - desc: Inmuebles urbanos y suburbanos sin edificaciones, con anterioridad al año 2002 y hasta el año 1993, inclusive
+- `urbano_suburbano_con_edificaciones_anterior_1993` — apar=1, munis=1, años=1, vals=0.012
+  - desc: Inmuebles urbanos y suburbanos con edificaciones, con anterioridad al año 1993
+- `urbano_suburbano_sin_edificaciones_anterior_1993` — apar=1, munis=1, años=1, vals=0.043
+  - desc: Inmuebles urbanos y suburbanos sin edificaciones, con anterioridad al año 1993
+- `inmuebles_urbanos_suburbanos_con_edificaciones_2002_a_2025` — apar=1, munis=1, años=1, vals=0.005
+  - desc: Inmuebles urbanos y suburbanos con edificaciones; durante el año 2002 y hasta el 2025, inclusive
+- `inmuebles_urbanos_suburbanos_sin_edificaciones_2002_a_2025` — apar=1, munis=1, años=1, vals=0.0046
+  - desc: Inmuebles urbanos y suburbanos sin edificaciones; durante el año 2002 y hasta el 2025, inclusive
+- `inmuebles_urbanos_suburbanos_con_edificaciones_1993_a_2002` — apar=1, munis=1, años=1, vals=0.009
+  - desc: Inmuebles urbanos y suburbanos con edificaciones; con anterioridad al año 2002 y hasta 1993, inclusive
+- `inmuebles_urbanos_suburbanos_sin_edificaciones_1993_a_2002` — apar=1, munis=1, años=1, vals=0.0015
+  - desc: Inmuebles urbanos y suburbanos sin edificaciones; con anterioridad al año 2002 y hasta 1993, inclusive
+- `inmuebles_urbanos_suburbanos_con_edificaciones_anteriores_1993` — apar=1, munis=1, años=1, vals=0.013
+  - desc: Inmuebles urbanos y suburbanos con edificaciones; con anterioridad a 1993
+- `inmuebles_urbanos_suburbanos_sin_edificaciones_anteriores_1993` — apar=1, munis=1, años=1, vals=0.013
+  - desc: Inmuebles urbanos y suburbanos sin edificaciones; con anterioridad a 1993
+- `anios_2002` — apar=1, munis=1, años=1, vals=0.0045
+  - desc: Inmuebles urbanos y suburbanos con valor determinado o modificado con edificaciones, durante los años 2002
+- `suburbano_con_edificaciones` — apar=1, munis=1, años=1, vals=0.0024
+  - desc: Inmuebles urbanos y suburbanos con edificaciones, entrada en vigor de la presente Ley
+- `suburbano_sin_edificaciones` — apar=1, munis=1, años=1, vals=0.0045
+  - desc: Inmuebles urbanos y suburbanos sin edificaciones, entrada en vigor de la presente Ley
+- `urbano_con_edificaciones_2002_a_2025` — apar=1, munis=1, años=1, vals=0.0024
+  - desc: Inmuebles urbanos y suburbanos con edificaciones, años 2002 a 2025 inclusive
+- `urbano_sin_edificaciones_2002_a_2025` — apar=1, munis=1, años=1, vals=0.0045
+  - desc: Inmuebles urbanos y suburbanos sin edificaciones, años 2002 a 2025 inclusive
+- `suburbano_con_edificaciones_2002_a_2025` — apar=1, munis=1, años=1, vals=0.0024
+  - desc: Inmuebles urbanos y suburbanos con edificaciones, años 2002 a 2025 inclusive
+- `suburbano_sin_edificaciones_2002_a_2025` — apar=1, munis=1, años=1, vals=0.0045
+  - desc: Inmuebles urbanos y suburbanos sin edificaciones, años 2002 a 2025 inclusive
+- `urbano_con_edificaciones_1993_a_2001` — apar=1, munis=1, años=1, vals=0.008
+  - desc: Inmuebles urbanos y suburbanos con edificaciones, con anterioridad al año 2002 y hasta 1993 inclusive
+- `urbano_sin_edificaciones_1993_a_2001` — apar=1, munis=1, años=1, vals=0.015
+  - desc: Inmuebles urbanos y suburbanos sin edificaciones, con anterioridad al año 2002 y hasta 1993 inclusive
+- `suburbano_con_edificaciones_1993_a_2001` — apar=1, munis=1, años=1, vals=0.008
+  - desc: Inmuebles urbanos y suburbanos con edificaciones, con anterioridad al año 2002 y hasta 1993 inclusive
+- `suburbano_sin_edificaciones_1993_a_2001` — apar=1, munis=1, años=1, vals=0.015
+  - desc: Inmuebles urbanos y suburbanos sin edificaciones, con anterioridad al año 2002 y hasta 1993 inclusive
+
+### Jalisco <a id='tarifa-millar-jalisco'></a> — 1195 claves
+
+#### grupo: `general` — 89 clave(s)
+
+- `predios_en_general_base_fiscal_registrada` — apar=297, munis=81, años=16, vals=10.0|10.0|1.0|10.0|10.0
+  - desc: Predios en general que han venido tributando con tasas diferentes a las contenidas en este artículo, sobre la base fiscal registrada
+- `predios_en_general_base_fiscal_registrada_tasas_diferentes` — apar=211, munis=73, años=16, vals=10.0|10.0|10.0|10.0|10.0
+  - desc: Predios en general que han venido tributando con tasas diferentes a las contenidas en este artículo, sobre la base fiscal registrada
+- `predios_en_general_tasas_diferentes_base_fiscal_registrada` — apar=195, munis=69, años=16, vals=10.0|10.0|10.0|10.0|10.0
+  - desc: Predios en general que han venido tributando con tasas diferentes a las contenidas en este artículo, sobre la base fiscal registrada
+- `predios_en_general_tasa_transitoria_base_fiscal_registrada` — apar=122, munis=57, años=16, vals=10.5|10.0|10.0|10.0|10.0
+  - desc: Predios en general que han venido tributando con tasas diferentes a las contenidas en este artículo, sobre la base fiscal registrada
+- `predios_en_general_base_fiscal_registrada_tasa_transitoria` — apar=91, munis=57, años=16, vals=10.0|10.0|10.0|10.0|10.0
+  - desc: Predios en general que han venido tributando con tasas diferentes... sobre la base fiscal registrada
+- `predios_en_general_base_fiscal_registrada_tasa_anterior` — apar=54, munis=37, años=16, vals=10.0|10.0|10.0|10.0|10.0
+  - desc: Predios en general que han venido tributando con tasas diferentes a las contenidas en este artículo, sobre la base fiscal registrada
+- `predios_en_general_base_fiscal_registrada_tasa_diferente` — apar=41, munis=32, años=13, vals=10.0|10.0|10.0|10.0|10.0
+  - desc: Predios en general que han venido tributando con tasas diferentes a las contenidas en este artículo, sobre la base fiscal registrada
+- `predios_en_general_tasa_anterior_base_fiscal_registrada` — apar=22, munis=17, años=13, vals=10.0|10.0|10.0|0.0|0.0
+  - desc: Predios en general que han venido tributando con tasas diferentes a las contenidas en este artículo, sobre la base fiscal registrada
+- `predios_en_general_base_fiscal_registrada_tasa_previa` — apar=15, munis=13, años=11, vals=10.0|10.0|10.0|10.0|10.0
+  - desc: Predios en general que han venido tributando con tasas diferentes ... sobre la base fiscal registrada
+- `predios_en_general_base_fiscal_registrada_tasas_anteriores` — apar=10, munis=9, años=6, vals=10.0|10.0|10.0|10.0|10.0
+  - desc: Predios en general que han venido tributando con tasas diferentes a las contenidas en este artículo, sobre la base fiscal registrada
+- `predios_en_general_tasa_previa_base_fiscal_registrada` — apar=7, munis=7, años=6, vals=10.0|10.0|10.0|10.0|0.1
+  - desc: Predios en general que han venido tributando con tasas diferentes a las contenidas en este artículo, sobre la base fiscal registrada
+- `predios_en_general` — apar=7, munis=3, años=6, vals=0.0|0.0|0.0|10.0|0.0
+  - desc: Predios en general que han venido tributando con tasas diferentes a las contenidas en este artículo, sobre la base fiscal registrada
+- `predios_en_general_base_fiscal_registrada_tasa_10` — apar=5, munis=5, años=5, vals=10.0|10.0|10.0|10.0|10.0
+  - desc: Predios en general que han venido tributando con tasas diferentes... sobre la base fiscal registrada
+- `predios_en_general_tasa_anterior` — apar=5, munis=4, años=5, vals=10.0|10.0|1.0|0.0|10.0
+  - desc: Predios en general que han venido tributando con tasas diferentes a las contenidas en este artículo, sobre la base fiscal registrada
+- `predios_en_general_base_fiscal_registrada_tributando_tasas_diferentes` — apar=5, munis=5, años=5, vals=10.0|10.0|10.0|10.0|10.0
+  - desc: Predios en general que han venido tributando con tasas diferentes a las contenidas en este artículo, sobre la base fiscal registrada
+- `predios_en_general_tasa_diferente_base_fiscal_registrada` — apar=5, munis=5, años=5, vals=10.0|10.0|19.0|10.0|10.0
+  - desc: Predios en general que han venido tributando con tasas diferentes a las contenidas en este artículo, sobre la base fiscal registrada
+- `predios_en_general_y_urbanos_edificados_valores_anteriores_2000` — apar=4, munis=1, años=4, vals=10.0|10.0|10.0|10.0
+  - desc: Predios en general y predios urbanos edificados, con valores anteriores al 2000, que han venido tributando con tasas diferentes a las conten
+- `predios_en_general_urbanos_edificados_valores_anteriores_2000` — apar=4, munis=1, años=4, vals=10.0|10.0|10.0|10.0
+  - desc: Predios en general y predios urbanos edificados, con valores anteriores al 2000, que han venido tributando con tasas diferentes a las conten
+- `general_base_fiscal_registrada_tasas_diferentes` — apar=4, munis=4, años=3, vals=10.0|10.0|10.0|1.5
+  - desc: Predios en general que han venido tributando con tasas diferentes a las contenidas en este artículo, sobre la base fiscal registrada
+- `predios_en_general_tasas_anteriores_base_fiscal_registrada` — apar=4, munis=3, años=4, vals=10.0|10.0|10.0|10.0
+  - desc: Predios en general que han venido tributando con tasas diferentes a las contenidas en este artículo, sobre la base fiscal registrada
+- `predios_en_general_y_urbanos_edificados_valores_anteriores_2000_adeudos` — apar=3, munis=1, años=3, vals=10.0|10.0|10.0
+  - desc: Predios en general y predios urbanos edificados, con valores anteriores al 2000, que han venido tributando con tasas diferentes ... (tasa bi
+- `predios_en_general_base_fiscal_registrada_tributando_con_tasas_diferentes` — apar=3, munis=3, años=2, vals=10.0|10.0|10.0
+  - desc: Predios en general que han venido tributando con tasas diferentes a las contenidas en este artículo, sobre la base fiscal registrada
+- `predios_en_general_tasa_anteriores_base_fiscal_registrada` — apar=3, munis=3, años=3, vals=10.0|10.0|10.0
+  - desc: Predios en general que han venido tributando con tasas diferentes a las contenidas en este artículo, sobre la base fiscal registrada
+- `predios_en_general_urbanos_edificados_valores_anteriores_2000_adeudos` — apar=3, munis=1, años=3, vals=10.0|10.0|10.0
+  - desc: Predios en general y predios urbanos edificados, con valores anteriores al 2000, que han venido tributando con tasas diferentes... (liquidar
+- `predios_en_general_base_fiscal_registrada_tasas_diferentes_10_00` — apar=2, munis=1, años=2, vals=10.0|10.0
+  - desc: Predios en general que han venido tributando con tasas diferentes a las contenidas en este artículo, sobre la base fiscal registrada
+- `tasa_anterior_base_fiscal_registrada` — apar=2, munis=2, años=1, vals=10.0|0.0
+  - desc: Predios en general, que han venido tributando con tasas diferentes a las contenidas en este artículo, sobre la base fiscal registrada
+- `predios_en_general_base_fiscal_registrada_tasas_previas` — apar=2, munis=2, años=2, vals=10.0|10.0
+  - desc: Predios en general que han venido tributando con tasas diferentes a las contenidas en este artículo, sobre la base fiscal registrada
+- `predios_en_general_base_fiscal_registrada_12_por_ciento` — apar=2, munis=1, años=2, vals=0.12|0.12
+  - desc: Predios en general que han venido tributando con tasas diferentes a las contenidas en este artículo, sobre la base fiscal registrada
+- `predios_en_general_tasa_diferente` — apar=2, munis=2, años=2, vals=10.0|1.0
+  - desc: Predios en general que han venido tributando con tasas diferentes a las contenidas en este Artículo, sobre la base fiscal registrada
+- `tasa_transitoria_base_fiscal_registrada` — apar=2, munis=2, años=2, vals=10.0|12.34
+  - desc: Predios en general que han venido tributando con tasas diferentes a las contenidas en este Artículo, sobre la base fiscal registrada
+- `predios_general_base_fiscal_registrada_tasa_transitoria` — apar=2, munis=2, años=2, vals=10.0|10.0
+  - desc: Predios en general que han venido tributando con tasas diferentes... sobre la base fiscal registrada
+- `predios_en_general_tasas_diferentes_a_las_contenidas` — apar=2, munis=1, años=2, vals=11.0|11.0
+  - desc: Predios en general que han venido tributando con tasas diferentes a las contenidas en este artículo, sobre la base fiscal registrada
+- `valuados_catastro_o_valores_anteriores_2000` — apar=1, munis=1, años=1, vals=10.0
+  - desc: Para predios valuados en los términos de la Ley de Catastro Municipal del Estado de Jalisco o cuyo valor se haya determinado con valores ant
+- `predios_en_general_base_fiscal_registrada_tasa_10_al_millar` — apar=1, munis=1, años=1, vals=10.0
+  - desc: Predios en general que han venido tributando con tasas diferentes a las contenidas en este artículo, sobre la base fiscal registrada
+- `predios_en_general_base_fiscal_registrada_tasa_anterior_10_millar` — apar=1, munis=1, años=1, vals=10.0
+  - desc: Predios en general que han venido tributando con tasas diferentes a las contenidas en este artículo, sobre la base fiscal registrada
+- `predios_en_general_adeudos_tasas_diferentes` — apar=1, munis=1, años=1, vals=10.0
+  - desc: Predios en general que han venido tributando con tasas diferentes a las contenidas en este artículo (liquidación de adeudos con base en tasa
+- `predios_en_general_base_fiscal_registrada_tasa_previa_distinta` — apar=1, munis=1, años=1, vals=10.0
+  - desc: Predios en general que han venido tributando con tasas diferentes a las contenidas en este artículo, sobre la base fiscal registrada
+- `predios_en_general_base_fiscal_registrada_tasa_diferente_10` — apar=1, munis=1, años=1, vals=10.0
+  - desc: Predios en general que han venido tributando con tasas diferentes... sobre la base fiscal registrada
+- `predios_valor_real_determinado_lhjem` — apar=1, munis=1, años=1, vals=0.2
+  - desc: Predios cuyo valor real se determine en los términos de la Ley de Hacienda Municipal del Estado de Jalisco (del terreno y las construcciones
+- `predios_en_general_tributando_con_tasas_diferentes_base_fiscal_registrada` — apar=1, munis=1, años=1, vals=10.5
+  - desc: Predios en general que han venido tributando con tasas diferentes a las contenidas en este artículo, sobre la base fiscal registrada
+- `predios_en_general_base_fiscal_registrada_tasa_1_9` — apar=1, munis=1, años=1, vals=1.9
+  - desc: Predios en general que han venido tributando con tasas diferentes... sobre la base fiscal registrada
+- `predios_en_general_base_fiscal_registrada_tasa_diferente_10_86` — apar=1, munis=1, años=1, vals=10.86
+  - desc: Predios en general que han venido tributando con tasas diferentes a las contenidas en este artículo, sobre la base fiscal registrada
+- `predios_en_general_base_fiscal_registrada_tasa_diferente_12_00` — apar=1, munis=1, años=1, vals=12.0
+  - desc: Predios en general que han venido tributando con tasas diferentes a las contenidas en este artículo, sobre la base fiscal registrada
+- `predios_en_general_tasas_diferentes_base_registrada` — apar=1, munis=1, años=1, vals=10.0
+  - desc: Predios en general que han venido tributando con tasas diferentes a las contenidas en este artículo, sobre la base fiscal registrada
+- `predios_generales_urbanos_edificados_valores_anteriores_2000` — apar=1, munis=1, años=1, vals=10.0
+  - desc: Predios en general y predios urbanos edificados, con valores anteriores al 2000, que han venido tributando con tasas diferentes a las conten
+- `predios_en_general_tasas_diferentes_sobre_base_fiscal_registrada` — apar=1, munis=1, años=1, vals=10.5
+  - desc: Predios en general que han venido tributando con tasas diferentes a las contenidas en este artículo, sobre la base fiscal registrada
+- `predios_en_general_base_fiscal_registrada_tasa_10_millar_mas_cuota_fija_30` — apar=1, munis=1, años=1, vals=10.0
+  - desc: Predios en general que han venido tributando con tasas diferentes a las contenidas en este artículo, sobre la base fiscal registrada
+- `predios_en_general_tasa_transitoria_10_millar` — apar=1, munis=1, años=1, vals=10.0
+  - desc: Predios en general que han venido tributando con tasas diferentes a las contenidas en este artículo, sobre la base fiscal registrada
+- `predios_en_general_base_fiscal_registrada_tasas_diferentes_19` — apar=1, munis=1, años=1, vals=19.0
+  - desc: Predios en general que han venido tributando con tasas diferentes a las contenidas en este artículo, sobre la base fiscal registrada
+- `predios_en_general_tasas_previas_base_fiscal_registrada` — apar=1, munis=1, años=1, vals=10.0
+  - desc: Predios en general que han venido tributando con tasas diferentes a las contenidas en este artículo, sobre la base fiscal registrada
+- `predios_en_general_base_fiscal_registrada_tasas_diferentes_10_30` — apar=1, munis=1, años=1, vals=10.3
+  - desc: Predios en general que han venido tributando con tasas diferentes a las contenidas en este artículo, sobre la base fiscal registrada
+- `tasas_historicas_base_fiscal_registrada` — apar=1, munis=1, años=1, vals=0.0
+  - desc: Predios en general que han venido tributando con tasas al millar diferentes a las contenidas en este artículo sobre la base fiscal registrad
+- `predios_en_general_base_fiscal_registrada_tasa_10_millar` — apar=1, munis=1, años=1, vals=10.0
+  - desc: Predios en general que han venido tributando con tasas diferentes a las contenidas en este artículo, sobre la base fiscal registrada
+- `general_tasa_transitoria_base_fiscal_registrada` — apar=1, munis=1, años=1, vals=10.0
+  - desc: Predios en general que han venido tributando con tasas diferentes a las contenidas en este artículo, sobre la base fiscal registrada
+- `predios_en_general_base_fiscal_registrada_tasas_diferentes_articulo` — apar=1, munis=1, años=1, vals=19.0
+  - desc: Predios en general que han venido tributando con tasas diferentes a las contenidas en este artículo, sobre la base fiscal registrada
+- `predios_en_general_base_fiscal_registrada_tasa_transitoria_12_por_ciento` — apar=1, munis=1, años=1, vals=0.12
+  - desc: Predios en general que han venido tributando con tasas diferentes... sobre la base fiscal registrada, el: 12% (tasa bimestral al millar). A 
+- `predios_en_general_tasa_10_millar_mas_cuota_fija` — apar=1, munis=1, años=1, vals=10.0
+  - desc: Predios en general que han venido tributando con tasas diferentes a las contenidas en este artículo, sobre la base fiscal registrada, la tas
+- `predios_base_fiscal_registrada_tasas_diferentes` — apar=1, munis=1, años=1, vals=10.0
+  - desc: Predios en general que han venido tributando con tasas diferentes a las contenidas en este artículo, sobre la base fiscal registrada
+- `predios_general_tasa_transitoria_base_fiscal_registrada` — apar=1, munis=1, años=1, vals=10.0
+  - desc: Predios en general que han venido tributando con tasas diferentes a las contenidas en este artículo, sobre la base fiscal registrada
+- `predios_en_general_base_fiscal_registrada_tasa_diferente_10pct_millar` — apar=1, munis=1, años=1, vals=0.1
+  - desc: Predios en general que han venido tributando con tasas diferentes a las contenidas en este artículo, sobre la base fiscal registrada
+- `predios_tasas_historicas_base_fiscal_registrada` — apar=1, munis=1, años=1, vals=0.0
+  - desc: Predios en general que han venido tributando con tasas al millar diferentes a las contenidas en este artículo sobre la base fiscal registrad
+- `general_y_urbanos_edificados_valores_anteriores_2000` — apar=1, munis=1, años=1, vals=10.0
+  - desc: Predios en general y predios urbanos edificados, con valores anteriores al 2000, que han venido tributando con tasas diferentes a las conten
+- `precios_en_general_tasas_diferentes_base_fiscal_registrada` — apar=1, munis=1, años=1, vals=11.02
+  - desc: Precios en general que han venido tributando con tasas diferentes a las contenidas en este artículo, sobre la base fiscal registrada
+- `predios_en_general_tasa_10_al_millar` — apar=1, munis=1, años=1, vals=10.0
+  - desc: Predios en general que han venido tributando con tasas diferentes a las contenidas en este artículo, sobre la base fiscal registrada
+- `predios_con_tasas_diferentes_base_fiscal_registrada` — apar=1, munis=1, años=1, vals=10.0
+  - desc: Predios en general que han venido tributando con tasas diferentes a las contenidas en este artículo, sobre la base fiscal registrada
+- `predios_en_general_base_fiscal_registrada_tasa_diferente_0_10_millar` — apar=1, munis=1, años=1, vals=0.1
+  - desc: Predios en general que han venido tributando con tasas diferentes a las contenidas en este artículo, sobre la base fiscal registrada
+- `precios_en_general_tasa_diferente_base_fiscal_registrada` — apar=1, munis=1, años=1, vals=10.0
+  - desc: Precios en general que han venido tributando con tasas diferentes a las contenidas en este artículo, sobre la base fiscal registrada
+- `predios_en_general_tasa_diferente_10_millar` — apar=1, munis=1, años=1, vals=10.0
+  - desc: Predios en general que han venido tributando con tasas diferentes a las contenidas en este artículo, sobre la base fiscal registrada
+- `edificados_y_no_edificados_no_excede_70000` — apar=1, munis=1, años=1, vals=0.74
+  - desc: Predios edificados y no edificados cuyo valor no exceda los $70,000.00
+- `general_tasas_diferentes_base_fiscal_registrada` — apar=1, munis=1, años=1, vals=0.1
+  - desc: Predios en general que han venido tributando con tasas diferentes a las contenidas en este artículo, sobre la base fiscal registrada
+- `predios_en_general_base_fiscal_registrada_tasa_diferente_10_al_millar` — apar=1, munis=1, años=1, vals=10.0
+  - desc: Predios en general que han venido tributando con tasas diferentes a las contenidas en este artículo, sobre la base fiscal registrada
+- `tasa_historica_predios_en_general` — apar=1, munis=1, años=1, vals=0.0
+  - desc: Predios en general que han venido tributando con tasas al millar diferentes a las contenidas en este artículo sobre la base fiscal registrad
+- `general_base_fiscal_registrada_10_millar` — apar=1, munis=1, años=1, vals=10.0
+  - desc: Predios en general que han venido tributando con tasas diferentes a las contenidas en este artículo, sobre la base fiscal registrada
+- `predios_en_general_tasa_previas_diferentes_10` — apar=1, munis=1, años=1, vals=10.0
+  - desc: Predios en general que han venido tributando con tasas diferentes a las contenidas en este artículo, sobre la base fiscal registrada
+- `predios_en_general_tasas_historicas` — apar=1, munis=1, años=1, vals=10.0
+  - desc: Predios en general que han venido tributando con tasas al millar diferentes a las contenidas en este artículo, sobre la base fiscal registra
+- `predios_en_general_tasa_anterior_no_legible` — apar=1, munis=1, años=1, vals=0.0
+  - desc: I. Predios en general que han venido tributando con tasas diferentes a las contenidas en este Artículo, sobre la base fiscal registrada, el:
+- `predios_en_general_tasa_bimestral_al_millar` — apar=1, munis=1, años=1, vals=0.1
+  - desc: Predios en general ... sobre la base fiscal registrada, el: (tasa bimestral al millar)
+- `predios_en_general_tasa_diferente_base_fiscal_registrada_12_por_ciento` — apar=1, munis=1, años=1, vals=0.12
+  - desc: Predios en general que han venido tributando con tasas diferentes a las contenidas en este artículo, sobre la base fiscal registrada
+- `predios_en_general_base_fiscal_registrada_tasa_anterior_110pct` — apar=1, munis=1, años=1, vals=1.1
+  - desc: Predios en general que han venido tributando con tasas diferentes a las contenidas en este artículo, sobre la base fiscal registrada, el 110
+- `predios_en_general_tasas_diferentes_articulo` — apar=1, munis=1, años=1, vals=11.0
+  - desc: Predios en general que han venido tributando con tasas diferentes a las contenidas en este artículo, sobre la base fiscal registrada
+- `predios_en_general_base_fiscal_registrada_tasa_12` — apar=1, munis=1, años=1, vals=12.0
+  - desc: Predios en general que han venido tributando con tasas diferentes a las contenidas en este artículo, sobre la base fiscal registrada
+- `predios_valor_real_valor_fiscal` — apar=1, munis=1, años=1, vals=0.2
+  - desc: Para predios cuyo valor real se determine en los términos de la Ley de Hacienda Municipal del Estado de Jalisco (del terreno y las construcc
+- `predios_en_general_tasa_previa` — apar=1, munis=1, años=1, vals=10.0
+  - desc: I.- Predios en general que han venido tributando con tasas diferentes a las contenidas en el artículo, sobre la base fiscal registrada
+- `predios_en_general_tasas_diferentes` — apar=1, munis=1, años=1, vals=11.0
+  - desc: I. Predios en general que han venido tributando con tasas diferentes a las contenidas en este artículo, sobre la base fiscal registrada, la 
+- `predios_en_general_tasa_transitoria_10_millar_base_fiscal_registrada` — apar=1, munis=1, años=1, vals=10.0
+  - desc: Predios en general que han venido tributando con tasas diferentes a las contenidas en este artículo, sobre la base fiscal registrada
+- `predios_en_general_base_fiscal_registrada_tasas_diferentes_12_al_millar` — apar=1, munis=1, años=1, vals=12.0
+  - desc: Predios en general que han venido tributando con tasas diferentes a las contenidas en este artículo, sobre la base fiscal registrada
+- `predios_en_general_tasa_historica_base_fiscal_registrada` — apar=1, munis=1, años=1, vals=14.75
+  - desc: Predios en general que han venido tributando con tasas diferentes a las contenidas en este artículo, sobre la base fiscal registrada
+- `predios_en_general_base_fiscal_registrada_10_por_ciento` — apar=1, munis=1, años=1, vals=0.1
+  - desc: Predios en general que han venido tributando con tasas diferentes a las contenidas en este artículo, sobre la base fiscal registrada
+- `predios_en_general_tasa_transitoria_tributando_distinto` — apar=1, munis=1, años=1, vals=0.118
+  - desc: Predios en general que han venido tributando con tasas diferentes a las contenidas en este articulo, sobre la base fiscal registrada
+
+#### grupo: `otro` — 8 clave(s)
+
+- `cambio_de_rustico_a_urbano` — apar=2, munis=1, años=2, vals=1.0|1.0
+  - desc: Predios en general que se deseen pasar de rústico a urbano... deberán pagar una tasa bimestral del 0.1% más $38.00
+- `cambio_rustico_a_urbano` — apar=2, munis=1, años=2, vals=1.0|1.0
+  - desc: Predios en general que se deseen pasar de rústico a urbano... deberán pagar una tasa bimestral del 0.1% más $38.00
+- `cambio_rustico_a_urbano_tasa_bimestral_0_1_por_ciento` — apar=1, munis=1, años=1, vals=1.0
+  - desc: Predios en general que se deseen pasar de rústico a urbano... deberán pagar una tasa bimestral del 0.1% más $38.00
+- `cambio_rustico_a_urbano_tasa_0_1_por_ciento` — apar=1, munis=1, años=1, vals=1.0
+  - desc: Predios en general que se deseen pasar de rústico a urbano: deberán pagar una tasa bimestral del 0.1% más $38.00
+- `cambio_rustico_a_urbano_0_1_por_ciento_mas_cuota` — apar=1, munis=1, años=1, vals=1.0
+  - desc: Predios en general que se deseen pasar de rústico a urbano... deberán pagar una tasa bimestral del 0.1% más $39.52
+- `cambio_rustico_a_urbano_tasa_porcentaje` — apar=1, munis=1, años=1, vals=1.0
+  - desc: Predios en general que se deseen pasar de rústico a urbano (cumpliendo características de predio urbano): tasa bimestral del 0.1% más $39.52
+- `cambio_rustico_a_urbano_tasa_bimestral_0_1_por_ciento_mas_cuota_fija` — apar=1, munis=1, años=1, vals=1.0
+  - desc: Predios en general que se deseen pasar de rústico a urbano... deberán pagar una tasa bimestral del 0.1% más $39.52
+- `predios_no_edificados_c_y_d` — apar=1, munis=1, años=1, vals=0.0
+  - desc: Predios no edificados, incisos c) y d)
+
+#### grupo: `rustico` — 402 clave(s)
+
+- `rustico_valor_fiscal_determinado` — apar=367, munis=79, años=16, vals=0.2|0.2|0.2|0.18|0.2
+  - desc: Predios rústicos: sobre el valor fiscal determinado
+- `rustico_valor_fiscal` — apar=266, munis=36, años=16, vals=0.2|0.2|0.2|0.2|0.2
+  - desc: Predios rústicos cuyo valor real se determine en los términos de la Ley de Hacienda Municipal del Estado de Jalisco (del terreno y las const
+- `rustico_valores_anteriores_2000` — apar=257, munis=38, años=16, vals=1.5|1.5|1.5|1.5|1.5
+  - desc: Para predios valuados en los términos de la Ley de Catastro del Estado de Jalisco o cuyo valor se haya determinado en cualquier operación tr
+- `construcciones_en_predios_rusticos_tasa_inciso_b` — apar=249, munis=32, años=16, vals=0.8|0.85|0.8|0.8|0.8
+  - desc: Construcciones localizadas en predios rústicos: se aplicará la tasa del inciso b)
+- `rustico_valor_real_ley_hacienda_municipal` — apar=221, munis=45, años=16, vals=0.2|0.2|0.2|0.2|0.2
+  - desc: Predios rústicos cuyo valor real se determine en los términos de la Ley de Hacienda Municipal (terreno y construcciones en su caso), sobre e
+- `rustico_agropecuario_en_produccion_valores_anteriores_2000` — apar=177, munis=32, años=16, vals=0.8|0.8|0.8|0.8|0.8
+  - desc: Predios rústicos dedicados preponderantemente a fines agropecuarios en producción (previa constancia) y cuyo valor se determinó conforme al 
+- `rusticos_valor_fiscal_determinado` — apar=120, munis=51, años=16, vals=0.2|0.2|0.2|0.21|0.2
+  - desc: Predios rústicos: sobre el valor fiscal determinado
+- `rustico_agropecuario_produccion_valores_anteriores_2000` — apar=79, munis=24, años=16, vals=0.85|0.8|0.8|0.8|0.8
+  - desc: Predios rústicos dedicados preponderantemente a fines agropecuarios en producción, cuyo valor se determinó conforme al inciso a)
+- `rustico_valor_real_determinado_ley_hacienda_municipal` — apar=61, munis=22, años=15, vals=0.2|0.22|0.2|0.2|0.2
+  - desc: Predios cuyo valor real se determine en los términos de la Ley de Hacienda Municipal del Estado de Jalisco, sobre el valor fiscal determinad
+- `construcciones_en_predios_rusticos` — apar=56, munis=18, años=16, vals=0.8|0.8|0.12|0.8|0.8
+  - desc: Construcciones localizadas en predios rústicos (aplica la tasa del inciso a))
+- `rustico_valor_real_valor_fiscal_determinado` — apar=55, munis=39, años=15, vals=0.2|0.2|0.21|0.2|0.2
+  - desc: Predios rústicos: sobre el valor fiscal determinado
+- `rustico_valor_real_determinado` — apar=50, munis=31, años=15, vals=0.2|0.2|0.2|0.2|0.2
+  - desc: Predios rústicos (inciso a): sobre el valor fiscal determinado
+- `rustico_agropecuario_en_produccion` — apar=34, munis=10, años=16, vals=0.8|0.8|0.8|0.8|0.8
+  - desc: Predios rústicos dedicados preponderantemente a fines agropecuarios en producción (previa constancia)
+- `rustico_valor_real_lhmj` — apar=34, munis=14, años=14, vals=0.2|0.12|0.22|0.2|0.2
+  - desc: Predios rústicos cuyo valor real se determine en los términos de la Ley de Hacienda Municipal del Estado de Jalisco (del terreno y las const
+- `construcciones_en_predios_rusticos_aplica_tasa_inciso_b` — apar=34, munis=20, años=14, vals=0.8|0.8|0.8|0.8|0.8
+  - desc: Construcciones localizadas en predios rústicos: se aplicará la tasa consignada en el inciso b)
+- `rustico_valor_real_determinado_lhmj` — apar=33, munis=26, años=15, vals=0.2|0.2|0.2|0.2|0.2
+  - desc: Predios rústicos: sobre el valor fiscal determinado
+- `rustico_valor_fiscal_determinado_lhmj` — apar=33, munis=25, años=15, vals=0.2|0.2|0.2|0.22|0.22
+  - desc: Predios rústicos cuyo valor real se determine en los términos de la Ley de Hacienda Municipal del Estado de Jalisco (del terreno y las const
+- `rustico_valor_fiscal_determinado_lhm_jalisco` — apar=32, munis=23, años=14, vals=0.2|0.22|0.2|0.2|0.2
+  - desc: Predios rústicos: sobre el valor fiscal determinado, el 0.20 al millar (tasa bimestral).
+- `rusticos_valor_real_valor_fiscal_determinado` — apar=28, munis=23, años=13, vals=0.2|0.22|0.2|0.2|0.2
+  - desc: Predios rústicos: sobre el valor fiscal determinado
+- `rustico_valor_real` — apar=27, munis=4, años=12, vals=0.23|0.23|0.22|0.23|0.22
+  - desc: Predios rústicos cuyo valor real se determine en los términos de la Ley de Hacienda Municipal del Estado de Jalisco y Ley de Catastro Munici
+- `rustico_valuados_valores_anteriores_2000` — apar=26, munis=16, años=14, vals=1.5|1.55|1.5|1.5|1.5
+  - desc: Predios rústicos valuados en los términos de la Ley de Catastro Municipal del Estado de Jalisco o cuyo valor se haya determinado en cualquie
+- `rustico_agropecuario_en_produccion_valor_anteriores_2000` — apar=23, munis=16, años=11, vals=0.8|0.8|0.85|0.8|0.8
+  - desc: Predios rústicos dedicados preponderantemente a fines agropecuarios en producción (previa constancia) cuyo valor se determinó conforme al in
+- `rustico_valor_real_sobre_valor_fiscal_determinado` — apar=21, munis=17, años=12, vals=0.2|0.25|0.2|0.21|0.2
+  - desc: Predios rústicos: sobre el valor fiscal determinado
+- `rustico_valor_real_determinado_sobre_valor_fiscal_determinado` — apar=17, munis=14, años=10, vals=0.2|0.21|0.2|0.2|0.2
+  - desc: Predios rústicos: Para predios cuyo valor real se determine en los términos de la Ley de Hacienda Municipal del Estado de Jalisco (del terre
+- `rustico_valor_real_determinado_lhm` — apar=17, munis=14, años=12, vals=0.2|0.22|0.2|0.2|0.2
+  - desc: Predios rústicos: para predios cuyo valor real se determine en los términos de la Ley de Hacienda Municipal del Estado de Jalisco, sobre el 
+- `predios_rusticos_valor_fiscal_determinado` — apar=16, munis=11, años=11, vals=0.2|0.2|0.2|0.23|0.2
+  - desc: Predios rústicos... sobre el valor fiscal determinado
+- `rusticos_valores_anteriores_2000` — apar=15, munis=13, años=10, vals=0.25|1.5|1.5|1.5|1.5
+  - desc: Predios rústicos valuados en términos de la Ley de Catastro del Estado de Jalisco o cuyo valor se haya determinado en operación traslativa d
+- `rustico_valor_real_determinado_sobre_valor_fiscal` — apar=15, munis=11, años=10, vals=0.22|0.2|0.2|0.25|0.22
+  - desc: Predios rústicos cuyo valor real se determine en términos de la Ley de Hacienda Municipal (terreno y construcciones en su caso), sobre el va
+- `rustico_valor_real_determinado_ley_hacienda` — apar=14, munis=11, años=10, vals=0.2|0.22|0.2|0.2|0.21
+  - desc: Para predios cuyo valor real se determine en los términos de la Ley de Hacienda Municipal del Estado de Jalisco, sobre el valor fiscal deter
+- `rusticos_valor_real_ley_hacienda_municipal` — apar=14, munis=12, años=9, vals=0.2|0.2|0.23|0.2|0.2
+  - desc: Predios cuyo valor real se determine en los términos de la Ley de Hacienda Municipal del Estado de Jalisco (del terreno y las construcciones
+- `rusticos_valor_real_determinado_sobre_valor_fiscal_determinado` — apar=13, munis=10, años=8, vals=0.2|0.2|0.2|0.2|0.25
+  - desc: Predios rústicos: Para predios cuyo valor real se determine en los términos de la Ley de Hacienda Municipal del Estado de Jalisco, sobre el 
+- `predios_rusticos` — apar=12, munis=7, años=8, vals=0.23|0.0|0.0|0.0|0.0
+  - desc: Predios rústicos (sobre el valor determinado/valor real)
+- `rustico_valuado_valores_anteriores_2000` — apar=12, munis=10, años=8, vals=1.5|1.5|1.5|1.5|1.5
+  - desc: Predios rústicos valuados (valores anteriores al año 2000) sobre el valor determinado
+- `rustico_valor_fiscal_determinado_ley_hacienda_municipal` — apar=12, munis=11, años=8, vals=0.2|0.22|0.2|0.2|0.2
+  - desc: Predios rústicos: Para predios cuyo valor real se determine en los términos de la Ley de Hacienda Municipal del Estado de Jalisco (del terre
+- `rustico_valor_real_determinado_lhm_jalisco` — apar=12, munis=11, años=10, vals=0.23|0.2|0.2|0.22|0.23
+  - desc: Predios rústicos: sobre el valor fiscal determinado (valor real determinado en términos de la Ley de Hacienda Municipal del Estado de Jalisc
+- `rustico_valuados_con_valores_anteriores_2000` — apar=11, munis=8, años=8, vals=1.5|1.5|1.5|1.0|1.5
+  - desc: Predios rústicos valuados en términos de Catastro o por operación traslativa de dominio, con valores anteriores al año 2000, sobre el valor 
+- `rusticos_agropecuarios_en_produccion_valores_anteriores_2000` — apar=11, munis=10, años=8, vals=0.8|0.8|0.8|0.8|0.2
+  - desc: Predios rústicos dedicados preponderantemente a fines agropecuarios en producción (valor determinado conforme a valores anteriores al año 20
+- `rusticos_valor_real_determinado` — apar=11, munis=10, años=8, vals=0.23|0.23|0.2|0.24|0.2
+  - desc: Predios rústicos cuyo valor real se determine... sobre el valor determinado
+- `rustico_valor_real_ley_hacienda` — apar=11, munis=10, años=9, vals=0.2|0.2|0.2|2.0|13.34
+  - desc: Predios rústicos: sobre el valor fiscal determinado, el 0.20 (tasa bimestral al millar).
+- `rustico_valor_fiscal_determinado_lhmej` — apar=11, munis=10, años=8, vals=0.2|0.2|0.2|0.24|0.2
+  - desc: Predios rústicos: sobre el valor fiscal determinado
+- `rusticos_valor_real_sobre_valor_fiscal_determinado` — apar=10, munis=8, años=6, vals=0.2|0.2|0.2|0.2|0.2
+  - desc: Predios rústicos: Para predios cuyo valor real se determine en los términos de la Ley de Hacienda Municipal del Estado de Jalisco (del terre
+- `rustico_agropecuario_en_produccion_valor_anterior_2000` — apar=9, munis=7, años=9, vals=0.8|0.8|0.8|1.0|0.8
+  - desc: Predios rústicos dedicados preponderantemente a fines agropecuarios en producción (constancia) y cuyo valor se determinó conforme al inciso 
+- `rustico_valor_fiscal_determinado_ley_hacienda` — apar=9, munis=7, años=6, vals=0.2|0.22|0.2|0.22|0.2
+  - desc: Predios rústicos... sobre el valor fiscal determinado
+- `rustico_valor_real_ley_hacienda_municipal_valor_fiscal_determinado` — apar=9, munis=8, años=7, vals=0.2|0.2|0.2|0.2|0.2
+  - desc: Predios rústicos cuyo valor real se determine en los términos de la Ley de Hacienda Municipal del Estado de Jalisco (terreno y construccione
+- `rustico_construcciones_en_predios_rusticos` — apar=9, munis=5, años=7, vals=0.8|0.8|0.25|0.0|0.8
+  - desc: Predios rústicos: Para efectos de la determinación del impuesto en las construcciones localizadas en predios rústicos, se les aplicará la ta
+- `rustico_agropecuario_en_produccion_valor_conforme_inciso_a` — apar=9, munis=9, años=8, vals=0.8|0.8|0.8|0.84|0.8
+  - desc: Predios rústicos dedicados preponderantemente a fines agropecuarios en producción (previa constancia) y cuyo valor se determinó conforme al 
+- `rustico_agropecuario_produccion_valor_anteriores_2000` — apar=9, munis=6, años=8, vals=0.8|0.8|0.8|0.8|0.8
+  - desc: Predios rústicos dedicados preponderantemente a fines agropecuarios en producción (previa constancia) y cuyo valor se determinó conforme a v
+- `rustico_valuados_catastro_o_traslativa_valores_anteriores_2000` — apar=9, munis=8, años=7, vals=1.5|1.5|1.5|1.66|1.0
+  - desc: Predios rústicos: Para predios valuados en los términos de la Ley de Catastro del Estado de Jalisco o cuyo valor se haya determinado en cual
+- `rusticos_valor_fiscal_determinado_lhmj` — apar=8, munis=8, años=6, vals=0.2|0.2|0.23|0.21|0.23
+  - desc: Predios rústicos: para predios cuyo valor real se determine en los términos de la Ley de Hacienda Municipal del Estado de Jalisco, sobre el 
+- `rustico_agropecuario_en_produccion_tasa_preferente` — apar=8, munis=1, años=8, vals=0.8|0.8|0.8|0.8|0.8
+  - desc: Predios rústicos dedicados a fines agropecuarios en producción (valor real conforme al inciso b), tasa preferente)
+- `rustico_valor_real_ley_hacienda_municipal_inciso_d` — apar=8, munis=8, años=6, vals=0.2|0.2|0.2|0.2|0.2
+  - desc: Predios rústicos cuyo valor real se determine en los términos de la Ley de Hacienda Municipal (del terreno y construcciones en su caso), sob
+- `rustico_valores_anteriores_2000_sobre_valor_determinado` — apar=8, munis=5, años=5, vals=1.5|1.5|1.5|26.68|0.2
+  - desc: Predios rústicos: valuados en términos de la Ley de Catastro del Estado de Jalisco o cuyo valor se haya determinado en operación traslativa 
+- `rustico_valor_real_lhm` — apar=8, munis=4, años=6, vals=0.2|0.2|0.2|0.2|0.2
+  - desc: Para predios cuyo valor real se determine en los términos de la Ley de Hacienda Municipal del Estado de Jalisco, sobre el valor fiscal deter
+- `rustico_valor_real_determinado_lhmej` — apar=8, munis=8, años=5, vals=0.2|0.23|0.18|0.2|0.2
+  - desc: Predios rústicos: sobre el valor fiscal determinado
+- `rusticos_valor_real_determinado_ley_hacienda_municipal` — apar=7, munis=7, años=7, vals=0.2|0.2|0.22|0.23|0.2
+  - desc: Predios cuyo valor real se determine en los términos de la Ley de Hacienda Municipal del Estado de Jalisco (del terreno y las construcciones
+- `rustico_valores_anteriores_2000_valor_determinado` — apar=7, munis=6, años=6, vals=1.5|1.5|1.5|2.0|1.5
+  - desc: Predios rústicos valuados en términos de la Ley de Catastro del Estado de Jalisco o cuyo valor se haya determinado en operación traslativa d
+- `rustico_cerril_improductivo_o_eriazo` — apar=7, munis=2, años=6, vals=0.8|0.8|0.83|0.87|0.8
+  - desc: Predios rústicos clasificados como cerril improductivo o eriazo, cuyo valor se determine en los términos de la Ley de Hacienda Municipal del
+- `rustico_valuados_catastro_o_traslativa_antes_2000` — apar=7, munis=6, años=5, vals=1.5|1.5|0.25|0.2|1.5
+  - desc: Predios rústicos: Para predios valuados en los términos de la Ley de Catastro del Estado de Jalisco o cuyo valor se haya determinado en cual
+- `rusticos_valor_fiscal` — apar=7, munis=7, años=6, vals=0.2|0.2|0.2|0.2|0.2
+  - desc: Predios rústicos: sobre el valor fiscal determinado (valor real conforme a la Ley de Hacienda Municipal del Estado de Jalisco)
+- `rustico_agropecuario_en_produccion_valor_pre_2000` — apar=7, munis=7, años=3, vals=0.85|0.8|0.8|0.8|0.2
+  - desc: Predios rústicos dedicados preponderantemente a fines agropecuarios en producción (valor determinado conforme inciso a), sobre el valor dete
+- `rustico_valor_anterior_2000` — apar=7, munis=6, años=7, vals=1.5|1.5|1.5|1.5|1.5
+  - desc: Predios rústicos valuados en términos de la Ley de Catastro Municipal del Estado de Jalisco o cuyo valor se haya determinado en operación tr
+- `rustico_agropecuario_produccion` — apar=7, munis=5, años=6, vals=0.8|0.8|0.8|0.8|0.8
+  - desc: Tratándose de predios rústicos, según la definición de la Ley de Catastro Municipal, dedicados preponderantemente a fines agropecuarios en p
+- `rusticos_valor_fiscal_determinado_ley_hacienda_municipal` — apar=6, munis=5, años=5, vals=0.2|0.2|0.2|0.2|0.2
+  - desc: Predios rústicos: sobre el valor fiscal determinado
+- `rustico_valuados_catastro_o_traslativa_anteriores_2000` — apar=6, munis=4, años=5, vals=1.5|1.5|1.5|1.5|1.5
+  - desc: Predios rústicos valuados en los términos de la Ley de Catastro Municipal del Estado de Jalisco o cuyo valor se haya determinado en cualesqu
+- `construcciones_en_predios_rusticos_aplica_inciso_b` — apar=6, munis=6, años=5, vals=0.8|0.8|0.8|0.88|0.8
+  - desc: Construcciones localizadas en predios rústicos (se les aplicará la tasa consignada en el inciso b))
+- `rustico_valuado_catastro_o_traslativa_pre_2000` — apar=6, munis=6, años=4, vals=1.5|1.6|1.5|1.5|15.0
+  - desc: Para predios valuados en los términos de la Ley de Catastro del Estado de Jalisco o cuyo valor se haya determinado en cualesquiera operación
+- `rustico_valor_anteriores_2000` — apar=6, munis=3, años=5, vals=1.5|1.5|1.5|1.5|1.5
+  - desc: Predios rústicos valuados en términos de la Ley de Catastro del Estado de Jalisco o cuyo valor se haya determinado en operación traslativa d
+- `construcciones_en_predios_rusticos_tasa_inciso_c` — apar=6, munis=2, años=6, vals=0.12|0.13|0.13|0.8|0.13
+  - desc: Construcciones localizadas en predios rústicos: se aplicará la tasa consignada en el inciso c)
+- `rustico_general` — apar=6, munis=5, años=5, vals=0.22|0.2|0.22|2.0|0.0021
+  - desc: Predios rústicos: sobre el valor determinado (valor real) en términos de las Leyes de Hacienda y de Catastro Municipales del Estado de Jalis
+- `rusticos_agropecuarios_en_produccion` — apar=6, munis=6, años=6, vals=0.85|0.8|0.88|0.2|0.8
+  - desc: Predios rústicos dedicados preponderantemente a fines agropecuarios en producción (sobre el valor determinado conforme al párrafo anterior),
+- `rustico_valor_real_ley_hacienda_municipal_terreno_y_construcciones` — apar=6, munis=5, años=5, vals=0.2|0.2|0.2|0.2|0.2
+  - desc: Predios rústicos cuyo valor real se determine en términos de la Ley de Hacienda Municipal del Estado de Jalisco (del terreno y las construcc
+- `rustico_cerril_improductivo_eriazo` — apar=6, munis=2, años=5, vals=0.8|0.83|0.83|0.83|0.83
+  - desc: Predios rústicos clasificados como cerril improductivo o eriazo, cuyo valor se determine en los términos de la Ley de Hacienda Municipal del
+- `rustico_valuados_ley_catastro_valores_anteriores_2000` — apar=5, munis=5, años=5, vals=1.5|1.5|1.0|1.5|0.65
+  - desc: Predios rústicos valuados en los términos de la Ley de Catastro del Estado de Jalisco o cuyo valor se haya determinado en cualquier operació
+- `rustico_valor_real_determinado_valor_fiscal_determinado` — apar=5, munis=5, años=5, vals=0.2|0.2|20.0|0.23|0.23
+  - desc: Predios rústicos: Para predios cuyo valor real se determine en los términos de la Ley de Hacienda Municipal del Estado de Jalisco (del terre
+- `rustico_construcciones_localizadas_en_predios_rusticos` — apar=5, munis=1, años=5, vals=0.8|0.8|0.8|0.25|0.25
+  - desc: Predios rústicos: Para efectos de la determinación del impuesto en las construcciones localizadas en predios rústicos, se les aplicará la ta
+- `predios_rusticos_valor_real_determinado` — apar=5, munis=5, años=5, vals=0.23|23.0|0.2|0.21|0.2
+  - desc: Predios Rústicos: Para predios cuyo valor real se determine en los términos de las Leyes de Hacienda y de Catastro Municipales del Estado de
+- `rustico_agropecuario_produccion_valor_anterior_2000` — apar=5, munis=4, años=5, vals=0.8|0.8|0.8|0.8|0.8
+  - desc: Predios rústicos dedicados preponderantemente a fines agropecuarios en producción (previa constancia) cuyo valor se determinó conforme al in
+- `rustico_valuado_con_valores_anteriores_2000` — apar=5, munis=5, años=2, vals=1.6|1.5|1.5|0.25|2.0
+  - desc: Predios rústicos valuados en los términos de la Ley de Catastro del Estado de Jalisco o cuyo valor se haya determinado en cualquier operació
+- `rustico_valor_fiscal_lhmj` — apar=5, munis=4, años=4, vals=0.2|0.2|2.0|0.22|1.0
+  - desc: Predios rústicos: Para predios cuyo valor real se determine en los términos de la Ley de Hacienda Municipal del Estado de Jalisco (del terre
+- `rustico_valor_real_valor_fiscal` — apar=5, munis=4, años=3, vals=0.2|0.2|0.2|0.21|0.2
+  - desc: Predios rústicos: sobre el valor fiscal determinado
+- `rusticos_valor_real_determinado_sobre_valor_fiscal` — apar=5, munis=5, años=5, vals=0.2|0.23|0.2|20.0|0.2
+  - desc: Predios rústicos: para predios cuyo valor real se determine en los términos de la Ley de Hacienda Municipal del Estado de Jalisco, sobre el 
+- `rusticos_construcciones_localizadas_en_predios_rusticos` — apar=4, munis=2, años=4, vals=0.8|0.8|0.8|0.8
+  - desc: Predios rústicos: Para efectos de la determinación del impuesto en las construcciones localizadas en predios rústicos (tasa bimestral al mil
+- `cerril_improductivo_o_eriazo` — apar=4, munis=1, años=4, vals=0.8|0.8|0.8|0.8
+  - desc: Predios rústicos clasificados como cerril improductivo o eriazo, cuyo valor se determine en los términos de la Ley de Hacienda Municipal del
+- `rustico_valor_real_lhm_jalisco` — apar=4, munis=3, años=3, vals=0.2|0.2|0.2|0.2
+  - desc: Predios rústicos: para predios cuyo valor real se determine en los términos de la Ley de Hacienda Municipal del Estado de Jalisco (del terre
+- `rustico_valor_real_lhmej` — apar=4, munis=2, años=4, vals=0.2|0.2|0.2|0.3
+  - desc: Predios rústicos cuyo valor real se determine en los términos de la Ley de Hacienda Municipal del Estado de Jalisco
+- `rustico_valor_real_lhmj_valor_fiscal_determinado` — apar=4, munis=3, años=4, vals=0.2|0.2|0.22|0.29
+  - desc: Predios rústicos cuyo valor real se determine en los términos de la Ley de Hacienda Municipal del Estado de Jalisco (del terreno y las const
+- `rustico_agropecuario_en_produccion_valor_parrafo_anterior` — apar=4, munis=4, años=3, vals=0.8|0.8|0.8|0.8
+  - desc: Predios rústicos dedicados preponderantemente a fines agropecuarios en producción (previa constancia) y cuyo valor se determinó conforme al 
+- `rustico_valores_anteriores_2000_o_catastro` — apar=4, munis=1, años=4, vals=1.5|1.5|1.5|15.0
+  - desc: Para predios valuados en los términos de la Ley de Catastro Municipal del Estado de Jalisco o cuyo valor se haya determinado en cualquier op
+- `rustico_valor_real_ley_hacienda_municipal_sobre_valor_fiscal_determinado` — apar=4, munis=3, años=4, vals=0.2|0.22|13.34|9.23
+  - desc: II.d) Predios cuyo valor real se determine en los términos de la Ley de Hacienda Municipal del Estado de Jalisco, sobre el valor fiscal dete
+- `rustico_valor_real_terreno_y_construcciones_sobre_valor_fiscal_determinado` — apar=4, munis=2, años=4, vals=0.2|0.2|0.23|0.2
+  - desc: Predios rústicos: sobre el valor fiscal determinado (del terreno y construcciones en su caso), cuyo valor real se determine en los términos 
+- `rustico_valor_fiscal_determinado_lhm` — apar=4, munis=4, años=4, vals=0.2|0.23|0.2|0.2
+  - desc: Predios rústicos: sobre el valor fiscal determinado (del terreno y las construcciones en su caso)
+- `rustico_agropecuario_produccion_constancia` — apar=4, munis=2, años=4, vals=0.8|0.8|0.8|0.8
+  - desc: Tratándose de predios rústicos, según la definición de la Ley de Catastro Municipal, dedicados preponderantemente a fines agropecuarios en p
+- `rustico_agropecuario_en_produccion_sin_valuacion` — apar=4, munis=2, años=3, vals=0.85|9.85|0.8|0.8
+  - desc: Predios rústicos dedicados preponderantemente a fines agropecuarios en producción (inciso a); construcciones en predios rústicos aplican la 
+- `rustico_valor_fiscal_lhm_jalisco` — apar=4, munis=3, años=3, vals=0.2|0.2|0.21|0.28
+  - desc: Para predios cuyo valor real se determine en los términos de la Ley de Hacienda Municipal del Estado de Jalisco (del terreno y las construcc
+- `construcciones_en_predios_rusticos_sin_valuacion` — apar=4, munis=2, años=4, vals=0.8|0.8|0.8|0.8
+  - desc: Construcciones localizadas en predios rústicos (inciso a)
+- `rusticos_valor_real_determinado_valor_fiscal_determinado` — apar=4, munis=4, años=4, vals=0.22|0.23|0.21|0.25
+  - desc: Predios rústicos: Para predios cuyo valor real se determine en los términos de la Ley de Hacienda Municipal del Estado de Jalisco (del terre
+- `rustico_valor_real_hacienda_municipal` — apar=4, munis=4, años=4, vals=0.21|0.2|0.2|0.2
+  - desc: Para predios cuyo valor real se determine en los términos de la Ley de Hacienda Municipal del Estado de Jalisco, sobre el valor fiscal deter
+- `rustico_valuado_catastro_o_traslativa_valores_anteriores_2000` — apar=3, munis=3, años=3, vals=1.5|1.6|1.5
+  - desc: Predios rústicos valuados en términos de la Ley de Catastro del Estado de Jalisco o valor determinado en operación traslativa de dominio, co
+- `rustico_agropecuario_en_produccion_valor_antes_2000` — apar=3, munis=3, años=3, vals=0.8|0.8|0.8
+  - desc: Predios rústicos dedicados preponderantemente a fines agropecuarios en producción (previa constancia) y cuyo valor se determinó conforme al 
+- `rustico_valor_real_ley_hacienda_municipal_valor_fiscal` — apar=3, munis=3, años=2, vals=0.2|0.2|2.0
+  - desc: Predios cuyo valor real se determine en los términos de la Ley de Hacienda Municipal del Estado de Jalisco (del terreno y las construcciones
+- `rusticos_valuados_con_valores_anteriores_2000` — apar=3, munis=3, años=3, vals=1.5|0.02|0.65
+  - desc: Predios rústicos valuados en los términos de la Ley de Catastro del Estado de Jalisco o cuyo valor se haya determinado en cualquier operació
+- `rustico_valor_fiscal_determinado_lhmunicipal` — apar=3, munis=3, años=3, vals=0.2|0.2|0.24
+  - desc: Predios rústicos: sobre el valor fiscal determinado, el: 0.20
+- `predios_rusticos_valor_real` — apar=3, munis=2, años=3, vals=0.23|0.254|0.2
+  - desc: Predios Rústicos: Para predios cuyo valor real se determine... sobre el valor determinado
+- `rustico_valuados_catastro_o_traslativa_dominio_valores_anteriores_2000` — apar=3, munis=2, años=3, vals=1.5|1.5|1.5
+  - desc: Para predios valuados en los términos de la Ley de Catastro Municipal del Estado de Jalisco o cuyo valor se haya determinado en cualesquiera
+- `rusticos_valor_fiscal_determinado_lhmej` — apar=3, munis=3, años=2, vals=0.2|0.22|0.25
+  - desc: Predios rústicos: sobre el valor fiscal determinado
+- `rustico_valor_fiscal_determinado_terreno_y_construcciones` — apar=3, munis=3, años=3, vals=0.2|0.2|0.22
+  - desc: Predios rústicos: sobre el valor fiscal determinado
+- `rustico_valor_real_sobre_valor_fiscal` — apar=3, munis=3, años=3, vals=0.2|0.2|0.23
+  - desc: Predios rústicos: sobre el valor fiscal determinado, el: 20% (tasa bimestral al millar). A la cantidad que resulte... se adicionará una cuot
+- `rustico_valor_real_ley_hacienda_sobre_valor_fiscal_determinado` — apar=3, munis=3, años=3, vals=0.2|0.2|0.21
+  - desc: Para predios rústicos cuyo valor real se determine en los términos de la Ley de Hacienda Municipal del Estado de Jalisco, sobre el valor fis
+- `rustico_valor_fiscal_lh_municipal` — apar=3, munis=2, años=3, vals=0.2|0.2|0.002
+  - desc: Para predios cuyo valor real se determine en los términos de la Ley de Hacienda Municipal del Estado de Jalisco (del terreno y las construcc
+- `rustico_agropecuario_en_produccion_constancia` — apar=3, munis=2, años=3, vals=0.8|0.8|0.8
+  - desc: Predios rústicos dedicados preponderantemente a fines agropecuarios en producción (previa constancia) y cuyo valor se determine conforme al 
+- `rustico_agropecuario_produccion_tasa_preferente` — apar=3, munis=1, años=3, vals=0.8|0.8|0.8
+  - desc: Tratándose de predios rústicos según la definición de la Ley de Catastro Municipal del Estado de Jalisco dedicados a fines agropecuarios en 
+- `rustico_valor_fiscal_general` — apar=3, munis=3, años=3, vals=0.2|0.2|0.3
+  - desc: Predios rústicos: sobre el valor fiscal determinado
+- `rusticos_valor_real_determinado_lhmj` — apar=3, munis=3, años=2, vals=0.2|0.2|0.2
+  - desc: Predios rústicos cuyo valor real se determine en los términos de la Ley de Hacienda Municipal del Estado de Jalisco (del terreno y las const
+- `rusticos_agropecuarios_produccion_valores_anteriores_2000` — apar=3, munis=3, años=3, vals=0.8|0.8|1.17
+  - desc: Predios rústicos dedicados preponderantemente a fines agropecuarios en producción (previa constancia), cuyo valor se determinó conforme al p
+- `rusticos_valor_real_determinado_lhm_jalisco` — apar=3, munis=2, años=3, vals=0.002|0.2|0.2
+  - desc: Para predios cuyo valor real se determine en los términos de la Ley de Hacienda Municipal del Estado de Jalisco, sobre el valor fiscal deter
+- `rustico_valor_real_terreno_y_construcciones` — apar=2, munis=1, años=2, vals=0.2|0.2
+  - desc: Predios rústicos cuyo valor real se determine (del terreno y las construcciones en su caso) sobre el valor fiscal determinado
+- `construcciones_en_predios_rusticos_aplica_tasa_inciso_b_0_80` — apar=2, munis=1, años=2, vals=0.8|0.8
+  - desc: Construcciones localizadas en predios rústicos: se les aplicará la tasa consignada en el inciso b)
+- `rustico_construcciones_en_predios_rusticos_inciso_a` — apar=2, munis=1, años=2, vals=0.8|0.8
+  - desc: Para efectos de la determinación del impuesto en las construcciones localizadas en predios rústicos
+- `rustico_agropecuario_en_produccion_pre_2000` — apar=2, munis=2, años=2, vals=0.8|0.8
+  - desc: Predios rústicos dedicados preponderantemente a fines agropecuarios en producción (valor conforme inciso a), sobre el valor determinado
+- `rustico_valor_real_terreno_y_construcciones_sobre_valor_fiscal` — apar=2, munis=1, años=2, vals=0.2|0.2
+  - desc: Predios rústicos cuyo valor real se determine (del terreno y las construcciones en su caso), sobre el valor fiscal determinado
+- `rustico_mayor_igual_10000_m2` — apar=2, munis=1, años=2, vals=0.2|0.2
+  - desc: Predios rústicos: para predios igual o mayores a 10,000.00 mts², sobre el valor fiscal determinado
+- `rusticos_valor_fiscal_determinado_lhm_jalisco` — apar=2, munis=2, años=2, vals=0.2|0.2
+  - desc: Predios rústicos: sobre el valor fiscal determinado
+- `rustico_valores_anteriores_2000_valuados_catastro_o_traslativa` — apar=2, munis=2, años=2, vals=1.5|1.5
+  - desc: II.a) Predios rústicos valuados en términos de la Ley de Catastro Municipal del Estado de Jalisco o cuyo valor se haya determinado en operac
+- `rustico_valor_fiscal_minimo_catastro_traslativa_tablas` — apar=2, munis=1, años=2, vals=1.5|1.5
+  - desc: Predios rústicos: Para predio cuyo valor real se determine en los términos de la Ley de Catastro del Estado de Jalisco o cuyo valor se haya 
+- `rustico_valuado_catastro_o_traslativa_antes_2000` — apar=2, munis=2, años=2, vals=1.5|1.5
+  - desc: Predios rústicos valuados en Catastro o por operación traslativa de dominio con valores anteriores al año 2000
+- `rustico_cerril_improductivo_eriazo_valor_determinado` — apar=2, munis=1, años=2, vals=0.8|0.8
+  - desc: Predios rústicos clasificados como cerril improductivo o eriazo, cuyo valor se determine en los términos de la Ley de Hacienda Municipal del
+- `rustico_valuados_catastro_o_traslativa_con_valores_anteriores_2000` — apar=2, munis=2, años=2, vals=1.5|1.5
+  - desc: Predios rústicos: Para predios valuados en los términos de la Ley de Catastro del Estado de Jalisco o cuyo valor se haya determinado en cual
+- `rustico_valor_real_ley_hacienda_valor_fiscal_determinado` — apar=2, munis=2, años=2, vals=0.2|0.21
+  - desc: Para predios (rústicos, en el contexto de la fracción II) cuyo valor real se determine en los términos de la Ley de Hacienda Municipal del E
+- `rustico_valor_fiscal_minimo_catastro_traslativo_tablas` — apar=2, munis=1, años=2, vals=1.5|1.5
+  - desc: Predios rústicos: Para predio cuyo valor real se determine en los términos de la Ley de Catastro del Estado de Jalisco o cuyo valor se haya 
+- `construcciones_en_predios_rusticos_agropecuarios` — apar=2, munis=1, años=2, vals=0.8|0.8
+  - desc: Construcciones localizadas en predios rústicos; se les aplicará la tasa consignada en el inciso a) (inciso b)
+- `rustico_valor_fiscal_determinado_0_23_millar` — apar=2, munis=1, años=2, vals=0.23|0.23
+  - desc: Predios Rústicos. Para predios cuyo valor real se determine en los términos de las Leyes de Hacienda y de Catastro Municipales del Estado de
+- `rustico_valuados_catastro_o_traslativa_pre_2000` — apar=2, munis=2, años=2, vals=0.2|1.5
+  - desc: Predios rústicos valuados en los términos de la Ley de Catastro del Estado de Jalisco o cuyo valor se haya determinado en cualquier operació
+- `rusticos_construcciones_en_predios_rusticos` — apar=2, munis=2, años=2, vals=0.8|0.2
+  - desc: Predios rústicos: construcciones localizadas en predios rústicos
+- `rustico_valor_fiscal_ley_hacienda` — apar=2, munis=2, años=2, vals=0.2|0.2
+  - desc: Predios rústicos: sobre el valor fiscal determinado (del terreno y las construcciones en su caso)
+- `construcciones_en_predios_rusticos_aplica_tasa_inciso_c` — apar=2, munis=1, años=2, vals=0.13|0.13
+  - desc: Construcciones localizadas en predios rústicos: se les aplicará la tasa consignada en el inciso c)
+- `predios_rusticos_valor_fiscal_determinado_lhmj` — apar=2, munis=2, años=2, vals=0.23|0.2
+  - desc: Para predios cuyo valor real se determine en los términos de la Ley de Hacienda Municipal del Estado de Jalisco, sobre el valor fiscal deter
+- `predios_rusticos_valor_real_terreno_y_construcciones` — apar=2, munis=1, años=2, vals=0.2|0.2
+  - desc: Predios rústicos: para predios cuyo valor real se determine (del terreno y las construcciones en su caso), sobre el valor fiscal determinado
+- `rustico_agropecuario_en_produccion_valor_conforme_parrafo_anterior` — apar=2, munis=2, años=2, vals=0.8|0.8
+  - desc: Predios rústicos dedicados preponderantemente a fines agropecuarios en producción (previa constancia) y cuyo valor se determinó conforme al 
+- `rustico_valuado_catastro_o_valores_anteriores_2000` — apar=2, munis=1, años=2, vals=0.25|0.25
+  - desc: Predios rústicos: Para predios valuados en los términos de la Ley de Catastro Municipal del Estado de Jalisco o cuyo valor se haya determina
+- `rusticos_valor_fiscal_determinado_lhmunicipal` — apar=2, munis=2, años=2, vals=0.23|0.22
+  - desc: Predios rústicos: para predios cuyo valor real se determine en los términos de la Ley de Hacienda Municipal del Estado de Jalisco, sobre el 
+- `predios_rusticos_valor_real_valor_fiscal_determinado` — apar=2, munis=2, años=2, vals=0.2|0.2512
+  - desc: Predios rústicos: para predios cuyo valor real se determine en los términos de la Ley de Hacienda Municipal del Estado de Jalisco (del terre
+- `rustico_valuados_catastro_o_valores_anteriores_2000` — apar=2, munis=2, años=2, vals=1.5|1.5
+  - desc: Predios rústicos: Para predios valuados en los términos de la Ley de Catastro del Estado de Jalisco o cuyo valor se haya determinado en cual
+- `rustico_valor_fiscal_minimo_catastro_operacion_tablas` — apar=2, munis=1, años=2, vals=1.5|1.5
+  - desc: Predios rústicos: Para predio cuyo valor real se determine en los términos de la Ley de Catastro del Estado de Jalisco o cuyo valor se haya 
+- `rustico_valuado_ley_catastro_valores_anteriores_2000` — apar=2, munis=2, años=2, vals=1.0|1.5
+  - desc: Predios rústicos valuados en términos de la Ley de Catastro del Estado de Jalisco o cuyo valor se haya determinado en cualquier operación tr
+- `rustico_valuados_ley_catastro_o_traslativa_valores_anteriores_2000` — apar=2, munis=2, años=2, vals=1.5|0.25
+  - desc: Predios rústicos valuados en los términos de la Ley de Catastro del Estado de Jalisco o cuyo valor se haya determinado en cualquier operació
+- `valor_real_terreno_y_construcciones_sobre_valor_fiscal_determinado` — apar=2, munis=1, años=2, vals=0.2|0.2
+  - desc: Para predios cuyo valor real se determine (del terreno y las construcciones en su caso), sobre el valor fiscal determinado
+- `rusticos_agropecuarios_en_produccion_valor_anteriores_2000` — apar=2, munis=2, años=2, vals=0.8|0.8
+  - desc: Predios rústicos dedicados preponderantemente a fines agropecuarios en producción (previa constancia) y cuyo valor se determinó conforme al 
+- `rustico_valor_determinado` — apar=2, munis=2, años=2, vals=0.25|0.23
+  - desc: Predios rústicos: para predios cuyo valor real se determine en los términos de las Leyes de Hacienda y de Catastro Municipales del Estado de
+- `rustico_valor_fiscal_minimo` — apar=2, munis=1, años=2, vals=1.0|1.5
+  - desc: Predio cuyo valor real se determine en los términos de la Ley de Catastro del Estado de Jalisco o cuyo valor se haya determinado en cualquie
+- `rustico_valor_fiscal_ley_hacienda_municipal` — apar=2, munis=2, años=2, vals=0.2|0.21
+  - desc: Predios rústicos: sobre el valor fiscal determinado
+- `rustico_construcciones_en_predio_rustico` — apar=2, munis=2, años=2, vals=0.0|0.13
+  - desc: Para efectos de la determinación del impuesto en las construcciones localizadas en predios rústicos, se les aplicará la tasa consignada en e
+- `rustico_valor_fiscal_lhm` — apar=2, munis=1, años=2, vals=2.0|2.0
+  - desc: Para predios cuyo valor real se determine en los términos de la Ley de Hacienda Municipal del Estado de Jalisco (del terreno y las construcc
+- `rustico_valores_anteriores_2000_operacion_traslativa` — apar=2, munis=2, años=1, vals=1.59|1.65
+  - desc: Para predios valuados en los términos de la Ley de Catastro Municipal del Estado de Jalisco a cuyo valor se haya determinado en cualquier op
+- `rustico_valor_fiscal_terreno_y_construcciones` — apar=2, munis=2, años=2, vals=0.2|0.2
+  - desc: Predios rústicos (del terreno y las construcciones en su caso), sobre el valor fiscal determinado, el .20; más cuota fija bimestral.
+- `rustico_excede_700000` — apar=2, munis=1, años=2, vals=0.5|0.5
+  - desc: Para predios edificados y no edificados cuyo valor exceda los $700,000.00
+- `rusticos_valor_fiscal_determinado_ley_hacienda` — apar=2, munis=1, años=2, vals=0.21|0.21
+  - desc: Predios Rústicos: Para predios cuyo valor real se determine en los términos de la Ley de Hacienda Municipal del Estado de Jalisco (del terre
+- `rustico_valor_real_lh_municipal` — apar=2, munis=2, años=2, vals=2.0|0.2
+  - desc: Para predios cuyo valor real se determine en los términos de la Ley de Hacienda Municipal del Estado de Jalisco (del terreno y las construcc
+- `rustico_invernadero_microtuneles` — apar=2, munis=1, años=2, vals=3.5|3.5
+  - desc: Predios rústicos de tipo invernadero, microtúneles y microtúneles: 0.35%
+- `rusticos_valuados_valores_anteriores_2000` — apar=2, munis=2, años=2, vals=1.65|2.2
+  - desc: Predios rústicos valuados en los términos de la Ley de Catastro del Estado de Jalisco o cuyo valor se haya determinado en operación traslati
+- `rustico_base_fiscal_registrada_tasa_diferente` — apar=2, munis=1, años=2, vals=10.0|10.0
+  - desc: Predios en general que han venido tributando con tasas diferentes a las contenidas en este artículo, sobre la base fiscal registrada
+- `rustico_valuado_catastro_o_traslativa` — apar=2, munis=1, años=2, vals=0.21|0.00021
+  - desc: Predios rústicos valuados en los términos de la Ley de Catastro Municipal del Estado de Jalisco o cuyo valor se haya determinado en cualquie
+- `rustico_valuado_catastro_o_traslativa_dominio_antes_2000` — apar=1, munis=1, años=1, vals=1.5
+  - desc: Predios rústicos: valuados en términos de Catastro Municipal o cuyo valor se haya determinado en operación traslativa de dominio, con valore
+- `rustico_agropecuario_en_produccion_valor_conforme_anterior` — apar=1, munis=1, años=1, vals=0.8
+  - desc: Predios rústicos dedicados preponderantemente a fines agropecuarios en producción (previa constancia) y cuyo valor se determinó conforme al 
+- `rustico_valores_anteriores_2000_catastro_o_traslativa` — apar=1, munis=1, años=1, vals=1.5
+  - desc: Predios rústicos valuados en términos de la Ley de Catastro Municipal del Estado de Jalisco o cuyo valor se haya determinado en operación tr
+- `rustico_valor_antes_2000_ley_catastro_o_traslativa` — apar=1, munis=1, años=1, vals=1.5
+  - desc: Predios rústicos valuados en términos de la Ley de Catastro del Estado de Jalisco o cuyo valor se haya determinado en cualquier operación tr
+- `rustico_valor_real_determinado_lh_municipal` — apar=1, munis=1, años=1, vals=0.22
+  - desc: Predios rústicos: sobre el valor fiscal determinado
+- `rustico_valuados_con_valores_anteriores_2000_1_50` — apar=1, munis=1, años=1, vals=1.5
+  - desc: Predios rústicos: Para predios valuados en los términos de la Ley de Catastro del Estado de Jalisco o cuyo valor se haya determinado en cual
+- `rustico_agropecuario_en_produccion_valor_anterior_2000_0_80` — apar=1, munis=1, años=1, vals=0.8
+  - desc: Predios rústicos dedicados preponderantemente a fines agropecuarios en producción (previa constancia) y cuyo valor se determinó conforme al 
+- `rustico_valor_real_ley_hacienda_municipal_0_20` — apar=1, munis=1, años=1, vals=0.2
+  - desc: Predios (rústicos en el contexto de la fracción II) cuyo valor real se determine en los términos de la Ley de Hacienda Municipal del Estado 
+- `rustico_valor_real_determinado_sobre_valor_fiscal_inciso_b` — apar=1, munis=1, años=1, vals=0.23
+  - desc: Para predios cuyo valor real se determine en los términos de la Ley de Hacienda Municipal del Estado de Jalisco (del terreno y las construcc
+- `rustico_valores_anteriores_2000_ley_catastro_o_traslativa` — apar=1, munis=1, años=1, vals=1.5
+  - desc: Para predios y construcciones valuados en los términos de la Ley de Catastro del Estado de Jalisco o cuyo valor se haya determinado en cualq
+- `rusticos_valor_real_sobre_valor_fiscal` — apar=1, munis=1, años=1, vals=0.2
+  - desc: Predios rústicos cuyo valor real se determine en los términos de la Ley de Hacienda Municipal del Estado de Jalisco (del terreno y las const
+- `rustico_valuado_catastro_o_traslativa_dominio_anteriores_2000` — apar=1, munis=1, años=1, vals=1.5
+  - desc: Predios rústicos valuados en términos de la Ley de Catastro del Estado de Jalisco o cuyo valor se haya determinado en operación traslativa d
+- `rustico_valor_real_ley_hacienda_municipal_sin_valuacion` — apar=1, munis=1, años=1, vals=0.2
+  - desc: Predios (rústicos) cuyo valor real se determine en los términos de la Ley de Hacienda Municipal del Estado de Jalisco (del terreno y las con
+- `rusticos_valuados_catastro_o_operacion_traslativa_valores_anteriores_2000` — apar=1, munis=1, años=1, vals=1.5
+  - desc: Predios rústicos valuados en términos de la Ley de Catastro del Estado de Jalisco o cuyo valor se haya determinado en operación traslativa d
+- `rusticos_valuados_catastro_o_traslativa_dominio_valores_anteriores_2000` — apar=1, munis=1, años=1, vals=1.5
+  - desc: Predios rústicos valuados en términos de la Ley de Catastro Municipal del Estado de Jalisco o cuyo valor se haya determinado en operación tr
+- `rusticos_agropecuarios_en_produccion_valor_anterior_2000` — apar=1, munis=1, años=1, vals=0.8
+  - desc: Predios rústicos dedicados preponderantemente a fines agropecuarios en producción (previa constancia) y cuyo valor se determinó conforme al 
+- `rusticos_valor_real_ley_hacienda_municipal_valor_fiscal_determinado` — apar=1, munis=1, años=1, vals=0.22
+  - desc: Predios rústicos cuyo valor real se determine en los términos de la Ley de Hacienda Municipal del Estado de Jalisco (del terreno y las const
+- `rusticos_construcciones_localizadas_en_predios_rusticos_inciso_a` — apar=1, munis=1, años=1, vals=0.85
+  - desc: Para efectos de la determinación del impuesto en las construcciones localizadas en predios rústicos (inciso a)
+- `rusticos_valor_real_determinado_sobre_valor_fiscal_determinado_inciso_b` — apar=1, munis=1, años=1, vals=0.24
+  - desc: Para predios cuyo valor real se determine en los términos de la Ley de Hacienda Municipal del Estado de Jalisco (del terreno y las construcc
+- `rustico_valor_real_lhmj_sobre_valor_fiscal_determinado` — apar=1, munis=1, años=1, vals=0.22
+  - desc: Predios (rústicos, dentro del apartado II) cuyo valor real se determine en los términos de la Ley de Hacienda Municipal del Estado de Jalisc
+- `cerril_improductivo_eriazo_valor_determinado_lhm` — apar=1, munis=1, años=1, vals=0.8
+  - desc: Predios rústicos clasificados como cerril improductivo o eriazo, cuyo valor se determine en los términos de la Ley de Hacienda Municipal del
+- `rustico_valor_real_ley_hacienda_inciso_d` — apar=1, munis=1, años=1, vals=0.0
+  - desc: Para predios cuyo valor real se determine en los términos de la Ley de Hacienda Municipal del Estado de Jalisco (del terreno y las construcc
+- `rusticos_valor_fiscal_determinado_terreno_y_construcciones` — apar=1, munis=1, años=1, vals=0.2
+  - desc: Predios rústicos: para predios cuyo valor real se determine en los términos de la Ley de Hacienda Municipal del Estado de Jalisco (del terre
+- `predios_rusticos_agropecuarios` — apar=1, munis=1, años=1, vals=0.5
+  - desc: Predios rústicos dedicados preponderantemente a fines agropecuarios en producción
+- `rustico_valor_real_determinado_ley_hacienda_municipal_inciso_d` — apar=1, munis=1, años=1, vals=0.21
+  - desc: Predios rústicos cuyo valor real se determine... sobre el valor fiscal determinado
+- `rustico_valuados_anteriores_2000` — apar=1, munis=1, años=1, vals=1.5
+  - desc: Predios rústicos valuados en los términos de la Ley de Catastro... con valores anteriores al año 2000, sobre el valor determinado
+- `rustico_base_fiscal_registrada_tasa_previa` — apar=1, munis=1, años=1, vals=10.0
+  - desc: Predios en general que han venido tributando con tasas diferentes a las contenidas en este artículo, sobre la base fiscal registrada
+- `construcciones_en_predio_rustico_tasa_inciso_b` — apar=1, munis=1, años=1, vals=1.0
+  - desc: Construcciones localizadas en predios rústicos: se aplicará la tasa consignada en el inciso b)
+- `rustico_agropecuarios_en_produccion_valor_conforme_anterior` — apar=1, munis=1, años=1, vals=0.2
+  - desc: Predios rústicos dedicados preponderantemente a fines agropecuarios en producción (previa constancia) y cuyo valor se determinó conforme al 
+- `rusticos_valor_real_determinado_terreno_y_construcciones` — apar=1, munis=1, años=1, vals=0.23
+  - desc: Para predios cuyo valor real se determine en los términos de la Ley de Hacienda Municipal del Estado de Jalisco (del terreno y las construcc
+- `rustico_valor_real_determinado_ley_hacienda_inciso_d` — apar=1, munis=1, años=1, vals=0.22
+  - desc: Predios rústicos: para predios cuyo valor real se determine en los términos de la Ley de Hacienda Municipal del Estado de Jalisco, sobre el 
+- `rustico_valor_fiscal_art17_i_a` — apar=1, munis=1, años=1, vals=0.2
+  - desc: Predios rústicos: sobre el valor fiscal determinado (Ley de Hacienda Municipal del Estado de Jalisco)
+- `rustico_valor_real_determinado_por_hacienda_y_catastro` — apar=1, munis=1, años=1, vals=9.21
+  - desc: Para predios cuyo valor real se determine en los términos de las Leyes de Hacienda y de Catastro Municipales del Estado de Jalisco, sobre el
+- `rustico_agropecuario_en_produccion_valor_determinado_conforme_inciso_a` — apar=1, munis=1, años=1, vals=0.8
+  - desc: Predios rústicos dedicados preponderantemente a fines agropecuarios en producción (previa constancia) y cuyo valor se determinó conforme al 
+- `rustico_valor_real_fiscal_ley_hacienda_municipal` — apar=1, munis=1, años=1, vals=0.2
+  - desc: Predios cuyo valor real se determine en términos de la Ley de Hacienda Municipal del Estado de Jalisco (del terreno y las construcciones en 
+- `rustico_valor_real_determinado_inciso_a` — apar=1, munis=1, años=1, vals=0.2
+  - desc: Predios rústicos: Para predios, cuyo valor real se determine... sobre el valor fiscal determinado (inciso a)
+- `rustico_cerril_improductivo_o_eriazo_inciso_b` — apar=1, munis=1, años=1, vals=0.8
+  - desc: Predios rústicos clasificados como cerril improductivo o eriazo... (inciso b)
+- `rustico_agropecuario_en_produccion_valor_conforme_incisos_anteriores` — apar=1, munis=1, años=1, vals=0.8
+  - desc: Predios rústicos dedicados preponderantemente a fines agropecuarios en producción (previa constancia) y cuyo valor se determinó conforme al 
+- `rustico_valuado_catastro_o_traslativa_con_valores_anteriores_2000` — apar=1, munis=1, años=1, vals=1.5
+  - desc: Predios rústicos: Para predios valuados en los términos de la Ley de Catastro Municipal del Estado de Jalisco o cuyo valor se haya determina
+- `rustico_base_fiscal_registrada_tasa_transitoria_10_millar` — apar=1, munis=1, años=1, vals=10.0
+  - desc: Predios Rústicos. Predios en general que han venido tributando con tasas diferentes a las contenidas en este artículo, sobre la base fiscal 
+- `rustico_agropecuario_produccion_valor_parrafo_anterior` — apar=1, munis=1, años=1, vals=0.8
+  - desc: Predios rústicos dedicados preponderantemente a fines agropecuarios en producción (previa constancia), cuyo valor se determinó conforme al i
+- `rustico_valuados_ley_catastro_o_traslativa_pre_2000` — apar=1, munis=1, años=1, vals=1.5
+  - desc: Predios rústicos: para predios valuados en los términos de la Ley de Catastro del Estado de Jalisco o cuyo valor se haya determinado en cual
+- `rustico_valuado_catastro_o_traslativa_dominio_valores_anteriores_2000` — apar=1, munis=1, años=1, vals=1.5
+  - desc: Predios rústicos valuados en los términos de la Ley de Catastro del Estado de Jalisco o cuyo valor se haya determinado en operación traslati
+- `rustico_valor_real_determinado_leyes_hacienda_y_catastro` — apar=1, munis=1, años=1, vals=0.22
+  - desc: Para predios cuyo valor real se determine en los términos de las Leyes de Hacienda y de Catastro Municipales del Estado de Jalisco, sobre el
+- `rustico_valor_fiscal_determinado_lh_em_jalisco` — apar=1, munis=1, años=1, vals=0.2
+  - desc: Predios rústicos: para predios cuyo valor real se determine en los términos de la Ley de Hacienda Municipal del Estado de Jalisco (del terre
+- `rustico_valor_fiscal_determinado_lh_municipal` — apar=1, munis=1, años=1, vals=0.2
+  - desc: Predios rústicos... sobre el valor fiscal determinado, el: 0.2 (tasa bimestral al millar).
+- `construcciones_en_predios_rusticos_aplica_tasa_inciso_a` — apar=1, munis=1, años=1, vals=1.5
+  - desc: Construcciones localizadas en predios rústicos: se les aplicará la tasa consignada en el inciso a)
+- `rustico_valor_fiscal_lhmmj` — apar=1, munis=1, años=1, vals=0.2
+  - desc: Predios rústicos cuyo valor real se determine en los términos de la Ley de Hacienda Municipal del Estado de Jalisco (del terreno y las const
+- `rustico_valuado_catastro_o_traslativa_anteriores_2000` — apar=1, munis=1, años=1, vals=1.5
+  - desc: Predios rústicos: valuados en términos de la Ley de Catastro Municipal del Estado de Jalisco o cuyo valor se haya determinado en operación t
+- `rusticos_valuados_ley_catastro_o_traslativa_pre_2000` — apar=1, munis=1, años=1, vals=1.5
+  - desc: Predios rústicos valuados en términos de la Ley de Catastro Municipal del Estado de Jalisco o cuyo valor se haya determinado en operación tr
+- `rusticos_agropecuarios_en_produccion_valor_conforme_inciso_a` — apar=1, munis=1, años=1, vals=0.8
+  - desc: Predios rústicos dedicados preponderantemente a fines agropecuarios en producción (cuyo valor se determinó conforme al inciso a)
+- `rusticos_valor_real_ley_hacienda_municipal_inciso_d` — apar=1, munis=1, años=1, vals=0.2
+  - desc: Predios rústicos: para predios cuyo valor real se determine en los términos de la Ley de Hacienda Municipal del Estado de Jalisco, sobre el 
+- `rustico_valor_real_catastro_operacion_valor_minimo` — apar=1, munis=1, años=1, vals=1.5
+  - desc: Predios rústicos: Para predio cuyo valor real se determine en los términos de la Ley de Catastro del Estado de Jalisco o cuyo valor se haya 
+- `rustico_valor_fiscal_determinado_lhmun_jalisco` — apar=1, munis=1, años=1, vals=0.2
+  - desc: Predios (rústicos) cuyo valor real se determine en términos de la Ley de Hacienda Municipal del Estado de Jalisco, sobre el valor fiscal det
+- `rustico_valuados_o_traslativa_valores_anteriores_2000_1_50` — apar=1, munis=1, años=1, vals=1.5
+  - desc: Predios rústicos valuados en los términos de la Ley de Catastro del Estado de Jalisco o cuyo valor se haya determinado en cualquier operació
+- `rustico_agropecuario_en_produccion_valores_anteriores_2000_0_80` — apar=1, munis=1, años=1, vals=0.8
+  - desc: Predios rústicos dedicados preponderantemente a fines agropecuarios en producción (con constancia), cuyo valor se determinó conforme a valor
+- `rustico_valor_real_determinado_ley_hacienda_0_20` — apar=1, munis=1, años=1, vals=0.2
+  - desc: Predios cuyo valor real se determine en los términos de la Ley de Hacienda Municipal del Estado de Jalisco, sobre el valor fiscal determinad
+- `rustico_base_fiscal_registrada_tasas_diferentes_10_al_millar` — apar=1, munis=1, años=1, vals=10.0
+  - desc: Predios en general que han venido tributando con tasas diferentes a las contenidas en este artículo, sobre la base fiscal registrada
+- `rustico_valor_fiscal_determinado_0_23_al_millar` — apar=1, munis=1, años=1, vals=0.23
+  - desc: Para predios cuyo valor real se determine en los términos de las Leyes de Hacienda y de Catastro Municipales del Estado de Jalisco (del terr
+- `rustico_valuados_o_traslativa_antes_2000` — apar=1, munis=1, años=1, vals=1.5
+  - desc: Predios rústicos valuados en los términos de la Ley de Catastro del Estado de Jalisco o cuyo valor se haya determinado en operación traslati
+- `predios_rusticos_valor_fiscal_determinado_ley_hacienda` — apar=1, munis=1, años=1, vals=0.23
+  - desc: Predios rústicos cuyo valor real se determine en los términos de la Ley de Hacienda Municipal del Estado de Jalisco (del terreno y las const
+- `rustico_valuado_pre2000` — apar=1, munis=1, años=1, vals=1.5
+  - desc: Para predios valuados en los términos de la Ley de Catastro del Estado de Jalisco o cuyo valor se haya determinado en cualquier operación tr
+- `rustico_agropecuario_en_produccion_pre2000` — apar=1, munis=1, años=1, vals=0.8
+  - desc: Predios rústicos dedicados preponderantemente a fines agropecuarios en producción (valor conforme inciso a), sobre el valor determinado
+- `rustico_valor_real_determinado_ley_hacienda_y_catastro` — apar=1, munis=1, años=1, vals=0.23
+  - desc: Para predios rústicos cuyo valor real se determine ... sobre el valor fiscal determinado
+- `rustico_valor_fiscal_lhmunicipal` — apar=1, munis=1, años=1, vals=0.2
+  - desc: Predios cuyo valor real se determine en los términos de la Ley de Hacienda Municipal del Estado de Jalisco (del terreno y las construcciones
+- `predios_rusticos_valor_fiscal_determinado_lhm` — apar=1, munis=1, años=1, vals=0.23
+  - desc: Predios rústicos: Para predios cuyo valor real se determine ... sobre el valor fiscal determinado, el: 0.23
+- `cerril_improductivo_o_eriazo_valor_determinado_lhmj` — apar=1, munis=1, años=1, vals=0.8
+  - desc: Predios rústicos clasificados como cerril improductivo o eriazo, cuyo valor se determine en los términos de la Ley de Hacienda Municipal del
+- `predios_rusticos_valor_real_terreno_y_construcciones_sobre_valor_fiscal` — apar=1, munis=1, años=1, vals=0.2
+  - desc: Predios rústicos cuyo valor real se determine (del terreno y las construcciones en su caso), sobre el valor fiscal determinado
+- `rustico_valorados_catastro_o_traslativa_valores_antes_2000` — apar=1, munis=1, años=1, vals=1.6
+  - desc: II. a) Predios rústicos valuados en los términos de la Ley de Catastro del Estado de Jalisco o cuyo valor se haya determinado en cualquier o
+- `rustico_agropecuario_en_produccion_valores_antes_2000` — apar=1, munis=1, años=1, vals=0.85
+  - desc: II. b) Predios rústicos dedicados preponderantemente a fines agropecuarios en producción (previa constancia) y cuyo valor se determinó confo
+- `rustico_valor_real_lhmemj` — apar=1, munis=1, años=1, vals=0.2
+  - desc: Para predios cuyo valor real se determine en los términos de la Ley de Hacienda Municipal del Estado de Jalisco (del terreno y las construcc
+- `rustico_valor_fiscal_determinado_general` — apar=1, munis=1, años=1, vals=0.2
+  - desc: Predios rústicos, cuyo valor real se determine en los términos de la Ley de Hacienda Municipal del Estado de Jalisco, sobre el valor fiscal 
+- `rustico_valor_fiscal_determinado_0_24` — apar=1, munis=1, años=1, vals=0.24
+  - desc: Predios rústicos: Para predios cuyo valor real se determine en los términos de la Ley de Hacienda Municipal del Estado de Jalisco, sobre el 
+- `rustico_base_fiscal_registrada_tasa_diferente_10_millar` — apar=1, munis=1, años=1, vals=10.0
+  - desc: Predios en general que han venido tributando con tasas diferentes a las contenidas en este artículo, sobre la base fiscal registrada
+- `rustico_valor_real_determinado_ley_hacienda_inciso_b` — apar=1, munis=1, años=1, vals=0.23
+  - desc: Predios rústicos cuyo valor real se determine ... sobre el valor fiscal determinado (inciso b)
+- `rustico_valor_real_ii_d` — apar=1, munis=1, años=1, vals=0.2
+  - desc: II. Predios rústicos, d) Para predios cuyo valor real se determine... (del terreno y las construcciones en su caso), sobre el valor fiscal d
+- `rustico_valor_real_terreno_y_construcciones_valor_fiscal_determinado` — apar=1, munis=1, años=1, vals=0.2
+  - desc: Predios rústicos cuyo valor real se determine (del terreno y las construcciones en su caso), sobre el valor fiscal determinado
+- `rustico_construcciones_sin_valuacion` — apar=1, munis=1, años=1, vals=0.8
+  - desc: Para efectos de la determinación del impuesto en las construcciones localizadas en predios rústicos (inciso a)
+- `rusticos_valor_fiscal_ley_hacienda_municipal` — apar=1, munis=1, años=1, vals=0.2
+  - desc: Predios rústicos: para predios cuyo valor real se determine en los términos de la Ley de Hacienda Municipal del Estado de Jalisco (del terre
+- `rusticos_valuados_ley_catastro_o_traslativa_anteriores_2000` — apar=1, munis=1, años=1, vals=1.5
+  - desc: Para predios valuados en los términos de la Ley de Catastro del Estado de Jalisco o cuyo valor se haya determinado en cualquier operación tr
+- `rusticos_agropecuarios_en_produccion_valor_determinado_como_inciso_a` — apar=1, munis=1, años=1, vals=0.8
+  - desc: Predios rústicos dedicados preponderantemente a fines agropecuarios en producción (previa constancia) y cuyo valor se determinó conforme al 
+- `rustico_agropecuario_en_produccion_valor_determinado_conforme_catastro` — apar=1, munis=1, años=1, vals=0.85
+  - desc: Predios rústicos... dedicados preponderantemente a fines agropecuarios en producción... él: 0.85
+- `rustico_valor_fiscal_determinado_conforme_ley_hacienda` — apar=1, munis=1, años=1, vals=0.23
+  - desc: Para predios cuyo valor real se determine en los términos de la Ley de Hacienda Municipal del Estado de Jalisco... sobre el valor fiscal det
+- `rustico_valor_antes_2000_tasa_15_millar_mas_cuota_fija_24` — apar=1, munis=1, años=1, vals=15.0
+  - desc: Predios rústicos valuados en los términos de la Ley de Catastro del Estado de Jalisco o cuyo valor se haya determinado en cualquier operació
+- `rustico_agropecuario_en_produccion_valor_antes_2000_tasa_0_8_millar_mas_cuota_fija_24` — apar=1, munis=1, años=1, vals=0.8
+  - desc: Predios rústicos dedicados preponderantemente a fines agropecuarios en producción (valor determinado conforme a valores anteriores al año 20
+- `construcciones_en_predios_rusticos_aplica_tasa_inciso_b_0_8_millar_mas_cuota_fija_24` — apar=1, munis=1, años=1, vals=0.8
+  - desc: Construcciones localizadas en predios rústicos: se aplicará la tasa consignada en el inciso b)
+- `rustico_valor_real_determinado_lhmj_tasa_0_2_millar` — apar=1, munis=1, años=1, vals=0.2
+  - desc: Predios (rústicos, conforme al contexto de la fracción II) cuyo valor real se determine en los términos de la Ley de Hacienda Municipal del 
+- `rustico_valor_anterior_2000_catastro_o_traslativa` — apar=1, munis=1, años=1, vals=1.5
+  - desc: Para predios valuados en los términos de la Ley de Catastro del Estado de Jalisco o cuyo valor se haya determinado en cualquier operación tr
+- `rustico_valor_catastro_operacion_valor_minimo` — apar=1, munis=1, años=1, vals=1.5
+  - desc: Predios rústicos: para predio cuyo valor real se determine en los términos de la Ley de Catastro del Estado de Jalisco o cuyo valor se haya 
+- `rustico_valorados_ley_catastro_o_traslativa_dominio_valores_anteriores_2000` — apar=1, munis=1, años=1, vals=1.5
+  - desc: Para predios valuados en los términos de la Ley de Catastro del Estado de Jalisco o cuyo valor se haya determinado en cualquier operación tr
+- `rusticos_transitorio_base_fiscal_registrada` — apar=1, munis=1, años=1, vals=10.0
+  - desc: Predios en general que han venido tributando con tasas diferentes a las contenidas en este artículo, sobre la base fiscal registrada
+- `rustico_agropecuario_produccion_valor_antes_2000` — apar=1, munis=1, años=1, vals=0.8
+  - desc: Predios rústicos dedicados preponderantemente a fines agropecuarios en producción (previa constancia) y cuyo valor se determinó conforme al 
+- `rustico_construcciones_en_predios_rusticos_tasa_inciso_d` — apar=1, munis=1, años=1, vals=0.22
+  - desc: Construcciones localizadas en predios rústicos: se les aplicará la tasa consignada en el inciso d)
+- `rustico_valor_real_determinado_lhmunicipal` — apar=1, munis=1, años=1, vals=0.2
+  - desc: Predios rústicos: para predios cuyo valor real se determine en los términos de la Ley de Hacienda Municipal del Estado de Jalisco (del terre
+- `rustico_valor_fiscal_determinado_normativa` — apar=1, munis=1, años=1, vals=0.22
+  - desc: Predios rústicos (sobre el valor fiscal determinado)
+- `rustico_agropecuario_produccion_mismo_valor_parrafo_anterior` — apar=1, munis=1, años=1, vals=0.8
+  - desc: Predios rústicos dedicados preponderantemente a fines agropecuarios en producción (previa constancia) y cuyo valor se determinó conforme al 
+- `construcciones_en_predios_rusticos_misma_tasa_inciso_a` — apar=1, munis=1, años=1, vals=9.85
+  - desc: Construcciones localizadas en predios rústicos (se aplicará la tasa consignada en el inciso a))
+- `rusticos_valor_real_valor_fiscal_determinado_0_21` — apar=1, munis=1, años=1, vals=0.21
+  - desc: Predios rústicos: Para predios cuyo valor real se determine en los términos de la Ley de Hacienda Municipal del Estado de Jalisco, sobre el 
+- `rusticos_valor_real_determinado_lhmej` — apar=1, munis=1, años=1, vals=0.2
+  - desc: Predios rústicos: Para predios cuyo valor real se determine en los términos de la Ley de Hacienda Municipal del Estado de Jalisco, sobre el 
+- `rustico_valor_real_lhmunicipal` — apar=1, munis=1, años=1, vals=0.2
+  - desc: Predios rústicos: Para predios cuyo valor real se determine en los términos de la Ley de Hacienda Municipal del Estado de Jalisco (del terre
+- `rustico_valuados_o_traslativa_valores_anteriores_2000` — apar=1, munis=1, años=1, vals=1.5
+  - desc: Predios rústicos: Para predios valuados en los términos de la Ley de Catastro del Estado de Jalisco o cuyo valor se haya determinado en cual
+- `rusticos_valuados_catastro_o_traslativa_anteriores_2000` — apar=1, munis=1, años=1, vals=1.5
+  - desc: Predios rústicos: Para predios valuados en los términos de la Ley de Catastro del Estado de Jalisco o cuyo valor se haya determinado en cual
+- `rusticos_base_fiscal_registrada_tasa_diferente_10_millar` — apar=1, munis=1, años=1, vals=10.0
+  - desc: Predios en general que han venido tributando con tasas diferentes a las contenidas en este artículo, sobre la base fiscal registrada
+- `rusticos_valor_real_determinado_0_23_millar` — apar=1, munis=1, años=1, vals=0.23
+  - desc: Para predios cuyo valor real se determine en los términos de las Leyes de Hacienda y de Catastro Municipales del Estado de Jalisco (del terr
+- `rustico_avaluados_ley_catastro_o_valor_determinado_150_operacion_antes_2000` — apar=1, munis=1, años=1, vals=2.0
+  - desc: Predios rústicos: a) Para predios valuados en los términos de la Ley de Catastro del Estado de Jalisco o cuyo valor se haya determinado en 1
+- `rustico_agropecuario_en_produccion_previa_constancia` — apar=1, munis=1, años=1, vals=8.0
+  - desc: Predios rústicos (definición Ley de Catastro Municipal) dedicados preponderantemente a fines agropecuarios en producción, previa constancia 
+- `rusticos_valor_real_determinado_lhm` — apar=1, munis=1, años=1, vals=0.2
+  - desc: Predios cuyo valor real se determine en los términos de la Ley de Hacienda Municipal del Estado de Jalisco (del terreno y las construcciones
+- `rustico_construcciones_tasa_inicial_sin_valuacion` — apar=1, munis=1, años=1, vals=0.8
+  - desc: Para efectos de la determinación del impuesto en las construcciones localizadas en predios rústicos, en tanto no se hubiese practicado la va
+- `construcciones_en_predios_rusticos_tasa_inciso_d_urbanos` — apar=1, munis=1, años=1, vals=0.16
+  - desc: Construcciones localizadas en predios rústicos: se les aplicará la tasa consignada en el inciso D) (remisión)
+- `rusticos_valor_fiscal_determinado_0_206` — apar=1, munis=1, años=1, vals=0.206
+  - desc: Predios rústicos: para predios cuyo valor real se determine (del terreno y las construcciones en su caso), sobre el valor fiscal determinado
+- `construcciones_en_predios_rusticos_tasa_b` — apar=1, munis=1, años=1, vals=0.8
+  - desc: Para efectos de la determinación del impuesto en las construcciones localizadas en predios rústicos, se les aplicará la tasa consignada en e
+- `rustico_valor_fiscal_determinado_20_06_por_ciento` — apar=1, munis=1, años=1, vals=0.2006
+  - desc: Predios rústicos: sobre el valor fiscal determinado
+- `rustico_valor_fiscal_determinado_ley_hacienda_municipal_ii_a` — apar=1, munis=1, años=1, vals=0.2
+  - desc: Predios rústicos: Para predios cuyo valor real se determine en los términos de la Ley de Hacienda Municipal del Estado de Jalisco (del terre
+- `rustico_valuado_catastro_o_operacion_traslativa_valores_anteriores_2000` — apar=1, munis=1, años=1, vals=0.65
+  - desc: Para predios valuados en los términos de la Ley de Catastro del Estado de Jalisco o cuyo valor se haya determinado en cualquier operación tr
+- `rustico_inciso_a_valorados_ley_catastro_o_valores_anteriores_2000` — apar=1, munis=1, años=1, vals=1.5
+  - desc: I. Predios Rústicos. a) Para predios valuados en los términos de la Ley de Catastro Municipal del Estado de Jalisco o cuyo valor se haya det
+- `rustico_inciso_b_valor_real_ley_hacienda_municipal` — apar=1, munis=1, años=1, vals=0.2
+  - desc: I. Predios Rústicos. b) Para predios cuyo valor real se determine en los términos de la Ley de Hacienda Municipal del Estado de Jalisco, sob
+- `rustico_inciso_c_agropecuarios_en_produccion_tasa_preferente` — apar=1, munis=1, años=1, vals=0.8
+  - desc: I. Predios Rústicos. c) Tratándose de predios rústicos ... dedicados a fines agropecuarios en producción, y cuyo valor real se determine con
+- `rustico_valor_real_inciso_a` — apar=1, munis=1, años=1, vals=0.2
+  - desc: Predios rústicos: a) Para predios, cuyo valor real se determine... sobre el valor fiscal determinado, el: 0.2
+- `rustico_cerril_improductivo_eriazo_inciso_b` — apar=1, munis=1, años=1, vals=0.83
+  - desc: Predios rústicos... clasificados como cerril improductivo o eriazo... el: 0.83
+- `rustico_valuados_o_traslativa_anteriores_2000` — apar=1, munis=1, años=1, vals=1.5
+  - desc: Para predios valuados en los términos de la Ley de Catastro del Estado de Jalisco o cuyo valor se haya determinado en cualquier operación tr
+- `rustico_base_fiscal_registrada_tributando_tasas_diferentes` — apar=1, munis=1, años=1, vals=10.0
+  - desc: Predios en general que han venido tributando con tasas diferentes a las contenidas en este artículo, sobre la base fiscal registrada
+- `rustico_valorados_ley_catastro_o_1_5_traslativa_dominio_valores_anteriores_2000` — apar=1, munis=1, años=1, vals=0.8
+  - desc: II. Predios rústicos, inciso a) (valuados en términos de la Ley de Catastro del Estado de Jalisco o cuyo valor se haya determinado en 1.5% c
+- `rustico_agropecuario_produccion_constancia_inciso_a` — apar=1, munis=1, años=1, vals=0.8
+  - desc: II. Predios rústicos, inciso b) (dedicados preponderantemente a fines agropecuarios en producción, previa constancia; cuyo valor se determin
+- `rustico_valor_real_determinado_lhmj_terreno_y_construcciones` — apar=1, munis=1, años=1, vals=0.2
+  - desc: Para predios cuyo valor real se determine en los términos de la Ley de Hacienda Municipal del Estado de Jalisco (del terreno y las construcc
+- `rustico_construcciones_sin_valuacion_0_80_millar_mas_cuota_fija` — apar=1, munis=1, años=1, vals=0.8
+  - desc: Construcciones localizadas en predios rústicos (inciso a), tasa de 0.80; se adicionará una cuota fija de $19.00 bimestrales.
+- `rustico_valor_determinado_ley_hacienda_0_23_millar_mas_cuota_fija` — apar=1, munis=1, años=1, vals=0.23
+  - desc: Predios rústicos (inciso b): sobre el valor fiscal determinado (terreno y construcciones en su caso), el 0.23; la cuota fija será de $5.00 b
+- `rustico_valor_real_determinado_lhmm` — apar=1, munis=1, años=1, vals=0.2
+  - desc: Predios cuyo valor real se determine en términos de la Ley de Hacienda Municipal del Estado de Jalisco
+- `rustico_valor_real_lhmunicipal_terreno_y_construcciones` — apar=1, munis=1, años=1, vals=0.13
+  - desc: Para predios cuyo valor real se determine en los términos de la Ley de Hacienda Municipal del Estado de Jalisco (del terreno y las construcc
+- `rustico_edificados_no_edificados_valor_excede_760000` — apar=1, munis=1, años=1, vals=0.5
+  - desc: Para predios edificados y no edificados cuyo valor exceda los $760,000.00
+- `rusticos_valor_fiscal_determinado_lhm` — apar=1, munis=1, años=1, vals=0.206
+  - desc: Predios rústicos (valor real determinado en términos de la Ley de Hacienda Municipal del Estado de Jalisco), sobre el valor fiscal determina
+- `construcciones_localizadas_en_predios_rusticos` — apar=1, munis=1, años=1, vals=0.8
+  - desc: Predios rústicos: Para efectos de la determinación del impuesto en las construcciones localizadas en predios rústicos, se les aplicará la ta
+- `predios_rusticos_valor_real_determinado_sobre_valor_fiscal` — apar=1, munis=1, años=1, vals=0.23
+  - desc: Predios rústicos: Para predios cuyo valor real se determine... sobre el valor fiscal determinado, el: 0.23; la cuota fija será de $14.70 bim
+- `rustico_cerril_improductivo_o_erlazo` — apar=1, munis=1, años=1, vals=0.8
+  - desc: Predios rústicos clasificados como cerril improductivo o erlazo, cuyo valor se determine en los términos de la Ley de Hacienda Municipal del
+- `rusticos_valor_fiscal_general` — apar=1, munis=1, años=1, vals=22.0
+  - desc: Predios rústicos; sobre el valor fiscal determinado, el: 22
+- `rustico_valor_real_determinado_ley_hacienda_sobre_valor_fiscal_determinado` — apar=1, munis=1, años=1, vals=0.23
+  - desc: Predios rústicos: predios cuyo valor real se determine en términos de la Ley de Hacienda Municipal del Estado de Jalisco, sobre el valor fis
+- `rustico_valores_anteriores_2000_2pct_millar` — apar=1, munis=1, años=1, vals=0.02
+  - desc: Para predios valuados en los términos de la Ley de Catastro del Estado de Jalisco o cuyo valor se haya determinado en cualquier operación tr
+- `rustico_agropecuario_en_produccion_0_80_millar` — apar=1, munis=1, años=1, vals=0.8
+  - desc: Predios rústicos dedicados preponderantemente a fines agropecuarios en producción (previa constancia) y cuyo valor se determinó conforme al 
+- `rustico_valor_real_ley_hacienda_0_20pct_millar` — apar=1, munis=1, años=1, vals=0.002
+  - desc: Para predios cuyo valor real se determine en los términos de la Ley de Hacienda Municipal del Estado de Jalisco, sobre el valor fiscal deter
+- `rustico_valor_real_catastro_o_tablas_valor_fiscal_minimo` — apar=1, munis=1, años=1, vals=1.5
+  - desc: Predio rústico cuyo valor real se determine en los términos de la Ley de Catastro del Estado de Jalisco o cuyo valor se haya determinado en 
+- `rustico_base_fiscal_registrada_tasas_diferentes` — apar=1, munis=1, años=1, vals=10.0
+  - desc: Predios en general que han venido tributando con tasas diferentes a las contenidas en este artículo, sobre la base fiscal registrada
+- `rustico_valorados_catastro_o_traslativa_valores_anteriores_2000` — apar=1, munis=1, años=1, vals=0.8
+  - desc: Predios rústicos valuados en los términos de la Ley de Catastro del Estado de Jalisco o cuyo valor se haya determinado en cualquier operació
+- `cerril_improductivo_o_erialazo_valor_determinado` — apar=1, munis=1, años=1, vals=0.5
+  - desc: Predios rústicos clasificados como cerril improductivo o eriazo, cuyo valor se determine en los términos de la Ley de Hacienda Municipal del
+- `rusticos_agropecuarios_en_produccion_valor_real_parrafo_anterior` — apar=1, munis=1, años=1, vals=0.8
+  - desc: Predios rústicos, dedicados preponderantemente a fines agropecuarios en producción (previa constancia), cuyo valor se determinó conforme al 
+- `rusticos_valor_real_ley_hacienda` — apar=1, munis=1, años=1, vals=0.2
+  - desc: Predios rústicos cuyo valor real se determine en los términos de la Ley de Hacienda Municipal del Estado de Jalisco (del terreno y las const
+- `rusticos_agropecuarios_en_produccion_valor_pre_2000` — apar=1, munis=1, años=1, vals=0.8
+  - desc: Predios rústicos dedicados preponderantemente a fines agropecuarios en producción (con constancia) y cuyo valor se determinó conforme al pár
+- `rustico_agropecuarios_en_produccion_tasa_preferente` — apar=1, munis=1, años=1, vals=0.8
+  - desc: Tratándose de predios rústicos dedicados a fines agropecuarios en producción, y cuyo valor real se determine conforme al inciso b), tasa pre
+- `rusticos_valor_real` — apar=1, munis=1, años=1, vals=0.21
+  - desc: Predios rústicos: sobre el valor fiscal determinado
+- `rusticos_valuados_con_valores_anteriores_2000_0_20_millar` — apar=1, munis=1, años=1, vals=0.2
+  - desc: Predios rústicos: a) Para predios valuados en los términos de la Ley de Catastro Municipal del Estado de Jalisco o cuyo valor se haya determ
+- `rusticos_valor_real_ley_hacienda_municipal_1_8_millar` — apar=1, munis=1, años=1, vals=1.8
+  - desc: Predios rústicos: b) Para predios cuyo valor real se determine en los términos de la Ley de Hacienda Municipal del Estado de Jalisco (del te
+- `rustico_valor_fiscal_determinado_lhmemj` — apar=1, munis=1, años=1, vals=0.2
+  - desc: Predios rústicos: Para predios cuyo valor real se determine en los términos de la Ley de Hacienda Municipal del Estado de Jalisco (del terre
+- `rusticos_valor_real_determinado_lh_municipal` — apar=1, munis=1, años=1, vals=0.22
+  - desc: Predios rústicos: Para predios cuyo valor real se determine en los términos de la Ley de Hacienda Municipal del Estado de Jalisco, sobre el 
+- `rustico_valor_real_ley_catastro_o_minimo` — apar=1, munis=1, años=1, vals=1.5
+  - desc: Predio rústico cuyo valor real se determine en los términos de la Ley de Catastro del Estado de Jalisco o cuyo valor se haya determinado en 
+- `rustico_valores_anteriores_2000_agropecuario_produccion` — apar=1, munis=1, años=1, vals=0.82
+  - desc: Predios rústicos... dedicados preponderantemente a fines agropecuarios en producción... (inciso b)
+- `predios_en_general_tasas_diferentes_base_fiscal_registrada` — apar=1, munis=1, años=1, vals=10.0
+  - desc: Predios en general que han venido tributando con tasas diferentes a las contenidas en este artículo, sobre la base fiscal registrada
+- `rustico_construcciones_tasa_0_80_millar` — apar=1, munis=1, años=1, vals=0.8
+  - desc: Construcciones localizadas en predios rústicos (inciso a)
+- `rustico_valor_real_determinado_lhm_0_23_millar` — apar=1, munis=1, años=1, vals=0.23
+  - desc: Predios cuyo valor real se determine en los términos de la Ley de Hacienda Municipal del Estado de Jalisco, sobre el valor fiscal determinad
+- `rusticos_valor_real_lhmj` — apar=1, munis=1, años=1, vals=2.0
+  - desc: Predios cuyo valor real se determine en los términos de la Ley de Hacienda Municipal del Estado de Jalisco (del terreno y las construcciones
+- `rustico_construcciones_en_rusticos` — apar=1, munis=1, años=1, vals=0.8
+  - desc: Para efectos de la determinación del impuesto en las construcciones localizadas en predios rústicos, se les aplicará la tasa consignada en e
+- `construcciones_en_predios_rusticos_aplica_tasa_b` — apar=1, munis=1, años=1, vals=0.8
+  - desc: II c) Construcciones localizadas en predios rústicos: se les aplicará la tasa consignada en el inciso b)
+- `rustico_valor_real_ley_hacienda_municipal_tasa_0_28_al_millar` — apar=1, munis=1, años=1, vals=0.28
+  - desc: Predios rústicos cuyo valor real se determine en los términos de la Ley de Hacienda Municipal del Estado de Jalisco (del terreno y las const
+- `rustico_valor_real_ley_hacienda_municipal_cuota_fija_14_90` — apar=1, munis=1, años=1, vals=0.0
+  - desc: Predios rústicos cuyo valor real se determine en los términos de la Ley de Hacienda Municipal del Estado de Jalisco (del terreno y las const
+- `predios_rusticos_preponderantemente_agropecuarios_en_produccion` — apar=1, munis=1, años=1, vals=0.82
+  - desc: Predios rústicos dedicados preponderantemente a fines agropecuarios en producción
+- `rusticos_base_fiscal_registrada_tasa_diferente_10_al_millar` — apar=1, munis=1, años=1, vals=10.0
+  - desc: Predios en general que han venido tributando con tasas diferentes a las contenidas en este artículo, sobre la base fiscal registrada
+- `rusticos_valor_fiscal_determinado_023_al_millar` — apar=1, munis=1, años=1, vals=0.23
+  - desc: Para predios cuyo valor real se determine en los términos de las Leyes de Hacienda y de Catastro Municipales del Estado de Jalisco (del terr
+- `predios_rusticos_valorados_o_anteriores_2000` — apar=1, munis=1, años=1, vals=1.0
+  - desc: Predios rústicos, sobre el valor determinado
+- `predios_rusticos_agropecuarios_en_produccion` — apar=1, munis=1, años=1, vals=0.8
+  - desc: Predios rústicos dedicados preponderantemente a fines agropecuarios en producción
+- `rustico_construcciones_en_predios_rusticos_tasa_incisio_a` — apar=1, munis=1, años=1, vals=0.8
+  - desc: Para efectos de la determinación del impuesto en las construcciones localizadas en predios rústicos (inciso a)
+- `rustico_valor_fiscal_determinado_ley_hacienda_incisio_b` — apar=1, munis=1, años=1, vals=0.23
+  - desc: Para predios cuyo valor real se determine en los términos de la Ley de Hacienda Municipal del Estado de Jalisco, sobre el valor fiscal deter
+- `rusticos_valor_real_lhmj_terreno_y_construcciones` — apar=1, munis=1, años=1, vals=0.13
+  - desc: Predios rústicos cuyo valor real se determine en los términos de la Ley de Hacienda Municipal del Estado de Jalisco (del terreno y las const
+- `construcciones_en_predios_rusticos_misma_tasa_que_inciso_c` — apar=1, munis=1, años=1, vals=0.13
+  - desc: Construcciones localizadas en predios rústicos: se aplica la tasa consignada en el inciso c)
+- `rustico_valor_real_determinado_leyes_hacienda_catastro` — apar=1, munis=1, años=1, vals=0.26
+  - desc: Para predios cuyo valor real se determine en los términos de las Leyes de Hacienda y de Catastro Municipales del Estado de Jalisco, sobre el
+- `rusticos_valor_fiscal_determinado_lhmemj` — apar=1, munis=1, años=1, vals=0.25
+  - desc: Predios rústicos: Para predios cuyo valor real se determine en los términos de la Ley de Hacienda Municipal del Estado de Jalisco, sobre el 
+- `predios_rusticos_sobre_valor_fiscal_determinado` — apar=1, munis=1, años=1, vals=0.2
+  - desc: Predios rústicos: Para predios, cuyo valor real se determine ... sobre el valor fiscal determinado, el:
+- `rusticos_valor_fiscal_determinado_inciso_a` — apar=1, munis=1, años=1, vals=0.21
+  - desc: Predios rústicos: Para predios cuyo valor real se determine... sobre el valor fiscal determinado
+- `rustico_valuado_catastro_o_valor_determinado_operacion_traslativa_anteriores_2000` — apar=1, munis=1, años=1, vals=1.5
+  - desc: Predios rústicos: a) Para predios valuados en los términos de la Ley de Catastro del Estado de Jalisco o cuyo valor se haya determinado con 
+- `rustico_valores_anteriores_2000_o_traslativa_dominio` — apar=1, munis=1, años=1, vals=15.0
+  - desc: Predios rústicos valuados en los términos de la Ley de Catastro Municipal del Estado de Jalisco o cuyo valor se haya determinado en cualquie
+- `rustico_agropecuario_produccion_valor_real_inciso_b` — apar=1, munis=1, años=1, vals=0.8
+  - desc: Predios rústicos dedicados a fines agropecuarios en producción (valor real conforme al inciso b))
+- `rustico_valor_fiscal_minimo_tablas_operacion` — apar=1, munis=1, años=1, vals=15.0
+  - desc: Predios rústicos: valor real en términos de la Ley de Catastro del Estado de Jalisco o valor determinado en operación traslativa de dominio 
+- `rustico_general_valor_fiscal` — apar=1, munis=1, años=1, vals=2.0
+  - desc: Predios rústicos: sobre el valor fiscal determinado, el 0.2% (bimestral). A la cantidad que resulte se le adicionará una cuota fija de $5.00
+- `rustico_valuados_catastro_o_valor_150_operacion_traslativa_antes_2000` — apar=1, munis=1, años=1, vals=0.2
+  - desc: Predios rústicos valuados en los términos de la Ley de Catastro del Estado de Jalisco o cuyo valor se haya determinado en 150% cualquier ope
+- `rustico_agropecuario_en_produccion_valor_determinado_inciso_a` — apar=1, munis=1, años=1, vals=0.8
+  - desc: Predios rústicos dedicados preponderantemente a fines agropecuarios en producción (cuyo valor se determinó conforme al inciso a)
+- `rustico_construcciones_en_predio_rustico_sin_valuacion` — apar=1, munis=1, años=1, vals=0.5
+  - desc: Predios rústicos: Para la determinación del impuesto en las construcciones localizadas en predios rústicos, se aplicará la tasa de: 0.50. A 
+- `rustico_valuados_catastro_o_operacion_traslativa_valores_anteriores_2000` — apar=1, munis=1, años=1, vals=1.5
+  - desc: Predios rústicos valuados en los términos de la Ley de Catastro Municipal del Estado de Jalisco o cuyo valor se haya determinado en cualquie
+- `rustico_valor_real_lhm_terreno_construcciones` — apar=1, munis=1, años=1, vals=0.13
+  - desc: Para predios cuyo valor real se determine en los términos de la Ley de Hacienda Municipal del Estado de Jalisco (del terreno y las construcc
+- `rustico_edificados_no_edificados_mas_700000` — apar=1, munis=1, años=1, vals=0.52
+  - desc: Para predios edificados y no edificados cuyo valor exceda los $700,000.00
+- `rustico_valor_fiscal_determinado_sobre_valor_fiscal_determinado` — apar=1, munis=1, años=1, vals=0.23
+  - desc: Predios rústicos: Para predios cuyo valor real se determine... sobre el valor fiscal determinado, el: 0.23. Para el caso del inciso b), la c
+- `rusticos_valor_real_determinado_ley_hacienda` — apar=1, munis=1, años=1, vals=0.21
+  - desc: Predios rústicos: Para predios cuyo valor real se determine en los términos de la Ley de Hacienda Municipal del Estado de Jalisco (del terre
+- `rustico_construcciones_en_rustico_tasa_inciso_b` — apar=1, munis=1, años=1, vals=0.8
+  - desc: Para efectos de la determinación del impuesto en las construcciones localizadas en predios rústicos, se aplicará la tasa consignada en el in
+- `rustico_agropecuario_produccion_valor_determinado` — apar=1, munis=1, años=1, vals=0.8
+  - desc: Predios rústicos dedicados preponderantemente a fines agropecuarios en producción (previa constancia) y cuyo valor se determine conforme al 
+- `rustico_valor_real_determinado_lhm_cuota_fija_y_tasa` — apar=1, munis=1, años=1, vals=0.28
+  - desc: Predios cuyo valor real se determine en los términos de la Ley de Hacienda Municipal del Estado de Jalisco (del terreno y las construcciones
+- `rustico_agropecuario_produccion_preferente` — apar=1, munis=1, años=1, vals=0.8
+  - desc: Predios rústicos dedicados a fines agropecuarios en producción, cuyo valor real se determine conforme al inciso b), tasa preferente
+- `rustico_cerro_improductivo_o_erial` — apar=1, munis=1, años=1, vals=0.91
+  - desc: Predios rústicos clasificados como cerro improductivo o erazo/erial, cuyo valor se determine en los términos de la Ley de Hacienda Municipal
+- `rustico_valuado_catastro_o_operacion_pre_2000` — apar=1, munis=1, años=1, vals=1.5
+  - desc: Para predios valuados en los términos de la Ley de Catastro Municipal del Estado de Jalisco o cuyo valor se haya determinado en cualquier op
+- `rustico_agropecuario_produccion_valor_conforme_parrafo_anterior` — apar=1, munis=1, años=1, vals=0.8
+  - desc: Predios rústicos dedicados preponderantemente a fines agropecuarios en producción (previa constancia), cuyo valor se determinó conforme al p
+- `rustico_valuado_ley_catastro_o_traslativa_dominio_valores_anteriores_2000` — apar=1, munis=1, años=1, vals=1.5
+  - desc: Para predios (rústicos) valuados en los términos de la Ley de Catastro del Estado de Jalisco o cuyo valor se haya determinado en cualquier o
+- `rustico_agropecuario_en_produccion_valor_determinado_parrafo_anterior` — apar=1, munis=1, años=1, vals=0.8
+  - desc: Predios rústicos dedicados preponderantemente a fines agropecuarios en producción, cuyo valor se determinó conforme al párrafo anterior
+- `rustico_valor_real_determinado_lhm_terreno_y_construcciones` — apar=1, munis=1, años=1, vals=0.2
+  - desc: Predios cuyo valor real se determine en los términos de la Ley de Hacienda Municipal del Estado de Jalisco (del terreno y las construcciones
+- `rustico_agropecuario_produccion_constancia_valores_anteriores_2000` — apar=1, munis=1, años=1, vals=0.9
+  - desc: Predios rústicos dedicados preponderantemente a fines agropecuarios en producción (previa constancia) y cuyo valor se determina conforme al 
+- `rustico_valor_real_ley_hacienda_terreno_y_construcciones` — apar=1, munis=1, años=1, vals=0.13
+  - desc: Predios rústicos: c) Para predios cuyo valor real se determine en los términos de la Ley de Hacienda Municipal del Estado de Jalisco (del te
+- `rustico_construcciones_en_predios_rusticos_tasa_inciso_g` — apar=1, munis=1, años=1, vals=0.35
+  - desc: Construcciones localizadas en predios rústicos: se les aplicará la tasa consignada en el inciso g)
+- `rustico_edificados_no_edificados_mas_800000` — apar=1, munis=1, años=1, vals=0.52
+  - desc: Para predios edificados y no edificados cuyo valor exceda los 800,000.00
+- `rustico_a_urbano_tasa_porcentaje` — apar=1, munis=1, años=1, vals=1.0
+  - desc: Los predios en general que se deseen pasar de rústico a urbano... deberán pagar una tasa bimestral del 0.1% más $43.50
+- `rustico_valor_real_fiscal` — apar=1, munis=1, años=1, vals=2.0
+  - desc: Para predios cuyo valor real se determine en los términos de la Ley de Hacienda Municipal del Estado de Jalisco (del terreno y las construcc
+- `rustico_construcciones_tasa_0_25_mas_cuota_fija` — apar=1, munis=1, años=1, vals=0.25
+  - desc: Predios rústicos: construcciones localizadas en predios rústicos (tasa 0.25) + cuota fija bimestral.
+- `rustico_valor_fiscal_determinado_tasa_0_23_mas_cuota_fija` — apar=1, munis=1, años=1, vals=0.23
+  - desc: Predios rústicos: sobre el valor fiscal determinado (tasa 0.23) + cuota fija bimestral.
+- `rustico_valuado_catastro_o_traslativo_valores_anteriores_2000` — apar=1, munis=1, años=1, vals=1.5
+  - desc: Para predios valuados en los términos de la Ley de Catastro del Estado de Jalisco o cuyo valor se haya determinado en cualquier operación tr
+- `rustico_agropecuario_produccion_valor_conforme_inciso_a` — apar=1, munis=1, años=1, vals=0.8
+  - desc: Predios rústicos dedicados preponderantemente a fines agropecuarios en producción, cuyo valor se determinó conforme al párrafo anterior
+- `rustico_valuados_ley_catastro_o_traslativa_anteriores_2000` — apar=1, munis=1, años=1, vals=1.6
+  - desc: Predios rústicos: valuados en los términos de la Ley de Catastro del Estado de Jalisco o cuyo valor se haya determinado en operación traslat
+- `construcciones_en_predios_rusticos_tasa_inciso_a` — apar=1, munis=1, años=1, vals=1.5
+  - desc: Construcciones localizadas en predios rústicos: se aplicará la tasa consignada en el inciso a)
+- `rustico_sobre_valor_fiscal_determinado` — apar=1, munis=1, años=1, vals=0.2
+  - desc: Predios rústicos: para predios cuyo valor real se determine en los términos de la Ley de Hacienda Municipal del Estado de Jalisco, sobre el 
+- `rusticos_valores_anteriores_2024` — apar=1, munis=1, años=1, vals=0.2
+  - desc: II. a) Para predios valuados en los términos de la Ley de Catastro del Estado de Jalisco o cuyo valor se haya determinado en cualquier opera
+- `rustico_valores_anteriores_2000_valorado_catastro_o_traslativa` — apar=1, munis=1, años=1, vals=1.5
+  - desc: Predios rústicos: para predios valuados en los términos de la Ley de Catastro del Estado de Jalisco o cuyo valor se haya determinado en cual
+- `construcciones_en_predios_rusticos_aplica_inciso_a` — apar=1, munis=1, años=1, vals=1.5
+  - desc: Construcciones localizadas en predios rústicos: se aplicará la tasa consignada en el inciso a)
+- `rustico_valor_fiscal_lhmun_jalisco` — apar=1, munis=1, años=1, vals=0.22
+  - desc: Predios rústicos: sobre el valor fiscal determinado
+- `rustico_agropecuario_en_produccion_valor_determinado` — apar=1, munis=1, años=1, vals=0.8
+  - desc: Predios rústicos dedicados preponderantemente a fines agropecuarios en producción (según constancia) y cuyo valor se determinó conforme al i
+- `rustico_construcciones_en_predios_rusticos_tasa_inciso_b` — apar=1, munis=1, años=1, vals=0.8
+  - desc: Para construcciones localizadas en predios rústicos, se aplicará la tasa consignada en el inciso b)
+- `rustico_agropecuarios_en_produccion` — apar=1, munis=1, años=1, vals=0.8
+  - desc: II. Predios rústicos: b) Si se trata de predios rústicos, según la definición de la Ley de Catastro Municipal del Estado de Jalisco, dedicad
+- `rustico_edificados_no_edificados_mayor_800000` — apar=1, munis=1, años=1, vals=0.52
+  - desc: Para predios edificados y no edificados cuyo valor exceda los $800,000.00
+- `rustico_a_urbano_tasa_0_1_por_ciento_mas_cuota_fija` — apar=1, munis=1, años=1, vals=1.0
+  - desc: Predios en general que se deseen pasar de rústico a urbano... deberán pagar una tasa bimestral del 0.1% más $41.50
+- `rustico_construcciones_inciso_a` — apar=1, munis=1, años=1, vals=0.25
+  - desc: Para efectos de la determinación del impuesto en las construcciones localizadas en predios rústicos
+- `rustico_valor_fiscal_determinado_inciso_b` — apar=1, munis=1, años=1, vals=0.23
+  - desc: Para predios cuyo valor real se determine en los términos de la Ley de Hacienda Municipal del Estado de Jalisco, sobre el valor fiscal deter
+- `rusticos_valores_anteriores_2000_valor_determinado` — apar=1, munis=1, años=1, vals=1.5
+  - desc: Para predios valuados en los términos de la Ley de Catastro del Estado de Jalisco o cuyo valor se haya determinado en cualquier operación tr
+- `rusticos_valor_real_lhm_valor_fiscal_determinado` — apar=1, munis=1, años=1, vals=0.2
+  - desc: Predios cuyo valor real se determine en los términos de la Ley de Hacienda Municipal del Estado de Jalisco (del terreno y las construcciones
+- `rustico_valores_anteriores_2000_valor_determinado_inciso_a` — apar=1, munis=1, años=1, vals=1.6
+  - desc: Predios rústicos valuados en términos de la Ley de Catastro del Estado de Jalisco o cuyo valor se haya determinado en operación traslativa d
+- `rustico_agropecuario_en_produccion_inciso_b` — apar=1, munis=1, años=1, vals=0.085
+  - desc: Predios rústicos dedicados preponderantemente a fines agropecuarios en producción, cuyo valor se determinó conforme al inciso a) (inciso b)
+- `construcciones_en_predios_rusticos_tasa_inciso_b_inciso_c` — apar=1, munis=1, años=1, vals=0.085
+  - desc: Construcciones localizadas en predios rústicos: se aplicará la tasa consignada en el inciso b) (inciso c)
+- `rusticos_valor_fiscal_determinado_ley_hacienda_catastro` — apar=1, munis=1, años=1, vals=0.21
+  - desc: Predios rústicos: sobre el valor fiscal determinado (del terreno y las construcciones en su caso)
+- `rustico_valores_anteriores_2000_1_72_al_millar` — apar=1, munis=1, años=1, vals=1.72
+  - desc: Para predios valuados en los términos de la Ley de Catastro del Estado de Jalisco o cuyo valor se haya determinado en cualquier operación tr
+- `rustico_agropecuario_en_produccion_valor_anteriores_2000_0_80_al_millar` — apar=1, munis=1, años=1, vals=0.8
+  - desc: Predios rústicos dedicados preponderantemente a fines agropecuarios en producción (con valor determinado conforme a valores anteriores al añ
+- `construcciones_en_predios_rusticos_aplica_inciso_b_0_80_al_millar` — apar=1, munis=1, años=1, vals=0.8
+  - desc: Construcciones localizadas en predios rústicos: se aplicará la tasa consignada en el inciso b)
+- `rustico_valor_real_lhmj_0_23_al_millar` — apar=1, munis=1, años=1, vals=0.23
+  - desc: Para predios cuyo valor real se determine en los términos de la Ley de Hacienda Municipal del Estado de Jalisco, sobre el valor fiscal deter
+- `rustico_valores_anteriores_2025` — apar=1, munis=1, años=1, vals=2.0
+  - desc: Predios rústicos valuados (valores anteriores al año 2025), sobre el valor determinado
+- `rustico_valor_real_determinado_valor_fiscal` — apar=1, munis=1, años=1, vals=0.21
+  - desc: Predios rústicos: para predios cuyo valor real se determine en los términos de la Ley de Hacienda Municipal del Estado de Jalisco, sobre el 
+- `construcciones_en_predio_rustico_aplica_tasa_inciso_b` — apar=1, munis=1, años=1, vals=0.8
+  - desc: Construcciones localizadas en predios rústicos: se aplicará la tasa consignada en el inciso b)
+- `rusticos_valor_real_ley_hacienda_municipal_tasa_0_28_con_cuota_fija` — apar=1, munis=1, años=1, vals=0.28
+  - desc: Para predios cuyo valor real se determine en los términos de la Ley de Hacienda Municipal del Estado de Jalisco (del terreno y las construcc
+- `rustico_valor_fiscal_minimo_lc_o_traslativa_o_tablas` — apar=1, munis=1, años=1, vals=1.5
+  - desc: Predios rústicos: Para predio cuyo valor real se determine en los términos de la Ley de Catastro del Estado de Jalisco o cuyo valor se haya 
+- `rustico_inciso_c_no_legible` — apar=1, munis=1, años=1, vals=0.0
+  - desc: Inciso c) (texto truncado/no legible en el extracto proporcionado)
+- `rusticos_base_fiscal_registrada_tasa_anterior` — apar=1, munis=1, años=1, vals=10.0
+  - desc: Predios rústicos y predios en general que han venido tributando con tasas diferentes a las contenidas en este artículo, sobre la base fiscal
+- `rustico_agropecuarios_en_produccion_valor_anteriores_2000` — apar=1, munis=1, años=1, vals=0.8
+  - desc: Predios rústicos dedicados preponderantemente a fines agropecuarios en producción (previa constancia) y cuyo valor se determinó conforme al 
+- `rustico_valor_real_lhm_sobre_valor_fiscal` — apar=1, munis=1, años=1, vals=0.13
+  - desc: Para predios cuyo valor real se determine en los términos de la Ley de Hacienda Municipal del Estado de Jalisco (del terreno y las construcc
+- `rustico_edificados_y_no_edificados_valor_mayor_800000` — apar=1, munis=1, años=1, vals=0.55
+  - desc: Para predios edificados y no edificados cuyo valor exceda los $800,000.00
+
+#### grupo: `urbano` — 696 clave(s)
+
+- `urbano_edificado_valor_determinado` — apar=381, munis=86, años=16, vals=0.18|0.2|0.14|0.16|0.16
+  - desc: Predios urbanos edificados: sobre el valor determinado
+- `urbano_no_edificado_valor_determinado` — apar=358, munis=79, años=16, vals=0.3|0.3|0.3|0.3|0.33
+  - desc: Predios urbanos no edificados: sobre el valor determinado
+- `urbano_edificado` — apar=217, munis=46, años=16, vals=0.16|0.16|0.23|0.16|0.18
+  - desc: Predios urbanos edificados cuyo valor real se determine en los términos de la Ley de Hacienda Municipal del Estado de Jalisco, sobre el valo
+- `urbano_no_edificado_valor_real_ley_hacienda_municipal` — apar=196, munis=42, años=16, vals=0.33|0.3|0.3|0.3|0.3
+  - desc: Predios urbanos no edificados cuyo valor real se determine en los términos de la Ley de Hacienda Municipal, sobre el valor determinado
+- `urbano_edificado_valor_real_ley_hacienda_municipal` — apar=195, munis=41, años=16, vals=0.22|0.2|0.16|0.18|0.2
+  - desc: Predios urbanos edificados cuyo valor real se determine en los términos de la Ley de Hacienda Municipal, sobre el valor determinado
+- `urbano_no_edificado` — apar=173, munis=38, años=16, vals=0.33|0.3|0.32|0.32|0.3
+  - desc: Predios urbanos no edificados, cuyo valor real se determine en los términos de la Ley de Hacienda Municipal del Estado de Jalisco, sobre el 
+- `urbano_edificado_valor_1979_a_antes_1992` — apar=128, munis=31, años=16, vals=0.8|0.8|0.8|0.8|0.8
+  - desc: Predios urbanos edificados cuyo valor se determine a partir de 1979 y antes de 1992, sobre el valor determinado
+- `urbanos_edificados_valor_determinado` — apar=119, munis=49, años=16, vals=0.2|0.16|0.2|0.2|0.17
+  - desc: Predios urbanos edificados: sobre el valor determinado
+- `urbanos_no_edificados_valor_determinado` — apar=116, munis=46, años=16, vals=0.3|0.3|0.3|0.32|0.31
+  - desc: Predios urbanos no edificados: sobre el valor determinado
+- `urbano_no_edificado_hasta_antes_1992` — apar=111, munis=28, años=16, vals=1.3|1.3|1.3|1.3|1.3
+  - desc: Predios no edificados valuados catastralmente u obtenidos por operación traslativa de dominio, hasta antes de 1992, sobre el valor determina
+- `urbano_no_edificado_valor_1992_a_antes_2000` — apar=101, munis=28, años=16, vals=0.3|0.3|0.3|0.3|0.3
+  - desc: Predios urbanos no edificados cuyo valor se determine a partir de 1992 y antes del año 2000, sobre el valor determinado
+- `urbano_no_edificado_1992_a_antes_2000` — apar=97, munis=28, años=16, vals=0.3|0.3|0.3|0.3|0.3
+  - desc: Predios no edificados cuyo valor se determine a partir de 1992 y antes del año 2000, sobre el valor determinado
+- `urbano_edificado_tablas_valores_1992_a_antes_2000` — apar=81, munis=25, años=16, vals=0.16|0.16|0.16|0.14|0.14
+  - desc: Predios urbanos edificados cuyo valor se determine en base a las tablas de valores de terreno y construcción publicadas a partir de enero de
+- `urbano_edificado_valuado_hasta_antes_1979` — apar=78, munis=28, años=15, vals=1.3|1.3|1.3|1.3|1.3
+  - desc: Predios urbanos edificados valuados catastralmente o por operación traslativa de dominio, hasta antes de 1979, sobre el valor determinado
+- `urbano_edificados_valor_real_ley_hacienda_municipal` — apar=78, munis=29, años=16, vals=0.2|0.16|0.18|0.2|0.25
+  - desc: Predios urbanos edificados cuyo valor real se determine en los términos de la Ley de Hacienda Municipal del Estado de Jalisco, sobre el valo
+- `urbano_no_edificados_valor_real_ley_hacienda_municipal` — apar=77, munis=28, años=16, vals=0.3|0.3|0.32|0.33|0.35
+  - desc: Predios urbanos no edificados cuyo valor real se determine en los términos de la Ley de Hacienda Municipal del Estado de Jalisco, sobre el v
+- `urbano_edificado_1979_a_antes_1992` — apar=76, munis=27, años=16, vals=0.8|0.8|0.8|0.8|0.8
+  - desc: Predios edificados cuyo valor se determine a partir de 1979 y antes del año 1992, sobre el valor determinado
+- `urbano_edificado_valor_fiscal` — apar=76, munis=24, años=15, vals=0.18|0.19|0.17|0.22|0.16
+  - desc: Predios edificados cuyo valor real se determine en los términos de la Ley de Hacienda Municipal del Estado de Jalisco, sobre el valor determ
+- `urbano_no_edificado_valor_fiscal` — apar=75, munis=23, años=15, vals=0.3|0.3|0.3|0.33|0.3
+  - desc: Predios no edificados cuyo valor real se determine en los términos de la Ley de Hacienda Municipal del Estado de Jalisco, sobre el valor det
+- `urbano_edificado_tablas_valores_enero_1992_a_antes_2000` — apar=74, munis=27, años=15, vals=0.14|0.16|0.14|0.14|0.14
+  - desc: Predios edificados cuyo valor se determine en base a las tablas de valores de terreno y construcción publicadas a partir de enero de 1992 y 
+- `urbano_edificado_valor_real_determinado` — apar=68, munis=42, años=15, vals=0.18|0.16|0.18|0.18|0.2
+  - desc: Predios edificados cuyo valor real se determine en los términos de la Ley de Hacienda Municipal, sobre el valor determinado
+- `urbano_edificados_valor_1979_a_antes_1992` — apar=60, munis=25, años=16, vals=0.8|0.3|0.8|0.8|0.8
+  - desc: Predios urbanos: predios edificados cuyo valor se determine a partir de 1979 y antes del año de 1992, en los términos de la Ley de Catastro 
+- `urbano_no_edificado_valor_real_determinado` — apar=57, munis=36, años=16, vals=0.28|0.31|0.3|0.33|0.3
+  - desc: Predios no edificados cuyo valor real se determine en los términos de la Ley de Hacienda Municipal, sobre el valor determinado
+- `urbano_edificado_hasta_antes_1979` — apar=56, munis=26, años=16, vals=1.3|1.3|1.3|1.3|1.3
+  - desc: Predios edificados valuados catastralmente o cuyo valor se obtuvo por operación traslativa de dominio, hasta antes de 1979, sobre el valor d
+- `urbano_no_edificados_hasta_antes_1992` — apar=51, munis=23, años=16, vals=1.3|1.3|1.3|1.3|1.3
+  - desc: Predios urbanos no edificados valuados catastralmente o por operación traslativa de dominio, hasta antes de 1992, sobre el valor determinado
+- `urbano_no_edificado_valuado_hasta_antes_1992` — apar=46, munis=23, años=14, vals=1.3|1.3|1.3|1.34|1.3
+  - desc: Predios urbanos no edificados valuados catastralmente o en términos de Catastro, o por operación traslativa de dominio, hasta antes de 1992,
+- `urbano_edificado_valor_real` — apar=45, munis=21, años=15, vals=0.2|0.23|0.14|0.23|0.22
+  - desc: Predios edificados cuyo valor real se determine en los términos de la Ley de Hacienda Municipal del Estado de Jalisco, sobre el valor determ
+- `urbano_edificado_valor_hasta_antes_1979` — apar=43, munis=23, años=16, vals=1.3|1.3|1.3|1.3|1.3
+  - desc: Predios edificados valuados catastralmente o cuyo valor se obtuvo por operación traslativa de dominio, hasta antes de 1979
+- `urbano_no_edificado_valor_hasta_antes_1992` — apar=42, munis=22, años=16, vals=1.3|1.3|1.3|1.3|1.3
+  - desc: Predios no edificados valuados catastralmente o cuyo valor se obtuvo u obtenga por operación traslativa de dominio, hasta antes de 1992
+- `urbano_no_edificados_valor_1992_a_antes_2000` — apar=41, munis=21, años=16, vals=0.16|0.3|0.3|0.3|0.3
+  - desc: Predios no edificados, cuyo valor se determine a partir de 1992, y antes del año 2000 (Ley de Hacienda Municipal o por operación traslativa 
+- `urbano_edificados_tablas_valores_enero_1992_a_antes_2000` — apar=38, munis=22, años=14, vals=0.16|0.14|0.14|0.14|0.14
+  - desc: Predios urbanos: Predios edificados cuyo valor se determine en base a las tablas de valores de terreno y construcción, publicadas en el Peri
+- `urbano_edificado_valor_real_valor_determinado` — apar=37, munis=27, años=14, vals=0.16|0.16|0.19|0.22|0.2
+  - desc: Predios urbanos: predios edificados, sobre el valor determinado
+- `urbano_edificado_valor_real_lhmj` — apar=37, munis=20, años=15, vals=0.25|0.16|0.2|0.17|0.16
+  - desc: Predios urbanos edificados cuyo valor real se determine en los términos de la Ley de Hacienda Municipal del Estado de Jalisco, sobre el valo
+- `urbano_edificados_valuados_hasta_antes_1979` — apar=37, munis=19, años=16, vals=1.3|1.3|1.3|1.3|1.3
+  - desc: Predios edificados que hayan sido valuados catastralmente o cuyo valor se obtuvo por cualquier operación traslativa de dominio, hasta antes 
+- `urbano_no_edificado_valor_real_valor_determinado` — apar=36, munis=26, años=14, vals=0.3|0.3|0.33|0.32|0.3
+  - desc: Predios urbanos: predios no edificados, sobre el valor determinado
+- `urbano_no_edificados_1992_a_antes_2000` — apar=36, munis=20, años=15, vals=0.3|0.3|0.3|0.3|0.3
+  - desc: Predios urbanos: Predios no edificados cuyo valor se determine a partir de 1992 y antes del año 2000, en los términos de la Ley de Hacienda 
+- `urbano_no_edificado_valor_real_lhmj` — apar=35, munis=19, años=15, vals=0.35|0.3|0.35|0.33|0.31
+  - desc: Predios urbanos no edificados, cuyo valor real se determine en los términos de la Ley de Hacienda Municipal del Estado de Jalisco, sobre el 
+- `urbano_edificado_tablas_1992_a_antes_2000` — apar=32, munis=19, años=15, vals=0.14|0.16|0.16|0.15|0.16
+  - desc: Predios edificados cuyo valor se determine en base a las tablas de valores de terreno y construcción... a partir de enero de 1992 y antes de
+- `urbano_edificados_1979_a_antes_1992` — apar=26, munis=18, años=13, vals=0.8|0.8|0.8|0.8|0.8
+  - desc: Predios urbanos: Predios edificados cuyo valor se determine a partir de 1979 y antes del año de 1992, en los términos de la Ley de Catastro 
+- `urbano_edificado_valor_real_sobre_valor_determinado` — apar=24, munis=18, años=13, vals=0.2|0.25|0.2|0.16|0.16
+  - desc: Predios urbanos: predios edificados cuyo valor real se determine en los términos de la Ley de Hacienda Municipal del Estado de Jalisco, sobr
+- `urbano_edificados_tablas_valores_1992_a_antes_2000` — apar=24, munis=14, años=12, vals=0.16|0.14|0.14|0.14|0.16
+  - desc: Predios urbanos: Predios edificados cuyo valor se determine en base a las tablas de valores de terreno y construcción publicadas a partir de
+- `urbano_no_edificado_zona_urbana_valor_real` — apar=24, munis=4, años=12, vals=0.81|0.81|0.31|0.81|0.31
+  - desc: Predios no edificados que se localicen dentro de la zona urbana de la ciudad, cuyo valor real se determine en los términos de la Ley de Haci
+- `urbanos_no_edificados_valor_real_determinado` — apar=23, munis=18, años=11, vals=0.32|0.3|0.33|0.3|0.33
+  - desc: Predios urbanos: Predios no edificados, cuyo valor real se determine en los términos de la Ley de Hacienda Municipal del Estado de Jalisco, 
+- `urbano_no_edificado_valor_real_sobre_valor_determinado` — apar=23, munis=17, años=13, vals=0.3|0.35|0.3|0.33|0.3
+  - desc: Predios urbanos: predios no edificados, cuyo valor real se determine en los términos de la Ley de Hacienda Municipal del Estado de Jalisco, 
+- `urbanos_edificados_valor_real_determinado` — apar=22, munis=19, años=12, vals=0.18|0.16|0.23|0.17|0.16
+  - desc: Predios urbanos: Predios edificados cuyo valor real se determine en los términos de la Ley de Hacienda Municipal del Estado de Jalisco, sobr
+- `urbano_no_edificado_fuera_zona_urbana_cabecera` — apar=22, munis=3, años=15, vals=0.25|0.3|0.3|0.3|0.3
+  - desc: Predios urbanos: predios no edificados fuera de la zona urbana de la cabecera municipal, sobre el valor determinado
+- `urbano_edificados_hasta_antes_1979` — apar=22, munis=16, años=11, vals=1.3|1.3|1.3|1.3|1.3
+  - desc: Predios urbanos: Predios edificados que hayan sido valuados catastralmente o cuyo valor se obtuvo por cualesquiera operación traslativa de d
+- `urbano_edificado_valor_real_determinado_lhmj` — apar=21, munis=16, años=13, vals=0.2|0.14|0.16|0.2|0.18
+  - desc: Predios urbanos: predios edificados, sobre el valor determinado
+- `urbano_no_edificado_valor_real_determinado_lhmj` — apar=21, munis=16, años=13, vals=0.32|0.3|0.3|0.3|0.33
+  - desc: Predios urbanos: predios no edificados, sobre el valor determinado
+- `urbano_edificado_valor_determinado_lhm_jalisco` — apar=21, munis=15, años=11, vals=0.2|0.2|0.2|0.23|0.23
+  - desc: Predios urbanos edificados: sobre el valor determinado, el 0.20 al millar (tasa bimestral).
+- `urbano_no_edificado_dentro_zona_urbana_cabecera` — apar=21, munis=2, años=14, vals=0.35|0.35|0.35|0.35|0.35
+  - desc: Predios urbanos: c) Predios no edificados, que se localizan dentro de la zona urbana de la cabecera municipal... el: 0.35. Para el caso de l
+- `urbano_edificado_valor_determinado_lhmj` — apar=20, munis=18, años=11, vals=0.18|0.14|0.18|0.18|0.2
+  - desc: Predios edificados cuyo valor real se determine en los términos de la Ley de Hacienda Municipal del Estado de Jalisco, sobre el valor determ
+- `urbano_no_edificado_valor_real` — apar=20, munis=16, años=11, vals=0.3|0.3|0.3|0.3|0.4
+  - desc: Predios no edificados, cuyo valor real se determine en los términos de la Ley de Hacienda Municipal del Estado de Jalisco, sobre el valor de
+- `urbano_no_edificado_valor_determinado_lhm_jalisco` — apar=19, munis=13, años=11, vals=0.32|0.33|0.3|0.33|0.3
+  - desc: Predios urbanos no edificados: sobre el valor determinado, el 0.32 al millar (tasa bimestral).
+- `urbano_no_edificado_valor_determinado_lhmj` — apar=18, munis=16, años=11, vals=0.33|0.3|0.33|0.33|0.3
+  - desc: Predios no edificados, cuyo valor real se determine en los términos de la Ley de Hacienda Municipal del Estado de Jalisco, sobre el valor de
+- `urbano_edificado_valor_fiscal_determinado` — apar=18, munis=15, años=12, vals=0.17|0.15|0.2|0.18|0.23
+  - desc: Predios urbanos edificados: sobre el valor determinado
+- `urbanos_edificados_valor_real_valor_determinado` — apar=17, munis=16, años=12, vals=0.16|0.2|0.2|0.2|0.19
+  - desc: Predios urbanos: predios edificados cuyo valor real se determine en los términos de la Ley de Hacienda Municipal del Estado de Jalisco, sobr
+- `urbanos_no_edificados_valor_real_valor_determinado` — apar=17, munis=16, años=12, vals=0.33|0.2|0.3|0.2|0.3
+  - desc: Predios urbanos: predios no edificados, cuyo valor real se determine en los términos de la Ley de Hacienda Municipal del Estado de Jalisco, 
+- `urbanos_edificados_valor_real_ley_hacienda_municipal` — apar=17, munis=14, años=12, vals=0.16|0.14|0.16|0.2|0.17
+  - desc: Predios edificados cuyo valor real se determine en los términos de la Ley de Hacienda Municipal del Estado de Jalisco, sobre el valor determ
+- `urbanos_no_edificados_valor_real_ley_hacienda_municipal` — apar=17, munis=14, años=12, vals=0.3|0.3|0.3|0.33|0.33
+  - desc: Predios no edificados, cuyo valor real se determine en los términos de la Ley de Hacienda Municipal del Estado de Jalisco, sobre el valor de
+- `urbano_no_edificado_valor_1992_antes_2000` — apar=16, munis=6, años=11, vals=0.3|0.3|0.3|0.3|0.3
+  - desc: Predios urbanos no edificados, cuyo valor se determine a partir de 1992 y antes del año 2000, en los términos de la Ley de Hacienda Municipa
+- `urbano_edificado_antes_1979` — apar=16, munis=12, años=11, vals=1.3|1.3|1.3|1.3|1.6
+  - desc: Predios urbanos edificados valuados catastralmente o cuyo valor se obtuvo por operación traslativa de dominio, hasta antes de 1979, sobre el
+- `urbanos_edificados_valor_1979_a_antes_1992` — apar=16, munis=13, años=11, vals=0.8|0.8|0.8|0.8|0.8
+  - desc: Predios edificados cuyo valor se determine a partir de 1979 y antes del año de 1992, en los términos de la Ley de Catastro del Estado de Jal
+- `urbano_no_edificado_valor_fiscal_determinado` — apar=16, munis=13, años=11, vals=0.33|0.33|0.3|0.3|0.3
+  - desc: Predios urbanos no edificados: sobre el valor determinado
+- `urbano_no_edificado_fuera_zonas_urbanas` — apar=15, munis=2, años=14, vals=0.5|0.3|0.3|0.5|0.11
+  - desc: Predios urbanos no edificados que se localicen fuera de las zonas urbanas (valor real conforme a Ley de Hacienda Municipal del Estado de Jal
+- `urbano_edificados_valor_determinado` — apar=15, munis=11, años=10, vals=0.18|0.16|0.23|0.2|0.19
+  - desc: Predios urbanos: a) Predios edificados cuyo valor real se determine en los términos de la Ley de Hacienda Municipal del Estado de Jalisco, s
+- `urbano_no_edificado_1992_antes_2000` — apar=15, munis=9, años=11, vals=0.3|0.31|0.3|0.31|0.3
+  - desc: Predios urbanos: predios no edificados cuyo valor se determine a partir de 1992 y antes del año 2000, en los términos de la Ley de Hacienda 
+- `urbano_edificado_valor_real_determinado_lhm` — apar=14, munis=11, años=9, vals=0.16|0.18|0.16|0.16|0.18
+  - desc: Predios urbanos: predios edificados cuyo valor real se determine en los términos de la Ley de Hacienda Municipal del Estado de Jalisco, sobr
+- `urbano_no_edificado_valor_real_determinado_lhm` — apar=14, munis=11, años=9, vals=0.3|0.28|0.3|0.3|0.3
+  - desc: Predios urbanos: predios no edificados, cuyo valor real se determine en los términos de la Ley de Hacienda Municipal del Estado de Jalisco, 
+- `urbano_edificado_tablas_valores_ene_1992_a_antes_2000` — apar=14, munis=13, años=9, vals=0.16|0.14|0.14|0.16|0.2
+  - desc: Predios urbanos edificados cuyo valor se determine en base a las tablas de valores de terreno y construcción... a partir de enero de 1992 y 
+- `urbano_edificado_valor_real_ley_hacienda` — apar=14, munis=13, años=10, vals=0.2|0.18|0.19|0.18|0.2
+  - desc: Predios urbanos edificados cuyo valor real se determine... sobre el valor determinado
+- `urbano_no_edificado_valor_real_ley_hacienda` — apar=14, munis=13, años=10, vals=0.33|0.3|0.3|0.3|0.31
+  - desc: Predios urbanos no edificados cuyo valor real se determine... sobre el valor determinado
+- `urbanos_no_edificados_valor_1992_a_antes_2000` — apar=14, munis=11, años=10, vals=0.3|0.3|0.3|0.3|0.3
+  - desc: Predios no edificados cuyo valor se determine a partir de 1992 y antes del año 2000, en los términos de la Ley de Hacienda Municipal o por c
+- `urbano_no_edificados_valor_determinado` — apar=13, munis=9, años=9, vals=0.33|0.3|0.3|0.3|0.38
+  - desc: Predios urbanos: b) Predios no edificados, cuyo valor real se determine en los términos de la Ley de Hacienda Municipal del Estado de Jalisc
+- `predios_urbanos_edificados_valor_determinado` — apar=13, munis=9, años=10, vals=0.2|0.18|0.2|0.2|0.14
+  - desc: Predios urbanos edificados... sobre el valor determinado
+- `predios_urbanos_no_edificados_valor_determinado` — apar=13, munis=9, años=10, vals=0.3|0.3|0.3|0.2|0.3
+  - desc: Predios urbanos no edificados... sobre el valor determinado
+- `urbano_no_edificados_valuados_hasta_antes_1992` — apar=13, munis=9, años=8, vals=1.3|1.3|1.3|1.3|0.3
+  - desc: Predios urbanos: Predios no edificados, que hayan sido valuados catastralmente o se valúen en los términos de la Ley de Catastro del Estado 
+- `urbano_edificado_tablas_enero_1992_a_antes_2000` — apar=13, munis=10, años=8, vals=0.14|0.14|0.17|0.16|0.2
+  - desc: III.c) Predios urbanos: predios edificados cuyo valor se determine en base a las tablas de valores de terreno y construcción publicadas a pa
+- `urbano_edificados_valor_hasta_antes_1979` — apar=13, munis=10, años=8, vals=1.3|1.3|1.3|1.3|1.3
+  - desc: Predios edificados valuados catastralmente o cuyo valor se obtuvo por operación traslativa de dominio, hasta antes de 1979, sobre el valor d
+- `urbano_no_edificados_valor_hasta_antes_1992` — apar=13, munis=10, años=8, vals=1.3|1.3|1.3|1.3|1.3
+  - desc: Predios no edificados valuados catastralmente o valuados en términos de la Ley de Catastro del Estado de Jalisco, o cuyo valor se obtuvo u o
+- `urbano_no_edificado_zona_urbana` — apar=13, munis=5, años=7, vals=0.31|0.75|0.81|0.8|0.81
+  - desc: Predios urbanos: predios no edificados que se localicen dentro de la zona urbana de la ciudad, sobre el valor determinado (valor real) en té
+- `urbano_edificado_valores_hasta_antes_1979` — apar=12, munis=9, años=6, vals=1.3|1.3|1.1|1.0|1.3
+  - desc: Predios edificados que hayan sido valuados catastralmente o cuyo valor se obtuvo por cualesquiera operación traslativa de dominio, hasta ant
+- `predios_urbanos_edificados` — apar=11, munis=8, años=8, vals=0.23|0.9|0.16|0.0|0.0
+  - desc: Predios urbanos edificados (sobre el valor determinado/valor real)
+- `urbano_edificados_tablas_1992_a_antes_2000` — apar=11, munis=8, años=9, vals=0.17|0.14|0.14|0.14|0.16
+  - desc: Predios urbanos: predios edificados cuyo valor se determine en base a las tablas de valores de terreno y construcción publicadas a partir de
+- `urbanos_edificados_valor_real_sobre_valor_determinado` — apar=10, munis=8, años=6, vals=0.16|0.18|0.17|0.16|0.18
+  - desc: Predios urbanos: Predios edificados cuyo valor real se determine en los términos de la Ley de Hacienda Municipal del Estado de Jalisco, sobr
+- `urbanos_no_edificados_valor_real_sobre_valor_determinado` — apar=10, munis=8, años=6, vals=0.3|0.33|0.3|0.3|0.33
+  - desc: Predios urbanos: Predios no edificados, cuyo valor real se determine en los términos de la Ley de Hacienda Municipal del Estado de Jalisco, 
+- `urbano_baldio_fuera_zonas_edificadas` — apar=10, munis=1, años=10, vals=0.3|0.3|0.3|0.3|0.3
+  - desc: Predios urbanos baldíos que se localicen fuera de las zonas edificadas, cuyo valor real se determine en los términos de la Ley de Hacienda M
+- `urbano_baldio_dentro_zonas_edificadas` — apar=10, munis=1, años=10, vals=0.4|0.4|0.4|0.4|0.4
+  - desc: Predios urbanos baldíos que se localicen dentro de las zonas edificadas, cuyo valor real se determine en los términos de la Ley de Hacienda 
+- `urbanos_edificados` — apar=10, munis=8, años=10, vals=0.23|0.23|0.23|22.0|0.22
+  - desc: Predios edificados cuyo valor se determine en los términos de la Ley de Hacienda Municipal del Estado de Jalisco y de la Ley de Catastro Mun
+- `urbano_edificados` — apar=10, munis=7, años=8, vals=0.18|0.28|0.23|0.2|0.18
+  - desc: Predios urbanos edificados, cuyo valor real se determine en los términos de la Ley de Hacienda Municipal del Estado de Jalisco
+- `urbano_no_edificado_valores_hasta_antes_1992` — apar=10, munis=8, años=5, vals=1.3|1.3|1.3|1.3|1.3
+  - desc: Predios no edificados, valuados catastralmente o en términos de la Ley de Catastro Municipal, o cuyo valor se obtuvo por operación traslativ
+- `urbanos_edificados_valor_real` — apar=9, munis=8, años=6, vals=0.17|0.18|0.16|0.18|0.2
+  - desc: Predios urbanos: predios edificados, sobre el valor determinado
+- `urbanos_no_edificados_valor_real` — apar=9, munis=8, años=6, vals=0.33|0.33|0.3|0.33|0.34
+  - desc: Predios urbanos: predios no edificados, sobre el valor determinado
+- `urbanos_edificados_valuados_hasta_antes_1979` — apar=9, munis=8, años=7, vals=1.3|1.3|1.3|1.3|1.3
+  - desc: Predios edificados que hayan sido valuados catastralmente o cuyo valor se obtuvo por cualquier operación traslativa de dominio, hasta antes 
+- `urbano_edificado_1979_antes_1992` — apar=9, munis=7, años=7, vals=0.8|0.82|0.8|0.8|0.82
+  - desc: Predios urbanos: predios edificados cuyo valor se determine a partir de 1979 y antes del año 1992 (inciso b)
+- `urbano_edificado_valor_real_determinado_ley_hacienda_municipal` — apar=9, munis=8, años=7, vals=0.2|0.16|0.2|0.2|0.17
+  - desc: Predios urbanos edificados cuyo valor real se determine en términos de la Ley de Hacienda Municipal del Estado de Jalisco, sobre el valor de
+- `urbano_no_edificado_valor_real_determinado_ley_hacienda_municipal` — apar=9, munis=8, años=7, vals=0.3|0.3|0.3|0.35|0.33
+  - desc: Predios urbanos no edificados cuyo valor real se determine en términos de la Ley de Hacienda Municipal del Estado de Jalisco, sobre el valor
+- `urbano_edificados_valorados_hasta_antes_1979` — apar=9, munis=7, años=5, vals=1.3|1.3|1.3|1.41|1.3
+  - desc: Predios urbanos: Predios edificados que hayan sido valuados catastralmente o cuyo valor se obtuvo por cualquier operación traslativa de domi
+- `urbano_edificado_valor_real_lhm` — apar=9, munis=7, años=7, vals=0.18|0.2|0.16|0.19|0.18
+  - desc: Predios edificados cuyo valor real se determine en los términos de la Ley de Hacienda Municipal del Estado de Jalisco, sobre el valor determ
+- `predios_urbanos_no_edificados` — apar=9, munis=7, años=7, vals=1.0|0.3|0.0|0.0|0.0
+  - desc: Predios no edificados
+- `urbano_no_edificado_zona_urbana_valor_real_determinado` — apar=9, munis=4, años=8, vals=0.81|0.81|0.39|0.3|0.3
+  - desc: Predios urbanos no edificados dentro de la zona urbana: sobre el valor determinado (valor real), tasa al millar 0.81
+- `urbano_edificado_valor_real_determinado_sobre_valor_determinado` — apar=8, munis=6, años=6, vals=0.2|0.16|0.19|0.16|0.17
+  - desc: Predios urbanos: Predios edificados cuyo valor real se determine en los términos de la Ley de Hacienda Municipal del Estado de Jalisco, sobr
+- `urbano_no_edificado_valor_real_determinado_sobre_valor_determinado` — apar=8, munis=6, años=6, vals=0.3|0.3|0.45|0.3|0.3
+  - desc: Predios urbanos: Predios no edificados, cuyo valor real se determine en los términos de la Ley de Hacienda Municipal del Estado de Jalisco, 
+- `urbano_edificados_valor_real_lhmj` — apar=8, munis=4, años=6, vals=0.19|0.19|0.18|0.18|0.18
+  - desc: Predios urbanos: predios edificados cuyo valor real se determine en los términos de la Ley de Hacienda Municipal del Estado de Jalisco, sobr
+- `urbanos_no_edificados_valuados_hasta_antes_1992` — apar=8, munis=7, años=6, vals=1.3|1.3|1.3|1.3|1.3
+  - desc: Predios no edificados, que hayan sido valuados catastralmente o se valúen en los términos de la Ley de Catastro del Estado de Jalisco, o cuy
+- `urbano_edificado_valor_real_determinado_lhm_jalisco` — apar=8, munis=7, años=7, vals=0.23|0.18|0.18|0.18|0.23
+  - desc: Predios urbanos edificados: sobre el valor determinado (valor real determinado en términos de la Ley de Hacienda Municipal del Estado de Jal
+- `urbano_edificados_valor_real_determinado` — apar=8, munis=6, años=5, vals=0.2|0.18|0.16|0.17|0.21
+  - desc: Predios urbanos: predios edificados cuyo valor real se determine... sobre el valor determinado
+- `urbano_no_edificados_valor_real_determinado` — apar=8, munis=6, años=5, vals=0.3|0.32|0.3|0.33|0.32
+  - desc: Predios urbanos: predios no edificados, cuyo valor real se determine... sobre el valor determinado
+- `urbano_edificados_valor_real_ley_hacienda` — apar=8, munis=5, años=7, vals=0.2|0.2|0.18|0.2|0.16
+  - desc: Predios urbanos: Predios edificados cuyo valor real se determine en los términos de la Ley de Hacienda Municipal del Estado de Jalisco, sobr
+- `urbano_no_edificados_valor_real_ley_hacienda` — apar=8, munis=5, años=7, vals=0.3|0.33|0.33|0.33|0.3
+  - desc: Predios urbanos: Predios no edificados, cuyo valor real se determine en los términos de la Ley de Hacienda Municipal del Estado de Jalisco, 
+- `urbano_edificados_tablas_valores_ene_1992_a_antes_2000` — apar=8, munis=7, años=6, vals=0.14|0.16|0.16|0.16|0.14
+  - desc: Predios urbanos: Predios edificados, cuyo valor se determine en base a las tablas de valores de terreno y construcción publicadas en el Peri
+- `urbano_no_edificados_1992_antes_2000` — apar=8, munis=7, años=8, vals=0.3|0.3|0.3|0.3|0.3
+  - desc: Predios no edificados cuyo valor se determine a partir de 1992 y antes del año 2000
+- `urbano_no_edificado_agencias_municipales` — apar=8, munis=1, años=8, vals=0.3|0.3|0.4|0.4|0.4
+  - desc: Predios urbanos no edificados localizados en agencias Municipales y cuyo valor real se determine en los términos de la Ley de Hacienda Munic
+- `urbano_edificados_valor_real_determinado_ley_hacienda_municipal` — apar=8, munis=7, años=5, vals=0.33|0.14|0.18|0.19|0.18
+  - desc: Predios urbanos: Predios edificados cuyo valor real se determine en los términos de la Ley de Hacienda Municipal del Estado de Jalisco, sobr
+- `urbano_no_edificados_valor_real_determinado_ley_hacienda_municipal` — apar=8, munis=7, años=5, vals=0.33|0.3|0.32|0.3|0.32
+  - desc: Predios urbanos: Predios no edificados, cuyo valor real se determine en los términos de la Ley de Hacienda Municipal del Estado de Jalisco, 
+- `urbano_edificado_tablas_1992_antes_2000` — apar=8, munis=5, años=5, vals=0.14|0.14|0.14|0.14|0.14
+  - desc: Predios edificados, cuyo valor se determine en base a las tablas de valores de terreno y construcción publicadas en el Periódico Oficial “El
+- `urbanos_edificados_tablas_valores_enero_1992_a_antes_2000` — apar=8, munis=6, años=7, vals=0.2|0.16|0.14|0.16|0.14
+  - desc: Predios urbanos edificados cuyo valor se determine con base a las tablas de valores de terreno y construcción publicadas en el Periódico Ofi
+- `urbano_edificado_valor_real_ley_hacienda_municipal_inciso_f` — apar=7, munis=7, años=6, vals=0.16|0.2|0.17|9.16|0.2
+  - desc: Predios urbanos edificados cuyo valor real se determine en los términos de la Ley de Hacienda Municipal, sobre el valor determinado
+- `urbano_baldio` — apar=7, munis=1, años=7, vals=0.6|0.7|0.7|0.7|0.7
+  - desc: Predios urbanos baldíos: sobre el valor determinado
+- `urbano_edificado_valor_1979_a_1991` — apar=7, munis=5, años=6, vals=0.8|0.8|0.8|0.8|0.8
+  - desc: Predios urbanos edificados cuyo valor se determine a partir de 1979 y antes del año de 1992
+- `urbano_edificados_1979_antes_1992` — apar=7, munis=6, años=7, vals=0.8|0.8|0.8|0.8|0.97
+  - desc: Predios edificados cuyo valor se determine a partir de 1979 y antes del año de 1992
+- `urbano_no_edificado_zonas_urbanas` — apar=7, munis=1, años=7, vals=0.7|0.7|0.8|0.8|0.8
+  - desc: Predios no edificados que se localicen dentro de las zonas urbanas y cuyo valor real se determine en los términos de la Ley de Hacienda Muni
+- `urbano_edificado_hasta_1979` — apar=7, munis=5, años=5, vals=1.3|1.34|1.3|1.34|1.3
+  - desc: Predios urbanos edificados valuados catastralmente o cuyo valor se obtuvo por operación traslativa de dominio, hasta antes de 1979, sobre el
+- `urbano_edificado_tablas_valores_1992_antes_2000` — apar=7, munis=5, años=7, vals=0.14|0.15|0.14|0.14|0.14
+  - desc: Predios urbanos edificados cuyo valor se determine en base a las tablas de valores de terreno y construcción publicadas en el Periódico Ofic
+- `urbano_edificado_valor_determinado_lhmej` — apar=7, munis=7, años=6, vals=0.14|0.16|0.2|0.25|0.16
+  - desc: Predios urbanos edificados: sobre el valor determinado
+- `urbano_no_edificados_valorados_hasta_antes_1992` — apar=7, munis=6, años=5, vals=1.3|1.3|1.41|1.3|1.67
+  - desc: Predios urbanos: Predios no edificados, que hayan sido valuados catastralmente o se valúen en los términos de la Ley de Catastro del Estado 
+- `urbano_no_edificados` — apar=7, munis=5, años=6, vals=0.3|0.28|0.3|0.4|0.31
+  - desc: Predios urbanos no edificados, cuyo valor se determine en los términos de la Ley de Hacienda Municipal del Estado de Jalisco por cualquier o
+- `urbano_no_edificado_valor_real_lhm` — apar=7, munis=6, años=6, vals=0.3|0.31|0.3|0.28|0.3
+  - desc: Predios urbanos: Predios no edificados, cuyo valor real se determine en los términos de la Ley de Hacienda Municipal del Estado de Jalisco, 
+- `urbanos_no_edificados_hasta_antes_1992` — apar=7, munis=5, años=6, vals=1.3|1.3|1.3|1.3|1.6
+  - desc: Predios urbanos no edificados... hasta antes de 1992
+- `urbanos_no_edificados_1992_antes_2000` — apar=7, munis=4, años=6, vals=0.3|0.18|0.3|0.4|0.3
+  - desc: Predios urbanos no edificados... a partir de 1992 y antes del año 2000
+- `urbanos_edificados_valor_fiscal_determinado` — apar=7, munis=7, años=3, vals=0.14|0.17|0.16|0.2|0.15
+  - desc: Predios urbanos: predios edificados cuyo valor real se determine en los términos de la Ley de Hacienda Municipal del Estado de Jalisco, sobr
+- `urbanos_edificados_valor_determinado_lhmj` — apar=6, munis=6, años=4, vals=0.2|0.18|0.14|0.23|0.2
+  - desc: Predios urbanos: predios edificados cuyo valor real se determine en los términos de la Ley de Hacienda Municipal del Estado de Jalisco, sobr
+- `urbanos_no_edificados_valor_determinado_lhmj` — apar=6, munis=6, años=4, vals=0.3|0.3|0.3|0.33|0.3
+  - desc: Predios urbanos: predios no edificados, cuyo valor real se determine en los términos de la Ley de Hacienda Municipal del Estado de Jalisco, 
+- `urbano_no_edificado_valor_real_ley_hacienda_municipal_inciso_g` — apar=6, munis=6, años=5, vals=0.3|0.3|0.3|0.2|0.3
+  - desc: Predios urbanos no edificados cuyo valor real se determine en los términos de la Ley de Hacienda Municipal, sobre el valor determinado
+- `urbano_no_edificado_valor_real_determinado_lhm_jalisco` — apar=6, munis=6, años=5, vals=0.32|0.3|0.28|0.31|0.32
+  - desc: Predios urbanos: b) Predios no edificados, cuyo valor real se determine en los términos de la Ley de Hacienda Municipal del Estado de Jalisc
+- `urbano_edificados_antes_1979` — apar=6, munis=6, años=6, vals=1.3|1.3|1.3|1.3|1.33
+  - desc: Predios edificados valuados catastralmente o cuyo valor se obtuvo por operación traslativa de dominio, hasta antes de 1979
+- `urbano_no_edificado_valor_determinado_lhmej` — apar=6, munis=6, años=5, vals=0.3|0.2|0.38|0.3|0.32
+  - desc: Predios urbanos no edificados: sobre el valor determinado
+- `urbanos_no_edificados_valor_fiscal_determinado` — apar=6, munis=6, años=2, vals=0.3|0.33|0.3|0.3|0.31
+  - desc: Predios urbanos: predios no edificados, cuyo valor real se determine en los términos de la Ley de Hacienda Municipal del Estado de Jalisco, 
+- `urbanos_no_edificados` — apar=6, munis=6, años=6, vals=33.0|0.32|0.38|0.35|0.3
+  - desc: Predios urbanos no edificados: sobre el valor catastral determinado
+- `urbano_edificado_tablas_valores_enero_1992_antes_2000` — apar=5, munis=4, años=4, vals=0.14|0.2|0.15|0.16|0.15
+  - desc: Predios edificados cuyo valor se determine en base a las tablas de valores de terreno y construcción publicadas a partir de enero de 1992 y 
+- `urbanos_edificados_hasta_antes_1979` — apar=5, munis=5, años=4, vals=0.25|1.3|1.6|1.3|1.34
+  - desc: Predios urbanos: predios edificados que hayan sido valuados catastralmente o cuyo valor se obtuvo por operación traslativa de dominio, hasta
+- `urbano_edificado_valor_1979_antes_1992` — apar=5, munis=5, años=3, vals=0.8|0.8|0.8|0.3|0.8
+  - desc: Predios urbanos edificados, cuyo valor se determine a partir de 1979 y antes del año de 1992, en los términos de la Ley de Catastro del Esta
+- `urbanos_edificados_tablas_valores_1992_a_antes_2000` — apar=5, munis=5, años=3, vals=0.16|0.16|0.14|0.16|0.16
+  - desc: Predios edificados cuyo valor se determine en base a las tablas de valores de terreno y construcción publicadas a partir de enero de 1992 y 
+- `urbano_no_edificado_dentro_zonas_urbanas` — apar=5, munis=1, años=5, vals=0.35|0.35|0.35|0.35|0.35
+  - desc: Predios no edificados dentro de las zonas urbanas (inciso c): sobre el valor determinado
+- `predios_urbanos_edificados_valor_real_determinado` — apar=5, munis=5, años=4, vals=0.23|0.21|0.16|0.17|0.23
+  - desc: Predios Urbanos: a) Predios edificados cuyo valor real se determine en los términos de las Leyes de Hacienda Municipal y de Catastro Municip
+- `urbano_no_edificado_valor_hasta_1991` — apar=5, munis=4, años=4, vals=1.3|1.3|1.3|1.3|1.3
+  - desc: Predios no edificados, que hayan sido valuados catastralmente o se valúen en los términos de la Ley de Catastro del Estado de Jalisco, o cuy
+- `urbano_edificado_tablas_1992_a_1999` — apar=5, munis=4, años=3, vals=0.14|0.16|0.17|0.14|0.14
+  - desc: Predios edificados cuyo valor se determine en base a las tablas de valores de terreno y construcción, publicadas en el Periódico Oficial El 
+- `urbano_no_edificado_hasta_10000_m2` — apar=5, munis=1, años=5, vals=0.81|0.81|0.81|0.81|0.81
+  - desc: Predios urbanos: predios no edificados con una superficie de hasta 10,000 metros cuadrados, cuyo valor real se determine en los términos de 
+- `urbano_edificado_valor_real_determinado_lhmej` — apar=5, munis=5, años=4, vals=0.16|0.16|0.19|0.16|0.25
+  - desc: Predios urbanos edificados: sobre el valor determinado
+- `urbano_edificados_valor_1979_antes_1992` — apar=5, munis=4, años=5, vals=0.8|0.8|8.0|0.8|0.8
+  - desc: Predios urbanos: Predios edificados, cuyo valor se determine a partir de 1979, y antes del año de 1992 (Ley de Catastro del Estado de Jalisc
+- `urbano_edificado_valor_determinado_ley_hacienda` — apar=5, munis=4, años=4, vals=0.22|0.17|0.22|0.2|0.19
+  - desc: Predios urbanos edificados: sobre el valor determinado
+- `urbano_no_edificado_valor_determinado_ley_hacienda` — apar=5, munis=4, años=4, vals=0.33|0.33|0.33|0.3|0.33
+  - desc: Predios urbanos no edificados: sobre el valor determinado
+- `urbano_edificado_valorado_hasta_antes_1979` — apar=5, munis=5, años=5, vals=1.34|1.3|1.3|1.3|0.3
+  - desc: Predios urbanos edificados valuados... hasta antes de 1979, sobre el valor determinado
+- `urbanos_edificados_valor_fiscal` — apar=5, munis=5, años=4, vals=0.2|0.15|0.22|0.23|0.2
+  - desc: Predios urbanos edificados (sobre el valor determinado)
+- `urbanos_no_edificados_valor_fiscal` — apar=5, munis=5, años=4, vals=0.3|0.25|0.33|0.46|0.33
+  - desc: Predios urbanos no edificados (sobre el valor determinado)
+- `urbano_edificado_valores_1979_a_antes_1992` — apar=5, munis=5, años=2, vals=0.8|0.8|0.8|0.8|0.8
+  - desc: Predios edificados cuyo valor se determine a partir de 1979 y antes del año de 1992, en los términos de la Ley de Catastro del Estado de Jal
+- `urbano_no_edificado_valores_1992_a_antes_2000` — apar=5, munis=5, años=2, vals=0.3|0.3|0.3|0.3|0.3
+  - desc: Predios no edificados cuyo valor se determine a partir de 1992 y antes del año 2000, en los términos de la Ley de Hacienda Municipal o por c
+- `urbano_no_edificado_zona_urbana_valor_determinado` — apar=5, munis=3, años=5, vals=0.3|0.81|0.3|0.3|0.81
+  - desc: Predios no edificados que se localicen dentro de la zona urbana de la ciudad, cuyo valor real se determine en los términos de las Leyes de H
+- `predios_urbanos_no_edificados_valor_real_determinado` — apar=5, munis=5, años=3, vals=0.32|0.3|0.33|0.35|0.33
+  - desc: Predios urbanos: Predios no edificados, cuyo valor real se determine... sobre el valor determinado, el: 0.32; se adicionará una cuota fija d
+- `urbanos_edificados_1979_a_antes_1992` — apar=4, munis=4, años=3, vals=0.35|0.8|0.8|0.82
+  - desc: Predios urbanos: predios edificados cuyo valor se determine a partir de 1979 y antes del año de 1992, sobre el valor determinado
+- `urbano_edificado_valor_hasta_1979` — apar=4, munis=4, años=3, vals=1.3|1.3|1.3|1.3
+  - desc: Predios edificados... hasta antes de 1979, sobre el valor determinado
+- `urbano_edificado_valor_real_lhmej` — apar=4, munis=3, años=4, vals=0.18|0.16|0.2|0.18
+  - desc: Predios urbanos edificados cuyo valor real se determine en los términos de la Ley de Hacienda Municipal del Estado de Jalisco
+- `urbano_no_edificados_valor_real_lhmj` — apar=4, munis=3, años=3, vals=0.3|0.3|0.33|0.3
+  - desc: Predios urbanos: predios no edificados cuyo valor real se determine en los términos de la Ley de Hacienda Municipal del Estado de Jalisco, s
+- `urbanos_no_edificados_zona_urbana` — apar=4, munis=2, años=4, vals=0.75|0.75|0.75|0.3
+  - desc: Predios no edificados que se localicen dentro de la zona urbana de la ciudad cuyo valor se determine en los términos de la Ley de Hacienda M
+- `urbano_edificado_sobre_valor_determinado` — apar=4, munis=4, años=4, vals=0.16|0.18|0.16|0.19
+  - desc: Predios urbanos edificados cuyo valor real se determine, sobre el valor determinado
+- `urbano_no_edificado_sobre_valor_determinado` — apar=4, munis=4, años=4, vals=0.33|0.33|0.3|0.39
+  - desc: Predios urbanos no edificados, cuyo valor real se determine, sobre el valor determinado
+- `urbano_edificados_tablas_enero_1992_a_antes_2000` — apar=4, munis=3, años=4, vals=0.17|0.14|1.4|0.14
+  - desc: Predios edificados cuyo valor se determine en base a las tablas de valores de terreno y construcción, publicadas en el Periódico Oficial El 
+- `urbano_edificados_tablas_valores_enero_1992_antes_2000` — apar=4, munis=3, años=4, vals=0.16|0.2|1.6|0.2
+  - desc: Predios urbanos: Predios edificados, cuyo valor se determine en base a las tablas de valores de terreno y construcción publicadas en el Peri
+- `urbanos_edificados_valor_real_determinado_sobre_valor_determinado` — apar=4, munis=3, años=4, vals=0.25|0.18|0.25|0.25
+  - desc: Predios urbanos: predios edificados cuyo valor real se determine en los términos de la Ley de Hacienda Municipal del Estado de Jalisco, sobr
+- `urbanos_no_edificados_valor_real_determinado_sobre_valor_determinado` — apar=4, munis=3, años=4, vals=0.35|0.3|0.38|0.3
+  - desc: Predios urbanos: predios no edificados, cuyo valor real se determine en los términos de la Ley de Hacienda Municipal del Estado de Jalisco, 
+- `urbano_no_edificado_valor_real_determinado_lhmej` — apar=4, munis=4, años=4, vals=0.3|0.3|0.3|0.38
+  - desc: Predios urbanos no edificados: sobre el valor determinado
+- `urbano_no_edificados_valor_1992_antes_2000` — apar=4, munis=3, años=4, vals=0.3|3.0|0.3|0.3
+  - desc: Predios urbanos: Predios no edificados, cuyo valor se determine a partir de 1992, y antes del año 2000 (Ley de Hacienda Municipal o por oper
+- `urbano_no_edificado_valor_1992_a_1999` — apar=4, munis=4, años=4, vals=0.3|0.3|0.3|0.3
+  - desc: Predios no edificados cuyo valor se determine a partir de 1992 y antes del año 2000, en los términos de la Ley de Hacienda Municipal o por o
+- `urbanos_no_edificados_1992_a_antes_2000` — apar=4, munis=3, años=3, vals=0.3|0.3|0.3|0.31
+  - desc: Predios urbanos no edificados cuyo valor se determine a partir de 1992 y antes del año 2000 (Ley de Hacienda Municipal del Estado de Jalisco
+- `urbano_valor_determinado` — apar=4, munis=1, años=4, vals=0.17|0.17|0.19|0.21
+  - desc: Predios urbanos: predios cuyo valor se determine ... sobre el valor determinado
+- `urbanos_no_edificados_valor_1992_antes_2000` — apar=4, munis=2, años=3, vals=0.18|0.3|0.18|0.5
+  - desc: Predios urbanos: Predios no edificados, cuyo valor se determine a partir de 1992, y antes del año 2000, en los términos de la Ley de Haciend
+- `urbanos_edificados_valor_real_determinado_lhmj` — apar=4, munis=4, años=2, vals=0.21|0.18|0.16|0.16
+  - desc: Predios urbanos: Predios edificados cuyo valor real se determine... sobre el valor determinado
+- `urbanos_no_edificados_valor_real_determinado_lhmj` — apar=4, munis=4, años=2, vals=0.32|0.33|0.3|0.3
+  - desc: Predios urbanos: Predios no edificados, cuyo valor real se determine... sobre el valor determinado
+- `urbano_edificados_valor_real_lhm` — apar=4, munis=2, años=4, vals=0.18|0.18|0.18|0.2
+  - desc: Predios edificados cuyo valor real se determine en los términos de la Ley de Hacienda Municipal del Estado de Jalisco, sobre el valor determ
+- `urbano_edificados_valor_real` — apar=4, munis=4, años=4, vals=0.17|0.16|0.2|0.22
+  - desc: Predios urbanos: Predios edificados cuyo valor real se determine... sobre el valor determinado
+- `urbano_no_edificados_valor_real` — apar=4, munis=4, años=4, vals=0.31|0.31|0.3|0.4
+  - desc: Predios urbanos: Predios no edificados, cuyo valor real se determine... sobre el valor determinado
+- `urbano_edificado_valor_determinado_1979_a_antes_1992` — apar=4, munis=4, años=3, vals=0.8|0.85|0.8|0.8
+  - desc: Predios urbanos edificados cuyo valor se determine a partir de 1979 y antes del año 1992 (Ley de Catastro) u operación traslativa de dominio
+- `urbano_no_edificado_fuera_zona_urbana` — apar=3, munis=2, años=3, vals=0.3|0.3|0.3
+  - desc: Predios urbanos no edificados, que se localizan fuera de la zona urbana de la cabecera municipal, cuyo valor real se determine en los términ
+- `urbano_no_edificado_dentro_zona_urbana` — apar=3, munis=2, años=3, vals=0.35|0.35|0.35
+  - desc: Predios urbanos no edificados, que se localizan dentro de la zona urbana de la cabecera municipal, cuyo valor real se determine en los térmi
+- `urbano_edificado_valor_real_determinado_ley_hacienda` — apar=3, munis=2, años=3, vals=0.18|0.16|0.18
+  - desc: Predios edificados cuyo valor real se determine en los términos de la Ley de Hacienda Municipal del Estado de Jalisco, sobre el valor determ
+- `urbano_no_edificado_valor_real_determinado_ley_hacienda` — apar=3, munis=2, años=3, vals=0.3|0.3|0.3
+  - desc: Predios no edificados, cuyo valor real se determine en los términos de la Ley de Hacienda Municipal del Estado de Jalisco, sobre el valor de
+- `urbanos_edificados_valorados_hasta_antes_1979` — apar=3, munis=3, años=3, vals=1.3|1.3|13.0
+  - desc: Predios edificados valuados catastralmente o cuyo valor se obtuvo por cualquier operación traslativa de dominio, hasta antes de 1979, sobre 
+- `urbanos_no_edificados_valorados_hasta_antes_1992` — apar=3, munis=3, años=3, vals=1.3|1.3|1.3
+  - desc: Predios no edificados valuados catastralmente o valuados en los términos de la Ley de Catastro del Estado de Jalisco o cuyo valor se obtuvo 
+- `urbano_edificados_inciso_a` — apar=3, munis=2, años=3, vals=0.16|0.2|0.2
+  - desc: Predios edificados cuyo valor se determine en base a las tablas de valores de terreno y construcción, publicadas en el Periódico Oficial del
+- `urbano_no_edificado_hasta_1991` — apar=3, munis=3, años=3, vals=1.3|1.3|1.6
+  - desc: Predios urbanos no edificados valuados catastralmente o cuyo valor se obtuvo u obtenga por operación traslativa de dominio, hasta antes de 1
+- `urbano_edificado_tablas_valores_1992_a_1999` — apar=3, munis=3, años=3, vals=0.16|0.16|0.16
+  - desc: Predios urbanos edificados cuyo valor se determine en base a las tablas de valores de terreno y construcción publicadas a partir de enero de
+- `urbano_edificados_tablas_enero_1992_antes_2000` — apar=3, munis=2, años=3, vals=0.2|0.2|0.14
+  - desc: Predios urbanos edificados, cuyo valor se determine con base a tablas de valores de terreno y construcción publicadas a partir de enero de 1
+- `urbano_no_edificados_dentro_zonas_urbanas_hasta_10000_m2` — apar=3, munis=1, años=3, vals=0.81|0.81|0.81
+  - desc: Predios no edificados que se localicen dentro de las zonas urbanas, con una superficie de hasta 10,000 metros cuadrados, cuyo valor real se 
+- `urbano_edificado_valor_tablas_1992_antes_2000` — apar=3, munis=2, años=3, vals=0.14|0.14|0.35
+  - desc: Predios urbanos: Predios edificados, cuyo valor se determine en base a las tablas de valores de terreno y construcción publicadas ... a part
+- `urbanos_edificados_valor_determinado_lhmej` — apar=3, munis=3, años=2, vals=0.16|0.22|9.2
+  - desc: Predios urbanos edificados: sobre el valor determinado
+- `urbanos_no_edificados_valor_determinado_lhmej` — apar=3, munis=3, años=2, vals=0.3|0.32|0.35
+  - desc: Predios urbanos no edificados: sobre el valor determinado
+- `urbano_edificado_valor_real_ley_hacienda_inciso_f` — apar=3, munis=3, años=2, vals=0.2|0.18|0.14
+  - desc: Predios urbanos edificados cuyo valor real se determine en los términos de la Ley de Hacienda Municipal del Estado de Jalisco, sobre el valo
+- `urbano_no_edificado_valor_real_ley_hacienda_inciso_g` — apar=3, munis=3, años=2, vals=0.3|0.33|0.3
+  - desc: Predios urbanos no edificados cuyo valor real se determine en los términos de la Ley de Hacienda Municipal del Estado de Jalisco, sobre el v
+- `urbano_edificado_valor_hasta_1978` — apar=3, munis=3, años=3, vals=1.3|1.3|1.3
+  - desc: Predios edificados que hayan sido valuados catastralmente o cuyo valor se obtuvo por cualquier operación traslativa de dominio, hasta antes 
+- `urbano_edificado_valores_no_responden_tablas` — apar=3, munis=1, años=3, vals=0.92|0.92|0.96
+  - desc: Predios edificados cuyos valores no respondan a los valores unitarios vigentes de conformidad con las tablas de valores aprobadas para el pr
+- `urbano_edificado_valor_determinado_lhm` — apar=3, munis=3, años=3, vals=0.18|0.2|0.2
+  - desc: Predios urbanos edificados: sobre el valor determinado
+- `urbano_no_edificado_valor_determinado_lhm` — apar=3, munis=3, años=3, vals=0.33|0.3|0.3
+  - desc: Predios urbanos no edificados: sobre el valor determinado
+- `urbano_no_edificado_hasta_1992` — apar=3, munis=2, años=3, vals=1.34|0.134|1.49
+  - desc: Predios urbanos no edificados... hasta antes de 1992, sobre el valor determinado
+- `urbano_edificado_1979_a_1991` — apar=3, munis=3, años=3, vals=0.8|1.0|0.3
+  - desc: Predios edificados cuyo valor se determine a partir de 1979 y antes del año de 1992... sobre el valor determinado
+- `urbano_edificado_valuado_antes_1979` — apar=3, munis=3, años=2, vals=1.6|1.3|1.3
+  - desc: Predios edificados valuados catastralmente o cuyo valor se obtuvo por operación traslativa de dominio, hasta antes de 1979
+- `urbano_edificados_tablas_valores_1992_antes_2000` — apar=3, munis=3, años=3, vals=0.16|0.22|0.14
+  - desc: Predios urbanos edificados cuyo valor se determine en base a las tablas de valores de terreno y construcción publicadas a partir de enero de
+- `urbano_edificados_valor_real_sobre_valor_determinado` — apar=3, munis=2, años=3, vals=0.16|0.16|0.17
+  - desc: Predios edificados cuyo valor real se determine en los términos de la Ley de Hacienda Municipal del Estado de Jalisco, sobre el valor determ
+- `urbano_no_edificados_valor_real_sobre_valor_determinado` — apar=3, munis=2, años=3, vals=0.33|0.33|0.31
+  - desc: Predios no edificados, cuyo valor real se determine en los términos de la Ley de Hacienda Municipal del Estado de Jalisco, sobre el valor de
+- `urbanos_edificados_1979_antes_1992` — apar=3, munis=2, años=3, vals=0.8|0.8|1.0
+  - desc: Predios urbanos edificados... a partir de 1979 y antes del año de 1992
+- `predios_edificados_valor_real` — apar=3, munis=3, años=3, vals=0.16|0.0|0.16
+  - desc: Predios urbanos: predios edificados cuyo valor real se determine, sobre el valor determinado
+- `predios_no_edificados_valor_real` — apar=3, munis=3, años=3, vals=0.33|0.0|0.3
+  - desc: Predios urbanos: predios no edificados, cuyo valor real se determine, sobre el valor determinado
+- `urbano_edificado_tablas_valores_1992_a_antes_2006` — apar=3, munis=3, años=2, vals=0.16|0.16|0.16
+  - desc: Predios edificados cuyo valor se determine en base a las tablas de valores de terreno y construcción, publicadas en el Periódico Oficial El 
+- `urbano_no_edificados_fuera_zonas_urbanas_valor_real_lhmj` — apar=3, munis=1, años=3, vals=0.5|0.5|0.5
+  - desc: Predios no edificados que se localicen fuera de las zonas urbanas cuyo valor real se determine en los términos de la Ley de Hacienda Municip
+- `urbanos_edificados_1992_antes_2000` — apar=3, munis=2, años=3, vals=0.35|0.14|0.14
+  - desc: Predios urbanos: predios edificados, cuyo valor se determine en base a las tablas de valores de terreno y construcción publicadas a partir d
+- `urbano_edificado_valor_real_lhmunicipal` — apar=3, munis=3, años=3, vals=0.16|0.2|0.2
+  - desc: Predios edificados cuyo valor real se determine en los términos de la Ley de Hacienda Municipal del Estado de Jalisco
+- `urbano_no_edificado_valor_real_lhmunicipal` — apar=3, munis=3, años=3, vals=0.31|0.3|0.35
+  - desc: Predios no edificados, cuyo valor real se determine en los términos de la Ley de Hacienda Municipal del Estado de Jalisco
+- `urbano_edificado_valor_catastral` — apar=3, munis=1, años=3, vals=0.22|0.22|0.22
+  - desc: Predios urbanos edificados: sobre el valor determinado
+- `urbano_no_edificado_valor_catastral` — apar=3, munis=1, años=3, vals=0.33|0.33|0.33
+  - desc: Predios urbanos no edificados: sobre el valor determinado
+- `urbano_valor_real` — apar=3, munis=1, años=3, vals=0.254|0.254|0.254
+  - desc: Predios Urbanos (a): sobre el valor determinado, el: 0.254
+- `urbanos_edificados_tablas_enero_1992_a_antes_2000` — apar=3, munis=3, años=2, vals=0.2|0.24|0.2
+  - desc: III. c) Predios edificados, cuyo valor se determine en base a las tablas de valores de terreno y construcción publicadas a partir de enero d
+- `urbanos_edificados_valor_hasta_antes_1979` — apar=3, munis=3, años=3, vals=1.3|1.37|1.3
+  - desc: Predios edificados que hayan sido valuados catastralmente o cuyo valor se obtuvo por cualquier operación traslativa de dominio, hasta antes 
+- `urbano_edificados_valores_no_responden_tablas` — apar=3, munis=1, años=3, vals=0.92|0.96|1.01
+  - desc: Predios edificados cuyos valores no respondan a los valores unitarios vigentes de conformidad con las tablas de valores aprobadas para el pr
+- `urbano_no_edificados_fuera_zonas_urbanas_valor_real_lhm` — apar=3, munis=1, años=3, vals=0.5|0.5|0.5
+  - desc: Predios no edificados que se localicen fuera de las zonas urbanas cuyo valor real se determine en los términos de la Ley de Hacienda Municip
+- `urbano_no_edificado_valorado_hasta_antes_1992` — apar=3, munis=3, años=3, vals=1.3|1.3|0.3
+  - desc: Predios no edificados, que hayan sido valuados catastralmente o se valúen en los términos de la Ley de Catastro del Estado de Jalisco, o cuy
+- `predios_edificados` — apar=3, munis=2, años=3, vals=0.16|0.0|0.16
+  - desc: Predios edificados... sobre el valor determinado, el: 0.16
+- `predios_no_edificados` — apar=3, munis=2, años=3, vals=0.3|0.0|0.3
+  - desc: Predios no edificados... sobre el valor determinado, el: 0.30
+- `urbano_edificados_tablas_valores_ene_1992_antes_2000` — apar=3, munis=3, años=3, vals=0.16|0.16|0.14
+  - desc: Predios edificados, cuyo valor se determine en base a las tablas de valores de terreno y construcción publicadas en el Periódico Oficial El 
+- `solares_urbanos_edificados_o_no` — apar=3, munis=1, años=3, vals=0.2|0.2|0.2
+  - desc: Solares urbanos, edificados o no edificados aún sin contar con cuenta predial que acredite su posesión real
+- `urbano_no_edificado_mas_10000_01_m2` — apar=3, munis=1, años=3, vals=1.0|1.0|1.0
+  - desc: Predios no edificados con una superficie mayor de 10,000.01 metros cuadrados: sobre el valor determinado
+- `urbano_no_edificado_valor_determinado_1992_a_antes_2000` — apar=3, munis=3, años=2, vals=0.3|0.3|0.3
+  - desc: Predios no edificados cuyo valor se determine a partir de 1992 y antes del año 2000, en los términos de la Ley de Hacienda Municipal o por c
+- `urbano_edificados_valor_real_determinado_lhm` — apar=3, munis=2, años=2, vals=9.21|0.16|0.23
+  - desc: Predios edificados cuyo valor real se determine en los términos de la Ley de Hacienda Municipal del Estado de Jalisco, sobre el valor determ
+- `urbano_no_edificados_valor_real_determinado_lhm` — apar=3, munis=2, años=2, vals=0.34|0.3|0.39
+  - desc: Predios no edificados, cuyo valor real se determine en los términos de la Ley de Hacienda Municipal del Estado de Jalisco, sobre el valor de
+- `urbano_no_edificados_fuera_zona_urbana_cabecera` — apar=3, munis=2, años=3, vals=0.11|0.3|0.3
+  - desc: Predios urbanos: Predios no edificados, que se localizan fuera de la zona urbana de la cabecera municipal, cuyo valor real se determine en l
+- `urbano_no_edificados_dentro_zona_urbana_cabecera` — apar=3, munis=2, años=3, vals=0.36|0.36|0.35
+  - desc: Predios urbanos: Predios no edificados, que se localizan dentro de la zona urbana de la cabecera municipal, cuyo valor real se determine en 
+- `urbanos_no_edificados_valor_real_lhmj` — apar=3, munis=3, años=3, vals=3.1|0.35|0.33
+  - desc: Predios no edificados, cuyo valor real se determine en los términos de la Ley de Hacienda Municipal del Estado de Jalisco, sobre el valor de
+- `urbanos_edificados_sobre_valor_determinado` — apar=3, munis=3, años=2, vals=16.0|0.14|0.2
+  - desc: Predios urbanos: predios edificados, sobre el valor determinado
+- `urbanos_no_edificados_sobre_valor_determinado` — apar=3, munis=3, años=2, vals=30.0|0.3|0.3
+  - desc: Predios urbanos: predios no edificados, sobre el valor determinado
+- `urbanos_edificados_valor_determinado_ley_hacienda_municipal` — apar=2, munis=2, años=2, vals=0.16|0.2
+  - desc: Predios urbanos: a) Predios edificados, sobre el valor determinado
+- `urbanos_no_edificados_valor_determinado_ley_hacienda_municipal` — apar=2, munis=2, años=2, vals=0.3|0.3
+  - desc: Predios urbanos: b) Predios no edificados, sobre el valor determinado
+- `predios_urbanos_no_edificados_zona_urbana` — apar=2, munis=1, años=2, vals=0.81|0.12
+  - desc: Predios urbanos no edificados dentro de la zona urbana de la ciudad (sobre el valor determinado/valor real)
+- `urbano_no_edificado_dentro_zonas_urbanas_hasta_10000_m2` — apar=2, munis=1, años=2, vals=0.81|0.81
+  - desc: Predios urbanos no edificados dentro de las zonas urbanas, con superficie de hasta 10,000 metros cuadrados (valor real conforme a Ley de Hac
+- `urbano_no_edificado_dentro_zonas_urbanas_mas_10000_01_m2` — apar=2, munis=1, años=2, vals=1.0|1.0
+  - desc: Predios urbanos no edificados dentro de las zonas urbanas, con superficie mayor de 10,000.01 metros cuadrados (valor real conforme a Ley de 
+- `urbano_edificado_valor_1992_antes_2000_tablas` — apar=2, munis=1, años=2, vals=0.14|0.14
+  - desc: Predios urbanos: predios edificados, cuyo valor se determine en base a las tablas de valores de terreno y construcción publicadas a partir d
+- `urbanos_no_edificados_valor_real_determinado_ley_hacienda_municipal` — apar=2, munis=2, años=2, vals=0.3|0.32
+  - desc: Predios no edificados cuyo valor real se determine en los términos de la Ley de Hacienda Municipal del Estado de Jalisco, sobre el valor det
+- `urbanos_no_edificados_zona_urbana_valor_real_determinado` — apar=2, munis=2, años=2, vals=0.81|0.3
+  - desc: Predios no edificados que se localicen dentro de la zona urbana de la ciudad... sobre el valor determinado
+- `urbano_edificados_valuados_hasta_antes_1979_1_30` — apar=2, munis=1, años=2, vals=1.3|1.3
+  - desc: Predios urbanos: Predios edificados que hayan sido valuados catastralmente o cuyo valor se obtuvo por cualquier operación traslativa de domi
+- `urbano_edificados_valor_1979_a_antes_1992_0_80` — apar=2, munis=1, años=2, vals=0.8|0.8
+  - desc: Predios urbanos: Predios edificados, cuyo valor se determine a partir de 1979, y antes del año de 1992 (Ley de Catastro o traslativa de domi
+- `urbano_no_edificados_valuados_hasta_antes_1992_1_30` — apar=2, munis=1, años=2, vals=1.3|1.3
+  - desc: Predios urbanos: Predios no edificados, que hayan sido valuados catastralmente o se valúen (Ley de Catastro o traslativa de dominio), hasta 
+- `urbano_no_edificados_valor_1992_a_antes_2000_0_30` — apar=2, munis=1, años=2, vals=0.3|0.3
+  - desc: Predios urbanos: Predios no edificados, cuyo valor se determine a partir de 1992, y antes del año 2000 (Ley de Hacienda Municipal o traslati
+- `urbano_edificados_tablas_valores_ene_1992_a_antes_2000_0_14` — apar=2, munis=1, años=2, vals=0.14|0.14
+  - desc: Predios urbanos: Predios edificados, cuyo valor se determine en base a las tablas de valores de terreno y construcción publicadas a partir d
+- `urbano_edificado_valor_determinado_lhmunicipal` — apar=2, munis=2, años=2, vals=0.2|0.18
+  - desc: Predios urbanos edificados: sobre el valor determinado, el: 0.20
+- `urbano_no_edificado_valor_determinado_lhmunicipal` — apar=2, munis=2, años=2, vals=0.3|0.33
+  - desc: Predios urbanos no edificados: sobre el valor determinado, el: 0.30
+- `urbano_no_edificado_hasta_10000_m2_valor_real_determinado_lhm_jalisco` — apar=2, munis=1, años=2, vals=0.81|0.81
+  - desc: Predios urbanos no edificados con superficie hasta 10,000 m2: sobre el valor determinado (valor real determinado en términos de la Ley de Ha
+- `urbano_no_edificado_mayor_10000_01_m2_valor_real_determinado_lhm_jalisco` — apar=2, munis=1, años=2, vals=1.0|1.0
+  - desc: Predios urbanos no edificados con superficie mayor de 10,000.01 m2: sobre el valor determinado (valor real determinado en términos de la Ley
+- `urbano_edificado_valuado_hasta_1978` — apar=2, munis=2, años=2, vals=1.3|1.3
+  - desc: Predios urbanos edificados valuados catastralmente o cuyo valor se obtuvo por operación traslativa de dominio, hasta antes de 1979
+- `urbano_no_edificado_1992_a_1999` — apar=2, munis=2, años=2, vals=0.3|0.3
+  - desc: Predios urbanos no edificados cuyo valor se determine a partir de 1992 y antes del año 2000
+- `urbano_edificados_valores_no_responden_tablas_vigentes` — apar=2, munis=1, años=2, vals=0.92|0.92
+  - desc: Predios edificados cuyos valores no respondan a los valores unitarios vigentes de conformidad con las tablas de valores aprobadas para el pr
+- `urbano_no_edificados_dentro_zonas_urbanas_mayor_10000_01_m2` — apar=2, munis=1, años=2, vals=1.0|1.0
+  - desc: Predios no edificados que se localicen dentro de las zonas urbanas, con una superficie mayor de 10,000.01 metros cuadrados, cuyo valor real 
+- `urbano_edificado_desde_2002` — apar=2, munis=1, años=2, vals=0.22|0.22
+  - desc: Predios edificados cuyo valor real se determine en los términos de la Ley de Hacienda Municipal del Estado de Jalisco, a partir del 2002 sob
+- `urbano_no_edificado_valor_real_lhmej` — apar=2, munis=2, años=2, vals=0.3|0.33
+  - desc: Predios urbanos: Predios no edificados, cuyo valor real se determine en los términos de la Ley de Hacienda Municipal del Estado de Jalisco, 
+- `urbanos_no_edificados_valor_real_ley_hacienda` — apar=2, munis=2, años=2, vals=0.33|0.3
+  - desc: Predios urbanos no edificados cuyo valor real se determine en los términos de la Ley de Hacienda Municipal del Estado de Jalisco, sobre el v
+- `urbano_edificados_valor_real_valor_determinado` — apar=2, munis=2, años=2, vals=0.2|0.18
+  - desc: Predios urbanos edificados... sobre el valor determinado
+- `urbano_no_edificados_valor_real_valor_determinado` — apar=2, munis=2, años=2, vals=0.2|0.31
+  - desc: Predios urbanos no edificados... sobre el valor determinado
+- `urbano_baldio_valor_determinado` — apar=2, munis=1, años=2, vals=0.6|0.7
+  - desc: Predios urbanos baldíos: sobre el valor determinado
+- `urbano_no_edificado_mayor_10000_01_m2` — apar=2, munis=1, años=2, vals=1.0|1.0
+  - desc: Predios urbanos: predios no edificados con una superficie mayor de 10,000.01 metros cuadrados, cuyo valor real se determine en los términos 
+- `urbano_edificado_valor_1979_1991` — apar=2, munis=2, años=2, vals=0.8|0.8
+  - desc: Predios edificados cuyo valor se determine a partir de 1979 y antes del año de 1992, en los términos de la Ley de Catastro del Estado de Jal
+- `urbano_no_edificado_valor_1992_1999` — apar=2, munis=2, años=2, vals=0.3|0.3
+  - desc: Predios no edificados cuyo valor se determine a partir de 1992 y antes del año 2000, en los términos de la Ley de Hacienda Municipal del Est
+- `urbanos_edificados_traslativa_antes_1979` — apar=2, munis=1, años=2, vals=1.3|1.3
+  - desc: Predios urbanos edificados... hasta antes de 1979
+- `urbanos_edificados_tablas_valores_1992_antes_2000` — apar=2, munis=2, años=2, vals=0.14|0.14
+  - desc: Predios urbanos edificados... en base a las tablas de valores de terreno y construcción... a partir de enero de 1992 y antes del 2000
+- `urbano_edificado_valor_real_lh_municipal` — apar=2, munis=1, años=2, vals=0.25|0.28
+  - desc: Predios edificados cuyo valor real se determine en los términos de la Ley de Hacienda Municipal del Estado de Jalisco, sobre el valor determ
+- `urbano_no_edificado_valor_real_lh_municipal` — apar=2, munis=1, años=2, vals=0.35|0.28
+  - desc: Predios no edificados, cuyo valor real se determine en los términos de la Ley de Hacienda Municipal del Estado de Jalisco, sobre el valor de
+- `urbano_no_edificado_fuera_zonas_urbanas_valor_real_lhmj` — apar=2, munis=1, años=2, vals=0.5|0.5
+  - desc: Predios no edificados que se localicen fuera de las zonas urbanas cuyo valor real se determine en los términos de la Ley de Hacienda Municip
+- `urbano_no_edificados_fuera_zona_urbana_cabecera_inciso_b` — apar=2, munis=1, años=2, vals=0.3|0.3
+  - desc: Predios urbanos: Predios no edificados fuera de la zona urbana de la cabecera municipal... (inciso b)
+- `urbano_no_edificados_dentro_zona_urbana_cabecera_inciso_c` — apar=2, munis=1, años=2, vals=0.35|0.36
+  - desc: Predios urbanos: Predios no edificados dentro de la zona urbana de la cabecera municipal... (inciso c)
+- `urbano_no_edificado_valor_1992_a_antes_2009` — apar=2, munis=2, años=1, vals=0.3|0.3
+  - desc: Predios urbanos no edificados cuyo valor se determine a partir de 1992 y antes del año 2009, en los términos de la Ley de Hacienda Municipal
+- `urbano_edificado_valor_determinado_0_23_millar` — apar=2, munis=1, años=2, vals=0.23|0.23
+  - desc: Predios Urbanos. Predios edificados cuyo valor real se determine en los términos de las Leyes de Hacienda Municipal y de Catastro Municipal 
+- `urbano_edificado_valor_1992_antes_2000` — apar=2, munis=2, años=2, vals=0.35|0.14
+  - desc: III. Predios urbanos: b) Predios edificados, cuyo valor se determine en base a las tablas de valores de terreno y construcción publicadas en
+- `urbano_edificado_valor` — apar=2, munis=2, años=2, vals=0.16|0.18
+  - desc: Predios urbanos edificados: sobre el valor determinado
+- `urbano_no_edificado_valor` — apar=2, munis=2, años=2, vals=0.3|0.33
+  - desc: Predios urbanos no edificados: sobre el valor determinado
+- `urbano_edificado_valor_fiscal_determinado_lhmj` — apar=2, munis=2, años=2, vals=0.15|0.2
+  - desc: Predios urbanos edificados: sobre el valor determinado, el 0.15 al millar.
+- `urbano_no_edificado_valor_fiscal_determinado_lhmj` — apar=2, munis=2, años=2, vals=0.33|0.3
+  - desc: Predios urbanos no edificados: sobre el valor determinado, el 0.33 al millar.
+- `urbano_edificados_valor_determinado_1979_a_antes_1992` — apar=2, munis=2, años=2, vals=0.8|0.8
+  - desc: Predios edificados, cuyo valor se determine a partir de 1979 y antes del año de 1992 en los términos de la Ley de Catastro Municipal del Est
+- `urbano_edificados_valor_real_determinado_lhmj` — apar=2, munis=2, años=2, vals=0.25|0.21
+  - desc: Predios urbanos: Predios edificados cuyo valor real se determine en los términos de la Ley de Hacienda Municipal del Estado de Jalisco, sobr
+- `urbano_no_edificados_valor_real_determinado_lhmj` — apar=2, munis=2, años=2, vals=0.38|0.32
+  - desc: Predios urbanos: Predios no edificados, cuyo valor real se determine en los términos de la Ley de Hacienda Municipal del Estado de Jalisco, 
+- `urbano_edificado_traslativa_antes_1979` — apar=2, munis=1, años=2, vals=1.3|1.3
+  - desc: Predios edificados valuados catastralmente cuyo valor se obtuvo por operación traslativa de dominio, hasta antes de 1979, sobre el valor det
+- `urbano_edificado_valor_fiscal_determinado_lhm_jalisco` — apar=2, munis=2, años=2, vals=0.17|0.17
+  - desc: Predios urbanos edificados: sobre el valor determinado, el: 0.17 (tasa bimestral al millar).
+- `urbano_no_edificado_valor_fiscal_determinado_lhm_jalisco` — apar=2, munis=2, años=2, vals=0.3|0.3
+  - desc: Predios urbanos no edificados: sobre el valor determinado, el: 0.3 (tasa bimestral al millar).
+- `urbano_edificado_valor_fiscal_lhmj` — apar=2, munis=2, años=2, vals=0.2|0.17
+  - desc: Predios urbanos: Predios edificados cuyo valor real se determine en los términos de la Ley de Hacienda Municipal del Estado de Jalisco, sobr
+- `urbano_no_edificado_valor_fiscal_lhmj` — apar=2, munis=2, años=2, vals=0.3|0.33
+  - desc: Predios urbanos: Predios no edificados, cuyo valor real se determine en los términos de la Ley de Hacienda Municipal del Estado de Jalisco, 
+- `urbanos_no_edificados_valor_real_determinado_ley_hacienda` — apar=2, munis=2, años=2, vals=0.3|0.31
+  - desc: Predios urbanos: Predios no edificados, cuyo valor real se determine en los términos de la Ley de Hacienda Municipal del Estado de Jalisco, 
+- `urbano_edificado_tablas_enero_1992_antes_2000` — apar=2, munis=2, años=2, vals=0.14|0.15
+  - desc: Predios edificados cuyo valor se determine en base a las tablas de valores de terreno y construcción publicadas en el Periódico Oficial El E
+- `urbano_agropecuario_comercial_industrial` — apar=2, munis=1, años=2, vals=0.8|0.9746
+  - desc: Predios urbanos edificados y no edificados cuando su naturaleza sea agropecuaria, comercial o industrial
+- `urbanos_no_edificados_valor_hasta_antes_1992` — apar=2, munis=2, años=2, vals=1.3|1.37
+  - desc: Predios no edificados valuados catastralmente o en términos de la Ley de Catastro, o cuyo valor se obtuvo por operación traslativa de domini
+- `urbano_edificado_1992_antes_2000` — apar=2, munis=2, años=2, vals=0.14|0.33
+  - desc: Predios urbanos: b) Predios edificados, cuyo valor se determine en base a las tablas de valores de terreno y construcción ... a partir del m
+- `urbano_naturaleza_agropecuaria_comercial_industrial` — apar=2, munis=1, años=2, vals=0.8|0.824
+  - desc: Predios urbanos: predios edificados y no edificados, cuando su naturaleza sea agropecuaria, comercial o industrial
+- `urbanos_baldios_fuera_zonas_edificadas` — apar=2, munis=1, años=2, vals=0.3|0.3
+  - desc: Predios urbanos: b) Predios baldíos que se localicen fuera de las zonas edificadas... sobre el valor determinado, el: 0.30. A las cantidades
+- `urbanos_baldios_dentro_zonas_edificadas` — apar=2, munis=1, años=2, vals=0.4|0.4
+  - desc: Predios urbanos: c) Predios baldíos que se localicen dentro de las zonas edificadas... sobre el valor determinado, el: 0.40. A las cantidade
+- `urbano_edificado_valor_real_hacienda_municipal` — apar=2, munis=2, años=2, vals=0.17|0.2
+  - desc: Predios edificados cuyo valor real se determine en los términos de la Ley de Hacienda Municipal del Estado de Jalisco, sobre el valor determ
+- `urbano_no_edificado_valor_real_hacienda_municipal` — apar=2, munis=2, años=2, vals=0.31|0.3
+  - desc: Predios no edificados, cuyo valor real se determine en los términos de la Ley de Hacienda Municipal del Estado de Jalisco, sobre el valor de
+- `predios_no_edificados_valor_real_determinado` — apar=2, munis=2, años=2, vals=30.0|0.31
+  - desc: Predios no edificados, cuyo valor real se determine en los términos de la Ley de Hacienda Municipal del Estado de Jalisco
+- `urbanos_naturaleza_agropecuaria_comercial_o_industrial` — apar=2, munis=1, años=2, vals=0.824|0.85
+  - desc: Predios urbanos edificados y no edificados cuando su naturaleza sea agropecuaria, comercial o industrial
+- `urbano_edificados_hasta_1979` — apar=2, munis=2, años=2, vals=1.3|1.3
+  - desc: Predios edificados valuados catastralmente o cuyo valor se obtuvo por operación traslativa de dominio, hasta antes de 1979, sobre el valor d
+- `urbanos_edificados_valor_real_lhm_jalisco` — apar=2, munis=1, años=2, vals=0.18|0.18
+  - desc: Predios edificados cuyo valor real se determine en los términos de la Ley de Hacienda Municipal del Estado de Jalisco, sobre el valor determ
+- `urbanos_no_edificados_valor_real_lhm_jalisco` — apar=2, munis=1, años=2, vals=15.75|15.75
+  - desc: Predios no edificados, cuyo valor real se determine en los términos de la Ley de Hacienda Municipal del Estado de Jalisco, sobre el valor de
+- `urbanos_edificados_tablas_enero_1992_antes_2000` — apar=2, munis=2, años=2, vals=0.17|0.33
+  - desc: e) Predios edificados cuyo valor se determine en base a las tablas de valores de terreno y construcción ... a partir del mes de enero de 199
+- `urbanos_edificados_valor_real_lhmj` — apar=2, munis=2, años=2, vals=1.6|0.2
+  - desc: Predios edificados cuyo valor real se determine en los términos de la Ley de Hacienda Municipal del Estado de Jalisco, sobre el valor determ
+- `predios_edificados_hasta_1979` — apar=2, munis=2, años=1, vals=1.34|1.3
+  - desc: Predios edificados que hayan sido valuados catastralmente o cuyo valor se obtuvo por cualquier operación traslativa de dominio, hasta antes 
+- `predios_edificados_1979_a_1992` — apar=2, munis=2, años=1, vals=0.82|0.8
+  - desc: Predios edificados, cuyo valor se determine a partir de 1979, y antes del año de 1992
+- `predios_no_edificados_hasta_1992` — apar=2, munis=2, años=1, vals=0.134|1.3
+  - desc: Predios no edificados, que hayan sido valuados catastralmente o se valúen hasta antes de 1992
+- `predios_no_edificados_1992_a_2000` — apar=2, munis=2, años=1, vals=0.31|0.3
+  - desc: Predios no edificados, cuyo valor se determine a partir de 1992, y antes del año 2000
+- `predios_edificados_tablas_valores_1992_a_2000` — apar=2, munis=2, años=1, vals=0.15|0.16
+  - desc: Predios edificados, cuyo valor se determine en base a las tablas de valores de terreno y construcción publicadas en el Periódico Oficial del
+- `urbanos_edificados_tablas_1992_a_antes_2000` — apar=2, munis=2, años=2, vals=0.14|0.15
+  - desc: Predios edificados cuyo valor se determine en base a las tablas de valores de terreno y construcción publicadas a partir de enero de 1992 y 
+- `urbano_edificados_y_no_edificados_hasta_70000` — apar=2, munis=1, años=2, vals=0.77|0.77
+  - desc: Predios edificados y no edificados cuyo valor no exceda los $70,000.00
+- `urbano_no_edificado_antes_2000` — apar=1, munis=1, años=1, vals=0.3
+  - desc: Predios urbanos: predios no edificados cuyo valor se determine antes del año 2000, en los términos de la Ley de Hacienda Municipal o por cua
+- `urbano_edificado_tablas_antes_2000` — apar=1, munis=1, años=1, vals=0.14
+  - desc: Predios urbanos: predios edificados cuyo valor se determine en base a las tablas de valores de terreno y construcción, publicadas en el Peri
+- `urbano_edificado_valor_real_lhm_jalisco` — apar=1, munis=1, años=1, vals=0.15
+  - desc: Predios urbanos: predios edificados cuyo valor real se determine en los términos de la Ley de Hacienda Municipal del Estado de Jalisco, sobr
+- `urbano_no_edificado_valor_real_lhm_jalisco` — apar=1, munis=1, años=1, vals=0.3
+  - desc: Predios urbanos: predios no edificados, cuyo valor real se determine en los términos de la Ley de Hacienda Municipal del Estado de Jalisco, 
+- `urbano_edificado_valores_no_responden_tablas_vigentes` — apar=1, munis=1, años=1, vals=0.92
+  - desc: Predios urbanos edificados cuyos valores no respondan a los valores unitarios vigentes de conformidad con las tablas de valores aprobadas pa
+- `urbano_edificado_zona_urbana_cabecera` — apar=1, munis=1, años=1, vals=0.16
+  - desc: Predios urbanos: predios edificados dentro de la zona urbana de la cabecera municipal, sobre el valor determinado
+- `urbano_no_edificado_zona_urbana_cabecera` — apar=1, munis=1, años=1, vals=0.3
+  - desc: Predios urbanos: predios no edificados dentro de la zona urbana de la cabecera municipal, sobre el valor determinado
+- `urbano_edificados_valorados_antes_1979` — apar=1, munis=1, años=1, vals=1.3
+  - desc: Predios urbanos: predios edificados que hayan sido valuados catastralmente o cuyo valor se obtuvo por cualesquiera operación traslativa de d
+- `urbano_edificado_valor_real_determinado_lh_municipal` — apar=1, munis=1, años=1, vals=0.15
+  - desc: Predios urbanos edificados: sobre el valor determinado
+- `urbano_no_edificado_valor_real_determinado_lh_municipal` — apar=1, munis=1, años=1, vals=0.33
+  - desc: Predios urbanos no edificados: sobre el valor determinado
+- `urbanos_edificados_valor_real_determinado_ley_hacienda_municipal` — apar=1, munis=1, años=1, vals=0.18
+  - desc: Predios edificados cuyo valor real se determine en los términos de la Ley de Hacienda Municipal del Estado de Jalisco, sobre el valor determ
+- `urbano_edificados_valor_real_ley_hacienda_municipal_0_16` — apar=1, munis=1, años=1, vals=0.16
+  - desc: Predios urbanos: Predios edificados cuyo valor real se determine en los términos de la Ley de Hacienda Municipal del Estado de Jalisco, sobr
+- `urbano_no_edificados_valor_real_ley_hacienda_municipal_0_33` — apar=1, munis=1, años=1, vals=0.33
+  - desc: Predios urbanos: Predios no edificados, cuyo valor real se determine en los términos de la Ley de Hacienda Municipal del Estado de Jalisco, 
+- `urbano_edificado_tablas_valores_ene_1992_antes_2000` — apar=1, munis=1, años=1, vals=0.14
+  - desc: Predios edificados cuyo valor se determine en base a las tablas de valores de terreno y construcción... a partir de enero de 1992 y antes de
+- `urbano_no_edificados_inciso_b` — apar=1, munis=1, años=1, vals=0.3
+  - desc: Predios no edificados cuyo valor real se determine en base a las tablas de valores de terreno, sobre el valor determinado
+- `urbano_edificados_tablas_1992_a_antes_2000_tasa_0_30` — apar=1, munis=1, años=1, vals=0.3
+  - desc: Predios edificados, cuyo valor se determine en base a las tablas de valores de terreno y construcción publicadas a partir de enero de 1992 y
+- `urbano_edificado_tablas_publicadas_1992_antes_2000` — apar=1, munis=1, años=1, vals=0.16
+  - desc: Predios urbanos: predios edificados cuyo valor se determine en base a las tablas de valores de terreno y construcción publicadas a partir de
+- `urbanos_edificados_valor_real_sobre_valor` — apar=1, munis=1, años=1, vals=0.18
+  - desc: Predios urbanos edificados cuyo valor real se determine en los términos de la Ley de Hacienda Municipal del Estado de Jalisco, sobre el valo
+- `urbanos_no_edificados_valor_real_sobre_valor` — apar=1, munis=1, años=1, vals=0.3
+  - desc: Predios urbanos no edificados cuyo valor real se determine en los términos de la Ley de Hacienda Municipal del Estado de Jalisco, sobre el v
+- `urbanos_no_edificados_fuera_zona_urbana_cabecera` — apar=1, munis=1, años=1, vals=0.3
+  - desc: Predios urbanos no edificados fuera de la zona urbana de la cabecera municipal... sobre el valor determinado
+- `urbanos_no_edificados_dentro_zona_urbana_cabecera` — apar=1, munis=1, años=1, vals=0.35
+  - desc: Predios urbanos no edificados dentro de la zona urbana de la cabecera municipal... sobre el valor determinado
+- `urbano_edificado_valor_real_ley_hacienda_municipal_sin_valuacion` — apar=1, munis=1, años=1, vals=0.17
+  - desc: Predios edificados cuyo valor real se determine en los términos de la Ley de Hacienda Municipal del Estado de Jalisco, sobre el valor determ
+- `urbano_no_edificado_valor_real_ley_hacienda_municipal_sin_valuacion` — apar=1, munis=1, años=1, vals=0.33
+  - desc: Predios no edificados cuyo valor real se determine en los términos de la Ley de Hacienda Municipal del Estado de Jalisco, sobre el valor det
+- `urbano_no_edificados_valor_1992_a_antes_2000_ley_hacienda` — apar=1, munis=1, años=1, vals=0.3
+  - desc: Predios urbanos: Predios no edificados, cuyo valor se determine a partir de 1992, y antes del año 2000, en los términos de la Ley de Haciend
+- `predios_urbanos_edificados_valor_real` — apar=1, munis=1, años=1, vals=0.23
+  - desc: Predios Urbanos: a) Predios edificados... sobre el valor determinado
+- `predios_urbanos_no_edificados_zona_urbana_valor_real` — apar=1, munis=1, años=1, vals=0.81
+  - desc: Predios Urbanos: b) Predios no edificados que se localicen dentro de la zona urbana de la ciudad... sobre el valor determinado
+- `urbano_edificados_valor_1979_1992` — apar=1, munis=1, años=1, vals=0.8
+  - desc: Predios urbanos edificados, cuyo valor se determine a partir de 1979 y antes de 1992 (Ley de Catastro del Estado de Jalisco u operación tras
+- `urbano_no_edificados_valor_1992_2000` — apar=1, munis=1, años=1, vals=0.3
+  - desc: Predios urbanos no edificados, cuyo valor se determine a partir de 1992 y antes del año 2000 (Ley de Hacienda Municipal u operación traslati
+- `urbano_edificados_tablas_1992_antes_2000` — apar=1, munis=1, años=1, vals=0.14
+  - desc: Predios edificados cuyo valor se determine en base a las tablas de valores de terreno y construcción publicadas a partir de enero de 1992 y 
+- `urbano_edificados_valor_real_lhm_jalisco` — apar=1, munis=1, años=1, vals=0.16
+  - desc: Predios edificados cuyo valor real se determine en los términos de la Ley de Hacienda Municipal del Estado de Jalisco
+- `urbano_no_edificados_valor_real_lhm_jalisco` — apar=1, munis=1, años=1, vals=0.3
+  - desc: Predios no edificados cuyo valor real se determine en los términos de la Ley de Hacienda Municipal del Estado de Jalisco
+- `urbano_edificados_valor_real_lhmej` — apar=1, munis=1, años=1, vals=0.18
+  - desc: Predios edificados cuyo valor real se determine en los términos de la Ley de Hacienda Municipal del Estado de Jalisco
+- `urbano_no_edificados_fuera_zonas_urbanas_valor_real_lhmej` — apar=1, munis=1, años=1, vals=0.5
+  - desc: Predios no edificados que se localicen fuera de las zonas urbanas cuyo valor real se determine en los términos de la Ley de Hacienda Municip
+- `urbanos_edificados_valor_determinado_lhm_jalisco` — apar=1, munis=1, años=1, vals=0.17
+  - desc: Predios urbanos edificados: sobre el valor determinado
+- `urbanos_no_edificados_valor_determinado_lhm_jalisco` — apar=1, munis=1, años=1, vals=0.3
+  - desc: Predios urbanos no edificados: sobre el valor determinado
+- `urbanos_edificados_valor_real_ley_hacienda` — apar=1, munis=1, años=1, vals=0.2
+  - desc: Predios urbanos edificados cuyo valor real se determine en los términos de la Ley de Hacienda Municipal del Estado de Jalisco, sobre el valo
+- `urbanos_predios_edificados_valor_determinado_tablas_terreno_construccion_inciso_a` — apar=1, munis=1, años=1, vals=0.17
+  - desc: Predios edificados cuyo valor se determine en base a las tablas de valores de terreno y construcción, sobre el valor determinado (inciso a)
+- `urbanos_predios_no_edificados_valor_determinado_tablas_terreno_inciso_b` — apar=1, munis=1, años=1, vals=0.32
+  - desc: Predios no edificados cuyo valor real se determine en base a las tablas de valores de terreno, sobre el valor determinado (inciso b)
+- `urbano_baldio_valor_determinado_lhm_jalisco` — apar=1, munis=1, años=1, vals=0.6
+  - desc: Predios urbanos baldíos: sobre el valor determinado, el: 0.60
+- `urbano_edificados_valor_real_ley_hacienda_municipal_inciso_f` — apar=1, munis=1, años=1, vals=0.2
+  - desc: Predios edificados cuyo valor real se determine en los términos de la Ley de Hacienda Municipal del Estado de Jalisco, sobre el valor determ
+- `urbano_no_edificados_valor_real_ley_hacienda_municipal_inciso_g` — apar=1, munis=1, años=1, vals=0.3
+  - desc: Predios no edificados cuyo valor real se determine en los términos de la Ley de Hacienda Municipal del Estado de Jalisco, sobre el valor det
+- `urbano_edificados_valor_determinado_1979_antes_1992` — apar=1, munis=1, años=1, vals=0.8
+  - desc: Predios urbanos: Predios edificados, cuyo valor se determine a partir de 1979, y antes del año de 1992 (Ley de Catastro Municipal o traslati
+- `urbano_no_edificados_valor_1992_antes_2000_lhmj` — apar=1, munis=1, años=1, vals=0.3
+  - desc: Predios urbanos: Predios no edificados, cuyo valor se determine a partir de 1992, y antes del año 2000 (Ley de Hacienda Municipal del Estado
+- `urbano_no_edificado_hasta_10000_m2_valor_determinado_lhm_jalisco` — apar=1, munis=1, años=1, vals=0.81
+  - desc: Predios urbanos no edificados con una superficie de hasta 10,000 metros cuadrados: sobre el valor determinado
+- `urbano_no_edificado_mayor_10000_01_m2_valor_determinado_lhm_jalisco` — apar=1, munis=1, años=1, vals=1.0
+  - desc: Predios urbanos no edificados con una superficie mayor de 10,000.01 metros cuadrados: sobre el valor determinado
+- `urbano_edificado_valores_terreno_construccion_1992_a_antes_2000` — apar=1, munis=1, años=1, vals=0.14
+  - desc: Predios urbanos edificados, cuyo valor se determine en base a las tablas de valores de terreno y construcción publicadas a partir de enero d
+- `predios_urbanos_no_edificados_en_zona_urbana_valor_real_determinado` — apar=1, munis=1, años=1, vals=0.81
+  - desc: Predios Urbanos: b) Predios no edificados que se localicen dentro de la zona urbana de la ciudad, cuyo valor real se determine en los términ
+- `urbano_edificado_valor_1979_a_1992` — apar=1, munis=1, años=1, vals=0.8
+  - desc: Predios urbanos edificados, cuyo valor se determine a partir de 1979 y antes del año de 1992, en los términos de la Ley de Catastro del Esta
+- `urbano_no_edificado_valor_1992_a_2000` — apar=1, munis=1, años=1, vals=0.3
+  - desc: Predios urbanos no edificados, cuyo valor se determine a partir de 1992 y antes del año 2000, en los términos de la Ley de Hacienda Municipa
+- `urbano_edificado_tablas_valores_1992_a_2000` — apar=1, munis=1, años=1, vals=0.2
+  - desc: Predios urbanos edificados cuyo valor se determine en base a las tablas de valores de terreno y construcción publicadas a partir de enero de
+- `urbano_no_edificado_valor_1992_a_1999_ley_hacienda_municipal` — apar=1, munis=1, años=1, vals=0.3
+  - desc: Predios no edificados cuyo valor se determine a partir de 1992 y antes del año 2000, en los términos de la Ley de Hacienda Municipal o por c
+- `urbano_no_edificado_dentro_zona_hasta_10000_m2` — apar=1, munis=1, años=1, vals=0.81
+  - desc: Predios no edificados que se localicen dentro de las zonas urbanas, con una superficie de hasta 10,000 metros cuadrados, cuyo valor real se 
+- `urbano_no_edificado_dentro_zona_mayor_10000_01_m2` — apar=1, munis=1, años=1, vals=1.0
+  - desc: Predios no edificados que se localicen dentro de las zonas urbanas, con una superficie mayor de 10,000.01 metros cuadrados, cuyo valor real 
+- `urbano_no_edificado_valor_real_ley_hacienda_municipal_inciso_q` — apar=1, munis=1, años=1, vals=0.31
+  - desc: Predios urbanos no edificados cuyo valor real se determine... sobre el valor determinado
+- `urbano_no_edificado_zona_urbana_valor_fiscal_determinado` — apar=1, munis=1, años=1, vals=0.3
+  - desc: Predios no edificados que se localicen dentro de la zona urbana de la ciudad, cuyo valor real se determine en los términos de las Leyes de H
+- `urbano_edificados_valor_hasta_1978` — apar=1, munis=1, años=1, vals=1.3
+  - desc: Predios edificados valuados catastralmente o cuyo valor se obtuvo por cualquier operación traslativa de dominio, hasta antes de 1979, sobre 
+- `urbano_edificados_valor_1979_1991` — apar=1, munis=1, años=1, vals=0.8
+  - desc: Predios edificados cuyo valor se determine a partir de 1979 y antes del año de 1992, en los términos de la Ley de Catastro del Estado de Jal
+- `urbano_no_edificados_valor_hasta_1991` — apar=1, munis=1, años=1, vals=1.3
+  - desc: Predios no edificados valuados catastralmente o valuados en los términos de la Ley de Catastro del Estado de Jalisco, o cuyo valor se obtuvo
+- `urbano_no_edificados_valor_1992_1999` — apar=1, munis=1, años=1, vals=0.3
+  - desc: Predios no edificados cuyo valor se determine a partir de 1992 y antes del año 2000, en los términos de la Ley de Hacienda Municipal o por c
+- `urbano_edificados_tablas_valores_1992_1999` — apar=1, munis=1, años=1, vals=0.16
+  - desc: Predios edificados cuyo valor se determine en base a las tablas de valores de terreno y construcción publicadas a partir de enero de 1992 y 
+- `urbanos_predios_edificados_tablas_valores_terreno_y_construccion` — apar=1, munis=1, años=1, vals=0.16
+  - desc: Predios edificados cuyo valor se determine en base a las tablas de valores de terreno y construcción, publicadas en el Periódico Oficial del
+- `urbanos_predios_no_edificados_tablas_valores_terreno` — apar=1, munis=1, años=1, vals=0.3
+  - desc: Predios no edificados cuyo valor real se determine en base a las tablas de valores de terreno, sobre el valor determinado
+- `urbano_edificado_valor_determinado_art17_ii_a` — apar=1, munis=1, años=1, vals=0.2
+  - desc: Predios urbanos edificados: sobre el valor determinado (Ley de Hacienda Municipal del Estado de Jalisco)
+- `urbano_no_edificado_valor_determinado_art17_ii_b` — apar=1, munis=1, años=1, vals=0.3
+  - desc: Predios urbanos no edificados: sobre el valor determinado (Ley de Hacienda Municipal del Estado de Jalisco)
+- `urbano_edificado_valor_real_determinado_por_hacienda_y_catastro` — apar=1, munis=1, años=1, vals=0.17
+  - desc: Predios edificados cuyo valor real se determine en los términos de las Leyes de Hacienda Municipal y de Catastro Municipal del Estado de Jal
+- `urbano_no_edificado_en_zona_urbana_valor_real_determinado_por_hacienda_y_catastro` — apar=1, munis=1, años=1, vals=0.31
+  - desc: Predios no edificados que se localicen dentro de la zona urbana de la ciudad, cuyo valor real se determine en los términos de las Leyes de H
+- `urbano_edificado_tablas_1992_1999` — apar=1, munis=1, años=1, vals=0.14
+  - desc: Predios edificados cuyo valor se determine en base a las tablas de valores de terreno y construcción publicadas a partir de enero de 1992 y 
+- `urbano_edificados_valor_determinado_lhmej` — apar=1, munis=1, años=1, vals=0.16
+  - desc: Predios urbanos: Predios edificados, sobre el valor determinado, el: 0.16
+- `urbano_baldios_fuera_zonas_edificadas_valor_determinado_lhmej` — apar=1, munis=1, años=1, vals=0.3
+  - desc: Predios urbanos: Predios baldíos que se localicen fuera de las zonas edificadas, sobre el valor determinado, el: 0.30
+- `urbano_baldios_dentro_zonas_edificadas_valor_determinado_lhmej` — apar=1, munis=1, años=1, vals=0.4
+  - desc: Predios urbanos: Predios baldíos que se localicen dentro de las zonas edificadas, sobre el valor determinado, el: 0.40
+- `urbano_edificado_valor_real_lhjem` — apar=1, munis=1, años=1, vals=0.14
+  - desc: Predios urbanos edificados cuyo valor real se determine en los términos de la Ley de Hacienda Municipal del Estado de Jalisco, sobre el valo
+- `urbano_no_edificado_valor_real_lhjem` — apar=1, munis=1, años=1, vals=0.3
+  - desc: Predios urbanos no edificados cuyo valor real se determine en los términos de la Ley de Hacienda Municipal del Estado de Jalisco, sobre el v
+- `urbano_no_edificado_dentro_zonas_hasta_10000m2_valor_real_lhmj` — apar=1, munis=1, años=1, vals=0.81
+  - desc: Predios no edificados que se localicen dentro de las zonas urbanas, con una superficie de hasta 10,000 metros cuadrados, cuyo valor real se 
+- `urbano_no_edificado_dentro_zonas_mas_10000m2_valor_real_lhmj` — apar=1, munis=1, años=1, vals=1.0
+  - desc: Predios no edificados que se localicen dentro de las zonas urbanas, con una superficie mayor de 10,000.01 metros cuadrados, cuyo valor real 
+- `solar_urbano_edificado_o_no_edificado_sin_cuenta_predial` — apar=1, munis=1, años=1, vals=0.2
+  - desc: Solares urbanos, edificados o no edificados aún sin contar con cuenta predial que acredite su posesión real
+- `urbano_edificados_valor_tablas_enero_1992_a_antes_2000` — apar=1, munis=1, años=1, vals=0.16
+  - desc: Predios urbanos: Predios edificados cuyo valor se determine en base a las tablas de valores de terreno y construcción publicadas a partir de
+- `urbano_no_edificado_fuera_zonas_urbanas_valor_real_determinado_lhmj` — apar=1, munis=1, años=1, vals=0.3
+  - desc: Predios no edificados, que se localicen fuera de las zonas urbanas, sobre el valor determinado
+- `urbano_no_edificado_dentro_zonas_urbanas_valor_real_determinado_lhmj` — apar=1, munis=1, años=1, vals=0.35
+  - desc: Predios no edificados, que se localicen dentro de las zonas urbanas, sobre el valor determinado
+- `urbano_no_edificado_zona_urbana_valor_determinado_0_3_millar` — apar=1, munis=1, años=1, vals=0.3
+  - desc: Predios Urbanos. Predios no edificados que se localicen dentro de la zona urbana de la ciudad, cuyo valor real se determine en los términos 
+- `urbano_edificado_hasta_1978` — apar=1, munis=1, años=1, vals=1.6
+  - desc: Predios edificados que hayan sido valuados catastralmente o cuyo valor se obtuvo por cualquier operación traslativa de dominio, hasta antes 
+- `urbano_no_edificado_1992_a_2005` — apar=1, munis=1, años=1, vals=0.4
+  - desc: Predios no edificados cuyo valor se determine a partir de 1992 y antes del año 2006, en los términos de la Ley de Hacienda Municipal o por c
+- `urbano_no_edificado_valuado_hasta_1991` — apar=1, munis=1, años=1, vals=1.3
+  - desc: Predios no edificados valuados catastralmente o valuados en términos de la Ley de Catastro del Estado de Jalisco, o cuyo valor se obtuvo u o
+- `urbanos_edificados_tablas_valores_terreno_construccion` — apar=1, munis=1, años=1, vals=0.16
+  - desc: Predios urbanos: predios edificados cuyo valor se determine en base a las tablas de valores de terreno y construcción
+- `urbanos_no_edificados_tablas_valores_terreno` — apar=1, munis=1, años=1, vals=0.3
+  - desc: Predios urbanos: predios no edificados cuyo valor real se determine en base a las tablas de valores de terreno
+- `urbano_edificado_valor_fiscal_ley_hacienda` — apar=1, munis=1, años=1, vals=0.2
+  - desc: Predios urbanos edificados: sobre el valor determinado
+- `urbano_no_edificado_valor_fiscal_ley_hacienda` — apar=1, munis=1, años=1, vals=0.3
+  - desc: Predios urbanos no edificados: sobre el valor determinado
+- `urbano_no_edificado_valor_1992_a_1999_operacion_traslativa_o_ley_hacienda` — apar=1, munis=1, años=1, vals=0.3
+  - desc: Predios urbanos no edificados cuyo valor se determine a partir de 1992 y antes del año 2000, en los términos de la Ley de Hacienda Municipal
+- `urbano_edificado_valor_real_determinado_leyes_hacienda_y_catastro` — apar=1, munis=1, años=1, vals=0.18
+  - desc: Predios edificados cuyo valor real se determine en los términos de las Leyes de Hacienda Municipal y de Catastro Municipal del Estado de Jal
+- `urbano_no_edificado_zona_urbana_valor_real_determinado_leyes_hacienda_y_catastro` — apar=1, munis=1, años=1, vals=0.32
+  - desc: Predios no edificados que se localicen dentro de la zona urbana de la ciudad, cuyo valor real se determine en los términos de las Leyes de H
+- `predios_edificados_valor_real_determinado_lhmj` — apar=1, munis=1, años=1, vals=0.21
+  - desc: Predios edificados cuyo valor real se determine en los términos de la Ley de Hacienda Municipal del Estado de Jalisco, sobre el valor determ
+- `predios_no_edificados_valor_real_determinado_lhmj` — apar=1, munis=1, años=1, vals=0.32
+  - desc: Predios no edificados, cuyo valor real se determine en los términos de la Ley de Hacienda Municipal del Estado de Jalisco, sobre el valor de
+- `urbano_edificado_valor_catastral_determinado` — apar=1, munis=1, años=1, vals=0.22
+  - desc: Predios urbanos edificados: sobre el valor determinado
+- `urbano_no_edificado_valor_catastral_determinado` — apar=1, munis=1, años=1, vals=0.33
+  - desc: Predios urbanos no edificados: sobre el valor determinado
+- `urbano_edificados_valor_determinado_lh_em_jalisco` — apar=1, munis=1, años=1, vals=0.2
+  - desc: Predios urbanos: predios edificados cuyo valor real se determine en los términos de la Ley de Hacienda Municipal del Estado de Jalisco, sobr
+- `urbano_no_edificados_valor_determinado_lh_em_jalisco` — apar=1, munis=1, años=1, vals=0.3
+  - desc: Predios urbanos: predios no edificados, cuyo valor real se determine en los términos de la Ley de Hacienda Municipal del Estado de Jalisco, 
+- `urbano_edificado_valor_determinado_lh_municipal` — apar=1, munis=1, años=1, vals=0.2
+  - desc: Predios urbanos: Predios edificados... sobre el valor determinado, el: 0.2 (tasa bimestral al millar).
+- `urbano_no_edificado_valor_determinado_lh_municipal` — apar=1, munis=1, años=1, vals=0.3
+  - desc: Predios urbanos: Predios no edificados... sobre el valor determinado, el: 0.3 (tasa bimestral al millar).
+- `urbano_edificado_valor_lhm_jalisco` — apar=1, munis=1, años=1, vals=0.15
+  - desc: Predios edificados cuyo valor real se determine en los términos de la Ley de Hacienda Municipal del Estado de Jalisco, sobre el valor determ
+- `urbano_no_edificado_valor_lhm_jalisco` — apar=1, munis=1, años=1, vals=0.25
+  - desc: Predios no edificados, cuyo valor real se determine en los términos de la Ley de Hacienda Municipal del Estado de Jalisco, sobre el valor de
+- `urbano_baldio_fuera_zonas_edificadas_valor_determinado_lhmej` — apar=1, munis=1, años=1, vals=0.3
+  - desc: Predios urbanos: Predios baldíos que se localicen fuera de las zonas edificadas, cuyo valor real se determine en los términos de la Ley de H
+- `urbano_baldio_dentro_zonas_edificadas_valor_determinado_lhmej` — apar=1, munis=1, años=1, vals=0.4
+  - desc: Predios urbanos: Predios baldíos que se localicen dentro de las zonas edificadas, cuyo valor real se determine en los términos de la Ley de 
+- `urbano_edificados_no_corresponden_valores_unitarios_vigentes` — apar=1, munis=1, años=1, vals=0.92
+  - desc: Predios edificados cuyos valores no respondan a los valores unitarios vigentes de conformidad con las tablas de valores aprobadas para el pr
+- `urbano_no_edificados_dentro_zonas_urbanas_mas_10000_01_m2` — apar=1, munis=1, años=1, vals=1.0
+  - desc: Predios no edificados que se localicen dentro de las zonas urbanas, con una superficie mayor de 10,000.01 metros cuadrados, cuyo valor real 
+- `urbano_no_edificado_traslativa_dominio` — apar=1, munis=1, años=1, vals=0.3
+  - desc: Predios urbanos: Predios no edificados, cuyo valor se determine en los términos de la Ley de Hacienda Municipal del Estado de Jalisco por cu
+- `urbanos_edificados_valor_real_ley_hacienda_municipal_inciso_f` — apar=1, munis=1, años=1, vals=0.16
+  - desc: Predios urbanos edificados cuyo valor real se determine en los términos de la Ley de Hacienda Municipal del Estado de Jalisco (inciso f)
+- `urbanos_no_edificados_valor_real_ley_hacienda_municipal_inciso_g` — apar=1, munis=1, años=1, vals=0.3
+  - desc: Predios urbanos no edificados cuyo valor real se determine en los términos de la Ley de Hacienda Municipal del Estado de Jalisco (inciso g)
+- `solar_urbano_edificado_o_no_aun_sin_cuenta_predial` — apar=1, munis=1, años=1, vals=0.2
+  - desc: Solares urbanos, edificados o no edificados aún sin contar con cuenta predial que acredite su posesión real
+- `urbano_no_edificado_en_zonas_urbanas` — apar=1, munis=1, años=1, vals=0.8
+  - desc: Predios urbanos: predios no edificados que se localicen dentro de las zonas urbanas y cuyo valor real se determine en los términos de la Ley
+- `urbano_no_edificado_en_agencias_municipales` — apar=1, munis=1, años=1, vals=0.4
+  - desc: Predios urbanos: predios urbanos no edificados localizados en agencias municipales y cuyo valor real se determine en los términos de la Ley 
+- `urbano_edificado_valor_determinado_1979_antes_1992` — apar=1, munis=1, años=1, vals=0.82
+  - desc: Predios urbanos edificados, cuyo valor se determine a partir de 1979 y antes de 1992... sobre el valor determinado
+- `urbano_edificados_valor_real_ley_hacienda_0_16` — apar=1, munis=1, años=1, vals=0.16
+  - desc: Predios edificados cuyo valor real se determine en los términos de la Ley de Hacienda Municipal del Estado de Jalisco, sobre el valor determ
+- `urbano_no_edificados_valor_real_ley_hacienda_0_33` — apar=1, munis=1, años=1, vals=0.33
+  - desc: Predios no edificados, cuyo valor real se determine en los términos de la Ley de Hacienda Municipal del Estado de Jalisco, sobre el valor de
+- `urbano_edificado_valor_determinado_0_23_al_millar` — apar=1, munis=1, años=1, vals=0.23
+  - desc: Predios edificados cuyo valor real se determine en los términos de las Leyes de Hacienda Municipal y de Catastro Municipal del Estado de Jal
+- `urbano_no_edificado_zona_urbana_valor_determinado_0_30_al_millar` — apar=1, munis=1, años=1, vals=0.3
+  - desc: Predios no edificados que se localicen dentro de la zona urbana de la ciudad, cuyo valor real se determine en los términos de las Leyes de H
+- `urbano_edificados_valor_determinado_ley_hacienda_y_catastro` — apar=1, munis=1, años=1, vals=0.23
+  - desc: Predios edificados ... sobre el valor que resulte de aplicar el factor determinado
+- `urbano_no_edificados_dentro_zona_urbana` — apar=1, munis=1, años=1, vals=0.81
+  - desc: Predios no edificados que se localicen dentro de la zona urbana de la ciudad ... sobre el valor determinado
+- `urbano_no_edificados_valor_determinado_1992_a_antes_2000` — apar=1, munis=1, años=1, vals=0.3
+  - desc: Predios no edificados, cuyo valor se determine a partir de 1992 y antes del año 2000, en los términos de la Ley de Hacienda Municipal del Es
+- `urbano_no_edificado_hasta_10000_m2_valor_real_valor_determinado` — apar=1, munis=1, años=1, vals=0.81
+  - desc: Predios no edificados con una superficie de hasta 10,000 metros cuadrados, cuyo valor real se determine en los términos de la Ley de Haciend
+- `urbano_no_edificado_mayor_10000_01_m2_valor_real_valor_determinado` — apar=1, munis=1, años=1, vals=1.0
+  - desc: Predios no edificados con una superficie mayor de 10,000.01 metros cuadrados, cuyo valor real se determine en los términos de la Ley de Haci
+- `predios_urbanos_edificados_valor_real_valor_determinado` — apar=1, munis=1, años=1, vals=0.17
+  - desc: Predios urbanos: predios edificados cuyo valor real se determine en los términos de la Ley de Hacienda Municipal del Estado de Jalisco, sobr
+- `predios_urbanos_no_edificados_valor_real_valor_determinado` — apar=1, munis=1, años=1, vals=0.33
+  - desc: Predios urbanos: predios no edificados, cuyo valor real se determine en los términos de la Ley de Hacienda Municipal del Estado de Jalisco, 
+- `predios_edificados_valor_determinado_lhm` — apar=1, munis=1, años=1, vals=0.21
+  - desc: Predios urbanos: Predios edificados cuyo valor real se determine ... sobre el valor determinado, el: 0.21
+- `predios_no_edificados_valor_determinado_lhm` — apar=1, munis=1, años=1, vals=0.32
+  - desc: Predios urbanos: Predios no edificados, cuyo valor real se determine ... sobre el valor determinado, el: 0.32
+- `predios_urbanos_edificados_valor_real_sobre_valor_determinado` — apar=1, munis=1, años=1, vals=0.16
+  - desc: Predios urbanos edificados cuyo valor real se determine, sobre el valor determinado
+- `predios_urbanos_no_edificados_valor_real_sobre_valor_determinado` — apar=1, munis=1, años=1, vals=0.33
+  - desc: Predios urbanos no edificados, cuyo valor real se determine, sobre el valor determinado
+- `urbano_no_edificado_fuera_zona_urbana_cabecera_valor_determinado` — apar=1, munis=1, años=1, vals=0.3
+  - desc: Predios urbanos no edificados, fuera de la zona urbana de la cabecera municipal... sobre el valor determinado
+- `urbano_no_edificado_dentro_zona_urbana_cabecera_valor_determinado` — apar=1, munis=1, años=1, vals=0.35
+  - desc: Predios urbanos no edificados, dentro de la zona urbana de la cabecera municipal... sobre el valor determinado
+- `urbano_edificado_valorados_hasta_antes_1979` — apar=1, munis=1, años=1, vals=1.3
+  - desc: III. a) Predios edificados que hayan sido valuados catastralmente o cuyo valor se obtuvo por cualquier operación traslativa de dominio, hast
+- `urbano_edificados_valores_hasta_antes_1979` — apar=1, munis=1, años=1, vals=1.3
+  - desc: Predios urbanos: Predios edificados que hayan sido valuados catastralmente o cuyo valor se obtuvo por cualquier operación traslativa de domi
+- `urbano_edificados_valores_1979_a_antes_1992` — apar=1, munis=1, años=1, vals=0.8
+  - desc: Predios urbanos: Predios edificados, cuyo valor se determine a partir de 1979, y antes del año de 1992 en los términos de la Ley de Catastro
+- `urbano_no_edificados_valores_hasta_antes_1992` — apar=1, munis=1, años=1, vals=1.3
+  - desc: Predios urbanos: Predios no edificados, que hayan sido valuados catastralmente o se valúen en los términos de la Ley de Catastro del Estado 
+- `urbano_no_edificados_valores_1992_a_antes_2000` — apar=1, munis=1, años=1, vals=0.3
+  - desc: Predios urbanos: Predios no edificados, cuyo valor se determine a partir de 1992, y antes del año 2000, en los términos de la Ley de Haciend
+- `urbano_edificado_valor_real_determinado_lhmee` — apar=1, munis=1, años=1, vals=0.19
+  - desc: Predios edificados cuyo valor real se determine en los términos de la Ley de Hacienda Municipal del Estado de Jalisco, sobre el valor determ
+- `urbano_no_edificado_valor_real_determinado_lhmee` — apar=1, munis=1, años=1, vals=0.3
+  - desc: Predios no edificados, cuyo valor real se determine en los términos de la Ley de Hacienda Municipal del Estado de Jalisco, sobre el valor de
+- `urbano_edificado_valor_determinado_0_19` — apar=1, munis=1, años=1, vals=0.19
+  - desc: Predios urbanos: Predios edificados cuyo valor real se determine en los términos de la Ley de Hacienda Municipal del Estado de Jalisco, sobr
+- `urbano_no_edificado_valor_determinado_0_35` — apar=1, munis=1, años=1, vals=0.35
+  - desc: Predios urbanos: Predios no edificados, cuyo valor real se determine en los términos de la Ley de Hacienda Municipal del Estado de Jalisco, 
+- `urbano_edificados_valor_real_determinado_sobre_valor_determinado` — apar=1, munis=1, años=1, vals=0.16
+  - desc: Predios urbanos: predios edificados cuyo valor real se determine en los términos de la Ley de Hacienda Municipal del Estado de Jalisco, sobr
+- `urbano_no_edificados_valor_real_determinado_sobre_valor_determinado` — apar=1, munis=1, años=1, vals=0.31
+  - desc: Predios urbanos: predios no edificados, cuyo valor real se determine en los términos de la Ley de Hacienda Municipal del Estado de Jalisco, 
+- `solares_urbanos_edificados_o_no_edificados_sin_cuenta_predial` — apar=1, munis=1, años=1, vals=0.2
+  - desc: Solares urbanos, edificados o no edificados aún sin contar con cuenta predial que acredite su posesión real
+- `urbano_no_edificado_valor_determinado_1992_antes_2000` — apar=1, munis=1, años=1, vals=0.3
+  - desc: Predios urbanos: Predios no edificados, cuyo valor se determine a partir de 1992, y antes del año 2000, en los términos de la Ley de Haciend
+- `urbano_no_edificado_zona_urbana_valor_determinado_0_30_millar` — apar=1, munis=1, años=1, vals=0.3
+  - desc: Predios no edificados que se localicen dentro de la zona urbana de la ciudad, cuyo valor real se determine en los términos de las Leyes de H
+- `urbanos_edificados_valor_tablas_1992_antes_2000` — apar=1, munis=1, años=1, vals=0.35
+  - desc: Predios urbanos: Predios edificados, cuyo valor se determine en base a las tablas de valores de terreno y construcción publicadas en el Peri
+- `urbano_predios_edificados_inciso_a` — apar=1, munis=1, años=1, vals=0.16
+  - desc: Predios edificados ... sobre el valor determinado (inciso a)
+- `urbano_predios_no_edificados_inciso_b` — apar=1, munis=1, años=1, vals=0.3
+  - desc: Predios no edificados ... sobre el valor determinado (inciso b)
+- `urbano_edificado_valor_real_determinado_lhmemj` — apar=1, munis=1, años=1, vals=0.2
+  - desc: Predios urbanos edificados: sobre el valor determinado
+- `urbano_no_edificado_valor_real_determinado_lhmemj` — apar=1, munis=1, años=1, vals=0.3
+  - desc: Predios urbanos no edificados: sobre el valor determinado
+- `urbano_edificado_iii_a` — apar=1, munis=1, años=1, vals=0.2
+  - desc: III. Predios urbanos, a) Predios edificados cuyo valor real se determine... sobre el valor determinado
+- `urbano_no_edificado_iii_b` — apar=1, munis=1, años=1, vals=0.3
+  - desc: III. Predios urbanos, b) Predios no edificados, cuyo valor real se determine... sobre el valor determinado
+- `urbanos_edificados_valor_real_determinado_valor_determinado` — apar=1, munis=1, años=1, vals=0.22
+  - desc: Predios urbanos: Predios edificados cuyo valor real se determine en los términos de la Ley de Hacienda Municipal del Estado de Jalisco, sobr
+- `urbanos_no_edificados_valor_real_determinado_valor_determinado` — apar=1, munis=1, años=1, vals=0.32
+  - desc: Predios urbanos: Predios no edificados, cuyo valor real se determine en los términos de la Ley de Hacienda Municipal del Estado de Jalisco, 
+- `rustico_intra_urbano_hasta_10000m2_o_igual_4000m2` — apar=1, munis=1, años=1, vals=0.18
+  - desc: Predios ubicados dentro de la zona urbana, clasificados como rústicos intra-urbanos, con superficie no mayor a 10,000 m2 o igual a 4,000.00 
+- `urbano_edificados_valor_real_determinado_sobre_valor` — apar=1, munis=1, años=1, vals=0.25
+  - desc: Predios urbanos: predios edificados cuyo valor real se determine en los términos de la Ley de Hacienda Municipal del Estado de Jalisco, sobr
+- `urbano_no_edificados_valor_real_determinado_sobre_valor` — apar=1, munis=1, años=1, vals=0.38
+  - desc: Predios urbanos: predios no edificados, cuyo valor real se determine en los términos de la Ley de Hacienda Municipal del Estado de Jalisco, 
+- `urbanos_edificados_valor_ley_hacienda_municipal` — apar=1, munis=1, años=1, vals=0.15
+  - desc: Predios urbanos: predios edificados cuyo valor real se determine en los términos de la Ley de Hacienda Municipal del Estado de Jalisco, sobr
+- `urbanos_no_edificados_valor_ley_hacienda_municipal` — apar=1, munis=1, años=1, vals=0.25
+  - desc: Predios urbanos: predios no edificados, cuyo valor real se determine en los términos de la Ley de Hacienda Municipal del Estado de Jalisco, 
+- `urbano_edificado_valor_determinado_conforme_ley_hacienda` — apar=1, munis=1, años=1, vals=0.19
+  - desc: Predios edificados... sobre el valor determinado, el: 0.19
+- `urbano_no_edificado_valor_determinado_conforme_ley_hacienda` — apar=1, munis=1, años=1, vals=0.3
+  - desc: Predios no edificados... sobre el valor determinado, el: 0.30
+- `urbanos_edificados_tablas_valores_enero_1992_antes_2000` — apar=1, munis=1, años=1, vals=0.14
+  - desc: Predios edificados cuyo valor se determine en base a las tablas de valores de terreno y construcción publicadas a partir de enero de 1992 y 
+- `urbano_edificado_valores_1979_antes_1992` — apar=1, munis=1, años=1, vals=0.8
+  - desc: Predios edificados cuyo valor se determine a partir de 1979 y antes del año de 1992, sobre el valor determinado
+- `urbano_no_edificado_valores_1992_antes_2000` — apar=1, munis=1, años=1, vals=0.3
+  - desc: Predios no edificados cuyo valor se determine a partir de 1992 y antes del año 2000, sobre el valor determinado
+- `urbano_edificado_valor_1979_a_antes_1992_tasa_0_8_millar_mas_cuota_fija_429` — apar=1, munis=1, años=1, vals=0.8
+  - desc: Predios urbanos edificados, cuyo valor se determine a partir de 1979 y antes del año de 1992 (Catastro del Estado de Jalisco o por operación
+- `urbano_no_edificado_valor_1992_a_antes_2000_tasa_0_3_millar_mas_cuota_fija_429` — apar=1, munis=1, años=1, vals=0.3
+  - desc: Predios urbanos no edificados, cuyo valor se determine a partir de 1992 y antes del año 2000 (Ley de Hacienda Municipal o por operación tras
+- `urbano_edificado_tablas_1992_a_antes_2000_tasa_0_2_millar_mas_cuota_fija_429` — apar=1, munis=1, años=1, vals=0.2
+  - desc: Predios urbanos edificados, cuyo valor se determine en base a tablas de valores de terreno y construcción publicadas a partir de enero de 19
+- `urbano_edificado_valor_real_lhmj_tasa_0_2_millar_mas_cuota_fija_15_50` — apar=1, munis=1, años=1, vals=0.2
+  - desc: Predios urbanos edificados cuyo valor real se determine en los términos de la Ley de Hacienda Municipal del Estado de Jalisco
+- `urbano_no_edificado_valor_real_lhmj_tasa_0_33_millar_mas_cuota_fija_15_50` — apar=1, munis=1, años=1, vals=0.33
+  - desc: Predios urbanos no edificados, cuyo valor real se determine en los términos de la Ley de Hacienda Municipal del Estado de Jalisco
+- `urbano_no_edificados_dentro_zona_hasta_10000_m2_valor_real_lhm` — apar=1, munis=1, años=1, vals=0.81
+  - desc: Predios no edificados que se localicen dentro de las zonas urbanas, con una superficie de hasta 10,000 metros cuadrados, cuyo valor real se 
+- `urbano_no_edificados_dentro_zona_mas_10000_01_m2_valor_real_lhm` — apar=1, munis=1, años=1, vals=1.0
+  - desc: Predios no edificados que se localicen dentro de las zonas urbanas, con una superficie mayor de 10,000.01 metros cuadrados, cuyo valor real 
+- `urbano_edificado_valor_lhmj` — apar=1, munis=1, años=1, vals=0.2
+  - desc: Predios urbanos edificados: sobre el valor determinado, el: 0.20
+- `urbano_no_edificado_valor_lhmj` — apar=1, munis=1, años=1, vals=0.3
+  - desc: Predios urbanos no edificados: sobre el valor determinado, el: 0.30
+- `urbano_edificado_valor_entre_1975_y_antes_1992` — apar=1, munis=1, años=1, vals=0.8
+  - desc: Predios urbanos edificados cuyo valor se determine a partir de 1975 y antes del año 1992 en términos de la Ley de Catastro Municipal del Est
+- `urbano_solar_urbano_edificado_o_no_edificado` — apar=1, munis=1, años=1, vals=0.2
+  - desc: Solares urbanos, edificados o no edificados aun sin contar con cuenta predial que acredite su posesión real
+- `urbano_edificados_valuados_antes_1979` — apar=1, munis=1, años=1, vals=1.3
+  - desc: Predios edificados que hayan sido valuados catastralmente o cuyo valor se obtuvo por cualquier operación traslativa de dominio, hasta antes 
+- `urbano_edificados_tablas_valores_enero_1992_a_antes_2006` — apar=1, munis=1, años=1, vals=0.14
+  - desc: Predios edificados cuyo valor se determine en base a las tablas de valores de terreno y construcción publicadas en el Periódico Oficial El E
+- `urbano_edificados_valuados_o_traslativa_hasta_antes_1979` — apar=1, munis=1, años=1, vals=1.3
+  - desc: Predios edificados que hayan sido valuados catastralmente o cuyo valor se obtuvo por cualquier operación traslativa de dominio, hasta antes 
+- `urbano_no_edificados_hasta_10000_m2` — apar=1, munis=1, años=1, vals=0.81
+  - desc: Predios urbanos: Predios no edificados con una superficie de hasta 10,000 metros cuadrados, cuyo valor real se determine en los términos de 
+- `urbano_no_edificados_mayor_10000_01_m2` — apar=1, munis=1, años=1, vals=1.0
+  - desc: Predios urbanos: Predios no edificados con una superficie mayor de 10,000.01 metros cuadrados, cuyo valor real se determine en los términos 
+- `predios_urbanos_edificados_y_no_edificados` — apar=1, munis=1, años=1, vals=0.0
+  - desc: Predios urbanos: predios edificados y predios no edificados
+- `edificados_valor_real_sobre_valor_determinado` — apar=1, munis=1, años=1, vals=0.16
+  - desc: Predios edificados cuyo valor real se determine, sobre el valor determinado
+- `no_edificados_valor_real_sobre_valor_determinado` — apar=1, munis=1, años=1, vals=0.33
+  - desc: Predios no edificados, cuyo valor real se determine, sobre el valor determinado
+- `rusticos_intraurbanos_superficie_no_mayor_10000m2_o_igual_4000m2` — apar=1, munis=1, años=1, vals=0.18
+  - desc: Predios ubicados dentro de la zona urbana, clasificados como rústicos intra-urbanos, con superficie no mayor a 10,000 m2 o igual a 4,000.00 
+- `urbano_valor_determinado_edificado` — apar=1, munis=1, años=1, vals=0.18
+  - desc: Predios urbanos inciso a) (sobre el valor determinado)
+- `urbano_baldios_fuera_zonas_edificadas` — apar=1, munis=1, años=1, vals=0.5
+  - desc: Predios urbanos baldíos fuera de las zonas edificadas: sobre el valor determinado, el: 0.50. A las cantidades determinadas se les adicionará
+- `urbano_baldios_dentro_zonas_edificadas` — apar=1, munis=1, años=1, vals=0.4
+  - desc: Predios urbanos baldíos dentro de las zonas edificadas: sobre el valor determinado, el: 0.40. A las cantidades determinadas se les adicionar
+- `urbanos_edificados_valor_real_0_20` — apar=1, munis=1, años=1, vals=0.2
+  - desc: Predios urbanos: Predios edificados cuyo valor real se determine en los términos de la Ley de Hacienda Municipal del Estado de Jalisco, sobr
+- `urbanos_no_edificados_valor_real_0_32` — apar=1, munis=1, años=1, vals=0.32
+  - desc: Predios urbanos: Predios no edificados, cuyo valor real se determine en los términos de la Ley de Hacienda Municipal del Estado de Jalisco, 
+- `predios_urbanos_valor_real` — apar=1, munis=1, años=1, vals=0.254
+  - desc: Predios Urbanos (a): sobre el valor determinado, el: 0.254 (tasa bimestral al millar).
+- `urbano_edificado_valor_1973_a_antes_1992` — apar=1, munis=1, años=1, vals=0.8
+  - desc: Predios urbanos edificados cuyo valor se determine a partir de 1973 y antes de 1992, en términos de la Ley de Catastro del Estado de Jalisco
+- `urbano_edificado_valores_no_corresponden_tablas` — apar=1, munis=1, años=1, vals=0.96
+  - desc: Predios edificados cuyos valores no respondan a los valores unitarios vigentes de conformidad con las tablas de valores aprobadas para el pr
+- `urbanos_edificados_valor_real_determinado_lhmej` — apar=1, munis=1, años=1, vals=0.16
+  - desc: Predios urbanos: Predios edificados cuyo valor real se determine en los términos de la Ley de Hacienda Municipal del Estado de Jalisco, sobr
+- `urbanos_no_edificados_valor_real_determinado_lhmej` — apar=1, munis=1, años=1, vals=0.33
+  - desc: Predios urbanos: Predios no edificados, cuyo valor real se determine en los términos de la Ley de Hacienda Municipal del Estado de Jalisco, 
+- `urbanos_no_edificados_valor_1992_a_antes_2000_o_traslativa_dominio` — apar=1, munis=1, años=1, vals=0.32
+  - desc: Predios urbanos: predios no edificados, cuyo valor se determine a partir de 1992, y antes del año 2000, en los términos de la Ley de Haciend
+- `urbanos_edificados_valor_tablas_1992_a_antes_2000` — apar=1, munis=1, años=1, vals=0.14
+  - desc: Predios urbanos: predios edificados, cuyo valor se determine en base a las tablas de valores de terreno y construcción publicadas en el Peri
+- `urbano_no_edificado_fuera_zonas_urbanas_valor_determinado_lhmj` — apar=1, munis=1, años=1, vals=0.3
+  - desc: Predios urbanos no edificados, que se localicen fuera de las zonas urbanas: sobre el valor determinado
+- `urbanos_edificados_valor_real_determinado_0_23_millar` — apar=1, munis=1, años=1, vals=0.23
+  - desc: Predios edificados cuyo valor real se determine en los términos de las Leyes de Hacienda Municipal y de Catastro Municipal del Estado de Jal
+- `urbanos_no_edificados_zona_urbana_0_30_millar` — apar=1, munis=1, años=1, vals=0.3
+  - desc: Predios no edificados que se localicen dentro de la zona urbana de la ciudad, cuyo valor real se determine en los términos de las Leyes de H
+- `urbano_edificados_avaluados_o_traslativa_hasta_antes_1979` — apar=1, munis=1, años=1, vals=13.0
+  - desc: Predios urbanos: a) Predios edificados que hayan sido valuados catastralmente o cuyo valor se obtuvo por cualquier operación traslativa de d
+- `urbano_no_edificados_avaluados_o_traslativa_hasta_antes_1992` — apar=1, munis=1, años=1, vals=13.0
+  - desc: Predios urbanos: c) Predios no edificados, que hayan sido valuados catastralmente o se valuén en los términos de la Ley de Catastro del Esta
+- `urbano_valor_real_edificados` — apar=1, munis=1, años=1, vals=1.6
+  - desc: Predios urbanos: f) Predios edificados cuyo valor real se determine en los términos de la Ley de Hacienda Municipal del Estado de Jalisco, s
+- `urbano_valor_real_no_edificados` — apar=1, munis=1, años=1, vals=3.0
+  - desc: Predios urbanos: g) Predios no edificados, cuyo valor real se determine en los términos de la Ley de Hacienda Municipal del Estado de Jalisc
+- `urbanos_edificados_valor_real_determinado_lhm` — apar=1, munis=1, años=1, vals=0.2
+  - desc: Predios edificados cuyo valor real se determine en los términos de la Ley de Hacienda Municipal del Estado de Jalisco, sobre el valor determ
+- `urbanos_no_edificados_valor_real_determinado_lhm` — apar=1, munis=1, años=1, vals=0.2
+  - desc: Predios no edificados, cuyo valor real se determine en los términos de la Ley de Hacienda Municipal del Estado de Jalisco, sobre el valor de
+- `urbano_edificados_sobre_valor_determinado_tablas` — apar=1, munis=1, años=1, vals=0.16
+  - desc: Predios edificados cuyo valor se determine en base a las tablas de valores de terreno y construcción, sobre el valor determinado
+- `urbano_no_edificados_sobre_valor_determinado_tablas` — apar=1, munis=1, años=1, vals=0.3
+  - desc: Predios no edificados cuyo valor real se determine en base a las tablas de valores de terreno, sobre el valor determinado
+- `urbano_baldio_valor_determinado_lhmj` — apar=1, munis=1, años=1, vals=0.7
+  - desc: Predios urbanos: predios baldíos, cuyo valor real se determine en los términos de la Ley de Hacienda Municipal del Estado de Jalisco, sobre 
+- `urbanos_edificados_valor_determinado_0_1854` — apar=1, munis=1, años=1, vals=0.1854
+  - desc: Predios urbanos: predios edificados cuyo valor real se determine, sobre el valor determinado
+- `urbanos_no_edificados_valor_determinado_0_3605` — apar=1, munis=1, años=1, vals=0.3605
+  - desc: Predios urbanos: predios no edificados, cuyo valor real se determine, sobre el valor determinado
+- `urbanos_naturaleza_agropecuaria_comercial_o_industrial_0_824` — apar=1, munis=1, años=1, vals=0.824
+  - desc: Predios urbanos: predios edificados y no edificados, cuyo valor real se determine, cuando su naturaleza sea agropecuaria, comercial o indust
+- `urbano_edificado_valor_determinado_18_por_ciento` — apar=1, munis=1, años=1, vals=0.18
+  - desc: Predios urbanos edificados: sobre el valor determinado
+- `urbano_no_edificado_valor_determinado_3_por_ciento` — apar=1, munis=1, años=1, vals=0.03
+  - desc: Predios urbanos no edificados: sobre el valor determinado
+- `urbano_edificado_valor_determinado_ley_hacienda_municipal_iii_a` — apar=1, munis=1, años=1, vals=0.16
+  - desc: Predios urbanos: Predios edificados cuyo valor real se determine en los términos de la Ley de Hacienda Municipal del Estado de Jalisco, sobr
+- `urbano_no_edificado_valor_determinado_ley_hacienda_municipal_iii_b` — apar=1, munis=1, años=1, vals=0.3
+  - desc: Predios urbanos: Predios no edificados, cuyo valor real se determine en los términos de la Ley de Hacienda Municipal del Estado de Jalisco, 
+- `urbano_rusticos_intraurbanos_superficie_no_mayor_10000m2_o_igual_4000m2_valor_real` — apar=1, munis=1, años=1, vals=0.18
+  - desc: Predios ubicados dentro de la zona urbana, clasificados como rústicos intra-urbanos, con superficie no mayor a 10,000 m2 o igual a 4,000.00m
+- `urbanos_predios_edificados` — apar=1, munis=1, años=1, vals=0.16
+  - desc: Predios urbanos: a) Predios edificados... sobre el valor determinado, el: 0.16. A las cantidades determinadas... se les adicionará una cuota
+- `urbano_edificado_valor_real_lhmj_valor_determinado` — apar=1, munis=1, años=1, vals=0.18
+  - desc: Predios urbanos: predios edificados cuyo valor real se determine en los términos de la Ley de Hacienda Municipal del Estado de Jalisco, sobr
+- `urbano_no_edificado_valor_real_lhmj_valor_determinado` — apar=1, munis=1, años=1, vals=15.75
+  - desc: Predios urbanos: predios no edificados, cuyo valor real se determine en los términos de la Ley de Hacienda Municipal del Estado de Jalisco, 
+- `urbano_edificado_valor_antes_1979` — apar=1, munis=1, años=1, vals=1.3
+  - desc: Predios edificados que hayan sido valuados catastralmente o cuyo valor se obtuvo por operación traslativa de dominio, hasta antes de 1979, s
+- `urbano_inciso_a_edificados_valores_no_respondan_unitarios_tablas` — apar=1, munis=1, años=1, vals=0.96
+  - desc: II. Predios Urbanos. a) Predios edificados cuyos valores no respondan a los valores unitarios vigentes ... aplicará la tasa
+- `urbano_inciso_b_edificados_valor_real_ley_hacienda_municipal` — apar=1, munis=1, años=1, vals=0.18
+  - desc: II. Predios Urbanos. b) Predios edificados cuyo valor real se determine en los términos de la Ley de Hacienda Municipal del Estado de Jalisc
+- `urbano_inciso_c_no_edificados_fuera_zonas_urbanas_valor_real` — apar=1, munis=1, años=1, vals=0.5
+  - desc: II. Predios Urbanos. c) Predios no edificados que se localicen fuera de las zonas urbanas cuyo valor real se determine ... sobre el valor de
+- `urbano_inciso_d_no_edificados_dentro_zonas_urbanas_hasta_10000_m2` — apar=1, munis=1, años=1, vals=0.81
+  - desc: II. Predios Urbanos. d) Predios no edificados que se localicen dentro de las zonas urbanas, con una superficie de hasta 10,000 metros cuadra
+- `urbano_edificados_avaluo_hasta_antes_1979` — apar=1, munis=1, años=1, vals=1.3
+  - desc: Predios urbanos: predios edificados que hayan sido valuados catastralmente o cuyo valor se obtuvo por cualquier operación traslativa de domi
+- `urbano_edificado_valor_real_determinado_lhmb` — apar=1, munis=1, años=1, vals=0.18
+  - desc: Predios urbanos: predios edificados cuyo valor real se determine en los términos de la Ley de Hacienda Municipal del Estado de Jalisco, sobr
+- `urbano_no_edificado_valor_real_determinado_lhmb` — apar=1, munis=1, años=1, vals=0.33
+  - desc: Predios urbanos: predios no edificados, cuyo valor real se determine en los términos de la Ley de Hacienda Municipal del Estado de Jalisco, 
+- `urbanos_no_edificados_valor_1992_antes_2000_o_traslativa_dominio` — apar=1, munis=1, años=1, vals=0.32
+  - desc: III. Predios urbanos: a) Predios no edificados, cuyo valor se determine a partir de 1992, y antes del año 2000, en los términos de la Ley de
+- `urbanos_edificados_valor_tablas_enero_1992_antes_2000` — apar=1, munis=1, años=1, vals=0.14
+  - desc: III. Predios urbanos: b) Predios edificados, cuyo valor se determine en base a las tablas de valores de terreno y construcción publicadas en
+- `urbano_edificados_valuados_o_valor_hasta_antes_1979` — apar=1, munis=1, años=1, vals=1.3
+  - desc: III. Predios urbanos, inciso a) (predios edificados valuados catastralmente o cuyo valor se obtuvo por operación traslativa de dominio, hast
+- `predios_no_edificados_1992_1999` — apar=1, munis=1, años=1, vals=13.0
+  - desc: Predios no edificados, cuyo valor se determine a partir de 1992 y antes del año 2000
+- `predios_edificados_1992_1999` — apar=1, munis=1, años=1, vals=35.0
+  - desc: Predios edificados, cuyo valor se determine en base a las tablas de valores de terreno y construcción publicadas en el Periódico Oficial del
+- `urbano_edificado_0_16_millar_mas_cuota_fija` — apar=1, munis=1, años=1, vals=0.16
+  - desc: Predios urbanos edificados (inciso a): sobre el valor determinado, el 0.16; a las cantidades determinadas se adicionará una cuota fija de $1
+- `urbano_no_edificado_0_30_millar_mas_cuota_fija` — apar=1, munis=1, años=1, vals=0.3
+  - desc: Predios urbanos no edificados (inciso b): sobre el valor determinado, el 0.30; a las cantidades determinadas se adicionará una cuota fija de
+- `urbano_edificado_valor_real_determinado_lhmm` — apar=1, munis=1, años=1, vals=0.16
+  - desc: Predios edificados cuyo valor real se determine en los términos de la Ley de Hacienda Municipal del Estado de Jalisco
+- `urbano_no_edificado_valor_real_determinado_lhmm` — apar=1, munis=1, años=1, vals=0.3
+  - desc: Predios no edificados cuyo valor real se determine en los términos de la Ley de Hacienda Municipal del Estado de Jalisco
+- `urbano_baldios` — apar=1, munis=1, años=1, vals=0.7
+  - desc: Predios urbanos baldíos: sobre el valor determinado, el: 0.70 (bimestral y al millar)
+- `urbanos_no_edificados_zona_urbana_valor_determinado` — apar=1, munis=1, años=1, vals=0.81
+  - desc: Predios no edificados dentro de la zona urbana... sobre el valor determinado, el: 0.81; se adicionará una cuota fija de $17.00 pesos bimestr
+- `urbano_edificados_no_edificados_valor_no_excede_70000` — apar=1, munis=1, años=1, vals=0.7
+  - desc: Predios edificados y no edificados cuyo valor no exceda los $70,000.00
+- `urbanos_edificados_valor_fiscal_determinado_lhm` — apar=1, munis=1, años=1, vals=0.1854
+  - desc: Predios urbanos edificados (valor real determinado en términos de la Ley de Hacienda Municipal del Estado de Jalisco), sobre el valor determ
+- `urbanos_no_edificados_valor_fiscal_determinado_lhm` — apar=1, munis=1, años=1, vals=0.3605
+  - desc: Predios urbanos no edificados (valor real determinado en términos de la Ley de Hacienda Municipal del Estado de Jalisco), sobre el valor det
+- `urbanos_edificados_valor_catastral` — apar=1, munis=1, años=1, vals=0.22
+  - desc: Predios urbanos edificados: sobre el valor determinado
+- `urbanos_no_edificados_valor_catastral` — apar=1, munis=1, años=1, vals=0.33
+  - desc: Predios urbanos no edificados: sobre el valor determinado
+- `rustico_intraurbano_4000_a_10000_m2` — apar=1, munis=1, años=1, vals=0.18
+  - desc: Predios clasificados como rústicos intra-urbanos, con superficie no mayor a 10,000.00 m2 ni menor a 4,000.00 m2, cuyo valor real se determin
+- `urbano_edificado_valor_determinado_ley_hacienda_municipal` — apar=1, munis=1, años=1, vals=0.2
+  - desc: Predios urbanos edificados: sobre el valor determinado
+- `urbano_no_edificado_valor_determinado_ley_hacienda_municipal` — apar=1, munis=1, años=1, vals=0.3
+  - desc: Predios urbanos no edificados: sobre el valor determinado
+- `urbano_no_edificado_valor_1992_a_2000_0_30pct_millar` — apar=1, munis=1, años=1, vals=0.003
+  - desc: Predios no edificados, cuyo valor se determine a partir de 1992, y antes del año 2000, en los términos de la Ley de Hacienda Municipal o por
+- `urbano_edificado_valor_1992_a_2000_0_14pct_millar` — apar=1, munis=1, años=1, vals=0.0014
+  - desc: Predios edificados, cuyo valor se determine en base a las tablas de valores de terreno y construcción publicadas a partir de enero de 1992 y
+- `urbano_edificado_valor_real_ley_hacienda_0_18pct_millar` — apar=1, munis=1, años=1, vals=0.0018
+  - desc: Predios edificados cuyo valor real se determine en los términos de la Ley de Hacienda Municipal del Estado de Jalisco, sobre el valor determ
+- `urbano_no_edificado_valor_real_ley_hacienda_15_75pct_millar` — apar=1, munis=1, años=1, vals=0.1575
+  - desc: Predios no edificados, cuyo valor real se determine en los términos de la Ley de Hacienda Municipal del Estado de Jalisco, sobre el valor de
+- `urbano_edificados_tablas_valores_1992_a_antes_2006` — apar=1, munis=1, años=1, vals=0.17
+  - desc: Predios edificados cuyo valor se determine en base a las tablas de valores de terreno y construcción, publicadas en el Periódico Oficial El 
+- `urbano_no_edificado_fuera_zona_urbana_valor_real_lhm` — apar=1, munis=1, años=1, vals=0.5
+  - desc: Predios no edificados que se localicen fuera de las zonas urbanas cuyo valor real se determine en los términos de la Ley de Hacienda Municip
+- `urbano_no_edificado_dentro_zona_urbana_hasta_10000_m2` — apar=1, munis=1, años=1, vals=0.81
+  - desc: Predios no edificados que se localicen dentro de las zonas urbanas, con una superficie de hasta 10,000 metros cuadrados, cuyo valor real se 
+- `urbano_no_edificado_dentro_zona_urbana_mayor_10000_01_m2` — apar=1, munis=1, años=1, vals=1.0
+  - desc: Predios no edificados que se localicen dentro de las zonas urbanas, con una superficie mayor de 10,000.01 metros cuadrados, cuyo valor real 
+- `predios_urbanos_no_edificados_valor_determinado_1992_2000` — apar=1, munis=1, años=1, vals=0.18
+  - desc: Predios urbanos no edificados, cuyo valor se determine a partir de 1992, y antes del año 2000, en los términos de la Ley de Hacienda Municip
+- `predios_urbanos_edificados_valor_determinado_1992_2000` — apar=1, munis=1, años=1, vals=0.35
+  - desc: Predios urbanos edificados, cuyo valor se determine en base a las tablas de valores de terreno y construcción publicadas en el Periódico Ofi
+- `urbano_edificado_tablas_valores_terreno_construccion` — apar=1, munis=1, años=1, vals=0.16
+  - desc: Predios edificados cuyo valor se determine en base a las tablas de valores de terreno y construcción, sobre el valor determinado (inciso a)
+- `urbano_no_edificado_tablas_valores_terreno` — apar=1, munis=1, años=1, vals=0.3
+  - desc: Predios no edificados cuyo valor real se determine en base a las tablas de valores de terreno, sobre el valor determinado (inciso b)
+- `urbano_edificado_valuado_catastro_o_traslativa_pre_1979` — apar=1, munis=1, años=1, vals=1.3
+  - desc: Predios urbanos edificados valuados catastralmente o cuyo valor se obtuvo por cualquier operación traslativa de dominio, hasta antes de 1979
+- `urbanos_edificados_y_no_edificados_hasta_70000` — apar=1, munis=1, años=1, vals=0.7
+  - desc: Predios edificados y no edificados cuyo valor no exceda los $70,000.00
+- `urbano_edificados_valor_determinado_lhmj` — apar=1, munis=1, años=1, vals=0.1854
+  - desc: Predios urbanos: predios edificados cuyo valor real se determine en los términos de la Ley de Hacienda Municipal del Estado de Jalisco, sobr
+- `urbano_no_edificados_valor_determinado_lhmj` — apar=1, munis=1, años=1, vals=0.3605
+  - desc: Predios urbanos: predios no edificados, cuyo valor real se determine en los términos de la Ley de Hacienda Municipal del Estado de Jalisco, 
+- `urbanos_edificados_valor_real_determinado_sobre_valor_fiscal` — apar=1, munis=1, años=1, vals=0.16
+  - desc: Predios urbanos: Predios edificados cuyo valor real se determine en los términos de la Ley de Hacienda Municipal del Estado de Jalisco, sobr
+- `urbanos_no_edificados_valor_real_determinado_sobre_valor_fiscal` — apar=1, munis=1, años=1, vals=0.3
+  - desc: Predios urbanos: Predios no edificados, cuyo valor real se determine en los términos de la Ley de Hacienda Municipal del Estado de Jalisco, 
+- `rusticos_intraurbanos_4000_a_10000_m2_valor_real_determinado` — apar=1, munis=1, años=1, vals=0.18
+  - desc: Predios clasificados como rústicos intra-urbanos, con superficie no mayor a 10,000.00 m2 ni menor a 4,000.00, cuyo valor real se determine, 
+- `predios_urbanos_edificados_valor_determinado_lhmj` — apar=1, munis=1, años=1, vals=0.2
+  - desc: Predios urbanos: predios edificados cuyo valor real se determine en los términos de la Ley de Hacienda Municipal del Estado de Jalisco, sobr
+- `predios_urbanos_no_edificados_valor_determinado_lhmj` — apar=1, munis=1, años=1, vals=0.3
+  - desc: Predios urbanos: predios no edificados, cuyo valor real se determine en los términos de la Ley de Hacienda Municipal del Estado de Jalisco, 
+- `urbano_edificados_valor_real_hacienda_municipal` — apar=1, munis=1, años=1, vals=0.14
+  - desc: Predios urbanos: predios edificados cuyo valor real se determine en los términos de la Ley de Hacienda Municipal del Estado de Jalisco, sobr
+- `urbano_no_edificados_valor_real_hacienda_municipal` — apar=1, munis=1, años=1, vals=0.3
+  - desc: Predios urbanos: predios no edificados cuyo valor real se determine en los términos de la Ley de Hacienda Municipal del Estado de Jalisco, s
+- `urbano_edificados_valores_no_respondan_tablas_vigentes` — apar=1, munis=1, años=1, vals=0.26
+  - desc: Predios edificados cuyos valores no respondan a los valores unitarios vigentes de conformidad con las tablas de valores aprobadas para el pr
+- `urbano_no_edificados_dentro_zona_urbana_hasta_10000_m2_valor_real_lhmj` — apar=1, munis=1, años=1, vals=0.81
+  - desc: Predios no edificados dentro de las zonas urbanas, con una superficie de hasta 10,000 metros cuadrados, cuyo valor real se determine en los 
+- `urbano_no_edificados_dentro_zona_urbana_mas_10000_01_m2_valor_real_lhmj` — apar=1, munis=1, años=1, vals=1.0
+  - desc: Predios no edificados dentro de las zonas urbanas, con una superficie mayor de 10,000.01 metros cuadrados, cuyo valor real se determine en l
+- `urbanos_edificados_hasta_antes_1979_4_30_millar` — apar=1, munis=1, años=1, vals=4.3
+  - desc: Predios urbanos: a) Predios edificados que hayan sido valuados catastralmente o cuyo valor se obtuvo por cualesquiera operación traslativa d
+- `urbanos_edificados_1979_a_antes_1992_0_80_millar` — apar=1, munis=1, años=1, vals=0.8
+  - desc: Predios urbanos: b) Predios edificados cuyo valor se determine a partir de 1979 y antes del año de 1992, en los términos de la Ley de Catast
+- `urbanos_edificados_1992_a_antes_2000_0_20_millar` — apar=1, munis=1, años=1, vals=0.2
+  - desc: Predios urbanos: c) Predios edificados cuyo valor se determine en base a las tablas de valores de terreno y construcción, publicadas en el P
+- `urbanos_edificados_valor_real_determinado_lh_municipal` — apar=1, munis=1, años=1, vals=0.15
+  - desc: Predios urbanos: Predios edificados cuyo valor real se determine en los términos de la Ley de Hacienda Municipal del Estado de Jalisco, sobr
+- `urbanos_no_edificados_valor_real_determinado_lh_municipal` — apar=1, munis=1, años=1, vals=0.33
+  - desc: Predios urbanos: Predios no edificados, cuyo valor real se determine en los términos de la Ley de Hacienda Municipal del Estado de Jalisco, 
+- `urbano_edificado_ley_hacienda_municipal` — apar=1, munis=1, años=1, vals=0.2
+  - desc: Predios urbanos edificados cuyo valor real se determine en los términos de la Ley de Hacienda Municipal del Estado de Jalisco, sobre el valo
+- `urbano_no_edificado_ley_hacienda_municipal` — apar=1, munis=1, años=1, vals=0.3
+  - desc: Predios urbanos no edificados cuyo valor real se determine en los términos de la Ley de Hacienda Municipal del Estado de Jalisco, sobre el v
+- `urbano_no_edificado_hasta_antes_1979` — apar=1, munis=1, años=1, vals=3.4
+  - desc: Predios no edificados... hasta antes de 1979, sobre el valor determinado
+- `urbano_edificado_valores_enero_1992_antes_2000` — apar=1, munis=1, años=1, vals=3.4
+  - desc: Predios edificados... en base a las tablas de valores de terreno y construcción... a partir de enero de 1992 y antes del 2000... sobre el va
+- `urbano_edificados_valor_determinado_hasta_antes_1979` — apar=1, munis=1, años=1, vals=1.3
+  - desc: Predios urbanos: predios edificados que hayan sido valuados catastralmente o cuyo valor se obtuvo por cualquier operación traslativa de domi
+- `urbano_edificados_valor_real_determinado_ley_hacienda` — apar=1, munis=1, años=1, vals=0.16
+  - desc: Predios urbanos: predios edificados cuyo valor real se determine en los términos de la Ley de Hacienda Municipal del Estado de Jalisco, sobr
+- `urbano_no_edificados_valor_real_determinado_ley_hacienda` — apar=1, munis=1, años=1, vals=0.3
+  - desc: Predios urbanos: predios no edificados, cuyo valor real se determine en los términos de la Ley de Hacienda Municipal del Estado de Jalisco, 
+- `urbanos_edificados_tablas_1992_antes_2000` — apar=1, munis=1, años=1, vals=0.35
+  - desc: Predios urbanos: Predios edificados, cuyo valor se determine en base a las tablas de valores de terreno y construcción publicadas en el Peri
+- `urbano_edificado_0_16_millar` — apar=1, munis=1, años=1, vals=0.16
+  - desc: Predios edificados cuyo valor se determine en base a las tablas de valores de terreno y construcción, sobre el valor determinado (inciso a)
+- `urbano_no_edificado_0_30_millar` — apar=1, munis=1, años=1, vals=0.3
+  - desc: Predios no edificados cuyo valor real se determine en base a las tablas de valores de terreno, sobre el valor determinado (inciso b)
+- `urbanos_agropecuaria_comercial_industrial_edificados_no_edificados` — apar=1, munis=1, años=1, vals=0.84
+  - desc: Predios urbanos: predios edificados y no edificados, cuando su naturaleza sea agropecuaria, comercial o industrial
+- `edificados` — apar=1, munis=1, años=1, vals=0.16
+  - desc: Predios urbanos edificados, sobre el valor determinado
+- `no_edificados` — apar=1, munis=1, años=1, vals=0.33
+  - desc: Predios urbanos no edificados, sobre el valor determinado
+- `rusticos_intraurbanos_4000_a_10000_m2` — apar=1, munis=1, años=1, vals=0.18
+  - desc: Predios clasificados como rústicos intra-urbanos, con superficie no mayor a 10,000.00 m2 ni menor a 4,000.00 m2, sobre el valor determinado
+- `urbano_edificado_inciso_a` — apar=1, munis=1, años=1, vals=0.21
+  - desc: Predios urbanos (inciso a); sobre el valor determinado, el 0.21 al millar. A las cantidades que resulten de aplicar las tasas contenidas en 
+- `urbano_no_edificado_inciso_b` — apar=1, munis=1, años=1, vals=0.27
+  - desc: Predios no edificados; sobre el valor determinado, el 0.27 al millar.
+- `urbano_baldio_fuera_zona_edificada` — apar=1, munis=1, años=1, vals=0.3
+  - desc: Predios urbanos baldíos fuera de las zonas edificadas: sobre el valor determinado, el: 0.30. A las cantidades determinadas... se les adicion
+- `urbano_baldio_dentro_zona_edificada` — apar=1, munis=1, años=1, vals=0.4
+  - desc: Predios urbanos baldíos dentro de las zonas edificadas: sobre el valor determinado, el: 0.40. A las cantidades determinadas... se les adicio
+- `urbano_edificados_no_respondan_valores_unitarios_vigentes` — apar=1, munis=1, años=1, vals=0.96
+  - desc: Predios edificados cuyos valores no respondan a los valores unitarios vigentes de conformidad con las tablas de valores aprobadas para el pr
+- `urbano_no_edificados_dentro_zonas_urbanas_hasta_10000_m2_valor_real_lhm` — apar=1, munis=1, años=1, vals=0.81
+  - desc: Predios no edificados que se localicen dentro de las zonas urbanas, con una superficie de hasta 10,000 metros cuadrados, cuyo valor real se 
+- `urbano_no_edificados_dentro_zonas_urbanas_mayor_10000_01_m2_valor_real_lhm` — apar=1, munis=1, años=1, vals=1.0
+  - desc: Predios no edificados que se localicen dentro de las zonas urbanas, con una superficie mayor de 10,000.01 metros cuadrados, cuyo valor real 
+- `urbano_no_edificado_antes_1979` — apar=1, munis=1, años=1, vals=1.3
+  - desc: Predios urbanos no edificados... antes de 1979, sobre el valor determinado
+- `urbano_edificado_1979_1992` — apar=1, munis=1, años=1, vals=0.8
+  - desc: Predios urbanos edificados cuyo valor se determine a partir de 1979 y antes del año de 1992... sobre el valor determinado
+- `urbano_edificado_1992_2000_tablas_valores` — apar=1, munis=1, años=1, vals=0.17
+  - desc: Predios urbanos edificados... con base a las tablas de valores de terreno y construcción... a partir de enero de 1992 y antes del 2000, sobr
+- `predios_edificados_valor_real_determinado` — apar=1, munis=1, años=1, vals=0.17
+  - desc: Predios edificados cuyo valor real se determine en los términos de la Ley de Hacienda Municipal del Estado de Jalisco
+- `urbanos_edificados_valor_determinado_023_al_millar` — apar=1, munis=1, años=1, vals=0.23
+  - desc: Predios edificados cuyo valor real se determine en los términos de las Leyes de Hacienda Municipal y de Catastro Municipal del Estado de Jal
+- `urbanos_no_edificados_zona_urbana_valor_determinado_030_al_millar` — apar=1, munis=1, años=1, vals=0.3
+  - desc: Predios no edificados que se localicen dentro de la zona urbana de la ciudad, cuyo valor real se determine en los términos de las Leyes de H
+- `predios_urbanos_no_edificados_edificados` — apar=1, munis=1, años=1, vals=0.0
+  - desc: Predios urbanos no edificados y predios urbanos edificados, sobre el valor determinado
+- `predios_urbanos_no_edificados_con_valor_real` — apar=1, munis=1, años=1, vals=0.0
+  - desc: Predios urbanos no edificados, cuyo valor real se determine en los términos de la Ley de Hacienda Municipal del Estado de Jalisco, sobre el 
+- `urbano_edificados_tablas_valores_terreno_construccion_incisio_a` — apar=1, munis=1, años=1, vals=0.16
+  - desc: Predios edificados cuyo valor se determine en base a las tablas de valores de terreno y construcción... sobre el valor determinado (inciso a
+- `urbano_no_edificados_tablas_valores_terreno_incisio_b` — apar=1, munis=1, años=1, vals=0.3
+  - desc: Predios no edificados cuyo valor real se determine en base a las tablas de valores de terreno, sobre el valor determinado (inciso b)
+- `urbano_no_excede_70000` — apar=1, munis=1, años=1, vals=0.74
+  - desc: Predios edificados y no edificados cuyo valor no exceda los $70,000.00
+- `urbano_edificado_valor_determinado_lhmetj` — apar=1, munis=1, años=1, vals=0.16
+  - desc: Predios edificados cuyo valor real se determine en los términos de la Ley de Hacienda Municipal del Estado de Jalisco, sobre el valor determ
+- `urbano_no_edificado_valor_determinado_lhmetj` — apar=1, munis=1, años=1, vals=0.3
+  - desc: Predios no edificados, cuyo valor real se determine en los términos de la Ley de Hacienda Municipal del Estado de Jalisco, sobre el valor de
+- `urbano_edificado_valor_real_determinado_leyes_hacienda_catastro` — apar=1, munis=1, años=1, vals=0.24
+  - desc: Predios edificados cuyo valor real se determine en los términos de las Leyes de Hacienda Municipal y de Catastro Municipal del Estado de Jal
+- `urbano_no_edificado_en_zona_urbana_valor_real_determinado_leyes_hacienda_catastro` — apar=1, munis=1, años=1, vals=0.41
+  - desc: Predios no edificados que se localicen dentro de la zona urbana de la ciudad, cuyo valor real se determine en los términos de las Leyes de H
+- `rustico_intra_urbano_superficie_4000_a_10000_m2` — apar=1, munis=1, años=1, vals=0.18
+  - desc: Predios clasificados como rústicos intra-urbanos, con superficie no mayor a 10,000.00 m2 ni menor a 4,000.00 m2
+- `urbanos_edificados_valor_determinado_lhmemj` — apar=1, munis=1, años=1, vals=0.25
+  - desc: Predios urbanos: Predios edificados cuyo valor real se determine en los términos de la Ley de Hacienda Municipal del Estado de Jalisco, sobr
+- `urbanos_no_edificados_valor_determinado_lhmemj` — apar=1, munis=1, años=1, vals=0.38
+  - desc: Predios urbanos: Predios no edificados, cuyo valor real se determine en los términos de la Ley de Hacienda Municipal del Estado de Jalisco, 
+- `predios_urbanos_edificados_sobre_valor_determinado` — apar=1, munis=1, años=1, vals=0.17
+  - desc: Predios urbanos: a) Predios edificados ... sobre el valor determinado, el:
+- `predios_urbanos_no_edificados_sobre_valor_determinado` — apar=1, munis=1, años=1, vals=0.35
+  - desc: Predios urbanos: b) Predios no edificados ... sobre el valor determinado, el:
+- `urbanos_edificados_valor_determinado_lhmunicipal` — apar=1, munis=1, años=1, vals=0.18
+  - desc: Predios urbanos edificados: sobre el valor determinado
+- `urbanos_no_edificados_valor_determinado_lhmunicipal` — apar=1, munis=1, años=1, vals=0.33
+  - desc: Predios urbanos no edificados: sobre el valor determinado
+- `urbano_edificado_valores_hasta_1978` — apar=1, munis=1, años=1, vals=1.3
+  - desc: Predios edificados que hayan sido valuados catastralmente o cuyo valor se obtuvo por cualquier operación traslativa de dominio, hasta antes 
+- `urbano_no_edificado_valores_hasta_1991` — apar=1, munis=1, años=1, vals=1.3
+  - desc: Predios no edificados, que hayan sido valuados catastralmente o se valúen en los términos de la Ley de Catastro del Estado de Jalisco, o cuy
+- `urbano_no_edificados_dentro_zonas_urbanas_hasta_10000m2_valor_real_lhm` — apar=1, munis=1, años=1, vals=0.81
+  - desc: Predios urbanos no edificados dentro de las zonas urbanas, superficie hasta 10,000 m2 (valor real conforme a la Ley de Hacienda Municipal de
+- `urbano_no_edificados_dentro_zonas_urbanas_mayor_10000_01m2_valor_real_lhm` — apar=1, munis=1, años=1, vals=1.0
+  - desc: Predios urbanos no edificados dentro de las zonas urbanas, superficie mayor de 10,000.01 m2 (valor real conforme a la Ley de Hacienda Munici
+- `urbano_edificado_valores_antes_1979` — apar=1, munis=1, años=1, vals=1.34
+  - desc: Predios edificados... hasta antes de 1979, sobre el valor determinado
+- `predios_urbanos_no_edificados_y_edificados` — apar=1, munis=1, años=1, vals=0.0
+  - desc: Predios urbanos no edificados y edificados
+- `urbano_edificado_valor_tablas_terreno_construccion` — apar=1, munis=1, años=1, vals=0.16
+  - desc: Predios urbanos: Predios edificados cuyo valor se determine en base a las tablas de valores de terreno y construcción... sobre el valor dete
+- `urbano_no_edificado_valor_tablas_terreno` — apar=1, munis=1, años=1, vals=0.3
+  - desc: Predios urbanos: Predios no edificados cuyo valor real se determine en base a las tablas de valores de terreno, sobre el valor determinado, 
+- `urbano_edificados_tablas_valores_enero_1992_a_antes_2009` — apar=1, munis=1, años=1, vals=0.14
+  - desc: Predios urbanos edificados cuyo valor se determine en base a las tablas de valores de terreno y construcción publicadas a partir de enero de
+- `urbano_edificados_no_edificados_hasta_70000` — apar=1, munis=1, años=1, vals=0.77
+  - desc: Predios edificados y no edificados cuyo valor no exceda los $70,000.00
+- `urbano_edificados_valor_real_lh_municipal` — apar=1, munis=1, años=1, vals=0.16
+  - desc: Predios urbanos edificados, cuyo valor real se determine en los términos de la Ley de Hacienda Municipal del Estado de Jalisco, sobre el val
+- `urbano_no_edificados_valor_real_lh_municipal` — apar=1, munis=1, años=1, vals=0.31
+  - desc: Predios no edificados, cuyo valor real se determine en los términos de la Ley de Hacienda Municipal del Estado de Jalisco, sobre el valor de
+- `edificado_valor_determinado` — apar=1, munis=1, años=1, vals=2.5
+  - desc: Predios edificados: sobre el valor determinado, el: 0.25%. (Tasa bimestral al millar)
+- `no_edificado_valor_determinado` — apar=1, munis=1, años=1, vals=3.0
+  - desc: Predios no edificados: sobre el valor determinado, el: 0.30%. (Tasa bimestral al millar)
+- `urbanos_edificados_valor_real_determinado_ley_hacienda` — apar=1, munis=1, años=1, vals=0.17
+  - desc: Predios urbanos: Predios edificados cuyo valor real se determine en los términos de la Ley de Hacienda Municipal del Estado de Jalisco, sobr
+- `urbano_edificado_tablas_valores_1992_1999` — apar=1, munis=1, años=1, vals=0.2
+  - desc: Predios urbanos: Predios edificados, cuyo valor se determine en base a las tablas de valores de terreno y construcción publicadas a partir d
+- `urbano_edificado_no_responde_valores_unitarios_vigentes` — apar=1, munis=1, años=1, vals=0.96
+  - desc: Predios urbanos edificados cuyos valores no respondan a los valores unitarios vigentes conforme a las tablas de valores aprobadas para el pr
+- `urbano_no_edificado_fuera_zona_urbana_valor_real` — apar=1, munis=1, años=1, vals=0.8
+  - desc: Predios urbanos no edificados que se localicen fuera de las zonas urbanas cuyo valor real se determine en los términos de la Ley de Hacienda
+- `urbano_no_edificado_dentro_zona_urbana_hasta_10000m2_valor_real` — apar=1, munis=1, años=1, vals=0.81
+  - desc: Predios urbanos no edificados que se localicen dentro de las zonas urbanas, con una superficie de hasta 10,000 metros cuadrados, cuyo valor 
+- `urbano_no_edificado_dentro_zona_urbana_mayor_10000m2_valor_real` — apar=1, munis=1, años=1, vals=1.0
+  - desc: Predios urbanos no edificados que se localicen dentro de las zonas urbanas, con una superficie mayor de 10,000.01 metros cuadrados, cuyo val
+- `urbano_no_edificado_hasta_antes_1992_tasa_no_visible_en_texto` — apar=1, munis=1, años=1, vals=0.0
+  - desc: Predios no edificados, que hayan sido valuados catastralmente o se valúen en los términos de la Ley de Catastro del Estado de Jalisco, o cuy
+- `urbano_no_edificados_valor_real_lhm` — apar=1, munis=1, años=1, vals=0.3
+  - desc: Predios no edificados cuyo valor real se determine en los términos de la Ley de Hacienda Municipal del Estado de Jalisco
+- `urbanos_naturaleza_agropecuaria_comercial_industrial` — apar=1, munis=1, años=1, vals=0.85
+  - desc: Predios edificados y no edificados... cuando su naturaleza sea agropecuaria, comercial o industrial, se aplicará la tasa bimestral al millar
+- `urbano_edificado_tasa_0_21_mas_cuota_fija` — apar=1, munis=1, años=1, vals=0.21
+  - desc: Predios urbanos: predios edificados sobre el valor determinado (tasa 0.21) + cuota fija bimestral.
+- `urbano_no_edificado_tasa_0_32_mas_cuota_fija` — apar=1, munis=1, años=1, vals=0.32
+  - desc: Predios urbanos: predios no edificados sobre el valor determinado (tasa 0.32) + cuota fija bimestral.
+- `urbano_edificados_valor_real_determinado_lhm_jalisco` — apar=1, munis=1, años=1, vals=0.23
+  - desc: Predios urbanos edificados cuyo valor real se determine en los términos de la Ley de Hacienda Municipal del Estado de Jalisco, sobre el valo
+- `urbano_no_edificados_valor_real_determinado_lhm_jalisco` — apar=1, munis=1, años=1, vals=0.32
+  - desc: Predios urbanos no edificados, cuyo valor real se determine en los términos de la Ley de Hacienda Municipal del Estado de Jalisco, sobre el 
+- `edificados_valor_determinado` — apar=1, munis=1, años=1, vals=2.5
+  - desc: Predios edificados: sobre el valor determinado, el: 0.25%. (Tasa bimestral)
+- `no_edificados_valor_determinado` — apar=1, munis=1, años=1, vals=3.0
+  - desc: Predios no edificados: sobre el valor determinado, el: 0.30%. (Tasa bimestral)
+- `urbano_edificado_valor_real_ley_hacienda_sobre_valor_determinado` — apar=1, munis=1, años=1, vals=0.2
+  - desc: Predios urbanos: Predios edificados cuyo valor real se determine en los términos de la Ley de Hacienda Municipal del Estado de Jalisco, sobr
+- `urbano_no_edificado_valor_real_ley_hacienda_sobre_valor_determinado` — apar=1, munis=1, años=1, vals=0.32
+  - desc: Predios urbanos: Predios no edificados, cuyo valor real se determine en los términos de la Ley de Hacienda Municipal del Estado de Jalisco, 
+- `urbano_edificado_valores_no_respondan_tablas` — apar=1, munis=1, años=1, vals=0.96
+  - desc: Predios edificados cuyos valores no respondan a los valores unitarios vigentes de conformidad con las tablas de valores aprobadas para el pr
+- `urbano_no_edificado_fuera_zonas_urbanas_valor_real` — apar=1, munis=1, años=1, vals=0.5
+  - desc: Predios no edificados que se localicen fuera de las zonas urbanas cuyo valor real se determine en los términos de la Ley de Hacienda Municip
+- `urbano_no_edificado_dentro_zona_hasta_10000_m2_valor_real` — apar=1, munis=1, años=1, vals=0.81
+  - desc: Predios no edificados que se localicen dentro de las zonas urbanas, con una superficie de hasta 10,000 metros cuadrados, cuyo valor real se 
+- `urbano_no_edificado_dentro_zona_mayor_10000_01_m2_valor_real` — apar=1, munis=1, años=1, vals=1.0
+  - desc: Predios no edificados que se localicen dentro de las zonas urbanas, con una superficie mayor de 10,000.01 metros cuadrados, cuyo valor real 
+- `urbano_edificado_tablas_terreno_construccion` — apar=1, munis=1, años=1, vals=0.16
+  - desc: Predios urbanos edificados cuyo valor se determine en base a las tablas de valores de terreno y construcción, sobre el valor determinado (in
+- `urbano_no_edificado_tablas_terreno` — apar=1, munis=1, años=1, vals=0.3
+  - desc: Predios urbanos no edificados cuyo valor real se determine en base a las tablas de valores de terreno, sobre el valor determinado (inciso b)
+- `urbano_edificado_valor_real_determinado_inciso_a` — apar=1, munis=1, años=1, vals=0.21
+  - desc: Predios edificados cuyo valor real se determine en los términos de la Ley de Hacienda Municipal del Estado de Jalisco, sobre el valor determ
+- `urbano_no_edificado_valor_real_determinado_inciso_b` — apar=1, munis=1, años=1, vals=0.32
+  - desc: Predios no edificados, cuyo valor real se determine en los términos de la Ley de Hacienda Municipal del Estado de Jalisco, sobre el valor de
+- `urbanos_edificados_valor_real_lhm` — apar=1, munis=1, años=1, vals=0.16
+  - desc: Predios edificados cuyo valor real se determine en los términos de la Ley de Hacienda Municipal del Estado de Jalisco, sobre el valor determ
+- `urbanos_no_edificados_valor_real_lhm` — apar=1, munis=1, años=1, vals=0.3
+  - desc: Predios no edificados cuyo valor real se determine en los términos de la Ley de Hacienda Municipal del Estado de Jalisco, sobre el valor det
+- `urbano_edificados_1979_a_1991` — apar=1, munis=1, años=1, vals=0.85
+  - desc: III.b) Predios edificados cuyo valor se determine a partir de 1979 y antes del año de 1992, en los términos de la Ley de Catastro del Estado
+- `urbano_no_edificados_antes_1992` — apar=1, munis=1, años=1, vals=1.3
+  - desc: III.c) Predios no edificados, que hayan sido valuados catastralmente o se valúen en los términos de la Ley de Catastro del Estado de Jalisco
+- `urbano_no_edificados_1992_a_1999` — apar=1, munis=1, años=1, vals=0.3
+  - desc: III.d) Predios no edificados cuyo valor se determine a partir de 1992 y antes del año 2000, en los términos de la Ley de Hacienda Municipal 
+- `urbano_edificados_tablas_1992_a_1999` — apar=1, munis=1, años=1, vals=0.14
+  - desc: III.e) Predios edificados cuyo valor se determine en base a las tablas de valores de terreno y construcción, publicadas en el Periódico Ofic
+- `predios_edificados_valor_determinado` — apar=1, munis=1, años=1, vals=2.5
+  - desc: Predios edificados... sobre el valor determinado, el: 0.25%
+- `predios_no_edificados_valor_determinado` — apar=1, munis=1, años=1, vals=3.0
+  - desc: Predios no edificados... sobre el valor determinado, el: 0.30%
+- `urbano_edificado_valuado_hasta_antes_1979_inciso_a` — apar=1, munis=1, años=1, vals=1.39
+  - desc: Predios urbanos: predios edificados valuados catastralmente o cuyo valor se obtuvo por operación traslativa de dominio, hasta antes de 1979,
+- `urbano_edificado_valor_1979_a_antes_1992_inciso_b` — apar=1, munis=1, años=1, vals=0.86
+  - desc: Predios urbanos: predios edificados cuyo valor se determine a partir de 1979 y antes del año de 1992, en términos de la Ley de Catastro del 
+- `urbano_no_edificado_valuado_hasta_antes_1992_inciso_c` — apar=1, munis=1, años=1, vals=1.39
+  - desc: Predios urbanos: predios no edificados valuados catastralmente o valuados en términos de la Ley de Catastro del Estado de Jalisco, o cuyo va
+- `urbano_no_edificado_valor_1992_a_antes_2000_inciso_d` — apar=1, munis=1, años=1, vals=0.32
+  - desc: Predios urbanos: predios no edificados cuyo valor se determine a partir de 1992 y antes del año 2000, en términos de la Ley de Hacienda Muni
+- `urbano_edificado_tablas_valores_1992_a_antes_2000_inciso_e` — apar=1, munis=1, años=1, vals=0.15
+  - desc: Predios urbanos: predios edificados cuyo valor se determine en base a las tablas de valores de terreno y construcción publicadas a partir de
+- `urbano_edificado_hasta_antes_1979_1_49_al_millar` — apar=1, munis=1, años=1, vals=1.49
+  - desc: Predios edificados que hayan sido valuados catastralmente o cuyo valor se obtuvo por cualquier operación traslativa de dominio, hasta antes 
+- `urbano_edificado_1979_a_antes_1992_0_80_al_millar` — apar=1, munis=1, años=1, vals=0.8
+  - desc: Predios edificados, cuyo valor se determine a partir de 1979, y antes del año de 1992, sobre el valor determinado
+- `urbano_no_edificado_hasta_antes_1992_1_49_al_millar` — apar=1, munis=1, años=1, vals=1.49
+  - desc: Predios no edificados, que hayan sido valuados catastralmente o se valúen en los términos de la Ley de Catastro del Estado de Jalisco, o cuy
+- `urbano_no_edificado_1992_a_antes_2000_0_30_al_millar` — apar=1, munis=1, años=1, vals=0.3
+  - desc: Predios no edificados, cuyo valor se determine a partir de 1992, y antes del año 2000, sobre el valor determinado
+- `urbano_edificado_tablas_valores_enero_1992_a_antes_2000_0_14_al_millar` — apar=1, munis=1, años=1, vals=0.14
+  - desc: Predios edificados, cuyo valor se determine en base a las tablas de valores de terreno y construcción publicadas a partir de enero de 1992 y
+- `urbano_edificado_valor_real_lhmj_0_21_al_millar` — apar=1, munis=1, años=1, vals=0.21
+  - desc: Predios edificados cuyo valor real se determine en los términos de la Ley de Hacienda Municipal del Estado de Jalisco, sobre el valor determ
+- `urbano_no_edificado_valor_real_lhmj_0_40_al_millar` — apar=1, munis=1, años=1, vals=0.4
+  - desc: Predios no edificados, cuyo valor real se determine en los términos de la Ley de Hacienda Municipal del Estado de Jalisco, sobre el valor de
+- `urbano_edificado_valor_1992_a_antes_2000` — apar=1, munis=1, años=1, vals=0.14
+  - desc: Predios edificados (valor en base a tablas de valores de terreno y construcción publicadas a partir de enero de 1992 y antes del 2000), sobr
+- `urbanos_edificados_valor_tablas_enero_1992_a_antes_2000` — apar=1, munis=1, años=1, vals=0.25
+  - desc: Predios edificados cuyo valor se determine en base a las tablas de valores de terreno y construcción publicadas a partir de enero de 1992 y 
+- `urbano_no_edificados_fuera_zonas_urbanas_valor_real` — apar=1, munis=1, años=1, vals=0.53
+  - desc: Predios urbanos no edificados que se localicen fuera de las zonas urbanas cuyo valor real se determine en los términos de la Ley de Hacienda
+- `urbano_no_edificados_dentro_zonas_urbanas_hasta_10000_m2_valor_real` — apar=1, munis=1, años=1, vals=0.85
+  - desc: Predios urbanos no edificados dentro de las zonas urbanas, con superficie de hasta 10,000 m2, cuyo valor real se determine en los términos d
+- `urbano_no_edificados_dentro_zonas_urbanas_mas_10000_01_m2_valor_real` — apar=1, munis=1, años=1, vals=1.05
+  - desc: Predios urbanos no edificados dentro de las zonas urbanas, con superficie mayor de 10,000.01 m2, cuyo valor real se determine en los término
+- `urbanos_no_edificados_zona_urbana_valor_fiscal_determinado` — apar=1, munis=1, años=1, vals=0.3
+  - desc: Predios urbanos: Predios no edificados dentro de la zona urbana, cuyo valor real se determine, sobre el valor determinado
+- `urbanos_edificados_valor_1992_antes_2000` — apar=1, munis=1, años=1, vals=0.33
+  - desc: Predios edificados, cuyo valor se determine en base a las tablas de valores de terreno y construcción publicadas en el Periódico Oficial El 
+- `urbano_edificados_y_no_edificados_valor_hasta_70000` — apar=1, munis=1, años=1, vals=0.81
+  - desc: Predios edificados y no edificados cuyo valor no exceda los $70,000.00
+
+### Oaxaca <a id='tarifa-millar-oaxaca'></a> — 86 claves
+
+#### grupo: `general` — 51 clave(s)
+
+- `tasa_general_valor_catastral` — apar=5, munis=5, años=3, vals=0.5|5.0|5.0|5.0|1.5
+  - desc: La tasa de este impuesto será del 0.05% anual sobre el valor catastral del inmueble.
+- `terrenos_baldios` — apar=5, munis=1, años=5, vals=5.0|4.5|4.5|4.5|4.5
+  - desc: Terrenos baldíos
+- `general` — apar=2, munis=2, años=2, vals=5.0|6.0
+  - desc: La tasa de este impuesto será del 0.5 % anual sobre el valor catastral
+- `tasa_general_predial` — apar=1, munis=1, años=1, vals=5.0
+  - desc: La tasa aplicable a este impuesto será del 0.5%.
+- `avaluo_comercial` — apar=1, munis=1, años=1, vals=0.8
+  - desc: Propietarios o poseedores de inmuebles con avalúo comercial practicado por perito autorizado o por autoridades municipales que reflejen valo
+- `predios_base_menor_a_1000000_terrenos_baldios` — apar=1, munis=1, años=1, vals=3.5
+  - desc: Predios con bases gravables menores a 1,000,000 de pesos, Terrenos baldíos
+- `predios_base_1000001_a_3000000` — apar=1, munis=1, años=1, vals=4.0
+  - desc: Predios con bases gravables de 1,000,001 a 3,000,000 de pesos
+- `predios_base_3000001_a_4000000` — apar=1, munis=1, años=1, vals=4.5
+  - desc: Predios con bases gravables de 3,000,001 a 4,000,000 de pesos
+- `predios_base_mayores_a_4000000` — apar=1, munis=1, años=1, vals=5.0
+  - desc: Predios con bases gravables mayores de 4,000,000 de pesos
+- `comercio_establecido_terreno_hasta_200m2_construccion_hasta_159m2` — apar=1, munis=1, años=1, vals=3.0
+  - desc: De comercio establecido: terreno hasta 200 m2 y construcción hasta 159 m2
+- `comercio_establecido_terreno_mayor_a_200m2_o_construccion_mayor_a_160m2` — apar=1, munis=1, años=1, vals=4.0
+  - desc: De comercio establecido: terreno mayor de 200 m2 o construcción mayor de 160 m2
+- `casa_habitacion_interes_social_terreno_hasta_120m2_construccion_hasta_120m2` — apar=1, munis=1, años=1, vals=1.0
+  - desc: Casa habitación de interés social: terreno hasta 120 m2 y construcción hasta 120 m2
+- `casa_habitacion_terreno_mayor_a_120m2_o_construccion_mayor_a_120m2` — apar=1, munis=1, años=1, vals=1.5
+  - desc: Casa habitación: terreno mayor de 120 m2 o construcción mayor de 120 m2
+- `predios_con_bases_gravables_menores_a_1000000_de_pesos_zona_baja` — apar=1, munis=1, años=1, vals=2.0
+  - desc: Predios con bases gravables menores a 1'000,000 de pesos, zona baja
+- `predios_con_bases_gravables_menores_a_1000000_de_pesos_zona_media` — apar=1, munis=1, años=1, vals=2.5
+  - desc: Predios con bases gravables menores a 1'000,000 de pesos, zona media
+- `predios_con_bases_gravables_menores_a_1000000_de_pesos_zona_alta` — apar=1, munis=1, años=1, vals=3.5
+  - desc: Predios con bases gravables menores a 1'000,000 de pesos, zona alta
+- `predios_con_bases_gravables_de_1000001_a_3000000_de_pesos` — apar=1, munis=1, años=1, vals=4.0
+  - desc: Predios con bases gravables de 1'000,001 a 3'000,000 de pesos
+- `predios_con_bases_gravables_de_3000001_a_4000000_de_pesos` — apar=1, munis=1, años=1, vals=4.5
+  - desc: Predios con bases gravables de 3'000,001 a 4'000,000 de pesos
+- `predios_con_bases_gravables_mayores_de_4000000_de_pesos` — apar=1, munis=1, años=1, vals=5.0
+  - desc: Predios con bases gravables mayores de 4'000,000 de pesos
+- `terrenos_baldios_en_zonas_urbanas` — apar=1, munis=1, años=1, vals=8.0
+  - desc: Terrenos baldíos en zonas urbanas
+- `predios_pertenecientes_a_nucleos_agrarios_de_poblacion_ejidal_o_comunal` — apar=1, munis=1, años=1, vals=2.0
+  - desc: Predios pertenecientes a núcleos agrarios de población ejidal o comunal
+- `terrenos_baldios_en_zonas_no_urbanizadas` — apar=1, munis=1, años=1, vals=5.0
+  - desc: Terrenos baldíos en zonas no urbanizadas
+- `predios_bases_gravables_menores_a_un_millon_zona_baja` — apar=1, munis=1, años=1, vals=1.5
+  - desc: Predios con bases gravables menores a 1'000,000 de pesos: Zona Baja
+- `predios_bases_gravables_menores_a_un_millon_zona_media` — apar=1, munis=1, años=1, vals=2.0
+  - desc: Predios con bases gravables menores a 1'000,000 de pesos: Zona Media
+- `predios_bases_gravables_menores_a_un_millon_zona_alta` — apar=1, munis=1, años=1, vals=3.0
+  - desc: Predios con bases gravables menores a 1'000,000 de pesos: Zona Alta
+- `predios_bases_gravables_de_un_millon_uno_a_tres_millones` — apar=1, munis=1, años=1, vals=3.5
+  - desc: Predios con bases gravables de 1'000,001 a 3'000,000 de pesos
+- `predios_bases_gravables_de_tres_millones_uno_a_cuatro_millones` — apar=1, munis=1, años=1, vals=4.0
+  - desc: Predios con bases gravables de 3'000,001 a 4'000,000 de pesos
+- `predios_bases_gravables_mayores_de_cuatro_millones_uno` — apar=1, munis=1, años=1, vals=4.5
+  - desc: Predios con bases gravables mayores de 4'000,001 de pesos
+- `zona_baja` — apar=1, munis=1, años=1, vals=1.5
+  - desc: Zona Baja
+- `zona_media` — apar=1, munis=1, años=1, vals=2.0
+  - desc: Zona Media
+- `zona_alta` — apar=1, munis=1, años=1, vals=3.0
+  - desc: Zona Alta
+- `general_0_5_por_ciento_anual` — apar=1, munis=1, años=1, vals=5.0
+  - desc: Pago del Impuesto Predial: 0.5% anual sobre el valor catastral del inmueble (Art. 23).
+- `tasa_anual_0_5_por_ciento` — apar=1, munis=1, años=1, vals=5.0
+  - desc: Se causará este impuesto del 0.5% anual sobre el valor catastral del inmueble.
+- `bases_gravables_menores_a_1_millon_zona_baja` — apar=1, munis=1, años=1, vals=1.5
+  - desc: Predios con bases gravables menores a 1'000,000 de pesos: Zona Baja
+- `bases_gravables_menores_a_1_millon_zona_media` — apar=1, munis=1, años=1, vals=2.0
+  - desc: Predios con bases gravables menores a 1'000,000 de pesos: Zona Media
+- `bases_gravables_menores_a_1_millon_zona_alta` — apar=1, munis=1, años=1, vals=3.0
+  - desc: Predios con bases gravables menores a 1'000,000 de pesos: Zona Alta
+- `bases_gravables_de_1_a_3_millones` — apar=1, munis=1, años=1, vals=3.5
+  - desc: Predios con bases gravables de 1'000,001 a 3'000,000 de pesos
+- `bases_gravables_de_3_a_4_millones` — apar=1, munis=1, años=1, vals=4.0
+  - desc: Predios con bases gravables de 3'000,001 a 4'000,000 de pesos
+- `bases_gravables_mayores_a_4_millones` — apar=1, munis=1, años=1, vals=4.5
+  - desc: Predios con bases gravables mayores de 4'000,001 de pesos
+- `general_valor_fiscal` — apar=1, munis=1, años=1, vals=5.0
+  - desc: La tasa a aplicar por concepto de Impuesto Predial es del 0.5% anual sobre el valor fiscal del inmueble.
+- `menores_a_un_millon_zona_baja` — apar=1, munis=1, años=1, vals=1.5
+  - desc: Menores a 1'000,000.00: Zona Baja
+- `menores_a_un_millon_zona_media` — apar=1, munis=1, años=1, vals=2.0
+  - desc: Menores a 1'000,000.00: Zona Media
+- `menores_a_un_millon_zona_alta` — apar=1, munis=1, años=1, vals=3.0
+  - desc: Menores a 1'000,000.00: Zona Alta
+- `un_millon_uno_a_tres_millones` — apar=1, munis=1, años=1, vals=3.5
+  - desc: 1'000,001.00 a 3'000,000.00
+- `tres_millones_uno_a_cuatro_millones` — apar=1, munis=1, años=1, vals=4.0
+  - desc: 3'000,001.00 a 4'000,000.00
+- `cuatro_millones_uno_en_adelante` — apar=1, munis=1, años=1, vals=4.5
+  - desc: 4'000,001.00 en adelante
+- `terrenos_balidos` — apar=1, munis=1, años=1, vals=4.5
+  - desc: Terrenos baldíos
+- `excedente_veinte_millones` — apar=1, munis=1, años=1, vals=4.8
+  - desc: 20,000,000.00 en adelante
+- `predios_bases_gravables_de_1500001_a_3000000` — apar=1, munis=1, años=1, vals=3.5
+  - desc: Predios con bases gravables de 1,500,001 a 3,000,000 de pesos
+- `predios_bases_gravables_de_3000001_a_4000000` — apar=1, munis=1, años=1, vals=4.0
+  - desc: Predios con bases gravables de 3,000,001 a 4,000,000 de pesos
+- `predios_bases_gravables_mayores_de_4000001` — apar=1, munis=1, años=1, vals=4.5
+  - desc: Predios con bases gravables mayores de 4,000,001 de pesos
+
+#### grupo: `otro` — 1 clave(s)
+
+- `caracteristicas_especiales_valor_fiscal` — apar=2, munis=2, años=1, vals=13.0|13.0
+  - desc: Para los bienes inmuebles de características especiales la tasa aplicable será del 1.3% sobre el valor fiscal del inmueble.
+
+#### grupo: `rustico` — 1 clave(s)
+
+- `terrenos_baldios` — apar=1, munis=1, años=1, vals=8.0
+  - desc: Terrenos baldíos
+
+#### grupo: `urbano` — 33 clave(s)
+
+- `predios_base_menor_a_1000000_zona_baja` — apar=1, munis=1, años=1, vals=2.0
+  - desc: Predios con bases gravables menores a 1,000,000 de pesos, Zona Baja
+- `predios_base_menor_a_1000000_zona_media` — apar=1, munis=1, años=1, vals=2.0
+  - desc: Predios con bases gravables menores a 1,000,000 de pesos, Zona Media
+- `predios_base_menor_a_1000000_zona_alta` — apar=1, munis=1, años=1, vals=2.5
+  - desc: Predios con bases gravables menores a 1,000,000 de pesos, Zona Alta
+- `predios_bases_gravables_menores_a_100000_zona_baja` — apar=1, munis=1, años=1, vals=2.0
+  - desc: Predios con bases gravables menores a 100,000 de pesos, Zona Baja
+- `predios_bases_gravables_menores_a_100000_zona_media` — apar=1, munis=1, años=1, vals=2.5
+  - desc: Predios con bases gravables menores a 100,000 de pesos, Zona Media
+- `predios_bases_gravables_menores_a_100000_zona_alta` — apar=1, munis=1, años=1, vals=3.5
+  - desc: Predios con bases gravables menores a 100,000 de pesos, Zona Alta
+- `predios_bases_gravables_1000001_a_3000000` — apar=1, munis=1, años=1, vals=4.0
+  - desc: Predios con bases gravables de 1,000,001 a 3,000,000 de pesos
+- `predios_bases_gravables_3000001_a_4000000` — apar=1, munis=1, años=1, vals=4.5
+  - desc: Predios con bases gravables de 3,000,001 a 4,000,000 de pesos
+- `predios_bases_gravables_mayores_a_400001` — apar=1, munis=1, años=1, vals=5.0
+  - desc: Predios con bases gravables mayores de 400,001 de pesos
+- `predios_bases_gravables_menores_a_1500000_zona_baja` — apar=1, munis=1, años=1, vals=1.5
+  - desc: Predios con bases gravables menores a 1,500,000 de pesos. Zona Baja
+- `predios_bases_gravables_menores_a_1500000_zona_media` — apar=1, munis=1, años=1, vals=2.0
+  - desc: Predios con bases gravables menores a 1,500,000 de pesos. Zona Media
+- `predios_bases_gravables_menores_a_1500000_zona_alta` — apar=1, munis=1, años=1, vals=3.0
+  - desc: Predios con bases gravables menores a 1,500,000 de pesos. Zona Alta
+- `centro_alta` — apar=1, munis=1, años=1, vals=0.0
+  - desc: predios urbanos en zona alta
+- `centro_media` — apar=1, munis=1, años=1, vals=0.0
+  - desc: predios urbanos en zona media
+- `centro_baja` — apar=1, munis=1, años=1, vals=0.0
+  - desc: predios urbanos en zona baja
+- `predios_con_bases_gravables_menores_a_1500000_pesos_zona_baja` — apar=1, munis=1, años=1, vals=1.5
+  - desc: Predios con bases gravables menores a 1'500,000 de pesos, Zona Baja
+- `predios_con_bases_gravables_menores_a_1500000_pesos_zona_media` — apar=1, munis=1, años=1, vals=2.0
+  - desc: Predios con bases gravables menores a 1'500,000 de pesos, Zona Media
+- `predios_con_bases_gravables_menores_a_1500000_pesos_zona_alta` — apar=1, munis=1, años=1, vals=3.0
+  - desc: Predios con bases gravables menores a 1'500,000 de pesos, Zona Alta
+- `predios_con_bases_gravables_de_1500001_a_3000000_pesos` — apar=1, munis=1, años=1, vals=3.5
+  - desc: Predios con bases gravables de 1'500,001 a 3'000,000 de pesos
+- `predios_con_bases_gravables_de_3000001_a_4000000_pesos` — apar=1, munis=1, años=1, vals=4.0
+  - desc: Predios con bases gravables de 3'000,001 a 4'000,000 de pesos
+- `predios_con_bases_gravables_mayores_a_4000001_pesos` — apar=1, munis=1, años=1, vals=4.5
+  - desc: Predios con bases gravables mayores de 4'000,001 de pesos
+- `terrenos_balidos` — apar=1, munis=1, años=1, vals=4.5
+  - desc: Terrenos baldíos
+- `predios_bases_gravables_menores_a_1500000` — apar=1, munis=1, años=1, vals=1.5
+  - desc: Predios con bases gravables menores a 1,500,000 pesos: Zona Baja 1.5 al millar; Zona Media 2.0 al millar; Zona Alta 3.0 al millar
+- `predios_bases_gravables_de_1500001_a_3000000` — apar=1, munis=1, años=1, vals=3.5
+  - desc: Predios con bases gravables de 1,500,001 a 3,000,000 de pesos
+- `predios_bases_gravables_de_3000001_a_4000000` — apar=1, munis=1, años=1, vals=4.0
+  - desc: Predios con bases gravables de 3,000,001 a 4,000,000 de pesos
+- `predios_bases_gravables_mayores_a_4000001` — apar=1, munis=1, años=1, vals=4.5
+  - desc: Predios con bases gravables mayores a 4,000,001 pesos
+- `terrenos_baldios` — apar=1, munis=1, años=1, vals=4.5
+  - desc: Terrenos baldíos
+- `predios_con_bases_gravables_menores_al_700000_de_pesos_zona_baja` — apar=1, munis=1, años=1, vals=3.15
+  - desc: Predios con bases gravables menores al $700,000 de pesos, Zona Baja
+- `predios_con_bases_gravables_menores_al_700000_de_pesos_zona_media` — apar=1, munis=1, años=1, vals=2.0
+  - desc: Predios con bases gravables menores al $700,000 de pesos, Zona Media
+- `predios_con_bases_gravables_menores_al_700000_de_pesos_zona_alta` — apar=1, munis=1, años=1, vals=3.0
+  - desc: Predios con bases gravables menores al $700,000 de pesos, Zona Alta
+- `predios_con_bases_gravables_de_700001_a_3000000_de_pesos` — apar=1, munis=1, años=1, vals=3.5
+  - desc: Predios con bases gravables de $700,001 a $3,000,000 de pesos
+- `predios_con_bases_gravables_de_3000001_a_4000000_de_pesos` — apar=1, munis=1, años=1, vals=4.0
+  - desc: Predios con bases gravables de $3,000,001 a $4,000,000 de pesos
+- `predios_con_bases_gravables_mayores_de_4000001_de_pesos` — apar=1, munis=1, años=1, vals=5.0
+  - desc: Predios con bases gravables mayores de $4,000,001 de pesos
+
+### Querétaro <a id='tarifa-millar-queretaro'></a> — 65 claves
+
+#### grupo: `general` — 10 clave(s)
+
+- `predio_fraccionamiento_en_proceso_de_ejecucion` — apar=4, munis=4, años=4, vals=0.0016|0.0016|1.6|0.0016
+  - desc: Predio de fraccionamiento en proceso de ejecución
+- `predio_reserva_urbana` — apar=2, munis=2, años=2, vals=0.0014|0.0014
+  - desc: Predio de reserva urbana
+- `fraccionamiento_en_proceso_de_ejecucion` — apar=2, munis=2, años=2, vals=1.6|1.6
+  - desc: Predio de fraccionamiento en proceso de ejecución
+- `predio_de_fraccionamiento_en_proceso_de_ejecucion` — apar=1, munis=1, años=1, vals=1.6
+  - desc: Predio de Fraccionamiento en proceso de ejecución
+- `predio_produccion_agricola_condominio_pleno_provenga_de_ejido` — apar=1, munis=1, años=1, vals=0.2
+  - desc: Predio de producción agrícola, condominio pleno que provenga de ejido
+- `produccion_agricola_dominio_pleno_ejido` — apar=1, munis=1, años=1, vals=0.2
+  - desc: Predio de producción agrícola, con dominio pleno que provenga de ejido
+- `predio_produccion_agricola_dominio_pleno_proveniente_de_ejido` — apar=1, munis=1, años=1, vals=0.0002
+  - desc: Predio de producción agrícola, con dominio pleno que provenga de ejido
+- `reserva_urbana` — apar=1, munis=1, años=1, vals=1.4
+  - desc: Predio de reserva urbana
+- `produccion_agricola_dominio_pleno_de_ejido` — apar=1, munis=1, años=1, vals=0.2
+  - desc: Predio de producción agrícola, con dominio pleno que provenga de ejido
+- `produccion_agricola_dominio_pleno_provenga_de_ejido` — apar=1, munis=1, años=1, vals=0.0002
+  - desc: Predio de producción agrícola, con dominio pleno que provenga de ejido
+
+#### grupo: `otro` — 23 clave(s)
+
+- `predio_fraccionamiento_en_proceso_de_ejecucion` — apar=66, munis=17, años=17, vals=1.6|0.0016|0.0016|0.0016|0.0016
+  - desc: Predio de Fraccionamiento en proceso de ejecución
+- `fraccionamiento_en_proceso_de_ejecucion` — apar=45, munis=15, años=16, vals=0.001|1.6|0.001|1.6|1.6
+  - desc: Predio de Fraccionamiento en proceso de ejecución
+- `predio_reserva_urbana` — apar=41, munis=16, años=17, vals=1.4|0.0014|1.4|1.4|0.0014
+  - desc: Predio de Reserva Urbana
+- `reserva_urbana` — apar=36, munis=13, años=16, vals=0.0009|1.4|0.0009|1.4|1.4
+  - desc: Predio de Reserva Urbana
+- `predio_de_produccion_agricola_con_dominio_pleno_que_provenga_de_ejido` — apar=29, munis=13, años=13, vals=0.2|0.0002|0.2|0.2|0.2
+  - desc: Predio de producción agrícola con dominio pleno que provenga de ejido
+- `predio_produccion_agricola_dominio_pleno_proveniente_de_ejido` — apar=27, munis=14, años=14, vals=0.2|0.0002|0.0002|0.0002|0.2
+  - desc: Predio de producción agrícola, con dominio pleno que provenga de ejido
+- `predio_de_fraccionamiento_en_proceso_de_ejecucion` — apar=27, munis=12, años=14, vals=1.6|0.0016|1.6|1.0|1.6
+  - desc: Predio de fraccionamiento en proceso de ejecución
+- `predio_de_reserva_urbana` — apar=24, munis=10, años=13, vals=0.0014|1.4|0.9|1.4|1.4
+  - desc: Predio de Reserva Urbana
+- `produccion_agricola_dominio_pleno_proveniente_de_ejido` — apar=22, munis=11, años=14, vals=0.0002|0.2|0.2|0.0002|0.2
+  - desc: Predio de producción agrícola, con dominio pleno que provenga de ejido
+- `predio_produccion_agricola_dominio_pleno_provenga_de_ejido` — apar=9, munis=6, años=8, vals=0.2|0.2|0.2|0.0002|0.2
+  - desc: Predio de producción agrícola, con dominio pleno que provenga de ejido
+- `predio_produccion_agricola_con_dominio_pleno_proveniente_de_ejido` — apar=6, munis=5, años=6, vals=0.2|0.2|0.0002|0.2|0.0002
+  - desc: Predio de producción agrícola con dominio pleno que provenga de ejido
+- `produccion_agricola_dominio_pleno_ejido` — apar=6, munis=6, años=5, vals=0.0002|0.2|0.2|0.0002|0.2
+  - desc: Predio de producción agrícola, con dominio pleno que provenga de ejido
+- `produccion_agricola_dominio_pleno_de_ejido` — apar=6, munis=4, años=6, vals=0.2|0.0002|0.0002|0.2|0.0002
+  - desc: Predio de producción agrícola, con dominio pleno que provenga de ejido
+- `predio_produccion_agricola_dominio_pleno_de_ejido` — apar=4, munis=3, años=3, vals=0.0002|0.2|0.2|0.0002
+  - desc: Predio de producción agrícola, con dominio pleno que provenga de ejido
+- `produccion_agricola_dominio_pleno_provenga_de_ejido` — apar=3, munis=3, años=3, vals=0.0002|0.2|0.2
+  - desc: Predio de producción agrícola, con dominio pleno que provenga de ejido
+- `produccion_agricola_dominio_pleno` — apar=3, munis=3, años=3, vals=0.2|0.2|0.2
+  - desc: Predio de producción agrícola, con dominio pleno que provenga de ejido
+- `predio_produccion_agricola_dominio_pleno_provenga_ejido` — apar=1, munis=1, años=1, vals=0.2
+  - desc: Predio de Producción Agrícola, con Dominio Pleno que Provenga de Ejido
+- `produccion_agricola_dominio_pleno_proveniente_ejido` — apar=1, munis=1, años=1, vals=0.2
+  - desc: Predio de producción agrícola con dominio pleno que provenga de ejido
+- `produccion_agricola_con_dominio_pleno_proveniente_de_ejido` — apar=1, munis=1, años=1, vals=0.0002
+  - desc: Predio de producción agrícola, con dominio pleno que provenga de ejido
+- `predio_produccion_agricola_condominio_pleno_proveniente_de_ejido` — apar=1, munis=1, años=1, vals=0.0002
+  - desc: Predio de producción agrícola, condominio pleno que provenga de ejido
+- `predio_de_produccion_agricola_condominio_pleno_que_provenga_de_ejido` — apar=1, munis=1, años=1, vals=0.2
+  - desc: Predio de producción agrícola, condominio pleno que provenga de ejido
+- `predio_produccion_agricola_dominio_pleno_proveniente_ejido` — apar=1, munis=1, años=1, vals=0.0002
+  - desc: Predio de producción agrícola, con dominio pleno que provenga de ejido
+- `predio_produccion_agricola_con_dominio_pleno_que_provenga_de_ejido` — apar=1, munis=1, años=1, vals=0.2
+  - desc: Predio de producción agrícola, con dominio pleno que provenga de ejido
+
+#### grupo: `rustico` — 19 clave(s)
+
+- `predio_rustico` — apar=181, munis=18, años=17, vals=0.9|1.2|0.0012|0.0012|0.0012
+  - desc: Predio Rústico
+- `rustico` — apar=36, munis=11, años=15, vals=0.0009|0.0009|0.0009|0.0012|1.2
+  - desc: Predio Rústico
+- `produccion_agricola_dominio_pleno_proveniente_de_ejido` — apar=27, munis=12, años=13, vals=0.2|0.0002|0.2|0.2|0.2
+  - desc: Predio de Producción Agrícola, con Dominio Pleno que Provenga de Ejido
+- `predio_de_produccion_agricola_con_dominio_pleno_que_provenga_de_ejido` — apar=18, munis=10, años=10, vals=0.2|0.2|0.2|0.0002|0.2
+  - desc: Predio de Producción Agrícola, con dominio pleno que provenga de ejido
+- `predio_produccion_agricola_dominio_pleno_proveniente_de_ejido` — apar=10, munis=8, años=8, vals=0.0002|0.2|0.0002|0.2|0.0002
+  - desc: Predio de producción agrícola, con dominio pleno que provenga de ejido
+- `produccion_agricola_dominio_pleno_ejido` — apar=6, munis=4, años=6, vals=0.2|0.2|0.2|0.0002|0.2
+  - desc: Predio de producción agrícola, con dominio pleno que provenga de ejido
+- `produccion_agricola_dominio_pleno_de_ejido` — apar=5, munis=3, años=5, vals=0.2|0.2|0.2|0.2|0.0002
+  - desc: Predio de producción agrícola, con dominio pleno que provenga de ejido
+- `predio_produccion_agricola_con_dominio_pleno_proveniente_de_ejido` — apar=4, munis=4, años=4, vals=0.0002|0.0002|0.0002|0.0002
+  - desc: Predio de producción agrícola, con dominio pleno que provenga de ejido
+- `predio_produccion_agricola_dominio_pleno_provenga_de_ejido` — apar=4, munis=3, años=4, vals=0.2|0.0002|0.0002|0.0002
+  - desc: Predio de producción agrícola, con dominio pleno que provenga de ejido
+- `produccion_agricola_dominio_pleno_provenga_de_ejido` — apar=3, munis=2, años=2, vals=0.2|0.2|0.0002
+  - desc: Predio de producción agrícola, con dominio pleno que provenga de ejido
+- `predio_produccion_agricola_con_dominio_pleno_que_provenga_de_ejido` — apar=2, munis=2, años=1, vals=0.0002|0.0002
+  - desc: Predio de producción agrícola, con dominio pleno que provenga de ejido
+- `predio_produccion_agricola_dominio_pleno_provenga_ejido` — apar=1, munis=1, años=1, vals=0.0002
+  - desc: Predio de producción agrícola, con dominio pleno que provenga de ejido
+- `produccion_agricola_dominio_pleno_proveniente_ejido` — apar=1, munis=1, años=1, vals=0.2
+  - desc: Predio de Producción Agrícola, con dominio pleno que provenga de ejido
+- `predio_produccion_agricola_dominio_pleno_de_ejido` — apar=1, munis=1, años=1, vals=0.2
+  - desc: Predio de producción agrícola, con dominio pleno que provenga de ejido
+- `produccion_agricola_dominio_pleno_proviene_de_ejido` — apar=1, munis=1, años=1, vals=0.2
+  - desc: Predio de producción agrícola, con dominio pleno que provenga de ejido
+- `predio_de_produccion_agricola_con_dominio_pleno_proveniente_de_ejido` — apar=1, munis=1, años=1, vals=0.2
+  - desc: Predio de producción agrícola con dominio pleno que provenga de ejido
+- `predio_produccion_agricola_con_dominio_pleno_provenga_de_ejido` — apar=1, munis=1, años=1, vals=0.0016
+  - desc: Predio de producción agrícola, con dominio pleno que provenga de ejido
+- `produccion_agricola_dominio_pleno_ejidal` — apar=1, munis=1, años=1, vals=0.0002
+  - desc: Predio de producción agrícola, con dominio pleno que provenga de ejido
+- `produccion_agricola_dominio_pleno` — apar=1, munis=1, años=1, vals=0.0002
+  - desc: Predio de producción agrícola, con dominio pleno que provenga de ejido
+
+#### grupo: `urbano` — 13 clave(s)
+
+- `predio_urbano_edificado` — apar=181, munis=18, años=17, vals=1.0|1.6|0.0016|0.0016|0.0016
+  - desc: Predio Urbano Edificado
+- `predio_urbano_baldio` — apar=181, munis=18, años=17, vals=1.5|8.0|0.008|0.008|0.008
+  - desc: Predio Urbano Baldío
+- `reserva_urbana` — apar=54, munis=15, años=17, vals=0.9|1.4|0.0014|1.4|1.4
+  - desc: Predio de Reserva Urbana
+- `predio_reserva_urbana` — apar=40, munis=16, años=14, vals=0.0014|0.0014|1.4|0.0014|1.4
+  - desc: Predio de Reserva Urbana
+- `fraccionamiento_en_proceso_de_ejecucion` — apar=39, munis=14, años=17, vals=1.0|1.6|0.0016|1.6|1.6
+  - desc: Predio de Fraccionamiento en proceso de ejecución
+- `urbano_edificado` — apar=36, munis=11, años=15, vals=0.001|0.001|0.001|0.0016|1.6
+  - desc: Predio Urbano Edificado
+- `urbano_baldio` — apar=36, munis=11, años=15, vals=0.0015|0.0015|0.0015|0.008|8.0
+  - desc: Predio Urbano Baldío
+- `predio_fraccionamiento_en_proceso_de_ejecucion` — apar=19, munis=12, años=7, vals=0.0016|1.6|1.6|1.6|0.0016
+  - desc: Predio de Fraccionamiento en proceso de ejecución
+- `predio_de_reserva_urbana` — apar=19, munis=11, años=13, vals=1.4|1.4|0.0014|1.4|0.0014
+  - desc: Predio de Reserva Urbana
+- `predio_de_fraccionamiento_en_proceso_de_ejecucion` — apar=9, munis=5, años=8, vals=0.0016|0.0016|0.0016|0.001|1.0
+  - desc: Predio de Fraccionamiento en proceso de ejecución
+- `fraccionamiento_en_proceso_ejecucion` — apar=2, munis=2, años=2, vals=1.6|1.6
+  - desc: Predio de Fraccionamiento en Proceso de Ejecución
+- `fraccionamiento_en_proceso` — apar=2, munis=2, años=1, vals=1.6|0.0016
+  - desc: Predio de Fraccionamiento en proceso de ejecución
+- `fraccionamiento_proceso_ejecucion` — apar=1, munis=1, años=1, vals=0.0016
+  - desc: Predio de Fraccionamiento en proceso de ejecución
+
+### San Luis Potosí <a id='tarifa-millar-sanluispotosi'></a> — 504 claves
+
+#### grupo: `general` — 64 clave(s)
+
+- `urbanos_suburbanos_uso_industrial` — apar=15, munis=14, años=10, vals=1.0|2.1|1.0|1.04|2.0
+  - desc: Urbanos y suburbanos destinados a uso industrial. Predios destinados al uso industrial
+- `urbanos_y_suburbanos_uso_industrial` — apar=15, munis=12, años=10, vals=2.0|1.1|0.12|1.2|2.0
+  - desc: Urbanos y suburbanos destinados a uso industrial: Predios destinados al uso industrial
+- `urbanos_y_suburbanos_comercio_o_servicios` — apar=13, munis=11, años=9, vals=2.0|1.0|1.0|1.0|1.25
+  - desc: Urbanos y suburbanos destinados a comercio o servicios: Predios con edificación o sin ella
+- `urbanos_y_suburbanos_habitacionales_no_cercados` — apar=11, munis=8, años=6, vals=0.11|1.1|1.1|1.15|1.0
+  - desc: Predios no cercados
+- `urbanos_suburbanos_comercio_o_servicios` — apar=10, munis=10, años=6, vals=2.1|1.0|1.0|2.0|1.04
+  - desc: Urbanos y suburbanos destinados a comercio o servicios: Predios con edificación o sin ella
+- `urbanos_suburbanos_comercio_o_servicios_con_edificacion_o_sin_ella` — apar=8, munis=8, años=7, vals=1.0|1.0|1.0|2.0|2.1
+  - desc: Urbanos y suburbanos destinados a comercio o servicios. Predios con edificación o sin ella
+- `instituciones_religiosas` — apar=8, munis=2, años=7, vals=1.0|1.0|1.0|1.0|1.0
+  - desc: Instituciones religiosas
+- `urbanos_y_suburbanos_destinados_a_uso_industrial` — apar=8, munis=7, años=5, vals=1.0|1.04|1.0|1.22|1.0
+  - desc: Urbanos y suburbanos destinados a uso industrial: Predios destinados al uso industrial
+- `urbanos_y_suburbanos_comercio_o_servicios_con_edificacion_o_sin_ella` — apar=7, munis=6, años=5, vals=0.12|1.1|1.2|1.25|2.0
+  - desc: Predios con edificación o sin ella
+- `urbanos_y_suburbanos_destinados_a_comercio_o_servicios` — apar=7, munis=6, años=5, vals=1.0|1.0|1.0|1.22|1.0
+  - desc: Urbanos y suburbanos destinados a comercio o servicios: Predios con edificación o sin ella
+- `urbanos_y_suburbanos_habitacionales_distintos_con_edificacion_o_cercados` — apar=6, munis=5, años=4, vals=0.84|0.75|1.3|0.8|0.92
+  - desc: Predios distintos a los del inciso anterior con edificación o cercados
+- `urbanos_suburbanos_destinados_a_comercio_o_servicios` — apar=4, munis=4, años=3, vals=1.0|1.0|1.29|1.22
+  - desc: Urbanos y suburbanos destinados a comercio o servicios: Predios con edificación o sin ella
+- `urbanos_suburbanos_destinados_a_uso_industrial` — apar=4, munis=4, años=3, vals=1.0|1.43|1.3|1.22
+  - desc: Urbanos y suburbanos destinados a uso industrial: Predios destinados al uso industrial
+- `urbanos_y_suburbanos_industrial` — apar=4, munis=4, años=4, vals=1.1|1.25|1.7|1.15
+  - desc: Predios destinados al uso industrial
+- `urbanos_y_suburbanos_habitacionales_interes_social_o_vivienda_popular_y_popular_con_urbanizacion_progresiva` — apar=4, munis=4, años=4, vals=0.7|0.535|0.58|0.55
+  - desc: Predios con edificaciones tipificadas como de interés social o vivienda popular y popular con urbanización progresiva
+- `urbanos_suburbanos_industrial` — apar=3, munis=3, años=2, vals=0.52|1.5|1.74
+  - desc: Predios destinados al uso industrial
+- `urbanos_y_suburbanos_comercio_o_servicios_con_o_sin_edificacion` — apar=3, munis=2, años=3, vals=1.0|1.38|1.0
+  - desc: Predios con edificación o sin ella
+- `urbanos_y_suburbanos_habitacionales_interes_social` — apar=2, munis=2, años=2, vals=0.8|0.53
+  - desc: Predios con edificaciones tipificadas como de interés social o vivienda popular y popular con urbanización progresiva
+- `urbanos_suburbanos_habitacionales_distintos_con_edificacion_o_cercados` — apar=2, munis=2, años=2, vals=0.78|0.75
+  - desc: Predios distintos a los del inciso anterior con edificación o cercados
+- `urbanos_suburbanos_habitacionales_no_cercados` — apar=2, munis=2, años=2, vals=0.2|1.0
+  - desc: Predios no cercados
+- `urbanos_suburbanos_uso_industrial_zona_industrial` — apar=1, munis=1, años=1, vals=1.0
+  - desc: Urbanos y suburbanos destinados a uso industrial: Predios con edificación o sin ella ubicados en la zona industrial
+- `urbanos_suburbanos_uso_industrial_fuera_de_zona_industrial` — apar=1, munis=1, años=1, vals=1.0
+  - desc: Urbanos y suburbanos destinados a uso industrial: Predios con edificación o sin ella ubicados fuera de la zona industrial
+- `urbanos_y_suburbanos_industrial_zona_industrial` — apar=1, munis=1, años=1, vals=1.0
+  - desc: Urbanos y suburbanos destinados a uso industrial, con edificación o sin ella ubicados en la zona industrial
+- `urbanos_y_suburbanos_industrial_fuera_zona_industrial` — apar=1, munis=1, años=1, vals=1.0
+  - desc: Predios con edificación o sin ella ubicados fuera de la zona industrial
+- `urbanos_y_suburbanos_uso_industrial_zona_industrial` — apar=1, munis=1, años=1, vals=1.5
+  - desc: Urbanos y suburbanos destinados a uso industrial, con edificación o sin ella ubicados en la zona industrial
+- `urbanos_y_suburbanos_uso_industrial_fuera_zona_industrial` — apar=1, munis=1, años=1, vals=1.25
+  - desc: Urbanos y suburbanos destinados a uso industrial, con edificación o sin ella ubicados fuera de la zona industrial
+- `comercios_u_oficinas` — apar=1, munis=1, años=1, vals=1.0
+  - desc: Urbanos y suburbanos destinados a comercios u oficinas. Predios con edificación o sin ellas
+- `industrial_zona_industrial` — apar=1, munis=1, años=1, vals=1.0
+  - desc: Urbanos y suburbanos destinados a uso industrial. Predios ubicados en la zona industrial
+- `industrial_fuera_zona_industrial` — apar=1, munis=1, años=1, vals=1.0
+  - desc: Urbanos y suburbanos destinados a uso industrial. Predios ubicados fuera de la zona industrial
+- `sin_edificacion_sin_bardear_o_sin_cercado` — apar=1, munis=1, años=1, vals=2.0
+  - desc: Predios sin edificación, sin bardear o sin cercado
+- `urbanos_y_suburbanos_habitacionales_prestaciones_sociales_o_vivienda_popular` — apar=1, munis=1, años=1, vals=0.07
+  - desc: Predios con edificaciones clasificadas como de interés social o vivienda popular y popular con urbanización progresiva
+- `urbanos_y_suburbanos_habitacionales_edificacion_o_cercados` — apar=1, munis=1, años=1, vals=0.05
+  - desc: Predios distintos a los del inciso anterior con edificación o cercados
+- `urbanos_y_suburbanos_habitacionales_otros_con_edificacion_o_cercados` — apar=1, munis=1, años=1, vals=1.5
+  - desc: Predios distintos a los del inciso anterior con edificación o cercados
+- `urbanos_suburbanos_destinados_a_comercio_o_servicios_con_edificacion_o_sin_ella` — apar=1, munis=1, años=1, vals=1.42
+  - desc: Predios con edificación o sin ella
+- `urbanos_y_suburbanos_habitacionales_distintos_a_interes_social_o_vivienda_popular_con_edificacion_o_cercados` — apar=1, munis=1, años=1, vals=0.9
+  - desc: Predios distintos a los del inciso anterior con edificación o cercados
+- `habitacional_interes_social_o_vivienda_popular` — apar=1, munis=1, años=1, vals=0.65
+  - desc: Predios con edificaciones tipificadas como de interés social o vivienda popular y popular con urbanización progresiva
+- `habitacional_distintos_con_edificacion_o_cercados` — apar=1, munis=1, años=1, vals=1.0
+  - desc: Predios distintos a los del inciso anterior con edificación o cercados
+- `habitacional_no_cercados` — apar=1, munis=1, años=1, vals=0.85
+  - desc: Predios no cercados
+- `comercio_o_servicios` — apar=1, munis=1, años=1, vals=0.99
+  - desc: Urbanos y suburbanos destinados a comercio o servicios, con edificación o sin ella
+- `industrial` — apar=1, munis=1, años=1, vals=0.95
+  - desc: Urbanos y suburbanos destinados a uso industrial
+- `urbanos_y_suburbanos_habitacionales` — apar=1, munis=1, años=1, vals=0.56
+  - desc: Urbanos y suburbanos habitacionales: Predios con edificaciones tipificadas como de interés social o vivienda popular y popular con urbanizac
+- `urbanos_y_suburbanos_habitacionales_con_edificacion_o_cercados` — apar=1, munis=1, años=1, vals=0.84
+  - desc: Urbanos y suburbanos habitacionales: Predios distintos a los del inciso anterior con edificación o cercados
+- `industriales_minero` — apar=1, munis=1, años=1, vals=1.15
+  - desc: Urbanos y suburbanos o rurales, destinados a uso industrial: Predios destinados al uso minero
+- `industriales_energias_verdes` — apar=1, munis=1, años=1, vals=1.15
+  - desc: Urbanos y suburbanos o rurales, destinados a uso industrial: Predios destinados al uso de energías verdes, Eólica, Plantas Solares, o de tra
+- `urbanos_suburbanos_habitacionales_interes_social_o_vivienda_popular` — apar=1, munis=1, años=1, vals=0.52
+  - desc: Predios con edificaciones tipificadas como de interés social o vivienda popular y popular con urbanización progresiva
+- `urbanos_suburbanos_zona_industrial_o_agroindustrial_fuera_de_la_zona_conurbada` — apar=1, munis=1, años=1, vals=1.04
+  - desc: Predios con edificación o sin ella ubicados en la zona industrial o Agroindustrial fuera de la zona Conurbada
+- `urbanos_suburbanos_fuera_de_la_zona_industrial_o_agroindustrial` — apar=1, munis=1, años=1, vals=2.0
+  - desc: Predios con edificación o sin ella ubicadas fuera de la zona industrial o Agroindustrial.
+- `urbanos_y_suburbanos_habitacionales_con_edificaciones_tipificadas_como_de_interes_social_o_vivienda_popular_y_popular_con_urbanizacion_progresiva` — apar=1, munis=1, años=1, vals=0.5
+  - desc: Urbanos y suburbanos habitacionales: Predios con edificaciones tipificadas como de interés social o vivienda popular y popular con urbanizac
+- `urbanos_y_suburbanos_habitacionales_distintos_a_interes_social_con_edificacion_o_cercados` — apar=1, munis=1, años=1, vals=0.75
+  - desc: Urbanos y suburbanos habitacionales: Predios distintos a los del inciso anterior con edificación o cercados
+- `urbanos_suburbanos_comercio_servicios` — apar=1, munis=1, años=1, vals=1.2
+  - desc: Urbanos y suburbanos destinados a comercio o servicios: Predios con edificación o sin ella
+- `urbanos_suburbanos_habitacionales_interes_social` — apar=1, munis=1, años=1, vals=0.5
+  - desc: Urbanos y suburbanos habitacionales: Predios con edificaciones tipificadas como de interés social o vivienda popular y popular con urbanizac
+- `urbanos_suburbanos_fuera_zona_industrial` — apar=1, munis=1, años=1, vals=1.25
+  - desc: Urbanos y suburbanos destinados a uso industrial: Predios con edificación o sin ella ubicados fuera de la zona industrial
+- `urbanos_y_suburbanos_habitacionales_interes_social_popular_y_popular_con_urbanizacion_progresiva` — apar=1, munis=1, años=1, vals=0.56
+  - desc: Predios con edificaciones tipificadas como de interés social o vivienda popular y popular con urbanización progresiva
+- `urbanos_y_suburbanos_o_rurales_uso_industrial_minero` — apar=1, munis=1, años=1, vals=1.15
+  - desc: Predios destinados al uso minero
+- `urbanos_y_suburbanos_o_rurales_uso_industrial_energias_verdes` — apar=1, munis=1, años=1, vals=1.15
+  - desc: Predios destinados al uso de energías verdes, Eólica, Plantas Solares, o de transferencia
+- `predios_sin_edificacion_sin_bardear_o_sin_cercado` — apar=1, munis=1, años=1, vals=2.0
+  - desc: Predios sin edificación, sin bardear o sin cercado
+- `instituciones_religiosas_en_general` — apar=1, munis=1, años=1, vals=0.75
+  - desc: Instituciones Religiosas en general
+- `predial_general` — apar=1, munis=1, años=1, vals=0.0
+  - desc: El impuesto predial se calculará aplicando la tasa que corresponda de acuerdo al tipo de predio y sobre la base gravable que señala la Ley d
+- `urbanos_suburbanos_industrial_minero` — apar=1, munis=1, años=1, vals=1.265
+  - desc: Predios destinados al uso minero
+- `urbanos_suburbanos_industrial_energias_verdes` — apar=1, munis=1, años=1, vals=1.265
+  - desc: Predios destinados al uso de energías verdes, Eólica, plantas solares, o de transferencia
+- `urbanos_y_suburbanos_habitacionales_interes_social_o_vivienda_popular` — apar=1, munis=1, años=1, vals=1.2
+  - desc: Urbanos y suburbanos habitacionales: Predios con edificaciones tipificadas como de interés social o vivienda popular y popular con urbanizac
+- `urbanos_suburbanos_comercial_o_industrial_que_rebasen_325000_valor_catastral` — apar=1, munis=1, años=1, vals=2.5
+  - desc: Predios para uso comercial o industrial que rebasen de $ 325,000.00 su valor catastral
+- `urbanos_y_suburbanos_destinados_a_comercio_o_servicios_con_edificacion_o_sin_ella` — apar=1, munis=1, años=1, vals=1.0
+  - desc: Urbanos y suburbanos destinados a comercio o servicios: Predios con edificación o sin ella
+- `urbanos_y_suburbanos_comercio_servicios` — apar=1, munis=1, años=1, vals=1.0
+  - desc: Urbanos y suburbanos destinados a comercio o servicios: Predios con edificación o sin ella
+
+#### grupo: `otro` — 29 clave(s)
+
+- `instituciones_religiosas` — apar=13, munis=4, años=8, vals=1.0|0.8|1.0|0.75|0.88
+  - desc: Instituciones Religiosas
+- `urbanos_suburbanos_uso_industrial` — apar=12, munis=11, años=8, vals=1.0|1.15|2.0|1.1|1.2
+  - desc: Urbanos y suburbanos destinados a uso industrial: predios destinados al uso industrial
+- `urbanos_y_suburbanos_uso_industrial` — apar=8, munis=7, años=5, vals=1.1|1.0|0.95|2.0|2.0
+  - desc: Predios destinados al uso industrial
+- `urbanos_y_suburbanos_comercio_o_servicios` — apar=7, munis=6, años=5, vals=1.1|1.0|0.99|2.0|1.0
+  - desc: Predios con edificación o sin ella
+- `urbanos_suburbanos_comercio_o_servicios` — apar=6, munis=5, años=3, vals=2.0|2.0|1.0|1.24|2.0
+  - desc: Urbanos y suburbanos destinados a comercio o servicios; predios con edificación o sin ella
+- `urbanos_suburbanos_comercio_o_servicios_con_edificacion_o_sin_ella` — apar=6, munis=6, años=4, vals=1.0|1.2|1.0|0.4|2.0
+  - desc: Urbanos y suburbanos destinados a comercio o servicios: Predios con edificación o sin ella
+- `urbanos_suburbanos_comercio_o_servicios_con_o_sin_edificacion` — apar=4, munis=4, años=2, vals=1.0|1.0|1.0|2.0
+  - desc: Predios con edificación o sin ella
+- `urbanos_y_suburbanos_industrial` — apar=3, munis=3, años=3, vals=1.0|1.0|0.95
+  - desc: Predios destinados al uso industrial
+- `predios_residenciales_propiedad_privada` — apar=3, munis=1, años=3, vals=2.0|2.0|2.0
+  - desc: Predios residenciales de propiedad privada
+- `predios_residenciales_propiedad_ejidal` — apar=3, munis=1, años=3, vals=2.0|2.0|2.0
+  - desc: Predios residenciales de propiedad ejidal
+- `urbanos_suburbanos_industrial_zona_industrial` — apar=2, munis=2, años=2, vals=1.0|1.68
+  - desc: Predios con edificación o sin ella ubicados en la zona industrial
+- `urbanos_suburbanos_industrial_fuera_zona_industrial` — apar=2, munis=2, años=2, vals=1.0|1.48
+  - desc: Predios con edificación o sin ella ubicados fuera de la zona industrial
+- `urbanos_suburbanos_uso_industrial_zona_industrial` — apar=2, munis=2, años=2, vals=1.0|1.66
+  - desc: Predios con edificación o sin ella ubicados en la zona industrial
+- `urbanos_y_suburbanos_destinados_a_uso_industrial` — apar=2, munis=2, años=2, vals=1.2|1.25
+  - desc: Urbanos y suburbanos destinados a uso industrial; predios destinados al uso industrial
+- `instituciones_religiosas_en_general` — apar=2, munis=1, años=2, vals=0.75|0.77
+  - desc: Instituciones Religiosas en general
+- `urbanos_suburbanos_industrial` — apar=2, munis=2, años=2, vals=1.0|2.0
+  - desc: Urbanos y suburbanos destinados a uso industrial: predios destinados al uso industrial
+- `urbanos_y_suburbanos_comercio_o_servicios_con_o_sin_edificacion` — apar=2, munis=2, años=2, vals=1.0|1.0
+  - desc: Predios con edificación o sin ella
+- `urbanos_suburbanos_uso_industrial_fuera_de_la_zona_industrial` — apar=1, munis=1, años=1, vals=1.0
+  - desc: Predios con edificación o sin ella ubicados fuera de la zona industrial
+- `sin_edificacion_sin_bardear_o_sin_cercado` — apar=1, munis=1, años=1, vals=2.0
+  - desc: Predios sin edificación, sin bardear o sin cercado
+- `urbanos_y_suburbanos_destinados_a_comercio_o_servicios_con_edificacion_o_sin_ella` — apar=1, munis=1, años=1, vals=1.18
+  - desc: Urbanos y suburbanos destinados a comercio o servicios; predios con edificación o sin ella
+- `predios_no_cercados` — apar=1, munis=1, años=1, vals=1.18
+  - desc: Predios no cercados
+- `predios_destinados_al_uso_industrial` — apar=1, munis=1, años=1, vals=1.74
+  - desc: Predios destinados al uso industrial
+- `predios_de_propiedad_ejidal` — apar=1, munis=1, años=1, vals=0.52
+  - desc: Predios de propiedad ejidal
+- `predios_sin_edificacion_sin_bardear_o_sin_cercado` — apar=1, munis=1, años=1, vals=2.0
+  - desc: Predios sin edificación, sin bardear o sin cercado
+- `urbanos_y_suburbanos_comercio_o_servicios_con_edificacion_o_sin_ella` — apar=1, munis=1, años=1, vals=1.0
+  - desc: Urbanos y suburbanos destinados a comercio o servicios: Predios con edificación o sin ella
+- `urbanos_suburbanos_uso_industrial_fuera_de_zona_industrial` — apar=1, munis=1, años=1, vals=1.45
+  - desc: Predios con edificación o sin ella ubicados fuera de la zona industrial
+- `urbanos_y_suburbanos_destinados_a_comercio_o_servicios` — apar=1, munis=1, años=1, vals=1.25
+  - desc: Urbanos y suburbanos destinados a comercio o servicios; predios con edificación o sin ella
+- `urbanos_suburbanos_comercio_servicios_con_o_sin_edificacion` — apar=1, munis=1, años=1, vals=2.0
+  - desc: Urbanos y suburbanos destinados a comercio o servicios. Predios con edificación o sin ella
+- `urbanos_suburbanos_comercio_servicios` — apar=1, munis=1, años=1, vals=1.26
+  - desc: Predios con edificación o sin ella
+
+#### grupo: `rustico` — 112 clave(s)
+
+- `rusticos_propiedad_privada` — apar=336, munis=55, años=13, vals=0.8|0.75|1.0|1.0|0.75
+  - desc: Predios rústicos de propiedad privada
+- `rusticos_propiedad_ejidal` — apar=334, munis=55, años=13, vals=0.53|0.5|0.75|0.75|0.5
+  - desc: Predios rústicos de propiedad ejidal
+- `predios_rusticos_propiedad_privada` — apar=155, munis=54, años=12, vals=0.75|0.75|0.75|0.75|0.75
+  - desc: Predios rústicos de propiedad privada
+- `predios_rusticos_propiedad_ejidal` — apar=155, munis=54, años=12, vals=0.5|0.5|0.75|0.5|0.5
+  - desc: Predios rústicos de propiedad ejidal
+- `propiedad_privada` — apar=13, munis=12, años=8, vals=0.75|0.8|0.75|0.75|0.75
+  - desc: Predios de propiedad privada
+- `propiedad_ejidal` — apar=12, munis=11, años=8, vals=0.5|0.55|0.5|0.5|0.5
+  - desc: Predios de propiedad ejidal
+- `predios_rusticos_de_propiedad_privada` — apar=12, munis=12, años=6, vals=0.8|1.545|0.8|0.75|0.78
+  - desc: Predios rústicos de propiedad privada
+- `predios_rusticos_de_propiedad_ejidal` — apar=11, munis=11, años=6, vals=0.6|1.03|0.55|0.5|0.52
+  - desc: Predios rústicos de propiedad ejidal
+- `predios_rusticos_propriedad_privada` — apar=6, munis=5, años=4, vals=0.5|0.2|0.75|0.78|1.3
+  - desc: Predios rústicos de propiedad privada.
+- `rusticos_uso_agricola` — apar=6, munis=2, años=5, vals=0.5|0.5|0.5|0.55|0.5
+  - desc: Uso Agrícola
+- `predios_de_propiedad_privada` — apar=6, munis=6, años=4, vals=4.0|0.75|1.0|0.75|0.86
+  - desc: Predios de propiedad privada
+- `predios_de_propiedad_ejidal` — apar=6, munis=6, años=4, vals=4.0|0.58|0.5|0.75|0.83
+  - desc: Predios de propiedad ejidal
+- `predios_rusticos_propriedad_ejidal` — apar=5, munis=5, años=3, vals=0.5|0.5|0.52|1.0|0.8
+  - desc: Predios rústicos de propiedad ejidal.
+- `predios_rusticos_propiedad_privada_o_ejidal` — apar=5, munis=2, años=4, vals=0.8|0.8|0.78|0.8|0.8
+  - desc: Predios de propiedad privada o ejidal
+- `rustico_propiedad_privada` — apar=4, munis=4, años=3, vals=0.0|0.75|0.75|1.06
+  - desc: Predios rústicos. Predios de propiedad privada.
+- `rustico_propiedad_ejidal` — apar=4, munis=4, años=3, vals=0.58|0.5|0.65|0.53
+  - desc: Predios rústicos. Predios de propiedad ejidal.
+- `rusticos_uso_ganadero_agostadero_cerril` — apar=3, munis=1, años=3, vals=0.5|0.5|0.5
+  - desc: De uso ganadero, agostadero cerril
+- `rusticos_uso_industrial` — apar=3, munis=1, años=3, vals=0.6|0.6|0.6
+  - desc: Industrial
+- `rusticos_uso_comercial` — apar=3, munis=1, años=3, vals=0.6|0.6|0.6
+  - desc: Comercial
+- `rusticos_uso_turistico` — apar=3, munis=1, años=3, vals=0.6|0.6|0.8
+  - desc: Turístico
+- `predios_rusticos_propiead_privada` — apar=3, munis=3, años=3, vals=0.75|1.0|0.9
+  - desc: Predios rústicos de propiedad privada
+- `rusticos_agroindustrial` — apar=3, munis=1, años=3, vals=0.5|0.5|0.5
+  - desc: Predios rústicos: Agroindustrial
+- `rusticos_comercial` — apar=3, munis=2, años=3, vals=0.94|0.6|0.6
+  - desc: Predios rústicos de propiedad privada o ejidal, comercial
+- `rusticos_turistico` — apar=3, munis=2, años=3, vals=0.94|0.6|0.6
+  - desc: Predios rústicos de propiedad privada o ejidal, turístico
+- `rusticos_uso_agroindustrial` — apar=2, munis=1, años=2, vals=0.5|0.5
+  - desc: Agroindustrial
+- `rusticos_ejidales` — apar=2, munis=2, años=2, vals=0.76|0.3
+  - desc: Predios de propiedad ejidal
+- `predios_rusticos_uso_ganadero_agostadero_cerril` — apar=2, munis=1, años=2, vals=0.5|0.5
+  - desc: De uso ganadero, agostadero cerril
+- `predios_rusticos_uso_agricola` — apar=2, munis=1, años=2, vals=0.5|0.5
+  - desc: Uso Agrícola
+- `predios_rusticos_industrial` — apar=2, munis=1, años=2, vals=0.6|0.6
+  - desc: Industrial
+- `predios_rusticos_comercial` — apar=2, munis=1, años=2, vals=0.6|0.6
+  - desc: Comercial
+- `predios_rusticos_turistico` — apar=2, munis=1, años=2, vals=0.6|0.6
+  - desc: Turístico
+- `predios_rusticos_agroindustrial` — apar=2, munis=1, años=2, vals=0.5|0.5
+  - desc: Agroindustrial
+- `rusticos_propriedad_privada` — apar=2, munis=2, años=2, vals=0.75|1.13
+  - desc: Predios rústicos de propiedad privada
+- `predios_rusticos_propiedad_privada_ganadero_agricola` — apar=2, munis=1, años=2, vals=1.03|1.03
+  - desc: Predios rústicos. Predios de propiedad privada. De uso ganadero y/o agrícola
+- `predios_rusticos_propiedad_privada_industrial_agroindustrial` — apar=2, munis=1, años=2, vals=1.05|1.05
+  - desc: Predios rústicos. Predios de propiedad privada. De uso industrial o agroindustrial
+- `predios_rusticos_propiedad_privada_comercial_turistico` — apar=2, munis=1, años=2, vals=1.545|1.545
+  - desc: Predios rústicos. Predios de propiedad privada. De uso comercial y/o turístico
+- `predios_rusticos_propiedad_ejidal_ganadero_agricola` — apar=2, munis=1, años=2, vals=1.03|1.03
+  - desc: Predios rústicos. Predios de propiedad ejidal. De uso ganadero y/o agrícola
+- `predios_rusticos_propiedad_ejidal_industrial_agroindustrial` — apar=2, munis=1, años=2, vals=1.05|1.05
+  - desc: Predios rústicos. Predios de propiedad ejidal. De uso industrial o agroindustrial
+- `predios_rusticos_propiedad_ejidal_comercial_turistico` — apar=2, munis=1, años=2, vals=1.545|1.545
+  - desc: Predios rústicos. Predios de propiedad ejidal. De uso comercial y/o turístico
+- `predios_rusticos_propiaedad_privada` — apar=2, munis=2, años=2, vals=1.0|1.25
+  - desc: Predios rústicos de propiedad privada
+- `rusticos_propriedad_ejidal` — apar=2, munis=2, años=2, vals=0.95|0.87
+  - desc: Predios rústicos de propiedad ejidal
+- `rusticos_ganadero_agostadero_cerril` — apar=2, munis=1, años=2, vals=0.5|0.5
+  - desc: De uso ganadero, agostadero cerril
+- `rusticos_industrial` — apar=2, munis=1, años=2, vals=0.6|0.6
+  - desc: Industrial
+- `rusticos_proPIedad_privada` — apar=1, munis=1, años=1, vals=1.06 ⚠ slugify_sug=`rusticos_propiedad_privada`
+  - desc: Predios rústicos: Predios de propiedad privada
+- `rusticos_propiedad_ejidial` — apar=1, munis=1, años=1, vals=0.3
+  - desc: Predios de propiedad ejidal
+- `rustico_propiedad_privada_o_ejidal_vivienda` — apar=1, munis=1, años=1, vals=0.5
+  - desc: Predios rústicos: De uso habitacional (vivienda)
+- `rustico_propiedad_privada_o_ejidal_ganadero_agostadero_o_cerril` — apar=1, munis=1, años=1, vals=0.5
+  - desc: Predios rústicos: De uso ganadero, agostadero o cerril
+- `rustico_propiedad_privada_o_ejidal_agricola` — apar=1, munis=1, años=1, vals=0.5
+  - desc: Predios rústicos: Uso agrícola
+- `rustico_propiedad_privada_o_ejidal_industrial_o_agroindustrial` — apar=1, munis=1, años=1, vals=1.0
+  - desc: Predios rústicos: Industrial o agroindustrial
+- `rustico_propiedad_privada_o_ejidal_comercial` — apar=1, munis=1, años=1, vals=0.85
+  - desc: Predios rústicos: Comercial
+- `rustico_propiedad_privada_o_ejidal_turistico` — apar=1, munis=1, años=1, vals=0.85
+  - desc: Predios rústicos: Turístico
+- `predios_mistos_propiedad_privada` — apar=1, munis=1, años=1, vals=0.0
+  - desc: Predios mixtos: Predios de propiedad privada
+- `predios_mistos_ejidal` — apar=1, munis=1, años=1, vals=0.0
+  - desc: Predios mixtos: Predios de propiedad ejidal
+- `predios_rusticos_ejidales` — apar=1, munis=1, años=1, vals=0.5
+  - desc: Predios rústicos de propiedad ejidal
+- `predios_rusticos` — apar=1, munis=1, años=1, vals=0.79
+  - desc: Predios rústicos
+- `predios_de_propiedad_privada_de_uso_ganadero_y_o_agricola` — apar=1, munis=1, años=1, vals=1.03
+  - desc: Predios rústicos de propiedad privada de uso ganadero y/o agrícola
+- `predios_de_propiedad_privada_de_uso_industrial_o_agroindustrial` — apar=1, munis=1, años=1, vals=1.05
+  - desc: Predios rústicos de propiedad privada de uso industrial o agroindustrial
+- `predios_de_propiedad_privada_de_uso_comercial_y_o_turistico` — apar=1, munis=1, años=1, vals=1.545
+  - desc: Predios rústicos de propiedad privada de uso comercial y/o turístico
+- `predios_de_propiedad_ejidal_de_uso_ganadero_y_o_agricola` — apar=1, munis=1, años=1, vals=1.03
+  - desc: Predios de propiedad ejidal de uso ganadero y/o agrícola
+- `predios_de_propiedad_ejidal_de_uso_industrial_o_agroindustrial` — apar=1, munis=1, años=1, vals=1.05
+  - desc: Predios de propiedad ejidal de uso industrial o agroindustrial
+- `predios_de_propiedad_ejidal_de_uso_comercial_y_o_turistica` — apar=1, munis=1, años=1, vals=1.545
+  - desc: Predios de propiedad ejidal de uso comercial y/o turística
+- `rusticos_propiedad_privada_o_ejidal_uso_habitacional_vivienda` — apar=1, munis=1, años=1, vals=0.55
+  - desc: Predios rústicos: Predios de propiedad privada o ejidal, de uso habitacional (vivienda)
+- `rusticos_propiedad_privada_o_ejidal_uso_ganadero_agostadero_o_cerril` — apar=1, munis=1, años=1, vals=0.55
+  - desc: Predios rústicos: Predios de propiedad privada o ejidal, de uso ganadero, agostadero o cerril
+- `rusticos_propiedad_privada_o_ejidal_uso_agricola` — apar=1, munis=1, años=1, vals=0.55
+  - desc: Predios rústicos: Predios de propiedad privada o ejidal, uso agrícola
+- `rusticos_propiedad_privada_o_ejidal_industrial_o_agroindustrial` — apar=1, munis=1, años=1, vals=1.0
+  - desc: Predios rústicos: Predios de propiedad privada o ejidal, industrial o agroindustrial
+- `rusticos_propiedad_privada_o_ejidal_comercial` — apar=1, munis=1, años=1, vals=0.94
+  - desc: Predios rústicos: Predios de propiedad privada o ejidal, comercial
+- `rusticos_propiedad_privada_o_ejidal_turistico` — apar=1, munis=1, años=1, vals=0.94
+  - desc: Predios rústicos: Predios de propiedad privada o ejidal, turístico
+- `predios_rusticos_proiedad_ejidal` — apar=1, munis=1, años=1, vals=0.5
+  - desc: Predios rústicos de propiedad ejidal
+- `predios_rusticos_propiedad_privada_ganadero_y_o_agricola` — apar=1, munis=1, años=1, vals=1.03
+  - desc: Predios rústicos. Predios de propiedad privada. De uso ganadero y/o agrícola
+- `predios_rusticos_propiedad_privada_industrial_o_agroindustrial` — apar=1, munis=1, años=1, vals=1.05
+  - desc: Predios rústicos. Predios de propiedad privada. De uso industrial o agroindustrial
+- `predios_rusticos_propiedad_privada_comercial_y_o_turistico` — apar=1, munis=1, años=1, vals=1.545
+  - desc: Predios rústicos. Predios de propiedad privada. De uso comercial y/o turístico
+- `predios_rusticos_propiedad_ejidal_ganadero_y_o_agricola` — apar=1, munis=1, años=1, vals=1.03
+  - desc: Predios rústicos. Predios de propiedad ejidal. De uso ganadero y/o agrícola
+- `predios_rusticos_propiedad_ejidal_industrial_o_agroindustrial` — apar=1, munis=1, años=1, vals=1.05
+  - desc: Predios rústicos. Predios de propiedad ejidal. De uso industrial o agroindustrial
+- `predios_rusticos_propiedad_ejidal_comercial_y_o_turistico` — apar=1, munis=1, años=1, vals=1.545
+  - desc: Predios rústicos. Predios de propiedad ejidal. De uso comercial y/o turístico
+- `propiedad_ejidale` — apar=1, munis=1, años=1, vals=0.5
+  - desc: Predios rústicos de propiedad ejidal
+- `rusticos_propia_privada` — apar=1, munis=1, años=1, vals=0.75
+  - desc: Predios rústicos: Predios de propiedad privada
+- `rusticos_propriedad_privada_o_ejidal_habitacional_vivienda` — apar=1, munis=1, años=1, vals=0.55
+  - desc: Predios rústicos: Predios de propiedad privada o ejidal: De uso habitacional (vivienda)
+- `rusticos_propriedad_privada_o_ejidal_ganadero_agostadero_o_cerril` — apar=1, munis=1, años=1, vals=0.55
+  - desc: Predios rústicos: Predios de propiedad privada o ejidal: De uso ganadero, agostadero o cerril
+- `rusticos_propriedad_privada_o_ejidal_agricola` — apar=1, munis=1, años=1, vals=0.55
+  - desc: Predios rústicos: Predios de propiedad privada o ejidal: Uso agrícola
+- `rusticos_propriedad_privada_o_ejidal_industrial_o_agroindustrial` — apar=1, munis=1, años=1, vals=1.0
+  - desc: Predios rústicos: Predios de propiedad privada o ejidal: Industrial o agroindustrial
+- `rusticos_propriedad_privada_o_ejidal_comercial` — apar=1, munis=1, años=1, vals=0.94
+  - desc: Predios rústicos: Predios de propiedad privada o ejidal: Comercial
+- `rusticos_propriedad_privada_o_ejidal_turistico` — apar=1, munis=1, años=1, vals=0.94
+  - desc: Predios rústicos: Predios de propiedad privada o ejidal: Turístico
+- `predios_rusticos_propiead_ejidal` — apar=1, munis=1, años=1, vals=0.75
+  - desc: Predios rústicos: Predios de propiedad ejidal
+- `predios_de_propriedad_ejidal` — apar=1, munis=1, años=1, vals=0.5
+  - desc: Predios de propiedad ejidal
+- `predios_privados_ganadero_agricola` — apar=1, munis=1, años=1, vals=1.03
+  - desc: Predios rústicos. Predios de propiedad privada. De uso ganadero y/o agrícola
+- `predios_privados_industrial_agroindustrial` — apar=1, munis=1, años=1, vals=1.05
+  - desc: Predios rústicos. Predios de propiedad privada. De uso industrial o agroindustrial
+- `predios_privados_comercial_turistico` — apar=1, munis=1, años=1, vals=1.545
+  - desc: Predios rústicos. Predios de propiedad privada. De uso comercial y/o turístico
+- `predios_ejidales_ganadero_agricola` — apar=1, munis=1, años=1, vals=1.03
+  - desc: Predios de propiedad ejidal. De uso ganadero y/o agrícola
+- `predios_ejidales_industrial_agroindustrial` — apar=1, munis=1, años=1, vals=1.05
+  - desc: Predios de propiedad ejidal. De uso industrial o agroindustrial
+- `predios_ejidales_comercial_turistico` — apar=1, munis=1, años=1, vals=1.545
+  - desc: Predios de propiedad ejidal. De uso comercial y/o turístico
+- `rusticos_uso_habitacional_vivienda` — apar=1, munis=1, años=1, vals=0.55
+  - desc: Predios rústicos de propiedad privada o ejidal, de uso habitacional (vivienda)
+- `rusticos_uso_ganadero_agostadero_o_cerril` — apar=1, munis=1, años=1, vals=0.55
+  - desc: Predios rústicos de propiedad privada o ejidal, de uso ganadero, agostadero o cerril
+- `rusticos_industrial_o_agroindustrial` — apar=1, munis=1, años=1, vals=1.0
+  - desc: Predios rústicos de propiedad privada o ejidal, industrial o agroindustrial
+- `rusticos_propiadad_ejidal` — apar=1, munis=1, años=1, vals=0.78
+  - desc: Predios rústicos: Predios de propiedad ejidal
+- `rustico_uso_ganadero_agostadero_cerril` — apar=1, munis=1, años=1, vals=0.5
+  - desc: De uso ganadero, agostadero cerril
+- `rustico_uso_agricola` — apar=1, munis=1, años=1, vals=0.5
+  - desc: Uso Agrícola
+- `rustico_industrial` — apar=1, munis=1, años=1, vals=0.6
+  - desc: Industrial
+- `rustico_comercial` — apar=1, munis=1, años=1, vals=0.6
+  - desc: Comercial
+- `rustico_turistico` — apar=1, munis=1, años=1, vals=0.6
+  - desc: Turístico
+- `rustico_agroindustrial` — apar=1, munis=1, años=1, vals=0.5
+  - desc: Agroindustrial
+- `predios_privados_ganadero_o_agricola` — apar=1, munis=1, años=1, vals=1.03
+  - desc: Predios rústicos de propiedad privada, de uso ganadero y/o agrícola
+- `predios_privados_industrial_o_agroindustrial` — apar=1, munis=1, años=1, vals=1.05
+  - desc: Predios rústicos de propiedad privada, de uso industrial o agroindustrial
+- `predios_privados_comercial_o_turistico` — apar=1, munis=1, años=1, vals=1.545
+  - desc: Predios rústicos de propiedad privada, de uso comercial y/o turístico
+- `predios_ejidales_ganadero_o_agricola` — apar=1, munis=1, años=1, vals=1.03
+  - desc: Predios de propiedad ejidal, de uso ganadero y/o agrícola
+- `predios_ejidales_industrial_o_agroindustrial` — apar=1, munis=1, años=1, vals=1.05
+  - desc: Predios de propiedad ejidal, de uso industrial o agroindustrial
+- `predios_ejidales_comercial_o_turistico` — apar=1, munis=1, años=1, vals=1.545
+  - desc: Predios de propiedad ejidal, de uso comercial y/o turístico
+- `predios_de_produccion_privada_o_ejidal` — apar=1, munis=1, años=1, vals=0.8
+  - desc: Predios de propiedad privada o ejidal
+- `predios_rusticos_propiaedad_ejidal` — apar=1, munis=1, años=1, vals=0.78
+  - desc: Predios rústicos: Predios de propiedad ejidal
+- `predios_rusticos_de_propriedad_ejidal` — apar=1, munis=1, años=1, vals=0.5
+  - desc: Predios rústicos: Predios de propiedad ejidal
+- `rusticos_propiedad_privada_o_ejidal` — apar=1, munis=1, años=1, vals=0.78
+  - desc: Predios rústicos: Predios de propiedad privada o ejidal
+- `instituciones_religiosas` — apar=1, munis=1, años=1, vals=1.0
+  - desc: Instituciones religiosas
+- `predios_sin_bardear_y_sin_cercado_con_malla` — apar=1, munis=1, años=1, vals=6.0
+  - desc: Predios sin bardear y sin cercado con malla
+
+#### grupo: `urbano` — 299 clave(s)
+
+- `urbanos_y_suburbanos_habitacionales_no_cercados` — apar=243, munis=53, años=13, vals=1.03|1.1|1.0|1.0|1.6
+  - desc: Predios no cercados
+- `urbanos_suburbanos_habitacionales_no_cercados` — apar=230, munis=53, años=13, vals=1.3|1.0|1.25|1.12|0.6
+  - desc: Predios no cercados
+- `urbanos_y_suburbanos_habitacionales_distintos_con_edificacion_o_cercados` — apar=157, munis=53, años=13, vals=0.9|0.75|0.9|0.75|0.75
+  - desc: Urbanos y suburbanos habitacionales: Predios distintos a los del inciso anterior con edificación o cercados
+- `urbanos_suburbanos_comercio_o_servicios` — apar=126, munis=49, años=13, vals=1.29|1.0|0.95|1.1|0.53
+  - desc: Urbanos y suburbanos destinados a comercio o servicios, con edificación o sin ella
+- `urbanos_y_suburbanos_comercio_o_servicios` — apar=118, munis=47, años=13, vals=1.03|1.0|1.0|2.0|1.17
+  - desc: Urbanos y suburbanos destinados a comercio o servicios; predios con edificación o sin ella
+- `urbanos_y_suburbanos_habitacionales_interes_social_o_vivienda_popular` — apar=105, munis=47, años=13, vals=0.5|0.5|0.62|0.5|0.52
+  - desc: Predios con edificaciones tipificadas como de interés social o vivienda popular y popular con urbanización progresiva
+- `urbanos_suburbanos_habitacionales_distintos_con_edificacion_o_cercados` — apar=104, munis=47, años=13, vals=1.0|0.83|0.6|0.75|0.8
+  - desc: Urbanos y suburbanos habitacionales. Predios distintos a los del inciso anterior con edificación o cercados
+- `urbanos_y_suburbanos_uso_industrial` — apar=99, munis=47, años=13, vals=1.1|1.2|1.1|1.2|1.0
+  - desc: Urbanos y suburbanos destinados a uso industrial; predios destinados al uso industrial
+- `urbanos_suburbanos_industrial` — apar=94, munis=45, años=13, vals=1.12|2.0|1.1|1.1|2.0
+  - desc: Urbanos y suburbanos destinados a uso industrial
+- `urbanos_suburbanos_uso_industrial` — apar=83, munis=40, años=12, vals=1.3|0.85|1.1|2.0|1.1
+  - desc: Urbanos y suburbanos destinados a uso industrial
+- `urbanos_y_suburbanos_habitacionales_interes_social_o_vivienda_popular_y_popular_con_urbanizacion_progresiva` — apar=82, munis=43, años=12, vals=0.515|0.7|0.5|0.5|0.65
+  - desc: Predios con edificaciones tipificadas como de interés social o vivienda popular y popular con urbanización progresiva
+- `urbanos_y_suburbanos_industrial` — apar=76, munis=41, años=13, vals=2.0|1.0|2.0|1.68|1.0
+  - desc: Urbanos y suburbanos destinados a uso industrial: Predios destinados al uso industrial
+- `urbanos_suburbanos_habitacionales_interes_social_popular` — apar=71, munis=38, años=12, vals=0.65|0.6|0.7|0.5|0.55
+  - desc: Predios con edificaciones tipificadas como de interés social o vivienda popular y popular con urbanización progresiva
+- `urbanos_y_suburbanos_comercio_o_servicios_con_edificacion_o_sin_ella` — apar=71, munis=41, años=13, vals=1.2|1.1|1.0|1.0|1.0
+  - desc: Urbanos y suburbanos destinados a comercio o servicios: Predios con edificación o sin ella
+- `urbanos_suburbanos_habitacionales_interes_social_o_vivienda_popular` — apar=55, munis=33, años=12, vals=0.63|0.5|0.55|0.6|0.6
+  - desc: Predios con edificaciones tipificadas como de interés social o vivienda popular y popular con urbanización progresiva
+- `urbanos_suburbanos_habitacionales_con_edificacion_o_cercados` — apar=48, munis=32, años=12, vals=0.85|0.8|0.9|1.0|0.9
+  - desc: Predios distintos a los del inciso anterior con edificación o cercados
+- `urbanos_suburbanos_comercio_o_servicios_con_edificacion_o_sin_ella` — apar=38, munis=28, años=11, vals=1.0|2.0|2.0|1.0|2.0
+  - desc: Urbanos y suburbanos destinados a comercio o servicios: Predios con edificación o sin ella
+- `urbanos_suburbanos_habitacionales_edificacion_o_cercados` — apar=35, munis=26, años=11, vals=1.1|0.79|0.75|0.75|0.75
+  - desc: Predios distintos a los del inciso anterior con edificación o cercados
+- `urbanos_y_suburbanos_habitacionales_con_edificacion_o_cercados` — apar=32, munis=26, años=10, vals=0.75|0.75|0.9|0.88|0.84
+  - desc: Predios distintos a los del inciso anterior con edificación o cercados
+- `urbanos_suburbanos_habitacionales_interes_social_vivienda_popular` — apar=30, munis=26, años=11, vals=0.5|0.5|0.8|0.58|0.8
+  - desc: Urbanos y suburbanos habitacionales: Predios con edificaciones tipificadas como de interés social o vivienda popular y popular con urbanizac
+- `urbanos_y_suburbanos_habitacionales_interes_social_o_vivienda_popular_con_urbanizacion_progresiva` — apar=29, munis=21, años=11, vals=0.7|0.5|0.64|0.65|0.5
+  - desc: Urbanos y suburbanos habitacionales: Predios con edificaciones tipificadas como de interés social o vivienda popular y popular con urbanizac
+- `urbanos_suburbanos_habitacionales_interes_social` — apar=27, munis=21, años=12, vals=0.5|0.5|0.6|0.5|0.53
+  - desc: Urbanos y suburbanos habitacionales. Predios con edificaciones tipificadas como de interés social o vivienda popular y popular con urbanizac
+- `urbanos_suburbanos_industrial_zona_industrial` — apar=25, munis=19, años=7, vals=1.0|0.95|1.0|1.26|1.0
+  - desc: Urbanos y suburbanos destinados a uso industrial. Predios con edificación o sin ella ubicados en la zona industrial
+- `urbanos_suburbanos_habitacionales_interes_social_o_vivienda_popular_y_popular_con_urbanizacion_progresiva` — apar=25, munis=21, años=11, vals=0.5|0.64|0.5|0.5|0.5
+  - desc: Predios con edificaciones tipificadas como de interés social o vivienda popular y popular con urbanización progresiva
+- `urbanos_y_suburbanos_habitacionales_distintos_a_interes_social_o_vivienda_popular_con_edificacion_o_cercados` — apar=23, munis=20, años=9, vals=0.772|0.78|0.68|0.75|0.94
+  - desc: Predios distintos a los del inciso anterior con edificación o cercados
+- `urbanos_suburbanos_comercio_servicios` — apar=23, munis=19, años=11, vals=1.1|1.0|1.18|1.29|1.0
+  - desc: Predios con edificación o sin ella
+- `urbanos_y_suburbanos_destinados_a_uso_industrial` — apar=22, munis=17, años=9, vals=1.2|0.3|1.0|1.2|0.75
+  - desc: Predios destinados al uso industrial
+- `urbanos_suburbanos_habitacionales_interes_social_o_vivienda_popular_con_urbanizacion_progresiva` — apar=19, munis=19, años=8, vals=0.5|0.7|0.5|0.8|0.5
+  - desc: Urbanos y suburbanos habitacionales: Predios con edificaciones tipificadas como de interés social o vivienda popular y popular con urbanizac
+- `urbanos_suburbanos_industrial_fuera_zona_industrial` — apar=18, munis=15, años=7, vals=1.0|1.25|1.26|2.0|1.5
+  - desc: Urbanos y suburbanos destinados a uso industrial. Predios con edificación o sin ella ubicados fuera de la zona industrial
+- `urbanos_suburbanos_habitacionales_distintos_a_interes_social_o_vivienda_popular_con_edificacion_o_cercados` — apar=18, munis=17, años=7, vals=0.75|0.75|1.5|1.2|0.75
+  - desc: Predios distintos a los del inciso anterior con edificación o cercados
+- `urbanos_y_suburbanos_industrial_zona_industrial` — apar=16, munis=12, años=5, vals=1.0|1.5|2.0|1.17|1.0
+  - desc: Predios con edificación o sin ella ubicados en la zona industrial
+- `urbanos_y_suburbanos_habitacionales_distintos_a_interes_social_con_edificacion_o_cercados` — apar=16, munis=15, años=9, vals=0.75|0.75|0.9|0.75|0.965
+  - desc: Urbanos y suburbanos habitacionales: Predios distintos a los del inciso anterior con edificación o cercados
+- `urbanos_y_suburbanos_destinados_a_comercio_o_servicios` — apar=14, munis=12, años=7, vals=1.04|0.6|1.1|1.0|1.2
+  - desc: Urbanos y suburbanos destinados a comercio o servicios. Predios con edificación o sin ella
+- `urbanos_y_suburbanos_habitacionales_interes_social_popular` — apar=13, munis=12, años=7, vals=0.9|0.52|0.55|0.5|0.68
+  - desc: Predios con edificaciones tipificadas como de interés social o vivienda popular, y popular con urbanización progresiva
+- `urbanos_y_suburbanos_habitacionales_interes_social` — apar=11, munis=10, años=4, vals=0.7|0.56|0.5|0.7|0.5
+  - desc: Urbanos y suburbanos habitacionales: Predios con edificaciones tipificadas como de interés social o vivienda popular y popular con urbanizac
+- `urbanos_y_suburbanos_industrial_fuera_zona_industrial` — apar=10, munis=9, años=4, vals=1.25|2.0|1.17|1.0|1.56
+  - desc: Urbanos y suburbanos destinados a uso industrial, predios con edificación o sin ella ubicados fuera de la zona industrial
+- `urbanos_y_suburbanos_habitacionales_edificacion_o_cercados` — apar=10, munis=8, años=7, vals=1.1|0.78|0.75|0.75|1.14
+  - desc: Predios distintos a los del inciso anterior con edificación o cercados
+- `urbanos_suburbanos_comercio_o_servicios_con_o_sin_edificacion` — apar=10, munis=7, años=5, vals=1.04|1.29|1.04|1.0|1.0
+  - desc: Urbanos y suburbanos destinados a comercio o servicios: Predios con edificación o sin ella
+- `urbanos_suburbanos_industrial_fuera_de_zona_industrial` — apar=9, munis=8, años=5, vals=1.0|1.0|1.1|1.0|0.5
+  - desc: Urbanos y suburbanos destinados a uso industrial. Predios con edificación o sin ella ubicados fuera de la zona industrial
+- `urbanos_suburbanos_habitacionales_distintos_a_interes_social_con_edificacion_o_cercados` — apar=9, munis=8, años=4, vals=0.75|0.75|0.75|1.1|0.9
+  - desc: Urbanos y suburbanos habitacionales: Predios distintos a los del inciso anterior con edificación o cercados
+- `industrial` — apar=9, munis=9, años=7, vals=1.545|0.75|2.0|1.0|2.0
+  - desc: Urbanos y suburbanos destinados a uso industrial: Predios ubicados en Zona o Uso Industrial
+- `urbanos_y_suburbanos_destinados_a_comercio_o_servicios_con_edificacion_o_sin_ella` — apar=9, munis=8, años=8, vals=2.0|1.0|1.2|1.0|1.0
+  - desc: Predios con edificación o sin ella
+- `urbanos_suburbanos_comercio_u_oficina` — apar=8, munis=2, años=6, vals=1.66|1.664|1.66|1.7|1.7
+  - desc: Urbanos y suburbanos: Predios dedicados a comercio u oficina
+- `urbanos_y_suburbanos_habitacionales_baldios` — apar=8, munis=2, años=7, vals=1.0|1.47|1.0|1.0|1.0
+  - desc: Predios baldíos
+- `urbanos_y_suburbanos_industrial_fuera_de_zona_industrial` — apar=7, munis=5, años=5, vals=1.0|1.3|0.24|1.3|1.0
+  - desc: Predios con edificación o sin ella ubicados fuera de la zona industrial
+- `urbanos_y_suburbanos_comercio_o_servicios_con_o_sin_edificacion` — apar=7, munis=7, años=6, vals=1.2|1.0|1.0|1.1|1.13
+  - desc: Predios con edificación o sin ella
+- `urbanos_y_suburbanos_habitacionales` — apar=6, munis=3, años=5, vals=0.63|4.0|0.68|0.68|1.0
+  - desc: Urbanos y suburbanos habitacionales: Predios con edificaciones tipificadas como de interés social o vivienda popular y popular con urbanizac
+- `urbanos_suburbanos_habitacionales_distintos` — apar=6, munis=3, años=5, vals=0.75|1.0|1.0|0.95|1.0
+  - desc: Urbanos y suburbanos habitacionales, predios con edificación distintos a los del inciso anterior
+- `urbanos_suburbanos_habitacionales_distintos_a_interes_social` — apar=6, munis=5, años=5, vals=1.09|0.78|1.23|1.0|1.1
+  - desc: Urbanos y suburbanos habitacionales: Predios con edificación distintos a los del numeral anterior
+- `urbanos_suburbanos_habitacionales_edificados_o_cercados` — apar=6, munis=6, años=6, vals=0.75|0.8|0.92|1.1|1.3
+  - desc: Urbanos y suburbanos habitacionales: Predios distintos a los del inciso anterior con edificación o cercados
+- `urbanos_suburbanos_habitacionales` — apar=6, munis=4, años=3, vals=0.5|0.5|0.75|1.0|0.68
+  - desc: Urbanos y suburbanos habitacionales: Predios con edificaciones calificadas como de buena calidad
+- `urbanos_suburbanos_lotes_baldios_cercados` — apar=6, munis=2, años=4, vals=0.13|0.13|1.3|1.3|1.3
+  - desc: Urbanos y suburbanos: Lotes baldíos cercados
+- `habitacional_no_cercados` — apar=6, munis=5, años=4, vals=1.0|1.2|1.0|1.5|1.0
+  - desc: Predios no cercados
+- `urbanos_suburbanos_habitacionales_interes_social_popular_y_popular_con_urbanizacion_progresiva` — apar=5, munis=5, años=3, vals=0.6|0.5|0.3|0.7|0.7
+  - desc: Predios con edificaciones tipificadas como de Interés social o vivienda popular y popular con urbanización progresiva
+- `comercio_o_servicios` — apar=5, munis=5, años=3, vals=1.0|2.0|1.0|1.18|1.16
+  - desc: Predios con edificación o sin ella
+- `urbanos_y_suburbanos_uso_industrial_zona_industrial` — apar=5, munis=4, años=4, vals=1.0|1.1|1.0|1.66|1.66
+  - desc: Urbanos y suburbanos destinados a uso industrial, predios con edificación o sin ella ubicados en la zona industrial
+- `urbanos_y_suburbanos_uso_industrial_fuera_zona_industrial` — apar=5, munis=4, años=4, vals=1.0|1.1|1.0|1.45|1.45
+  - desc: Urbanos y suburbanos destinados a uso industrial, predios con edificación o sin ella ubicados fuera de la zona industrial
+- `urbanos_suburbanos_habitacionales_baldios` — apar=5, munis=2, años=4, vals=1.0|1.3|1.67|1.47|0.75
+  - desc: Urbanos y suburbanos habitacionales, predios baldíos
+- `urbanos_suburbanos_habitacionales_con_edificacion_o_cercados_distintos_interes_social` — apar=5, munis=4, años=5, vals=0.75|0.85|1.0|0.8|1.0
+  - desc: Predios distintos a los del inciso anterior con edificación o cercados
+- `comercio_o_servicios_con_edificacion_o_sin_ella` — apar=5, munis=5, años=4, vals=1.1|1.05|2.0|1.0|1.2
+  - desc: Urbanos y suburbanos destinados a comercio o servicios, con edificación o sin ella
+- `urbanos_suburbanos_lotes_baldios_no_cercado` — apar=5, munis=1, años=5, vals=0.17|0.17|1.7|2.0|2.0
+  - desc: Urbanos y suburbanos: Lotes baldíos no cercado
+- `urbanos_y_suburbanos_habitacionales_cercados_sin_construccion` — apar=5, munis=1, años=5, vals=0.2|0.2|0.2|0.2|0.2
+  - desc: Predios cercados sin construcción
+- `urbanos_suburbanos_uso_industrial_zona_industrial` — apar=4, munis=4, años=2, vals=0.26|1.0|1.0|1.66
+  - desc: Urbanos y suburbanos destinados a uso industrial, predios con edificación o sin ella ubicados en la zona industrial
+- `urbanos_suburbanos_uso_industrial_fuera_zona_industrial` — apar=4, munis=3, años=4, vals=1.0|1.45|2.0|1.75
+  - desc: Urbanos y suburbanos destinados a uso industrial, predios con edificación o sin ella ubicados fuera de la zona industrial
+- `urbanos_y_suburbanos_habitacionales_predios_distintos_a_los_del_inciso_anterior_con_edificacion_o_cercados` — apar=4, munis=4, años=4, vals=0.9|0.95|0.75|0.75
+  - desc: Urbanos y suburbanos habitacionales: Predios distintos a los del inciso anterior con edificación o cercados
+- `urbanos_y_suburbanos_habitacionales_predios_no_cercados` — apar=4, munis=4, años=4, vals=1.2|1.17|1.0|1.0
+  - desc: Urbanos y suburbanos habitacionales: Predios no cercados
+- `urbanos_y_suburbanos_destinados_a_comercio_o_servicios_predios_con_edificacion_o_sin_ella` — apar=4, munis=4, años=4, vals=1.2|1.2|1.0|1.0
+  - desc: Urbanos y suburbanos destinados a comercio o servicios: Predios con edificación o sin ella
+- `urbanos_suburbanos_uso_industrial_fuera_de_zona_industrial` — apar=3, munis=3, años=2, vals=0.23|1.0|1.1
+  - desc: Urbanos y suburbanos destinados a uso industrial, predios con edificación o sin ella ubicados fuera de la zona industrial
+- `habitacionales_no_cercados` — apar=3, munis=3, años=3, vals=1.0|1.11|1.5
+  - desc: Predios no cercados
+- `urbanos_suburbanos_habitacionales_interes_social_popular_progresiva` — apar=3, munis=3, años=3, vals=0.53|0.5|0.5
+  - desc: Predios con edificaciones tipificadas como de interés social o vivienda popular y popular con urbanización progresiva
+- `urbanos_suburbanos_habitacionales_interes_social_vivienda_popular_y_popular_con_urbanizacion_progresiva` — apar=3, munis=3, años=3, vals=0.5|0.66|0.5
+  - desc: Urbanos y suburbanos habitacionales: Predios con edificaciones tipificadas como de interés social o vivienda popular y popular con urbanizac
+- `urbanos_y_suburbanos_habitacionales_interes_social_popular_y_popular_con_urbanizacion_progresiva` — apar=3, munis=3, años=3, vals=0.5|0.6|0.55
+  - desc: Urbanos y suburbanos habitacionales: Predios con edificaciones tipificadas como de interés social o vivienda popular y popular con urbanizac
+- `urbanos_y_suburbanos_comercio_servicios` — apar=3, munis=3, años=2, vals=4.0|0.595|0.6
+  - desc: Predios con edificación o sin ella
+- `urbanos_y_suburbanos_habitacionales_distintos_a_interes_social` — apar=3, munis=2, años=3, vals=0.95|0.75|0.75
+  - desc: Predios distintos a los del inciso anterior con edificación o cercados
+- `urbanos_y_suburbanos_habitacionales_distintos_a_los_anteriores_con_edificacion_o_cercados` — apar=3, munis=3, años=3, vals=0.75|0.75|0.75
+  - desc: Predios distintos a los del inciso anterior con edificación o cercados
+- `habitacional_interes_social_o_vivienda_popular_con_urbanizacion_progresiva` — apar=3, munis=3, años=2, vals=0.54|0.5|0.64
+  - desc: Predios con edificaciones tipificadas como de interés social o vivienda popular y con urbanización progresiva
+- `urbanos_suburbanos_predios_en_transicion_de_uso_del_suelo` — apar=3, munis=1, años=3, vals=0.17|0.17|0.17
+  - desc: Urbanos y suburbanos: Predios en transición de uso del suelo
+- `urbanos_y_suburbanos_habitacionales_distintos_a_interes_social_o_vivienda_popular` — apar=3, munis=2, años=3, vals=1.23|0.75|0.75
+  - desc: Predios distintos a los del inciso anterior con edificación o cercados
+- `urbanos_y_suburbanos_habitacionales_predios_con_edificaciones_tipificadas_como_de_interes_social_o_vivienda_popular_y_popular_con_urbanizacion_progresiva` — apar=3, munis=3, años=3, vals=0.66|0.7|0.5
+  - desc: Urbanos y suburbanos habitacionales: Predios con edificaciones tipificadas como de interés social o vivienda popular y popular con urbanizac
+- `urbanos_y_suburbanos_destinados_a_uso_industrial_predios_destinados_al_uso_industrial` — apar=3, munis=3, años=3, vals=1.2|1.04|1.0
+  - desc: Urbanos y suburbanos destinados a uso industrial: Predios destinados al uso industrial
+- `urbanos_suburbanos_destinados_a_uso_industrial` — apar=3, munis=3, años=2, vals=1.5|1.85|1.7
+  - desc: Urbanos y suburbanos destinados a uso industrial: Predios destinados al uso industrial
+- `urbanos_y_suburbanos_industrial_minero` — apar=3, munis=1, años=3, vals=1.15|1.265|1.265
+  - desc: Urbanos y suburbanos destinados a uso industrial: Predios destinados al uso minero
+- `urbanos_y_suburbanos_industrial_energias_verdes` — apar=3, munis=1, años=3, vals=1.15|1.265|1.265
+  - desc: Urbanos y suburbanos destinados a uso industrial: Predios destinados al uso de energías verdes, eólica, plantas solares, o de transferencia
+- `urbanos_y_suburbanos_habitacionales_no_cercados_sin_construccion` — apar=3, munis=2, años=3, vals=0.5|0.5|0.5
+  - desc: Predios no cercados sin construcción
+- `urbanos_y_suburbanos_zona_industrial_o_agroindustrial_fuera_de_la_zona_conurbada` — apar=3, munis=2, años=3, vals=1.04|1.5|1.04
+  - desc: Predios con edificación o sin ella ubicados en la zona industrial o agroindustrial fuera de la zona conurbada
+- `urbanos_y_suburbanos_habitacionales_interes_social_vivienda_popular` — apar=3, munis=3, años=2, vals=0.65|0.5|1.0
+  - desc: Predios con edificaciones tipificadas como de interés social o vivienda popular y popular con urbanización progresiva
+- `urbanos_suburbanos_transicion_uso_suelo` — apar=3, munis=2, años=2, vals=0.15|0.17|0.15
+  - desc: Predios en transición de uso de suelo
+- `urbanos_suburbanos_fuera_de_la_zona_industrial` — apar=2, munis=1, años=2, vals=1.0|1.0
+  - desc: Urbanos y suburbanos destinados a uso industrial. Predios fuera de la zona industrial
+- `habitacionales_distintos_con_edificacion_o_cercados` — apar=2, munis=2, años=2, vals=0.75|0.9
+  - desc: Predios distintos a los del inciso anterior con edificación o cercados
+- `industrial_zona_industrial` — apar=2, munis=2, años=2, vals=1.0|1.0
+  - desc: Predios con edificación o sin ella ubicados en la zona industrial
+- `urbanos_suburbanos_habitacionales_con_edificacion_o_cercados_distintos_a_interes_social` — apar=2, munis=2, años=2, vals=0.75|1.14
+  - desc: Urbanos y suburbanos habitacionales: Predios distintos a los del inciso anterior con edificación o cercados
+- `urbano_suburbano_comercio_o_servicios` — apar=2, munis=1, años=2, vals=1.06|1.11
+  - desc: Urbanos y suburbanos destinados a comercio o servicios. Predios con edificación o sin ella.
+- `urbano_suburbano_industrial_zona_industrial` — apar=2, munis=1, años=2, vals=1.06|1.11
+  - desc: Urbanos y suburbanos destinados a uso industrial. Predios con edificación o sin ella ubicados en la zona industrial.
+- `urbanos_suburbanos_fuera_de_zona_industrial` — apar=2, munis=1, años=2, vals=1.0|0.8
+  - desc: Urbanos y suburbanos destinados a uso industrial: Predios fuera de la zona industrial
+- `predios_urbanos_y_suburbanos_sin_edificacion_bardeados_y_cercados_con_malla_y_limpios` — apar=2, munis=1, años=2, vals=1.2|1.2
+  - desc: Predios urbanos y suburbanos sin edificación independientemente al uso para que estén destinados. Predios bardeados y cercados con malla y l
+- `predios_urbanos_y_suburbanos_sin_edificacion_sin_bardear_y_sin_cercado_con_malla` — apar=2, munis=1, años=2, vals=6.0|6.0
+  - desc: Predios urbanos y suburbanos sin edificación independientemente al uso para que estén destinados. Predios sin bardear y sin cercado con mall
+- `habitacional_interes_social_o_vivienda_popular_y_popular_con_urbanizacion_progresiva` — apar=2, munis=2, años=2, vals=0.54|0.6
+  - desc: Urbanos y suburbanos habitacionales: Predios tipificados como de interés social o vivienda popular y popular con urbanización progresiva
+- `comercio_u_oficinas` — apar=2, munis=2, años=2, vals=1.5|1.0
+  - desc: Urbanos y suburbanos destinados a comercio u oficinas: Predios con edificación o sin ella
+- `urbanos_suburbanos_habitacionales_no_cerrados` — apar=2, munis=2, años=2, vals=0.8|1.0
+  - desc: Urbanos y suburbanos habitacionales, predios no cerrados
+- `habitacional_interes_social_popular` — apar=2, munis=2, años=2, vals=0.5|0.65
+  - desc: Urbanos y suburbanos habitacionales. Predios con edificación tipificada como de interés social o vivienda popular y popular con urbanización
+- `industrial_fuera_zona_industrial` — apar=2, munis=2, años=2, vals=1.0|1.0
+  - desc: Urbanos y suburbanos destinados a uso industrial. Predios ubicados fuera de la zona industrial
+- `urbanos_y_suburbanos_habitacionales_distintos_a_interes_social_o_popular_con_edificacion_o_cercados` — apar=2, munis=2, años=2, vals=0.75|0.82
+  - desc: Predios distintos a los del inciso anterior con edificación o cercados
+- `urbanos_suburbanos_destinados_a_comercio_o_servicios_con_edificacion_o_sin_ella` — apar=2, munis=2, años=2, vals=1.0|1.0
+  - desc: Predios con edificación o sin ella
+- `urbanos_suburbanos_comercio_servicios_con_edificacion_o_sin_ella` — apar=2, munis=2, años=2, vals=1.29|1.75
+  - desc: Predios con edificación o sin ella
+- `urbanos_y_suburbanos_uso_industrial_fuera_de_zona_industrial` — apar=2, munis=2, años=2, vals=1.25|1.1
+  - desc: Predios con edificación o sin ella ubicados fuera de la zona industrial
+- `urbanos_y_suburbanos_habitacionales_distintos` — apar=2, munis=2, años=2, vals=0.75|1.0
+  - desc: Predios con edificación distintos a los del inciso anterior
+- `urbanos_y_suburbanos_comercio_u_oficina_con_o_sin_edificacion` — apar=2, munis=1, años=2, vals=1.0|1.0
+  - desc: Predios con edificación o sin ellas
+- `habitacional_no_cercado` — apar=2, munis=2, años=2, vals=0.5|1.3
+  - desc: Predios no cercados
+- `urbanos_suburbanos_habitacionales_diferentes_con_edificacion_o_cercados` — apar=2, munis=2, años=2, vals=0.88|0.9
+  - desc: Urbanos y suburbanos habitacionales: Predios distintos a los del inciso anterior con edificación o cercados
+- `urbanos_y_suburbanos_fuera_de_zona_industrial` — apar=2, munis=2, años=2, vals=1.0|1.75
+  - desc: Urbanos y suburbanos destinados a uso industrial. Predios fuera de la zona industrial
+- `urbanos_y_suburbanos_uso_industrial_fuera_de_zona_industrial_o_agroindustrial` — apar=2, munis=2, años=2, vals=2.0|2.0
+  - desc: Urbanos y suburbanos destinados a uso industrial: Predios con edificación o sin ella ubicadas fuera de la zona industrial o Agroindustrial
+- `habitacional_con_edificacion_o_cercados` — apar=2, munis=2, años=2, vals=0.8|1.0
+  - desc: Predios distintos a los del inciso anterior con edificación o cercados
+- `urbanos_y_suburbanos_fuera_de_zona_industrial_o_agroindustrial` — apar=2, munis=1, años=2, vals=2.0|2.0
+  - desc: Urbanos y suburbanos destinados a uso industrial: Predios con edificación o sin ella ubicadas fuera de la zona industrial o agroindustrial
+- `urbanos_y_suburbanos_habitacionales_con_edificaciones_tipificadas_como_de_interes_social_o_vivienda_popular_y_popular_con_urbanizacion_progresiva` — apar=2, munis=2, años=2, vals=0.5|0.54
+  - desc: Urbanos y suburbanos habitacionales: Predios con edificaciones tipificadas como de interés social o vivienda popular y popular con urbanizac
+- `urbanos_suburbanos_habitacionales_interes_social_y_vivienda_popular_con_urbanizacion_progresiva` — apar=2, munis=2, años=1, vals=0.57|0.5
+  - desc: Urbanos y suburbanos habitacionales: Predios con edificaciones tipificadas como de interés social o vivienda popular y popular con urbanizac
+- `urbanos_y_suburbanos_fuera_de_la_zona_industrial_o_agroindustrial` — apar=2, munis=2, años=2, vals=2.0|2.0
+  - desc: Predios con edificación o sin ella ubicados fuera de la zona industrial o agroindustrial
+- `urbanos_suburbanos_habitacionales_otros` — apar=2, munis=2, años=2, vals=1.0|0.95
+  - desc: Predios con tipificación distintos a los del inciso anterior
+- `uso_industrial` — apar=2, munis=2, años=2, vals=2.0|1.7
+  - desc: Urbanos y suburbanos destinados a uso industrial
+- `urbanos_y_suburbanos_industrial_zona_industrial_o_agroindustrial_fuera_zona_conurbada` — apar=2, munis=2, años=2, vals=1.04|1.5
+  - desc: Predios con edificación o sin ella ubicados en la zona industrial o agroindustrial fuera de la zona conurbada
+- `lotes_baldios_cercados` — apar=2, munis=1, años=2, vals=1.3|1.3
+  - desc: Lotes baldíos cercados
+- `lotes_baldios_no_cercado` — apar=2, munis=1, años=2, vals=2.0|2.0
+  - desc: Lotes baldíos no cercado
+- `predios_en_transicion_de_uso_del_suelo` — apar=2, munis=1, años=2, vals=0.17|0.17
+  - desc: Predios en transición de uso del suelo
+- `urbanos_suburbanos_habitacionales_interes_social_y_vivienda_popular` — apar=2, munis=2, años=2, vals=0.5|0.5
+  - desc: Urbanos y suburbanos habitacionales: Predios con edificaciones tipificadas como de interés social o vivienda popular y popular con urbanizac
+- `urbanos_y_suburbanos_zona_industrial_o_agroindustrial_fuera_zona_conurbada` — apar=2, munis=1, años=2, vals=1.04|1.04
+  - desc: Predios con edificación o sin ella ubicados en la zona industrial o agroindustrial fuera de la zona conurbada
+- `urbanos_y_suburbanos_fuera_zona_industrial_o_agroindustrial` — apar=2, munis=1, años=2, vals=2.0|2.0
+  - desc: Predios con edificación o sin ella ubicados fuera de en la zona industrial o agroindustrial
+- `urbanos_suburbanos_industrial_minero` — apar=2, munis=1, años=2, vals=1.265|1.265
+  - desc: Urbanos y suburbanos destinados a uso industrial: Predios destinados al uso minero
+- `urbanos_suburbanos_industrial_energias_verdes` — apar=2, munis=1, años=2, vals=1.265|1.265
+  - desc: Urbanos y suburbanos destinados a uso industrial: Predios destinados al uso de energías verdes, Eólica, plantas solares, o de transferencia.
+- `urbanos_suburbanos_lotes_baldios_no_cercados` — apar=2, munis=1, años=2, vals=2.0|2.0
+  - desc: Lotes baldíos no cercados
+- `urbanos_y_suburbanos_industrial_fuera_de_la_zona_industrial` — apar=2, munis=2, años=2, vals=1.85|1.1
+  - desc: Predios con edificación o sin ella ubicados fuera de la zona industrial
+- `urbanos_suburbanos_habitacionales_interes_social_o_popular` — apar=1, munis=1, años=1, vals=0.65
+  - desc: Predios con edificaciones tipificadas como de interés social o vivienda popular, y popular con urbanización progresiva
+- `habitacionales_interes_social_o_vivienda_popular` — apar=1, munis=1, años=1, vals=0.5
+  - desc: Predios con edificaciones tipificadas como de interés social o vivienda popular, y popular con urbanización
+- `industrial_fuera_de_zona_industrial` — apar=1, munis=1, años=1, vals=1.0
+  - desc: Predios con edificación o sin ella ubicados fuera de la zona industrial
+- `urbanos_suburbanos_habitacionales_interes_social_vivienda_popular_y_urbanizacion_progresiva` — apar=1, munis=1, años=1, vals=0.7
+  - desc: Predios con edificaciones tipificadas como de interés social o vivienda popular y popular con urbanización progresiva
+- `urbanos_suburbanos_habitacionales_con_edificacion` — apar=1, munis=1, años=1, vals=0.85
+  - desc: Predios distintos a los del inciso anterior con edificación o cercados
+- `urbanos_suburbanos_habitacionales_sin_barda` — apar=1, munis=1, años=1, vals=1.1
+  - desc: Predios no cercados
+- `urbanos_suburbanos_habitacionales_residencial` — apar=1, munis=1, años=1, vals=1.0
+  - desc: Predio con edificación como residencial
+- `urbanos_y_suburbanos_habitacionales_distintos_no_cercados` — apar=1, munis=1, años=1, vals=1.1
+  - desc: Predios no cercados
+- `urbanos_y_suburbanos_habitacionales_sin_cercar` — apar=1, munis=1, años=1, vals=1.12
+  - desc: Predios no cercados
+- `urbanos_y_suburbanos_industriales_zona_industrial_o_extraccion_transformacion_materiales` — apar=1, munis=1, años=1, vals=1.5
+  - desc: Urbanos y suburbanos destinados a uso industrial: Predios con edificación o sin ella ubicados en la zona industrial o con actividad de extra
+- `urbanos_y_suburbanos_industriales_fuera_de_zona_industrial_o_extraccion_transformacion_materiales` — apar=1, munis=1, años=1, vals=1.25
+  - desc: Predios con edificación o sin ella ubicados fuera de la zona industrial o con actividad de extracción o transformación de materiales
+- `urbanos_suburbanos_industrial_extraccion_transformacion_zona_industrial` — apar=1, munis=1, años=1, vals=1.2
+  - desc: Urbanos y suburbanos destinados a uso industrial y/o extracción/transformación de materiales: Predios con edificación o sin ella ubicados en
+- `urbanos_suburbanos_industrial_extraccion_transformacion_fuera_zona_industrial` — apar=1, munis=1, años=1, vals=1.2
+  - desc: Urbanos y suburbanos destinados a uso industrial y/o extracción/transformación de materiales: Predios con edificación o sin ella ubicados fu
+- `urbano_suburbano_habitacional_interes_social_o_popular` — apar=1, munis=1, años=1, vals=0.53
+  - desc: Predios con edificaciones tipificadas como de interés social o vivienda popular y popular con urbanización progresiva.
+- `urbano_suburbano_habitacional_edificado_o_cercado` — apar=1, munis=1, años=1, vals=0.8
+  - desc: Predios distintos a los del inciso anterior con edificación o cercados.
+- `urbano_suburbano_habitacional_no_cercado` — apar=1, munis=1, años=1, vals=1.06
+  - desc: Predios no cercados.
+- `urbano_suburbano_industrial_fuera_de_zona_industrial` — apar=1, munis=1, años=1, vals=1.06
+  - desc: Urbanos y suburbanos destinados a uso industrial. Predios con edificación o sin ella ubicados fuera de la zona industrial.
+- `urbanos_suburbanos_comercios_oficinas` — apar=1, munis=1, años=1, vals=1.0
+  - desc: Urbanos y suburbanos destinados a comercios u oficinas, predios con edificación o sin ellas
+- `urbanos_y_suburbanos_destinados_a_uso_industrial_zona_industrial_y_agroindustrial_dentro_de_la_zona_conurbada` — apar=1, munis=1, años=1, vals=0.52
+  - desc: Urbanos y suburbanos destinados a uso industrial. Predios con edificación o sin ella ubicadas en la zona industrial y agroindustrial dentro 
+- `urbanos_y_suburbanos_destinados_a_uso_industrial_zona_industrial_y_agroindustrial_fuera_de_la_zona_conurbada` — apar=1, munis=1, años=1, vals=1.04
+  - desc: Urbanos y suburbanos destinados a uso industrial. Predios con edificación o sin ella ubicados en la zona industrial y agroindustrial fuera d
+- `urbanos_y_suburbanos_destinados_a_uso_industrial_fuera_de_la_zona_industrial_y_o_agroindustrial` — apar=1, munis=1, años=1, vals=2.0
+  - desc: Urbanos y suburbanos destinados a uso industrial. Predios con edificación o sin ella ubicadas fuera de la zona industrial y/o agroindustrial
+- `predios_urbanos_y_suburbanos_con_edificacion_de_uso_habitacional_hasta_230000` — apar=1, munis=1, años=1, vals=1.1
+  - desc: Predios urbanos y suburbanos con edificación de uso habitacional. Predios cuyo valor no exceda de $230,000.00
+- `predios_urbanos_y_suburbanos_con_edificacion_de_uso_habitacional_restantes` — apar=1, munis=1, años=1, vals=1.25
+  - desc: Predios urbanos y suburbanos con edificación de uso habitacional. Predios distintos al numeral anterior
+- `predios_urbanos_y_suburbanos_destinados_a_comercios_servicios_oficinas_o_uso_industrial` — apar=1, munis=1, años=1, vals=1.7
+  - desc: Predios urbanos y suburbanos destinados a comercios, servicios, oficinas o uso industrial
+- `habitacional_distintos_a_interes_social` — apar=1, munis=1, años=1, vals=0.965
+  - desc: Urbanos y suburbanos habitacionales: Predios con tipificación distintos a los del inciso anterior
+- `urbanos_suburbanos_comercios_o_servicios_con_o_sin_edificacion` — apar=1, munis=1, años=1, vals=1.3
+  - desc: Urbanos y suburbanos destinados a comercios o la prestación de servicios: Predios con edificación o sin ellas
+- `urbanos_y_suburbanos_habitacionales_edificados_o_cercados` — apar=1, munis=1, años=1, vals=0.9
+  - desc: Urbanos y suburbanos habitacionales: Predios distintos a los del inciso anterior con edificación o cercados
+- `urbanos_y_suburbanos_industrial_zona_industrial_o_extraccion_transformacion_materiales` — apar=1, munis=1, años=1, vals=1.5
+  - desc: Urbanos y suburbanos destinados a uso industrial: Predios con edificación o sin ella ubicados en la zona industrial o con actividad de extra
+- `urbanos_y_suburbanos_industrial_fuera_de_zona_industrial_o_extraccion_transformacion_materiales` — apar=1, munis=1, años=1, vals=1.25
+  - desc: Predios con edificación o sin ella ubicados fuera de la zona industrial o con actividad de extracción o transformación de materiales
+- `urbanos_suburbanos_industrial_zona_industrial_con_edificacion_o_sin_ella` — apar=1, munis=1, años=1, vals=0.29
+  - desc: Predios con edificación o sin ella ubicados en la zona industrial
+- `urbanos_suburbanos_industrial_fuera_de_zona_industrial_con_edificacion_o_sin_ella` — apar=1, munis=1, años=1, vals=0.25
+  - desc: Predios con edificación o sin ella ubicados fuera de la zona industrial
+- `urbano_suburbano_habitacional_interes_social_o_vivienda_popular` — apar=1, munis=1, años=1, vals=0.56
+  - desc: Predios con edificaciones tipificadas como de interés social o vivienda popular y popular con urbanización progresiva.
+- `urbano_suburbano_habitacional_con_edificacion_o_cercados_distintos_interes_social` — apar=1, munis=1, años=1, vals=0.84
+  - desc: Predios distintos a los del inciso anterior con edificación o cercados.
+- `urbano_suburbano_habitacional_no_cercados` — apar=1, munis=1, años=1, vals=1.11
+  - desc: Predios no cercados.
+- `urbano_suburbano_industrial_fuera_zona_industrial` — apar=1, munis=1, años=1, vals=1.11
+  - desc: Urbanos y suburbanos destinados a uso industrial: Predios con edificación o sin ella ubicados fuera de la zona industrial.
+- `habitacional_interes_social` — apar=1, munis=1, años=1, vals=0.5
+  - desc: Urbanos y suburbanos habitacionales. Predios con edificación tipificada como de interés social o vivienda popular y popular con urbanización
+- `habitacional_otras_edificaciones` — apar=1, munis=1, años=1, vals=0.75
+  - desc: Urbanos y suburbanos habitacionales. Predios con edificación distintos a los del inciso anterior
+- `habitacional_baldio` — apar=1, munis=1, años=1, vals=1.0
+  - desc: Urbanos y suburbanos habitacionales. Predios baldíos
+- `urbanos_y_suburbanos_habitacionales_con_edificacion` — apar=1, munis=1, años=1, vals=1.0
+  - desc: Predios distintos a los del inciso anterior con edificación
+- `urbanos_y_suburbanos_comercio_o_servicios_con_edificacion_sin_techado` — apar=1, munis=1, años=1, vals=1.2
+  - desc: Predios con edificación e sin techado
+- `urbanos_y_suburbanos_habitacionales_interes_social_o_vivienda_popular_y_urbanizacion_progresiva` — apar=1, munis=1, años=1, vals=0.68
+  - desc: Urbanos y suburbanos habitacionales: Predios con edificaciones tipificadas como de interés social o vivienda popular y popular con urbanizac
+- `urbanos_y_suburbanos_uso_industrial_zona_industrial_con_edificacion_o_sin_ella` — apar=1, munis=1, años=1, vals=0.3
+  - desc: Urbanos y suburbanos destinados a uso industrial: Predios con edificación o sin ella ubicados en la zona industrial
+- `urbanos_y_suburbanos_uso_industrial_fuera_zona_industrial_con_edificacion_o_sin_ella` — apar=1, munis=1, años=1, vals=0.26
+  - desc: Urbanos y suburbanos destinados a uso industrial: Predios con edificación o sin ella ubicados fuera de la zona industrial
+- `urbanos_suburbanos_habitacionales_otras_edificaciones` — apar=1, munis=1, años=1, vals=0.75
+  - desc: Predios distintos a los del inciso anterior con edificación o cercados
+- `habitacionales_interes_social_popular_con_urbanizacion_progresiva` — apar=1, munis=1, años=1, vals=0.56
+  - desc: Predios con edificaciones tipificadas como de interés social o vivienda popular y popular con urbanización progresiva
+- `habitacionales_con_edificacion_o_cercados` — apar=1, munis=1, años=1, vals=0.84
+  - desc: Predios distintos a los del inciso anterior con edificación o cercados
+- `habitacional_distintos` — apar=1, munis=1, años=1, vals=0.75
+  - desc: Urbanos y suburbanos habitacionales. Predios con edificación distintos a los del inciso anterior
+- `baldios` — apar=1, munis=1, años=1, vals=1.0
+  - desc: Predios baldíos
+- `sin_edificacion_sin_bardear_o_sin_cercado` — apar=1, munis=1, años=1, vals=2.0
+  - desc: Predios sin edificación, sin bardear o sin cercado
+- `urbanos_suburbanos_habitacionales_interes_social_vivienda_popular_con_urbanizacion_progresiva` — apar=1, munis=1, años=1, vals=0.5
+  - desc: Urbanos y suburbanos habitacionales: Predios con edificaciones tipificadas como de interés social o vivienda popular y popular con urbanizac
+- `urbanos_suburbanos_industrial_fuera_zona` — apar=1, munis=1, años=1, vals=1.1
+  - desc: Predios destinados al uso industrial fuera de la zona industrial
+- `urbanos_suburbanos_habitacionales_no_edificados` — apar=1, munis=1, años=1, vals=0.2
+  - desc: Urbanos y suburbanos habitacionales: Predios no edificados
+- `urbanos_suburbanos_zona_industrial_o_agroindustrial_fuera_zona_conurbada` — apar=1, munis=1, años=1, vals=1.04
+  - desc: Urbanos y suburbanos destinados a uso industrial: Predios con edificación o sin ella ubicados en la zona industrial o agroindustrial fuera d
+- `urbanos_suburbanos_fuera_zona_industrial_o_agroindustrial` — apar=1, munis=1, años=1, vals=2.0
+  - desc: Urbanos y suburbanos destinados a uso industrial: Predios con edificación o sin ella ubicadas fuera de la zona industrial o agroindustrial
+- `urbanos_y_suburbanos_habitacionales_interes_social_popular_con_urbanizacion_progresiva` — apar=1, munis=1, años=1, vals=0.5
+  - desc: Predios con edificaciones aplicadas como de interés social o vivienda popular y popular con urbanización progresiva
+- `urbanos_suburbanos_habitacionales_con_edificaciones_tipificadas_como_de_interes_social_o_vivienda_popular_y_popular_con_urbanizacion_progresiva` — apar=1, munis=1, años=1, vals=0.5
+  - desc: Predios con edificaciones tipificadas como de interés social o vivienda popular y popular con urbanización progresiva
+- `urbanos_suburbanos_habitacionales_distintos_a_los_del_inciso_anterior_con_edificacion_o_cercados` — apar=1, munis=1, años=1, vals=0.75
+  - desc: Predios distintos a los del inciso anterior con edificación o cercados
+- `urbanos_suburbanos_destinados_a_uso_industrial_desbravados_al_uso_industrial` — apar=1, munis=1, años=1, vals=1.0
+  - desc: Predios desbravados al uso industrial
+- `urbanos_suburbanos_habitacionales_distintos_a_interes_social_o_vivienda_popular` — apar=1, munis=1, años=1, vals=0.9
+  - desc: Urbanos y suburbanos habitacionales: Predios distintos a los del inciso anterior con edificación o cercados
+- `urbanos_suburbanos_habitacionales_distintos_a_interes_social_o_vivienda_popular_sin_edificacion` — apar=1, munis=1, años=1, vals=1.0
+  - desc: Predios distintos a los del inciso anterior sin edificación
+- `urbanos_suburbanos_comercio_servicios_con_edificacion` — apar=1, munis=1, años=1, vals=1.0
+  - desc: Predios con edificación destinados a comercio o servicios
+- `urbanos_y_suburbanos_habitacionales_sin_edificacion` — apar=1, munis=1, años=1, vals=1.1
+  - desc: Predios no edificados
+- `urbanos_y_suburbanos_habitacionales_interes_social_o_vivienda_popular_y_con_urbanizacion_progresiva` — apar=1, munis=1, años=1, vals=0.5
+  - desc: Predios con edificaciones tipificadas como de interés social o vivienda popular y con urbanización progresiva
+- `urbanos_y_suburbanos_destinados_a_la_industria` — apar=1, munis=1, años=1, vals=4.0
+  - desc: Predios destinados al uso industrial
+- `urbanos_suburbanos_con_edificacion_sin_ella_industrial` — apar=1, munis=1, años=1, vals=1.18
+  - desc: Urbanos y suburbanos destinados a uso industrial
+- `habitacional_con_edificacion_o_cercado` — apar=1, munis=1, años=1, vals=0.965
+  - desc: Predios distintos a los del inciso anterior con edificación o cercados
+- `habitacional_sin_barda` — apar=1, munis=1, años=1, vals=1.1
+  - desc: Predios no cercados
+- `urbanos_y_suburbanos_con_edificacion_habitacional_valor_hasta_230000` — apar=1, munis=1, años=1, vals=1.1
+  - desc: Predios urbanos y suburbanos con edificación de uso habitacional, cuyo valor no exceda de $230,000.00
+- `urbanos_y_suburbanos_con_edificacion_habitacional_valor_mayor` — apar=1, munis=1, años=1, vals=1.23
+  - desc: Predios urbanos y suburbanos con edificación de uso habitacional, predios distintos al numeral anterior
+- `urbanos_y_suburbanos_sin_edificacion_bardeados_y_cercados_con_malla_y_limpios` — apar=1, munis=1, años=1, vals=1.2
+  - desc: Predios urbanos y suburbanos sin edificación, predios bardeados y cercados con malla y limpios
+- `urbanos_y_suburbanos_sin_edificacion_sin_bardear_y_sin_cercado_con_malla` — apar=1, munis=1, años=1, vals=6.0
+  - desc: Predios urbanos y suburbanos sin edificación, predios sin bardear y sin cercado con malla
+- `urbanos_y_suburbanos_destinados_a_comercios_servicios_oficinas` — apar=1, munis=1, años=1, vals=6.15
+  - desc: Predios urbanos y suburbanos destinados a comercios, servicios, oficinas
+- `urbanos_y_suburbanos_destinados_a_comercios_servicios_oficinas_en_club` — apar=1, munis=1, años=1, vals=1.7
+  - desc: Predios urbanos y suburbanos destinados a comercios, servicios, oficinas en club
+- `urbanos_suburbanos_uso_industrial_zona_o_con_uso_industrial` — apar=1, munis=1, años=1, vals=1.6
+  - desc: Urbanos y suburbanos destinados a uso industrial: Predios ubicados en Zona o con Uso Industrial
+- `urbanos_y_suburbanos_habitacionales_interes_social_vivienda_popular_y_popular_con_urbanizacion_progresiva` — apar=1, munis=1, años=1, vals=0.5
+  - desc: Predios con edificaciones tipificadas como de interés social o vivienda popular y popular con urbanización progresiva
+- `urbanos_y_suburbanos_habitacionales_interes_social_vivienda_popular_progresiva` — apar=1, munis=1, años=1, vals=0.52
+  - desc: Predios con edificaciones tipificadas como de interés social o vivienda popular y popular con urbanización progresiva
+- `urbanos_y_suburbanos_habitacionales_edificados_interes_social_vivienda_popular_y_urbanizacion_progresiva` — apar=1, munis=1, años=1, vals=0.6
+  - desc: Predios con edificaciones tipificadas como de interés social o vivienda popular y popular con urbanización progresiva
+- `predios_urbanos_y_suburbanos_con_edificacion_habitacional_hasta_230000` — apar=1, munis=1, años=1, vals=1.1
+  - desc: Predios urbanos y suburbanos con edificación de uso habitacional. Predios cuyo valor no exceda de $230,000.00
+- `predios_urbanos_y_suburbanos_con_edificacion_habitacional_mas_de_230000` — apar=1, munis=1, años=1, vals=1.25
+  - desc: Predios urbanos y suburbanos con edificación de uso habitacional. Predios distintos al numeral anterior
+- `predios_urbanos_y_suburbanos_comercio_servicios_oficinas_o_uso_industrial` — apar=1, munis=1, años=1, vals=1.7
+  - desc: Predios urbanos y suburbanos destinados a comercios, servicios, oficinas o uso industrial
+- `urbanos_suburbanos_habitacionales_edificacion_interes_social_o_vivienda_popular_y_popular_con_urbanizacion_progresiva` — apar=1, munis=1, años=1, vals=0.5
+  - desc: Urbanos y suburbanos habitacionales: Predios con edificaciones tipificadas como de interés social o vivienda popular y popular con urbanizac
+- `habitacional_interes_social_o_vivienda_popular_con_urbanizacion_progressiva` — apar=1, munis=1, años=1, vals=0.7
+  - desc: Predios con edificaciones tipificadas como de interés social o vivienda popular y popular con urbanización progresiva
+- `habitacional_distinto_con_edificacion_o_cercado` — apar=1, munis=1, años=1, vals=0.9
+  - desc: Predios distintos a los del inciso anterior con edificación o cercados
+- `habitacional_distintos_con_edificacion_o_cercados` — apar=1, munis=1, años=1, vals=0.75
+  - desc: Predios distintos a los del inciso anterior con edificación o cercados
+- `habitacional_distintos_a_interes_social_o_vivienda_popular_con_edificacion_o_cercados` — apar=1, munis=1, años=1, vals=0.9
+  - desc: Predios distintos a los del inciso anterior con edificación o cercados
+- `urbanos_y_suburbanos_uso_industrial_zona_industrial_o_agroindustrial_fuera_de_zona_conurbada` — apar=1, munis=1, años=1, vals=1.04
+  - desc: Urbanos y suburbanos destinados a uso industrial: Predios con edificación o sin ella ubicados en la zona industrial o Agroindustrial fuera d
+- `predios_urbanos_y_suburbanos_con_edificacion_habitacional_primera_tasa` — apar=1, munis=1, años=1, vals=1.1
+  - desc: Predios urbanos y suburbanos con edificación de uso habitacional. Predios cuyo valor no exceda de $230,000.00
+- `predios_urbanos_y_suburbanos_con_edificacion_habitacional_segunda_tasa` — apar=1, munis=1, años=1, vals=1.25
+  - desc: Predios urbanos y suburbanos con edificación de uso habitacional. Predios distintos al numeral anterior
+- `predios_urbanos_y_suburbanos_sin_edificacion_bardeados_y_cercados` — apar=1, munis=1, años=1, vals=1.2
+  - desc: Predios urbanos y suburbanos sin edificación independientemente al uso para que estén destinados. Predios bardeados y cercados con malla y l
+- `predios_urbanos_y_suburbanos_sin_edificacion_sin_bardear` — apar=1, munis=1, años=1, vals=6.0
+  - desc: Predios urbanos y suburbanos sin edificación independientemente al uso para que estén destinados. Predios sin bardear y sin cercado con mall
+- `predios_urbanos_y_suburbanos_destinados_a_comercios_servicios_oficinas_o_industrial` — apar=1, munis=1, años=1, vals=1.7
+  - desc: Predios urbanos y suburbanos destinados a comercios, servicios, oficinas o uso industrial
+- `urbanos_y_suburbanos_comercio_u_oficina` — apar=1, munis=1, años=1, vals=1.664
+  - desc: Urbanos y suburbanos: Predios dedicados a comercio u oficina
+- `urbanos_y_suburbanos_lotes_baldios_cercados` — apar=1, munis=1, años=1, vals=0.13
+  - desc: Urbanos y suburbanos: Lotes baldíos cercados
+- `urbanos_y_suburbanos_lotes_baldios_no_cercados` — apar=1, munis=1, años=1, vals=0.17
+  - desc: Urbanos y suburbanos: Lotes baldíos no cercado
+- `urbanos_y_suburbanos_transicion_de_uso_del_suelo` — apar=1, munis=1, años=1, vals=0.17
+  - desc: Urbanos y suburbanos: Predios en transición de uso del suelo
+- `urbanos_y_suburbanos_habitacionales_no_cercados_o_baldios` — apar=1, munis=1, años=1, vals=1.0
+  - desc: Predios no cercados o baldios
+- `urbanos_suburbanos_destinados_a_uso_industrial_fuera_de_zona_industrial` — apar=1, munis=1, años=1, vals=1.26
+  - desc: Urbanos y suburbanos destinados a uso industrial: Predios con edificación o sin ella ubicados fuera de la zona industrial
+- `habitacional_interes_social_popular_urbanizacion_progresiva` — apar=1, munis=1, años=1, vals=0.55
+  - desc: Predios con edificaciones tipificadas como de Interés social o vivienda popular y popular con urbanización progresiva
+- `industrial_dentro_zona_industrial` — apar=1, munis=1, años=1, vals=0.85
+  - desc: Predios destinados al uso industrial
+- `urbanos_suburbanos_uso_industrial_fuera_de_la_zona_industrial` — apar=1, munis=1, años=1, vals=1.1
+  - desc: Predios destinados al uso industrial fuera de la zona industrial
+- `urbanos_y_suburbanos_zona_industrial_o_agroindustrial_fuera_de_zona_conurbada` — apar=1, munis=1, años=1, vals=1.04
+  - desc: Urbanos y suburbanos destinados a uso industrial: Predios con edificación o sin ella ubicados en la zona industrial o agroindustrial fuera d
+- `predios_urbanos_suburbanos_con_edificacion_habitacional_hasta_230000` — apar=1, munis=1, años=1, vals=1.1
+  - desc: Predios urbanos y suburbanos con edificación de uso habitacional. Predios cuyo valor no exceda de $230,000.00
+- `predios_urbanos_suburbanos_con_edificacion_habitacional_mayor_230000` — apar=1, munis=1, años=1, vals=1.25
+  - desc: Predios urbanos y suburbanos con edificación de uso habitacional. Predios distintos al numeral anterior
+- `predios_urbanos_suburbanos_sin_edificacion_bardeados_cercados_limpios` — apar=1, munis=1, años=1, vals=1.2
+  - desc: Predios urbanos y suburbanos sin edificación independientemente al uso para que estén destinados. Predios bardeados y cercados con malla y l
+- `predios_urbanos_suburbanos_sin_edificacion_sin_bardear_sin_cercado` — apar=1, munis=1, años=1, vals=6.0
+  - desc: Predios urbanos y suburbanos sin edificación independientemente al uso para que estén destinados. Predios sin bardear y sin cercado con mall
+- `predios_urbanos_suburbanos_comercio_servicios_oficinas_industrial` — apar=1, munis=1, años=1, vals=1.7
+  - desc: Predios urbanos y suburbanos destinados a comercios, servicios, oficinas o uso industrial
+- `urbanos_y_suburbanos_comercio` — apar=1, munis=1, años=1, vals=2.0
+  - desc: Urbanos y suburbanos destinados a comercio o servicios: Predios con edificación o sin ella
+- `urbanos_y_suburbanos_habitacionales_interes_social_o_vivienda_popular_con_urbanizacion` — apar=1, munis=1, años=1, vals=0.8
+  - desc: Urbanos y suburbanos habitacionales: Predios con edificaciones tipificadas como de interés social o vivienda popular y popular con urbanizac
+- `urbanos_y_suburbanos_destinados_a_uso_comercial` — apar=1, munis=1, años=1, vals=1.0
+  - desc: Urbanos y suburbanos destinados a uso comercial; predios con edificación o sin ella
+- `urbanos_y_suburbanos_comercio_y_servicios_con_edificacion_o_sin_ella` — apar=1, munis=1, años=1, vals=2.0
+  - desc: Predios con edificación o sin ella
+- `urbanos_suburbanos_comercio` — apar=1, munis=1, años=1, vals=1.18
+  - desc: Urbanos y suburbanos destinados a comercio o servicios. Predios con edificación o sin ella
+- `urbanos_y_suburbanos_habitacionales_con_edificacion_o_cercados_distintos_a_interes_social` — apar=1, munis=1, años=1, vals=0.75
+  - desc: Urbanos y suburbanos habitacionales: Predios distintos a los del inciso anterior con edificación o cercados
+- `habitacional_distintos_a_interes_social_con_edificacion_o_cercados` — apar=1, munis=1, años=1, vals=0.8
+  - desc: Predios distintos a los del inciso anterior con edificación o cercados
+- `comercio_o_servicios_con_o_sin_edificacion` — apar=1, munis=1, años=1, vals=2.0
+  - desc: Predios con edificación o sin ella
+- `urbanos_y_suburbanos_uso_industrial_fuera_de_la_zona_industrial` — apar=1, munis=1, años=1, vals=1.1
+  - desc: Predios destinados al uso industrial fuera de la zona industrial
+- `urbanos_y_suburbanos_habitacionales_distintos_a_interes_social_con_edificacion` — apar=1, munis=1, años=1, vals=0.78
+  - desc: Predios distintos a los del inciso anterior con edificación
+- `urbanos_suburbanos_con_edificacion_habitacional_hasta_230000` — apar=1, munis=1, años=1, vals=1.1
+  - desc: Predios urbanos y suburbanos con edificación de uso habitacional, cuyo valor no exceda de $230,000.00
+- `urbanos_suburbanos_con_edificacion_habitacional_mayor_230000` — apar=1, munis=1, años=1, vals=1.25
+  - desc: Predios urbanos y suburbanos con edificación de uso habitacional, predios distintos al numeral anterior
+- `urbanos_suburbanos_sin_edificacion_bardeados_y_cercados_con_malla_y_limpios` — apar=1, munis=1, años=1, vals=1.2
+  - desc: Predios urbanos y suburbanos sin edificación independientemente al uso para que estén destinados, bardeados y cercados con malla y limpios
+- `urbanos_suburbanos_sin_edificacion_sin_bardear_y_sin_cercado_con_malla` — apar=1, munis=1, años=1, vals=6.0
+  - desc: Predios urbanos y suburbanos sin edificación independientemente al uso para que estén destinados, sin bardear y sin cercado con malla
+- `urbanos_suburbanos_comercios_servicios_oficinas_o_uso_industrial` — apar=1, munis=1, años=1, vals=1.7
+  - desc: Predios urbanos y suburbanos destinados a comercios, servicios, oficinas o uso industrial
+- `urbanos_suburbanos_lotes_baldios_cercado` — apar=1, munis=1, años=1, vals=1.3
+  - desc: Lotes baldíos cercado
+- `urbanos_suburbanos_transicion_de_uso_del_suelo` — apar=1, munis=1, años=1, vals=0.17
+  - desc: Predios en transición de uso del suelo
+- `habitacionales_interes_social_o_vivienda_popular_y_popular_con_urbanizacion_progresiva` — apar=1, munis=1, años=1, vals=0.7
+  - desc: Predios con edificaciones tipificadas como de interés social o vivienda popular y popular con urbanización progresiva
+- `urbanos_y_suburbanos_industrial_zona_industrial_con_edificacion_o_sin_ella` — apar=1, munis=1, años=1, vals=1.0
+  - desc: Urbanos y suburbanos destinados a uso industrial. Predios con edificación o sin ella ubicados en la zona industrial
+- `urbanos_y_suburbanos_industrial_fuera_de_zona_industrial_con_edificacion_o_sin_ella` — apar=1, munis=1, años=1, vals=1.0
+  - desc: Urbanos y suburbanos destinados a uso industrial. Predios con edificación o sin ella ubicados fuera de la zona industrial
+- `urbanos_y_suburbanos_industrial_fuera_de_zona_industrial_o_agroindustrial` — apar=1, munis=1, años=1, vals=2.0
+  - desc: Predios con edificación o sin ella ubicados fuera de en la zona industrial o agroindustrial
+- `habitacional_interes_social_y_vivienda_popular_con_urbanizacion_progresiva` — apar=1, munis=1, años=1, vals=0.8
+  - desc: Predios tipificados como de interés social o vivienda popular y popular con urbanización progresiva
+- `habitacional_otros` — apar=1, munis=1, años=1, vals=1.0
+  - desc: Predios con tipificación distintos a los del inciso anterior
+- `comercio_u_oficina` — apar=1, munis=1, años=1, vals=1.7
+  - desc: Predios dedicados a comercio u oficina
+- `urbanos_suburbanos_comercio_servicios_con_o_sin_edificacion` — apar=1, munis=1, años=1, vals=1.0
+  - desc: Predios con edificación o sin ella
+- `urbanos_y_suburbanos_habitacionales_distintos_a_los_del_inciso_anterior_con_edificacion_o_cercados` — apar=1, munis=1, años=1, vals=0.965
+  - desc: Urbanos y suburbanos habitacionales: Predios distintos a los del inciso anterior con edificación o cercados
+- `habitacional` — apar=1, munis=1, años=1, vals=0.68
+  - desc: Urbanos y suburbanos habitacionales: Predios con edificaciones tipificadas como de interés social o vivienda popular y popular con urbanizac
+- `comercio_servicios` — apar=1, munis=1, años=1, vals=0.6
+  - desc: Urbanos y suburbanos destinados a comercio o servicios: Predios con edificación o sin ella
+- `predios_urbanos_suburbanos_habitacional_1` — apar=1, munis=1, años=1, vals=0.95
+  - desc: Predios urbanos y suburbanos con edificación de uso habitacional cuyo valor no exceda de $230,000.00
+- `predios_urbanos_suburbanos_habitacional_2` — apar=1, munis=1, años=1, vals=1.2
+  - desc: Predios urbanos y suburbanos con edificación de uso habitacional distintos al numeral anterior
+- `predios_urbanos_suburbanos_habitacional_no_cercados` — apar=1, munis=1, años=1, vals=1.7
+  - desc: Predios urbanos y suburbanos con edificación de uso habitacional no cercados
+- `predios_urbanos_suburbanos_comercio_servicios` — apar=1, munis=1, años=1, vals=2.1
+  - desc: Predios urbanos y suburbanos destinados a comercio o servicios, con edificación o sin ella
+- `predios_urbanos_suburbanos_industrial` — apar=1, munis=1, años=1, vals=2.1
+  - desc: Predios urbanos y suburbanos destinados a uso industrial
+- `urbanos_y_suburbanos_comercial_o_industrial_rebasen_325000` — apar=1, munis=1, años=1, vals=2.7
+  - desc: Predios para uso comercial o industrial que rebasen de $ 325,000.00 su valor catastral
+- `urbanos_y_suburbanos_industrial_fuera_zona_industrial_o_agroindustrial` — apar=1, munis=1, años=1, vals=2.0
+  - desc: Predios con edificación o sin ella ubicados fuera de la zona industrial o agroindustrial
+- `urbanos_suburbanos_habitacional_hasta_230000` — apar=1, munis=1, años=1, vals=0.95
+  - desc: Predios urbanos y suburbanos con edificación de uso habitacional cuyo valor no exceda de $230,000.00
+- `urbanos_suburbanos_habitacional_mas_de_230000` — apar=1, munis=1, años=1, vals=1.2
+  - desc: Predios urbanos y suburbanos con edificación de uso habitacional distintos al numeral anterior
+- `urbanos_suburbanos_habitacional_no_cercados` — apar=1, munis=1, años=1, vals=1.7
+  - desc: Predios urbanos y suburbanos con edificación de uso habitacional no cercados
+- `urbanos_y_suburbanos_comercial_o_industrial_que_rebasen_325000_valor_catastral` — apar=1, munis=1, años=1, vals=2.7
+  - desc: Predios para uso comercial o industrial que rebasen de $ 325,000.00 su valor catastral
+- `urbanos_y_suburbanos_habitacionales_interes_social_y_vivienda_popular` — apar=1, munis=1, años=1, vals=0.5
+  - desc: Predios con edificaciones tipificadas como de interés social o vivienda popular y popular con urbanización progresiva
+- `urbanos_y_suburbanos_habitacionales_predios_con_edificaciones_tipificadas_como_de_interes_social_o_vivienda_popular_con_urbanizacion_progresiva` — apar=1, munis=1, años=1, vals=0.5
+  - desc: Urbanos y suburbanos habitacionales. Predios con edificaciones tipificadas como de interés social o vivienda popular con urbanización progre
+- `urbanos_y_suburbanos_destinados_a_uso_industrial_predios_destinados_al_uso_industrial_fuera_de_la_zona_industrial` — apar=1, munis=1, años=1, vals=1.1
+  - desc: Urbanos y suburbanos destinados a uso industrial. Predios destinados al uso industrial fuera de la zona industrial
+- `urbanos_y_suburbanos_habitacionales_con_edificacion_tipificada_como_de_interes_social_o_vivienda_popular_y_popular_con_urbanizacion_progresiva` — apar=1, munis=1, años=1, vals=0.5
+  - desc: Urbanos y suburbanos habitacionales: Predios con edificaciones tipificadas como de interés social o vivienda popular y popular con urbanizac
+- `habitacional_edificado_o_cercado` — apar=1, munis=1, años=1, vals=0.98
+  - desc: Predios distintos a los del inciso anterior con edificación o cercados
+- `urbanos_y_suburbanos_uso_industrial_zona_industrial_o_agroindustrial_fuera_de_conurbada` — apar=1, munis=1, años=1, vals=1.5
+  - desc: Urbanos y suburbanos destinados a uso industrial: Predios con edificación o sin ella ubicados en la zona industrial o agroindustrial fuera d
+- `urbanos_suburbanos_destinados_a_comercio_o_servicios` — apar=1, munis=1, años=1, vals=1.65
+  - desc: Urbanos y suburbanos destinados a comercio o servicios. Predios con edificación o sin ella
+- `urbanos_suburbanos_habitacionales_interes_social_vivienda_popular_urbanizacion_progresiva` — apar=1, munis=1, años=1, vals=1.3
+  - desc: Predios con edificaciones tipificadas como de interés social o vivienda popular y popular con urbanización progresiva
+- `urbanos_y_suburbanos_habitacional_1` — apar=1, munis=1, años=1, vals=0.95
+  - desc: Predios urbanos y suburbanos con edificación de uso habitacional. Predios cuyo valor no exceda de $230,000.00 (incluye los Predios con edifi
+- `urbanos_y_suburbanos_habitacional_2` — apar=1, munis=1, años=1, vals=1.2
+  - desc: Predios urbanos y suburbanos con edificación de uso habitacional. Predios distintos al numeral anterior.
+- `urbanos_y_suburbanos_habitacional_no_cercados` — apar=1, munis=1, años=1, vals=1.7
+  - desc: Predios urbanos y suburbanos con edificación de uso habitacional. Predios no cercados.
+- `urbanos_suburbanos_comercial_o_industrial_que_rebasen_325000_valor_catastral` — apar=1, munis=1, años=1, vals=2.77
+  - desc: Predios para uso comercial o industrial que rebasen de $ 325,000.00 su valor catastral
+- `urbanos_suburbanos_habitacionales_edificados_cercados` — apar=1, munis=1, años=1, vals=0.8
+  - desc: Predios distintos a los del inciso anterior con edificación o cercados
+- `urbanos_suburbanos_comercio_o_servicios_comercio_u_oficina` — apar=1, munis=1, años=1, vals=1.7
+  - desc: Predios dedicados a comercio u oficina
+- `urbanos_suburbanos_comercio_o_servicios_lotes_baldios_cercados` — apar=1, munis=1, años=1, vals=1.3
+  - desc: Lotes baldíos cercados
+- `urbanos_suburbanos_comercio_o_servicios_lotes_baldios_no_cercados` — apar=1, munis=1, años=1, vals=2.0
+  - desc: Lotes baldíos no cercados
+- `urbanos_suburbanos_comercio_o_servicios_predios_en_transicion_de_uso_de_suelo` — apar=1, munis=1, años=1, vals=1.5
+  - desc: Predios en transición de uso de suelo
+- `urbanos_suburbanos_habitacionales_edificado_o_cercado` — apar=1, munis=1, años=1, vals=0.75
+  - desc: Predios distintos a los del inciso anterior con edificación o cercados
+- `urbanos_suburbanos_habitacionales_no_cercado` — apar=1, munis=1, años=1, vals=1.0
+  - desc: Predios no cercados
+- `habitacional_interes_social_vivienda_popular` — apar=1, munis=1, años=1, vals=0.5
+  - desc: Urbanos y suburbanos habitacionales: Predios con edificaciones tipificadas como de interés social o vivienda popular y popular con urbanizac
+- `urbanos_y_suburbanos_habitacionales_otros_con_edificacion_o_cercados` — apar=1, munis=1, años=1, vals=0.75
+  - desc: Predios distintos a los del inciso anterior con edificación o cercados
+- `habitacional_interes_social_o_popular_con_urbanizacion_progresiva` — apar=1, munis=1, años=1, vals=0.65
+  - desc: Predios con edificaciones tipificadas como de interés social o vivienda popular y popular con urbanización progresiva
+- `habitacional_distintos_a_interes_social_o_popular_con_edificacion_o_cercados` — apar=1, munis=1, años=1, vals=0.8
+  - desc: Predios distintos a los del inciso anterior con edificación o cercados
+- `industrial_zona_industrial_con_edificacion_o_sin_ella` — apar=1, munis=1, años=1, vals=2.0
+  - desc: Urbanos y Suburbanos destinados al uso industrial: Predios con edificación o sin ella ubicados en la zona industrial
+- `industrial_fuera_de_zona_industrial_con_edificacion_o_sin_ella` — apar=1, munis=1, años=1, vals=1.85
+  - desc: Urbanos y Suburbanos destinados al uso industrial: Predios con edificación o sin ella ubicados fuera de la zona industrial
+
+### Sonora <a id='tarifa-millar-sonora'></a> — 277 claves
+
+#### grupo: `ejidal` — 1 clave(s)
+
+- `predial_ejidal` — apar=1, munis=1, años=1, vals=0.0
+  - desc: Tratándose del Impuesto Predial sobre predios rústicos ejidales o comunales
+
+#### grupo: `general` — 28 clave(s)
+
+- `general` — apar=9, munis=3, años=7, vals=1.6|1.65|1.345|9.0|9.0
+  - desc: La tasa general del 1.6 al millar sobre el valor catastral de los inmuebles.
+- `tasa_general` — apar=9, munis=4, años=8, vals=9.0|1.37|8.8|5.0|8.8
+  - desc: Tasa general aplicable del impuesto predial sobre el valor catastral de los inmuebles
+- `predios_rurales` — apar=8, munis=1, años=1, vals=1.2542|1.5911|0.2507|1.6023|2.441
+  - desc: Sobre el valor catastral de cada hectárea de los predios rurales
+- `tasa_general_aplicable` — apar=7, munis=3, años=6, vals=9.0|9.0|4.86|4.86|9.0
+  - desc: la tasa general aplicable del Impuesto predial será 9 al millar
+- `predios_rusticos_ejidales_o_comunales` — apar=6, munis=6, años=4, vals=20.0|20.0|0.6995|1.3|420.0
+  - desc: Predios rústicos ejidales o comunales
+- `predios_urbanos_edificados` — apar=3, munis=1, años=1, vals=2.1006|2.2422|2.8881
+  - desc: Predios urbanos edificados: 0.00 a $17,933.00
+- `tasa_general_predial` — apar=3, munis=2, años=3, vals=9.0|8.8|8.8
+  - desc: La tasa general aplicable del Impuesto predial será 9 al millar sobre el valor catastral de los inmuebles.
+- `predios_no_edificados` — apar=3, munis=3, años=3, vals=1.0|5.15|8.2202
+  - desc: el monto anual del impuesto a pagar por los PREDIOS NO EDIFICADOS, será el resultado de aplicar la tasa al valor catastral o comercial según
+- `predial_general` — apar=2, munis=2, años=2, vals=9.0|4.5
+  - desc: Tasa general del impuesto predial sobre el valor catastral de los inmuebles
+- `predios_edificados` — apar=2, munis=2, años=2, vals=1.0|0.0
+  - desc: el monto anual del impuesto a pagar por los PREDIOS EDIFICADOS, será el resultado de aplicar la tasa al valor catastral o comercial según se
+- `tasa_general_predial_rural_urbano_y_rustico` — apar=2, munis=1, años=2, vals=4.86|4.86
+  - desc: La tasa general aplicable del Impuesto predial rural, urbano y rústico será 4.86 al millar sobre el valor catastral de los inmuebles.
+- `inmuebles_caracteristicas_especiales` — apar=2, munis=1, años=2, vals=9.0|9.0
+  - desc: inmuebles de características especiales
+- `predios_urbanos_edificados_rango_1` — apar=1, munis=1, años=1, vals=0.0
+  - desc: Sobre el valor catastral de los predios edificados
+- `predios_urbanos_edificados_rango_2` — apar=1, munis=1, años=1, vals=0.6708
+  - desc: Sobre el valor catastral de los predios edificados
+- `predios_urbanos_edificados_rango_3` — apar=1, munis=1, años=1, vals=1.0878
+  - desc: Sobre el valor catastral de los predios edificados
+- `predios_urbanos_edificados_rango_4` — apar=1, munis=1, años=1, vals=1.1918
+  - desc: Sobre el valor catastral de los predios edificados
+- `predios_urbanos_edificados_rango_5` — apar=1, munis=1, años=1, vals=1.2636
+  - desc: Sobre el valor catastral de los predios edificados
+- `predios_urbanos_edificados_rango_6` — apar=1, munis=1, años=1, vals=1.275
+  - desc: Sobre el valor catastral de los predios edificados
+- `predios_urbanos_edificados_rango_7` — apar=1, munis=1, años=1, vals=1.7378
+  - desc: Sobre el valor catastral de los predios edificados
+- `predios_urbanos_edificados_rango_8` — apar=1, munis=1, años=1, vals=1.7389
+  - desc: Sobre el valor catastral de los predios edificados
+- `predios_urbanos_edificados_rango_9` — apar=1, munis=1, años=1, vals=1.7399
+  - desc: Sobre el valor catastral de los predios edificados
+- `predios_urbanos_edificados_rango_10` — apar=1, munis=1, años=1, vals=1.741
+  - desc: Sobre el valor catastral de los predios edificados
+- `predios_urbanos_edificados_rango_11` — apar=1, munis=1, años=1, vals=1.742
+  - desc: Sobre el valor catastral de los predios edificados
+- `predios_urbanos_no_edificados_rango_1` — apar=1, munis=1, años=1, vals=0.0
+  - desc: Sobre el valor catastral de los predios no edificados
+- `predios_urbanos_no_edificados_rango_2` — apar=1, munis=1, años=1, vals=6.863
+  - desc: Sobre el valor catastral de los predios no edificados
+- `predios_urbanos_no_edificados_rango_3` — apar=1, munis=1, años=1, vals=8.839
+  - desc: Sobre el valor catastral de los predios no edificados
+- `predios_ejidales` — apar=1, munis=1, años=1, vals=330.0
+  - desc: cuota fija de $ 330.00 por hectárea
+- `general_urbano` — apar=1, munis=1, años=1, vals=1.5
+  - desc: tasa general del 1.50 al millar sobre el valor catastral de los inmuebles
+
+#### grupo: `otro` — 7 clave(s)
+
+- `inmuebles_caracteristicas_especiales` — apar=4, munis=2, años=4, vals=9.0|9.0|9.0|9.0
+  - desc: Tratándose de inmuebles de características especiales la tasa del Impuesto predial será del 9 al millar sobre lo que resulte mayor entre el 
+- `predios_rurales_y_agropecuarios` — apar=1, munis=1, años=1, vals=0.51
+  - desc: Predios rurales y edificaciones de los predios rurales; así como predios dentro del programa de desarrollo de área urbana de Ciudad Obregón,
+- `bienes_inmuebles_caracteristicas_especiales` — apar=1, munis=1, años=1, vals=13.0
+  - desc: Bienes inmuebles de características especiales sobre el valor fiscal del inmueble
+- `caracteristicas_especiales` — apar=1, munis=1, años=1, vals=9.0
+  - desc: Inmuebles de características especiales, sobre lo que resulte mayor entre el valor catastral y el valor comercial del inmueble
+- `industrial` — apar=1, munis=1, años=1, vals=1.8360368
+  - desc: Industrial: Que fueron mejorados para industria
+- `inmuebles_de_caracteristicas_especiales` — apar=1, munis=1, años=1, vals=1.0
+  - desc: la tasa del impuesto predial será del 1%, sobre lo que resulte mayor entre el valor catastral y el valor comercial del inmueble
+- `rusticos_y_predios_agricolas_programa_desarrollo_urbano` — apar=1, munis=1, años=1, vals=0.57
+  - desc: Predios rurales y edificaciones de predios rurales, así como predios dentro del programa de desarrollo del área urbana de Ciudad Obregón, co
+
+#### grupo: `rustico` — 215 clave(s)
+
+- `predios_rurales` — apar=278, munis=27, años=11, vals=0.8482|1.4905|1.4837|1.5066|2.2602
+  - desc: Sobre el valor catastral de cada hectárea de los predios rurales
+- `predios_rurales_hectarea` — apar=214, munis=29, años=11, vals=0.9827|1.727|1.9968|1.8512|2.6148
+  - desc: Sobre el valor catastral de cada hectárea de los predios rurales
+- `predios_rurales_terrenos` — apar=111, munis=19, años=8, vals=0.8482|1.7433|1.00734|1.770364|1.762021
+  - desc: Sobre el valor catastral de cada hectárea de los predios rurales
+- `predios_rurales_edificaciones` — apar=103, munis=18, años=8, vals=1.05|0.498|0.52|0.572|0.624
+  - desc: Sobre el valor catastral de las edificaciones de los predios rurales
+- `predios_rurales_terreno` — apar=48, munis=7, años=5, vals=1.00734|1.770364|1.762021|1.789316|2.684386
+  - desc: Sobre el valor catastral de cada hectárea de los predios rurales
+- `edificaciones_predios_rurales` — apar=39, munis=15, años=6, vals=0.0|0.0|1.1934|1.2531|1.3838
+  - desc: Sobre el valor catastral de las edificaciones de los predios rurales
+- `edificaciones_de_predios_rurales` — apar=31, munis=6, años=7, vals=0.0|1.1561|1.2846|1.3487|1.4772
+  - desc: Sobre el valor catastral de las edificaciones de los predios rurales
+- `predios_rusticos` — apar=30, munis=7, años=6, vals=2.0|1.00734|1.770364|1.762021|1.789316
+  - desc: Sobre el valor catastral de predios rústicos
+- `agostadero_3` — apar=30, munis=25, años=10, vals=0.2322|0.2322|0.2322|0.0|0.2322
+  - desc: Agostadero 3: Terrenos que se encuentran en zonas semidesérticas de bajo rendimiento.
+- `agostadero_2` — apar=27, munis=23, años=9, vals=1.4733|1.4733|1.5175|1.4733|1.5175
+  - desc: Agostadero 2: Terrenos que fueron mejorados para pastoreo en base a técnicas.
+- `agostadero_1` — apar=25, munis=22, años=10, vals=1.1613|1.16|1.1613|1.1981|1.1613
+  - desc: Agostadero 1: Terrenos con praderas naturales.
+- `predios_rusticos_ejidales_o_comunales` — apar=24, munis=14, años=8, vals=0.0|0.74|4.92|1.2|0.5
+  - desc: Tratándose del Impuesto Predial sobre predios rústicos ejidales o comunales, la tarifa aplicable será de $235 por hectárea.
+- `riego_de_bombeo_1` — apar=22, munis=17, años=10, vals=1.4837|1.4837|1.4837|2.2602|1.4837
+  - desc: Riego de bombeo 1: Terrenos con riego mecánico con pozo de poca profundidad (100 pies máximo).
+- `predios_rurales_por_hectarea` — apar=22, munis=5, años=4, vals=0.8482|1.4906|1.4837|0.5066|2.2602
+  - desc: Sobre el valor catastral de cada hectárea de los predios rurales
+- `predios_rurales_zonas_homogeneas` — apar=22, munis=1, años=3, vals=0.7|0.7|0.7|0.7|0.7
+  - desc: Para predios rurales en base a los valores de tierra por zonas homogéneas
+- `riego_de_bombeo_2` — apar=21, munis=17, años=10, vals=1.5068|1.5086|1.4733|1.1613|1.5066
+  - desc: Riego de bombeo 2: Terrenos con riego mecánico con pozo profundo (más de 100 pies).
+- `riego_de_gravedad_2` — apar=20, munis=16, años=10, vals=1.4906|1.4906|1.4906|1.4837|1.4906
+  - desc: Riego de gravedad 2: Terrenos con derecho a agua de presa o río irregularmente aún dentro del Distrito de Riego.
+- `riego_de_temporal_unica` — apar=18, munis=14, años=11, vals=2.2602|0.2322|1.4733|2.2602|2.328
+  - desc: Riego de temporal única: Terrenos que dependen para su irrigación de la eventualidad de precipitaciones.
+- `predios_rurales_riego_de_gravedad_2` — apar=17, munis=13, años=6, vals=1.4906|1.4906|1.5502|1.6122|1.823512
+  - desc: Riego de Gravedad 2
+- `predios_rurales_riego_de_bombeo_1` — apar=17, munis=13, años=6, vals=1.4837|1.4837|1.543|1.6047|1.814963
+  - desc: Riego de Bombeo-I
+- `predios_rurales_riego_de_bombeo_2` — apar=16, munis=13, años=6, vals=1.5066|1.5066|1.5669|1.6296|1.843082
+  - desc: Riego de Bombeo 2
+- `predios_rusticos_hectarea` — apar=16, munis=1, años=1, vals=1.0876|1.4735|3.9026|1.9321|2.8984
+  - desc: Sobre el valor catastral de cada hectárea de los predios rurales
+- `predios_rurales_hectarea_valor_catastral` — apar=16, munis=1, años=1, vals=0.9827|1.727|1.9968|1.8512|2.6148
+  - desc: Sobre el valor catastral de cada hectárea de los predios rurales
+- `predios_rurales_agostadero_1` — apar=15, munis=14, años=8, vals=0.2322|1.1613|1.2078|1.420473|1.4411
+  - desc: Agostadero 1: terrenos con praderas naturales
+- `predios_rurales_agostadero_2` — apar=15, munis=14, años=8, vals=0.382|1.4733|1.5322|1.802191|1.8285
+  - desc: Agostadero 2: terrenos que mejorados para pastoreo en base a técnicas
+- `predios_rurales_agostadero_3` — apar=15, munis=14, años=8, vals=0.2322|1.2322|0.2415|0.284074|0.2884
+  - desc: Agostadero 3: terrenos que se encuentran en zonas semidesérticas de bajo rendimiento
+- `predios_rurales_riego_de_gravedad_1` — apar=14, munis=10, años=6, vals=0.8482|0.8482|0.8821|0.9174|1.0528
+  - desc: Riego de Gravedad 1
+- `predios_rusticos_rurales` — apar=14, munis=1, años=1, vals=0.97335|1.710521|1.702487|1.728855|2.593643
+  - desc: Sobre el valor catastral de cada hectárea de los predios rurales, conforme a la siguiente
+- `predios_rurales_construcciones` — apar=14, munis=2, años=2, vals=2.0386|2.0985|2.1585|2.4584|2.5898
+  - desc: Sobre el valor catastral de las edificaciones de los predios rurales
+- `predios_rurales_riego_de_temporal_unica` — apar=12, munis=11, años=6, vals=2.2602|2.2602|2.4446|2.764829|2.8051
+  - desc: Riego de temporal Única
+- `predios_rusticos_terrenos` — apar=12, munis=1, años=1, vals=1.037622|1.823512|1.814963|1.843082|2.764829
+  - desc: Riego de gravedad 1
+- `riego_de_gravedad_1` — apar=11, munis=9, años=6, vals=0.8482|0.8482|0.8482|0.8821|0.8821
+  - desc: Riego de gravedad 1: Terrenos dentro del Distrito de Riego con derecho a agua de presa regularmente.
+- `forestal_unica` — apar=10, munis=9, años=7, vals=0.382|0.38|0.382|0.382|0.3935
+  - desc: Forestal única: Terrenos poblados de árboles en espesura tal que no es aprovechable como agrícolas ni agostaderos.
+- `agostadero_de_1` — apar=10, munis=8, años=7, vals=0.2322|0.14906|1.1613|1.2078|1.43444392
+  - desc: Agostadero de 1: terreno con praderas naturales.
+- `agostadero_de_2` — apar=10, munis=8, años=7, vals=1.5066|0.5066|0.4733|1.5322|1.81964744
+  - desc: Agostadero de 2: terreno que fueron mejorados para pastoreo en base a técnicas.
+- `agostadero_de_3` — apar=10, munis=8, años=7, vals=0.2322|0.2322|0.2322|0.2415|0.28686736
+  - desc: Agostadero de 3: terrenos que se encuentran en zonas semidesérticas de bajo rendimiento.
+- `minero_1` — apar=10, munis=8, años=6, vals=0.8482|0.5066|1.6049|1.555|3.5669
+  - desc: Minero 1
+- `rural_categoria` — apar=10, munis=1, años=1, vals=0.973247|1.710418|1.702487|1.728855|2.59354
+  - desc: Riego de Gravedad 1: terrenos dentro del distrito de Riego con derecho de agua de presa regularmente.
+- `predios_rurales_tierra` — apar=10, munis=2, años=1, vals=1.7433|1.079062608|1.896413917|1.887476895|1.91671553
+  - desc: Sobre el valor catastral de cada hectárea de los predios rurales
+- `predios_rurales_cada_hectarea` — apar=10, munis=2, años=2, vals=1.11576899|1.218167728|2.140886187|2.130797068|2.163804715
+  - desc: Sobre el valor catastral de cada hectárea de los predios rurales
+- `predios_rusticos_edificaciones` — apar=8, munis=2, años=2, vals=0.0|1.4464|1.5933|1.7515|1.8871
+  - desc: Sobre el valor catastral de las edificaciones de los predios rurales
+- `riegos_y_agostaderos` — apar=7, munis=1, años=1, vals=0.8482|1.4906|1.4837|1.5066|2.2602
+  - desc: Sobre el valor catastral de cada hectárea de los predios rurales
+- `riego_por_gravedad_2` — apar=7, munis=6, años=6, vals=1.5502|1.770364|1.84117856|1.896413917|2.080506402
+  - desc: Riego por gravedad 2: Terreno con derecho a agua de presa o río irregularmente aun dentro de distrito de riego.
+- `riego_por_bombeo_2` — apar=7, munis=7, años=5, vals=1.5669|1.789316|1.916715299|2.10277852|2.11090584
+  - desc: Riego por Bombeo 2: Terrenos con riego mecánico con pozo profundo (más de 100 pies)
+- `predios_rurales_con_edificacion` — apar=7, munis=1, años=1, vals=1.193358|1.253098|1.383805|1.503182|1.599693
+  - desc: Sobre el valor catastral de las edificaciones de los predios rurales
+- `edificaciones_rurales` — apar=7, munis=1, años=1, vals=1.2411|1.3032|1.4392|1.5633|1.6637
+  - desc: Sobre el valor catastral de las edificaciones de los predios rurales
+- `predios_rurales_hectarea_agostadero_1` — apar=7, munis=6, años=4, vals=1.43444392|1.42062544|1.491821677|1.74940195|1.512832154
+  - desc: Agostadero de 1: terreno con praderas naturales
+- `predios_rurales_hectarea_agostadero_2` — apar=7, munis=6, años=4, vals=1.81964744|1.802294|1.892433338|2.21918388|1.919369459
+  - desc: Agostadero de 2: terrenos que fueron mejorados para pastoreo en base a técnicas.
+- `predios_rurales_hectarea_agostadero_3` — apar=7, munis=6, años=4, vals=0.28686736|0.28408224|0.298342054|0.34985426|0.302544491
+  - desc: Agostadero de 3: Terrenos que se encuentran en zonas semidesérticas de bajo rendimiento
+- `riego_por_bombeo_1` — apar=6, munis=6, años=4, vals=1.543|1.762021|2.070701827|2.096098527|2.121054426
+  - desc: Riego por Bombeo 1: Terrenos con riego mecánico con pozo de poca profundidad (100 pies máximo)
+- `riego_por_temporal_unica` — apar=5, munis=4, años=5, vals=2.3506|2.684386|2.79176144|2.875514283|3.154651957
+  - desc: Riego por Temporal Única: Terreno que dependen para su irrigación de la eventualidad de precipitaciones.
+- `predios_rurales_riego_temporal_unica` — apar=5, munis=4, años=4, vals=2.3506|2.990534855|2.990534855|3.09221304|3.09221304
+  - desc: Riego de temporal Única
+- `predios_rurales_ubicaciones` — apar=5, munis=1, años=1, vals=0.0|1.0316|1.1357|1.3542|1.3524
+  - desc: Sobre el valor catastral de las ubicaciones de los predios rurales
+- `predios_rurales_hectarea_riego_de_gravedad_2` — apar=5, munis=5, años=4, vals=1.84117856|1.914825702|1.896422744|1.94207675|2.24544252
+  - desc: Riego de Gravedad 2: Terrenos con derecho a agua de presa o ria irregularmente aun dentro del distrito de Riego.
+- `predios_rurales_hectarea_riego_de_bombeo_1` — apar=5, munis=5, años=4, vals=1.83250184|1.905801914|1.887587229|1.932971894|2.23486067
+  - desc: Riego de Bombeo 1: Terrenos con riego mecánico con pozo de poca profundidad (100 pies máximos).
+- `predios_rurales_hectarea_riego_de_bombeo_2` — apar=5, munis=5, años=4, vals=1.86088864|1.935324186|1.916732952|1.962919192|2.2694803
+  - desc: Riego de Bombeo 2: Terrenos con riego mecánico con pozo profundo (más de 100 pies).
+- `cinegetico_unica` — apar=4, munis=3, años=3, vals=1.4733|1.183811532|1.206795997|1.206795997
+  - desc: Cinegético Única
+- `agostadero` — apar=4, munis=2, años=2, vals=1.244|1.3793|1.7497|0.2758
+  - desc: Agostadero
+- `predios_rurales_minero_1` — apar=4, munis=3, años=3, vals=1.832782|1.86088864|1.974335919|2.228053089
+  - desc: Minero 1: Terrenos con aprovechamiento metálico y no metálico.
+- `predios_rurales_hectarea_riego_de_temporal_unica` — apar=4, munis=4, años=3, vals=2.79176144|2.903431878|2.944598182|3.40474301
+  - desc: Riego de temporal Única: Terreno que depende de para su irrigación de la eventualidad de precipitaciones.
+- `predios_rurales_riego` — apar=4, munis=1, años=1, vals=1.291246326|2.269170861|2.258760656|2.293672931
+  - desc: Sobre el valor catastral de cada hectárea de los predios rurales: Riego por gravedad 1
+- `riego_gravedad_2` — apar=3, munis=3, años=3, vals=1.4906|1.5968|1.5893
+  - desc: Riego de gravedad 2: Terrenos con derecho a agua de presa o río irregularmente aún dentro del Distrito de Riego.
+- `riego_bombeo_1` — apar=3, munis=3, años=3, vals=1.4837|1.5893|1.5893
+  - desc: Riego de bombeo 1: Terrenos con riego mecánico con pozo de poca profundidad (100 pies máximo).
+- `riego_bombeo_2` — apar=3, munis=3, años=3, vals=1.5066|1.6139|1.6139
+  - desc: Riego de bombeo 2: Terrenos con riego mecánico con pozo profundo (más de 100 pies).
+- `riego_temporal_unica` — apar=3, munis=3, años=3, vals=2.2602|2.4211|2.4212
+  - desc: Riego de temporal única: Terrenos que dependen para su irrigación de la eventualidad de precipitaciones.
+- `predios_no_edificados` — apar=3, munis=3, años=2, vals=0.0|8.2823742|3.12242564
+  - desc: Tratándose de Predios No Edificados y sobretasas
+- `riego_por_gravedad_1` — apar=3, munis=3, años=3, vals=0.8821|1.00734|1.206795997
+  - desc: Riego por gravedad 1: Terreno dentro de distrito de riego con derecho a agua de presa regularmente.
+- `predial_ejidal` — apar=3, munis=3, años=3, vals=9.0|0.0|0.0
+  - desc: Impuesto predial sobre predios rústicos ejidales o comunales, sobre el valor catastral de los inmuebles
+- `predios_rurales_hectarea_riego_bombeo_1` — apar=3, munis=3, años=3, vals=1.81504128|2.23486067|2.075672385
+  - desc: Riego de bombeo 1: Terrenos con riego mecánico con pozo de poca profundidad (100 pies máximo).
+- `predios_rurales_hectarea_riego_bombeo_2` — apar=3, munis=3, años=3, vals=1.8429996|2.2694803|2.107707703
+  - desc: Riego de bombeo 2: Terrenos con riego mecánico con pozo profundo (más de 100 pies).
+- `predios_rurales_hectarea_riego_temporal_unica` — apar=3, munis=3, años=3, vals=2.76487432|3.40474301|3.16203465
+  - desc: Riego de temporal única: Terrenos que dependen para su irrigación de la eventualidad de precipitaciones.
+- `predios_rurales_riego_gravedad_1` — apar=3, munis=2, años=2, vals=1.122225112|1.122225112|1.160380766
+  - desc: Riego de Gravedad 1: terrenos dentro del distrito de Riego con derecho de agua de presa regularmente.
+- `predios_rurales_riego_gravedad_2` — apar=3, munis=2, años=2, vals=1.972270473|1.972270473|2.039327669
+  - desc: Riego de Gravedad 2: Terrenos con derecho a agua de presa o rio incgularmente aun dentro del distrito de Riego.
+- `predios_rurales_riego_bombeo_1` — apar=3, munis=2, años=2, vals=1.962975971|1.962975971|2.029717154
+  - desc: Riego de Bombeo 1: Tenenos con riego mecánico con pozo de poca profundidad (100 pies máximos).
+- `predios_rurales_riego_bombeo_2` — apar=3, munis=2, años=2, vals=1.993383912|1.993383912|2.061158965
+  - desc: Riego de Bombeo 2: Tenenos con riego mecánico con pozo profundo (más de 100 pies).
+- `predios_rurales_agostadero_de_1` — apar=3, munis=3, años=2, vals=1.477366904|1.734038064|1.756736986
+  - desc: Agostadero de 1: terreno con praderas naturales
+- `predios_rurales_agostadero_de_2` — apar=3, munis=3, años=2, vals=1.87439133|2.199694167|2.228838731
+  - desc: Agostadero de 2: terreno que fueron mejorados para pastoreo en base a técnicas
+- `predios_rurales_agostadero_de_3` — apar=3, munis=3, años=2, vals=0.295358634|0.346781714|0.351210952
+  - desc: Agostadero de 3: Terrenos que se encuentran en zonas semidesérticas de bajo rendimiento
+- `predios_rurales_agostadero` — apar=3, munis=1, años=1, vals=1.768084514|2.243018393|0.353566121
+  - desc: Agostadero 1
+- `riego_por_bombeo_4` — apar=3, munis=3, años=1, vals=2.143605323|2.143605323|2.143605323
+  - desc: Riego por bombeo 4: terrenos con riego mecánico
+- `riego_por_goteo_1` — apar=3, munis=3, años=1, vals=2.096098527|2.096098527|2.096098527
+  - desc: Riego por goteo 1: terrenos de riego por goteo para vid
+- `riego_por_goteo_2` — apar=3, munis=3, años=1, vals=1.206795997|1.206795997|1.206795997
+  - desc: Riego por goteo 2: terrenos de riego por goteo para hortalizas
+- `industrial_1` — apar=3, munis=3, años=1, vals=2.120900776|2.120900776|2.120900776
+  - desc: Industrial 1: terrenos que fueron mejorados para la industria
+- `industrial_2` — apar=3, munis=3, años=1, vals=2.11090584|2.11090584|2.11090584
+  - desc: Industrial 2: terrenos mejorados para industria minera
+- `industrial_3` — apar=3, munis=3, años=1, vals=2.143605323|2.143605323|2.143605323
+  - desc: Industrial 3: praderas naturales con aprovechamiento metálico y no metálico
+- `industrial_4` — apar=3, munis=3, años=1, vals=2.120900776|2.120900776|2.120900776
+  - desc: Industrial 4: terrenos mejorados para la industria
+- `acuicola_de_1` — apar=2, munis=1, años=2, vals=1.5066|1.860905779
+  - desc: Acuicola de 1: terreno con topografía irregular localizado en un estero o bahía muy pequeña.
+- `acuicola_de_2` — apar=2, munis=1, años=2, vals=1.5054|1.859457517
+  - desc: Acuicola de 2: Estanques de tierra con canal de llenado y canal de desagüe, circulación de agua, agua controlada.
+- `acuicola_de_3` — apar=2, munis=1, años=2, vals=2.2568|2.787570906
+  - desc: Acuicola de 3: Estanques con recirculación de agua pasada por filtros, Agua de pozo con agua de mar.
+- `predios_rurales_forestal_unica` — apar=2, munis=2, años=2, vals=0.382|0.43984296
+  - desc: Forestal única: terrenos poblados de árboles en espesura tal, que no es aprovechable como agrícolas, ni agostaderos
+- `riego_gravedad_1` — apar=2, munis=2, años=2, vals=0.9086|1.5893
+  - desc: Riego de gravedad 1: Terrenos dentro del Distrito de Riego con derecho a agua de presa regularmente
+- `mineria_1` — apar=2, munis=2, años=2, vals=0.8821|1.00734
+  - desc: Minería 1: que fueron mejoradas para Industria minera con riego mecánico, pozo profundo
+- `mineria_2` — apar=2, munis=2, años=2, vals=0.8821|1.00734
+  - desc: Minería 2: Que fueron mejorados para industria minera sin derecho a agua de presa
+- `agostadero_4` — apar=2, munis=2, años=2, vals=2.6062|0.330449865
+  - desc: Agostadero de 4: terreno con praderas naturales.
+- `predios_rurales_hectarea_riego_gravedad_1` — apar=2, munis=2, años=2, vals=1.03767144|1.27766045
+  - desc: Riego de gravedad 1: Terrenos dentro del Distrito de Riego con derecho a agua de presa regularmente.
+- `predios_rurales_hectarea_riego_gravedad_2` — apar=2, munis=2, años=2, vals=1.82350376|2.24544252
+  - desc: Riego de gravedad 2: Terrenos con derecho a agua de presa o río irregularmente aún dentro del Distrito de Riego.
+- `predios_rurales_hectarea_forestal_unica` — apar=2, munis=2, años=2, vals=0.46736456|0.53446266
+  - desc: Forestal única: Terrenos poblados de árboles en espesura tal, que no es aprovechable como agrícola, ni agostaderos.
+- `predios_rurales_riego_de_temporal` — apar=2, munis=2, años=2, vals=2.79176144|3.374841312
+  - desc: Riego de temporal Única: Terreno que depende de para su irrigación de la eventualidad de precipitaciones
+- `predios_rurales_hectarea_riego_de_gravedad_1` — apar=2, munis=2, años=2, vals=1.079080261|1.27766045
+  - desc: Riego de Gravedad 1
+- `tasa_rustica_anterior` — apar=1, munis=1, años=1, vals=1.4733
+  - desc: técnicas.
+- `agricola_2_pies_de_profundidad` — apar=1, munis=1, años=1, vals=1.48
+  - desc: Agrícola 2: de poca profundidad
+- `agricola_riego_de_bombeo` — apar=1, munis=1, años=1, vals=1.56
+  - desc: Riego de bombeo 2: Terrenos con riego mecánico con pozo profundo
+- `temporal_unica` — apar=1, munis=1, años=1, vals=2.26
+  - desc: Temporal única: Terrenos que deben a su irrigación la eventualidad de precipitaciones
+- `predios_rusticos_y_edificaciones_rusticas` — apar=1, munis=1, años=1, vals=0.8482
+  - desc: Sobre el valor catastral de cada hectárea de los predios rústicos y sobre el valor catastral de las edificaciones de los predios rurales.
+- `riesgo_gravedad_1` — apar=1, munis=1, años=1, vals=0.8482
+  - desc: Riego de Gravedad 1: terrenos dentro del distrito de Riego con derecho de agua de presa regularmente.
+- `predios_ejidales_agropecuarios` — apar=1, munis=1, años=1, vals=20.0
+  - desc: Tratándose del Impuesto Predial sobre predios rústicos ejidales o comunales, aprovechados para la producción agropecuaria.
+- `predios_rurales_y_edificaciones_rurales` — apar=1, munis=1, años=1, vals=1.05
+  - desc: Para el caso de los predios rurales y de las edificaciones de los predios rurales, así como de los predios que se encuentren dentro del prog
+- `rural` — apar=1, munis=1, años=1, vals=0.8482
+  - desc: Sobre el valor catastral de cada hectárea de los predios rurales
+- `predios_rurales_hectarea_2` — apar=1, munis=1, años=1, vals=1.4906
+  - desc: Sobre el valor catastral de cada hectárea de los predios rurales
+- `predios_rurales_edificaciones_2` — apar=1, munis=1, años=1, vals=1.144
+  - desc: Sobre el valor catastral de las edificaciones de los predios rurales
+- `predios_rurales_edificaciones_3` — apar=1, munis=1, años=1, vals=1.258
+  - desc: Sobre el valor catastral de las edificaciones de los predios rurales
+- `predios_rurales_edificaciones_4` — apar=1, munis=1, años=1, vals=1.352
+  - desc: Sobre el valor catastral de las edificaciones de los predios rurales
+- `predios_rurales_edificaciones_5` — apar=1, munis=1, años=1, vals=1.383
+  - desc: Sobre el valor catastral de las edificaciones de los predios rurales
+- `predios_rurales_edificaciones_6` — apar=1, munis=1, años=1, vals=1.404
+  - desc: Sobre el valor catastral de las edificaciones de los predios rurales
+- `predios_rurales_edificaciones_7` — apar=1, munis=1, años=1, vals=1.612
+  - desc: Sobre el valor catastral de las edificaciones de los predios rurales
+- `riegio_por_gravedad_1` — apar=1, munis=1, años=1, vals=0.8737
+  - desc: Riego por gravedad 1: Terreno con derecho a agua; terreno de aluvión o barrial con camino transitable, de topografía plana.
+- `riegio_por_gravedad_2` — apar=1, munis=1, años=1, vals=1.5354
+  - desc: Riego por gravedad 2: Terreno con derecho a agua; terreno de aluvión arenoso, con camino transitable, de topografía de regular a accidentada
+- `riegio_por_bombeo_1` — apar=1, munis=1, años=1, vals=1.5282
+  - desc: Riego por Bombeo 1: Terrenos con riego mecánico con pozo de poca profundidad (100 pies máximo)
+- `riegio_por_bombeo_2` — apar=1, munis=1, años=1, vals=1.5518
+  - desc: Riego por Bombeo 2: Terrenos con riego mecánico con pozo profundo (mas de 100 pies)
+- `riegio_por_temporal_unica` — apar=1, munis=1, años=1, vals=2.328
+  - desc: Riego por Temporal Única: Terrenos con camino transitable, de topografía regular, depende su irrigación de la eventualidad de precipitacione
+- `cornisa_unica` — apar=1, munis=1, años=1, vals=0.2392
+  - desc: Cornisa Única: Terrenos accidentados.
+- `mineros_unica` — apar=1, munis=1, años=1, vals=1.9399
+  - desc: Mineros única: Terrenos con aprovechamiento metálico y no metálico.
+- `minero_2` — apar=1, munis=1, años=1, vals=1.4906
+  - desc: Minero 2
+- `minero_3` — apar=1, munis=1, años=1, vals=1.4837
+  - desc: Minero 3
+- `predios_rurales_terrenos_dentro_del_distrito_de_riego` — apar=1, munis=1, años=1, vals=0.8482
+  - desc: Terrenos dentro del Distrito de Riego (riego de gravedad o cualquier agua de presa)
+- `predios_rurales_terrenos_de_otro_tipo_de_riego` — apar=1, munis=1, años=1, vals=1.4906
+  - desc: Terrenos de otro tipo de riego
+- `predios_rurales_terrenos_que_dependen_regaderas` — apar=1, munis=1, años=1, vals=1.4837
+  - desc: Terrenos que dependen de regaderas
+- `predios_rurales_terrenos_de_riego_regularmente` — apar=1, munis=1, años=1, vals=1.5066
+  - desc: Terrenos de riego regularmente
+- `predios_rurales_terrenos_de_riego_mecanico_pozo_poca_profundidad` — apar=1, munis=1, años=1, vals=2.2602
+  - desc: Riego de bombeo 1: terrenos con riego mecánico con pozo de poca profundidad (100 pies máximo)
+- `predios_rurales_terrenos_de_riego_mecanico_pozo_profundo` — apar=1, munis=1, años=1, vals=1.1613
+  - desc: Riego de bombeo 2: terrenos con riego mecánico con pozo profundo (más de 100 pies)
+- `predios_rurales_terrenos_de_riego_temporal_unica` — apar=1, munis=1, años=1, vals=1.4733
+  - desc: Riego de temporal única: terrenos que dependen para su irrigación de la eventualidad de precipitaciones
+- `predios_rurales_valores_tierra_zonas_homogeneas` — apar=1, munis=1, años=1, vals=1.0
+  - desc: Para los valores de tierra en zonas homogéneas de predios rurales se aplicará la siguiente tarifa
+- `terreno_semidesertico_dentro_limite_centro_poblacion_f031_f021_f034` — apar=1, munis=1, años=1, vals=1.5
+  - desc: TERRENO SEMIDESÉRTICO DENTRO DEL LIMITE DE CENTRO DE POBLACIÓN F031, F021, F034
+- `terreno_semidesertico_dentro_limite_centro_poblacion_f022_f033_f032_f121_f134` — apar=1, munis=1, años=1, vals=2.7
+  - desc: TERRENO SEMIDESÉRTICO DENTRO DEL LIMITE DE CENTRO DE POBLACIÓN F022, F033, F032, F121, F134
+- `terreno_agricola_riego_gravedad_2da_categoria_f111_f123_f124` — apar=1, munis=1, años=1, vals=1.5
+  - desc: TERRENO AGRICOLA RIEGO POR GRAVEDAD DE 2RA. CATEGORÍA F111, F123, F124
+- `terreno_semidesertico_bajo_rendimiento_6700_f13_f121_f122_f14_a01_613_633_f22_f23_f33_f341_f342_f344_a11` — apar=1, munis=1, años=1, vals=0.5
+  - desc: TERRENO SEMIDESÉRTICO DE BAJO RENDIMIENTO 6700 F13, F121, F122, F14, A01 (613,633) F22, F23, F33, F341, F342, F344, A11
+- `terreno_semidesertico_aledano_al_mar_f331_f332_f334_f233_hasta_500_mts_del_mar` — apar=1, munis=1, años=1, vals=2.2
+  - desc: TERRENO SEMIDESÉRTICO ALEDAÑO AL MAR. F331 F332, F334,F233 (Hasta 500 mts. Del mar)
+- `terreno_semidesertico_aledano_al_mar_f343_f342_f222_hasta_500_mts_del_mar` — apar=1, munis=1, años=1, vals=2.2
+  - desc: TERRENO SEMIDESÉRTICO ALEDAÑO AL MAR. F343 , F342, F222 (Hasta 500 mts. Del mar)
+- `terreno_agricola_riego_gravedad_2da_categoria_1611_1612` — apar=1, munis=1, años=1, vals=2.0
+  - desc: TERRENO AGRÍCOLA RIEGO POR GRAVEDAD DE 2DA. CATEGORÍA 1611,1612
+- `terreno_agricola_dentro_de_limites_del_centro_de_poblacion_f024_f021_f034` — apar=1, munis=1, años=1, vals=1.5
+  - desc: TERRENO AGRICOLA DENTRO DE LIMITES DEL CENTRO DE POBLACION F024, F021 F034
+- `agostadero_1_1` — apar=1, munis=1, años=1, vals=1.1961
+  - desc: Agostadero 1.1: Terrenos con praderas naturales
+- `predios_rurales_y_area_desarrollo_cuidad_obregon` — apar=1, munis=1, años=1, vals=1.1
+  - desc: Predios rurales y edificaciones de predios rurales, así como predios dentro del programa de desarrollo del área urbana de Ciudad Obregón, en
+- `riego_de_temporal` — apar=1, munis=1, años=1, vals=2.3506
+  - desc: Riego de temporal Única: terreno que depende de la eventualidad de precipitaciones para su irrigación
+- `terrenos_deserticas_bajo_rendimiento` — apar=1, munis=1, años=1, vals=0.2487
+  - desc: Terrenos que se encuentran en zonas desérticas de bajo rendimiento
+- `riego_de_gravedad_4` — apar=1, munis=1, años=1, vals=0.978
+  - desc: Riego de Gravedad 4: terrenos dentro del distrito de riego con derecho de agua de presa regularmente.
+- `riego_de_temporada_unica` — apar=1, munis=1, años=1, vals=2.1733
+  - desc: Riego de temporada única: Terrenos que dependen de la eventualidad de precipitaciones.
+- `predios_rurales_agricolas_ganaderos` — apar=1, munis=1, años=1, vals=0.55
+  - desc: predios rurales y de las edificaciones de los predios rurales, ... utilizados para actividades agrícolas o ganaderas
+- `predios_rurales_riego_y_agostadero` — apar=1, munis=1, años=1, vals=0.0
+  - desc: Sobre el valor catastral de cada hectárea de los predios rurales
+- `predios_rurales_cada_hectarea_riego_de_gravedad_1` — apar=1, munis=1, años=1, vals=0.9404
+  - desc: Riego de Gravedad 1: terrenos dentro del distrito de Riego con derecho de agua de presa regularmente.
+- `predios_rurales_cada_hectarea_riego_de_gravedad_2` — apar=1, munis=1, años=1, vals=1.6527
+  - desc: Riego de Gravedad 2: Terrenos con derecho a agua de presa o río irregularmente aun dentro del distrito de Riego.
+- `predios_rurales_cada_hectarea_riego_de_bombeo_1` — apar=1, munis=1, años=1, vals=1.645
+  - desc: Riego de Bombeo 1: Terrenos con riego mecánico con pozo de poca profundidad (100 pies máximos).
+- `predios_rurales_cada_hectarea_riego_de_bombeo_2` — apar=1, munis=1, años=1, vals=1.6704
+  - desc: Riego de Bombeo 2: Terrenos con riego mecánico con pozo profundo (más de 100 pies).
+- `predios_rurales_cada_hectarea_agostadero_1` — apar=1, munis=1, años=1, vals=1.2875
+  - desc: Agostadero de 1: terreno con praderas naturales.
+- `predios_rurales_cada_hectarea_agostadero_2` — apar=1, munis=1, años=1, vals=1.6335
+  - desc: Agostadero de 2: terreno que fueron mejorados para pastoreo en base a técnicas.
+- `predios_rurales_cada_hectarea_agostadero_3` — apar=1, munis=1, años=1, vals=0.2574
+  - desc: Agostadero de 3: Terrenos que se encuentran en zonas semidesérticas de bajo rendimiento.
+- `predios_rurales_cada_hectarea_acuicola_1` — apar=1, munis=1, años=1, vals=1.6704
+  - desc: Acuícola de 1: terreno con topografía irregular localizado en un estero o bahía muy pequeña.
+- `predios_rurales_cada_hectarea_acuicola_2` — apar=1, munis=1, años=1, vals=1.6691
+  - desc: Acuícola de 2: Estanques de tierra con canal de llenado y canal de desagüe, circulación de agua, agua controlada.
+- `predios_rurales_cada_hectarea_acuicola_3` — apar=1, munis=1, años=1, vals=2.5022
+  - desc: Acuícola de 3: Estanques con recirculación de agua pasada por filtros, Agua de pozo con agua de mar.
+- `predios_rurales_sub_urbano_carreteras` — apar=1, munis=1, años=1, vals=1.843082
+  - desc: Sub-Urbano: Terrenos colindantes a carreteras
+- `predios_rurales_sub_urbano_centro_poblacion` — apar=1, munis=1, años=1, vals=1.832782
+  - desc: Sub-Urbano: Terrenos cercanos a centro de población. Con acceso camino pavimentado.
+- `predios_rurales_sub_urbano_casco_urbano` — apar=1, munis=1, años=1, vals=2.764829
+  - desc: Sub-Urbano: Terrenos colindantes al casco urbano
+- `predios_rurales_y_edificaciones_rurales_agricolas_o_ganaderas` — apar=1, munis=1, años=1, vals=0.57
+  - desc: predios rurales y de las edificaciones de los predios rurales, así como de los predios que se encuentren dentro del programa de desarrollo d
+- `predios_rurales_agostadero_4` — apar=1, munis=1, años=1, vals=7.2457
+  - desc: Agostadero 4
+- `predios_rurales_agostadero_5` — apar=1, munis=1, años=1, vals=2.4444
+  - desc: Agostadero 5
+- `predios_rurales_acuicola_1` — apar=1, munis=1, años=1, vals=1.8699
+  - desc: Acuicola 1
+- `predios_rurales_acuicola_2` — apar=1, munis=1, años=1, vals=1.8684
+  - desc: Acuicola 2
+- `predios_rurales_acuicola_3` — apar=1, munis=1, años=1, vals=2.8009
+  - desc: Acuicola 3: Estanques con circulación de agua pasada por filtros. Agua de pozo con agua de mar.
+- `predios_rusticos_rurales_hectarea` — apar=1, munis=1, años=1, vals=1.0
+  - desc: Sobre el valor catastral de cada hectárea de los predios rurales
+- `predios_rurales_ejidales_o_comunales` — apar=1, munis=1, años=1, vals=1.0
+  - desc: predios rústicos ejidales o comunales
+- `predios_rurales_hectarea_minero_1` — apar=1, munis=1, años=1, vals=1.78933248
+  - desc: Minero 1: terrenos con aprovechamiento metálico y no metálico.
+- `predios_rusticos_ejidales_comunales` — apar=1, munis=1, años=1, vals=2.0
+  - desc: Predios rústicos ejidales o comunales
+- `predial_ejidal_distrito_de_riego_con_derecho_a_agua_de_presa_regularmente` — apar=1, munis=1, años=1, vals=4.1925
+  - desc: Distrito de riego con derecho a agua de presa regularmente
+- `predial_ejidal_con_riego_de_agua_de_presa_o_rio_irregularmente_aun_dentro_de_distritos` — apar=1, munis=1, años=1, vals=3.9512
+  - desc: Con riego de agua de presa o río irregularmente aun dentro de distritos
+- `predial_ejidal_agostadero_praderas_naturales` — apar=1, munis=1, años=1, vals=1.2
+  - desc: Agostadero: Praderas Naturales
+- `predios_rurales_cinegetico` — apar=1, munis=1, años=1, vals=1.0476336
+  - desc: Cinegético Única: Zona semidesérticas, cerril, con bajíos y arroyos e instalaciones rústicas de abrevadero
+- `industrial_minero_1` — apar=1, munis=1, años=1, vals=1.84117856
+  - desc: Industrial Minero 1: Que fueron mejorados para industria minera con derecho a agua de presa regularmente
+- `industrial_minero_2` — apar=1, munis=1, años=1, vals=1.83250184
+  - desc: Industrial Minero 2: Que fueron mejorados para industria minera
+- `industrial_minero_3` — apar=1, munis=1, años=1, vals=1.86088864
+  - desc: Industrial Minero 3: Praderas naturales para uso minero
+- `predios_rusticos_ejidales_o_comunales_edificados` — apar=1, munis=1, años=1, vals=1.0
+  - desc: predios rústicos, ejidales o comunales, predios edificados, aplicar al valor catastral la tasa del 1%
+- `predios_rusticos_ejidales_o_comunales_no_edificados` — apar=1, munis=1, años=1, vals=1.0
+  - desc: predios rústicos, ejidales o comunales, predios no edificados, aplicar al valor catastral la tasa del 1%
+- `predios_rurales_mineral_1` — apar=1, munis=1, años=1, vals=1.86088864
+  - desc: Mineral 1: Terrenos con aprovechamiento metálico y no metálico
+- `predios_rurales_actividad_agricola_ganadera` — apar=1, munis=1, años=1, vals=0.57
+  - desc: predios rurales y edificaciones de predios rurales, así como predios dentro del programa de desarrollo del área urbana... utilizados para ac
+- `predios_rurales_hectarea_riego_de_temporal` — apar=1, munis=1, años=1, vals=2.875443669
+  - desc: Riego de temporal
+- `predios_rurales_hectarea_agostadero_de_1` — apar=1, munis=1, años=1, vals=1.477366904
+  - desc: Agostadero de 1
+- `predios_rurales_hectarea_agostadero_de_2` — apar=1, munis=1, años=1, vals=1.87439133
+  - desc: Agostadero de 2
+- `predios_rurales_hectarea_agostadero_de_3` — apar=1, munis=1, años=1, vals=0.295358634
+  - desc: Agostadero de 3
+- `predios_rurales_riego_de_bombeo` — apar=1, munis=1, años=1, vals=1.916732952
+  - desc: Riego de Bombeo: Terrenos con riego mecánico con pozo profundo (más de 100 pies)
+- `predios_rurales_de_temporal_unica` — apar=1, munis=1, años=1, vals=2.990534855
+  - desc: Riego de temporal Única: Terreno que depende de para su irrigación de la eventualidad de precipitaciones.
+- `riegodegravedad_1` — apar=1, munis=1, años=1, vals=1.206772268
+  - desc: Riego de Gravedad 1: terrenos dentro del distrito de Riego con derecho de agua de presa regularmente.
+- `riegodegravedad_2` — apar=1, munis=1, años=1, vals=2.120720431
+  - desc: Riego de Gravedad 2: Terrenos con derecho a agua de presa o irrregularmente aun dentro del distrito de Riego.
+- `riegodebombeo_1` — apar=1, munis=1, años=1, vals=2.110991267
+  - desc: Riego de Bombeo 1: Terrenos con riego mecánico con pozo de poca profundidad (100 pies máximos).
+- `riegodebombeo_2` — apar=1, munis=1, años=1, vals=2.143619561
+  - desc: Riego de Bombeo 2: Terrenos con riego mecánico con pozo profundo (más de 100 pies).
+- `riegodetemporal_unica` — apar=1, munis=1, años=1, vals=3.21584461
+  - desc: Riego de temporal Única: Terreno que depende para su irrigación de la eventualidad de precipitaciones.
+- `industrial_minera_1` — apar=1, munis=1, años=1, vals=1.83546
+  - desc: Industrial minera 1: Terrenos con explotación metálico y no metálico
+- `industrial_minera_2` — apar=1, munis=1, años=1, vals=1.71621072
+  - desc: Industrial minera 2: Terrenos de reserva para explotación minera
+- `industrial_minera_3` — apar=1, munis=1, años=1, vals=1.69629876
+  - desc: Industrial minera 3: Terrenos o praderas naturales con vocación minera
+- `predios_no_edificados_2` — apar=1, munis=1, años=1, vals=4.02268704
+  - desc: Sobre el valor catastral de los predios no edificados
+- `predios_rurales_temporal` — apar=1, munis=1, años=1, vals=3.440953732
+  - desc: Riego por Temporal Única
+- `predios_rurales_hectarea_minero_unica` — apar=1, munis=1, años=1, vals=1.951949486
+  - desc: Minero única: Terrenos con aprovechamiento metálico y no metálico
+- `predios_rurales_hectarea_sub_urbano_carreteras` — apar=1, munis=1, años=1, vals=1.962919192
+  - desc: Sub-Urbano: Terrenos colindantes a carreteras
+- `predios_rurales_hectarea_sub_urbano_casco_urbano` — apar=1, munis=1, años=1, vals=2.944598182
+  - desc: Sub-Urbano: Terrenos colindantes al casco urbano
+- `predios_rurales_terrenos_riego_de_gravedad_2` — apar=1, munis=1, años=1, vals=1.71621072
+  - desc: Riego de Gravedad 2: Terrenos con derecho a agua de presa o río irregularmente aun dentro del distrito de riego.
+- `predios_rurales_terrenos_riego_de_bombeo_1` — apar=1, munis=1, años=1, vals=1.70820144
+  - desc: Riego de Bombeo 1: Terrenos con riego mecánico con pozo de poca profundidad (100 pies máximos).
+- `predios_rurales_terrenos_riego_de_bombeo_2` — apar=1, munis=1, años=1, vals=1.73456532
+  - desc: Riego de Bombeo 2: Terrenos con riego mecánico con pozo profundo (más de 100 pies de profundidad).
+- `predios_rurales_terrenos_de_temporal_unica` — apar=1, munis=1, años=1, vals=2.60223732
+  - desc: Riego de Temporal Única: Terreno que depende de la eventualidad de precipitaciones.
+- `predios_rurales_industrial_minero_1` — apar=1, munis=1, años=1, vals=1.83546
+  - desc: Industrial minero 1: Terrenos con explotación metálica y no metálica.
+- `predios_rurales_industrial_minero_2` — apar=1, munis=1, años=1, vals=1.71621072
+  - desc: Industrial minero 2: Terrenos de reserva para explotación minera.
+- `predios_rurales_industrial_minero_3` — apar=1, munis=1, años=1, vals=1.69629876
+  - desc: Industrial minero 3: Terrenos o praderas naturales con vocación minera.
+- `predios_rurales_hectarea_riego_2` — apar=1, munis=1, años=1, vals=2.085404633
+  - desc: Riego por gravedad 2: Terreno con derecho a agua de presa o río irregularmente aun dentro de distrito de riego
+- `riego_por_bombeo_3` — apar=1, munis=1, años=1, vals=2.143605323
+  - desc: Riego por bombeo 3: terrenos con riego mecánico con pozo profundo (más de 100 pies)
+- `acuicola_1` — apar=1, munis=1, años=1, vals=1.86090578
+  - desc: Acuícola 1: Terreno con topografía irregular localizado en un estero o bahía muy pequeña.
+- `acuicola_2` — apar=1, munis=1, años=1, vals=1.85945752
+  - desc: Acuícola 2: Estanques de tierra con canal de llenado y canal de desagüe, circulación de agua o agua controlada.
+- `acuicola_3` — apar=1, munis=1, años=1, vals=2.78757091
+  - desc: Acuícola 3: Estanques con recirculación de agua pasada por filtros, agua de pozo con agua de mar.
+- `rieg0_por_gravedad_2` — apar=1, munis=1, años=1, vals=2.226945815
+  - desc: Riego por gravedad 2
+- `cinetico_unica` — apar=1, munis=1, años=1, vals=1.206795997
+  - desc: Cinegético única
+
+#### grupo: `urbano` — 26 clave(s)
+
+- `predios_edificados` — apar=77, munis=23, años=10, vals=0.0|0.0|0.341|0.4196|0.5064
+  - desc: Sobre el valor catastral de los predios edificados
+- `predios_no_edificados` — apar=35, munis=23, años=11, vals=1.8918|2.4367|2.1986|2.8319|0.0
+  - desc: Sobre el valor catastral de los predios no edificados
+- `predios_edificados_primera_rango` — apar=1, munis=1, años=1, vals=1.105
+  - desc: De $0.01 a $38,000.00
+- `predios_edificados_segunda_rango` — apar=1, munis=1, años=1, vals=2.7654
+  - desc: $38,000.01 a $76,000.00
+- `predios_edificados_tercera_rango` — apar=1, munis=1, años=1, vals=3.562
+  - desc: $76,000.01 a $144,400.00
+- `edificaciones_en_predios_rurales` — apar=1, munis=1, años=1, vals=0.936
+  - desc: Sobre el valor catastral de las edificaciones de los predios rurales
+- `predios_rurales_edificaciones` — apar=1, munis=1, años=1, vals=1.508
+  - desc: Sobre el valor catastral de las edificaciones de los predios rurales
+- `predios_edificados_rango_2` — apar=1, munis=1, años=1, vals=2.0119
+  - desc: Sobre el valor catastral de los predios edificados
+- `predios_edificados_rango_3` — apar=1, munis=1, años=1, vals=2.013
+  - desc: Sobre el valor catastral de los predios edificados
+- `predios_edificados_rango_4` — apar=1, munis=1, años=1, vals=2.0143
+  - desc: Sobre el valor catastral de los predios edificados
+- `predios_edificados_rango_5` — apar=1, munis=1, años=1, vals=2.0155
+  - desc: Sobre el valor catastral de los predios edificados
+- `predios_edificados_rango_6` — apar=1, munis=1, años=1, vals=2.0168
+  - desc: Sobre el valor catastral de los predios edificados
+- `predios_edificados_rango_7` — apar=1, munis=1, años=1, vals=2.018
+  - desc: Sobre el valor catastral de los predios edificados
+- `predios_edificados_rango_8` — apar=1, munis=1, años=1, vals=2.0193
+  - desc: Sobre el valor catastral de los predios edificados
+- `predios_edificados_rango_9` — apar=1, munis=1, años=1, vals=2.0205
+  - desc: Sobre el valor catastral de los predios edificados
+- `predios_edificados_rango_10` — apar=1, munis=1, años=1, vals=2.0218
+  - desc: Sobre el valor catastral de los predios edificados
+- `predios_edificados_rango_11` — apar=1, munis=1, años=1, vals=2.023
+  - desc: Sobre el valor catastral de los predios edificados
+- `predios_no_edificados_rango_2` — apar=1, munis=1, años=1, vals=6.161
+  - desc: Sobre el valor catastral de los predios no edificados
+- `predios_no_edificados_rango_3` — apar=1, munis=1, años=1, vals=6.7273
+  - desc: Sobre el valor catastral de los predios no edificados
+- `predios_construidos_urbanos` — apar=1, munis=1, años=1, vals=0.0
+  - desc: Sobre el valor catastral de los predios construidos conforme a las siguientes tarifas
+- `predios_baldios_cumplidos` — apar=1, munis=1, años=1, vals=13.5
+  - desc: Respecto de tasas para predios baldíos
+- `predios_baldios_incumplidos` — apar=1, munis=1, años=1, vals=15.0
+  - desc: Respecto de tasas para predios baldíos
+- `predios_construidos` — apar=1, munis=1, años=1, vals=0.0
+  - desc: Sobre el valor catastral de los predios construidos conforme a las siguientes tarifas
+- `predios_baldios_cumplido` — apar=1, munis=1, años=1, vals=13.5
+  - desc: Respecto de tasas para predios baldíos conforme a la tabla siguiente: tasa cumplido
+- `predios_baldios_incumplido` — apar=1, munis=1, años=1, vals=15.0
+  - desc: Respecto de tasas para predios baldíos conforme a la tabla siguiente: tasa incumplido
+- `predios_baldios_incumplido_otro_rango` — apar=1, munis=1, años=1, vals=16.0
+  - desc: Respecto de tasas para predios baldíos conforme a la tabla siguiente: tasa incumplido
+
+### Tamaulipas <a id='tarifa-millar-tamaulipas'></a> — 204 claves
+
+#### grupo: `general` — 28 clave(s)
+
+- `predios_urbanos_suburbanos_rusticos` — apar=15, munis=4, años=14, vals=0.002|0.0015|0.0015|0.002|0.002
+  - desc: Predios urbanos, suburbanos y rústicos
+- `comercio_y_oficinas` — apar=5, munis=1, años=5, vals=0.002|0.002|0.002|0.002|0.002
+  - desc: Comercio y Oficinas
+- `espectaculos_y_entretenimiento` — apar=5, munis=1, años=5, vals=0.002|0.002|0.002|0.002|0.002
+  - desc: Dedicados al Servicio de Espectáculos y Entretenimiento
+- `templos_religiosos` — apar=5, munis=1, años=5, vals=0.0005|0.0005|0.0005|0.0005|0.0005
+  - desc: Templos Religiosos
+- `industrial_y_otros` — apar=5, munis=1, años=5, vals=0.0029|0.0029|0.0029|0.0029|0.0029
+  - desc: Industrial y otros
+- `hoteles_moteles_hospitales` — apar=3, munis=1, años=3, vals=0.002|0.002|0.002
+  - desc: Hoteles, Moteles y Hospitales
+- `habitacional` — apar=3, munis=1, años=3, vals=0.0017|0.0017|0.0017
+  - desc: Habitacional
+- `predios_urbanos_suburbanos_y_rusticos` — apar=2, munis=2, años=2, vals=0.0015|0.0015
+  - desc: Tasa anual para predios urbanos, suburbanos y rústicos sobre el valor catastral
+- `habitacional_residencial` — apar=2, munis=1, años=2, vals=0.0017|0.0017
+  - desc: Habitacional Residencial
+- `hoteles_moteles_y_hospitales` — apar=2, munis=1, años=2, vals=0.002|0.002
+  - desc: Hoteles, Moteles y Hospitales
+- `escuelas_edificios_u_oficinas_gubernamentales` — apar=2, munis=1, años=2, vals=0.002|0.002
+  - desc: Escuelas, Edificios u Oficinas Gubernamentales
+- `predios_urbanos_sin_edificaciones_contiguos_a_bulevares_y_avenidas_principales` — apar=2, munis=1, años=2, vals=0.002|0.002
+  - desc: Predios urbanos sin edificaciones contiguos a los bulevares y avenidas principales
+- `predios_rusticos` — apar=2, munis=2, años=2, vals=0.0015|0.0016
+  - desc: Predios rústicos
+- `casa_hogar_filantropicos` — apar=2, munis=1, años=2, vals=0.00025|0.00025
+  - desc: Las casa hogar o predios con fines filantrópicos, dedicados a la atención de la orfandad
+- `casa_hogar_o_predios_filantrópicos` — apar=1, munis=1, años=1, vals=0.00025 ⚠ slugify_sug=`casa_hogar_o_predios_filantropicos`
+  - desc: Las casa hogar o predios con fines filantrópicos, dedicados a la atención de la orfandad
+- `escuelas_gubernamentales` — apar=1, munis=1, años=1, vals=0.002
+  - desc: Escuelas, Edificios u Oficinas Gubernamentales
+- `predios_urbanos_sin_edificaciones_contiguos_bulevares_avenidas_principales` — apar=1, munis=1, años=1, vals=0.002
+  - desc: Predios urbanos sin edificaciones contiguos a los bulevares y avenidas principales
+- `rusticos` — apar=1, munis=1, años=1, vals=0.0015
+  - desc: Predios rústicos
+- `casa_hogar_o_predios_con_fines_filantripicos` — apar=1, munis=1, años=1, vals=0.00025
+  - desc: Las casa hogar o predios con fines filantrópicos, dedicados a la atención de la orfandad
+- `predios_urbanos_con_edificaciones` — apar=1, munis=1, años=1, vals=0.0016
+  - desc: Predios urbanos con edificaciones
+- `predios_suburbanos_con_edificaciones` — apar=1, munis=1, años=1, vals=0.0016
+  - desc: Predios suburbanos con edificaciones
+- `predios_urbanos_y_suburbanos_sin_edificaciones` — apar=1, munis=1, años=1, vals=0.0016
+  - desc: Predios urbanos y suburbanos sin edificaciones (baldíos)
+- `predios_urbanos_de_uso_industrial` — apar=1, munis=1, años=1, vals=0.0016
+  - desc: Predios urbanos de uso industrial
+- `escuelas_y_gobierno` — apar=1, munis=1, años=1, vals=0.002
+  - desc: Escuelas, Edificios u Oficinas Gubernamentales
+- `urbanos_sin_edificacion_en_bulevares_y_avenidas_principales` — apar=1, munis=1, años=1, vals=0.002
+  - desc: Predios urbanos sin edificaciones contiguos a los bulevares y avenidas principales
+- `escuelas_y_gubernamentales` — apar=1, munis=1, años=1, vals=0.002
+  - desc: Escuelas, Edificios u Oficinas Gubernamentales
+- `urbanos_sin_edificaciones_contiguos_bulevares_avenidas_principales` — apar=1, munis=1, años=1, vals=0.002
+  - desc: Predios urbanos sin edificaciones contiguos a los bulevares y avenidas principales
+- `casa_hogar_o_filantropicos` — apar=1, munis=1, años=1, vals=0.00025
+  - desc: Las casa hogar o predios con fines filantrópicos, dedicados a la atención de la orfandad
+
+#### grupo: `industrial` — 2 clave(s)
+
+- `industrial_y_otros` — apar=2, munis=1, años=2, vals=0.0029|0.0029
+  - desc: Industrial y otros
+- `predios_urbanos_de_uso_industrial` — apar=2, munis=2, años=2, vals=0.003|0.003
+  - desc: Predios urbanos de uso industrial
+
+#### grupo: `otro` — 34 clave(s)
+
+- `predios_suburbanos_con_edificaciones` — apar=39, munis=18, años=16, vals=0.0015|0.0015|0.0015|0.0025|0.0015
+  - desc: Predios suburbanos con edificaciones
+- `industrial_y_otros` — apar=9, munis=1, años=9, vals=0.0029|0.0029|0.0029|0.0029|0.0029
+  - desc: Industrial y otros
+- `predios_urbanos_de_uso_industrial` — apar=9, munis=7, años=6, vals=0.003|0.0015|0.003|0.003|0.003
+  - desc: Predios urbanos de uso industrial
+- `instituciones_asociaciones_sociales` — apar=7, munis=1, años=7, vals=0.0|0.0|0.0|0.0|0.0
+  - desc: Predios de instituciones o asociaciones sociales para atención de grupos vulnerables, personas en extrema pobreza, en rehabilitación y simil
+- `predios_suburbanos_y_rusticos` — apar=5, munis=1, años=5, vals=0.0015|0.0015|0.0015|0.0015|0.0015
+  - desc: Predios suburbanos y rústicos
+- `casas_hogar_o_predios_filantropicos` — apar=3, munis=1, años=3, vals=0.00025|0.00025|0.00025
+  - desc: Las casas hogar o predios con fines filantrópicos, dedicados a la atención de la orfandad
+- `suburbano_con_edificaciones` — apar=3, munis=3, años=2, vals=0.001|0.0015|0.0015
+  - desc: Predios suburbanos con edificaciones
+- `instituciones_asociaciones_sociales_vulnerables` — apar=2, munis=1, años=2, vals=0.0|0.0
+  - desc: Predios de instituciones o asociaciones sociales constituidas para la atención de grupos vulnerables, de personas en extrema pobreza, en reh
+- `casa_hogar_filantropicos` — apar=2, munis=1, años=2, vals=0.00025|0.00025
+  - desc: Las casa hogar o predios con fines filantrópicos, dedicados a la atención de la orfandad
+- `casa_hogar_filantropicos_orfandad` — apar=2, munis=1, años=2, vals=0.00025|0.00025
+  - desc: Las casa hogar o predios con fines filantrópicos, dedicados a la atención de la orfandad
+- `suburbanos_con_edificaciones` — apar=2, munis=2, años=2, vals=0.0015|0.002
+  - desc: Predios suburbanos con edificaciones
+- `predios_urbanos_uso_industrial` — apar=2, munis=1, años=2, vals=0.003|3.0
+  - desc: Predios urbanos uso industrial
+- `instituciones_sociales_vulnerables` — apar=2, munis=1, años=2, vals=0.0|0.0
+  - desc: Predios de instituciones o asociaciones sociales para atención de grupos vulnerables, personas en extrema pobreza, en rehabilitación y simil
+- `predios_suburbanos` — apar=1, munis=1, años=1, vals=1.5
+  - desc: Predios suburbanos
+- `predios_de_instituciones_o_asociaciones_sociales_vulnerables` — apar=1, munis=1, años=1, vals=0.0
+  - desc: Predios de instituciones o asociaciones sociales constituidas para la atención de grupos vulnerables, de personas en extrema pobreza, en reh
+- `predios_rusticos` — apar=1, munis=1, años=1, vals=0.0015
+  - desc: Predios rústicos sobre el valor catastral
+- `casas_hogar_o_filantropicos` — apar=1, munis=1, años=1, vals=0.00025
+  - desc: Las casas hogar o predios con fines filantrópicos, dedicados a la atención de la orfandad
+- `templos_religiosos` — apar=1, munis=1, años=1, vals=0.0005
+  - desc: Templos Religiosos
+- `instituciones_o_asociaciones_sociales_vulnerables` — apar=1, munis=1, años=1, vals=0.0
+  - desc: Predios de instituciones o asociaciones sociales constituidas para la atención de grupos vulnerables, de personas en extrema pobreza, en reh
+- `rurales` — apar=1, munis=1, años=1, vals=0.0015
+  - desc: Predios rústicos sobre el valor catastral
+- `predios_urbanos_no_edificados` — apar=1, munis=1, años=1, vals=0.003
+  - desc: Predios urbanos no edificados: aumento del 100% sobre la tasa del artículo 10
+- `predios_urbanos_con_edificacion_inferior_a_la_quinta_parte_del_terreno` — apar=1, munis=1, años=1, vals=0.00225
+  - desc: Predios urbanos cuya edificación tenga un valor inferior a la quinta parte del valor del terreno: aumento del 50% sobre la tasa del artículo
+- `instituciones_o_asociaciones_sociales` — apar=1, munis=1, años=1, vals=0.0
+  - desc: Predios de instituciones o asociaciones sociales constituidas para la atención de grupos vulnerables, personas en extrema pobreza, en rehabi
+- `casa_hogar_o_predios_filantropicos` — apar=1, munis=1, años=1, vals=0.00025
+  - desc: Las casa hogar o predios con fines filantrópicos, dedicados a la atención de la orfandad
+- `urbanos_uso_industrial` — apar=1, munis=1, años=1, vals=1.6
+  - desc: Predios urbanos de uso industrial
+- `casa_hogar_filantripicos` — apar=1, munis=1, años=1, vals=0.00025
+  - desc: Las casa hogar o predios con fines filantrópicos, dedicados a la atención de la orfandad
+- `predios_urbanos_y_suburbanos_sin_edificaciones_baldios` — apar=1, munis=1, años=1, vals=0.003
+  - desc: Predios urbanos y suburbanos sin edificaciones (baldíos)
+- `predios_urbanos_con_edificacion_inferior_a_quinta_parte_del_terreno` — apar=1, munis=1, años=1, vals=0.00225
+  - desc: Predios urbanos cuya edificación tenga un valor inferior a la quinta parte del valor del terreno; la tasa del artículo se aumenta en 50%
+- `baldio_urbano` — apar=1, munis=1, años=1, vals=0.003
+  - desc: Predios urbanos baldíos
+- `predios_instituciones_asociaciones_sociales_grupos_vulnerables` — apar=1, munis=1, años=1, vals=0.0
+  - desc: Predios de instituciones o asociaciones sociales constituidas para la atención de grupos vulnerables, de personas en extrema pobreza, en reh
+- `predios_urbanos_baldios` — apar=1, munis=1, años=1, vals=0.003
+  - desc: Predios urbanos baldíos sobre valor catastral
+- `predios_suburbanos_de_uso_industrial` — apar=1, munis=1, años=1, vals=0.003
+  - desc: Predio suburbanos de uso industrial
+- `predios_instituciones_asociaciones_sociales` — apar=1, munis=1, años=1, vals=0.0
+  - desc: Predios de instituciones o asociaciones sociales constituidas para la atención de grupos vulnerables, de personas en extrema pobreza, en reh
+- `predios_suburbanos_uso_industrial` — apar=1, munis=1, años=1, vals=0.003
+  - desc: Predios suburbanos de uso industrial
+
+#### grupo: `rural` — 2 clave(s)
+
+- `predios_rusticos` — apar=2, munis=2, años=2, vals=0.0015|0.0015
+  - desc: Predios rústicos
+- `rustico` — apar=1, munis=1, años=1, vals=0.0015
+  - desc: Predios rústicos
+
+#### grupo: `rustico` — 14 clave(s)
+
+- `predios_rusticos` — apar=443, munis=36, años=16, vals=0.0015|0.0018|0.0015|0.0015|1.5
+  - desc: Predios rústicos
+- `rustico` — apar=56, munis=16, años=15, vals=0.001|0.0015|0.0015|0.001|0.0015
+  - desc: Predios rústicos sobre valor catastral
+- `rusticos` — apar=32, munis=21, años=13, vals=2.5|0.0007|0.0015|0.001|0.001
+  - desc: Predios rústicos
+- `predios_suburbanos_y_rusticos` — apar=11, munis=1, años=11, vals=0.0015|0.0015|0.0015|0.0015|0.0015
+  - desc: Predios suburbanos y rústicos
+- `rustico_general` — apar=5, munis=3, años=3, vals=0.001|0.0015|0.0007|1.0|0.0015
+  - desc: Predios rústicos sobre valor catastral
+- `predio_rustico` — apar=2, munis=1, años=2, vals=0.0015|0.0015
+  - desc: Predios rústico
+- `rustico_agostadero_primera` — apar=1, munis=1, años=1, vals=0.0016
+  - desc: Predios rústicos uso agostadero de primera
+- `rustico_agostadero_segunda` — apar=1, munis=1, años=1, vals=0.0016
+  - desc: Predios rústicos uso agostadero de segunda
+- `rustico_agostadero_tercera` — apar=1, munis=1, años=1, vals=0.0016
+  - desc: Predios rústicos uso agostadero de tercera
+- `rustico_riego` — apar=1, munis=1, años=1, vals=0.0007
+  - desc: Predios rústicos uso de riego
+- `rustico_temporal` — apar=1, munis=1, años=1, vals=0.0007
+  - desc: Predios rústicos uso temporal
+- `rustico_pastizal` — apar=1, munis=1, años=1, vals=0.0007
+  - desc: Predios rústicos uso de pastizal
+- `agostadero_primera_segunda_tercera` — apar=1, munis=1, años=1, vals=0.0016
+  - desc: Predios rústicos uso agostadero de primera, segunda y tercera.
+- `riego_temporal_pastizal` — apar=1, munis=1, años=1, vals=0.0007
+  - desc: Predios rústicos de uso de riego, uso de temporal y uso de pastizal.
+
+#### grupo: `rústico` — 2 clave(s)
+
+- `rustico` — apar=8, munis=5, años=7, vals=0.0015|0.0015|0.0015|0.0015|0.0015
+  - desc: Predios rústicos
+- `predios_rusticos` — apar=6, munis=4, años=6, vals=0.0015|0.0015|0.0015|0.0015|0.0015
+  - desc: Predios rústicos sobre valor catastral
+
+#### grupo: `urbano` — 122 clave(s)
+
+- `predios_urbanos_con_edificaciones` — apar=309, munis=24, años=16, vals=0.0015|0.0015|1.5|0.0025|0.0015
+  - desc: Predios urbanos con edificaciones
+- `predios_suburbanos_con_edificaciones` — apar=270, munis=24, años=16, vals=0.0015|1.5|0.0025|0.0015|0.002
+  - desc: Predios suburbanos con edificaciones
+- `predios_urbanos_y_suburbanos_sin_edificaciones_baldios` — apar=246, munis=24, años=16, vals=0.003|0.002|1.5|0.005|0.004
+  - desc: Predios urbanos y suburbanos sin edificaciones (baldíos)
+- `predios_urbanos_y_suburbanos` — apar=113, munis=17, años=16, vals=0.0015|0.001|0.0015|0.001|0.0015
+  - desc: Predios urbanos y suburbanos
+- `predios_urbanos_de_uso_industrial` — apar=69, munis=12, años=14, vals=0.003|0.003|0.002|0.003|0.002
+  - desc: Predios urbanos de uso industrial
+- `predios_urbanos_y_suburbanos_sin_edificacion_baldios` — apar=45, munis=17, años=13, vals=0.003|0.003|0.003|0.003|0.003
+  - desc: Predios urbanos y suburbanos sin edificaciones (baldíos)
+- `predios_urbanos_uso_industrial` — apar=42, munis=10, años=13, vals=0.003|0.003|0.003|0.0016|0.0045
+  - desc: Predios urbanos de uso industrial
+- `urbanos_con_edificaciones` — apar=24, munis=18, años=13, vals=1.46|0.0015|0.0015|0.0015|0.0015
+  - desc: Predios urbanos con edificaciones
+- `predios_urbanos` — apar=22, munis=4, años=16, vals=0.002|0.0015|0.002|1.5|0.002
+  - desc: Predios urbanos
+- `suburbanos_con_edificaciones` — apar=22, munis=16, años=13, vals=1.46|0.0015|0.0015|0.0015|0.0015
+  - desc: Predios suburbanos con edificaciones
+- `predios_urbanos_no_edificados` — apar=18, munis=6, años=10, vals=0.003|0.00225|0.003|0.0032|0.00225
+  - desc: Predios urbanos no edificados: la tasa señalada se aumenta en 100%
+- `habitacional` — apar=18, munis=2, años=15, vals=0.001|0.001|0.002|0.001|0.001
+  - desc: Urbano y suburbano habitacional
+- `urbano_suburbano` — apar=15, munis=8, años=8, vals=0.0015|0.0015|0.0015|0.001|0.0015
+  - desc: Predios urbanos y suburbanos
+- `comercial_e_industrial` — apar=15, munis=1, años=15, vals=0.0015|0.0015|0.0015|0.0015|1.5
+  - desc: Urbano y suburbano comercial e industrial
+- `urbano_y_suburbano` — apar=12, munis=7, años=10, vals=0.0016|0.001|0.0015|0.0015|0.0015
+  - desc: Predios urbanos y suburbanos
+- `habitacional_residencial` — apar=11, munis=1, años=11, vals=0.0017|0.0017|0.0017|0.0017|0.0017
+  - desc: Habitacional Residencial
+- `comercio_y_oficinas` — apar=11, munis=1, años=11, vals=0.002|0.002|0.002|0.002|0.002
+  - desc: Comercio y Oficinas
+- `espectaculos_y_entretenimiento` — apar=11, munis=1, años=11, vals=0.002|0.002|0.002|0.002|0.002
+  - desc: Dedicados al Servicio de Espectáculos y Entretenimiento
+- `urbanos_y_suburbanos_sin_edificaciones_baldios` — apar=10, munis=8, años=9, vals=2.92|0.003|0.002|0.002|0.002
+  - desc: Predios urbanos y suburbanos sin edificaciones (baldíos)
+- `hoteles_moteles_hospitales` — apar=9, munis=1, años=9, vals=0.002|0.002|0.002|0.002|0.002
+  - desc: Hoteles, Moteles y Hospitales
+- `predios_urbanos_con_edificacion_inferior_a_quinta_parte_del_terreno` — apar=9, munis=6, años=6, vals=0.00225|0.0024|0.00225|0.00225|0.00225
+  - desc: Predios urbanos cuya edificación tenga un valor inferior a la quinta parte del valor del terreno
+- `urbanos_y_suburbanos_sin_edificacion_baldios` — apar=9, munis=8, años=6, vals=0.002|0.0015|0.003|0.0025|1.6
+  - desc: Predios urbanos y suburbanos sin edificaciones (baldíos)
+- `urbanos_uso_industrial` — apar=9, munis=5, años=5, vals=0.002|0.003|0.003|0.0015|0.003
+  - desc: Predios urbanos de uso industrial
+- `predios_urbanos_sin_edificaciones_contiguos_a_bulevares_y_avenidas_principales` — apar=7, munis=1, años=7, vals=0.002|0.002|0.002|0.002|0.002
+  - desc: Predios urbanos sin edificaciones contiguos a los bulevares y avenidas principales
+- `urbanos_y_suburbanos` — apar=7, munis=6, años=5, vals=0.001|0.001|0.001|0.0015|0.0015
+  - desc: Predios urbanos y suburbanos
+- `templos_religiosos` — apar=7, munis=1, años=7, vals=0.0005|0.0005|0.0005|0.0005|0.0005
+  - desc: Templos Religiosos
+- `urbano_uso_industrial` — apar=7, munis=5, años=5, vals=0.0015|0.002|0.003|2.0|0.002
+  - desc: Predios urbanos de uso industrial
+- `urbano_con_edificaciones` — apar=7, munis=5, años=5, vals=0.001|0.0015|1.0|0.0015|0.001
+  - desc: Predios urbanos con edificaciones
+- `predios_urbanos_y_suburbanos_edificacion_menor_a_quinta_parte_del_terreno` — apar=6, munis=1, años=6, vals=0.0015|0.0015|0.0015|0.0015|0.0015
+  - desc: Predios urbanos y suburbanos cuya edificación tenga un valor inferior a la quinta parte del valor del terreno
+- `urbano_habitacional` — apar=6, munis=1, años=6, vals=0.002|0.002|0.002|0.002|0.002
+  - desc: Predios urbanos con edificaciones habitacionales
+- `predios_urbanos_suburbanos_sin_edificaciones_baldios` — apar=6, munis=5, años=4, vals=0.003|0.003|0.002|0.001|3.0
+  - desc: Predios urbanos y suburbanos sin edificaciones (baldíos)
+- `predios_urbanos_baldios` — apar=6, munis=1, años=6, vals=0.003|0.003|0.003|0.003|0.003
+  - desc: Predios urbanos baldíos
+- `predios_urbanos_suburbanos_rusticos` — apar=5, munis=3, años=5, vals=0.0015|0.002|0.0015|0.0015|0.002
+  - desc: Predios urbanos, suburbanos y rústicos
+- `predios_urbanos_suburbanos_y_rusticos` — apar=5, munis=2, años=5, vals=0.002|0.0015|0.0015|0.0015|0.0015
+  - desc: Tasa general sobre valor catastral para predios urbanos, suburbanos y rústicos
+- `predios_urbanos_y_suburbanos_baldios` — apar=5, munis=1, años=5, vals=0.002|0.002|0.002|0.002|0.002
+  - desc: Predios urbanos y suburbanos sin edificaciones (baldíos)
+- `urbano_comercial_industrial_servicios` — apar=5, munis=1, años=5, vals=0.003|0.003|0.003|0.003|0.003
+  - desc: Predios urbanos y suburbanos con edificaciones comerciales, industriales o de servicios
+- `urbano_baldio` — apar=5, munis=1, años=5, vals=0.003|0.003|0.003|0.003|0.003
+  - desc: Predios urbanos sin edificaciones (baldíos)
+- `predios_suburbanos` — apar=4, munis=2, años=4, vals=0.0015|1.5|1.5|0.002
+  - desc: Predios suburbanos
+- `predios_urbanos_edificacion_inferior_a_quinta_parte` — apar=4, munis=4, años=3, vals=0.00225|0.00225|0.00225|0.00225
+  - desc: Predios urbanos cuya edificación tenga un valor inferior a la quinta parte del valor del terreno: aumento del 50% sobre la tasa del artículo
+- `urbano` — apar=4, munis=1, años=4, vals=0.0015|0.0015|0.0015|0.0015
+  - desc: Predios urbanos, suburbanos y rústicos para el año 2009
+- `urbano_general` — apar=4, munis=2, años=4, vals=0.002|0.0015|0.0015|0.001
+  - desc: Predios urbanos, suburbanos y rústicos
+- `urbano_suburbano_sin_edificacion_baldio` — apar=4, munis=3, años=3, vals=0.0015|2.0|0.002|0.003
+  - desc: Predios urbanos y suburbanos sin edificaciones (baldíos)
+- `escuelas_edificios_oficinas_gubernamentales` — apar=4, munis=1, años=4, vals=0.002|0.002|0.002|0.002
+  - desc: Escuelas, Edificios u Oficinas Gubernamentales
+- `suburbano_con_edificaciones` — apar=4, munis=3, años=4, vals=1.0|0.0015|0.001|0.001
+  - desc: Predios suburbanos con edificaciones
+- `predios_urbanos_suburbanos_edificacion_inferior_quinta_parte_terreno` — apar=3, munis=1, años=3, vals=0.0015|0.0015|0.0015
+  - desc: Predios urbanos y suburbanos cuya edificación tenga un valor inferior a la quinta parte del valor del terreno
+- `urbanos_de_uso_industrial` — apar=3, munis=3, años=3, vals=2.92|0.002|0.003
+  - desc: Predios urbanos de uso industrial
+- `urbano_no_edificado` — apar=3, munis=2, años=3, vals=0.003|0.003|0.003
+  - desc: Predios urbanos no edificados; la tasa se aumenta en 100%
+- `urbano_edificacion_inferior_quinta_parte` — apar=3, munis=2, años=3, vals=0.00225|0.00225|0.00225
+  - desc: Predios urbanos cuya edificación tenga un valor inferior a la quinta parte del valor del terreno; la tasa se aumenta en 50%
+- `predios_urbanos_no_edificados_fraccionamientos_autorizados` — apar=3, munis=2, años=3, vals=0.0015|0.0015|0.0015
+  - desc: Predios urbanos no edificados propiedad de fraccionamientos autorizados: no se aplica el aumento del 100%
+- `comercial_industrial_servicios` — apar=3, munis=1, años=3, vals=0.003|0.003|0.003
+  - desc: Predios urbanos y suburbanos con edificaciones comerciales, industriales o de servicios
+- `predios_urbanos_sin_edificaciones_baldios` — apar=3, munis=1, años=3, vals=0.003|0.003|0.003
+  - desc: Predios urbanos sin edificaciones (baldíos)
+- `predios_urbanos_habitacionales` — apar=3, munis=1, años=3, vals=0.002|0.002|0.002
+  - desc: Predios urbanos con edificaciones habitacionales
+- `predios_urbanos_sin_edificaciones_contiguos_bulevares_avenidas_principales` — apar=2, munis=1, años=2, vals=0.002|0.002
+  - desc: Predios urbanos sin edificaciones contiguos a los bulevares y avenidas principales
+- `urbanos_habitacionales` — apar=2, munis=1, años=2, vals=0.002|0.002
+  - desc: Predios urbanos con edificaciones habitacionales
+- `urbano_suburbano_rustico` — apar=2, munis=1, años=2, vals=0.0015|0.0015
+  - desc: Predios urbanos, suburbanos y rústicos
+- `predios_urbanos_y_suburbanos_edificacion_inferior_quinta_parte_terreno` — apar=2, munis=1, años=2, vals=0.0015|0.0015
+  - desc: Predios urbanos y suburbanos cuya edificación tenga un valor inferior a la quinta parte del valor del terreno
+- `predios_urbanos_y_suburbanos_sin_edificaciones` — apar=2, munis=2, años=2, vals=0.005|0.003
+  - desc: Predios urbanos y suburbanos sin edificaciones (baldíos)
+- `hoteles_moteles_y_hospitales` — apar=2, munis=1, años=2, vals=0.002|0.002
+  - desc: Hoteles, Moteles y Hospitales
+- `baldio` — apar=2, munis=1, años=2, vals=0.003|0.003
+  - desc: Predios urbanos sin edificaciones (baldíos)
+- `urbano_con_edificacion` — apar=2, munis=2, años=1, vals=0.0015|0.001
+  - desc: Predios urbanos con edificaciones
+- `suburbano_con_edificacion` — apar=2, munis=2, años=1, vals=0.0015|0.001
+  - desc: Predios suburbanos con edificaciones
+- `urbano_y_suburbano_general` — apar=2, munis=1, años=2, vals=0.0015|0.0015
+  - desc: Predios urbanos y suburbanos
+- `urbanos_suburbanos_sin_edificacion_baldios` — apar=2, munis=2, años=2, vals=0.001|0.003
+  - desc: Predios urbanos y suburbanos sin edificaciones (baldíos)
+- `predios_urbanos_con_edificacion_inferior_a_un_quinto_del_terreno` — apar=2, munis=2, años=2, vals=0.00225|0.00225
+  - desc: Predios urbanos cuya edificación tenga un valor inferior a la quinta parte del valor del terreno; aumento del 50% sobre la tasa del artículo
+- `predios_urbanos_sin_edificacion_contiguos_bulevares_avenidas_principales` — apar=2, munis=1, años=2, vals=0.002|0.002
+  - desc: Predios urbanos sin edificaciones contiguos a los bulevares y avenidas principales
+- `predios_urbanos_suburbanos_comerciales_industriales_servicios` — apar=2, munis=1, años=2, vals=0.003|0.003
+  - desc: Predios urbanos y suburbanos con edificaciones comerciales, industriales o de servicios
+- `general` — apar=2, munis=2, años=2, vals=0.002|0.001
+  - desc: Predios urbanos, suburbanos y rústicos
+- `predios_urbanos_edificacion_menor_a_quinta_parte_del_terreno` — apar=1, munis=1, años=1, vals=0.00225
+  - desc: Predios urbanos cuya edificación tenga un valor inferior a la quinta parte del valor del terreno: la tasa señalada se aumenta en 50%
+- `predios_urbanos_suburbanos` — apar=1, munis=1, años=1, vals=0.0015
+  - desc: Predios urbanos y suburbanos
+- `predios_urbanos_suburbanos_sin_edificacion_baldios` — apar=1, munis=1, años=1, vals=0.002
+  - desc: Predios urbanos y suburbanos sin edificaciones (baldíos)
+- `escuelas_templos_gubernamentales` — apar=1, munis=1, años=1, vals=0.002
+  - desc: Escuelas, Templos Religiosos, Edificios u Oficinas Gubernamentales
+- `predios_no_edificados_habitacional_residencial` — apar=1, munis=1, años=1, vals=0.0034
+  - desc: Predios no edificados, cuyo destino de uso de suelo sea habitacional residencial (aumentado en 100%)
+- `urbanos_comerciales_industriales_servicios` — apar=1, munis=1, años=1, vals=0.003
+  - desc: Predios urbanos y suburbanos con edificaciones comerciales, industriales o de servicios
+- `urbano_suburbano_general` — apar=1, munis=1, años=1, vals=0.0015
+  - desc: Predios urbanos y suburbanos
+- `urbano_no_edificado_fraccionamientos_autorizados` — apar=1, munis=1, años=1, vals=0.0015
+  - desc: Predios urbanos no edificados propiedad de fraccionamientos autorizados; no se aplica el aumento del 100%
+- `lotes_fraccionamientos_sin_construccion_dos_anos` — apar=1, munis=1, años=1, vals=0.003
+  - desc: Adquirentes de lotes provenientes de fraccionamientos que no construyan en un plazo de dos años; pagan sobre la tasa del 100% al término de 
+- `predios_urbanos_y_suburbanos_sin_edificacion` — apar=1, munis=1, años=1, vals=0.003
+  - desc: Predios urbanos y suburbanos sin edificaciones (baldíos)
+- `escuelas_templos_religiosos_edificios_u_oficinas_gubernamentales` — apar=1, munis=1, años=1, vals=0.002
+  - desc: Escuelas, Templos Religiosos, Edificios u Oficinas Gubernamentales
+- `predios_urbanos_edificacion_inferior_quinta_parte` — apar=1, munis=1, años=1, vals=0.00225
+  - desc: Predios urbanos cuya edificación tenga un valor inferior a la quinta parte del valor del terreno; la tasa señalada se aumenta en 50%
+- `adquirentes_lotes_fraccionamientos_sin_construccion_dos_anos` — apar=1, munis=1, años=1, vals=0.003
+  - desc: Adquirentes de lotes provenientes de fraccionamientos que no construyan en un plazo de dos años; al término de ese tiempo pagan sobre la tas
+- `escuelas_templos_y_gubernamentales` — apar=1, munis=1, años=1, vals=0.002
+  - desc: Escuelas, Templos Religiosos, Edificios u Oficinas Gubernamentales
+- `predios_urbanos_con_edificaciones_comerciales_industriales_o_de_servicios` — apar=1, munis=1, años=1, vals=0.003
+  - desc: Predios urbanos y suburbanos con edificaciones comerciales, industriales o de servicios
+- `predios_urbanos_con_edificaciones_habitacionales` — apar=1, munis=1, años=1, vals=0.002
+  - desc: Predios urbanos con edificaciones habitacionales
+- `escuelas_edificios_u_oficinas_gubernamentales` — apar=1, munis=1, años=1, vals=0.002
+  - desc: Escuelas, Edificios ú Oficinas Gubernamentales
+- `urbanos_y_suburbanos_sin_edificaciones` — apar=1, munis=1, años=1, vals=0.0015
+  - desc: Predios urbanos y suburbanos sin edificaciones (baldíos)
+- `predios_urbanos_con_edificacion_inferior_a_quinta_parte` — apar=1, munis=1, años=1, vals=0.00225
+  - desc: Predios urbanos cuya edificación tenga un valor inferior a la quinta parte del valor del terreno: la tasa del artículo se aumenta en 50%
+- `urbanos_y_suburbanos_baldios` — apar=1, munis=1, años=1, vals=0.002
+  - desc: Predios urbanos y suburbanos sin edificaciones (baldíos)
+- `urbanos_y_suburbanos_edificacion_inferior_a_quinta_parte_del_terreno` — apar=1, munis=1, años=1, vals=0.0015
+  - desc: Predios urbanos y suburbanos cuya edificación tenga un valor inferior a la quinta parte del valor del terreno
+- `escuelas_gubernamentales` — apar=1, munis=1, años=1, vals=0.002
+  - desc: Escuelas, Edificios u Oficinas Gubernamentales
+- `urbanos_y_suburbanos_comerciales_industriales_o_de_servicios` — apar=1, munis=1, años=1, vals=0.003
+  - desc: Predios urbanos y suburbanos con edificaciones comerciales, industriales o de servicios
+- `urbanos_sin_edificaciones_baldios` — apar=1, munis=1, años=1, vals=0.003
+  - desc: Predios urbanos sin edificaciones (baldíos)
+- `urbano_suburbano_sin_edificacion` — apar=1, munis=1, años=1, vals=0.003
+  - desc: Predios urbanos y suburbanos sin edificaciones (baldíos)
+- `urbanos_no_edificados` — apar=1, munis=1, años=1, vals=0.003
+  - desc: Predios urbanos no edificados; aumento del 100% sobre la tasa señalada
+- `urbanos_edificacion_inferior_a_quinta_parte_del_terreno` — apar=1, munis=1, años=1, vals=0.00225
+  - desc: Predios urbanos cuya edificación tenga un valor inferior a la quinta parte del valor del terreno; aumento del 50% sobre la tasa señalada
+- `urbano_edificacion_inferior_a_quinta_parte` — apar=1, munis=1, años=1, vals=0.00225
+  - desc: Predios urbanos cuya edificación tenga valor inferior a la quinta parte del valor del terreno: aumento del 50% sobre la tasa señalada
+- `predios_urbanos_y_suburbanos_edificacion_inferior_quinta_parte` — apar=1, munis=1, años=1, vals=0.0015
+  - desc: Predios urbanos y suburbanos cuya edificación tenga un valor inferior a la quinta parte del valor del terreno
+- `predios_urbanos_con_edificacion_inferior_a_la_quinta_parte_del_terreno` — apar=1, munis=1, años=1, vals=0.00225
+  - desc: Predios urbanos cuya edificación tenga un valor inferior a la quinta parte del valor del terreno: aumento del 50% sobre la tasa del artículo
+- `urbano_y_suburbano_sin_edificaciones` — apar=1, munis=1, años=1, vals=0.002
+  - desc: Predios urbanos y suburbanos sin edificaciones (baldíos)
+- `urbano_y_suburbano_sin_edificacion_baldio` — apar=1, munis=1, años=1, vals=0.001
+  - desc: Predios urbanos y suburbanos sin edificaciones (baldíos)
+- `urbanos_suburbanos_sin_edificaciones_baldios` — apar=1, munis=1, años=1, vals=0.003
+  - desc: Predios urbanos y suburbanos sin edificaciones (baldíos)
+- `urbano_con_edificacion_inferior_a_quinta_parte_del_terreno` — apar=1, munis=1, años=1, vals=0.00225
+  - desc: Predios urbanos cuya edificación tenga un valor inferior a la quinta parte del valor del terreno; la tasa señalada se aumenta en 50%
+- `predios_urbanos_y_suburbanos_edificacion_inferior_a_quinta_parte_del_valor_del_terreno` — apar=1, munis=1, años=1, vals=0.0015
+  - desc: Predios urbanos y suburbanos cuya edificación tenga un valor inferior a la quinta parte del valor del terreno
+- `urbano_suburbano_comercial_industrial_servicios` — apar=1, munis=1, años=1, vals=0.003
+  - desc: Predios urbanos y suburbanos con edificaciones comerciales, industriales o de servicios
+- `baldios` — apar=1, munis=1, años=1, vals=0.003
+  - desc: Predios urbanos sin edificaciones (baldíos)
+- `urbano_y_suburbano_sin_edificaciones_baldios` — apar=1, munis=1, años=1, vals=0.002
+  - desc: Predios urbanos y suburbanos sin edificaciones (baldíos)
+- `predios_urbanos_y_suburbanos_edificacion_inferior_a_quinta_parte_del_terreno` — apar=1, munis=1, años=1, vals=0.0015
+  - desc: Predios urbanos y suburbanos cuya edificación tenga un valor inferior a la quinta parte del valor del terreno
+- `urbano_no_edificado_fraccionamiento_autorizado` — apar=1, munis=1, años=1, vals=0.0015
+  - desc: Predios urbanos no edificados propiedad de fraccionamientos autorizados; no se aplica el aumento del 100%
+- `urbano_suburbano_sin_edificaciones` — apar=1, munis=1, años=1, vals=0.0015
+  - desc: Predios urbanos y suburbanos sin edificaciones (baldíos)
+- `urbano_industrial` — apar=1, munis=1, años=1, vals=0.0015
+  - desc: Predios urbanos de uso industrial
+- `predios_urbanos_suburbanos_baldios` — apar=1, munis=1, años=1, vals=0.002
+  - desc: Predios urbanos y suburbanos sin edificaciones (baldíos)
+- `escuelas_y_gobierno` — apar=1, munis=1, años=1, vals=0.002
+  - desc: Escuelas, Edificios u Oficinas Gubernamentales
+- `casa_hogar_o_predios_filantropicos` — apar=1, munis=1, años=1, vals=0.00025
+  - desc: Las casa hogar o predios con fines filantrópicos, dedicados a la atención de la orfandad
+- `predios_urbanos_y_suburbanos_comerciales_industriales_o_de_servicios` — apar=1, munis=1, años=1, vals=0.003
+  - desc: Predios urbanos y suburbanos con edificaciones comerciales, industriales o de servicios
+- `predios_urbanos_sin_edificacion_baldios` — apar=1, munis=1, años=1, vals=0.0016
+  - desc: Predios urbanos y suburbanos sin edificaciones (baldíos)
+- `escuelas_y_gubernamentales` — apar=1, munis=1, años=1, vals=0.002
+  - desc: Escuelas, Edificios u Oficinas Gubernamentales
+- `predios_urbanos_y_suburbanos_edificacion_inferior_quinta_parte_del_terreno` — apar=1, munis=1, años=1, vals=0.0015
+  - desc: Predios urbanos y suburbanos cuya edificación tenga un valor inferior a la quinta parte del valor del terreno
+- `adquirentes_lotes_fraccionamientos_sin_construir_dos_anos` — apar=1, munis=1, años=1, vals=0.003
+  - desc: Adquirentes de lotes provenientes de fraccionamientos que no construyan en un plazo de dos años; pagan sobre la tasa del 100% al término de 
+- `habitacional_urbano_suburbano` — apar=1, munis=1, años=1, vals=1.5
+  - desc: Habitacional urbano y suburbano
+- `comercial_industrial_urbano_suburbano` — apar=1, munis=1, años=1, vals=2.0
+  - desc: Comercial e industrial urbano y suburbano
+- `urbanos_edificacion_comercial_industrial_servicios` — apar=1, munis=1, años=1, vals=3.0
+  - desc: Predios urbanos y suburbanos con edificaciones comerciales, industriales o de servicios
+- `urbanos_edificacion_habitacional` — apar=1, munis=1, años=1, vals=2.0
+  - desc: Predios urbanos con edificaciones habitacionales
+- `urbanos_baldios` — apar=1, munis=1, años=1, vals=3.0
+  - desc: Predios urbanos sin edificaciones (baldíos)
+
+### Yucatán <a id='tarifa-millar-yucatan'></a> — 56 claves
+
+#### grupo: `general` — 14 clave(s)
+
+- `general` — apar=21, munis=10, años=10, vals=0.001|1e-05|0.001|1e-05|0.001
+  - desc: Impuesto predial general: se causa aplicando el factor 0.001 al valor catastral
+- `seccion_1` — apar=4, munis=2, años=4, vals=0.25|0.00025|0.25|0.0025
+  - desc: Sección 1
+- `seccion_2` — apar=4, munis=2, años=4, vals=0.25|0.00025|0.25|0.0025
+  - desc: Sección 2
+- `seccion_3` — apar=4, munis=2, años=4, vals=0.25|0.00025|0.25|0.0025
+  - desc: Sección 3
+- `seccion_4` — apar=4, munis=2, años=4, vals=0.25|0.00025|0.25|0.0025
+  - desc: Sección 4
+- `seccion_5` — apar=4, munis=2, años=4, vals=0.25|0.00025|0.25|0.0025
+  - desc: Sección 5
+- `seccion_6` — apar=4, munis=2, años=4, vals=0.25|0.00025|0.25|0.0025
+  - desc: Sección 6
+- `secciones_1_a_6` — apar=2, munis=1, años=2, vals=0.25|0.25
+  - desc: Cuando la base del impuesto predial sea el valor catastral del inmueble, se aplicará tasa de 0.25% para las secciones 1 a 6
+- `predial_general` — apar=1, munis=1, años=1, vals=0.001
+  - desc: Impuesto predial general sobre el valor catastral
+- `habitacional` — apar=1, munis=1, años=1, vals=0.02
+  - desc: Habitacional
+- `comercial` — apar=1, munis=1, años=1, vals=0.03
+  - desc: Comercial
+- `valor_catastral_base` — apar=1, munis=1, años=1, vals=0.003
+  - desc: Impuesto predial general sobre valor catastral
+- `agropecuario` — apar=1, munis=1, años=1, vals=0.01
+  - desc: Predio destinado a la producción agropecuaria
+- `valor_catastral_general` — apar=1, munis=1, años=1, vals=0.0016
+  - desc: Impuesto sobre el valor catastral del predio
+
+#### grupo: `otro` — 10 clave(s)
+
+- `agropecuario` — apar=6, munis=5, años=5, vals=0.01|0.01|0.01|0.01|0.01
+  - desc: Predio destinado a la producción agropecuaria: 10 al millar anual sobre el valor registrado o catastral
+- `habitacional` — apar=3, munis=1, años=3, vals=60.0|70.0|0.0
+  - desc: Habitacional
+- `comercial` — apar=3, munis=1, años=3, vals=100.0|220.0|0.0
+  - desc: Comercial
+- `produccion_agropecuaria` — apar=3, munis=3, años=3, vals=0.01|0.01|0.01
+  - desc: Todo predio destinado a la producción agropecuaria
+- `zona_costera` — apar=1, munis=1, años=1, vals=0.01
+  - desc: Zona costera sobre valor catastral
+- `rustico_brecha` — apar=1, munis=1, años=1, vals=0.0
+  - desc: Predios rústicos por hectárea, brecha
+- `rustico_camino_blanco` — apar=1, munis=1, años=1, vals=0.0
+  - desc: Predios rústicos por hectárea, camino blanco
+- `rustico_carretera` — apar=1, munis=1, años=1, vals=0.0
+  - desc: Predios rústicos por hectárea, carretera
+- `predios_agropecuarios` — apar=1, munis=1, años=1, vals=0.01
+  - desc: Todo predio destinado a la producción agropecuaria paga 10 al millar anual sobre el valor registrado o catastral
+- `costera_rustica` — apar=1, munis=1, años=1, vals=0.0023
+  - desc: Predios de la playa colindantes con el Golfo de México y la Zona Federal Marítimo Terrestre
+
+#### grupo: `rustico` — 12 clave(s)
+
+- `predios_rusticos` — apar=6, munis=3, años=6, vals=40.0|0.00075|40.0|0.0|40.0
+  - desc: Predios rústicos
+- `agropecuario` — apar=5, munis=3, años=5, vals=0.01|0.01|0.01|0.01|0.01
+  - desc: Todo predio destinado a la producción agropecuaria
+- `rustico` — apar=1, munis=1, años=1, vals=0.0004
+  - desc: Predios rústicos
+- `rusticos` — apar=1, munis=1, años=1, vals=0.65
+  - desc: Predios rústicos
+- `predios_rústicos` — apar=1, munis=1, años=1, vals=0.00075 ⚠ slugify_sug=`predios_rusticos`
+  - desc: Predios rústicos
+- `predios_rusticos_produccion_agropecuaria` — apar=1, munis=1, años=1, vals=10.0
+  - desc: Todo predio destinado a la producción agropecuaria paga 10 al millar anual sobre el valor registrado o catastral
+- `rusticos_brecha` — apar=1, munis=1, años=1, vals=0.0
+  - desc: rústicos brecha por hectárea
+- `rusticos_camino_blanco` — apar=1, munis=1, años=1, vals=0.0
+  - desc: rústicos camino blanco por hectárea
+- `rusticos_carretera` — apar=1, munis=1, años=1, vals=0.0
+  - desc: rústicos carretera por hectárea
+- `rustico_acceso_carretera_asfaltada` — apar=1, munis=1, años=1, vals=0.001
+  - desc: Predios rústicos con acceso por carretera asfaltada
+- `rustico_acceso_camino_blanco` — apar=1, munis=1, años=1, vals=0.001
+  - desc: Predios rústicos con acceso camino blanco
+- `rustico_acceso_brechas` — apar=1, munis=1, años=1, vals=0.001
+  - desc: Predios rústicos con acceso por brechas
+
+#### grupo: `rústico` — 1 clave(s)
+
+- `produccion_agropecuaria` — apar=1, munis=1, años=1, vals=0.01
+  - desc: Todo predio destinado a la producción agropecuaria
+
+#### grupo: `urbano` — 19 clave(s)
+
+- `predios_urbanos` — apar=6, munis=3, años=6, vals=60.0|60.0|0.0|60.0|60.0
+  - desc: Predios urbanos
+- `tekax` — apar=1, munis=1, años=1, vals=0.0005
+  - desc: Predios urbanos ubicados en Tekax
+- `comisarias` — apar=1, munis=1, años=1, vals=0.00045
+  - desc: Predios urbanos ubicados en Comisarías
+- `tekax_urbanos_tekax` — apar=1, munis=1, años=1, vals=0.75
+  - desc: Predios urbanos ubicados en Tekax
+- `urbanos_comisarias` — apar=1, munis=1, años=1, vals=0.7
+  - desc: Predios urbanos ubicados en comisarías
+- `predios_urbanos_ubicados_en_tekax` — apar=1, munis=1, años=1, vals=0.00085
+  - desc: Predios urbanos ubicados en Tekax
+- `predios_urbanos_ubicados_en_comisarías` — apar=1, munis=1, años=1, vals=0.0008 ⚠ slugify_sug=`predios_urbanos_ubicados_en_comisarias`
+  - desc: Predios urbanos ubicados en comisarías
+- `predios_urbanos_tekax` — apar=1, munis=1, años=1, vals=0.00085
+  - desc: Predios urbanos ubicados en Tekax
+- `predios_urbanos_comisarias` — apar=1, munis=1, años=1, vals=0.0008
+  - desc: Predios urbanos ubicados en comisarías
+- `secciones_1_2_3_4_y_comisarias` — apar=1, munis=1, años=1, vals=0.25
+  - desc: Predios urbanos por sección y comisarías; tarifa de valor catastral 0.25 para Secciones 1 a 6 y todas las comisarías
+- `seccion_1` — apar=1, munis=1, años=1, vals=0.0025
+  - desc: Sección 1
+- `seccion_2` — apar=1, munis=1, años=1, vals=0.0025
+  - desc: Sección 2
+- `seccion_3` — apar=1, munis=1, años=1, vals=0.0025
+  - desc: Sección 3
+- `seccion_4` — apar=1, munis=1, años=1, vals=0.0025
+  - desc: Sección 4
+- `seccion_5` — apar=1, munis=1, años=1, vals=0.0025
+  - desc: Sección 5
+- `seccion_6` — apar=1, munis=1, años=1, vals=0.0025
+  - desc: Sección 6
+- `zona_a_urbana` — apar=1, munis=1, años=1, vals=0.001
+  - desc: Predios en zona A / centro / plaza principal, primer cuadro y zona comercial
+- `zona_b_urbana` — apar=1, munis=1, años=1, vals=0.001
+  - desc: Predios en zona urbana fuera de zona A
+- `zona_c_transicion` — apar=1, munis=1, años=1, vals=0.001
+  - desc: Predios en zona de transición anexa a zona B

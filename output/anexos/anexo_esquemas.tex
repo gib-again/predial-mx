@@ -1,0 +1,24 @@
+% Anexo A — Esquemas de cobro del impuesto predial
+% Generado por scripts/build_anexo_esquemas.py
+% Requiere: \usepackage{booktabs}
+
+\subsection*{Tarifa al millar}
+Aplica una tasa fija por cada millar (\textperthousand) del valor catastral, diferenciada por tipo de predio (urbano, rústico, etc.). El impuesto es lineal en el valor: $T = \tau \cdot V / 1000$.
+\input{ej_tarifa_millar.tex}
+
+\subsection*{Progresivo (tasa marginal)}
+Tabla por rangos de valor catastral en la que cada tramo agrega una cuota fija más una tasa marginal sobre el excedente del límite inferior: $T = c_i + \tau_i\,(V - L_i)$. La carga efectiva crece con el valor.
+\input{ej_progresivo.tex}
+
+\subsection*{Tasa única}
+Una sola tasa (porcentaje o al millar) aplicada uniformemente al valor catastral de todos los predios, sin categorías ni rangos.
+\input{ej_tasa_unica.tex}
+
+\subsection*{Cuota fija (tarifa única)}
+Monto fijo en pesos por predio, independiente del valor catastral. En la tesis se denomina \emph{tarifa única}. Algunos municipios la escalonan por rangos de valor (variante \emph{cuota fija escalonada}), que aquí se agrupa dentro de esta categoría.
+\input{ej_cuota_fija.tex}
+
+\subsection*{Mixto}
+Estructura híbrida por rangos que combina columnas heterogéneas (cuotas fijas y/o tasas) según el tipo de predio, sin reducirse a las variantes anteriores.
+\input{ej_mixto.tex}
+

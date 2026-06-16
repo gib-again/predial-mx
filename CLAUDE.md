@@ -34,7 +34,8 @@ ruff check src/ scripts/
 - `src/core/` — Lógica compartida: LLM extraction, schemas Pydantic, validación, consolidación, imputación, PDF utils, OCR, text utils
 - `src/estados/` — Un adaptador por estado con patrón registry + factory (`@register`). Cada estado tiene: `config.py`, `download.py`, `segment.py`, opcionalmente `ocr.py`, `pipeline.py`, `tarifa_base.py`
 - `src/estados/base.py` — Clase abstracta `EstadoAdapter` (métodos requeridos: `download`, `build_master`, `extract_predial_sections`)
-- `scripts/` — Entry points CLI (`run_pipeline.py`, `batch_download.py`, `consolidate_panel.py`)
+- `scripts/` — Entry points CLI canónicos del pipeline (`run_pipeline.py`, `batch_download.py`, `consolidate_panel.py`, builders del panel canónico y conversiones v1/hardcoded → v2)
+- `scripts/temps/` — Scripts no canónicos: calibraciones por estado, retries, QA/muestreo, anexos de tesis, workflow HITL. Ver `scripts/temps/README.md`
 - `catalogs/` — Catálogos INEGI de municipios
 - `docs/` — BEST_PRACTICES.md (referencia obligatoria para nuevos estados), notas por estado, esquemas
 

@@ -1,0 +1,75 @@
+% Anexo B — Estadísticos descriptivos de esquemas de cobro
+% Generado por scripts/build_anexo_esquemas.py
+% Requiere: \usepackage{booktabs}
+% Fuente: output/panel_v2_raw.csv (observaciones, sin imputación;
+% clasificación canónica schema_v2).
+
+\paragraph{Universo.} 14893 observaciones (estado $\times$ municipio $\times$ año) en 14 estados, 2010--2026.
+
+\begin{table}[htbp]\centering\small
+\begin{tabular}{lrr}
+\toprule
+Esquema & Obs. & \% \\
+\midrule
+Tarifa al millar & 4622 & 31.0\% \\
+Progresivo (tasa marginal) & 5258 & 35.3\% \\
+Tasa única & 3876 & 26.0\% \\
+Cuota fija (tarifa única) & 77 & 0.5\% \\
+Mixto & 483 & 3.2\% \\
+Otro / no clasificado & 577 & 3.9\% \\
+\bottomrule
+\end{tabular}
+\caption{Distribución de esquemas de cobro del predial (todas las observaciones).}
+\label{tab:dist-global-esquemas}
+\end{table}
+
+\begin{table}[htbp]\centering\small
+\begin{tabular}{lrrrrrrr}
+\toprule
+Estado & T. millar & Progr. & Tasa única & Cuota fija & Mixto & Otro & N \\
+\midrule
+Chihuahua & 0 & 1072 & 0 & 0 & 0 & 0 & 1072 \\
+Coahuila de Zaragoza & 544 & 16 & 0 & 0 & 16 & 3 & 579 \\
+Colima & 0 & 160 & 0 & 0 & 0 & 0 & 160 \\
+Guanajuato & 519 & 61 & 1 & 6 & 32 & 14 & 633 \\
+Jalisco & 1862 & 95 & 0 & 0 & 6 & 13 & 1976 \\
+Mexico & 0 & 2000 & 0 & 0 & 0 & 0 & 2000 \\
+Oaxaca & 21 & 1 & 3641 & 10 & 0 & 383 & 4056 \\
+Queretaro & 219 & 82 & 0 & 0 & 0 & 1 & 302 \\
+San Luis Potosi & 564 & 5 & 0 & 1 & 0 & 8 & 578 \\
+Sinaloa & 0 & 288 & 0 & 0 & 0 & 0 & 288 \\
+Sonora & 229 & 430 & 6 & 5 & 97 & 3 & 770 \\
+Tabasco & 0 & 272 & 0 & 0 & 0 & 0 & 272 \\
+Tamaulipas & 603 & 61 & 0 & 3 & 18 & 0 & 685 \\
+Yucatan & 61 & 715 & 228 & 52 & 314 & 152 & 1522 \\
+\bottomrule
+\end{tabular}
+\caption{Esquemas de cobro por estado (número de observaciones).}
+\label{tab:esquemas-por-estado}
+\end{table}
+
+\begin{table}[htbp]\centering\small
+\begin{tabular}{lrcrrl}
+\toprule
+Estado & Municipios & Periodo & Años & Obs. & Fuente \\
+\midrule
+Chihuahua & 67 & 2010–2025 & 16 & 1072 & código estatal \\
+Coahuila de Zaragoza & 38 & 2010–2025 & 16 & 579 & LLM \\
+Colima & 10 & 2010–2025 & 16 & 160 & código estatal \\
+Guanajuato & 46 & 2010–2026 & 16 & 633 & LLM \\
+Jalisco & 125 & 2010–2025 & 16 & 1976 & LLM \\
+Mexico & 125 & 2010–2025 & 16 & 2000 & código estatal \\
+Oaxaca & 564 & 2010–2025 & 16 & 4056 & LLM \\
+Queretaro & 18 & 2010–2026 & 17 & 302 & LLM \\
+San Luis Potosi & 59 & 2012–2025 & 13 & 578 & LLM \\
+Sinaloa & 18 & 2010–2025 & 16 & 288 & código estatal \\
+Sonora & 72 & 2010–2025 & 16 & 770 & LLM \\
+Tabasco & 17 & 2010–2025 & 16 & 272 & código estatal \\
+Tamaulipas & 43 & 2010–2025 & 16 & 685 & LLM \\
+Yucatan & 106 & 2010–2025 & 16 & 1522 & LLM \\
+\bottomrule
+\end{tabular}
+\caption{Cobertura del panel por estado. Fuente indica si la tarifa se extrajo de leyes de ingresos municipales (LLM) o de un código/tarifa estatal uniforme.}
+\label{tab:cobertura-estados}
+\end{table}
+

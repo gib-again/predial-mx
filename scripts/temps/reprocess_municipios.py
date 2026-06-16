@@ -135,7 +135,7 @@ def _resolve_muni_specs(specs: list[str]) -> list[tuple[str, str, str, list[int]
         cvegeo = cve_cache[estado].get(slug)
         if not cvegeo:
             # Slug aliases (suma_de_hidalgo → 31072, san_jose_iturbide → 11032)
-            from scripts.reextract_v2 import SLUG_ALIASES
+            from scripts.temps.reextract_v2 import SLUG_ALIASES
             cvegeo = SLUG_ALIASES.get((estado, slug))
         if not cvegeo:
             print(f"  [skip] '{s}': slug no resuelto en catálogo INEGI")
@@ -336,7 +336,7 @@ def main() -> int:
 
     # ── Reconstruir CSV ──
     if not args.no_rebuild_csv:
-        from scripts.reextract_v2 import _rebuild_csv_from_jsons, ESTADOS as REEX_ESTADOS
+        from scripts.temps.reextract_v2 import _rebuild_csv_from_jsons, ESTADOS as REEX_ESTADOS
         all_estados = sorted(set(REEX_ESTADOS) | {est for est, _, _, _ in targets})
         n_csv, by = _rebuild_csv_from_jsons(all_estados)
         print(f"\n[reprocess] CSV reconstruido: {n_csv} filas, por estado: {by}")
