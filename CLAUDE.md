@@ -42,9 +42,10 @@ ruff check src/ scripts/
 - `src/extraction/` — Schemas y extractores versionados: `schema_v2.py`, `schema_v3.py`, `llm_extract_v2.py`, `llm_extract_v3.py`, `prompts_v3.py`
 - `src/estados/` — Un adaptador por estado con patrón registry + factory (`@register`). Cada estado tiene: `config.py`, `download.py`, `segment.py`, opcionalmente `ocr.py`, `pipeline.py`, `tarifa_base.py`
 - `src/estados/base.py` — Clase abstracta `EstadoAdapter` (métodos requeridos: `download`, `build_master`, `extract_predial_sections`)
-- `scripts/` — Entry points CLI: `run_pipeline.py`, `batch_download.py`, `consolidate_panel.py`, `convert_hardcoded_to_v3.py`, `diff_v2_v3.py`, `pilot_v3.py`
-- `scripts/temps/` — Scripts de QA, HITL, calibraciones por estado, anexos de tesis
-- `scripts/_archive/` — Scripts obsoletos/completados (ver README.md dentro)
+- `src/hitl/` — Cola HITL unificada: detectores (D1-D12), esquema de cola, orquestador
+- `scripts/` — Entry points CLI: `run_pipeline.py`, `batch_download.py`, `consolidate_panel.py`, `convert_hardcoded_to_v3.py`, `diff_v2_v3.py`, `pilot_v3.py`, `consume_reextraction_queue.py`
+- `scripts/temps/` — Scripts de QA, HITL UI, calibraciones por estado, anexos de tesis
+- `scripts/_archive/` — Scripts obsoletos/completados: DiD (audit_treatment, apply_treatment, build_event_study), ver README.md
 - `catalogs/` — Catálogos INEGI de municipios
 - `docs/` — BEST_PRACTICES.md (referencia obligatoria para nuevos estados), notas por estado, esquemas
 
@@ -61,7 +62,9 @@ ruff check src/ scripts/
 - `data/{estado}/pdf_raw/`, `pdf_ocr/`, `focus_predial/`, `json_predial/`, `meta/`, `qa/`
 - `predial-mx-v2/` — JSONs de extracción v2 (una tarifa por archivo)
 - `predial-mx-v3/` — JSONs de extracción v3 (multi-tarifa, tasas fieles)
+- `predial-mx-v3-hitl/` — JSONs propagados/corregidos por HITL
 - `output/` — `predial_panel.csv`, `predial_panel_balanced.csv`, `quality_report.csv`
+- `output/hitl/` — `cola_unificada.csv`, `cola_reextraccion.csv`, `hitl_bitacora.csv`
 
 ## Schema v2 (`src/extraction/schema_v2.py`)
 
@@ -107,15 +110,62 @@ Coahuila (COAH), Jalisco (JAL), Querétaro (QRO), Yucatán (YUC), Tamaulipas (TA
 
 download → ocr (si aplica) → master → segment → extract (LLM) → validate → [consolidate] → [impute]
 
-## Pipeline HITL (auditoría interanual)
+## Pipeline HITL unificado (v3)
 
-4 scripts en `scripts/temps/` que forman el ciclo de revisión:
-1. `detectar_cambios_interanuales.py` — detecta cambios año-a-año
-2. `hitl_revisor_server.py` — Flask UI para revisión side-by-side
-3. `aplicar_decisiones_hitl.py` — aplica decisiones, escribe a `predial-mx-v2-hitl/`
-4. `build_anexo_esquemas.py` — anexo LaTeX para tesis
+Cola única `output/hitl/cola_unificada.csv` alimentada por 12 detectores sobre corpus v3.
+Cada fila = un municipio-año consolidado; `detector` es comma-separated, `senal` es pipe-separated.
+`id = sha1(estado|muni|anio)` (sin detector). La UI siempre intenta mostrar año previo (side-by-side).
 
-Actualmente leen schema v2. Post-piloto v3 se adaptan.
+### Detectores
+
+| # | Nombre | SEV | Input |
+|---|--------|-----|-------|
+| D1 | `frontera_sin_verificar` | SEV1-H | segment.csv (solo Jalisco) |
+| D2 | `distancia_inicio_anomala` | SEV1-H | segment.csv: z-score > 2σ en char_start |
+| D3 | `mixto_monocolumna_cuotafija` | SEV1 | v3 JSON |
+| D4 | `tabla_vacia` | SEV1 | v3 JSON |
+| D5 | `otro_no_clasificado` | SEV1 | v3 JSON |
+| D6 | `progresivo_tasa_cero` | SEV1 | v3 JSON |
+| D7 | `bracket_superior_cerrado` | SEV2 | v3 JSON |
+| D8 | `rangos_no_monotonos` | SEV2 | v3 JSON |
+| D9 | `tarifa_millar_factor` | SEV2 | v3 JSON |
+| D10 | `tasa_unica_unidad_factor` | SEV2 | v3 JSON |
+| D11 | `desc_transitorios` | SEV1 | v3 JSON |
+| D12 | `cambio_interanual` | SEV1/2/3 | pares v3 JSON año-a-año |
+
+### Ciclo de revisión
+
+```bash
+# 1. Ejecutar detectores → cola_unificada.csv
+python -m src.hitl.run_detectors
+python -m src.hitl.run_detectors --estado coahuila --merge
+
+# 2. Revisar en UI
+python -m scripts.temps.hitl_revisor_server
+
+# 3. Aplicar decisiones → bitácora + cola_reextraccion.csv
+python -m scripts.temps.aplicar_decisiones_hitl
+python -m scripts.temps.aplicar_decisiones_hitl --dry-run
+
+# 4. Consumir cola de re-extracción (usa gpt-5.4 full)
+python -m scripts.consume_reextraction_queue
+python -m scripts.consume_reextraction_queue --dry-run
+```
+
+### Decisiones HITL
+
+`confirmar_ok` | `propagar_previo` | `corregir_previo` | `reextraer` | `re_segmentar` | `ignorar`
+
+Para `re_segmentar`: campo notas = `paginas=X-Y [; pdf=ruta/al/pdf]`
+
+### Archivos
+
+- `src/hitl/queue_schema.py` — QueueRow dataclass, helpers CSV, merge
+- `src/hitl/detectors.py` — D1-D12
+- `src/hitl/run_detectors.py` — orquestador CLI
+- `scripts/temps/hitl_revisor_server.py` — Flask UI (single-year + side-by-side para D12)
+- `scripts/temps/aplicar_decisiones_hitl.py` — aplica decisiones, escribe a `predial-mx-v3-hitl/`
+- `scripts/consume_reextraction_queue.py` — consumidor de cola re-extracción
 
 ## Advertencia sobre tipo_esquema
 Se identificó un error sistemático en el codigo: el LLM clasifica como tabla_progresiva con tasa_marginal=0 cuando la estructura real es cuota fija escalonada. Corrección via discriminated union con escape hatch (otro_no_clasificado). Tamaulipas y Querétaro funcionan como regression tests. Evitar leer tipo_esquema crudo del JSON; esperar a pasar por la capa de validación.

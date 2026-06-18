@@ -40,6 +40,8 @@ class SegmentResult:
     start_char: int = -1
     end_char: int = -1
     confidence: float = 0.0
+    anchor_text_start: str = ""
+    anchor_text_end: str = ""
 
 
 # ── Post-segment validator: descarta matches que apunten a un ToC/encabezado ──
@@ -186,56 +188,105 @@ def find_predial_section(
             )
         return SegmentResult(found=False)
 
+    def _extract_line(pos: int, radius: int = 120) -> str:
+        lo = max(0, text.rfind("\n", max(0, pos - radius), pos) + 1)
+        hi = text.find("\n", pos, pos + radius)
+        if hi == -1:
+            hi = min(len(text), pos + radius)
+        return text[lo:hi].strip()
+
     # ── Para cada candidato: calcular fin, extraer segmento, validar ──
-    def _compute_end(start_pos: int) -> int:
+    def _compute_end(start_pos: int) -> tuple[int, str]:
         remaining = text[start_pos:]
-        end_candidates: list[int] = []
+        end_candidates: list[tuple[int, str]] = []
         for spec in end_specs:
             em = spec.pattern.search(remaining)
             if em and em.start() > min_end_distance:
-                end_candidates.append(start_pos + em.start())
+                abs_pos = start_pos + em.start()
+                end_candidates.append((abs_pos, _extract_line(abs_pos)))
         if end_candidates:
-            end_pos = min(end_candidates)
+            end_candidates.sort(key=lambda x: x[0])
+            end_pos, end_anchor = end_candidates[0]
         else:
             end_pos = min(start_pos + max_chars, len(text))
+            end_anchor = ""
         # Validar tamaño mínimo
         if end_pos - start_pos < min_chars:
             end_pos = min(start_pos + max_chars, len(text))
-        return end_pos
+            end_anchor = ""
+        return end_pos, end_anchor
 
     # Iterar candidatos en orden; quedarse con el primero que pase el validator
-    first_candidate: tuple[int, int, str] | None = None  # fallback safety
+    first_candidate: tuple[int, int, str, str, str] | None = None
     for start_pos, label in candidates:
-        end_pos = _compute_end(start_pos)
+        end_pos, end_anchor = _compute_end(start_pos)
+        start_anchor = _extract_line(start_pos)
 
         if first_candidate is None:
-            first_candidate = (start_pos, end_pos, label)
+            first_candidate = (start_pos, end_pos, label, start_anchor, end_anchor)
 
         if segment_validator is not None:
             segment = text[start_pos:end_pos]
             if not segment_validator(segment):
                 continue
 
-        # Pasó el validator (o no hay validator) → usar este
         return SegmentResult(
             found=True,
             method=label,
             start_char=start_pos,
             end_char=end_pos,
             confidence=1.0,
+            anchor_text_start=start_anchor,
+            anchor_text_end=end_anchor,
         )
 
     # ── Ningún candidato pasó el validator → devolver el primero como fallback ──
-    # Preserva el comportamiento previo (no romper estados ya estables).
-    assert first_candidate is not None  # garantizado por el chequeo de candidates
-    start_pos, end_pos, label = first_candidate
+    assert first_candidate is not None
+    start_pos, end_pos, label, start_anchor, end_anchor = first_candidate
     return SegmentResult(
         found=True,
         method=f"{label}_unvalidated",
         start_char=start_pos,
         end_char=end_pos,
         confidence=0.5,
+        anchor_text_start=start_anchor,
+        anchor_text_end=end_anchor,
     )
+
+
+HITL_EXTRA_FIELDS = [
+    "char_start", "char_end", "confidence",
+    "forced_end", "expansion_applied",
+    "anchor_text_start", "anchor_text_end",
+]
+
+
+def hitl_extra_columns(
+    result: SegmentResult | None = None,
+    *,
+    forced_end: bool = False,
+    expansion_applied: bool = False,
+) -> dict[str, object]:
+    """Standard HITL columns derived from a SegmentResult.
+
+    States merge this dict into their segment.csv row to provide a
+    uniform interface for the unified HITL queue detectors.
+    """
+    if result is None:
+        return {
+            "char_start": -1, "char_end": -1, "confidence": 0.0,
+            "forced_end": False, "expansion_applied": False,
+            "anchor_text_start": "", "anchor_text_end": "",
+        }
+    return {
+        "char_start": result.start_char,
+        "char_end": result.end_char,
+        "confidence": round(result.confidence, 2),
+        "forced_end": forced_end,
+        "expansion_applied": expansion_applied,
+        "anchor_text_start": result.anchor_text_start,
+        "anchor_text_end": result.anchor_text_end,
+    }
 
 
 # ══════════════════════════════════════════════════════════════

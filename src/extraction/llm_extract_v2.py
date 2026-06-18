@@ -1,12 +1,7 @@
 """LLM extraction v2 — usa schema_v2 (discriminated union) como response model.
 
-Diferencias vs `src/core/llm_extract.py` (v1):
-  - response_format = PredialOutputV2 (Pydantic) en lugar del dict-schema v1.
-  - Reintento ÚNICO basado en el error específico de validación.
-  - Output a `predial-mx-v2/{estado}/{archivo}.json` (NO sobrescribe v1).
-  - Marca `requiere_revision` cuando el resultado es `otro_no_clasificado`
-    o cuando ambos intentos fallan validación.
-  - Logging por archivo de tokens (input/output/cached).
+DEPRECADO: usar llm_extract_v3 para nuevas extracciones.
+Utilidades schema-agnostic viven en llm_utils.py.
 
 API pública:
   extraer_municipio(estado, cvegeo, anios) -> list[ExtractionResult]
@@ -14,62 +9,46 @@ API pública:
 
 from __future__ import annotations
 
-import csv
 import json
 import os
 from dataclasses import dataclass
 from pathlib import Path
 from typing import Iterable
 
-from openai import OpenAI
 from openai.lib._pydantic import to_strict_json_schema
 from pydantic import ValidationError
 
 from src.core.constants import PREFIJOS_ESTADO
-from src.core.text_utils import slugify
 from src.extraction.schema_v2 import (
     OtroNoClasificadoSchema,
     PredialOutputV2,
 )
+from src.extraction.llm_utils import (  # noqa: F401 — re-exported for legacy consumers
+    OPENAI_MODEL,
+    OPENAI_MODEL_FALLBACK,
+    ROOT,
+    _P00_DESCRIPCION_SIGNALS,
+    _REOCR_IMPROVEMENT_FACTOR,
+    _REOCR_MIN_CHARS,
+    _apply_pdf_override,
+    _find_focus_paths,
+    _format_validation_error,
+    _get_client,
+    _load_overrides,
+    _parse_paginas,
+    _patch_schema_for_openai,
+    _resolve_cvegeo,
+)
 
-# ── Rutas y configuración ──
+# ── Rutas ──
 
-ROOT = Path(__file__).resolve().parents[2]
-CATALOG = ROOT / "catalogs" / "municipios_inegi.csv"
 OUTPUT_ROOT = ROOT / "predial-mx-v2"
 
-OPENAI_MODEL = os.environ.get("OPENAI_MODEL", "gpt-5.4-mini")
-OPENAI_MODEL_FALLBACK = os.environ.get("OPENAI_MODEL_FALLBACK", "gpt-5.4")
-
-_client: OpenAI | None = None
 _schema_cache: dict | None = None
 
 
-def _patch_schema_for_openai(node):
-    """Recursivamente normaliza el schema para el modo strict de OpenAI:
-       - `oneOf` → `anyOf` (strict mode no permite oneOf)
-       - elimina `discriminator` (no permitido)
-       - elimina `default`, `title`, `minItems`, `maxItems` (descriptivos no usados)
-    """
-    if isinstance(node, dict):
-        if "oneOf" in node:
-            node["anyOf"] = node.pop("oneOf")
-        for k in ("discriminator", "default", "title"):
-            node.pop(k, None)
-        for v in node.values():
-            _patch_schema_for_openai(v)
-    elif isinstance(node, list):
-        for item in node:
-            _patch_schema_for_openai(item)
-    return node
-
-
 def _build_openai_schema() -> dict:
-    """Convierte PredialOutputV2 a JSON Schema strict de OpenAI:
-       - `tabla_cruda` (genérico `list[dict]`) se tipa como `{descripcion, valores}` por fila
-       - `oneOf` → `anyOf`, sin `discriminator`, sin `default`/`title` (no permitidos en strict)
-    Tras la inferencia, `PredialOutputV2.model_validate` acepta el resultado.
-    """
+    """Convierte PredialOutputV2 a JSON Schema strict de OpenAI."""
     global _schema_cache
     if _schema_cache is not None:
         return _schema_cache
@@ -101,200 +80,6 @@ def _build_openai_schema() -> dict:
     _patch_schema_for_openai(schema)
     _schema_cache = schema
     return schema
-
-
-def _get_client() -> OpenAI:
-    global _client
-    if _client is None:
-        api_key = os.environ.get("OPENAI_API_KEY")
-        if not api_key:
-            raise EnvironmentError("OPENAI_API_KEY no definida en el entorno")
-        _client = OpenAI(api_key=api_key)
-    return _client
-
-
-# ── Mapeo CVEGEO → slug, nombre ──
-
-_CVEGEO_CACHE: dict[str, tuple[str, str]] = {}
-
-
-def _resolve_cvegeo(cvegeo: str) -> tuple[str, str]:
-    """Devuelve (slug, NOM_MUN) a partir del CVEGEO INEGI (5 dígitos)."""
-    cve = str(cvegeo).zfill(5)
-    if cve in _CVEGEO_CACHE:
-        return _CVEGEO_CACHE[cve]
-
-    with CATALOG.open(encoding="utf-8-sig") as f:
-        for row in csv.DictReader(f):
-            if row["CVEGEO"] == cve:
-                nom = row["NOM_MUN"]
-                pair = (slugify(nom), nom)
-                _CVEGEO_CACHE[cve] = pair
-                return pair
-    raise KeyError(f"CVEGEO {cve} no encontrado en {CATALOG}")
-
-
-# ── Localizar source (con manual overrides) ──
-
-# Cache de overrides por estado: {(anio, cvegeo): {pdf_correcto, paginas, nota}}
-_OVERRIDE_CACHE: dict[str, dict[tuple[int, str], dict]] = {}
-
-
-def _load_overrides(estado: str) -> dict[tuple[int, str], dict]:
-    """Carga `data/{estado}/manual_pdf_overrides.csv` si existe.
-
-    Cada fila apunta una pareja (anio, cvegeo) a un PDF distinto + páginas
-    específicas. Usado para casos donde el segmenter eligió un decreto
-    incorrecto (fe de erratas, anexo, etc.) — patrón P-10 del HITL.
-    """
-    if estado in _OVERRIDE_CACHE:
-        return _OVERRIDE_CACHE[estado]
-    p = ROOT / "data" / estado / "manual_pdf_overrides.csv"
-    out: dict[tuple[int, str], dict] = {}
-    if p.exists():
-        with p.open(encoding="utf-8-sig", newline="") as f:
-            for r in csv.DictReader(f):
-                try:
-                    anio = int(r["anio"])
-                except (KeyError, ValueError):
-                    continue
-                cvegeo = (r.get("cvegeo") or "").strip().zfill(5)
-                if not cvegeo:
-                    continue
-                out[(anio, cvegeo)] = {
-                    "pdf_correcto": (r.get("pdf_correcto") or "").strip(),
-                    "paginas": (r.get("paginas") or "").strip(),
-                    "nota": (r.get("nota_auditor") or "").strip(),
-                }
-    _OVERRIDE_CACHE[estado] = out
-    return out
-
-
-def _parse_paginas(spec: str) -> list[int] | None:
-    """Convierte '30', '15-16', '1,3,5' o '' (vacío) → list[int] | None.
-
-    None significa "todas las páginas".
-    """
-    if not spec:
-        return None
-    pages: list[int] = []
-    for part in spec.split(","):
-        part = part.strip()
-        if "-" in part:
-            a, b = part.split("-", 1)
-            pages.extend(range(int(a), int(b) + 1))
-        elif part:
-            pages.append(int(part))
-    return pages or None
-
-
-def _apply_pdf_override(
-    estado: str, prefijo: str, anio: int, slug: str, override: dict,
-) -> tuple[Path | None, Path | None]:
-    """Genera TXT/PDF temporales recortados a las páginas indicadas en el override.
-
-    Output cacheado en `data/{estado}/focus_predial_overrides/{anio}/{prefijo}_PREDIAL_{anio}_{slug}.{txt,pdf}`.
-    Si el archivo override existe ya y las páginas indicadas no cambian, se reutiliza.
-    """
-    src_pdf = Path(override["pdf_correcto"])
-    if not src_pdf.is_absolute():
-        src_pdf = ROOT / src_pdf
-    if not src_pdf.exists():
-        print(f"  [override] PDF no existe: {src_pdf}")
-        return (None, None)
-
-    pages = _parse_paginas(override["paginas"])
-
-    # Output paths
-    out_dir = ROOT / "data" / estado / "focus_predial_overrides" / str(anio)
-    out_dir.mkdir(parents=True, exist_ok=True)
-    name = f"{prefijo}_PREDIAL_{anio}_{slug}"
-    out_txt = out_dir / f"{name}.txt"
-    out_pdf = out_dir / f"{name}.pdf"
-
-    # Si el cache del override existe Y es más nuevo que el src + cvs, usar
-    if out_txt.exists() and out_pdf.exists():
-        if out_txt.stat().st_mtime >= src_pdf.stat().st_mtime:
-            return (out_txt, out_pdf)
-
-    # Recortar PDF y extraer texto
-    try:
-        import fitz
-    except ImportError:
-        # Sin PyMuPDF, copiar el PDF entero y extraer texto si pages=None
-        if pages is None:
-            import shutil
-            shutil.copy2(src_pdf, out_pdf)
-            return (None, out_pdf)
-        return (None, None)
-
-    with fitz.open(src_pdf) as doc:
-        n = doc.page_count
-        if pages is None:
-            page_idxs = list(range(n))
-        else:
-            page_idxs = [p - 1 for p in pages if 1 <= p <= n]
-
-        if not page_idxs:
-            return (None, None)
-
-        # Extraer texto concatenado
-        texto = "\n\n".join(
-            doc[i].get_text("text") or "" for i in page_idxs
-        ).strip()
-
-        # Recortar PDF
-        new_doc = fitz.open()
-        for i in page_idxs:
-            new_doc.insert_pdf(doc, from_page=i, to_page=i)
-        new_doc.save(str(out_pdf), deflate=True)
-        new_doc.close()
-
-    out_txt.write_text(texto, encoding="utf-8")
-    return (out_txt, out_pdf)
-
-
-def _find_focus_paths(
-    estado: str,
-    prefijo: str,
-    anio: int,
-    slug: str,
-    cvegeo: str | None = None,
-) -> tuple[Path | None, Path | None]:
-    """Localiza el TXT/PDF de la sección predial.
-
-    Orden:
-      1. Manual override (`data/{estado}/manual_pdf_overrides.csv`) si hay match
-         por (anio, cvegeo). Genera TXT/PDF temporales recortados a las páginas
-         indicadas. P-10 del HITL.
-      2. `focus_predial/{anio}/{prefijo}_PREDIAL_{anio}_{slug}.{txt,pdf}` directo.
-      3. rglob fallback bajo `focus_predial/`.
-    """
-    # 1. Manual override
-    if cvegeo:
-        cvegeo_padded = str(cvegeo).zfill(5)
-        overrides = _load_overrides(estado)
-        ov = overrides.get((anio, cvegeo_padded))
-        if ov:
-            txt, pdf = _apply_pdf_override(estado, prefijo, anio, slug, ov)
-            if txt is not None:
-                return (txt, pdf)
-
-    # 2 + 3. Default behavior
-    base = ROOT / "data" / estado / "focus_predial"
-    name = f"{prefijo}_PREDIAL_{anio}_{slug}"
-    primary = base / str(anio)
-    txt = primary / f"{name}.txt"
-    pdf = primary / f"{name}.pdf"
-    if not txt.exists():
-        for hit in base.rglob(f"{name}.txt"):
-            txt = hit
-            break
-    if not pdf.exists():
-        for hit in base.rglob(f"{name}.pdf"):
-            pdf = hit
-            break
-    return (txt if txt.exists() else None, pdf if pdf.exists() else None)
 
 
 # ── Prompts ──
@@ -532,14 +317,6 @@ class _LLMCall:
     modelo: str
 
 
-def _format_validation_error(e: ValidationError) -> str:
-    parts = []
-    for err in e.errors()[:6]:
-        loc = ".".join(str(p) for p in err["loc"])
-        parts.append(f"  • {loc}: {err['msg']}")
-    return "\n".join(parts)
-
-
 def _call_llm(messages: list[dict], model: str | None = None) -> _LLMCall:
     """Llamada estándar (text-only) con structured output strict."""
     return _call_llm_completions(messages, model=model)
@@ -640,33 +417,6 @@ class ExtractionResult:
 
 
 # ── Cascada re-OCR → visión (rescue para casos con texto fuente vacío/truncado) ──
-
-# Mínima longitud (chars) que el TXT re-OCR debe alcanzar para considerarse "rescatado"
-# y reintentar el LLM. Por debajo de esto asumimos que el OCR no ayudó y pasamos a vision.
-_REOCR_MIN_CHARS = 1500
-_REOCR_IMPROVEMENT_FACTOR = 3.0  # también requerimos ≥3× más que el original
-
-# Patrones en `descripcion_estructural` que indican que el documento sí está
-# correctamente clasificado como otro_no_clasificado porque NO contiene tarifa
-# real (P-00 del HITL: el municipio remite a otra ley o solo establece un mínimo).
-# Cuando el LLM emite estas señales, no vale la pena gastar CPU/tokens en re-OCR
-# o visión — el resultado ya es legítimamente correcto.
-_P00_DESCRIPCION_SIGNALS = (
-    "sólo menciona una cuota",
-    "solo menciona una cuota",
-    "no establece tarifa",
-    "rige por la ley general",
-    "remite a la ley general",
-    "no causa el impuesto",
-    "ley estatal de hacienda",
-    "ley general de hacienda municipal",
-    "se rige por la ley",
-    "tres salarios mínimos",
-    "tres salarios minimos",
-    "única tasa visible corresponde al impuesto sobre adquisición",
-    "unica tasa visible corresponde al impuesto sobre adquisicion",
-)
-
 
 def _should_attempt_rescue(result_output: PredialOutputV2 | None) -> bool:
     """Determina si vale la pena gastar tokens/CPU en OCR/vision rescue.

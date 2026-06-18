@@ -38,7 +38,13 @@ from pathlib import Path
 import fitz  # PyMuPDF
 
 from src.core.muni_matcher import MuniMatcher
-from src.core.segment_utils import PatternSpec, find_predial_section
+from src.core.segment_utils import (
+    HITL_EXTRA_FIELDS,
+    PatternSpec,
+    SegmentResult,
+    find_predial_section,
+    hitl_extra_columns,
+)
 from src.estados.sonora import config
 
 
@@ -70,6 +76,7 @@ class SeccionPredial:
     page_start: int = -1
     page_end: int = -1
     method: str = ""
+    _seg_result: SegmentResult | None = None
 
 
 # ═══════════════════════════════════════════════════
@@ -312,6 +319,7 @@ def extract_predial_section(doc: fitz.Document, ley: LeyMunicipal) -> SeccionPre
         page_start=p_start,
         page_end=p_end,
         method=result.method,
+        _seg_result=result,
     )
 
 
@@ -422,6 +430,7 @@ _SEGMENT_FIELDS = [
     "ley_page_start", "ley_page_end",
     "segment_method", "page_start", "page_end",
     "txt_chars", "confidence", "error_class", "error_detail",
+    *[f for f in HITL_EXTRA_FIELDS if f != "confidence"],
 ]
 
 
@@ -505,6 +514,7 @@ def run_extract_sections(adapter, year: str | None = None) -> Path:
                     print(f"    [WARN] {pdf_path.name}/{ley.slug}: PDF slice failed ({e})")
 
                 rows.append({
+                    **hitl_extra_columns(seccion._seg_result),
                     "ejercicio": ley.ejercicio,
                     "slug": ley.slug,
                     "source_pdf": raw_pdf.name,

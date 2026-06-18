@@ -113,19 +113,27 @@ P2. ¿La tabla principal del predial tiene columnas de RANGOS por valor catastra
     SÍ (con rangos numéricos) → ANTES de elegir variante: ejecuta el
         TEST DE HETEROGENEIDAD (sección abajo). Después regresa a P5.
 
-P3. (Sin rangos.) ¿La tabla es un catálogo de tasas al millar por CATEGORÍA
-    de predio (urbano vs rústico, edificado vs baldío, habitacional vs comercial,
-    con barda vs sin barda, etc.)?
-    SÍ → `tarifa_millar`. Cada fila = una categoría. Si además existe
-         "$X + Y al millar" en alguna fila, llena `cuota_fija_adicional` en esa
-         fila. STOP.
+P3. (Sin rangos.) ¿Existen tasas diferenciadas por tipo de predio
+    (urbano vs rústico, edificado vs baldío, habitacional vs comercial,
+    con barda vs sin barda, agropecuario vs no agropecuario, etc.)?
+    SÍ → `tarifa_millar` con UNA sola TarifaPredial. Cada categoría de
+         predio = una fila en `tabla`. Si además existe "$X + Y al millar"
+         en alguna fila, llena `cuota_fija_adicional` en esa fila. STOP.
+
+         ANTI-PATRÓN: NO crees múltiples TarifaPredial con `tasa_unica`
+         para cada tipo de predio. Si hay tasas distintas para urbano y
+         rústico (ej: "urbano: 1.8 al millar; rústico: 0.8 al millar"),
+         eso es UNA tarifa_millar con dos filas, ambito=general.
+
     NO → P4.
 
 P4. (Sin rangos, sin catálogo categórico.) Cuenta cuántas tarifas hay y de qué
     tipo:
 
-    ─ Una sola tasa al millar/% sobre valor catastral
+    ─ UNA SOLA tasa aplicada a TODOS los predios sin distinción
        → `tasa_unica` con `unidad ∈ {al_millar, al_ciento, porcentaje}`.
+         `tasa_unica` significa literalmente que TODA la base contribuyente
+         paga la misma tasa. Si hay tasas distintas por tipo → P3.
          STOP.
 
     ─ Una sola tarifa por superficie ("$X por m²", "$X por hectárea")
@@ -303,6 +311,11 @@ Re-extrae el mismo texto. Recordatorios prioritarios:
 
   • Dos tarifas con shapes distintos (una con brackets, otra plana) →
     TARIFAS SEPARADAS en `tarifas[]`, no columnas de una sola tabla.
+
+  • Tasas diferenciadas por tipo de predio (urbano vs rústico, etc.) sin
+    brackets → UNA `tarifa_millar` con una fila por categoría. NO crear
+    múltiples TarifaPredial con `tasa_unica`. `tasa_unica` = tasa única
+    para TODA la base sin distinción.
 
   • Progresivo diferenciado por categoría (urbano y rústico con brackets
     distintos) → un `BloqueProgresivo` por categoría, validado

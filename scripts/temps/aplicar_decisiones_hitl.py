@@ -1,37 +1,28 @@
-"""Aplica decisiones HITL desde `cambios_interanuales.csv`.
+"""Aplica decisiones HITL desde la cola unificada.
 
-Lee el CSV producido por `detectar_cambios_interanuales.py` con la columna
-`decision` llena por un humano. Cada fila puede tener una de cuatro decisiones:
+Lee ``output/hitl/cola_unificada.csv`` (o un CSV compatible) con la columna
+``decision`` llena por un humano.  Decisiones posibles:
 
-  - `aceptar_nuevo`              el cambio detectado es real (reforma legal o
-                                 ajuste documentado). No-op, se registra.
-  - `propagar_previo`            el JSON nuevo es incorrecto; copia el del año
-                                 anterior con `_meta.modelo = imputed_human_propagation`
-                                 a `predial-mx-v2-hitl/<estado>/`.
-  - `reextraer`                  el JSON nuevo es incorrecto; agrega el archivo
-                                 a `cola_reextraccion.csv` con un hint para
-                                 reorientar la segmentación / extracción LLM.
-  - `cambio_real_documentado`    como `aceptar_nuevo` pero con justificación
-                                 documental en `notas` (reforma específica).
+  - ``confirmar_ok``              hallazgo revisado, sin problema.  No-op.
+  - ``propagar_previo``           (D12) copia JSON del año anterior
+                                  con ``_meta.modelo = imputed_human_propagation``.
+  - ``reextraer``                 agrega a ``cola_reextraccion.csv`` para
+                                  re-extracción LLM con hint.
+  - ``re_segmentar``              escribe override en
+                                  ``data/{estado}/manual_pdf_overrides.csv``,
+                                  luego encola para re-extracción.
+                                  Requiere ``paginas=X-Y`` en campo ``notas``;
+                                  opcionalmente ``pdf=ruta/al/pdf``.
+  - ``ignorar``                   descarta hallazgo.  No-op.
 
-Salidas en `output/anexos/`:
-  - hitl_bitacora.csv       append-only: cada decisión aplicada con timestamp
-  - cola_reextraccion.csv   archivos pendientes de re-extracción
-
-Y archivos JSON propagados en `predial-mx-v2-hitl/<estado>/`.
-
-Diseño:
-  - NUNCA mutamos `predial-mx-v2/` original. Los JSONs propagados van a una
-    carpeta paralela `predial-mx-v2-hitl/` que tiene prioridad downstream.
-  - La bitácora es append-only: cada corrida añade decisiones nuevas y mantiene
-    historial completo para auditoría de la tesis.
-  - Decisiones sin valor (filas con `decision` vacío) se ignoran. Esto permite
-    revisar el CSV en bloques.
+Salidas:
+  - ``output/hitl/hitl_bitacora.csv``      append-only con timestamp
+  - ``output/hitl/cola_reextraccion.csv``  archivos para re-extracción
 
 Uso:
   python -m scripts.aplicar_decisiones_hitl
-  python -m scripts.aplicar_decisiones_hitl --dry-run     # solo reporta
-  python -m scripts.aplicar_decisiones_hitl --csv otro.csv
+  python -m scripts.aplicar_decisiones_hitl --dry-run
+  python -m scripts.aplicar_decisiones_hitl --csv output/hitl/cola_unificada.csv
 """
 
 from __future__ import annotations
@@ -39,34 +30,39 @@ from __future__ import annotations
 import argparse
 import csv
 import json
+import re
 from datetime import datetime, timezone
 from pathlib import Path
 
-OUT_DIR = Path("output/anexos")
-HITL_JSON_DIR = Path("predial-mx-v2-hitl")
-DEFAULT_CSV = OUT_DIR / "cambios_interanuales.csv"
-QUEUE_CSV = OUT_DIR / "cola_reextraccion.csv"
-BITACORA_CSV = OUT_DIR / "hitl_bitacora.csv"
+HITL_DIR = Path("output/hitl")
+HITL_JSON_DIR = Path("predial-mx-v3-hitl")
+DEFAULT_CSV = HITL_DIR / "cola_unificada.csv"
+QUEUE_CSV = HITL_DIR / "cola_reextraccion.csv"
+BITACORA_CSV = HITL_DIR / "hitl_bitacora.csv"
+DATA_ROOT = Path("data")
 
 VALID_DECISIONS = {
-    "aceptar_nuevo",
+    "confirmar_ok",
     "propagar_previo",
+    "corregir_previo",
     "reextraer",
-    "cambio_real_documentado",
+    "re_segmentar",
+    "ignorar",
 }
 
-# Hints sugeridos por tipo de cambio (orientan al extractor LLM al re-extraer).
 REEXTRACT_HINT = (
     "Extraer ARTÍCULO PRINCIPAL DE TARIFA del impuesto predial. "
     "Ignorar artículos de mínimo predial, transitorios, vigencia, beneficios "
-    "y bonificaciones a menos que sean la única tarifa. Si el documento "
-    "contiene la tarifa en varios artículos, integrar la mecánica completa."
+    "y bonificaciones a menos que sean la única tarifa."
 )
+
+_RE_PAGINAS = re.compile(r"paginas\s*=\s*([\d,\s-]+)")
+_RE_PDF = re.compile(r"pdf\s*=\s*(\S+)")
 
 
 def _load_decisions(csv_path: Path) -> list[dict]:
     if not csv_path.exists():
-        raise SystemExit(f"No existe {csv_path}. Corre primero detectar_cambios_interanuales.")
+        raise SystemExit(f"No existe {csv_path}. Corre primero run_detectors.")
     with csv_path.open(encoding="utf-8") as f:
         return list(csv.DictReader(f))
 
@@ -77,9 +73,10 @@ def _append_bitacora(rows: list[dict]) -> None:
     is_new = not BITACORA_CSV.exists()
     BITACORA_CSV.parent.mkdir(parents=True, exist_ok=True)
     cols = [
-        "timestamp", "decision", "estado", "municipio", "anio_prev", "anio",
-        "tipo_prev", "tipo_nuevo", "severidad_max", "racha_estable_previa",
-        "json_prev", "json_nuevo", "json_propagado", "notas",
+        "timestamp", "id", "decision", "detector", "severidad",
+        "estado", "estado_slug", "municipio", "municipio_slug",
+        "cvegeo", "anio", "senal", "json_path", "notas",
+        "json_propagado",
     ]
     with BITACORA_CSV.open("a", encoding="utf-8", newline="") as f:
         w = csv.DictWriter(f, fieldnames=cols, extrasaction="ignore")
@@ -88,39 +85,132 @@ def _append_bitacora(rows: list[dict]) -> None:
         w.writerows(rows)
 
 
-def _write_queue(rows: list[dict]) -> None:
+def _write_reextraction_queue(rows: list[dict]) -> None:
     if not rows:
         return
     QUEUE_CSV.parent.mkdir(parents=True, exist_ok=True)
-    cols = ["estado", "estado_slug", "municipio", "anio", "json_path", "hint", "notas"]
-    with QUEUE_CSV.open("w", encoding="utf-8", newline="") as f:
+    cols = [
+        "estado_slug", "municipio_slug", "cvegeo", "anio",
+        "json_path", "hint", "notas", "procesado", "timestamp",
+    ]
+    is_new = not QUEUE_CSV.exists()
+    with QUEUE_CSV.open("a", encoding="utf-8", newline="") as f:
         w = csv.DictWriter(f, fieldnames=cols, extrasaction="ignore")
-        w.writeheader()
+        if is_new:
+            w.writeheader()
         w.writerows(rows)
 
 
-def _propagate(row: dict, timestamp: str) -> Path | None:
-    """Copia el JSON del año previo al año nuevo en predial-mx-v2-hitl/."""
-    src = Path(row["json_prev"])
-    new_path = Path(row["json_nuevo"])
-    if not src.exists():
-        print(f"  [ERROR] JSON previo no existe: {src}")
+def _parse_resegment_notas(notas: str) -> tuple[str, str]:
+    """Extract paginas and pdf from notas field.
+
+    Expected format: ``paginas=20-22`` or ``paginas=20-22; pdf=path/to/file.pdf``
+    """
+    paginas = ""
+    pdf = ""
+    m = _RE_PAGINAS.search(notas)
+    if m:
+        paginas = m.group(1).strip()
+    m = _RE_PDF.search(notas)
+    if m:
+        pdf = m.group(1).strip()
+    return paginas, pdf
+
+
+def _write_override(
+    estado_slug: str, anio: int, cvegeo: str,
+    paginas: str, pdf_correcto: str, nota: str,
+) -> Path:
+    """Append a row to data/{estado}/manual_pdf_overrides.csv."""
+    override_csv = DATA_ROOT / estado_slug / "manual_pdf_overrides.csv"
+    override_csv.parent.mkdir(parents=True, exist_ok=True)
+    cols = ["anio", "cvegeo", "pdf_correcto", "paginas", "nota_auditor"]
+    is_new = not override_csv.exists()
+    with override_csv.open("a", encoding="utf-8", newline="") as f:
+        w = csv.DictWriter(f, fieldnames=cols)
+        if is_new:
+            w.writeheader()
+        w.writerow({
+            "anio": anio,
+            "cvegeo": cvegeo,
+            "pdf_correcto": pdf_correcto,
+            "paginas": paginas,
+            "nota_auditor": nota,
+        })
+    return override_csv
+
+
+def _propagate_v3(row: dict, timestamp: str) -> Path | None:
+    """For D12 propagar_previo: find previous year's JSON and copy it."""
+    json_path = Path(row.get("json_path", ""))
+    if not json_path.exists():
+        print(f"  [ERROR] JSON no existe: {json_path}")
         return None
-    estado_dir = new_path.parent.name  # último segmento (estado_slug)
-    dst = HITL_JSON_DIR / estado_dir / new_path.name
+
+    est_slug = row.get("estado_slug", "")
+    muni_slug = row.get("municipio_slug", "")
+    anio = int(row.get("anio", 0))
+
+    # Find previous year's JSON in same directory
+    prev_year = anio - 1
+    parent = json_path.parent
+    prefix = json_path.name.split(f"_{anio}_")[0]
+    prev_path = parent / f"{prefix}_{prev_year}_{muni_slug}.json"
+    if not prev_path.exists():
+        print(f"  [ERROR] JSON año previo no existe: {prev_path}")
+        return None
+
+    dst = HITL_JSON_DIR / est_slug / json_path.name
     dst.parent.mkdir(parents=True, exist_ok=True)
     try:
-        doc = json.loads(src.read_text(encoding="utf-8"))
+        doc = json.loads(prev_path.read_text(encoding="utf-8"))
     except Exception as e:
-        print(f"  [ERROR] Leyendo {src}: {e}")
+        print(f"  [ERROR] Leyendo {prev_path}: {e}")
         return None
+
     meta = doc.get("_meta") or {}
     meta["modelo"] = "imputed_human_propagation"
-    meta["imputed_from_year"] = int(row["anio_prev"])
-    meta["target_year"] = int(row["anio"])
+    meta["imputed_from_year"] = prev_year
+    meta["target_year"] = anio
     meta["hitl_timestamp"] = timestamp
     meta["hitl_decision"] = "propagar_previo"
     doc["_meta"] = meta
+
+    dst.write_text(json.dumps(doc, ensure_ascii=False, indent=2), encoding="utf-8")
+    return dst
+
+
+def _correct_prev_v3(row: dict, timestamp: str) -> Path | None:
+    """For D12 corregir_previo: copy current year's JSON to overwrite previous year."""
+    json_path = Path(row.get("json_path", ""))
+    if not json_path.exists():
+        print(f"  [ERROR] JSON no existe: {json_path}")
+        return None
+
+    est_slug = row.get("estado_slug", "")
+    muni_slug = row.get("municipio_slug", "")
+    anio = int(row.get("anio", 0))
+
+    prev_year = anio - 1
+    prefix = json_path.name.split(f"_{anio}_")[0]
+    prev_name = f"{prefix}_{prev_year}_{muni_slug}.json"
+
+    dst = HITL_JSON_DIR / est_slug / prev_name
+    dst.parent.mkdir(parents=True, exist_ok=True)
+    try:
+        doc = json.loads(json_path.read_text(encoding="utf-8"))
+    except Exception as e:
+        print(f"  [ERROR] Leyendo {json_path}: {e}")
+        return None
+
+    meta = doc.get("_meta") or {}
+    meta["modelo"] = "imputed_human_correction"
+    meta["imputed_from_year"] = anio
+    meta["target_year"] = prev_year
+    meta["hitl_timestamp"] = timestamp
+    meta["hitl_decision"] = "corregir_previo"
+    doc["_meta"] = meta
+
     dst.write_text(json.dumps(doc, ensure_ascii=False, indent=2), encoding="utf-8")
     return dst
 
@@ -140,11 +230,8 @@ def main():
     timestamp = datetime.now(timezone.utc).isoformat(timespec="seconds")
     bitacora: list[dict] = []
     cola: list[dict] = []
-    contadores = {
-        "aceptar_nuevo": 0, "propagar_previo": 0, "reextraer": 0,
-        "cambio_real_documentado": 0, "sin_decision": 0, "invalida": 0,
-        "propagar_error": 0,
-    }
+    contadores: dict[str, int] = {d: 0 for d in VALID_DECISIONS}
+    contadores.update({"sin_decision": 0, "invalida": 0, "error": 0})
 
     for row in decisiones:
         decision = (row.get("decision") or "").strip().lower()
@@ -153,78 +240,111 @@ def main():
             continue
         if decision not in VALID_DECISIONS:
             print(f"  [WARN] decisión inválida '{decision}' en "
-                  f"{row['municipio']} {row['anio']}")
+                  f"{row.get('municipio', '?')} {row.get('anio', '?')}")
             contadores["invalida"] += 1
             continue
 
         bit_row = {
             "timestamp": timestamp,
+            "id": row.get("id", ""),
             "decision": decision,
-            "estado": row.get("estado"),
-            "municipio": row.get("municipio"),
-            "anio_prev": row.get("anio_prev"),
-            "anio": row.get("anio"),
-            "tipo_prev": row.get("tipo_prev"),
-            "tipo_nuevo": row.get("tipo_nuevo"),
-            "severidad_max": row.get("severidad_max"),
-            "racha_estable_previa": row.get("racha_estable_previa"),
-            "json_prev": row.get("json_prev"),
-            "json_nuevo": row.get("json_nuevo"),
-            "json_propagado": "",
+            "detector": row.get("detector", ""),
+            "severidad": row.get("severidad", ""),
+            "estado": row.get("estado", ""),
+            "estado_slug": row.get("estado_slug", ""),
+            "municipio": row.get("municipio", ""),
+            "municipio_slug": row.get("municipio_slug", ""),
+            "cvegeo": row.get("cvegeo", ""),
+            "anio": row.get("anio", ""),
+            "senal": row.get("senal", ""),
+            "json_path": row.get("json_path", ""),
             "notas": row.get("notas", ""),
+            "json_propagado": "",
         }
 
         if decision == "propagar_previo":
             if args.dry_run:
-                dst = HITL_JSON_DIR / Path(row["json_nuevo"]).parent.name / Path(row["json_nuevo"]).name
-                bit_row["json_propagado"] = str(dst) + " (dry-run)"
+                bit_row["json_propagado"] = "(dry-run)"
             else:
-                dst = _propagate(row, timestamp)
+                dst = _propagate_v3(row, timestamp)
                 if dst is None:
-                    contadores["propagar_error"] += 1
+                    contadores["error"] += 1
                     continue
-                bit_row["json_propagado"] = dst.as_posix()
-            contadores["propagar_previo"] += 1
+                bit_row["json_propagado"] = str(dst)
+
+        elif decision == "corregir_previo":
+            if args.dry_run:
+                bit_row["json_propagado"] = "(dry-run)"
+            else:
+                dst = _correct_prev_v3(row, timestamp)
+                if dst is None:
+                    contadores["error"] += 1
+                    continue
+                bit_row["json_propagado"] = str(dst)
 
         elif decision == "reextraer":
             cola.append({
-                "estado": row.get("estado"),
-                "estado_slug": row.get("estado_slug"),
-                "municipio": row.get("municipio"),
-                "anio": row.get("anio"),
-                "json_path": row.get("json_nuevo"),
+                "estado_slug": row.get("estado_slug", ""),
+                "municipio_slug": row.get("municipio_slug", ""),
+                "cvegeo": row.get("cvegeo", ""),
+                "anio": row.get("anio", ""),
+                "json_path": row.get("json_path", ""),
                 "hint": REEXTRACT_HINT,
                 "notas": row.get("notas", ""),
+                "procesado": "",
+                "timestamp": "",
             })
-            contadores["reextraer"] += 1
 
-        elif decision == "aceptar_nuevo":
-            contadores["aceptar_nuevo"] += 1
+        elif decision == "re_segmentar":
+            notas = row.get("notas", "")
+            paginas, pdf_correcto = _parse_resegment_notas(notas)
+            if not paginas:
+                print(f"  [WARN] re_segmentar sin paginas= en notas: "
+                      f"{row.get('municipio', '?')} {row.get('anio', '?')}")
+                contadores["error"] += 1
+                continue
+            if not args.dry_run:
+                _write_override(
+                    row.get("estado_slug", ""),
+                    int(row.get("anio", 0)),
+                    row.get("cvegeo", ""),
+                    paginas,
+                    pdf_correcto,
+                    f"HITL re_segmentar: {notas}",
+                )
+            cola.append({
+                "estado_slug": row.get("estado_slug", ""),
+                "municipio_slug": row.get("municipio_slug", ""),
+                "cvegeo": row.get("cvegeo", ""),
+                "anio": row.get("anio", ""),
+                "json_path": row.get("json_path", ""),
+                "hint": f"OVERRIDE paginas={paginas}. " + REEXTRACT_HINT,
+                "notas": notas,
+                "procesado": "",
+                "timestamp": "",
+            })
 
-        elif decision == "cambio_real_documentado":
-            contadores["cambio_real_documentado"] += 1
-
+        contadores[decision] += 1
         bitacora.append(bit_row)
 
-    # Escribir resultados.
     if not args.dry_run:
         _append_bitacora(bitacora)
-        _write_queue(cola)
+        _write_reextraction_queue(cola)
 
     print("\nResumen:")
-    print(f"  propagar_previo:          {contadores['propagar_previo']}"
-          f"    -> {HITL_JSON_DIR}/")
-    print(f"  reextraer:                {contadores['reextraer']}"
-          f"    -> {QUEUE_CSV}")
-    print(f"  aceptar_nuevo:            {contadores['aceptar_nuevo']}")
-    print(f"  cambio_real_documentado:  {contadores['cambio_real_documentado']}")
-    print(f"  filas sin decision:       {contadores['sin_decision']}")
-    print(f"  decisiones invalidas:     {contadores['invalida']}")
-    if contadores["propagar_error"]:
-        print(f"  errores al propagar:      {contadores['propagar_error']}")
-    if not args.dry_run:
-        print(f"\nBitacora: {BITACORA_CSV} (append-only)")
-    else:
+    for d in VALID_DECISIONS:
+        if contadores[d]:
+            print(f"  {d:30s} {contadores[d]}")
+    print(f"  {'sin_decision':30s} {contadores['sin_decision']}")
+    if contadores["invalida"]:
+        print(f"  {'invalida':30s} {contadores['invalida']}")
+    if contadores["error"]:
+        print(f"  {'error':30s} {contadores['error']}")
+    if cola:
+        print(f"\nCola re-extracción: {QUEUE_CSV} ({len(cola)} nuevas)")
+    if bitacora and not args.dry_run:
+        print(f"Bitácora: {BITACORA_CSV} (append-only)")
+    elif args.dry_run:
         print("\n(dry-run: no se escribió nada)")
 
 

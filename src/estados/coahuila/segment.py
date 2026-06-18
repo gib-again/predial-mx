@@ -16,7 +16,13 @@ from pathlib import Path
 
 from src.core.muni_matcher import MuniMatcher
 from src.core.pdf_utils import build_text_and_offsets, idx_to_page, save_pdf_slice
-from src.core.segment_utils import PatternSpec, find_predial_section
+from src.core.segment_utils import (
+    HITL_EXTRA_FIELDS,
+    PatternSpec,
+    SegmentResult,
+    find_predial_section,
+    hitl_extra_columns,
+)
 from src.core.text_utils import norm
 from src.estados.coahuila import config
 from src.estados.coahuila.config import (
@@ -193,10 +199,12 @@ _COAH_END_SPECS = [
 _matcher = MuniMatcher(cve_ent=config.CVE_ENT, aliases=config.ALIASES)
 
 
-def find_predial_in_window(norm_text: str, law_start: int, law_end: int):
+def find_predial_in_window(
+    norm_text: str, law_start: int, law_end: int,
+) -> tuple[int, int, SegmentResult] | None:
     """
     Busca la sección de impuesto predial dentro de [law_start, law_end].
-    Devuelve (predial_start, predial_end) o None.
+    Devuelve (predial_start, predial_end, SegmentResult) o None.
     """
     law_start = max(0, law_start)
     law_end = min(len(norm_text), law_end)
@@ -221,7 +229,7 @@ def find_predial_in_window(norm_text: str, law_start: int, law_end: int):
     if predial_end <= predial_start:
         return None
 
-    return predial_start, predial_end
+    return predial_start, predial_end, result
 
 
 # ══════════════════════════════════════════════════════════════
@@ -474,6 +482,7 @@ def run_extract_sections(adapter) -> Path:
 
     pdf_cache = {}
     out_rows = []
+    seg_rows: list[dict] = []
 
     for row in master_rows:
         ejercicio = row.get("ejercicio", "")
@@ -546,7 +555,7 @@ def run_extract_sections(adapter) -> Path:
             out_rows.append(out)
             continue
 
-        start_idx, end_idx = span
+        start_idx, end_idx, seg_result = span
         p_start_pred = idx_to_page(start_idx, page_starts)
         p_end_pred = idx_to_page(end_idx - 1, page_starts)
 
@@ -570,6 +579,20 @@ def run_extract_sections(adapter) -> Path:
 
         out_rows.append(out)
 
+        seg_rows.append({
+            "ejercicio": ejercicio,
+            "municipio": municipio,
+            "slug": muni_slug,
+            "source_pdf": pdf_file,
+            "predial_found": "true",
+            "predial_method": attempt_label,
+            "predial_page_start": p_start_pred,
+            "predial_page_end": p_end_pred,
+            "txt_file": txt_path.name,
+            "txt_chars": end_idx - start_idx,
+            **hitl_extra_columns(seg_result),
+        })
+
     # Guardar bitácora
     sections_csv = meta_dir / "predial_sections.csv"
     sections_csv.parent.mkdir(parents=True, exist_ok=True)
@@ -578,6 +601,21 @@ def run_extract_sections(adapter) -> Path:
         writer = csv.DictWriter(f, fieldnames=fieldnames)
         writer.writeheader()
         writer.writerows(out_rows)
+
+    # segment.csv estándar (compatible con HITL detectors)
+    _seg_fields = [
+        "ejercicio", "municipio", "slug", "source_pdf",
+        "predial_found", "predial_method",
+        "predial_page_start", "predial_page_end",
+        "txt_file", "txt_chars",
+        *HITL_EXTRA_FIELDS,
+    ]
+    seg_csv = meta_dir / "segment.csv"
+    with seg_csv.open("w", newline="", encoding="utf-8") as f:
+        writer = csv.DictWriter(f, fieldnames=_seg_fields)
+        writer.writeheader()
+        writer.writerows(seg_rows)
+    print(f"  segment.csv: {len(seg_rows)} filas → {seg_csv}")
 
     # Resumen
     counts = {}

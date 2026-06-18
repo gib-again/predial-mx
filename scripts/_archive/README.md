@@ -24,6 +24,11 @@ Conservados por referencia; no forman parte del pipeline activo.
 - `reorganize_jal.py` — Reorganización Jalisco
 - `fix_errors.py` — Fix errores puntuales
 
+### DiD / event study (reemplazados por HITL unificado)
+- `audit_treatment_anomalies.py` — Auditoría de anomalías DiD (superado por detectores D1-D12)
+- `apply_treatment_audit.py` — Aplicar audit DiD (superado por aplicar_decisiones_hitl.py)
+- `build_event_study_panel.py` — Panel event study (funcionalidad de tesis, no pipeline)
+
 ### Diagnóstico/reportes superados
 - `compactar_tipo_esquema.py`, `invalid_scheme.py` — Análisis tipo_esquema
 - `compare_coverage.py`, `report_residual_gaps.py` — Cobertura

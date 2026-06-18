@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Valida JSONs corregidos manualmente y los copia a json_predial/.
+Valida JSONs corregidos manualmente contra schema v3 (default) o v2.
 
 Uso:
     # Solo validar (no copia nada)
@@ -8,6 +8,9 @@ Uso:
 
     # Validar y copiar los válidos a json_predial/
     python -m scripts.validate_corrections {estado} --source json_corregidos/ --apply
+
+    # Forzar validación v2
+    python -m scripts.validate_corrections {estado} --source dir/ --schema v2
 """
 
 import argparse
@@ -23,6 +26,7 @@ def validate_and_apply(
     estado: str,
     source_dir: Path,
     apply: bool = False,
+    schema: str = "v3",
 ) -> int:
     """
     Valida JSONs en source_dir contra PredialSchema (Pydantic).
@@ -35,22 +39,24 @@ def validate_and_apply(
     Returns:
         Número de errores encontrados
     """
-    from src.core.schemas import PredialSchema
-
     adapter = get_adapter(estado)
     json_dir = adapter.json_dir
     prefijo = adapter.prefijo
 
     json_files = sorted(source_dir.rglob(f"{prefijo}_PREDIAL_*.json"))
     if not json_files:
-        # Intentar sin filtro de prefijo
         json_files = sorted(source_dir.rglob("*.json"))
 
     if not json_files:
         print(f"  No se encontraron JSONs en {source_dir}")
         return 0
 
-    print(f"  Validando {len(json_files)} JSONs de {source_dir}")
+    if schema == "v3":
+        from src.extraction.schema_v3 import PredialV3 as ValidatorModel
+    else:
+        from src.core.schemas import PredialSchema as ValidatorModel
+
+    print(f"  Validando {len(json_files)} JSONs de {source_dir} (schema {schema})")
 
     ok_count = 0
     err_count = 0
@@ -60,7 +66,7 @@ def validate_and_apply(
         try:
             data = json.loads(jf.read_text(encoding="utf-8"))
             predial_data = data.get("predial", data)
-            PredialSchema(**predial_data)
+            ValidatorModel(**predial_data)
 
             # Determinar destino
             parts = jf.stem.split("_", 3)
@@ -118,6 +124,10 @@ def main():
         "--apply", action="store_true",
         help="Copiar JSONs válidos a json_predial/ (sin esto solo valida)",
     )
+    parser.add_argument(
+        "--schema", choices=["v2", "v3"], default="v3",
+        help="Schema de validación (default: v3)",
+    )
 
     args = parser.parse_args()
 
@@ -125,7 +135,7 @@ def main():
         print(f"  [ERROR] No existe: {args.source}")
         sys.exit(1)
 
-    errors = validate_and_apply(args.estado, args.source, apply=args.apply)
+    errors = validate_and_apply(args.estado, args.source, apply=args.apply, schema=args.schema)
     sys.exit(1 if errors > 0 else 0)
 
 

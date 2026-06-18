@@ -1,17 +1,7 @@
 """LLM extraction v3 — multi-tarifa + transcripción fiel de tasas.
 
-Diferencias vs `llm_extract_v2.py`:
-  - response_format = PredialOutputV3 (multi-tarifa container).
-  - Prompts importados de `src/extraction/prompts_v3.py` (no inline).
-  - Output a `predial-mx-v3/{estado}/{archivo}.json`.
-  - `_meta_v3.procedencia`: tracking de archivo + páginas para HITL.
-  - `_should_attempt_rescue`: activa si CUALQUIER tarifa es otro_no_clasificado.
-  - Tasas fieles: el LLM transcribe sin reescalar; `unidad` lleva la escala.
-
-Reutiliza de llm_extract_v2 las utilidades schema-agnostic:
-  _get_client, _resolve_cvegeo, _find_focus_paths, _load_overrides,
-  _parse_paginas, _apply_pdf_override, _format_validation_error,
-  _P00_DESCRIPCION_SIGNALS, _REOCR_MIN_CHARS, _REOCR_IMPROVEMENT_FACTOR.
+Extractor canónico.  Usa schema_v3 (PredialOutputV3) y prompts_v3.
+Utilidades schema-agnostic viven en llm_utils.py.
 
 API pública:
   extraer_municipio(estado, cvegeo, anios) -> list[ExtractionResult]
@@ -29,19 +19,19 @@ from openai.lib._pydantic import to_strict_json_schema
 from pydantic import ValidationError
 
 from src.core.constants import PREFIJOS_ESTADO
-from src.extraction.llm_extract_v2 import (
+from src.extraction.llm_utils import (
     OPENAI_MODEL,
     OPENAI_MODEL_FALLBACK,
     ROOT,
     _P00_DESCRIPCION_SIGNALS,
     _REOCR_IMPROVEMENT_FACTOR,
     _REOCR_MIN_CHARS,
-    _apply_pdf_override,
     _find_focus_paths,
     _format_validation_error,
     _get_client,
     _load_overrides,
     _parse_paginas,
+    _patch_schema_for_openai,
     _resolve_cvegeo,
 )
 from src.extraction.prompts_v3 import (
@@ -58,25 +48,6 @@ OUTPUT_ROOT = ROOT / "predial-mx-v3"
 # ── Schema OpenAI (v3) ──
 
 _schema_cache_v3: dict | None = None
-
-
-def _patch_schema_for_openai(node):
-    """Normaliza recursivamente para strict mode de OpenAI.
-
-    Respecto a v2, añade remoción de minItems/maxItems (OpenAI los ignora
-    pero en strict mode pueden causar rechazo con schemas complejos).
-    """
-    if isinstance(node, dict):
-        if "oneOf" in node:
-            node["anyOf"] = node.pop("oneOf")
-        for k in ("discriminator", "default", "title", "minItems", "maxItems"):
-            node.pop(k, None)
-        for v in node.values():
-            _patch_schema_for_openai(v)
-    elif isinstance(node, list):
-        for item in node:
-            _patch_schema_for_openai(item)
-    return node
 
 
 def _build_openai_schema() -> dict:

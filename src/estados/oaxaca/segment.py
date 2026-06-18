@@ -52,7 +52,13 @@ from pathlib import Path
 import fitz  # PyMuPDF
 
 from src.core.muni_matcher import MuniMatcher
-from src.core.segment_utils import PatternSpec, find_predial_section
+from src.core.segment_utils import (
+    HITL_EXTRA_FIELDS,
+    PatternSpec,
+    SegmentResult,
+    find_predial_section,
+    hitl_extra_columns,
+)
 
 from src.estados.oaxaca import config
 
@@ -91,6 +97,7 @@ class SeccionPredial:
     page_start: int = -1
     page_end: int = -1
     method: str = ""
+    _seg_result: SegmentResult | None = None
 
 
 @dataclass
@@ -649,6 +656,7 @@ def extract_predial_section(
         page_start=p_start,
         page_end=p_end,
         method=result.method,
+        _seg_result=result,
     )
 
 
@@ -683,6 +691,7 @@ _META_FIELDS = [
     "predial_found", "predial_method",
     "predial_page_start", "predial_page_end",
     "txt_file", "txt_chars",
+    *HITL_EXTRA_FIELDS,
 ]
 
 
@@ -834,6 +843,7 @@ def run_segment(
                         "predial_page_end": "",
                         "txt_file": txt_path.name,
                         "txt_chars": txt_path.stat().st_size if txt_path.exists() else 0,
+                        **hitl_extra_columns(),
                     })
                     continue
 
@@ -893,6 +903,7 @@ def run_segment(
                     "predial_page_end": seccion.page_end,
                     "txt_file": txt_path.name,
                     "txt_chars": len(txt_content),
+                    **hitl_extra_columns(seccion._seg_result),
                 })
 
             doc.close()

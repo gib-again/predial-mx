@@ -62,7 +62,13 @@ from typing import Optional
 import fitz  # PyMuPDF
 
 from src.core.muni_matcher import MuniMatcher
-from src.core.segment_utils import PatternSpec, find_predial_section, save_focus_pdf
+from src.core.segment_utils import (
+    HITL_EXTRA_FIELDS,
+    PatternSpec,
+    find_predial_section,
+    hitl_extra_columns,
+    save_focus_pdf,
+)
 from src.estados.yucatan.config import (
     CVE_ENT, KEEP_MONTHS, MERIDA_REPLICA_YEARS, MERIDA_URLS,
 )
@@ -458,6 +464,7 @@ def run_extract_sections(adapter) -> Path:
                             "predial_found": "false", "predial_method": "none",
                             "predial_page_start": "", "predial_page_end": "",
                             "txt_file": txt_name, "txt_chars": 0,
+                            **hitl_extra_columns(),
                         })
                         continue
 
@@ -518,6 +525,7 @@ def run_extract_sections(adapter) -> Path:
                         "predial_page_start": pred_page_start,
                         "predial_page_end": pred_page_end,
                         "txt_file": txt_name, "txt_chars": len(predial_text),
+                        **hitl_extra_columns(result),
                     })
 
         except Exception as e:
@@ -542,6 +550,7 @@ def run_extract_sections(adapter) -> Path:
         "predial_found", "predial_method",
         "predial_page_start", "predial_page_end",
         "txt_file", "txt_chars",
+        *HITL_EXTRA_FIELDS,
     ]
     seg_csv = meta_dir / "segment.csv"
     with seg_csv.open("w", newline="", encoding="utf-8") as f:

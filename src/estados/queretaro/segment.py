@@ -35,6 +35,7 @@ from typing import Optional
 import fitz  # PyMuPDF
 
 from src.core.muni_matcher import MuniMatcher
+from src.core.segment_utils import HITL_EXTRA_FIELDS, hitl_extra_columns
 from src.estados.queretaro import config
 
 # ──────────────────────────────────────────────────────────────
@@ -577,6 +578,40 @@ def run_extract_sections(adapter) -> Path:
             for fn in fieldnames:
                 r.setdefault(fn, "")
         writer.writerows(log_rows)
+
+    # segment.csv estándar (compatible con HITL detectors)
+    _seg_fields = [
+        "ejercicio", "municipio", "slug", "source_pdf",
+        "predial_found", "predial_method",
+        "predial_page_start", "predial_page_end",
+        "txt_file", "txt_chars",
+        *HITL_EXTRA_FIELDS,
+    ]
+    seg_rows: list[dict] = []
+    for r in log_rows:
+        if r.get("status") != "ok":
+            continue
+        slug = r.get("municipio_slug", "")
+        ej = r.get("ejercicio", "")
+        seg_rows.append({
+            "ejercicio": ej,
+            "municipio": r.get("municipio", ""),
+            "slug": slug,
+            "source_pdf": r.get("doc_id", ""),
+            "predial_found": "true",
+            "predial_method": "articulo_predial",
+            "predial_page_start": "",
+            "predial_page_end": "",
+            "txt_file": f"{prefijo}_PREDIAL_{ej}_{slug}.txt",
+            "txt_chars": r.get("predial_chars", 0),
+            **hitl_extra_columns(),
+        })
+    seg_csv = meta_dir / "segment.csv"
+    with seg_csv.open("w", newline="", encoding="utf-8") as f:
+        writer = csv.DictWriter(f, fieldnames=_seg_fields)
+        writer.writeheader()
+        writer.writerows(seg_rows)
+    print(f"  segment.csv: {len(seg_rows)} filas → {seg_csv}")
 
     ok_count = sum(1 for r in log_rows if r["status"] == "ok")
     print(f"  Secciones extraídas: {ok_count}/{len(log_rows)} → {sections_csv}")

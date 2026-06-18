@@ -21,6 +21,7 @@ import fitz  # PyMuPDF — ~5-10x faster than pdfplumber for text extraction
 from unidecode import unidecode
 
 from src.core.muni_matcher import MuniMatcher
+from src.core.segment_utils import HITL_EXTRA_FIELDS
 from src.estados.jalisco.config import (
     BLACKLIST_HEADER_PATTERNS,
     CVE_ENT,
@@ -176,21 +177,31 @@ def _find_predial_core_page(pages_lines: list[list[str]]) -> int | None:
 def _analyze_pdf_for_predial(pdf_path: Path) -> dict:
     """Analiza un PDF y localiza la sección de predial (1-based pages)."""
     pages_lines = []
+    raw_pages: list[str] = []
 
     with fitz.open(pdf_path) as doc:
         for page in doc:
             text = page.get_text("text") or ""
+            raw_pages.append(text)
             pages_lines.append(_split_lines_normalized(text))
+
+    _hitl_defaults = {
+        "char_start": -1, "char_end": -1, "confidence": 0.0,
+        "expansion_applied": False,
+        "anchor_text_start": "", "anchor_text_end": "",
+    }
 
     n_pages = len(pages_lines)
     if n_pages == 0:
         return {"n_pages": 0, "predial_page_start": None, "predial_page_end": None,
-                "page_start_next_tax": None, "next_tax_label": None, "forced_end": False}
+                "page_start_next_tax": None, "next_tax_label": None, "forced_end": False,
+                **_hitl_defaults}
 
     page_core = _find_predial_core_page(pages_lines)
     if page_core is None:
         return {"n_pages": n_pages, "predial_page_start": None, "predial_page_end": None,
-                "page_start_next_tax": None, "next_tax_label": None, "forced_end": False}
+                "page_start_next_tax": None, "next_tax_label": None, "forced_end": False,
+                **_hitl_defaults}
 
     # Buscar fin: siguiente impuesto
     page_start_next_tax = None
@@ -209,6 +220,28 @@ def _analyze_pdf_for_predial(pdf_path: Path) -> dict:
         forced_end = True
         page_end = min(n_pages - 1, page_core + 4)
 
+    page_span = page_end - page_core + 1
+    expansion_applied = forced_end or page_span <= 2
+
+    # Raw anchor text for HITL UI highlighting
+    anchor_start = ""
+    for raw_line in raw_pages[page_core].splitlines():
+        if _is_predial_header_candidate(_normalize_text(raw_line)):
+            anchor_start = raw_line.strip()[:200]
+            break
+
+    anchor_end = ""
+    if page_start_next_tax is not None:
+        for raw_line in raw_pages[page_start_next_tax].splitlines():
+            norm = _normalize_text(raw_line)
+            if len(norm) <= 120:
+                for pat, _lbl in NEXT_TAX_PATTERNS:
+                    if re.search(pat, norm):
+                        anchor_end = raw_line.strip()[:200]
+                        break
+            if anchor_end:
+                break
+
     return {
         "n_pages": n_pages,
         "predial_page_start": page_core + 1,       # 1-based
@@ -216,6 +249,12 @@ def _analyze_pdf_for_predial(pdf_path: Path) -> dict:
         "page_start_next_tax": (page_start_next_tax + 1) if page_start_next_tax is not None else None,
         "next_tax_label": next_tax_label,
         "forced_end": forced_end,
+        "char_start": -1,
+        "char_end": -1,
+        "confidence": 0.3 if forced_end else 1.0,
+        "expansion_applied": expansion_applied,
+        "anchor_text_start": anchor_start,
+        "anchor_text_end": anchor_end,
     }
 
 
@@ -250,12 +289,17 @@ def run_locate_sections(adapter) -> Path:
         if i % 25 == 0 or i == len(dl_rows):
             print(f"    [{i}/{len(dl_rows)}] procesando...")
 
+        _hitl_empty = {
+            "char_start": -1, "char_end": -1, "confidence": 0.0,
+            "forced_end": False, "expansion_applied": False,
+            "anchor_text_start": "", "anchor_text_end": "",
+        }
         candidates = _page_candidate_paths(raw_path, pdf_ocr_dir)
         if not candidates:
             rows_out.append({"municipio": municipio, "anio": anio, "pdf_used": "",
                              "n_pages": 0, "predial_page_start": None,
                              "predial_page_end": None, "page_start_next_tax": None,
-                             "next_tax_label": None, "forced_end": False})
+                             "next_tax_label": None, **_hitl_empty})
             continue
 
         pdf_used = candidates[0]
@@ -264,13 +308,14 @@ def run_locate_sections(adapter) -> Path:
         except Exception as e:
             print(f"    [ERROR] {municipio} {anio}: {e}")
             info = {"n_pages": 0, "predial_page_start": None, "predial_page_end": None,
-                    "page_start_next_tax": None, "next_tax_label": None, "forced_end": False}
+                    "page_start_next_tax": None, "next_tax_label": None, **_hitl_empty}
 
         rows_out.append({"municipio": municipio, "anio": anio, "pdf_used": str(pdf_used), **info})
 
     fieldnames = ["municipio", "anio", "pdf_used", "n_pages",
                   "predial_page_start", "predial_page_end",
-                  "page_start_next_tax", "next_tax_label", "forced_end"]
+                  "page_start_next_tax", "next_tax_label",
+                  *HITL_EXTRA_FIELDS]
     with sections_csv.open("w", newline="", encoding="utf-8") as f:
         writer = csv.DictWriter(f, fieldnames=fieldnames)
         writer.writeheader()

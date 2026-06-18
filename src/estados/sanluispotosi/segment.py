@@ -52,7 +52,12 @@ from pathlib import Path
 
 import fitz  # PyMuPDF
 
-from src.core.segment_utils import PatternSpec, find_predial_section
+from src.core.segment_utils import (
+    HITL_EXTRA_FIELDS,
+    PatternSpec,
+    find_predial_section,
+    hitl_extra_columns,
+)
 from src.estados.sanluispotosi import config
 
 
@@ -227,6 +232,7 @@ _SEGMENT_FIELDS = [
     "segment_method", "page_start", "page_end",
     "char_start", "char_end", "txt_chars", "confidence",
     "error_class", "error_detail",
+    *[f for f in HITL_EXTRA_FIELDS if f not in {"char_start", "char_end", "confidence"}],
 ]
 
 
@@ -330,6 +336,7 @@ def run_extract_sections(adapter, year: str | None = None) -> Path:
                 print(f"    [WARN] {pdf_path.name}: sin texto extraíble (¿escaneado?)")
                 stats["errors"] += 1
                 rows.append({
+                    **hitl_extra_columns(),
                     "ejercicio": ejercicio, "slug": slug,
                     "source_pdf": pdf_path.name, "focus_file": "",
                     "segment_method": "", "page_start": "", "page_end": "",
@@ -395,6 +402,7 @@ def run_extract_sections(adapter, year: str | None = None) -> Path:
                 print(f"    [WARN] {pdf_path.name}: no se pudo guardar PDF slice ({e})")
 
             rows.append({
+                **hitl_extra_columns(result if result.found else None),
                 "ejercicio": ejercicio,
                 "slug": slug,
                 "source_pdf": pdf_path.name,
