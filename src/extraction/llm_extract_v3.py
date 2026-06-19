@@ -18,7 +18,7 @@ from typing import Iterable
 from openai.lib._pydantic import to_strict_json_schema
 from pydantic import ValidationError
 
-from src.core.constants import PREFIJOS_ESTADO, json_predial_dir
+from src.core.constants import PREFIJOS_ESTADO, json_predial_dir, json_predial_hitl_dir
 from src.extraction.llm_utils import (
     OPENAI_MODEL,
     OPENAI_MODEL_FALLBACK,
@@ -572,6 +572,17 @@ def _save_result(result: ExtractionResult) -> Path:
     }
 
     out_path.write_text(json.dumps(payload, ensure_ascii=False, indent=2), encoding="utf-8")
+
+    # La re-extracción gana sobre el overlay HITL: si esta extracción tuvo éxito
+    # y existía una corrección previa para el caso, se retira el overlay para que
+    # la extracción fresca sea la autoritativa.  Si la extracción falló
+    # (predial=None) se conserva el overlay (no perder trabajo humano).
+    if result.output is not None:
+        overlay = json_predial_hitl_dir(result.estado, result.anio) / result.archivo
+        if overlay.exists():
+            overlay.unlink()
+            print(f"    [overlay HITL retirado: {overlay.as_posix()}]")
+
     return out_path
 
 

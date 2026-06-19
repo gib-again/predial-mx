@@ -48,7 +48,10 @@ STEP_METHODS = {
                           if kw.get("year") else a.extract_predial_sections()
                       ),
     "segment-audit":  lambda a, **kw: a.run_segment_audit(),
-    "extract":        lambda a, **kw: a.run_llm_extraction(batch_mode=kw.get("batch", False)),
+    "extract":        lambda a, **kw: a.run_llm_extraction(
+                          batch_mode=kw.get("batch", False),
+                          force=kw.get("force_extract", False),
+                      ),
     "validate":       lambda a, **kw: a.run_validation(),
     "audit":          lambda a, **kw: a.run_audit(),
 }
@@ -61,6 +64,7 @@ def run_estado(
     *,
     year: str | None = None,
     force_reocr: bool = False,
+    force_extract: bool = False,
     clean_watermark: bool = True,
     threshold: int | None = None,
     limit: int | None = None,
@@ -95,6 +99,7 @@ def run_estado(
                 batch=batch,
                 year=year,
                 force_reocr=force_reocr,
+                force_extract=force_extract,
                 clean_watermark=clean_watermark,
                 threshold=threshold,
                 limit=limit,
@@ -126,6 +131,9 @@ def main():
                         help="Filtra los pasos ocr/segment a un solo año (ej: 2018)")
     parser.add_argument("--force-reocr", action="store_true",
                         help="Borra el OCR previo y lo regenera (sólo afecta paso ocr)")
+    parser.add_argument("--force-extract", action="store_true",
+                        help="Re-extrae v3 aunque el JSON ya exista (sólo paso extract). "
+                             "Una extracción exitosa retira el overlay HITL del caso.")
     parser.add_argument("--no-clean-watermark", action="store_true",
                         help="Desactiva la limpieza de marca de agua antes del OCR (modo legacy)")
     parser.add_argument("--threshold", type=int, default=None,
@@ -180,6 +188,7 @@ def main():
             batch=args.batch,
             year=args.year,
             force_reocr=args.force_reocr,
+            force_extract=args.force_extract,
             clean_watermark=not args.no_clean_watermark,
             threshold=args.threshold,
             limit=args.limit,

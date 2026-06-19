@@ -87,8 +87,15 @@ Contenedor multi-tarifa `PredialV3.tarifas: list[TarifaPredial]`. Cambios clave:
 - OpenAI API con structured output (JSON schema)
 - Modelo default: gpt-5.4-mini. Fallback/visión: gpt-5.4
 - Cascada: mini → retry → escalación a full → re-OCR → visión
-- v2: `src/extraction/llm_extract_v2.py` → `predial-mx-v2/`
-- v3: `src/extraction/llm_extract_v3.py` → `predial-mx-v3/`
+- **v3 es el único flujo**: `src/extraction/llm_extract_v3.py` (`extraer_municipio`)
+  → `data/{estado}/json_predial/{anio}/`
+- El paso `extract` del pipeline (`EstadoAdapter.run_llm_extraction`) usa v3,
+  manejado por `segment.csv` canónico (status=ok, agrupado por cvegeo).  Salta
+  los casos ya extraídos (JSON v3 no vacío) salvo `--force-extract`.
+- **Re-extracción gana sobre overlay HITL**: una extracción exitosa retira el
+  overlay `json_predial_hitl/` del caso (`_save_result`).  Una fallida lo conserva.
+- `--batch` (Batch API) **no** está soportado en v3; el flag se ignora.
+- v2 (`llm_extract_v2.py`, `core/llm_extract.py`): legado dormido, ver `docs/SCHEMA_EVOLUTION.md`.
 
 ## Grupo B (estados hardcoded)
 

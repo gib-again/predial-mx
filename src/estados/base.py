@@ -138,17 +138,70 @@ class EstadoAdapter(ABC):
         from src.core.ocr import process_directory
         process_directory(self.pdf_raw_dir, self.pdf_ocr_dir)
 
-    def run_llm_extraction(self, batch_mode: bool = False):
-            """Llama al LLM para cada TXT de sección predial."""
-            from src.core.llm_extract import extract_all
-            extract_all(
-                txt_dir=self.focus_dir,
-                json_dir=self.json_dir,
-                prefijo=self.prefijo,
-                estado_nombre=self.estado_nombre,
-                batch_mode=batch_mode,
-                adapter=self,
-                pdf_fallback=True,
+    def run_llm_extraction(self, batch_mode: bool = False, force: bool = False, **kwargs):
+        """Extracción v3 (schema_v3) para cada caso del segment.csv canónico.
+
+        Itera ``meta/segment.csv`` (status=ok, con cvegeo) y llama
+        ``extraer_municipio`` por (cvegeo, años).  Salta los casos que ya tienen
+        JSON v3 no vacío (canónico u overlay HITL) salvo ``force=True``, para no
+        re-gastar API.  Escribe en ``data/{estado}/json_predial/{anio}/``.
+        """
+        import json as _json
+        from collections import defaultdict
+
+        from src.core.corpus import resolve_json
+        from src.core.segment_schema import STATUS_OK, read_segment_csv
+        from src.extraction.llm_extract_v3 import extraer_municipio
+
+        if batch_mode:
+            print(f"  [{self.slug}] batch_mode no está soportado en el extractor v3; "
+                  "se ignora y se extrae en modo normal.")
+
+        seg_path = self.meta_dir / "segment.csv"
+        seg_rows = read_segment_csv(seg_path)
+        if not seg_rows:
+            print(f"  [{self.slug}] sin segment.csv (¿estado hardcoded?). Nada que extraer LLM.")
+            return
+
+        def _existe_no_vacio(anio: int, slug: str) -> bool:
+            p = resolve_json(self.slug, anio, slug)
+            if not p:
+                return False
+            try:
+                return (_json.loads(p.read_text(encoding="utf-8")).get("predial")) is not None
+            except Exception:
+                return False
+
+        # Agrupar años por cvegeo (un solo extraer_municipio por municipio).
+        por_cvegeo: dict[str, dict] = defaultdict(lambda: {"slug": "", "anios": []})
+        n_total = n_skip = 0
+        for r in seg_rows:
+            if (r.get("status") or "") != STATUS_OK:
+                continue
+            cvegeo = (r.get("cvegeo") or "").strip()
+            try:
+                anio = int(r.get("anio") or 0)
+            except ValueError:
+                anio = 0
+            if not cvegeo or not anio:
+                continue
+            n_total += 1
+            slug = (r.get("municipio_slug") or "").strip()
+            if not force and _existe_no_vacio(anio, slug):
+                n_skip += 1
+                continue
+            por_cvegeo[cvegeo]["slug"] = slug
+            por_cvegeo[cvegeo]["anios"].append(anio)
+
+        n_pend = sum(len(v["anios"]) for v in por_cvegeo.values())
+        print(f"  [{self.slug}] casos: {n_total} | ya extraídos (saltados): {n_skip} | "
+              f"pendientes: {n_pend}")
+        for cvegeo, info in sorted(por_cvegeo.items()):
+            extraer_municipio(
+                estado=self.slug,
+                cvegeo=cvegeo,
+                anios=sorted(set(info["anios"])),
+                slug_override=info["slug"] or None,
             )
 
     def run_validation(self):
