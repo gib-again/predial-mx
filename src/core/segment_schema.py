@@ -25,6 +25,10 @@ STATUS_OK = "ok"
 STATUS_NO_LOCALIZADA = "segmentacion_no_localizada"   # no se halló la sección
 STATUS_IDENTIDAD = "identidad_no_resuelta"            # texto no matchea catálogo
 
+# Estados con un PDF por ley-municipio (no tomo compartido): la ley arranca en
+# la página 1, así que ley_page_start = 1 por construcción.
+ONE_LEY_PER_PDF = {"jalisco", "sanluispotosi"}
+
 # Orden fijo de columnas del segment.csv canónico.
 SEGMENT_FIELDS = [
     "cvegeo",
@@ -220,7 +224,7 @@ def canonicalize_segment_row(
         lp = ley_pages.get((cvegeo, str(anio)))
         if lp:
             ley_start, ley_end = lp
-    if estado_slug == "jalisco" and not ley_start:
+    if estado_slug in ONE_LEY_PER_PDF and not ley_start:
         ley_start = 1  # un PDF por ley → la ley arranca en la página 1
 
     predial_start = _first(row, "predial_page_start", "page_start")

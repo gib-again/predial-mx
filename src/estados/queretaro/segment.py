@@ -544,6 +544,16 @@ def run_extract_sections(adapter) -> Path:
                     new_doc.save(str(pdf_out), deflate=True)
                     new_doc.close()
 
+                    # Inicio de la ley (Nivel 1): página dentro de la parte que
+                    # la abre — para el botón "inicio de la ley" en HITL (§5).
+                    try:
+                        _sp_idx = int(row.get("start_part", 1)) - 1
+                    except (TypeError, ValueError):
+                        _sp_idx = 0
+                    ley_part_pdf = (
+                        str(parts[_sp_idx].as_posix())
+                        if 0 <= _sp_idx < len(parts) else ""
+                    )
                     log_rows.append({
                         "municipio": muni,
                         "municipio_slug": muni_slug,
@@ -555,6 +565,8 @@ def run_extract_sections(adapter) -> Path:
                         "status": "ok",
                         "predial_articulo": f"{n_art}",
                         "parts": ";".join(p.name for p in parts),
+                        "ley_page_start": row.get("start_page", ""),
+                        "ley_source_pdf": ley_part_pdf,
                     })
 
             finally:
@@ -572,7 +584,7 @@ def run_extract_sections(adapter) -> Path:
         "predial_articulo", "parts",
     ]
     with sections_csv.open("w", newline="", encoding="utf-8") as f:
-        writer = csv.DictWriter(f, fieldnames=fieldnames)
+        writer = csv.DictWriter(f, fieldnames=fieldnames, extrasaction="ignore")
         writer.writeheader()
         for r in log_rows:
             for fn in fieldnames:
@@ -582,6 +594,7 @@ def run_extract_sections(adapter) -> Path:
     # segment.csv estándar (compatible con HITL detectors)
     _seg_fields = [
         "ejercicio", "municipio", "slug", "source_pdf",
+        "ley_page_start",
         "predial_found", "predial_method",
         "predial_page_start", "predial_page_end",
         "txt_file", "txt_chars",
@@ -593,11 +606,14 @@ def run_extract_sections(adapter) -> Path:
             continue
         slug = r.get("municipio_slug", "")
         ej = r.get("ejercicio", "")
+        # source_pdf = la parte real que abre la ley (servible por el UI), no el
+        # doc_id base; ley_page_start = página de inicio de la ley en esa parte.
         seg_rows.append({
             "ejercicio": ej,
             "municipio": r.get("municipio", ""),
             "slug": slug,
-            "source_pdf": r.get("doc_id", ""),
+            "source_pdf": r.get("ley_source_pdf") or r.get("doc_id", ""),
+            "ley_page_start": r.get("ley_page_start", ""),
             "predial_found": "true",
             "predial_method": "articulo_predial",
             "predial_page_start": "",
