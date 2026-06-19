@@ -62,7 +62,15 @@ cuota_fija_escalonada | mixto | otro_no_clasificado`
 
 ## Pendientes (retiro del stack v2 dormido)
 
-El corpus v2 ya no existe, pero queda código v2 dormido que conviene retirar en
+> **Secuencia (acordado):** este retiro se hace **después** de la corrida de
+> extracción v3, porque entre `extract` y `panel/consolidación` está el paso
+> **HITL**.  El stack v2 (`panel_v2`/`balance_panel_v2`/`validation.reclasificar`)
+> sólo se consume en panel/consolidación, aguas abajo de HITL; tocarlo antes de
+> terminar extracción+HITL no aporta y arriesga ese flujo.  Orden:
+> `extract (v3)` → `HITL` → retiro v2 → `panel/consolidación` (ya v3-only).
+
+El corpus v2 ya no existe, y `core/llm_extract` ya NO está cableado al pipeline
+(el paso `extract` es v3); pero queda código v2 dormido que conviene retirar en
 un esfuerzo dedicado (alto riesgo: toca el flujo de panel/consolidación):
 
 - Repuntar imports de `schema_v2` → `schema_v3` en `validation.py` y

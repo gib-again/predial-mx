@@ -28,7 +28,17 @@ def _get_client() -> OpenAI:
     if _client is None:
         api_key = os.environ.get("OPENAI_API_KEY")
         if not api_key:
-            raise EnvironmentError("OPENAI_API_KEY no definida en el entorno")
+            # Cargar .env si la key no está exportada en el entorno (no sobrescribe
+            # variables ya presentes).  Hace que run_pipeline extract / consume
+            # funcionen sin exportar la key a mano.
+            try:
+                from dotenv import load_dotenv
+                load_dotenv()
+            except Exception:
+                pass
+            api_key = os.environ.get("OPENAI_API_KEY")
+        if not api_key:
+            raise EnvironmentError("OPENAI_API_KEY no definida en el entorno ni en .env")
         _client = OpenAI(api_key=api_key)
     return _client
 

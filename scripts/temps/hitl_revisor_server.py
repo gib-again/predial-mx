@@ -109,7 +109,7 @@ def _norm(s: str) -> str:
 
 def _try_resolve_json(estado_slug: str, muni_slug: str, anio: int) -> Path:
     """Resolve v3 JSON path dynamically. Returns Path("") if not found."""
-    return resolve_json(estado_slug, anio, muni_slug)
+    return resolve_json(estado_slug, anio, muni_slug) or Path("")
 
 
 # ── State ──

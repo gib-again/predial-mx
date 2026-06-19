@@ -55,11 +55,12 @@ def parse_fname(path: Path | str) -> tuple[int, str] | None:
     return int(m.group(1)), m.group(2)
 
 
-def resolve_json(estado: str, anio: int, slug: str, *, prefer_hitl: bool = True) -> Path:
-    """Localiza el JSON v3 de un (estado, anio, slug).  Path('') si no existe.
+def resolve_json(estado: str, anio: int, slug: str, *, prefer_hitl: bool = True) -> Path | None:
+    """Localiza el JSON v3 de un (estado, anio, slug).  ``None`` si no existe.
 
     Tolera slug bonito o normalizado (compara normalizado).  Prefiere el overlay
-    HITL cuando ``prefer_hitl``.
+    HITL cuando ``prefer_hitl``.  Devuelve ``None`` (no ``Path("")``, que es
+    ``Path('.')`` y resultaría truthy / existente) cuando no encuentra nada.
     """
     prefijo = PREFIJOS_ESTADO.get(estado, estado.upper())
     target = _norm_slug(slug)
@@ -77,7 +78,7 @@ def resolve_json(estado: str, anio: int, slug: str, *, prefer_hitl: bool = True)
             parsed = parse_fname(p)
             if parsed and _norm_slug(parsed[1]) == target:
                 return p
-    return Path("")
+    return None
 
 
 def prefer_hitl_path(canonical: Path) -> Path:

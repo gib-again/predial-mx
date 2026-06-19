@@ -665,7 +665,13 @@ def extraer_municipio(
         )
         if r.razon:
             print(f"    razon: {r.razon}")
-        print(f"    saved: {out_path.relative_to(ROOT)}")
+        # json_predial_dir devuelve ruta relativa (data/...); relative_to(ROOT)
+        # fallaría, así que se imprime tal cual cuando no es subpath de ROOT.
+        try:
+            saved = out_path.relative_to(ROOT)
+        except ValueError:
+            saved = out_path
+        print(f"    saved: {saved}")
         results.append(r)
 
     total_in = sum(r.tokens_in for r in results)
