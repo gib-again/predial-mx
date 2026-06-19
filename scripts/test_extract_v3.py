@@ -5,7 +5,6 @@ Runs extract → reports summary. HITL detectors run separately after.
 from __future__ import annotations
 
 import csv
-import json
 import sys
 import time
 from pathlib import Path
@@ -31,7 +30,9 @@ TEST_PLAN: dict[str, tuple[list[str], list[int]]] = {
 
 
 def _is_empty_json(p: Path) -> bool:
-    """True if JSON has predial=null (failed extraction)."""
+    """True if missing or JSON has predial=null (failed extraction)."""
+    if not p or not p.exists():
+        return True
     try:
         import json
         d = json.loads(p.read_text(encoding="utf-8"))
@@ -84,13 +85,13 @@ def main() -> None:
                 errors.append(f"{estado}/{slug}: CVEGEO not found")
                 total += len(years)
                 continue
-            from src.core.constants import PREFIJOS_ESTADO
-            prefijo = PREFIJOS_ESTADO[estado]
-            out_dir = ROOT / "predial-mx-v3" / estado
+            from src.core.corpus import resolve_json
+            # Skip-check contra la ubicación canónica nueva (data/{estado}/
+            # json_predial/{anio}/), incluido overlay HITL.  Antes apuntaba al
+            # predial-mx-v3/ retirado → re-extraía todo y gastaba API.
             pending_years = [
                 y for y in years
-                if not (out_dir / f"{prefijo}_PREDIAL_{y}_{slug}.json").exists()
-                or _is_empty_json(out_dir / f"{prefijo}_PREDIAL_{y}_{slug}.json")
+                if _is_empty_json(resolve_json(estado, y, slug))
             ]
             if not pending_years:
                 print(f"  [SKIP] {estado}/{slug}: all years exist")
@@ -119,7 +120,7 @@ def main() -> None:
 
     elapsed = time.time() - t0
     print(f"\n{'='*60}")
-    print(f"  TEST EXTRACTION SUMMARY")
+    print("  TEST EXTRACTION SUMMARY")
     print(f"{'='*60}")
     print(f"  Total:    {total}")
     print(f"  OK:       {ok}")
@@ -127,7 +128,7 @@ def main() -> None:
     print(f"  Errors:   {len(errors)}")
     print(f"  Time:     {elapsed:.1f}s")
     if errors:
-        print(f"\n  Error details:")
+        print("\n  Error details:")
         for e in errors:
             print(f"    - {e}")
     print()

@@ -29,9 +29,11 @@ PILOT_HARDCODED_STATES = ["chihuahua", "colima", "edomex", "sinaloa", "tabasco"]
 
 
 def _analyze_estado(estado: str) -> dict:
-    """Analiza todos los JSONs v3 de un estado."""
-    v3_dir = V3_ROOT / estado
-    if not v3_dir.exists():
+    """Analiza todos los JSONs v3 de un estado (data/{estado}/json_predial/)."""
+    from src.core.corpus import iter_corpus_files
+
+    files = iter_corpus_files(estado)
+    if not files:
         return {"estado": estado, "n_files": 0}
 
     tipo_counter: Counter = Counter()
@@ -44,7 +46,7 @@ def _analyze_estado(estado: str) -> dict:
     total_tokens_out = 0
     n_files = 0
 
-    for p in sorted(v3_dir.glob("*.json")):
+    for p in files:
         try:
             doc = json.loads(p.read_text(encoding="utf-8"))
         except Exception:
@@ -159,7 +161,7 @@ def main():
         print("NOTA: La extraccion LLM requiere OPENAI_API_KEY y consume tokens.")
         print("Ejecutar manualmente para cada estado:")
         for est in PILOT_LLM_STATES:
-            print(f"  python -c \"from src.extraction.llm_extract_v3 import extraer_municipio; ...\"")
+            print("  python -c \"from src.extraction.llm_extract_v3 import extraer_municipio; ...\"")
         print("(El piloto LLM se ejecuta manualmente por costo. Use --diff-only tras ejecutar.)")
 
     # Generate report
