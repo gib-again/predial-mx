@@ -458,8 +458,9 @@ def run_segment(adapter, force: bool = False) -> Path:
                 stats["total"] += 1
                 ej = ley.ejercicio or ejercicio
 
-                txt_path = year_out / f"{config.PREFIJO}_PREDIAL_{ej}_{ley.slug}.txt"
-                pdf_out = year_out / f"{config.PREFIJO}_PREDIAL_{ej}_{ley.slug}.pdf"
+                safe_slug = ley.slug[:80]
+                txt_path = year_out / f"{config.PREFIJO}_PREDIAL_{ej}_{safe_slug}.txt"
+                pdf_out = year_out / f"{config.PREFIJO}_PREDIAL_{ej}_{safe_slug}.pdf"
 
                 if txt_path.exists() and not force:
                     stats["skipped"] += 1
