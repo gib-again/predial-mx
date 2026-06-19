@@ -66,10 +66,18 @@ def main():
         anio = int(r.get("anio", 0))
         muni_slug = r.get("municipio_slug", "")
 
+        hint_tipo = (r.get("hint_tipo_esquema") or "").strip()
+        force_vision = (r.get("force_vision") or "").strip().lower() in ("true", "1", "yes")
+        hint_notas = (r.get("hint_notas") or "").strip() or (r.get("hint") or "").strip()
+
         print(f"\n{'='*60}")
         print(f"Re-extracción: {estado}/{muni_slug} {anio}")
-        if r.get("hint"):
-            print(f"  Hint: {r['hint'][:120]}")
+        if hint_tipo:
+            print(f"  hint_tipo_esquema={hint_tipo}")
+        if force_vision:
+            print("  force_vision=ON (salta cascada txt→reocr)")
+        if hint_notas:
+            print(f"  notas: {hint_notas[:120]}")
 
         try:
             results = extraer_municipio(
@@ -78,6 +86,9 @@ def main():
                 anios=[anio],
                 slug_override=muni_slug,
                 force_full_model=True,
+                hint_tipo_esquema=hint_tipo,
+                hint_notas=hint_notas,
+                force_vision=force_vision,
             )
             ok = any(res.output is not None for res in results)
             r["procesado"] = "ok" if ok else "error_sin_output"

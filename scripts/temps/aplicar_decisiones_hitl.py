@@ -34,9 +34,17 @@ import re
 from datetime import datetime, timezone
 from pathlib import Path
 
+from src.core.catalog import cvegeo_to_nombre
+from src.core.constants import json_predial_hitl_dir
+from src.core.corpus import adjacent_json, resolve_json
+from src.hitl.decisiones import (
+    EDIT_WHITELIST,
+    append_edicion,
+    load_latest,
+    procedencia_hitl,
+)
+
 HITL_DIR = Path("output/hitl")
-HITL_JSON_DIR = Path("predial-mx-v3-hitl")
-DEFAULT_CSV = HITL_DIR / "cola_unificada.csv"
 QUEUE_CSV = HITL_DIR / "cola_reextraccion.csv"
 BITACORA_CSV = HITL_DIR / "hitl_bitacora.csv"
 DATA_ROOT = Path("data")
@@ -60,11 +68,41 @@ _RE_PAGINAS = re.compile(r"paginas\s*=\s*([\d,\s-]+)")
 _RE_PDF = re.compile(r"pdf\s*=\s*(\S+)")
 
 
-def _load_decisions(csv_path: Path) -> list[dict]:
-    if not csv_path.exists():
-        raise SystemExit(f"No existe {csv_path}. Corre primero run_detectors.")
-    with csv_path.open(encoding="utf-8") as f:
-        return list(csv.DictReader(f))
+def _load_decisions(csv_path: Path | None = None) -> list[dict]:
+    """Carga las decisiones desde el log append-only (fuente de verdad).
+
+    Cada decisión se enriquece con ``json_path`` (resuelto vía catálogo/corpus)
+    y el nombre de display.  ``csv_path`` se ignora (compat retro de la firma).
+    """
+    decisiones = []
+    for d in load_latest().values():
+        decision = (d.get("decision") or "").strip().lower()
+        if not decision:
+            continue
+        est = d.get("estado_slug", "")
+        slug = d.get("municipio_slug", "")
+        try:
+            anio = int(d.get("anio", 0) or 0)
+        except ValueError:
+            anio = 0
+        jp = resolve_json(est, anio, slug) if (est and slug and anio) else Path("")
+        decisiones.append({
+            "id": d.get("id", ""),
+            "decision": decision,
+            "sub_opcion": d.get("sub_opcion", ""),
+            "estado_slug": est,
+            "estado": cvegeo_to_nombre(d.get("cvegeo", "")) and est or est,
+            "municipio_slug": slug,
+            "municipio": cvegeo_to_nombre(d.get("cvegeo", "")) or slug,
+            "cvegeo": d.get("cvegeo", ""),
+            "anio": anio,
+            "json_path": str(jp or ""),
+            "notas": d.get("notas", ""),
+            "detector": "",
+            "severidad": "",
+            "senal": "",
+        })
+    return decisiones
 
 
 def _append_bitacora(rows: list[dict]) -> None:
@@ -73,7 +111,8 @@ def _append_bitacora(rows: list[dict]) -> None:
     is_new = not BITACORA_CSV.exists()
     BITACORA_CSV.parent.mkdir(parents=True, exist_ok=True)
     cols = [
-        "timestamp", "id", "decision", "detector", "severidad",
+        "timestamp", "id", "decision", "sub_opcion", "procedencia_hitl",
+        "detector", "severidad",
         "estado", "estado_slug", "municipio", "municipio_slug",
         "cvegeo", "anio", "senal", "json_path", "notas",
         "json_propagado",
@@ -91,7 +130,8 @@ def _write_reextraction_queue(rows: list[dict]) -> None:
     QUEUE_CSV.parent.mkdir(parents=True, exist_ok=True)
     cols = [
         "estado_slug", "municipio_slug", "cvegeo", "anio",
-        "json_path", "hint", "notas", "procesado", "timestamp",
+        "json_path", "hint", "hint_tipo_esquema", "force_vision",
+        "hint_paginas", "hint_notas", "notas", "procesado", "timestamp",
     ]
     is_new = not QUEUE_CSV.exists()
     with QUEUE_CSV.open("a", encoding="utf-8", newline="") as f:
@@ -99,6 +139,14 @@ def _write_reextraction_queue(rows: list[dict]) -> None:
         if is_new:
             w.writeheader()
         w.writerows(rows)
+
+
+_RE_KV = re.compile(r"(\w+)\s*=\s*([^;]+)")
+
+
+def _parse_kv(notas: str) -> dict[str, str]:
+    """Parsea pares ``clave=valor`` separados por ``;`` del campo notas."""
+    return {m.group(1).strip().lower(): m.group(2).strip() for m in _RE_KV.finditer(notas or "")}
 
 
 def _parse_resegment_notas(notas: str) -> tuple[str, str]:
@@ -148,19 +196,15 @@ def _propagate_v3(row: dict, timestamp: str) -> Path | None:
         return None
 
     est_slug = row.get("estado_slug", "")
-    muni_slug = row.get("municipio_slug", "")
     anio = int(row.get("anio", 0))
-
-    # Find previous year's JSON in same directory
     prev_year = anio - 1
-    parent = json_path.parent
-    prefix = json_path.name.split(f"_{anio}_")[0]
-    prev_path = parent / f"{prefix}_{prev_year}_{muni_slug}.json"
-    if not prev_path.exists():
-        print(f"  [ERROR] JSON año previo no existe: {prev_path}")
+
+    prev_path = adjacent_json(str(json_path), anio, -1)
+    if not prev_path:
+        print(f"  [ERROR] JSON año previo no existe para {est_slug} {anio}")
         return None
 
-    dst = HITL_JSON_DIR / est_slug / json_path.name
+    dst = json_predial_hitl_dir(est_slug, anio) / json_path.name
     dst.parent.mkdir(parents=True, exist_ok=True)
     try:
         doc = json.loads(prev_path.read_text(encoding="utf-8"))
@@ -188,14 +232,11 @@ def _correct_prev_v3(row: dict, timestamp: str) -> Path | None:
         return None
 
     est_slug = row.get("estado_slug", "")
-    muni_slug = row.get("municipio_slug", "")
     anio = int(row.get("anio", 0))
-
     prev_year = anio - 1
-    prefix = json_path.name.split(f"_{anio}_")[0]
-    prev_name = f"{prefix}_{prev_year}_{muni_slug}.json"
+    prev_name = json_path.name.replace(f"_{anio}_", f"_{prev_year}_")
 
-    dst = HITL_JSON_DIR / est_slug / prev_name
+    dst = json_predial_hitl_dir(est_slug, prev_year) / prev_name
     dst.parent.mkdir(parents=True, exist_ok=True)
     try:
         doc = json.loads(json_path.read_text(encoding="utf-8"))
@@ -215,17 +256,58 @@ def _correct_prev_v3(row: dict, timestamp: str) -> Path | None:
     return dst
 
 
+def _apply_cambio_menor(row: dict, dst: Path, timestamp: str) -> int:
+    """Aplica ediciones de whitelist (§6a) sobre el JSON aceptado en ``dst``.
+
+    Sólo campos en EDIT_WHITELIST.  Registra before/after en hitl_ediciones.csv y
+    estampa ``_meta.cambios_menores`` (auditable) + aplica ``minimo_predial`` a
+    ``predial.minimo_predial_general`` cuando el valor es numérico.  unidad y
+    periodicidad quedan documentadas para aplicación downstream.  Devuelve nº de
+    ediciones aplicadas.
+    """
+    edits = {k: v for k, v in _parse_kv(row.get("notas", "")).items() if k in EDIT_WHITELIST}
+    if not edits or not dst.exists():
+        return 0
+    try:
+        doc = json.loads(dst.read_text(encoding="utf-8"))
+    except Exception:
+        return 0
+    predial = doc.get("predial") or {}
+    cambios = []
+    for campo, nuevo in edits.items():
+        viejo = ""
+        if campo == "minimo_predial":
+            mpg = predial.get("minimo_predial_general") or {}
+            viejo = mpg.get("monto", "")
+            try:
+                mpg["monto"] = float(str(nuevo).replace(",", ""))
+                predial["minimo_predial_general"] = mpg
+                doc["predial"] = predial
+            except ValueError:
+                pass
+        cambios.append({"campo": campo, "valor_viejo": viejo, "valor_nuevo": nuevo})
+        append_edicion(
+            id=row.get("id", ""), cvegeo=row.get("cvegeo", ""),
+            estado_slug=row.get("estado_slug", ""), anio=row.get("anio", ""),
+            campo=campo, valor_viejo=viejo, valor_nuevo=nuevo,
+        )
+    meta = doc.get("_meta") or {}
+    meta["cambios_menores"] = cambios
+    meta["hitl_timestamp"] = timestamp
+    doc["_meta"] = meta
+    dst.write_text(json.dumps(doc, ensure_ascii=False, indent=2), encoding="utf-8")
+    return len(cambios)
+
+
 def main():
     ap = argparse.ArgumentParser(description=__doc__)
-    ap.add_argument("--csv", default=str(DEFAULT_CSV),
-                    help=f"CSV de decisiones (default {DEFAULT_CSV}).")
     ap.add_argument("--dry-run", action="store_true",
                     help="No escribe archivos; solo reporta lo que haría.")
     args = ap.parse_args()
-    csv_path = Path(args.csv)
 
-    decisiones = _load_decisions(csv_path)
-    print(f"Cargadas {len(decisiones)} filas desde {csv_path}")
+    from src.hitl.decisiones import DECISIONES_CSV
+    decisiones = _load_decisions()
+    print(f"Cargadas {len(decisiones)} decisiones desde {DECISIONES_CSV}")
 
     timestamp = datetime.now(timezone.utc).isoformat(timespec="seconds")
     bitacora: list[dict] = []
@@ -244,10 +326,13 @@ def main():
             contadores["invalida"] += 1
             continue
 
+        sub_opcion = (row.get("sub_opcion") or "").strip().lower()
         bit_row = {
             "timestamp": timestamp,
             "id": row.get("id", ""),
             "decision": decision,
+            "sub_opcion": sub_opcion,
+            "procedencia_hitl": procedencia_hitl(decision, sub_opcion),
             "detector": row.get("detector", ""),
             "severidad": row.get("severidad", ""),
             "estado": row.get("estado", ""),
@@ -270,6 +355,8 @@ def main():
                 if dst is None:
                     contadores["error"] += 1
                     continue
+                if sub_opcion == "cambio_menor":
+                    _apply_cambio_menor(row, dst, timestamp)
                 bit_row["json_propagado"] = str(dst)
 
         elif decision == "corregir_previo":
@@ -280,9 +367,35 @@ def main():
                 if dst is None:
                     contadores["error"] += 1
                     continue
+                if sub_opcion == "cambio_menor":
+                    _apply_cambio_menor(row, dst, timestamp)
                 bit_row["json_propagado"] = str(dst)
 
+        elif decision == "confirmar_ok":
+            # Fiel = no-op (provenance en bitácora/log).  Cambio menor = aplica
+            # whitelist sobre overlay HITL del JSON aceptado.
+            if sub_opcion == "cambio_menor" and not args.dry_run:
+                src = Path(row.get("json_path", ""))
+                if src.exists():
+                    dst = json_predial_hitl_dir(
+                        row.get("estado_slug", ""), int(row.get("anio", 0) or 0)
+                    ) / src.name
+                    dst.parent.mkdir(parents=True, exist_ok=True)
+                    if not dst.exists():
+                        dst.write_text(src.read_text(encoding="utf-8"), encoding="utf-8")
+                    n = _apply_cambio_menor(row, dst, timestamp)
+                    bit_row["json_propagado"] = str(dst) if n else ""
+
         elif decision == "reextraer":
+            hints = _parse_kv(row.get("notas", ""))
+            paginas = hints.get("paginas", "")
+            pdf_correcto = hints.get("pdf", "")
+            if paginas and not args.dry_run:
+                _write_override(
+                    row.get("estado_slug", ""), int(row.get("anio", 0) or 0),
+                    row.get("cvegeo", ""), paginas, pdf_correcto,
+                    f"HITL reextraer hint: {row.get('notas','')}",
+                )
             cola.append({
                 "estado_slug": row.get("estado_slug", ""),
                 "municipio_slug": row.get("municipio_slug", ""),
@@ -290,6 +403,10 @@ def main():
                 "anio": row.get("anio", ""),
                 "json_path": row.get("json_path", ""),
                 "hint": REEXTRACT_HINT,
+                "hint_tipo_esquema": hints.get("hint_tipo", ""),
+                "force_vision": "1" if hints.get("force_vision", "").lower() in ("1", "true", "yes") else "",
+                "hint_paginas": paginas,
+                "hint_notas": hints.get("hint_notas", "") or row.get("notas", ""),
                 "notas": row.get("notas", ""),
                 "procesado": "",
                 "timestamp": "",

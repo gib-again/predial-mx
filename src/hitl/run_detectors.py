@@ -9,29 +9,29 @@ Uso:
 from __future__ import annotations
 
 import argparse
-import csv
 import json
-import re
 from collections import defaultdict
 from pathlib import Path
 
+from src.core.catalog import cvegeo_to_nombre
 from src.core.constants import PREFIJOS_ESTADO
+from src.core.corpus import iter_corpus_files, parse_fname
+from src.core.segment_schema import read_segment_csv
 from src.hitl.detectors import (
     JSON_DETECTORS,
     det_cambio_interanual,
     det_distancia_inicio_anomala,
     det_frontera_sin_verificar,
+    det_identidad_no_resuelta,
 )
+from src.hitl.decisiones import load_latest
 from src.hitl.queue_schema import (
     QueueRow,
     consolidate_rows,
-    merge_queues,
     write_queue,
 )
 
-V3_ROOT = Path("predial-mx-v3")
 DATA_ROOT = Path("data")
-_FNAME_RE = re.compile(r"_PREDIAL_(\d{4})_(.+)$")
 
 ESTADO_PRETTY = {
     "coahuila": "Coahuila", "guanajuato": "Guanajuato", "jalisco": "Jalisco",
@@ -67,21 +67,23 @@ def iter_v3_corpus(
     estado_filter: str | None = None,
     include_hardcoded: bool = False,
 ):
-    """Yield (estado_slug, anio, muni_slug, doc_dict, json_path)."""
-    if not V3_ROOT.exists():
-        return
-    for est_dir in sorted(V3_ROOT.iterdir()):
-        if not est_dir.is_dir():
-            continue
-        slug = est_dir.name
-        if estado_filter and slug != estado_filter:
-            continue
+    """Yield (estado_slug, anio, muni_slug, doc_dict, json_path).
+
+    Itera el corpus v3 desde data/{estado}/json_predial/{anio}/ vía
+    src.core.corpus (overlay HITL incluido).
+    """
+    estados = (
+        [estado_filter] if estado_filter
+        else sorted(set(PREFIJOS_ESTADO) | (ESTADOS_HARDCODED if include_hardcoded else set()))
+    )
+    for slug in estados:
         if slug in ESTADOS_HARDCODED and not include_hardcoded:
             continue
-        for p in sorted(est_dir.glob("*_PREDIAL_*.json")):
-            m = _FNAME_RE.search(p.stem)
-            if not m:
+        for p in iter_corpus_files(slug):
+            parsed = parse_fname(p)
+            if not parsed:
                 continue
+            anio, muni_slug = parsed
             try:
                 doc = json.loads(p.read_text(encoding="utf-8"))
             except Exception:
@@ -91,21 +93,12 @@ def iter_v3_corpus(
                 continue
             if not isinstance(doc.get("predial"), dict):
                 continue
-            yield slug, int(m.group(1)), m.group(2), doc, str(p)
+            yield slug, anio, muni_slug, doc, str(p)
 
 
 def load_segment_csv(estado_slug: str) -> list[dict]:
-    seg_path = DATA_ROOT / estado_slug / "meta" / "segment.csv"
-    if not seg_path.exists():
-        return []
-    with seg_path.open(encoding="utf-8-sig") as f:
-        rows = list(csv.DictReader(f))
-    aliases = {"ejercicio": "anio", "slug": "municipio_slug"}
-    for row in rows:
-        for old_key, new_key in aliases.items():
-            if old_key in row and new_key not in row:
-                row[new_key] = row[old_key]
-    return rows
+    """Lee segment.csv canónico (alias legados normalizados por segment_schema)."""
+    return read_segment_csv(DATA_ROOT / estado_slug / "meta" / "segment.csv")
 
 
 # ══════════════════════════════════════════════════════════════
@@ -114,7 +107,7 @@ def load_segment_csv(estado_slug: str) -> list[dict]:
 
 def run(
     estado_filter: str | None = None,
-    merge: bool = False,
+    merge: bool = False,  # deprecado: las decisiones viven en hitl_decisiones.csv
     include_hardcoded: bool = False,
 ) -> Path:
     all_rows: list[QueueRow] = []
@@ -136,6 +129,7 @@ def run(
             all_rows.extend(det_frontera_sin_verificar(seg_rows, est_slug, pretty))
 
         all_rows.extend(det_distancia_inicio_anomala(seg_rows, est_slug, pretty))
+        all_rows.extend(det_identidad_no_resuelta(seg_rows, est_slug, pretty))
 
     # ── JSON-based detectors (D3-D11) + collect series for D12 ──
     n_json = 0
@@ -154,10 +148,13 @@ def run(
 
         meta_v3 = doc.get("_meta_v3") or {}
         pretty = ESTADO_PRETTY.get(est_slug, est_slug.capitalize())
+        cvegeo = meta_v3.get("cvegeo", "")
+        # Nombre de display SIEMPRE desde el catálogo INEGI (cvegeo), nunca
+        # desde el slug del archivo ni de texto extraído.
         kw = dict(
             estado=pretty,
-            municipio=_pretty_muni(muni_slug),
-            cvegeo=meta_v3.get("cvegeo", ""),
+            municipio=cvegeo_to_nombre(cvegeo) or _pretty_muni(muni_slug),
+            cvegeo=cvegeo,
         )
         for det_fn in JSON_DETECTORS:
             hits = det_fn(doc, est_slug, muni_slug, anio, json_path, **kw)
@@ -184,14 +181,25 @@ def run(
     consolidated = consolidate_rows(all_rows)
     print(f"Consolidadas: {len(consolidated)} casos (municipio-año)")
 
-    if merge:
-        result = merge_queues(consolidated)
-        print(f"  (merge con cola existente → {len(result)} filas)")
-    else:
-        result = sorted(consolidated, key=lambda r: (
-            {"SEV1-H": 0, "SEV1": 1, "SEV2": 2, "SEV3": 3}.get(r.severidad, 9),
-            r.estado_slug, r.municipio_slug, r.anio,
-        ))
+    # ── Vista derivada: overlay de decisiones desde la capa append-only ──
+    # La cola NO almacena decisiones (Causa B); se reconstruye desde el estado
+    # actual y se anota con la última decisión registrada por caso.  Así los
+    # orphans son imposibles: sólo hay filas respaldadas por JSON/segment actual.
+    latest = load_latest()
+    n_dec = 0
+    for r in consolidated:
+        d = latest.get(r.id)
+        if d:
+            r.decision = d.get("decision", "")
+            r.notas = d.get("notas", "")
+            n_dec += 1
+    if n_dec:
+        print(f"  Decisiones aplicadas desde log append-only: {n_dec}")
+
+    result = sorted(consolidated, key=lambda r: (
+        {"SEV1-H": 0, "SEV1": 1, "SEV2": 2, "SEV3": 3}.get(r.severidad, 9),
+        r.estado_slug, r.municipio_slug, r.anio,
+    ))
 
     out = write_queue(result)
     by_sev = defaultdict(int)
@@ -211,7 +219,8 @@ def main():
     parser = argparse.ArgumentParser(description="Ejecutar detectores HITL sobre corpus v3")
     parser.add_argument("--estado", help="Filtrar a un solo estado")
     parser.add_argument("--merge", action="store_true",
-                        help="Preservar decisiones existentes en la cola")
+                        help="(deprecado, no-op) las decisiones ahora viven en "
+                             "hitl_decisiones.csv y se aplican siempre")
     parser.add_argument("--include-hardcoded", action="store_true",
                         help="Incluir estados hardcoded (Grupo B)")
     args = parser.parse_args()

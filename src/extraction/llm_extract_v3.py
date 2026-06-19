@@ -18,7 +18,7 @@ from typing import Iterable
 from openai.lib._pydantic import to_strict_json_schema
 from pydantic import ValidationError
 
-from src.core.constants import PREFIJOS_ESTADO
+from src.core.constants import PREFIJOS_ESTADO, json_predial_dir
 from src.extraction.llm_utils import (
     OPENAI_MODEL,
     OPENAI_MODEL_FALLBACK,
@@ -42,8 +42,8 @@ from src.extraction.prompts_v3 import (
 from src.extraction.schema_v3 import OtroNoClasificadoSchema, PredialOutputV3
 
 # ── Rutas ──
-
-OUTPUT_ROOT = ROOT / "predial-mx-v3"
+# El corpus v3 se persiste en data/{estado}/json_predial/{anio}/ vía
+# json_predial_dir() (ver src/core/constants.py).
 
 # ── Schema OpenAI (v3) ──
 
@@ -288,6 +288,27 @@ class ExtractionResult:
     procedencia: dict | None = None
 
 
+def _hint_block(hint_tipo_esquema: str = "", hint_notas: str = "") -> str:
+    """Bloque de pista del revisor para sesgar (no forzar) la extracción.
+
+    Es un prior fuerte: el LLM debe verificarlo, no obedecerlo ciegamente.  Los
+    validadores Pydantic siguen corriendo; si el resultado contradice la pista se
+    marca igual.
+    """
+    parts = []
+    if hint_tipo_esquema:
+        parts.append(
+            f"El revisor humano cree que el tipo de esquema es «{hint_tipo_esquema}». "
+            "Trátalo como hipótesis fuerte y verifícala contra el texto; si el texto "
+            "claramente indica otro esquema, usa el correcto."
+        )
+    if hint_notas:
+        parts.append(f"Nota del revisor: {hint_notas}")
+    if not parts:
+        return ""
+    return "PISTA DEL REVISOR (prior, verifícala):\n" + "\n".join(parts) + "\n\n"
+
+
 def _extract_one(
     *,
     estado: str,
@@ -299,6 +320,9 @@ def _extract_one(
     prefijo: str,
     enable_rescue: bool = True,
     force_full_model: bool = False,
+    hint_tipo_esquema: str = "",
+    hint_notas: str = "",
+    force_vision: bool = False,
 ) -> ExtractionResult:
     archivo = f"{prefijo}_PREDIAL_{anio}_{slug}.json"
 
@@ -331,7 +355,8 @@ def _extract_one(
             tokens_in=0, tokens_out=0, tokens_cached=0, intentos=0,
         )
 
-    user_msg = USER_TEMPLATE_V3.format(
+    hint_prefix = _hint_block(hint_tipo_esquema, hint_notas)
+    user_msg = hint_prefix + USER_TEMPLATE_V3.format(
         MUNICIPIO=municipio_pretty,
         ESTADO=estado_pretty,
         ANIO=anio,
@@ -394,20 +419,22 @@ def _extract_one(
     if (
         enable_rescue
         and pdf_path is not None
-        and _should_attempt_rescue(final_call.output if final_call else None)
+        and (force_vision or _should_attempt_rescue(final_call.output if final_call else None))
     ):
-        # Re-OCR rescue
-        try:
-            r_reocr = _attempt_ocr_rescue(
-                pdf_path=pdf_path,
-                estado_pretty=estado_pretty,
-                municipio_pretty=municipio_pretty,
-                anio=anio,
-                texto_original_len=len(texto),
-            )
-        except Exception as e:
-            r_reocr = None
-            error_history.append(f"reocr_exception={type(e).__name__}: {e}")
+        # Re-OCR rescue (se omite con force_vision: el revisor pidió ir directo a visión)
+        r_reocr = None
+        if not force_vision:
+            try:
+                r_reocr = _attempt_ocr_rescue(
+                    pdf_path=pdf_path,
+                    estado_pretty=estado_pretty,
+                    municipio_pretty=municipio_pretty,
+                    anio=anio,
+                    texto_original_len=len(texto),
+                )
+            except Exception as e:
+                r_reocr = None
+                error_history.append(f"reocr_exception={type(e).__name__}: {e}")
 
         if r_reocr is not None:
             reocr_call, reocr_prov = r_reocr
@@ -513,7 +540,7 @@ def _extract_one(
 
 
 def _save_result(result: ExtractionResult) -> Path:
-    out_dir = OUTPUT_ROOT / result.estado
+    out_dir = json_predial_dir(result.estado, result.anio)
     out_dir.mkdir(parents=True, exist_ok=True)
     out_path = out_dir / result.archivo
 
@@ -557,6 +584,9 @@ def extraer_municipio(
     anios: Iterable[int],
     slug_override: str | None = None,
     force_full_model: bool = False,
+    hint_tipo_esquema: str = "",
+    hint_notas: str = "",
+    force_vision: bool = False,
 ) -> list[ExtractionResult]:
     """Extrae predial v3 para un municipio en los años indicados.
 
@@ -568,7 +598,7 @@ def extraer_municipio(
         force_full_model: Arrancar con modelo full (gpt-5.4) en vez de mini.
 
     Returns:
-        Lista de ExtractionResult. JSONs en `predial-mx-v3/{estado}/`.
+        Lista de ExtractionResult. JSONs en `data/{estado}/json_predial/{anio}/`.
     """
     estado = estado.lower()
     if estado not in PREFIJOS_ESTADO:
@@ -596,6 +626,9 @@ def extraer_municipio(
             municipio_pretty=municipio_pretty,
             prefijo=prefijo,
             force_full_model=force_full_model,
+            hint_tipo_esquema=hint_tipo_esquema,
+            hint_notas=hint_notas,
+            force_vision=force_vision,
         )
         out_path = _save_result(r)
         r.out_path = out_path

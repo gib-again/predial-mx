@@ -1,572 +1,572 @@
-﻿ejercicio,municipio,slug,cve_mun,decreto,source_pdf,ley_page_start,ley_page_end,predial_found,predial_method,predial_page_start,predial_page_end,txt_file,txt_chars,char_start,char_end,confidence,forced_end,expansion_applied,anchor_text_start,anchor_text_end
-2010,ABASOLO,abasolo,001,ERO,2010_2278_Periodico_Numero_206_Primera_Parte_ocr.pdf,5,68,skipped,,,,GTO_PREDIAL_2010_abasolo.txt,7812,-1,-1,0.0,False,False,,
-2010,APASEO EL ALTO,apaseo_el_alto,004,ERO,2010_2278_Periodico_Numero_206_Primera_Parte_ocr.pdf,69,156,skipped,,,,GTO_PREDIAL_2010_apaseo_el_alto.txt,8212,-1,-1,0.0,False,False,,
-2010,APASEO EL GRANDE,apaseo_el_grande,005,ERO,2010_2279_Periodico_Numero_206_Segunda_Parte_ocr.pdf,2,84,skipped,,,,GTO_PREDIAL_2010_apaseo_el_grande.txt,8031,-1,-1,0.0,False,False,,
-2010,ATARJEA,atarjea,006,ERO,2010_2279_Periodico_Numero_206_Segunda_Parte_ocr.pdf,85,112,skipped,,,,GTO_PREDIAL_2010_atarjea.txt,6148,-1,-1,0.0,False,False,,
-2010,COMONFORT,comonfort,009,ERO,2010_2279_Periodico_Numero_206_Segunda_Parte_ocr.pdf,113,176,skipped,,,,GTO_PREDIAL_2010_comonfort.txt,8571,-1,-1,0.0,False,False,,
-2010,CORONEO,coroneo,010,ERO,2010_2280_Periodico_Numero_206_Tercera_Parte_ocr.pdf,2,67,skipped,,,,GTO_PREDIAL_2010_coroneo.txt,8144,-1,-1,0.0,False,False,,
-2010,CORTAZAR,cortazar,011,ERO,2010_2280_Periodico_Numero_206_Tercera_Parte_ocr.pdf,68,126,skipped,,,,GTO_PREDIAL_2010_cortazar.txt,8210,-1,-1,0.0,False,False,,
-2010,CUERÁMARO,cueramaro,012,ERO,2010_2280_Periodico_Numero_206_Tercera_Parte_ocr.pdf,127,184,skipped,,,,GTO_PREDIAL_2010_cueramaro.txt,7832,-1,-1,0.0,False,False,,
-2010,"DOLORES HIDALGO CUNA DE LA
-INDEPENDENCIA NACIONAL",dolores_hidalgo_cuna_de_la_independencia_nacional,014,ERO,2010_2281_Periodico_Numero_206_Cuarta_Parte_ocr.pdf,2,60,skipped,,,,GTO_PREDIAL_2010_dolores_hidalgo_cuna_de_la_independencia_nacional.txt,7989,-1,-1,0.0,False,False,,
-2010,DOCTOR MORA,doctor_mora,013,ERO,2010_2281_Periodico_Numero_206_Cuarta_Parte_ocr.pdf,61,108,skipped,,,,GTO_PREDIAL_2010_doctor_mora.txt,7874,-1,-1,0.0,False,False,,
-2010,HUANÍMARO,huanimaro,016,ERO,2010_2281_Periodico_Numero_206_Cuarta_Parte_ocr.pdf,109,160,skipped,,,,GTO_PREDIAL_2010_huanimaro.txt,7951,-1,-1,0.0,False,False,,
-2010,JERÉCUARO,jerecuaro,019,ERO,2010_2282_Periodico_Numero_206_Quinta_Parte_ocr.pdf,2,61,skipped,,,,GTO_PREDIAL_2010_jerecuaro.txt,7040,-1,-1,0.0,False,False,,
-2010,MANUEL DOBLADO,manuel_doblado,008,ERO,2010_2282_Periodico_Numero_206_Quinta_Parte_ocr.pdf,62,111,skipped,,,,GTO_PREDIAL_2010_manuel_doblado.txt,7979,-1,-1,0.0,False,False,,
-2010,MOROLEÓN,moroleon,021,ERO,2010_2282_Periodico_Numero_206_Quinta_Parte_ocr.pdf,112,168,skipped,,,,GTO_PREDIAL_2010_moroleon.txt,7921,-1,-1,0.0,False,False,,
-2010,OCAMPO,ocampo,022,ERO,2010_2283_Periodico_Numero_206_Sexta_Parte_ocr.pdf,2,42,skipped,,,,GTO_PREDIAL_2010_ocampo.txt,7734,-1,-1,0.0,False,False,,
-2010,"PÉNJIAMO, GUANAJ JATO",penjiamo_guanaj_jato,???,ERO,2010_2283_Periodico_Numero_206_Sexta_Parte_ocr.pdf,43,106,skipped,,,,GTO_PREDIAL_2010_penjiamo_guanaj_jato.txt,7958,-1,-1,0.0,False,False,,
-2010,ROMITA,romita,026,ERO,2010_2283_Periodico_Numero_206_Sexta_Parte_ocr.pdf,107,172,skipped,,,,GTO_PREDIAL_2010_romita.txt,7859,-1,-1,0.0,False,False,,
-2010,SALAMANCA,salamanca,027,ERO,2010_2285_Periodico_Numero_206_Septima_Parte_ocr.pdf,2,81,skipped,,,,GTO_PREDIAL_2010_salamanca.txt,8262,-1,-1,0.0,False,False,,
-2010,SAN DIEGO DE LA UNIÓN,san_diego_de_la_union,029,ERO,2010_2285_Periodico_Numero_206_Septima_Parte_ocr.pdf,82,131,skipped,,,,GTO_PREDIAL_2010_san_diego_de_la_union.txt,7789,-1,-1,0.0,False,False,,
-2010,SAN FELIPE,san_felipe,030,ERO,2010_2285_Periodico_Numero_206_Septima_Parte_ocr.pdf,132,176,skipped,,,,GTO_PREDIAL_2010_san_felipe.txt,7570,-1,-1,0.0,False,False,,
-2010,SAN MIGUEL DE ALLENDE,san_miguel_de_allende,003,ERO,2010_2286_Periodico_Numero_206_Octava_Parte_ocr.pdf,2,65,skipped,,,,GTO_PREDIAL_2010_san_miguel_de_allende.txt,7801,-1,-1,0.0,False,False,,
-2010,SANTA CATARINA,santa_catarina,034,ERO,2010_2286_Periodico_Numero_206_Octava_Parte_ocr.pdf,66,87,skipped,,,,GTO_PREDIAL_2010_santa_catarina.txt,7465,-1,-1,0.0,False,False,,
-2010,SANTIAGO MARAVATIO,santiago_maravatio,036,ERO,2010_2286_Periodico_Numero_206_Octava_Parte_ocr.pdf,88,136,skipped,,,,GTO_PREDIAL_2010_santiago_maravatio.txt,7845,-1,-1,0.0,False,False,,
-2010,TARANDACUAO,tarandacuao,038,ERO,2010_2286_Periodico_Numero_206_Octava_Parte_ocr.pdf,137,192,skipped,,,,GTO_PREDIAL_2010_tarandacuao.txt,7820,-1,-1,0.0,False,False,,
-2010,TARIMORO,tarimoro,039,ERO,2010_2287_Periodico_Numero_206_Novena_Parte_ocr.pdf,2,56,skipped,,,,GTO_PREDIAL_2010_tarimoro.txt,7855,-1,-1,0.0,False,False,,
-2040,TIERRA BLANCA,tierra_blanca,040,ERO,2010_2287_Periodico_Numero_206_Novena_Parte_ocr.pdf,57,94,true,seccion_predial,59,67,GTO_PREDIAL_2040_tierra_blanca.txt,7387,2469,9616,1.0,False,False,SECCIÓN PRIMERA,SECCIÓN SEGUNDA
-2010,URIANGATO,uriangato,041,ERO,2010_2287_Periodico_Numero_206_Novena_Parte_ocr.pdf,95,164,skipped,,,,GTO_PREDIAL_2010_uriangato.txt,10509,-1,-1,0.0,False,False,,
-2010,VALLE DE SANTIAGO,valle_de_santiago,042,ERO,2010_2288_Periodico_Numero_206_Decima_Parte_ocr.pdf,2,52,skipped,,,,GTO_PREDIAL_2010_valle_de_santiago.txt,8048,-1,-1,0.0,False,False,,
-2010,VICTORIA,victoria,043,ERO,2010_2288_Periodico_Numero_206_Decima_Parte_ocr.pdf,53,196,skipped,,,,GTO_PREDIAL_2010_victoria.txt,7639,-1,-1,0.0,False,False,,
-2010,SAN JOSÉ ITURBIDE,san_jose_de_iturbide,???,ERO,2010_2293_Periodico_Numero_206_Decima_Quinta_Parte_ocr.pdf,2,70,true,seccion_predial,3,10,GTO_PREDIAL_2010_san_jose_de_iturbide.txt,7547,2052,9350,1.0,False,False,SECCIÓN PRIMERA,SECCIÓN SEGUNDA
-2010,SAN LUIS DE LA PAZ,san_luis_de_la_paz,033,ERO,2010_2293_Periodico_Numero_206_Decima_Quinta_Parte_ocr.pdf,71,145,skipped,,,,GTO_PREDIAL_2010_san_luis_de_la_paz.txt,7985,-1,-1,0.0,False,False,,
-2010,SANTA CRUZ DE JUVENTINO ROSAS,santa_cruz_de_juventino_rosas,035,ERO,2010_2293_Periodico_Numero_206_Decima_Quinta_Parte_ocr.pdf,146,188,skipped,,,,GTO_PREDIAL_2010_santa_cruz_de_juventino_rosas.txt,7891,-1,-1,0.0,False,False,,
-2012,OCAMPO,ocampo,022,ERO,2011_3444_Periodico_Numero_204_Segunda_Parte_ocr.pdf,2,31,skipped,,,,GTO_PREDIAL_2012_ocampo.txt,7733,-1,-1,0.0,False,False,,
-2012,PURÍSIMA DEL RINCÓN,purisima_del_rincon,025,ERO,2011_3444_Periodico_Numero_204_Segunda_Parte_ocr.pdf,32,96,skipped,,,,GTO_PREDIAL_2012_purisima_del_rincon.txt,7839,-1,-1,0.0,False,False,,
-2012,JERÉCUARO,jerecuaro,019,ERO,2011_3444_Periodico_Numero_204_Segunda_Parte_ocr.pdf,97,155,skipped,,,,GTO_PREDIAL_2012_jerecuaro.txt,7029,-1,-1,0.0,False,False,,
-2012,ATARJEA,atarjea,006,ERO,2011_3444_Periodico_Numero_204_Segunda_Parte_ocr.pdf,156,184,skipped,,,,GTO_PREDIAL_2012_atarjea.txt,6239,-1,-1,0.0,False,False,,
-2012,TIERRA BLANCA,tierra_blanca,040,ERO,2011_3446_Periodico_Numero_204_Tercera_Parte_ocr.pdf,2,28,skipped,,,,GTO_PREDIAL_2012_tierra_blanca.txt,7691,-1,-1,0.0,False,False,,
-2012,SAN FRANCISCO DEL RINCÓN,san_francisco_del_rincon,031,ERO,2011_3446_Periodico_Numero_204_Tercera_Parte_ocr.pdf,29,84,skipped,,,,GTO_PREDIAL_2012_san_francisco_del_rincon.txt,7458,-1,-1,0.0,False,False,,
-2012,SAN DIEGO DE LA UNIÓN,san_diego_de_la_union,029,ERO,2011_3446_Periodico_Numero_204_Tercera_Parte_ocr.pdf,85,160,skipped,,,,GTO_PREDIAL_2012_san_diego_de_la_union.txt,7716,-1,-1,0.0,False,False,,
-2012,TARANDACUAO,tarandacuao,038,ERO,2011_3446_Periodico_Numero_204_Tercera_Parte_ocr.pdf,161,196,skipped,,,,GTO_PREDIAL_2012_tarandacuao.txt,7595,-1,-1,0.0,False,False,,
-2012,VALLE DE SANTIAGO,valle_de_santiago,042,ERO,2011_3447_Periodico_Numero_204_Cuarta_Parte_ocr.pdf,2,56,skipped,,,,GTO_PREDIAL_2012_valle_de_santiago.txt,7932,-1,-1,0.0,False,False,,
-2012,CORONEO,coroneo,010,ERO,2011_3447_Periodico_Numero_204_Cuarta_Parte_ocr.pdf,57,115,skipped,,,,GTO_PREDIAL_2012_coroneo.txt,8145,-1,-1,0.0,False,False,,
-2012,COMONFORT,comonfort,009,ERO,2011_3447_Periodico_Numero_204_Cuarta_Parte_ocr.pdf,116,184,skipped,,,,GTO_PREDIAL_2012_comonfort.txt,8554,-1,-1,0.0,False,False,,
-2012,MOROLEÓN,moroleon,021,ERO,2011_3448_Periodico_Numero_204_Quinta_Parte_ocr.pdf,2,58,skipped,,,,GTO_PREDIAL_2012_moroleon.txt,7746,-1,-1,0.0,False,False,,
-2012,SANTA CATARINA,santa_catarina,034,ERO,2011_3448_Periodico_Numero_204_Quinta_Parte_ocr.pdf,59,79,skipped,,,,GTO_PREDIAL_2012_santa_catarina.txt,7466,-1,-1,0.0,False,False,,
-2012,HUANÍMARO,huanimaro,016,ERO,2011_3448_Periodico_Numero_204_Quinta_Parte_ocr.pdf,80,123,skipped,,,,GTO_PREDIAL_2012_huanimaro.txt,7867,-1,-1,0.0,False,False,,
-2012,CUERÁMARO,cueramaro,012,ERO,2011_3448_Periodico_Numero_204_Quinta_Parte_ocr.pdf,124,170,skipped,,,,GTO_PREDIAL_2012_cueramaro.txt,7993,-1,-1,0.0,False,False,,
-2012,SANTIAGO MARAVATÍO,santiago_maravatio,036,ERO,2011_3448_Periodico_Numero_204_Quinta_Parte_ocr.pdf,171,224,skipped,,,,GTO_PREDIAL_2012_santiago_maravatio.txt,7976,-1,-1,0.0,False,False,,
-2012,"SANTA CRUZ DE JUVENTINO
-ROSAS",santa_cruz_de_juventino_rosas,035,ERO,2011_3449_Periodico_Numero_204_Sexta_Parte_ocr.pdf,2,51,skipped,,,,GTO_PREDIAL_2012_santa_cruz_de_juventino_rosas.txt,7941,-1,-1,0.0,False,False,,
-2012,YURIRIA,yuriria,046,ERO,2011_3449_Periodico_Numero_204_Sexta_Parte_ocr.pdf,52,90,skipped,,,,GTO_PREDIAL_2012_yuriria.txt,8114,-1,-1,0.0,False,False,,
-2012,VICTORIA,victoria,043,ERO,2011_3449_Periodico_Numero_204_Sexta_Parte_ocr.pdf,91,122,skipped,,,,GTO_PREDIAL_2012_victoria.txt,7659,-1,-1,0.0,False,False,,
-2012,GUANAJUATO,guanajuato,015,ERO,2011_3449_Periodico_Numero_204_Sexta_Parte_ocr.pdf,123,192,skipped,,,,GTO_PREDIAL_2012_guanajuato.txt,8964,-1,-1,0.0,False,False,,
-2012,DOCTOR MORA,doctor_mora,013,ERO,2011_3450_Periodico_Numero_204_Septima_Parte_ocr.pdf,2,41,skipped,,,,GTO_PREDIAL_2012_doctor_mora.txt,8014,-1,-1,0.0,False,False,,
-2012,PÉNJAMO,penjamo,023,ERO,2011_3450_Periodico_Numero_204_Septima_Parte_ocr.pdf,42,95,skipped,,,,GTO_PREDIAL_2012_penjamo.txt,7734,-1,-1,0.0,False,False,,
-2012,ROMITA,romita,026,ERO,2011_3450_Periodico_Numero_204_Septima_Parte_ocr.pdf,96,160,skipped,,,,GTO_PREDIAL_2012_romita.txt,7784,-1,-1,0.0,False,False,,
-2012,ABASOLO,abasolo,001,ERO,2011_3450_Periodico_Numero_204_Septima_Parte_ocr.pdf,161,208,skipped,,,,GTO_PREDIAL_2012_abasolo.txt,7893,-1,-1,0.0,False,False,,
-2012,APASEO EL GRANDE,apaseo_el_grande,005,ERO,2011_3451_Periodico_Numero_204_Octava_Parte_ocr.pdf,2,79,skipped,,,,GTO_PREDIAL_2012_apaseo_el_grande.txt,7161,-1,-1,0.0,False,False,,
-2012,URIANGATO,uriangato,041,ERO,2011_3451_Periodico_Numero_204_Octava_Parte_ocr.pdf,80,152,skipped,,,,GTO_PREDIAL_2012_uriangato.txt,10292,-1,-1,0.0,False,False,,
-2012,CORTAZAR,cortazar,011,ERO,2011_3451_Periodico_Numero_204_Octava_Parte_ocr.pdf,153,216,skipped,,,,GTO_PREDIAL_2012_cortazar.txt,8149,-1,-1,0.0,False,False,,
-2012,XICHÚ,xichu,045,ERO,2011_3452_Periodico_Numero_204_Novena_Parte_ocr.pdf,2,23,skipped,,,,GTO_PREDIAL_2012_xichu.txt,5964,-1,-1,0.0,False,False,,
-2012,"APASEO
-EL ALTO",apaseo_el_alto,004,ERO,2011_3452_Periodico_Numero_204_Novena_Parte_ocr.pdf,24,80,skipped,,,,GTO_PREDIAL_2012_apaseo_el_alto.txt,8032,-1,-1,0.0,False,False,,
-2012,SALVATIERRA,salvatierra,028,ERO,2011_3452_Periodico_Numero_204_Novena_Parte_ocr.pdf,81,116,skipped,,,,GTO_PREDIAL_2012_salvatierra.txt,7704,-1,-1,0.0,False,False,,
-2012,SAN FELIPE,san_felipe,030,ERO,2011_3452_Periodico_Numero_204_Novena_Parte_ocr.pdf,117,164,skipped,,,,GTO_PREDIAL_2012_san_felipe.txt,7715,-1,-1,0.0,False,False,,
-2012,TARIMORO,tarimoro,039,ERO,2011_3453_Periodico_Numero_204_Decima_Parte_ocr.pdf,2,54,skipped,,,,GTO_PREDIAL_2012_tarimoro.txt,7767,-1,-1,0.0,False,False,,
-2012,JARAL DEL PROGRESO,jaral_del_progreso,018,ERO,2011_3453_Periodico_Numero_204_Decima_Parte_ocr.pdf,55,98,skipped,,,,GTO_PREDIAL_2012_jaral_del_progreso.txt,7869,-1,-1,0.0,False,False,,
-2012,SAN JOSÉ ITURBIDE,san_jose_de_iturbide,???,ERO,2011_3453_Periodico_Numero_204_Decima_Parte_ocr.pdf,99,145,skipped,,,,GTO_PREDIAL_2012_san_jose_de_iturbide.txt,7771,-1,-1,0.0,False,False,,
-2012,SAN LUIS DE LA PAZ,san_luis_de_la_paz,033,ERO,2011_3453_Periodico_Numero_204_Decima_Parte_ocr.pdf,146,216,skipped,,,,GTO_PREDIAL_2012_san_luis_de_la_paz.txt,7855,-1,-1,0.0,False,False,,
-2012,SALAMANCA,salamanca,027,ERO,2011_3454_Periodico_Numero_204_Decima_Primera_Parte_ocr.pdf,2,92,skipped,,,,GTO_PREDIAL_2012_salamanca.txt,8278,-1,-1,0.0,False,False,,
-2012,IRAPUATO,irapuato,017,ERO,2011_3454_Periodico_Numero_204_Decima_Primera_Parte_ocr.pdf,93,188,skipped,,,,GTO_PREDIAL_2012_irapuato.txt,12004,-1,-1,0.0,False,False,,
-2012,CELAYA,celaya,007,ERO,2011_3455_Periodico_Numero_204_Decima_Segunda_Parte_ocr.pdf,2,113,skipped,,,,GTO_PREDIAL_2012_celaya.txt,11464,-1,-1,0.0,False,False,,
-2012,LEÓN,leon,020,ERO,2011_3455_Periodico_Numero_204_Decima_Segunda_Parte_ocr.pdf,114,188,skipped,,,,GTO_PREDIAL_2012_leon.txt,18131,-1,-1,0.0,False,False,,
-2012,"SAN MIGUEL, DE ALLENDE",san_miguel_de_allende,003,ERO,2011_3456_Periodico_Numero_204_Decima_Tercera_Parte_ocr.pdf,2,69,skipped,,,,GTO_PREDIAL_2012_san_miguel_de_allende.txt,8040,-1,-1,0.0,False,False,,
-2012,ACÁMBARO,acambaro,002,ERO,2011_3456_Periodico_Numero_204_Decima_Tercera_Parte_ocr.pdf,70,131,skipped,,,,GTO_PREDIAL_2012_acambaro.txt,7741,-1,-1,0.0,False,False,,
-2012,PUEBLO NUEVO,pueblo_nuevo,024,ERO,2011_3456_Periodico_Numero_204_Decima_Tercera_Parte_ocr.pdf,132,160,skipped,,,,GTO_PREDIAL_2012_pueblo_nuevo.txt,7582,-1,-1,0.0,False,False,,
-2012,VILLAGRÁN,villagran,044,ERO,2011_3457_Periodico_Numero_204_Decima_Cuarta_Parte_ocr.pdf,2,37,skipped,,,,GTO_PREDIAL_2012_villagran.txt,7661,-1,-1,0.0,False,False,,
-2012,SILAO,silao_de_la_victoria,037,ERO,2011_3457_Periodico_Numero_204_Decima_Cuarta_Parte_ocr.pdf,38,117,skipped,,,,GTO_PREDIAL_2012_silao_de_la_victoria.txt,7792,-1,-1,0.0,False,False,,
-2012,"DOLORES HIDALGO CUNA DE LA
-INDEPENDENCIA NACIONAL",dolores_hidalgo_cuna_de_la_independencia_nacional,014,ERO,2011_3457_Periodico_Numero_204_Decima_Cuarta_Parte_ocr.pdf,118,172,skipped,,,,GTO_PREDIAL_2012_dolores_hidalgo_cuna_de_la_independencia_nacional.txt,8043,-1,-1,0.0,False,False,,
-2012,León,leon,020,ERO,2012_3748_Periodico_Numero_78_Segunda_Parte_ocr.pdf,8,123,skipped,,,,GTO_PREDIAL_2012_leon.txt,15729,-1,-1,0.0,False,False,,
-2011,Irapuato,irapuato,017,ERO,2012_3748_Periodico_Numero_78_Segunda_Parte_ocr.pdf,124,144,skipped,,,,GTO_PREDIAL_2011_irapuato.txt,34088,-1,-1,0.0,False,False,,
-2014,ABASOLO,abasolo,001,ERO,2013_4923_Periodico_Numero_207_Segunda_Parte_ocr.pdf,2,58,skipped,,,,GTO_PREDIAL_2014_abasolo.txt,8046,-1,-1,0.0,False,False,,
-2014,ACÁMBARO,acambaro,002,ERO,2013_4923_Periodico_Numero_207_Segunda_Parte_ocr.pdf,59,142,skipped,,,,GTO_PREDIAL_2014_acambaro.txt,7953,-1,-1,0.0,False,False,,
-2014,"APASEO
-EL ALTO",apaseo_el_alto,004,ERO,2013_4923_Periodico_Numero_207_Segunda_Parte_ocr.pdf,143,212,skipped,,,,GTO_PREDIAL_2014_apaseo_el_alto.txt,7980,-1,-1,0.0,False,False,,
-2014,APASEO EL GRANDE,apaseo_el_grande,005,ERO,2013_4924_Periodico_Numero_207_Tercera_Parte_ocr.pdf,2,76,skipped,,,,GTO_PREDIAL_2014_apaseo_el_grande.txt,7610,-1,-1,0.0,False,False,,
-2014,ATARJEA,atarjea,006,ERO,2013_4924_Periodico_Numero_207_Tercera_Parte_ocr.pdf,77,101,skipped,,,,GTO_PREDIAL_2014_atarjea.txt,6116,-1,-1,0.0,False,False,,
-2014,COMONFORT,comonfort,009,ERO,2013_4924_Periodico_Numero_207_Tercera_Parte_ocr.pdf,102,172,skipped,,,,GTO_PREDIAL_2014_comonfort.txt,8318,-1,-1,0.0,False,False,,
-2014,CORONEO,coroneo,010,ERO,2013_4925_Periodico_Numero_207_Cuarta_Parte_ocr.pdf,2,56,skipped,,,,GTO_PREDIAL_2014_coroneo.txt,7810,-1,-1,0.0,False,False,,
-2014,CORTAZAR,cortazar,011,ERO,2013_4925_Periodico_Numero_207_Cuarta_Parte_ocr.pdf,57,133,skipped,,,,GTO_PREDIAL_2014_cortazar.txt,8226,-1,-1,0.0,False,False,,
-2014,CUERÁMARO,cueramaro,012,ERO,2013_4925_Periodico_Numero_207_Cuarta_Parte_ocr.pdf,134,184,skipped,,,,GTO_PREDIAL_2014_cueramaro.txt,7830,-1,-1,0.0,False,False,,
-2014,"DOLORES HIDALGO CUNA DE LA
-INDEPENDENCIA NACIONAL",dolores_hidalgo_cuna_de_la_independencia_nacional,014,ERO,2013_4926_Periodico_Numero_207_Quinta_Parte_ocr.pdf,2,59,skipped,,,,GTO_PREDIAL_2014_dolores_hidalgo_cuna_de_la_independencia_nacional.txt,8089,-1,-1,0.0,False,False,,
-2014,DOCTOR MORA,doctor_mora,013,ERO,2013_4926_Periodico_Numero_207_Quinta_Parte_ocr.pdf,60,104,skipped,,,,GTO_PREDIAL_2014_doctor_mora.txt,8002,-1,-1,0.0,False,False,,
-2014,"GUANAJUATO, GUAMAJUATO PARA EL.
+cvegeo,estado_slug,municipio_slug,municipio_raw,anio,status,source_pdf,ley_page_start,ley_page_end,predial_found,predial_method,predial_page_start,predial_page_end,char_start,char_end,confidence,forced_end,expansion_applied,anchor_text_start,anchor_text_end,next_tax_label,txt_file,txt_chars
+11001,guanajuato,abasolo,ABASOLO,2010,ok,2010_2278_Periodico_Numero_206_Primera_Parte_ocr.pdf,5,68,True,,,,-1,-1,0.0,False,False,,,,GTO_PREDIAL_2010_abasolo.txt,7812
+11004,guanajuato,apaseo_el_alto,APASEO EL ALTO,2010,ok,2010_2278_Periodico_Numero_206_Primera_Parte_ocr.pdf,69,156,True,,,,-1,-1,0.0,False,False,,,,GTO_PREDIAL_2010_apaseo_el_alto.txt,8212
+11005,guanajuato,apaseo_el_grande,APASEO EL GRANDE,2010,ok,2010_2279_Periodico_Numero_206_Segunda_Parte_ocr.pdf,2,84,True,,,,-1,-1,0.0,False,False,,,,GTO_PREDIAL_2010_apaseo_el_grande.txt,8031
+11006,guanajuato,atarjea,ATARJEA,2010,ok,2010_2279_Periodico_Numero_206_Segunda_Parte_ocr.pdf,85,112,True,,,,-1,-1,0.0,False,False,,,,GTO_PREDIAL_2010_atarjea.txt,6148
+11009,guanajuato,comonfort,COMONFORT,2010,ok,2010_2279_Periodico_Numero_206_Segunda_Parte_ocr.pdf,113,176,True,,,,-1,-1,0.0,False,False,,,,GTO_PREDIAL_2010_comonfort.txt,8571
+11010,guanajuato,coroneo,CORONEO,2010,ok,2010_2280_Periodico_Numero_206_Tercera_Parte_ocr.pdf,2,67,True,,,,-1,-1,0.0,False,False,,,,GTO_PREDIAL_2010_coroneo.txt,8144
+11011,guanajuato,cortazar,CORTAZAR,2010,ok,2010_2280_Periodico_Numero_206_Tercera_Parte_ocr.pdf,68,126,True,,,,-1,-1,0.0,False,False,,,,GTO_PREDIAL_2010_cortazar.txt,8210
+11012,guanajuato,cueramaro,CUERÁMARO,2010,ok,2010_2280_Periodico_Numero_206_Tercera_Parte_ocr.pdf,127,184,True,,,,-1,-1,0.0,False,False,,,,GTO_PREDIAL_2010_cueramaro.txt,7832
+11014,guanajuato,dolores_hidalgo_cuna_de_la_independencia_nacional,"DOLORES HIDALGO CUNA DE LA
+INDEPENDENCIA NACIONAL",2010,ok,2010_2281_Periodico_Numero_206_Cuarta_Parte_ocr.pdf,2,60,True,,,,-1,-1,0.0,False,False,,,,GTO_PREDIAL_2010_dolores_hidalgo_cuna_de_la_independencia_nacional.txt,7989
+11013,guanajuato,doctor_mora,DOCTOR MORA,2010,ok,2010_2281_Periodico_Numero_206_Cuarta_Parte_ocr.pdf,61,108,True,,,,-1,-1,0.0,False,False,,,,GTO_PREDIAL_2010_doctor_mora.txt,7874
+11016,guanajuato,huanimaro,HUANÍMARO,2010,ok,2010_2281_Periodico_Numero_206_Cuarta_Parte_ocr.pdf,109,160,True,,,,-1,-1,0.0,False,False,,,,GTO_PREDIAL_2010_huanimaro.txt,7951
+11019,guanajuato,jerecuaro,JERÉCUARO,2010,ok,2010_2282_Periodico_Numero_206_Quinta_Parte_ocr.pdf,2,61,True,,,,-1,-1,0.0,False,False,,,,GTO_PREDIAL_2010_jerecuaro.txt,7040
+11008,guanajuato,manuel_doblado,MANUEL DOBLADO,2010,ok,2010_2282_Periodico_Numero_206_Quinta_Parte_ocr.pdf,62,111,True,,,,-1,-1,0.0,False,False,,,,GTO_PREDIAL_2010_manuel_doblado.txt,7979
+11021,guanajuato,moroleon,MOROLEÓN,2010,ok,2010_2282_Periodico_Numero_206_Quinta_Parte_ocr.pdf,112,168,True,,,,-1,-1,0.0,False,False,,,,GTO_PREDIAL_2010_moroleon.txt,7921
+11022,guanajuato,ocampo,OCAMPO,2010,ok,2010_2283_Periodico_Numero_206_Sexta_Parte_ocr.pdf,2,42,True,,,,-1,-1,0.0,False,False,,,,GTO_PREDIAL_2010_ocampo.txt,7734
+,guanajuato,penjiamo_guanaj_jato,"PÉNJIAMO, GUANAJ JATO",2010,identidad_no_resuelta,2010_2283_Periodico_Numero_206_Sexta_Parte_ocr.pdf,43,106,True,,,,-1,-1,0.0,False,False,,,,GTO_PREDIAL_2010_penjiamo_guanaj_jato.txt,7958
+11026,guanajuato,romita,ROMITA,2010,ok,2010_2283_Periodico_Numero_206_Sexta_Parte_ocr.pdf,107,172,True,,,,-1,-1,0.0,False,False,,,,GTO_PREDIAL_2010_romita.txt,7859
+11027,guanajuato,salamanca,SALAMANCA,2010,ok,2010_2285_Periodico_Numero_206_Septima_Parte_ocr.pdf,2,81,True,,,,-1,-1,0.0,False,False,,,,GTO_PREDIAL_2010_salamanca.txt,8262
+11029,guanajuato,san_diego_de_la_union,SAN DIEGO DE LA UNIÓN,2010,ok,2010_2285_Periodico_Numero_206_Septima_Parte_ocr.pdf,82,131,True,,,,-1,-1,0.0,False,False,,,,GTO_PREDIAL_2010_san_diego_de_la_union.txt,7789
+11030,guanajuato,san_felipe,SAN FELIPE,2010,ok,2010_2285_Periodico_Numero_206_Septima_Parte_ocr.pdf,132,176,True,,,,-1,-1,0.0,False,False,,,,GTO_PREDIAL_2010_san_felipe.txt,7570
+11003,guanajuato,san_miguel_de_allende,SAN MIGUEL DE ALLENDE,2010,ok,2010_2286_Periodico_Numero_206_Octava_Parte_ocr.pdf,2,65,True,,,,-1,-1,0.0,False,False,,,,GTO_PREDIAL_2010_san_miguel_de_allende.txt,7801
+11034,guanajuato,santa_catarina,SANTA CATARINA,2010,ok,2010_2286_Periodico_Numero_206_Octava_Parte_ocr.pdf,66,87,True,,,,-1,-1,0.0,False,False,,,,GTO_PREDIAL_2010_santa_catarina.txt,7465
+11036,guanajuato,santiago_maravatio,SANTIAGO MARAVATIO,2010,ok,2010_2286_Periodico_Numero_206_Octava_Parte_ocr.pdf,88,136,True,,,,-1,-1,0.0,False,False,,,,GTO_PREDIAL_2010_santiago_maravatio.txt,7845
+11038,guanajuato,tarandacuao,TARANDACUAO,2010,ok,2010_2286_Periodico_Numero_206_Octava_Parte_ocr.pdf,137,192,True,,,,-1,-1,0.0,False,False,,,,GTO_PREDIAL_2010_tarandacuao.txt,7820
+11039,guanajuato,tarimoro,TARIMORO,2010,ok,2010_2287_Periodico_Numero_206_Novena_Parte_ocr.pdf,2,56,True,,,,-1,-1,0.0,False,False,,,,GTO_PREDIAL_2010_tarimoro.txt,7855
+11040,guanajuato,tierra_blanca,TIERRA BLANCA,2040,ok,2010_2287_Periodico_Numero_206_Novena_Parte_ocr.pdf,57,94,True,seccion_predial,59,67,2469,9616,1.0,False,False,SECCIÓN PRIMERA,SECCIÓN SEGUNDA,,GTO_PREDIAL_2040_tierra_blanca.txt,7387
+11041,guanajuato,uriangato,URIANGATO,2010,ok,2010_2287_Periodico_Numero_206_Novena_Parte_ocr.pdf,95,164,True,,,,-1,-1,0.0,False,False,,,,GTO_PREDIAL_2010_uriangato.txt,10509
+11042,guanajuato,valle_de_santiago,VALLE DE SANTIAGO,2010,ok,2010_2288_Periodico_Numero_206_Decima_Parte_ocr.pdf,2,52,True,,,,-1,-1,0.0,False,False,,,,GTO_PREDIAL_2010_valle_de_santiago.txt,8048
+11043,guanajuato,victoria,VICTORIA,2010,ok,2010_2288_Periodico_Numero_206_Decima_Parte_ocr.pdf,53,196,True,,,,-1,-1,0.0,False,False,,,,GTO_PREDIAL_2010_victoria.txt,7639
+11032,guanajuato,san_jose_de_iturbide,SAN JOSÉ ITURBIDE,2010,ok,2010_2293_Periodico_Numero_206_Decima_Quinta_Parte_ocr.pdf,2,70,True,seccion_predial,3,10,2052,9350,1.0,False,False,SECCIÓN PRIMERA,SECCIÓN SEGUNDA,,GTO_PREDIAL_2010_san_jose_de_iturbide.txt,7547
+11033,guanajuato,san_luis_de_la_paz,SAN LUIS DE LA PAZ,2010,ok,2010_2293_Periodico_Numero_206_Decima_Quinta_Parte_ocr.pdf,71,145,True,,,,-1,-1,0.0,False,False,,,,GTO_PREDIAL_2010_san_luis_de_la_paz.txt,7985
+11035,guanajuato,santa_cruz_de_juventino_rosas,SANTA CRUZ DE JUVENTINO ROSAS,2010,ok,2010_2293_Periodico_Numero_206_Decima_Quinta_Parte_ocr.pdf,146,188,True,,,,-1,-1,0.0,False,False,,,,GTO_PREDIAL_2010_santa_cruz_de_juventino_rosas.txt,7891
+11022,guanajuato,ocampo,OCAMPO,2012,ok,2011_3444_Periodico_Numero_204_Segunda_Parte_ocr.pdf,2,31,True,,,,-1,-1,0.0,False,False,,,,GTO_PREDIAL_2012_ocampo.txt,7733
+11025,guanajuato,purisima_del_rincon,PURÍSIMA DEL RINCÓN,2012,ok,2011_3444_Periodico_Numero_204_Segunda_Parte_ocr.pdf,32,96,True,,,,-1,-1,0.0,False,False,,,,GTO_PREDIAL_2012_purisima_del_rincon.txt,7839
+11019,guanajuato,jerecuaro,JERÉCUARO,2012,ok,2011_3444_Periodico_Numero_204_Segunda_Parte_ocr.pdf,97,155,True,,,,-1,-1,0.0,False,False,,,,GTO_PREDIAL_2012_jerecuaro.txt,7029
+11006,guanajuato,atarjea,ATARJEA,2012,ok,2011_3444_Periodico_Numero_204_Segunda_Parte_ocr.pdf,156,184,True,,,,-1,-1,0.0,False,False,,,,GTO_PREDIAL_2012_atarjea.txt,6239
+11040,guanajuato,tierra_blanca,TIERRA BLANCA,2012,ok,2011_3446_Periodico_Numero_204_Tercera_Parte_ocr.pdf,2,28,True,,,,-1,-1,0.0,False,False,,,,GTO_PREDIAL_2012_tierra_blanca.txt,7691
+11031,guanajuato,san_francisco_del_rincon,SAN FRANCISCO DEL RINCÓN,2012,ok,2011_3446_Periodico_Numero_204_Tercera_Parte_ocr.pdf,29,84,True,,,,-1,-1,0.0,False,False,,,,GTO_PREDIAL_2012_san_francisco_del_rincon.txt,7458
+11029,guanajuato,san_diego_de_la_union,SAN DIEGO DE LA UNIÓN,2012,ok,2011_3446_Periodico_Numero_204_Tercera_Parte_ocr.pdf,85,160,True,,,,-1,-1,0.0,False,False,,,,GTO_PREDIAL_2012_san_diego_de_la_union.txt,7716
+11038,guanajuato,tarandacuao,TARANDACUAO,2012,ok,2011_3446_Periodico_Numero_204_Tercera_Parte_ocr.pdf,161,196,True,,,,-1,-1,0.0,False,False,,,,GTO_PREDIAL_2012_tarandacuao.txt,7595
+11042,guanajuato,valle_de_santiago,VALLE DE SANTIAGO,2012,ok,2011_3447_Periodico_Numero_204_Cuarta_Parte_ocr.pdf,2,56,True,,,,-1,-1,0.0,False,False,,,,GTO_PREDIAL_2012_valle_de_santiago.txt,7932
+11010,guanajuato,coroneo,CORONEO,2012,ok,2011_3447_Periodico_Numero_204_Cuarta_Parte_ocr.pdf,57,115,True,,,,-1,-1,0.0,False,False,,,,GTO_PREDIAL_2012_coroneo.txt,8145
+11009,guanajuato,comonfort,COMONFORT,2012,ok,2011_3447_Periodico_Numero_204_Cuarta_Parte_ocr.pdf,116,184,True,,,,-1,-1,0.0,False,False,,,,GTO_PREDIAL_2012_comonfort.txt,8554
+11021,guanajuato,moroleon,MOROLEÓN,2012,ok,2011_3448_Periodico_Numero_204_Quinta_Parte_ocr.pdf,2,58,True,,,,-1,-1,0.0,False,False,,,,GTO_PREDIAL_2012_moroleon.txt,7746
+11034,guanajuato,santa_catarina,SANTA CATARINA,2012,ok,2011_3448_Periodico_Numero_204_Quinta_Parte_ocr.pdf,59,79,True,,,,-1,-1,0.0,False,False,,,,GTO_PREDIAL_2012_santa_catarina.txt,7466
+11016,guanajuato,huanimaro,HUANÍMARO,2012,ok,2011_3448_Periodico_Numero_204_Quinta_Parte_ocr.pdf,80,123,True,,,,-1,-1,0.0,False,False,,,,GTO_PREDIAL_2012_huanimaro.txt,7867
+11012,guanajuato,cueramaro,CUERÁMARO,2012,ok,2011_3448_Periodico_Numero_204_Quinta_Parte_ocr.pdf,124,170,True,,,,-1,-1,0.0,False,False,,,,GTO_PREDIAL_2012_cueramaro.txt,7993
+11036,guanajuato,santiago_maravatio,SANTIAGO MARAVATÍO,2012,ok,2011_3448_Periodico_Numero_204_Quinta_Parte_ocr.pdf,171,224,True,,,,-1,-1,0.0,False,False,,,,GTO_PREDIAL_2012_santiago_maravatio.txt,7976
+11035,guanajuato,santa_cruz_de_juventino_rosas,"SANTA CRUZ DE JUVENTINO
+ROSAS",2012,ok,2011_3449_Periodico_Numero_204_Sexta_Parte_ocr.pdf,2,51,True,,,,-1,-1,0.0,False,False,,,,GTO_PREDIAL_2012_santa_cruz_de_juventino_rosas.txt,7941
+11046,guanajuato,yuriria,YURIRIA,2012,ok,2011_3449_Periodico_Numero_204_Sexta_Parte_ocr.pdf,52,90,True,,,,-1,-1,0.0,False,False,,,,GTO_PREDIAL_2012_yuriria.txt,8114
+11043,guanajuato,victoria,VICTORIA,2012,ok,2011_3449_Periodico_Numero_204_Sexta_Parte_ocr.pdf,91,122,True,,,,-1,-1,0.0,False,False,,,,GTO_PREDIAL_2012_victoria.txt,7659
+11015,guanajuato,guanajuato,GUANAJUATO,2012,ok,2011_3449_Periodico_Numero_204_Sexta_Parte_ocr.pdf,123,192,True,,,,-1,-1,0.0,False,False,,,,GTO_PREDIAL_2012_guanajuato.txt,8964
+11013,guanajuato,doctor_mora,DOCTOR MORA,2012,ok,2011_3450_Periodico_Numero_204_Septima_Parte_ocr.pdf,2,41,True,,,,-1,-1,0.0,False,False,,,,GTO_PREDIAL_2012_doctor_mora.txt,8014
+11023,guanajuato,penjamo,PÉNJAMO,2012,ok,2011_3450_Periodico_Numero_204_Septima_Parte_ocr.pdf,42,95,True,,,,-1,-1,0.0,False,False,,,,GTO_PREDIAL_2012_penjamo.txt,7734
+11026,guanajuato,romita,ROMITA,2012,ok,2011_3450_Periodico_Numero_204_Septima_Parte_ocr.pdf,96,160,True,,,,-1,-1,0.0,False,False,,,,GTO_PREDIAL_2012_romita.txt,7784
+11001,guanajuato,abasolo,ABASOLO,2012,ok,2011_3450_Periodico_Numero_204_Septima_Parte_ocr.pdf,161,208,True,,,,-1,-1,0.0,False,False,,,,GTO_PREDIAL_2012_abasolo.txt,7893
+11005,guanajuato,apaseo_el_grande,APASEO EL GRANDE,2012,ok,2011_3451_Periodico_Numero_204_Octava_Parte_ocr.pdf,2,79,True,,,,-1,-1,0.0,False,False,,,,GTO_PREDIAL_2012_apaseo_el_grande.txt,7161
+11041,guanajuato,uriangato,URIANGATO,2012,ok,2011_3451_Periodico_Numero_204_Octava_Parte_ocr.pdf,80,152,True,,,,-1,-1,0.0,False,False,,,,GTO_PREDIAL_2012_uriangato.txt,10292
+11011,guanajuato,cortazar,CORTAZAR,2012,ok,2011_3451_Periodico_Numero_204_Octava_Parte_ocr.pdf,153,216,True,,,,-1,-1,0.0,False,False,,,,GTO_PREDIAL_2012_cortazar.txt,8149
+11045,guanajuato,xichu,XICHÚ,2012,ok,2011_3452_Periodico_Numero_204_Novena_Parte_ocr.pdf,2,23,True,,,,-1,-1,0.0,False,False,,,,GTO_PREDIAL_2012_xichu.txt,5964
+11004,guanajuato,apaseo_el_alto,"APASEO
+EL ALTO",2012,ok,2011_3452_Periodico_Numero_204_Novena_Parte_ocr.pdf,24,80,True,,,,-1,-1,0.0,False,False,,,,GTO_PREDIAL_2012_apaseo_el_alto.txt,8032
+11028,guanajuato,salvatierra,SALVATIERRA,2012,ok,2011_3452_Periodico_Numero_204_Novena_Parte_ocr.pdf,81,116,True,,,,-1,-1,0.0,False,False,,,,GTO_PREDIAL_2012_salvatierra.txt,7704
+11030,guanajuato,san_felipe,SAN FELIPE,2012,ok,2011_3452_Periodico_Numero_204_Novena_Parte_ocr.pdf,117,164,True,,,,-1,-1,0.0,False,False,,,,GTO_PREDIAL_2012_san_felipe.txt,7715
+11039,guanajuato,tarimoro,TARIMORO,2012,ok,2011_3453_Periodico_Numero_204_Decima_Parte_ocr.pdf,2,54,True,,,,-1,-1,0.0,False,False,,,,GTO_PREDIAL_2012_tarimoro.txt,7767
+11018,guanajuato,jaral_del_progreso,JARAL DEL PROGRESO,2012,ok,2011_3453_Periodico_Numero_204_Decima_Parte_ocr.pdf,55,98,True,,,,-1,-1,0.0,False,False,,,,GTO_PREDIAL_2012_jaral_del_progreso.txt,7869
+11032,guanajuato,san_jose_de_iturbide,SAN JOSÉ ITURBIDE,2012,ok,2011_3453_Periodico_Numero_204_Decima_Parte_ocr.pdf,99,145,True,,,,-1,-1,0.0,False,False,,,,GTO_PREDIAL_2012_san_jose_de_iturbide.txt,7771
+11033,guanajuato,san_luis_de_la_paz,SAN LUIS DE LA PAZ,2012,ok,2011_3453_Periodico_Numero_204_Decima_Parte_ocr.pdf,146,216,True,,,,-1,-1,0.0,False,False,,,,GTO_PREDIAL_2012_san_luis_de_la_paz.txt,7855
+11027,guanajuato,salamanca,SALAMANCA,2012,ok,2011_3454_Periodico_Numero_204_Decima_Primera_Parte_ocr.pdf,2,92,True,,,,-1,-1,0.0,False,False,,,,GTO_PREDIAL_2012_salamanca.txt,8278
+11017,guanajuato,irapuato,IRAPUATO,2012,ok,2011_3454_Periodico_Numero_204_Decima_Primera_Parte_ocr.pdf,93,188,True,,,,-1,-1,0.0,False,False,,,,GTO_PREDIAL_2012_irapuato.txt,12004
+11007,guanajuato,celaya,CELAYA,2012,ok,2011_3455_Periodico_Numero_204_Decima_Segunda_Parte_ocr.pdf,2,113,True,,,,-1,-1,0.0,False,False,,,,GTO_PREDIAL_2012_celaya.txt,11464
+11020,guanajuato,leon,LEÓN,2012,ok,2011_3455_Periodico_Numero_204_Decima_Segunda_Parte_ocr.pdf,114,188,True,,,,-1,-1,0.0,False,False,,,,GTO_PREDIAL_2012_leon.txt,18131
+11003,guanajuato,san_miguel_de_allende,"SAN MIGUEL, DE ALLENDE",2012,ok,2011_3456_Periodico_Numero_204_Decima_Tercera_Parte_ocr.pdf,2,69,True,,,,-1,-1,0.0,False,False,,,,GTO_PREDIAL_2012_san_miguel_de_allende.txt,8040
+11002,guanajuato,acambaro,ACÁMBARO,2012,ok,2011_3456_Periodico_Numero_204_Decima_Tercera_Parte_ocr.pdf,70,131,True,,,,-1,-1,0.0,False,False,,,,GTO_PREDIAL_2012_acambaro.txt,7741
+11024,guanajuato,pueblo_nuevo,PUEBLO NUEVO,2012,ok,2011_3456_Periodico_Numero_204_Decima_Tercera_Parte_ocr.pdf,132,160,True,,,,-1,-1,0.0,False,False,,,,GTO_PREDIAL_2012_pueblo_nuevo.txt,7582
+11044,guanajuato,villagran,VILLAGRÁN,2012,ok,2011_3457_Periodico_Numero_204_Decima_Cuarta_Parte_ocr.pdf,2,37,True,,,,-1,-1,0.0,False,False,,,,GTO_PREDIAL_2012_villagran.txt,7661
+11037,guanajuato,silao_de_la_victoria,SILAO,2012,ok,2011_3457_Periodico_Numero_204_Decima_Cuarta_Parte_ocr.pdf,38,117,True,,,,-1,-1,0.0,False,False,,,,GTO_PREDIAL_2012_silao_de_la_victoria.txt,7792
+11014,guanajuato,dolores_hidalgo_cuna_de_la_independencia_nacional,"DOLORES HIDALGO CUNA DE LA
+INDEPENDENCIA NACIONAL",2012,ok,2011_3457_Periodico_Numero_204_Decima_Cuarta_Parte_ocr.pdf,118,172,True,,,,-1,-1,0.0,False,False,,,,GTO_PREDIAL_2012_dolores_hidalgo_cuna_de_la_independencia_nacional.txt,8043
+11020,guanajuato,leon,León,2012,ok,2012_3748_Periodico_Numero_78_Segunda_Parte_ocr.pdf,8,123,True,,,,-1,-1,0.0,False,False,,,,GTO_PREDIAL_2012_leon.txt,15729
+11017,guanajuato,irapuato,Irapuato,2011,ok,2012_3748_Periodico_Numero_78_Segunda_Parte_ocr.pdf,124,144,True,,,,-1,-1,0.0,False,False,,,,GTO_PREDIAL_2011_irapuato.txt,34088
+11001,guanajuato,abasolo,ABASOLO,2014,ok,2013_4923_Periodico_Numero_207_Segunda_Parte_ocr.pdf,2,58,True,,,,-1,-1,0.0,False,False,,,,GTO_PREDIAL_2014_abasolo.txt,8046
+11002,guanajuato,acambaro,ACÁMBARO,2014,ok,2013_4923_Periodico_Numero_207_Segunda_Parte_ocr.pdf,59,142,True,,,,-1,-1,0.0,False,False,,,,GTO_PREDIAL_2014_acambaro.txt,7953
+11004,guanajuato,apaseo_el_alto,"APASEO
+EL ALTO",2014,ok,2013_4923_Periodico_Numero_207_Segunda_Parte_ocr.pdf,143,212,True,,,,-1,-1,0.0,False,False,,,,GTO_PREDIAL_2014_apaseo_el_alto.txt,7980
+11005,guanajuato,apaseo_el_grande,APASEO EL GRANDE,2014,ok,2013_4924_Periodico_Numero_207_Tercera_Parte_ocr.pdf,2,76,True,,,,-1,-1,0.0,False,False,,,,GTO_PREDIAL_2014_apaseo_el_grande.txt,7610
+11006,guanajuato,atarjea,ATARJEA,2014,ok,2013_4924_Periodico_Numero_207_Tercera_Parte_ocr.pdf,77,101,True,,,,-1,-1,0.0,False,False,,,,GTO_PREDIAL_2014_atarjea.txt,6116
+11009,guanajuato,comonfort,COMONFORT,2014,ok,2013_4924_Periodico_Numero_207_Tercera_Parte_ocr.pdf,102,172,True,,,,-1,-1,0.0,False,False,,,,GTO_PREDIAL_2014_comonfort.txt,8318
+11010,guanajuato,coroneo,CORONEO,2014,ok,2013_4925_Periodico_Numero_207_Cuarta_Parte_ocr.pdf,2,56,True,,,,-1,-1,0.0,False,False,,,,GTO_PREDIAL_2014_coroneo.txt,7810
+11011,guanajuato,cortazar,CORTAZAR,2014,ok,2013_4925_Periodico_Numero_207_Cuarta_Parte_ocr.pdf,57,133,True,,,,-1,-1,0.0,False,False,,,,GTO_PREDIAL_2014_cortazar.txt,8226
+11012,guanajuato,cueramaro,CUERÁMARO,2014,ok,2013_4925_Periodico_Numero_207_Cuarta_Parte_ocr.pdf,134,184,True,,,,-1,-1,0.0,False,False,,,,GTO_PREDIAL_2014_cueramaro.txt,7830
+11014,guanajuato,dolores_hidalgo_cuna_de_la_independencia_nacional,"DOLORES HIDALGO CUNA DE LA
+INDEPENDENCIA NACIONAL",2014,ok,2013_4926_Periodico_Numero_207_Quinta_Parte_ocr.pdf,2,59,True,,,,-1,-1,0.0,False,False,,,,GTO_PREDIAL_2014_dolores_hidalgo_cuna_de_la_independencia_nacional.txt,8089
+11013,guanajuato,doctor_mora,DOCTOR MORA,2014,ok,2013_4926_Periodico_Numero_207_Quinta_Parte_ocr.pdf,60,104,True,,,,-1,-1,0.0,False,False,,,,GTO_PREDIAL_2014_doctor_mora.txt,8002
+,guanajuato,guanajuato_guamajuato_para_el_ejercicio_fiscal_del_2014_capitulo_primero_de_la_maturaleza_y_objeto_de_la_ley_articulo_t_la_presente_ley_es_de_orden_publico_y_tiene_por_objeto_establecer_los_ingresos_que_percibira_la_hacienda_publica_del_municipio_de,"GUANAJUATO, GUAMAJUATO PARA EL.
 EJERCICIO FISCAL DEL 2014
 CAPÍTULO PRIMERO
 DE LA MATURALEZA Y OBJETO DE LA LEY
 Artículo t. La presente ley es de orden público y tiene por objeto establecer los
-ingresos que percibirá la hacienda pública del municipio de",guanajuato_guamajuato_para_el_ejercicio_fiscal_del_2014_capitulo_primero_de_la_maturaleza_y_objeto_de_la_ley_articulo_t_la_presente_ley_es_de_orden_publico_y_tiene_por_objeto_establecer_los_ingresos_que_percibira_la_hacienda_publica_del_municipio_de,???,ERO,2013_4926_Periodico_Numero_207_Quinta_Parte_ocr.pdf,105,172,true,seccion_predial,107,113,GTO_PREDIAL_2014_guanajuato_guamajuato_para_el_ejercicio_fiscal_del_2014_capitulo_primero_de_la_m.txt,8668,2911,11096,1.0,False,False,SECCIÓN PRIMERA,SECCIÓN SEGUNDA
-2014,HUANÍMARO,huanimaro,016,ERO,2013_4927_Periodico_Numero_207_Sexta_Parte_ocr.pdf,2,47,skipped,,,,GTO_PREDIAL_2014_huanimaro.txt,8063,-1,-1,0.0,False,False,,
-2014,IRAPUATO,irapuato,017,ERO,2013_4927_Periodico_Numero_207_Sexta_Parte_ocr.pdf,48,164,skipped,,,,GTO_PREDIAL_2014_irapuato.txt,12122,-1,-1,0.0,False,False,,
-2014,JARAL DEL PROGRESO,jaral_del_progreso,018,ERO,2013_4928_Periodico_Numero_207_Septima_Parte_ocr.pdf,2,72,skipped,,,,GTO_PREDIAL_2014_jaral_del_progreso.txt,7957,-1,-1,0.0,False,False,,
-2014,JERÉCUARO,jerecuaro,019,ERO,2013_4928_Periodico_Numero_207_Septima_Parte_ocr.pdf,73,125,skipped,,,,GTO_PREDIAL_2014_jerecuaro.txt,6987,-1,-1,0.0,False,False,,
-2014,LEÓN,leon,020,ERO,2013_4928_Periodico_Numero_207_Septima_Parte_ocr.pdf,126,220,skipped,,,,GTO_PREDIAL_2014_leon.txt,18265,-1,-1,0.0,False,False,,
-2014,MANUEL DOBLADO,manuel_doblado,008,ERO,2013_4929_Periodico_Numero_207_Octava_Parte_ocr.pdf,2,50,skipped,,,,GTO_PREDIAL_2014_manuel_doblado.txt,7977,-1,-1,0.0,False,False,,
-2014,MOROLEÓN,moroleon,021,ERO,2013_4929_Periodico_Numero_207_Octava_Parte_ocr.pdf,51,122,skipped,,,,GTO_PREDIAL_2014_moroleon.txt,7914,-1,-1,0.0,False,False,,
-2014,OCAMPO,ocampo,022,ERO,2013_4929_Periodico_Numero_207_Octava_Parte_ocr.pdf,123,168,skipped,,,,GTO_PREDIAL_2014_ocampo.txt,7849,-1,-1,0.0,False,False,,
-2014,PÉNJAMO,penjamo,023,ERO,2013_4930_Periodico_Numero_207_Novena_Parte_ocr.pdf,2,69,skipped,,,,GTO_PREDIAL_2014_penjamo.txt,7836,-1,-1,0.0,False,False,,
-2091,"PUEBLO NUEVO, GUAMAJUATO",pueblo_nuevo,024,ERO,2013_4930_Periodico_Numero_207_Novena_Parte_ocr.pdf,70,105,true,seccion_predial,72,79,GTO_PREDIAL_2091_pueblo_nuevo.txt,7352,4484,11584,1.0,False,False,SECCIÓN PRIMERA,SECCIÓN SEGUNDA
-2014,PURÍSIMA DEL RINCÓN,purisima_del_rincon,025,ERO,2013_4930_Periodico_Numero_207_Novena_Parte_ocr.pdf,106,172,skipped,,,,GTO_PREDIAL_2014_purisima_del_rincon.txt,7806,-1,-1,0.0,False,False,,
-2014,SALAMANCA,salamanca,027,ERO,2013_4931_Periodico_Numero_207_Decima_Parte_ocr.pdf,2,69,skipped,,,,GTO_PREDIAL_2014_salamanca.txt,8306,-1,-1,0.0,False,False,,
-2014,SALVATIERRA,salvatierra,028,ERO,2013_4931_Periodico_Numero_207_Decima_Parte_ocr.pdf,70,115,skipped,,,,GTO_PREDIAL_2014_salvatierra.txt,7879,-1,-1,0.0,False,False,,
-2014,SAN DIEGO DE LA UNIÓN,san_diego_de_la_union,029,ERO,2013_4931_Periodico_Numero_207_Decima_Parte_ocr.pdf,116,156,skipped,,,,GTO_PREDIAL_2014_san_diego_de_la_union.txt,7897,-1,-1,0.0,False,False,,
-2014,SAN FELIPE,san_felipe,030,ERO,2013_4932_Periodico_Numero_207_Decima_Primera_Parte_ocr.pdf,2,55,skipped,,,,GTO_PREDIAL_2014_san_felipe.txt,7600,-1,-1,0.0,False,False,,
-2014,SAN FRANCISCO DEL RINCÓN,san_francisco_del_rincon,031,ERO,2013_4932_Periodico_Numero_207_Decima_Primera_Parte_ocr.pdf,56,119,skipped,,,,GTO_PREDIAL_2014_san_francisco_del_rincon.txt,7504,-1,-1,0.0,False,False,,
-2014,SAN JOSÉ ITURBIDE,san_jose_de_iturbide,???,ERO,2013_4932_Periodico_Numero_207_Decima_Primera_Parte_ocr.pdf,120,192,true,seccion_predial,123,130,GTO_PREDIAL_2014_san_jose_de_iturbide.txt,7596,5950,13290,1.0,False,False,SECCIÓN PRIMERA,SECCIÓN SEGUNDA
-2014,SAN LUIS DE LA PAZ,san_luis_de_la_paz,033,ERO,2013_4933_Periodico_Numero_207_Decima_Segunda_Parte_ocr.pdf,2,104,true,seccion_predial,5,12,GTO_PREDIAL_2014_san_luis_de_la_paz.txt,7693,4062,11503,1.0,False,False,SECCIÓN PRIMERA,SECCIÓN SEGUNDA
-2014,"SANTA CRUZ DE JUVENTINO
-ROSAS",santa_cruz_de_juventino_rosas,035,ERO,2013_4933_Periodico_Numero_207_Decima_Segunda_Parte_ocr.pdf,105,188,skipped,,,,GTO_PREDIAL_2014_santa_cruz_de_juventino_rosas.txt,8167,-1,-1,0.0,False,False,,
-2014,SANTIAGO MARAVATÍO,santiago_maravatio,036,ERO,2013_4934_Periodico_Numero_207_Decima_Tercera_Parte_ocr.pdf,2,54,skipped,,,,GTO_PREDIAL_2014_santiago_maravatio.txt,7942,-1,-1,0.0,False,False,,
-2014,SILAO DE LA VICTORIA,silao_de_la_victoria,037,ERO,2013_4934_Periodico_Numero_207_Decima_Tercera_Parte_ocr.pdf,55,129,skipped,,,,GTO_PREDIAL_2014_silao_de_la_victoria.txt,8016,-1,-1,0.0,False,False,,
-2044,TARANDACUAO,tarandacuao,038,ERO,2013_4934_Periodico_Numero_207_Decima_Tercera_Parte_ocr.pdf,130,200,true,seccion_predial,134,141,GTO_PREDIAL_2044_tarandacuao.txt,7335,5441,12526,1.0,False,False,SECCIÓN PRIMERA,SECCIÓN SEGUNDA
-2014,TARIMORO,tarimoro,039,ERO,2013_4935_Periodico_Numero_207_Decima_Cuarta_Parte_ocr.pdf,2,66,skipped,,,,GTO_PREDIAL_2014_tarimoro.txt,7965,-1,-1,0.0,False,False,,
-2014,TIERRA BLANCA,tierra_blanca,040,ERO,2013_4935_Periodico_Numero_207_Decima_Cuarta_Parte_ocr.pdf,67,94,skipped,,,,GTO_PREDIAL_2014_tierra_blanca.txt,7571,-1,-1,0.0,False,False,,
-2014,URIANGATO,uriangato,041,ERO,2013_4935_Periodico_Numero_207_Decima_Cuarta_Parte_ocr.pdf,95,168,skipped,,,,GTO_PREDIAL_2014_uriangato.txt,10264,-1,-1,0.0,False,False,,
-2014,VALLE DE SANTIAGO,valle_de_santiago,042,ERO,2013_4936_Periodico_Numero_207_Decima_Quinta_Parte_ocr.pdf,2,65,skipped,,,,GTO_PREDIAL_2014_valle_de_santiago.txt,7974,-1,-1,0.0,False,False,,
-2014,VICTORIA,victoria,043,ERO,2013_4936_Periodico_Numero_207_Decima_Quinta_Parte_ocr.pdf,66,100,skipped,,,,GTO_PREDIAL_2014_victoria.txt,7545,-1,-1,0.0,False,False,,
-2014,VILLAGRÁN,villagran,044,ERO,2013_4936_Periodico_Numero_207_Decima_Quinta_Parte_ocr.pdf,101,156,skipped,,,,GTO_PREDIAL_2014_villagran.txt,7784,-1,-1,0.0,False,False,,
-2014,XICHÚ,xichu,045,ERO,2013_4937_Periodico_Numero_207_Decima_Sexta_Parte_ocr.pdf,2,25,skipped,,,,GTO_PREDIAL_2014_xichu.txt,5833,-1,-1,0.0,False,False,,
-2014,YURIRIA,yuriria,046,ERO,2013_4937_Periodico_Numero_207_Decima_Sexta_Parte_ocr.pdf,26,69,true,seccion_predial,28,34,GTO_PREDIAL_2014_yuriria.txt,7476,2760,9996,1.0,False,False,SECCIÓN PRIMERA,SECCIÓN SEGUNDA
-2014,CELAYA,celaya,007,ERO,2013_4937_Periodico_Numero_207_Decima_Sexta_Parte_ocr.pdf,70,180,skipped,,,,GTO_PREDIAL_2014_celaya.txt,11568,-1,-1,0.0,False,False,,
-2014,ROMITA,romita,026,ERO,2013_4938_Periodico_Numero_207_Decima_Septima_Parte_ocr.pdf,2,72,skipped,,,,GTO_PREDIAL_2014_romita.txt,7779,-1,-1,0.0,False,False,,
-2014,SAN MIGUEL DE ALLENDE,san_miguel_de_allende,003,ERO,2013_4938_Periodico_Numero_207_Decima_Septima_Parte_ocr.pdf,73,156,skipped,,,,GTO_PREDIAL_2014_san_miguel_de_allende.txt,8623,-1,-1,0.0,False,False,,
-2015,ABASOLO,abasolo,001,ERO,2014_5517_Periodico_Numero_206_Segunda_Parte_ocr.pdf,2,61,skipped,,,,GTO_PREDIAL_2015_abasolo.txt,8027,-1,-1,0.0,False,False,,
-2015,ACÁMBARO,acambaro,002,ERO,2014_5517_Periodico_Numero_206_Segunda_Parte_ocr.pdf,62,140,skipped,,,,GTO_PREDIAL_2015_acambaro.txt,7862,-1,-1,0.0,False,False,,
-2015,APASEO EL ALTO,apaseo_el_alto,004,ERO,2014_5517_Periodico_Numero_206_Segunda_Parte_ocr.pdf,141,208,skipped,,,,GTO_PREDIAL_2015_apaseo_el_alto.txt,8077,-1,-1,0.0,False,False,,
-2015,APASEO EL GRANDE,apaseo_el_grande,005,ERO,2014_5518_Periodico_Numero_206_Tercera_Parte_ocr.pdf,2,82,skipped,,,,GTO_PREDIAL_2015_apaseo_el_grande.txt,7828,-1,-1,0.0,False,False,,
-2015,ATARJEA,atarjea,006,ERO,2014_5518_Periodico_Numero_206_Tercera_Parte_ocr.pdf,83,107,skipped,,,,GTO_PREDIAL_2015_atarjea.txt,6069,-1,-1,0.0,False,False,,
-2018,CELAYA,celaya,007,ERO,2014_5518_Periodico_Numero_206_Tercera_Parte_ocr.pdf,108,220,true,seccion_predial,115,126,GTO_PREDIAL_2018_celaya.txt,11139,10206,21107,1.0,False,False,SECCIÓN PRIMERA,SECCIÓN SEGUNDA
-2015,COMONFORT,comonfort,009,ERO,2014_5519_Periodico_Numero_206_Cuarta_Parte_ocr.pdf,2,70,skipped,,,,GTO_PREDIAL_2015_comonfort.txt,8301,-1,-1,0.0,False,False,,
-2015,CORONEO,coroneo,010,ERO,2014_5519_Periodico_Numero_206_Cuarta_Parte_ocr.pdf,71,128,skipped,,,,GTO_PREDIAL_2015_coroneo.txt,7808,-1,-1,0.0,False,False,,
-2015,CORTAZAR,cortazar,011,ERO,2014_5519_Periodico_Numero_206_Cuarta_Parte_ocr.pdf,129,204,skipped,,,,GTO_PREDIAL_2015_cortazar.txt,8259,-1,-1,0.0,False,False,,
-2015,CUERÁMARO,cueramaro,012,ERO,2014_5520_Periodico_Numero_206_Quinta_Parte_ocr.pdf,2,50,skipped,,,,GTO_PREDIAL_2015_cueramaro.txt,7739,-1,-1,0.0,False,False,,
-2015,"DOLORES HIDALGO CUNA DE LA
-INDEPENDENCIA NACIONAL",dolores_hidalgo_cuna_de_la_independencia_nacional,014,ERO,2014_5520_Periodico_Numero_206_Quinta_Parte_ocr.pdf,51,106,skipped,,,,GTO_PREDIAL_2015_dolores_hidalgo_cuna_de_la_independencia_nacional.txt,8110,-1,-1,0.0,False,False,,
-2015,DOCTOR MORA,doctor_mora,013,ERO,2014_5520_Periodico_Numero_206_Quinta_Parte_ocr.pdf,107,148,true,seccion_predial,110,117,GTO_PREDIAL_2015_doctor_mora.txt,7526,4202,11486,1.0,False,False,SECCIÓN PRIMERA,SECCIÓN SEGUNDA
-2015,GUANAJUATO,guanajuato,015,ERO,2014_5520_Periodico_Numero_206_Quinta_Parte_ocr.pdf,149,216,skipped,,,,GTO_PREDIAL_2015_guanajuato.txt,8856,-1,-1,0.0,False,False,,
-2015,HUANÍMARO,huanimaro,016,ERO,2014_5521_Periodico_Numero_206_Sexta_Parte_ocr.pdf,2,46,skipped,,,,GTO_PREDIAL_2015_huanimaro.txt,7964,-1,-1,0.0,False,False,,
-2018,"IRAPUATO, GUAMAJUATO",irapuato,017,ERO,2014_5521_Periodico_Numero_206_Sexta_Parte_ocr.pdf,47,168,true,seccion_predial,53,71,GTO_PREDIAL_2018_irapuato.txt,11419,6179,17351,1.0,False,False,SECCIÓN PRIMERA,SECCIÓN SEGUNDA
-2015,JARAL DEL PROGRESO,jaral_del_progreso,018,ERO,2014_5521_Periodico_Numero_206_Sexta_Parte_ocr.pdf,169,244,skipped,,,,GTO_PREDIAL_2015_jaral_del_progreso.txt,7955,-1,-1,0.0,False,False,,
-2015,JERÉCUARO,jerecuaro,019,ERO,2014_5522_Periodico_Numero_206_Septima_Parte_ocr.pdf,2,56,skipped,,,,GTO_PREDIAL_2015_jerecuaro.txt,6987,-1,-1,0.0,False,False,,
-2015,LEÓN,leon,020,ERO,2014_5522_Periodico_Numero_206_Septima_Parte_ocr.pdf,57,154,skipped,,,,GTO_PREDIAL_2015_leon.txt,18195,-1,-1,0.0,False,False,,
-2015,MANUEL DOBLADO,manuel_doblado,008,ERO,2014_5522_Periodico_Numero_206_Septima_Parte_ocr.pdf,155,208,skipped,,,,GTO_PREDIAL_2015_manuel_doblado.txt,8029,-1,-1,0.0,False,False,,
-2015,MOROLEÓN,moroleon,021,ERO,2014_5523_Periodico_Numero_206_Octava_Parte_ocr.pdf,2,83,skipped,,,,GTO_PREDIAL_2015_moroleon.txt,7965,-1,-1,0.0,False,False,,
-2015,OCAMPO,ocampo,022,ERO,2014_5523_Periodico_Numero_206_Octava_Parte_ocr.pdf,84,128,skipped,,,,GTO_PREDIAL_2015_ocampo.txt,7713,-1,-1,0.0,False,False,,
-2015,PÉNJAMO,penjamo,023,ERO,2014_5523_Periodico_Numero_206_Octava_Parte_ocr.pdf,129,191,skipped,,,,GTO_PREDIAL_2015_penjamo.txt,7838,-1,-1,0.0,False,False,,
-2015,PUEBLO NUEVO,pueblo_nuevo,024,ERO,2014_5523_Periodico_Numero_206_Octava_Parte_ocr.pdf,192,228,skipped,,,,GTO_PREDIAL_2015_pueblo_nuevo.txt,7738,-1,-1,0.0,False,False,,
-2015,PURÍSIMA DEL RINCÓN,purisima_del_rincon,025,ERO,2014_5524_Periodico_Numero_206_Novena_Parte_ocr.pdf,2,69,skipped,,,,GTO_PREDIAL_2015_purisima_del_rincon.txt,7786,-1,-1,0.0,False,False,,
-2015,ROMITA,romita,026,ERO,2014_5524_Periodico_Numero_206_Novena_Parte_ocr.pdf,70,141,skipped,,,,GTO_PREDIAL_2015_romita.txt,7837,-1,-1,0.0,False,False,,
-2015,SALAMANCA,salamanca,027,ERO,2014_5524_Periodico_Numero_206_Novena_Parte_ocr.pdf,142,224,skipped,,,,GTO_PREDIAL_2015_salamanca.txt,8521,-1,-1,0.0,False,False,,
-2015,SALVATIERRA,salvatierra,028,ERO,2014_5525_Periodico_Numero_206_Decima_Parte_ocr.pdf,2,49,skipped,,,,GTO_PREDIAL_2015_salvatierra.txt,7728,-1,-1,0.0,False,False,,
-2015,SAN DIEGO DE LA UNIÓN,san_diego_de_la_union,029,ERO,2014_5525_Periodico_Numero_206_Decima_Parte_ocr.pdf,50,88,skipped,,,,GTO_PREDIAL_2015_san_diego_de_la_union.txt,7774,-1,-1,0.0,False,False,,
-2018,SAN FELIPE,san_felipe,030,ERO,2014_5525_Periodico_Numero_206_Decima_Parte_ocr.pdf,89,142,true,seccion_predial,92,97,GTO_PREDIAL_2018_san_felipe.txt,7285,6180,13227,1.0,False,False,SECCIÓN PRIMERA,SECCIÓN SEGUNDA
-2018,SAN FRANCISCO DEL RINCÓN,san_francisco_del_rincon,031,ERO,2014_5525_Periodico_Numero_206_Decima_Parte_ocr.pdf,143,204,true,seccion_predial,147,152,GTO_PREDIAL_2018_san_francisco_del_rincon.txt,7218,7385,14348,1.0,False,False,SECCIÓN PRIMERA,- SECCIÓN SEGUNDA
-2015,SAN JOSÉ ITURBIDE,san_jose_de_iturbide,???,ERO,2014_5526_Periodico_Numero_206_Decima_Primera_Parte_ocr.pdf,2,68,true,seccion_predial,5,12,GTO_PREDIAL_2015_san_jose_de_iturbide.txt,7588,6083,13421,1.0,False,False,SECCIÓN PRIMERA,SECCIÓN SEGUNDA
-2015,SAN LUIS DELA PAZ,san_luis_de_la_paz,033,ERO,2014_5526_Periodico_Numero_206_Decima_Primera_Parte_ocr.pdf,69,208,skipped,,,,GTO_PREDIAL_2015_san_luis_de_la_paz.txt,7926,-1,-1,0.0,False,False,,
-2015,TARANDACUAO,tarandacuao,038,ERO,2014_5528_Periodico_Numero_206_Decima_Tercera_Parte_ocr.pdf,2,75,skipped,,,,GTO_PREDIAL_2015_tarandacuao.txt,7664,-1,-1,0.0,False,False,,
-2015,"TARIMORO,
-GUAMAJGATO",tarimoro,039,ERO,2014_5528_Periodico_Numero_206_Decima_Tercera_Parte_ocr.pdf,76,141,skipped,,,,GTO_PREDIAL_2015_tarimoro.txt,8011,-1,-1,0.0,False,False,,
-2018,TIERRA BLANCA,tierra_blanca,040,ERO,2014_5528_Periodico_Numero_206_Decima_Tercera_Parte_ocr.pdf,142,168,true,seccion_predial,145,150,GTO_PREDIAL_2018_tierra_blanca.txt,7305,5076,12129,1.0,False,False,SECCIÓN PRIMERA,SECCIÓN SEGUNDA
-2015,URIANGATO,uriangato,041,ERO,2014_5528_Periodico_Numero_206_Decima_Tercera_Parte_ocr.pdf,169,244,skipped,,,,GTO_PREDIAL_2015_uriangato.txt,10385,-1,-1,0.0,False,False,,
-2015,VALLE DE SANTIAGO,valle_de_santiago,042,ERO,2014_5529_Periodico_Numero_206_Decima_Cuarta_Parte_ocr.pdf,2,65,skipped,,,,GTO_PREDIAL_2015_valle_de_santiago.txt,7894,-1,-1,0.0,False,False,,
-2015,VICTORIA,victoria,043,ERO,2014_5529_Periodico_Numero_206_Decima_Cuarta_Parte_ocr.pdf,66,100,skipped,,,,GTO_PREDIAL_2015_victoria.txt,7645,-1,-1,0.0,False,False,,
-2015,VILLAGRÁN,villagran,044,ERO,2014_5529_Periodico_Numero_206_Decima_Cuarta_Parte_ocr.pdf,101,232,skipped,,,,GTO_PREDIAL_2015_villagran.txt,7871,-1,-1,0.0,False,False,,
-2015,SANTA CATARINA,santa_catarina,034,ERO,2014_5551_Periodico_Numero_206_Decima_Segunda_Parte_ocr.pdf,2,42,skipped,,,,GTO_PREDIAL_2015_santa_catarina.txt,7584,-1,-1,0.0,False,False,,
-2015,SANTA CRUZ DE JUVENTIMO ROSAS,santa_cruz_de_juventino_rosas,035,ERO,2014_5551_Periodico_Numero_206_Decima_Segunda_Parte_ocr.pdf,43,103,skipped,,,,GTO_PREDIAL_2015_santa_cruz_de_juventino_rosas.txt,8128,-1,-1,0.0,False,False,,
-2015,SANTIAGO MARAVATÍO,santiago_maravatio,036,ERO,2014_5551_Periodico_Numero_206_Decima_Segunda_Parte_ocr.pdf,104,143,skipped,,,,GTO_PREDIAL_2015_santiago_maravatio.txt,7811,-1,-1,0.0,False,False,,
-2015,SILAO DE LA VICTORIA,silao_de_la_victoria,037,ERO,2014_5551_Periodico_Numero_206_Decima_Segunda_Parte_ocr.pdf,144,228,skipped,,,,GTO_PREDIAL_2015_silao_de_la_victoria.txt,8104,-1,-1,0.0,False,False,,
-2015,Huanímaro,huanimaro,016,,2015_5562_Periodico_Numero_10_Segunda_Parte_ocr.pdf,4,128,skipped,,,,GTO_PREDIAL_2015_huanimaro.txt,3127,-1,-1,0.0,False,False,,
-2017,CORONEO,coroneo,010,ERO,2016_10813_Periodico_Numero_205_Quinta_Parte_ocr.pdf,2,58,skipped,,,,GTO_PREDIAL_2017_coroneo.txt,7591,-1,-1,0.0,False,False,,
-2017,CORTAZAR,cortazar,011,ERO,2016_10813_Periodico_Numero_205_Quinta_Parte_ocr.pdf,59,244,skipped,,,,GTO_PREDIAL_2017_cortazar.txt,6087,-1,-1,0.0,False,False,,
-2017,ATARJEA,atarjea,006,ERO,2016_10814_Periodico_Numero_205_Cuarta_Parte_ocr.pdf,2,224,skipped,,,,GTO_PREDIAL_2017_atarjea.txt,6124,-1,-1,0.0,False,False,,
-2017,ABASOLO,abasolo,001,ERO,2016_10815_Periodico_Numero_205_Tercera_Parte_ocr.pdf,2,61,skipped,,,,GTO_PREDIAL_2017_abasolo.txt,8016,-1,-1,0.0,False,False,,
-2017,ACÁMBARO,acambaro,002,ERO,2016_10815_Periodico_Numero_205_Tercera_Parte_ocr.pdf,62,105,skipped,,,,GTO_PREDIAL_2017_acambaro.txt,7683,-1,-1,0.0,False,False,,
-2017,"APASEO
-EL ALTO",apaseo_el_alto,004,ERO,2016_10815_Periodico_Numero_205_Tercera_Parte_ocr.pdf,106,169,skipped,,,,GTO_PREDIAL_2017_apaseo_el_alto.txt,8241,-1,-1,0.0,False,False,,
-2017,APASEO EL GRANDE,apaseo_el_grande,005,ERO,2016_10815_Periodico_Numero_205_Tercera_Parte_ocr.pdf,170,244,skipped,,,,GTO_PREDIAL_2017_apaseo_el_grande.txt,7092,-1,-1,0.0,False,False,,
-2017,DOCTOR MORA,doctor_mora,013,ERO,2016_10816_Periodico_Numero_205_Sexta_Parte_ocr.pdf,2,45,skipped,,,,GTO_PREDIAL_2017_doctor_mora.txt,7752,-1,-1,0.0,False,False,,
-2091,GUANAJUATO,guanajuato,015,ERO,2016_10816_Periodico_Numero_205_Sexta_Parte_ocr.pdf,46,108,true,seccion_predial,49,57,GTO_PREDIAL_2091_guanajuato.txt,8729,4366,12857,1.0,False,False,SECCIÓN PRIMERA,SECCIÓN SEGUNDA
-2091,HUANÍMARO,huanimaro,016,ERO,2016_10816_Periodico_Numero_205_Sexta_Parte_ocr.pdf,109,153,true,seccion_predial,114,120,GTO_PREDIAL_2091_huanimaro.txt,7575,5914,13249,1.0,False,False,SECCIÓN PRIMERA,SECCIÓN SEGUNDA
-2017,IRAPUATO,irapuato,017,ERO,2016_10816_Periodico_Numero_205_Sexta_Parte_ocr.pdf,154,280,skipped,,,,GTO_PREDIAL_2017_irapuato.txt,12183,-1,-1,0.0,False,False,,
-2017,JARAL DEL PROGRESO,jaral_del_progreso,018,ERO,2016_10817_Peridico_Numero_205_Septima_Parte_ocr.pdf,2,73,skipped,,,,GTO_PREDIAL_2017_jaral_del_progreso.txt,7973,-1,-1,0.0,False,False,,
-2017,JERECUARO,jerecuaro,019,ERO,2016_10817_Peridico_Numero_205_Septima_Parte_ocr.pdf,74,125,skipped,,,,GTO_PREDIAL_2017_jerecuaro.txt,7066,-1,-1,0.0,False,False,,
-2017,León,leon,020,ERO,2016_10817_Peridico_Numero_205_Septima_Parte_ocr.pdf,126,284,skipped,,,,GTO_PREDIAL_2017_leon.txt,166746,-1,-1,0.0,False,False,,
-2017,PUEBLO NUEVO,pueblo_nuevo,024,ERO,2016_10818_Periodico_Numero_205_Novena_Parte_ocr.pdf,2,44,skipped,,,,GTO_PREDIAL_2017_pueblo_nuevo.txt,7663,-1,-1,0.0,False,False,,
-2017,PURÍSIMA DEL RINCÓN,purisima_del_rincon,025,ERO,2016_10818_Periodico_Numero_205_Novena_Parte_ocr.pdf,45,126,skipped,,,,GTO_PREDIAL_2017_purisima_del_rincon.txt,7953,-1,-1,0.0,False,False,,
-2017,ROMITA,romita,026,ERO,2016_10818_Periodico_Numero_205_Novena_Parte_ocr.pdf,127,200,skipped,,,,GTO_PREDIAL_2017_romita.txt,7780,-1,-1,0.0,False,False,,
-2017,Salamanca,salamanca,027,ERO,2016_10818_Periodico_Numero_205_Novena_Parte_ocr.pdf,201,256,skipped,,,,GTO_PREDIAL_2017_salamanca.txt,8415,-1,-1,0.0,False,False,,
-2017,MANUEL DOBLADO,manuel_doblado,008,ERO,2016_10821_Periodico_Numero_205_Octava_Parte_ocr.pdf,2,43,skipped,,,,GTO_PREDIAL_2017_manuel_doblado.txt,7879,-1,-1,0.0,False,False,,
-2017,Moroleón,moroleon,021,ERO,2016_10821_Periodico_Numero_205_Octava_Parte_ocr.pdf,44,109,skipped,,,,GTO_PREDIAL_2017_moroleon.txt,7841,-1,-1,0.0,False,False,,
-2017,OCAMPO,ocampo,022,ERO,2016_10821_Periodico_Numero_205_Octava_Parte_ocr.pdf,110,156,skipped,,,,GTO_PREDIAL_2017_ocampo.txt,7775,-1,-1,0.0,False,False,,
-2017,PÉNJAMO,penjamo,023,ERO,2016_10821_Periodico_Numero_205_Octava_Parte_ocr.pdf,157,228,skipped,,,,GTO_PREDIAL_2017_penjamo.txt,7863,-1,-1,0.0,False,False,,
-2017,SALVATIERRA,salvatierra,028,ERO,2016_10822_Periodico_Numero_207_Segunda_Parte_ocr.pdf,2,49,skipped,,,,GTO_PREDIAL_2017_salvatierra.txt,7865,-1,-1,0.0,False,False,,
-2017,SAN DIEGO DE LA UMIÓN,san_diego_de_la_union,029,ERO,2016_10822_Periodico_Numero_207_Segunda_Parte_ocr.pdf,50,94,skipped,,,,GTO_PREDIAL_2017_san_diego_de_la_union.txt,7846,-1,-1,0.0,False,False,,
-2017,SAM FELIPE,san_felipe,030,ERO,2016_10822_Periodico_Numero_207_Segunda_Parte_ocr.pdf,95,159,skipped,,,,GTO_PREDIAL_2017_san_felipe.txt,7768,-1,-1,0.0,False,False,,
-2017,"SAN FRANCISCO DEL, RINCÓN",san_francisco_del_rincon,031,ERO,2016_10822_Periodico_Numero_207_Segunda_Parte_ocr.pdf,160,220,skipped,,,,GTO_PREDIAL_2017_san_francisco_del_rincon.txt,7457,-1,-1,0.0,False,False,,
-2017,SANTA CRUZ DE JUVENTINO ROSAS,santa_cruz_de_juventino_rosas,035,ERO,2016_10823_Periodico_Numero_207_Cuarta_Parte_ocr.pdf,2,80,skipped,,,,GTO_PREDIAL_2017_santa_cruz_de_juventino_rosas.txt,8184,-1,-1,0.0,False,False,,
-2017,SANTIAGO MARAVATÍO,santiago_maravatio,036,ERO,2016_10823_Periodico_Numero_207_Cuarta_Parte_ocr.pdf,81,119,skipped,,,,GTO_PREDIAL_2017_santiago_maravatio.txt,7847,-1,-1,0.0,False,False,,
-2017,SILAO DE LA VICTORIA,silao_de_la_victoria,037,ERO,2016_10823_Periodico_Numero_207_Cuarta_Parte_ocr.pdf,120,204,skipped,,,,GTO_PREDIAL_2017_silao_de_la_victoria.txt,8020,-1,-1,0.0,False,False,,
-2017,VALLE DE SANTIAGO,valle_de_santiago,042,ERO,2016_10824_Periodico_Numero_207_Sexta_Parte_ocr.pdf,2,74,skipped,,,,GTO_PREDIAL_2017_valle_de_santiago.txt,8079,-1,-1,0.0,False,False,,
-2017,VICTORIA,victoria,043,ERO,2016_10824_Periodico_Numero_207_Sexta_Parte_ocr.pdf,75,121,skipped,,,,GTO_PREDIAL_2017_victoria.txt,8026,-1,-1,0.0,False,False,,
-2017,VILLAGRÁN,villagran,044,ERO,2016_10824_Periodico_Numero_207_Sexta_Parte_ocr.pdf,122,166,skipped,,,,GTO_PREDIAL_2017_villagran.txt,7929,-1,-1,0.0,False,False,,
-2017,XICRÚ,xicru,???,ERO,2016_10824_Periodico_Numero_207_Sexta_Parte_ocr.pdf,167,189,true,seccion_predial,169,173,GTO_PREDIAL_2017_xicru.txt,5694,3949,9407,1.0,False,False,SECCIÓN PRIMERA,SECCIÓN SEGUNDA
-2017,YURIRIA,yuriria,046,ERO,2016_10824_Periodico_Numero_207_Sexta_Parte_ocr.pdf,190,248,skipped,,,,GTO_PREDIAL_2017_yuriria.txt,8056,-1,-1,0.0,False,False,,
-2017,TARANDACUAO,tarandacuao,038,ERO,2016_10825_Periodico_Numero_207_Quinta_Parte_ocr.pdf,2,96,skipped,,,,GTO_PREDIAL_2017_tarandacuao.txt,7849,-1,-1,0.0,False,False,,
-2017,TARIMORO,tarimoro,039,ERO,2016_10825_Periodico_Numero_207_Quinta_Parte_ocr.pdf,97,184,skipped,,,,GTO_PREDIAL_2017_tarimoro.txt,7978,-1,-1,0.0,False,False,,
-2017,URIANGATO,uriangato,041,ERO,2016_10825_Periodico_Numero_207_Quinta_Parte_ocr.pdf,185,272,skipped,,,,GTO_PREDIAL_2017_uriangato.txt,7934,-1,-1,0.0,False,False,,
-2017,SAN MIGUEL DE ALLENDE,san_miguel_de_allende,003,ERO,2016_10828_Periodico_Numero_207_Tercera_Parte_ocr.pdf,115,180,skipped,,,,GTO_PREDIAL_2017_san_miguel_de_allende.txt,8544,-1,-1,0.0,False,False,,
-2017,"Santa
-Catarina",santa_catarina,034,ERO,2016_10828_Periodico_Numero_207_Tercera_Parte_ocr.pdf,181,216,skipped,,,,GTO_PREDIAL_2017_santa_catarina.txt,7517,-1,-1,0.0,False,False,,
-2018,APASEO EL GRANDE,apaseo_el_grande,005,ERO,2017_11492_Periodico_Número_228_Segunda_Parte_ocr.pdf,2,73,skipped,,,,GTO_PREDIAL_2018_apaseo_el_grande.txt,7984,-1,-1,0.0,False,False,,
-2018,CELAYA,celaya,007,ERO,2017_11492_Periodico_Número_228_Segunda_Parte_ocr.pdf,74,198,skipped,,,,GTO_PREDIAL_2018_celaya.txt,6201,-1,-1,0.0,False,False,,
-2018,CORONEO,coroneo,010,ERO,2017_11492_Periodico_Número_228_Segunda_Parte_ocr.pdf,199,252,true,seccion_predial,202,209,GTO_PREDIAL_2018_coroneo.txt,7353,5403,12516,1.0,False,False,SECCIÓN PRIMERA,SECCIÓN SEGUNDA
-2018,CUERÁMARO,cueramaro,012,ERO,2017_11492_Periodico_Número_228_Segunda_Parte_ocr.pdf,253,308,skipped,,,,GTO_PREDIAL_2018_cueramaro.txt,7898,-1,-1,0.0,False,False,,
-2018,COMONFORT,comonfort,009,ERO,2017_11500_Periodico_Numero_224_Tercera_Parte_ocr.pdf,2,78,skipped,,,,GTO_PREDIAL_2018_comonfort.txt,9903,-1,-1,0.0,False,False,,
-2018,CORTAZAR,cortazar,011,ERO,2017_11500_Periodico_Numero_224_Tercera_Parte_ocr.pdf,79,166,skipped,,,,GTO_PREDIAL_2018_cortazar.txt,5904,-1,-1,0.0,False,False,,
-2018,"DOLORES HIDALGO CUNA DE LA
-INDEPENDENCIA NACIONAL",dolores_hidalgo_cuna_de_la_independencia_nacional,014,ERO,2017_11500_Periodico_Numero_224_Tercera_Parte_ocr.pdf,167,221,skipped,,,,GTO_PREDIAL_2018_dolores_hidalgo_cuna_de_la_independencia_nacional.txt,8621,-1,-1,0.0,False,False,,
-2018,DOCTOR MORA,doctor_mora,013,ERO,2017_11500_Periodico_Numero_224_Tercera_Parte_ocr.pdf,222,268,skipped,,,,GTO_PREDIAL_2018_doctor_mora.txt,8474,-1,-1,0.0,False,False,,
-2018,SAN DIEGO DE LA UNIÓN,san_diego_de_la_union,029,ERO,2017_11501_Periodico_Número_225_Tercera_Parte_ocr.pdf,2,133,skipped,,,,GTO_PREDIAL_2018_san_diego_de_la_union.txt,8018,-1,-1,0.0,False,False,,
-2018,"SAN JOSÉ ITURBIDE,
-GUAMAJUATO",san_jose_iturbide_guamajuato,???,ERO,2017_11501_Periodico_Número_225_Tercera_Parte_ocr.pdf,134,205,true,seccion_predial,139,145,GTO_PREDIAL_2018_san_jose_iturbide_guamajuato.txt,7287,7452,14477,1.0,False,False,SECCIÓN PRIMERA,SECCIÓN SEGUNDA
-2018,"San
-Luis de la Paz",san_luis_de_la_paz,033,ERO,2017_11501_Periodico_Número_225_Tercera_Parte_ocr.pdf,206,272,skipped,,,,GTO_PREDIAL_2018_san_luis_de_la_paz.txt,8108,-1,-1,0.0,False,False,,
-2018,Yuriria,yuriria,046,ero,2017_11502_Periódico_Número_225_Sexta_Parte_ocr.pdf,2,84,skipped,,,,GTO_PREDIAL_2018_yuriria.txt,1579,-1,-1,0.0,False,False,,
-2018,VICTORIA,victoria,043,ERO,2017_11502_Periódico_Número_225_Sexta_Parte_ocr.pdf,85,127,skipped,,,,GTO_PREDIAL_2018_victoria.txt,7666,-1,-1,0.0,False,False,,
-2018,VILLAGRÁN,villagran,044,ERO,2017_11502_Periódico_Número_225_Sexta_Parte_ocr.pdf,128,167,skipped,,,,GTO_PREDIAL_2018_villagran.txt,7850,-1,-1,0.0,False,False,,
-2018,XICHÚÓ,xichu,045,ERO,2017_11502_Periódico_Número_225_Sexta_Parte_ocr.pdf,168,252,true,seccion_predial,171,176,GTO_PREDIAL_2018_xichu.txt,5549,4223,9535,1.0,False,False,SECCIÓN PRIMERA,SECCIÓN SEGUNDA
-2018,TARIMORO,tarimoro,039,ERO,2017_11503_Periódico_Número_225_Quinta_Parte_ocr.pdf,2,67,skipped,,,,GTO_PREDIAL_2018_tarimoro.txt,8074,-1,-1,0.0,False,False,,
-2018,TIERRA BLANCA,tierra_blanca,040,ERO,2017_11503_Periódico_Número_225_Quinta_Parte_ocr.pdf,68,94,skipped,,,,GTO_PREDIAL_2018_tierra_blanca.txt,7050,-1,-1,0.0,False,False,,
-2018,URIANGATO,uriangato,041,ERO,2017_11503_Periódico_Número_225_Quinta_Parte_ocr.pdf,95,184,skipped,,,,GTO_PREDIAL_2018_uriangato.txt,5641,-1,-1,0.0,False,False,,
-2018,SAN MIGUEL DE ALLENDE,san_miguel_de_allende,003,ERO,2017_11504_Periodico_Número_225_Cuarta_Parte_ocr.pdf,2,71,skipped,,,,GTO_PREDIAL_2018_san_miguel_de_allende.txt,8500,-1,-1,0.0,False,False,,
-2018,"Santa
-Catarina",santa_catarina,034,ERO,2017_11504_Periodico_Número_225_Cuarta_Parte_ocr.pdf,72,101,skipped,,,,GTO_PREDIAL_2018_santa_catarina.txt,7532,-1,-1,0.0,False,False,,
-2018,"Santiago
-Maravatío",santiago_maravatio,036,ERO,2017_11504_Periodico_Número_225_Cuarta_Parte_ocr.pdf,102,138,skipped,,,,GTO_PREDIAL_2018_santiago_maravatio.txt,7817,-1,-1,0.0,False,False,,
-2018,Taraendacuao,tarandacuao,038,ERO,2017_11504_Periodico_Número_225_Cuarta_Parte_ocr.pdf,139,212,skipped,,,,GTO_PREDIAL_2018_tarandacuao.txt,7871,-1,-1,0.0,False,False,,
-2018,ABASOLO,abasolo,001,ERO,2017_11505_Periodico_Numero_224_Segunda_Parte_ocr.pdf,2,60,skipped,,,,GTO_PREDIAL_2018_abasolo.txt,8112,-1,-1,0.0,False,False,,
-2018,ACÁMBARO,acambaro,002,ERO,2017_11505_Periodico_Numero_224_Segunda_Parte_ocr.pdf,61,126,skipped,,,,GTO_PREDIAL_2018_acambaro.txt,7773,-1,-1,0.0,False,False,,
-2018,APASEO EL ALTO,apaseo_el_alto,004,ERO,2017_11505_Periodico_Numero_224_Segunda_Parte_ocr.pdf,127,184,skipped,,,,GTO_PREDIAL_2018_apaseo_el_alto.txt,8317,-1,-1,0.0,False,False,,
-2018,Atarjez,atarjea,006,ERO,2017_11505_Periodico_Numero_224_Segunda_Parte_ocr.pdf,185,212,skipped,,,,GTO_PREDIAL_2018_atarjea.txt,6133,-1,-1,0.0,False,False,,
-2018,HUANÍMARO,huanimaro,016,ERO,2017_11506_Periodico_Numero_224_Cuarta_Parte_ocr.pdf,2,50,skipped,,,,GTO_PREDIAL_2018_huanimaro.txt,8048,-1,-1,0.0,False,False,,
-2018,JERÉCUARO,jerecuaro,019,ERO,2017_11506_Periodico_Numero_224_Cuarta_Parte_ocr.pdf,51,148,skipped,,,,GTO_PREDIAL_2018_jerecuaro.txt,7115,-1,-1,0.0,False,False,,
-2018,Meoroicón,meoroicon,???,ERO,2017_11506_Periodico_Numero_224_Cuarta_Parte_ocr.pdf,149,148,true,no_text,0,-1,GTO_PREDIAL_2018_meoroicon.txt,231,-1,-1,0.0,False,False,,
-2018,"MOROLEÓN, GUANAJGATO,
+ingresos que percibirá la hacienda pública del municipio de",2014,identidad_no_resuelta,2013_4926_Periodico_Numero_207_Quinta_Parte_ocr.pdf,105,172,True,seccion_predial,107,113,2911,11096,1.0,False,False,SECCIÓN PRIMERA,SECCIÓN SEGUNDA,,GTO_PREDIAL_2014_guanajuato_guamajuato_para_el_ejercicio_fiscal_del_2014_capitulo_primero_de_la_m.txt,8668
+11016,guanajuato,huanimaro,HUANÍMARO,2014,ok,2013_4927_Periodico_Numero_207_Sexta_Parte_ocr.pdf,2,47,True,,,,-1,-1,0.0,False,False,,,,GTO_PREDIAL_2014_huanimaro.txt,8063
+11017,guanajuato,irapuato,IRAPUATO,2014,ok,2013_4927_Periodico_Numero_207_Sexta_Parte_ocr.pdf,48,164,True,,,,-1,-1,0.0,False,False,,,,GTO_PREDIAL_2014_irapuato.txt,12122
+11018,guanajuato,jaral_del_progreso,JARAL DEL PROGRESO,2014,ok,2013_4928_Periodico_Numero_207_Septima_Parte_ocr.pdf,2,72,True,,,,-1,-1,0.0,False,False,,,,GTO_PREDIAL_2014_jaral_del_progreso.txt,7957
+11019,guanajuato,jerecuaro,JERÉCUARO,2014,ok,2013_4928_Periodico_Numero_207_Septima_Parte_ocr.pdf,73,125,True,,,,-1,-1,0.0,False,False,,,,GTO_PREDIAL_2014_jerecuaro.txt,6987
+11020,guanajuato,leon,LEÓN,2014,ok,2013_4928_Periodico_Numero_207_Septima_Parte_ocr.pdf,126,220,True,,,,-1,-1,0.0,False,False,,,,GTO_PREDIAL_2014_leon.txt,18265
+11008,guanajuato,manuel_doblado,MANUEL DOBLADO,2014,ok,2013_4929_Periodico_Numero_207_Octava_Parte_ocr.pdf,2,50,True,,,,-1,-1,0.0,False,False,,,,GTO_PREDIAL_2014_manuel_doblado.txt,7977
+11021,guanajuato,moroleon,MOROLEÓN,2014,ok,2013_4929_Periodico_Numero_207_Octava_Parte_ocr.pdf,51,122,True,,,,-1,-1,0.0,False,False,,,,GTO_PREDIAL_2014_moroleon.txt,7914
+11022,guanajuato,ocampo,OCAMPO,2014,ok,2013_4929_Periodico_Numero_207_Octava_Parte_ocr.pdf,123,168,True,,,,-1,-1,0.0,False,False,,,,GTO_PREDIAL_2014_ocampo.txt,7849
+11023,guanajuato,penjamo,PÉNJAMO,2014,ok,2013_4930_Periodico_Numero_207_Novena_Parte_ocr.pdf,2,69,True,,,,-1,-1,0.0,False,False,,,,GTO_PREDIAL_2014_penjamo.txt,7836
+11024,guanajuato,pueblo_nuevo,"PUEBLO NUEVO, GUAMAJUATO",2091,ok,2013_4930_Periodico_Numero_207_Novena_Parte_ocr.pdf,70,105,True,seccion_predial,72,79,4484,11584,1.0,False,False,SECCIÓN PRIMERA,SECCIÓN SEGUNDA,,GTO_PREDIAL_2091_pueblo_nuevo.txt,7352
+11025,guanajuato,purisima_del_rincon,PURÍSIMA DEL RINCÓN,2014,ok,2013_4930_Periodico_Numero_207_Novena_Parte_ocr.pdf,106,172,True,,,,-1,-1,0.0,False,False,,,,GTO_PREDIAL_2014_purisima_del_rincon.txt,7806
+11027,guanajuato,salamanca,SALAMANCA,2014,ok,2013_4931_Periodico_Numero_207_Decima_Parte_ocr.pdf,2,69,True,,,,-1,-1,0.0,False,False,,,,GTO_PREDIAL_2014_salamanca.txt,8306
+11028,guanajuato,salvatierra,SALVATIERRA,2014,ok,2013_4931_Periodico_Numero_207_Decima_Parte_ocr.pdf,70,115,True,,,,-1,-1,0.0,False,False,,,,GTO_PREDIAL_2014_salvatierra.txt,7879
+11029,guanajuato,san_diego_de_la_union,SAN DIEGO DE LA UNIÓN,2014,ok,2013_4931_Periodico_Numero_207_Decima_Parte_ocr.pdf,116,156,True,,,,-1,-1,0.0,False,False,,,,GTO_PREDIAL_2014_san_diego_de_la_union.txt,7897
+11030,guanajuato,san_felipe,SAN FELIPE,2014,ok,2013_4932_Periodico_Numero_207_Decima_Primera_Parte_ocr.pdf,2,55,True,,,,-1,-1,0.0,False,False,,,,GTO_PREDIAL_2014_san_felipe.txt,7600
+11031,guanajuato,san_francisco_del_rincon,SAN FRANCISCO DEL RINCÓN,2014,ok,2013_4932_Periodico_Numero_207_Decima_Primera_Parte_ocr.pdf,56,119,True,,,,-1,-1,0.0,False,False,,,,GTO_PREDIAL_2014_san_francisco_del_rincon.txt,7504
+11032,guanajuato,san_jose_de_iturbide,SAN JOSÉ ITURBIDE,2014,ok,2013_4932_Periodico_Numero_207_Decima_Primera_Parte_ocr.pdf,120,192,True,seccion_predial,123,130,5950,13290,1.0,False,False,SECCIÓN PRIMERA,SECCIÓN SEGUNDA,,GTO_PREDIAL_2014_san_jose_de_iturbide.txt,7596
+11033,guanajuato,san_luis_de_la_paz,SAN LUIS DE LA PAZ,2014,ok,2013_4933_Periodico_Numero_207_Decima_Segunda_Parte_ocr.pdf,2,104,True,seccion_predial,5,12,4062,11503,1.0,False,False,SECCIÓN PRIMERA,SECCIÓN SEGUNDA,,GTO_PREDIAL_2014_san_luis_de_la_paz.txt,7693
+11035,guanajuato,santa_cruz_de_juventino_rosas,"SANTA CRUZ DE JUVENTINO
+ROSAS",2014,ok,2013_4933_Periodico_Numero_207_Decima_Segunda_Parte_ocr.pdf,105,188,True,,,,-1,-1,0.0,False,False,,,,GTO_PREDIAL_2014_santa_cruz_de_juventino_rosas.txt,8167
+11036,guanajuato,santiago_maravatio,SANTIAGO MARAVATÍO,2014,ok,2013_4934_Periodico_Numero_207_Decima_Tercera_Parte_ocr.pdf,2,54,True,,,,-1,-1,0.0,False,False,,,,GTO_PREDIAL_2014_santiago_maravatio.txt,7942
+11037,guanajuato,silao_de_la_victoria,SILAO DE LA VICTORIA,2014,ok,2013_4934_Periodico_Numero_207_Decima_Tercera_Parte_ocr.pdf,55,129,True,,,,-1,-1,0.0,False,False,,,,GTO_PREDIAL_2014_silao_de_la_victoria.txt,8016
+11038,guanajuato,tarandacuao,TARANDACUAO,2044,ok,2013_4934_Periodico_Numero_207_Decima_Tercera_Parte_ocr.pdf,130,200,True,seccion_predial,134,141,5441,12526,1.0,False,False,SECCIÓN PRIMERA,SECCIÓN SEGUNDA,,GTO_PREDIAL_2044_tarandacuao.txt,7335
+11039,guanajuato,tarimoro,TARIMORO,2014,ok,2013_4935_Periodico_Numero_207_Decima_Cuarta_Parte_ocr.pdf,2,66,True,,,,-1,-1,0.0,False,False,,,,GTO_PREDIAL_2014_tarimoro.txt,7965
+11040,guanajuato,tierra_blanca,TIERRA BLANCA,2014,ok,2013_4935_Periodico_Numero_207_Decima_Cuarta_Parte_ocr.pdf,67,94,True,,,,-1,-1,0.0,False,False,,,,GTO_PREDIAL_2014_tierra_blanca.txt,7571
+11041,guanajuato,uriangato,URIANGATO,2014,ok,2013_4935_Periodico_Numero_207_Decima_Cuarta_Parte_ocr.pdf,95,168,True,,,,-1,-1,0.0,False,False,,,,GTO_PREDIAL_2014_uriangato.txt,10264
+11042,guanajuato,valle_de_santiago,VALLE DE SANTIAGO,2014,ok,2013_4936_Periodico_Numero_207_Decima_Quinta_Parte_ocr.pdf,2,65,True,,,,-1,-1,0.0,False,False,,,,GTO_PREDIAL_2014_valle_de_santiago.txt,7974
+11043,guanajuato,victoria,VICTORIA,2014,ok,2013_4936_Periodico_Numero_207_Decima_Quinta_Parte_ocr.pdf,66,100,True,,,,-1,-1,0.0,False,False,,,,GTO_PREDIAL_2014_victoria.txt,7545
+11044,guanajuato,villagran,VILLAGRÁN,2014,ok,2013_4936_Periodico_Numero_207_Decima_Quinta_Parte_ocr.pdf,101,156,True,,,,-1,-1,0.0,False,False,,,,GTO_PREDIAL_2014_villagran.txt,7784
+11045,guanajuato,xichu,XICHÚ,2014,ok,2013_4937_Periodico_Numero_207_Decima_Sexta_Parte_ocr.pdf,2,25,True,,,,-1,-1,0.0,False,False,,,,GTO_PREDIAL_2014_xichu.txt,5833
+11046,guanajuato,yuriria,YURIRIA,2014,ok,2013_4937_Periodico_Numero_207_Decima_Sexta_Parte_ocr.pdf,26,69,True,seccion_predial,28,34,2760,9996,1.0,False,False,SECCIÓN PRIMERA,SECCIÓN SEGUNDA,,GTO_PREDIAL_2014_yuriria.txt,7476
+11007,guanajuato,celaya,CELAYA,2014,ok,2013_4937_Periodico_Numero_207_Decima_Sexta_Parte_ocr.pdf,70,180,True,,,,-1,-1,0.0,False,False,,,,GTO_PREDIAL_2014_celaya.txt,11568
+11026,guanajuato,romita,ROMITA,2014,ok,2013_4938_Periodico_Numero_207_Decima_Septima_Parte_ocr.pdf,2,72,True,,,,-1,-1,0.0,False,False,,,,GTO_PREDIAL_2014_romita.txt,7779
+11003,guanajuato,san_miguel_de_allende,SAN MIGUEL DE ALLENDE,2014,ok,2013_4938_Periodico_Numero_207_Decima_Septima_Parte_ocr.pdf,73,156,True,,,,-1,-1,0.0,False,False,,,,GTO_PREDIAL_2014_san_miguel_de_allende.txt,8623
+11001,guanajuato,abasolo,ABASOLO,2015,ok,2014_5517_Periodico_Numero_206_Segunda_Parte_ocr.pdf,2,61,True,,,,-1,-1,0.0,False,False,,,,GTO_PREDIAL_2015_abasolo.txt,8027
+11002,guanajuato,acambaro,ACÁMBARO,2015,ok,2014_5517_Periodico_Numero_206_Segunda_Parte_ocr.pdf,62,140,True,,,,-1,-1,0.0,False,False,,,,GTO_PREDIAL_2015_acambaro.txt,7862
+11004,guanajuato,apaseo_el_alto,APASEO EL ALTO,2015,ok,2014_5517_Periodico_Numero_206_Segunda_Parte_ocr.pdf,141,208,True,,,,-1,-1,0.0,False,False,,,,GTO_PREDIAL_2015_apaseo_el_alto.txt,8077
+11005,guanajuato,apaseo_el_grande,APASEO EL GRANDE,2015,ok,2014_5518_Periodico_Numero_206_Tercera_Parte_ocr.pdf,2,82,True,,,,-1,-1,0.0,False,False,,,,GTO_PREDIAL_2015_apaseo_el_grande.txt,7828
+11006,guanajuato,atarjea,ATARJEA,2015,ok,2014_5518_Periodico_Numero_206_Tercera_Parte_ocr.pdf,83,107,True,,,,-1,-1,0.0,False,False,,,,GTO_PREDIAL_2015_atarjea.txt,6069
+11007,guanajuato,celaya,CELAYA,2018,ok,2014_5518_Periodico_Numero_206_Tercera_Parte_ocr.pdf,108,220,True,seccion_predial,115,126,10206,21107,1.0,False,False,SECCIÓN PRIMERA,SECCIÓN SEGUNDA,,GTO_PREDIAL_2018_celaya.txt,11139
+11009,guanajuato,comonfort,COMONFORT,2015,ok,2014_5519_Periodico_Numero_206_Cuarta_Parte_ocr.pdf,2,70,True,,,,-1,-1,0.0,False,False,,,,GTO_PREDIAL_2015_comonfort.txt,8301
+11010,guanajuato,coroneo,CORONEO,2015,ok,2014_5519_Periodico_Numero_206_Cuarta_Parte_ocr.pdf,71,128,True,,,,-1,-1,0.0,False,False,,,,GTO_PREDIAL_2015_coroneo.txt,7808
+11011,guanajuato,cortazar,CORTAZAR,2015,ok,2014_5519_Periodico_Numero_206_Cuarta_Parte_ocr.pdf,129,204,True,,,,-1,-1,0.0,False,False,,,,GTO_PREDIAL_2015_cortazar.txt,8259
+11012,guanajuato,cueramaro,CUERÁMARO,2015,ok,2014_5520_Periodico_Numero_206_Quinta_Parte_ocr.pdf,2,50,True,,,,-1,-1,0.0,False,False,,,,GTO_PREDIAL_2015_cueramaro.txt,7739
+11014,guanajuato,dolores_hidalgo_cuna_de_la_independencia_nacional,"DOLORES HIDALGO CUNA DE LA
+INDEPENDENCIA NACIONAL",2015,ok,2014_5520_Periodico_Numero_206_Quinta_Parte_ocr.pdf,51,106,True,,,,-1,-1,0.0,False,False,,,,GTO_PREDIAL_2015_dolores_hidalgo_cuna_de_la_independencia_nacional.txt,8110
+11013,guanajuato,doctor_mora,DOCTOR MORA,2015,ok,2014_5520_Periodico_Numero_206_Quinta_Parte_ocr.pdf,107,148,True,seccion_predial,110,117,4202,11486,1.0,False,False,SECCIÓN PRIMERA,SECCIÓN SEGUNDA,,GTO_PREDIAL_2015_doctor_mora.txt,7526
+11015,guanajuato,guanajuato,GUANAJUATO,2015,ok,2014_5520_Periodico_Numero_206_Quinta_Parte_ocr.pdf,149,216,True,,,,-1,-1,0.0,False,False,,,,GTO_PREDIAL_2015_guanajuato.txt,8856
+11016,guanajuato,huanimaro,HUANÍMARO,2015,ok,2014_5521_Periodico_Numero_206_Sexta_Parte_ocr.pdf,2,46,True,,,,-1,-1,0.0,False,False,,,,GTO_PREDIAL_2015_huanimaro.txt,7964
+11017,guanajuato,irapuato,"IRAPUATO, GUAMAJUATO",2018,ok,2014_5521_Periodico_Numero_206_Sexta_Parte_ocr.pdf,47,168,True,seccion_predial,53,71,6179,17351,1.0,False,False,SECCIÓN PRIMERA,SECCIÓN SEGUNDA,,GTO_PREDIAL_2018_irapuato.txt,11419
+11018,guanajuato,jaral_del_progreso,JARAL DEL PROGRESO,2015,ok,2014_5521_Periodico_Numero_206_Sexta_Parte_ocr.pdf,169,244,True,,,,-1,-1,0.0,False,False,,,,GTO_PREDIAL_2015_jaral_del_progreso.txt,7955
+11019,guanajuato,jerecuaro,JERÉCUARO,2015,ok,2014_5522_Periodico_Numero_206_Septima_Parte_ocr.pdf,2,56,True,,,,-1,-1,0.0,False,False,,,,GTO_PREDIAL_2015_jerecuaro.txt,6987
+11020,guanajuato,leon,LEÓN,2015,ok,2014_5522_Periodico_Numero_206_Septima_Parte_ocr.pdf,57,154,True,,,,-1,-1,0.0,False,False,,,,GTO_PREDIAL_2015_leon.txt,18195
+11008,guanajuato,manuel_doblado,MANUEL DOBLADO,2015,ok,2014_5522_Periodico_Numero_206_Septima_Parte_ocr.pdf,155,208,True,,,,-1,-1,0.0,False,False,,,,GTO_PREDIAL_2015_manuel_doblado.txt,8029
+11021,guanajuato,moroleon,MOROLEÓN,2015,ok,2014_5523_Periodico_Numero_206_Octava_Parte_ocr.pdf,2,83,True,,,,-1,-1,0.0,False,False,,,,GTO_PREDIAL_2015_moroleon.txt,7965
+11022,guanajuato,ocampo,OCAMPO,2015,ok,2014_5523_Periodico_Numero_206_Octava_Parte_ocr.pdf,84,128,True,,,,-1,-1,0.0,False,False,,,,GTO_PREDIAL_2015_ocampo.txt,7713
+11023,guanajuato,penjamo,PÉNJAMO,2015,ok,2014_5523_Periodico_Numero_206_Octava_Parte_ocr.pdf,129,191,True,,,,-1,-1,0.0,False,False,,,,GTO_PREDIAL_2015_penjamo.txt,7838
+11024,guanajuato,pueblo_nuevo,PUEBLO NUEVO,2015,ok,2014_5523_Periodico_Numero_206_Octava_Parte_ocr.pdf,192,228,True,,,,-1,-1,0.0,False,False,,,,GTO_PREDIAL_2015_pueblo_nuevo.txt,7738
+11025,guanajuato,purisima_del_rincon,PURÍSIMA DEL RINCÓN,2015,ok,2014_5524_Periodico_Numero_206_Novena_Parte_ocr.pdf,2,69,True,,,,-1,-1,0.0,False,False,,,,GTO_PREDIAL_2015_purisima_del_rincon.txt,7786
+11026,guanajuato,romita,ROMITA,2015,ok,2014_5524_Periodico_Numero_206_Novena_Parte_ocr.pdf,70,141,True,,,,-1,-1,0.0,False,False,,,,GTO_PREDIAL_2015_romita.txt,7837
+11027,guanajuato,salamanca,SALAMANCA,2015,ok,2014_5524_Periodico_Numero_206_Novena_Parte_ocr.pdf,142,224,True,,,,-1,-1,0.0,False,False,,,,GTO_PREDIAL_2015_salamanca.txt,8521
+11028,guanajuato,salvatierra,SALVATIERRA,2015,ok,2014_5525_Periodico_Numero_206_Decima_Parte_ocr.pdf,2,49,True,,,,-1,-1,0.0,False,False,,,,GTO_PREDIAL_2015_salvatierra.txt,7728
+11029,guanajuato,san_diego_de_la_union,SAN DIEGO DE LA UNIÓN,2015,ok,2014_5525_Periodico_Numero_206_Decima_Parte_ocr.pdf,50,88,True,,,,-1,-1,0.0,False,False,,,,GTO_PREDIAL_2015_san_diego_de_la_union.txt,7774
+11030,guanajuato,san_felipe,SAN FELIPE,2018,ok,2014_5525_Periodico_Numero_206_Decima_Parte_ocr.pdf,89,142,True,seccion_predial,92,97,6180,13227,1.0,False,False,SECCIÓN PRIMERA,SECCIÓN SEGUNDA,,GTO_PREDIAL_2018_san_felipe.txt,7285
+11031,guanajuato,san_francisco_del_rincon,SAN FRANCISCO DEL RINCÓN,2018,ok,2014_5525_Periodico_Numero_206_Decima_Parte_ocr.pdf,143,204,True,seccion_predial,147,152,7385,14348,1.0,False,False,SECCIÓN PRIMERA,- SECCIÓN SEGUNDA,,GTO_PREDIAL_2018_san_francisco_del_rincon.txt,7218
+11032,guanajuato,san_jose_de_iturbide,SAN JOSÉ ITURBIDE,2015,ok,2014_5526_Periodico_Numero_206_Decima_Primera_Parte_ocr.pdf,2,68,True,seccion_predial,5,12,6083,13421,1.0,False,False,SECCIÓN PRIMERA,SECCIÓN SEGUNDA,,GTO_PREDIAL_2015_san_jose_de_iturbide.txt,7588
+11033,guanajuato,san_luis_de_la_paz,SAN LUIS DELA PAZ,2015,ok,2014_5526_Periodico_Numero_206_Decima_Primera_Parte_ocr.pdf,69,208,True,,,,-1,-1,0.0,False,False,,,,GTO_PREDIAL_2015_san_luis_de_la_paz.txt,7926
+11038,guanajuato,tarandacuao,TARANDACUAO,2015,ok,2014_5528_Periodico_Numero_206_Decima_Tercera_Parte_ocr.pdf,2,75,True,,,,-1,-1,0.0,False,False,,,,GTO_PREDIAL_2015_tarandacuao.txt,7664
+11039,guanajuato,tarimoro,"TARIMORO,
+GUAMAJGATO",2015,ok,2014_5528_Periodico_Numero_206_Decima_Tercera_Parte_ocr.pdf,76,141,True,,,,-1,-1,0.0,False,False,,,,GTO_PREDIAL_2015_tarimoro.txt,8011
+11040,guanajuato,tierra_blanca,TIERRA BLANCA,2018,ok,2014_5528_Periodico_Numero_206_Decima_Tercera_Parte_ocr.pdf,142,168,True,seccion_predial,145,150,5076,12129,1.0,False,False,SECCIÓN PRIMERA,SECCIÓN SEGUNDA,,GTO_PREDIAL_2018_tierra_blanca.txt,7305
+11041,guanajuato,uriangato,URIANGATO,2015,ok,2014_5528_Periodico_Numero_206_Decima_Tercera_Parte_ocr.pdf,169,244,True,,,,-1,-1,0.0,False,False,,,,GTO_PREDIAL_2015_uriangato.txt,10385
+11042,guanajuato,valle_de_santiago,VALLE DE SANTIAGO,2015,ok,2014_5529_Periodico_Numero_206_Decima_Cuarta_Parte_ocr.pdf,2,65,True,,,,-1,-1,0.0,False,False,,,,GTO_PREDIAL_2015_valle_de_santiago.txt,7894
+11043,guanajuato,victoria,VICTORIA,2015,ok,2014_5529_Periodico_Numero_206_Decima_Cuarta_Parte_ocr.pdf,66,100,True,,,,-1,-1,0.0,False,False,,,,GTO_PREDIAL_2015_victoria.txt,7645
+11044,guanajuato,villagran,VILLAGRÁN,2015,ok,2014_5529_Periodico_Numero_206_Decima_Cuarta_Parte_ocr.pdf,101,232,True,,,,-1,-1,0.0,False,False,,,,GTO_PREDIAL_2015_villagran.txt,7871
+11034,guanajuato,santa_catarina,SANTA CATARINA,2015,ok,2014_5551_Periodico_Numero_206_Decima_Segunda_Parte_ocr.pdf,2,42,True,,,,-1,-1,0.0,False,False,,,,GTO_PREDIAL_2015_santa_catarina.txt,7584
+11035,guanajuato,santa_cruz_de_juventino_rosas,SANTA CRUZ DE JUVENTIMO ROSAS,2015,ok,2014_5551_Periodico_Numero_206_Decima_Segunda_Parte_ocr.pdf,43,103,True,,,,-1,-1,0.0,False,False,,,,GTO_PREDIAL_2015_santa_cruz_de_juventino_rosas.txt,8128
+11036,guanajuato,santiago_maravatio,SANTIAGO MARAVATÍO,2015,ok,2014_5551_Periodico_Numero_206_Decima_Segunda_Parte_ocr.pdf,104,143,True,,,,-1,-1,0.0,False,False,,,,GTO_PREDIAL_2015_santiago_maravatio.txt,7811
+11037,guanajuato,silao_de_la_victoria,SILAO DE LA VICTORIA,2015,ok,2014_5551_Periodico_Numero_206_Decima_Segunda_Parte_ocr.pdf,144,228,True,,,,-1,-1,0.0,False,False,,,,GTO_PREDIAL_2015_silao_de_la_victoria.txt,8104
+11016,guanajuato,huanimaro,Huanímaro,2015,ok,2015_5562_Periodico_Numero_10_Segunda_Parte_ocr.pdf,4,128,True,,,,-1,-1,0.0,False,False,,,,GTO_PREDIAL_2015_huanimaro.txt,3127
+11010,guanajuato,coroneo,CORONEO,2017,ok,2016_10813_Periodico_Numero_205_Quinta_Parte_ocr.pdf,2,58,True,,,,-1,-1,0.0,False,False,,,,GTO_PREDIAL_2017_coroneo.txt,7591
+11011,guanajuato,cortazar,CORTAZAR,2017,ok,2016_10813_Periodico_Numero_205_Quinta_Parte_ocr.pdf,59,244,True,,,,-1,-1,0.0,False,False,,,,GTO_PREDIAL_2017_cortazar.txt,6087
+11006,guanajuato,atarjea,ATARJEA,2017,ok,2016_10814_Periodico_Numero_205_Cuarta_Parte_ocr.pdf,2,224,True,,,,-1,-1,0.0,False,False,,,,GTO_PREDIAL_2017_atarjea.txt,6124
+11001,guanajuato,abasolo,ABASOLO,2017,ok,2016_10815_Periodico_Numero_205_Tercera_Parte_ocr.pdf,2,61,True,,,,-1,-1,0.0,False,False,,,,GTO_PREDIAL_2017_abasolo.txt,8016
+11002,guanajuato,acambaro,ACÁMBARO,2017,ok,2016_10815_Periodico_Numero_205_Tercera_Parte_ocr.pdf,62,105,True,,,,-1,-1,0.0,False,False,,,,GTO_PREDIAL_2017_acambaro.txt,7683
+11004,guanajuato,apaseo_el_alto,"APASEO
+EL ALTO",2017,ok,2016_10815_Periodico_Numero_205_Tercera_Parte_ocr.pdf,106,169,True,,,,-1,-1,0.0,False,False,,,,GTO_PREDIAL_2017_apaseo_el_alto.txt,8241
+11005,guanajuato,apaseo_el_grande,APASEO EL GRANDE,2017,ok,2016_10815_Periodico_Numero_205_Tercera_Parte_ocr.pdf,170,244,True,,,,-1,-1,0.0,False,False,,,,GTO_PREDIAL_2017_apaseo_el_grande.txt,7092
+11013,guanajuato,doctor_mora,DOCTOR MORA,2017,ok,2016_10816_Periodico_Numero_205_Sexta_Parte_ocr.pdf,2,45,True,,,,-1,-1,0.0,False,False,,,,GTO_PREDIAL_2017_doctor_mora.txt,7752
+11015,guanajuato,guanajuato,GUANAJUATO,2091,ok,2016_10816_Periodico_Numero_205_Sexta_Parte_ocr.pdf,46,108,True,seccion_predial,49,57,4366,12857,1.0,False,False,SECCIÓN PRIMERA,SECCIÓN SEGUNDA,,GTO_PREDIAL_2091_guanajuato.txt,8729
+11016,guanajuato,huanimaro,HUANÍMARO,2091,ok,2016_10816_Periodico_Numero_205_Sexta_Parte_ocr.pdf,109,153,True,seccion_predial,114,120,5914,13249,1.0,False,False,SECCIÓN PRIMERA,SECCIÓN SEGUNDA,,GTO_PREDIAL_2091_huanimaro.txt,7575
+11017,guanajuato,irapuato,IRAPUATO,2017,ok,2016_10816_Periodico_Numero_205_Sexta_Parte_ocr.pdf,154,280,True,,,,-1,-1,0.0,False,False,,,,GTO_PREDIAL_2017_irapuato.txt,12183
+11018,guanajuato,jaral_del_progreso,JARAL DEL PROGRESO,2017,ok,2016_10817_Peridico_Numero_205_Septima_Parte_ocr.pdf,2,73,True,,,,-1,-1,0.0,False,False,,,,GTO_PREDIAL_2017_jaral_del_progreso.txt,7973
+11019,guanajuato,jerecuaro,JERECUARO,2017,ok,2016_10817_Peridico_Numero_205_Septima_Parte_ocr.pdf,74,125,True,,,,-1,-1,0.0,False,False,,,,GTO_PREDIAL_2017_jerecuaro.txt,7066
+11020,guanajuato,leon,León,2017,ok,2016_10817_Peridico_Numero_205_Septima_Parte_ocr.pdf,126,284,True,,,,-1,-1,0.0,False,False,,,,GTO_PREDIAL_2017_leon.txt,166746
+11024,guanajuato,pueblo_nuevo,PUEBLO NUEVO,2017,ok,2016_10818_Periodico_Numero_205_Novena_Parte_ocr.pdf,2,44,True,,,,-1,-1,0.0,False,False,,,,GTO_PREDIAL_2017_pueblo_nuevo.txt,7663
+11025,guanajuato,purisima_del_rincon,PURÍSIMA DEL RINCÓN,2017,ok,2016_10818_Periodico_Numero_205_Novena_Parte_ocr.pdf,45,126,True,,,,-1,-1,0.0,False,False,,,,GTO_PREDIAL_2017_purisima_del_rincon.txt,7953
+11026,guanajuato,romita,ROMITA,2017,ok,2016_10818_Periodico_Numero_205_Novena_Parte_ocr.pdf,127,200,True,,,,-1,-1,0.0,False,False,,,,GTO_PREDIAL_2017_romita.txt,7780
+11027,guanajuato,salamanca,Salamanca,2017,ok,2016_10818_Periodico_Numero_205_Novena_Parte_ocr.pdf,201,256,True,,,,-1,-1,0.0,False,False,,,,GTO_PREDIAL_2017_salamanca.txt,8415
+11008,guanajuato,manuel_doblado,MANUEL DOBLADO,2017,ok,2016_10821_Periodico_Numero_205_Octava_Parte_ocr.pdf,2,43,True,,,,-1,-1,0.0,False,False,,,,GTO_PREDIAL_2017_manuel_doblado.txt,7879
+11021,guanajuato,moroleon,Moroleón,2017,ok,2016_10821_Periodico_Numero_205_Octava_Parte_ocr.pdf,44,109,True,,,,-1,-1,0.0,False,False,,,,GTO_PREDIAL_2017_moroleon.txt,7841
+11022,guanajuato,ocampo,OCAMPO,2017,ok,2016_10821_Periodico_Numero_205_Octava_Parte_ocr.pdf,110,156,True,,,,-1,-1,0.0,False,False,,,,GTO_PREDIAL_2017_ocampo.txt,7775
+11023,guanajuato,penjamo,PÉNJAMO,2017,ok,2016_10821_Periodico_Numero_205_Octava_Parte_ocr.pdf,157,228,True,,,,-1,-1,0.0,False,False,,,,GTO_PREDIAL_2017_penjamo.txt,7863
+11028,guanajuato,salvatierra,SALVATIERRA,2017,ok,2016_10822_Periodico_Numero_207_Segunda_Parte_ocr.pdf,2,49,True,,,,-1,-1,0.0,False,False,,,,GTO_PREDIAL_2017_salvatierra.txt,7865
+11029,guanajuato,san_diego_de_la_union,SAN DIEGO DE LA UMIÓN,2017,ok,2016_10822_Periodico_Numero_207_Segunda_Parte_ocr.pdf,50,94,True,,,,-1,-1,0.0,False,False,,,,GTO_PREDIAL_2017_san_diego_de_la_union.txt,7846
+11030,guanajuato,san_felipe,SAM FELIPE,2017,ok,2016_10822_Periodico_Numero_207_Segunda_Parte_ocr.pdf,95,159,True,,,,-1,-1,0.0,False,False,,,,GTO_PREDIAL_2017_san_felipe.txt,7768
+11031,guanajuato,san_francisco_del_rincon,"SAN FRANCISCO DEL, RINCÓN",2017,ok,2016_10822_Periodico_Numero_207_Segunda_Parte_ocr.pdf,160,220,True,,,,-1,-1,0.0,False,False,,,,GTO_PREDIAL_2017_san_francisco_del_rincon.txt,7457
+11035,guanajuato,santa_cruz_de_juventino_rosas,SANTA CRUZ DE JUVENTINO ROSAS,2017,ok,2016_10823_Periodico_Numero_207_Cuarta_Parte_ocr.pdf,2,80,True,,,,-1,-1,0.0,False,False,,,,GTO_PREDIAL_2017_santa_cruz_de_juventino_rosas.txt,8184
+11036,guanajuato,santiago_maravatio,SANTIAGO MARAVATÍO,2017,ok,2016_10823_Periodico_Numero_207_Cuarta_Parte_ocr.pdf,81,119,True,,,,-1,-1,0.0,False,False,,,,GTO_PREDIAL_2017_santiago_maravatio.txt,7847
+11037,guanajuato,silao_de_la_victoria,SILAO DE LA VICTORIA,2017,ok,2016_10823_Periodico_Numero_207_Cuarta_Parte_ocr.pdf,120,204,True,,,,-1,-1,0.0,False,False,,,,GTO_PREDIAL_2017_silao_de_la_victoria.txt,8020
+11042,guanajuato,valle_de_santiago,VALLE DE SANTIAGO,2017,ok,2016_10824_Periodico_Numero_207_Sexta_Parte_ocr.pdf,2,74,True,,,,-1,-1,0.0,False,False,,,,GTO_PREDIAL_2017_valle_de_santiago.txt,8079
+11043,guanajuato,victoria,VICTORIA,2017,ok,2016_10824_Periodico_Numero_207_Sexta_Parte_ocr.pdf,75,121,True,,,,-1,-1,0.0,False,False,,,,GTO_PREDIAL_2017_victoria.txt,8026
+11044,guanajuato,villagran,VILLAGRÁN,2017,ok,2016_10824_Periodico_Numero_207_Sexta_Parte_ocr.pdf,122,166,True,,,,-1,-1,0.0,False,False,,,,GTO_PREDIAL_2017_villagran.txt,7929
+,guanajuato,xicru,XICRÚ,2017,identidad_no_resuelta,2016_10824_Periodico_Numero_207_Sexta_Parte_ocr.pdf,167,189,True,seccion_predial,169,173,3949,9407,1.0,False,False,SECCIÓN PRIMERA,SECCIÓN SEGUNDA,,GTO_PREDIAL_2017_xicru.txt,5694
+11046,guanajuato,yuriria,YURIRIA,2017,ok,2016_10824_Periodico_Numero_207_Sexta_Parte_ocr.pdf,190,248,True,,,,-1,-1,0.0,False,False,,,,GTO_PREDIAL_2017_yuriria.txt,8056
+11038,guanajuato,tarandacuao,TARANDACUAO,2017,ok,2016_10825_Periodico_Numero_207_Quinta_Parte_ocr.pdf,2,96,True,,,,-1,-1,0.0,False,False,,,,GTO_PREDIAL_2017_tarandacuao.txt,7849
+11039,guanajuato,tarimoro,TARIMORO,2017,ok,2016_10825_Periodico_Numero_207_Quinta_Parte_ocr.pdf,97,184,True,,,,-1,-1,0.0,False,False,,,,GTO_PREDIAL_2017_tarimoro.txt,7978
+11041,guanajuato,uriangato,URIANGATO,2017,ok,2016_10825_Periodico_Numero_207_Quinta_Parte_ocr.pdf,185,272,True,,,,-1,-1,0.0,False,False,,,,GTO_PREDIAL_2017_uriangato.txt,7934
+11003,guanajuato,san_miguel_de_allende,SAN MIGUEL DE ALLENDE,2017,ok,2016_10828_Periodico_Numero_207_Tercera_Parte_ocr.pdf,115,180,True,,,,-1,-1,0.0,False,False,,,,GTO_PREDIAL_2017_san_miguel_de_allende.txt,8544
+11034,guanajuato,santa_catarina,"Santa
+Catarina",2017,ok,2016_10828_Periodico_Numero_207_Tercera_Parte_ocr.pdf,181,216,True,,,,-1,-1,0.0,False,False,,,,GTO_PREDIAL_2017_santa_catarina.txt,7517
+11005,guanajuato,apaseo_el_grande,APASEO EL GRANDE,2018,ok,2017_11492_Periodico_Número_228_Segunda_Parte_ocr.pdf,2,73,True,,,,-1,-1,0.0,False,False,,,,GTO_PREDIAL_2018_apaseo_el_grande.txt,7984
+11007,guanajuato,celaya,CELAYA,2018,ok,2017_11492_Periodico_Número_228_Segunda_Parte_ocr.pdf,74,198,True,,,,-1,-1,0.0,False,False,,,,GTO_PREDIAL_2018_celaya.txt,6201
+11010,guanajuato,coroneo,CORONEO,2018,ok,2017_11492_Periodico_Número_228_Segunda_Parte_ocr.pdf,199,252,True,seccion_predial,202,209,5403,12516,1.0,False,False,SECCIÓN PRIMERA,SECCIÓN SEGUNDA,,GTO_PREDIAL_2018_coroneo.txt,7353
+11012,guanajuato,cueramaro,CUERÁMARO,2018,ok,2017_11492_Periodico_Número_228_Segunda_Parte_ocr.pdf,253,308,True,,,,-1,-1,0.0,False,False,,,,GTO_PREDIAL_2018_cueramaro.txt,7898
+11009,guanajuato,comonfort,COMONFORT,2018,ok,2017_11500_Periodico_Numero_224_Tercera_Parte_ocr.pdf,2,78,True,,,,-1,-1,0.0,False,False,,,,GTO_PREDIAL_2018_comonfort.txt,9903
+11011,guanajuato,cortazar,CORTAZAR,2018,ok,2017_11500_Periodico_Numero_224_Tercera_Parte_ocr.pdf,79,166,True,,,,-1,-1,0.0,False,False,,,,GTO_PREDIAL_2018_cortazar.txt,5904
+11014,guanajuato,dolores_hidalgo_cuna_de_la_independencia_nacional,"DOLORES HIDALGO CUNA DE LA
+INDEPENDENCIA NACIONAL",2018,ok,2017_11500_Periodico_Numero_224_Tercera_Parte_ocr.pdf,167,221,True,,,,-1,-1,0.0,False,False,,,,GTO_PREDIAL_2018_dolores_hidalgo_cuna_de_la_independencia_nacional.txt,8621
+11013,guanajuato,doctor_mora,DOCTOR MORA,2018,ok,2017_11500_Periodico_Numero_224_Tercera_Parte_ocr.pdf,222,268,True,,,,-1,-1,0.0,False,False,,,,GTO_PREDIAL_2018_doctor_mora.txt,8474
+11029,guanajuato,san_diego_de_la_union,SAN DIEGO DE LA UNIÓN,2018,ok,2017_11501_Periodico_Número_225_Tercera_Parte_ocr.pdf,2,133,True,,,,-1,-1,0.0,False,False,,,,GTO_PREDIAL_2018_san_diego_de_la_union.txt,8018
+,guanajuato,san_jose_iturbide_guamajuato,"SAN JOSÉ ITURBIDE,
+GUAMAJUATO",2018,identidad_no_resuelta,2017_11501_Periodico_Número_225_Tercera_Parte_ocr.pdf,134,205,True,seccion_predial,139,145,7452,14477,1.0,False,False,SECCIÓN PRIMERA,SECCIÓN SEGUNDA,,GTO_PREDIAL_2018_san_jose_iturbide_guamajuato.txt,7287
+11033,guanajuato,san_luis_de_la_paz,"San
+Luis de la Paz",2018,ok,2017_11501_Periodico_Número_225_Tercera_Parte_ocr.pdf,206,272,True,,,,-1,-1,0.0,False,False,,,,GTO_PREDIAL_2018_san_luis_de_la_paz.txt,8108
+11046,guanajuato,yuriria,Yuriria,2018,ok,2017_11502_Periódico_Número_225_Sexta_Parte_ocr.pdf,2,84,True,,,,-1,-1,0.0,False,False,,,,GTO_PREDIAL_2018_yuriria.txt,1579
+11043,guanajuato,victoria,VICTORIA,2018,ok,2017_11502_Periódico_Número_225_Sexta_Parte_ocr.pdf,85,127,True,,,,-1,-1,0.0,False,False,,,,GTO_PREDIAL_2018_victoria.txt,7666
+11044,guanajuato,villagran,VILLAGRÁN,2018,ok,2017_11502_Periódico_Número_225_Sexta_Parte_ocr.pdf,128,167,True,,,,-1,-1,0.0,False,False,,,,GTO_PREDIAL_2018_villagran.txt,7850
+11045,guanajuato,xichu,XICHÚÓ,2018,ok,2017_11502_Periódico_Número_225_Sexta_Parte_ocr.pdf,168,252,True,seccion_predial,171,176,4223,9535,1.0,False,False,SECCIÓN PRIMERA,SECCIÓN SEGUNDA,,GTO_PREDIAL_2018_xichu.txt,5549
+11039,guanajuato,tarimoro,TARIMORO,2018,ok,2017_11503_Periódico_Número_225_Quinta_Parte_ocr.pdf,2,67,True,,,,-1,-1,0.0,False,False,,,,GTO_PREDIAL_2018_tarimoro.txt,8074
+11040,guanajuato,tierra_blanca,TIERRA BLANCA,2018,ok,2017_11503_Periódico_Número_225_Quinta_Parte_ocr.pdf,68,94,True,,,,-1,-1,0.0,False,False,,,,GTO_PREDIAL_2018_tierra_blanca.txt,7050
+11041,guanajuato,uriangato,URIANGATO,2018,ok,2017_11503_Periódico_Número_225_Quinta_Parte_ocr.pdf,95,184,True,,,,-1,-1,0.0,False,False,,,,GTO_PREDIAL_2018_uriangato.txt,5641
+11003,guanajuato,san_miguel_de_allende,SAN MIGUEL DE ALLENDE,2018,ok,2017_11504_Periodico_Número_225_Cuarta_Parte_ocr.pdf,2,71,True,,,,-1,-1,0.0,False,False,,,,GTO_PREDIAL_2018_san_miguel_de_allende.txt,8500
+11034,guanajuato,santa_catarina,"Santa
+Catarina",2018,ok,2017_11504_Periodico_Número_225_Cuarta_Parte_ocr.pdf,72,101,True,,,,-1,-1,0.0,False,False,,,,GTO_PREDIAL_2018_santa_catarina.txt,7532
+11036,guanajuato,santiago_maravatio,"Santiago
+Maravatío",2018,ok,2017_11504_Periodico_Número_225_Cuarta_Parte_ocr.pdf,102,138,True,,,,-1,-1,0.0,False,False,,,,GTO_PREDIAL_2018_santiago_maravatio.txt,7817
+11038,guanajuato,tarandacuao,Taraendacuao,2018,ok,2017_11504_Periodico_Número_225_Cuarta_Parte_ocr.pdf,139,212,True,,,,-1,-1,0.0,False,False,,,,GTO_PREDIAL_2018_tarandacuao.txt,7871
+11001,guanajuato,abasolo,ABASOLO,2018,ok,2017_11505_Periodico_Numero_224_Segunda_Parte_ocr.pdf,2,60,True,,,,-1,-1,0.0,False,False,,,,GTO_PREDIAL_2018_abasolo.txt,8112
+11002,guanajuato,acambaro,ACÁMBARO,2018,ok,2017_11505_Periodico_Numero_224_Segunda_Parte_ocr.pdf,61,126,True,,,,-1,-1,0.0,False,False,,,,GTO_PREDIAL_2018_acambaro.txt,7773
+11004,guanajuato,apaseo_el_alto,APASEO EL ALTO,2018,ok,2017_11505_Periodico_Numero_224_Segunda_Parte_ocr.pdf,127,184,True,,,,-1,-1,0.0,False,False,,,,GTO_PREDIAL_2018_apaseo_el_alto.txt,8317
+11006,guanajuato,atarjea,Atarjez,2018,ok,2017_11505_Periodico_Numero_224_Segunda_Parte_ocr.pdf,185,212,True,,,,-1,-1,0.0,False,False,,,,GTO_PREDIAL_2018_atarjea.txt,6133
+11016,guanajuato,huanimaro,HUANÍMARO,2018,ok,2017_11506_Periodico_Numero_224_Cuarta_Parte_ocr.pdf,2,50,True,,,,-1,-1,0.0,False,False,,,,GTO_PREDIAL_2018_huanimaro.txt,8048
+11019,guanajuato,jerecuaro,JERÉCUARO,2018,ok,2017_11506_Periodico_Numero_224_Cuarta_Parte_ocr.pdf,51,148,True,,,,-1,-1,0.0,False,False,,,,GTO_PREDIAL_2018_jerecuaro.txt,7115
+,guanajuato,meoroicon,Meoroicón,2018,identidad_no_resuelta,2017_11506_Periodico_Numero_224_Cuarta_Parte_ocr.pdf,149,148,True,no_text,0,-1,-1,-1,0.0,False,False,,,,GTO_PREDIAL_2018_meoroicon.txt,231
+,guanajuato,moroleon_guanajgato_para_el_zjercicio_fiscal_del_amo_2018_capitulo_primero_de_la_naturaleza_y_objeto_de_la_ley_articulo_1_la_presente_ley_es_de_orden_publico_y_tiene_por_objeto_establecer_los_ingresos_que_percibira_la_hacienda_publica_del_municipio_de_morolteon,"MOROLEÓN, GUANAJGATO,
 PARA EL ZJERCICIO FISCAL DEL AMO 2018
 CAPÍTULO PRIMERO
 DE LA NATURALEZA Y OBJETO DE LA LEY
 Artículo 1, La presente Ley es de orden público y tiene por objeto establecer
-los ingresos que percibirá la hacienda pública del municipio de Morolteón",moroleon_guanajgato_para_el_zjercicio_fiscal_del_amo_2018_capitulo_primero_de_la_naturaleza_y_objeto_de_la_ley_articulo_1_la_presente_ley_es_de_orden_publico_y_tiene_por_objeto_establecer_los_ingresos_que_percibira_la_hacienda_publica_del_municipio_de_morolteon,???,ERO,2017_11506_Periodico_Numero_224_Cuarta_Parte_ocr.pdf,149,256,true,seccion_predial,161,166,GTO_PREDIAL_2018_moroleon_guanajgato_para_el_zjercicio_fiscal_del_amo_2018_capitulo_primero_de_la.txt,7791,21832,29127,1.0,False,False,SECCIÓN PRIMERA,SECCIÓN SEGUNDA
-2018,PÉNJAMO,penjamo,023,ERO,2017_11508_Periodico_Numero_225_Segunda_Parte_ocr.pdf,2,72,skipped,,,,GTO_PREDIAL_2018_penjamo.txt,7987,-1,-1,0.0,False,False,,
-2018,"Pueble
-fuevo",pueble_fuevo,???,ERO,2017_11508_Periodico_Numero_225_Segunda_Parte_ocr.pdf,73,72,true,no_text,0,-1,GTO_PREDIAL_2018_pueble_fuevo.txt,233,-1,-1,0.0,False,False,,
-2018,PUEBLO MUEVO,pueblo_nuevo,024,ERO,2017_11508_Periodico_Numero_225_Segunda_Parte_ocr.pdf,73,108,skipped,,,,GTO_PREDIAL_2018_pueblo_nuevo.txt,7667,-1,-1,0.0,False,False,,
-2018,"Purísima
-del Rincán",purisima_del_rincon,025,ERO,2017_11508_Periodico_Numero_225_Segunda_Parte_ocr.pdf,109,267,skipped,,,,GTO_PREDIAL_2018_purisima_del_rincon.txt,8164,-1,-1,0.0,False,False,,
-2018,SALAMANCA,salamanca,027,ERO,2017_11508_Periodico_Numero_225_Segunda_Parte_ocr.pdf,268,332,skipped,,,,GTO_PREDIAL_2018_salamanca.txt,8192,-1,-1,0.0,False,False,,
-2018,GUANAJUATO,guanajuato,015,ERO,2017_11544_Periodico_Numero_228_Tercera_Parte_ocr.pdf,2,192,skipped,,,,GTO_PREDIAL_2018_guanajuato.txt,8789,-1,-1,0.0,False,False,,
-2018,JARAL DEL PROGRESO,jaral_del_progreso,018,ERO,2017_11545_Periodico_Numero_228_Cuarta_Parte_ocr.pdf,2,65,skipped,,,,GTO_PREDIAL_2018_jaral_del_progreso.txt,7808,-1,-1,0.0,False,False,,
-2018,León,leon,020,ERO,2017_11545_Periodico_Numero_228_Cuarta_Parte_ocr.pdf,66,240,skipped,,,,GTO_PREDIAL_2018_leon.txt,174962,-1,-1,0.0,False,False,,
-2018,SALVATIERRA,salvatierra,028,ERO,2017_11550_Periodico_Numero_228_Quinta_Parte_ocr.pdf,2,49,skipped,,,,GTO_PREDIAL_2018_salvatierra.txt,8639,-1,-1,0.0,False,False,,
-2018,SAN FRANCISCO DEL RINCÓN,san_francisco_del_rincon,031,ERO,2017_11550_Periodico_Numero_228_Quinta_Parte_ocr.pdf,50,122,skipped,,,,GTO_PREDIAL_2018_san_francisco_del_rincon.txt,8098,-1,-1,0.0,False,False,,
-2018,"Santa
-Cruz de Juventino Rosas",santa_cruz_de_juventino_rosas,035,ERO,2017_11550_Periodico_Numero_228_Quinta_Parte_ocr.pdf,123,191,skipped,,,,GTO_PREDIAL_2018_santa_cruz_de_juventino_rosas.txt,8807,-1,-1,0.0,False,False,,
-2018,SILAO DE LA VICTORIA,silao_de_la_victoria,037,ERO,2017_11550_Periodico_Numero_228_Quinta_Parte_ocr.pdf,192,272,skipped,,,,GTO_PREDIAL_2018_silao_de_la_victoria.txt,8678,-1,-1,0.0,False,False,,
-2019,MANUEL DOBLADO,manuel_doblado,008,ERO,2018_12469_Periodico_Numero_259_Cuarta_Parte_ocr.pdf,2,51,skipped,,,,GTO_PREDIAL_2019_manuel_doblado.txt,7545,-1,-1,0.0,False,False,,
-2019,Moroleón,moroleon,021,ERO,2018_12469_Periodico_Numero_259_Cuarta_Parte_ocr.pdf,52,146,skipped,,,,GTO_PREDIAL_2019_moroleon.txt,7856,-1,-1,0.0,False,False,,
-2019,DCAMPO,dcampo,???,ERO,2018_12469_Periodico_Numero_259_Cuarta_Parte_ocr.pdf,147,194,true,seccion_predial,151,157,GTO_PREDIAL_2019_dcampo.txt,6399,6575,12736,1.0,False,False,SECCIÓN PRIMERA,SECCIÓN SEGUNDA
-2018,"PÉNIAMO, GUAMAJUATO",peniamo_guamajuato,???,ERO,2018_12469_Periodico_Numero_259_Cuarta_Parte_ocr.pdf,195,316,true,seccion_predial,198,204,GTO_PREDIAL_2018_peniamo_guamajuato.txt,6451,5282,11482,1.0,False,False,SECCIÓN PRIMERA,SECCIÓN SEGUNDA
-2019,SAN DIEGO DE LA UNIÓN,san_diego_de_la_union,029,ERO,2018_12470_Periodico_Numero_259_Sexta_Parte_ocr.pdf,2,58,skipped,,,,GTO_PREDIAL_2019_san_diego_de_la_union.txt,7890,-1,-1,0.0,False,False,,
-2019,San Felipe,san_felipe,030,ERO,2018_12470_Periodico_Numero_259_Sexta_Parte_ocr.pdf,59,189,skipped,,,,GTO_PREDIAL_2019_san_felipe.txt,6654,-1,-1,0.0,False,False,,
-2019,SAM LUIS DE LA PAZ,san_luis_de_la_paz,033,ERO,2018_12470_Periodico_Numero_259_Sexta_Parte_ocr.pdf,190,245,skipped,,,,GTO_PREDIAL_2019_san_luis_de_la_paz.txt,7881,-1,-1,0.0,False,False,,
-2019,"Santa
-Catarina",santa_catarina,034,ERO,2018_12470_Periodico_Numero_259_Sexta_Parte_ocr.pdf,246,288,true,seccion_predial,250,256,GTO_PREDIAL_2019_santa_catarina.txt,7302,5669,12726,1.0,False,False,SECCIÓN PRIMERA,SECCIÓN SEGUNDA
-2019,SAN MIGUEL DE ALLENDE,san_miguel_de_allende,003,ERO,2018_12472_Periodico_Numero_259_Décima_Segunda_Parte_ocr.pdf,2,78,skipped,,,,GTO_PREDIAL_2019_san_miguel_de_allende.txt,8657,-1,-1,0.0,False,False,,
-2019,"Santa Cruz de
-Suventino Rosas",santa_cruz_de_juventino_rosas,035,ERO,2018_12472_Periodico_Numero_259_Décima_Segunda_Parte_ocr.pdf,79,232,skipped,,,,GTO_PREDIAL_2019_santa_cruz_de_juventino_rosas.txt,8026,-1,-1,0.0,False,False,,
-2019,SANTIAGO MARAVATÍO,santiago_maravatio,036,ERO,2018_12473_Periodico_Numero_259_Septima_Parte_ocr.pdf,2,39,skipped,,,,GTO_PREDIAL_2019_santiago_maravatio.txt,7769,-1,-1,0.0,False,False,,
-2019,Tarandacuao,tarandacuao,038,ERO,2018_12473_Periodico_Numero_259_Septima_Parte_ocr.pdf,40,117,skipped,,,,GTO_PREDIAL_2019_tarandacuao.txt,7789,-1,-1,0.0,False,False,,
-2019,TARIMORO,tarimoro,039,ERO,2018_12473_Periodico_Numero_259_Septima_Parte_ocr.pdf,118,180,skipped,,,,GTO_PREDIAL_2019_tarimoro.txt,7909,-1,-1,0.0,False,False,,
-2019,TIERRA BLANCA,tierra_blanca,040,ERO,2018_12473_Periodico_Numero_259_Septima_Parte_ocr.pdf,181,205,skipped,,,,GTO_PREDIAL_2019_tierra_blanca.txt,7511,-1,-1,0.0,False,False,,
-2019,URIANGATO,uriangato,041,ERO,2018_12473_Periodico_Numero_259_Septima_Parte_ocr.pdf,206,296,skipped,,,,GTO_PREDIAL_2019_uriangato.txt,8324,-1,-1,0.0,False,False,,
-2019,ABASOLO,abasolo,001,ERO,2018_12474_Periodico_Numero_259_Segunda_Parte_ocr.pdf,2,55,skipped,,,,GTO_PREDIAL_2019_abasolo.txt,7865,-1,-1,0.0,False,False,,
-2019,ACÁMBARO,acambaro,002,ERO,2018_12474_Periodico_Numero_259_Segunda_Parte_ocr.pdf,56,122,skipped,,,,GTO_PREDIAL_2019_acambaro.txt,7785,-1,-1,0.0,False,False,,
-2019,APASEO EL ALTO,apaseo_el_alto,004,ERO,2018_12474_Periodico_Numero_259_Segunda_Parte_ocr.pdf,123,182,skipped,,,,GTO_PREDIAL_2019_apaseo_el_alto.txt,8157,-1,-1,0.0,False,False,,
-2019,ATARJEA,atarjea,006,ERO,2018_12474_Periodico_Numero_259_Segunda_Parte_ocr.pdf,183,209,skipped,,,,GTO_PREDIAL_2019_atarjea.txt,6193,-1,-1,0.0,False,False,,
-2019,Comonfort,comonfort,009,ERO,2018_12474_Periodico_Numero_259_Segunda_Parte_ocr.pdf,210,276,skipped,,,,GTO_PREDIAL_2019_comonfort.txt,8598,-1,-1,0.0,False,False,,
-2019,CORTAZAR,cortazar,011,ERO,2018_12475_Periodico_Numero_259_Tercera_Parte_ocr.pdf,2,87,skipped,,,,GTO_PREDIAL_2019_cortazar.txt,7018,-1,-1,0.0,False,False,,
-2019,DOCTOR MORA,doctor_mora,013,ERO,2018_12475_Periodico_Numero_259_Tercera_Parte_ocr.pdf,88,132,skipped,,,,GTO_PREDIAL_2019_doctor_mora.txt,7925,-1,-1,0.0,False,False,,
-2019,"DOLORES HIDALGO CUNA DE LA.
-INDEPENDENCIA NACIONAL",dolores_hidalgo_cuna_de_la_independencia_nacional,014,ERO,2018_12475_Periodico_Numero_259_Tercera_Parte_ocr.pdf,133,186,skipped,,,,GTO_PREDIAL_2019_dolores_hidalgo_cuna_de_la_independencia_nacional.txt,8023,-1,-1,0.0,False,False,,
-2019,HUANÍMARO,huanimaro,016,ERO,2018_12475_Periodico_Numero_259_Tercera_Parte_ocr.pdf,187,233,skipped,,,,GTO_PREDIAL_2019_huanimaro.txt,8005,-1,-1,0.0,False,False,,
-2019,JERÉCUARO,jerecuaro,019,ERO,2018_12475_Periodico_Numero_259_Tercera_Parte_ocr.pdf,234,292,skipped,,,,GTO_PREDIAL_2019_jerecuaro.txt,7072,-1,-1,0.0,False,False,,
-2019,PURÍSIMA DEL RINCÓN,purisima_del_rincon,025,ERO,2018_12476_Periodico_Numero_259_Quinta_Parte_ocr.pdf,2,97,skipped,,,,GTO_PREDIAL_2019_purisima_del_rincon.txt,8019,-1,-1,0.0,False,False,,
-2019,ROMITA,romita,026,ERO,2018_12476_Periodico_Numero_259_Quinta_Parte_ocr.pdf,98,170,skipped,,,,GTO_PREDIAL_2019_romita.txt,7827,-1,-1,0.0,False,False,,
-2019,Salamanca,salamanca,027,ERO,2018_12476_Periodico_Numero_259_Quinta_Parte_ocr.pdf,171,250,skipped,,,,GTO_PREDIAL_2019_salamanca.txt,8507,-1,-1,0.0,False,False,,
-2019,SALVATIERRA,salvatierra,028,ERO,2018_12476_Periodico_Numero_259_Quinta_Parte_ocr.pdf,251,300,skipped,,,,GTO_PREDIAL_2019_salvatierra.txt,7829,-1,-1,0.0,False,False,,
-2019,Apaseo el Grande,apaseo_el_grande,005,ero,2018_12477_Periodico_Numero_259_Octava_Parte_ocr.pdf,2,2,skipped,,,,GTO_PREDIAL_2019_apaseo_el_grande.txt,1594,-1,-1,0.0,False,False,,
-2019,VALLE DE SANTIAGO,valle_de_santiago,042,ERO,2018_12477_Periodico_Numero_259_Octava_Parte_ocr.pdf,3,82,skipped,,,,GTO_PREDIAL_2019_valle_de_santiago.txt,8055,-1,-1,0.0,False,False,,
-2019,VICTORIA,victoria,043,ERO,2018_12477_Periodico_Numero_259_Octava_Parte_ocr.pdf,83,130,skipped,,,,GTO_PREDIAL_2019_victoria.txt,7785,-1,-1,0.0,False,False,,
-2019,VILLAGRÁN,villagran,044,ERO,2018_12477_Periodico_Numero_259_Octava_Parte_ocr.pdf,131,169,skipped,,,,GTO_PREDIAL_2019_villagran.txt,7832,-1,-1,0.0,False,False,,
-2019,XICHÚ,xichu,045,ERO,2018_12477_Periodico_Numero_259_Octava_Parte_ocr.pdf,170,192,skipped,,,,GTO_PREDIAL_2019_xichu.txt,6045,-1,-1,0.0,False,False,,
-2019,YURIRIA,yuriria,046,ERO,2018_12477_Periodico_Numero_259_Octava_Parte_ocr.pdf,193,324,skipped,,,,GTO_PREDIAL_2019_yuriria.txt,7955,-1,-1,0.0,False,False,,
-2019,IRAPUATO,irapuato,017,ERO,2018_12478_Periodico_Numero_259_Decima_Parte_ocr.pdf,2,126,skipped,,,,GTO_PREDIAL_2019_irapuato.txt,12393,-1,-1,0.0,False,False,,
-2019,JARAL DEL PROGRESO,jaral_del_progreso,018,ERO,2018_12478_Periodico_Numero_259_Decima_Parte_ocr.pdf,127,204,skipped,,,,GTO_PREDIAL_2019_jaral_del_progreso.txt,7951,-1,-1,0.0,False,False,,
-2019,León,leon,020,ERO,2018_12479_Periodico_Numero_259_Decima_Primera_Parte_ocr.pdf,2,177,skipped,,,,GTO_PREDIAL_2019_leon.txt,175036,-1,-1,0.0,False,False,,
-2019,SAN FRANCISCO DEL RINCÓN,san_francisco_del_rincon,031,ERO,2018_12479_Periodico_Numero_259_Decima_Primera_Parte_ocr.pdf,178,240,skipped,,,,GTO_PREDIAL_2019_san_francisco_del_rincon.txt,7367,-1,-1,0.0,False,False,,
-2019,Salamanca,salamanca,027,ERO,2019_12634_Periodico_Numero_45_Segunda_Parte_ocr.pdf,2,24,fallback,fallback_18pp,2,19,GTO_PREDIAL_2019_salamanca.txt,34850,-1,-1,0.0,False,False,,
-2019,Moroleón,moroleon,021,ero,2019_12641_Periodico_Numero_51_Segunda_Parte_ocr.pdf,2,164,fallback,fallback_18pp,2,19,GTO_PREDIAL_2019_moroleon.txt,33995,-1,-1,0.0,False,False,,
-2017,Tarandacuao,tarandacuao,038,ero,2019_12787_Periodico_Numero_114_Segunda_Parte_ocr.pdf,2,1,true,no_text,0,-1,GTO_PREDIAL_2017_tarandacuao.txt,230,-1,-1,0.0,False,False,,
-2017,Ocampo,ocampo,022,ero,2019_12787_Periodico_Numero_114_Segunda_Parte_ocr.pdf,2,6,fallback,fallback_18pp,2,6,GTO_PREDIAL_2017_ocampo.txt,7882,-1,-1,0.0,False,False,,
-2019,León,leon,020,ERO,2019_12787_Periodico_Numero_114_Segunda_Parte_ocr.pdf,7,9,fallback,fallback_18pp,7,9,GTO_PREDIAL_2019_leon.txt,3692,-1,-1,0.0,False,False,,
-2019,Purísima del Rincón,purisima_del_rincon,025,ERO,2019_12787_Periodico_Numero_114_Segunda_Parte_ocr.pdf,10,11,fallback,fallback_18pp,10,11,GTO_PREDIAL_2019_purisima_del_rincon.txt,2616,-1,-1,0.0,False,False,,
-2019,Tarimoro,tarimoro,039,ERO,2019_12787_Periodico_Numero_114_Segunda_Parte_ocr.pdf,12,13,fallback,fallback_18pp,12,13,GTO_PREDIAL_2019_tarimoro.txt,2224,-1,-1,0.0,False,False,,
-2019,Guanajuato,guanajuato,015,ERO,2019_12787_Periodico_Numero_114_Segunda_Parte_ocr.pdf,14,15,fallback,fallback_18pp,14,15,GTO_PREDIAL_2019_guanajuato.txt,2557,-1,-1,0.0,False,False,,
-2019,Tarandacuao,tarandacuao,038,ERO,2019_12787_Periodico_Numero_114_Segunda_Parte_ocr.pdf,16,17,fallback,fallback_18pp,16,17,GTO_PREDIAL_2019_tarandacuao.txt,2372,-1,-1,0.0,False,False,,
-2019,Ocampo,ocampo,022,ERO,2019_12787_Periodico_Numero_114_Segunda_Parte_ocr.pdf,18,48,fallback,fallback_18pp,18,35,GTO_PREDIAL_2019_ocampo.txt,29826,-1,-1,0.0,False,False,,
-2019,Coroneo,coroneo,010,,2019_12812_Periodico_Numero_130_Segunda_Parte_ocr.pdf,2,1,true,no_text,0,-1,GTO_PREDIAL_2019_coroneo.txt,223,-1,-1,0.0,False,False,,
-2019,Yuriria,yuriria,046,,2019_12812_Periodico_Numero_130_Segunda_Parte_ocr.pdf,2,1,true,no_text,0,-1,GTO_PREDIAL_2019_yuriria.txt,223,-1,-1,0.0,False,False,,
-2019,Cortazar,cortazar,011,,2019_12812_Periodico_Numero_130_Segunda_Parte_ocr.pdf,2,1,true,no_text,0,-1,GTO_PREDIAL_2019_cortazar.txt,224,-1,-1,0.0,False,False,,
-2019,Moroleón,moroleon,021,,2019_12812_Periodico_Numero_130_Segunda_Parte_ocr.pdf,2,1,skipped,,,,GTO_PREDIAL_2019_moroleon.txt,35140,-1,-1,0.0,False,False,,
-2019,Abasolo,abasolo,001,,2019_12812_Periodico_Numero_130_Segunda_Parte_ocr.pdf,2,1,true,no_text,0,-1,GTO_PREDIAL_2019_abasolo.txt,223,-1,-1,0.0,False,False,,
-2019,Irapuato,irapuato,017,,2019_12812_Periodico_Numero_130_Segunda_Parte_ocr.pdf,2,12,fallback,fallback_18pp,2,12,GTO_PREDIAL_2019_irapuato.txt,27543,-1,-1,0.0,False,False,,
-2019,Salvatierra,salvatierra,028,ERO,2019_12812_Periodico_Numero_130_Segunda_Parte_ocr.pdf,13,15,fallback,fallback_18pp,13,15,GTO_PREDIAL_2019_salvatierra.txt,3053,-1,-1,0.0,False,False,,
-2019,Villagrán,villagran,044,ERO,2019_12812_Periodico_Numero_130_Segunda_Parte_ocr.pdf,16,17,fallback,fallback_18pp,16,17,GTO_PREDIAL_2019_villagran.txt,2658,-1,-1,0.0,False,False,,
-2019,Uriangato,uriangato,041,ERO,2019_12812_Periodico_Numero_130_Segunda_Parte_ocr.pdf,18,128,skipped,,,,GTO_PREDIAL_2019_uriangato.txt,8905,-1,-1,0.0,False,False,,
-2019,Santa Cruz de Juventino Rosas,santa_cruz_de_juventino_rosas,035,ERO,2019_12946_Periodico_Numero_153_Tercera_Parte_ocr.pdf,90,92,fallback,fallback_18pp,90,92,GTO_PREDIAL_2019_santa_cruz_de_juventino_rosas.txt,4511,-1,-1,0.0,False,False,,
-2020,SAN JOSÉ ITURBIDE,san_jose_de_iturbide,???,ERO,2019_13182_Periodico_Numero_259_Septima_Parte_ocr.pdf,2,76,true,seccion_predial,10,16,GTO_PREDIAL_2020_san_jose_de_iturbide.txt,7530,14438,21723,1.0,False,False,SECCIÓN PRIMERA,SECCIÓN SEGUNDA
-2020,SAN LUIS DE LA PAZ,san_luis_de_la_paz,033,ERO,2019_13182_Periodico_Numero_259_Septima_Parte_ocr.pdf,77,153,skipped,,,,GTO_PREDIAL_2020_san_luis_de_la_paz.txt,8138,-1,-1,0.0,False,False,,
-2020,SANTA CATARINA,santa_catarina,034,ERO,2019_13182_Periodico_Numero_259_Septima_Parte_ocr.pdf,154,196,skipped,,,,GTO_PREDIAL_2020_santa_catarina.txt,7899,-1,-1,0.0,False,False,,
-2020,"SANTIAGO MARAVATÍO,
-GUAMAJUATO",santiago_maravatio,036,ERO,2019_13182_Periodico_Numero_259_Septima_Parte_ocr.pdf,197,236,skipped,,,,GTO_PREDIAL_2020_santiago_maravatio.txt,7805,-1,-1,0.0,False,False,,
-2020,SILAO DE LA VICTORIA,silao_de_la_victoria,037,ERO,2019_13186_Periodico_Numero_259_Octava_Parte_ocr.pdf,2,90,skipped,,,,GTO_PREDIAL_2020_silao_de_la_victoria.txt,7884,-1,-1,0.0,False,False,,
-2020,Tarandacuao,tarandacuao,038,ERO,2019_13186_Periodico_Numero_259_Octava_Parte_ocr.pdf,91,192,skipped,,,,GTO_PREDIAL_2020_tarandacuao.txt,7865,-1,-1,0.0,False,False,,
-2020,COMONFORT,comonfort,009,ERO,2019_13187_Periodico_Numero_259_Tercera_Parte_ocr.pdf,2,115,skipped,,,,GTO_PREDIAL_2020_comonfort.txt,8630,-1,-1,0.0,False,False,,
-2020,CORTAZAR,cortazar,011,ERO,2019_13187_Periodico_Numero_259_Tercera_Parte_ocr.pdf,116,209,skipped,,,,GTO_PREDIAL_2020_cortazar.txt,7656,-1,-1,0.0,False,False,,
-2020,DOCTOR MORA,doctor_mora,013,ERO,2019_13187_Periodico_Numero_259_Tercera_Parte_ocr.pdf,210,260,skipped,,,,GTO_PREDIAL_2020_doctor_mora.txt,7859,-1,-1,0.0,False,False,,
-2020,HUANÍMARO,huanimaro,016,ERO,2019_13188_Periodico_Numero_259_Cuarta_Parte_ocr.pdf,2,50,skipped,,,,GTO_PREDIAL_2020_huanimaro.txt,8100,-1,-1,0.0,False,False,,
-2020,JARAL DEL PROGRESO,jaral_del_progreso,018,ERO,2019_13188_Periodico_Numero_259_Cuarta_Parte_ocr.pdf,51,122,skipped,,,,GTO_PREDIAL_2020_jaral_del_progreso.txt,8006,-1,-1,0.0,False,False,,
-2020,JERÉCUARO,jerecuaro,019,ERO,2019_13188_Periodico_Numero_259_Cuarta_Parte_ocr.pdf,123,180,skipped,,,,GTO_PREDIAL_2020_jerecuaro.txt,7796,-1,-1,0.0,False,False,,
-2020,MANUEL DOBLADO,manuel_doblado,008,ERO,2019_13188_Periodico_Numero_259_Cuarta_Parte_ocr.pdf,181,236,skipped,,,,GTO_PREDIAL_2020_manuel_doblado.txt,7920,-1,-1,0.0,False,False,,
-2020,ABASOLO,abasolo,001,ERO,2019_13191_Periodico_Numero_259_Segunda_Parte_ocr.pdf,2,60,skipped,,,,GTO_PREDIAL_2020_abasolo.txt,9145,-1,-1,0.0,False,False,,
-2020,ACÁMBARO,acambaro,002,ERO,2019_13191_Periodico_Numero_259_Segunda_Parte_ocr.pdf,61,127,skipped,,,,GTO_PREDIAL_2020_acambaro.txt,7877,-1,-1,0.0,False,False,,
-2020,APASEO EL ALTO,apaseo_el_alto,004,ERO,2019_13191_Periodico_Numero_259_Segunda_Parte_ocr.pdf,128,192,skipped,,,,GTO_PREDIAL_2020_apaseo_el_alto.txt,8123,-1,-1,0.0,False,False,,
-2020,Atarjea,atarjea,006,ERO,2019_13191_Periodico_Numero_259_Segunda_Parte_ocr.pdf,193,228,skipped,,,,GTO_PREDIAL_2020_atarjea.txt,6160,-1,-1,0.0,False,False,,
-2019,URIANGATO,uriangato,041,ERO,2019_13192_Periodico_Numero_259_Novena_Parte_ocr.pdf,2,88,skipped,,,,GTO_PREDIAL_2019_uriangato.txt,8905,-1,-1,0.0,False,False,,
-2020,VICTORIA,victoria,043,ERO,2019_13192_Periodico_Numero_259_Novena_Parte_ocr.pdf,89,134,skipped,,,,GTO_PREDIAL_2020_victoria.txt,7870,-1,-1,0.0,False,False,,
-2020,XICHÚ,xichu,045,ERO,2019_13192_Periodico_Numero_259_Novena_Parte_ocr.pdf,135,160,skipped,,,,GTO_PREDIAL_2020_xichu.txt,5982,-1,-1,0.0,False,False,,
-2020,OCAMPO,ocampo,022,ERO,2019_13195_Periodico_Numero_259_Quinta_Parte_ocr.pdf,2,43,skipped,,,,GTO_PREDIAL_2020_ocampo.txt,7787,-1,-1,0.0,False,False,,
-2020,PUEBLO NUEVO,pueblo_nuevo,024,ERO,2019_13195_Periodico_Numero_259_Quinta_Parte_ocr.pdf,44,106,skipped,,,,GTO_PREDIAL_2020_pueblo_nuevo.txt,7732,-1,-1,0.0,False,False,,
-2020,PURÍSIMA DEL RINCÓN,purisima_del_rincon,025,ERO,2019_13195_Periodico_Numero_259_Quinta_Parte_ocr.pdf,107,199,skipped,,,,GTO_PREDIAL_2020_purisima_del_rincon.txt,8150,-1,-1,0.0,False,False,,
-2020,ROMITA,romita,026,ERO,2019_13195_Periodico_Numero_259_Quinta_Parte_ocr.pdf,200,276,skipped,,,,GTO_PREDIAL_2020_romita.txt,8993,-1,-1,0.0,False,False,,
-2020,Salamanca,salamanca,027,ERO,2019_13197_Periodico_Numero_259_Sexta_Parte_ocr.pdf,2,81,skipped,,,,GTO_PREDIAL_2020_salamanca.txt,8439,-1,-1,0.0,False,False,,
-2020,SALVATIERRA,salvatierra,028,ERO,2019_13197_Periodico_Numero_259_Sexta_Parte_ocr.pdf,82,122,skipped,,,,GTO_PREDIAL_2020_salvatierra.txt,7841,-1,-1,0.0,False,False,,
-2020,SAN DIEGO DE LA UNIÓN,san_diego_de_la_union,029,ERO,2019_13197_Periodico_Numero_259_Sexta_Parte_ocr.pdf,123,177,skipped,,,,GTO_PREDIAL_2020_san_diego_de_la_union.txt,7983,-1,-1,0.0,False,False,,
-2020,SAN FELIPE,san_felipe,030,ERO,2019_13197_Periodico_Numero_259_Sexta_Parte_ocr.pdf,178,244,skipped,,,,GTO_PREDIAL_2020_san_felipe.txt,7869,-1,-1,0.0,False,False,,
-2020,SAN MIGUEL DE ALLENDE,san_miguel_de_allende,003,ERO,2019_13201_Periodico_Numero_260_Septima_Parte_ocr.pdf,2,69,skipped,,,,GTO_PREDIAL_2020_san_miguel_de_allende.txt,8942,-1,-1,0.0,False,False,,
-2020,"Santa Cruz de
-Juventino Rosas",santa_cruz_de_juventino_rosas,035,ERO,2019_13201_Periodico_Numero_260_Septima_Parte_ocr.pdf,70,69,skipped,,,,GTO_PREDIAL_2020_santa_cruz_de_juventino_rosas.txt,8020,-1,-1,0.0,False,False,,
-2020,"SANTA CRUZ DE JUVENTINO ROSAS,
+los ingresos que percibirá la hacienda pública del municipio de Morolteón",2018,identidad_no_resuelta,2017_11506_Periodico_Numero_224_Cuarta_Parte_ocr.pdf,149,256,True,seccion_predial,161,166,21832,29127,1.0,False,False,SECCIÓN PRIMERA,SECCIÓN SEGUNDA,,GTO_PREDIAL_2018_moroleon_guanajgato_para_el_zjercicio_fiscal_del_amo_2018_capitulo_primero_de_la.txt,7791
+11023,guanajuato,penjamo,PÉNJAMO,2018,ok,2017_11508_Periodico_Numero_225_Segunda_Parte_ocr.pdf,2,72,True,,,,-1,-1,0.0,False,False,,,,GTO_PREDIAL_2018_penjamo.txt,7987
+,guanajuato,pueble_fuevo,"Pueble
+fuevo",2018,identidad_no_resuelta,2017_11508_Periodico_Numero_225_Segunda_Parte_ocr.pdf,73,72,True,no_text,0,-1,-1,-1,0.0,False,False,,,,GTO_PREDIAL_2018_pueble_fuevo.txt,233
+11024,guanajuato,pueblo_nuevo,PUEBLO MUEVO,2018,ok,2017_11508_Periodico_Numero_225_Segunda_Parte_ocr.pdf,73,108,True,,,,-1,-1,0.0,False,False,,,,GTO_PREDIAL_2018_pueblo_nuevo.txt,7667
+11025,guanajuato,purisima_del_rincon,"Purísima
+del Rincán",2018,ok,2017_11508_Periodico_Numero_225_Segunda_Parte_ocr.pdf,109,267,True,,,,-1,-1,0.0,False,False,,,,GTO_PREDIAL_2018_purisima_del_rincon.txt,8164
+11027,guanajuato,salamanca,SALAMANCA,2018,ok,2017_11508_Periodico_Numero_225_Segunda_Parte_ocr.pdf,268,332,True,,,,-1,-1,0.0,False,False,,,,GTO_PREDIAL_2018_salamanca.txt,8192
+11015,guanajuato,guanajuato,GUANAJUATO,2018,ok,2017_11544_Periodico_Numero_228_Tercera_Parte_ocr.pdf,2,192,True,,,,-1,-1,0.0,False,False,,,,GTO_PREDIAL_2018_guanajuato.txt,8789
+11018,guanajuato,jaral_del_progreso,JARAL DEL PROGRESO,2018,ok,2017_11545_Periodico_Numero_228_Cuarta_Parte_ocr.pdf,2,65,True,,,,-1,-1,0.0,False,False,,,,GTO_PREDIAL_2018_jaral_del_progreso.txt,7808
+11020,guanajuato,leon,León,2018,ok,2017_11545_Periodico_Numero_228_Cuarta_Parte_ocr.pdf,66,240,True,,,,-1,-1,0.0,False,False,,,,GTO_PREDIAL_2018_leon.txt,174962
+11028,guanajuato,salvatierra,SALVATIERRA,2018,ok,2017_11550_Periodico_Numero_228_Quinta_Parte_ocr.pdf,2,49,True,,,,-1,-1,0.0,False,False,,,,GTO_PREDIAL_2018_salvatierra.txt,8639
+11031,guanajuato,san_francisco_del_rincon,SAN FRANCISCO DEL RINCÓN,2018,ok,2017_11550_Periodico_Numero_228_Quinta_Parte_ocr.pdf,50,122,True,,,,-1,-1,0.0,False,False,,,,GTO_PREDIAL_2018_san_francisco_del_rincon.txt,8098
+11035,guanajuato,santa_cruz_de_juventino_rosas,"Santa
+Cruz de Juventino Rosas",2018,ok,2017_11550_Periodico_Numero_228_Quinta_Parte_ocr.pdf,123,191,True,,,,-1,-1,0.0,False,False,,,,GTO_PREDIAL_2018_santa_cruz_de_juventino_rosas.txt,8807
+11037,guanajuato,silao_de_la_victoria,SILAO DE LA VICTORIA,2018,ok,2017_11550_Periodico_Numero_228_Quinta_Parte_ocr.pdf,192,272,True,,,,-1,-1,0.0,False,False,,,,GTO_PREDIAL_2018_silao_de_la_victoria.txt,8678
+11008,guanajuato,manuel_doblado,MANUEL DOBLADO,2019,ok,2018_12469_Periodico_Numero_259_Cuarta_Parte_ocr.pdf,2,51,True,,,,-1,-1,0.0,False,False,,,,GTO_PREDIAL_2019_manuel_doblado.txt,7545
+11021,guanajuato,moroleon,Moroleón,2019,ok,2018_12469_Periodico_Numero_259_Cuarta_Parte_ocr.pdf,52,146,True,,,,-1,-1,0.0,False,False,,,,GTO_PREDIAL_2019_moroleon.txt,7856
+,guanajuato,dcampo,DCAMPO,2019,identidad_no_resuelta,2018_12469_Periodico_Numero_259_Cuarta_Parte_ocr.pdf,147,194,True,seccion_predial,151,157,6575,12736,1.0,False,False,SECCIÓN PRIMERA,SECCIÓN SEGUNDA,,GTO_PREDIAL_2019_dcampo.txt,6399
+,guanajuato,peniamo_guamajuato,"PÉNIAMO, GUAMAJUATO",2018,identidad_no_resuelta,2018_12469_Periodico_Numero_259_Cuarta_Parte_ocr.pdf,195,316,True,seccion_predial,198,204,5282,11482,1.0,False,False,SECCIÓN PRIMERA,SECCIÓN SEGUNDA,,GTO_PREDIAL_2018_peniamo_guamajuato.txt,6451
+11029,guanajuato,san_diego_de_la_union,SAN DIEGO DE LA UNIÓN,2019,ok,2018_12470_Periodico_Numero_259_Sexta_Parte_ocr.pdf,2,58,True,,,,-1,-1,0.0,False,False,,,,GTO_PREDIAL_2019_san_diego_de_la_union.txt,7890
+11030,guanajuato,san_felipe,San Felipe,2019,ok,2018_12470_Periodico_Numero_259_Sexta_Parte_ocr.pdf,59,189,True,,,,-1,-1,0.0,False,False,,,,GTO_PREDIAL_2019_san_felipe.txt,6654
+11033,guanajuato,san_luis_de_la_paz,SAM LUIS DE LA PAZ,2019,ok,2018_12470_Periodico_Numero_259_Sexta_Parte_ocr.pdf,190,245,True,,,,-1,-1,0.0,False,False,,,,GTO_PREDIAL_2019_san_luis_de_la_paz.txt,7881
+11034,guanajuato,santa_catarina,"Santa
+Catarina",2019,ok,2018_12470_Periodico_Numero_259_Sexta_Parte_ocr.pdf,246,288,True,seccion_predial,250,256,5669,12726,1.0,False,False,SECCIÓN PRIMERA,SECCIÓN SEGUNDA,,GTO_PREDIAL_2019_santa_catarina.txt,7302
+11003,guanajuato,san_miguel_de_allende,SAN MIGUEL DE ALLENDE,2019,ok,2018_12472_Periodico_Numero_259_Décima_Segunda_Parte_ocr.pdf,2,78,True,,,,-1,-1,0.0,False,False,,,,GTO_PREDIAL_2019_san_miguel_de_allende.txt,8657
+11035,guanajuato,santa_cruz_de_juventino_rosas,"Santa Cruz de
+Suventino Rosas",2019,ok,2018_12472_Periodico_Numero_259_Décima_Segunda_Parte_ocr.pdf,79,232,True,,,,-1,-1,0.0,False,False,,,,GTO_PREDIAL_2019_santa_cruz_de_juventino_rosas.txt,8026
+11036,guanajuato,santiago_maravatio,SANTIAGO MARAVATÍO,2019,ok,2018_12473_Periodico_Numero_259_Septima_Parte_ocr.pdf,2,39,True,,,,-1,-1,0.0,False,False,,,,GTO_PREDIAL_2019_santiago_maravatio.txt,7769
+11038,guanajuato,tarandacuao,Tarandacuao,2019,ok,2018_12473_Periodico_Numero_259_Septima_Parte_ocr.pdf,40,117,True,,,,-1,-1,0.0,False,False,,,,GTO_PREDIAL_2019_tarandacuao.txt,7789
+11039,guanajuato,tarimoro,TARIMORO,2019,ok,2018_12473_Periodico_Numero_259_Septima_Parte_ocr.pdf,118,180,True,,,,-1,-1,0.0,False,False,,,,GTO_PREDIAL_2019_tarimoro.txt,7909
+11040,guanajuato,tierra_blanca,TIERRA BLANCA,2019,ok,2018_12473_Periodico_Numero_259_Septima_Parte_ocr.pdf,181,205,True,,,,-1,-1,0.0,False,False,,,,GTO_PREDIAL_2019_tierra_blanca.txt,7511
+11041,guanajuato,uriangato,URIANGATO,2019,ok,2018_12473_Periodico_Numero_259_Septima_Parte_ocr.pdf,206,296,True,,,,-1,-1,0.0,False,False,,,,GTO_PREDIAL_2019_uriangato.txt,8324
+11001,guanajuato,abasolo,ABASOLO,2019,ok,2018_12474_Periodico_Numero_259_Segunda_Parte_ocr.pdf,2,55,True,,,,-1,-1,0.0,False,False,,,,GTO_PREDIAL_2019_abasolo.txt,7865
+11002,guanajuato,acambaro,ACÁMBARO,2019,ok,2018_12474_Periodico_Numero_259_Segunda_Parte_ocr.pdf,56,122,True,,,,-1,-1,0.0,False,False,,,,GTO_PREDIAL_2019_acambaro.txt,7785
+11004,guanajuato,apaseo_el_alto,APASEO EL ALTO,2019,ok,2018_12474_Periodico_Numero_259_Segunda_Parte_ocr.pdf,123,182,True,,,,-1,-1,0.0,False,False,,,,GTO_PREDIAL_2019_apaseo_el_alto.txt,8157
+11006,guanajuato,atarjea,ATARJEA,2019,ok,2018_12474_Periodico_Numero_259_Segunda_Parte_ocr.pdf,183,209,True,,,,-1,-1,0.0,False,False,,,,GTO_PREDIAL_2019_atarjea.txt,6193
+11009,guanajuato,comonfort,Comonfort,2019,ok,2018_12474_Periodico_Numero_259_Segunda_Parte_ocr.pdf,210,276,True,,,,-1,-1,0.0,False,False,,,,GTO_PREDIAL_2019_comonfort.txt,8598
+11011,guanajuato,cortazar,CORTAZAR,2019,ok,2018_12475_Periodico_Numero_259_Tercera_Parte_ocr.pdf,2,87,True,,,,-1,-1,0.0,False,False,,,,GTO_PREDIAL_2019_cortazar.txt,7018
+11013,guanajuato,doctor_mora,DOCTOR MORA,2019,ok,2018_12475_Periodico_Numero_259_Tercera_Parte_ocr.pdf,88,132,True,,,,-1,-1,0.0,False,False,,,,GTO_PREDIAL_2019_doctor_mora.txt,7925
+11014,guanajuato,dolores_hidalgo_cuna_de_la_independencia_nacional,"DOLORES HIDALGO CUNA DE LA.
+INDEPENDENCIA NACIONAL",2019,ok,2018_12475_Periodico_Numero_259_Tercera_Parte_ocr.pdf,133,186,True,,,,-1,-1,0.0,False,False,,,,GTO_PREDIAL_2019_dolores_hidalgo_cuna_de_la_independencia_nacional.txt,8023
+11016,guanajuato,huanimaro,HUANÍMARO,2019,ok,2018_12475_Periodico_Numero_259_Tercera_Parte_ocr.pdf,187,233,True,,,,-1,-1,0.0,False,False,,,,GTO_PREDIAL_2019_huanimaro.txt,8005
+11019,guanajuato,jerecuaro,JERÉCUARO,2019,ok,2018_12475_Periodico_Numero_259_Tercera_Parte_ocr.pdf,234,292,True,,,,-1,-1,0.0,False,False,,,,GTO_PREDIAL_2019_jerecuaro.txt,7072
+11025,guanajuato,purisima_del_rincon,PURÍSIMA DEL RINCÓN,2019,ok,2018_12476_Periodico_Numero_259_Quinta_Parte_ocr.pdf,2,97,True,,,,-1,-1,0.0,False,False,,,,GTO_PREDIAL_2019_purisima_del_rincon.txt,8019
+11026,guanajuato,romita,ROMITA,2019,ok,2018_12476_Periodico_Numero_259_Quinta_Parte_ocr.pdf,98,170,True,,,,-1,-1,0.0,False,False,,,,GTO_PREDIAL_2019_romita.txt,7827
+11027,guanajuato,salamanca,Salamanca,2019,ok,2018_12476_Periodico_Numero_259_Quinta_Parte_ocr.pdf,171,250,True,,,,-1,-1,0.0,False,False,,,,GTO_PREDIAL_2019_salamanca.txt,8507
+11028,guanajuato,salvatierra,SALVATIERRA,2019,ok,2018_12476_Periodico_Numero_259_Quinta_Parte_ocr.pdf,251,300,True,,,,-1,-1,0.0,False,False,,,,GTO_PREDIAL_2019_salvatierra.txt,7829
+11005,guanajuato,apaseo_el_grande,Apaseo el Grande,2019,ok,2018_12477_Periodico_Numero_259_Octava_Parte_ocr.pdf,2,2,True,,,,-1,-1,0.0,False,False,,,,GTO_PREDIAL_2019_apaseo_el_grande.txt,1594
+11042,guanajuato,valle_de_santiago,VALLE DE SANTIAGO,2019,ok,2018_12477_Periodico_Numero_259_Octava_Parte_ocr.pdf,3,82,True,,,,-1,-1,0.0,False,False,,,,GTO_PREDIAL_2019_valle_de_santiago.txt,8055
+11043,guanajuato,victoria,VICTORIA,2019,ok,2018_12477_Periodico_Numero_259_Octava_Parte_ocr.pdf,83,130,True,,,,-1,-1,0.0,False,False,,,,GTO_PREDIAL_2019_victoria.txt,7785
+11044,guanajuato,villagran,VILLAGRÁN,2019,ok,2018_12477_Periodico_Numero_259_Octava_Parte_ocr.pdf,131,169,True,,,,-1,-1,0.0,False,False,,,,GTO_PREDIAL_2019_villagran.txt,7832
+11045,guanajuato,xichu,XICHÚ,2019,ok,2018_12477_Periodico_Numero_259_Octava_Parte_ocr.pdf,170,192,True,,,,-1,-1,0.0,False,False,,,,GTO_PREDIAL_2019_xichu.txt,6045
+11046,guanajuato,yuriria,YURIRIA,2019,ok,2018_12477_Periodico_Numero_259_Octava_Parte_ocr.pdf,193,324,True,,,,-1,-1,0.0,False,False,,,,GTO_PREDIAL_2019_yuriria.txt,7955
+11017,guanajuato,irapuato,IRAPUATO,2019,ok,2018_12478_Periodico_Numero_259_Decima_Parte_ocr.pdf,2,126,True,,,,-1,-1,0.0,False,False,,,,GTO_PREDIAL_2019_irapuato.txt,12393
+11018,guanajuato,jaral_del_progreso,JARAL DEL PROGRESO,2019,ok,2018_12478_Periodico_Numero_259_Decima_Parte_ocr.pdf,127,204,True,,,,-1,-1,0.0,False,False,,,,GTO_PREDIAL_2019_jaral_del_progreso.txt,7951
+11020,guanajuato,leon,León,2019,ok,2018_12479_Periodico_Numero_259_Decima_Primera_Parte_ocr.pdf,2,177,True,,,,-1,-1,0.0,False,False,,,,GTO_PREDIAL_2019_leon.txt,175036
+11031,guanajuato,san_francisco_del_rincon,SAN FRANCISCO DEL RINCÓN,2019,ok,2018_12479_Periodico_Numero_259_Decima_Primera_Parte_ocr.pdf,178,240,True,,,,-1,-1,0.0,False,False,,,,GTO_PREDIAL_2019_san_francisco_del_rincon.txt,7367
+11027,guanajuato,salamanca,Salamanca,2019,ok,2019_12634_Periodico_Numero_45_Segunda_Parte_ocr.pdf,2,24,True,fallback_18pp,2,19,-1,-1,0.0,False,False,,,,GTO_PREDIAL_2019_salamanca.txt,34850
+11021,guanajuato,moroleon,Moroleón,2019,ok,2019_12641_Periodico_Numero_51_Segunda_Parte_ocr.pdf,2,164,True,fallback_18pp,2,19,-1,-1,0.0,False,False,,,,GTO_PREDIAL_2019_moroleon.txt,33995
+11038,guanajuato,tarandacuao,Tarandacuao,2017,ok,2019_12787_Periodico_Numero_114_Segunda_Parte_ocr.pdf,2,1,True,no_text,0,-1,-1,-1,0.0,False,False,,,,GTO_PREDIAL_2017_tarandacuao.txt,230
+11022,guanajuato,ocampo,Ocampo,2017,ok,2019_12787_Periodico_Numero_114_Segunda_Parte_ocr.pdf,2,6,True,fallback_18pp,2,6,-1,-1,0.0,False,False,,,,GTO_PREDIAL_2017_ocampo.txt,7882
+11020,guanajuato,leon,León,2019,ok,2019_12787_Periodico_Numero_114_Segunda_Parte_ocr.pdf,7,9,True,fallback_18pp,7,9,-1,-1,0.0,False,False,,,,GTO_PREDIAL_2019_leon.txt,3692
+11025,guanajuato,purisima_del_rincon,Purísima del Rincón,2019,ok,2019_12787_Periodico_Numero_114_Segunda_Parte_ocr.pdf,10,11,True,fallback_18pp,10,11,-1,-1,0.0,False,False,,,,GTO_PREDIAL_2019_purisima_del_rincon.txt,2616
+11039,guanajuato,tarimoro,Tarimoro,2019,ok,2019_12787_Periodico_Numero_114_Segunda_Parte_ocr.pdf,12,13,True,fallback_18pp,12,13,-1,-1,0.0,False,False,,,,GTO_PREDIAL_2019_tarimoro.txt,2224
+11015,guanajuato,guanajuato,Guanajuato,2019,ok,2019_12787_Periodico_Numero_114_Segunda_Parte_ocr.pdf,14,15,True,fallback_18pp,14,15,-1,-1,0.0,False,False,,,,GTO_PREDIAL_2019_guanajuato.txt,2557
+11038,guanajuato,tarandacuao,Tarandacuao,2019,ok,2019_12787_Periodico_Numero_114_Segunda_Parte_ocr.pdf,16,17,True,fallback_18pp,16,17,-1,-1,0.0,False,False,,,,GTO_PREDIAL_2019_tarandacuao.txt,2372
+11022,guanajuato,ocampo,Ocampo,2019,ok,2019_12787_Periodico_Numero_114_Segunda_Parte_ocr.pdf,18,48,True,fallback_18pp,18,35,-1,-1,0.0,False,False,,,,GTO_PREDIAL_2019_ocampo.txt,29826
+11010,guanajuato,coroneo,Coroneo,2019,ok,2019_12812_Periodico_Numero_130_Segunda_Parte_ocr.pdf,2,1,True,no_text,0,-1,-1,-1,0.0,False,False,,,,GTO_PREDIAL_2019_coroneo.txt,223
+11046,guanajuato,yuriria,Yuriria,2019,ok,2019_12812_Periodico_Numero_130_Segunda_Parte_ocr.pdf,2,1,True,no_text,0,-1,-1,-1,0.0,False,False,,,,GTO_PREDIAL_2019_yuriria.txt,223
+11011,guanajuato,cortazar,Cortazar,2019,ok,2019_12812_Periodico_Numero_130_Segunda_Parte_ocr.pdf,2,1,True,no_text,0,-1,-1,-1,0.0,False,False,,,,GTO_PREDIAL_2019_cortazar.txt,224
+11021,guanajuato,moroleon,Moroleón,2019,ok,2019_12812_Periodico_Numero_130_Segunda_Parte_ocr.pdf,2,1,True,,,,-1,-1,0.0,False,False,,,,GTO_PREDIAL_2019_moroleon.txt,35140
+11001,guanajuato,abasolo,Abasolo,2019,ok,2019_12812_Periodico_Numero_130_Segunda_Parte_ocr.pdf,2,1,True,no_text,0,-1,-1,-1,0.0,False,False,,,,GTO_PREDIAL_2019_abasolo.txt,223
+11017,guanajuato,irapuato,Irapuato,2019,ok,2019_12812_Periodico_Numero_130_Segunda_Parte_ocr.pdf,2,12,True,fallback_18pp,2,12,-1,-1,0.0,False,False,,,,GTO_PREDIAL_2019_irapuato.txt,27543
+11028,guanajuato,salvatierra,Salvatierra,2019,ok,2019_12812_Periodico_Numero_130_Segunda_Parte_ocr.pdf,13,15,True,fallback_18pp,13,15,-1,-1,0.0,False,False,,,,GTO_PREDIAL_2019_salvatierra.txt,3053
+11044,guanajuato,villagran,Villagrán,2019,ok,2019_12812_Periodico_Numero_130_Segunda_Parte_ocr.pdf,16,17,True,fallback_18pp,16,17,-1,-1,0.0,False,False,,,,GTO_PREDIAL_2019_villagran.txt,2658
+11041,guanajuato,uriangato,Uriangato,2019,ok,2019_12812_Periodico_Numero_130_Segunda_Parte_ocr.pdf,18,128,True,,,,-1,-1,0.0,False,False,,,,GTO_PREDIAL_2019_uriangato.txt,8905
+11035,guanajuato,santa_cruz_de_juventino_rosas,Santa Cruz de Juventino Rosas,2019,ok,2019_12946_Periodico_Numero_153_Tercera_Parte_ocr.pdf,90,92,True,fallback_18pp,90,92,-1,-1,0.0,False,False,,,,GTO_PREDIAL_2019_santa_cruz_de_juventino_rosas.txt,4511
+11032,guanajuato,san_jose_de_iturbide,SAN JOSÉ ITURBIDE,2020,ok,2019_13182_Periodico_Numero_259_Septima_Parte_ocr.pdf,2,76,True,seccion_predial,10,16,14438,21723,1.0,False,False,SECCIÓN PRIMERA,SECCIÓN SEGUNDA,,GTO_PREDIAL_2020_san_jose_de_iturbide.txt,7530
+11033,guanajuato,san_luis_de_la_paz,SAN LUIS DE LA PAZ,2020,ok,2019_13182_Periodico_Numero_259_Septima_Parte_ocr.pdf,77,153,True,,,,-1,-1,0.0,False,False,,,,GTO_PREDIAL_2020_san_luis_de_la_paz.txt,8138
+11034,guanajuato,santa_catarina,SANTA CATARINA,2020,ok,2019_13182_Periodico_Numero_259_Septima_Parte_ocr.pdf,154,196,True,,,,-1,-1,0.0,False,False,,,,GTO_PREDIAL_2020_santa_catarina.txt,7899
+11036,guanajuato,santiago_maravatio,"SANTIAGO MARAVATÍO,
+GUAMAJUATO",2020,ok,2019_13182_Periodico_Numero_259_Septima_Parte_ocr.pdf,197,236,True,,,,-1,-1,0.0,False,False,,,,GTO_PREDIAL_2020_santiago_maravatio.txt,7805
+11037,guanajuato,silao_de_la_victoria,SILAO DE LA VICTORIA,2020,ok,2019_13186_Periodico_Numero_259_Octava_Parte_ocr.pdf,2,90,True,,,,-1,-1,0.0,False,False,,,,GTO_PREDIAL_2020_silao_de_la_victoria.txt,7884
+11038,guanajuato,tarandacuao,Tarandacuao,2020,ok,2019_13186_Periodico_Numero_259_Octava_Parte_ocr.pdf,91,192,True,,,,-1,-1,0.0,False,False,,,,GTO_PREDIAL_2020_tarandacuao.txt,7865
+11009,guanajuato,comonfort,COMONFORT,2020,ok,2019_13187_Periodico_Numero_259_Tercera_Parte_ocr.pdf,2,115,True,,,,-1,-1,0.0,False,False,,,,GTO_PREDIAL_2020_comonfort.txt,8630
+11011,guanajuato,cortazar,CORTAZAR,2020,ok,2019_13187_Periodico_Numero_259_Tercera_Parte_ocr.pdf,116,209,True,,,,-1,-1,0.0,False,False,,,,GTO_PREDIAL_2020_cortazar.txt,7656
+11013,guanajuato,doctor_mora,DOCTOR MORA,2020,ok,2019_13187_Periodico_Numero_259_Tercera_Parte_ocr.pdf,210,260,True,,,,-1,-1,0.0,False,False,,,,GTO_PREDIAL_2020_doctor_mora.txt,7859
+11016,guanajuato,huanimaro,HUANÍMARO,2020,ok,2019_13188_Periodico_Numero_259_Cuarta_Parte_ocr.pdf,2,50,True,,,,-1,-1,0.0,False,False,,,,GTO_PREDIAL_2020_huanimaro.txt,8100
+11018,guanajuato,jaral_del_progreso,JARAL DEL PROGRESO,2020,ok,2019_13188_Periodico_Numero_259_Cuarta_Parte_ocr.pdf,51,122,True,,,,-1,-1,0.0,False,False,,,,GTO_PREDIAL_2020_jaral_del_progreso.txt,8006
+11019,guanajuato,jerecuaro,JERÉCUARO,2020,ok,2019_13188_Periodico_Numero_259_Cuarta_Parte_ocr.pdf,123,180,True,,,,-1,-1,0.0,False,False,,,,GTO_PREDIAL_2020_jerecuaro.txt,7796
+11008,guanajuato,manuel_doblado,MANUEL DOBLADO,2020,ok,2019_13188_Periodico_Numero_259_Cuarta_Parte_ocr.pdf,181,236,True,,,,-1,-1,0.0,False,False,,,,GTO_PREDIAL_2020_manuel_doblado.txt,7920
+11001,guanajuato,abasolo,ABASOLO,2020,ok,2019_13191_Periodico_Numero_259_Segunda_Parte_ocr.pdf,2,60,True,,,,-1,-1,0.0,False,False,,,,GTO_PREDIAL_2020_abasolo.txt,9145
+11002,guanajuato,acambaro,ACÁMBARO,2020,ok,2019_13191_Periodico_Numero_259_Segunda_Parte_ocr.pdf,61,127,True,,,,-1,-1,0.0,False,False,,,,GTO_PREDIAL_2020_acambaro.txt,7877
+11004,guanajuato,apaseo_el_alto,APASEO EL ALTO,2020,ok,2019_13191_Periodico_Numero_259_Segunda_Parte_ocr.pdf,128,192,True,,,,-1,-1,0.0,False,False,,,,GTO_PREDIAL_2020_apaseo_el_alto.txt,8123
+11006,guanajuato,atarjea,Atarjea,2020,ok,2019_13191_Periodico_Numero_259_Segunda_Parte_ocr.pdf,193,228,True,,,,-1,-1,0.0,False,False,,,,GTO_PREDIAL_2020_atarjea.txt,6160
+11041,guanajuato,uriangato,URIANGATO,2019,ok,2019_13192_Periodico_Numero_259_Novena_Parte_ocr.pdf,2,88,True,,,,-1,-1,0.0,False,False,,,,GTO_PREDIAL_2019_uriangato.txt,8905
+11043,guanajuato,victoria,VICTORIA,2020,ok,2019_13192_Periodico_Numero_259_Novena_Parte_ocr.pdf,89,134,True,,,,-1,-1,0.0,False,False,,,,GTO_PREDIAL_2020_victoria.txt,7870
+11045,guanajuato,xichu,XICHÚ,2020,ok,2019_13192_Periodico_Numero_259_Novena_Parte_ocr.pdf,135,160,True,,,,-1,-1,0.0,False,False,,,,GTO_PREDIAL_2020_xichu.txt,5982
+11022,guanajuato,ocampo,OCAMPO,2020,ok,2019_13195_Periodico_Numero_259_Quinta_Parte_ocr.pdf,2,43,True,,,,-1,-1,0.0,False,False,,,,GTO_PREDIAL_2020_ocampo.txt,7787
+11024,guanajuato,pueblo_nuevo,PUEBLO NUEVO,2020,ok,2019_13195_Periodico_Numero_259_Quinta_Parte_ocr.pdf,44,106,True,,,,-1,-1,0.0,False,False,,,,GTO_PREDIAL_2020_pueblo_nuevo.txt,7732
+11025,guanajuato,purisima_del_rincon,PURÍSIMA DEL RINCÓN,2020,ok,2019_13195_Periodico_Numero_259_Quinta_Parte_ocr.pdf,107,199,True,,,,-1,-1,0.0,False,False,,,,GTO_PREDIAL_2020_purisima_del_rincon.txt,8150
+11026,guanajuato,romita,ROMITA,2020,ok,2019_13195_Periodico_Numero_259_Quinta_Parte_ocr.pdf,200,276,True,,,,-1,-1,0.0,False,False,,,,GTO_PREDIAL_2020_romita.txt,8993
+11027,guanajuato,salamanca,Salamanca,2020,ok,2019_13197_Periodico_Numero_259_Sexta_Parte_ocr.pdf,2,81,True,,,,-1,-1,0.0,False,False,,,,GTO_PREDIAL_2020_salamanca.txt,8439
+11028,guanajuato,salvatierra,SALVATIERRA,2020,ok,2019_13197_Periodico_Numero_259_Sexta_Parte_ocr.pdf,82,122,True,,,,-1,-1,0.0,False,False,,,,GTO_PREDIAL_2020_salvatierra.txt,7841
+11029,guanajuato,san_diego_de_la_union,SAN DIEGO DE LA UNIÓN,2020,ok,2019_13197_Periodico_Numero_259_Sexta_Parte_ocr.pdf,123,177,True,,,,-1,-1,0.0,False,False,,,,GTO_PREDIAL_2020_san_diego_de_la_union.txt,7983
+11030,guanajuato,san_felipe,SAN FELIPE,2020,ok,2019_13197_Periodico_Numero_259_Sexta_Parte_ocr.pdf,178,244,True,,,,-1,-1,0.0,False,False,,,,GTO_PREDIAL_2020_san_felipe.txt,7869
+11003,guanajuato,san_miguel_de_allende,SAN MIGUEL DE ALLENDE,2020,ok,2019_13201_Periodico_Numero_260_Septima_Parte_ocr.pdf,2,69,True,,,,-1,-1,0.0,False,False,,,,GTO_PREDIAL_2020_san_miguel_de_allende.txt,8942
+11035,guanajuato,santa_cruz_de_juventino_rosas,"Santa Cruz de
+Juventino Rosas",2020,ok,2019_13201_Periodico_Numero_260_Septima_Parte_ocr.pdf,70,69,True,,,,-1,-1,0.0,False,False,,,,GTO_PREDIAL_2020_santa_cruz_de_juventino_rosas.txt,8020
+,guanajuato,santa_cruz_de_juventino_rosas_articulo_1_ingresos_que_percibira_la_hacienda_publica_del_municipio_de_santa_cruz_de,"SANTA CRUZ DE JUVENTINO ROSAS,
 Articulo 1.
-ingresos que percibira la hacienda pública del municipio de Santa Cruz de.",santa_cruz_de_juventino_rosas_articulo_1_ingresos_que_percibira_la_hacienda_publica_del_municipio_de_santa_cruz_de,???,ERO,2019_13201_Periodico_Numero_260_Septima_Parte_ocr.pdf,70,133,true,seccion_predial,76,83,GTO_PREDIAL_2020_santa_cruz_de_juventino_rosas_articulo_1_ingresos_que_percibira_la_hacienda_publ.txt,7795,12884,20332,1.0,False,False,SECCIÓN PRIMERA,SECCIÓN SEGUNDA
-2020,TARIMORO,tarimoro,039,ERO,2019_13201_Periodico_Numero_260_Septima_Parte_ocr.pdf,134,216,skipped,,,,GTO_PREDIAL_2020_tarimoro.txt,7960,-1,-1,0.0,False,False,,
-2020,VALLE DE SANTIAGO,valle_de_santiago,042,ERO,2019_13202_Periodico_Numero_260_Octava_Parte_ocr.pdf,2,74,skipped,,,,GTO_PREDIAL_2020_valle_de_santiago.txt,11995,-1,-1,0.0,False,False,,
-2020,VILLAGRÁN,villagran,044,ERO,2019_13202_Periodico_Numero_260_Octava_Parte_ocr.pdf,75,116,skipped,,,,GTO_PREDIAL_2020_villagran.txt,7783,-1,-1,0.0,False,False,,
-2020,YURIRIA,yuriria,046,ERO,2019_13202_Periodico_Numero_260_Octava_Parte_ocr.pdf,117,224,skipped,,,,GTO_PREDIAL_2020_yuriria.txt,7950,-1,-1,0.0,False,False,,
-2020,Moroleón,moroleon,021,ERO,2019_13218_Periodico_Numero_260_Sexta_Parte_ocr.pdf,2,126,skipped,,,,GTO_PREDIAL_2020_moroleon.txt,10106,-1,-1,0.0,False,False,,
-2020,PÉNJAMO,penjamo,023,ERO,2019_13218_Periodico_Numero_260_Sexta_Parte_ocr.pdf,127,195,skipped,,,,GTO_PREDIAL_2020_penjamo.txt,9100,-1,-1,0.0,False,False,,
-2020,SAN FRANCISCO DEL RINCÓN,san_francisco_del_rincon,031,ERO,2019_13218_Periodico_Numero_260_Sexta_Parte_ocr.pdf,196,264,skipped,,,,GTO_PREDIAL_2020_san_francisco_del_rincon.txt,8626,-1,-1,0.0,False,False,,
-2020,APASEO EL GRANDE,apaseo_el_grande,005,ERO,2019_13220_Periodico_Numero_260_Segunda_Parte_ocr.pdf,14,97,skipped,,,,GTO_PREDIAL_2020_apaseo_el_grande.txt,7866,-1,-1,0.0,False,False,,
-2020,CELAYA,celaya,007,ERO,2019_13220_Periodico_Numero_260_Segunda_Parte_ocr.pdf,98,228,skipped,,,,GTO_PREDIAL_2020_celaya.txt,12214,-1,-1,0.0,False,False,,
-2020,CORONEO,coroneo,010,ERO,2019_13221_Periodico_Numero_260_Tercera_Parte_ocr.pdf,2,63,skipped,,,,GTO_PREDIAL_2020_coroneo.txt,7883,-1,-1,0.0,False,False,,
-2020,CUERÁMARO,cueramaro,012,ERO,2019_13221_Periodico_Numero_260_Tercera_Parte_ocr.pdf,64,112,skipped,,,,GTO_PREDIAL_2020_cueramaro.txt,8468,-1,-1,0.0,False,False,,
-2020,"DOLORES HIDALGO CUNA DE LA _
-INDEPENDENCIA NACIONAL",dolores_hidalgo_cuna_de_la_independencia_nacional,014,ERO,2019_13221_Periodico_Numero_260_Tercera_Parte_ocr.pdf,113,167,skipped,,,,GTO_PREDIAL_2020_dolores_hidalgo_cuna_de_la_independencia_nacional.txt,8021,-1,-1,0.0,False,False,,
-2020,GUANAJUATO,guanajuato,015,ERO,2019_13221_Periodico_Numero_260_Tercera_Parte_ocr.pdf,168,244,skipped,,,,GTO_PREDIAL_2020_guanajuato.txt,9197,-1,-1,0.0,False,False,,
-2020,IRAPUATO,irapuato,017,ERO,2019_13223_Periodico_Numero_260_Cuarta_Parte_ocr.pdf,2,136,skipped,,,,GTO_PREDIAL_2020_irapuato.txt,25583,-1,-1,0.0,False,False,,
-2020,León,leon,020,ERO,2019_13245_Periodico_Numero_260_Quinta_Parte_ocr.pdf,2,204,skipped,,,,GTO_PREDIAL_2020_leon.txt,5183,-1,-1,0.0,False,False,,
-2020,Romita,romita,026,ERO,2020_13337_Periodico_Numero_48_Segunda_Parte_ocr.pdf,19,20,fallback,fallback_18pp,19,20,GTO_PREDIAL_2020_romita.txt,2343,-1,-1,0.0,False,False,,
-2020,"Purísima
-del Rincón",purisima_del_rincon,025,ero,2020_13337_Periodico_Numero_48_Segunda_Parte_ocr.pdf,21,132,fallback,fallback_18pp,21,38,GTO_PREDIAL_2020_purisima_del_rincon.txt,63955,-1,-1,0.0,False,False,,
-2020,San Francisca del Rincón,san_francisco_del_rincon,031,ERO,2020_13460_Periodico_Numero_99_Segunda_Parte_ocr.pdf,6,136,fallback,fallback_18pp,6,23,GTO_PREDIAL_2020_san_francisco_del_rincon.txt,44310,-1,-1,0.0,False,False,,
-2020,San Luis de la Paz,san_luis_de_la_paz,033,ERO,2020_13480_Periodico_Numero_106_Segunda_Parte_ocr.pdf,103,252,fallback,fallback_18pp,103,120,GTO_PREDIAL_2020_san_luis_de_la_paz.txt,22356,-1,-1,0.0,False,False,,
-2021,VICTORIA,victoria,043,ERO,2020_13869_Periodico_Numero_261_Vigesima_Parte.pdf,3,67,skipped,,,,GTO_PREDIAL_2021_victoria.txt,2399,-1,-1,0.0,False,False,,
-2021,VILLAGRÁN,villagran,044,ERO,2020_13869_Periodico_Numero_261_Vigesima_Parte.pdf,68,248,skipped,,,,GTO_PREDIAL_2021_villagran.txt,1638,-1,-1,0.0,False,False,,
-2020,URIANGATO,uriangato,041,ERO,2020_13872_Periodico_Numero_261_Decima_Novena_Parte.pdf,2,126,skipped,,,,GTO_PREDIAL_2020_uriangato.txt,9327,-1,-1,0.0,False,False,,
-2021,VALLE DE SANTIAGO,valle_de_santiago,042,ERO,2020_13872_Periodico_Numero_261_Decima_Novena_Parte.pdf,127,272,skipped,,,,GTO_PREDIAL_2021_valle_de_santiago.txt,8773,-1,-1,0.0,False,False,,
-2021,"Santa Cruz de 
-Juventino Rosas",santa_cruz_de_juventino_rosas,035,ERO,2020_13881_Periodico_Numero_261_Decima_Sexta_Parte.pdf,132,248,skipped,,,,GTO_PREDIAL_2021_santa_cruz_de_juventino_rosas.txt,1346,-1,-1,0.0,False,False,,
-2021,SAN FRANCISCO DEL RINCÓN DEL ESTADO DE,san_francisco_del_rincon,031,,2020_13910_Periodico_Numero_260_Segunda_Parte.pdf,5,8,skipped,,,,GTO_PREDIAL_2021_san_francisco_del_rincon.txt,6660,-1,-1,0.0,False,False,,
-2021,"Purísima del
-Rincón",purisima_del_rincon,025,,2021_14082_Periódico_Número_27_Segunda_Parte_ocr.pdf,64,68,skipped,,,,GTO_PREDIAL_2021_purisima_del_rincon.txt,4749,-1,-1,0.0,False,False,,
-2022,ABASOLO,abasolo,001,ERO,2021_14619_Periodico_Numero_260_Segunda_Parte_ocr.pdf,2,99,skipped,,,,GTO_PREDIAL_2022_abasolo.txt,9776,-1,-1,0.0,False,False,,
-2022,ACÁMBARO,acambaro,002,ERO,2021_14619_Periodico_Numero_260_Segunda_Parte_ocr.pdf,100,182,skipped,,,,GTO_PREDIAL_2022_acambaro.txt,8305,-1,-1,0.0,False,False,,
-2022,APASEO EL ALTO,apaseo_el_alto,004,ERO,2021_14619_Periodico_Numero_260_Segunda_Parte_ocr.pdf,183,300,skipped,,,,GTO_PREDIAL_2022_apaseo_el_alto.txt,8171,-1,-1,0.0,False,False,,
-2022,APASEO EL GRANDE,apaseo_el_grande,005,ERO,2021_14620_Periodico_Numero_260_Tercera_Parte_ocr.pdf,2,121,skipped,,,,GTO_PREDIAL_2022_apaseo_el_grande.txt,8464,-1,-1,0.0,False,False,,
-2022,ATARJEA,atarjea,006,ERO,2021_14620_Periodico_Numero_260_Tercera_Parte_ocr.pdf,122,164,skipped,,,,GTO_PREDIAL_2022_atarjea.txt,6511,-1,-1,0.0,False,False,,
-2022,Celaya,celaya,007,ERO,2021_14621_Periodico_Numero_260_Cuarta_Parte_ocr.pdf,2,292,skipped,,,,GTO_PREDIAL_2022_celaya.txt,33488,-1,-1,0.0,False,False,,
-2022,COMONFORT,comonfort,009,ERO,2021_14622_Periodico_Numero_260_Quinta_Parte_ocr.pdf,2,169,skipped,,,,GTO_PREDIAL_2022_comonfort.txt,8848,-1,-1,0.0,False,False,,
-2022,Coroneo,coroneo,010,ERO,2021_14622_Periodico_Numero_260_Quinta_Parte_ocr.pdf,170,264,skipped,,,,GTO_PREDIAL_2022_coroneo.txt,7602,-1,-1,0.0,False,False,,
-2022,Cortazar,cortazar,011,ERO,2021_14623_Periodico_Numero_260_Sexta_Parte_ocr.pdf,2,119,skipped,,,,GTO_PREDIAL_2022_cortazar.txt,6784,-1,-1,0.0,False,False,,
-2022,CUERÁMARO,cueramaro,012,ERO,2021_14623_Periodico_Numero_260_Sexta_Parte_ocr.pdf,120,196,skipped,,,,GTO_PREDIAL_2022_cueramaro.txt,8412,-1,-1,0.0,False,False,,
-2022,"Doctor
-Mora",doctor_mora,013,ERO,2021_14623_Periodico_Numero_260_Sexta_Parte_ocr.pdf,197,276,skipped,,,,GTO_PREDIAL_2022_doctor_mora.txt,6464,-1,-1,0.0,False,False,,
-2022,"Dolores Hidalgo Cuna de
-la Independencia Nacional",dolores_hidalgo_cuna_de_la_independencia_nacional,014,ERO,2021_14624_Periodico_Numero_260_Séptima_Parte_ocr.pdf,2,211,skipped,,,,GTO_PREDIAL_2022_dolores_hidalgo_cuna_de_la_independencia_nacional.txt,10491,-1,-1,0.0,False,False,,
-2022,HUANÍMARO,huanimaro,016,ERO,2021_14624_Periodico_Numero_260_Séptima_Parte_ocr.pdf,212,284,skipped,,,,GTO_PREDIAL_2022_huanimaro.txt,8627,-1,-1,0.0,False,False,,
-2022,Irapuato,irapuato,017,ERO,2021_14625_Periodico_Numero_260_Octava_Parte_ocr.pdf,2,376,skipped,,,,GTO_PREDIAL_2022_irapuato.txt,393970,-1,-1,0.0,False,False,,
-2022,JARAL DEL PROGRESO,jaral_del_progreso,018,ERO,2021_14626_Periodico_Numero_260_Novena_Parte_ocr.pdf,2,156,skipped,,,,GTO_PREDIAL_2022_jaral_del_progreso.txt,7872,-1,-1,0.0,False,False,,
-2022,León,leon,020,ERO,2021_14627_Periodico_Numero_260_Décima_Parte_ocr.pdf,2,352,skipped,,,,GTO_PREDIAL_2022_leon.txt,226874,-1,-1,0.0,False,False,,
-2022,MANUEL DOBLADO,manuel_doblado,008,ERO,2021_14628_Periodico_Numero_260_Décima_Primera_Parte_ocr.pdf,2,75,skipped,,,,GTO_PREDIAL_2022_manuel_doblado.txt,8682,-1,-1,0.0,False,False,,
-2022,Moroleón,moroleon,021,ERO,2021_14628_Periodico_Numero_260_Décima_Primera_Parte_ocr.pdf,76,264,skipped,,,,GTO_PREDIAL_2022_moroleon.txt,10887,-1,-1,0.0,False,False,,
-2022,OCAMPO,ocampo,022,ERO,2021_14629_Periodico_Numero_260_Décima_Segunda_Parte_ocr.pdf,2,52,skipped,,,,GTO_PREDIAL_2022_ocampo.txt,7895,-1,-1,0.0,False,False,,
-2022,PÉNMIAMO,penmiamo,???,ERO,2021_14629_Periodico_Numero_260_Décima_Segunda_Parte_ocr.pdf,53,130,true,seccion_predial,63,70,GTO_PREDIAL_2022_penmiamo.txt,8957,13222,21934,1.0,False,False,SECCIÓN PRIMERA,SECCIÓN SEGUNDA
-2022,PUEBLO NUEVO,pueblo_nuevo,024,ERO,2021_14629_Periodico_Numero_260_Décima_Segunda_Parte_ocr.pdf,131,176,skipped,,,,GTO_PREDIAL_2022_pueblo_nuevo.txt,7674,-1,-1,0.0,False,False,,
-2022,PURÍSIMA DEL RINCÓN,purisima_del_rincon,025,ERO,2021_14630_Periodico_Numero_260_Décima_Tercera_Parte_ocr.pdf,2,148,skipped,,,,GTO_PREDIAL_2022_purisima_del_rincon.txt,8451,-1,-1,0.0,False,False,,
-2022,ROMITA,romita,026,ERO,2021_14630_Periodico_Numero_260_Décima_Tercera_Parte_ocr.pdf,149,240,skipped,,,,GTO_PREDIAL_2022_romita.txt,8999,-1,-1,0.0,False,False,,
-2022,Salamanca,salamanca,027,ERO,2021_14631_Periodico_Numero_260_Decima_Cuarta_Parte_ocr.pdf,2,118,skipped,,,,GTO_PREDIAL_2022_salamanca.txt,8614,-1,-1,0.0,False,False,,
-2022,SALVATIERRA,salvatierra,028,ERO,2021_14631_Periodico_Numero_260_Decima_Cuarta_Parte_ocr.pdf,119,172,skipped,,,,GTO_PREDIAL_2022_salvatierra.txt,8038,-1,-1,0.0,False,False,,
-2022,SAN DIEGO DE LA UNIÓN,san_diego_de_la_union,029,ERO,2021_14631_Periodico_Numero_260_Decima_Cuarta_Parte_ocr.pdf,173,256,skipped,,,,GTO_PREDIAL_2022_san_diego_de_la_union.txt,8525,-1,-1,0.0,False,False,,
-2022,SAN FELIPE,san_felipe,030,ERO,2021_14632_Periodico_Numero_260_Decima_Quinta_Parte_ocr.pdf,2,240,skipped,,,,GTO_PREDIAL_2022_san_felipe.txt,8557,-1,-1,0.0,False,False,,
-2022,SAN JOSÉ ITURBIDE,san_jose_de_iturbide,???,ERO,2021_14633_Periodico_Numero_260_Decima_Sexta_Parte_ocr.pdf,2,87,true,seccion_predial,15,22,GTO_PREDIAL_2022_san_jose_de_iturbide.txt,7594,24051,31395,1.0,False,False,SECCIÓN PRIMERA,SECCIÓN SEGUNDA
-2022,SAN LUIS DE LA PAZ,san_luis_de_la_paz,033,ERO,2021_14633_Periodico_Numero_260_Decima_Sexta_Parte_ocr.pdf,88,176,skipped,,,,GTO_PREDIAL_2022_san_luis_de_la_paz.txt,8061,-1,-1,0.0,False,False,,
-2022,SAN MIGUEL DE ALLENDE,san_miguel_de_allende,003,ERO,2021_14633_Periodico_Numero_260_Decima_Sexta_Parte_ocr.pdf,177,264,skipped,,,,GTO_PREDIAL_2022_san_miguel_de_allende.txt,9137,-1,-1,0.0,False,False,,
-2022,SANTA CATARINA,santa_catarina,034,ERO,2021_14634_Periodico_Numero_260_Decima_Septima_Parte_ocr.pdf,2,63,skipped,,,,GTO_PREDIAL_2022_santa_catarina.txt,8510,-1,-1,0.0,False,False,,
-2022,"Santa Cruz de
-Juventino Rosas",santa_cruz_de_juventino_rosas,035,ERO,2021_14634_Periodico_Numero_260_Decima_Septima_Parte_ocr.pdf,64,132,skipped,,,,GTO_PREDIAL_2022_santa_cruz_de_juventino_rosas.txt,8146,-1,-1,0.0,False,False,,
-2022,SANTIAGO MARAVATÍO,santiago_maravatio,036,ERO,2021_14634_Periodico_Numero_260_Decima_Septima_Parte_ocr.pdf,133,177,skipped,,,,GTO_PREDIAL_2022_santiago_maravatio.txt,8014,-1,-1,0.0,False,False,,
-2022,Silao de la Victoria,silao_de_la_victoria,037,ERO,2021_14634_Periodico_Numero_260_Decima_Septima_Parte_ocr.pdf,178,300,skipped,,,,GTO_PREDIAL_2022_silao_de_la_victoria.txt,8219,-1,-1,0.0,False,False,,
-2022,TARANDACUAO,tarandacuao,038,ERO,2021_14635_Periodico_Numero_260_Decima_Octava_Parte_ocr.pdf,2,82,skipped,,,,GTO_PREDIAL_2022_tarandacuao.txt,8058,-1,-1,0.0,False,False,,
-2022,Tarimoro,tarimoro,039,ERO,2021_14635_Periodico_Numero_260_Decima_Octava_Parte_ocr.pdf,83,252,skipped,,,,GTO_PREDIAL_2022_tarimoro.txt,8601,-1,-1,0.0,False,False,,
-2022,TIERRA BLANCA,tierra_blanca,040,ERO,2021_14636_Periodico_Numero_260_Decima_Novena_Parte_ocr.pdf,2,43,skipped,,,,GTO_PREDIAL_2022_tierra_blanca.txt,7975,-1,-1,0.0,False,False,,
-2022,Uriangato,uriangato,041,ERO,2021_14636_Periodico_Numero_260_Decima_Novena_Parte_ocr.pdf,44,172,skipped,,,,GTO_PREDIAL_2022_uriangato.txt,9500,-1,-1,0.0,False,False,,
-2022,VALLE DE SANTIAGO,valle_de_santiago,042,ERO,2021_14637_Periodico_Numero_260_Vigesima_Parte_ocr.pdf,2,136,skipped,,,,GTO_PREDIAL_2022_valle_de_santiago.txt,12860,-1,-1,0.0,False,False,,
-2022,Victoria,victoria,043,ERO,2021_14637_Periodico_Numero_260_Vigesima_Parte_ocr.pdf,137,220,skipped,,,,GTO_PREDIAL_2022_victoria.txt,8297,-1,-1,0.0,False,False,,
-2022,VILLAGRÁN,villagran,044,ERO,2021_14638_Periodico_Numero_260_Vigesima_Primera_Parte_ocr.pdf,2,65,skipped,,,,GTO_PREDIAL_2022_villagran.txt,8152,-1,-1,0.0,False,False,,
-2022,XICHÚ,xichu,045,ERO,2021_14638_Periodico_Numero_260_Vigesima_Primera_Parte_ocr.pdf,66,95,skipped,,,,GTO_PREDIAL_2022_xichu.txt,5968,-1,-1,0.0,False,False,,
-2022,YURIRIA,yuriria,046,ERO,2021_14638_Periodico_Numero_260_Vigesima_Primera_Parte_ocr.pdf,96,168,skipped,,,,GTO_PREDIAL_2022_yuriria.txt,8459,-1,-1,0.0,False,False,,
-2022,Apaseo el Grande,apaseo_el_grande,005,ERO,2022_15426_Periodico_Numero_236_Segunda_Parte_ocr.pdf,17,19,fallback,fallback_18pp,17,19,GTO_PREDIAL_2022_apaseo_el_grande.txt,2615,-1,-1,0.0,False,False,,
-2022,San José Iturbide,san_jose_de_iturbide,???,ERO,2022_15426_Periodico_Numero_236_Segunda_Parte_ocr.pdf,20,140,fallback,fallback_18pp,20,37,GTO_PREDIAL_2022_san_jose_de_iturbide.txt,26047,-1,-1,0.0,False,False,,
-2023,JERÉCUARO,jerecuaro,019,ERO,2022_15505_Periódico_Numero_260_Tercera_Parte_ocr.pdf,71,292,skipped,,,,GTO_PREDIAL_2023_jerecuaro.txt,2585,-1,-1,0.0,False,False,,
-2023,ACÁMBARO,acambaro,002,ERO,2022_15506_Periodico_Numero_260_Segunda_Parte_ocr.pdf,3,219,skipped,,,,GTO_PREDIAL_2023_acambaro.txt,8422,-1,-1,0.0,False,False,,
-2023,"ATARJEA,.",atarjea,006,ERO,2022_15506_Periodico_Numero_260_Segunda_Parte_ocr.pdf,220,248,skipped,,,,GTO_PREDIAL_2023_atarjea.txt,6270,-1,-1,0.0,False,False,,
-2023,Celaya,celaya,007,ERO,2022_15512_Periodico_Numero_260_Sexta_Parte_ocr.pdf,3,208,skipped,,,,GTO_PREDIAL_2023_celaya.txt,16693,-1,-1,0.0,False,False,,
-2023,HUANÍMARO,huanimaro,016,ERO,2022_15517_Periodico_Numero_260_Decima_Tercera_Parte_ocr.pdf,3,81,skipped,,,,GTO_PREDIAL_2023_huanimaro.txt,8797,-1,-1,0.0,False,False,,
-2023,Irapuato,irapuato,017,ERO,2022_15517_Periodico_Numero_260_Decima_Tercera_Parte_ocr.pdf,82,288,skipped,,,,GTO_PREDIAL_2023_irapuato.txt,16892,-1,-1,0.0,False,False,,
-2023,"León,
+ingresos que percibira la hacienda pública del municipio de Santa Cruz de.",2020,identidad_no_resuelta,2019_13201_Periodico_Numero_260_Septima_Parte_ocr.pdf,70,133,True,seccion_predial,76,83,12884,20332,1.0,False,False,SECCIÓN PRIMERA,SECCIÓN SEGUNDA,,GTO_PREDIAL_2020_santa_cruz_de_juventino_rosas_articulo_1_ingresos_que_percibira_la_hacienda_publ.txt,7795
+11039,guanajuato,tarimoro,TARIMORO,2020,ok,2019_13201_Periodico_Numero_260_Septima_Parte_ocr.pdf,134,216,True,,,,-1,-1,0.0,False,False,,,,GTO_PREDIAL_2020_tarimoro.txt,7960
+11042,guanajuato,valle_de_santiago,VALLE DE SANTIAGO,2020,ok,2019_13202_Periodico_Numero_260_Octava_Parte_ocr.pdf,2,74,True,,,,-1,-1,0.0,False,False,,,,GTO_PREDIAL_2020_valle_de_santiago.txt,11995
+11044,guanajuato,villagran,VILLAGRÁN,2020,ok,2019_13202_Periodico_Numero_260_Octava_Parte_ocr.pdf,75,116,True,,,,-1,-1,0.0,False,False,,,,GTO_PREDIAL_2020_villagran.txt,7783
+11046,guanajuato,yuriria,YURIRIA,2020,ok,2019_13202_Periodico_Numero_260_Octava_Parte_ocr.pdf,117,224,True,,,,-1,-1,0.0,False,False,,,,GTO_PREDIAL_2020_yuriria.txt,7950
+11021,guanajuato,moroleon,Moroleón,2020,ok,2019_13218_Periodico_Numero_260_Sexta_Parte_ocr.pdf,2,126,True,,,,-1,-1,0.0,False,False,,,,GTO_PREDIAL_2020_moroleon.txt,10106
+11023,guanajuato,penjamo,PÉNJAMO,2020,ok,2019_13218_Periodico_Numero_260_Sexta_Parte_ocr.pdf,127,195,True,,,,-1,-1,0.0,False,False,,,,GTO_PREDIAL_2020_penjamo.txt,9100
+11031,guanajuato,san_francisco_del_rincon,SAN FRANCISCO DEL RINCÓN,2020,ok,2019_13218_Periodico_Numero_260_Sexta_Parte_ocr.pdf,196,264,True,,,,-1,-1,0.0,False,False,,,,GTO_PREDIAL_2020_san_francisco_del_rincon.txt,8626
+11005,guanajuato,apaseo_el_grande,APASEO EL GRANDE,2020,ok,2019_13220_Periodico_Numero_260_Segunda_Parte_ocr.pdf,14,97,True,,,,-1,-1,0.0,False,False,,,,GTO_PREDIAL_2020_apaseo_el_grande.txt,7866
+11007,guanajuato,celaya,CELAYA,2020,ok,2019_13220_Periodico_Numero_260_Segunda_Parte_ocr.pdf,98,228,True,,,,-1,-1,0.0,False,False,,,,GTO_PREDIAL_2020_celaya.txt,12214
+11010,guanajuato,coroneo,CORONEO,2020,ok,2019_13221_Periodico_Numero_260_Tercera_Parte_ocr.pdf,2,63,True,,,,-1,-1,0.0,False,False,,,,GTO_PREDIAL_2020_coroneo.txt,7883
+11012,guanajuato,cueramaro,CUERÁMARO,2020,ok,2019_13221_Periodico_Numero_260_Tercera_Parte_ocr.pdf,64,112,True,,,,-1,-1,0.0,False,False,,,,GTO_PREDIAL_2020_cueramaro.txt,8468
+11014,guanajuato,dolores_hidalgo_cuna_de_la_independencia_nacional,"DOLORES HIDALGO CUNA DE LA _
+INDEPENDENCIA NACIONAL",2020,ok,2019_13221_Periodico_Numero_260_Tercera_Parte_ocr.pdf,113,167,True,,,,-1,-1,0.0,False,False,,,,GTO_PREDIAL_2020_dolores_hidalgo_cuna_de_la_independencia_nacional.txt,8021
+11015,guanajuato,guanajuato,GUANAJUATO,2020,ok,2019_13221_Periodico_Numero_260_Tercera_Parte_ocr.pdf,168,244,True,,,,-1,-1,0.0,False,False,,,,GTO_PREDIAL_2020_guanajuato.txt,9197
+11017,guanajuato,irapuato,IRAPUATO,2020,ok,2019_13223_Periodico_Numero_260_Cuarta_Parte_ocr.pdf,2,136,True,,,,-1,-1,0.0,False,False,,,,GTO_PREDIAL_2020_irapuato.txt,25583
+11020,guanajuato,leon,León,2020,ok,2019_13245_Periodico_Numero_260_Quinta_Parte_ocr.pdf,2,204,True,,,,-1,-1,0.0,False,False,,,,GTO_PREDIAL_2020_leon.txt,5183
+11026,guanajuato,romita,Romita,2020,ok,2020_13337_Periodico_Numero_48_Segunda_Parte_ocr.pdf,19,20,True,fallback_18pp,19,20,-1,-1,0.0,False,False,,,,GTO_PREDIAL_2020_romita.txt,2343
+11025,guanajuato,purisima_del_rincon,"Purísima
+del Rincón",2020,ok,2020_13337_Periodico_Numero_48_Segunda_Parte_ocr.pdf,21,132,True,fallback_18pp,21,38,-1,-1,0.0,False,False,,,,GTO_PREDIAL_2020_purisima_del_rincon.txt,63955
+11031,guanajuato,san_francisco_del_rincon,San Francisca del Rincón,2020,ok,2020_13460_Periodico_Numero_99_Segunda_Parte_ocr.pdf,6,136,True,fallback_18pp,6,23,-1,-1,0.0,False,False,,,,GTO_PREDIAL_2020_san_francisco_del_rincon.txt,44310
+11033,guanajuato,san_luis_de_la_paz,San Luis de la Paz,2020,ok,2020_13480_Periodico_Numero_106_Segunda_Parte_ocr.pdf,103,252,True,fallback_18pp,103,120,-1,-1,0.0,False,False,,,,GTO_PREDIAL_2020_san_luis_de_la_paz.txt,22356
+11043,guanajuato,victoria,VICTORIA,2021,ok,2020_13869_Periodico_Numero_261_Vigesima_Parte.pdf,3,67,True,,,,-1,-1,0.0,False,False,,,,GTO_PREDIAL_2021_victoria.txt,2399
+11044,guanajuato,villagran,VILLAGRÁN,2021,ok,2020_13869_Periodico_Numero_261_Vigesima_Parte.pdf,68,248,True,,,,-1,-1,0.0,False,False,,,,GTO_PREDIAL_2021_villagran.txt,1638
+11041,guanajuato,uriangato,URIANGATO,2020,ok,2020_13872_Periodico_Numero_261_Decima_Novena_Parte.pdf,2,126,True,,,,-1,-1,0.0,False,False,,,,GTO_PREDIAL_2020_uriangato.txt,9327
+11042,guanajuato,valle_de_santiago,VALLE DE SANTIAGO,2021,ok,2020_13872_Periodico_Numero_261_Decima_Novena_Parte.pdf,127,272,True,,,,-1,-1,0.0,False,False,,,,GTO_PREDIAL_2021_valle_de_santiago.txt,8773
+11035,guanajuato,santa_cruz_de_juventino_rosas,"Santa Cruz de 
+Juventino Rosas",2021,ok,2020_13881_Periodico_Numero_261_Decima_Sexta_Parte.pdf,132,248,True,,,,-1,-1,0.0,False,False,,,,GTO_PREDIAL_2021_santa_cruz_de_juventino_rosas.txt,1346
+11031,guanajuato,san_francisco_del_rincon,SAN FRANCISCO DEL RINCÓN DEL ESTADO DE,2021,ok,2020_13910_Periodico_Numero_260_Segunda_Parte.pdf,5,8,True,,,,-1,-1,0.0,False,False,,,,GTO_PREDIAL_2021_san_francisco_del_rincon.txt,6660
+11025,guanajuato,purisima_del_rincon,"Purísima del
+Rincón",2021,ok,2021_14082_Periódico_Número_27_Segunda_Parte_ocr.pdf,64,68,True,,,,-1,-1,0.0,False,False,,,,GTO_PREDIAL_2021_purisima_del_rincon.txt,4749
+11001,guanajuato,abasolo,ABASOLO,2022,ok,2021_14619_Periodico_Numero_260_Segunda_Parte_ocr.pdf,2,99,True,,,,-1,-1,0.0,False,False,,,,GTO_PREDIAL_2022_abasolo.txt,9776
+11002,guanajuato,acambaro,ACÁMBARO,2022,ok,2021_14619_Periodico_Numero_260_Segunda_Parte_ocr.pdf,100,182,True,,,,-1,-1,0.0,False,False,,,,GTO_PREDIAL_2022_acambaro.txt,8305
+11004,guanajuato,apaseo_el_alto,APASEO EL ALTO,2022,ok,2021_14619_Periodico_Numero_260_Segunda_Parte_ocr.pdf,183,300,True,,,,-1,-1,0.0,False,False,,,,GTO_PREDIAL_2022_apaseo_el_alto.txt,8171
+11005,guanajuato,apaseo_el_grande,APASEO EL GRANDE,2022,ok,2021_14620_Periodico_Numero_260_Tercera_Parte_ocr.pdf,2,121,True,,,,-1,-1,0.0,False,False,,,,GTO_PREDIAL_2022_apaseo_el_grande.txt,8464
+11006,guanajuato,atarjea,ATARJEA,2022,ok,2021_14620_Periodico_Numero_260_Tercera_Parte_ocr.pdf,122,164,True,,,,-1,-1,0.0,False,False,,,,GTO_PREDIAL_2022_atarjea.txt,6511
+11007,guanajuato,celaya,Celaya,2022,ok,2021_14621_Periodico_Numero_260_Cuarta_Parte_ocr.pdf,2,292,True,,,,-1,-1,0.0,False,False,,,,GTO_PREDIAL_2022_celaya.txt,33488
+11009,guanajuato,comonfort,COMONFORT,2022,ok,2021_14622_Periodico_Numero_260_Quinta_Parte_ocr.pdf,2,169,True,,,,-1,-1,0.0,False,False,,,,GTO_PREDIAL_2022_comonfort.txt,8848
+11010,guanajuato,coroneo,Coroneo,2022,ok,2021_14622_Periodico_Numero_260_Quinta_Parte_ocr.pdf,170,264,True,,,,-1,-1,0.0,False,False,,,,GTO_PREDIAL_2022_coroneo.txt,7602
+11011,guanajuato,cortazar,Cortazar,2022,ok,2021_14623_Periodico_Numero_260_Sexta_Parte_ocr.pdf,2,119,True,,,,-1,-1,0.0,False,False,,,,GTO_PREDIAL_2022_cortazar.txt,6784
+11012,guanajuato,cueramaro,CUERÁMARO,2022,ok,2021_14623_Periodico_Numero_260_Sexta_Parte_ocr.pdf,120,196,True,,,,-1,-1,0.0,False,False,,,,GTO_PREDIAL_2022_cueramaro.txt,8412
+11013,guanajuato,doctor_mora,"Doctor
+Mora",2022,ok,2021_14623_Periodico_Numero_260_Sexta_Parte_ocr.pdf,197,276,True,,,,-1,-1,0.0,False,False,,,,GTO_PREDIAL_2022_doctor_mora.txt,6464
+11014,guanajuato,dolores_hidalgo_cuna_de_la_independencia_nacional,"Dolores Hidalgo Cuna de
+la Independencia Nacional",2022,ok,2021_14624_Periodico_Numero_260_Séptima_Parte_ocr.pdf,2,211,True,,,,-1,-1,0.0,False,False,,,,GTO_PREDIAL_2022_dolores_hidalgo_cuna_de_la_independencia_nacional.txt,10491
+11016,guanajuato,huanimaro,HUANÍMARO,2022,ok,2021_14624_Periodico_Numero_260_Séptima_Parte_ocr.pdf,212,284,True,,,,-1,-1,0.0,False,False,,,,GTO_PREDIAL_2022_huanimaro.txt,8627
+11017,guanajuato,irapuato,Irapuato,2022,ok,2021_14625_Periodico_Numero_260_Octava_Parte_ocr.pdf,2,376,True,,,,-1,-1,0.0,False,False,,,,GTO_PREDIAL_2022_irapuato.txt,393970
+11018,guanajuato,jaral_del_progreso,JARAL DEL PROGRESO,2022,ok,2021_14626_Periodico_Numero_260_Novena_Parte_ocr.pdf,2,156,True,,,,-1,-1,0.0,False,False,,,,GTO_PREDIAL_2022_jaral_del_progreso.txt,7872
+11020,guanajuato,leon,León,2022,ok,2021_14627_Periodico_Numero_260_Décima_Parte_ocr.pdf,2,352,True,,,,-1,-1,0.0,False,False,,,,GTO_PREDIAL_2022_leon.txt,226874
+11008,guanajuato,manuel_doblado,MANUEL DOBLADO,2022,ok,2021_14628_Periodico_Numero_260_Décima_Primera_Parte_ocr.pdf,2,75,True,,,,-1,-1,0.0,False,False,,,,GTO_PREDIAL_2022_manuel_doblado.txt,8682
+11021,guanajuato,moroleon,Moroleón,2022,ok,2021_14628_Periodico_Numero_260_Décima_Primera_Parte_ocr.pdf,76,264,True,,,,-1,-1,0.0,False,False,,,,GTO_PREDIAL_2022_moroleon.txt,10887
+11022,guanajuato,ocampo,OCAMPO,2022,ok,2021_14629_Periodico_Numero_260_Décima_Segunda_Parte_ocr.pdf,2,52,True,,,,-1,-1,0.0,False,False,,,,GTO_PREDIAL_2022_ocampo.txt,7895
+,guanajuato,penmiamo,PÉNMIAMO,2022,identidad_no_resuelta,2021_14629_Periodico_Numero_260_Décima_Segunda_Parte_ocr.pdf,53,130,True,seccion_predial,63,70,13222,21934,1.0,False,False,SECCIÓN PRIMERA,SECCIÓN SEGUNDA,,GTO_PREDIAL_2022_penmiamo.txt,8957
+11024,guanajuato,pueblo_nuevo,PUEBLO NUEVO,2022,ok,2021_14629_Periodico_Numero_260_Décima_Segunda_Parte_ocr.pdf,131,176,True,,,,-1,-1,0.0,False,False,,,,GTO_PREDIAL_2022_pueblo_nuevo.txt,7674
+11025,guanajuato,purisima_del_rincon,PURÍSIMA DEL RINCÓN,2022,ok,2021_14630_Periodico_Numero_260_Décima_Tercera_Parte_ocr.pdf,2,148,True,,,,-1,-1,0.0,False,False,,,,GTO_PREDIAL_2022_purisima_del_rincon.txt,8451
+11026,guanajuato,romita,ROMITA,2022,ok,2021_14630_Periodico_Numero_260_Décima_Tercera_Parte_ocr.pdf,149,240,True,,,,-1,-1,0.0,False,False,,,,GTO_PREDIAL_2022_romita.txt,8999
+11027,guanajuato,salamanca,Salamanca,2022,ok,2021_14631_Periodico_Numero_260_Decima_Cuarta_Parte_ocr.pdf,2,118,True,,,,-1,-1,0.0,False,False,,,,GTO_PREDIAL_2022_salamanca.txt,8614
+11028,guanajuato,salvatierra,SALVATIERRA,2022,ok,2021_14631_Periodico_Numero_260_Decima_Cuarta_Parte_ocr.pdf,119,172,True,,,,-1,-1,0.0,False,False,,,,GTO_PREDIAL_2022_salvatierra.txt,8038
+11029,guanajuato,san_diego_de_la_union,SAN DIEGO DE LA UNIÓN,2022,ok,2021_14631_Periodico_Numero_260_Decima_Cuarta_Parte_ocr.pdf,173,256,True,,,,-1,-1,0.0,False,False,,,,GTO_PREDIAL_2022_san_diego_de_la_union.txt,8525
+11030,guanajuato,san_felipe,SAN FELIPE,2022,ok,2021_14632_Periodico_Numero_260_Decima_Quinta_Parte_ocr.pdf,2,240,True,,,,-1,-1,0.0,False,False,,,,GTO_PREDIAL_2022_san_felipe.txt,8557
+11032,guanajuato,san_jose_de_iturbide,SAN JOSÉ ITURBIDE,2022,ok,2021_14633_Periodico_Numero_260_Decima_Sexta_Parte_ocr.pdf,2,87,True,seccion_predial,15,22,24051,31395,1.0,False,False,SECCIÓN PRIMERA,SECCIÓN SEGUNDA,,GTO_PREDIAL_2022_san_jose_de_iturbide.txt,7594
+11033,guanajuato,san_luis_de_la_paz,SAN LUIS DE LA PAZ,2022,ok,2021_14633_Periodico_Numero_260_Decima_Sexta_Parte_ocr.pdf,88,176,True,,,,-1,-1,0.0,False,False,,,,GTO_PREDIAL_2022_san_luis_de_la_paz.txt,8061
+11003,guanajuato,san_miguel_de_allende,SAN MIGUEL DE ALLENDE,2022,ok,2021_14633_Periodico_Numero_260_Decima_Sexta_Parte_ocr.pdf,177,264,True,,,,-1,-1,0.0,False,False,,,,GTO_PREDIAL_2022_san_miguel_de_allende.txt,9137
+11034,guanajuato,santa_catarina,SANTA CATARINA,2022,ok,2021_14634_Periodico_Numero_260_Decima_Septima_Parte_ocr.pdf,2,63,True,,,,-1,-1,0.0,False,False,,,,GTO_PREDIAL_2022_santa_catarina.txt,8510
+11035,guanajuato,santa_cruz_de_juventino_rosas,"Santa Cruz de
+Juventino Rosas",2022,ok,2021_14634_Periodico_Numero_260_Decima_Septima_Parte_ocr.pdf,64,132,True,,,,-1,-1,0.0,False,False,,,,GTO_PREDIAL_2022_santa_cruz_de_juventino_rosas.txt,8146
+11036,guanajuato,santiago_maravatio,SANTIAGO MARAVATÍO,2022,ok,2021_14634_Periodico_Numero_260_Decima_Septima_Parte_ocr.pdf,133,177,True,,,,-1,-1,0.0,False,False,,,,GTO_PREDIAL_2022_santiago_maravatio.txt,8014
+11037,guanajuato,silao_de_la_victoria,Silao de la Victoria,2022,ok,2021_14634_Periodico_Numero_260_Decima_Septima_Parte_ocr.pdf,178,300,True,,,,-1,-1,0.0,False,False,,,,GTO_PREDIAL_2022_silao_de_la_victoria.txt,8219
+11038,guanajuato,tarandacuao,TARANDACUAO,2022,ok,2021_14635_Periodico_Numero_260_Decima_Octava_Parte_ocr.pdf,2,82,True,,,,-1,-1,0.0,False,False,,,,GTO_PREDIAL_2022_tarandacuao.txt,8058
+11039,guanajuato,tarimoro,Tarimoro,2022,ok,2021_14635_Periodico_Numero_260_Decima_Octava_Parte_ocr.pdf,83,252,True,,,,-1,-1,0.0,False,False,,,,GTO_PREDIAL_2022_tarimoro.txt,8601
+11040,guanajuato,tierra_blanca,TIERRA BLANCA,2022,ok,2021_14636_Periodico_Numero_260_Decima_Novena_Parte_ocr.pdf,2,43,True,,,,-1,-1,0.0,False,False,,,,GTO_PREDIAL_2022_tierra_blanca.txt,7975
+11041,guanajuato,uriangato,Uriangato,2022,ok,2021_14636_Periodico_Numero_260_Decima_Novena_Parte_ocr.pdf,44,172,True,,,,-1,-1,0.0,False,False,,,,GTO_PREDIAL_2022_uriangato.txt,9500
+11042,guanajuato,valle_de_santiago,VALLE DE SANTIAGO,2022,ok,2021_14637_Periodico_Numero_260_Vigesima_Parte_ocr.pdf,2,136,True,,,,-1,-1,0.0,False,False,,,,GTO_PREDIAL_2022_valle_de_santiago.txt,12860
+11043,guanajuato,victoria,Victoria,2022,ok,2021_14637_Periodico_Numero_260_Vigesima_Parte_ocr.pdf,137,220,True,,,,-1,-1,0.0,False,False,,,,GTO_PREDIAL_2022_victoria.txt,8297
+11044,guanajuato,villagran,VILLAGRÁN,2022,ok,2021_14638_Periodico_Numero_260_Vigesima_Primera_Parte_ocr.pdf,2,65,True,,,,-1,-1,0.0,False,False,,,,GTO_PREDIAL_2022_villagran.txt,8152
+11045,guanajuato,xichu,XICHÚ,2022,ok,2021_14638_Periodico_Numero_260_Vigesima_Primera_Parte_ocr.pdf,66,95,True,,,,-1,-1,0.0,False,False,,,,GTO_PREDIAL_2022_xichu.txt,5968
+11046,guanajuato,yuriria,YURIRIA,2022,ok,2021_14638_Periodico_Numero_260_Vigesima_Primera_Parte_ocr.pdf,96,168,True,,,,-1,-1,0.0,False,False,,,,GTO_PREDIAL_2022_yuriria.txt,8459
+11005,guanajuato,apaseo_el_grande,Apaseo el Grande,2022,ok,2022_15426_Periodico_Numero_236_Segunda_Parte_ocr.pdf,17,19,True,fallback_18pp,17,19,-1,-1,0.0,False,False,,,,GTO_PREDIAL_2022_apaseo_el_grande.txt,2615
+11032,guanajuato,san_jose_de_iturbide,San José Iturbide,2022,ok,2022_15426_Periodico_Numero_236_Segunda_Parte_ocr.pdf,20,140,True,fallback_18pp,20,37,-1,-1,0.0,False,False,,,,GTO_PREDIAL_2022_san_jose_de_iturbide.txt,26047
+11019,guanajuato,jerecuaro,JERÉCUARO,2023,ok,2022_15505_Periódico_Numero_260_Tercera_Parte_ocr.pdf,71,292,True,,,,-1,-1,0.0,False,False,,,,GTO_PREDIAL_2023_jerecuaro.txt,2585
+11002,guanajuato,acambaro,ACÁMBARO,2023,ok,2022_15506_Periodico_Numero_260_Segunda_Parte_ocr.pdf,3,219,True,,,,-1,-1,0.0,False,False,,,,GTO_PREDIAL_2023_acambaro.txt,8422
+11006,guanajuato,atarjea,"ATARJEA,.",2023,ok,2022_15506_Periodico_Numero_260_Segunda_Parte_ocr.pdf,220,248,True,,,,-1,-1,0.0,False,False,,,,GTO_PREDIAL_2023_atarjea.txt,6270
+11007,guanajuato,celaya,Celaya,2023,ok,2022_15512_Periodico_Numero_260_Sexta_Parte_ocr.pdf,3,208,True,,,,-1,-1,0.0,False,False,,,,GTO_PREDIAL_2023_celaya.txt,16693
+11016,guanajuato,huanimaro,HUANÍMARO,2023,ok,2022_15517_Periodico_Numero_260_Decima_Tercera_Parte_ocr.pdf,3,81,True,,,,-1,-1,0.0,False,False,,,,GTO_PREDIAL_2023_huanimaro.txt,8797
+11017,guanajuato,irapuato,Irapuato,2023,ok,2022_15517_Periodico_Numero_260_Decima_Tercera_Parte_ocr.pdf,82,288,True,,,,-1,-1,0.0,False,False,,,,GTO_PREDIAL_2023_irapuato.txt,16892
+,guanajuato,leon_fiscal_del_ano_2023_para_quedar_en_tos_siguientes_ara_el_municipio_de_leon,"León,
 Fiscal del año 2023, para quedar en tos siguientes
-ARA EL MUNICIPIO DE LEÓN",leon_fiscal_del_ano_2023_para_quedar_en_tos_siguientes_ara_el_municipio_de_leon,???,ERO,2022_15519_Periodico_Numero_260_Decima_Quinta_Parte_ocr.pdf,3,200,true,seccion_predial,36,58,GTO_PREDIAL_2023_leon_fiscal_del_ano_2023_para_quedar_en_tos_siguientes_ara_el_municipio_de_leon.txt,15317,25331,40331,1.0,False,False,SECCIÓN PRIMERA,
-2023,MANUEL DOBLADO,manuel_doblado,008,ERO,2022_15521_Periodico_Numero_260_Decima_Septima_Parte_ocr.pdf,3,93,skipped,,,,GTO_PREDIAL_2023_manuel_doblado.txt,9270,-1,-1,0.0,False,False,,
-2023,MO,mo,???,ERO,2022_15521_Periodico_Numero_260_Decima_Septima_Parte_ocr.pdf,94,256,true,seccion_predial,140,157,GTO_PREDIAL_2023_mo.txt,12098,33829,45686,1.0,False,False,SECCIÓN PRIMERA,. SECCIÓN SEGUNDA
-2023,PUES,pues,???,ERO,2022_15522_Periodico_Numero_260_Decima_Octava_Parte_ocr.pdf,82,288,true,seccion_predial,97,104,GTO_PREDIAL_2023_pues.txt,4997,12969,17725,1.0,False,False,SECCIÓN PRIMERA,SECCIÓN SEGUNDA a
-2023,SAN JOSÉ ITURBIDE,san_jose_de_iturbide,???,ERO,2022_15524_Periódico_Numero_260_Vigésima_Parte_ocr.pdf,127,224,skipped,,,,GTO_PREDIAL_2023_san_jose_de_iturbide.txt,10063,-1,-1,0.0,False,False,,
-2023,SAN LUIS DE LA PAZ,san_luis_de_la_paz,033,ERO,2022_15525_Periodico_Numero_260_Vigesima_Primera_Parte_ocr.pdf,3,95,skipped,,,,GTO_PREDIAL_2023_san_luis_de_la_paz.txt,8184,-1,-1,0.0,False,False,,
-2023,"SA
-1. ingresos administración centralizada.",sa_1_ingresos_administracion_centralizada,???,ERO,2022_15525_Periodico_Numero_260_Vigesima_Primera_Parte_ocr.pdf,96,212,true,seccion_predial,121,132,GTO_PREDIAL_2023_sa_1_ingresos_administracion_centralizada.txt,6892,27403,34011,1.0,False,False,SECCIÓN PRIMERA,SECCIÓN SEGUNDA
-2023,"SAN
-ROSAS",san_rosas,???,ERO,2022_15526_Periodico_Numero_260_Vigesima_Segunda_Parte_ocr.pdf,64,232,true,seccion_predial,91,101,GTO_PREDIAL_2023_san_rosas.txt,5723,22330,27804,1.0,False,False,SECCIÓN PRIMERA,SECCIÓN SEGUNDA
-2023,TARIMORO,tarimoro,039,ERO,2022_15527_Periodico_Numero_260_Vigesima_Tercera_Parte_ocr.pdf,124,280,skipped,,,,GTO_PREDIAL_2023_tarimoro.txt,9230,-1,-1,0.0,False,False,,
-2023,Uriangato,uriangato,041,ERO,2022_15528_Periodico_Numero_260_Vigesima_Cuarta_Parte_ocr.pdf,3,300,skipped,,,,GTO_PREDIAL_2023_uriangato.txt,12966,-1,-1,0.0,False,False,,
-2023,Victoria,victoria,043,,2022_15529_Periodico_Numero_260_Vigesima_Quinta_Parte_ocr.pdf,3,228,skipped,,,,GTO_PREDIAL_2023_victoria.txt,8066,-1,-1,0.0,False,False,,
-2023,COMONFORT,comonfort,009,ERO,2022_15530_Periodico_Numero_260_Décima_Primera_Parte_ocr.pdf,3,284,skipped,,,,GTO_PREDIAL_2023_comonfort.txt,11422,-1,-1,0.0,False,False,,
-2023,CUERÁMARO,cueramaro,012,ERO,2022_15531_Periodico_Numero_260_Décima_Segunda_Parte_ocr.pdf,3,129,skipped,,,,GTO_PREDIAL_2023_cueramaro.txt,8621,-1,-1,0.0,False,False,,
-2023,"DOLORES HIDALGO CUNA DE LA.
-INDEPENDENCIA NACIONAL",dolores_hidalgo_cuna_de_la_independencia_nacional,014,ERO,2022_15531_Periodico_Numero_260_Décima_Segunda_Parte_ocr.pdf,130,316,skipped,,,,GTO_PREDIAL_2023_dolores_hidalgo_cuna_de_la_independencia_nacional.txt,9705,-1,-1,0.0,False,False,,
-2023,ABASOLO,abasolo,001,ERO,2022_15541_Periodico_Numero_260_Quinta_Parte_ocr.pdf,3,192,skipped,,,,GTO_PREDIAL_2023_abasolo.txt,10183,-1,-1,0.0,False,False,,
-2023,Salamanca,salamanca,027,ERO,2022_15578_Periodico_Numero_260_Décima_Novena_Parte_ocr.pdf,3,133,skipped,,,,GTO_PREDIAL_2023_salamanca.txt,9973,-1,-1,0.0,False,False,,
-2023,SALVATIERRA,salvatierra,028,ERO,2022_15578_Periodico_Numero_260_Décima_Novena_Parte_ocr.pdf,134,328,skipped,,,,GTO_PREDIAL_2023_salvatierra.txt,9914,-1,-1,0.0,False,False,,
-2024,JARAL DEL PROGRESO,jaral_del_progreso,018,ERO,2023_16360_Periodico_Numero_261_Sexta_Parte_ocr.pdf,3,87,skipped,,,,GTO_PREDIAL_2024_jaral_del_progreso.txt,3021,-1,-1,0.0,False,False,,
-2024,OCA,oca,???,ERO,2023_16360_Periodico_Numero_261_Sexta_Parte_ocr.pdf,88,208,true,seccion_predial,103,110,GTO_PREDIAL_2024_oca.txt,4719,10557,15043,1.0,False,False,SECCIÓN PRIMERA,SECCIÓN SEGUNDA E
-2024,PURÍSIMA DEL RINCÓN,purisima_del_rincon,025,ERO,2023_16362_Periodico_Numero_261_Septima_Parte_ocr.pdf,3,143,skipped,,,,GTO_PREDIAL_2024_purisima_del_rincon.txt,2453,-1,-1,0.0,False,False,,
-2024,SALAMANCA,salamanca,027,ERO,2023_16362_Periodico_Numero_261_Septima_Parte_ocr.pdf,144,284,skipped,,,,GTO_PREDIAL_2024_salamanca.txt,2783,-1,-1,0.0,False,False,,
-2024,SALVATIERRA,salvatierra,028,ERO,2023_16363_Periodico_Numero_261_Octava_Parte_ocr.pdf,3,172,skipped,,,,GTO_PREDIAL_2024_salvatierra.txt,2836,-1,-1,0.0,False,False,,
-2024,SAN FELIPE,san_felipe,030,ERO,2023_16364_Periodico_Numero_261_Novena_Parte_ocr.pdf,3,256,true,seccion_predial,30,40,GTO_PREDIAL_2024_san_felipe.txt,4678,13667,18107,1.0,False,False,SECCIÓN PRIMERA,SECCIÓN SEGUNDA
-2024,Victoria,victoria,043,ERO,2023_16366_Periodico_Numero_261_Decima_Tercera_Parte_ocr.pdf,3,204,skipped,,,,GTO_PREDIAL_2024_victoria.txt,8336,-1,-1,0.0,False,False,,
-2024,URIANGA,uriangato,041,ERO,2023_16367_Periodico_Numero_261_Decima_Segunda_Parte_ocr.pdf,46,168,skipped,,,,GTO_PREDIAL_2024_uriangato.txt,9935,-1,-1,0.0,False,False,,
-2024,"San Luis de la
-Paz",san_luis_de_la_paz,033,ERO,2023_16370_Periodico_Numero_261_Decima_Parte_ocr.pdf,3,98,true,seccion_predial,18,29,GTO_PREDIAL_2024_san_luis_de_la_paz.txt,7214,12521,19490,1.0,False,False,SECCIÓN PRIMERA —,SECCIÓN SEGUNDA
-2024,Santiago Maravatío,santiago_maravatio,036,ERO,2023_16370_Periodico_Numero_261_Decima_Parte_ocr.pdf,99,176,true,seccion_predial,129,137,GTO_PREDIAL_2024_santiago_maravatio.txt,4464,23066,27281,1.0,False,False,SECCIÓN PRIMERA,SECCIÓN SEGUNDA
-2024,Irapuato,irapuato,017,ERO,2023_16371_Periodico_Numero_261_Cuarta_Parte_ocr.pdf,3,232,skipped,,,,GTO_PREDIAL_2024_irapuato.txt,15776,-1,-1,0.0,False,False,,
-2024,Guanajuato,guanajuato,015,ERO,2023_16372_Periodico_Numero_261_Tercera_Parte_ocr.pdf,3,132,skipped,,,,GTO_PREDIAL_2024_guanajuato.txt,18350,-1,-1,0.0,False,False,,
-2024,Abasolo,abasolo,001,ERO,2023_16390_Periodico_Numero_261_Decima_Cuarta_Parte_ocr.pdf,3,216,skipped,,,,GTO_PREDIAL_2024_abasolo.txt,10524,-1,-1,0.0,False,False,,
-2024,Valle de Santiago.,valle_de_santiago,042,ERO,2023_16391_Periodico_Numero_261_Vigesima_Septima_Parte_ocr.pdf,3,232,skipped,,,,GTO_PREDIAL_2024_valle_de_santiago.txt,13252,-1,-1,0.0,False,False,,
-2024,"Apaseo el
-Grande",apaseo_el_grande,005,ERO,2023_16392_Periodico_Numero_261_Decima_Quinta_Parte_ocr.pdf,3,143,skipped,,,,GTO_PREDIAL_2024_apaseo_el_grande.txt,8712,-1,-1,0.0,False,False,,
-2024,ATARJEA,atarjea,006,ERO,2023_16392_Periodico_Numero_261_Decima_Quinta_Parte_ocr.pdf,144,176,skipped,,,,GTO_PREDIAL_2024_atarjea.txt,6360,-1,-1,0.0,False,False,,
-2024,MANUEL. DOBLADO,manuel_doblado,008,ERO,2023_16393_Periodico_Numero_261_Vigesima_Tercera_Parte_ocr.pdf,3,97,skipped,,,,GTO_PREDIAL_2024_manuel_doblado.txt,8798,-1,-1,0.0,False,False,,
-2024,MOROLEO,moroleon,021,ERO,2023_16393_Periodico_Numero_261_Vigesima_Tercera_Parte_ocr.pdf,98,220,skipped,,,,GTO_PREDIAL_2024_moroleon.txt,19234,-1,-1,0.0,False,False,,
-2024,León,leon,020,ERO,2023_16411_Periodico_Numero_261_Vigesima_Segunda_Parte_ocr.pdf,3,324,true,seccion_predial,35,228,GTO_PREDIAL_2024_leon.txt,142004,31343,173104,1.0,False,False,SECCIÓN PRIMERA,SECCIÓN SEGUNDA
-2024,Celaya,celaya,007,ERO,2023_16419_Periodico_Numero_261_Decima_Sexta_Parte_ocr.pdf,3,220,skipped,,,,GTO_PREDIAL_2024_celaya.txt,9472,-1,-1,0.0,False,False,,
-2024,DOCTOR MORA,doctor_mora,013,ERO,2023_16442_Periodico_Numero_261_Vigesima_Primera_Parte_ocr.pdf,3,272,skipped,,,,GTO_PREDIAL_2024_doctor_mora.txt,8027,-1,-1,0.0,False,False,,
-2024,PÉNJAMO,penjamo,023,ERO,2023_16446_Periodico_Numero_261_Vigesima_Cuarta_Parte_ocr.pdf,3,280,skipped,,,,GTO_PREDIAL_2024_penjamo.txt,9800,-1,-1,0.0,False,False,,
-2024,"Santa
-uanajuato",santa_uanajuato,???,ERO,2023_16449_Periodico_Numero_261_Vigesima_Sexta_Parte_ocr.pdf,3,192,true,seccion_predial,32,41,GTO_PREDIAL_2024_santa_uanajuato.txt,5422,22081,27252,1.0,False,False,SECCIÓN PRIMERA,| SECCIÓN SEGUNDA
-2024,León,leon,020,,2024_16458_Periodico_Numero_7_Segunda_Parte_ocr.pdf,4,124,skipped,,,,GTO_PREDIAL_2024_leon.txt,362,-1,-1,0.0,False,False,,
-2025,Abasolo,abasolo,001,ERO,2024_17194_Periódico_Número_261_Segunda_Parte_ocr.pdf,3,108,skipped,,,,GTO_PREDIAL_2025_abasolo.txt,2491,-1,-1,0.0,False,False,,
-2025,Acámbaro,acambaro,002,ERO,2024_17194_Periódico_Número_261_Segunda_Parte_ocr.pdf,109,212,skipped,,,,GTO_PREDIAL_2025_acambaro.txt,14578,-1,-1,0.0,False,False,,
-2025,APASEO EL ALTO,apaseo_el_alto,004,ERO,2024_17195_Periódico_Número_261_Tercera_Parte_ocr.pdf,3,98,skipped,,,,GTO_PREDIAL_2025_apaseo_el_alto.txt,16107,-1,-1,0.0,False,False,,
-2025,ato,ato,???,ERO,2024_17195_Periódico_Número_261_Tercera_Parte_ocr.pdf,99,260,true,seccion_predial,124,180,GTO_PREDIAL_2025_ato.txt,62310,15277,77352,1.0,False,False,SECCIÓN PRIMERA,SECCIÓN SEGUNDA
-2025,COMONFORT,comonfort,009,ERO,2024_17196_Periódico_Número_261_Novena_Parte_ocr.pdf,3,232,skipped,,,,GTO_PREDIAL_2025_comonfort.txt,2338,-1,-1,0.0,False,False,,
-2025,Cortazar,cortazar,011,ERO,2024_17197_Periódico_Número_261_Décima_Parte_ocr.pdf,3,292,skipped,,,,GTO_PREDIAL_2025_cortazar.txt,2819,-1,-1,0.0,False,False,,
-2025,IRAPUATO,irapuato,017,ERO,2024_17198_Periódico_Número_261_Décima_Segunda_Parte_ocr.pdf,3,200,skipped,,,,GTO_PREDIAL_2025_irapuato.txt,4156,-1,-1,0.0,False,False,,
-2025,PÉNJAMO,penjamo,023,ERO,2024_17201_Periódico_Número_261_Décima_Séptima_Parte_ocr.pdf,3,87,skipped,,,,GTO_PREDIAL_2025_penjamo.txt,9791,-1,-1,0.0,False,False,,
-2025,"PUE
+ARA EL MUNICIPIO DE LEÓN",2023,identidad_no_resuelta,2022_15519_Periodico_Numero_260_Decima_Quinta_Parte_ocr.pdf,3,200,True,seccion_predial,36,58,25331,40331,1.0,False,False,SECCIÓN PRIMERA,,,GTO_PREDIAL_2023_leon_fiscal_del_ano_2023_para_quedar_en_tos_siguientes_ara_el_municipio_de_leon.txt,15317
+11008,guanajuato,manuel_doblado,MANUEL DOBLADO,2023,ok,2022_15521_Periodico_Numero_260_Decima_Septima_Parte_ocr.pdf,3,93,True,,,,-1,-1,0.0,False,False,,,,GTO_PREDIAL_2023_manuel_doblado.txt,9270
+,guanajuato,mo,MO,2023,identidad_no_resuelta,2022_15521_Periodico_Numero_260_Decima_Septima_Parte_ocr.pdf,94,256,True,seccion_predial,140,157,33829,45686,1.0,False,False,SECCIÓN PRIMERA,. SECCIÓN SEGUNDA,,GTO_PREDIAL_2023_mo.txt,12098
+,guanajuato,pues,PUES,2023,identidad_no_resuelta,2022_15522_Periodico_Numero_260_Decima_Octava_Parte_ocr.pdf,82,288,True,seccion_predial,97,104,12969,17725,1.0,False,False,SECCIÓN PRIMERA,SECCIÓN SEGUNDA a,,GTO_PREDIAL_2023_pues.txt,4997
+11032,guanajuato,san_jose_de_iturbide,SAN JOSÉ ITURBIDE,2023,ok,2022_15524_Periódico_Numero_260_Vigésima_Parte_ocr.pdf,127,224,True,,,,-1,-1,0.0,False,False,,,,GTO_PREDIAL_2023_san_jose_de_iturbide.txt,10063
+11033,guanajuato,san_luis_de_la_paz,SAN LUIS DE LA PAZ,2023,ok,2022_15525_Periodico_Numero_260_Vigesima_Primera_Parte_ocr.pdf,3,95,True,,,,-1,-1,0.0,False,False,,,,GTO_PREDIAL_2023_san_luis_de_la_paz.txt,8184
+,guanajuato,sa_1_ingresos_administracion_centralizada,"SA
+1. ingresos administración centralizada.",2023,identidad_no_resuelta,2022_15525_Periodico_Numero_260_Vigesima_Primera_Parte_ocr.pdf,96,212,True,seccion_predial,121,132,27403,34011,1.0,False,False,SECCIÓN PRIMERA,SECCIÓN SEGUNDA,,GTO_PREDIAL_2023_sa_1_ingresos_administracion_centralizada.txt,6892
+,guanajuato,san_rosas,"SAN
+ROSAS",2023,identidad_no_resuelta,2022_15526_Periodico_Numero_260_Vigesima_Segunda_Parte_ocr.pdf,64,232,True,seccion_predial,91,101,22330,27804,1.0,False,False,SECCIÓN PRIMERA,SECCIÓN SEGUNDA,,GTO_PREDIAL_2023_san_rosas.txt,5723
+11039,guanajuato,tarimoro,TARIMORO,2023,ok,2022_15527_Periodico_Numero_260_Vigesima_Tercera_Parte_ocr.pdf,124,280,True,,,,-1,-1,0.0,False,False,,,,GTO_PREDIAL_2023_tarimoro.txt,9230
+11041,guanajuato,uriangato,Uriangato,2023,ok,2022_15528_Periodico_Numero_260_Vigesima_Cuarta_Parte_ocr.pdf,3,300,True,,,,-1,-1,0.0,False,False,,,,GTO_PREDIAL_2023_uriangato.txt,12966
+11043,guanajuato,victoria,Victoria,2023,ok,2022_15529_Periodico_Numero_260_Vigesima_Quinta_Parte_ocr.pdf,3,228,True,,,,-1,-1,0.0,False,False,,,,GTO_PREDIAL_2023_victoria.txt,8066
+11009,guanajuato,comonfort,COMONFORT,2023,ok,2022_15530_Periodico_Numero_260_Décima_Primera_Parte_ocr.pdf,3,284,True,,,,-1,-1,0.0,False,False,,,,GTO_PREDIAL_2023_comonfort.txt,11422
+11012,guanajuato,cueramaro,CUERÁMARO,2023,ok,2022_15531_Periodico_Numero_260_Décima_Segunda_Parte_ocr.pdf,3,129,True,,,,-1,-1,0.0,False,False,,,,GTO_PREDIAL_2023_cueramaro.txt,8621
+11014,guanajuato,dolores_hidalgo_cuna_de_la_independencia_nacional,"DOLORES HIDALGO CUNA DE LA.
+INDEPENDENCIA NACIONAL",2023,ok,2022_15531_Periodico_Numero_260_Décima_Segunda_Parte_ocr.pdf,130,316,True,,,,-1,-1,0.0,False,False,,,,GTO_PREDIAL_2023_dolores_hidalgo_cuna_de_la_independencia_nacional.txt,9705
+11001,guanajuato,abasolo,ABASOLO,2023,ok,2022_15541_Periodico_Numero_260_Quinta_Parte_ocr.pdf,3,192,True,,,,-1,-1,0.0,False,False,,,,GTO_PREDIAL_2023_abasolo.txt,10183
+11027,guanajuato,salamanca,Salamanca,2023,ok,2022_15578_Periodico_Numero_260_Décima_Novena_Parte_ocr.pdf,3,133,True,,,,-1,-1,0.0,False,False,,,,GTO_PREDIAL_2023_salamanca.txt,9973
+11028,guanajuato,salvatierra,SALVATIERRA,2023,ok,2022_15578_Periodico_Numero_260_Décima_Novena_Parte_ocr.pdf,134,328,True,,,,-1,-1,0.0,False,False,,,,GTO_PREDIAL_2023_salvatierra.txt,9914
+11018,guanajuato,jaral_del_progreso,JARAL DEL PROGRESO,2024,ok,2023_16360_Periodico_Numero_261_Sexta_Parte_ocr.pdf,3,87,True,,,,-1,-1,0.0,False,False,,,,GTO_PREDIAL_2024_jaral_del_progreso.txt,3021
+,guanajuato,oca,OCA,2024,identidad_no_resuelta,2023_16360_Periodico_Numero_261_Sexta_Parte_ocr.pdf,88,208,True,seccion_predial,103,110,10557,15043,1.0,False,False,SECCIÓN PRIMERA,SECCIÓN SEGUNDA E,,GTO_PREDIAL_2024_oca.txt,4719
+11025,guanajuato,purisima_del_rincon,PURÍSIMA DEL RINCÓN,2024,ok,2023_16362_Periodico_Numero_261_Septima_Parte_ocr.pdf,3,143,True,,,,-1,-1,0.0,False,False,,,,GTO_PREDIAL_2024_purisima_del_rincon.txt,2453
+11027,guanajuato,salamanca,SALAMANCA,2024,ok,2023_16362_Periodico_Numero_261_Septima_Parte_ocr.pdf,144,284,True,,,,-1,-1,0.0,False,False,,,,GTO_PREDIAL_2024_salamanca.txt,2783
+11028,guanajuato,salvatierra,SALVATIERRA,2024,ok,2023_16363_Periodico_Numero_261_Octava_Parte_ocr.pdf,3,172,True,,,,-1,-1,0.0,False,False,,,,GTO_PREDIAL_2024_salvatierra.txt,2836
+11030,guanajuato,san_felipe,SAN FELIPE,2024,ok,2023_16364_Periodico_Numero_261_Novena_Parte_ocr.pdf,3,256,True,seccion_predial,30,40,13667,18107,1.0,False,False,SECCIÓN PRIMERA,SECCIÓN SEGUNDA,,GTO_PREDIAL_2024_san_felipe.txt,4678
+11043,guanajuato,victoria,Victoria,2024,ok,2023_16366_Periodico_Numero_261_Decima_Tercera_Parte_ocr.pdf,3,204,True,,,,-1,-1,0.0,False,False,,,,GTO_PREDIAL_2024_victoria.txt,8336
+11041,guanajuato,uriangato,URIANGA,2024,ok,2023_16367_Periodico_Numero_261_Decima_Segunda_Parte_ocr.pdf,46,168,True,,,,-1,-1,0.0,False,False,,,,GTO_PREDIAL_2024_uriangato.txt,9935
+11033,guanajuato,san_luis_de_la_paz,"San Luis de la
+Paz",2024,ok,2023_16370_Periodico_Numero_261_Decima_Parte_ocr.pdf,3,98,True,seccion_predial,18,29,12521,19490,1.0,False,False,SECCIÓN PRIMERA —,SECCIÓN SEGUNDA,,GTO_PREDIAL_2024_san_luis_de_la_paz.txt,7214
+11036,guanajuato,santiago_maravatio,Santiago Maravatío,2024,ok,2023_16370_Periodico_Numero_261_Decima_Parte_ocr.pdf,99,176,True,seccion_predial,129,137,23066,27281,1.0,False,False,SECCIÓN PRIMERA,SECCIÓN SEGUNDA,,GTO_PREDIAL_2024_santiago_maravatio.txt,4464
+11017,guanajuato,irapuato,Irapuato,2024,ok,2023_16371_Periodico_Numero_261_Cuarta_Parte_ocr.pdf,3,232,True,,,,-1,-1,0.0,False,False,,,,GTO_PREDIAL_2024_irapuato.txt,15776
+11015,guanajuato,guanajuato,Guanajuato,2024,ok,2023_16372_Periodico_Numero_261_Tercera_Parte_ocr.pdf,3,132,True,,,,-1,-1,0.0,False,False,,,,GTO_PREDIAL_2024_guanajuato.txt,18350
+11001,guanajuato,abasolo,Abasolo,2024,ok,2023_16390_Periodico_Numero_261_Decima_Cuarta_Parte_ocr.pdf,3,216,True,,,,-1,-1,0.0,False,False,,,,GTO_PREDIAL_2024_abasolo.txt,10524
+11042,guanajuato,valle_de_santiago,Valle de Santiago.,2024,ok,2023_16391_Periodico_Numero_261_Vigesima_Septima_Parte_ocr.pdf,3,232,True,,,,-1,-1,0.0,False,False,,,,GTO_PREDIAL_2024_valle_de_santiago.txt,13252
+11005,guanajuato,apaseo_el_grande,"Apaseo el
+Grande",2024,ok,2023_16392_Periodico_Numero_261_Decima_Quinta_Parte_ocr.pdf,3,143,True,,,,-1,-1,0.0,False,False,,,,GTO_PREDIAL_2024_apaseo_el_grande.txt,8712
+11006,guanajuato,atarjea,ATARJEA,2024,ok,2023_16392_Periodico_Numero_261_Decima_Quinta_Parte_ocr.pdf,144,176,True,,,,-1,-1,0.0,False,False,,,,GTO_PREDIAL_2024_atarjea.txt,6360
+11008,guanajuato,manuel_doblado,MANUEL. DOBLADO,2024,ok,2023_16393_Periodico_Numero_261_Vigesima_Tercera_Parte_ocr.pdf,3,97,True,,,,-1,-1,0.0,False,False,,,,GTO_PREDIAL_2024_manuel_doblado.txt,8798
+11021,guanajuato,moroleon,MOROLEO,2024,ok,2023_16393_Periodico_Numero_261_Vigesima_Tercera_Parte_ocr.pdf,98,220,True,,,,-1,-1,0.0,False,False,,,,GTO_PREDIAL_2024_moroleon.txt,19234
+11020,guanajuato,leon,León,2024,ok,2023_16411_Periodico_Numero_261_Vigesima_Segunda_Parte_ocr.pdf,3,324,True,seccion_predial,35,228,31343,173104,1.0,False,False,SECCIÓN PRIMERA,SECCIÓN SEGUNDA,,GTO_PREDIAL_2024_leon.txt,142004
+11007,guanajuato,celaya,Celaya,2024,ok,2023_16419_Periodico_Numero_261_Decima_Sexta_Parte_ocr.pdf,3,220,True,,,,-1,-1,0.0,False,False,,,,GTO_PREDIAL_2024_celaya.txt,9472
+11013,guanajuato,doctor_mora,DOCTOR MORA,2024,ok,2023_16442_Periodico_Numero_261_Vigesima_Primera_Parte_ocr.pdf,3,272,True,,,,-1,-1,0.0,False,False,,,,GTO_PREDIAL_2024_doctor_mora.txt,8027
+11023,guanajuato,penjamo,PÉNJAMO,2024,ok,2023_16446_Periodico_Numero_261_Vigesima_Cuarta_Parte_ocr.pdf,3,280,True,,,,-1,-1,0.0,False,False,,,,GTO_PREDIAL_2024_penjamo.txt,9800
+,guanajuato,santa_uanajuato,"Santa
+uanajuato",2024,identidad_no_resuelta,2023_16449_Periodico_Numero_261_Vigesima_Sexta_Parte_ocr.pdf,3,192,True,seccion_predial,32,41,22081,27252,1.0,False,False,SECCIÓN PRIMERA,| SECCIÓN SEGUNDA,,GTO_PREDIAL_2024_santa_uanajuato.txt,5422
+11020,guanajuato,leon,León,2024,ok,2024_16458_Periodico_Numero_7_Segunda_Parte_ocr.pdf,4,124,True,,,,-1,-1,0.0,False,False,,,,GTO_PREDIAL_2024_leon.txt,362
+11001,guanajuato,abasolo,Abasolo,2025,ok,2024_17194_Periódico_Número_261_Segunda_Parte_ocr.pdf,3,108,True,,,,-1,-1,0.0,False,False,,,,GTO_PREDIAL_2025_abasolo.txt,2491
+11002,guanajuato,acambaro,Acámbaro,2025,ok,2024_17194_Periódico_Número_261_Segunda_Parte_ocr.pdf,109,212,True,,,,-1,-1,0.0,False,False,,,,GTO_PREDIAL_2025_acambaro.txt,14578
+11004,guanajuato,apaseo_el_alto,APASEO EL ALTO,2025,ok,2024_17195_Periódico_Número_261_Tercera_Parte_ocr.pdf,3,98,True,,,,-1,-1,0.0,False,False,,,,GTO_PREDIAL_2025_apaseo_el_alto.txt,16107
+,guanajuato,ato,ato,2025,identidad_no_resuelta,2024_17195_Periódico_Número_261_Tercera_Parte_ocr.pdf,99,260,True,seccion_predial,124,180,15277,77352,1.0,False,False,SECCIÓN PRIMERA,SECCIÓN SEGUNDA,,GTO_PREDIAL_2025_ato.txt,62310
+11009,guanajuato,comonfort,COMONFORT,2025,ok,2024_17196_Periódico_Número_261_Novena_Parte_ocr.pdf,3,232,True,,,,-1,-1,0.0,False,False,,,,GTO_PREDIAL_2025_comonfort.txt,2338
+11011,guanajuato,cortazar,Cortazar,2025,ok,2024_17197_Periódico_Número_261_Décima_Parte_ocr.pdf,3,292,True,,,,-1,-1,0.0,False,False,,,,GTO_PREDIAL_2025_cortazar.txt,2819
+11017,guanajuato,irapuato,IRAPUATO,2025,ok,2024_17198_Periódico_Número_261_Décima_Segunda_Parte_ocr.pdf,3,200,True,,,,-1,-1,0.0,False,False,,,,GTO_PREDIAL_2025_irapuato.txt,4156
+11023,guanajuato,penjamo,PÉNJAMO,2025,ok,2024_17201_Periódico_Número_261_Décima_Séptima_Parte_ocr.pdf,3,87,True,,,,-1,-1,0.0,False,False,,,,GTO_PREDIAL_2025_penjamo.txt,9791
+,guanajuato,pue_articulo_1_la_presente_ley_es_de_orden_publico_establecer_los_ingresos_que_percibira_la_hacienda_publica_del_m_nuevo,"PUE
 Artículo 1 La presente Ley es de orden público,
 establecer los ingresos que percibirá la Hacienda Pública del M
-Nuevo",pue_articulo_1_la_presente_ley_es_de_orden_publico_establecer_los_ingresos_que_percibira_la_hacienda_publica_del_m_nuevo,???,ERO,2024_17201_Periódico_Número_261_Décima_Séptima_Parte_ocr.pdf,88,268,true,seccion_predial,104,119,GTO_PREDIAL_2025_pue_articulo_1_la_presente_ley_es_de_orden_publico_establecer_los_ingresos_que_p.txt,7992,7095,14727,1.0,False,False,SECCIÓN PRIMERA,SECCIÓN SEGUNDA
-2025,ROMITA,romita,026,ERO,2024_17202_Periódico_Número_261_Décima_Octava_Parte_ocr.pdf,3,76,skipped,,,,GTO_PREDIAL_2025_romita.txt,2971,-1,-1,0.0,False,False,,
-2025,Salamanca,salamanca,027,ERO,2024_17202_Periódico_Número_261_Décima_Octava_Parte_ocr.pdf,77,264,skipped,,,,GTO_PREDIAL_2025_salamanca.txt,21893,-1,-1,0.0,False,False,,
-2025,"San Luis de
-la Paz",san_luis_de_la_paz,033,ERO,2024_17212_Periódico_Número_261_Vigésima_Primera_Parte_ocr.pdf,3,228,skipped,,,,GTO_PREDIAL_2025_san_luis_de_la_paz.txt,11582,-1,-1,0.0,False,False,,
-2025,SANTA CATARINA,santa_catarina,034,ERO,2024_17213_Periódico_Número_261_Vigésima_Segunda_Parte_ocr.pdf,3,160,skipped,,,,GTO_PREDIAL_2025_santa_catarina.txt,4326,-1,-1,0.0,False,False,,
-2025,"Santiago
-ATO",santiago_ato,???,ERO,2024_17213_Periódico_Número_261_Vigésima_Segunda_Parte_ocr.pdf,161,236,true,seccion_predial,187,196,GTO_PREDIAL_2025_santiago_ato.txt,5148,20575,25469,1.0,False,False,SECCIÓN PRIMERA,SECCIÓN SEGUNDA
-2025,TARIMORO,tarimoro,039,ERO,2024_17215_Periódico_Número_261_Vigésima_Cuarta_Parte_ocr.pdf,3,217,skipped,,,,GTO_PREDIAL_2025_tarimoro.txt,8124,-1,-1,0.0,False,False,,
-2025,"Valle de
-Santiago",valle_de_santiago,042,ERO,2024_17215_Periódico_Número_261_Vigésima_Cuarta_Parte_ocr.pdf,218,218,skipped,,,,GTO_PREDIAL_2025_valle_de_santiago.txt,10355,-1,-1,0.0,False,False,,
-2025,"Valle de Estimado
-5",valle_de_estimado_5,???,ERO,2024_17215_Periódico_Número_261_Vigésima_Cuarta_Parte_ocr.pdf,219,219,fallback,fallback_18pp,219,219,GTO_PREDIAL_2025_valle_de_estimado_5.txt,751,-1,-1,0.0,False,False,,
-2023,"Valle de
-Santiago",valle_de_santiago,042,ERO,2024_17215_Periódico_Número_261_Vigésima_Cuarta_Parte_ocr.pdf,220,224,fallback,fallback_18pp,220,224,GTO_PREDIAL_2023_valle_de_santiago.txt,4935,-1,-1,0.0,False,False,,
-2025,"Valle de Estimado
-y",valle_de_estimado_y,???,ERO,2024_17215_Periódico_Número_261_Vigésima_Cuarta_Parte_ocr.pdf,225,226,fallback,fallback_18pp,225,226,GTO_PREDIAL_2025_valle_de_estimado_y.txt,1967,-1,-1,0.0,False,False,,
-2025,"Valle de Estimado
-o",valle_de_estimado_o,???,ERO,2024_17215_Periódico_Número_261_Vigésima_Cuarta_Parte_ocr.pdf,227,228,fallback,fallback_18pp,227,228,GTO_PREDIAL_2025_valle_de_estimado_o.txt,2106,-1,-1,0.0,False,False,,
-2025,"Valle de Estimado
-E go",valle_de_estimado_e_go,???,ERO,2024_17215_Periódico_Número_261_Vigésima_Cuarta_Parte_ocr.pdf,229,292,true,seccion_predial,230,239,GTO_PREDIAL_2025_valle_de_estimado_e_go.txt,8747,1271,9755,1.0,False,False,SECCIÓN PRIMERA,SECCIÓN SEGUNDA
-2025,VICTORIA,victoria,043,ERO,2024_17216_Periódico_Número_261_Vigésima_Quinta_Parte_ocr.pdf,3,173,skipped,,,,GTO_PREDIAL_2025_victoria.txt,7863,-1,-1,0.0,False,False,,
-2025,YU sn,yu_sn,???,ERO,2024_17216_Periódico_Número_261_Vigésima_Quinta_Parte_ocr.pdf,174,228,true,seccion_predial,186,192,GTO_PREDIAL_2025_yu_sn.txt,4542,8396,12692,1.0,False,False,SECCIÓN PRIMERA,SECCIÓN SEGUNDA
-2025,CELAYA,celaya,007,ERO,2024_17223_Periódico_Número_261_Cuarta_Parte_ocr.pdf,3,216,true,seccion_predial,101,126,GTO_PREDIAL_2025_celaya.txt,15237,28851,43851,1.0,False,False,SECCIÓN ÚNICA,
-2025,Guanajuato,guanajuato,015,ERO,2024_17228_Periódico_Número_261_Décima_Primera_Parte_ocr.pdf,3,127,skipped,,,,GTO_PREDIAL_2025_guanajuato.txt,18948,-1,-1,0.0,False,False,,
-2025,RU HARO,ru_haro,???,ERO,2024_17228_Periódico_Número_261_Décima_Primera_Parte_ocr.pdf,128,200,fallback,fallback_18pp,128,145,GTO_PREDIAL_2025_ru_haro.txt,6470,-1,-1,0.0,False,False,,
-2025,JARAL DEL PROGRESO,jaral_del_progreso,018,ERO,2024_17229_Periódico_Número_261_Décima_Cuarta_Parte_ocr.pdf,3,256,skipped,,,,GTO_PREDIAL_2025_jaral_del_progreso.txt,8108,-1,-1,0.0,False,False,,
-2025,"Manuel
-Doblado",manuel_doblado,008,ERO,2024_17241_Periódico_Número_261_Décima_Sexta_Parte_ocr.pdf,3,81,skipped,,,,GTO_PREDIAL_2025_manuel_doblado.txt,8386,-1,-1,0.0,False,False,,
-2025,"MO
+Nuevo",2025,identidad_no_resuelta,2024_17201_Periódico_Número_261_Décima_Séptima_Parte_ocr.pdf,88,268,True,seccion_predial,104,119,7095,14727,1.0,False,False,SECCIÓN PRIMERA,SECCIÓN SEGUNDA,,GTO_PREDIAL_2025_pue_articulo_1_la_presente_ley_es_de_orden_publico_establecer_los_ingresos_que_p.txt,7992
+11026,guanajuato,romita,ROMITA,2025,ok,2024_17202_Periódico_Número_261_Décima_Octava_Parte_ocr.pdf,3,76,True,,,,-1,-1,0.0,False,False,,,,GTO_PREDIAL_2025_romita.txt,2971
+11027,guanajuato,salamanca,Salamanca,2025,ok,2024_17202_Periódico_Número_261_Décima_Octava_Parte_ocr.pdf,77,264,True,,,,-1,-1,0.0,False,False,,,,GTO_PREDIAL_2025_salamanca.txt,21893
+11033,guanajuato,san_luis_de_la_paz,"San Luis de
+la Paz",2025,ok,2024_17212_Periódico_Número_261_Vigésima_Primera_Parte_ocr.pdf,3,228,True,,,,-1,-1,0.0,False,False,,,,GTO_PREDIAL_2025_san_luis_de_la_paz.txt,11582
+11034,guanajuato,santa_catarina,SANTA CATARINA,2025,ok,2024_17213_Periódico_Número_261_Vigésima_Segunda_Parte_ocr.pdf,3,160,True,,,,-1,-1,0.0,False,False,,,,GTO_PREDIAL_2025_santa_catarina.txt,4326
+,guanajuato,santiago_ato,"Santiago
+ATO",2025,identidad_no_resuelta,2024_17213_Periódico_Número_261_Vigésima_Segunda_Parte_ocr.pdf,161,236,True,seccion_predial,187,196,20575,25469,1.0,False,False,SECCIÓN PRIMERA,SECCIÓN SEGUNDA,,GTO_PREDIAL_2025_santiago_ato.txt,5148
+11039,guanajuato,tarimoro,TARIMORO,2025,ok,2024_17215_Periódico_Número_261_Vigésima_Cuarta_Parte_ocr.pdf,3,217,True,,,,-1,-1,0.0,False,False,,,,GTO_PREDIAL_2025_tarimoro.txt,8124
+11042,guanajuato,valle_de_santiago,"Valle de
+Santiago",2025,ok,2024_17215_Periódico_Número_261_Vigésima_Cuarta_Parte_ocr.pdf,218,218,True,,,,-1,-1,0.0,False,False,,,,GTO_PREDIAL_2025_valle_de_santiago.txt,10355
+,guanajuato,valle_de_estimado_5,"Valle de Estimado
+5",2025,identidad_no_resuelta,2024_17215_Periódico_Número_261_Vigésima_Cuarta_Parte_ocr.pdf,219,219,True,fallback_18pp,219,219,-1,-1,0.0,False,False,,,,GTO_PREDIAL_2025_valle_de_estimado_5.txt,751
+11042,guanajuato,valle_de_santiago,"Valle de
+Santiago",2023,ok,2024_17215_Periódico_Número_261_Vigésima_Cuarta_Parte_ocr.pdf,220,224,True,fallback_18pp,220,224,-1,-1,0.0,False,False,,,,GTO_PREDIAL_2023_valle_de_santiago.txt,4935
+,guanajuato,valle_de_estimado_y,"Valle de Estimado
+y",2025,identidad_no_resuelta,2024_17215_Periódico_Número_261_Vigésima_Cuarta_Parte_ocr.pdf,225,226,True,fallback_18pp,225,226,-1,-1,0.0,False,False,,,,GTO_PREDIAL_2025_valle_de_estimado_y.txt,1967
+,guanajuato,valle_de_estimado_o,"Valle de Estimado
+o",2025,identidad_no_resuelta,2024_17215_Periódico_Número_261_Vigésima_Cuarta_Parte_ocr.pdf,227,228,True,fallback_18pp,227,228,-1,-1,0.0,False,False,,,,GTO_PREDIAL_2025_valle_de_estimado_o.txt,2106
+,guanajuato,valle_de_estimado_e_go,"Valle de Estimado
+E go",2025,identidad_no_resuelta,2024_17215_Periódico_Número_261_Vigésima_Cuarta_Parte_ocr.pdf,229,292,True,seccion_predial,230,239,1271,9755,1.0,False,False,SECCIÓN PRIMERA,SECCIÓN SEGUNDA,,GTO_PREDIAL_2025_valle_de_estimado_e_go.txt,8747
+11043,guanajuato,victoria,VICTORIA,2025,ok,2024_17216_Periódico_Número_261_Vigésima_Quinta_Parte_ocr.pdf,3,173,True,,,,-1,-1,0.0,False,False,,,,GTO_PREDIAL_2025_victoria.txt,7863
+,guanajuato,yu_sn,YU sn,2025,identidad_no_resuelta,2024_17216_Periódico_Número_261_Vigésima_Quinta_Parte_ocr.pdf,174,228,True,seccion_predial,186,192,8396,12692,1.0,False,False,SECCIÓN PRIMERA,SECCIÓN SEGUNDA,,GTO_PREDIAL_2025_yu_sn.txt,4542
+11007,guanajuato,celaya,CELAYA,2025,ok,2024_17223_Periódico_Número_261_Cuarta_Parte_ocr.pdf,3,216,True,seccion_predial,101,126,28851,43851,1.0,False,False,SECCIÓN ÚNICA,,,GTO_PREDIAL_2025_celaya.txt,15237
+11015,guanajuato,guanajuato,Guanajuato,2025,ok,2024_17228_Periódico_Número_261_Décima_Primera_Parte_ocr.pdf,3,127,True,,,,-1,-1,0.0,False,False,,,,GTO_PREDIAL_2025_guanajuato.txt,18948
+,guanajuato,ru_haro,RU HARO,2025,identidad_no_resuelta,2024_17228_Periódico_Número_261_Décima_Primera_Parte_ocr.pdf,128,200,True,fallback_18pp,128,145,-1,-1,0.0,False,False,,,,GTO_PREDIAL_2025_ru_haro.txt,6470
+11018,guanajuato,jaral_del_progreso,JARAL DEL PROGRESO,2025,ok,2024_17229_Periódico_Número_261_Décima_Cuarta_Parte_ocr.pdf,3,256,True,,,,-1,-1,0.0,False,False,,,,GTO_PREDIAL_2025_jaral_del_progreso.txt,8108
+11008,guanajuato,manuel_doblado,"Manuel
+Doblado",2025,ok,2024_17241_Periódico_Número_261_Décima_Sexta_Parte_ocr.pdf,3,81,True,,,,-1,-1,0.0,False,False,,,,GTO_PREDIAL_2025_manuel_doblado.txt,8386
+,guanajuato,mo_z_ingresos_administracion_centralizada_decreto_mumero_23,"MO
 Z. Ingresos Administración Centralizada
-DECRETO MÚMERO 23",mo_z_ingresos_administracion_centralizada_decreto_mumero_23,???,ERO,2024_17241_Periódico_Número_261_Décima_Sexta_Parte_ocr.pdf,82,205,true,seccion_predial,119,134,GTO_PREDIAL_2025_mo_z_ingresos_administracion_centralizada_decreto_mumero_23.txt,12328,32593,44624,1.0,False,False,SECCIÓN PRIMERA,SECCIÓN SEGUNDA
-2025,OC 4,oc_4,???,ERO,2024_17241_Periódico_Número_261_Décima_Sexta_Parte_ocr.pdf,206,280,true,seccion_predial,217,224,GTO_PREDIAL_2025_oc_4.txt,4732,11165,15655,1.0,False,False,SECCIÓN PRIMERA,SECCIÓN SEGUNDA
-2025,SAN DIEGO DE LA UNIÓN,san_diego_de_la_union,029,ERO,2024_17242_Periódico_Número_261_Décima_Novena_Parte_ocr.pdf,3,212,skipped,,,,GTO_PREDIAL_2025_san_diego_de_la_union.txt,2280,-1,-1,0.0,False,False,,
-2026,ACÁMBARO,acambaro,002,ERO,2025_17971_Periódico_Número_260_Segunda_Parte.pdf,3,216,skipped,,,,GTO_PREDIAL_2026_acambaro.txt,956,-1,-1,0.0,False,False,,
-2026,PURÍSIMA DEL RINCÓN,purisima_del_rincon,025,ERO,2025_17973_Periódico_Número_260_Décima_Quinta_Parte.pdf,3,268,skipped,,,,GTO_PREDIAL_2026_purisima_del_rincon.txt,2337,-1,-1,0.0,False,False,,
-2026,SALVATIERRA,salvatierra,028,ERO,2025_17974_Periódico_Número_260_Décima_Sexta_Parte.pdf,3,212,skipped,,,,GTO_PREDIAL_2026_salvatierra.txt,4115,-1,-1,0.0,False,False,,
-2026,"Silao de la 
-Victoria",silao_de_la_victoria,037,ERO,2025_17979_Periódico_Número_260_Vigésima_Quinta_Parte.pdf,3,272,skipped,,,,GTO_PREDIAL_2026_silao_de_la_victoria.txt,1132,-1,-1,0.0,False,False,,
-2026,Cortazar,cortazar,011,ERO,2025_17981_Periódico_Número_260_Octava_Parte.pdf,138,232,skipped,,,,GTO_PREDIAL_2026_cortazar.txt,2826,-1,-1,0.0,False,False,,
-2026,CUERÁMARO,cueramaro,012,ERO,2025_17982_Periódico_Número_260_Novena_Parte.pdf,3,128,skipped,,,,GTO_PREDIAL_2026_cueramaro.txt,2546,-1,-1,0.0,False,False,,
-2026,"DOLORES HIDALGO CUNA DE LA 
-INDEPENDENCIA NACIONAL",dolores_hidalgo_cuna_de_la_independencia_nacional,014,ERO,2025_17982_Periódico_Número_260_Novena_Parte.pdf,129,248,skipped,,,,GTO_PREDIAL_2026_dolores_hidalgo_cuna_de_la_independencia_nacional.txt,2778,-1,-1,0.0,False,False,,
-2026,Guanajuato,guanajuato,015,ERO,2025_17983_Periódico_Número_260_Décima_Parte.pdf,3,130,skipped,,,,GTO_PREDIAL_2026_guanajuato.txt,2736,-1,-1,0.0,False,False,,
-2026,Huanímaro,huanimaro,016,ERO,2025_17983_Periódico_Número_260_Décima_Parte.pdf,131,208,skipped,,,,GTO_PREDIAL_2026_huanimaro.txt,2482,-1,-1,0.0,False,False,,
-2026,IRAPUATO,irapuato,017,ERO,2025_17984_Periódico_Número_260_Décima_Primera_Parte.pdf,3,204,skipped,,,,GTO_PREDIAL_2026_irapuato.txt,2704,-1,-1,0.0,False,False,,
-2026,San Luis de la Paz,san_luis_de_la_paz,033,ERO,2025_17986_Periódico_Número_260_Décima_Octava_Parte.pdf,3,108,skipped,,,,GTO_PREDIAL_2026_san_luis_de_la_paz.txt,2853,-1,-1,0.0,False,False,,
-2026,SANTA CATARINA,santa_catarina,034,ERO,2025_17986_Periódico_Número_260_Décima_Octava_Parte.pdf,109,169,skipped,,,,GTO_PREDIAL_2026_santa_catarina.txt,3277,-1,-1,0.0,False,False,,
-2026,"Santa Cruz de Juventino 
-Rosas",santa_cruz_de_juventino_rosas,035,ER0,2025_17986_Periódico_Número_260_Décima_Octava_Parte.pdf,170,280,skipped,,,,GTO_PREDIAL_2026_santa_cruz_de_juventino_rosas.txt,2887,-1,-1,0.0,False,False,,
-2026,Atarjea,atarjea,006,ERO,2025_17987_Periódico_Número_260_Vigésima_Tercera_Parte.pdf,3,168,skipped,,,,GTO_PREDIAL_2026_atarjea.txt,2620,-1,-1,0.0,False,False,,
-2026,Moroleón,moroleon,021,ERO,2025_18008_Periódico_Número_260_Vigésima_Cuarta_Parte.pdf,3,252,skipped,,,,GTO_PREDIAL_2026_moroleon.txt,2861,-1,-1,0.0,False,False,,
+DECRETO MÚMERO 23",2025,identidad_no_resuelta,2024_17241_Periódico_Número_261_Décima_Sexta_Parte_ocr.pdf,82,205,True,seccion_predial,119,134,32593,44624,1.0,False,False,SECCIÓN PRIMERA,SECCIÓN SEGUNDA,,GTO_PREDIAL_2025_mo_z_ingresos_administracion_centralizada_decreto_mumero_23.txt,12328
+,guanajuato,oc_4,OC 4,2025,identidad_no_resuelta,2024_17241_Periódico_Número_261_Décima_Sexta_Parte_ocr.pdf,206,280,True,seccion_predial,217,224,11165,15655,1.0,False,False,SECCIÓN PRIMERA,SECCIÓN SEGUNDA,,GTO_PREDIAL_2025_oc_4.txt,4732
+11029,guanajuato,san_diego_de_la_union,SAN DIEGO DE LA UNIÓN,2025,ok,2024_17242_Periódico_Número_261_Décima_Novena_Parte_ocr.pdf,3,212,True,,,,-1,-1,0.0,False,False,,,,GTO_PREDIAL_2025_san_diego_de_la_union.txt,2280
+11002,guanajuato,acambaro,ACÁMBARO,2026,ok,2025_17971_Periódico_Número_260_Segunda_Parte.pdf,3,216,True,,,,-1,-1,0.0,False,False,,,,GTO_PREDIAL_2026_acambaro.txt,956
+11025,guanajuato,purisima_del_rincon,PURÍSIMA DEL RINCÓN,2026,ok,2025_17973_Periódico_Número_260_Décima_Quinta_Parte.pdf,3,268,True,,,,-1,-1,0.0,False,False,,,,GTO_PREDIAL_2026_purisima_del_rincon.txt,2337
+11028,guanajuato,salvatierra,SALVATIERRA,2026,ok,2025_17974_Periódico_Número_260_Décima_Sexta_Parte.pdf,3,212,True,,,,-1,-1,0.0,False,False,,,,GTO_PREDIAL_2026_salvatierra.txt,4115
+11037,guanajuato,silao_de_la_victoria,"Silao de la 
+Victoria",2026,ok,2025_17979_Periódico_Número_260_Vigésima_Quinta_Parte.pdf,3,272,True,,,,-1,-1,0.0,False,False,,,,GTO_PREDIAL_2026_silao_de_la_victoria.txt,1132
+11011,guanajuato,cortazar,Cortazar,2026,ok,2025_17981_Periódico_Número_260_Octava_Parte.pdf,138,232,True,,,,-1,-1,0.0,False,False,,,,GTO_PREDIAL_2026_cortazar.txt,2826
+11012,guanajuato,cueramaro,CUERÁMARO,2026,ok,2025_17982_Periódico_Número_260_Novena_Parte.pdf,3,128,True,,,,-1,-1,0.0,False,False,,,,GTO_PREDIAL_2026_cueramaro.txt,2546
+11014,guanajuato,dolores_hidalgo_cuna_de_la_independencia_nacional,"DOLORES HIDALGO CUNA DE LA 
+INDEPENDENCIA NACIONAL",2026,ok,2025_17982_Periódico_Número_260_Novena_Parte.pdf,129,248,True,,,,-1,-1,0.0,False,False,,,,GTO_PREDIAL_2026_dolores_hidalgo_cuna_de_la_independencia_nacional.txt,2778
+11015,guanajuato,guanajuato,Guanajuato,2026,ok,2025_17983_Periódico_Número_260_Décima_Parte.pdf,3,130,True,,,,-1,-1,0.0,False,False,,,,GTO_PREDIAL_2026_guanajuato.txt,2736
+11016,guanajuato,huanimaro,Huanímaro,2026,ok,2025_17983_Periódico_Número_260_Décima_Parte.pdf,131,208,True,,,,-1,-1,0.0,False,False,,,,GTO_PREDIAL_2026_huanimaro.txt,2482
+11017,guanajuato,irapuato,IRAPUATO,2026,ok,2025_17984_Periódico_Número_260_Décima_Primera_Parte.pdf,3,204,True,,,,-1,-1,0.0,False,False,,,,GTO_PREDIAL_2026_irapuato.txt,2704
+11033,guanajuato,san_luis_de_la_paz,San Luis de la Paz,2026,ok,2025_17986_Periódico_Número_260_Décima_Octava_Parte.pdf,3,108,True,,,,-1,-1,0.0,False,False,,,,GTO_PREDIAL_2026_san_luis_de_la_paz.txt,2853
+11034,guanajuato,santa_catarina,SANTA CATARINA,2026,ok,2025_17986_Periódico_Número_260_Décima_Octava_Parte.pdf,109,169,True,,,,-1,-1,0.0,False,False,,,,GTO_PREDIAL_2026_santa_catarina.txt,3277
+11035,guanajuato,santa_cruz_de_juventino_rosas,"Santa Cruz de Juventino 
+Rosas",2026,ok,2025_17986_Periódico_Número_260_Décima_Octava_Parte.pdf,170,280,True,,,,-1,-1,0.0,False,False,,,,GTO_PREDIAL_2026_santa_cruz_de_juventino_rosas.txt,2887
+11006,guanajuato,atarjea,Atarjea,2026,ok,2025_17987_Periódico_Número_260_Vigésima_Tercera_Parte.pdf,3,168,True,,,,-1,-1,0.0,False,False,,,,GTO_PREDIAL_2026_atarjea.txt,2620
+11021,guanajuato,moroleon,Moroleón,2026,ok,2025_18008_Periódico_Número_260_Vigésima_Cuarta_Parte.pdf,3,252,True,,,,-1,-1,0.0,False,False,,,,GTO_PREDIAL_2026_moroleon.txt,2861

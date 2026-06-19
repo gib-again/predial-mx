@@ -100,6 +100,9 @@ def run_estado(
                 limit=limit,
                 source_csv=source_csv,
             )
+            # Tras segmentar, normalizar segment.csv al esquema único (cvegeo).
+            if step == "segment":
+                adapter.canonicalize_segment()
         except Exception as e:
             print(f"\n  [ERROR] {step}: {e}")
             raise

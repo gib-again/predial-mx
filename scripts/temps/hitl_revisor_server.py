@@ -23,7 +23,6 @@ import argparse
 import csv
 import json
 import os
-import re
 import tempfile
 import threading
 import webbrowser
@@ -34,18 +33,21 @@ from urllib.parse import quote, unquote
 from flask import Flask, abort, jsonify, redirect, request, url_for
 from werkzeug.exceptions import HTTPException
 
-from src.core.constants import EJERCICIO_FIN, EJERCICIO_INI, PREFIJOS_ESTADO
+from src.core.catalog import cvegeo_to_nombre
+from src.core.constants import (
+    EJERCICIO_FIN,
+    EJERCICIO_INI,
+    json_predial_hitl_dir,
+)
+from src.core.corpus import adjacent_json, prefer_hitl_path, resolve_json
+from src.core.segment_schema import STATUS_IDENTIDAD, STATUS_NO_LOCALIZADA
+from src.hitl.decisiones import append_decision, load_latest
 
 DEFAULT_CSV = Path("output/hitl/cola_unificada.csv")
 DATA_ROOT = Path("data")
-V3_ROOT = Path("predial-mx-v3")
-V3_HITL_ROOT = Path("predial-mx-v3-hitl")
-V2_ROOT = Path("predial-mx-v2")
 
-SERVE_ROOTS = [
-    r.resolve() for r in [DATA_ROOT, V3_ROOT, V3_HITL_ROOT, V2_ROOT]
-    if r.exists()
-]
+# El corpus v3 (canónico + overlay HITL) vive bajo data/.  Todo se sirve desde ahí.
+SERVE_ROOTS = [r.resolve() for r in [DATA_ROOT] if r.exists()]
 
 VALID_DECISIONS = [
     "confirmar_ok",
@@ -80,12 +82,23 @@ ESTADO_PRETTY = {
     "sinaloa": "Sinaloa", "tabasco": "Tabasco",
 }
 
-_FNAME_RE = re.compile(r"_PREDIAL_(\d{4})_(.+)\.json$")
-
-
 def _has_flag(detector_field: str, flag: str) -> bool:
     """Check if flag is in a comma-separated detector field."""
     return flag in {d.strip() for d in detector_field.split(",")}
+
+
+def _display_muni(row: dict) -> str:
+    """Nombre de municipio para mostrar: SIEMPRE desde el catálogo (cvegeo).
+
+    Nunca usa texto extraído como identidad.  Si no hay cvegeo (identidad no
+    resuelta) cae al campo ``municipio`` de la fila, que ya trae el marcador
+    "(identidad no resuelta) …" para diagnóstico.
+    """
+    return (
+        cvegeo_to_nombre(row.get("cvegeo", ""))
+        or row.get("municipio", "")
+        or row.get("municipio_slug", "")
+    )
 
 
 def _norm(s: str) -> str:
@@ -96,16 +109,7 @@ def _norm(s: str) -> str:
 
 def _try_resolve_json(estado_slug: str, muni_slug: str, anio: int) -> Path:
     """Resolve v3 JSON path dynamically. Returns Path("") if not found."""
-    prefijo = PREFIJOS_ESTADO.get(estado_slug, estado_slug.upper())
-    slug = _norm(muni_slug).replace(" ", "_").replace("/", "_").replace(".", "")
-    for root in (V3_HITL_ROOT, V3_ROOT):
-        candidate = root / estado_slug / f"{prefijo}_PREDIAL_{anio}_{slug}.json"
-        if candidate.exists():
-            return candidate
-        for p in (root / estado_slug).glob(f"*_PREDIAL_{anio}_*.json"):
-            if _norm(p.stem.split(f"_{anio}_", 1)[-1]) == slug:
-                return p
-    return Path("")
+    return resolve_json(estado_slug, anio, muni_slug)
 
 
 # ── State ──
@@ -127,6 +131,15 @@ class State:
                 reader = csv.DictReader(f)
                 self.fieldnames = reader.fieldnames or []
                 self.rows = list(reader)
+            # La cola es una vista derivada; las decisiones viven en el log
+            # append-only.  Overlay la última decisión por caso al cargar para
+            # que reinicios/rebuilds preserven el trabajo del revisor.
+            latest = load_latest()
+            for r in self.rows:
+                d = latest.get(r.get("id", ""))
+                if d:
+                    r["decision"] = d.get("decision", "")
+                    r["notas"] = d.get("notas", "")
             self.id_to_idx = {r.get("id", ""): i for i, r in enumerate(self.rows)}
 
     def save_atomic(self) -> None:
@@ -146,17 +159,30 @@ class State:
                     os.unlink(tmp_path)
                 raise
 
-    def update_decision(self, row_id: str, decision: str, notas: str) -> dict:
+    def update_decision(self, row_id: str, decision: str, notas: str,
+                        sub_opcion: str = "") -> dict:
         if decision not in VALID_DECISIONS and decision != "":
             raise ValueError(f"decisión inválida: {decision!r}")
         idx = self.id_to_idx.get(row_id)
         if idx is None:
             raise KeyError(f"row_id desconocido: {row_id}")
+        row = self.rows[idx]
+        # Fuente de verdad: log append-only (sobrevive a rebuilds de la cola).
+        append_decision(
+            id=row_id,
+            decision=decision,
+            cvegeo=row.get("cvegeo", ""),
+            estado_slug=row.get("estado_slug", ""),
+            municipio_slug=row.get("municipio_slug", ""),
+            anio=row.get("anio", ""),
+            sub_opcion=sub_opcion,
+            notas=notas,
+        )
         with self._lock:
-            self.rows[idx]["decision"] = decision
-            self.rows[idx]["notas"] = notas
-        self.save_atomic()
-        return self.rows[idx]
+            row["decision"] = decision
+            row["notas"] = notas
+        self.save_atomic()  # cache local; el log es la fuente de verdad
+        return row
 
     def next_pending_id(self, after_id: str | None) -> str | None:
         with self._lock:
@@ -260,50 +286,31 @@ def _prefer_hitl_path(json_path: Path) -> Path:
     """If an HITL-corrected version of this JSON exists, prefer it."""
     if not json_path.name:
         return json_path
-    hitl_candidate = V3_HITL_ROOT / json_path.parent.name / json_path.name
-    if hitl_candidate.exists():
-        return hitl_candidate
-    return json_path
+    return prefer_hitl_path(json_path)
 
 
 def _apply_temporal_inline(row: dict, decision: str) -> Path | None:
     """Apply propagation/correction immediately so the next comparison is fresh."""
-    json_path = Path(row.get("json_path", ""))
-    json_path = _prefer_hitl_path(json_path)
+    json_path = _prefer_hitl_path(Path(row.get("json_path", "")))
     if not json_path.exists():
         return None
 
     est_slug = row.get("estado_slug", "")
     anio = int(row.get("anio", 0))
-
-    m = _FNAME_RE.search(json_path.name)
-    if not m:
-        return None
-    prefix = json_path.name.split(f"_{anio}_")[0]
+    prev_year = anio - 1
 
     if decision == "propagar_previo":
-        prev_year = anio - 1
-        prev_name = f"{prefix}_{prev_year}_{m.group(2)}.json"
-        src = None
-        for root in (V3_HITL_ROOT, V3_ROOT):
-            cand = root / est_slug / prev_name
-            if cand.exists():
-                src = cand
-                break
+        src = _find_adjacent_json(str(json_path), anio, -1)
         if not src:
             return None
-        dst = V3_HITL_ROOT / est_slug / json_path.name
-        modelo = "imputed_human_propagation"
-        imputed_from = prev_year
-        target = anio
+        dst = json_predial_hitl_dir(est_slug, anio) / json_path.name
+        modelo, imputed_from, target = "imputed_human_propagation", prev_year, anio
     elif decision == "corregir_previo":
-        prev_year = anio - 1
-        prev_name = f"{prefix}_{prev_year}_{m.group(2)}.json"
         src = json_path
-        dst = V3_HITL_ROOT / est_slug / prev_name
-        modelo = "imputed_human_correction"
-        imputed_from = anio
-        target = prev_year
+        dst = json_predial_hitl_dir(est_slug, prev_year) / json_path.name.replace(
+            f"_{anio}_", f"_{prev_year}_"
+        )
+        modelo, imputed_from, target = "imputed_human_correction", anio, prev_year
     else:
         return None
 
@@ -327,21 +334,8 @@ def _apply_temporal_inline(row: dict, decision: str) -> Path | None:
 
 
 def _find_adjacent_json(json_path: str, anio: int, offset: int) -> Path | None:
-    """Find adjacent year's JSON. Checks HITL dir first, then v3 dir."""
-    p = Path(json_path)
-    if not p.name:
-        return None
-    m = _FNAME_RE.search(p.name)
-    if not m:
-        return None
-    target_year = anio + offset
-    target_name = p.name.replace(f"_{anio}_", f"_{target_year}_")
-    estado_slug = p.parent.name
-    for root in (V3_HITL_ROOT, V3_ROOT):
-        candidate = root / estado_slug / target_name
-        if candidate.exists():
-            return candidate
-    return None
+    """Find adjacent year's JSON (overlay HITL preferido). None si no existe."""
+    return adjacent_json(json_path, anio, offset)
 
 
 def _find_prev_json(json_path: str, anio: int) -> Path | None:
@@ -538,12 +532,50 @@ def caso(row_id):
     return _render_case(row_id)
 
 
+def _serialize_form_notas(form, decision: str) -> tuple[str, str]:
+    """Combina los campos estructurados del form en (notas, sub_opcion).
+
+    Los campos de whitelist/hints se serializan como ``clave=valor;`` para que
+    aplicar_decisiones los parsee; el texto libre se preserva al final.
+    """
+    libre = (form.get("notas") or "").strip()
+    sub_opcion = (form.get("sub_opcion") or "").strip()
+    parts: list[str] = []
+    if decision in ("confirmar_ok", "propagar_previo", "corregir_previo"):
+        if sub_opcion == "cambio_menor":
+            for campo in ("minimo_predial", "unidad", "periodicidad"):
+                v = (form.get(f"edit_{campo}") or "").strip()
+                if v:
+                    parts.append(f"{campo}={v}")
+    elif decision == "reextraer":
+        if (form.get("hint_tipo") or "").strip():
+            parts.append(f"hint_tipo={form.get('hint_tipo').strip()}")
+        if form.get("force_vision"):
+            parts.append("force_vision=1")
+        if (form.get("hint_paginas") or "").strip():
+            parts.append(f"paginas={form.get('hint_paginas').strip()}")
+        if (form.get("hint_pdf") or "").strip():
+            parts.append(f"pdf={form.get('hint_pdf').strip()}")
+        if libre:
+            parts.append(f"hint_notas={libre}")
+            libre = ""
+    elif decision == "re_segmentar":
+        if (form.get("hint_paginas") or "").strip():
+            parts.append(f"paginas={form.get('hint_paginas').strip()}")
+        if (form.get("hint_pdf") or "").strip():
+            parts.append(f"pdf={form.get('hint_pdf').strip()}")
+    notas = "; ".join(parts)
+    if libre:
+        notas = (notas + "; " + libre) if notas else libre
+    return notas, sub_opcion
+
+
 @app.route("/caso/<row_id>/decision", methods=["POST"])
 def post_decision(row_id):
     decision = (request.form.get("decision") or "").strip()
-    notas = (request.form.get("notas") or "").strip()
+    notas, sub_opcion = _serialize_form_notas(request.form, decision)
     try:
-        updated = state.update_decision(row_id, decision, notas)
+        updated = state.update_decision(row_id, decision, notas, sub_opcion)
     except (ValueError, KeyError) as e:
         abort(400, str(e))
 
@@ -670,6 +702,21 @@ document.querySelectorAll('th.sortable').forEach(function(th){
     f.submit();
   });
 });
+function hitlToggle(){
+  var sel=document.querySelector('select[name=decision]'); if(!sel) return;
+  var d=sel.value;
+  var subOK=['confirmar_ok','propagar_previo','corregir_previo'].indexOf(d)>-1;
+  var subopt=document.getElementById('subopt');
+  var reext=document.getElementById('reext');
+  var wl=document.getElementById('whitelist');
+  if(subopt) subopt.style.display=subOK?'block':'none';
+  if(reext) reext.style.display=(d==='reextraer')?'block':'none';
+  if(wl){
+    var cm=document.querySelector('input[name=sub_opcion][value=cambio_menor]');
+    wl.style.display=(subOK && cm && cm.checked)?'block':'none';
+  }
+}
+document.addEventListener('DOMContentLoaded',hitlToggle);
 </script>
 """
 
@@ -704,6 +751,20 @@ def _render_index() -> str:
 
     key_fn = _SORT_KEYS.get(sort_col, _SORT_KEYS["estado"])
     rows.sort(key=key_fn, reverse=sort_desc)
+
+    # Paginación
+    try:
+        page_size = max(10, min(1000, int(request.args.get("page_size", 200))))
+    except ValueError:
+        page_size = 200
+    n_filtered = len(rows)
+    n_pages = max(1, (n_filtered + page_size - 1) // page_size)
+    try:
+        page = int(request.args.get("page", 1))
+    except ValueError:
+        page = 1
+    page = max(1, min(n_pages, page))
+    page_rows = rows[(page - 1) * page_size: page * page_size]
 
     n_total = len(state.rows)
     n_decididos = sum(1 for r in state.rows if (r.get("decision") or "").strip())
@@ -759,14 +820,40 @@ def _render_index() -> str:
         return (f'<th class="sortable" data-col="{col}" data-desc="{next_desc}"'
                 f' style="cursor:pointer;user-select:none">{label}{arrow}</th>')
 
-    body.append(f'<p style="color:#6b7280;font-size:.85rem">Mostrando {len(rows)} de {n_total}.</p>')
+    def _page_url(p: int) -> str:
+        params = {
+            "sev": sev_filter, "estado": est_filter, "detector": det_filter,
+            "sort": sort_col, "desc": "1" if sort_desc else "",
+            "page_size": page_size, "page": p,
+        }
+        if pendientes_only:
+            params["pendientes"] = "1"
+        qs = "&".join(f"{k}={quote(str(v))}" for k, v in params.items() if v != "")
+        return url_for("index") + "?" + qs
+
+    def _pager() -> str:
+        lo = (page - 1) * page_size + 1 if n_filtered else 0
+        hi = min(page * page_size, n_filtered)
+        parts = ['<div style="display:flex;gap:.6rem;align-items:center;margin:.6rem 0">']
+        if page > 1:
+            parts.append(f'<a href="{_page_url(page - 1)}">‹ Anterior</a>')
+        parts.append(f'<span style="font-size:.85rem;color:#6b7280">'
+                     f'{lo}–{hi} de {n_filtered} (pág. {page}/{n_pages})</span>')
+        if page < n_pages:
+            parts.append(f'<a href="{_page_url(page + 1)}">Siguiente ›</a>')
+        parts.append('</div>')
+        return "".join(parts)
+
+    body.append(f'<p style="color:#6b7280;font-size:.85rem">'
+                f'{n_filtered} filtradas de {n_total} totales.</p>')
+    body.append(_pager())
     body.append('<table class="list" id="htable">')
     body.append(f'  <thead><tr>{_sort_hdr("SEV", "sev")}{_sort_hdr("Detector", "detector")}'
                 f'{_sort_hdr("Estado", "estado")}{_sort_hdr("Municipio", "municipio")}'
                 f'{_sort_hdr("Año", "anio")}<th>Señal</th>'
                 f'{_sort_hdr("Decisión", "decision")}</tr></thead>')
     body.append('  <tbody>')
-    for r in rows[:500]:
+    for r in page_rows:
         rid = r.get("id", "")
         sev = r.get("severidad", "")
         sev_cls = SEV_CLASSES.get(sev, "sev3")
@@ -779,7 +866,7 @@ def _render_index() -> str:
         body.append(f'  <td>{det_badges}</td>')
         body.append(f'  <td>{escape(r.get("estado", ""))}</td>')
         body.append(f'  <td><a href="{url_for("caso", row_id=rid)}">'
-                    f'{escape(r.get("municipio", ""))}</a></td>')
+                    f'{escape(_display_muni(r))}</a></td>')
         body.append(f'  <td>{escape(r.get("anio", ""))}</td>')
         body.append(f'  <td style="font-size:.75rem;color:#6b7280;max-width:300px;'
                     f'overflow:hidden;text-overflow:ellipsis;white-space:nowrap">'
@@ -789,8 +876,7 @@ def _render_index() -> str:
                     f'{escape(dec or "—")}</b></td>')
         body.append('</tr>')
     body.append('  </tbody></table>')
-    if len(rows) > 500:
-        body.append(f'<p class="help">Mostrando primeros 500 de {len(rows)}.</p>')
+    body.append(_pager())
     body.append('</main>')
 
     return _html("HITL revisor — cola unificada", "".join(body))
@@ -803,7 +889,7 @@ def _render_case(row_id: str) -> str:
     est_slug = r.get("estado_slug", "")
     muni_slug = r.get("municipio_slug", "")
     estado = r.get("estado", est_slug)
-    municipio = r.get("municipio", muni_slug)
+    municipio = _display_muni(r)
     anio = int(r.get("anio", 0))
     sev = r.get("severidad", "")
     sev_cls = SEV_CLASSES.get(sev, "sev3")
@@ -877,14 +963,48 @@ def _render_case(row_id: str) -> str:
     current_notas = r.get("notas") or ""
     body.append(f'<form method="post" action="{url_for("post_decision", row_id=row_id)}">')
     body.append('  <label for="decision">Decisión (atajos: 1-7)</label>')
-    body.append('  <select id="decision" name="decision">')
+    body.append('  <select id="decision" name="decision" onchange="hitlToggle()">')
     for d in [""] + VALID_DECISIONS:
         sel = " selected" if current_decision == d else ""
         body.append(f'    <option value="{escape(d)}"{sel}>{escape(DECISION_LABELS[d])}</option>')
     body.append('  </select>')
-    body.append('  <label for="notas">Notas</label>')
+
+    # Sub-opción Fiel / Con cambio menor (§6a) — confirmar/propagar/corregir
+    body.append('  <div id="subopt" style="display:none;margin-top:.5rem">')
+    body.append('    <label>Procedencia</label>')
+    body.append('    <label style="font-weight:normal;display:inline">'
+                '<input type="radio" name="sub_opcion" value="fiel" checked onchange="hitlToggle()"> Fiel</label>'
+                '&nbsp;&nbsp;'
+                '<label style="font-weight:normal;display:inline">'
+                '<input type="radio" name="sub_opcion" value="cambio_menor" onchange="hitlToggle()"> Con cambio menor</label>')
+    body.append('    <div id="whitelist" style="display:none;margin-top:.4rem">')
+    body.append('      <p class="help">Whitelist (no estructural). Vacío = sin cambio.</p>')
+    for campo, ph in (("minimo_predial", "p. ej. 120.50"),
+                      ("unidad", "p. ej. uma"), ("periodicidad", "p. ej. anual")):
+        body.append(f'      <input name="edit_{campo}" placeholder="{campo} — {ph}" '
+                    f'style="margin:.2rem 0">')
+    body.append('    </div>')
+    body.append('  </div>')
+
+    # Hints de re-extracción (§6b) — reextraer
+    body.append('  <div id="reext" style="display:none;margin-top:.5rem">')
+    body.append('    <label>Pistas de re-extracción (sesgan, no fuerzan)</label>')
+    body.append('    <select name="hint_tipo">')
+    body.append('      <option value="">(sin hint de tipo_esquema)</option>')
+    for t in ("tarifa_millar", "progresivo", "tasa_unica", "cuota_fija_simple",
+              "cuota_fija_escalonada", "mixto", "otro_no_clasificado"):
+        body.append(f'      <option value="{t}">{t}</option>')
+    body.append('    </select>')
+    body.append('    <label style="font-weight:normal;display:block;margin-top:.3rem">'
+                '<input type="checkbox" name="force_vision" value="1"> force_vision '
+                '(saltar cascada txt→re-OCR, ir directo a visión)</label>')
+    body.append('    <input name="hint_paginas" placeholder="paginas= p. ej. 20-22" style="margin:.2rem 0">')
+    body.append('    <input name="hint_pdf" placeholder="pdf= ruta/al/pdf (opcional)" style="margin:.2rem 0">')
+    body.append('  </div>')
+
+    body.append('  <label for="notas" style="margin-top:.5rem">Notas (texto libre)</label>')
     body.append(f'  <textarea id="notas" name="notas">{escape(current_notas)}</textarea>')
-    body.append('  <p class="help">Para re_segmentar: notas = paginas=20-22 [; pdf=ruta/al/pdf]</p>')
+    body.append('  <p class="help">re_segmentar: usa los campos paginas/pdf de arriba o notas = paginas=20-22 [; pdf=ruta].</p>')
     body.append('  <button type="submit">Guardar y siguiente (Ctrl+Enter)</button>')
     body.append(f'  <a href="{url_for("next_case", row_id=row_id)}" '
                 f'style="margin-left:1rem;color:#6b7280">Saltar →</a>')
@@ -945,18 +1065,41 @@ def _render_single_year(est_slug: str, muni_slug: str, anio: int,
 
 
 def _render_seg_info(seg_row: dict | None, label: str = "Segmentación") -> str:
-    """Render full segment info panel with trigger text and source PDF embed."""
+    """Render full segment info panel with trigger text and source PDF embeds.
+
+    Distingue (§4a) los estados de segmentación: sin fila (no unió / no existe),
+    sección no localizada (error real, SEV1), identidad no resuelta, u OK.
+    """
     if not seg_row:
-        return '<div class="seg-info" style="font-size:.8rem;margin:.3rem 0;color:#9a3412">(sin datos de segmentación)</div>'
+        return ('<div class="seg-info" style="font-size:.8rem;margin:.3rem 0;color:#9a3412">'
+                '<b>Sin fila en segment.csv para este caso.</b> No se localizó/segmentó '
+                'la ley, o la llave (cvegeo, año) no une.</div>')
+
+    status = (seg_row.get("status") or "ok").strip()
+    if status == STATUS_NO_LOCALIZADA:
+        return ('<div class="seg-info" style="font-size:.8rem;margin:.3rem 0">'
+                '<span class="badge sev1">SEV1</span> '
+                '<b>Sección predial NO localizada</b> — no hay página de inicio en '
+                'segment.csv. Revisar segmentación o re-segmentar.</div>')
+    if status == STATUS_IDENTIDAD:
+        raw = " ".join((seg_row.get("municipio_raw") or "").split())[:160]
+        return ('<div class="seg-info" style="font-size:.8rem;margin:.3rem 0">'
+                '<span class="badge sev1">SEV1</span> '
+                f'<b>Identidad no resuelta</b> — el texto «{escape(raw)}» no coincide con '
+                'el catálogo INEGI. Revisar OCR/segmentación.</div>')
+
     parts = ['<div class="seg-info" style="font-size:.8rem;margin:.3rem 0">']
     pg_start = seg_row.get("predial_page_start", "")
     pg_end = seg_row.get("predial_page_end", "")
+    ley_start = seg_row.get("ley_page_start", "")
     forced = seg_row.get("forced_end", "")
     expanded = seg_row.get("expansion_applied", "")
     anchor = seg_row.get("anchor_text_start", "")
     anchor_end = seg_row.get("anchor_text_end", "")
     next_tax = seg_row.get("next_tax_label", "")
-    pdf_used = seg_row.get("pdf_used", "")
+    # Esquema canónico usa source_pdf; pdf_used es alias legado.
+    pdf_used = seg_row.get("source_pdf", "") or seg_row.get("pdf_used", "")
+    estado_slug = seg_row.get("estado_slug", "")
 
     parts.append(f'<span class="label">{escape(label)}:</span> ')
     if pg_start:
@@ -982,17 +1125,33 @@ def _render_seg_info(seg_row: dict | None, label: str = "Segmentación") -> str:
         parts.append('<div style="color:#9a3412;font-size:.75rem;margin-top:.1rem">'
                      '(trigger text no disponible — re-ejecutar segmentación)</div>')
 
-    # Collapsible source PDF at trigger page
-    if pdf_used and pg_start:
+    # Botones de navegación del PDF fuente (§5):
+    #   (a) inicio de la sección predial
+    #   (b) inicio de la ley de ingresos del municipio (verifica identidad y
+    #       descarta colisión entre leyes en tomos compartidos).  Se oculta en
+    #       Jalisco (un PDF por ley → la ley arranca en la página 1) y cuando no
+    #       se conoce ley_page_start.
+    if pdf_used:
         src_pdf = Path(pdf_used)
         if src_pdf.exists() and _is_under_allowed_root(src_pdf):
-            page_url = _file_url(src_pdf) + f"#page={pg_start}"
-            parts.append(f'<details style="margin-top:.3rem"><summary style="cursor:pointer;'
-                         f'font-size:.75rem;color:#374151">'
-                         f'&#9654; PDF fuente: página {pg_start}</summary>')
-            parts.append(f'<embed src="{page_url}" type="application/pdf" '
-                         'style="height:400px">')
-            parts.append('</details>')
+            parts.append('<div style="margin-top:.3rem;display:flex;gap:.6rem;flex-wrap:wrap">')
+            if pg_start:
+                parts.append(f'<a href="{_file_url(src_pdf)}#page={pg_start}" target="_blank" '
+                             f'style="font-size:.78rem">▸ PDF: sección predial (pág. {pg_start})</a>')
+            show_ley = (estado_slug != "jalisco") and str(ley_start).strip()
+            if show_ley:
+                parts.append(f'<a href="{_file_url(src_pdf)}#page={ley_start}" target="_blank" '
+                             f'style="font-size:.78rem">▸ PDF: inicio de la ley (pág. {ley_start})</a>')
+            parts.append('</div>')
+            # Embed colapsable en la página de la sección predial
+            if pg_start:
+                page_url = _file_url(src_pdf) + f"#page={pg_start}"
+                parts.append(f'<details style="margin-top:.3rem"><summary style="cursor:pointer;'
+                             f'font-size:.75rem;color:#374151">'
+                             f'&#9654; PDF fuente: página {pg_start}</summary>')
+                parts.append(f'<embed src="{page_url}" type="application/pdf" '
+                             'style="height:400px">')
+                parts.append('</details>')
 
     parts.append('</div>')
     return "".join(parts)

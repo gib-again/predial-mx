@@ -13,14 +13,11 @@ from pathlib import Path
 from openai import OpenAI
 from pydantic import ValidationError
 
-from src.core.text_utils import slugify
-
 # ── Rutas y configuración ──
 
 ROOT = Path(__file__).resolve().parents[2]
-CATALOG = ROOT / "catalogs" / "municipios_inegi.csv"
 
-OPENAI_MODEL = os.environ.get("OPENAI_MODEL", "gpt-5.4-mini")
+OPENAI_MODEL = os.environ.get("OPENAI_MODEL", "gpt-5.4")
 OPENAI_MODEL_FALLBACK = os.environ.get("OPENAI_MODEL_FALLBACK", "gpt-5.4")
 
 _client: OpenAI | None = None
@@ -37,24 +34,15 @@ def _get_client() -> OpenAI:
 
 
 # ── Mapeo CVEGEO → slug, nombre ──
-
-_CVEGEO_CACHE: dict[str, tuple[str, str]] = {}
+# La lógica canónica vive ahora en src.core.catalog; se reexporta aquí para
+# no romper imports existentes (`from src.extraction.llm_utils import _resolve_cvegeo`).
 
 
 def _resolve_cvegeo(cvegeo: str) -> tuple[str, str]:
     """Devuelve (slug, NOM_MUN) a partir del CVEGEO INEGI (5 dígitos)."""
-    cve = str(cvegeo).zfill(5)
-    if cve in _CVEGEO_CACHE:
-        return _CVEGEO_CACHE[cve]
+    from src.core.catalog import resolve_cvegeo_pair
 
-    with CATALOG.open(encoding="utf-8-sig") as f:
-        for row in csv.DictReader(f):
-            if row["CVEGEO"] == cve:
-                nom = row["NOM_MUN"]
-                pair = (slugify(nom), nom)
-                _CVEGEO_CACHE[cve] = pair
-                return pair
-    raise KeyError(f"CVEGEO {cve} no encontrado en {CATALOG}")
+    return resolve_cvegeo_pair(cvegeo)
 
 
 # ── Localizar source (con manual overrides) ──

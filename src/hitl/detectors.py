@@ -13,24 +13,28 @@ from __future__ import annotations
 
 import re
 import statistics
-import unicodedata
-from pathlib import Path
 
-from src.core.constants import PREFIJOS_ESTADO
+from src.core.catalog import cvegeo_to_nombre
+from src.core.corpus import resolve_json
+from src.core.segment_schema import STATUS_IDENTIDAD
 from src.hitl.queue_schema import QueueRow, make_id
 
-V3_ROOT = Path("predial-mx-v3")
+
+def _seg_identity(row: dict) -> tuple[str, str, str]:
+    """(municipio_slug, cvegeo, municipio_display) desde una fila de segment.
+
+    El display siempre sale del catálogo (cvegeo); nunca del texto crudo.
+    """
+    muni_slug = row.get("municipio_slug") or row.get("slug") or ""
+    cvegeo = row.get("cvegeo") or ""
+    municipio = cvegeo_to_nombre(cvegeo) or row.get("municipio_raw") or muni_slug
+    return muni_slug, cvegeo, municipio
 
 _RE_TRANSITORIO = re.compile(
     r"\b(transitor|abrog|salario\s*m[ií]nim|d[ií]as?\s+de\s+salario|vsm\b|"
     r"vigencia|publicaci[oó]n\s+oficial)",
     re.IGNORECASE,
 )
-
-
-def _norm(s: str) -> str:
-    n = unicodedata.normalize("NFD", s or "")
-    return "".join(c for c in n if unicodedata.category(c) != "Mn").lower()
 
 
 def _bool(val) -> bool:
@@ -40,21 +44,8 @@ def _bool(val) -> bool:
 
 
 def _resolve_json_path(estado_slug: str, muni_name_or_slug: str, anio: int) -> str:
-    """Resolve the v3 JSON path from segment.csv fields.
-
-    Handles both slug ("acatic") and pretty name ("Acatic") by normalizing.
-    """
-    prefijo = PREFIJOS_ESTADO.get(estado_slug, estado_slug.upper())
-    slug = _norm(muni_name_or_slug).replace(" ", "_").replace("/", "_").replace(".", "")
-    pat = f"{prefijo}_PREDIAL_{anio}_{slug}.json"
-    candidate = V3_ROOT / estado_slug / pat
-    if candidate.exists():
-        return str(candidate)
-    for p in (V3_ROOT / estado_slug).glob(f"*_PREDIAL_{anio}_*.json"):
-        file_slug = p.stem.split(f"_{anio}_", 1)[-1]
-        if _norm(file_slug) == slug:
-            return str(p)
-    return ""
+    """Resolve the v3 JSON path from segment.csv fields (slug o nombre bonito)."""
+    return str(resolve_json(estado_slug, anio, muni_name_or_slug) or "")
 
 
 # ══════════════════════════════════════════════════════════════
@@ -69,6 +60,8 @@ def det_frontera_sin_verificar(
     """Jalisco-specific: flags rows where forced_end=True or expansion_applied=True."""
     out: list[QueueRow] = []
     for i, row in enumerate(segment_rows):
+        if (row.get("status") or "") == STATUS_IDENTIDAD:
+            continue  # lo cubre det_identidad_no_resuelta
         forced = _bool(row.get("forced_end", False))
         expanded = _bool(row.get("expansion_applied", False))
         if not (forced or expanded):
@@ -78,7 +71,7 @@ def det_frontera_sin_verificar(
             parts.append("fin del segmento adivinado (no se encontró siguiente impuesto)")
         if expanded:
             parts.append("segmento expandido por ser muy corto")
-        muni_slug = row.get("municipio_slug", row.get("municipio", ""))
+        muni_slug, cvegeo, municipio = _seg_identity(row)
         anio = int(row.get("anio", 0))
         json_path = _resolve_json_path(estado_slug, muni_slug, anio)
         out.append(QueueRow(
@@ -87,9 +80,9 @@ def det_frontera_sin_verificar(
             detector="frontera_sin_verificar",
             estado=estado,
             estado_slug=estado_slug,
-            municipio=row.get("municipio", muni_slug),
+            municipio=municipio,
             municipio_slug=muni_slug,
-            cvegeo=row.get("cvegeo", ""),
+            cvegeo=cvegeo,
             anio=anio,
             senal="; ".join(parts),
             json_path=json_path,
@@ -116,6 +109,8 @@ def det_distancia_inicio_anomala(
     """
     by_anio: dict[int, list[tuple[int, dict]]] = {}
     for i, row in enumerate(segment_rows):
+        if (row.get("status") or "") == STATUS_IDENTIDAD:
+            continue  # identidad no resuelta → no cohorte estadística
         try:
             cs = int(float(row.get("char_start", -1)))
         except (ValueError, TypeError):
@@ -139,7 +134,7 @@ def det_distancia_inicio_anomala(
             z = abs(cs - mean) / stdev
             if z < z_threshold:
                 continue
-            muni_slug = row.get("municipio_slug", row.get("municipio", ""))
+            muni_slug, cvegeo, municipio = _seg_identity(row)
             json_path = _resolve_json_path(estado_slug, muni_slug, anio)
             out.append(QueueRow(
                 id=make_id(estado_slug, muni_slug, anio, "distancia_inicio_anomala"),
@@ -147,9 +142,9 @@ def det_distancia_inicio_anomala(
                 detector="distancia_inicio_anomala",
                 estado=estado,
                 estado_slug=estado_slug,
-                municipio=row.get("municipio", muni_slug),
+                municipio=municipio,
                 municipio_slug=muni_slug,
-                cvegeo=row.get("cvegeo", ""),
+                cvegeo=cvegeo,
                 anio=anio,
                 senal=(f"Inicio de segmento en posición {cs} — anormalmente "
                        f"{'lejos' if cs > mean else 'cerca'} del promedio "
@@ -157,6 +152,50 @@ def det_distancia_inicio_anomala(
                 json_path=json_path,
                 segment_row=row_i,
             ))
+    return out
+
+
+# ══════════════════════════════════════════════════════════════
+# D2b — identidad_no_resuelta (segment.csv, SEV1)
+# ══════════════════════════════════════════════════════════════
+
+def det_identidad_no_resuelta(
+    segment_rows: list[dict],
+    estado_slug: str,
+    estado: str,
+) -> list[QueueRow]:
+    """Filas cuyo texto de municipio no matchea el catálogo INEGI (cvegeo vacío).
+
+    Es el bug Causa A: texto OCR/header de ley entró al campo de identidad.  En
+    vez de propagar un nombre/slug basura, se marca como hallazgo explícito para
+    que el revisor corrija OCR/segmentación.
+    """
+    out: list[QueueRow] = []
+    for i, row in enumerate(segment_rows):
+        if (row.get("status") or "") != STATUS_IDENTIDAD:
+            continue
+        raw = (row.get("municipio_raw") or row.get("municipio_slug") or "").strip()
+        raw_short = " ".join(raw.split())[:120]
+        anio = int(row.get("anio", 0) or 0)
+        # slug único por fila (no hay identidad real que consolidar)
+        muni_slug = row.get("municipio_slug") or f"sin_identidad_{i}"
+        out.append(QueueRow(
+            id=make_id(estado_slug, muni_slug, anio, "identidad_no_resuelta"),
+            severidad="SEV1",
+            detector="identidad_no_resuelta",
+            estado=estado,
+            estado_slug=estado_slug,
+            municipio=f"(identidad no resuelta) {raw_short}" if raw_short
+                      else "(identidad no resuelta)",
+            municipio_slug=muni_slug,
+            cvegeo="",
+            anio=anio,
+            senal=(f"El texto de municipio no coincide con el catálogo INEGI: "
+                   f"«{raw_short}». Revisar OCR/segmentación (posible header de ley "
+                   f"capturado como identidad)."),
+            json_path="",
+            segment_row=i,
+        ))
     return out
 
 

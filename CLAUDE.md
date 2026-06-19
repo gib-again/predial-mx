@@ -59,12 +59,16 @@ ruff check src/ scripts/
 
 ## Datos (no van en git)
 
-- `data/{estado}/pdf_raw/`, `pdf_ocr/`, `focus_predial/`, `json_predial/`, `meta/`, `qa/`
-- `predial-mx-v2/` — JSONs de extracción v2 (una tarifa por archivo)
-- `predial-mx-v3/` — JSONs de extracción v3 (multi-tarifa, tasas fieles)
-- `predial-mx-v3-hitl/` — JSONs propagados/corregidos por HITL
+- `data/{estado}/pdf_raw/`, `pdf_ocr/`, `focus_predial/{anio}/`, `meta/`, `qa/`
+- `data/{estado}/json_predial/{anio}/` — **corpus v3 canónico** (multi-tarifa, tasas fieles).
+  Centralizado en `src/core/constants.py` (`json_predial_dir`) y accedido vía `src/core/corpus.py`.
+- `data/{estado}/json_predial_hitl/{anio}/` — overlay HITL-corregido (originales se conservan)
 - `output/` — `predial_panel.csv`, `predial_panel_balanced.csv`, `quality_report.csv`
-- `output/hitl/` — `cola_unificada.csv`, `cola_reextraccion.csv`, `hitl_bitacora.csv`
+- `output/hitl/` — `cola_unificada.csv` (vista **derivada**), `hitl_decisiones.csv` (decisiones
+  append-only, fuente de verdad), `hitl_ediciones.csv` (cambios menores before/after),
+  `cola_reextraccion.csv`, `hitl_bitacora.csv`
+- Histórico: `predial-mx-v3/` y `predial-mx-v3-hitl/` (reubicados a `data/`; ver
+  `docs/SCHEMA_EVOLUTION.md`). `predial-mx-v2/` eliminado.
 
 ## Schema v2 (`src/extraction/schema_v2.py`)
 
@@ -112,9 +116,13 @@ download → ocr (si aplica) → master → segment → extract (LLM) → valida
 
 ## Pipeline HITL unificado (v3)
 
-Cola única `output/hitl/cola_unificada.csv` alimentada por 12 detectores sobre corpus v3.
-Cada fila = un municipio-año consolidado; `detector` es comma-separated, `senal` es pipe-separated.
-`id = sha1(estado|muni|anio)` (sin detector). La UI siempre intenta mostrar año previo (side-by-side).
+Cola `output/hitl/cola_unificada.csv` = **vista derivada idempotente**: se reconstruye en cada
+corrida de `run_detectors` desde `{JSON v3} ⋈ {segment.csv} ⋈ {decisiones}`.  Las decisiones del
+revisor NO viven en la cola (eso causaba orphans, Causa B); viven en `hitl_decisiones.csv`
+(append-only, fuente de verdad) y se hacen overlay por `id`.  Así los orphans son imposibles.
+Cada fila = un municipio-año consolidado; `detector` comma-separated, `senal` pipe-separated.
+`id = sha1(estado|muni_slug|anio)`.  Identidad canónica = `cvegeo` (llave de unión en todos los
+artefactos; ver Causa A).  La UI siempre intenta mostrar año previo (side-by-side).
 
 ### Detectores
 
@@ -122,6 +130,7 @@ Cada fila = un municipio-año consolidado; `detector` es comma-separated, `senal
 |---|--------|-----|-------|
 | D1 | `frontera_sin_verificar` | SEV1-H | segment.csv (solo Jalisco) |
 | D2 | `distancia_inicio_anomala` | SEV1-H | segment.csv: z-score > 2σ en char_start |
+| D2b | `identidad_no_resuelta` | SEV1 | segment.csv: texto no matchea catálogo INEGI (cvegeo vacío) |
 | D3 | `mixto_monocolumna_cuotafija` | SEV1 | v3 JSON |
 | D4 | `tabla_vacia` | SEV1 | v3 JSON |
 | D5 | `otro_no_clasificado` | SEV1 | v3 JSON |
@@ -136,18 +145,17 @@ Cada fila = un municipio-año consolidado; `detector` es comma-separated, `senal
 ### Ciclo de revisión
 
 ```bash
-# 1. Ejecutar detectores → cola_unificada.csv
-python -m src.hitl.run_detectors
-python -m src.hitl.run_detectors --estado coahuila --merge
+# 1. Ejecutar detectores → reconstruye cola_unificada.csv (overlay decisiones)
+python -m src.hitl.run_detectors            # (--merge está deprecado: las decisiones siempre se aplican)
 
-# 2. Revisar en UI
+# 2. Revisar en UI (escribe decisiones a hitl_decisiones.csv)
 python -m scripts.temps.hitl_revisor_server
 
-# 3. Aplicar decisiones → bitácora + cola_reextraccion.csv
+# 3. Aplicar decisiones (lee del log) → bitácora + ediciones + cola_reextraccion.csv
 python -m scripts.temps.aplicar_decisiones_hitl
 python -m scripts.temps.aplicar_decisiones_hitl --dry-run
 
-# 4. Consumir cola de re-extracción (usa gpt-5.4 full)
+# 4. Consumir cola de re-extracción (usa gpt-5.4 full; reenvía hints) — GATED por API
 python -m scripts.consume_reextraction_queue
 python -m scripts.consume_reextraction_queue --dry-run
 ```
@@ -156,16 +164,28 @@ python -m scripts.consume_reextraction_queue --dry-run
 
 `confirmar_ok` | `propagar_previo` | `corregir_previo` | `reextraer` | `re_segmentar` | `ignorar`
 
-Para `re_segmentar`: campo notas = `paginas=X-Y [; pdf=ruta/al/pdf]`
+- **Sub-opción** (confirmar/propagar/corregir): `Fiel` | `Con cambio menor`.  "Cambio menor" edita
+  un whitelist chico (`minimo_predial`, `unidad`, `periodicidad`), logueado con before/after en
+  `hitl_ediciones.csv`.  Taxonomía de procedencia: `confirmado_fiel`, `confirmado_cambio_menor`,
+  `propagado_previo`, `corregido_previo`, `reextraido`, `resegmentado`.
+- **Hints de re-extracción** (reextraer): `hint_tipo_esquema` (sesga el prompt, no fuerza),
+  `force_vision` (salta cascada→visión), `paginas`/`pdf` (vía overrides).
+- `re_segmentar`: campo notas = `paginas=X-Y [; pdf=ruta/al/pdf]`.
 
 ### Archivos
 
-- `src/hitl/queue_schema.py` — QueueRow dataclass, helpers CSV, merge
-- `src/hitl/detectors.py` — D1-D12
-- `src/hitl/run_detectors.py` — orquestador CLI
-- `scripts/temps/hitl_revisor_server.py` — Flask UI (single-year + side-by-side para D12)
-- `scripts/temps/aplicar_decisiones_hitl.py` — aplica decisiones, escribe a `predial-mx-v3-hitl/`
-- `scripts/consume_reextraction_queue.py` — consumidor de cola re-extracción
+- `src/core/catalog.py` — resolución canónica de identidad (cvegeo↔nombre↔slug)
+- `src/core/segment_schema.py` — esquema único de segment.csv + canonicalización
+- `src/core/corpus.py` — acceso centralizado al corpus v3 (canónico + overlay HITL)
+- `src/hitl/decisiones.py` — capa append-only de decisiones + ediciones + procedencia
+- `src/hitl/queue_schema.py` — QueueRow dataclass, helpers CSV
+- `src/hitl/detectors.py` — D1-D12 + identidad_no_resuelta
+- `src/hitl/run_detectors.py` — orquestador CLI (rebuild idempotente + overlay decisiones)
+- `scripts/temps/hitl_revisor_server.py` — Flask UI (nombres desde catálogo, paginación,
+  2 botones PDF, sub-opción Fiel/cambio menor, hints)
+- `scripts/temps/aplicar_decisiones_hitl.py` — aplica decisiones del log, escribe a `json_predial_hitl/`
+- `scripts/consume_reextraction_queue.py` — consumidor de cola re-extracción (reenvía hints)
+- `scripts/temps/migrar_segment_csv.py`, `migrar_corpus_v3.py` — migraciones (sin API)
 
 ## Advertencia sobre tipo_esquema
 Se identificó un error sistemático en el codigo: el LLM clasifica como tabla_progresiva con tasa_marginal=0 cuando la estructura real es cuota fija escalonada. Corrección via discriminated union con escape hatch (otro_no_clasificado). Tamaulipas y Querétaro funcionan como regression tests. Evitar leer tipo_esquema crudo del JSON; esperar a pasar por la capa de validación.

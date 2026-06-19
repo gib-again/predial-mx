@@ -173,3 +173,29 @@ class EstadoAdapter(ABC):
             meta_dir=self.meta_dir,
             ejercicio_range=self.ejercicio_range,
         )
+
+    def canonicalize_segment(self) -> None:
+        """Reescribe meta/segment.csv al esquema único canónico (con cvegeo).
+
+        Se ejecuta tras el paso `segment` para que todos los estados emitan el
+        mismo esquema, llaveado por cvegeo (esquema único / Causa A).  Es
+        idempotente: correrla sobre un CSV ya canónico no lo altera.
+        """
+        import importlib
+
+        from src.core.segment_schema import (
+            STATUS_IDENTIDAD,
+            STATUS_NO_LOCALIZADA,
+            canonicalize_segment_file,
+        )
+        try:
+            cfg = importlib.import_module(f"src.estados.{self.slug}.config")
+            aliases = dict(getattr(cfg, "ALIASES", {}) or {})
+        except Exception:
+            aliases = {}
+        canon = canonicalize_segment_file(self.slug, aliases=aliases)
+        if canon:
+            n_id = sum(1 for r in canon if r.status == STATUS_IDENTIDAD)
+            n_nl = sum(1 for r in canon if r.status == STATUS_NO_LOCALIZADA)
+            print(f"  [{self.slug}] segment canónico: {len(canon)} filas "
+                  f"(identidad_no_resuelta={n_id}, no_localizada={n_nl})")
