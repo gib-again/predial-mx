@@ -424,9 +424,6 @@ def run_segment(adapter, force: bool = False) -> Path:
         if not pdf_files:
             continue
 
-        year_out = focus_dir / str(ejercicio)
-        year_out.mkdir(parents=True, exist_ok=True)
-
         print(f"\n  [{ejercicio}] {len(pdf_files)} PDFs en pdf_raw/")
 
         for raw_pdf in pdf_files:
@@ -459,8 +456,13 @@ def run_segment(adapter, force: bool = False) -> Path:
                 ej = ley.ejercicio or ejercicio
 
                 safe_slug = ley.slug[:80]
-                txt_path = year_out / f"{config.PREFIJO}_PREDIAL_{ej}_{safe_slug}.txt"
-                pdf_out = year_out / f"{config.PREFIJO}_PREDIAL_{ej}_{safe_slug}.pdf"
+                # Carpeta = ejercicio fiscal (ej), no el año de publicación del PO
+                # (loop var sobre pdf_raw/), para que carpeta y nombre coincidan:
+                # focus_predial/{ej}/GTO_PREDIAL_{ej}_{slug}.
+                ej_out = focus_dir / str(ej)
+                ej_out.mkdir(parents=True, exist_ok=True)
+                txt_path = ej_out / f"{config.PREFIJO}_PREDIAL_{ej}_{safe_slug}.txt"
+                pdf_out = ej_out / f"{config.PREFIJO}_PREDIAL_{ej}_{safe_slug}.pdf"
 
                 if txt_path.exists() and not force:
                     stats["skipped"] += 1

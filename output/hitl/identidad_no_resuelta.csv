@@ -1,0 +1,162 @@
+estado,anio,municipio_raw,slug_actual,source_pdf,tiene_focus,cand_cvegeo,cand_nombre,cand_score,cand_metodo,veredicto
+yucatan,2010,Suma de Hidalgo,suma_de_hidalgo,2009-12-29_suplemento.pdf,True,31063,Samahil,0.55,fuzzy,ruido_o_OCR_severo
+yucatan,2013,Suma de Hidalgo,suma_de_hidalgo,2012-12-24_suplemento.pdf,True,31063,Samahil,0.55,fuzzy,ruido_o_OCR_severo
+yucatan,2014,Suma de Hidalgo,suma_de_hidalgo,2013-12-31_2.pdf,True,31063,Samahil,0.55,fuzzy,ruido_o_OCR_severo
+yucatan,2015,Suma de Hidalgo,suma_de_hidalgo,2014-12-24_2.pdf,True,31063,Samahil,0.55,fuzzy,ruido_o_OCR_severo
+yucatan,2016,Suma de Hidalgo,suma_de_hidalgo,2015-12-23_2.pdf,True,31063,Samahil,0.55,fuzzy,ruido_o_OCR_severo
+yucatan,2017,"Ucú, del Estado de",ucu_del_estado_de,2016-12-28_2.pdf,False,31011,Celestun,0.48,fuzzy,ruido_o_OCR_severo
+yucatan,2017,Suma de Hidalgo,suma_de_hidalgo,2016-12-29_2.pdf,True,31063,Samahil,0.55,fuzzy,ruido_o_OCR_severo
+yucatan,2018,Suma de Hidalgo,suma_de_hidalgo,2017-12-31_2.pdf,True,31063,Samahil,0.55,fuzzy,ruido_o_OCR_severo
+yucatan,2019,Suma de Hidalgo,suma_de_hidalgo,2018-12-28_2.pdf,True,31063,Samahil,0.55,fuzzy,ruido_o_OCR_severo
+yucatan,2020,Suma de Hidalgo,suma_de_hidalgo,2019-12-27_2.pdf,True,31063,Samahil,0.55,fuzzy,ruido_o_OCR_severo
+yucatan,2022,Suma de Hidalgo,suma_de_hidalgo,2021-12-31_3.pdf,False,31063,Samahil,0.55,fuzzy,ruido_o_OCR_severo
+yucatan,2023,Suma de Hidalgo,suma_de_hidalgo,2022-12-30_4.pdf,True,31063,Samahil,0.55,fuzzy,ruido_o_OCR_severo
+yucatan,2024,Suma de Hidalgo,suma_de_hidalgo,2023-12-29_3.pdf,True,31063,Samahil,0.55,fuzzy,ruido_o_OCR_severo
+yucatan,2025,Suma de Hidalgo,suma_de_hidalgo,2024-12-30_4.pdf,True,31063,Samahil,0.55,fuzzy,ruido_o_OCR_severo
+tamaulipas,2015,ABASOLO LA SEXAGÉSIMA SEGUNDA LEGISLATURA DEL CONGRESO CONSTITUCIONAL DEL ESTADO LIBRE Y SOBERANO DE,abasolo_la_sexagesima_segunda_legislatura_del_congreso_constitucional_del_estado_libre_y_soberano_de,TAMPS_RAW_2015_consolidado.pdf,True,28037,Soto la Marina,0.21,fuzzy,ruido_o_OCR_severo
+guanajuato,2010,"PÉNJIAMO, GUANAJ JATO",penjiamo_guanaj_jato,2010_2283_Periodico_Numero_206_Sexta_Parte_ocr.pdf,True,11015,Guanajuato,0.60,fuzzy,revisar
+guanajuato,2014,"GUANAJUATO, GUAMAJUATO PARA EL. EJERCICIO FISCAL DEL 2014 CAPÍTULO PRIMERO DE LA MATURALEZA Y OBJETO DE LA LEY Artículo ",guanajuato_guamajuato_para_el_ejercicio_fiscal_del_2014_capitulo_primero_de_la_maturaleza_y_objeto_de_la_ley_articulo_t_la_presente_ley_es_de_orden_publico_y_tiene_por_objeto_establecer_los_ingresos_que_percibira_la_hacienda_publica_del_municipio_de,2013_4926_Periodico_Numero_207_Quinta_Parte_ocr.pdf,False,11014,Dolores Hidalgo Cuna de la Independencia Nacional,0.19,fuzzy,ruido_o_OCR_severo
+guanajuato,2017,XICRÚ,xicru,2016_10824_Periodico_Numero_207_Sexta_Parte_ocr.pdf,True,11045,Xichu,0.80,fuzzy,revisar
+guanajuato,2018,"SAN JOSÉ ITURBIDE, GUAMAJUATO",san_jose_iturbide_guamajuato,2017_11501_Periodico_Número_225_Tercera_Parte_ocr.pdf,True,11032,San Jose de Iturbide,0.71,fuzzy,revisar
+guanajuato,2018,Meoroicón,meoroicon,2017_11506_Periodico_Numero_224_Cuarta_Parte_ocr.pdf,True,11021,Moroleon,0.71,fuzzy,revisar
+guanajuato,2018,"MOROLEÓN, GUANAJGATO, PARA EL ZJERCICIO FISCAL DEL AMO 2018 CAPÍTULO PRIMERO DE LA NATURALEZA Y OBJETO DE LA LEY Artícul",moroleon_guanajgato_para_el_zjercicio_fiscal_del_amo_2018_capitulo_primero_de_la_naturaleza_y_objeto_de_la_ley_articulo_1_la_presente_ley_es_de_orden_publico_y_tiene_por_objeto_establecer_los_ingresos_que_percibira_la_hacienda_publica_del_municipio_de_morolteon,2017_11506_Periodico_Numero_224_Cuarta_Parte_ocr.pdf,False,11014,Dolores Hidalgo Cuna de la Independencia Nacional,0.19,fuzzy,ruido_o_OCR_severo
+guanajuato,2018,Pueble fuevo,pueble_fuevo,2017_11508_Periodico_Numero_225_Segunda_Parte_ocr.pdf,True,11024,Pueblo Nuevo,0.75,fuzzy,revisar
+guanajuato,2019,DCAMPO,dcampo,2018_12469_Periodico_Numero_259_Cuarta_Parte_ocr.pdf,True,11022,Ocampo,0.83,fuzzy,revisar
+guanajuato,2018,"PÉNIAMO, GUAMAJUATO",peniamo_guamajuato,2018_12469_Periodico_Numero_259_Cuarta_Parte_ocr.pdf,True,11015,Guanajuato,0.64,fuzzy,revisar
+guanajuato,2020,"SANTA CRUZ DE JUVENTINO ROSAS, Articulo 1. ingresos que percibira la hacienda pública del municipio de Santa Cruz de.",santa_cruz_de_juventino_rosas_articulo_1_ingresos_que_percibira_la_hacienda_publica_del_municipio_de_santa_cruz_de,2019_13201_Periodico_Numero_260_Septima_Parte_ocr.pdf,False,11035,Santa Cruz de Juventino Rosas,0.41,fuzzy,ruido_o_OCR_severo
+guanajuato,2022,PÉNMIAMO,penmiamo,2021_14629_Periodico_Numero_260_Décima_Segunda_Parte_ocr.pdf,True,11023,Penjamo,0.80,fuzzy,revisar
+guanajuato,2023,"León, Fiscal del año 2023, para quedar en tos siguientes ARA EL MUNICIPIO DE LEÓN",leon_fiscal_del_ano_2023_para_quedar_en_tos_siguientes_ara_el_municipio_de_leon,2022_15519_Periodico_Numero_260_Decima_Quinta_Parte_ocr.pdf,True,11031,San Francisco del Rincon,0.27,fuzzy,ruido_o_OCR_severo
+guanajuato,2023,MO,mo,2022_15521_Periodico_Numero_260_Decima_Septima_Parte_ocr.pdf,True,11022,Ocampo,0.50,fuzzy,ruido_o_OCR_severo
+guanajuato,2023,PUES,pues,2022_15522_Periodico_Numero_260_Decima_Octava_Parte_ocr.pdf,True,11024,Pueblo Nuevo,0.38,fuzzy,ruido_o_OCR_severo
+guanajuato,2023,SA 1. ingresos administración centralizada.,sa_1_ingresos_administracion_centralizada,2022_15525_Periodico_Numero_260_Vigesima_Primera_Parte_ocr.pdf,True,11003,San Miguel de Allende,0.35,fuzzy,ruido_o_OCR_severo
+guanajuato,2023,SAN ROSAS,san_rosas,2022_15526_Periodico_Numero_260_Vigesima_Segunda_Parte_ocr.pdf,True,11016,Huanimaro,0.44,fuzzy,ruido_o_OCR_severo
+guanajuato,2024,OCA,oca,2023_16360_Periodico_Numero_261_Sexta_Parte_ocr.pdf,True,11022,Ocampo,0.67,fuzzy,revisar
+guanajuato,2024,Santa uanajuato,santa_uanajuato,2023_16449_Periodico_Numero_261_Vigesima_Sexta_Parte_ocr.pdf,True,11015,Guanajuato,0.72,fuzzy,revisar
+guanajuato,2025,ato,ato,2024_17195_Periódico_Número_261_Tercera_Parte_ocr.pdf,True,11017,Irapuato,0.55,fuzzy,ruido_o_OCR_severo
+guanajuato,2025,"PUE Artículo 1 La presente Ley es de orden público, establecer los ingresos que percibirá la Hacienda Pública del M Nuev",pue_articulo_1_la_presente_ley_es_de_orden_publico_establecer_los_ingresos_que_percibira_la_hacienda_publica_del_m_nuevo,2024_17201_Periódico_Número_261_Décima_Séptima_Parte_ocr.pdf,False,11014,Dolores Hidalgo Cuna de la Independencia Nacional,0.30,fuzzy,ruido_o_OCR_severo
+guanajuato,2025,Santiago ATO,santiago_ato,2024_17213_Periódico_Número_261_Vigésima_Segunda_Parte_ocr.pdf,True,11036,Santiago Maravatio,0.73,fuzzy,revisar
+guanajuato,2025,Valle de Estimado 5,valle_de_estimado_5,2024_17215_Periódico_Número_261_Vigésima_Cuarta_Parte_ocr.pdf,True,11042,Valle de Santiago,0.78,fuzzy,revisar
+guanajuato,2025,Valle de Estimado y,valle_de_estimado_y,2024_17215_Periódico_Número_261_Vigésima_Cuarta_Parte_ocr.pdf,True,11042,Valle de Santiago,0.78,fuzzy,revisar
+guanajuato,2025,Valle de Estimado o,valle_de_estimado_o,2024_17215_Periódico_Número_261_Vigésima_Cuarta_Parte_ocr.pdf,True,11042,Valle de Santiago,0.78,fuzzy,revisar
+guanajuato,2025,Valle de Estimado E go,valle_de_estimado_e_go,2024_17215_Periódico_Número_261_Vigésima_Cuarta_Parte_ocr.pdf,True,11042,Valle de Santiago,0.77,fuzzy,revisar
+guanajuato,2025,YU sn,yu_sn,2024_17216_Periódico_Número_261_Vigésima_Quinta_Parte_ocr.pdf,True,11024,Pueblo Nuevo,0.35,fuzzy,ruido_o_OCR_severo
+guanajuato,2025,RU HARO,ru_haro,2024_17228_Periódico_Número_261_Décima_Primera_Parte_ocr.pdf,True,11019,Jerecuaro,0.62,fuzzy,revisar
+guanajuato,2025,MO Z. Ingresos Administración Centralizada DECRETO MÚMERO 23,mo_z_ingresos_administracion_centralizada_decreto_mumero_23,2024_17241_Periódico_Número_261_Décima_Sexta_Parte_ocr.pdf,True,11035,Santa Cruz de Juventino Rosas,0.27,fuzzy,ruido_o_OCR_severo
+guanajuato,2025,OC 4,oc_4,2024_17241_Periódico_Número_261_Décima_Sexta_Parte_ocr.pdf,True,11013,Doctor Mora,0.40,fuzzy,ruido_o_OCR_severo
+sonora,2010,,la_da,2009CLXXXIV53XVIII.pdf,True,26021,La Colorada,0.62,fuzzy,revisar
+sonora,2010,,sin_municipio,2009CLXXXIV53XXVII.pdf,True,26013,Banamichi,0.45,fuzzy,ruido_o_OCR_severo
+sonora,2010,,guaymas_tomo_clxxxvi_numero_53_secc_vii_hermosillo,2010CLXXXVI53VII.pdf,True,26030,Hermosillo,0.33,fuzzy,ruido_o_OCR_severo
+sonora,2011,,mostzuma,2010CLXXXVI53XIX.pdf,True,26038,Moctezuma,0.82,fuzzy,revisar
+sonora,2011,,villa_judalgo,2010CLXXXVI53XVI.pdf,True,26067,Villa Hidalgo,0.85,fuzzy,revisar
+sonora,2010,,la_heroica_ures,2010CLXXXVI53XVI.pdf,True,26066,Ures,0.42,fuzzy,ruido_o_OCR_severo
+sonora,2012,,sahuaripa_y_san_pedro_de_la_cueva_tomo_clxxxix_numero_2_seccion_xi_hermosillo,2012CLXXXIX2XI.pdf,True,26057,San Pedro de la Cueva,0.43,fuzzy,ruido_o_OCR_severo
+sonora,2012,,benito_juarez_y_san_ignacio_rio_muerto_tomo_clxxxix_numero_2_seccion_xiv_hermosillo,2012CLXXXIX2XIV.pdf,True,26072,San Ignacio Rio Muerto,0.42,fuzzy,ruido_o_OCR_severo
+sonora,2012,,lmuris,2012CLXXXIX2XIX.pdf,True,26035,Imuris,0.83,fuzzy,revisar
+sonora,2011,,santa_cril,2012CLXXXIX2XV.pdf,True,26059,Santa Cruz,0.80,fuzzy,revisar
+sonora,2012,,scrisspa,2012CLXXXIX2XVII.pdf,True,26052,Sahuaripa,0.59,fuzzy,ruido_o_OCR_severo
+sonora,2012,,vecera,2012CLXXXIX2XVII.pdf,True,26069,Yecora,0.67,fuzzy,revisar
+sonora,2012,,sacaliehuachi,2012CLXXXIX2XXI.pdf,True,26008,Bacadehuachi,0.80,fuzzy,revisar
+sonora,2012,,lmuris,2012CXC53XIX.pdf,True,26035,Imuris,0.83,fuzzy,revisar
+sonora,2013,,piuquito,2012CXC53XX.pdf,True,26047,Pitiquito,0.82,fuzzy,revisar
+sonora,2013,,tnncheras,2012CXC53XXII.pdf,True,26064,Trincheras,0.84,fuzzy,revisar
+sonora,2013,,la_heroica_ures,2012CXC53XXII.pdf,True,26066,Ures,0.42,fuzzy,ruido_o_OCR_severo
+sonora,2012,,scrisspa,SON_PREDIAL_2012_bacoachi.pdf,True,26052,Sahuaripa,0.59,fuzzy,ruido_o_OCR_severo
+sonora,2012,,vecera,SON_PREDIAL_2012_bacoachi.pdf,True,26069,Yecora,0.67,fuzzy,revisar
+sonora,2012,,lmuris,SON_PREDIAL_2012_baviacora.pdf,True,26035,Imuris,0.83,fuzzy,revisar
+sonora,2011,,santa_cril,SON_PREDIAL_2012_magdalena.pdf,True,26059,Santa Cruz,0.80,fuzzy,revisar
+sonora,2012,,lmuris,SON_PREDIAL_2012_mazatan.pdf,True,26035,Imuris,0.83,fuzzy,revisar
+sonora,2012,,lmuris,SON_PREDIAL_2012_rosario.pdf,True,26035,Imuris,0.83,fuzzy,revisar
+sonora,2012,,scrisspa,SON_PREDIAL_2012_san_felipe_de_jesus.pdf,True,26052,Sahuaripa,0.59,fuzzy,ruido_o_OCR_severo
+sonora,2012,,vecera,SON_PREDIAL_2012_san_felipe_de_jesus.pdf,True,26069,Yecora,0.67,fuzzy,revisar
+sonora,2012,,scrisspa,SON_PREDIAL_2012_san_javier.pdf,True,26052,Sahuaripa,0.59,fuzzy,ruido_o_OCR_severo
+sonora,2012,,vecera,SON_PREDIAL_2012_san_javier.pdf,True,26069,Yecora,0.67,fuzzy,revisar
+sonora,2011,,santa_cril,SON_PREDIAL_2012_santa_cruz.pdf,True,26059,Santa Cruz,0.80,fuzzy,revisar
+sonora,2012,,lmuris,SON_PREDIAL_2013_mazatan.pdf,True,26035,Imuris,0.83,fuzzy,revisar
+sonora,2013,,piuquito,SON_PREDIAL_2013_pitiquito.pdf,True,26047,Pitiquito,0.82,fuzzy,revisar
+sonora,2013,,tnncheras,SON_PREDIAL_2013_ures.pdf,True,26064,Trincheras,0.84,fuzzy,revisar
+sonora,2013,,la_heroica_ures,SON_PREDIAL_2013_ures.pdf,True,26066,Ures,0.42,fuzzy,ruido_o_OCR_severo
+sonora,2016,,bacadehuwik,2015CXCVI51VIII.pdf,True,26008,Bacadehuachi,0.78,fuzzy,revisar
+sonora,2018,,balas_hill,2015CXCVI51X.pdf,True,26016,Benjamin Hill,0.61,fuzzy,revisar
+sonora,2017,,pitiquit0_1,2016CXCVIII51XIX.pdf,True,26047,Pitiquito,0.80,fuzzy,revisar
+sonora,2017,,la_heroica_ures,2016CXCVIII51XXIII.pdf,True,26066,Ures,0.42,fuzzy,ruido_o_OCR_severo
+sonora,2018,,garbo,2017CC52III.pdf,True,26020,Carbo,0.80,fuzzy,revisar
+sonora,2018,,huachmera,2017CC52VII.pdf,True,26031,Huachinera,0.84,fuzzy,revisar
+sonora,2018,,lmuris,2017CC52VII.pdf,True,26035,Imuris,0.83,fuzzy,revisar
+sonora,2018,,la_heroica_ures,2017CC52XVIII.pdf,True,26066,Ures,0.42,fuzzy,ruido_o_OCR_severo
+sonora,2018,,guayrnas,EE2131DICIEMBRE2017.pdf,True,26029,Guaymas,0.80,fuzzy,revisar
+sonora,2019,,benjamjn_hjll,2018CCII51IX.pdf,True,26016,Benjamin Hill,0.85,fuzzy,revisar
+sonora,2019,,moctezllma,2018CCII51V.pdf,True,26038,Moctezuma,0.84,fuzzy,revisar
+sonora,2019,,alij,2018CCII51VII.pdf,True,26007,Atil,0.50,fuzzy,ruido_o_OCR_severo
+sonora,2019,,carilo,2018CCII51VIII.pdf,True,26020,Carbo,0.73,fuzzy,revisar
+sonora,2018,,cajcme,2018CCII51X.pdf,True,26018,Cajeme,0.83,fuzzy,revisar
+sonora,2019,,foroxteras,2018CCII51XII.pdf,True,26027,Fronteras,0.84,fuzzy,revisar
+sonora,2018,,in-uris,2018CCII51XII.pdf,True,26035,Imuris,0.77,fuzzy,revisar
+sonora,2019,,yitcora,2018CCII51XIX.pdf,True,26069,Yecora,0.77,fuzzy,revisar
+sonora,2019,,saiiuarjpa,2018CCII51XVI.pdf,True,26052,Sahuaripa,0.74,fuzzy,revisar
+sonora,2020,,arjzpe,EE2712201910.pdf,True,26006,Arizpe,0.83,fuzzy,revisar
+sonora,2020,,arizpc,EE2712201910.pdf,True,26006,Arizpe,0.83,fuzzy,revisar
+sonora,2020,,opodcpc,EE2712201915.pdf,True,26045,Opodepe,0.71,fuzzy,revisar
+sonora,2020,,sajuc,EE2712201919.pdf,True,26060,Saric,0.60,fuzzy,revisar
+sonora,2020,,la_heroica_ures,EE2712201920.pdf,True,26066,Ures,0.42,fuzzy,ruido_o_OCR_severo
+sonora,2020,,iluasabas,EE271220198.pdf,True,26032,Huasabas,0.82,fuzzy,revisar
+sonora,2019,,alij,SON_PREDIAL_2019_arizpe.pdf,True,26007,Atil,0.50,fuzzy,ruido_o_OCR_severo
+sonora,2019,,alij,SON_PREDIAL_2019_atil.pdf,True,26007,Atil,0.50,fuzzy,ruido_o_OCR_severo
+sonora,2019,,alij,SON_PREDIAL_2019_bacadehuachi.pdf,True,26007,Atil,0.50,fuzzy,ruido_o_OCR_severo
+sonora,2019,,benjamjn_hjll,SON_PREDIAL_2019_benjamin_hill.pdf,True,26016,Benjamin Hill,0.85,fuzzy,revisar
+sonora,2019,,benjamjn_hjll,SON_PREDIAL_2019_caborca.pdf,True,26016,Benjamin Hill,0.85,fuzzy,revisar
+sonora,2018,,cajcme,SON_PREDIAL_2019_cumpas.pdf,True,26018,Cajeme,0.83,fuzzy,revisar
+sonora,2019,,foroxteras,SON_PREDIAL_2019_general_plutarco_elias_calles.pdf,True,26027,Fronteras,0.84,fuzzy,revisar
+sonora,2018,,in-uris,SON_PREDIAL_2019_general_plutarco_elias_calles.pdf,True,26035,Imuris,0.77,fuzzy,revisar
+sonora,2019,,moctezllma,SON_PREDIAL_2019_moctezuma.pdf,True,26038,Moctezuma,0.84,fuzzy,revisar
+sonora,2019,,saiiuarjpa,SON_PREDIAL_2019_navojoa.pdf,True,26052,Sahuaripa,0.74,fuzzy,revisar
+sonora,2021,,quiiicgo1,2020CCVI51XIX.pdf,True,26049,Quiriego,0.71,fuzzy,revisar
+sonora,2021,,tubljtama,2020CCVI51XXI.pdf,True,26065,Tubutama,0.82,fuzzy,revisar
+sonora,2021,,la_heroica_ures,2020CCVI51XXI.pdf,True,26066,Ures,0.42,fuzzy,ruido_o_OCR_severo
+sonora,2020,,la_heroica_ures,SON_PREDIAL_2020_tepache.pdf,True,26066,Ures,0.42,fuzzy,ruido_o_OCR_severo
+sonora,2022,,hermosiho,2021CCVIII53II.pdf,True,26030,Hermosillo,0.84,fuzzy,revisar
+sonora,2022,,gua_ymas_de_zaragoza,2021CCVIII53VII.pdf,True,26029,Guaymas,0.52,fuzzy,ruido_o_OCR_severo
+sonora,2022,,llavispe,2021CCVIII53X.pdf,True,26015,Bavispe,0.80,fuzzy,revisar
+sonora,2022,,curnpas,2021CCVIII53X.pdf,True,26023,Cumpas,0.77,fuzzy,revisar
+sonora,2022,,gua_ymas_de_zaragoza,EE3112202116.pdf,True,26029,Guaymas,0.52,fuzzy,ruido_o_OCR_severo
+sonora,2022,,carba,EE311220216.pdf,True,26020,Carbo,0.80,fuzzy,revisar
+sonora,2021,,carro,SON_PREDIAL_2021_caborca.pdf,True,26020,Carbo,0.80,fuzzy,revisar
+sonora,2021,,quiiicgo1,SON_PREDIAL_2021_opodepe.pdf,True,26049,Quiriego,0.71,fuzzy,revisar
+sonora,2021,,quiiicgo1,SON_PREDIAL_2021_oquitoa.pdf,True,26049,Quiriego,0.71,fuzzy,revisar
+sonora,2021,,tubljtama,SON_PREDIAL_2021_suaqui_grande.pdf,True,26065,Tubutama,0.82,fuzzy,revisar
+sonora,2021,,la_heroica_ures,SON_PREDIAL_2021_suaqui_grande.pdf,True,26066,Ures,0.42,fuzzy,ruido_o_OCR_severo
+sonora,2021,,tubljtama,SON_PREDIAL_2021_trincheras.pdf,True,26065,Tubutama,0.82,fuzzy,revisar
+sonora,2021,,la_heroica_ures,SON_PREDIAL_2021_trincheras.pdf,True,26066,Ures,0.42,fuzzy,ruido_o_OCR_severo
+sonora,2024,,alil,EE311220233.pdf,True,26007,Atil,0.75,fuzzy,revisar
+sonora,2024,,carba,EE311220236.pdf,True,26020,Carbo,0.80,fuzzy,revisar
+sonora,2024,,garbo,EE311220236.pdf,True,26020,Carbo,0.80,fuzzy,revisar
+sonora,2025,,heroica_guaymas_de_zaragoza,2024CCXIV53XIV.pdf,True,26029,Guaymas,0.41,fuzzy,ruido_o_OCR_severo
+sonora,2025,,carba,EE3112202412.pdf,True,26020,Carbo,0.80,fuzzy,revisar
+sonora,2025,,cajcme,EE3112202413.pdf,True,26018,Cajeme,0.83,fuzzy,revisar
+sonora,2025,,guay_mas_de_zaragoza,EE3112202417.pdf,True,26029,Guaymas,0.52,fuzzy,ruido_o_OCR_severo
+sonora,2025,,seric,EE3112202418.pdf,True,26060,Saric,0.80,fuzzy,revisar
+sonora,2025,,hennosillo,EE311220246.pdf,True,26030,Hermosillo,0.80,fuzzy,revisar
+oaxaca,2010,ZAPOTITLAN DEL RIO,zapotitlan_del_rio,SEC39-04TA-2010-09-25_ocr.pdf,True,20461,Santiago del Rio,0.71,fuzzy,revisar
+oaxaca,2011,la Villa de Valuación que emita la Tesorería Municipal. Zaachila,la_villa_de_valuacion_que_emita_la_tesoreria_municipal_zaachila,EXT04-ZAACHILA-2011-03-03_ocr.pdf,True,20549,"Heroica Villa Tezoatlan de Segura y Luna, Cuna de la Independencia de Oaxaca",0.46,fuzzy,ruido_o_OCR_severo
+oaxaca,2042,Ácimas establece el arficiso 117 tracción Il segundo párralo de la Constitución Politica Trujano,acimas_establece_el_arficiso_117_traccion_il_segundo_parralo_de_la_constitucion_politica_trujano,SEC53-03RA-2011-12-31_ocr.pdf,True,20549,"Heroica Villa Tezoatlan de Segura y Luna, Cuna de la Independencia de Oaxaca",0.36,fuzzy,ruido_o_OCR_severo
+oaxaca,2012,MUNICIPIOS DE ZIMATLAN,municipios_de_zimatlan,SEC53-13VA-2011-12-31_ocr.pdf,True,20013,Cienega de Zimatlan,0.68,fuzzy,revisar
+oaxaca,2012,SANBLAS ATEMPA,sanblas_atempa,SEC30-07MA-2012-07-28_ocr.pdf,True,20231,San Lucas Camotlan,0.62,fuzzy,revisar
+oaxaca,2013,San Idelfonso,san_idelfonso,SEC21-05TA-2013-05-25_ocr.pdf,True,20155,San Ildefonso Sola,0.77,fuzzy,revisar
+oaxaca,2013,la Heroica ciudad de,la_heroica_ciudad_de,SEC26-04TA-2013-06-29_ocr.pdf,True,20397,Heroica Ciudad de Tlaxiaco,0.74,fuzzy,revisar
+oaxaca,2014,Domingo Albarradas Tlacolula Oaxaca,domingo_albarradas_tlacolula_oaxaca,SEC06-03RA-2014-02-08_ocr.pdf,True,20506,Santo Domingo Albarradas,0.61,fuzzy,revisar
+oaxaca,2014,Santa Lucia Monte Verde Putla Oaxaca,santa_lucia_monte_verde_putla_oaxaca,SEC12-09NA-2014-03-22_ocr.pdf,True,20392,Santa Lucia Monteverde,0.76,fuzzy,revisar
+oaxaca,2014,San Idelfonso Sola de Vega Oaxaca,san_idelfonso_sola_de_vega_oaxaca,SEC14-04TA-2014-04-05_ocr.pdf,True,20155,San Ildefonso Sola,0.67,fuzzy,revisar
+oaxaca,2014,Santo Tomás Tamazulapam Miahuatlán,santo_tomas_tamazulapam_miahuatlan,SEC16-04TA-2014-04-19_ocr.pdf,True,20533,Santo Tomas Tamazulapan,0.81,fuzzy,revisar
+oaxaca,2014,Coateas Altas Ejutla Oaxaca,coateas_altas_ejutla_oaxaca,SEC17-02DA-2014-04-26_ocr.pdf,True,20015,Coatecas Altas,0.63,fuzzy,revisar
+oaxaca,2014,San Juan publicación en el Periódico Oficial del Gobierno del Estado de Oaxaca. Quiahije,san_juan_publicacion_en_el_periodico_oficial_del_gobierno_del_estado_de_oaxaca_quiahije,SEC25-07MA-2014-06-21_ocr.pdf,True,20193,San Juan del Estado,0.36,fuzzy,ruido_o_OCR_severo
+oaxaca,2018,TEGTITLAN CEL YALLE. MSTRFTO DE TLACOLULA,tegtitlan_cel_yalle_mstrfto_de_tlacolula,EXT-FEDERRATASDEC960961-2015-07-16_ocr.pdf,True,20546,Teotitlan del Valle,0.54,fuzzy,ruido_o_OCR_severo
+oaxaca,2015,Espinal Juchitán,espinal_juchitan,SEC42-06TA-2015-10-17_ocr.pdf,True,20164,San Jorge Nuchita,0.61,fuzzy,revisar
+oaxaca,2016,San Idelfonso,san_idelfonso,SEC15-19VA-2016-04-09_ocr.pdf,True,20155,San Ildefonso Sola,0.77,fuzzy,revisar
+oaxaca,2019,Huatepec Teotitlán,huatepec_teotitlan,SEC10-08VA-2019-03-09_ocr.pdf,True,20491,Santiago Textitlan,0.61,fuzzy,revisar
+oaxaca,2019,San Pablo Villa Tlacolula,san_pablo_villa_tlacolula,SEC12-04TA-2019-03-23_ocr.pdf,True,20298,San Pablo Villa de Mitla,0.78,fuzzy,revisar
+oaxaca,2019,Qaxaca de Juárez LVtl UMA Urudad de Medida y Aclualización. y LvHl TÍTULO SEGUNDO Unidad de Recaudación Unidad de Recaud,qaxaca_de_juarez_lvtl_uma_urudad_de_medida_y_aclualizacion_y_lvhl_titulo_segundo_unidad_de_recaudacion_unidad_de_recaudacion_municipal_de_los_ingresos_de_la_hacienda_publica_municipal,EXT-DEC601-2019-04-03_ocr.pdf,True,20549,"Heroica Villa Tezoatlan de Segura y Luna, Cuna de la Independencia de Oaxaca",0.32,fuzzy,ruido_o_OCR_severo
+oaxaca,2019,Villa de Hidalgo Villa Alta,villa_de_hidalgo_villa_alta,SEC16-25TA-2019-04-20_ocr.pdf,True,20038,Villa Hidalgo Yalalag,0.71,fuzzy,revisar
+oaxaca,2019,Natividad Benemérito Ixtlán Oaxaca,natividad_benemerito_ixtlan_oaxaca,SEC17-14VA-2019-04-27_ocr.pdf,True,20129,San Cristobal Suchixtlahuaca,0.48,fuzzy,ruido_o_OCR_severo
+oaxaca,2019,San Idelfonso Sola de Vega,san_idelfonso_sola_de_vega,SEC22-08VA-2019-06-01_ocr.pdf,True,20155,San Ildefonso Sola,0.77,fuzzy,revisar
+oaxaca,2020,SAN MARTÍN YUCUXACO,san_martin_yucuxaco,SEC25-15TA-2020-06-20_ocr.pdf,True,20317,San Pedro Martir Yucuxaco,0.82,fuzzy,revisar
+oaxaca,2020,SANTIAGO ZOOGOCHO,santiago_zoogocho,SEC34-25TA-2020-08-22_ocr.pdf,True,20503,Santiago Zoochila,0.82,fuzzy,revisar
+oaxaca,2021,SAN,san,SEC14-21RA-2021-04-03_ocr.pdf,True,20353,Santa Ana,0.50,fuzzy,ruido_o_OCR_severo
