@@ -391,7 +391,7 @@ def _extract_one(
         if r2.output is None and not force_full_model:
             error_history.append(f"e2={r2.error}")
             escalation_msg = USER_RETRY_TEMPLATE_V3.format(
-                ERROR=(f"Intento previo (mini) falló con: {r2.error}\n"
+                ERROR=(f"Intento previo falló con: {r2.error}\n"
                        f"Intento aún anterior falló con: {r1.error}"),
                 TEXTO=texto,
             )
@@ -510,7 +510,7 @@ def _extract_one(
         elif has_otro:
             razon = "clasificado_como_otro_no_clasificado"
         elif escalado:
-            razon = f"escalado_a_{OPENAI_MODEL_FALLBACK}_tras_2x_mini_fallido"
+            razon = f"escalado_a_{OPENAI_MODEL_FALLBACK}_tras_2x_fallido"
         else:
             razon = None
 
@@ -606,7 +606,7 @@ def extraer_municipio(
         cvegeo: Clave INEGI de 5 dígitos.
         anios: Iterable de años.
         slug_override: Slug explícito si difiere del catálogo INEGI.
-        force_full_model: Arrancar con modelo full (gpt-5.4) en vez de mini.
+        force_full_model: Forzar OPENAI_MODEL_FALLBACK desde el primer intento.
 
     Returns:
         Lista de ExtractionResult. JSONs en `data/{estado}/json_predial/{anio}/`.

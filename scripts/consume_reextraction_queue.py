@@ -3,8 +3,8 @@
 Lee ``output/hitl/cola_reextraccion.csv`` y re-ejecuta la extracción v3
 para cada fila no procesada.  Las filas con ``procesado`` no vacío se saltan.
 
-Usa gpt-5.4 (full model) por default ya que estos casos son los más difíciles
-y fallaron previamente con mini.
+Usa gpt-5.4 (full model) por default (force_full_model=True), igual que el
+extractor base; estos casos son los más difíciles.
 
 Uso:
   python -m scripts.consume_reextraction_queue

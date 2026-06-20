@@ -85,8 +85,9 @@ Contenedor multi-tarifa `PredialV3.tarifas: list[TarifaPredial]`. Cambios clave:
 ## LLM extraction
 
 - OpenAI API con structured output (JSON schema)
-- Modelo default: gpt-5.4-mini. Fallback/visión: gpt-5.4
-- Cascada: mini → retry → escalación a full → re-OCR → visión
+- Modelo: gpt-5.4 (full) desde el primer intento (los modelos chicos generan
+  falsos positivos/alucinaciones en estas tablas). Visión: gpt-5.4
+- Cascada: gpt-5.4 → retry → re-OCR → visión
 - **v3 es el único flujo**: `src/extraction/llm_extract_v3.py` (`extraer_municipio`)
   → `data/{estado}/json_predial/{anio}/`
 - El paso `extract` del pipeline (`EstadoAdapter.run_llm_extraction`) usa v3,
@@ -110,7 +111,7 @@ Chihuahua, Colima, Edomex, Sinaloa, Tabasco — tarifa uniforme estatal. No pasa
 ## Variables de entorno
 
 - `OPENAI_API_KEY` (requerida para extraction)
-- `OPENAI_MODEL` (default: gpt-5.4-mini)
+- `OPENAI_MODEL` (default: gpt-5.4)
 - `OPENAI_MODEL_FALLBACK` (default: gpt-5.4)
 
 ## Estados implementados (11)

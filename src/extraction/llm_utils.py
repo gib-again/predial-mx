@@ -26,8 +26,9 @@ except Exception:
 
 ROOT = Path(__file__).resolve().parents[2]
 
-# Default mini-first (cascada mini → full).  Definir en .env para sobreescribir.
-OPENAI_MODEL = os.environ.get("OPENAI_MODEL", "gpt-5.4-mini")
+# gpt-5.4 (full) desde el primer intento: los modelos chicos generan falsos
+# positivos y alucinaciones en estas tablas.  Configurable en .env.
+OPENAI_MODEL = os.environ.get("OPENAI_MODEL", "gpt-5.4")
 OPENAI_MODEL_FALLBACK = os.environ.get("OPENAI_MODEL_FALLBACK", "gpt-5.4")
 
 _client: OpenAI | None = None
