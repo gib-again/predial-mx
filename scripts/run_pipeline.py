@@ -23,7 +23,15 @@ import argparse
 import sys
 import time
 
-from src.estados import get_adapter, list_estados
+# En Windows con stdout redirigido a archivo, la consola usa cp1252 y los prints
+# con Unicode (─, ✓, en-dash, acentos) lanzan UnicodeEncodeError.  Forzar UTF-8.
+for _stream in (sys.stdout, sys.stderr):
+    try:
+        _stream.reconfigure(encoding="utf-8")
+    except Exception:
+        pass
+
+from src.estados import get_adapter, list_estados  # noqa: E402
 
 STEPS_ORDERED = [
     "discover", "download", "ocr",
