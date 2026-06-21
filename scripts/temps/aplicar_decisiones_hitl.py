@@ -55,6 +55,7 @@ VALID_DECISIONS = {
     "corregir_previo",
     "reextraer",
     "re_segmentar",
+    "sin_ley",
     "ignorar",
 }
 
@@ -440,6 +441,26 @@ def main():
                 "procesado": "",
                 "timestamp": "",
             })
+
+        elif decision == "sin_ley":
+            # Cobertura: el auditor confirma que no hubo ley de ingresos ese
+            # muni-año.  Estampa el placeholder para cerrar la celda.
+            if not args.dry_run:
+                jp = Path(row.get("json_path", ""))
+                if jp.exists():
+                    try:
+                        doc = json.loads(jp.read_text(encoding="utf-8"))
+                        meta = doc.get("_meta") or {}
+                        meta["razon"] = "sin_ley"
+                        meta["hitl_timestamp"] = timestamp
+                        doc["_meta"] = meta
+                        jp.write_text(json.dumps(doc, ensure_ascii=False, indent=2),
+                                      encoding="utf-8")
+                        bit_row["json_propagado"] = str(jp)
+                    except Exception as e:
+                        print(f"  [ERROR] sin_ley {jp}: {e}")
+                        contadores["error"] += 1
+                        continue
 
         contadores[decision] += 1
         bitacora.append(bit_row)

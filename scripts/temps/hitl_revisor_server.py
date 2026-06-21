@@ -55,6 +55,7 @@ VALID_DECISIONS = [
     "corregir_previo",
     "reextraer",
     "re_segmentar",
+    "sin_ley",
     "ignorar",
 ]
 
@@ -65,6 +66,7 @@ DECISION_LABELS = {
     "corregir_previo":           "Corregir año previo ← actual (D12: previo es error)",
     "reextraer":                 "Re-extraer LLM (segmento OK, extracción falló)",
     "re_segmentar":              "Re-segmentar (notas: paginas=X-Y [; pdf=ruta])",
+    "sin_ley":                   "Sin ley (cobertura: no hubo ley de ingresos ese año)",
     "ignorar":                   "Ignorar / descartar",
 }
 

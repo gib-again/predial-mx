@@ -247,6 +247,48 @@ def _make_row(
 
 
 # ══════════════════════════════════════════════════════════════
+# Cobertura — placeholder de muni-año sin extracción (SEV2)
+# ══════════════════════════════════════════════════════════════
+
+def det_cobertura_incompleta(
+    doc: dict, estado_slug: str, municipio_slug: str, anio: int,
+    json_path: str, **kw,
+) -> list[QueueRow]:
+    """Surfacea JSONs sin predial (placeholder de cobertura o extracción fallida).
+
+    - Placeholder (muni-año sin extracción): SEV2.  El auditor localiza PDF+span
+      (``re_segmentar``) o marca ``sin_ley``.  Si hay focus huérfano, la señal
+      lleva la pista (subsume identidad_no_resuelta).
+    - Extracción real con predial=null (falló validación/fuente): SEV1.
+
+    iter_v3_corpus excluye predial=null, así que sin esto serían invisibles.
+    """
+    if doc.get("predial") is not None:
+        return []
+    if (doc.get("_meta") or {}).get("razon") == "sin_ley":
+        return []  # resuelto: no hubo ley
+    mc = doc.get("_meta_cobertura") or {}
+    if mc.get("placeholder"):
+        hint = mc.get("hint_focus_huerfano")
+        if hint:
+            senal = (f"Sin extracción. Pista de focus huérfano: «{hint.get('texto_crudo', '')}» "
+                     f"(score {hint.get('score')}; {hint.get('source_pdf', '')}). "
+                     f"Confirmar PDF+span (re_segmentar) o marcar sin_ley.")
+        else:
+            senal = ("Sin extracción ni focus localizado. Localizar PDF+span (re_segmentar) "
+                     "o marcar sin_ley si no hubo ley de ingresos.")
+        return [_make_row("cobertura_incompleta", "SEV2", senal,
+                          estado_slug, municipio_slug, anio, json_path, **kw)]
+    # Extracción real que devolvió predial=null.
+    razon = ((doc.get("_meta_v3") or {}).get("razon")
+             or (doc.get("_meta") or {}).get("razon") or "?")
+    senal = (f"Extracción falló (predial=null): {str(razon)[:120]}. "
+             f"Re-extraer (reextraer) o re_segmentar.")
+    return [_make_row("extraccion_fallida", "SEV1", senal,
+                      estado_slug, municipio_slug, anio, json_path, **kw)]
+
+
+# ══════════════════════════════════════════════════════════════
 # D3 — mixto_monocolumna_cuotafija (SEV1)
 # ══════════════════════════════════════════════════════════════
 

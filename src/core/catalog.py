@@ -60,6 +60,16 @@ def build_cvegeo(cve_ent: str, cve_mun: str) -> str:
     return f"{str(cve_ent).zfill(2)}{str(cve_mun).zfill(3)}"
 
 
+def cvegeos_de_estado(estado_slug: str) -> list[str]:
+    """Lista de CVEGEO (5 dígitos) de todos los municipios INEGI del estado."""
+    from src.core.constants import CVE_ENT_ESTADO
+
+    cve_ent = CVE_ENT_ESTADO.get(estado_slug, "")
+    if not cve_ent:
+        return []
+    return sorted(cg for cg, rec in _by_cvegeo().items() if rec["cve_ent"] == cve_ent)
+
+
 def cvegeo_to_nombre(cvegeo: str) -> str:
     """Nombre INEGI (``NOM_MUN``) para display.  '' si no se encuentra."""
     rec = _by_cvegeo().get(str(cvegeo).zfill(5))

@@ -17,12 +17,14 @@ from src.core.catalog import cvegeo_to_nombre
 from src.core.constants import PREFIJOS_ESTADO
 from src.core.corpus import iter_corpus_files, parse_fname
 from src.core.segment_schema import read_segment_csv
+from src.hitl.cobertura import EXCLUIDOS as COBERTURA_EXCLUIDOS
+from src.hitl.cobertura import estados_cobertura
 from src.hitl.detectors import (
     JSON_DETECTORS,
     det_cambio_interanual,
+    det_cobertura_incompleta,
     det_distancia_inicio_anomala,
     det_frontera_sin_verificar,
-    det_identidad_no_resuelta,
 )
 from src.hitl.decisiones import load_latest
 from src.hitl.queue_schema import (
@@ -32,6 +34,10 @@ from src.hitl.queue_schema import (
 )
 
 DATA_ROOT = Path("data")
+
+# Estados que NO entran a la cola HITL (Oaxaca por volumen; hardcoded no se
+# segmentan).  Reusa la exclusión de la capa de cobertura.
+OMIT_HITL = COBERTURA_EXCLUIDOS
 
 ESTADO_PRETTY = {
     "coahuila": "Coahuila", "guanajuato": "Guanajuato", "jalisco": "Jalisco",
@@ -77,8 +83,8 @@ def iter_v3_corpus(
         else sorted(set(PREFIJOS_ESTADO) | (ESTADOS_HARDCODED if include_hardcoded else set()))
     )
     for slug in estados:
-        if slug in ESTADOS_HARDCODED and not include_hardcoded:
-            continue
+        if slug in OMIT_HITL and not (include_hardcoded and slug in ESTADOS_HARDCODED):
+            continue  # Oaxaca y hardcoded fuera de HITL
         for p in iter_corpus_files(slug):
             parsed = parse_fname(p)
             if not parsed:
@@ -118,8 +124,8 @@ def run(
         else sorted(PREFIJOS_ESTADO.keys())
     )
     for est_slug in estados_to_scan:
-        if est_slug in ESTADOS_HARDCODED and not include_hardcoded:
-            continue
+        if est_slug in OMIT_HITL and not (include_hardcoded and est_slug in ESTADOS_HARDCODED):
+            continue  # Oaxaca y hardcoded fuera de HITL
         seg_rows = load_segment_csv(est_slug)
         if not seg_rows:
             continue
@@ -129,7 +135,8 @@ def run(
             all_rows.extend(det_frontera_sin_verificar(seg_rows, est_slug, pretty))
 
         all_rows.extend(det_distancia_inicio_anomala(seg_rows, est_slug, pretty))
-        all_rows.extend(det_identidad_no_resuelta(seg_rows, est_slug, pretty))
+        # identidad_no_resuelta queda subsumido por la capa de cobertura
+        # (det_cobertura_incompleta adjunta el focus huérfano como pista).
 
     # ── JSON-based detectors (D3-D11) + collect series for D12 ──
     n_json = 0
@@ -174,6 +181,34 @@ def run(
         n_interanual += len(hits)
     if n_interanual:
         print(f"  D12 cambio_interanual: {n_interanual} transiciones con cambio")
+
+    # ── Cobertura: JSONs sin predial (placeholders + extracciones fallidas) ──
+    # iter_v3_corpus excluye predial=null, así que se itera aparte.
+    n_cob = 0
+    for est_slug in estados_cobertura():
+        if estado_filter and est_slug != estado_filter:
+            continue
+        pretty = ESTADO_PRETTY.get(est_slug, est_slug.capitalize())
+        for p in iter_corpus_files(est_slug):
+            parsed = parse_fname(p)
+            if not parsed:
+                continue
+            anio, muni_slug = parsed
+            try:
+                doc = json.loads(p.read_text(encoding="utf-8"))
+            except Exception:
+                continue
+            if doc.get("predial") is not None:
+                continue  # solo placeholders / fallidos
+            cvegeo = (doc.get("_meta_v3") or {}).get("cvegeo", "")
+            kw = dict(estado=pretty,
+                      municipio=cvegeo_to_nombre(cvegeo) or _pretty_muni(muni_slug),
+                      cvegeo=cvegeo)
+            hits = det_cobertura_incompleta(doc, est_slug, muni_slug, anio, str(p), **kw)
+            all_rows.extend(hits)
+            n_cob += len(hits)
+    if n_cob:
+        print(f"  cobertura: {n_cob} casos sin predial (placeholders + fallidos)")
 
     # ── Consolidate: one row per municipio-año ──
     print(f"\nCorpus v3: {n_json} JSONs ({dict(by_estado)})")
