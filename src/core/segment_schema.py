@@ -108,10 +108,15 @@ def write_segment_csv(rows: Iterable[SegmentRow | dict], path: Path) -> Path:
 
 
 def read_segment_csv(path: Path) -> list[dict]:
-    """Lee ``segment.csv`` normalizando alias legados a las llaves canónicas."""
+    """Lee ``segment.csv`` normalizando alias legados a las llaves canónicas.
+
+    ``errors="replace"``: el texto OCR-crudo (municipio_raw, anchors) puede traer
+    bytes latin-1 sueltos; no deben tumbar la lectura.  Reescribir con
+    write_segment_csv normaliza el archivo a UTF-8 limpio.
+    """
     if not path.exists():
         return []
-    with path.open(encoding="utf-8-sig") as f:
+    with path.open(encoding="utf-8-sig", errors="replace") as f:
         rows = list(csv.DictReader(f))
     for row in rows:
         for old, new in _ALIASES.items():
