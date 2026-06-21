@@ -142,6 +142,7 @@ artefactos; ver Causa A).  La UI siempre intenta mostrar año previo (side-by-si
 | D3 | `mixto_monocolumna_cuotafija` | SEV1 | v3 JSON |
 | D4 | `tabla_vacia` | SEV1 | v3 JSON |
 | D5 | `otro_no_clasificado` | SEV1 | v3 JSON |
+| D5b | `remite_a_ley_externa` | SEV3 | v3 JSON: predial remite a Ley de Hacienda/Código Fiscal (baja sev) |
 | D6 | `progresivo_tasa_cero` | SEV1 | v3 JSON |
 | D7 | `bracket_superior_cerrado` | SEV2 | v3 JSON |
 | D8 | `rangos_no_monotonos` | SEV2 | v3 JSON |

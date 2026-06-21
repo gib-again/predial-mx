@@ -337,12 +337,23 @@ def det_otro_no_clasificado(
         cat = esq.get("categoria", "?")
         desc = (esq.get("descripcion_estructural") or "")[:80]
         amb = tarifa.get("ambito", "")
-        out.append(_make_row(
-            "otro_no_clasificado", "SEV1",
-            (f"Tarifa #{ti} ({amb}): el LLM no pudo clasificar el esquema "
-             f"(categoría: {cat}). Descripción: \"{desc}\""),
-            estado_slug, municipio_slug, anio, json_path, **kw,
-        ))
+        if cat == "remite_a_ley_externa":
+            # Estructura legal válida (la tarifa vive en la Ley de Hacienda /
+            # Código Fiscal); baja severidad — solo registrar para anotación.
+            out.append(_make_row(
+                "remite_a_ley_externa", "SEV3",
+                (f"Tarifa #{ti} ({amb}): la ley de ingresos remite a ley externa "
+                 f"(Hacienda Municipal / Código Fiscal). Tarifa no está aquí. "
+                 f"Descripción: \"{desc}\""),
+                estado_slug, municipio_slug, anio, json_path, **kw,
+            ))
+        else:
+            out.append(_make_row(
+                "otro_no_clasificado", "SEV1",
+                (f"Tarifa #{ti} ({amb}): el LLM no pudo clasificar el esquema "
+                 f"(categoría: {cat}). Descripción: \"{desc}\""),
+                estado_slug, municipio_slug, anio, json_path, **kw,
+            ))
     return out
 
 

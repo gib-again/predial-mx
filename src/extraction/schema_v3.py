@@ -392,13 +392,17 @@ class OtroNoClasificadoSchema(BaseModel):
         "segmento_vacio",
         "error_segmentacion",
         "municipio_sin_impuesto",
+        "remite_a_ley_externa",
     ] = Field(
         description=(
             "Por qué se cae al escape hatch. "
             "estructura_no_estandar: tabla existe pero no encaja. "
             "segmento_vacio: sin contenido tarifario. "
             "error_segmentacion: texto fragmentado/cortado. "
-            "municipio_sin_impuesto: no establece predial."
+            "municipio_sin_impuesto: no establece predial. "
+            "remite_a_ley_externa: SÍ hay predial pero la ley de ingresos NO fija "
+            "la tarifa; remite a la Ley de Hacienda Municipal o al Código Fiscal "
+            "del Estado. Usa esta categoría (no municipio_sin_impuesto)."
         ),
     )
     descripcion_estructural: str = Field(

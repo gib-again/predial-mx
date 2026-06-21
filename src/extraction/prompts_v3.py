@@ -99,11 +99,17 @@ Lo PROHIBIDO es la operación aritmética de reescalado (÷1000 para "al millar"
 ═══════════════════════════════════════════════════════════════════════════════
 
 P1. ¿El documento contiene tarifa real del impuesto predial?
-    NO (remite a otra ley estatal/general; sólo declara mínimo en SMG/UMA;
-        chunk vacío o truncado por OCR; municipio sin impuesto)
-       → `otro_no_clasificado` con la `categoria` correspondiente
-         (segmento_vacio | error_segmentacion | municipio_sin_impuesto |
-          estructura_no_estandar). STOP.
+    NO → `otro_no_clasificado` con la `categoria` correspondiente. STOP:
+       • remite_a_ley_externa: la ley de ingresos dice que el predial se cobra
+         conforme a la Ley de Hacienda Municipal o al Código Fiscal del Estado
+         (SÍ hay impuesto, pero la tarifa NO está aquí). USA ESTA, no
+         municipio_sin_impuesto.
+       • municipio_sin_impuesto: el documento no establece predial en absoluto.
+       • segmento_vacio: chunk sin contenido tarifario.
+       • error_segmentacion: texto fragmentado o truncado por OCR.
+       • estructura_no_estandar: hay tabla pero no encaja en ninguna variante.
+       (Sólo declarar el mínimo en SMG/UMA sin tarifa también es remite_a_ley_externa
+        o municipio_sin_impuesto según el texto.)
     SÍ → P2.
 
 P2. ¿La tabla principal del predial tiene columnas de RANGOS por valor catastral
