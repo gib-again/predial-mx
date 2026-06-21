@@ -154,8 +154,13 @@ class EstadoAdapter(ABC):
         from src.extraction.llm_extract_v3 import extraer_municipio
 
         if batch_mode:
-            print(f"  [{self.slug}] batch_mode no está soportado en el extractor v3; "
-                  "se ignora y se extrae en modo normal.")
+            # Batch API (−50%, asíncrono): crea + sube.  La descarga es aparte
+            # (hasta 24 h después): python -m scripts.batch_v3 {estado} --download
+            from src.extraction.batch_v3 import submit_estado
+            ids = submit_estado(self.slug)
+            print(f"  [{self.slug}] batch enviado ({len(ids)} sub-batches). "
+                  f"Descargar luego: python -m scripts.batch_v3 {self.slug} --download")
+            return
 
         seg_path = self.meta_dir / "segment.csv"
         seg_rows = read_segment_csv(seg_path)

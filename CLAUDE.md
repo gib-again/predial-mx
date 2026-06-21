@@ -13,9 +13,10 @@ python -m scripts.run_pipeline {estado} --steps download
 python -m scripts.run_pipeline {estado} --steps segment,extract
 python -m scripts.run_pipeline {estado} --from-step extract
 
-# Batch mode (LLM con 50% descuento)
-python -m scripts.run_pipeline {estado} --steps extract --batch
-python -m scripts.batch_download {estado}
+# Batch mode v3 (LLM con 50% descuento, asíncrono hasta 24h)
+python -m scripts.run_pipeline {estado} --steps extract --batch   # crea + sube
+python -m scripts.batch_v3 {estado} --status                       # consultar
+python -m scripts.batch_v3 {estado} --download                     # parsea + fallback
 
 # Todos los estados
 python -m scripts.run_pipeline --all --steps validate
@@ -95,7 +96,10 @@ Contenedor multi-tarifa `PredialV3.tarifas: list[TarifaPredial]`. Cambios clave:
   los casos ya extraídos (JSON v3 no vacío) salvo `--force-extract`.
 - **Re-extracción gana sobre overlay HITL**: una extracción exitosa retira el
   overlay `json_predial_hitl/` del caso (`_save_result`).  Una fallida lo conserva.
-- `--batch` (Batch API) **no** está soportado en v3; el flag se ignora.
+- **Batch API v3** (`src/extraction/batch_v3.py`, −50%, asíncrono): `extract --batch`
+  crea+sube; `scripts/batch_v3.py {estado} --download` parsea y guarda. Batch es
+  one-shot (1er intento txt); inválidos/`otro_no_clasificado` caen al **fallback
+  síncrono** con cascada (re-OCR/visión).
 - v2 (`llm_extract_v2.py`, `core/llm_extract.py`): legado dormido, ver `docs/SCHEMA_EVOLUTION.md`.
 
 ## Grupo B (estados hardcoded)
