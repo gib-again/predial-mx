@@ -11,6 +11,10 @@ data/*/indices/
 
 # ── Meta temporales pesados ──
 data/*/meta/batch_*.jsonl
+data/*/meta/batch_v3/
+
+# ── Backups locales de la cola HITL ──
+output/hitl/*.bak.csv
 
 # ── Python ──
 __pycache__/
