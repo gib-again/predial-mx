@@ -118,9 +118,9 @@ Chihuahua, Colima, Edomex, Sinaloa, Tabasco — tarifa uniforme estatal. No pasa
 - `OPENAI_MODEL` (default: gpt-5.4)
 - `OPENAI_MODEL_FALLBACK` (default: gpt-5.4)
 
-## Estados implementados (11)
+## Estados implementados (15)
 
-Coahuila (COAH), Jalisco (JAL), Querétaro (QRO), Yucatán (YUC), Tamaulipas (TAMPS), Chihuahua (CHIH), Colima (COLIMA), Edomex (EDOMEX), Sinaloa (SINALOA), Tabasco (TABASCO), Guanajuato (GTO), Oaxaca (OAX)
+Aguascalientes (AGS), Coahuila (COAH), Chihuahua (CHIH), Colima (COLIMA), Edomex (EDOMEX), Guanajuato (GTO), Jalisco (JAL), Oaxaca (OAX), Querétaro (QRO), San Luis Potosí (SLP), Sinaloa (SINALOA), Sonora (SON), Tabasco (TABASCO), Tamaulipas (TAMPS), Yucatán (YUC)
 
 ## Pipeline (6 pasos)
 

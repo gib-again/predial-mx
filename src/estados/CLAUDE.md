@@ -58,6 +58,7 @@ r"IMPUESTO\s+SOBRE\s+ESPECT[AÁ]CULOS"
 | Guanajuato | tarifa_millar | Con cuota_fija_adicional en algunos |
 | Oaxaca | — | Recién agregado |
 | Sonora | mixto | Cuota fija + tasa al millar por rangos; rústicos por hectárea; UMA desde 2017 |
+| Aguascalientes | — | "Impuesto a la Propiedad Raíz"; 11 munis, PDFs individuales, API JSON |
 
 ## Trampas comunes en segmentación
 

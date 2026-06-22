@@ -34,6 +34,7 @@ def json_predial_hitl_root(estado: str) -> Path:
 
 # Prefijos por estado para nombres de archivo
 PREFIJOS_ESTADO = {
+    "aguascalientes": "AGS",
     "coahuila":  "COAH",
     "jalisco":   "JAL",
     "queretaro": "QRO",
@@ -51,6 +52,7 @@ PREFIJOS_ESTADO = {
 # municipal en todos los artefactos (segment.csv, JSON v3, cola HITL).
 # Fuente: src/estados/{slug}/config.py (CVE_ENT).
 CVE_ENT_ESTADO = {
+    "aguascalientes": "01",
     "coahuila":  "05",
     "colima":    "06",
     "chihuahua": "08",
