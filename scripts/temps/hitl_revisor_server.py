@@ -506,6 +506,39 @@ def _is_under_allowed_root(p: Path) -> bool:
     return False
 
 
+_pdf_resolve_cache: dict[tuple[str, str], str] = {}
+
+
+def _resolve_source_pdf(estado_slug: str, source_pdf: str) -> Path | None:
+    """Resuelve el ``source_pdf`` de segment.csv a un archivo real en disco.
+
+    segment.csv guarda ``source_pdf`` con formatos heterogéneos entre estados:
+    ruta completa repo-relativa (Querétaro), solo el nombre (Sonora, GTO) o una
+    ruta parcial año/archivo (Yucatán).  Se intenta el valor tal cual; si no
+    existe, se busca por basename bajo ``data/{estado}/`` (pdf_raw + pdf_ocr).
+    Cacheado por (estado, basename) para no re-globear miles de filas.
+    """
+    if not source_pdf:
+        return None
+    p = Path(source_pdf)
+    if p.exists():
+        return p
+    base = Path(source_pdf.replace("\\", "/")).name
+    key = (estado_slug, base)
+    if key in _pdf_resolve_cache:
+        cached = _pdf_resolve_cache[key]
+        return Path(cached) if cached else None
+    found = ""
+    root = DATA_ROOT / estado_slug
+    if base and root.exists():
+        for cand in root.rglob(base):
+            if cand.is_file():
+                found = str(cand)
+                break
+    _pdf_resolve_cache[key] = found
+    return Path(found) if found else None
+
+
 @app.route("/file")
 def serve_file():
     raw = request.args.get("path", "")
@@ -1134,8 +1167,12 @@ def _render_seg_info(seg_row: dict | None, label: str = "Segmentación") -> str:
     #       Jalisco (un PDF por ley → la ley arranca en la página 1) y cuando no
     #       se conoce ley_page_start.
     if pdf_used:
-        src_pdf = Path(pdf_used)
-        if src_pdf.exists() and _is_under_allowed_root(src_pdf):
+        src_pdf = _resolve_source_pdf(estado_slug, pdf_used)
+        if src_pdf and _is_under_allowed_root(src_pdf):
+            # Página para el embed/botón predial: usa inicio de sección si se
+            # conoce; si no (p.ej. Querétaro no persiste predial_page_start),
+            # cae al inicio de la ley para que el preview más útil esté siempre.
+            embed_pg = pg_start or ley_start
             parts.append('<div style="margin-top:.3rem;display:flex;gap:.6rem;flex-wrap:wrap">')
             if pg_start:
                 parts.append(f'<a href="{_file_url(src_pdf)}#page={pg_start}" target="_blank" '
@@ -1145,15 +1182,22 @@ def _render_seg_info(seg_row: dict | None, label: str = "Segmentación") -> str:
                 parts.append(f'<a href="{_file_url(src_pdf)}#page={ley_start}" target="_blank" '
                              f'style="font-size:.78rem">▸ PDF: inicio de la ley (pág. {ley_start})</a>')
             parts.append('</div>')
-            # Embed colapsable en la página de la sección predial
-            if pg_start:
-                page_url = _file_url(src_pdf) + f"#page={pg_start}"
+            # Embed colapsable en la página más informativa (sección o ley)
+            if embed_pg:
+                page_url = _file_url(src_pdf) + f"#page={embed_pg}"
+                _lbl = "sección predial" if pg_start else "inicio de la ley"
                 parts.append(f'<details style="margin-top:.3rem"><summary style="cursor:pointer;'
                              f'font-size:.75rem;color:#374151">'
-                             f'&#9654; PDF fuente: página {pg_start}</summary>')
+                             f'&#9654; PDF fuente: página {embed_pg} ({_lbl})</summary>')
                 parts.append(f'<embed src="{page_url}" type="application/pdf" '
                              'style="height:400px">')
                 parts.append('</details>')
+        else:
+            # El PDF no se encontró en disco: aviso explícito en vez de ocultar
+            # silenciosamente los botones (caso GTO/Sonora/Yucatán con ruta parcial).
+            parts.append('<div style="color:#9a3412;font-size:.75rem;margin-top:.3rem">'
+                         f'PDF fuente no encontrado en disco: <code>{escape(Path(pdf_used).name)}</code> '
+                         '(revisar ruta en segment.csv).</div>')
 
     parts.append('</div>')
     return "".join(parts)

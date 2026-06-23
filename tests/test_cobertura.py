@@ -29,12 +29,12 @@ def _placeholder(hint=None, razon="sin_extraccion"):
 
 
 class TestDetectorCobertura:
-    def test_placeholder_emite_sev2(self):
+    def test_placeholder_emite_sev1(self):
         rows = det_cobertura_incompleta(_placeholder(), "guanajuato", "moroleon",
                                         2024, "p.json", estado="Guanajuato",
                                         municipio="Moroleon", cvegeo="11021")
         assert len(rows) == 1
-        assert rows[0].severidad == "SEV2"
+        assert rows[0].severidad == "SEV1"
         assert rows[0].detector == "cobertura_incompleta"
         assert rows[0].cvegeo == "11021"
 

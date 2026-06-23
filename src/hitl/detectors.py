@@ -247,7 +247,7 @@ def _make_row(
 
 
 # ══════════════════════════════════════════════════════════════
-# Cobertura — placeholder de muni-año sin extracción (SEV2)
+# Cobertura — placeholder de muni-año sin extracción (SEV1)
 # ══════════════════════════════════════════════════════════════
 
 def det_cobertura_incompleta(
@@ -256,7 +256,7 @@ def det_cobertura_incompleta(
 ) -> list[QueueRow]:
     """Surfacea JSONs sin predial (placeholder de cobertura o extracción fallida).
 
-    - Placeholder (muni-año sin extracción): SEV2.  El auditor localiza PDF+span
+    - Placeholder (muni-año sin extracción): SEV1.  El auditor localiza PDF+span
       (``re_segmentar``) o marca ``sin_ley``.  Si hay focus huérfano, la señal
       lleva la pista (subsume identidad_no_resuelta).
     - Extracción real con predial=null (falló validación/fuente): SEV1.
@@ -277,7 +277,7 @@ def det_cobertura_incompleta(
         else:
             senal = ("Sin extracción ni focus localizado. Localizar PDF+span (re_segmentar) "
                      "o marcar sin_ley si no hubo ley de ingresos.")
-        return [_make_row("cobertura_incompleta", "SEV2", senal,
+        return [_make_row("cobertura_incompleta", "SEV1", senal,
                           estado_slug, municipio_slug, anio, json_path, **kw)]
     # Extracción real que devolvió predial=null.
     razon = ((doc.get("_meta_v3") or {}).get("razon")
