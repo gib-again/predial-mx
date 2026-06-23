@@ -35,6 +35,8 @@ from src.hitl.decisiones import DECISION_FIELDS
 REPO = Path(__file__).resolve().parents[2]
 COLA = REPO / "output" / "hitl" / "cola_unificada.csv"
 CATALOG = REPO / "catalogs" / "municipios_inegi.csv"
+# Runtime portable (Python firmado + Flask + código).  Lo arma build_hitl_runtime.py.
+RUNTIME_SRC = REPO / "dist_hitl" / "_runtime"
 
 
 def _say(msg: str) -> None:
@@ -106,7 +108,9 @@ echo Iniciando el revisor de {ESTADO_UP}...
 echo Se abrira tu navegador en unos segundos.  NO cierres esta ventana negra
 echo mientras trabajas.  Para terminar, cierra esta ventana.
 echo.
-REVISAR.exe --csv cola_{estado}.csv --decisiones "decisiones\\hitl_decisiones_{estado}.csv" --revisor "%USERNAME%" --port {port}
+runtime\\python.exe -X utf8 -m scripts.temps.hitl_revisor_server --revisor "%USERNAME%" --port {port}
+echo.
+echo El revisor se cerro.  Puedes cerrar esta ventana.
 pause
 """
 
@@ -137,8 +141,8 @@ OneDrive lo sincroniza de vuelta automaticamente.  No edites ese archivo a mano.
 
 Si algo falla
 -------------
-- "Falta REVISAR.exe": avisa, el archivo del programa no llego completo.
-- El navegador no abre: entra manualmente a  http://localhost:{port}
+- La ventana negra muestra un error y se queda abierta: copiame ese texto.
+- El navegador no abre solo: entra manualmente a  http://localhost:{port}
 - Una vista previa de PDF no carga: revisa el paso "Conservar siempre en este
   dispositivo" de arriba.
 
@@ -151,6 +155,9 @@ def main() -> None:
     ap.add_argument("--estado", required=True, help="slug del estado, p.ej. coahuila")
     ap.add_argument("--out", default=None, help="carpeta destino del kit")
     ap.add_argument("--pdfs", choices=["copy", "link", "skip"], default="copy")
+    ap.add_argument("--no-runtime", action="store_true",
+                    help="no copiar el runtime portable (kit más chico, requiere "
+                         "que el runtime se agregue aparte)")
     ap.add_argument("--port", type=int, default=5500)
     args = ap.parse_args()
 
@@ -195,15 +202,29 @@ def main() -> None:
         with dec_file.open("w", encoding="utf-8", newline="") as f:
             csv.DictWriter(f, fieldnames=DECISION_FIELDS).writeheader()
 
-    # 6. Lanzador + instrucciones.
+    # 6. Runtime portable (Python firmado + Flask + código).
+    runtime_ok = True
+    if not args.no_runtime:
+        if not (RUNTIME_SRC / "runtime" / "python.exe").exists():
+            runtime_ok = False
+        else:
+            for sub in ("runtime", "lib", "code"):
+                dst = out / sub
+                if dst.exists():
+                    shutil.rmtree(dst)
+                shutil.copytree(RUNTIME_SRC / sub, dst,
+                                ignore=shutil.ignore_patterns("__pycache__", "*.pyc"))
+            _say("  runtime portable: copiado (Python firmado + Flask + código)")
+
+    # 7. Lanzador + instrucciones.
     fmt = {"estado": estado, "ESTADO_UP": estado.upper(), "port": args.port}
     (out / f"REVISAR_{estado.upper()}.bat").write_text(_BAT.format(**fmt), encoding="utf-8")
     (out / "LEEME.txt").write_text(_LEEME.format(**fmt), encoding="utf-8")
 
-    exe = out / "REVISAR.exe"
     _say("\nKit armado.")
-    if not exe.exists():
-        _say("  FALTA: copia REVISAR.exe a esta carpeta (build con PyInstaller).")
+    if not runtime_ok:
+        _say("  FALTA el runtime portable.  Corre primero: "
+             "python -m scripts.temps.build_hitl_runtime")
     _say(f"  Listo para subir a OneDrive: {out}")
 
 

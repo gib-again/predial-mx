@@ -23,6 +23,7 @@ import argparse
 import csv
 import json
 import os
+import sys
 import tempfile
 import threading
 import webbrowser
@@ -1313,11 +1314,42 @@ def _html(title: str, body: str) -> str:
 
 # ── Main ──
 
+def _base_dir() -> Path:
+    """Carpeta base para rutas relativas.  Cuando corre como .exe (PyInstaller),
+    es la carpeta del .exe (el kit); si no, el directorio actual."""
+    if getattr(sys, "frozen", False):
+        return Path(sys.executable).resolve().parent
+    return Path.cwd()
+
+
+def _auto_detectar_cola(base: Path) -> Path | None:
+    """En un kit, busca un único ``cola_*.csv`` junto al .exe."""
+    candidatos = sorted(base.glob("cola_*.csv"))
+    if len(candidatos) == 1:
+        return candidatos[0]
+    return None
+
+
+def _fatal(msg: str, frozen: bool) -> None:
+    """Muestra un error claro y, si es el .exe, mantiene la ventana abierta."""
+    print("\n" + "=" * 60)
+    print("NO SE PUDO INICIAR EL REVISOR")
+    print(msg)
+    print("=" * 60)
+    if frozen:
+        try:
+            input("\nPresiona Enter para cerrar...")
+        except EOFError:
+            pass
+    sys.exit(1)
+
+
 def main():
     global state
     ap = argparse.ArgumentParser(description=__doc__)
-    ap.add_argument("--csv", default=str(DEFAULT_CSV),
-                    help=f"CSV de cola HITL (default {DEFAULT_CSV}).")
+    ap.add_argument("--csv", default=None,
+                    help=f"CSV de cola HITL (default: autodetecta cola_*.csv o "
+                         f"{DEFAULT_CSV}).")
     ap.add_argument("--decisiones", default=None,
                     help="Archivo donde se guardan las decisiones "
                          f"(default {DECISIONES_CSV}).  En el kit por estado "
@@ -1328,11 +1360,44 @@ def main():
     ap.add_argument("--no-browser", action="store_true")
     args = ap.parse_args()
 
+    frozen = getattr(sys, "frozen", False)
+    # Como .exe, las rutas relativas (data/, catalogs/, cola_*.csv) deben
+    # resolverse desde la carpeta del .exe, sin importar desde dónde se lance.
+    base = _base_dir()
+    if frozen:
+        os.chdir(base)
+
+    # Resolución de la cola: --csv explícito > autodetección de kit > default.
+    if args.csv:
+        csv_path = Path(args.csv)
+    else:
+        csv_path = _auto_detectar_cola(base) or DEFAULT_CSV
+
+    if not csv_path.exists():
+        _fatal(f"No encontré la cola de revisión.\nBuscaba: {csv_path}\n"
+               f"Carpeta: {base}\n"
+               "Asegúrate de tener el archivo cola_<estado>.csv junto al programa.",
+               frozen)
+
     if args.revisor:
         os.environ["HITL_REVISOR"] = args.revisor
-    dec_path = Path(args.decisiones) if args.decisiones else None
-    state = State(Path(args.csv), decisiones_path=dec_path)
-    print(f"Cargadas {len(state.rows)} filas desde {args.csv}")
+
+    # Decisiones: --decisiones explícito; si la cola es cola_<estado>.csv (kit),
+    # se deriva decisiones/hitl_decisiones_<estado>.csv; si no, el log central.
+    if args.decisiones:
+        dec_path: Path | None = Path(args.decisiones)
+    elif csv_path.stem.startswith("cola_") and csv_path.stem != DEFAULT_CSV.stem:
+        estado = csv_path.stem[len("cola_"):]
+        dec_path = base / "decisiones" / f"hitl_decisiones_{estado}.csv"
+    else:
+        dec_path = None
+
+    try:
+        state = State(csv_path, decisiones_path=dec_path)
+    except SystemExit as e:
+        _fatal(str(e), frozen)
+
+    print(f"Cargadas {len(state.rows)} filas desde {csv_path}")
     print(f"Decisiones -> {state.decisiones_path}")
     n_pend = sum(1 for r in state.rows if not (r.get("decision") or "").strip())
     print(f"Pendientes: {n_pend}")
