@@ -41,7 +41,7 @@ from src.core.constants import (
 )
 from src.core.corpus import adjacent_json, prefer_hitl_path, resolve_json
 from src.core.segment_schema import STATUS_IDENTIDAD, STATUS_NO_LOCALIZADA
-from src.hitl.decisiones import append_decision, load_latest
+from src.hitl.decisiones import DECISIONES_CSV, append_decision, load_latest
 
 DEFAULT_CSV = Path("output/hitl/cola_unificada.csv")
 DATA_ROOT = Path("data")
@@ -117,8 +117,11 @@ def _try_resolve_json(estado_slug: str, muni_slug: str, anio: int) -> Path:
 # ── State ──
 
 class State:
-    def __init__(self, csv_path: Path):
+    def __init__(self, csv_path: Path, decisiones_path: Path | None = None):
         self.csv_path = csv_path
+        # Dónde se leen/escriben las decisiones.  En el kit por estado apunta al
+        # archivo propio del asistente (que OneDrive sincroniza de vuelta).
+        self.decisiones_path = decisiones_path or DECISIONES_CSV
         self.rows: list[dict] = []
         self.id_to_idx: dict[str, int] = {}
         self.fieldnames: list[str] = []
@@ -136,7 +139,7 @@ class State:
             # La cola es una vista derivada; las decisiones viven en el log
             # append-only.  Overlay la última decisión por caso al cargar para
             # que reinicios/rebuilds preserven el trabajo del revisor.
-            latest = load_latest()
+            latest = load_latest(self.decisiones_path)
             for r in self.rows:
                 d = latest.get(r.get("id", ""))
                 if d:
@@ -179,6 +182,7 @@ class State:
             anio=row.get("anio", ""),
             sub_opcion=sub_opcion,
             notas=notas,
+            path=self.decisiones_path,
         )
         with self._lock:
             row["decision"] = decision
@@ -1314,12 +1318,22 @@ def main():
     ap = argparse.ArgumentParser(description=__doc__)
     ap.add_argument("--csv", default=str(DEFAULT_CSV),
                     help=f"CSV de cola HITL (default {DEFAULT_CSV}).")
+    ap.add_argument("--decisiones", default=None,
+                    help="Archivo donde se guardan las decisiones "
+                         f"(default {DECISIONES_CSV}).  En el kit por estado "
+                         "apunta al archivo propio del asistente.")
+    ap.add_argument("--revisor", default=None,
+                    help="Nombre del revisor para atribuir las decisiones.")
     ap.add_argument("--port", type=int, default=5500, help="Puerto local (default 5500).")
     ap.add_argument("--no-browser", action="store_true")
     args = ap.parse_args()
 
-    state = State(Path(args.csv))
+    if args.revisor:
+        os.environ["HITL_REVISOR"] = args.revisor
+    dec_path = Path(args.decisiones) if args.decisiones else None
+    state = State(Path(args.csv), decisiones_path=dec_path)
     print(f"Cargadas {len(state.rows)} filas desde {args.csv}")
+    print(f"Decisiones -> {state.decisiones_path}")
     n_pend = sum(1 for r in state.rows if not (r.get("decision") or "").strip())
     print(f"Pendientes: {n_pend}")
 
