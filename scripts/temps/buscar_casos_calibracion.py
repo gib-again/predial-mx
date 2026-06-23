@@ -58,6 +58,43 @@ def _prog_all_zero(esq: dict) -> bool:
     return bool(tasas) and all(t == 0 for t in tasas)
 
 
+def _gist_from_predial(p: dict) -> str:
+    """Resumen humano de una sola línea del contenido real (tasas/estructura)."""
+    tarifas = p.get("tarifas") or []
+    parts = []
+    for t in tarifas[:3]:
+        amb = t.get("ambito") or "?"
+        e = t.get("esquema") or {}
+        tipo = e.get("tipo_esquema")
+        g = f"{amb}:{tipo}"
+        tab = e.get("tabla") or []
+        if tipo == "tasa_unica" and tab:
+            g += f" {tab[0].get('tasa')} {tab[0].get('unidad', '')}"
+        elif tipo == "tarifa_millar" and tab:
+            g += f" {[r.get('tasa_millar') for r in tab[:4]]}"
+        elif tipo == "cuota_fija_simple" and tab:
+            g += f" {tab[0].get('monto')} {tab[0].get('unidad', '')}"
+        elif tipo == "cuota_fija_escalonada" and tab:
+            ms = [r.get("monto") for r in tab if r.get("monto") is not None]
+            g += f" {len(tab)}r montos {min(ms)}-{max(ms)}" if ms else f" {len(tab)}r"
+        elif tipo == "progresivo":
+            bl = e.get("bloques") or []
+            ts = [r.get("tasa_marginal") for b in bl for r in (b.get("tabla") or [])
+                  if r.get("tasa_marginal") is not None]
+            g += f" {len(bl)}bloq " + (f"tasa {min(ts)}-{max(ts)}" if ts else "")
+        elif tipo == "mixto":
+            g += f" {len(e.get('tabla') or e.get('bloques') or [])}filas"
+        elif tipo == "otro_no_clasificado":
+            g += f" ({e.get('categoria', '')})"
+        parts.append(g)
+    if len(tarifas) > 3:
+        parts.append(f"+{len(tarifas) - 3} más")
+    mg = p.get("minimo_predial_general")
+    if mg:
+        parts.append(f"mín {mg.get('monto')} {mg.get('unidad', '')}")
+    return " | ".join(parts)
+
+
 def cargar_corpus() -> list[dict]:
     recs = []
     for f in glob.glob("data/*/json_predial/**/*.json", recursive=True):
@@ -99,6 +136,7 @@ def cargar_corpus() -> list[dict]:
                               if e.get("tipo_esquema") == "progresivo"), default=0),
             "prog_zero": any(_prog_all_zero(e) for e in esquemas),
             "coment": (p.get("comentarios") or "").lower(),
+            "gist": _gist_from_predial(p),
         })
     return recs
 
@@ -147,6 +185,9 @@ def _variar_estados(cands: list[dict], n: int) -> list[dict]:
 
 # ── Render ─────────────────────────────────────────────────────────
 
+SHOW_GIST = False
+
+
 def _line(r: dict, cola: dict | None = None) -> str:
     uni = "" if r["estado"] in UNIVERSO else " ⚠fuera-universo"
     bases = sorted({str(b) for b in r["bases"] if b})
@@ -159,7 +200,10 @@ def _line(r: dict, cola: dict | None = None) -> str:
     base = (f"  - **{r['estado']} {r['anio']} {r['slug']}** (cve {r['cvegeo']}) — "
             f"tipos={r['tipos']} n_tar={r['n_tarifas']} fuente={r['fuente']} "
             f"int={r['intentos']}{' REV' if r['revision'] else ''} "
-            f"filas={r['max_filas']}{extra}{uni}\n    `{r['path']}`")
+            f"filas={r['max_filas']}{extra}{uni}")
+    if SHOW_GIST and r.get("gist"):
+        base += f"\n    → {r['gist']}"
+    base += f"\n    `{r['path']}`"
     if cola is not None:
         info = cola.get((r["cvegeo"], r["anio"]))
         if info:
@@ -170,12 +214,20 @@ def _line(r: dict, cola: dict | None = None) -> str:
 def main() -> None:
     ap = argparse.ArgumentParser(description=__doc__)
     ap.add_argument("--out", default="reportes/casos_calibracion.md")
-    ap.add_argument("--n", type=int, default=4, help="candidatos por slot")
+    ap.add_argument("--n", type=int, default=0, help="candidatos por slot (0=auto)")
+    ap.add_argument("--shortlist", action="store_true",
+                    help="solo bloques A y B, con resumen de contenido (gist)")
     args = ap.parse_args()
+
+    global SHOW_GIST
+    SHOW_GIST = args.shortlist
+    n_default = 3 if args.shortlist else 4
+    if args.shortlist and args.out == "reportes/casos_calibracion.md":
+        args.out = "reportes/casos_calibracion_shortlist.md"
 
     recs = cargar_corpus()
     cola = cargar_cola()
-    n = args.n
+    n = args.n or n_default
     L: list[str] = [f"# Candidatos gold-calibración ({len(recs)} JSON v3 en corpus)\n"]
 
     def seccion(titulo: str):
@@ -287,33 +339,34 @@ def main() -> None:
     if not pares:
         L.append("  _(ninguno idéntico exacto)_\n")
 
-    # ── BLOQUE 3 (ambiguos: heurísticas) ──
-    seccion("BLOQUE 3 — Ambiguos (heurísticas; el usuario cura/aporta)")
-    slot(31, "¿2 tarifas o subcategorías? (n_tarifas≥2 con ámbito_detalle rico)",
-         [r for r in recs if r["n_tarifas"] >= 2 and len(r["ambito_det"]) > 20])
-    slot(32, "ámbito 'suburbano'",
-         [r for r in recs if "suburban" in r["ambito_det"]
-          or any("suburban" in str(a) for a in r["ambitos"])])
-    slot(33, "remite a 'la tarifa del artículo X'",
-         [r for r in recs if "artícul" in r["coment"] or "articul" in r["coment"]],
-         with_cola=True)
-    slot(34, "nota al pie que modifica una tasa",
-         [r for r in recs if "nota" in r["coment"]])
-    slot(35, "descuento por pronto pago en la tabla",
-         [r for r in recs if "pronto pago" in r["coment"] or "descuento" in r["coment"]])
-    slot(36, "mínimo ambiguo (raíz Y por tarifa)",
-         [r for r in recs if any(s == "general" for s, _ in r["minimos"])
-          and any(s == "tarifa" for s, _ in r["minimos"])])
-    slot(37, "cambio de nombre de esquema entre años → ¿SEV1?",
-         con_det("cambio_interanual"), with_cola=True)
-    slot(38, "base ambigua (no valor_catastral)",
-         [r for r in recs if any(b and "catastral" not in str(b) for b in r["bases"])])
-    slot(39, "al millar vs al ciento (OCR + factor)",
-         [r for r in recs if r["fuente"] == "ocr"
-          and "tarifa_millar_factor" in cola.get((r["cvegeo"], r["anio"]), {}).get("detectores", set())],
-         with_cola=True)
-    slot(40, "tabla como imagen (fuente visión)",
-         [r for r in recs if r["fuente"] == "vision"])
+    # ── BLOQUE 3 (ambiguos: heurísticas) ── (se omite en --shortlist)
+    if not args.shortlist:
+        seccion("BLOQUE 3 — Ambiguos (heurísticas; el usuario cura/aporta)")
+        slot(31, "¿2 tarifas o subcategorías? (n_tarifas≥2 con ámbito_detalle rico)",
+             [r for r in recs if r["n_tarifas"] >= 2 and len(r["ambito_det"]) > 20])
+        slot(32, "ámbito 'suburbano'",
+             [r for r in recs if "suburban" in r["ambito_det"]
+              or any("suburban" in str(a) for a in r["ambitos"])])
+        slot(33, "remite a 'la tarifa del artículo X'",
+             [r for r in recs if "artícul" in r["coment"] or "articul" in r["coment"]],
+             with_cola=True)
+        slot(34, "nota al pie que modifica una tasa",
+             [r for r in recs if "nota" in r["coment"]])
+        slot(35, "descuento por pronto pago en la tabla",
+             [r for r in recs if "pronto pago" in r["coment"] or "descuento" in r["coment"]])
+        slot(36, "mínimo ambiguo (raíz Y por tarifa)",
+             [r for r in recs if any(s == "general" for s, _ in r["minimos"])
+              and any(s == "tarifa" for s, _ in r["minimos"])])
+        slot(37, "cambio de nombre de esquema entre años → ¿SEV1?",
+             con_det("cambio_interanual"), with_cola=True)
+        slot(38, "base ambigua (no valor_catastral)",
+             [r for r in recs if any(b and "catastral" not in str(b) for b in r["bases"])])
+        slot(39, "al millar vs al ciento (OCR + factor)",
+             [r for r in recs if r["fuente"] == "ocr"
+              and "tarifa_millar_factor" in cola.get((r["cvegeo"], r["anio"]), {}).get("detectores", set())],
+             with_cola=True)
+        slot(40, "tabla como imagen (fuente visión)",
+             [r for r in recs if r["fuente"] == "vision"])
 
     out = Path(args.out)
     out.parent.mkdir(parents=True, exist_ok=True)
