@@ -184,7 +184,15 @@ def main() -> None:
         shutil.copy2(seg, kit_data / "meta" / "segment.csv")
     _say(f"  json_predial: {n_json} archivos  (overlay HITL: {n_hitl})")
 
-    # 3. PDFs fuente.
+    # 3. Sección predial recortada (focus_predial) — lo que el revisor ve
+    #    embebido por año.  Es pequeño y esencial; se copia salvo --pdfs skip.
+    if args.pdfs != "skip":
+        n_fp = _copy_tree(src_data / "focus_predial", kit_data / "focus_predial")
+        n_ov = _copy_tree(src_data / "focus_predial_overrides",
+                          kit_data / "focus_predial_overrides")
+        _say(f"  focus_predial: {n_fp} archivos  (overrides: {n_ov})")
+
+    # 4. PDFs fuente (para el botón 'inicio de la ley' y fallback).
     n_raw, sz_raw = _place_pdfs(src_data / "pdf_raw", kit_data / "pdf_raw", args.pdfs)
     n_ocr, sz_ocr = _place_pdfs(src_data / "pdf_ocr", kit_data / "pdf_ocr", args.pdfs)
     _say(f"  PDFs ({args.pdfs}): pdf_raw={n_raw} pdf_ocr={n_ocr}  "

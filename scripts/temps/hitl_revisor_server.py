@@ -1258,9 +1258,12 @@ def _render_sidebyside(est_slug: str, muni_slug: str, anio: int,
     if pred_prev:
         parts.append(_render_json_highlighted(pred_prev, changed_paths))
         archivos_prev = localizar_archivos(est_slug, anio - 1, muni_slug, prev_path)
-        if "pdf" in archivos_prev:
+        prev_key = ("pdf" if "pdf" in archivos_prev
+                    else "pdf_raw_fallback" if "pdf_raw_fallback" in archivos_prev
+                    else None)
+        if prev_key:
             prev_anchor = (seg_prev or {}).get("anchor_text_start", "")
-            parts.append(f'<embed src="{_file_url(archivos_prev["pdf"], prev_anchor)}"'
+            parts.append(f'<embed src="{_file_url(archivos_prev[prev_key], prev_anchor)}"'
                          ' type="application/pdf">')
     else:
         parts.append('<p style="color:#9a3412">JSON del año previo no disponible.</p>')
