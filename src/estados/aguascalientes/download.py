@@ -134,7 +134,18 @@ def _is_ley_ingresos_municipal(nombre_doc: str) -> bool:
         return False
     if "PRESUPUESTO DE EGRESOS" in upper:
         return False
-    # Derivative documents that reference the Ley de Ingresos but aren't the law itself
+    # Amendments/derogations that reference the Ley de Ingresos but aren't the law
+    if "SE ADICIONA" in upper or "SE ADICIONAN" in upper:
+        return False
+    if "SE DEROGA" in upper or "SE DEROGAN" in upper:
+        return False
+    # "SE EXPIDE" promulgation decrees link to full gazette PDFs, not individual sections
+    if "SE EXPIDE" in upper:
+        return False
+    # Corrections usually don't contain full law text
+    if re.match(r"CORRECCI[OÓ]N", upper):
+        return False
+    # Derivative documents (rules, reports, notices)
     if re.match(r"REGLAS\s+DE\s+CAR", upper):
         return False
     if re.match(r"BASES\s+GENERALES", upper):
