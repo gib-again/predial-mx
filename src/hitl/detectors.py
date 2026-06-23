@@ -332,7 +332,7 @@ def det_mixto_monocolumna_cuotafija(
 # ══════════════════════════════════════════════════════════════
 
 _TIPOS_CON_TABLA = {
-    "tarifa_millar", "progresivo", "tasa_unica",
+    "tasas_diferenciadas", "progresivo", "tasa_unica",
     "cuota_fija_simple", "cuota_fija_escalonada", "mixto",
 }
 
@@ -544,29 +544,29 @@ def _check_monotonia_mixto(tabla: list[dict]) -> str | None:
 
 
 # ══════════════════════════════════════════════════════════════
-# D9 — tarifa_millar_factor (SEV2)
+# D9 — tasas_diferenciadas_factor (SEV2)
 # ══════════════════════════════════════════════════════════════
 
-def det_tarifa_millar_factor(
+def det_tasas_diferenciadas_factor(
     doc: dict, estado_slug: str, municipio_slug: str, anio: int,
     json_path: str, **kw,
 ) -> list[QueueRow]:
-    """tarifa_millar where max(tasa) < 0.5 — likely expressed as factor, not millar."""
+    """tasas_diferenciadas con max(tasa) < 0.5 — probable factor decimal, no al millar."""
     out: list[QueueRow] = []
     for ti, tarifa in _iter_tarifas(doc):
         esq = _esquema(tarifa)
-        if esq.get("tipo_esquema") != "tarifa_millar":
+        if esq.get("tipo_esquema") != "tasas_diferenciadas":
             continue
         tasas = [
-            float(r.get("tasa_millar") or 0)
+            float(r.get("tasa") or 0)
             for r in (esq.get("tabla") or [])
-            if r.get("tasa_millar")
+            if r.get("tasa")
         ]
         if tasas and max(tasas) < 0.5:
             amb = tarifa.get("ambito", "")
             out.append(_make_row(
-                "tarifa_millar_factor", "SEV2",
-                (f"Tarifa #{ti} ({amb}): tarifa al millar con tasa máxima "
+                "tasas_diferenciadas_factor", "SEV2",
+                (f"Tarifa #{ti} ({amb}): tasa al millar con máxima "
                  f"{max(tasas):.4f} — sospechosamente baja, "
                  f"posible confusión de unidad (¿es factor decimal?)"),
                 estado_slug, municipio_slug, anio, json_path, **kw,
@@ -682,12 +682,12 @@ def _diff_tarifa_millar_v3(prev_tabla: list, curr_tabla: list) -> tuple[list[str
     c_by = {(r.get("grupo"), r.get("clave")): r for r in curr_tabla}
     for k, c in c_by.items():
         if k not in p_by:
-            cambios.append(f"nueva fila {k}: tasa={c.get('tasa_millar')}")
+            cambios.append(f"nueva fila {k}: tasa={c.get('tasa')}")
             sev = max(sev, 2)
             continue
         p = p_by[k]
-        if p.get("tasa_millar") != c.get("tasa_millar"):
-            cambios.append(f"{k}: tasa {p.get('tasa_millar')}→{c.get('tasa_millar')}")
+        if p.get("tasa") != c.get("tasa"):
+            cambios.append(f"{k}: tasa {p.get('tasa')}→{c.get('tasa')}")
             sev = max(sev, 2)
         if p.get("cuota_fija_adicional") != c.get("cuota_fija_adicional"):
             cambios.append(f"{k}: cuota_adic cambió")
@@ -830,7 +830,7 @@ def _diff_mixto_v3(prev_tabla: list, curr_tabla: list) -> tuple[list[str], int]:
 
 
 _DIFFERS_V3 = {
-    "tarifa_millar": _diff_tarifa_millar_v3,
+    "tasas_diferenciadas": _diff_tarifa_millar_v3,
     "tasa_unica": _diff_tasa_unica_v3,
     "cuota_fija_simple": _diff_cuota_fija_simple_v3,
     "cuota_fija_escalonada": _diff_cuota_fija_escalonada_v3,
@@ -992,7 +992,7 @@ JSON_DETECTORS = [
     det_progresivo_tasa_cero,
     det_bracket_superior_cerrado,
     det_rangos_no_monotonos,
-    det_tarifa_millar_factor,
+    det_tasas_diferenciadas_factor,
     det_tasa_unica_unidad_factor,
     det_desc_transitorios,
 ]

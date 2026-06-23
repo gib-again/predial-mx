@@ -70,8 +70,8 @@ def _gist_from_predial(p: dict) -> str:
         tab = e.get("tabla") or []
         if tipo == "tasa_unica" and tab:
             g += f" {tab[0].get('tasa')} {tab[0].get('unidad', '')}"
-        elif tipo == "tarifa_millar" and tab:
-            g += f" {[r.get('tasa_millar') for r in tab[:4]]}"
+        elif tipo == "tasas_diferenciadas" and tab:
+            g += f" {[r.get('tasa') for r in tab[:4]]}"
         elif tipo == "cuota_fija_simple" and tab:
             g += f" {tab[0].get('monto')} {tab[0].get('unidad', '')}"
         elif tipo == "cuota_fija_escalonada" and tab:
@@ -255,8 +255,8 @@ def main() -> None:
     slot(2, "tasa_unica por hectárea (rústico/superficie)",
          [r for r in recs if has(r, "tasa_unica")
           and any("superficie" in str(b) or "hectar" in str(b) for b in r["bases"])])
-    slot(3, "tarifa_millar con 3-5 categorías",
-         [r for r in recs if solo(r, "tarifa_millar") and 3 <= r["max_filas"] <= 5])
+    slot(3, "tasas_diferenciadas con 3-5 categorías",
+         [r for r in recs if solo(r, "tasas_diferenciadas") and 3 <= r["max_filas"] <= 5])
     slot(4, "cuota_fija_simple", [r for r in recs if solo(r, "cuota_fija_simple")])
     slot(5, "cuota_fija_escalonada", [r for r in recs if solo(r, "cuota_fija_escalonada")])
     slot(6, "progresivo (1 bloque)",
@@ -306,7 +306,7 @@ def main() -> None:
          [r for r in recs if r["n_tarifas"] >= 2
           and len(set(map(str, r["ambitos"]))) < r["n_tarifas"]])
     slot(23, "unidad equivocada (factor) → cambio_menor/reextraer",
-         con_det("tarifa_millar_factor") or con_det("tasa_unica_unidad_factor"),
+         con_det("tasas_diferenciadas_factor") or con_det("tasa_unica_unidad_factor"),
          with_cola=True)
     slot(24, "mínimo equivocado → cambio_menor [revisar a mano cuota_fija_simple+min]",
          [r for r in recs if solo(r, "cuota_fija_simple") and r["minimos"]])
@@ -363,7 +363,7 @@ def main() -> None:
              [r for r in recs if any(b and "catastral" not in str(b) for b in r["bases"])])
         slot(39, "al millar vs al ciento (OCR + factor)",
              [r for r in recs if r["fuente"] == "ocr"
-              and "tarifa_millar_factor" in cola.get((r["cvegeo"], r["anio"]), {}).get("detectores", set())],
+              and "tasas_diferenciadas_factor" in cola.get((r["cvegeo"], r["anio"]), {}).get("detectores", set())],
              with_cola=True)
         slot(40, "tabla como imagen (fuente visión)",
              [r for r in recs if r["fuente"] == "vision"])

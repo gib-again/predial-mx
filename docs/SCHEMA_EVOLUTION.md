@@ -53,8 +53,14 @@ se documentan aquí (no en código) por trazabilidad histórica.
 
 ## Tipos de esquema (`tipo_esquema`)
 
-`tarifa_millar | progresivo | tasa_unica | cuota_fija_simple |
+`tasas_diferenciadas | progresivo | tasa_unica | cuota_fija_simple |
 cuota_fija_escalonada | mixto | otro_no_clasificado`
+
+> **Rename v3 (jun-2026):** `tarifa_millar` → `tasas_diferenciadas`; campo de fila
+> `tasa_millar` → `tasa` (la escala va en `unidad`; "millar" era engañoso). El
+> corpus v3 se migró con `scripts/temps/migrar_tasas_diferenciadas.py`.  La clase
+> Python `TarifaMillarSchema` conserva su nombre (estabilidad de imports); el enum
+> **v2** de arriba sí mantiene `tarifa_millar` (no se tocó el stack v2 dormido).
 
 > **Advertencia:** no leer `tipo_esquema` crudo del JSON; esperar a la capa de
 > validación.  El LLM tiende a clasificar cuota fija escalonada como progresivo

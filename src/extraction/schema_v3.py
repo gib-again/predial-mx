@@ -205,10 +205,10 @@ class FilaTarifaMillar(BaseModel):
     grupo: str = Field(description="general | rustico | urbano | otro")
     clave: str = Field(description="identificador_corto_en_snake_case")
     descripcion: str = Field(description="Texto descriptivo corto del renglón")
-    tasa_millar: float = Field(description="Tasa al millar fiel al texto (sin reescalar)")
+    tasa: float = Field(description="Tasa fiel al texto (sin reescalar); la escala va en `unidad`")
     unidad: Literal["al_millar", "al_ciento", "porcentaje"] = Field(
         "al_millar",
-        description="Escala de tasa_millar. Default al_millar; cubre catálogos raros en %.",
+        description="Escala de la tasa. Default al_millar; cubre catálogos raros en %.",
     )
     periodicidad: str = Field("anual", description="anual | bimestral")
     cuota_fija_adicional: CuotaFijaAdicional | None = Field(
@@ -216,7 +216,7 @@ class FilaTarifaMillar(BaseModel):
         description="Cuota fija adicional cobrada junto con la tasa. null si no aplica.",
     )
 
-    _coerce_tasa = field_validator("tasa_millar", mode="before")(_coerce_to_float)
+    _coerce_tasa = field_validator("tasa", mode="before")(_coerce_to_float)
 
 
 class FilaProgresiva(BaseModel):
@@ -285,10 +285,15 @@ class BloqueProgresivo(BaseModel):
 # ── Variantes v3 (sin minimo_predial / comentarios / clasificacion_justificacion) ──
 
 class TarifaMillarSchema(BaseModel):
-    """Catálogo de tasas al millar por categoría de predio."""
+    """Tasas planas diferenciadas por categoría de predio (sin rangos de valor).
+
+    Nota: la clase conserva el nombre histórico ``TarifaMillarSchema`` por
+    estabilidad de imports; el valor de datos ``tipo_esquema`` es
+    ``tasas_diferenciadas`` y la escala de cada fila va en ``unidad`` (no
+    siempre al millar)."""
     model_config = ConfigDict(extra="forbid")
 
-    tipo_esquema: Literal["tarifa_millar"]
+    tipo_esquema: Literal["tasas_diferenciadas"]
     tabla: list[FilaTarifaMillar] = Field(
         min_length=1,
         description="Una fila por categoría de predio con su tasa.",
@@ -504,7 +509,7 @@ class PredialV3(BaseModel):
             ambitos = [t.ambito for t in tu]
             warnings.warn(
                 f"Múltiples tasa_unica ({ambitos}) — probablemente debería "
-                f"ser una tarifa_millar con {len(tu)} filas.",
+                f"ser unas tasas_diferenciadas con {len(tu)} filas.",
                 stacklevel=2,
             )
         return self

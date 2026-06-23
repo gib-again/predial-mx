@@ -1031,7 +1031,7 @@ def _render_case(row_id: str) -> str:
     body.append('    <label>Pistas de re-extracción (sesgan, no fuerzan)</label>')
     body.append('    <select name="hint_tipo">')
     body.append('      <option value="">(sin hint de tipo_esquema)</option>')
-    for t in ("tarifa_millar", "progresivo", "tasa_unica", "cuota_fija_simple",
+    for t in ("tasas_diferenciadas", "progresivo", "tasa_unica", "cuota_fija_simple",
               "cuota_fija_escalonada", "mixto", "otro_no_clasificado"):
         body.append(f'      <option value="{t}">{t}</option>')
     body.append('    </select>')

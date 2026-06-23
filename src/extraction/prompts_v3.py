@@ -122,14 +122,14 @@ P2. ¿La tabla principal del predial tiene columnas de RANGOS por valor catastra
 P3. (Sin rangos.) ¿Existen tasas diferenciadas por tipo de predio
     (urbano vs rústico, edificado vs baldío, habitacional vs comercial,
     con barda vs sin barda, agropecuario vs no agropecuario, etc.)?
-    SÍ → `tarifa_millar` con UNA sola TarifaPredial. Cada categoría de
+    SÍ → `tasas_diferenciadas` con UNA sola TarifaPredial. Cada categoría de
          predio = una fila en `tabla`. Si además existe "$X + Y al millar"
          en alguna fila, llena `cuota_fija_adicional` en esa fila. STOP.
 
          ANTI-PATRÓN: NO crees múltiples TarifaPredial con `tasa_unica`
          para cada tipo de predio. Si hay tasas distintas para urbano y
          rústico (ej: "urbano: 1.8 al millar; rústico: 0.8 al millar"),
-         eso es UNA tarifa_millar con dos filas, ambito=general.
+         eso es UNAS tasas_diferenciadas con dos filas, ambito=general.
 
     NO → P4.
 
@@ -319,7 +319,7 @@ Re-extrae el mismo texto. Recordatorios prioritarios:
     TARIFAS SEPARADAS en `tarifas[]`, no columnas de una sola tabla.
 
   • Tasas diferenciadas por tipo de predio (urbano vs rústico, etc.) sin
-    brackets → UNA `tarifa_millar` con una fila por categoría. NO crear
+    brackets → UNAS `tasas_diferenciadas` con una fila por categoría. NO crear
     múltiples TarifaPredial con `tasa_unica`. `tasa_unica` = tasa única
     para TODA la base sin distinción.
 

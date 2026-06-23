@@ -110,7 +110,12 @@ Chihuahua, Colima, Edomex, Sinaloa, Tabasco — tarifa uniforme estatal. No pasa
 
 ## Tipos de esquema (`tipo_esquema`)
 
-`tarifa_millar` | `progresivo` | `tasa_unica` | `cuota_fija_simple` | `cuota_fija_escalonada` | `mixto` | `otro_no_clasificado`
+`tasas_diferenciadas` | `progresivo` | `tasa_unica` | `cuota_fija_simple` | `cuota_fija_escalonada` | `mixto` | `otro_no_clasificado`
+
+> **Rename (jun-2026):** `tarifa_millar` → `tasas_diferenciadas` y el campo de fila
+> `tasa_millar` → `tasa` (la escala la lleva `unidad`; "millar" era engañoso porque
+> hay `al_ciento`/`porcentaje`). Corpus migrado con `scripts/temps/migrar_tasas_diferenciadas.py`.
+> La clase Python conserva el nombre `TarifaMillarSchema` por estabilidad de imports.
 
 ## Variables de entorno
 
@@ -125,6 +130,11 @@ Aguascalientes (AGS), Coahuila (COAH), Chihuahua (CHIH), Colima (COLIMA), Edomex
 ## Pipeline (6 pasos)
 
 download → ocr (si aplica) → master → segment → extract (LLM) → validate → [consolidate] → [impute]
+
+> **DEPRECATED — paso `validate`**: `src/core/validation.py` valida únicamente schema v2.
+> Con schema v3 (flujo activo) todas las entradas caen a `otro_no_clasificado` como falso
+> positivo. La validación real de v3 la hacen los **detectores HITL** (`src/hitl/detectors.py`,
+> D3–D12) vía `python -m src.hitl.run_detectors`.
 
 ## Pipeline HITL unificado (v3)
 
@@ -150,7 +160,7 @@ artefactos; ver Causa A).  La UI siempre intenta mostrar año previo (side-by-si
 | D6 | `progresivo_tasa_cero` | SEV1 | v3 JSON |
 | D7 | `bracket_superior_cerrado` | SEV2 | v3 JSON |
 | D8 | `rangos_no_monotonos` | SEV2 | v3 JSON |
-| D9 | `tarifa_millar_factor` | SEV2 | v3 JSON |
+| D9 | `tasas_diferenciadas_factor` | SEV2 | v3 JSON |
 | D10 | `tasa_unica_unidad_factor` | SEV2 | v3 JSON |
 | D11 | `desc_transitorios` | SEV1 | v3 JSON |
 | D12 | `cambio_interanual` | SEV1/2/3 | pares v3 JSON año-a-año |

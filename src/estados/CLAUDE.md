@@ -46,16 +46,16 @@ r"IMPUESTO\s+SOBRE\s+ESPECT[AÁ]CULOS"
 | Estado | Esquema | Notas |
 |--------|---------|-------|
 | Coahuila | mixto | Multi-columna (habitacional, no hab, con/sin barda) |
-| Jalisco | tarifa_millar | Bimestral por tipo de predio |
+| Jalisco | tasas_diferenciadas | Bimestral por tipo de predio |
 | Querétaro | tasa_unica | Factor sobre valor catastral |
 | Yucatán | variado | Mezcla tasa plana, progresivo, factor decimal |
-| Tamaulipas | tarifa_millar | Por tipo de predio |
+| Tamaulipas | tasas_diferenciadas | Por tipo de predio |
 | Chihuahua | progresivo | 5 rangos + tasa fija rústicos |
 | Colima | progresivo | 26 rangos urbano, 9 rústico, UMA |
 | Edomex | progresivo | 13 rangos, pesos nominales |
 | Sinaloa | progresivo | 11 rangos, INPC anual |
 | Tabasco | progresivo | 5 rangos, estática desde 1995 |
-| Guanajuato | tarifa_millar | Con cuota_fija_adicional en algunos |
+| Guanajuato | tasas_diferenciadas | Con cuota_fija_adicional en algunos |
 | Oaxaca | — | Recién agregado |
 | Sonora | mixto | Cuota fija + tasa al millar por rangos; rústicos por hectárea; UMA desde 2017 |
 | Aguascalientes | — | "Impuesto a la Propiedad Raíz"; 11 munis, PDFs individuales, API JSON |
