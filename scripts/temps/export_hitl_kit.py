@@ -84,10 +84,12 @@ def _place_pdfs(src: Path, dst: Path, mode: str) -> tuple[int, int]:
         rel = f.relative_to(src)
         target = dst / rel
         target.parent.mkdir(parents=True, exist_ok=True)
+        # Borra el destino primero: si era un hardlink (kit previo en modo link),
+        # copiar encima escribiría sobre el archivo ORIGINAL del repo (corrupción).
+        if target.exists() or target.is_symlink():
+            target.unlink()
         try:
             if mode == "link":
-                if target.exists():
-                    target.unlink()
                 os.link(f, target)        # hardlink (mismo volumen)
             else:
                 shutil.copy2(f, target)
