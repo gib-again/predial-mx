@@ -119,32 +119,37 @@ _LEEME = """KIT DE REVISION HITL — {ESTADO_UP}
 
 Que es esto
 -----------
-Una herramienta para revisar los datos de impuesto predial de {ESTADO_UP}.
-Todo lo que necesitas ya esta dentro de esta carpeta.
+Herramienta para revisar los datos de impuesto predial de {ESTADO_UP}.
+Todo lo necesario ya viene en esta carpeta. No instalas nada.
 
-ANTES DE EMPEZAR (importante, una sola vez)
--------------------------------------------
-1. En el Explorador de archivos, da click derecho sobre ESTA carpeta en OneDrive.
-2. Elige "Conservar siempre en este dispositivo".
-   (Esto descarga los PDF a tu computadora; si no, las vistas previas se cuelgan.)
-   Espera a que termine de descargar antes de continuar.
+PASO 0 — Al descargar (una sola vez)
+------------------------------------
+1. Si te llego como archivo .zip: ANTES de extraerlo, click derecho en el .zip
+   > Propiedades > si aparece "Desbloquear" (Unblock), marcalo y Aceptar.
+2. Extrae la carpeta COMPLETA a tu disco (Escritorio o Documentos).
+   No la uses desde dentro del .zip ni desde el navegador.
 
 COMO USARLO
 -----------
 1. Doble-click en  REVISAR_{ESTADO_UP}.bat
+   Si Windows muestra un aviso azul "Windows protegio tu PC":
+   clic en "Mas informacion" > "Ejecutar de todas formas".
 2. Se abre una ventana negra (dejala abierta) y luego tu navegador.
-3. Revisa caso por caso.  Tus decisiones se guardan solas.
+3. Revisa caso por caso. Tus decisiones se guardan solas.
 4. Para terminar: cierra la ventana negra.
 
-Tu trabajo se guarda en  decisiones\\hitl_decisiones_{estado}.csv
-OneDrive lo sincroniza de vuelta automaticamente.  No edites ese archivo a mano.
+COMO ENTREGAR TU TRABAJO (importante)
+-------------------------------------
+Al terminar (o al final de cada dia) enviame SOLO este archivo:
+    decisiones\\hitl_decisiones_{estado}.csv
+por el medio que acordamos (correo / carpeta de subida). Es un archivo
+de texto chico. NO mandes toda la carpeta, solo ese archivo.
+No lo edites a mano.
 
 Si algo falla
 -------------
 - La ventana negra muestra un error y se queda abierta: copiame ese texto.
-- El navegador no abre solo: entra manualmente a  http://localhost:{port}
-- Una vista previa de PDF no carga: revisa el paso "Conservar siempre en este
-  dispositivo" de arriba.
+- El navegador no abre solo: entra a  http://localhost:{port}
 
 Gracias!
 """
@@ -159,6 +164,8 @@ def main() -> None:
                     help="no copiar el runtime portable (kit más chico, requiere "
                          "que el runtime se agregue aparte)")
     ap.add_argument("--port", type=int, default=5500)
+    ap.add_argument("--zip", action="store_true",
+                    help="además, empaca el kit en un .zip para distribuir por enlace")
     args = ap.parse_args()
 
     estado = args.estado.strip().lower()
@@ -233,7 +240,18 @@ def main() -> None:
     if not runtime_ok:
         _say("  FALTA el runtime portable.  Corre primero: "
              "python -m scripts.temps.build_hitl_runtime")
-    _say(f"  Listo para subir a OneDrive: {out}")
+
+    # 8. (Opcional) empacar en .zip para distribuir por enlace de descarga.
+    if args.zip:
+        _say("  empacando .zip (puede tardar con muchos PDFs)...")
+        zip_base = str(out)  # crea {out}.zip
+        shutil.make_archive(zip_base, "zip", root_dir=out.parent, base_dir=out.name)
+        zpath = Path(zip_base + ".zip")
+        gb = zpath.stat().st_size / 1e9 if zpath.exists() else 0
+        _say(f"  ZIP listo ({gb:.2f} GB): {zpath}")
+        _say("  Sube ESE .zip a OneDrive y comparte el enlace de descarga.")
+    else:
+        _say(f"  Carpeta lista: {out}  (usa --zip para un archivo único distribuible)")
 
 
 if __name__ == "__main__":
