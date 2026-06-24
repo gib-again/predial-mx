@@ -130,7 +130,7 @@ PASO 0 — Al descargar (una sola vez)
    > Propiedades > si aparece "Desbloquear" (Unblock), marcalo y Aceptar.
 2. Extrae la carpeta COMPLETA a tu disco (Escritorio o Documentos).
    No la uses desde dentro del .zip ni desde el navegador.
-
+{seccion_pdf}
 COMO USARLO
 -----------
 1. Doble-click en  REVISAR_{ESTADO_UP}.bat
@@ -194,14 +194,15 @@ def main() -> None:
     _say(f"  json_predial: {n_json} archivos  (overlay HITL: {n_hitl})")
 
     # 3. Sección predial recortada (focus_predial) — lo que el revisor ve
-    #    embebido por año.  Es pequeño y esencial; se copia salvo --pdfs skip.
-    if args.pdfs != "skip":
-        n_fp = _copy_tree(src_data / "focus_predial", kit_data / "focus_predial")
-        n_ov = _copy_tree(src_data / "focus_predial_overrides",
-                          kit_data / "focus_predial_overrides")
-        _say(f"  focus_predial: {n_fp} archivos  (overrides: {n_ov})")
+    #    embebido por año.  Pequeño y esencial: SIEMPRE se incluye (aun con
+    #    --pdfs skip, que solo omite los pdf_raw/pdf_ocr pesados).
+    n_fp = _copy_tree(src_data / "focus_predial", kit_data / "focus_predial")
+    n_ov = _copy_tree(src_data / "focus_predial_overrides",
+                      kit_data / "focus_predial_overrides")
+    _say(f"  focus_predial: {n_fp} archivos  (overrides: {n_ov})")
 
-    # 4. PDFs fuente (para el botón 'inicio de la ley' y fallback).
+    # 4. PDFs fuente pesados (para el botón 'inicio de la ley' y fallback).
+    #    --pdfs skip: kit ligero; el revisor copia los PDF aparte a su ritmo.
     n_raw, sz_raw = _place_pdfs(src_data / "pdf_raw", kit_data / "pdf_raw", args.pdfs)
     n_ocr, sz_ocr = _place_pdfs(src_data / "pdf_ocr", kit_data / "pdf_ocr", args.pdfs)
     _say(f"  PDFs ({args.pdfs}): pdf_raw={n_raw} pdf_ocr={n_ocr}  "
@@ -234,7 +235,23 @@ def main() -> None:
             _say("  runtime portable: copiado (Python firmado + Flask + código)")
 
     # 7. Lanzador + instrucciones.
-    fmt = {"estado": estado, "ESTADO_UP": estado.upper(), "port": args.port}
+    if args.pdfs == "skip":
+        seccion_pdf = (
+            "\nPASO 0.5 — Copiar los PDF (una sola vez, a tu ritmo)\n"
+            "----------------------------------------------------\n"
+            "Este kit NO trae los PDF originales (pesan mucho). Descargalos de la\n"
+            f"carpeta de OneDrive que te comparti (PDFs_{estado.upper()}) y copialos\n"
+            f"dentro del kit, en la carpeta  data\\{estado}\\  de modo que queden:\n"
+            f"    data\\{estado}\\pdf_raw\\...\n"
+            f"    data\\{estado}\\pdf_ocr\\...   (si esa carpeta existe)\n"
+            "Puedes hacerlo poco a poco; el revisor funciona aunque falten algunos.\n"
+            "La seccion de predial recortada SI se ve siempre (ya viene incluida);\n"
+            "los botones 'inicio de la ley' / 'PDF fuente' apareceran para los PDF\n"
+            "que ya hayas copiado.\n")
+    else:
+        seccion_pdf = ""
+    fmt = {"estado": estado, "ESTADO_UP": estado.upper(), "port": args.port,
+           "seccion_pdf": seccion_pdf}
     (out / f"REVISAR_{estado.upper()}.bat").write_text(_BAT.format(**fmt), encoding="utf-8")
     (out / "LEEME.txt").write_text(_LEEME.format(**fmt), encoding="utf-8")
 
