@@ -1,5 +1,15 @@
 """Validación de JSONs de predial vía schema_v2 (discriminated union).
 
+DEPRECATED — este módulo valida únicamente el schema v2 (una tarifa por municipio-año,
+`tipo_esquema` en la raíz del dict `predial`).  El flujo activo produce schema v3
+(`predial.tarifas[].esquema.tipo_esquema`), que este módulo no puede parsear: todas
+las entradas caen a `otro_no_clasificado` como falso positivo.
+
+El paso `validate` del pipeline invoca `validate_all()` aquí, pero su salida es
+inútil para estados en v3.  La validación real de v3 la hacen los detectores HITL
+(D3-D12 en `src/hitl/detectors.py`), que sí leen la estructura v3 y generan la
+cola `output/hitl/cola_unificada.csv`.
+
 Reemplaza las reglas heurísticas previas (chequeos manuales por tabla, conteos
 cruzados) por validación Pydantic contra cada variante del discriminated union.
 La función `reclasificar()` intenta cada variante y cae a `otro_no_clasificado`

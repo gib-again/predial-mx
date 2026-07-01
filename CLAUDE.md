@@ -123,9 +123,37 @@ Chihuahua, Colima, Edomex, Sinaloa, Tabasco — tarifa uniforme estatal. No pasa
 - `OPENAI_MODEL` (default: gpt-5.4)
 - `OPENAI_MODEL_FALLBACK` (default: gpt-5.4)
 
-## Estados implementados (15)
+## Estados implementados (19)
 
-Aguascalientes (AGS), Coahuila (COAH), Chihuahua (CHIH), Colima (COLIMA), Edomex (EDOMEX), Guanajuato (GTO), Jalisco (JAL), Oaxaca (OAX), Querétaro (QRO), San Luis Potosí (SLP), Sinaloa (SINALOA), Sonora (SON), Tabasco (TABASCO), Tamaulipas (TAMPS), Yucatán (YUC)
+Aguascalientes (AGS), Baja California (BC), Baja California Sur (BCS), Campeche (CAMP), Coahuila (COAH), Chihuahua (CHIH), Colima (COLIMA), Durango (DGO), Edomex (EDOMEX), Guanajuato (GTO), Jalisco (JAL), Oaxaca (OAX), Querétaro (QRO), San Luis Potosí (SLP), Sinaloa (SINALOA), Sonora (SON), Tabasco (TABASCO), Tamaulipas (TAMPS), Yucatán (YUC)
+
+> **Durango (Grupo A, 2016-2025):** la tasa al millar del predial se fija en la
+> **Ley de Ingresos Municipal anual** (39 munis). Fuente = **Congreso del Estado**
+> (congresodurango.gob.mx), PDFs digitales individuales por municipio (sin OCR).
+> `src/estados/durango/` pipeline Grupo A estándar. Dos rutas de descarga: 2022-2025 vía
+> `/dictamenes-de-leyes-de-ingresos-{año}/`; 2016-2021 vía índice Apache de las carpetas
+> por legislatura (`FOLDER_POR_ANIO`: lxvii con espacios "Leyes de Ingreso[s] {año}",
+> LXVIII/LeyesdeIngreso/{año}). Naming de archivo ruidoso → matcher con prefijos/aliases.
+> **Fase 3 pendiente (2010-2015)**: solo en lxv/lxvi `decretos/` (DEC###.pdf sin etiqueta)
+> → identificar las leyes de ingresos entre los decretos, o gacetas escaneadas del PO con OCR.
+
+> **Campeche (Grupo B diferenciado versionado):** el predial vive en la **Ley de
+> Hacienda de los Municipios del Estado de Campeche** (un solo documento estatal,
+> Art. 26 = tabla de tarifas por municipio y uso de suelo, en porcentaje; PDF digital
+> sin OCR). El adaptador (`src/estados/campeche/`) extrae el bloque de cada municipio
+> (LLM v3 `tasas_diferenciadas`) y lo expande a años. Tasas mayormente estables; único
+> cambio Carmen FY2016 (Decreto 30). Seybaplaya/Dzitbalché nuevos (~2021, `requiere_revision`).
+> El mínimo/descuentos/exenciones viven en la Ley de Ingresos anual. `run_llm_extraction`
+> override-ado → build.
+
+> **Baja California Sur (caso híbrido versionado):** el predial NO está en una ley
+> anual sino en la **Ley de Hacienda Municipal** (una por municipio, Word digital de
+> cbcs.gob.mx + ordenjuridico.gob.mx; sin OCR). El adaptador (`src/estados/bajacaliforniasur/`)
+> extrae las ~8 versiones únicas (LLM v3 `tasas_diferenciadas`) y las **expande a los
+> años** de vigencia de cada versión (`build.py`). Transiciones: Loreto FY2022 (firme);
+> Los Cabos/Mulegé con año placeholder `TRANSICION_PLACEHOLDER` (2014) marcado
+> `requiere_revision` para HITL. Comondú/La Paz estables. `run_llm_extraction` está
+> override-ado para llamar al build (no extrae por-año).
 
 ## Pipeline (6 pasos)
 

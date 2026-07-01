@@ -51,3 +51,7 @@ import src.estados.oaxaca     # noqa: F401, E402
 import src.estados.sanluispotosi  # noqa: F401, E402
 import src.estados.sonora  # noqa: F401, E402
 import src.estados.aguascalientes  # noqa: F401, E402
+import src.estados.bajacalifornia  # noqa: F401, E402
+import src.estados.bajacaliforniasur  # noqa: F401, E402
+import src.estados.campeche  # noqa: F401, E402
+import src.estados.durango  # noqa: F401, E402

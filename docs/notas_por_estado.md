@@ -22,10 +22,16 @@ Particularidades del marco legal, fuente de datos, procesamiento y pipeline de c
 | 12 | Oaxaca | 20 | 570 | Sí | Ley de ingresos por municipio (PO) → OCR + watermark cleanup → segmentación → LLM | en curso |
 | 13 | San Luis Potosí | 24 | 58 | Sí* | Ley de ingresos por municipio (PO API JSON) → OCR adaptativo → segmentación → LLM | en curso |
 | 14 | Sonora | 26 | 72 | Sí* | Boletín Oficial (scraping HTML índice Joomla) → OCR adaptativo → segmentación → LLM | en curso |
+| 15 | Aguascalientes | 01 | 11 | No | Ley de ingresos por municipio (PO API JSON) → segmentación → LLM | 160 |
+| 16 | Baja California | 02 | 7 | Sí* | Ley de ingresos por municipio (PO API índice, curl) → OCR page-limited → segmentación → LLM | en curso |
+| 17 | Baja California Sur | 03 | 5 | No | Ley de Hacienda Municipal (Word digital cbcs+ordenjuridico) → versiones → LLM v3 → expansión a años | 80 |
+| 18 | Campeche | 04 | 13 | No | Ley de Hacienda de los Municipios (1 PDF digital, Art. 26 tabla por municipio) → versiones → LLM v3 → expansión a años | 186 |
+| 19 | Durango | 10 | 39 | Sí* | Ley de Ingresos por municipio. 2016-2025 = Congreso digital; 2011-2015 = PO escaneado + OCR + segmentación 2-niveles. FY2010 hueco (legislatura LXIV) | ~568 |
 
 \* Yucatán: PDFs digitales en su mayoría; algunas tablas de tarifa son imágenes embebidas que requieren OCR selectivo.
 \* San Luis Potosí: OCR adaptativo (sólo se aplica a PDFs con < 300 chars/página promedio; 2017+ son nativos y se saltan).
 \* Sonora: OCR adaptativo (mismo umbral que SLP; los boletines de la era nueva 2019+ son nativos y se saltan, los antiguos pueden ser escaneos).
+\* Baja California: OCR adaptativo **page-limited** (escaneos 2010-2022; sólo se OCR'an las primeras ~55 pp porque el resto del tomo son tablas catastrales).
 
 ---
 
@@ -203,6 +209,61 @@ Particularidades del marco legal, fuente de datos, procesamiento y pipeline de c
   - Mapeo `año_pub → id_joomla` se descubre vía barrido adyacente desde semillas conocidas (ver `config.ID_JOOMLA_POR_ANIO_PUB`).
   - Si el HTML del índice viene vacío de `<a href>` a PDFs (caso poco probable en sppagebuilder), upgrade documentado a Playwright.
 - **Cobertura objetivo**: 2010-2025 (15 ejercicios) × 72 municipios = 1,080 leyes potenciales. Datos reales pendientes tras primera corrida.
+
+### Baja California
+- **CVE_ENT**: 02 | **Municipios**: 7 | **Periodo**: 2010-2025
+- **Fuente**: Periódico Oficial del Estado de Baja California
+- **URL del PO**: https://periodicooficial.ebajacalifornia.gob.mx/oficial/inicioConsulta.jsp
+  - API índice full-text (Tomcat/JSP): `GET /oficial/IndiceConsulta/getIndicesBusquedaConsulta` con `palabra1`/`palabra2` → `{Total, Data:[{indice, seccion, pagina, rutaDocumento, ...}]}`
+  - `rutaDocumento` apunta al CDN externo (`wsextbc.../ObtenerImagenDeSistema`)
+- **Transporte HTTP**: **curl** (el servidor rechaza el handshake TLS de Python/requests con ConnectionReset 10054); respuesta en **latin-1**, no UTF-8. Sesión vía cookie JSESSIONID.
+- **OCR necesario**: Adaptativo + **page-limited**. Escaneos 2010-2022, nativos 2023+. Como cada PDF es un tomo de 230-440 pp (incluye la Tabla de Valores Catastrales completa) pero el predial vive en las primeras ~20 pp, el OCR se limita a las primeras `OCR_PAGE_LIMIT` (55) páginas. Ver `src/estados/bajacalifornia/ocr.py`.
+- **Marco legal**: Ley de Ingresos por municipio, publicada ~27-dic del año N-1. Cada **sección** del tomo de fin de año = 1 municipio (SECC III=Mexicali, IV=Tijuana, V=Ensenada, VI=Tecate, VII=Rosarito, VIII=San Felipe, IX=San Quintín). Modelo 1-ley-por-PDF (similar a SLP).
+- **Segmentación**: Un nivel. Patrones priorizados:
+  1. `CAPÍTULO I + IMPUESTO PREDIAL + ARTÍCULO N` (canónico)
+  2. `ARTÍCULO N + el impuesto predial se causará/determinará`
+  3. `TÍTULO SEGUNDO + IMPUESTOS + IMPUESTO PREDIAL`
+  4. `IMPUESTO PREDIAL` cabecera (fallback genérico, validado por contexto)
+  - Fin: `CAPÍTULO II / IMPUESTO SOBRE ADQUISICIÓN DE INMUEBLES`
+  - Blacklist del índice (TOC con líneas de puntos `....`); fallback localiza la primera página con cuerpo predial (`IMPUESTO PREDIAL` + `ARTÍCULO`).
+- **Estructura predial**: la tasa base remite a la **Ley de Hacienda Municipal del Estado**; la Ley de Ingresos fija **sobretasas diferenciadas "al millar"** por tipo de predio (industrial, baldíos, rústicos/suburbanos) y un **mínimo en UMA**. Esquema dominante `tasas_diferenciadas`.
+- **Filtro de descarga**: el título intercala texto entre "LEY DE INGRESOS" y "DEL MUNICIPIO" (ej. Tecate "...Y TABLA DE VALORES CATASTRALES... DEL MUNICIPIO DE TECATE"). Discriminador robusto: el texto **antes** de "LEY DE INGRESOS" no debe traer descalificadores (ACUERDO/DECRETO/FE DE ERRATA/REFORMA/PROYECTO/PRESUPUESTO/LINEAMIENTOS...); así se permite el prefijo de legislatura y se descartan enmiendas. Ejercicio: "FISCAL DE/DEL/_ {año}".
+- **Cobertura**: Ensenada, Mexicali, Tijuana, Rosarito completos 2010-2025. San Quintín (creado ~2020) desde FY2021; San Felipe (creado ~2020) desde FY2022. Hueco real del archivo: **Tecate 2017** (no digitalizado).
+
+### Baja California Sur
+- **CVE_ENT**: 03 | **Municipios**: 5 | **Periodo**: 2010-2025 | **OCR**: No (Word digital)
+- **Caso atípico**: el predial NO está en una ley anual. La "Ley de Ingresos" / "Presupuesto de Ingresos" municipal (Boletín Oficial de finanzas.bcs.gob.mx) solo trae **montos estimados de recaudación**, sin tasas. Las **tasas de predial viven en la Ley de Hacienda Municipal** (una por municipio, tasas diferenciadas "al millar" por tipo de predio + mínimo en UMA/salario mínimo).
+- **Fuentes** (Word digital, sin OCR):
+  - Vigente: Congreso del Estado `cbcs.gob.mx/LEYES-BCS/LHacienda{Muni}.doc[x]`
+  - Baseline ~2009 (para 2010): Orden Jurídico Nacional `ordenjuridico.gob.mx/.../wo7019{3..7}.doc`
+- **Pipeline** (hardcoded versionado, `src/estados/bajacaliforniasur/`): `download` (10 leyes) → `segment` (focus por municipio×año con el texto de la versión vigente + segment.csv) → `extract` = `build.run_build` (extrae las ~8 versiones únicas con LLM v3 `tasas_diferenciadas` y **expande versión→años**). 80 JSONs (5×16).
+- **Transiciones de tasa** (`meta/transiciones_predial.csv`):
+  - Comondú, La Paz: predial ESTABLE 2010-2025 (una versión).
+  - Loreto: cambio **FY2022** (Decreto 2792, 12-nov-2021). Firme.
+  - Los Cabos (re-indexación ×1.333), Mulegé (cambio estructural): año exacto PENDIENTE → placeholder `TRANSICION_PLACEHOLDER=2014`, marcado `requiere_revision` para segmentación manual en HITL.
+- **Boletín Oficial** (referencia): descargable sistemáticamente vía `finanzas.bcs.gob.mx/.../boletines/{año}/{N}.pdf` (enumerable; página 1 = índice digital aunque el cuerpo esté escaneado), pero NO contiene las tasas de predial.
+
+### Campeche
+- **CVE_ENT**: 04 | **Municipios**: 13 | **Periodo**: 2010-2025 | **OCR**: No (PDF digital)
+- **Caso Grupo B diferenciado** (como BCS pero un solo documento): las tasas de predial viven en la **Ley de Hacienda de los Municipios del Estado de Campeche** (estatal). El **Artículo 26** trae UNA tabla de TARIFAS con tasas diferenciadas **por municipio y uso de suelo**, en **porcentaje** (URBANOS: habitacional/comercial/industrial/baldíos/preservación ecológica; RÚSTICOS: explotados/inexplotados). El **mínimo (5 SM), descuentos y exenciones** viven en la Ley de Ingresos anual por municipio (secundario).
+- **Fuentes** (PDF digital, sin OCR), en `data/campeche/leyes_hacienda/`:
+  - baseline_2010: ordenjuridico/Justia (consolidada ~2005), vigente 2010-2013
+  - interm_2019: transparencia.calkini.gob.mx (consolidada dic-2019), referencia 2016-2020
+  - actual_2022: consejería LEXIUS (reforma 28-abr-2022)
+- **Pipeline** (hardcoded versionado, `src/estados/campeche/`): `download` (versiones) → `segment` (`leyes.py` extrae el bloque de tarifa de cada municipio del Art. 26 según la versión vigente; 186 focus) → `extract` = `build.run_build` (extrae los bloques únicos con LLM v3 `tasas_diferenciadas` porcentaje y expande versión→años). 186 JSONs (11 munis×16 + 2 nuevos×5).
+- **Cambios de tarifa** (notas inline del Art. 26, confirmadas por diff baseline vs actual):
+  - **Carmen**: reformada Decreto 30 (29-dic-2015) → transición **FY2016** (hab 0.20→0.17, com/ind 0.30→0.29). Única tarifa que cambió.
+  - 10 munis históricos restantes (incluido Campeche): ESTABLES 2010-2025.
+  - Seybaplaya (04012), Dzitbalché (04013): municipios nuevos (~2019-2021, añadidos por Decreto 165/2021) → entran ~2021, marcados `requiere_revision` para HITL.
+- **PO de Campeche** (referencia): el buscador de `periodicooficial.campeche.gob.mx` es poco fiable y los boletines pre-2015 están escaneados (archivo histórico), pero NO se necesitan: las tasas y las fechas de reforma están en la Ley de Hacienda consolidada (digital).
+
+### Durango
+- **CVE_ENT**: 10 | **Municipios**: 39 | **Periodo**: 2010-2025 (fase 1: **2018-2025**) | **OCR**: No (fase 1)
+- **Grupo A**: la **tasa al millar** del predial se fija en la **Ley de Ingresos Municipal anual** de cada municipio (ej. Durango capital: 2 al millar urbano). La *Ley de Hacienda para los Municipios del Estado de Durango* solo da el marco (objeto, sujetos, base).
+- **Fuente (2016-2025)**: **Congreso del Estado** (`congresodurango.gob.mx`). Cada Ley de Ingresos Municipal es un **PDF digital individual** (sin OCR). Dos rutas de descarga (ver `src/estados/durango/download.py`):
+  - **2022-2025**: raspar la página `/dictamenes-de-leyes-de-ingresos-{año}/` → links del folder `LEYES[-]INGRESOS`.
+  - **2016-2021**: índice Apache de las carpetas por legislatura (`config.FOLDER_POR_ANIO`): `lxvii/Leyes de Ingreso[s] {año}` (con espacios), `LXVIII/LeyesdeIngreso/{año}`. Naming de archivo muy ruidoso (`DICTAMENLEYDEINGRESOS{MUNI}OK.pdf`, encoding roto `%23U00d1`=Ñ) → matcher con decode de escapes + strip de prefijos + `CONGRESO_ALIASES` (MUNICIPIODURANGO→durango, GOMEZ→gomez_palacio, PBLANCO→penon_blanco, SIMONBOLIVAR→general_simon_bolivar, SANJUANDEGPE→san_juan_de_guadalupe, SANLUISDECORDERO→san_luis_del_cordero, etc.). Cobertura ~38/39 por año (huecos menores → HITL).
+- **Fuente 2010-2015 (PENDIENTE, fase 3)**: el Congreso solo tiene `lxv/` y `lxvi/` con `decretos/` (DEC###.pdf secuenciales **sin etiqueta** de qué decreto es cada ley de ingresos). Requeriría identificar las leyes entre los decretos (por contenido) o caer al **PO** (`periodicooficial.durango.gob.mx`, Next.js + S3 `transp23`, listable por `?anio=`): Leyes de Ingresos = DECRETO en gacetas de fin de dic, **escaneadas** (588 pp), multi-municipio, metadata gruesa → OCR + segmentación 2 niveles.
 
 ---
 

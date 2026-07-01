@@ -59,6 +59,9 @@ r"IMPUESTO\s+SOBRE\s+ESPECT[AÁ]CULOS"
 | Oaxaca | — | Recién agregado |
 | Sonora | mixto | Cuota fija + tasa al millar por rangos; rústicos por hectárea; UMA desde 2017 |
 | Aguascalientes | — | "Impuesto a la Propiedad Raíz"; 11 munis, PDFs individuales, API JSON |
+| Baja California | tasas_diferenciadas | Sobretasas "al millar" por tipo de predio + mínimo UMA; tasa base remite a Ley de Hacienda Mpal. 7 munis, 1 ley/PDF (sección del tomo), API índice (curl, latin-1), escaneos 2010-2022 con OCR page-limited |
+| Baja California Sur | tasas_diferenciadas | Predial en la **Ley de Hacienda Municipal** (no en ley anual; la "ley de ingresos"/presupuesto solo trae montos). 5 munis, Word digital (cbcs + ordenjuridico, sin OCR). Hardcoded versionado: extrae ~8 versiones únicas y expande a años. Transición Loreto 2022 firme; Los Cabos/Mulegé placeholder HITL |
+| Campeche | tasas_diferenciadas (porcentaje) | Predial en la **Ley de Hacienda de los Municipios** (1 documento estatal, Art. 26 = tabla por municipio y uso de suelo). 13 munis, PDF digital sin OCR. Hardcoded versionado: extrae bloque por municipio y expande. Casi todo estable; cambio Carmen FY2016. Seybaplaya/Dzitbalché nuevos (~2021, HITL). Mín/descuentos en Ley de Ingresos |
 
 ## Trampas comunes en segmentación
 
